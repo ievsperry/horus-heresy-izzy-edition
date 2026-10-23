@@ -26,8 +26,14 @@ loading. The script prints anything in the doc it could not place.
 
 - Every datasheet, with its profiles, wargear, special rules, Force Organisation
   slot and points. A unit's starting cost always matches the doc.
-- In units of several models, weapon options are bought per model: a unit of 10
-  can buy any number from 0 to 10 of each.
+- Weapon exchanges sit on each model: the weapon a model starts with is its default, and
+  picking a swap replaces it (a Tyranid Warrior that takes a venom cannon loses its devourer).
+  In a unit of several models, models with different weapons are split into separate
+  selections. Unit-wide limits still hold: "one in every three" and "up to two may" share
+  one limit across the unit, and "One Guardsman may..." allows one in the unit. Only a
+  loadout the whole unit picks together (Ork Boyz' slugga or shoota) keeps a unit-level pool.
+- Options that add something rather than replace it are bought per model at unit level: a
+  unit of 10 can buy any number from 0 to 10 of each.
 - Biomorphs (everything in the doc's Biomorphs section) are taken by every model
   in the unit, and cost their points for each model. Tails are weapon options:
   bought per model, added to the model's other weapons.
