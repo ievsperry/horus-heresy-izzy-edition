@@ -2068,8 +2068,8 @@ class Builder:
             subject = m.group(2)
             if m.group(3):
                 ratio = NUMBER_WORDS.get(m.group(3), 3)
-            if m.group(1) == "One" and ("each of the following" in header or norm(subject) == "model"):
-                fixed = 1  # "One Nob may take each of the following", "One model may take"
+            if m.group(1) == "One" and not m.group(3):
+                fixed = 1  # "One Guardsman may exchange his lasgun", "One model may take": one in the unit
         subject_models = []
         # Only "The ..." and "A ..." can name the whole unit; "Any Genestealer" is one model.
         whole_unit = determiner in ("The", "A", "An") and bool(forms(subject or "") & unit_words)
@@ -2242,12 +2242,14 @@ class Builder:
     def add_model_wargear(self, ds, me, m, key, target_unit=None, per_model_unit=None, several_types=False):
         links = el(me, "entryLinks")
         groups = el(me, "selectionEntryGroups")
-        if per_model_unit is not None:
-            self.add_per_model_options(ds, per_model_unit, m, key, several_types)
         wargear = [w for w in m["wargear"] if "psychic scream" not in norm(w)]
         exchanges = [g for g in m["groups"] if g["kind"] == "exchange"]
         used = set()
-        for gi, g in enumerate(m["groups"] if per_model_unit is None else []):
+        # Exchanges always sit on the model, so a swap replaces the weapon it names; in a unit of
+        # several models they are bought by splitting the models, and unit-wide limits still hold.
+        for gi, g in enumerate(m["groups"]):
+            if per_model_unit is not None and g["kind"] != "exchange":
+                continue
             gkey = make_id(m["id"], "group", str(gi))
             if g["kind"] == "exchange":
                 original = None
@@ -2258,6 +2260,13 @@ class Builder:
                     if tn in wn or any(c in wn for c in singular(tn)) or wn.endswith(tn.split()[-1]):
                         original = w
                         break
+                if original is None:
+                    whats = g["what"].split(" or ") + g["what"].split(" and ")[:1]
+                    original = next((w for w in wargear for wt in whats if norm(wt) in norm(w)
+                                     or forms(wt) & forms(w)), None)
+                if original is None and per_model_unit is not None and (" or " in g["what"] or ds.get("loadouts")):
+                    g["unit_pool"] = True  # "his slugga or shoota" of a loadout the whole unit picks
+                    continue
                 if original is None:
                     self.problems.append(f"{ds['name']}: exchange of '{g['what']}' matches no wargear")
                     continue
@@ -2271,9 +2280,27 @@ class Builder:
                     size, item_max = 1, 1
                 ge = el(groups, "selectionEntryGroup", name=f"Exchange {g['what']}", hidden=False, id=gkey,
                         defaultSelectionEntryId=make_id(gkey, "link", "default"))
-                add_constraint(ge, "min", size, gkey + "min")
-                add_constraint(ge, "max", size, gkey + "max")
+                add_constraint(ge, "min", size, gkey + "min", children=True)
+                add_constraint(ge, "max", size, gkey + "max", children=True)
                 gl = el(ge, "entryLinks")
+                uid = self.units[ds["name"]]
+                # "One in every three may exchange" and "Up to two may exchange" share one limit
+                # across the unit; those picks sit in a sub-group that carries it.
+                ratio_subs = {}
+                def ratio_holder(r):
+                    if r not in ratio_subs:
+                        skey = make_id(gkey, "ratio", str(r))
+                        sub = el(child(ge, "selectionEntryGroups"), "selectionEntryGroup",
+                                 name=f"One in every {r}", hidden=False, id=skey)
+                        self.ratio_limit(sub, r, ds, m)
+                        ratio_subs[r] = el(sub, "entryLinks")
+                    return ratio_subs[r]
+                if g.get("fixed"):
+                    fkey = make_id(gkey, "fixed")
+                    fsub = el(child(ge, "selectionEntryGroups"), "selectionEntryGroup",
+                              name=f"Up to {g['fixed']} may exchange for", hidden=False, id=fkey)
+                    add_constraint(fsub, "max", g["fixed"], fkey + "max", scope=uid, children=True)
+                    fixed_links = el(fsub, "entryLinks")
                 if oid and not g["qualifier"].startswith("all"):
                     twin = norm(original).startswith("twin") and not norm(self.weapon_names_for(oid, original)).startswith("twin")
                     e = el(gl, "entryLink", import_=True,
@@ -2285,22 +2312,21 @@ class Builder:
                 else:
                     self.wrapper(gl, original, gkey, "default", ds)
                 for name, cost, ratio in g["items"]:
+                    holder = ratio_holder(ratio) if ratio else (fixed_links if g.get("fixed") else gl)
                     alts = None if g["qualifier"].startswith("all") else self.alternatives(name, ds)
                     if alts:
                         for tid, label, acost in alts:
-                            e = self.link(gl, tid, label or self.weapon_names_for(tid, name), gkey, maximum=item_max)
+                            e = self.link(holder, tid, label or self.weapon_names_for(tid, name), gkey, maximum=item_max)
                             add_cost(e, self.cost(cost) if acost is None else acost)
                             self.save_on_model(me, m, tid)
                         continue
                     if g["qualifier"].startswith("all"):
-                        e = self.wrapper(gl, name, gkey, name, ds)
+                        e = self.wrapper(holder, name, gkey, name, ds)
                     else:
                         tid, cnt, _ = self.option_target(name, key)
-                        e = self.link(gl, tid, name, gkey, maximum=item_max)
+                        e = self.link(holder, tid, name, gkey, maximum=item_max)
                         self.save_on_model(me, m, tid)
                     add_cost(e, self.cost(cost))
-                    if ratio:
-                        self.ratio_limit(e, ratio, ds, m)
             else:
                 ge = el(groups, "selectionEntryGroup", name="Options", hidden=False, id=gkey)
                 if g["one_of"]:
@@ -2345,6 +2371,8 @@ class Builder:
                         self.link_rule(e, f"Regeneration ({rm.group(1)})", e.get("id"))
                     if g["ratio"]:
                         self.ratio_limit(e, g["ratio"], ds, m)
+        if per_model_unit is not None:
+            self.add_per_model_options(ds, per_model_unit, m, key, several_types)
         seen = set()
         for w in wargear:
             if w in used:
@@ -2428,6 +2456,8 @@ class Builder:
         groups = child(unit, "selectionEntryGroups")
         for gi, g in enumerate(m["groups"]):
             gkey = make_id(m["id"], "unit group", str(gi))
+            if g["kind"] == "exchange" and not g.get("unit_pool"):
+                continue  # on the model itself (add_model_wargear), so the swap replaces the weapon
             if g["kind"] == "exchange":
                 whats = [g["what"]] + g["what"].split(" or ") + g["what"].split(" and ")[:1]
                 original = next((w for w in m["wargear"] for wt in whats if norm(wt) in norm(w)

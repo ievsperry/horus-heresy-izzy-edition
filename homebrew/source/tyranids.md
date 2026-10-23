@@ -1250,6 +1250,7 @@ _A floating synapse beast wreathed in toxic spores, which drifts across the batt
 - Hive Fleet (X)
 - Shadow in the Warp
 - Synapse Creature
+- Two Close Combat Weapons: a Tyranid Warrior armed with two sets of melee weapons (such as two sets of scything talons) adds 1 to its Attacks characteristic
 
 **Options**
 
@@ -1266,6 +1267,7 @@ _A floating synapse beast wreathed in toxic spores, which drifts across the batt
 | – Boneswords | +10 points |
 | – Lash whip and bonesword | +15 points |
 | **Any Tyranid Warrior may exchange its devourer for:** |  |
+| – Scything talons | +0 points |
 | – Spinefists | +0 points |
 | – Deathspitter | +5 points |
 | **One Tyranid Warrior in every three may exchange its devourer for:** |  |
