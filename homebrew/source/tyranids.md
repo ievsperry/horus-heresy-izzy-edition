@@ -2343,11 +2343,15 @@ Tyranid bio-titans are Infantry with the Monstrous and Gargantuan sub-types. The
 
 Biomorphs are the Tyranid equivalent of wargear: organs, glands and growths bred into a creature for a purpose. A biomorph is taken by every model in the unit and costs its points for each model, unlike weapon options, which are bought model by model.
 
+Every unit may take adrenal glands, toxin sacs and flesh hooks, and dynamic camouflage and a hardened carapace where its models qualify, at the costs below. A datasheet that lists a biomorph in its options uses its own cost instead. Wings, regeneration, spine banks and Unnatural Resilience may only be taken where a datasheet offers them. Spore Mines, Meiotic Spores, Mucolid Spores, Mycetic Spores, Tyrannocytes and Sporocysts may not take biomorphs.
+
 ### Adrenal Glands
 
 _Glands that flood the creature's body with stimulants, driving it into a killing frenzy._
 
 A model with adrenal glands gains Fleet (1) and Furious Charge (1), or increases an existing value of either by 1.
+
+**Cost:** +1 point per model for Termagants, Hormagaunts, Neurogaunts, Barbgaunts, Gargoyles, Ripper Swarms and Sky-Slasher Swarms; +3 points per model for every other model; +10 points per Monstrous model; +15 points per Gargantuan model.
 
 ### Dynamic Camouflage
 
@@ -2363,6 +2367,8 @@ _Barbed hooks fired on sinew cords to haul the creature over walls and barricade
 
 Flesh hooks count as frag grenades†.
 
+**Cost:** +1 point per model; +5 points per Monstrous model. Gargantuan models may not take them.
+
 ### Hardened Carapace
 
 _Layers of thickened chitin grown over the creature's vital organs._
@@ -2375,7 +2381,7 @@ A model with a hardened carapace adds 1 to its Save, to a best of 2+. Any model 
 
 _Accelerated cell growth that seals wounds in moments._
 
-A model with regeneration gains Regeneration (X): at the end of each of your turns, if the model has lost any Wounds, roll a D6. On a roll of X or more, it restores one lost Wound, up to its starting value.
+A model with regeneration gains Regeneration (X): at the end of each of your turns, if the model has lost any Wounds, roll a D6. On a roll of X or more, it restores one lost Wound, up to its starting value. X is 5+ unless the datasheet says otherwise.
 
 ### Spine Banks
 
@@ -2388,6 +2394,8 @@ Spine banks count as frag grenades†.
 _Glands that coat claws and talons in lethal venom._
 
 The model's melee weapons gain Poisoned (4+), or improve an existing Poisoned value by 1, to a best of 2+†.
+
+**Cost:** +1 point per model for Termagants, Hormagaunts, Neurogaunts, Barbgaunts, Gargoyles, Ripper Swarms and Sky-Slasher Swarms; +3 points per model for every other model; +10 points per Monstrous model; +15 points per Gargantuan model.
 
 ### Unnatural Resilience
 

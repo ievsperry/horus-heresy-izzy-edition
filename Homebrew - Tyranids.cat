@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -2398,7 +2398,7 @@
       <profiles>
         <profile name="Regeneration" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="9a5a-0a5f-7849-ab08">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with regeneration gains Regeneration (X): at the end of each of your turns, if the model has lost any Wounds, roll a D6. On a roll of X or more, it restores one lost Wound, up to its starting value.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with regeneration gains Regeneration (X): at the end of each of your turns, if the model has lost any Wounds, roll a D6. On a roll of X or more, it restores one lost Wound, up to its starting value. X is 5+ unless the datasheet says otherwise.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2600,6 +2600,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66ce-ddf2-ea64-706f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="6b4f-6b0a-795a-9b22" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3f9-bf70-d13f-0d56" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="68b1-bb98-06c3-717f" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="548d-1a8e-0fdb-dd49" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -2608,12 +2616,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="1f61-eb5e-f255-c1bf" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8181-1968-1921-53fe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="fb7a-1b63-d925-60f8" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e235-eebe-bf99-95d9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="6997-1a07-f8e2-d5a4" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c2e-d824-3253-5cfd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -2870,6 +2894,14 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="1980-1a43-c499-ade4" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7fe-03a0-f8e6-ab22" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="5b90-2265-aad4-dc76" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4de-8b68-fc77-ab00" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -3024,6 +3056,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e175-4882-3bd3-66f9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="1e9f-e6cd-1297-81e9" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36e8-7e4b-cd43-89c3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="c309-eb02-9a20-02a7" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e130-1351-cdeb-77c6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -3032,12 +3072,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="78a2-7a08-b99b-ace4" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3000-bd6e-59fd-246a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="9809-0f75-d2aa-838a" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e3f-90c9-089c-0d31" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="6253-a8be-5d2c-561e" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d34-2314-710d-a295" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -3144,9 +3200,33 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f93-0578-92c2-83bc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="1455-6007-2c31-251c" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6953-b847-5751-4fa2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="46cc-2686-0136-74c8" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30a8-8c3b-76b0-54be" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="6140-c599-00ca-97e5" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="422a-9c71-b502-b2f3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="8980-56df-ad34-39fc" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="813a-ae4a-7208-c7f7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -3273,6 +3353,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e51b-4ea5-f930-6113" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="142a-61c2-5785-b364" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba8c-b86f-514c-a4a2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="efdb-c23b-083f-135f" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3708-8f17-3e50-c548" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -3281,12 +3369,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="6d07-491c-34b1-3654" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67e9-f59d-b0e3-90e1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="88f2-c3ad-eab1-d277" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b62-25d3-64f9-c0bf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="1c9b-afdd-5416-73d2" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd7b-300b-2aa4-3a78" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -3383,6 +3487,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ccd-d8de-e2a2-43d5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="b20c-04dc-aa6f-6643" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63aa-2ffd-c7a1-9645" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="b9da-51c1-3db0-a7f5" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="412c-1497-078e-c4e4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -3391,12 +3503,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="2f91-71a9-8432-0356" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2731-6755-c67d-bafa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="9f1c-c92d-6bf7-8853" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6427-f147-b39c-09c5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="8ef2-d046-63f6-894e" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96e1-5dec-683b-752e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -3560,6 +3688,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c44d-6e26-0e18-54e3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="f96b-58f6-48ee-8917" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9860-c261-182a-50d7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="9c15-0803-59b2-b87c" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e819-6fbc-a25f-e53b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -3568,12 +3704,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="f994-6ed9-fa0d-2a2e" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8990-1ff4-7f02-7b77" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="6c71-c466-f2de-fbca" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8908-3b62-868a-0537" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="5e60-8ca3-9ace-0276" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e53-a83e-7a15-0e3c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -3789,6 +3941,14 @@
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="0947-c6d9-edb3-ce0e" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4731-e4de-37c8-7b0f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
               </costs>
             </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="8190-5eda-5ae4-d2cb" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
@@ -4105,6 +4265,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c367-1736-a102-a5ad" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="41d5-a059-e29e-8887" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a62-7436-e244-77c6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="f565-4680-690e-27e1" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="217d-9df6-fe4f-a22e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4113,12 +4281,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="f4c6-a2ef-f3c5-5800" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="086a-b1a7-9087-b95d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="04a2-82c4-cff9-bf63" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d01-b9ea-11f7-7335" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="074f-7c73-4b98-29b7" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fed9-ec47-13ee-3a0d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -4234,12 +4418,28 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e37f-a1d3-d392-4223" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="799b-2fff-876c-a5e0" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01f1-4b47-f8f6-274e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="3082-1e37-2095-9fc8" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abb4-8cda-4333-278e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="17d7-b60a-4a3e-be6f" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a04-9c63-4087-27c3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -4394,12 +4594,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="2ca1-634d-5d4f-7ac9" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="716a-301a-0433-b92d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="9204-1a4b-e18f-709b" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3e9-2cb4-1cf7-f8ba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="6afa-e346-76b5-181e" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0b7-4eb8-25cb-8d14" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -4520,6 +4736,21 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="f875-b56a-0d06-96c1">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="4789-3dee-7481-61b7" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="de57-5f6b-1664-8d87" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="42b9-9d14-a4b5-eee4" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3410-5570-32d3-d786" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="cf92-67cd-3e87-f8e6" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -4535,6 +4766,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="d5c5-e0af-352f-7aba" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="de57-5f6b-1664-8d87" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="42b9-9d14-a4b5-eee4" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5384-5065-8d47-67e2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="773a-0c8b-31d8-eff9" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
@@ -4545,6 +4791,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1b3-243f-46db-a85c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="e360-df79-c0ab-2b2d" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="de57-5f6b-1664-8d87" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="42b9-9d14-a4b5-eee4" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d17-affc-88df-934e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -4667,6 +4928,21 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="fdbd-5bcb-7f60-fa7b">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="9c13-7dd4-ca93-4f24" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="c633-9b93-b1d7-c9ff" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="112e-426f-31da-61a3" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afd5-2131-25a9-733c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="0800-425f-1f9f-b0cb" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -4677,6 +4953,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28df-1ebd-efdc-e3c3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="ba69-8a86-b333-0226" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="c633-9b93-b1d7-c9ff" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="112e-426f-31da-61a3" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bd9-4e7a-027e-e8a1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -4778,6 +5069,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8d2-73c8-b70c-0392" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="a952-be34-9a4e-d864" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="753d-9dab-bd19-7251" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="f4a2-5364-001f-1335" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f4b-a07d-6a09-4cef" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4786,12 +5085,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="7830-8378-0de0-2f07" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4585-ee0a-a505-08a3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="fc88-2479-fb57-0639" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6581-338a-2b20-c37c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="01f7-da0c-91aa-eb23" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8cd7-4cb4-cb1f-8fef" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -4939,6 +5254,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="513f-5c2d-7069-6835" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="ac84-0b4f-110f-97ec" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41c5-46b6-13f7-87f8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="dc0c-c4c2-03e8-8dc6" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0117-2ee8-d98e-5340" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4947,12 +5270,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="7a71-68f4-1476-15b1" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6724-dc00-0217-d043" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="3ed1-0a0f-13c6-7644" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce0c-e20e-2104-b716" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="adce-9eb4-fbf2-5b26" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e1c-55b9-6a8d-69ba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -5055,12 +5394,36 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3e3-9130-f22a-2607" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="4396-46f4-3b2c-bc3a" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7886-ac11-857c-1691" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="91db-9be7-b556-8a74" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4cb-e040-a45a-2468" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="2666-f22a-c95e-6e9c" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc3f-85a5-720c-8831" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="c519-5159-9a1a-2e01" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f7b-b296-9216-016a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -5167,6 +5530,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c923-53ee-261e-da39" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="330c-c274-eab8-8953" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b75-0332-0b6a-6574" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="3330-4378-2c29-5c40" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="190d-18de-34c9-8853" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -5175,12 +5546,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="0ca9-58ea-9c00-d6b6" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8188-a86f-23c2-b75c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="b305-6710-6bef-9af2" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a87a-6962-9257-4ee6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="32da-8464-b370-f5bd" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa72-326a-64f4-f868" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -5292,6 +5679,21 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="666c-8342-71d0-a899">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="7a1a-50f6-46a7-9f3d" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="c9fc-1912-c01d-2d2a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73f7-51d2-ee6e-f330" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b3a-024e-4272-287a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="207b-d3ac-b545-bc0f" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -5307,6 +5709,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="74f7-8e43-67f1-ca99" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="c9fc-1912-c01d-2d2a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73f7-51d2-ee6e-f330" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6189-16ba-c2ab-8937" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="1917-e672-e796-8dc0" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
@@ -5317,6 +5734,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06a7-6f71-48cf-aae5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="4649-da4f-f8c4-1f8d" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="c9fc-1912-c01d-2d2a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73f7-51d2-ee6e-f330" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0610-bbd0-8c16-562c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -5425,6 +5857,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee06-07c9-26d2-345e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="88c0-7733-51de-c446" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ff3-601d-5abb-dc64" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="93a3-0b2e-7b43-0496" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f2b-9955-70a2-2f8f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -5433,12 +5873,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="8aa9-3533-96a8-0067" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a677-72d6-d007-04ae" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="a620-1888-f767-fc30" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="956b-3567-7f29-1251" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="5655-c738-a01d-36e5" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b311-181a-43ac-b458" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -5571,6 +6027,21 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="28d0-790f-124c-aac5">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="b3ff-c34b-a79f-cff5" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="2743-e957-7973-8585" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="013d-14a2-abbc-2b18" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62f5-799b-633f-994f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="3e43-3ddd-42c5-acd1" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
@@ -5586,6 +6057,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="6793-cc90-4725-b33a" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="2743-e957-7973-8585" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="013d-14a2-abbc-2b18" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77aa-29f9-00a1-f842" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="a792-8055-0694-d339" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
@@ -5596,6 +6082,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9659-10d3-9073-6360" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="6eb1-b7a9-e9a5-30be" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="2743-e957-7973-8585" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="013d-14a2-abbc-2b18" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e458-a813-7901-5819" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -5699,6 +6200,21 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="77f4-dc3b-707a-c1c3">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="d7de-1005-26f9-4bb9" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="1cd7-85b8-1a57-db2d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e0f-d29f-4cf7-2f95" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f87-c03b-2da0-ca95" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="4a27-eabb-ac66-5e0e" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -5714,6 +6230,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="aa76-2a14-8e89-ac98" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="1cd7-85b8-1a57-db2d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e0f-d29f-4cf7-2f95" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25c6-b316-e8fd-8b53" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="51be-fd55-cffe-403b" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -5724,6 +6255,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d65e-588e-6952-63ec" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="1f12-6b72-b0dc-1dc4" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="1cd7-85b8-1a57-db2d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e0f-d29f-4cf7-2f95" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a73a-f8a6-3d0e-b747" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -5835,6 +6381,21 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="10fb-9a4d-c71b-5ebf">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="ab03-636d-bc7a-6b25" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="c832-e892-1bee-0653" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5bc7-4805-334a-bd82" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fbe-db06-87e0-7938" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="2259-88a4-f7fd-824b" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -5850,6 +6411,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="e710-f427-ac5d-950e" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="c832-e892-1bee-0653" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5bc7-4805-334a-bd82" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a87-ceba-1166-460d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="5d7e-4258-e534-8ec2" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -5860,6 +6436,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2a4-5dc3-b8d1-37f3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="38b1-f0a4-7872-f5d1" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="c832-e892-1bee-0653" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5bc7-4805-334a-bd82" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ceef-57cf-9d15-08e6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -6077,6 +6668,26 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="0210-4efe-27d0-84fb">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="ab62-ab2e-64ea-a99f" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="6578-cb54-f125-d03f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="655f-98d5-b3eb-e3e1" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="6578-cb54-f125-d03f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d91-bfeb-b7d7-ab6b" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f51-da59-4b72-e138" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="4892-4c89-d4c6-9512" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -6097,6 +6708,26 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="33e7-2cc0-8aad-179b" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="6578-cb54-f125-d03f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="655f-98d5-b3eb-e3e1" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="6578-cb54-f125-d03f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d91-bfeb-b7d7-ab6b" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1d3-3721-5e40-64c7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="7295-1dbf-6be9-a33e" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -6112,6 +6743,26 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d225-5a1f-8368-7852" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="4180-d24d-77fe-7066" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="6578-cb54-f125-d03f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="655f-98d5-b3eb-e3e1" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="6578-cb54-f125-d03f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d91-bfeb-b7d7-ab6b" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ccb-f0f2-9aaf-c373" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -6257,6 +6908,21 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="38f4-60e3-11ed-8d14">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="24fd-f850-b264-5d1b" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4a7-bc37-94ed-abf6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="a936-55dd-796a-e509" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -6267,6 +6933,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f87-00e8-56e9-c5f1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="1cfa-6a56-d4de-a96d" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3fe-a7a2-7e5a-f396" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -6417,6 +7098,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f85-dbf2-fe18-3f80" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="4a10-cca6-864e-d36b" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="1873-52b8-fb8e-447c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad6c-46ac-b719-ff80" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12d7-2dd0-d425-4d88" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -6610,6 +7306,26 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="8c75-d6ff-219a-d486">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="d6da-a769-6ddf-353b" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="39c3-6d82-56cf-c643" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a98f-3725-ebed-2ce5" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="39c3-6d82-56cf-c643" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d8-64cb-4605-7ba0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="babb-b542-42a8-7c32" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="4a27-65bf-a492-5afa" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -6630,6 +7346,26 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="d57d-dcaf-6f34-3bdb" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="39c3-6d82-56cf-c643" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a98f-3725-ebed-2ce5" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="39c3-6d82-56cf-c643" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d8-64cb-4605-7ba0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f25e-7190-808b-a1ed" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="eb22-c7b6-9498-f715" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="2">
@@ -6645,6 +7381,26 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="009c-927b-6912-a094" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="37c9-2e45-cdcd-8444" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="39c3-6d82-56cf-c643" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a98f-3725-ebed-2ce5" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="39c3-6d82-56cf-c643" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d8-64cb-4605-7ba0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffcd-a7a5-27dc-60cf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -6767,6 +7523,21 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="66e8-7e1c-9fc1-5fd9">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="0a76-bde5-3a4a-5afd" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="f692-00ac-0170-db66" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df70-b8d3-41d1-fff7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a34-4284-d0ca-4ffe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="7162-3e3b-0ebb-988a" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -6782,6 +7553,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="436c-df8d-30c8-0389" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="f692-00ac-0170-db66" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df70-b8d3-41d1-fff7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b5b-e327-6887-81a5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="3cea-4ad2-e106-ac1d" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="2">
@@ -6792,6 +7578,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13ab-0b56-cbec-9ca0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="de97-de66-efdf-633a" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="f692-00ac-0170-db66" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df70-b8d3-41d1-fff7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfd8-d039-9f2b-31b7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -6975,6 +7776,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13d7-81a6-e489-5cb8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="eabb-cb63-78b3-1429" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="6232-5a2c-0195-b4c4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c760-1202-a55c-a4b1" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0495-c88a-f05d-e215" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -7327,13 +8143,6 @@
           </constraints>
           <profiles>
             <profile name="Mycetic Spore" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="e105-9cf0-ccce-4154" publicationId="7478-cf16-4f88-170b">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="7314-a59f-139a-f0f3" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Monstrous, Transport)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">0</characteristic>
@@ -7386,22 +8195,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ef0-b904-c290-a2c7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="1525-1341-cd5c-4974" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b582-20f7-d17d-7fcd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Hardened Carapace" hidden="false" id="fe1d-a3da-b5e5-ceed" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="086c-fed4-208f-59db" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -7440,13 +8233,6 @@
           </constraints>
           <profiles>
             <profile name="Tyrannocyte" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="e019-6682-bdd3-38b6" publicationId="7478-cf16-4f88-170b">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="3+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="7ede-0a61-17ea-d54a" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Antigrav, Monstrous, Transport)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -7505,22 +8291,6 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b96c-531d-14bc-5906" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a26e-c5fa-ec5c-ace3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
-            </entryLink>
-            <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="9996-3648-a1fb-a936" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc79-4d8b-c8ab-6a62" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Hardened Carapace" hidden="false" id="1631-25a0-899c-26f0" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21e4-aeed-6605-c456" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
             </entryLink>
           </entryLinks>
           <costs>
@@ -7641,6 +8411,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41c1-5bff-fd22-48eb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="2449-f82f-be85-2f72" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="1c24-3df3-eb3c-5a29" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f43-a418-9fd4-d94c" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8899-ece8-9336-d40e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -7820,6 +8605,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5be-76a4-84c7-8b8e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="02e0-5591-ce18-259e" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0080-168a-1efe-7b9f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="fdc0-dbe0-6740-7556" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4aca-4063-58fe-6dcc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7828,9 +8621,25 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="85fc-0d77-3003-488b" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36c6-751f-d5bf-1ddc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="3042-c7c0-0095-f4a7" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b0f-2b5a-f165-3401" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="56d3-493e-5c8c-2108" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8182-0afa-7648-0750" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -7945,6 +8754,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a09-c1c4-eb6b-a8b7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="9f10-51ef-8dc4-9f00" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5873-a9a0-36cd-3047" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="a97a-ac60-446f-4618" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f76a-d515-3cfa-0260" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7953,9 +8770,25 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="cf2a-a696-107a-d742" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ade-b4fc-06f3-a606" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="36d0-b725-c4e8-1cc5" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1782-113e-22ad-986d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="144e-b24c-cf97-2612" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="febd-4358-d625-e19f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -8050,25 +8883,6 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Biomorphs" hidden="false" id="8ed8-7573-a692-b9c5">
-          <entryLinks>
-            <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="1e25-b524-f418-2807" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="dfc0-1afd-d6f9-db2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfe0-f6a5-4dcc-c7a6" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6dc1-79e4-1537-9614" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Dedicated Transport" hidden="false" id="512b-eec4-655b-155d">
           <modifiers>
             <modifier type="set" field="bbb7-c4e5-55a5-1820" value="0">
@@ -8148,25 +8962,6 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Biomorphs" hidden="false" id="371c-a3f5-b2ee-0ad9">
-          <entryLinks>
-            <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="f0ec-634b-27ec-3d94" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="2dbe-25d4-1eb9-e2f1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1e1-6fa2-fa05-d921" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f98-86ba-08f5-9f4d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Dedicated Transport" hidden="false" id="cf00-2504-76ba-fdad">
           <modifiers>
             <modifier type="set" field="309e-04c4-ce52-bffb" value="0">
@@ -8619,6 +9414,46 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="109c-67a8-78b4-5438">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="4805-f811-d020-8d65" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fda-7ba9-dde9-17b2" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f455-23b4-5efb-ee66" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bad1-46bd-b7c2-0f8d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="044f-cd1c-4623-7b9d" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
@@ -8659,6 +9494,46 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="6ee9-cd1d-e3b4-7b3f" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fda-7ba9-dde9-17b2" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f455-23b4-5efb-ee66" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce71-cd87-d64b-9859" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="4cb5-9932-a761-eb09" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -8694,6 +9569,46 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4801-759b-1f89-20d7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="6d62-640a-e64f-2390" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fda-7ba9-dde9-17b2" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f455-23b4-5efb-ee66" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f7b-a454-b250-e126" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -8823,6 +9738,21 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="fdcd-67c8-4b96-794d">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="031d-c529-2c9b-1fe8" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97b9-7a1a-373b-e1f2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="8877-b22d-3560-a67f" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
@@ -8838,6 +9768,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="3491-d067-25c2-d50b" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb32-9ce6-d528-b5b3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="f007-3f02-f03b-4775" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -8848,6 +9793,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7509-2386-46dc-22e6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="e94a-feff-16de-91c3" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c38-3e8a-78f7-f829" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -8930,6 +9890,21 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="cdb2-d90d-2f52-56fd">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="1bff-b770-be7d-420a" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="6ef7-ddc4-e862-83e8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9363-8e80-2b5f-be0b" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e867-1c8c-fbb0-5737" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="e70f-15d3-a036-99db" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -8945,6 +9920,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="89fa-5161-b001-4d75" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="6ef7-ddc4-e862-83e8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9363-8e80-2b5f-be0b" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f155-b952-429e-840a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="3953-82ae-7b9d-a65b" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="2">
@@ -8955,6 +9945,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d570-0dd6-6591-f96e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="f4ca-6484-c232-4b9b" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="6ef7-ddc4-e862-83e8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9363-8e80-2b5f-be0b" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40fd-da7a-391f-f3b6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -9041,25 +10046,6 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Biomorphs" hidden="false" id="0709-2830-cd57-80df">
-          <entryLinks>
-            <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="6dc2-53e0-bc41-bf47" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="9063-cd44-1d65-fa35" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3506-0f75-1320-67e4" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0146-d15b-938b-f1a1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Dedicated Transport" hidden="false" id="9db4-7ead-0db9-b2ea">
           <modifiers>
             <modifier type="set" field="8fe1-2683-bda4-5850" value="0">
@@ -9209,6 +10195,21 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="98bd-74de-ae84-ba29">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="3d2e-5220-983c-788b" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="e8ac-221a-2717-4657" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc3e-6057-0f18-b989" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0bbd-8006-a229-62ab" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="b8f7-b48c-25ad-2181" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
@@ -9224,6 +10225,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="62fd-b769-bbfa-88b8" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="e8ac-221a-2717-4657" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc3e-6057-0f18-b989" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b15-8aec-3aad-4cd8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="f07e-0cbe-3f34-aae8" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
@@ -9234,6 +10250,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c226-c3cd-21ed-ace4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="204d-b59a-4e15-4557" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="e8ac-221a-2717-4657" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc3e-6057-0f18-b989" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a67c-6df6-3b43-fa78" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -9308,6 +10339,21 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="0a42-9fa8-4dde-8818">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="3f03-adb6-38c3-4eee" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="e6cc-b0c2-4655-5db6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44b4-18e1-3d96-511a" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="931a-bb0e-1f06-e1a4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="ac53-84e4-6c0b-5ece" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -9323,6 +10369,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="2880-0218-31ca-edb2" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="e6cc-b0c2-4655-5db6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44b4-18e1-3d96-511a" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3436-6317-933c-f2fb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="de3f-f157-e522-4f54" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -9333,6 +10394,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60bd-d037-058f-5d5a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="bb8d-b62b-916c-1a09" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="e6cc-b0c2-4655-5db6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44b4-18e1-3d96-511a" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72a4-c398-a319-7d72" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -9437,6 +10513,21 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="3bfc-853a-f862-ed43">
           <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="ebeb-a5f1-e7c3-6f80" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="848c-985c-402b-e512" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4763-7f73-ef4e-3013" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="798b-6351-14c9-a2fe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="cfcb-3197-0092-d585" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -9452,6 +10543,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="478d-a78f-973b-2100" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="848c-985c-402b-e512" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4763-7f73-ef4e-3013" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57d2-8932-46ff-ccbe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="c71b-23e1-dc27-d216" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
@@ -9462,6 +10568,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f964-8f03-019e-ee43" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="c654-fc50-e444-3d64" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="848c-985c-402b-e512" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4763-7f73-ef4e-3013" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8672-edae-5847-6464" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -9742,6 +10863,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="97ef-607f-5db5-3986" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="f4e9-2333-7b1d-a4ee" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db60-1cdf-cb5c-e4be" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3221-3901-8625-b8d6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="ed0f-ae36-01b8-8008" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
@@ -9931,9 +11067,25 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="6745-bb33-5289-0934" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f12b-5259-0804-5687" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="da48-6f71-dfc6-585e" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91d4-0fab-53e6-93f0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="a499-b839-afb1-e422" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f94-9542-eab3-894d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -10040,6 +11192,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a4f-762c-d802-d2e3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="391f-a111-3311-80ed" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="927c-03fb-d7bb-d53d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="88ba-c4e0-584b-2180" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d08-8abc-8d66-31e9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -10048,12 +11208,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="d43d-af41-0146-0b8c" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df5a-5474-f3e1-f964" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="14b1-b84c-bcb0-70a3" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2917-0df5-7f70-8c7e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="583f-21ee-2b7d-0eda" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d833-ad6a-4193-d1ca" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -10158,6 +11334,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1321-0533-c3d7-4bc8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="26cb-7baf-fff7-af21" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b83d-9a8d-0f1f-7f8e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="fbac-3d76-2a28-f138" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e66d-6dde-3eaf-9824" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -10166,12 +11350,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="f4e9-1552-3982-f93c" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3291-32e5-9975-dad4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="15a9-6583-46f4-bbf7" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae97-1642-83be-7b74" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="f1aa-cc14-0ce4-eb20" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d08b-d4b0-a034-948a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -10285,9 +11485,33 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b4b-0690-0331-eb2b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="9338-5f0d-604a-bc2d" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d284-4c0f-e316-fb7b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="cccf-3cd9-95a9-737b" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="295f-371d-20a9-fee5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="4b2b-d7b9-a85c-0263" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b2b-6554-6d09-3bfa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="de35-4d6e-5fe2-95d2" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa1f-e230-0c6d-da3f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -10428,6 +11652,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8e2-b6c8-1b37-1a88" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="1eb1-9c2c-8ac1-94c6" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9de-7c36-63ff-7df2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="69dd-d18b-a747-16f0" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdf0-1fd9-b651-2de4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -10436,12 +11668,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="86d4-edaa-ee84-1d4c" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5644-f723-0a26-7bfd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="fc4a-6e30-4c50-c268" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c056-85be-de09-7a06" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="dfef-fa0c-07f1-a44c" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fea2-3a8d-11de-e97c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -10506,13 +11754,6 @@
           </constraints>
           <profiles>
             <profile name="Sporocyst" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="f5d5-b5ba-2c20-35e7" publicationId="7478-cf16-4f88-170b">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="3+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="d7e4-7540-10d6-4e10" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Monstrous)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">0</characteristic>
@@ -10563,24 +11804,6 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="4422-c1b4-d1b6-acd0" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a4f-e6ac-5b4e-259f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Hardened Carapace" hidden="false" id="f462-3b36-270a-1eef" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42a0-d85b-7e11-e572" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
           </costs>
@@ -10748,6 +11971,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="57ed-9738-0645-48e9" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="0b7d-5e29-b704-ede7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61f9-1761-5059-ebc8" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="362d-3899-b87b-2591" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="212c-eb03-b48e-44c3" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
@@ -10763,6 +12001,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="80ac-ef96-093c-8af0" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="0b7d-5e29-b704-ede7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61f9-1761-5059-ebc8" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5607-75e6-4b98-6e73" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="4070-4529-f61a-8a50" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
@@ -10773,6 +12026,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4fe-0eb4-0879-561f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="ba0c-5e4d-d02e-9a14" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="0b7d-5e29-b704-ede7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61f9-1761-5059-ebc8" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e81-795e-bb67-d4d1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -10877,6 +12145,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0439-ab7c-9904-1043" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="9ae2-ce88-864d-21d8" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b045-1276-b2e0-da77" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="01f9-9d83-6935-e80e" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40ff-a498-e9c5-35d2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -10885,12 +12161,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="6ac3-eef6-fb58-8a38" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d25c-40eb-237a-2866" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="bc4c-de21-4857-17c3" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75cf-3adc-bb1e-7f33" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="dcd6-63cb-4104-ea12" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7752-71c2-d35d-0f91" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -11052,6 +12344,14 @@
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="916e-b1ac-77cd-b745" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c009-7ab1-e9ca-bf8b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
               </costs>
             </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="14b6-2fc5-e657-438d" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
@@ -11220,6 +12520,14 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="dc00-8d0c-5cdd-5eb4" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b73-e1f5-fc4b-89bc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="7e64-0bb6-e1af-a0da" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="555c-dbf8-d465-9903" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -11375,9 +12683,33 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df31-5b5c-e405-92a2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="8b14-3488-63b0-87ef" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f797-3b11-5d36-5a6c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="02cc-479e-ce33-bafa" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f26-409d-95c7-a4c8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="b666-9c0c-5883-eb37" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3aa0-d4a8-0d4f-a451" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="b00a-aa53-5599-360a" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e96a-dac7-e9d9-8fba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -11519,6 +12851,14 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="900e-6581-1675-8258" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="b04e-299c-f54c-3349" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0543-2f5a-6825-4357" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="a154-5668-78db-1055" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d15e-0090-86fd-78c5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -11530,6 +12870,14 @@
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="ffcf-5fed-3873-644f" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdfc-383a-b351-6f27" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="65e4-4b8f-2b14-4f60" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="003c-4bf6-6ef4-db5b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
@@ -11643,6 +12991,14 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0dec-686a-e82f-941d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="ca18-25e9-c1ea-da0c" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a12a-ee61-fdd8-0c5a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="54c4-487a-5602-7952" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50ca-d644-9154-5926" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -11657,6 +13013,14 @@
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="e1b6-b231-73d4-300c" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b0f-253f-09a0-67b9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -11775,12 +13139,28 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2fdb-41d3-3aa5-3994" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="6b4f-6c07-9b7b-d077" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5d7-2a3c-3fc8-7c23" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="8122-9113-ec80-45bd" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87f9-ebe6-adfc-ecf6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="4f06-d13d-db4a-fa25" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="661b-74ae-b787-3ad7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -11893,6 +13273,14 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5512-d109-2c73-83d6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="fa2e-5d1c-49b8-e9d4" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7999-7f2c-1328-f452" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="78c0-dce2-b40a-c079" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0368-d6dc-01f8-0fdd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -11904,6 +13292,14 @@
             <entryLink import="true" name="Hardened Carapace" hidden="false" id="eaab-346a-946d-9d9e" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="342f-8345-b156-5520" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="5ffa-1b76-c6f3-8359" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74fe-4832-99a3-4f6c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
@@ -11952,7 +13348,7 @@
       <description>When building an army, choose one hive fleet for each detachment. Every unit in that detachment gains Hive Fleet (X), where X is the chosen hive fleet. Unique characters may join any hive fleet, except Old One Eye, who may only join Hive Fleet Behemoth.</description>
     </rule>
     <rule name="Regeneration (X)" id="8cfc-b5df-55c5-05f1" hidden="false" publicationId="7478-cf16-4f88-170b">
-      <description>A model with regeneration gains Regeneration (X): at the end of each of your turns, if the model has lost any Wounds, roll a D6. On a roll of X or more, it restores one lost Wound, up to its starting value.</description>
+      <description>A model with regeneration gains Regeneration (X): at the end of each of your turns, if the model has lost any Wounds, roll a D6. On a roll of X or more, it restores one lost Wound, up to its starting value. X is 5+ unless the datasheet says otherwise.</description>
     </rule>
     <rule name="Invulnerable Save (X)" id="3c21-439d-5d53-6927" hidden="false" publicationId="7478-cf16-4f88-170b">
       <description>The model has an Invulnerable Save of X, which may be taken against any Wound instead of its armour save.</description>

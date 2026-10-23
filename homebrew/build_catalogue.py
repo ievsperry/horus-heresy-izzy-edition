@@ -1187,10 +1187,19 @@ class Builder:
         scale = re.findall(r"(\d)\+ (\d+) points?", line)
         if "new Save" in line and scale:
             return {"save": {int(sv): int(pts) for sv, pts in scale}}
-        base = re.search(r"\+(\d+) points per model", line)
-        monstrous = re.search(r"\+(\d+) points per Monstrous model", line)
+        # "+1 point per model for Termagants, ... and Sky-Slasher Swarms; +3 points per model for every other model"
+        small = re.search(r"\+(\d+) points? per model for (?!every other)(.+?);", line)
+        if small:
+            base = re.search(r"\+(\d+) points? per model for every other model", line)
+        else:
+            base = re.search(r"\+(\d+) points? per model\b(?! for)", line)
+        monstrous = re.search(r"\+(\d+) points? per Monstrous model", line)
+        gargantuan = re.search(r"\+(\d+) points? per Gargantuan model", line)
         return {"model": int(base.group(1)) if base else 0,
                 "monstrous": int(monstrous.group(1)) if monstrous else None,
+                "gargantuan": int(gargantuan.group(1)) if gargantuan else None,
+                "no_gargantuan": "Gargantuan models may not" in line,
+                "small": (int(small.group(1)), [x.strip() for x in re.split(r", | and ", small.group(2))]) if small else None,
                 "only": Builder.only_types(line)}
 
     @staticmethod
@@ -1204,11 +1213,28 @@ class Builder:
                  "cavalry": "Cavalry"}
         return [t for k, t in words.items() if k in m.group(1).lower()]
 
+    def no_biomorph_units(self):
+        """'Spore Mines, ... and Sporocysts may not take biomorphs': units that take none."""
+        out = set()
+        for sec in self.wargear_sections():
+            for ln in sec["lines"]:
+                m = re.search(r"([A-Z][^.]+?) may not take biomorphs", ln)
+                if m:
+                    for n in re.split(r", | and ", m.group(1)):
+                        out |= forms(n)
+        return out
+
     def universal_options(self, ds, models):
         """(model name, biomorph name, id, cost, new save) for every biomorph each model may buy."""
         out = []
+        if forms(ds["name"]) & self.no_biomorph_units():
+            return out
+        # a biomorph the datasheet prices itself ("Regeneration (6+)") is bought there, not here
+        own = [norm(strip_md(r[0]).lstrip("–- ")) for r in ds["options"] if r and strip_md(r[0]).startswith(("–", "-"))]
         for mname, m in models.items():
             for name, eid, rule in self.universal:
+                if any(o.startswith(norm(name)) for o in own):
+                    continue
                 if "save" in rule:
                     if m["profile"].get("kind", "unit") != "unit":
                         continue
@@ -1225,8 +1251,16 @@ class Builder:
                     granted = self.shared_entries.find(f"selectionEntry[@id='{eid}']/infoLinks/infoLink")
                     if granted is not None and any(norm(r) == norm(granted.get("name")) for r in ds["rules"]):
                         continue
-                    monstrous = "Monstrous" in m["types"] and rule["monstrous"] is not None
-                    out.append((mname, name, eid, rule["monstrous"] if monstrous else rule["model"], None))
+                    cost = rule["model"]
+                    if rule.get("small") and forms(mname) & set().union(*(forms(n) for n in rule["small"][1])):
+                        cost = rule["small"][0]  # gaunt-sized models
+                    if "Gargantuan" in m["types"]:
+                        if rule.get("no_gargantuan"):
+                            continue
+                        cost = next(c for c in (rule.get("gargantuan"), rule["monstrous"], cost) if c is not None)
+                    elif "Monstrous" in m["types"] and rule["monstrous"] is not None:
+                        cost = rule["monstrous"]
+                    out.append((mname, name, eid, cost, None))
         return out
 
     def is_biomorph(self, name):
