@@ -15,6 +15,7 @@ python3 homebrew/build_catalogue.py homebrew/source/orks.md "Homebrew - Orks.cat
 python3 homebrew/build_catalogue.py homebrew/source/necrons.md "Homebrew - Necrons.cat"
 python3 homebrew/build_catalogue.py homebrew/source/tau.md "Homebrew - T'au Empire.cat"
 python3 homebrew/build_catalogue.py homebrew/source/astra-militarum.md "Homebrew - Astra Militarum.cat"
+python3 homebrew/build_catalogue.py homebrew/source/drukhari.md "Homebrew - Drukhari.cat"
 ```
 
 Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
@@ -30,8 +31,12 @@ loading. The script prints anything in the doc it could not place.
 - Biomorphs (everything in the doc's Biomorphs section) are taken by every model
   in the unit, and cost their points for each model. Tails are weapon options:
   bought per model, added to the model's other weapons.
-- Biomorphs with a **Cost:** line in the doc (Dynamic Camouflage, Hardened
-  Carapace) are offered to every unit whose models can all use them.
+- Biomorphs with a **Cost:** line in the doc (adrenal glands, toxin sacs, flesh hooks,
+  Dynamic Camouflage, Hardened Carapace) are offered to every unit whose models can all
+  use them, priced by model: a named list of small models, every other model, Monstrous
+  and Gargantuan ("Gargantuan models may not take them" leaves them out). A datasheet that
+  prices a biomorph itself keeps its own cost, and units the Biomorphs section says "may
+  not take biomorphs" (spores and transports) get none.
 - Options: extra models, weapon exchanges (including "one in every three"),
   per-model and whole-unit upgrades, and model upgrades such as the Neurothrope.
   "Each type only once" limits are enforced.
@@ -78,6 +83,11 @@ loading. The script prints anything in the doc it could not place.
   a boltgun the bolter, a force stave the force staff), and a weapon's mount is not part of its name
   ("Hull (Front) Mounted heavy bolter" is the official heavy bolter). Wargear marked "(Sergeant only)"
   replaces that model's weapons, and "Flamer, grenade launcher or sniper rifle" is one pick of three.
+- Wargear grouped under a heading ("### Armour" holding "#### Kabalite Armour") is read item by item.
+  "Scourge wings (count as a jump pack)" is the official jump pack under the doc's name. "May exchange
+  any dark lance" lets each of the three be swapped; "one macro-scalpel" only one of the two.
+- A unit that includes another datasheet's character ("Asdrubael Vect (use his HQ profile and
+  wargear)") gets that model, with its kit and its rules.
 
 ## Not enforced
 
