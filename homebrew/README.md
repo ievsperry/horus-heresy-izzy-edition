@@ -15,6 +15,7 @@ python3 homebrew/build_catalogue.py homebrew/source/orks.md "Homebrew - Orks.cat
 python3 homebrew/build_catalogue.py homebrew/source/necrons.md "Homebrew - Necrons.cat"
 python3 homebrew/build_catalogue.py homebrew/source/tau.md "Homebrew - T'au Empire.cat"
 python3 homebrew/build_catalogue.py homebrew/source/astra-militarum.md "Homebrew - Astra Militarum.cat"
+python3 homebrew/build_catalogue.py homebrew/source/drukhari.md "Homebrew - Drukhari.cat"
 ```
 
 Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
@@ -78,6 +79,11 @@ loading. The script prints anything in the doc it could not place.
   a boltgun the bolter, a force stave the force staff), and a weapon's mount is not part of its name
   ("Hull (Front) Mounted heavy bolter" is the official heavy bolter). Wargear marked "(Sergeant only)"
   replaces that model's weapons, and "Flamer, grenade launcher or sniper rifle" is one pick of three.
+- Wargear grouped under a heading ("### Armour" holding "#### Kabalite Armour") is read item by item.
+  "Scourge wings (count as a jump pack)" is the official jump pack under the doc's name. "May exchange
+  any dark lance" lets each of the three be swapped; "one macro-scalpel" only one of the two.
+- A unit that includes another datasheet's character ("Asdrubael Vect (use his HQ profile and
+  wargear)") gets that model, with its kit and its rules.
 
 ## Not enforced
 

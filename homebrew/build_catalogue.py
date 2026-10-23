@@ -184,8 +184,13 @@ def norm(s):
     return s
 
 
+IRREGULAR = {"incubi": "incubus"}
+
+
 def singular(word):
     w = norm(word)
+    if w in IRREGULAR:
+        yield IRREGULAR[w]
     for a, b in (("men", "man"), ("ies", "y"), ("es", ""), ("s", ""), ("z", "")):
         if w.endswith(a) and len(w) > (3 if a == "z" else 4):
             yield w[: -len(a)] + b
@@ -272,10 +277,15 @@ def parse_doc(text):
         elif ln.startswith("### ") and cur is not None:
             sub = {"title": ln[4:].strip(), "lines": []}
             cur["subs"].append(sub)
+        elif ln.startswith("#### ") and cur is not None and "Wargear" in cur["title"]:
+            # "### Armour" grouping "#### Kabalite Armour": each item is its own wargear entry,
+            # and a group heading with only its flavour text goes
+            if sub is not None and not [l for l in sub["lines"] if l.strip() and not re.fullmatch(r"\*[^*].*\*", l.strip())]:
+                cur["subs"].remove(sub)
+            sub = {"title": ln[5:].strip(), "lines": []}
+            cur["subs"].append(sub)
         elif cur is not None:
             (sub or cur)["lines"].append(ln)
-            if sub is not None and ln.startswith("#### "):
-                pass
     return sections
 
 
@@ -989,6 +999,25 @@ class Builder:
         ds["options"] = keep
         return specs + swaps
 
+    def embed_datasheets(self, ds):
+        """'Asdrubael Vect (use his HQ profile and wargear)': that datasheet's model joins this unit."""
+        for i, line in enumerate(ds["composition"]):
+            m = re.fullmatch(r"(.+?) \(use (?:his|her|its|their) .*?profile.*\)", line)
+            other = m and next((o for o in self.datasheets if o is not ds and norm(o["name"]) == norm(m.group(1))), None)
+            if not other or len(other["profiles"]) != 1:
+                continue
+            name = other["profiles"][0]["name"]
+            ds["profiles"].append(dict(other["profiles"][0]))
+            ds["composition"][i] = f"1 {name}"
+            if ds["types"] and ": " not in ds["types"][0]:
+                ds["types"][0] = f"{ds['profiles'][0]['name']}: {ds['types'][0]}"
+            typ = other["types"][0].partition(": ")[2] if ": " in other["types"][0] else other["types"][0]
+            ds["types"].append(f"{name}: {typ}")
+            ds["wargear"].append(f"{name}: " + ", ".join(other["wargear"]))
+            for r in other["rules"]:  # his own rules come with him: named ones on the unit, the rest on his model
+                if r not in ds["rules"] and r != "Independent Character":  # he rides the vehicle, joining no unit
+                    ds["rules"].append(r if ": " in r else f"{name} has {r}")
+
     def give_drone(self, ds, d, fixed=True):
         """Add a drone's profile, kit and unit type to a datasheet, unless it has its own."""
         name = d["name"]
@@ -1516,6 +1545,7 @@ class Builder:
 
         self._suit_commander = "commander" in norm(ds["name"])
         drone_specs = self.prepare_drones(ds)
+        self.embed_datasheets(ds)
         self.drop_vehicle_system_options(ds)
         # Model types and their counts.
         profiles = ds["profiles"]
@@ -2039,7 +2069,7 @@ class Builder:
         if determiner == "Each" and norm(subject or "") in ("model", "models") and not subject_models:
             subject_models = [n for n, mm in models.items() if mm["min"] > 0 or mm["replaces"]]
 
-        ex = re.search(r"may exchange (?:his |its |their )?(either pair of |one pair of |either |all \w+ |one of its )?(.+?) for", header)
+        ex = re.search(r"may exchange (?:his |her |its |their )?(either pair of |one pair of |either |all \w+ |one of its |any |one )?(.+?) for", header)
         replaced = "replaced with" in header
         if ex and re.match(r"The (entire|whole) unit", header):
             what = ex.group(2)
@@ -2201,8 +2231,8 @@ class Builder:
                 oid, n = self.find_weapon(original)
                 size = n
                 item_max = n
-                if g["qualifier"].startswith("one pair"):
-                    item_max = 1
+                if g["qualifier"].startswith("one pair") or g["qualifier"] == "one":
+                    item_max = 1  # "one macro-scalpel" of two
                 if g["qualifier"].startswith("all"):
                     size, item_max = 1, 1
                 ge = el(groups, "selectionEntryGroup", name=f"Exchange {g['what']}", hidden=False, id=gkey,
@@ -2304,6 +2334,11 @@ class Builder:
                 name = bare if norm(bare).startswith("twin") and not norm(shown).startswith("twin") else shown
                 self.link(links, wid, name, m["id"] + (w if shown in seen else ""), count=n)
                 seen.add(shown)
+                continue
+            ca = re.fullmatch(r"(.+?) \(counts? as (?:an? )?(.+)\)", w)
+            cid = ca and (self.find_upgrade(ca.group(2)) or self.find_weapon(ca.group(2))[0])
+            if cid:
+                self.link(links, cid, ca.group(1)[0].upper() + ca.group(1)[1:], m["id"], count=1)
                 continue
             uid = self.find_upgrade(w)
             if uid:
