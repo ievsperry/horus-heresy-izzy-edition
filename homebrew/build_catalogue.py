@@ -1843,8 +1843,9 @@ class Builder:
             models = unit.findall("selectionEntries/selectionEntry[@type='model']")
             def kind(me):
                 return " ".join(c.text or "" for c in me.iter("characteristic") if c.get("name") == "Unit Type")
-            eligible = [me for me in models if re.search(r"\bCharacter\b", kind(me))] if ds["slot"] == "HQ" else []
-            if ds["slot"] == "HQ" and not eligible and models:
+            retinue = any(norm(r).startswith("retinue") for r in ds["rules"])  # bodyguards, not leaders
+            eligible = [me for me in models if re.search(r"\bCharacter\b", kind(me))] if ds["slot"] == "HQ" and not retinue else []
+            if ds["slot"] == "HQ" and not retinue and not eligible and models:
                 # an HQ with no Character model (the Trygon Prime): its own model leads
                 eligible = [next((me for me in models if forms(me.get("name")) & forms(ds["name"])), models[0])]
             if must and models:
