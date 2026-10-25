@@ -23,7 +23,7 @@ GAME_SYSTEM_REVISION = "130"  # the first revision with the Xenos allegiance
 # Factions that take the Xenos allegiance. Their army selection carries the Xenos Army
 # category, which makes the game system require Xenos for that force, and every unit
 # links the Xenos rule.
-XENOS_FACTIONS = {"Tyranids", "Orks", "Necrons", "T'au Empire", "Drukhari", "Aeldari", "Leagues of Votann"}
+XENOS_FACTIONS = {"Tyranids", "Orks", "Necrons", "T'au Empire", "Drukhari", "Asuryani", "Anhrathe", "Rillietann", "Leagues of Votann"}
 XENOS_ARMY_CATEGORY = ("3c8e-5a1d-9b47-e2f0", "Xenos Army")
 PTS = "d2ee-04cb-5f8a-2642"
 
@@ -962,8 +962,10 @@ class Builder:
     def build_disciplines(self):
         """With several "## Psychic Discipline: X" sections, each is an entry holding its powers and
         weapons; "must select either Protect or Jinx" is a pick of one of those powers."""
-        if len(self.psy_sections) < 2:
-            return
+        named = {norm(f"Psychic Discipline ({p['disc']})") for p in self.psy_sections if p["disc"]}
+        lines = (norm(l[2:]) for s in self.sections for sub in [s] + s["subs"] for l in sub["lines"] if l.startswith("- "))
+        if len(self.psy_sections) < 2 and not any(l in named for l in lines):
+            return  # one discipline that every psyker has (unless a datasheet names it: Phantasmancy)
         for psy in self.psy_sections:
             name = psy["disc"]
             did = make_id("discipline", self.faction, name)
@@ -3715,7 +3717,8 @@ class Builder:
             self.add_named_transports(transports)
             return
         transports = [ds for ds in transports if ds["slot"] == "Dedicated Transports"]
-        cap = 20
+        # a spore holds 20; a Corsair Venom only its Transport Capacity (6)
+        cap = min([c for c in map(self.transport_capacity, transports) if c] or [20])
         # "Spore Mines, ... and the units that always have wings (Gargoyles, ...) may not take a Mycetic Spore"
         barred = set()
         for ln in (self.section("Dedicated Transports") or {"lines": []})["lines"]:
