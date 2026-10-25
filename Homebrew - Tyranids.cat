@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -155,6 +155,27 @@
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Endless Swarm" hidden="false" id="d11c-e765-976f-3eb9" publicationId="7478-cf16-4f88-170b">
+              <modifiers>
+                <modifier type="set" field="5f1e-14b0-ce4b-2cda" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c658-dc6b-727b-c488" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="22f5-c98c-fdf7-8151" value="0">
+                  <conditions>
+                    <condition type="greaterThan" value="2" field="selections" scope="force" childId="7031-469a-1aeb-eab0" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f1e-14b0-ce4b-2cda" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22f5-c98c-fdf7-8151" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="aba8-de06-299d-1e2e" hidden="false">
                   <description>Termagant and Hormagaunt units in a Detachment using this Rite of War may contain up to 40 models, and gain the Without Number (5+) special rule. Ripper Swarms and Gargoyles in a Detachment using this Rite of War gain the Without Number (6+) special rule.</description>
@@ -171,6 +192,27 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Hidden Brood" hidden="false" id="e176-fe9a-fbf4-cea3" publicationId="7478-cf16-4f88-170b">
+              <modifiers>
+                <modifier type="set" field="b03d-264f-1a8b-2fd8" value="0">
+                  <conditions>
+                    <condition type="lessThan" value="2" field="selections" scope="force" childId="efed-500e-b4c5-4e79" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="fac7-aa25-fda9-4ff5" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c658-dc6b-727b-c488" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b03d-264f-1a8b-2fd8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fac7-aa25-fda9-4ff5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="f9d1-d28f-a6e2-d470" hidden="false">
                   <description>Genestealer units in a Detachment using this Rite of War may be taken as Troops choices, gain the Line Sub-type and may contain up to 20 models. Genestealer units and Broodlords in a Detachment using this Rite of War gain the Infiltrate and Move Through Cover special rules. A Genestealer unit in a Detachment using this Rite of War that deployed using the Infiltrate special rule may not be targeted by Shooting Attacks during the first game turn.</description>
@@ -187,6 +229,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Monstrous Host" hidden="false" id="f063-ad40-a214-7cfd" publicationId="7478-cf16-4f88-170b">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <rules>
                 <rule name="Effects" id="7f94-5530-96d4-9779" hidden="false">
                   <description>Tyranid Warriors may be taken as Compulsory Troops choices in a Detachment using this Rite of War, lose the Support Squad special rule and gain the Line Sub-type.</description>
@@ -203,6 +252,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Skytyrant Swarm" hidden="false" id="6ff5-4104-b1c7-3f45" publicationId="7478-cf16-4f88-170b">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <rules>
                 <rule name="Effects" id="b855-f4b4-b6f9-200b" hidden="false">
                   <description>Gargoyles and Tyranid Shrikes may be taken as Troops choices in a Detachment using this Rite of War and gain the Line Sub-type.</description>
@@ -219,6 +275,39 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Subterranean Assault" hidden="false" id="da74-5e15-7081-6b5f" publicationId="7478-cf16-4f88-170b">
+              <modifiers>
+                <modifier type="set" field="89e3-4a22-6f60-83cd" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="20ec-d5d5-2f4e-6c34" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="87e4-4a88-8cd3-9645" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c31d-6f01-1f8d-56cc" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="fee8-4f17-df3d-cd9a" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5c0b-d351-3e1c-e780" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="ebfa-bd7b-7503-e23e" value="0">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="selections" scope="force" childId="c658-dc6b-727b-c488" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89e3-4a22-6f60-83cd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87e4-4a88-8cd3-9645" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fee8-4f17-df3d-cd9a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebfa-bd7b-7503-e23e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="7eb3-04ad-b405-ef97" hidden="false">
                   <description>Trygons, Mawlocs, Raveners and units with Hive Fleet (Jormungandr) in a Detachment using this Rite of War that arrive by Deep Strike or Subterranean Assault may arrive from the first game turn. These units do not scatter if they arrive within 12" of a friendly Trygon or Mawloc.</description>
@@ -462,12 +551,26 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Harpy" hidden="false" id="8740-d74d-8bb4-7a8e" type="selectionEntry" targetId="20ec-d5d5-2f4e-6c34">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="da74-5e15-7081-6b5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="a38b-5a19-78b7-f892" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="631a-a1fc-d6db-b2d2" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Hive Crone" hidden="false" id="832d-a2db-e519-4534" type="selectionEntry" targetId="c31d-6f01-1f8d-56cc">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="da74-5e15-7081-6b5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="00ea-32ab-caf2-7897" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="67d0-26ec-1f36-8696" primary="false" name="Unit:" />
@@ -594,6 +697,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Barbed Hierodule" hidden="false" id="ad11-0ca4-96f1-7502" type="selectionEntry" targetId="a184-a11e-24bd-e174">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="fbfd-3689-c086-8c01" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="c7be-a5ba-ff4c-ce7f" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -601,6 +716,23 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Harridan" hidden="false" id="3364-d4eb-f956-9943" type="selectionEntry" targetId="5c0b-d351-3e1c-e780">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="da74-5e15-7081-6b5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="450f-d434-a17a-82f4" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="de64-8f3d-3b79-37cc" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -608,6 +740,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Hierophant Bio-titan" hidden="false" id="8fc5-9f24-0946-df55" type="selectionEntry" targetId="464f-f8bb-bcbc-0648">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="fc3c-52f8-cbc8-3d58" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="9cff-8999-8212-fc33" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -615,6 +759,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Scythed Hierodule" hidden="false" id="1a20-cc0f-bc05-43ff" type="selectionEntry" targetId="c2a9-d1c9-c3c8-36ea">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="6d09-01f4-17e5-460b" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="5b45-be54-d76b-14be" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -2498,7 +2654,7 @@
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
                 <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">7</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
                 <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
@@ -5670,7 +5826,7 @@
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
                 <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
                 <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
@@ -5705,7 +5861,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="16" />
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -16246,6 +16402,9 @@
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Adaptive Biology" hidden="false" id="a947-aacb-6f49-fbd5" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2625-4109-833b-6a45" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Adaptive Biology" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="2549-6914-f9e8-a6cf">
               <characteristics>
@@ -16261,6 +16420,9 @@
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Alpha Leader" hidden="false" id="0af3-9968-fdd5-371a" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86f4-3a55-02a2-2ac7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Alpha Leader" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="c68f-3da7-f157-3ef4">
               <characteristics>
@@ -16276,6 +16438,9 @@
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Synaptic Lynchpin" hidden="false" id="db49-3a7a-de5a-6e4b" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6dd-14d0-5f4c-0c04" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Synaptic Lynchpin" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="9f72-e302-0750-996f">
               <characteristics>
@@ -16298,6 +16463,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2916-497e-4f0f-b72b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Monstrous Hunger" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="2d80-9e67-3af7-f764">
               <characteristics>
@@ -16320,6 +16488,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7089-9a90-5cb5-707b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Brood Mother" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="cc99-7159-efa4-5355">
               <characteristics>
@@ -16342,6 +16513,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4762-b704-af22-bd82" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Subterranean Hunter" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="399d-a85b-c187-55de">
               <characteristics>
@@ -16364,6 +16538,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1707-d7e9-21cd-42c4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Swift Hunter" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="ab32-b870-0ae7-1514">
               <characteristics>
@@ -16386,6 +16563,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00b0-9c88-3fd6-89d1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Soul Hunger" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="ec49-9d02-ee91-8720">
               <characteristics>
@@ -16408,6 +16588,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f04-7e9e-b513-f2b7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Will of the Hive Mind" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="e327-8f96-9f72-04a6">
               <characteristics>

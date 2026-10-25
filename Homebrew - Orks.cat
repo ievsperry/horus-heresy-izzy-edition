@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -161,6 +161,13 @@
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Dread Mob" hidden="false" id="29c4-3570-de92-29f9" publicationId="96d0-c462-d158-fbad">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <rules>
                 <rule name="Effects" id="ff59-8b49-e2fc-17b6" hidden="false">
                   <description>Killa Kans may be taken as Troops choices in a Detachment using this Rite of War. Every model with Mek-Smasha (X) in a Detachment using this Rite of War improves it by 1, to a best of Mek-Smasha (3+).</description>
@@ -177,6 +184,27 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Green Tide" hidden="false" id="669a-ae9c-8123-7219" publicationId="96d0-c462-d158-fbad">
+              <modifiers>
+                <modifier type="set" field="25e9-55c5-424f-a33b" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c658-dc6b-727b-c488" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="abae-fbab-1e6f-8401" value="0">
+                  <conditions>
+                    <condition type="greaterThan" value="2" field="selections" scope="force" childId="7031-469a-1aeb-eab0" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25e9-55c5-424f-a33b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abae-fbab-1e6f-8401" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="83e8-faf0-a3f8-6b3f" hidden="false">
                   <description>Boyz units in a Detachment using this Rite of War may contain up to 40 models, and Big Boyz units may contain up to 30 models. Units of 20 or more Boyz in a Detachment using this Rite of War use Leadership 10 for Mob Rule.</description>
@@ -193,6 +221,63 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Snagga Hunt" hidden="false" id="5150-f28c-375b-ad54" publicationId="96d0-c462-d158-fbad">
+              <modifiers>
+                <modifier type="set" field="bb0f-f257-bd57-2511" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6c39-3ab6-141f-ca29" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="0c3d-cf85-4344-1fd0" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8fe0-8c05-6da2-ad07" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="7191-9a70-e712-e25d" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a04f-d69c-e199-fe41" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c35a-1835-7256-c06b" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c9-7d00-511d-5283" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="d428-95c3-3b37-ea0c" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6fa2-22dc-f3a0-33c1" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="6da2-f69b-c049-c5e9" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c1b6-e7ed-7eed-f97c" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="087e-050b-da6f-a017" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5f6f-80aa-495e-7dba" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="17fc-0305-8659-e653" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f9b1-879a-ce26-9b58" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb0f-f257-bd57-2511" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c3d-cf85-4344-1fd0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7191-9a70-e712-e25d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c35a-1835-7256-c06b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d428-95c3-3b37-ea0c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6da2-f69b-c049-c5e9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="087e-050b-da6f-a017" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17fc-0305-8659-e653" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="ce13-9242-3cf1-ad3b" hidden="false">
                   <description>Squighog Boyz may be taken as Troops choices in a Detachment using this Rite of War. Beast Snagga units in a Detachment using this Rite of War re-roll to-wound rolls of 1 against Vehicles, Dreadnoughts and Monstrous Creatures.</description>
@@ -209,6 +294,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Speed Freeks" hidden="false" id="ccb3-b830-f9f4-48b5" publicationId="96d0-c462-d158-fbad">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <rules>
                 <rule name="Effects" id="783c-5937-d041-03a3" hidden="false">
                   <description>Warbikers may be taken as Troops choices in a Detachment using this Rite of War, and gain the Line sub-type. Nobz on Warbikes may be taken as Fast Attack choices in a Detachment using this Rite of War. Ork vehicles with the Fast sub-type and Mechanised Ork Cavalry (the Speed Freek buggies) in a Detachment using this Rite of War improve their Ramshackle (X) by 1, so Ramshackle (6+) becomes Ramshackle (5+).</description>
@@ -426,6 +518,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Gretchin" hidden="false" id="513d-110f-cd0a-9637" type="selectionEntry" targetId="6fa2-22dc-f3a0-33c1">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5150-f28c-375b-ad54" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="4dcf-a5a8-87b1-f8fe" primary="true" name="Troops:" />
         <categoryLink targetId="8f42-a824-fb5f-8fea" id="17a1-9972-612f-6693" primary="false" name="Compulsory Troops:" />
@@ -433,6 +532,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Blitza-bommer" hidden="false" id="a14f-cdd4-0070-c0b9" type="selectionEntry" targetId="6c39-3ab6-141f-ca29">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5150-f28c-375b-ad54" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="b06c-79f9-21a2-a189" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="45dc-b526-51b0-fd99" primary="false" name="Unit:" />
@@ -445,12 +551,26 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Burna-bommer" hidden="false" id="d437-674b-e1f1-2086" type="selectionEntry" targetId="8fe0-8c05-6da2-ad07">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5150-f28c-375b-ad54" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="8603-bcfa-b394-d6ae" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="fb35-2fcb-24fb-2ac0" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Dakkajet" hidden="false" id="13ba-665d-f4ae-c25f" type="selectionEntry" targetId="a04f-d69c-e199-fe41">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5150-f28c-375b-ad54" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="c25d-c933-9018-c027" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="3b1b-031d-6b85-81f6" primary="false" name="Unit:" />
@@ -505,12 +625,26 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Wazbom Blastajet" hidden="false" id="da15-7bac-1479-7451" type="selectionEntry" targetId="29c9-7d00-511d-5283">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5150-f28c-375b-ad54" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="d765-d664-d03c-d937" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="b753-ec61-d49b-3dc4" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Battlewagon" hidden="false" id="2062-731c-9f43-7495" type="selectionEntry" targetId="c1b6-e7ed-7eed-f97c">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5150-f28c-375b-ad54" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="2550-9cea-59e9-ae10" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="4fc5-8b5e-b598-6a9b" primary="false" name="Unit:" />
@@ -523,6 +657,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Bonebreaka" hidden="false" id="87f7-233b-1aa4-4185" type="selectionEntry" targetId="5f6f-80aa-495e-7dba">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5150-f28c-375b-ad54" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="3a6d-fa39-72f9-2d9c" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="8a45-da96-97b7-de6c" primary="false" name="Unit:" />
@@ -541,6 +682,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Gunwagon" hidden="false" id="7ad3-f677-c2db-0534" type="selectionEntry" targetId="f9b1-879a-ce26-9b58">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5150-f28c-375b-ad54" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="1778-5e6b-2c10-5101" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="fd57-77db-0580-3e73" primary="false" name="Unit:" />
@@ -584,6 +732,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Gorkanaut" hidden="false" id="eca6-b79d-b1cc-7f49" type="selectionEntry" targetId="5428-ffe2-0ddc-27f8">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="669a-ae9c-8123-7219" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="d295-cebc-69bb-2f87" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="a392-9ff6-716e-aae8" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -591,6 +746,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Morkanaut" hidden="false" id="d8f1-b6e6-fb38-59a5" type="selectionEntry" targetId="50d6-c19b-9e14-4022">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="669a-ae9c-8123-7219" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="f4e6-f07c-b14e-87f0" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="99fb-7936-7133-1474" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -598,6 +760,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Stompa" hidden="false" id="3c4f-9e82-9896-c10b" type="selectionEntry" targetId="d452-383b-61a4-8fcd">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="669a-ae9c-8123-7219" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="350f-482a-d675-a7eb" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="6618-421a-12bc-4c82" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -2374,7 +2543,7 @@
       <profiles>
         <profile name="Da Finkin' Kap" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6bff-aca1-b8d4-7c06">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Warboss or Big Mek. If the bearer is your Warlord, he may choose two generic Warlord Traits instead of one</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Warboss or Big Mek. If the bearer is your Warlord, he may choose a second Warlord Trait, which must be a generic Warlord Trait</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -12537,6 +12706,9 @@
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Bellowin' Tyrant" hidden="false" id="6a9a-a2f4-8407-2412" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="491f-7f77-c255-979c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Bellowin' Tyrant" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="a1eb-4716-4d85-eaab">
               <characteristics>
@@ -12552,6 +12724,9 @@
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Da Boss Is Watchin'" hidden="false" id="5c14-33ba-ebc4-f458" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b5c-847b-cea3-e726" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Da Boss Is Watchin'" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="be7e-5b7c-7874-c556">
               <characteristics>
@@ -12567,6 +12742,9 @@
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Might Is Right" hidden="false" id="eab6-ba2c-5d93-3ddb" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a8f-7b82-406c-8351" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Might Is Right" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="1f03-dd4a-3ff7-916d">
               <characteristics>
@@ -12589,6 +12767,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da81-c390-ffa4-cb0e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Da Biggest Gun" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="b304-9879-9961-0ded">
               <characteristics>
@@ -12611,6 +12792,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6e0-9fc1-f816-1e92" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Kunnin' Plan" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="e4cf-eb92-30f5-f73b">
               <characteristics>
@@ -12633,6 +12817,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10a4-b264-ae10-64d3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Dead Lucky" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="f873-52f4-e01c-e0eb">
               <characteristics>
@@ -12655,6 +12842,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ee3-be03-2381-b69a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Red-hot Speedboss" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="00ce-be6d-193d-98b9">
               <characteristics>
@@ -12677,6 +12867,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b51-246c-77cb-0df3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Skarboy Boss" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="8597-9052-ed40-1fcc">
               <characteristics>
@@ -12699,6 +12892,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8cab-877d-9d7b-8878" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Beast Tamer" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="8a3e-b483-3619-0b0a">
               <characteristics>

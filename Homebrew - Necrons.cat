@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="6dbb-42c9-758d-cd66" name="Necrons for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Necrons" />
   </publications>
@@ -155,6 +155,16 @@
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Canoptek Harvest" hidden="false" id="6b09-f140-c83a-fae8" publicationId="6dbb-42c9-758d-cd66">
+              <modifiers>
+                <modifier type="set" field="299e-a7b5-402c-e349" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c658-dc6b-727b-c488" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="299e-a7b5-402c-e349" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="3b7a-78e9-8742-b965" hidden="false">
                   <description>Canoptek Wraiths and Canoptek Scarabs may be taken as Troops and gain the Line sub-type.</description>
@@ -171,6 +181,22 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Destroyer Cult" hidden="false" id="0247-ddd5-9aca-d110" publicationId="6dbb-42c9-758d-cd66">
+              <modifiers>
+                <modifier type="set" field="c7db-48c5-b31f-407f" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="ac32-477c-44bc-e224" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="69c2-10ad-e070-bd9e" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8297-0ba9-d8a4-ea5e" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7db-48c5-b31f-407f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69c2-10ad-e070-bd9e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="f3c1-f32f-255d-2ca9" hidden="false">
                   <description>Destroyers, Heavy Destroyers, Skorpekh and Ophydian Destroyers gain Rage (2), and Destroyers may be taken as Troops.</description>
@@ -187,6 +213,40 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Royal Court" hidden="false" id="5db8-02f9-37ab-45dc" publicationId="6dbb-42c9-758d-cd66">
+              <modifiers>
+                <modifier type="set" field="85dd-d2b1-9a4c-ed41" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fb79-76d2-8c20-05b5" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="362c-5114-4c07-45a9" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c6fb-6a1a-ccd1-0ee5" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="3ec1-0ae1-ecdd-5d87" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a717-068d-e6c3-c332" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="51ff-6d92-8ccd-3c04" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1ea3-dd19-a9ed-422e" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="38fc-23dd-3062-6166" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3980-d65d-3db0-1a5c" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85dd-d2b1-9a4c-ed41" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="362c-5114-4c07-45a9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ec1-0ae1-ecdd-5d87" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51ff-6d92-8ccd-3c04" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38fc-23dd-3062-6166" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="8a0d-5d73-e222-7af8" hidden="false">
                   <description>Lychguard may be taken as Troops and gain the Line sub-type, and the Overlord may take a Royal Warden and up to two Crypteks without using HQ slots.</description>
@@ -203,6 +263,16 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Tomb World Awakening" hidden="false" id="4abe-57cb-99ed-e198" publicationId="6dbb-42c9-758d-cd66">
+              <modifiers>
+                <modifier type="set" field="4873-0eae-9402-e615" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="20ef-cd01-a8da-376e" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4873-0eae-9402-e615" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="ed2a-0157-57e6-7b2c" hidden="false">
                   <description>every unit improves its Reanimation Protocols by 1, to a best of 4+, in the first two game turns.</description>
@@ -371,6 +441,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Hexmark Destroyer" hidden="false" id="8405-84aa-9610-8863" type="selectionEntry" targetId="fb79-76d2-8c20-05b5">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5db8-02f9-37ab-45dc" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="89c0-ee9b-7dbb-b7b3" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="1705-39f9-1445-4371" primary="false" name="Unit:" />
@@ -383,6 +460,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Skorpekh Destroyers" hidden="false" id="c2ed-4dff-1754-5632" type="selectionEntry" targetId="c6fb-6a1a-ccd1-0ee5">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5db8-02f9-37ab-45dc" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="5779-02ae-f083-eeb5" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="e9ce-5868-9973-54ba" primary="false" name="Unit:" />
@@ -408,6 +492,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Necron Warriors" hidden="false" id="6cd5-01a4-36fa-6de6" type="selectionEntry" targetId="ac32-477c-44bc-e224">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0247-ddd5-9aca-d110" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="299d-0152-c670-224a" primary="true" name="Troops:" />
         <categoryLink targetId="8f42-a824-fb5f-8fea" id="f4d6-ea9b-6245-53d8" primary="false" name="Compulsory Troops:" />
@@ -421,30 +512,75 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Canoptek Scarabs" hidden="false" id="1f67-498d-d5c3-6a00" type="selectionEntry" targetId="8931-2d5e-aa5f-48dd">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4abe-57cb-99ed-e198" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="006e-d122-1099-f545" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="c3d1-c22d-a40c-593a" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Canoptek Wraiths" hidden="false" id="e9a1-8555-a97c-cd82" type="selectionEntry" targetId="52bd-c684-720c-a834">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4abe-57cb-99ed-e198" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="b797-14be-5055-73bb" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="b179-b3a2-f33c-3889" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Destroyers" hidden="false" id="ab9c-d653-6ed2-7662" type="selectionEntry" targetId="a717-068d-e6c3-c332">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5db8-02f9-37ab-45dc" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4abe-57cb-99ed-e198" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="a22c-d739-eed6-ce5c" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="5dd1-c91e-4b59-3126" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Ophydian Destroyers" hidden="false" id="5329-9e5b-17a2-acf2" type="selectionEntry" targetId="1ea3-dd19-a9ed-422e">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5db8-02f9-37ab-45dc" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4abe-57cb-99ed-e198" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="18f6-b31a-d17b-de0a" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="3ef0-c677-8ea5-2f9d" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Tomb Blades" hidden="false" id="fee0-d70c-e68e-64ca" type="selectionEntry" targetId="ed78-b274-9cb3-485d">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4abe-57cb-99ed-e198" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="42ac-55da-8964-e66b" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="538c-dbe6-36ca-6e69" primary="false" name="Unit:" />
@@ -487,6 +623,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Heavy Destroyers" hidden="false" id="f803-5ea6-e9dd-915c" type="selectionEntry" targetId="3980-d65d-3db0-1a5c">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5db8-02f9-37ab-45dc" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="0d89-bcda-fa81-b9fb" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="82ac-bef1-45ea-72c4" primary="false" name="Unit:" />
@@ -499,6 +642,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="C'tan Shard of the Deceiver" hidden="false" id="0927-2463-3f3d-51ae" type="selectionEntry" targetId="93f7-975f-be09-1788">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6b09-f140-c83a-fae8" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="1487-6617-952f-f288" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="1bf2-38bb-2c9f-66a3" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -506,6 +656,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="C'tan Shard of the Nightbringer" hidden="false" id="35ea-7033-16f7-d190" type="selectionEntry" targetId="b25d-6a07-7146-f98e">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6b09-f140-c83a-fae8" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="f236-48ba-276b-50cd" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="912c-ff3b-09d1-6575" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -513,6 +670,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="C'tan Shard of the Void Dragon" hidden="false" id="2f3c-7a01-8dbb-ef4a" type="selectionEntry" targetId="aeb8-e5e0-968f-37c0">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6b09-f140-c83a-fae8" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="d22e-7028-3436-b6d1" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="45d7-fa28-5dc2-d968" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -520,6 +684,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Obelisk" hidden="false" id="0c50-400f-a7bf-0be5" type="selectionEntry" targetId="72b1-2b52-e5f9-4509">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6b09-f140-c83a-fae8" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="05db-b176-916c-5a32" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="280e-6cc8-dbe7-a31d" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -527,6 +698,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Szarekh, the Silent King" hidden="false" id="f6d8-0d8a-8429-7f64" type="selectionEntry" targetId="59c6-515d-6fee-2e37">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6b09-f140-c83a-fae8" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="f86f-a625-f492-bea1" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="a95d-736a-c4b3-54a7" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -534,6 +712,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Tesseract Vault" hidden="false" id="5ff4-b1c7-d3cc-548f" type="selectionEntry" targetId="4cf4-5e34-5e19-bda5">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6b09-f140-c83a-fae8" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="1269-7cf4-e105-49f7" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="5a6c-26a0-083a-cc88" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -545,6 +730,11 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="6b09-f140-c83a-fae8" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4abe-57cb-99ed-e198" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
       </modifiers>
@@ -561,6 +751,11 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="6b09-f140-c83a-fae8" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4abe-57cb-99ed-e198" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="81aa-d3ab-61f8-e849" primary="true" name="Troops:" />
@@ -573,6 +768,16 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="0247-ddd5-9aca-d110" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5db8-02f9-37ab-45dc" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4abe-57cb-99ed-e198" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
       </modifiers>
@@ -7158,6 +7363,9 @@
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Enduring Will" hidden="false" id="8eae-bbe1-5a80-de16" publicationId="6dbb-42c9-758d-cd66">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7d6-5785-803d-ef02" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Enduring Will" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="eafd-6af7-3366-be88">
               <characteristics>
@@ -7173,6 +7381,9 @@
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Eternal Madness" hidden="false" id="e2fc-52a7-8900-0ea3" publicationId="6dbb-42c9-758d-cd66">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ec4-5728-7c12-79cd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Eternal Madness" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="e88c-ab5a-996c-ed9a">
               <characteristics>
@@ -7188,6 +7399,9 @@
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Phaeron of the Stars" hidden="false" id="cb32-5315-7946-11ef" publicationId="6dbb-42c9-758d-cd66">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bef-13ca-d244-0c83" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Phaeron of the Stars" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="f595-5c46-d7d6-91f3">
               <characteristics>
@@ -7210,6 +7424,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f725-83ed-a1e4-cffc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Merciless Tyrant" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="7c38-7d14-4f59-df6c">
               <characteristics>
@@ -7232,6 +7449,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de1f-770e-f4f9-2d69" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Skin of Living Gold" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="6db2-5a38-f3ad-cd4c">
               <characteristics>
@@ -7254,6 +7474,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2c0-482d-7522-64d6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Precognitive Strike" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="05a0-73c9-34fc-0b85">
               <characteristics>
@@ -7276,6 +7499,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="043b-bc75-5cd2-64b1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Honourable Combatant" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="fbfa-a23f-1e08-72f6">
               <characteristics>
@@ -7298,6 +7524,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f81f-e1e4-df13-a02f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Implacable Conqueror" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="6b3b-42a2-9b1f-f20c">
               <characteristics>
@@ -7320,6 +7549,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8d9-1cfc-37ef-cb0b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="The Triarch's Will" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="744d-f4ed-1652-1c57">
               <characteristics>

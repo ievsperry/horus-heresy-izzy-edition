@@ -286,7 +286,7 @@ _The ground shakes, the earth splits, and the swarm erupts from below, burrowing
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Broodlord | 8 | 7 | 4 | 5 | 5 | 3 | 7 | 4 | 10 | 4+ | 40mm |
+| Broodlord | 8 | 7 | 4 | 5 | 5 | 3 | 6 | 4 | 10 | 4+ | 40mm |
 
 **Unit Composition**
 
@@ -677,11 +677,11 @@ _The ground shakes, the earth splits, and the swarm erupts from below, burrowing
 - Stealth
 - Where Is It?: Deathleaper may Deep Strike instead of deploying, and does not scatter
 
-### Genestealers — 85 pts
+### Genestealers — 80 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Genestealer | 8 | 6 | 2 | 4 | 4 | 1 | 6 | 3 | 10 | 5+ | 32mm |
+| Genestealer | 8 | 6 | 2 | 4 | 4 | 1 | 5 | 3 | 10 | 5+ | 32mm |
 
 **Unit Composition**
 
@@ -708,7 +708,7 @@ _The ground shakes, the earth splits, and the swarm erupts from below, burrowing
 | Option | Cost |
 |---|---|
 | **The Genestealers may take:** |  |
-| – Up to 5 additional Genestealers | +16 points each |
+| – Up to 5 additional Genestealers | +15 points each |
 | – Toxin sacs for the whole unit | +3 points per model |
 | **Any Genestealer may exchange its rending claws for:** |  |
 | – Scything talons | +2 points |

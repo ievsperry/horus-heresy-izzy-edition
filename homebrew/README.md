@@ -57,7 +57,8 @@ loading. The script prints anything in the doc it could not place.
   Warlord entry, so an army must have exactly one. A model whose datasheet says it "must be
   your Warlord" (Ghazghkull, Imotekh, Vect...) is offered it in any slot and must take it.
   The Warlord must pick one Warlord Trait: a generic trait, or its sub-faction's own, which
-  shows only when the army has that sub-faction. Da Finkin' Kap lets its bearer take two.
+  shows only when the army has that sub-faction. Da Finkin' Kap lets its bearer take a second, generic trait;
+  no trait can be taken twice.
 - Weapons and psychic powers from the doc's armoury, linked to the core rules
   in `2022 - Horus Heresy.gst` wherever a rule of the same name exists.
 
@@ -109,6 +110,11 @@ loading. The script prints anything in the doc it could not place.
   N models", and special rules a Rite gives or takes away apply while it is chosen. "Must have a
   Big Mek as its Warlord" leaves only those models able to be the Warlord, and a named Warlord
   that is not an HQ (a Trygon Prime) is offered the Warlord option under that Rite.
+- Rite of War limitations are checked too: units a Rite bars ("no Lords of War", "any Flyers",
+  "Heavy Support choices other than Broadsides", "Destroyers of any kind") are hidden while it is
+  chosen and are an error on the Rite if already taken; "no more than two Heavy Support choices"
+  and "must include at least two Genestealer units" are errors on the Rite when broken; and a Rite
+  that "may not be used by an Allied Detachment" is hidden in one.
 
 - A biomorph granted by a sub-faction ("Deep Burrowers: Infantry units gain the Burrower biomorph")
   or a Warlord Trait ("The Warlord and any unit it joins gain the Burrower biomorph") shows its
@@ -120,8 +126,9 @@ loading. The script prints anything in the doc it could not place.
 
 ## Not enforced
 
-- Rite of War limitations other than the Warlord ("no Lords of War", "no more than two Heavy
-  Support choices") and effects that are in-game only (Deep Strike from turn one) are text only.
+- Rite of War limitations that compare unit counts ("may not include more Infantry units than
+  Dreadnought units") or are in-game only ("must start the game embarked", "no Reserves"), and Rite
+  effects that are in-game only (Deep Strike from turn one), are text only.
 - Instinctive Behaviour, Synapse and other in-game rules are text only.
 - Lords of War use the game system's existing 25% points category; nothing
   Tyranid-specific is added to it.
