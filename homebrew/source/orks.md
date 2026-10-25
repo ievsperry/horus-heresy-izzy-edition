@@ -327,15 +327,15 @@ Every Ork belongs to a Klan, and each Klan fights in its own way. Klans work lik
 
 **Klan Advanced Reactions.** Each Klan has its own Advanced Reaction, usable only by units with that Klan (X) rule. It is available in addition to Get Stuck In and costs one point of the Reaction Allotment like any other reaction†.
 
-**Named characters.** A Unique character belongs to the Klan listed below and may only be included in a detachment of that Klan. Kaptin Badrukk is the exception: he is a Bad Moon, but as a Freebooter he may join a detachment of any Klan, keeping Klan (Bad Moons).
+**Named characters.** A Unique character belongs to the Klan listed below and may only be included in a detachment of that Klan.
 
 | Klan | Unique characters |
 |---|---|
-| Bad Moons | Kaptin Badrukk (any Klan) |
+| Bad Moons | – |
 | Blood Axes | Boss Snikrot |
 | Deathskulls | Mad Dok Grotsnik |
 | Evil Sunz | Wazdakka Gutsmek |
-| Freebooterz | – |
+| Freebooterz | Kaptin Badrukk |
 | Goffs | Boss Zagstruk, Ghazghkull Thraka, Mek Boss Buzzgob |
 | Rustboyz | – |
 | Snakebites | Old Zogwort, Mozrog Skragbad, Zodgrod Wortsnagga |
@@ -430,7 +430,7 @@ Units with Klan (Rustboyz) gain the following:
 
 **Advanced Reaction: Emergency Repairs** (Shooting phase). This Advanced Reaction may be made once per battle during the opposing player's Shooting phase after a friendly Rustboyz Vehicle or Dreadnought suffers one or more Hull Point losses or Wounds. After all enemy attacks have been resolved, the reacting unit immediately regains a single lost Hull Point or Wound.
 
-**Warlord Trait: Master Mek.** The Warlord is among the greatest mekboyz of the Waaagh!, capable of keeping entire armoured spearheads fighting long after they should have collapsed. Friendly Rustboyz Vehicles and Dreadnoughts within 12" of the Warlord may re-roll failed It Will Not Die rolls. In addition, one friendly Vehicle within 6" may ignore Crew Shaken results. An army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase as long as the Warlord has not been removed as a casualty.
+**Warlord Trait: Rust Masta Mek.** The Warlord is among the greatest mekboyz of the Waaagh!, capable of keeping entire armoured spearheads fighting long after they should have collapsed. Friendly Rustboyz Vehicles and Dreadnoughts within 12" of the Warlord may re-roll failed It Will Not Die rolls. In addition, one friendly Vehicle within 6" may ignore Crew Shaken results. An army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase as long as the Warlord has not been removed as a casualty.
 
 ### Snakebites
 
@@ -1149,7 +1149,7 @@ _A Head Nob with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 
 - 'Ere We Go!
 - Flashiest Gitz: if Badrukk is the Warlord, Flash Gitz may be taken as Troops
 - Grot Attendants (Ammo Runts only)
-- Klan (Bad Moons)
+- Klan (Freebooterz)
 - Mob Rule
 - Waaagh!
 
@@ -2480,8 +2480,10 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 
 - Dakka! (6+)
 - 'Ere We Go!
+- Grot Attendants (Kommando Grot only)
 - Infiltrate
 - Klan (X)
+- Kommando Grot
 - Mob Rule
 - Mob Up
 - Move Through Cover
@@ -2496,6 +2498,8 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 |---|---|
 | **The mob may include:** |  |
 | – Up to 10 additional kommandos | +11 points each |
+| **The mob may take:** |  |
+| – Up to 1 kommando grot | +15 points |
 | **For every 5 Kommandos in the mob, one Kommando may exchange his Slugga and Choppa for one of the following:** |  |
 | – Big shoota | +10 points |
 | – Burna | +10 points |
@@ -3893,6 +3897,7 @@ All weapons listed here are counted as 'Dakka' weapons for those rules that affe
 | Kustom shoota | 18" | 4 | 6 | Assault 4 |
 | Mek speshul | 24" | 5 | 4 | Assault 6 |
 | Rivet kannon | 24" | 6 | 5 | Assault 3 |
+| Rattler kannon | 24" | 6 | 6 | Heavy 2D6 |
 | Shoota | 24" | 4 | 6 | Assault 2 |
 | Slugga | 12" | 4 | – | Pistol 1 |
 | Snazzgun (flash burst) | 24" | 5 | 3 | Assault 2, Twin-linked, Gets Hot, Rending (4+) |
@@ -3902,6 +3907,7 @@ All weapons listed here are counted as 'Dakka' weapons for those rules that affe
 | Supa-shoota | 36" | 6 | 4 | Assault 3 |
 | Twin-linked big shoota | 36" | 5 | 5 | Assault 6, Twin-linked |
 | Twin-linked boomstikk | 12" | 5 | 5 | Assault 2, Twin-linked |
+| Twin-linked rattler kannon | 24" | 6 | 6 | Heavy 2D6, Twin-linked |
 
 ### Kombi-weapons
 
@@ -3988,6 +3994,7 @@ Rokkit launchas, kopta rokkit launchas, grotzookas and every weapon whose name i
 | Stikkbomb flinga | 12" | 3 | – | Assault 1, Blast (3"), Pinning |
 | Stikkbomb launcha | 24" | 5 | 5 | Assault 1, Large Blast (5"), Pinning |
 | Supa-rokkit | 100" | 8 | 3 | Heavy 1, Large Blast (5"), One Use |
+| Supa-lobba | 48" | 7 | 4 | Ordnance 1, Massive Blast (7"), Barrage |
 | Tankbusta rokkit | 24" | 8 | 3 | Assault 1, Armourbane (Ranged) |
 | Thump gun | 18" | 6 | 5 | Assault 1, Blast (3") |
 | Twin-linked skorcha missile rack | 24" | 5 | 4 | Heavy 1, Blast (3"), Ignores Cover, Twin-linked |
@@ -4028,6 +4035,7 @@ Beastchoppas, big choppas, choppas, mega-choppas and 'uge choppas are counted as
 | Grabba stikk | – | User | – | Melee, Concussive (2) |
 | Grabbin' klaw | – | +1 | 2 | Melee; +1 Attack |
 | Grot stabba | – | User | – | Melee |
+| Hammer of Mork | – | User | 3 | Melee, Force, Breaching (5+), Concussive (1) |
 | Kan klaw | – | x2 | 2 | Melee, Armourbane (Melee) |
 | Killa jet (cutting) | – | +2 | 2 | Melee |
 | Killsaw | – | x2 | 2 | Melee, Armourbane (Melee), Unwieldy |
@@ -4040,6 +4048,7 @@ Beastchoppas, big choppas, choppas, mega-choppas and 'uge choppas are counted as
 | Power stabba | – | +1 | 3 | Melee, Rending (5+) |
 | Saw blades | – | +1 | – | Melee, Rending (6+) |
 | Snagga klaw | – | +1 | 3 | Melee |
+| Spinnin' blades | – | User | – | Melee, Shred, Rampage (2) |
 | Squig prodder | – | User | – | Melee, Concussive (1), Squig Prodder |
 | Stikka | – | +1 | 4 | Melee |
 | Stompy feet | – | User | 4 | Melee |
