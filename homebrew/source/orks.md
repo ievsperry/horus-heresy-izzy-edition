@@ -2779,7 +2779,7 @@ A Warboss or Big Mek may take one Orky Artefact; each artefact may only be taken
 
 | Artefact | Who | Effect | Cost |
 |---|---|---|---|
-| Da Finkin' Kap | Warboss or Big Mek | If the bearer is your Warlord, he may choose two generic Warlord Traits instead of one | +25 points |
+| Da Finkin' Kap | Warboss or Big Mek | If the bearer is your Warlord, he may choose a second Warlord Trait, which must be a generic Warlord Trait | +25 points |
 | Da Fixxerupperz | Big Mek only | The bearer's Mek-Smasha improves by 1, and he may use it twice each turn | +20 points |
 | Da Killa Klaw | Warboss or Big Mek | Replaces his power klaw: melee, S x2, AP 2, Unwieldy, Shred; the bearer may re-roll failed to-wound rolls | +25 points |
 | Da Lucky Stikk | Warboss or Big Mek | The bearer and any unit he joins add 1 to their Leadership and may re-roll to-hit rolls of 1 in close combat | +25 points |

@@ -1604,6 +1604,101 @@ class Builder:
                                 self.rite_condition(m, rid)
             for lim in rite["limits"]:
                 self.rite_warlord(rite, lim)
+                self.rite_limit(rite, lim)
+
+    ALLIED_DETACHMENT = "d4f2-6da5-b6de-06ec"
+    SLOT_WORDS = {"lords of war": "Lords of War", "lord of war": "Lords of War", "heavy support": "Heavy Support",
+                  "fast attack": "Fast Attack", "elites": "Elites", "troops": "Troops"}
+
+    def rite_banned(self, item):
+        """'Lords of War', 'Flyers', 'any Gretchin', 'Heavy Support choices other than Broadsides',
+        'Haemonculus Coven units (Haemonculus, Wracks, ...)', 'battlesuits other than Stealth Battlesuits':
+        the datasheets a Rite bars."""
+        item = re.sub(r"^(?:any|no)\s+", "", item.strip().rstrip("."))
+        listed = re.search(r"\((.+)\)", item)
+        if listed:
+            return [d for d in self.datasheets for n in re.split(r",\s*|\s+and\s+", listed.group(1)) if forms(d["name"]) & forms(n)]
+        base, _, other = item.partition(" other than ")
+        keep = [d for d in self.datasheets for n in re.split(r",\s*|\s+(?:and|or)\s+", other) if other
+                and (forms(d["name"]) & forms(n) or norm(d["name"]).startswith(norm(n).rstrip("s")))]
+        slot = next((v for k, v in self.SLOT_WORDS.items() if norm(base).startswith(k)), None)
+        if slot:
+            out = [d for d in self.datasheets if d["slot"] == slot]
+            if "vehicle" in norm(base):
+                out = [d for d in out if any("Vehicle" in t for t in d["types"])]
+        elif norm(base).startswith("flyer"):
+            out = [d for d in self.datasheets if any(re.search(r"\bFlyer\b", t) for t in d["types"])
+                   or any("flying base" in norm(p["base"]) for p in d["profiles"])]
+        elif norm(base).startswith("battlesuit"):
+            out = [d for d in self.datasheets if any("Battlesuit" in t for t in d["types"]) or "battlesuit" in norm(d["name"])]
+        else:
+            word = re.sub(r"\s+(?:units?|of any kind)$", "", base)
+            out = [d for d in self.datasheets if forms(d["name"]) & forms(word)
+                   or any(w in forms(word) for w in [norm(x) for x in d["name"].split()])
+                   or norm(d["name"]).startswith(norm(word).rstrip("s"))]
+            if "of any kind" in base:  # "Destroyers of any kind"
+                out = [d for d in self.datasheets if re.search(r"\b%ss?$" % re.escape(norm(word).rstrip("s")), norm(d["name"]))]
+        return [d for d in out if d not in keep]
+
+    def rite_error(self, rite, key, condition):
+        """An error on the Rite of War while the condition holds ('no more than two Heavy Support')."""
+        entry = self.root.find(f"selectionEntries/selectionEntry//selectionEntry[@id='{rite['id']}']")
+        if entry is None:
+            return
+        cid = add_constraint(entry, "max", 1, make_id(rite["id"], "limit", key))
+        mod = el(child(entry, "modifiers"), "modifier", type="set", field=cid, value=0)
+        condition(el(mod, "conditions"))
+
+    def rite_limit(self, rite, lim):
+        """Enforce what a Rite's limitations can be checked in the app: units it bars are hidden while
+        it is chosen, and limits on how many of something are an error on the Rite."""
+        rid = rite["id"]
+        text = lim.replace("†", "").strip()
+        if "Allied Detachment" in text and "may not be used" in text:
+            entry = self.root.find(f"selectionEntries/selectionEntry//selectionEntry[@id='{rid}']")
+            if entry is not None:
+                mod = el(child(entry, "modifiers"), "modifier", type="set", field="hidden", value="true")
+                el(el(mod, "conditions"), "condition", type="instanceOf", value=1, field="selections", scope="ancestor",
+                   childId=self.ALLIED_DETACHMENT, shared=True)
+            return
+        text = re.sub(r"^A Detachment using this Rite of War\s+", "", text)
+        for clause in re.split(r",\s+(?:and|or)\s+|;\s*|\s+and\s+(?=(?:may|no)\b)", text):
+            clause = clause.strip().rstrip(".")
+            m = re.match(r"(?:may include |include )?(?:no )?more than (\w+) (.+?)(?: choices?)?$", clause)
+            if m:
+                n = int(m.group(1)) if m.group(1).isdigit() else NUMBER_WORDS.get(m.group(1))
+                slot = next((v for k, v in self.SLOT_WORDS.items() if norm(m.group(2)).startswith(k)), None)
+                if n is not None and slot:
+                    cat = SLOTS[slot][0][0]
+                    self.rite_error(rite, clause, lambda c, cat=cat, n=n: el(c, "condition", type="greaterThan", value=n,
+                        field="selections", scope="force", childId=cat, shared=True, includeChildSelections=True, includeChildForces=False))
+                continue
+            m = re.match(r"must include at least (\w+) (.+?) units?$", clause)
+            if m:
+                n = NUMBER_WORDS.get(m.group(1), 1)
+                for ds in self.rite_units(m.group(2)):
+                    uid = self.units[ds["name"]]
+                    self.rite_error(rite, clause, lambda c, uid=uid, n=n: el(c, "condition", type="lessThan", value=n,
+                        field="selections", scope="force", childId=uid, shared=True, includeChildSelections=True, includeChildForces=False))
+                continue
+            m = re.match(r"(?:may not include (?:any )?|no |any )(.+)$", clause)
+            if not m or re.search(r"\bmore\b|outnumber", clause):
+                continue  # "may not include more Infantry units than Dreadnought units": text only
+            for item in re.split(r",\s*(?:or\s+)?(?=any |no )|,\s+or\s+", m.group(1)):
+                banned = self.rite_banned(item)
+                for ds in banned:
+                    for link in self.root.find("entryLinks"):
+                        if link.get("targetId") == self.units[ds["name"]]:
+                            mod = el(child(link, "modifiers"), "modifier", type="set", field="hidden", value="true")
+                            self.rite_condition(mod, rid)
+                slot = next((v for k, v in self.SLOT_WORDS.items() if norm(item).lstrip("any ").startswith(k)), None)
+                if slot and " other than " not in item and "vehicle" not in norm(item):
+                    targets = [("no " + slot, SLOTS[slot][0][0])]  # one error for the whole slot
+                else:
+                    targets = [("bars " + ds["name"], self.units[ds["name"]]) for ds in banned]
+                for key, tid in targets:
+                    self.rite_error(rite, key, lambda c, tid=tid: el(c, "condition", type="atLeast", value=1,
+                        field="selections", scope="force", childId=tid, shared=True, includeChildSelections=True, includeChildForces=False))
 
     def rite_slot(self, links, rite, ds, uid, slot, compulsory):
         rid = rite["id"]
@@ -1726,6 +1821,7 @@ class Builder:
             t = el(ses, "selectionEntry", type="upgrade", import_=True, name=name, hidden=bool(fleet),
                    id=tid, publicationId=self.pub_id)
             add_category(t, *WARLORD_CATEGORY, tid, primary=True)
+            add_constraint(t, "max", 1, tid + "max")  # a trait is taken once, even with two picks
             add_text_profile(t, WARLORD_PROFILE, name, text.replace("†", ""), tid)
             if fleet:
                 m = el(el(t, "modifiers"), "modifier", type="set", field="hidden", value="false")
@@ -1793,7 +1889,7 @@ class Builder:
         need = el(mods, "modifier", type="set", field=tmin, value=1)
         el(el(need, "conditions"), "condition", type="atLeast", value=1, field="selections", scope=mid,
            childId=WARLORD_ENTRY, shared=True, includeChildSelections=False, includeChildForces=False)
-        if kap:  # "If the bearer is your Warlord, he may choose two generic Warlord Traits"
+        if kap:  # a second trait with the Kap; only one Klan trait shows, so the second is generic
             two = el(mods, "modifier", type="set", field=tmax, value=2)
             el(el(two, "conditions"), "condition", type="atLeast", value=1, field="selections", scope=mid,
                childId=kap, shared=True, includeChildSelections=True, includeChildForces=False)

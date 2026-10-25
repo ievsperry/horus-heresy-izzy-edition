@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -155,6 +155,16 @@
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Hunter Cadre" hidden="false" id="66f9-182f-9b11-5cad" publicationId="733a-d454-80f2-c90e">
+              <modifiers>
+                <modifier type="set" field="a10b-6744-505c-393c" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c658-dc6b-727b-c488" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a10b-6744-505c-393c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="ebfd-d279-d6f9-acb8" hidden="false">
                   <description>every Strike Team and Breacher Team may include one Marker Drone without counting toward its drone limit, and Supporting Fire may be used by one additional unit.</description>
@@ -187,6 +197,154 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Kroot Kindred" hidden="false" id="199e-8be5-49e6-f62e" publicationId="733a-d454-80f2-c90e">
+              <modifiers>
+                <modifier type="set" field="70b0-085b-fbfa-7ae7" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="125d-7905-01a0-c4f7" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="6967-aae4-3a6e-91fb" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c1ab-8e42-d9d1-0403" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="0d14-1aec-bddd-a040" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="18b6-c105-2c51-c753" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5800-de23-668f-3cc2" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e052-d868-c830-c53b" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="d550-035d-e97c-cd04" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8fad-1c26-d092-af47" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="30f5-062b-2c8f-ab90" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0929-be35-e81a-d842" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="2b88-b955-c218-c43d" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e077-a563-56f5-384a" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e85e-2022-9823-c2e3" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="35d1-0281-a21c-65dc" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="04b0-eca5-1f62-e39b" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0022-801d-654e-2dfb" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c136-6231-53f6-fef2" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1e18-565e-589d-5144" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f20f-5711-fc00-1ade" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="10cc-63aa-684f-25b6" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c053-d9e3-25ae-1991" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8732-08e0-f0dd-6abb" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="b5d7-7bc1-4a10-31a8" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e153-5099-ee09-6d3d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="bc9a-23d6-77b2-7240" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1ebd-e776-6ef5-7dff" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="01e4-94ca-e8ef-33c3" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d917-dff8-7c14-9873" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="80cf-8aaf-8213-ee45" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8b0a-dbd7-d8a9-7060" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="772a-667f-3d13-417a" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="77af-8e11-658c-a79f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="3580-c8a4-680a-4209" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="76b6-afce-48fc-5ade" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="78db-5ca1-18cc-3a75" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e0f1-1201-7887-f79b" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="6ee1-f7ba-cba6-d20d" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="b9e9-d8de-817b-edaf" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="9c16-2aa5-201b-2ba2" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e910-13e3-7690-9461" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="86af-e97f-84ac-949e" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e3c6-e1ee-a5eb-8920" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="70e9-c8aa-148b-54d2" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="77fd-9c92-76b7-f90d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c586-d3c8-e73a-f8df" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c658-dc6b-727b-c488" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70b0-085b-fbfa-7ae7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6967-aae4-3a6e-91fb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d14-1aec-bddd-a040" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5800-de23-668f-3cc2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d550-035d-e97c-cd04" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30f5-062b-2c8f-ab90" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b88-b955-c218-c43d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e85e-2022-9823-c2e3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04b0-eca5-1f62-e39b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c136-6231-53f6-fef2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f20f-5711-fc00-1ade" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c053-d9e3-25ae-1991" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5d7-7bc1-4a10-31a8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc9a-23d6-77b2-7240" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01e4-94ca-e8ef-33c3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80cf-8aaf-8213-ee45" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="772a-667f-3d13-417a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3580-c8a4-680a-4209" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78db-5ca1-18cc-3a75" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ee1-f7ba-cba6-d20d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c16-2aa5-201b-2ba2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86af-e97f-84ac-949e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70e9-c8aa-148b-54d2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c586-d3c8-e73a-f8df" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="4054-28d1-51d7-0358" hidden="false">
                   <description>Kroot Carnivores may be taken in units of up to 30, and Kroot Hounds and Krootox Riders may be taken as Troops.</description>
@@ -203,6 +361,124 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Mont'ka" hidden="false" id="0fa7-291c-4f61-1431" publicationId="733a-d454-80f2-c90e">
+              <modifiers>
+                <modifier type="set" field="e4c9-da95-6184-e32b" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="ee08-593c-8813-91ff" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5a44-3b7b-f798-f8af" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="855e-0bbc-6450-58ce" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="0a10-229b-f8e6-0b24" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3ba5-f521-9b24-9116" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="a8d9-467d-61a7-7dae" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e910-13e3-7690-9461" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5fa1-2807-4909-2fce" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c7cb-2b77-d646-ba92" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="d46e-19a1-b43f-c169" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="07b4-eb7c-a207-81bf" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="3f58-6822-745c-66f9" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e3c6-e1ee-a5eb-8920" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f509-9e72-9521-4898" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="77fd-9c92-76b7-f90d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="1a21-1fcd-2562-2175" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d1a1-9630-f91a-65a7" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="79ee-7403-7aba-17b6" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="ed1d-2e6a-5931-e118" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="04b7-e5e1-502a-51f0" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="46a3-2e51-374c-1c67" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="6183-9037-283d-e10e" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0777-2235-f763-0e60" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="d05b-bcc1-becb-a59e" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7859-303f-4744-f636" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="6497-c991-0037-ef3d" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7bdf-94c9-74fe-726f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="9905-49f9-7354-0d83" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="b232-b486-0571-7e1b" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="ee91-6c9a-61db-0115" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="bf7e-4f20-dfe0-506f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e2be-f1a7-0778-bec2" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5027-fe1a-cf31-31af" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="1660-a73c-cc24-74ba" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8cec-4b4a-0b92-9d52" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="4a63-ea0c-6363-22d8" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="18a7-711c-cf8f-a271" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4c9-da95-6184-e32b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a44-3b7b-f798-f8af" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a10-229b-f8e6-0b24" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8d9-467d-61a7-7dae" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fa1-2807-4909-2fce" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d46e-19a1-b43f-c169" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f58-6822-745c-66f9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f509-9e72-9521-4898" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a21-1fcd-2562-2175" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79ee-7403-7aba-17b6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04b7-e5e1-502a-51f0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6183-9037-283d-e10e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d05b-bcc1-becb-a59e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6497-c991-0037-ef3d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9905-49f9-7354-0d83" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee91-6c9a-61db-0115" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2be-f1a7-0778-bec2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1660-a73c-cc24-74ba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a63-ea0c-6363-22d8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="0482-455d-7205-fc02" hidden="false">
                   <description>Crisis Battlesuits may be taken as Troops and gain the Line sub-type.</description>
@@ -249,6 +525,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Commander" hidden="false" id="f839-2d0a-66c3-4529" type="selectionEntry" targetId="125d-7905-01a0-c4f7">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="3ff6-dacc-4395-1c62" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="b573-faf0-734e-be5e" primary="false" name="Compulsory HQ:" />
@@ -256,6 +539,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Commander Arra'kon" hidden="false" id="f4ef-9ba3-d95c-3fee" type="selectionEntry" targetId="c1ab-8e42-d9d1-0403">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="e17a-9ee4-68fc-ff8a" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="ce12-155b-eeb8-8d24" primary="false" name="Compulsory HQ:" />
@@ -263,6 +553,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Commander Bravestorm" hidden="false" id="153c-da1a-834c-8b1b" type="selectionEntry" targetId="18b6-c105-2c51-c753">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="1f80-51e7-e2a4-05ee" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="e732-eceb-dabf-32f2" primary="false" name="Compulsory HQ:" />
@@ -270,6 +567,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Commander Brightsword" hidden="false" id="59e9-d31a-ba3d-5c31" type="selectionEntry" targetId="e052-d868-c830-c53b">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="fa65-21f6-37be-0b92" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="f71b-bd97-1575-ef6e" primary="false" name="Compulsory HQ:" />
@@ -277,6 +581,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Commander Farsight" hidden="false" id="278a-0aeb-5659-e6fe" type="selectionEntry" targetId="8fad-1c26-d092-af47">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="7f7d-534e-aa62-1cac" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="8b34-e655-ccde-cb27" primary="false" name="Compulsory HQ:" />
@@ -284,6 +595,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Commander O'Vesa" hidden="false" id="b59b-6454-a8b1-ca8f" type="selectionEntry" targetId="0929-be35-e81a-d842">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="f7ba-5750-318a-bfd3" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="45d8-9a38-b77c-0211" primary="false" name="Compulsory HQ:" />
@@ -291,6 +609,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Commander Shadowsun" hidden="false" id="0161-8f1d-8dfb-ce5c" type="selectionEntry" targetId="e077-a563-56f5-384a">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="2708-2362-0e62-e4f1" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="cb17-d0c8-a421-ec1e" primary="false" name="Compulsory HQ:" />
@@ -298,6 +623,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Commander Sha'vastos" hidden="false" id="8aac-c76a-7407-590b" type="selectionEntry" targetId="35d1-0281-a21c-65dc">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="2d46-896f-4611-99ed" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="7c5e-9efe-cc6d-e0d6" primary="false" name="Compulsory HQ:" />
@@ -312,6 +644,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Kroot Flesh Shaper" hidden="false" id="7147-5a63-066e-f9f0" type="selectionEntry" targetId="d1a1-9630-f91a-65a7">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="1a13-13b4-6b09-bb92" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="dee1-5165-4231-5558" primary="false" name="Compulsory HQ:" />
@@ -319,6 +658,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Kroot Lone-spear" hidden="false" id="1d10-cb72-ccc6-815b" type="selectionEntry" targetId="ed1d-2e6a-5931-e118">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="02f5-3867-c152-183c" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="4822-85fc-31ba-18a9" primary="false" name="Compulsory HQ:" />
@@ -326,6 +672,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Kroot Master Shaper" hidden="false" id="e672-1ca2-759a-b3d8" type="selectionEntry" targetId="46a3-2e51-374c-1c67">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="4b49-6e38-c2ac-6dab" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="1280-188d-a438-84e2" primary="false" name="Compulsory HQ:" />
@@ -333,6 +686,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Kroot Shaper" hidden="false" id="b138-bdb0-8dba-adf6" type="selectionEntry" targetId="0777-2235-f763-0e60">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="e6f7-f987-ef9a-ffa4" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="6ba2-2131-1898-837e" primary="false" name="Compulsory HQ:" />
@@ -340,6 +700,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Kroot Trail Shaper" hidden="false" id="a9e5-309f-4414-180f" type="selectionEntry" targetId="7859-303f-4744-f636">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="a3b8-aa0c-a046-c99a" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="5c90-100a-26ae-a408" primary="false" name="Compulsory HQ:" />
@@ -347,6 +714,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Kroot War Shaper" hidden="false" id="00ce-2c85-dcc5-0ef4" type="selectionEntry" targetId="7bdf-94c9-74fe-726f">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="3fe0-b451-1876-bc3e" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="d426-8d20-7d6d-44eb" primary="false" name="Compulsory HQ:" />
@@ -354,6 +728,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Shas'o R'alai" hidden="false" id="5a7c-61b6-6269-785f" type="selectionEntry" targetId="0022-801d-654e-2dfb">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="d081-8903-c043-67b2" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="53a7-52bf-26d8-ba06" primary="false" name="Compulsory HQ:" />
@@ -361,6 +742,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Shas'o R'myr" hidden="false" id="36ea-544a-595a-86ed" type="selectionEntry" targetId="1e18-565e-589d-5144">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="fc45-b806-79d5-976d" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="5335-360c-11be-e6b5" primary="false" name="Compulsory HQ:" />
@@ -368,6 +756,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Sub-commander Torchstar" hidden="false" id="8975-75d5-419c-a9a4" type="selectionEntry" targetId="10cc-63aa-684f-25b6">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="175e-75db-bd55-a536" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="6a34-7c64-aa51-b254" primary="false" name="Compulsory HQ:" />
@@ -375,6 +770,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="The Twin Lance" hidden="false" id="3e10-37cf-b815-5503" type="selectionEntry" targetId="8732-08e0-f0dd-6abb">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="4583-738e-d7ec-59aa" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="6732-9aa0-bcfb-3ae3" primary="false" name="Compulsory HQ:" />
@@ -382,12 +784,26 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Crisis Battlesuits" hidden="false" id="21e0-bc28-0e23-a5f4" type="selectionEntry" targetId="e153-5099-ee09-6d3d">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="da21-b5e7-26e6-603d" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="52ee-2329-74be-c0f9" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Crisis Bodyguards" hidden="false" id="c5c7-e452-ec90-e8e7" type="selectionEntry" targetId="1ebd-e776-6ef5-7dff">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="eac8-ddaf-f8c3-8efd" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="4329-dbca-9a44-8d59" primary="false" name="Unit:" />
@@ -418,18 +834,39 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Ghostkeel" hidden="false" id="0f29-de8c-1dce-44b3" type="selectionEntry" targetId="d917-dff8-7c14-9873">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="e8f9-ed9a-6df1-3e6c" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="ec6f-032b-9906-1863" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Kroot Farstalkers" hidden="false" id="c544-7e99-9f1f-dae4" type="selectionEntry" targetId="b232-b486-0571-7e1b">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="458d-d222-b41e-463a" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="980a-0f43-1025-607a" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Riptide" hidden="false" id="6f11-bc89-49ba-4f18" type="selectionEntry" targetId="8b0a-dbd7-d8a9-7060">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="08e6-0e1f-d610-a712" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="c2fa-3194-fe44-17b1" primary="false" name="Unit:" />
@@ -442,18 +879,39 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="XV9 Hazard Support Team" hidden="false" id="46d3-8431-0935-e6a2" type="selectionEntry" targetId="77af-8e11-658c-a79f">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="ab74-d9d9-62f7-aff1" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="70b0-ff9a-6083-fdc2" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="XV81 Crisis Battlesuits" hidden="false" id="10eb-ae62-bf14-fe29" type="selectionEntry" targetId="76b6-afce-48fc-5ade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="d18e-ec25-f6c0-64cf" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="bc1a-abbe-e76c-c327" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="XV84 Crisis Battlesuits" hidden="false" id="6648-b623-05e2-fab4" type="selectionEntry" targetId="e0f1-1201-7887-f79b">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="4f45-621f-f73e-97a3" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="4813-1014-e3d6-e495" primary="false" name="Unit:" />
@@ -474,6 +932,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Kroot Carnivores" hidden="false" id="8d4c-9d6d-06c1-4af8" type="selectionEntry" targetId="bf7e-4f20-dfe0-506f">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="bbbc-66dd-a056-8fc4" primary="true" name="Troops:" />
         <categoryLink targetId="8f42-a824-fb5f-8fea" id="8fbf-91ca-e47e-8e72" primary="false" name="Compulsory Troops:" />
@@ -494,18 +959,39 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Kroot Hounds" hidden="false" id="ff26-908f-19ce-772e" type="selectionEntry" targetId="5027-fe1a-cf31-31af">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="5ba6-2f1c-8a57-a4db" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="fc6f-902b-a0e4-b5df" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Krootox Rampagers" hidden="false" id="d61f-a6ad-78de-b148" type="selectionEntry" targetId="8cec-4b4a-0b92-9d52">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="0464-0b5f-ace0-2a59" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="5fca-3afc-fb66-a125" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Krootox Riders" hidden="false" id="e7c2-4299-60ec-f001" type="selectionEntry" targetId="18a7-711c-cf8f-a271">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="1724-7052-3080-fcdd" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="ed57-b22a-8510-8d99" primary="false" name="Unit:" />
@@ -548,60 +1034,150 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Broadside Battlesuits" hidden="false" id="8a93-9eaf-869e-d2b6" type="selectionEntry" targetId="b9e9-d8de-817b-edaf">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="b7d4-a197-5767-616e" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="e5ff-994f-900d-4ce3" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Great Knarloc" hidden="false" id="69cd-a274-d473-5cd3" type="selectionEntry" targetId="ee08-593c-8813-91ff">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="8f22-acab-f9f7-2cd1" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="68ac-a40e-6c84-84e2" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Hammerhead Gunship" hidden="false" id="4707-1b0a-1e49-2c67" type="selectionEntry" targetId="855e-0bbc-6450-58ce">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="0641-cc49-344b-249a" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="02cd-1289-6c4a-2eb3" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Heavy Gun Drones" hidden="false" id="4cc5-639a-9bd5-cadc" type="selectionEntry" targetId="3ba5-f521-9b24-9116">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="75d5-e580-6bf2-a764" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="5cbb-02f0-381c-3e86" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Shas'vre Ob'lotai 9-0" hidden="false" id="276d-be9d-48b3-e882" type="selectionEntry" targetId="e910-13e3-7690-9461">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="8a31-d03d-f006-1ec9" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="099d-e4a3-9a3a-9d65" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Sky Ray Gunship" hidden="false" id="a52a-0f8c-16f1-0e3f" type="selectionEntry" targetId="c7cb-2b77-d646-ba92">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="1713-2a0c-780a-8d43" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="eafc-487a-2443-0d4d" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Sniper Drone Team" hidden="false" id="4835-7048-fb09-3a17" type="selectionEntry" targetId="07b4-eb7c-a207-81bf">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="2ea4-b8c4-31ea-827e" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="b548-535c-ffd2-7363" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="XV107 R'varna" hidden="false" id="133f-1e01-fe45-869e" type="selectionEntry" targetId="e3c6-e1ee-a5eb-8920">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="0854-0d7e-b8a1-e340" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="b7cc-7c1c-e77c-7dfc" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="XV109 Y'vahra" hidden="false" id="70d4-3837-1d38-28da" type="selectionEntry" targetId="77fd-9c92-76b7-f90d">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="d2aa-4bf5-9097-16cd" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="c5b4-705f-5f0a-7cb7" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="KV128 Stormsurge" hidden="false" id="72c6-8953-d29b-bdd5" type="selectionEntry" targetId="0075-950d-1154-12cb">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="66f9-182f-9b11-5cad" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="ec3e-1d0f-c6a0-03f5" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="1ecb-c0a6-c215-68bc" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -609,6 +1185,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="KX139 Ta'unar Supremacy Armour" hidden="false" id="beb8-2937-483f-2ee0" type="selectionEntry" targetId="b8f4-232c-fa0e-f2d3">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="66f9-182f-9b11-5cad" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="e2de-ad5d-765d-5d2b" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="d81a-3a8b-01b4-277a" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -679,6 +1267,11 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="f791-654c-62e1-0529" primary="true" name="Troops:" />
@@ -690,6 +1283,11 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
       </modifiers>
@@ -18627,6 +19225,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d34-7235-dfcf-fc40" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Master Engineer" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="ac15-9d92-a908-3c91">
               <characteristics>
@@ -18649,6 +19250,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4c6-11f1-fc1d-2dd2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Unbreakable Defender" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="c442-93fb-3c39-c521">
               <characteristics>
@@ -18671,6 +19275,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e8d-eb48-391d-0383" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Martial Mastery" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="53e0-ead9-e9c5-cbfc">
               <characteristics>
@@ -18693,6 +19300,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e77-eccc-6067-1494" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Disciplined Commander" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="f4d1-42ad-a368-8984">
               <characteristics>
@@ -18715,6 +19325,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2945-b2f3-fda3-230e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Master of the Hunter Cadre" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="e280-6af6-8bc2-8b32">
               <characteristics>
@@ -18737,6 +19350,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc4d-19c4-7207-6721" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <profiles>
             <profile name="Fiery Commander" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="abe8-8a8a-bb11-398a">
               <characteristics>
