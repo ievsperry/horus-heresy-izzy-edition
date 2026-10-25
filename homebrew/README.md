@@ -56,6 +56,7 @@ loading. The script prints anything in the doc it could not place.
   as the Trygon Prime) may be the Warlord, using the game system's
   Warlord entry, so an army must have exactly one. A model whose datasheet says it "must be
   your Warlord" (Ghazghkull, Imotekh, Vect...) is offered it in any slot and must take it.
+  A bodyguard unit with the Retinue rule (the Warboss Retinue) is never the Warlord.
   The Warlord must pick one Warlord Trait: a generic trait, or its sub-faction's own, which
   shows only when the army has that sub-faction. Da Finkin' Kap lets its bearer take a second, generic trait;
   no trait can be taken twice.
@@ -115,6 +116,10 @@ loading. The script prints anything in the doc it could not place.
   chosen and are an error on the Rite if already taken; "no more than two Heavy Support choices"
   and "must include at least two Genestealer units" are errors on the Rite when broken; and a Rite
   that "may not be used by an Allied Detachment" is hidden in one.
+
+- A psychic discipline whose rule says to "roll one D3 on the ... Psychic Powers table" (the
+  Weirdboy Discipline) gives each psyker that has it a pick of one power and one psychic weapon
+  from the discipline's tables, standing in for the rolls.
 
 - A biomorph granted by a sub-faction ("Deep Burrowers: Infantry units gain the Burrower biomorph")
   or a Warlord Trait ("The Warlord and any unit it joins gain the Burrower biomorph") shows its

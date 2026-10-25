@@ -12,7 +12,7 @@ The design goals are simple. Orks win through numbers and assault. Their shootin
 
 Build armies with the HH2.0 Crusade Force Organisation chart, using the slot given for each unit. Points start from 7th edition costs and are adjusted where 2.0 changes a unit's value; treat them as playtest values. Rules marked † lean on exact 2.0 wording and should be checked against the rulebook; the checklist near the end of the document lists them all.
 
-**Contents:** Army-wide Special Rules · Get Stuck In · Psychic Discipline · Ork Klans · Warlord Traits · Force Organisation · HQ · Elites · Troops · Dedicated Transports · Fast Attack · Heavy Support · Lords of War · Ork Wargear · Ork Armoury · Rules Checklist · Sources
+**Contents:** Army-wide Special Rules · Get Stuck In · Psychic Discipline · Ork Klans · Warlord Traits · Force Organisation · Units · HQ · Elites · Troops · Dedicated Transports · Fast Attack · Heavy Support · Lords of War · Ork Wargear · Ork Armoury · Rules Checklist · Sources
 
 ## Army-wide Special Rules
 
@@ -171,7 +171,7 @@ Orks use the 2.0 core reactions (Reposition, Return Fire, Overwatch) as normal, 
 
 The point of this reaction is to punish an opponent who stops near a mob of Orks: if they come too close, the Orks crash into them on their own terms.
 
-## Psychic Discipline: Power of da Waaagh!
+## Psychic Discipline: Weirdboy Discipline
 
 There is no psychic phase in 2.0. A Weirdboy uses his powers in the phase each one names, making a Psychic check against his Leadership†. A failed check causes Perils of the Waaagh!. Ork Psychic checks also suffer Perils on any double, as described under Waaagh! Energy.
 
@@ -184,13 +184,32 @@ There is no psychic phase in 2.0. A Weirdboy uses his powers in the phase each o
 - the number of hits inflicted
 - the value of the Shell Shock special rule
 
-Every Weirdboy knows Da Jump and Frazzle. A Weirdboy with the Warphead upgrade also knows Fists of Gork.
+**Weirdboy Discipline.** A Weirdboy generates psychic abilities randomly. Before deployment, roll one D3 on the Weirdboy Psychic Powers table and one D3 on the Weirdboy Psychic Weapons table. The Weirdboy gains the generated power and weapon for the duration of the battle.
+
+**Psychic Focus.** Before making any To Hit rolls with a Psychic Weapon, the Weirdboy must make a Psychic check. If the check is passed, the Weirdboy may attack normally with the selected weapon. If the check is failed:
+
+- the Weirdboy suffers Perils of the Warp
+- and may not use the Psychic Weapon during that phase.
+
+**Shock Pulse.** Any unit that suffers one or more unsaved Wounds from this weapon suffers −1 WS until the end of the next Assault phase.
+
+#### Weirdboy Psychic Powers
 
 | Power | Kind | Phase | Effect |
 |---|---|---|---|
-| Da Jump | Psychic power | Movement | Select one friendly Ork unit within 12" of the Weirdboy, plus one more for each +1 of his current Waaagh! Energy bonus. Remove the selected units from the battlefield and place them in Reserves. Roll for them as normal for Reserves, adding the Waaagh! Energy bonus to each roll; when they arrive, they enter play by Deep Strike as normal. The Waaagh! Energy bonus is fixed when Da Jump is cast, and that same value is used for these Reserves rolls. |
-| Fists of Gork | Psychic power | Assault | Until end of phase the Weirdboy has +2 Strength and +2 Attacks. |
-| Frazzle | Psychic weapon | Shooting | Template, S5, AP4, Assault 1, Pinning |
+| Da Jump | Psychic power | Movement | D3 roll of 1. Instead of moving during the Movement phase, select one friendly Ork Infantry unit within 12". Remove that unit from the battlefield and immediately redeploy it using the Deep Strike special rules. The redeployed unit gains Fleet (2) until the end of the turn. If the Psychic check is failed, the unit scatters D6" and suffers D6 Strength 4 AP – hits. |
+| Waaagh! Pulse | Psychic power | Shooting | D3 roll of 2. Instead of making a Shooting Attack, all friendly Ork units within 12" gain Furious Charge (2) and Dakka! (5+) until the beginning of the controlling player's next turn. If the Psychic check is failed, all affected units become Pinned. |
+| Green Fury | Psychic power | Shooting | D3 roll of 3. Instead of making a Shooting Attack, select one friendly Ork Infantry unit within 12". That unit gains Counter-Attack (1), Crusader and Fearless until the beginning of the controlling player's next turn. If the Psychic check is failed, the affected unit suffers −1 Weapon Skill until the beginning of the controlling player's next turn. |
+
+#### Weirdboy Psychic Weapons
+
+Roll a D3: 1 Green Lightning, 2 Warphead Blast, 3 Fists of Gork.
+
+| Weapon | Range | Str | AP | Type |
+|---|---|---|---|---|
+| Green Lightning | 18" | 7 | 4 | Assault D3, Shock Pulse, Psychic Focus |
+| Warphead Blast | 24" | 8 | 3 | Heavy 1, Large Blast (5"), Gets Hot, Psychic Focus |
+| Fists of Gork | – | x2 | 2 | Melee, Brutal (2), Psychic Focus |
 
 ## Ork Klans
 
@@ -384,14 +403,32 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 
 | 2.0 slot | Ork units |
 |---|---|
-| HQ | Warboss, Big Mek, Mek Boss Buzzgob, Weirdboy, named characters, Beastboss, Beastboss on Squigosaur, Painboss, Deffkilla Wartrike |
-| Elites | Nobz, Nobz on Warbikes, Meganobz, Burna Boyz, Tankbustas, Kommandos, Mek, Painboy, Bannernob, Nob on Smasha Squig |
-| Troops | Boyz, Big Boyz, Gretchin, Beast Snagga Boyz |
-| Fast Attack | Stormboyz, Warbikers, Deffkoptas, Dakkajet, Burna-bommer, Blitza-bommer, Squighog Boyz, Speed Freek buggies, Wazbom Blastajet |
+| HQ | Warboss, Warboss Retinue, Ork Boss, Big Mek, Mek Boss, Mek Boss Buzzgob, Weirdboss, named characters, Beastboss, Beastboss on Squigosaur, Painboss, Deffkilla Wartrike |
+| Elites | Nobz, Nobz on Warbikes, Meganobz, Burna Boyz, Tankbustas, Mek, Painboy, Weirdboy, Bannernob, Nob on Smasha Squig |
+| Troops | Boyz, Shoota Boyz, 'Ard Boyz, Big Boyz, Gretchin, Beast Snagga Boyz |
+| Fast Attack | Stormboyz, Warbikers, Deffkoptas, Kommandos, Dakkajet, Burna-bommer, Blitza-bommer, Squighog Boyz, Speed Freek buggies, Wazbom Blastajet |
 | Heavy Support | Deff Dread, Killa Kans, Lootas, Flash Gitz, Mek Gunz, Battlewagon, Gunwagon, Bonebreaka, Kill Rig, Hunta Rig, Big Mek Dakkarig |
-| Dedicated Transports | Trukk; Battlewagon for Nobz, Meganobz or Boyz |
+| Dedicated Transports | Trukk, 'Chinork' Warkopta; Battlewagon for the units that list it |
 | Lord of War | Gorkanaut, Morkanaut, Stompa |
 | Primarch | Ghazghkull Thraka |
+
+## Units
+
+Ork warfare is built around momentum, aggression and the overwhelming psychic force of the Waaagh!. Unlike the rigid military doctrines of the Imperium, greenskin armies fight as living avalanches of violence that grow more dangerous the larger and louder they become. Individual units rarely operate with formal battlefield discipline, yet together they generate a terrifying instinctive coordination driven by the momentum of battle itself. Every gunshot, engine roar and screaming charge feeds the collective fury of the Waaagh! and pushes the entire horde toward ever greater destruction.
+
+At the core of nearly every warband stand the Boyz mobs, vast tides of greenskin infantry armed with crude shootas, choppas and endless enthusiasm for close combat. Boyz fight through sheer aggression rather than tactical sophistication, hurling themselves into enemy lines with overwhelming confidence regardless of casualties. Even when disorganized, large mobs of Boyz become terrifying through sheer mass alone, drowning disciplined formations beneath endless waves of roaring greenskins hacking wildly with blades and firing inaccurate torrents of gunfire at point-blank range.
+
+Shoota Boyz represent the most common expression of Ork firepower, advancing steadily beneath storms of suppressive dakka before crashing into close combat once enemy lines begin collapsing. To Imperial tacticians, their shooting appears wildly inaccurate and poorly coordinated, yet the sheer volume of fire generated by a large mob often compensates for the greenskins' lack of precision. Entire sectors of the battlefield may vanish beneath shell casings, smoke and ricocheting scrap metal as the Boyz surge forward through the chaos they create themselves.
+
+The elite Nobz and Warboss retinues embody the Ork obsession with size and dominance. Massive even by greenskin standards, these brutal veterans lead through physical violence and overwhelming personal power. Clad in thick armour and wielding enormous power klaws, killsaws and oversized choppas, Nobz smash through elite infantry and armoured formations alike with terrifying ease. Wherever the fighting becomes bloodiest, the Nobz inevitably gather there, seeking the loudest and most violent battles available.
+
+Meganobz and heavily armoured assault formations transform this brutality into something even more horrifying. Encased in massive suits of Mega Armour that resemble walking tanks more than infantry, these Orks advance through incoming fire with relentless momentum while unleashing torrents of gunfire and crushing melee attacks at close range. Entire Imperial defensive lines have collapsed simply from the psychological shock of watching armoured greenskins continue advancing through firepower that should have annihilated them outright.
+
+The speed-obsessed cultures of the Evil Sunz and Speed Freeks fight entirely differently from traditional infantry mobs. Warbikers, trukks, buggies and roaring assault vehicles race across battlefields in clouds of smoke and burning fuel while jump infantry descend from above amidst screaming engines and unstable rockets. To these greenskins, speed itself is a weapon. Their assaults rely upon momentum, confusion and overwhelming velocity to strike vulnerable enemy positions before organized resistance can form.
+
+Other Ork formations specialize in sheer firepower. Lootas, Flash Gitz and heavy weapon mobs unleash staggering quantities of dakka using scavenged Deffguns, Snazzguns and oversized artillery pieces assembled from stolen machinery and unstable reactor systems. Though wildly dangerous to friend and foe alike, these weapons can overwhelm even elite armoured formations through sheer volume of fire. Entire firefights involving Ork heavy weapon mobs often resemble industrial disasters more than organized military engagements.
+
+Ork walkers and war engines reflect the deranged creativity of the mekboyz that build them. Killa Kans, Deff Dreads and towering Stompas lumber across battlefields belching smoke, leaking fuel and shaking apart beneath the stress of their own engines. Yet despite their crude appearance, these machines possess terrifying durability and destructive power. Many Imperial commanders have learned too late that the ramshackle appearance of Ork war machines hides an astonishing ability to absorb punishment while continuing forward through sheer mechanical stubbornness.
 
 ## HQ
 
@@ -456,13 +493,12 @@ Base sizes follow recent 40k kits and are approximate; use whatever your models 
 - Waaagh!
 - Wild Charge: Rage (D3)
 
-### Big Mek — 40 pts
+### Big Mek — 90 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Big Mek | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 8 | 6+ | 32mm |
-| Ammo Runt | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
-| Grot Oiler | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
+| Big Mek | 6 | 5 | 3 | 4 | 5 | 3 | 3 | 3 | 7 | 4+ | 32mm |
+| Grot Oiler | 6 | 2 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
 
@@ -470,47 +506,52 @@ Base sizes follow recent 40k kits and are approximate; use whatever your models 
 
 **Wargear**
 
-- Choppa
-- Slugga
+- Shoota
+- Big choppa
 - Stikkbombz
+- 'Eavy armour
 
 **Unit Type**
 
-- Big Mek: Infantry (Independent Character)
+- Big Mek: Infantry (Character)
+- Grot Oiler: Infantry
 
 **Special Rules**
 
-- Mek-Smasha (5+)
+- Battlesmith (5+)
+- Bigga iz Betta
+- Dakka! (6+)
 - 'Ere We Go!
+- Independent Character
 - Klan (X)
+- Master Mek: A Big Mek and any Vehicle or Dreadnought unit he joins gain It Will Not Die (6+). In addition, friendly Vehicles within 6" of a Big Mek may ignore Crew Shaken results on a roll of 5+.
+- Might iz Right!
 - Mob Rule
+- Oddboy
 - Waaagh!
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Big Mek may exchange his slugga for one of the following:** |  |
-| – Kombi-weapon (rokkit or skorcha) | +5 points |
+| **The Big Mek may exchange his Shoota for one of the following:** |  |
+| – Big shoota | +10 points |
+| – Kombi-Shoota | +5 points |
+| – Kombi-Rokkit | +10 points |
+| – Kombi-Skorcha | +10 points |
 | – Kustom mega-blasta | +15 points |
-| – Shokk attack gun | +45 points |
-| **The Big Mek may exchange his choppa for:** |  |
-| – Big choppa | +10 points |
-| – Power klaw | +25 points |
-| **The Big Mek may take:** |  |
-| – Kustom force field | +50 points |
-| – Grot oiler | +5 points |
-| – Tellyporta | +15 points |
-| – Ammo runt | +3 points |
-| – Attack squig | +15 points |
-| – Bosspole | +5 points |
-| – Cybork body | +10 points |
-| – Gitfinda | +5 points |
-| – 'Eavy armour (4+ save) | +5 points |
+| **The Big Mek may exchange his Big Choppa for one of the following:** |  |
+| – Power klaw | +15 points |
+| – Killsaw | +10 points |
+| **The Big Mek may take any of the following:** |  |
 | – One Orky Artefact | See Orky Artefacts |
-| **The Big Mek may take one of the following:** |  |
-| – Mega armour | +40 points |
-| – Warbike | +25 points |
+| – Attack squig | +15 points |
+| – Gitfinda | +15 points |
+| – Up to 3 grot oilers | +5 points each |
+| – Kustom force field | +25 points |
+| – Mega armour | +35 points |
+| – Shokk attack gun | +35 points |
+| – Tellyporta | +25 points |
 
 ### Deffkilla Wartrike — 115 pts
 
@@ -542,12 +583,131 @@ Base sizes follow recent 40k kits and are approximate; use whatever your models 
 - Waaagh!
 - May only join Warbikers
 
-### Painboss — 80 pts
+### Mek Boss — 125 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Painboss | 6 | 4 | 2 | 5 | 5 | 3 | 3 | 4 | 8 | 4+ | 40mm |
-| Grot Orderly | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
+| Mek Boss | 6 | 5 | 3 | 5 | 5 | 4 | 3 | 4 | 8 | 4+ | 40mm |
+| Grot Oiler | 6 | 2 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
+
+**Unit Composition**
+
+- 1 Mek Boss
+
+**Wargear**
+
+- Shoota
+- Big choppa
+- Stikkbombz
+- 'Eavy armour
+
+**Unit Type**
+
+- Mek Boss: Infantry (Character)
+- Grot Oiler: Infantry
+
+**Special Rules**
+
+- Battlesmith (4+)
+- Bigga iz Betta
+- Bulky (3)
+- Da Biggest is Da Best
+- Dakka! (6+)
+- 'Ere We Go!
+- Independent Character
+- Klan (X)
+- Master Mek: A Mek Boss and any Vehicle or Dreadnought unit he joins gain It Will Not Die (5+). In addition, friendly Vehicles within 6" of a Mek Boss may ignore Crew Shaken results on a roll of 4+.
+- Might iz Right!
+- Mob Rule
+- Oddboy
+- Waaagh!
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Mek Boss may exchange his Shoota for one of the following:** |  |
+| – Big shoota | +10 points |
+| – Kombi-Shoota | +5 points |
+| – Kombi-Rokkit | +10 points |
+| – Kombi-Skorcha | +10 points |
+| – Kustom mega-blasta | +15 points |
+| **The Mek Boss may exchange his Big Choppa for one of the following:** |  |
+| – Power klaw | +15 points |
+| – Killsaw | +10 points |
+| **The Mek Boss may take any of the following:** |  |
+| – Attack squig | +15 points |
+| – Gitfinda | +15 points |
+| – Up to 3 grot oilers | +5 points each |
+| – Kustom force field | +25 points |
+| – Mega armour | +35 points |
+| – Shokk attack gun | +35 points |
+| – Tellyporta | +25 points |
+
+### Ork Boss — 110 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Ork Boss | 6 | 5 | 2 | 4 | 5 | 4 | 3 | 4 | 8 | 5+ | 40mm |
+| Grot Attendant | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
+
+**Unit Composition**
+
+- 1 Ork Boss
+
+**Wargear**
+
+- Kombi-Shoota
+- Big choppa
+- Stikkbombz
+- Da armour
+
+**Unit Type**
+
+- Ork Boss: Infantry (Character)
+- Grot Attendant: Infantry
+
+**Special Rules**
+
+- Bigga iz Betta
+- Bulky (2)
+- Dakka! (6+)
+- 'Ere We Go!
+- Furious Charge (1)
+- Independent Character
+- Klan (X)
+- Might iz Right!
+- Mob Rule
+- Sudden Strike (1)
+- Waaagh!
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Ork Boss may exchange his Big Choppa for the following:** |  |
+| – Power klaw | +20 points |
+| **A model equipped with Mega Armour may instead exchange its Big Choppa for one of the following:** |  |
+| – Killsaw | +10 points |
+| – Two killsaws | +20 points |
+| **The Ork Boss may exchange his Kombi-Shoota for one of the following:** |  |
+| – Shoota | Free |
+| – Kombi-Skorcha | +10 points |
+| – Kombi-Rokkit | +10 points |
+| **The Ork Boss may take any of the following:** |  |
+| – Up to 2 grot attendants (Ammo runts, oil runts, grot orderlies, etc) | +10 points each |
+| – 'Eavy armour (4+) | +10 points |
+| – Mega armour (2+) | +35 points |
+| – Attack squig | +10 points |
+| – Bosspole | +10 points |
+| – Waaagh! banner | +35 points |
+
+### Painboss — 165 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Painboss | 6 | 5 | 2 | 5 | 5 | 5 | 3 | 4 | 8 | 5+ | 40mm |
+| Grot Orderly | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
 
@@ -555,35 +715,52 @@ Base sizes follow recent 40k kits and are approximate; use whatever your models 
 
 **Wargear**
 
-- Beastchoppa
-- Dok's tools
-- Grabbin' klaw
+- 'Urty syringe
+- Power klaw
+- Stikkbombz
+- Da armour
+- Cybork body
 
 **Unit Type**
 
-- Painboss: Infantry (Independent Character)
+- Painboss: Infantry (Character, Independent Character)
+- Grot Orderly: Infantry
 
 **Special Rules**
 
+- Bigga iz Betta
+- Bulky (3)
+- Da Biggest is Da Best
+- Dok's Tools: Friendly Ork Infantry units joined by a Painboss gain Feel No Pain (5+). If the unit already possesses Feel No Pain, improve that roll by +1 to a maximum of Feel No Pain (4+).
 - 'Ere We Go!
 - Klan (X)
+- Might iz Right!
 - Mob Rule
-- Sawbonez: his Dok's tools confer Feel No Pain (5+) instead of (6+) on the Painboss and any unit he joins
+- Oddboy
+- Rampage (2)
 - Waaagh!
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Painboss may take:** |  |
-| – Grot orderly | +5 points |
+| **The Painboss may exchange his Power Klaw for one of the following:** |  |
+| – Big choppa | Free |
+| – Killsaw | +10 points |
+| – Two killsaws | +20 points |
+| **The Painboss may take any of the following:** |  |
+| – Up to 3 grot orderlies | +10 points each |
+| – Attack squig | +10 points |
+| – Bosspole | +10 points |
 
-### Warboss — 70 pts
+### Warboss — 110 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Warboss | 6 | 5 | 2 | 5 | 5 | 3 | 4 | 4 | 9 | 6+ | 40mm |
-| Ammo Runt | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
+| Warboss | 7 | 6 | 2 | 5 | 5 | 4 | 4 | 5 | 9 | 5+ | 40mm |
+| Grot Attendant | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
+
+_A Warboss with mega armour uses this profile instead: M 6, WS 6, BS 2, S 5, T 5, W 5, I 3, A 5, Ld 9, Sv 2+._
 
 **Unit Composition**
 
@@ -591,78 +768,165 @@ Base sizes follow recent 40k kits and are approximate; use whatever your models 
 
 **Wargear**
 
-- Choppa
-- Slugga
+- Kombi-Shoota
+- Big choppa
 - Stikkbombz
+- Da armour
 
 **Unit Type**
 
-- Warboss: Infantry (Independent Character)
+- Warboss: Infantry (Character, Independent Character, Monstrous)
+- Grot Attendant: Infantry
 
 **Special Rules**
 
-- Da Boss: during a Waaagh!, the Warboss's unit adds 1 to its charge distance
+- Bigga iz Betta
+- Bulky (3)
+- Da Biggest is Da Best
+- Dakka! (6+)
 - 'Ere We Go!
+- Furious Charge (1)
+- Independent Character
 - Klan (X)
+- Might iz Right!
 - Mob Rule
+- Sudden Strike (1)
 - Waaagh!
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Warboss may exchange his choppa for:** |  |
-| – Big choppa | +10 points |
-| – 'Uge choppa | +15 points |
-| – Power klaw | +25 points |
-| **The Warboss may exchange his slugga for:** |  |
-| – Kombi-weapon (rokkit or skorcha) | +5 points |
-| **The Warboss may take:** |  |
-| – Ammo runt | +3 points |
-| – Attack squig | +15 points |
-| – Bosspole | +5 points |
-| – Cybork body | +10 points |
-| – Gitfinda | +5 points |
-| – Waaagh! banner | +15 points |
-| – 'Eavy armour (4+ save) | +5 points |
+| **The Warboss may exchange his Big Choppa for the following:** |  |
+| – Power klaw | +20 points |
+| **A model equipped with Mega Armour may instead exchange its Big Choppa for one of the following:** |  |
+| – Killsaw | +10 points |
+| – Two killsaws | +20 points |
+| **The Warboss may exchange his Kombi-Shoota for one of the following:** |  |
+| – Shoota | Free |
+| – Kombi-Skorcha | +10 points |
+| – Kombi-Rokkit | +10 points |
+| **The Warboss may take any of the following:** |  |
 | – One Orky Artefact | See Orky Artefacts |
-| **The Warboss may take one of the following:** |  |
-| – Mega armour | +40 points |
-| – Warbike | +25 points |
+| – Up to 3 grot attendants (Ammo runts, oil runts, grot orderlies, etc) | +10 points each |
+| – 'Eavy armour (4+) | +10 points |
+| – Mega armour (2+) | +35 points |
+| – Attack squig | +10 points |
+| – Bosspole | +10 points |
+| – Waaagh! banner | +35 points |
 
-### Weirdboy — 60 pts
+### Warboss Retinue — 140 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Weirdboy | 6 | 3 | 2 | 3 | 4 | 2 | 3 | 2 | 7 | 6+ | 32mm |
+| Boss Retainer | 7 | 5 | 2 | 4 | 4 | 2 | 3 | 3 | 6 | 5+ | 40mm |
+| Head Nob | 7 | 5 | 2 | 4 | 4 | 3 | 4 | 4 | 7 | 5+ | 40mm |
+| Grot Attendant | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
+
+_A Boss Retainer with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 4, W 3, I 2, A 3, Ld 6, Sv 2+._
+_A Head Nob with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 4, W 4, I 3, A 4, Ld 7, Sv 2+._
 
 **Unit Composition**
 
-- 1 Weirdboy
+- 4 Boss Retainers
+- 1 Head Nob
 
 **Wargear**
 
-- Weirdboy staff
+- Kombi-Shoota
+- Big choppa
+- Stikkbombz
+- Da armour
 
 **Unit Type**
 
-- Weirdboy: Infantry (Independent Character, Psyker)
+- Boss Retainer: Infantry
+- Head Nob: Infantry (Character)
+- Grot Attendant: Infantry
 
 **Special Rules**
 
+- Bigga iz Betta
+- Bulky (2)
+- Chosen Warriors
+- Crusader
+- Dakka! (6+)
 - 'Ere We Go!
+- Furious Charge (2)
 - Klan (X)
+- Might iz Right!
 - Mob Rule
-- Psychic discipline: Power of da Waaagh!
+- Retinue
+- Sudden Strike (2)
 - Waaagh!
-- Waaagh! energy
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Weirdboy may take:** |  |
-| – Warphead upgrade (Ld 8, knows Fists of Gork) | +30 points |
+| **The mob may include:** |  |
+| – Up to 5 additional boss retainers | +30 points each |
+| **Any Boss Retainer may exchange his Big Choppa for one of the following:** |  |
+| – Power klaw | +20 points each |
+| – Power stabba | +10 points each |
+| **Any Boss Retainer may exchange his Kombi-Shoota for one of the following:** |  |
+| – Kombi-Skorcha | +10 points each |
+| – Kombi-Rokkit | +10 points each |
+| **The Head Nob may take:** |  |
+| – Bosspole | +10 points |
+| **The entire mob may take one of the following:** |  |
+| – 'Eavy armour (4+) | +2 points each |
+| – Mega armour (2+) | +35 points each |
+| **Any model equipped with Mega Armour may exchange its Big Choppa for one of the following:** |  |
+| – Killsaw | +10 points each |
+| – Two killsaws | +20 points each |
+| **Any model equipped with Mega Armour may exchange its Kombi-Shoota for:** |  |
+| – Shoota | Free |
+
+### Weirdboss — 150 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Weirdboss | 6 | 5 | 2 | 4 | 5 | 5 | 4 | 4 | 8 | 6+ | 40mm |
+| Runt Orkalyte | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
+
+**Unit Composition**
+
+- 1 Weirdboss
+
+**Wargear**
+
+- Hammer of Mork
+- Warphead
+- Stikkbombz
+- Fetishes of Gork and Mork
+
+**Unit Type**
+
+- Weirdboss: Infantry (Character, Independent Character, Psyker)
+- Runt Orkalyte: Infantry
+
+**Special Rules**
+
+- Bigga iz Betta
+- Bulky (3)
+- Da Biggest is Da Best
+- 'Ere We Go!
+- Klan (X)
+- Might iz Right!
+- Mob Rule
+- Oddboy
+- Perils of the Waaagh!
+- Waaagh!
+- Waaagh! Energy
+- Weirdboy Discipline
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Weirdboss may take any of the following:** |  |
+| – Up to 3 runt orkalytes | +10 points each |
 
 ### Boss Snikrot — 95 pts
 
@@ -876,7 +1140,7 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 - Hex: once per game in the Shooting phase, after a successful Psychic check, pick an enemy character within 12"; it must pass a Toughness test or be removed as a casualty
 - Klan (Snakebites)
 - Mob Rule
-- Psychic discipline: Power of da Waaagh!, including Fists of Gork
+- Weirdboy Discipline
 - Waaagh!
 - Waaagh! energy
 
@@ -971,127 +1235,38 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 - Mob Rule
 - Waaagh!
 
-### Burna Boyz — 85 pts
+### Burna Boyz — 120 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Burna Boy | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 2 | 7 | 6+ | 32mm |
-| Spanner | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 2 | 7 | 6+ | 32mm |
-| Grot Oiler | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
+| Burna Boy | 7 | 3 | 2 | 4 | 4 | 1 | 3 | 1 | 6 | 5+ | 32mm |
+| Burna Spanna | 7 | 4 | 2 | 4 | 4 | 2 | 3 | 2 | 7 | 5+ | 40mm |
+| Grot Attendant | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
 
-- 5 Burna Boyz
+- 4 Burna Boyz
+- 1 Burna Spanna
 
 **Wargear**
 
 - Burna
 - Stikkbombz
+- Da armour
 
 **Unit Type**
 
 - Burna Boy: Infantry
-- Spanner: Infantry
+- Burna Spanna: Infantry (Character)
 
 **Special Rules**
 
+- Battlesmith (6+) (Burna Spanna only)
 - 'Ere We Go!
-- Klan (X)
+- Furious Charge (1)
 - Mob Rule
-- Spanners have Mek-Smasha (6+)
-- Waaagh!
-
-**Options**
-
-| Option | Cost |
-|---|---|
-| **The Burna Boyz may take:** |  |
-| – Up to 10 additional Burna Boyz | +16 points each |
-| – Up to 3 Spanners, each armed with a big shoota | +15 points each |
-| **Any Spanner may exchange his big shoota for:** |  |
-| – Rokkit launcha | +5 points |
-| – Kustom mega-blasta | +10 points |
-| **Any Spanner may take:** |  |
-| – Grot oiler | +5 points |
-
-### Kommandos — 55 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Kommando | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 2 | 7 | 6+ | 32mm |
-| Boss Nob | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 7 | 6+ | 32mm |
-
-**Unit Composition**
-
-- 5 Kommandos
-
-**Wargear**
-
-- Choppa
-- Slugga
-- Stikkbombz
-
-**Unit Type**
-
-- Kommando: Infantry (Skirmish)
-- Boss Nob: Infantry (Skirmish, Character)
-
-**Special Rules**
-
-- 'Ere We Go!
-- Infiltrate
-- Klan (X)
-- Mob Rule
-- Move Through Cover
-- Stealth
-- Waaagh!
-
-**Options**
-
-| Option | Cost |
-|---|---|
-| **The Kommandos may take:** |  |
-| – Up to 10 additional Kommandos | +10 points each |
-| **Up to two Kommandos may exchange their slugga for:** |  |
-| – Big shoota | +5 points |
-| – Burna | +5 points |
-| – Rokkit launcha | +10 points |
-| **One Kommando may be upgraded to a Boss Nob** | +10 points |
-| **The Boss Nob may exchange his choppa for:** |  |
-| – Big choppa | +10 points |
-| – Power klaw | +25 points |
-| **The Boss Nob may take:** |  |
-| – Bosspole | +5 points |
-
-### Meganobz — 125 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Meganob | 5 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 7 | 2+ | 40mm |
-
-**Unit Composition**
-
-- 3 Meganobz
-
-**Wargear**
-
-- Kustom shoota
-- Mega armour
-- Power klaw
-- Stikkbombz
-
-**Unit Type**
-
-- Meganob: Infantry (Heavy)
-- Boss Meganob (one Meganob, chosen as the unit's leader): Infantry (Heavy, Character)
-
-**Special Rules**
-
-- Chosen Warriors
-- 'Ere We Go!
-- Klan (X)
-- Lumbering: Meganobz may not Advance
-- Mob Rule
+- Mob Up
+- Sudden Strike (1)
 - Waaagh!
 
 **Dedicated Transport**
@@ -1102,19 +1277,87 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 
 | Option | Cost |
 |---|---|
-| **The Meganobz may take:** |  |
-| – Up to 7 additional Meganobz | +40 points each |
-| **Any Meganob may exchange his power klaw for:** |  |
-| – Two killsaws | +5 points |
-| **Any Meganob may exchange his kustom shoota for:** |  |
-| – Kombi-weapon | +5 points |
+| **The mob may include:** |  |
+| – Up to 10 additional burna boyz | +11 points each |
+| **The Burna Spanna may exchange his Burna for one of the following:** |  |
+| – Kombi-Skorcha | +10 points |
+| – Kombi-Rokkit | +10 points |
+| – Big shoota | +10 points |
+| **The Burna Spanna may take:** |  |
+| – Grot attendant (Ammo runt, oil runt) | +10 points |
+| – Bosspole | +10 points |
+| – Waaagh! banner | +35 points |
+| **The entire mob may take:** |  |
+| – 'Eavy armour (4+) | +2 points each |
 
-### Mek — 20 pts
+### Meganobz — 275 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Mek | 6 | 3 | 2 | 3 | 4 | 1 | 3 | 1 | 7 | 6+ | 32mm |
-| Grot Oiler | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
+| Meganob | 5 | 4 | 2 | 4 | 5 | 3 | 2 | 3 | 7 | 2+ | 40mm |
+| Mega Boss Nob | 5 | 5 | 2 | 4 | 5 | 4 | 2 | 4 | 8 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 2 Meganobz
+- 1 Mega Boss Nob
+
+**Wargear**
+
+- Mega armour
+- Power klaw
+- Kombi-Shoota
+- Stikkbombz
+
+**Unit Type**
+
+- Meganob: Infantry (Heavy)
+- Mega Boss Nob: Infantry (Character, Heavy)
+
+**Special Rules**
+
+- Bigga iz Betta
+- Bulky (3)
+- Dakka! (6+)
+- 'Ere We Go!
+- Klan (X)
+- Lumbering Charge: Units with this special rule gain +2 to Charge rolls. In addition, units with this special rule ignore penalties applied to Charge rolls due to reduced Movement Characteristics.
+- Might iz Right! (Mega Boss Nob only)
+- Mob Rule
+- Slow and Purposeful
+- Sudden Strike (2)
+- Waaagh!
+
+**Dedicated Transport**
+
+The unit may take a Battlewagon as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The mob may include:** |  |
+| – Up to 10 additional meganobz | +85 points each |
+| **Any Meganob may exchange his Power Klaw for one of the following:** |  |
+| – Big choppa | Free |
+| – Killsaw | +5 points each |
+| – Two killsaws | +15 points each |
+| **Any Meganob may exchange his Kombi-Shoota for one of the following:** |  |
+| – Kombi-Skorcha | +10 points each |
+| – Kombi-Rokkit | +10 points each |
+| – Big shoota | +10 points each |
+| **The Mega Boss Nob may take:** |  |
+| – Bosspole | +10 points |
+| – Waaagh! banner | +20 points |
+
+_A unit with a Waaagh! Banner gains +1 Weapon Skill while the Mega Boss Nob remains alive._
+
+### Mek — 55 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Mek | 6 | 4 | 3 | 4 | 4 | 2 | 3 | 2 | 6 | 4+ | 32mm |
+| Grot Oiler | 6 | 2 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
 
@@ -1122,31 +1365,49 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 
 **Wargear**
 
-- Choppa
-- Slugga
+- Shoota
+- Big choppa
+- Stikkbombz
+- 'Eavy armour
 
 **Unit Type**
 
 - Mek: Infantry (Independent Character)
+- Grot Oiler: Infantry
 
 **Special Rules**
 
-- Mek-Smasha (5+)
+- Battlesmith (5+)
+- Bigga iz Betta
+- Bulky (2)
+- Dakka! (6+)
 - 'Ere We Go!
 - Klan (X)
-- Mek Boss's Lad: up to one Mek per Big Mek may be taken without using an Elites slot
+- Might iz Right!
 - Mob Rule
+- Oddboy
 - Waaagh!
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Mek may exchange his slugga for:** |  |
+| **The Mek may exchange his Shoota for one of the following:** |  |
+| – Big shoota | +10 points |
+| – Kombi-Shoota | +5 points |
+| – Kombi-Rokkit | +10 points |
+| – Kombi-Skorcha | +10 points |
 | – Kustom mega-blasta | +15 points |
-| **The Mek may take:** |  |
-| – Grot oiler | +5 points |
-| – Tellyporta | +10 points |
+| **The Mek may exchange his Big Choppa for one of the following:** |  |
+| – Power klaw | +15 points |
+| – Killsaw | +10 points |
+| **The Mek may take any of the following:** |  |
+| – Attack squig | +15 points |
+| – Gitfinda | +15 points |
+| – Up to 2 grot oilers | +5 points each |
+| – Kustom force field | +25 points |
+| – Shokk attack gun | +35 points |
+| – Tellyporta | +25 points |
 
 ### Nob on Smasha Squig — 75 pts
 
@@ -1178,34 +1439,42 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 - Waaagh!
 - May only join Squighog Boyz or Beast Snagga Boyz
 
-### Nobz — 60 pts
+### Nobz — 195 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Nob | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 7 | 6+ | 32mm |
-| Ammo Runt | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
+| Boss Nob | 6 | 5 | 2 | 4 | 4 | 3 | 3 | 4 | 8 | 6+ | 32mm |
 
 **Unit Composition**
 
-- 3 Nobz
+- 4 Nobz
+- 1 Boss Nob
 
 **Wargear**
 
-- Choppa
 - Slugga
+- Choppa
 - Stikkbombz
 
 **Unit Type**
 
 - Nob: Infantry
-- Boss Nob (one Nob, chosen as the unit's leader): Infantry (Character)
+- Boss Nob: Infantry (Character)
 
 **Special Rules**
 
-- Chosen Warriors
+- Battle-hardened (1)
+- Bigga iz Betta
+- Bulky (2)
+- Crusader
+- Dakka! (6+)
 - 'Ere We Go!
+- Furious Charge (1)
 - Klan (X)
+- Might iz Right! (Boss Nob only)
 - Mob Rule
+- Sudden Strike (1)
 - Waaagh!
 
 **Dedicated Transport**
@@ -1216,23 +1485,25 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 
 | Option | Cost |
 |---|---|
-| **The Nobz may take:** |  |
-| – Up to 7 additional Nobz | +18 points each |
-| – A Painboy, who joins the unit without using a Force Organisation slot | +50 points |
-| **Any Nob may exchange his choppa for:** |  |
-| – Big choppa | +10 points |
-| – 'Uge choppa | +15 points |
-| – Power stabba | +5 points |
-| – Power klaw | +25 points |
-| **Any Nob may exchange his slugga for:** |  |
-| – Kombi-weapon | +5 points |
+| **The mob may include:** |  |
+| – Up to 10 additional nobz | +38 points each |
+| **Any Nob may exchange his Choppa for one of the following:** |  |
+| – Big choppa | +5 points each |
+| – Power klaw | +20 points each |
+| – Power stabba | +10 points each |
+| **Any Nob may exchange his Slugga for one of the following:** |  |
+| – Shoota | Free |
+| – Kombi-Skorcha | +10 points each |
+| – Kombi-Rokkit | +10 points each |
+| – Big shoota | +10 points each |
 | **Any Nob may take:** |  |
-| – 'Eavy armour (4+ save) | +4 points |
-| – Cybork body | +5 points |
-| – Ammo runt | +3 points |
-| **One Nob may take each of the following:** |  |
-| – Bosspole | +5 points |
-| – Waaagh! banner | +15 points |
+| – Twin sluggas | +2 points each |
+| – Ork bionics | +10 points each |
+| **The Boss Nob may take:** |  |
+| – Waaagh! banner | +20 points |
+| **The entire mob may take one of the following:** |  |
+| – Da armour (5+) | +1 point each |
+| – 'Eavy armour (4+) | +2 points each |
 
 ### Nobz on Warbikes — 80 pts
 
@@ -1292,12 +1563,12 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 | – Waaagh! banner | +15 points |
 | **One Nob on Warbike may be upgraded to a Painboy on Warbike (dok's tools and 'urty syringe; the unit has Feel No Pain (6+))** | +30 points |
 
-### Painboy — 55 pts
+### Painboy — 75 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Painboy | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 7 | 6+ | 32mm |
-| Grot Orderly | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
+| Painboy | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 6 | 5+ | 32mm |
+| Grot Orderly | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
 
@@ -1305,28 +1576,38 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 
 **Wargear**
 
-- Dok's tools
-- Power klaw
 - 'Urty syringe
+- Choppa
+- Stikkbombz
+- Da armour
 
 **Unit Type**
 
-- Painboy: Infantry (Independent Character)
+- Painboy: Infantry (Character, Independent Character)
+- Grot Orderly: Infantry
 
 **Special Rules**
 
+- Bigga iz Betta
+- Bulky (2)
+- Dok's Tools: Friendly Ork Infantry units joined by a Painboy gain Feel No Pain (5+). If the unit already possesses Feel No Pain, improve that roll by +1 to a maximum of Feel No Pain (4+).
 - 'Ere We Go!
-- Klan (X)
+- Might iz Right!
 - Mob Rule
+- Oddboy
 - Waaagh!
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Painboy may take:** |  |
-| – Grot orderly (improves the Feel No Pain from Dok's tools by 1) | +5 points |
-| – Warbike (M14, T5, 4+ save; Cavalry (Independent Character); 75x42mm base) | +25 points |
+| **The Painboy may take any of the following:** |  |
+| – Big choppa | +5 points |
+| – 'Uge choppa | +10 points |
+| – Power klaw | +20 points |
+| – Up to 2 grot orderlies | +10 points each |
+| – 'Eavy armour (4+) | +10 points |
+| – Attack squig | +10 points |
 
 ### Tankbustas — 90 pts
 
@@ -1374,7 +1655,115 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 | **The Boss Nob may take:** |  |
 | – Bosspole | +5 points |
 
+### Weirdboy — 100 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Weirdboy | 6 | 3 | 2 | 4 | 4 | 3 | 3 | 2 | 6 | 6+ | 32mm |
+
+**Unit Composition**
+
+- 1 Weirdboy
+
+**Wargear**
+
+- Weirdboy staff
+- Stikkbombz
+- Mork charms
+
+**Unit Type**
+
+- Weirdboy: Infantry (Character, Independent Character, Psyker)
+
+**Special Rules**
+
+- 'Ere We Go!
+- Mob Rule
+- Oddboy
+- Perils of the Waaagh!
+- Waaagh!
+- Waaagh! Energy
+- Weirdboy Discipline
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Weirdboy may take:** |  |
+| – Attack squig | +10 points |
+| – 'Eavy armour (4+) | +10 points |
+| – Warphead | +20 points |
+
 ## Troops
+
+### 'Ard Boyz — 110 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 'Ard Boy | 6 | 4 | 2 | 4 | 4 | 1 | 2 | 2 | 6 | 5+ | 32mm |
+| 'Ard Nob | 6 | 5 | 2 | 4 | 4 | 2 | 3 | 3 | 7 | 5+ | 40mm |
+
+**Unit Composition**
+
+- 9 'Ard Boyz
+- 1 'Ard Nob
+
+**Wargear**
+
+- Slugga
+- Shoota
+- Choppa
+- Stikkbombz
+- Da armour
+
+**Unit Type**
+
+- 'Ard Boy: Infantry (Line)
+- 'Ard Nob: Infantry (Character, Line)
+
+**Special Rules**
+
+- Bigga iz Betta ('Ard Nob only)
+- Bulky (2) ('Ard Nob only)
+- Dakka! (6+)
+- 'Ere We Go!
+- Furious Charge (1)
+- Might iz Right! ('Ard Nob only)
+- Mob Rule
+- Mob Up
+- Sudden Strike (1)
+- Support Squad
+- Waaagh!
+
+**Dedicated Transport**
+
+The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The mob may include:** |  |
+| – Up to 20 additional 'ard boyz | +9 points each |
+| **For every 10 'Ard Boyz in the mob, one 'Ard Boy may exchange his Shoota for one of the following:** |  |
+| – Big shoota | +10 points |
+| – Rokkit launcha | +15 points |
+| **For every 10 'Ard Boyz in the mob, one 'Ard Boy may exchange his Choppa for one of the following:** |  |
+| – Big choppa | +5 points |
+| – 'Uge choppa | +10 points |
+| **The 'Ard Nob may exchange his Choppa for one of the following:** |  |
+| – Big choppa | +5 points |
+| – 'Uge choppa | +10 points |
+| – Power klaw | +20 points |
+| **The 'Ard Nob may exchange his Shoota for one of the following:** |  |
+| – Kombi-Shoota | Free |
+| – Kombi-Skorcha | +10 points |
+| – Kombi-Rokkit | +10 points |
+| **The 'Ard Nob may take:** |  |
+| – Bosspole | +10 points |
+| – Waaagh! banner | +35 points |
+| **The entire mob may take:** |  |
+| – 'Eavy armour (4+) | +2 points each |
 
 ### Beast Snagga Boyz — 95 pts
 
@@ -1479,100 +1868,229 @@ A unit of no more than 12 models may take a Trukk as a Dedicated Transport. Any 
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Ork Boy | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 2 | 7 | 6+ | 32mm |
-| Boss Nob | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 7 | 6+ | 32mm |
+| Boy | 6 | 4 | 2 | 3 | 4 | 1 | 2 | 2 | 6 | 6+ | 32mm |
+| Nob | 6 | 4 | 2 | 3 | 4 | 2 | 3 | 3 | 7 | 6+ | 32mm |
 
 **Unit Composition**
 
-- 10 Ork Boyz
+- 9 Boyz
+- 1 Nob
 
 **Wargear**
 
-- Slugga and choppa, or shoota (all models alike)
+- Slugga
+- Choppa
 - Stikkbombz
 
 **Unit Type**
 
-- Ork Boy: Infantry (Line)
-- Boss Nob: Infantry (Character, Line)
+- Boy: Infantry (Line)
+- Nob: Infantry (Character, Line)
 
 **Special Rules**
 
+- Bigga iz Betta (Nob only)
+- Bulky (2) (Nob only)
+- Dakka! (6+)
 - 'Ere We Go!
+- Furious Charge (1)
 - Klan (X)
+- Might iz Right! (Nob only)
 - Mob Rule
+- Mob Up
+- Sudden Strike (1)
 - Waaagh!
 
 **Dedicated Transport**
 
-A unit of no more than 12 models may take a Trukk as a Dedicated Transport. Any Boyz unit may instead take a Battlewagon. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Boyz may take:** |  |
-| – Up to 20 additional Ork Boyz | +7 points each |
-| – Shoota and choppa on every model, as 11th edition Boyz (shoots with the shoota, fights with the choppa) | +1 point per model |
-| – 'Eavy armour (4+ save) for the whole unit | +4 points per model |
-| **For every 10 models, one Ork Boy may exchange his slugga or shoota for:** |  |
-| – Big shoota | +5 points |
-| – Rokkit launcha | +10 points |
-| **One Ork Boy may be upgraded to a Boss Nob** | +10 points |
-| **The Boss Nob may take:** |  |
-| – Big choppa | +10 points |
-| – 'Uge choppa | +15 points |
-| – Power klaw | +25 points |
-| – Kombi-weapon | +5 points |
-| – Bosspole | +5 points |
+| **The mob may include:** |  |
+| – Up to 20 additional boyz | +7 points each |
+| **For every 10 Boyz in the mob, one Boy may exchange his Slugga and Choppa for one of the following:** |  |
+| – Big shoota | +10 points |
+| – Rokkit launcha | +15 points |
+| **The Nob may exchange his Choppa for one of the following:** |  |
+| – Big choppa | +5 points |
+| – Power klaw | +20 points |
+| **The Nob may exchange his Slugga for one of the following:** |  |
+| – Kombi-Skorcha | +10 points |
+| – Kombi-Rokkit | +10 points |
+| **The Nob may take:** |  |
+| – Bosspole | +10 points |
+| **The entire mob may take one of the following:** |  |
+| – Da armour (5+) | +1 point each |
+| – 'Eavy armour (4+) | +2 points each |
 
-### Gretchin — 40 pts
+### Gretchin — 45 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Gretchin | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
-| Runtherd | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 2 | 7 | 6+ | 32mm |
+| Gretchin | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
+| Runtherder | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 2 | 7 | 6+ | 25mm |
 
 **Unit Composition**
 
 - 10 Gretchin
-- 1 Runtherd
+- 1 Runtherder
 
 **Wargear**
 
-- Gretchin: grot blasta, grot stabba
-- Runtherd: slugga, grabba stikk
+- Grot blasta
+- Grot stabba
+- Stikkbombz
+- Runtherder: Slugga
+- Runtherder: Grabba stikk
+- Runtherder: Squig hound
 
 **Unit Type**
 
-- Gretchin: Infantry (Line)
-- Runtherd: Infantry (Character)
+- Gretchin: Infantry
+- Runtherder: Infantry (Character)
 
 **Special Rules**
 
-- Grots: Gretchin do not have Mob Rule, are not affected by Waaagh! and cannot use Get Stuck In
-- Runtherd: if the unit fails a Morale check while a Runtherd lives, it may pass instead and remove D3 Gretchin
+- Luck of Mork and Gork
+- Mob Rule
+- Mob Up
+- Runtherder: A unit led by a Runtherder gains the Line sub-type.
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Gretchin may take:** |  |
-| – Up to 20 additional Gretchin | +3 points each |
-| – One additional Runtherd for every 10 additional Gretchin (required) | +5 points each |
-| **Any Runtherd may exchange his grabba stikk for:** |  |
+| **The mob may include:** |  |
+| – Up to 30 additional gretchin | +3 points each |
+| **The Runtherder may exchange his Slugga for one of the following:** |  |
+| – Shoota | Free |
+| – Kombi-Skorcha | +10 points |
+| – Kombi-Rokkit | +10 points |
+| **The Runtherder may exchange his grabba stikk for one of the following:** |  |
+| – Big choppa | +5 points |
+| – Power klaw | +20 points |
+| **The Runtherder may take:** |  |
 | – Grot-prod | +5 points |
-| – Squig hound (the unit re-rolls failed Morale checks) | +5 points |
+| – Squig prodder | +10 points |
+| **The entire mob may take one of the following:** |  |
+| – Out of no where (Infiltrate) | +20 points |
+| – From somewhere (Deep strike) | +25 points |
 
-Gretchin keep the Line sub-type, so they can hold objectives. That is thematic but may be strong for their cost; if it proves so, raise them to 4 points each before removing Line.
+### Shoota Boyz — 75 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Shoota Boy | 6 | 4 | 2 | 3 | 4 | 1 | 2 | 1 | 6 | 6+ | 32mm |
+| Nob | 6 | 4 | 2 | 3 | 4 | 2 | 3 | 2 | 7 | 6+ | 32mm |
+
+**Unit Composition**
+
+- 9 Shoota Boyz
+- 1 Nob
+
+**Wargear**
+
+- Shoota
+- Choppa
+- Stikkbombz
+
+**Unit Type**
+
+- Shoota Boy: Infantry (Line)
+- Nob: Infantry (Character, Line)
+
+**Special Rules**
+
+- Bigga iz Betta (Nob only)
+- Bulky (2) (Nob only)
+- Dakka! (5+)
+- 'Ere We Go!
+- Klan (X)
+- Might iz Right! (Nob only)
+- Mob Rule
+- Mob Up
+- Waaagh!
+
+**Dedicated Transport**
+
+The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The mob may include:** |  |
+| – Up to 20 additional shoota boyz | +7 points each |
+| **For every 10 Shoota Boyz in the mob, one Shoota Boy may exchange his Shoota for one of the following:** |  |
+| – Big shoota | +10 points |
+| – Rokkit launcha | +15 points |
+| **The Nob may exchange his Choppa for one of the following:** |  |
+| – Big choppa | +5 points |
+| – Power klaw | +20 points |
+| **The Nob may exchange his Shoota for one of the following:** |  |
+| – Kombi-Skorcha | +10 points |
+| – Kombi-Rokkit | +10 points |
+| **The Nob may take:** |  |
+| – Bosspole | +10 points |
+| **The entire mob may take one of the following:** |  |
+| – Da armour (5+) | +1 point each |
+| – 'Eavy armour (4+) | +2 points each |
 
 ## Dedicated Transports
 
-### Trukk — 30 pts
+### 'Chinork' Warkopta — 95 pts
 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
 |---|---|---|---|---|---|---|---|---|
-| Trukk | 16 | 2 | 10 | 10 | 10 | 3 | 12 | Use model |
+| 'Chinork' Warkopta | 20 | 2 | 11 | 10 | 10 | 3 | 12 | Use model |
+
+_This model may only be selected as a Dedicated Transport for another unit, and may not be selected as a separate unit._
+
+**Unit Composition**
+
+- 1 'Chinork' Warkopta
+
+**Wargear**
+
+- Deffgun
+- Deffgun
+- Big shoota
+
+**Unit Type**
+
+- Vehicle (Flyer, Hover, Open-topped, Transport)
+
+**Special Rules**
+
+- Deep Strike
+- Open-topped
+- Ramshackled Vehicle (5+)
+
+_The 'Chinork' Warkopta has a Transport Capacity of 12 models. Bulky models count as a number of models equal to their Bulky value. Bulky (4) models count as 5 models._
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **A Warkopta may replace its Big Shoota with one of the following:** |  |
+| – Skorcha | Free |
+| – Kopta rokkit launcha | +5 points |
+| – Kustom mega-blasta | +10 points |
+| **A Warkopta may replace its two Deffguns with:** |  |
+| – Two rattler kannon | +20 points |
+| **A Warkopta may take:** |  |
+| – Up to two bigbomms | +10 points each |
+| – Red paint job | +5 points |
+| – Grot riggers | +15 points |
+
+### Trukk — 45 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Trukk | 16 | 2 | 11 | 10 | 10 | 3 | 12 | Use model |
 
 _This model may only be selected as a Dedicated Transport for another unit, and may not be selected as a separate unit._
 
@@ -1583,38 +2101,35 @@ _This model may only be selected as a Dedicated Transport for another unit, and 
 **Wargear**
 
 - Big shoota
+- Reinforced ram
 
 **Unit Type**
 
-- Vehicle (Transport, Fast)
+- Vehicle (Fast, Open-topped, Transport)
 
 **Special Rules**
 
-- Klan (X)
-- Open-topped†
+- Open-topped
 - Ramshackled Vehicle (6+)
-
-**Access Points**
-
-- Open-topped: passengers may embark and disembark from any point of the hull.
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **A Trukk may take any of the following:** |  |
-| – Reinforced ram | +5 points |
-| – Grot riggers | +10 points |
-| – Stikkbomb chukka (passengers count as having frag grenades when assaulting out of it) | +5 points |
-| – Wreckin' ball | +10 points |
-| – 'Ard case (no longer Open-topped; +1 Side armour) | +15 points |
-| – Grabbin' klaw | +5 points |
-| – Red paint job | +5 points |
-| – Boarding plank | +5 points |
-| **A Trukk may exchange its big shoota for:** |  |
+| **The Trukk may exchange its Big Shoota for one of the following:** |  |
 | – Rokkit launcha | +5 points |
+| – Skorcha | Free |
+| **The Trukk may take:** |  |
+| – An additional big shoota | +5 points |
+| **The Trukk may take any of the following:** |  |
+| – Boarding plank | +10 points |
+| – Grabbin' klaw | +10 points |
+| – Wreckin' ball | +10 points |
+| – Grot riggers | +15 points |
+| – Red paint job | +5 points |
+| – Stikkbomb chukka | +10 points |
 
-The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and Boyz; its datasheet is under Heavy Support.
+The Battlewagon is also available as a Dedicated Transport to the units that list it; its datasheet is under Heavy Support.
 
 ## Fast Attack
 
@@ -1752,19 +2267,21 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 | – Two additional supa-shootas | +20 points |
 | – Red paint job | +5 points |
 
-### Deffkoptas — 35 pts
+### Deffkoptas — 135 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Deffkopta | 14 | 4 | 2 | 4 | 5 | 2 | 3 | 2 | 7 | 4+ | 60mm |
+| Deffkopta | 6 | 4 | 2 | 4 | 5 | 3 | 3 | 3 | 7 | 4+ | 60mm |
 
 **Unit Composition**
 
-- 1 Deffkopta
+- 3 Deffkoptas
 
 **Wargear**
 
 - Twin-linked big shoota
+- Spinnin' blades
+- Stikkbombz
 
 **Unit Type**
 
@@ -1772,9 +2289,12 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 
 **Special Rules**
 
+- Dakka! (6+)
+- Deep Strike
 - 'Ere We Go!
+- Hit & Run
 - Klan (X)
-- Mob Rule
+- Outflank
 - Scout
 - Waaagh!
 
@@ -1782,19 +2302,85 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 
 | Option | Cost |
 |---|---|
-| **The Deffkoptas may take:** |  |
-| – Up to 4 additional Deffkoptas | +30 points each |
-| **Any Deffkopta may exchange its twin-linked big shoota for:** |  |
-| – Kopta rokkits (twin-linked rokkit launcha) | +10 points |
+| **The mob may include:** |  |
+| – Up to 6 additional deffkoptas | +40 points each |
+| **Any Deffkopta may exchange its Twin-linked Big Shoota for one of the following:** |  |
+| – Kopta rokkit launcha | +10 points each |
+| – Kustom mega-blasta | +15 points each |
 | **Any Deffkopta may take:** |  |
-| – Buzzsaw | +5 points |
-| – Bigbomm | +10 points |
+| – Killsaw | +10 points each |
 
-### Kustom Boosta-blasta — 65 pts
+### Kommandos — 115 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Kustom Boosta-blasta | 16 | 4 | 2 | 5 | 6 | 5 | 3 | 2 | 7 | 4+ | Use model |
+| Kommando | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 2 | 6 | 5+ | 32mm |
+| Boss Kommando | 6 | 5 | 2 | 3 | 4 | 2 | 4 | 3 | 7 | 5+ | 40mm |
+| Kommando Grot | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
+
+**Unit Composition**
+
+- 9 Kommandos
+- 1 Boss Kommando
+
+**Wargear**
+
+- Slugga
+- Choppa
+- Stikkbombz
+- Sneakin' armour
+
+**Unit Type**
+
+- Kommando: Infantry (Skirmish)
+- Boss Kommando: Infantry (Character, Skirmish)
+- Kommando Grot: Infantry
+
+**Special Rules**
+
+- Dakka! (6+)
+- 'Ere We Go!
+- Infiltrate
+- Klan (X)
+- Mob Rule
+- Mob Up
+- Move Through Cover
+- Scout
+- Shrouded (5+)
+- Sudden Strike (1)
+- Waaagh!
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The mob may include:** |  |
+| – Up to 10 additional kommandos | +11 points each |
+| **For every 5 Kommandos in the mob, one Kommando may exchange his Slugga and Choppa for one of the following:** |  |
+| – Big shoota | +10 points |
+| – Burna | +10 points |
+| – Rokkit launcha | +15 points |
+| **For every 5 Kommandos in the mob, one Kommando may exchange his Choppa for one of the following:** |  |
+| – Big choppa | +5 points |
+| **One Kommando may take:** |  |
+| – Breacha ram | +10 points |
+| **One Kommando may take:** |  |
+| – Snipa rifle | +10 points |
+| **The entire mob may take:** |  |
+| – Bomb squig | +15 points |
+| – Smoke bombs | +15 points |
+| **The Boss Kommando may exchange his Choppa for one of the following:** |  |
+| – Big choppa | +5 points |
+| – Power klaw | +20 points |
+| **The Boss Kommando may exchange his Slugga for one of the following:** |  |
+| – Kombi-Skorcha | +10 points |
+| – Kombi-Rokkit | +10 points |
+
+### Kustom Boosta-blasta — 155 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Kustom Boosta-blasta | 14 | 3 | 2 | 4 | 5 | 6 | 3 | 4 | 7 | 4+ | Use model |
 
 **Unit Composition**
 
@@ -1803,28 +2389,37 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 **Wargear**
 
 - Burna exhausts
+- Grot blasta
 - Rivet kannon
-- Stikkbomb flinga
+- Choppas
+- Reinforced ram
 
 **Unit Type**
 
-- Kustom Boosta-blasta: Cavalry (Mechanised)
+- Kustom Boosta-blasta: Cavalry (Mechanized)
 
 **Special Rules**
 
-- Blastin' Past: after moving, may make a Template attack with its burna exhausts against one enemy unit it moved over
-- 'Ere We Go!
+- Dakka! (6+)
+- Deadly Demise
+- Exhaust Belch
+- Firing Protocols (2)
 - Klan (X)
 - Ramshackled Carapace (6+)
-- Speed Demons: a model that chooses to Advance gains Shrouded (5+) until the start of the controlling player's next turn
-- Waaagh!
+- Speed Freekz
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The squadron may take:** |  |
-| – Up to 2 additional Kustom Boosta-blastas | +60 points each |
+| **The Kustom Boosta-blasta may exchange its Rivet Kannon for one of the following:** |  |
+| – Big shoota | Free |
+| – Kustom mega-blasta | +10 points |
+| – Kopta rokkit launcha | +5 points |
+| **The Kustom Boosta-blasta may take any of the following:** |  |
+| – Grot riggers | +15 points |
+| – Red paint job | +5 points |
+| – Stikkbomb chukka | +10 points |
 
 ### Megatrakk Scrapjet — 85 pts
 
@@ -1898,11 +2493,11 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 | **The squadron may take:** |  |
 | – Up to 2 additional Rukkatrukk Squigbuggies | +85 points each |
 
-### Shokkjump Dragsta — 80 pts
+### Shokkjump Dragsta — 145 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Shokkjump Dragsta | 16 | 4 | 2 | 5 | 6 | 5 | 3 | 2 | 7 | 4+ | Use model |
+| Shokkjump Dragsta | 14 | 3 | 2 | 4 | 5 | 4 | 3 | 4 | 6 | 4+ | Use model |
 
 **Unit Composition**
 
@@ -1911,27 +2506,36 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 **Wargear**
 
 - Kustom shokk rifle
-- Saw blades (melee: S+1, AP 4, Shred)
+- Rokkit launcha
+- Saw blades
+- Big shoota
+- Big shoota
 
 **Unit Type**
 
-- Shokkjump Dragsta: Cavalry (Mechanised)
+- Shokkjump Dragsta: Cavalry (Mechanized)
 
 **Special Rules**
 
-- 'Ere We Go!
+- Dakka! (6+)
+- Deadly Demise
+- Firing Protocols (3)
 - Klan (X)
 - Ramshackled Carapace (6+)
-- Shokk Tunnel: once per game, in the Movement phase, remove it and set it up anywhere on the battlefield, as though arriving by Deep Strike†
-- Speed Demons (as Kustom Boosta-blasta)
-- Waaagh!
+- Shokk Tunnel Drive: Instead of Running during the Movement phase, a Shokkjump Dragsta may immediately remove itself from the battlefield and redeploy anywhere within 24" using the Deep Strike rules. If the scatter roll results in a Mishap, the Dragsta instead suffers D3 Strength 8 AP2 hits.
+- Speed Freekz
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The squadron may take:** |  |
-| – Up to 2 additional Shokkjump Dragstas | +75 points each |
+| **The Shokkjump Dragsta may exchange any Big Shoota for one of the following:** |  |
+| – Kopta rokkit launcha | +5 points |
+| – Kustom mega-blasta | +10 points |
+| **The Shokkjump Dragsta may take any of the following:** |  |
+| – Grot riggers | +15 points |
+| – Red paint job | +5 points |
+| – Stikkbomb chukka | +10 points |
 
 ### Squighog Boyz — 110 pts
 
@@ -1974,95 +2578,124 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 | – A bomb squig | +5 points |
 | **One Squighog Boy may be upgraded to a Squighog Nob** | +15 points |
 
-### Stormboyz — 50 pts
+### Stormboyz — 115 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Stormboy | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 2 | 7 | 6+ | 32mm |
-| Boss Nob | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 7 | 6+ | 32mm |
+| Stormboy | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 2 | 6 | 5+ | 32mm |
+| Storm Nob Boss | 6 | 5 | 2 | 4 | 4 | 2 | 4 | 3 | 7 | 5+ | 40mm |
 
 **Unit Composition**
 
-- 5 Stormboyz
+- 9 Stormboyz
+- 1 Storm Nob Boss
 
 **Wargear**
 
-- Choppa
-- Rokk-pack
 - Slugga
+- Choppa
 - Stikkbombz
+- Da armour
+- Rokk-pack
 
 **Unit Type**
 
-- Stormboy: Infantry
-- Boss Nob: Infantry (Character)
+- Stormboy: Jump Infantry
+- Storm Nob Boss: Jump Infantry (Character)
 
 **Special Rules**
 
+- Bigga iz Betta (Storm Nob Boss only)
+- Bulky (2)
+- Bulky (3) (Storm Nob Boss only)
+- Dakka! (6+)
+- Deep Strike
 - 'Ere We Go!
-- Full Throttle: when the unit activates its rokk-packs, it may add its Initiative Characteristic to its move. If it does, all terrain counts as Dangerous Terrain for the unit until the end of the turn
-- Klan (X)
+- Furious Charge (1)
+- Hammer of Wrath (1)
+- Might iz Right! (Storm Nob Boss only)
 - Mob Rule
+- Mob Up
+- Sudden Strike (1)
 - Waaagh!
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Stormboyz may take:** |  |
-| – Up to 25 additional Stormboyz | +9 points each |
-| **One Stormboy may be upgraded to a Boss Nob** | +10 points |
-| **The Boss Nob may exchange his choppa for:** |  |
-| – Big choppa | +10 points |
-| – 'Uge choppa | +15 points |
-| – Power klaw | +25 points |
-| **The Boss Nob may take:** |  |
-| – Bosspole | +5 points |
+| **The mob may include:** |  |
+| – Up to 10 additional stormboyz | +10 points each |
+| **For every 5 Stormboyz in the mob, one Stormboy may exchange his Slugga and Choppa for one of the following:** |  |
+| – Big shoota | +10 points |
+| – Rokkit launcha | +15 points |
+| **For every 5 Stormboyz in the mob, one Stormboy may exchange his Choppa for one of the following:** |  |
+| – Big choppa | +5 points |
+| – 'Uge choppa | +10 points |
+| **The Storm Nob Boss may exchange his Choppa for one of the following:** |  |
+| – Big choppa | +5 points |
+| – 'Uge choppa | +10 points |
+| – Power klaw | +20 points |
+| **The Storm Nob Boss may exchange his Slugga for one of the following:** |  |
+| – Kombi-Skorcha | +10 points |
+| – Kombi-Rokkit | +10 points |
 
-### Warbikers — 60 pts
+### Warbikers — 185 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Warbiker | 14 | 4 | 2 | 3 | 5 | 1 | 3 | 2 | 7 | 4+ | 75x42mm |
-| Boss Nob | 14 | 4 | 2 | 4 | 5 | 2 | 3 | 3 | 7 | 4+ | 75x42mm |
+| Warbiker | 12 | 4 | 2 | 4 | 5 | 2 | 3 | 2 | 6 | 4+ | 75x42mm |
+| Nob Biker | 12 | 5 | 2 | 4 | 5 | 3 | 4 | 3 | 7 | 4+ | 75x42mm |
 
 **Unit Composition**
 
-- 3 Warbikers
+- 4 Warbikers
+- 1 Nob Biker
 
 **Wargear**
 
-- Choppa
+- Warbike
 - Slugga
-- Twin-linked big shoota (dakkagun)
+- Choppa
+- Stikkbombz
+- Da armour
 
 **Unit Type**
 
-- Warbiker: Cavalry
-- Boss Nob: Cavalry (Character)
+- Warbiker: Cavalry (Skirmish)
+- Nob Biker: Cavalry (Skirmish, Character)
 
 **Special Rules**
 
-- Dakka Dakka: after moving no more than 12", the unit may re-roll one failed to-hit roll per model when shooting
+- Bulky (3)
+- Dakka! (6+)
 - 'Ere We Go!
+- Fleet (2)
+- Furious Charge (1)
 - Klan (X)
 - Mob Rule
-- Speed Demons: a model that chooses to Advance gains Shrouded (5+) until the start of the controlling player's next turn
+- Mob Up
+- Rage (2)
+- Sudden Strike (1)
 - Waaagh!
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Warbikers may take:** |  |
-| – Up to 9 additional Warbikers | +18 points each |
-| **One Warbiker may be upgraded to a Boss Nob** | +10 points |
-| **The Boss Nob may exchange his choppa for:** |  |
-| – Big choppa | +10 points |
-| – 'Uge choppa | +15 points |
-| – Power klaw | +25 points |
-| **The Boss Nob may take:** |  |
-| – Bosspole | +5 points |
+| **The mob may include:** |  |
+| – Up to 5 additional warbikers | +34 points each |
+| **For every 5 Warbikers in the mob, one Warbiker may take one of the following, in place of his warbike's twin-linked big shoota:** |  |
+| – Kopta rokkit launcha | +10 points |
+| – Kustom mega-blasta | +15 points |
+| **The Nob Biker may exchange his Choppa for one of the following:** |  |
+| – Big choppa | +5 points |
+| – Power klaw | +20 points |
+| **The Nob Biker may exchange his Slugga for one of the following:** |  |
+| – Kombi-Skorcha | +10 points |
+| – Kombi-Rokkit | +10 points |
+| **The Nob Biker may take:** |  |
+| – Bosspole | +10 points |
+| – Waaagh! banner | +35 points |
 
 ### Wazbom Blastajet — 140 pts
 
@@ -2099,13 +2732,13 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 
 ## Heavy Support
 
-### Battlewagon — 115 pts
+### Battlewagon — 135 pts
 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
 |---|---|---|---|---|---|---|---|---|
-| Battlewagon | 12 | 2 | 14 | 12 | 10 | 4 | 20 | Use model |
+| Battlewagon | 12 | 2 | 14 | 12 | 10 | 4 | 21 | Use model |
 
-_This model may be selected as a Heavy Support choice, or as a Dedicated Transport for Nobz, Meganobz or Boyz._
+_This model may be selected as a Heavy Support choice, or as a Dedicated Transport for Nobz, Meganobz, Boyz, Shoota Boyz, 'Ard Boyz, Burna Boyz, Lootas or Flash Gitz._
 
 **Unit Composition**
 
@@ -2113,44 +2746,37 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 
 **Wargear**
 
-- None
+- Reinforced ram
 
 **Unit Type**
 
-- Vehicle (Transport)
+- Vehicle (Transport, Open-topped)
 
 **Special Rules**
 
-- Klan (X)
-- Open-topped†
-- Ramshackled Vehicle (6+)
-
-**Access Points**
-
-- Open-topped: passengers may embark and disembark from any point of the hull. With an 'ard case, it has one Access Point on each side of the hull and one at the rear.
+- Open-topped
+- Ramshackled Vehicle (5+)
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **A Battlewagon may take any of the following:** |  |
-| – Deff rolla | +20 points |
-| – Grot riggers | +10 points |
-| – Reinforced ram | +5 points |
-| – 'Ard case (no longer Open-topped; +1 Side armour) | +15 points |
-| – Grabbin' klaw | +5 points |
-| – Red paint job | +5 points |
-| – Boarding plank | +5 points |
-| – Stikkbomb chukka | +5 points |
-| – Wreckin' ball | +10 points |
-| **A Battlewagon may take one of the following:** |  |
-| – Kannon | +10 points |
+| **The Battlewagon may take up to four of the following:** |  |
+| – Big shoota | +10 points each |
+| **The Battlewagon may take one of the following:** |  |
+| – Kannon | +15 points |
+| – Killkannon | +35 points |
+| – Zzap gun | +20 points |
+| **The Battlewagon may take any of the following:** |  |
+| – Boarding plank | +10 points |
+| – Deff rolla | +25 points |
+| – Grabbin' klaw | +10 points |
 | – Lobba | +10 points |
-| – Zzap gun | +15 points |
-| – Killkannon | +30 points |
-| **A Battlewagon may take up to four of the following, in any combination:** |  |
-| – Big shoota | +5 points each |
-| – Rokkit launcha | +5 points each |
+| – Wreckin' ball | +10 points |
+| – Grot riggers | +15 points |
+| – Armored plates | +15 points |
+| – Red paint job | +5 points |
+| – Stikkbomb chukka | +10 points |
 
 ### Big Mek Dakkarig — 130 pts
 
@@ -2223,11 +2849,11 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 | – Big shoota | +5 points each |
 | – Rokkit launcha | +5 points each |
 
-### Deff Dread — 75 pts
+### Deff Dread — 155 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Deff Dread | 8 | 4 | 2 | 6 | 7 | 5 | 3 | 3 | 8 | 3+ | 60mm |
+| Deff Dread | 6 | 4 | 2 | 6 | 7 | 4 | 3 | 4 | 7 | 3+ | 60mm |
 
 **Unit Composition**
 
@@ -2240,70 +2866,99 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 
 **Unit Type**
 
-- Deff Dread: Dreadnought†
+- Deff Dread: Dreadnought (Heavy)
 
 **Special Rules**
 
-- 'Ere We Go!
+- Bulky (5)
+- Dakka! (6+)
+- Deadly Demise
+- Dread Mob
+- Hammer of Wrath (1)
 - Klan (X)
-- Waaagh!
+- Rampage (2)
+- Ramshackled Carapace (6+)
+- Sudden Strike (1)
+- Unstable Mech': At the beginning of each controlling player turn, roll a D6. On a roll of 1, the Deff Dread suffers a Strength 8 AP2 hit with the Breaching (6+) special rule. On a roll of 2–5, select one of the following effects until the beginning of the next turn: Rampage (3) Hammer of Wrath (3) Sudden Strike (2) Fleet (2) Rage (3) Dakka! (5+) On a roll of 6, select any two of the above effects.
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Deff Dread may exchange either big shoota for:** |  |
+| **The mob may include:** |  |
+| – Up to 2 additional deff dreads | +155 points each |
+| **Any model may exchange any of its Big Shootas and/or Dread Klaws for one of the following:** |  |
 | – Rokkit launcha | +5 points |
-| – Kustom mega-blasta | +5 points |
-| – Skorcha | +5 points |
-| – Dread klaw | +15 points |
-| **The Deff Dread may take:** |  |
-| – Grot riggers | +10 points |
+| – Kustom mega-blasta | +10 points |
+| – Skorcha | Free |
+| – Dread saw | +5 points |
+| **Any model may exchange any of its Big Shootas for one of the following:** |  |
+| – Rokkit launcha | +5 points |
+| – Kustom mega-blasta | +10 points |
+| – Skorcha | Free |
+| – Dread klaw | +10 points |
 
-### Flash Gitz — 115 pts
+### Flash Gitz — 225 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Flash Git | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 7 | 4+ | 32mm |
-| Kaptin | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 4 | 7 | 4+ | 32mm |
-| Ammo Runt | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
+| Flash Git | 6 | 4 | 3 | 4 | 4 | 2 | 3 | 2 | 7 | 4+ | 32mm |
+| Kaptin | 6 | 5 | 3 | 4 | 4 | 3 | 4 | 3 | 8 | 4+ | 32mm |
+| Ammo Runt | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
 
-- 5 Flash Gitz
+- 4 Flash Gitz
+- 1 Kaptin
+- 1 Ammo Runt
 
 **Wargear**
 
-- Choppa
-- 'Eavy armour
-- Gitfinda
-- Slugga
 - Snazzgun
+- Slugga
+- Choppa
 - Stikkbombz
+- 'Eavy armour
 
 **Unit Type**
 
-- Flash Git: Infantry
-- Kaptin: Infantry (Character)
+- Flash Git: Infantry (Heavy)
+- Kaptin: Infantry (Character, Heavy)
+- Ammo Runt: Infantry
 
 **Special Rules**
 
+- Bigga iz Betta
+- Bulky (2)
+- Dakka! (5+)
 - 'Ere We Go!
-- Gun Crazy: once per game, the unit may fire twice in the Shooting phase
 - Klan (X)
+- Might iz Right! (Kaptin only)
 - Mob Rule
+- Mo' Dakka
 - Waaagh!
+
+**Dedicated Transport**
+
+The unit may take a Battlewagon or a 'Chinork' Warkopta as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Flash Gitz may take:** |  |
-| – Up to 5 additional Flash Gitz | +22 points each |
-| – Ammo runts | +3 points each |
-| **One Flash Git may be upgraded to a Kaptin** | +10 points |
+| **The mob may include:** |  |
+| – Up to 5 additional flash gitz | +42 points each |
+| **The mob may take:** |  |
+| – Up to 2 additional ammo runts | +5 points each |
+| **Any Flash Git may exchange his Choppa for one of the following:** |  |
+| – Big choppa | +5 points each |
+| – Power klaw | +20 points each |
+| **The Kaptin may exchange his Slugga for one of the following:** |  |
+| – Kombi-Skorcha | +10 points |
+| – Kombi-Rokkit | +10 points |
 | **The Kaptin may take:** |  |
-| – Bosspole | +5 points |
+| – Gitfinda | +15 points |
+| – Bosspole | +10 points |
 
 ### Gunwagon — 125 pts
 
@@ -2408,93 +3063,110 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 - Open-topped†
 - Ramshackled Vehicle (6+)
 - Wartotem: friendly Beast Snagga units within 12" re-roll failed Morale checks
-- Wurrtower: carries a Wurrboy who knows Power of da Waaagh! and uses the rig's Ld 8 for Psychic checks
+- Wurrtower: carries a Wurrboy with the Weirdboy Discipline who uses the rig's Ld 8 for Psychic checks
 
 **Access Points**
 
 - Open-topped: passengers may embark and disembark from any point of the hull.
 
-### Killa Kans — 40 pts
+### Killa Kans — 120 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Killa Kan | 8 | 2 | 3 | 5 | 6 | 3 | 2 | 2 | 6 | 3+ | 60mm |
+| Killa Kan | 6 | 3 | 3 | 5 | 6 | 3 | 2 | 2 | 5 | 4+ | 60mm |
 
 **Unit Composition**
 
-- 1 Killa Kan
+- 2 Killa Kans
 
 **Wargear**
 
 - Big shoota
-- Kan klaw (dread klaw)
+- Kan klaw
 
 **Unit Type**
 
-- Killa Kan: Dreadnought†
+- Killa Kan: Dreadnought (Skirmish)
 
 **Special Rules**
 
-- Grot pilot: Killa Kans keep BS3 and are not affected by Waaagh!
+- Dakka! (6+)
+- Deadly Demise
+- Grot Piloted
 - Klan (X)
+- Ramshackled Carapace (6+)
+- Scout
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Killa Kans may take:** |  |
-| – Up to 5 additional Killa Kans | +40 points each |
-| **Any Killa Kan may exchange its big shoota for:** |  |
+| **The mob may include:** |  |
+| – Up to 4 additional killa kans | +60 points each |
+| **Any Killa Kan may exchange its Big Shoota for one of the following:** |  |
 | – Rokkit launcha | +5 points |
-| – Grotzooka | +5 points |
-| – Skorcha | +5 points |
+| – Skorcha | Free |
 | – Kustom mega-blasta | +10 points |
-| **Any Killa Kan may take:** |  |
-| – Grot riggers (gains It Will Not Die) | +5 points |
+| – Grotzooka | +10 points |
+| **Any Killa Kan may exchange its Kan Klaw for one of the following:** |  |
+| – Buzzsaw | +5 points |
+| – Dread saw | +5 points |
+| **The entire mob may take:** |  |
+| – Grot riggers | +10 points each |
 
-### Lootas — 75 pts
+### Lootas — 165 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Loota | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 2 | 7 | 6+ | 32mm |
-| Spanner | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 2 | 7 | 6+ | 32mm |
-| Grot Oiler | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
+| Loota | 6 | 3 | 3 | 4 | 4 | 1 | 2 | 1 | 6 | 5+ | 32mm |
+| Spanner Nob | 6 | 4 | 3 | 4 | 4 | 2 | 3 | 2 | 7 | 5+ | 40mm |
+| Ammo Runt | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
 
-- 5 Lootas
+- 4 Lootas
+- 1 Spanner Nob
 
 **Wargear**
 
 - Deffgun
+- Slugga
 - Stikkbombz
+- Da armour
 
 **Unit Type**
 
 - Loota: Infantry
-- Spanner: Infantry
+- Spanner Nob: Infantry (Character)
+- Ammo Runt: Infantry
 
 **Special Rules**
 
+- Bigga iz Betta (Spanner Nob only)
+- Bulky (2)
+- Dakka! (5+)
 - 'Ere We Go!
-- Klan (X)
-- Lootas may not use Return Fire on a turn they fired deffguns†
+- Might iz Right! (Spanner Nob only)
 - Mob Rule
-- Spanners have Mek-Smasha (6+)
+- Mob Up
+- Mo' Dakka
 - Waaagh!
+
+**Dedicated Transport**
+
+The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Lootas may take:** |  |
-| – Up to 10 additional Lootas | +14 points each |
-| – Up to 3 Spanners, each armed with a big shoota | +15 points each |
-| **Any Spanner may exchange his big shoota for:** |  |
-| – Rokkit launcha | +5 points |
-| – Kustom mega-blasta | +10 points |
-| **Any Spanner may take:** |  |
-| – Grot oiler | +5 points |
+| **The mob may include:** |  |
+| – Up to 5 additional lootas | +22 points each |
+| **The Spanner Nob may take:** |  |
+| – Bosspole | +10 points |
+| – Waaagh! banner | +35 points |
+| **The entire mob may take:** |  |
+| – 'Eavy armour (4+) | +2 points each |
 
 ### Mek Gunz — 20 pts
 
@@ -2544,12 +3216,12 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 
 Ghazghkull Thraka takes the Primarch slot of the Force Organisation chart, and counts toward the Lords of War and Primarchs points limit.
 
-### Ghazghkull Thraka — 375 pts
+### Ghazghkull Thraka — 400 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Ghazghkull Thraka | 8 | 7 | 3 | 6 | 7 | 7 | 4 | 5 | 10 | 2+ | 80mm |
-| Makari | 6 | 2 | 3 | 2 | 2 | 2 | 3 | 2 | 5 | – | 25mm |
+| Ghazghkull Thraka | 7 | 7 | 3 | 7 | 7 | 6 | 4 | 6 | 10 | 2+ | 80mm |
+| Makari | 7 | 3 | 3 | 2 | 2 | 1 | 4 | 2 | 8 | 6+ | 25mm |
 
 **Unit Composition**
 
@@ -2558,28 +3230,44 @@ Ghazghkull Thraka takes the Primarch slot of the Force Organisation chart, and c
 
 **Wargear**
 
-- Ghazghkull Thraka: Gork's Klaw, mega armour, Mork's Roar, stikkbombz
-- Makari: grot blasta, grot stabba
+- Mega armour
+- Twin-linked big shoota
+- Worldsplitter klaw
+- Stikkbombz
+- Bosspole
+- Cybork body
 
 **Unit Type**
 
 - Ghazghkull Thraka: Primarch (Unique)
-- Makari: Infantry (Unique)
+- Makari: Infantry (Character)
 
 **Special Rules**
 
-- Battle-Hardened (2) (Makari only)
-- Da Grand Warlord's Ladz: while within 3" of a friendly Ork Infantry unit, enemy units more than 12" away may not target him with shooting attacks
+- Bigga iz Betta
+- Bulky (5)
+- Dakka! (5+)
 - 'Ere We Go!
-- Grot Attendants (Makari only)
-- Invulnerable save (4+)
-- Klan (Goffs)
-- Makari, Hoist Dat Banner!: once per game, in your Movement phase, pick friendly Ork units up to the current game turn number; until the start of your next turn they count as being under a Waaagh!, without using the army's Waaagh!
-- Makari's Luck: Makari has a 4+ invulnerable save, and while Makari lives, Ghazghkull's It Will Not Die improves by 1, from (5+) to (4+)
-- Primarch: Ghazghkull has every rule of the Primarch unit type, including Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4) and Relentless, and must be your Warlord
-- Prophet of da Great Waaagh!: friendly Ork units within 6" add 1 to their Weapon Skill and re-roll to-wound rolls of 1 in close combat
+- Feel No Pain (5+)
+- Independent Character
+- Klan (Goff)
+- Might iz Right!
+- Mob Rule
+- Prophet of the Waaagh!: While Ghazghkull Thraka is alive, all friendly Ork Infantry, Cavalry and Jump Infantry units within 12" gain Stubborn. In addition, Ghazghkull Thraka may declare a Waaagh! twice per battle at the start of any turn, though no more than one Waaagh! may be declared during the same turn.
+- Rampage (2)
+- Warlord: Ghazghkull must be your Warlord
 - Waaagh!
 
+**Cybork Body.** Ghazghkull Thraka gains a 5+ Invulnerable Save.
+
+**Makari.** Makari gains a 4+ Invulnerable Save. While Makari remains alive, Ghazghkull Thraka gains It Will Not Die (4+).
+
+**Dedicated Transport**
+
+Ghazghkull Thraka may select a: Battlewagon or Mega Battlewagon as a Dedicated Transport.
+
+_Ghazghkull Thraka must always be selected as the army's Warlord._
+_Ghazghkull Thraka may not select additional options._
 
 ## Lords of War
 
@@ -2663,11 +3351,11 @@ Lords of War follow the 2.0 points limit for that slot†.
 | – Kustom force field (protects the Morkanaut and units within 6") | +50 points |
 | – Grot riggers (gains Grot Riggers (5+)) | +15 points |
 
-### Stompa — 675 pts
+### Stompa — 775 pts
 
 | Model | M | WS | BS | S | Front | Side | Rear | I | A | HP | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Stompa | 10 | 4 | 2 | 10 | 13 | 12 | 12 | 3 | 5 | 12 | Use model |
+| Stompa | 10 | 4 | 2 | 8 | 13 | 12 | 10 | 3 | 5 | 10 | Use model |
 
 **Unit Composition**
 
@@ -2676,36 +3364,48 @@ Lords of War follow the 2.0 points limit for that slot†.
 **Wargear**
 
 - Deffkannon
-- Mega-choppa
-- Skorcha
-- Supa-gatler
-- Three big shootas
-- Three supa-rokkits
-- Twin-linked big shoota
+- Supa-Gatler
+- Four twin-linked big shootas
+- Three rokkit launchas
+- Titanic klaw
 
 **Unit Type**
 
-- Vehicle (Titan, Transport)†
+- Vehicle (Transport, Titan)
 
 **Special Rules**
 
-- Grot Riggers (5+)
+- Hammer of Wrath (D3)
 - Klan (X)
 - Ramshackled Vehicle (5+)
+- Reactor Meltdown (Magna)
 - Titanic Presence
+- Unstable Reactor: At the beginning of each controlling player turn, roll a D6. On a roll of 1, the Stompa suffers D6 Strength 8 AP2 hits resolved against its Rear Armour. On a roll of 2–5, select one of the following effects until the beginning of the next turn: Rage (3), Hammer of Wrath (D6+1), Fleet (3), Sudden Strike (3), It Will Not Die (5+), or a 4+ Invulnerable Save On a roll of 6, select any two of the above effects.
 
 **Transport**
 
-- Transport Capacity 24 Ork Infantry models; one Access Point on each side and one at the rear.
+- Transport Capacity 21 Ork Infantry models.
+
+**Access Points**
+
+- A Stompa has one Access Point on each side of the hull and one at the rear.
+
+_A Stompa has six Fire Points._
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Stompa may take:** |  |
-| – Kustom force field (protects the Stompa and units within 6") | +75 points |
-| – Up to 3 additional big shootas | +5 points each |
-| – Gaze of Mork (grot-guided supa-rokkit: re-roll its scatter) | +25 points |
+| **The Stompa may exchange its Deffkannon for one of the following:** |  |
+| – Supa-Lobba | +25 points |
+| – Giga-Zzap gun | +35 points |
+| **The Stompa may exchange any Twin-linked Big Shoota for one of the following:** |  |
+| – Kustom mega-blasta | +10 points |
+| – Skorcha | Free |
+| **The Stompa may take any of the following:** |  |
+| – Grot riggers | +25 points |
+| – Red paint job | +10 points |
+| – Extra armour plates | +20 points |
 
 The Stompa is a Titan-scale model. If your group plays without Titans, swap it out or use the 2.0 Super-heavy limit on its points.
 
@@ -2777,6 +3477,10 @@ _Bionik limbs and iron plates bolted on by an enthusiastic Painboy._
 
 A model with a cybork body has the Feel No Pain (6+) special rule. This does not combine with Dok's tools.
 
+### Da Armour
+
+Da armour confers a 5+ Armour Save.
+
 ### Deff Rolla
 
 _A spiked roller welded to the front of a wagon, built to flatten whatever is in front of it._
@@ -2787,13 +3491,17 @@ When a vehicle with a deff rolla makes a Ram or Tank Shock, the enemy unit it mo
 
 _Saws, drills and stitches, and a Painboy who is far too keen to use them._
 
-A unit that includes a model with Dok's tools has the Feel No Pain (6+) special rule. A grot orderly improves this by 1.
+Friendly Ork Infantry units joined by a model with Dok's tools gain Feel No Pain (5+). If the unit already possesses Feel No Pain, improve that roll by +1 to a maximum of Feel No Pain (4+).
 
 ### 'Eavy Armour
 
 _Thick plates of scavenged metal, worn by any Ork with enough teef to buy them._
 
 'Eavy armour confers a 4+ Armour Save.
+
+### Fetishes of Gork and Mork
+
+A model with fetishes of Gork and Mork has the Fetishes of Gork and Mork special rule.
 
 ### Gitfinda
 
@@ -2882,7 +3590,7 @@ A Warboss or Big Mek may take one Orky Artefact; each artefact may only be taken
 | Artefact | Who | Effect | Cost |
 |---|---|---|---|
 | Da Finkin' Kap | Warboss or Big Mek | If the bearer is your Warlord, he may choose a second Warlord Trait, which must be a generic Warlord Trait | +25 points |
-| Da Fixxerupperz | Big Mek only | The bearer's Mek-Smasha improves by 1, and he may use it twice each turn | +20 points |
+| Da Fixxerupperz | Big Mek only | The bearer's Battlesmith (X) improves by 1, and he may use it twice each turn | +20 points |
 | Da Killa Klaw | Warboss or Big Mek | Replaces his power klaw: melee, S x2, AP 2, Unwieldy, Shred; the bearer may re-roll failed to-wound rolls | +25 points |
 | Da Lucky Stikk | Warboss or Big Mek | The bearer and any unit he joins add 1 to their Leadership and may re-roll to-hit rolls of 1 in close combat | +25 points |
 | Headwoppa's Killchoppa | Warboss or Big Mek | Replaces his choppa: melee, S+2, AP 4, Murderous Strike (6+) | +20 points |
@@ -2979,6 +3687,10 @@ _A roaring, smoke-belching bike with a pair of big shootas bolted to the front._
 
 A warbike has a twin-linked big shoota. A model with the Infantry Unit Type that selects a warbike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had. It also changes its Movement Characteristic to 14, adds 1 to its Toughness, has a 4+ Armour Save, and gains the Hammer of Wrath (1) special rule. In addition, a model with a warbike that chooses to Advance gains the Shrouded (5+) special rule until the start of the controlling player's next turn.
 
+### Warphead
+
+A Weirdboy or Weirdboss with a warphead also has the Fists of Gork psychic weapon, as well as the one he generates.
+
 ### Wreckin' Ball
 
 _A spiked iron ball swung on a chain from a wagon's crane._
@@ -3017,6 +3729,9 @@ All weapons listed here are counted as 'Klaw' weapons for those rules that affec
 | Dread klaw | – | x2 | 2 | Melee, Armourbane (Melee); +1 Attack for each additional dread klaw |
 | Gork's Klaw | – | x2 | 2 | Melee, Instant Death, Brutal (3)†, Reaping Blow (2)† |
 | Grabbin' klaw | – | +1 | 2 | Melee; +1 Attack |
+| Titanic klaw | – | 10 | 1 | Melee, Destroyer |
+| Worldsplitter klaw | – | x2 | 1 | Melee, Brutal (2), Murderous Strike (6+), Specialist Weapon |
+| Kan klaw | – | x2 | 2 | Melee, Armourbane (Melee) |
 | Klaw of Gork / Klaw of Mork | – | 10 | 1 | Melee, Armourbane (Melee); may instead make one attack at S x2 |
 | Moz's klaw | – | x2 | 2 | Melee, Unwieldy |
 | Power klaw | – | x2 | 2 | Melee, Unwieldy, Specialist Weapon |
