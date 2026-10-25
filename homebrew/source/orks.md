@@ -3956,11 +3956,11 @@ _The Shokk Attack Gun tears unstable holes through reality itself, hurling screa
 
 | D6 | Mishap Result | Rules Effect |
 |---|---|---|
-| 1 | Warp Core Collapse! | The Mek Boss and every model in the entire unit suffer a Strength 6 AP4 hit with the Deflagrate special rule. The Shokk Attack Gun may not be fired again for the remainder of the battle. |
-| 2 | Polarity Reversed | Remove the Mek Boss from play and immediately place him in base contact with the target enemy unit. The Mek Boss counts as having successfully Charged and becomes Locked in combat, but begins the combat Pinned. |
+| 1 | Warp Core Collapse! | The firer and every model in the entire unit suffer a Strength 6 AP4 hit with the Deflagrate special rule. The Shokk Attack Gun may not be fired again for the remainder of the battle. |
+| 2 | Polarity Reversed | Remove the firer from play and immediately place him in base contact with the target enemy unit. The firer counts as having successfully Charged and becomes Locked in combat, but begins the combat Pinned. |
 | 3 | Snotling Rain | The original attack causes no damage. Instead place a Massive Blast (7") template centered on the target. Every unit touched by the template must immediately take a Pinning test. |
 | 4 | Ear-Biting Madness | If the target is a Vehicle, it immediately suffers a Crew Shaken result. If the target is Infantry, Cavalry or a Dreadnought, the target gains Blind and Concussive (1) until the end of the next player turn. |
-| 5 | Subatomic Materialization | The attack resolves at Strength 10 and gains Fleshbane and Sunder. After resolving the attack, the Mek Boss suffers one automatic Wound with no saves of any kind allowed. |
+| 5 | Subatomic Materialization | The attack resolves at Strength 10 and gains Fleshbane and Sunder. After resolving the attack, the firer suffers one automatic Wound with no saves of any kind allowed. |
 | 6 | Annihilation Vortex | The attack resolves at Strength 10 AP1 and gains Instant Death. The target unit must immediately take a Morale check at -2 Leadership. |
 
 ### Flame Weapons
