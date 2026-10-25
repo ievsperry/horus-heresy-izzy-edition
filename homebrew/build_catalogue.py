@@ -152,7 +152,7 @@ def load_gst_wargear(path=GST_FILE):
 OFFICIAL_ALIASES = {"storm bolter": "combi-bolter", "boltgun": "bolter", "force stave": "force staff"}
 
 # Where a weapon is mounted is not part of its name: "Hull (Front) Mounted heavy bolter" is a heavy bolter.
-MOUNT = r"^(?:hull mounted|hull \(front\) mounted|pintle mounted|sponson mounted|turret mounted|co-axial) "
+MOUNT = r"^(?:hull mounted|hull \(front\) mounted|pintle mounted|sponson mounted|turret mounted|co-axial|centreline mounted|arm mounted|carapace mounted) "
 
 
 def load_official_weapon_names(root=None):
@@ -317,11 +317,14 @@ def parse_datasheet(title, lines, slot):
     if not m:
         return None
     name = m.group(1).strip()
+    limit = re.match(r"0-(\d+) (.+)", name)  # "0-1 Autarch": one per detachment
+    if limit:
+        name = limit.group(2)
     km = re.fullmatch(r"(.+?) \((HQ|Elites|Troops|Fast Attack|Heavy Support|Lords of War)\)", name)
     if km:
         name, slot = km.group(1), km.group(2)
     b = blocks(lines)
-    ds = {"name": name, "points": int(m.group(2)), "slot": slot,
+    ds = {"name": name, "points": int(m.group(2)), "slot": slot, "limit": int(limit.group(1)) if limit else None,
           "notes": [strip_md(l) for l in b["_pre"] if l.startswith("_")]}
     stat_rows = split_table(b["_pre"])
     ds["profiles"] = []
@@ -1492,11 +1495,12 @@ class Builder:
                     add_text_profile(army, REACTION_PROFILE, m.group(1), strip_md(m.group(2)), eid)
 
         fleet_ids = {}
-        for tier, (fleets, rule_name, _) in enumerate(self.subfaction_sections()):
+        for tier, (fleets, rule_name, rule_text) in enumerate(self.subfaction_sections()):
             base = rule_name.replace(" (X)", "")
             gid = make_id(eid, "fleets") if tier == 0 else make_id(eid, "fleets", base)
             g = el(groups, "selectionEntryGroup", name=base, hidden=False, id=gid)
-            add_constraint(g, "min", 1, gid + "min")
+            if not re.search(r"\barmy may choose\b", rule_text):  # "An Anhrathe army may choose": optional
+                add_constraint(g, "min", 1, gid + "min")
             add_constraint(g, "max", 1, gid + "max")
             ses = el(g, "selectionEntries")
             for sub in fleets["subs"]:
@@ -1522,7 +1526,9 @@ class Builder:
                         add_text_profile(f, REACTION_PROFILE, m.group(1), strip_md(m.group(2)), fid)
                 add_cost(f, 0)
 
-        rites = [sub for s in self.sections for sub in s["subs"] if sub["title"].startswith("Rite of War: ")]
+        # "### World-Rune: The Sword-Wind" is the Asuryani name for a Rite of War
+        rites = [dict(sub, title="Rite of War: " + sub["title"].split(": ", 1)[1], label=sub["title"].split(": ", 1)[0])
+                 for s in self.sections for sub in s["subs"] if sub["title"].startswith(("Rite of War: ", "World-Rune: "))]
         rite_sec = next((s for s in self.sections if s["title"] == "Rites of War" and s["subs"]), None)
         if not rites and rite_sec:
             # "### Hunter Cadre" then "Requires ... Benefit: ... Limitation: ..."
@@ -1546,7 +1552,9 @@ class Builder:
                     rites.append(self.rite_from_text(name, text))
         if rites:
             rid = make_id(eid, "rites")
-            g = el(groups, "selectionEntryGroup", name="Rite of War", hidden=False, id=rid)
+            labels = {sub.get("label", "Rite of War") for sub in rites}
+            g = el(groups, "selectionEntryGroup", name=labels.pop() if len(labels) == 1 else "Rite of War",
+                   hidden=False, id=rid)
             add_constraint(g, "max", 1, rid + "max")
             ses = el(g, "selectionEntries")
             for sub in rites:
@@ -1566,7 +1574,7 @@ class Builder:
 
         # "## Waaagh! Doctrine" with one "###" per doctrine: an army may take one, and only while it has
         # a model with the rule that grants it ("may select a single Waaagh! Doctrine").
-        doc = next((s for s in self.sections if re.search(r"Doctrines?$", s["title"]) and s["subs"]), None)
+        doc = next((s for s in self.sections if re.search(r"(Doctrines?|Grand Performances)$", s["title"]) and s["subs"]), None)
         if doc:
             did = make_id(eid, "doctrine")
             g = el(groups, "selectionEntryGroup", name=doc["title"], hidden=False, id=did)
@@ -1874,6 +1882,7 @@ class Builder:
         self.rite_condition(m, rid)
 
     def rite_rule(self, unit, uid, rid, rname):
+        rname = re.sub(r" Special Rule$", "", rname)  # "gain the Pathfinder Special Rule"
         before = len(unit.findall("infoLinks/infoLink"))
         if any(norm(il.get("name")) == norm(rname) for il in unit.findall("infoLinks/infoLink")):
             return  # it has the rule already
@@ -2909,7 +2918,7 @@ class Builder:
                 ge = el(groups, "selectionEntryGroup", name="Options", hidden=False, id=gkey)
                 if g["one_of"]:
                     add_constraint(ge, "max", 1, gkey + "max")
-                if "must select one of the following" in g.get("title", ""):
+                if re.search(r"must select (one of the following|a single)", g.get("title", "")):
                     add_constraint(ge, "min", 1, gkey + "min")  # "Prince of Corsairs or Master of the Void"
                 if g.get("group_max"):
                     add_constraint(ge, "max", g["group_max"], gkey + "max")
@@ -3329,6 +3338,10 @@ class Builder:
             x = re.search(r"\((.+?)\)", line).group(1)
             self.link_rule(unit, f"Hive Mind ({'all powers' if not x[0].isdigit() else x})", uid)
             return
+        if line.startswith("Psychic Discipline (") and self.disciplines:
+            # the pick itself is on the psyker (discipline_pick); this is its note
+            add_rule(unit, "Psychic Discipline", re.search(r"\((.+?)\)", line).group(1), uid)
+            return
         if norm(line).startswith("may only join"):
             add_rule(unit, "Independent Character restriction", line, uid)
             return
@@ -3394,6 +3407,8 @@ class Builder:
                     continue
                 add_category(e, cat, cname, e.get("id"), primary=primary)
             add_category(e, *UNIT_CATEGORY, e.get("id"))
+            if ds.get("limit"):
+                add_constraint(e, "max", ds["limit"], e.get("id") + "limit", scope="force", children=True)
         self.exclusive_entries(links)
 
     def exclusive_entries(self, links):
