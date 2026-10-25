@@ -327,11 +327,11 @@ Every Ork belongs to a Klan, and each Klan fights in its own way. Klans work lik
 
 **Klan Advanced Reactions.** Each Klan has its own Advanced Reaction, usable only by units with that Klan (X) rule. It is available in addition to Get Stuck In and costs one point of the Reaction Allotment like any other reaction†.
 
-**Named characters.** A Unique character belongs to the Klan listed below and may only be included in a detachment of that Klan.
+**Named characters.** A Unique character belongs to the Klan listed below and may only be included in a detachment of that Klan. Kaptin Badrukk is the exception: he may be included in a Bad Moons or a Freebooterz detachment, and takes that detachment's Klan.
 
 | Klan | Unique characters |
 |---|---|
-| Bad Moons | – |
+| Bad Moons | Kaptin Badrukk |
 | Blood Axes | Boss Snikrot |
 | Deathskulls | Mad Dok Grotsnik |
 | Evil Sunz | Wazdakka Gutsmek |
@@ -1149,7 +1149,7 @@ _A Head Nob with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 
 - 'Ere We Go!
 - Flashiest Gitz: if Badrukk is the Warlord, Flash Gitz may be taken as Troops
 - Grot Attendants (Ammo Runts only)
-- Klan (Freebooterz)
+- Klan (Bad Moons or Freebooterz)
 - Mob Rule
 - Waaagh!
 
