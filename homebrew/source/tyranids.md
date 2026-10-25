@@ -196,12 +196,12 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 
 | 2.0 slot | Tyranid units |
 |---|---|
-| HQ | Hive Tyrant, The Swarmlord, Tyranid Prime, Winged Tyranid Prime, Tervigon, Broodlord, Old One Eye, Neurotyrant, Norn Emissary, Parasite of Mortrex |
+| HQ | Hive Tyrant, The Swarmlord, Tyranid Prime, Winged Tyranid Prime, Tervigon, Trygon Prime, Broodlord, Old One Eye, Neurotyrant, Norn Emissary, Parasite of Mortrex |
 | Elites | Hive Guard, Tyrant Guard, Lictor, Deathleaper, Genestealers, Neurolictor, Venomthropes, Zoanthropes, Pyrovores, Haruspex, Maleceptor, The Red Terror, Von Ryan's Leapers, Psychophage, Malanthrope |
 | Troops | Termagants, Hormagaunts, Neurogaunts, Ripper Swarms, Tyranid Warriors |
 | Dedicated Transports | Mycetic Spore, Tyrannocyte |
 | Fast Attack | Gargoyles, Raveners, Ravener Kill Team, Meiotic Spores, Sky-Slasher Swarms, Tyranid Shrikes, Harpy, Hive Crone, Spore Mines, Mucolid Spores |
-| Heavy Support | Carnifexes, Screamer-Killer, Biovores, Barbgaunts, Trygon, Trygon Prime, Mawloc, Tyrannofex, Toxicrene, Exocrine, Norn Assimilator, Sporocyst, Dimachaeron, Stone-crusher Carnifex |
+| Heavy Support | Carnifexes, Screamer-Killer, Biovores, Barbgaunts, Trygon, Mawloc, Tyrannofex, Toxicrene, Exocrine, Norn Assimilator, Sporocyst, Dimachaeron, Stone-crusher Carnifex |
 | Lord of War | Hierophant Bio-titan, Harridan, Scythed Hierodule, Barbed Hierodule |
 
 A Tyranid Detachment may take one Rite of War, chosen when the army is built. Each has its own Effects and Limitations.
@@ -532,6 +532,44 @@ _The ground shakes, the earth splits, and the swarm erupts from below, burrowing
 | **The Tervigon may exchange its massive scything talons for:** |  |
 | – Massive crushing claws | +10 points |
 | **The Tervigon may take any of the following:** |  |
+| – Adrenal glands | +10 points |
+| – Toxin sacs | +10 points |
+| – Regeneration (5+) | +30 points |
+| – Unnatural Resilience | +15 points |
+
+### Trygon Prime — 240 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Trygon Prime | 8 | 5 | 3 | 6 | 6 | 6 | 4 | 6 | 10 | 3+ | 120x92mm |
+
+**Unit Composition**
+
+- 1 Trygon Prime
+
+**Wargear**
+
+- Bio-electric pulse with containment spines
+- Toxinspike tail
+- Two monstrous scything talons
+
+**Unit Type**
+
+- Trygon Prime: Infantry (Monstrous)
+
+**Special Rules**
+
+- Deep Strike
+- Hive Fleet (X)
+- Shadow in the Warp
+- Subterranean Tunnel (as Trygon)
+- Synapse Creature
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Trygon Prime may take any of the following:** |  |
 | – Adrenal glands | +10 points |
 | – Toxin sacs | +10 points |
 | – Regeneration (5+) | +30 points |
@@ -2124,44 +2162,6 @@ _A Carnifex bred for siege warfare, its claws grown into massive bone wrecking-b
 | – Regeneration (5+) | +30 points |
 | – Unnatural Resilience | +15 points |
 
-### Trygon Prime — 240 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Trygon Prime | 8 | 5 | 3 | 6 | 6 | 6 | 4 | 6 | 10 | 3+ | 120x92mm |
-
-**Unit Composition**
-
-- 1 Trygon Prime
-
-**Wargear**
-
-- Bio-electric pulse with containment spines
-- Toxinspike tail
-- Two monstrous scything talons
-
-**Unit Type**
-
-- Trygon Prime: Infantry (Monstrous)
-
-**Special Rules**
-
-- Deep Strike
-- Hive Fleet (X)
-- Shadow in the Warp
-- Subterranean Tunnel (as Trygon)
-- Synapse Creature
-
-**Options**
-
-| Option | Cost |
-|---|---|
-| **The Trygon Prime may take any of the following:** |  |
-| – Adrenal glands | +10 points |
-| – Toxin sacs | +10 points |
-| – Regeneration (5+) | +30 points |
-| – Unnatural Resilience | +15 points |
-
 ### Tyrannofex — 230 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -2348,7 +2348,7 @@ Tyranid bio-titans are Infantry with the Monstrous and Gargantuan sub-types. The
 
 Biomorphs are the Tyranid equivalent of wargear: organs, glands and growths bred into a creature for a purpose. A biomorph is taken by every model in the unit and costs its points for each model, unlike weapon options, which are bought model by model.
 
-Every unit may take adrenal glands, toxin sacs and flesh hooks, and dynamic camouflage and a hardened carapace where its models qualify, at the costs below. A datasheet that lists a biomorph in its options uses its own cost instead. Wings, regeneration, spine banks and Unnatural Resilience may only be taken where a datasheet offers them. Spore Mines, Meiotic Spores, Mucolid Spores, Mycetic Spores, Tyrannocytes and Sporocysts may not take biomorphs.
+Every unit may take adrenal glands, toxin sacs, flesh hooks, engrained aggression and wraithful will, and dynamic camouflage, a hardened carapace, walking terror and hulking brute where its models qualify, at the costs below. A datasheet that lists a biomorph in its options uses its own cost instead. Wings, regeneration, spine banks and Unnatural Resilience may only be taken where a datasheet offers them. Spore Mines, Meiotic Spores, Mucolid Spores, Mycetic Spores, Tyrannocytes and Sporocysts may not take biomorphs.
 
 ### Adrenal Glands
 
@@ -2366,6 +2366,14 @@ A model with dynamic camouflage gains the Stealth special rule (see Army-wide Sp
 
 **Cost:** +5 points per model, or +10 points per Monstrous model.
 
+### Engrained Aggression
+
+_A hunger for violence bred so deep that the creature cannot be held back._
+
+The unit gains the Rage (2) special rule.
+
+**Cost:** +1 point per model for Termagants, Hormagaunts, Neurogaunts, Barbgaunts, Gargoyles, Ripper Swarms and Sky-Slasher Swarms; +3 points per model for every other model; +10 points per Monstrous model; +15 points per Gargantuan model.
+
 ### Flesh Hooks
 
 _Barbed hooks fired on sinew cords to haul the creature over walls and barricades._
@@ -2381,6 +2389,14 @@ _Layers of thickened chitin grown over the creature's vital organs._
 A model with a hardened carapace adds 1 to its Save, to a best of 2+. Any model with a Save worse than 2+ may take it.
 
 **Cost:** by the model's new Save: 5+ 2 points, 4+ 5 points, 3+ 10 points, 2+ 15 points per model.
+
+### Hulking Brute
+
+_Bulk and muscle grown far past need, so that every blow scatters the foe._
+
+Only Monstrous or Gargantuan units may take this biomorph. The unit gains the Rampage (3) special rule.
+
+**Cost:** +15 points per Monstrous model; +20 points per Gargantuan model; Monstrous or Gargantuan models only.
 
 ### Regeneration
 
@@ -2408,6 +2424,14 @@ _Layers of redundant organs and dense chitin that let a monster shrug off blows 
 
 Only Monstrous models may take this biomorph. A model with it gains the Unnatural Resilience special rule (see Army-wide Special Rules).
 
+### Walking Terror
+
+_A shape out of nightmare, whose very presence breaks the courage of lesser foes._
+
+Only Characters, Monstrous or Gargantuan units may take this biomorph. A Character gains the Fear (1) special rule, a Monstrous model gains Fear (2), and a Gargantuan model gains Fear (3).
+
+**Cost:** +5 points per model; +10 points per Monstrous model; +15 points per Gargantuan model; Character, Monstrous or Gargantuan models only.
+
 ### Wings
 
 _Leathery wings that carry the creature over the battlefield._
@@ -2415,6 +2439,14 @@ _Leathery wings that carry the creature over the battlefield._
 Wings count as a jump pack and use the official 2.0 Jump Pack rules: a unit composed entirely of models with wings may set its Movement Characteristic to 12 for the controlling player's turn, gaining the bonus to Charge distance, ignoring terrain while Moving and Charging, and moving over friendly and enemy models (Dangerous Terrain tests still apply, and Difficult Terrain counts as Dangerous). Models with wings gain Bulky (2), or Bulky (3) if they already have Bulky (2), and Deep Strike. A winged unit may not Advance, and may not use its wings to gain a Movement bonus during a Reaction. Harpies and Hive Crones set their Movement to 18 instead of 12, and Harridans to 24.
 
 Gargoyles, Sky-Slasher Swarms, Tyranid Shrikes, Winged Tyranid Primes, the Parasite of Mortrex, Harpies, Hive Crones and Harridans always have wings. A Hive Tyrant with wings is often called a Flyrant.
+
+### Wraithful Will
+
+_A mind so bound to the Hive that no psyker can prise it loose._
+
+The unit gains the Adamantium Will (4+) special rule.
+
+**Cost:** +1 point per model for Termagants, Hormagaunts, Neurogaunts, Barbgaunts, Gargoyles, Ripper Swarms and Sky-Slasher Swarms; +3 points per model for every other model; +5 points per Monstrous model; +10 points per Gargantuan model.
 
 ## Bio-weapons Armoury
 

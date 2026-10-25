@@ -1213,7 +1213,7 @@ class Builder:
             return None
         words = {"vehicle": "Vehicle", "dreadnought": "Dreadnought", "bugg": "Mechanised",
                  "mechanised": "Mechanised", "monstrous": "Monstrous", "infantry": "Infantry",
-                 "cavalry": "Cavalry"}
+                 "cavalry": "Cavalry", "character": "Character", "gargantuan": "Gargantuan"}
         return [t for k, t in words.items() if k in m.group(1).lower()]
 
     def no_biomorph_units(self):
@@ -1672,6 +1672,9 @@ class Builder:
             def kind(me):
                 return " ".join(c.text or "" for c in me.iter("characteristic") if c.get("name") == "Unit Type")
             eligible = [me for me in models if re.search(r"\bCharacter\b", kind(me))] if ds["slot"] == "HQ" else []
+            if ds["slot"] == "HQ" and not eligible and models:
+                # an HQ with no Character model (the Trygon Prime): its own model leads
+                eligible = [next((me for me in models if forms(me.get("name")) & forms(ds["name"])), models[0])]
             if must and models:
                 # "Vect must be your Warlord": the model the rule names (Vect, not the Dais he rides)
                 said = next(re.search(r"(\w+) must be your warlord", r, re.I) for r in ds["rules"] if "must be your warlord" in norm(r))
