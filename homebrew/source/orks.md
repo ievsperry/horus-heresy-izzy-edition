@@ -12,7 +12,7 @@ The design goals are simple. Orks win through numbers and assault. Their shootin
 
 Build armies with the HH2.0 Crusade Force Organisation chart, using the slot given for each unit. Points start from 7th edition costs and are adjusted where 2.0 changes a unit's value; treat them as playtest values. Rules marked † lean on exact 2.0 wording and should be checked against the rulebook; the checklist near the end of the document lists them all.
 
-**Contents:** Army-wide Special Rules · The Waaagh! · Waaagh! Doctrine · Get Stuck In · Psychic Discipline · Ork Klans · Warlord Traits · Force Organisation · Units · HQ · Elites · Troops · Dedicated Transports · Fast Attack · Heavy Support · Lords of War · Ork Wargear · Ork Armoury · Rules Checklist · Sources
+**Contents:** Army-wide Special Rules · The Waaagh! · Waaagh! Doctrine · Get Stuck In · Psychic Discipline · Ork Klans · Warlord Traits · Force Organisation · Detachments · Units · HQ · Elites · Troops · Dedicated Transports · Fast Attack · Heavy Support · Lords of War · Ork Wargear · Ork Armoury · Rules Checklist · Sources
 
 ## Army-wide Special Rules
 
@@ -547,6 +547,125 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Dedicated Transports | Trukk, 'Chinork' Warkopta; Battlewagon for the units that list it |
 | Lord of War | Gorkanaut, Morkanaut, Stompa |
 | Primarch | Ghazghkull Thraka |
+
+## Detachments
+
+### Waaagh! Warband Organization Chart
+
+*The Waaagh! Warband represents the most common structure used by the great greenskin hordes during the Age of Darkness. Built around massive mobs of Boyz supported by ramshackle war engines, violent Nob retinues and roaring armored assaults, these formations embody the raw momentum and brutality of the Waaagh! itself. Unlike the rigid battlefield doctrines of the Imperium, a Waaagh! Warband grows organically around the strength of its warboss and the violence of its mobs, expanding rapidly as victories attract fresh greenskins to the banner.*
+
+*A Waaagh! Warband does not wage war through discipline or strategic precision. Instead it overwhelms enemies through sheer aggression, momentum and escalating battlefield chaos. As the fighting intensifies, the psychic force of the Waaagh! spreads throughout the army, driving mobs into increasingly reckless acts of destruction while ramshackle machines somehow continue functioning long beyond all logical limits.*
+
+A Waaagh! Warband consists of a Primary Detachment, an optional Support Detachment, an optional Allied Detachment, and an optional Lords of War Detachment. All normal Liber Orks rules, Waaagh! rules and Klan rules apply unless specifically overridden below.
+
+**Primary Detachment**
+
+| Battlefield Role | Minimum | Maximum |
+| --- | --- | --- |
+| HQ | 1 | 3 |
+| Troops | 2 | 8 |
+| Elites | – | 4 |
+| Fast Attack | – | 4 |
+| Heavy Support | – | 4 |
+| Primarch | – | 1 |
+
+**Support Detachment (Optional)**
+
+| Battlefield Role | Minimum | Maximum |
+| --- | --- | --- |
+| HQ | 1 | 1 |
+| Troops | 1 | 3 |
+| Elites | – | 2 |
+| Fast Attack | – | 2 |
+| Heavy Support | – | 2 |
+
+Units selected as part of a Support Detachment may not outnumber the number of Troops units selected in the Primary Detachment.
+
+**Allied Detachment (Optional)**
+
+| Battlefield Role | Minimum | Maximum |
+| --- | --- | --- |
+| HQ | 1 | 1 |
+| Troops | 1 | 2 |
+| Elites | – | 1 |
+| Fast Attack | – | 1 |
+| Heavy Support | – | 1 |
+
+Allied Detachments must obey all normal Faction and Alliance restrictions presented elsewhere in this publication.
+
+**Lords of War Detachment (Optional, 0-3)**
+
+| Battlefield Role | Minimum | Maximum |
+| --- | --- | --- |
+| Lords of War | – | 1 |
+
+Lords of War Detachments may only be selected in games of 2,500 points or greater unless specifically permitted by a mission rule or campaign rule. A single Lords of War Detachment may only contain one unit. However, up to three separate Lords of War Detachments may be selected where permitted by the agreed game size.
+
+**Battlefield Role Assignment**
+
+| Battlefield Role | Unit Category |
+| --- | --- |
+| HQ | Warbosses, Weirdbosses, Painbosses, Mek Bosses |
+| Troops | Boyz, Shoota Boyz, 'Ard Boyz, Gretchin |
+| Elites | Nobz, Meganobz, Kommandos, Burna Boyz, Flash Gitz |
+| Fast Attack | Warbikers, Stormboyz, Buggies, Trukks |
+| Heavy Support | Lootas, Mek Gunz, Deff Dreads, Killa Kans |
+| Primarch | Ghazghkull Thraka |
+| Lords of War | Stompas, Gargants, Titans |
+
+**Waaagh! Warband Restrictions**
+
+- At least half of all Troops selections in the Primary Detachment must possess the Line Sub-type.
+- No more Heavy Support choices may be selected than the combined number of Troops and Elites selections in the Primary Detachment.
+- A Waaagh! Warband may not include more than one Primarch choice.
+- Super-heavy units with more than 12 Hull Points may not be selected unless they possess the Titanic Unit Sub-type.
+- If the army includes a Stompa, no additional Stompas may be selected below 4,000 points.
+
+**Command Restrictions**
+
+The following units may only be selected as part of the army's Primary Detachment: Warboss, Weirdboss, Painboss and Mek Boss. These units may never be selected as part of a Support Detachment or Allied Detachment unless specifically permitted by a Rite of Waaagh!, campaign rule or mission special rule. No army may include more than one each of a Warboss, Weirdboss, Painboss or Mek Boss unless specifically stated otherwise.
+
+**Klan Restrictions**
+
+Any unit entry with a selection limitation of 0-X applies across all Detachments in the army that share the same Klan (X) selection. For the purposes of these restrictions, the Primary Detachment, any Support Detachments, any Allied Detachments and any Lords of War Detachments with the same Klan (X) are treated as a single force when determining selection limits.
+
+### Scappin' Waaagh! Detachment
+
+*The Scappin' Waaagh! represents the brutal close-quarters warfare practiced by Ork warbands fighting within hive undercities, void hulks, manufactorum tunnels and shattered industrial zones where massive vehicle assaults and large-scale armored warfare become impossible. These detachments thrive amidst cramped corridors, collapsing infrastructure and violent boarding actions where overwhelming aggression and close-range brutality matter far more than battlefield maneuvering.*
+
+*Within the endless tunnel networks and rusting corridors of the galaxy's forgotten places, the Orks become terrifyingly effective predators. Kommandos stalk through smoke-filled maintenance shafts while Burna Boyz clear entire passageways with roaring gouts of flame. Nobz smash through sealed bulkheads using power klaws and breacha rams while mobs of Boyz surge through breaches in screaming tides of violence. Every corridor becomes a battlefield and every doorway a killing ground.*
+
+*Unlike the sprawling momentum of a full Waaagh! invasion, a Scappin' Waaagh! relies upon compact, highly aggressive formations designed to overwhelm enemy strongpoints through constant pressure and close-range fighting. Heavy vehicles are rare within these forces, replaced instead by infantry mobs, breaching teams and compact walker formations capable of operating within confined environments. The resulting battles are savage, chaotic and fought at point-blank range amidst smoke, fire and collapsing metal corridors.*
+
+All normal Liber Orks rules, Klan rules and Waaagh! rules apply unless specifically overridden below.
+
+**Primary Detachment**
+
+| Battlefield Role | Minimum | Maximum |
+| --- | --- | --- |
+| HQ | 1 | 2 |
+| Troops | 1 | 8 |
+| Elites | – | 4 |
+| Fast Attack | – | 2 |
+| Heavy Support | – | 2 |
+
+**Battlefield Role Assignment**
+
+| Battlefield Role | Unit Category |
+| --- | --- |
+| HQ | Warbosses, Big Meks, Painbosses, Weirdboyz |
+| Troops | Boyz, Shoota Boyz, 'Ard Boyz, Gretchin |
+| Elites | Nobz, Meganobz, Burna Boyz, Kommandos |
+| Fast Attack | Stormboyz, Warbikers |
+| Heavy Support | Lootas, Killa Kans, Deff Dreads |
+
+**Scappin' Waaagh! Restrictions**
+
+- No Lords of War units may be selected.
+- No Super-heavy units may be selected.
+- No model with the Titanic Unit Sub-type may be selected.
+- Vehicle units with a starting Hull Point value greater than 5 may not be selected.
+- At least half of all Troops units in the Primary Detachment must possess the Line Sub-type.
 
 ## Units
 

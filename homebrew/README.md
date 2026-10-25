@@ -16,6 +16,7 @@ python3 homebrew/build_catalogue.py homebrew/source/necrons.md "Homebrew - Necro
 python3 homebrew/build_catalogue.py homebrew/source/tau.md "Homebrew - T'au Empire.cat"
 python3 homebrew/build_catalogue.py homebrew/source/astra-militarum.md "Homebrew - Astra Militarum.cat"
 python3 homebrew/build_catalogue.py homebrew/source/drukhari.md "Homebrew - Drukhari.cat"
+python3 homebrew/build_catalogue.py homebrew/source/aeldari.md "Homebrew - Aeldari.cat"
 ```
 
 Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
@@ -56,14 +57,15 @@ loading. The script prints anything in the doc it could not place.
   as the Trygon Prime) may be the Warlord, using the game system's
   Warlord entry, so an army must have exactly one. A model whose datasheet says it "must be
   your Warlord" (Ghazghkull, Imotekh, Vect...) is offered it in any slot and must take it.
-  A bodyguard unit with the Retinue rule (the Warboss Retinue) is never the Warlord.
+  A bodyguard unit with the Retinue rule (the Warboss Retinue, or "Retinue (Archon)" naming an HQ) is
+  never the Warlord; a leader whose "Retinue (Incubi)" names the unit it leads still may be.
   The Warlord must pick one Warlord Trait: a generic trait, or its sub-faction's own, which
   shows only when the army has that sub-faction. Da Finkin' Kap lets its bearer take a second, generic trait;
   no trait can be taken twice.
 - Weapons and psychic powers from the doc's armoury, linked to the core rules
   in `2022 - Horus Heresy.gst` wherever a rule of the same name exists.
 
-- Xenos factions (Tyranids, Orks, Necrons, T'au Empire, Drukhari, Leagues of
+- Xenos factions (Tyranids, Orks, Necrons, T'au Empire, Drukhari, Aeldari, Leagues of
   Votann) take the Xenos allegiance added to `2022 - Horus Heresy.gst`: their army
   selection makes Xenos required for the force, and every unit has the Xenos rule.
 
@@ -125,6 +127,13 @@ loading. The script prints anything in the doc it could not place.
   its text says a "model with the X special rule may select" one, it shows only while the army has
   such a model.
 - Bold weapon rules written beside the armoury tables ("**Mishap.**") are rules weapons link to.
+- Several "## Psychic Discipline: X" sections (Runes of Battle, Runes of Fate, Voidsong) are each an entry
+  holding their powers and weapons. "Psychic Discipline (Voidsong or Runes of Battle)" on a datasheet is a
+  pick of one; "(Voidsong and one other)" a pick of two that must include Voidsong. "Must select either
+  Protect or Jinx" is a pick of one power inside the discipline.
+- Grenades listed both as wargear (with its own rules) and in the armoury (plasma grenades) are taken
+  as the wargear, which carries the grenade's profile.
+- A Bio-Construct (Talos, Cronos) also has the game system's Dreadnought category.
 
 - A biomorph granted by a sub-faction ("Deep Burrowers: Infantry units gain the Burrower biomorph")
   or a Warlord Trait ("The Warlord and any unit it joins gain the Burrower biomorph") shows its
