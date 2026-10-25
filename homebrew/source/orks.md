@@ -1571,7 +1571,7 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 
 - Bigga iz Betta
 - Bulky (2)
-- Dok's Tools: Friendly Orc Infantry units joined by a Painboy gain Feel No Pain (5+). If the unit already possesses Feel No Pain, improve that roll by +1 to a maximum of Feel No Pain (4+).
+- Dok's Tools: Friendly Ork Infantry units joined by a Painboy gain Feel No Pain (5+). If the unit already possesses Feel No Pain, improve that roll by +1 to a maximum of Feel No Pain (4+).
 - 'Ere We Go!
 - Might iz Right!
 - Mob Rule
@@ -3234,7 +3234,7 @@ Ghazghkull Thraka takes the Primarch slot of the Force Organisation chart, and c
 - Klan (Goff)
 - Might iz Right!
 - Mob Rule
-- Prophet of the Waaagh!: While Ghazghkull Thraka is alive, all friendly Orc Infantry, Cavalry and Jump Infantry units within 12" gain Stubborn. In addition, Ghazghkull Thraka may declare a Waaagh! twice per battle at the start of any turn, though no more than one Waaagh! may be declared during the same turn.
+- Prophet of the Waaagh!: While Ghazghkull Thraka is alive, all friendly Ork Infantry, Cavalry and Jump Infantry units within 12" gain Stubborn. In addition, Ghazghkull Thraka may declare a Waaagh! twice per battle at the start of any turn, though no more than one Waaagh! may be declared during the same turn.
 - Rampage (2)
 - Warlord: Ghazghkull must be your Warlord
 - Waaagh!
