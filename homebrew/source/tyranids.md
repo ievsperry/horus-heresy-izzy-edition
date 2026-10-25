@@ -127,7 +127,7 @@ Units with Hive Fleet (Jormungandr) gain the following:
 
 **Advanced Reaction: Burrow** (Movement phase). Trigger: an enemy unit ends a move within 12" of a Jormungandr Infantry unit. The Jormungandr unit gains Shrouded (5+) until the start of its controlling player's next turn.
 
-**Warlord Trait: Subterranean Hunter.** The Warlord and any unit it joins gain the Burrower biomorph, and may make their Subterranean Assault in the first game turn: at the start of that turn, roll a D6; on a 4+ (3+ if the army has Hive Fleet Jormungandr) they arrive that turn.
+**Warlord Trait: Subterranean Hunter.** The Warlord and any unit it joins gain the Burrower biomorph, and may re-roll the Reserves roll to arrive.
 
 ### Kraken
 
