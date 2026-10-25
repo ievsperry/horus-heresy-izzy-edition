@@ -542,9 +542,18 @@ class Builder:
             rows += parse_weapon_tables(ws)[0]  # e.g. the tankhammer, listed as wargear
         psy = self.section("Psychic Discipline")
         self.power_rows = []
-        if psy:
-            w, other = parse_weapon_tables(psy)
-            rows += [dict(r, psychic_weapon=True) for r in w]
+        # "#### Weirdboy Psychic Powers": tables under a heading belong to that table, apart from the
+        # discipline every psyker knows (the tables before any heading).
+        chunks, title = [(None, [])], None
+        for ln in (psy["lines"] if psy else []):
+            if ln.startswith("#### "):
+                chunks.append((ln[5:].strip(), []))
+            else:
+                chunks[-1][1].append(ln)
+        chunks += [(None, sub["lines"]) for sub in (psy["subs"] if psy else [])]
+        for title, lines in chunks:
+            w, other = parse_weapon_tables({"lines": lines, "subs": []})
+            rows += [dict(r, psychic_weapon=True, psy_table=title) for r in w]
             # A table of powers: Power | Kind | Phase | Effect
             for header, prows in other:
                 if header[:2] != ["Power", "Kind"]:
@@ -557,9 +566,9 @@ class Builder:
                         parts[0] = re.sub(r"^[A-Za-z ]+:\s*", "", parts[0])  # "Beam: 24\""
                         rows.append({"name": r[0], "range": parts[0], "str": parts[1].lstrip("S"),
                                      "ap": parts[2].lstrip("AP"), "type": ", ".join(parts[3:]),
-                                     "psychic_weapon": True})
+                                     "psychic_weapon": True, "psy_table": title})
                     else:
-                        self.power_rows.append((r[0], f"{r[2]} phase. {r[3]}"))
+                        self.power_rows.append((r[0], f"{r[2]} phase. {r[3]}", title))
         names = {norm(r["name"]) for r in rows}
         # "Spear of the Void Dragon (melee)" and "(ranged)" are one weapon even with no plain row
         mode_bases = [norm(m.group(1)) for r in rows for m in [re.fullmatch(r"(.+?) \(([a-z][^)]*)\)", r["name"])] if m]
@@ -583,6 +592,7 @@ class Builder:
             parent = parent[0].upper() + parent[1:]
             grouped.setdefault(norm(parent), (parent, []))[1].append(dict(r, profile=pname))
         self.psychic_weapons = []
+        self.psy_table = {}  # psychic weapon or power -> the "####" table it is listed in, if any
         for key, (name, profiles) in grouped.items():
             prefix = WEAPON_PREFIX.get(self.faction)
             if prefix and key in self.official_weapon_names():
@@ -615,6 +625,7 @@ class Builder:
             self.weapon_names[key] = name
             if any(p.get("psychic_weapon") for p in profiles):
                 self.psychic_weapons.append((name, eid))
+                self.psy_table[eid] = profiles[0].get("psy_table")
         for key in list(self.weapons):
             # "Sickle-claws (Dimachaeron)" is what a Dimachaeron's "two sickle-claws" means.
             base = re.sub(r"\s*\(.*\)$", "", key)
@@ -736,15 +747,17 @@ class Builder:
                        hidden=False, id=eid, publicationId=self.pub_id)
                 add_text_profile(e, PSY_POWER_PROFILE, name, " ".join(paragraphs(sub["lines"])), eid)
                 self.powers.append((name, eid))
-        for name, text in getattr(self, "power_rows", []):
-            eid = make_id("power", self.faction, name)
+        for name, text, table in getattr(self, "power_rows", []):
+            eid = make_id("power", self.faction, *([table] if table else []), name)
+            self.psy_table[eid] = table
             e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=name,
                    hidden=False, id=eid, publicationId=self.pub_id)
             add_text_profile(e, PSY_POWER_PROFILE, name, text, eid)
             self.powers.append((name, eid))
         # "Weirdboy Discipline. ... roll one D3 on the ... Psychic Powers table": the psyker picks one
         # power and one psychic weapon, standing in for the rolls.
-        self.random_disciplines = {norm(n) for n, t in self.rule_paragraphs(psy["lines"] if psy else [])
+        self.random_disciplines = {norm(n): re.findall(r"on the (.+?) table", t)
+                                   for n, t in self.rule_paragraphs(psy["lines"] if psy else [])
                                    if re.search(r"roll one D3 on the", t)}
         # "A Weirdboy with the Warphead upgrade also knows Fists of Gork": powers only some know.
         self.restricted_powers = set()
@@ -1354,6 +1367,12 @@ class Builder:
         if psy:
             for name, text in self.rule_paragraphs(psy["lines"]):
                 self.define_rule(name, text)
+        # Weapon rules written beside their tables ("**Mishap.** When firing a Shokk Attack Gun...")
+        for arm in [s for s in self.sections if "Armoury" in s["title"]]:
+            for sub in [arm] + arm["subs"]:
+                for name, text in self.rule_paragraphs(sub["lines"]):
+                    if norm(name) not in self.local_rules:
+                        self.define_rule(name, text)
         sub, name, text = self.subfaction_section()
         if sub:
             self.define_rule(name, text)
@@ -1463,6 +1482,32 @@ class Builder:
                 add_rule(r, "Effects", " ".join(list_items(b.get("Effects", []))).replace("†", ""), re_id)
                 add_rule(r, "Limitations", " ".join(list_items(b.get("Limitations", []))), re_id)
                 add_cost(r, 0)
+
+        # "## Waaagh! Doctrine" with one "###" per doctrine: an army may take one, and only while it has
+        # a model with the rule that grants it ("may select a single Waaagh! Doctrine").
+        doc = next((s for s in self.sections if re.search(r"Doctrines?$", s["title"]) and s["subs"]), None)
+        if doc:
+            did = make_id(eid, "doctrine")
+            g = el(groups, "selectionEntryGroup", name=doc["title"], hidden=False, id=did)
+            add_constraint(g, "max", 1, did + "max")
+            ses = el(g, "selectionEntries")
+            for sub in doc["subs"]:
+                de = make_id("doctrine", self.faction, sub["title"])
+                d = el(ses, "selectionEntry", type="upgrade", import_=True, name=sub["title"], hidden=False,
+                       id=de, publicationId=self.pub_id)
+                add_rule(d, sub["title"], " ".join(paragraphs(sub["lines"])).replace("†", ""), de)
+                add_cost(d, 0)
+            granter = next((m.group(1) for ln in doc["lines"]
+                            for m in [re.search(r"model with the (.+?) special rule may select", ln)] if m), None)
+            units = [self.units[ds["name"]] for ds in self.datasheets
+                     if granter and any(norm(r).startswith(norm(granter)) for r in ds["rules"])]
+            if units:
+                for field, value in (("hidden", "true"), (make_id(did + "max", "max"), 0)):
+                    mod = el(child(g, "modifiers"), "modifier", type="set", field=field, value=value)
+                    conds = el(el(el(mod, "conditionGroups"), "conditionGroup", type="and"), "conditions")
+                    for uid in units:
+                        el(conds, "condition", type="equalTo", value=0, field="selections", scope="force",
+                           childId=uid, shared=True, includeChildSelections=True, includeChildForces=False)
 
         # Warlord Traits are picked on the Warlord itself (see add_warlords), not here.
 
@@ -2873,7 +2918,9 @@ class Builder:
                 self.link(links, self.scream_id, "Psychic Scream", m["id"], count=1)
         rolled = next((r for r in ds["rules"] if norm(r) in getattr(self, "random_disciplines", ())), None)
         if rolled and "Psyker" in m["types"] and target_unit is not None:
+            tables = self.random_disciplines[norm(rolled)]
             for label, items in (("Psychic Power", self.powers), ("Psychic Weapon", self.psychic_weapons)):
+                items = [(n, i) for n, i in items if self.psy_table.get(i) in tables]
                 if not items:
                     continue
                 gkey = make_id(m["id"], "rolled", label)
@@ -2887,8 +2934,11 @@ class Builder:
         disc = next((r for r in ds["rules"] if norm(r).startswith("psychic discipline")), None)
         if disc and not hm and "Psyker" in m["types"]:
             for pname, pid in self.psychic_weapons:
-                self.link(links, pid, pname, m["id"], count=1)
+                if self.psy_table.get(pid) is None:
+                    self.link(links, pid, pname, m["id"], count=1)
             for pname, pid in self.powers:
+                if self.psy_table.get(pid) is not None:
+                    continue  # rolled for (the Weirdboy Discipline), not known
                 if norm(pname) in self.restricted_powers and norm(pname) not in norm(disc):
                     continue  # only known through an upgrade, such as the Warphead
                 self.link(links, pid, pname, m["id"], count=1)
