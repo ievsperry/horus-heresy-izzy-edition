@@ -195,8 +195,8 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | 2.0 slot | Tyranid units |
 |---|---|
 | HQ | Hive Tyrant, The Swarmlord, Tyranid Prime, Winged Tyranid Prime, Tervigon, Broodlord, Old One Eye, Neurotyrant, Norn Emissary, Parasite of Mortrex |
-| Elites | Hive Guard, Tyrant Guard, Lictor, Deathleaper, Neurolictor, Venomthropes, Zoanthropes, Pyrovores, Haruspex, Maleceptor, The Red Terror, Von Ryan's Leapers, Psychophage, Malanthrope |
-| Troops | Termagants, Hormagaunts, Neurogaunts, Ripper Swarms, Genestealers, Tyranid Warriors |
+| Elites | Hive Guard, Tyrant Guard, Lictor, Deathleaper, Genestealers, Neurolictor, Venomthropes, Zoanthropes, Pyrovores, Haruspex, Maleceptor, The Red Terror, Von Ryan's Leapers, Psychophage, Malanthrope |
+| Troops | Termagants, Hormagaunts, Neurogaunts, Ripper Swarms, Tyranid Warriors |
 | Dedicated Transports | Mycetic Spore, Tyrannocyte |
 | Fast Attack | Gargoyles, Raveners, Ravener Kill Team, Meiotic Spores, Sky-Slasher Swarms, Tyranid Shrikes, Harpy, Hive Crone, Spore Mines, Mucolid Spores |
 | Heavy Support | Carnifexes, Screamer-Killer, Biovores, Barbgaunts, Trygon, Trygon Prime, Mawloc, Tyrannofex, Toxicrene, Exocrine, Norn Assimilator, Sporocyst, Dimachaeron, Stone-crusher Carnifex |
@@ -224,7 +224,7 @@ _Long before the hive fleet arrives, its vanguard is already waiting in the dark
 
 **Effects**
 
-- Genestealer units in a Detachment using this Rite of War gain the Line Sub-type and may contain up to 20 models.
+- Genestealer units in a Detachment using this Rite of War may be taken as Troops choices, gain the Line Sub-type and may contain up to 20 models.
 - Genestealer units and Broodlords in a Detachment using this Rite of War gain the Infiltrate and Move Through Cover special rules.
 - A Genestealer unit in a Detachment using this Rite of War that deployed using the Infiltrate special rule may not be targeted by Shooting Attacks during the first game turn.
 
@@ -241,7 +241,7 @@ _When the Hive Mind meets a foe that cannot be drowned in numbers, it sends its 
 
 **Effects**
 
-- Carnifexes may be taken as Troops choices in a Detachment using this Rite of War and gain the Line Sub-type†.
+- Tyranid Warriors may be taken as Compulsory Troops choices in a Detachment using this Rite of War, lose the Support Squad special rule and gain the Line Sub-type.
 
 **Limitations**
 
@@ -636,6 +636,44 @@ _The ground shakes, the earth splits, and the swarm erupts from below, burrowing
 - Move Through Cover
 - Stealth
 - Where Is It?: Deathleaper may Deep Strike instead of deploying, and does not scatter
+
+### Genestealers — 85 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Genestealer | 8 | 6 | 2 | 4 | 4 | 1 | 6 | 3 | 10 | 5+ | 32mm |
+
+**Unit Composition**
+
+- 5 Genestealers
+
+**Wargear**
+
+- Rending claws
+
+**Unit Type**
+
+- Genestealer: Infantry (Skirmish)
+
+**Special Rules**
+
+- Fleet (1)
+- Hive Fleet (X)
+- Infiltrate
+- Instinctive Behaviour (Lurk)
+- Move Through Cover
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Genestealers may take:** |  |
+| – Up to 15 additional Genestealers | +16 points each |
+| – Toxin sacs for the whole unit | +3 points per model |
+| **Any Genestealer may exchange its rending claws for:** |  |
+| – Scything talons | +2 points |
+| **Any Genestealer may take:** |  |
+| – Acid maw | +5 points |
 
 ### Haruspex — 160 pts
 
@@ -1048,44 +1086,6 @@ _A floating synapse beast wreathed in toxic spores, which drifts across the batt
 
 ## Troops
 
-### Genestealers — 70 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Genestealer | 8 | 6 | 2 | 4 | 4 | 1 | 6 | 3 | 10 | 5+ | 32mm |
-
-**Unit Composition**
-
-- 5 Genestealers
-
-**Wargear**
-
-- Rending claws
-
-**Unit Type**
-
-- Genestealer: Infantry (Line, Skirmish)
-
-**Special Rules**
-
-- Fleet (1)
-- Hive Fleet (X)
-- Infiltrate
-- Instinctive Behaviour (Lurk)
-- Move Through Cover
-
-**Options**
-
-| Option | Cost |
-|---|---|
-| **The Genestealers may take:** |  |
-| – Up to 15 additional Genestealers | +14 points each |
-| – Toxin sacs for the whole unit | +3 points per model |
-| **Any Genestealer may exchange its rending claws for:** |  |
-| – Scything talons | +2 points |
-| **Any Genestealer may take:** |  |
-| – Acid maw | +5 points |
-
 ### Hormagaunts — 50 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -1243,12 +1243,13 @@ _A floating synapse beast wreathed in toxic spores, which drifts across the batt
 
 **Unit Type**
 
-- Tyranid Warrior: Infantry (Line, Monstrous)
+- Tyranid Warrior: Infantry
 
 **Special Rules**
 
 - Hive Fleet (X)
 - Shadow in the Warp
+- Support Squad
 - Synapse Creature
 - Two Close Combat Weapons: a Tyranid Warrior armed with two sets of melee weapons (such as two sets of scything talons) adds 1 to its Attacks characteristic
 
