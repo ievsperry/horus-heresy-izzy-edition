@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -2359,18 +2359,28 @@
       <profiles>
         <profile name="Psychic Scream" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon" hidden="false" id="f5a4-0a7b-6330-a0ca" publicationId="7478-cf16-4f88-170b">
           <characteristics>
-            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18"</characteristic>
-            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">4</characteristic>
+            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">Template</characteristic>
+            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">User</characteristic>
             <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">-</characteristic>
-            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 2D6, Pinning, Concussive</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Torrent (6"), Pinning, Concussive (1), Shell Shock (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Pinning" id="c583-7e19-2605-5d42" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
-        <infoLink name="Concussive (X)" id="7986-2957-0fdb-87af" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+        <infoLink name="Torrent (X)" id="bae7-0dc2-db85-dff8" hidden="false" targetId="5cfb-fc94-e6db-43b8" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Concussive" />
+            <modifier type="set" field="name" value="Torrent (6&quot;)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" id="c583-7e19-2605-5d42" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+        <infoLink name="Concussive (X)" id="956f-cf4b-b22d-f7a1" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (1)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shell Shock (X)" id="07dc-24c0-d4cd-b991" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (1)" />
           </modifiers>
         </infoLink>
       </infoLinks>

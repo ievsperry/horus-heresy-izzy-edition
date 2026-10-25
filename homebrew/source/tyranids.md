@@ -78,7 +78,7 @@ Instead of making a Shooting Attack, the psyker may make a Psychic check. If the
 
 | Weapon | Range | Str | AP | Type |
 |---|---|---|---|---|
-| Psychic Scream | 18" | 4 | – | Assault 2D6, Pinning, Concussive |
+| Psychic Scream | Template | User | – | Assault 1, Torrent (6"), Pinning, Concussive (1), Shell Shock (1) |
 
 Some psykers also carry their own psychic weapons, such as a Zoanthrope's warp blast or a Maleceptor's psychic overload; these are listed in the Bio-weapons armoury.
 
