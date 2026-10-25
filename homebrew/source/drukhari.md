@@ -694,8 +694,6 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 
 ## Elites
 
-## Elites
-
 ### Court of the Archon — 120 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
@@ -1920,8 +1918,6 @@ _Fleet values granted to this unit are added to Run moves and Jet Pack moves._
 
 ## Lords of War
 
-## Lords of War
-
 ### Asdrubael Vect on the Dais of Destruction — 420 pts
 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
@@ -1963,8 +1959,6 @@ _Fleet values granted to this unit are added to Run moves and Jet Pack moves._
 | --- | --: |
 | **The Dais may take:** |  |
 | – Night shields | +15 points |
-
-## Wargear
 
 ## Wargear
 
