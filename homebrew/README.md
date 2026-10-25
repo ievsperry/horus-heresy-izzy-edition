@@ -56,6 +56,7 @@ loading. The script prints anything in the doc it could not place.
   as the Trygon Prime) may be the Warlord, using the game system's
   Warlord entry, so an army must have exactly one. A model whose datasheet says it "must be
   your Warlord" (Ghazghkull, Imotekh, Vect...) is offered it in any slot and must take it.
+  A bodyguard unit with the Retinue rule (the Warboss Retinue) is never the Warlord.
   The Warlord must pick one Warlord Trait: a generic trait, or its sub-faction's own, which
   shows only when the army has that sub-faction. Da Finkin' Kap lets its bearer take a second, generic trait;
   no trait can be taken twice.
