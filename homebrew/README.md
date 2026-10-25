@@ -48,8 +48,13 @@ loading. The script prints anything in the doc it could not place.
   "Each type only once" limits are enforced.
 - Dedicated Transports: units that fit in a Mycetic Spore or Tyrannocyte (20
   Infantry models or one Monstrous model) may take one.
-- The army selection: hive fleet (with its rules, advanced reaction and warlord
-  trait), Rite of War, warlord trait, and the army-wide advanced reaction.
+- The army selection: hive fleet (with its rules and advanced reaction), Rite of War,
+  and the army-wide advanced reaction.
+- Warlords: every Character model in an HQ unit may be the Warlord, using the game system's
+  Warlord entry, so an army must have exactly one. A model whose datasheet says it "must be
+  your Warlord" (Ghazghkull, Imotekh, Vect...) is offered it in any slot and must take it.
+  The Warlord must pick one Warlord Trait: a generic trait, or its sub-faction's own, which
+  shows only when the army has that sub-faction. Da Finkin' Kap lets its bearer take two.
 - Weapons and psychic powers from the doc's armoury, linked to the core rules
   in `2022 - Horus Heresy.gst` wherever a rule of the same name exists.
 

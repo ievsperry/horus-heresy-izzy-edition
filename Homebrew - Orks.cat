@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -219,190 +219,6 @@
               </rules>
               <categoryLinks>
                 <categoryLink targetId="d494-e450-d4aa-579a" id="16b8-5fad-296f-7099" primary="true" name="Rite of War:" />
-              </categoryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Warlord Trait" hidden="false" id="28b2-da56-af1f-f4c8">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35d5-5bcb-4f64-5c6d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Bellowin' Tyrant" hidden="false" id="6a9a-a2f4-8407-2412" publicationId="96d0-c462-d158-fbad">
-              <profiles>
-                <profile name="Bellowin' Tyrant" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="a1eb-4716-4d85-eaab">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit he joins gain the Furious Charge (1) special rule, or increase an existing Furious Charge (X) by 1. In addition, once per game, a friendly Ork unit within 12" of the Warlord may make the Get Stuck In reaction without spending a point of the Reaction Allotment.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink targetId="1158-146a-d9a0-39ad" id="a538-f325-83f9-3384" primary="true" name="Warlord Traits:" />
-              </categoryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Da Boss Is Watchin'" hidden="false" id="5c14-33ba-ebc4-f458" publicationId="96d0-c462-d158-fbad">
-              <profiles>
-                <profile name="Da Boss Is Watchin'" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="be7e-5b7c-7874-c556">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Friendly Ork units within 12" of the Warlord may use his Leadership for Morale checks and Pinning tests, and units within 6" of him may use Breakin' Heads without suffering any hits. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Movement phase, above its normal Reaction Allotment.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink targetId="1158-146a-d9a0-39ad" id="56c3-51af-074c-74c5" primary="true" name="Warlord Traits:" />
-              </categoryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Might Is Right" hidden="false" id="eab6-ba2c-5d93-3ddb" publicationId="96d0-c462-d158-fbad">
-              <profiles>
-                <profile name="Might Is Right" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="1f03-dd4a-3ff7-916d">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord adds 1 to his Strength and Attacks Characteristics in any turn in which he charged, or was charged. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink targetId="1158-146a-d9a0-39ad" id="a972-7af2-1084-2ac3" primary="true" name="Warlord Traits:" />
-              </categoryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Da Biggest Gun" hidden="true" id="d70b-0e5f-a88a-f82b" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="76f8-00ce-5d7b-d34a" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Da Biggest Gun" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="b304-9879-9961-0ded">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Choose one ranged or melee weapon carried by the Warlord. That weapon gains the Master-crafted special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink targetId="1158-146a-d9a0-39ad" id="2edb-4e7e-3718-6ace" primary="true" name="Warlord Traits:" />
-              </categoryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Kunnin' Plan" hidden="true" id="2880-6e5c-dcb4-a763" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9641-5c76-afc1-1fa8" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Kunnin' Plan" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="e4cf-eb92-30f5-f73b">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">After both armies have deployed, but before the first turn, you may redeploy up to 3 friendly Blood Axe units, following the normal deployment rules.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink targetId="1158-146a-d9a0-39ad" id="00b3-c4f9-6f60-8200" primary="true" name="Warlord Traits:" />
-              </categoryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Dead Lucky" hidden="true" id="b6e5-fe58-8073-5059" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8020-4d05-451b-101e" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Dead Lucky" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="f873-52f4-e01c-e0eb">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord has a 5+ Invulnerable Save. If he already has an Invulnerable Save, improve it by 1, to a best of 3+.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink targetId="1158-146a-d9a0-39ad" id="8043-e7ca-737d-095f" primary="true" name="Warlord Traits:" />
-              </categoryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Red-hot Speedboss" hidden="true" id="05a9-c982-5cb8-0655" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="25c2-c4fc-1bc1-6ac5" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Red-hot Speedboss" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="00ce-be6d-193d-98b9">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord, any unit he joins, and any vehicle he is embarked on add 2 to their Movement Characteristic and gain the Outflank special rule.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink targetId="1158-146a-d9a0-39ad" id="9b6d-86da-6930-89b0" primary="true" name="Warlord Traits:" />
-              </categoryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Skarboy Boss" hidden="true" id="8489-3d62-8ea2-aed0" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="22c6-363a-67fd-1836" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Skarboy Boss" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="8597-9052-ed40-1fcc">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit he joins gain the Furious Charge (1) special rule, or increase an existing Furious Charge (X) by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink targetId="1158-146a-d9a0-39ad" id="cd9d-c5fc-2985-3ee7" primary="true" name="Warlord Traits:" />
-              </categoryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Beast Tamer" hidden="true" id="dd2e-e50e-f2a3-016d" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7cb2-c4cf-dfb7-3b04" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Beast Tamer" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="8a3e-b483-3619-0b0a">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Friendly Snakebite Beast Snagga Boyz, Squighog Boyz and squig-mounted models within 12" of the Warlord may re-roll failed charge distances.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink targetId="1158-146a-d9a0-39ad" id="efe8-e83d-a546-4c96" primary="true" name="Warlord Traits:" />
               </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -2806,6 +2622,34 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8034-a00b-9a55-a707" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="5ae9-4a33-fea6-93f5" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c44-ce31-11a5-da68" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="d14c-b296-c24f-0b2c" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="ffaf-b4c8-d073-d4c6" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="1d62-0802-2e2a-7d40" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="ffaf-b4c8-d073-d4c6" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f731-62c3-7067-4ee7" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="ffaf-b4c8-d073-d4c6" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1d62-0802-2e2a-7d40" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f731-62c3-7067-4ee7" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -2887,6 +2731,34 @@
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df8c-aa2c-880c-915b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0702-ef34-2bfe-459f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="f73c-e19e-1c1a-bd95" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9d4-ee0d-0c79-3963" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="f512-7b50-095a-a8be" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="6d4e-9020-8b2f-cee4" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="a7ee-5019-baa2-6092" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="6d4e-9020-8b2f-cee4" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="ca79-7061-3ccf-9c52" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="6d4e-9020-8b2f-cee4" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a7ee-5019-baa2-6092" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca79-7061-3ccf-9c52" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -3182,6 +3054,34 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6647-9e1c-a12c-e6e2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="aa55-72d3-896a-6076" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4f7-0958-6049-62e8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="9720-c955-c0c3-4f7a" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="cba4-833c-92b9-9f8c" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="91b1-8a34-a831-e5b1" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="cba4-833c-92b9-9f8c" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="9a0b-80b8-8b6c-aa09" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="cba4-833c-92b9-9f8c" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="91b1-8a34-a831-e5b1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a0b-80b8-8b6c-aa09" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -3366,6 +3266,34 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f391-5352-6791-9f7b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="b271-240c-8bf0-dd5f" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="522e-e01a-bf16-742c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="6332-181e-c399-0681" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="6a9a-a018-52f4-8f63" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="ee11-f1aa-3731-7706" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="6a9a-a018-52f4-8f63" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="ae6a-5759-16bd-829c" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="6a9a-a018-52f4-8f63" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ee11-f1aa-3731-7706" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae6a-5759-16bd-829c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -3436,6 +3364,34 @@
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf8f-a920-9ae7-a37f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ac9-80f1-8bd6-8ffb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="c403-ec4b-c2c6-ea66" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41c7-29df-4071-f63d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="7254-73e9-6db5-4946" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="dee5-0032-5979-49fe" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="01ae-b96c-0bb9-18f3" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="dee5-0032-5979-49fe" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="b451-72f8-4e21-64e9" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="dee5-0032-5979-49fe" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="01ae-b96c-0bb9-18f3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b451-72f8-4e21-64e9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -3752,6 +3708,34 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b80-c4e6-0ba2-1730" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="534f-4fdd-33f2-a4d5" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db44-7908-0430-d90b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="f7cd-1820-b218-a74b" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="6363-48da-3376-f328" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c0ad-0ae6-0009-292b" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="6363-48da-3376-f328" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="a3ac-3698-59f1-19d1" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="6363-48da-3376-f328" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c0ad-0ae6-0009-292b" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3ac-3698-59f1-19d1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -3881,6 +3865,34 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f34-fdbd-79f5-a6f8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="f40e-b987-7362-cac8" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dab6-5939-3bb0-230c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="efd8-3bf2-97e6-4cda" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="35e7-61da-5e25-6ffd" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="520d-b644-cbfa-87c1" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="35e7-61da-5e25-6ffd" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="cc41-2467-c526-efbb" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="35e7-61da-5e25-6ffd" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="520d-b644-cbfa-87c1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc41-2467-c526-efbb" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -3973,6 +3985,34 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a62-c4d5-709c-ca3c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="a740-187e-71f7-e63d" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ade-c44e-a565-aeb4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="3d92-2018-9552-aa74" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="7503-c4e3-cc4b-18ff" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="84a8-c98c-99c9-e610" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="7503-c4e3-cc4b-18ff" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="2d96-2a36-634f-d656" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="7503-c4e3-cc4b-18ff" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="84a8-c98c-99c9-e610" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d96-2a36-634f-d656" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -4054,6 +4094,34 @@
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af3c-ae5e-aeec-13aa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="354d-5c19-d79a-de5d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="ed47-533f-4a89-af45" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d88-e5e2-40ff-defe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="1af6-195e-f06c-70d4" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="a610-40ae-2f8a-e8e9" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c509-3dc0-fcea-e9e1" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="a610-40ae-2f8a-e8e9" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="61d1-590e-4508-51d6" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="a610-40ae-2f8a-e8e9" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c509-3dc0-fcea-e9e1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61d1-590e-4508-51d6" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -4148,6 +4216,34 @@
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55bf-0a1d-ac9d-7011" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5934-7be2-7ec8-e285" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="1778-591d-da62-160c" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1f5-c736-9dd5-c136" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="9547-1e97-df91-800b" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="737e-0618-e891-2f63" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c5a4-c661-9999-139e" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="737e-0618-e891-2f63" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="ea38-d73c-88cd-10f4" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="737e-0618-e891-2f63" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c5a4-c661-9999-139e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea38-d73c-88cd-10f4" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -4277,6 +4373,34 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efdb-991e-90e9-c72a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="03ae-450f-4f5c-644c" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2743-7d2f-9c87-8444" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="e97c-4638-3f3b-150f" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="420f-9d90-9aa5-d84b" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="6fcd-bd92-e1e3-2c17" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="420f-9d90-9aa5-d84b" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="bce5-8fe2-c9ba-9a25" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="420f-9d90-9aa5-d84b" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6fcd-bd92-e1e3-2c17" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bce5-8fe2-c9ba-9a25" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -4384,6 +4508,34 @@
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10bb-effb-055e-1273" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="342e-8ca6-6507-c225" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="14a2-1398-971e-6250" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57e0-31c8-e3c9-320a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="145f-5428-fe5b-27f3" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="9a33-8395-fbe4-a49c" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="08b3-5232-b36b-3c72" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="9a33-8395-fbe4-a49c" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="1fe0-8444-09a9-dc63" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="9a33-8395-fbe4-a49c" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="08b3-5232-b36b-3c72" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fe0-8444-09a9-dc63" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -4558,6 +4710,34 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb9c-fb18-b7bf-8a8b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="72fa-b4ea-8f9d-729e" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1d1-667a-e797-b05f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="7067-0088-b3aa-adfe" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="124a-f329-1404-f5ac" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="15f7-4954-b0e9-dedd" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="124a-f329-1404-f5ac" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="a8d7-d0e6-ad4f-3387" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="124a-f329-1404-f5ac" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="15f7-4954-b0e9-dedd" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8d7-d0e6-ad4f-3387" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -4650,6 +4830,34 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4016-a57f-cdfa-f19b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="f02c-91b0-a26d-4faa" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e71-44db-effe-20c9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="6163-448d-7404-01a0" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="cc64-ce15-e4c3-937e" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="00a7-862c-a87e-de27" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="cc64-ce15-e4c3-937e" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="4d56-7891-9deb-796b" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="cc64-ce15-e4c3-937e" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="00a7-862c-a87e-de27" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d56-7891-9deb-796b" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -4733,6 +4941,34 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eee4-cb11-c72d-634d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="e1e5-4b42-2037-0741" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d43-de4e-03a9-ea39" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="c314-f834-3d5e-aeee" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="1af8-a9c6-35aa-f791" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="b0ef-6b3d-99e1-5d19" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="1af8-a9c6-35aa-f791" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="d438-1e62-38d2-30e6" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="1af8-a9c6-35aa-f791" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b0ef-6b3d-99e1-5d19" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d438-1e62-38d2-30e6" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -4805,6 +5041,34 @@
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="993c-0310-2767-5fb3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca31-1765-eaa2-fa3e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="8a3e-d8cc-7b51-f02c" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bec1-1ea1-b888-8845" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="f1f5-cb14-24f4-7de9" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="2628-3cae-748e-d04e" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e8be-c237-d3bf-d6a4" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="2628-3cae-748e-d04e" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="31de-f43b-cdf3-5429" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="2628-3cae-748e-d04e" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e8be-c237-d3bf-d6a4" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31de-f43b-cdf3-5429" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -11357,6 +11621,35 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2797-be52-793a-65ed" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="0bd7-da77-f443-fd9c" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ed6-bc1f-13c6-eed4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5fd6-3254-1f8b-86a8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="f6c2-1593-091e-e97d" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="723a-0972-6a34-d75b" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="9ea1-c234-95b5-5f1e" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="723a-0972-6a34-d75b" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="6132-7ece-9709-2f7a" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="723a-0972-6a34-d75b" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9ea1-c234-95b5-5f1e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6132-7ece-9709-2f7a" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -11816,6 +12109,192 @@
       </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Warlord Traits" hidden="false" id="28b2-da56-af1f-f4c8">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35d5-5bcb-4f64-5c6d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bellowin' Tyrant" hidden="false" id="6a9a-a2f4-8407-2412" publicationId="96d0-c462-d158-fbad">
+          <profiles>
+            <profile name="Bellowin' Tyrant" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="a1eb-4716-4d85-eaab">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit he joins gain the Furious Charge (1) special rule, or increase an existing Furious Charge (X) by 1. In addition, once per game, a friendly Ork unit within 12" of the Warlord may make the Get Stuck In reaction without spending a point of the Reaction Allotment.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="a538-f325-83f9-3384" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Da Boss Is Watchin'" hidden="false" id="5c14-33ba-ebc4-f458" publicationId="96d0-c462-d158-fbad">
+          <profiles>
+            <profile name="Da Boss Is Watchin'" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="be7e-5b7c-7874-c556">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Friendly Ork units within 12" of the Warlord may use his Leadership for Morale checks and Pinning tests, and units within 6" of him may use Breakin' Heads without suffering any hits. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Movement phase, above its normal Reaction Allotment.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="56c3-51af-074c-74c5" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Might Is Right" hidden="false" id="eab6-ba2c-5d93-3ddb" publicationId="96d0-c462-d158-fbad">
+          <profiles>
+            <profile name="Might Is Right" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="1f03-dd4a-3ff7-916d">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord adds 1 to his Strength and Attacks Characteristics in any turn in which he charged, or was charged. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="a972-7af2-1084-2ac3" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Da Biggest Gun" hidden="true" id="d70b-0e5f-a88a-f82b" publicationId="96d0-c462-d158-fbad">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="76f8-00ce-5d7b-d34a" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Da Biggest Gun" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="b304-9879-9961-0ded">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Choose one ranged or melee weapon carried by the Warlord. That weapon gains the Master-crafted special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="2edb-4e7e-3718-6ace" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Kunnin' Plan" hidden="true" id="2880-6e5c-dcb4-a763" publicationId="96d0-c462-d158-fbad">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9641-5c76-afc1-1fa8" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Kunnin' Plan" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="e4cf-eb92-30f5-f73b">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">After both armies have deployed, but before the first turn, you may redeploy up to 3 friendly Blood Axe units, following the normal deployment rules.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="00b3-c4f9-6f60-8200" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dead Lucky" hidden="true" id="b6e5-fe58-8073-5059" publicationId="96d0-c462-d158-fbad">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8020-4d05-451b-101e" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Dead Lucky" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="f873-52f4-e01c-e0eb">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord has a 5+ Invulnerable Save. If he already has an Invulnerable Save, improve it by 1, to a best of 3+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="8043-e7ca-737d-095f" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Red-hot Speedboss" hidden="true" id="05a9-c982-5cb8-0655" publicationId="96d0-c462-d158-fbad">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="25c2-c4fc-1bc1-6ac5" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Red-hot Speedboss" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="00ce-be6d-193d-98b9">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord, any unit he joins, and any vehicle he is embarked on add 2 to their Movement Characteristic and gain the Outflank special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="9b6d-86da-6930-89b0" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Skarboy Boss" hidden="true" id="8489-3d62-8ea2-aed0" publicationId="96d0-c462-d158-fbad">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="22c6-363a-67fd-1836" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Skarboy Boss" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="8597-9052-ed40-1fcc">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit he joins gain the Furious Charge (1) special rule, or increase an existing Furious Charge (X) by 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="cd9d-c5fc-2985-3ee7" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Beast Tamer" hidden="true" id="dd2e-e50e-f2a3-016d" publicationId="96d0-c462-d158-fbad">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7cb2-c4cf-dfb7-3b04" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Beast Tamer" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="8a3e-b483-3619-0b0a">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Friendly Snakebite Beast Snagga Boyz, Squighog Boyz and squig-mounted models within 12" of the Warlord may re-roll failed charge distances.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="efe8-e83d-a546-4c96" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <sharedRules>
     <rule name="Mob Rule" id="9986-6062-e065-6f8a" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>Orks draw courage and fury from their numbers. A unit with this rule gains the following, counting the models in the unit at the time: Unit Size: Leadership, Furious Charge. 1–9: No bonus, None. 10–19: +1, Furious Charge (1). 20–29: +2, Furious Charge (2). 30 or more: +3, Furious Charge (2). Furious Charge: the unit gains Furious Charge (1) for every full 10 models, to a maximum of Furious Charge (2). If it already has Furious Charge (X), use whichever value is higher. Leadership: the unit adds +1 to its Leadership for every full 10 models, to a maximum of +3. Its Leadership can never be raised above 10 this way. Orderly Charge: the unit's charges are never Disorderly Charges†, however many units it charges.</description>

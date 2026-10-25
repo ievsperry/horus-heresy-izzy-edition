@@ -75,6 +75,7 @@ UNIT_CATEGORY = ("36c3-e85e-97cc-c503", "Unit:")
 ALLEGIANCE_CATEGORY = ("e90d-e5a8-f42d-da84", "Allegiance:")
 RITE_CATEGORY = ("d494-e450-d4aa-579a", "Rite of War:")
 WARLORD_CATEGORY = ("1158-146a-d9a0-39ad", "Warlord Traits:")
+WARLORD_ENTRY = "0176-56a3-d590-b103"  # the game system's Warlord: one per army
 REACTION_CATEGORY = ("5309-9b4c-93e9-c5de", "Reactions:")
 
 # Unit types and sub-types that already exist as categories in the game system.
@@ -467,6 +468,7 @@ class Builder:
         self.scream_id = None
         self.units = {}            # unit name -> shared entry id
         self.shared_entries = ET.Element("sharedSelectionEntries")
+        self.shared_groups = ET.Element("sharedSelectionEntryGroups")
         self.shared_rules = ET.Element("sharedRules")
 
     def official_weapon_names(self):
@@ -1435,31 +1437,94 @@ class Builder:
                 add_rule(r, "Limitations", " ".join(list_items(b.get("Limitations", []))), re_id)
                 add_cost(r, 0)
 
+        # Warlord Traits are picked on the Warlord itself (see add_warlords), not here.
+
+    # ---- warlords
+
+    def warlord_traits_group(self):
+        """The Warlord Traits a Warlord picks from: the generic ones, and its sub-faction's own trait,
+        which shows only when the army has that sub-faction."""
         wl = self.section("Warlord Traits")
-        if wl:
-            wid = make_id(eid, "warlord")
-            g = el(groups, "selectionEntryGroup", name="Warlord Trait", hidden=False, id=wid)
-            add_constraint(g, "max", 1, wid + "max")
-            ses = el(g, "selectionEntries")
-            traits = [(s["title"], " ".join(paragraphs(s["lines"])), None) for s in wl["subs"]]
-            for sub in (fleets["subs"] if fleets else []):
-                for ln in sub["lines"]:
-                    m = re.match(r"\*\*Warlord Trait: (.+?)\.\*\* (.+)", ln)
-                    if m:
-                        traits.append((m.group(1), m.group(2), fleet_ids[sub["title"]]))
-            for name, text, fleet in traits:
-                tid = make_id("trait", self.faction, name)
-                t = el(ses, "selectionEntry", type="upgrade", import_=True, name=name, hidden=bool(fleet),
-                       id=tid, publicationId=self.pub_id)
-                add_category(t, *WARLORD_CATEGORY, tid, primary=True)
-                add_text_profile(t, WARLORD_PROFILE, name, text.replace("†", ""), tid)
-                if fleet:
-                    mods = el(t, "modifiers")
-                    m = el(mods, "modifier", type="set", field="hidden", value="false")
-                    conds = el(m, "conditions")
-                    el(conds, "condition", type="atLeast", value=1, field="selections", scope="force",
-                       childId=fleet, shared=True, includeChildSelections=True, includeChildForces=False)
-                add_cost(t, 0)
+        if not wl:
+            return None
+        eid = make_id("army", self.faction)
+        wid = make_id(eid, "warlord")
+        g = el(self.shared_groups, "selectionEntryGroup", name="Warlord Traits", hidden=False, id=wid)
+        add_constraint(g, "max", 1, wid + "max")
+        ses = el(g, "selectionEntries")
+        traits = [(s["title"], " ".join(paragraphs(s["lines"])), None) for s in wl["subs"]]
+        fleets, _, _ = self.subfaction_section()
+        for sub in (fleets["subs"] if fleets else []):
+            for ln in sub["lines"]:
+                m = re.match(r"\*\*Warlord Trait: (.+?)\.\*\* (.+)", ln)
+                if m:
+                    traits.append((m.group(1), m.group(2), make_id("fleet", self.faction, sub["title"])))
+        for name, text, fleet in traits:
+            tid = make_id("trait", self.faction, name)
+            t = el(ses, "selectionEntry", type="upgrade", import_=True, name=name, hidden=bool(fleet),
+                   id=tid, publicationId=self.pub_id)
+            add_category(t, *WARLORD_CATEGORY, tid, primary=True)
+            add_text_profile(t, WARLORD_PROFILE, name, text.replace("†", ""), tid)
+            if fleet:
+                m = el(el(t, "modifiers"), "modifier", type="set", field="hidden", value="false")
+                el(el(m, "conditions"), "condition", type="atLeast", value=1, field="selections", scope="force",
+                   childId=fleet, shared=True, includeChildSelections=True, includeChildForces=False)
+            add_cost(t, 0)
+        return wid
+
+    def add_warlords(self):
+        """Character models in HQ units, and any model whose datasheet says it must be your Warlord, may
+        be the Warlord (the game system's Warlord entry allows exactly one per army). A Warlord must pick
+        one Warlord Trait."""
+        traits = self.warlord_traits_group()
+        kap = next((eid for aname, eid, _ in getattr(self, "artefacts", []) if "finkin" in norm(aname)), None)
+        for ds in self.datasheets:
+            unit = self.shared_entries.find(f"selectionEntry[@id='{self.units[ds['name']]}']")
+            if unit is None:
+                continue
+            must = any("must be your warlord" in norm(r) for r in ds["rules"])
+            models = unit.findall("selectionEntries/selectionEntry[@type='model']")
+            def kind(me):
+                return " ".join(c.text or "" for c in me.iter("characteristic") if c.get("name") == "Unit Type")
+            eligible = [me for me in models if re.search(r"\bCharacter\b", kind(me))] if ds["slot"] == "HQ" else []
+            if must and models:
+                # "Vect must be your Warlord": the model the rule names (Vect, not the Dais he rides)
+                said = next(re.search(r"(\w+) must be your warlord", r, re.I) for r in ds["rules"] if "must be your warlord" in norm(r))
+                named = said and next((me for me in models if said.group(1).lower() in me.get("name").lower()), None)
+                if named is not None:
+                    eligible = [named]
+                elif not eligible:
+                    eligible = [next((me for me in models if forms(me.get("name")) & forms(ds["name"])), models[0])]
+            for me in eligible:
+                mid = me.get("id")
+                links = child(me, "entryLinks")
+                wl = el(links, "entryLink", import_=True, name="Warlord", hidden=False, id=make_id(mid, "warlord"),
+                        type="selectionEntry", targetId=WARLORD_ENTRY)
+                add_constraint(wl, "max", 1, make_id(mid, "warlord") + "max")
+                if must:
+                    add_constraint(wl, "min", 1, make_id(mid, "warlord") + "min")
+                if not traits:
+                    continue
+                tl = el(links, "entryLink", import_=True, name="Warlord Traits", hidden=False,
+                        id=make_id(mid, "warlord traits"), type="selectionEntryGroup", targetId=traits)
+                tmin = make_id(mid, "warlord traits", "min")
+                tmax = make_id(mid, "warlord traits", "max")
+                mods = el(tl, "modifiers")
+                hide = el(mods, "modifier", type="set", field="hidden", value="true")
+                el(el(hide, "conditions"), "condition", type="equalTo", value=0, field="selections", scope=mid,
+                   childId=WARLORD_ENTRY, shared=True, includeChildSelections=False, includeChildForces=False)
+                need = el(mods, "modifier", type="set", field=tmin, value=1)
+                el(el(need, "conditions"), "condition", type="atLeast", value=1, field="selections", scope=mid,
+                   childId=WARLORD_ENTRY, shared=True, includeChildSelections=False, includeChildForces=False)
+                if kap:  # "If the bearer is your Warlord, he may choose two generic Warlord Traits"
+                    two = el(mods, "modifier", type="set", field=tmax, value=2)
+                    el(el(two, "conditions"), "condition", type="atLeast", value=1, field="selections", scope=mid,
+                       childId=kap, shared=True, includeChildSelections=True, includeChildForces=False)
+                cons = child(tl, "constraints")
+                el(cons, "constraint", type="min", value=0, field="selections", scope="parent", shared=True,
+                   id=tmin, percentValue=False, includeChildSelections=True, includeChildForces=False)
+                el(cons, "constraint", type="max", value=1, field="selections", scope="parent", shared=True,
+                   id=tmax, percentValue=False, includeChildSelections=True, includeChildForces=False)
 
     # ---- matching
 
@@ -2891,9 +2956,12 @@ class Builder:
         for ds in self.datasheets:
             self.build_unit(ds)
         self.add_transport_options()
+        self.add_warlords()
         self.build_army_entry()
         self.build_entry_links()
         self.root.append(self.shared_entries)
+        if len(self.shared_groups):
+            self.root.append(self.shared_groups)
         self.root.append(self.shared_rules)
         sort_children(self.root)
         return self.root
