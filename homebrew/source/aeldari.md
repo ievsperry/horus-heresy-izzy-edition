@@ -4,7 +4,7 @@ Oct 25, 2026 · @Isaac
 
 ## Introduction
 
-This is Liber Aelphari, the Aeldari section of Liber Xenos, for The Horus Heresy 2.0. It covers the shared Aeldari rules (civilizations, detachments and psychic disciplines) and the Anhrathe Corsair fleets. Drukhari units, rules and wargear are in the Drukhari document. Asuryani and Rillietann units will follow.
+This is Liber Aelphari, the Aeldari section of Liber Xenos, for The Horus Heresy 2.0. It covers the shared Aeldari rules (civilizations, detachments and psychic disciplines) and the Anhrathe Corsair fleets. Drukhari units, rules and wargear are in the Drukhari document. The Asuryani (Craftworld) and Saedath (proto-Harlequin, Rillietann) army lists come from *Liber Antiquia: The Ancient Eldar* v1.6 (Liber Panoptica Development Team, 8 January 2024, CC BY-NC-ND 4.0). Where both books give the same weapon or psychic discipline, this catalogue uses the Liber Aelphari version.
 
 *The Aeldari were once the greatest civilization in the galaxy, an empire so ancient and technologically advanced that even at the height of the Imperium's power mankind could scarcely comprehend the scale of what had been lost. For millions of years the Aeldari dominated vast regions of the stars through mastery of psychic power, impossible technology and the labyrinthine passages of the Webway. Their fleets moved freely between worlds while their warriors fought wars with elegance and precision unmatched by younger races. Disease, scarcity and mortality itself became little more than distant memories beneath the endless prosperity of the old Aeldari empire.*
 
@@ -58,7 +58,7 @@ Units with the Rillietann keyword belong to the wandering Masques of the Harlequ
 
 ## Anhrathe Fleets
 
-**Anhrathe Fleet (X).** When building an Anhrathe army, choose whether it is a Pirate Fleet or a Raider fleet. The choice gives its Civilization Trait, Advanced Reaction and Warlord Trait to units with the Aeldari (Anhrathe) special rule.
+**Anhrathe Fleet (X).** An Anhrathe army may choose whether it is a Pirate Fleet or a Raider fleet; other Aeldari armies take neither. The choice gives its Civilization Trait, Advanced Reaction and Warlord Trait to units with the Aeldari (Anhrathe) special rule.
 
 ### Anhrathe Pirate Fleets
 
@@ -84,7 +84,28 @@ Units with the Rillietann keyword belong to the wandering Masques of the Harlequ
 
 ## Warlord Traits
 
-An Anhrathe Warlord takes the Warlord Trait of its fleet: Pirate King or Prince of a Thousand Raids.
+An Anhrathe Warlord takes the Warlord Trait of its fleet: Pirate King or Prince of a Thousand Raids. A Warlord with the Asuryani Sub-type may choose one of the traits below instead of a Common Trait from the Core Rulebook.
+
+### Ambush of Blades
+
+*This warrior's uncanny senses pierce the fog of war, letting them strike at the precise moment alongside their kin.*
+
+- Once per battle, at the start of any phase, the Warlord and any unit they have joined gain Preferred Enemy (Everything!) for that phase only.
+- The army may make an additional Reaction during the opposing player's Assault phase while the Warlord has not been removed as a casualty.
+
+### Falcon's Swiftness
+
+*This warrior, and those in their wake, cross broken ruins and blasted battlefields with astonishing certainty.*
+
+- The Warlord and any unit they have joined increase their Fleet (X) value by +1, or gain Fleet (1) if they do not have it. The Warlord also gains Pathfinder.
+- The army may make an additional Reaction during the opposing player's Movement phase while the Warlord has not been removed as a casualty.
+
+### Seer of the Shifting Vector
+
+*Reading the skeins of destiny, this warrior sees the many possible futures of the coming battle and coordinates their forces accordingly.*
+
+- While the Warlord is in Reserves or deployed on the battlefield, the Controlling Player may re-roll failed Reserves rolls.
+- The army may make an additional Reaction during the opposing player's Shooting phase while the Warlord has not been removed as a casualty.
 
 ## Detachments
 
@@ -157,6 +178,471 @@ No other units may be selected as part of this Detachment.
 **Engines of Legend.** Units selected as part of an Aeldari Lords of War Detachment may never be selected as the army's Warlord.
 
 **Lords of War.** An Aeldari Lords of War Detachment may contain up to three Lords of War units in total.
+
+## Asuryani and Saedath Armies
+
+### Building an Asuryani Army
+
+- An army whose Primary Detachment comes from the Asuryani Army List is an Asuryani army.
+- Units from different Sub-factions cannot be mixed in the same Detachment unless a Special Rule allows it.
+- Each other Detachment may come from any other Army List, but each Detachment may only include units from a single Army List unless a Special Rule says otherwise.
+- An Allegiance is set for the whole army once the Primary Detachment's Army List is chosen. Units that must have a different Allegiance may not be included.
+
+### Allegiance
+
+- Aeldari Sub-factions (Asuryani and Saedath) may choose Loyalist, Traitor, or the neutral Xenos Allegiance.
+- An Aeldari army using the Xenos Allegiance may not contain any Detachment that is not an Aeldari Sub-faction.
+- With the Xenos Allegiance, the Primary and Allied Detachments may be different Aeldari Sub-factions. With any other Allegiance this is not permitted.
+- A Primary and an Allied Detachment may never be the same Aeldari Sub-faction.
+- An army whose Primary Detachment is not Aeldari may not select an Aeldari Lord of War choice from any Sub-faction.
+- All Aeldari Sub-factions treat each other as Sworn Brothers at all times unless otherwise specified, even when not in an Allied Detachment.
+- Alliance levels with other factions use the Liber Panoptica Allies Matrix (source pages 8–9).
+
+| Faction | Sub-faction | Allegiance |
+| --- | --- | --- |
+| Aeldari | Asuryani | Any |
+| Aeldari | Saedath | Any |
+
+### Force Organisation
+
+| 2.0 slot | Asuryani units |
+| --- | --- |
+| HQ | Aspect Exarchs, Autarch, Eldrad Ulthran, Farseer, Wraith Guide |
+| Elites | Bonesinger Conclave, Fire Dragons, Guardian Officer Cadre, Howling Banshees, Seer Council, Striking Scorpions, War Walker Squadron, Wraithblades, Wraithguard |
+| Troops | Dire Avengers, Guardian Defenders, Rangers, Storm Guardians, Windriders |
+| Dedicated Transport | Wave Serpent |
+| Fast Attack | Nightshade Interceptor Squadron, Nightwing Interceptor Squadron, Phoenix Bomber Squadron, Shadow Spectres, Shining Spears, Shroud Runners, Swooping Hawks, Vyper Squadron, Warp Spiders |
+| Heavy Support | Dark Reapers, Falcon Squadron, Fire Prism Squadron, Firestorm Squadron, Night Spinner Squadron, Vaul's Wrath Support Battery, Wraithlord Conclave, Wraithseer |
+| Lords of War | Cobra, Lynx, Phantom Titan, Revenant Titan, Scorpion, Skathach Wraithknight, Vampire Hunter, Vampire Raider, Wraithknight |
+| Dramatis Personae | Asurmen, Avatar of Khaine, Baharroth, Drastanta, Fuegan, Irillyth, Jain Zar, Karandras, Maugan Ra |
+| Fortifications | Holo-Field Defence Line, Webway Gate |
+
+The Saedath are the proto-Harlequins: small troupes that join an army as a Saedathii Detachment in place of an Allied Detachment, never as a Primary Detachment. All Saedath models have the Rillietann Sub-type.
+
+### Saedathii Detachments
+
+- To select Saedath models, take a Saedathii Detachment instead of an Allied Detachment. It counts as an Allied Detachment for all Special Rules, Limitations, gameplay interactions, and the Allies Matrix.
+- A Saedath Detachment may not be a Primary Detachment.
+- Only one Allied Detachment may be replaced this way, even if the Force Organisation Chart allows more.
+- In Zone Mortalis, a Saedathii Detachment replaces the Zone Mortalis Engagement Force Organisation Chart, but normal unit restrictions still apply (for example, no Antigrav units). This may rule out some Grand Performances.
+- Instead of a Force Organisation Chart, first choose a Grand Performance. It sets the Detachment's Special Rules, Victory Point objectives, and allowed units.
+- **Pivotal Roles** are Compulsory and must be selected. **Additional Players** may optionally be added. All units' points must be paid.
+
+## Advanced Reaction: Aspects of War
+
+Every Asuryani model has the Asuryani Sub-type, which grants Legacies of the Fall, and Battle Focus for Infantry and Cavalry. The new Unit Types and Sub-types below work under the core rules for Unit Types and Sub-types.
+
+**Aspects of War** (once per battle, any phase). This Advanced Reaction is available only to units in an Asuryani Detachment. It uses a point of the Reaction Allotment as normal and obeys all other Reaction restrictions unless noted. It may be made once per battle, in any phase, when an enemy unit does one of the following: Ends a move within 12" and line of sight of a unit in an Asuryani Detachment. Makes a Shooting Attack targeting a unit in an Asuryani Detachment. Declares a Charge targeting a unit in an Asuryani Detachment. The Reactive Player may immediately choose one of the following: Move: The Reacting unit moves up to its unmodified Initiative in inches in any direction. In a unit with mixed Initiative, use the highest unmodified value. Vehicles may pivot once up to 180° and then move up to 8" directly forwards. Shoot: The Reacting unit makes a Shooting Attack, resolved immediately, against the unit that triggered the Reaction. No indirect attacks (including Barrage or other weapons or rules that ignore line of sight); Vehicles may only fire Defensive weapons. Template weapons may only be used if the target is within 8", and must use Wall of Death. The unit counts as Stationary and may fire weapons of any type as though it had not moved. Disorder: The Reacting unit counts any charges made against it this turn as Disordered.
+
+## Types
+
+
+### Daemon Primarch (type)
+
+- Has Independent Character, Eternal Warrior, Fear (2), It Will Not Die (5+), Bulky (6), and Relentless, and always counts as a Character model.
+- Not affected by Special Rules that negatively modify its Characteristics (other than Wounds), and always resolves Snap Shots at its normal BS.
+- Immune to Fear (X) and cannot be Pinned. A unit including one automatically passes Pinning and Regroup tests and cannot choose to fail a Morale check due to Our Weapons Are Useless.
+- When a unit including one fails a Morale check, it does not Fall Back. Instead it suffers D3 automatic Wounds with no Saves of any kind, allocated to a model with the Daemon Primarch or Daemon Unit Type or the Corrupted Sub-type.
+- Has Precision Strikes (2+) and Precision Shots (2+), and may use them even when it would normally be prevented, including on Snap Shots.
+- If the army includes any Daemon Primarch models, one of them must be the Warlord.
+- Counts as having the Daemon and Primarch Unit Types for any rule that affects those types.
+- A unit made up entirely of Primarch models may ignore Heroic Stand and its penalties for declining a Challenge, unless the Challenge was issued by a Knight, Gargantuan, Titan, Primarch, or Daemon Primarch.
+
+### Phoenix Lord (type)
+
+- Has Independent Character, Eternal Warrior, Fearless, Relentless, Favoured of Khaine, and Path of Command, and always counts as a Character model.
+- Not affected by Special Rules that negatively modify its Characteristics (other than Wounds), and always resolves Snap Shots at its normal BS.
+- Has Precision Strikes (2+) and Precision Shots (2+), and may use them even when it would normally be prevented, including on Snap Shots.
+- If the army includes any Phoenix Lord models, one of them must be the Warlord.
+- A unit made up entirely of Phoenix Lord models may ignore Heroic Stand and its penalties for declining a Challenge, unless the Challenge was issued by a Knight, Gargantuan, Titan, Primarch, or Daemon Primarch.
+- Attacks and effects against a unit with a Phoenix Lord are resolved as if the Phoenix Lord had the Primarch Unit Type. This covers Wargear, Weapons, Special Rules, Psychic Powers, and any other abilities.
+- May join units and embark on Transports as though it had the Infantry Unit Type.
+- A unit containing a Phoenix Lord may take Shrouded Damage Mitigation rolls as though it did not have Fearless, as for the Primarch Unit Type.
+- Counts as having the Primarch Unit Type for any Wargear or Special Rule that Primarchs may ignore.
+- A Phoenix Lord takes up either an HQ slot or a Primarch slot, chosen by the player.
+
+
+### Asuryani (sub-type)
+
+- Has the Legacies of the Fall Special Rule.
+- A model with the Infantry or Cavalry Unit Type and this Sub-type has the Battle Focus Special Rule.
+
+### Grav-Platform (sub-type)
+
+- If a unit with any Grav-Platform models has no models without this Sub-type, all models in the unit are immediately removed as casualties.
+- Cannot shoot as part of any Reaction.
+- May shoot Heavy or Ordnance weapons counting as Stationary, even if it moved in the previous Movement phase.
+
+### Mechanised (sub-type)
+
+- Successful Wounds from Poisoned (X) or Fleshbane attacks must be re-rolled against this model.
+- Failed To Wound rolls with Armourbane (X) weapons against a unit including any Mechanised models must be re-rolled.
+- May attack with all its weapons in a Shooting Attack, including as part of a Reaction.
+- May fire Heavy and Ordnance weapons counting as Stationary even if it moved in the preceding Movement phase, and may Charge as normal regardless of any Shooting Attacks made that turn.
+- Attacks against a unit with this Sub-type are resolved as if the model had the Dreadnought Unit Type. This covers Wargear, Weapons, Special Rules, Psychic Powers, and any other abilities.
+- No model without the Mechanised Sub-type may join a unit containing Mechanised models.
+
+### Wraith (sub-type)
+
+- **Wraithsight:** At the start of each of the Controlling Player's Movement phases, a unit with any Wraith models takes a Leadership test using the unmodified Leadership of a Wraith model in the unit. Units arriving or Disembarking after the start of the phase test immediately after doing so.
+  - Pass: no penalty, and the unit may react as normal, ignoring the Automata Unit Type's limitations, until the start of its next Movement phase.
+  - Fail: –2 to Movement, Weapon Skill, Ballistic Skill, and Initiative (also applied to any rule that uses unmodified Characteristics) until the start of its next Movement phase.
+- May fire all its weapons in each Shooting Attack, including as part of a Reaction where eligible.
+- May fire Heavy and Ordnance weapons counting as Stationary even if it moved in the preceding Movement phase, and may Charge as normal regardless of any Shooting Attacks made that turn.
+- Ignores Night Fighting.
+- Ignores Initiative penalties when Charging into or through Difficult or Dangerous Terrain.
+- Cannot be affected by Cybertheurgic Rites, and ignores any of their effects.
+- Ignores the Disruption and Haywire Special Rules.
+- A Detachment may include up to two Wraith units for each model with the Path of the Dead Special Rule in that Detachment.
+
+### Rillietann (sub-type)
+
+
+- Has the Fear (1), Furious Charge (1), Hit & Run, and Move Through Cover Special Rules.
+- May only be taken in a Saedathii Detachment.
+- A Rillietann model with Independent Character may only join units that also have the Rillietann Sub-type.
+
+## World-Runes
+
+World-Runes are the Asuryani equivalent of Rites of War: each is chosen for a Detachment at army selection and applies its Effects and Limitations to the models and units in that Detachment.
+
+**Gaining access:** Any Detachment with the Aeldari (Asuryani) Faction may use a World-Rune if it meets at least one of these conditions:
+
+- It includes at least one model with both the Asuryani Sub-type and the Path of Command Special Rule (such as an Autarch).
+- It can upgrade at least one model to have Path of Command through a specific World-Rune (Echoes of the Fallen and The Tears of Lileath).
+
+### World-Rune: The Crucible of Blood
+
+*Craftworlds with more craftspeople than warriors turned their bonesingers to forging the finest Engines of Vaul, upscaling their dwindling might with grav-tanks and walkers.*
+
+**Effects**
+
+- Units eligible to take a Wave Serpent as a Dedicated Transport may instead take a single Falcon as a Dedicated Transport if the unit numbers 5 models or less.
+- Falcon Squadrons may be selected as non-Compulsory Troops choices.
+- Firestorm Squadrons and Night Spinner Squadrons may be selected as Elites choices.
+- Models with the Bonesinger Companions Special Rule may ignore its joining restrictions, and may instead join any unit with the Infantry Unit Type and the Asuryani Sub-type.
+- The Detachment may ignore the 0-1 limit on Bonesinger Conclaves, and may take them as non-Compulsory Troops choices.
+- If the army's Warlord does not have the Unique Sub-type, it gains the Path of the Shaper Special Rule.
+
+**Limitations**
+
+- All Infantry units in the Detachment must begin the battle Embarked on a model with the Transport Sub-type. Any Infantry models (on the battlefield or in Reserves) not Embarked on a Transport at the beginning of the first Game Turn are removed as casualties.
+- At least one Bonesinger Conclave must be selected.
+- An Allied Detachment may not use this World-Rune.
+- The Detachment may not select any units with the Wraith Sub-type.
+
+### World-Rune: Echoes of the Fallen
+
+*Reviled as necromantic perversion, the Wraith-constructs championed by the Wraith Guides were nonetheless undeniably effective, sparing Aeldari blood.*
+
+**Effects**
+
+- A single Wraith Guide, Wraithseer, or single-model Wraithlord Conclave may be taken as a Compulsory HQ choice. It gains the Path of Command Special Rule and the Character Sub-type (if it lacks it), and must be the Warlord. If not already equipped with Guide Stones, it may take them for +15 points. A Wraithseer taken this way does not count towards its usual 0-1 limit.
+- Wraithblades and Wraithguard may be taken as Troops.
+- Wraithblades and Wraithguard taken as Compulsory Troops gain the Line Sub-type.
+- Wraithblades and Wraithguard do not count towards the number of Wraith units allowed by the Wraith Guide Special Rule.
+
+**Limitations**
+
+- The Detachment must include a Wraith Guide.
+- The Detachment must include at least as many Wraith units as non-Wraith units. Guardian Officer Cadres, Guardian Defenders, and Storm Guardians are not counted.
+- An Allied Detachment may not use this World-Rune.
+- The Detachment may only select a single Fast Attack choice.
+- An army containing this Detachment may never roll to Seize the Initiative.
+- The Detachment counts as Distrusted Allies to all other Aeldari Sub-factions.
+
+### World-Rune: The Hunter's Moon
+
+*Outcasts who still held ties to their Craftworld returned as Rangers and Pathfinders, using the battlefield itself to hide and outmanoeuvre their clumsy foe.*
+
+**Effects**
+
+- Any Independent Character may take an Outcast Cloak for +10 points. If it does, it may also gain the Skirmish Sub-type and the Scout Special Rule at no extra cost.
+- Any model with the Character Sub-type may take a Ranger long rifle for +10 points.
+- One model in each Infantry unit, that does not have the Character Sub-type, may take a Gloom-Field for +15 points.
+- All Infantry models gain the Move Through Cover Special Rule.
+- Shroud Runners gain the Line Sub-type.
+- Rangers gain the Pathfinder Special Rule and lose the Support Squad Special Rule.
+
+**Limitations**
+
+- All Vehicle models must begin play in Reserves.
+- The Detachment cannot include more Heavy Support choices than Fast Attack choices.
+- All Compulsory Troops choices must be Rangers.
+
+### World-Rune: The Serpent Host
+
+*On Craftworlds with strong Windrider clan ancestry, great lance-banners of anti-grav cavalry mustered in times of war.*
+
+**Effects**
+
+- Windrider Squads do not have the Support Squad Special Rule.
+- Windrider Squads taken as Compulsory Troops gain the Line Sub-type.
+- Vyper Squadrons may be taken as non-Compulsory Troops.
+- Shining Spears may be taken as Elites choices.
+- A single unit made up entirely of models with Aspect Shrine (Shining Spear) may be selected without restriction, whichever Aspect Shrine upgrades the army has. It still uses a Force Organisation slot as normal.
+
+**Limitations**
+
+- The Detachment must select more units equipped with Skyrunner Jetbikes, Vyper Jetbikes, or Raptor Jetbikes than units without.
+- Compulsory HQ choices must be made up entirely of models with Skyrunner Jetbikes.
+- Any unit made up entirely of non-Cavalry models that does not begin play Embarked on a Transport, and any Vehicle without the Transport or Fast Sub-type, must begin play in Reserve if the mission allows. If it does not, the unit deploys as normal.
+- The Detachment may not select any Fortification choices.
+
+### World-Rune: The Shattered Chains
+
+*Craftworlds caught in the pull of the Eye of Terror's birth were treated with suspicion by their kin, but their survivors harnessed an inner steel.*
+
+**Effects**
+
+- Independent Characters not selected as a Primarch choice may select a Guardian Officer Cadre as part of the same Force Organisation slot. It is a Retinue Squad: minimum 2 models, uses no slot, counts as part of the Independent Character's unit, and must deploy with it; the Independent Character may not voluntarily leave it. Its models lose the Guardian Officers Special Rule and the Character Sub-type, and gain the Chosen Warriors Special Rule. If the Independent Character has a Skyrunner Jetbike, the Retinue Squad must all have Skyrunner Jetbikes; if not, none of them may.
+- The Detachment may ignore the 0-1 limit on Guardian Officer Cadres, and may take them as HQ choices. Cadres taken as HQ lose the Guardian Officers Special Rule and the Character Sub-type, and gain the Chosen Warriors Special Rule.
+- Guardian Defenders may be selected as Elites choices. When taken this way, all Guardian Defender and Defender Platform models in the unit have BS 5.
+- Storm Guardians may be selected as Elites choices. When taken this way, all Storm Guardian and Defender Platform models in the unit have WS 5.
+- All models without Aspect Shrine (X) or the Wraith Sub-type gain Stubborn. Models without a Leadership Characteristic instead ignore Crew Shaken results on the Vehicle Damage table.
+
+**Limitations**
+
+- The Detachment counts as Distrusted Allies to all other Aeldari Sub-factions.
+- All Compulsory Troops choices must be Guardian Defenders or Storm Guardians.
+- All Compulsory Troops choices must take the maximum number of models possible (not including Defender Platforms).
+
+### World-Rune: The Sword-Wind
+
+*On the earliest Craftworlds to flee the Fall, the Aspect Shrines rose rapidly to prominence and the Asuryani way of war adapted around them.*
+
+**Effects**
+
+- The Detachment may include up to two Aspect Exarch units instead of one.
+- An Autarch may select a second, different Aspect Shrine upgrade, paying its points cost and gaining all its Unit Types, Sub-types, Special Rules, and Wargear.
+
+**Limitations**
+
+- The Detachment must include an Autarch, who must be the Warlord, unless a Phoenix Lord is present, in which case the Phoenix Lord must be the Warlord.
+- An Allied Detachment may not use this World-Rune.
+- The Detachment may not include more non-Infantry units than Infantry units. Aspect Exarchs, Bonesinger Conclaves, Guardian Officer Cadres, Guardian Defenders, and Storm Guardians are not counted.
+
+### World-Rune: The Tears of Lileath
+
+*Craftworlds rich in powerful Psykers gained foresight bordering on prescience, but risked drawing the attention of the daemons that haunt them.*
+
+**Effects**
+
+- A single Farseer gains the Path of Command Special Rule.
+- The Detachment may ignore the 0-1 limit on Seer Council units.
+- All non-Vehicle models gain Adamantium Will (6+). Models with the Psyker Sub-type gain Adamantium Will (3+) instead.
+- Guardian Defenders, Storm Guardians, and Vaul's Wrath Support Batteries may add a single Warlock for +35 points (see Seer Council). A Warlock added this way may not be upgraded to a Warlock Skyrunner.
+- Windrider Squads may add a single Warlock Skyrunner for +50 points (see Seer Council).
+- If the Primary Detachment uses this World-Rune, the player may re-roll the roll for first turn or to Seize the Initiative.
+
+**Limitations**
+
+- The Warlord must be a Farseer or Eldrad Ulthran.
+- An Allied Detachment may not use this World-Rune.
+- The Detachment must include at least one Seer Council selected as an Elites choice.
+- The Detachment cannot include more Psyker units than non-Psyker units.
+- Any unit that suffers Perils of the Warp from a Psychic check is immediately Pinned. This overrides Unit Types that would normally ignore Pinning (such as Cavalry, or a type granting Fearless), but cannot affect units without a Leadership Characteristic.
+
+## Aspect Shrines
+
+An Exarch or Autarch must select one Aspect Shrine upgrade, at the cost listed on its own profile, and gains all of that Path's Special Rules, Wargear, Unit Types, Sub-types, and Characteristic changes.
+
+- Each Exarch or Autarch may only select a single upgrade unless another source allows more. If a model gains an additional upgrade and has no Aspect Shrine (X) version to replace, add the new Aspect Shrine (X) rule to its profile.
+- Each upgrade lists how many Exarchs in a Detachment may select it (usually one). An Autarch may select any upgrade and does not count towards the Exarch limit.
+
+### Aspect Shrine: Dark Reaper
+
+May be selected by a single Exarch in a Detachment.
+
+- **Unit Sub-type:** gains Heavy.
+- **Special Rules:** Aspect Shrine (Dark Reaper), Fast Shot, Inescapable Accuracy, Relentless.
+- **Wargear:** exchanges Aspect Armour for Heavy Aspect Armour (if not already equipped) and gains a Reaper Launcher (with Starswarm, Starshot, and Starhawk Missiles) at no cost.
+
+| Option | Cost |
+| --- | --- |
+| May replace its Reaper Launcher with one of the following: |  |
+| – Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | +10 points |
+| – Shuriken Cannon | Free |
+| – Tempest Launcher | +20 points |
+
+### Aspect Shrine: Dire Avenger
+
+May be selected by up to three Exarchs in a Detachment.
+
+- **Special Rules:** Aspect Shrine (Dire Avenger), Feel No Pain (5+), Flexible Tactics.
+- **Wargear:** gains an Augury Scanner, Shuriken Pistol, and Twin-linked Avenger Catapult at no cost.
+
+| Option | Cost |
+| --- | --- |
+| May replace its Twin-linked Avenger Catapult with one of the following: |  |
+| – Diresword | +25 points |
+| – Power Weapon | +10 points |
+| Or may replace its Twin-linked Avenger Catapult and Shuriken Pistol with one of the following: |  |
+| – Diresword and Improved Forceshield | +35 points |
+| – Power Weapon and Improved Forceshield | +20 points |
+
+### Aspect Shrine: Fire Dragon
+
+May be selected by up to two Exarchs in a Detachment.
+
+- **Special Rules:** Aspect Shrine (Fire Dragon), Crack Shot, Wrecker.
+- **Wargear:** exchanges Aspect Armour for Heavy Aspect Armour (if not already equipped) and gains Melta Bombs and a Fusion Gun at no cost.
+
+| Option | Cost |
+| --- | --- |
+| May exchange its Fusion Gun for one of the following: |  |
+| – Firepike | +15 points |
+| – Khaine's Fury | Free |
+
+### Aspect Shrine: Howling Banshee
+
+May be selected by up to two Exarchs in a Detachment.
+
+- **Special Rules:** Acrobatic, Aspect Shrine (Howling Banshee), Fear (1), Fleet (2), War Shout.
+- **Wargear:** gains a Banshee Mask, Power Sword, and Shuriken Pistol at no cost.
+
+| Option | Cost |
+| --- | --- |
+| May exchange its Power Sword for one of the following: |  |
+| – Executioner | +10 points |
+| – Triskele | Free |
+| – Two Mirrorswords | +20 points |
+
+### Aspect Shrine: Shadow Spectre
+
+May be selected by a single Exarch in a Detachment.
+
+- **Special Rules:** Aspect Shrine (Shadow Spectre), Fear (1), Relentless, Shadow of Death, Shrouded (4+).
+- **Wargear:** exchanges Aspect Armour for Heavy Aspect Armour (if not already equipped) and gains Haywire Grenades, a Prism Rifle, and a Spectre Jet Pack at no cost.
+
+| Option | Cost |
+| --- | --- |
+| May exchange its Prism Rifle for one of the following: |  |
+| – Haywire Launcher | +5 points |
+| – Prism Blaster | +10 points |
+
+### Aspect Shrine: Shining Spear
+
+May be selected by a single Exarch in a Detachment.
+
+- **Characteristics:** +1 Wounds.
+- **Special Rules:** Aspect Shrine (Shining Spear), Firing Protocols (3), Monster Hunter, Outflank, Pathfinder, Relentless, Shrouded (4+).
+- **Wargear:** exchanges Aspect Armour for Heavy Aspect Armour (if not already equipped) and gains a Laser Lance, Shuriken Pistol, and Skyrunner Jetbike at no cost.
+
+| Option | Cost |
+| --- | --- |
+| May replace its Laser Lance with one of the following: |  |
+| – Power Weapon | Free |
+| – Star Lance | +15 points |
+
+### Aspect Shrine: Striking Scorpion
+
+May be selected by a single Exarch in a Detachment.
+
+- **Special Rules:** Aspect Shrine (Striking Scorpion), Brutal Ambush, Fleet (2), Infiltrate, Move Through Cover, Stalker.
+- **Wargear:** exchanges Aspect Armour for Heavy Aspect Armour (if not already equipped) and gains a Mandiblaster, Scorpion Chainsword, and Shuriken Pistol at no cost.
+
+| Option | Cost |
+| --- | --- |
+| May replace its Shuriken Pistol with one of the following: |  |
+| – Biting Blade | +10 points |
+| – Scorpion's Claw | +20 points |
+| Or may replace its Scorpion Chainsword and Shuriken Pistol with: |  |
+| – Two Chainsabres | +10 points |
+
+### Aspect Shrine: Swooping Hawk
+
+May be selected by a single Exarch in a Detachment.
+
+- **Special Rules:** Aspect Shrine (Swooping Hawk), Herald of Victory, Skyleap, Skystrike.
+- **Wargear:** gains a Grenade Pack, Hawk Lasblaster, Haywire Grenades, and Swooping Hawk Wings at no cost.
+
+| Option | Cost |
+| --- | --- |
+| May exchange its Hawk Lasblaster for one of the following: |  |
+| – Hawk's Talon | +10 points |
+| – Sunrifle | +15 points |
+
+### Aspect Shrine: Warp Spider
+
+May be selected by a single Exarch in a Detachment.
+
+- **Special Rules:** Aspect Shrine (Warp Spider), Firing Protocols (2), Flickerjump, Hit & Run, Iron Resolve.
+- **Wargear:** exchanges Aspect Armour for Heavy Aspect Armour (if not already equipped) and gains a Death Spinner and Warp Jump Generator at no cost.
+
+| Option | Cost |
+| --- | --- |
+| May exchange its Death Spinner for one of the following: |  |
+| – Spinneret Rifle | +15 points |
+| – Two Death Spinners | +5 points |
+| May also take: |  |
+| – Two Power Swords | +15 points |
+
+## Grand Performances
+
+Each Grand Performance gives every unit in the Saedathii Detachment its scoring rule and its Amateur Performance rule. Victory Points from these are in addition to any from other sources.
+
+### Grand Performance: Cegorach's Jest
+
+*Voidweavers and Skyweavers burst toward their prize, evoking Cegorach's attempt to steal an antler of Kurnous.*
+
+**Pivotal Roles:** 1 Troupe Master, 1 Skyweaver Jetbikes, 1 Voidweaver.
+
+**Additional Players:** +3 Harlequin Troupes, +1 Death Jester, +1 Shadowseer, +2 Skyweaver Jetbikes, +2 Voidweavers.
+
+**The Last Laugh:** At the end of the game, the Controlling Player gains +D3 Victory Points if they have three or more units of Starweavers, Voidweavers, or Skyweaver Jetbikes (in any combination) in the opposing player's Deployment Zone.
+
+**Amateur Performance:** If, at the end of the game, there are no Starweaver, Voidweaver, or Skyweaver Jetbike units in the opposing player's Deployment Zone, the opposing player gains +D3 Victory Points.
+
+### Grand Performance: Cegorach's Lament
+
+*The Harlequins embodied the tragedy of the Fall through lightning-fast, bloody revenge on She Who Thirsts.*
+
+Cannot be selected in the same army as a Detachment with the Traitor Allegiance.
+
+**Pivotal Roles:** 1 Troupe Master, 1 Harlequin Troupe, 1 Arebennian.
+
+**Additional Players:** +2 Harlequin Troupes, +2 Death Jesters, +1 Shadowseer, +1 Skyweaver Jetbikes, +2 Voidweavers.
+
+**The Curtain Falls:** At the end of the game, if Rillietann-only units have destroyed three or more units with the Daemon or Daemon Primarch Unit Type or the Corrupted Sub-type, the Controlling Player gains +D3+1 Victory Points. If the Arebennian slays the enemy Warlord during the game, the Controlling Player gains +2 Victory Points. If the enemy Warlord is removed by any other means, no extra Victory Points are gained, but the Amateur Performance penalty does not apply.
+
+**Amateur Performance:** If, at the end of the game, no Victory Points were scored from The Curtain Falls, the opposing player gains +D3 Victory Points.
+
+### Grand Performance: Faolchu's Blade
+
+*Starweavers and Voidweavers descended relentlessly, embodying the Great Hawk's consort bearing Anaris to Eldanesh.*
+
+**Pivotal Roles:** 1 Troupe Master, 1 Harlequin Troupe, 1 Skyweaver Jetbikes.
+
+**Additional Players:** +2 Harlequin Troupes, +2 Shadowseers, +2 Skyweaver Jetbikes, +2 Voidweavers.
+
+**The Falcon's Wing:** All Infantry models with this rule must begin the game embarked on a Transport. Before the game, count the units with Independent Character in the Controlling Player's Primary Detachment. At the end of the game, if at least half of them (rounding up) are still in play, and at least one friendly unit with The Falcon's Wing is still in play, the Controlling Player gains +D3+1 Victory Points.
+
+**Amateur Performance:** If, at the end of the game, no Victory Points were scored from The Falcon's Wing, the opposing player gains +D3 Victory Points.
+
+### Grand Performance: The Heroes Path
+
+*Warriors embodying Ulthanash and Eldanesh burst from the shadows, though terrible pride gnawed at the hearts of the daring.*
+
+**Pivotal Roles:** 2 Troupe Masters, 2 Harlequin Troupes, 1 Shadowseer.
+
+**Additional Players:** +2 Harlequin Troupes, +1 Death Jester, +1 Shadowseer.
+
+**The Sin of Pride:** All Character models with this rule must issue or accept any Challenge whenever possible. At the end of the game, if these models have destroyed three or more models in Challenges, the Controlling Player gains +D3 Victory Points.
+
+**Amateur Performance:** If, at the end of the game, no models have been destroyed in Challenges by Character models with The Sin of Pride, the opposing player gains +D3 Victory Points.
+
+### Grand Performance: The Trials of Khaine
+
+*Embodying the war god's ordeals against the Yngir, the Harlequins became death and slaughter given form.*
+
+**Pivotal Roles:** 1 Troupe Master, 2 Harlequin Troupes.
+
+**Additional Players:** +2 Harlequin Troupes, +1 Death Jester, +1 Shadowseer, +1 Skyweaver Jetbikes, +1 Voidweaver.
+
+**The Bloodied Blade:** At the end of the game, if Rillietann-only units have destroyed three or more units in the Assault phase, the Controlling Player gains +D3 Victory Points.
+
+**Amateur Performance:** If, at the end of the game, no units have been destroyed in the Assault phase by Rillietann-only units, the opposing player gains +D3 Victory Points.
 
 ## HQ
 
@@ -373,6 +859,621 @@ No other units may be selected as part of this Detachment.
 | – Corsair jet pack | +15 points |
 | – Skyrunner jetbike | +30 points |
 
+### 0-1 Aspect Exarchs — 20 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Exarch | 7 | 5 | 5 | 3 | 3 | 2 | 6 | 3 | 9 | 4+ | 32mm (60mm Flying with Skyrunner Jetbike) |
+
+**Unit Composition**
+
+- 1 Exarch
+
+**Wargear**
+
+- Aspect Armour
+- Plasma Grenades
+
+**Unit Type**
+
+- Infantry (Asuryani, Character)
+
+**Special Rules**
+
+- Aspect Ascendant
+- Aspect Shrine (X)
+- Fleet (1)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| An Aspect Exarchs unit may include: |  |
+| – Up to 3 additional Exarchs | +20 points per model |
+| Each Exarch must select a single Aspect Shrine upgrade (see Aspect Shrines): |  |
+| – Aspect Shrine: Dark Reaper | +30 points |
+| – Aspect Shrine: Dire Avenger | +15 points |
+| – Aspect Shrine: Fire Dragon | +15 points |
+| – Aspect Shrine: Howling Banshee | +15 points |
+| – Aspect Shrine: Shadow Spectre | +25 points |
+| – Aspect Shrine: Shining Spear | +25 points |
+| – Aspect Shrine: Striking Scorpion | +25 points |
+| – Aspect Shrine: Swooping Hawk | +20 points |
+| – Aspect Shrine: Warp Spider | +20 points |
+
+### 0-1 Autarch — 80 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Autarch | 7 | 6 | 6 | 3 | 3 | 3 | 6 | 4 | 10 | 3+ | 32mm (60mm Flying with Skyrunner Jetbike) |
+
+**Unit Composition**
+
+- 1 Autarch
+
+**Wargear**
+
+- Close Combat Weapon
+- Heavy Aspect Armour
+- Improved Forceshield
+- Plasma Grenades
+
+**Unit Type**
+
+- Infantry (Asuryani, Independent Character)
+
+**Special Rules**
+
+- Aspect Shrine (X)
+- Battle-Hardened (1)
+- Fleet (1)
+- Path of Command
+- Stubborn
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| An Autarch may select up to two of the following, in any combination: |  |
+| – Chainsword | +2 points |
+| – Charnabal Weapon | +10 points |
+| – Fusion Pistol | +15 points |
+| – Power Weapon | +10 points |
+| – Shuriken Catapult | +5 points |
+| – Shuriken Pistol | +2 points |
+| – Star Glaive | +20 points |
+| An Autarch must select a single Aspect Shrine upgrade (see Aspect Shrines): |  |
+| – Aspect Shrine: Dark Reaper | +30 points |
+| – Aspect Shrine: Dire Avenger | +15 points |
+| – Aspect Shrine: Fire Dragon | +15 points |
+| – Aspect Shrine: Howling Banshee | +15 points |
+| – Aspect Shrine: Shadow Spectre | +25 points |
+| – Aspect Shrine: Shining Spear | +25 points |
+| – Aspect Shrine: Striking Scorpion | +25 points |
+| – Aspect Shrine: Swooping Hawk | +20 points |
+| – Aspect Shrine: Warp Spider | +20 points |
+
+### Eldrad Ulthran — 240 pts
+
+*High Farseer of Craftworld Ulthwé*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Eldrad Ulthran | 7 | 5 | 5 | 3 | 3 | 3 | 5 | 3 | 10 | – | 32mm |
+
+**Unit Composition**
+
+- 1 Eldrad Ulthran
+
+**Wargear**
+
+- Armour of the Last Runes
+- Plasma Grenades
+- Shuriken Pistol
+- Staff of Ulthamar
+- Witchblade
+
+**Unit Type**
+
+- Infantry (Asuryani, Independent Character, Psyker, Unique)
+
+**Special Rules**
+
+- Adamantium Will (2+)
+- Battle-Hardened (1)
+- Fleet (1)
+- Path of Command
+- Path of the Farseer
+- Psychic Discipline (Runes of Fate)
+- Psychic Mastery (3)
+- Runes of Warding
+- Runes of Witnessing
+- Stubborn
+- Warlord: Fate Reader
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| Its witchblade may be exchanged for: |  |
+| – Witch staff | Free |
+
+### Farseer — 150 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Farseer | 7 | 5 | 5 | 3 | 3 | 3 | 5 | 2 | 10 | – | 32mm |
+| Farseer Skyrunner | 18 | 5 | 5 | 3 | 3 | 4 | 5 | 2 | 10 | – | 40mm Flying |
+
+**Unit Composition**
+
+- 1 Farseer
+
+**Wargear**
+
+- Farseer: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
+- Farseer Skyrunner: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade, Skyrunner Jetbike
+- A Farseer may be upgraded to a:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
+- A Farseer may exchange its Witch Weapon for:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
+
+**Unit Type**
+
+- Farseer: Infantry (Asuryani, Independent Character, Psyker)
+- Farseer Skyrunner: Cavalry (Antigrav, Asuryani, Independent Character, Psyker)
+
+**Special Rules**
+
+- Adamantium Will (3+)
+- Fleet (1)
+- Path of the Farseer
+- Psychic Discipline (Runes of Fate)
+- Psychic Mastery (2)
+- Runes of Warding
+- Runes of Witnessing
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Farseer may be upgraded to a: |  |
+| – Farseer Skyrunner | +25 points |
+| A Farseer may exchange its witchblade for: |  |
+| – Witch staff | Free |
+| – Singing Spear | +5 points |
+
+### Wraith Guide — 80 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Wraith Guide | 7 | 5 | 5 | 3 | 3 | 2 | 5 | 2 | 9 | – | 32mm |
+
+**Unit Composition**
+
+- 1 Wraith Guide
+
+**Wargear**
+
+- Guide Stones
+- Plasma Grenades
+- Rune Armour
+- Shuriken Pistol
+- Witchblade
+
+**Unit Type**
+
+- Infantry (Asuryani, Independent Character, Psyker)
+
+**Special Rules**
+
+- Fleet (1)
+- Path of the Dead
+- Psychic Discipline (Runes of Twilight)
+- Psychic Mastery (2)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| Its witchblade may be exchanged for: |  |
+| – Witch staff | Free |
+
+### Asurmen — 325 pts
+
+*The Hand of Asuryan, Dire Avenger*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Asurmen | 8 | 7 | 7 | 4 | 4 | 4 | 7 | 5 | 10 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 1 Asurmen
+
+**Wargear**
+
+- Phoenix Armour
+- Plasma Grenades
+- The Bloody Twins
+- The Sword of Asur
+
+**Unit Type**
+
+- Phoenix Lord (Asuryani, Unique)
+
+**Special Rules**
+
+- Aspect Shrine (Dire Avenger)
+- Counter-Attack (1)
+- Crusader
+- Fleet (1)
+- Flexible Tactics
+- Furious Charge (1)
+- Shield of Grace
+- Warlord: Hand of Asuryan
+
+### Baharroth — 325 pts
+
+*The Cry of the Wind, Swooping Hawk*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Baharroth | 8 | 7 | 7 | 4 | 4 | 4 | 8 | 5 | 10 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 1 Baharroth
+
+**Wargear**
+
+- Fury of the Tempest
+- Grenade Pack
+- Haywire Grenades
+- Phoenix Armour
+- Plasma Grenades
+- Swooping Hawk Wings
+- The Shining Blade
+
+**Unit Type**
+
+- Phoenix Lord (Asuryani, Unique)
+
+**Special Rules**
+
+- Aspect Shrine (Swooping Hawk)
+- Fleet (2)
+- Herald of Victory
+- Skyleap
+- Skystrike
+- Sun's Brilliance
+- Warlord: Cry of the Wind
+
+### Drastanta — 350 pts
+
+*The Tempest of Starlight, Shining Spear*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Drastanta | 18 | 7 | 7 | 4 | 4 | 5 | 7 | 5 | 10 | 2+ | 60mm Flying |
+
+**Unit Composition**
+
+- 1 Drastanta
+
+**Wargear**
+
+- Khaine's Destrier
+- Phoenix Armour
+- Plasma Grenades
+- The Celestial Lance
+- The Crown of the Seventh Sky
+
+**Unit Type**
+
+- Phoenix Lord (Asuryani, Unique)
+
+**Special Rules**
+
+- Aspect Shrine (Shining Spear)
+- Fleet (2)
+- Hit & Run
+- Monster Hunter
+- Outflank
+- Pathfinder
+- Relentless
+- Warlord: The Lancer's Charge
+
+### Fuegan — 350 pts
+
+*The Burning Lance, Fire Dragon*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fuegan | 8 | 7 | 7 | 5 | 4 | 4 | 7 | 5 | 10 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 1 Fuegan
+
+**Wargear**
+
+- Melta Bombs
+- Phoenix Armour
+- Plasma Grenades
+- Searsong
+- The Fire Axe
+
+**Unit Type**
+
+- Phoenix Lord (Asuryani, Unique)
+
+**Special Rules**
+
+- Aspect Shrine (Fire Dragon)
+- Crack Shot
+- Dragon of Myth
+- Fleet (1)
+- Split Fire
+- Unquenchable Resolve
+- Warlord: Rhana Dandra
+- Wrecker
+
+### Irillyth — 325 pts
+
+*The Shade of Twilight, Shadow Spectre*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Irillyth | 7 | 7 | 7 | 4 | 4 | 4 | 7 | 4 | 10 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 1 Irillyth
+
+**Wargear**
+
+- Haywire Grenades
+- Phoenix Armour
+- Plasma Grenades
+- Spear of Starlight
+- Spectre Jet Pack
+
+**Unit Type**
+
+- Phoenix Lord (Asuryani, Unique)
+
+**Special Rules**
+
+- Aspect Shrine (Shadow Spectre)
+- Dawn of Twilight
+- Fear (2)
+- Fleet (2)
+- Shadow of Death
+- Shrouded (4+)
+- Warlord: Reaper of Souls
+
+### Jain Zar — 350 pts
+
+*The Storm of Silence, Howling Banshee*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Jain Zar | 8 | 7 | 7 | 4 | 4 | 4 | 7 | 5 | 10 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 1 Jain Zar
+
+**Wargear**
+
+- Jainas Mor
+- Phoenix Armour
+- Plasma Grenades
+- Terror's Lament
+- Zhai Morenn, Blade of Destruction
+
+**Unit Type**
+
+- Phoenix Lord (Asuryani, Unique)
+
+**Special Rules**
+
+- Acrobatic
+- Aspect Shrine (Howling Banshee)
+- Disarming Strike
+- Fear (2)
+- Fleet (3)
+- War Shout
+- Warlord: Storm of Silence
+
+### Karandras — 350 pts
+
+*The Shadow Hunter, Striking Scorpion*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Karandras | 8 | 8 | 7 | 4 | 4 | 4 | 7 | 5 | 10 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 1 Karandras
+
+**Wargear**
+
+- Arhra's Bane
+- Isirmathil & Shadowsting
+- Phoenix Armour
+- Plasma Grenades
+- Scorpion's Bite
+
+**Unit Type**
+
+- Phoenix Lord (Asuryani, Unique)
+
+**Special Rules**
+
+- Aspect Shrine (Striking Scorpion)
+- Brutal Ambush
+- Counter-Attack (1)
+- Crusader
+- Fleet (2)
+- Infiltrate
+- Move Through Cover
+- Rage (2)
+- Stalker
+- Warlord: The Duellist's Fury
+
+### Maugan Ra — 325 pts
+
+*The Harvester of Souls, Dark Reaper*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Maugan Ra | 8 | 7 | 7 | 4 | 4 | 4 | 7 | 5 | 10 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 1 Maugan Ra
+
+**Wargear**
+
+- Phoenix Armour
+- Plasma Grenades
+- The Maugetar
+
+**Unit Type**
+
+- Phoenix Lord (Asuryani, Unique)
+
+**Special Rules**
+
+- Aspect Shrine (Dark Reaper)
+- Fleet (1)
+- Inescapable Accuracy
+- Night Vision
+- Preferred Enemy (Daemons)
+- Warlord: The Reaper's Gaze
+- Whirlwind of Death
+
+### Arebennian — 200 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Arebennian | 8 | 6 | 6 | 3 | 3 | 3 | 7 | 4 | 10 | – | 28.5mm |
+
+**Unit Composition**
+
+- 1 Arebennian
+
+**Wargear**
+
+- Flip Belt
+- Harlequin's Caress
+- Harlequin's Kiss
+- Haywire Grenades
+- Holo-Suit
+- Plasma Grenades
+- The Thirsting Mask
+
+**Unit Type**
+
+- Infantry (Independent Character, Rillietann, Skirmish)
+
+**Special Rules**
+
+- Counter-Attack (1)
+- Fear (2)
+- Fleet (2)
+- Infiltrate
+- Pathfinder
+- Precision Strikes (5+)
+- Shrouded (4+)
+- Soul Forfeit
+- Stubborn
+
+### Shadowseer — 125 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Shadowseer | 8 | 5 | 5 | 3 | 3 | 2 | 6 | 3 | 10 | – | 28.5mm |
+
+**Unit Composition**
+
+- 1 Shadowseer
+
+**Wargear**
+
+- Flip Belt
+- Hallucinogen Grenade Launcher
+- Holo-Suit
+- Miststave
+- Shuriken Pistol
+
+**Unit Type**
+
+- Infantry (Independent Character, Psyker, Rillietann, Skirmish)
+
+**Special Rules**
+
+- Agent of Pandemonium
+- Psychic Discipline (Phantasmancy)
+- Fleet (2)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Shadowseer may exchange its Shuriken Pistol for a: |  |
+| – Neuro Disruptor | +10 points |
+| A Shadowseer may take: |  |
+| – Haywire Grenades | +10 points |
+
+### Troupe Master — 175 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Troupe Master | 8 | 6 | 6 | 3 | 3 | 3 | 7 | 4 | 10 | – | 32mm |
+
+**Unit Composition**
+
+- 1 Troupe Master
+
+**Wargear**
+
+- Flip Belt
+- Holo-Suit
+- Plasma Grenades
+- Power Sword
+- Shuriken Pistol
+- The Mask of Many Faces
+
+**Unit Type**
+
+- Infantry (Independent Character, Rillietann, Skirmish)
+
+**Special Rules**
+
+- Crusader
+- Fleet (2)
+- Precision Shots (6+)
+- Precision Strikes (6+)
+- Stubborn
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| May exchange its Shuriken Pistol for one of the following: |  |
+| – Fusion Pistol | +15 points |
+| – Neuro Disruptor | +10 points |
+| May exchange its Power Sword for one of the following: |  |
+| – Harlequin's Caress | +10 points |
+| – Harlequin's Edge | +20 points |
+| – Harlequin's Embrace | +5 points |
+| – Harlequin's Kiss | +5 points |
+| May take any of the following: |  |
+| – Haywire Grenades | +10 points |
+| – One Vortex Grenade | +25 points |
+
 ## Elites
 
 ### Corsair Bladesworn — 95 pts
@@ -563,6 +1664,449 @@ No other units may be selected as part of this Detachment.
 | – Channeller stones | +10 points |
 | – Corsair banner | +15 points |
 
+### 0-1 Bonesinger Conclave — 45 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Bonesinger | 7 | 4 | 4 | 3 | 3 | 1 | 5 | 1 | 8 | – | 32mm |
+
+**Unit Composition**
+
+- 1 Bonesinger
+
+**Wargear**
+
+- Psytronome Shaper
+- Rune Armour
+
+**Unit Type**
+
+- Infantry (Asuryani)
+
+**Special Rules**
+
+- Fleet (1)
+- Path of the Shaper
+- Bonesinger Companions
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Bonesinger Conclave may include: |  |
+| – Up to 8 additional Bonesingers | +45 points per model |
+
+### Fire Dragons — 110 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fire Dragon | 7 | 4 | 5 | 3 | 3 | 2 | 5 | 1 | 8 | 3+ | 28.5mm |
+
+**Unit Composition**
+
+- 4 Fire Dragons
+
+**Wargear**
+
+- Fusion Gun
+- Heavy Aspect Armour
+- Melta Bombs
+- Plasma Grenades
+
+**Unit Type**
+
+- Infantry (Asuryani)
+
+**Special Rules**
+
+- Aspect Shrine (Fire Dragon)
+- Fleet (1)
+- Wrecker
+
+**Dedicated Transport**
+
+May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Organisation slot, but its points must be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Fire Dragons unit may include: |  |
+| – Up to 6 additional Fire Dragons | +26 points per model |
+| One model in the unit may take a: |  |
+| – Augury Scanner | +10 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+
+### 0-1 Guardian Officer Cadre — 20 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Guardian Officer | 7 | 5 | 5 | 3 | 3 | 2 | 5 | 2 | 8 | 4+ | 32mm |
+| Skyrunner Officer | 18 | 5 | 5 | 3 | 3 | 3 | 5 | 2 | 8 | 4+ | 40mm Flying |
+
+**Unit Composition**
+
+- 1 Guardian Officer
+
+**Wargear**
+
+- Guardian Officer: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol
+- Skyrunner Officer: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol, Skyrunner Jetbike
+- A Guardian Officer Cadre may include:: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol
+- Any Guardian Officer may be upgraded to a:: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol
+- Any Guardian Officer may take one of the following:: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol
+- Any Guardian Officer or Skyrunner Officer may exchange its Chainsword for a:: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol
+- Any Guardian Officer or Skyrunner Officer may exchange its Shuriken Pistol for a:: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol
+- Any Guardian Officer or Skyrunner Officer may take a:: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol
+
+**Unit Type**
+
+- Guardian Officer: Infantry (Asuryani, Character)
+- Skyrunner Officer: Cavalry (Antigrav, Asuryani, Character)
+
+**Special Rules**
+
+- Fleet (1)
+- Guardian Officers
+- Stubborn
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Guardian Officer Cadre may include: |  |
+| – Up to 8 additional Guardian Officers | +20 points per model |
+| Any Guardian Officer may be upgraded to a: |  |
+| – Skyrunner Officer | +15 points |
+| Any Guardian Officer may take one of the following: |  |
+| – Flamer | +5 points |
+| – Fusion Gun | +10 points |
+| – Shuriken Catapult | +2 points |
+| Any Guardian Officer or Skyrunner Officer may exchange its Chainsword for a: |  |
+| – Power Weapon | +5 points |
+| Any Guardian Officer or Skyrunner Officer may exchange its Shuriken Pistol for a: |  |
+| – Fusion Pistol | +10 points |
+| Any Guardian Officer or Skyrunner Officer may take a: |  |
+| – Forceshield | +15 points |
+
+### Howling Banshees — 95 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Howling Banshee | 7 | 5 | 4 | 3 | 3 | 2 | 5 | 2 | 8 | 4+ | 28.5mm |
+
+**Unit Composition**
+
+- 4 Howling Banshees
+
+**Wargear**
+
+- Aspect Armour
+- Banshee Mask
+- Plasma Grenades
+- Power Sword
+- Shuriken Pistol
+
+**Unit Type**
+
+- Infantry (Asuryani)
+
+**Special Rules**
+
+- Acrobatic
+- Aspect Shrine (Howling Banshee)
+- Fear (1)
+- Fleet (2)
+
+**Dedicated Transport**
+
+May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Organisation slot, but its points must be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Howling Banshees unit may include: |  |
+| – Up to 6 additional Howling Banshees | +22 points per model |
+| One model in the unit may take a: |  |
+| – Augury Scanner | +10 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+
+### 0-1 Seer Council — 35 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Warlock | 7 | 4 | 4 | 3 | 3 | 2 | 5 | 1 | 8 | – | 32mm |
+| Warlock Skyrunner | 18 | 4 | 4 | 3 | 3 | 3 | 5 | 1 | 8 | – | 40mm Flying |
+
+**Unit Composition**
+
+- 1 Warlock
+
+**Wargear**
+
+- Warlock: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
+- Warlock Skyrunner: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade, Skyrunner Jetbike
+- A Seer Council may include:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
+- The whole unit may be upgraded to:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
+- Any Warlock may exchange its Witch Weapon for a:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
+- One model in the unit may take a:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
+- One model in the unit may take a:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
+- One model in the unit may take a:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
+
+**Unit Type**
+
+- Warlock: Infantry (Asuryani, Psyker)
+- Warlock Skyrunner: Cavalry (Antigrav, Asuryani, Psyker)
+
+**Special Rules**
+
+- Chosen Warriors
+- Communion of Minds
+- Fleet (1)
+- The Runes of War
+- Psychic Discipline (Runes of Battle)
+- Seer Council Retinue
+
+**Dedicated Transport**
+
+A Seer Council made up entirely of Warlocks may take a Wave Serpent as a Dedicated Transport. It uses no additional Force Organisation slot, but its points must be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Seer Council may include: |  |
+| – Up to 9 additional Warlocks | +35 points per model |
+| The whole unit may be upgraded to: |  |
+| – Warlock Skyrunners | +15 points per model |
+| Any Warlock may exchange its witchblade for a: |  |
+| – Witch staff | Free |
+| – Singing Spear | +15 points |
+| One model in the unit may take a: |  |
+| – Augury Scanner | +10 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+
+### Striking Scorpions — 100 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Striking Scorpion | 7 | 5 | 4 | 3 | 3 | 2 | 5 | 2 | 8 | 3+ | 28.5mm |
+
+**Unit Composition**
+
+- 4 Striking Scorpions
+
+**Wargear**
+
+- Heavy Aspect Armour
+- Mandiblaster
+- Plasma Grenades
+- Scorpion Chainsword
+- Shuriken Pistol
+
+**Unit Type**
+
+- Infantry (Asuryani)
+
+**Special Rules**
+
+- Aspect Shrine (Striking Scorpion)
+- Brutal Ambush
+- Fleet (2)
+- Infiltrate
+- Move Through Cover
+
+**Dedicated Transport**
+
+May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Organisation slot, but its points must be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Striking Scorpions unit may include: |  |
+| – Up to 6 additional Striking Scorpions | +24 points per model |
+| One model in the unit may take a: |  |
+| – Augury Scanner | +10 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+
+### War Walker Squadron — 95 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| War Walker | 8 | 4 | 4 | 5 | 6 | 3 | 5 | 2 | 8 | 3+ | 60mm |
+
+**Unit Composition**
+
+- 1 War Walker
+
+**Wargear**
+
+- Power Field
+- Two Shuriken Cannons
+
+**Unit Type**
+
+- Infantry (Asuryani, Mechanised, Skirmish)
+
+**Special Rules**
+
+- Bulky (5)
+- Fleet (2)
+- Scout
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A War Walker Squadron may include: |  |
+| – Up to 4 additional War Walkers | +90 points per model |
+| Any War Walker may exchange either of its Shuriken Cannons for one of the following: |  |
+| – Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | +10 points |
+| – Bright Lance | +15 points |
+| – Scatter Laser | +5 points |
+| – Starcannon | +10 points |
+| Any War Walker may take any of the following (all models in the unit must take the same upgrades): |  |
+| – Ghostwalker Matrix | +5 points per model |
+| – Star Engines | +10 points per model |
+
+### Wraithblades — 250 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Wraithblade | 7 | 5 | 4 | 5 | 5 | 3 | 4 | 3 | 8 | 3+ | 40mm |
+
+**Unit Composition**
+
+- 5 Wraithblades
+
+**Wargear**
+
+- Two Ghostswords
+- Wraithform Shield
+
+**Unit Type**
+
+- Automata (Asuryani, Wraith)
+
+**Special Rules**
+
+- Bulky (2)
+- It Will Not Die (6+)
+
+**Dedicated Transport**
+
+A unit of no more than five Wraithblades may take a Wave Serpent as a Dedicated Transport. It uses no additional Force Organisation slot, but its points must be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Wraithblades unit may include: |  |
+| – Up to 5 additional Wraithblades | +50 points per model |
+| Any model may exchange either of its Ghostswords for one of the following: |  |
+| – Forceshield | +5 points |
+| – Ghost Axe | +10 points |
+
+### Wraithguard — 300 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Wraithguard | 7 | 4 | 5 | 5 | 5 | 3 | 4 | 2 | 8 | 3+ | 40mm |
+
+**Unit Composition**
+
+- 5 Wraithguard
+
+**Wargear**
+
+- Wraithcannon
+- Wraithform Shield
+
+**Unit Type**
+
+- Automata (Asuryani, Wraith)
+
+**Special Rules**
+
+- Bulky (2)
+- It Will Not Die (6+)
+
+**Dedicated Transport**
+
+A unit of no more than five Wraithguard may take a Wave Serpent as a Dedicated Transport. It uses no additional Force Organisation slot, but its points must be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Wraithguard unit may include: |  |
+| – Up to 5 additional Wraithguard | +60 points per model |
+| The entire unit may exchange its Wraithcannons for (all models must take the same option): |  |
+| – D-Scythe | +10 points per model |
+
+### Death Jester — 100 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Death Jester | 8 | 5 | 5 | 3 | 3 | 3 | 7 | 4 | 10 | – | 28.5mm |
+
+**Unit Composition**
+
+- 1 Death Jester
+
+**Wargear**
+
+- Flip Belt
+- Holo-Suit
+- Plasma Grenades
+- Shrieker Cannon
+
+**Unit Type**
+
+- Infantry (Independent Character, Rillietann, Skirmish)
+
+**Special Rules**
+
+- Fear (2)
+- Fleet (2)
+- Harrow-Lord
+- Precision Shots (4+)
+- Relentless
+- Split Fire
+- Stubborn
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Death Jester may exchange its Shrieker Cannon for one of the following: |  |
+| – Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | Free |
+| – Bright Lance | Free |
+| – Firepike | Free |
+| – Prism Blaster | Free |
+| – Prism Rifle | Free |
+| – Reaper Launcher (with Starswarm, Starshot, and Starhawk Missiles) | Free |
+| – Scatter Laser | Free |
+| – Spinneret Rifle | Free |
+| – Starcannon | Free |
+| – Tempest Launcher | Free |
+| A Death Jester may take: |  |
+| – Haywire Grenades | +10 points |
+
 ## Troops
 
 ### Corsair Voidreavers — 60 pts
@@ -616,6 +2160,314 @@ No other units may be selected as part of this Detachment.
 | **If the unit contains 10 models, one Corsair Voidreaver may exchange its Aeldari power sword or shuriken rifle for one of the following:** |  |
 | – Shuriken cannon | +10 points |
 | – Wraithcannon | +20 points |
+
+### Dire Avengers — 80 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dire Avenger | 7 | 4 | 4 | 3 | 3 | 2 | 5 | 2 | 8 | 4+ | 28.5mm |
+
+**Unit Composition**
+
+- 4 Dire Avengers
+
+**Wargear**
+
+- Aspect Armour
+- Augury Scanner
+- Avenger Catapult
+- Plasma Grenades
+
+**Unit Type**
+
+- Infantry (Asuryani, Line)
+
+**Special Rules**
+
+- Aspect Shrine (Dire Avenger)
+- Fleet (1)
+- Flexible Tactics
+
+**Dedicated Transport**
+
+May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Organisation slot, but its points must be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Dire Avengers unit may include: |  |
+| – Up to 6 additional Dire Avengers | +18 points per model |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+
+### Guardian Defenders — 85 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Guardian Defender | 7 | 4 | 4 | 3 | 3 | 1 | 5 | 1 | 7 | 5+ | 28.5mm |
+| Defender Platform | 7 | 1 | 4 | 1 | 5 | 2 | 1 | 1 | – | 3+ | 40mm |
+
+**Unit Composition**
+
+- 10 Guardian Defenders
+
+**Wargear**
+
+- Guardian Defender: Plasma Grenades, Mesh Armour, Shuriken Catapult
+- Defender Platform: Plasma Grenades, Shuriken Cannon
+- A Guardian Defenders unit may include:: Plasma Grenades
+- For every ten Guardian Defenders in the unit, it may add:: Plasma Grenades
+- Any Defender Platform may exchange its Shuriken Cannon for one of the following:: Plasma Grenades
+- One model in the unit may take a:: Plasma Grenades
+- One model in the unit may take a:: Plasma Grenades
+- One model in the unit may take a:: Plasma Grenades
+
+**Unit Type**
+
+- Defender Platform: Infantry (Asuryani, Grav-Platform)
+- Guardian Defender: Infantry (Asuryani, Line)
+
+**Special Rules**
+
+- Bulky (2) (Defender Platform only)
+- Fleet (1) (Guardian Defender only)
+
+**Dedicated Transport**
+
+A unit of no more than twelve models may take a Wave Serpent as a Dedicated Transport. It uses no additional Force Organisation slot, but its points must be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Guardian Defenders unit may include: |  |
+| – Up to 10 additional Guardian Defenders | +8 points per model |
+| For every ten Guardian Defenders in the unit, it may add: |  |
+| – Defender Platform | +20 points |
+| Any Defender Platform may exchange its Shuriken Cannon for one of the following: |  |
+| – Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | +10 points |
+| – Bright Lance | +15 points |
+| – Scatter Laser | +5 points |
+| – Serpentscale Shield | +20 points |
+| – Starcannon | +10 points |
+| One model in the unit may take a: |  |
+| – Augury Scanner | +10 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+
+### Rangers — 105 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Ranger | 8 | 4 | 4 | 3 | 3 | 1 | 5 | 1 | 7 | 5+ | 28.5mm |
+
+**Unit Composition**
+
+- 5 Rangers
+
+**Wargear**
+
+- Mesh Armour
+- Outcast Cloaks
+- Plasma Grenades
+- Ranger long rifle
+- Shuriken Pistol
+
+**Unit Type**
+
+- Infantry (Asuryani, Line, Skirmish)
+
+**Special Rules**
+
+- Fleet (1)
+- Infiltrate
+- Move Through Cover
+- Scout
+- Support Squad
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Ranger unit may include: |  |
+| – Up to 5 additional Rangers | +20 points per model |
+| One model in the unit may take a: |  |
+| – Augury Scanner | +10 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+| One model in the unit may take a: |  |
+| – Gloom-Field | +15 points |
+| One model in the unit may take a: |  |
+| – Wireweave Net | +5 points |
+
+### Storm Guardians — 75 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Storm Guardian | 7 | 4 | 4 | 3 | 3 | 1 | 5 | 1 | 7 | 5+ | 28.5mm |
+| Defender Platform | 7 | 1 | 4 | 1 | 5 | 2 | 1 | 1 | – | 3+ | 40mm |
+
+**Unit Composition**
+
+- 10 Storm Guardians
+
+**Wargear**
+
+- Storm Guardian: Plasma Grenades, Chainsword, Mesh Armour, Shuriken Pistol
+- Defender Platform: Plasma Grenades, Shuriken Cannon
+- A Storm Guardians unit may include:: Plasma Grenades
+- For every ten Storm Guardians in the unit, it may add:: Plasma Grenades
+- Any Defender Platform may exchange its Shuriken Cannon for one of the following:: Plasma Grenades
+- For every five Storm Guardians, one may exchange its Chainsword for a:: Plasma Grenades
+- For every five Storm Guardians, one may exchange its Chainsword and Shuriken Pistol for one of the following:: Plasma Grenades
+- One model in the unit may take a:: Plasma Grenades
+- One model in the unit may take a:: Plasma Grenades
+- One model in the unit may take a:: Plasma Grenades
+
+**Unit Type**
+
+- Defender Platform: Infantry (Asuryani, Grav-Platform)
+- Storm Guardian: Infantry (Asuryani, Line)
+
+**Special Rules**
+
+- Bulky (2) (Defender Platform only)
+- Fleet (1) (Storm Guardian only)
+
+**Dedicated Transport**
+
+A unit of no more than twelve models may take a Wave Serpent as a Dedicated Transport. It uses no additional Force Organisation slot, but its points must be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Storm Guardians unit may include: |  |
+| – Up to 10 additional Storm Guardians | +7 points per model |
+| For every ten Storm Guardians in the unit, it may add: |  |
+| – Defender Platform | +20 points |
+| Any Defender Platform may exchange its Shuriken Cannon for one of the following: |  |
+| – Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | +10 points |
+| – Bright Lance | +15 points |
+| – Scatter Laser | +5 points |
+| – Serpentscale Shield | +20 points |
+| – Starcannon | +10 points |
+| For every five Storm Guardians, one may exchange its Chainsword for a: |  |
+| – Power Weapon | +5 points |
+| For every five Storm Guardians, one may exchange its Chainsword and Shuriken Pistol for one of the following: |  |
+| – Flamer | +5 points |
+| – Fusion Gun | +15 points |
+| One model in the unit may take a: |  |
+| – Augury Scanner | +10 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+
+### Windriders — 80 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Windrider | 18 | 4 | 4 | 3 | 3 | 2 | 5 | 1 | 7 | 4+ | 40mm Flying |
+
+**Unit Composition**
+
+- 3 Windriders
+
+**Wargear**
+
+- Heavy Mesh Armour
+- Plasma Grenades
+- Skyrunner Jetbike
+
+**Unit Type**
+
+- Cavalry (Antigrav, Asuryani)
+
+**Special Rules**
+
+- Battle-Hardened (1)
+- Deep Strike
+- Firing Protocols (2)
+- Fleet (2)
+- Hammer of Wrath (1)
+- Hit & Run
+- Relentless
+- Shrouded (5+)
+- Support Squad
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Windrider unit may include: |  |
+| – Up to 7 additional Windriders | +25 points per model |
+| Any model may replace its Skyrunner Jetbike's Twin-linked Shuriken Catapult with one of the following: |  |
+| – Scatter Laser | +10 points |
+| – Shuriken Cannon | +5 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+
+### Troupe — 135 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Lead Player | 8 | 5 | 5 | 3 | 3 | 2 | 6 | 3 | 9 | – | 28.5mm |
+| Player | 8 | 5 | 5 | 3 | 3 | 2 | 6 | 2 | 9 | – | 28.5mm |
+
+**Unit Composition**
+
+- 1 Lead Player
+- 4 Players
+
+**Wargear**
+
+- Flip Belt
+- Holo-Suit
+- Plasma Grenades
+- Power Sword
+- Shuriken Pistol
+
+**Unit Type**
+
+- Lead Player: Infantry (Character, Rillietann, Skirmish)
+- Player: Infantry (Rillietann, Skirmish)
+
+**Special Rules**
+
+- Chosen Warriors
+- Fleet (2)
+
+**Dedicated Transport**
+
+A Troupe of no more than six models may take a Starweaver as a Dedicated Transport. It uses no additional Force Organisation slot, but its points must be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Troupe may include: |  |
+| – Up to 7 additional Players | +22 points per model |
+| Any model may exchange its Shuriken Pistol for one of the following: |  |
+| – Fusion Pistol | +15 points |
+| – Neuro Disruptor | +10 points |
+| Any model may exchange its Power Sword for one of the following: |  |
+| – Harlequin's Caress | +10 points |
+| – Harlequin's Embrace | +5 points |
+| – Harlequin's Kiss | +5 points |
+| The Lead Player may exchange its Power Sword for a: |  |
+| – Harlequin's Edge | +20 points |
+| The Lead Player may take: |  |
+| – Haywire Grenades | +10 points |
 
 ## Fast Attack
 
@@ -774,6 +2626,498 @@ No other units may be selected as part of this Detachment.
 | **One Corsair Starfang Raider may take:** |  |
 | – Faolchú | +15 points |
 
+### Nightshade Interceptor Squadron — 125 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Nightshade Interceptor | 18 | 4 | 12 | 11 | 11 | 3 | – | 120x92mm Oval Flying |
+
+**Unit Composition**
+
+- 1 Nightshade Interceptor
+
+**Wargear**
+
+- Hull (Front) Mounted Pulse Laser
+- Two Hull (Front) Mounted Gravis Bright Lances
+
+**Unit Type**
+
+- Vehicle (Asuryani, Fast, Flyer)
+
+**Special Rules**
+
+- Agile
+- Deep Strike
+- Shrouded (5+)
+- Vector Dancer
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Nightshade Interceptor Squadron may include: |  |
+| – Up to 1 additional Nightshade Interceptor | +115 points |
+| The entire unit may take (all models must select the same upgrades): |  |
+| – Holo-Fields | +20 points per model |
+
+### Nightwing Interceptor Squadron — 140 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Nightwing Interceptor | 22 | 4 | 12 | 11 | 11 | 3 | – | 120x92mm Oval Flying |
+
+**Unit Composition**
+
+- 1 Nightwing Interceptor
+
+**Wargear**
+
+- Holo-Fields
+- Two Hull (Front) Mounted Scatter Lasers
+- Two Hull (Front) Mounted Shuriken Cannons
+
+**Unit Type**
+
+- Vehicle (Asuryani, Fast, Flyer)
+
+**Special Rules**
+
+- Agile
+- Deep Strike
+- Shrouded (6+)
+- Vector Dancer
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Nightwing Interceptor Squadron may include: |  |
+| – Up to 1 additional Nightwing Interceptor | +130 points |
+| Any Nightwing Interceptor may exchange its Two Hull (Front) Mounted Scatter Lasers for one of the following: |  |
+| – Two Hull (Front) Mounted Aeldari Missile Launchers (with Sunburst, Starshot, and Starhawk Missiles) | +10 points |
+| – Two Hull (Front) Mounted Bright Lances | +20 points |
+| – Two Hull (Front) Mounted Starcannons | +10 points |
+
+### Phoenix Bomber Squadron — 210 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Phoenix Bomber | 16 | 4 | 12 | 12 | 11 | 4 | – | 170x105mm Oval Flying |
+
+**Unit Composition**
+
+- 1 Phoenix Bomber
+
+**Wargear**
+
+- Hull (Front) Mounted Pulse Laser
+- Two Hull (Front) Mounted Phoenix Missile Launchers
+- Two Hull (Front) Mounted Shuriken Cannons
+
+**Unit Type**
+
+- Vehicle (Asuryani, Fast, Flyer)
+
+**Special Rules**
+
+- Agile
+- Deep Strike
+- Shrouded (6+)
+- Strafing Run
+- Vector Dancer
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Phoenix Bomber Squadron may include: |  |
+| – Up to 1 additional Phoenix Bomber | +200 points |
+| The entire unit may take (all models must select the same upgrades): |  |
+| – Holo-Fields | +20 points per model |
+| Any Phoenix Bomber may exchange its Hull (Front) Mounted Pulse Laser for one of the following: |  |
+| – Hull (Front) Mounted Gravis Bright Lance | +10 points |
+| – Hull (Front) Mounted Gravis Starcannon | Free |
+| Any Phoenix Bomber may exchange both of its Hull (Front) Mounted Phoenix Missile Launchers for a: |  |
+| – Nightfire Missile Launcher | +20 points |
+
+### Shadow Spectres — 75 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Shadow Spectre | 7 | 4 | 5 | 3 | 3 | 2 | 5 | 1 | 8 | 3+ | 32mm |
+
+**Unit Composition**
+
+- 2 Shadow Spectres
+
+**Wargear**
+
+- Haywire Grenades
+- Heavy Aspect Armour
+- Plasma Grenades
+- Prism Rifle
+- Spectre Jet Pack
+
+**Unit Type**
+
+- Infantry (Asuryani)
+
+**Special Rules**
+
+- Aspect Shrine (Shadow Spectre)
+- Fear (1)
+- Fleet (1)
+- Relentless
+- Shadow of Death
+- Shrouded (4+)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Shadow Spectres unit may include: |  |
+| – Up to 8 additional Shadow Spectres | +35 points per model |
+| One model in the unit may take a: |  |
+| – Augury Scanner | +10 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+
+### Shining Spears — 85 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Shining Spear | 18 | 5 | 4 | 3 | 3 | 2 | 5 | 2 | 8 | 3+ | 60mm Flying |
+
+**Unit Composition**
+
+- 2 Shining Spears
+
+**Wargear**
+
+- Heavy Aspect Armour
+- Laser Lance
+- Plasma Grenades
+- Shuriken Pistol
+- Skyrunner Jetbike
+
+**Unit Type**
+
+- Cavalry (Antigrav, Asuryani)
+
+**Special Rules**
+
+- Aspect Shrine (Shining Spear)
+- Battle-Hardened (1)
+- Deep Strike
+- Firing Protocols (2)
+- Fleet (2)
+- Hammer of Wrath (1)
+- Hit & Run
+- Outflank
+- Pathfinder
+- Relentless
+- Shrouded (4+)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Shining Spears unit may include: |  |
+| – Up to 4 additional Shining Spears | +40 points per model |
+| Any model may replace its Skyrunner Jetbike's Twin-linked Shuriken Catapult with one of the following: |  |
+| – Scatter Laser | +15 points |
+| – Shuriken Cannon | +10 points |
+| One model in the unit may take a: |  |
+| – Augury Scanner | +10 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+
+### Shroud Runners — 110 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Shroud Runner | 18 | 4 | 4 | 3 | 4 | 3 | 5 | 2 | 8 | 4+ | 60mm Flying |
+
+**Unit Composition**
+
+- 3 Shroud Runners
+
+**Wargear**
+
+- Heavy Mesh Armour
+- Outcast Cloaks
+- Plasma Grenades
+- Ranger long rifle
+- Raptor Jetbike
+- Shuriken Pistol
+
+**Unit Type**
+
+- Cavalry (Antigrav, Asuryani, Skirmish)
+
+**Special Rules**
+
+- Battle-Hardened (1)
+- Deep Strike
+- Firing Protocols (3)
+- Fleet (2)
+- Hammer of Wrath (1)
+- Hit & Run
+- Infiltrate
+- Mark of Kurnous
+- Relentless
+- Scout
+- Shrouded (5+)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Shroud Runners unit may include: |  |
+| – Up to 3 additional Shroud Runners | +35 points per model |
+| The entire unit may take any of the following (all models must select the same upgrades): |  |
+| – Ghostwalker Matrix | +5 points per model |
+| – Star Engines | +5 points per model |
+| One model in the unit may take a: |  |
+| – Augury Scanner | +10 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+| One model in the unit may take a: |  |
+| – Wireweave Net | +10 points |
+
+### Swooping Hawks — 65 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Swooping Hawk | 7 | 4 | 4 | 3 | 3 | 2 | 5 | 1 | 8 | 4+ | 28.5mm |
+
+**Unit Composition**
+
+- 4 Swooping Hawks
+
+**Wargear**
+
+- Aspect Armour
+- Grenade Pack
+- Hawk Lasblaster
+- Haywire Grenades
+- Plasma Grenades
+- Swooping Hawk Wings
+
+**Unit Type**
+
+- Infantry (Asuryani)
+
+**Special Rules**
+
+- Aspect Shrine (Swooping Hawk)
+- Fleet (1)
+- Skyleap
+- Skystrike
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Swooping Hawks unit may include: |  |
+| – Up to 6 additional Swooping Hawks | +15 points per model |
+| One model in the unit may take a: |  |
+| – Augury Scanner | +10 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+
+### Vyper Squadron — 50 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Vyper | 16 | 4 | 4 | 3 | 5 | 3 | 5 | 2 | 8 | 4+ | 60mm Flying |
+
+**Unit Composition**
+
+- 1 Vyper
+
+**Wargear**
+
+- Heavy Mesh Armour
+- Plasma Grenades
+- Vyper Jetbike
+- Twin-linked shuriken catapult
+- Shuriken cannon
+
+**Unit Type**
+
+- Cavalry (Antigrav, Asuryani, Skirmish)
+
+**Special Rules**
+
+- Deep Strike
+- Firing Protocols (2)
+- Fleet (2)
+- Hammer of Wrath (2)
+- Hit & Run
+- Relentless
+- Shrouded (5+)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Vyper Squadron may include: |  |
+| – Up to 4 additional Vypers | +50 points per model |
+| The entire unit may take any of the following (all models must select the same upgrades): |  |
+| – Ghostwalker Matrix | +5 points per model |
+| – Holo-Fields | +20 points per model |
+| – Star Engines | +10 points per model |
+| Any Vyper may exchange its Twin-linked Shuriken Catapult for a: |  |
+| – Shuriken Cannon | +10 points |
+| Any Vyper may exchange its Shuriken Cannon for one of the following: |  |
+| – Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | +10 points |
+| – Bright Lance | +15 points |
+| – Scatter Laser | +5 points |
+| – Starcannon | +10 points |
+
+### Warp Spiders — 100 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Warp Spider | 7 | 4 | 4 | 3 | 3 | 2 | 5 | 1 | 8 | 3+ | 28.5mm |
+
+**Unit Composition**
+
+- 4 Warp Spiders
+
+**Wargear**
+
+- Death Spinner
+- Heavy Aspect Armour
+- Plasma Grenades
+- Warp Jump Generator
+
+**Unit Type**
+
+- Infantry (Asuryani)
+
+**Special Rules**
+
+- Aspect Shrine (Warp Spider)
+- Deep Strike
+- Fleet (1)
+- Flickerjump
+- Hit & Run
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Warp Spiders unit may include: |  |
+| – Up to 6 additional Warp Spiders | +23 points per model |
+| One model in the unit may take a: |  |
+| – Augury Scanner | +10 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+
+### Skyweavers — 160 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Skyweaver | 18 | 5 | 5 | 3 | 4 | 3 | 6 | 3 | 9 | 3+ | 60mm Flying |
+
+**Unit Composition**
+
+- 2 Skyweavers
+
+**Wargear**
+
+- Holo-Suit
+- Mirage Launchers
+- Plasma Grenades
+- Shuriken Pistol
+- Skyweaver Jetbike
+- Star Bolas
+
+**Unit Type**
+
+- Cavalry (Antigrav, Rillietann, Skirmish)
+
+**Special Rules**
+
+- Battle-Hardened (1)
+- Chosen Warriors
+- Deep Strike
+- Firing Protocols (2)
+- Fleet (2)
+- Furious Charge (2)
+- Hammer of Wrath (1)
+- Hit & Run
+- Relentless
+- Shrouded (5+)
+- Skilled Rider
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Skyweavers unit may include: |  |
+| – Up to 4 additional Skyweavers | +80 points per model |
+| Any model may replace its Skyweaver Jetbike's Shuriken Cannon with a: |  |
+| – Haywire Cannon | +5 points |
+| Any model may replace its Star Bolas with a: |  |
+| – Zephyrglaive | +5 points |
+
+### Voidweaver — 90 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Voidweaver | 16 | 5 | 5 | 3 | 5 | 4 | 6 | 2 | 9 | 3+ | 60mm Flying |
+
+**Unit Composition**
+
+- 1 Voidweaver
+
+**Wargear**
+
+- Haywire Cannon
+- Holo-Fields
+- Mirage Launchers
+- Power Sword
+- Shuriken Pistol
+- Starweaver Skimmer
+
+**Unit Type**
+
+- Cavalry (Antigrav, Rillietann, Skirmish)
+
+**Special Rules**
+
+- Deep Strike
+- Firing Protocols (3)
+- Fleet (2)
+- Hammer of Wrath (1)
+- Hit & Run
+- Relentless
+- Shrouded (5+)
+- Skilled Rider
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Voidweaver unit may include: |  |
+| – Up to 2 additional Voidweavers | +90 points per model |
+| Any model may replace its Haywire Cannon with a: |  |
+| – Prismatic Cannon | +5 points |
+
 ## Heavy Support
 
 ### Corsair Ghostwalkers — 145 pts
@@ -831,6 +3175,334 @@ No other units may be selected as part of this Detachment.
 | **One Corsair Ghostwalker may take:** |  |
 | – Faolchú | +15 points |
 
+### Dark Reapers — 165 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dark Reaper | 7 | 4 | 5 | 3 | 3 | 2 | 5 | 1 | 8 | 3+ | 28.5mm |
+
+**Unit Composition**
+
+- 4 Dark Reapers
+
+**Wargear**
+
+- Heavy Aspect Armour
+- Plasma Grenades
+- Reaper Launcher (with Starswarm, Starshot, and Starhawk Missiles)
+
+**Unit Type**
+
+- Infantry (Asuryani, Heavy)
+
+**Special Rules**
+
+- Aspect Shrine (Dark Reaper)
+- Inescapable Accuracy
+- Relentless
+
+**Dedicated Transport**
+
+May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Organisation slot, but its points must be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Dark Reapers unit may include: |  |
+| – Up to 6 additional Dark Reapers | +40 points per model |
+| One model in the unit may take a: |  |
+| – Augury Scanner | +10 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+
+### Falcon Squadron — 145 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Falcon | 12 | 4 | 12 | 12 | 10 | 3 | 7 | 60mm Flying |
+
+**Unit Composition**
+
+- 1 Falcon
+
+**Wargear**
+
+- Hull (Front) Mounted Twin-linked Shuriken Catapult
+- Turret Mounted Gravis Shuriken Cannon
+- Turret Mounted Pulse Laser
+
+**Unit Type**
+
+- Vehicle (Asuryani, Fast, Skimmer, Transport)
+
+**Access Points**
+
+- One access point on its rear.
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Falcon Squadron may include: |  |
+| – Up to 2 additional Falcons | +125 points per model |
+| A Falcon may exchange its Hull (Front) Mounted Twin-linked Shuriken Catapult for a: |  |
+| – Hull (Front) Mounted Shuriken Cannon | +10 points |
+| A Falcon may exchange its Turret Mounted Gravis Shuriken Cannon for one of the following: |  |
+| – Turret Mounted Gravis Bright Lance | +20 points |
+| – Turret Mounted Gravis Scatter Laser | +5 points |
+| – Turret Mounted Gravis Starcannon | +10 points |
+| – Turret Mounted Twin-linked Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | +10 points |
+| A Falcon may take one of the following: |  |
+| – Star Engines | +15 points |
+| – Vectored Engines | +15 points |
+| A Falcon may take any of the following: |  |
+| – Crystal Targeting Matrix | +20 points |
+| – Holo-Fields | +20 points |
+| – Searchlights | +5 points |
+| – Spirit Stones | +10 points |
+
+### Fire Prism Squadron — 165 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fire Prism | 12 | 4 | 12 | 12 | 10 | 3 | – | 60mm Flying |
+
+**Unit Composition**
+
+- 1 Fire Prism
+
+**Wargear**
+
+- Hull (Front) Mounted Twin-linked Shuriken Catapult
+- Turret Mounted Prism Cannon
+
+**Unit Type**
+
+- Vehicle (Asuryani, Fast, Skimmer)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Fire Prism Squadron may include: |  |
+| – Up to 2 additional Fire Prisms | +150 points per model |
+| A Fire Prism may exchange its Hull (Front) Mounted Twin-linked Shuriken Catapult for a: |  |
+| – Hull (Front) Mounted Shuriken Cannon | +10 points |
+| A Fire Prism may take one of the following: |  |
+| – Star Engines | +15 points |
+| – Vectored Engines | +15 points |
+| A Fire Prism may take any of the following: |  |
+| – Crystal Targeting Matrix | +20 points |
+| – Holo-Fields | +20 points |
+| – Searchlights | +5 points |
+| – Spirit Stones | +10 points |
+
+### Firestorm Squadron — 115 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Firestorm | 12 | 4 | 12 | 12 | 10 | 3 | – | 60mm Flying |
+
+**Unit Composition**
+
+- 1 Firestorm
+
+**Wargear**
+
+- Helical Targeting Array
+- Hull (Front) Mounted Twin-linked Shuriken Catapult
+- Turret Mounted Firestorm Scatter Array
+
+**Unit Type**
+
+- Vehicle (Asuryani, Fast, Skimmer)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Firestorm Squadron may include: |  |
+| – Up to 2 additional Firestorms | +100 points per model |
+| A Firestorm may exchange its Hull (Front) Mounted Twin-linked Shuriken Catapult for a: |  |
+| – Hull (Front) Mounted Shuriken Cannon | +10 points |
+| A Firestorm may take one of the following: |  |
+| – Star Engines | +15 points |
+| – Vectored Engines | +15 points |
+| A Firestorm may take any of the following: |  |
+| – Crystal Targeting Matrix | +20 points |
+| – Holo-Fields | +20 points |
+| – Searchlights | +5 points |
+| – Spirit Stones | +10 points |
+
+### Night Spinner Squadron — 175 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Night Spinner | 12 | 4 | 12 | 12 | 10 | 3 | – | 60mm Flying |
+
+**Unit Composition**
+
+- 1 Night Spinner
+
+**Wargear**
+
+- Hull (Front) Mounted Twin-linked Shuriken Catapult
+- Turret Mounted Doomweaver
+
+**Unit Type**
+
+- Vehicle (Asuryani, Fast, Skimmer)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Night Spinner Squadron may include: |  |
+| – Up to 2 additional Night Spinners | +160 points per model |
+| A Night Spinner may exchange its Hull (Front) Mounted Twin-linked Shuriken Catapult for a: |  |
+| – Hull (Front) Mounted Shuriken Cannon | +10 points |
+| A Night Spinner may take one of the following: |  |
+| – Star Engines | +15 points |
+| – Vectored Engines | +15 points |
+| A Night Spinner may take any of the following: |  |
+| – Crystal Targeting Matrix | +20 points |
+| – Holo-Fields | +20 points |
+| – Searchlights | +5 points |
+| – Spirit Stones | +10 points |
+
+### Vaul's Wrath Support Battery — 50 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Guardian Crew | 7 | 4 | 4 | 3 | 3 | 1 | 5 | 1 | 7 | 5+ | 28.5mm |
+| Support Weapon | 5 | 1 | 4 | 1 | 5 | 2 | 1 | 1 | – | 3+ | 40mm |
+
+**Unit Composition**
+
+- 2 Guardian Crew
+- 1 Support Weapon
+
+**Wargear**
+
+- Guardian Crew: Mesh Armour, Plasma Grenades, Shuriken Catapult
+- Support Weapon: Shadow Weaver
+- A Vaul's Wrath Support Battery may include (each additional Support Weapon adds 2 Guardian Crew at no extra cost):: 
+- Every Support Weapon may exchange its Shadow Weaver for one of the following (all must take the same):: 
+- One model in the unit may take a:: 
+- One model in the unit may take a:: 
+- One model in the unit may take a:: 
+
+**Unit Type**
+
+- Guardian Crew: Infantry (Asuryani, Heavy)
+- Support Weapon: Infantry (Asuryani, Grav-Platform, Heavy)
+
+**Special Rules**
+
+- Bulky (4) (Support Weapon only)
+- Fleet (1) (Guardian Crew only)
+- Guardian Artillerists
+- Relentless (Support Weapon only)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Vaul's Wrath Support Battery may include (each additional Support Weapon adds 2 Guardian Crew at no extra cost): |  |
+| – Up to 2 additional Support Weapons | +50 points per model |
+| Any Support Weapon may exchange its Shadow Weaver for one of the following (all must take the same): |  |
+| – D-Cannon | +40 points per model |
+| – Vibro Cannon | +20 points per model |
+| One model in the unit may take a: |  |
+| – Augury Scanner | +10 points |
+| One model in the unit may take a: |  |
+| – Comm-Bead | +10 points |
+| One model in the unit may take a: |  |
+| – Craftworld Standard | +10 points |
+
+### Wraithlord Conclave — 180 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Wraithlord | 8 | 5 | 5 | 8 | 8 | 5 | 4 | 3 | 8 | 3+ | 60mm |
+
+**Unit Composition**
+
+- 1 Wraithlord
+
+**Wargear**
+
+- Power Field
+- Two Wraith Gauntlets (with in-built Shuriken Catapults)
+
+**Unit Type**
+
+- Automata (Asuryani, Wraith)
+
+**Special Rules**
+
+- It Will Not Die (6+)
+- Wraith Conclave
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Wraithlord Conclave may include: |  |
+| – Up to 2 additional Wraithlords | +180 points per model |
+| Any Wraithlord may select up to two of the following, in any combination: |  |
+| – Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | +10 points |
+| – Bright Lance | +15 points |
+| – Scatter Laser | +5 points |
+| – Shuriken Cannon | +5 points |
+| – Starcannon | +10 points |
+| Any Wraithlord may replace a single Wraith Gauntlet (with in-built Shuriken Catapult) with a: |  |
+| – Wraithsword (with in-built Shuriken Catapult) | +15 points |
+| Any Wraithlord may replace an in-built Shuriken Catapult on a Wraith Gauntlet or Wraithsword with one of the following: |  |
+| – Flamer | +5 points |
+| – Fusion Gun | +10 points |
+
+### 0-1 Wraithseer — 250 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Wraithseer | 8 | 5 | 5 | 8 | 8 | 5 | 4 | 4 | 9 | 3+ | 60mm |
+
+**Unit Composition**
+
+- 1 Wraithseer
+
+**Wargear**
+
+- Ghostspear
+- Guide Stones
+- Wraithshield
+
+**Unit Type**
+
+- Automata (Asuryani, Character, Psyker, Wraith)
+
+**Special Rules**
+
+- It Will Not Die (5+)
+- Path of the Dead
+- Psychic Discipline (Runes of Twilight)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Wraithseer may select one of the following: |  |
+| – Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | +10 points |
+| – Bright Lance | +15 points |
+| – D-Cannon | +25 points |
+| – Scatter Laser | +5 points |
+| – Shuriken Cannon | +5 points |
+| – Starcannon | +10 points |
+
 ## Dedicated Transports
 
 ### Corsair Venom — 35 pts
@@ -880,6 +3552,942 @@ No other units may be selected as part of this Detachment.
 | – Trophy rack | +5 points |
 | – Venom sails | +10 points |
 | – Webway rift generator | +15 points |
+
+### Wave Serpent — 125 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Wave Serpent | 12 | 4 | 12 | 12 | 10 | 3 | 14 | 60mm Flying |
+
+**Unit Composition**
+
+- 1 Wave Serpent
+
+**Wargear**
+
+- Hull (Front) Mounted Twin-linked Shuriken Catapult
+- Turret Mounted Gravis Shuriken Cannon
+- Wave Serpent Shield
+
+**Unit Type**
+
+- Vehicle (Asuryani, Fast, Skimmer, Transport)
+
+**Access Points**
+
+- One access point on its rear.
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| May exchange its Hull (Front) Mounted Twin-linked Shuriken Catapult for a: |  |
+| – Hull (Front) Mounted Shuriken Cannon | +10 points |
+| May exchange its Turret Mounted Gravis Shuriken Cannon for one of the following: |  |
+| – Turret Mounted Gravis Bright Lance | +20 points |
+| – Turret Mounted Gravis Scatter Laser | +5 points |
+| – Turret Mounted Gravis Starcannon | +10 points |
+| – Turret Mounted Twin-linked Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | +10 points |
+| May take one of the following: |  |
+| – Star Engines | +15 points |
+| – Vectored Engines | +15 points |
+| May take any of the following: |  |
+| – Crystal Targeting Matrix | +20 points |
+| – Holo-Fields | +20 points |
+| – Searchlights | +5 points |
+| – Spirit Stones | +10 points |
+
+### Starweaver — 100 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Starweaver | 16 | 5 | 5 | 3 | 5 | 4 | 6 | 2 | 9 | 3+ | 60mm Flying |
+
+_This model may be selected as a Dedicated Transport for a Rillietann unit, or as a Fast Attack choice._
+
+**Unit Composition**
+
+- 1 Starweaver
+
+**Wargear**
+
+- Holo-Fields
+- Mirage Launchers
+- Power Sword
+- Shuriken Pistol
+- Starweaver Skimmer
+
+**Unit Type**
+
+- Cavalry (Antigrav, Rillietann, Skirmish, Transport)
+
+**Special Rules**
+
+- Deep Strike
+- Firing Protocols (3)
+- Fleet (2)
+- Hammer of Wrath (1)
+- Hit & Run
+- Open-Topped (6)
+- Relentless
+- Shrouded (5+)
+- Skilled Rider
+- Transport Skiff
+
+**Transport Capacity:** 6 models, which must have both the Infantry Unit Type and the Rillietann Sub-type.
+
+**Access Points**
+
+- Its entire hull counts as an access point.
+
+## Lords of War
+
+### Cobra — 550 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Cobra | 12 | 4 | 14 | 13 | 12 | 10 | – | 60mm Flying |
+
+**Unit Composition**
+
+- 1 Cobra
+
+**Wargear**
+
+- Centreline Mounted D-Impaler
+- Pintle Mounted Shuriken Cannon
+
+**Unit Type**
+
+- Vehicle (Asuryani, Skimmer, Super-Heavy)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Cobra may exchange its Pintle Mounted Shuriken Cannon for one of the following: |  |
+| – Pintle Mounted Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | +10 points |
+| – Pintle Mounted Bright Lance | +15 points |
+| – Pintle Mounted Scatter Laser | +5 points |
+| – Pintle Mounted Starcannon | +10 points |
+| A Cobra may take one of the following: |  |
+| – Star Engines | +5 points |
+| – Vectored Engines | +5 points |
+| A Cobra may take any of the following: |  |
+| – Holo-Fields | +40 points |
+| – Searchlight | +5 points |
+
+### Lynx — 300 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Lynx | 16 | 4 | 13 | 12 | 12 | 5 | – | 60mm Flying |
+
+**Unit Composition**
+
+- 1 Lynx
+
+**Wargear**
+
+- Centreline Mounted Lynx Pulsar
+- Hull (Front) Mounted Shuriken Cannon
+
+**Unit Type**
+
+- Vehicle (Asuryani, Fast, Skimmer)
+
+**Special Rules**
+
+- Deep Strike
+- Skyhunter
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Lynx may exchange its Centreline Mounted Lynx Pulsar for a: |  |
+| – Centreline Mounted Sonic Lance | +75 points |
+| A Lynx may exchange its Hull (Front) Mounted Shuriken Cannon for one of the following: |  |
+| – Hull (Front) Mounted Bright Lance | +15 points |
+| – Hull (Front) Mounted Scatter Laser | +5 points |
+| – Hull (Front) Mounted Starcannon | +10 points |
+| A Lynx may take one of the following: |  |
+| – Star Engines | +15 points |
+| – Vectored Engines | +15 points |
+| A Lynx may take any of the following: |  |
+| – Holo-Fields | +20 points |
+| – Searchlight | +5 points |
+| – Spirit Stones | +10 points |
+
+### Phantom Titan — 2500 pts
+
+| Model | M | WS | BS | S | Front | Side | Rear | I | A | HP | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Phantom Titan | 24 | 9 | 5 | 10 | 14 | 14 | 13 | 5 | 5 | 24 | No base |
+
+**Unit Composition**
+
+- 1 Phantom Titan
+
+**Wargear**
+
+- Holo-Fields
+- Hull (Front) Mounted Cloudburst Missile Launcher
+- Hull (Front) Mounted Gravis Starcannon
+- Hull (Front) Mounted Voidstorm Missile Launcher
+- Two Arm Mounted Phantom-Pulsars
+
+**Unit Type**
+
+- Vehicle (Asuryani, Titan)
+
+**Special Rules**
+
+- It Will Not Die (5+)
+- Night Vision
+- Wraithbone Core
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Phantom Titan may exchange either of its Arm Mounted Phantom-Pulsars for one of the following: |  |
+| – Arm Mounted D-Bombard | Free |
+| – Arm Mounted Wraith Glaive and Twin-linked Gravis Starcannon | Free |
+| A Phantom Titan may exchange its Hull (Front) Mounted Gravis Starcannon for a: |  |
+| – Hull (Front) Mounted Pulse Laser | Free |
+
+### Revenant Titan — 750 pts
+
+| Model | M | WS | BS | S | Front | Side | Rear | I | A | HP | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Revenant Titan | 16 | 7 | 5 | 10 | 13 | 13 | 12 | 5 | 3 | 12 | No base |
+
+**Unit Composition**
+
+- 1 Revenant Titan
+
+**Wargear**
+
+- Holo-Fields
+- Hull (Front) Mounted Cloudburst Missile Launcher
+- Revenant Jump Engines
+- Two Arm Mounted Revenant Pulsars
+
+**Unit Type**
+
+- Vehicle (Asuryani, Titan)
+
+**Special Rules**
+
+- It Will Not Die (5+)
+- Night Vision
+- Wraith Conclave
+- Wraithbone Core
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Revenant Titan unit may include: |  |
+| – Up to 1 additional Revenant Titan | +750 points |
+| A Revenant Titan may exchange both of its Arm Mounted Revenant Pulsars for: |  |
+| – Two Arm Mounted Sonic Lances | +75 points |
+| A Revenant Titan may take a: |  |
+| – Hull (Front) Mounted Scatter Laser | +5 points |
+
+### Scorpion — 500 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Scorpion | 12 | 4 | 14 | 13 | 12 | 10 | – | 60mm Flying |
+
+**Unit Composition**
+
+- 1 Scorpion
+
+**Wargear**
+
+- Pintle Mounted Shuriken Cannon
+- Turret Mounted Twin-linked Revenant Pulsar
+
+**Unit Type**
+
+- Vehicle (Asuryani, Skimmer, Super-Heavy)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Scorpion may exchange its Pintle Mounted Shuriken Cannon for one of the following: |  |
+| – Pintle Mounted Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | +10 points |
+| – Pintle Mounted Bright Lance | +15 points |
+| – Pintle Mounted Scatter Laser | +5 points |
+| – Pintle Mounted Starcannon | +10 points |
+| A Scorpion may take one of the following: |  |
+| – Star Engines | +5 points |
+| – Vectored Engines | +5 points |
+| A Scorpion may take any of the following: |  |
+| – Holo-Fields | +40 points |
+| – Searchlight | +5 points |
+
+### Skathach Wraithknight — 600 pts
+
+| Model | M | WS | BS | S | Front | Side | Rear | I | A | HP | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Skathach Wraithknight | 16 | 5 | 5 | 10 | 13 | 13 | 12 | 4 | 4 | 8 | 120x92mm Oval |
+
+**Unit Composition**
+
+- 1 Skathach Wraithknight
+
+**Wargear**
+
+- Holo-Fields
+- Two Arm Mounted Deathshroud Cannons
+- Webway Shunt Generator
+
+**Unit Type**
+
+- Vehicle (Asuryani, Knight)
+
+**Special Rules**
+
+- Guardian of the Gates
+- Hit & Run
+- It Will Not Die (5+)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| May select up to two of the following, in any combination: |  |
+| – Hull (Front) Mounted Scatter Laser | +10 points |
+| – Hull (Front) Mounted Shuriken Cannon | +10 points |
+| – Hull (Front) Mounted Starcannon | +15 points |
+| May exchange an Arm Mounted Deathshroud Cannon for one of the following: |  |
+| – Arm Mounted Ghostglaive | Free |
+| – Arm Mounted Inferno Lance | Free |
+| – Arm Mounted Scattershield | Free |
+
+### Vampire Hunter — 700 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Vampire Hunter | 20 | 4 | 13 | 12 | 12 | 12 | – | 170x105mm Oval Flying |
+
+**Unit Composition**
+
+- 1 Vampire Hunter
+
+**Wargear**
+
+- Hull (Front) Mounted Scatter Laser
+- Improved Holo-Fields
+- Two Hull (Front) Mounted Pulsars
+- Two Hull (Front) Mounted Twin-linked Phoenix Missile Launchers
+
+**Unit Type**
+
+- Vehicle (Flyer, Hover, Lumbering)
+
+**Special Rules**
+
+- Agile
+- Deep Strike
+- Strafing Run
+
+### Vampire Raider — 600 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Vampire Raider | 20 | 4 | 13 | 12 | 12 | 12 | 32 | 170x105mm Oval Flying |
+
+**Unit Composition**
+
+- 1 Vampire Raider
+
+**Wargear**
+
+- Hull (Front) Mounted Scatter Laser
+- Improved Holo-Fields
+- Two Hull (Front) Mounted Gravis Shuriken Cannons
+
+**Unit Type**
+
+- Vehicle (Flyer, Hover, Lumbering, Transport)
+
+**Special Rules**
+
+- Agile
+- Deep Strike
+- Strafing Run
+
+**Access Points**
+
+- One access point on its rear.
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Vampire Raider may exchange its Two Hull (Front) Mounted Gravis Shuriken Cannons for: |  |
+| – Two Hull (Front) Mounted Twin-linked Pulse Lasers | +25 points |
+| A Vampire Raider may take: |  |
+| – Two Hull (Front) Mounted Twin-linked Phoenix Missile Launchers | +25 points |
+| A Vampire Raider may take (reduces Transport Capacity to 22): |  |
+| – One Centreline Mounted Pulsar | +50 points |
+
+### Wraithknight — 500 pts
+
+| Model | M | WS | BS | S | Front | Side | Rear | I | A | HP | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Wraithknight | 16 | 5 | 5 | 10 | 13 | 13 | 12 | 4 | 4 | 8 | 120x92mm Oval |
+
+**Unit Composition**
+
+- 1 Wraithknight
+
+**Wargear**
+
+- Holo-Fields
+- Two Arm Mounted Heavy Wraithcannons
+
+**Unit Type**
+
+- Vehicle (Asuryani, Knight)
+
+**Special Rules**
+
+- It Will Not Die (5+)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| May select up to two of the following, in any combination: |  |
+| – Hull (Front) Mounted Scatter Laser | +10 points |
+| – Hull (Front) Mounted Shuriken Cannon | +10 points |
+| – Hull (Front) Mounted Starcannon | +15 points |
+| May exchange an Arm Mounted Heavy Wraithcannon for one of the following: |  |
+| – Arm Mounted Ghostglaive | Free |
+| – Arm Mounted Scattershield | Free |
+| – Arm Mounted Suncannon | Free |
+
+## Fortifications
+
+### Holo-Field Defence Line — 35 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Holo-Field Defence Line | – | – | – | – | – | – | – | No base |
+
+**Unit Composition**
+
+- 4 Double Holo-Field Sections
+- 4 Single Holo-Field Sections
+
+**Unit Type**
+
+- Fortification (Barricade)
+
+**Special Rules**
+
+- Holo-Emitter
+- Multi-Part Fortification
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| A Holo-Field Defence Line may take one of the following: |  |
+| – Sky Lance | +25 points |
+| – Vibro Disruptor | +35 points |
+
+### Webway Gate — 75 pts
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Webway Gate | – | – | 13 | 13 | 13 | 4 | – | No base |
+
+**Unit Composition**
+
+- 2 Wraithbone Arches
+
+**Wargear**
+
+- Power Field
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Mysterious Statuary
+- Webway Strike
+
+## Primarch
+
+### Avatar of Khaine — 750 pts
+
+*Kaela Mensha Khaine Incarnate, War-God of the Aeldari*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Avatar of Khaine | 10 | 8 | 5 | 8 | 8 | 8 | 6 | 6 | 10 | – | 80mm |
+
+**Unit Composition**
+
+- 1 Avatar of Khaine
+
+**Wargear**
+
+- Molten Body
+- The Wailing Doom
+
+**Unit Type**
+
+- Daemon Primarch (Asuryani, Gargantuan, Unique)
+
+**Special Rules**
+
+- A Bloody-Handed God
+- Fear (2)
+- Fearless
+- Fleet (1)
+- Hammer of Wrath (3)
+- Khaine Awakened
+
+## Special Rules
+
+These rules work alongside the official Horus Heresy special rules, under the Core Rulebook's rules and conventions. Unit-specific rules from the datasheets are included here.
+
+### A Bloody-Handed God
+
+Unlike other Daemon Primarchs, an Avatar of Khaine may never be the Warlord and may not select a Warlord Trait; choose another eligible model instead. It may never join or be joined by any other model or unit, and may not be given any Retinue during army selection.
+
+### Acrobatic
+
+A unit made up entirely of models with this rule that Runs in the Movement phase may still declare a Charge in the Assault phase of the same turn. These models attack at their normal Initiative step after successfully Charging through Difficult or Dangerous Terrain, but still suffer any Charge roll penalties from that terrain.
+
+### Agent of Pandemonium
+
+The model gains the Phantasmancy Psychic Discipline, plus the Thaumaturgy and Telepathy disciplines from the Core Rulebook (page 322).
+
+### Agile
+
+The model may re-roll failed Shrouded Damage Mitigation rolls.
+
+### Aspect Ascendant
+
+An Aspect Exarchs unit is selected as any other unit, using one Force Organisation slot. Before the first turn and before deployment, every model in it must be assigned to another unit from the same Detachment; an Exarch not assigned is immediately slain.
+
+- Each Exarch may only be assigned to a unit without the Character Sub-type (or Phoenix Lord Unit Type) that has the matching Aspect Shrine (X) rule. No more than one Exarch per unit.
+- Once assigned, the Exarch is part of that unit and may not leave it for any reason.
+- No Victory points are ever scored for removing an Exarch as a casualty.
+- The Exarch does not gain access to the unit's additional Wargear options.
+
+### Aspect Shrine (X)
+
+The bracketed value names the model's Aspect Shrine. For each model in a Detachment with the Character Sub-type (or Phoenix Lord Unit Type) and a given Aspect Shrine (X), the Detachment may include up to one other non-Character unit with the matching Aspect Shrine (X). These units still need available Force Organisation slots. Dedicated Transports do not count towards these limits.
+
+### Battle Focus
+
+A unit made up entirely of models with this rule may Run in its Movement phase and still shoot in the following Shooting phase. If it does, all its shooting attacks that phase are resolved at BS 2.
+
+### Bio-Cataclysm
+
+If a model with a Toughness Characteristic is slain by a weapon with this rule, centre a Large Blast (5") marker over it. All models under the marker suffer an automatic hit at Strength 5, AP 5, with Ignores Cover. Models slain this way do not generate further Bio-Cataclysm markers.
+
+### Bio-Explosive
+
+If a model is slain by a weapon with this rule, centre a Small Blast (3") marker over it. All models under the marker suffer an automatic hit at Strength 5, AP 4, with Ignores Cover. Models slain this way do not generate further Bio-Explosive markers.
+
+### Blade Spirit
+
+The Controlling Player may re-roll all failed To Hit rolls of 1 for attacks made with a weapon with this rule.
+
+### Bonesinger Companions
+
+A Bonesinger Conclave is selected as any other unit, using one Force Organisation slot. Before the first turn and before deployment, every Bonesinger must be assigned to another unit from the same Detachment.
+
+- Bonesingers may only be assigned to Guardian Defenders, Storm Guardians, or Vaul's Wrath Support Batteries. No more than one Bonesinger per unit.
+- Once assigned, the Bonesinger is part of that unit and may not leave it; if the unit is removed as a casualty, so is the Bonesinger.
+- No Victory points are ever scored for removing a Bonesinger as a casualty.
+- The Bonesinger gains the unit's special rules (except those that forbid it) and Unit Sub-types, but not access to its additional Wargear options.
+
+### Breath of Khaine
+
+When attacking with Wall of Death (Core Rulebook, page 248), a weapon with this rule inflicts D6 Hits instead of D3.
+
+### Brutal Ambush
+
+The unit has Shrouded (5+) until the first time it is locked in combat. It then loses Shrouded (5+) and gains Rage (2) and Counter-Attack (1).
+
+### Communion of Minds
+
+Models with this rule in a unit containing several of them must cast Psychic Powers as a group, using the majority Leadership. When a power is manifested, choose one model as the originating model for measuring ranges. The unit's current number of models with this rule sets its Psychic Mastery, replacing any other version they had:
+
+- 1–3 models: Psychic Mastery (1).
+- 4–6 models: Psychic Mastery (2).
+- 7–10 models: Psychic Mastery (3).
+
+Models in the unit without this rule are unaffected.
+
+### Crack Shot
+
+The model may re-roll a single failed To Hit, To Wound, or Armour Penetration roll per turn.
+
+### Dawn of Twilight
+
+In any mission where the Night Fighting rules are in effect, a player whose army includes Irillyth may choose to use Night Fighting without rolling. The Controlling Player may also re-roll any dice rolled to see whether Night Fighting stays in effect during a Game Turn.
+
+### Dimensional Edge (X)
+
+A weapon with this rule only ever wounds on the value X. No Saves or Damage Mitigation rolls of any kind may be taken against its Wounds.
+
+### Disarming Strike
+
+Before rolling To Hit in a challenge, Jain Zar may nominate one of the opposing model's melee weapons. Both models roll a D6 and add their Weapon Skill; the higher result wins.
+
+- If the opponent wins, Jain Zar reduces her Attacks by 3 for that Assault phase.
+- If Jain Zar wins, she reduces her Attacks by 1 for that Assault phase, and the opposing model counts as no longer equipped with the nominated weapon for that phase.
+- These modifiers ignore the Phoenix Lord Unit Type's usual restrictions.
+
+### Distortion Impalement
+
+A weapon with this rule ignores Void Shields on its target. Before firing it, roll a D6: on a 6, the attack is resolved with the Vortex special rule.
+
+### Dragon of Myth
+
+At the start of any Fight sub-phase, each model with this rule in base contact with an enemy makes D3 additional attacks at Initiative step 10. They are resolved at Strength 4, AP –, and count as Flame attacks.
+
+### Embrace of Death (X)
+
+A model attacking with a weapon with this rule makes X attacks with it at Initiative step 10, regardless of its Attacks and any bonuses (including Charging). The weapon may only be used in the first round of a combat, and may be used even after a Disordered Charge.
+
+### Fast Shot
+
+The model adds one to the number of shots fired when making a Shooting Attack with a Heavy weapon.
+
+### Favoured of Khaine
+
+All units made up entirely of Asuryani models that can draw line of sight to at least one model with this rule gain +1 Leadership (to a maximum of 10).
+
+### Flexible Tactics
+
+At the beginning of the Controlling Player's turn, a unit containing models with this rule must choose one Tactic. Only models with Flexible Tactics benefit.
+
+- **Defensive Posture:** If at least half the unit's models are within 6" of an Objective, all models gain Battle-Hardened (1), Feel No Pain (5+), and Stubborn.
+- **Offensive Rush:** When the unit makes a Shooting Attack, each weapon makes one additional shot (Assault 2 becomes Assault 3, and so on).
+
+### Flickerjump
+
+The unit may make the Flickerjump Advanced Reaction.
+
+**Flickerjump (Advanced Reaction):** May be made in the opposing player's Shooting phase when an enemy unit declares a Shooting Attack targeting a friendly unit made up entirely of models with Flickerjump. Before the attack is resolved, the target unit moves 2D6" in any direction; this distance cannot be modified. On a double 1, one model from the unit is removed as a casualty. If the attack is no longer valid after the move (no line of sight or out of range, for example), the Active player may not choose a new target and no attacks are made.
+
+### Gathering Storm
+
+When a weapon with this rule resolves an attack with a Large Blast (5") marker, leave the marker in play until the end of the Controlling Player's next turn. If the weapon places another Large Blast (5") marker within 3" of the original, the attack may instead be resolved with an Apocalyptic Blast (10") marker. Afterwards, remove all markers used in that attack.
+
+### Ghostlight
+
+When a unit with more than one model armed with Ghostlight weapons shoots, it may combine its fire. Select one model; no other model in the unit may fire a Ghostlight weapon that phase. The selected model shoots with its Ghostlight weapon (if it has several Ghostlight profiles, choose one; if only one profile has Ghostlight, use that one).
+
+For every two additional models in the unit with a Ghostlight weapon that can see the selected model, apply one of the following bonuses (the same bonus may be chosen more than once):
+
+- +6" Range.
+- +1 Strength (to a maximum of 10).
+- –1 AP (to a minimum of 1).
+- +1 shot.
+
+### Ghoststrike
+
+On any turn in which Irillyth charges a unit that has suffered at least one successful Hit from a Ghostlight weapon, the Spear of Starlight's Wanelight Glaive profile becomes Strength +3 and gains Armourbane (Melee) and Murderous Strike (5+) until the end of that player turn.
+
+### Guardian Artillerists
+
+A Vaul's Wrath Support Battery needs one Guardian Crew per Support Weapon for all Support Weapons to shoot. If at the start of a Shooting phase it has fewer Guardian Crew than Support Weapons, only as many Support Weapons as there are Crew may shoot. While the unit has at least as many Crew as Support Weapons, it cannot be Pinned and automatically passes Pinning tests.
+
+### Guardian Officers
+
+A Guardian Officer Cadre is selected as any other unit, using one Force Organisation slot; a Cadre of three or more models at list creation uses no slot. Before the first turn and before deployment, every model in it must be assigned to another unit from the same Detachment.
+
+- Guardian Officers may only be assigned to Guardian Defenders, Storm Guardians, or Vaul's Wrath Support Batteries. Skyrunner Officers may only be assigned to Windriders or Windrider Support Squads. No more than one Officer per unit.
+- Once assigned, the Officer is part of that unit and may not leave it, but functions as normal if it is the sole survivor.
+- No Victory points are ever scored for removing an Officer as a casualty.
+- The Officer gains the unit's special rules (except those that forbid it) and Unit Sub-types, but not access to its additional Wargear options.
+
+### Guardian of the Gates
+
+A model with this rule may only be selected in an army that also includes a Webway Gate. It must be assigned to Reserves and deployed using the Webway Strike rule.
+
+### Harrow-Lord
+
+Any unit that loses a model as a casualty in the Shooting phase to an attack from a model with this rule must take a Morale check as if it had suffered 25% casualties.
+
+### Herald of Victory
+
+A unit containing at least one model with this rule always counts as rolling a Hit on the scatter die when making a Deep Strike Assault.
+
+### Holo-Emitter
+
+The model is a Barricade and gives a 5+ Cover Save to models it obscures. Wounds from Blast attacks against a model claiming cover from it must be re-rolled.
+
+### Inescapable Accuracy
+
+Successful Shrouded Damage Mitigation rolls and Countermeasures Saves made against this model's Shooting Attacks must be re-rolled.
+
+### Iron Resolve
+
+A unit containing one or more models with this rule automatically passes Pinning tests, Regroup tests, and Morale checks, and ignores the Fear special rule.
+
+### Khaine Awakened
+
+All friendly Asuryani units within 12" of the Avatar of Khaine that can draw line of sight to it gain Rage (2) and Stubborn.
+
+### Legacies of the Fall
+
+The model has Hatred (Daemons). The unit also suffers –1 Leadership while locked in a combat that includes at least one Daemon model; this stacks with other Leadership penalties.
+
+### Linked Fire
+
+When a unit of more than one model, made up entirely of models armed with Linked Fire weapons, shoots, it may make a Linked Fire attack. Select one model; no other model in the unit may fire a Linked Fire weapon that phase. If the weapon has several Linked Fire profiles, choose one; if only one profile has Linked Fire, use that one.
+
+For each additional model in the unit with a Linked Fire weapon that can see the selected model, apply one of the following bonuses (the same bonus may be chosen more than once):
+
+- +2 Strength.
+- +1 to rolls on the Vehicle Damage table.
+- +1 shot.
+- Brutal (2), or +2 to an existing Brutal (X) value.
+
+### Mark of Kurnous
+
+At the start of the controlling player's Shooting phase, the unit may select an enemy unit within 12" of any of its models. Until the end of that phase, the unit loses any Firing Protocols (X) it has and instead gains Ignores Cover for Shooting Attacks against the selected unit.
+
+### Monofilament
+
+When rolling To Wound normally against a non-Vehicle model, use the target's Initiative instead of its Toughness; Toughness still decides Instant Death.
+
+Any unit hit by one or more Monofilament attacks takes an Initiative test once the attack is resolved. If failed, it reduces its Initiative and Movement by 2 until the end of its Controlling Player's next turn. These penalties are cumulative and apply to later Initiative tests, but models with a starting Wounds of 6 or more cannot have their Characteristics reduced this way.
+
+### Mysterious Statuary
+
+After Deployment Zones are determined, but before other models deploy, the Webway Gate must be set up:
+
+- Place the 2 Wraithbone Arches to form an arch with their bases 5" apart.
+- It must be at least 6" from the opposing player's Deployment Zone.
+- It may not be placed in Difficult, Dangerous, or Impassable Terrain, or inside a Building or Fortification.
+
+Asuryani units gain Stubborn while within 3" of a Webway Gate. Any model in cover behind a Wraithbone Arch has a 5+ Cover Save.
+
+### Open-Topped (X)
+
+Up to X models Embarked on a Transport with this rule may shoot in the Controlling Player's Shooting phase, measuring from the hull. They count as having moved, which may stop some weapon types firing. Abilities that replace a Shooting Attack (such as Psychic Powers or Cybertheurgic Rites) may not be used. These shots may target a different unit from the Transport's, but Reactions to them target the Transport. Rules that let a unit count as Stationary (such as Relentless) do not apply while embarked. Rolls on the Vehicle Damage table against this model add +1.
+
+### Paired Weapons
+
+A model armed with a weapon with this rule gains an extra Attack.
+
+### Path of Command
+
+If the army has any models with Path of Command in its Primary Detachment, one of them must be the Warlord. Models in the same Detachment as that Warlord, and with the same Aspect Shrine (X) as the Warlord (if it has one), gain the Line Sub-type.
+
+### Path of the Dead
+
+The model gains the Runes of Twilight Psychic Discipline, plus Thaumaturgy from the Core Rulebook (page 322).
+
+- The army may select up to two Wraith units in the same Detachment per model with this rule. A model with both this rule and the Wraith Sub-type counts against its own allowance.
+- A model with this rule and Independent Character may join a unit of Automata with the Wraith Sub-type (the unit must have both).
+
+### Path of the Farseer
+
+The model gains the Runes of Fate Psychic Discipline, plus Divination, Telepathy, and Thaumaturgy from the Core Rulebook (page 322).
+
+### Path of the Shaper
+
+All Infantry models in a unit including at least one model with this rule gain Feel No Pain (5+). This does not stack for multiple models with the rule, and Grav-Platform models do not benefit.
+
+At the start of the Controlling Player's Shooting phase, the model may give up conferring Feel No Pain (5+) and gain Battlesmith (3+) instead. It may use Battlesmith as normal, or use it on a Grav-Platform model to restore a single lost Wound, affecting any applicable friendly model within 6". This lasts until the start of the Controlling Player's next turn, when the model loses Battlesmith (3+) and regains Feel No Pain (5+).
+
+### Ponderous Aim
+
+A weapon with this rule cannot be fired as part of a Reaction or used to Snap Shoot.
+
+### Precise Throw
+
+Immediately after a unit completes a Deep Strike Assault, one model in it may make a Shooting Attack with a weapon with this rule; only one model per unit may do so. This counts as a Shooting Attack in the Movement phase. The unit may still shoot in the following Shooting phase, but must target the same unit, and cannot shoot if no viable targets remain in it. The weapon cannot be used in any other situation.
+
+### Psychic Mastery (X)
+
+The model may cast up to X Psychic Powers per phase, despite the normal limits. A Psychic Power counted as a Shooting Attack counts as one power or weapon for this rule, and each power or weapon may only be cast once per phase.
+
+### Riposte (X)
+
+Models attacking a model wielding a weapon with this rule subtract X from their Weapon Skill.
+
+### Runes of Warding
+
+Any enemy model within 18" and line of sight of a model with this rule reduces its Leadership by 3 when making Psychic checks. This is not cumulative; no model suffers penalties from more than one model with this rule.
+
+### Runes of Witnessing
+
+Once per Game Turn, the model may re-roll any number of dice when making a Psychic check.
+
+### Scorpion's Sting (X)
+
+The model causes X immediate Hits with this weapon at Initiative step 10, but may not assign any further attacks to it. This does not grant an additional Pile In move.
+
+### Seer Council Retinue
+
+In a Detachment with at least one Path of the Farseer model, a Seer Council may be selected as a Retinue Squad instead of an Elites choice. Choose one Path of the Farseer model from the same Detachment as its Leader.
+
+- The Retinue Squad uses no Force Organisation slot, counts as part of the Leader's unit, and does not count towards 0-1 limits.
+- It must deploy with the Leader, who may not voluntarily leave it.
+- All its models gain Chosen Warriors.
+- If the Leader has a Skyrunner Jetbike, the whole squad must have Skyrunner Jetbikes; if not, none may.
+
+### Shadow of Death
+
+An enemy unit with at least one model within 12" of a model with this rule rolls an additional D6 for any Leadership check, discarding the lowest. Fearless models are not affected.
+
+### Shield of Grace
+
+Whenever Asurmen fights in a Challenge, his Invulnerable Save improves to 3+.
+
+### Skilled Rider
+
+The model may Run in the Movement phase and still fire a single ranged weapon in the Shooting phase, at BS 2. These To Hit rolls cannot be improved by any source. A unit that uses this rule may not use Firing Protocols (X) in the same Game Turn.
+
+### Skyhunter
+
+When the model moves Flat Out, it moves up to triple its Movement instead of double.
+
+### Skyleap
+
+At the beginning of the Controlling Player's Movement phase, a unit made up entirely of models with this rule that is not locked in combat may be placed back into ongoing Reserves. It may then be assigned to a Deep Strike Assault as normal on the next player turn.
+
+### Skystrike
+
+At the end of the Movement phase, the unit may make one Attack per model against an enemy Flyer it moved over that turn. It hits automatically on a 4+ and is resolved at Strength 4, AP 4, with Haywire. Vehicles are hit on their Side Armour. Only one target per turn.
+
+### Sonic Pulse
+
+Place the Blast (3") marker touching the weapon's barrel. Instead of scattering it, move it in a straight line away from the firer, in any direction within the weapon's 45° forward arc, until it reaches maximum range or leaves the battlefield. Every model it passes over suffers one automatic Hit. Flyers cannot be hit. Knights, Titans, Super-Heavy Vehicles, Buildings, and Fortifications are hit at Strength 8.
+
+### Sonic Wave
+
+As Sonic Pulse, but using a Large Blast (5") marker. Flyers are hit if the marker passes over their base. Knights, Titans, Super-Heavy Vehicles, Buildings, and Fortifications are hit at Strength 10.
+
+### Soul-Shatter
+
+Successful Invulnerable Saves against Wounds from a weapon with this rule must be re-rolled.
+
+### Soul Forfeit
+
+The model never awards Victory Points when slain, and does not count towards units slain at the end of the battle. It does not count as a Scoring or Denial unit.
+
+### Soul Tear
+
+A unit including a Psyker and a weapon or ability with this rule may activate it before attacking with that weapon or resolving that ability, by making a single Psychic check with any Psyker in the unit.
+
+- Pass: for that phase, attacks with Soul Tear gain Armourbane (Melee), Armourbane (Ranged), and Fleshbane, and count as having Force for any rule affected by it.
+- Fail: no benefit, but the unit attacks as normal.
+
+### Stalker
+
+In the first round of a Challenge, the model gains bonus attacks equal to the amount by which its Initiative exceeds its opponent's. No effect if its Initiative is equal or lower.
+
+### Sun's Brilliance
+
+Shooting Attacks made as part of an Interceptor Reaction against a unit containing a model with this rule are resolved as Snap Shots. Models immune to Blind are not affected.
+
+### The Runes of War
+
+The model does not pick Psychic Powers individually. It knows the Thaumaturgy Discipline and all powers from the Runes of Battle Discipline. When it is part of any unit that is not a Seer Council, it instead picks a single power from the Runes of Battle.
+
+### Transport Skiff
+
+The model gains Infantry Transport and Assault Vehicle, and counts as a Vehicle for those rules and the Transport Sub-type. When it loses its last Wound, all models embarked suffer a S6, AP – hit, allocated by the Controlling Player. Survivors are placed where the model was (or as close as possible) in coherency and at least 1" from enemies; any that cannot be placed are removed. The unit then takes a Pinning test.
+
+### Unquenchable Resolve
+
+At the end of any phase in which the model suffers one or more unsaved Wounds, its Strength and Attacks increase by 1 for each unsaved Wound. These bonuses last for the rest of the game. Damage Mitigation rolls do not prevent this.
+
+### Vector Dancer
+
+The Flyer may make an additional 90° pivot at the end of its move in the Controlling Player's Movement phase.
+
+### Vortex
+
+Once an attack with this rule is resolved, its Blast markers stay in play for the rest of the battle as Vortex markers. The area under one is Area Terrain with these effects:
+
+- No line of sight may be drawn through, into, or out of it.
+- Any model that enters it, or begins its Controlling Player's Movement phase in it, suffers one Str 10, AP 1 Hit with Instant Death and Armourbane (Melee). A Vehicle suffering a Penetrating Hit this way adds +3 to its Vehicle Damage roll.
+- It gives no Cover Save, and models inside may not use Cover Saves from any other source.
+
+### War Shout
+
+On a turn in which a unit containing a model with this rule charges or is successfully charged, enemy models locked in that combat suffer –1 Weapon Skill (to a minimum of 1).
+
+### Warlord: Cry of the Wind
+
+Baharroth automatically has this Trait if he is the Warlord and may not select any other. Swooping Hawk Aspect Shrine models in his army gain Hit & Run and Reaping Blow (1). An army with Baharroth gains an additional Reaction in the opposing player's Movement phase while he has not been removed as a casualty.
+
+### Warlord: Fate Reader
+
+Eldrad Ulthran automatically has this Trait if he is the Warlord and may not select any other. At the start of the battle, before deployment, up to three Infantry or Cavalry units in the army may be given Infiltrate and Scout. The army may make an additional Reaction in any one phase of the Controlling Player's choice once per turn while the Warlord has not been removed as a casualty.
+
+### Warlord: Hand of Asuryan
+
+Asurmen automatically has this Trait if he is the Warlord and may not select any other. All other Aspect Shrine (X) models in his army gain Stubborn; Dire Avenger Aspect Shrine models may also use his Leadership instead of their own. The army may make an additional Reaction in any one phase per turn (not declared in advance) while the Warlord has not been removed as a casualty.
+
+### Warlord: Rhana Dandra
+
+Fuegan automatically has this Trait if he is the Warlord and may not select any other. Fire Dragon Aspect Shrine models in his army gain Dragon of Myth and Feel No Pain (5+). The army may make an additional Reaction in the Shooting phase while the Warlord has not been removed as a casualty.
+
+### Warlord: Reaper of Souls
+
+Irillyth automatically has this Trait if he is the Warlord and may not select any other. Shadow Spectre Aspect Shrine models in his army gain Ignores Cover and Night Vision. An army with Irillyth gains an additional Reaction in the opposing player's Shooting phase while he has not been removed as a casualty.
+
+### Warlord: Storm of Silence
+
+Jain Zar automatically has this Trait if she is the Warlord and may not select any other. Howling Banshee Aspect Shrine models in her army gain Crusader and Furious Charge (1). The army may make an additional Reaction in the Assault phase while the Warlord has not been removed as a casualty.
+
+### Warlord: The Duellist's Fury
+
+Karandras automatically has this Trait if he is the Warlord and may not select any other. On a turn in which a Striking Scorpion Aspect Shrine unit charges or is successfully charged, it gains Riposte (1) and +1 to its Counter-Attack (X) and Rage (X) values. The army may make an additional Reaction in the Assault phase while the Warlord has not been removed as a casualty.
+
+### Warlord: The Lancer's Charge
+
+Drastanta automatically has this Trait if they are the Warlord and may not select any other. Once per game, in the Controlling Player's Charge phase, declare a Lance Charge: until the end of that Charge phase, Shining Spear Aspect Shrine models in the army roll an additional die for Charge distance and discard the lowest, and count their Hammer of Wrath (X) as one higher. The army may make an additional Reaction in the Movement phase while the Warlord has not been removed as a casualty.
+
+### Warlord: The Reaper's Gaze
+
+Maugan Ra automatically has this Trait if he is the Warlord and may not select any other. After deployment, but before the first turn, nominate a single enemy unit. Dark Reaper Aspect Shrine models gain Precision Shots (5+) and Precision Strikes (5+) when attacking it. The army may make an additional Reaction in the Shooting phase while the Warlord has not been removed as a casualty.
+
+### Webway Strike
+
+Before Game Turn 1, when placing units in Reserve, a player with a Webway Gate may assign one or more Reserve units to a Webway Strike.
+
+- From Turn 2, the Controlling Player may deploy one assigned unit per turn without a Reserve roll, moving on as though the line between the Wraithbone Arches were their battlefield edge.
+- Enemy units with models within 6" of the arriving unit take an immediate Pinning test. Then any enemy units not Pinned or Falling Back, and in line of sight and range, may make the Interceptor Advanced Reaction against it. No other Reaction may be made against this deployment.
+- The arriving unit may not Move or Run that Movement phase, but may Shoot and Assault as normal.
+- If no Wraithbone Arch remains in play, units assigned to a Webway Strike return to Reserves.
+
+### Whirlwind of Death
+
+Maugan Ra may fire The Maugetar twice in the Controlling Player's Shooting phase, and these attacks may target different units.
+
+### Wraith Conclave
+
+When deployed (at the start of the battle or from Reserves), all models in the unit are placed in coherency, but afterwards each operates independently as its own unit, including for Victory Points and Units Destroyed.
+
+### Wraithbone Core
+
+The model ignores all Psychic Powers and Cybertheurgic Rites, and attacks by Psychic and Cybertheurgic Weapons. It also ignores Haywire and Disruption (X); such weapons must damage it normally using their Strength. When destroyed, its Catastrophic Damage is resolved at AP 2.
 
 ## Wargear
 
@@ -997,6 +4605,243 @@ A model equipped with venom sails gains Fleet (2). If it already has Fleet, incr
 
 A model equipped with a webway rift generator gains Deep Strike. In addition, friendly units arriving from Reserves within 6" of one or more such models may re-roll Reserve rolls and Scatter dice when deploying via Deep Strike.
 
+### Armour and Shields
+
+#### Armour of the Last Runes
+
+3+ Invulnerable Save.
+
+#### Aspect Armour
+
+confers a 4+ Armour Save and 5+ Invulnerable Save.
+
+#### Forceshield
+
+5+ Invulnerable Save.
+
+#### Heavy Aspect Armour
+
+confers a 3+ Armour Save and 5+ Invulnerable Save.
+
+#### Heavy Mesh Armour
+
+confers a 4+ Armour Save.
+
+#### Holo-Fields
+
+5+ Invulnerable Save against Shooting Attacks, unless Immobilised.
+
+#### Holo-Suit
+
+4+ Invulnerable Save.
+
+#### Improved Forceshield
+
+4+ Invulnerable Save.
+
+#### Improved Holo-Fields
+
+4+ Invulnerable Save against Shooting Attacks, unless Immobilised.
+
+#### Phoenix Armour
+
+confers a 2+ Armour Save and 4+ Invulnerable Save.
+
+#### Rune Armour
+
+4+ Invulnerable Save.
+
+#### Scattershield
+
+5+ Invulnerable Save.
+
+#### Serpentscale Shield
+
+The unit has a 5+ Invulnerable Save against all Shooting Attacks.
+
+#### Wraithform Shield
+
+6+ Invulnerable Save.
+
+#### Molten Body
+
+Provides a 3+ Invulnerable Save. Flame, Melta, and Volkite weapons can never wound the model; any such Wounds allocated to it are discarded. When the model loses its last Wound, before it is removed, all models (friend and enemy) within D6+6" suffer an automatic Hit at Str 8, AP –.
+
+#### Power Field
+
+Provides a 5+ Invulnerable Save. A model with Wounds that suffers an unsaved Instant Death Wound is not removed outright, but loses D3 Wounds for each such Wound. When the model loses its last Wound or Hull Point, before it is removed or replaced with a Wreck, all models (friend and enemy) within D6" suffer an automatic Hit at Str 8, AP –.
+
+#### Wave Serpent Shield
+
+Provides a 6+ Invulnerable Save against Shooting Attacks on the Front or Side Armour. Once per game, it may instead fire a Shield Blast (see Armoury), counted as a Hull (Front) Mounted weapon. After the Shield Blast, the model loses the 6+ Invulnerable Save for the rest of the battle.
+
+#### Wraithshield
+
+Provides a 4+ Invulnerable Save. A model with Wounds that suffers an unsaved Instant Death Wound is not removed outright, but loses D3 Wounds for each such Wound. When the model loses its last Wound or Hull Point, before it is removed or replaced with a Wreck, all models (friend and enemy) within D6" suffer an automatic Hit at Str 8, AP –.
+
+### Jetbikes and Engines
+
+**Charge sub-phase move:** A model with any of the jetbikes below may move up to its unmodified Initiative at the start of the Controlling Player's Charge sub-phase. If it does, it may not declare a Charge.
+
+#### Raptor Jetbike
+
+A model with a Raptor Jetbike becomes Cavalry (Antigrav), M 18 and gains Battle-Hardened (1), Deep Strike, Firing Protocols (3), Fleet (2), Hammer of Wrath (1), Hit & Run, Infiltrate, Relentless, Scout, Shrouded (5+). The model keeps any other Unit Sub-types it had.
+
+#### Skyweaver Jetbike
+
+A model with a Skyweaver Jetbike becomes Cavalry (Antigrav), M 18 and gains Battle-Hardened (1), Deep Strike, Firing Protocols (2), Fleet (2), Hammer of Wrath (1), Hit & Run, Relentless, Shrouded (5+). The model keeps any other Unit Sub-types it had.
+
+#### Starweaver Skimmer
+
+A model with a Starweaver Skimmer becomes Cavalry (Antigrav), M 16, 3+ Armour Save and gains Deep Strike, Firing Protocols (2), Fleet (2), Hammer of Wrath (1), Hit & Run, Relentless, Shrouded (5+). The model keeps any other Unit Sub-types it had.
+
+#### Vyper Jetbike
+
+A model with a Vyper Jetbike becomes Cavalry (Antigrav), M 16 and gains Deep Strike, Firing Protocols (2), Fleet (2), Hammer of Wrath (2), Hit & Run, Relentless, Shrouded (5+). The model keeps any other Unit Sub-types it had.
+
+The model keeps any other Unit Sub-types it had.
+
+#### Khaine's Destrier
+
+Drastanta's unique jetbike. Drastanta gains:
+
+- Two Master-crafted Shuriken Cannons.
+- The Charge sub-phase move above.
+- May join units that include Cavalry despite the usual restrictions, and counts as having the Cavalry Unit Type in addition to its others, including for rules that target Cavalry.
+- Deep Strike, Firing Protocols (3), and Hammer of Wrath (2).
+
+#### Revenant Jump Engines
+
+At the start of the Controlling Player's Movement phase, the model may add +16" to its Movement for that turn (up to 32"), gaining all benefits of that Movement including Charge distance. While activated it ignores terrain when Moving and Charging (but may not end in Impassable Terrain), and may move over friendly and enemy models, ending at least 1" from other units. It may not be activated during a Reaction.
+
+#### Star Engines
+
+The model moves an additional 3" when making Movement Reactions.
+
+#### Vectored Engines
+
+When targeted by a Shooting Attack in the opposing player's turn, if the Reactive Player chooses to have the model react, it may first pivot on the spot to face any direction.
+
+#### Webway Shunt Generator
+
+Once per game, in the Controlling Player's Movement phase before moving, the model may instead be placed anywhere on the board and follow the Deep Strike Assault procedure (Core Rulebook, page 310), counting as having passed its Reserve roll. It cannot charge that turn.
+
+### Movement Packs
+
+#### Spectre Jet Pack
+
+A unit made up entirely of models with Spectre Jet Packs may add +7" to its Move and ignore terrain in the Movement phase. It must still test for Dangerous Terrain when beginning or ending in it, and treats Difficult Terrain as Dangerous.
+
+- It may make an extra 7" Move in the Shooting phase after shooting, ignoring terrain the same way.
+- Any Reaction Move is increased by 7" and ignores terrain the same way.
+- The model gains Bulky (2) and Deep Strike, or Bulky (3) if it already has Bulky (2).
+
+#### Swooping Hawk Wings
+
+At the start of the Controlling Player's Movement phase, or when deploying by Deep Strike Assault, the model may set its Move to 16" for that turn, gaining all benefits of that Movement including Charge distance. While activated it ignores terrain when Moving and Charging (still testing for Dangerous Terrain), and may move over friendly and enemy models, ending at least 1" from other units. The model gains Bulky (2) and Deep Strike, or Bulky (3) if it already has Bulky (2).
+
+#### Warp Jump Generator
+
+A unit made up entirely of models with Warp Jump Generators may set its Move to 14" and move in any direction, ignoring Difficult, Dangerous, and Impassable Terrain. It must still test for Dangerous Terrain when beginning or ending in it, and treats Difficult Terrain as Dangerous.
+
+- It may make an extra 7" Move in the Shooting phase after shooting, ignoring terrain the same way.
+- Any Reaction Move (except Flickerjump) is increased by 7" and ignores terrain the same way.
+- The model gains Bulky (2) and Deep Strike, or Bulky (3) if it already has Bulky (2).
+
+### Other Wargear
+
+#### Augury Scanner
+
+A unit with at least one Augury Scanner gains:
+
+- Enemy models cannot deploy using Infiltrate within 18" of it.
+- It ignores the 24" line of sight limit for Shooting Attacks under Night Fighting.
+- When an enemy unit deploys from Reserves, it may make the Interceptor Advanced Reaction (Core Rulebook, page 309) without spending a Reaction point. This does not allow more than one Reaction per phase, but may exceed the normal three-Reaction limit.
+
+#### Banshee Mask
+
+In the Assault phase, the Reactive player may not make Reactions targeting a unit that contains a model with a Banshee Mask. This does not apply if the unit makes a Disordered Charge.
+
+#### Comm-Bead
+
+While a model with a Comm-Bead is on the battlefield and not Embarked, the Controlling Player may re-roll Scatter rolls (for attacks or deployment) if the model has line of sight to the target unit or point. A unit with a Comm-Bead also ignores the –1 Leadership penalty from Night Fighting.
+
+#### Craftworld Standard
+
+A unit with a Craftworld Standard adds +1 to its Wounds score for winning combat. Before rolling Fall Back distance, it may choose to Fall Back only D6" (instead of 2D6", or 3D6" for Cavalry). If forced off the battlefield edge, it stops 1" from the edge instead.
+
+#### Crystal Targeting Matrix
+
+Once per game, the model may fire a single weapon at its full Ballistic Skill in the Controlling Player's Shooting phase after moving Flat Out.
+
+#### Flip Belt
+
+A unit made up entirely of models with Flip Belts may ignore terrain and intervening friendly units while moving, including Charges, Fall Back moves, Advancing, and Reactions. It still takes Dangerous Terrain tests when beginning or ending in it, but ignores Difficult Terrain entirely.
+
+#### Ghostwalker Matrix
+
+The model has Move Through Cover. If it has the Antigrav Sub-type, it gains Pathfinder instead.
+
+#### Gloom-Field
+
+A unit containing at least one model with a Gloom-Field has Shrouded (5+).
+
+#### Guide Stones
+
+Units with Wraith models within 12" of a friendly model with Guide Stones automatically pass the Wraithsight Leadership test. A Wraith unit that has Guide Stones itself also passes its own test.
+
+#### Helical Targeting Array
+
+The Controlling Player may activate it at the start of any of their turns, or at the start of the battle if they are not taking the first turn. Until the start of their next turn:
+
+- The model may not move, Run, or make any Reactions other than Interceptor or Overwatch.
+- It may use the Skyfire special rule for its Shooting Attacks.
+- No Shrouded Damage Mitigation rolls may be made against its attacks.
+- Its Interceptor Reactions cost no Reaction point. This does not allow more than one Reaction per phase, but may exceed the normal three-Reaction limit.
+- A Vehicle with it may fire all its weapons, not just Defensive weapons, when making Interceptor.
+
+#### Mirage Launchers
+
+When a unit made up entirely of models with Mirage Launchers is targeted by a Shooting Attack, the range counts as 6" further than it is. Primarchs ignore this. Barrage attacks against the unit always scatter as though it were out of line of sight.
+
+#### Outcast Cloaks
+
+When a unit made up entirely of models with Outcast Cloaks is targeted by a Shooting Attack, the range counts as 6" further than it is. Enemies with Night Vision and Primarchs ignore this. Barrage attacks against the unit always scatter as though it were out of line of sight.
+
+#### Plasma Grenades
+
+A unit with Plasma Grenades attacks at its normal Initiative after Charging through Difficult or Dangerous Terrain, but still suffers the Charge roll penalties.
+
+In the Assault phase, a model with Plasma Grenades engaged with a Building, Fortification, Vehicle, Dreadnought, or Automata may instead inflict one automatic Str 5, AP 4 Hit with Breaching (6+) at Initiative step 1. If it does, the unit Piles In at Initiative 1, and that model may not otherwise attack or use other Hit- or Wound-inflicting rules or wargear that phase (it may still Sweeping Advance).
+
+#### Searchlights
+
+The model ignores the 24" Night Fighting line of sight limit for Shooting Attacks, but enemies targeting it ignore that limit too. Any unit it shoots at may be targeted by other units that phase ignoring the 24" limit. Searchlights are not weapons and cannot be hit by Weapon Destroyed results.
+
+#### Spirit Stones
+
+The model gains the Reinforced Sub-type.
+
+#### Terror's Lament
+
+In the Assault phase, the Reactive player may not make Reactions targeting a unit that contains a model with Terror's Lament. Enemies in base contact with that model have –1 Attacks and –1 Initiative (to a minimum of 1). This does not apply if the unit makes a Disordered Charge.
+
+#### The Crown of the Seventh Sky
+
+Drastanta and any unit they have joined may make a single Reaction in the Movement phase without spending a Reaction point.
+
+#### The Mask of Many Faces
+
+A unit with a model equipped with The Mask of Many Faces adds +2 to its Wounds score for winning combat.
+
+#### The Thirsting Mask
+
+The model has Preferred Enemy (Daemons, Corrupted).
+
+#### Wireweave Net
+
+The first time in a game a unit with a Wireweave Net is charged, the charging player suffers –3" to the Charge distance rolled.
+
 ## Armoury
 
 Weapons that already exist in 2.0 use their official profiles (flamer). The Aeldari power sword uses the 2.0 power sword profile.
@@ -1092,6 +4937,271 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 | Witch staff | – | +1 | 4 | Melee, Force, Reach (1) |
 | Witchblade | – | User | 2 | Melee, Force, Murderous Strike (6+) |
 
+### Asuryani and Saedath Weapons
+
+These weapons work alongside those in other Horus Heresy publications. Each family's weapons count as that type for rules that affect it.
+
+### Ranged Weapons
+
+#### Distortion Weapons
+
+The Aeldari kept ready access to weapons that violate the laws of physics.
+
+| Weapon | Range | Str | AP | Type |
+| D-Bombard | 72" | 14/12/10 | 1 | Destroyer 1, Apocalyptic Mega-Blast, Distortion Impalement, Instant Death |
+| D-Cannon | 24" | 10 | 2 | Ordnance 1, Barrage, Blast (3"), Murderous Strike (5+) |
+| D-Impaler | 36" | 10 | 1 | Destroyer 1, Distortion Impalement, Instant Death, Large Blast (5") |
+| D-Scythe | Template | 7 | 2 | Heavy 1, Murderous Strike (5+) |
+| Heavy Wraithcannon | 36" | 10 | 2 | Ordnance 1, Blast (3"), Murderous Strike (5+) |
+
+#### Flame Weapons
+
+Even the Aeldari could not deny the terror of a curtain of searing flame.
+
+| Weapon | Range | Str | AP | Type |
+| Khaine's Fury | Template | 5 | 4 | Assault 1, Breaching (6+), Breath of Khaine |
+
+#### Las Weapons
+
+Undisputed masters of laser technology, harnessing the heat of the stars.
+
+| Weapon | Range | Str | AP | Type |
+| Firestorm Scatter Array | 36" | 6 | 6 | Heavy 12, Pinning, Twin-linked |
+| Gravis Bright Lance | 36" | 8 | 2 | Heavy 2, Lance, Sunder |
+| Gravis Scatter Laser | 36" | 6 | 6 | Heavy 6, Pinning, Twin-linked |
+| Hawk Lasblaster | 24" | 3 | 5 | Assault 3, Pinning, Shell Shock (1) |
+| Hawk's Talon | 24" | 5 | 5 | Assault 3 |
+| Laser Lance (Ranged) | 12" | 6 | 3 | Assault 2, Lance |
+| Lynx Pulsar – Salvo Fire | 48" | 10 | 2 | Ordnance 4, Twin-linked |
+| Lynx Pulsar – Saturation Fire | 48" | 8 | 3 | Ordnance 1, Exoshock (5+), Large Blast (5"), Rending (5+) |
+| Phantom-Pulsar | 120" | 12 | 1 | Destroyer 2, Large Blast (5") |
+| Prism Blaster | 18" | 7 | 2 | Heavy 2, Ghostlight, Lance |
+| Prism Cannon – Dispersed | 60" | 5 | 3 | Heavy 1, Large Blast (5") |
+| Prism Cannon – Focused | 60" | 7 | 2 | Heavy 1, Blast (3") |
+| Prism Cannon – Lance | 60" | 9 | 1 | Ordnance 1, Lance, Linked Fire |
+| Prism Rifle – Dispersed | 18" | 4 | 4 | Heavy 1, Blast (3"), Ghostlight |
+| Prism Rifle – Focused | 18" | 6 | 3 | Heavy 1, Ghostlight, Lance |
+| Prismatic Cannon – Dispersed | 24" | 4 | 3 | Assault 1, Large Blast (5") |
+| Prismatic Cannon – Focused | 24" | 6 | 2 | Assault 1, Blast (3") |
+| Prismatic Cannon – Lance | 24" | 8 | 1 | Assault 2, Lance |
+| Pulsar | 60" | 12 | 2 | Destroyer 2, Blast (3") |
+| Revenant Pulsar | 72" | 12 | 1 | Destroyer 2, Blast (3"), Exoshock (5+), Murderous Strike (4+) |
+| Sky Lance | 72" | 8 | 2 | Heavy 1, Lance, Skyfire |
+| Star Lance (Ranged) | 12" | 8 | 3 | Assault 2, Breaching (5+), Lance |
+| Sunrifle | 24" | 3 | 3 | Assault 3, Blind |
+
+#### Melta Weapons
+
+Heat weapons that reduce armour to charred, glowing slag.
+
+| Weapon | Range | Str | AP | Type |
+| Firepike | 18" | 9 | 1 | Assault 1, Armourbane (Melta) |
+| Inferno Lance | 36" | 8 | 1 | Heavy 5, Armourbane (Melta) |
+
+#### Missile Weapons
+
+Aeldari missiles could be heard screeching their death wail before they were seen.
+
+| Weapon | Range | Str | AP | Type |
+| Aeldari Missile Launcher – Starhawk | 48" | 7 | 3 | Heavy 1, Skyfire |
+| Aeldari Missile Launcher – Starshot | 48" | 8 | 3 | Heavy 1 |
+| Aeldari Missile Launcher – Sunburst | 48" | 4 | 4 | Heavy 1, Blast (3"), Blind |
+| Cloudburst Missile Launcher | 36" | 6 | 3 | Heavy 4, Guided Fire, Pinning, Skyfire |
+| Nightfire Missile Launcher | 36" | 8 | 3 | Heavy 3, Sunder |
+| Phoenix Missile Launcher | 48" | 6 | 3 | Heavy 3, Blast (3"), Ignores Cover |
+| Reaper Launcher – Starhawk | 48" | 7 | 3 | Heavy 1, Skyfire |
+| Reaper Launcher – Starshot | 48" | 8 | 3 | Heavy 1, Rending (6+) |
+| Reaper Launcher – Starswarm | 48" | 5 | 3 | Heavy 3 |
+| Tempest Launcher | 36" | 4 | 3 | Heavy 2, Barrage, Blast (3"), Pinning |
+| Voidstorm Missile Launcher | 48" | 8 | 3 | Heavy 1, Large Blast (5"), Pinning |
+
+#### Monofilament Weapons
+
+Streams of nanomolecular wire that slice through flesh and seek out gaps in armour.
+
+| Weapon | Range | Str | AP | Type |
+| Death Spinner | 12" | 6 | – | Assault 2, Monofilament, Rending (5+) |
+| Deathshroud Cannon – Dispersed | 48" | 7 | 4 | Heavy 1, Large Blast (5"), Monofilament, Pinning, Rending (5+) |
+| Deathshroud Cannon – Focused | Hellstorm | 7 | 3 | Ordnance 1, Monofilament, Pinning, Rending (5+) |
+| Doomweaver – Dispersed | 48" | 7 | 4 | Heavy 1, Barrage, Large Blast (5"), Monofilament, Pinning, Rending (5+) |
+| Doomweaver – Focused | Template | 7 | 4 | Heavy 1, Monofilament, Pinning, Rending (4+), Torrent (12") |
+| Shadow Weaver | 36" | 3 | 4 | Heavy 1, Blast (3"), Blind, Monofilament, Rending (5+) |
+| Spinneret Rifle | 18" | 6 | 1 | Assault 2, Monofilament |
+
+#### Plasma Weapons
+
+Refined Aeldari plasma, trading raw strength for rate of fire and consistency.
+
+| Weapon | Range | Str | AP | Type |
+| Gravis Starcannon | 36" | 6 | 3 | Heavy 6, Breaching (4+) |
+| Starcannon | 36" | 6 | 3 | Heavy 3, Breaching (4+) |
+| Suncannon | 48" | 7 | 3 | Heavy 1, Massive Blast (7"), Rending (4+) |
+
+#### Shuriken Weapons
+
+Bladed disks fired at supersonic velocities to shred their targets.
+
+| Weapon | Range | Str | AP | Type |
+| Avenger Catapult | 18" | 4 | 5 | Assault 2, Breaching (5+) |
+| Chainsabre (Ranged) | 12" | 4 | 5 | Assault 2, Breaching (6+) |
+| Gravis Shuriken Cannon | 24" | 6 | 4 | Assault 8, Breaching (6+) |
+| Scorpion's Claw (Ranged) | 12" | 4 | 5 | Assault 2, Breaching (6+) |
+| Shrieker Cannon – Shrieker Fusillade | 24" | 1 | 5 | Assault 1, Bio-Explosive, Poisoned (2+), Rending (5+) |
+| Shrieker Cannon – Shuriken Volley | 24" | 6 | 5 | Assault 4, Breaching (5+) |
+
+#### Transonic Weapons
+
+Waves of sonic force that shatter armour and disintegrate flesh.
+
+| Weapon | Range | Str | AP | Type |
+| Sonic Lance | 48" | 8 | 3 | Ordnance 1, Armourbane (Ranged), Blast (3"), Breaching (5+), Ignores Cover, Murderous Strike (6+), Pinning, Shell Shock (1), Sonic Pulse |
+| Vibro Cannon | 36" | 7 | 3 | Heavy 1, Heavy Beam, Ignores Cover, Pinning, Rending (5+), Shell Shock (1) |
+| Vibro Disruptor | 36" | 7 | 3 | Heavy 3, Ignores Cover, Pinning, Rending (5+), Shell Shock (1), Skyfire |
+
+#### Witch Weapons (Ranged)
+
+Count as Force and Witch weapons. Rarer than generic Witch weapons, so they cannot be taken as a generic Witch weapon choice.
+
+| Weapon | Range | Str | AP | Type |
+| Singing Spear (Ranged) | 12" | 9 | 3 | Assault 1, Soul Tear |
+
+#### Exotic and Miscellaneous Ranged Weapons
+
+Aeldari weapons strange enough to defy easy classification.
+
+| Weapon | Range | Str | AP | Type |
+| Grenade Pack | 12" | 4 | 4 | Assault 2, Barrage, Ignores Cover, Large Blast (5"), Precise Throw |
+| Hallucinogen Grenade Launcher | 18" | 1 | – | Assault 1, Blast (3"), Pinning, Poisoned (3+), Shell Shock (2) |
+| Haywire Cannon | 36" | 4 | 3 | Assault 3, Haywire |
+| Haywire Launcher | 24" | 3 | 4 | Heavy 3, Haywire |
+| Shield Blast (Wave Serpent Shield) | 12" | 6 | – | Assault 8, Concussive (2), Ignores Cover, One Use |
+| Star Bolas | 12" | 6 | 2 | Assault 1, Blast (3"), One Shot |
+| Triskele (Ranged) | 12" | 3 | 3 | Assault 3 |
+| Vortex Grenade | 8" | 8 | 2 | Assault 1, Blast (3"), Concussive (1), Haywire, One Use, Ponderous Aim, Vortex |
+
+### Melee Weapons
+
+#### Chain Weapons
+
+Crystalline teeth that chew through almost any armour.
+
+| Weapon | Range | Str | AP | Type |
+| Biting Blade | – | +2 | 4 | Melee, Rending (5+), Shred, Two-Handed |
+| Chainsabre (Melee) | – | +1 | 5 | Melee, Breaching (5+), Shred |
+| Chainsword | – | User | – | Melee, Shred |
+| Scorpion Chainsword | – | +1 | 6 | Melee, Breaching (6+), Shred |
+
+#### Charnabal Weapons
+
+Hyper-sharp blades relying on reflexes and raw skill. A model that may take a Charnabal Weapon may take any of these.
+
+| Weapon | Range | Str | AP | Type |
+| Charnabal Glaive | – | +1 | – | Melee, Breaching (5+), Duellist's Edge (2), Two-Handed |
+| Charnabal Sabre | – | User | – | Melee, Breaching (5+), Duellist's Edge (1) |
+| Charnabal Tabar | – | +2 | – | Melee, Breaching (6+), Duellist's Edge (1) |
+
+#### Las Weapons (Melee)
+
+Power discharged at close range to punch great holes in a target.
+
+| Weapon | Range | Str | AP | Type |
+| Laser Lance (Melee) | – | +4 | 3 | Melee, Breaching (5+), Lance, Reach (1) |
+| Star Lance (Melee) | – | +5 | 2 | Melee, Lance, Reach (1) |
+
+#### Power Weapons
+
+Count as Power weapons. A model that may take a Power Weapon may take any of the first four.
+
+| Weapon | Range | Str | AP | Type |
+| Power Axe | – | +1 | 2 | Melee, Unwieldy |
+| Power Maul | – | +2 | 3 | Melee |
+| Power Sword | – | User | 3 | Melee, Rending (6+) |
+
+The following are rarer and cannot be taken as a generic Power Weapon choice:
+
+| Weapon | Range | Str | AP | Type |
+| Executioner | – | +2 | 2 | Melee, Two-Handed |
+| Mirrorsword | – | User | 3 | Melee, Master-crafted, Rampage (2), Shred |
+| Scorpion's Claw (Melee) | – | x2 | 2 | Melee, Murderous Strike (6+), Specialist Weapon |
+| Star Glaive | – | +2 | 2 | Melee, Master-crafted, Murderous Strike (5+), Two-Handed |
+| Wraith Gauntlet | – | User | 2 | Melee, Brutal (2) |
+| Wraith Glaive | – | 14 | 1 | Melee, Destructor, Instant Death, Reaping Blow (3) |
+| Wraithsword – Piercing Blow | – | 10 | 1 | Melee, Murderous Strike (5+), Two-Handed, Unwieldy |
+| Wraithsword – Sweeping Strike | – | User | 3 | Melee, Breaching (6+), Reaping Blow (3) |
+
+#### Witch Weapons (Melee)
+
+Count as Force and Witch weapons. A model that may take a Witch Weapon may take either of the first two.
+
+| Weapon | Range | Str | AP | Type |
+
+The following are rarer and cannot be taken as a generic Witch Weapon choice. A model armed with two weapons marked \* gains +2 Attacks instead of +1.
+
+| Weapon | Range | Str | AP | Type |
+| Diresword | – | User | 3 | Melee, Brutal (2), Murderous Strike (6+), Rending (5+), Sanctic |
+| Ghost Axe | – | +3 | 2 | Melee, Brutal (2), Specialist Weapon, Unwieldy |
+| Ghostglaive – Piercing Blow | – | 12 | 1 | Melee, Armourbane (Melee), Brutal (2), Murderous Strike (5+), Two-Handed |
+| Ghostglaive – Sweeping Strike | – | User | 2 | Melee, Reaping Blow (3) |
+| Ghostspear | – | User | 2 | Melee, Brutal (2), Force |
+| Ghostsword | – | +1 | 3 | Melee, Blade Spirit, Breaching (5+); +2 Attacks instead of +1 for a model armed with two |
+| Singing Spear (Melee) | – | User | 3 | Melee, Breaching (5+), Soul Tear |
+
+#### Exotic and Miscellaneous Melee Weapons
+
+Aeldari weapons strange enough to defy easy classification.
+
+| Weapon | Range | Str | AP | Type |
+| Haywire Grenade | – | – | – | Melee, Detonation, Haywire |
+| Mandiblaster | – | 4 | 6 | Melee, Poisoned (4+), Scorpion's Sting (1), Specialist Weapon |
+| Melta Bomb | – | 8 | 1 | Melee, Armourbane (Melee), Detonation, Instant Death, Unwieldy |
+| Miststave | – | +1 | – | Melee, Concussive (1), Force, Poisoned (3+), Reach (1) |
+| Psytronome Shaper | – | +1 | – | Melee, Rending (6+) |
+| Triskele (Melee) | – | User | 3 | Melee |
+| Zephyrglaive | – | +1 | 2 | Melee, Rending (5+), Two-Handed |
+
+#### Harlequin Weapons
+
+The signature blades and gauntlets of the Saedath.
+
+| Weapon | Range | Str | AP | Type |
+| Harlequin's Caress | – | User | – | Melee, Fleshbane, Rending (5+) |
+| Harlequin's Edge | – | User | – | Melee, Dimensional Edge (4+), Murderous Strike (6+), Rending (4+) |
+| Harlequin's Embrace | – | 6 | 3 | Melee, Embrace of Death (2), Monofilament |
+| Harlequin's Kiss | – | +1 | – | Melee, Murderous Strike (6+), Rending (5+) |
+
+### Relic Weapons
+
+Unique weapons of the Avatar of Khaine, Eldrad Ulthran, and the Phoenix Lords.
+
+| Weapon | Range | Str | AP | Type |
+| Arhra's Bane – Crushing Blow | – | x2 | 2 | Melee, Brutal (2), Murderous Strike (5+), Unwieldy |
+| Arhra's Bane – Shuriken Volley | 12" | 5 | 4 | Assault 3, Breaching (5+) |
+| Fury of the Tempest | 24" | 6 | 3 | Assault 4, Pinning, Rending (5+), Shell Shock (1) |
+| Isirmathil & Shadowsting | – | +2 | 3 | Melee, Murderous Strike (6+), Paired Weapons, Rending (5+), Shred, Two-Handed |
+| Jainas Mor – Reversed Grip | – | User | 3 | Melee, Breaching (4+), Master-crafted, Rampage (2), Shred |
+| Jainas Mor – Spiraling Throw | 12" | 4 | 3 | Assault 4, Breaching (4+), Master-crafted, Shred |
+| Scorpion's Bite | – | 6 | 3 | Melee, Breaching (5+), Scorpion's Sting (2), Specialist Weapon |
+| Searsong – Burning Beam | 9" | 8 | 2 | Assault 1, Armourbane (Ranged), Heavy Beam |
+| Searsong – Searing Lance | 18" | 9 | 1 | Assault 1, Armourbane (Ranged), Exoshock (5+) |
+| Spear of Starlight – Solar Beam | 24" | 8 | 2 | Heavy 3, Ghostlight, Lance |
+| Spear of Starlight – Wanelight Glaive | – | +1 | 2 | Melee, Ghoststrike, Master-crafted, Reach (1) |
+| Staff of Ulthamar | – | +1 | 2 | Melee, Force, Master-crafted, Reach (1), Soul Tear |
+| The Bloody Twins | 18" | 5 | 4 | Assault 4, Rending (5+), Twin-linked |
+| The Celestial Lance – Pierce the Heavens | 12" | 8 | 2 | Assault 2, Blind, Lance |
+| The Celestial Lance – Tear the Earth | – | +5 | 1 | Melee, Lance, Reach (1), Soul-Shatter |
+| The Fire Axe | – | +1 | 1 | Melee, Armourbane (Melee), Master-crafted |
+| The Maugetar – Reaping Blade | – | +2 | 2 | Melee, Master-crafted, Murderous Strike (5+) |
+| The Maugetar – Shrieker Strike | 36" | 5 | 5 | Assault 1, Bio-Cataclysm, Master-crafted, Poisoned (2+), Rending (5+) |
+| The Maugetar – Shuriken Storm | 36" | 6 | 3 | Assault 5, Master-crafted, Pinning, Rending (4+) |
+| The Shining Blade | – | User | 2 | Melee, Blind, Master-crafted, Murderous Strike (5+), Shred |
+| The Sword of Asur | – | +1 | 2 | Melee, Brutal (2), Master-crafted, Murderous Strike (4+), Sanctic |
+| The Wailing Doom – Ranged | 12" | 9 | 1 | Heavy 1, Armourbane (Ranged), Exoshock (5+), Heavy Beam |
+| The Wailing Doom – Scything Slash | – | 9 | 3 | Melee, Breaching (6+), Reaping Blow (3) |
+| The Wailing Doom – Speartip Strike | – | 9 | 1 | Melee, Armourbane (Melee), Brutal (2), Exoshock (5+) |
+| Zhai Morenn, Blade of Destruction | – | +2 | 2 | Melee, Master-crafted, Murderous Strike (4+), Rending (4+) |
+
+The Staff of Ulthamar counts as a Witch weapon for all rules that affect them.
+
 ## Psychic Discipline: Runes of Battle
 
 A Psyker with this Discipline gains all the listed Powers, weapons and other special rules.
@@ -1164,6 +5274,55 @@ Instead of making a Shooting Attack, a Psyker with this Psychic Power may select
 | --- | --- | --- | --- | --- |
 | Voidsong Blade | – | User | 3 | Melee, Force, Psychic Focus, Murderous Strike (5+), Rending (5+) |
 
+## Psychic Discipline: Runes of Twilight
+
+
+A Psyker with this Discipline gains all powers, attacks and other rules in the Discipline, as well as the Aetheric Lightning Psychic Weapon (Core Rulebook, page 322) unless they already have it from another source.
+
+### Executioner (Psychic Weapon)
+
+*The psyker conjures an apparition to cleave through the enemy ranks, its killing edge renewed with every foe torn apart.*
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Executioner (Psychic Weapon) | 18" | 4 | – | Assault 4, Deflagrate, Disruption (5+), Fleshbane, Precision Shots (5+), Psychic Focus |
+
+### Voice of Twilight (Psychic Power)
+
+*Submerging their mind into the shadow realm, the psyker empowers their accompanying wraiths.*
+
+Instead of making a Shooting Attack, select a single friendly unit with a model within 18" that contains at least one Wraith model. Apply one of the following to all Wraith models in the unit until the beginning of the Controlling Player's next turn:
+
+- Gains Furious Charge.
+- Gains Precision Shots (5+).
+- Gains Precision Strikes (5+).
+- Gains Split Fire.
+
+The controlling player may choose to take a Psychic check: if passed, two different options are applied instead of one; if failed, no benefits are gained and the Psyker suffers Perils of the Warp.
+
+## Psychic Discipline: Phantasmancy
+
+Phantasmancy is limited to models with the Rillietann Sub-type and is assigned by Special Rules on a unit's profile. A Psyker with this Discipline gains all of its powers, attacks and rules, plus the Aetheric Lightning Psychic Weapon (Core Rulebook, page 322) unless they already have it from another source.
+
+### Peal of Discord (Psychic Weapon)
+
+*With an immense clang, the Shadowseer blots out all other senses, leaving victims unable to react in time.*
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Peal of Discord | 24" | 4 | – | Assault 4, Blind, Psychic Focus |
+
+### Veil of Tears (Psychic Power)
+
+*A wave of sorrow and guilt forces the Shadowseer's targets to turn their faces aside.*
+
+At any point in the Controlling Player's Movement phase, select a single enemy unit within 24" and line of sight. Until the beginning of the Controlling Player's next turn, it may not make Shooting Attacks over 18" against units made up entirely of Rillietann models.
+
+The Psyker may choose to take a Psychic check: if passed, the target also may not make Reactions against Rillietann-only units until the end of the opposing player's next turn; if failed, no effects apply and the Psyker suffers Perils of the Warp.
+
 ## Sources
 
 Liber Aelphari (Liber Xenos), as supplied by Isaac. The bright lance, scatter laser and shuriken cannon profiles were added, since Corsair datasheets take them but the supplied text had none; the Aeldari power sword uses the 2.0 power sword profile.
+
+- *Liber Antiquia: The Ancient Eldar* v1.6, Liber Panoptica Development Team, 8 January 2024. Asuryani and Saedath sections, Aeldari Unit Types, Special Rules, Armoury, Wargear, and Base Sizing Chart. Licensed CC BY-NC-ND 4.0; for personal use only.
+- *Horus Heresy: Age of Darkness Core Rulebook* (Games Workshop) for core rules referenced above.

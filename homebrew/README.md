@@ -139,6 +139,25 @@ loading. The script prints anything in the doc it could not place.
   advanced reaction and Warlord Trait come with it.
 - "The Corsair Prince must select one of the following" is a required pick of one. An option named exactly
   like one of the doc's rules (Master of the Void) carries that rule's text.
+- "0-1 Autarch" is at most one per detachment. "### World-Rune: ..." headings are Rites of War under their
+  Asuryani name, and "## Grand Performances" is a pick of one like a Doctrine. A sub-faction rule that says
+  an "army may choose" one (Anhrathe Fleet) is optional. "Centreline Mounted" and "Arm Mounted" are mounts,
+  not part of a weapon's name.
+- The Asuryani and Saedath lists in `aeldari.md` were merged from the Liber Antiquia doc. Where it and
+  Liber Aelphari share a weapon, wargear or psychic discipline, the Liber Aelphari version is kept.
+- "## Aspect Shrines" holds one "### Aspect Shrine: X" per Path. A datasheet option table headed "... Aspect
+  Shrine upgrade" becomes a required pick of one on each model. The chosen shrine applies its Special Rules,
+  Unit Sub-types and Characteristic changes, and its wargear: "exchanges Aspect Armour for Heavy Aspect
+  Armour" swaps the armour and save, "gains ... at no cost" adds the items, and its option table becomes the
+  shrine's weapon swaps. A Skyrunner Jetbike sets Move 18 and makes the model Cavalry (Antigrav). "May be
+  selected by up to N Exarchs in a Detachment" limits that shrine per detachment for Exarchs only.
+- "## Grand Performances" is only shown when the detachment has a Saedath (Rillietann) unit, and is then
+  required.
+- "If the army includes any Phoenix Lord models, one of them must be the Warlord" (on a "### X (type)")
+  locks every other model's Warlord option while the army has a model of that type. A type whose models
+  can never be the Warlord (the Avatar of Khaine, a Daemon Primarch) changes nothing.
+- A psychic weapon named "X (Psychic Weapon)" is kept apart from a weapon called X but shown as plain X
+  (the Runes of Twilight Executioner beside the Exarch's executioner).
 
 - A biomorph granted by a sub-faction ("Deep Burrowers: Infantry units gain the Burrower biomorph")
   or a Warlord Trait ("The Warlord and any unit it joins gain the Burrower biomorph") shows its
