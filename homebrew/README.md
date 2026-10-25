@@ -134,6 +134,11 @@ loading. The script prints anything in the doc it could not place.
 - Grenades listed both as wargear (with its own rules) and in the armoury (plasma grenades) are taken
   as the wargear, which carries the grenade's profile.
 - A Bio-Construct (Talos, Cronos) also has the game system's Dreadnought category.
+- A second sub-faction section whose entries say "**Sub-faction:** Wych Cults" (Drukhari Obsessions) is a
+  second pick on the army entry: each Obsession shows only while its sub-faction is chosen, and its rules,
+  advanced reaction and Warlord Trait come with it.
+- "The Corsair Prince must select one of the following" is a required pick of one. An option named exactly
+  like one of the doc's rules (Master of the Void) carries that rule's text.
 
 - A biomorph granted by a sub-faction ("Deep Burrowers: Infantry units gain the Burrower biomorph")
   or a Warlord Trait ("The Warlord and any unit it joins gain the Burrower biomorph") shows its

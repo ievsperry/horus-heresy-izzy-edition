@@ -244,6 +244,9 @@ No other units may be selected as part of this Detachment.
 
 | Option | Cost |
 | --- | --: |
+| **The Corsair Prince must select one of the following:** |  |
+| – Prince of Corsairs | Free |
+| – Master of the Void | Free |
 | **The Corsair Prince may exchange his shuriken pistol for one of the following:** |  |
 | – Neuro disruptor | +5 points |
 | – Fusion pistol | +5 points |
@@ -445,7 +448,7 @@ No other units may be selected as part of this Detachment.
 - Every model: Aeldari power sword, mesh armour, plasma grenades, shuriken pistol, unless noted below
 - Shade Runner: two Hekatarii blades, instead of Aeldari power sword
 - Soul Weaver: channeller stones
-- Way Seeker: witch staff, instead of Aeldari power sword
+- Way Seeker: witch staff, two Hekatarii blades, instead of Aeldari power sword
 
 **Unit Type**
 
@@ -1109,7 +1112,7 @@ Instead of making a Shooting Attack, a Psyker with this Psychic Power may select
 
 Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single enemy unit within 18". That unit reduces all Armour Saves, Cover Saves and Invulnerable Saves by -1 until the start of the controlling player's next turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed, then the target unit instead reduces all Armour Saves, Cover Saves and Invulnerable Saves by -2 until the start of the controlling player's next turn. If the Check is failed, then the target unit suffers no additional effect and the Psyker suffers Perils of the Warp.
 
-### Battle Trance (Psychic Weapon)
+### Vile Words (Psychic Weapon)
 
 *Warlocks channel raw psychic aggression into flashes of impossible martial precision, allowing them to strike with supernatural speed and lethal force.*
 

@@ -41,6 +41,8 @@ Every Drukhari unit has **Night Vision** unless its entry says otherwise.
 
 **Kabalite Discipline.** *Kabalite Warriors prosecute raids with cold precision, coordinating overlapping fire and surgical elimination strikes against vulnerable prey.* A unit with this Special Rule gains Precision Shots (6+). In addition, when targeting Pinned, Falling Back or Disordered enemy units, ranged attacks made by this unit gain Breaching (6+).
 
+**Lightning Blows (X).** *Some warriors fight with such speed and precision that they are capable of landing a series of blows like lightning, before their opponent can even react. There are few that can withstand such a barrage of attacks, and those warriors that have mastered this technique are rightfully feared on the battlefield.* After normal To Hit rolls for a weapon with this special rule have been made, count the number of Hits inflicted on a roll of equal to or more than the value listed in brackets as part of this rule. Immediately resolve a number of additional To Hit rolls on the same unit using the attacking models' WS equal to the number of Hits counted earlier – any Hits scored roll To Wound as normal using the profile of the weapon with this special rule or a weapon chosen from those available to the model with this special rule if the rule is not applied to a specific weapon. These additional attacks do not themselves benefit from the Lightning Blows (X) special rule, but do benefit from any other special rules possessed by the attacking model, such as Preferred Enemy (X) or Precision Strikes (X).
+
 **Master of the Arena.** Wych Cult Troops units in an army that includes one or more Succubus models gain the Line Unit Sub-type.
 
 **Master of Blades.** Incubi units in an army that includes one or more models with this special rule gain the Line Unit Sub-type.
@@ -90,7 +92,7 @@ Drukhari use the 2.0 core reactions as normal, plus this advanced reaction. It c
 
 ## Kabals, Wych Cults and Haemonculus Covens
 
-**Obsession (X).** Every Drukhari detachment fights for one of the three great powers of Commorragh: the Kabals, the Wych Cults or the Haemonculus Covens. Choose one when building each detachment. It gives that detachment its Advanced Reaction, Warlord Trait and Line units.
+**Sub-faction (X).** Every Drukhari detachment fights for one of the three great powers of Commorragh: the Kabals, the Wych Cults or the Haemonculus Covens. Choose one when building each detachment, then one of its Obsessions (below). The sub-faction gives that detachment its Advanced Reaction, Warlord Trait and Line units.
 
 ### Kabals
 
@@ -128,9 +130,95 @@ Haemonculus Covens primarily make use of Fleshcrafted Horror, Poison Masters, Po
 
 **Warlord Trait: Master of Agonies.** The Haemonculus Warlord reshapes flesh and suffering into weapons, driving nearby creations beyond mortal limitations. The Warlord gains Master of the Raid, Fear (2) and It Will Not Die (5+). In addition, friendly units within 12" with the Fleshcrafted Horror Special Rule improve their Feel No Pain rolls by +1 to a maximum of Feel No Pain (4+).
 
+## Obsessions
+
+Every Kabal, Wych Cult and Haemonculus Coven has its own cruel obsession. Obsessions are subsets of the sub-factions: a detachment's Obsession must belong to its Kabals, Wych Cults or Haemonculus Covens choice.
+
+**Obsession (X).** When building an army, choose one Obsession of the detachment's sub-faction for each detachment. Every unit in that detachment gains Obsession (X), where X is the chosen Obsession. Unique characters may join any Obsession of their sub-faction, except Lelith Hesperax (Cult of Strife), Asdrubael Vect (Kabal of the Black Heart) and Urien Rakarth (Prophets of Flesh).
+
+**Obsession Advanced Reactions.** Each Obsession has its own Advanced Reaction, usable only by units with that Obsession (X). It is available in addition to Lightning Withdrawal and the sub-faction's Advanced Reaction, and costs one point of the Reaction Allotment†.
+
+### Kabal of the Black Heart
+
+**Sub-faction:** Kabals
+
+*Asdrubael Vect's own Kabal, the most powerful in Commorragh, driven by an endless thirst for power.*
+
+- **Thirst for Power:** the unit gains each Power from Pain benefit one game turn earlier.
+- **Vect's Favour:** the unit may re-roll failed Morale checks.
+
+**Advanced Reaction: Strike First** (Shooting phase). Trigger: a Black Heart unit is selected as the target of a Shooting Attack. The unit makes a Return Fire Shooting Attack before the enemy attack is resolved, instead of after it.
+
+**Warlord Trait: Hatred Eternal.** The Warlord and any unit it joins have Hatred against every enemy†.
+
+### Kabal of the Poisoned Tongue
+
+**Sub-faction:** Kabals
+
+*Masters of poison and treachery, who kill their rivals before the rivals know they are enemies.*
+
+- **Serpent's Kiss:** enemy units engaged with this unit subtract 1 from their Leadership.
+- **Toxin Crafters:** the unit's weapons with Poisoned (X) improve that value by 1, to a best of 2+†.
+
+**Advanced Reaction: Venomous Retort** (Shooting phase). Trigger: a Poisoned Tongue unit is selected as the target of a Shooting Attack. After the attack is resolved, the unit makes a Return Fire Shooting Attack whose Poisoned weapons wound on 2+†.
+
+**Warlord Trait: Soul Thirst.** Each time the Warlord slays an enemy model in close combat, it restores one lost Wound, up to its starting value.
+
+### Cult of Strife
+
+**Sub-faction:** Wych Cults
+
+*Lelith Hesperax's Cult, the deadliest gladiators in the arenas of Commorragh.*
+
+- **Blades of Strife:** the unit's melee weapons gain Shred.
+- **The Spectacle of Murder:** the unit may re-roll to-hit rolls of 1 in close combat.
+
+**Advanced Reaction: Whirling Death** (Assault phase). Trigger: an enemy unit declares a charge against a Cult of Strife unit. Instead of firing Overwatch, the unit gains Counter-Charge (1) and Reach (1) until the end of the phase†.
+
+**Warlord Trait: Precision Killer.** The Warlord's melee weapons gain Murderous Strike (5+)†.
+
+### Cult of the Red Grief
+
+**Sub-faction:** Wych Cults
+
+*Speed-addicted Wyches who race into battle on jetbikes and skyboards.*
+
+- **Blur of Motion:** the unit increases its Fleet (X) by 1.
+- **Speed Kills:** Cavalry, Jump and vehicle units add 2 to their Movement Characteristic.
+
+**Advanced Reaction: Too Fast to Catch** (Movement phase). Trigger: an enemy unit ends a move within 12" of a Red Grief unit. The unit moves up to D6 plus its Initiative Characteristic in inches (vehicles move up to 6") in any direction.
+
+**Warlord Trait: Hyper-swift Reflexes.** The Warlord and any unit it joins add 1 to their Initiative and gain Outflank†.
+
+### The Dark Creed
+
+**Sub-faction:** Haemonculus Covens
+
+*A Coven of terror-mongers who harvest fear as other Covens harvest flesh.*
+
+- **Fear Incarnate:** enemy units within 6" subtract 1 from their Leadership.
+- **Masters of Torment:** enemy units that fail a Morale check within 12" of this unit lose one additional model.
+
+**Advanced Reaction: Torment** (Assault phase). Trigger: an enemy unit declares a charge against a Dark Creed unit. The charging unit must take a Leadership test; if it fails, it gains no bonuses for charging in that combat.
+
+**Warlord Trait: Dread Master.** Enemy units within 12" of the Warlord subtract a further 1 from their Leadership.
+
+### Prophets of Flesh
+
+**Sub-faction:** Haemonculus Covens
+
+*Urien Rakarth's Coven, the oldest and most twisted of the flesh-sculptors.*
+
+- **Experimental Creations:** Bio-Construct models in the detachment add 1 to their Wounds Characteristic.
+- **Masters of the Flesh:** improve the unit's Feel No Pain by 1, to a best of 4+.
+
+**Advanced Reaction: Insensible to Pain** (Shooting phase). Trigger: a Prophets of Flesh unit is selected as the target of a Shooting Attack. Against that attack, the unit's Feel No Pain improves by a further 1.
+
+**Warlord Trait: Diabolical Soothsayer.** The Warlord has a 4+ Invulnerable Save.
+
 ## Warlord Traits
 
-A Drukhari Warlord chooses one Warlord Trait: one of the three generic traits below, or the Warlord Trait of its detachment's Kabal, Wych Cult or Haemonculus Coven.
+A Drukhari Warlord chooses one Warlord Trait: one of the three generic traits below, or the Warlord Trait of its detachment's sub-faction (Kabals, Wych Cults or Haemonculus Covens) or Obsession.
 
 ### Ancient Evil
 
@@ -544,6 +632,7 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 **Special Rules**
 
 - Aeldari (Drukhari, Wych Cult)
+- Obsession (Cult of Strife)
 - Arena Killers
 - Blade Artists
 - Eternal Warrior
@@ -591,7 +680,7 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 - Hit & Run
 - Independent Character
 - Invulnerable save (4+)
-- Lightning Strike (6+)
+- Lightning Blows (6+)
 - Master of Blades
 - Master of the Raid
 - Power From Pain
@@ -627,6 +716,7 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 - Master of Commorragh: once per game, at the start of your turn, you may redeploy up to 3 friendly units, including those in Reserves, as though deploying them
 - Night Vision
 - Aeldari (Drukhari, Kabal)
+- Obsession (Kabal of the Black Heart)
 - Power From Pain
 - Supreme Commander: if he is in your army, Vect must be your Warlord
 
@@ -689,6 +779,7 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 - It Will Not Die (5+)
 - Night Vision
 - Aeldari (Drukhari, Haemonculus Coven)
+- Obsession (Prophets of Flesh)
 - Power From Pain
 - Sculptor of Torments: friendly Bio-Construct models within 12" have It Will Not Die (6+)
 
@@ -714,7 +805,7 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 
 - Lhamaean: Kabalite armour, venom blade
 - Medusae: eyeburst, Kabalite armour
-- Sslyth: scale armour, shardcarbine, splinter pistol, Sslyth warblade
+- Sslyth: mesh armour, shardcarbine, splinter pistol, Sslyth warblade
 - Ur-Ghul: rending claws
 
 **Unit Type**
@@ -1946,6 +2037,7 @@ _Fleet values granted to this unit are added to Run moves and Jet Pack moves._
 
 - Night Vision
 - Aeldari (Drukhari, Kabal)
+- Obsession (Kabal of the Black Heart)
 - Power From Pain
 - Throne of the Tyrant: while Vect is embarked, the Dais uses his Leadership, he may issue his Master of Commorragh redeployment as normal, and he may fight in close combat from the Dais against enemies in base contact with it†
 
@@ -2005,6 +2097,10 @@ A model equipped with Incubi armour gains a 3+ Armour Save and a 5+ Invulnerable
 *Segmented mesh plating, toxin-resistant underlayers and lightweight adaptive composites, made for mass deployment and extreme mobility.*
 
 A model equipped with Kabalite armour gains a 5+ Armour Save.
+
+#### Mesh Armour
+
+A model with mesh armour has a 4+ Armour Save.
 
 #### Shadow Armour
 
@@ -2319,6 +2415,7 @@ All weapons listed here are counted as 'Darklight' weapons for those rules that 
 | Haywire grenades – melee | – | User | – | Melee, Haywire, Exoshock (5+), One Use |
 | Phantasm grenade launcher | 18" | 1 | – | Assault 1, Blast (3"), Pinning, Limited Use |
 | Plasma grenades | 8" | 4 | 4 | Assault 1, Blast (3"), One Use |
+| Torment grenade launchers | 18" | 4 | 4 | Assault 1, Blast (3") |
 | Venom bomb | 6" | 2 | – | Assault 1, Poisoned (3+), One Use, Blast (3") |
 
 #### Other Ranged Weapons
@@ -2330,11 +2427,16 @@ All weapons listed here are counted as 'Darklight' weapons for those rules that 
 | Dark scythe | 24" | 8 | 2 | Heavy 2, Lance |
 | Eyeburst | Template | 3 | 4 | Assault 1, Blind, Pinning, Concussive (1) |
 | Implosion missile | 48" | 6 | 2 | Heavy 1, Blast (3"), One Use |
+| Parasite's Kiss | 12" | 3 | 6 | Pistol 1, Poisoned (4+), Soul-leech, Master-crafted |
 | Razorwing missile | 48" | 6 | 5 | Heavy 1, Large Blast (5"), One Use |
 | Storm vortex projector – blast | 24" | 7 | 2 | Heavy 1, Large Blast (5") |
 | Storm vortex projector – beam | 24" | 9 | 1 | Heavy 1, Lance |
 | Void lance | 36" | 9 | 2 | Heavy 1, Lance |
 | Void mine | Bomb | 9 | 2 | Large Blast (5"), Lance, One Use |
+
+The Parasite's Kiss is a relic splinter pistol: only one may be taken in the army.
+
+**Soul-leech.** Each time the bearer inflicts an unsaved Wound with the Parasite's Kiss, it immediately gains back one Wound it lost previously in the battle.
 
 ### Close Combat Weapons
 
@@ -2446,8 +2548,9 @@ These entries rely on 2.0 wording that should be confirmed. Where your book diff
 ## Open Questions
 
 - Fleshcrafted Horror, Poison Masters and Terror Tactics are named by the Kabals and Covens, but no rule text was supplied and no datasheet has them. The Flesh Rewoven reaction and Master of Agonies trait need units with Fleshcrafted Horror.
-- Parasite's Kiss (Master Archon), torment grenade launchers (Tantalus), scale armour (Sslyth) and Lightning Strike (Drazhar) have no rules text yet.
 - The Blades of Lelith list a 6" profile with no weapon type; it is set as Assault 1 here.
+- Thirst for Power (Kabal of the Black Heart) still refers to the old turn-by-turn Power from Pain; it needs new wording for the new Power From Pain table.
+- The Cult of Strife's "Blade Artists" bonus is renamed Blades of Strife so it is not confused with the new Blade Artists special rule.
 
 ## Sources
 

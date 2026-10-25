@@ -1403,13 +1403,27 @@ class Builder:
                     out[-1][1].append(strip_md(ln))
         return [(name, " ".join(parts)) for name, parts in out]
 
-    def subfaction_section(self):
-        """The section of hive fleets, Klans or the like: its '(X)' rule and sub-sections."""
+    def subfaction_sections(self):
+        """Sections of hive fleets, Klans or the like: each '(X)' rule and its sub-sections. A later one
+        whose entries say "**Sub-faction:** Kabals" is a subset of the first (Drukhari Obsessions)."""
+        out = []
         for s in self.sections:
             for name, text in self.rule_paragraphs(s["lines"]):
                 if name.endswith("(X)") and any("Advanced Reaction:" in l for sub in s["subs"] for l in sub["lines"]):
-                    return s, name, text
-        return None, None, None
+                    out.append((s, name, text))
+                    break
+        return out
+
+    def subfaction_section(self):
+        """The section of hive fleets, Klans or the like: its '(X)' rule and sub-sections."""
+        found = self.subfaction_sections()
+        return found[0] if found else (None, None, None)
+
+    @staticmethod
+    def subfaction_parent(sub):
+        """'**Sub-faction:** Wych Cults' in an Obsession's lines: the sub-faction it belongs to."""
+        return next((m.group(1).strip() for l in sub["lines"]
+                     for m in [re.match(r"\*\*Sub-faction:\*\* (.+)", l)] if m), None)
 
     def build_army_rules(self):
         sec = self.section("Army-wide Special Rules")
@@ -1436,8 +1450,7 @@ class Builder:
                 for name, text in self.rule_paragraphs(sub["lines"]):
                     if norm(name) not in self.local_rules:
                         self.define_rule(name, text)
-        sub, name, text = self.subfaction_section()
-        if sub:
+        for sub, name, text in self.subfaction_sections():
             self.define_rule(name, text)
         bio = self.section("Biomorphs")
         if bio:
@@ -1479,21 +1492,26 @@ class Builder:
                     add_text_profile(army, REACTION_PROFILE, m.group(1), strip_md(m.group(2)), eid)
 
         fleet_ids = {}
-        fleets, rule_name, _ = self.subfaction_section()
-        if fleets:
+        for tier, (fleets, rule_name, _) in enumerate(self.subfaction_sections()):
             base = rule_name.replace(" (X)", "")
-            g = el(groups, "selectionEntryGroup", name=base, hidden=False,
-                   id=make_id(eid, "fleets"))
-            add_constraint(g, "min", 1, make_id(eid, "fleets") + "min")
-            add_constraint(g, "max", 1, make_id(eid, "fleets") + "max")
+            gid = make_id(eid, "fleets") if tier == 0 else make_id(eid, "fleets", base)
+            g = el(groups, "selectionEntryGroup", name=base, hidden=False, id=gid)
+            add_constraint(g, "min", 1, gid + "min")
+            add_constraint(g, "max", 1, gid + "max")
             ses = el(g, "selectionEntries")
             for sub in fleets["subs"]:
                 name = sub["title"]
                 fid = make_id("fleet", self.faction, name)
                 fleet_ids[name] = fid
+                parent = self.subfaction_parent(sub) if tier else None
                 f = el(ses, "selectionEntry", type="upgrade", import_=True,
                        name=f"{base} {name}" if base == "Hive Fleet" else name,
-                       hidden=False, id=fid, publicationId=self.pub_id)
+                       hidden=bool(parent and parent in fleet_ids), id=fid, publicationId=self.pub_id)
+                if parent and parent in fleet_ids:
+                    # an Obsession shows only while its sub-faction is chosen
+                    m = el(el(f, "modifiers"), "modifier", type="set", field="hidden", value="false")
+                    el(el(m, "conditions"), "condition", type="atLeast", value=1, field="selections", scope="force",
+                       childId=fleet_ids[parent], shared=True, includeChildSelections=True, includeChildForces=False)
                 for ln in sub["lines"]:
                     if ln.startswith("- "):
                         m = re.match(r"\*\*(.+?):\*\* (.+)", ln[2:])
@@ -1922,12 +1940,12 @@ class Builder:
         add_constraint(g, "max", 1, wid + "max")
         ses = el(g, "selectionEntries")
         traits = [(s["title"], " ".join(paragraphs(s["lines"])), None) for s in wl["subs"]]
-        fleets, _, _ = self.subfaction_section()
-        for sub in (fleets["subs"] if fleets else []):
-            for ln in sub["lines"]:
-                m = re.match(r"\*\*Warlord Trait: (.+?)\.\*\* (.+)", ln)
-                if m:
-                    traits.append((m.group(1), m.group(2), make_id("fleet", self.faction, sub["title"])))
+        for fleets, _, _ in self.subfaction_sections():  # sub-factions, then Obsessions
+            for sub in fleets["subs"]:
+                for ln in sub["lines"]:
+                    m = re.match(r"\*\*Warlord Trait: (.+?)\.\*\* (.+)", ln)
+                    if m:
+                        traits.append((m.group(1), m.group(2), make_id("fleet", self.faction, sub["title"])))
         for name, text, fleet in traits:
             tid = make_id("trait", self.faction, name)
             t = el(ses, "selectionEntry", type="upgrade", import_=True, name=name, hidden=bool(fleet),
@@ -2072,6 +2090,8 @@ class Builder:
             eid = make_id("upgrade", self.faction, name)
             e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=name,
                    hidden=False, id=eid, publicationId=self.pub_id)
+            if "(" not in name and norm(name) in self.local_rules:
+                self.link_rule(e, name, eid)  # an option that is one of the doc's rules ("Master of the Void")
             m = re.match(r"(.+?) \((.+)\)$", name)
             if m and len(m.group(2)) > 6:
                 e.set("name", m.group(1))
@@ -2889,6 +2909,8 @@ class Builder:
                 ge = el(groups, "selectionEntryGroup", name="Options", hidden=False, id=gkey)
                 if g["one_of"]:
                     add_constraint(ge, "max", 1, gkey + "max")
+                if "must select one of the following" in g.get("title", ""):
+                    add_constraint(ge, "min", 1, gkey + "min")  # "Prince of Corsairs or Master of the Void"
                 if g.get("group_max"):
                     add_constraint(ge, "max", g["group_max"], gkey + "max")
                 gl = el(ge, "entryLinks")

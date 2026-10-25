@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Drukhari" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Drukhari" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -21,7 +21,7 @@
         <categoryLink targetId="3c8e-5a1d-9b47-e2f0" id="c288-7bbd-9bdb-432f" primary="false" name="Xenos Army" />
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Obsession" hidden="false" id="fe9c-de49-f9a5-d9a6">
+        <selectionEntryGroup name="Sub-faction" hidden="false" id="fe9c-de49-f9a5-d9a6">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c3d2-494d-6b72-f381" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8738-de58-68a6-9bff" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -72,6 +72,176 @@
               <rules>
                 <rule name="Coven Line" id="c472-2c99-6dfd-4860" hidden="false">
                   <description>Wracks, Haemoxytes and Grotesques (if selected as a Troops choice) gain the Line Sub-type.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Obsession" hidden="false" id="e8bb-aa68-fabc-fbb6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df21-1e2e-7755-a3be" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e148-ea89-e1af-7aeb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Kabal of the Black Heart" hidden="true" id="de4f-9184-2051-a4c2" publicationId="9356-fc9b-2fee-7d11">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="ce4e-872d-8070-4ec4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Strike First" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="d036-48f3-761d-ae4b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: a Black Heart unit is selected as the target of a Shooting Attack. The unit makes a Return Fire Shooting Attack before the enemy attack is resolved, instead of after it.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Thirst for Power" id="bdea-bda1-9516-7f03" hidden="false">
+                  <description>the unit gains each Power from Pain benefit one game turn earlier.</description>
+                </rule>
+                <rule name="Vect's Favour" id="e2d3-3a20-b8fc-0f68" hidden="false">
+                  <description>the unit may re-roll failed Morale checks.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Kabal of the Poisoned Tongue" hidden="true" id="4e92-1ff0-9a92-9637" publicationId="9356-fc9b-2fee-7d11">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="ce4e-872d-8070-4ec4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Venomous Retort" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="488d-5171-0a41-edb2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: a Poisoned Tongue unit is selected as the target of a Shooting Attack. After the attack is resolved, the unit makes a Return Fire Shooting Attack whose Poisoned weapons wound on 2+†.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Serpent's Kiss" id="091d-8918-9f06-abee" hidden="false">
+                  <description>enemy units engaged with this unit subtract 1 from their Leadership.</description>
+                </rule>
+                <rule name="Toxin Crafters" id="be62-f2b7-8df0-3f32" hidden="false">
+                  <description>the unit's weapons with Poisoned (X) improve that value by 1, to a best of 2+†.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Cult of Strife" hidden="true" id="419c-b6cb-9b92-158b" publicationId="9356-fc9b-2fee-7d11">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="67bd-95ce-b863-267c" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Whirling Death" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="1aec-c7cc-6acc-84e4">
+                  <characteristics>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: an enemy unit declares a charge against a Cult of Strife unit. Instead of firing Overwatch, the unit gains Counter-Charge (1) and Reach (1) until the end of the phase†.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Blades of Strife" id="99d0-a652-7dc6-e18f" hidden="false">
+                  <description>the unit's melee weapons gain Shred.</description>
+                </rule>
+                <rule name="The Spectacle of Murder" id="832b-ce6c-0aef-d951" hidden="false">
+                  <description>the unit may re-roll to-hit rolls of 1 in close combat.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Cult of the Red Grief" hidden="true" id="408a-a25b-c7ac-aeb9" publicationId="9356-fc9b-2fee-7d11">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="67bd-95ce-b863-267c" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Too Fast to Catch" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="2e61-4013-7143-46f6">
+                  <characteristics>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Trigger: an enemy unit ends a move within 12" of a Red Grief unit. The unit moves up to D6 plus its Initiative Characteristic in inches (vehicles move up to 6") in any direction.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Blur of Motion" id="77c5-bf27-221b-3455" hidden="false">
+                  <description>the unit increases its Fleet (X) by 1.</description>
+                </rule>
+                <rule name="Speed Kills" id="8f29-8885-b4b2-0744" hidden="false">
+                  <description>Cavalry, Jump and vehicle units add 2 to their Movement Characteristic.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Dark Creed" hidden="true" id="0e92-1880-6c23-4679" publicationId="9356-fc9b-2fee-7d11">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fd0f-3891-a5fa-7e66" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Torment" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="6dc5-218d-f025-6b9b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: an enemy unit declares a charge against a Dark Creed unit. The charging unit must take a Leadership test; if it fails, it gains no bonuses for charging in that combat.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Fear Incarnate" id="7b27-bd53-8b57-7fa9" hidden="false">
+                  <description>enemy units within 6" subtract 1 from their Leadership.</description>
+                </rule>
+                <rule name="Masters of Torment" id="5cc3-7996-5241-8c22" hidden="false">
+                  <description>enemy units that fail a Morale check within 12" of this unit lose one additional model.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Prophets of Flesh" hidden="true" id="a088-dae4-0485-4557" publicationId="9356-fc9b-2fee-7d11">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fd0f-3891-a5fa-7e66" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Insensible to Pain" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="d1a3-f7f0-1999-5170">
+                  <characteristics>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: a Prophets of Flesh unit is selected as the target of a Shooting Attack. Against that attack, the unit's Feel No Pain improves by a further 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Experimental Creations" id="2fc5-63b1-1cb1-447c" hidden="false">
+                  <description>Bio-Construct models in the detachment add 1 to their Wounds Characteristic.</description>
+                </rule>
+                <rule name="Masters of the Flesh" id="e3c1-ced7-a529-edec" hidden="false">
+                  <description>improve the unit's Feel No Pain by 1, to a best of 4+.</description>
                 </rule>
               </rules>
               <costs>
@@ -1403,6 +1573,25 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Torment grenade launchers" hidden="false" id="2988-2c64-d49a-bd89" publicationId="9356-fc9b-2fee-7d11">
+      <profiles>
+        <profile name="Torment grenade launchers" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7cd6-6304-6eb8-ae67" publicationId="9356-fc9b-2fee-7d11">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3")</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="9541-8efa-ccb5-4773" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Blast (3&quot;)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Venom bomb" hidden="false" id="52c5-2cc1-fd53-807b" publicationId="9356-fc9b-2fee-7d11">
       <profiles>
         <profile name="Venom bomb" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="dbc6-2637-d26f-c75e" publicationId="9356-fc9b-2fee-7d11">
@@ -1511,6 +1700,27 @@
             <modifier type="set" field="name" value="Blast (3&quot;)" />
           </modifiers>
         </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Parasite's Kiss" hidden="false" id="19b7-7558-f4e9-411f" publicationId="9356-fc9b-2fee-7d11">
+      <profiles>
+        <profile name="Parasite's Kiss" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a585-e0ef-ad3c-0d17" publicationId="9356-fc9b-2fee-7d11">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Poisoned (4+), Soul-leech, Master-crafted</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Poisoned (X)" id="cfb4-4d77-66a4-72da" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Poisoned (4+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Soul-leech" id="e118-37f5-0a36-5a0a" hidden="false" targetId="e4a1-2ed2-3b1c-730f" type="rule" />
+        <infoLink name="Master-crafted" id="3ce1-f5b0-3234-276f" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Razorwing missile" hidden="false" id="5d1a-cb14-9b8f-4828" publicationId="9356-fc9b-2fee-7d11">
@@ -2555,6 +2765,15 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mesh Armour" hidden="false" id="c40a-f65b-84b1-69c3" publicationId="9356-fc9b-2fee-7d11">
+      <profiles>
+        <profile name="Mesh Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7301-343a-c553-c7d2">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with mesh armour has a 4+ Armour Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Shadow Armour" hidden="false" id="43e3-d8b8-cd41-fe5d" publicationId="9356-fc9b-2fee-7d11">
       <profiles>
         <profile name="Shadow Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1270-2014-0a26-fb68">
@@ -3382,7 +3601,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Parasite's Kiss" hidden="false" id="097a-0132-47e2-a3f2" type="selectionEntry" targetId="23eb-562c-6fbd-ed44">
+                <entryLink import="true" name="Parasite's Kiss" hidden="false" id="097a-0132-47e2-a3f2" type="selectionEntry" targetId="19b7-7558-f4e9-411f">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd5e-aafe-a5c6-70ab" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -3536,7 +3755,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="6650-e9da-85fe-4fac" publicationId="9356-fc9b-2fee-7d11" />
-    <selectionEntry type="upgrade" import="true" name="Parasite's Kiss" hidden="false" id="23eb-562c-6fbd-ed44" publicationId="9356-fc9b-2fee-7d11" />
     <selectionEntry type="upgrade" import="true" name="Combat Drugs (2)" hidden="false" id="d309-aec1-eb52-ba04" publicationId="9356-fc9b-2fee-7d11" />
     <selectionEntry type="unit" import="true" name="Succubus" hidden="false" id="c022-08d8-b3bd-3a2e" publicationId="9356-fc9b-2fee-7d11">
       <infoLinks>
@@ -4619,6 +4837,11 @@
             <modifier type="set" field="name" value="Aeldari (Drukhari, Wych Cult)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Obsession (X)" id="c8cc-a0a4-446a-9361" hidden="false" targetId="3bf4-f7e6-59c2-d363" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Obsession (Cult of Strife)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Arena Killers" id="eda6-540f-3d4b-a007" hidden="false" targetId="ed40-2e66-4edc-4a88" type="rule" />
         <infoLink name="Blade Artists" id="0474-8653-4030-dede" hidden="false" targetId="344a-9fe3-2879-545c" type="rule" />
         <infoLink name="Eternal Warrior" id="ef68-45a5-9e00-5816" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule" />
@@ -4800,7 +5023,11 @@
             <modifier type="set" field="name" value="Invulnerable Save (4+)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Lightning Strike (6+)" id="16c5-1a3e-ce87-c9f8" hidden="false" targetId="2d0e-adf5-2a18-1806" type="rule" />
+        <infoLink name="Lightning Blows (X)" id="5d1e-7240-9cce-4155" hidden="false" targetId="9904-3c53-7057-b254" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Lightning Blows (6+)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Master of Blades" id="6b5f-6f1c-1ae0-8066" hidden="false" targetId="f4a4-03fd-3eee-9723" type="rule" />
         <infoLink name="Master of the Raid" id="c11e-7eab-4617-83a7" hidden="false" targetId="661c-0af7-815d-43b3" type="rule" />
         <infoLink name="Power From Pain" id="cfda-450e-e237-4c4e" hidden="false" targetId="ceac-7e1a-2851-4684" type="rule" />
@@ -4978,6 +5205,11 @@
         <infoLink name="Aeldari (X)" id="91d3-7c77-0aca-ba37" hidden="false" targetId="fbd1-9907-8259-c689" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Aeldari (Drukhari, Kabal)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Obsession (X)" id="ccaa-bbe0-ad29-cb6b" hidden="false" targetId="3bf4-f7e6-59c2-d363" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Obsession (Kabal of the Black Heart)" />
           </modifiers>
         </infoLink>
         <infoLink name="Power From Pain" id="c357-2e70-7e92-29fd" hidden="false" targetId="ceac-7e1a-2851-4684" type="rule" />
@@ -5301,6 +5533,11 @@
             <modifier type="set" field="name" value="Aeldari (Drukhari, Haemonculus Coven)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Obsession (X)" id="7789-4f7d-3e39-b6df" hidden="false" targetId="3bf4-f7e6-59c2-d363" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Obsession (Prophets of Flesh)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Power From Pain" id="6982-a82a-6024-74ca" hidden="false" targetId="ceac-7e1a-2851-4684" type="rule" />
       </infoLinks>
       <categoryLinks>
@@ -5572,10 +5809,10 @@
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="fdaf-5207-6471-b992" primary="false" name="Infantry Unit Type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="scale armour" hidden="false" id="0b85-0ea1-949a-25a7" type="selectionEntry" targetId="6f49-30f4-7800-ba67">
+            <entryLink import="true" name="Mesh Armour" hidden="false" id="c080-ba07-fd79-0559" type="selectionEntry" targetId="c40a-f65b-84b1-69c3">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d70-236e-c167-2be2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="695e-6d7b-fb3b-f441" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="32b2-ffb7-8550-13f7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cf1-60f1-a9b6-99e9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
             <entryLink import="true" name="Shardcarbine" hidden="false" id="f012-0990-572f-5f18" type="selectionEntry" targetId="2687-1709-5893-7299">
@@ -5669,7 +5906,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="scale armour" hidden="false" id="6f49-30f4-7800-ba67" publicationId="9356-fc9b-2fee-7d11" />
     <selectionEntry type="unit" import="true" name="Bloodbrides" hidden="false" id="3270-f65f-9383-fdb8" publicationId="9356-fc9b-2fee-7d11">
       <infoLinks>
         <infoLink name="Xenos" id="8ad9-0a15-1698-145a" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
@@ -10442,7 +10678,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Torment grenade launchers" hidden="false" id="08cb-a8d1-251f-29f3" type="selectionEntry" targetId="bed4-d805-87a9-a5e4">
+                <entryLink import="true" name="Torment grenade launchers" hidden="false" id="08cb-a8d1-251f-29f3" type="selectionEntry" targetId="2988-2c64-d49a-bd89">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2079-e140-99b2-5008" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -10492,7 +10728,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Torment grenade launchers" hidden="false" id="bed4-d805-87a9-a5e4" publicationId="9356-fc9b-2fee-7d11" />
     <selectionEntry type="unit" import="true" name="Reaper" hidden="false" id="123f-3793-c3fb-9151" publicationId="9356-fc9b-2fee-7d11">
       <infoLinks>
         <infoLink name="Xenos" id="dfc6-984a-0700-7b42" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
@@ -10727,6 +10962,11 @@
         <infoLink name="Aeldari (X)" id="4912-2838-021a-3ed5" hidden="false" targetId="fbd1-9907-8259-c689" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Aeldari (Drukhari, Kabal)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Obsession (X)" id="e528-cd1c-b0f1-5f1d" hidden="false" targetId="3bf4-f7e6-59c2-d363" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Obsession (Kabal of the Black Heart)" />
           </modifiers>
         </infoLink>
         <infoLink name="Power From Pain" id="3ec0-2d1f-0d91-6fa9" hidden="false" targetId="ceac-7e1a-2851-4684" type="rule" />
@@ -11050,6 +11290,156 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hatred Eternal" hidden="true" id="5bc9-6e69-633d-e7e1" publicationId="9356-fc9b-2fee-7d11">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="de4f-9184-2051-a4c2" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1998-c090-7b5d-d554" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Hatred Eternal" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="0d97-a95c-6c66-34f6">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit it joins have Hatred against every enemy.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="0041-64b7-3285-ea2e" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Soul Thirst" hidden="true" id="94e8-3d4a-a9f2-9809" publicationId="9356-fc9b-2fee-7d11">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4e92-1ff0-9a92-9637" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6f4-816c-19a1-7fc7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Soul Thirst" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="da1e-45ec-1141-64f7">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Each time the Warlord slays an enemy model in close combat, it restores one lost Wound, up to its starting value.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="af7f-9584-a9cb-1df5" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Precision Killer" hidden="true" id="24fb-3359-35e3-eec5" publicationId="9356-fc9b-2fee-7d11">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="419c-b6cb-9b92-158b" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e97-25b8-d09c-a121" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Precision Killer" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="0145-7573-c713-2ec6">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord's melee weapons gain Murderous Strike (5+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="863f-ca09-c654-18a3" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hyper-swift Reflexes" hidden="true" id="3b7d-f157-a8f3-4f7c" publicationId="9356-fc9b-2fee-7d11">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="408a-a25b-c7ac-aeb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef92-b54d-dffc-78e6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Hyper-swift Reflexes" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="faa7-ea69-981b-e019">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit it joins add 1 to their Initiative and gain Outflank.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="e969-6ada-1998-c06e" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dread Master" hidden="true" id="88b9-f214-7f5f-d8ae" publicationId="9356-fc9b-2fee-7d11">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="0e92-1880-6c23-4679" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a4a-df6f-173d-b760" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Dread Master" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="f276-81c1-6607-8a8b">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Enemy units within 12" of the Warlord subtract a further 1 from their Leadership.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="9964-4458-24a2-4885" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Diabolical Soothsayer" hidden="true" id="b0fd-4631-c934-8aca" publicationId="9356-fc9b-2fee-7d11">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a088-dae4-0485-4557" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fcb-d3c3-c2a3-7d0e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Diabolical Soothsayer" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="9bbc-eed2-46f5-5f2d">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord has a 4+ Invulnerable Save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="bf9e-b651-4d81-6b0a" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -11080,6 +11470,9 @@
     </rule>
     <rule name="Kabalite Discipline" id="c898-4bc6-958e-09cb" hidden="false" publicationId="9356-fc9b-2fee-7d11">
       <description>*Kabalite Warriors prosecute raids with cold precision, coordinating overlapping fire and surgical elimination strikes against vulnerable prey.* A unit with this Special Rule gains Precision Shots (6+). In addition, when targeting Pinned, Falling Back or Disordered enemy units, ranged attacks made by this unit gain Breaching (6+).</description>
+    </rule>
+    <rule name="Lightning Blows (X)" id="9904-3c53-7057-b254" hidden="false" publicationId="9356-fc9b-2fee-7d11">
+      <description>*Some warriors fight with such speed and precision that they are capable of landing a series of blows like lightning, before their opponent can even react. There are few that can withstand such a barrage of attacks, and those warriors that have mastered this technique are rightfully feared on the battlefield.* After normal To Hit rolls for a weapon with this special rule have been made, count the number of Hits inflicted on a roll of equal to or more than the value listed in brackets as part of this rule. Immediately resolve a number of additional To Hit rolls on the same unit using the attacking models' WS equal to the number of Hits counted earlier – any Hits scored roll To Wound as normal using the profile of the weapon with this special rule or a weapon chosen from those available to the model with this special rule if the rule is not applied to a specific weapon. These additional attacks do not themselves benefit from the Lightning Blows (X) special rule, but do benefit from any other special rules possessed by the attacking model, such as Preferred Enemy (X) or Precision Strikes (X).</description>
     </rule>
     <rule name="Master of the Arena" id="f9f5-cea7-76d4-3410" hidden="false" publicationId="9356-fc9b-2fee-7d11">
       <description>Wych Cult Troops units in an army that includes one or more Succubus models gain the Line Unit Sub-type.</description>
@@ -11114,17 +11507,20 @@
     <rule name="Bio-Construct" id="a56e-a0ab-6807-b952" hidden="false" publicationId="9356-fc9b-2fee-7d11">
       <description>*The Bio-Construct Unit Type represents grotesque fleshcrafted war-engines, pain engines, and surgically augmented monstrosities created by the Haemonculus Covens. Though biologically derived, these entities function on the battlefield in a manner comparable to Dreadnoughts, combining unnatural durability, integrated heavy weapon systems, and catastrophic close combat lethality within massively reinforced fleshcraft bodies. Bio-Constructs are sustained through layered biological redundancy, pain suppression matrices, vat-grown organ reinforcement, and psycho-reactive regenerative systems. Their bodies are resistant to conventional toxins and biological attack vectors, while invasive neural conditioning renders them incapable of fear or hesitation. Many Bio-Constructs also contain volatile animus-reactors, pain engines, or soul-furnaces that detonate violently upon catastrophic destruction.* Any rule, effect, weapon, or special rule that specifically affects models of the Dreadnought Unit Type also affects models with the Bio-Construct Unit Type unless explicitly stated otherwise. The following rules apply to all models with the Bio-Construct Unit Type and any Bio-Construct sub-types: Successful Wounds scored by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Bio-Construct Unit Type. All Bio-Construct models have the Fearless special rule. A model with the Bio-Construct Unit Type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction. A model of the Bio-Construct Unit Type may fire Heavy and Ordnance weapons and counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn. No model that is not also of the Bio-Construct Unit Type may join a unit that includes a Bio-Construct model. Any model with the Bio-Construct Unit Type that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted upon it. In addition, when a model with the Bio-Construct Unit Type loses its last Wound, but before it is removed as a casualty, all models, friendly and enemy, within D6" suffer an automatic Hit at Strength 8, AP -.</description>
     </rule>
+    <rule name="Soul-leech" id="e4a1-2ed2-3b1c-730f" hidden="false" publicationId="9356-fc9b-2fee-7d11">
+      <description>Each time the bearer inflicts an unsaved Wound with the Parasite's Kiss, it immediately gains back one Wound it lost previously in the battle.</description>
+    </rule>
     <rule name="Entangle" id="1687-2ce3-fccd-0366" hidden="false" publicationId="9356-fc9b-2fee-7d11">
       <description>Models affected by a shardnet and impaler suffer -2 Initiative (to a minimum of 1) until the end of the Fight phase. In addition, they may not make Reactions that involve movement disengagement unless they pass a Leadership test. *Rare, highly specialized melee armaments used by Drukhari leaders, Succubi, Archons, arena champions and elite duelists. Often personally modified, psycho-reactive, daemon-bound or built around a specific combat philosophy, they are status symbols as much as combat tools.* Weapon: Range, Str, AP, Type. Archite glaive: –, +2, 3, Melee, Reach (2), Rending (5+). Claws and teeth: –, User, –, Melee. Decapitator's blades: –, +1, 3, Melee, Rending (5+). Djinn blade: –, +1, 2, Melee, Rending (5+), Rampage (2). Electrocorrosive whip: –, User, 4, Melee, Breaching (6+), Concussive (2), Shell Shock (1). Glimmersteel blade: –, User, 5, Melee. Power lance: –, +2, 3, Melee, Reach (2), Sudden Strike (1), Two-handed. Rending claws: –, User, 5, Melee, Rending (5+), Shred. Sceptre of the Dark City: –, +1, 3, Melee, Murderous Strike (5+). Sslyth warblade: –, +1, 3, Melee, Rending (6+), Shred. The Lady's Blade: –, User, 2, Melee, Poisoned (2+)†. Venom blade: –, User, 4, Melee, Poisoned (3+). Weapon: Range, Str, AP, Type. The Blades of Lelith – melee: –, User, 2, Melee, Murderous Strike (6+), Precision Strikes (4+), Rending (4+), Shred, Specialist Weapon, Two-handed. The Blades of Lelith – thrown: 6", User, 4, Assault 1, Murderous Strike (6+), Precision Shots (6+), Rending (4+), Shred.</description>
     </rule>
+    <rule name="Sub-faction (X)" id="6c34-8d21-1695-b14f" hidden="false" publicationId="9356-fc9b-2fee-7d11">
+      <description>Every Drukhari detachment fights for one of the three great powers of Commorragh: the Kabals, the Wych Cults or the Haemonculus Covens. Choose one when building each detachment, then one of its Obsessions (below). The sub-faction gives that detachment its Advanced Reaction, Warlord Trait and Line units.</description>
+    </rule>
     <rule name="Obsession (X)" id="3bf4-f7e6-59c2-d363" hidden="false" publicationId="9356-fc9b-2fee-7d11">
-      <description>Every Drukhari detachment fights for one of the three great powers of Commorragh: the Kabals, the Wych Cults or the Haemonculus Covens. Choose one when building each detachment. It gives that detachment its Advanced Reaction, Warlord Trait and Line units.</description>
+      <description>When building an army, choose one Obsession of the detachment's sub-faction for each detachment. Every unit in that detachment gains Obsession (X), where X is the chosen Obsession. Unique characters may join any Obsession of their sub-faction, except Lelith Hesperax (Cult of Strife), Asdrubael Vect (Kabal of the Black Heart) and Urien Rakarth (Prophets of Flesh).</description>
     </rule>
     <rule name="Invulnerable Save (X)" id="2d12-951d-7304-58f8" hidden="false" publicationId="9356-fc9b-2fee-7d11">
       <description>The model has an Invulnerable Save of X, which may be taken against any Wound instead of its armour save.</description>
-    </rule>
-    <rule name="Lightning Strike (6+)" id="2d0e-adf5-2a18-1806" hidden="false" publicationId="9356-fc9b-2fee-7d11">
-      <description>Listed on this datasheet but not defined in the conversion doc.</description>
     </rule>
   </sharedRules>
 </catalogue>
