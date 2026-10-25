@@ -171,7 +171,7 @@ Orks use the 2.0 core reactions (Reposition, Return Fire, Overwatch) as normal, 
 
 The point of this reaction is to punish an opponent who stops near a mob of Orks: if they come too close, the Orks crash into them on their own terms.
 
-## Psychic Discipline: Power of da Waaagh!
+## Psychic Discipline: Weirdboy Discipline
 
 There is no psychic phase in 2.0. A Weirdboy uses his powers in the phase each one names, making a Psychic check against his Leadership†. A failed check causes Perils of the Waaagh!. Ork Psychic checks also suffer Perils on any double, as described under Waaagh! Energy.
 
@@ -184,13 +184,32 @@ There is no psychic phase in 2.0. A Weirdboy uses his powers in the phase each o
 - the number of hits inflicted
 - the value of the Shell Shock special rule
 
-Every Weirdboy knows Da Jump and Frazzle. A Weirdboy with the Warphead upgrade also knows Fists of Gork.
+**Weirdboy Discipline.** A Weirdboy generates psychic abilities randomly. Before deployment, roll one D3 on the Weirdboy Psychic Powers table and one D3 on the Weirdboy Psychic Weapons table. The Weirdboy gains the generated power and weapon for the duration of the battle.
+
+**Psychic Focus.** Before making any To Hit rolls with a Psychic Weapon, the Weirdboy must make a Psychic check. If the check is passed, the Weirdboy may attack normally with the selected weapon. If the check is failed:
+
+- the Weirdboy suffers Perils of the Warp
+- and may not use the Psychic Weapon during that phase.
+
+**Shock Pulse.** Any unit that suffers one or more unsaved Wounds from this weapon suffers −1 WS until the end of the next Assault phase.
+
+#### Weirdboy Psychic Powers
 
 | Power | Kind | Phase | Effect |
 |---|---|---|---|
-| Da Jump | Psychic power | Movement | Select one friendly Ork unit within 12" of the Weirdboy, plus one more for each +1 of his current Waaagh! Energy bonus. Remove the selected units from the battlefield and place them in Reserves. Roll for them as normal for Reserves, adding the Waaagh! Energy bonus to each roll; when they arrive, they enter play by Deep Strike as normal. The Waaagh! Energy bonus is fixed when Da Jump is cast, and that same value is used for these Reserves rolls. |
-| Fists of Gork | Psychic power | Assault | Until end of phase the Weirdboy has +2 Strength and +2 Attacks. |
-| Frazzle | Psychic weapon | Shooting | Template, S5, AP4, Assault 1, Pinning |
+| Da Jump | Psychic power | Movement | D3 roll of 1. Instead of moving during the Movement phase, select one friendly Ork Infantry unit within 12". Remove that unit from the battlefield and immediately redeploy it using the Deep Strike special rules. The redeployed unit gains Fleet (2) until the end of the turn. If the Psychic check is failed, the unit scatters D6" and suffers D6 Strength 4 AP – hits. |
+| Waaagh! Pulse | Psychic power | Shooting | D3 roll of 2. Instead of making a Shooting Attack, all friendly Ork units within 12" gain Furious Charge (2) and Dakka! (5+) until the beginning of the controlling player's next turn. If the Psychic check is failed, all affected units become Pinned. |
+| Green Fury | Psychic power | Shooting | D3 roll of 3. Instead of making a Shooting Attack, select one friendly Ork Infantry unit within 12". That unit gains Counter-Attack (1), Crusader and Fearless until the beginning of the controlling player's next turn. If the Psychic check is failed, the affected unit suffers −1 Weapon Skill until the beginning of the controlling player's next turn. |
+
+#### Weirdboy Psychic Weapons
+
+Roll a D3: 1 Green Lightning, 2 Warphead Blast, 3 Fists of Gork.
+
+| Weapon | Range | Str | AP | Type |
+|---|---|---|---|---|
+| Green Lightning | 18" | 7 | 4 | Assault D3, Shock Pulse, Psychic Focus |
+| Warphead Blast | 24" | 8 | 3 | Heavy 1, Large Blast (5"), Gets Hot, Psychic Focus |
+| Fists of Gork | – | x2 | 2 | Melee, Brutal (2), Psychic Focus |
 
 ## Ork Klans
 
@@ -900,7 +919,7 @@ _A Head Nob with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 
 - Perils of the Waaagh!
 - Waaagh!
 - Waaagh! Energy
-- Weirdboy Discipline: knows the powers of the Power of da Waaagh! discipline (Da Jump and Frazzle, and Fists of Gork with a warphead)
+- Weirdboy Discipline
 
 **Options**
 
@@ -1121,7 +1140,7 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 - Hex: once per game in the Shooting phase, after a successful Psychic check, pick an enemy character within 12"; it must pass a Toughness test or be removed as a casualty
 - Klan (Snakebites)
 - Mob Rule
-- Psychic discipline: Power of da Waaagh!, including Fists of Gork
+- Weirdboy Discipline
 - Waaagh!
 - Waaagh! energy
 
@@ -1664,7 +1683,7 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 - Perils of the Waaagh!
 - Waaagh!
 - Waaagh! Energy
-- Weirdboy Discipline: knows the powers of the Power of da Waaagh! discipline (Da Jump and Frazzle, and Fists of Gork with a warphead)
+- Weirdboy Discipline
 
 **Options**
 
@@ -3044,7 +3063,7 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 - Open-topped†
 - Ramshackled Vehicle (6+)
 - Wartotem: friendly Beast Snagga units within 12" re-roll failed Morale checks
-- Wurrtower: carries a Wurrboy who knows Power of da Waaagh! and uses the rig's Ld 8 for Psychic checks
+- Wurrtower: carries a Wurrboy with the Weirdboy Discipline who uses the rig's Ld 8 for Psychic checks
 
 **Access Points**
 
@@ -3670,7 +3689,7 @@ A warbike has a twin-linked big shoota. A model with the Infantry Unit Type that
 
 ### Warphead
 
-A Weirdboy or Weirdboss with a warphead also knows Fists of Gork.
+A Weirdboy or Weirdboss with a warphead also has the Fists of Gork psychic weapon, as well as the one he generates.
 
 ### Wreckin' Ball
 

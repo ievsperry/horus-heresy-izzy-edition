@@ -117,6 +117,10 @@ loading. The script prints anything in the doc it could not place.
   and "must include at least two Genestealer units" are errors on the Rite when broken; and a Rite
   that "may not be used by an Allied Detachment" is hidden in one.
 
+- A psychic discipline whose rule says to "roll one D3 on the ... Psychic Powers table" (the
+  Weirdboy Discipline) gives each psyker that has it a pick of one power and one psychic weapon
+  from the discipline's tables, standing in for the rolls.
+
 - A biomorph granted by a sub-faction ("Deep Burrowers: Infantry units gain the Burrower biomorph")
   or a Warlord Trait ("The Warlord and any unit it joins gain the Burrower biomorph") shows its
   rules on those units while that sub-faction or trait is chosen, and the paid option is hidden.

@@ -742,6 +742,10 @@ class Builder:
                    hidden=False, id=eid, publicationId=self.pub_id)
             add_text_profile(e, PSY_POWER_PROFILE, name, text, eid)
             self.powers.append((name, eid))
+        # "Weirdboy Discipline. ... roll one D3 on the ... Psychic Powers table": the psyker picks one
+        # power and one psychic weapon, standing in for the rolls.
+        self.random_disciplines = {norm(n) for n, t in self.rule_paragraphs(psy["lines"] if psy else [])
+                                   if re.search(r"roll one D3 on the", t)}
         # "A Weirdboy with the Warphead upgrade also knows Fists of Gork": powers only some know.
         self.restricted_powers = set()
         if psy:
@@ -2867,6 +2871,19 @@ class Builder:
         if hm and "Psyker" in m["types"] and self.powers:
             if self.scream_id:
                 self.link(links, self.scream_id, "Psychic Scream", m["id"], count=1)
+        rolled = next((r for r in ds["rules"] if norm(r) in getattr(self, "random_disciplines", ())), None)
+        if rolled and "Psyker" in m["types"] and target_unit is not None:
+            for label, items in (("Psychic Power", self.powers), ("Psychic Weapon", self.psychic_weapons)):
+                if not items:
+                    continue
+                gkey = make_id(m["id"], "rolled", label)
+                ge = el(child(target_unit, "selectionEntryGroups"), "selectionEntryGroup",
+                        name=f"{rolled}: {label}", hidden=False, id=gkey)
+                add_constraint(ge, "min", 1, gkey + "min")
+                add_constraint(ge, "max", 1, gkey + "max")
+                gl = el(ge, "entryLinks")
+                for name, pid in items:
+                    self.link(gl, pid, name, gkey, maximum=1)
         disc = next((r for r in ds["rules"] if norm(r).startswith("psychic discipline")), None)
         if disc and not hm and "Psyker" in m["types"]:
             for pname, pid in self.psychic_weapons:
