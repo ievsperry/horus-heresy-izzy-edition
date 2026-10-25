@@ -3942,7 +3942,7 @@ Kustom mega-blastas, kustom shokk rifles, shokk attack guns, zzap guns and every
 | Kustom mega-zappa | 36" | 8 | 2 | Heavy 3, Gets Hot |
 | Kustom shokk rifle | 24" | 8 | 3 | Heavy 1, Rending (4+), Exo-shock (6+) |
 | Lobba | 48" | 5 | 6 | Heavy 1, Large Blast (5"), Barrage |
-| Shokk attack gun | 60" | 2D6 | 3 | Heavy 1, Large Blast (3"), Mishap |
+| Shokk attack gun | 60" | 2D6 | D6 | Heavy 1, Large Blast (5"), Mishap |
 | Smasha gun | 36" | 8 | 3 | Heavy 1, Brutal (2) |
 | Stikka kannon | 24" | 7 | 4 | Heavy 2 |
 | Tellyport mega-blasta | 24" | 8 | 2 | Assault 1, Gets Hot |
@@ -3950,16 +3950,18 @@ Kustom mega-blastas, kustom shokk rifles, shokk attack guns, zzap guns and every
 | Wazbom mega-kannon | 36" | 8 | 2 | Heavy 1, Blast (3"), Gets Hot |
 | Zzap gun | 36" | 8 | 2 | Heavy 1, Shock Pulse |
 
-**Mishap.** When firing a Shokk Attack Gun, roll 2D6 to determine the weapon's Strength characteristic. If the result contains any Double, resolve the attack normally and then immediately roll a D6 on the following Mishap Table.
+_The Shokk Attack Gun tears unstable holes through reality itself, hurling screaming grots and unstable Warp matter directly into the enemy through barely controlled dimensional breaches. Even by Ork standards, the weapon is catastrophically dangerous and wildly unpredictable, yet its terrifying destructive potential ensures that ambitious Mek Bosses continue building them regardless of the consequences._
+
+**Mishap.** When firing a Shokk Attack Gun, roll 2D6 to determine the weapon's Strength characteristic and a D6 to determine its AP. If the result contains any Double, resolve the attack normally and then immediately roll a D6 on the following Mishap Table.
 
 | D6 | Mishap Result | Rules Effect |
 |---|---|---|
-| 1 | Warp Core Collapse! | The firer and his entire unit suffer a Strength 6 AP4 hit with the Deflagrate special rule. The Shokk Attack Gun may not be fired again for the remainder of the battle. |
-| 2 | Polarity Reversed | Remove the firer from play and immediately place him in base contact with the target enemy unit. He counts as having successfully Charged and becomes Locked in combat, but begins the combat Pinned. |
-| 3 | Snotling Rain | The original attack causes no damage. Instead place a Massive Blast (7") template centred on the battlefield. Every unit touched by the template must immediately take a Pinning test. |
+| 1 | Warp Core Collapse! | The Mek Boss and every model in the entire unit suffer a Strength 6 AP4 hit with the Deflagrate special rule. The Shokk Attack Gun may not be fired again for the remainder of the battle. |
+| 2 | Polarity Reversed | Remove the Mek Boss from play and immediately place him in base contact with the target enemy unit. The Mek Boss counts as having successfully Charged and becomes Locked in combat, but begins the combat Pinned. |
+| 3 | Snotling Rain | The original attack causes no damage. Instead place a Massive Blast (7") template centered on the target. Every unit touched by the template must immediately take a Pinning test. |
 | 4 | Ear-Biting Madness | If the target is a Vehicle, it immediately suffers a Crew Shaken result. If the target is Infantry, Cavalry or a Dreadnought, the target gains Blind and Concussive (1) until the end of the next player turn. |
-| 5 | Subatomic Materialization | The attack resolves at Strength 10 and gains Fleshbane and Sunder. After resolving the attack, the firer suffers one automatic Wound with no saves of any kind allowed. |
-| 6 | Annihilation Vortex | The attack resolves at Strength 10 AP1 and gains Torrent and Instant Death. The target unit must immediately take a Morale check at -2 Leadership. |
+| 5 | Subatomic Materialization | The attack resolves at Strength 10 and gains Fleshbane and Sunder. After resolving the attack, the Mek Boss suffers one automatic Wound with no saves of any kind allowed. |
+| 6 | Annihilation Vortex | The attack resolves at Strength 10 AP1 and gains Instant Death. The target unit must immediately take a Morale check at -2 Leadership. |
 
 ### Flame Weapons
 
