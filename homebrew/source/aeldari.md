@@ -448,7 +448,7 @@ No other units may be selected as part of this Detachment.
 - Every model: Aeldari power sword, mesh armour, plasma grenades, shuriken pistol, unless noted below
 - Shade Runner: two Hekatarii blades, instead of Aeldari power sword
 - Soul Weaver: channeller stones
-- Way Seeker: witch staff, two Hekatarii blades, instead of Aeldari power sword
+- Way Seeker: witch staff
 
 **Unit Type**
 
