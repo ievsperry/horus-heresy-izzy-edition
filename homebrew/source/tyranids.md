@@ -537,11 +537,11 @@ _The ground shakes, the earth splits, and the swarm erupts from below, burrowing
 | – Regeneration (5+) | +30 points |
 | – Unnatural Resilience | +15 points |
 
-### Trygon Prime — 240 pts
+### Trygon Prime — 260 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Trygon Prime | 8 | 5 | 3 | 6 | 6 | 6 | 4 | 6 | 10 | 3+ | 120x92mm |
+| Trygon Prime | 8 | 5 | 3 | 7 | 7 | 6 | 4 | 6 | 10 | 3+ | 120x92mm |
 
 **Unit Composition**
 
