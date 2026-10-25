@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -160,7 +160,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2a2-6241-0bef-2cef" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Dread Mob" hidden="false" id="29c4-3570-de92-29f9" publicationId="96d0-c462-d158-fbad">
+            <selectionEntry type="upgrade" import="true" name="Dread Mob Walkin'" hidden="false" id="9620-3dd7-98b0-db67" publicationId="96d0-c462-d158-fbad">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -169,15 +169,15 @@
                 </modifier>
               </modifiers>
               <rules>
-                <rule name="Effects" id="ff59-8b49-e2fc-17b6" hidden="false">
+                <rule name="Effects" id="469a-6f0f-a161-43c2" hidden="false">
                   <description>Killa Kans may be taken as Troops choices in a Detachment using this Rite of War. Every model with Mek-Smasha (X) in a Detachment using this Rite of War improves it by 1, to a best of Mek-Smasha (3+).</description>
                 </rule>
-                <rule name="Limitations" id="26d2-f8d2-c516-d9aa" hidden="false">
+                <rule name="Limitations" id="91a7-d8e0-b39e-f7f5" hidden="false">
                   <description>A Detachment using this Rite of War must have a Big Mek as its Warlord. A Detachment using this Rite of War may not include more Infantry units than it has Dreadnought units. This Rite of War may not be used by an Allied Detachment.</description>
                 </rule>
               </rules>
               <categoryLinks>
-                <categoryLink targetId="d494-e450-d4aa-579a" id="2cbb-e1e1-80a2-229a" primary="true" name="Rite of War:" />
+                <categoryLink targetId="d494-e450-d4aa-579a" id="562a-28fc-ebe8-a685" primary="true" name="Rite of War:" />
               </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -773,17 +773,17 @@
         <categoryLink targetId="36c3-e85e-97cc-c503" id="4f14-1997-3961-e468" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Killa Kans" hidden="true" id="d0dd-3774-bb2f-91d0" type="selectionEntry" targetId="dfb9-1c6b-1b26-a03e">
+    <entryLink import="true" name="Killa Kans" hidden="true" id="96c8-151d-dfe0-a2b6" type="selectionEntry" targetId="dfb9-1c6b-1b26-a03e">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="2d90-21f2-93b4-49c1" primary="true" name="Troops:" />
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="a608-2629-ba26-f36a" primary="false" name="Unit:" />
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="9837-8730-ced6-c389" primary="true" name="Troops:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="b110-8c26-1a1f-519e" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Squighog Boyz" hidden="true" id="01b9-2c82-faef-99a8" type="selectionEntry" targetId="bd6b-3ea9-72a2-3c0f">
@@ -1206,9 +1206,9 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Grot shiv" hidden="false" id="77ad-6d8b-daa8-9943" publicationId="96d0-c462-d158-fbad">
+    <selectionEntry type="upgrade" import="true" name="Grot stabba" hidden="false" id="a672-29e6-7845-0208" publicationId="96d0-c462-d158-fbad">
       <profiles>
-        <profile name="Grot shiv" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2c36-f834-695c-0f60" publicationId="96d0-c462-d158-fbad">
+        <profile name="Grot stabba" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4bc4-fd56-3c39-e862" publicationId="96d0-c462-d158-fbad">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
@@ -2848,7 +2848,7 @@
               <modifiers>
                 <modifier type="set" field="3c44-ce31-11a5-da68" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="3c44-ce31-11a5-da68" value="0">
@@ -2976,7 +2976,7 @@
               <modifiers>
                 <modifier type="set" field="d9d4-ee0d-0c79-3963" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="d9d4-ee0d-0c79-3963" value="0">
@@ -3418,10 +3418,10 @@
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="9be6-6280-114c-11ca" primary="false" name="Infantry Unit Type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Grot shiv" hidden="false" id="9ea2-5d33-8fe7-542e" type="selectionEntry" targetId="77ad-6d8b-daa8-9943">
+            <entryLink import="true" name="Grot stabba" hidden="false" id="01f9-3e48-5c8f-300e" type="selectionEntry" targetId="a672-29e6-7845-0208">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d36-89d3-52f9-27cb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faf9-68ac-8e4f-8fb3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4841-fc74-f9ac-6f3d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa59-805a-3b4b-76f5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -3538,7 +3538,7 @@
               <modifiers>
                 <modifier type="set" field="522e-e01a-bf16-742c" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="522e-e01a-bf16-742c" value="0">
@@ -3660,7 +3660,7 @@
               <modifiers>
                 <modifier type="set" field="41c7-29df-4071-f63d" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="41c7-29df-4071-f63d" value="0">
@@ -3737,10 +3737,10 @@
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="3444-8af3-5fd6-cc32" primary="false" name="Infantry Unit Type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Grot shiv" hidden="false" id="4e2f-49e5-867d-bf82" type="selectionEntry" targetId="77ad-6d8b-daa8-9943">
+            <entryLink import="true" name="Grot stabba" hidden="false" id="7ceb-3789-7fac-1d66" type="selectionEntry" targetId="a672-29e6-7845-0208">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5af-680c-819f-1d7b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cb0-8c52-b9dd-7840" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e85-77fc-18c6-87aa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f247-c1f7-95ae-2493" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -4024,7 +4024,7 @@
               <modifiers>
                 <modifier type="set" field="db44-7908-0430-d90b" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="db44-7908-0430-d90b" value="0">
@@ -4193,7 +4193,7 @@
               <modifiers>
                 <modifier type="set" field="dab6-5939-3bb0-230c" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="dab6-5939-3bb0-230c" value="0">
@@ -4335,7 +4335,7 @@
               <modifiers>
                 <modifier type="set" field="5ade-c44e-a565-aeb4" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="5ade-c44e-a565-aeb4" value="0">
@@ -4468,7 +4468,7 @@
               <modifiers>
                 <modifier type="set" field="8d88-e5e2-40ff-defe" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="8d88-e5e2-40ff-defe" value="0">
@@ -4612,7 +4612,7 @@
               <modifiers>
                 <modifier type="set" field="c1f5-c736-9dd5-c136" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="c1f5-c736-9dd5-c136" value="0">
@@ -4789,7 +4789,7 @@
               <modifiers>
                 <modifier type="set" field="2743-7d2f-9c87-8444" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="2743-7d2f-9c87-8444" value="0">
@@ -4948,7 +4948,7 @@
               <modifiers>
                 <modifier type="set" field="57e0-31c8-e3c9-320a" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="57e0-31c8-e3c9-320a" value="0">
@@ -5032,10 +5032,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efa5-5e09-3920-d69b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Grot shiv" hidden="false" id="8bb4-2eee-3ba6-0686" type="selectionEntry" targetId="77ad-6d8b-daa8-9943">
+            <entryLink import="true" name="Grot stabba" hidden="false" id="c80d-c087-8b68-b91e" type="selectionEntry" targetId="a672-29e6-7845-0208">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="19b1-f298-6f53-7317" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c40-fa41-1e37-ad2c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="60be-d176-55c5-94f6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a66-a4f8-c70f-2b42" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -5076,10 +5076,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d416-0e9f-c638-2d85" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Grot shiv" hidden="false" id="b674-bf7d-031f-b865" type="selectionEntry" targetId="77ad-6d8b-daa8-9943">
+            <entryLink import="true" name="Grot stabba" hidden="false" id="220e-64b2-189d-1cd3" type="selectionEntry" targetId="a672-29e6-7845-0208">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="407b-9a9d-df69-1856" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21a4-0fd8-0b53-18f5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0280-7ea2-c34c-74ad" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75e1-a16d-c7fd-6e37" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -5170,7 +5170,7 @@
               <modifiers>
                 <modifier type="set" field="b1d1-667a-e797-b05f" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="b1d1-667a-e797-b05f" value="0">
@@ -5307,7 +5307,7 @@
               <modifiers>
                 <modifier type="set" field="9e71-44db-effe-20c9" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="9e71-44db-effe-20c9" value="0">
@@ -5440,7 +5440,7 @@
               <modifiers>
                 <modifier type="set" field="0d43-de4e-03a9-ea39" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="0d43-de4e-03a9-ea39" value="0">
@@ -5564,7 +5564,7 @@
               <modifiers>
                 <modifier type="set" field="bec1-1ea1-b888-8845" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="bec1-1ea1-b888-8845" value="0">
@@ -5870,10 +5870,10 @@
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="7dd9-5c93-5e16-94ce" primary="false" name="Infantry Unit Type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Grot shiv" hidden="false" id="e2a0-afe1-1ca7-8478" type="selectionEntry" targetId="77ad-6d8b-daa8-9943">
+            <entryLink import="true" name="Grot stabba" hidden="false" id="9c3b-8b03-2a3c-3ba4" type="selectionEntry" targetId="a672-29e6-7845-0208">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f02-199a-c90a-5c65" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e14-7fe1-2e0e-7798" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac04-25f2-50a6-7145" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6e2-37e5-fa32-1356" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -6391,10 +6391,10 @@
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="a10e-ddbe-83d3-75fc" primary="false" name="Infantry Unit Type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Grot shiv" hidden="false" id="da54-1a9a-59e3-4b6c" type="selectionEntry" targetId="77ad-6d8b-daa8-9943">
+            <entryLink import="true" name="Grot stabba" hidden="false" id="29fc-6499-a524-51ad" type="selectionEntry" targetId="a672-29e6-7845-0208">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8a7-49d9-7cc0-bdcf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa0b-63eb-bc2f-f85b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0988-1ed1-85e0-f68b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0d4-59e6-23fe-e69c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -7372,10 +7372,10 @@
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="12ef-b905-6014-3631" primary="false" name="Infantry Unit Type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Grot shiv" hidden="false" id="d2ec-f18c-0d49-6bdc" type="selectionEntry" targetId="77ad-6d8b-daa8-9943">
+            <entryLink import="true" name="Grot stabba" hidden="false" id="c2f4-7f29-a667-f87f" type="selectionEntry" targetId="a672-29e6-7845-0208">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="567d-ac83-f2ab-8ab8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b12-c407-03df-bfff" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fdea-081e-2ab6-4493" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b8b-25ba-0537-3a80" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8589,10 +8589,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebc2-a117-9ba2-c358" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Grot shiv" hidden="false" id="1757-52db-db2e-a562" type="selectionEntry" targetId="77ad-6d8b-daa8-9943">
+            <entryLink import="true" name="Grot stabba" hidden="false" id="9349-56da-9035-57f7" type="selectionEntry" targetId="a672-29e6-7845-0208">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fee5-0517-1d05-4cf4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b67-8395-d46c-ff4c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38d9-35b7-52d0-f983" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eff-ede3-880f-b48c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -10665,7 +10665,7 @@
     <selectionEntry type="unit" import="true" name="Big Mek Dakkarig" hidden="false" id="95f2-cd60-0975-6221" publicationId="96d0-c462-d158-fbad">
       <rules>
         <rule name="Big Mek" id="2eb6-1aec-14d0-4f58" hidden="false">
-          <description>Counts as a Big Mek for the Dread Mob Rite of War</description>
+          <description>Counts as a Big Mek for the Dread Mob Walkin' Rite of War</description>
         </rule>
       </rules>
       <infoLinks>
@@ -11859,10 +11859,10 @@
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="3337-278d-e39f-7ada" primary="false" name="Infantry Unit Type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Grot shiv" hidden="false" id="fac3-0594-3db4-1377" type="selectionEntry" targetId="77ad-6d8b-daa8-9943">
+            <entryLink import="true" name="Grot stabba" hidden="false" id="c710-317d-98fe-71f6" type="selectionEntry" targetId="a672-29e6-7845-0208">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="937a-b38c-2080-7a80" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f4f-beca-af14-9ec5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5cc9-39fd-7ca1-5f59" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac89-bf61-fe63-9b2b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -12191,7 +12191,7 @@
               <modifiers>
                 <modifier type="set" field="8ed6-bc1f-13c6-eed4" value="0">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="29c4-3570-de92-29f9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
                 <modifier type="set" field="8ed6-bc1f-13c6-eed4" value="0">
@@ -12276,10 +12276,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b556-a6e4-ec70-d05e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Grot shiv" hidden="false" id="0b6c-6293-0cc1-aec9" type="selectionEntry" targetId="77ad-6d8b-daa8-9943">
+            <entryLink import="true" name="Grot stabba" hidden="false" id="ff94-5ab5-3019-7bce" type="selectionEntry" targetId="a672-29e6-7845-0208">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72eb-956c-c7eb-c1f4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1efe-4295-5e7f-6f82" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0859-f4b2-d2a8-a2cf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f1-5732-87a9-47a1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -12740,19 +12740,19 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Might Is Right" hidden="false" id="eab6-ba2c-5d93-3ddb" publicationId="96d0-c462-d158-fbad">
+        <selectionEntry type="upgrade" import="true" name="Da' Mightiest" hidden="false" id="9f1b-c444-15cf-416a" publicationId="96d0-c462-d158-fbad">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a8f-7b82-406c-8351" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="937e-3980-f257-f8d3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
-            <profile name="Might Is Right" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="1f03-dd4a-3ff7-916d">
+            <profile name="Da' Mightiest" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="a6a9-0bf5-0afb-0b07">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord adds 1 to his Strength and Attacks Characteristics in any turn in which he charged, or was charged. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord adds 1 to his Strength and Attacks Characteristics in any turn in which he charged, or was charged. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment. The Warlord also has the Might iz Right! special rule.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink targetId="1158-146a-d9a0-39ad" id="a972-7af2-1084-2ac3" primary="true" name="Warlord Traits:" />
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="d858-ed4d-ea45-fb90" primary="true" name="Warlord Traits:" />
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />

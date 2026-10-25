@@ -307,17 +307,17 @@ _Few Orks run away when the boss can see them do it._
 
 Friendly Ork units within 12" of the Warlord may use his Leadership for Morale checks and Pinning tests, and units within 6" of him may use Breakin' Heads without suffering any hits. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Movement phase, above its normal Reaction Allotment†.
 
-### Might Is Right
+### Da' Mightiest
 
 _The biggest Ork is the boss, and he proves it every day._
 
-The Warlord adds 1 to his Strength and Attacks Characteristics in any turn in which he charged, or was charged. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment†.
+The Warlord adds 1 to his Strength and Attacks Characteristics in any turn in which he charged, or was charged. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment†. The Warlord also has the Might iz Right! special rule.
 
 ## Rites of War
 
 An Ork army may take one Rite of War, chosen when the army is built.
 
-### Rite of War: Dread Mob
+### Rite of War: Dread Mob Walkin'
 
 _When a Big Mek gets the urge to build, the whole Waaagh! starts clanking. Kans and Dreads stomp ahead while the Boyz trail behind, wondering who is in charge._
 
@@ -800,8 +800,8 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 
 **Wargear**
 
-- Dok Scrabbit: grot blasta, grot shiv, smoky squig
-- Grot Gorgutz: grot blasta, grot shiv
+- Dok Scrabbit: grot blasta, grot stabba, smoky squig
+- Grot Gorgutz: grot blasta, grot stabba
 - Mek Boss Buzzgob: big choppa, 'eavy armour, slugga, stikkbombz
 
 **Unit Type**
@@ -1540,7 +1540,7 @@ A unit of no more than 12 models may take a Trukk as a Dedicated Transport. Any 
 
 **Wargear**
 
-- Gretchin: grot blasta, grot shiv
+- Gretchin: grot blasta, grot stabba
 - Runtherd: slugga, grabba stikk
 
 **Unit Type**
@@ -2175,7 +2175,7 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 **Special Rules**
 
 - Mek-Smasha (5+)
-- Big Mek: counts as a Big Mek for the Dread Mob Rite of War
+- Big Mek: counts as a Big Mek for the Dread Mob Walkin' Rite of War
 - 'Ere We Go!
 - Klan (X)
 - Waaagh!
@@ -2559,7 +2559,7 @@ Ghazghkull Thraka takes the Primarch slot of the Force Organisation chart, and c
 **Wargear**
 
 - Ghazghkull Thraka: Gork's Klaw, mega armour, Mork's Roar, stikkbombz
-- Makari: grot blasta, grot shiv
+- Makari: grot blasta, grot stabba
 
 **Unit Type**
 
@@ -2825,7 +2825,7 @@ A model with Mek-Smasha and a grot oiler improves its Mek-Smasha (X) by 1, to a 
 
 **Wargear**
 
-- Grot shiv
+- Grot stabba
 
 **Unit Type**
 
@@ -2847,7 +2847,7 @@ A model accompanied by one or more grot orderlies has the Grot Orderly special r
 
 **Wargear**
 
-- Grot shiv
+- Grot stabba
 
 **Unit Type**
 
@@ -3057,7 +3057,7 @@ _Power blades, buzzing saws and spears, for Orks who want to carve their way thr
 | Weapon | Range | Str | AP | Type |
 |---|---|---|---|---|
 | Buzzsaw | – | +1 | 3 | Melee, Rending (6+) |
-| Grot shiv | – | User | – | Melee |
+| Grot stabba | – | User | – | Melee |
 | Killsaw | – | x2 | 2 | Melee, Armourbane (Melee), Specialist Weapon; a pair gives +2 Attack instead of +1. |
 | Mork's Teeth | – | +1 | 4 | Melee; +1 Attack |
 | Power snappa | – | +2 | 3 | Melee |
