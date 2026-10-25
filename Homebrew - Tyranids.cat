@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -157,7 +157,7 @@
             <selectionEntry type="upgrade" import="true" name="Endless Swarm" hidden="false" id="d11c-e765-976f-3eb9" publicationId="7478-cf16-4f88-170b">
               <rules>
                 <rule name="Effects" id="aba8-de06-299d-1e2e" hidden="false">
-                  <description>Termagant and Hormagaunt units in a Detachment using this Rite of War may contain up to 40 models, and gain the Line Sub-type.</description>
+                  <description>Termagant and Hormagaunt units in a Detachment using this Rite of War may contain up to 40 models, and gain the Without Number (5+) special rule. Ripper Swarms and Gargoyles in a Detachment using this Rite of War gain the Without Number (6+) special rule.</description>
                 </rule>
                 <rule name="Limitations" id="0e30-38de-c2f4-0189" hidden="false">
                   <description>A Detachment using this Rite of War must have a Hive Tyrant or Tervigon as its Warlord. A Detachment using this Rite of War may not include any Lords of War, and may include no more than two Heavy Support choices. This Rite of War may not be used by an Allied Detachment.</description>
@@ -173,7 +173,7 @@
             <selectionEntry type="upgrade" import="true" name="Hidden Brood" hidden="false" id="e176-fe9a-fbf4-cea3" publicationId="7478-cf16-4f88-170b">
               <rules>
                 <rule name="Effects" id="f9d1-d28f-a6e2-d470" hidden="false">
-                  <description>Genestealer units in a Detachment using this Rite of War gain the Line Sub-type and may contain up to 20 models. Genestealer units and Broodlords in a Detachment using this Rite of War gain the Infiltrate and Move Through Cover special rules. A Genestealer unit in a Detachment using this Rite of War that deployed using the Infiltrate special rule may not be targeted by Shooting Attacks during the first game turn.</description>
+                  <description>Genestealer units in a Detachment using this Rite of War may be taken as Troops choices, gain the Line Sub-type and may contain up to 20 models. Genestealer units and Broodlords in a Detachment using this Rite of War gain the Infiltrate and Move Through Cover special rules. A Genestealer unit in a Detachment using this Rite of War that deployed using the Infiltrate special rule may not be targeted by Shooting Attacks during the first game turn.</description>
                 </rule>
                 <rule name="Limitations" id="5b80-f753-7414-454b" hidden="false">
                   <description>A Detachment using this Rite of War must have a Broodlord as its Warlord. A Detachment using this Rite of War must include at least two Genestealer units. A Detachment using this Rite of War may not include any Lords of War, and may not include more Monstrous units than Genestealer units. This Rite of War may not be used by an Allied Detachment.</description>
@@ -189,7 +189,7 @@
             <selectionEntry type="upgrade" import="true" name="Monstrous Host" hidden="false" id="f063-ad40-a214-7cfd" publicationId="7478-cf16-4f88-170b">
               <rules>
                 <rule name="Effects" id="7f94-5530-96d4-9779" hidden="false">
-                  <description>Carnifexes may be taken as Troops choices in a Detachment using this Rite of War and gain the Line Sub-type.</description>
+                  <description>Tyranid Warriors may be taken as Compulsory Troops choices in a Detachment using this Rite of War, lose the Support Squad special rule and gain the Line Sub-type.</description>
                 </rule>
                 <rule name="Limitations" id="4fc6-f5a5-d20b-a6c8" hidden="false">
                   <description>A Detachment using this Rite of War must have a Hive Tyrant or The Swarmlord as its Warlord. A Detachment using this Rite of War may not include more non-Monstrous Infantry units than Monstrous units. This Rite of War may not be used by an Allied Detachment.</description>
@@ -319,6 +319,12 @@
         <categoryLink targetId="36c3-e85e-97cc-c503" id="fd28-6a32-ccaf-d196" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Genestealers" hidden="false" id="e272-d6ca-ccff-5012" type="selectionEntry" targetId="efed-500e-b4c5-4e79">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="0592-1ea3-6cd7-f77c" primary="true" name="Elites:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="993e-1ccc-1308-57bd" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Haruspex" hidden="false" id="6002-3ae4-86f0-f7c0" type="selectionEntry" targetId="638a-93dc-50ff-48ad">
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="34ae-38bb-e37a-3058" primary="true" name="Elites:" />
@@ -397,13 +403,6 @@
         <categoryLink targetId="36c3-e85e-97cc-c503" id="5b39-480d-71bf-320e" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Genestealers" hidden="false" id="e272-d6ca-ccff-5012" type="selectionEntry" targetId="efed-500e-b4c5-4e79">
-      <categoryLinks>
-        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="e2a6-fe46-d4e1-7a57" primary="true" name="Troops:" />
-        <categoryLink targetId="8f42-a824-fb5f-8fea" id="d711-fbfb-1afb-80c2" primary="false" name="Compulsory Troops:" />
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="993e-1ccc-1308-57bd" primary="false" name="Unit:" />
-      </categoryLinks>
-    </entryLink>
     <entryLink import="true" name="Hormagaunts" hidden="false" id="932a-05a1-e726-b5ba" type="selectionEntry" targetId="1873-52b8-fb8e-447c">
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="5068-c6b3-0884-5e44" primary="true" name="Troops:" />
@@ -433,7 +432,6 @@
     <entryLink import="true" name="Tyranid Warriors" hidden="false" id="e255-b5ad-ad02-ed4b" type="selectionEntry" targetId="bdf3-fce8-6eea-1c1e">
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="9be4-5351-76af-fdb0" primary="true" name="Troops:" />
-        <categoryLink targetId="8f42-a824-fb5f-8fea" id="b4a4-bb23-0b72-8f8a" primary="false" name="Compulsory Troops:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="9ad6-7c44-8fab-2574" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
@@ -4524,6 +4522,216 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135" />
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Genestealers" hidden="false" id="efed-500e-b4c5-4e79" publicationId="7478-cf16-4f88-170b">
+      <infoLinks>
+        <infoLink name="Xenos" id="0359-f05a-c62f-3aac" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Fleet (X)" id="b335-dca1-a6a6-e69d" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Fleet (1)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hive Fleet (X)" id="4cf7-df27-cc1e-7b82" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
+        <infoLink name="Infiltrate" id="f5d0-b4e8-bc58-72e6" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule" />
+        <infoLink name="Instinctive Behaviour (X)" id="4966-80a2-f769-a585" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Instinctive Behaviour (Lurk)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Move Through Cover" id="06f0-f651-bc5e-d133" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="ad58-de18-293f-8cba" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Genestealer" hidden="false" id="b9bd-db55-ffec-195d" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2644-729b-e28a-ea61" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="a63d-156f-324a-666d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Genestealer" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="11eb-b2ad-ba44-7a94" publicationId="7478-cf16-4f88-170b">
+              <modifiers>
+                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="efed-500e-b4c5-4e79" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="a6f4-d89b-1ba6-0375" primary="false" name="Infantry Unit Type" />
+            <categoryLink targetId="59a4-7b61-600a-c457" id="fb3f-d2d5-8288-acc6" primary="false" name="Skirmish Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange rending claws" hidden="false" id="e6c8-1d8b-db43-3d54" defaultSelectionEntryId="d2ed-2ac1-9a89-f967">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff33-22d2-70a2-ff4e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0946-4a3a-8549-b000" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Rending claws" hidden="false" id="d2ed-2ac1-9a89-f967" type="selectionEntry" targetId="e933-1a0d-1f8f-53a2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fad7-f944-caba-f288" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Scything talons" hidden="false" id="9598-fefe-eff6-7073" type="selectionEntry" targetId="94f5-3302-5047-8b9e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b385-3960-2721-5001" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="16" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" hidden="false" id="e9cd-53b3-74b4-4a17">
+          <entryLinks>
+            <entryLink import="true" name="Acid maw" hidden="false" id="1eb3-5912-bcf9-ebb3" type="selectionEntry" targetId="48ac-629f-d138-a997">
+              <modifiers>
+                <modifier type="increment" field="b44e-6e94-17ec-daa8" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b44e-6e94-17ec-daa8" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Biomorphs" hidden="false" id="38f4-60e3-11ed-8d14">
+          <entryLinks>
+            <entryLink import="true" name="Adrenal Glands" hidden="false" id="24fd-f850-b264-5d1b" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4a7-bc37-94ed-abf6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="a936-55dd-796a-e509" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f87-00e8-56e9-c5f1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flesh Hooks" hidden="false" id="1cfa-6a56-d4de-a96d" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3fe-a7a2-7e5a-f396" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Hardened Carapace" hidden="false" id="8339-e4be-3905-a3fa" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00fb-524e-46f3-fbc2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxin Sacs" hidden="false" id="f82c-3292-76be-1217" type="selectionEntry" targetId="644e-956c-bbee-3079">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bb9-d023-7364-1293" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="7d88-7b95-2d5c-d343">
+          <modifiers>
+            <modifier type="set" field="d134-ed92-1ce5-127f" value="0">
+              <conditions>
+                <condition type="greaterThan" value="20" field="selections" scope="efed-500e-b4c5-4e79" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d134-ed92-1ce5-127f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Mycetic Spore" hidden="false" id="e0a4-ca61-adea-55de" type="selectionEntry" targetId="d9ef-03cf-c92b-5b7d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db10-fb46-c5a3-e4be" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Tyrannocyte" hidden="false" id="b522-9b94-e0f2-2acc" type="selectionEntry" targetId="d5b3-9396-c205-1800">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4704-5a28-f7ac-1759" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+      </costs>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Haruspex" hidden="false" id="638a-93dc-50ff-48ad" publicationId="7478-cf16-4f88-170b">
       <rules>
         <rule name="Rapacious Hunger" id="3cf6-fbb8-8b8f-74e1" hidden="false">
@@ -6839,217 +7047,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Genestealers" hidden="false" id="efed-500e-b4c5-4e79" publicationId="7478-cf16-4f88-170b">
-      <infoLinks>
-        <infoLink name="Xenos" id="0359-f05a-c62f-3aac" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
-        <infoLink name="Fleet (X)" id="b335-dca1-a6a6-e69d" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Fleet (1)" />
-          </modifiers>
-        </infoLink>
-        <infoLink name="Hive Fleet (X)" id="4cf7-df27-cc1e-7b82" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
-        <infoLink name="Infiltrate" id="f5d0-b4e8-bc58-72e6" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule" />
-        <infoLink name="Instinctive Behaviour (X)" id="4966-80a2-f769-a585" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Instinctive Behaviour (Lurk)" />
-          </modifiers>
-        </infoLink>
-        <infoLink name="Move Through Cover" id="06f0-f651-bc5e-d133" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule" />
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="ad58-de18-293f-8cba" primary="false" name="Unit:" />
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Genestealer" hidden="false" id="b9bd-db55-ffec-195d" publicationId="7478-cf16-4f88-170b">
-          <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2644-729b-e28a-ea61" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="a63d-156f-324a-666d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <profiles>
-            <profile name="Genestealer" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="11eb-b2ad-ba44-7a94" publicationId="7478-cf16-4f88-170b">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="efed-500e-b4c5-4e79" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Line, Skirmish)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="a6f4-d89b-1ba6-0375" primary="false" name="Infantry Unit Type" />
-            <categoryLink targetId="6399-5c65-7833-1025" id="bc0b-26b1-2439-97f5" primary="false" name="Line Sub-type" />
-            <categoryLink targetId="59a4-7b61-600a-c457" id="fb3f-d2d5-8288-acc6" primary="false" name="Skirmish Sub-type" />
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Exchange rending claws" hidden="false" id="e6c8-1d8b-db43-3d54" defaultSelectionEntryId="d2ed-2ac1-9a89-f967">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff33-22d2-70a2-ff4e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0946-4a3a-8549-b000" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Rending claws" hidden="false" id="d2ed-2ac1-9a89-f967" type="selectionEntry" targetId="e933-1a0d-1f8f-53a2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fad7-f944-caba-f288" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Scything talons" hidden="false" id="9598-fefe-eff6-7073" type="selectionEntry" targetId="94f5-3302-5047-8b9e">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b385-3960-2721-5001" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2" />
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="14" />
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Options" hidden="false" id="e9cd-53b3-74b4-4a17">
-          <entryLinks>
-            <entryLink import="true" name="Acid maw" hidden="false" id="1eb3-5912-bcf9-ebb3" type="selectionEntry" targetId="48ac-629f-d138-a997">
-              <modifiers>
-                <modifier type="increment" field="b44e-6e94-17ec-daa8" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b44e-6e94-17ec-daa8" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Biomorphs" hidden="false" id="38f4-60e3-11ed-8d14">
-          <entryLinks>
-            <entryLink import="true" name="Adrenal Glands" hidden="false" id="24fd-f850-b264-5d1b" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
-                  <repeats>
-                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4a7-bc37-94ed-abf6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="a936-55dd-796a-e509" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f87-00e8-56e9-c5f1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Flesh Hooks" hidden="false" id="1cfa-6a56-d4de-a96d" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3fe-a7a2-7e5a-f396" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Hardened Carapace" hidden="false" id="8339-e4be-3905-a3fa" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00fb-524e-46f3-fbc2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Toxin Sacs" hidden="false" id="f82c-3292-76be-1217" type="selectionEntry" targetId="644e-956c-bbee-3079">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
-                  <repeats>
-                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bb9-d023-7364-1293" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="7d88-7b95-2d5c-d343">
-          <modifiers>
-            <modifier type="set" field="d134-ed92-1ce5-127f" value="0">
-              <conditions>
-                <condition type="greaterThan" value="20" field="selections" scope="efed-500e-b4c5-4e79" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d134-ed92-1ce5-127f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Mycetic Spore" hidden="false" id="e0a4-ca61-adea-55de" type="selectionEntry" targetId="d9ef-03cf-c92b-5b7d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db10-fb46-c5a3-e4be" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Tyrannocyte" hidden="false" id="b522-9b94-e0f2-2acc" type="selectionEntry" targetId="d5b3-9396-c205-1800">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4704-5a28-f7ac-1759" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-      </costs>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hormagaunts" hidden="false" id="1873-52b8-fb8e-447c" publicationId="7478-cf16-4f88-170b">
       <rules>
         <rule name="Bounding Leap" id="fdfd-9994-51ac-6d5c" hidden="false">
@@ -7920,6 +7917,7 @@
         <infoLink name="Xenos" id="cb8c-3309-252a-34b1" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Hive Fleet (X)" id="86e6-ee81-456e-db8b" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
         <infoLink name="Shadow in the Warp" id="0809-f82d-dd46-6a59" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
+        <infoLink name="Support Squad" id="c164-29a9-4c99-859f" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule" />
         <infoLink name="Synapse Creature" id="b425-9fa3-d46c-b046" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
       </infoLinks>
       <categoryLinks>
@@ -7941,7 +7939,7 @@
                 </modifier>
               </modifiers>
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Line, Monstrous)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -7957,8 +7955,6 @@
           </profiles>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="cc83-2b75-1699-8e37" primary="false" name="Infantry Unit Type" />
-            <categoryLink targetId="7d95-f9d1-440a-67bd" id="0c06-8e8b-8b0b-25d8" primary="false" name="Monstrous Sub-type" />
-            <categoryLink targetId="6399-5c65-7833-1025" id="46ff-640e-04cc-2538" primary="false" name="Line Sub-type" />
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange scything talons" hidden="false" id="c088-0a83-ec07-64cf" defaultSelectionEntryId="b176-aa18-1767-22c3">
@@ -8078,7 +8074,7 @@
           <entryLinks>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="7bfe-e8ac-6cdc-253a" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
                   <repeats>
                     <repeat field="selections" scope="bdf3-fce8-6eea-1c1e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9776-9c7f-f772-7487" repeats="1" roundUp="false" />
                   </repeats>
@@ -8165,6 +8161,30 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="4fd1-5fcd-1044-e8bc">
+          <modifiers>
+            <modifier type="set" field="78a2-6b16-3d5e-dfee" value="0">
+              <conditions>
+                <condition type="greaterThan" value="20" field="selections" scope="bdf3-fce8-6eea-1c1e" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78a2-6b16-3d5e-dfee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Mycetic Spore" hidden="false" id="e936-ca7b-3fd5-8799" type="selectionEntry" targetId="d9ef-03cf-c92b-5b7d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd63-bf5a-4d41-62f2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Tyrannocyte" hidden="false" id="d1e7-f4a2-8dec-0c47" type="selectionEntry" targetId="d5b3-9396-c205-1800">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="196f-2722-cbdc-9960" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -13586,6 +13606,9 @@
     </rule>
     <rule name="Unnatural Resilience" id="d943-5665-f8ca-caf2" hidden="false" publicationId="7478-cf16-4f88-170b">
       <description>The unit is immune to Instant Death. Whenever a model in the unit would suffer Instant Death, it suffers D3 wounds instead.</description>
+    </rule>
+    <rule name="Without Number (X)" id="449c-af76-dd3d-3e0c" hidden="false" publicationId="7478-cf16-4f88-170b">
+      <description>Once a unit with this rule has been removed from play or destroyed, roll a D6. On a roll of X or more, the unit is added to Reserves and may return to play in the controlling player's next Movement phase as normal. The unit still counts as destroyed when calculating Victory Points and other win conditions. A unit that returns loses the Line Sub-type and only counts as a Scoring unit.</description>
     </rule>
     <rule name="Hive Mind (X)" id="8118-779a-5fee-b169" hidden="false" publicationId="7478-cf16-4f88-170b">
       <description>Every Tyranid psyker knows the Psychic Scream psychic weapon, plus X psychic powers from this discipline, chosen when the army is built. X is shown on its datasheet. The Swarmlord knows every power.</description>
