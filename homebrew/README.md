@@ -39,7 +39,8 @@ loading. The script prints anything in the doc it could not place.
   bought per model, added to the model's other weapons.
 - Biomorphs with a **Cost:** line in the doc (adrenal glands, toxin sacs, flesh hooks,
   Dynamic Camouflage, Hardened Carapace) are offered to every unit whose models can all
-  use them, priced by model: a named list of small models, every other model, Monstrous
+  use them ("Character, Monstrous or Gargantuan models only" or "Genestealers, Hormagaunts,
+  Termagants and Ripper Swarms only" limits who), priced by model: a named list of small models, every other model, Monstrous
   and Gargantuan ("Gargantuan models may not take them" leaves them out). A datasheet that
   prices a biomorph itself keeps its own cost, and units the Biomorphs section says "may
   not take biomorphs" (spores and transports) get none.
@@ -47,10 +48,12 @@ loading. The script prints anything in the doc it could not place.
   per-model and whole-unit upgrades, and model upgrades such as the Neurothrope.
   "Each type only once" limits are enforced.
 - Dedicated Transports: units that fit in a Mycetic Spore or Tyrannocyte (20
-  Infantry models or one Monstrous model) may take one.
+  Infantry models or one Monstrous model) may take one, offered only while they fit. Units the
+  Dedicated Transports section says "may not take" one (spores, winged units) never get it.
 - The army selection: hive fleet (with its rules and advanced reaction), Rite of War,
   and the army-wide advanced reaction.
-- Warlords: every Character model in an HQ unit may be the Warlord, using the game system's
+- Warlords: every Character model in an HQ unit (or, in an HQ with no Character, its own model, such
+  as the Trygon Prime) may be the Warlord, using the game system's
   Warlord entry, so an army must have exactly one. A model whose datasheet says it "must be
   your Warlord" (Ghazghkull, Imotekh, Vect...) is offered it in any slot and must take it.
   The Warlord must pick one Warlord Trait: a generic trait, or its sub-faction's own, which
@@ -100,9 +103,21 @@ loading. The script prints anything in the doc it could not place.
 - A unit that includes another datasheet's character ("Asdrubael Vect (use his HQ profile and
   wargear)") gets that model, with its kit and its rules.
 
+- Rites of War work in the app, read from their own wording: units a Rite lets take another
+  slot ("may be taken as Troops") are listed there while it is chosen (a Rite that grants Line, or
+  says Compulsory, lets them fill compulsory Troops); "gain the Line sub-type", "may contain up to
+  N models", and special rules a Rite gives or takes away apply while it is chosen. "Must have a
+  Big Mek as its Warlord" leaves only those models able to be the Warlord, and a named Warlord
+  that is not an HQ (a Trygon Prime) is offered the Warlord option under that Rite.
+
+- A biomorph granted by a sub-faction ("Deep Burrowers: Infantry units gain the Burrower biomorph")
+  or a Warlord Trait ("The Warlord and any unit it joins gain the Burrower biomorph") shows its
+  rules on those units while that sub-faction or trait is chosen, and the paid option is hidden.
+
 ## Not enforced
 
-- Rite of War effects and limitations are shown as text only.
+- Rite of War limitations other than the Warlord ("no Lords of War", "no more than two Heavy
+  Support choices") and effects that are in-game only (Deep Strike from turn one) are text only.
 - Instinctive Behaviour, Synapse and other in-game rules are text only.
 - Lords of War use the game system's existing 25% points category; nothing
   Tyranid-specific is added to it.

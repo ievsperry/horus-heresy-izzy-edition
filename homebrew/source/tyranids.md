@@ -122,12 +122,12 @@ _Burrowing swarms that tunnel beneath their prey and erupt from the ground._
 
 Units with Hive Fleet (Jormungandr) gain the following:
 
-- **Deep Burrowers:** Infantry units of 20 or fewer models gain the Deep Strike special rule.
+- **Deep Burrowers:** Infantry units gain the Burrower biomorph at no cost, whatever their size and even if they could not normally take it.
 - **Tunnel Networks:** Infantry units that did not Advance in their last turn count as being in cover, with a 6+ cover save, if they are not already†.
 
 **Advanced Reaction: Burrow** (Movement phase). Trigger: an enemy unit ends a move within 12" of a Jormungandr Infantry unit. The Jormungandr unit gains Shrouded (5+) until the start of its controlling player's next turn.
 
-**Warlord Trait: Subterranean Hunter.** The Warlord and any unit it joins gain the Deep Strike special rule, and may re-roll the Reserves roll to arrive.
+**Warlord Trait: Subterranean Hunter.** The Warlord and any unit it joins gain the Burrower biomorph, and may re-roll the Reserves roll to arrive.
 
 ### Kraken
 
@@ -196,12 +196,12 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 
 | 2.0 slot | Tyranid units |
 |---|---|
-| HQ | Hive Tyrant, The Swarmlord, Tyranid Prime, Winged Tyranid Prime, Tervigon, Broodlord, Old One Eye, Neurotyrant, Norn Emissary, Parasite of Mortrex |
+| HQ | Hive Tyrant, The Swarmlord, Tyranid Prime, Winged Tyranid Prime, Tervigon, Trygon Prime, Broodlord, Old One Eye, Neurotyrant, Norn Emissary, Parasite of Mortrex |
 | Elites | Hive Guard, Tyrant Guard, Lictor, Deathleaper, Genestealers, Neurolictor, Venomthropes, Zoanthropes, Pyrovores, Haruspex, Maleceptor, The Red Terror, Von Ryan's Leapers, Psychophage, Malanthrope |
 | Troops | Termagants, Hormagaunts, Neurogaunts, Ripper Swarms, Tyranid Warriors |
 | Dedicated Transports | Mycetic Spore, Tyrannocyte |
 | Fast Attack | Gargoyles, Raveners, Ravener Kill Team, Meiotic Spores, Sky-Slasher Swarms, Tyranid Shrikes, Harpy, Hive Crone, Spore Mines, Mucolid Spores |
-| Heavy Support | Carnifexes, Screamer-Killer, Biovores, Barbgaunts, Trygon, Trygon Prime, Mawloc, Tyrannofex, Toxicrene, Exocrine, Norn Assimilator, Sporocyst, Dimachaeron, Stone-crusher Carnifex |
+| Heavy Support | Carnifexes, Screamer-Killer, Biovores, Barbgaunts, Trygon, Mawloc, Tyrannofex, Toxicrene, Exocrine, Norn Assimilator, Sporocyst, Dimachaeron, Stone-crusher Carnifex |
 | Lord of War | Hierophant Bio-titan, Harridan, Scythed Hierodule, Barbed Hierodule |
 
 A Tyranid Detachment may take one Rite of War, chosen when the army is built. Each has its own Effects and Limitations.
@@ -271,7 +271,7 @@ _The ground shakes, the earth splits, and the swarm erupts from below, burrowing
 
 **Effects**
 
-- Trygons, Mawlocs, Raveners and units with Hive Fleet (Jormungandr) in a Detachment using this Rite of War that Deep Strike may arrive from the first game turn.
+- Trygons, Mawlocs, Raveners and units with Hive Fleet (Jormungandr) in a Detachment using this Rite of War that arrive by Deep Strike or Subterranean Assault may arrive from the first game turn.
 - These units do not scatter if they arrive within 12" of a friendly Trygon or Mawloc†.
 
 **Limitations**
@@ -532,6 +532,44 @@ _The ground shakes, the earth splits, and the swarm erupts from below, burrowing
 | **The Tervigon may exchange its massive scything talons for:** |  |
 | – Massive crushing claws | +10 points |
 | **The Tervigon may take any of the following:** |  |
+| – Adrenal glands | +10 points |
+| – Toxin sacs | +10 points |
+| – Regeneration (5+) | +30 points |
+| – Unnatural Resilience | +15 points |
+
+### Trygon Prime — 240 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Trygon Prime | 8 | 5 | 3 | 6 | 6 | 6 | 4 | 6 | 10 | 3+ | 120x92mm |
+
+**Unit Composition**
+
+- 1 Trygon Prime
+
+**Wargear**
+
+- Bio-electric pulse with containment spines
+- Toxinspike tail
+- Two monstrous scything talons
+
+**Unit Type**
+
+- Trygon Prime: Infantry (Monstrous)
+
+**Special Rules**
+
+- Subterranean Assault
+- Hive Fleet (X)
+- Shadow in the Warp
+- Subterranean Tunnel (as Trygon)
+- Synapse Creature
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Trygon Prime may take any of the following:** |  |
 | – Adrenal glands | +10 points |
 | – Toxin sacs | +10 points |
 | – Regeneration (5+) | +30 points |
@@ -1281,6 +1319,8 @@ _A floating synapse beast wreathed in toxic spores, which drifts across the batt
 
 Tyranid transports are living organisms that carry broods down from orbit, so they are Infantry with the Monstrous and Transport sub-types rather than having an Armour Value profile.
 
+Spore Mines, Meiotic Spores, Mucolid Spores, Sporocysts and the units that always have wings (Gargoyles, Sky-Slasher Swarms, Tyranid Shrikes, Winged Tyranid Primes, the Parasite of Mortrex, Harpies and Hive Crones) may not take a Mycetic Spore or Tyrannocyte.
+
 ### Mycetic Spore — 40 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -1554,8 +1594,8 @@ _A brood of specialised Raveners led by a Prime, bred to tunnel beneath enemy li
 
 **Special Rules**
 
-- Burrow: instead of moving in your Movement phase, the unit may burrow. Remove it from the battlefield; at the start of your next Movement phase it arrives by Deep Strike without a Reserves roll. A unit that arrives this way may still charge that turn
-- Deep Strike
+- Burrow: instead of moving in your Movement phase, the unit may burrow. Remove it from the battlefield; at the start of your next Movement phase it arrives by Subterranean Assault without a Reserves roll. A unit that arrives this way may still charge that turn
+- Subterranean Assault
 - Distend Dorsal Sac (Venomspitter): once per game, before shooting, the Venomspitter's venom bolt gains Rending (5+) and +1 shot, and its range becomes 18" until the end of the phase
 - Hammer of Wrath (1)
 - Hive Fleet (X)
@@ -1564,7 +1604,7 @@ _A brood of specialised Raveners led by a Prime, bred to tunnel beneath enemy li
 - Instinctive Hunter (Warrior): each Ravener Warrior's melee weapons gain Rending (5+) against enemy units that have lost at least one model or Wound, or that Fell Back in their last turn
 - Neuropredatory Crest (Prime): enemy units within 3" of the Prime may not re-roll to-hit, to-wound or saving throws, and count as having half their models (rounding down) when holding or contesting objectives
 - Reinforced Carapace (Wrecker): attacks with Strength 8 or higher subtract 1 from their Strength when targeting the Wrecker
-- Subterranean Ambush (Tremorscythe): while the Tremorscythe lives, the unit may use this Advanced Reaction in the Movement phase. Trigger: an enemy unit ends a move within 6" of the unit, or within 6" of where the unit burrowed if it is underground. The unit makes a Shooting Attack against the triggering unit, or arrives (if underground) by Deep Strike within 6" of it without scattering
+- Subterranean Ambush (Tremorscythe): while the Tremorscythe lives, the unit may use this Advanced Reaction in the Movement phase. Trigger: an enemy unit ends a move within 6" of the unit, or within 6" of where the unit burrowed if it is underground. The unit makes a Shooting Attack against the triggering unit, or arrives (if underground) by Subterranean Assault within 6" of it without scattering
 - Synapse Creature (Prime only): while the Prime lives, the unit counts as within Synapse range
 - Synaptic Link (Prime): at the start of each of your turns, roll a D6. If the result is at least twice the current game turn number, your army may make one additional reaction this game turn. If it is less than the game turn number, the Prime suffers one wound with no saves allowed
 - Toxic Lunge (Felltalon): once per game, at the start of the Assault phase, one enemy unit within 2" of the Felltalon suffers D3+2 hits at Strength 4, AP 5, with Poisoned (3+)
@@ -1601,7 +1641,7 @@ _The base cost is the Prime (50 points) and four Ravener Warriors (30 points eac
 
 **Special Rules**
 
-- Deep Strike
+- Subterranean Assault
 - Hammer of Wrath (1)
 - Hive Fleet (X)
 - Instinctive Behaviour (Feed)
@@ -1921,10 +1961,10 @@ _A four-armed hunter bred to leap upon the enemy's champions and war machines an
 
 **Special Rules**
 
-- Deep Strike
+- Subterranean Assault
 - Hive Fleet (X)
 - Instinctive Behaviour (Feed)
-- Terror from the Deep: when the Mawloc arrives by Deep Strike, it may be placed on top of an enemy unit. Place a Large Blast (5") marker where it will land; every model under it suffers a hit at Strength 6, AP 2. Enemy models are then moved the minimum distance to make room, and the Mawloc does not scatter†
+- Terror from the Deep: when the Mawloc arrives by Subterranean Assault, it may be placed on top of an enemy unit. Place a Large Blast (5") marker where it will land; every model under it suffers a hit at Strength 6, AP 2. Enemy models are then moved the minimum distance to make room, and the Mawloc does not scatter†
 
 ### Norn Assimilator — 280 pts
 
@@ -2109,54 +2149,16 @@ _A Carnifex bred for siege warfare, its claws grown into massive bone wrecking-b
 
 **Special Rules**
 
-- Deep Strike
+- Subterranean Assault
 - Hive Fleet (X)
 - Instinctive Behaviour (Feed)
-- Subterranean Tunnel: when the Trygon arrives by Deep Strike, one friendly Tyranid Infantry unit in Reserves may arrive at the same time, placed wholly within 6" of it without scattering†
+- Subterranean Tunnel: when the Trygon enters play, place a 5" template where it entered play. The template counts as a battlefield edge for friendly units entering play from Reserves
 
 **Options**
 
 | Option | Cost |
 |---|---|
 | **The Trygon may take any of the following:** |  |
-| – Adrenal glands | +10 points |
-| – Toxin sacs | +10 points |
-| – Regeneration (5+) | +30 points |
-| – Unnatural Resilience | +15 points |
-
-### Trygon Prime — 240 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Trygon Prime | 8 | 5 | 3 | 6 | 6 | 6 | 4 | 6 | 10 | 3+ | 120x92mm |
-
-**Unit Composition**
-
-- 1 Trygon Prime
-
-**Wargear**
-
-- Bio-electric pulse with containment spines
-- Toxinspike tail
-- Two monstrous scything talons
-
-**Unit Type**
-
-- Trygon Prime: Infantry (Monstrous)
-
-**Special Rules**
-
-- Deep Strike
-- Hive Fleet (X)
-- Shadow in the Warp
-- Subterranean Tunnel (as Trygon)
-- Synapse Creature
-
-**Options**
-
-| Option | Cost |
-|---|---|
-| **The Trygon Prime may take any of the following:** |  |
 | – Adrenal glands | +10 points |
 | – Toxin sacs | +10 points |
 | – Regeneration (5+) | +30 points |
@@ -2348,7 +2350,7 @@ Tyranid bio-titans are Infantry with the Monstrous and Gargantuan sub-types. The
 
 Biomorphs are the Tyranid equivalent of wargear: organs, glands and growths bred into a creature for a purpose. A biomorph is taken by every model in the unit and costs its points for each model, unlike weapon options, which are bought model by model.
 
-Every unit may take adrenal glands, toxin sacs and flesh hooks, and dynamic camouflage and a hardened carapace where its models qualify, at the costs below. A datasheet that lists a biomorph in its options uses its own cost instead. Wings, regeneration, spine banks and Unnatural Resilience may only be taken where a datasheet offers them. Spore Mines, Meiotic Spores, Mucolid Spores, Mycetic Spores, Tyrannocytes and Sporocysts may not take biomorphs.
+Every unit may take adrenal glands, toxin sacs, flesh hooks, engrained aggression and wraithful will, and dynamic camouflage, a hardened carapace, walking terror, hulking brute and burrower where its models qualify, at the costs below. A datasheet that lists a biomorph in its options uses its own cost instead. Wings, regeneration, spine banks and Unnatural Resilience may only be taken where a datasheet offers them. Spore Mines, Meiotic Spores, Mucolid Spores, Mycetic Spores, Tyrannocytes and Sporocysts may not take biomorphs.
 
 ### Adrenal Glands
 
@@ -2358,6 +2360,14 @@ A model with adrenal glands gains Fleet (1) and Furious Charge (1), or increases
 
 **Cost:** +1 point per model for Termagants, Hormagaunts, Neurogaunts, Barbgaunts, Gargoyles, Ripper Swarms and Sky-Slasher Swarms; +3 points per model for every other model; +10 points per Monstrous model; +15 points per Gargantuan model.
 
+### Burrower
+
+_Claws and acidic glands bred for tunnelling, so the brood bursts up from below._
+
+The unit gains the Subterranean Assault special rule.
+
+**Cost:** +1 point per model for Termagants, Hormagaunts and Ripper Swarms; +3 points per model for every other model; Genestealers, Hormagaunts, Termagants and Ripper Swarms only.
+
 ### Dynamic Camouflage
 
 _Chameleonic scales that blend the creature into its surroundings._
@@ -2365,6 +2375,14 @@ _Chameleonic scales that blend the creature into its surroundings._
 A model with dynamic camouflage gains the Stealth special rule (see Army-wide Special Rules). Any model may take it unless it already has Stealth.
 
 **Cost:** +5 points per model, or +10 points per Monstrous model.
+
+### Engrained Aggression
+
+_A hunger for violence bred so deep that the creature cannot be held back._
+
+The unit gains the Rage (2) special rule.
+
+**Cost:** +1 point per model for Termagants, Hormagaunts, Neurogaunts, Barbgaunts, Gargoyles, Ripper Swarms and Sky-Slasher Swarms; +3 points per model for every other model; +10 points per Monstrous model; +15 points per Gargantuan model.
 
 ### Flesh Hooks
 
@@ -2381,6 +2399,14 @@ _Layers of thickened chitin grown over the creature's vital organs._
 A model with a hardened carapace adds 1 to its Save, to a best of 2+. Any model with a Save worse than 2+ may take it.
 
 **Cost:** by the model's new Save: 5+ 2 points, 4+ 5 points, 3+ 10 points, 2+ 15 points per model.
+
+### Hulking Brute
+
+_Bulk and muscle grown far past need, so that every blow scatters the foe._
+
+Only Monstrous or Gargantuan units may take this biomorph. The unit gains the Rampage (3) special rule.
+
+**Cost:** +15 points per Monstrous model; +20 points per Gargantuan model; Monstrous or Gargantuan models only.
 
 ### Regeneration
 
@@ -2408,6 +2434,14 @@ _Layers of redundant organs and dense chitin that let a monster shrug off blows 
 
 Only Monstrous models may take this biomorph. A model with it gains the Unnatural Resilience special rule (see Army-wide Special Rules).
 
+### Walking Terror
+
+_A shape out of nightmare, whose very presence breaks the courage of lesser foes._
+
+Only Characters, Monstrous or Gargantuan units may take this biomorph. A Character gains the Fear (1) special rule, a Monstrous model gains Fear (2), and a Gargantuan model gains Fear (3).
+
+**Cost:** +5 points per model; +10 points per Monstrous model; +15 points per Gargantuan model; Character, Monstrous or Gargantuan models only.
+
 ### Wings
 
 _Leathery wings that carry the creature over the battlefield._
@@ -2415,6 +2449,14 @@ _Leathery wings that carry the creature over the battlefield._
 Wings count as a jump pack and use the official 2.0 Jump Pack rules: a unit composed entirely of models with wings may set its Movement Characteristic to 12 for the controlling player's turn, gaining the bonus to Charge distance, ignoring terrain while Moving and Charging, and moving over friendly and enemy models (Dangerous Terrain tests still apply, and Difficult Terrain counts as Dangerous). Models with wings gain Bulky (2), or Bulky (3) if they already have Bulky (2), and Deep Strike. A winged unit may not Advance, and may not use its wings to gain a Movement bonus during a Reaction. Harpies and Hive Crones set their Movement to 18 instead of 12, and Harridans to 24.
 
 Gargoyles, Sky-Slasher Swarms, Tyranid Shrikes, Winged Tyranid Primes, the Parasite of Mortrex, Harpies, Hive Crones and Harridans always have wings. A Hive Tyrant with wings is often called a Flyrant.
+
+### Wraithful Will
+
+_A mind so bound to the Hive that no psyker can prise it loose._
+
+The unit gains the Adamantium Will (4+) special rule.
+
+**Cost:** +1 point per model for Termagants, Hormagaunts, Neurogaunts, Barbgaunts, Gargoyles, Ripper Swarms and Sky-Slasher Swarms; +3 points per model for every other model; +5 points per Monstrous model; +10 points per Gargantuan model.
 
 ## Bio-weapons Armoury
 
