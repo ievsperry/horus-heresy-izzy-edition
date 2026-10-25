@@ -1203,7 +1203,15 @@ class Builder:
                 "gargantuan": int(gargantuan.group(1)) if gargantuan else None,
                 "no_gargantuan": "Gargantuan models may not" in line,
                 "small": (int(small.group(1)), [x.strip() for x in re.split(r", | and ", small.group(2))]) if small else None,
-                "only": Builder.only_types(line)}
+                "only": Builder.only_types(line), "only_units": Builder.only_units(line)}
+
+    @staticmethod
+    def only_units(line):
+        """'Genestealers, Hormagaunts, Termagants and Ripper Swarms only': the units that may take it."""
+        m = re.search(r";\s*([^;]+?) only", line)
+        if not m or Builder.only_types(line):
+            return None
+        return [x.strip() for x in re.split(r",\s*(?:and\s+)?|\s+and\s+", m.group(1)) if x.strip()]
 
     @staticmethod
     def only_types(line):
@@ -1237,6 +1245,8 @@ class Builder:
         for mname, m in models.items():
             for name, eid, rule in self.universal:
                 if any(o.startswith(norm(name)) for o in own):
+                    continue
+                if rule.get("only_units") and not forms(ds["name"]) & set().union(*(forms(u) for u in rule["only_units"])):
                     continue
                 if "save" in rule:
                     if m["profile"].get("kind", "unit") != "unit":

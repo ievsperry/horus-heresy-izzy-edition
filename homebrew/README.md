@@ -39,7 +39,8 @@ loading. The script prints anything in the doc it could not place.
   bought per model, added to the model's other weapons.
 - Biomorphs with a **Cost:** line in the doc (adrenal glands, toxin sacs, flesh hooks,
   Dynamic Camouflage, Hardened Carapace) are offered to every unit whose models can all
-  use them ("Character, Monstrous or Gargantuan models only" limits who), priced by model: a named list of small models, every other model, Monstrous
+  use them ("Character, Monstrous or Gargantuan models only" or "Genestealers, Hormagaunts,
+  Termagants and Ripper Swarms only" limits who), priced by model: a named list of small models, every other model, Monstrous
   and Gargantuan ("Gargantuan models may not take them" leaves them out). A datasheet that
   prices a biomorph itself keeps its own cost, and units the Biomorphs section says "may
   not take biomorphs" (spores and transports) get none.

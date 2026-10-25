@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -77,7 +77,7 @@
               </profiles>
               <rules>
                 <rule name="Deep Burrowers" id="2c6e-0975-b036-4dd6" hidden="false">
-                  <description>Infantry units of 20 or fewer models gain the Deep Strike special rule.</description>
+                  <description>Infantry units gain the Burrower biomorph at no cost, whatever their size and even if they could not normally take it.</description>
                 </rule>
                 <rule name="Tunnel Networks" id="0b85-ce20-38a7-0217" hidden="false">
                   <description>Infantry units that did not Advance in their last turn count as being in cover, with a 6+ cover save, if they are not already†.</description>
@@ -221,7 +221,7 @@
             <selectionEntry type="upgrade" import="true" name="Subterranean Assault" hidden="false" id="da74-5e15-7081-6b5f" publicationId="7478-cf16-4f88-170b">
               <rules>
                 <rule name="Effects" id="7eb3-04ad-b405-ef97" hidden="false">
-                  <description>Trygons, Mawlocs, Raveners and units with Hive Fleet (Jormungandr) in a Detachment using this Rite of War that Deep Strike may arrive from the first game turn. These units do not scatter if they arrive within 12" of a friendly Trygon or Mawloc.</description>
+                  <description>Trygons, Mawlocs, Raveners and units with Hive Fleet (Jormungandr) in a Detachment using this Rite of War that arrive by Deep Strike or Subterranean Assault may arrive from the first game turn. These units do not scatter if they arrive within 12" of a friendly Trygon or Mawloc.</description>
                 </rule>
                 <rule name="Limitations" id="115f-e86f-6b0e-d526" hidden="false">
                   <description>A Detachment using this Rite of War must have a Trygon Prime or Tyranid Prime as its Warlord. A Detachment using this Rite of War may not include any Flyers, and may include no more than one Lord of War. This Rite of War may not be used by an Allied Detachment.</description>
@@ -2227,6 +2227,18 @@
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Burrower" hidden="false" id="d17b-0e83-5ba7-b305" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Burrower" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="e877-cae3-3e58-d2ae">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The unit gains the Subterranean Assault special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Subterranean Assault" id="7f5f-a9a6-f3a4-78c5" hidden="false" targetId="33d4-d46d-7f47-3ad2" type="rule" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Dynamic Camouflage" hidden="false" id="e29e-5b38-88bf-c84d" publicationId="7478-cf16-4f88-170b">
       <profiles>
@@ -4510,7 +4522,7 @@
     <selectionEntry type="unit" import="true" name="Trygon Prime" hidden="false" id="5b60-b2cd-6968-bacb" publicationId="7478-cf16-4f88-170b">
       <rules>
         <rule name="Subterranean Tunnel" id="7943-bdde-0fa3-84c0" hidden="false">
-          <description>when the Trygon arrives by Deep Strike, one friendly Tyranid Infantry unit in Reserves may arrive at the same time, placed wholly within 6" of it without scattering</description>
+          <description>when the Trygon enters play, place a 5" template where it entered play. The template counts as a battlefield edge for friendly units entering play from Reserves</description>
         </rule>
       </rules>
       <infoLinks>
@@ -5531,6 +5543,21 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4a7-bc37-94ed-abf6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Burrower" hidden="false" id="1fe5-90f1-fcfb-9a2f" type="selectionEntry" targetId="d17b-0e83-5ba7-b305">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="efed-500e-b4c5-4e79" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9bd-db55-ffec-195d" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbf2-3efa-26b3-3147" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -8481,6 +8508,21 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="e6db-2c77-2965-3ad4">
           <entryLinks>
+            <entryLink import="true" name="Burrower" hidden="false" id="64a2-c23e-e56e-6476" type="selectionEntry" targetId="d17b-0e83-5ba7-b305">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="1873-52b8-fb8e-447c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad6c-46ac-b719-ff80" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="133d-e52f-bb6f-013f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="8669-503e-3497-b1c2" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -9011,6 +9053,21 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="Burrower" hidden="false" id="2062-41c8-66f3-dea8" type="selectionEntry" targetId="d17b-0e83-5ba7-b305">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="f692-00ac-0170-db66" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df70-b8d3-41d1-fff7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d450-8bdb-81e5-23a6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="7162-3e3b-0ebb-988a" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -9288,6 +9345,21 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="a8a6-4c8d-f557-f47f">
           <entryLinks>
+            <entryLink import="true" name="Burrower" hidden="false" id="2010-48e7-2e88-93b2" type="selectionEntry" targetId="d17b-0e83-5ba7-b305">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="6232-5a2c-0195-b4c4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c760-1202-a55c-a4b1" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="399b-baa0-b923-12ee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="882b-9f95-6b1e-028f" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
@@ -10633,7 +10705,7 @@
     <selectionEntry type="unit" import="true" name="Ravener Kill Team" hidden="false" id="62f9-049f-ce78-4d8f" publicationId="7478-cf16-4f88-170b">
       <rules>
         <rule name="Burrow" id="06ba-da42-ba96-e29d" hidden="false">
-          <description>Instead of moving in your Movement phase, the unit may burrow. Remove it from the battlefield; at the start of your next Movement phase it arrives by Deep Strike without a Reserves roll. A unit that arrives this way may still charge that turn</description>
+          <description>Instead of moving in your Movement phase, the unit may burrow. Remove it from the battlefield; at the start of your next Movement phase it arrives by Subterranean Assault without a Reserves roll. A unit that arrives this way may still charge that turn</description>
         </rule>
         <rule name="Distend Dorsal Sac (Venomspitter)" id="7393-b76b-de74-437e" hidden="false">
           <description>Once per game, before shooting, the Venomspitter's venom bolt gains Rending (5+) and +1 shot, and its range becomes 18" until the end of the phase</description>
@@ -10651,7 +10723,7 @@
           <description>Attacks with Strength 8 or higher subtract 1 from their Strength when targeting the Wrecker</description>
         </rule>
         <rule name="Subterranean Ambush (Tremorscythe)" id="5564-0be8-f8f3-d99b" hidden="false">
-          <description>While the Tremorscythe lives, the unit may use this Advanced Reaction in the Movement phase. Trigger: an enemy unit ends a move within 6" of the unit, or within 6" of where the unit burrowed if it is underground. The unit makes a Shooting Attack against the triggering unit, or arrives (if underground) by Deep Strike within 6" of it without scattering</description>
+          <description>While the Tremorscythe lives, the unit may use this Advanced Reaction in the Movement phase. Trigger: an enemy unit ends a move within 6" of the unit, or within 6" of where the unit burrowed if it is underground. The unit makes a Shooting Attack against the triggering unit, or arrives (if underground) by Subterranean Assault within 6" of it without scattering</description>
         </rule>
         <rule name="Synapse Creature (Prime only)" id="43fb-ae7c-3784-5eae" hidden="false">
           <description>While the Prime lives, the unit counts as within Synapse range</description>
@@ -11423,7 +11495,7 @@
     <selectionEntry type="unit" import="true" name="Raveners" hidden="false" id="5daf-42a4-aa69-0aad" publicationId="7478-cf16-4f88-170b">
       <infoLinks>
         <infoLink name="Xenos" id="c0e0-a3da-ebbd-3a99" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
-        <infoLink name="Deep Strike" id="030f-d48a-b441-e19a" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
+        <infoLink name="Subterranean Assault" id="7225-82d2-d7bc-3c3b" hidden="false" targetId="33d4-d46d-7f47-3ad2" type="rule" />
         <infoLink name="Hammer of Wrath (X)" id="1842-48df-ffee-bda2" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (1)" />
@@ -13371,7 +13443,7 @@
     <selectionEntry type="unit" import="true" name="Mawloc" hidden="false" id="d0d0-502a-4be4-5a59" publicationId="7478-cf16-4f88-170b">
       <rules>
         <rule name="Terror from the Deep" id="99e7-2491-64f4-d70a" hidden="false">
-          <description>When the Mawloc arrives by Deep Strike, it may be placed on top of an enemy unit. Place a Large Blast (5") marker where it will land; every model under it suffers a hit at Strength 6, AP 2. Enemy models are then moved the minimum distance to make room, and the Mawloc does not scatter</description>
+          <description>When the Mawloc arrives by Subterranean Assault, it may be placed on top of an enemy unit. Place a Large Blast (5") marker where it will land; every model under it suffers a hit at Strength 6, AP 2. Enemy models are then moved the minimum distance to make room, and the Mawloc does not scatter</description>
         </rule>
       </rules>
       <infoLinks>
@@ -14486,7 +14558,7 @@
     <selectionEntry type="unit" import="true" name="Trygon" hidden="false" id="970f-a9ac-608d-0ac9" publicationId="7478-cf16-4f88-170b">
       <rules>
         <rule name="Subterranean Tunnel" id="5ff5-52e2-bf26-aced" hidden="false">
-          <description>When the Trygon arrives by Deep Strike, one friendly Tyranid Infantry unit in Reserves may arrive at the same time, placed wholly within 6" of it without scattering</description>
+          <description>When the Trygon enters play, place a 5" template where it entered play. The template counts as a battlefield edge for friendly units entering play from Reserves</description>
         </rule>
       </rules>
       <infoLinks>
@@ -15702,7 +15774,7 @@
           <profiles>
             <profile name="Subterranean Hunter" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="399d-a85b-c187-55de">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit it joins gain the Deep Strike special rule, and may re-roll the Reserves roll to arrive.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit it joins gain the Burrower biomorph, and may re-roll the Reserves roll to arrive.</characteristic>
               </characteristics>
             </profile>
           </profiles>
