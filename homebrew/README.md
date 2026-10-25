@@ -119,7 +119,12 @@ loading. The script prints anything in the doc it could not place.
 
 - A psychic discipline whose rule says to "roll one D3 on the ... Psychic Powers table" (the
   Weirdboy Discipline) gives each psyker that has it a pick of one power and one psychic weapon
-  from the discipline's tables, standing in for the rolls.
+  from the tables under its "####" headings, standing in for the rolls. Powers and weapons before
+  any heading are the ones every psyker of the discipline knows (Power of da Waaagh!).
+- A "## ... Doctrine" section with one "###" per doctrine is a pick of one on the army entry; when
+  its text says a "model with the X special rule may select" one, it shows only while the army has
+  such a model.
+- Bold weapon rules written beside the armoury tables ("**Mishap.**") are rules weapons link to.
 
 - A biomorph granted by a sub-faction ("Deep Burrowers: Infantry units gain the Burrower biomorph")
   or a Warlord Trait ("The Warlord and any unit it joins gain the Burrower biomorph") shows its
