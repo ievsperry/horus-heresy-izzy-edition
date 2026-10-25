@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -157,7 +157,7 @@
             <selectionEntry type="upgrade" import="true" name="Endless Swarm" hidden="false" id="d11c-e765-976f-3eb9" publicationId="7478-cf16-4f88-170b">
               <rules>
                 <rule name="Effects" id="aba8-de06-299d-1e2e" hidden="false">
-                  <description>Termagant and Hormagaunt units in a Detachment using this Rite of War may contain up to 40 models, and gain the Line Sub-type.</description>
+                  <description>Termagant and Hormagaunt units in a Detachment using this Rite of War may contain up to 40 models, and gain the Without Number (5+) special rule. Ripper Swarms and Gargoyles in a Detachment using this Rite of War gain the Without Number (6+) special rule.</description>
                 </rule>
                 <rule name="Limitations" id="0e30-38de-c2f4-0189" hidden="false">
                   <description>A Detachment using this Rite of War must have a Hive Tyrant or Tervigon as its Warlord. A Detachment using this Rite of War may not include any Lords of War, and may include no more than two Heavy Support choices. This Rite of War may not be used by an Allied Detachment.</description>
@@ -4546,7 +4546,7 @@
         <selectionEntry type="model" import="true" name="Genestealer" hidden="false" id="b9bd-db55-ffec-195d" publicationId="7478-cf16-4f88-170b">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2644-729b-e28a-ea61" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="a63d-156f-324a-666d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="a63d-156f-324a-666d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
             <profile name="Genestealer" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="11eb-b2ad-ba44-7a94" publicationId="7478-cf16-4f88-170b">
@@ -13606,6 +13606,9 @@
     </rule>
     <rule name="Unnatural Resilience" id="d943-5665-f8ca-caf2" hidden="false" publicationId="7478-cf16-4f88-170b">
       <description>The unit is immune to Instant Death. Whenever a model in the unit would suffer Instant Death, it suffers D3 wounds instead.</description>
+    </rule>
+    <rule name="Without Number (X)" id="449c-af76-dd3d-3e0c" hidden="false" publicationId="7478-cf16-4f88-170b">
+      <description>Once a unit with this rule has been removed from play or destroyed, roll a D6. On a roll of X or more, the unit is added to Reserves and may return to play in the controlling player's next Movement phase as normal. The unit still counts as destroyed when calculating Victory Points and other win conditions. A unit that returns loses the Line Sub-type and only counts as a Scoring unit.</description>
     </rule>
     <rule name="Hive Mind (X)" id="8118-779a-5fee-b169" hidden="false" publicationId="7478-cf16-4f88-170b">
       <description>Every Tyranid psyker knows the Psychic Scream psychic weapon, plus X psychic powers from this discipline, chosen when the army is built. X is shown on its datasheet. The Swarmlord knows every power.</description>

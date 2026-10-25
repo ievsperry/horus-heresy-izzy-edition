@@ -38,6 +38,8 @@ Every unit in this list has **Hive Fleet (X)**, and **Shadow in the Warp** if it
 
 **Unnatural Resilience.** The unit is immune to Instant Death. Whenever a model in the unit would suffer Instant Death, it suffers D3 wounds instead.
 
+**Without Number (X).** Once a unit with this rule has been removed from play or destroyed, roll a D6. On a roll of X or more, the unit is added to Reserves and may return to play in the controlling player's next Movement phase as normal. The unit still counts as destroyed when calculating Victory Points and other win conditions. A unit that returns loses the Line Sub-type and only counts as a Scoring unit.
+
 ## Advanced Reaction: Swarm Response
 
 Tyranids use the 2.0 core reactions (Reposition, Return Fire, Overwatch) as normal, plus this advanced reaction. It costs one point of the Reaction Allotment like any other reaction†.
@@ -210,7 +212,7 @@ _The hive fleet does not count its losses. For every brood that falls, two more 
 
 **Effects**
 
-- Termagant and Hormagaunt units in a Detachment using this Rite of War may contain up to 40 models, and gain the Line Sub-type†.
+- Termagant and Hormagaunt units in a Detachment using this Rite of War may contain up to 40 models, and gain the Without Number (5+) special rule. Ripper Swarms and Gargoyles in a Detachment using this Rite of War gain the Without Number (6+) special rule.
 
 **Limitations**
 
@@ -668,7 +670,7 @@ _The ground shakes, the earth splits, and the swarm erupts from below, burrowing
 | Option | Cost |
 |---|---|
 | **The Genestealers may take:** |  |
-| – Up to 15 additional Genestealers | +16 points each |
+| – Up to 5 additional Genestealers | +16 points each |
 | – Toxin sacs for the whole unit | +3 points per model |
 | **Any Genestealer may exchange its rending claws for:** |  |
 | – Scything talons | +2 points |
