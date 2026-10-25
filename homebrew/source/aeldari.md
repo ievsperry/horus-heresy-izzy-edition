@@ -1130,7 +1130,7 @@ A Psyker with this Discipline gains all the listed Powers, weapons and other spe
 
 *The Psyker manipulates the strands of fate to guide allied warriors toward deadly precision and impossible accuracy.*
 
-Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit within 12". That unit gains Precision Shots (5+) and may re-roll failed To Hit rolls of 1 until the end of the current player turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed, then the target unit instead gains a 4+ Invulnerable Save until the end of the current player turn. If the Check is failed, then the target unit gains no benefit and the Psyker suffers Perils of the Warp.
+Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit within 24". Until the start of the Psyker's next Psychic phase, that unit re-rolls all failed To Hit rolls with its ranged Shooting Attacks, as if its ranged weapons were Twin-linked.
 
 ### Doom (Psychic Weapon)
 

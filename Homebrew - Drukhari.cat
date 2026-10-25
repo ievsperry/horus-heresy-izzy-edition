@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Drukhari" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Drukhari" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -103,7 +103,7 @@
               </profiles>
               <rules>
                 <rule name="Thirst for Power" id="bdea-bda1-9516-7f03" hidden="false">
-                  <description>the unit gains each Power from Pain benefit one game turn earlier.</description>
+                  <description>the unit may select two effects from the Power From Pain table each time it would normally select one.</description>
                 </rule>
                 <rule name="Vect's Favour" id="e2d3-3a20-b8fc-0f68" hidden="false">
                   <description>the unit may re-roll failed Morale checks.</description>
@@ -6236,6 +6236,7 @@
             <modifier type="set" field="name" value="Fear (1)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Fleshcrafted Horror" id="0390-6ba2-c069-84d4" hidden="false" targetId="2d14-16d5-f06e-face" type="rule" />
         <infoLink name="Power From Pain" id="c58b-f8c5-0e87-e07e" hidden="false" targetId="ceac-7e1a-2851-4684" type="rule" />
         <infoLink name="Rampage (X)" id="a150-86fd-9bc1-ebc3" hidden="false" targetId="3efb-2a2c-2d0b-92fc" type="rule">
           <modifiers>
@@ -9925,6 +9926,7 @@
             <modifier type="set" field="name" value="Fear (1)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Fleshcrafted Horror" id="13ea-0862-8b7d-c5bf" hidden="false" targetId="2d14-16d5-f06e-face" type="rule" />
         <infoLink name="Hammer of Wrath (X)" id="70c5-1990-6aa3-85ee" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (1)" />
@@ -10456,6 +10458,7 @@
             <modifier type="set" field="name" value="Fear (1)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Fleshcrafted Horror" id="1dbd-40cf-1627-e24d" hidden="false" targetId="2d14-16d5-f06e-face" type="rule" />
         <infoLink name="Hammer of Wrath (X)" id="a78b-333c-3f87-fae1" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (2)" />
@@ -11467,6 +11470,9 @@
     </rule>
     <rule name="Combat Drugs (X)" id="c076-e675-7af7-9383" hidden="false" publicationId="9356-fc9b-2fee-7d11">
       <description>*The Drukhari make extensive use of psycho-reactive stimulants, adrenal catalysts and hyper-aggressive chemical compounds designed to heighten combat performance beyond natural limits.* A unit with Combat Drugs (X) must roll X D6 before deployment and apply the corresponding effects from the table below for the duration of the battle. Unless otherwise stated, duplicate results have no additional effect. If a result would grant a Special Rule the unit already possesses, increase the value of that Special Rule by +1 instead, to a maximum of 4 unless otherwise specified. D6: Combat Drug, Effect. 1: Hypex, The unit gains Fleet (2).. 2: Grave Lotus, The unit gains Furious Charge (1).. 3: Serpentin, The unit gains Sudden Strike (1).. 4: Painbringer, The unit gains Feel No Pain (6+). Feel No Pain granted by this rule may not be improved beyond Feel No Pain (4+).. 5: Adrenalight, The unit gains Rage (2). If the unit already has Rage, increase its value by +1 instead, to a maximum of 3.. 6: Splintermind, The unit gains Counter-Attack (1) and Fear (1). Fear granted by this rule does not scale..</description>
+    </rule>
+    <rule name="Fleshcrafted Horror" id="2d14-16d5-f06e-face" hidden="false" publicationId="9356-fc9b-2fee-7d11">
+      <description>A model with this Special Rule gains It Will Not Die (6+). If it already has It Will Not Die, improve it by +1 instead, to a maximum of It Will Not Die (5+).</description>
     </rule>
     <rule name="Kabalite Discipline" id="c898-4bc6-958e-09cb" hidden="false" publicationId="9356-fc9b-2fee-7d11">
       <description>*Kabalite Warriors prosecute raids with cold precision, coordinating overlapping fire and surgical elimination strikes against vulnerable prey.* A unit with this Special Rule gains Precision Shots (6+). In addition, when targeting Pinned, Falling Back or Disordered enemy units, ranged attacks made by this unit gain Breaching (6+).</description>

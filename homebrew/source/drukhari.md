@@ -39,6 +39,8 @@ Every Drukhari unit has **Night Vision** unless its entry says otherwise.
 | 5 | Adrenalight | The unit gains Rage (2). If the unit already has Rage, increase its value by +1 instead, to a maximum of 3. |
 | 6 | Splintermind | The unit gains Counter-Attack (1) and Fear (1). Fear granted by this rule does not scale. |
 
+**Fleshcrafted Horror.** A model with this Special Rule gains It Will Not Die (6+). If it already has It Will Not Die, improve it by +1 instead, to a maximum of It Will Not Die (5+).
+
 **Kabalite Discipline.** *Kabalite Warriors prosecute raids with cold precision, coordinating overlapping fire and surgical elimination strikes against vulnerable prey.* A unit with this Special Rule gains Precision Shots (6+). In addition, when targeting Pinned, Falling Back or Disordered enemy units, ranged attacks made by this unit gain Breaching (6+).
 
 **Lightning Blows (X).** *Some warriors fight with such speed and precision that they are capable of landing a series of blows like lightning, before their opponent can even react. There are few that can withstand such a barrage of attacks, and those warriors that have mastered this technique are rightfully feared on the battlefield.* After normal To Hit rolls for a weapon with this special rule have been made, count the number of Hits inflicted on a roll of equal to or more than the value listed in brackets as part of this rule. Immediately resolve a number of additional To Hit rolls on the same unit using the attacking models' WS equal to the number of Hits counted earlier – any Hits scored roll To Wound as normal using the profile of the weapon with this special rule or a weapon chosen from those available to the model with this special rule if the rule is not applied to a specific weapon. These additional attacks do not themselves benefit from the Lightning Blows (X) special rule, but do benefit from any other special rules possessed by the attacking model, such as Preferred Enemy (X) or Precision Strikes (X).
@@ -144,7 +146,7 @@ Every Kabal, Wych Cult and Haemonculus Coven has its own cruel obsession. Obsess
 
 *Asdrubael Vect's own Kabal, the most powerful in Commorragh, driven by an endless thirst for power.*
 
-- **Thirst for Power:** the unit gains each Power from Pain benefit one game turn earlier.
+- **Thirst for Power:** the unit may select two effects from the Power From Pain table each time it would normally select one.
 - **Vect's Favour:** the unit may re-roll failed Morale checks.
 
 **Advanced Reaction: Strike First** (Shooting phase). Trigger: a Black Heart unit is selected as the target of a Shooting Attack. The unit makes a Return Fire Shooting Attack before the enemy attack is resolved, instead of after it.
@@ -920,6 +922,7 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 - Blade Artists
 - Bulky (2)
 - Fear (1)
+- Fleshcrafted Horror
 - Power From Pain
 - Rampage (1)
 
@@ -1748,6 +1751,7 @@ _Fleet values granted to this unit are added to Run moves and Jet Pack moves._
 - Blade Artists
 - Bulky (4)
 - Fear (1)
+- Fleshcrafted Horror
 - Hammer of Wrath (1)
 - Power From Pain
 - Reservoir of Pain
@@ -1877,6 +1881,7 @@ _Fleet values granted to this unit are added to Run moves and Jet Pack moves._
 - Blade Artists
 - Bulky (4)
 - Fear (1)
+- Fleshcrafted Horror
 - Hammer of Wrath (2)
 - Power From Pain
 - Rampage (2)
@@ -2547,9 +2552,8 @@ These entries rely on 2.0 wording that should be confirmed. Where your book diff
 
 ## Open Questions
 
-- Fleshcrafted Horror, Poison Masters and Terror Tactics are named by the Kabals and Covens, but no rule text was supplied and no datasheet has them. The Flesh Rewoven reaction and Master of Agonies trait need units with Fleshcrafted Horror.
+- Poison Masters and Terror Tactics are named by the Kabals and Covens, but no rule text was supplied and no datasheet has them.
 - The Blades of Lelith list a 6" profile with no weapon type; it is set as Assault 1 here.
-- Thirst for Power (Kabal of the Black Heart) still refers to the old turn-by-turn Power from Pain; it needs new wording for the new Power From Pain table.
 - The Cult of Strife's "Blade Artists" bonus is renamed Blades of Strife so it is not confused with the new Blade Artists special rule.
 
 ## Sources
