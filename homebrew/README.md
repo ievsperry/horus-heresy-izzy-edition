@@ -110,6 +110,10 @@ loading. The script prints anything in the doc it could not place.
   Big Mek as its Warlord" leaves only those models able to be the Warlord, and a named Warlord
   that is not an HQ (a Trygon Prime) is offered the Warlord option under that Rite.
 
+- A biomorph granted by a sub-faction ("Deep Burrowers: Infantry units gain the Burrower biomorph")
+  or a Warlord Trait ("The Warlord and any unit it joins gain the Burrower biomorph") shows its
+  rules on those units while that sub-faction or trait is chosen, and the paid option is hidden.
+
 ## Not enforced
 
 - Rite of War limitations other than the Warlord ("no Lords of War", "no more than two Heavy

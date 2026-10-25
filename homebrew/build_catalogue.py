@@ -1460,6 +1460,70 @@ class Builder:
 
         # Warlord Traits are picked on the Warlord itself (see add_warlords), not here.
 
+    # ---- biomorphs granted by a sub-faction or a Warlord Trait
+
+    def granted_rules(self, biomorph):
+        """The special rules a biomorph gives (Burrower: Subterranean Assault)."""
+        eid = self.upgrades.get(norm(biomorph))
+        e = self.shared_entries.find(f"selectionEntry[@id='{eid}']") if eid else None
+        return [il for il in e.findall("infoLinks/infoLink")] if e is not None else []
+
+    def grant(self, unit, uid, biomorph, condition, key):
+        """Show the biomorph's rules on a unit while the condition holds, and hide the option to buy it."""
+        for il in self.granted_rules(biomorph):
+            if any(o.get("targetId") == il.get("targetId") and o.get("hidden") != "true"
+                   for o in unit.findall("infoLinks/infoLink")):
+                continue  # it has the rule already (the Trygon)
+            g = el(child(unit, "infoLinks"), "infoLink", name=il.get("name"), id=make_id(uid, key, il.get("targetId")),
+                   hidden=True, targetId=il.get("targetId"), type="rule")
+            for m in il.findall("modifiers/modifier"):
+                el(child(g, "modifiers"), "modifier", **m.attrib)
+            show = el(child(g, "modifiers"), "modifier", type="set", field="hidden", value="false")
+            condition(show)
+        eid = self.upgrades.get(norm(biomorph))
+        for l in unit.iter("entryLink"):
+            if l.get("targetId") == eid:
+                hide = el(child(l, "modifiers"), "modifier", type="set", field="hidden", value="true")
+                condition(hide)
+                cmax = next((c for c in l.findall("constraints/constraint") if c.get("type") == "max"), None)
+                if cmax is not None:
+                    zero = el(child(l, "modifiers"), "modifier", type="set", field=cmax.get("id"), value=0)
+                    condition(zero)
+
+    def apply_granted_biomorphs(self):
+        """'Deep Burrowers: Infantry units gain the Burrower biomorph at no cost' (a hive fleet) and
+        'The Warlord and any unit it joins gain the Burrower biomorph' (a Warlord Trait)."""
+        fleets, _, _ = self.subfaction_section()
+        barred = self.no_biomorph_units()
+        for sub in (fleets["subs"] if fleets else []):
+            fid = make_id("fleet", self.faction, sub["title"])
+            for ln in sub["lines"]:
+                m = re.search(r"(\w+) units gain the (.+?) biomorph", ln)
+                kind, bio = (m.group(1), m.group(2)) if m and "Warlord" not in ln else (None, None)
+                for ds in self.datasheets if kind else []:
+                    if forms(ds["name"]) & barred or not any(t.partition(": ")[2].startswith(kind) or t.startswith(kind) for t in ds["types"]):
+                        continue
+                    uid = self.units[ds["name"]]
+                    unit = self.shared_entries.find(f"selectionEntry[@id='{uid}']")
+                    if unit is None:
+                        continue
+                    def cond(mod, fid=fid):
+                        el(el(mod, "conditions"), "condition", type="atLeast", value=1, field="selections", scope="force",
+                           childId=fid, shared=True, includeChildSelections=True, includeChildForces=False)
+                    self.grant(unit, uid, bio, cond, "fleet " + fid)
+                m = re.search(r"\*\*Warlord Trait: (.+?)\.\*\* The Warlord and any unit it joins gain the (.+?) biomorph", ln)
+                if m:
+                    tid = make_id("trait", self.faction, m.group(1))
+                    for ds in self.datasheets:
+                        uid = self.units[ds["name"]]
+                        unit = self.shared_entries.find(f"selectionEntry[@id='{uid}']")
+                        if unit is None or not any(l.get("targetId") == WARLORD_ENTRY for l in unit.iter("entryLink")):
+                            continue
+                        def cond(mod, tid=tid, uid=uid):
+                            el(el(mod, "conditions"), "condition", type="atLeast", value=1, field="selections", scope=uid,
+                               childId=tid, shared=True, includeChildSelections=True, includeChildForces=False)
+                        self.grant(unit, uid, m.group(2), cond, "trait " + tid)
+
     # ---- Rites of War
 
     RITE_VERB = r"(?:may|gains?|loses?)\b"
@@ -3179,6 +3243,7 @@ class Builder:
         self.build_army_entry()
         self.build_entry_links()
         self.apply_rites()
+        self.apply_granted_biomorphs()
         self.root.append(self.shared_entries)
         if len(self.shared_groups):
             self.root.append(self.shared_groups)
