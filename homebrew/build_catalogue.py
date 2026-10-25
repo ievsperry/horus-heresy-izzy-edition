@@ -610,7 +610,9 @@ class Builder:
                 profiles = [dict(p, profile=f"{prefix} {p['profile']}") for p in profiles]
                 name = f"{prefix} {name}"
             eid = make_id("weapon", self.faction, name)
-            e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=name,
+            # "Executioner (Psychic Weapon)": kept apart from the Exarch's executioner, shown as "Executioner"
+            shown = re.sub(r"\s*\(Psychic Weapon\)$", "", name)
+            e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=shown,
                    hidden=False, id=eid, publicationId=self.pub_id)
             linked = set()
             for p in profiles:
@@ -618,7 +620,8 @@ class Builder:
                 ptype, pchars, tname = ((PSY_WEAPON_PROFILE, PSY_WEAPON_CHARS, "Psychic Weapon") if psychic
                                         else (WEAPON_PROFILE, WEAPON_CHARS, "Weapon"))
                 profs = child(e, "profiles")
-                pe = el(profs, "profile", name=p["profile"], typeId=ptype, typeName=tname, hidden=False,
+                pe = el(profs, "profile", name=re.sub(r"\s*\(Psychic Weapon\)$", "", p["profile"]),
+                        typeId=ptype, typeName=tname, hidden=False,
                         id=make_id(eid, "profile", p["profile"]), publicationId=self.pub_id)
                 chars = el(pe, "characteristics")
                 for (cname, cid), val in zip(pchars, (p["range"], p["str"], p["ap"], p["type"])):
@@ -633,9 +636,9 @@ class Builder:
                     linked.add(tok)  # two profiles may share a rule (rod of covenant)
                     self.link_rule(e, tok, eid)
             self.weapons[key] = eid
-            self.weapon_names[key] = name
+            self.weapon_names[key] = shown
             if any(p.get("psychic_weapon") for p in profiles):
-                self.psychic_weapons.append((name, eid))
+                self.psychic_weapons.append((shown, eid))
                 self.psy_table[eid] = profiles[0].get("psy_table")
                 self.psy_disc[eid] = profiles[0].get("psy_disc")
         for key in list(self.weapons):
@@ -2186,6 +2189,37 @@ class Builder:
                     eligible = [next((me for me in models if forms(me.get("name")) & forms(ds["name"])), models[0])]
             for me in eligible:
                 self.give_warlord(me, must)
+        self.type_warlords()
+
+    def type_warlords(self):
+        """'If the army includes any Phoenix Lord models, one of them must be the Warlord': while the
+        roster has one, no other model's Warlord option may be taken. A type whose only models may never
+        be the Warlord (the Avatar of Khaine) changes nothing."""
+        lines = [ln for s in self.sections for sub in [s] + s["subs"] for ln in sub["lines"]]
+        for ln in lines:
+            m = re.search(r"If the army includes any (.+?) models, one of them must be the Warlord", ln)
+            if not m:
+                continue
+            kind = m.group(1)
+            holders, others = [], []
+            for ds in self.datasheets:
+                unit = self.shared_entries.find(f"selectionEntry[@id='{self.units[ds['name']]}']")
+                for me in (unit.findall("selectionEntries/selectionEntry") if unit is not None else []):
+                    link = next((l for l in me.findall("entryLinks/entryLink") if l.get("targetId") == WARLORD_ENTRY), None)
+                    if link is None:
+                        continue
+                    types = " ".join(c.text or "" for c in me.iter("characteristic") if c.get("name") == "Unit Type")
+                    (holders if re.match(re.escape(kind) + r"\b", types) else others).append((ds, link))
+            if not holders:
+                continue
+            units = sorted({self.units[ds["name"]] for ds, _ in holders})
+            for _, link in others:
+                cmax = next(c for c in link.findall("constraints/constraint") if c.get("type") == "max")
+                mod = el(child(link, "modifiers"), "modifier", type="set", field=cmax.get("id"), value=0)
+                conds = el(el(el(mod, "conditionGroups"), "conditionGroup", type="or"), "conditions")
+                for uid in units:
+                    el(conds, "condition", type="atLeast", value=1, field="selections", scope="roster",
+                       childId=uid, shared=True, includeChildSelections=True, includeChildForces=True)
 
     def give_warlord(self, me, must=False, rite=None):
         """The Warlord option on a model, and the Warlord Traits it must pick from once it is the Warlord.

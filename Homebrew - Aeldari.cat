@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dff5-2d1b-fced-9f49" name="Homebrew - Aeldari" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dff5-2d1b-fced-9f49" name="Homebrew - Aeldari" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="5e1e-8e9e-d71a-5f01" name="Aeldari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Aeldari" />
   </publications>
@@ -4175,9 +4175,9 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Executioner (Psychic Weapon)" hidden="false" id="d540-f131-c5bb-65a0" publicationId="5e1e-8e9e-d71a-5f01">
+    <selectionEntry type="upgrade" import="true" name="Executioner" hidden="false" id="d540-f131-c5bb-65a0" publicationId="5e1e-8e9e-d71a-5f01">
       <profiles>
-        <profile name="Executioner (Psychic Weapon)" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon" hidden="false" id="a03f-cc77-d86c-8166" publicationId="5e1e-8e9e-d71a-5f01">
+        <profile name="Executioner" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon" hidden="false" id="a03f-cc77-d86c-8166" publicationId="5e1e-8e9e-d71a-5f01">
           <characteristics>
             <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18"</characteristic>
             <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">4</characteristic>
@@ -5173,10 +5173,10 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7912-0fde-99b2-de4d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Executioner (Psychic Weapon)" hidden="false" id="cd85-86fe-d049-5845" type="selectionEntry" targetId="d540-f131-c5bb-65a0">
+        <entryLink import="true" name="Executioner" hidden="false" id="b5de-7009-1211-e135" type="selectionEntry" targetId="d540-f131-c5bb-65a0">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5f4-ba73-7d3a-6cc1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee8f-ba7c-b586-0b1f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe26-868b-aeec-d31e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac2a-eceb-84c8-5415" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
         </entryLink>
       </entryLinks>
@@ -6148,6 +6148,24 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="8333-3bd2-c174-08ea" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="be0f-8d28-e447-3cb9" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0480-92a6-ed6c-e358" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2c25-0f4a-887a-04b6" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3546-5afa-74e6-d9f8" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="702a-57dc-ec26-f1a2" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b5b-b83b-010a-ba0f" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8f70-59a1-bf08-ed50" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b399-5f63-ecb2-730a" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf1-2ac0-6ebd-15fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be0f-8d28-e447-3cb9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -6448,6 +6466,24 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="736d-8a4c-6b94-481d" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="ca58-2b24-8ba5-3975" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0480-92a6-ed6c-e358" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2c25-0f4a-887a-04b6" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3546-5afa-74e6-d9f8" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="702a-57dc-ec26-f1a2" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b5b-b83b-010a-ba0f" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8f70-59a1-bf08-ed50" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b399-5f63-ecb2-730a" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf1-2ac0-6ebd-15fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca58-2b24-8ba5-3975" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -6770,6 +6806,24 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="d503-7921-adb4-e12a" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="a852-9b13-b81b-8949" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0480-92a6-ed6c-e358" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2c25-0f4a-887a-04b6" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3546-5afa-74e6-d9f8" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="702a-57dc-ec26-f1a2" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b5b-b83b-010a-ba0f" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8f70-59a1-bf08-ed50" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b399-5f63-ecb2-730a" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf1-2ac0-6ebd-15fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a852-9b13-b81b-8949" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -6996,6 +7050,24 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="3622-61d1-53e3-5a40" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="7f57-a914-e920-7d9e" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0480-92a6-ed6c-e358" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2c25-0f4a-887a-04b6" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3546-5afa-74e6-d9f8" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="702a-57dc-ec26-f1a2" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b5b-b83b-010a-ba0f" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8f70-59a1-bf08-ed50" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b399-5f63-ecb2-730a" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf1-2ac0-6ebd-15fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f57-a914-e920-7d9e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -7330,6 +7402,24 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="7814-5833-55e5-561a" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="007c-4c09-8936-5236" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0480-92a6-ed6c-e358" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2c25-0f4a-887a-04b6" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3546-5afa-74e6-d9f8" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="702a-57dc-ec26-f1a2" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b5b-b83b-010a-ba0f" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8f70-59a1-bf08-ed50" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b399-5f63-ecb2-730a" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf1-2ac0-6ebd-15fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="007c-4c09-8936-5236" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -7645,6 +7735,24 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="6e1a-0eac-7fec-4158" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="99b0-6148-c996-3861" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0480-92a6-ed6c-e358" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2c25-0f4a-887a-04b6" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3546-5afa-74e6-d9f8" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="702a-57dc-ec26-f1a2" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b5b-b83b-010a-ba0f" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8f70-59a1-bf08-ed50" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b399-5f63-ecb2-730a" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf1-2ac0-6ebd-15fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99b0-6148-c996-3861" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -7799,6 +7907,24 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="5512-4cb2-dc48-b134" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="61dd-e90b-a0a2-1ff6" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0480-92a6-ed6c-e358" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2c25-0f4a-887a-04b6" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3546-5afa-74e6-d9f8" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="702a-57dc-ec26-f1a2" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b5b-b83b-010a-ba0f" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8f70-59a1-bf08-ed50" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b399-5f63-ecb2-730a" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf1-2ac0-6ebd-15fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61dd-e90b-a0a2-1ff6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -7946,6 +8072,24 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="c2ae-2193-4e2a-1ce9" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="08a2-eec5-d5ba-307a" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0480-92a6-ed6c-e358" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2c25-0f4a-887a-04b6" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3546-5afa-74e6-d9f8" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="702a-57dc-ec26-f1a2" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b5b-b83b-010a-ba0f" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8f70-59a1-bf08-ed50" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b399-5f63-ecb2-730a" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf1-2ac0-6ebd-15fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08a2-eec5-d5ba-307a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -8039,6 +8183,24 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="df50-a0d5-ad51-95a9" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="3cf3-af25-388d-7671" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0480-92a6-ed6c-e358" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2c25-0f4a-887a-04b6" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3546-5afa-74e6-d9f8" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="702a-57dc-ec26-f1a2" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b5b-b83b-010a-ba0f" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8f70-59a1-bf08-ed50" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b399-5f63-ecb2-730a" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf1-2ac0-6ebd-15fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cf3-af25-388d-7671" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -8174,6 +8336,24 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="47f3-a9ff-019c-4be3" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="df50-10af-26ec-9c35" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0480-92a6-ed6c-e358" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2c25-0f4a-887a-04b6" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3546-5afa-74e6-d9f8" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="702a-57dc-ec26-f1a2" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b5b-b83b-010a-ba0f" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8f70-59a1-bf08-ed50" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b399-5f63-ecb2-730a" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf1-2ac0-6ebd-15fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df50-10af-26ec-9c35" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -9274,6 +9454,24 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="20cb-4811-55c5-241a" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="dd3f-60df-17ac-f2ff" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0480-92a6-ed6c-e358" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2c25-0f4a-887a-04b6" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3546-5afa-74e6-d9f8" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="702a-57dc-ec26-f1a2" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b5b-b83b-010a-ba0f" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8f70-59a1-bf08-ed50" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b399-5f63-ecb2-730a" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf1-2ac0-6ebd-15fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd3f-60df-17ac-f2ff" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -9420,6 +9618,24 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="9940-9d64-8812-13c5" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="5e0b-6782-7bcb-9e57" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0480-92a6-ed6c-e358" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2c25-0f4a-887a-04b6" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3546-5afa-74e6-d9f8" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="702a-57dc-ec26-f1a2" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b5b-b83b-010a-ba0f" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8f70-59a1-bf08-ed50" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b399-5f63-ecb2-730a" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf1-2ac0-6ebd-15fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e0b-6782-7bcb-9e57" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -9626,6 +9842,24 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="8d69-653c-b0c7-dd8e" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="ab4d-d689-9bd7-4e7c" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0480-92a6-ed6c-e358" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2c25-0f4a-887a-04b6" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3546-5afa-74e6-d9f8" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="702a-57dc-ec26-f1a2" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b5b-b83b-010a-ba0f" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8f70-59a1-bf08-ed50" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b399-5f63-ecb2-730a" shared="true" includeChildSelections="true" includeChildForces="true" />
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dcf1-2ac0-6ebd-15fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab4d-d689-9bd7-4e7c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
