@@ -70,6 +70,8 @@ SLOTS = {
     "Lords of War": [("c658-dc6b-727b-c488", "Lords of War:", True),
                      ("2eaf-32d6-9d1d-d906", "LoW & Primarchs (25% Limit)", False)],
     "Fortifications": [("a24f-12d8-36c1-f477", "Fortification:", True)],
+    "Primarch": [("e031-3c2-e3f8-d40a", "Primarch:", True),
+                 ("2eaf-32d6-9d1d-d906", "LoW & Primarchs (25% Limit)", False)],
 }
 UNIT_CATEGORY = ("36c3-e85e-97cc-c503", "Unit:")
 ALLEGIANCE_CATEGORY = ("e90d-e5a8-f42d-da84", "Allegiance:")
@@ -3129,6 +3131,33 @@ class Builder:
                     continue
                 add_category(e, cat, cname, e.get("id"), primary=primary)
             add_category(e, *UNIT_CATEGORY, e.get("id"))
+        self.exclusive_entries(links)
+
+    def exclusive_entries(self, links):
+        """'If you take this entry, you may not also take Asdrubael Vect as an HQ choice': each of the two
+        is hidden once the other is in the roster."""
+        for sec in self.sections:
+            for sub in sec["subs"]:
+                m = re.search(r"may not also take (.+?) as an? [\w ]+? choice", " ".join(sub["lines"]))
+                ds = m and next((d for d in self.datasheets if sub["title"].startswith(d["name"] + " — ")), None)
+                other = m and next((d for d in self.datasheets if norm(d["name"]) == norm(m.group(1))), None)
+                if not ds or not other:
+                    continue
+                for a, b in ((ds, other), (other, ds)):
+                    for link in links:
+                        if link.get("targetId") == self.units[a["name"]]:
+                            mod = el(child(link, "modifiers"), "modifier", type="set", field="hidden", value="true")
+                            el(el(mod, "conditions"), "condition", type="atLeast", value=1, field="selections",
+                               scope="roster", childId=self.units[b["name"]], shared=True,
+                               includeChildSelections=True, includeChildForces=True)
+                    unit = self.shared_entries.find(f"selectionEntry[@id='{self.units[a['name']]}']")
+                    if unit is not None:  # and an error if both are taken anyway
+                        cid = add_constraint(unit, "max", 1, make_id(self.units[a["name"]], "exclusive", b["name"]),
+                                             scope="roster", children=True)
+                        mod = el(child(unit, "modifiers"), "modifier", type="set", field=cid, value=0)
+                        el(el(mod, "conditions"), "condition", type="atLeast", value=1, field="selections",
+                           scope="roster", childId=self.units[b["name"]], shared=True,
+                           includeChildSelections=True, includeChildForces=True)
 
     def transport_capacity(self, ds):
         for p in ds["profiles"]:

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Drukhari" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Drukhari" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -235,6 +235,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Asdrubael Vect" hidden="false" id="211f-1ab6-8445-834d" type="selectionEntry" targetId="3214-efaf-e7dd-6b87">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="153f-e81a-da0a-b0fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="9ccb-c75e-29f0-301f" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="290a-c9b9-f723-aca3" primary="false" name="Compulsory HQ:" />
@@ -388,6 +395,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Asdrubael Vect on the Dais of Destruction" hidden="false" id="dff6-8862-a028-4d61" type="selectionEntry" targetId="153f-e81a-da0a-b0fe">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="3214-efaf-e7dd-6b87" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="4fac-78ef-364e-ec78" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="3f3e-e26a-d179-9a84" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -1863,6 +1877,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Asdrubael Vect" hidden="false" id="3214-efaf-e7dd-6b87" publicationId="9356-fc9b-2fee-7d11">
+      <modifiers>
+        <modifier type="set" field="2992-7abd-0ac5-2a00" value="0">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="153f-e81a-da0a-b0fe" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2992-7abd-0ac5-2a00" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
       <rules>
         <rule name="Master of Commorragh" id="4be8-ed48-f6ab-2203" hidden="false">
           <description>Once per game, at the start of your turn, you may redeploy up to 3 friendly units, including those in Reserves, as though deploying them</description>
@@ -5672,6 +5696,16 @@
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Asdrubael Vect on the Dais of Destruction" hidden="false" id="153f-e81a-da0a-b0fe" publicationId="9356-fc9b-2fee-7d11">
+      <modifiers>
+        <modifier type="set" field="3c8a-46e2-9a02-a7be" value="0">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="3214-efaf-e7dd-6b87" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3c8a-46e2-9a02-a7be" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
       <rules>
         <rule name="Bladevanes" id="c085-f211-d23a-f20b" hidden="false">
           <description>The Dais may make a Bladevane Strike as Reavers, with D6 hits</description>
