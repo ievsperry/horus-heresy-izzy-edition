@@ -518,7 +518,7 @@ class Builder:
         token = token.strip()
         m = re.fullmatch(r"(.+?)\s*\((.+)\)", token)
         base = m.group(1) if m else token
-        if base in ("Large Blast", "Massive Blast"):
+        if base in ("Small Blast", "Large Blast", "Massive Blast"):
             base = "Blast"
         target = self.rule_target(base)
         if not target:
