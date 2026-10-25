@@ -417,7 +417,7 @@ _The ground shakes, the earth splits, and the swarm erupts from below, burrowing
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Old One Eye | 7 | 4 | 3 | 7 | 6 | 5 | 2 | 4 | 7 | 3+ | 105x70mm |
+| Old One Eye | 7 | 4 | 3 | 7 | 7 | 5 | 2 | 4 | 7 | 3+ | 105x70mm |
 
 **Unit Composition**
 
