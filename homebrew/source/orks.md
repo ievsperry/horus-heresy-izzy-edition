@@ -247,7 +247,7 @@ Units with Klan (Deathskulls) gain the following:
 - **Lucky Blue Gitz:** Once per turn, a unit with this rule may re-roll one dice that rolled a 1.
 - **Mekboyz' Favourites:** models in the unit improve their Mek-Smasha (X) and Grot Riggers (X) by 1, to a best of 3+. This stacks with a grot oiler, so a Deathskull Mek with a grot oiler has Mek-Smasha (3+).
 
-**Advanced Reaction: Lucky Paint** (Shooting phase). Trigger: a Deathskull unit is selected as the target of a Shooting Attack. Against that attack, the unit's models have Feel No Pain (5+), or improve an existing Feel No Pain by 1. A Deathskull vehicle instead improves its Ramshackle (X) by 1 against that attack.
+**Advanced Reaction: Lucky Paint** (Shooting phase). Trigger: a Deathskull unit is selected as the target of a Shooting Attack. Against that attack, the unit's models have Feel No Pain (5+), or improve an existing Feel No Pain by 1. A Deathskull vehicle or buggy instead improves its Ramshackled Vehicle (X) or Ramshackled Carapace (X) by 1 against that attack.
 
 **Warlord Trait: Dead Lucky.** The Warlord has a 5+ Invulnerable Save. If he already has an Invulnerable Save, improve it by 1, to a best of 3+.
 
