@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -430,6 +430,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Tyranid Warriors" hidden="false" id="e255-b5ad-ad02-ed4b" type="selectionEntry" targetId="bdf3-fce8-6eea-1c1e">
+      <modifiers>
+        <modifier type="add" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f063-ad40-a214-7cfd" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="9be4-5351-76af-fdb0" primary="true" name="Troops:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="9ad6-7c44-8fab-2574" primary="false" name="Unit:" />
@@ -611,6 +618,48 @@
         <categoryLink targetId="c658-dc6b-727b-c488" id="6d09-01f4-17e5-460b" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="5b45-be54-d76b-14be" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="0ad8-0a3d-c840-b0c4" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Genestealers" hidden="true" id="bd5a-2c2a-8839-7f9e" type="selectionEntry" targetId="efed-500e-b4c5-4e79">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="24bf-3901-f403-a662" primary="true" name="Troops:" />
+        <categoryLink targetId="8f42-a824-fb5f-8fea" id="dc7b-a261-b2cb-2820" primary="false" name="Compulsory Troops:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="977a-95a5-09fe-795d" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Gargoyles" hidden="true" id="75ea-b55c-ccb9-cf4a" type="selectionEntry" targetId="1c24-3df3-eb3c-5a29">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="b112-71ca-2a99-4fa5" primary="true" name="Troops:" />
+        <categoryLink targetId="8f42-a824-fb5f-8fea" id="9fad-1959-13af-6cc9" primary="false" name="Compulsory Troops:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="1753-f419-047c-ba2c" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tyranid Shrikes" hidden="true" id="a9e5-c05c-db5d-80fa" type="selectionEntry" targetId="e8ac-221a-2717-4657">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="c548-79e1-c6c6-d50d" primary="true" name="Troops:" />
+        <categoryLink targetId="8f42-a824-fb5f-8fea" id="2d73-d18e-3e3d-a4dd" primary="false" name="Compulsory Troops:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="c098-494f-d875-a2b6" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -2455,6 +2504,28 @@
               </costs>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="56ab-6642-d511-11c6" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="17c6-a0b4-6762-b8b4" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="17c6-a0b4-6762-b8b4" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f063-ad40-a214-7cfd" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="17c6-a0b4-6762-b8b4" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="17c6-a0b4-6762-b8b4" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="da74-5e15-7081-6b5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17c6-a0b4-6762-b8b4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -2748,6 +2819,18 @@
               </costs>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="f56a-454a-09ab-34fd" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="9ac0-b91d-3f63-22a5" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="9ac0-b91d-3f63-22a5" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="da74-5e15-7081-6b5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ac0-b91d-3f63-22a5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -2957,6 +3040,33 @@
               </costs>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="558e-1f41-c539-4a4e" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="27f0-181d-b83e-ec50" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="27f0-181d-b83e-ec50" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="27f0-181d-b83e-ec50" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f063-ad40-a214-7cfd" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="27f0-181d-b83e-ec50" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="27f0-181d-b83e-ec50" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="da74-5e15-7081-6b5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27f0-181d-b83e-ec50" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -3116,6 +3226,33 @@
               </costs>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="7cc1-d0f5-d4b3-fd30" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="0f02-1919-dad3-fcba" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="0f02-1919-dad3-fcba" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="0f02-1919-dad3-fcba" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f063-ad40-a214-7cfd" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="0f02-1919-dad3-fcba" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="0f02-1919-dad3-fcba" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="da74-5e15-7081-6b5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f02-1919-dad3-fcba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -3300,6 +3437,33 @@
               </costs>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="92f5-de67-632c-bf95" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="2630-6c4b-4180-14b3" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="2630-6c4b-4180-14b3" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="2630-6c4b-4180-14b3" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f063-ad40-a214-7cfd" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="2630-6c4b-4180-14b3" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="2630-6c4b-4180-14b3" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="da74-5e15-7081-6b5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2630-6c4b-4180-14b3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -3457,6 +3621,33 @@
               </costs>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="1ea9-5f81-06f3-5385" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="83d8-f490-6baf-ee3a" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="83d8-f490-6baf-ee3a" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="83d8-f490-6baf-ee3a" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f063-ad40-a214-7cfd" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="83d8-f490-6baf-ee3a" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="83d8-f490-6baf-ee3a" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="da74-5e15-7081-6b5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83d8-f490-6baf-ee3a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -3681,6 +3872,28 @@
               </costs>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="bee3-3899-6c37-a6bc" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="f310-92e0-c706-5b94" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f310-92e0-c706-5b94" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f310-92e0-c706-5b94" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f310-92e0-c706-5b94" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="da74-5e15-7081-6b5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f310-92e0-c706-5b94" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -3935,6 +4148,28 @@
               </costs>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="ef2e-a56f-ec31-d3a3" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="8f14-e4be-20b5-842d" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8f14-e4be-20b5-842d" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f063-ad40-a214-7cfd" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8f14-e4be-20b5-842d" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8f14-e4be-20b5-842d" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="da74-5e15-7081-6b5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f14-e4be-20b5-842d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -4165,6 +4400,28 @@
               </costs>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="af88-be95-9b25-909e" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="035f-161a-2710-3ac1" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="035f-161a-2710-3ac1" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="035f-161a-2710-3ac1" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f063-ad40-a214-7cfd" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="035f-161a-2710-3ac1" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="035f-161a-2710-3ac1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -4327,6 +4584,33 @@
               </costs>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="e12e-3282-1dd9-0d77" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="22de-a937-a320-8075" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="22de-a937-a320-8075" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="22de-a937-a320-8075" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f063-ad40-a214-7cfd" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="22de-a937-a320-8075" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="22de-a937-a320-8075" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="da74-5e15-7081-6b5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22de-a937-a320-8075" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -4523,6 +4807,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Genestealers" hidden="false" id="efed-500e-b4c5-4e79" publicationId="7478-cf16-4f88-170b">
+      <modifiers>
+        <modifier type="add" field="category" value="6399-5c65-7833-1025">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Xenos" id="0359-f05a-c62f-3aac" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Fleet (X)" id="b335-dca1-a6a6-e69d" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
@@ -4544,6 +4835,18 @@
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Genestealer" hidden="false" id="b9bd-db55-ffec-195d" publicationId="7478-cf16-4f88-170b">
+          <modifiers>
+            <modifier type="add" field="category" value="6399-5c65-7833-1025">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+            <modifier type="set" field="a63d-156f-324a-666d" value="20">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e176-fe9a-fbf4-cea3" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2644-729b-e28a-ea61" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="a63d-156f-324a-666d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7067,12 +7370,29 @@
           </modifiers>
         </infoLink>
         <infoLink name="Move Through Cover" id="1878-b595-ca7b-2254" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule" />
+        <infoLink name="Without Number (X)" id="90f5-58c1-93ae-bbfb" hidden="true" targetId="449c-af76-dd3d-3e0c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Without Number (5+)" />
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="7e58-067d-8bc9-0ce4" primary="false" name="Unit:" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Hormagaunt" hidden="false" id="ad6c-46ac-b719-ff80" publicationId="7478-cf16-4f88-170b">
+          <modifiers>
+            <modifier type="set" field="0350-775d-4fe9-fcbf" value="40">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="ce31-51b0-96cb-70e4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="0350-775d-4fe9-fcbf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7484,6 +7804,16 @@
             <modifier type="set" field="name" value="Instinctive Behaviour (Feed)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Without Number (X)" id="bd63-c1fb-0398-379d" hidden="true" targetId="449c-af76-dd3d-3e0c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Without Number (6+)" />
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="bb2d-eef1-0e73-3060" primary="false" name="Unit:" />
@@ -7700,12 +8030,29 @@
           </modifiers>
         </infoLink>
         <infoLink name="Move Through Cover" id="7917-25b7-f6c3-595d" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule" />
+        <infoLink name="Without Number (X)" id="6f10-d7f8-d4ec-927a" hidden="true" targetId="449c-af76-dd3d-3e0c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Without Number (5+)" />
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="bf37-9c1c-f7c7-74cc" primary="false" name="Unit:" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Termagant" hidden="false" id="c760-1202-a55c-a4b1" publicationId="7478-cf16-4f88-170b">
+          <modifiers>
+            <modifier type="set" field="522d-8ac8-fd36-cad1" value="40">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="d525-5a57-3d30-1fbb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="522d-8ac8-fd36-cad1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7908,6 +8255,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tyranid Warriors" hidden="false" id="bdf3-fce8-6eea-1c1e" publicationId="7478-cf16-4f88-170b">
+      <modifiers>
+        <modifier type="add" field="category" value="6399-5c65-7833-1025">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f063-ad40-a214-7cfd" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule name="Two Close Combat Weapons" id="78b5-fd2e-c492-19ff" hidden="false">
           <description>A Tyranid Warrior armed with two sets of melee weapons (such as two sets of scything talons) adds 1 to its Attacks characteristic</description>
@@ -7917,7 +8271,15 @@
         <infoLink name="Xenos" id="cb8c-3309-252a-34b1" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Hive Fleet (X)" id="86e6-ee81-456e-db8b" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
         <infoLink name="Shadow in the Warp" id="0809-f82d-dd46-6a59" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
-        <infoLink name="Support Squad" id="c164-29a9-4c99-859f" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule" />
+        <infoLink name="Support Squad" id="c164-29a9-4c99-859f" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f063-ad40-a214-7cfd" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Synapse Creature" id="b425-9fa3-d46c-b046" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
       </infoLinks>
       <categoryLinks>
@@ -7925,6 +8287,13 @@
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Tyranid Warrior" hidden="false" id="9776-9c7f-f772-7487" publicationId="7478-cf16-4f88-170b">
+          <modifiers>
+            <modifier type="add" field="category" value="6399-5c65-7833-1025">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f063-ad40-a214-7cfd" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5d1c-de33-80a9-7049" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="e4d4-20f6-c0e9-b887" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8411,6 +8780,13 @@
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gargoyles" hidden="false" id="1c24-3df3-eb3c-5a29" publicationId="7478-cf16-4f88-170b">
+      <modifiers>
+        <modifier type="add" field="category" value="6399-5c65-7833-1025">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Xenos" id="1849-3229-d5bb-3a30" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Deep Strike" id="e79a-185e-9f65-8ddd" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
@@ -8420,12 +8796,29 @@
             <modifier type="set" field="name" value="Instinctive Behaviour (Hunt)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Without Number (X)" id="e0fc-bb2c-cbb7-ff81" hidden="true" targetId="449c-af76-dd3d-3e0c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Without Number (6+)" />
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="6e20-29b5-c0b7-fa13" primary="false" name="Unit:" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Gargoyle" hidden="false" id="5f43-a418-9fd4-d94c" publicationId="7478-cf16-4f88-170b">
+          <modifiers>
+            <modifier type="add" field="category" value="6399-5c65-7833-1025">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="475f-708b-a3cc-09e1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="ce0f-49ab-6416-2c09" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -10150,6 +10543,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tyranid Shrikes" hidden="false" id="e8ac-221a-2717-4657" publicationId="7478-cf16-4f88-170b">
+      <modifiers>
+        <modifier type="add" field="category" value="6399-5c65-7833-1025">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Xenos" id="4c8e-0d79-8cbc-82ff" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Deep Strike" id="5ce0-0f0a-d686-73d4" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
@@ -10162,6 +10562,13 @@
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Tyranid Shrike" hidden="false" id="cc3e-6057-0f18-b989" publicationId="7478-cf16-4f88-170b">
+          <modifiers>
+            <modifier type="add" field="category" value="6399-5c65-7833-1025">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6ff5-4104-b1c7-3f45" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7ebd-6100-7bae-7e77" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="673c-3bd3-ec61-075c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -12615,6 +13022,41 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
               </costs>
+            </entryLink>
+            <entryLink import="true" name="Warlord" hidden="true" id="4495-7c5f-c8e6-bd5b" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="da74-5e15-7081-6b5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="27a7-6180-bbe0-9eb9">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="da74-5e15-7081-6b5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27a7-6180-bbe0-9eb9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="c8a1-03ad-af7e-25c5" type="selectionEntryGroup" targetId="8c43-f436-3af1-8ac4">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="8e6a-0273-112c-c089" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="a24d-b243-e2b2-c660" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="8e6a-0273-112c-c089" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a24d-b243-e2b2-c660" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1d6-94ab-9561-2100" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
             </entryLink>
           </entryLinks>
           <costs>

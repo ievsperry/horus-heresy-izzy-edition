@@ -100,9 +100,17 @@ loading. The script prints anything in the doc it could not place.
 - A unit that includes another datasheet's character ("Asdrubael Vect (use his HQ profile and
   wargear)") gets that model, with its kit and its rules.
 
+- Rites of War work in the app, read from their own wording: units a Rite lets take another
+  slot ("may be taken as Troops") are listed there while it is chosen (a Rite that grants Line, or
+  says Compulsory, lets them fill compulsory Troops); "gain the Line sub-type", "may contain up to
+  N models", and special rules a Rite gives or takes away apply while it is chosen. "Must have a
+  Big Mek as its Warlord" leaves only those models able to be the Warlord, and a named Warlord
+  that is not an HQ (a Trygon Prime) is offered the Warlord option under that Rite.
+
 ## Not enforced
 
-- Rite of War effects and limitations are shown as text only.
+- Rite of War limitations other than the Warlord ("no Lords of War", "no more than two Heavy
+  Support choices") and effects that are in-game only (Deep Strike from turn one) are text only.
 - Instinctive Behaviour, Synapse and other in-game rules are text only.
 - Lords of War use the game system's existing 25% points category; nothing
   Tyranid-specific is added to it.

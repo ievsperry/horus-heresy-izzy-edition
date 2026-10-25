@@ -469,6 +469,7 @@ class Builder:
         self.units = {}            # unit name -> shared entry id
         self.shared_entries = ET.Element("sharedSelectionEntries")
         self.shared_groups = ET.Element("sharedSelectionEntryGroups")
+        self.rite_specs = []       # each Rite of War: name, id, effects and limitations
         self.shared_rules = ET.Element("sharedRules")
 
     def official_weapon_names(self):
@@ -1412,6 +1413,14 @@ class Builder:
             for sub in rite_sec["subs"]:
                 rites.append(self.rite_from_text(sub["title"], " ".join(paragraphs(sub["lines"]))))
         if not rites:
+            # "#### Hunter Cadre" straight under "## Rites of War" reads as sections of their own
+            idx = next((i for i, sec in enumerate(self.sections) if sec["title"] == "Rites of War"), None)
+            for sec in self.sections[idx + 1:] if idx is not None else []:
+                text = " ".join(paragraphs(sec["lines"]))
+                if not text.startswith("Requires") or "Benefit:" not in text:
+                    break
+                rites.append(self.rite_from_text(sec["title"], text))
+        if not rites:
             # "**Canoptek Harvest.** Requires ... Benefit: ... Limitation: ..." after "may take one Rite of War"
             for sec in self.sections:
                 idx = next((i for i, l in enumerate(sec["lines"]) if "Rite of War" in l and not l.startswith("**")), None)
@@ -1433,11 +1442,188 @@ class Builder:
                        id=re_id, publicationId=self.pub_id)
                 add_category(r, *RITE_CATEGORY, re_id, primary=True)
                 b = blocks(sub["lines"])
+                self.rite_specs.append({"name": name, "id": re_id, "effects": list_items(b.get("Effects", [])),
+                                        "limits": list_items(b.get("Limitations", []))})
                 add_rule(r, "Effects", " ".join(list_items(b.get("Effects", []))).replace("†", ""), re_id)
                 add_rule(r, "Limitations", " ".join(list_items(b.get("Limitations", []))), re_id)
                 add_cost(r, 0)
 
         # Warlord Traits are picked on the Warlord itself (see add_warlords), not here.
+
+    # ---- Rites of War
+
+    RITE_VERB = r"(?:may|gains?|loses?)\b"
+
+    def rite_units(self, subject):
+        """'Termagant and Hormagaunt units', 'Canoptek Wraiths and Canoptek Scarabs': the datasheets named."""
+        subject = re.sub(r"\s+in a Detachment using this Rite of War.*$", "", subject.strip())
+        found = []
+        parts = [re.sub(r"\s+units?$", "", p.strip()) for p in re.split(r",\s*(?:and\s+)?|\s+and\s+", subject)]
+        tail = parts[-1].split()[-1] if parts and parts[-1] else ""
+        for part in parts:
+            if not part or part.lower().startswith(("every", "any", "all", "these", "units")):
+                continue
+            # "Skorpekh and Ophydian Destroyers": Skorpekh shares the last word
+            shared = f"{part} {tail}" if len(part.split()) == 1 and tail and len(parts[-1].split()) > 1 else None
+            ds = shared and next((d for d in self.datasheets if forms(d["name"]) & forms(shared)), None)
+            ds = ds or next((d for d in self.datasheets if forms(d["name"]) & forms(part)), None)
+            ds = ds or next((d for d in self.datasheets if norm(d["name"]).startswith(norm(part) + " ")
+                             or norm(d["name"]).endswith(" " + norm(part))), None)
+            if ds and ds not in found:
+                found.append(ds)
+        return found
+
+    def rite_effects(self, text):
+        """Split a Rite's effects into (units, verb phrase): 'Pathfinders may be taken as Troops and gain
+        the Line sub-type, and Strike Teams and Pathfinders gain Infiltrate'."""
+        out = []
+        for sentence in re.split(r"(?<=\.)\s+", text.replace("†", "")):
+            units = []
+            for clause in re.split(r",\s+and\s+(?=[A-Z])|;\s*", sentence.strip().rstrip(".")):
+                m = re.search(r"\s(?=%s)" % self.RITE_VERB, clause)
+                if not m:
+                    continue
+                subject, verbs = clause[:m.start()], clause[m.end():]
+                named = self.rite_units(subject) if not re.match(self.RITE_VERB, clause) else []
+                units = named or units
+                for phrase in re.split(r",?\s+(?:and\s+)?(?=%s)|,\s+(?=%s)" % (self.RITE_VERB, self.RITE_VERB), verbs):
+                    out.append((units, phrase.strip()))
+        return out
+
+    def rite_condition(self, parent, rid, kind="atLeast", value=1):
+        el(el(parent, "conditions"), "condition", type=kind, value=value, field="selections", scope="force",
+           childId=rid, shared=True, includeChildSelections=True, includeChildForces=False)
+
+    def apply_rites(self):
+        """Make each Rite of War work in the app: units it lets take another slot, the Line sub-type,
+        bigger units, special rules it gives or takes away, and the Warlord it requires."""
+        links = self.root.find("entryLinks")
+        for rite in self.rite_specs:
+            rid = rite["id"]
+            for units, phrase in self.rite_effects(" ".join(rite["effects"])):
+                for ds in units:
+                    uid = self.units[ds["name"]]
+                    unit = self.shared_entries.find(f"selectionEntry[@id='{uid}']")
+                    if unit is None:
+                        continue
+                    slot = re.match(r"may be taken as (Compulsory )?(Troops|Fast Attack|Elites|Heavy Support)", phrase)
+                    if slot:
+                        self.rite_slot(links, rite, ds, uid, slot.group(2),
+                                       bool(slot.group(1)) or "line sub-type" in norm(" ".join(rite["effects"])))
+                    elif re.match(r"gains? the line sub-type", phrase, re.I):
+                        self.rite_line(unit, rid)
+                    elif re.match(r"may contain up to (\d+) models", phrase) or re.match(r"may be taken in units of up to (\d+)", phrase):
+                        self.rite_size(unit, rid, int(re.search(r"(\d+)", phrase).group(1)))
+                    elif re.match(r"gains? ", phrase):
+                        names = re.sub(r"^gains? (?:the )?", "", phrase)
+                        names = re.sub(r"\s+special rules?.*$", "", names)
+                        for rname in re.split(r"\s+and\s+|,\s*", names):
+                            if "sub-type" not in rname.lower():
+                                self.rite_rule(unit, uid, rid, rname.strip())
+                    elif re.match(r"loses? (?:the )?(.+?) special rule", phrase):
+                        lost = re.match(r"loses? (?:the )?(.+?) special rule", phrase).group(1)
+                        for il in unit.findall("infoLinks/infoLink"):
+                            if norm(il.get("name")) == norm(lost):
+                                m = el(child(il, "modifiers"), "modifier", type="set", field="hidden", value="true")
+                                self.rite_condition(m, rid)
+            for lim in rite["limits"]:
+                self.rite_warlord(rite, lim)
+
+    def rite_slot(self, links, rite, ds, uid, slot, compulsory):
+        rid = rite["id"]
+        existing = next((l for l in links if l.get("targetId") == uid), None)
+        if ds["slot"] == slot and existing is not None:
+            # already in that slot: the Rite lets it fill a compulsory one
+            if compulsory and slot == "Troops":
+                cat, cname, _ = SLOTS["Troops"][1]
+                m = el(child(existing, "modifiers"), "modifier", type="add", field="category", value=cat)
+                self.rite_condition(m, rid)
+            return
+        e = el(links, "entryLink", import_=True, name=ds["name"], hidden=True,
+               id=make_id("rite root", self.faction, rite["name"], ds["name"]), type="selectionEntry", targetId=uid)
+        m = el(child(e, "modifiers"), "modifier", type="set", field="hidden", value="false")
+        self.rite_condition(m, rid)
+        for cat, cname, primary in SLOTS[slot]:
+            if cname.startswith("Compulsory") and not compulsory:
+                continue
+            add_category(e, cat, cname, e.get("id"), primary=primary)
+        add_category(e, *UNIT_CATEGORY, e.get("id"))
+
+    def rite_line(self, unit, rid):
+        cat, cname = TYPE_CATEGORIES["Line"]
+        for entry in [unit] + unit.findall("selectionEntries/selectionEntry"):
+            if any(c.get("targetId") == cat for c in entry.findall("categoryLinks/categoryLink")):
+                continue
+            m = el(child(entry, "modifiers"), "modifier", type="add", field="category", value=cat)
+            self.rite_condition(m, rid)
+
+    def rite_size(self, unit, rid, total):
+        models = unit.findall("selectionEntries/selectionEntry")
+        def bound(me, kind):
+            c = next((c for c in me.findall("constraints/constraint") if c.get("type") == kind and c.get("scope") == "parent"), None)
+            return c
+        def most(me):
+            c = bound(me, "max")
+            return int(float(c.get("value"))) if c is not None else 0
+        main = max(models, key=most, default=None)
+        if main is None or bound(main, "max") is None:
+            return
+        others = sum(int(float(bound(me, "min").get("value"))) for me in models if me is not main and bound(me, "min") is not None)
+        m = el(child(main, "modifiers"), "modifier", type="set", field=bound(main, "max").get("id"), value=total - others)
+        self.rite_condition(m, rid)
+
+    def rite_rule(self, unit, uid, rid, rname):
+        before = len(unit.findall("infoLinks/infoLink"))
+        if any(norm(il.get("name")) == norm(rname) for il in unit.findall("infoLinks/infoLink")):
+            return  # it has the rule already
+        if not self.link_rule(unit, rname, uid + "rite" + rid):
+            self.problems.append(f"Rite of War: no rule '{rname}' to give")
+            return
+        il = unit.findall("infoLinks/infoLink")[before]
+        il.set("hidden", "true")
+        m = el(child(il, "modifiers"), "modifier", type="set", field="hidden", value="false")
+        self.rite_condition(m, rid)
+
+    def rite_warlord(self, rite, lim):
+        """'Requires a Cryptek, Technomancer or Plasmancer as Warlord': while the Rite is chosen, only
+        those models may be the Warlord."""
+        m = re.search(r"(?:must have an? |Requires (?:an? )?)(.+?) as (?:its )?Warlord", lim)
+        if not m or m.group(1).lower().startswith("any"):
+            return
+        allowed_units, allowed_rules = [], []
+        for name in re.split(r",\s*|\s+or\s+", m.group(1)):
+            name = re.sub(r"^(?:an?|the)\s+", "", name.strip())
+            rule = re.search(r"\bwith (.+)$", name)
+            if rule and not re.search(r"\bwings\b", rule.group(1)):
+                allowed_rules.append(rule.group(1))
+                continue
+            name = re.sub(r"\s+with .+$", "", name)
+            found = self.rite_units(name) or self.rite_units(re.sub(r"\s+on .+$", "", name))
+            allowed_units += found
+        holders = []
+        for ds in self.datasheets:
+            unit = self.shared_entries.find(f"selectionEntry[@id='{self.units[ds['name']]}']")
+            for me in (unit.findall("selectionEntries/selectionEntry") if unit is not None else []):
+                link = next((l for l in me.findall("entryLinks/entryLink") if l.get("targetId") == WARLORD_ENTRY), None)
+                if link is not None:
+                    ok = ds in allowed_units or any(any(norm(r).startswith(norm(a)) for r in ds["rules"]) for a in allowed_rules)
+                    holders.append((link, ok))
+        for ds in allowed_units:
+            unit = self.shared_entries.find(f"selectionEntry[@id='{self.units[ds['name']]}']")
+            models = unit.findall("selectionEntries/selectionEntry") if unit is not None else []
+            if models and not any(l.get("targetId") == WARLORD_ENTRY for me in models for l in me.findall("entryLinks/entryLink")):
+                # "Requires a Trygon Prime as Warlord": it may be the Warlord while the Rite is chosen
+                me = next((me for me in models if forms(me.get("name")) & forms(ds["name"])), models[0])
+                holders.append((self.give_warlord(me, rite=rite["id"]), True))
+        if not any(ok for _, ok in holders):
+            self.problems.append(f"Rite of War {rite['name']}: no model in this list may be its Warlord ({m.group(1)})")
+            return
+        for link, ok in holders:
+            if ok:
+                continue
+            cmax = next(c for c in link.findall("constraints/constraint") if c.get("type") == "max")
+            mod = el(child(link, "modifiers"), "modifier", type="set", field=cmax.get("id"), value=0)
+            self.rite_condition(mod, rite["id"])
 
     # ---- warlords
 
@@ -1476,8 +1662,7 @@ class Builder:
         """Character models in HQ units, and any model whose datasheet says it must be your Warlord, may
         be the Warlord (the game system's Warlord entry allows exactly one per army). A Warlord must pick
         one Warlord Trait."""
-        traits = self.warlord_traits_group()
-        kap = next((eid for aname, eid, _ in getattr(self, "artefacts", []) if "finkin" in norm(aname)), None)
+        self.warlord_traits_group()
         for ds in self.datasheets:
             unit = self.shared_entries.find(f"selectionEntry[@id='{self.units[ds['name']]}']")
             if unit is None:
@@ -1496,35 +1681,49 @@ class Builder:
                 elif not eligible:
                     eligible = [next((me for me in models if forms(me.get("name")) & forms(ds["name"])), models[0])]
             for me in eligible:
-                mid = me.get("id")
-                links = child(me, "entryLinks")
-                wl = el(links, "entryLink", import_=True, name="Warlord", hidden=False, id=make_id(mid, "warlord"),
-                        type="selectionEntry", targetId=WARLORD_ENTRY)
-                add_constraint(wl, "max", 1, make_id(mid, "warlord") + "max")
-                if must:
-                    add_constraint(wl, "min", 1, make_id(mid, "warlord") + "min")
-                if not traits:
-                    continue
-                tl = el(links, "entryLink", import_=True, name="Warlord Traits", hidden=False,
-                        id=make_id(mid, "warlord traits"), type="selectionEntryGroup", targetId=traits)
-                tmin = make_id(mid, "warlord traits", "min")
-                tmax = make_id(mid, "warlord traits", "max")
-                mods = el(tl, "modifiers")
-                hide = el(mods, "modifier", type="set", field="hidden", value="true")
-                el(el(hide, "conditions"), "condition", type="equalTo", value=0, field="selections", scope=mid,
-                   childId=WARLORD_ENTRY, shared=True, includeChildSelections=False, includeChildForces=False)
-                need = el(mods, "modifier", type="set", field=tmin, value=1)
-                el(el(need, "conditions"), "condition", type="atLeast", value=1, field="selections", scope=mid,
-                   childId=WARLORD_ENTRY, shared=True, includeChildSelections=False, includeChildForces=False)
-                if kap:  # "If the bearer is your Warlord, he may choose two generic Warlord Traits"
-                    two = el(mods, "modifier", type="set", field=tmax, value=2)
-                    el(el(two, "conditions"), "condition", type="atLeast", value=1, field="selections", scope=mid,
-                       childId=kap, shared=True, includeChildSelections=True, includeChildForces=False)
-                cons = child(tl, "constraints")
-                el(cons, "constraint", type="min", value=0, field="selections", scope="parent", shared=True,
-                   id=tmin, percentValue=False, includeChildSelections=True, includeChildForces=False)
-                el(cons, "constraint", type="max", value=1, field="selections", scope="parent", shared=True,
-                   id=tmax, percentValue=False, includeChildSelections=True, includeChildForces=False)
+                self.give_warlord(me, must)
+
+    def give_warlord(self, me, must=False, rite=None):
+        """The Warlord option on a model, and the Warlord Traits it must pick from once it is the Warlord.
+        With a Rite of War, both show only while that Rite is chosen."""
+        traits = make_id(make_id("army", self.faction), "warlord") if self.section("Warlord Traits") else None
+        kap = next((eid for aname, eid, _ in getattr(self, "artefacts", []) if "finkin" in norm(aname)), None)
+        mid = me.get("id")
+        links = child(me, "entryLinks")
+        wl = el(links, "entryLink", import_=True, name="Warlord", hidden=bool(rite), id=make_id(mid, "warlord"),
+                type="selectionEntry", targetId=WARLORD_ENTRY)
+        add_constraint(wl, "max", 1, make_id(mid, "warlord") + "max")
+        if must:
+            add_constraint(wl, "min", 1, make_id(mid, "warlord") + "min")
+        if rite:
+            m = el(child(wl, "modifiers"), "modifier", type="set", field="hidden", value="false")
+            self.rite_condition(m, rite)
+            m = el(child(wl, "modifiers"), "modifier", type="set", value=0,
+                   field=make_id(make_id(mid, "warlord") + "max", "max"))
+            self.rite_condition(m, rite, kind="equalTo", value=0)
+        if not traits:
+            return wl
+        tl = el(links, "entryLink", import_=True, name="Warlord Traits", hidden=False,
+                id=make_id(mid, "warlord traits"), type="selectionEntryGroup", targetId=traits)
+        tmin = make_id(mid, "warlord traits", "min")
+        tmax = make_id(mid, "warlord traits", "max")
+        mods = el(tl, "modifiers")
+        hide = el(mods, "modifier", type="set", field="hidden", value="true")
+        el(el(hide, "conditions"), "condition", type="equalTo", value=0, field="selections", scope=mid,
+           childId=WARLORD_ENTRY, shared=True, includeChildSelections=False, includeChildForces=False)
+        need = el(mods, "modifier", type="set", field=tmin, value=1)
+        el(el(need, "conditions"), "condition", type="atLeast", value=1, field="selections", scope=mid,
+           childId=WARLORD_ENTRY, shared=True, includeChildSelections=False, includeChildForces=False)
+        if kap:  # "If the bearer is your Warlord, he may choose two generic Warlord Traits"
+            two = el(mods, "modifier", type="set", field=tmax, value=2)
+            el(el(two, "conditions"), "condition", type="atLeast", value=1, field="selections", scope=mid,
+               childId=kap, shared=True, includeChildSelections=True, includeChildForces=False)
+        cons = child(tl, "constraints")
+        el(cons, "constraint", type="min", value=0, field="selections", scope="parent", shared=True,
+           id=tmin, percentValue=False, includeChildSelections=True, includeChildForces=False)
+        el(cons, "constraint", type="max", value=1, field="selections", scope="parent", shared=True,
+           id=tmax, percentValue=False, includeChildSelections=True, includeChildForces=False)
+        return wl
 
     # ---- matching
 
@@ -2959,6 +3158,7 @@ class Builder:
         self.add_warlords()
         self.build_army_entry()
         self.build_entry_links()
+        self.apply_rites()
         self.root.append(self.shared_entries)
         if len(self.shared_groups):
             self.root.append(self.shared_groups)
