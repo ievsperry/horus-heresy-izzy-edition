@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -1545,15 +1545,15 @@
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">60"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2D6</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (3"), Mishap</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">D6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5"), Mishap</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Blast" id="9671-5c4f-9112-9537" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+        <infoLink name="Blast" id="41f7-44f2-e97f-3de3" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Large Blast (3&quot;)" />
+            <modifier type="set" field="name" value="Large Blast (5&quot;)" />
           </modifiers>
         </infoLink>
         <infoLink name="Mishap" id="be17-405b-795c-7f6a" hidden="false" targetId="d1d2-4a94-ee76-f561" type="rule" />
@@ -2906,7 +2906,7 @@
       <profiles>
         <profile name="1" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d99d-ce8f-f1a5-cf73">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Mishap Result: Warp Core Collapse!, Rules Effect: The firer and his entire unit suffer a Strength 6 AP4 hit with the Deflagrate special rule. The Shokk Attack Gun may not be fired again for the remainder of the battle.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Mishap Result: Warp Core Collapse!, Rules Effect: The firer and every model in the entire unit suffer a Strength 6 AP4 hit with the Deflagrate special rule. The Shokk Attack Gun may not be fired again for the remainder of the battle.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2915,7 +2915,7 @@
       <profiles>
         <profile name="2" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="fb68-5a55-2b16-d956">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Mishap Result: Polarity Reversed, Rules Effect: Remove the firer from play and immediately place him in base contact with the target enemy unit. He counts as having successfully Charged and becomes Locked in combat, but begins the combat Pinned.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Mishap Result: Polarity Reversed, Rules Effect: Remove the firer from play and immediately place him in base contact with the target enemy unit. The firer counts as having successfully Charged and becomes Locked in combat, but begins the combat Pinned.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2924,7 +2924,7 @@
       <profiles>
         <profile name="3" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="c838-9692-8f43-b936">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Mishap Result: Snotling Rain, Rules Effect: The original attack causes no damage. Instead place a Massive Blast (7") template centred on the battlefield. Every unit touched by the template must immediately take a Pinning test.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Mishap Result: Snotling Rain, Rules Effect: The original attack causes no damage. Instead place a Massive Blast (7") template centered on the target. Every unit touched by the template must immediately take a Pinning test.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2951,7 +2951,7 @@
       <profiles>
         <profile name="6" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="bfc4-ffe8-f3f5-e3a7">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Mishap Result: Annihilation Vortex, Rules Effect: The attack resolves at Strength 10 AP1 and gains Torrent and Instant Death. The target unit must immediately take a Morale check at -2 Leadership.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Mishap Result: Annihilation Vortex, Rules Effect: The attack resolves at Strength 10 AP1 and gains Instant Death. The target unit must immediately take a Morale check at -2 Leadership.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -17476,7 +17476,7 @@
       <description>Any unit that suffers one or more unsaved Wounds from this weapon suffers −1 WS until the end of the next Assault phase. Power: Kind, Phase, Effect. Da Jump: Psychic power, Movement, D3 roll of 1. Instead of moving during the Movement phase, select one friendly Ork Infantry unit within 12". Remove that unit from the battlefield and immediately redeploy it using the Deep Strike special rules. The redeployed unit gains Fleet (2) until the end of the turn. If the Psychic check is failed, the unit scatters D6" and suffers D6 Strength 4 AP – hits.. Waaagh! Pulse: Psychic power, Shooting, D3 roll of 2. Instead of making a Shooting Attack, all friendly Ork units within 12" gain Furious Charge (2) and Dakka! (5+) until the beginning of the controlling player's next turn. If the Psychic check is failed, all affected units become Pinned.. Green Fury: Psychic power, Shooting, D3 roll of 3. Instead of making a Shooting Attack, select one friendly Ork Infantry unit within 12". That unit gains Counter-Attack (1), Crusader and Fearless until the beginning of the controlling player's next turn. If the Psychic check is failed, the affected unit suffers −1 Weapon Skill until the beginning of the controlling player's next turn.. Roll a D3: 1 Green Lightning, 2 Warphead Blast, 3 Fists of Gork. Weapon: Range, Str, AP, Type. Green Lightning: 18", 7, 4, Assault D3, Shock Pulse, Psychic Focus. Warphead Blast: 24", 8, 3, Heavy 1, Large Blast (5"), Gets Hot, Psychic Focus. Fists of Gork: –, x2, 2, Melee, Brutal (2), Psychic Focus.</description>
     </rule>
     <rule name="Mishap" id="d1d2-4a94-ee76-f561" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>When firing a Shokk Attack Gun, roll 2D6 to determine the weapon's Strength characteristic. If the result contains any Double, resolve the attack normally and then immediately roll a D6 on the following Mishap Table. D6: Mishap Result, Rules Effect. 1: Warp Core Collapse!, The firer and his entire unit suffer a Strength 6 AP4 hit with the Deflagrate special rule. The Shokk Attack Gun may not be fired again for the remainder of the battle.. 2: Polarity Reversed, Remove the firer from play and immediately place him in base contact with the target enemy unit. He counts as having successfully Charged and becomes Locked in combat, but begins the combat Pinned.. 3: Snotling Rain, The original attack causes no damage. Instead place a Massive Blast (7") template centred on the battlefield. Every unit touched by the template must immediately take a Pinning test.. 4: Ear-Biting Madness, If the target is a Vehicle, it immediately suffers a Crew Shaken result. If the target is Infantry, Cavalry or a Dreadnought, the target gains Blind and Concussive (1) until the end of the next player turn.. 5: Subatomic Materialization, The attack resolves at Strength 10 and gains Fleshbane and Sunder. After resolving the attack, the firer suffers one automatic Wound with no saves of any kind allowed.. 6: Annihilation Vortex, The attack resolves at Strength 10 AP1 and gains Torrent and Instant Death. The target unit must immediately take a Morale check at -2 Leadership..</description>
+      <description>When firing a Shokk Attack Gun, roll 2D6 to determine the weapon's Strength characteristic and a D6 to determine its AP. If the result contains any Double, resolve the attack normally and then immediately roll a D6 on the following Mishap Table. D6: Mishap Result, Rules Effect. 1: Warp Core Collapse!, The firer and every model in the entire unit suffer a Strength 6 AP4 hit with the Deflagrate special rule. The Shokk Attack Gun may not be fired again for the remainder of the battle.. 2: Polarity Reversed, Remove the firer from play and immediately place him in base contact with the target enemy unit. The firer counts as having successfully Charged and becomes Locked in combat, but begins the combat Pinned.. 3: Snotling Rain, The original attack causes no damage. Instead place a Massive Blast (7") template centered on the target. Every unit touched by the template must immediately take a Pinning test.. 4: Ear-Biting Madness, If the target is a Vehicle, it immediately suffers a Crew Shaken result. If the target is Infantry, Cavalry or a Dreadnought, the target gains Blind and Concussive (1) until the end of the next player turn.. 5: Subatomic Materialization, The attack resolves at Strength 10 and gains Fleshbane and Sunder. After resolving the attack, the firer suffers one automatic Wound with no saves of any kind allowed.. 6: Annihilation Vortex, The attack resolves at Strength 10 AP1 and gains Instant Death. The target unit must immediately take a Morale check at -2 Leadership..</description>
     </rule>
     <rule name="Squig Prodder" id="c04a-b927-5f75-4630" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>A Squig Prodder is a vicious shock stave used to drive attack squigs and terrified Gretchin into uncontrollable aggression. Friendly Gretchin units within 6" of one or more models equipped with a squig prodder gain Furious Charge (1).</description>
