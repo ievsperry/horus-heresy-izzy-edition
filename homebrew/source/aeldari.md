@@ -304,7 +304,7 @@ Every Asuryani model has the Asuryani Sub-type, which grants Legacies of the Fal
 
 ## World-Runes
 
-World-Runes are the Asuryani equivalent of Rites of War: each is chosen for a Detachment at army selection and applies its Effects and Limitations to the models and units in that Detachment.
+World-Runes are the Asuryani equivalent of Rites of War, and the Horus Heresy counterpart of a Craftworld: Asuryani Detachments have access to them. Each is chosen for a Detachment at army selection and applies its Effects and Limitations to the models and units in that Detachment.
 
 **Gaining access:** Any Detachment with the Aeldari (Asuryani) Faction may use a World-Rune if it meets at least one of these conditions:
 

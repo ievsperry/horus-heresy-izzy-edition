@@ -156,6 +156,8 @@ loading. The script prints anything in the doc it could not place.
 - "If the army includes any Phoenix Lord models, one of them must be the Warlord" (on a "### X (type)")
   locks every other model's Warlord option while the army has a model of that type. A type whose models
   can never be the Warlord (the Avatar of Khaine, a Daemon Primarch) changes nothing.
+- The World-Rune pick works like a Craftworld: it only shows (and may only be taken) in a detachment
+  with an Asuryani unit.
 - A psychic weapon named "X (Psychic Weapon)" is kept apart from a weapon called X but shown as plain X
   (the Runes of Twilight Executioner beside the Exarch's executioner).
 

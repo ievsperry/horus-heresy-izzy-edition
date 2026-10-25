@@ -1734,6 +1734,15 @@ class Builder:
             g = el(groups, "selectionEntryGroup", name=labels.pop() if len(labels) == 1 else "Rite of War",
                    hidden=False, id=rid)
             add_constraint(g, "max", 1, rid + "max")
+            if g.get("name") == "World-Rune":
+                # the Asuryani take a World-Rune as they would a Craftworld; other forces never see it
+                units = [self.units[ds["name"]] for ds in self.datasheets if any("Asuryani" in t for t in ds["types"])]
+                for field, value in (("hidden", "true"), (make_id(rid + "max", "max"), 0)):
+                    mod = el(child(g, "modifiers"), "modifier", type="set", field=field, value=value)
+                    conds = el(el(el(mod, "conditionGroups"), "conditionGroup", type="and"), "conditions")
+                    for uid in units:
+                        el(conds, "condition", type="equalTo", value=0, field="selections", scope="force",
+                           childId=uid, shared=True, includeChildSelections=True, includeChildForces=False)
             ses = el(g, "selectionEntries")
             for sub in rites:
                 if not sub["title"].startswith("Rite of War: "):
