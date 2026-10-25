@@ -47,7 +47,8 @@ loading. The script prints anything in the doc it could not place.
   per-model and whole-unit upgrades, and model upgrades such as the Neurothrope.
   "Each type only once" limits are enforced.
 - Dedicated Transports: units that fit in a Mycetic Spore or Tyrannocyte (20
-  Infantry models or one Monstrous model) may take one.
+  Infantry models or one Monstrous model) may take one, offered only while they fit. Units the
+  Dedicated Transports section says "may not take" one (spores, winged units) never get it.
 - The army selection: hive fleet (with its rules and advanced reaction), Rite of War,
   and the army-wide advanced reaction.
 - Warlords: every Character model in an HQ unit (or, in an HQ with no Character, its own model, such

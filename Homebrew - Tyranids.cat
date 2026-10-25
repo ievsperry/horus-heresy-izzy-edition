@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -3917,32 +3917,6 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="070d-2577-0943-9e41">
-          <modifiers>
-            <modifier type="set" field="a700-c500-746e-f617" value="0">
-              <conditions>
-                <condition type="greaterThan" value="20" field="selections" scope="581e-43d6-ff7b-bfae" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a700-c500-746e-f617" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Mycetic Spore" hidden="false" id="d26e-57b1-e19a-b05d" type="selectionEntry" targetId="d9ef-03cf-c92b-5b7d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdee-96a1-ef16-7194" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Tyrannocyte" hidden="false" id="d03d-b46c-2e62-d36d" type="selectionEntry" targetId="d5b3-9396-c205-1800">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e816-4b5d-072d-57b3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="90" />
       </costs>
@@ -4541,7 +4515,7 @@
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="a3d3-da2a-cea5-b63d" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
-        <infoLink name="Deep Strike" id="52bd-04e5-8e66-8c4d" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
+        <infoLink name="Subterranean Assault" id="6e4f-4c02-fe03-2bb0" hidden="false" targetId="33d4-d46d-7f47-3ad2" type="rule" />
         <infoLink name="Hive Fleet (X)" id="2e56-d7b9-21f7-1307" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
         <infoLink name="Shadow in the Warp" id="3045-3252-901c-db98" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
         <infoLink name="Synapse Creature" id="6186-5ead-13a4-0607" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
@@ -5259,32 +5233,6 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="729e-8cbd-033c-6335">
-          <modifiers>
-            <modifier type="set" field="122f-caf4-334f-3449" value="0">
-              <conditions>
-                <condition type="greaterThan" value="1" field="selections" scope="86b3-1ec3-b38e-bca5" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="122f-caf4-334f-3449" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Mycetic Spore" hidden="false" id="7620-e283-5c45-52fe" type="selectionEntry" targetId="d9ef-03cf-c92b-5b7d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6dc-4d82-059d-024b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Tyrannocyte" hidden="false" id="151e-ad67-2061-d2f9" type="selectionEntry" targetId="d5b3-9396-c205-1800">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a002-0940-eae4-430e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="95" />
       </costs>
@@ -10231,30 +10179,6 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="dc6d-20e1-bfbd-a180">
-          <modifiers>
-            <modifier type="set" field="4122-f181-b42e-0a02" value="0">
-              <conditions>
-                <condition type="greaterThan" value="20" field="selections" scope="1c24-3df3-eb3c-5a29" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4122-f181-b42e-0a02" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Mycetic Spore" hidden="false" id="00ac-730c-723e-4cf6" type="selectionEntry" targetId="d9ef-03cf-c92b-5b7d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1aef-d868-a4e0-519a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Tyrannocyte" hidden="false" id="fdd1-883b-1916-6109" type="selectionEntry" targetId="d5b3-9396-c205-1800">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecb0-9e2e-aee9-00e0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -10436,32 +10360,6 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="13e0-0bd6-8134-41a3">
-          <modifiers>
-            <modifier type="set" field="1e51-b287-cfa3-6d13" value="0">
-              <conditions>
-                <condition type="greaterThan" value="1" field="selections" scope="20ec-d5d5-2f4e-6c34" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e51-b287-cfa3-6d13" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Mycetic Spore" hidden="false" id="26fe-09e2-2918-af16" type="selectionEntry" targetId="d9ef-03cf-c92b-5b7d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d04-bd35-e8a7-de86" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Tyrannocyte" hidden="false" id="bc52-68b0-0146-da46" type="selectionEntry" targetId="d5b3-9396-c205-1800">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56cb-9a2c-22b1-a6ac" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="155" />
       </costs>
@@ -10617,32 +10515,6 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="f19d-dde7-e9d5-24cf">
-          <modifiers>
-            <modifier type="set" field="11b9-034d-7e55-9f1d" value="0">
-              <conditions>
-                <condition type="greaterThan" value="1" field="selections" scope="c31d-6f01-1f8d-56cc" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11b9-034d-7e55-9f1d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Mycetic Spore" hidden="false" id="af66-d821-9fe8-e356" type="selectionEntry" targetId="d9ef-03cf-c92b-5b7d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a438-9733-ad26-d171" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Tyrannocyte" hidden="false" id="2121-ee14-f3c9-37d8" type="selectionEntry" targetId="d5b3-9396-c205-1800">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e7f-6585-7773-df90" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="155" />
       </costs>
@@ -10699,32 +10571,7 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="512b-eec4-655b-155d">
-          <modifiers>
-            <modifier type="set" field="bbb7-c4e5-55a5-1820" value="0">
-              <conditions>
-                <condition type="greaterThan" value="20" field="selections" scope="dfc0-1afd-d6f9-db2c" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbb7-c4e5-55a5-1820" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Mycetic Spore" hidden="false" id="8041-95bc-16a5-3ac3" type="selectionEntry" targetId="d9ef-03cf-c92b-5b7d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8eb-1902-0a4f-18db" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Tyrannocyte" hidden="false" id="2706-5dd1-e2af-f28d" type="selectionEntry" targetId="d5b3-9396-c205-1800">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd95-bfb0-0a33-82ed" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <selectionEntryGroups />
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
@@ -10778,32 +10625,7 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="cf00-2504-76ba-fdad">
-          <modifiers>
-            <modifier type="set" field="309e-04c4-ce52-bffb" value="0">
-              <conditions>
-                <condition type="greaterThan" value="20" field="selections" scope="2dbe-25d4-1eb9-e2f1" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="309e-04c4-ce52-bffb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Mycetic Spore" hidden="false" id="4dfc-d776-cb47-fd79" type="selectionEntry" targetId="d9ef-03cf-c92b-5b7d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15d3-be26-2bd8-7dd0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Tyrannocyte" hidden="false" id="6b28-848e-df6b-0cf3" type="selectionEntry" targetId="d5b3-9396-c205-1800">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="544c-0fd6-0868-ef5b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <selectionEntryGroups />
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
@@ -10849,7 +10671,7 @@
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="e45a-a450-15da-ab72" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
-        <infoLink name="Deep Strike" id="a3d7-7dc5-9add-5bdc" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
+        <infoLink name="Subterranean Assault" id="a7d5-873d-37a6-d5ca" hidden="false" targetId="33d4-d46d-7f47-3ad2" type="rule" />
         <infoLink name="Hammer of Wrath (X)" id="09b4-2dc9-462d-2a11" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (1)" />
@@ -12030,30 +11852,6 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="e960-9ce9-bf20-de74">
-          <modifiers>
-            <modifier type="set" field="1fcf-e89e-512c-35c9" value="0">
-              <conditions>
-                <condition type="greaterThan" value="20" field="selections" scope="6ef7-ddc4-e862-83e8" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fcf-e89e-512c-35c9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Mycetic Spore" hidden="false" id="09d3-fdc0-6013-ef4c" type="selectionEntry" targetId="d9ef-03cf-c92b-5b7d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f26-b5ac-ab30-97b8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Tyrannocyte" hidden="false" id="b665-9bef-8667-f9ad" type="selectionEntry" targetId="d5b3-9396-c205-1800">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf1a-f1b4-08eb-d302" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -12108,32 +11906,7 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="9db4-7ead-0db9-b2ea">
-          <modifiers>
-            <modifier type="set" field="8fe1-2683-bda4-5850" value="0">
-              <conditions>
-                <condition type="greaterThan" value="20" field="selections" scope="9063-cd44-1d65-fa35" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fe1-2683-bda4-5850" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Mycetic Spore" hidden="false" id="8f9a-147f-ac11-e5a5" type="selectionEntry" targetId="d9ef-03cf-c92b-5b7d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2b4-b18f-c388-9789" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Tyrannocyte" hidden="false" id="e522-0024-323f-b99b" type="selectionEntry" targetId="d5b3-9396-c205-1800">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c24-7b81-2bbd-43e2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <selectionEntryGroups />
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
@@ -13603,7 +13376,7 @@
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="14f3-0f42-8764-faab" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
-        <infoLink name="Deep Strike" id="d0ae-b908-d299-e7e5" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
+        <infoLink name="Subterranean Assault" id="41ae-03e8-5c49-2c8f" hidden="false" targetId="33d4-d46d-7f47-3ad2" type="rule" />
         <infoLink name="Hive Fleet (X)" id="e083-cdb6-c752-c351" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
         <infoLink name="Instinctive Behaviour (X)" id="d1d2-b945-4e6a-8061" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
           <modifiers>
@@ -14232,32 +14005,6 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="8d67-7822-383d-9647">
-          <modifiers>
-            <modifier type="set" field="8ec2-3f8d-1d02-d91c" value="0">
-              <conditions>
-                <condition type="greaterThan" value="1" field="selections" scope="4fa6-8cfc-961e-bd1f" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ec2-3f8d-1d02-d91c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Mycetic Spore" hidden="false" id="34a5-03bc-6e31-0468" type="selectionEntry" targetId="d9ef-03cf-c92b-5b7d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9561-3948-e183-175c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Tyrannocyte" hidden="false" id="0621-8312-1060-961a" type="selectionEntry" targetId="d5b3-9396-c205-1800">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="241c-82fb-5112-cc73" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70" />
       </costs>
@@ -14744,7 +14491,7 @@
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="8350-808b-6ff1-68a3" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
-        <infoLink name="Deep Strike" id="2aaa-dd24-145e-8dac" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
+        <infoLink name="Subterranean Assault" id="da9b-72b9-4a25-b850" hidden="false" targetId="33d4-d46d-7f47-3ad2" type="rule" />
         <infoLink name="Hive Fleet (X)" id="9551-68cf-b8c4-be8b" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
         <infoLink name="Instinctive Behaviour (X)" id="73be-d479-46b2-4cd2" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
           <modifiers>

@@ -559,7 +559,7 @@ _The ground shakes, the earth splits, and the swarm erupts from below, burrowing
 
 **Special Rules**
 
-- Deep Strike
+- Subterranean Assault
 - Hive Fleet (X)
 - Shadow in the Warp
 - Subterranean Tunnel (as Trygon)
@@ -1319,6 +1319,8 @@ _A floating synapse beast wreathed in toxic spores, which drifts across the batt
 
 Tyranid transports are living organisms that carry broods down from orbit, so they are Infantry with the Monstrous and Transport sub-types rather than having an Armour Value profile.
 
+Spore Mines, Meiotic Spores, Mucolid Spores, Sporocysts and the units that always have wings (Gargoyles, Sky-Slasher Swarms, Tyranid Shrikes, Winged Tyranid Primes, the Parasite of Mortrex, Harpies and Hive Crones) may not take a Mycetic Spore or Tyrannocyte.
+
 ### Mycetic Spore — 40 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -1593,7 +1595,7 @@ _A brood of specialised Raveners led by a Prime, bred to tunnel beneath enemy li
 **Special Rules**
 
 - Burrow: instead of moving in your Movement phase, the unit may burrow. Remove it from the battlefield; at the start of your next Movement phase it arrives by Deep Strike without a Reserves roll. A unit that arrives this way may still charge that turn
-- Deep Strike
+- Subterranean Assault
 - Distend Dorsal Sac (Venomspitter): once per game, before shooting, the Venomspitter's venom bolt gains Rending (5+) and +1 shot, and its range becomes 18" until the end of the phase
 - Hammer of Wrath (1)
 - Hive Fleet (X)
@@ -1959,7 +1961,7 @@ _A four-armed hunter bred to leap upon the enemy's champions and war machines an
 
 **Special Rules**
 
-- Deep Strike
+- Subterranean Assault
 - Hive Fleet (X)
 - Instinctive Behaviour (Feed)
 - Terror from the Deep: when the Mawloc arrives by Deep Strike, it may be placed on top of an enemy unit. Place a Large Blast (5") marker where it will land; every model under it suffers a hit at Strength 6, AP 2. Enemy models are then moved the minimum distance to make room, and the Mawloc does not scatter†
@@ -2147,7 +2149,7 @@ _A Carnifex bred for siege warfare, its claws grown into massive bone wrecking-b
 
 **Special Rules**
 
-- Deep Strike
+- Subterranean Assault
 - Hive Fleet (X)
 - Instinctive Behaviour (Feed)
 - Subterranean Tunnel: when the Trygon arrives by Deep Strike, one friendly Tyranid Infantry unit in Reserves may arrive at the same time, placed wholly within 6" of it without scattering†

@@ -3104,8 +3104,15 @@ class Builder:
             return
         transports = [ds for ds in transports if ds["slot"] == "Dedicated Transports"]
         cap = 20
+        # "Spore Mines, ... and the units that always have wings (Gargoyles, ...) may not take a Mycetic Spore"
+        barred = set()
+        for ln in (self.section("Dedicated Transports") or {"lines": []})["lines"]:
+            m = re.search(r"([A-Z][^.]*?) may not take an? ", ln)
+            if m:
+                for part in re.split(r",\s*(?:and\s+)?|\s+and\s+", re.sub(r"[()]", ", ", m.group(1))):
+                    barred |= forms(re.sub(r"^the\s+", "", part.strip(), flags=re.I))
         for ds in self.datasheets:
-            if ds["slot"] in ("Dedicated Transports", "Lords of War"):
+            if ds["slot"] in ("Dedicated Transports", "Lords of War") or forms(ds["name"]) & barred:
                 continue
             types = " ".join(ds["types"])
             if "Gargantuan" in types or "Infantry" not in types or "Transport" in types:
