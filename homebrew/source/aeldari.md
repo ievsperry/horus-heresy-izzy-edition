@@ -443,7 +443,7 @@ World-Runes are the Asuryani equivalent of Rites of War: each is chosen for a De
 - The Detachment cannot include more Psyker units than non-Psyker units.
 - Any unit that suffers Perils of the Warp from a Psychic check is immediately Pinned. This overrides Unit Types that would normally ignore Pinning (such as Cavalry, or a type granting Fearless), but cannot affect units without a Leadership Characteristic.
 
-## Aspect Shrine Wargear
+## Aspect Shrines
 
 An Exarch or Autarch must select one Aspect Shrine upgrade, at the cost listed on its own profile, and gains all of that Path's Special Rules, Wargear, Unit Types, Sub-types, and Characteristic changes.
 
@@ -458,7 +458,12 @@ May be selected by a single Exarch in a Detachment.
 - **Special Rules:** Aspect Shrine (Dark Reaper), Fast Shot, Inescapable Accuracy, Relentless.
 - **Wargear:** exchanges Aspect Armour for Heavy Aspect Armour (if not already equipped) and gains a Reaper Launcher (with Starswarm, Starshot, and Starhawk Missiles) at no cost.
 
-- May replace its Reaper Launcher with one of the following: Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) (+10 points), Shuriken Cannon (Free), Tempest Launcher (+20 points).
+| Option | Cost |
+| --- | --- |
+| May replace its Reaper Launcher with one of the following: |  |
+| – Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | +10 points |
+| – Shuriken Cannon | Free |
+| – Tempest Launcher | +20 points |
 
 ### Aspect Shrine: Dire Avenger
 
@@ -467,8 +472,14 @@ May be selected by up to three Exarchs in a Detachment.
 - **Special Rules:** Aspect Shrine (Dire Avenger), Feel No Pain (5+), Flexible Tactics.
 - **Wargear:** gains an Augury Scanner, Shuriken Pistol, and Twin-linked Avenger Catapult at no cost.
 
-- May replace its Twin-linked Avenger Catapult with one of the following: Diresword (+25 points), Power Weapon (+10 points).
-- Or may replace its Twin-linked Avenger Catapult and Shuriken Pistol with one of the following: Diresword and Improved Forceshield (+35 points), Power Weapon and Improved Forceshield (+20 points).
+| Option | Cost |
+| --- | --- |
+| May replace its Twin-linked Avenger Catapult with one of the following: |  |
+| – Diresword | +25 points |
+| – Power Weapon | +10 points |
+| Or may replace its Twin-linked Avenger Catapult and Shuriken Pistol with one of the following: |  |
+| – Diresword and Improved Forceshield | +35 points |
+| – Power Weapon and Improved Forceshield | +20 points |
 
 ### Aspect Shrine: Fire Dragon
 
@@ -477,7 +488,11 @@ May be selected by up to two Exarchs in a Detachment.
 - **Special Rules:** Aspect Shrine (Fire Dragon), Crack Shot, Wrecker.
 - **Wargear:** exchanges Aspect Armour for Heavy Aspect Armour (if not already equipped) and gains Melta Bombs and a Fusion Gun at no cost.
 
-- May exchange its Fusion Gun for one of the following: Firepike (+15 points), Khaine's Fury (Free).
+| Option | Cost |
+| --- | --- |
+| May exchange its Fusion Gun for one of the following: |  |
+| – Firepike | +15 points |
+| – Khaine's Fury | Free |
 
 ### Aspect Shrine: Howling Banshee
 
@@ -486,7 +501,12 @@ May be selected by up to two Exarchs in a Detachment.
 - **Special Rules:** Acrobatic, Aspect Shrine (Howling Banshee), Fear (1), Fleet (2), War Shout.
 - **Wargear:** gains a Banshee Mask, Power Sword, and Shuriken Pistol at no cost.
 
-- May exchange its Power Sword for one of the following: Executioner (+10 points), Triskele (Free), Two Mirrorswords (+20 points).
+| Option | Cost |
+| --- | --- |
+| May exchange its Power Sword for one of the following: |  |
+| – Executioner | +10 points |
+| – Triskele | Free |
+| – Two Mirrorswords | +20 points |
 
 ### Aspect Shrine: Shadow Spectre
 
@@ -495,7 +515,11 @@ May be selected by a single Exarch in a Detachment.
 - **Special Rules:** Aspect Shrine (Shadow Spectre), Fear (1), Relentless, Shadow of Death, Shrouded (4+).
 - **Wargear:** exchanges Aspect Armour for Heavy Aspect Armour (if not already equipped) and gains Haywire Grenades, a Prism Rifle, and a Spectre Jet Pack at no cost.
 
-- May exchange its Prism Rifle for one of the following: Haywire Launcher (+5 points), Prism Blaster (+10 points).
+| Option | Cost |
+| --- | --- |
+| May exchange its Prism Rifle for one of the following: |  |
+| – Haywire Launcher | +5 points |
+| – Prism Blaster | +10 points |
 
 ### Aspect Shrine: Shining Spear
 
@@ -505,7 +529,11 @@ May be selected by a single Exarch in a Detachment.
 - **Special Rules:** Aspect Shrine (Shining Spear), Firing Protocols (3), Monster Hunter, Outflank, Pathfinder, Relentless, Shrouded (4+).
 - **Wargear:** exchanges Aspect Armour for Heavy Aspect Armour (if not already equipped) and gains a Laser Lance, Shuriken Pistol, and Skyrunner Jetbike at no cost.
 
-- May replace its Laser Lance with one of the following: Power Weapon (Free), Star Lance (+15 points).
+| Option | Cost |
+| --- | --- |
+| May replace its Laser Lance with one of the following: |  |
+| – Power Weapon | Free |
+| – Star Lance | +15 points |
 
 ### Aspect Shrine: Striking Scorpion
 
@@ -514,8 +542,13 @@ May be selected by a single Exarch in a Detachment.
 - **Special Rules:** Aspect Shrine (Striking Scorpion), Brutal Ambush, Fleet (2), Infiltrate, Move Through Cover, Stalker.
 - **Wargear:** exchanges Aspect Armour for Heavy Aspect Armour (if not already equipped) and gains a Mandiblaster, Scorpion Chainsword, and Shuriken Pistol at no cost.
 
-- May replace its Shuriken Pistol with one of the following: Biting Blade (+10 points), Scorpion's Claw (+20 points).
-- Or may replace its Scorpion Chainsword and Shuriken Pistol with: Two Chainsabres (+10 points).
+| Option | Cost |
+| --- | --- |
+| May replace its Shuriken Pistol with one of the following: |  |
+| – Biting Blade | +10 points |
+| – Scorpion's Claw | +20 points |
+| Or may replace its Scorpion Chainsword and Shuriken Pistol with: |  |
+| – Two Chainsabres | +10 points |
 
 ### Aspect Shrine: Swooping Hawk
 
@@ -524,7 +557,11 @@ May be selected by a single Exarch in a Detachment.
 - **Special Rules:** Aspect Shrine (Swooping Hawk), Herald of Victory, Skyleap, Skystrike.
 - **Wargear:** gains a Grenade Pack, Hawk Lasblaster, Haywire Grenades, and Swooping Hawk Wings at no cost.
 
-- May exchange its Hawk Lasblaster for one of the following: Hawk's Talon (+10 points), Sunrifle (+15 points).
+| Option | Cost |
+| --- | --- |
+| May exchange its Hawk Lasblaster for one of the following: |  |
+| – Hawk's Talon | +10 points |
+| – Sunrifle | +15 points |
 
 ### Aspect Shrine: Warp Spider
 
@@ -533,8 +570,13 @@ May be selected by a single Exarch in a Detachment.
 - **Special Rules:** Aspect Shrine (Warp Spider), Firing Protocols (2), Flickerjump, Hit & Run, Iron Resolve.
 - **Wargear:** exchanges Aspect Armour for Heavy Aspect Armour (if not already equipped) and gains a Death Spinner and Warp Jump Generator at no cost.
 
-- May exchange its Death Spinner for one of the following: Spinneret Rifle (+15 points), Two Death Spinners (+5 points).
-- May also take: Two Power Swords (+15 points).
+| Option | Cost |
+| --- | --- |
+| May exchange its Death Spinner for one of the following: |  |
+| – Spinneret Rifle | +15 points |
+| – Two Death Spinners | +5 points |
+| May also take: |  |
+| – Two Power Swords | +15 points |
 
 ## Grand Performances
 
