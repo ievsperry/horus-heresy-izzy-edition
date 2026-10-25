@@ -54,6 +54,8 @@ After deployment, all models immediately operate independently and are no longer
 
 **'Ere We Go!** When rolling charge distance, the unit may re-roll one of the dice. If the charge still fails, the unit moves the full distance rolled toward the target, instead of the usual reduced failed-charge move†.
 
+**Exhaust Belch.** After this unit completes a Run move, place a flamer template touching the rear of the model. Any unit touched by the template suffers D3 Strength 5 AP – hits with the Pinning special rule.
+
 **Fetishes of Gork and Mork.** Fetishes of Gork and Mork grant a 4+ Invulnerable Save and Adamantium Will (4+).
 
 **Grot Attendants.** Grot Attendants are grots that are attached to other units. They provide a special bonus to the mob while they are still alive. In addition, they are all armed with a grot blasta and grot stabba unless otherwise noted.
@@ -150,6 +152,8 @@ If a Runt Orkalyte is removed as a casualty by a Precision Shots or Precision St
 
 **Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
 
+**Speed Freekz.** Models with this special rule gain Fleet (2), Sudden Strike (2), and Hammer of Wrath (1). In addition, they may re-roll failed Dangerous Terrain tests.
+
 **Tank Hunters.** The model's attacks gain the Sunder special rule. If a weapon already has Sunder, add 1 to its Armour Penetration rolls instead.
 
 **Titanic Presence.** Friendly Ork Infantry, Cavalry and Jump Infantry units within 18" of a Stompa gain Stubborn.
@@ -185,7 +189,7 @@ Different warbands focus this psychic momentum in radically different ways. Some
 
 A Waaagh! Doctrine represents the dominant expression of the psychic momentum surrounding an Ork army once battle reaches its peak. Whether through overwhelming violence, impossible speed, endless gunfire or catastrophic psychic power, the Waaagh! focuses itself through the collective instincts of the horde until the entire battlefield descends into barely controlled chaos. Once unleashed, the Waaagh! transforms the Ork warbands from dangerous raiders into an unstoppable tide of destruction capable of overwhelming even the greatest armies of the Imperium.
 
-A Detachment that contains at least one model with the Da Biggest is Da Best special rule may select a single Waaagh! Doctrine.
+A Detachment that contains at least one model with the Da Biggest is Da Best special rule may select a single Waaagh! Doctrine. A Waaagh! Doctrine is unleashed when the army calls its Waaagh!: it counts as the army's one Waaagh! call for the battle, and its effects apply along with those of the Waaagh! special rule.
 
 ### Krumpin' Waaagh!
 
@@ -323,15 +327,17 @@ Every Ork belongs to a Klan, and each Klan fights in its own way. Klans work lik
 
 **Klan Advanced Reactions.** Each Klan has its own Advanced Reaction, usable only by units with that Klan (X) rule. It is available in addition to Get Stuck In and costs one point of the Reaction Allotment like any other reaction†.
 
-**Named characters.** A Unique character belongs to the Klan listed below and may only be included in a detachment of that Klan. Kaptin Badrukk is the exception: he is a Bad Moon, but as a Freebooter he may join a detachment of any Klan, keeping Klan (Bad Moons).
+**Named characters.** A Unique character belongs to the Klan listed below and may only be included in a detachment of that Klan. Kaptin Badrukk is the exception: he may be included in a Bad Moons or a Freebooterz detachment, and takes that detachment's Klan.
 
 | Klan | Unique characters |
 |---|---|
-| Bad Moons | Kaptin Badrukk (any Klan) |
+| Bad Moons | Kaptin Badrukk |
 | Blood Axes | Boss Snikrot |
 | Deathskulls | Mad Dok Grotsnik |
 | Evil Sunz | Wazdakka Gutsmek |
+| Freebooterz | Kaptin Badrukk |
 | Goffs | Boss Zagstruk, Ghazghkull Thraka, Mek Boss Buzzgob |
+| Rustboyz | – |
 | Snakebites | Old Zogwort, Mozrog Skragbad, Zodgrod Wortsnagga |
 
 ### Bad Moons
@@ -387,6 +393,19 @@ Units with Klan (Evil Sunz) gain the following:
 
 **Warlord Trait: Red-hot Speedboss.** The Warlord, any unit he joins, and any vehicle he is embarked on add 2 to their Movement Characteristic and gain the Outflank special rule†.
 
+### Freebooterz
+
+_The Freebooterz are pirate warbands and mercenary raiders drawn from countless different Klanz and united only by greed, ego and the promise of loot. Their forces are loud, ostentatious and dangerously well-armed, often combining the best equipment stolen from across the galaxy into unpredictable but devastating battlefield formations._
+
+Units with Klan (Freebooterz) gain the following:
+
+- **Flash Gitz:** Flash Gitz gain the Line Sub-type.
+- **Competitive Gitz:** whenever an enemy unit is destroyed by a friendly Freebooterz unit, all other friendly Freebooterz units gain +1 BS until the end of the current turn.
+
+**Advanced Reaction: Broadside!** (Shooting phase). This Advanced Reaction may be made once per battle during the opposing player's Shooting phase after a friendly Freebooterz unit is selected as the target of a Shooting Attack. After all attacks have been resolved, the reacting unit may immediately make a Shooting Attack with any Twin-linked weapons it possesses.
+
+**Warlord Trait: Kaptin of Kaptins.** The Warlord commands through sheer swagger, wealth and reputation amongst the pirate fleets. Friendly Freebooterz units within 12" of the Warlord gain Crusader. In addition, the Warlord gains Preferred Enemy (Characters). An army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase as long as the Warlord has not been removed as a casualty.
+
 ### Goffs
 
 _The biggest and meanest of the Klans, Goffs scorn fancy wargear and shooting. They want to get stuck in, and they want to do it now._
@@ -399,6 +418,19 @@ Units with Klan (Goffs) gain the following:
 **Advanced Reaction: Headbutt 'Em First** (Assault phase). Trigger: an enemy unit declares a charge against a Goff unit. Instead of firing Overwatch, the Goff unit gains the Counter-Charge (2) and Reach (2) special rules until the end of the phase†. The charging unit keeps its bonuses for charging.
 
 **Warlord Trait: Skarboy Boss.** The Warlord and any unit he joins gain the Furious Charge (1) special rule, or increase an existing Furious Charge (X) by 1.
+
+### Rustboyz
+
+_The Rustboyz are warbands obsessed with machinery, scavenging and industrial destruction. Their mobs are dominated by meks, walkers and ramshackle war engines held together through crude engineering and endless improvisation. Entire battlefields vanish beneath smoke, sparks and the thunder of malfunctioning machinery whenever the Rustboyz go to war._
+
+Units with Klan (Rustboyz) gain the following:
+
+- **Killa Kans:** Killa Kans gain the Line Sub-type.
+- **Mek-Touched:** Characters with this special rule gain Mek-Smasha (6+). Vehicles and Dreadnoughts with this special rule gain It Will Not Die (6+).
+
+**Advanced Reaction: Emergency Repairs** (Shooting phase). This Advanced Reaction may be made once per battle during the opposing player's Shooting phase after a friendly Rustboyz Vehicle or Dreadnought suffers one or more Hull Point losses or Wounds. After all enemy attacks have been resolved, the reacting unit immediately regains a single lost Hull Point or Wound.
+
+**Warlord Trait: Rust Masta Mek.** The Warlord is among the greatest mekboyz of the Waaagh!, capable of keeping entire armoured spearheads fighting long after they should have collapsed. Friendly Rustboyz Vehicles and Dreadnoughts within 12" of the Warlord may re-roll failed It Will Not Die rolls. In addition, one friendly Vehicle within 6" may ignore Crew Shaken results. An army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase as long as the Warlord has not been removed as a casualty.
 
 ### Snakebites
 
@@ -1117,7 +1149,7 @@ _A Head Nob with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 
 - 'Ere We Go!
 - Flashiest Gitz: if Badrukk is the Warlord, Flash Gitz may be taken as Troops
 - Grot Attendants (Ammo Runts only)
-- Klan (Bad Moons)
+- Klan (Bad Moons or Freebooterz)
 - Mob Rule
 - Waaagh!
 
@@ -2386,6 +2418,7 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 
 **Wargear**
 
+- Deffkopta
 - Twin-linked big shoota
 - Spinnin' blades
 - Stikkbombz
@@ -2447,8 +2480,10 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 
 - Dakka! (6+)
 - 'Ere We Go!
+- Grot Attendants (Kommando Grot only)
 - Infiltrate
 - Klan (X)
+- Kommando Grot
 - Mob Rule
 - Mob Up
 - Move Through Cover
@@ -2463,6 +2498,8 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 |---|---|
 | **The mob may include:** |  |
 | – Up to 10 additional kommandos | +11 points each |
+| **The mob may take:** |  |
+| – Up to 1 kommando grot | +15 points |
 | **For every 5 Kommandos in the mob, one Kommando may exchange his Slugga and Choppa for one of the following:** |  |
 | – Big shoota | +10 points |
 | – Burna | +10 points |
@@ -3546,23 +3583,27 @@ _Sheets of scrap riveted over the open deck, turning a wagon into a rolling bunk
 
 A vehicle with an 'ard case loses the Open-topped special rule and adds 1 to its Side Armour. It has one Access Point on each side of the hull and one at the rear.
 
+### Armored Plates
+
+A vehicle equipped with armored plates ignores Crew Shaken results.
+
 ### Attack Squig
 
-_A snapping ball of teeth that follows its owner into every fight._
+_Attack Squigs are vicious and barely controlled predators bred by the Orks for war and unleashed at close quarters to tear apart anything unlucky enough to stand near their masters. Driven into battle through violence, hunger and crude conditioning, these snarling beasts hurl themselves into combat with terrifying enthusiasm, often mauling enemies while their owners laugh amidst the slaughter._
 
-A model with an attack squig adds 1 to its Attacks Characteristic.
+A model accompanied by one or more attack squigs gains +1 Attack.
 
 ### Boarding Plank
 
 _A spiked plank dropped onto an enemy vehicle so the Boyz can climb aboard._
 
-In the Assault phase, if the vehicle is in base contact with an enemy vehicle, one model embarked on it may make its close combat attacks against that vehicle as though it were in base contact.
+A vehicle equipped with a boarding plank gains the Assault Vehicle special rule.
 
 ### Bomb Squig
 
 _A squig with a crude explosive strapped to its back, trained to chase anything that rumbles._
 
-Once per game, in the Shooting phase, instead of shooting, a unit with a bomb squig may target one enemy Vehicle or Dreadnought within 18". That target suffers one hit at Strength 8, AP 3. Remove the bomb squig after it is used.
+A bomb squig may be released once per battle during the Shooting phase. Select one enemy unit within 12". That unit suffers D3 Strength 8 AP3 hits with the Rending (5+) special rule.
 
 ### Bosspole
 
@@ -3582,17 +3623,25 @@ _A mob of Boyz riding a Rig's deck, hacking at anything that comes close._
 
 _Bionik limbs and iron plates bolted on by an enthusiastic Painboy._
 
-A model with a cybork body has the Feel No Pain (6+) special rule. This does not combine with Dok's tools.
+A model with cybork implants (a cybork body) gains a 5+ Invulnerable Save.
 
 ### Da Armour
 
-Da armour confers a 5+ Armour Save.
+_Da Armour represents the crude but surprisingly effective layers of scrap plating, scavenged flak panels and improvised protection commonly worn by larger and wealthier Ork warriors. Though lacking refinement or consistency, these overlapping layers of metal and hide are often enough to turn aside small arms fire through sheer thickness and brute construction._
+
+Da armour grants a 5+ Armour Save.
+
+### Deffkopta
+
+A Deffkopta grants the Cavalry (Antigrav, Skirmish) Unit Type, increases the bearer's Movement Characteristic to 14", grants a 4+ Armour Save, Bulky (3), Hammer of Wrath (2), and the Deep Strike special rule.
+
+In addition, during any turn in which the unit Runs, it gains the Shrouded (5+) special rule until the beginning of the controlling player's next turn.
 
 ### Deff Rolla
 
 _A spiked roller welded to the front of a wagon, built to flatten whatever is in front of it._
 
-When a vehicle with a deff rolla makes a Ram or Tank Shock, the enemy unit it moves into suffers D6 hits at Strength 10, AP 3.
+A vehicle equipped with a deff rolla gains Hammer of Wrath (D6) when making Tank Shock attacks.
 
 ### Dok's Tools
 
@@ -3602,9 +3651,9 @@ Friendly Ork Infantry units joined by a model with Dok's tools gain Feel No Pain
 
 ### 'Eavy Armour
 
-_Thick plates of scavenged metal, worn by any Ork with enough teef to buy them._
+_'Eavy Armour consists of thick reinforced plating, oversized shoulder guards and massive armoured slabs hammered together by Ork meks and riveted directly onto the wearer. Though cumbersome and poorly balanced by Imperial standards, such armour dramatically increases an Ork's battlefield survivability while doing little to hinder their brutal style of warfare._
 
-'Eavy armour confers a 4+ Armour Save.
+'Eavy armour grants a 4+ Armour Save.
 
 ### Fetishes of Gork and Mork
 
@@ -3614,19 +3663,13 @@ A model with fetishes of Gork and Mork has the Fetishes of Gork and Mork special
 
 _A bionik eye or a clicking telescope that helps an Ork see what he is shooting at._
 
-A model with a gitfinda has a Ballistic Skill of 3 in any turn in which it did not move.
-
-### Grabba Stikk and Grot-prod
-
-_Long poles for keeping grots in line, one of them crackling with power._
-
-A grabba stikk is a melee weapon (S User, AP –). A grot-prod is a melee weapon (S+1, AP –). While a Runtherd with either lives, his Gretchin unit uses his Leadership of 7 for Morale checks and Pinning tests.
+A unit containing one or more gitfinda squigs gains the Precision Shots (6+) and Split Fire special rules when making Shooting Attacks.
 
 ### Grabbin' Klaw
 
 _A huge mechanical hook for snagging enemy vehicles._
 
-In the Assault phase, a vehicle with a grabbin' klaw may choose one enemy Vehicle in base contact. Roll a D6; on a 4+, that Vehicle may not move in its next Movement phase.
+Enemy Vehicles attempting to move out of base contact with a vehicle equipped with a grabbin' klaw must first pass a Dangerous Terrain test. If failed, the enemy Vehicle may not move that turn.
 
 ### Grot Oiler
 
@@ -3672,23 +3715,33 @@ A model accompanied by one or more grot orderlies has the Grot Orderly special r
 
 - Grot Attendants
 
+### Grot-prod
+
+_A Grot Prod is a crackling electro-prod used to terrorize and discipline nearby Gretchin into battle._
+
+Friendly Gretchin units within 6" of one or more models equipped with a grot-prod may re-roll failed Mob Up Leadership tests.
+
 ### Grot Riggers
 
 _A crew of grots clinging to the hull, hammering dents back out mid-battle._
 
-An Ork vehicle with grot riggers gains Grot Riggers (6+). An Ork Dreadnought with grot riggers instead gains the It Will Not Die special rule. A Knight that takes grot riggers gains Grot Riggers (5+).
+A vehicle equipped with grot riggers gains It Will Not Die (6+).
 
 ### Kustom Force Field
 
 _A crackling energy bubble projected by a backpack generator, or by the Mek's sheer belief that it works._
 
-Friendly units wholly within 6" of a model with a kustom force field have a 5+ Invulnerable Save against Shooting Attacks. Other vehicles within range count as obscured instead. A Knight or Titan carrying a kustom force field has the 5+ Invulnerable Save against Shooting Attacks itself.
+Friendly units within 6" of one or more models equipped with a kustom force field gain a 5+ Invulnerable Save against Shooting Attacks.
 
 ### Mega Armour
 
-_Thick, powered plates hissing with pistons, the mark of a Nob who has truly made it._
+_Mega Armour represents the heaviest and most brutal personal armour available to the Ork warbands. Constructed from scavenged reactor plating, tank hulls and layers of improvised servo-mechanisms, these towering suits transform their wearers into walking fortresses capable of smashing aside even the strongest enemy resistance through sheer mass and violence. Though cumbersome and unstable, Mega Armour allows an Ork warlord to wade directly into the heart of the battle while unleashing devastating barrages of firepower and crushing melee attacks._
 
-Mega armour confers a 2+ Armour Save. A model with the Infantry Unit Type that takes mega armour gains the Heavy Unit Sub-type, changes its Movement Characteristic to 5, and may not Advance.
+A model equipped with mega armour improves its Armour Save to 2+, increases its Bulky value by +1 (minimum Bulky (2)), gains the Firing Protocols (2) special rule, gains +1 Wound, and reduces its Movement and Initiative Characteristics by −1.
+
+### Mork Charms
+
+Mork charms grant a 5+ Invulnerable Save.
 
 ### Orky Artefacts
 
@@ -3707,25 +3760,27 @@ A Warboss or Big Mek may take one Orky Artefact; each artefact may only be taken
 
 _Everyone knows red ones go fasta._
 
-A vehicle with a red paint job adds 1 to its Movement Characteristic. This stacks with Red Ones Go Fasta.
+A vehicle equipped with a red paint job increases its Movement Characteristic by +2 while moving at Combat Speed.
 
 ### Reinforced Ram
 
 _A slab of armour on the front of a vehicle, for ramming things out of the way._
 
-A vehicle with a reinforced ram may re-roll failed Dangerous Terrain tests and adds 1 to its Strength when Ramming.
+A vehicle equipped with a reinforced ram may re-roll failed Dangerous Terrain tests. In addition, Tank Shock attacks made by the vehicle inflict +1 Strength.
 
 ### Rokk-pack
 
 _A rocket strapped to an Ork's back, aimed in roughly the right direction._
 
-At the start of the controlling player's Movement phase, or when deployed as part of a Deep Strike Assault, a model with a rokk-pack may set its Move Characteristic to 12 for the duration of the controlling player's turn ("activating" the rokk-pack). This lets it move up to 12", regardless of the Movement Characteristic on its profile, and gain any other benefits of a Movement Characteristic of 12, including the bonus to Charge distance. A model with an activated rokk-pack ignores terrain while Moving and Charging, but must take Dangerous Terrain tests as normal when beginning or ending its move in Dangerous Terrain; it treats all Difficult Terrain as Dangerous Terrain, and may move over friendly and enemy models or units without penalty, but must end its move at least 1" away from any model from another unit.
+A rokkit pack grants the Jump Infantry Unit Type, Hammer of Wrath (1), Bulky (2), and the Deep Strike special rule.
 
-A model with a rokk-pack may still Advance if it would normally be able to (this does not allow units that include any models with the Heavy sub-type to Advance). When it Advances with an activated rokk-pack, add its Initiative Characteristic to 12 to determine how far it may move; it ignores terrain and models from other units while doing so, but may not make Shooting Attacks or declare a Charge in the same turn, as per the normal rules for Advancing.
+In addition, models equipped with rokkit packs increase their Movement Characteristic to 12 while Running.
 
-Any model with a rokk-pack also gains the Bulky (2), Hammer of Wrath (1) and Deep Strike special rules; if it already has Bulky (2), it gains Bulky (3) instead.
+At the beginning of any Movement phase in which the unit Runs, the controlling player may attempt to push the rokkit packs beyond safe operational limits. Roll a D6:
 
-During a Reaction made in any phase, a player may not activate a model's rokk-pack to gain any bonus to its Movement Characteristic. Models with rokk-packs deployed as part of a Deep Strike Assault are considered to have activated their rokk-packs in the turn they enter play.
+- On a roll of 6, the unit gains Fleet (3) and Hammer of Wrath (2) until the end of the turn.
+- On a roll of 2–5, the unit gains Fleet (2) until the end of the turn.
+- On a roll of 1, the unit immediately suffers 6 Strength 6 AP – hits and becomes Pinned.
 
 ### Saddlegit with Slugga
 
@@ -3736,11 +3791,17 @@ _A grot clinging to the back of a squighog, shooting and stabbing at whatever it
 | Saddlegit's slugga | 12" | 3 | – | Pistol, Assault 1 |
 | Saddlegit's shiv | – | 3 | – | Melee, Deck Crew (1) |
 
+### Sneakin' Armour
+
+_Sneakin' Armour is a patchwork collection of darkened plating, muffled chain links, scavenged camo cloth and crude noise-dampening materials favoured by Kommandoz and other unusually cunning Orks. Though still loud and brutish by most standards, warriors equipped with Sneakin' Armour are remarkably difficult to detect amidst smoke, rubble and darkness._
+
+Sneakin' armour grants a 6+ Armour Save and the Shrouded (5+) special rule.
+
 ### Squig Hound
 
-_A squig trained to bite any grot that runs the wrong way._
+_Squig Hounds are vicious hunting squigs trained to maul fleeing Gretchin and force terrified mobs back into the fight._
 
-A Gretchin unit whose Runtherd has a squig hound may re-roll failed Morale checks.
+A Gretchin unit joined by one or more models equipped with a squig hound may re-roll failed Morale checks. If a Morale check is failed and then successfully re-rolled using this rule, the unit immediately suffers D3 Strength 3 AP – hits.
 
 ### Stikkbomb Chukka
 
@@ -3780,7 +3841,11 @@ _A rokkit strapped to a big stick, swung at the nearest tank. It rarely ends wel
 
 _A Mek-built teleporter that flings Orks across the battlefield, usually in one piece._
 
-A model with a tellyporta, and any unit it joins, gains the Deep Strike special rule. A model with a warbike may not take a tellyporta.
+A unit containing one or more models equipped with a teleporta gains the Deep Strike special rule.
+
+In addition, at the beginning of each of the controlling player's turns, roll a D6 for every model in the unit. For each roll of a 1, the unit suffers a Strength 8 AP – hit with the Pinning special rule.
+
+If the unit is not Pinned after resolving these hits, it may immediately be removed from the battlefield and placed into Ongoing Reserves. The unit automatically enters play via Deep Strike at the end of the controlling player's following Movement phase.
 
 ### Waaagh! Banner
 
@@ -3790,19 +3855,23 @@ A unit that includes at least one model with a Waaagh! banner adds 1 to its Weap
 
 ### Warbike
 
-_A roaring, smoke-belching bike with a pair of big shootas bolted to the front._
+_Ork Warbikes are roaring masses of unstable engines, oversized exhaust systems and improvised armour plating held together through sheer violence and mechanical abuse. Built for speed rather than reliability, these brutal machines belch choking smoke and deafening engine fire across the battlefield while their riders unleash torrents of inaccurate but overwhelming gunfire. Though wildly dangerous to operate, Warbikes allow the Orks to surge across the battlefield with terrifying momentum and crushing impact._
 
-A warbike has a twin-linked big shoota. A model with the Infantry Unit Type that selects a warbike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had. It also changes its Movement Characteristic to 14, adds 1 to its Toughness, has a 4+ Armour Save, and gains the Hammer of Wrath (1) special rule. In addition, a model with a warbike that chooses to Advance gains the Shrouded (5+) special rule until the start of the controlling player's next turn.
+An Ork warbike has one twin-linked big shoota. In addition, a model with an Ork warbike that chooses to Run gains the Shrouded (5+) special rule until the beginning of the controlling player's next turn.
+
+A model with the Infantry Unit Type that selects an Ork warbike as an upgrade changes its Unit Type to Cavalry, keeping any Unit Sub-types it previously possessed, and may choose to gain the Skirmish Unit Sub-type. In addition, the model changes its Movement Characteristic to 14 and gains the Firing Protocols (2) and Hammer of Wrath (1) special rules.
 
 ### Warphead
 
-A Weirdboy or Weirdboss with a warphead also knows Fists of Gork, and may re-roll the result on the Weirdboy Psychic Powers table, the Weirdboy Psychic Weapons table, or both.
+A Weirdboy upgraded to a Warphead may roll twice on both the Weirdboy Psychic Powers and Weirdboy Psychic Weapons tables and select which result to use at the beginning of each controlling player turn.
+
+In addition, a Warphead gains +1 to its Waaagh! Energy bonus, to a maximum total bonus of +3.
 
 ### Wreckin' Ball
 
 _A spiked iron ball swung on a chain from a wagon's crane._
 
-In the Assault phase, a vehicle with a wreckin' ball may make one melee attack at Strength 8, AP 4 against an enemy unit in base contact.
+At the end of any Movement phase in which the vehicle moved, select one enemy unit within 3" of the vehicle. That unit suffers D3 Strength 8 AP4 hits.
 
 ## Ork Armoury
 
@@ -3828,6 +3897,7 @@ All weapons listed here are counted as 'Dakka' weapons for those rules that affe
 | Kustom shoota | 18" | 4 | 6 | Assault 4 |
 | Mek speshul | 24" | 5 | 4 | Assault 6 |
 | Rivet kannon | 24" | 6 | 5 | Assault 3 |
+| Rattler kannon | 24" | 6 | 6 | Heavy 2D6 |
 | Shoota | 24" | 4 | 6 | Assault 2 |
 | Slugga | 12" | 4 | – | Pistol 1 |
 | Snazzgun (flash burst) | 24" | 5 | 3 | Assault 2, Twin-linked, Gets Hot, Rending (4+) |
@@ -3837,6 +3907,7 @@ All weapons listed here are counted as 'Dakka' weapons for those rules that affe
 | Supa-shoota | 36" | 6 | 4 | Assault 3 |
 | Twin-linked big shoota | 36" | 5 | 5 | Assault 6, Twin-linked |
 | Twin-linked boomstikk | 12" | 5 | 5 | Assault 2, Twin-linked |
+| Twin-linked rattler kannon | 24" | 6 | 6 | Heavy 2D6, Twin-linked |
 
 ### Kombi-weapons
 
@@ -3923,6 +3994,7 @@ Rokkit launchas, kopta rokkit launchas, grotzookas and every weapon whose name i
 | Stikkbomb flinga | 12" | 3 | – | Assault 1, Blast (3"), Pinning |
 | Stikkbomb launcha | 24" | 5 | 5 | Assault 1, Large Blast (5"), Pinning |
 | Supa-rokkit | 100" | 8 | 3 | Heavy 1, Large Blast (5"), One Use |
+| Supa-lobba | 48" | 7 | 4 | Ordnance 1, Massive Blast (7"), Barrage |
 | Tankbusta rokkit | 24" | 8 | 3 | Assault 1, Armourbane (Ranged) |
 | Thump gun | 18" | 6 | 5 | Assault 1, Blast (3") |
 | Twin-linked skorcha missile rack | 24" | 5 | 4 | Heavy 1, Blast (3"), Ignores Cover, Twin-linked |
@@ -3963,6 +4035,7 @@ Beastchoppas, big choppas, choppas, mega-choppas and 'uge choppas are counted as
 | Grabba stikk | – | User | – | Melee, Concussive (2) |
 | Grabbin' klaw | – | +1 | 2 | Melee; +1 Attack |
 | Grot stabba | – | User | – | Melee |
+| Hammer of Mork | – | User | 3 | Melee, Force, Breaching (5+), Concussive (1) |
 | Kan klaw | – | x2 | 2 | Melee, Armourbane (Melee) |
 | Killa jet (cutting) | – | +2 | 2 | Melee |
 | Killsaw | – | x2 | 2 | Melee, Armourbane (Melee), Unwieldy |
@@ -3975,7 +4048,8 @@ Beastchoppas, big choppas, choppas, mega-choppas and 'uge choppas are counted as
 | Power stabba | – | +1 | 3 | Melee, Rending (5+) |
 | Saw blades | – | +1 | – | Melee, Rending (6+) |
 | Snagga klaw | – | +1 | 3 | Melee |
-| Squig prodder | – | User | – | Melee, Concussive (1) |
+| Spinnin' blades | – | User | – | Melee, Shred, Rampage (2) |
+| Squig prodder | – | User | – | Melee, Concussive (1), Squig Prodder |
 | Stikka | – | +1 | 4 | Melee |
 | Stompy feet | – | User | 4 | Melee |
 | Titanic klaw | – | 10 | 1 | Melee, Destroyer |
@@ -3984,6 +4058,8 @@ Beastchoppas, big choppas, choppas, mega-choppas and 'uge choppas are counted as
 | Weirdboy staff | – | User | – | Melee, Force† |
 | Worldsplitter klaw | – | x2 | 1 | Melee, Brutal (2), Murderous Strike (6+), Specialist Weapon |
 | Wreckin' ball | – | 8 | 4 | Melee; one attack, vehicle wargear |
+
+**Squig Prodder.** A Squig Prodder is a vicious shock stave used to drive attack squigs and terrified Gretchin into uncontrollable aggression. Friendly Gretchin units within 6" of one or more models equipped with a squig prodder gain Furious Charge (1).
 
 **Killsaw.** A model equipped with two Killsaws gains +2 Attacks instead of the normal +1 Attack granted for being armed with two close combat weapons.
 
