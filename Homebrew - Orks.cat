@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -303,7 +303,7 @@
               </modifiers>
               <rules>
                 <rule name="Effects" id="783c-5937-d041-03a3" hidden="false">
-                  <description>Warbikers may be taken as Troops choices in a Detachment using this Rite of War, and gain the Line sub-type. Nobz on Warbikes may be taken as Fast Attack choices in a Detachment using this Rite of War. Ork vehicles with the Fast sub-type and Mechanised Ork Cavalry (the Speed Freek buggies) in a Detachment using this Rite of War improve their Ramshackle (X) by 1, so Ramshackle (6+) becomes Ramshackle (5+).</description>
+                  <description>Warbikers may be taken as Troops choices in a Detachment using this Rite of War, and gain the Line sub-type. Nobz on Warbikes may be taken as Fast Attack choices in a Detachment using this Rite of War. Ork vehicles with the Fast sub-type and Mechanised Ork Cavalry (the Speed Freek buggies) in a Detachment using this Rite of War improve their Ramshackled Vehicle (X) or Ramshackled Carapace (X) by 1, so (6+) becomes (5+).</description>
                 </rule>
                 <rule name="Limitations" id="ef5b-602e-c34e-38e8" hidden="false">
                   <description>A Detachment using this Rite of War must have a Warboss or Big Mek on Warbike as its Warlord. Every Infantry unit in a Detachment using this Rite of War must start the game embarked on a Trukk or Battlewagon, or have rokk-packs. This Rite of War may not be used by an Allied Detachment.</description>
@@ -2314,7 +2314,7 @@
       <profiles>
         <profile name="Ammo Runt" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ad89-1fed-292e-9443">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per game, a unit that includes at least one model with an ammo runt may re-roll one failed to-hit roll when shooting. Remove the ammo runt after it is used.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model accompanied by one or more ammo runts has the Ammo Runts special rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2490,7 +2490,7 @@
       <profiles>
         <profile name="Grot Orderly" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5b61-bfe8-f048-df9d">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Painboy with a grot orderly improves the Feel No Pain (X) from his Dok's tools by 1. For example, Feel No Pain (6+) becomes Feel No Pain (5+).</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model accompanied by one or more grot orderlies has the Grot Orderly special rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4533,9 +4533,9 @@
       <infoLinks>
         <infoLink name="Xenos" id="1ecb-c120-0101-5821" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="'Ere We Go!" id="e1fb-8136-27de-e226" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
-        <infoLink name="Grot 'Tendant" id="ed82-7a3e-722e-3af5" hidden="false" targetId="a26d-6630-480f-550c" type="rule">
+        <infoLink name="Grot Attendants" id="40e8-8128-c945-59af" hidden="false" targetId="67a8-98be-35bc-ea7b" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Grot 'Tendant (Ammo Runts only)" />
+            <modifier type="set" field="name" value="Grot Attendants (Ammo Runts only)" />
           </modifiers>
         </infoLink>
         <infoLink name="Klan (X)" id="6c84-77cd-96c6-b34d" hidden="false" targetId="a734-620c-db79-3594" type="rule">
@@ -4854,7 +4854,7 @@
           <description>When Buzzgob uses Mek-Smasha, he may restore up to D3 lost Hull Points or Wounds instead of one, and may use it twice each turn on different models</description>
         </rule>
         <rule name="Mekaniak" id="d6a8-4d9f-53c3-2a02" hidden="false">
-          <description>Friendly Ork vehicles and Dreadnoughts within 6" of Buzzgob improve their Ramshackle (X) by 1, to a best of Ramshackle (4+)</description>
+          <description>Friendly Ork vehicles and Dreadnoughts within 6" of Buzzgob improve their Ramshackled Vehicle (X) or Ramshackled Carapace (X) by 1, to a best of (4+)</description>
         </rule>
         <rule name="Smoky Squig" id="942f-98a9-fa95-0c8a" hidden="false">
           <description>Dok Scrabbit's fumes give Buzzgob and any unit he joins Shrouded (6+)</description>
@@ -4876,9 +4876,9 @@
           </modifiers>
         </infoLink>
         <infoLink name="'Ere We Go!" id="67a7-d665-d15a-c51b" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
-        <infoLink name="Grot 'Tendant" id="80bb-3880-9a1b-d1e0" hidden="false" targetId="a26d-6630-480f-550c" type="rule">
+        <infoLink name="Grot Attendants" id="c1c1-cc9b-b884-1a37" hidden="false" targetId="67a8-98be-35bc-ea7b" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Grot 'Tendant (Dok Scrabbit and Grot Gorgutz only)" />
+            <modifier type="set" field="name" value="Grot Attendants (Dok Scrabbit and Grot Gorgutz only)" />
           </modifiers>
         </infoLink>
         <infoLink name="Klan (X)" id="99dc-f0b9-1a21-da95" hidden="false" targetId="a734-620c-db79-3594" type="rule">
@@ -8542,17 +8542,15 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gretchin" hidden="false" id="6fa2-22dc-f3a0-33c1" publicationId="96d0-c462-d158-fbad">
       <rules>
+        <rule name="Grots" id="b0ac-3fec-ce75-bb91" hidden="false">
+          <description>Gretchin do not have Mob Rule, are not affected by Waaagh! and cannot use Get Stuck In</description>
+        </rule>
         <rule name="Runtherd" id="1653-f146-4fa1-535f" hidden="false">
           <description>If the unit fails a Morale check while a Runtherd lives, it may pass instead and remove D3 Gretchin</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="5240-54e0-3ac1-6d12" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
-        <infoLink name="Mob Rule" id="e638-aa92-7768-602e" hidden="false" targetId="9986-6062-e065-6f8a" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Mob Rule (Gretchin are not affected by Waaagh! and cannot use Get Stuck In)" />
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="7875-d855-b084-9da5" primary="false" name="Unit:" />
@@ -8699,9 +8697,9 @@
         <infoLink name="Xenos" id="1817-0d7b-4182-b481" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Klan (X)" id="f011-6f01-a7f8-762d" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
         <infoLink name="Open-topped" id="8359-b867-6835-9df1" hidden="false" targetId="792a-d019-9e41-d7f8" type="rule" />
-        <infoLink name="Ramshackle (X)" id="d895-c205-dfbd-99bd" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Vehicle (X)" id="dc87-1d9c-001c-ac29" hidden="false" targetId="d92a-f330-bfcd-9d74" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Vehicle (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -8853,9 +8851,9 @@
       <infoLinks>
         <infoLink name="Xenos" id="ede8-6e33-668c-5729" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Klan (X)" id="2986-bb6b-22b8-8078" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Ramshackle (X)" id="8ec7-c584-8cb3-16da" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Vehicle (X)" id="fb75-1e0d-5f83-410a" hidden="false" targetId="d92a-f330-bfcd-9d74" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Vehicle (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -8945,9 +8943,9 @@
         <infoLink name="Xenos" id="f702-6b4d-434e-222a" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="'Ere We Go!" id="ebe4-9080-b62f-b482" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="dc97-fa58-f70a-70c2" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Ramshackle (X)" id="43d0-f94a-2d01-3bc7" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Carapace (X)" id="b18d-fd63-3763-67c6" hidden="false" targetId="2a3f-661c-d22f-ef1b" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Carapace (6+)" />
           </modifiers>
         </infoLink>
         <infoLink name="Waaagh!" id="d555-ab19-855d-af70" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
@@ -9036,9 +9034,9 @@
       <infoLinks>
         <infoLink name="Xenos" id="605a-b5ea-da76-a228" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Klan (X)" id="58d4-36b1-737f-48de" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Ramshackle (X)" id="f821-d7be-a544-c72b" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Vehicle (X)" id="1e50-9d24-3609-ee9c" hidden="false" targetId="d92a-f330-bfcd-9d74" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Vehicle (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -9148,9 +9146,9 @@
       <infoLinks>
         <infoLink name="Xenos" id="dd92-2e90-632f-c776" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Klan (X)" id="8638-cf9c-67e1-aa22" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Ramshackle (X)" id="4de4-21b9-5bc3-b0eb" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Vehicle (X)" id="9823-4f64-b88e-6c1f" hidden="false" targetId="d92a-f330-bfcd-9d74" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Vehicle (6+)" />
           </modifiers>
         </infoLink>
         <infoLink name="Strafing Run (X)" id="ecd6-00c7-8f1a-7516" hidden="false" targetId="6b78-4ec2-3604-78a3" type="rule">
@@ -9381,9 +9379,9 @@
         <infoLink name="Xenos" id="2050-1a66-25e0-f7f8" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="'Ere We Go!" id="25b6-98b7-0c38-8a9e" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="7c92-5a1c-ffe0-6d90" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Ramshackle (X)" id="f657-49c0-63d5-642f" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Carapace (X)" id="a565-7de2-49ca-703b" hidden="false" targetId="2a3f-661c-d22f-ef1b" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Carapace (6+)" />
           </modifiers>
         </infoLink>
         <infoLink name="Waaagh!" id="d6f9-f6d1-1a31-2be8" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
@@ -9461,9 +9459,9 @@
         <infoLink name="Xenos" id="b804-f5c1-2810-5eff" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="'Ere We Go!" id="33cf-3e85-13bc-80f1" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="2541-ab44-7ade-a44a" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Ramshackle (X)" id="399a-3b81-9bba-2d53" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Carapace (X)" id="2883-97de-49d2-72d1" hidden="false" targetId="2a3f-661c-d22f-ef1b" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Carapace (6+)" />
           </modifiers>
         </infoLink>
         <infoLink name="Waaagh!" id="f807-0325-6587-f2df" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
@@ -9582,9 +9580,9 @@
         <infoLink name="Xenos" id="9200-8c95-59a0-b6b3" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="'Ere We Go!" id="6373-bd78-5c85-a50d" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="b8e5-910b-23c3-fdd2" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Ramshackle (X)" id="ad15-eb38-0062-31ac" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Carapace (X)" id="756c-d2ac-8040-6cfd" hidden="false" targetId="2a3f-661c-d22f-ef1b" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Carapace (6+)" />
           </modifiers>
         </infoLink>
         <infoLink name="Waaagh!" id="d20f-c968-4666-7a26" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
@@ -9688,9 +9686,9 @@
         <infoLink name="Xenos" id="9745-19c0-63b2-386c" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="'Ere We Go!" id="1335-b733-0a07-6e48" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="17a9-0292-ea08-e87f" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Ramshackle (X)" id="e3ea-3a6e-0c0d-d0ca" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Carapace (X)" id="475b-7f67-1547-3956" hidden="false" targetId="2a3f-661c-d22f-ef1b" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Carapace (6+)" />
           </modifiers>
         </infoLink>
         <infoLink name="Waaagh!" id="f369-c974-4269-e4b2" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
@@ -10363,9 +10361,9 @@
       <infoLinks>
         <infoLink name="Xenos" id="5942-e04a-9712-aaf7" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Klan (X)" id="ee1e-ef87-9141-8f38" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Ramshackle (X)" id="ad99-8af9-0d05-4fee" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Vehicle (X)" id="ba0c-233f-7e0e-9b28" hidden="false" targetId="d92a-f330-bfcd-9d74" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Vehicle (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -10471,9 +10469,9 @@
         <infoLink name="Xenos" id="f82a-edd7-9a4c-c1cc" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Klan (X)" id="02af-555b-1e9c-bea8" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
         <infoLink name="Open-topped" id="e917-8549-5b25-4850" hidden="false" targetId="792a-d019-9e41-d7f8" type="rule" />
-        <infoLink name="Ramshackle (X)" id="18d0-f16d-1eac-d109" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Vehicle (X)" id="24c2-45ba-70a9-1a4f" hidden="false" targetId="d92a-f330-bfcd-9d74" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Vehicle (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -10758,9 +10756,9 @@
         <infoLink name="Xenos" id="f5f3-4af1-0ed9-3a2e" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Klan (X)" id="5fdd-9ac2-9855-0301" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
         <infoLink name="Open-topped" id="2198-fc15-5835-2c17" hidden="false" targetId="792a-d019-9e41-d7f8" type="rule" />
-        <infoLink name="Ramshackle (X)" id="3d6f-71db-0fc8-050e" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Vehicle (X)" id="5af9-2ff2-a860-44ff" hidden="false" targetId="d92a-f330-bfcd-9d74" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Vehicle (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -11243,9 +11241,9 @@
       <infoLinks>
         <infoLink name="Xenos" id="165e-c9ff-92cd-2f07" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Klan (X)" id="14e9-1b51-145d-589b" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Ramshackle (X)" id="cbf0-f8d5-467b-ee10" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Vehicle (X)" id="aef3-9e65-3834-6a71" hidden="false" targetId="d92a-f330-bfcd-9d74" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Vehicle (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -11386,9 +11384,9 @@
         <infoLink name="Xenos" id="3d02-c372-cb82-b5b5" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Klan (X)" id="aad1-eb9a-795b-335a" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
         <infoLink name="Open-topped" id="bdc7-6b8d-adf5-3529" hidden="false" targetId="792a-d019-9e41-d7f8" type="rule" />
-        <infoLink name="Ramshackle (X)" id="05f7-8677-3f0f-a100" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Vehicle (X)" id="2548-c7d4-ef2d-8bfe" hidden="false" targetId="d92a-f330-bfcd-9d74" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Vehicle (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -11479,9 +11477,9 @@
         <infoLink name="Xenos" id="0860-754b-7268-ce21" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Klan (X)" id="1e25-0a63-bbf4-865d" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
         <infoLink name="Open-topped" id="9433-851c-3476-79b8" hidden="false" targetId="792a-d019-9e41-d7f8" type="rule" />
-        <infoLink name="Ramshackle (X)" id="1480-a53b-6dc1-de40" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Vehicle (X)" id="eb10-7eb4-17fc-9a5f" hidden="false" targetId="d92a-f330-bfcd-9d74" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (6+)" />
+            <modifier type="set" field="name" value="Ramshackled Vehicle (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -12117,9 +12115,9 @@
           </modifiers>
         </infoLink>
         <infoLink name="'Ere We Go!" id="5e1f-ea1e-14e3-d457" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
-        <infoLink name="Grot 'Tendant" id="148c-84ac-3d3b-9ae4" hidden="false" targetId="a26d-6630-480f-550c" type="rule">
+        <infoLink name="Grot Attendants" id="ea2b-044c-7722-e46e" hidden="false" targetId="67a8-98be-35bc-ea7b" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Grot 'Tendant (Makari only)" />
+            <modifier type="set" field="name" value="Grot Attendants (Makari only)" />
           </modifiers>
         </infoLink>
         <infoLink name="Invulnerable Save (X)" id="123a-ce61-7d56-1f3b" hidden="false" targetId="85f3-c187-c717-378e" type="rule">
@@ -12304,9 +12302,9 @@
       <infoLinks>
         <infoLink name="Xenos" id="e1f1-a8ab-2cdf-1763" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Klan (X)" id="6a4e-87d6-64a0-5434" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Ramshackle (X)" id="a9fa-07bf-c861-c8c5" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Vehicle (X)" id="3bd3-368f-205a-6fee" hidden="false" targetId="d92a-f330-bfcd-9d74" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (5+)" />
+            <modifier type="set" field="name" value="Ramshackled Vehicle (5+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -12433,9 +12431,9 @@
       <infoLinks>
         <infoLink name="Xenos" id="f477-0162-6144-2202" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Klan (X)" id="e462-d8e2-2304-71f9" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Ramshackle (X)" id="a875-c26e-8e38-69ca" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Vehicle (X)" id="75c5-1dbd-b1b9-bd75" hidden="false" targetId="d92a-f330-bfcd-9d74" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (5+)" />
+            <modifier type="set" field="name" value="Ramshackled Vehicle (5+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -12558,11 +12556,12 @@
           </modifiers>
         </infoLink>
         <infoLink name="Klan (X)" id="af00-ea9e-c021-5dc7" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Ramshackle (X)" id="7baf-04e4-2b95-b10e" hidden="false" targetId="a24d-bb55-ef95-085b" type="rule">
+        <infoLink name="Ramshackled Vehicle (X)" id="521c-7232-0073-213a" hidden="false" targetId="d92a-f330-bfcd-9d74" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Ramshackle (5+)" />
+            <modifier type="set" field="name" value="Ramshackled Vehicle (5+)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Titanic Presence" id="e267-923b-bee9-03a3" hidden="false" targetId="e9b1-faec-6cf8-b4b0" type="rule" />
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="bcf3-5ff3-2903-2340" primary="false" name="Unit:" />
@@ -12913,38 +12912,86 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule name="Mob Rule" id="9986-6062-e065-6f8a" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>Orks draw courage and fury from their numbers. A unit with this rule gains the following, counting the models in the unit at the time: Unit Size: Leadership, Furious Charge. 1–9: No bonus, None. 10–19: +1, Furious Charge (1). 20–29: +2, Furious Charge (2). 30 or more: +3, Furious Charge (2). Furious Charge: the unit gains Furious Charge (1) for every full 10 models, to a maximum of Furious Charge (2). If it already has Furious Charge (X), use whichever value is higher. Leadership: the unit adds +1 to its Leadership for every full 10 models, to a maximum of +3. Its Leadership can never be raised above 10 this way. Orderly Charge: the unit's charges are never Disorderly Charges†, however many units it charges.</description>
+    <rule name="Ammo Runts" id="9107-ff91-8a87-766c" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Ammo Runts scurry alongside their masters carrying spare ammunition, replacement magazines and unstable experimental rounds looted from countless battlefields. Once per battle, before making a Shooting Attack, a model accompanied by one or more Ammo Runts may re-roll all failed To Hit rolls and failed To Wound rolls for a single Shooting Attack. After the attack has been resolved, remove one Ammo Runt from play.</description>
+    </rule>
+    <rule name="Bigga iz Betta" id="150c-ba53-b501-3917" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Models with the Bulky (X) special rule that join a unit add X to the total number of models in the unit for the purposes of determining Mob Rule bonuses. In addition, Cavalry models count as four models each for the purposes of determining Mob Rule bonuses.</description>
     </rule>
     <rule name="Breakin' Heads" id="740a-e433-bb54-c49d" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>If a unit with Mob Rule that includes a Nob, Boss Nob or Ork character fails a Morale check or Pinning test, it may choose to pass it instead. If it does, the unit suffers D3 automatic hits at Strength 6, AP –, allocated by the Ork player to models other than characters; armour saves may be taken.</description>
     </rule>
-    <rule name="'Ere We Go!" id="fe04-50c9-c0ad-8fb5" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>When rolling charge distance, the unit may re-roll one of the dice. If the charge still fails, the unit moves the full distance rolled toward the target, instead of the usual reduced failed-charge move†.</description>
+    <rule name="Da Biggest is Da Best" id="ebb2-7a37-35c8-2c7f" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Among the Orks, leadership belongs only to the strongest, loudest and most violently successful warlords. The greatest bosses dominate their mobs through brute strength, terrifying aggression and the simple certainty that anyone challenging their authority will be beaten to death publicly and immediately. Entire Waaagh!s rise and fall around such figures as lesser Orks instinctively gather beneath the biggest and meanest leaders they can find. A model with the Da Biggest is Da Best special rule grants the following benefits: Waaagh! Leader: If a Detachment contains at least one model with this special rule, that Detachment may select a single Waaagh! Doctrine or equivalent army-wide Ork upgrade if permitted by the campaign organizer. The Biggest and the Meanest: An army may only include a maximum of one model with this special rule per 1,000 points. Mob Boss: A model with this special rule may select an eligible Retinue or Nob bodyguard unit as part of the same Force Organisation slot. Da Biggest is Da Best is treated as equivalent to Master of the Legion for the purposes of any campaign rules, mission effects or special interactions that reference Master of the Legion.</description>
     </rule>
-    <rule name="Waaagh!" id="01d0-45ce-18b3-5564" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>Once per game, at the start of your turn, if your Warlord is an Ork and is on the table, you may call a Waaagh! Until the end of that turn, every unit with this rule gains the following: Fleet (+1): the unit gains Fleet (1), or increases an existing Fleet (X) by 1. Furious Charge (+1): the unit gains Furious Charge (1), or increases an existing Furious Charge (X) by 1. Units with Mob Rule also automatically pass Morale checks until the start of your next turn.</description>
-    </rule>
-    <rule name="Grot Riggers (X)" id="b62c-5ed8-63f2-5b53" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>At the end of each of your turns, roll a D6 for each model with this rule that has lost Hull Points. On a roll of X or more, it restores one lost Hull Point, up to its starting value. A model cannot use Grot Riggers in a turn it was embarked, Falling Back or locked in combat†.</description>
-    </rule>
-    <rule name="Grot 'Tendant" id="a26d-6630-480f-550c" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>A model with this rule is an attendant grot in its owner's unit. It does not count towards the unit's size, never gains Klan (X), and may not issue, accept or be chosen for a challenge. Hits can only be allocated to it by attacks with Precision Shots or Precision Strikes. When a Wound would be allocated to another model in its unit, the controlling player may allocate that Wound to a model with this rule instead. If it is removed, any bonus it gives is lost.</description>
-    </rule>
-    <rule name="Mek-Smasha (X)" id="6989-913d-92e6-2a8b" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>If a model with the Mek-Smasha (X) special rule is in base contact with, or Embarked upon, one or more damaged Vehicles, Dreadnoughts, Automata, or Mechanized units during the Shooting phase, they can attempt to repair one of them. If they do so, the model that attempted the repair cannot shoot any weapons or use any other abilities that would be used instead of making a Shooting Attack. Roll a D6. If the result is equal to or more than the value listed in brackets as part of this rule, the repair is successful. Apply one of the following options to the target unit the model is in base contact with or Embarked upon: Repair a Weapon Destroyed result. Repair an Immobilised result. Restore a lost Hull Point. Restore a lost Wound. If a Weapon Destroyed result is repaired, that weapon may not be used to attack in the same phase as it is repaired, but may be used to attack as normal in any phase after that. The Mek-Smasha cannot use this ability if they are Pinned or Falling Back.</description>
-    </rule>
-    <rule name="Mob size" id="d187-868d-395c-5256" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>Units with Mob Rule never gain the Fearless special rule from any source, including characters who join them. This keeps Breakin' Heads meaningful.</description>
-    </rule>
-    <rule name="Ramshackle (X)" id="a24d-bb55-ef95-085b" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>When an Ork vehicle with this rule suffers a penetrating hit, roll a D6 before rolling on the Vehicle Damage table†. On a roll of X or more, the hit is treated as a glancing hit instead. Knights and Titans have Ramshackle (5+); all other Ork vehicles have Ramshackle (6+). On a model with a Wounds Characteristic (such as the Speed Freek buggies), Ramshackle (X) is a damage mitigation rule instead: each time the model would lose a Wound, roll a D6; on a roll of X or more, that Wound is not lost. Ramshackle is not Feel No Pain: rules that ignore or negate Feel No Pain do not affect it. It is a Damage Mitigation roll: a model may make only a single Damage Mitigation roll of any type (including Feel No Pain) for any given Wound.</description>
+    <rule name="Dakka! (X)" id="0644-bb6e-7891-7f9f" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>When making Shooting Attacks with Auto weapons, unmodified To Hit rolls of X+ generate one additional hit. Additional hits generated in this way do not themselves generate additional hits.</description>
     </rule>
     <rule name="Deck Crew (X)" id="9aaf-3ec9-c252-3334" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>This weapon can only be used if the vehicle is locked in combat or has been charged. In the Initiative 1 step of the Fight sub-phase, the vehicle model makes a fixed number of attacks equal to X using this profile. These attacks hit automatically if the vehicle is stationary, or hit on a 4+ if the vehicle moved in the preceding Movement phase. These attacks do not benefit from charging or any army-wide special rules.</description>
     </rule>
+    <rule name="Dread Mob" id="431f-3f6b-fb9d-4f16" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>When deployed onto the battlefield, either at the start of the battle or when arriving from Reserves, all models with this special rule in the same unit must be deployed within unit coherency (3"). After deployment, all models immediately operate independently and are no longer treated as a single unit.</description>
+    </rule>
+    <rule name="'Ere We Go!" id="fe04-50c9-c0ad-8fb5" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>When rolling charge distance, the unit may re-roll one of the dice. If the charge still fails, the unit moves the full distance rolled toward the target, instead of the usual reduced failed-charge move†.</description>
+    </rule>
+    <rule name="Fetishes of Gork and Mork" id="3a26-8469-b84b-e8be" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Fetishes of Gork and Mork grant a 4+ Invulnerable Save and Adamantium Will (4+).</description>
+    </rule>
+    <rule name="Grot Attendants" id="67a8-98be-35bc-ea7b" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Grot Attendants are grots that are attached to other units. They provide a special bonus to the mob while they are still alive. In addition, they are all armed with a grot blasta and grot stabba unless otherwise noted. A model with this rule does not count towards the unit's size, never gains Klan (X), and may not issue, accept or be chosen for a challenge. Hits can only be allocated to it by attacks with Precision Shots or Precision Strikes. When a Wound would be allocated to another model in its unit, the controlling player may allocate that Wound to a model with this rule instead. If it is removed, any bonus it gives is lost.</description>
+    </rule>
+    <rule name="Grot Orderly" id="0b0d-ea28-e43e-05ad" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Grot Orderlies are terrified little surgical assistants, pain suppressors and battlefield medics that follow their masters carrying crude stimulants, spare body parts and improvised surgical tools. A model accompanied by one or more Grot Orderlies gains Feel No Pain (6+). If the model already possesses Feel No Pain, improve that roll by +1 to a maximum of Feel No Pain (4+). When a model benefiting from a Grot Orderly fails a Feel No Pain roll, the controlling player may instead remove one Grot Orderly from play. The Grot Orderly suffers the wound instead of the targeted model.</description>
+    </rule>
+    <rule name="Grot Piloted" id="82a3-ba19-93d3-bd40" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>This model may use the Leadership characteristic of the nearest friendly Ork Infantry Character within 12" when making Morale checks and Pinning checks. If no qualifying model is within range, this model suffers −1 Weapon Skill.</description>
+    </rule>
+    <rule name="Grot Riggers (X)" id="b62c-5ed8-63f2-5b53" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>At the end of each of your turns, roll a D6 for each model with this rule that has lost Hull Points. On a roll of X or more, it restores one lost Hull Point, up to its starting value. A model cannot use Grot Riggers in a turn it was embarked, Falling Back or locked in combat†.</description>
+    </rule>
+    <rule name="Kommando Grot" id="812e-4d9c-ed65-af1d" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Kommando Grots are sneaky little saboteurs, ammunition carriers and lookouts that creep ahead of the main mob marking targets, planting charges and slipping through spaces too small for larger Orks. A unit containing a Kommando Grot gains +1 to all Cover Saves while wholly within terrain. In addition, a unit containing a Kommando Grot gains Precision Shots (6+) during the first turn of the game.</description>
+    </rule>
+    <rule name="Luck of Mork and Gork" id="0c0a-a791-55b9-50de" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Gretchin units gain a 6+ Invulnerable Save against attacks made with Blast or Template weapons.</description>
+    </rule>
+    <rule name="Mek-Smasha (X)" id="6989-913d-92e6-2a8b" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>If a model with the Mek-Smasha (X) special rule is in base contact with, or Embarked upon, one or more damaged Vehicles, Dreadnoughts, Automata, or Mechanized units during the Shooting phase, they can attempt to repair one of them. If they do so, the model that attempted the repair cannot shoot any weapons or use any other abilities that would be used instead of making a Shooting Attack. Roll a D6. If the result is equal to or more than the value listed in brackets as part of this rule, the repair is successful. Apply one of the following options to the target unit the model is in base contact with or Embarked upon: Repair a Weapon Destroyed result. Repair an Immobilised result. Restore a lost Hull Point. Restore a lost Wound. If a Weapon Destroyed result is repaired, that weapon may not be used to attack in the same phase as it is repaired, but may be used to attack as normal in any phase after that. The Mek-Smasha cannot use this ability if they are Pinned or Falling Back.</description>
+    </rule>
+    <rule name="Might iz Right!" id="ebd9-925c-cabf-9b62" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Ork units with the Bulky (X) special rule add X to their Initiative Characteristic while engaged in a Challenge, to a maximum Initiative Characteristic of 7.</description>
+    </rule>
+    <rule name="Mob Rule" id="9986-6062-e065-6f8a" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Any Ork Infantry, Jump Infantry or Cavalry unit that is not a Walker, Grot or Vehicle gains the Mob Rule special rule. If a unit with this special rule contains 10 or more models, it gains Stubborn. If a unit with this special rule contains 20 or more models, it gains Fearless and Rage (2). If a unit with this special rule contains 30 or more models, it gains Fearless and Rage (3).</description>
+    </rule>
+    <rule name="Mob Up" id="b395-add5-c4b4-e188" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Two Ork units of the same type that end their Movement phase within 2" of each other may attempt to Mob Up. To Mob Up, the controlling player must immediately take a Leadership test using the highest Leadership characteristic available between the two units. If the test is passed, the two units immediately merge into a single unit for the remainder of the battle. If the test is failed, both units immediately suffer D6 Strength 6 AP – hits that also inflict Pinning. Only units of the same type may Mob Up. Shoota Boyz may Mob Up only with other Shoota Boyz mobs.</description>
+    </rule>
+    <rule name="Mo' Dakka" id="7c95-1e85-d2ea-dd63" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>When a model with this special rule generates an additional hit from Dakka!, the additional hit gains all of the same special rules and effects possessed by the original attack, including Rending, Breaching, Armourbane, Pinning and similar weapon effects.</description>
+    </rule>
+    <rule name="Oddboy" id="487b-f932-39ab-f602" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Oddboyz may join Ork units normally, but do not count toward unit size when determining bonuses granted by the Mob Rule special rule.</description>
+    </rule>
+    <rule name="Oil Runts" id="25c9-098f-a1c7-3184" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Oil Runts are filthy little mechanics and lubricant carriers that swarm over weapons, armour plates and damaged machinery attempting crude battlefield repairs while avoiding being stepped on by their larger kin. Once per battle, at the start of the controlling player's turn, a model accompanied by one or more Oil Runts may immediately regain a single lost Wound or Hull Point. After the repair has been resolved, remove one Oil Runt from play.</description>
+    </rule>
     <rule name="Open-topped" id="792a-d019-9e41-d7f8" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>The vehicle gains the Assault Vehicle special rule, but adds 1 to its rolls on the Vehicle Damage table when it suffers a penetrating hit. The entire vehicle counts as its Access Point.</description>
+    </rule>
+    <rule name="Ramshackled Carapace (X)" id="2a3f-661c-d22f-ef1b" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>This unit is a ramshackle mechanical nightmare held together through crude reinforcement, unstable reactors and the barely competent maintenance of terrified grot crews. Though wildly unreliable, these clanking engines of war are often far harder to destroy than logic would suggest. A model with the Ramshackled Carapace (X) special rule gains an X+ Invulnerable Save. In addition, a model with Ramshackled Carapace (X) and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses D3 Wounds for each unsaved Wound inflicted by the attack. When a model with Ramshackled Carapace (X) loses its last Wound, but before it is removed as a casualty, all models, both friendly and enemy, within D6" suffer an automatic Strength 8 AP – hit.</description>
+    </rule>
+    <rule name="Ramshackled Vehicle (X)" id="d92a-f330-bfcd-9d74" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Ork vehicles are infamous for being impossible creations of crude engineering, scavenged armour plating and dangerously unstable mechanical improvisation. Built from stolen hulls, battlefield wreckage and whatever scrap metal happened to survive the last explosion, these ramshackle machines should barely function at all. Yet through some combination of brutal overengineering, improbable luck and the inexplicable genius of the Ork mekboyz, many continue fighting long after more sophisticated war machines would have been destroyed. A vehicle with the Ramshackled Vehicle (X) special rule gains an X+ Invulnerable Save. In addition, when a vehicle with the Ramshackled Vehicle (X) special rule suffers a Penetrating Hit, roll a D6. On a result of X or greater, the Penetrating Hit is instead treated as a Glancing Hit. However, on a roll of 1, add +2 to the roll made on the Vehicle Damage table.</description>
+    </rule>
+    <rule name="Retinue" id="1d82-3107-8ace-917c" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>A Warboss Retinue may be selected as a Retinue for a Warboss. While joined by the Warboss for whom it was selected as a Retinue: the unit does not use up an additional Force Organisation slot all models in the unit gain the Line Sub-type If the attached Warboss is removed as a casualty, the unit immediately loses the Line Sub-type unless another rule would grant it.</description>
+    </rule>
+    <rule name="Runt Orkalytes" id="19f5-7ebe-55fc-9b9a" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>At the beginning of any phase, the controlling player may remove one Runt Orkalyte from play. If they do, the Weirdboy immediately gains +1 Waaagh! Energy until the end of the current turn. If a Runt Orkalyte is removed as a casualty by a Precision Shots or Precision Strikes attack, all units within D6" suffer D3+1 hits at Strength D3+1 and AP D6+1.</description>
     </rule>
     <rule name="Stealth" id="4f86-aae1-17da-67cb" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.</description>
@@ -12952,8 +12999,17 @@
     <rule name="Tank Hunters" id="cb2f-190f-9b7f-0f1e" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>The model's attacks gain the Sunder special rule. If a weapon already has Sunder, add 1 to its Armour Penetration rolls instead.</description>
     </rule>
+    <rule name="Titanic Presence" id="e9b1-faec-6cf8-b4b0" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Friendly Ork Infantry, Cavalry and Jump Infantry units within 18" of a Stompa gain Stubborn. In addition, friendly Ork units within 18" may use the Stompa's Leadership characteristic of 10 when making Morale checks and Pinning checks. A Stompa also counts as 15 additional models for any special rule or ability that counts the number of nearby Ork models.</description>
+    </rule>
+    <rule name="Waaagh!" id="01d0-45ce-18b3-5564" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Once per game, at the start of your turn, if your Warlord is an Ork and is on the table, you may call a Waaagh! Until the end of that turn, every unit with this rule gains the following: Fleet (+1): the unit gains Fleet (1), or increases an existing Fleet (X) by 1. Furious Charge (+1): the unit gains Furious Charge (1), or increases an existing Furious Charge (X) by 1. Units with Mob Rule also automatically pass Morale checks until the start of your next turn.</description>
+    </rule>
     <rule name="Waaagh! Energy" id="22d5-a04c-eb29-712d" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>When a Weirdboy makes a Psychic check, count the friendly Ork models within 12" of him. He gains +1 Leadership for every full 10 models, to a maximum of +3. His Leadership can never be raised above 10 by this rule. The power of the Waaagh! is hard to control: an Ork Psychic check suffers Perils of the Warp on any double, even if the check is passed. Every Weirdboy knows Da Jump and Frazzle. A Weirdboy with the Warphead upgrade also knows Fists of Gork. Power: Kind, Phase, Effect. Da Jump: Psychic power, Movement, Select one friendly Ork unit within 12" of the Weirdboy, plus one more for each +1 of his current Waaagh! Energy bonus. Remove the selected units from the battlefield and place them in Reserves. Roll for them as normal for Reserves, adding the Waaagh! Energy bonus to each roll; when they arrive, they enter play by Deep Strike as normal. The Waaagh! Energy bonus is fixed when Da Jump is cast, and that same value is used for these Reserves rolls.. Fists of Gork: Psychic power, Assault, Until end of phase the Weirdboy has +2 Strength and +2 Attacks.. Frazzle: Psychic weapon, Shooting, Template, S5, AP4, Assault 1, Pinning.</description>
+      <description>A Weirdboy increases its Leadership characteristic by +1 for the purposes of making Psychic checks for every 10 friendly Ork Infantry models within 12", to a maximum bonus of +3. His Leadership can never be raised above 10 by this rule. Models with both the Bigga iz Betta and Bulky (X) special rules count as X additional models for the purposes of determining Waaagh! Energy. The power of the Waaagh! is hard to control: an Ork Psychic check suffers Perils of the Warp on any double, even if the check is passed.</description>
+    </rule>
+    <rule name="Perils of the Waaagh!" id="39f7-c1ce-029c-1605" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>If a Weirdboy fails a Psychic check, it automatically suffers Perils of the Warp. In addition, all units within D6" plus the current Waaagh! Energy bonus suffer D6 Strength 3 AP – hits with the Pinning and Shell Shock (1) special rules. The Weirdboy's current Waaagh! Energy bonus is also added to: the range of the effect the Strength of the hits the number of hits inflicted the value of the Shell Shock special rule Every Weirdboy knows Da Jump and Frazzle. A Weirdboy with the Warphead upgrade also knows Fists of Gork. Power: Kind, Phase, Effect. Da Jump: Psychic power, Movement, Select one friendly Ork unit within 12" of the Weirdboy, plus one more for each +1 of his current Waaagh! Energy bonus. Remove the selected units from the battlefield and place them in Reserves. Roll for them as normal for Reserves, adding the Waaagh! Energy bonus to each roll; when they arrive, they enter play by Deep Strike as normal. The Waaagh! Energy bonus is fixed when Da Jump is cast, and that same value is used for these Reserves rolls.. Fists of Gork: Psychic power, Assault, Until end of phase the Weirdboy has +2 Strength and +2 Attacks.. Frazzle: Psychic weapon, Shooting, Template, S5, AP4, Assault 1, Pinning.</description>
     </rule>
     <rule name="Klan (X)" id="a734-620c-db79-3594" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>When building an army, choose one Klan for its Primary Detachment; an Allied Detachment may choose a different Klan. Every unit in that detachment with the Mob Rule special rule, and every Ork vehicle and Dreadnought, gains Klan (X), where X is the chosen Klan. Gretchin units and Gretchin crew never gain Klan (X).</description>

@@ -16,35 +16,69 @@ Build armies with the HH2.0 Crusade Force Organisation chart, using the slot giv
 
 ## Army-wide Special Rules
 
-Every unit in this list has **Mob Rule**, **'Ere We Go!** and **Waaagh!** unless its entry says otherwise. Vehicles have **Ramshackle** (X) instead.
+Every unit in this list has **'Ere We Go!** and **Waaagh!** unless its entry says otherwise. **Mob Rule** goes to the units its own rule names. Vehicles have **Ramshackled Vehicle** (X), and the mechanised buggies have **Ramshackled Carapace** (X). Knights and Titans have (5+); all other Ork vehicles and buggies have (6+).
 
-**Mob Rule.** Orks draw courage and fury from their numbers. A unit with this rule gains the following, counting the models in the unit at the time:
+**Ammo Runts.** Ammo Runts scurry alongside their masters carrying spare ammunition, replacement magazines and unstable experimental rounds looted from countless battlefields.
 
-| Unit Size | Leadership | Furious Charge |
-|---|---|---|
-| 1–9 | No bonus | None |
-| 10–19 | +1 | Furious Charge (1) |
-| 20–29 | +2 | Furious Charge (2) |
-| 30 or more | +3 | Furious Charge (2) |
+Once per battle, before making a Shooting Attack, a model accompanied by one or more Ammo Runts may re-roll all failed To Hit rolls and failed To Wound rolls for a single Shooting Attack.
 
-- **Furious Charge:** the unit gains Furious Charge (1) for every full 10 models, to a maximum of Furious Charge (2). If it already has Furious Charge (X), use whichever value is higher.
-- **Leadership:** the unit adds +1 to its Leadership for every full 10 models, to a maximum of +3. Its Leadership can never be raised above 10 this way.
-- **Orderly Charge:** the unit's charges are never Disorderly Charges†, however many units it charges.
+After the attack has been resolved, remove one Ammo Runt from play.
+
+**Bigga iz Betta.** Models with the Bulky (X) special rule that join a unit add X to the total number of models in the unit for the purposes of determining Mob Rule bonuses.
+
+In addition, Cavalry models count as four models each for the purposes of determining Mob Rule bonuses.
 
 **Breakin' Heads.** If a unit with Mob Rule that includes a Nob, Boss Nob or Ork character fails a Morale check or Pinning test, it may choose to pass it instead. If it does, the unit suffers D3 automatic hits at Strength 6, AP –, allocated by the Ork player to models other than characters; armour saves may be taken.
 
+**Da Biggest is Da Best.** Among the Orks, leadership belongs only to the strongest, loudest and most violently successful warlords. The greatest bosses dominate their mobs through brute strength, terrifying aggression and the simple certainty that anyone challenging their authority will be beaten to death publicly and immediately. Entire Waaagh!s rise and fall around such figures as lesser Orks instinctively gather beneath the biggest and meanest leaders they can find.
+
+A model with the Da Biggest is Da Best special rule grants the following benefits:
+
+- **Waaagh! Leader:** If a Detachment contains at least one model with this special rule, that Detachment may select a single Waaagh! Doctrine or equivalent army-wide Ork upgrade if permitted by the campaign organizer.
+- **The Biggest and the Meanest:** An army may only include a maximum of one model with this special rule per 1,000 points.
+- **Mob Boss:** A model with this special rule may select an eligible Retinue or Nob bodyguard unit as part of the same Force Organisation slot.
+
+Da Biggest is Da Best is treated as equivalent to Master of the Legion for the purposes of any campaign rules, mission effects or special interactions that reference Master of the Legion.
+
+**Dakka! (X).** When making Shooting Attacks with Auto weapons, unmodified To Hit rolls of X+ generate one additional hit.
+
+Additional hits generated in this way do not themselves generate additional hits.
+
+**Deck Crew (X).** This weapon can only be used if the vehicle is locked in combat or has been charged. In the Initiative 1 step of the Fight sub-phase, the vehicle model makes a fixed number of attacks equal to X using this profile. These attacks hit automatically if the vehicle is stationary, or hit on a 4+ if the vehicle moved in the preceding Movement phase. These attacks do not benefit from charging or any army-wide special rules.
+
+**Dread Mob.** When deployed onto the battlefield, either at the start of the battle or when arriving from Reserves, all models with this special rule in the same unit must be deployed within unit coherency (3").
+
+After deployment, all models immediately operate independently and are no longer treated as a single unit.
+
 **'Ere We Go!** When rolling charge distance, the unit may re-roll one of the dice. If the charge still fails, the unit moves the full distance rolled toward the target, instead of the usual reduced failed-charge move†.
 
-**Waaagh!** Once per game, at the start of your turn, if your Warlord is an Ork and is on the table, you may call a Waaagh! Until the end of that turn, every unit with this rule gains the following:
+**Fetishes of Gork and Mork.** Fetishes of Gork and Mork grant a 4+ Invulnerable Save and Adamantium Will (4+).
 
-- **Fleet (+1):** the unit gains Fleet (1), or increases an existing Fleet (X) by 1.
-- **Furious Charge (+1):** the unit gains Furious Charge (1), or increases an existing Furious Charge (X) by 1.
+**Grot Attendants.** Grot Attendants are grots that are attached to other units. They provide a special bonus to the mob while they are still alive. In addition, they are all armed with a grot blasta and grot stabba unless otherwise noted.
 
-Units with Mob Rule also automatically pass Morale checks until the start of your next turn.
+A model with this rule does not count towards the unit's size, never gains Klan (X), and may not issue, accept or be chosen for a challenge. Hits can only be allocated to it by attacks with Precision Shots or Precision Strikes. When a Wound would be allocated to another model in its unit, the controlling player may allocate that Wound to a model with this rule instead. If it is removed, any bonus it gives is lost.
+
+**Grot Orderly.** Grot Orderlies are terrified little surgical assistants, pain suppressors and battlefield medics that follow their masters carrying crude stimulants, spare body parts and improvised surgical tools.
+
+A model accompanied by one or more Grot Orderlies gains Feel No Pain (6+).
+
+If the model already possesses Feel No Pain, improve that roll by +1 to a maximum of Feel No Pain (4+).
+
+When a model benefiting from a Grot Orderly fails a Feel No Pain roll, the controlling player may instead remove one Grot Orderly from play. The Grot Orderly suffers the wound instead of the targeted model.
+
+**Grot Piloted.** This model may use the Leadership characteristic of the nearest friendly Ork Infantry Character within 12" when making Morale checks and Pinning checks.
+
+If no qualifying model is within range, this model suffers −1 Weapon Skill.
 
 **Grot Riggers (X).** At the end of each of your turns, roll a D6 for each model with this rule that has lost Hull Points. On a roll of X or more, it restores one lost Hull Point, up to its starting value. A model cannot use Grot Riggers in a turn it was embarked, Falling Back or locked in combat†.
 
-**Grot 'Tendant.** A model with this rule is an attendant grot in its owner's unit. It does not count towards the unit's size, never gains Klan (X), and may not issue, accept or be chosen for a challenge. Hits can only be allocated to it by attacks with Precision Shots or Precision Strikes. When a Wound would be allocated to another model in its unit, the controlling player may allocate that Wound to a model with this rule instead. If it is removed, any bonus it gives is lost.
+**Kommando Grot.** Kommando Grots are sneaky little saboteurs, ammunition carriers and lookouts that creep ahead of the main mob marking targets, planting charges and slipping through spaces too small for larger Orks.
+
+A unit containing a Kommando Grot gains +1 to all Cover Saves while wholly within terrain.
+
+In addition, a unit containing a Kommando Grot gains Precision Shots (6+) during the first turn of the game.
+
+**Luck of Mork and Gork.** Gretchin units gain a 6+ Invulnerable Save against attacks made with Blast or Template weapons.
 
 **Mek-Smasha (X).** If a model with the Mek-Smasha (X) special rule is in base contact with, or Embarked upon, one or more damaged Vehicles, Dreadnoughts, Automata, or Mechanized units during the Shooting phase, they can attempt to repair one of them. If they do so, the model that attempted the repair cannot shoot any weapons or use any other abilities that would be used instead of making a Shooting Attack.
 
@@ -57,17 +91,77 @@ Roll a D6. If the result is equal to or more than the value listed in brackets a
 
 If a Weapon Destroyed result is repaired, that weapon may not be used to attack in the same phase as it is repaired, but may be used to attack as normal in any phase after that. The Mek-Smasha cannot use this ability if they are Pinned or Falling Back.
 
-**Mob size.** Units with Mob Rule never gain the Fearless special rule from any source, including characters who join them. This keeps Breakin' Heads meaningful.
+**Might iz Right!** Ork units with the Bulky (X) special rule add X to their Initiative Characteristic while engaged in a Challenge, to a maximum Initiative Characteristic of 7.
 
-**Ramshackle (X).** When an Ork vehicle with this rule suffers a penetrating hit, roll a D6 before rolling on the Vehicle Damage table†. On a roll of X or more, the hit is treated as a glancing hit instead. Knights and Titans have Ramshackle (5+); all other Ork vehicles have Ramshackle (6+). On a model with a Wounds Characteristic (such as the Speed Freek buggies), Ramshackle (X) is a damage mitigation rule instead: each time the model would lose a Wound, roll a D6; on a roll of X or more, that Wound is not lost. Ramshackle is not Feel No Pain: rules that ignore or negate Feel No Pain do not affect it. It is a Damage Mitigation roll: a model may make only a single Damage Mitigation roll of any type (including Feel No Pain) for any given Wound.
+**Mob Rule.** Any Ork Infantry, Jump Infantry or Cavalry unit that is not a Walker, Grot or Vehicle gains the Mob Rule special rule.
 
-**Deck Crew (X).** This weapon can only be used if the vehicle is locked in combat or has been charged. In the Initiative 1 step of the Fight sub-phase, the vehicle model makes a fixed number of attacks equal to X using this profile. These attacks hit automatically if the vehicle is stationary, or hit on a 4+ if the vehicle moved in the preceding Movement phase. These attacks do not benefit from charging or any army-wide special rules.
+- If a unit with this special rule contains 10 or more models, it gains Stubborn.
+- If a unit with this special rule contains 20 or more models, it gains Fearless and Rage (2).
+- If a unit with this special rule contains 30 or more models, it gains Fearless and Rage (3).
+
+**Mob Up.** Two Ork units of the same type that end their Movement phase within 2" of each other may attempt to Mob Up.
+
+To Mob Up, the controlling player must immediately take a Leadership test using the highest Leadership characteristic available between the two units.
+
+If the test is passed, the two units immediately merge into a single unit for the remainder of the battle.
+
+If the test is failed, both units immediately suffer D6 Strength 6 AP – hits that also inflict Pinning.
+
+Only units of the same type may Mob Up. Shoota Boyz may Mob Up only with other Shoota Boyz mobs.
+
+**Mo' Dakka.** When a model with this special rule generates an additional hit from Dakka!, the additional hit gains all of the same special rules and effects possessed by the original attack, including Rending, Breaching, Armourbane, Pinning and similar weapon effects.
+
+**Oddboy.** Oddboyz may join Ork units normally, but do not count toward unit size when determining bonuses granted by the Mob Rule special rule.
+
+**Oil Runts.** Oil Runts are filthy little mechanics and lubricant carriers that swarm over weapons, armour plates and damaged machinery attempting crude battlefield repairs while avoiding being stepped on by their larger kin.
+
+Once per battle, at the start of the controlling player's turn, a model accompanied by one or more Oil Runts may immediately regain a single lost Wound or Hull Point.
+
+After the repair has been resolved, remove one Oil Runt from play.
 
 **Open-topped.** The vehicle gains the Assault Vehicle special rule, but adds 1 to its rolls on the Vehicle Damage table when it suffers a penetrating hit. The entire vehicle counts as its Access Point.
+
+**Ramshackled Carapace (X).** This unit is a ramshackle mechanical nightmare held together through crude reinforcement, unstable reactors and the barely competent maintenance of terrified grot crews. Though wildly unreliable, these clanking engines of war are often far harder to destroy than logic would suggest.
+
+A model with the Ramshackled Carapace (X) special rule gains an X+ Invulnerable Save.
+
+In addition, a model with Ramshackled Carapace (X) and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses D3 Wounds for each unsaved Wound inflicted by the attack.
+
+When a model with Ramshackled Carapace (X) loses its last Wound, but before it is removed as a casualty, all models, both friendly and enemy, within D6" suffer an automatic Strength 8 AP – hit.
+
+**Ramshackled Vehicle (X).** Ork vehicles are infamous for being impossible creations of crude engineering, scavenged armour plating and dangerously unstable mechanical improvisation. Built from stolen hulls, battlefield wreckage and whatever scrap metal happened to survive the last explosion, these ramshackle machines should barely function at all. Yet through some combination of brutal overengineering, improbable luck and the inexplicable genius of the Ork mekboyz, many continue fighting long after more sophisticated war machines would have been destroyed.
+
+A vehicle with the Ramshackled Vehicle (X) special rule gains an X+ Invulnerable Save.
+
+In addition, when a vehicle with the Ramshackled Vehicle (X) special rule suffers a Penetrating Hit, roll a D6. On a result of X or greater, the Penetrating Hit is instead treated as a Glancing Hit. However, on a roll of 1, add +2 to the roll made on the Vehicle Damage table.
+
+**Retinue.** A Warboss Retinue may be selected as a Retinue for a Warboss. While joined by the Warboss for whom it was selected as a Retinue:
+
+- the unit does not use up an additional Force Organisation slot
+- all models in the unit gain the Line Sub-type
+
+If the attached Warboss is removed as a casualty, the unit immediately loses the Line Sub-type unless another rule would grant it.
+
+**Runt Orkalytes.** At the beginning of any phase, the controlling player may remove one Runt Orkalyte from play. If they do, the Weirdboy immediately gains +1 Waaagh! Energy until the end of the current turn.
+
+If a Runt Orkalyte is removed as a casualty by a Precision Shots or Precision Strikes attack, all units within D6" suffer D3+1 hits at Strength D3+1 and AP D6+1.
 
 **Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
 
 **Tank Hunters.** The model's attacks gain the Sunder special rule. If a weapon already has Sunder, add 1 to its Armour Penetration rolls instead.
+
+**Titanic Presence.** Friendly Ork Infantry, Cavalry and Jump Infantry units within 18" of a Stompa gain Stubborn.
+
+In addition, friendly Ork units within 18" may use the Stompa's Leadership characteristic of 10 when making Morale checks and Pinning checks.
+
+A Stompa also counts as 15 additional models for any special rule or ability that counts the number of nearby Ork models.
+
+**Waaagh!** Once per game, at the start of your turn, if your Warlord is an Ork and is on the table, you may call a Waaagh! Until the end of that turn, every unit with this rule gains the following:
+
+- **Fleet (+1):** the unit gains Fleet (1), or increases an existing Fleet (X) by 1.
+- **Furious Charge (+1):** the unit gains Furious Charge (1), or increases an existing Furious Charge (X) by 1.
+
+Units with Mob Rule also automatically pass Morale checks until the start of your next turn.
 
 ## Advanced Reaction: Get Stuck In
 
@@ -79,9 +173,16 @@ The point of this reaction is to punish an opponent who stops near a mob of Orks
 
 ## Psychic Discipline: Power of da Waaagh!
 
-There is no psychic phase in 2.0. A Weirdboy uses his powers in the phase each one names, making a Psychic check against his Leadership†. A failed check causes Perils of the Warp as in the 2.0 rulebook†. Ork Psychic checks also suffer Perils on any double, as described under Waaagh! Energy.
+There is no psychic phase in 2.0. A Weirdboy uses his powers in the phase each one names, making a Psychic check against his Leadership†. A failed check causes Perils of the Waaagh!. Ork Psychic checks also suffer Perils on any double, as described under Waaagh! Energy.
 
-**Waaagh! Energy.** When a Weirdboy makes a Psychic check, count the friendly Ork models within 12" of him. He gains +1 Leadership for every full 10 models, to a maximum of +3. His Leadership can never be raised above 10 by this rule. The power of the Waaagh! is hard to control: an Ork Psychic check suffers Perils of the Warp on any double, even if the check is passed.
+**Waaagh! Energy.** A Weirdboy increases its Leadership characteristic by +1 for the purposes of making Psychic checks for every 10 friendly Ork Infantry models within 12", to a maximum bonus of +3. His Leadership can never be raised above 10 by this rule. Models with both the Bigga iz Betta and Bulky (X) special rules count as X additional models for the purposes of determining Waaagh! Energy. The power of the Waaagh! is hard to control: an Ork Psychic check suffers Perils of the Warp on any double, even if the check is passed.
+
+**Perils of the Waaagh!** If a Weirdboy fails a Psychic check, it automatically suffers Perils of the Warp. In addition, all units within D6" plus the current Waaagh! Energy bonus suffer D6 Strength 3 AP – hits with the Pinning and Shell Shock (1) special rules. The Weirdboy's current Waaagh! Energy bonus is also added to:
+
+- the range of the effect
+- the Strength of the hits
+- the number of hits inflicted
+- the value of the Shell Shock special rule
 
 Every Weirdboy knows Da Jump and Frazzle. A Weirdboy with the Warphead upgrade also knows Fists of Gork.
 
@@ -269,7 +370,7 @@ _Speed is its own reward. Speed Freeks race into battle on bikes and buggies, an
 
 - Warbikers may be taken as Troops choices in a Detachment using this Rite of War, and gain the Line sub-type†.
 - Nobz on Warbikes may be taken as Fast Attack choices in a Detachment using this Rite of War.
-- Ork vehicles with the Fast sub-type and Mechanised Ork Cavalry (the Speed Freek buggies) in a Detachment using this Rite of War improve their Ramshackle (X) by 1, so Ramshackle (6+) becomes Ramshackle (5+).
+- Ork vehicles with the Fast sub-type and Mechanised Ork Cavalry (the Speed Freek buggies) in a Detachment using this Rite of War improve their Ramshackled Vehicle (X) or Ramshackled Carapace (X) by 1, so (6+) becomes (5+).
 
 **Limitations**
 
@@ -646,7 +747,7 @@ Base sizes follow recent 40k kits and are approximate; use whatever your models 
 
 - 'Ere We Go!
 - Flashiest Gitz: if Badrukk is the Warlord, Flash Gitz may be taken as Troops
-- Grot 'Tendant (Ammo Runts only)
+- Grot Attendants (Ammo Runts only)
 - Klan (Bad Moons)
 - Mob Rule
 - Waaagh!
@@ -714,10 +815,10 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 - Battle-Hardened (2) (Dok Scrabbit and Grot Gorgutz only)
 - Mek-Smasha (4+), improved to (3+) by Grot Gorgutz
 - 'Ere We Go!
-- Grot 'Tendant (Dok Scrabbit and Grot Gorgutz only)
+- Grot Attendants (Dok Scrabbit and Grot Gorgutz only)
 - Klan (Goffs)
 - Kustom Repairs: when Buzzgob uses Mek-Smasha, he may restore up to D3 lost Hull Points or Wounds instead of one, and may use it twice each turn on different models
-- Mekaniak: friendly Ork vehicles and Dreadnoughts within 6" of Buzzgob improve their Ramshackle (X) by 1, to a best of Ramshackle (4+)
+- Mekaniak: friendly Ork vehicles and Dreadnoughts within 6" of Buzzgob improve their Ramshackled Vehicle (X) or Ramshackled Carapace (X) by 1, to a best of (4+)
 - Smoky Squig: Dok Scrabbit's fumes give Buzzgob and any unit he joins Shrouded (6+)
 - Waaagh!
 
@@ -1449,7 +1550,7 @@ A unit of no more than 12 models may take a Trukk as a Dedicated Transport. Any 
 
 **Special Rules**
 
-- Mob Rule (Gretchin are not affected by Waaagh! and cannot use Get Stuck In)
+- Grots: Gretchin do not have Mob Rule, are not affected by Waaagh! and cannot use Get Stuck In
 - Runtherd: if the unit fails a Morale check while a Runtherd lives, it may pass instead and remove D3 Gretchin
 
 **Options**
@@ -1491,7 +1592,7 @@ _This model may only be selected as a Dedicated Transport for another unit, and 
 
 - Klan (X)
 - Open-topped†
-- Ramshackle (6+)
+- Ramshackled Vehicle (6+)
 
 **Access Points**
 
@@ -1540,7 +1641,7 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 
 - Dive Bomb: before dropping a boom bomb, roll a D6; on a 1 the Blitza-bommer takes a glancing hit, on a 6 the bomb is AP2
 - Klan (X)
-- Ramshackle (6+)
+- Ramshackled Vehicle (6+)
 
 **Options**
 
@@ -1574,7 +1675,7 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 - 'Ere We Go!
 - Grot Gunner: re-roll one failed to-hit roll per turn
 - Klan (X)
-- Ramshackle (6+)
+- Ramshackled Carapace (6+)
 - Speed Demons (as Kustom Boosta-blasta)
 - Waaagh!
 
@@ -1608,7 +1709,7 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 **Special Rules**
 
 - Klan (X)
-- Ramshackle (6+)
+- Ramshackled Vehicle (6+)
 
 **Options**
 
@@ -1639,7 +1740,7 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 **Special Rules**
 
 - Klan (X)
-- Ramshackle (6+)
+- Ramshackled Vehicle (6+)
 - Strafing Run
 - Waaagh! Plane: during a Waaagh!, each supa-shoota fires one extra shot
 
@@ -1714,7 +1815,7 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 - Blastin' Past: after moving, may make a Template attack with its burna exhausts against one enemy unit it moved over
 - 'Ere We Go!
 - Klan (X)
-- Ramshackle (6+)
+- Ramshackled Carapace (6+)
 - Speed Demons: a model that chooses to Advance gains Shrouded (5+) until the start of the controlling player's next turn
 - Waaagh!
 
@@ -1751,7 +1852,7 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 - 'Ere We Go!
 - Fly-By: once per turn, after moving, choose one enemy unit it moved over; that unit suffers D3 hits at Strength 6, AP 4
 - Klan (X)
-- Ramshackle (6+)
+- Ramshackled Carapace (6+)
 - Speed Demons (as Kustom Boosta-blasta)
 - Waaagh!
 
@@ -1785,7 +1886,7 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 
 - 'Ere We Go!
 - Klan (X)
-- Ramshackle (6+)
+- Ramshackled Carapace (6+)
 - Speed Demons (as Kustom Boosta-blasta)
 - Squig Mines: once per game, an enemy unit that ends a move within 6" takes D6 S4, AP – hits
 - Waaagh!
@@ -1820,7 +1921,7 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 
 - 'Ere We Go!
 - Klan (X)
-- Ramshackle (6+)
+- Ramshackled Carapace (6+)
 - Shokk Tunnel: once per game, in the Movement phase, remove it and set it up anywhere on the battlefield, as though arriving by Deep Strike†
 - Speed Demons (as Kustom Boosta-blasta)
 - Waaagh!
@@ -1987,7 +2088,7 @@ The Battlewagon is also available as a Dedicated Transport to Nobz, Meganobz and
 
 - Klan (X)
 - Kustom Force Field: 5+ invulnerable save against shooting, for this model only
-- Ramshackle (6+)
+- Ramshackled Vehicle (6+)
 
 **Options**
 
@@ -2022,7 +2123,7 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 
 - Klan (X)
 - Open-topped†
-- Ramshackle (6+)
+- Ramshackled Vehicle (6+)
 
 **Access Points**
 
@@ -2102,7 +2203,7 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 - Bone Breaker: its deff rolla hits on Tank Shock as well as Ramming
 - Klan (X)
 - Open-topped†
-- Ramshackle (6+)
+- Ramshackled Vehicle (6+)
 
 **Access Points**
 
@@ -2226,7 +2327,7 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 **Special Rules**
 
 - Klan (X)
-- Ramshackle (6+)
+- Ramshackled Vehicle (6+)
 
 **Access Points**
 
@@ -2273,7 +2374,7 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 
 - Klan (X)
 - Open-topped†
-- Ramshackle (6+)
+- Ramshackled Vehicle (6+)
 
 **Access Points**
 
@@ -2305,7 +2406,7 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 
 - Klan (X)
 - Open-topped†
-- Ramshackle (6+)
+- Ramshackled Vehicle (6+)
 - Wartotem: friendly Beast Snagga units within 12" re-roll failed Morale checks
 - Wurrtower: carries a Wurrboy who knows Power of da Waaagh! and uses the rig's Ld 8 for Psychic checks
 
@@ -2470,7 +2571,7 @@ Ghazghkull Thraka takes the Primarch slot of the Force Organisation chart, and c
 - Battle-Hardened (2) (Makari only)
 - Da Grand Warlord's Ladz: while within 3" of a friendly Ork Infantry unit, enemy units more than 12" away may not target him with shooting attacks
 - 'Ere We Go!
-- Grot 'Tendant (Makari only)
+- Grot Attendants (Makari only)
 - Invulnerable save (4+)
 - Klan (Goffs)
 - Makari, Hoist Dat Banner!: once per game, in your Movement phase, pick friendly Ork units up to the current game turn number; until the start of your next turn they count as being under a Waaagh!, without using the army's Waaagh!
@@ -2509,7 +2610,7 @@ Lords of War follow the 2.0 points limit for that slot†.
 **Special Rules**
 
 - Klan (X)
-- Ramshackle (5+)
+- Ramshackled Vehicle (5+)
 
 **Transport**
 
@@ -2548,7 +2649,7 @@ Lords of War follow the 2.0 points limit for that slot†.
 **Special Rules**
 
 - Klan (X)
-- Ramshackle (5+)
+- Ramshackled Vehicle (5+)
 
 **Transport**
 
@@ -2590,7 +2691,8 @@ Lords of War follow the 2.0 points limit for that slot†.
 
 - Grot Riggers (5+)
 - Klan (X)
-- Ramshackle (5+)
+- Ramshackled Vehicle (5+)
+- Titanic Presence
 
 **Transport**
 
@@ -2613,7 +2715,7 @@ The Stompa is a Titan-scale model. If your group plays without Titans, swap it o
 
 _A grot whose only job is to carry spare ammunition, and to duck when the shooting starts._
 
-Once per game, a unit that includes at least one model with an ammo runt may re-roll one failed to-hit roll when shooting. Remove the ammo runt after it is used.
+A model accompanied by one or more ammo runts has the Ammo Runts special rule.
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -2629,7 +2731,7 @@ Once per game, a unit that includes at least one model with an ammo runt may re-
 
 **Special Rules**
 
-- Grot 'Tendant
+- Grot Attendants
 
 ### 'Ard Case
 
@@ -2731,13 +2833,13 @@ A model with Mek-Smasha and a grot oiler improves its Mek-Smasha (X) by 1, to a 
 
 **Special Rules**
 
-- Grot 'Tendant
+- Grot Attendants
 
 ### Grot Orderly
 
 _A grot assistant who holds the patient down._
 
-A Painboy with a grot orderly improves the Feel No Pain (X) from his Dok's tools by 1. For example, Feel No Pain (6+) becomes Feel No Pain (5+).
+A model accompanied by one or more grot orderlies has the Grot Orderly special rule.
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -2753,7 +2855,7 @@ A Painboy with a grot orderly improves the Feel No Pain (X) from his Dok's tools
 
 **Special Rules**
 
-- Grot 'Tendant
+- Grot Attendants
 
 ### Grot Riggers
 
