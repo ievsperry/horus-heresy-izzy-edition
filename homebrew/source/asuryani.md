@@ -1,10 +1,10 @@
-# Aeldari for The Horus Heresy 2.0 — Homebrew Conversion
+# Asuryani for The Horus Heresy 2.0 — Homebrew Conversion
 
 Oct 25, 2026 · @Isaac
 
 ## Introduction
 
-This is Liber Aelphari, the Aeldari section of Liber Xenos, for The Horus Heresy 2.0. It covers the shared Aeldari rules (civilizations, detachments and psychic disciplines) and the Anhrathe Corsair fleets. Drukhari units, rules and wargear are in the Drukhari document. The Asuryani (Craftworld) and Saedath (proto-Harlequin, Rillietann) army lists come from *Liber Antiquia: The Ancient Eldar* v1.6 (Liber Panoptica Development Team, 8 January 2024, CC BY-NC-ND 4.0). Where both books give the same weapon or psychic discipline, this catalogue uses the Liber Aelphari version.
+This is the Asuryani (Craftworld) army list for The Horus Heresy 2.0, from *Liber Antiquia: The Ancient Eldar* v1.6 (Liber Panoptica Development Team, 8 January 2024, CC BY-NC-ND 4.0), with the shared Aeldari rules, detachments, psychic disciplines and weapons of Liber Aelphari. Where both books give the same weapon or psychic discipline, this catalogue uses the Liber Aelphari version. The Anhrathe, Rillietann and Drukhari have their own documents.
 
 *The Aeldari were once the greatest civilization in the galaxy, an empire so ancient and technologically advanced that even at the height of the Imperium's power mankind could scarcely comprehend the scale of what had been lost. For millions of years the Aeldari dominated vast regions of the stars through mastery of psychic power, impossible technology and the labyrinthine passages of the Webway. Their fleets moved freely between worlds while their warriors fought wars with elegance and precision unmatched by younger races. Disease, scarcity and mortality itself became little more than distant memories beneath the endless prosperity of the old Aeldari empire.*
 
@@ -22,69 +22,13 @@ This is Liber Aelphari, the Aeldari section of Liber Xenos, for The Horus Heresy
 
 Units with the Asuryani keyword originate from the disciplined Craftworld civilizations. These forces include Aspect Warriors, Guardians, Seers, Wraith constructs and the structured military hosts of the Craftworlds. Asuryani armies favor precision, psychic coordination and highly specialized battlefield roles.
 
-### Drukhari
-
-*The Drukhari are the cruel and predatory civilization dwelling within the hidden nightmare realm of Commorragh. Known to humanity as the Dark Eldar, the Drukhari rejected the disciplined Paths of the Craftworlds and instead embraced violence, excess and suffering as the foundation of their society. Their armies strike from hidden Webway portals in lightning-fast raids designed to capture slaves, harvest pain and terrorize entire worlds before vanishing once more into the darkness. Drukhari warfare relies upon speed, psychological warfare and overwhelming cruelty delivered through hyper-lethal close-range assaults.*
-
-Units with the Drukhari keyword originate from Commorragh and the hidden realms of the Dark City. These forces include Kabalites, Wyches, Incubi, Haemonculus creations and the raiding fleets of the Drukhari noble houses. Drukhari armies emphasize terror, speed, cruelty and overwhelming close-range violence. Their units and rules are in the Drukhari document.
-
-### Anhrathe
-
-*The Anhrathe are the wandering Corsair fleets of the Aeldari. Neither bound by the rigid Paths of the Craftworlds nor consumed by the excesses of the Drukhari, the Corsairs live lives of adventure, piracy and conquest amongst the stars. Their fleets appear without warning, strike with overwhelming speed and precision, and vanish before a meaningful response can be organized. Anhrathe warhosts excel at exploiting weakness, isolating vulnerable targets and conducting devastating raids against enemy strongpoints and supply lines.*
-
-Units with the Anhrathe keyword originate from the Corsair fleets and voidborn reaver kingdoms that roam the stars beyond both the Craftworlds and Commorragh. These forces include Corsair Reavers, Void Dreamers, pirate princes and highly mobile void assault formations. Anhrathe armies specialize in mobility, raiding warfare and flexible battlefield doctrines.
-
-### Rillietann
-
-*The Rillietann are the mysterious warrior-performers more commonly known as the Harlequins. Serving the Laughing God Cegorach, the Rillietann travel the Webway as guardians, messengers and keepers of forbidden knowledge concerning the Fall of the Aeldari and the eternal war against Chaos. Organized into wandering Masques and guided by sacred Saedaths, Harlequin forces fight as impossibly fast and theatrical murderers whose movements resemble elaborate performances as much as warfare. Their battles are ritualized acts of violence designed to embody ancient mythic cycles through bloodshed and spectacle.*
-
-Units with the Rillietann keyword belong to the wandering Masques of the Harlequins. These warriors serve the Laughing God and move freely between all Aeldari civilizations as guardians, manipulators and ritual performers. Rillietann armies rely upon extreme mobility, elite close combat and highly theatrical battlefield tactics.
-
 ## Army-wide Special Rules
 
 **Aeldari (X).** The civilization keywords represent the major surviving branches of the Aeldari species. Every Aeldari unit has at least one Civilization keyword, shown as X, which determines which armies, detachments and force organizations may include that unit. These keywords work like Legion, Klan or Household affiliations in other factions. Aeldari units may only be selected in armies whose Civilization keyword matches at least one of the unit's listed Civilization keywords unless specifically stated otherwise. Units with several Civilization keywords may be selected in any army matching one or more of them: a Corsair Voidreaver unit with the keywords Anhrathe and Asuryani may be selected in either an Anhrathe army or an Asuryani army; a Harlequin Shadowseer with the Rillietann keyword may be included only in armies permitted to include Rillietann units; an Incubi unit with only the Drukhari keyword may only be selected in a Drukhari army. Unless specifically stated otherwise, Asuryani and Drukhari units may not be selected within the same Primary Detachment; Rillietann units may be included as Allied or Auxiliary units in any Aeldari army; and Anhrathe units may be selected as Primary, Allied or Auxiliary forces alongside either Asuryani or Drukhari armies.
 
-**Master of the Void.** Corsair Voidreaver and Corsair Voidscarred units in an army that includes one or more Corsair Princes gain the Line Unit Sub-type.
-
-**Outcasts and Pirates.** Units with this Special Rule may be selected as Non-Compulsory Troops choices in either Asuryani or Drukhari Detachments. Such units do not prevent the inclusion restrictions normally applied between Asuryani and Drukhari units within the same army. They treat Asuryani and Drukhari units as Fellow Warriors.
-
-**Prince of Corsairs.** Corsair Voidreaver and Corsair Voidscarred units in an army that includes one or more Corsair Princes gain the Line Unit Sub-type. In addition, models with this trait may be included in Asuryani and Drukhari detachments and count as Sworn Brothers.
-
-**Reavers of the Void.** These warriors are consummate void-raiders and ambush predators, descending from hidden Webway breaches and attack craft with terrifying precision before vanishing once more into the darkness between stars. A unit with this Special Rule gains a +1 bonus to all Reserve Rolls made to bring the unit into play from Reserves. In addition, units with this special rule may declare a Charge in a turn in which they Run in turns when they arrive from Reserves. Models with this special rule do not add their Fleet value to Charge rolls made during a turn in which they Ran.
-
-**Master of Dreams.** A Void Dreamer may select powers from two Psychic Disciplines. One of these Disciplines must be the Voidsong Discipline.
-
-**Wayfinder.** Friendly units with the Aeldari (Anhrathe) special rule within 6" of one or more Way Seekers gain the Scout special rule. In addition, while a Way Seeker is on the battlefield, friendly units with the Aeldari (Anhrathe) special rule gain +1 to Reserve Rolls.
-
-## Anhrathe Fleets
-
-**Anhrathe Fleet (X).** An Anhrathe army may choose whether it is a Pirate Fleet or a Raider fleet; other Aeldari armies take neither. The choice gives its Civilization Trait, Advanced Reaction and Warlord Trait to units with the Aeldari (Anhrathe) special rule.
-
-### Anhrathe Pirate Fleets
-
-*Not all Corsairs seek glory through daring raids and battlefield heroics. Many Anhrathe fleets exist for a simpler purpose: plunder. These pirate princes and void-lords prey upon isolated worlds, merchant convoys, pilgrim flotillas and weakened warhosts, striking with ruthless efficiency before vanishing into the darkness between the stars. Wealth, slaves, relics, technology and prestige are all prizes to be seized, and every battle is viewed as an opportunity to enrich the fleet and strengthen its influence.*
-
-*Unlike the disciplined warhosts of the Craftworlds, pirate fleets wage war according to opportunity rather than strategy. Their captains are masters of opportunistic warfare, constantly seeking vulnerabilities in enemy formations and exploiting confusion wherever it appears. To these corsairs, victory is measured not by territory conquered but by what can be taken before the enemy can respond.*
-
-- **Lords of Plunder:** The Anhrathe have spent millennia perfecting the art of taking what belongs to others. Whenever a unit with the Aeldari (Anhrathe) special rule destroys an enemy unit, captures an objective marker, or causes an enemy unit to Fall Back, choose a friendly unit with the Aeldari (Anhrathe) special rule within 12". That unit gains either Fleet (2), Hit & Run, Precision Shots (5+) or Precision Strikes (5+) until the start of its controlling player's next turn. A unit may only benefit from Lords of Plunder once per turn.
-
-**Advanced Reaction: Snatch the Prize** (Movement phase). Trigger: an enemy unit ends a Movement phase move within 6" of an objective marker and within 12" of a friendly unit with the Aeldari (Anhrathe) special rule. The reacting unit may immediately make a Run move. This move must end closer to that objective marker than where it began. If the reacting unit ends this move within 3" of the objective marker, it gains Feel No Pain (6+) until the start of its controlling player's next turn.
-
-**Warlord Trait: Pirate King.** The Warlord is a feared corsair lord whose reputation for greed, cunning and audacity has attracted countless followers eager to share in the spoils of war. The Warlord gains Precision Shots (4+) and Precision Strikes (4+). In addition, whenever the Warlord or a unit joined by the Warlord destroys an enemy unit, choose a friendly unit with the Aeldari (Anhrathe) special rule within 12". That unit gains Feel No Pain (6+) until the start of its controlling player's next turn. If the chosen unit already has Feel No Pain, improve that roll by 1 to a maximum of 4+.
-
-### Anhrathe Raiders
-
-*The Anhrathe are masters of the raid, preying upon vulnerable worlds, isolated fleets and exposed supply lines with ruthless efficiency. Unlike the standing armies of the Craftworlds or the predatory empires of Commorragh, Corsair warbands wage war for plunder, glory, vengeance and freedom. Their attacks are carefully planned yet seemingly unpredictable, emerging from hidden webway routes or the depths of interstellar voids to strike command centers, seize valuable relics and eliminate key targets before an organized defense can be mounted. Every engagement is treated as a calculated raid, with Corsair captains exploiting confusion, mobility and precision to achieve victory while denying their enemies the opportunity for a decisive counterattack.*
-
-- **Raiders of the Void:** Friendly units with the Aeldari (Anhrathe) special rule gain +1 to Reserve Rolls. In addition, attacks made by units with the Aeldari (Anhrathe) special rule against enemy units that arrived from Reserves this turn, are Falling Back, are Pinned, or are within 6" of an objective marker gain Precision Shots (6+) and Precision Strikes (6+).
-
-**Advanced Reaction: Hit and Fade** (Shooting phase). Trigger: an enemy unit declares a Shooting Attack targeting a friendly unit with the Aeldari (Anhrathe) special rule. The reacting unit may immediately make a Run move. If the unit ends this move entirely out of range or line of sight of all weapons being used by the attacking unit, the attack is lost and has no effect. If the attacking unit can still draw line of sight and is within range after this move is completed, resolve the attack normally.
-
-**Warlord Trait: Prince of a Thousand Raids.** Few Corsair Princes survive long enough to master the art of the void raid. Those that do become living legends, orchestrating strikes of breathtaking speed and precision. The Warlord gains the Scout and Hit & Run special rules. If the Warlord already has either of these special rules, they instead gain +1 to all Run and Charge distances. The controlling player gains one additional Reaction during each enemy Movement phase. This additional Reaction may only be used by a unit with the Aeldari (Anhrathe) special rule.
-
 ## Warlord Traits
 
-An Anhrathe Warlord takes the Warlord Trait of its fleet: Pirate King or Prince of a Thousand Raids. A Warlord with the Asuryani Sub-type may choose one of the traits below instead of a Common Trait from the Core Rulebook.
+A Warlord with the Asuryani Sub-type may choose one of the traits below instead of a Common Trait from the Core Rulebook.
 
 ### Ambush of Blades
 
@@ -179,7 +123,7 @@ No other units may be selected as part of this Detachment.
 
 **Lords of War.** An Aeldari Lords of War Detachment may contain up to three Lords of War units in total.
 
-## Asuryani and Saedath Armies
+## Asuryani Armies
 
 ### Building an Asuryani Army
 
@@ -201,7 +145,6 @@ No other units may be selected as part of this Detachment.
 | Faction | Sub-faction | Allegiance |
 | --- | --- | --- |
 | Aeldari | Asuryani | Any |
-| Aeldari | Saedath | Any |
 
 ### Force Organisation
 
@@ -217,17 +160,6 @@ No other units may be selected as part of this Detachment.
 | Dramatis Personae | Asurmen, Avatar of Khaine, Baharroth, Drastanta, Fuegan, Irillyth, Jain Zar, Karandras, Maugan Ra |
 | Fortifications | Holo-Field Defence Line, Webway Gate |
 
-The Saedath are the proto-Harlequins: small troupes that join an army as a Saedathii Detachment in place of an Allied Detachment, never as a Primary Detachment. All Saedath models have the Rillietann Sub-type.
-
-### Saedathii Detachments
-
-- To select Saedath models, take a Saedathii Detachment instead of an Allied Detachment. It counts as an Allied Detachment for all Special Rules, Limitations, gameplay interactions, and the Allies Matrix.
-- A Saedath Detachment may not be a Primary Detachment.
-- Only one Allied Detachment may be replaced this way, even if the Force Organisation Chart allows more.
-- In Zone Mortalis, a Saedathii Detachment replaces the Zone Mortalis Engagement Force Organisation Chart, but normal unit restrictions still apply (for example, no Antigrav units). This may rule out some Grand Performances.
-- Instead of a Force Organisation Chart, first choose a Grand Performance. It sets the Detachment's Special Rules, Victory Point objectives, and allowed units.
-- **Pivotal Roles** are Compulsory and must be selected. **Additional Players** may optionally be added. All units' points must be paid.
-
 ## Advanced Reaction: Aspects of War
 
 Every Asuryani model has the Asuryani Sub-type, which grants Legacies of the Fall, and Battle Focus for Infantry and Cavalry. The new Unit Types and Sub-types below work under the core rules for Unit Types and Sub-types.
@@ -235,7 +167,6 @@ Every Asuryani model has the Asuryani Sub-type, which grants Legacies of the Fal
 **Aspects of War** (once per battle, any phase). This Advanced Reaction is available only to units in an Asuryani Detachment. It uses a point of the Reaction Allotment as normal and obeys all other Reaction restrictions unless noted. It may be made once per battle, in any phase, when an enemy unit does one of the following: Ends a move within 12" and line of sight of a unit in an Asuryani Detachment. Makes a Shooting Attack targeting a unit in an Asuryani Detachment. Declares a Charge targeting a unit in an Asuryani Detachment. The Reactive Player may immediately choose one of the following: Move: The Reacting unit moves up to its unmodified Initiative in inches in any direction. In a unit with mixed Initiative, use the highest unmodified value. Vehicles may pivot once up to 180° and then move up to 8" directly forwards. Shoot: The Reacting unit makes a Shooting Attack, resolved immediately, against the unit that triggered the Reaction. No indirect attacks (including Barrage or other weapons or rules that ignore line of sight); Vehicles may only fire Defensive weapons. Template weapons may only be used if the target is within 8", and must use Wall of Death. The unit counts as Stationary and may fire weapons of any type as though it had not moved. Disorder: The Reacting unit counts any charges made against it this turn as Disordered.
 
 ## Types
-
 
 ### Daemon Primarch (type)
 
@@ -260,7 +191,6 @@ Every Asuryani model has the Asuryani Sub-type, which grants Legacies of the Fal
 - A unit containing a Phoenix Lord may take Shrouded Damage Mitigation rolls as though it did not have Fearless, as for the Primarch Unit Type.
 - Counts as having the Primarch Unit Type for any Wargear or Special Rule that Primarchs may ignore.
 - A Phoenix Lord takes up either an HQ slot or a Primarch slot, chosen by the player.
-
 
 ### Asuryani (sub-type)
 
@@ -294,13 +224,6 @@ Every Asuryani model has the Asuryani Sub-type, which grants Legacies of the Fal
 - Cannot be affected by Cybertheurgic Rites, and ignores any of their effects.
 - Ignores the Disruption and Haywire Special Rules.
 - A Detachment may include up to two Wraith units for each model with the Path of the Dead Special Rule in that Detachment.
-
-### Rillietann (sub-type)
-
-
-- Has the Fear (1), Furious Charge (1), Hit & Run, and Move Through Cover Special Rules.
-- May only be taken in a Saedathii Detachment.
-- A Rillietann model with Independent Character may only join units that also have the Rillietann Sub-type.
 
 ## World-Runes
 
@@ -578,286 +501,7 @@ May be selected by a single Exarch in a Detachment.
 | May also take: |  |
 | – Two Power Swords | +15 points |
 
-## Grand Performances
-
-Each Grand Performance gives every unit in the Saedathii Detachment its scoring rule and its Amateur Performance rule. Victory Points from these are in addition to any from other sources.
-
-### Grand Performance: Cegorach's Jest
-
-*Voidweavers and Skyweavers burst toward their prize, evoking Cegorach's attempt to steal an antler of Kurnous.*
-
-**Pivotal Roles:** 1 Troupe Master, 1 Skyweaver Jetbikes, 1 Voidweaver.
-
-**Additional Players:** +3 Harlequin Troupes, +1 Death Jester, +1 Shadowseer, +2 Skyweaver Jetbikes, +2 Voidweavers.
-
-**The Last Laugh:** At the end of the game, the Controlling Player gains +D3 Victory Points if they have three or more units of Starweavers, Voidweavers, or Skyweaver Jetbikes (in any combination) in the opposing player's Deployment Zone.
-
-**Amateur Performance:** If, at the end of the game, there are no Starweaver, Voidweaver, or Skyweaver Jetbike units in the opposing player's Deployment Zone, the opposing player gains +D3 Victory Points.
-
-### Grand Performance: Cegorach's Lament
-
-*The Harlequins embodied the tragedy of the Fall through lightning-fast, bloody revenge on She Who Thirsts.*
-
-Cannot be selected in the same army as a Detachment with the Traitor Allegiance.
-
-**Pivotal Roles:** 1 Troupe Master, 1 Harlequin Troupe, 1 Arebennian.
-
-**Additional Players:** +2 Harlequin Troupes, +2 Death Jesters, +1 Shadowseer, +1 Skyweaver Jetbikes, +2 Voidweavers.
-
-**The Curtain Falls:** At the end of the game, if Rillietann-only units have destroyed three or more units with the Daemon or Daemon Primarch Unit Type or the Corrupted Sub-type, the Controlling Player gains +D3+1 Victory Points. If the Arebennian slays the enemy Warlord during the game, the Controlling Player gains +2 Victory Points. If the enemy Warlord is removed by any other means, no extra Victory Points are gained, but the Amateur Performance penalty does not apply.
-
-**Amateur Performance:** If, at the end of the game, no Victory Points were scored from The Curtain Falls, the opposing player gains +D3 Victory Points.
-
-### Grand Performance: Faolchu's Blade
-
-*Starweavers and Voidweavers descended relentlessly, embodying the Great Hawk's consort bearing Anaris to Eldanesh.*
-
-**Pivotal Roles:** 1 Troupe Master, 1 Harlequin Troupe, 1 Skyweaver Jetbikes.
-
-**Additional Players:** +2 Harlequin Troupes, +2 Shadowseers, +2 Skyweaver Jetbikes, +2 Voidweavers.
-
-**The Falcon's Wing:** All Infantry models with this rule must begin the game embarked on a Transport. Before the game, count the units with Independent Character in the Controlling Player's Primary Detachment. At the end of the game, if at least half of them (rounding up) are still in play, and at least one friendly unit with The Falcon's Wing is still in play, the Controlling Player gains +D3+1 Victory Points.
-
-**Amateur Performance:** If, at the end of the game, no Victory Points were scored from The Falcon's Wing, the opposing player gains +D3 Victory Points.
-
-### Grand Performance: The Heroes Path
-
-*Warriors embodying Ulthanash and Eldanesh burst from the shadows, though terrible pride gnawed at the hearts of the daring.*
-
-**Pivotal Roles:** 2 Troupe Masters, 2 Harlequin Troupes, 1 Shadowseer.
-
-**Additional Players:** +2 Harlequin Troupes, +1 Death Jester, +1 Shadowseer.
-
-**The Sin of Pride:** All Character models with this rule must issue or accept any Challenge whenever possible. At the end of the game, if these models have destroyed three or more models in Challenges, the Controlling Player gains +D3 Victory Points.
-
-**Amateur Performance:** If, at the end of the game, no models have been destroyed in Challenges by Character models with The Sin of Pride, the opposing player gains +D3 Victory Points.
-
-### Grand Performance: The Trials of Khaine
-
-*Embodying the war god's ordeals against the Yngir, the Harlequins became death and slaughter given form.*
-
-**Pivotal Roles:** 1 Troupe Master, 2 Harlequin Troupes.
-
-**Additional Players:** +2 Harlequin Troupes, +1 Death Jester, +1 Shadowseer, +1 Skyweaver Jetbikes, +1 Voidweaver.
-
-**The Bloodied Blade:** At the end of the game, if Rillietann-only units have destroyed three or more units in the Assault phase, the Controlling Player gains +D3 Victory Points.
-
-**Amateur Performance:** If, at the end of the game, no units have been destroyed in the Assault phase by Rillietann-only units, the opposing player gains +D3 Victory Points.
-
 ## HQ
-
-### Corsair Baron — 60 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Corsair Baron | 7 | 5 | 5 | 3 | 3 | 2 | 6 | 2 | 9 | 4+ |
-
-**Unit Composition**
-
-- 1 Corsair Baron
-
-**Wargear**
-
-- Shuriken pistol
-- Void sabre
-- Mesh armour
-- Plasma grenades
-- Haywire grenades
-- Mistshield
-
-**Unit Type**
-
-- Corsair Baron: Infantry (Character)
-
-**Special Rules**
-
-- Aeldari (Anhrathe)
-- Battle-hardened (1)
-- Fleet (2)
-- Hit & Run
-- Master of the Void
-- Outcasts and Pirates
-- Reavers of the Void
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The Corsair Baron may exchange his void sabre for:** |  |
-| – Power lance | +5 points |
-| **The Corsair Baron may exchange his mistshield for:** |  |
-| – Voidfield | +15 points |
-| **The Corsair Baron may take any of the following:** |  |
-| – Voidplate armour | +10 points |
-| – Corsair banner | +15 points |
-| – Corsair jet pack | +20 points |
-| – Webway harness | +10 points |
-| – Skyrunner jetbike | +30 points |
-
-### Corsair Prince — 85 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Corsair Prince | 6 | 6 | 6 | 3 | 3 | 3 | 6 | 4 | 10 | 4+ |
-
-**Unit Composition**
-
-- 1 Corsair Prince
-
-**Wargear**
-
-- Aeldari power sword
-- Mesh armour
-- Mistshield
-- Plasma grenades
-- Shuriken pistol
-
-**Unit Type**
-
-- Corsair Prince: Infantry (Character, Independent Character)
-
-**Special Rules**
-
-- Aeldari (Anhrathe)
-- Battle-hardened (2)
-- Fleet (2)
-- Outcasts and Pirates
-- Reavers of the Void
-- Retinue (Corsair Voidscarred)
-- Scout
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The Corsair Prince must select one of the following:** |  |
-| – Prince of Corsairs | Free |
-| – Master of the Void | Free |
-| **The Corsair Prince may exchange his shuriken pistol for one of the following:** |  |
-| – Neuro disruptor | +5 points |
-| – Fusion pistol | +5 points |
-| – Shuriken rifle | Free |
-| **The Corsair Prince may exchange his Aeldari power sword for one of the following:** |  |
-| – Agoniser blade | +10 points |
-| – Mistshield glaive | +10 points |
-| – Power lance | +10 points |
-| – Two Hekatarii blades | +5 points |
-| – Void sabre | +5 points |
-| **The Corsair Prince may take any of the following:** |  |
-| – Corsair banner | +10 points |
-| – Corsair jet pack | +20 points |
-| – Faolchú | +10 points |
-| – Runic armour | +20 points |
-| – Voidfield | +15 points |
-| – Voidplate armour | +10 points |
-| – Webway harness | +10 points |
-| – Skyrunner jetbike | +35 points |
-
-### Corsair Void Dreamer — 75 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Void Dreamer | 6 | 4 | 5 | 3 | 3 | 3 | 5 | 2 | 10 | 4+ |
-
-**Unit Composition**
-
-- 1 Void Dreamer
-
-**Wargear**
-
-- Mesh armour
-- Mistshield
-- Plasma grenades
-- Shuriken pistol
-- Witch staff
-
-**Unit Type**
-
-- Void Dreamer: Infantry (Character, Independent Character, Psyker)
-
-**Special Rules**
-
-- Aeldari (Anhrathe)
-- Adamantium Will (5+)
-- Battle-hardened (1)
-- Fleet (2)
-- Master of Dreams
-- Master of the Void
-- Outcasts and Pirates
-- Psychic Discipline (Voidsong and one other)
-- Reavers of the Void
-- Scout
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The Void Dreamer may exchange its shuriken pistol for one of the following:** |  |
-| – Fusion pistol | +5 points |
-| – Neuro disruptor | +5 points |
-| – Shuriken rifle | Free |
-| **The Void Dreamer may exchange its witch staff for one of the following:** |  |
-| – Singing spear | +10 points |
-| – Witchblade | +5 points |
-| **The Void Dreamer may take any of the following:** |  |
-| – Corsair banner | +10 points |
-| – Corsair jet pack | +20 points |
-| – Faolchú | +10 points |
-| – Ranger armour | +5 points |
-| – Runic armour | +20 points |
-| – Voidfield | +15 points |
-| – Voidplate armour | +10 points |
-| – Webway harness | +10 points |
-| – Skyrunner jetbike | +30 points |
-
-### Way Seeker — 70 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Way Seeker | 7 | 4 | 5 | 3 | 3 | 2 | 6 | 2 | 9 | 4+ |
-
-**Unit Composition**
-
-- 1 Way Seeker
-
-**Wargear**
-
-- Shuriken pistol
-- Witchblade
-- Mesh armour
-- Mistshield
-- Plasma grenades
-- Haywire grenades
-
-**Unit Type**
-
-- Way Seeker: Infantry (Independent Character, Psyker)
-
-**Special Rules**
-
-- Aeldari (Anhrathe)
-- Fleet (2)
-- Hit & Run
-- Outcasts and Pirates
-- Psychic Discipline (Voidsong or Runes of Battle)
-- Reavers of the Void
-- Wayfinder
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The Way Seeker may exchange its witchblade for:** |  |
-| – Singing spear | +5 points |
-| **The Way Seeker may exchange its mistshield for:** |  |
-| – Voidfield | +15 points |
-| **The Way Seeker may take any of the following:** |  |
-| – Corsair banner | +15 points |
-| – Webway harness | +10 points |
-| – Faolchú | +10 points |
-| – Channeller stones | +10 points |
-| – Corsair jet pack | +15 points |
-| – Skyrunner jetbike | +30 points |
 
 ### 0-1 Aspect Exarchs — 20 pts
 
@@ -1354,315 +998,7 @@ Cannot be selected in the same army as a Detachment with the Traitor Allegiance.
 - Warlord: The Reaper's Gaze
 - Whirlwind of Death
 
-### Arebennian — 200 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Arebennian | 8 | 6 | 6 | 3 | 3 | 3 | 7 | 4 | 10 | – | 28.5mm |
-
-**Unit Composition**
-
-- 1 Arebennian
-
-**Wargear**
-
-- Flip Belt
-- Harlequin's Caress
-- Harlequin's Kiss
-- Haywire Grenades
-- Holo-Suit
-- Plasma Grenades
-- The Thirsting Mask
-
-**Unit Type**
-
-- Infantry (Independent Character, Rillietann, Skirmish)
-
-**Special Rules**
-
-- Counter-Attack (1)
-- Fear (2)
-- Fleet (2)
-- Infiltrate
-- Pathfinder
-- Precision Strikes (5+)
-- Shrouded (4+)
-- Soul Forfeit
-- Stubborn
-
-### Shadowseer — 125 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Shadowseer | 8 | 5 | 5 | 3 | 3 | 2 | 6 | 3 | 10 | – | 28.5mm |
-
-**Unit Composition**
-
-- 1 Shadowseer
-
-**Wargear**
-
-- Flip Belt
-- Hallucinogen Grenade Launcher
-- Holo-Suit
-- Miststave
-- Shuriken Pistol
-
-**Unit Type**
-
-- Infantry (Independent Character, Psyker, Rillietann, Skirmish)
-
-**Special Rules**
-
-- Agent of Pandemonium
-- Psychic Discipline (Phantasmancy)
-- Fleet (2)
-
-**Options**
-
-| Option | Cost |
-| --- | --- |
-| A Shadowseer may exchange its Shuriken Pistol for a: |  |
-| – Neuro Disruptor | +10 points |
-| A Shadowseer may take: |  |
-| – Haywire Grenades | +10 points |
-
-### Troupe Master — 175 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Troupe Master | 8 | 6 | 6 | 3 | 3 | 3 | 7 | 4 | 10 | – | 32mm |
-
-**Unit Composition**
-
-- 1 Troupe Master
-
-**Wargear**
-
-- Flip Belt
-- Holo-Suit
-- Plasma Grenades
-- Power Sword
-- Shuriken Pistol
-- The Mask of Many Faces
-
-**Unit Type**
-
-- Infantry (Independent Character, Rillietann, Skirmish)
-
-**Special Rules**
-
-- Crusader
-- Fleet (2)
-- Precision Shots (6+)
-- Precision Strikes (6+)
-- Stubborn
-
-**Options**
-
-| Option | Cost |
-| --- | --- |
-| May exchange its Shuriken Pistol for one of the following: |  |
-| – Fusion Pistol | +15 points |
-| – Neuro Disruptor | +10 points |
-| May exchange its Power Sword for one of the following: |  |
-| – Harlequin's Caress | +10 points |
-| – Harlequin's Edge | +20 points |
-| – Harlequin's Embrace | +5 points |
-| – Harlequin's Kiss | +5 points |
-| May take any of the following: |  |
-| – Haywire Grenades | +10 points |
-| – One Vortex Grenade | +25 points |
-
 ## Elites
-
-### Corsair Bladesworn — 95 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Corsair Bladesworn | 7 | 5 | 4 | 3 | 3 | 2 | 5 | 2 | 8 | 4+ |
-
-**Unit Composition**
-
-- 5 Corsair Bladesworn
-
-**Wargear**
-
-- Shuriken pistol
-- Void sabre
-- Mesh armour
-- Mistshield
-- Plasma grenades
-- Haywire grenades
-
-**Unit Type**
-
-- Corsair Bladesworn: Infantry
-
-**Special Rules**
-
-- Aeldari (Anhrathe)
-- Chosen Warriors
-- Fleet (2)
-- Hit & Run
-- Outcasts and Pirates
-- Reavers of the Void
-- Retinue
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The unit may include:** |  |
-| – Up to 5 additional Corsair Bladesworn | +19 points each |
-| **Any model may exchange its void sabre for one of the following:** |  |
-| – Power lance | +5 points each |
-| – Mistshield glaive | +10 points each |
-| **The entire unit may exchange its mistshields for one of the following:** |  |
-| – Corsair jet packs | +5 points each |
-| – Skyrunner jetbikes | +20 points each |
-| – Voidfields | +5 points each |
-| **The entire unit may take:** |  |
-| – Webway harnesses | +2 points each |
-| **One Corsair Bladesworn may take one of the following:** |  |
-| – Faolchú | +10 points |
-| – Channeller stones | +10 points |
-| – Corsair banner | +15 points |
-
-### Corsair Voidscarred — 65 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Corsair Voidscarred | 6 | 4 | 4 | 3 | 3 | 1 | 5 | 1 | 7 | 4+ |
-| Voidscarred Felarch | 6 | 5 | 5 | 3 | 3 | 2 | 5 | 2 | 8 | 4+ |
-| Shade Runner | 6 | 5 | 4 | 3 | 3 | 1 | 6 | 3 | 7 | 4+ |
-| Soul Weaver | 6 | 4 | 4 | 3 | 3 | 1 | 5 | 1 | 7 | 4+ |
-| Way Seeker | 6 | 4 | 4 | 3 | 3 | 1 | 5 | 1 | 8 | 4+ |
-
-**Unit Composition**
-
-- 4 Corsair Voidscarred
-- 1 Voidscarred Felarch
-
-**Wargear**
-
-- Every model: Aeldari power sword, mesh armour, plasma grenades, shuriken pistol, unless noted below
-- Shade Runner: two Hekatarii blades, instead of Aeldari power sword
-- Soul Weaver: channeller stones
-- Way Seeker: witch staff
-
-**Unit Type**
-
-- Corsair Voidscarred: Infantry
-- Voidscarred Felarch: Infantry (Character)
-- Shade Runner: Infantry (Character)
-- Soul Weaver: Infantry (Character)
-- Way Seeker: Infantry (Character, Psyker)
-
-**Special Rules**
-
-- Aeldari (Anhrathe)
-- Fleet (2)
-- Hammer of Wrath (2) (Shade Runner only)
-- Outcasts and Pirates
-- Psychic Discipline (Voidsong or Runes of Battle) (Way Seeker only)
-- Reavers of the Void
-- Scout
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The unit may include:** |  |
-| – Up to 5 additional Corsair Voidscarred | +11 points each |
-| **The unit may include up to one of each of the following:** |  |
-| – Shade Runner | +20 points |
-| – Soul Weaver | +25 points |
-| – Way Seeker | +30 points |
-| **Any Corsair Voidscarred may exchange its shuriken pistol and Aeldari power sword for:** |  |
-| – Shuriken rifle | Free |
-| **The Voidscarred Felarch may exchange its shuriken pistol for one of the following:** |  |
-| – Neuro disruptor | +10 points |
-| – Shuriken rifle | Free |
-| **The Voidscarred Felarch may take:** |  |
-| – Mistshield | +10 points |
-| **For every 5 models in the unit, one Corsair Voidscarred may exchange its Aeldari power sword or shuriken rifle for one of the following:** |  |
-| – Blaster | +10 points |
-| – Shredder | +10 points |
-| **If the unit contains 10 models, one Corsair Voidscarred may exchange its Aeldari power sword or shuriken rifle for one of the following:** |  |
-| – Shuriken cannon | +10 points |
-| – Wraithcannon | +20 points |
-| **If the unit contains 10 models, one Corsair Voidscarred may exchange its Aeldari power sword or shuriken rifle for:** |  |
-| – Ranger long rifle | +10 points |
-| **If the unit contains 10 models, one Corsair Voidscarred may exchange its Aeldari power sword for:** |  |
-| – Fusion pistol | +10 points |
-| **One Corsair Voidscarred with a shuriken pistol and Aeldari power sword may take:** |  |
-| – Faolchú | +15 points |
-
-### Corsair Voidstorm Band — 95 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Voidstorm Corsair | 7 | 4 | 5 | 3 | 3 | 2 | 5 | 2 | 7 | 4+ |
-| Voidstorm Felarch | 7 | 4 | 5 | 3 | 3 | 2 | 5 | 3 | 8 | 4+ |
-
-**Unit Composition**
-
-- 4 Voidstorm Corsairs
-- 1 Voidstorm Felarch
-
-**Wargear**
-
-- Shuriken pistol
-- Close combat weapon
-- Mesh armour
-- Mistshield
-- Plasma grenades
-- Haywire grenades
-
-**Unit Type**
-
-- Voidstorm Corsair: Infantry
-- Voidstorm Felarch: Infantry (Character)
-
-**Special Rules**
-
-- Aeldari (Anhrathe)
-- Chosen Warriors
-- Fleet (2)
-- Hit & Run
-- Outcasts and Pirates
-- Reavers of the Void
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The unit may include:** |  |
-| – Up to 5 additional Voidstorm Corsairs | +19 points each |
-| **The entire unit may take one of the following:** |  |
-| – Splinter rifles | +2 points each |
-| – Shuriken catapults | +2 points each |
-| – Shuriken rifles | +3 points each |
-| **For every five models in the unit, up to two Voidstorm Corsairs may exchange their shuriken pistol for one of the following:** |  |
-| – Flamer | +5 points |
-| – Shredder | +10 points |
-| – Blaster | +15 points |
-| – Fusion pistol | +10 points |
-| – Neuro disruptor | +10 points |
-| **Any model may exchange its close combat weapon for one of the following:** |  |
-| – Void sabre | +5 points each |
-| – Power lance | +10 points each |
-| – Mistshield glaive | +15 points each |
-| **The entire unit may exchange its mistshields for one of the following:** |  |
-| – Corsair jet packs | +5 points each |
-| – Voidfields | +5 points each |
-| **The entire unit may take:** |  |
-| – Webway harnesses | +2 points each |
-| **One Voidstorm Corsair may take one of the following:** |  |
-| – Faolchú | +10 points |
-| – Channeller stones | +10 points |
-| – Corsair banner | +15 points |
 
 ### 0-1 Bonesinger Conclave — 45 pts
 
@@ -2058,108 +1394,7 @@ A unit of no more than five Wraithguard may take a Wave Serpent as a Dedicated T
 | The entire unit may exchange its Wraithcannons for (all models must take the same option): |  |
 | – D-Scythe | +10 points per model |
 
-### Death Jester — 100 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Death Jester | 8 | 5 | 5 | 3 | 3 | 3 | 7 | 4 | 10 | – | 28.5mm |
-
-**Unit Composition**
-
-- 1 Death Jester
-
-**Wargear**
-
-- Flip Belt
-- Holo-Suit
-- Plasma Grenades
-- Shrieker Cannon
-
-**Unit Type**
-
-- Infantry (Independent Character, Rillietann, Skirmish)
-
-**Special Rules**
-
-- Fear (2)
-- Fleet (2)
-- Harrow-Lord
-- Precision Shots (4+)
-- Relentless
-- Split Fire
-- Stubborn
-
-**Options**
-
-| Option | Cost |
-| --- | --- |
-| A Death Jester may exchange its Shrieker Cannon for one of the following: |  |
-| – Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | Free |
-| – Bright Lance | Free |
-| – Firepike | Free |
-| – Prism Blaster | Free |
-| – Prism Rifle | Free |
-| – Reaper Launcher (with Starswarm, Starshot, and Starhawk Missiles) | Free |
-| – Scatter Laser | Free |
-| – Spinneret Rifle | Free |
-| – Starcannon | Free |
-| – Tempest Launcher | Free |
-| A Death Jester may take: |  |
-| – Haywire Grenades | +10 points |
-
 ## Troops
-
-### Corsair Voidreavers — 60 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Corsair Voidreaver | 6 | 4 | 4 | 3 | 3 | 1 | 5 | 1 | 7 | 4+ |
-| Voidreaver Felarch | 6 | 5 | 5 | 3 | 3 | 2 | 5 | 2 | 8 | 4+ |
-
-**Unit Composition**
-
-- 4 Corsair Voidreavers
-- 1 Voidreaver Felarch
-
-**Wargear**
-
-- Aeldari power sword
-- Mesh armour
-- Plasma grenades
-- Shuriken pistol
-
-**Unit Type**
-
-- Corsair Voidreaver: Infantry
-- Voidreaver Felarch: Infantry (Character)
-
-**Special Rules**
-
-- Aeldari (Anhrathe)
-- Fleet (2)
-- Outcasts and Pirates
-- Reavers of the Void
-- Scout
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The unit may include:** |  |
-| – Up to 5 additional Corsair Voidreavers | +10 points each |
-| **All Corsair Voidreavers in the unit may exchange their shuriken pistol and Aeldari power sword for:** |  |
-| – Shuriken rifle | Free |
-| **The Voidreaver Felarch may exchange its shuriken pistol for one of the following:** |  |
-| – Neuro disruptor | +10 points |
-| – Shuriken rifle | Free |
-| **The Voidreaver Felarch may take:** |  |
-| – Mistshield | +10 points |
-| **For every 5 models in the unit, one Corsair Voidreaver may exchange its Aeldari power sword or shuriken rifle for one of the following:** |  |
-| – Blaster | +10 points |
-| – Shredder | +10 points |
-| **If the unit contains 10 models, one Corsair Voidreaver may exchange its Aeldari power sword or shuriken rifle for one of the following:** |  |
-| – Shuriken cannon | +10 points |
-| – Wraithcannon | +20 points |
 
 ### Dire Avengers — 80 pts
 
@@ -2417,214 +1652,7 @@ A unit of no more than twelve models may take a Wave Serpent as a Dedicated Tran
 | One model in the unit may take a: |  |
 | – Craftworld Standard | +10 points |
 
-### Troupe — 135 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Lead Player | 8 | 5 | 5 | 3 | 3 | 2 | 6 | 3 | 9 | – | 28.5mm |
-| Player | 8 | 5 | 5 | 3 | 3 | 2 | 6 | 2 | 9 | – | 28.5mm |
-
-**Unit Composition**
-
-- 1 Lead Player
-- 4 Players
-
-**Wargear**
-
-- Flip Belt
-- Holo-Suit
-- Plasma Grenades
-- Power Sword
-- Shuriken Pistol
-
-**Unit Type**
-
-- Lead Player: Infantry (Character, Rillietann, Skirmish)
-- Player: Infantry (Rillietann, Skirmish)
-
-**Special Rules**
-
-- Chosen Warriors
-- Fleet (2)
-
-**Dedicated Transport**
-
-A Troupe of no more than six models may take a Starweaver as a Dedicated Transport. It uses no additional Force Organisation slot, but its points must be paid.
-
-**Options**
-
-| Option | Cost |
-| --- | --- |
-| A Troupe may include: |  |
-| – Up to 7 additional Players | +22 points per model |
-| Any model may exchange its Shuriken Pistol for one of the following: |  |
-| – Fusion Pistol | +15 points |
-| – Neuro Disruptor | +10 points |
-| Any model may exchange its Power Sword for one of the following: |  |
-| – Harlequin's Caress | +10 points |
-| – Harlequin's Embrace | +5 points |
-| – Harlequin's Kiss | +5 points |
-| The Lead Player may exchange its Power Sword for a: |  |
-| – Harlequin's Edge | +20 points |
-| The Lead Player may take: |  |
-| – Haywire Grenades | +10 points |
-
 ## Fast Attack
-
-### Corsair Cloud Dancers — 120 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Cloud Dancer | 18 | 4 | 4 | 3 | 3 | 2 | 5 | 1 | 7 | 4+ |
-| Cloud Dancer Felarch | 18 | 4 | 5 | 3 | 3 | 2 | 5 | 2 | 8 | 4+ |
-
-**Unit Composition**
-
-- 2 Cloud Dancers
-- 1 Cloud Dancer Felarch
-
-**Wargear**
-
-- Skyrunner jetbike
-- Twin-linked shuriken catapult
-- Mesh armour
-- Plasma grenades
-- Haywire grenades
-
-**Unit Type**
-
-- Cloud Dancer: Cavalry (Antigrav)
-- Cloud Dancer Felarch: Cavalry (Antigrav, Character)
-
-**Special Rules**
-
-- Aeldari (Anhrathe)
-- Outcasts and Pirates
-- Reavers of the Void
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The unit may include:** |  |
-| – Up to 6 additional Cloud Dancers | +40 points each |
-| **Any model may exchange its twin-linked shuriken catapult for:** |  |
-| – Las blaster | +5 points each |
-| **For every three models in the unit, one Cloud Dancer may exchange its twin-linked shuriken catapult for one of the following:** |  |
-| – Shuriken cannon | +10 points |
-| – Scatter laser | +15 points |
-| – Starfang grenade launcher | +15 points |
-| – Fusion gun | +10 points |
-| **The Cloud Dancer Felarch may take one of the following:** |  |
-| – Corsair banner | +15 points |
-| – Faolchú | +10 points |
-| – Channeller stones | +10 points |
-
-### Corsair Skyreavers — 80 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Corsair Skyreaver | 6 | 4 | 4 | 3 | 3 | 1 | 5 | 1 | 7 | 4+ |
-| Skyreaver Felarch | 6 | 5 | 5 | 3 | 3 | 2 | 5 | 2 | 8 | 4+ |
-
-**Unit Composition**
-
-- 4 Corsair Skyreavers
-- 1 Skyreaver Felarch
-
-**Wargear**
-
-- Aeldari power sword
-- Corsair jet pack
-- Mesh armour
-- Plasma grenades
-- Shuriken pistol
-
-**Unit Type**
-
-- Corsair Skyreaver: Infantry (Jump)
-- Skyreaver Felarch: Infantry (Jump, Character)
-
-**Special Rules**
-
-- Aeldari (Anhrathe)
-- Deep Strike
-- Fleet (2)
-- Outcasts and Pirates
-- Reavers of the Void
-- Scout
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The unit may include:** |  |
-| – Up to 5 additional Corsair Skyreavers | +14 points each |
-| **Any Corsair Skyreaver may exchange its shuriken pistol and Aeldari power sword for:** |  |
-| – Shuriken rifle | Free |
-| **The Skyreaver Felarch may exchange its shuriken pistol for one of the following:** |  |
-| – Neuro disruptor | +10 points |
-| – Shuriken rifle | Free |
-| **The Skyreaver Felarch may take:** |  |
-| – Mistshield | +10 points |
-| **For every 5 models in the unit, up to two Corsair Skyreavers may exchange their shuriken pistol and Aeldari power sword for one of the following:** |  |
-| – Blaster and close combat weapon | +10 points |
-| – Flamer and close combat weapon | +10 points |
-| – Fusion gun and close combat weapon | +15 points |
-| – Shredder and close combat weapon | +10 points |
-| **One Corsair Skyreaver with a shuriken pistol and Aeldari power sword may take:** |  |
-| – Faolchú | +15 points |
-
-### Corsair Starfang Raiders — 145 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Corsair Starfang Raider | 16 | 4 | 4 | 4 | 5 | 2 | 5 | 1 | 7 | 4+ |
-| Corsair Starfang Felarch | 16 | 5 | 5 | 4 | 5 | 3 | 5 | 1 | 8 | 4+ |
-
-**Unit Composition**
-
-- 2 Corsair Starfang Raiders
-- 1 Corsair Starfang Felarch
-
-**Wargear**
-
-- Disintegrator cannon
-- Plasma grenades
-- Starfang grenade launcher
-- Starfang skimmer
-
-**Unit Type**
-
-- Corsair Starfang Raider: Cavalry (Antigrav)
-- Corsair Starfang Felarch: Cavalry (Antigrav, Character)
-
-**Special Rules**
-
-- Aeldari (Anhrathe)
-- Deep Strike
-- Firing Protocols (2)
-- Fleet (2)
-- Hammer of Wrath (2)
-- Hit & Run
-- Outcasts and Pirates
-- Reavers of the Void
-- Scout
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The unit may include:** |  |
-| – Up to 3 additional Corsair Starfang Raiders | +45 points each |
-| **The Corsair Starfang Felarch may take:** |  |
-| – Mistshield | +10 points |
-| **For every 3 models in the unit, one Corsair Starfang Raider may exchange its disintegrator cannon for one of the following:** |  |
-| – Bright lance | +15 points |
-| – Pulse laser | +20 points |
-| – Shuriken cannon | +10 points |
-| **One Corsair Starfang Raider may take:** |  |
-| – Faolchú | +15 points |
 
 ### Nightshade Interceptor Squadron — 125 pts
 
@@ -3027,153 +2055,7 @@ A Troupe of no more than six models may take a Starweaver as a Dedicated Transpo
 | One model in the unit may take a: |  |
 | – Craftworld Standard | +10 points |
 
-### Skyweavers — 160 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Skyweaver | 18 | 5 | 5 | 3 | 4 | 3 | 6 | 3 | 9 | 3+ | 60mm Flying |
-
-**Unit Composition**
-
-- 2 Skyweavers
-
-**Wargear**
-
-- Holo-Suit
-- Mirage Launchers
-- Plasma Grenades
-- Shuriken Pistol
-- Skyweaver Jetbike
-- Star Bolas
-
-**Unit Type**
-
-- Cavalry (Antigrav, Rillietann, Skirmish)
-
-**Special Rules**
-
-- Battle-Hardened (1)
-- Chosen Warriors
-- Deep Strike
-- Firing Protocols (2)
-- Fleet (2)
-- Furious Charge (2)
-- Hammer of Wrath (1)
-- Hit & Run
-- Relentless
-- Shrouded (5+)
-- Skilled Rider
-
-**Options**
-
-| Option | Cost |
-| --- | --- |
-| A Skyweavers unit may include: |  |
-| – Up to 4 additional Skyweavers | +80 points per model |
-| Any model may replace its Skyweaver Jetbike's Shuriken Cannon with a: |  |
-| – Haywire Cannon | +5 points |
-| Any model may replace its Star Bolas with a: |  |
-| – Zephyrglaive | +5 points |
-
-### Voidweaver — 90 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Voidweaver | 16 | 5 | 5 | 3 | 5 | 4 | 6 | 2 | 9 | 3+ | 60mm Flying |
-
-**Unit Composition**
-
-- 1 Voidweaver
-
-**Wargear**
-
-- Haywire Cannon
-- Holo-Fields
-- Mirage Launchers
-- Power Sword
-- Shuriken Pistol
-- Starweaver Skimmer
-
-**Unit Type**
-
-- Cavalry (Antigrav, Rillietann, Skirmish)
-
-**Special Rules**
-
-- Deep Strike
-- Firing Protocols (3)
-- Fleet (2)
-- Hammer of Wrath (1)
-- Hit & Run
-- Relentless
-- Shrouded (5+)
-- Skilled Rider
-
-**Options**
-
-| Option | Cost |
-| --- | --- |
-| A Voidweaver unit may include: |  |
-| – Up to 2 additional Voidweavers | +90 points per model |
-| Any model may replace its Haywire Cannon with a: |  |
-| – Prismatic Cannon | +5 points |
-
 ## Heavy Support
-
-### Corsair Ghostwalkers — 145 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Corsair Ghostwalker | 6 | 4 | 5 | 3 | 4 | 2 | 5 | 1 | 7 | 3+ |
-| Ghostwalker Felarch | 6 | 5 | 5 | 3 | 4 | 2 | 5 | 2 | 8 | 3+ |
-
-**Unit Composition**
-
-- 4 Corsair Ghostwalkers
-- 1 Ghostwalker Felarch
-
-**Wargear**
-
-- Close combat blade
-- Plasma grenades
-- Shuriken catapult
-- Voidplate armour
-- Webway harness
-
-**Unit Type**
-
-- Corsair Ghostwalker: Infantry
-- Ghostwalker Felarch: Infantry (Character)
-
-**Special Rules**
-
-- Aeldari (Anhrathe)
-- Deep Strike
-- Fleet (1)
-- Outcasts and Pirates
-- Reavers of the Void
-- Relentless
-- Scout
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The unit may include:** |  |
-| – Up to 5 additional Corsair Ghostwalkers | +27 points each |
-| **Any Corsair Ghostwalker may exchange its shuriken catapult for one of the following:** |  |
-| – Bright lance | +15 points each |
-| – Fusion gun | +15 points each |
-| – Shredder | +10 points each |
-| – Shuriken cannon | +10 points each |
-| – Wraithcannon | +20 points each |
-| **The Ghostwalker Felarch may exchange its shuriken catapult for one of the following:** |  |
-| – Neuro disruptor | +10 points |
-| – Shuriken cannon | +10 points |
-| **The Ghostwalker Felarch may take:** |  |
-| – Mistshield | +10 points |
-| **One Corsair Ghostwalker may take:** |  |
-| – Faolchú | +15 points |
 
 ### Dark Reapers — 165 pts
 
@@ -3505,54 +2387,6 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 
 ## Dedicated Transports
 
-### Corsair Venom — 35 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Transport Capacity |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Corsair Venom | 16 | 4 | 4 | 5 | 5 | 3 | 4 | 1 | 7 | 3+ | 6 |
-
-**Unit Composition**
-
-- 1 Corsair Venom
-
-**Wargear**
-
-- Twin-linked splinter rifle
-- Night shields
-
-**Unit Type**
-
-- Corsair Venom: Cavalry (Mechanized, Antigrav, Transport)
-
-**Special Rules**
-
-- Aeldari (Anhrathe)
-- Assault Vehicle
-- Deep Strike
-- Infantry Transport
-- Outcasts and Pirates
-- Reavers of the Void
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The Corsair Venom may exchange its twin-linked splinter rifle for:** |  |
-| – Splinter cannon | +5 points |
-| **The Corsair Venom may take:** |  |
-| – Additional splinter cannon | +10 points |
-| **The Corsair Venom may take one of the following:** |  |
-| – Bladevanes | +10 points |
-| – Chain-snares | +10 points |
-| **The Corsair Venom may take any of the following:** |  |
-| – Enhanced aethersails | +10 points |
-| – Flickerfield | +10 points |
-| – Grisly trophies | +5 points |
-| – Shock prow | +5 points |
-| – Trophy rack | +5 points |
-| – Venom sails | +10 points |
-| – Webway rift generator | +15 points |
-
 ### Wave Serpent — 125 pts
 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
@@ -3596,49 +2430,6 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 | – Holo-Fields | +20 points |
 | – Searchlights | +5 points |
 | – Spirit Stones | +10 points |
-
-### Starweaver — 100 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Starweaver | 16 | 5 | 5 | 3 | 5 | 4 | 6 | 2 | 9 | 3+ | 60mm Flying |
-
-_This model may be selected as a Dedicated Transport for a Rillietann unit, or as a Fast Attack choice._
-
-**Unit Composition**
-
-- 1 Starweaver
-
-**Wargear**
-
-- Holo-Fields
-- Mirage Launchers
-- Power Sword
-- Shuriken Pistol
-- Starweaver Skimmer
-
-**Unit Type**
-
-- Cavalry (Antigrav, Rillietann, Skirmish, Transport)
-
-**Special Rules**
-
-- Deep Strike
-- Firing Protocols (3)
-- Fleet (2)
-- Hammer of Wrath (1)
-- Hit & Run
-- Open-Topped (6)
-- Relentless
-- Shrouded (5+)
-- Skilled Rider
-- Transport Skiff
-
-**Transport Capacity:** 6 models, which must have both the Infantry Unit Type and the Rillietann Sub-type.
-
-**Access Points**
-
-- Its entire hull counts as an access point.
 
 ## Lords of War
 
@@ -4071,10 +2862,6 @@ Unlike other Daemon Primarchs, an Avatar of Khaine may never be the Warlord and 
 
 A unit made up entirely of models with this rule that Runs in the Movement phase may still declare a Charge in the Assault phase of the same turn. These models attack at their normal Initiative step after successfully Charging through Difficult or Dangerous Terrain, but still suffer any Charge roll penalties from that terrain.
 
-### Agent of Pandemonium
-
-The model gains the Phantasmancy Psychic Discipline, plus the Thaumaturgy and Telepathy disciplines from the Core Rulebook (page 322).
-
 ### Agile
 
 The model may re-roll failed Shrouded Damage Mitigation rolls.
@@ -4099,10 +2886,6 @@ A unit made up entirely of models with this rule may Run in its Movement phase a
 ### Bio-Cataclysm
 
 If a model with a Toughness Characteristic is slain by a weapon with this rule, centre a Large Blast (5") marker over it. All models under the marker suffer an automatic hit at Strength 5, AP 5, with Ignores Cover. Models slain this way do not generate further Bio-Cataclysm markers.
-
-### Bio-Explosive
-
-If a model is slain by a weapon with this rule, centre a Small Blast (3") marker over it. All models under the marker suffer an automatic hit at Strength 5, AP 4, with Ignores Cover. Models slain this way do not generate further Bio-Explosive markers.
 
 ### Blade Spirit
 
@@ -4143,10 +2926,6 @@ The model may re-roll a single failed To Hit, To Wound, or Armour Penetration ro
 
 In any mission where the Night Fighting rules are in effect, a player whose army includes Irillyth may choose to use Night Fighting without rolling. The Controlling Player may also re-roll any dice rolled to see whether Night Fighting stays in effect during a Game Turn.
 
-### Dimensional Edge (X)
-
-A weapon with this rule only ever wounds on the value X. No Saves or Damage Mitigation rolls of any kind may be taken against its Wounds.
-
 ### Disarming Strike
 
 Before rolling To Hit in a challenge, Jain Zar may nominate one of the opposing model's melee weapons. Both models roll a D6 and add their Weapon Skill; the higher result wins.
@@ -4162,10 +2941,6 @@ A weapon with this rule ignores Void Shields on its target. Before firing it, ro
 ### Dragon of Myth
 
 At the start of any Fight sub-phase, each model with this rule in base contact with an enemy makes D3 additional attacks at Initiative step 10. They are resolved at Strength 4, AP –, and count as Flame attacks.
-
-### Embrace of Death (X)
-
-A model attacking with a weapon with this rule makes X attacks with it at Initiative step 10, regardless of its Attacks and any bonuses (including Charging). The weapon may only be used in the first round of a combat, and may be used even after a Disordered Charge.
 
 ### Fast Shot
 
@@ -4187,10 +2962,6 @@ At the beginning of the Controlling Player's turn, a unit containing models with
 The unit may make the Flickerjump Advanced Reaction.
 
 **Flickerjump (Advanced Reaction):** May be made in the opposing player's Shooting phase when an enemy unit declares a Shooting Attack targeting a friendly unit made up entirely of models with Flickerjump. Before the attack is resolved, the target unit moves 2D6" in any direction; this distance cannot be modified. On a double 1, one model from the unit is removed as a casualty. If the attack is no longer valid after the move (no line of sight or out of range, for example), the Active player may not choose a new target and no attacks are made.
-
-### Gathering Storm
-
-When a weapon with this rule resolves an attack with a Large Blast (5") marker, leave the marker in play until the end of the Controlling Player's next turn. If the weapon places another Large Blast (5") marker within 3" of the original, the attack may instead be resolved with an Apocalyptic Blast (10") marker. Afterwards, remove all markers used in that attack.
 
 ### Ghostlight
 
@@ -4223,10 +2994,6 @@ A Guardian Officer Cadre is selected as any other unit, using one Force Organisa
 ### Guardian of the Gates
 
 A model with this rule may only be selected in an army that also includes a Webway Gate. It must be assigned to Reserves and deployed using the Webway Strike rule.
-
-### Harrow-Lord
-
-Any unit that loses a model as a casualty in the Shooting phase to an attack from a model with this rule must take a Morale check as if it had suffered 25% casualties.
 
 ### Herald of Victory
 
@@ -4283,10 +3050,6 @@ After Deployment Zones are determined, but before other models deploy, the Webwa
 
 Asuryani units gain Stubborn while within 3" of a Webway Gate. Any model in cover behind a Wraithbone Arch has a 5+ Cover Save.
 
-### Open-Topped (X)
-
-Up to X models Embarked on a Transport with this rule may shoot in the Controlling Player's Shooting phase, measuring from the hull. They count as having moved, which may stop some weapon types firing. Abilities that replace a Shooting Attack (such as Psychic Powers or Cybertheurgic Rites) may not be used. These shots may target a different unit from the Transport's, but Reactions to them target the Transport. Rules that let a unit count as Stationary (such as Relentless) do not apply while embarked. Rolls on the Vehicle Damage table against this model add +1.
-
 ### Paired Weapons
 
 A model armed with a weapon with this rule gains an extra Attack.
@@ -4311,10 +3074,6 @@ The model gains the Runes of Fate Psychic Discipline, plus Divination, Telepathy
 All Infantry models in a unit including at least one model with this rule gain Feel No Pain (5+). This does not stack for multiple models with the rule, and Grav-Platform models do not benefit.
 
 At the start of the Controlling Player's Shooting phase, the model may give up conferring Feel No Pain (5+) and gain Battlesmith (3+) instead. It may use Battlesmith as normal, or use it on a Grav-Platform model to restore a single lost Wound, affecting any applicable friendly model within 6". This lasts until the start of the Controlling Player's next turn, when the model loses Battlesmith (3+) and regains Feel No Pain (5+).
-
-### Ponderous Aim
-
-A weapon with this rule cannot be fired as part of a Reaction or used to Snap Shoot.
 
 ### Precise Throw
 
@@ -4357,10 +3116,6 @@ An enemy unit with at least one model within 12" of a model with this rule rolls
 
 Whenever Asurmen fights in a Challenge, his Invulnerable Save improves to 3+.
 
-### Skilled Rider
-
-The model may Run in the Movement phase and still fire a single ranged weapon in the Shooting phase, at BS 2. These To Hit rolls cannot be improved by any source. A unit that uses this rule may not use Firing Protocols (X) in the same Game Turn.
-
 ### Skyhunter
 
 When the model moves Flat Out, it moves up to triple its Movement instead of double.
@@ -4377,17 +3132,9 @@ At the end of the Movement phase, the unit may make one Attack per model against
 
 Place the Blast (3") marker touching the weapon's barrel. Instead of scattering it, move it in a straight line away from the firer, in any direction within the weapon's 45° forward arc, until it reaches maximum range or leaves the battlefield. Every model it passes over suffers one automatic Hit. Flyers cannot be hit. Knights, Titans, Super-Heavy Vehicles, Buildings, and Fortifications are hit at Strength 8.
 
-### Sonic Wave
-
-As Sonic Pulse, but using a Large Blast (5") marker. Flyers are hit if the marker passes over their base. Knights, Titans, Super-Heavy Vehicles, Buildings, and Fortifications are hit at Strength 10.
-
 ### Soul-Shatter
 
 Successful Invulnerable Saves against Wounds from a weapon with this rule must be re-rolled.
-
-### Soul Forfeit
-
-The model never awards Victory Points when slain, and does not count towards units slain at the end of the battle. It does not count as a Scoring or Denial unit.
 
 ### Soul Tear
 
@@ -4407,10 +3154,6 @@ Shooting Attacks made as part of an Interceptor Reaction against a unit containi
 ### The Runes of War
 
 The model does not pick Psychic Powers individually. It knows the Thaumaturgy Discipline and all powers from the Runes of Battle Discipline. When it is part of any unit that is not a Seer Council, it instead picks a single power from the Runes of Battle.
-
-### Transport Skiff
-
-The model gains Infantry Transport and Assault Vehicle, and counts as a Vehicle for those rules and the Transport Sub-type. When it loses its last Wound, all models embarked suffer a S6, AP – hit, allocated by the Controlling Player. Survivors are placed where the model was (or as close as possible) in coherency and at least 1" from enemies; any that cannot be placed are removed. The unit then takes a Pinning test.
 
 ### Unquenchable Resolve
 
@@ -4497,113 +3240,9 @@ The model ignores all Psychic Powers and Cybertheurgic Rites, and attacks by Psy
 
 A model with mesh armour has a 4+ Armour Save.
 
-#### Ranger Armour
-
-Ranger armour grants a 5+ Armour Save. In addition, enemy models treat a model equipped with Ranger armour as being 6" further away than it actually is, and the model gains Shrouded (6+).
-
-#### Runic Armour
-
-Runic armour grants a 3+ Armour Save and a 4+ Invulnerable Save.
-
-#### Voidplate Armour
-
-A model equipped with voidplate armour has a 3+ Armour Save.
-
-### Channeller Stones
-
-A model equipped with channeller stones gains Feel No Pain (5+).
-
-### Corsair Banner
-
-Friendly Aeldari (Anhrathe) units within 6" of one or more models equipped with a Corsair banner gain +1 Leadership and Feel No Pain (6+). This Feel No Pain roll does not stack with other Feel No Pain rolls.
-
-### Corsair Jet Pack
-
-A unit entirely equipped with Corsair jet packs may choose to increase its Movement Characteristic by +6, move over friendly and enemy models/units, and ignore terrain while moving during the Movement phase. A unit that ends or begins its movement in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Corsair jet packs, and treats Difficult Terrain as Dangerous Terrain. In addition to the bonus to move during the Movement phase, a unit equipped entirely with Corsair jet packs may make an additional move of 6" during the Shooting phase. This move must be taken after the unit has completed any Shooting, is not limited by the weapons fired by that unit during the Shooting phase, and ignores terrain and may move over friendly and enemy models/units in the same manner as moves made using a Corsair jet pack in the Movement phase. Any model equipped with a Corsair jet pack also gains the Bulky (2) and Deep Strike special rules, or if it already has the Bulky (2) special rule it gains the Bulky (3) special rule instead. During any Reaction that allows a unit equipped entirely with Corsair jet packs to move, increase the distance of that move by 6. This allows the unit to ignore terrain in the same manner as other Corsair jet pack moves.
-
-### Faolchú
-
-A model equipped with a Faolchú gains Shrouded (5+).
-
-### Mistshield
-
-A model equipped with a mistshield gains a 5+ Invulnerable Save. In addition, models with multiple Wounds equipped with a mistshield gain Battle-hardened (1).
-
 ### Skyrunner Jetbike
 
 A Skyrunner jetbike has a twin-linked shuriken catapult. In addition, a model with a Skyrunner jetbike may choose to move up to their unmodified Initiative Characteristic at the start of the controlling player's Charge Sub-phase. A model that chooses to do so may not declare a Charge. Any model equipped with a Skyrunner jetbike must change its Unit Type to Cavalry (Antigrav) (keeping any other Unit Sub-types it previously had), change its Movement Characteristic to 18, and gains the Fleet (2), Firing Protocols (2), Hit & Run, Hammer of Wrath (1), Relentless, Battle-hardened (1), Shrouded (5+), and Deep Strike special rules.
-
-### Starfang Skimmer
-
-A model equipped with a Starfang skimmer gains the Cavalry (Antigrav) Unit Type and has its Movement Characteristic set to 16. The model gains Hammer of Wrath (2), Fleet (2), Hit & Run and Deep Strike. A model equipped with a Starfang skimmer counts as Bulky (4). A model equipped with a Starfang skimmer treats all terrain as Open Terrain during movement and may move over models and terrain freely as normal for Antigrav units. A Starfang skimmer is equipped with a disintegrator cannon and a Starfang grenade launcher.
-
-### Voidfield
-
-A model equipped with a voidfield gains a 4+ Invulnerable Save and Shrouded (6+).
-
-### Webway Harness
-
-A model equipped with a webway harness gains the Deep Strike special rule. In addition, if every model in a unit is equipped with a webway harness, that unit may be removed from the battlefield at the end of any of its controlling player's turns if it is not locked in combat. The unit is placed into Ongoing Reserves and automatically passes all Reserve Rolls made to return to play.
-
-### Bladevanes
-
-*Mono-molecular gravitic cutting fins mounted along the hulls of Aeldari anti-grav craft, turning the movement of the vehicle itself into a weapon.*
-
-A model equipped with bladevanes may inflict Hits against one enemy Infantry unit that it moved over during the Movement phase. That unit suffers D3 Strength 4 AP 4 Hits with Rending (6+). If the model has a Movement characteristic of 14 or greater, increase the number of Hits inflicted to D6 instead. These Hits are resolved as Shooting Attacks and may only be inflicted once per phase regardless of how many units the model moved over.
-
-### Chain-snares
-
-*Weighted mono-filament drag chains and hooked gravitic tethers mounted beneath skimmers, deployed at extreme velocity as the vehicle passes through enemy formations.*
-
-A model equipped with chain-snares may inflict Hits against one enemy Infantry unit that it moved over during the Movement phase. That unit suffers D3 Strength 5 AP - Hits with Shred and Pinning. If the model has a Movement characteristic of 14 or greater, increase the number of Hits inflicted to D6 instead. In addition, enemy units that suffer one or more unsaved Wounds from chain-snares reduce their Movement characteristic by 2 until the end of their next Turn. These Hits are resolved as Shooting Attacks and may only be inflicted once per phase regardless of how many units the model moved over.
-
-### Enhanced Aethersails
-
-*Propulsion augmentation that manipulates atmospheric density and localized gravitic shear to generate extreme acceleration and evasive manoeuvring.*
-
-A model equipped with enhanced aethersails increases its Movement characteristic by +4. After completing any movement, the model gains Shrouded (5+). This effect stacks with other sources of Shrouded but cannot improve beyond Shrouded (4+). Enhanced aethersails also allow unrestricted traversal over vertical terrain and battlefield elevation differences, treating such movement as part of standard movement resolution.
-
-### Flickerfield
-
-*An unstable phase-displacement shield that makes attacks resolve against non-existent positional echoes.*
-
-A model equipped with a flickerfield gains a 6+ Invulnerable Save. If the model already has an Invulnerable Save, improve it by +1 to a maximum of 4+. This improvement applies before any other modifiers unless explicitly stated otherwise.
-
-### Grisly Trophies
-
-*Trophies of the fallen hung from a raider's hull, broadcasting terror to all who see them.*
-
-Enemy Infantry and Cavalry units within 6" of one or more models equipped with grisly trophies suffer Fear (2). This effect is applied continuously while within range.
-
-### Night Shields
-
-*Targeting degradation fields that confound ballistic computation, sensor resolution and range estimation.*
-
-Enemy units targeting a model equipped with night shields for ranged attacks treat that model as 6" further away than its actual position. In addition, any ranged attack made at over 18" is resolved as Snap Shots.
-
-### Shock Prow
-
-*A kinetic impact prow that turns forward velocity into catastrophic structural penetration when ramming or boarding.*
-
-A model equipped with a shock prow gains Hammer of Wrath (2). If it already has Hammer of Wrath, increase its value by +2 to a maximum of 4. In addition, Charges made by this model gain Exoshock (5+) and Breaching (6+). Shock prows also apply during any rule that generates collision-based movement impacts.
-
-### Trophy Rack
-
-*Racks of trophies that broadcast fear into the minds of nearby enemies.*
-
-Enemy units within 6" of one or more models equipped with trophy racks must re-roll successful Morale tests, Pinning tests, and Fear tests.
-
-### Venom Sails
-
-*Aerodynamic displacement sails that allow rapid repositioning and post-engagement manoeuvring.*
-
-A model equipped with venom sails gains Fleet (2). If it already has Fleet, increase its value by +1 to a maximum of 4. In addition, after completing a Charge, the model gains Hit & Run until the end of the turn.
-
-### Webway Rift Generator
-
-*A device that opens controlled breaches into the Webway for the deployment and extraction of Aeldari forces.*
-
-A model equipped with a webway rift generator gains Deep Strike. In addition, friendly units arriving from Reserves within 6" of one or more such models may re-roll Reserve rolls and Scatter dice when deploying via Deep Strike.
 
 ### Armour and Shields
 
@@ -4630,10 +3269,6 @@ confers a 4+ Armour Save.
 #### Holo-Fields
 
 5+ Invulnerable Save against Shooting Attacks, unless Immobilised.
-
-#### Holo-Suit
-
-4+ Invulnerable Save.
 
 #### Improved Forceshield
 
@@ -4686,14 +3321,6 @@ Provides a 4+ Invulnerable Save. A model with Wounds that suffers an unsaved Ins
 #### Raptor Jetbike
 
 A model with a Raptor Jetbike becomes Cavalry (Antigrav), M 18 and gains Battle-Hardened (1), Deep Strike, Firing Protocols (3), Fleet (2), Hammer of Wrath (1), Hit & Run, Infiltrate, Relentless, Scout, Shrouded (5+). The model keeps any other Unit Sub-types it had.
-
-#### Skyweaver Jetbike
-
-A model with a Skyweaver Jetbike becomes Cavalry (Antigrav), M 18 and gains Battle-Hardened (1), Deep Strike, Firing Protocols (2), Fleet (2), Hammer of Wrath (1), Hit & Run, Relentless, Shrouded (5+). The model keeps any other Unit Sub-types it had.
-
-#### Starweaver Skimmer
-
-A model with a Starweaver Skimmer becomes Cavalry (Antigrav), M 16, 3+ Armour Save and gains Deep Strike, Firing Protocols (2), Fleet (2), Hammer of Wrath (1), Hit & Run, Relentless, Shrouded (5+). The model keeps any other Unit Sub-types it had.
 
 #### Vyper Jetbike
 
@@ -4774,10 +3401,6 @@ A unit with a Craftworld Standard adds +1 to its Wounds score for winning combat
 
 Once per game, the model may fire a single weapon at its full Ballistic Skill in the Controlling Player's Shooting phase after moving Flat Out.
 
-#### Flip Belt
-
-A unit made up entirely of models with Flip Belts may ignore terrain and intervening friendly units while moving, including Charges, Fall Back moves, Advancing, and Reactions. It still takes Dangerous Terrain tests when beginning or ending in it, but ignores Difficult Terrain entirely.
-
 #### Ghostwalker Matrix
 
 The model has Move Through Cover. If it has the Antigrav Sub-type, it gains Pathfinder instead.
@@ -4799,10 +3422,6 @@ The Controlling Player may activate it at the start of any of their turns, or at
 - No Shrouded Damage Mitigation rolls may be made against its attacks.
 - Its Interceptor Reactions cost no Reaction point. This does not allow more than one Reaction per phase, but may exceed the normal three-Reaction limit.
 - A Vehicle with it may fire all its weapons, not just Defensive weapons, when making Interceptor.
-
-#### Mirage Launchers
-
-When a unit made up entirely of models with Mirage Launchers is targeted by a Shooting Attack, the range counts as 6" further than it is. Primarchs ignore this. Barrage attacks against the unit always scatter as though it were out of line of sight.
 
 #### Outcast Cloaks
 
@@ -4830,14 +3449,6 @@ In the Assault phase, the Reactive player may not make Reactions targeting a uni
 
 Drastanta and any unit they have joined may make a single Reaction in the Movement phase without spending a Reaction point.
 
-#### The Mask of Many Faces
-
-A unit with a model equipped with The Mask of Many Faces adds +2 to its Wounds score for winning combat.
-
-#### The Thirsting Mask
-
-The model has Preferred Enemy (Daemons, Corrupted).
-
 #### Wireweave Net
 
 The first time in a game a unit with a Wireweave Net is charged, the charging player suffers –3" to the Charge distance rolled.
@@ -4853,7 +3464,6 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Fusion pistol | 6" | 8 | 1 | Assault 1, Armourbane (Melta) |
-| Neuro disruptor | 12" | 3 | 2 | Assault 1, Fleshbane |
 | Shuriken pistol | 12" | 4 | 5 | Pistol 1, Breaching (5+) |
 
 ### Corsair Basic Weapons
@@ -4862,10 +3472,8 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Las blaster | 24" | 3 | 5 | Assault 4 |
 | Ranger long rifle | 36" | 4 | 5 | Heavy 1, Pinning, Precision Shots (5+), Rending (5+) |
 | Shuriken catapult | 18" | 4 | 5 | Assault 2, Breaching (5+) |
-| Shuriken rifle | 24" | 4 | 5 | Rapid Fire, Breaching (5+) |
 | Twin-linked shuriken catapult | 18" | 4 | 5 | Assault 2, Breaching (5+), Twin-linked |
 
 ### Corsair Special Weapons
@@ -4885,7 +3493,6 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Bright lance | 36" | 8 | 2 | Heavy 1, Lance |
-| Disintegrator cannon | 36" | 5 | 3 | Heavy 3, Rending (5+) |
 | Pulse laser | 48" | 8 | 2 | Heavy 2, Sunder, Exoshock (6+) |
 | Scatter laser | 36" | 6 | 6 | Heavy 4 |
 | Shuriken cannon | 24" | 6 | 5 | Assault 3, Breaching (5+) |
@@ -4899,32 +3506,6 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 | --- | --- | --- | --- | --- |
 | Haywire grenades | 6" | 2 | – | Assault 1, Haywire, One Use, Deflagrate, Blast (3") |
 | Plasma grenades | 6" | 4 | 4 | Assault 1, Blast (3") |
-| Starfang grenade launcher | 18" | 4 | 4 | Assault 1, Blast (5"), Pinning |
-
-### Corsair Close Combat Weapons
-
-*Corsair melee weapons favor speed, elegance and precision over brute force. Pirate princes, duelists and boarding veterans often carry highly personalized blades forged over centuries of warfare and void travel. Many Corsair close combat weapons are designed to exploit gaps in enemy defenses through speed, finesse and surgical lethality rather than raw striking power.*
-
-| Weapon | Range | Str | AP | Type |
-| --- | --- | --- | --- | --- |
-| Aeldari power sword | – | User | 3 | Melee, Rending (6+) |
-| Agoniser blade | – | User | 4 | Melee, Poisoned (4+), Rending (5+) |
-| Close combat blade | – | User | – | Melee |
-| Hekatarii blade | – | User | 4 | Melee, Rending (6+) |
-| Mistshield glaive | – | +2 | 3 | Melee, Reach (2), Shred |
-| Power lance | – | +1 | 3 | Melee, Reach (1), Sudden Strike (2) |
-| Void sabre | – | User | 3 | Melee, Rending (4+) |
-
-### Splinter Weapons
-
-*Drukhari splinter weapons, traded, looted or inherited by the Corsair fleets.*
-
-| Weapon | Range | Str | AP | Type |
-| --- | --- | --- | --- | --- |
-| Shredder | Template | 3 | 6 | Assault 1, Poisoned (4+) |
-| Splinter cannon | 36" | 5 | 5 | Heavy 4, Poisoned (3+), Rending (6+) |
-| Splinter rifle | 24" | 4 | 6 | Rapid Fire 1, Poisoned (4+) |
-| Twin-linked splinter rifle | 24" | 4 | 6 | Rapid Fire 1, Poisoned (4+), Twin-linked |
 
 ### Corsair Psychic Weapons
 
@@ -4936,10 +3517,6 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 | Singing spear (melee) | – | User | 2 | Melee, Force, Murderous Strike (6+) |
 | Witch staff | – | +1 | 4 | Melee, Force, Reach (1) |
 | Witchblade | – | User | 2 | Melee, Force, Murderous Strike (6+) |
-
-### Asuryani and Saedath Weapons
-
-These weapons work alongside those in other Horus Heresy publications. Each family's weapons count as that type for rules that affect it.
 
 ### Ranged Weapons
 
@@ -4981,9 +3558,6 @@ Undisputed masters of laser technology, harnessing the heat of the stars.
 | Prism Cannon – Lance | 60" | 9 | 1 | Ordnance 1, Lance, Linked Fire |
 | Prism Rifle – Dispersed | 18" | 4 | 4 | Heavy 1, Blast (3"), Ghostlight |
 | Prism Rifle – Focused | 18" | 6 | 3 | Heavy 1, Ghostlight, Lance |
-| Prismatic Cannon – Dispersed | 24" | 4 | 3 | Assault 1, Large Blast (5") |
-| Prismatic Cannon – Focused | 24" | 6 | 2 | Assault 1, Blast (3") |
-| Prismatic Cannon – Lance | 24" | 8 | 1 | Assault 2, Lance |
 | Pulsar | 60" | 12 | 2 | Destroyer 2, Blast (3") |
 | Revenant Pulsar | 72" | 12 | 1 | Destroyer 2, Blast (3"), Exoshock (5+), Murderous Strike (4+) |
 | Sky Lance | 72" | 8 | 2 | Heavy 1, Lance, Skyfire |
@@ -5046,8 +3620,6 @@ Bladed disks fired at supersonic velocities to shred their targets.
 | Chainsabre (Ranged) | 12" | 4 | 5 | Assault 2, Breaching (6+) |
 | Gravis Shuriken Cannon | 24" | 6 | 4 | Assault 8, Breaching (6+) |
 | Scorpion's Claw (Ranged) | 12" | 4 | 5 | Assault 2, Breaching (6+) |
-| Shrieker Cannon – Shrieker Fusillade | 24" | 1 | 5 | Assault 1, Bio-Explosive, Poisoned (2+), Rending (5+) |
-| Shrieker Cannon – Shuriken Volley | 24" | 6 | 5 | Assault 4, Breaching (5+) |
 
 #### Transonic Weapons
 
@@ -5071,13 +3643,8 @@ Aeldari weapons strange enough to defy easy classification.
 
 | Weapon | Range | Str | AP | Type |
 | Grenade Pack | 12" | 4 | 4 | Assault 2, Barrage, Ignores Cover, Large Blast (5"), Precise Throw |
-| Hallucinogen Grenade Launcher | 18" | 1 | – | Assault 1, Blast (3"), Pinning, Poisoned (3+), Shell Shock (2) |
-| Haywire Cannon | 36" | 4 | 3 | Assault 3, Haywire |
 | Haywire Launcher | 24" | 3 | 4 | Heavy 3, Haywire |
-| Shield Blast (Wave Serpent Shield) | 12" | 6 | – | Assault 8, Concussive (2), Ignores Cover, One Use |
-| Star Bolas | 12" | 6 | 2 | Assault 1, Blast (3"), One Shot |
 | Triskele (Ranged) | 12" | 3 | 3 | Assault 3 |
-| Vortex Grenade | 8" | 8 | 2 | Assault 1, Blast (3"), Concussive (1), Haywire, One Use, Ponderous Aim, Vortex |
 
 ### Melee Weapons
 
@@ -5154,20 +3721,8 @@ Aeldari weapons strange enough to defy easy classification.
 | Haywire Grenade | – | – | – | Melee, Detonation, Haywire |
 | Mandiblaster | – | 4 | 6 | Melee, Poisoned (4+), Scorpion's Sting (1), Specialist Weapon |
 | Melta Bomb | – | 8 | 1 | Melee, Armourbane (Melee), Detonation, Instant Death, Unwieldy |
-| Miststave | – | +1 | – | Melee, Concussive (1), Force, Poisoned (3+), Reach (1) |
 | Psytronome Shaper | – | +1 | – | Melee, Rending (6+) |
 | Triskele (Melee) | – | User | 3 | Melee |
-| Zephyrglaive | – | +1 | 2 | Melee, Rending (5+), Two-Handed |
-
-#### Harlequin Weapons
-
-The signature blades and gauntlets of the Saedath.
-
-| Weapon | Range | Str | AP | Type |
-| Harlequin's Caress | – | User | – | Melee, Fleshbane, Rending (5+) |
-| Harlequin's Edge | – | User | – | Melee, Dimensional Edge (4+), Murderous Strike (6+), Rending (4+) |
-| Harlequin's Embrace | – | 6 | 3 | Melee, Embrace of Death (2), Monofilament |
-| Harlequin's Kiss | – | +1 | – | Melee, Murderous Strike (6+), Rending (5+) |
 
 ### Relic Weapons
 
@@ -5252,30 +3807,7 @@ Instead of making a Shooting Attack, a Psyker with this Psychic Power may select
 
 Psychic Focus: before making any To Hit rolls with this weapon, the Psyker must make a Psychic check. If the Check is passed, then the Psyker may attack as normal using the profile shown for this weapon. If the Check is failed, then the Psyker suffers Perils of the Warp, and if the model is not removed as a casualty then it may attack as normal but may not use this weapon.
 
-## Psychic Discipline: Voidsong
-
-A Psyker with this Discipline gains all the listed Powers, weapons and other special rules, as well as the Voidsong Blade Psychic Weapon.
-
-*Voidsingers are wandering seers, star-sail mystics and void-prophets who draw upon the strange echoes that reverberate through the emptiness between worlds. Unlike the rigid discipline-paths of the Craftworlds, the Voidsong is fluid, instinctive and dangerous — a psychic art shaped by drifting fate, half-heard whispers and impossible stellar harmonies.*
-
-*The Voidsong is as much navigation as warfare. Its practitioners guide Corsair fleets through hidden passages of the void, cloud enemy perceptions, and strike with sudden impossible violence before vanishing back into darkness.*
-
-### Song of the Endless Void (Psychic Power)
-
-*The Voidsinger bends perception and motion, allowing allies to flow through battle like drifting shadows between stars.*
-
-Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit within 6". That unit gains Shrouded (6+) until the end of the current player turn. Friendly Aeldari (Anhrathe) units instead gain Shrouded (4+) until the end of the current player turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed, then the target unit also gains Hit & Run until the end of the current player turn. If the Check is failed, then the target unit gains no benefit and the Psyker suffers Perils of the Warp.
-
-### Voidsong Blade (Psychic Weapon)
-
-*Many Voidsingers shape psychokinetic force into shimmering blades of impossible starlight capable of cutting through both matter and thought alike.*
-
-| Weapon | Range | Str | AP | Type |
-| --- | --- | --- | --- | --- |
-| Voidsong Blade | – | User | 3 | Melee, Force, Psychic Focus, Murderous Strike (5+), Rending (5+) |
-
 ## Psychic Discipline: Runes of Twilight
-
 
 A Psyker with this Discipline gains all powers, attacks and other rules in the Discipline, as well as the Aetheric Lightning Psychic Weapon (Core Rulebook, page 322) unless they already have it from another source.
 
@@ -5299,26 +3831,6 @@ Instead of making a Shooting Attack, select a single friendly unit with a model 
 - Gains Split Fire.
 
 The controlling player may choose to take a Psychic check: if passed, two different options are applied instead of one; if failed, no benefits are gained and the Psyker suffers Perils of the Warp.
-
-## Psychic Discipline: Phantasmancy
-
-Phantasmancy is limited to models with the Rillietann Sub-type and is assigned by Special Rules on a unit's profile. A Psyker with this Discipline gains all of its powers, attacks and rules, plus the Aetheric Lightning Psychic Weapon (Core Rulebook, page 322) unless they already have it from another source.
-
-### Peal of Discord (Psychic Weapon)
-
-*With an immense clang, the Shadowseer blots out all other senses, leaving victims unable to react in time.*
-
-| Weapon | Range | Str | AP | Type |
-| --- | --- | --- | --- | --- |
-| Peal of Discord | 24" | 4 | – | Assault 4, Blind, Psychic Focus |
-
-### Veil of Tears (Psychic Power)
-
-*A wave of sorrow and guilt forces the Shadowseer's targets to turn their faces aside.*
-
-At any point in the Controlling Player's Movement phase, select a single enemy unit within 24" and line of sight. Until the beginning of the Controlling Player's next turn, it may not make Shooting Attacks over 18" against units made up entirely of Rillietann models.
-
-The Psyker may choose to take a Psychic check: if passed, the target also may not make Reactions against Rillietann-only units until the end of the opposing player's next turn; if failed, no effects apply and the Psyker suffers Perils of the Warp.
 
 ## Sources
 
