@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -110,6 +110,26 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Freebooterz" hidden="false" id="1f9f-17d3-8ccd-9efd" publicationId="96d0-c462-d158-fbad">
+              <profiles>
+                <profile name="Broadside!" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="cee7-61ec-af1a-61cd">
+                  <characteristics>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). This Advanced Reaction may be made once per battle during the opposing player's Shooting phase after a friendly Freebooterz unit is selected as the target of a Shooting Attack. After all attacks have been resolved, the reacting unit may immediately make a Shooting Attack with any Twin-linked weapons it possesses.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Flash Gitz" id="6096-c3ce-4119-91f8" hidden="false">
+                  <description>Flash Gitz gain the Line Sub-type.</description>
+                </rule>
+                <rule name="Competitive Gitz" id="6bca-a06a-8e05-4205" hidden="false">
+                  <description>whenever an enemy unit is destroyed by a friendly Freebooterz unit, all other friendly Freebooterz units gain +1 BS until the end of the current turn.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Goffs" hidden="false" id="22c6-363a-67fd-1836" publicationId="96d0-c462-d158-fbad">
               <profiles>
                 <profile name="Headbutt 'Em First" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="7941-9176-826d-5731">
@@ -124,6 +144,26 @@
                 </rule>
                 <rule name="Rage" id="3d81-b9c1-4083-8619" hidden="false">
                   <description>the unit has the Rage (2) special rule.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rustboyz" hidden="false" id="daf7-991e-bb16-91d2" publicationId="96d0-c462-d158-fbad">
+              <profiles>
+                <profile name="Emergency Repairs" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="6570-9705-d925-95bb">
+                  <characteristics>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). This Advanced Reaction may be made once per battle during the opposing player's Shooting phase after a friendly Rustboyz Vehicle or Dreadnought suffers one or more Hull Point losses or Wounds. After all enemy attacks have been resolved, the reacting unit immediately regains a single lost Hull Point or Wound.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Killa Kans" id="258c-cad6-42e0-a86c" hidden="false">
+                  <description>Killa Kans gain the Line Sub-type.</description>
+                </rule>
+                <rule name="Mek-Touched" id="b7af-387b-4ab6-2f2a" hidden="false">
+                  <description>Characters with this special rule gain Mek-Smasha (6+). Vehicles and Dreadnoughts with this special rule gain It Will Not Die (6+).</description>
                 </rule>
               </rules>
               <costs>
@@ -2428,7 +2468,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Concussive (1)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Concussive (1), Squig Prodder</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2438,6 +2478,7 @@
             <modifier type="set" field="name" value="Concussive (1)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Squig Prodder" id="ca3a-3cc8-0c3a-c4d5" hidden="false" targetId="c04a-b927-5f75-4630" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stikka" hidden="false" id="327c-5775-c5f7-e184" publicationId="96d0-c462-d158-fbad">
@@ -2905,11 +2946,20 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Armored Plates" hidden="false" id="7c41-524e-f972-520a" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Armored Plates" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="07dd-6140-e3a9-37d4">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A vehicle equipped with armored plates ignores Crew Shaken results.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Attack Squig" hidden="false" id="5f90-098a-c9cf-7c99" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Attack Squig" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3314-def9-e202-000b">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an attack squig adds 1 to its Attacks Characteristic.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model accompanied by one or more attack squigs gains +1 Attack.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2918,16 +2968,19 @@
       <profiles>
         <profile name="Boarding Plank" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="30dd-a390-b9e5-7c87">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">In the Assault phase, if the vehicle is in base contact with an enemy vehicle, one model embarked on it may make its close combat attacks against that vehicle as though it were in base contact.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A vehicle equipped with a boarding plank gains the Assault Vehicle special rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Assault Vehicle" id="d40b-26be-2b11-4a7b" hidden="false" targetId="aa61-11f6-2bb5-7c0e" type="rule" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bomb Squig" hidden="false" id="1978-a29f-7d13-6fcc" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Bomb Squig" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ecdf-773b-31ca-7935">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per game, in the Shooting phase, instead of shooting, a unit with a bomb squig may target one enemy Vehicle or Dreadnought within 18". That target suffers one hit at Strength 8, AP 3. Remove the bomb squig after it is used.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A bomb squig may be released once per battle during the Shooting phase. Select one enemy unit within 12". That unit suffers D3 Strength 8 AP3 hits with the Rending (5+) special rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2955,25 +3008,48 @@
       <profiles>
         <profile name="Cybork Body" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b6fe-673f-8a03-c960">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a cybork body has the Feel No Pain (6+) special rule. This does not combine with Dok's tools.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with cybork implants (a cybork body) gains a 5+ Invulnerable Save.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (X)" id="82d9-3526-68db-8988" hidden="false" targetId="85f3-c187-c717-378e" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (5+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Da Armour" hidden="false" id="ff87-f2ad-bb74-ba22" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Da Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="20c9-1a45-ed0d-dfd1">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Da armour confers a 5+ Armour Save.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Da armour grants a 5+ Armour Save.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deffkopta" hidden="false" id="1d98-94f4-7592-a954" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Deffkopta" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="f690-fe61-a7e2-0cef">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Deffkopta grants the Cavalry (Antigrav, Skirmish) Unit Type, increases the bearer's Movement Characteristic to 14", grants a 4+ Armour Save, Bulky (3), Hammer of Wrath (2), and the Deep Strike special rule. In addition, during any turn in which the unit Runs, it gains the Shrouded (5+) special rule until the beginning of the controlling player's next turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shrouded (X)" id="32f3-ac72-8d9d-adef" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shrouded (5+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Deff Rolla" hidden="false" id="05aa-472d-fcd5-ccd6" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Deff Rolla" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="9319-a345-1855-9230">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a vehicle with a deff rolla makes a Ram or Tank Shock, the enemy unit it moves into suffers D6 hits at Strength 10, AP 3.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A vehicle equipped with a deff rolla gains Hammer of Wrath (D6) when making Tank Shock attacks.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2999,7 +3075,7 @@
       <profiles>
         <profile name="'Eavy Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7b5b-084d-d861-02b5">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">'Eavy armour confers a 4+ Armour Save.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">'Eavy armour grants a 4+ Armour Save.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3017,28 +3093,7 @@
       <profiles>
         <profile name="Gitfinda" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="4791-96a0-a9c2-a995">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a gitfinda has a Ballistic Skill of 3 in any turn in which it did not move.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Grot-prod" hidden="false" id="cb58-2365-16c2-ecea" publicationId="96d0-c462-d158-fbad">
-      <profiles>
-        <profile name="Grot-prod" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1e5b-360c-25a0-1cad" publicationId="96d0-c462-d158-fbad">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">–</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Grabba Stikk and Grot-prod" hidden="false" id="6317-c7da-09a0-63b9" publicationId="96d0-c462-d158-fbad">
-      <profiles>
-        <profile name="Grabba Stikk and Grot-prod" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="8fdd-8ed8-9b8b-c144">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A grabba stikk is a melee weapon (S User, AP –). A grot-prod is a melee weapon (S+1, AP –). While a Runtherd with either lives, his Gretchin unit uses his Leadership of 7 for Morale checks and Pinning tests.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit containing one or more gitfinda squigs gains the Precision Shots (6+) and Split Fire special rules when making Shooting Attacks.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3047,7 +3102,7 @@
       <profiles>
         <profile name="Grabbin' Klaw" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7ca0-74bf-86cf-9779">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">In the Assault phase, a vehicle with a grabbin' klaw may choose one enemy Vehicle in base contact. Roll a D6; on a 4+, that Vehicle may not move in its next Movement phase.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Enemy Vehicles attempting to move out of base contact with a vehicle equipped with a grabbin' klaw must first pass a Dangerous Terrain test. If failed, the enemy Vehicle may not move that turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3078,27 +3133,29 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grot-prod" hidden="false" id="a0f3-a024-f0e9-2b72" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Grot-prod" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="880d-0acb-6f08-eb8b">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Friendly Gretchin units within 6" of one or more models equipped with a grot-prod may re-roll failed Mob Up Leadership tests.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Grot Riggers" hidden="false" id="681c-0e52-a80a-61fe" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Grot Riggers" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="69d5-9971-ece4-fa00">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An Ork vehicle with grot riggers gains Grot Riggers (6+). An Ork Dreadnought with grot riggers instead gains the It Will Not Die special rule. A Knight that takes grot riggers gains Grot Riggers (5+).</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A vehicle equipped with grot riggers gains It Will Not Die (6+).</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="It Will Not Die (X)" id="4a90-5c48-298b-1ead" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="It Will Not Die" />
-          </modifiers>
-        </infoLink>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kustom Force Field" hidden="false" id="2579-9744-3dac-8284" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Kustom Force Field" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="c89d-619b-5b79-cac9">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Friendly units wholly within 6" of a model with a kustom force field have a 5+ Invulnerable Save against Shooting Attacks. Other vehicles within range count as obscured instead. A Knight or Titan carrying a kustom force field has the 5+ Invulnerable Save against Shooting Attacks itself.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Friendly units within 6" of one or more models equipped with a kustom force field gain a 5+ Invulnerable Save against Shooting Attacks.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3114,10 +3171,33 @@
       <profiles>
         <profile name="Mega Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="f6f1-ddcb-f7a1-7f0c">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Mega armour confers a 2+ Armour Save. A model with the Infantry Unit Type that takes mega armour gains the Heavy Unit Sub-type, changes its Movement Characteristic to 5, and may not Advance.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model equipped with mega armour improves its Armour Save to 2+, increases its Bulky value by +1 (minimum Bulky (2)), gains the Firing Protocols (2) special rule, gains +1 Wound, and reduces its Movement and Initiative Characteristics by −1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Firing Protocols (X)" id="6d3b-c905-1b95-20e1" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Firing Protocols (2)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mork Charms" hidden="false" id="1ae5-d03d-6c25-f96d" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Mork Charms" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ca72-dc4a-665d-a8bf">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Mork charms grant a 5+ Invulnerable Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (X)" id="18b7-3e7a-2aa2-2e4a" hidden="false" targetId="85f3-c187-c717-378e" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (5+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Da Finkin' Kap" hidden="false" id="31da-a322-2edb-e599" publicationId="96d0-c462-d158-fbad">
       <constraints>
@@ -3195,7 +3275,7 @@
       <profiles>
         <profile name="Red Paint Job" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="2f76-4cec-ddc5-d9e6">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A vehicle with a red paint job adds 1 to its Movement Characteristic. This stacks with Red Ones Go Fasta.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A vehicle equipped with a red paint job increases its Movement Characteristic by +2 while moving at Combat Speed.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3204,7 +3284,7 @@
       <profiles>
         <profile name="Reinforced Ram" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="e444-e27e-a3d3-b08d">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A vehicle with a reinforced ram may re-roll failed Dangerous Terrain tests and adds 1 to its Strength when Ramming.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A vehicle equipped with a reinforced ram may re-roll failed Dangerous Terrain tests. In addition, Tank Shock attacks made by the vehicle inflict +1 Strength.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3213,7 +3293,7 @@
       <profiles>
         <profile name="Rokk-pack" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="397b-c5ad-3be9-3e61">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of the controlling player's Movement phase, or when deployed as part of a Deep Strike Assault, a model with a rokk-pack may set its Move Characteristic to 12 for the duration of the controlling player's turn ("activating" the rokk-pack). This lets it move up to 12", regardless of the Movement Characteristic on its profile, and gain any other benefits of a Movement Characteristic of 12, including the bonus to Charge distance. A model with an activated rokk-pack ignores terrain while Moving and Charging, but must take Dangerous Terrain tests as normal when beginning or ending its move in Dangerous Terrain; it treats all Difficult Terrain as Dangerous Terrain, and may move over friendly and enemy models or units without penalty, but must end its move at least 1" away from any model from another unit. A model with a rokk-pack may still Advance if it would normally be able to (this does not allow units that include any models with the Heavy sub-type to Advance). When it Advances with an activated rokk-pack, add its Initiative Characteristic to 12 to determine how far it may move; it ignores terrain and models from other units while doing so, but may not make Shooting Attacks or declare a Charge in the same turn, as per the normal rules for Advancing. Any model with a rokk-pack also gains the Bulky (2), Hammer of Wrath (1) and Deep Strike special rules; if it already has Bulky (2), it gains Bulky (3) instead. During a Reaction made in any phase, a player may not activate a model's rokk-pack to gain any bonus to its Movement Characteristic. Models with rokk-packs deployed as part of a Deep Strike Assault are considered to have activated their rokk-packs in the turn they enter play.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A rokkit pack grants the Jump Infantry Unit Type, Hammer of Wrath (1), Bulky (2), and the Deep Strike special rule. In addition, models equipped with rokkit packs increase their Movement Characteristic to 12 while Running. At the beginning of any Movement phase in which the unit Runs, the controlling player may attempt to push the rokkit packs beyond safe operational limits. Roll a D6: - On a roll of 6, the unit gains Fleet (3) and Hammer of Wrath (2) until the end of the turn. - On a roll of 2–5, the unit gains Fleet (2) until the end of the turn. - On a roll of 1, the unit immediately suffers 6 Strength 6 AP – hits and becomes Pinned.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3234,11 +3314,20 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sneakin' Armour" hidden="false" id="1f4e-4036-dfaa-904f" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Sneakin' Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="df91-d466-6042-3d6f">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Sneakin' armour grants a 6+ Armour Save and the Shrouded (5+) special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Squig Hound" hidden="false" id="95d9-0a4c-52a0-f977" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Squig Hound" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="df84-79c6-7598-d7f6">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Gretchin unit whose Runtherd has a squig hound may re-roll failed Morale checks.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Gretchin unit joined by one or more models equipped with a squig hound may re-roll failed Morale checks. If a Morale check is failed and then successfully re-rolled using this rule, the unit immediately suffers D3 Strength 3 AP – hits.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3291,7 +3380,7 @@
       <profiles>
         <profile name="Tellyporta" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="f17c-8cb4-4dad-4644">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a tellyporta, and any unit it joins, gains the Deep Strike special rule. A model with a warbike may not take a tellyporta.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit containing one or more models equipped with a teleporta gains the Deep Strike special rule. In addition, at the beginning of each of the controlling player's turns, roll a D6 for every model in the unit. For each roll of a 1, the unit suffers a Strength 8 AP – hit with the Pinning special rule. If the unit is not Pinned after resolving these hits, it may immediately be removed from the battlefield and placed into Ongoing Reserves. The unit automatically enters play via Deep Strike at the end of the controlling player's following Movement phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3312,14 +3401,14 @@
       <profiles>
         <profile name="Warbike" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="dd43-fdec-1a36-4ccb">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A warbike has a twin-linked big shoota. A model with the Infantry Unit Type that selects a warbike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had. It also changes its Movement Characteristic to 14, adds 1 to its Toughness, has a 4+ Armour Save, and gains the Hammer of Wrath (1) special rule. In addition, a model with a warbike that chooses to Advance gains the Shrouded (5+) special rule until the start of the controlling player's next turn.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An Ork warbike has one twin-linked big shoota. In addition, a model with an Ork warbike that chooses to Run gains the Shrouded (5+) special rule until the beginning of the controlling player's next turn. A model with the Infantry Unit Type that selects an Ork warbike as an upgrade changes its Unit Type to Cavalry, keeping any Unit Sub-types it previously possessed, and may choose to gain the Skirmish Unit Sub-type. In addition, the model changes its Movement Characteristic to 14 and gains the Firing Protocols (2) and Hammer of Wrath (1) special rules.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Hammer of Wrath (X)" id="343e-3e5b-e2d3-e280" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+        <infoLink name="Shrouded (X)" id="8361-96a2-3601-ae4d" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)" />
+            <modifier type="set" field="name" value="Shrouded (5+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -3328,7 +3417,7 @@
       <profiles>
         <profile name="Warphead" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="84cf-6945-7614-431f">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Weirdboy or Weirdboss with a warphead also knows Fists of Gork, and may re-roll the result on the Weirdboy Psychic Powers table, the Weirdboy Psychic Weapons table, or both.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Weirdboy upgraded to a Warphead may roll twice on both the Weirdboy Psychic Powers and Weirdboy Psychic Weapons tables and select which result to use at the beginning of each controlling player turn. In addition, a Warphead gains +1 to its Waaagh! Energy bonus, to a maximum total bonus of +3.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3337,7 +3426,7 @@
       <profiles>
         <profile name="Wreckin' Ball" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="a840-42b2-d717-0b63">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">In the Assault phase, a vehicle with a wreckin' ball may make one melee attack at Strength 8, AP 4 against an enemy unit in base contact.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the end of any Movement phase in which the vehicle moved, select one enemy unit within 3" of the vehicle. That unit suffers D3 Strength 8 AP4 hits.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5525,18 +5614,6 @@
           </constraints>
           <profiles>
             <profile name="Boss Retainer" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="063e-d423-673d-32f6" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="605d-265a-f714-6370" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="605d-265a-f714-6370" childId="8d14-6802-9cee-9a7f" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
@@ -5664,18 +5741,6 @@
           </constraints>
           <profiles>
             <profile name="Head Nob" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="c1fe-2dc7-7d40-293d" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="605d-265a-f714-6370" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="605d-265a-f714-6370" childId="8d14-6802-9cee-9a7f" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
@@ -5732,18 +5797,6 @@
           </constraints>
           <profiles>
             <profile name="Grot Attendant" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="d365-232d-a352-fcad" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="605d-265a-f714-6370" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="605d-265a-f714-6370" childId="8d14-6802-9cee-9a7f" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -7573,13 +7626,6 @@
           </constraints>
           <profiles>
             <profile name="Burna Boy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="54aa-8d5c-5bab-89a7" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="38d0-f9be-2630-c556" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
@@ -7629,13 +7675,6 @@
           </constraints>
           <profiles>
             <profile name="Burna Spanna" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="fbe7-5e3e-c02b-f491" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="38d0-f9be-2630-c556" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
@@ -7726,13 +7765,6 @@
           </constraints>
           <profiles>
             <profile name="Grot Attendant" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="2ed8-48ea-be6c-402e" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="38d0-f9be-2630-c556" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -8533,18 +8565,6 @@
           </constraints>
           <profiles>
             <profile name="Nob" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="3642-7e61-4d9b-cbf9" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="5+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="9036-bb11-8eb1-8456" childId="ff87-f2ad-bb74-ba22" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="9036-bb11-8eb1-8456" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -8666,18 +8686,6 @@
           </constraints>
           <profiles>
             <profile name="Boss Nob" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="5fdc-9cbb-e5cb-2f71" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="5+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="9036-bb11-8eb1-8456" childId="ff87-f2ad-bb74-ba22" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="9036-bb11-8eb1-8456" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -9922,13 +9930,6 @@
           </constraints>
           <profiles>
             <profile name="Weirdboy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="0c45-4013-3fbf-4575" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="35e7-61da-5e25-6ffd" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Independent Character, Psyker)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -10038,7 +10039,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2dd7-601d-e92c-516d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Mork charms" hidden="false" id="f004-f333-3aef-66fb" type="selectionEntry" targetId="1afd-c2e5-8e2b-28b2">
+            <entryLink import="true" name="Mork Charms" hidden="false" id="f004-f333-3aef-66fb" type="selectionEntry" targetId="1ae5-d03d-6c25-f96d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ee9-098e-2e7c-139b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bf1-6d8f-cda6-4408" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -10066,7 +10067,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mork charms" hidden="false" id="1afd-c2e5-8e2b-28b2" publicationId="96d0-c462-d158-fbad" />
     <selectionEntry type="unit" import="true" name="'Ard Boyz" hidden="false" id="0c61-c745-ff64-39a6" publicationId="96d0-c462-d158-fbad">
       <infoLinks>
         <infoLink name="Xenos" id="98d1-49c9-0be6-4a4b" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
@@ -10117,13 +10117,6 @@
           </constraints>
           <profiles>
             <profile name="'Ard Boy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="b030-b170-ecb7-549e" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="0c61-c745-ff64-39a6" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Line)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -10234,13 +10227,6 @@
           </constraints>
           <profiles>
             <profile name="'Ard Nob" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="642b-b4e3-49fa-bf97" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="0c61-c745-ff64-39a6" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Line)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -10690,13 +10676,6 @@
           </constraints>
           <profiles>
             <profile name="Big Boy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="d04d-d624-cbad-97e4" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="22e2-1071-9901-2eef" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Line)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
@@ -10735,13 +10714,6 @@
           </constraints>
           <profiles>
             <profile name="Boss Nob" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="9ad1-e785-c060-553e" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="22e2-1071-9901-2eef" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Line)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
@@ -11107,18 +11079,6 @@
           </constraints>
           <profiles>
             <profile name="Boy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="cacf-9e08-c45e-7111" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="5+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="ddb3-9996-7aa6-91fc" childId="ff87-f2ad-bb74-ba22" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="ddb3-9996-7aa6-91fc" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Line)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -11194,18 +11154,6 @@
           </constraints>
           <profiles>
             <profile name="Nob" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="ba2f-68b5-3e2c-f242" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="5+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="ddb3-9996-7aa6-91fc" childId="ff87-f2ad-bb74-ba22" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="ddb3-9996-7aa6-91fc" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Line)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -11550,16 +11498,16 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Runtherder: Options" hidden="false" id="ebac-a093-caa8-6efe">
           <entryLinks>
-            <entryLink import="true" name="Grot-prod" hidden="false" id="1705-ce62-841d-5d24" type="selectionEntry" targetId="cb58-2365-16c2-ecea">
+            <entryLink import="true" name="Grot-prod" hidden="false" id="7660-a263-8a4c-e4f6" type="selectionEntry" targetId="a0f3-a024-f0e9-2b72">
               <modifiers>
-                <modifier type="increment" field="a855-0240-82a8-256b" value="1">
+                <modifier type="increment" field="7fc0-5916-d041-fc48" value="1">
                   <repeats>
                     <repeat field="selections" scope="6fa2-22dc-f3a0-33c1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="944c-1c76-4bc6-87ca" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a855-0240-82a8-256b" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7fc0-5916-d041-fc48" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
@@ -11665,18 +11613,6 @@
           </constraints>
           <profiles>
             <profile name="Shoota Boy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="72c9-e38c-38ea-a194" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="5+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="b0c0-2156-074c-cac7" childId="ff87-f2ad-bb74-ba22" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="b0c0-2156-074c-cac7" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Line)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -11752,18 +11688,6 @@
           </constraints>
           <profiles>
             <profile name="Nob" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="0a90-1de9-6726-2288" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="5+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="b0c0-2156-074c-cac7" childId="ff87-f2ad-bb74-ba22" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="b0c0-2156-074c-cac7" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Line)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -12732,6 +12656,12 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
+            <entryLink import="true" name="Deffkopta" hidden="false" id="7f4c-59b0-082c-b3a6" type="selectionEntry" targetId="1d98-94f4-7592-a954">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9aa-9845-c790-2828" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9235-7617-03fe-5230" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
             <entryLink import="true" name="Spinnin' blades" hidden="false" id="e6bc-e18a-e332-592e" type="selectionEntry" targetId="67d3-1d4c-fa5e-7726">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b89-2c52-d573-ca05" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -12906,7 +12836,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d909-2d5d-2d14-07d4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Sneakin' armour" hidden="false" id="ccb2-bee6-facf-17e0" type="selectionEntry" targetId="587c-50dc-ce55-acdf">
+            <entryLink import="true" name="Sneakin' Armour" hidden="false" id="ccb2-bee6-facf-17e0" type="selectionEntry" targetId="1f4e-4036-dfaa-904f">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cb3-ab6f-9a6e-0346" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e7f-0e9d-cb10-49d9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -13011,7 +12941,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="763e-bdc4-6362-fe67" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Sneakin' armour" hidden="false" id="b7d8-6b87-b862-6fe3" type="selectionEntry" targetId="587c-50dc-ce55-acdf">
+            <entryLink import="true" name="Sneakin' Armour" hidden="false" id="b7d8-6b87-b862-6fe3" type="selectionEntry" targetId="1f4e-4036-dfaa-904f">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3184-5dc8-2645-60c9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73c6-de3e-b98e-8282" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -13103,7 +13033,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Snipa rifle" hidden="false" id="ef1f-aac8-14d7-6290" publicationId="96d0-c462-d158-fbad" />
-    <selectionEntry type="upgrade" import="true" name="Sneakin' armour" hidden="false" id="587c-50dc-ce55-acdf" publicationId="96d0-c462-d158-fbad" />
     <selectionEntry type="upgrade" import="true" name="Smoke bombs" hidden="false" id="3c3e-0126-4e5b-1f16" publicationId="96d0-c462-d158-fbad" />
     <selectionEntry type="unit" import="true" name="Kustom Boosta-blasta" hidden="false" id="93dc-35cf-a53a-a555" publicationId="96d0-c462-d158-fbad">
       <infoLinks>
@@ -14623,7 +14552,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Armored plates" hidden="false" id="45da-83df-7e75-105a" type="selectionEntry" targetId="dc5c-d9f5-6a52-9fd2">
+                <entryLink import="true" name="Armored Plates" hidden="false" id="45da-83df-7e75-105a" type="selectionEntry" targetId="7c41-524e-f972-520a">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44e4-e9ae-7ca7-352a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -14675,7 +14604,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Armored plates" hidden="false" id="dc5c-d9f5-6a52-9fd2" publicationId="96d0-c462-d158-fbad" />
     <selectionEntry type="unit" import="true" name="Big Mek Dakkarig" hidden="false" id="95f2-cd60-0975-6221" publicationId="96d0-c462-d158-fbad">
       <rules>
         <rule name="Big Mek" id="2eb6-1aec-14d0-4f58" hidden="false">
@@ -15933,13 +15861,6 @@
           </constraints>
           <profiles>
             <profile name="Loota" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="b5c6-ecfa-07f7-a002" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="9cc9-ea7e-5d43-fd48" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -15995,13 +15916,6 @@
           </constraints>
           <profiles>
             <profile name="Spanner Nob" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="5b82-3d09-b23a-4d96" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="9cc9-ea7e-5d43-fd48" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -16058,13 +15972,6 @@
           </constraints>
           <profiles>
             <profile name="Ammo Runt" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="89fd-c204-89fa-6f5b" publicationId="96d0-c462-d158-fbad">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="9cc9-ea7e-5d43-fd48" childId="e4bb-7234-0498-89ca" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -17243,6 +17150,31 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Kaptin of Kaptins" hidden="true" id="eaee-36a2-02de-93e1" publicationId="96d0-c462-d158-fbad">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1f9f-17d3-8ccd-9efd" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ccc-1a18-6596-6dc8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Kaptin of Kaptins" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="6836-fb95-3a45-57c5">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord commands through sheer swagger, wealth and reputation amongst the pirate fleets. Friendly Freebooterz units within 12" of the Warlord gain Crusader. In addition, the Warlord gains Preferred Enemy (Characters). An army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="85a5-a83b-c3cc-291d" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Skarboy Boss" hidden="true" id="8489-3d62-8ea2-aed0" publicationId="96d0-c462-d158-fbad">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -17263,6 +17195,31 @@
           </profiles>
           <categoryLinks>
             <categoryLink targetId="1158-146a-d9a0-39ad" id="cd9d-c5fc-2985-3ee7" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Master Mek" hidden="true" id="cebd-976d-af47-14a5" publicationId="96d0-c462-d158-fbad">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="daf7-991e-bb16-91d2" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db3b-20b0-b2db-e5fb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Master Mek" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="fd00-8e28-25d1-daee">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord is among the greatest mekboyz of the Waaagh!, capable of keeping entire armoured spearheads fighting long after they should have collapsed. Friendly Rustboyz Vehicles and Dreadnoughts within 12" of the Warlord may re-roll failed It Will Not Die rolls. In addition, one friendly Vehicle within 6" may ignore Crew Shaken results. An army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="4b12-d66d-8e2b-289f" primary="true" name="Warlord Traits:" />
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -17324,6 +17281,9 @@
     <rule name="'Ere We Go!" id="fe04-50c9-c0ad-8fb5" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>When rolling charge distance, the unit may re-roll one of the dice. If the charge still fails, the unit moves the full distance rolled toward the target, instead of the usual reduced failed-charge move†.</description>
     </rule>
+    <rule name="Exhaust Belch" id="b19a-e1bf-37d3-9a3f" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>After this unit completes a Run move, place a flamer template touching the rear of the model. Any unit touched by the template suffers D3 Strength 5 AP – hits with the Pinning special rule.</description>
+    </rule>
     <rule name="Fetishes of Gork and Mork" id="3a26-8469-b84b-e8be" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>Fetishes of Gork and Mork grant a 4+ Invulnerable Save and Adamantium Will (4+).</description>
     </rule>
@@ -17384,6 +17344,9 @@
     <rule name="Stealth" id="4f86-aae1-17da-67cb" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.</description>
     </rule>
+    <rule name="Speed Freekz" id="5206-b3f9-c8f4-fee3" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Models with this special rule gain Fleet (2), Sudden Strike (2), and Hammer of Wrath (1). In addition, they may re-roll failed Dangerous Terrain tests.</description>
+    </rule>
     <rule name="Tank Hunters" id="cb2f-190f-9b7f-0f1e" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>The model's attacks gain the Sunder special rule. If a weapon already has Sunder, add 1 to its Armour Penetration rolls instead.</description>
     </rule>
@@ -17411,6 +17374,9 @@
     <rule name="Mishap" id="d1d2-4a94-ee76-f561" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>When firing a Shokk Attack Gun, roll 2D6 to determine the weapon's Strength characteristic. If the result contains any Double, resolve the attack normally and then immediately roll a D6 on the following Mishap Table. D6: Mishap Result, Rules Effect. 1: Warp Core Collapse!, The firer and his entire unit suffer a Strength 6 AP4 hit with the Deflagrate special rule. The Shokk Attack Gun may not be fired again for the remainder of the battle.. 2: Polarity Reversed, Remove the firer from play and immediately place him in base contact with the target enemy unit. He counts as having successfully Charged and becomes Locked in combat, but begins the combat Pinned.. 3: Snotling Rain, The original attack causes no damage. Instead place a Massive Blast (7") template centred on the battlefield. Every unit touched by the template must immediately take a Pinning test.. 4: Ear-Biting Madness, If the target is a Vehicle, it immediately suffers a Crew Shaken result. If the target is Infantry, Cavalry or a Dreadnought, the target gains Blind and Concussive (1) until the end of the next player turn.. 5: Subatomic Materialization, The attack resolves at Strength 10 and gains Fleshbane and Sunder. After resolving the attack, the firer suffers one automatic Wound with no saves of any kind allowed.. 6: Annihilation Vortex, The attack resolves at Strength 10 AP1 and gains Torrent and Instant Death. The target unit must immediately take a Morale check at -2 Leadership..</description>
     </rule>
+    <rule name="Squig Prodder" id="c04a-b927-5f75-4630" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>A Squig Prodder is a vicious shock stave used to drive attack squigs and terrified Gretchin into uncontrollable aggression. Friendly Gretchin units within 6" of one or more models equipped with a squig prodder gain Furious Charge (1).</description>
+    </rule>
     <rule name="Killsaw" id="d7fe-7293-311a-6d97" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>A model equipped with two Killsaws gains +2 Attacks instead of the normal +1 Attack granted for being armed with two close combat weapons. Grots never gain +1 Attack for being armed with two melee weapons.</description>
     </rule>
@@ -17419,12 +17385,6 @@
     </rule>
     <rule name="Invulnerable Save (X)" id="85f3-c187-c717-378e" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>The model has an Invulnerable Save of X, which may be taken against any Wound instead of its armour save.</description>
-    </rule>
-    <rule name="Exhaust Belch" id="b19a-e1bf-37d3-9a3f" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>Listed on this datasheet but not defined in the conversion doc.</description>
-    </rule>
-    <rule name="Speed Freekz" id="5206-b3f9-c8f4-fee3" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>Listed on this datasheet but not defined in the conversion doc.</description>
     </rule>
   </sharedRules>
 </catalogue>
