@@ -279,7 +279,7 @@ _Speed is its own reward. Speed Freeks race into battle on bikes and buggies, an
 
 ## Force Organisation
 
-Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, Heavy Support, Dedicated Transports and Lord of War. Each unit takes the slot of the section it appears under:
+Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, Heavy Support, Dedicated Transports, Lord of War and Primarch. Each unit takes the slot of the section it appears under:
 
 | 2.0 slot | Ork units |
 |---|---|
@@ -289,7 +289,8 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Fast Attack | Stormboyz, Warbikers, Deffkoptas, Dakkajet, Burna-bommer, Blitza-bommer, Squighog Boyz, Speed Freek buggies, Wazbom Blastajet |
 | Heavy Support | Deff Dread, Killa Kans, Lootas, Flash Gitz, Mek Gunz, Battlewagon, Gunwagon, Bonebreaka, Kill Rig, Hunta Rig, Big Mek Dakkarig |
 | Dedicated Transports | Trukk; Battlewagon for Nobz, Meganobz or Boyz |
-| Lord of War | Ghazghkull Thraka, Gorkanaut, Morkanaut, Stompa |
+| Lord of War | Gorkanaut, Morkanaut, Stompa |
+| Primarch | Ghazghkull Thraka |
 
 ## HQ
 
@@ -2438,9 +2439,9 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 | – Kustom mega-kannon | +10 points |
 | – Smasha gun | +10 points |
 
-## Lords of War
+## Primarch
 
-Lords of War follow the 2.0 points limit for that slot†.
+Ghazghkull Thraka takes the Primarch slot of the Force Organisation chart, and counts toward the Lords of War and Primarchs points limit.
 
 ### Ghazghkull Thraka — 375 pts
 
@@ -2477,6 +2478,11 @@ Lords of War follow the 2.0 points limit for that slot†.
 - Primarch: Ghazghkull has every rule of the Primarch unit type, including Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4) and Relentless, and must be your Warlord
 - Prophet of da Great Waaagh!: friendly Ork units within 6" add 1 to their Weapon Skill and re-roll to-wound rolls of 1 in close combat
 - Waaagh!
+
+
+## Lords of War
+
+Lords of War follow the 2.0 points limit for that slot†.
 
 ### Gorkanaut — 270 pts
 

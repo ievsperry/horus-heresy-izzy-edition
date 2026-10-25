@@ -114,6 +114,10 @@ loading. The script prints anything in the doc it could not place.
   or a Warlord Trait ("The Warlord and any unit it joins gain the Burrower biomorph") shows its
   rules on those units while that sub-faction or trait is chosen, and the paid option is hidden.
 
+- A "## Primarch" section puts its units in the game system's Primarch slot (Ghazghkull Thraka),
+  counting toward the Lords of War and Primarchs points limit. "If you take this entry, you may not
+  also take X" makes the two entries exclusive (only one Vect).
+
 ## Not enforced
 
 - Rite of War limitations other than the Warlord ("no Lords of War", "no more than two Heavy
