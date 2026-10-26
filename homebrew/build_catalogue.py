@@ -1699,11 +1699,15 @@ class Builder:
     def rule_paragraphs(lines):
         """'**Name.** text' rules, each with the bullets, tables and paragraphs that follow it."""
         out = []
+        closed = False  # a heading ends the rule before it: what follows belongs to that heading
         for ln in lines:
             m = re.match(r"\*\*(.+?)\.?\*\* (.+)", ln)
             if m:
                 out.append([m.group(1).replace(" (sub-type)", ""), [m.group(2)]])
-            elif out and ln.strip():
+                closed = False
+            elif ln.startswith("#"):
+                closed = True
+            elif out and ln.strip() and not closed:
                 if ln.startswith("- **"):
                     # "- **Krumpin' Waaagh!:** ...": a list of named options, one to a line
                     out[-1][1].append("\n• " + strip_md(ln[2:]))

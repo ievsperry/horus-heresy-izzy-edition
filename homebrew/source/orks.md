@@ -314,7 +314,9 @@ Every Weirdboy knows Da Jump and Frazzle. A Weirdboy with the Warphead upgrade a
 - the Weirdboy suffers Perils of the Warp
 - and may not use the Psychic Weapon during that phase.
 
-**Shock Pulse.** Any unit that suffers one or more unsaved Wounds from this weapon suffers −1 WS until the end of the next Assault phase.
+**Shock Pulse.** Any model with the Vehicle, Dreadnought or Automata Unit Type that suffers a Penetrating Hit or unsaved Wound from an attack with this special rule may only make Snap Shots when it next makes a Shooting Attack either as part of a Reaction or during its controlling player’s Shooting phase.
+
+Models with the Super-Heavy, Lumbering, Knight, or Titan Sub-types are not forced to make Snap Shots as part of their next Shooting Attack, instead suffering a -2 penalty to their Ballistic Skill Characteristic when they make their next Shooting Attack, and in addition, any weapons they are equipped with that use a Scatter dice to roll to hit and which roll a result of 'Hit' on the Scatter die must re-roll it. This penalty can only be applied to a model once per turn.
 
 #### Weirdboy Psychic Powers
 
