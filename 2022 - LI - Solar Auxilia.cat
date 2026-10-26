@@ -1307,7 +1307,7 @@
                   <characteristics>
                     <characteristic name="Unit Type" id="bc75-1a50-dbad-100f" hidden="false" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
                     <characteristic name="Move" id="f10e-7724-2f5f-369d" hidden="false" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                    <characteristic name="WS" id="7aa2-c8af-b1fe-94ca" hidden="false" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="WS" id="7aa2-c8af-b1fe-94ca" hidden="false" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                     <characteristic name="BS" id="18e2-451e-943a-ce0e" hidden="false" typeId="74ae-c840-0036-d244">4</characteristic>
                     <characteristic name="S" id="69ba-ce11-81d1-3381" hidden="false" typeId="e478-41d4-a092-48a8">3</characteristic>
                     <characteristic name="T" id="e6c4-b9db-d740-4ec4" hidden="false" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
@@ -1531,6 +1531,7 @@
             </infoLink>
             <infoLink name="Stubborn" id="f040-df01-1e41-c795" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
             <infoLink name="Chosen Warriors" id="668f-863e-cb55-5cde" hidden="false" type="rule" targetId="13d1-9270-6539-08ed"/>
+            <infoLink id="08d4-ee1c-2e5b-b867" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -4529,6 +4530,17 @@
           </costs>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Hermes Veletaris Squadron" hidden="false" id="8c69-57dc-440c-b706" page="181" publicationId="d882-d2a-5da1-92c4">
+          <infoLinks>
+            <infoLink id="856f-e5f0-22c4-04ca" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e09-aae1-d5ff-d43e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink name="Unit:" hidden="false" id="bcc6-6674-41b6-9e30" targetId="36c3-e85e-97cc-c503" primary="false"/>
           </categoryLinks>
@@ -11709,7 +11721,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
               <entryLinks>
                 <entryLink name="Autocannon" hidden="false" type="selectionEntry" targetId="56b3-de09-9fea-deb6" id="9d8c-2100-4ce3-be82">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e14e-cf71-4616-b0f4"/>
@@ -11717,7 +11729,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink name="Volkite Culverin" hidden="false" type="selectionEntry" targetId="170d-44e0-455c-8207" id="290b-6678-4687-bf31">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e65c-16ff-4c3f-875e"/>
@@ -11725,7 +11737,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink name="Lascannon" hidden="false" type="selectionEntry" targetId="b252-5a86-6e0f-218b" id="5b13-71a3-43a0-b489">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54b4-58a3-454b-8775"/>
@@ -11739,7 +11751,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Heavy Incinerator" hidden="false" id="3c54-73b6-d719-7a12" publicationId="d882-d2a-5da1-92c4" page="183">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                   <profiles>
                     <profile name="Heavy Incinerator" hidden="false" id="1bc6-11d3-26ac-4ad3" publicationId="2d3f-82d2-9db5-ca6d" page="2" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -11761,7 +11773,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Melta lance" hidden="false" id="333e-3b04-ddb-34eb" publicationId="d882-d2a-5da1-92c4" page="183">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                   <profiles>
                     <profile name="Melta lance" hidden="false" id="5e51-b891-c549-3df6" publicationId="2d3f-82d2-9db5-ca6d" page="2" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -11820,7 +11832,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                     <modifier type="set" value="4 Hunter-killer missiles" field="name"/>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -12171,6 +12183,7 @@ Limitations
 • A Legate Marshal, Auxilia Marshal or Auxilia Captain in a Detachment using this Cohort Doctrine may select a cortex controller* for +15 points each.
 • A Legate Marshal in a Detachment using this Cohort Doctrine gains the Master of Automata special rule.
 *Unit profiles and rules for these can be found in Liber Mechanicum.
+• An army that uses the Cohort Doctrine: Iron Pattern Cohort may take a single unit with the Corrupted Engine Unit Sub-type. An army can only include a maximum of one unit with the Corrupted Engine Unit Sub-type chosen in this manner.
 
 Limitations
 • A Detachment using this Cohort Doctrine may not include more than a single Auxilia Armoured Tercio.
@@ -12203,19 +12216,12 @@ Limitations
             <rule name="Reconnaissance Pattern Cohorts" id="7e04-8329-9f52-1bc1" hidden="false" publicationId="d882-d2a-5da1-92c4" page="179">
               <description>Effects
 • A Detachment using this Cohort Doctrine may select Solar Auxilia Hermes Light Sentinel Squadrons as Troops choices. Solar Auxilia Hermes Light Sentinel Squadrons selected as Compulsory Troops choices gain the Line Unit Sub-type.
-• Solar Auxilia Veletaris Assault Squadrons in this Detachment gain the Outflank special rule.
+• Solar Auxilia Hermes Veletaris Squadrons in this Detachment gain the Outflank special rule.
 • Aethon Heavy Sentinel Squadrons may include up to 4 additional Aethon Heavy Sentinels instead of up to 2 additional Aethon Heavy Sentinels.
 
 Limitations
 • A Detachment using this Cohort Doctrine may not include more than a single Auxilia Armoured Tercio.
-• A Detachment using this Cohort Doctrine may not include more than a single Auxilia Artillery Tercio.
-
-
-NOTE
-The 2nd bullet point about Veletaris Assault Squadrons getting Outflank is not implemented as no unit exists with that name, so it is unclear which unit it should go on.</description>
-            </rule>
-            <rule name="Outflank (Ambiguous Recon Cohorts)" id="bdd0-1f0c-cf43-37fb" hidden="false">
-              <description>In Recon Cohort it says &quot;Solar Auxilia Veletaris Assault Squadrons in this Detachment gain the Outflank special rule.&quot; This seems to be the closest unit to this description as it is a sentinel based Cohort and this is the only Veletaris one.</description>
+• A Detachment using this Cohort Doctrine may not include more than a single Auxilia Artillery Tercio.</description>
             </rule>
           </rules>
         </selectionEntry>

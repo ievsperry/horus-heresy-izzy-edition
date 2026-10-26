@@ -7669,10 +7669,15 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             <infoLink name="Hit &amp; Run" hidden="false" type="rule" id="3849-40aa-1053-d5c7" targetId="5986-e960-d432-affd"/>
             <infoLink name="Malefic Aegis (X)" hidden="false" type="rule" id="5722-4e5-df85-62ae" targetId="686c-178b-6e07-2ba3">
               <modifiers>
-                <modifier type="set" value="Malefic Aegis (6+)" field="name"/>
+                <modifier type="set" value="Malefic Aegis (5+)" field="name"/>
               </modifiers>
             </infoLink>
             <infoLink name="Move Through Cover" hidden="false" type="rule" id="3f81-b3ad-c662-a291" targetId="2b6f-bfec-759e-1746"/>
+            <infoLink id="21db-7a6a-3eba-334c" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rage (2)"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d1e-9146-7aa-dffa"/>
@@ -7953,7 +7958,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
           </constraints>
           <rules>
             <rule name="Animatus Malevolence (Cybertheurgic Rite)" hidden="false" id="f787-1170-60a1-31b9" publicationId="4934-46f7-208b-b4af" page="155">
-              <description>Instead of making a Shooting Attack, a Cybertheurgist with this Cybertheurgic Rite may select a single friendly unit within 12&quot; that is entirely composed of models with the Corrupted Engine Unit Sub-type and then apply one of the following effects:
+              <description>Instead of making a Shooting Attack, a Cybertheurgist with this Cybertheurgic Rite may select a single friendly unit within 12&quot; that contains any models with the Corrupted Engine Unit Sub-type or models with both the Automata Unit Type and the Corrupted Unit Sub-type, and then apply one of the following effects:
 • The chosen unit may immediately move a number of inches up to its unmodified Initiative Characteristic directly towards the nearest enemy unit. If the chosen unit has mixed Initiative Characteristics, use the highest unmodified Characteristic.
 • All models in the chosen unit improve their Invulnerable Save by 1, to a maximum of 3+, until the beginning of the controlling player’s next turn, (e.g., a model with an Invulnerable Save of 5+ improves their save to 4+).
 • All models in the unit add 1 to their WS and I characteristics until the end of the subsequent Assault phase.

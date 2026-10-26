@@ -3247,11 +3247,13 @@
           <description>An Invictarus Suzerain Squad may be selected as a Retinue Squad in a Detachment that includes at least one model with both the Master of the Legion and Legiones Astartes (Ultramarines) special rules, instead of as an Elites choice. A unit selected as a ‘Retinue Squad’ must have one model with both the Master of the Legion and Legiones Astartes (Ultramarines) special rules from the same Detachment selected by the controlling player as the Invictarus Suzerain Squad’s Leader for the purposes of this special rule. An Invictarus Suzerain Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. An Invictarus Suzerain Squad selected as a Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play. One Suzerain in an Invictarus Suzerain Squad selected as a Retinue may exchange their bolt pistol for a Legion standard for +15 points.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="8d6f-7fc9-966a-e627" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="c1fb-3d4b-27f5-b426" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="2515-1c11-b0e3-ede9" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="f8fc-6ad9-18f9-52bb" name="Heavy Sub-type" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
-        <categoryLink id="2939-9165-c065-999f" name="Line Sub-type" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3062-8ad4-10a2-9744" name="2) Dedicated Transport:" hidden="false" collective="false" import="true">
@@ -3306,6 +3308,11 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="929f-ffd4-39a2-f697" name="Termite Assault Drill" hidden="false" collective="false" import="true" targetId="b3bd-c23c-aca6-f883" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89d1-3286-36e4-3cb8" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="c8ea-e46e-51f2-459e" name="1) Suzerains" hidden="false" collective="false" import="true" defaultSelectionEntryId="1ca9-991d-ff13-4c7d">
@@ -3314,14 +3321,13 @@
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa9e-e533-5bea-307b" type="max"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="995c-625b-eb78-487c" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="1ca9-991d-ff13-4c7d" name="Suzerain w/Bolt Pistol &amp; Legatine Axe" hidden="false" collective="false" import="true" type="model">
               <profiles>
                 <profile id="3514-22be-3c77-f1d7" name="Suzerain" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
                   <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Line, Heavy, Character)</characteristic>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
                     <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                     <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -3350,13 +3356,11 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
               </costs>
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="69f6-f1f7-4e32-9043" name="Infantry Unit Type" primary="false"/>
-                <categoryLink targetId="6399-5c65-7833-1025" id="42b2-2c9b-4493-8ba4" name="Line Sub-type" primary="false"/>
                 <categoryLink targetId="9231-183c-b97b-63f9" id="0c2f-386c-4cae-b5e7" name="Heavy Sub-type" primary="false"/>
-                <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="6161-c590-4d99-8571" name="Character" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry id="5790-aef9-aa7d-9ec4" name="Suzerain w/Bolt Pistol &amp; Thunder Hammer" hidden="false" collective="false" import="true" type="model">
@@ -3375,16 +3379,14 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
               </costs>
               <infoLinks>
                 <infoLink name="Suzerain" hidden="false" type="profile" id="82e5-c9d6-b73e-be28" targetId="3514-22be-3c77-f1d7"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="b032-e4c5-4fc6-9c6b" name="Infantry Unit Type" primary="false"/>
-                <categoryLink targetId="6399-5c65-7833-1025" id="c412-17b7-45a5-8eb2" name="Line Sub-type" primary="false"/>
                 <categoryLink targetId="9231-183c-b97b-63f9" id="6f15-3b37-4fa9-b821" name="Heavy Sub-type" primary="false"/>
-                <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="e8e6-efde-4cf3-a882" name="Character" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry id="2859-846d-8545-752c" name="Suzerain w/Plasma Pistol &amp; Legatine Axe" hidden="false" collective="false" import="true" type="model">
@@ -3406,16 +3408,14 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
               </costs>
               <infoLinks>
                 <infoLink name="Suzerain" hidden="false" type="profile" id="371a-fa0-a81-f6fc" targetId="3514-22be-3c77-f1d7"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="2033-2f8f-46fc-afc5" name="Infantry Unit Type" primary="false"/>
-                <categoryLink targetId="6399-5c65-7833-1025" id="8b16-10b0-4cf0-9f3e" name="Line Sub-type" primary="false"/>
                 <categoryLink targetId="9231-183c-b97b-63f9" id="963b-a8ca-449c-b52a" name="Heavy Sub-type" primary="false"/>
-                <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="068b-a390-4934-a1b7" name="Character" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry id="276d-8bc1-5949-baa7" name="Suzerain w/Plasma Pistol &amp; Thunder Hammer" hidden="false" collective="false" import="true" type="model">
@@ -3434,16 +3434,14 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
               </costs>
               <infoLinks>
                 <infoLink name="Suzerain" hidden="false" type="profile" id="5510-b560-7d5f-dfb9" targetId="3514-22be-3c77-f1d7"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="9bcd-2de3-4d20-a23f" name="Infantry Unit Type" primary="false"/>
-                <categoryLink targetId="6399-5c65-7833-1025" id="b8d2-5634-4e08-b5e7" name="Line Sub-type" primary="false"/>
                 <categoryLink targetId="9231-183c-b97b-63f9" id="0bae-78ac-44f9-b71b" name="Heavy Sub-type" primary="false"/>
-                <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="0604-e002-43a0-a2bc" name="Character" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -3486,9 +3484,7 @@
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="b7e8-01dc-4bd5-9e08" name="Infantry Unit Type" primary="false"/>
-                    <categoryLink targetId="6399-5c65-7833-1025" id="8708-28d4-4092-be77" name="Line Sub-type" primary="false"/>
                     <categoryLink targetId="9231-183c-b97b-63f9" id="9bc9-c435-4b26-aa4d" name="Heavy Sub-type" primary="false"/>
-                    <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="3567-c7db-4ab4-8681" name="Character" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
                 <selectionEntry id="1b60-c439-0b96-10cf" name="Suzerain w/Legion Standard &amp; Thunder Hammer" hidden="false" collective="false" import="true" type="model">
@@ -3514,9 +3510,7 @@
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="4520-1730-44d5-9844" name="Infantry Unit Type" primary="false"/>
-                    <categoryLink targetId="6399-5c65-7833-1025" id="e504-c3f9-4281-a25c" name="Line Sub-type" primary="false"/>
                     <categoryLink targetId="9231-183c-b97b-63f9" id="8521-5079-4cc0-8b20" name="Heavy Sub-type" primary="false"/>
-                    <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="648d-2eaf-4e91-944a" name="Character" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -3773,6 +3767,11 @@
                   </conditionGroups>
                 </modifier>
               </modifiers>
+            </entryLink>
+            <entryLink id="1b79-5c2e-8e6e-1958" name="Termite Assault Drill" hidden="false" collective="false" import="true" targetId="b3bd-c23c-aca6-f883" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce15-4ead-89c3-24d4" type="max"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>

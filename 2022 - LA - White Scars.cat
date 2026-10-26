@@ -3379,7 +3379,6 @@
       <categoryLinks>
         <categoryLink id="4083-4f2a-5da9-39f9" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="b4a8-ec8a-7485-af38" name="Cavalry Unit Type" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
-        <categoryLink id="7dc2-f06d-83d7-3f15" name="Heavy Sub-type" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c46b-3bf0-77df-39bb" name="Golden Keshig Rider" hidden="false" collective="false" import="true" type="model">
@@ -3397,7 +3396,7 @@
                 </modifier>
               </modifiers>
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Antigrav, Heavy)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Antigrav)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">15&quot;</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -3417,7 +3416,6 @@
           <categoryLinks>
             <categoryLink targetId="6d79-a3e4-381f-7b0f" id="f2a4-a57d-43bd-a463" name="Cavalry Unit Type" primary="false"/>
             <categoryLink targetId="4303-1348-cce4-9501" id="17b4-98ba-4c4e-b1f8" name="Antigrav Sub-type" primary="false"/>
-            <categoryLink targetId="9231-183c-b97b-63f9" id="24c6-0df2-4271-8855" name="Heavy Sub-type" primary="false"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry id="b55b-c197-71d3-9c84" name="Golden Keshig Champion" hidden="false" collective="false" import="true" type="model">
@@ -3435,7 +3433,7 @@
                 </modifier>
               </modifiers>
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Antigrav, Heavy, Character)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Antigrav, Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">15&quot;</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -3453,7 +3451,6 @@
             <categoryLink id="597d-1cf2-1be6-94af" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
             <categoryLink targetId="6d79-a3e4-381f-7b0f" id="3025-56da-43cd-97be" name="Cavalry Unit Type" primary="false"/>
             <categoryLink targetId="4303-1348-cce4-9501" id="affb-9e7b-4c2f-ab96" name="Antigrav Sub-type" primary="false"/>
-            <categoryLink targetId="9231-183c-b97b-63f9" id="321a-157d-4010-a05e" name="Heavy Sub-type" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="8126-aa08-3eb9-d49d" name="May exchange their Chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a0d6-d7e7-83b1-cb65">
@@ -3848,6 +3845,16 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
           </costs>
+        </entryLink>
+        <entryLink id="bc23-bb64-f5ad-6b1b" name="Dedicated Transport: Land Raider Proteus Carrier (5 models or fewer)" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1e8-d3d9-53a2-ca03" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1cc2-ba30-ac09-acd7" name="Dedicated Transport: Land Raider Spartan" hidden="false" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34a9-f815-1cc2-5e53" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -5214,6 +5221,7 @@
         <infoLink id="0a34-2f3c-43da-dc08" name="Hit &amp; Run" hidden="false" targetId="5986-e960-d432-affd" type="rule"/>
         <infoLink id="337f-0774-bea7-a762" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
         <infoLink id="056d-2b1f-e7f3-4c45" name="Pathfinder" hidden="false" targetId="ec97-7aa8-49f5-b298" type="rule"/>
+        <infoLink id="9ff7-0141-9dd7-e2e3" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f5c8-2bd1-122d-be0e" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -5238,7 +5246,10 @@
           <rules>
             <rule id="df8e-76c1-925f-f9d4" name="Sojutsu Pattern Voidbike" hidden="false">
               <description>Falls Back 3D6&quot; instead of 2D6&quot;.
-May join units that include models with the Cavalry Unit Type despite the usual restrictions, and any rules that target the Cavalry Unit Type are considered to affect Jaghatai Khan as if he had that type.</description>
+May join units that include models with the Cavalry Unit Type despite the usual restrictions, and any rules that target the Cavalry Unit Type are considered to affect Jaghatai Khan as if he had that type.
+
+If Jaghatai Khan selected his Sojutsu Pattern Voidbike, he is counted as having a Legion Scimitar Jetbike for rules and interactions that affect or require that wargear.
+Note that even though Jaghatai Khan is counted as having the Cavalry Unit Type whilst upgraded to have a Sojutsu Pattern Voidbike for the purposes of any Rules, he cannot be affected by Narthecium Wargear.</description>
             </rule>
           </rules>
           <infoLinks>

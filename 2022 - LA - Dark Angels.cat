@@ -3208,7 +3208,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="2146-69ab-4ec0-9a00" name="Infantry Unit Type" primary="false"/>
@@ -3479,7 +3479,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cf23-fd3a-15a0-7347" name="Excindio Battle-automata" publicationId="d0df-7166-5cd3-89fd" page="54" hidden="false" collective="false" import="true" type="unit">
@@ -4397,6 +4397,7 @@ Selenite Shard-bolt Pistol</description>
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink id="f757-33fc-2c76-1644" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="359e-1590-1dcc-33d3" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -4433,7 +4434,11 @@ Selenite Shard-bolt Pistol</description>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88bc-8125-5d60-dc5b" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="fb22-8af6-ad71-855b" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry"/>
+                <entryLink id="fb22-8af6-ad71-855b" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
                 <entryLink id="be5e-aab5-ebee-8220" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false"/>
@@ -4487,7 +4492,7 @@ Selenite Shard-bolt Pistol</description>
           <profiles>
             <profile id="dc37-aac1-0329-d898" name="Order Cenobites" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -4512,6 +4517,9 @@ Selenite Shard-bolt Pistol</description>
                   <constraints>
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c594-ee20-08bc-dbeb" type="min"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="dabe-c265-b65c-4c57" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry">
                   <modifiers>
@@ -4536,7 +4544,6 @@ Selenite Shard-bolt Pistol</description>
           </costs>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="fccb-0b88-4163-b4fd" name="Infantry Unit Type" primary="false"/>
-            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="8ec1-ff4c-4c65-bab2" name="Character" primary="false"/>
             <categoryLink targetId="9231-183c-b97b-63f9" id="badc-ead0-45bf-8b0e" name="Heavy Sub-type" primary="false"/>
           </categoryLinks>
         </selectionEntry>
@@ -4738,6 +4745,7 @@ Selenite Shard-bolt Pistol</description>
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink id="f9d9-5771-c4c7-e72a" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5ae3-be22-48b5-7f36" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -4757,7 +4765,11 @@ Selenite Shard-bolt Pistol</description>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d25-f226-a2a1-86f6" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="ad78-bf51-98dd-dd52" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry"/>
+                <entryLink id="ad78-bf51-98dd-dd52" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
                 <entryLink id="4b29-e590-9e95-4482" name="Advex-mors Greatsword" hidden="false" collective="false" import="true" targetId="12b8-ffd2-d5d6-28c5" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
@@ -4828,7 +4840,11 @@ Selenite Shard-bolt Pistol</description>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="084b-502e-5bf9-b573" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="1c3a-f1ec-8393-5b75" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry"/>
+                <entryLink id="1c3a-f1ec-8393-5b75" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
                 <entryLink id="29ca-468c-1dcf-2f9d" name="Advex-mors Greatsword" hidden="false" collective="false" import="true" targetId="12b8-ffd2-d5d6-28c5" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
@@ -4860,7 +4876,6 @@ Selenite Shard-bolt Pistol</description>
           </infoLinks>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="6a66-3693-4981-838d" name="Infantry Unit Type" primary="false"/>
-            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="ed97-3b42-4cfc-a242" name="Character" primary="false"/>
             <categoryLink targetId="9231-183c-b97b-63f9" id="0123-5341-47c5-9948" name="Heavy Sub-type" primary="false"/>
           </categoryLinks>
         </selectionEntry>
@@ -5221,7 +5236,9 @@ Selenite Shard-bolt Pistol</description>
           <profiles>
             <profile id="7509-8e0b-38ff-5111" name="Regalia of the Shattered Sceptre" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
               <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Regalia of the Shattered Sceptre confers a 2+ Armour Save and a 4+ Invulnerable Save. In addition, the Regalia of the Shattered Sceptre also allows its bearer to automatically pass any Dangerous Terrain tests that model is called upon to take.</characteristic>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Regalia of the Shattered Sceptre confers a 2+ Armour Save and a 4+ Invulnerable Save. In addition, the Regalia of the Shattered Sceptre also allows its bearer to automatically pass any Dangerous Terrain tests that model is called upon to take.
+
+In addition, The Regalia of the Shattered Sceptre confers the Bulky (2) Special Rule, and a unit that includes Marduk Sedras may not make Sweeping Advances.</characteristic>
               </characteristics>
             </profile>
           </profiles>
