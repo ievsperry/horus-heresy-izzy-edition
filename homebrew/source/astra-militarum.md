@@ -62,7 +62,13 @@ Every unit in this document has **Regiment (X)** unless its entry says otherwise
 
 **Summary Execution.** If a unit containing a Commissar fails a Morale check or Pinning test, the Commissar may execute one model of your choice from the unit (not the Commissar or another character). The unit then counts as having passed the test, and uses the Commissar's Leadership for the rest of the turn.
 
-**Tank Orders (X).** A Tank Commander may issue up to X orders to Astra Militarum vehicles within 12", using the same procedure: **Full Throttle!** (the vehicle may move an extra 6" but may not shoot), **Gunners, Kill on Sight!** (re-roll to-hit rolls of 1), or **Strike and Shroud!** (after shooting, the vehicle counts as obscured until your next turn).
+**Leman Russ Commander.** A Tank Commander starts the game in a Leman Russ tank, leading a Leman Russ Squadron. Note that any type of Leman Russ can be taken as the Tank Commander's vehicle, and that it can have any upgrades usually available to that type of tank. The Tank Commander's tank is a character, has Ballistic Skill 4 and can be chosen as your army's Warlord. If his tank is Wrecked or suffers an Explodes! result, the Tank Commander is killed. A Tank Commander and his Leman Russ Squadron count as an HQ choice for the entire of the battle. The Tank Commander's Leman Russ cannot leave the unit or join another unit, even if the rest of his squadron are destroyed.
+
+**Tank Orders.** A Tank Commander can roll 2D6 at the beginning of the Shooting phase. If the total result is 9 or less, choose one of the following Tank Orders to immediately take effect.
+
+- **'Full Throttle!'** The officer leads a glorious tank charge that grinds the enemy beneath his treads. The Tank Commander's unit immediately moves Flat Out, moving up to 6+D6", even though they are Heavy.
+- **'Gunners, Kill on Sight!'** The officer gives his men free rein to unleash discretionary fire. The Tank Commander's unit immediately makes a shooting attack. The Tank Commander must shoot at a different target to the rest of his unit. The Tank Commander must resolve his shooting attack first. Once this shooting attack has been resolved, resolve the shooting attacks made by the rest of the unit. These must be at a different target, which cannot be a unit forced to disembark as a result of the Tank Commander's initial shooting attack.
+- **'Strike and Shroud!'** The squadron fires a volley before activating their smoke launchers. The Tank Commander's unit must make a shooting attack. After this shooting attack has been resolved, all vehicles in the unit that have not already done so must use their smoke launchers.
 
 ## Advanced Reaction: Covering Fire
 
@@ -199,7 +205,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 
 | 2.0 slot | New Astra Militarum units |
 | --- | --- |
-| HQ | Lord Commissar, Primaris Psyker, Tempestor Prime, Ministorum Priest, Ursarkar E. Creed, Commissar Yarrick, Colonel 'Iron Hand' Straken, Lord Solar Leontus |
+| HQ | Lord Commissar, Primaris Psyker, Tank Commander, Tempestor Prime, Ministorum Priest, Ursarkar E. Creed, Commissar Yarrick, Colonel 'Iron Hand' Straken, Lord Solar Leontus |
 | Elites | Commissar, Kasrkin, Tempestus Scions, Tempestus Command Squad, Veterans, Ogryns, Bullgryns, Nork Deddog, Ratlings, Astropath, Master of Ordnance, Colour Sergeant Kell, Sly Marbo |
 | Troops | Infantry Platoon (Platoon Command Squad, Infantry Squads, Heavy Weapons Squads, Special Weapons Squads, Conscripts) |
 | Dedicated Transports | Chimera, Taurox, Taurox Prime |
@@ -465,6 +471,59 @@ Base sizes follow recent 40k kits and are approximate.
 | **The Tempestor Prime may exchange his hot-shot laspistol for:** |  |
 | – Plasma pistol | +10 points |
 | – Command rod (Voice of Command (3)) | +10 points |
+
+### Tank Commander — 290 pts
+
+_30 points for the Tank Commander, plus his Leman Russ and the 1-2 other Leman Russ of his squadron (130 points each, plus weapons). The Tank Commander and his squadron are one HQ choice. These are the Leman Russ variants from the Heavy Support section._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Tank Commander | 10 | 4 | 14 | 13 | 10 | 3 | – | Use model |
+| Leman Russ | 10 | 3 | 14 | 13 | 10 | 3 | – | Use model |
+
+**Unit Composition**
+
+- 1 Tank Commander
+- 1 Leman Russ
+
+**Wargear**
+
+- Exterminator autocannon (Exterminator)
+- Hull (Front) Mounted heavy bolter
+- Smoke launchers
+
+**Unit Type**
+
+- Tank Commander: Vehicle (Tank, Heavy, Character)
+- Leman Russ: Vehicle (Tank, Heavy)
+
+**Special Rules**
+
+- Leman Russ Commander (Tank Commander only)
+- Lumbering Behemoth: the Leman Russ may fire its turret weapon after moving up to 6" as though it had not moved
+- Regiment (X)
+- Tank Orders (Tank Commander only)
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The squadron may take:** |  |
+| – Up to 1 additional Leman Russ | +130 points each, plus weapons |
+| **Any model may exchange its exterminator autocannon for:** |  |
+| – Punisher gatling cannon (Punisher) | +10 points |
+| – Eradicator nova cannon (Eradicator) | +10 points |
+| **Any model may exchange its heavy bolter for:** |  |
+| – Heavy flamer | +0 points |
+| – Lascannon | +15 points |
+| **Any model may take sponsons with one of:** |  |
+| – Two heavy bolters or two heavy flamers | +20 points |
+| – Two multi-meltas | +30 points |
+| – Two plasma cannons | +40 points |
+| **Any model may take:** |  |
+| – Pintle Mounted storm bolter or heavy stubber | +5 points |
+| – Hunter-killer missile | +10 points |
+| – Track guards | +10 points |
 
 ### Ursarkar E. Creed — 90 pts
 
