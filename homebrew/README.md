@@ -258,3 +258,6 @@ loading. The script prints anything in the doc it could not place.
   a melee profile to an entry that had only other ones (Krak Grenades, Ripper Gun), and adds the weapons the
   game system lacks to its shared entries. The Extrinsica Melee Weapons carry their points, the Extrinsica
   rule and a category allowing one per army. Homebrew catalogues take these changes from their own sources.
+- `python3 homebrew/apply_core_faq.py` applies the Liber FAQ, Errata and Balance Changes for the Core Rulebook
+  to the rules `2022 - Horus Heresy.gst` holds (Blind, Concussive (X), Force, Hit & Run, the Unit Type rules,
+  Telekine Dome and so on). Running it again changes nothing.
