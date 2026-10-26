@@ -2325,7 +2325,13 @@ class Builder:
         if main is None or bound(main, "max") is None:
             return
         others = sum(int(float(bound(me, "min").get("value"))) for me in models if me is not main and bound(me, "min") is not None)
-        m = el(child(main, "modifiers"), "modifier", type="set", field=bound(main, "max").get("id"), value=total - others)
+        mods = child(main, "modifiers")
+        m = el(mods, "modifier", type="set", field=bound(main, "max").get("id"), value=total - others)
+        # before the decrements, so a model upgraded from one of these still counts ("One Boy may
+        # be upgraded to a Nob")
+        first = next(i for i, x in enumerate(mods) if x.get("field") == m.get("field"))
+        mods.remove(m)
+        mods.insert(first, m)
         self.rite_condition(m, rid)
 
     def rite_rule(self, unit, uid, rid, rname):
@@ -2603,6 +2609,10 @@ class Builder:
             iwid, k = self.find_weapon(inner.group(2))
             if iwid:
                 return self.wrapper_entry(inner.group(1), iwid, k, None, inner.group(2)), 1, True
+            # "All Da Kit (choppa, shoota and slugga)": a named set of weapons, each with its profile
+            kit = re.split(r", | and ", inner.group(2))
+            if len(kit) > 1 and all(self.find_weapon(x)[0] for x in kit):
+                return self.wrapper_entry(inner.group(1), None, 1, None, parts_text=kit), 1, True
         uid = self.find_upgrade(name)
         if uid:
             return uid, 1, False
@@ -3905,21 +3915,23 @@ class Builder:
         add_constraint(e, "max", 1, eid + "max")
         return e
 
-    def wrapper_entry(self, label, wid, n, ds, link_name=None):
+    def wrapper_entry(self, label, wid, n, ds, link_name=None, parts_text=None):
         name = label[0].upper() + label[1:]
         eid = make_id("wrapper", self.faction, name)
         if norm(name) in self.upgrades:
             return self.upgrades[norm(name)]
         e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=name, hidden=False,
                id=eid, publicationId=self.pub_id)
-        parts = [(wid, n)] if wid else [self.find_weapon(x) for x in label.split(" and ")]
-        if not wid:
+        texts = parts_text or label.split(" and ")
+        parts = [(wid, n)] if wid else [self.find_weapon(x) for x in texts]
+        if not wid and not parts_text:
             # "Hyperphase sword and dispersion shield": a weapon and a piece of wargear
             parts = [(w, k) if w else (self.find_upgrade(x), 1) for (w, k), x in zip(parts, label.split(" and "))]
         if all(w for w, _ in parts):
             links = el(e, "entryLinks")
-            names = label.split(" and ") if len(parts) > 1 else [label]
-            shown = [link_name or self.weapon_names_for(w, label) for w, _ in parts]
+            names = texts if len(parts) > 1 else [label]
+            shown = [link_name or self.weapon_names_for(w, x if parts_text else label)
+                     for (w, _), x in zip(parts, texts)]
             if len(set(map(norm, shown))) < len(shown) and len(names) == len(parts):
                 shown = names  # "Power Weapon and Improved Forceshield": each part by its own name
             for (w, k), shown_name in zip(parts, shown):

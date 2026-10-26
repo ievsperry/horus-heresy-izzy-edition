@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -12052,15 +12052,15 @@
                 <repeat field="selections" scope="bf7e-4f20-dfe0-506f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd9f-93dd-214e-2ea5" repeats="1" roundUp="false" />
               </repeats>
             </modifier>
-            <modifier type="decrement" field="698e-2ac2-537d-0091" value="1">
-              <repeats>
-                <repeat field="selections" scope="bf7e-4f20-dfe0-506f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd9f-93dd-214e-2ea5" repeats="1" roundUp="false" />
-              </repeats>
-            </modifier>
             <modifier type="set" field="698e-2ac2-537d-0091" value="30">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
               </conditions>
+            </modifier>
+            <modifier type="decrement" field="698e-2ac2-537d-0091" value="1">
+              <repeats>
+                <repeat field="selections" scope="bf7e-4f20-dfe0-506f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd9f-93dd-214e-2ea5" repeats="1" roundUp="false" />
+              </repeats>
             </modifier>
           </modifiers>
           <constraints>

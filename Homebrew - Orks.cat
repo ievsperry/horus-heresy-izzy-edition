@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="26" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -10235,9 +10235,21 @@ The effect lasts until the end of the turn.</description>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="'Ard Boy" hidden="false" id="cb99-50ea-5aa2-7df0" publicationId="96d0-c462-d158-fbad">
+          <modifiers>
+            <modifier type="decrement" field="115f-402b-e573-2f5d" value="1">
+              <repeats>
+                <repeat field="selections" scope="0c61-c745-ff64-39a6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11ce-b8da-97c8-5d53" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="c94b-9722-6062-1503" value="1">
+              <repeats>
+                <repeat field="selections" scope="0c61-c745-ff64-39a6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11ce-b8da-97c8-5d53" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="115f-402b-e573-2f5d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="29" field="selections" scope="parent" shared="true" id="c94b-9722-6062-1503" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="115f-402b-e573-2f5d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="c94b-9722-6062-1503" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
             <profile name="'Ard Boy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="b030-b170-ecb7-549e" publicationId="96d0-c462-d158-fbad">
@@ -10346,7 +10358,7 @@ The effect lasts until the end of the turn.</description>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="'Ard Nob" hidden="false" id="11ce-b8da-97c8-5d53" publicationId="96d0-c462-d158-fbad">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a8c-fdff-d579-8c5f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4a8c-fdff-d579-8c5f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7cb-d408-14e9-3a3e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
@@ -10468,7 +10480,7 @@ The effect lasts until the end of the turn.</description>
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="19" />
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -10552,7 +10564,7 @@ The effect lasts until the end of the turn.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="29" />
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Beast Snagga Boyz" hidden="false" id="0e92-13b6-2574-11e7" publicationId="96d0-c462-d158-fbad">
@@ -10573,9 +10585,21 @@ The effect lasts until the end of the turn.</description>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Beast Snagga Boy" hidden="false" id="c395-d495-30f4-0b21" publicationId="96d0-c462-d158-fbad">
+          <modifiers>
+            <modifier type="decrement" field="a0ce-10f8-3b7d-fc99" value="1">
+              <repeats>
+                <repeat field="selections" scope="0e92-13b6-2574-11e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5178-1e4f-9a9f-87dc" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="2951-1edb-b72b-edac" value="1">
+              <repeats>
+                <repeat field="selections" scope="0e92-13b6-2574-11e7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5178-1e4f-9a9f-87dc" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="a0ce-10f8-3b7d-fc99" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="2951-1edb-b72b-edac" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="a0ce-10f8-3b7d-fc99" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="2951-1edb-b72b-edac" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
             <profile name="Beast Snagga Boy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="9b58-21bd-254f-da91" publicationId="96d0-c462-d158-fbad">
@@ -10656,7 +10680,7 @@ The effect lasts until the end of the turn.</description>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Beast Snagga Nob" hidden="false" id="5178-1e4f-9a9f-87dc" publicationId="96d0-c462-d158-fbad">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="302c-4a45-3c88-73cb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="302c-4a45-3c88-73cb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19b8-1e71-6b33-070d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
@@ -10718,7 +10742,7 @@ The effect lasts until the end of the turn.</description>
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="19" />
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -10756,7 +10780,7 @@ The effect lasts until the end of the turn.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="14" />
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Big Boyz" hidden="false" id="22e2-1071-9901-2eef" publicationId="96d0-c462-d158-fbad">
@@ -10783,15 +10807,15 @@ The effect lasts until the end of the turn.</description>
                 <repeat field="selections" scope="22e2-1071-9901-2eef" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9281-6985-0f29-a10b" repeats="1" roundUp="false" />
               </repeats>
             </modifier>
-            <modifier type="decrement" field="e1af-b5dd-1b60-4f94" value="1">
-              <repeats>
-                <repeat field="selections" scope="22e2-1071-9901-2eef" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9281-6985-0f29-a10b" repeats="1" roundUp="false" />
-              </repeats>
-            </modifier>
             <modifier type="set" field="e1af-b5dd-1b60-4f94" value="30">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="669a-ae9c-8123-7219" shared="true" includeChildSelections="true" includeChildForces="false" />
               </conditions>
+            </modifier>
+            <modifier type="decrement" field="e1af-b5dd-1b60-4f94" value="1">
+              <repeats>
+                <repeat field="selections" scope="22e2-1071-9901-2eef" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9281-6985-0f29-a10b" repeats="1" roundUp="false" />
+              </repeats>
             </modifier>
           </modifiers>
           <constraints>
@@ -11191,15 +11215,25 @@ The effect lasts until the end of the turn.</description>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Boy" hidden="false" id="4b49-8499-65df-febe" publicationId="96d0-c462-d158-fbad">
           <modifiers>
-            <modifier type="set" field="96af-259d-f427-32f9" value="39">
+            <modifier type="decrement" field="858a-3edc-6655-dfaf" value="1">
+              <repeats>
+                <repeat field="selections" scope="ddb3-9996-7aa6-91fc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4488-eaf2-47e5-89ea" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="set" field="96af-259d-f427-32f9" value="40">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="669a-ae9c-8123-7219" shared="true" includeChildSelections="true" includeChildForces="false" />
               </conditions>
             </modifier>
+            <modifier type="decrement" field="96af-259d-f427-32f9" value="1">
+              <repeats>
+                <repeat field="selections" scope="ddb3-9996-7aa6-91fc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4488-eaf2-47e5-89ea" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="858a-3edc-6655-dfaf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="29" field="selections" scope="parent" shared="true" id="96af-259d-f427-32f9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="858a-3edc-6655-dfaf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="96af-259d-f427-32f9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
             <profile name="Boy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="cacf-9e08-c45e-7111" publicationId="96d0-c462-d158-fbad">
@@ -11273,7 +11307,7 @@ The effect lasts until the end of the turn.</description>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Nob" hidden="false" id="4488-eaf2-47e5-89ea" publicationId="96d0-c462-d158-fbad">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cd9-e210-c2d0-3a01" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3cd9-e210-c2d0-3a01" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebd7-8f29-3385-f660" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
@@ -11367,7 +11401,7 @@ The effect lasts until the end of the turn.</description>
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="17" />
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -11409,6 +11443,14 @@ The effect lasts until the end of the turn.</description>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="All Da Kit" hidden="false" id="af5f-5604-feb4-21bf" type="selectionEntry" targetId="0802-d091-50bb-86eb">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac18-eeea-165d-a108" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1" />
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Dedicated Transport" hidden="false" id="5cf9-95cc-49b6-5ae2">
@@ -11444,8 +11486,30 @@ The effect lasts until the end of the turn.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12" />
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="All Da Kit" hidden="false" id="0802-d091-50bb-86eb" publicationId="96d0-c462-d158-fbad">
+      <entryLinks>
+        <entryLink import="true" name="Choppa" hidden="false" id="eaf0-6db8-5954-dc45" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c588-b5f2-9754-fab7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88f0-8502-a67a-c57f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Shoota" hidden="false" id="8e03-c430-2f12-2480" type="selectionEntry" targetId="990f-9119-5362-90f3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67d0-5144-5a59-e7a9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71b6-d939-f261-421b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Slugga" hidden="false" id="3c13-f79d-2fbd-766e" type="selectionEntry" targetId="63e5-3ea4-aa90-6a1e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="187c-1c91-7e60-6ecd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df5b-3c7f-c5f4-99f3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gretchin" hidden="false" id="6fa2-22dc-f3a0-33c1" publicationId="96d0-c462-d158-fbad">
       <rules>
@@ -11731,9 +11795,21 @@ The effect lasts until the end of the turn.</description>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Shoota Boy" hidden="false" id="b8c2-a908-e384-98df" publicationId="96d0-c462-d158-fbad">
+          <modifiers>
+            <modifier type="decrement" field="1dea-4262-98f4-b251" value="1">
+              <repeats>
+                <repeat field="selections" scope="b0c0-2156-074c-cac7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be82-1546-a8a7-180e" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="35da-3716-6edb-0e03" value="1">
+              <repeats>
+                <repeat field="selections" scope="b0c0-2156-074c-cac7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be82-1546-a8a7-180e" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="1dea-4262-98f4-b251" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="29" field="selections" scope="parent" shared="true" id="35da-3716-6edb-0e03" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="1dea-4262-98f4-b251" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="35da-3716-6edb-0e03" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
             <profile name="Shoota Boy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="72c9-e38c-38ea-a194" publicationId="96d0-c462-d158-fbad">
@@ -11807,7 +11883,7 @@ The effect lasts until the end of the turn.</description>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Nob" hidden="false" id="be82-1546-a8a7-180e" publicationId="96d0-c462-d158-fbad">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a685-49a0-452e-3d93" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a685-49a0-452e-3d93" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9059-e1a2-9adc-b265" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
@@ -11901,7 +11977,7 @@ The effect lasts until the end of the turn.</description>
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="17" />
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -11943,6 +12019,14 @@ The effect lasts until the end of the turn.</description>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2" />
               </costs>
             </entryLink>
+            <entryLink import="true" name="All Da Kit" hidden="false" id="9d99-2b51-199f-0f1b" type="selectionEntry" targetId="0802-d091-50bb-86eb">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a43-dc29-3417-b81f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1" />
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Dedicated Transport" hidden="false" id="72b2-100c-5c1b-b74c">
@@ -11978,7 +12062,7 @@ The effect lasts until the end of the turn.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12" />
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="'Chinork' Warkopta" hidden="false" id="e69a-0026-5292-5a0e" publicationId="96d0-c462-d158-fbad">
