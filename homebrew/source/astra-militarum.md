@@ -40,9 +40,11 @@ Every unit in this document has **Regiment (X)** unless its entry says otherwise
 | Move! Move! Move! | Instead of shooting, the unit moves up to D6 plus its Initiative Characteristic in inches. |
 | Take Aim! | The unit may re-roll to-hit rolls of 1 when shooting. |
 
-**Combined Squad.** Before deployment, Infantry Squads from the same Infantry Platoon may join together into a single unit. They act as one unit for the rest of the battle.
+**Combined Squad.** Infantry Squads have the option of forming Combined Squads. The decision to form Combined Squads must be made immediately before determining your Warlord Traits. If the Astra Militarum player wishes to deploy his forces in this way, then any Infantry Squad may join another Infantry Squad from the same platoon. For example, an Infantry Platoon consisting of a Platoon Command Squad and three 10-man Infantry Squads can instead choose to deploy as a Platoon Command Squad and a single 30-man Infantry Squad, or a Platoon Command Squad, a 10-man Infantry Squad and a 20-man Infantry Squad. If you decide to form Combined Squads in this manner, they are treated as a single unit for whole of the game.
 
-**Heavy Weapons Team.** A Heavy Weapons Team is two Guardsmen crewing one heavy weapon on a single base. It counts as two models for Transport Capacity.
+**Heavy Weapons Team.** Infantry heavy weapons are typically crewed by a team of two men; one fires the weapon while the other supplies the ammunition, and between them they can relocate their weapon if needs be. For all game purposes, each Heavy Weapons Team or Veteran Weapons Team is treated as a single model with the Bulky special rule – it may only fire one weapon in the Shooting phase, only gains one additional Attack for charging, and only counts as one model for Morale checks, for example.
+
+**Senior Officer.** Lord Commissars and Tempestor Primes are Senior Officers. A Senior Officer may take Heirlooms of Conquest (see Wargear); only one of each heirloom may be taken per army.
 
 **Abhuman.** Ogryns, Bullgryns and Ratlings may not receive orders unless an order is issued by Nork Deddog or an officer within 6".
 
@@ -284,6 +286,7 @@ Base sizes follow recent 40k kits and are approximate.
 - Aura of Discipline: friendly Astra Militarum units within 6" may use his Leadership
 - Independent Character
 - Regiment (X)
+- Senior Officer
 - Summary Execution
 
 **Options**
@@ -293,8 +296,12 @@ Base sizes follow recent 40k kits and are approximate.
 | **The Lord Commissar may exchange his bolt pistol for:** |  |
 | – Plasma pistol | +10 points |
 | – Boltgun | +0 points |
+| – The Emperor's Benediction (Heirloom of Conquest) | +5 points |
 | **The Lord Commissar may exchange his power sword for:** |  |
 | – Power fist | +10 points |
+| – The Blade of Conquest (Heirloom of Conquest) | +25 points |
+| **The Lord Commissar may take one of the following Heirlooms of Conquest:** |  |
+| – The Deathmask of Ollanius | +30 points |
 | **The Lord Commissar may take:** |  |
 | – Carapace armour (4+ save) | +5 points |
 | – Melta bombs | +5 points |
@@ -418,6 +425,7 @@ Base sizes follow recent 40k kits and are approximate.
 - Independent Character (may only join Tempestus units)
 - Move Through Cover
 - Regiment (X)
+- Senior Officer
 - Voice of Command (2), Tempestus units only
 
 **Options**
@@ -427,6 +435,12 @@ Base sizes follow recent 40k kits and are approximate.
 | **The Tempestor Prime may exchange his chainsword for:** |  |
 | – Power sword | +10 points |
 | – Power fist | +15 points |
+| – The Blade of Conquest (Heirloom of Conquest) | +25 points |
+| **The Tempestor Prime may take one of the following Heirlooms of Conquest:** |  |
+| – The Laurels of Command | +25 points |
+| – The Tactical Auto-Reliquary of Tyberius | +25 points |
+| – The Deathmask of Ollanius | +30 points |
+| – Kurov's Aquila | +60 points |
 | **The Tempestor Prime may exchange his hot-shot laspistol for:** |  |
 | – Plasma pistol | +10 points |
 | – Command rod (Voice of Command (3)) | +10 points |
@@ -913,6 +927,7 @@ Base sizes follow recent 40k kits and are approximate.
 
 **Special Rules**
 
+- Bulky (2) (Veteran Weapons Team only)
 - Heavy Weapons Team (Veteran Weapons Team only)
 - Regiment (X)
 
@@ -943,6 +958,8 @@ The squad may take a Chimera or Taurox as a Dedicated Transport. This does not u
 | – Heavy bolter | +10 points |
 | – Missile launcher | +15 points |
 | – Lascannon | +20 points |
+| **A Veteran Weapons Team with a missile launcher may take:** |  |
+| – Flakk missiles | +10 points |
 | **Up to three remaining Veterans may exchange their lasgun for one of the following (Special Weapons; up to two if a heavy flamer is taken):** |  |
 | – Sniper rifle | +2 points |
 | – Flamer | +5 points |
@@ -997,12 +1014,13 @@ _Each Infantry Platoon must include one (and only one) Platoon Command Squad._
 
 **Unit Type**
 
-- Platoon Commander: Infantry (Character)
-- Guardsman: Infantry
-- Heavy Weapons Team: Infantry
+- Platoon Commander: Infantry (Character, Line)
+- Guardsman: Infantry (Line)
+- Heavy Weapons Team: Infantry (Line)
 
 **Special Rules**
 
+- Bulky (2) (Heavy Weapons Team only)
 - Heavy Weapons Team (Heavy Weapons Team only)
 - Regiment (X)
 - Voice of Command (1) (Platoon Commander only)
@@ -1040,6 +1058,8 @@ The squad may take a Chimera or Taurox as a Dedicated Transport. This does not u
 | – Heavy bolter | +10 points |
 | – Missile launcher | +15 points |
 | – Lascannon | +20 points |
+| **A Heavy Weapons Team with a missile launcher may take:** |  |
+| – Flakk missiles | +10 points |
 | **Any remaining Guardsman may exchange his lasgun for one of the following (Special Weapons):** |  |
 | – Sniper rifle | +2 points |
 | – Flamer | +5 points |
@@ -1072,13 +1092,14 @@ _Each Infantry Platoon must include between two and five Infantry Squads. Use th
 
 **Unit Type**
 
-- Guardsman: Infantry
-- Sergeant: Infantry (Character)
-- Heavy Weapons Team: Infantry
+- Guardsman: Infantry (Line)
+- Sergeant: Infantry (Character, Line)
+- Heavy Weapons Team: Infantry (Line)
 
 **Special Rules**
 
 - Combined Squad
+- Bulky (2) (Heavy Weapons Team only)
 - Heavy Weapons Team (Heavy Weapons Team only)
 - Regiment (X)
 
@@ -1106,6 +1127,8 @@ The squad may take a Chimera or Taurox as a Dedicated Transport. This does not u
 | – Heavy bolter | +10 points |
 | – Missile launcher | +15 points |
 | – Lascannon | +20 points |
+| **A Heavy Weapons Team with a missile launcher may take:** |  |
+| – Flakk missiles | +10 points |
 | **One remaining Guardsman may exchange his lasgun for one of the following (Special Weapons):** |  |
 | – Sniper rifle | +2 points |
 | – Flamer | +5 points |
@@ -1139,6 +1162,7 @@ _Each Infantry Platoon may include up to five Heavy Weapons Squads._
 
 **Special Rules**
 
+- Bulky (2)
 - Heavy Weapons Team
 - Regiment (X)
 
@@ -1152,6 +1176,8 @@ _Each Infantry Platoon may include up to five Heavy Weapons Squads._
 | – Heavy bolter | +10 points |
 | – Missile launcher | +15 points |
 | – Lascannon | +20 points |
+| **A Heavy Weapons Team with a missile launcher may take:** |  |
+| – Flakk missiles | +10 points |
 | **The entire squad may take:** |  |
 | – Krak grenades | +3 points |
 
@@ -2004,11 +2030,53 @@ Flak armour confers a 5+ Armour Save.
 
 Frag bombs count as frag grenades†.
 
+### Melta Bombs
+
+*Shaped magnetic charges for cracking armour.*
+
+A model with melta bombs may use them in the same way as krak grenades, but the automatic Hit is Str 8, AP 1 and has Armourbane (Melta)†.
+
 ### Medi-pack
 
 *Field surgery gear and stimms carried by a squad medic.*
 
 A unit that includes a model with a medi-pack has Feel No Pain (6+).
+
+### The Blade of Conquest
+
+*Heirloom of Conquest — replaces the bearer's close combat weapon. Only one of each heirloom may be taken per army.*
+
+Rules as given for this heirloom in Codex: Astra Militarum†.
+
+### The Deathmask of Ollanius
+
+*Heirloom of Conquest. Only one of each heirloom may be taken per army.*
+
+Rules as given for this heirloom in Codex: Astra Militarum†.
+
+### The Emperor's Benediction
+
+*Heirloom of Conquest — Lord Commissar only; replaces the bolt pistol. Only one of each heirloom may be taken per army.*
+
+Rules as given for this heirloom in Codex: Astra Militarum†.
+
+### Kurov's Aquila
+
+*Heirloom of Conquest — Company Commander only; Tempestor Prime in this list. Only one of each heirloom may be taken per army.*
+
+Rules as given for this heirloom in Codex: Astra Militarum†.
+
+### The Laurels of Command
+
+*Heirloom of Conquest — Company Commander only; Tempestor Prime in this list. Only one of each heirloom may be taken per army.*
+
+Rules as given for this heirloom in Codex: Astra Militarum†.
+
+### The Tactical Auto-Reliquary of Tyberius
+
+*Heirloom of Conquest — Company Commander only; Tempestor Prime in this list. Only one of each heirloom may be taken per army.*
+
+Rules as given for this heirloom in Codex: Astra Militarum†.
 
 ### Platoon Standard
 
@@ -2048,7 +2116,7 @@ A unit that includes a model with a vox-caster may re-roll the Leadership test f
 
 ## Armoury
 
-Weapons that already exist in 2.0 use their official profiles: bolt pistol, boltgun, storm bolter, heavy bolter, heavy stubber, flamer, heavy flamer, meltagun, multi-melta, plasma pistol, plasma gun, plasma cannon, grenade launcher, mortar, autocannon, missile launcher, lascannon, multi-laser, battle cannon, power sword, power fist, chainsword and force weapons. The weapons below are new.
+Weapons that already exist in 2.0 use their official profiles: bolt pistol, boltgun, storm bolter, heavy bolter, heavy stubber, flamer, heavy flamer, meltagun, multi-melta, plasma pistol, plasma gun, plasma cannon, grenade launcher, autocannon, lascannon, multi-laser, battle cannon, power sword, power fist, chainsword and force weapons. The power weapon uses the power sword profile, and the missile launcher, flakk missiles and mortar use the profiles below. The weapons below are new.
 
 ### Close Combat Weapons
 
@@ -2063,10 +2131,22 @@ Weapons that already exist in 2.0 use their official profiles: bolt pistol, bolt
 | Eviscerator | – | x2 | 2 | Melee, Two-handed, Unwieldy |
 | Huge knife | – | +1 | 5 | Melee |
 | Hunting lance | – | +2 | 3 | Melee; only in a turn in which the bearer charged |
+| Power weapon | – | User | 3 | Melee, Rending (6+) |
 | Konstantin's hooves | – | 5 | – | Melee; two additional Attacks |
 | Sentinel chainsaw | – | +1 | 4 | Melee, Shred |
 
 ### Ranged Weapons
+
+#### Infantry Heavy Weapons
+
+*The mortars and missile launchers of the Heavy Weapons Teams. A missile launcher fires frag or krak missiles; flakk missiles are bought for it separately.*
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Flakk missiles | 48" | 7 | 3 | Heavy 1, Skyfire |
+| Missile launcher – frag | 48" | 4 | 6 | Heavy 1, Blast (3"), Pinning |
+| Missile launcher – krak | 48" | 8 | 3 | Heavy 1 |
+| Mortar | 48" | 4 | 6 | Heavy 1, Barrage, Blast (3")† |
 
 #### Abhuman and Specialist Guns
 

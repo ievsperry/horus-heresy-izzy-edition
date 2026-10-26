@@ -726,6 +726,8 @@ class Builder:
                 if cost_line:
                     text = text.replace(cost_line, "").strip()
                 add_text_profile(e, WARGEAR_PROFILE, name, text, eid)
+                if re.search(r"only one of each heirloom|only once per army|one per army", text, re.I):
+                    add_constraint(e, "max", 1, eid + "army", scope="roster", children=True)  # Heirlooms of Conquest
                 if norm(name) in self.weapons:  # "Stikkbomb Flinga": the upgrade fires the weapon
                     self.link(child(e, "entryLinks"), self.weapons[norm(name)], name, eid, count=1)
                     self.firing_upgrades.add(norm(name))
@@ -1560,6 +1562,59 @@ class Builder:
             el(el(mod, "repeats"), "repeat", field="selections", scope=uid, value=1, percentValue=False,
                shared=True, includeChildSelections=True, includeChildForces=False, childId=model_id,
                repeats=1, roundUp=False)
+
+    def cap_if(self, group, cid, cap, uid, key):
+        """'Up to two (or three, if no heavy flamer is taken)': the limit while the unit has that item."""
+        n, item = cap
+        tid = self.option_target(item, key)[0]
+        mod = el(child(group, "modifiers"), "modifier", type="set", field=cid, value=n)
+        el(el(mod, "conditions"), "condition", type="atLeast", value=1, field="selections", scope=uid,
+           childId=tid, shared=True, includeChildSelections=True, includeChildForces=False)
+
+    def exclusive_upgrades(self, ds, me, m, key, groups, pooled_take):
+        """'One Guardsman may carry a vox-caster', 'One other Guardsman may carry a platoon standard',
+        'Any remaining Guardsman may replace his lasgun with a special weapon': each Guardsman takes at
+        most one of these, and each item no more than its number across the squad."""
+        uid = self.units[ds["name"]]
+        mid = m["id"]
+        swaps = set()
+        for g in m["groups"]:
+            if g["kind"] == "exchange":
+                swaps |= set(g.get("pooled", ()))
+                for sub in g.get("subs", []):
+                    if sub["fixed"] and not sub.get("required"):
+                        swaps |= {n for n, _, _ in sub["items"]}
+        swap_ids = sorted({self.option_target(n, key)[0] for n in swaps})
+        take_ids = []
+        if pooled_take:
+            gkey = make_id(mid, "upgrades")
+            ge = el(groups, "selectionEntryGroup", name=f"{m['profile']['name']} Upgrades", hidden=False, id=gkey)
+            per_model = add_constraint(ge, "max", 1, gkey + "max")
+            gl = el(ge, "entryLinks")
+            for g in pooled_take:
+                for name, cost, _ in g["items"]:
+                    tid, _, _ = self.option_target(name, key)
+                    e = self.link(gl, tid, re.sub(r"\s*\(\d.*\)$", "", name), gkey, maximum=1)
+                    add_cost(e, self.cost(cost))
+                    add_constraint(e, "max", g["fixed"], make_id(gkey, name, "unit"), scope=uid, children=True)
+                    take_ids.append(tid)
+            if swap_ids:
+                self.unless_selected(ge, per_model, mid, swap_ids)
+        if take_ids:
+            # a model with one of the upgrades above keeps its lasgun
+            for link in me.iter("entryLink"):
+                if link.get("targetId") in swap_ids:
+                    cid = add_constraint(link, "max", 1, make_id(link.get("id"), "exclusive"))
+                    self.unless_selected(link, cid, mid, sorted(set(take_ids)))
+
+    @staticmethod
+    def unless_selected(e, cid, scope, ids):
+        """Set constraint cid to 0 while the model (scope) has any of ids."""
+        mod = el(child(e, "modifiers"), "modifier", type="set", field=cid, value=0)
+        conds = el(el(el(mod, "conditionGroups"), "conditionGroup", type="or"), "conditions")
+        for i in ids:
+            el(conds, "condition", type="atLeast", value=1, field="selections", scope=scope, childId=i,
+               shared=True, includeChildSelections=True, includeChildForces=False)
 
     def per_model_limit(self, e, key, uid, model_id, per=1, kind="max"):
         """Max (or min) 'per' selections for every model of one type in the unit."""
@@ -2884,6 +2939,11 @@ class Builder:
 
     def apply_option_group(self, ds, unit, models, model_for, grp, unit_upgrades):
         header = grp["header"]
+        # "A Heavy Weapons Team with a missile launcher may take": only as many as there are launchers
+        wm = re.match(r"((?:Any|Each|An?) .+?) with an? (.+?) (may take.*)$", header)
+        with_item = wm.group(2) if wm else None
+        if wm:
+            header = f"{wm.group(1)} {wm.group(3)}"
         single = sum(max(m["max"], m["min"]) for m in self.fighting_models(models)) <= 1
         unit_words = {"unit", "squadron", "brood", "mob", "model", "models"} | forms(ds["name"])
         # Who the options apply to, and any limit across the unit.
@@ -2946,6 +3006,10 @@ class Builder:
         if determiner == "Each" and norm(subject or "") in ("model", "models") and not subject_models:
             subject_models = [n for n, mm in models.items() if mm["min"] > 0 or mm["replaces"]]
 
+        # "One other Guardsman", "Any remaining Guardsman": not a model already upgraded above
+        other = bool(re.match(r"(?:One|Two|Three|Any|Up to \w+) (?:other|remaining) ", header))
+        ci = re.search(r"up to (\w+) if an? (.+?) is taken", header)
+        cap_if = (NUMBER_WORDS.get(ci.group(1), 1), ci.group(2)) if ci else None
         ex = re.search(r"(?:may|must) exchange (?:his |her |its |their )?(either pair of |one pair of |either |all \w+ |one of its |any |one )?(.+?) for", header)
         replaced = "replaced with" in header
         if ex and re.match(r"The (entire|whole) unit", header):
@@ -2983,12 +3047,19 @@ class Builder:
                 if same and (fixed != same[0]["fixed"] or required):
                     # "Any Veteran ... shotgun", "One other Veteran ... heavy flamer", "Up to three remaining
                     # Veterans ... special weapons": one swap of the lasgun, each pick with its own limit
-                    same[0].setdefault("subs", []).append({"fixed": fixed, "required": required, "items": list(items)})
+                    same[0].setdefault("subs", []).append({"fixed": fixed, "required": required, "items": list(items),
+                                                           "cap_if": cap_if})
+                    target = same[0]
                 elif same:
                     same[0]["items"] += items
+                    target = same[0]
                 else:
-                    models[mname]["groups"].append({"kind": "exchange", "what": what, "qualifier": qualifier,
-                                                    "items": list(items), "fixed": fixed, "required": required})
+                    target = {"kind": "exchange", "what": what, "qualifier": qualifier,
+                              "items": list(items), "fixed": fixed, "required": required, "cap_if": cap_if}
+                    models[mname]["groups"].append(target)
+                if other:
+                    models[mname]["exclusive"] = True
+                    target.setdefault("pooled", set()).update(n for n, _, _ in items)
             return
         rest = []
         primary = next((n for n, mm in models.items() if mm["min"] > 0), subject_models[0])
@@ -3050,7 +3121,9 @@ class Builder:
             rest.append((name, cost, None))
         if rest and not per_unit:
             for mname in subject_models:
-                models[mname]["groups"].append({"kind": "take", "one_of": one_of, "items": rest,
+                if other:
+                    models[mname]["exclusive"] = True
+                models[mname]["groups"].append({"kind": "take", "one_of": one_of, "items": rest, "with": with_item,
                                                 "ratio": ratio, "title": header, "fixed": fixed,
                                                 "group_max": group_max})
 
@@ -3094,8 +3167,11 @@ class Builder:
         used = set()
         # Exchanges always sit on the model, so a swap replaces the weapon it names; in a unit of
         # several models they are bought by splitting the models, and unit-wide limits still hold.
+        pooled_take = [g for g in m["groups"] if m.get("exclusive") and g["kind"] == "take" and g.get("fixed")]
+        for g in pooled_take:
+            g["on_model"] = True
         for gi, g in enumerate(m["groups"]):
-            if per_model_unit is not None and g["kind"] != "exchange":
+            if (per_model_unit is not None and g["kind"] != "exchange") or g.get("on_model"):
                 continue
             gkey = make_id(m["id"], "group", str(gi))
             if g["kind"] == "exchange":
@@ -3160,6 +3236,8 @@ class Builder:
                         add_constraint(ssub, "max", sub["fixed"], skey + "max", scope=uid, children=True)
                         if sub.get("required"):
                             add_constraint(ssub, "min", sub["required"], skey + "min", scope=uid, children=True)
+                        if sub.get("cap_if"):
+                            self.cap_if(ssub, make_id(skey + "max", "max"), sub["cap_if"], uid, key)
                         holder = el(ssub, "entryLinks")
                     for name, cost, _ in sub["items"]:
                         tid, _, _ = self.option_target(name, key)
@@ -3238,6 +3316,8 @@ class Builder:
                         self.link_rule(e, f"Regeneration ({rm.group(1)})", e.get("id"))
                     if g["ratio"]:
                         self.ratio_limit(e, g["ratio"], ds, m)
+        if pooled_take or m.get("exclusive"):
+            self.exclusive_upgrades(ds, me, m, key, groups, pooled_take)
         if per_model_unit is not None:
             self.add_per_model_options(ds, per_model_unit, m, key, several_types)
         seen = set()
@@ -3349,6 +3429,8 @@ class Builder:
         groups = child(unit, "selectionEntryGroups")
         for gi, g in enumerate(m["groups"]):
             gkey = make_id(m["id"], "unit group", str(gi))
+            if g.get("on_model"):
+                continue  # one of the model's own upgrades (exclusive_upgrades)
             if g["kind"] == "exchange" and not g.get("unit_pool"):
                 continue  # on the model itself (add_model_wargear), so the swap replaces the weapon
             if g["kind"] == "exchange":
@@ -3386,6 +3468,8 @@ class Builder:
                         add_cost(self.link(child(sub, "entryLinks"), tid, nm, skey), self.cost(c))
             else:
                 ge = el(groups, "selectionEntryGroup", name=f"{prefix}Options", hidden=False, id=gkey)
+                if g.get("with"):
+                    self.per_model_limit(ge, gkey + "with", uid, self.option_target(g["with"], key)[0])
                 if g["one_of"]:
                     self.per_model_limit(ge, gkey, uid, m["id"])
                 if re.search(r"must select one of the following", g.get("title", "")):

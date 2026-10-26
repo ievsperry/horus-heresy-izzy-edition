@@ -179,6 +179,14 @@ loading. The script prints anything in the doc it could not place.
 - Several swaps of the same weapon keep their own limits: "Any Veteran ... shotgun", "One other Veteran
   ... heavy flamer" and "Up to three remaining Veterans ... special weapons" are one lasgun swap with a
   cap on each pick. "Three Guardsmen must exchange their lasgun" means exactly three.
+- "One other Guardsman ..." and "Any remaining Guardsman ..." make those picks exclusive on each model:
+  a Guardsman with a vox-caster, platoon standard or medi-pack may not also swap his lasgun for a heavy
+  flamer or special weapon, and each item stays within its number across the squad. "(up to two if a
+  heavy flamer is taken)" lowers the special weapon cap while the squad has one.
+- "A Heavy Weapons Team with a missile launcher may take: Flakk missiles" allows one per missile launcher
+  in the squad.
+- A wargear entry whose text says "Only one of each heirloom may be taken per army" may be taken once
+  per roster (Heirlooms of Conquest).
 - A psychic weapon named "X (Psychic Weapon)" is kept apart from a weapon called X but shown as plain X
   (the Runes of Twilight Executioner beside the Exarch's executioner).
 
