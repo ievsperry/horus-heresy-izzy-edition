@@ -162,9 +162,16 @@ In addition, friendly Ork units within 18" may use the Stompa's Leadership chara
 
 A Stompa also counts as 15 additional models for any special rule or ability that counts the number of nearby Ork models.
 
-**Waaagh!** Once per game, at the start of any turn, if the army's Warlord is an Ork and is on the table, the army may call a Waaagh! What the Waaagh! does depends on the army's Waaagh! Doctrine: a Krumpin' Waaagh!, Speed Waaagh!, Dakka Waaagh! or Odd Waaagh! (see Waaagh! Doctrine).
+**Waaagh!** Once per game, at the start of any turn, if the army's Warlord is an Ork and is on the table, the army may call a Waaagh! If the army includes a model with the Da Biggest is Da Best special rule (a Warboss, Mek Boss, Painboss, Weirdboss or Ghazghkull Thraka), the Waaagh! unleashes the army's Waaagh! Doctrine, one of the following (see Waaagh! Doctrine for the full rules):
 
-A detachment with no model with the Da Biggest is Da Best special rule (no Warboss, Mek Boss, Painboss, Weirdboss or Ghazghkull Thraka) has no Waaagh! Doctrine. When it calls a Waaagh!, until the end of that turn every unit in it with this rule gains the following:
+- **Krumpin' Waaagh!:** all friendly Ork Infantry and Dreadnought units gain Fleet (2), Furious Charge (2), Fearless, Feel No Pain (5+) and Dakka! (5+).
+- **Speed Waaagh!:** all friendly Ork Cavalry, Jump Infantry, Skirmish and Vehicle units gain Fleet (3), Sudden Strike (3), Hammer of Wrath (+1) and Shrouded (5+) while Running, and all friendly Ork units gain +2 to Reserve rolls.
+- **Dakka Waaagh!:** all friendly Ork units gain Dakka! (4+) and Relentless, their Auto weapons gain Twin-linked, Pinning and Breaching (6+), and their Heavy weapons gain +1 Shot, to a maximum increase of +3 shots per weapon.
+- **Odd Waaagh!:** all friendly Weirdboyz and Psykers gain +2 Leadership for Psychic checks, Adamantium Will (4+) and Feel No Pain (4+); friendly Ork units within 12" of a friendly Weirdboy or Weirdboss gain Counter-Attack (2) and Furious Charge (2); and Weirdboy Psychic Weapons gain Rending (5+).
+
+The effects last until the end of the turn.
+
+If the army includes no model with the Da Biggest is Da Best special rule, when it calls a Waaagh!, until the end of that turn every unit in it with this rule gains the following:
 
 - **Fleet (+1):** the unit gains Fleet (1), or increases an existing Fleet (X) by 1.
 - **Furious Charge (+1):** the unit gains Furious Charge (1), or increases an existing Furious Charge (X) by 1.

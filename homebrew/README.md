@@ -211,6 +211,8 @@ loading. The script prints anything in the doc it could not place.
 - A "## X Doctrine" section (Waaagh! Doctrine) shows in the app as written in the doc: each doctrine with
   its flavour and rules, and the section's introduction and the "## The X" lore section (The Waaagh!) as
   rules on the army entry.
+- A rule whose list items have bold names ("- **Krumpin' Waaagh!:** ...") shows them one to a line in
+  the app, with its paragraphs kept apart.
 - A wargear entry whose text says "Only one of each heirloom may be taken per army" may be taken once
   per roster (Heirlooms of Conquest).
 - A psychic weapon named "X (Psychic Weapon)" is kept apart from a weapon called X but shown as plain X

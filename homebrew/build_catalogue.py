@@ -1687,7 +1687,10 @@ class Builder:
             if m:
                 out.append([m.group(1).replace(" (sub-type)", ""), [m.group(2)]])
             elif out and ln.strip():
-                if ln.startswith("- "):
+                if ln.startswith("- **"):
+                    # "- **Krumpin' Waaagh!:** ...": a list of named options, one to a line
+                    out[-1][1].append("\n• " + strip_md(ln[2:]))
+                elif ln.startswith("- "):
                     out[-1][1].append(strip_md(ln[2:]))
                 elif ln.startswith("|"):
                     cells = [c.strip() for c in ln.strip().strip("|").split("|")]
@@ -1695,7 +1698,17 @@ class Builder:
                         out[-1][1].append(cells[0] + ": " + ", ".join(cells[1:]) + ".")
                 elif not ln.startswith(("#", "_")):
                     out[-1][1].append(strip_md(ln))
-        return [(name, " ".join(parts)) for name, parts in out]
+        def joined(parts):
+            if not any(p.startswith("\n• ") for p in parts):
+                return " ".join(parts)
+            text = ""
+            for i, p in enumerate(parts):
+                if p.startswith("\n• "):
+                    text += ("\n" if i and parts[i - 1].startswith("\n• ") else "\n\n") + p[1:]
+                else:
+                    text += ("\n\n" if text else "") + p
+            return text
+        return [(name, joined(parts)) for name, parts in out]
 
     def subfaction_sections(self):
         """Sections of hive fleets, Klans or the like: each '(X)' rule and its sub-sections. A later one
