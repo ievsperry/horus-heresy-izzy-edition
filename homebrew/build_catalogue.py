@@ -28,6 +28,9 @@ XENOS_ARMY_CATEGORY = ("3c8e-5a1d-9b47-e2f0", "Xenos Army")
 PTS = "d2ee-04cb-5f8a-2642"
 
 UNIT_PROFILE = "4bb2-cb95-e6c8-5a21"
+# the characteristics of a unit profile, in the order of its stats
+STAT_NAMES = ["Move", "Weapon Skill", "Ballistic Skill", "Strength", "Toughness", "Wounds", "Initiative", "Attacks",
+              "Leadership", "Save"]
 UNIT_CHARS = [("Unit Type", "ddd7-6f5c-a939-b69e"), ("Move", "893e-2d76-8f04-44e5"),
               ("WS", "cc42-7ed5-7092-5c84"), ("BS", "74ae-c840-0036-d244"),
               ("S", "e478-41d4-a092-48a8"), ("T", "c32b-5fdd-3fbe-9b1f"),
@@ -785,7 +788,13 @@ class Builder:
                     if tok and not tok[0].isdigit() and self.rule_target(re.sub(r"\s*\(.*\)$", "", tok)):
                         self.link_rule(e, tok[0].upper() + tok[1:], eid)
                 if cost_line:
-                    self.universal.append((name, eid, self.parse_cost_rule(cost_line)))
+                    rule = self.parse_cost_rule(cost_line)
+                    # "adds 1 to its Strength, to a best of 8": models already at 8 may not take it
+                    stat = re.search(r"adds 1 to its (Weapon Skill|Ballistic Skill|Strength|Toughness|Wounds|"
+                                     r"Initiative|Attacks|Leadership), to a best of (\d+)", text)
+                    if stat:
+                        rule["stat"] = (STAT_NAMES.index(stat.group(1)), int(stat.group(2)))
+                    self.universal.append((name, eid, rule))
                 save = re.search(r"(?:confers|has) an? (\d)\+ Armour Save", text)
                 if save:
                     self.save_change[eid] = int(save.group(1))
@@ -1569,6 +1578,14 @@ class Builder:
                 else:
                     if rule.get("only") and not any(re.search(r"\b" + t + r"\b", m["types"]) for t in rule["only"]):
                         continue
+                    raised = None
+                    if rule.get("stat"):
+                        idx, cap = rule["stat"]
+                        if m["profile"].get("kind", "unit") != "unit" or \
+                                not re.fullmatch(r"\d+", m["profile"]["stats"][idx]) or \
+                                int(m["profile"]["stats"][idx]) + 1 > cap:
+                            continue
+                        raised = (idx, int(m["profile"]["stats"][idx]) + 1)
                     if any(norm(w) == norm(name) for w in m["wargear"]):
                         continue  # already carries one (the Kustom Boosta-blasta's flinga)
                     granted = self.shared_entries.find(f"selectionEntry[@id='{eid}']/infoLinks/infoLink")
@@ -1583,7 +1600,7 @@ class Builder:
                         cost = next(c for c in (rule.get("gargantuan"), rule["monstrous"], cost) if c is not None)
                     elif "Monstrous" in m["types"] and rule["monstrous"] is not None:
                         cost = rule["monstrous"]
-                    out.append((mname, name, eid, cost, None))
+                    out.append((mname, name, eid, cost, raised))
         return out
 
     def is_biomorph(self, name):
@@ -3081,11 +3098,13 @@ class Builder:
             for mname, (_, new_save) in per_type.items():
                 if not new_save:
                     continue
-                # Every model shows its improved Save once the unit has the carapace.
+                # Every model shows its improved Save once the unit has the carapace (or its raised
+                # Strength, Toughness or Initiative).
+                field, value = (UNIT_CHARS[10][1], f"{new_save}+") if isinstance(new_save, int) else \
+                    (UNIT_CHARS[new_save[0] + 1][1], str(new_save[1]))
                 me = unit.find(f"selectionEntries/selectionEntry[@id='{models[mname]['id']}']")
                 prof = me.find("profiles/profile")
-                mod = el(child(prof, "modifiers"), "modifier", type="set", field=UNIT_CHARS[10][1],
-                         value=f"{new_save}+")
+                mod = el(child(prof, "modifiers"), "modifier", type="set", field=field, value=value)
                 el(el(mod, "conditions"), "condition", type="atLeast", value=1, field="selections",
                    scope=scope, childId=eid, shared=True, includeChildSelections=True,
                    includeChildForces=False)
