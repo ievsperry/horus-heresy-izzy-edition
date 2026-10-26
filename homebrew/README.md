@@ -248,3 +248,7 @@ loading. The script prints anything in the doc it could not place.
 - A biomorph whose text says "adds 1 to its Strength, to a best of 8" (Improved Strength, Improved
   Toughness, Killer Impulse) is offered only to units whose models are all below that best, at the
   cost scale of the other biomorphs, and shows each model's raised value once taken.
+- `homebrew/source/additional-special-rules.md` holds special rules any catalogue may use (Afterburner,
+  Augmetics (X), Rupture (X) and so on). `python3 homebrew/add_gst_rules.py` adds them to the shared rules
+  of `2022 - Horus Heresy.gst`, or updates the ones it added; each "## Name" section is a rule, its italic
+  flavour line stays in the source. A catalogue built here still prefers a rule its own doc defines.
