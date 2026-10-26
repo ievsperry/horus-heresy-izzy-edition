@@ -15,10 +15,10 @@ python3 homebrew/build_catalogue.py homebrew/source/orks.md "Homebrew - Orks.cat
 python3 homebrew/build_catalogue.py homebrew/source/necrons.md "Homebrew - Necrons.cat"
 python3 homebrew/build_catalogue.py homebrew/source/tau.md "Homebrew - T'au Empire.cat"
 python3 homebrew/build_catalogue.py homebrew/source/astra-militarum.md "Homebrew - Astra Militarum.cat"
-python3 homebrew/build_catalogue.py homebrew/source/drukhari.md "Homebrew - Drukhari.cat"
-python3 homebrew/build_catalogue.py homebrew/source/asuryani.md "Homebrew - Asuryani.cat"
-python3 homebrew/build_catalogue.py homebrew/source/anhrathe.md "Homebrew - Anhrathe.cat"
-python3 homebrew/build_catalogue.py homebrew/source/rillietann.md "Homebrew - Rillietann.cat"
+python3 homebrew/build_catalogue.py homebrew/source/drukhari.md "Homebrew - Aeldari (Drukhari).cat"
+python3 homebrew/build_catalogue.py homebrew/source/asuryani.md "Homebrew - Aeldari (Asuryani).cat"
+python3 homebrew/build_catalogue.py homebrew/source/anhrathe.md "Homebrew - Aeldari (Anhrathe).cat"
+python3 homebrew/build_catalogue.py homebrew/source/rillietann.md "Homebrew - Aeldari (Rillietann).cat"
 ```
 
 Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
@@ -145,16 +145,18 @@ loading. The script prints anything in the doc it could not place.
   Asuryani name, and "## Grand Performances" is a pick of one like a Doctrine. A sub-faction rule that says
   an "army may choose" one (Anhrathe Fleet) is optional. "Centreline Mounted" and "Arm Mounted" are mounts,
   not part of a weapon's name.
-- Each Aeldari civilization has its own catalogue: `asuryani.md`, `anhrathe.md` and `rillietann.md`
-  (Drukhari in `drukhari.md`). Each carries the shared Aeldari rules and detachments, and only the
+- Each Aeldari civilization has its own catalogue, named "Homebrew - Aeldari (X)" so they sort together:
+  `asuryani.md`, `anhrathe.md`, `rillietann.md` and `drukhari.md`. Their ids still come from the civilization
+  name, so saved rosters keep loading. Each carries the shared Aeldari rules and detachments, and only the
   rules, wargear, weapons and psychic disciplines its own units use. The Asuryani and Rillietann (Saedath)
   lists come from the Liber Antiquia doc; where it and Liber Aelphari share a weapon, wargear or psychic
   discipline, the Liber Aelphari version is kept. The Anhrathe Void Dreamer picks from the Liber Aelphari
   disciplines (Runes of Battle, Runes of Fate, Voidsong).
 - A list whose only "## Psychic Discipline: X" is named on a datasheet ("Psychic Discipline
   (Phantasmancy)") builds it as a discipline entry, as with several.
-- With no datasheet naming its transports, a Dedicated Transport is offered to Infantry units that fit
-  its Transport Capacity (a Corsair Venom holds 6; a spore without one holds 20).
+- With no datasheet naming its transports, a list's Dedicated Transports are offered to Infantry units
+  of up to 20 models. When the list has only one, smaller transport, its Transport Capacity is the limit
+  (a Corsair Venom holds 6).
 - "## Aspect Shrines" holds one "### Aspect Shrine: X" per Path. A datasheet option table headed "... Aspect
   Shrine upgrade" becomes a required pick of one on each model. The chosen shrine applies its Special Rules,
   Unit Sub-types and Characteristic changes, and its wargear: "exchanges Aspect Armour for Heavy Aspect

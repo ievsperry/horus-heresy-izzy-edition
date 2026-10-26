@@ -172,6 +172,8 @@ WEAPON_TYPES = {"Melee", "Assault", "Heavy", "Pistol", "Rapid Fire", "Salvo", "P
 # Factions whose own weapons share a name with an official 2.0 weapon: theirs keep the
 # doc's profile and take this prefix ("Tau Plasma rifle").
 WEAPON_PREFIX = {"T'au Empire": "Tau"}
+# the Aeldari civilizations' catalogues sort together; ids still come from the faction name
+CATALOGUE_NAME = {f: f"Aeldari ({f})" for f in ("Asuryani", "Anhrathe", "Rillietann", "Drukhari")}
 
 NUMBER_WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6}
 
@@ -452,7 +454,7 @@ class Builder:
         self.cat_id = make_id("catalogue", faction)
         self.root = ET.Element("catalogue", {
             "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
-            "id": self.cat_id, "name": f"Homebrew - {faction}", "revision": str(revision),
+            "id": self.cat_id, "name": f"Homebrew - {CATALOGUE_NAME.get(faction, faction)}", "revision": str(revision),
             "battleScribeVersion": "2.03", "library": "false", "gameSystemId": GAME_SYSTEM_ID,
             "gameSystemRevision": GAME_SYSTEM_REVISION, "type": "catalogue",
             "authorName": "Isaac"})
@@ -3717,8 +3719,9 @@ class Builder:
             self.add_named_transports(transports)
             return
         transports = [ds for ds in transports if ds["slot"] == "Dedicated Transports"]
-        # a spore holds 20; a Corsair Venom only its Transport Capacity (6)
-        cap = min([c for c in map(self.transport_capacity, transports) if c] or [20])
+        # a spore holds 20; a list's only transport with a smaller capacity (a Corsair Venom: 6) holds that
+        caps = [c for c in map(self.transport_capacity, transports) if c]
+        cap = min(caps[0], 20) if len(transports) == 1 and caps else 20
         # "Spore Mines, ... and the units that always have wings (Gargoyles, ...) may not take a Mycetic Spore"
         barred = set()
         for ln in (self.section("Dedicated Transports") or {"lines": []})["lines"]:
