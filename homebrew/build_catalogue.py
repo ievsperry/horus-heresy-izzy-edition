@@ -4228,12 +4228,45 @@ class Builder:
         self.apply_rites()
         self.apply_subfaction_rules()
         self.apply_granted_biomorphs()
+        self.apply_rule_limits()
         self.root.append(self.shared_entries)
         if len(self.shared_groups):
             self.root.append(self.shared_groups)
         self.root.append(self.shared_rules)
         sort_children(self.root)
         return self.root
+
+    def apply_rule_limits(self):
+        """'An army may only include a maximum of one model with this special rule per 1,000 points'
+        (Da Biggest is Da Best): every unit with the rule joins a category the roster may hold that many
+        of, one for each full 1,000 points of its points limit and at least one."""
+        for rule in self.shared_rules.findall("rule"):
+            m = re.search(r"maximum of (\w+) models? with this special rule per ([\d,]+) points",
+                          rule.findtext("description") or "")
+            if not m:
+                continue
+            n = NUMBER_WORDS.get(m.group(1).lower()) or int(m.group(1))
+            per = int(m.group(2).replace(",", ""))
+            rid, name = rule.get("id"), rule.get("name")
+            cid = make_id("category", self.faction, name)
+            cats = self.root.find("categoryEntries")
+            if cats is None:
+                cats = el(self.root, "categoryEntries")
+            cat = el(cats, "categoryEntry", name=name, hidden=False, id=cid)
+            mx = add_constraint(cat, "max", n, make_id(cid, "limit"), scope="roster", children=True)
+            mods = el(cat, "modifiers")
+            inc = el(mods, "modifier", type="increment", field=mx, value=n)
+            el(el(inc, "repeats"), "repeat", field="limit::" + PTS, scope="roster", value=per,
+               percentValue=False, shared=True, includeChildSelections=False, includeChildForces=False,
+               childId="any", repeats=1, roundUp=False)
+            # below the first 1,000 points the army still has its one
+            dec = el(mods, "modifier", type="decrement", field=mx, value=n)
+            el(el(dec, "conditions"), "condition", type="atLeast", value=per, field="limit::" + PTS,
+               scope="roster", shared=True, includeChildSelections=False, includeChildForces=False,
+               childId="any")
+            for unit in self.shared_entries.findall("selectionEntry[@type='unit']"):
+                if any(il.get("targetId") == rid for il in unit.iter("infoLink")):
+                    add_category(unit, cid, name, unit.get("id"))
 
 
 # Child element order required by the BattleScribe catalogue schema.

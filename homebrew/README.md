@@ -242,3 +242,6 @@ loading. The script prints anything in the doc it could not place.
   All Da Kit that carries each weapon's profile. A Rite of War that raises a unit's size ("Boyz units
   may contain up to 40 models") still counts a model upgraded from one of its members ("One Boy may be
   upgraded to a Nob") toward that size.
+- A rule whose text says "An army may only include a maximum of one model with this special rule per
+  1,000 points" (Da Biggest is Da Best) puts every unit with it in a category of that name, which the
+  roster may hold one of for each full 1,000 points of its points limit, and at least one.

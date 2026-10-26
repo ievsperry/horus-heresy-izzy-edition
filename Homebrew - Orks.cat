@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="31" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="35" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
+  <categoryEntries>
+    <categoryEntry name="Da Biggest is Da Best" hidden="false" id="5422-252b-9f8f-d46b">
+      <modifiers>
+        <modifier type="increment" field="49bf-1ab7-3ef8-97a9" value="1">
+          <repeats>
+            <repeat field="limit::d2ee-04cb-5f8a-2642" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false" />
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="49bf-1ab7-3ef8-97a9" value="1">
+          <conditions>
+            <condition type="atLeast" value="1000" field="limit::d2ee-04cb-5f8a-2642" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="49bf-1ab7-3ef8-97a9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
+    </categoryEntry>
+  </categoryEntries>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Orks" hidden="false" id="adbe-53b5-788c-2bbb" publicationId="96d0-c462-d158-fbad">
       <constraints>
@@ -396,6 +415,15 @@ A Detachment that contains at least one model with the Da Biggest is Da Best spe
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="36b4-af5b-c35a-be53" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="a310-4e70-5397-9815" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="f84c-1b57-13b6-1c96" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6d87-06e8-9ef4-ffe6" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6cc3-496a-6e59-e1a3" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="f160-c711-57c0-513a" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="96c3-bbf8-296f-c6ab" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="13f1-a28a-af4f-0551" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e81a-8ecb-ede8-cfda" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6131-78b3-85cb-d975" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="518b-c2a5-159c-8ff4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0d29-7d03-c6dd-264d" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="797f-04dc-77fb-4579" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </conditionGroup>
@@ -409,6 +437,15 @@ A Detachment that contains at least one model with the Da Biggest is Da Best spe
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="36b4-af5b-c35a-be53" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="a310-4e70-5397-9815" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="f84c-1b57-13b6-1c96" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6d87-06e8-9ef4-ffe6" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6cc3-496a-6e59-e1a3" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="f160-c711-57c0-513a" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="96c3-bbf8-296f-c6ab" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="13f1-a28a-af4f-0551" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e81a-8ecb-ede8-cfda" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6131-78b3-85cb-d975" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="518b-c2a5-159c-8ff4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0d29-7d03-c6dd-264d" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="797f-04dc-77fb-4579" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </conditionGroup>
@@ -753,6 +790,15 @@ The effect lasts until the end of the turn.</description>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="ab8b-defe-2605-fd40" primary="true" name="Troops:" />
         <categoryLink targetId="8f42-a824-fb5f-8fea" id="63ae-90a6-199b-d7fe" primary="false" name="Compulsory Troops:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="ead3-7844-d988-8976" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Spannerz" hidden="false" id="a4ec-6377-d171-1597" type="selectionEntry" targetId="45c1-7d63-580e-cfd3">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="659b-5312-a0d8-fcff" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="a09b-48be-fed7-1e6f" primary="true" name="Troops:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="e30d-16d3-6b98-c18b" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Blitza-bommer" hidden="false" id="a14f-cdd4-0070-c0b9" type="selectionEntry" targetId="6c39-3ab6-141f-ca29">
@@ -4466,6 +4512,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="f7c1-e916-936c-cc81" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="5de5-9cbb-27da-a161" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Mek Boss" hidden="false" id="12cb-d73c-729b-d046" publicationId="96d0-c462-d158-fbad">
@@ -5151,6 +5198,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="66b8-7338-c5c9-540c" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="14b1-365b-7c07-8034" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Painboss" hidden="false" id="dee5-0032-5979-49fe" publicationId="96d0-c462-d158-fbad">
@@ -5415,6 +5463,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="bfab-8aa5-9382-eb92" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="89e6-9ab5-c0ba-0e54" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Warboss" hidden="false" id="6363-48da-3376-f328" publicationId="96d0-c462-d158-fbad">
@@ -6077,6 +6126,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="baf2-e243-ce2f-cc41" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="15be-5e07-3fa9-4475" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Weirdboss" hidden="false" id="ff7b-9e98-aa88-5234" publicationId="96d0-c462-d158-fbad">
@@ -6297,17 +6347,26 @@ The effect lasts until the end of the turn.</description>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="6206-95b1-7402-c87b" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="ec42-0204-001f-1a2e" hidden="false" targetId="150c-ba53-b501-3917" type="rule" />
+        <infoLink name="Bulky (X)" id="081b-27af-2f0b-6ccd" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Da Biggest is Da Best" id="fbfa-d437-4dbf-d1df" hidden="false" targetId="ebb2-7a37-35c8-2c7f" type="rule" />
         <infoLink name="'Ere We Go!" id="81f2-c258-d254-1d85" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="17a1-fc62-8c82-1948" hidden="false" targetId="a734-620c-db79-3594" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Klan (Blood Axes)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Might iz Right!" id="81ba-2154-b4f6-7d60" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule" />
         <infoLink name="Mob Rule" id="7262-24b8-1316-26a2" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Waaagh!" id="39bb-a120-73c2-bbe3" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="0bc3-4352-36a8-2158" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="3c40-58f6-a2cb-7146" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Boss Snikrot" hidden="false" id="7503-c4e3-cc4b-18ff" publicationId="96d0-c462-d158-fbad">
@@ -6419,17 +6478,26 @@ The effect lasts until the end of the turn.</description>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="483b-117c-d0b6-d3a9" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="0d28-57a7-abd7-f13c" hidden="false" targetId="150c-ba53-b501-3917" type="rule" />
+        <infoLink name="Bulky (X)" id="99bb-c33e-ab18-9d4d" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Da Biggest is Da Best" id="b4db-b51d-8e60-a539" hidden="false" targetId="ebb2-7a37-35c8-2c7f" type="rule" />
         <infoLink name="'Ere We Go!" id="1eea-7981-1163-19a2" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="29b2-99d9-3dad-780b" hidden="false" targetId="a734-620c-db79-3594" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Klan (Goffs)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Might iz Right!" id="281d-0ebc-a7f7-7a86" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule" />
         <infoLink name="Mob Rule" id="b9f0-a7cf-3ec1-def4" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Waaagh!" id="cf70-0eb5-9b74-254a" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="eb26-6f9e-48ea-f02e" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="12df-2c86-db88-cde4" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Boss Zagstruk" hidden="false" id="a610-40ae-2f8a-e8e9" publicationId="96d0-c462-d158-fbad">
@@ -6552,6 +6620,21 @@ The effect lasts until the end of the turn.</description>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="1ecb-c120-0101-5821" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="fed9-6862-5d0c-3194" hidden="false" targetId="150c-ba53-b501-3917" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bigga iz Betta (Kaptin Badrukk only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="665c-00a8-2080-5229" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2) (Kaptin Badrukk only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Da Biggest is Da Best" id="6b11-9390-a241-fb6d" hidden="false" targetId="ebb2-7a37-35c8-2c7f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Da Biggest is Da Best (Kaptin Badrukk only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="'Ere We Go!" id="e1fb-8136-27de-e226" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Grot Attendants" id="40e8-8128-c945-59af" hidden="false" targetId="67a8-98be-35bc-ea7b" type="rule">
           <modifiers>
@@ -6563,11 +6646,17 @@ The effect lasts until the end of the turn.</description>
             <modifier type="set" field="name" value="Klan (Bad Moons or Freebooterz)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Might iz Right!" id="45d4-37b3-8042-41c9" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Might iz Right! (Kaptin Badrukk only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Mob Rule" id="477a-06b6-324e-f64e" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Waaagh!" id="2825-23af-8bb4-91d2" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="5ffa-6bbe-0e6c-8a39" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="68c3-294d-91ea-77cc" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Kaptin Badrukk" hidden="false" id="737e-0618-e891-2f63" publicationId="96d0-c462-d158-fbad">
@@ -6734,17 +6823,26 @@ The effect lasts until the end of the turn.</description>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="2b41-d287-6956-3c43" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="1473-071f-d915-0c2a" hidden="false" targetId="150c-ba53-b501-3917" type="rule" />
+        <infoLink name="Bulky (X)" id="8fca-8e4e-591f-ae46" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Da Biggest is Da Best" id="ad7d-94b9-1170-6335" hidden="false" targetId="ebb2-7a37-35c8-2c7f" type="rule" />
         <infoLink name="'Ere We Go!" id="2a08-49eb-dc5f-92ea" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="653f-3851-c9e1-29c3" hidden="false" targetId="a734-620c-db79-3594" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Klan (Deathskulls)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Might iz Right!" id="fa3c-51c1-afc9-49c7" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule" />
         <infoLink name="Mob Rule" id="83ee-682b-615f-df29" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Waaagh!" id="0aeb-4173-3c1a-eebb" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="04c0-4046-7cf2-d63f" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="c5e3-66bb-fd8e-f859" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Mad Dok Grotsnik" hidden="false" id="420f-9d90-9aa5-d84b" publicationId="96d0-c462-d158-fbad">
@@ -6867,11 +6965,11 @@ The effect lasts until the end of the turn.</description>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mek Boss Buzzgob" hidden="false" id="13f1-a28a-af4f-0551" publicationId="96d0-c462-d158-fbad">
       <rules>
-        <rule name="Mek-Smasha (4+)" id="7099-ca9d-948a-793f" hidden="false">
-          <description>Improved to (3+) by Grot Gorgutz</description>
-        </rule>
         <rule name="Kustom Repairs" id="a610-90a5-d566-4d89" hidden="false">
           <description>When Buzzgob uses Mek-Smasha, he may restore up to D3 lost Hull Points or Wounds instead of one, and may use it twice each turn on different models</description>
+        </rule>
+        <rule name="Mek-Smasha (4+)" id="7099-ca9d-948a-793f" hidden="false">
+          <description>Improved to (3+) by Grot Gorgutz</description>
         </rule>
         <rule name="Mekaniak" id="d6a8-4d9f-53c3-2a02" hidden="false">
           <description>Friendly Ork vehicles and Dreadnoughts within 6" of Buzzgob improve their Ramshackled Vehicle (X) or Ramshackled Carapace (X) by 1, to a best of (4+)</description>
@@ -6890,9 +6988,19 @@ The effect lasts until the end of the turn.</description>
             <modifier type="set" field="name" value="Battle-Hardened (2) (Dok Scrabbit and Grot Gorgutz only)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Mek-Smasha (X)" id="3f98-9023-7683-4d75" hidden="false" targetId="6989-913d-92e6-2a8b" type="rule">
+        <infoLink name="Bigga iz Betta" id="2446-3769-d5a8-0561" hidden="false" targetId="150c-ba53-b501-3917" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Mek-Smasha (4+)" />
+            <modifier type="set" field="name" value="Bigga iz Betta (Mek Boss Buzzgob only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="2df3-a41e-da11-a78e" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2) (Mek Boss Buzzgob only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Da Biggest is Da Best" id="26e6-d7c4-8be9-e7aa" hidden="false" targetId="ebb2-7a37-35c8-2c7f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Da Biggest is Da Best (Mek Boss Buzzgob only)" />
           </modifiers>
         </infoLink>
         <infoLink name="'Ere We Go!" id="67a7-d665-d15a-c51b" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
@@ -6906,10 +7014,21 @@ The effect lasts until the end of the turn.</description>
             <modifier type="set" field="name" value="Klan (Goffs)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Mek-Smasha (X)" id="3f98-9023-7683-4d75" hidden="false" targetId="6989-913d-92e6-2a8b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Mek-Smasha (4+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Might iz Right!" id="ac33-2878-d81b-49d8" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Might iz Right! (Mek Boss Buzzgob only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Waaagh!" id="324c-7a56-9fbe-825d" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="c906-5f90-6294-fe7d" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="b46c-d9ed-5f35-8cb1" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Mek Boss Buzzgob" hidden="false" id="9a33-8395-fbe4-a49c" publicationId="96d0-c462-d158-fbad">
@@ -7121,6 +7240,13 @@ The effect lasts until the end of the turn.</description>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="00ee-00e1-92cd-168f" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="423d-ff30-a90c-bf17" hidden="false" targetId="150c-ba53-b501-3917" type="rule" />
+        <infoLink name="Bulky (X)" id="fed4-fff6-dd33-26f1" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Da Biggest is Da Best" id="2d61-1a6d-f66f-0554" hidden="false" targetId="ebb2-7a37-35c8-2c7f" type="rule" />
         <infoLink name="'Ere We Go!" id="8535-18cb-1568-eef9" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Eternal Warrior" id="ec2c-22f0-c91b-894c" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule" />
         <infoLink name="Hammer of Wrath (X)" id="6df7-d5da-3ceb-21f3" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
@@ -7133,11 +7259,13 @@ The effect lasts until the end of the turn.</description>
             <modifier type="set" field="name" value="Klan (Snakebites)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Might iz Right!" id="8939-82d4-906a-0eca" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule" />
         <infoLink name="Mob Rule" id="7dcc-ef49-b0bf-beae" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Waaagh!" id="865c-7a2e-60c9-3c04" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="44c4-f8c3-83e1-37f6" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="6f3d-5ee0-9339-13d2" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Mozrog Skragbad" hidden="false" id="124a-f329-1404-f5ac" publicationId="96d0-c462-d158-fbad">
@@ -7252,23 +7380,32 @@ The effect lasts until the end of the turn.</description>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="12d2-3703-cbf2-4fef" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="4257-8cb8-8cba-651f" hidden="false" targetId="150c-ba53-b501-3917" type="rule" />
+        <infoLink name="Bulky (X)" id="3d29-9315-2c2e-3611" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Da Biggest is Da Best" id="9043-b837-5399-4a5d" hidden="false" targetId="ebb2-7a37-35c8-2c7f" type="rule" />
         <infoLink name="'Ere We Go!" id="f496-be50-78c0-eb9b" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="4869-dd98-dbac-6b2c" hidden="false" targetId="a734-620c-db79-3594" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Klan (Snakebites)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Might iz Right!" id="d53d-0c50-e4f5-cd5c" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule" />
         <infoLink name="Mob Rule" id="411d-5b57-1408-3a56" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
-        <infoLink name="Weirdboy Discipline" id="5354-53e2-dc9c-be34" hidden="false" targetId="517b-da3c-94f0-96a2" type="rule" />
         <infoLink name="Waaagh!" id="177a-151e-ca65-fa48" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
         <infoLink name="Waaagh! Energy" id="a546-1118-9c12-d4db" hidden="false" targetId="22d5-a04c-eb29-712d" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Waaagh! energy" />
           </modifiers>
         </infoLink>
+        <infoLink name="Weirdboy Discipline" id="5354-53e2-dc9c-be34" hidden="false" targetId="517b-da3c-94f0-96a2" type="rule" />
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="9fd2-e2e4-12a0-0bd5" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="859a-9dc9-202c-7def" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Old Zogwort" hidden="false" id="cc64-ce15-e4c3-937e" publicationId="96d0-c462-d158-fbad">
@@ -7437,26 +7574,35 @@ The effect lasts until the end of the turn.</description>
         <rule name="Kustom Bike" id="3dab-e013-3da6-3b6f" hidden="false">
           <description>If Wazdakka is the Warlord, Warbikers may be taken as Troops</description>
         </rule>
-        <rule name="Speed Demons" id="70e3-03df-79ab-8dcb" hidden="false">
-          <description>A model that chooses to Advance gains Shrouded (5+) until the start of the controlling player's next turn</description>
-        </rule>
         <rule name="Independent Character restriction" id="0525-7996-877b-3edb" hidden="false">
           <description>May only join Warbikers</description>
+        </rule>
+        <rule name="Speed Demons" id="70e3-03df-79ab-8dcb" hidden="false">
+          <description>A model that chooses to Advance gains Shrouded (5+) until the start of the controlling player's next turn</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="064f-dfd6-e09e-51e0" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="e440-f0b3-0aed-53d9" hidden="false" targetId="150c-ba53-b501-3917" type="rule" />
+        <infoLink name="Bulky (X)" id="fa18-0e03-082b-176e" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Da Biggest is Da Best" id="dc7d-6a82-4769-9d4b" hidden="false" targetId="ebb2-7a37-35c8-2c7f" type="rule" />
         <infoLink name="'Ere We Go!" id="7b7d-5fc6-1d61-f4fb" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="d5de-6720-2da9-d211" hidden="false" targetId="a734-620c-db79-3594" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Klan (Evil Sunz)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Might iz Right!" id="cc96-1970-c965-54e6" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule" />
         <infoLink name="Mob Rule" id="f190-0558-41c8-4a32" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Waaagh!" id="b728-99cc-4221-c44d" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="14e2-4b11-ff0e-7177" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="17ec-12b0-2a96-c05f" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Wazdakka Gutsmek" hidden="false" id="1af8-a9c6-35aa-f791" publicationId="96d0-c462-d158-fbad">
@@ -7567,26 +7713,35 @@ The effect lasts until the end of the turn.</description>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Zodgrod Wortsnagga" hidden="false" id="0d29-7d03-c6dd-264d" publicationId="96d0-c462-d158-fbad">
       <rules>
-        <rule name="Super Runts" id="ec59-469b-3436-27f2" hidden="false">
-          <description>One Gretchin unit within 6" gains Feel No Pain (6+), S3 and Furious Charge; Gretchin he joins are affected by Waaagh!</description>
-        </rule>
         <rule name="Independent Character restriction" id="629e-b7a9-863a-791a" hidden="false">
           <description>May join Gretchin</description>
+        </rule>
+        <rule name="Super Runts" id="ec59-469b-3436-27f2" hidden="false">
+          <description>One Gretchin unit within 6" gains Feel No Pain (6+), S3 and Furious Charge; Gretchin he joins are affected by Waaagh!</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="ec05-9b7e-2c1a-1396" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="7ae0-929f-96e2-97c8" hidden="false" targetId="150c-ba53-b501-3917" type="rule" />
+        <infoLink name="Bulky (X)" id="1bab-811a-6d5d-a6bc" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Da Biggest is Da Best" id="94f5-ec7f-7412-1c6e" hidden="false" targetId="ebb2-7a37-35c8-2c7f" type="rule" />
         <infoLink name="'Ere We Go!" id="b947-d432-9982-03fd" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="cd9a-ce83-ef84-ee2c" hidden="false" targetId="a734-620c-db79-3594" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Klan (Snakebites)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Might iz Right!" id="6c33-0d7c-7369-efea" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule" />
         <infoLink name="Mob Rule" id="0511-4703-9527-eb67" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Waaagh!" id="8fe8-3f92-8504-cf69" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="b147-f40e-cfe5-66e6" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="eae6-7f32-48f6-b84f" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Zodgrod Wortsnagga" hidden="false" id="2628-3cae-748e-d04e" publicationId="96d0-c462-d158-fbad">
@@ -8079,11 +8234,7 @@ The effect lasts until the end of the turn.</description>
         </infoLink>
         <infoLink name="'Ere We Go!" id="3b5b-7656-ce46-e093" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="0c66-9b53-51fc-2737" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Might iz Right!" id="a9b0-b97a-23bc-06c8" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Might iz Right! (Mega Boss Nob only)" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Might iz Right!" id="c759-7404-b5c5-3f40" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule" />
         <infoLink name="Mob Rule" id="f7e8-eadc-c238-c61b" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Slow and Purposeful" id="cabe-ddf2-393b-2d5e" hidden="false" targetId="d69a-cfb3-db43-32c5" type="rule" />
         <infoLink name="Sudden Strike (X)" id="9655-00da-f4f1-beeb" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
@@ -8943,6 +9094,12 @@ The effect lasts until the end of the turn.</description>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="feaa-ed6e-789a-b5c9" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="a070-d3e4-1dcf-a6e1" hidden="false" targetId="150c-ba53-b501-3917" type="rule" />
+        <infoLink name="Bulky (X)" id="fb99-6b9a-b0c8-7634" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="'Ere We Go!" id="139d-a62a-c002-fa32" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Hammer of Wrath (X)" id="0fe5-53d3-b7f7-3138" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
@@ -8950,6 +9107,7 @@ The effect lasts until the end of the turn.</description>
           </modifiers>
         </infoLink>
         <infoLink name="Klan (X)" id="1ae5-0480-8778-8366" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
+        <infoLink name="Might iz Right!" id="1675-8f4b-04bc-483a" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule" />
         <infoLink name="Mob Rule" id="cd34-aa97-d00f-d1e5" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Waaagh!" id="1795-cc66-4947-966d" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
       </infoLinks>
@@ -9045,11 +9203,7 @@ The effect lasts until the end of the turn.</description>
           </modifiers>
         </infoLink>
         <infoLink name="Klan (X)" id="ccc9-67bb-ec02-5242" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Might iz Right!" id="20fb-3340-03d4-31aa" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Might iz Right! (Boss Nob only)" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Might iz Right!" id="e64d-9c8a-aecd-8ae9" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule" />
         <infoLink name="Mob Rule" id="b1fc-0e12-90f9-b923" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Sudden Strike (X)" id="1fe2-99e7-2dc5-2f25" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
           <modifiers>
@@ -9468,6 +9622,16 @@ The effect lasts until the end of the turn.</description>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="b61f-9747-9c97-7d89" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="e941-744c-96b4-c6ef" hidden="false" targetId="150c-ba53-b501-3917" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bigga iz Betta (Nob on Warbike and Boss Nob on Warbike only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="4b09-4522-cf82-92ab" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2) (Nob on Warbike and Boss Nob on Warbike only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Chosen Warriors" id="1cd4-5666-deae-3fd3" hidden="false" targetId="13d1-9270-6539-08ed" type="rule" />
         <infoLink name="'Ere We Go!" id="bea2-c64d-b0f5-5cf6" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Hammer of Wrath (X)" id="d6c8-6f7e-cbc2-0b4f" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
@@ -9476,6 +9640,11 @@ The effect lasts until the end of the turn.</description>
           </modifiers>
         </infoLink>
         <infoLink name="Klan (X)" id="7f3b-785b-6e22-5ab4" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
+        <infoLink name="Might iz Right!" id="c453-f008-08e1-8a99" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Might iz Right! (Nob on Warbike and Boss Nob on Warbike only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Mob Rule" id="28ea-e539-2ecb-47ce" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Waaagh!" id="1ce6-7056-8f7f-6f28" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
       </infoLinks>
@@ -10002,8 +10171,23 @@ The effect lasts until the end of the turn.</description>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="39d1-0e7d-6d90-23aa" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="cc69-9335-1f0d-fa7f" hidden="false" targetId="150c-ba53-b501-3917" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bigga iz Betta (Boss Nob only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="4ab4-032e-20c4-572e" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2) (Boss Nob only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="'Ere We Go!" id="3031-8271-3a42-3020" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="b7e3-534c-e5a3-4575" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
+        <infoLink name="Might iz Right!" id="0c8c-57eb-c098-fb87" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Might iz Right! (Boss Nob only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Mob Rule" id="1feb-d1e6-1bbd-f2eb" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Tank Hunters" id="ec03-415b-2433-10b5" hidden="false" targetId="cb2f-190f-9b7f-0f1e" type="rule" />
         <infoLink name="Waaagh!" id="c91b-604b-4821-2738" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
@@ -10601,8 +10785,23 @@ The effect lasts until the end of the turn.</description>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="0d8d-3e22-5c43-1dba" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="0a12-b443-c132-7445" hidden="false" targetId="150c-ba53-b501-3917" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bigga iz Betta (Beast Snagga Nob only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="f532-992f-e6bb-8b45" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2) (Beast Snagga Nob only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="'Ere We Go!" id="f164-7f72-942b-ca08" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="d1bb-9e6a-42b9-e599" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
+        <infoLink name="Might iz Right!" id="dc4b-788e-f473-417e" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Might iz Right! (Beast Snagga Nob only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Mob Rule" id="5aa3-3508-f590-2da0" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Waaagh!" id="1c98-69eb-8585-1cc3" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
       </infoLinks>
@@ -10817,8 +11016,23 @@ The effect lasts until the end of the turn.</description>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="ae46-48f1-57ce-27a5" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="fd05-5f48-7316-5314" hidden="false" targetId="150c-ba53-b501-3917" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bigga iz Betta (Boss Nob only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="0822-0007-6e4a-a37b" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2) (Boss Nob only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="'Ere We Go!" id="c152-0623-a778-df94" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="859d-4922-dac0-9ea6" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
+        <infoLink name="Might iz Right!" id="9e87-5456-fc08-f3ec" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Might iz Right! (Boss Nob only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Mob Rule" id="10b3-2b98-d766-59c7" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Waaagh!" id="66a7-1ea4-d895-7d89" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
       </infoLinks>
@@ -12091,6 +12305,194 @@ The effect lasts until the end of the turn.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Spannerz" hidden="false" id="45c1-7d63-580e-cfd3" publicationId="96d0-c462-d158-fbad">
+      <infoLinks>
+        <infoLink name="Xenos" id="2d11-f2b7-0deb-c78e" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="'Ere We Go!" id="be1b-45d4-09b4-0e6a" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
+        <infoLink name="Klan (X)" id="3996-1ed3-55bd-10b3" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
+        <infoLink name="Mek-Smasha (X)" id="69d4-91f5-c98d-2754" hidden="false" targetId="6989-913d-92e6-2a8b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Mek-Smasha (6+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Mob Rule" id="f5ba-d45f-5d73-0d2c" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
+        <infoLink name="Mob Up" id="98bf-7402-b1d6-3bec" hidden="false" targetId="b395-add5-c4b4-e188" type="rule" />
+        <infoLink name="Oddboy" id="7fcc-09cf-bd53-587e" hidden="false" targetId="487b-f932-39ab-f602" type="rule" />
+        <infoLink name="Spanner Gitz" id="697f-3934-553b-aa58" hidden="false" targetId="479c-634d-4d99-cf3e" type="rule" />
+        <infoLink name="Support Squad" id="ed69-4239-33f5-2fd7" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="271f-8939-684e-4973" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Spanner Boy" hidden="false" id="d312-50ee-276d-2a8e" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="841f-9fa2-f83b-534a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="148b-4e2f-7747-ae24" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Spanner Boy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="b699-f788-506b-cc6d" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="266a-e62d-8483-71fc" primary="false" name="Infantry Unit Type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange shoota" hidden="false" id="8dcf-b9e9-80dc-a9c3" defaultSelectionEntryId="2a94-5983-e32b-817d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="153d-cc52-67bd-4197" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6add-6d48-8be8-4d40" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Shoota" hidden="false" id="2a94-5983-e32b-817d" type="selectionEntry" targetId="990f-9119-5362-90f3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5916-376f-52b9-9e1c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Big shoota" hidden="false" id="ac24-2280-01c3-c937" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d77-01cc-6229-3659" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Burna" hidden="false" id="6293-4af9-3889-9601" type="selectionEntry" targetId="d68a-f2d5-bb23-b277">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d75-1e71-4811-cf39" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Kombi-rokkit" hidden="false" id="1874-ba4a-6c82-2459" type="selectionEntry" targetId="f680-045c-d17f-c614">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="420e-23bb-d965-f821" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Kombi-shoota" hidden="false" id="2a0c-9f68-f5ff-959d" type="selectionEntry" targetId="3c0e-2dba-abd4-b6c4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="115d-bc50-116c-d178" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Kombi-skorcha" hidden="false" id="1450-6c2d-fa82-e16d" type="selectionEntry" targetId="764a-aa2a-83b4-804d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9462-89f4-5a7c-da0d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Exchange da armour" hidden="false" id="b0db-4a73-45c5-4bbd" defaultSelectionEntryId="94c0-a356-a1dd-3f2d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="573a-058d-f007-42e3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd20-2808-e3a4-e871" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Da armour" hidden="false" id="94c0-a356-a1dd-3f2d" type="selectionEntry" targetId="ff87-f2ad-bb74-ba22">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a05-cfad-513b-b8d9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="'Eavy Armour" hidden="false" id="f29c-8ed7-4cb6-6c24" type="selectionEntry" targetId="e4bb-7234-0498-89ca">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b83c-0d59-9b6b-f983" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Sneakin' Armour" hidden="false" id="fbf1-2e2d-da65-b93e" type="selectionEntry" targetId="1f4e-4036-dfaa-904f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b627-76ff-7b05-5ec8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Choppa" hidden="false" id="8baa-c592-832e-befe" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b302-72b9-201a-feaf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41f7-4737-9e1f-03dc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="5c71-0b44-0d5c-9f59" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d37c-4b08-ce9f-f057" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34b6-48de-8e68-b85c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" hidden="false" id="f3e0-656a-92ff-f4c2">
+          <entryLinks>
+            <entryLink import="true" name="Gitfinda" hidden="false" id="3667-ac8e-1c48-dcb7" type="selectionEntry" targetId="eeab-d6e7-9c2f-e8a2">
+              <modifiers>
+                <modifier type="increment" field="b0c6-53d5-dbe5-2dd0" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="45c1-7d63-580e-cfd3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d312-50ee-276d-2a8e" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b0c6-53d5-dbe5-2dd0" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Bomb Squig" hidden="false" id="201a-a1bc-149f-624b" type="selectionEntry" targetId="1978-a29f-7d13-6fcc">
+              <modifiers>
+                <modifier type="increment" field="7bc5-f403-f3d0-9049" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="45c1-7d63-580e-cfd3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d312-50ee-276d-2a8e" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7bc5-f403-f3d0-9049" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+      </costs>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="'Chinork' Warkopta" hidden="false" id="e69a-0026-5292-5a0e" publicationId="96d0-c462-d158-fbad">
       <rules>
         <rule name="Note" id="c9cd-19aa-35c0-6ac9" hidden="false">
@@ -12951,6 +13353,16 @@ The effect lasts until the end of the turn.</description>
     <selectionEntry type="unit" import="true" name="Kommandos" hidden="false" id="85f7-e6c1-316b-8a41" publicationId="96d0-c462-d158-fbad">
       <infoLinks>
         <infoLink name="Xenos" id="fe2b-c168-eb92-612d" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="5b22-a1d0-fff7-1385" hidden="false" targetId="150c-ba53-b501-3917" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bigga iz Betta (Kommando Nob only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="f374-0cf5-58ce-86fe" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2) (Kommando Nob only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Dakka! (X)" id="3681-ebce-cdda-4bd2" hidden="false" targetId="0644-bb6e-7891-7f9f" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Dakka! (6+)" />
@@ -12965,6 +13377,11 @@ The effect lasts until the end of the turn.</description>
         <infoLink name="Infiltrate" id="1a0b-ecdd-530d-c60d" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule" />
         <infoLink name="Klan (X)" id="7c83-732f-ebdf-9e7c" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
         <infoLink name="Kommando Grot" id="1b55-0443-aa66-9678" hidden="false" targetId="812e-4d9c-ed65-af1d" type="rule" />
+        <infoLink name="Might iz Right!" id="61fa-8696-6ef4-e646" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Might iz Right! (Kommando Nob only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Mob Rule" id="61ea-12dd-0a30-4026" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Mob Up" id="89ea-1dd6-2d1a-e48c" hidden="false" targetId="b395-add5-c4b4-e188" type="rule" />
         <infoLink name="Move Through Cover" id="9b1a-e184-6956-2e73" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule" />
@@ -12987,7 +13404,7 @@ The effect lasts until the end of the turn.</description>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Kommando" hidden="false" id="fb2e-9b4e-b43e-6649" publicationId="96d0-c462-d158-fbad">
           <constraints>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="8349-c234-d237-c6ba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8349-c234-d237-c6ba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="0e99-c04c-5f3e-8883" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
@@ -13113,13 +13530,13 @@ The effect lasts until the end of the turn.</description>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="11" />
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Boss Kommando" hidden="false" id="2a73-a178-3394-f104" publicationId="96d0-c462-d158-fbad">
+        <selectionEntry type="model" import="true" name="Kommando Nob" hidden="false" id="8a67-bdb0-8a21-117a" publicationId="96d0-c462-d158-fbad">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74e2-f79c-46aa-1817" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8ea-80ef-ce98-3b72" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ab0-634c-9d0d-6735" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c66-738c-8363-729f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
-            <profile name="Boss Kommando" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="bd98-ad5f-a4b4-acb4" publicationId="96d0-c462-d158-fbad">
+            <profile name="Kommando Nob" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="9e85-277b-26b9-c3ed" publicationId="96d0-c462-d158-fbad">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Skirmish)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -13136,33 +13553,33 @@ The effect lasts until the end of the turn.</description>
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="3502-fefd-e655-a50e" primary="false" name="Infantry Unit Type" />
-            <categoryLink targetId="59a4-7b61-600a-c457" id="d032-ec1e-1a5e-744f" primary="false" name="Skirmish Sub-type" />
-            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="fcc0-dc30-23b0-87a5" primary="false" name="Character" />
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="dfca-23b5-eac2-ccb1" primary="false" name="Infantry Unit Type" />
+            <categoryLink targetId="59a4-7b61-600a-c457" id="c225-5f94-0f47-2f00" primary="false" name="Skirmish Sub-type" />
+            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="fbed-e156-f905-a662" primary="false" name="Character" />
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Exchange Choppa" hidden="false" id="2736-7dd0-b03a-187e" defaultSelectionEntryId="e380-8bd7-784d-83de">
+            <selectionEntryGroup name="Exchange Choppa" hidden="false" id="c453-b4a3-9f1d-da27" defaultSelectionEntryId="74d7-d6fc-1ce9-a7e3">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e26-69a0-3f6d-3dbe" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="490e-1dff-f6a6-7b65" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="535b-cfe0-7b10-24c1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee77-9455-ce47-c673" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Choppa" hidden="false" id="e380-8bd7-784d-83de" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
+                <entryLink import="true" name="Choppa" hidden="false" id="74d7-d6fc-1ce9-a7e3" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="018e-b371-5da6-762e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff7e-a1c4-4c1c-f6e3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Big choppa" hidden="false" id="8181-a098-0da0-0ee8" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
+                <entryLink import="true" name="Big choppa" hidden="false" id="b943-77b2-9567-16ad" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="389a-78d6-ff04-1f4c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f0f-53bb-586a-4dbd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Power klaw" hidden="false" id="047b-61f5-0524-33e1" type="selectionEntry" targetId="0ecd-3c66-1dd0-3426">
+                <entryLink import="true" name="Power klaw" hidden="false" id="c782-cdba-0d39-c92e" type="selectionEntry" targetId="0ecd-3c66-1dd0-3426">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b16-97aa-6b72-36e1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c36-f754-e7ff-303d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
@@ -13170,28 +13587,28 @@ The effect lasts until the end of the turn.</description>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Exchange Slugga" hidden="false" id="1ab5-0153-4a30-c1ca" defaultSelectionEntryId="7da4-ccc9-d2a8-495f">
+            <selectionEntryGroup name="Exchange Slugga" hidden="false" id="238d-d240-3f96-333e" defaultSelectionEntryId="e784-03a3-4282-ac28">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cfe-28d0-4d72-79d3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abc1-349d-7572-8041" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2eab-a60b-2ff8-dbde" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f61-8e7a-c95d-2a1f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Slugga" hidden="false" id="7da4-ccc9-d2a8-495f" type="selectionEntry" targetId="63e5-3ea4-aa90-6a1e">
+                <entryLink import="true" name="Slugga" hidden="false" id="e784-03a3-4282-ac28" type="selectionEntry" targetId="63e5-3ea4-aa90-6a1e">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="643d-680a-9571-d9db" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3782-8ae2-5378-577b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Kombi-skorcha" hidden="false" id="185b-d611-b5f4-5728" type="selectionEntry" targetId="764a-aa2a-83b4-804d">
+                <entryLink import="true" name="Kombi-skorcha" hidden="false" id="67b1-e566-549e-dde0" type="selectionEntry" targetId="764a-aa2a-83b4-804d">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46b2-e0e0-b7b3-9561" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2563-dd99-f13a-1bb2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Kombi-rokkit" hidden="false" id="080f-fd84-9d92-6a4a" type="selectionEntry" targetId="f680-045c-d17f-c614">
+                <entryLink import="true" name="Kombi-rokkit" hidden="false" id="0cb3-1753-e08d-93cc" type="selectionEntry" targetId="f680-045c-d17f-c614">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2547-f78c-b4a4-4f4c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07aa-305e-9acf-afab" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -13201,16 +13618,16 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="6a53-2db2-0185-947f" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="e007-db0d-887d-1d80" type="selectionEntry" targetId="960a-b583-75a7-cab5">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3fc-f9ae-0d1e-d6bc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="763e-bdc4-6362-fe67" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e3e-c929-7398-329a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73a2-6b61-2170-6735" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Sneakin' Armour" hidden="false" id="b7d8-6b87-b862-6fe3" type="selectionEntry" targetId="1f4e-4036-dfaa-904f">
+            <entryLink import="true" name="Sneakin' Armour" hidden="false" id="90f1-15a8-95d1-9aff" type="selectionEntry" targetId="1f4e-4036-dfaa-904f">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3184-5dc8-2645-60c9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73c6-de3e-b98e-8282" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85d3-c761-5e99-7dba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="458d-7fe1-ba83-af23" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -13295,7 +13712,7 @@ The effect lasts until the end of the turn.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="16" />
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="21" />
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Snipa rifle" hidden="false" id="ef1f-aac8-14d7-6290" publicationId="96d0-c462-d158-fbad" />
@@ -13812,6 +14229,16 @@ The effect lasts until the end of the turn.</description>
     <selectionEntry type="unit" import="true" name="Squighog Boyz" hidden="false" id="bd6b-3ea9-72a2-3c0f" publicationId="96d0-c462-d158-fbad">
       <infoLinks>
         <infoLink name="Xenos" id="686e-c83e-e897-f9d0" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="7502-0a92-cc84-e2a1" hidden="false" targetId="150c-ba53-b501-3917" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bigga iz Betta (Squighog Nob only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="f1a7-907b-1122-121b" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2) (Squighog Nob only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="'Ere We Go!" id="1bbf-d5d5-bb57-5e1c" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Hammer of Wrath (X)" id="960e-6787-6035-c54c" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
@@ -13819,6 +14246,11 @@ The effect lasts until the end of the turn.</description>
           </modifiers>
         </infoLink>
         <infoLink name="Klan (X)" id="9e6f-3b61-afff-ab33" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
+        <infoLink name="Might iz Right!" id="cd45-01c5-8d73-6710" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Might iz Right! (Squighog Nob only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Mob Rule" id="fe94-176e-c54c-c0fd" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Waaagh!" id="c88b-5745-b456-adfd" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
       </infoLinks>
@@ -14298,6 +14730,11 @@ The effect lasts until the end of the turn.</description>
       </modifiers>
       <infoLinks>
         <infoLink name="Xenos" id="45ae-bdeb-27b7-7045" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="d2c5-9372-9e4b-f82d" hidden="false" targetId="150c-ba53-b501-3917" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bigga iz Betta (Nob Biker only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Bulky (X)" id="c151-2615-f367-c6b6" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Bulky (3)" />
@@ -14320,6 +14757,11 @@ The effect lasts until the end of the turn.</description>
           </modifiers>
         </infoLink>
         <infoLink name="Klan (X)" id="9510-4a97-7d41-66f7" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
+        <infoLink name="Might iz Right!" id="555c-3ebc-ea01-e1b7" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Might iz Right! (Nob Biker only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Mob Rule" id="8097-ecd9-bac5-f7c1" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Mob Up" id="5002-c43c-0bf4-c564" hidden="false" targetId="b395-add5-c4b4-e188" type="rule" />
         <infoLink name="Rage (X)" id="9166-96f0-a9ef-534b" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
@@ -16126,9 +16568,14 @@ The effect lasts until the end of the turn.</description>
             <modifier type="set" field="name" value="Might iz Right! (Spanner Nob only)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Mo' Dakka" id="72c5-7ae6-4c81-9d01" hidden="false" targetId="7c95-1e85-d2ea-dd63" type="rule" />
         <infoLink name="Mob Rule" id="f619-40e5-c2f6-1f24" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Mob Up" id="6b27-515b-a3cc-78b8" hidden="false" targetId="b395-add5-c4b4-e188" type="rule" />
-        <infoLink name="Mo' Dakka" id="72c5-7ae6-4c81-9d01" hidden="false" targetId="7c95-1e85-d2ea-dd63" type="rule" />
+        <infoLink name="Oddboy" id="fb48-989e-68a1-3db0" hidden="false" targetId="487b-f932-39ab-f602" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Oddboy (Spanner Nob only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Waaagh!" id="3e80-21f6-2e44-6ec9" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
       </infoLinks>
       <categoryLinks>
@@ -16626,6 +17073,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="79cd-1c5f-59b8-94f9" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="ba99-1d00-94f0-e6fe" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Ghazghkull Thraka" hidden="false" id="723a-0972-6a34-d75b" publicationId="96d0-c462-d158-fbad">
@@ -17636,6 +18084,9 @@ Da Biggest is Da Best is treated as equivalent to Master of the Legion for the p
     <rule name="Stealth" id="4f86-aae1-17da-67cb" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.</description>
     </rule>
+    <rule name="Spanner Gitz" id="479c-634d-4d99-cf3e" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Few Meks have the patience to train up a proper apprentice, so the Spannerz a warband can muster are a precious lot, sent wherever their knack for bolting, bodging and banging things back into working order does the most good. A Spannerz unit is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in a Spannerz unit must be assigned to another unit from the same Detachment of the army they were selected as part of. A Spanner Boy may only be assigned to a unit composed entirely of models with the Infantry Unit Type and the same Klan (X) special rule as the Spanner Boy, and may not join a unit that includes models in Mega Armour. A Spanner Boy may only be assigned to a Kommandos unit if he has taken sneakin' armour. No Spanner Boy may be assigned to any unit that includes one or more models with the Independent Character special rule or Unique Sub-type (but such models may join a unit that includes a Spanner Boy as normal during deployment or any following turn). No more than three Spanner Boyz may be assigned to any given unit. Once assigned to a unit, the Spanner Boy is considered part of that unit and may not leave it under any circumstances – if that unit is removed as a casualty then the Spanner Boy is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Spanner Boy as a casualty. When assigned to a unit, a Spanner Boy gains all of the special rules (with the exception of those that specifically forbid it) and Unit Sub-types listed for the unit to which he is attached, but does not gain access to any additional Wargear options available to the unit to which he is assigned.</description>
+    </rule>
     <rule name="Speed Freekz" id="5206-b3f9-c8f4-fee3" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>Models with this special rule gain Fleet (2), Sudden Strike (2), and Hammer of Wrath (1). In addition, they may re-roll failed Dangerous Terrain tests.</description>
     </rule>
@@ -17646,7 +18097,7 @@ Da Biggest is Da Best is treated as equivalent to Master of the Legion for the p
       <description>Friendly Ork Infantry, Cavalry and Jump Infantry units within 18" of a Stompa gain Stubborn. In addition, friendly Ork units within 18" may use the Stompa's Leadership characteristic of 10 when making Morale checks and Pinning checks. A Stompa also counts as 15 additional models for any special rule or ability that counts the number of nearby Ork models.</description>
     </rule>
     <rule name="Waaagh!" id="01d0-45ce-18b3-5564" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>Once per game, at the start of any turn, if the army's Warlord is an Ork and is on the table, the army may call a Waaagh! If the army includes a model with the Da Biggest is Da Best special rule (a Warboss, Mek Boss, Painboss, Weirdboss or Ghazghkull Thraka), the Waaagh! unleashes the army's Waaagh! Doctrine, one of the following (see Waaagh! Doctrine for the full rules):
+      <description>Once per game, at the start of any turn, if the army's Warlord is an Ork and is on the table, the army may call a Waaagh! If the army includes a model with the Da Biggest is Da Best special rule (a Warboss, Mek Boss, Painboss, Weirdboss, Ghazghkull Thraka, Boss Snikrot, Boss Zagstruk, Kaptin Badrukk, Mad Dok Grotsnik, Mek Boss Buzzgob, Mozrog Skragbad, Old Zogwort, Wazdakka Gutsmek or Zodgrod Wortsnagga), the Waaagh! unleashes the army's Waaagh! Doctrine, one of the following (see Waaagh! Doctrine for the full rules):
 
 • Krumpin' Waaagh!: all friendly Ork Infantry and Dreadnought units gain Fleet (2), Furious Charge (2), Fearless, Feel No Pain (5+) and Dakka! (5+).
 • Speed Waaagh!: all friendly Ork Cavalry, Jump Infantry, Skirmish and Vehicle units gain Fleet (3), Sudden Strike (3), Hammer of Wrath (+1) and Shrouded (5+) while Running, and all friendly Ork units gain +2 to Reserve rolls.

@@ -154,6 +154,10 @@ If a Runt Orkalyte is removed as a casualty by a Precision Shots or Precision St
 
 **Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
 
+**Spanner Gitz.** Few Meks have the patience to train up a proper apprentice, so the Spannerz a warband can muster are a precious lot, sent wherever their knack for bolting, bodging and banging things back into working order does the most good. A Spannerz unit is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in a Spannerz unit must be assigned to another unit from the same Detachment of the army they were selected as part of. A Spanner Boy may only be assigned to a unit composed entirely of models with the Infantry Unit Type and the same Klan (X) special rule as the Spanner Boy, and may not join a unit that includes models in Mega Armour. A Spanner Boy may only be assigned to a Kommandos unit if he has taken sneakin' armour. No Spanner Boy may be assigned to any unit that includes one or more models with the Independent Character special rule or Unique Sub-type (but such models may join a unit that includes a Spanner Boy as normal during deployment or any following turn). No more than three Spanner Boyz may be assigned to any given unit.
+
+Once assigned to a unit, the Spanner Boy is considered part of that unit and may not leave it under any circumstances – if that unit is removed as a casualty then the Spanner Boy is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Spanner Boy as a casualty. When assigned to a unit, a Spanner Boy gains all of the special rules (with the exception of those that specifically forbid it) and Unit Sub-types listed for the unit to which he is attached, but does not gain access to any additional Wargear options available to the unit to which he is assigned.
+
 **Speed Freekz.** Models with this special rule gain Fleet (2), Sudden Strike (2), and Hammer of Wrath (1). In addition, they may re-roll failed Dangerous Terrain tests.
 
 **Tank Hunters.** The model's attacks gain the Sunder special rule. If a weapon already has Sunder, add 1 to its Armour Penetration rolls instead.
@@ -164,7 +168,7 @@ In addition, friendly Ork units within 18" may use the Stompa's Leadership chara
 
 A Stompa also counts as 15 additional models for any special rule or ability that counts the number of nearby Ork models.
 
-**Waaagh!** Once per game, at the start of any turn, if the army's Warlord is an Ork and is on the table, the army may call a Waaagh! If the army includes a model with the Da Biggest is Da Best special rule (a Warboss, Mek Boss, Painboss, Weirdboss or Ghazghkull Thraka), the Waaagh! unleashes the army's Waaagh! Doctrine, one of the following (see Waaagh! Doctrine for the full rules):
+**Waaagh!** Once per game, at the start of any turn, if the army's Warlord is an Ork and is on the table, the army may call a Waaagh! If the army includes a model with the Da Biggest is Da Best special rule (a Warboss, Mek Boss, Painboss, Weirdboss, Ghazghkull Thraka, Boss Snikrot, Boss Zagstruk, Kaptin Badrukk, Mad Dok Grotsnik, Mek Boss Buzzgob, Mozrog Skragbad, Old Zogwort, Wazdakka Gutsmek or Zodgrod Wortsnagga), the Waaagh! unleashes the army's Waaagh! Doctrine, one of the following (see Waaagh! Doctrine for the full rules):
 
 - **Krumpin' Waaagh!:** all friendly Ork Infantry and Dreadnought units gain Fleet (2), Furious Charge (2), Fearless, Feel No Pain (5+) and Dakka! (5+).
 - **Speed Waaagh!:** all friendly Ork Cavalry, Jump Infantry, Skirmish and Vehicle units gain Fleet (3), Sudden Strike (3), Hammer of Wrath (+1) and Shrouded (5+) while Running, and all friendly Ork units gain +2 to Reserve rolls.
@@ -552,7 +556,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 |---|---|
 | HQ | Warboss, Warboss Retinue, Ork Boss, Big Mek, Mek Boss, Mek Boss Buzzgob, Weirdboss, named characters, Beastboss, Beastboss on Squigosaur, Painboss, Deffkilla Wartrike |
 | Elites | Nobz, Nobz on Warbikes, Meganobz, Burna Boyz, Tankbustas, Odd Boys (Meks, Painboys and Weirdboys), Bannernob, Nob on Smasha Squig |
-| Troops | Boyz, Shoota Boyz, 'Ard Boyz, Big Boyz, Gretchin, Beast Snagga Boyz |
+| Troops | Boyz, Shoota Boyz, 'Ard Boyz, Big Boyz, Gretchin, Beast Snagga Boyz, Spannerz |
 | Fast Attack | Stormboyz, Warbikers, Deffkoptas, Kommandos, Dakkajet, Burna-bommer, Blitza-bommer, Squighog Boyz, Speed Freek buggies, Wazbom Blastajet |
 | Heavy Support | Deff Dread, Killa Kans, Lootas, Flash Gitz, Mek Gunz, Battlewagon, Gunwagon, Bonebreaka, Kill Rig, Hunta Rig, Big Mek Dakkarig |
 | Dedicated Transports | Trukk, 'Chinork' Warkopta; Battlewagon for the units that list it |
@@ -1216,8 +1220,12 @@ _A Head Nob with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 
 
 **Special Rules**
 
+- Bigga iz Betta
+- Bulky (2)
+- Da Biggest is Da Best
 - 'Ere We Go!
 - Klan (Blood Axes)
+- Might iz Right!
 - Mob Rule
 - Must join one Kommandos unit; that unit has Infiltrate, Move Through Cover and Stealth
 - Red Skull Kommandos: instead of deploying, he and his unit may enter from any table edge from turn 2 onward†
@@ -1246,8 +1254,12 @@ _A Head Nob with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 
 
 **Special Rules**
 
+- Bigga iz Betta
+- Bulky (2)
+- Da Biggest is Da Best
 - 'Ere We Go!
 - Klan (Goffs)
+- Might iz Right!
 - Mob Rule
 - Must join one Stormboyz unit; that unit has Deep Strike and re-rolls Deep Strike scatter
 - Waaagh!
@@ -1276,10 +1288,14 @@ _A Head Nob with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 
 
 **Special Rules**
 
+- Bigga iz Betta (Kaptin Badrukk only)
+- Bulky (2) (Kaptin Badrukk only)
+- Da Biggest is Da Best (Kaptin Badrukk only)
 - 'Ere We Go!
 - Flashiest Gitz: if Badrukk is the Warlord, Flash Gitz may be taken as Troops
 - Grot Attendants (Ammo Runts only)
 - Klan (Bad Moons or Freebooterz)
+- Might iz Right! (Kaptin Badrukk only)
 - Mob Rule
 - Waaagh!
 
@@ -1307,8 +1323,12 @@ _A Head Nob with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 
 
 **Special Rules**
 
+- Bigga iz Betta
+- Bulky (2)
+- Da Biggest is Da Best
 - 'Ere We Go!
 - Klan (Deathskulls)
+- Might iz Right!
 - Mob Rule
 - Must join one Boyz or Nobz unit; that unit has Feel No Pain (5+) and Rage (2)
 - Waaagh!
@@ -1344,12 +1364,16 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 **Special Rules**
 
 - Battle-Hardened (2) (Dok Scrabbit and Grot Gorgutz only)
-- Mek-Smasha (4+), improved to (3+) by Grot Gorgutz
+- Bigga iz Betta (Mek Boss Buzzgob only)
+- Bulky (2) (Mek Boss Buzzgob only)
+- Da Biggest is Da Best (Mek Boss Buzzgob only)
 - 'Ere We Go!
 - Grot Attendants (Dok Scrabbit and Grot Gorgutz only)
 - Klan (Goffs)
 - Kustom Repairs: when Buzzgob uses Mek-Smasha, he may restore up to D3 lost Hull Points or Wounds instead of one, and may use it twice each turn on different models
+- Mek-Smasha (4+), improved to (3+) by Grot Gorgutz
 - Mekaniak: friendly Ork vehicles and Dreadnoughts within 6" of Buzzgob improve their Ramshackled Vehicle (X) or Ramshackled Carapace (X) by 1, to a best of (4+)
+- Might iz Right! (Mek Boss Buzzgob only)
 - Smoky Squig: Dok Scrabbit's fumes give Buzzgob and any unit he joins Shrouded (6+)
 - Waaagh!
 
@@ -1375,11 +1399,15 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 
 **Special Rules**
 
+- Bigga iz Betta
+- Bulky (2)
 - Counts as a Beastboss on Squigosaur for the Snagga Hunt Rite of War
+- Da Biggest is Da Best
 - 'Ere We Go!
 - Eternal Warrior
 - Hammer of Wrath (4)
 - Klan (Snakebites)
+- Might iz Right!
 - Mob Rule
 - Waaagh!
 
@@ -1403,14 +1431,18 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 
 **Special Rules**
 
+- Bigga iz Betta
+- Bulky (2)
+- Da Biggest is Da Best
 - 'Ere We Go!
 - Hex: once per game in the Shooting phase, after a successful Psychic check, pick an enemy character within 12"; it must pass a Toughness test or be removed as a casualty
 - Klan (Snakebites)
+- Might iz Right!
 - Mob Rule
 - Psychic discipline: Power of da Waaagh!, including Fists of Gork
-- Weirdboy Discipline
 - Waaagh!
 - Waaagh! energy
+- Weirdboy Discipline
 
 ### Wazdakka Gutsmek — 145 pts
 
@@ -1434,13 +1466,17 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 
 **Special Rules**
 
+- Bigga iz Betta
+- Bulky (2)
+- Da Biggest is Da Best
 - 'Ere We Go!
 - Klan (Evil Sunz)
 - Kustom Bike: if Wazdakka is the Warlord, Warbikers may be taken as Troops
+- May only join Warbikers
+- Might iz Right!
 - Mob Rule
 - Speed Demons: a model that chooses to Advance gains Shrouded (5+) until the start of the controlling player's next turn
 - Waaagh!
-- May only join Warbikers
 
 ### Zodgrod Wortsnagga — 65 pts
 
@@ -1463,12 +1499,16 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 
 **Special Rules**
 
+- Bigga iz Betta
+- Bulky (2)
+- Da Biggest is Da Best
 - 'Ere We Go!
 - Klan (Snakebites)
+- May join Gretchin
+- Might iz Right!
 - Mob Rule
 - Super Runts: one Gretchin unit within 6" gains Feel No Pain (6+), S3 and Furious Charge; Gretchin he joins are affected by Waaagh!
 - Waaagh!
-- May join Gretchin
 
 ## Elites
 
@@ -1590,7 +1630,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 - 'Ere We Go!
 - Klan (X)
 - Lumbering Charge: Units with this special rule gain +2 to Charge rolls. In addition, units with this special rule ignore penalties applied to Charge rolls due to reduced Movement Characteristics.
-- Might iz Right! (Mega Boss Nob only)
+- Might iz Right!
 - Mob Rule
 - Slow and Purposeful
 - Sudden Strike (2)
@@ -1724,12 +1764,15 @@ _The Odd Boys are the Meks, Painboys and Weirdboys of the warband. The unit cost
 
 **Special Rules**
 
+- Bigga iz Betta
+- Bulky (2)
 - 'Ere We Go!
 - Hammer of Wrath (2)
 - Klan (X)
+- May only join Squighog Boyz or Beast Snagga Boyz
+- Might iz Right!
 - Mob Rule
 - Waaagh!
-- May only join Squighog Boyz or Beast Snagga Boyz
 
 ### Nobz — 195 pts
 
@@ -1764,7 +1807,7 @@ _The Odd Boys are the Meks, Painboys and Weirdboys of the warband. The unit cost
 - 'Ere We Go!
 - Furious Charge (1)
 - Klan (X)
-- Might iz Right! (Boss Nob only)
+- Might iz Right!
 - Mob Rule
 - Sudden Strike (1)
 - Waaagh!
@@ -1827,10 +1870,13 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 
 **Special Rules**
 
+- Bigga iz Betta (Nob on Warbike and Boss Nob on Warbike only)
+- Bulky (2) (Nob on Warbike and Boss Nob on Warbike only)
 - Chosen Warriors
 - 'Ere We Go!
 - Hammer of Wrath (1)
 - Klan (X)
+- Might iz Right! (Nob on Warbike and Boss Nob on Warbike only)
 - Mob Rule
 - Speed Demons: a model that chooses to Advance gains Shrouded (5+) until the start of the controlling player's next turn
 - Waaagh!
@@ -1879,9 +1925,12 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 
 **Special Rules**
 
+- Bigga iz Betta (Boss Nob only)
+- Bulky (2) (Boss Nob only)
 - 'Ere We Go!
 - Glory Hogs: when they shoot, they must target the nearest visible enemy Vehicle, Dreadnought or Super-heavy if there is one
 - Klan (X)
+- Might iz Right! (Boss Nob only)
 - Mob Rule
 - Tank Hunters
 - Waaagh!
@@ -1998,8 +2047,11 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 
 **Special Rules**
 
+- Bigga iz Betta (Beast Snagga Nob only)
+- Bulky (2) (Beast Snagga Nob only)
 - 'Ere We Go!
 - Klan (X)
+- Might iz Right! (Beast Snagga Nob only)
 - Mob Rule
 - Monster Hunters: re-roll to-wound rolls of 1 against Vehicles, Dreadnoughts and Monstrous Creatures
 - Waaagh!
@@ -2045,8 +2097,11 @@ _Boyz who have grown bigger, faster and meaner than the rest of the mob, but not
 
 **Special Rules**
 
+- Bigga iz Betta (Boss Nob only)
+- Bulky (2) (Boss Nob only)
 - 'Ere We Go!
 - Klan (X)
+- Might iz Right! (Boss Nob only)
 - Mob Rule
 - Waaagh!
 
@@ -2252,6 +2307,58 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 | – 'Eavy armour (4+) | +2 points each |
 | **The entire mob may take:** |  |
 | – All Da Kit (choppa, shoota and slugga) | +1 point each |
+
+
+### 0-1 Spannerz — 60 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Spanner Boy | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 2 | 7 | 5+ | 32mm |
+
+**Unit Composition**
+
+- 3 Spanner Boyz
+
+**Wargear**
+
+- Shoota
+- Choppa
+- Stikkbombz
+- Da armour
+
+**Unit Type**
+
+- Spanner Boy: Infantry
+
+**Special Rules**
+
+- 'Ere We Go!
+- Klan (X)
+- Mek-Smasha (6+)
+- Mob Rule
+- Mob Up
+- Oddboy
+- Spanner Gitz
+- Support Squad
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Spannerz may include:** |  |
+| – Up to 7 additional Spanner Boyz | +20 points each |
+| **Any Spanner Boy may exchange his shoota for one of the following:** |  |
+| – Big shoota | +10 points |
+| – Burna | +10 points |
+| – Kombi-rokkit | +10 points |
+| – Kombi-shoota | +5 points |
+| – Kombi-skorcha | +10 points |
+| **Any Spanner Boy may exchange his da armour for one of the following:** |  |
+| – 'Eavy armour (4+) | +5 points |
+| – Sneakin' armour | +5 points |
+| **Any Spanner Boy may take any of the following:** |  |
+| – Gitfinda | +15 points |
+| – Bomb squig | +5 points |
 
 ## Dedicated Transports
 
@@ -2526,18 +2633,18 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 | **Any Deffkopta may take:** |  |
 | – Killsaw | +10 points each |
 
-### Kommandos — 115 pts
+### Kommandos — 65 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Kommando | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 2 | 6 | 5+ | 32mm |
-| Boss Kommando | 6 | 5 | 2 | 3 | 4 | 2 | 4 | 3 | 7 | 5+ | 40mm |
+| Kommando Nob | 6 | 5 | 2 | 3 | 4 | 2 | 4 | 3 | 7 | 5+ | 40mm |
 | Kommando Grot | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
 
-- 9 Kommandos
-- 1 Boss Kommando
+- 4 Kommandos
+- 1 Kommando Nob
 
 **Wargear**
 
@@ -2549,17 +2656,20 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 **Unit Type**
 
 - Kommando: Infantry (Skirmish)
-- Boss Kommando: Infantry (Character, Skirmish)
+- Kommando Nob: Infantry (Character, Skirmish)
 - Kommando Grot: Infantry
 
 **Special Rules**
 
+- Bigga iz Betta (Kommando Nob only)
+- Bulky (2) (Kommando Nob only)
 - Dakka! (6+)
 - 'Ere We Go!
 - Grot Attendants (Kommando Grot only)
 - Infiltrate
 - Klan (X)
 - Kommando Grot
+- Might iz Right! (Kommando Nob only)
 - Mob Rule
 - Mob Up
 - Move Through Cover
@@ -2573,7 +2683,7 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 | Option | Cost |
 |---|---|
 | **The mob may include:** |  |
-| – Up to 10 additional kommandos | +11 points each |
+| – Up to 15 additional kommandos | +11 points each |
 | **The mob may take:** |  |
 | – Up to 1 kommando grot | +15 points |
 | **For every 5 Kommandos in the mob, one Kommando may exchange his Slugga and Choppa for one of the following:** |  |
@@ -2589,10 +2699,10 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 | **The entire mob may take:** |  |
 | – Bomb squig | +15 points |
 | – Smoke bombz | +15 points |
-| **The Boss Kommando may exchange his Choppa for one of the following:** |  |
+| **The Kommando Nob may exchange his Choppa for one of the following:** |  |
 | – Big choppa | +5 points |
 | – Power klaw | +20 points |
-| **The Boss Kommando may exchange his Slugga for one of the following:** |  |
+| **The Kommando Nob may exchange his Slugga for one of the following:** |  |
 | – Kombi-Skorcha | +10 points |
 | – Kombi-Rokkit | +10 points |
 
@@ -2783,9 +2893,12 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 
 **Special Rules**
 
+- Bigga iz Betta (Squighog Nob only)
+- Bulky (2) (Squighog Nob only)
 - 'Ere We Go!
 - Hammer of Wrath (1)
 - Klan (X)
+- Might iz Right! (Squighog Nob only)
 - Mob Rule
 - Waaagh!
 
@@ -2886,12 +2999,14 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 
 **Special Rules**
 
+- Bigga iz Betta (Nob Biker only)
 - Bulky (3)
 - Dakka! (6+)
 - 'Ere We Go!
 - Fleet (2)
 - Furious Charge (1)
 - Klan (X)
+- Might iz Right! (Nob Biker only)
 - Mob Rule
 - Mob Up
 - Rage (2)
@@ -3367,9 +3482,10 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 - Dakka! (5+)
 - 'Ere We Go!
 - Might iz Right! (Spanner Nob only)
+- Mo' Dakka
 - Mob Rule
 - Mob Up
-- Mo' Dakka
+- Oddboy (Spanner Nob only)
 - Waaagh!
 
 **Dedicated Transport**
