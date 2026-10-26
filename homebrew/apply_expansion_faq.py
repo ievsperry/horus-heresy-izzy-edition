@@ -571,4 +571,89 @@ o.cost_all(SOH, "Reaver Aggressor Squad", ("Power Maul", "Power Sword", "Power L
                                            "Carsoran Power Tabar", "Charnabal Glaive", "Charnabal Sabre", "Charnabal Tabar"), 5)
 o.rule(AL, "Autilon Skorr", remove="Traitor")
 
+# ======================================================================= Liber Mechanicum (pp96-98) and Legacies: Mechanicum
+MECH, ML = "Mechanicum", "Mech Library"
+o.cost(MECH, "Myrmidon Secutor Host", "Graviton Gun", v=10)
+o.cost(MECH, "Myrmidon Secutor Host", "Phased Plasma-Fusil", v=15)
+o.price(MECH, "Scyllax Guardian-Automata Maniple", 0)
+o.rule(MECH, "Scyllax Guardian-Automata Maniple", "Scyllax", add="Feel No Pain (5+)")
+o.char(MECH, "Ursarax Cohort", "P:Ursarax", S="5")
+o.rule(ML, "Thanatar Siege-automata Maniple", "Thanatar", add="Hammer of Wrath (3)")
+for f in (ML, MECH):
+    for k in ("Styrix", "Magaera", "Atrapos"):
+        unit = ("Questoris Knight " if f == ML else "Mechanicum Knight ") + k
+        o.add_link(f, unit, to="Flare Shield")
+o.add_link(MECH, "Ordinatus Ulator", to="Searchlights")
+o.price(MECH, "Ordinatus Aktaeus", 700)
+o.rule(MECH, "Ordinatus Aktaeus", add="Transport Bay")
+o.rule(MECH, "Archmagos Anacharis Scoria", add="Stubborn")
+o.rule(MECH, "E:Inar Satarael", add="Born of Steel")
+o.chars_all(MECH, "Tech-thralls", Sv="5+")
+o.char(MECH, "Macrocarid Explorator", "P:Macrocarid Explorator", M="12", HP="6")
+o.category(MECH, "Macrocarid Explorator", add="Reinforced Sub-type")
+o.text_all("Destructor", whole(
+    "Any model which suffers an unsaved Wound or Hull Point loss from a weapon with this Special Rule does not suffer only "
+    "one Wound or Hull Point of damage, but instead suffers D6 Wounds or Hull Points of damage instead, with all of the "
+    "Wounds or Hull Points inflicted using the same AP and special rules as that of the initial Wound. Roll to save "
+    "against each Wound or Hull Point of damage inflicted separately, but note that Wounds or Hull Points of damage caused "
+    "in excess of a given model's remaining Wounds or Hull Points do not spill over to other models and are lost.\n\n"
+    "In addition, if the target of this attack is a model with the Knight, Titan, Gargantuan, Super-Heavy Vehicle, or "
+    "Building or Fortification Unit Type, or the Monstrous Unit Sub-type, increase the number of Wounds suffered or Hull "
+    "Points lost to 2D6."))
+o.text_all("Disruption (X)", whole(
+    "To Hit rolls of the value X indicated made by a weapon with this Special Rule cause an automatic Glancing Hit against "
+    "models with the Vehicle Unit Type instead of rolling for Armour Penetration, and an automatic Wound against models "
+    "with the Dreadnought, Automata, or Armiger Unit Types, instead of rolling To Wound.\n\n"
+    "On weapons which do not roll to Hit, such as Template or Blast Weapons, a D6 should be rolled for every applicable "
+    "target - a roll of X or higher causes an automatic Glancing Hit against models with the Vehicle Unit Type instead of "
+    "rolling for Armour Penetration, and an automatic Wound against models with the Dreadnought, Automata, or Armiger "
+    "Unit Types.\n\n"
+    "Only Invulnerable Saves or Damage Mitigation rolls may be taken against Wounds or Hull Points of damage inflicted "
+    "automatically by this Special Rule."))
+o.text_all("Feudal Hierarchy", lambda t: t.replace(
+    "A single Detachment may not include both an Archmagos Prime and an Archmagos Prime on Abeyant.",
+    "A single Detachment may only ever include a single model with this Special Rule."))
+o.text_all("God-Engine", append("In addition, all units wholly within 18\" of a model with this Special Rule and which "
+                                "have a Kyropatris Field Generator gain the Line Sub-type."))
+o.text_all("Paragon of Metal", append("A model which has this Special Rule changes their Armour Save to 2+."))
+o.text_all("Pride of Place", append(
+    "A model with this Special Rule may ignore the restrictions applied by it if the Unit with the Transport Sub-type they "
+    "are attempting to Embark onto also has the Super-Heavy Sub-type. In addition, a model with this Special Rule gains "
+    "the Bulky (X) Special Rule, where X is equal to the model's starting Wounds Characteristic."))
+o.text_all("Thanatar Maniple", append(
+    "Once a unit with this Special Rule has separated, each model counts as its own unit for the purposes of Victory "
+    "Points, Units Destroyed, and similar rules."))
+o.text_all("Ionic Deflector", lambda t: t.replace(
+    "any model with an ionic deflector and a Wounds Characteristic gains the Eternal Warrior special rule.",
+    "any model with an Ionic Deflector and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death "
+    "Special Rule is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved "
+    "Wound with the Instant Death Special Rule inflicted on it."), tag="profile")
+o.text_all("Ordinatus Dispersion Shield", append(
+    "In subsequent Game Turns after the first, the Ordinatus Dispersion Shield counts as a Flare Shield."), tag="profile")
+FREE_MOVE = (" may move over both friendly and enemy models or units without penalty - but must end its Movement at least "
+             "1\" away from any model from another unit, and ignores the effects of any Difficult, Dangerous, or Impassable "
+             "Terrain they move over as they make their move, though they must still take Dangerous Terrain Tests as "
+             "normal should they start or end their move in terrain that would require them to do so.")
+o.text_all("Incunabulan Jet Pack", lambda t: t if "own Shooting Phase" in t else (lambda parts: parts[0] +
+    " This extra move can only be made in the Controlling Player's own Shooting Phase.\n" + parts[1])(t.split("\n", 1)) +
+    "\nA model with an activated Incunabulan Jet Pack" + FREE_MOVE + " It should be noted that, for the purposes of "
+    "Reactions, an Incunabulan Jet Pack is classed as having being activated for the purposes of moving over any models or "
+    "terrain.", tag="profile")
+o.text_all("Stratos Thrusters", append(
+    "On a Game Turn in which a model armed with Stratos Thrusters activates them, they may elect to gain the Skyfire "
+    "Special Rule for all Ranged Weapons they are armed with. In addition, a model equipped with Stratos Thrusters also "
+    "gains the Deep Strike Special Rule. A model with an activated set of Stratos Thrusters" + FREE_MOVE), tag="profile")
+o.text_all("Utan Jump Booster", append("A model with an activated Utan Jump Booster" + FREE_MOVE), tag="profile")
+
+TAR = "Mechanicum Tarantula Sentry Gun Battery"
+o.rule(MECH, TAR, remove="Bulky (X)", add=("Fearless", "Immobile"))
+o.chars_all(MECH, "Tarantula Sentry Gun", WS="-", BS="3", S="5", T="5", W="2", I="-", A="-", Ld="5", Sv="3+")
+o.chars_under(MECH, "Ordo Reductor Artillery Tank Battery", "Vehicle", Front="13", UT="Vehicle (Bombard, Reinforced)")
+o.category(MECH, "Ordo Reductor Artillery Tank Battery", add="Reinforced Sub-type")
+o.category(MECH, "Ordo Reductor Artillery Tank Battery", add="Bombard Sub-type")
+o.retarget(MECH, "Ordo Reductor Minotaur Battery", "Ordo Reductor Minotaur", "Twin-linked Earthshaker Cannon",
+           to="Earthshaker Battery", shown="Centreline (Rear) Mounted Earthshaker Battery")
+o.rename(MECH, "Ordo Reductor Minotaur Battery", "Ordo Reductor Minotaur", "L:Hunter-Killer Missile",
+         to="Hull (Rear) Mounted Hunter-Killer Missile")
+
 o.report()

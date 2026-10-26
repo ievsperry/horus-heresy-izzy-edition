@@ -759,3 +759,30 @@ class Ops:
             if not n and not any(re.search(r'name="' + re.escape(html.escape(unit, quote=False)) + r'"[^>]*>(?:(?!</entryLink>).)*targetId="' + nid + '"', self.F.text[p], re.S) for p in self.F.paths):
                 raise KeyError("no links in that slot")
         self.run(f"{unit} slot", go)
+
+    def text_all(self, name, fn, tag="rule", char="Description"):
+        """Edit the text of every rule or profile with this name, in every file."""
+        def go():
+            n = 0
+            for p in self.F.paths:
+                for i in range(len(self.F.find(p, name, tag))):
+                    sp = self.F.span(p, self.F.find(p, name, tag)[i])
+                    self.F.edit_text(p, sp, fn, f"{tag[0].upper()}:{name}: text", char)
+                    n += 1
+            if not n:
+                raise KeyError(f"no {tag} {name}")
+        self.run(f"{name} (all) text", go)
+
+    def chars_under(self, f, unit, type_name, **chars):
+        """Set characteristics on every profile of a profile type (e.g. Vehicle) inside a unit."""
+        def go():
+            p, sp = self.at(f, unit)
+            n = len([m for m in re.finditer(r'<profile [^>]*typeName="' + type_name + '"', self.F.text[p][sp[0]:sp[1]])])
+            for i in range(n):
+                p, sp = self.at(f, unit)
+                m = list(re.finditer(r'<profile [^>]*typeName="' + type_name + '"', self.F.text[p][sp[0]:sp[1]]))[i]
+                psp = self.F.span(p, sp[0] + m.start())
+                for k, v in chars.items():
+                    k = {"UT": "Unit Type", "Sv": "Save", "M": "Move", "Tr": "Transport Capacity"}.get(k, k)
+                    self.F.set_char(p, psp, k, v, f"{unit} [{i + 1}]: {k} {v}")
+        self.run(unit + " chars_under", go)
