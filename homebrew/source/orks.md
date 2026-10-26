@@ -1894,12 +1894,12 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 | – Up to 10 additional Tankbustas | +17 points each |
 | – Up to 2 bomb squigs | +5 points each |
 | **Any Tankbusta may exchange his tankbusta rokkit for:** |  |
-| – Tankhammer | +0 points |
+| – Tankhammer | +15 points |
 | **One Tankbusta may be upgraded to a Boss Nob** | +10 points |
 | **The Boss Nob may exchange his big choppa for one of the following:** |  |
 | – 'Uge choppa | +5 points |
 | – Power klaw | +15 points |
-| – Tankhammer | +0 points |
+| – Tankhammer | +15 points |
 | **The Boss Nob may take:** |  |
 | – Bosspole | +5 points |
 
