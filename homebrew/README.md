@@ -261,3 +261,5 @@ loading. The script prints anything in the doc it could not place.
 - `python3 homebrew/apply_core_faq.py` applies the Liber FAQ, Errata and Balance Changes for the Core Rulebook
   to the rules `2022 - Horus Heresy.gst` holds (Blind, Concussive (X), Force, Hit & Run, the Unit Type rules,
   Telekine Dome and so on). Running it again changes nothing.
+- A "**Name.** text" rule ends at the next heading, so a table or list under a following "####" heading no
+  longer joins the rule before it.

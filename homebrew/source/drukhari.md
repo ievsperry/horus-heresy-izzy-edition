@@ -18,7 +18,7 @@ Every Drukhari unit has **Night Vision** unless its entry says otherwise.
 
 **Drukhari Skimmers.** Drukhari Antigrav vehicles may move over other models and terrain as long as they do not end on top of them†.
 
-**Night Vision.** The unit ignores the effects of Night Fighting†.
+**Night Vision.** A unit that contains at least one model with this Special Rule ignores the effects of Night Fighting (see page 308) and no model may make Shrouded rolls to negate Wounds or Hull Points inflicted by their attacks.
 
 **Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
 
