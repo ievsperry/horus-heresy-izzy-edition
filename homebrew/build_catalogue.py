@@ -400,6 +400,24 @@ def ds_has_type(ds, model):
     return any(re.sub(r"\s*\(.*?\)", "", l.partition(": ")[0]).strip() == model for l in ds["types"])
 
 
+def full_text(lines):
+    """Flavour and rules together, paragraph by paragraph, bullets one to a line."""
+    out = []
+    for l in lines:
+        if not l.strip() or l.startswith(("|", "#")):
+            continue
+        t = strip_md(l.strip().strip("_*") if re.fullmatch(r"[_*][^_*].*[_*]", l.strip()) else l)
+        if l.startswith(("- ", "* ", "• ")):
+            out.append(("bullet", "• " + strip_md(l[2:])))
+        else:
+            out.append(("para", t))
+    text = ""
+    for i, (kind, t) in enumerate(out):
+        sep = "\n" if kind == "bullet" and i and out[i - 1][0] == "bullet" else "\n\n"
+        text += (sep if text else "") + t
+    return text
+
+
 def paragraphs(lines):
     """Rules text only: italic paragraphs are flavour text and are left out."""
     return [strip_md(l) for l in lines
@@ -1862,16 +1880,27 @@ class Builder:
             g = el(groups, "selectionEntryGroup", name=doc["title"], hidden=False, id=did)
             add_constraint(g, "max", 1, did + "max")
             ses = el(g, "selectionEntries")
+            # "Waaagh! Doctrine": in the app as in the doc, flavour and all, with "The Waaagh!" beside it
+            whole = doc["title"].endswith(("Doctrine", "Doctrines"))
+            if whole:
+                lore = next((s for s in self.sections if s["title"] == "The " + re.sub(r"\s*Doctrines?$", "", doc["title"])), None)
+                if lore:
+                    add_rule(army, lore["title"], full_text(lore["lines"]), make_id(eid, "lore"))
+                add_rule(army, doc["title"], full_text(doc["lines"]).replace("†", ""), did)
             for sub in doc["subs"]:
                 de = make_id("doctrine", self.faction, sub["title"])
                 d = el(ses, "selectionEntry", type="upgrade", import_=True, name=sub["title"], hidden=False,
                        id=de, publicationId=self.pub_id)
-                add_rule(d, sub["title"], " ".join(paragraphs(sub["lines"])).replace("†", ""), de)
+                text = full_text(sub["lines"]) if whole else " ".join(paragraphs(sub["lines"]))
+                add_rule(d, sub["title"], text.replace("†", ""), de)
                 add_cost(d, 0)
-            granter = next((m.group(1) for ln in doc["lines"]
-                            for m in [re.search(r"model with the (.+?) special rule may select", ln)] if m), None)
+            gm = next((m for ln in doc["lines"]
+                       for m in [re.search(r"model with the (.+?) special rule(?:, or ([^,]+),)? may select", ln)] if m), None)
+            granter = gm.group(1) if gm else None
+            named = gm.group(2) if gm else None  # "or Ghazghkull Thraka"
             units = [self.units[ds["name"]] for ds in self.datasheets
-                     if granter and any(norm(r).startswith(norm(granter)) for r in ds["rules"])]
+                     if granter and any(norm(r).startswith(norm(granter)) for r in ds["rules"])
+                     or named and forms(ds["name"]) & forms(named)]
             if doc["title"] == "Grand Performances":
                 # a Saedathii Detachment (Rillietann units) must choose one; others never see them
                 units = [self.units[ds["name"]] for ds in self.datasheets if any("Rillietann" in t for t in ds["types"])]
