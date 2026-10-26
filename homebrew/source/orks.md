@@ -1971,7 +1971,6 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 | – Waaagh! banner | +35 points |
 | **The entire mob may take:** |  |
 | – 'Eavy armour (4+) | +2 points each |
-| – All Da Kit (choppa, shoota and slugga) | +1 point each |
 
 ### Beast Snagga Boyz — 95 pts
 
