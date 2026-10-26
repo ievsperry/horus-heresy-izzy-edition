@@ -48,7 +48,15 @@ Every unit in this document has **Regiment (X)** unless its entry says otherwise
 
 **Abhuman.** Ogryns, Bullgryns and Ratlings may not receive orders unless an order is issued by Nork Deddog or an officer within 6".
 
+**Fury of the Regiment.** Line troopers drill endlessly with the lasgun until a regiment can lay down a curtain of fire that halts any foe. If a model with this rule has not moved or Run during its controlling player's Movement phase, it may add one to the number of shots fired when making a Shooting Attack with a Las weapon (this does not include lascannons or heavy lascannons).
+
+**Jungle Ambush.** On a turn in which this unit charges or is charged, its models add 1 to their To Wound rolls in close combat.
+
 **Regiment (X).** See Regiments, below.
+
+**Regimental Line (X).** A unit with this rule is a Support Squad Troops choice. If it is in a detachment whose Regiment (X) matches X, it loses the Support Squad special rule, and all its models gain the Line Sub-type and the Fury of the Regiment special rule.
+
+**Shock Troops.** At the end of your turn, if this unit is within 3" of an objective you control, that objective stays under your control even if no models are within range of it, until an enemy unit that can score or deny controls it at the end of any turn.
 
 **Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
 
@@ -440,7 +448,6 @@ Base sizes follow recent 40k kits and are approximate.
 | – The Laurels of Command | +25 points |
 | – The Tactical Auto-Reliquary of Tyberius | +25 points |
 | – The Deathmask of Ollanius | +30 points |
-| – Kurov's Aquila | +60 points |
 | **The Tempestor Prime may exchange his hot-shot laspistol for:** |  |
 | – Plasma pistol | +10 points |
 | – Command rod (Voice of Command (3)) | +10 points |
@@ -1254,6 +1261,173 @@ _Each Infantry Platoon may include one squad of Conscripts._
 | **The Conscripts may take:** |  |
 | – Up to 30 additional Conscripts | +3 points each |
 
+### Cadian Shock Troops — 65 pts
+
+A separate Troops unit, not part of an Infantry Platoon.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Shock Trooper | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
+| Shock Trooper Sergeant | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
+
+**Unit Composition**
+
+- 9 Shock Troopers
+- 1 Shock Trooper Sergeant
+
+**Wargear**
+
+- Close combat weapon (Shock Troopers only)
+- Chainsword (Shock Trooper Sergeant only)
+- Flak armour
+- Frag grenades
+- Lasgun (Shock Troopers only)
+- Laspistol (Shock Trooper Sergeant only)
+
+**Unit Type**
+
+- Shock Trooper: Infantry
+- Shock Trooper Sergeant: Infantry (Character)
+
+**Special Rules**
+
+- Regiment (X)
+- Regimental Line (Cadian)
+- Shock Troops
+- Support Squad
+
+**Dedicated Transport**
+
+A unit of no more than 12 models may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The unit may include:** |  |
+| – Up to 10 additional Shock Troopers | +6 points each |
+| **For every 10 models, up to two Shock Troopers may exchange their lasgun for one of the following (no weapon may be taken more than once per 10 models):** |  |
+| – Flamer or grenade launcher | +5 points each |
+| – Meltagun | +10 points each |
+| – Plasma gun | +15 points each |
+| **For every 10 models, one Shock Trooper with a lasgun may take:** |  |
+| – Vox-caster | +5 points |
+| **Any Shock Trooper Sergeant may exchange his laspistol for:** |  |
+| – Bolt pistol | +1 point |
+| **Any Shock Trooper Sergeant may exchange his laspistol and chainsword for:** |  |
+| – Sergeant's autogun and close combat weapon | +0 points |
+| **The entire unit may exchange its flak armour for:** |  |
+| – Carapace armour | +3 points per model |
+
+### Catachan Jungle Fighters — 65 pts
+
+A separate Troops unit, not part of an Infantry Platoon.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Jungle Fighter | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
+| Jungle Fighter Sergeant | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
+
+**Unit Composition**
+
+- 9 Jungle Fighters
+- 1 Jungle Fighter Sergeant
+
+**Wargear**
+
+- Close combat weapon
+- Flak armour
+- Frag grenades
+- Lasgun (Jungle Fighters only)
+- Laspistol (Jungle Fighter Sergeant only)
+
+**Unit Type**
+
+- Jungle Fighter: Infantry
+- Jungle Fighter Sergeant: Infantry (Character)
+
+**Special Rules**
+
+- Jungle Ambush
+- Regiment (X)
+- Regimental Line (Catachan)
+- Scout
+- Support Squad
+
+**Dedicated Transport**
+
+A unit of no more than 12 models may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The unit may include:** |  |
+| – Up to 10 additional Jungle Fighters | +6 points each |
+| **For every 5 models, one Jungle Fighter may exchange his lasgun for:** |  |
+| – Flamer | +5 points each |
+| **For every 10 models, one Jungle Fighter with a lasgun may take:** |  |
+| – Vox-caster | +5 points |
+
+### Death Korps of Krieg — 65 pts
+
+A separate Troops unit, not part of an Infantry Platoon.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Death Korps Trooper | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
+| Death Korps Watchmaster | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
+
+**Unit Composition**
+
+- 9 Death Korps Troopers
+- 1 Death Korps Watchmaster
+
+**Wargear**
+
+- Chainsword (Death Korps Watchmaster only)
+- Close combat weapon (Death Korps Troopers only)
+- Flak armour
+- Frag grenades
+- Lasgun (Death Korps Troopers only)
+- Laspistol (Death Korps Watchmaster only)
+
+**Unit Type**
+
+- Death Korps Trooper: Infantry
+- Death Korps Watchmaster: Infantry (Character)
+
+**Special Rules**
+
+- Regiment (X)
+- Regimental Line (Death Korps of Krieg)
+- Support Squad
+
+**Dedicated Transport**
+
+A unit of no more than 12 models may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The unit may include:** |  |
+| – Up to 10 additional Death Korps Troopers | +6 points each |
+| **For every 10 models, up to two Death Korps Troopers may exchange their lasgun for one of the following (no weapon may be taken more than once per 10 models):** |  |
+| – Flamer, grenade launcher or long-las | +5 points each |
+| – Meltagun | +10 points each |
+| – Plasma gun | +15 points each |
+| **For every 10 models, one Death Korps Trooper with a lasgun may take one of the following (a model may only take one):** |  |
+| – Death Korps medi-pack | +10 points |
+| – Vox-caster | +5 points |
+| **Any Death Korps Watchmaster may exchange his laspistol and chainsword for:** |  |
+| – Boltgun and close combat weapon | +1 point |
+| **Any Death Korps Watchmaster may exchange his chainsword for:** |  |
+| – Power sword | +10 points |
+| **Any Death Korps Watchmaster may exchange his laspistol for one of the following:** |  |
+| – Bolt pistol | +1 point |
+| – Plasma pistol | +10 points |
+
 ## Dedicated Transports
 
 ### Chimera — 55 pts
@@ -1950,10 +2124,10 @@ A model can replace his laspistol with one of the following:
 
 | Item | Cost |
 | --- | --: |
-| Krak grenades | 2 pts |
-| Carapace armour | 5 pts |
-| Melta bombs | 5 pts |
-| Camo gear | 10 pts |
+| Krak grenades | 1 pt per model |
+| Carapace armour | 3 pts per model |
+| Melta bombs | 5 pts per model |
+| Camo gear | 10 pts per model |
 
 ### Heirlooms of Conquest
 
@@ -1966,10 +2140,8 @@ Only one of each heirloom may be taken per army.
 | The Tactical Auto-Reliquary of Tyberius² | 25 pts |
 | The Blade of Conquest³ | 25 pts |
 | The Deathmask of Ollanius | 30 pts |
-| Kurov's Aquila² | 60 pts |
 
 ¹ Lord Commissar only. Replaces bolt pistol. ² Company Commander only. ³ Replaces the character's close combat weapon.
-
 
 ## Wargear
 
@@ -1985,7 +2157,13 @@ A model with a brute shield has a 5+ Invulnerable Save.
 
 *Light-bending cloaks worn by forward sentries.*
 
-A unit wearing camo cloaks gains Stealth and Infiltrate.
+A unit wearing camo cloaks gains Infiltrate and Shrouded (6+). If the unit already has Shrouded (X), it instead improves that value by 1, to a maximum of Shrouded (4+).
+
+### Camo Gear
+
+*Mottled fatigues, netting and foliage that blur a squad into its surroundings.*
+
+A unit in which every model has camo gear has Shrouded (5+).
 
 ### Carapace Armour
 
@@ -2017,7 +2195,6 @@ The squad has camo gear and snare mines.
 
 The squad replaces its flak armour with carapace armour.
 
-
 ### Flak Armour
 
 *Layered padding issued by the trillion to the Imperial Guard.*
@@ -2029,6 +2206,12 @@ Flak armour confers a 5+ Armour Save.
 *Grenades sized for Ogryn hands.*
 
 Frag bombs count as frag grenades†.
+
+### Death Korps Medi-pack
+
+*Krieg medics patch up the wounded and drive them back into the line.*
+
+A unit that includes a model with a Death Korps medi-pack has Feel No Pain (5+).
 
 ### Melta Bombs
 
@@ -2044,39 +2227,39 @@ A unit that includes a model with a medi-pack has Feel No Pain (6+).
 
 ### The Blade of Conquest
 
-*Heirloom of Conquest — replaces the bearer's close combat weapon. Only one of each heirloom may be taken per army.*
+*The greatest Imperial Guard commander ever to bestride the stars, Warmaster Solar Macharius reclaimed a thousand worlds for the Emperor. Upon his death he was enshrined as a saint; the six ornate blades of his subordinate generals laid upon the altar to his glory. Only one of these weapons has been reclaimed to active service. The Blade of Conquest is a beautiful example of bladesmithing, but its true worth lies in the authority it symbolises. Any man who wields this sword can light a righteous fire in the hearts of his men, for they fight in the shadow of Saint Solar himself.*
 
-Rules as given for this heirloom in Codex: Astra Militarum†.
+Heirloom of Conquest — replaces the bearer's close combat weapon. Only one of each heirloom may be taken per army. Its profile is in the Armoury.
 
 ### The Deathmask of Ollanius
 
-*Heirloom of Conquest. Only one of each heirloom may be taken per army.*
+*Ollanius the Pious is the epitome of Imperial sainthood, believed martyred at the hands of Horus himself. In the millennia since his passing, Ollanius' deathmask has been revered as a holy relic; whosoever wears this ancient artefact is granted the determination and endurance of the famous martyr himself. The mask is a terrifying piece of craftsmanship, depicting in obsidian and void-fired bronze the agonised visage of a tortured angel. It is said that, in the presence of traitors, the Deathmask will weep tears of blood.*
 
-Rules as given for this heirloom in Codex: Astra Militarum†.
+Heirloom of Conquest. Only one of each heirloom may be taken per army.
+
+The bearer of the Deathmask of Ollanius gains a 4+ invulnerable save, and has the It Will Not Die and Fear special rules.
 
 ### The Emperor's Benediction
 
-*Heirloom of Conquest — Lord Commissar only; replaces the bolt pistol. Only one of each heirloom may be taken per army.*
+*Wielded by a succession of brutal, uncompromising Commissars, this masterwork bolt pistol is feared by all. Its elementary but bloodthirsty machine spirit has been blamed for a series of unfortunate 'accidents' on the field of battle. In spite of this, the Officio Prefectus view the Emperor's Benediction as an artefact of some distinction – some say that it can taste cowardice even before the reprehensible act has been committed.*
 
-Rules as given for this heirloom in Codex: Astra Militarum†.
-
-### Kurov's Aquila
-
-*Heirloom of Conquest — Company Commander only; Tempestor Prime in this list. Only one of each heirloom may be taken per army.*
-
-Rules as given for this heirloom in Codex: Astra Militarum†.
+Heirloom of Conquest — Lord Commissar only; replaces the bolt pistol. Only one of each heirloom may be taken per army. Its profile is in the Armoury.
 
 ### The Laurels of Command
 
-*Heirloom of Conquest — Company Commander only; Tempestor Prime in this list. Only one of each heirloom may be taken per army.*
+*The Laurels of Command are a callous and controversial means to ensure obedience. Concealed within their peerless artistry is a band of empathic-impulsion circuitry which allows the wearer limited control over the minds of indoctrinated individuals via subliminal suggestion. Under their effects even cowards fight to the last, while orders are executed in perfect synchronisation. However, if the officer wearing the Laurels is slain, the echoes of his death can leave his subordinates reeling in confusion.*
 
-Rules as given for this heirloom in Codex: Astra Militarum†.
+Heirloom of Conquest — Company Commander only; Tempestor Prime in this list. Only one of each heirloom may be taken per army.
+
+Whenever a friendly unit from Codex: Astra Militarum within 6" of the bearer is required to take a Morale check, the bearer of the Laurels may choose whether they pass or fail. However, if the model with the Laurels is removed as a casualty, all friendly units from Codex: Astra Militarum within 6" must take an immediate Pinning test.
 
 ### The Tactical Auto-Reliquary of Tyberius
 
-*Heirloom of Conquest — Company Commander only; Tempestor Prime in this list. Only one of each heirloom may be taken per army.*
+*Built into the gold-chased skull of Lord Commander Lucellin Tyberius himself, this device contains a web of psycho-circuitry containing Tyberius' memory engrams and tactical acumen – and with it, his curmudgeonly and overbearing personality. Borne aloft by its own gravitic motors, the device observes and evaluates an officer's decisions. The moment it considers an order poorly chosen, the skull cuts into the vox and loudly overrides its exasperated owner. In imperious, static-laden tones, the auto-reliquary will countermand the officer's orders and issue a barrage of its own from Tyberius' store of tactical insights.*
 
-Rules as given for this heirloom in Codex: Astra Militarum†.
+Heirloom of Conquest — Company Commander only; Tempestor Prime in this list. Only one of each heirloom may be taken per army.
+
+When rolling Leadership tests for orders issued by an officer with the Tactical Auto-Reliquary, any successful Leadership test that results in a double will count as Inspired Tactics. However, if you roll a double 1 while using the Tactical Auto-Reliquary, you still benefit from Inspired Tactics, though the officer has 'accidentally' shut the device out of the vox network – it may no longer be used this game.
 
 ### Platoon Standard
 
@@ -2126,6 +2309,7 @@ Weapons that already exist in 2.0 use their official profiles: bolt pistol, bolt
 | Bullgryn maul | – | +2 | 4 | Melee, Concussive |
 | Claw of the Desert Tigers | – | x2 | 2 | Melee, Rending (5+) |
 | Close combat weapon | – | User | – | Melee |
+| The Blade of Conquest | – | +1 | 3 | Melee, Master-crafted |
 | Conquest | – | +1 | 2 | Melee, Murderous Strike (5+)† |
 | Envenomed blade | – | User | – | Melee, Poisoned (2+)† |
 | Eviscerator | – | x2 | 2 | Melee, Two-handed, Unwieldy |
@@ -2135,6 +2319,14 @@ Weapons that already exist in 2.0 use their official profiles: bolt pistol, bolt
 | Sentinel chainsaw | – | +1 | 4 | Melee, Shred |
 
 ### Ranged Weapons
+
+#### Heirloom Pistol
+
+*The Emperor's Benediction, a Heirloom of Conquest.*
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| The Emperor's Benediction | 12" | 5 | 4 | Pistol 1, Precision Shot, Master-crafted |
 
 #### Infantry Heavy Weapons
 
@@ -2157,6 +2349,7 @@ Weapons that already exist in 2.0 use their official profiles: bolt pistol, bolt
 | Grenadier gauntlet | 12" | 4 | 6 | Assault 1, Blast (3") |
 | Ripper gun | 12" | 5 | – | Assault 3 |
 | Ripper pistol | 12" | 3 | – | Pistol 1, Poisoned (3+)† |
+| Sergeant's autogun | 24" | 3 | – | Assault 2 |
 | Shotgun | 12" | 3 | – | Assault 2 |
 | Sniper rifle | 36" | 3 | 6 | Heavy 1, Sniper, Rending (6+), Pinning† |
 
@@ -2186,6 +2379,7 @@ All weapons listed here are counted as 'Las' weapons for those rules that affect
 | Hot-shot volley gun | 24" | 4 | 3 | Heavy 4 |
 | Lasgun | 24" | 3 | – | Rapid Fire |
 | Laspistol | 12" | 3 | – | Pistol 1 |
+| Long-las | 36" | 3 | 6 | Heavy 1, Sniper, Rending (6+), Pinning |
 | Twin hot-shot volley gun | 24" | 4 | 3 | Heavy 4, Twin-linked |
 
 #### Tank and Artillery Weapons

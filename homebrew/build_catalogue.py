@@ -734,6 +734,13 @@ class Builder:
                         text = None
                 if text is None:
                     continue
+                heirloom = re.search(r"only one of each heirloom|only once per army|one per army", text, re.I)
+                if heirloom and norm(name) in self.weapons:
+                    # "The Blade of Conquest": a weapon from the armoury, taken once per army
+                    w = self.shared_entries.find(f"selectionEntry[@id='{self.weapons[norm(name)]}']")
+                    add_text_profile(w, WARGEAR_PROFILE, name, text, w.get("id") + "heirloom")
+                    add_constraint(w, "max", 1, w.get("id") + "army", scope="roster", children=True)
+                    continue
                 eid = make_id("biomorph" if biomorphs else "wargear", self.faction, name)
                 e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=name,
                        hidden=False, id=eid, publicationId=self.pub_id)
@@ -1621,6 +1628,19 @@ class Builder:
                 if link.get("targetId") in swap_ids:
                     cid = add_constraint(link, "max", 1, make_id(link.get("id"), "exclusive"))
                     self.unless_selected(link, cid, mid, sorted(set(take_ids)))
+
+    def drop_with(self, me, m, key, drops):
+        """The weapon a two-for-one swap gives up: its own choice (or its entry) needs none while the
+        swap is taken."""
+        for b, combos in drops:
+            ids = sorted({self.option_target(n, key)[0] for n in combos})
+            holders = [g for g in me.iter("selectionEntryGroup") if norm(g.get("name", "")) == norm("exchange " + b)]
+            if not holders:
+                holders = [l for l in me.findall("entryLinks/entryLink") if forms(l.get("name", "")) & forms(b)]
+            for h in holders:
+                for c in h.findall("constraints/constraint"):
+                    if c.get("type") in ("min", "max") and c.get("scope") == "parent":
+                        self.unless_selected(h, c.get("id"), m["id"], ids)
 
     @staticmethod
     def unless_selected(e, cid, scope, ids):
@@ -2595,10 +2615,15 @@ class Builder:
         if only:
             common = [l for l in ds["wargear"] if ": " not in l and l not in [x for x, _ in only]]
             gear = [c for c in common if not self.find_weapon(c)[0] or "grenade" in norm(c)]
-            lines = []
+            own = {}
             for l, m in only:
-                lines.append(f"{only_model(m.group(2))}: " + ", ".join(gear + re.split(r" and ", m.group(1))))
-            others = [n for n in models if not any(only_model(m.group(2)) == n for _, m in only)]
+                own.setdefault(only_model(m.group(2)), []).extend(re.split(r" and ", m.group(1)))
+            if set(own) >= set(models):
+                # "Lasgun (Jungle Fighters only)", "Laspistol (Jungle Fighter Sergeant only)": every model's
+                # own weapons are listed, so the rest ("Close combat weapon") is everyone's
+                gear = common
+            lines = [f"{n}: " + ", ".join(gear + items) for n, items in own.items()]
+            others = [n for n in models if n not in own]
             lines += [f"{n}: " + ", ".join(common) for n in others]
             ds["wargear"] = [l for l in ds["wargear"] if ": " in l] + lines
         # "Every model: pulse carbine, markerlight, ..., unless noted below"
@@ -2816,6 +2841,7 @@ class Builder:
             # In a unit of several models, weapon options are bought per model at unit level,
             # so a unit of 10 can buy any number from 0 to 10 of each.
             self.add_model_wargear(ds, me, m, key, target, unit if multi else None, len(models) > 1)
+            self.drop_with(me, m, key, m.get("drops", []))
             if m.get("note"):
                 add_rule(me, mname, m["note"][0].upper() + m["note"][1:], m["id"])
             add_cost(me, m["cost"])
@@ -2969,9 +2995,15 @@ class Builder:
         subject = None
         determiner = header.split(" ")[0]
         required = None
-        m = re.match(r"For every (\d+) models, one (.+?) may", header)
+        ratio_per, ratio_all = 1, False
+        m = re.match(r"For every (\d+) models, (?:one|up to (\w+)) (.+?)( with an? [\w' -]+?)? may", header)
         if m:
-            ratio, subject = int(m.group(1)), m.group(2)
+            ratio, subject = int(m.group(1)), m.group(3)
+            # "For every 10 models, up to two Shock Troopers may", "one Shock Trooper with a lasgun may":
+            # counted on every model in the unit
+            ratio_all = bool(m.group(2) or m.group(4))
+            ratio_per = NUMBER_WORDS.get(m.group(2) or "one", 1)
+        each_once = bool(re.search(r"no weapon may be taken more than once", header))
         m = m or re.match(r"(Two|Three|Four|Five|Six|\d+) (.+?) must exchange", header)
         if m and subject is None:
             # "Three Guardsmen must exchange their lasgun": exactly that many in the unit
@@ -3075,6 +3107,8 @@ class Builder:
                     target = {"kind": "exchange", "what": what, "qualifier": qualifier,
                               "items": list(items), "fixed": fixed, "required": required, "cap_if": cap_if}
                     models[mname]["groups"].append(target)
+                if ratio_all:
+                    target.update(ratio_per=ratio_per, ratio_all=True, each_once=each_once)
                 if other:
                     models[mname]["exclusive"] = True
                     target.setdefault("pooled", set()).update(n for n, _, _ in items)
@@ -3142,7 +3176,7 @@ class Builder:
                 if other:
                     models[mname]["exclusive"] = True
                 models[mname]["groups"].append({"kind": "take", "one_of": one_of, "items": rest, "with": with_item,
-                                                "ratio": ratio, "title": header, "fixed": fixed,
+                                                "ratio": ratio, "ratio_all": ratio_all, "title": header, "fixed": fixed,
                                                 "group_max": group_max})
 
     def model_without_profile(self, ds, models, what, each, base=None):
@@ -3185,6 +3219,23 @@ class Builder:
         used = set()
         # Exchanges always sit on the model, so a swap replaces the weapon it names; in a unit of
         # several models they are bought by splitting the models, and unit-wide limits still hold.
+        drops = []
+        for g in [g for g in m["groups"] if g["kind"] == "exchange" and " and " in g["what"]]:
+            # "his laspistol and chainsword for a Sergeant's autogun and close combat weapon": a choice
+            # of what replaces the laspistol, which also gives up the chainsword
+            a, b = g["what"].split(" and ", 1)
+            has = lambda x: any(norm(w) == norm(x) or forms(w) & forms(x) for w in wargear)
+            ga = next((x for x in m["groups"] if x is not g and x["kind"] == "exchange" and norm(x["what"]) == norm(a)), None)
+            gb = next((x for x in m["groups"] if x is not g and x["kind"] == "exchange" and norm(x["what"]) == norm(b)), None)
+            if not (has(a) and has(b)) or not (ga or gb):
+                continue  # a swap of its own; only one beside a separate swap of either weapon is merged
+            if ga is None:
+                g["what"] = a
+                ga = g
+            else:
+                ga["items"] += g["items"]
+                m["groups"].remove(g)
+            drops.append((b, [n for n, _, _ in g["items"]]))
         pooled_take = [g for g in m["groups"] if m.get("exclusive") and g["kind"] == "take" and g.get("fixed")]
         for g in pooled_take:
             g["on_model"] = True
@@ -3231,9 +3282,11 @@ class Builder:
                 def ratio_holder(r):
                     if r not in ratio_subs:
                         skey = make_id(gkey, "ratio", str(r))
+                        per = g.get("ratio_per", 1)
                         sub = el(child(ge, "selectionEntryGroups"), "selectionEntryGroup",
-                                 name=f"One in every {r}", hidden=False, id=skey)
-                        self.ratio_limit(sub, r, ds, m)
+                                 name=f"Up to {per} in every {r} models" if per > 1 else f"One in every {r}",
+                                 hidden=False, id=skey)
+                        self.ratio_limit(sub, r, ds, m, per=per, all_models=g.get("ratio_all"))
                         ratio_subs[r] = el(sub, "entryLinks")
                     return ratio_subs[r]
                 if g.get("fixed"):
@@ -3280,6 +3333,8 @@ class Builder:
                             e = self.link(holder, tid, label or self.weapon_names_for(tid, name), gkey, maximum=item_max)
                             add_cost(e, self.cost(cost) if acost is None else acost)
                             self.save_on_model(me, m, tid)
+                            if ratio and g.get("each_once"):
+                                self.ratio_limit(e, ratio, ds, m, all_models=True)
                         continue
                     if g["qualifier"].startswith("all"):
                         e = self.wrapper(holder, name, gkey, name, ds)
@@ -3288,6 +3343,9 @@ class Builder:
                         e = self.link(holder, tid, name, gkey, maximum=item_max)
                         self.save_on_model(me, m, tid)
                     add_cost(e, self.cost(cost))
+                    if ratio and g.get("each_once"):
+                        # "no weapon may be taken more than once per 10 models"
+                        self.ratio_limit(e, ratio, ds, m, all_models=True)
             else:
                 ge = el(groups, "selectionEntryGroup", name="Options", hidden=False, id=gkey)
                 if g["one_of"]:
@@ -3333,9 +3391,10 @@ class Builder:
                     if rm and name.lower().startswith("regeneration"):
                         self.link_rule(e, f"Regeneration ({rm.group(1)})", e.get("id"))
                     if g["ratio"]:
-                        self.ratio_limit(e, g["ratio"], ds, m)
+                        self.ratio_limit(e, g["ratio"], ds, m, all_models=g.get("ratio_all"))
         if pooled_take or m.get("exclusive"):
             self.exclusive_upgrades(ds, me, m, key, groups, pooled_take)
+        m["drops"] = drops
         if per_model_unit is not None:
             self.add_per_model_options(ds, per_model_unit, m, key, several_types)
         seen = set()
@@ -3549,7 +3608,7 @@ class Builder:
                         elif not g["one_of"] and not alts:
                             self.per_model_limit(e, e.get("id"), uid, m["id"])
                         if g["ratio"]:
-                            self.ratio_limit(e, g["ratio"], ds, m)
+                            self.ratio_limit(e, g["ratio"], ds, m, all_models=g.get("ratio_all"))
                         rm = re.search(r"\((\d\+)\)", nm)
                         if rm and nm.lower().startswith("regeneration"):
                             self.link_rule(e, f"Regeneration ({rm.group(1)})", e.get("id"))
@@ -3697,15 +3756,17 @@ class Builder:
         self.upgrades[norm(name)] = eid
         return eid
 
-    def ratio_limit(self, e, every, ds, m):
-        """'One in every three' / '1 in 10 models': max 1 per N models in the unit."""
+    def ratio_limit(self, e, every, ds, m, per=1, all_models=False):
+        """'One in every three' / '1 in 10 models': max 1 per N models in the unit. 'For every 10
+        models, up to two' counts every model in the unit, two per ten."""
         uid = self.units[ds["name"]]
         cid = add_constraint(e, "max", 0, make_id(e.get("id"), "ratio"), scope=uid, children=True)
         mods = child(e, "modifiers")
-        mod = el(mods, "modifier", type="increment", field=cid, value=1)
+        mod = el(mods, "modifier", type="increment", field=cid, value=per)
         reps = el(mod, "repeats")
         el(reps, "repeat", field="selections", scope=uid, value=every, percentValue=False, shared=True,
-           includeChildSelections=True, includeChildForces=False, childId=m["id"], repeats=1, roundUp=False)
+           includeChildSelections=True, includeChildForces=False, childId="model" if all_models else m["id"],
+           repeats=1, roundUp=False)
 
     def add_unit_rule(self, unit, line, uid, ds):
         line = line.replace("†", "")

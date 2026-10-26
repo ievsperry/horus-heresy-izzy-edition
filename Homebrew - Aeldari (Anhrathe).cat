@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="869f-4e24-3fd7-61f9" name="Homebrew - Aeldari (Anhrathe)" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="869f-4e24-3fd7-61f9" name="Homebrew - Aeldari (Anhrathe)" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="a8f3-52ed-030f-1805" name="Anhrathe for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Anhrathe" />
   </publications>
@@ -2755,13 +2755,13 @@
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="4aa4-e9dc-300e-a957" primary="false" name="Infantry Unit Type" />
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Exchange shuriken pistol and Aeldari power sword" hidden="false" id="8323-f286-c899-49f0" defaultSelectionEntryId="8ce9-1c79-0e4d-56c2">
+            <selectionEntryGroup name="Exchange shuriken pistol" hidden="false" id="8323-f286-c899-49f0" defaultSelectionEntryId="8ce9-1c79-0e4d-56c2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be0e-f595-bdb0-229f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a4c-bc1f-963c-a394" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Aeldari power sword" hidden="false" id="8ce9-1c79-0e4d-56c2" type="selectionEntry" targetId="d696-45a5-8d4c-5930">
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="8ce9-1c79-0e4d-56c2" type="selectionEntry" targetId="d2e0-b741-2ba5-1104">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73c4-1b4e-b01d-0b7a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -2830,6 +2830,26 @@
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Exchange Aeldari power sword" hidden="false" id="e6b4-8e4a-16a1-b9be" defaultSelectionEntryId="c58e-63df-f79d-a2f3">
+              <modifiers>
+                <modifier type="set" field="c65f-e774-3172-ce62" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="b98d-9134-3b10-594d" childId="334f-10bd-57f8-7945" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="668d-3e13-c8db-6a4b" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="b98d-9134-3b10-594d" childId="334f-10bd-57f8-7945" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c65f-e774-3172-ce62" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="668d-3e13-c8db-6a4b" percentValue="false" includeChildSelections="true" includeChildForces="false" />
@@ -2862,12 +2882,6 @@
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="91ba-0071-1ee5-34e7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab0a-0016-e5a0-8999" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Shuriken pistol" hidden="false" id="58e7-88f5-c4c6-b5e7" type="selectionEntry" targetId="d2e0-b741-2ba5-1104">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d70d-73bb-fa84-06af" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d2e-730c-2552-a5da" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>

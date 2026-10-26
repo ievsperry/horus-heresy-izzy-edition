@@ -187,6 +187,16 @@ loading. The script prints anything in the doc it could not place.
   in the squad.
 - "Power weapon", when the doc gives it no profile of its own, is the game system's Power Weapon: a
   choice of power axe, power lance, power maul or power sword.
+- "For every 10 models, up to two Shock Troopers may exchange ... (no weapon may be taken more than once
+  per 10 models)" allows two picks, and each weapon once, per 10 models in the unit (the sergeant
+  counts). "For every 10 models, one Shock Trooper with a lasgun may take" also counts every model.
+- A swap of two weapons ("his laspistol and chainsword for a Sergeant's autogun and close combat
+  weapon") beside a swap of one of them is one choice of what replaces the first; taking it gives up
+  the second as well.
+- "Lasgun (Jungle Fighters only)" and "Laspistol (Jungle Fighter Sergeant only)": when every model has
+  its own weapons listed, the unmarked wargear ("Close combat weapon") is everyone's.
+- An heirloom that is also a weapon in the Armoury (The Blade of Conquest) keeps its profile and its
+  text, and may be taken once per army.
 - A wargear entry whose text says "Only one of each heirloom may be taken per army" may be taken once
   per roster (Heirlooms of Conquest).
 - A psychic weapon named "X (Psychic Weapon)" is kept apart from a weapon called X but shown as plain X
