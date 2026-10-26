@@ -2462,7 +2462,7 @@ All weapons listed here are counted as 'Las' weapons for those rules that affect
 | Chem cannon | Template | 1 | 3 | Heavy 1, Poisoned (2+)† |
 | Deathstrike missile | 960" | 10 | 1 | Destroyer 1, Barrage, Massive Blast (7"), One Use |
 | Eradicator nova cannon | 36" | 6 | 4 | Heavy 1, Large Blast (5"), Ignores Cover |
-| Exterminator autocannon | 48" | 7 | 4 | Heavy 4, Twin-linked |
+| Exterminator autocannon | 48" | 7 | 4 | Heavy 6, Rending (5+), Twin-linked |
 | Inferno cannon | Template | 6 | 4 | Heavy 1; the template may be placed with its narrow end up to 12" from the Hellhound† |
 | Malleus rocket launcher | 48" | 6 | 4 | Heavy 4, Blast (3") |
 | Melta cannon | 24" | 8 | 1 | Heavy 1, Large Blast (5"), Armourbane (Ranged) |
