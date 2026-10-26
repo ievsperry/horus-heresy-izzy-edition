@@ -3509,6 +3509,7 @@ Ghazghkull Thraka takes the Primarch slot of the Force Organisation chart, and c
 
 - Bigga iz Betta
 - Bulky (5)
+- Da Biggest is Da Best
 - Dakka! (5+)
 - 'Ere We Go!
 - Feel No Pain (5+)
