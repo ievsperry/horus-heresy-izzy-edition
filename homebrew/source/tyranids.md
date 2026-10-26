@@ -247,7 +247,7 @@ _When the Hive Mind meets a foe that cannot be drowned in numbers, it sends its 
 
 **Limitations**
 
-- A Detachment using this Rite of War must have a Hive Tyrant or The Swarmlord as its Warlord.
+- A Detachment using this Rite of War must have a Hive Tyrant, The Swarmlord or a Norn Emissary as its Warlord.
 - A Detachment using this Rite of War may not include more non-Monstrous Infantry units than Monstrous units.
 - This Rite of War may not be used by an Allied Detachment.
 
@@ -2350,7 +2350,7 @@ Tyranid bio-titans are Infantry with the Monstrous and Gargantuan sub-types. The
 
 Biomorphs are the Tyranid equivalent of wargear: organs, glands and growths bred into a creature for a purpose. A biomorph is taken by every model in the unit and costs its points for each model, unlike weapon options, which are bought model by model.
 
-Every unit may take adrenal glands, toxin sacs, flesh hooks, engrained aggression and wraithful will, and dynamic camouflage, a hardened carapace, walking terror, hulking brute and burrower where its models qualify, at the costs below. A datasheet that lists a biomorph in its options uses its own cost instead. Wings, regeneration, spine banks and Unnatural Resilience may only be taken where a datasheet offers them. Spore Mines, Meiotic Spores, Mucolid Spores, Mycetic Spores, Tyrannocytes and Sporocysts may not take biomorphs.
+Every unit may take adrenal glands, toxin sacs, flesh hooks, engrained aggression and wraithful will, and dynamic camouflage, a hardened carapace, improved strength, improved toughness, killer impulse, walking terror, hulking brute and burrower where its models qualify, at the costs below. A datasheet that lists a biomorph in its options uses its own cost instead. Wings, regeneration, spine banks and Unnatural Resilience may only be taken where a datasheet offers them. Spore Mines, Meiotic Spores, Mucolid Spores, Mycetic Spores, Tyrannocytes and Sporocysts may not take biomorphs.
 
 ### Adrenal Glands
 
@@ -2407,6 +2407,30 @@ _Bulk and muscle grown far past need, so that every blow scatters the foe._
 Only Monstrous or Gargantuan units may take this biomorph. The unit gains the Rampage (3) special rule.
 
 **Cost:** +15 points per Monstrous model; +20 points per Gargantuan model; Monstrous or Gargantuan models only.
+
+### Improved Strength
+
+_Muscle fibres knotted thick as cables, bred to tear through armour and bone alike._
+
+A model with improved strength adds 1 to its Strength, to a best of 8. A model whose Strength is already 8 or more may not take it.
+
+**Cost:** +5 points per model; +15 points per Monstrous model.
+
+### Improved Toughness
+
+_A denser hide and redundant organs that let the creature shrug off wounds that would fell its kin._
+
+A model with improved toughness adds 1 to its Toughness, to a best of 8. A model whose Toughness is already 8 or more may not take it.
+
+**Cost:** +5 points per model; +15 points per Monstrous model.
+
+### Killer Impulse
+
+_Synapses rewired for slaughter, so the creature strikes before its prey can react._
+
+A model with killer impulse adds 1 to its Initiative, to a best of 5. A model whose Initiative is already 5 or more may not take it.
+
+**Cost:** +5 points per model; +15 points per Monstrous model.
 
 ### Regeneration
 

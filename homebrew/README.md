@@ -245,3 +245,6 @@ loading. The script prints anything in the doc it could not place.
 - A rule whose text says "An army may only include a maximum of one model with this special rule per
   1,000 points" (Da Biggest is Da Best) puts every unit with it in a category of that name, which the
   roster may hold one of for each full 1,000 points of its points limit, and at least one.
+- A biomorph whose text says "adds 1 to its Strength, to a best of 8" (Improved Strength, Improved
+  Toughness, Killer Impulse) is offered only to units whose models are all below that best, at the
+  cost scale of the other biomorphs, and shows each model's raised value once taken.
