@@ -144,6 +144,18 @@ Every army is drawn from a regiment with its own way of war. Regiments work like
 
 **Warlord Trait: Grim Resolve.** Friendly Valhallan units within 12" of the Warlord use his Leadership.
 
+### Elysian
+
+*Airborne drop troops who fall on the enemy from Valkyries and grav-chutes, striking deep behind the lines where they are least expected.*
+
+- **Drop Troops:** Infantry units and Sentinels have Deep Strike, including Heavy Weapons Teams.
+- **Iron Discipline:** a unit within 6" of a friendly model with Voice of Command (X) may make a Regroup test even if it is below 25% of its starting strength.
+- **Airborne Platoons:** Infantry Platoon squads and Veterans may take a Valkyrie as a Dedicated Transport instead of a Chimera or Taurox. An Elysian detachment may not include Leman Russ or Rogal Dorn tanks; its armour is Valkyries, Vendettas and Sentinels.
+
+**Advanced Reaction: Rapid Insertion** (Movement phase). Trigger: an enemy unit ends a move within 12" of an objective marker. One Elysian Infantry unit in Reserves that has Deep Strike may immediately arrive by Deep Strike, placed wholly within 12" of that objective marker and more than 1" from enemy models. It scatters as normal and may not declare a charge this turn. This Reaction may be made by a unit in Reserves†.
+
+**Warlord Trait: Drop Commander.** The controlling player may re-roll Reserve rolls for Elysian units, and Elysian units arriving by Deep Strike scatter only D6" instead of 2D6".
+
 ## Warlord Traits
 
 An Astra Militarum Warlord chooses one Warlord Trait: one of the three generic traits below, or the Warlord Trait of his regiment.
@@ -201,6 +213,8 @@ An Astra Militarum army may take one Rite of War, chosen when the army is built.
 **Mechanised Infantry.** Requires an officer with Voice of Command as Warlord. Benefit: any Infantry unit of 10 or fewer models may take a Chimera as a Dedicated Transport, and units embarked on a Chimera may receive orders. Limitation: every Infantry unit must start the game embarked on a transport.
 
 **Siege Artillery.** Requires a Master of Ordnance or Lord Commissar as Warlord. Benefit: Heavy Weapons Squads and Field Ordnance Batteries may be taken as Troops, and artillery and Barrage weapons may re-roll scatter dice. Limitation: no Fast Attack choices.
+
+**Air Cavalry.** Requires an Elysian officer with Voice of Command as Warlord. Benefit: units with Deep Strike may arrive by Deep Strike Assault from the first game turn, and Reserve rolls for them succeed on a 3+. Infantry units of 12 or fewer models may take a Valkyrie or Vendetta as a Dedicated Transport. Limitation: no Lords of War, and no tanks (Chimera, Deathstrike, Hellhound, Hydra, Leman Russ, Manticore, Rogal Dorn Battle Tank, Wyvern).
 
 **Tempestus Drop Force.** Requires a Tempestor Prime as Warlord. Benefit: Tempestus Scions may be taken as Troops and gain the Line sub-type, and may arrive by Deep Strike from the first game turn†. Limitation: no Heavy Support choices other than Valkyries or Vendettas taken as transports, and no Lords of War.
 

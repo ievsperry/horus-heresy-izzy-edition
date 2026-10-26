@@ -2031,9 +2031,116 @@ class Builder:
                             if norm(il.get("name")) == norm(lost):
                                 m = el(child(il, "modifiers"), "modifier", type="set", field="hidden", value="true")
                                 self.rite_condition(m, rid)
+            self.granted_transports(" ".join(rite["effects"]), rid)
             for lim in rite["limits"]:
                 self.rite_warlord(rite, lim)
                 self.rite_limit(rite, lim)
+
+    def chosen(self, parent, cid, kind="atLeast", value=1):
+        """A condition: the force has chosen cid (a Rite of War or a sub-faction)."""
+        el(el(parent, "conditions"), "condition", type=kind, value=value, field="selections", scope="force",
+           childId=cid, shared=True, includeChildSelections=True, includeChildForces=False)
+
+    def subject_units(self, subject):
+        """'Infantry units and Sentinels', 'Infantry Platoon squads and Veterans', 'Infantry and Cavalry
+        units': the datasheets a sub-faction or Rite rule names."""
+        out = []
+        for part in re.split(r",\s*(?:and\s+)?|\s+and\s+", re.sub(r"^(?:any|all)\s+", "", subject.strip(), flags=re.I)):
+            part = re.sub(r"\s+units?$", "", part.strip())
+            kind = part.split()[0] if part else ""
+            if kind in ("Infantry", "Cavalry", "Vehicle") and len(part.split()) == 1:
+                out += [d for d in self.datasheets if any(re.search(r"\b%s\b" % kind, t) for t in d["types"])
+                        and d["slot"] not in ("Lords of War", "Dedicated Transports")]
+            elif norm(part) in {norm(c["name"] + " squads") for c in self.composites}:
+                out += [d for d in self.datasheets if norm(d["slot"] + " squads") == norm(part)]
+            else:
+                out += [d for d in self.datasheets if forms(d["name"]) & forms(part)
+                        or re.search(r"(^| )%s( |$)" % re.escape(norm(part).rstrip("s")), norm(d["name"]))]
+        return [d for i, d in enumerate(out) if d not in out[:i]]
+
+    def granted_transports(self, text, cid):
+        """'Infantry units of 12 or fewer models may take a Valkyrie or Vendetta as a Dedicated Transport':
+        the transports join those units' Dedicated Transport choice while cid (a Rite or a regiment) is chosen."""
+        for m in re.finditer(r"([A-Z][\w ,']+?)(?: of (\d+) or fewer models)? may take an? ([\w' ]+?) as an? Dedicated "
+                             r"Transport", text):
+            subject, size, names = m.group(1), m.group(2), re.split(r",\s*|\s+or\s+", m.group(3))
+            trans = [d for n in names for d in self.datasheets if forms(d["name"]) & forms(n)]
+            for ds in self.subject_units(subject):
+                uid = self.units[ds["name"]]
+                unit = self.shared_entries.find(f"selectionEntry[@id='{uid}']")
+                if unit is None or ds in trans or all("Character" in t for t in ds["types"]):
+                    continue  # a lone character does not take a transport of its own
+                gid = make_id(uid, "dedicated transport")
+                g = unit.find(f"selectionEntryGroups/selectionEntryGroup[@id='{gid}']")
+                if g is None:
+                    g = el(child(unit, "selectionEntryGroups"), "selectionEntryGroup", name="Dedicated Transport",
+                           hidden=False, id=gid)
+                    add_constraint(g, "max", 1, gid + "max")
+                for t in trans:
+                    tid = self.units[t["name"]]
+                    if any(l.get("targetId") == tid for l in g.findall("entryLinks/entryLink")):
+                        continue
+                    lid = make_id(gid, "granted", cid, t["name"])
+                    e = el(child(g, "entryLinks"), "entryLink", import_=True, name=t["name"], hidden=True, id=lid,
+                           type="selectionEntry", targetId=tid)
+                    cmax = add_constraint(e, "max", 1, lid + "max")
+                    self.chosen(el(child(e, "modifiers"), "modifier", type="set", field="hidden", value="false"), cid)
+                    self.chosen(el(child(e, "modifiers"), "modifier", type="set", field=cmax, value=0), cid, "equalTo", 0)
+                    if size:
+                        mod = el(child(e, "modifiers"), "modifier", type="set", field=cmax, value=0)
+                        el(el(mod, "conditions"), "condition", type="greaterThan", value=int(size), field="selections",
+                           scope=uid, childId="model", shared=True, includeChildSelections=True, includeChildForces=False)
+
+    def apply_subfaction_rules(self):
+        """A regiment's rules that the app can show: 'Infantry units and Sentinels have Deep Strike',
+        'Infantry units of 10 or more models have Feel No Pain (6+)', the transports it allows and the
+        units it may not include, each only while that regiment is chosen."""
+        for fleets, _, _ in self.subfaction_sections()[:1]:
+            for sub in fleets["subs"]:
+                fid = make_id("fleet", self.faction, sub["title"])
+                for ln in sub["lines"]:
+                    m = re.match(r"- \*\*.+?:\*\* (.+)", ln)
+                    if not m:
+                        continue
+                    text = m.group(1).replace("†", "")
+                    self.granted_transports(text, fid)
+                    for sentence in re.split(r"(?<=\.)\s+", text):
+                        g = re.match(r"([A-Z][\w ]+?)(?: of (\d+) or (fewer|more) models)? (?:have|gain)(?: the)? (.+?)"
+                                     r"(?: special rules?)?(?:,? including [^.]+)?\.?$", sentence)
+                        if g and "or increase" not in sentence:  # "or increase an existing Furious Charge (X)": text only
+                            for ds in self.subject_units(g.group(1)):
+                                for rname in re.split(r",\s*(?:and\s+)?|\s+and\s+", g.group(4)):
+                                    rname = rname.strip()
+                                    if self.rule_target(re.sub(r"\s*\(.*\)$", "", rname)) and not re.search(r"\bwhile\b", rname):
+                                        self.granted_rule(ds, rname, fid, g.group(2), g.group(3))
+                        b = re.search(r"may not include (.+?)(?: tanks)?[;.]", sentence)
+                        if b:
+                            for ds in self.subject_units(re.sub(r"\s+or\s+", ", ", b.group(1))):
+                                for link in self.root.find("entryLinks"):
+                                    if link.get("targetId") == self.units[ds["name"]]:
+                                        self.chosen(el(child(link, "modifiers"), "modifier", type="set", field="hidden",
+                                                       value="true"), fid)
+
+    def granted_rule(self, ds, rname, fid, size, way):
+        uid = self.units[ds["name"]]
+        unit = self.shared_entries.find(f"selectionEntry[@id='{uid}']")
+        if unit is None or any(norm(il.get("name")) == norm(rname) for il in unit.findall("infoLinks/infoLink")):
+            return
+        n = len(unit.findall("infoLinks/infoLink"))
+        self.link_rule(unit, rname, make_id(uid, "granted", fid))
+        added = unit.findall("infoLinks/infoLink")[n:]
+        for il in added:
+            il.set("hidden", "true")
+            mod = el(child(il, "modifiers"), "modifier", type="set", field="hidden", value="false")
+            if size:
+                conds = el(el(el(mod, "conditionGroups"), "conditionGroup", type="and"), "conditions")
+                el(conds, "condition", type="atLeast", value=1, field="selections", scope="force", childId=fid,
+                   shared=True, includeChildSelections=True, includeChildForces=False)
+                el(conds, "condition", type="atLeast" if way == "more" else "atMost", value=int(size),
+                   field="selections", scope=uid, childId="model", shared=True, includeChildSelections=True,
+                   includeChildForces=False)
+            else:
+                self.chosen(mod, fid)
 
     ALLIED_DETACHMENT = "d4f2-6da5-b6de-06ec"
     SLOT_WORDS = {"lords of war": "Lords of War", "lord of war": "Lords of War", "heavy support": "Heavy Support",
@@ -2046,7 +2153,8 @@ class Builder:
         item = re.sub(r"^(?:any|no)\s+", "", item.strip().rstrip("."))
         listed = re.search(r"\((.+)\)", item)
         if listed:
-            return [d for d in self.datasheets for n in re.split(r",\s*|\s+and\s+", listed.group(1)) if forms(d["name"]) & forms(n)]
+            return [d for d in self.datasheets for n in re.split(r",\s*|\s+and\s+", listed.group(1))
+                    if forms(d["name"]) & forms(n) or norm(d["name"]).startswith(norm(n) + " ")]  # "Leman Russ"
         base, _, other = item.partition(" other than ")
         keep = [d for d in self.datasheets for n in re.split(r",\s*|\s+(?:and|or)\s+", other) if other
                 and (forms(d["name"]) & forms(n) or norm(d["name"]).startswith(norm(n).rstrip("s")))]
@@ -2120,6 +2228,12 @@ class Builder:
                         if link.get("targetId") == self.units[ds["name"]]:
                             mod = el(child(link, "modifiers"), "modifier", type="set", field="hidden", value="true")
                             self.rite_condition(mod, rid)
+                    if ds["slot"] == "Dedicated Transports":
+                        # a barred Chimera is hidden in every unit's Dedicated Transport choice too
+                        for link in self.shared_entries.iter("entryLink"):
+                            if link.get("targetId") == self.units[ds["name"]]:
+                                mod = el(child(link, "modifiers"), "modifier", type="set", field="hidden", value="true")
+                                self.rite_condition(mod, rid)
                 slot = next((v for k, v in self.SLOT_WORDS.items() if norm(item).lstrip("any ").startswith(k)), None)
                 if slot and " other than " not in item and "vehicle" not in norm(item):
                     targets = [("no " + slot, SLOTS[slot][0][0])]  # one error for the whole slot
@@ -4041,6 +4155,7 @@ class Builder:
         self.build_army_entry()
         self.build_entry_links()
         self.apply_rites()
+        self.apply_subfaction_rules()
         self.apply_granted_biomorphs()
         self.root.append(self.shared_entries)
         if len(self.shared_groups):

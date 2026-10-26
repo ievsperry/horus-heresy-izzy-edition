@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -2619,6 +2619,20 @@
         <infoLink name="Move Through Cover" id="f318-1417-81a5-ece0" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule" />
         <infoLink name="Shadow in the Warp" id="31e8-f5b2-5df7-e033" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
         <infoLink name="Synapse Creature" id="b033-6ce2-0440-2a34" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
+        <infoLink name="Outflank" id="caf4-d937-3706-280f" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="421b-0e75-8fe9-86f7" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="737e-8b99-2e3a-395e" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -2885,6 +2899,20 @@
         </infoLink>
         <infoLink name="Shadow in the Warp" id="c9dc-633c-c6e1-2058" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
         <infoLink name="Synapse Creature" id="90e9-f7f8-889a-3c5d" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
+        <infoLink name="Outflank" id="507d-5c7a-e4ff-7d2e" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="fe72-d71e-6eb7-a192" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="3359-04cc-f856-e655" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -3245,6 +3273,20 @@
         </infoLink>
         <infoLink name="Shadow in the Warp" id="dba3-0e48-43f8-01ba" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
         <infoLink name="Synapse Creature" id="a1d9-ab2a-0743-448e" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
+        <infoLink name="Outflank" id="a0e0-3647-7255-d4bb" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="93e0-14d9-4efd-f373" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="d673-077c-e261-6d90" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -3527,6 +3569,20 @@
         <infoLink name="Shadow in the Warp" id="7876-2a76-e855-f7c6" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
         <infoLink name="Synapse Creature" id="189c-4540-1eaf-8d16" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
         <infoLink name="Unnatural Resilience" id="7fb7-0f83-94fe-c4e8" hidden="false" targetId="d943-5665-f8ca-caf2" type="rule" />
+        <infoLink name="Outflank" id="47a1-107b-e683-9ffc" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="8075-63bf-49af-6749" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="206d-2c52-4300-b25c" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -3770,6 +3826,20 @@
         <infoLink name="It Will Not Die (X)" id="e8db-7744-bf24-1b22" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="It Will Not Die (4+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="d990-00ec-fd24-03c9" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="258d-9380-56b9-449f" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Subterranean Assault" id="1647-a120-6bfb-9fbd" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
@@ -4019,6 +4089,20 @@
         <infoLink name="Hive Fleet (X)" id="38fc-c36a-41b5-a4b7" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
         <infoLink name="Shadow in the Warp" id="6dfb-95ea-d7ec-f89d" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
         <infoLink name="Synapse Creature" id="edf9-c195-f744-37e6" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
+        <infoLink name="Outflank" id="bc05-9344-bb6c-6a5e" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="581e-43d6-ff7b-bfae" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="201d-41d9-8d6b-b1d9" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -4232,6 +4316,20 @@
         </infoLink>
         <infoLink name="Shadow in the Warp" id="94a7-ac7a-037f-1f1c" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
         <infoLink name="Synapse Creature" id="1026-3b3b-7fb1-2c8c" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
+        <infoLink name="Outflank" id="ef8a-83b7-494d-ad9a" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="460e-22dd-84d7-f222" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="0897-bee8-25ef-9761" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -4522,6 +4620,20 @@
         </infoLink>
         <infoLink name="Shadow in the Warp" id="8555-ce14-fc14-d9ec" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
         <infoLink name="Synapse Creature" id="6f7c-3059-2055-e990" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
+        <infoLink name="Outflank" id="9511-df22-d248-d9e3" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="0e80-3021-52c9-2f49" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="241a-af28-ed5d-3717" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -4841,6 +4953,20 @@
         <infoLink name="Hive Fleet (X)" id="2e56-d7b9-21f7-1307" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
         <infoLink name="Shadow in the Warp" id="3045-3252-901c-db98" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
         <infoLink name="Synapse Creature" id="6186-5ead-13a4-0607" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
+        <infoLink name="Outflank" id="5630-36f3-21ad-f9b2" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="5b60-b2cd-6968-bacb" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="e910-be20-f7b0-e7e0" primary="false" name="Unit:" />
@@ -5091,6 +5217,20 @@
         <infoLink name="Hive Fleet (X)" id="a024-6da6-2a31-f618" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
         <infoLink name="Shadow in the Warp" id="781d-7826-c624-75bf" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
         <infoLink name="Synapse Creature" id="13a7-6b86-2f1a-6101" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
+        <infoLink name="Outflank" id="21ed-bb5d-e021-52da" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="7aca-08fc-cae1-06b8" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="6a4d-f620-1d54-1e3a" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -5399,6 +5539,20 @@
         <infoLink name="Hive Fleet (X)" id="02e3-4e9d-c472-fe84" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
         <infoLink name="Shadow in the Warp" id="84ad-3d5d-d320-178a" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
         <infoLink name="Synapse Creature" id="1456-1cab-5bb5-7a50" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
+        <infoLink name="Outflank" id="4491-8ded-7226-caff" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="86b3-1ec3-b38e-bca5" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="b64e-fcc3-2d5e-c051" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -5613,6 +5767,20 @@
         <infoLink name="Infiltrate" id="62af-898e-9625-8936" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule" />
         <infoLink name="Move Through Cover" id="905d-59c7-3a4c-c234" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule" />
         <infoLink name="Stealth" id="a443-522d-7cae-47f9" hidden="false" targetId="64a9-cd0f-ff50-56e2" type="rule" />
+        <infoLink name="Outflank" id="58f5-318c-75bd-ba5e" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="e838-197b-f7e6-b88e" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="e9ca-492d-8205-397c" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -5788,6 +5956,20 @@
           </modifiers>
         </infoLink>
         <infoLink name="Move Through Cover" id="06f0-f651-bc5e-d133" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule" />
+        <infoLink name="Outflank" id="f2b0-6ca8-35d4-d811" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="efed-500e-b4c5-4e79" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="3d78-38df-9466-738f" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -6072,6 +6254,20 @@
             <modifier type="set" field="name" value="Instinctive Behaviour (Feed)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Outflank" id="eaf9-816d-a333-d9f8" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="638a-93dc-50ff-48ad" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="9bfb-efed-6ca7-c25f" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -6282,6 +6478,20 @@
         <infoLink name="Instinctive Behaviour (X)" id="40cb-ed18-1363-c835" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Instinctive Behaviour (Hunt)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="f2d0-40b8-a3a9-b965" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="de57-5f6b-1664-8d87" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Subterranean Assault" id="9460-73b1-b508-70f9" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
@@ -6518,6 +6728,20 @@
         </infoLink>
         <infoLink name="Move Through Cover" id="cc70-e8ed-3d8c-3d7b" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule" />
         <infoLink name="Stealth" id="a91a-4e18-825f-32ab" hidden="false" targetId="64a9-cd0f-ff50-56e2" type="rule" />
+        <infoLink name="Outflank" id="eb34-04dc-8b85-df49" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="c633-9b93-b1d7-c9ff" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="a7db-3b87-923b-5b29" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -6719,6 +6943,20 @@
         <infoLink name="Hive Fleet (X)" id="2b37-1182-0ed0-9af4" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
         <infoLink name="Shadow in the Warp" id="5fa9-b38e-c7b2-9c3f" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
         <infoLink name="Synapse Creature" id="98e6-21bb-7678-8d8b" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
+        <infoLink name="Outflank" id="3f43-69d0-5724-bc99" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="9108-5466-3efd-f50b" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="cb9f-4581-8db7-4dd2" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -6897,6 +7135,20 @@
         </infoLink>
         <infoLink name="Shadow in the Warp" id="87fe-a9e7-218d-e98d" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
         <infoLink name="Synapse Creature" id="30ab-3e72-5fd0-ca0a" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
+        <infoLink name="Outflank" id="e542-3936-9d6d-8a9f" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="08eb-7667-360e-9bcd" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="ee51-9652-7d0c-34f3" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -7126,6 +7378,20 @@
           </modifiers>
         </infoLink>
         <infoLink name="Stealth" id="2376-93eb-71c5-c419" hidden="false" targetId="64a9-cd0f-ff50-56e2" type="rule" />
+        <infoLink name="Outflank" id="6999-b89f-3abe-91e5" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="4d21-4811-9567-f2e1" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="c6aa-7c1d-8534-d643" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -7279,6 +7545,20 @@
         <infoLink name="Instinctive Behaviour (X)" id="5cce-75ff-b078-4b22" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Instinctive Behaviour (Feed)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="8f26-bb61-e1b7-270c" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="93f2-4c7b-0f9c-fcb9" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Subterranean Assault" id="8e43-666e-c3c9-f190" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
@@ -7461,6 +7741,20 @@
         <infoLink name="Instinctive Behaviour (X)" id="1887-98ab-dc8c-72f6" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Instinctive Behaviour (Hunt)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="bd03-f1ac-b03e-c4f1" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="c9fc-1912-c01d-2d2a" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Subterranean Assault" id="10a6-455b-995f-ff32" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
@@ -7687,6 +7981,20 @@
             <modifier type="set" field="name" value="Instinctive Behaviour (Feed)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Outflank" id="6b65-0e32-ca90-2bdd" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="f911-c92b-6d8b-91f0" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="909c-abdb-f287-6d2c" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -7860,6 +8168,20 @@
         <infoLink name="Instinctive Behaviour (X)" id="8bc2-04b3-390d-06c0" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Instinctive Behaviour (Feed)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="74fc-9c65-d4da-9427" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="2743-e957-7973-8585" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Subterranean Assault" id="1102-b29b-dbf2-cc5e" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
@@ -8129,6 +8451,20 @@
             <modifier type="set" field="name" value="Instinctive Behaviour (Lurk)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Outflank" id="1e48-642e-fe3a-84bb" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="1cd7-85b8-1a57-db2d" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="8753-ca05-f2dc-bc23" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -8348,6 +8684,20 @@
           </modifiers>
         </infoLink>
         <infoLink name="Move Through Cover" id="f2a0-a2a2-51e5-355a" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule" />
+        <infoLink name="Outflank" id="b016-2356-773a-51dc" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="c832-e892-1bee-0653" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="802b-2963-dc2d-98d8" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -8569,6 +8919,20 @@
         <infoLink name="Invulnerable Save (X)" id="a6c4-99f3-cedc-63d5" hidden="false" targetId="3c21-439d-5d53-6927" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Invulnerable Save (3+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="b8f0-188e-b3a2-3501" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="6578-cb54-f125-d03f" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Subterranean Assault" id="d69e-ded5-380a-a2f9" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
@@ -8938,6 +9302,20 @@
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Outflank" id="d8d2-6f84-1530-082a" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="1873-52b8-fb8e-447c" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="d57c-72ee-e276-1654" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -9181,6 +9559,20 @@
         <infoLink name="Instinctive Behaviour (X)" id="68b1-0323-aa51-1651" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Instinctive Behaviour (Lurk)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="0789-412d-c91b-cf3c" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="39c3-6d82-56cf-c643" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Subterranean Assault" id="a185-779a-273f-937e" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
@@ -9485,6 +9877,20 @@
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Outflank" id="b527-c5b9-e698-2549" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="f692-00ac-0170-db66" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="9a29-30d0-1319-77f3" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -9772,6 +10178,20 @@
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="d11c-e765-976f-3eb9" shared="true" includeChildSelections="true" includeChildForces="false" />
               </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="45bc-4945-d03d-a42a" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="6232-5a2c-0195-b4c4" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -10080,6 +10500,20 @@
           </modifiers>
         </infoLink>
         <infoLink name="Synapse Creature" id="b425-9fa3-d46c-b046" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
+        <infoLink name="Outflank" id="ae63-abbc-5c4e-eed8" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="bdf3-fce8-6eea-1c1e" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="d356-e368-76c4-5e31" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -10644,6 +11078,20 @@
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Outflank" id="c69d-0738-63bf-4d94" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="1c24-3df3-eb3c-5a29" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="aee9-013c-f262-d4b7" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -10849,6 +11297,20 @@
             <modifier type="set" field="name" value="Instinctive Behaviour (Hunt)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Outflank" id="dc88-d40d-9476-a9e5" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="20ec-d5d5-2f4e-6c34" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="7265-da33-368d-603c" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -11030,6 +11492,20 @@
             <modifier type="set" field="name" value="Instinctive Behaviour (Hunt)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Outflank" id="cbac-200c-9931-b55c" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="c31d-6f01-1f8d-56cc" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="aa52-03ed-b5d8-1b38" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -11201,6 +11677,20 @@
         <infoLink name="Deep Strike" id="927f-5ee3-9881-58dc" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
         <infoLink name="Fearless" id="4ed0-a4b2-93ea-a51c" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
         <infoLink name="Hive Fleet (X)" id="37b6-0101-a828-3b92" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
+        <infoLink name="Outflank" id="ad51-a54f-5006-b302" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="dfc0-1afd-d6f9-db2c" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="c3e7-8fcb-ff15-cbbb" primary="false" name="Unit:" />
@@ -11255,6 +11745,20 @@
         <infoLink name="Deep Strike" id="bf88-b0e0-f9bd-b764" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
         <infoLink name="Fearless" id="1ab0-2af8-2e9f-653d" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
         <infoLink name="Hive Fleet (X)" id="3c98-2054-0a16-7f43" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
+        <infoLink name="Outflank" id="142f-adf8-9691-8353" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="2dbe-25d4-1eb9-e2f1" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="623b-e381-35cc-a367" primary="false" name="Unit:" />
@@ -12351,6 +12855,20 @@
           </modifiers>
         </infoLink>
         <infoLink name="Swarm" id="c608-283a-2141-225e" hidden="false" targetId="0bc2-fcb2-dd25-c10a" type="rule" />
+        <infoLink name="Outflank" id="860e-8648-ca17-c328" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="6ef7-ddc4-e862-83e8" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="7eb1-1b78-816b-0da9" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -12545,6 +13063,20 @@
         <infoLink name="Deep Strike" id="3b37-fa4d-77e7-00d2" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
         <infoLink name="Fearless" id="c70d-ac47-6bcb-ba67" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
         <infoLink name="Hive Fleet (X)" id="2224-2b83-af24-3a40" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
+        <infoLink name="Outflank" id="10fa-2f5a-58b6-e0dd" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="9063-cd44-1d65-fa35" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="006d-1d68-c1e6-e490" primary="false" name="Unit:" />
@@ -12599,6 +13131,20 @@
         <infoLink name="Hive Fleet (X)" id="3dde-191f-ef67-350d" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
         <infoLink name="Shadow in the Warp" id="9ccf-9a65-8202-b08a" hidden="false" targetId="685b-e065-f0bf-7d2e" type="rule" />
         <infoLink name="Synapse Creature" id="ab3f-eba7-bee6-982e" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
+        <infoLink name="Outflank" id="fb45-4270-932b-f574" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="e8ac-221a-2717-4657" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="a1e4-80fc-8c4b-1267" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -12880,6 +13426,20 @@
             <modifier type="set" field="name" value="Instinctive Behaviour (Hunt)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Outflank" id="1c1a-6559-fd36-7e7a" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="e6cc-b0c2-4655-5db6" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="0a03-329f-0e9c-463c" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -13090,6 +13650,20 @@
         <infoLink name="Instinctive Behaviour (X)" id="5356-9202-4e02-4fb3" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Instinctive Behaviour (Hunt)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="5970-c861-3bbe-e626" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="848c-985c-402b-e512" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Subterranean Assault" id="0980-4447-5683-0a4e" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
@@ -13303,6 +13877,20 @@
         <infoLink name="Instinctive Behaviour (X)" id="230e-259d-728f-686b" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Instinctive Behaviour (Feed)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="98c0-fd72-7c55-95fd" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="f4e9-2333-7b1d-a4ee" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Subterranean Assault" id="2149-f9b4-497e-5f5e" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
@@ -13711,6 +14299,20 @@
             <modifier type="set" field="name" value="Preferred Enemy (Characters)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Outflank" id="d447-77f7-0f89-4cdf" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="464f-9f0e-fc75-5b5f" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="a936-72c9-4e3c-6655" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -13928,6 +14530,20 @@
             <modifier type="set" field="name" value="Instinctive Behaviour (Hunt)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Outflank" id="250b-960f-1728-b919" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="3650-d0ff-dc4d-b45a" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="78ce-04b2-ece3-be3b" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -14109,6 +14725,20 @@
         <infoLink name="Instinctive Behaviour (X)" id="d1d2-b945-4e6a-8061" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Instinctive Behaviour (Feed)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="6437-64f6-02b9-f2b4" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="d0d0-502a-4be4-5a59" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -14295,6 +14925,20 @@
           </modifiers>
         </infoLink>
         <infoLink name="Unnatural Resilience" id="2cbc-3081-23bf-00b4" hidden="false" targetId="d943-5665-f8ca-caf2" type="rule" />
+        <infoLink name="Outflank" id="034a-08d3-4cc7-f0b9" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="541e-9cac-ae9c-be5f" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="7e01-7984-1be1-04c3" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -14471,6 +15115,20 @@
         <infoLink name="Instinctive Behaviour (X)" id="045f-43f6-13ad-3d8e" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Instinctive Behaviour (Feed)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="0b17-fbfc-1656-23ba" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="a578-45f9-48b8-8043" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Subterranean Assault" id="c23d-454e-10ba-9cab" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
@@ -14684,6 +15342,20 @@
         <infoLink name="Hive Fleet (X)" id="8822-2a44-79a8-9f84" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
         <infoLink name="Infiltrate" id="f598-fa79-3562-48ed" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule" />
         <infoLink name="Synapse Creature" id="7bda-1a02-57e8-e9d4" hidden="false" targetId="b8a2-1f39-60e6-9349" type="rule" />
+        <infoLink name="Outflank" id="e031-6f20-ef82-c19c" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="4fa6-8cfc-961e-bd1f" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="4db6-e244-4b81-4cfd" primary="false" name="Unit:" />
@@ -14775,6 +15447,20 @@
         <infoLink name="Instinctive Behaviour (X)" id="dddc-bb72-6ab2-c8ff" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Instinctive Behaviour (Feed)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="f3fe-7bd8-88f7-4a9f" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="0b7d-5e29-b704-ede7" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Subterranean Assault" id="e4e7-bd14-f281-584f" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
@@ -15079,6 +15765,20 @@
             <modifier type="set" field="name" value="Instinctive Behaviour (Lurk)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Outflank" id="cd80-20b8-39b5-a719" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="7fb5-a43b-c4f0-71c9" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Subterranean Assault" id="39a3-4d78-3bba-9826" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -15260,6 +15960,20 @@
         <infoLink name="Instinctive Behaviour (X)" id="73be-d479-46b2-4cd2" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Instinctive Behaviour (Feed)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="599c-e7f9-7463-44c2" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="970f-a9ac-608d-0ac9" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -15463,6 +16177,20 @@
         <infoLink name="Instinctive Behaviour (X)" id="86cb-02ad-e8a6-5bcf" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Instinctive Behaviour (Hunt)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="ceb4-b8dc-3a91-95b3" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="atMost" value="20" field="selections" scope="39f3-f5cc-8751-9fb5" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Subterranean Assault" id="a3ec-00c3-8a02-99ed" hidden="true" targetId="33d4-d46d-7f47-3ad2" type="rule">

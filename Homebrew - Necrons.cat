@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="6dbb-42c9-758d-cd66" name="Necrons for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Necrons" />
   </publications>
@@ -5333,6 +5333,11 @@
                 <modifier type="set" field="dd61-06ee-c1ee-ea7f" value="0">
                   <conditions>
                     <condition type="greaterThan" value="10" field="selections" scope="ac32-477c-44bc-e224" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0247-ddd5-9aca-d110" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
               </modifiers>

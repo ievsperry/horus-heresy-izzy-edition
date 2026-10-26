@@ -197,6 +197,14 @@ loading. The script prints anything in the doc it could not place.
   its own weapons listed, the unmarked wargear ("Close combat weapon") is everyone's.
 - An heirloom that is also a weapon in the Armoury (The Blade of Conquest) keeps its profile and its
   text, and may be taken once per army.
+- A Rite of War or regiment saying "Infantry units of 12 or fewer models may take a Valkyrie or Vendetta
+  as a Dedicated Transport" adds those transports to the units' Dedicated Transport choice while it is
+  chosen (not to lone characters), and only while the unit fits. A barred transport is hidden inside
+  units too, and a listed ban ("Leman Russ") covers every datasheet whose name starts with it.
+- A regiment's "Infantry units and Sentinels have Deep Strike" or "Infantry units of 10 or more models
+  have Feel No Pain (6+)" shows that rule on those units while the regiment is chosen, and "may not
+  include Leman Russ or Rogal Dorn tanks" hides them. Rules that depend on the moment ("while in area
+  terrain", "or increase an existing") stay as text.
 - A wargear entry whose text says "Only one of each heirloom may be taken per army" may be taken once
   per roster (Heirlooms of Conquest).
 - A psychic weapon named "X (Psychic Weapon)" is kept apart from a weapon called X but shown as plain X
