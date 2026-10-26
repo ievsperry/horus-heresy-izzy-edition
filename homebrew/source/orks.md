@@ -115,6 +115,8 @@ Only units of the same type may Mob Up. Shoota Boyz may Mob Up only with other S
 
 **Mo' Dakka.** When a model with this special rule generates an additional hit from Dakka!, the additional hit gains all of the same special rules and effects possessed by the original attack, including Rending, Breaching, Armourbane, Pinning and similar weapon effects.
 
+**Odd Mob.** The Meks, Painboys and Weirdboys of a warband stand outside the mobs, lending their talents wherever the boss sends them. Only on the longest Waaagh!s would an Odd Boy find himself krumpin' alongside the same lads time and time again. An Odd Mob is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, each Odd Boy in an Odd Mob, together with any grots he has taken, either becomes a separate unit or is assigned to another unit from the same Detachment of the army the Odd Mob was selected as part of. An Odd Boy may only be assigned to a unit composed entirely of models with the Infantry Unit Type and the same Klan (X) special rule as the Odd Boy, and may not join a unit that includes models in Mega Armour.
+
 **Oddboy.** Oddboyz may join Ork units normally, but do not count toward unit size when determining bonuses granted by the Mob Rule special rule.
 
 **Oil Runts.** Oil Runts are filthy little mechanics and lubricant carriers that swarm over weapons, armour plates and damaged machinery attempting crude battlefield repairs while avoiding being stepped on by their larger kin.
@@ -549,7 +551,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | 2.0 slot | Ork units |
 |---|---|
 | HQ | Warboss, Warboss Retinue, Ork Boss, Big Mek, Mek Boss, Mek Boss Buzzgob, Weirdboss, named characters, Beastboss, Beastboss on Squigosaur, Painboss, Deffkilla Wartrike |
-| Elites | Nobz, Nobz on Warbikes, Meganobz, Burna Boyz, Tankbustas, Mek, Painboy, Weirdboy, Bannernob, Nob on Smasha Squig |
+| Elites | Nobz, Nobz on Warbikes, Meganobz, Burna Boyz, Tankbustas, Odd Boys (Meks, Painboys and Weirdboys), Bannernob, Nob on Smasha Squig |
 | Troops | Boyz, Shoota Boyz, 'Ard Boyz, Big Boyz, Gretchin, Beast Snagga Boyz |
 | Fast Attack | Stormboyz, Warbikers, Deffkoptas, Kommandos, Dakkajet, Burna-bommer, Blitza-bommer, Squighog Boyz, Speed Freek buggies, Wazbom Blastajet |
 | Heavy Support | Deff Dread, Killa Kans, Lootas, Flash Gitz, Mek Gunz, Battlewagon, Gunwagon, Bonebreaka, Kill Rig, Hunta Rig, Big Mek Dakkarig |
@@ -1618,62 +1620,86 @@ The unit may take a Battlewagon as a Dedicated Transport. This does not use up a
 
 _A unit with a Waaagh! Banner gains +1 Weapon Skill while the Mega Boss Nob remains alive._
 
-### Mek — 55 pts
+### 0-1 Odd Boys — 55 pts
+
+_The Odd Boys are the Meks, Painboys and Weirdboys of the warband. The unit costs 55 points, plus 55 points for each Odd Boy and the extra for his kind: a Mek +0, a Painboy +20 and a Weirdboy +45 points._
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Mek | 6 | 4 | 3 | 4 | 4 | 2 | 3 | 2 | 6 | 4+ | 32mm |
+| Painboy | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 6 | 5+ | 32mm |
+| Weirdboy | 6 | 3 | 2 | 4 | 4 | 3 | 3 | 2 | 6 | 6+ | 32mm |
 | Grot Oiler | 6 | 2 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
+| Grot Orderly | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
 
-- 1 Mek
+- 1-7 models chosen from up to 3 Meks (+55 points each), up to 3 Painboys (+75 points each) and up to 3 Weirdboys (+100 points each)
 
 **Wargear**
 
-- Shoota
-- Big choppa
-- Stikkbombz
-- 'Eavy armour
+- Mek: Shoota, Big choppa, Stikkbombz, 'Eavy armour
+- Painboy: 'Urty syringe, Choppa, Stikkbombz, Da armour
+- Weirdboy: Weirdboy staff, Stikkbombz, Mork charms
 
 **Unit Type**
 
 - Mek: Infantry (Independent Character)
+- Painboy: Infantry (Character, Independent Character)
+- Weirdboy: Infantry (Character, Independent Character, Psyker)
 - Grot Oiler: Infantry
+- Grot Orderly: Infantry
 
 **Special Rules**
 
-- Mek-Smasha (5+)
-- Bigga iz Betta
-- Bulky (2)
-- Dakka! (6+)
+- Odd Mob
+- Bigga iz Betta (Mek and Painboy only)
+- Bulky (2) (Mek and Painboy only)
+- Dakka! (6+) (Mek only)
+- Dok's Tools: Friendly Ork Infantry units joined by a Painboy gain Feel No Pain (5+). If the unit already possesses Feel No Pain, improve that roll by +1 to a maximum of Feel No Pain (4+).
 - 'Ere We Go!
 - Klan (X)
-- Might iz Right!
+- Mek-Smasha (5+) (Mek only)
+- Might iz Right! (Mek and Painboy only)
 - Mob Rule
 - Oddboy
+- Perils of the Waaagh! (Weirdboy only)
 - Waaagh!
+- Waaagh! Energy (Weirdboy only)
+- Psychic discipline: Power of da Waaagh! (Weirdboy only)
+- Weirdboy Discipline
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Mek may exchange his Shoota for one of the following:** |  |
+| **Any Mek may exchange his Shoota for one of the following:** |  |
 | – Big shoota | +10 points |
 | – Kombi-Shoota | +5 points |
 | – Kombi-Rokkit | +10 points |
 | – Kombi-Skorcha | +10 points |
 | – Kustom mega-blasta | +15 points |
-| **The Mek may exchange his Big Choppa for one of the following:** |  |
+| **Any Mek may exchange his Big Choppa for one of the following:** |  |
 | – Power klaw | +15 points |
 | – Killsaw | +10 points |
-| **The Mek may take any of the following:** |  |
+| **Any Mek may take any of the following:** |  |
 | – Attack squig | +15 points |
 | – Gitfinda | +15 points |
 | – Up to 2 grot oilers | +5 points each |
 | – Kustom force field | +25 points |
 | – Shokk attack gun | +35 points |
 | – Tellyporta | +25 points |
+| **Any Painboy may take any of the following:** |  |
+| – Big choppa | +5 points |
+| – 'Uge choppa | +10 points |
+| – Power klaw | +20 points |
+| – Up to 2 grot orderlies | +10 points each |
+| – 'Eavy armour (4+) | +10 points |
+| – Attack squig | +10 points |
+| **Any Weirdboy may take any of the following:** |  |
+| – Attack squig | +10 points |
+| – 'Eavy armour (4+) | +10 points |
+| – Warphead | +20 points |
 
 ### Nob on Smasha Squig — 75 pts
 
@@ -1829,52 +1855,6 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 | – Waaagh! banner | +15 points |
 | **One Nob on Warbike may be upgraded to a Painboy on Warbike (dok's tools and 'urty syringe; the unit has Feel No Pain (6+))** | +30 points |
 
-### Painboy — 75 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Painboy | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 6 | 5+ | 32mm |
-| Grot Orderly | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
-
-**Unit Composition**
-
-- 1 Painboy
-
-**Wargear**
-
-- 'Urty syringe
-- Choppa
-- Stikkbombz
-- Da armour
-
-**Unit Type**
-
-- Painboy: Infantry (Character, Independent Character)
-- Grot Orderly: Infantry
-
-**Special Rules**
-
-- Bigga iz Betta
-- Bulky (2)
-- Dok's Tools: Friendly Ork Infantry units joined by a Painboy gain Feel No Pain (5+). If the unit already possesses Feel No Pain, improve that roll by +1 to a maximum of Feel No Pain (4+).
-- 'Ere We Go!
-- Might iz Right!
-- Mob Rule
-- Oddboy
-- Waaagh!
-
-**Options**
-
-| Option | Cost |
-|---|---|
-| **The Painboy may take any of the following:** |  |
-| – Big choppa | +5 points |
-| – 'Uge choppa | +10 points |
-| – Power klaw | +20 points |
-| – Up to 2 grot orderlies | +10 points each |
-| – 'Eavy armour (4+) | +10 points |
-| – Attack squig | +10 points |
-
 ### Tankbustas — 90 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -1920,46 +1900,6 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 | – Power klaw | +25 points |
 | **The Boss Nob may take:** |  |
 | – Bosspole | +5 points |
-
-### Weirdboy — 100 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Weirdboy | 6 | 3 | 2 | 4 | 4 | 3 | 3 | 2 | 6 | 6+ | 32mm |
-
-**Unit Composition**
-
-- 1 Weirdboy
-
-**Wargear**
-
-- Weirdboy staff
-- Stikkbombz
-- Mork charms
-
-**Unit Type**
-
-- Weirdboy: Infantry (Character, Independent Character, Psyker)
-
-**Special Rules**
-
-- 'Ere We Go!
-- Mob Rule
-- Oddboy
-- Perils of the Waaagh!
-- Waaagh!
-- Waaagh! Energy
-- Psychic discipline: Power of da Waaagh!
-- Weirdboy Discipline
-
-**Options**
-
-| Option | Cost |
-|---|---|
-| **The Weirdboy may take:** |  |
-| – Attack squig | +10 points |
-| – 'Eavy armour (4+) | +10 points |
-| – Warphead | +20 points |
 
 ## Troops
 
