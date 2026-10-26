@@ -1903,7 +1903,7 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 
 ## Troops
 
-### 'Ard Boyz — 110 pts
+### 'Ard Boyz — 95 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -1912,8 +1912,7 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 
 **Unit Composition**
 
-- 9 'Ard Boyz
-- 1 'Ard Nob
+- 10 'Ard Boyz
 
 **Wargear**
 
@@ -1950,6 +1949,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 
 | Option | Cost |
 |---|---|
+| **One 'Ard Boy may be upgraded to a 'Ard Nob** | +10 points |
 | **The mob may include:** |  |
 | – Up to 20 additional 'ard boyz | +9 points each |
 | **For every 10 'Ard Boyz in the mob, one 'Ard Boy may exchange his Shoota for one of the following:** |  |
@@ -1971,6 +1971,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 | – Waaagh! banner | +35 points |
 | **The entire mob may take:** |  |
 | – 'Eavy armour (4+) | +2 points each |
+| – All Da Kit (choppa, shoota and slugga) | +1 point each |
 
 ### Beast Snagga Boyz — 95 pts
 
@@ -1981,8 +1982,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 
 **Unit Composition**
 
-- 9 Beast Snagga Boyz
-- 1 Beast Snagga Nob
+- 10 Beast Snagga Boyz
 
 **Wargear**
 
@@ -2011,6 +2011,7 @@ The unit may ride a Kill Rig or Hunta Rig as a Dedicated Transport. This does no
 
 | Option | Cost |
 |---|---|
+| **One Beast Snagga Boy may be upgraded to a Beast Snagga Nob** | +10 points |
 | **The Beast Snagga Boyz may take:** |  |
 | – Up to 10 additional Beast Snagga Boyz | +9 points each |
 | **For every 10 models, one Beast Snagga Boy may exchange his slugga for:** |  |
@@ -2080,8 +2081,7 @@ A unit of no more than 12 models may take a Trukk as a Dedicated Transport. Any 
 
 **Unit Composition**
 
-- 9 Boyz
-- 1 Nob
+- 10 Boyz
 
 **Wargear**
 
@@ -2116,6 +2116,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 
 | Option | Cost |
 |---|---|
+| **One Boy may be upgraded to a Nob** | +10 points |
 | **The mob may include:** |  |
 | – Up to 20 additional boyz | +7 points each |
 | **For every 10 Boyz in the mob, one Boy may exchange his Slugga and Choppa for one of the following:** |  |
@@ -2132,6 +2133,9 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 | **The entire mob may take one of the following:** |  |
 | – Da armour (5+) | +1 point each |
 | – 'Eavy armour (4+) | +2 points each |
+| **The entire mob may take:** |  |
+| – All Da Kit (choppa, shoota and slugga) | +1 point each |
+
 
 ### Gretchin — 45 pts
 
@@ -2195,8 +2199,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 
 **Unit Composition**
 
-- 9 Shoota Boyz
-- 1 Nob
+- 10 Shoota Boyz
 
 **Wargear**
 
@@ -2229,6 +2232,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 
 | Option | Cost |
 |---|---|
+| **One Shoota Boy may be upgraded to a Nob** | +10 points |
 | **The mob may include:** |  |
 | – Up to 20 additional shoota boyz | +7 points each |
 | **For every 10 Shoota Boyz in the mob, one Shoota Boy may exchange his Shoota for one of the following:** |  |
@@ -2245,8 +2249,11 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 | **The entire mob may take one of the following:** |  |
 | – Da armour (5+) | +1 point each |
 | – 'Eavy armour (4+) | +2 points each |
+| **The entire mob may take:** |  |
+| – All Da Kit (choppa, shoota and slugga) | +1 point each |
 
 ## Dedicated Transports
+
 
 ### 'Chinork' Warkopta — 95 pts
 

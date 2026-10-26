@@ -238,3 +238,7 @@ loading. The script prints anything in the doc it could not place.
 - Instinctive Behaviour, Synapse and other in-game rules are text only.
 - Lords of War use the game system's existing 25% points category; nothing
   Tyranid-specific is added to it.
+- An option naming a set of weapons, "All Da Kit (choppa, shoota and slugga)", is one upgrade called
+  All Da Kit that carries each weapon's profile. A Rite of War that raises a unit's size ("Boyz units
+  may contain up to 40 models") still counts a model upgraded from one of its members ("One Boy may be
+  upgraded to a Nob") toward that size.
