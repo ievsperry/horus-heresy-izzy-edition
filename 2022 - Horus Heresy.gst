@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="205" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="206" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -1478,6 +1478,11 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
     </categoryEntry>
     <categoryEntry name="Shattered Legion Primary Detachment" id="c248-15b0-d8ed-8990" hidden="false"/>
     <categoryEntry id="3c8e-5a1d-9b47-e2f0" name="Xenos Army" hidden="false"/>
+    <categoryEntry id="0329-b2d2-f2b6-e650" name="Extrinsica Melee Weapon" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7c37-ca6f-2ca2-81f6" type="max"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
@@ -3324,10 +3329,10 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           <profiles>
             <profile id="1c1b-ef61-5306-5dcf" name="Fellblade Accelerator Autocannon - HE Shell" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">100&quot;</characteristic>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">100"</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;)</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7"), Pinning, Rending (6+)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3346,10 +3351,10 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           <profiles>
             <profile id="903d-8174-33b5-3c85" name="Fellblade Accelerator Autocannon - AE Shell" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">100&quot;</characteristic>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">100"</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Armourbane (Ranged), Exoshock (4+), Blast (3&quot;)</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Armourbane (Ranged), Exoshock (4+), Blast (3"), Brutal (3)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3568,10 +3573,10 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <profiles>
         <profile id="f5a9-6aec-67dc-68a8" name="Demolisher Cannon" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Blast (3&quot;), Sunder, Rending (6+), Brutal (3)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Blast (3"), Sunder, Rending (5+), Brutal (3), Wrecker</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3597,10 +3602,10 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <profiles>
         <profile id="e14f-7df5-75a8-3eb4" name="Morbus Bombard" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Pinning, Rending (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5"), Pinning, Rending (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3622,10 +3627,10 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <profiles>
         <profile id="91ef-b4db-c05f-ffc0" name="Dreadhammer Siege Cannon" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Rending (4+), Sunder, Brutal (4)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5"), Sunder, Rending (4+), Brutal (4), Wrecker</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4156,10 +4161,10 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <profiles>
         <profile id="9703-1b92-8083-0b29" name="Grav-Flux Bombard" publicationId="a716-c1c4-7b26-8424" page="131" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1,  Large Blast (5&quot;), †Graviton Collapse, Torsion Crusher, Ignores Cover, Concussive (1)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5"), †Graviton Collapse, Torsion Crusher, Ignores Cover, Concussive (1), Haywire</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4916,10 +4921,10 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <profiles>
         <profile id="99f3-d4aa-bfa7-b51f" name="Aiolos Missile Launcher" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Pinning, Guided Fire</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Pinning, Guided Fire, Auto-Servo Tracking</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5419,10 +5424,10 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <profiles>
         <profile id="f429-67a3-5a34-0d16" name="Volkite Macro-Saker" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">45"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Deflagrate</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Deflagrate, Pinning</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5437,10 +5442,10 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <profiles>
         <profile id="024e-ffa5-f6b5-7f54" name="Volkite Carronade" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">45"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Heavy Beam, Deflagrate</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Heavy Beam, Deflagrate, Rending (5+), Pinning, Wrecker</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5574,9 +5579,9 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
         <profile id="4842-51db-06f9-fab0" name="Lascutter (Melee)" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Cumbersome</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Makeshift Weapon</characteristic>
           </characteristics>
         </profile>
         <profile id="49ab-6f93-8196-2742" name="Lascutter (Ranged)" publicationId="a716-c1c4-7b26-8424" page="135" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -5629,6 +5634,14 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
         <profile id="102e-3487-6e68-51e2" name="Krak Grenades" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player may choose to have a model with krak grenades that is Engaged or otherwise in base contact during the Assault phase with a Building or Fortification, or a model with the Vehicle, Dreadnought or Automata Unit Type, inflict one automatic Str 6, AP 3 Hit on the target in Initiative Step 1 instead of attacking normally. Any model in a unit that is chosen to inflict Hits using krak grenades may not otherwise attack or make use of any other special rule or item of Wargear that inflicts Hits or Wounds on a model in the same Assault phase (but may participate in Sweeping Advances as normal).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b587-dd1d-88c1-0b10" name="Krak Grenades (Melee)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Detonation, Unwieldy, Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6486,7 +6499,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (3)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6669,7 +6682,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Two-handed</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Two-handed, Rupture (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7230,10 +7243,10 @@ Four single Blast Shields</characteristic>
       <profiles>
         <profile id="4e04-6964-0774-0e3f" name="Spicula Rocket System" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Rending (6+), Limited Ammunition</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7"), Rending (5+), Limited Ammunition, Pinning, Shell Shock (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7681,10 +7694,10 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
       <profiles>
         <profile id="ff92-564d-36b8-a808" name="Belicosa Volcano Cannon" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">120&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">120"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">14</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Blast (10&quot;), Sunder</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Blast (10"), Ignores Cover</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7729,7 +7742,7 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Concussive (2)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Concussive (2), Brutal (2)</characteristic>
           </characteristics>
         </profile>
         <profile id="1b9d-98a0-4f71-a759" name="Graviton Ram (Ranged)" publicationId="bde1-6db1-163b-3b76" page="116" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -7827,10 +7840,10 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
       <profiles>
         <profile id="09b8-b387-4c58-d09d" name="Laser Blaster" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">96&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">96"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Large Blast (5&quot;)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 2, Large Blast (5"), Twin-linked, Ignores Cover</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7972,10 +7985,10 @@ A. No.</description>
       <profiles>
         <profile id="4dc5-1b5b-a916-9adb" name="Plasma Blastgun" publicationId="bde1-6db1-163b-3b76" page="118" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Breaching (4+), Reactor Overload</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7"), Rending (4+), Reactor Overload, Plasma Burn</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7999,7 +8012,7 @@ A. No.</description>
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+)</characteristic>
           </characteristics>
         </profile>
@@ -8022,7 +8035,7 @@ A. No.</description>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8100,10 +8113,10 @@ A. No.</description>
       <profiles>
         <profile id="5adb-5031-bfdf-fa27" name="Vulcan Mega-Bolter" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 15, Pinning, Shell Shock (1)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 15, Pinning, Shell Shock (1), Reactor Overload</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8144,10 +8157,10 @@ A. No.</description>
       <profiles>
         <profile id="ab97-57d4-692d-6b96" name="Baneblade Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Rending (6+), Pinning</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7"), Pinning, Rending (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8172,10 +8185,10 @@ A. No.</description>
       <profiles>
         <profile id="4034-3296-9cf1-6843" name="Tremor Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Pinning, Shell Shock (2)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7"), Pinning, Shell Shock (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8200,10 +8213,10 @@ A. No.</description>
       <profiles>
         <profile id="1ad7-8c18-9aa1-5b66" name="Hellhammer cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Sunder, Rending (5+), Brutal (3)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5"), Sunder, Rending (4+), Brutal (3), Wrecker</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8233,10 +8246,10 @@ A. No.</description>
       <profiles>
         <profile id="27dd-e9b5-2f18-b4fa" name="Medusa Mortar" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Pinning, Rending (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5"), Pinning, Rending (5+), Brutal (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8262,10 +8275,10 @@ A. No.</description>
       <profiles>
         <profile id="e374-d732-4d08-5952" name="Earthshaker cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">240&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12" - 240"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Shred, Pinning</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5"), Shred, Pinning, Breaching (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8312,10 +8325,10 @@ A. No.</description>
       <profiles>
         <profile id="1f0e-4b8b-32cf-29fe" name="Talonis HE missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;)</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5"), Ignores Cover, Pinning, Shell Shock (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8596,10 +8609,10 @@ A. No.</description>
       <profiles>
         <profile id="7d29-66bb-2c6c-bd1f" name="Battle Cannon" publicationId="d0df-7166-5cd3-89fd" page="29" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Pinning</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5"), Rupture (4+), Breaching (6+), Pinning</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9540,10 +9553,10 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <profiles>
         <profile id="e7e2-d04f-4361-8e89" name="Adrathic Destructor" publicationId="15a4-fc68-502d-48a9" page="145" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Instant Death, Armourbane (Ranged), Gets Hot</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Instant Death, Armourbane (Ranged), Breaching (4+), Gets Hot, Ejector Blowout</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9795,10 +9808,10 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <profiles>
         <profile id="9edf-5b4f-f269-c98e" name="Grenade launcher - Krak" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Rupture (6+)</characteristic>
           </characteristics>
         </profile>
         <profile id="7223-39b1-9ee8-bbc0" name="Grenade launcher - Frag" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -9869,10 +9882,10 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <profiles>
         <profile id="c65a-2132-c8cd-1696" name="Stormhammer Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordinance 1, Massive Blast (7&quot;)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7"), Shred, Rending (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10170,6 +10183,14 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 5</characteristic>
           </characteristics>
         </profile>
+        <profile id="4419-9d96-530a-68dd" name="Ripper Gun (Melee)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reaping Blow (1), Two-handed</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -10249,10 +10270,10 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <profiles>
         <profile id="f07f-46e5-bb68-ff74" name="Thunderblast Cannon" publicationId="48c2-d023-0069-001a" page="38" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Barrage, Pinning</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Barrage, Pinning, Rupture (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10456,7 +10477,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Ungainly, Lance, Sudden Strike (2), Two-handed, One Use</characteristic>
           </characteristics>
         </profile>
@@ -10783,10 +10804,10 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <profiles>
         <profile id="f9d2-536a-bffa-513e" name="Macharius Vanquisher Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder, Brutal (2), Twin-linked</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder, Brutal (2), Twin-linked, Exoshock (4+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10807,10 +10828,10 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <profiles>
         <profile id="f431-9fbb-df6b-b8cc" name="Macharius Rotary Bolt Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 10, Breaching (6+), Pinning, Twin-linked</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 15, Pinning, Shell Shock (1), Twin-linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11118,6 +11139,938 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3dd2-ef61-7c2a-0b1e" name="Adrathic Devastator" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6edf-4ed0-f9ff-74b1" name="Adrathic Devastator" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Instant Death, Armourbane (Ranged), Breaching (4+), Gets Hot, Ejector Blowout</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="bd32-1975-0b66-9aa6" name="Adrasite Spear" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c1a4-c4f8-3cfa-5408" name="Adrasite Spear - Shooting" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Instant Death, Armourbane (Ranged), Breaching (4+), Gets Hot, Ejector Blowout</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="e921-9d1f-bc78-71b7" name="Avenger Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="55d9-a1fc-c6bc-17a9" name="Avenger Gatling Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 12, Rending (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="1f87-c3b8-cc31-e58d" name="Exterminator Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4f76-6249-e86b-f111" name="Exterminator Autocannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Rending (5+), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="489a-a670-0af7-4672" name="Macharius Battle Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4c6d-7f54-0f2d-7369" name="Macharius Battle Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Large Blast (5"), Rupture (4+), Breaching (6+), Pinning, Shell Shock (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="d255-d412-886d-60fe" name="Rapid-Fire Battle Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e47b-6643-b191-caab" name="Rapid-Fire Battle Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Large Blast (5"), Breaching (6+), Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="f60b-c49e-5463-94d0" name="Kratos Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2428-d2ce-bd0b-fef5" name="Kratos Battlecannon - HE Shells" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5"), Rupture (4+), Breaching (6+), Pinning</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7772-f4ee-e908-d5f0" name="Kratos Battlecannon - AP Shells" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder, Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="742f-0c17-29f4-83c8" name="Kratos Battlecannon - Flashburn Shells" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Armourbane (Ranged), Wrecker, Gets Hot</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="5ea0-fb68-1ddd-219c" name="Phaeton Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d9cf-48d0-5ee6-20fa" name="Phaeton Autocannon - AP Rounds" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">64"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Sunder, Rending (6+)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2efa-0ee9-e923-d798" name="Phaeton Autocannon - Ignis Rounds" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">64"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Ignores Cover, Rending (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="2b50-cf49-87fb-17c9" name="Despoiler Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9c9c-2f6e-2037-41fc" name="Despoiler Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Blast (3"), Sunder, Rending (5+), Brutal (3), Wrecker</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="0d83-9a43-7dac-aaf3" name="Earthshaker Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1f6a-c5ac-c157-c1ea" name="Earthshaker Battery" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12" - 240"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Barrage, Large Blast (5"), Shred, Pinning, Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="1a68-7fe6-d9cf-68b8" name="Mars-Colossus Bombard" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1efa-adc6-e3fc-f8aa" name="Mars-Colossus Bombard" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12" - 72"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5"), Pinning, Shell Shock (1), Ignores Cover, Wrecker</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="a25e-6ac3-7d06-4751" name="Mori Quake Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="56f2-f0a9-5a9c-bce7" name="Mori Quake Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24" - 360"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10/8/6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Mega-Blast, Barrage, Breaching (4+), Seismic Shock, Concussive (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="5d6e-495f-d1da-5b30" name="Nemesis Quake Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5690-641f-698b-a340" name="Nemesis Quake Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24" - 480"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10/8/6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Mega-Blast, Barrage, Breaching (4+), Seismic Shock, Concussive (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="767d-0106-2f9d-a65b" name="Praetor Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="53b3-12af-12e5-3c5b" name="Praetor Launcher - Firestorm Munitions" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Barrage, Massive Blast (7"), Pinning, Shell Shock (2), Rending (5+), Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="221f-b9af-df08-62e9" name="Praetor Launcher - Foehammer Munitions" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12" - 72"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 12, Guided Fire, Breaching (5+), Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="198c-b59a-3191-dd03" name="Adrastus Bolt Caliver" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="162f-e77d-17b6-dee3" name="Adrastus Bolt Caliver - Bolt Volley" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 4, Shred, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="4e1d-4b1c-d382-04c6" name="Mortifier Bolter" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="333c-23ae-a1ac-87f1" name="Mortifier Bolter" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Harrower, Breaching (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="eed0-04b8-0c04-e82a" name="Grenade Launcher (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f778-7422-6a23-dec7" name="Grenade Launcher (Secondary) - Krak" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Rupture (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="06ba-6c36-fb51-cd35" name="Conversion Destructor" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="74df-be29-d867-867a" name='Conversion Destructor - 0"-18"' hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">0" - 18"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5"), Blind</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4bcd-f9b7-2c71-aa9b" name='Conversion Destructor - 18"-42"' hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18" - 42"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5"), Blind, Sunder</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="68c1-20ee-0b18-1cd4" name='Conversion Destructor - 42"-80"' hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">42" - 80"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5"), Blind, Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="9f9a-fa92-b0fc-9061" name="Infernus Firepike" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ea82-64a9-c5f7-4ed4" name="Infernus Firepike" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Torrent (9")</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="1004-df91-7d14-6158" name="Vratine Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d3a2-3de7-a028-d090" name="Vratine Grenade Launcher - Krak" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Rupture (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="7eb3-9499-1555-f7b8" name="Hermes Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="12cf-e81a-e6c7-c0d9" name="Hermes Grenade Launcher - Krak" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Rupture (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="5e81-603d-54cd-0b56" name="Arachnus Storm Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1e94-9321-025c-8187" name="Arachnus Storm Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Lance, Exoshock (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="4112-5cbe-71fd-ece4" name="Gravis Heavy Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="72fe-51e5-ac79-431e" name="Gravis Heavy Lascannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="2186-e8c2-3ef9-37a5" name="Nemesis Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5656-bf17-98b7-7218" name="Nemesis Volcano Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36" - 180"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">14</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Blast (10"), Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="9627-0458-7888-dc4b" name="Proteus Laser Destroyer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="36a3-6f79-ac64-fea7" name="Proteus Laser Destroyer" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Twin-linked, Exoshock (5+), Sunder, Gets Hot</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="c730-cd5e-53c5-46b8" name="Magna-Melta Array" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6ad2-f315-9709-8f45" name="Magna-Melta Array" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Armourbane (Melta), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="4f9b-853b-d097-2074" name="Pyrithite Spear" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d7e9-87aa-bcbb-3be2" name="Pyrithite Spear - Shooting" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="400d-e5d1-9ffb-c94d" name="Aethon Missile Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5ba3-0ec1-4241-7a81" name="Aethon Missile Battery" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">30"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Large Blast (5"), Barrage, Twin-linked, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="b4cc-1670-6c87-2b7f" name="Terrebrax Rocket Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ae0f-868d-bce4-2d51" name="Terrebrax Rocket Battery" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 12, Guided Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="3fb7-caf7-0ac3-5235" name="Hellfire Plasma Missiles" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="58ea-5004-12a6-8e65" name="Hellfire Plasma Missiles" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Breaching (4+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="5c83-a5f6-cdc4-c937" name="Volkite Chieorovile" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4615-6355-a081-1afd" name="Volkite Chieorovile - Heat-Blast" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">45"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 10, Deflagrate, Breaching (5+), Pinning</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a822-6181-c7db-6047" name="Volkite Chieorovile - Concentrated Beam" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">30"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Heavy Beam, Deflagrate, Breaching (5+), Pinning, Wrecker</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="f557-2ed7-461b-c34d" name="Volkite Veuglaire" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f337-8b84-a227-986e" name="Volkite Veuglaire" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">30"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Deflagrate</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="94d5-29b2-31e7-a323" name="Animus Blast" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0082-49c1-3d80-14c0" name="Animus Blast" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Rending (6+), Psy-Shock, Soul-Death</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="5d8f-0cdd-b812-d4e0" name="Exitus Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5f71-583d-dfda-8190" name="Exitus Rifle" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">100"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Murderous Strike (5+), Rending (6+), Sniper, Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="0757-70d0-b58d-97e1" name="Lidless Stare (Psychic Weapon)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b7de-4681-5e08-1104" name="Lidless Stare (Psychic Weapon)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Pinning, Force, Instant Death</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="cc2e-5c46-dd70-9e3f" name="Reaper Chainblade" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f199-961a-326c-760e" name="Reaper Chainblade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Sunder, Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="d942-0aa9-910e-a1b0" name="Reaper Chainfist" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4fb5-37a3-ee97-9558" name="Reaper Chainfist" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Armourbane (Melee), Brutal (3), Exoshock (3+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="aa8a-939d-eb4f-3a10" name="Reaper Chainsword" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9cee-525f-7458-9e5c" name="Reaper Chainsword" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Sunder, Brutal (3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="32c2-e284-0c50-c6d2" name="Arlatax Power Claw" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="cd91-0e78-5200-d387" name="Arlatax Power Claw" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="ddab-c7dd-984c-9fa8" name="Albian Power Gladius" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9cdb-c3a0-fc83-5d3e" name="Albian Power Gladius" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-crafted, Breaching (5+), Murderous Strike (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="d929-e37b-2362-fc35" name="Darkstar Falling" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="657d-ba6b-7cdf-267e" name="Darkstar Falling" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Master-crafted</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="e3ed-37c0-7fcd-7bf8" name="Scyllax Combat Array" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f0c3-00d5-dbb9-1050" name="Scyllax Combat Array - Dismember" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Makeshift Weapon, Murderous Strike (4+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="e3e8-560a-ce1a-dae3" name="Shock Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5c13-9697-e4af-a19d" name="Shock Lance (Melee)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1), Sunder, Shock Pulse, Concussive (2), Brutal (3), Exoshock (2+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="a334-248e-ed09-c083" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="10a9-d15d-546d-221a" name="Thunderstrike Gauntlet" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="d7e2-32d7-523c-e58e" name="Las-Impulsor" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="70d9-bb91-9ecd-5672" name="Las-Impulsor (Melee)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Instant Death</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="1cdb-2b7d-039d-bfe4" name="Atrapos Phasecutter" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="79a4-ed00-8fb8-e83b" name="Atrapos Phasecutter (Melee)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Instant Death</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="07ae-18f7-efb3-6ce5" name="Behemoth Blade" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="cfa8-4f0f-9077-4f0c" name="Behemoth Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (3), Sunder, Immaterial Blades (AP1), Lance, Exoshock (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="04d7-72f4-423d-ab53" name="Graviton Crusher" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="148f-79ff-60a5-8e3a" name="Graviton Crusher" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Haywire, Two-handed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="40ca-04a6-5c4d-a442" name="Charonite Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="66f2-9fda-fa85-5a5a" name="Charonite Claws" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Rending (5+), Murderous Strike (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="538f-904f-7e06-351b" name="Dawnbringer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="bb1d-733f-e5fc-85f5" name="Dawnbringer" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-crafted, Two-handed, Armourbane (Melee), Instant Death, Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="895d-6850-827a-2b92" name="Excoriator Chainaxe" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b535-742d-d675-083f" name="Excoriator Chainaxe" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Shred, Murderous Strike (5+), Unwieldy, Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="bd0a-ba24-aa51-19f2" name="Falax Blades" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="accd-93c7-5c48-7dec" name="Falax Blades" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Specialist Weapon, Breaching (5+), Duellist's Edge (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="cf98-8704-07ff-3310" name="Forgebreaker" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c683-9d89-e641-4e29" name="Forgebreaker" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-crafted, Exoshock (3+), Brutal (3), Two-handed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="d877-4d79-7ab3-c47a" name="Hookfang" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c220-26e5-cacc-4e3e" name="Hookfang" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Poisoned (3+), The Venom, Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="5f7a-8ffc-e21d-6635" name="Hellcrusher Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5382-618a-f01e-f6ad" name="Hellcrusher Claws" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (3), Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="4408-917f-94a4-cec6" name="Tarsus Buckler" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2051-b407-2f30-a593" name="Tarsus Buckler" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="aa70-c390-0f35-04b2" name="Telemon Cestus" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="87ba-b749-079a-7aeb" name="Telemon Cestus" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Specialist Weapon, Sunder, Brutal (3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="0e15-fd69-f46c-4136" name="Arcanite Shock Maul" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b376-d562-28b2-55c1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c5c3-e38a-3981-cbe1" name="Arcanite Shock Maul" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Concussive (2), Haywire, Specialist Weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="740e-ba64-03c9-23d8" name="Extrinsica Melee Weapons" hidden="false" targetId="96d8-552b-9555-ac01" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7433-ccab-fc3c-3bbe" name="Extrinsica Melee Weapon" hidden="false" targetId="0329-b2d2-f2b6-e650" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e51a-990c-3db7-f75c" name="Biocore Shatterblade" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcf5-313e-e6a1-0fbd" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c9c9-d810-6507-2465" name="Biocore Shatterblade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brittle, Reach (1), Specialist Weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="78d8-72c2-7f55-2e8e" name="Extrinsica Melee Weapons" hidden="false" targetId="96d8-552b-9555-ac01" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4425-ca0b-8bd3-7c77" name="Extrinsica Melee Weapon" hidden="false" targetId="0329-b2d2-f2b6-e650" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="270e-7c63-b150-f4ff" name="Paired Mirrorblades" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4da2-54ac-412c-2697" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4e1a-6d9d-7e97-0a1b" name="Paired Mirrorblades" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Riposte (1), Paired Weapons, Two-handed, Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1212-370d-3947-050c" name="Extrinsica Melee Weapons" hidden="false" targetId="96d8-552b-9555-ac01" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="bd31-ed13-5e2e-7bfd" name="Extrinsica Melee Weapon" hidden="false" targetId="0329-b2d2-f2b6-e650" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1d4b-44b2-c6ae-4470" name="Aetheric Whisper-Blade" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f09-7cd4-b32f-898c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="489b-f570-c4ff-9994" name="Aetheric Whisper-Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Dimensional Edge (5+), Specialist Weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="34fc-816a-db78-3e50" name="Extrinsica Melee Weapons" hidden="false" targetId="96d8-552b-9555-ac01" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3ae6-3cd4-525e-33da" name="Extrinsica Melee Weapon" hidden="false" targetId="0329-b2d2-f2b6-e650" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="15ab-538e-703d-50bc" name="Gyrocyclic Reaper Blade" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e48-352b-8d7b-fc02" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c2ad-119e-e26c-54f1" name="Gyrocyclic Reaper Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reaping Blow (1), Felling Blow, Specialist Weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="de61-829b-68e2-b5e2" name="Extrinsica Melee Weapons" hidden="false" targetId="96d8-552b-9555-ac01" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e930-8423-c1ca-4322" name="Extrinsica Melee Weapon" hidden="false" targetId="0329-b2d2-f2b6-e650" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="837e-2787-8e26-0776" name="Accelerator Hammer" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27bb-b570-44e7-458d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ee6b-1bfe-99bc-f57a" name="Accelerator Hammer" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Reach (1), Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4323-2261-198c-06ea" name="Extrinsica Melee Weapons" hidden="false" targetId="96d8-552b-9555-ac01" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7afe-d971-c102-26a5" name="Extrinsica Melee Weapon" hidden="false" targetId="0329-b2d2-f2b6-e650" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0862-c925-e550-7c9a" name="Hydragyric Executioner" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0172-19ee-713a-0cf3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6c08-2741-3cf1-d61b" name="Hydragyric Executioner" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Gyrocoil Charge, Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f29a-195c-a309-58fd" name="Extrinsica Melee Weapons" hidden="false" targetId="96d8-552b-9555-ac01" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9bfd-1613-83b8-6cac" name="Extrinsica Melee Weapon" hidden="false" targetId="0329-b2d2-f2b6-e650" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="59f5-41cc-4f56-c2f6" name="Nanofractal Falchion" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcce-8566-0f3b-e714" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6851-6f57-8803-4d07" name="Nanofractal Falchion" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Murderous Strike (5+), Two-handed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7a8e-5c01-970d-c52b" name="Extrinsica Melee Weapons" hidden="false" targetId="96d8-552b-9555-ac01" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2d9f-e834-7c46-67b9" name="Extrinsica Melee Weapon" hidden="false" targetId="0329-b2d2-f2b6-e650" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -18341,6 +19294,11 @@ If you do so, replace their Legiones Astartes (Death Guard) Special Rule with th
     <rule id="fcf5-fa29-8281-a4c3" name="Warp Resplendent" hidden="false">
       <description>A model with this Special Rule treats any weapons it is equipped with that have a range of "Template" as having a range of "Hellstorm" instead, and any weapons with the Blast (3") Special Rule as having the Large Blast (5") Special Rule instead.
 In addition, any weapons a model with this Special Rule is equipped with which do not meet either of these conditions instead count their range characteristic as being twice that specified in the weapon's profile.</description>
+    </rule>
+    <rule id="96d8-552b-9555-ac01" name="Extrinsica Melee Weapons" hidden="false">
+      <description>The weapons below are designed to represent the varied and deadly weapons that could be found in the armouries of the Legiones Astartes, Mechanicum, Imperial Commanders, and beyond across the battlefields of the Great Crusade and Horus Heresy. Unspeakably rare, even when compared to Paragon Blades, these armaments were seen only in the direst of circumstances. Known collectively as "Extrinsica" (Those from Without), these dread weapons claimed countless lives for many masters on both sides of the Heresy.
+All of the following weapons count as 'Power' weapons, and operate under the broader Rules and Conventions laid out for melee weapons in the Horus Heresy: Age of Darkness Core Rulebook. They may only be purchased at the cost shown for a model in your army which has the choice to purchase a Paragon Blade, replacing a Power Weapon, Chainsword, Close Combat Weapon, Execution Blade, or Guardian Spear. You may never have more than a single Extrinsica Melee Weapon across your entire army. If a model is armed with one of these weapons, it may not also be armed with a Paragon Blade.
+For the purposes of any rules which check for how a weapon is modelled, all Extrinsica Melee Weapons are counted as being swords.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

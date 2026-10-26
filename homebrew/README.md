@@ -252,3 +252,9 @@ loading. The script prints anything in the doc it could not place.
   Augmetics (X), Rupture (X) and so on). `python3 homebrew/add_gst_rules.py` adds them to the shared rules
   of `2022 - Horus Heresy.gst`, or updates the ones it added; each "## Name" section is a rule, its italic
   flavour line stays in the source. A catalogue built here still prefers a rule its own doc defines.
+- `homebrew/source/additional-weapons.md` holds weapon profiles for every catalogue. `python3
+  homebrew/add_gst_weapons.py` updates every matching weapon profile in the game system and the official
+  catalogues to them (names matched ignoring case and punctuation, melee to melee and ranged to ranged), adds
+  a melee profile to an entry that had only other ones (Krak Grenades, Ripper Gun), and adds the weapons the
+  game system lacks to its shared entries. The Extrinsica Melee Weapons carry their points, the Extrinsica
+  rule and a category allowing one per army. Homebrew catalogues take these changes from their own sources.
