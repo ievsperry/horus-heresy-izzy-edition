@@ -1868,9 +1868,9 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 
 **Wargear**
 
-- Stikkbombz
-- Tankbusta bombz
-- Tankbusta rokkit
+- Every model: Stikkbombz, Tankbusta bombz
+- Tankbusta: Tankbusta rokkit
+- Boss Nob: Big choppa, Rokkit pistol
 
 **Unit Type**
 
@@ -1893,11 +1893,13 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 | **The Tankbustas may take:** |  |
 | – Up to 10 additional Tankbustas | +17 points each |
 | – Up to 2 bomb squigs | +5 points each |
-| **Up to two Tankbustas may exchange their tankbusta rokkit for:** |  |
+| **Any Tankbusta may exchange his tankbusta rokkit for:** |  |
 | – Tankhammer | +0 points |
 | **One Tankbusta may be upgraded to a Boss Nob** | +10 points |
-| **The Boss Nob may exchange his tankbusta rokkit for:** |  |
-| – Power klaw | +25 points |
+| **The Boss Nob may exchange his big choppa for one of the following:** |  |
+| – 'Uge choppa | +5 points |
+| – Power klaw | +15 points |
+| – Tankhammer | +15 points |
 | **The Boss Nob may take:** |  |
 | – Bosspole | +5 points |
 
@@ -4025,6 +4027,7 @@ Kustom mega-blastas, kustom shokk rifles, shokk attack guns, zzap guns and every
 | Kustom mega-zappa | 36" | 8 | 2 | Heavy 3, Gets Hot |
 | Kustom shokk rifle | 24" | 8 | 3 | Heavy 1, Rending (4+), Exo-shock (6+) |
 | Lobba | 48" | 5 | 6 | Heavy 1, Large Blast (5"), Barrage |
+| Rokkit pistol | 12" | 8 | 3 | Pistol 1 |
 | Shokk attack gun | 60" | 2D6 | D6 | Heavy 1, Large Blast (5"), Mishap |
 | Smasha gun | 36" | 8 | 3 | Heavy 1, Brutal (2) |
 | Stikka kannon | 24" | 7 | 4 | Heavy 2 |
@@ -4080,7 +4083,7 @@ Rokkit launchas, kopta rokkit launchas, grotzookas and every weapon whose name i
 | Stikkbomb launcha | 24" | 5 | 5 | Assault 1, Large Blast (5"), Pinning |
 | Supa-rokkit | 100" | 8 | 3 | Heavy 1, Large Blast (5"), One Use |
 | Supa-lobba | 48" | 7 | 4 | Ordnance 1, Massive Blast (7"), Barrage |
-| Tankbusta rokkit | 24" | 8 | 3 | Assault 1, Armourbane (Ranged) |
+| Tankbusta rokkit | 24" | 8 | 3 | Assault 1, Sunder, Rending (6+) |
 | Thump gun | 18" | 6 | 5 | Assault 1, Blast (3") |
 | Twin-linked skorcha missile rack | 24" | 5 | 4 | Heavy 1, Blast (3"), Ignores Cover, Twin-linked |
 | Wing missiles | 24" | 8 | 3 | Assault 1 |
