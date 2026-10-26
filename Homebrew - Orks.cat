@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="31" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="32" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -12951,6 +12951,16 @@ The effect lasts until the end of the turn.</description>
     <selectionEntry type="unit" import="true" name="Kommandos" hidden="false" id="85f7-e6c1-316b-8a41" publicationId="96d0-c462-d158-fbad">
       <infoLinks>
         <infoLink name="Xenos" id="fe2b-c168-eb92-612d" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="5b22-a1d0-fff7-1385" hidden="false" targetId="150c-ba53-b501-3917" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bigga iz Betta (Kommando Nob only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="f374-0cf5-58ce-86fe" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2) (Kommando Nob only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Dakka! (X)" id="3681-ebce-cdda-4bd2" hidden="false" targetId="0644-bb6e-7891-7f9f" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Dakka! (6+)" />
@@ -12965,6 +12975,11 @@ The effect lasts until the end of the turn.</description>
         <infoLink name="Infiltrate" id="1a0b-ecdd-530d-c60d" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule" />
         <infoLink name="Klan (X)" id="7c83-732f-ebdf-9e7c" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
         <infoLink name="Kommando Grot" id="1b55-0443-aa66-9678" hidden="false" targetId="812e-4d9c-ed65-af1d" type="rule" />
+        <infoLink name="Might iz Right!" id="61fa-8696-6ef4-e646" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Might iz Right! (Kommando Nob only)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Mob Rule" id="61ea-12dd-0a30-4026" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
         <infoLink name="Mob Up" id="89ea-1dd6-2d1a-e48c" hidden="false" targetId="b395-add5-c4b4-e188" type="rule" />
         <infoLink name="Move Through Cover" id="9b1a-e184-6956-2e73" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule" />
@@ -12987,7 +13002,7 @@ The effect lasts until the end of the turn.</description>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Kommando" hidden="false" id="fb2e-9b4e-b43e-6649" publicationId="96d0-c462-d158-fbad">
           <constraints>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="8349-c234-d237-c6ba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8349-c234-d237-c6ba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="0e99-c04c-5f3e-8883" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
@@ -13113,13 +13128,13 @@ The effect lasts until the end of the turn.</description>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="11" />
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Boss Kommando" hidden="false" id="2a73-a178-3394-f104" publicationId="96d0-c462-d158-fbad">
+        <selectionEntry type="model" import="true" name="Kommando Nob" hidden="false" id="8a67-bdb0-8a21-117a" publicationId="96d0-c462-d158-fbad">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74e2-f79c-46aa-1817" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8ea-80ef-ce98-3b72" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ab0-634c-9d0d-6735" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c66-738c-8363-729f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
-            <profile name="Boss Kommando" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="bd98-ad5f-a4b4-acb4" publicationId="96d0-c462-d158-fbad">
+            <profile name="Kommando Nob" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="9e85-277b-26b9-c3ed" publicationId="96d0-c462-d158-fbad">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Skirmish)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -13136,33 +13151,33 @@ The effect lasts until the end of the turn.</description>
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="3502-fefd-e655-a50e" primary="false" name="Infantry Unit Type" />
-            <categoryLink targetId="59a4-7b61-600a-c457" id="d032-ec1e-1a5e-744f" primary="false" name="Skirmish Sub-type" />
-            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="fcc0-dc30-23b0-87a5" primary="false" name="Character" />
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="dfca-23b5-eac2-ccb1" primary="false" name="Infantry Unit Type" />
+            <categoryLink targetId="59a4-7b61-600a-c457" id="c225-5f94-0f47-2f00" primary="false" name="Skirmish Sub-type" />
+            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="fbed-e156-f905-a662" primary="false" name="Character" />
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Exchange Choppa" hidden="false" id="2736-7dd0-b03a-187e" defaultSelectionEntryId="e380-8bd7-784d-83de">
+            <selectionEntryGroup name="Exchange Choppa" hidden="false" id="c453-b4a3-9f1d-da27" defaultSelectionEntryId="74d7-d6fc-1ce9-a7e3">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e26-69a0-3f6d-3dbe" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="490e-1dff-f6a6-7b65" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="535b-cfe0-7b10-24c1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee77-9455-ce47-c673" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Choppa" hidden="false" id="e380-8bd7-784d-83de" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
+                <entryLink import="true" name="Choppa" hidden="false" id="74d7-d6fc-1ce9-a7e3" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="018e-b371-5da6-762e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff7e-a1c4-4c1c-f6e3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Big choppa" hidden="false" id="8181-a098-0da0-0ee8" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
+                <entryLink import="true" name="Big choppa" hidden="false" id="b943-77b2-9567-16ad" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="389a-78d6-ff04-1f4c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f0f-53bb-586a-4dbd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Power klaw" hidden="false" id="047b-61f5-0524-33e1" type="selectionEntry" targetId="0ecd-3c66-1dd0-3426">
+                <entryLink import="true" name="Power klaw" hidden="false" id="c782-cdba-0d39-c92e" type="selectionEntry" targetId="0ecd-3c66-1dd0-3426">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b16-97aa-6b72-36e1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c36-f754-e7ff-303d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
@@ -13170,28 +13185,28 @@ The effect lasts until the end of the turn.</description>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Exchange Slugga" hidden="false" id="1ab5-0153-4a30-c1ca" defaultSelectionEntryId="7da4-ccc9-d2a8-495f">
+            <selectionEntryGroup name="Exchange Slugga" hidden="false" id="238d-d240-3f96-333e" defaultSelectionEntryId="e784-03a3-4282-ac28">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cfe-28d0-4d72-79d3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abc1-349d-7572-8041" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2eab-a60b-2ff8-dbde" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f61-8e7a-c95d-2a1f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Slugga" hidden="false" id="7da4-ccc9-d2a8-495f" type="selectionEntry" targetId="63e5-3ea4-aa90-6a1e">
+                <entryLink import="true" name="Slugga" hidden="false" id="e784-03a3-4282-ac28" type="selectionEntry" targetId="63e5-3ea4-aa90-6a1e">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="643d-680a-9571-d9db" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3782-8ae2-5378-577b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Kombi-skorcha" hidden="false" id="185b-d611-b5f4-5728" type="selectionEntry" targetId="764a-aa2a-83b4-804d">
+                <entryLink import="true" name="Kombi-skorcha" hidden="false" id="67b1-e566-549e-dde0" type="selectionEntry" targetId="764a-aa2a-83b4-804d">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46b2-e0e0-b7b3-9561" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2563-dd99-f13a-1bb2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Kombi-rokkit" hidden="false" id="080f-fd84-9d92-6a4a" type="selectionEntry" targetId="f680-045c-d17f-c614">
+                <entryLink import="true" name="Kombi-rokkit" hidden="false" id="0cb3-1753-e08d-93cc" type="selectionEntry" targetId="f680-045c-d17f-c614">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2547-f78c-b4a4-4f4c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07aa-305e-9acf-afab" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -13201,16 +13216,16 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="6a53-2db2-0185-947f" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="e007-db0d-887d-1d80" type="selectionEntry" targetId="960a-b583-75a7-cab5">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3fc-f9ae-0d1e-d6bc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="763e-bdc4-6362-fe67" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e3e-c929-7398-329a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73a2-6b61-2170-6735" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Sneakin' Armour" hidden="false" id="b7d8-6b87-b862-6fe3" type="selectionEntry" targetId="1f4e-4036-dfaa-904f">
+            <entryLink import="true" name="Sneakin' Armour" hidden="false" id="90f1-15a8-95d1-9aff" type="selectionEntry" targetId="1f4e-4036-dfaa-904f">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3184-5dc8-2645-60c9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73c6-de3e-b98e-8282" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85d3-c761-5e99-7dba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="458d-7fe1-ba83-af23" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -13295,7 +13310,7 @@ The effect lasts until the end of the turn.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="16" />
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="21" />
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Snipa rifle" hidden="false" id="ef1f-aac8-14d7-6290" publicationId="96d0-c462-d158-fbad" />

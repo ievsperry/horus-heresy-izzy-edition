@@ -2526,18 +2526,18 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 | **Any Deffkopta may take:** |  |
 | – Killsaw | +10 points each |
 
-### Kommandos — 115 pts
+### Kommandos — 65 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Kommando | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 2 | 6 | 5+ | 32mm |
-| Boss Kommando | 6 | 5 | 2 | 3 | 4 | 2 | 4 | 3 | 7 | 5+ | 40mm |
+| Kommando Nob | 6 | 5 | 2 | 3 | 4 | 2 | 4 | 3 | 7 | 5+ | 40mm |
 | Kommando Grot | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
 
-- 9 Kommandos
-- 1 Boss Kommando
+- 4 Kommandos
+- 1 Kommando Nob
 
 **Wargear**
 
@@ -2549,17 +2549,20 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 **Unit Type**
 
 - Kommando: Infantry (Skirmish)
-- Boss Kommando: Infantry (Character, Skirmish)
+- Kommando Nob: Infantry (Character, Skirmish)
 - Kommando Grot: Infantry
 
 **Special Rules**
 
+- Bigga iz Betta (Kommando Nob only)
+- Bulky (2) (Kommando Nob only)
 - Dakka! (6+)
 - 'Ere We Go!
 - Grot Attendants (Kommando Grot only)
 - Infiltrate
 - Klan (X)
 - Kommando Grot
+- Might iz Right! (Kommando Nob only)
 - Mob Rule
 - Mob Up
 - Move Through Cover
@@ -2573,7 +2576,7 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 | Option | Cost |
 |---|---|
 | **The mob may include:** |  |
-| – Up to 10 additional kommandos | +11 points each |
+| – Up to 15 additional kommandos | +11 points each |
 | **The mob may take:** |  |
 | – Up to 1 kommando grot | +15 points |
 | **For every 5 Kommandos in the mob, one Kommando may exchange his Slugga and Choppa for one of the following:** |  |
@@ -2589,10 +2592,10 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 | **The entire mob may take:** |  |
 | – Bomb squig | +15 points |
 | – Smoke bombz | +15 points |
-| **The Boss Kommando may exchange his Choppa for one of the following:** |  |
+| **The Kommando Nob may exchange his Choppa for one of the following:** |  |
 | – Big choppa | +5 points |
 | – Power klaw | +20 points |
-| **The Boss Kommando may exchange his Slugga for one of the following:** |  |
+| **The Kommando Nob may exchange his Slugga for one of the following:** |  |
 | – Kombi-Skorcha | +10 points |
 | – Kombi-Rokkit | +10 points |
 
