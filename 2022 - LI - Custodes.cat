@@ -1,10 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1701" name="LI - Custodes" revision="31" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1701" name="LI - Custodes" revision="32" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="ccca-a9de-0cd9-f8be" name="Legio Custodes" hidden="false">
       <infoLinks>
         <infoLink id="9300-b317-6b65-c72a" name="Legio Custodes" targetId="6998-b328-c080-5341" type="rule"/>
       </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="b4f1-e2b7-7a58-9a8d" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="8911-55ac-d69a-56fe" value="0">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="8911-55ac-d69a-56fe" value="1">
+          <repeats>
+            <repeat field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36c3-e85e-97cc-c503" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8911-55ac-d69a-56fe" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="27f5-b71f-91b3-6615" name="Fast Attack or Heavy Support (Moritoi)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="1de3-67ef-38e1-c5e6" value="0">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b78c-c835-5724-bd18" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="1de3-67ef-38e1-c5e6" value="1">
+          <repeats>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b78c-c835-5724-bd18" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1de3-67ef-38e1-c5e6" type="max"/>
+      </constraints>
     </categoryEntry>
   </categoryEntries>
   <entryLinks>
@@ -97,6 +137,18 @@ Limitations
               </costs>
             </selectionEntry>
             <selectionEntry id="b78c-c835-5724-bd18" name="Chamber of the Golden Host: Moritoi" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="8338-6c5b-3749-73bc" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a24f-12d8-36c1-f477" type="atLeast"/>
+                        <condition field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8338-6c5b-3749-73bc" type="max"/>
               </constraints>
@@ -192,6 +244,17 @@ Limitations
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="1922-9e68-ee23-1682" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="8dc3-8d38-d807-d501" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="e66d-6558-458f-6eae" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
@@ -211,6 +274,17 @@ Limitations
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="94a5-fc64-c01a-f8de" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="e312-4038-319f-8798" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="5e05-1cfb-3fab-a389" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
@@ -239,6 +313,15 @@ Limitations
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink id="ac91-4005-ae40-3738" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6c6f-d217-da4a-f3f3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -257,6 +340,17 @@ Limitations
       <constraints>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="401d-b298-2329-f8aa" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="6466-0d4c-5932-8dca" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="975d-e109-d5bd-7068" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="6f50-248f-d8e0-f877" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
@@ -264,10 +358,31 @@ Limitations
       </categoryLinks>
     </entryLink>
     <entryLink id="27f9-55f5-91f4-b2a8" name="Contemptor-Achillus Dreadnought" hidden="false" collective="false" import="false" targetId="abad-0b02-cb27-28b3" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="7fe7-0631-4603-d610" name="Moritoi: Honoured Dead" hidden="true" targetId="6259-7d38-db7c-345b" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b78c-c835-5724-bd18" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="bd8a-3a5d-fe49-2812" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="9a09-e830-1510-c66a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="cacf-350a-7981-0abe" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="1c3f-5c95-29b8-0549" name="Compulsory Elite:" hidden="false" targetId="bb1f-ae32-b587-c3e1" primary="false"/>
+        <categoryLink id="a621-65f7-2a37-3b70" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="da13-587f-7be9-66be" name="Custodian Guard Squad" hidden="false" collective="false" import="false" targetId="7cec-fe1b-5748-7af3" type="selectionEntry">
@@ -301,6 +416,15 @@ Limitations
         <infoLink id="71c9-743d-0a3c-7646" name="Crusader" hidden="true" targetId="c705-0829-75f6-a785" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Crusader (Hykanatoi: while holding or contesting an Objective Marker)"/>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5210-085b-216a-2c84" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
@@ -346,6 +470,15 @@ Limitations
         <infoLink id="7fd2-e9f4-5c40-f6bc" name="Crusader" hidden="true" targetId="c705-0829-75f6-a785" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Crusader (Hykanatoi: while holding or contesting an Objective Marker)"/>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="7c69-a65a-60a0-59b9" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
@@ -399,9 +532,21 @@ Limitations
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2eb6-e5f5-ea7a-0caf" type="max"/>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0b6f-69e2-084f-a681" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="975f-4a1b-1565-cb00" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="e519-9c3c-2ae3-2c19" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="8a99-7c4b-782a-8d54" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="4eb0-b64d-0c74-72b8" name="Fast Attack or Heavy Support (Moritoi)" hidden="false" targetId="27f5-b71f-91b3-6615" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="65bb-7a39-4350-741e" name="Pallas Attack Speeder Squadron" hidden="false" collective="false" import="false" targetId="2ce3-4ce5-d86f-543f" type="selectionEntry">
@@ -437,9 +582,22 @@ Limitations
       <constraints>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="799c-4f8b-25b1-ae93" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="4f93-5c71-6ed0-bb89" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="c710-2671-3cfb-8db7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="9415-2e52-7a11-d13b" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="f60b-6ef7-e532-4e3e" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
+        <categoryLink id="d364-c46a-dbb1-43d0" name="Fast Attack or Heavy Support (Moritoi)" hidden="false" targetId="27f5-b71f-91b3-6615" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9fdd-741c-affb-289a" name="Custodian Venatari Squad" hidden="false" collective="false" import="false" targetId="4c7e-42e0-1c1e-5ba9" type="selectionEntry">
@@ -470,9 +628,21 @@ Limitations
       <constraints>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8a46-b579-713a-ff07" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="5966-30e6-8892-6158" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="8d2b-5293-abf8-2065" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="4520-024b-fc8e-05ce" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="9d25-34ca-8ee0-75bd" name="Fast Attack or Heavy Support (Moritoi)" hidden="false" targetId="27f5-b71f-91b3-6615" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="656c-b6b9-7dcf-b89c" name="Sagittarum Guard Squad" hidden="false" collective="false" import="false" targetId="8a39-6452-e075-c8d6" type="selectionEntry">
@@ -486,9 +656,21 @@ Limitations
       <constraints>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d1a-503f-1115-74f8" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="07b8-e52d-d8a8-d8b0" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="1eab-2543-5401-8fd8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="3023-fbd5-f9ad-a69f" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="c497-a84c-3d13-9622" name="Fast Attack or Heavy Support (Moritoi)" hidden="false" targetId="27f5-b71f-91b3-6615" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="689b-1084-e8c8-6e9b" name="Caladius Grav-Tank" hidden="false" collective="false" import="false" targetId="ff3b-e8ec-8623-322d" type="selectionEntry">
@@ -499,9 +681,22 @@ Limitations
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="5c56-685e-7feb-946a" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="ad5a-737c-b0ab-c723" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="42d6-e888-330f-39b2" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="ed6e-5de8-0bbe-348d" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
+        <categoryLink id="6c87-b09f-830d-1724" name="Fast Attack or Heavy Support (Moritoi)" hidden="false" targetId="27f5-b71f-91b3-6615" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0e1f-efc9-d81d-9c7e" name="Contemptor-Galatus Dreadnought" hidden="false" collective="false" import="false" targetId="cecc-da1f-9de6-2163" type="selectionEntry">
@@ -515,9 +710,31 @@ Limitations
       <constraints>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf29-e8f2-28b3-e03c" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="9fa5-e8ba-d541-3d49" name="Moritoi: Honoured Dead" hidden="true" targetId="6259-7d38-db7c-345b" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b78c-c835-5724-bd18" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9eda-fac5-669b-474f" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="43c5-1053-74b3-054e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="085f-0c31-d88c-30f5" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="79e8-90db-c8a5-aee6" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
+        <categoryLink id="f4b0-5454-b2aa-3e18" name="Fast Attack or Heavy Support (Moritoi)" hidden="false" targetId="27f5-b71f-91b3-6615" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="12bb-7e2b-f4ac-9b94" name="Telemon Heavy Dreadnought" hidden="false" collective="false" import="false" targetId="4be9-470a-201e-c72a" type="selectionEntry">
@@ -536,9 +753,31 @@ Limitations
       <constraints>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b586-9c11-8388-8a15" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="88be-94c4-bccc-3d3c" name="Moritoi: Honoured Dead" hidden="true" targetId="6259-7d38-db7c-345b" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b78c-c835-5724-bd18" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="94e8-c871-e5a2-41e9" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="4689-f35f-ec9d-bb67" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="a43b-4f90-b009-182a" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="f417-d1cb-b142-923f" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
+        <categoryLink id="45f7-174d-f466-5774" name="Fast Attack or Heavy Support (Moritoi)" hidden="false" targetId="27f5-b71f-91b3-6615" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="36ee-7fd7-accc-604e" name="Orion Assault Dropship" hidden="false" collective="false" import="false" targetId="6526-bdfb-4ebe-6e0a" type="selectionEntry">
@@ -557,9 +796,21 @@ Limitations
       <constraints>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c4b8-2355-3a0f-df06" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="8168-c72d-469c-27ed" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="7fe7-71bf-70cc-f8e9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="e2f9-76b9-eb66-903d" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="7245-5690-c80a-f311" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="6b3f-84ff-d24d-7c4d" name="Ares Gunship" hidden="false" collective="false" import="false" targetId="aa0c-15a3-9d4b-ac47" type="selectionEntry">
@@ -578,9 +829,21 @@ Limitations
       <constraints>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="785b-5647-f16f-95d1" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="8d50-d0e2-f848-efc5" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="2545-36db-5e09-10ce" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="ab0b-897d-307f-e973" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="780c-ffb7-aa63-9584" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="23b7-2bb1-90a6-51b1" name="Clade Assassins (Loyalist)" hidden="false" collective="false" import="false" targetId="7363-5a05-4102-24fa" type="selectionEntry">
@@ -677,6 +940,17 @@ Limitations
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="525f-c77d-10f7-c20b" type="max"/>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7125-b4b6-3245-5992" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="7720-909e-816c-41c3" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="abfc-67ba-54db-34bd" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="2d7b-9a53-6902-4dc6" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
@@ -699,6 +973,17 @@ Limitations
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="451b-04b4-02b3-635e" type="max"/>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4f83-42df-bea9-faf9" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="51ed-34ba-d3ac-924e" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="d9ef-1f25-b6e7-505a" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="34af-ac8e-299c-b734" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
@@ -721,6 +1006,17 @@ Limitations
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7dd5-b25e-da53-1da8" type="max"/>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="865e-e552-ba3a-95f6" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="21be-b291-78b7-e448" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="5fe0-72ab-a05d-5301" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="a5c7-efd1-c972-1a68" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
@@ -753,6 +1049,17 @@ Limitations
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c9a4-95e4-9599-1aa5" type="max"/>
         <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d065-0d34-6d4f-c66c" type="min"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="d30d-859c-dd14-3387" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="2b02-528c-628b-12cc" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="edd6-688a-f22e-a22a" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
@@ -769,6 +1076,17 @@ Limitations
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2900-fabd-0291-82b1" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="1461-ebb1-314f-66c4" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="32e9-3b30-69ed-3daf" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="835a-19c0-1310-0ac7" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
@@ -791,6 +1109,17 @@ Limitations
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="424b-5d08-2598-9e2d" type="max"/>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a607-315e-fe2c-dbff" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="98c3-da32-08f8-ca15" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="fca5-04e7-d5fd-fa41" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="0355-c740-71f9-81f8" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
@@ -807,15 +1136,47 @@ Limitations
       <constraints>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0910-e846-374d-3778" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="f163-256a-bd7e-3730" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="4118-3404-5a63-061a" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="486b-6ed4-47d7-30f5" name="Compulsory Elite:" hidden="false" targetId="bb1f-ae32-b587-c3e1" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ad3f-4c68-de68-9317" name="Contemptor-Moritiax Dreadnought Talon" hidden="false" collective="false" import="false" targetId="043e-68f0-100b-30be" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="c520-4e08-a6a7-b628" name="Moritoi: Honoured Dead" hidden="true" targetId="6259-7d38-db7c-345b" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b78c-c835-5724-bd18" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="bef9-1d89-7c12-6889" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="7eeb-e511-c892-8673" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="828c-c598-6edd-2789" name="Compulsory Elite:" hidden="false" targetId="bb1f-ae32-b587-c3e1" primary="false"/>
+        <categoryLink id="d5b3-a75d-f030-db77" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5ba2-9962-2ad7-730a" name="Dawneagle Jetbike Squadron" hidden="false" collective="false" import="false" targetId="eb47-d961-ad80-cdfc" type="selectionEntry">
@@ -852,18 +1213,56 @@ Limitations
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d3bb-7e2d-c5f4-d9ff" type="max"/>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4949-6b5a-6c79-d2bc" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="9853-7e1d-89b6-46ce" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="8935-86e7-b4a8-b209" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="9dd2-ecd9-76b4-21fe" name="Fast Attack or Heavy Support (Moritoi)" hidden="false" targetId="27f5-b71f-91b3-6615" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="2bdf-2674-bf8a-2d3a" name="Custodian Grav-Raider Carrier" hidden="false" collective="false" import="false" targetId="5ea3-7218-0be2-ab28" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="47c0-ad5e-fb92-6958" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="f8ff-3179-d1ab-ba9e" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="529e-5706-e482-0b06" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
+        <categoryLink id="1005-39a1-3914-f5cc" name="Fast Attack or Heavy Support (Moritoi)" hidden="false" targetId="27f5-b71f-91b3-6615" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="dc19-1313-8409-6890" name="Custodian Grav-Spartan Assault Tank" hidden="false" collective="false" import="false" targetId="cc12-46a5-d3af-5cd9" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="b82f-fc8d-5ebe-369a" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="0485-9ce1-2b96-201a" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="c69e-cafc-18cb-ad9d" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
+        <categoryLink id="c62b-de10-2cef-c88f" name="Fast Attack or Heavy Support (Moritoi)" hidden="false" targetId="27f5-b71f-91b3-6615" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b031-73ab-eefa-7863" name="Custodian Land Raider Carrier Squadron" hidden="false" collective="false" import="false" targetId="8f6d-9961-f4ac-1c21" type="selectionEntry">
@@ -877,8 +1276,21 @@ Limitations
       <constraints>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5c36-9da0-1ea1-23d7" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="90da-75ed-c663-988f" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="3f2d-7853-f2db-d0fb" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="8044-5e03-3bdd-3d40" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
+        <categoryLink id="bf65-189b-ba12-60f2" name="Fast Attack or Heavy Support (Moritoi)" hidden="false" targetId="27f5-b71f-91b3-6615" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="48e7-af36-5d21-45de" name="Custodian Land Raider Spartan Assault Tank" hidden="false" collective="false" import="false" targetId="ce0c-9577-1f7c-bee6" type="selectionEntry">
@@ -892,8 +1304,21 @@ Limitations
       <constraints>
         <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dce6-cf3b-b1b2-6ef8" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="22d7-b01a-f347-5e6e" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="4d21-24cd-f0a5-0f0c" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="a6d4-f385-47b7-2257" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
+        <categoryLink id="a8e6-01d5-0499-1518" name="Fast Attack or Heavy Support (Moritoi)" hidden="false" targetId="27f5-b71f-91b3-6615" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="6d8f-20fb-c30a-ccf2" name="Custodian Venatari Squad" hidden="true" collective="false" import="false" targetId="4c7e-42e0-1c1e-5ba9" type="selectionEntry">
@@ -945,6 +1370,9 @@ Limitations
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="8af5-039b-ecd2-e168" name="Moritoi: Honoured Dead" hidden="false" targetId="6259-7d38-db7c-345b" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="d5dd-b995-e676-2703" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="df09-8da9-5f5d-dc8b" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
@@ -959,6 +1387,9 @@ Limitations
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="68f6-1f75-e1c0-ba92" name="Moritoi: Honoured Dead" hidden="false" targetId="6259-7d38-db7c-345b" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="6d20-f812-9ce9-8b0e" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="ad2a-8f61-98da-0f3d" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
@@ -995,11 +1426,34 @@ Limitations
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ae15-e040-89ff-3e82" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="f436-68e9-a607-177e" name="Moritoi: Honoured Dead" hidden="false" targetId="6259-7d38-db7c-345b" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="d81e-2b86-8ea8-214d" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="763a-f920-68de-e6b7" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
         <categoryLink id="5cfd-e57d-9afb-ec85" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="4f69-cb0f-c42a-7a22" name="Honoured Ancient" hidden="false" collective="false" import="true" targetId="58e0-64c4-3c8d-280a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34f2-5931-c1c9-ad06" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95a3-dbcc-a09b-fc62" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
+        </entryLink>
+        <entryLink id="cebd-52e8-d8eb-70f0" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca4b-0574-7861-42e2" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c83-cf88-905e-943b" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7e04-5d2f-f3ba-6f5e" name="Ancient of War (Warlord Trait)" hidden="false" targetId="090d-f7dc-75de-6a5f" type="profile"/>
+          </infoLinks>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="78c5-9a38-5c33-4b94" name="Contemptor-Galatus Dreadnought" hidden="true" collective="false" import="false" targetId="cecc-da1f-9de6-2163" type="selectionEntry">
       <modifiers>
@@ -1017,11 +1471,34 @@ Limitations
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e7d4-e9ec-a6a8-8f3c" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="f63f-c391-102e-b073" name="Moritoi: Honoured Dead" hidden="false" targetId="6259-7d38-db7c-345b" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="45d0-5073-6daf-0000" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="bc20-41c6-344b-3fdf" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
         <categoryLink id="583e-5501-654f-2556" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="e9da-e3e9-a798-1f81" name="Honoured Ancient" hidden="false" collective="false" import="true" targetId="58e0-64c4-3c8d-280a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27f2-7984-3d59-482d" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e46-1ccd-dc28-6143" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
+        </entryLink>
+        <entryLink id="bd28-8515-ee3e-5136" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f579-682a-d0e4-2402" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83fa-a5b2-e4d9-8970" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c00c-9d3a-6921-1b95" name="Ancient of War (Warlord Trait)" hidden="false" targetId="090d-f7dc-75de-6a5f" type="profile"/>
+          </infoLinks>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="1afd-e30e-99e3-4997" name="Allarus Terminator Squad" hidden="true" collective="false" import="false" targetId="5b1e-b820-fa00-68d7" type="selectionEntry">
       <modifiers>
@@ -1031,6 +1508,9 @@ Limitations
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="2486-6301-cf48-e0cb" name="Tharanatoi: Shield of the Emperor" hidden="false" targetId="3774-5224-0973-7872" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="0c03-f96c-3152-9d6c" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="2943-8794-b098-cddf" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
@@ -1045,6 +1525,9 @@ Limitations
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="edc5-4abc-6b3f-3402" name="Tharanatoi: Shield of the Emperor" hidden="false" targetId="3774-5224-0973-7872" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="22a6-7081-1300-689b" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="2d52-b390-69de-f805" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
@@ -4751,22 +5234,6 @@ A model with the Infantry Unit Type that selects a Custodes Gyrfalcon jetbike as
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eae6-c9f1-f262-1be4" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="116b-1cd6-8eba-7a5d" name="Honoured Ancient" hidden="true" collective="false" import="true" targetId="58e0-64c4-3c8d-280a" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b78c-c835-5724-bd18" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16d3-2ac7-b718-a4b5" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5267-7467-df5c-4405" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
-          </costs>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250"/>
@@ -4859,22 +5326,6 @@ A model with the Infantry Unit Type that selects a Custodes Gyrfalcon jetbike as
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a988-401d-528a-dcc1" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dee-1ae8-84ca-442e" type="min"/>
           </constraints>
-        </entryLink>
-        <entryLink id="3f8f-21c0-707e-f6c7" name="Honoured Ancient" hidden="true" collective="false" import="true" targetId="58e0-64c4-3c8d-280a" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b78c-c835-5724-bd18" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6d7-04ff-9556-33cd" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df52-3c48-b27d-9b06" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
-          </costs>
         </entryLink>
       </entryLinks>
       <costs>
@@ -7271,6 +7722,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ae5-ac0a-0975-4919" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="0ffd-fb6c-dc12-9145" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
+              </categoryLinks>
             </entryLink>
             <entryLink id="8277-97d7-87c3-c544" name="Coronus Grav-carrier" hidden="false" collective="false" import="true" targetId="bf7c-a1e1-f983-987e" type="selectionEntry">
               <modifiers>
@@ -7283,6 +7737,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44ed-bbcb-47d0-fb33" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="7100-bb6d-8615-68b8" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
+              </categoryLinks>
             </entryLink>
             <entryLink id="ec1d-b276-682a-dd6c" name="Custodes Land Raider Spartan" hidden="false" collective="false" import="true" targetId="9c55-698b-c084-041c" type="selectionEntry">
               <modifiers>
@@ -7300,6 +7757,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0341-9c11-572a-d8d9" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="d8bd-0cd5-1cb7-4ef3" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
+              </categoryLinks>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -9514,6 +9974,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b147-8841-e0f2-07cb" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="4a90-f959-9ebd-328f" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
+          </categoryLinks>
         </entryLink>
         <entryLink id="125c-206d-5b7c-2f14" name="Custodes Land Raider" hidden="false" collective="false" import="true" targetId="5959-2385-a45f-641b" type="selectionEntry">
           <modifiers>
@@ -9526,6 +9989,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4761-f54d-28e0-cba2" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="3121-9400-bac0-a28c" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
+          </categoryLinks>
         </entryLink>
         <entryLink id="b9eb-b085-c43c-c3c5" name="Custodes Land Raider Spartan" hidden="false" collective="false" import="true" targetId="9c55-698b-c084-041c" type="selectionEntry">
           <modifiers>
@@ -9538,6 +10004,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bd1-89f0-8ef4-1f78" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="396c-5f8f-d1ae-8a27" name="Vehicle or Dreadnought (Hykanatoi)" hidden="false" targetId="b4f1-e2b7-7a58-9a8d" primary="false"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -9600,6 +10069,15 @@ Lightning Blows (X) special rule, but do benefit from any other special rules po
     </rule>
     <rule id="965b-d6fd-f604-5454" name="Skilled Rider" hidden="false">
       <description>A model with this special rule automatically passes Dangerous Terrain tests.</description>
+    </rule>
+    <rule id="6259-7d38-db7c-345b" name="Moritoi: Honoured Dead" hidden="false">
+      <description>Each Dreadnought in a Detachment using the Moritoi Chamber of the Golden Host is worth +1 Victory Point to the opponent when destroyed. The Detachment may never Seize the Initiative.</description>
+    </rule>
+    <rule id="3774-5224-0973-7872" name="Tharanatoi: Shield of the Emperor" hidden="false">
+      <description>An Allarus or Aquilon Terminator Squad taken as a Compulsory Troops choice in a Detachment using the Tharanatoi Chamber of the Golden Host is worth +1 Victory Point to the opponent when destroyed.</description>
+    </rule>
+    <rule id="572b-f752-df36-7f64" name="Hykanatoi: Guardians of the Objective" hidden="false">
+      <description>If you control fewer Objective Markers than your opponent at the start of your turn, Legio Custodes models in a Detachment using the Hykanatoi Chamber of the Golden Host may only use Nemesis against enemy units controlling or contesting an Objective Marker until the start of your next turn. No effect in missions without Objective Markers.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
