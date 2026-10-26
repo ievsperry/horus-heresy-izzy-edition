@@ -154,6 +154,10 @@ If a Runt Orkalyte is removed as a casualty by a Precision Shots or Precision St
 
 **Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
 
+**Spanner Gitz.** Few Meks have the patience to train up a proper apprentice, so the Spannerz a warband can muster are a precious lot, sent wherever their knack for bolting, bodging and banging things back into working order does the most good. A Spannerz unit is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in a Spannerz unit must be assigned to another unit from the same Detachment of the army they were selected as part of. A Spanner Boy may only be assigned to a unit composed entirely of models with the Infantry Unit Type and the same Klan (X) special rule as the Spanner Boy, and may not join a unit that includes models in Mega Armour. A Spanner Boy may only be assigned to a Kommandos unit if he has taken sneakin' armour. No Spanner Boy may be assigned to any unit that includes one or more models with the Independent Character special rule or Unique Sub-type (but such models may join a unit that includes a Spanner Boy as normal during deployment or any following turn). No more than one Spanner Boy may be assigned to any given unit.
+
+Once assigned to a unit, the Spanner Boy is considered part of that unit and may not leave it under any circumstances – if that unit is removed as a casualty then the Spanner Boy is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Spanner Boy as a casualty. When assigned to a unit, a Spanner Boy gains all of the special rules (with the exception of those that specifically forbid it) and Unit Sub-types listed for the unit to which he is attached, but does not gain access to any additional Wargear options available to the unit to which he is assigned.
+
 **Speed Freekz.** Models with this special rule gain Fleet (2), Sudden Strike (2), and Hammer of Wrath (1). In addition, they may re-roll failed Dangerous Terrain tests.
 
 **Tank Hunters.** The model's attacks gain the Sunder special rule. If a weapon already has Sunder, add 1 to its Armour Penetration rolls instead.
@@ -164,7 +168,7 @@ In addition, friendly Ork units within 18" may use the Stompa's Leadership chara
 
 A Stompa also counts as 15 additional models for any special rule or ability that counts the number of nearby Ork models.
 
-**Waaagh!** Once per game, at the start of any turn, if the army's Warlord is an Ork and is on the table, the army may call a Waaagh! If the army includes a model with the Da Biggest is Da Best special rule (a Warboss, Mek Boss, Painboss, Weirdboss, Ghazghkull Thraka, Boss Snikrot, Boss Zagstruk, Kaptin Badrukk, Mad Dok Grotsnik, Mek Boss Buzzgob, Mozrog Skragbad, Wazdakka Gutsmek or Zodgrod Wortsnagga), the Waaagh! unleashes the army's Waaagh! Doctrine, one of the following (see Waaagh! Doctrine for the full rules):
+**Waaagh!** Once per game, at the start of any turn, if the army's Warlord is an Ork and is on the table, the army may call a Waaagh! If the army includes a model with the Da Biggest is Da Best special rule (a Warboss, Mek Boss, Painboss, Weirdboss, Ghazghkull Thraka, Boss Snikrot, Boss Zagstruk, Kaptin Badrukk, Mad Dok Grotsnik, Mek Boss Buzzgob, Mozrog Skragbad, Old Zogwort, Wazdakka Gutsmek or Zodgrod Wortsnagga), the Waaagh! unleashes the army's Waaagh! Doctrine, one of the following (see Waaagh! Doctrine for the full rules):
 
 - **Krumpin' Waaagh!:** all friendly Ork Infantry and Dreadnought units gain Fleet (2), Furious Charge (2), Fearless, Feel No Pain (5+) and Dakka! (5+).
 - **Speed Waaagh!:** all friendly Ork Cavalry, Jump Infantry, Skirmish and Vehicle units gain Fleet (3), Sudden Strike (3), Hammer of Wrath (+1) and Shrouded (5+) while Running, and all friendly Ork units gain +2 to Reserve rolls.
@@ -552,7 +556,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 |---|---|
 | HQ | Warboss, Warboss Retinue, Ork Boss, Big Mek, Mek Boss, Mek Boss Buzzgob, Weirdboss, named characters, Beastboss, Beastboss on Squigosaur, Painboss, Deffkilla Wartrike |
 | Elites | Nobz, Nobz on Warbikes, Meganobz, Burna Boyz, Tankbustas, Odd Boys (Meks, Painboys and Weirdboys), Bannernob, Nob on Smasha Squig |
-| Troops | Boyz, Shoota Boyz, 'Ard Boyz, Big Boyz, Gretchin, Beast Snagga Boyz |
+| Troops | Boyz, Shoota Boyz, 'Ard Boyz, Big Boyz, Gretchin, Beast Snagga Boyz, Spannerz |
 | Fast Attack | Stormboyz, Warbikers, Deffkoptas, Kommandos, Dakkajet, Burna-bommer, Blitza-bommer, Squighog Boyz, Speed Freek buggies, Wazbom Blastajet |
 | Heavy Support | Deff Dread, Killa Kans, Lootas, Flash Gitz, Mek Gunz, Battlewagon, Gunwagon, Bonebreaka, Kill Rig, Hunta Rig, Big Mek Dakkarig |
 | Dedicated Transports | Trukk, 'Chinork' Warkopta; Battlewagon for the units that list it |
@@ -1427,14 +1431,18 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 
 **Special Rules**
 
+- Bigga iz Betta
+- Bulky (2)
+- Da Biggest is Da Best
 - 'Ere We Go!
 - Hex: once per game in the Shooting phase, after a successful Psychic check, pick an enemy character within 12"; it must pass a Toughness test or be removed as a casualty
 - Klan (Snakebites)
+- Might iz Right!
 - Mob Rule
 - Psychic discipline: Power of da Waaagh!, including Fists of Gork
-- Weirdboy Discipline
 - Waaagh!
 - Waaagh! energy
+- Weirdboy Discipline
 
 ### Wazdakka Gutsmek — 145 pts
 
@@ -2299,6 +2307,58 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 | – 'Eavy armour (4+) | +2 points each |
 | **The entire mob may take:** |  |
 | – All Da Kit (choppa, shoota and slugga) | +1 point each |
+
+
+### 0-1 Spannerz — 60 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Spanner Boy | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 2 | 7 | 5+ | 32mm |
+
+**Unit Composition**
+
+- 3 Spanner Boyz
+
+**Wargear**
+
+- Shoota
+- Choppa
+- Stikkbombz
+- Da armour
+
+**Unit Type**
+
+- Spanner Boy: Infantry
+
+**Special Rules**
+
+- 'Ere We Go!
+- Klan (X)
+- Mek-Smasha (6+)
+- Mob Rule
+- Mob Up
+- Oddboy
+- Spanner Gitz
+- Support Squad
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Spannerz may include:** |  |
+| – Up to 7 additional Spanner Boyz | +20 points each |
+| **Any Spanner Boy may exchange his shoota for one of the following:** |  |
+| – Big shoota | +10 points |
+| – Burna | +10 points |
+| – Kombi-rokkit | +10 points |
+| – Kombi-shoota | +5 points |
+| – Kombi-skorcha | +10 points |
+| **Any Spanner Boy may exchange his da armour for one of the following:** |  |
+| – 'Eavy armour (4+) | +5 points |
+| – Sneakin' armour | +5 points |
+| **Any Spanner Boy may take any of the following:** |  |
+| – Gitfinda | +15 points |
+| – Bomb squig | +5 points |
 
 ## Dedicated Transports
 

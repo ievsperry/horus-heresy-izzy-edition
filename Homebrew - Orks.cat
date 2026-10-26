@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="33" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="34" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
+  <categoryEntries>
+    <categoryEntry name="Da Biggest is Da Best" hidden="false" id="5422-252b-9f8f-d46b">
+      <modifiers>
+        <modifier type="increment" field="49bf-1ab7-3ef8-97a9" value="1">
+          <repeats>
+            <repeat field="limit::d2ee-04cb-5f8a-2642" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false" />
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="49bf-1ab7-3ef8-97a9" value="1">
+          <conditions>
+            <condition type="atLeast" value="1000" field="limit::d2ee-04cb-5f8a-2642" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="49bf-1ab7-3ef8-97a9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
+    </categoryEntry>
+  </categoryEntries>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Orks" hidden="false" id="adbe-53b5-788c-2bbb" publicationId="96d0-c462-d158-fbad">
       <constraints>
@@ -402,6 +421,7 @@ A Detachment that contains at least one model with the Da Biggest is Da Best spe
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="96c3-bbf8-296f-c6ab" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="13f1-a28a-af4f-0551" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e81a-8ecb-ede8-cfda" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6131-78b3-85cb-d975" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="518b-c2a5-159c-8ff4" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="0d29-7d03-c6dd-264d" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="797f-04dc-77fb-4579" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -423,6 +443,7 @@ A Detachment that contains at least one model with the Da Biggest is Da Best spe
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="96c3-bbf8-296f-c6ab" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="13f1-a28a-af4f-0551" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e81a-8ecb-ede8-cfda" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6131-78b3-85cb-d975" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="518b-c2a5-159c-8ff4" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="0d29-7d03-c6dd-264d" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="797f-04dc-77fb-4579" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -769,6 +790,15 @@ The effect lasts until the end of the turn.</description>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="ab8b-defe-2605-fd40" primary="true" name="Troops:" />
         <categoryLink targetId="8f42-a824-fb5f-8fea" id="63ae-90a6-199b-d7fe" primary="false" name="Compulsory Troops:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="ead3-7844-d988-8976" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Spannerz" hidden="false" id="a4ec-6377-d171-1597" type="selectionEntry" targetId="45c1-7d63-580e-cfd3">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="659b-5312-a0d8-fcff" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="a09b-48be-fed7-1e6f" primary="true" name="Troops:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="e30d-16d3-6b98-c18b" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Blitza-bommer" hidden="false" id="a14f-cdd4-0070-c0b9" type="selectionEntry" targetId="6c39-3ab6-141f-ca29">
@@ -4482,6 +4512,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="f7c1-e916-936c-cc81" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="5de5-9cbb-27da-a161" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Mek Boss" hidden="false" id="12cb-d73c-729b-d046" publicationId="96d0-c462-d158-fbad">
@@ -5167,6 +5198,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="66b8-7338-c5c9-540c" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="14b1-365b-7c07-8034" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Painboss" hidden="false" id="dee5-0032-5979-49fe" publicationId="96d0-c462-d158-fbad">
@@ -5431,6 +5463,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="bfab-8aa5-9382-eb92" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="89e6-9ab5-c0ba-0e54" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Warboss" hidden="false" id="6363-48da-3376-f328" publicationId="96d0-c462-d158-fbad">
@@ -6093,6 +6126,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="baf2-e243-ce2f-cc41" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="15be-5e07-3fa9-4475" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Weirdboss" hidden="false" id="ff7b-9e98-aa88-5234" publicationId="96d0-c462-d158-fbad">
@@ -6332,6 +6366,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="0bc3-4352-36a8-2158" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="3c40-58f6-a2cb-7146" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Boss Snikrot" hidden="false" id="7503-c4e3-cc4b-18ff" publicationId="96d0-c462-d158-fbad">
@@ -6462,6 +6497,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="eb26-6f9e-48ea-f02e" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="12df-2c86-db88-cde4" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Boss Zagstruk" hidden="false" id="a610-40ae-2f8a-e8e9" publicationId="96d0-c462-d158-fbad">
@@ -6620,6 +6656,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="5ffa-6bbe-0e6c-8a39" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="68c3-294d-91ea-77cc" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Kaptin Badrukk" hidden="false" id="737e-0618-e891-2f63" publicationId="96d0-c462-d158-fbad">
@@ -6805,6 +6842,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="04c0-4046-7cf2-d63f" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="c5e3-66bb-fd8e-f859" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Mad Dok Grotsnik" hidden="false" id="420f-9d90-9aa5-d84b" publicationId="96d0-c462-d158-fbad">
@@ -6990,6 +7028,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="c906-5f90-6294-fe7d" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="b46c-d9ed-5f35-8cb1" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Mek Boss Buzzgob" hidden="false" id="9a33-8395-fbe4-a49c" publicationId="96d0-c462-d158-fbad">
@@ -7226,6 +7265,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="44c4-f8c3-83e1-37f6" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="6f3d-5ee0-9339-13d2" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Mozrog Skragbad" hidden="false" id="124a-f329-1404-f5ac" publicationId="96d0-c462-d158-fbad">
@@ -7340,23 +7380,32 @@ The effect lasts until the end of the turn.</description>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="12d2-3703-cbf2-4fef" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="4257-8cb8-8cba-651f" hidden="false" targetId="150c-ba53-b501-3917" type="rule" />
+        <infoLink name="Bulky (X)" id="3d29-9315-2c2e-3611" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Da Biggest is Da Best" id="9043-b837-5399-4a5d" hidden="false" targetId="ebb2-7a37-35c8-2c7f" type="rule" />
         <infoLink name="'Ere We Go!" id="f496-be50-78c0-eb9b" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
         <infoLink name="Klan (X)" id="4869-dd98-dbac-6b2c" hidden="false" targetId="a734-620c-db79-3594" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Klan (Snakebites)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Might iz Right!" id="d53d-0c50-e4f5-cd5c" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule" />
         <infoLink name="Mob Rule" id="411d-5b57-1408-3a56" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
-        <infoLink name="Weirdboy Discipline" id="5354-53e2-dc9c-be34" hidden="false" targetId="517b-da3c-94f0-96a2" type="rule" />
         <infoLink name="Waaagh!" id="177a-151e-ca65-fa48" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
         <infoLink name="Waaagh! Energy" id="a546-1118-9c12-d4db" hidden="false" targetId="22d5-a04c-eb29-712d" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Waaagh! energy" />
           </modifiers>
         </infoLink>
+        <infoLink name="Weirdboy Discipline" id="5354-53e2-dc9c-be34" hidden="false" targetId="517b-da3c-94f0-96a2" type="rule" />
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="9fd2-e2e4-12a0-0bd5" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="859a-9dc9-202c-7def" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Old Zogwort" hidden="false" id="cc64-ce15-e4c3-937e" publicationId="96d0-c462-d158-fbad">
@@ -7553,6 +7602,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="14e2-4b11-ff0e-7177" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="17ec-12b0-2a96-c05f" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Wazdakka Gutsmek" hidden="false" id="1af8-a9c6-35aa-f791" publicationId="96d0-c462-d158-fbad">
@@ -7691,6 +7741,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="b147-f40e-cfe5-66e6" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="eae6-7f32-48f6-b84f" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Zodgrod Wortsnagga" hidden="false" id="2628-3cae-748e-d04e" publicationId="96d0-c462-d158-fbad">
@@ -12252,6 +12303,194 @@ The effect lasts until the end of the turn.</description>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Spannerz" hidden="false" id="45c1-7d63-580e-cfd3" publicationId="96d0-c462-d158-fbad">
+      <infoLinks>
+        <infoLink name="Xenos" id="2d11-f2b7-0deb-c78e" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="'Ere We Go!" id="be1b-45d4-09b4-0e6a" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
+        <infoLink name="Klan (X)" id="3996-1ed3-55bd-10b3" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
+        <infoLink name="Mek-Smasha (X)" id="69d4-91f5-c98d-2754" hidden="false" targetId="6989-913d-92e6-2a8b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Mek-Smasha (6+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Mob Rule" id="f5ba-d45f-5d73-0d2c" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
+        <infoLink name="Mob Up" id="98bf-7402-b1d6-3bec" hidden="false" targetId="b395-add5-c4b4-e188" type="rule" />
+        <infoLink name="Oddboy" id="7fcc-09cf-bd53-587e" hidden="false" targetId="487b-f932-39ab-f602" type="rule" />
+        <infoLink name="Spanner Gitz" id="697f-3934-553b-aa58" hidden="false" targetId="479c-634d-4d99-cf3e" type="rule" />
+        <infoLink name="Support Squad" id="ed69-4239-33f5-2fd7" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="271f-8939-684e-4973" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Spanner Boy" hidden="false" id="d312-50ee-276d-2a8e" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="841f-9fa2-f83b-534a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="148b-4e2f-7747-ae24" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Spanner Boy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="b699-f788-506b-cc6d" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="266a-e62d-8483-71fc" primary="false" name="Infantry Unit Type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange shoota" hidden="false" id="8dcf-b9e9-80dc-a9c3" defaultSelectionEntryId="2a94-5983-e32b-817d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="153d-cc52-67bd-4197" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6add-6d48-8be8-4d40" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Shoota" hidden="false" id="2a94-5983-e32b-817d" type="selectionEntry" targetId="990f-9119-5362-90f3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5916-376f-52b9-9e1c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Big shoota" hidden="false" id="ac24-2280-01c3-c937" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d77-01cc-6229-3659" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Burna" hidden="false" id="6293-4af9-3889-9601" type="selectionEntry" targetId="d68a-f2d5-bb23-b277">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d75-1e71-4811-cf39" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Kombi-rokkit" hidden="false" id="1874-ba4a-6c82-2459" type="selectionEntry" targetId="f680-045c-d17f-c614">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="420e-23bb-d965-f821" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Kombi-shoota" hidden="false" id="2a0c-9f68-f5ff-959d" type="selectionEntry" targetId="3c0e-2dba-abd4-b6c4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="115d-bc50-116c-d178" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Kombi-skorcha" hidden="false" id="1450-6c2d-fa82-e16d" type="selectionEntry" targetId="764a-aa2a-83b4-804d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9462-89f4-5a7c-da0d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Exchange da armour" hidden="false" id="b0db-4a73-45c5-4bbd" defaultSelectionEntryId="94c0-a356-a1dd-3f2d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="573a-058d-f007-42e3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd20-2808-e3a4-e871" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Da armour" hidden="false" id="94c0-a356-a1dd-3f2d" type="selectionEntry" targetId="ff87-f2ad-bb74-ba22">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a05-cfad-513b-b8d9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="'Eavy Armour" hidden="false" id="f29c-8ed7-4cb6-6c24" type="selectionEntry" targetId="e4bb-7234-0498-89ca">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b83c-0d59-9b6b-f983" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Sneakin' Armour" hidden="false" id="fbf1-2e2d-da65-b93e" type="selectionEntry" targetId="1f4e-4036-dfaa-904f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b627-76ff-7b05-5ec8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Choppa" hidden="false" id="8baa-c592-832e-befe" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b302-72b9-201a-feaf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41f7-4737-9e1f-03dc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="5c71-0b44-0d5c-9f59" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d37c-4b08-ce9f-f057" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34b6-48de-8e68-b85c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" hidden="false" id="f3e0-656a-92ff-f4c2">
+          <entryLinks>
+            <entryLink import="true" name="Gitfinda" hidden="false" id="3667-ac8e-1c48-dcb7" type="selectionEntry" targetId="eeab-d6e7-9c2f-e8a2">
+              <modifiers>
+                <modifier type="increment" field="b0c6-53d5-dbe5-2dd0" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="45c1-7d63-580e-cfd3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d312-50ee-276d-2a8e" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b0c6-53d5-dbe5-2dd0" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Bomb Squig" hidden="false" id="201a-a1bc-149f-624b" type="selectionEntry" targetId="1978-a29f-7d13-6fcc">
+              <modifiers>
+                <modifier type="increment" field="7bc5-f403-f3d0-9049" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="45c1-7d63-580e-cfd3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d312-50ee-276d-2a8e" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7bc5-f403-f3d0-9049" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="'Chinork' Warkopta" hidden="false" id="e69a-0026-5292-5a0e" publicationId="96d0-c462-d158-fbad">
@@ -16834,6 +17073,7 @@ The effect lasts until the end of the turn.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="79cd-1c5f-59b8-94f9" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="ba99-1d00-94f0-e6fe" primary="false" name="Da Biggest is Da Best" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Ghazghkull Thraka" hidden="false" id="723a-0972-6a34-d75b" publicationId="96d0-c462-d158-fbad">
@@ -17844,6 +18084,9 @@ Da Biggest is Da Best is treated as equivalent to Master of the Legion for the p
     <rule name="Stealth" id="4f86-aae1-17da-67cb" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.</description>
     </rule>
+    <rule name="Spanner Gitz" id="479c-634d-4d99-cf3e" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Few Meks have the patience to train up a proper apprentice, so the Spannerz a warband can muster are a precious lot, sent wherever their knack for bolting, bodging and banging things back into working order does the most good. A Spannerz unit is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in a Spannerz unit must be assigned to another unit from the same Detachment of the army they were selected as part of. A Spanner Boy may only be assigned to a unit composed entirely of models with the Infantry Unit Type and the same Klan (X) special rule as the Spanner Boy, and may not join a unit that includes models in Mega Armour. A Spanner Boy may only be assigned to a Kommandos unit if he has taken sneakin' armour. No Spanner Boy may be assigned to any unit that includes one or more models with the Independent Character special rule or Unique Sub-type (but such models may join a unit that includes a Spanner Boy as normal during deployment or any following turn). No more than one Spanner Boy may be assigned to any given unit. Once assigned to a unit, the Spanner Boy is considered part of that unit and may not leave it under any circumstances – if that unit is removed as a casualty then the Spanner Boy is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Spanner Boy as a casualty. When assigned to a unit, a Spanner Boy gains all of the special rules (with the exception of those that specifically forbid it) and Unit Sub-types listed for the unit to which he is attached, but does not gain access to any additional Wargear options available to the unit to which he is assigned.</description>
+    </rule>
     <rule name="Speed Freekz" id="5206-b3f9-c8f4-fee3" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>Models with this special rule gain Fleet (2), Sudden Strike (2), and Hammer of Wrath (1). In addition, they may re-roll failed Dangerous Terrain tests.</description>
     </rule>
@@ -17854,7 +18097,7 @@ Da Biggest is Da Best is treated as equivalent to Master of the Legion for the p
       <description>Friendly Ork Infantry, Cavalry and Jump Infantry units within 18" of a Stompa gain Stubborn. In addition, friendly Ork units within 18" may use the Stompa's Leadership characteristic of 10 when making Morale checks and Pinning checks. A Stompa also counts as 15 additional models for any special rule or ability that counts the number of nearby Ork models.</description>
     </rule>
     <rule name="Waaagh!" id="01d0-45ce-18b3-5564" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>Once per game, at the start of any turn, if the army's Warlord is an Ork and is on the table, the army may call a Waaagh! If the army includes a model with the Da Biggest is Da Best special rule (a Warboss, Mek Boss, Painboss, Weirdboss, Ghazghkull Thraka, Boss Snikrot, Boss Zagstruk, Kaptin Badrukk, Mad Dok Grotsnik, Mek Boss Buzzgob, Mozrog Skragbad, Wazdakka Gutsmek or Zodgrod Wortsnagga), the Waaagh! unleashes the army's Waaagh! Doctrine, one of the following (see Waaagh! Doctrine for the full rules):
+      <description>Once per game, at the start of any turn, if the army's Warlord is an Ork and is on the table, the army may call a Waaagh! If the army includes a model with the Da Biggest is Da Best special rule (a Warboss, Mek Boss, Painboss, Weirdboss, Ghazghkull Thraka, Boss Snikrot, Boss Zagstruk, Kaptin Badrukk, Mad Dok Grotsnik, Mek Boss Buzzgob, Mozrog Skragbad, Old Zogwort, Wazdakka Gutsmek or Zodgrod Wortsnagga), the Waaagh! unleashes the army's Waaagh! Doctrine, one of the following (see Waaagh! Doctrine for the full rules):
 
 • Krumpin' Waaagh!: all friendly Ork Infantry and Dreadnought units gain Fleet (2), Furious Charge (2), Fearless, Feel No Pain (5+) and Dakka! (5+).
 • Speed Waaagh!: all friendly Ork Cavalry, Jump Infantry, Skirmish and Vehicle units gain Fleet (3), Sudden Strike (3), Hammer of Wrath (+1) and Shrouded (5+) while Running, and all friendly Ork units gain +2 to Reserve rolls.
