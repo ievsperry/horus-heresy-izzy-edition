@@ -162,7 +162,9 @@ In addition, friendly Ork units within 18" may use the Stompa's Leadership chara
 
 A Stompa also counts as 15 additional models for any special rule or ability that counts the number of nearby Ork models.
 
-**Waaagh!** Once per game, at the start of your turn, if your Warlord is an Ork and is on the table, you may call a Waaagh! Until the end of that turn, every unit with this rule gains the following:
+**Waaagh!** Once per game, at the start of any turn, if the army's Warlord is an Ork and is on the table, the army may call a Waaagh! What the Waaagh! does depends on the army's Waaagh! Doctrine: a Krumpin' Waaagh!, Speed Waaagh!, Dakka Waaagh! or Odd Waaagh! (see Waaagh! Doctrine).
+
+A detachment with no model with the Da Biggest is Da Best special rule (no Warboss, Mek Boss, Painboss, Weirdboss or Ghazghkull Thraka) has no Waaagh! Doctrine. When it calls a Waaagh!, until the end of that turn every unit in it with this rule gains the following:
 
 - **Fleet (+1):** the unit gains Fleet (1), or increases an existing Fleet (X) by 1.
 - **Furious Charge (+1):** the unit gains Furious Charge (1), or increases an existing Furious Charge (X) by 1.
@@ -189,7 +191,7 @@ Different warbands focus this psychic momentum in radically different ways. Some
 
 A Waaagh! Doctrine represents the dominant expression of the psychic momentum surrounding an Ork army once battle reaches its peak. Whether through overwhelming violence, impossible speed, endless gunfire or catastrophic psychic power, the Waaagh! focuses itself through the collective instincts of the horde until the entire battlefield descends into barely controlled chaos. Once unleashed, the Waaagh! transforms the Ork warbands from dangerous raiders into an unstoppable tide of destruction capable of overwhelming even the greatest armies of the Imperium.
 
-A Detachment that contains at least one model with the Da Biggest is Da Best special rule may select a single Waaagh! Doctrine. A Waaagh! Doctrine is unleashed when the army calls its Waaagh!: it counts as the army's one Waaagh! call for the battle, and its effects apply along with those of the Waaagh! special rule.
+A Detachment that contains at least one model with the Da Biggest is Da Best special rule may select a single Waaagh! Doctrine. A Waaagh! Doctrine is unleashed when the army calls its Waaagh!: it counts as the army's one Waaagh! call for the battle.
 
 ### Krumpin' Waaagh!
 
