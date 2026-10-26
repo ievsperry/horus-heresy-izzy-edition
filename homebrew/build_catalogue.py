@@ -1561,9 +1561,10 @@ class Builder:
                shared=True, includeChildSelections=True, includeChildForces=False, childId=model_id,
                repeats=1, roundUp=False)
 
-    def per_model_limit(self, e, key, uid, model_id, per=1):
-        """Max 'per' selections for every model of one type in the unit."""
-        cid = add_constraint(e, "max", 0, make_id(key, "per model"), scope="parent", children=True)
+    def per_model_limit(self, e, key, uid, model_id, per=1, kind="max"):
+        """Max (or min) 'per' selections for every model of one type in the unit."""
+        cid = add_constraint(e, kind, 0, make_id(key, "per model") if kind == "max" else make_id(key, "per model min"),
+                             scope="parent", children=True)
         mod = el(child(e, "modifiers"), "modifier", type="increment", field=cid, value=per)
         reps = el(mod, "repeats")
         el(reps, "repeat", field="selections", scope=uid, value=1, percentValue=False, shared=True,
@@ -2591,6 +2592,20 @@ class Builder:
                     # "One Shas'la may be upgraded to a Shas'ui, who may take:" - the upgrade, then
                     # the options that follow belong to the Shas'ui
                     header = who.group(1)
+                fm = re.match(r"(Two|Three|\d+) (?:other )?(.+?) may form an? (.+?), who must select one of the following(?: \(.*\))?$", header)
+                if fm:
+                    # "Two other Guardsmen may form a Heavy Weapons Team, who must select one of the following":
+                    # the team takes the place of two Guardsmen and must take one of the items
+                    src, dst = model_for(fm.group(2)), model_for(fm.group(3))
+                    if src and dst:
+                        n = NUMBER_WORDS.get(fm.group(1).lower()) or int(fm.group(1))
+                        models[dst].update(replaces=src, replaces_n=n, max=1)
+                        mode = {"label": label, "items": [], "header": f"The {dst} must select one of the following"}
+                        extra_groups.append(mode)
+                    else:
+                        self.problems.append(f"{ds['name']}: team header '{header}'")
+                        mode = None
+                    continue
                 hm = re.match(r"One (.+?) may be upgraded to an? (.+?)(?: \((.+)\))?$", header)
                 if hm:
                     src, dst = model_for(hm.group(1)), model_for(hm.group(2))
@@ -2654,7 +2669,7 @@ class Builder:
         for m in models.values():
             if m["replaces"]:
                 base_model = models[m["replaces"]]
-                m["cost"] += base_model["cost"]
+                m["cost"] += base_model["cost"] * m.get("replaces_n", 1)
         add_cost(unit, base)
 
         # Model entries.
@@ -2666,7 +2681,7 @@ class Builder:
             cmax = add_constraint(me, "max", max(m["max"], m["min"]), m["id"] + "max")
             cmin = make_id(m["id"] + "min", "min")
             # Counts that move with other models: (fields, step, other model, every N of it).
-            moves = [((cmin, cmax), -1, o["id"], 1) for o in models.values() if o["replaces"] == mname]
+            moves = [((cmin, cmax), -o.get("replaces_n", 1), o["id"], 1) for o in models.values() if o["replaces"] == mname]
             if m.get("follows"):  # "each with 2 Gretchin crew"
                 other, per = m["follows"]
                 moves.append(((cmin, cmax), per, models[other]["id"], 1))
@@ -2875,9 +2890,15 @@ class Builder:
         ratio = fixed = None
         subject = None
         determiner = header.split(" ")[0]
+        required = None
         m = re.match(r"For every (\d+) models, one (.+?) may", header)
         if m:
             ratio, subject = int(m.group(1)), m.group(2)
+        m = m or re.match(r"(Two|Three|Four|Five|Six|\d+) (.+?) must exchange", header)
+        if m and subject is None:
+            # "Three Guardsmen must exchange their lasgun": exactly that many in the unit
+            fixed = required = NUMBER_WORDS.get(m.group(1).lower()) or int(m.group(1))
+            subject = m.group(2)
         m = m or re.match(r"Up to (\w+) (.+?) may", header)
         if m and subject is None:
             fixed, subject = NUMBER_WORDS.get(m.group(1), self.cost(m.group(1)) or 1), m.group(2)
@@ -2888,6 +2909,8 @@ class Builder:
                 ratio = NUMBER_WORDS.get(m.group(3), 3)
             if m.group(1) == "One" and not m.group(3):
                 fixed = 1  # "One Guardsman may exchange his lasgun", "One model may take": one in the unit
+        if subject:
+            subject = re.sub(r"^(?:other|remaining) ", "", subject)  # "One other Guardsman", "Any remaining Guardsman"
         subject_models = []
         # Only "The ..." and "A ..." can name the whole unit; "Any Genestealer" is one model.
         whole_unit = determiner in ("The", "A", "An") and bool(forms(subject or "") & unit_words)
@@ -2904,7 +2927,9 @@ class Builder:
                 subject_models = [mname]
             # "Any Broadside" is the Broadside Shas'ui and the Broadside Shas'vre
             several = [n for n in models if re.search(r"(^| )" + re.escape(norm(singular_name(subject or ""))) + r"( |$)", norm(n))]
-            if determiner in ("Any", "Each") and len(several) > 1:
+            if determiner in ("Any", "Each") and len(several) > 1 and not (
+                    required is not None or (mname and norm(mname) == norm(singular_name(subject)) and any(
+                        norm(n) == norm(mname) for n in models) and any(" weapons team" in norm(n) for n in several))):
                 subject_models = several
         per_unit = False
         if not subject_models and determiner in ("Any", "Each") and norm(subject or "") in ("model", "models"):
@@ -2921,7 +2946,7 @@ class Builder:
         if determiner == "Each" and norm(subject or "") in ("model", "models") and not subject_models:
             subject_models = [n for n, mm in models.items() if mm["min"] > 0 or mm["replaces"]]
 
-        ex = re.search(r"may exchange (?:his |her |its |their )?(either pair of |one pair of |either |all \w+ |one of its |any |one )?(.+?) for", header)
+        ex = re.search(r"(?:may|must) exchange (?:his |her |its |their )?(either pair of |one pair of |either |all \w+ |one of its |any |one )?(.+?) for", header)
         replaced = "replaced with" in header
         if ex and re.match(r"The (entire|whole) unit", header):
             what = ex.group(2)
@@ -2955,11 +2980,15 @@ class Builder:
                 # "Any Warrior may exchange its devourer" and "One in every three may exchange its
                 # devourer" are one choice of what replaces the devourer.
                 same = [g for g in models[mname]["groups"] if g["kind"] == "exchange" and norm(g["what"]) == norm(what)]
-                if same:
+                if same and (fixed != same[0]["fixed"] or required):
+                    # "Any Veteran ... shotgun", "One other Veteran ... heavy flamer", "Up to three remaining
+                    # Veterans ... special weapons": one swap of the lasgun, each pick with its own limit
+                    same[0].setdefault("subs", []).append({"fixed": fixed, "required": required, "items": list(items)})
+                elif same:
                     same[0]["items"] += items
                 else:
                     models[mname]["groups"].append({"kind": "exchange", "what": what, "qualifier": qualifier,
-                                                    "items": list(items), "fixed": fixed})
+                                                    "items": list(items), "fixed": fixed, "required": required})
             return
         rest = []
         primary = next((n for n, mm in models.items() if mm["min"] > 0), subject_models[0])
@@ -3118,7 +3147,25 @@ class Builder:
                     fsub = el(child(ge, "selectionEntryGroups"), "selectionEntryGroup",
                               name=f"Up to {g['fixed']} may exchange for", hidden=False, id=fkey)
                     add_constraint(fsub, "max", g["fixed"], fkey + "max", scope=uid, children=True)
+                    if g.get("required"):
+                        add_constraint(fsub, "min", g["required"], fkey + "min", scope=uid, children=True)
                     fixed_links = el(fsub, "entryLinks")
+                for si, sub in enumerate(g.get("subs", [])):
+                    # a further pick of the same swap with its own limit across the unit
+                    skey = make_id(gkey, "sub", str(si))
+                    holder = gl
+                    if sub["fixed"]:
+                        ssub = el(child(ge, "selectionEntryGroups"), "selectionEntryGroup",
+                                  name=f"Up to {sub['fixed']} may exchange for", hidden=False, id=skey)
+                        add_constraint(ssub, "max", sub["fixed"], skey + "max", scope=uid, children=True)
+                        if sub.get("required"):
+                            add_constraint(ssub, "min", sub["required"], skey + "min", scope=uid, children=True)
+                        holder = el(ssub, "entryLinks")
+                    for name, cost, _ in sub["items"]:
+                        tid, _, _ = self.option_target(name, key)
+                        e = self.link(holder, tid, name, skey, maximum=item_max)
+                        self.save_on_model(me, m, tid)
+                        add_cost(e, self.cost(cost))
                 if oid and not g["qualifier"].startswith("all"):
                     twin = norm(original).startswith("twin") and not norm(self.weapon_names_for(oid, original)).startswith("twin")
                     e = el(gl, "entryLink", import_=True,
@@ -3341,6 +3388,8 @@ class Builder:
                 ge = el(groups, "selectionEntryGroup", name=f"{prefix}Options", hidden=False, id=gkey)
                 if g["one_of"]:
                     self.per_model_limit(ge, gkey, uid, m["id"])
+                if re.search(r"must select one of the following", g.get("title", "")):
+                    self.per_model_limit(ge, gkey, uid, m["id"], kind="min")  # "Each Heavy Weapons Team must select"
                 if g.get("group_max") and g.get("title", "").startswith("Each model"):
                     self.per_model_limit(ge, gkey + "each", uid, m["id"], g["group_max"])
                 elif g.get("group_max"):
@@ -3627,9 +3676,12 @@ class Builder:
 
     def build_entry_links(self):
         links = child(self.root, "entryLinks")
+        platoons = {c["name"] for c in self.composites}
         for ds in self.datasheets:
             uid = self.units[ds["name"]]
             slot = ds["slot"]
+            if slot in platoons:
+                continue  # taken inside its platoon
             if slot == "Dedicated Transports":
                 note = " ".join(ds["notes"]).lower()
                 if "fast attack" not in note:
@@ -3644,7 +3696,36 @@ class Builder:
             add_category(e, *UNIT_CATEGORY, e.get("id"))
             if ds.get("limit"):
                 add_constraint(e, "max", ds["limit"], e.get("id") + "limit", scope="force", children=True)
+        self.build_composites(links)
         self.exclusive_entries(links)
+
+    def build_composites(self, links):
+        """An Infantry Platoon: one unit entry in its slot holding its squads, each squad between the
+        numbers its Platoon Composition gives ("2-5 Infantry Squads")."""
+        for c in self.composites:
+            cid = make_id("unit", self.faction, c["name"])
+            unit = el(self.shared_entries, "selectionEntry", type="unit", import_=True, name=c["name"],
+                      hidden=False, id=cid, publicationId=self.pub_id)
+            members = el(unit, "entryLinks")
+            for line in c["members"]:
+                m = re.match(r"(\d+)(?:-(\d+))? (.+)$", line)
+                ds = m and next((d for d in self.datasheets if d["slot"] == c["name"]
+                                 and forms(d["name"]) & forms(m.group(3))), None)
+                if not ds:
+                    self.problems.append(f"{c['name']}: no squad for '{line}'")
+                    continue
+                lo, hi = int(m.group(1)), int(m.group(2) or m.group(1))
+                mid = make_id(cid, "member", ds["name"])
+                link = el(members, "entryLink", import_=True, name=ds["name"], hidden=False, id=mid,
+                          type="selectionEntry", targetId=self.units[ds["name"]])
+                add_constraint(link, "min", lo, mid + "min")
+                add_constraint(link, "max", hi, mid + "max")
+            add_cost(unit, 0)
+            e = el(links, "entryLink", import_=True, name=c["name"], hidden=False,
+                   id=make_id("root link", self.faction, c["name"]), type="selectionEntry", targetId=cid)
+            for cat, cname, primary in SLOTS[c["slot"]]:
+                add_category(e, cat, cname, e.get("id"), primary=primary)
+            add_category(e, *UNIT_CATEGORY, e.get("id"))
 
     def exclusive_entries(self, links):
         """'If you take this entry, you may not also take Asdrubael Vect as an HQ choice': each of the two
@@ -3765,8 +3846,15 @@ class Builder:
         self.build_drones()
         self.build_power_tables()
         self.datasheets = []
+        # "### Infantry Platoon" with a "**Platoon Composition**" list: one choice in its slot, made of the
+        # squads in the "## Infantry Platoon" section
+        self.composites = [{"name": sub["title"], "slot": s["title"],
+                            "members": list_items(blocks(sub["lines"]).get("Platoon Composition", []))}
+                           for s in self.sections if s["title"] in SLOTS for sub in s["subs"]
+                           if "**Platoon Composition**" in sub["lines"]]
+        platoons = {c["name"] for c in self.composites}
         for s in self.sections:
-            if s["title"] in SLOTS or s["title"] in ("Dedicated Transports", "Kill Team Units"):
+            if s["title"] in SLOTS or s["title"] in ("Dedicated Transports", "Kill Team Units") or s["title"] in platoons:
                 for sub in s["subs"]:
                     ds = parse_datasheet(sub["title"], sub["lines"], s["title"])
                     if ds:

@@ -170,6 +170,15 @@ loading. The script prints anything in the doc it could not place.
   can never be the Warlord (the Avatar of Khaine, a Daemon Primarch) changes nothing.
 - The World-Rune pick works like a Craftworld: it only shows (and may only be taken) in a detachment
   with an Asuryani unit.
+- A "### Infantry Platoon" whose lines hold a "**Platoon Composition**" list ("2-5 Infantry Squads") is one
+  choice in its slot, holding the squads from the "## Infantry Platoon" section between those numbers.
+  The squads cannot be taken on their own.
+- "Two other Guardsmen may form a Heavy Weapons Team, who must select one of the following" makes the
+  team's profile a model that takes the place of two Guardsmen and must take one of the items. "Each
+  Heavy Weapons Team must select one of the following" is one pick per team.
+- Several swaps of the same weapon keep their own limits: "Any Veteran ... shotgun", "One other Veteran
+  ... heavy flamer" and "Up to three remaining Veterans ... special weapons" are one lasgun swap with a
+  cap on each pick. "Three Guardsmen must exchange their lasgun" means exactly three.
 - A psychic weapon named "X (Psychic Weapon)" is kept apart from a weapon called X but shown as plain X
   (the Runes of Twilight Executioner beside the Exarch's executioner).
 
