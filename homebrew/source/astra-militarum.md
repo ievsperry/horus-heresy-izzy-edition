@@ -40,13 +40,29 @@ Every unit in this document has **Regiment (X)** unless its entry says otherwise
 | Move! Move! Move! | Instead of shooting, the unit moves up to D6 plus its Initiative Characteristic in inches. |
 | Take Aim! | The unit may re-roll to-hit rolls of 1 when shooting. |
 
+**Combined Squad.** Infantry Squads have the option of forming Combined Squads. The decision to form Combined Squads must be made immediately before determining your Warlord Traits. If the Astra Militarum player wishes to deploy his forces in this way, then any Infantry Squad may join another Infantry Squad from the same platoon. For example, an Infantry Platoon consisting of a Platoon Command Squad and three 10-man Infantry Squads can instead choose to deploy as a Platoon Command Squad and a single 30-man Infantry Squad, or a Platoon Command Squad, a 10-man Infantry Squad and a 20-man Infantry Squad. If you decide to form Combined Squads in this manner, they are treated as a single unit for whole of the game.
+
+**Heavy Weapons Team.** Infantry heavy weapons are typically crewed by a team of two men; one fires the weapon while the other supplies the ammunition, and between them they can relocate their weapon if needs be. For all game purposes, each Heavy Weapons Team or Veteran Weapons Team is treated as a single model with the Bulky special rule – it may only fire one weapon in the Shooting phase, only gains one additional Attack for charging, and only counts as one model for Morale checks, for example.
+
+**Senior Officer.** Lord Commissars and Tempestor Primes are Senior Officers. A Senior Officer may take Heirlooms of Conquest (see Wargear); only one of each heirloom may be taken per army.
+
 **Abhuman.** Ogryns, Bullgryns and Ratlings may not receive orders unless an order is issued by Nork Deddog or an officer within 6".
 
+**Fury of the Regiment.** Line troopers drill endlessly with the lasgun until a regiment can lay down a curtain of fire that halts any foe. If a model with this rule has not moved or Run during its controlling player's Movement phase, it may add one to the number of shots fired when making a Shooting Attack with a Las weapon (this does not include lascannons or heavy lascannons).
+
+**Jungle Ambush.** On a turn in which this unit charges or is charged, its models add 1 to their To Wound rolls in close combat.
+
 **Regiment (X).** See Regiments, below.
+
+**Regimental Line (X).** A unit with this rule is a Support Squad Troops choice. If it is in a detachment whose Regiment (X) matches X, it loses the Support Squad special rule, and all its models gain the Line Sub-type and the Fury of the Regiment special rule.
+
+**Shock Troops.** At the end of your turn, if this unit is within 3" of an objective you control, that objective stays under your control even if no models are within range of it, until an enemy unit that can score or deny controls it at the end of any turn.
 
 **Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
 
 **Summary Execution.** If a unit containing a Commissar fails a Morale check or Pinning test, the Commissar may execute one model of your choice from the unit (not the Commissar or another character). The unit then counts as having passed the test, and uses the Commissar's Leadership for the rest of the turn.
+
+**Leman Russ Commander.** A Tank Commander starts the game in a Leman Russ tank, leading a Leman Russ Squadron. Note that any type of Leman Russ can be taken as the Tank Commander's vehicle, and that it can have any upgrades usually available to that type of tank. The Tank Commander's tank is a character, has Ballistic Skill 4 and can be chosen as your army's Warlord. If his tank is Wrecked or suffers an Explodes! result, the Tank Commander is killed. A Tank Commander and his Leman Russ Squadron count as an HQ choice for the entire of the battle. The Tank Commander's Leman Russ cannot leave the unit or join another unit, even if the rest of his squadron are destroyed.
 
 **Tank Orders (X).** A Tank Commander may issue up to X orders to Astra Militarum vehicles within 12", using the same procedure: **Full Throttle!** (the vehicle may move an extra 6" but may not shoot), **Gunners, Kill on Sight!** (re-roll to-hit rolls of 1), or **Strike and Shroud!** (after shooting, the vehicle counts as obscured until your next turn).
 
@@ -130,6 +146,18 @@ Every army is drawn from a regiment with its own way of war. Regiments work like
 
 **Warlord Trait: Grim Resolve.** Friendly Valhallan units within 12" of the Warlord use his Leadership.
 
+### Elysian
+
+*Airborne drop troops who fall on the enemy from Valkyries and grav-chutes, striking deep behind the lines where they are least expected.*
+
+- **Drop Troops:** Infantry units and Sentinels have Deep Strike, including Heavy Weapons Teams.
+- **Iron Discipline:** a unit within 6" of a friendly model with Voice of Command (X) may make a Regroup test even if it is below 25% of its starting strength.
+- **Airborne Platoons:** Infantry Platoon squads and Veterans may take a Valkyrie as a Dedicated Transport instead of a Chimera or Taurox. An Elysian detachment may not include Leman Russ or Rogal Dorn tanks; its armour is Valkyries, Vendettas and Sentinels.
+
+**Advanced Reaction: Rapid Insertion** (Movement phase). Trigger: an enemy unit ends a move within 12" of an objective marker. One Elysian Infantry unit in Reserves that has Deep Strike may immediately arrive by Deep Strike, placed wholly within 12" of that objective marker and more than 1" from enemy models. It scatters as normal and may not declare a charge this turn. This Reaction may be made by a unit in Reserves†.
+
+**Warlord Trait: Drop Commander.** The controlling player may re-roll Reserve rolls for Elysian units, and Elysian units arriving by Deep Strike scatter only D6" instead of 2D6".
+
 ## Warlord Traits
 
 An Astra Militarum Warlord chooses one Warlord Trait: one of the three generic traits below, or the Warlord Trait of his regiment.
@@ -173,12 +201,12 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 
 | 2.0 slot | New Astra Militarum units |
 | --- | --- |
-| HQ | Lord Commissar, Primaris Psyker, Tempestor Prime, Ministorum Priest, Ursarkar E. Creed, Commissar Yarrick, Colonel 'Iron Hand' Straken, Lord Solar Leontus |
-| Elites | Commissar, Kasrkin, Tempestus Scions, Tempestus Command Squad, Veteran Guardsmen, Ogryns, Bullgryns, Nork Deddog, Ratlings, Astropath, Master of Ordnance, Colour Sergeant Kell, Sly Marbo |
-| Troops | Infantry Squad, Conscripts |
+| HQ | Lord Commissar, Primaris Psyker, Tank Commander, Tempestor Prime, Ministorum Priest, Ursarkar E. Creed, Commissar Yarrick, Colonel 'Iron Hand' Straken, Lord Solar Leontus |
+| Elites | Commissar, Kasrkin, Tempestus Scions, Tempestus Command Squad, Veterans, Ogryns, Bullgryns, Nork Deddog, Ratlings, Astropath, Master of Ordnance, Colour Sergeant Kell, Sly Marbo |
+| Troops | Infantry Platoon (Platoon Command Squad, Infantry Squads, Heavy Weapons Squads, Special Weapons Squads, Conscripts) |
 | Dedicated Transports | Chimera, Taurox, Taurox Prime |
 | Fast Attack | Rough Riders, Death Riders, Scout Sentinels, Armoured Sentinels, Hellhound, Valkyrie, Vendetta |
-| Heavy Support | Heavy Weapons Squad, Field Ordnance Battery, Hydra, Wyvern, Manticore, Deathstrike, Leman Russ Punisher, Exterminator or Eradicator, Rogal Dorn Battle Tank |
+| Heavy Support | Field Ordnance Battery, Hydra, Wyvern, Manticore, Deathstrike, Leman Russ Punisher, Exterminator or Eradicator, Rogal Dorn Battle Tank |
 
 An Astra Militarum army may take one Rite of War, chosen when the army is built. Each has a benefit and a limitation.
 
@@ -187,6 +215,8 @@ An Astra Militarum army may take one Rite of War, chosen when the army is built.
 **Mechanised Infantry.** Requires an officer with Voice of Command as Warlord. Benefit: any Infantry unit of 10 or fewer models may take a Chimera as a Dedicated Transport, and units embarked on a Chimera may receive orders. Limitation: every Infantry unit must start the game embarked on a transport.
 
 **Siege Artillery.** Requires a Master of Ordnance or Lord Commissar as Warlord. Benefit: Heavy Weapons Squads and Field Ordnance Batteries may be taken as Troops, and artillery and Barrage weapons may re-roll scatter dice. Limitation: no Fast Attack choices.
+
+**Air Cavalry.** Requires an Elysian officer with Voice of Command as Warlord. Benefit: units with Deep Strike may arrive by Deep Strike Assault from the first game turn, and Reserve rolls for them succeed on a 3+. Infantry units of 12 or fewer models may take a Valkyrie or Vendetta as a Dedicated Transport. Limitation: no Lords of War, and no tanks (Chimera, Deathstrike, Hellhound, Hydra, Leman Russ, Manticore, Rogal Dorn Battle Tank, Wyvern).
 
 **Tempestus Drop Force.** Requires a Tempestor Prime as Warlord. Benefit: Tempestus Scions may be taken as Troops and gain the Line sub-type, and may arrive by Deep Strike from the first game turn†. Limitation: no Heavy Support choices other than Valkyries or Vendettas taken as transports, and no Lords of War.
 
@@ -280,6 +310,7 @@ Base sizes follow recent 40k kits and are approximate.
 - Aura of Discipline: friendly Astra Militarum units within 6" may use his Leadership
 - Independent Character
 - Regiment (X)
+- Senior Officer
 - Summary Execution
 
 **Options**
@@ -289,8 +320,12 @@ Base sizes follow recent 40k kits and are approximate.
 | **The Lord Commissar may exchange his bolt pistol for:** |  |
 | – Plasma pistol | +10 points |
 | – Boltgun | +0 points |
+| – The Emperor's Benediction (Heirloom of Conquest) | +5 points |
 | **The Lord Commissar may exchange his power sword for:** |  |
 | – Power fist | +10 points |
+| – The Blade of Conquest (Heirloom of Conquest) | +25 points |
+| **The Lord Commissar may take one of the following Heirlooms of Conquest:** |  |
+| – The Deathmask of Ollanius | +30 points |
 | **The Lord Commissar may take:** |  |
 | – Carapace armour (4+ save) | +5 points |
 | – Melta bombs | +5 points |
@@ -414,6 +449,7 @@ Base sizes follow recent 40k kits and are approximate.
 - Independent Character (may only join Tempestus units)
 - Move Through Cover
 - Regiment (X)
+- Senior Officer
 - Voice of Command (2), Tempestus units only
 
 **Options**
@@ -423,9 +459,67 @@ Base sizes follow recent 40k kits and are approximate.
 | **The Tempestor Prime may exchange his chainsword for:** |  |
 | – Power sword | +10 points |
 | – Power fist | +15 points |
+| – The Blade of Conquest (Heirloom of Conquest) | +25 points |
+| **The Tempestor Prime may take one of the following Heirlooms of Conquest:** |  |
+| – The Laurels of Command | +25 points |
+| – The Tactical Auto-Reliquary of Tyberius | +25 points |
+| – The Deathmask of Ollanius | +30 points |
 | **The Tempestor Prime may exchange his hot-shot laspistol for:** |  |
 | – Plasma pistol | +10 points |
 | – Command rod (Voice of Command (3)) | +10 points |
+
+### Tank Commander — 290 pts
+
+_30 points for the Tank Commander, plus his Leman Russ and the 1-2 other Leman Russ of his squadron (130 points each, plus weapons). The Tank Commander and his squadron are one HQ choice. These are the Leman Russ variants from the Heavy Support section._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Tank Commander | 10 | 4 | 14 | 13 | 10 | 3 | – | Use model |
+| Leman Russ | 10 | 3 | 14 | 13 | 10 | 3 | – | Use model |
+
+**Unit Composition**
+
+- 1 Tank Commander
+- 1 Leman Russ
+
+**Wargear**
+
+- Exterminator autocannon (Exterminator)
+- Hull (Front) Mounted heavy bolter
+- Smoke launchers
+
+**Unit Type**
+
+- Tank Commander: Vehicle (Tank, Heavy, Character)
+- Leman Russ: Vehicle (Tank, Heavy)
+
+**Special Rules**
+
+- Leman Russ Commander (Tank Commander only)
+- Lumbering Behemoth: the Leman Russ may fire its turret weapon after moving up to 6" as though it had not moved
+- Regiment (X)
+- Tank Orders (1) (Tank Commander only)
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The squadron may take:** |  |
+| – Up to 1 additional Leman Russ | +130 points each, plus weapons |
+| **Any model may exchange its exterminator autocannon for:** |  |
+| – Punisher gatling cannon (Punisher) | +10 points |
+| – Eradicator nova cannon (Eradicator) | +10 points |
+| **Any model may exchange its heavy bolter for:** |  |
+| – Heavy flamer | +0 points |
+| – Lascannon | +15 points |
+| **Any model may take sponsons with one of:** |  |
+| – Two heavy bolters or two heavy flamers | +20 points |
+| – Two multi-meltas | +30 points |
+| – Two plasma cannons | +40 points |
+| **Any model may take:** |  |
+| – Pintle Mounted storm bolter or heavy stubber | +5 points |
+| – Hunter-killer missile | +10 points |
+| – Track guards | +10 points |
 
 ### Ursarkar E. Creed — 90 pts
 
@@ -882,12 +976,13 @@ Base sizes follow recent 40k kits and are approximate.
 | – Power sword | +10 points |
 | – Power fist | +15 points |
 
-### Veteran Guardsmen — 70 pts
+### Veterans — 60 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Veteran | 7 | 3 | 4 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
 | Veteran Sergeant | 7 | 3 | 4 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
+| Veteran Weapons Team | 7 | 3 | 4 | 3 | 3 | 2 | 3 | 2 | 7 | 5+ | 60mm |
 
 **Unit Composition**
 
@@ -896,14 +991,293 @@ Base sizes follow recent 40k kits and are approximate.
 
 **Wargear**
 
-- Frag grenades
-- Lasgun
-- Laspistol and close combat weapon (Sergeant only)
+- Veteran: Flak armour, frag grenades, lasgun
+- Veteran Sergeant: Flak armour, frag grenades, laspistol, close combat weapon
+- Veteran Weapons Team: Flak armour, frag grenades, lasgun
 
 **Unit Type**
 
 - Veteran: Infantry
 - Veteran Sergeant: Infantry (Character)
+- Veteran Weapons Team: Infantry
+
+**Special Rules**
+
+- Bulky (2) (Veteran Weapons Team only)
+- Heavy Weapons Team (Veteran Weapons Team only)
+- Regiment (X)
+
+**Dedicated Transport**
+
+The squad may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The Veteran Sergeant may exchange his close combat weapon for one of the following (Melee Weapons):** |  |
+| – Power weapon | +15 points |
+| – Power fist | +25 points |
+| **The Veteran Sergeant may exchange his laspistol for one of the following (Ranged Weapons):** |  |
+| – Bolt pistol | +1 point |
+| – Boltgun | +1 point |
+| – Plasma pistol | +15 points |
+| **Any Veteran may exchange his lasgun for:** |  |
+| – Shotgun | +0 points |
+| **One Veteran may take:** |  |
+| – Vox-caster | +5 points |
+| **One other Veteran may exchange his lasgun for:** |  |
+| – Heavy flamer | +10 points |
+| **Two other Veterans may form a Veteran Weapons Team, who must select one of the following (Heavy Weapons):** |  |
+| – Mortar | +5 points |
+| – Autocannon | +10 points |
+| – Heavy bolter | +10 points |
+| – Missile launcher | +15 points |
+| – Lascannon | +20 points |
+| **A Veteran Weapons Team with a missile launcher may take:** |  |
+| – Flakk missiles | +10 points |
+| **Up to three remaining Veterans may exchange their lasgun for one of the following (Special Weapons; up to two if a heavy flamer is taken):** |  |
+| – Sniper rifle | +2 points |
+| – Flamer | +5 points |
+| – Grenade launcher | +5 points |
+| – Meltagun | +10 points |
+| – Plasma gun | +15 points |
+| **The squad may take:** |  |
+| – Krak grenades | +10 points |
+| **The squad may choose any of the following doctrines:** |  |
+| – Grenadiers | +15 points |
+| – Forward Sentries | +10 points |
+| – Demolitions | +30 points |
+
+## Troops
+
+### Infantry Platoon
+
+*Each Infantry Platoon counts as a single Troops choice on the Force Organisation chart.*
+
+**Platoon Composition**
+
+- 1 Platoon Command Squad
+- 2-5 Infantry Squads
+- 0-5 Heavy Weapons Squads
+- 0-3 Special Weapons Squads
+- 0-1 Conscripts
+
+The squads are in Infantry Platoon below, and each is a separate unit on the battlefield. Their weapon options come from the Platoon Weapon Lists.
+
+## Infantry Platoon
+
+### Platoon Command Squad — 30 pts
+
+_Each Infantry Platoon must include one (and only one) Platoon Command Squad._
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Platoon Commander | 7 | 4 | 4 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
+| Guardsman | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
+| Heavy Weapons Team | 7 | 3 | 3 | 3 | 3 | 2 | 3 | 2 | 7 | 5+ | 60mm |
+
+**Unit Composition**
+
+- 1 Platoon Commander
+- 4 Guardsmen
+
+**Wargear**
+
+- Platoon Commander: Flak armour, frag grenades, laspistol, close combat weapon
+- Guardsman: Flak armour, frag grenades, lasgun
+- Heavy Weapons Team: Flak armour, frag grenades, lasgun
+
+**Unit Type**
+
+- Platoon Commander: Infantry (Character, Line)
+- Guardsman: Infantry (Line)
+- Heavy Weapons Team: Infantry (Line)
+
+**Special Rules**
+
+- Bulky (2) (Heavy Weapons Team only)
+- Heavy Weapons Team (Heavy Weapons Team only)
+- Regiment (X)
+- Voice of Command (1) (Platoon Commander only)
+
+**Dedicated Transport**
+
+The squad may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The Platoon Commander may exchange his close combat weapon for one of the following (Melee Weapons):** |  |
+| – Power weapon | +15 points |
+| – Power fist | +25 points |
+| **The Platoon Commander may exchange his laspistol for one of the following (Ranged Weapons):** |  |
+| – Bolt pistol | +1 point |
+| – Boltgun | +1 point |
+| – Plasma pistol | +15 points |
+| **The Platoon Commander may take:** |  |
+| – Melta bombs | +5 points |
+| **Any Guardsman may exchange his lasgun for:** |  |
+| – Laspistol and close combat weapon | +0 points |
+| **One Guardsman may take:** |  |
+| – Vox-caster | +5 points |
+| **One other Guardsman may exchange his lasgun for:** |  |
+| – Heavy flamer | +10 points |
+| **One other Guardsman may take:** |  |
+| – Platoon standard | +10 points |
+| **One other Guardsman may take:** |  |
+| – Medi-pack | +15 points |
+| **Two other Guardsmen may form a Heavy Weapons Team, who must select one of the following (Heavy Weapons):** |  |
+| – Mortar | +5 points |
+| – Autocannon | +10 points |
+| – Heavy bolter | +10 points |
+| – Missile launcher | +15 points |
+| – Lascannon | +20 points |
+| **A Heavy Weapons Team with a missile launcher may take:** |  |
+| – Flakk missiles | +10 points |
+| **Any remaining Guardsman may exchange his lasgun for one of the following (Special Weapons):** |  |
+| – Sniper rifle | +2 points |
+| – Flamer | +5 points |
+| – Grenade launcher | +5 points |
+| – Meltagun | +10 points |
+| – Plasma gun | +15 points |
+| **The entire squad may take:** |  |
+| – Krak grenades | +1 point per model |
+
+### Infantry Squad — 50 pts
+
+_Each Infantry Platoon must include between two and five Infantry Squads. Use this datasheet for Cadian Shock Troops, Catachan Jungle Fighters, Death Korps of Krieg, and any other regiment's line infantry; the Regiment (X) rule gives each its character._
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Guardsman | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
+| Sergeant | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
+| Heavy Weapons Team | 7 | 3 | 3 | 3 | 3 | 2 | 3 | 2 | 7 | 5+ | 60mm |
+
+**Unit Composition**
+
+- 9 Guardsmen
+- 1 Sergeant
+
+**Wargear**
+
+- Guardsman: Flak armour, frag grenades, lasgun
+- Sergeant: Flak armour, frag grenades, laspistol, close combat weapon
+- Heavy Weapons Team: Flak armour, frag grenades, lasgun
+
+**Unit Type**
+
+- Guardsman: Infantry (Line)
+- Sergeant: Infantry (Character, Line)
+- Heavy Weapons Team: Infantry (Line)
+
+**Special Rules**
+
+- Combined Squad
+- Bulky (2) (Heavy Weapons Team only)
+- Heavy Weapons Team (Heavy Weapons Team only)
+- Regiment (X)
+
+**Dedicated Transport**
+
+The squad may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The Sergeant may exchange his laspistol for one of the following (Ranged Weapons):** |  |
+| – Bolt pistol | +1 point |
+| – Boltgun | +1 point |
+| – Plasma pistol | +15 points |
+| **The Sergeant may exchange his close combat weapon for:** |  |
+| – Power weapon | +15 points |
+| **The Sergeant may take:** |  |
+| – Melta bombs | +5 points |
+| **One Guardsman may take:** |  |
+| – Vox-caster | +5 points |
+| **Two other Guardsmen may form a Heavy Weapons Team, who must select one of the following (Heavy Weapons):** |  |
+| – Mortar | +5 points |
+| – Autocannon | +10 points |
+| – Heavy bolter | +10 points |
+| – Missile launcher | +15 points |
+| – Lascannon | +20 points |
+| **A Heavy Weapons Team with a missile launcher may take:** |  |
+| – Flakk missiles | +10 points |
+| **One remaining Guardsman may exchange his lasgun for one of the following (Special Weapons):** |  |
+| – Sniper rifle | +2 points |
+| – Flamer | +5 points |
+| – Grenade launcher | +5 points |
+| – Meltagun | +10 points |
+| – Plasma gun | +15 points |
+| **The entire squad may take:** |  |
+| – Krak grenades | +1 point per model |
+
+### Heavy Weapons Squad — 45 pts
+
+_Each Infantry Platoon may include up to five Heavy Weapons Squads._
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Heavy Weapons Team | 7 | 3 | 3 | 3 | 3 | 2 | 3 | 2 | 7 | 5+ | 60mm |
+
+**Unit Composition**
+
+- 3 Heavy Weapons Teams
+
+**Wargear**
+
+- Flak armour
+- Frag grenades
+- Lasgun
+
+**Unit Type**
+
+- Heavy Weapons Team: Infantry
+
+**Special Rules**
+
+- Bulky (2)
+- Heavy Weapons Team
+- Regiment (X)
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **Each Heavy Weapons Team must select one of the following (Heavy Weapons):** |  |
+| – Mortar | +5 points |
+| – Autocannon | +10 points |
+| – Heavy bolter | +10 points |
+| – Missile launcher | +15 points |
+| – Lascannon | +20 points |
+| **A Heavy Weapons Team with a missile launcher may take:** |  |
+| – Flakk missiles | +10 points |
+| **The entire squad may take:** |  |
+| – Krak grenades | +3 points |
+
+### Special Weapons Squad — 30 pts
+
+_Each Infantry Platoon may include up to three Special Weapons Squads._
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Guardsman | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
+
+**Unit Composition**
+
+- 6 Guardsmen
+
+**Wargear**
+
+- Flak armour
+- Frag grenades
+- Lasgun
+
+**Unit Type**
+
+- Guardsman: Infantry
 
 **Special Rules**
 
@@ -913,23 +1287,19 @@ Base sizes follow recent 40k kits and are approximate.
 
 | Option | Cost |
 | --- | --: |
-| **Up to three Veterans may exchange their lasgun for:** |  |
-| – Flamer, grenade launcher or sniper rifle | +5 points |
+| **Three Guardsmen must exchange their lasgun for one of the following (Special Weapons):** |  |
+| – Sniper rifle | +2 points |
+| – Flamer | +5 points |
+| – Grenade launcher | +5 points |
 | – Meltagun | +10 points |
 | – Plasma gun | +15 points |
-| **Two Veterans may form a heavy weapon team with one of:** |  |
-| – Heavy bolter | +10 points |
-| – Autocannon | +10 points |
-| – Missile launcher | +15 points |
-| – Lascannon | +20 points |
-| **The unit may take one of the following doctrines:** |  |
-| – Carapace armour (4+ save) | +30 points |
-| – Forward Sentries (camo cloaks: Stealth and Infiltrate) | +30 points |
-| – Demolitions (one model gains a demolition charge; the unit gains melta bombs) | +30 points |
-
-## Troops
+| – Demolition charge | +20 points |
+| **The entire squad may take:** |  |
+| – Krak grenades | +6 points |
 
 ### Conscripts — 60 pts
+
+_Each Infantry Platoon may include one squad of Conscripts._
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -947,11 +1317,10 @@ Base sizes follow recent 40k kits and are approximate.
 
 **Unit Type**
 
-- Conscript: Infantry (Line)
+- Conscript: Infantry
 
 **Special Rules**
 
-- Raw Recruits: the unit takes the Leadership test for orders using its own Leadership, not the officer's
 - Regiment (X)
 
 **Options**
@@ -961,62 +1330,172 @@ Base sizes follow recent 40k kits and are approximate.
 | **The Conscripts may take:** |  |
 | – Up to 30 additional Conscripts | +3 points each |
 
-### Infantry Squad — 50 pts
+### Cadian Shock Troops — 65 pts
 
-Use this datasheet for Cadian Shock Troops, Catachan Jungle Fighters, Death Korps of Krieg, and any other regiment's line infantry; the Regiment (X) rule gives each its character.
+A separate Troops unit, not part of an Infantry Platoon.
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Guardsman | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
-| Sergeant | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
+| Shock Trooper | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
+| Shock Trooper Sergeant | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
 
 **Unit Composition**
 
-- 9 Guardsmen
-- 1 Sergeant
+- 9 Shock Troopers
+- 1 Shock Trooper Sergeant
 
 **Wargear**
 
+- Close combat weapon (Shock Troopers only)
+- Chainsword (Shock Trooper Sergeant only)
 - Flak armour
 - Frag grenades
-- Lasgun
-- Laspistol and close combat weapon (Sergeant only)
+- Lasgun (Shock Troopers only)
+- Laspistol (Shock Trooper Sergeant only)
 
 **Unit Type**
 
-- Guardsman: Infantry (Line)
-- Sergeant: Infantry (Character, Line)
+- Shock Trooper: Infantry
+- Shock Trooper Sergeant: Infantry (Character)
 
 **Special Rules**
 
 - Regiment (X)
+- Regimental Line (Cadian)
+- Shock Troops
+- Support Squad
 
 **Dedicated Transport**
 
-The unit may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+A unit of no more than 12 models may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
 
 **Options**
 
 | Option | Cost |
 | --- | --: |
-| **One Guardsman may exchange his lasgun for:** |  |
-| – Flamer, grenade launcher or sniper rifle | +5 points |
-| – Meltagun | +10 points |
-| – Plasma gun | +15 points |
-| **Two Guardsmen may form a heavy weapon team with one of:** |  |
-| – Heavy bolter | +10 points |
-| – Autocannon | +10 points |
-| – Mortar | +5 points |
-| – Missile launcher | +15 points |
-| – Lascannon | +20 points |
-| **One Guardsman may take:** |  |
-| – Vox-caster (the unit may re-roll the Leadership test for orders) | +5 points |
-| **The Sergeant may exchange his laspistol for:** |  |
+| **The unit may include:** |  |
+| – Up to 10 additional Shock Troopers | +6 points each |
+| **For every 10 models, up to two Shock Troopers may exchange their lasgun for one of the following (no weapon may be taken more than once per 10 models):** |  |
+| – Flamer or grenade launcher | +5 points each |
+| – Meltagun | +10 points each |
+| – Plasma gun | +15 points each |
+| **For every 10 models, one Shock Trooper with a lasgun may take:** |  |
+| – Vox-caster | +5 points |
+| **Any Shock Trooper Sergeant may exchange his laspistol for:** |  |
+| – Bolt pistol | +1 point |
+| **Any Shock Trooper Sergeant may exchange his laspistol and chainsword for:** |  |
+| – Sergeant's autogun and close combat weapon | +0 points |
+| **The entire unit may exchange its flak armour for:** |  |
+| – Carapace armour | +3 points per model |
+
+### Catachan Jungle Fighters — 65 pts
+
+A separate Troops unit, not part of an Infantry Platoon.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Jungle Fighter | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
+| Jungle Fighter Sergeant | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
+
+**Unit Composition**
+
+- 9 Jungle Fighters
+- 1 Jungle Fighter Sergeant
+
+**Wargear**
+
+- Close combat weapon
+- Flak armour
+- Frag grenades
+- Lasgun (Jungle Fighters only)
+- Laspistol (Jungle Fighter Sergeant only)
+
+**Unit Type**
+
+- Jungle Fighter: Infantry
+- Jungle Fighter Sergeant: Infantry (Character)
+
+**Special Rules**
+
+- Jungle Ambush
+- Regiment (X)
+- Regimental Line (Catachan)
+- Scout
+- Support Squad
+
+**Dedicated Transport**
+
+A unit of no more than 12 models may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The unit may include:** |  |
+| – Up to 10 additional Jungle Fighters | +6 points each |
+| **For every 5 models, one Jungle Fighter may exchange his lasgun for:** |  |
+| – Flamer | +5 points each |
+| **For every 10 models, one Jungle Fighter with a lasgun may take:** |  |
+| – Vox-caster | +5 points |
+
+### Death Korps of Krieg — 65 pts
+
+A separate Troops unit, not part of an Infantry Platoon.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Death Korps Trooper | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
+| Death Korps Watchmaster | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
+
+**Unit Composition**
+
+- 9 Death Korps Troopers
+- 1 Death Korps Watchmaster
+
+**Wargear**
+
+- Chainsword (Death Korps Watchmaster only)
+- Close combat weapon (Death Korps Troopers only)
+- Flak armour
+- Frag grenades
+- Lasgun (Death Korps Troopers only)
+- Laspistol (Death Korps Watchmaster only)
+
+**Unit Type**
+
+- Death Korps Trooper: Infantry
+- Death Korps Watchmaster: Infantry (Character)
+
+**Special Rules**
+
+- Regiment (X)
+- Regimental Line (Death Korps of Krieg)
+- Support Squad
+
+**Dedicated Transport**
+
+A unit of no more than 12 models may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The unit may include:** |  |
+| – Up to 10 additional Death Korps Troopers | +6 points each |
+| **For every 10 models, up to two Death Korps Troopers may exchange their lasgun for one of the following (no weapon may be taken more than once per 10 models):** |  |
+| – Flamer, grenade launcher or long-las | +5 points each |
+| – Meltagun | +10 points each |
+| – Plasma gun | +15 points each |
+| **For every 10 models, one Death Korps Trooper with a lasgun may take one of the following (a model may only take one):** |  |
+| – Death Korps medi-pack | +10 points |
+| – Vox-caster | +5 points |
+| **Any Death Korps Watchmaster may exchange his laspistol and chainsword for:** |  |
+| – Boltgun and close combat weapon | +1 point |
+| **Any Death Korps Watchmaster may exchange his chainsword for:** |  |
+| – Power sword | +10 points |
+| **Any Death Korps Watchmaster may exchange his laspistol for one of the following:** |  |
 | – Bolt pistol | +1 point |
 | – Plasma pistol | +10 points |
-| **The Sergeant may exchange his close combat weapon for:** |  |
-| – Chainsword | +0 points |
-| – Power sword | +10 points |
 
 ## Dedicated Transports
 
@@ -1487,40 +1966,6 @@ The unit may take a Chimera or Taurox as a Dedicated Transport. This does not us
 | – Malleus rocket launcher | +0 points |
 | – Heavy lascannon | +10 points |
 
-### Heavy Weapons Squad — 60 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Heavy Weapon Team | 7 | 3 | 3 | 3 | 3 | 2 | 3 | 2 | 7 | 5+ | 60mm |
-
-**Unit Composition**
-
-- 3 Heavy Weapon Teams
-
-**Wargear**
-
-- Frag grenades
-- Heavy bolter
-- Lasgun
-
-**Unit Type**
-
-- Heavy Weapon Team: Infantry (Heavy)
-
-**Special Rules**
-
-- Regiment (X)
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **Any Heavy Weapon Team may exchange its heavy bolter for:** |  |
-| – Mortar | +0 points |
-| – Autocannon | +0 points |
-| – Missile launcher | +5 points |
-| – Lascannon | +10 points |
-
 ### Hydra — 75 pts
 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
@@ -1697,9 +2142,79 @@ Use this datasheet only for the turret variants without an official 2.0 version;
 | **The battery may take:** |  |
 | – Up to 2 additional Wyverns | +65 points each |
 
+## Platoon Weapon Lists
+
+The Infantry Platoon squads and Veterans take their weapon options from these lists; each datasheet above repeats the items it may take. Special Issue Wargear and the Heirlooms of Conquest are listed for reference.
+
+### Melee Weapons
+
+A model can replace his close combat weapon with one of the following:
+
+| Item | Cost |
+| --- | --: |
+| Power weapon | 15 pts |
+| Power fist | 25 pts |
+
+### Ranged Weapons
+
+A model can replace his laspistol with one of the following:
+
+| Item | Cost |
+| --- | --: |
+| Bolt pistol | 1 pt |
+| Boltgun | 1 pt |
+| Plasma pistol | 15 pts |
+
+### Special Weapons
+
+| Item | Cost |
+| --- | --: |
+| Sniper rifle¹ | 2 pts |
+| Flamer | 5 pts |
+| Grenade launcher | 5 pts |
+| Hot-shot volley gun² | 10 pts |
+| Meltagun | 10 pts |
+| Plasma gun | 15 pts |
+| Demolition charge³ | 20 pts |
+
+¹ Cannot be taken by Rough Riders, Militarum Tempestus Scions or Militarum Tempestus Command Squad. ² Militarum Tempestus Scions and Militarum Tempestus Command Squad only. ³ Special Weapons Squad only.
+
+### Heavy Weapons
+
+| Item | Cost |
+| --- | --: |
+| Mortar | 5 pts |
+| Autocannon or heavy bolter | 10 pts |
+| Missile launcher (with frag and krak missiles) | 15 pts |
+| May also take flakk missiles | 10 pts |
+| Lascannon | 20 pts |
+
+### Special Issue Wargear
+
+| Item | Cost |
+| --- | --: |
+| Krak grenades | 1 pt per model |
+| Carapace armour | 3 pts per model |
+| Melta bombs | 5 pts per model |
+| Camo gear | 10 pts per model |
+
+### Heirlooms of Conquest
+
+Only one of each heirloom may be taken per army.
+
+| Item | Cost |
+| --- | --: |
+| The Emperor's Benediction¹ | 5 pts |
+| The Laurels of Command² | 25 pts |
+| The Tactical Auto-Reliquary of Tyberius² | 25 pts |
+| The Blade of Conquest³ | 25 pts |
+| The Deathmask of Ollanius | 30 pts |
+
+¹ Lord Commissar only. Replaces bolt pistol. ² Company Commander only. ³ Replaces the character's close combat weapon.
+
 ## Wargear
 
-Wargear that already exists in 2.0 (frag and krak grenades, melta bombs, smoke launchers, hunter-killer missiles, dozer blades) uses its official rules.
+Wargear that already exists in 2.0 (frag and krak grenades, melta bombs, smoke launchers, hunter-killer missiles, dozer blades) uses its official rules. House rule: smoke launchers grant Shrouded (5+) instead of their 6+ Cover Save; the official rule is kept alongside it in the game system.
 
 ### Brute Shield
 
@@ -1711,7 +2226,13 @@ A model with a brute shield has a 5+ Invulnerable Save.
 
 *Light-bending cloaks worn by forward sentries.*
 
-A unit wearing camo cloaks gains Stealth and Infiltrate.
+A unit wearing camo cloaks gains Infiltrate and Shrouded (6+). If the unit already has Shrouded (X), it instead improves that value by 1, to a maximum of Shrouded (4+).
+
+### Camo Gear
+
+*Mottled fatigues, netting and foliage that blur a squad into its surroundings.*
+
+A unit in which every model has camo gear has Shrouded (5+).
 
 ### Carapace Armour
 
@@ -1725,6 +2246,24 @@ Carapace armour confers a 4+ Armour Save.
 
 A Tempestor Prime with a command rod has Voice of Command (3).
 
+### Demolitions
+
+*Veteran doctrine.*
+
+The entire squad has melta bombs. One Veteran carries a demolition charge in addition to his other equipment.
+
+### Forward Sentries
+
+*Veteran doctrine.*
+
+The squad has camo gear and snare mines.
+
+### Grenadiers
+
+*Veteran doctrine.*
+
+The squad replaces its flak armour with carapace armour.
+
 ### Flak Armour
 
 *Layered padding issued by the trillion to the Imperial Guard.*
@@ -1737,11 +2276,59 @@ Flak armour confers a 5+ Armour Save.
 
 Frag bombs count as frag grenades†.
 
+### Death Korps Medi-pack
+
+*Krieg medics patch up the wounded and drive them back into the line.*
+
+A unit that includes a model with a Death Korps medi-pack has Feel No Pain (5+).
+
+### Melta Bombs
+
+*Shaped magnetic charges for cracking armour.*
+
+A model with melta bombs may use them in the same way as krak grenades, but the automatic Hit is Str 8, AP 1 and has Armourbane (Melta)†.
+
 ### Medi-pack
 
 *Field surgery gear and stimms carried by a squad medic.*
 
 A unit that includes a model with a medi-pack has Feel No Pain (6+).
+
+### The Blade of Conquest
+
+*The greatest Imperial Guard commander ever to bestride the stars, Warmaster Solar Macharius reclaimed a thousand worlds for the Emperor. Upon his death he was enshrined as a saint; the six ornate blades of his subordinate generals laid upon the altar to his glory. Only one of these weapons has been reclaimed to active service. The Blade of Conquest is a beautiful example of bladesmithing, but its true worth lies in the authority it symbolises. Any man who wields this sword can light a righteous fire in the hearts of his men, for they fight in the shadow of Saint Solar himself.*
+
+Heirloom of Conquest — replaces the bearer's close combat weapon. Only one of each heirloom may be taken per army. Its profile is in the Armoury.
+
+### The Deathmask of Ollanius
+
+*Ollanius the Pious is the epitome of Imperial sainthood, believed martyred at the hands of Horus himself. In the millennia since his passing, Ollanius' deathmask has been revered as a holy relic; whosoever wears this ancient artefact is granted the determination and endurance of the famous martyr himself. The mask is a terrifying piece of craftsmanship, depicting in obsidian and void-fired bronze the agonised visage of a tortured angel. It is said that, in the presence of traitors, the Deathmask will weep tears of blood.*
+
+Heirloom of Conquest. Only one of each heirloom may be taken per army.
+
+The bearer of the Deathmask of Ollanius gains a 4+ invulnerable save, and has the It Will Not Die and Fear special rules.
+
+### The Emperor's Benediction
+
+*Wielded by a succession of brutal, uncompromising Commissars, this masterwork bolt pistol is feared by all. Its elementary but bloodthirsty machine spirit has been blamed for a series of unfortunate 'accidents' on the field of battle. In spite of this, the Officio Prefectus view the Emperor's Benediction as an artefact of some distinction – some say that it can taste cowardice even before the reprehensible act has been committed.*
+
+Heirloom of Conquest — Lord Commissar only; replaces the bolt pistol. Only one of each heirloom may be taken per army. Its profile is in the Armoury.
+
+### The Laurels of Command
+
+*The Laurels of Command are a callous and controversial means to ensure obedience. Concealed within their peerless artistry is a band of empathic-impulsion circuitry which allows the wearer limited control over the minds of indoctrinated individuals via subliminal suggestion. Under their effects even cowards fight to the last, while orders are executed in perfect synchronisation. However, if the officer wearing the Laurels is slain, the echoes of his death can leave his subordinates reeling in confusion.*
+
+Heirloom of Conquest — Company Commander only; Tempestor Prime in this list. Only one of each heirloom may be taken per army.
+
+Whenever a friendly unit from Codex: Astra Militarum within 6" of the bearer is required to take a Morale check, the bearer of the Laurels may choose whether they pass or fail. However, if the model with the Laurels is removed as a casualty, all friendly units from Codex: Astra Militarum within 6" must take an immediate Pinning test.
+
+### The Tactical Auto-Reliquary of Tyberius
+
+*Built into the gold-chased skull of Lord Commander Lucellin Tyberius himself, this device contains a web of psycho-circuitry containing Tyberius' memory engrams and tactical acumen – and with it, his curmudgeonly and overbearing personality. Borne aloft by its own gravitic motors, the device observes and evaluates an officer's decisions. The moment it considers an order poorly chosen, the skull cuts into the vox and loudly overrides its exasperated owner. In imperious, static-laden tones, the auto-reliquary will countermand the officer's orders and issue a barrage of its own from Tyberius' store of tactical insights.*
+
+Heirloom of Conquest — Company Commander only; Tempestor Prime in this list. Only one of each heirloom may be taken per army.
+
+When rolling Leadership tests for orders issued by an officer with the Tactical Auto-Reliquary, any successful Leadership test that results in a double will count as Inspired Tactics. However, if you roll a double 1 while using the Tactical Auto-Reliquary, you still benefit from Inspired Tactics, though the officer has 'accidentally' shut the device out of the vox network – it may no longer be used this game.
 
 ### Platoon Standard
 
@@ -1781,7 +2368,7 @@ A unit that includes a model with a vox-caster may re-roll the Leadership test f
 
 ## Armoury
 
-Weapons that already exist in 2.0 use their official profiles: bolt pistol, boltgun, storm bolter, heavy bolter, heavy stubber, flamer, heavy flamer, meltagun, multi-melta, plasma pistol, plasma gun, plasma cannon, grenade launcher, mortar, autocannon, missile launcher, lascannon, multi-laser, battle cannon, power sword, power fist, chainsword and force weapons. The weapons below are new.
+Weapons that already exist in 2.0 use their official profiles: bolt pistol, boltgun, storm bolter, heavy bolter, heavy stubber, flamer, heavy flamer, meltagun, multi-melta, plasma pistol, plasma gun, plasma cannon, grenade launcher, autocannon, lascannon, multi-laser, battle cannon, power sword, power fist, chainsword and force weapons. A power weapon is the 2.0 choice of power axe, power lance, power maul or power sword, and the missile launcher, flakk missiles and mortar use the profiles below. The weapons below are new.
 
 ### Close Combat Weapons
 
@@ -1791,6 +2378,7 @@ Weapons that already exist in 2.0 use their official profiles: bolt pistol, bolt
 | Bullgryn maul | – | +2 | 4 | Melee, Concussive |
 | Claw of the Desert Tigers | – | x2 | 2 | Melee, Rending (5+) |
 | Close combat weapon | – | User | – | Melee |
+| The Blade of Conquest | – | +1 | 3 | Melee, Master-crafted |
 | Conquest | – | +1 | 2 | Melee, Murderous Strike (5+)† |
 | Envenomed blade | – | User | – | Melee, Poisoned (2+)† |
 | Eviscerator | – | x2 | 2 | Melee, Two-handed, Unwieldy |
@@ -1800,6 +2388,25 @@ Weapons that already exist in 2.0 use their official profiles: bolt pistol, bolt
 | Sentinel chainsaw | – | +1 | 4 | Melee, Shred |
 
 ### Ranged Weapons
+
+#### Heirloom Pistol
+
+*The Emperor's Benediction, a Heirloom of Conquest.*
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| The Emperor's Benediction | 12" | 5 | 4 | Pistol 1, Precision Shot, Master-crafted |
+
+#### Infantry Heavy Weapons
+
+*The mortars and missile launchers of the Heavy Weapons Teams. A missile launcher fires frag or krak missiles; flakk missiles are bought for it separately.*
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Flakk missiles | 48" | 7 | 3 | Heavy 1, Skyfire |
+| Missile launcher – frag | 48" | 4 | 6 | Heavy 1, Blast (3"), Pinning |
+| Missile launcher – krak | 48" | 8 | 3 | Heavy 1 |
+| Mortar | 48" | 4 | 6 | Heavy 1, Barrage, Blast (3")† |
 
 #### Abhuman and Specialist Guns
 
@@ -1811,6 +2418,7 @@ Weapons that already exist in 2.0 use their official profiles: bolt pistol, bolt
 | Grenadier gauntlet | 12" | 4 | 6 | Assault 1, Blast (3") |
 | Ripper gun | 12" | 5 | – | Assault 3 |
 | Ripper pistol | 12" | 3 | – | Pistol 1, Poisoned (3+)† |
+| Sergeant's autogun | 24" | 3 | – | Assault 2 |
 | Shotgun | 12" | 3 | – | Assault 2 |
 | Sniper rifle | 36" | 3 | 6 | Heavy 1, Sniper, Rending (6+), Pinning† |
 
@@ -1840,6 +2448,7 @@ All weapons listed here are counted as 'Las' weapons for those rules that affect
 | Hot-shot volley gun | 24" | 4 | 3 | Heavy 4 |
 | Lasgun | 24" | 3 | – | Rapid Fire |
 | Laspistol | 12" | 3 | – | Pistol 1 |
+| Long-las | 36" | 3 | 6 | Heavy 1, Sniper, Rending (6+), Pinning |
 | Twin hot-shot volley gun | 24" | 4 | 3 | Heavy 4, Twin-linked |
 
 #### Tank and Artillery Weapons

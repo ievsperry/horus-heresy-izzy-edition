@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -11840,6 +11840,31 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e93-89f2-82c6-41aa" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7854-4a1d-cd3e-759c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Up to 2 may exchange for" hidden="false" id="2284-5d73-a88b-ec06">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="b430-b2e9-7e35-7063" shared="true" id="c9a9-3313-6647-188f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Flamer*" hidden="false" id="79b4-a0d0-3ffb-7e22" type="selectionEntry" targetId="47a2-04b7-0e88-683d">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cd2-f918-fc14-4477" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Missile pod" hidden="false" id="3b17-0af4-eaa1-665c" type="selectionEntry" targetId="ee7c-5056-7a11-708b">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c41-9b83-91a0-5e81" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Pulse rifle" hidden="false" id="d573-c7ae-bc9c-4173" type="selectionEntry" targetId="b3cb-c191-6195-e754">
                   <constraints>
@@ -11852,22 +11877,6 @@
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Flamer*" hidden="false" id="aaa8-bef4-9e29-8c8b" type="selectionEntry" targetId="47a2-04b7-0e88-683d">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d63-f693-f34a-316f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Missile pod" hidden="false" id="0b7c-8dc1-b7e5-1518" type="selectionEntry" targetId="ee7c-5056-7a11-708b">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4f5-8d5b-d448-b8ee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
                   </costs>
                 </entryLink>
               </entryLinks>

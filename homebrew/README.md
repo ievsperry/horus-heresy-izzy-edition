@@ -170,6 +170,46 @@ loading. The script prints anything in the doc it could not place.
   can never be the Warlord (the Avatar of Khaine, a Daemon Primarch) changes nothing.
 - The World-Rune pick works like a Craftworld: it only shows (and may only be taken) in a detachment
   with an Asuryani unit.
+- A "### Infantry Platoon" whose lines hold a "**Platoon Composition**" list ("2-5 Infantry Squads") is one
+  choice in its slot, holding the squads from the "## Infantry Platoon" section between those numbers.
+  The squads cannot be taken on their own.
+- "Two other Guardsmen may form a Heavy Weapons Team, who must select one of the following" makes the
+  team's profile a model that takes the place of two Guardsmen and must take one of the items. "Each
+  Heavy Weapons Team must select one of the following" is one pick per team.
+- Several swaps of the same weapon keep their own limits: "Any Veteran ... shotgun", "One other Veteran
+  ... heavy flamer" and "Up to three remaining Veterans ... special weapons" are one lasgun swap with a
+  cap on each pick. "Three Guardsmen must exchange their lasgun" means exactly three.
+- "One other Guardsman ..." and "Any remaining Guardsman ..." make those picks exclusive on each model:
+  a Guardsman with a vox-caster, platoon standard or medi-pack may not also swap his lasgun for a heavy
+  flamer or special weapon, and each item stays within its number across the squad. "(up to two if a
+  heavy flamer is taken)" lowers the special weapon cap while the squad has one.
+- "A Heavy Weapons Team with a missile launcher may take: Flakk missiles" allows one per missile launcher
+  in the squad.
+- "Power weapon", when the doc gives it no profile of its own, is the game system's Power Weapon: a
+  choice of power axe, power lance, power maul or power sword.
+- "For every 10 models, up to two Shock Troopers may exchange ... (no weapon may be taken more than once
+  per 10 models)" allows two picks, and each weapon once, per 10 models in the unit (the sergeant
+  counts). "For every 10 models, one Shock Trooper with a lasgun may take" also counts every model.
+- A swap of two weapons ("his laspistol and chainsword for a Sergeant's autogun and close combat
+  weapon") beside a swap of one of them is one choice of what replaces the first; taking it gives up
+  the second as well.
+- "Lasgun (Jungle Fighters only)" and "Laspistol (Jungle Fighter Sergeant only)": when every model has
+  its own weapons listed, the unmarked wargear ("Close combat weapon") is everyone's.
+- An heirloom that is also a weapon in the Armoury (The Blade of Conquest) keeps its profile and its
+  text, and may be taken once per army.
+- A Rite of War or regiment saying "Infantry units of 12 or fewer models may take a Valkyrie or Vendetta
+  as a Dedicated Transport" adds those transports to the units' Dedicated Transport choice while it is
+  chosen (not to lone characters), and only while the unit fits. A barred transport is hidden inside
+  units too, and a listed ban ("Leman Russ") covers every datasheet whose name starts with it.
+- A regiment's "Infantry units and Sentinels have Deep Strike" or "Infantry units of 10 or more models
+  have Feel No Pain (6+)" shows that rule on those units while the regiment is chosen, and "may not
+  include Leman Russ or Rogal Dorn tanks" hides them. Rules that depend on the moment ("while in area
+  terrain", "or increase an existing") stay as text.
+- House rule: smoke launchers (in `2022 - Horus Heresy.gst`, so every list) and Ork smoke bombz grant
+  Shrouded (5+) instead of their 6+ Cover Save. Both entries keep the original rule and say which is the
+  house rule.
+- A wargear entry whose text says "Only one of each heirloom may be taken per army" may be taken once
+  per roster (Heirlooms of Conquest).
 - A psychic weapon named "X (Psychic Weapon)" is kept apart from a weapon called X but shown as plain X
   (the Runes of Twilight Executioner beside the Exarch's executioner).
 

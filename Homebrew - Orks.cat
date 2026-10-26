@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -3405,6 +3405,15 @@
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Smoke Bombz" hidden="false" id="3004-e579-9491-f268" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Smoke Bombz" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5b5f-23ea-485a-96c1">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per battle, at the end of its Movement phase, a mob with smoke bombz may set them off. Until the start of its controlling player's next turn the mob counts as being more than 25% obscured, regardless of terrain, and gains a 6+ Cover Save; it may not make Shooting Attacks that turn except as part of a Reaction†. House rule: instead of the 6+ Cover Save, the mob gains Shrouded (5+).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sneakin' Armour" hidden="false" id="1f4e-4036-dfaa-904f" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -12869,13 +12878,13 @@
             <categoryLink targetId="59a4-7b61-600a-c457" id="1238-69cb-f878-8295" primary="false" name="Skirmish Sub-type" />
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Exchange Slugga and Choppa" hidden="false" id="2e79-6844-d26a-6a52" defaultSelectionEntryId="f0e7-f39c-82d3-edc3">
+            <selectionEntryGroup name="Exchange Slugga" hidden="false" id="2e79-6844-d26a-6a52" defaultSelectionEntryId="f0e7-f39c-82d3-edc3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3fb-057b-a4d7-b3ac" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4b9-b164-0791-4940" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Choppa" hidden="false" id="f0e7-f39c-82d3-edc3" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
+                <entryLink import="true" name="Slugga" hidden="false" id="f0e7-f39c-82d3-edc3" type="selectionEntry" targetId="63e5-3ea4-aa90-6a1e">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="648f-d8d5-b355-74e9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -12907,6 +12916,30 @@
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Exchange Choppa" hidden="false" id="23bd-00cc-90c1-8c10" defaultSelectionEntryId="10e1-0511-2bcc-5b32">
+              <modifiers>
+                <modifier type="set" field="e325-191e-9809-430f" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="fb2e-9b4e-b43e-6649" childId="03dd-8729-f70c-99b5" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="fb2e-9b4e-b43e-6649" childId="d68a-f2d5-bb23-b277" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="fb2e-9b4e-b43e-6649" childId="fba4-92a8-093f-9f53" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="6e84-529b-0c6b-77c9" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="fb2e-9b4e-b43e-6649" childId="03dd-8729-f70c-99b5" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="fb2e-9b4e-b43e-6649" childId="d68a-f2d5-bb23-b277" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="fb2e-9b4e-b43e-6649" childId="fba4-92a8-093f-9f53" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e325-191e-9809-430f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e84-529b-0c6b-77c9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
@@ -12929,12 +12962,6 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Slugga" hidden="false" id="aa1c-f787-662c-59a9" type="selectionEntry" targetId="63e5-3ea4-aa90-6a1e">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5abc-0e69-247c-26e1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="befe-7768-8e24-580a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Stikkbombz" hidden="false" id="891f-d027-ce46-2345" type="selectionEntry" targetId="960a-b583-75a7-cab5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0cb2-2559-57c3-8e02" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -13122,9 +13149,9 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
               </costs>
             </entryLink>
-            <entryLink import="true" name="Smoke bombs" hidden="false" id="2e17-c330-6974-cd75" type="selectionEntry" targetId="3c3e-0126-4e5b-1f16">
+            <entryLink import="true" name="Smoke Bombz" hidden="false" id="80f7-e610-7111-976b" type="selectionEntry" targetId="3004-e579-9491-f268">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53e9-9cc3-b61a-ed47" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c75-d044-db8d-277c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
@@ -13138,7 +13165,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Snipa rifle" hidden="false" id="ef1f-aac8-14d7-6290" publicationId="96d0-c462-d158-fbad" />
-    <selectionEntry type="upgrade" import="true" name="Smoke bombs" hidden="false" id="3c3e-0126-4e5b-1f16" publicationId="96d0-c462-d158-fbad" />
     <selectionEntry type="unit" import="true" name="Kustom Boosta-blasta" hidden="false" id="93dc-35cf-a53a-a555" publicationId="96d0-c462-d158-fbad">
       <infoLinks>
         <infoLink name="Xenos" id="2050-1a66-25e0-f7f8" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
@@ -13899,13 +13925,13 @@
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="523c-19aa-1d97-027c" primary="false" name="Infantry Unit Type" />
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Exchange Slugga and Choppa" hidden="false" id="0c43-0e3c-a748-2cc9" defaultSelectionEntryId="694a-3f0f-46cf-2211">
+            <selectionEntryGroup name="Exchange Slugga" hidden="false" id="0c43-0e3c-a748-2cc9" defaultSelectionEntryId="694a-3f0f-46cf-2211">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8017-8c8f-f806-1cab" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39c8-c784-a861-df12" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Choppa" hidden="false" id="694a-3f0f-46cf-2211" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
+                <entryLink import="true" name="Slugga" hidden="false" id="694a-3f0f-46cf-2211" type="selectionEntry" targetId="63e5-3ea4-aa90-6a1e">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5448-2003-1e4d-3c31" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -13929,6 +13955,28 @@
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Exchange Choppa" hidden="false" id="e5b4-1004-d605-9a84" defaultSelectionEntryId="1799-e766-1579-9656">
+              <modifiers>
+                <modifier type="set" field="a1b5-46f6-1975-53f7" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="2bfc-3f38-35b6-152e" childId="03dd-8729-f70c-99b5" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="2bfc-3f38-35b6-152e" childId="fba4-92a8-093f-9f53" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="d66b-3bfe-b8b6-2386" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="2bfc-3f38-35b6-152e" childId="03dd-8729-f70c-99b5" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="2bfc-3f38-35b6-152e" childId="fba4-92a8-093f-9f53" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1b5-46f6-1975-53f7" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d66b-3bfe-b8b6-2386" percentValue="false" includeChildSelections="true" includeChildForces="false" />
@@ -13959,12 +14007,6 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Slugga" hidden="false" id="fa04-b82d-1808-bdd6" type="selectionEntry" targetId="63e5-3ea4-aa90-6a1e">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ff2-82c0-55d6-755c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ac5-6343-36de-284d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Stikkbombz" hidden="false" id="d902-3cf9-e00b-0416" type="selectionEntry" targetId="960a-b583-75a7-cab5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a03-4591-8c63-61a6" percentValue="false" includeChildSelections="false" includeChildForces="false" />

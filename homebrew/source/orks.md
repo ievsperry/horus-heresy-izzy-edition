@@ -2631,7 +2631,7 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 | – Snipa rifle | +10 points |
 | **The entire mob may take:** |  |
 | – Bomb squig | +15 points |
-| – Smoke bombs | +15 points |
+| – Smoke bombz | +15 points |
 | **The Boss Kommando may exchange his Choppa for one of the following:** |  |
 | – Big choppa | +5 points |
 | – Power klaw | +20 points |
@@ -3909,6 +3909,14 @@ _A grot clinging to the back of a squighog, shooting and stabbing at whatever it
 |---|---|---|---|---|
 | Saddlegit's slugga | 12" | 3 | – | Pistol, Assault 1 |
 | Saddlegit's shiv | – | 3 | – | Melee, Deck Crew (1) |
+
+### Smoke Bombz
+
+_Fistfuls of choking grenades that Kommandoz hurl to vanish into the murk before the enemy can draw a bead on them._
+
+Once per battle, at the end of its Movement phase, a mob with smoke bombz may set them off. Until the start of its controlling player's next turn the mob counts as being more than 25% obscured, regardless of terrain, and gains a 6+ Cover Save; it may not make Shooting Attacks that turn except as part of a Reaction†.
+
+House rule: instead of the 6+ Cover Save, the mob gains Shrouded (5+).
 
 ### Sneakin' Armour
 
