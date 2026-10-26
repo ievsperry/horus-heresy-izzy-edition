@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -1610,6 +1610,18 @@ The effect lasts until the end of the turn.</description>
         <infoLink name="Barrage" id="4424-0437-9ea5-6921" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule" />
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rokkit pistol" hidden="false" id="8e04-a356-30f2-6b1b" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Rokkit pistol" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3226-3cd5-fae8-9076" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Shokk attack gun" hidden="false" id="7c93-2af1-8c63-5fe6" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Shokk attack gun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f55e-a89e-1341-fbca" publicationId="96d0-c462-d158-fbad">
@@ -2021,14 +2033,15 @@ The effect lasts until the end of the turn.</description>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Ranged)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Sunder, Rending (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Armourbane (X)" id="c3a2-5777-7519-1e7d" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+        <infoLink name="Sunder" id="363d-20c6-ca1e-9571" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule" />
+        <infoLink name="Rending (X)" id="d282-926c-3a32-5946" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Armourbane (Ranged)" />
+            <modifier type="set" field="name" value="Rending (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -10042,28 +10055,19 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d0e6-0aa9-2642-66b4" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc22-a3b0-c6bc-4b90" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Up to 2 may exchange for" hidden="false" id="66a2-0eff-cb9e-e3e5">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="683a-6137-295d-9f6e" shared="true" id="378f-5774-d27f-8568" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Tankhammer" hidden="false" id="e495-761d-f790-987c" type="selectionEntry" targetId="f3a6-c0b2-2587-6c74">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bea3-f454-2dd5-d2ea" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Tankbusta rokkit" hidden="false" id="8f59-8b86-f11a-b173" type="selectionEntry" targetId="8374-4d30-5216-ffd9">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="769b-b59a-b10d-64e2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Tankhammer" hidden="false" id="e495-761d-f790-987c" type="selectionEntry" targetId="f3a6-c0b2-2587-6c74">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bea3-f454-2dd5-d2ea" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -10113,29 +10117,51 @@ The effect lasts until the end of the turn.</description>
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="a34c-fa84-f779-15df" primary="false" name="Character" />
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Exchange tankbusta rokkit" hidden="false" id="2ac8-5a6c-7ad3-694c" defaultSelectionEntryId="ed15-767b-64b6-3a97">
+            <selectionEntryGroup name="Exchange big choppa" hidden="false" id="2ac8-5a6c-7ad3-694c" defaultSelectionEntryId="ed15-767b-64b6-3a97">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f31e-760a-a5b1-8a8e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a618-9799-694a-254d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Tankbusta rokkit" hidden="false" id="ed15-767b-64b6-3a97" type="selectionEntry" targetId="8374-4d30-5216-ffd9">
+                <entryLink import="true" name="Big choppa" hidden="false" id="ed15-767b-64b6-3a97" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca1e-75a7-18a9-caa0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="'Uge choppa" hidden="false" id="a1f7-8648-62d8-e47c" type="selectionEntry" targetId="4e26-ad46-72d3-6708">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b815-f954-8128-80cd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                  </costs>
                 </entryLink>
                 <entryLink import="true" name="Power klaw" hidden="false" id="ccd7-3344-5325-32e7" type="selectionEntry" targetId="0ecd-3c66-1dd0-3426">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7df1-8adf-da22-8547" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Tankhammer" hidden="false" id="40c7-2aab-64e6-e689" type="selectionEntry" targetId="f3a6-c0b2-2587-6c74">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48e0-79c7-d072-ece4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
                   </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
+            <entryLink import="true" name="Rokkit pistol" hidden="false" id="3244-1883-4a8e-2e4c" type="selectionEntry" targetId="8e04-a356-30f2-6b1b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f01f-724f-ab4d-b921" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a54-9881-bb4a-ef63" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
             <entryLink import="true" name="Stikkbombz" hidden="false" id="6287-13b0-5e70-2a76" type="selectionEntry" targetId="960a-b583-75a7-cab5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed30-7054-7067-4971" percentValue="false" includeChildSelections="false" includeChildForces="false" />
