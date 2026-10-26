@@ -213,6 +213,10 @@ loading. The script prints anything in the doc it could not place.
   rules on the army entry.
 - A rule whose list items have bold names ("- **Krumpin' Waaagh!:** ...") shows them one to a line in
   the app, with its paragraphs kept apart.
+- "1-7 models chosen from up to 3 Meks (+55 points each), up to 3 Painboys (+75 points each) and up to 3
+  Weirdboys (+100 points each)" is a unit of one to seven members, each kind capped and bought at its own
+  price on top of the unit's cost (Odd Boys). "Any Mek may take up to 2 grot oilers" then allows two per
+  Mek, and each Weirdboy in the unit rolls his own Weirdboy Discipline power and weapon.
 - A wargear entry whose text says "Only one of each heirloom may be taken per army" may be taken once
   per roster (Heirlooms of Conquest).
 - A psychic weapon named "X (Psychic Weapon)" is kept apart from a weapon called X but shown as plain X

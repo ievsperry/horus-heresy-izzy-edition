@@ -2677,13 +2677,17 @@ class Builder:
 
         pools = []
         for line in ds["composition"]:
-            pm = re.match(r"(\d+) models chosen from (.+)$", line)
+            pm = re.match(r"(\d+)(?:-(\d+))? models chosen from (.+)$", line)
             if pm:
                 # "9 models chosen from Kroot Warriors, the specialists above (each at most once)
-                # and up to 2 Kroot Hounds"
+                # and up to 2 Kroot Hounds"; "1-7 models chosen from up to 3 Meks (+55 points each), ..."
                 total, members = int(pm.group(1)), {}
-                for part in re.split(r", | and (?=up to|\d|the )|\s+and\s+(?=[A-Z])", pm.group(2)):
+                most = int(pm.group(2) or pm.group(1))
+                for part in re.split(r", | and (?=up to|\d|the )|\s+and\s+(?=[A-Z])", pm.group(3)):
                     part = part.strip()
+                    pc = re.search(r"\s*\(\+(\d+) points? each\)$", part)
+                    if pc:
+                        part = part[:pc.start()]
                     if part.startswith("the specialists"):
                         named = {n for l in ds["composition"] for n in models if forms(n) & forms(l)}
                         for n in models:
@@ -2695,9 +2699,11 @@ class Builder:
                     who = model_for(um.group(3) if um else part)
                     if who:
                         members[who] = int(um.group(1) or um.group(2)) if um else total
+                        if pc:
+                            models[who]["cost"] = int(pc.group(1))  # each bought at its own price
                 for n, cap in members.items():
                     models[n]["pool"], models[n]["pool_max"], models[n]["max"] = len(pools), cap, cap
-                pools.append((total, list(members)))
+                pools.append((total, most, list(members)))
                 continue
             m = re.match(r"(\d+) (.+?)(?:,|$| chosen)", line)
             if not m:
@@ -2716,7 +2722,8 @@ class Builder:
                 continue
             models[mname]["min"] += n
             models[mname]["max"] += n
-        if not any(m["min"] for m in models.values()) and models and not any(sp.get("chosen") for sp in drone_specs):
+        if not any(m["min"] for m in models.values()) and models and not any(sp.get("chosen") for sp in drone_specs) \
+                and not pools:  # "1-7 models chosen from ...": the pool says how many
             first = next(iter(models.values()))
             first["min"] = first["max"] = 1
 
@@ -2942,8 +2949,8 @@ class Builder:
             if m.get("per_n"):  # "one additional Runtherd for every 10 additional Gretchin"
                 other, every = m["per_n"]
                 moves.append(((cmin, cmax), 1, models[other]["id"], every))
-            if m.get("max_per"):  # "Any Spanner may take: grot oiler"
-                moves.append(((cmax,), 1, models[m["max_per"]]["id"], 1))
+            if m.get("max_per"):  # "Any Spanner may take: grot oiler"; "Any Mek may take up to 2 grot oilers"
+                moves.append(((cmax,), m.get("max_per_n", 1), models[m["max_per"]]["id"], 1))
             if moves:
                 base_min, base_max = m["min"], max(m["max"], m["min"])
                 if m.get("follows"):
@@ -3002,11 +3009,11 @@ class Builder:
                 add_rule(me, mname, m["note"][0].upper() + m["note"][1:], m["id"])
             add_cost(me, m["cost"])
 
-        for pi, (total, members) in enumerate(pools):
+        for pi, (total, most, members) in enumerate(pools):
             pkey = make_id(uid, "pool", str(pi))
             g = el(child(unit, "selectionEntryGroups"), "selectionEntryGroup", name="Unit Members", hidden=False, id=pkey)
             add_constraint(g, "min", total, pkey + "min")
-            add_constraint(g, "max", total, pkey + "max")
+            add_constraint(g, "max", most, pkey + "max")
             gses = el(g, "selectionEntries")
             for n in members:
                 me = ses.find(f"selectionEntry[@id='{models[n]['id']}']")
@@ -3284,6 +3291,12 @@ class Builder:
                 if not mname and " additional " in name and not gear:
                     # "Up to 6 additional Leapers": more of the unit's models
                     mname = model_for(what) or subject_models[0]
+                if mname and determiner in ("Any", "Each") and subject_models and subject_models[0] != mname \
+                        and not models[mname]["min"] \
+                        and max(models[subject_models[0]]["max"], models[subject_models[0]]["min"]) > 1:
+                    # "Any Mek may take up to 2 grot oilers" in a unit of several Meks: two for each Mek
+                    models[mname].update(max_per=subject_models[0], max_per_n=count, cost=self.cost(cost), attendant=True)
+                    continue
                 if mname:
                     models[mname]["max"] += count
                     models[mname]["cost"] = self.cost(cost)
@@ -3622,8 +3635,12 @@ class Builder:
                 gkey = make_id(m["id"], "rolled", label)
                 ge = el(child(target_unit, "selectionEntryGroups"), "selectionEntryGroup",
                         name=f"{rolled}: {label}", hidden=False, id=gkey)
-                add_constraint(ge, "min", 1, gkey + "min")
-                add_constraint(ge, "max", 1, gkey + "max")
+                if m["min"] == m["max"] == 1:
+                    add_constraint(ge, "min", 1, gkey + "min")
+                    add_constraint(ge, "max", 1, gkey + "max")
+                else:  # several Weirdboys: each rolls his own
+                    self.per_model_limit(ge, gkey, target_unit.get("id"), m["id"])
+                    self.per_model_limit(ge, gkey, target_unit.get("id"), m["id"], kind="min")
                 gl = el(ge, "entryLinks")
                 for name, pid in items:
                     self.link(gl, pid, name, gkey, maximum=1)

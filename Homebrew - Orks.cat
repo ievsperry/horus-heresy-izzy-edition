@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="25" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="26" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -675,10 +675,13 @@ The effect lasts until the end of the turn.</description>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="cb3d-c2fd-78ee-e56a" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mek" hidden="false" id="72b7-2cf6-b56a-4592" type="selectionEntry" targetId="c902-d18d-3d75-afeb">
+    <entryLink import="true" name="Odd Boys" hidden="false" id="936d-d530-1efd-795f" type="selectionEntry" targetId="0e7a-7a27-6896-6155">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f896-d87d-5c59-72d3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
       <categoryLinks>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="edd2-449c-1d69-3b99" primary="true" name="Elites:" />
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="9c96-3804-cb6b-058a" primary="false" name="Unit:" />
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="1e8a-e9bd-b4da-5106" primary="true" name="Elites:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="be35-8ba1-59a9-9ba2" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Nob on Smasha Squig" hidden="false" id="ad13-4871-8053-518e" type="selectionEntry" targetId="958b-b706-d9d2-eedc">
@@ -699,22 +702,10 @@ The effect lasts until the end of the turn.</description>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="4bdb-3301-0aff-2d6d" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Painboy" hidden="false" id="ff8b-ee26-4752-61a9" type="selectionEntry" targetId="b392-707e-9b8e-8d4f">
-      <categoryLinks>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="5b4f-1eea-8879-637f" primary="true" name="Elites:" />
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="872b-4543-9511-afb9" primary="false" name="Unit:" />
-      </categoryLinks>
-    </entryLink>
     <entryLink import="true" name="Tankbustas" hidden="false" id="aedd-406d-54e9-a80b" type="selectionEntry" targetId="683a-6137-295d-9f6e">
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="5cbe-f2b2-3db6-296e" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="10c7-e37a-0281-d687" primary="false" name="Unit:" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Weirdboy" hidden="false" id="ebae-22f2-050a-1a3d" type="selectionEntry" targetId="62d7-8635-423d-e5e0">
-      <categoryLinks>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="b114-88c6-a4f6-3a92" primary="true" name="Elites:" />
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="6456-b4f4-d20c-4f46" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="'Ard Boyz" hidden="false" id="cc1c-c64c-df1e-37d4" type="selectionEntry" targetId="0c61-c745-ff64-39a6">
@@ -8330,171 +8321,81 @@ The effect lasts until the end of the turn.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Mek" hidden="false" id="c902-d18d-3d75-afeb" publicationId="96d0-c462-d158-fbad">
+    <selectionEntry type="unit" import="true" name="Odd Boys" hidden="false" id="0e7a-7a27-6896-6155" publicationId="96d0-c462-d158-fbad">
+      <rules>
+        <rule name="Dok's Tools" id="9360-20df-b9c4-ec47" hidden="false">
+          <description>Friendly Ork Infantry units joined by a Painboy gain Feel No Pain (5+). If the unit already possesses Feel No Pain, improve that roll by +1 to a maximum of Feel No Pain (4+).</description>
+        </rule>
+        <rule name="Psychic discipline" id="e0d8-6a6b-e64a-543c" hidden="false">
+          <description>Power of da Waaagh! (Weirdboy only)</description>
+        </rule>
+        <rule name="Note" id="6336-f04b-ac51-33cd" hidden="false">
+          <description>The Odd Boys are the Meks, Painboys and Weirdboys of the warband. The unit costs 55 points, plus 55 points for each Odd Boy and the extra for his kind: a Mek +0, a Painboy +20 and a Weirdboy +45 points.</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="ee9e-a314-30fd-fe6b" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
-        <infoLink name="Mek-Smasha (X)" id="6dad-e649-3406-72db" hidden="false" targetId="6989-913d-92e6-2a8b" type="rule">
+        <infoLink name="Xenos" id="fe2a-df56-dcdb-be46" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Odd Mob" id="4dd5-c773-d06f-4f74" hidden="false" targetId="3c0e-c25a-c45b-9f68" type="rule" />
+        <infoLink name="Bigga iz Betta" id="0754-7eff-7078-c69a" hidden="false" targetId="150c-ba53-b501-3917" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Mek-Smasha (5+)" />
+            <modifier type="set" field="name" value="Bigga iz Betta (Mek and Painboy only)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Bigga iz Betta" id="7008-d2ee-1a4f-b194" hidden="false" targetId="150c-ba53-b501-3917" type="rule" />
-        <infoLink name="Bulky (X)" id="74bc-1e52-ff65-a97a" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+        <infoLink name="Bulky (X)" id="2734-88c3-d1e9-8abe" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Bulky (2)" />
+            <modifier type="set" field="name" value="Bulky (2) (Mek and Painboy only)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Dakka! (X)" id="4664-48ed-6723-0f8b" hidden="false" targetId="0644-bb6e-7891-7f9f" type="rule">
+        <infoLink name="Dakka! (X)" id="225b-d592-1e4b-45d5" hidden="false" targetId="0644-bb6e-7891-7f9f" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Dakka! (6+)" />
+            <modifier type="set" field="name" value="Dakka! (6+) (Mek only)" />
           </modifiers>
         </infoLink>
-        <infoLink name="'Ere We Go!" id="cf60-d3f4-43ab-6f6e" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
-        <infoLink name="Klan (X)" id="cf72-0510-206e-4e49" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
-        <infoLink name="Might iz Right!" id="cbbf-0107-41f0-3577" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule" />
-        <infoLink name="Mob Rule" id="fdfb-b220-e687-6486" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
-        <infoLink name="Oddboy" id="e5d7-af8c-00ef-b147" hidden="false" targetId="487b-f932-39ab-f602" type="rule" />
-        <infoLink name="Waaagh!" id="262c-6f1b-b802-bad4" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
+        <infoLink name="'Ere We Go!" id="7e28-f98c-709e-3b53" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
+        <infoLink name="Klan (X)" id="b4c1-091a-c2d5-47fd" hidden="false" targetId="a734-620c-db79-3594" type="rule" />
+        <infoLink name="Mek-Smasha (X)" id="14a8-4b51-1f82-759e" hidden="false" targetId="6989-913d-92e6-2a8b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Mek-Smasha (5+) (Mek only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Might iz Right!" id="fc36-383e-3296-e2f1" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Might iz Right! (Mek and Painboy only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Mob Rule" id="455d-229f-a512-322e" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
+        <infoLink name="Oddboy" id="5f79-1099-ea9d-0151" hidden="false" targetId="487b-f932-39ab-f602" type="rule" />
+        <infoLink name="Perils of the Waaagh!" id="6107-04f5-7521-bf14" hidden="false" targetId="39f7-c1ce-029c-1605" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Perils of the Waaagh! (Weirdboy only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Waaagh!" id="9012-d6f3-ac8d-e94c" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
+        <infoLink name="Waaagh! Energy" id="2811-7da7-68d0-cd5c" hidden="false" targetId="22d5-a04c-eb29-712d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Waaagh! Energy (Weirdboy only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Weirdboy Discipline" id="41b4-0574-8936-c2ff" hidden="false" targetId="517b-da3c-94f0-96a2" type="rule" />
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="598f-cd5e-9c2b-20b3" primary="false" name="Unit:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="9f27-1d7d-c14c-cdf7" primary="false" name="Unit:" />
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Mek" hidden="false" id="7239-5590-597c-e3b7" publicationId="96d0-c462-d158-fbad">
+        <selectionEntry type="model" import="true" name="Grot Oiler" hidden="false" id="c7d9-a1dd-b267-3439" publicationId="96d0-c462-d158-fbad">
+          <modifiers>
+            <modifier type="increment" field="2170-0c70-c4f9-c69c" value="2">
+              <repeats>
+                <repeat field="selections" scope="0e7a-7a27-6896-6155" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a51-42d5-7274-02fe" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c2d-e83f-0615-be3a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28c8-de44-cb4e-f9a7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9cab-90f1-31ff-8978" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2170-0c70-c4f9-c69c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
-            <profile name="Mek" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="caf6-26f2-ea2b-e9db" publicationId="96d0-c462-d158-fbad">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Independent Character)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="3197-6a94-efde-187e" primary="false" name="Infantry Unit Type" />
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="26b7-68ba-be1b-4bfb" primary="false" name="Independent Character" />
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Exchange Shoota" hidden="false" id="0186-00e6-2be0-7c14" defaultSelectionEntryId="632c-2585-8833-092d">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9805-ff6e-ff4c-92fb" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9539-3069-d174-244c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Shoota" hidden="false" id="632c-2585-8833-092d" type="selectionEntry" targetId="990f-9119-5362-90f3">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cbc-9d3d-e725-639e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Big shoota" hidden="false" id="cdc1-336a-b483-90d8" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5de8-53de-dacf-3adf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Kombi-shoota" hidden="false" id="d62f-e1bf-7099-cbcd" type="selectionEntry" targetId="3c0e-2dba-abd4-b6c4">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd37-db4e-5f35-a68c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Kombi-rokkit" hidden="false" id="43b8-fa5b-bf7d-ba60" type="selectionEntry" targetId="f680-045c-d17f-c614">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9931-5ab2-1210-9c99" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Kombi-skorcha" hidden="false" id="d816-c9f7-e19d-4e62" type="selectionEntry" targetId="764a-aa2a-83b4-804d">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72c3-8675-fb66-f4ec" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Kustom mega-blasta" hidden="false" id="202b-51ff-b217-a052" type="selectionEntry" targetId="f4fe-dba3-e6d0-7b91">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2827-fbc5-8789-ac1f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Exchange Big Choppa" hidden="false" id="f397-050e-367f-e33e" defaultSelectionEntryId="9789-affd-7842-d3b0">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a91b-cf46-9c4d-f898" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ebe-b637-151c-9c34" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Big choppa" hidden="false" id="9789-affd-7842-d3b0" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c272-641d-5340-1afe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Power klaw" hidden="false" id="8a90-e094-7187-d8a3" type="selectionEntry" targetId="0ecd-3c66-1dd0-3426">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99ac-ccda-48a6-9037" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Killsaw" hidden="false" id="0b72-0e3d-4d84-e3ae" type="selectionEntry" targetId="89f4-6f5f-4349-0471">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a93f-981d-d89b-1709" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="5753-cccf-7d62-e594" type="selectionEntry" targetId="960a-b583-75a7-cab5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8550-a16d-7006-8c7e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f12-58ca-5a7d-9902" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="'Eavy Armour" hidden="false" id="c4c0-d80b-de45-1bfb" type="selectionEntry" targetId="e4bb-7234-0498-89ca">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe1e-f0a8-7f12-ebff" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bccd-f9ef-8c21-5922" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Grot Oiler" hidden="false" id="c186-d6da-84ea-c411" publicationId="96d0-c462-d158-fbad">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a4a5-7503-85b5-539b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3ca6-d991-74e3-4aba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <profiles>
-            <profile name="Grot Oiler" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="5a06-26ea-9fae-f399" publicationId="96d0-c462-d158-fbad">
+            <profile name="Grot Oiler" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="1233-fcc3-22df-a212" publicationId="96d0-c462-d158-fbad">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -8511,13 +8412,13 @@ The effect lasts until the end of the turn.</description>
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="a10e-ddbe-83d3-75fc" primary="false" name="Infantry Unit Type" />
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="46b2-05d8-b067-52b8" primary="false" name="Infantry Unit Type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Grot stabba" hidden="false" id="29fc-6499-a524-51ad" type="selectionEntry" targetId="a672-29e6-7845-0208">
+            <entryLink import="true" name="Grot stabba" hidden="false" id="af3f-212a-0429-0a52" type="selectionEntry" targetId="a672-29e6-7845-0208">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0988-1ed1-85e0-f68b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0d4-59e6-23fe-e69c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f56-7d58-6fde-9439" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42b9-b84a-d5f2-d666" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8525,86 +8426,496 @@ The effect lasts until the end of the turn.</description>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Mek: Options" hidden="false" id="0131-9fa2-412a-b700">
+        <selectionEntry type="model" import="true" name="Grot Orderly" hidden="false" id="468d-f907-68ab-1726" publicationId="96d0-c462-d158-fbad">
+          <modifiers>
+            <modifier type="increment" field="5b21-dc9a-4c88-c453" value="2">
+              <repeats>
+                <repeat field="selections" scope="0e7a-7a27-6896-6155" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07a3-dd48-3c58-f496" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2643-d855-c878-8d89" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5b21-dc9a-4c88-c453" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Grot Orderly" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="3a42-ed6c-6192-100f" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">2</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">2</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">6+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="7bd9-c271-ff74-f735" primary="false" name="Infantry Unit Type" />
+          </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Attack Squig" hidden="false" id="0683-f057-7521-29ae" type="selectionEntry" targetId="5f90-098a-c9cf-7c99">
-              <modifiers>
-                <modifier type="increment" field="16e5-6025-fe85-a478" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="c902-d18d-3d75-afeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7239-5590-597c-e3b7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
+            <entryLink import="true" name="Grot stabba" hidden="false" id="a912-a923-58aa-8e3f" type="selectionEntry" targetId="a672-29e6-7845-0208">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="16e5-6025-fe85-a478" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="687c-bc51-3c5e-5318" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5db-e566-3260-12df" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Gitfinda" hidden="false" id="f3bf-cc71-4db7-30c8" type="selectionEntry" targetId="eeab-d6e7-9c2f-e8a2">
-              <modifiers>
-                <modifier type="increment" field="4bf9-7e0e-e34c-8c8f" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="c902-d18d-3d75-afeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7239-5590-597c-e3b7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4bf9-7e0e-e34c-8c8f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Kustom Force Field" hidden="false" id="1c82-4fde-4d35-556c" type="selectionEntry" targetId="2579-9744-3dac-8284">
-              <modifiers>
-                <modifier type="increment" field="d434-c6f5-3e32-3582" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="c902-d18d-3d75-afeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7239-5590-597c-e3b7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d434-c6f5-3e32-3582" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Shokk attack gun" hidden="false" id="94c2-8649-d323-9a5b" type="selectionEntry" targetId="7c93-2af1-8c63-5fe6">
-              <modifiers>
-                <modifier type="increment" field="3573-7891-53bc-63b5" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="c902-d18d-3d75-afeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7239-5590-597c-e3b7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3573-7891-53bc-63b5" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Tellyporta" hidden="false" id="85dc-9c3b-8271-84e2" type="selectionEntry" targetId="01f3-497d-aa7d-c658">
-              <modifiers>
-                <modifier type="increment" field="ca8f-0610-c7b4-50d3" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="c902-d18d-3d75-afeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7239-5590-597c-e3b7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ca8f-0610-c7b4-50d3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
-              </costs>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Members" hidden="false" id="37a1-1827-4b9a-d7d2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d53-e5eb-50e2-7609" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="d60e-f72f-3d60-0d31" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Mek" hidden="false" id="1a51-42d5-7274-02fe" publicationId="96d0-c462-d158-fbad">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a316-7a25-ce00-7922" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e954-45b6-844f-e70e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <profiles>
+                <profile name="Mek" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="126e-861b-a95b-b142" publicationId="96d0-c462-d158-fbad">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Independent Character)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="7a97-2740-2928-01fb" primary="false" name="Infantry Unit Type" />
+                <categoryLink targetId="4f07-3d45-4f28-a0c6" id="ac4d-3084-9ce1-c16d" primary="false" name="Independent Character" />
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Exchange Shoota" hidden="false" id="75ee-307e-8d89-3eb9" defaultSelectionEntryId="f37a-6bd9-d5fb-d38d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3fe6-d5b8-041c-424e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f233-73c0-ea58-c8ec" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Shoota" hidden="false" id="f37a-6bd9-d5fb-d38d" type="selectionEntry" targetId="990f-9119-5362-90f3">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2835-8989-f1df-9257" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Big shoota" hidden="false" id="779e-d265-20ea-662f" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ac5-f562-ba8b-9e41" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Kombi-shoota" hidden="false" id="a7c1-f427-162f-053e" type="selectionEntry" targetId="3c0e-2dba-abd4-b6c4">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85df-1562-3524-fa57" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Kombi-rokkit" hidden="false" id="be9e-942c-364d-8d64" type="selectionEntry" targetId="f680-045c-d17f-c614">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ccb-5035-8073-5107" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Kombi-skorcha" hidden="false" id="a8dd-56c0-83ab-a21e" type="selectionEntry" targetId="764a-aa2a-83b4-804d">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7014-7108-8c94-17d0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Kustom mega-blasta" hidden="false" id="aa3c-185a-2a3d-c951" type="selectionEntry" targetId="f4fe-dba3-e6d0-7b91">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e1e-7287-fb9e-2cdf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Exchange Big Choppa" hidden="false" id="ea24-b26a-5b67-f0b9" defaultSelectionEntryId="f97d-5400-cdad-16e6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="958f-35e4-7bce-e597" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d33-90d9-bcf9-4e8b" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Big choppa" hidden="false" id="f97d-5400-cdad-16e6" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c41c-fb92-5cb6-5239" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power klaw" hidden="false" id="fc6a-2ba4-f151-8661" type="selectionEntry" targetId="0ecd-3c66-1dd0-3426">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e60-11a6-b755-0b50" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Killsaw" hidden="false" id="20c0-a350-5cbd-6994" type="selectionEntry" targetId="89f4-6f5f-4349-0471">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b42d-423c-88c2-6c11" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Options" hidden="false" id="b3f8-c990-6f64-ae83">
+                  <entryLinks>
+                    <entryLink import="true" name="Attack Squig" hidden="false" id="151d-e78b-13d5-3d44" type="selectionEntry" targetId="5f90-098a-c9cf-7c99">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f0a-b76c-28ec-6749" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Gitfinda" hidden="false" id="85db-a109-0345-0c9f" type="selectionEntry" targetId="eeab-d6e7-9c2f-e8a2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f84-8161-6444-3133" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Kustom Force Field" hidden="false" id="5a71-61b1-3219-f13a" type="selectionEntry" targetId="2579-9744-3dac-8284">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9154-2b95-9800-8a25" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Shokk attack gun" hidden="false" id="0cdb-95a8-0d96-87da" type="selectionEntry" targetId="7c93-2af1-8c63-5fe6">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6aac-9b78-6f59-96f6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Tellyporta" hidden="false" id="0f27-3d40-683e-64e7" type="selectionEntry" targetId="01f3-497d-aa7d-c658">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec0a-e4d4-c719-0bed" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Stikkbombz" hidden="false" id="a2a6-2cb6-8d4a-7623" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7da3-1b66-4589-99c4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94b8-136d-a279-95d4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="'Eavy Armour" hidden="false" id="bbd0-d52b-3f97-6cd9" type="selectionEntry" targetId="e4bb-7234-0498-89ca">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da87-d51d-b426-a6ae" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69cb-9421-2b6c-a967" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55" />
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Painboy" hidden="false" id="07a3-dd48-3c58-f496" publicationId="96d0-c462-d158-fbad">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d512-a3a4-afa7-a418" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="35d4-61b0-bb29-e37b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <profiles>
+                <profile name="Painboy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="a4c8-4466-14b0-12ce" publicationId="96d0-c462-d158-fbad">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Independent Character)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="e530-ae03-6c57-205c" primary="false" name="Infantry Unit Type" />
+                <categoryLink targetId="4f07-3d45-4f28-a0c6" id="dd01-1dca-6f92-c02d" primary="false" name="Independent Character" />
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Options" hidden="false" id="fe38-6c87-f14f-3192">
+                  <entryLinks>
+                    <entryLink import="true" name="Big choppa" hidden="false" id="343d-adb5-a286-80ee" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98c2-9c77-547c-ec89" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="'Uge choppa" hidden="false" id="2c29-60f9-60b8-ca2e" type="selectionEntry" targetId="4e26-ad46-72d3-6708">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10ab-29e6-383a-dc9d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Power klaw" hidden="false" id="def3-c8f7-70a5-5c53" type="selectionEntry" targetId="0ecd-3c66-1dd0-3426">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8af0-57c9-7237-f633" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="'Eavy Armour" hidden="false" id="131c-ae8b-07bc-eda6" type="selectionEntry" targetId="e4bb-7234-0498-89ca">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fd2-96df-8619-4ccf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Attack Squig" hidden="false" id="3e33-807e-4a52-8fa4" type="selectionEntry" targetId="5f90-098a-c9cf-7c99">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4eb4-7f12-da5d-1c8b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="'Urty syringe" hidden="false" id="fdb1-f80d-f070-432b" type="selectionEntry" targetId="9b2a-5cab-e889-da13">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="605c-1351-8d3d-003c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e11c-51ca-ff7d-0ecc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Choppa" hidden="false" id="4ad4-260a-fd53-37e9" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d71d-bc96-6baa-0356" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17f4-6a2c-aef4-7103" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Stikkbombz" hidden="false" id="7e43-92af-0e45-d776" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b57-f178-14a0-4cd0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6538-e9a4-0eb6-f0b7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Da Armour" hidden="false" id="f737-f70b-10f0-f9a6" type="selectionEntry" targetId="ff87-f2ad-bb74-ba22">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02b0-e01e-e34f-2ced" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9824-5bfd-a048-fdfc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75" />
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Weirdboy" hidden="false" id="b658-e166-6bad-43b4" publicationId="96d0-c462-d158-fbad">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="234c-2966-d911-5626" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a24f-8f8f-96d3-5a05" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <profiles>
+                <profile name="Weirdboy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="2359-c508-55f7-51fd" publicationId="96d0-c462-d158-fbad">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Independent Character, Psyker)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="171e-f9ea-6464-2bd9" primary="false" name="Infantry Unit Type" />
+                <categoryLink targetId="4f07-3d45-4f28-a0c6" id="140d-5d58-976b-5c26" primary="false" name="Independent Character" />
+                <categoryLink targetId="6e0c-29ba-a445-8321" id="18af-7b12-a92f-e07e" primary="false" name="Psyker:" />
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Options" hidden="false" id="b498-117c-68b3-b0cb">
+                  <entryLinks>
+                    <entryLink import="true" name="Attack Squig" hidden="false" id="3418-74da-7283-42fe" type="selectionEntry" targetId="5f90-098a-c9cf-7c99">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a4c-3364-5d30-3a57" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="'Eavy Armour" hidden="false" id="2ac3-3507-316c-564f" type="selectionEntry" targetId="e4bb-7234-0498-89ca">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d206-8cdc-b517-d8ac" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Warphead" hidden="false" id="bcb5-d126-35ae-9307" type="selectionEntry" targetId="eaff-e0e8-d237-dcd1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1cb-e5c5-d0ad-cd3f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Weirdboy Discipline: Psychic Power" hidden="false" id="ec93-f97f-f2c7-5c0d">
+                  <modifiers>
+                    <modifier type="increment" field="aaae-35e4-ba41-b491" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="b658-e166-6bad-43b4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b658-e166-6bad-43b4" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" field="7ea6-8677-3caa-a5ee" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="b658-e166-6bad-43b4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b658-e166-6bad-43b4" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="aaae-35e4-ba41-b491" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7ea6-8677-3caa-a5ee" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Da Jump" hidden="false" id="095f-bd25-d12e-75b1" type="selectionEntry" targetId="358e-9f5e-f44a-bcaa">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d076-9af5-0d3d-c165" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Waaagh! Pulse" hidden="false" id="f63b-38e7-7224-517e" type="selectionEntry" targetId="3473-1f0b-f812-6201">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c61-47cf-5291-e1c1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Green Fury" hidden="false" id="50bb-3f9e-2867-409f" type="selectionEntry" targetId="adb5-8c5e-509e-b798">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27bd-17c2-7508-5461" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Weirdboy Discipline: Psychic Weapon" hidden="false" id="2d08-8c14-1347-da43">
+                  <modifiers>
+                    <modifier type="increment" field="9826-b0ad-a076-b32b" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="b658-e166-6bad-43b4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b658-e166-6bad-43b4" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" field="4105-2f6c-11b2-3b74" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="b658-e166-6bad-43b4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b658-e166-6bad-43b4" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9826-b0ad-a076-b32b" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4105-2f6c-11b2-3b74" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Green Lightning" hidden="false" id="9f7b-6bf5-f9b5-c270" type="selectionEntry" targetId="173a-529c-c853-8565">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0d9-7c82-7643-04b5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Warphead Blast" hidden="false" id="81ff-ce90-f633-0d53" type="selectionEntry" targetId="e6f5-80c7-2e6f-51e5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27e1-1a5e-9e69-b614" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Fists of Gork" hidden="false" id="420c-d658-7a23-7ec9" type="selectionEntry" targetId="2180-59e0-9caa-2eda">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7882-ac90-ec4f-47a5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Weirdboy staff" hidden="false" id="728d-fed9-7c16-bfc0" type="selectionEntry" targetId="8573-5186-9c21-2e2f">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="01c6-a05d-bace-6b66" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de05-19b0-7fdc-9541" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Stikkbombz" hidden="false" id="32ab-7157-eb54-27c9" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c21-9441-01b9-2a10" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cd5-64e9-cd2a-3b6e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Mork Charms" hidden="false" id="0fd8-fe90-9606-48a4" type="selectionEntry" targetId="1ae5-d03d-6c25-f96d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="412e-bffa-2784-e284" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b3e-9048-64fb-7bc7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Frazzle" hidden="false" id="36e1-c3f1-7594-c0d4" type="selectionEntry" targetId="41e2-ac8c-f2d1-0fb4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4237-40f5-b246-dbbd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0764-5307-520b-c1f2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Da Jump" hidden="false" id="c628-0b14-6618-46e5" type="selectionEntry" targetId="920b-c0d6-3639-f13b">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79db-43fc-c34a-956a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9126-9bbe-42ff-b4a0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100" />
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -9670,209 +9981,6 @@ The effect lasts until the end of the turn.</description>
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Painboy" hidden="false" id="b392-707e-9b8e-8d4f" publicationId="96d0-c462-d158-fbad">
-      <rules>
-        <rule name="Dok's Tools" id="7cf0-6213-1834-7da3" hidden="false">
-          <description>Friendly Ork Infantry units joined by a Painboy gain Feel No Pain (5+). If the unit already possesses Feel No Pain, improve that roll by +1 to a maximum of Feel No Pain (4+).</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="Xenos" id="e0a1-2106-294d-a4ea" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
-        <infoLink name="Bigga iz Betta" id="7036-800c-0e5b-a1bb" hidden="false" targetId="150c-ba53-b501-3917" type="rule" />
-        <infoLink name="Bulky (X)" id="f92e-ecb5-0a8b-3fd5" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Bulky (2)" />
-          </modifiers>
-        </infoLink>
-        <infoLink name="'Ere We Go!" id="84d4-6537-4989-d29a" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
-        <infoLink name="Might iz Right!" id="7ae1-70c2-178d-3515" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule" />
-        <infoLink name="Mob Rule" id="8e02-99b7-85e6-1788" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
-        <infoLink name="Oddboy" id="2209-78e5-13f6-4770" hidden="false" targetId="487b-f932-39ab-f602" type="rule" />
-        <infoLink name="Waaagh!" id="93ba-13f7-ea1a-9256" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="70b7-3c77-8330-9602" primary="false" name="Unit:" />
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Painboy" hidden="false" id="742d-8acc-e535-9ea2" publicationId="96d0-c462-d158-fbad">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad14-b60c-2403-68a0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c263-7aa2-fdb2-dff3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <profiles>
-            <profile name="Painboy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="c226-a4b7-0cdb-2891" publicationId="96d0-c462-d158-fbad">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Independent Character)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="0327-1dfb-8265-1fa9" primary="false" name="Infantry Unit Type" />
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="85c1-9b66-3191-71ea" primary="false" name="Independent Character" />
-          </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="'Urty syringe" hidden="false" id="9532-361b-1387-8205" type="selectionEntry" targetId="9b2a-5cab-e889-da13">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bbd-179b-3f33-04be" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="537b-f9e5-e17f-b1f1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Choppa" hidden="false" id="bc6d-c2b4-e156-397b" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9064-d42f-7756-a58e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fca-5345-46b5-42a9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="b88e-c133-26f3-cde3" type="selectionEntry" targetId="960a-b583-75a7-cab5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c997-039d-5cb8-d0a9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f09a-9d63-2be2-df90" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Da Armour" hidden="false" id="375e-5df5-dc91-5e16" type="selectionEntry" targetId="ff87-f2ad-bb74-ba22">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24a2-8403-10d7-a669" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe05-f1bb-1002-b676" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Grot Orderly" hidden="false" id="b606-c6eb-9933-da9c" publicationId="96d0-c462-d158-fbad">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="666f-477f-197e-8a24" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="14e0-2203-8cbe-f987" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <profiles>
-            <profile name="Grot Orderly" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="0385-09ce-0c30-6f17" publicationId="96d0-c462-d158-fbad">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">2</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">2</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="12ef-b905-6014-3631" primary="false" name="Infantry Unit Type" />
-          </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Grot stabba" hidden="false" id="c2f4-7f29-a667-f87f" type="selectionEntry" targetId="a672-29e6-7845-0208">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fdea-081e-2ab6-4493" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b8b-25ba-0537-3a80" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Painboy: Options" hidden="false" id="772c-75d1-f321-cd39">
-          <entryLinks>
-            <entryLink import="true" name="Big choppa" hidden="false" id="83e1-6d7c-25d2-605e" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
-              <modifiers>
-                <modifier type="increment" field="416a-3c3a-3038-4175" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="b392-707e-9b8e-8d4f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="742d-8acc-e535-9ea2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="416a-3c3a-3038-4175" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="'Uge choppa" hidden="false" id="c839-b3d6-25d0-d2c8" type="selectionEntry" targetId="4e26-ad46-72d3-6708">
-              <modifiers>
-                <modifier type="increment" field="e445-253b-a723-21c3" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="b392-707e-9b8e-8d4f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="742d-8acc-e535-9ea2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e445-253b-a723-21c3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Power klaw" hidden="false" id="a096-2723-305b-48fc" type="selectionEntry" targetId="0ecd-3c66-1dd0-3426">
-              <modifiers>
-                <modifier type="increment" field="0a11-02ad-4528-a7dc" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="b392-707e-9b8e-8d4f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="742d-8acc-e535-9ea2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0a11-02ad-4528-a7dc" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="'Eavy Armour" hidden="false" id="62bf-233a-dcb8-06bd" type="selectionEntry" targetId="e4bb-7234-0498-89ca">
-              <modifiers>
-                <modifier type="increment" field="fa08-b808-14cc-80af" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="b392-707e-9b8e-8d4f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="742d-8acc-e535-9ea2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fa08-b808-14cc-80af" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Attack Squig" hidden="false" id="6c7f-eb7c-edab-b556" type="selectionEntry" targetId="5f90-098a-c9cf-7c99">
-              <modifiers>
-                <modifier type="increment" field="64cc-4b29-d0db-bbea" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="b392-707e-9b8e-8d4f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="742d-8acc-e535-9ea2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="64cc-4b29-d0db-bbea" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75" />
-      </costs>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tankbustas" hidden="false" id="683a-6137-295d-9f6e" publicationId="96d0-c462-d158-fbad">
       <rules>
         <rule name="Glory Hogs" id="08c1-44ca-d1bc-9ef1" hidden="false">
@@ -10081,170 +10189,6 @@ The effect lasts until the end of the turn.</description>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Weirdboy" hidden="false" id="62d7-8635-423d-e5e0" publicationId="96d0-c462-d158-fbad">
-      <rules>
-        <rule name="Psychic discipline" id="2071-d1ea-0d4d-5ad1" hidden="false">
-          <description>Power of da Waaagh!</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="Xenos" id="3b11-e183-ce06-5f1e" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
-        <infoLink name="'Ere We Go!" id="a2c1-c5a6-310a-457e" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
-        <infoLink name="Mob Rule" id="4b72-9498-ae94-253a" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
-        <infoLink name="Oddboy" id="18d8-908c-b129-9993" hidden="false" targetId="487b-f932-39ab-f602" type="rule" />
-        <infoLink name="Perils of the Waaagh!" id="5426-7cce-eed6-ee97" hidden="false" targetId="39f7-c1ce-029c-1605" type="rule" />
-        <infoLink name="Waaagh!" id="af3e-8b2c-d36c-9f9c" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
-        <infoLink name="Waaagh! Energy" id="7e03-3052-e787-4d2b" hidden="false" targetId="22d5-a04c-eb29-712d" type="rule" />
-        <infoLink name="Weirdboy Discipline" id="c4f7-b633-f44a-f17d" hidden="false" targetId="517b-da3c-94f0-96a2" type="rule" />
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="f487-21c1-2755-2d89" primary="false" name="Unit:" />
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Weirdboy" hidden="false" id="35e7-61da-5e25-6ffd" publicationId="96d0-c462-d158-fbad">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85d0-1914-f3b6-bf57" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dab-3cbb-7af7-bea5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <profiles>
-            <profile name="Weirdboy" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="0c45-4013-3fbf-4575" publicationId="96d0-c462-d158-fbad">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Independent Character, Psyker)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="9447-297e-bbd5-3a89" primary="false" name="Infantry Unit Type" />
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="92aa-8b53-24f1-47e8" primary="false" name="Independent Character" />
-            <categoryLink targetId="6e0c-29ba-a445-8321" id="959f-9feb-4f04-e916" primary="false" name="Psyker:" />
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Options" hidden="false" id="d74f-0d5b-1f63-7f75">
-              <entryLinks>
-                <entryLink import="true" name="Attack Squig" hidden="false" id="8cad-c65f-737e-79c5" type="selectionEntry" targetId="5f90-098a-c9cf-7c99">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0482-dd91-21e8-34c5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="'Eavy Armour" hidden="false" id="b602-62b6-3413-b9d1" type="selectionEntry" targetId="e4bb-7234-0498-89ca">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47d5-f45d-f9dc-5471" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Warphead" hidden="false" id="0e8a-8ef2-28ca-2cd7" type="selectionEntry" targetId="eaff-e0e8-d237-dcd1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5192-2ad5-276f-525a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Weirdboy Discipline: Psychic Power" hidden="false" id="4316-fe0f-de4b-4376">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6799-2282-6e8f-b9d0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb61-d1e3-e7d3-f412" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Da Jump" hidden="false" id="7032-68e6-32f7-045e" type="selectionEntry" targetId="358e-9f5e-f44a-bcaa">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af45-e623-b984-923a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Waaagh! Pulse" hidden="false" id="cfce-5f06-824b-31fc" type="selectionEntry" targetId="3473-1f0b-f812-6201">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7121-d83e-ca2f-e77d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Green Fury" hidden="false" id="877b-7af5-7efe-b12e" type="selectionEntry" targetId="adb5-8c5e-509e-b798">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45a5-1685-85bd-b75d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Weirdboy Discipline: Psychic Weapon" hidden="false" id="215e-2197-7098-e044">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d615-2c63-3473-7954" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f2e-fe28-393c-419d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Green Lightning" hidden="false" id="b729-c338-d979-2b7d" type="selectionEntry" targetId="173a-529c-c853-8565">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84f3-f235-0eed-626c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Warphead Blast" hidden="false" id="4056-c912-d15a-a086" type="selectionEntry" targetId="e6f5-80c7-2e6f-51e5">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="189c-85f8-2b83-4edb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Fists of Gork" hidden="false" id="5a28-46c5-350e-f8fd" type="selectionEntry" targetId="2180-59e0-9caa-2eda">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f549-d998-9024-73c9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Weirdboy staff" hidden="false" id="b26f-5469-2d27-2056" type="selectionEntry" targetId="8573-5186-9c21-2e2f">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f3e-8275-0130-1501" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a99b-ac8c-53be-f802" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="42f0-05d3-c430-83ad" type="selectionEntry" targetId="960a-b583-75a7-cab5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8a7-e8c9-712d-e619" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2dd7-601d-e92c-516d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Mork Charms" hidden="false" id="f004-f333-3aef-66fb" type="selectionEntry" targetId="1ae5-d03d-6c25-f96d">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ee9-098e-2e7c-139b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bf1-6d8f-cda6-4408" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Frazzle" hidden="false" id="a1ee-b532-6cec-8e81" type="selectionEntry" targetId="41e2-ac8c-f2d1-0fb4">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2286-af68-da24-0d74" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4772-1bb9-e119-4805" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Da Jump" hidden="false" id="2f1e-6b61-3535-3cc4" type="selectionEntry" targetId="920b-c0d6-3639-f13b">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02b6-342f-71f0-a5e7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f34-fdbd-79f5-a6f8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="'Ard Boyz" hidden="false" id="0c61-c745-ff64-39a6" publicationId="96d0-c462-d158-fbad">
@@ -17554,6 +17498,9 @@ Da Biggest is Da Best is treated as equivalent to Master of the Legion for the p
     </rule>
     <rule name="Mo' Dakka" id="7c95-1e85-d2ea-dd63" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>When a model with this special rule generates an additional hit from Dakka!, the additional hit gains all of the same special rules and effects possessed by the original attack, including Rending, Breaching, Armourbane, Pinning and similar weapon effects.</description>
+    </rule>
+    <rule name="Odd Mob" id="3c0e-c25a-c45b-9f68" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>The Meks, Painboys and Weirdboys of a warband stand outside the mobs, lending their talents wherever the boss sends them. Only on the longest Waaagh!s would an Odd Boy find himself krumpin' alongside the same lads time and time again. An Odd Mob is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, each Odd Boy in an Odd Mob, together with any grots he has taken, either becomes a separate unit or is assigned to another unit from the same Detachment of the army the Odd Mob was selected as part of. An Odd Boy may only be assigned to a unit composed entirely of models with the Infantry Unit Type and the same Klan (X) special rule as the Odd Boy, and may not join a unit that includes models in Mega Armour.</description>
     </rule>
     <rule name="Oddboy" id="487b-f932-39ab-f602" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>Oddboyz may join Ork units normally, but do not count toward unit size when determining bonuses granted by the Mob Rule special rule.</description>
