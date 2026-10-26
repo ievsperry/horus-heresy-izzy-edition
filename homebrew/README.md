@@ -205,6 +205,9 @@ loading. The script prints anything in the doc it could not place.
   have Feel No Pain (6+)" shows that rule on those units while the regiment is chosen, and "may not
   include Leman Russ or Rogal Dorn tanks" hides them. Rules that depend on the moment ("while in area
   terrain", "or increase an existing") stay as text.
+- House rule: smoke launchers (in `2022 - Horus Heresy.gst`, so every list) and Ork smoke bombz grant
+  Shrouded (5+) instead of their 6+ Cover Save. Both entries keep the original rule and say which is the
+  house rule.
 - A wargear entry whose text says "Only one of each heirloom may be taken per army" may be taken once
   per roster (Heirlooms of Conquest).
 - A psychic weapon named "X (Psychic Weapon)" is kept apart from a weapon called X but shown as plain X

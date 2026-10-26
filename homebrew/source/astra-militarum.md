@@ -64,11 +64,7 @@ Every unit in this document has **Regiment (X)** unless its entry says otherwise
 
 **Leman Russ Commander.** A Tank Commander starts the game in a Leman Russ tank, leading a Leman Russ Squadron. Note that any type of Leman Russ can be taken as the Tank Commander's vehicle, and that it can have any upgrades usually available to that type of tank. The Tank Commander's tank is a character, has Ballistic Skill 4 and can be chosen as your army's Warlord. If his tank is Wrecked or suffers an Explodes! result, the Tank Commander is killed. A Tank Commander and his Leman Russ Squadron count as an HQ choice for the entire of the battle. The Tank Commander's Leman Russ cannot leave the unit or join another unit, even if the rest of his squadron are destroyed.
 
-**Tank Orders.** A Tank Commander can roll 2D6 at the beginning of the Shooting phase. If the total result is 9 or less, choose one of the following Tank Orders to immediately take effect.
-
-- **'Full Throttle!'** The officer leads a glorious tank charge that grinds the enemy beneath his treads. The Tank Commander's unit immediately moves Flat Out, moving up to 6+D6", even though they are Heavy.
-- **'Gunners, Kill on Sight!'** The officer gives his men free rein to unleash discretionary fire. The Tank Commander's unit immediately makes a shooting attack. The Tank Commander must shoot at a different target to the rest of his unit. The Tank Commander must resolve his shooting attack first. Once this shooting attack has been resolved, resolve the shooting attacks made by the rest of the unit. These must be at a different target, which cannot be a unit forced to disembark as a result of the Tank Commander's initial shooting attack.
-- **'Strike and Shroud!'** The squadron fires a volley before activating their smoke launchers. The Tank Commander's unit must make a shooting attack. After this shooting attack has been resolved, all vehicles in the unit that have not already done so must use their smoke launchers.
+**Tank Orders (X).** A Tank Commander may issue up to X orders to Astra Militarum vehicles within 12", using the same procedure: **Full Throttle!** (the vehicle may move an extra 6" but may not shoot), **Gunners, Kill on Sight!** (re-roll to-hit rolls of 1), or **Strike and Shroud!** (after shooting, the vehicle counts as obscured until your next turn).
 
 ## Advanced Reaction: Covering Fire
 
@@ -502,7 +498,7 @@ _30 points for the Tank Commander, plus his Leman Russ and the 1-2 other Leman R
 - Leman Russ Commander (Tank Commander only)
 - Lumbering Behemoth: the Leman Russ may fire its turret weapon after moving up to 6" as though it had not moved
 - Regiment (X)
-- Tank Orders (Tank Commander only)
+- Tank Orders (1) (Tank Commander only)
 
 **Options**
 
@@ -2218,7 +2214,7 @@ Only one of each heirloom may be taken per army.
 
 ## Wargear
 
-Wargear that already exists in 2.0 (frag and krak grenades, melta bombs, smoke launchers, hunter-killer missiles, dozer blades) uses its official rules.
+Wargear that already exists in 2.0 (frag and krak grenades, melta bombs, smoke launchers, hunter-killer missiles, dozer blades) uses its official rules. House rule: smoke launchers grant Shrouded (5+) instead of their 6+ Cover Save; the official rule is kept alongside it in the game system.
 
 ### Brute Shield
 

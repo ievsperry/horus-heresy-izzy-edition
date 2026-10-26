@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -3405,6 +3405,15 @@
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Smoke Bombz" hidden="false" id="3004-e579-9491-f268" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Smoke Bombz" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5b5f-23ea-485a-96c1">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per battle, at the end of its Movement phase, a mob with smoke bombz may set them off. Until the start of its controlling player's next turn the mob counts as being more than 25% obscured, regardless of terrain, and gains a 6+ Cover Save; it may not make Shooting Attacks that turn except as part of a Reaction†. House rule: instead of the 6+ Cover Save, the mob gains Shrouded (5+).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sneakin' Armour" hidden="false" id="1f4e-4036-dfaa-904f" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -13140,9 +13149,9 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
               </costs>
             </entryLink>
-            <entryLink import="true" name="Smoke bombs" hidden="false" id="2e17-c330-6974-cd75" type="selectionEntry" targetId="3c3e-0126-4e5b-1f16">
+            <entryLink import="true" name="Smoke Bombz" hidden="false" id="80f7-e610-7111-976b" type="selectionEntry" targetId="3004-e579-9491-f268">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53e9-9cc3-b61a-ed47" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c75-d044-db8d-277c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
@@ -13156,7 +13165,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Snipa rifle" hidden="false" id="ef1f-aac8-14d7-6290" publicationId="96d0-c462-d158-fbad" />
-    <selectionEntry type="upgrade" import="true" name="Smoke bombs" hidden="false" id="3c3e-0126-4e5b-1f16" publicationId="96d0-c462-d158-fbad" />
     <selectionEntry type="unit" import="true" name="Kustom Boosta-blasta" hidden="false" id="93dc-35cf-a53a-a555" publicationId="96d0-c462-d158-fbad">
       <infoLinks>
         <infoLink name="Xenos" id="2050-1a66-25e0-f7f8" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
