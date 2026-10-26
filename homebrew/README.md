@@ -185,6 +185,8 @@ loading. The script prints anything in the doc it could not place.
   heavy flamer is taken)" lowers the special weapon cap while the squad has one.
 - "A Heavy Weapons Team with a missile launcher may take: Flakk missiles" allows one per missile launcher
   in the squad.
+- "Power weapon", when the doc gives it no profile of its own, is the game system's Power Weapon: a
+  choice of power axe, power lance, power maul or power sword.
 - A wargear entry whose text says "Only one of each heirloom may be taken per army" may be taken once
   per roster (Heirlooms of Conquest).
 - A psychic weapon named "X (Psychic Weapon)" is kept apart from a weapon called X but shown as plain X

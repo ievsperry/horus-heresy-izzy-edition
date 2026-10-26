@@ -2116,7 +2116,7 @@ A unit that includes a model with a vox-caster may re-roll the Leadership test f
 
 ## Armoury
 
-Weapons that already exist in 2.0 use their official profiles: bolt pistol, boltgun, storm bolter, heavy bolter, heavy stubber, flamer, heavy flamer, meltagun, multi-melta, plasma pistol, plasma gun, plasma cannon, grenade launcher, autocannon, lascannon, multi-laser, battle cannon, power sword, power fist, chainsword and force weapons. The power weapon uses the power sword profile, and the missile launcher, flakk missiles and mortar use the profiles below. The weapons below are new.
+Weapons that already exist in 2.0 use their official profiles: bolt pistol, boltgun, storm bolter, heavy bolter, heavy stubber, flamer, heavy flamer, meltagun, multi-melta, plasma pistol, plasma gun, plasma cannon, grenade launcher, autocannon, lascannon, multi-laser, battle cannon, power sword, power fist, chainsword and force weapons. A power weapon is the 2.0 choice of power axe, power lance, power maul or power sword, and the missile launcher, flakk missiles and mortar use the profiles below. The weapons below are new.
 
 ### Close Combat Weapons
 
@@ -2131,7 +2131,6 @@ Weapons that already exist in 2.0 use their official profiles: bolt pistol, bolt
 | Eviscerator | – | x2 | 2 | Melee, Two-handed, Unwieldy |
 | Huge knife | – | +1 | 5 | Melee |
 | Hunting lance | – | +2 | 3 | Melee; only in a turn in which the bearer charged |
-| Power weapon | – | User | 3 | Melee, Rending (6+) |
 | Konstantin's hooves | – | 5 | – | Melee; two additional Attacks |
 | Sentinel chainsaw | – | +1 | 4 | Melee, Shred |
 

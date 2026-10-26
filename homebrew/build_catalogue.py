@@ -138,6 +138,20 @@ def load_gst_weapons(path=GST_FILE):
     return weapons
 
 
+def load_gst_choices(path=GST_FILE):
+    """Game system entries that are a choice of weapons ("Power Weapon": axe, lance, maul or sword), by name."""
+    ns = "{http://www.battlescribe.net/schema/gameSystemSchema}"
+    root = ET.parse(path).getroot()
+    groups = {g.get("id"): g.get("name") for g in root.iter(ns + "selectionEntryGroup")}
+    out = {}
+    for e in root.find(ns + "sharedSelectionEntries"):
+        links = e.findall(f"{ns}entryLinks/{ns}entryLink")
+        if len(links) == 1 and links[0].get("type") == "selectionEntryGroup" and \
+                norm(groups.get(links[0].get("targetId"), "")) == norm(e.get("name")):
+            out.setdefault(norm(e.get("name")), e.get("id"))
+    return out
+
+
 def load_gst_wargear(path=GST_FILE):
     """Wargear the game system defines (frag grenades, smoke launchers), by name."""
     ns = "{http://www.battlescribe.net/schema/gameSystemSchema}"
@@ -464,6 +478,7 @@ class Builder:
         self.local_rules = {}      # name -> id, catalogue sharedRules
         self.gst_rules = load_gst_rules()
         self.gst_weapons = load_gst_weapons()
+        self.gst_choices = load_gst_choices()
         self.gst_wargear = load_gst_wargear()
         self.gst_inner_rules = load_gst_inner_rules()
         self.weapons = {}          # normalised name -> shared entry id
@@ -2362,6 +2377,9 @@ class Builder:
             cand = OFFICIAL_ALIASES.get(cand, cand)
             if cand in self.gst_weapons:
                 return self.gst_weapons[cand], n
+        # "Power weapon": the 2.0 choice of power axe, lance, maul or sword
+        if t in self.gst_choices:
+            return self.gst_choices[t], n
         return None, n
 
     def find_upgrade(self, text):
