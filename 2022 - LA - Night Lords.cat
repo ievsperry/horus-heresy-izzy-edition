@@ -1340,7 +1340,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="7897-ea6c-4555-b94b" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
+        <categoryLink id="7897-ea6c-4555-b94b" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
           <comment>template_id_b24f-3ae0-4cbb-b016</comment>
         </categoryLink>
         <categoryLink id="2e6d-a5bc-484e-b30a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -4066,6 +4066,19 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="ec56-9897-18e5-7bb6" name="Land Raider Phobos" hidden="true" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="d8a1-97ef-defe-e30c" name="Legiones Unit Upgrades:" hidden="false" collective="false" import="true">
@@ -5106,6 +5119,27 @@ In addition, a Contekar Terminator Squad may be selected as a Retinue Squad in a
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220"/>
               </costs>
             </entryLink>
+            <entryLink id="a837-2fc1-ac7b-2ea9" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="837e-c3ca-437e-dfbf" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3640-6cce-b040-51d7" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e6dc-fc0a-b4db-6185" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220"/>
+              </costs>
+            </entryLink>
             <entryLink id="28a7-58f7-6584-22de" name="Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -5767,6 +5801,12 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d82-3cd3-90f7-f542" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30ab-234d-fd2c-1367" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8203-dd9c-501f-7b16" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eaa6-199b-9c4a-ca9a" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93b8-3f6b-3a71-4dfb" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>

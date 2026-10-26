@@ -12,7 +12,7 @@ import re
 import sys
 
 sys.path.insert(0, "homebrew")
-from faq_tools import Ops, append, sub, whole  # noqa: E402
+from faq_tools import Ops, append, make_id, sub, whole  # noqa: E402
 
 o = Ops()
 LA = "Legiones Astartes"
@@ -424,5 +424,151 @@ o.cost_all(AL, "Lernaean Terminator Squad", ("Power Fist",), 5)
 o.cost_all(AL, "Lernaean Terminator Squad", ("Chainfist",), 10)
 o.category(AL, "Exodus", "E:Exodus", add="Skirmish Sub-type")
 o.char(AL, "P:Exodus", UT="Infantry (Character, Light, Skirmish)")
+
+# ======================================================================= Legacies: Legiones Astartes (p92)
+o.text(LA, "R:Primus Nullificator", fn=lambda t: t.replace(
+    "must exchange their power weapon for an Aethershock maul*", "may exchange their power weapon for an Aethershock maul*").replace(
+    "A Legion Cataphractii Centurion may take the Legion Primus Nullificator Consul type.",
+    "A Legion Cataphractii Centurion may take the Legion Primus Nullificator Consul type. A model with this Legiones "
+    "Consularis upgrade increases his Leadership Characteristic to 10.") if "Leadership Characteristic to 10" not in t else t)
+o.text(LA, "R:Hexagrammatic Wards", fn=whole(
+    "When a model with this Special Rule suffers a wound from a Psychic Weapon or a Psychic Power, or from any attack made "
+    "by a model with the Daemon or Corrupted Unit Type or Sub-type, the model may re-roll any failed Invulnerable Saves it "
+    "makes."))
+o.add_link(LA, "Nullificator Squad", "Dedicated Transport", to="Land Raider Spartan", mn=None)
+for g in ("1) Weapon Option 1", "2) Weapon Option 2"):
+    o.retarget(LA, "Castra Ferrum Dreadnought Talon", "Castra Ferrum Dreadnought", g, "Multi-Melta", to="Gravis Melta Cannon")
+    o.cost(LA, "Castra Ferrum Dreadnought Talon", "Castra Ferrum Dreadnought", g, "Gravis Melta Cannon", v=15)
+o.price(LA, "Castra Ferrum Dreadnought Talon", 150, 150, "Castra Ferrum Dreadnought")
+o.rule(LA, "Spatha Attack Bike Squadron", add=("Support Squad", "Hit & Run", "Outflank"))
+o.char(LA, "Spatha Attack Bike Squadron", "P:Legion Spatha Attack Bike", W="3")
+o.cost(LA, "Spatha Attack Bike Squadron", "1) Spatha Combat Bike Weaponry.", "Multi-Melta", v=15)
+o.text(LA, "Spatha Attack Bike Squadron", "P:Spatha Attack Bike", fn=append(
+    "A model equipped with a Legion Spatha Attack Bike must change its Unit Type to Cavalry, keeping any Unit Sub-types "
+    "it previously had, and may choose to gain the Skirmish Unit Sub-type. In addition, the model must change its Movement "
+    "Characteristic to 14 and gains the Firing Protocols (2), Battle-Hardened (1), Skilled Rider, and Hammer of Wrath (1) "
+    "Special Rules."))
+o.rule(LA, "Spatha Attack Bike Squadron", add=("Battle-Hardened (1)", "Skilled Rider"))
+o.price(LA, "Tarantula Sentry Gun Battery", 20)
+o.rule(LA, "Tarantula Sentry Gun Battery", remove="Bulky (X)", add=("Immobile", "Sentry Protocols"))
+o.char(LA, "Tarantula Sentry Gun Battery", "P:Tarantula Sentry Gun", WS="-", BS="3", S="5", T="5", W="2", I="-", A="-", Ld="5", Sv="3+")
+SENTRY = ("A model with this Special Rule must target the closest enemy model as per the following limitations and "
+          "restrictions:\n"
+          "- Any model armed with a weapon of Strength 7 or more must target the nearest enemy model with the Vehicle, "
+          "Automata, or Dreadnought Sub-types.\n"
+          "- Any model armed with a weapon of Strength 6 or below must target the nearest enemy model without the Vehicle, "
+          "Automata, or Dreadnought Sub-types.\n"
+          "- Any model armed with a weapon with the Skyfire Special Rule must target the nearest enemy model with the Flyer "
+          "Sub-type.\n"
+          "If no such target is in range, then the Controlling Player may select a target as normal.")
+o.text("gst", "R:Sentry Protocols", fn=whole(SENTRY))
+o.add_link(LA, "Terminator Indomitus Squad", "Dedicated Transport:", to="Land Raider Spartan", mn=None)
+
+
+def phobos():
+    nid = o.F and o.clone_entry(LA, "Land Raider Phobos Squadron", "Land Raider Phobos", name="Land Raider Phobos",
+                                salt="phobos transport")
+    for f in o.F.paths:
+        if "targetId=\"c123-bdc6-a6ba-79a2\"" in o.F.text[f]:
+            o.link_beside(o.F.short(f), "c123-bdc6-a6ba-79a2", nid, "Land Raider Phobos", cost=None)
+
+
+o.run("Land Raider Phobos as a Proteus Carrier", phobos)
+
+
+def achilles(x):
+    if "Quad Launcher - Frag" in x:
+        return x
+    links = []
+    for shell in ("Frag", "Shatter", "Splinter", "Incendiary"):
+        tid, _ = o.shared_id("Quad Launcher - " + shell)
+        lid = make_id("achilles quad", shell)
+        links.append(f'<entryLink id="{lid}" name="Quad Launcher - {shell}" hidden="false" collective="false" import="true" '
+                     f'targetId="{tid}" type="selectionEntry"><constraints><constraint field="selections" scope="parent" '
+                     f'value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" '
+                     f'id="{make_id(lid, "min")}" type="min"/><constraint field="selections" scope="parent" value="1" '
+                     f'percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" '
+                     f'id="{make_id(lid, "max")}" type="max"/></constraints></entryLink>')
+    x = re.sub(r"\s*<profiles>.*?</profiles>", "", x, count=1, flags=re.S)
+    x = re.sub(r"\s*<infoLinks>.*?</infoLinks>", "", x, count=1, flags=re.S)
+    x = x.replace('name="1) Hull (Front) Mounted Achillus Quad Launcher"', 'name="1) Hull (Front) Mounted Quad Launcher"')
+    i = x.rfind("<costs>") if "<costs>" in x else x.rfind("</selectionEntry>")
+    return x[:i] + "<entryLinks>" + "".join(links) + "</entryLinks>" + x[i:]
+
+
+o.raw(LA, "Land Raider Achilles Squadron", "Land Raider Achilles",
+      "1) Hull (Front) Mounted " + ("Quad Launcher" if "Mounted Quad Launcher\"" in o.F.text[o.F.file(LA)] else "Achillus Quad Launcher"),
+      fn=achilles, what="Quad Launcher (Frag, Shatter, Splinter, Incendiary)")
+
+# ======================================================================= Legacies: Legiones Astartes (pp93-95)
+# The wording of the rewritten rules on these pages (Avatar, Keeper of the Keys, Beacon of Hope, Ferrum Occularis,
+# Void Shield Envelope, Hammerfall Strike) is not reproduced here; only points, characteristics and options are.
+o.category(LA, "Whirlwind", add="Bombard Sub-type")
+o.char(LA, "Whirlwind", "P:Whirlwind", UT="Vehicle (Bombard)")
+o.char(LA, "Caestus Assault Ram", "P:Caestus Assault Ram", M="18\"", Tr="12")
+o.rule(LA, "Caestus Assault Ram", add=("Afterburner", "Caestus Prow", "Inertia Suppression Clamps"))
+MAL = (LA, "Legion Malcador Assault Tank Squadron", "Malcador Assault Tank")
+o.rename(*MAL, "3) Side Mounted Weapons", to="3) Hull (Left and Right) Mounted Weapons")
+o.cost(*MAL, "3) Hull (Left and Right) Mounted Weapons", "Lascannon", v=15)
+o.cost(*MAL, "2) Hull Mounted Weapon", "Demolisher Cannon", v=35)
+o.retarget(*MAL, "1) Main Hull Weapon", "Gravis Lascannon", to="Gravis Heavy Lascannon",
+           shown="Hull (Front) Mounted Twin-linked Gravis Heavy Lascannon")
+o.text("gst", "R:Independent Fire Control", fn=whole(
+    "A model with this Special Rule may remain stationary, move at Combat Speed, or Cruising Speed, and still fire all "
+    "of its weapons as though it had the Super-Heavy Sub-type. Note that this does not grant any of the other benefits "
+    "of the Super-Heavy Sub-type."))
+o.retarget(LA, "Legion Minotaur Battery", "Minotaur", "Earthshaker cannon", to="Earthshaker Battery",
+           shown="Centreline (Rear) Mounted Earthshaker Battery")
+for unit, prof, pts, extra in (("Legion Stormblade", "Stormblade", 500, {}), ("Legion Baneblade", "Baneblade", 475, {}),
+                               ("Legion Banehammer", "Banehammer", 500, {"Tr": "22"}),
+                               ("Legion Stormlord", "Stormlord", 475, {"Tr": "32"}),
+                               ("Legion Shadowsword", "Shadowsword", 550, {}), ("Legion Stormsword", "Stormsword", 525, {})):
+    o.price(LA, unit, pts)
+    o.char(LA, unit, "P:" + prof, Front="14", **extra)
+o.add_link(LA, "Legion Stormblade", to="Heavy Bolter", shown="Hull (Front) Mounted Heavy Bolter")
+o.rule(LA, "Legion Banehammer", add="Tank Desant (10)")
+o.rule(LA, "Legion Stormlord", add=("Tank Desant (10)", "Assault Vehicle"))
+# p94
+o.move_slot("Legion Macharius Heavy Tank Squadron", "Lords of War:", "Heavy Support:")
+o.move_slot("Legion Macharius Omega Heavy Tank", "Lords of War:", "Heavy Support:")
+o.cat_strip("Legion Macharius Heavy Tank Squadron", ("LoW & Primarchs (25% Limit)",))
+o.cat_strip("Legion Macharius Omega Heavy Tank", ("LoW & Primarchs (25% Limit)",))
+o.cost(LA, "Legion Macharius Heavy Tank Squadron", "Macharius Heavy Tank", v=330)
+o.cost(LA, "Legion Macharius Heavy Tank Squadron", "Additional Macharius Heavy Tank", v=335)
+o.maxsel(LA, "Legion Macharius Heavy Tank Squadron", "Additional Macharius Heavy Tank", v=2)
+o.rule(LA, "Legion Macharius Omega Heavy Tank", add="Exposed Compartment")
+o.char(LA, "Legion Crassus Armoured Assault Transport", "P:Crassus Armoured Assault Transport", Tr="48")
+o.rule(LA, "Legion Crassus Armoured Assault Transport", add="Transport Bay")
+o.price(LA, "Legion Praetor Armoured Assault Launcher", 475)
+o.rename(LA, "Legion Praetor Armoured Assault Launcher", "E:Praetor Launcher", to="Centreline Mounted Praetor Launcher")
+DA, UM, SAL, RG, DG = "LA - Dark Angels", "LA - Ultramarines", "LA - Salamanders", "LA - Raven Guard", "LA - Death Guard"
+o.rule(DA, "Farith Redloss", "E:Farith Redloss", add="Consul (Siege Breaker)")
+o.price(DA, "Excindio Battle-automata", 300)
+o.char(UM, "Honoured Telemechrus", "P:Honoured Telemechrus", UT="Dreadnought (Character, Unique)")
+o.category(UM, "Honoured Telemechrus", "E:Honoured Telemechrus", add="Character")
+o.add_link(UM, "Honoured Telemechrus", "E:Honoured Telemechrus", to="Legion Vexilla")
+o.cost(UM, "Locutarus Storm Squad", "Locutarus", v=30)
+o.add_link(LA, "E:Cassian Dracos Reborn", to="Iron Halo")
+o.add_link(LA, "E:Cassian Dracos Reborn", to="Nuncio-Vox")
+o.category(LA, "E:Cassian Dracos Reborn", add="Character")
+o.char(LA, "E:Cassian Dracos Reborn", "P:Cassian Dracos Reborn", M="6", WS="6", BS="5", S="6", T="7", W="6", I="4", A="4",
+       Ld="10", Sv="2+")
+o.char(SAL, "Lord Chaplain Nomus Rhy'Tan", "P:Lord Chaplain Nomus Rhy'Tan", WS="6")
+o.rule(SAL, "Lord Chaplain Nomus Rhy'Tan", add="It Will Not Die (5+)")
+# p95
+o.rule(LA, "Xiaphas Jurr", add="It Will Not Die (5+)")
+o.add_link(RG, "Strike Captain Alvarex Maun", "E:Strike Captain Alvarex Maun", to="Refractor Field")
+o.rule(EC, "E:Rylanor the Unyielding", add=("It Will Not Die (5+)", "Hatred (Traitors)", "Shattered Legionary"))
+o.category(EC, "E:Rylanor the Unyielding", add="Character")
+o.add_link(EC, "E:Rylanor the Unyielding", to="Legion Vexilla")
+o.cost(IW, "E:The Tormentor", v=750)
+o.char(IW, "E:The Tormentor", "P:The Tormentor", Front="14")
+o.rule(IW, "E:Erasmus Golg", add="Traitor")
+o.add_link("LA - Night Lords", "Kheron Ophion of the Kyroptera", "E:Kheron Ophion of the Kyroptera", to="Artificer Armour")
+o.rule(DG, "Crysos Morturg", add="The Black Shield")
+o.char(DG, "Marshal Durak Rask", "P:Marshal Durak Rask", W="3")
+o.cost_all(SOH, "Reaver Aggressor Squad", ("Power Maul", "Power Sword", "Power Lance", "Power Axe", "Carsoran Power Axe",
+                                           "Carsoran Power Tabar", "Charnabal Glaive", "Charnabal Sabre", "Charnabal Tabar"), 5)
+o.rule(AL, "Autilon Skorr", remove="Traitor")
 
 o.report()

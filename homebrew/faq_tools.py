@@ -225,9 +225,7 @@ class Files:
         """Drop an entry's infoLink to a rule (matched by link name or its shown name)."""
         s = self.text[path]
         il = self.child(path, sp, "infoLinks")
-        if not il:
-            raise KeyError("no infoLinks")
-        for t, a, b in self.children(path, il):
+        for t, a, b in (self.children(path, il) if il else []):
             blk = s[a:b]
             nm = re.search(r'name="([^"]*)"', blk).group(1)
             shown = re.search(r'field="name" value="([^"]*)"', blk)
@@ -236,7 +234,6 @@ class Files:
                 end = b + (len(self.nl(path)) if s[b:b + 2] in ("\r\n",) or s[b:b + 1] == "\n" else 0)
                 self.replace(path, line if s[line:a].strip() == "" else a, end, "", what)
                 return
-        raise KeyError(f"no rule link {name}")
 
     def edit_text(self, path, sp, fn, what, char="Description"):
         """Change a rule's description, or a profile's text characteristic, with fn(old) -> new."""
@@ -421,7 +418,11 @@ class Ops:
 
     def rename(self, f, *path, to):
         def go():
-            p, sp = self.at(f, *path)
+            try:
+                p, sp = self.at(f, *path)
+            except KeyError:
+                self.at(f, *path[:-1], to)  # already renamed, or a real miss
+                return
             s = self.F.text[p]
             m = TAG.match(s, sp[0])
             a = re.search(r'\sname="([^"]*)"', m.group(0))
@@ -453,7 +454,11 @@ class Ops:
     def retarget(self, f, *path, to, shown=None):
         """Point an entry link at another shared entry (and rename it)."""
         def go():
-            p, sp = self.at(f, *path)
+            try:
+                p, sp = self.at(f, *path)
+            except KeyError:
+                self.at(f, *path[:-1], shown or to)  # already done, or a real miss
+                return
             tid, _ = self.shared_id(to, f)
             s = self.F.text[p]
             head = TAG.match(s, sp[0]).group(0)
@@ -500,7 +505,10 @@ class Ops:
     def drop(self, f, *path):
         """Remove an element (an option, a link) entirely."""
         def go():
-            p, sp = self.at(f, *path)
+            try:
+                p, sp = self.at(f, *path)
+            except KeyError:
+                return  # already gone
             s = self.F.text[p]
             line = s.rfind("\n", 0, sp[0]) + 1
             end = s.find("\n", sp[1]) + 1
@@ -569,7 +577,8 @@ class Ops:
             cid = child if re.match(r"^[0-9a-f]{4}-", child) else self.shared_id(child)[0]
             p, sp = self.at(f, *path)
             s = self.F.text[p]
-            if re.search(r'<infoLink [^>]*name="' + re.escape(html.escape(rule, quote=False)) + '"', s[sp[0]:sp[1]]):
+            if re.search(r'<infoLink [^>]*name="' + re.escape(html.escape(rule, quote=False)) + '"', s[sp[0]:sp[1]]) or \
+                    make_id(p, " > ".join(path), rule, cid) in s:
                 return
             rid, _ = self.F.rule_link(rule)
             real = re.search(r'<rule id="' + rid + r'" name="([^"]+)"', "".join(self.F.text.values())).group(1)
@@ -674,3 +683,79 @@ class Ops:
             if not n:
                 raise KeyError("nothing priced")
         self.run(f"{unit} {names[0]}.. cost", go)
+
+    def clone_entry(self, f, *path, name, salt):
+        """Copy an element as a new shared selection entry of type upgrade (every id inside made new, its own
+        min/max dropped), unless one with that name is already shared. Returns the new id."""
+        p, sp = self.at(f, *path)
+        s = self.F.text[p]
+        m = re.search(r'\n\s{4}<selectionEntry id="([^"]+)" name="' + re.escape(html.escape(name, quote=False)) + '"', s)
+        if m:
+            return m.group(1)
+        blk = s[sp[0]:sp[1]]
+        ids = re.findall(r'\sid="([^"]+)"', blk)
+        for old in ids:
+            blk = blk.replace(f'"{old}"', f'"{make_id(salt, old)}"')
+        new_id = make_id(salt, ids[0])
+        head = TAG.match(blk).group(0)
+        nh = re.sub(r'\sname="[^"]*"', f' name="{html.escape(name, quote=False)}"', head, count=1)
+        nh = re.sub(r'\stype="model"', ' type="upgrade"', nh)
+        blk = nh + blk[len(head):]
+        c = re.search(r'^(<selectionEntry[^>]*>)(\s*<constraints>.*?</constraints>)', blk, re.S)
+        if c:
+            blk = c.group(1) + blk[c.end():]
+        ind = self.F.indent_of(p, sp[0])
+        nl = self.F.nl(p)
+        lines = blk.split("\n")
+        blk = "\n".join([lines[0]] + [l[len(ind) - 4:] if l.startswith(ind) else l for l in lines[1:]])
+        i = s.index("  </sharedSelectionEntries>")
+        self.F.replace(p, i, i, "    " + blk + nl, f"{name}: new shared entry")
+        return new_id
+
+    def link_beside(self, f, target_id, new_target, new_name, cost=None):
+        """Next to every entry link to `target_id` in a file, add the same link to `new_target`."""
+        def go():
+            p = self.F.file(f)
+            s = self.F.text[p]
+            starts = [m.start() for m in re.finditer(r'<entryLink [^>]*targetId="' + target_id + '"', s)]
+            for st in reversed(starts):
+                a, b = self.F.span(p, st)
+                parent_close = s.find("</entryLinks>", b)
+                if new_target in s[b:parent_close]:
+                    continue
+                blk = s[a:b]
+                for old in re.findall(r'\sid="([^"]+)"', blk):
+                    blk = blk.replace(f'"{old}"', f'"{make_id("beside", new_target, old)}"')
+                blk = blk.replace(f'targetId="{target_id}"', f'targetId="{new_target}"')
+                blk = re.sub(r'\sname="[^"]*"', f' name="{html.escape(new_name, quote=False)}"', blk, count=1)
+                if cost is not None:
+                    blk = re.sub(r'(<cost [^>]*typeId="' + PTS + r'"[^>]*value=")[^"]*"', r'\g<1>' + str(cost) + '"', blk)
+                ind = self.F.indent_of(p, a)
+                self.F.replace(p, b, b, self.F.nl(p) + ind + blk, f"{new_name} beside link at {a}")
+                s = self.F.text[p]
+        self.run(f"{new_name} links", go)
+
+    def move_slot(self, unit, old, new):
+        """Move a unit to another Force Organisation slot: every catalogue's root link to it changes its primary
+        category from `old` to `new` (category names as the game system has them)."""
+        def go():
+            oid, nid = self.cats[norm(old)], self.cats[norm(new)]
+            n = 0
+            for p in self.F.paths:
+                i = 0
+                while True:
+                    hits = self.F.find(p, unit, "entryLink")
+                    if i >= len(hits):
+                        break
+                    a, b = self.F.span(p, hits[i])
+                    i += 1
+                    s = self.F.text[p]
+                    m = re.search(r'<categoryLink ([^>]*)targetId="' + oid + r'"([^>]*)>', s[a:b])
+                    if not m:
+                        continue
+                    new_tag = re.sub(r'name="[^"]*"', f'name="{html.escape(new, quote=False)}"', m.group(0)).replace(oid, nid)
+                    self.F.replace(p, a + m.start(), a + m.end(), new_tag, f"{unit}: {old} -> {new}")
+                    n += 1
+            if not n and not any(re.search(r'name="' + re.escape(html.escape(unit, quote=False)) + r'"[^>]*>(?:(?!</entryLink>).)*targetId="' + nid + '"', self.F.text[p], re.S) for p in self.F.paths):
+                raise KeyError("no links in that slot")
+        self.run(f"{unit} slot", go)

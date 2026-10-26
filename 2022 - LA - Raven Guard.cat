@@ -1169,7 +1169,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="3b6d-2bfd-4d68-8e07" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
+        <categoryLink id="3b6d-2bfd-4d68-8e07" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
           <comment>template_id_b24f-3ae0-4cbb-b016</comment>
         </categoryLink>
         <categoryLink id="3e5e-e13f-4248-9b38" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -3308,6 +3308,19 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="5e28-7a1f-aa9e-1d35" name="Land Raider Phobos" hidden="true" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="cb6f-8411-bd32-1c35" name="Dreadclaw Drop Pod" hidden="true" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -4203,6 +4216,12 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2aa5-1b2f-d51e-3b36" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb14-d36a-d5d2-0fde" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="96ac-f0b2-ccb5-3e9f" name="Refractor Field" hidden="false" collective="false" import="true" targetId="a06a-55a5-070b-1d0e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5778-2094-c351-7cae" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6b5-ac5e-0e5c-b749" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
