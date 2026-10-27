@@ -266,6 +266,10 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   game system already has under its own id (in its shared rules or a Unit Sub-type) has its text set to the
   source's; pass `--keep-existing` to leave those alone. The file holds the Imperatus Special Rules and Unit
   Sub-types (Anathema, Asuryani, Corrupted, Guardian, Rillietann, Sycophantica).
+- `python3 homebrew/sync_catalogue_rules.py` gives the official catalogues' own copies of shared rules (the
+  Custodes Auramite Talon, Gravitic Repulsion, Master of the Shield-Hosts and Slayer of Kings, the Solar Auxilia
+  Command Tank, the Sisters of Silence Vigilant Covenant) the text `additional-special-rules.md` has for them.
+  Running it again changes nothing.
 - `python3 homebrew/add_imperatus_wargear.py` adds the Imperatus Archaeotechnological Relics (Apex Digital Weapon,
   Displacer Matrix, Grav-Wave Generator) to the game system as a one-per-model group the Solar Auxilia Legate
   Marshal may take, and the Imperialis Militia Force Commander may take with the Armoury of Old Night Provenance

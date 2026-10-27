@@ -627,11 +627,13 @@ The model gains Infantry Transport and Assault Vehicle, and counts as a Vehicle 
 
 ### Vortex
 
-Once an attack with this rule is resolved, its Blast markers stay in play for the rest of the battle as Vortex markers. The area under one is Area Terrain with these effects:
+Once an attack with this special rule has been fully resolved, any Blast markers placed as part of that attack are not removed from play and instead are left in place for the remainder of the battle. Such a Blast marker is then referred to as the Vortex marker. The area under a Vortex marker is treated as Area Terrain for the remainder of the battle, and applies the following effects to all models that enter its boundaries:
 
-- No line of sight may be drawn through, into, or out of it.
-- Any model that enters it, or begins its Controlling Player's Movement phase in it, suffers one Str 10, AP 1 Hit with Instant Death and Armourbane (Melee). A Vehicle suffering a Penetrating Hit this way adds +3 to its Vehicle Damage roll.
-- It gives no Cover Save, and models inside may not use Cover Saves from any other source.
+No line of sight may be drawn through, into, or out of the area covered by the Vortex marker (as such, models within such an area of terrain cannot draw line of sight to any other model, nor can other models draw a line of sight to them).
+
+Any models that enter the boundary of this area of terrain, or begin the Movement phase of the model's Controlling Player within its boundaries, immediately suffer one Str 10, AP 1 Hit and the Instant Death and Armourbane (Melee) special rules. If the model has the Vehicle Unit Type and suffers a Penetrating Hit due to this effect then it adds a modifier of +3 to that roll on the Vehicle Damage table.
+
+This area of terrain does not confer a Cover Save and no model within its boundary may use a Cover Save granted by any other rule or effect.
 
 ## Wargear
 
