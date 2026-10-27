@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="208" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="209" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -1231,7 +1231,8 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
 • A model with the Gargantuan Unit Sub-type may attack with all weapons they have in each Shooting Attack they make, including as part of a Reaction.
 • A model with the Gargantuan Unit Sub-type may make Shooting Attacks with Heavy and Ordnance weapons, counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
 • No model that does not have the Gargantuan Unit Sub-type may join a unit that includes a model with the Gargantuan Unit Sub-type.
-• A model with the Gargantuan Unit Sub-type ignores all effects (both detrimental and beneficial) of all Psychic Powers and cannot be Wounded or affected by any Attack with the Psychic Focus special rule. Weapons with the Force special rule that are used to make Attacks against a model with the Gargantuan Unit Sub-type are not affected and are resolved normally.</description>
+• A model with the Gargantuan Unit Sub-type ignores all effects (both detrimental and beneficial) of all Psychic Powers and cannot be Wounded or affected by any Attack with the Psychic Focus special rule. Weapons with the Force special rule that are used to make Attacks against a model with the Gargantuan Unit Sub-type are not affected and are resolved normally.
+• Any unit entirely composed of models with the Gargantuan Unit Type may choose to ignore the Heroic Stand Special Rule, ignoring any penalties normally applied for declining a Challenge, unless the Challenge was issued by a model with the Knight, Gargantuan, Titan, Primarch, or Daemon Primarch Unit Types.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -1385,9 +1386,11 @@ In addition, a Knight or Titan gains +2 Attacks for being equipped with two Mele
           <description>• All models with the Daemon Primarch Unit Type have the following special rules: Independent Character, Eternal Warrior, Fear (2), It Will Not Die (5+), Bulky (6), and Relentless. In addition, all models with the Daemon Primarch Unit Type always count as Character models.
 • Models with the Daemon Primarch Unit Type are not affected by special rules that negatively modify their Characteristics (other than Wounds) and, in addition, models with the Daemon Primarch Unit Type always resolve Snap Shots at their normal BS.
 • All models with the Daemon Primarch Unit Type are immune to the effects of the Fear (X) special rule, cannot be Pinned, and a unit that includes one or more models with the Daemon Primarch Unit Type automatically passes Pinning and Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a unit that includes one or more models with the Daemon Primarch Unit Type fails a Morale check, the unit does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of any kind allowed which must be allocated to a model with the Daemon Primarch or Daemon Unit Type or the Corrupted Unit Sub-type.
-• Any Hits inflicted by a model with the Daemon Primarch Unit Type, as part of either Shooting Attacks or in close combat, are allocated by that model’s controlling player and not the controlling player of the target unit. These Hits should form a separate Wound Pool.
+• Daemon Primarchs have the Precision Strikes (2+) and Precision Shots (2+) Special Rules, and may choose to use these rules when attacking even when ordinarily they would be prevented from doing so, including when making Snap Shots.
 • If an army includes any models with the Daemon Primarch Unit Type, then one of those models must be chosen as the army’s Warlord.
-• For the purposes of any special rule that affects or has additional effects that target models with the Daemon or Primarch Unit Type, a model with the Daemon Primarch Unit Type is considered to have the Daemon and Primarch Unit Types</description>
+• For the purposes of any special rule that affects or has additional effects that target models with the Daemon or Primarch Unit Type, a model with the Daemon Primarch Unit Type is considered to have the Daemon and Primarch Unit Types
+• A model with this Unit Type may join units with the Infantry Unit Type as if it had the Primarch Unit Type, or units with the Daemon Unit Type as if it had the Daemon Unit Type.
+• Any unit entirely composed of models with the Daemon Primarch Unit Type may choose to ignore the Heroic Stand Special Rule, ignoring any penalties normally applied for declining a Challenge, unless the Challenge was issued by a model with the Knight, Gargantuan, Titan, Primarch, or Daemon Primarch Unit Types.</description>
         </rule>
       </rules>
       <constraints>

@@ -261,5 +261,12 @@ loading. The script prints anything in the doc it could not place.
 - `python3 homebrew/apply_core_faq.py` applies the Liber FAQ, Errata and Balance Changes for the Core Rulebook
   to the rules `2022 - Horus Heresy.gst` holds (Blind, Concussive (X), Force, Hit & Run, the Unit Type rules,
   Telekine Dome and so on). Running it again changes nothing.
+- `python3 homebrew/apply_expansion_faq.py` applies the Liber Panoptica FAQ, Errata and Balance Changes for the
+  army books, Legacies and Exemplary Battles to the official game system and catalogues: points, characteristics,
+  Unit Types, special rules, options, Force Organisation slots and rule text. It is written against the current
+  data, so running it again changes nothing, and it lists any change it could not place. Its edit operations
+  (find an entry by a name path, set a cost or characteristic, add or drop a rule, retarget a weapon option and so
+  on) live in `homebrew/faq_tools.py`; they edit the XML text in place, so each file keeps its own formatting, and
+  only link to rules and entries a catalogue can see through its imports.
 - A "**Name.** text" rule ends at the next heading, so a table or list under a following "####" heading no
   longer joins the rule before it.

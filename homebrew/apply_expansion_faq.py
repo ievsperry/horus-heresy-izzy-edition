@@ -473,7 +473,6 @@ def phobos():
             o.link_beside(o.F.short(f), "c123-bdc6-a6ba-79a2", nid, "Land Raider Phobos", cost=None)
 
 
-o.run("Land Raider Phobos as a Proteus Carrier", phobos)
 
 
 def achilles(x):
@@ -911,9 +910,10 @@ for e in ("Mounted Force Commander*", "Mounted Discipline Master*"):
     o.category(IM, "E:" + e, add="Skirmish Sub-type")
     o.category(IM, "E:" + e, add="Light Sub-type")
 o.cost(IM, "IM - Command Cadre", "2) Militia Bodyguard", v=5)
-o.cost(IM, "IM - Command Cadre", "2) Militia Bodyguard", "1.4) One Militia bodyguard Special Weapon:", "Plasma Gun", v=10)
 o.rename(IM, "IM - Command Cadre", "2) Militia Bodyguard", "1.4) One Militia bodyguard Special Weapon:",
          to="1.4) For every five models in the unit, one Militia Bodyguard in the squad may exchange their Lasgun for one of the following:")
+o.cost(IM, "IM - Command Cadre", "2) Militia Bodyguard", "1.4) For every five models in the unit, one Militia Bodyguard in the "
+       "squad may exchange their Lasgun for one of the following:", "Plasma Gun", v=10)
 o.rename(IM, "IM - Grenadier Squad", "2) Grenadier", "1.4) Two Grenadiers may exchange their Lasgun for:",
          to="1.4) For every ten models in the unit, up to two Grenadiers in the squad may exchange their Lasgun for one of the following:")
 for m in ("Lascannon", "Autocannon", "Heavy Stubber", "Missile Launcher Frag/Krak", "Mortar", "Multilaser", "Heavy Bolter"):
@@ -944,7 +944,18 @@ o.category(IM, "IM - Beastmasters", "1.1) Handlers", add="Light Sub-type")
 o.raw(IM, "IM - Beastmasters", what="War Beasts Rage (2)", fn=lambda x: x.replace('value="Rage (1)"', 'value="Rage (2)"'))
 o.cost(IM, "IM - Sentinel Squadron", "Sentinel", v=40)
 o.rename(IM, "IM - Sentinel Squadron", "L:Missile Launcher w/Frag & Krak Missiles", to="Missile Launcher (with Frag, Krak, and Flak Missiles)")
-o.rule(IM, "IM - Thunderbolt Fighter", add="Divisio Aeronautica Air Superiority")
+def air_superiority(x):
+    if "Divisio Aeronautica Air Superiority" in x:
+        return x
+    sa = o.F.text[o.F.file(SA)]
+    rule = re.search(r'<rule [^>]*name="Divisio Aeronautica Air Superiority".*?</rule>', sa, re.S).group(0)
+    rule = re.sub(r'\sid="[^"]*"', ' id="' + make_id("im air superiority") + '"', rule, count=1)
+    i = x.find("<infoLinks>") if "<infoLinks>" in x else x.find("<categoryLinks>")
+    return x[:i] + "<rules>" + rule + "</rules>" + x[i:]
+
+
+# the Solar Auxilia rule is not visible from the Militia catalogue, so the unit carries its own copy
+o.raw(IM, "IM - Thunderbolt Fighter", fn=air_superiority, what="+ Divisio Aeronautica Air Superiority")
 IMM = (IM, "IM - Malcador Heavy Tank")
 o.rule(*IMM, add="Independent Fire Control")
 o.retarget(*IMM, "1) May exchange its Hull (Front) Mounted battlecannon for one of the following:", "Gravis Lascannon",
@@ -964,4 +975,103 @@ for c in ("Earthshaker Gun Carriage", "Medusa Gun Carriage"):
 o.rule(IM, "IM - Gorgon Heavy Transporter", add="Assault Vehicle")
 o.char(IM, "IM - Baneblade Super-heavy Battle Tank", "P:Militia Baneblade", HP="12")
 
+# ======================================================================= Exemplary Battles
+SW, IF_, WS_ = "LA - Space Wolves", "LA - Imperial Fists", "LA - White Scars"
+o.category(SW, "Jorlund Hunter Pack", add="Skirmish Sub-type")
+o.rule(SW, "Jorlund Hunter Pack", add="Hit & Run")
+o.cost(WB, "Procurators", "Procurator", "Heavy Chainsword", v=2)
+o.text(WB, "R:Grim Purpose", fn=lambda t: t if "Retinue Squad" in t else t.rstrip().rstrip(".").rstrip(")") +
+       "), unless that model has the Independent Character Special Rule and one of the following Psychic Disciplines: "
+       "Harbinger of Chaos, Diabolism, or Anathemata.\n\nA Word Bearers Procurator Squad may be selected as a Retinue Squad "
+       "in a Detachment that includes at least one model with both the Independent Character and Legiones Astartes (Word "
+       "Bearers) Special Rules and one of the following Psychic Disciplines: Harbinger of Chaos, Diabolism, or Anathemata, "
+       "instead of as an Elites choice. A unit selected as a 'Retinue Squad' must have one model with both the Independent "
+       "Character and Legiones Astartes (Word Bearers) Special Rules and one of the following Psychic Disciplines: Harbinger "
+       "of Chaos, Diabolism, or Anathemata from the same Detachment selected by the controlling player as the Word Bearers "
+       "Procurator Squad's Leader for the purposes of this Special Rule. A Word Bearers Procurator Squad selected as a "
+       "Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model "
+       "selected as its Leader. A Word Bearers Procurator Squad selected as a Retinue Squad must be deployed with the model "
+       "selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad "
+       "during play.")
+o.char(NL, "Atramentar Squad", "P:Atramentar", WS="5", Ld="8")
+o.char(NL, "Atramentar Squad", "P:Atramentar Trucidor", WS="5", Ld="9")
+o.rule(NL, "Atramentar Squad", add="Stubborn")
+o.cost_all(IW, "Dominator Cohort", ("Dominator", "Dominator w/Heavy Weapon"), 45)
+o.add_link(IW, "Dominator Cohort", "2) Dedicated Transport", to="Dreadclaw Drop Pod", mn=None)
+o.add_link(IW, "Dominator Cohort", "2) Dedicated Transport", to="Land Raider Spartan", mn=None)
+RH = (WE, "Red Hand Destroyer Assault Squad")
+for w, v in (("Meteor Hammer", 10), ("Excoriator Chainaxe", 10), ("Two Falax Blades", 5), ("Barb-Hook Lash", 5)):
+    o.cost(*RH, "Blood Bonded", "Melee Options:", w, v=v)
+    o.cost(*RH, "1) Ravagers", "Ravager w/" + w, v=15 + v)
+o.add_link(SAL, "Sanctifier Squad", "4) Dedicated Transport", to="Rhino Transport", mn=None)
+o.add_link(SAL, "Sanctifier Squad", "4) Dedicated Transport", to="Termite Assault Drill", mn=None)
+o.rename(SAL, "Sanctifier Squad", "2) Sanctifiers", "Sanctifier w/ Options", "One Sanctifier May Take",
+         to="Any model in the unit may exchange their Bolter for the following option:")
+DP = ("• A model with this Unit Type may join units with the Infantry Unit Type as if it had the Primarch Unit Type, or "
+      "units with the Daemon Unit Type as if it had the Daemon Unit Type.\n")
+o.text("gst", "R:Daemon Primarch Unit Type", fn=lambda t: t if "Heroic Stand" in t else re.sub(
+    r"• Any Hits inflicted by a model with the Daemon Primarch Unit Type[^\n]*", "• Daemon Primarchs have the Precision "
+    "Strikes (2+) and Precision Shots (2+) Special Rules, and may choose to use these rules when attacking even when "
+    "ordinarily they would be prevented from doing so, including when making Snap Shots.", t).rstrip() + "\n" + DP +
+    "• Any unit entirely composed of models with the Daemon Primarch Unit Type may choose to ignore the Heroic Stand "
+    "Special Rule, ignoring any penalties normally applied for declining a Challenge, unless the Challenge was issued by "
+    "a model with the Knight, Gargantuan, Titan, Primarch, or Daemon Primarch Unit Types.")
+o.char(EC, "Fulgrim Transfigured", "P:Fulgrim", WS="9")
+for t in ("Land Raider Proteus Carrier", "Dreadclaw Drop Pod", "Land Raider Spartan"):
+    o.add_link(IF_, "E:Huscarl Squad", to=t, shown="Dedicated Transport: " + t, mn=None)
+o.chars_all(DG, "Mortus Poisoner", W="2")
+o.chars_all(DG, "Poison-master", W="2")
+o.rule(DG, "E:Mortus Poisoner Squad", add="Battle-Hardened (1)")
+o.cost_all(DG, "E:Mortus Poisoner Squad", ("Heavy Alchem Flamer",), 5)
+o.cost_all(DG, "E:Mortus Poisoner Squad", ("Power Scythe",), 10)
+o.char(WS_, "Dark Sons of Death", "P:Dark Son", A="2")
+o.char(WS_, "Dark Sons of Death", "P:Death's Champion", A="3")
+o.text(RG, "R:Corax's Shame", fn=lambda t: t.replace(
+    "gain the Battle-hardened (1) special rule. If", "gain the Battle-hardened (1) and Hatred (Horus Lupercal) Special "
+    "Rules. If").replace("gain the Hatred (Corvus Corax) special rule.", "gain the Battle-hardened (1) and Hatred (Corvus "
+    "Corax) Special Rules.") if "Horus Lupercal" not in t else t)
+o.text("gst", "R:Gargantuan Unit Sub-type", fn=append(
+    "• Any unit entirely composed of models with the Gargantuan Unit Type may choose to ignore the Heroic Stand Special "
+    "Rule, ignoring any penalties normally applied for declining a Challenge, unless the Challenge was issued by a model "
+    "with the Knight, Gargantuan, Titan, Primarch, or Daemon Primarch Unit Types.").__class__ and (lambda t: t if "Heroic Stand" in t else t.rstrip() +
+    "\n• Any unit entirely composed of models with the Gargantuan Unit Type may choose to ignore the Heroic Stand Special "
+    "Rule, ignoring any penalties normally applied for declining a Challenge, unless the Challenge was issued by a model "
+    "with the Knight, Gargantuan, Titan, Primarch, or Daemon Primarch Unit Types."))
+
+# ======================================================================= Legacies: Daemons of the Ruinstorm
+RS = "Daemons - Daemons of the Ruinstorm"
+o.text_all("The Ætheric Dominion (X)", lambda t: re.sub(r"^2 - Lashing Pseudopods: Reach \(1\)\s*$",
+                                                        "2 - Lashing Pseudopods: Reach (1), Rending (6+)", t, flags=re.M))
+o.rule(RS, "Ruinstorm Daemon Sovereign", add="Lords of the Ruinstorm")
+o.cost(RS, "Ruinstorm Daemon Sovereign", "Weapon", "Sovereign Greatblade", v=40)
+o.cost(RS, "Ruinstorm Daemon Sovereign", "Immaterial Wings", v=50)
+o.char(RS, "Ruinstorm Daemon Hierarch", "P:Hierarch", WS="6")
+o.rule(RS, "Ruinstorm Daemon Hierarch", add="Independent Character")
+o.chars_all(RS, "Harbinger", Sv="3+")
+o.chars_all(RS, "Daemon Attendant", Sv="3+")
+o.add_link(RS, "Ruinstorm Daemon Harbinger", "Harbinger", "Weapons", to="Infernal Armaments", mn=None)
+for m in ("Daemon Beast w/ Daemon Armaments", "Daemon Beast w/ Immaterial Flame"):
+    o.cost(RS, "Ruinstorm Daemon Beasts", m, v=20)
+o.price(RS, "Ruinstorm Daemon Beasts", 70 - 3 * 20)
+o.chars_all(RS, "Daemon Beast", A="4")
+o.rule(RS, "Ruinstorm Daemon Beasts", add=("Furious Charge (1)", "Scout"))
+o.price(RS, "Ruinstorm Lesser Daemons", 0)
+o.rule(RS, "Ruinstorm Daemon Swarms", remove="Swarm", add="Daemonic Hordes")
+o.char(RS, "Ruinstorm Daemon Cavalry", "P:Daemon Cavalry", Ld="7")
+o.rule(RS, "Ruinstorm Daemon Cavalry", add=("Hit & Run", "Bulky (2)"))
+o.rule_x(RS, "Ruinstorm Daemon Cavalry", rule="Hammer of Wrath (X)", to="Hammer of Wrath (1)")
+o.price(RS, "Ruinstorm Daemon Harriers", 100)
+o.char(RS, "Ruinstorm Daemon Harriers", "P:Daemon Harriers", A="2")
+o.rule(RS, "Ruinstorm Daemon Harriers", add="Deep Strike")
+o.char(RS, "Greater Ruinstorm Daemon Beast", "P:Greater Beast", Ld="8", S="6", T="6")
+o.rule(RS, "Greater Ruinstorm Daemon Beast", add=("Bulky (5)", "Feeding Frenzy"))
+o.char(RS, "Ruinstorm Daemon Behemoth", "P:Ruinstorm Behemoth", WS="5", Ld="8")
+o.add_link(RS, "Ruinstorm Daemon Behemoth", "May take up to two of the following options:", to="The Unmaking", mn=None, pts=25)
+o.cost(RS, "Ruinstorm Arch-Daemon", "Immaterial Wings", v=50)
+o.rule(RS, "Ruinstorm Arch-Daemon", add="Warp Resplendent")
+o.rule(RS, "Cor’bax Utterblight Unbound", add="Bulky (6)")
+
+
+# last, so that every Proteus Carrier option added above also offers the Phobos
+o.run("Land Raider Phobos as a Proteus Carrier", phobos)
 o.report()

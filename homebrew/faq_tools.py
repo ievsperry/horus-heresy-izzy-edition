@@ -30,9 +30,27 @@ class Files:
         self.orig = dict(self.text)
         self.log = []
         self.rule_ids = {}
+        self.all_rules = {}
         for p in self.paths:
             for m in re.finditer(r'<rule id="([^"]+)" name="([^"]+)"', self.text[p]):
                 self.rule_ids.setdefault(norm(m.group(2)), (p, m.group(1)))
+                self.all_rules.setdefault(norm(m.group(2)), []).append((p, m.group(1)))
+        self.by_name = {}
+        for p in self.paths:
+            m = re.search(r'<(?:catalogue|gameSystem) [^>]*name="([^"]+)"', self.text[p])
+            if m:
+                self.by_name[m.group(1)] = p
+
+    def scope(self, path):
+        """The file, every catalogue it imports (and they import), then the game system."""
+        out, todo = [path], [path]
+        while todo:
+            for n in re.findall(r'<catalogueLink [^>]*name="([^"]+)"', self.text[todo.pop()]):
+                q = self.by_name.get(n)
+                if q and q not in out:
+                    out.append(q)
+                    todo.append(q)
+        return out + ([GST] if GST not in out else [])
 
     def short(self, path):
         return path.replace("2022 - ", "").replace(".cat", "").replace(".gst", "")
@@ -191,16 +209,16 @@ class Files:
                       self.text[path][profile_sp[0]:profile_sp[1]], re.S)
         return html.unescape(m.group(1) or "") if m else None
 
-    def rule_link(self, name):
-        """(id, real name) of a shared rule by name or by its '(X)' form."""
+    def rule_link(self, name, path=None):
+        """(id, real name) of a shared rule by name or by its '(X)' form, from a file the given one can see."""
         n = norm(name)
-        if n in self.rule_ids:
-            return self.rule_ids[n][1], name
+        ok = set(self.scope(path)) if path else None
         base = re.sub(r"\s*\(.*\)$", "", n)
-        for k, (p, rid) in self.rule_ids.items():
-            if re.sub(r"\s*\(x\)$", "", k) == base:
-                return rid, k
-        raise KeyError(f"no rule {name}")
+        for k in [n] + [k for k in self.all_rules if re.sub(r"\s*\(x\)$", "", k) == base and k != n]:
+            for p, rid in self.all_rules.get(k, []):
+                if ok is None or p in ok:
+                    return rid, (name if k == n else k)
+        raise KeyError(f"no rule {name} that {self.short(path) if path else 'any file'} can see")
 
     def add_rule(self, path, sp, shown, what):
         """Give an entry a rule (as an infoLink), e.g. 'Hammer of Wrath (3)' links Hammer of Wrath (X)."""
@@ -208,7 +226,7 @@ class Files:
         if re.search(r'<infoLink [^>]*name="' + re.escape(html.escape(shown, quote=False)) + '"', s[sp[0]:sp[1]]) or \
                 re.search(r'value="' + re.escape(html.escape(shown, quote=False)) + '"', s[sp[0]:sp[1]]):
             return
-        rid, real = self.rule_link(shown)
+        rid, real = self.rule_link(shown, path)
         lid = make_id(path, str(sp[0]), shown)
         real_name = next((m.group(1) for m in re.finditer(r'<rule id="' + rid + r'" name="([^"]+)"', "".join(self.text.values()))), shown)
         if norm(real_name) == norm(shown):
@@ -445,12 +463,14 @@ class Ops:
 
     def shared_id(self, name, prefer=None):
         """Id of a shared selection entry by name: the given file first, then the game system, then any file."""
-        order = ([self.F.file(prefer)] if prefer else []) + [GST] + self.F.paths
+        order = self.F.scope(self.F.file(prefer)) if prefer else [GST] + self.F.paths
         for p in order:
-            m = re.search(r'\n\s{4}<selectionEntry id="([^"]+)" name="' + re.escape(html.escape(name, quote=False)) + '"',
-                          self.F.text[p], re.I)
-            if m:
-                return m.group(1), p
+            t = self.F.text[p]
+            a, b = t.find("<sharedSelectionEntries>"), t.find("</sharedSelectionEntries>")
+            for m in re.finditer(r'\n\s{4}<selectionEntry ([^>]*)>', t[a:b] if a >= 0 else ""):
+                nm = re.search(r'\sname="([^"]*)"', " " + m.group(1))
+                if nm and norm(nm.group(1)) == norm(name):
+                    return re.search(r'\bid="([^"]+)"', m.group(1)).group(1), p
         raise KeyError(f"no shared entry {name}")
 
     def retarget(self, f, *path, to, shown=None):
@@ -582,7 +602,7 @@ class Ops:
             if re.search(r'<infoLink [^>]*name="' + re.escape(html.escape(rule, quote=False)) + '"', s[sp[0]:sp[1]]) or \
                     make_id(p, " > ".join(path), rule, cid) in s:
                 return
-            rid, _ = self.F.rule_link(rule)
+            rid, _ = self.F.rule_link(rule, p)
             real = re.search(r'<rule id="' + rid + r'" name="([^"]+)"', "".join(self.F.text.values())).group(1)
             nl = self.F.nl(p)
             ind = self.F.indent_of(p, sp[0]) + "    "
