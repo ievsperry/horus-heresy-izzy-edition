@@ -262,7 +262,15 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
 - `homebrew/source/additional-special-rules.md` holds special rules any catalogue may use (Afterburner,
   Augmetics (X), Rupture (X) and so on). `python3 homebrew/add_gst_rules.py` adds them to the shared rules
   of `2022 - Horus Heresy.gst`, or updates the ones it added; each "## Name" section is a rule, its italic
-  flavour line stays in the source. A catalogue built here still prefers a rule its own doc defines.
+  flavour line stays in the source. A catalogue built here still prefers a rule its own doc defines. A rule the
+  game system already has under its own id (in its shared rules or a Unit Sub-type) has its text set to the
+  source's; pass `--keep-existing` to leave those alone. The file holds the Imperatus Special Rules and Unit
+  Sub-types (Anathema, Asuryani, Corrupted, Guardian, Rillietann, Sycophantica).
+- `python3 homebrew/add_imperatus_wargear.py` adds the Imperatus Archaeotechnological Relics (Apex Digital Weapon,
+  Displacer Matrix, Grav-Wave Generator) to the game system as a one-per-model group the Solar Auxilia Legate
+  Marshal may take, and the Imperialis Militia Force Commander may take with the Armoury of Old Night Provenance
+  or the Merchant Princeling or Connoisseur of Alien Curios Warlord Traits. It also sets the Diabolism, Anathemata
+  and Navis Astrologis disciplines to the Imperatus text. Running it again changes nothing.
 - `homebrew/source/additional-weapons.md` holds weapon profiles for every catalogue. `python3
   homebrew/add_gst_weapons.py` updates every matching weapon profile in the game system and the official
   catalogues to them (names matched ignoring case and punctuation, melee to melee and ranged to ranged), adds
