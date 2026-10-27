@@ -512,10 +512,11 @@ o.cost(*MAL, "3) Hull (Left and Right) Mounted Weapons", "Lascannon", v=15)
 o.cost(*MAL, "2) Hull Mounted Weapon", "Demolisher Cannon", v=35)
 o.retarget(*MAL, "1) Main Hull Weapon", "Gravis Lascannon", to="Gravis Heavy Lascannon",
            shown="Hull (Front) Mounted Twin-linked Gravis Heavy Lascannon")
-o.text("gst", "R:Independent Fire Control", fn=whole(
-    "A model with this Special Rule may remain stationary, move at Combat Speed, or Cruising Speed, and still fire all "
-    "of its weapons as though it had the Super-Heavy Sub-type. Note that this does not grant any of the other benefits "
-    "of the Super-Heavy Sub-type."))
+# superseded: the Imperatus Special Rules (additional-special-rules.md) hold this rule's current text
+# o.text("gst", "R:Independent Fire Control", fn=whole(
+#     "A model with this Special Rule may remain stationary, move at Combat Speed, or Cruising Speed, and still fire all "
+#     "of its weapons as though it had the Super-Heavy Sub-type. Note that this does not grant any of the other benefits "
+#     "of the Super-Heavy Sub-type."))
 o.retarget(LA, "Legion Minotaur Battery", "Minotaur", "Earthshaker cannon", to="Earthshaker Battery",
            shown="Centreline (Rear) Mounted Earthshaker Battery")
 for unit, prof, pts, extra in (("Legion Stormblade", "Stormblade", 500, {}), ("Legion Baneblade", "Baneblade", 475, {}),
@@ -590,15 +591,16 @@ o.rule(MECH, "E:Inar Satarael", add="Born of Steel")
 o.chars_all(MECH, "Tech-thralls", Sv="5+")
 o.char(MECH, "Macrocarid Explorator", "P:Macrocarid Explorator", M="12", HP="6")
 o.category(MECH, "Macrocarid Explorator", add="Reinforced Sub-type")
-o.text_all("Destructor", whole(
-    "Any model which suffers an unsaved Wound or Hull Point loss from a weapon with this Special Rule does not suffer only "
-    "one Wound or Hull Point of damage, but instead suffers D6 Wounds or Hull Points of damage instead, with all of the "
-    "Wounds or Hull Points inflicted using the same AP and special rules as that of the initial Wound. Roll to save "
-    "against each Wound or Hull Point of damage inflicted separately, but note that Wounds or Hull Points of damage caused "
-    "in excess of a given model's remaining Wounds or Hull Points do not spill over to other models and are lost.\n\n"
-    "In addition, if the target of this attack is a model with the Knight, Titan, Gargantuan, Super-Heavy Vehicle, or "
-    "Building or Fortification Unit Type, or the Monstrous Unit Sub-type, increase the number of Wounds suffered or Hull "
-    "Points lost to 2D6."))
+# superseded: the Imperatus Special Rules (additional-special-rules.md) hold this rule's current text
+# o.text_all("Destructor", whole(
+#     "Any model which suffers an unsaved Wound or Hull Point loss from a weapon with this Special Rule does not suffer only "
+#     "one Wound or Hull Point of damage, but instead suffers D6 Wounds or Hull Points of damage instead, with all of the "
+#     "Wounds or Hull Points inflicted using the same AP and special rules as that of the initial Wound. Roll to save "
+#     "against each Wound or Hull Point of damage inflicted separately, but note that Wounds or Hull Points of damage caused "
+#     "in excess of a given model's remaining Wounds or Hull Points do not spill over to other models and are lost.\n\n"
+#     "In addition, if the target of this attack is a model with the Knight, Titan, Gargantuan, Super-Heavy Vehicle, or "
+#     "Building or Fortification Unit Type, or the Monstrous Unit Sub-type, increase the number of Wounds suffered or Hull "
+#     "Points lost to 2D6."))
 o.text_all("Disruption (X)", whole(
     "To Hit rolls of the value X indicated made by a weapon with this Special Rule cause an automatic Glancing Hit against "
     "models with the Vehicle Unit Type instead of rolling for Armour Penetration, and an automatic Wound against models "
