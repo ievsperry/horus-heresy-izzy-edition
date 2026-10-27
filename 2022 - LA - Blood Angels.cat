@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="56" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="57" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>template_id_5798-3fc7-4d4c-ad41</comment>
@@ -2112,7 +2112,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="8bb4-15e3-41dd-a661" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
+        <categoryLink id="8bb4-15e3-41dd-a661" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
           <comment>template_id_b24f-3ae0-4cbb-b016</comment>
         </categoryLink>
         <categoryLink id="4542-fec2-4601-ac1e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -4000,6 +4000,21 @@ While a Warlord with this Trait is within 6&quot; of one or more models with bot
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="c19f-977c-75f1-25e7" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="33fe-9683-bde5-95ca" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="7b04-16aa-d202-342c" name="Land Raider Spartan" hidden="false" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -5564,7 +5579,7 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5647,7 +5662,7 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c1fb-61b4-5212-ecfb" name="Dawnbreaker w/ Falling-Star Power Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -5690,7 +5705,7 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
               </costs>
               <infoLinks>
                 <infoLink id="e7de-3ade-8f9a-9c0c" name="Dawnbreaker" targetId="13ce-3207-bb2e-eaf0" type="profile"/>

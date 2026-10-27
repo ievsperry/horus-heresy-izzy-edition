@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="65" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="66" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <modifiers>
@@ -3863,7 +3863,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="cd8e-d681-413e-8d04" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
+        <categoryLink id="cd8e-d681-413e-8d04" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
           <comment>template_id_b24f-3ae0-4cbb-b016</comment>
         </categoryLink>
         <categoryLink id="5365-9e60-417d-bcbb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -5881,12 +5881,12 @@
                 <entryLink id="acfe-034f-af46-0f75" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
                 <entryLink id="b4a8-4a3c-77f6-1abc" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
                 <entryLink id="dc75-65cd-1f77-a1a1" name="Chainfist" hidden="false" collective="false" import="true" targetId="7347-c5b1-5da3-a78f" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -5961,7 +5961,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
               </costs>
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="a8bc-3858-4193-ae87" name="Infantry Unit Type" primary="false"/>
@@ -5990,12 +5990,12 @@
                     <entryLink id="8677-a1f9-3337-77d8" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
                     <entryLink id="0b63-e143-0745-5200" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
                       <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                       </costs>
                     </entryLink>
                     <entryLink id="93d9-c6ca-8260-8fee" name="Chainfist" hidden="false" collective="false" import="true" targetId="7347-c5b1-5da3-a78f" type="selectionEntry">
                       <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -6057,7 +6057,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
               </costs>
               <infoLinks>
                 <infoLink id="ab07-b8bc-0975-cd97" name="Lernaean" targetId="53a7-baaf-f2b1-790b" type="profile"/>
@@ -6110,6 +6110,21 @@
           </constraints>
           <entryLinks>
             <entryLink id="7ba6-9796-bed5-a987" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="6161-d387-f086-0958" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="e8bd-db22-c7d1-d2a7" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -6256,11 +6271,12 @@
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="a650-2a89-4858-a8f9" name="Infantry Unit Type" primary="false"/>
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="3ce1-136a-4b82-99ce" name="Character" primary="false"/>
             <categoryLink targetId="bff2-ae16-74a8-8712" id="f0b2-88dc-4ded-a79a" name="Light Sub-type" primary="false"/>
+            <categoryLink id="50ad-7283-58a6-4ad1" name="Skirmish Sub-type" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
           </categoryLinks>
           <profiles>
             <profile id="793c-d4f-2bbc-92fb" name="Exodus" publicationId="09c5-eeae-f398-b653" page="340" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Light)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Light, Skirmish)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
@@ -6845,6 +6861,19 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="4ed5-8141-45eb-eeaf" name="Land Raider Phobos" hidden="true" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -7140,11 +7169,12 @@
             <categoryLink targetId="4f07-3d45-4f28-a0c6" id="2259-38ca-b345-49fd" primary="false" name="Independent Character"/>
             <categoryLink targetId="ad5f-31db-8bc7-5c46" id="7e27-3e84-48f4-b5bb" name="Primarch Unit Type" primary="false"/>
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="4187-92c2-4921-8959" name="Unique Sub-type" primary="false"/>
+            <categoryLink id="a5da-71ea-443c-b6bc" name="Skirmish Sub-type" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
           </categoryLinks>
           <profiles>
             <profile id="e93f-b0d8-6af1-f4e3" name="Alpharius" publicationId="09c5-eeae-f398-b653" page="336" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Unique)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Skirmish, Unique)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8&quot;</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">7</characteristic>
@@ -7158,6 +7188,14 @@
               </characteristics>
             </profile>
           </profiles>
+          <entryLinks>
+            <entryLink id="5074-8275-fab5-be99" name="Nuncio-Vox" hidden="false" collective="false" import="true" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24ee-a19a-f9af-ebd6" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b495-613e-00d0-0a46" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

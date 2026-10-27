@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="56" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="57" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -171,7 +171,7 @@ When deployed onto the battlefield (either at the start of the battle or when ar
       <profiles>
         <profile id="d6e7-9365-6336-6a51" name="Ionic Deflector" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an ionic deflector gains a 5+ Invulnerable Save, and any model with an ionic deflector and a Wounds Characteristic gains the Eternal Warrior special rule. In addition, when a model with an ionic deflector loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6+3&quot; suffer an automatic Hit atStr 8, AP -.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an ionic deflector gains a 5+ Invulnerable Save, and any model with an Ionic Deflector and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death Special Rule is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death Special Rule inflicted on it. In addition, when a model with an ionic deflector loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6+3&quot; suffer an automatic Hit atStr 8, AP -.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3708,6 +3708,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
         </entryLink>
         <entryLink import="true" name="Dark Blessings" hidden="false" type="selectionEntryGroup" id="3149-5fc-4cdf-3e8a" targetId="3995-31e8-e6a2-562a"/>
+        <entryLink id="4f49-5667-d367-4120" name="Flare Shield" hidden="false" collective="false" import="true" targetId="0e77-6285-22bb-1534" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cea3-d804-d2a1-ecb7" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8221-252a-96ba-c312" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="500"/>
@@ -4021,6 +4027,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7668-2fc8-17b4-0ad1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
+        <entryLink id="0a1d-0d3e-7cd5-f4fc" name="Flare Shield" hidden="false" collective="false" import="true" targetId="0e77-6285-22bb-1534" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70f4-5748-7abd-d404" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f14b-129d-f74d-9c8d" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="385"/>
@@ -4303,6 +4315,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="156a-96a8-83ef-1ad9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1b9-ba73-cd33-be9c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f2e4-71c0-f66b-c4b7" name="Flare Shield" hidden="false" collective="false" import="true" targetId="0e77-6285-22bb-1534" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ceee-35e5-5bdd-528d" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2daf-6805-4143-581a" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -5232,9 +5250,18 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
           <rules>
             <rule id="c149-a9f6-4cbe-aa10" name="Thanatar Maniple" publicationId="bde1-6db1-163b-3b76" page="110" hidden="false">
-              <description>When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves) all models in the unit must be placed within unit coherency, but afterwards operate independently and are not treated as a single unit.</description>
+              <description>When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves) all models in the unit must be placed within unit coherency, but afterwards operate independently and are not treated as a single unit.
+
+Once a unit with this Special Rule has separated, each model counts as its own unit for the purposes of Victory Points, Units Destroyed, and similar rules.</description>
             </rule>
           </rules>
+          <infoLinks>
+            <infoLink id="23a4-3f64-21ca-c326" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Hammer of Wrath (3)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="3a98-3aba-8cca-3ce8" name="A single Thanatar-Cavas in the Maniple may be replaced with a Thanatar Calix" hidden="false" collective="false" import="true" defaultSelectionEntryId="5331-31f3-87ed-5ebe">
               <constraints>
@@ -6589,9 +6616,10 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy chec
       <profiles>
         <profile id="49e3-0125-7461-31f6" name="Incunabulan Jet Pack" publicationId="bde1-6db1-163b-3b76" page="130" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit composed entirely of models with Incunabulan jet packs may choose to increase its Move Characteristic by +6&quot; and ignore terrain while Moving during the Movement phase. A unit that ends or begins its movement in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Incunabulan jet packs and treats Difficult Terrain as Dangerous Terrain. In addition to the bonus to Move during the Movement phase, a unit composed entirely of models with Incunabulan jet packs may make an additional Move of 6&quot; during the Shooting phase. This Move must be taken after the unit has completed any Shooting Attacks, is not limited by the weapons fired by that unit during the Shooting phase and ignores terrain in the same manner as moves made using a Incunabulan jet pack in the Movement phase.
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit composed entirely of models with Incunabulan jet packs may choose to increase its Move Characteristic by +6&quot; and ignore terrain while Moving during the Movement phase. A unit that ends or begins its movement in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Incunabulan jet packs and treats Difficult Terrain as Dangerous Terrain. In addition to the bonus to Move during the Movement phase, a unit composed entirely of models with Incunabulan jet packs may make an additional Move of 6&quot; during the Shooting phase. This Move must be taken after the unit has completed any Shooting Attacks, is not limited by the weapons fired by that unit during the Shooting phase and ignores terrain in the same manner as moves made using a Incunabulan jet pack in the Movement phase. This extra move can only be made in the Controlling Player's own Shooting Phase.
 Any model with an Incunabulan jet pack also gains the Bulky (2) and Deep Strike special rules, or if it already has the Bulky (2) special rule it gains the Bulky (3) special rule instead. Models with an Incunabulan jet pack may Embark on models with the Transport Unit Sub-type, contrary to the normal Transport rules, but still must take into account their size due to the Bulky (X) special rule.
-During any Reaction that allows a unit to Move, a unit composed entirely of models with Incunabulan jet packs increases the distance of that Move by 6 and allows it to ignore terrain in the same manner as other Incunabulan jet pack moves.</characteristic>
+During any Reaction that allows a unit to Move, a unit composed entirely of models with Incunabulan jet packs increases the distance of that Move by 6 and allows it to ignore terrain in the same manner as other Incunabulan jet pack moves.
+A model with an activated Incunabulan Jet Pack may move over both friendly and enemy models or units without penalty - but must end its Movement at least 1&quot; away from any model from another unit, and ignores the effects of any Difficult, Dangerous, or Impassable Terrain they move over as they make their move, though they must still take Dangerous Terrain Tests as normal should they start or end their move in terrain that would require them to do so. It should be noted that, for the purposes of Reactions, an Incunabulan Jet Pack is classed as having being activated for the purposes of moving over any models or terrain.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6615,7 +6643,9 @@ During any Reaction that allows a unit to Move, a unit composed entirely of mode
         <profile id="94a1-e8ec-8bb1-1d1c" name="Utan Jump Booster" publicationId="bde1-6db1-163b-3b76" page="130" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit composed entirely of models with Utan jump boosters may set its Move Characteristic to a value of 12 for the duration of the controlling player’s turn. This allows the unit to move up to 12&quot;, regardless of the Movement Characteristic shown on its profile and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge distance, see the Horus Heresy: Age of Darkness rulebook, page 181). In addition, the unit ignores terrain while Moving and Charging. A unit that ends or begins its movement or a Charge in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Utan jump boosters, and treats all Difficult Terrain as Dangerous Terrain.
-A unit composed entirely of models with Utan jump boosters may not Run. During Reactions made in any Phase, a unit composed entirely of models with Utan jump boosters may not activate them to gain any bonus to their Movement Characteristic. Any model with an Utan jump booster also gains the Deep Strike special rule. Additionally, models with an Utan jump booster may Embark on models with the Transport Unit Sub-type, contrary to the normal Transport rules, but still must take into account their Unit Type and their size due to the Bulky (X) special rule.</characteristic>
+A unit composed entirely of models with Utan jump boosters may not Run. During Reactions made in any Phase, a unit composed entirely of models with Utan jump boosters may not activate them to gain any bonus to their Movement Characteristic. Any model with an Utan jump booster also gains the Deep Strike special rule. Additionally, models with an Utan jump booster may Embark on models with the Transport Unit Sub-type, contrary to the normal Transport rules, but still must take into account their Unit Type and their size due to the Bulky (X) special rule.
+
+A model with an activated Utan Jump Booster may move over both friendly and enemy models or units without penalty - but must end its Movement at least 1&quot; away from any model from another unit, and ignores the effects of any Difficult, Dangerous, or Impassable Terrain they move over as they make their move, though they must still take Dangerous Terrain Tests as normal should they start or end their move in terrain that would require them to do so.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7669,10 +7699,15 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             <infoLink name="Hit &amp; Run" hidden="false" type="rule" id="3849-40aa-1053-d5c7" targetId="5986-e960-d432-affd"/>
             <infoLink name="Malefic Aegis (X)" hidden="false" type="rule" id="5722-4e5-df85-62ae" targetId="686c-178b-6e07-2ba3">
               <modifiers>
-                <modifier type="set" value="Malefic Aegis (6+)" field="name"/>
+                <modifier type="set" value="Malefic Aegis (5+)" field="name"/>
               </modifiers>
             </infoLink>
             <infoLink name="Move Through Cover" hidden="false" type="rule" id="3f81-b3ad-c662-a291" targetId="2b6f-bfec-759e-1746"/>
+            <infoLink id="21db-7a6a-3eba-334c" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rage (2)"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d1e-9146-7aa-dffa"/>
@@ -7953,7 +7988,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
           </constraints>
           <rules>
             <rule name="Animatus Malevolence (Cybertheurgic Rite)" hidden="false" id="f787-1170-60a1-31b9" publicationId="4934-46f7-208b-b4af" page="155">
-              <description>Instead of making a Shooting Attack, a Cybertheurgist with this Cybertheurgic Rite may select a single friendly unit within 12&quot; that is entirely composed of models with the Corrupted Engine Unit Sub-type and then apply one of the following effects:
+              <description>Instead of making a Shooting Attack, a Cybertheurgist with this Cybertheurgic Rite may select a single friendly unit within 12&quot; that contains any models with the Corrupted Engine Unit Sub-type or models with both the Automata Unit Type and the Corrupted Unit Sub-type, and then apply one of the following effects:
 • The chosen unit may immediately move a number of inches up to its unmodified Initiative Characteristic directly towards the nearest enemy unit. If the chosen unit has mixed Initiative Characteristics, use the highest unmodified Characteristic.
 • All models in the chosen unit improve their Invulnerable Save by 1, to a maximum of 3+, until the beginning of the controlling player’s next turn, (e.g., a model with an Invulnerable Save of 5+ improves their save to 4+).
 • All models in the unit add 1 to their WS and I characteristics until the end of the subsequent Assault phase.
@@ -9203,10 +9238,14 @@ A Psyker with this Discipline gains the listed Power, weapon and special rules b
       <description>A model with the Knight or Titan Unit Sub-types that has weapons with this special rule may make the Overwatch Reaction when it is triggered by models that do not have the Knight, Titan, Super-heavy, or Lumbering Unit Sub-types, or that have fewer than 8 Wounds. When making Shooting Attacks as part of the Overwatch Reaction, the Reacting model may only make Shooting Attacks with weapons with this special rule.</description>
     </rule>
     <rule id="66b8-7232-1ed3-3f70" name="God-Engine" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false">
-      <description>A model with this special rule ignores all Psychic Powers and Cybertheurgic Rites and Attacks made by Psychic and Cybertheurgic Weapons. In addition, a model with this special rule ignores the effects of the Haywire and Disruption (X) special rules. In all cases, weapons which benefit from these special rules must attempt to damage a model with this special rule normally using the attack’s Strength value. In addition, all friendly Mechanicum units with at least one model within 24&quot; of a model with this special rule gain the Fearless special rule.</description>
+      <description>A model with this special rule ignores all Psychic Powers and Cybertheurgic Rites and Attacks made by Psychic and Cybertheurgic Weapons. In addition, a model with this special rule ignores the effects of the Haywire and Disruption (X) special rules. In all cases, weapons which benefit from these special rules must attempt to damage a model with this special rule normally using the attack’s Strength value. In addition, all friendly Mechanicum units with at least one model within 24&quot; of a model with this special rule gain the Fearless special rule.
+
+In addition, all units wholly within 18&quot; of a model with this Special Rule and which have a Kyropatris Field Generator gain the Line Sub-type.</description>
     </rule>
     <rule id="f83c-9442-8102-5da4" name="Pride of Place" publicationId="bde1-6db1-163b-3b76" page="106" hidden="false">
-      <description>A model with this special rule may not embark upon any model with the Transport Unit Sub-type, regardless of its Unit Type or any special rules the model with the Transport Sub-type may have.</description>
+      <description>A model with this special rule may not embark upon any model with the Transport Unit Sub-type, regardless of its Unit Type or any special rules the model with the Transport Sub-type may have.
+
+A model with this Special Rule may ignore the restrictions applied by it if the Unit with the Transport Sub-type they are attempting to Embark onto also has the Super-Heavy Sub-type. In addition, a model with this Special Rule gains the Bulky (X) Special Rule, where X is equal to the model's starting Wounds Characteristic.</description>
     </rule>
     <rule id="f420-6cdb-5d9b-ef30" name="Cybertheurgic Focus" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false">
       <description>Before making any To Hit rolls with this weapon, the Cybertheurgist must make a Cybertheurgy check. If the Check is passed then the Cybertheurgist may attack as normal using the profile shown for this weapon. If the Check is failed then the Cybertheurgist suffers Cybertheurgic Feedback, and if the model is not removed as a casualty then it may attack as normal but may not use this weapon.</description>
@@ -9238,7 +9277,7 @@ Any models that enter the boundary of this area of terrain, or begin the Movemen
 This area of terrain does not confer a Cover Save and no model within its boundary may use a Cover Save granted by any other rule or effect.</description>
     </rule>
     <rule id="7d4f-c9a9-f9c0-b49a" name="Feudal Hierarchy" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false">
-      <description>A single Detachment may not include both an Archmagos Prime and an Archmagos Prime on Abeyant.
+      <description>A single Detachment may only ever include a single model with this Special Rule.
 
 Designers note from FAQ: For the purposes of the Feudal Hierarchy special rule:
 Treat Callab Decima Invictus as an Archmagos Prime.

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="50" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="51" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="76b3-52d9-a195-2b31" name="XIII: Ultramarines" hidden="false" collective="false" import="false" targetId="8e0f-3552-8842-f281" type="selectionEntry">
       <modifiers>
@@ -1212,7 +1212,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="fe3e-f422-405b-a4ae" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
+        <categoryLink id="fe3e-f422-405b-a4ae" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
           <comment>template_id_b24f-3ae0-4cbb-b016</comment>
         </categoryLink>
         <categoryLink id="c51b-549c-49ba-9fd4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -3247,11 +3247,13 @@
           <description>An Invictarus Suzerain Squad may be selected as a Retinue Squad in a Detachment that includes at least one model with both the Master of the Legion and Legiones Astartes (Ultramarines) special rules, instead of as an Elites choice. A unit selected as a ‘Retinue Squad’ must have one model with both the Master of the Legion and Legiones Astartes (Ultramarines) special rules from the same Detachment selected by the controlling player as the Invictarus Suzerain Squad’s Leader for the purposes of this special rule. An Invictarus Suzerain Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. An Invictarus Suzerain Squad selected as a Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play. One Suzerain in an Invictarus Suzerain Squad selected as a Retinue may exchange their bolt pistol for a Legion standard for +15 points.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="8d6f-7fc9-966a-e627" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="c1fb-3d4b-27f5-b426" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="2515-1c11-b0e3-ede9" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="f8fc-6ad9-18f9-52bb" name="Heavy Sub-type" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
-        <categoryLink id="2939-9165-c065-999f" name="Line Sub-type" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3062-8ad4-10a2-9744" name="2) Dedicated Transport:" hidden="false" collective="false" import="true">
@@ -3267,6 +3269,20 @@
           </constraints>
           <entryLinks>
             <entryLink id="f50a-6d8d-756a-b73a" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="cc3f-6280-a003-0874" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -3306,6 +3322,11 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="929f-ffd4-39a2-f697" name="Termite Assault Drill" hidden="false" collective="false" import="true" targetId="cb30-307a-f0d7-3b13" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89d1-3286-36e4-3cb8" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="c8ea-e46e-51f2-459e" name="1) Suzerains" hidden="false" collective="false" import="true" defaultSelectionEntryId="1ca9-991d-ff13-4c7d">
@@ -3314,14 +3335,13 @@
             <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa9e-e533-5bea-307b" type="max"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="995c-625b-eb78-487c" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="1ca9-991d-ff13-4c7d" name="Suzerain w/Bolt Pistol &amp; Legatine Axe" hidden="false" collective="false" import="true" type="model">
               <profiles>
                 <profile id="3514-22be-3c77-f1d7" name="Suzerain" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
                   <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Line, Heavy, Character)</characteristic>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
                     <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                     <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -3350,13 +3370,11 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
               </costs>
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="69f6-f1f7-4e32-9043" name="Infantry Unit Type" primary="false"/>
-                <categoryLink targetId="6399-5c65-7833-1025" id="42b2-2c9b-4493-8ba4" name="Line Sub-type" primary="false"/>
                 <categoryLink targetId="9231-183c-b97b-63f9" id="0c2f-386c-4cae-b5e7" name="Heavy Sub-type" primary="false"/>
-                <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="6161-c590-4d99-8571" name="Character" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry id="5790-aef9-aa7d-9ec4" name="Suzerain w/Bolt Pistol &amp; Thunder Hammer" hidden="false" collective="false" import="true" type="model">
@@ -3375,16 +3393,14 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
               </costs>
               <infoLinks>
                 <infoLink name="Suzerain" hidden="false" type="profile" id="82e5-c9d6-b73e-be28" targetId="3514-22be-3c77-f1d7"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="b032-e4c5-4fc6-9c6b" name="Infantry Unit Type" primary="false"/>
-                <categoryLink targetId="6399-5c65-7833-1025" id="c412-17b7-45a5-8eb2" name="Line Sub-type" primary="false"/>
                 <categoryLink targetId="9231-183c-b97b-63f9" id="6f15-3b37-4fa9-b821" name="Heavy Sub-type" primary="false"/>
-                <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="e8e6-efde-4cf3-a882" name="Character" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry id="2859-846d-8545-752c" name="Suzerain w/Plasma Pistol &amp; Legatine Axe" hidden="false" collective="false" import="true" type="model">
@@ -3406,16 +3422,14 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
               </costs>
               <infoLinks>
                 <infoLink name="Suzerain" hidden="false" type="profile" id="371a-fa0-a81-f6fc" targetId="3514-22be-3c77-f1d7"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="2033-2f8f-46fc-afc5" name="Infantry Unit Type" primary="false"/>
-                <categoryLink targetId="6399-5c65-7833-1025" id="8b16-10b0-4cf0-9f3e" name="Line Sub-type" primary="false"/>
                 <categoryLink targetId="9231-183c-b97b-63f9" id="963b-a8ca-449c-b52a" name="Heavy Sub-type" primary="false"/>
-                <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="068b-a390-4934-a1b7" name="Character" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry id="276d-8bc1-5949-baa7" name="Suzerain w/Plasma Pistol &amp; Thunder Hammer" hidden="false" collective="false" import="true" type="model">
@@ -3434,16 +3448,14 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
               </costs>
               <infoLinks>
                 <infoLink name="Suzerain" hidden="false" type="profile" id="5510-b560-7d5f-dfb9" targetId="3514-22be-3c77-f1d7"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="9bcd-2de3-4d20-a23f" name="Infantry Unit Type" primary="false"/>
-                <categoryLink targetId="6399-5c65-7833-1025" id="b8d2-5634-4e08-b5e7" name="Line Sub-type" primary="false"/>
                 <categoryLink targetId="9231-183c-b97b-63f9" id="0bae-78ac-44f9-b71b" name="Heavy Sub-type" primary="false"/>
-                <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="0604-e002-43a0-a2bc" name="Character" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -3486,9 +3498,7 @@
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="b7e8-01dc-4bd5-9e08" name="Infantry Unit Type" primary="false"/>
-                    <categoryLink targetId="6399-5c65-7833-1025" id="8708-28d4-4092-be77" name="Line Sub-type" primary="false"/>
                     <categoryLink targetId="9231-183c-b97b-63f9" id="9bc9-c435-4b26-aa4d" name="Heavy Sub-type" primary="false"/>
-                    <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="3567-c7db-4ab4-8681" name="Character" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
                 <selectionEntry id="1b60-c439-0b96-10cf" name="Suzerain w/Legion Standard &amp; Thunder Hammer" hidden="false" collective="false" import="true" type="model">
@@ -3514,9 +3524,7 @@
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="4520-1730-44d5-9844" name="Infantry Unit Type" primary="false"/>
-                    <categoryLink targetId="6399-5c65-7833-1025" id="e504-c3f9-4281-a25c" name="Line Sub-type" primary="false"/>
                     <categoryLink targetId="9231-183c-b97b-63f9" id="8521-5079-4cc0-8b20" name="Heavy Sub-type" primary="false"/>
-                    <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="648d-2eaf-4e91-944a" name="Character" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -3748,6 +3756,20 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="e2c8-723d-ecfa-3d86" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="fd20-53be-059e-0016" name="Dreadclaw Drop Pod" hidden="true" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -3773,6 +3795,11 @@
                   </conditionGroups>
                 </modifier>
               </modifiers>
+            </entryLink>
+            <entryLink id="1b79-5c2e-8e6e-1958" name="Termite Assault Drill" hidden="false" collective="false" import="true" targetId="cb30-307a-f0d7-3b13" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce15-4ead-89c3-24d4" type="max"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -4064,6 +4091,21 @@
               </modifiers>
             </entryLink>
             <entryLink id="655a-7b92-4437-f057" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="7fb0-6302-d46f-029d" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="ae8a-67fe-e92f-95cc" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -4479,7 +4521,7 @@
           <profiles>
             <profile id="cf1b-f8e9-add2-6034" name="Honoured Telemechrus" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Unique)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Character, Unique)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
@@ -4493,12 +4535,21 @@
               </characteristics>
             </profile>
           </profiles>
+          <entryLinks>
+            <entryLink id="d425-2e33-1afd-f906" name="Legion Vexilla" hidden="false" collective="false" import="true" targetId="21b1-2a90-9826-1782" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec21-6bdc-cc0b-23a0" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f24e-b499-0d90-dac2" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="4280-4963-02b5-e31d" id="8c61-22fc-4031-9192" name="Dreadnought Unit Type" primary="false"/>
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="950e-23dc-4c78-b13e" name="Unique Sub-type" primary="false"/>
+            <categoryLink id="56c7-f933-d72f-d41f" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -4757,7 +4808,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
               </costs>
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="af02-ccab-4f73-98c0" name="Infantry Unit Type" primary="false"/>
@@ -5064,6 +5115,21 @@
               </constraints>
             </entryLink>
             <entryLink id="8479-b4c2-d473-4720" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="32d1-29a6-9023-142c" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="08e4-07f8-c615-6acc" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>

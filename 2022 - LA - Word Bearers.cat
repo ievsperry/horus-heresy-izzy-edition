@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="52" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="53" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <categoryEntries>
     <categoryEntry id="821c-0c83-5ed0-ff6b" name="Harbinger of Chaos Restriction" hidden="false">
       <modifiers>
@@ -1244,7 +1244,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="f078-519b-4742-80b5" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
+        <categoryLink id="f078-519b-4742-80b5" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
           <comment>template_id_b24f-3ae0-4cbb-b016</comment>
         </categoryLink>
         <categoryLink id="fdce-c0ab-4221-b24a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -4245,7 +4245,7 @@
       </constraints>
       <rules>
         <rule id="06a1-0713-e45f-c817" name="The Power of the Word" hidden="false">
-          <description>Any Legion Command Squad, Legion Cataphractii Command Squad or Legion Tartaros Command Squad selected as a Retinue Squad with Lorgar as it&apos;s leader gains the Fearless and Feel No Pain (4+) special rules.
+          <description>Any unit with the Retinue Special Rule selected as a Retinue Squad with Lorgar as it's leader gains the Fearless and Feel No Pain (4+) special rules.
 
 In addition, once per battle, one friendly unit composed entirely of models with the Infantry or Cavalry Unit Type with at least one model within 18&quot; of Lorgar (But not a unit that includes Lorgar himself) may be selected at the start of any Game Turn. The chosen units gain the Fearless and Feel No Pain (4+) special rules for the duration of that Game Turn.</description>
         </rule>
@@ -5635,7 +5635,9 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
           <description>Friendly models with the Psychic Disciplines Harbingers of Chaos, Diabolism, or Anathemata within 6&quot; of a model with this special rule may roll an additional D6 and discard the highest result when making Psychic checks. Additionally, in missions that use Victory points the controlling player gains an additional +1 Victory point for every enemy unit that is removed as a casualty as a result of a Sweeping Advance made by a unit made up of models with this special rule.</description>
         </rule>
         <rule id="9af7-796f-c6db-fb17" name="Grim Purpose" hidden="false">
-          <description>A unit that includes any models with this special rule may not be joined by any model that does not also have this special rule (this includes Legion Techmarines and Legion Apothecaries, which may not be assigned to a unit with this special rule unless they also have this special rule).</description>
+          <description>A unit that includes any models with this special rule may not be joined by any model that does not also have this special rule (this includes Legion Techmarines and Legion Apothecaries, which may not be assigned to a unit with this special rule unless they also have this special rule), unless that model has the Independent Character Special Rule and one of the following Psychic Disciplines: Harbinger of Chaos, Diabolism, or Anathemata.
+
+A Word Bearers Procurator Squad may be selected as a Retinue Squad in a Detachment that includes at least one model with both the Independent Character and Legiones Astartes (Word Bearers) Special Rules and one of the following Psychic Disciplines: Harbinger of Chaos, Diabolism, or Anathemata, instead of as an Elites choice. A unit selected as a 'Retinue Squad' must have one model with both the Independent Character and Legiones Astartes (Word Bearers) Special Rules and one of the following Psychic Disciplines: Harbinger of Chaos, Diabolism, or Anathemata from the same Detachment selected by the controlling player as the Word Bearers Procurator Squad's Leader for the purposes of this Special Rule. A Word Bearers Procurator Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. A Word Bearers Procurator Squad selected as a Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -5983,7 +5985,7 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc6d-03ea-3067-b6cf" type="max"/>
                       </constraints>
                       <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
                       </costs>
                     </entryLink>
                     <entryLink id="731d-c84e-afe2-5e5b" name="Power Weapon" hidden="false" collective="false" import="true" targetId="36a7-1c39-670c-5fec" type="selectionEntry">
@@ -5999,7 +6001,7 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0276-88ed-aec3-ad2e" type="max"/>
                       </constraints>
                       <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -6085,6 +6087,25 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Land Raider Proteus Carrier" hidden="true" id="eec6-a190-0ee9-111b" collective="false" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="ccb7-6c5c-76ce-5b77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="lessThan" value="10" field="selections" scope="9cca-47d5-0779-79a2" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="0" field="selections" scope="9cca-47d5-0779-79a2" childId="a298-8584-70ed-18ce" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Land Raider Phobos" hidden="true" id="bd3d-eea2-559f-2320" collective="false" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditionGroups>
@@ -7592,7 +7613,7 @@ A Warlord with this Trait modifies his Strength and Toughness by a value determi
               <profiles>
                 <profile id="1197-c7cc-8278-c08d" name="Unswerving Devotion" publicationId="09c5-eeae-f398-b653" page="304" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any units that include at least one model with the Legiones Astartes (Word Bearers) special rule and have at least one model within 6&quot; of a Warlord with this Trait (including the Warlord himself and any unit he has joined) automatically pass the first failed Morale check or Pinning test they are called upon to make each turn. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any friendly units that include at least one model with the Legiones Astartes (Word Bearers) special rule and have at least one model within 6&quot; of a Warlord with this Trait (including the Warlord himself and any unit he has joined) automatically pass the first failed Morale check or Pinning test they are called upon to make each turn. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

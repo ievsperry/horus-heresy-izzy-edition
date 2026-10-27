@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="220" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="221" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -379,7 +379,7 @@ Additional rules are given to units based on Legion and Unit.</description>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="8bb4-a24c-9326-02c9" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="8bb4-a24c-9326-02c9" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
         <categoryLink id="a44e-6843-7671-8f79" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
@@ -1285,7 +1285,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       <profiles>
         <profile id="721f-029b-84cb-ad49" name="Shamshir Jetbike" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a Legion Shamshir Jetbike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a Legion Shamshir Jetbike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.
+
+A model with the Infantry Unit Type that selects a Legion Shamshir Jetbike as an upgrade (or is otherwise equipped with one as part of its basic Wargear) must change its Unit Type to Cavalry (Antigrav), keeping any other Unit Sub-types it previously had, changes its Movement Characteristic to 19&quot;, gains the Firing Protocols (2), Battle-Hardened (1), Skilled Rider, and Hammer of Wrath (1) Special Rules and improves its Armour Save to 2+ if it was worse. A model that is equipped with a Legion Shamshir Jetbike counts as having a Legion Scimitar Jetbike for rules and interactions that affect or require that wargear.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1300,6 +1302,12 @@ During a Reaction made in any Phase, a player may not choose to activate a model
             <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="a09c-0bb0-52d8-8813" name="Battle-Hardened (X)" hidden="false" targetId="5c3b-ed0b-4ad0-d547" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Battle-Hardened (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="0a1d-3a43-00b2-655e" name="Skilled Rider" hidden="false" targetId="a852-db58-aab3-cbbf" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="fb88-d0e0-cbde-1da9" name="Scatterbolt Launcher" hidden="false" collective="false" import="true" targetId="2ad6-969c-a486-caa8" type="selectionEntry">
@@ -1364,7 +1372,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Legion Scimitar jetbike has one heavy bolter. In addition, a model with a Legion Scimitar jetbike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.
 
-A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an upgrade must change its Unit Type to Cavalry (Antigrav), keeping any other Unit Sub-types it previously had, changes its Movement Characteristic to 16 and gains the Firing Protocols (2) and Hammer of Wrath (1) special rules.</characteristic>
+A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an upgrade must change its Unit Type to Cavalry (Antigrav), keeping any other Unit Sub-types it previously had, changes its Movement Characteristic to 16 and gains the Firing Protocols (2) and Hammer of Wrath (1) special rules.
+
+A model equipped with a Legion Scimitar Jetbike gains the Battle-Hardened (1) and Skilled Rider Special Rules and sets its Wounds Characteristic to 2, unless it already has a higher starting Wounds Characteristic.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1379,6 +1389,12 @@ A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an
             <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="b725-e9e3-0975-737b" name="Battle-Hardened (X)" hidden="false" targetId="5c3b-ed0b-4ad0-d547" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Battle-Hardened (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="445f-41ad-e82e-ffbf" name="Skilled Rider" hidden="false" targetId="a852-db58-aab3-cbbf" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="c736-f12d-8475-755b" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="6024-6953-b8f4-ce63" type="selectionEntry">
@@ -1420,7 +1436,9 @@ A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an
       <profiles>
         <profile id="d853-6df2-8fe8-0325" name="Spatha Combat Bike" publicationId="a716-c1c4-7b26-8424" page="144" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a Legion Spatha combat bike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a Legion Spatha combat bike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.
+
+A model equipped with a Legion Spatha Combat Bike gains the Battle-Hardened (1) and Skilled Rider Special Rules and sets its Wounds Characteristic to 2, unless it already has a higher starting Wounds Characteristic.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1440,6 +1458,12 @@ A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an
             <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="3e64-45ee-9208-6d25" name="Battle-Hardened (X)" hidden="false" targetId="5c3b-ed0b-4ad0-d547" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Battle-Hardened (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="8427-73b3-d4ab-eee8" name="Skilled Rider" hidden="false" targetId="a852-db58-aab3-cbbf" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="5e20-fe7d-10cb-a203" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="e31a-fd70-35c7-8bed" type="selectionEntry">
@@ -1461,6 +1485,8 @@ A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an
               <conditions>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="d0f3-e9d5-b63d-8298" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="a0e1-f2c4-8bcd-0723" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="01b4-57c7-bf61-2abf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="b28b-71f7-e4f4-8f9c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1492,7 +1518,7 @@ A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an
       <profiles>
         <profile id="c404-06d0-257b-4814" name="Vigil Storm Shield" publicationId="817a-6288-e016-7469" page="228" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a Vigil storm shield gains a 3+ Invulnerable Save – Invulnerable Saves granted by a Vigil storm shield do not stack with other Invulnerable Saves and cannot be modified by any other special rule. If a model has another Invulnerable Save then the controlling player must choose one to use. A model with a Vigil storm shield may never gain an additional attack for being armed with two close combat weapons or make attacks using a weapon with the Two-handed special rule</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Vigil Storm Shield provides a 5+ Invulnerable Save or increases an Invulnerable Save the model already has by one step (for example, from 5+ to 4+, to a maximum of 3+). A model with a Vigil Storm Shield may not claim an additional attack for a second weapon in close combat or make attacks with any weapon that has the Two-handed Special Rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3811,7 +3837,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
       <profiles>
         <profile id="acfc-b1b5-7a79-f3bd" name="Stormwrought" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
           <characteristics>
-            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, the controlling player of a Psyker with this Psychic Power may select a single friendly unit with at least on model within 6&quot; of the Psyker that is composed entirely of models with the Infantry, Cavalry or Dreadnought Unit-types. The chosen unit gains the Shrouded (5+) special rule until the beginning of the controlling player&apos;s next Shooting Phase. When using this power the controlling player may choose to have the Psyker take a Psychic Check if the Psychic Check is successful the effect is improved to Shrouded (3+), if the Check is failed the Shrouded (5+) special rule is applied to the target unit and the Psyker suffers Perils of the Warp.</characteristic>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, the controlling player of a Psyker with this Psychic Power may select a single friendly unit with at least on model within 6&quot; of the Psyker that is composed entirely of models with the Infantry, Cavalry or Dreadnought Unit-types. The chosen unit gains the Shrouded (5+) special rule until the beginning of the controlling player's next Shooting Phase. When using this power the controlling player may choose to have the Psyker take a Psychic Check if the Psychic Check is successful the effect is improved to Shrouded (3+), if the Check is failed the Psyker suffers Perils of the Warp.</characteristic>
           </characteristics>
         </profile>
         <profile id="95b7-634c-5271-5a8e" name="Wrath of the Death Wolf" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
@@ -5116,6 +5142,31 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="d5b3-12bd-dfb4-4fac" name="Land Raider Phobos" hidden="true" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
+                            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="equalTo"/>
+                            <condition field="selections" scope="aa72-63e4-bc60-4611" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f115-cfc4-4199-f8be" type="lessThan"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="aa72-63e4-bc60-4611" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f115-cfc4-4199-f8be" type="lessThan"/>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="953c-0210-fab3-42c1" name="Land Raider Spartan" hidden="true" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -6295,6 +6346,11 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="25">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="atLeast"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <rules>
             <rule id="e765-0db1-bceb-bc6a" name="Dark Angels Legion Inductii Template" publicationId="53a4-0d21-2f8a-2c45" page="226" hidden="false">
@@ -6306,7 +6362,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                 </modifier>
               </modifiers>
               <description>• Unit Sub-type All models in a unit modified by the Dark Angels Legion Inductii template must replace the Hexagrammaton Unit Sub-type selected for them as part of the Legiones Astartes (Dark Angels) special rule with the Inductii Unit Sub-type.
-• Wargear: All models in a unit modified by the Dark Angels Legion Inductii template must exchange their bolter for a volkite charger at no additional cost.
+• Wargear: All models in a unit modified by the Dark Angels Legion Inductii template must exchange their bolter for a volkite charger at a cost of +25 points for the unit.
 • Special Rules: All models in a unit modified by the Dark Angels Legion Inductii template lose the Fury of the Legion special rule.</description>
             </rule>
             <rule id="8c68-20ec-6cef-2a28" name="Iron Warriors Legion Inductii Template" publicationId="53a4-0d21-2f8a-2c45" page="227" hidden="false">
@@ -6416,7 +6472,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                   </conditions>
                 </modifier>
               </modifiers>
-              <description>During the controlling player’s Shooting phase, a unit with this special rule must attempt a Shooting Attack if there is an enemy unit within range, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack. In addition, this unit automatically passes any Pinning tests it is required to take.</description>
+              <description>During the controlling player’s Shooting phase, a unit with this special rule must attempt a Shooting Attack if there is an enemy unit within range that they are able to inflict Wounds or Hull Points of Damage upon with weapons the unit is equipped with, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack. In addition, this unit automatically passes any Pinning tests it is required to take, and gains the Stubborn Special Rule.</description>
             </rule>
             <rule id="cdde-df00-6059-541b" name="Supporting Fire" publicationId="53a4-0d21-2f8a-2c45" page="228" hidden="false">
               <modifiers>
@@ -6447,7 +6503,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                 </modifier>
               </modifiers>
               <description>When a model with this special rule suffers an unsaved Wound, it can make a special Barbaran Resilience roll to avoid suffering the Wound. Barbaran Resilience rolls may not be made against Wounds that have the Instant Death special rule.
-Roll a D6 each time an unsaved Wound is suffered. If a unit with this special rule includes ten or more models at the start of a given Phase, this rule has no effect. If a unit with this special rule includes less than ten models at the start of a given Phase, then on a roll of 6+ the unsaved Wound is discounted. If a unit with this special rule includes less than five models at the start of a given Phase, then on a roll of 5+, the unsaved Wound is discounted. Treat discounted Wounds as having been saved. On any other result the Wound is taken as normal.
+Roll a D6 each time an unsaved Wound is suffered. If a unit with this special rule includes ten or more models at the start of resolving the Wound Pool, then this rule has no effect. If a unit with this special rule includes less than ten models at the start of resolving the Wound Pool, then on a roll of 6+ the unsaved Wound is discounted. If a unit with this special rule includes less than five models at the start of resolving the Wound Pool, then on a roll of 5+, the unsaved Wound is discounted. Treat discounted Wounds as having been saved. On any other result the Wound is taken as normal.
 This is a Damage Mitigation roll – any model may make only a single Damage Mitigation roll of any type for any given Wound.</description>
             </rule>
             <rule id="01ef-a54e-8582-b79c" name="Unchained Conviction" publicationId="53a4-0d21-2f8a-2c45" page="234" hidden="false">
@@ -6696,7 +6752,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
       <profiles>
         <profile id="2655-63a1-01c2-afb7" name="Dark Channeling" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">All models in this unit gain the Corrupted Sub-type</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any unit with the Traitor Allegiance, and the Infantry, Dreadnought, or Cavalry Unit Type as well as the Legiones Astartes (Word Bearers) special rule may be upgraded with Dark Channelling for +25 points per unit. All models in a unit with this upgrade gain the Corrupted Unit Sub-type.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6707,7 +6763,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
         <categoryLink id="8765-5742-0c2b-421b" name="Corrupted Sub-type" hidden="false" targetId="9055-7410-8ffd-b8e7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="03f1-8ed9-9867-8d18" name="Rhino Transport" hidden="false" collective="false" import="true" type="unit">
@@ -7067,6 +7123,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
       <categoryLinks>
         <categoryLink id="09bf-3b6b-fba1-8fae" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="566e-8e1f-ea26-51e1" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="18dd-ab8a-3791-8426" name="Line Sub-type" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="846e-c9da-5b90-861d" name="Legion Tactical Support Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -7657,6 +7714,31 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
               </modifiers>
             </entryLink>
             <entryLink id="b6d5-3c48-7dcf-6b9d" name="Land Raider Proteus Carrier" hidden="true" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
+                            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
+                            <condition field="selections" scope="50ed-5869-643d-1ac5" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="097a-5712-c173-0477" type="lessThan"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="50ed-5869-643d-1ac5" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="097a-5712-c173-0477" type="lessThan"/>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="b2f6-4cbd-6356-1ba7" name="Land Raider Phobos" hidden="true" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -11164,7 +11246,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                 </entryLink>
                 <entryLink id="0b38-1fde-4d2a-0f26" name="Gravis Melta Cannon" hidden="false" collective="false" import="true" targetId="ef6c-f656-171a-03e1" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
                 <entryLink id="3e62-a69c-f114-7e8a" name="Gravis Autocannon" hidden="false" collective="false" import="true" targetId="8a23-e57d-b4a8-14a9" type="selectionEntry">
@@ -11189,7 +11271,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                 </entryLink>
                 <entryLink id="4a0d-5c7f-74ad-bcf0" name="Kheres Assault Cannon" hidden="false" collective="false" import="true" targetId="fe77-2e74-160d-c7af" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
                 <entryLink id="c0ea-6da3-9def-1e46" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
@@ -11243,7 +11325,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
               <entryLinks>
                 <entryLink id="dc68-ae96-88ad-3b22" name="Gravis Melta Cannon" hidden="false" collective="false" import="true" targetId="ef6c-f656-171a-03e1" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
                 <entryLink id="ab00-7750-578b-3141" name="Gravis Autocannon" hidden="false" collective="false" import="true" targetId="8a23-e57d-b4a8-14a9" type="selectionEntry">
@@ -11268,7 +11350,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                 </entryLink>
                 <entryLink id="8616-94be-8027-2ccf" name="Kheres Assault Cannon" hidden="false" collective="false" import="true" targetId="fe77-2e74-160d-c7af" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
                 <entryLink id="2b44-5245-ee32-ee5b" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
@@ -11468,7 +11550,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="4280-4963-02b5-e31d" id="3790-1a33-4134-b628" name="Dreadnought Unit Type" primary="false"/>
@@ -13060,7 +13142,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                 </entryLink>
                 <entryLink id="413d-09f7-2898-5d16" name="Mantle of the Elder Drake" hidden="false" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
                   </costs>
                 </entryLink>
                 <entryLink id="63e4-7f4f-70e7-64fd" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup"/>
@@ -13806,7 +13888,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
               <entryLinks>
                 <entryLink id="1f9e-637f-409f-3183" name="Mantle of the Elder Drake" hidden="false" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
                   </costs>
                 </entryLink>
                 <entryLink id="b8e0-dc95-36b4-0a3f" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup"/>
@@ -14057,7 +14139,11 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
               </constraints>
               <entryLinks>
                 <entryLink id="65ca-51eb-5464-7a87" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
-                <entryLink id="20e3-f08c-7cf8-624b" name="Gorgon Terminator Armour" hidden="false" collective="false" import="true" targetId="16ca-e521-1c1b-0716" type="selectionEntry"/>
+                <entryLink id="20e3-f08c-7cf8-624b" name="Gorgon Terminator Armour" hidden="false" collective="false" import="true" targetId="16ca-e521-1c1b-0716" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -14443,7 +14529,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
               <entryLinks>
                 <entryLink id="a7c3-6621-283f-13e2" name="Mantle of the Elder Drake" hidden="false" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
                   </costs>
                 </entryLink>
                 <entryLink id="3a9d-a0b7-4e30-3f78" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup"/>
@@ -17355,6 +17441,27 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220"/>
               </costs>
             </entryLink>
+            <entryLink id="2048-bf91-cb11-22b2" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="1a8e-0ded-a4dc-2b4e" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="223f-db12-519a-ee10" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220"/>
+              </costs>
+            </entryLink>
             <entryLink id="bc4d-c07a-b1d3-c0df" name="Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -18443,6 +18550,27 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="19d3-e09b-8ccc-bcc8" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d2c1-514f-9d00-fc81" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="d91a-a3c7-d7be-4293" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f69d-b2e6-4548-fa67" type="max"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220"/>
@@ -20202,6 +20330,31 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="0ca1-cee1-b701-43e1" name="Land Raider Phobos" hidden="true" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
+                            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
+                            <condition field="selections" scope="4357-930e-165a-a6e3" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd53-72cd-7c20-3bc8" type="lessThan"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="4357-930e-165a-a6e3" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd53-72cd-7c20-3bc8" type="lessThan"/>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="0742-4f24-8c49-a7d9" name="Land Raider Spartan" hidden="true" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -21769,6 +21922,16 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                 <modifier type="set" field="name" value="Furious Charge (1) (Creed of Brutality)"/>
               </modifiers>
             </infoLink>
+            <infoLink id="b297-e66b-7cb8-9f42" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Rage (2)"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </entryLink>
       </entryLinks>
@@ -22439,6 +22602,21 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
               </modifiers>
             </entryLink>
             <entryLink id="382b-5a9e-3480-2f49" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="ad97-c090-fa67-696f" value="9" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7baf-18d9-aa70-9ba8" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="d3fe-8106-f8ab-eb16" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -23255,6 +23433,18 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
           </constraints>
           <categoryLinks>
             <categoryLink id="7b2a-2caf-531a-d3e9" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="205"/>
+          </costs>
+        </entryLink>
+        <entryLink id="cae2-c391-3af1-6373" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9191-6e7c-c68c-17a8" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2c25-81b3-675f-caee" type="min"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="7432-5848-39e3-c4d1" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="205"/>
@@ -24181,6 +24371,29 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
               </modifiers>
             </entryLink>
             <entryLink id="f9f4-d453-6fa0-4ee7" name="Land Raider Proteus Carrier" hidden="true" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
+                            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="6a7d-7039-5946-986f" name="Land Raider Phobos" hidden="true" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -26676,6 +26889,21 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="305e-9f11-5459-f9a0" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="69aa-fe4f-cd55-f848" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -27774,7 +28002,11 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
               </constraints>
               <entryLinks>
                 <entryLink id="ce38-573e-cf56-fedd" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
-                <entryLink id="c49a-a94c-7ffc-ce25" name="Gorgon Terminator Armour" hidden="false" collective="false" import="true" targetId="16ca-e521-1c1b-0716" type="selectionEntry"/>
+                <entryLink id="c49a-a94c-7ffc-ce25" name="Gorgon Terminator Armour" hidden="false" collective="false" import="true" targetId="16ca-e521-1c1b-0716" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -27917,6 +28149,20 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
           </constraints>
           <entryLinks>
             <entryLink id="39f1-631b-b65e-1dcc" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="1000-f7ef-799f-18a5" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -28620,6 +28866,29 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
               </modifiers>
             </entryLink>
             <entryLink id="667a-0b88-4ce3-d697" name="Land Raider Proteus Carrier" hidden="true" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
+                            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="8540-cfea-4400-1e2b" name="Land Raider Phobos" hidden="true" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -31945,6 +32214,24 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
               </modifiers>
             </entryLink>
             <entryLink id="4ad5-f4a0-ff8c-f1ba" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d53e-06be-5638-b1a9" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -35653,6 +35940,7 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
       <categoryLinks>
         <categoryLink id="4456-9ae8-88cc-ba12" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="0b13-a329-b6f4-2e83" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="d18b-73d5-facf-b30d" name="Bombard Sub-type" hidden="false" targetId="d5df-57ac-8f3c-097b" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8c66-d5df-654f-e9e8" name="Sicaran Venator" hidden="false" collective="false" import="true" type="model">
@@ -35668,14 +35956,9 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="append" field="e555-4aed-dfcc-c0b4" value="(Bombard)">
-                  <conditions>
-                    <condition field="selections" scope="1345-e0db-2fcb-dcc8" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ad4-c4dd-7845-f74d" type="greaterThan"/>
-                  </conditions>
-                </modifier>
               </modifiers>
               <characteristics>
-                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Bombard)</characteristic>
                 <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">16</characteristic>
                 <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
                 <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
@@ -35867,53 +36150,6 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
               </costs>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="9789-a988-b8f4-0fea" name="?? Bombard Sub-type ?? (Ambiguity)" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47af-9b95-c336-ddb1" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f79-3040-68fe-a105" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="0ad4-c4dd-7845-f74d" name="Bombard Sub-type (Yes)" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="3687-0183-f93a-d2af" value="1">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ad4-c4dd-7845-f74d" type="greaterThan"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3687-0183-f93a-d2af" type="min"/>
-              </constraints>
-              <rules>
-                <rule id="964f-e6a4-10cf-68a3" name="?? Bombard Sub-type ?? (Ambiguity)" hidden="false">
-                  <description>In French and German versions of both the LA books the Sicaran Venator has the Bombard Sub-type.
-It is not known if this is a mistake or not, as previously like with the Mech book, the non-English versions had the correct profile for other misprints.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="cd3e-1108-34ff-bde5" name="Bombard Sub-type (No)" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="d29f-2fb7-c66e-4b19" value="1">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd3e-1108-34ff-bde5" type="greaterThan"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d29f-2fb7-c66e-4b19" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="f042-a239-ae5f-b1eb" name="?? Bombard Sub-type ?? (Ambiguity)" hidden="false" targetId="964f-e6a4-10cf-68a3" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -36635,6 +36871,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
         <categoryLink id="7c5e-2c98-9ff3-b2fa" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="51f1-7e20-8eac-f70c" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="1932-ff9d-8ddc-9c5c" name="Bombard Sub-type" hidden="false" targetId="d5df-57ac-8f3c-097b" primary="false"/>
+        <categoryLink id="08cb-0325-b378-ae2f" name="Reinforced Sub-type" hidden="false" targetId="9b0d-738c-10e4-4ec1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="29b7-c714-0a01-697b" name="Arquitor" hidden="false" collective="false" import="true" type="model">
@@ -36652,10 +36889,10 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                 </modifier>
               </modifiers>
               <characteristics>
-                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Bombard)</characteristic>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Bombard, Reinforced)</characteristic>
                 <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">8</characteristic>
                 <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
                 <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
                 <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
                 <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
@@ -37068,6 +37305,20 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
           </constraints>
           <entryLinks>
             <entryLink id="7444-1730-7e35-acef" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="a37f-58c9-fda3-baf8" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -37536,6 +37787,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink id="749e-64b2-366e-962e" name="Assault Vehicle" hidden="false" targetId="aa61-11f6-2bb5-7c0e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2e40-97f7-d4a9-ff9e" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -38073,14 +38325,14 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
             </entryLink>
             <entryLink id="bb27-466f-543c-658c" name="Volkite Culverin" hidden="false" collective="false" import="true" targetId="170d-44e0-455c-8207" type="selectionEntry">
               <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
                   <repeats>
                     <repeat field="selections" scope="bac9-5389-e2e7-0b1f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f87-b709-2c56-cefd" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink id="c02c-2abc-d013-4de4" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
@@ -38091,6 +38343,14 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                   </repeats>
                 </modifier>
               </modifiers>
+              <entryLinks>
+                <entryLink id="d425-7a34-6fef-8c31" name="Suspensor Web" hidden="false" collective="false" import="true" targetId="6472-db7f-08b0-d7c7" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e25-a4c3-96b8-6a93" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92dc-214d-7d9e-610c" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -38139,14 +38399,14 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
             </entryLink>
             <entryLink id="e604-a35e-2799-f0a9" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
               <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
                   <repeats>
                     <repeat field="selections" scope="bac9-5389-e2e7-0b1f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f87-b709-2c56-cefd" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink id="489b-38b0-8283-adc7" name="Shrapnel Cannon" hidden="false" collective="false" import="true" targetId="975e-14eb-caed-4b5b" type="selectionEntry">
@@ -38231,6 +38491,29 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
               </modifiers>
             </entryLink>
             <entryLink id="e92d-b3df-6f1b-e53a" name="Land Raider Proteus Carrier" hidden="true" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
+                            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="35ea-3e40-9d1b-b5cf" name="Land Raider Phobos" hidden="true" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
@@ -39835,7 +40118,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15f6-12d5-479f-80f2" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="0084-9947-fdd3-abdf" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
+            <entryLink id="0084-9947-fdd3-abdf" name="Gravis Melta Cannon" hidden="false" collective="false" import="true" targetId="ef6c-f656-171a-03e1" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
@@ -40094,7 +40377,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
         <entryLink id="dc95-4296-cdee-5316" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="145"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a736-43ca-ed95-a08f" name="Proteus Land Speeder Squadron" hidden="false" collective="false" import="true" type="unit">
@@ -41776,7 +42059,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
         <entryLink id="094c-f7a4-5641-78db" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="700"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="575"/>
       </costs>
       <infoLinks>
         <infoLink id="bebc-81b1-6836-df1d" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
@@ -42321,7 +42604,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
         <entryLink id="2cdb-cbf5-4e51-606a" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="600"/>
       </costs>
       <infoLinks>
         <infoLink id="209d-41d1-495d-84f9" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
@@ -42399,6 +42682,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
           </modifiers>
         </infoLink>
         <infoLink id="6a2a-6fdd-3da7-e9ee" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
+        <infoLink id="046e-1429-6cfb-db52" name="Reinforced Shell" hidden="false" targetId="a658-ac8d-e70b-a94e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="88d9-9034-d534-b855" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -42610,6 +42894,12 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
         </entryLink>
         <entryLink id="55b1-a88d-22e5-06d7" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
         <entryLink id="9930-324f-c2c6-5e0b" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
+        <entryLink id="c369-cb40-5f06-b4b7" name="Hull (Front) Mounted Magna-Melta Array" hidden="false" collective="false" import="true" targetId="c730-cd5e-53c5-46b8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e5e-a1ab-d9b0-e4d2" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a79b-eb21-11de-5f33" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="690"/>
@@ -42925,7 +43215,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
         <entryLink id="b0b2-e4e6-4eb0-2f88" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="625"/>
       </costs>
       <infoLinks>
         <infoLink id="f2d5-779a-40e7-b663" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
@@ -43202,7 +43492,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
@@ -43452,7 +43742,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
         <entryLink id="b031-3409-ff82-a945" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="550"/>
       </costs>
       <infoLinks>
         <infoLink id="2cc8-57d3-4905-bcc9" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
@@ -44755,6 +45045,15 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="6a8e-5682-f5bd-d5d1" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="954d-cf8e-eefd-27a6" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0740-a851-4e97-fced" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="25c6-fe7a-6253-534a" name="Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -44777,6 +45076,11 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                   </conditionGroups>
                 </modifier>
               </modifiers>
+            </entryLink>
+            <entryLink id="76bd-d8ea-88e3-20e1" name="Land Raider Spartan" hidden="false" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f81-5566-49d6-0f31" type="max"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -45072,9 +45376,9 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink id="e844-44ed-af33-4c9f" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
+                <entryLink id="e844-44ed-af33-4c9f" name="Gravis Melta Cannon" hidden="false" collective="false" import="true" targetId="ef6c-f656-171a-03e1" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
                 <entryLink id="d00e-7fbc-c412-122b" name="Gravis Autocannon" hidden="false" collective="false" import="true" targetId="8a23-e57d-b4a8-14a9" type="selectionEntry">
@@ -45162,9 +45466,9 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink id="f5fb-ee23-cf29-4383" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
+                <entryLink id="f5fb-ee23-cf29-4383" name="Gravis Melta Cannon" hidden="false" collective="false" import="true" targetId="ef6c-f656-171a-03e1" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
                 <entryLink id="bb47-c453-cff3-e7ff" name="Gravis Autocannon" hidden="false" collective="false" import="true" targetId="8a23-e57d-b4a8-14a9" type="selectionEntry">
@@ -45239,7 +45543,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -45493,6 +45797,14 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220"/>
               </costs>
             </entryLink>
+            <entryLink id="f2c3-577e-01ca-ef2b" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dd6a-0c96-c89d-432e" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220"/>
+              </costs>
+            </entryLink>
             <entryLink id="4d94-4719-9d1e-8f1c" name="Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -45518,6 +45830,11 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4a74-f0c5-1ee9-7130" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="d435-378e-b92e-e2a9" name="Land Raider Spartan" hidden="false" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="299f-8638-287f-15cf" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -46843,7 +47160,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="160"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -47475,7 +47792,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
         </infoLink>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f64a-90b7-19c8-182a" name="Kharybdis Assault Claw" hidden="false" collective="false" import="true" type="unit">
@@ -47688,7 +48005,7 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
               <characteristics>
                 <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
                 <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">-</characteristic>
-                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
                 <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
                 <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
                 <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
@@ -47793,8 +48110,8 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
       <profiles>
         <profile id="a0a6-77b4-1932-4a4a" name="Gorgon Terminator Armour" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Gorgon Terminator armour confers a 2+ Armour Save, a 5+ Invulnerable Save and the Feel No Pain (5+) special rule (this does not stack with any other variant of the Feel No Pain (X) special rule a model may have – if a model has more than one variant of this special rule the controlling player must choose one to use).
-Additionally, at the end of any Phase in which a model with Gorgon Terminator armour has passed at least one Armour Save or Invulnerable Save, roll a D6. On the result of a 4+, all enemy units with at least one model within 6&quot; of the model with Gorgon Terminator armour must test as if they had been hit by a weapon with the Blind special rule. Any unit that is composed entirely of models with Gorgon Terminator armour are immune to this effect.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Gorgon Terminator armour confers a 2+ Armour Save, a 5+ Invulnerable Save, and the Augmetics (5+) Special Rule.
+At the end of any Phase in which a model with Gorgon Terminator armour has passed at least one Armour Save or Invulnerable Save, roll a D6. On the result of a 4+, all enemy units with at least one model within 6&quot; of the model with Gorgon Terminator armour must test as if they had been wounded by a weapon with the Blind special rule. Any unit that is composed entirely of models with Gorgon Terminator armour are immune to this effect.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -47943,7 +48260,11 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
       <profiles>
         <profile id="de24-f317-3b22-4a32" name="Argyrum pattern boarding shield" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An Argyrum pattern boarding shield provides a 5+ Invulnerable Save against Shooting Attacks in any Phase that increases to 4+ against any attacks made while engaged in an assault. Invulnerable Saves granted by an Argyrum pattern boarding shield do not stack with other Invulnerable Saves and cannot be modified by any other special rule. If a model has another Invulnerable Save then the controlling player must choose which one to use. In addition, a model with has another Invulnerable Save then the controlling player must choose which one to use. In addition, a model with an Argyrum pattern boarding shield may not make attacks with any weapon that has the Two-handed special rule.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An Argyrum pattern boarding shield provides a 5+ Invulnerable Save against Shooting Attacks in any Phase that increases to 4+ against any attacks made while engaged in an assault. Invulnerable Saves granted by an Argyrum pattern boarding shield do not stack with other Invulnerable Saves and cannot be modified by any other special rule. If a model has another Invulnerable Save then the controlling player must choose which one to use. In addition, a model with has another Invulnerable Save then the controlling player must choose which one to use. In addition, a model with an Argyrum pattern boarding shield may not make attacks with any weapon that has the Two-handed special rule.
+
+An Argyrum Pattern Boarding Shield counts as a Boarding Shield for all intents and purposes, including Rites of War, Special Rules, and wargear limitations which either require their use or prevent it (such as a Master of Signals being prevented from taking a Boarding Shield), though it does not confer any of the benefits normally gained from a Boarding Shield from any such sources.
+
+In addition, a model armed with an Argyrum Pattern Boarding Shield cannot claim bonus attacks for having more than one melee weapon.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -48014,6 +48335,14 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
           </modifiers>
         </infoLink>
         <infoLink id="5e82-a996-267f-b524" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
+        <infoLink id="e21e-47a1-7db5-af12" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
+        <infoLink id="b591-f90c-feb9-b025" name="Hit &amp; Run" hidden="false" targetId="5986-e960-d432-affd" type="rule"/>
+        <infoLink id="2cf5-b2b7-46da-548c" name="Battle-Hardened (X)" hidden="false" targetId="5c3b-ed0b-4ad0-d547" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Battle-Hardened (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="7573-0a6b-fb83-28aa" name="Skilled Rider" hidden="false" targetId="a852-db58-aab3-cbbf" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="995e-aa85-478b-de47" name="Skirmish Sub-type" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
@@ -48057,7 +48386,7 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
@@ -48078,7 +48407,9 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
             </profile>
             <profile id="3846-b803-9e73-ebf7" name="Spatha Attack Bike" publicationId="a716-c1c4-7b26-8424" page="144" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
               <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Legion Spatha attack bike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.</characteristic>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Legion Spatha attack bike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.
+
+A model equipped with a Legion Spatha Attack Bike must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had, and may choose to gain the Skirmish Unit Sub-type. In addition, the model must change its Movement Characteristic to 14 and gains the Firing Protocols (2), Battle-Hardened (1), Skilled Rider, and Hammer of Wrath (1) Special Rules.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -48161,7 +48492,7 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
             </entryLink>
             <entryLink id="419d-bad9-4d79-8bd6" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink id="f74a-5170-5a72-22a2" name="Shrapnel Cannon" hidden="false" collective="false" import="true" targetId="975e-14eb-caed-4b5b" type="selectionEntry">
@@ -48314,11 +48645,11 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy, Transport)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">22</characteristic>
             <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">1</characteristic>
           </characteristics>
         </profile>
@@ -48564,10 +48895,15 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
         <entryLink id="8c81-a3e6-9add-ed99" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="500"/>
       </costs>
       <infoLinks>
         <infoLink id="f4d5-f2f1-471f-1257" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
+        <infoLink id="5724-00a1-cf85-9e68" name="Tank Desant (X)" hidden="false" targetId="4c49-39e3-9f82-5e73" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Tank Desant (10)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="ee5c-0952-bf95-6333" name="Legion Baneblade" publicationId="d0df-7166-5cd3-89fd" page="35" hidden="false" collective="false" import="true" type="unit">
@@ -48619,7 +48955,7 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
@@ -48895,7 +49231,7 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
         <entryLink id="cce3-dd36-7ffb-f2f5" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="475"/>
       </costs>
       <infoLinks>
         <infoLink id="a092-a4d7-5daa-92ff" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
@@ -48950,7 +49286,7 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
@@ -49154,9 +49490,15 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
           </constraints>
         </entryLink>
         <entryLink id="99be-62e6-a504-bc70" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
+        <entryLink id="6661-f505-9fd4-6ba9" name="Hull (Front) Mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a618-cc82-08dc-6608" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8ba-06fe-d06f-a120" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="500"/>
       </costs>
       <infoLinks>
         <infoLink id="66c7-d07e-a557-f3cd" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
@@ -49216,11 +49558,11 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy, Transport)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">20</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">32</characteristic>
             <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">1</characteristic>
           </characteristics>
         </profile>
@@ -49437,10 +49779,16 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
         <entryLink id="9422-7df5-f3f2-1a1f" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="475"/>
       </costs>
       <infoLinks>
         <infoLink id="f0df-44cc-c40e-aa81" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
+        <infoLink id="e408-06a4-c13b-ae2a" name="Tank Desant (X)" hidden="false" targetId="4c49-39e3-9f82-5e73" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Tank Desant (10)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4721-afd1-9021-fe34" name="Assault Vehicle" hidden="false" targetId="aa61-11f6-2bb5-7c0e" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="8e67-8f84-730c-2778" name="Legion Stormsword" hidden="false" collective="false" import="true" type="unit">
@@ -49492,7 +49840,7 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
@@ -49727,7 +50075,7 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
         <entryLink id="6f4f-67ff-c119-b133" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="525"/>
       </costs>
       <infoLinks>
         <infoLink id="26de-ed1b-2bd8-eb87" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
@@ -49784,7 +50132,7 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Bombard)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12&quot;</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
             <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
@@ -49800,6 +50148,7 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
         <categoryLink id="e4bb-66e5-0a98-68ea" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
         <categoryLink id="5907-22d5-cb57-2222" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="1bfc-4442-f18b-c57b" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="b84f-7a59-77ea-ffbe" name="Bombard Sub-type" hidden="false" targetId="d5df-57ac-8f3c-097b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b4f4-a12a-e7da-3341" name="Pintle mounted Weapon Options" hidden="false" collective="false" import="true">
@@ -51226,14 +51575,11 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink id="9afa-cfc0-dc04-767c" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Bulky (4)"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="927c-e77d-16c5-ba78" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
         <infoLink name="Fearless" hidden="false" type="rule" id="23fc-16e6-aa35-a363" targetId="b48c-d7e1-2a83-2f5b"/>
         <infoLink name="Support Squad" id="a0d1-f134-b09d-38da" hidden="false" type="rule" targetId="768e-56d6-ca52-24ae"/>
+        <infoLink id="dec2-b26f-275f-58f4" name="Immobile" hidden="false" targetId="4767-2ed2-2c4b-7549" type="rule"/>
+        <infoLink id="94b7-b74a-5e34-ae57" name="Sentry Protocols" hidden="false" targetId="97aa-da60-3ccc-7152" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d336-17f0-8acd-e800" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -51267,13 +51613,13 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">-</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
                     <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">0</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">-</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">-</characteristic>
                     <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
                     <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
                   </characteristics>
@@ -51616,7 +51962,7 @@ Pinning, One Use</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
       </costs>
       <rules>
         <rule name="Sentry Gun" id="6cf7-b278-0b65-11c8" hidden="false">
@@ -52188,35 +52534,12 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
             <categoryLink targetId="7b0a-a743-a8da-3a39" id="4012-ab23-4c78-9e32" name="Transport Sub-type" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="b44b-a321-7724-b2b6" name="1) Hull (Front) Mounted Achillus Quad Launcher" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b44b-a321-7724-b2b6" name="1) Hull (Front) Mounted Quad Launcher" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb1c-7138-06df-bf39" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d56-b3e2-e24c-ec36" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="8cf1-7612-0d14-2098" name="Achillus Quad Launcher (Strike)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Sunder</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="e1de-56c1-f493-5902" name="Achillus Quad Launcher (Shard)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Shred</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="abb1-71db-2fff-93cc" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
-                <infoLink id="aa32-f3ed-e38f-4c4b" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-                <infoLink id="ab8a-16b0-4439-e0b4" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
-              </infoLinks>
-              <costs>
+              <entryLinks><entryLink id="1a9d-7935-d0df-6b73" name="Quad Launcher - Frag" hidden="false" collective="false" import="true" targetId="333a-6c28-1031-9134" type="selectionEntry"><constraints><constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56e3-9777-93f2-0382" type="min"/><constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25a0-c641-b8c9-44a1" type="max"/></constraints></entryLink><entryLink id="414c-7e49-2a15-4c4a" name="Quad Launcher - Shatter" hidden="false" collective="false" import="true" targetId="adb6-7963-11bd-e72b" type="selectionEntry"><constraints><constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9516-1d78-a0a2-f092" type="min"/><constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ab8-bb27-d915-fba1" type="max"/></constraints></entryLink><entryLink id="1a3e-a697-6ddc-b54e" name="Quad Launcher - Splinter" hidden="false" collective="false" import="true" targetId="f7cc-7f11-f82f-1fdf" type="selectionEntry"><constraints><constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4a3-f243-51e5-07d4" type="min"/><constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eeea-dda8-7fc1-8f00" type="max"/></constraints></entryLink><entryLink id="e0c9-2cef-0248-a21d" name="Quad Launcher - Incendiary" hidden="false" collective="false" import="true" targetId="8ff6-2222-75b5-ecf7" type="selectionEntry"><constraints><constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b834-9f1c-e1b3-be0a" type="min"/><constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77b6-e353-b194-d4ec" type="max"/></constraints></entryLink></entryLinks><costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </selectionEntry>
@@ -52469,13 +52792,13 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
           </modifiers>
           <characteristics>
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer, Hover, Transport)</characteristic>
-            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">14&quot;</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">18&quot;</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
             <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">16</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
             <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">Two at the front of the hull.</characteristic>
           </characteristics>
         </profile>
@@ -52484,6 +52807,9 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
         <infoLink id="aa5f-e709-8881-62d4" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
         <infoLink id="4ace-3c04-b51b-1c84" name="Assault Vehicle" hidden="false" targetId="aa61-11f6-2bb5-7c0e" type="rule"/>
         <infoLink id="87a6-c3f9-7be8-7569" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
+        <infoLink id="8053-0e78-76a8-d4ea" name="Afterburner" hidden="false" targetId="e3f2-bb66-75ca-8bcf" type="rule"/>
+        <infoLink id="65f4-4426-5fd4-c6b5" name="Caestus Prow" hidden="false" targetId="180e-1851-c7fb-de75" type="rule"/>
+        <infoLink id="163a-45f2-7059-9cfd" name="Inertia Suppression Clamps" hidden="false" targetId="ac44-45e8-bab9-a1dd" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7230-f0b9-a9e3-1a41" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -52626,7 +52952,6 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
         <categoryLink id="4740-ca67-2937-0722" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="901e-f757-8434-fc68" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="1375-f0fe-bf93-3d8a" name="Super-heavy Sub-type" hidden="false" targetId="7381-1130-ca6e-1806" primary="false"/>
-        <categoryLink id="e60e-88e3-4204-f7b3" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e41f-865b-9859-5eea" name="Macharius Heavy Tank" hidden="false" collective="false" import="true" type="model">
@@ -52846,12 +53171,12 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="380"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="330"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c023-8a35-a044-8a5" name="Additional Macharius Heavy Tank" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad8b-66ef-d3a9-f2b0" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad8b-66ef-d3a9-f2b0" type="max"/>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57c7-a1d2-2485-9124" type="min"/>
           </constraints>
           <profiles>
@@ -53066,7 +53391,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="580"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="335"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -53226,9 +53551,8 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="7faa-cbdf-e762-0ae6" name="Earthshaker cannon" hidden="false" collective="false" import="true" targetId="cc2e-df5f-1778-29d8" type="selectionEntry">
+            <entryLink id="7faa-cbdf-e762-0ae6" name="Centreline (Rear) Mounted Earthshaker Battery" hidden="false" collective="false" import="true" targetId="0d83-9a43-7dac-aaf3" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="name" value="Hull Centreline (Rear) Mounted twin-linked Earthshaker cannon"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="938a-1787-f36f-041c" type="min"/>
@@ -53445,7 +53769,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="72e9-f752-f331-978f" name="3) Side Mounted Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="1bd4-01c8-d3b8-2535">
+            <selectionEntryGroup id="72e9-f752-f331-978f" name="3) Hull (Left and Right) Mounted Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="1bd4-01c8-d3b8-2535">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f5c-657b-9509-e1f9" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b66-5fd0-64c1-4d8f" type="max"/>
@@ -53474,7 +53798,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                     <modifier type="set" field="name" value="2x Side (Right / Left) Mounted Lascannons"/>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
                 <entryLink id="e755-3eff-1552-45c2" name="Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry">
@@ -53566,7 +53890,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                     <modifier type="set" field="name" value="Hull (Front) Mounted Demolisher Cannon"/>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
                   </costs>
                 </entryLink>
                 <entryLink id="a058-460c-5b61-9284" name="Shrapnel Cannon" hidden="false" collective="false" import="true" targetId="975e-14eb-caed-4b5b" type="selectionEntry">
@@ -53590,9 +53914,8 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bd9-cf40-7486-608d" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="f0f5-8d69-c098-28b5" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
+                <entryLink id="f0f5-8d69-c098-28b5" name="Hull (Front) Mounted Twin-linked Gravis Heavy Lascannon" hidden="false" collective="false" import="true" targetId="4112-5cbe-71fd-ece4" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="2x Hull (Front) Mounted Gravis lascannon"/>
                   </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -60059,6 +60382,21 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="4595-f282-43f5-c44c" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="7e3d-7247-9f58-294a" name="Storm Eagle Gunship" hidden="true" collective="false" import="true" targetId="8aa5-ff31-7de7-19d4" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -61226,13 +61564,13 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
       <infoLinks>
         <infoLink id="afde-172b-93dd-3f84" name="Volatile Plasma Containment" hidden="false" targetId="564b-25f0-6bae-949e" type="rule"/>
         <infoLink id="1aa5-d48c-527e-5f4d" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
+        <infoLink id="30cb-c274-af52-1cb2" name="Exposed Compartment" hidden="false" targetId="47f7-87ce-9e63-c152" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7b50-17e5-1157-e380" name="Super-heavy Sub-type" hidden="false" targetId="7381-1130-ca6e-1806" primary="false"/>
         <categoryLink id="1ab1-822c-bec8-16ea" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
         <categoryLink id="5b31-4f2e-b6cf-2d2c" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="8403-715d-947c-00da" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="a146-4468-7b37-c95e" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="ba7f-1983-eb26-3761" name="Omega-pattern Plasma Blastgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -61393,7 +61731,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">8</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">35</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">48</characteristic>
             <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One at the rear of the hull.</characteristic>
           </characteristics>
         </profile>
@@ -61603,6 +61941,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
       </costs>
       <infoLinks>
         <infoLink id="2677-d6ef-a785-7aca" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
+        <infoLink id="13d7-50f3-b4c8-816c" name="Transport Bay" hidden="false" targetId="0662-8b8d-38e8-60f8" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry id="4a3e-181e-993d-948f" name="Legion Praetor Armoured Assault Launcher" hidden="false" collective="false" import="true" type="unit">
@@ -61671,7 +62010,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
         <categoryLink id="0901-9931-9d9b-ce5b" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="597b-12c7-3a14-cf77" name="Praetor Launcher" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="597b-12c7-3a14-cf77" name="Centreline Mounted Praetor Launcher" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9ca-b7c7-ffa9-18fa" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f01-c941-6928-b2fc" type="max"/>
@@ -61828,7 +62167,7 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
         <entryLink id="3817-2a6b-c4ec-597c" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="500"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="475"/>
       </costs>
       <infoLinks>
         <infoLink id="788b-1e97-326b-6ed5" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
@@ -64633,7 +64972,7 @@ If the Psychic check is successful then until that Shooting Attack is resolved, 
                 <characteristic typeId="c32b-5fdd-3fbe-9b1f" name="T">4</characteristic>
                 <characteristic typeId="57ee-1126-32a9-5672" name="W">2</characteristic>
                 <characteristic typeId="62d3-22d7-2d49-52dc" name="I">4</characteristic>
-                <characteristic typeId="f111-2ce5-dd12-d6b0" name="A">2</characteristic>
+                <characteristic typeId="f111-2ce5-dd12-d6b0" name="A">3</characteristic>
                 <characteristic typeId="e8a6-1da9-d384-8727" name="Ld">9</characteristic>
                 <characteristic typeId="e593-6b3c-f169-04f0" name="Save">3+</characteristic>
               </characteristics>
@@ -66576,6 +66915,29 @@ If the Psychic check is successful then until that Shooting Attack is resolved, 
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Land Raider Phobos" hidden="true" id="245f-6358-f0e6-3676" collective="false" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="907e-21b4-1aef-10be" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="5317-80ce-cdb6-6e5a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="ccb7-6c5c-76ce-5b77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -66653,12 +67015,12 @@ If the Psychic check is successful then until that Shooting Attack is resolved, 
         <profile id="03c1-b57e-9f00-23a6" name="Cassian Dracos Reborn" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <characteristics>
             <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Heavy, Unique)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6&quot;</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
             <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
             <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">7</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
             <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
             <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
             <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
@@ -66699,6 +67061,7 @@ In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a B
         <categoryLink id="d849-8fbc-0faa-8dfb" name="Dreadnought Unit Type" hidden="false" targetId="4280-4963-02b5-e31d" primary="false"/>
         <categoryLink id="2ff0-6e13-57f0-e139" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink targetId="aa94-5c65-d1f1-46a4" id="9996-7f4e-4632-ac50" name="Unique Sub-type" primary="false"/>
+        <categoryLink id="b725-6394-7ab8-549b" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8df9-b411-be3d-51a9" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="1ffe-82e4-12db-538d" type="selectionEntry">
@@ -66762,6 +67125,18 @@ In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a B
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="291-ad74-b11-7666"/>
           </constraints>
         </entryLink>
+        <entryLink id="fe58-4737-ac23-77c3" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ba0-2bb5-077d-0c07" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="813e-3159-b918-24da" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ab18-c640-76ac-2a3f" name="Nuncio-Vox" hidden="false" collective="false" import="true" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae0a-3d7e-cea1-cb7e" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f41f-e4ad-5f67-9830" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250"/>
@@ -66815,6 +67190,11 @@ In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a B
         <infoLink id="588e-6359-b745-8f85" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hatred (Everything)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="483d-1587-0d27-c55d" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="It Will Not Die (5+)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -67201,6 +67581,21 @@ In addition, if Xiaphas Jurr is selected as the army’s Warlord in a Blackshiel
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="9ca9-3354-101b-e206" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="048e-67cc-d24d-9f46" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="453a-db99-6a13-5f2a" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -67498,7 +67893,7 @@ In addition, if Xiaphas Jurr is selected as the army’s Warlord in a Blackshiel
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
@@ -67931,6 +68326,11 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
         </infoLink>
         <infoLink id="5f03-968d-7f7b-976c" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
         <infoLink id="6d1d-134b-6029-5438" name="Pathfinder" hidden="false" targetId="ec97-7aa8-49f5-b298" type="rule"/>
+        <infoLink id="c45b-15aa-9848-e55e" name="Consul (X)" hidden="false" targetId="f6af-6ee6-f6a5-d96c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Consul (Moritat)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d770-1c5b-320d-4c12" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -68039,7 +68439,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b26b-7c40-6fd5-3cb6" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="3c7d-0bfb-4659-8923" name="Power Armour" hidden="false" collective="false" import="true" targetId="2d9d-480e-7c14-1a6f" type="selectionEntry">
+        <entryLink id="3c7d-0bfb-4659-8923" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3501-201a-7425-4932" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39ec-7c1a-0b6b-7bfe" type="min"/>
@@ -74275,7 +74675,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
 <profiles>
 <profile id="2ff7-c8b7-1279-00e3" name="Dark Channelling" publicationId="0b44-e890-1d51-5b89" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
 <characteristics>
-<characteristic name="Description" typeId="347e-ee4a-764f-6be3">All models in a unit with this upgrade gain the Corrupted sub-type.</characteristic>
+<characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any unit with the Traitor Allegiance, and the Infantry, Dreadnought, or Cavalry Unit Type as well as the Legiones Astartes (Word Bearers) special rule may be upgraded with Dark Channelling for +25 points per unit. All models in a unit with this upgrade gain the Corrupted Unit Sub-type.</characteristic>
 </characteristics>
 </profile>
 </profiles>
@@ -74283,7 +74683,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
 <infoLink id="d56a-2fe9-2062-1e6b" name="Corrupted (sub-type)" hidden="false" targetId="6acf-0bab-d3e1-e765" type="rule"/>
 </infoLinks>
 <costs>
-<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
 </costs>
 </selectionEntry>
 <selectionEntry id="f86c-5949-e594-761c" name="Hellfire veil" publicationId="0b44-e890-1d51-5b89" hidden="false" collective="false" import="true" type="upgrade">
@@ -78349,7 +78749,7 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01b2-d2be-6bd9-bb2f" type="max"/>
 </constraints>
 <costs>
-<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
 </costs>
 </entryLink>
 </entryLinks>
@@ -81175,7 +81575,7 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
 <profiles>
 <profile id="d01e-38a9-ecb3-c8f2" name="Warlord: Sire of the Thousand Sons" publicationId="0b44-e890-1d51-5b89" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
 <characteristics>
-<characteristic name="Text" typeId="c68e-2cda-b67b-baca">All models with the Infantry Unit Type and the Psyker Sub-type in the same army gain Adamantium Will (6+); if a model already has a version of this rule, its value improves by one step (for example from 5+ to 4+). Any model with Legiones Hereticus (Thousand Sons), including the Warlord, that suffers Perils of the Warp reduces the Wounds inflicted by 1, to a minimum of 1. In addition, the army gains an additional Reaction in the opposing player&apos;s Assault phase, unless the Warlord has been removed as a casualty.</characteristic>
+<characteristic name="Text" typeId="c68e-2cda-b67b-baca">All models with the Infantry or Cavalry Unit Type and the Psyker Sub-type in the same army gain Adamantium Will (6+); if a model already has a version of this rule, its value improves by one step (for example from 5+ to 4+). Any model with Legiones Hereticus (Thousand Sons), including the Warlord, that suffers Perils of the Warp reduces the Wounds inflicted by 1, to a minimum of 1. In addition, the army gains an additional Reaction in the opposing player's Assault phase, unless the Warlord has been removed as a casualty.</characteristic>
 </characteristics>
 </profile>
 </profiles>
@@ -81639,6 +82039,241 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="450.0"/>
 </costs>
 </selectionEntry>
+    <selectionEntry id="048e-67cc-d24d-9f46" name="Land Raider Phobos" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4216-ddb5-35e1-b902" name="Land Raider Phobos" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
+          <modifiers>
+            <modifier type="set" field="3614-4a2d-bffb-90e4" value="13*">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="3" field="0c90-79e2-f768-e547">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport, Reinforced)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One on each side of the hull.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f9ff-7861-3f6d-8d5a" name="Power of the Machine Spirit" hidden="false" targetId="5a93-13e0-809d-782a" type="rule"/>
+        <infoLink id="430d-5476-a709-04fd" name="Assault Vehicle" hidden="false" targetId="aa61-11f6-2bb5-7c0e" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="324d-21a8-1970-a28f" name="Reinforced Sub-type" hidden="false" targetId="9b0d-738c-10e4-4ec1" primary="false"/>
+        <categoryLink id="92ef-513d-aa41-d3e5" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink targetId="7b0a-a743-a8da-3a39" id="aea7-228f-3d2f-3c97" name="Transport Sub-type" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8b5b-ccb8-a416-f61c" name="2) Pintle mounted Weapon:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c1d-8406-0319-4a46" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4042-6106-5d71-6d2c" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="e31a-fd70-35c7-8bed" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="1825-054d-4c42-5d3b" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="681a-7426-96af-caac" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="975e-14eb-caed-4b5b" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="6f85-b4cf-d91f-2c1c" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="0def-681b-bf0f-d8c7" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink id="1d64-63f5-5930-d172" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="bde9-5abf-ec3d-2273" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9895-9c1c-e34e-5fa0" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b426-8431-27ea-68a2" name="Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="97d7-ec87-b233-49c5" name="Minor Combi-Weapon - Alchem Flamer" hidden="false" collective="false" import="true" targetId="b941-687c-c95e-31a6" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="f343-94ec-8886-bcad" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="5ed9-1bc3-4d8f-0826" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b8eb-8c60-8694-ef77" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="59c3-2af5-ebe5-d512" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="7294-d842-ab75-76da" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="8dee-b436-0afd-c70a" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="49bb-1dac-298b-aad1" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="dd06-55b3-1c77-1e1d" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="545a-f2d4-73b8-fd7a" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="8720-32c4-0099-63f4" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="dd03-ea74-fa79-bc16" name="Shrapnel Cannon" hidden="false" collective="false" import="true" targetId="975e-14eb-caed-4b5b" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12"/>
+              </costs>
+            </entryLink>
+            <entryLink id="5a63-0537-6985-4c63" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e914-f350-8678-f465" name="3) May take:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="1c2f-0e0a-8c89-9626" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cf6-4145-ad0e-89ba" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b7fc-30ae-6fa0-8c6e" name="Blessed Auto-simulacra" hidden="true" collective="false" import="true" targetId="dc49-518b-0f77-5e3e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="cb6a-b7b8-d78e-6ba8" name="Armatus Necrotechnika" hidden="true" collective="false" import="true" targetId="9221-0ef3-7962-eda0" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5f04-c7e4-717e-098d" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+              </costs>
+            </entryLink>
+            <entryLink id="bcd7-d562-b7aa-90d9" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted hunter-killer missile"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cf4-8144-874d-b584" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="42f0-4534-b26b-1daf" name="1) Hull Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3c84-7fca-1cd9-6bc7">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b80a-d0e2-366a-6532" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3389-8e5c-6a74-d51c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3c84-7fca-1cd9-6bc7" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="d03c-9f7e-84fa-d6e8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin-linked Heavy Bolter"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="d6e3-7e6a-6984-f7c6" name="Twin-linked Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="be24-a2b6-683a-c791" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin-linked Heavy Alchem Flamer"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="501a-3076-ee19-1051" name="Twin-linked Heavy Dragon&apos;s Breath Flamer" hidden="false" collective="false" import="true" targetId="8dbf-d9fa-6fbc-07af" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="5efe-9230-f43e-bb43" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="18ea-34ad-326b-281b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin-linked Heavy Flamer"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="1b33-03d8-ae1a-185d" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="3adf-7150-9ee6-b2de" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin-linked Lascannon"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d8bc-7a37-1a0a-c0aa" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="0873-34dd-e52d-d33c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dad1-f5dd-1015-598f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c39b-c402-b750-b595" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c9ad-3642-acd3-0302" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="2x Sponson Mounted Gravis lascannon"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc7b-b3f3-0f4f-ec6a" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="146a-bdd6-9149-c30a" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="205"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -82447,6 +83082,7 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
                   <conditions>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dbf-0760-d7ae-f125" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="atLeast"/>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
@@ -82550,7 +83186,7 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="131f-91c5-9c96-c84e" name="Frost Claw" hidden="false" collective="false" import="true" targetId="e919-d961-d007-ad34" type="selectionEntry">
@@ -82567,7 +83203,7 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="5dde-5cf3-c174-2374" name="Frost Sword" hidden="false" collective="false" import="true" targetId="ee1c-6b24-699a-ef1e" type="selectionEntry">
@@ -82584,7 +83220,7 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="17b7-27fe-7477-851a" name="Great Frost Blade" hidden="false" collective="false" import="true" targetId="49f0-b021-37b6-fc8a" type="selectionEntry">
@@ -82601,7 +83237,7 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
                 <entryLink id="bc8c-e61-4041-44fa" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
@@ -82726,10 +83362,10 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
           <rules>
             <rule id="0223-2170-627b-c5a2" name="Primus Nullificator" publicationId="d0df-7166-5cd3-89fd" page="9" hidden="false">
               <description>Primus Nullificator Consul +45 Points
-A Legion Cataphractii Centurion may take the Legion Primus Nullificator Consul type.
+A Legion Cataphractii Centurion may take the Legion Primus Nullificator Consul type. A model with this Legiones Consularis upgrade increases his Leadership Characteristic to 10.
 
 Wargear
-A Legion Primus Nullificator Consul must exchange their power weapon for an Aethershock maul* for no additional points cost.
+A Legion Primus Nullificator Consul may exchange their power weapon for an Aethershock maul* for no additional points cost.
 
 • A Legion Primus Nullificator Consul may exchange their combi-bolter for one of the following:
 - Toxiferran flamer +10 points
@@ -83441,6 +84077,7 @@ While making a Chain Fire attack, a model with this special rule may make up to 
           </constraints>
           <infoLinks>
             <infoLink name="Support Squad" id="79bc-8ea0-0b47-f23e" hidden="true" targetId="768e-56d6-ca52-24ae" type="rule"/>
+            <infoLink id="d1e2-ee8b-6734-9a82" name="Field Officer" hidden="false" targetId="846b-dfa0-a574-07f0" type="rule"/>
           </infoLinks>
           <rules>
             <rule name="Master of Auxilia" id="3b38-21a6-9d01-ea05" hidden="false" publicationId="d882-d2a-5da1-92c4" page="177">
@@ -83751,7 +84388,7 @@ Any Solar Auxilia Rifles Sections included through the use of the Overseer’s R
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </entryLink>
         <entryLink id="d5e9-b266-c48c-86aa" name="Chainglaive" hidden="true" collective="false" import="true" targetId="2f96-d817-5180-9453" type="selectionEntry">
@@ -83775,7 +84412,7 @@ Any Solar Auxilia Rifles Sections included through the use of the Overseer’s R
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </entryLink>
         <entryLink id="f17e-3f5c-54ad-bf4e" name="Headsman&apos;s Axe" hidden="true" collective="false" import="true" targetId="4178-09b6-7569-5ca3" type="selectionEntry">
@@ -83867,7 +84504,7 @@ Any Solar Auxilia Rifles Sections included through the use of the Overseer’s R
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </entryLink>
         <entryLink id="1976-b51d-5eeb-ff85" name="Frost Claw" hidden="true" collective="false" import="true" targetId="e919-d961-d007-ad34" type="selectionEntry">
@@ -83891,7 +84528,7 @@ Any Solar Auxilia Rifles Sections included through the use of the Overseer’s R
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </entryLink>
         <entryLink id="2716-a340-b9b4-635a" name="Frost Sword" hidden="true" collective="false" import="true" targetId="ee1c-6b24-699a-ef1e" type="selectionEntry">
@@ -83915,7 +84552,7 @@ Any Solar Auxilia Rifles Sections included through the use of the Overseer’s R
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </entryLink>
         <entryLink id="b89e-4a0d-bedc-dcbb" name="Great Frost Blade" hidden="true" collective="false" import="true" targetId="49f0-b021-37b6-fc8a" type="selectionEntry">
@@ -83939,7 +84576,7 @@ Any Solar Auxilia Rifles Sections included through the use of the Overseer’s R
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
           </costs>
         </entryLink>
         <entryLink id="1834-1384-eb8f-54df" name="Tainted Axe" hidden="true" collective="false" import="true" targetId="293c-a173-d70c-65f6" type="selectionEntry">
@@ -83963,7 +84600,7 @@ Any Solar Auxilia Rifles Sections included through the use of the Overseer’s R
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
           </costs>
         </entryLink>
         <entryLink id="dc03-167d-3c22-b538" name="Tainted Blade" hidden="true" collective="false" import="true" targetId="e4fb-34d5-6565-b8c6" type="selectionEntry">
@@ -83987,7 +84624,7 @@ Any Solar Auxilia Rifles Sections included through the use of the Overseer’s R
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
           </costs>
         </entryLink>
         <entryLink id="1ba9-8108-fcf3-1c9e" name="Tainted Maul" hidden="true" collective="false" import="true" targetId="5b6e-b0b2-35ca-5e67" type="selectionEntry">
@@ -84011,7 +84648,7 @@ Any Solar Auxilia Rifles Sections included through the use of the Overseer’s R
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
           </costs>
         </entryLink>
         <entryLink id="acb1-ada7-de16-1299" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="ef4f-80d4-1bba-77fb" type="selectionEntry"/>
@@ -86090,7 +86727,9 @@ Any Solar Auxilia Rifles Sections included through the use of the Overseer’s R
 • Legion Kratos Squadron
 
 Special Rules
-A model with this upgrade may make the Point Defence Advanced Reaction</characteristic>
+A model with this upgrade may make the Point Defence Advanced Reaction
+
+The Advanced Reactions provided by the Legiones Decurion Defensor allows all models in a unit to participate in the Advanced Reaction, so long as at least one model in the unit has the Legiones Decurion Defensor Upgrade.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -87957,7 +88596,9 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
       <description>All models in a unit under the effect of this Hexagrammaton Unit Sub-type, other than models with the Vehicle Unit Type, add +1 to the distance moved when the unit Runs, and models with the Cavalry Unit Type may also re-roll any failed Shrouded Damage Mitigation rolls. Models with this Unit Sub-type and the Vehicle Unit Type instead add +2 to their Movement Characteristic when moving at Cruising Speed.</description>
     </rule>
     <rule id="655c-988f-74b5-7e17" name="Dragon&apos;s Breath" publicationId="817a-6288-e016-7469" page="312" hidden="false">
-      <description>When attacking using the Wall of Death special rule, a weapon with this special rule Inflicts D6 Hits instead of D3.</description>
+      <description>When attacking using the Wall of Death special rule, a weapon with this special rule Inflicts D6 Hits instead of D3.
+
+All weapons with this Special Rule gain the Breaching (6+) Special Rule.</description>
     </rule>
     <rule id="29d7-fe2c-24ee-07f9" name="The Prosperine Arcana" publicationId="09c5-eeae-f398-b653" page="255" hidden="false">
       <description>All models with the Character and Psyker Unit Sub-types in a Thousand Sons Detachment must select one Minor Arcana upgrade from the following options during army selection, before the beginning of the battle.
@@ -87968,7 +88609,9 @@ If a unit includes more than one model with the Character Unit Sub-type then all
       <comment>validated nsh 2022/06/20</comment>
       <description>The controlling player of any unit that includes one or more models with the Psyker Unit Sub-type and a weapon or ability with this special rule, may choose to activate this special rule before making any attacks with that weapon or resolving the ability. To activate this special rule, the controlling player must make a single Psychic check using the Leadership Characteristic of any model in the unit that does not have the Independent Character special rule (unless the unit is entirely composed of models with the Independent Character special rule, in which case the controlling player can select which of those model’s Leadership Characteristics is used). If the Check is successful, then the Strength value of all attacks made with weapons or abilities with this special rule is increased by +2 (In addition to any Modifiers the attack or weapon may already possess), this benefit is applied only in the Phase in which these attack are made and ends immediately after that phase is resolved. If the check is failed then no benefit is gained, but the models in that unit may attack as normal.
 
-All &apos;Achean Force&apos; weapons are counted as &apos;Force&quot; weapons for those rules that affect such weapons</description>
+All 'Achean Force' weapons are counted as 'Force&quot; weapons for those rules that affect such weapons
+
+A model with the Dreadnought Unit Type and a weapon with the Achean Force Special Rule may activate it despite normally being prevented from doing so because they do not have the Psyker Sub-type.</description>
     </rule>
     <rule id="edb9-295b-5d36-8fd7" name="Apothecarion Detachment (LA)" publicationId="a716-c1c4-7b26-8424" page="116" hidden="false">
       <description>An Apothecarion Detachment is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in an Apothecarion Detachment must be assigned to another unit from the same Detachment of the army they were selected as part of. Legion Apothecaries that have not selected a Legion Spatha combat bike or Legion Scimitar jetbike may only be assigned to units composed entirely of models with the Infantry Unit Type and the same Legiones Astartes (X) special rule as the Legion Apothecary, and may not join units that have Terminator armour of any kind. Legion Apothecaries that have selected a Legion Spatha combat bike may only be assigned to units composed entirely of models with Legion Spatha combat bikes and the same Legiones Astartes (X) special rule as the Legion Apothecary, and any Legion Apothecaries that have selected a Legion Scimitar jetbike may only be assigned to units composed entirely of models with Legion Scimitar jetbikes and the same Legiones Astartes (X) special rule as the Legion Apothecary. No Apothecary may be assigned to any unit that includes one or more models with the Independent Character special rule or Unique Sub-type (but such models may join a unit that includes an Apothecary as normal during either deployment or any following turn). No more than one Apothecary may be assigned to any given unit.
@@ -87976,7 +88619,7 @@ All &apos;Achean Force&apos; weapons are counted as &apos;Force&quot; weapons fo
 Once assigned to a unit, the Legion Apothecary is considered part of that unit and may not leave it under any circumstances – if that unit is removed as a casualty when the Legion Apothecary is removed as well. In battles using Victory points, no Victory points are ever scored for removing an Legion Apothecary as a casualty. When assigned to a unit, a Legion Apothecary gains all of the special rules (with the exception of those that specifically forbid it, such as the Bitter Duty special rule) and Unit Sub-types listed for the unit to which it is attached, but does not gain access to any additional Wargear options available to the unit to which it is assigned.</description>
     </rule>
     <rule id="5529-bb7a-9448-b1f5" name="Hexagrammatic Wards" publicationId="d0df-7166-5cd3-89fd" page="12" hidden="false">
-      <description>Any roll To Wound for an attack made with a Psychic Weapon against a model with this special rule suffers a penalty of -1.</description>
+      <description>When a model with this Special Rule suffers a wound from a Psychic Weapon or a Psychic Power, or from any attack made by a model with the Daemon or Corrupted Unit Type or Sub-type, the model may re-roll any failed Invulnerable Saves it makes.</description>
     </rule>
     <rule id="a2ef-63a4-3531-db91" name="Legiones Cybernetica" publicationId="a716-c1c4-7b26-8424" page="115" hidden="false">
       <description>An army that includes a model with this special rule may take a single Castellax Battle-automata Maniple or a single Vorax Battle-automata Maniple as part of the same Force Organisation choice as the model with this special rule. Any models in the Castellax Battle-automata Maniple or Vorax Battle-automata Maniple included in an army due to this special rule gain the same Legiones Astartes (X) special as the Legion Praevian they share a Force Organization choice with, but may not select any Legion specific Wargear or other options.</description>
@@ -88003,7 +88646,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
       <description>Any models with the Infantry or Cavalry Unit Type in the same unit as a model with this special rule may re-roll any failed It Will Not Die rolls made. This effect immediately ends if the model with the Sacred Trust special rule is removed as a casualty or otherwise leaves the unit.</description>
     </rule>
     <rule id="1864-f270-d462-ecb5" name="Ravening Madmen" hidden="false">
-      <description>Any model making a To Wound roll in the Assault phase against a unit composed entirely of models with this special rule reduces its Strength by -1 when determining the score required To Wound (this does not affect the attacking unit&apos;s Strength for the purposes of inflicting Instant Death). Additionally, any To Hit rolls made in the Assault phase targeting a unit that includes one or more models with this special rule, always count the majority Weapon Skill of the target unit as 3, regardless of the actual Weapon Skill of the models in that unit.
+      <description>Any model making a To Wound roll in the Assault phase against a unit composed entirely of models with this special rule reduces its Strength by -1 when determining the score required To Wound (this does affect the attacking unit's Strength for the purposes of inflicting Instant Death). Additionally, any To Hit rolls made in the Assault phase targeting a unit that includes one or more models with this special rule, always count the majority Weapon Skill of the target unit as 3, regardless of the actual Weapon Skill of the models in that unit.
 
 A unit that includes models with this special rule may only be joined by models with this special rule, or the Primarch Angron, and models with this special rule may not join a unit that includes any models without this special rule.</description>
     </rule>
@@ -88230,13 +88873,13 @@ When included in a Shattered Legions Detachment, this model must represent the L
 <description>A model with this rule has Battlesmith (4+). Instead of using Battlesmith in a turn, it may curse one enemy Vehicle or Dreadnought within 18&quot;: roll a D6, and on a 4+ a Dreadnought suffers one wound, or a Vehicle suffers one glancing hit. No model can be repaired or cursed by more than one model with this rule in the same turn.</description>
 </rule>
 <rule id="9e8a-ae60-c656-aa97" name="The Power of the Word" publicationId="0b44-e890-1d51-5b89" hidden="false">
-<description>Any Legion Command Squad, Cataphractii Command Squad or Tartaros Command Squad selected as a Retinue Squad with the model as its leader gains Fearless and Feel No Pain (4+). In addition, once per battle, one friendly unit composed entirely of Infantry or Cavalry with at least one model within 18&quot; of the model (but not a unit that includes it) may be selected at the start of any Game Turn; it gains Fearless and Feel No Pain (4+) for that Game Turn.</description>
+<description>Any unit with the Retinue Special Rule selected as a Retinue Squad with the model as its leader gains Fearless and Feel No Pain (4+). In addition, once per battle, one friendly unit composed entirely of Infantry or Cavalry with at least one model within 18&quot; of the model (but not a unit that includes it) may be selected at the start of any Game Turn; it gains Fearless and Feel No Pain (4+) for that Game Turn.</description>
 </rule>
 <rule id="93d6-1709-1467-e9a8" name="Preternatural Resilience" publicationId="0b44-e890-1d51-5b89" hidden="false">
 <description>Any hits allocated to the model with Poisoned (X), Rending (X) or Fleshbane only affect it on a D6 roll of 6, instead of their usual effect. While the model has joined a unit, this special rule has no effect.</description>
 </rule>
 <rule id="382e-57df-49c9-1614" name="Red Sands" publicationId="0b44-e890-1d51-5b89" hidden="false">
-<description>In any turn the model may make as many Challenges as there are enemy Characters or Primarchs locked in combat with it, up to its current Attacks. It fights them in an order of its controlling player&apos;s choosing, but any enemy Primarch must be fought first, and it must divide its Attacks between them, devoting at least one to each Challenge.</description>
+<description>In any turn the model may make as many Challenges as there are enemy models with the Chosen Warrior Special Rule, Characters or Primarchs locked in combat with it, up to its current Attacks. It fights them in an order of its controlling player's choosing, but any enemy Primarch must be fought first, and it must divide its Attacks between them, devoting at least one to each Challenge.</description>
 </rule>
 <rule id="6c32-ded7-ef22-2a03" name="Reservoir of Daemonic Energy" publicationId="0b44-e890-1d51-5b89" hidden="false">
 <description>A friendly Master of Possession within 6&quot; of one or more models with this rule adds 1 to its Leadership when taking Psychic checks.</description>
@@ -88257,7 +88900,8 @@ When included in a Shattered Legions Detachment, this model must represent the L
 <description>So long as the model is not embarked, in Reserves, locked in combat or part of a unit with the Retinue or Deathshroud Retinue special rules, in its Shooting phase, instead of making a Shooting Attack, it may be removed and redeployed anywhere within 10&quot; of its original position, not within 3&quot; of an enemy model or in Impassable Terrain, a Vehicle or a Building. This counts as an alternative form of movement and ignores intervening terrain. It may Charge normally that turn, but counts as making a Disordered Charge.</description>
 </rule>
 <rule id="eee8-e11b-15e1-792a" name="Teleport Strike" publicationId="0b44-e890-1d51-5b89" hidden="false">
-<description>The unit has the Deep Strike special rule.</description>
+<description>All models with the Legiones Astartes (Imperial Fists), (Sons of Horus) or (Night Lords) Special Rule in a unit equipped with any form of Terminator Armour may be given the Deep Strike Special Rule for +25 points per unit.
+Any model with the Legiones Astartes (Imperial Fists), (Sons of Horus) or (Night Lords) Special Rule and the Independent Character Special Rule may be given the Deep Strike Special Rule for +20 points per model.</description>
 </rule>
 <rule id="6e11-32d3-35e2-862f" name="Writhing Tentacles" publicationId="0b44-e890-1d51-5b89" hidden="false">
 <description>When a unit with this rule is selected to fight, roll a D3. The result is the Attacks characteristic of each model in the unit for that fight.</description>
