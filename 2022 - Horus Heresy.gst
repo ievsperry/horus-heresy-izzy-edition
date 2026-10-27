@@ -1031,7 +1031,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
           <description>• Models with the Assassin Sub-type ignore all movement penalties when moving or Charging through terrain of any kind and automatically pass all Dangerous Terrain tests they are called upon to make.
 • Models with the Independent Character special rule may not join a unit composed only of models with the Assassin Sub-type.
 • Models with the Assassin Sub-type may not Embark on any model with the Transport Sub-type.
-• Models with the Assassin Sub-type may never be selected as an army&apos;s Warlord</description>
+• Models with the Assassin Sub-type may never be selected as an army's Warlord
+
+• Models with the Assassin Sub-type gain the Precision Shots (2+), Precision Strikes (2+), and Predator's Gaze Special Rules.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -1249,7 +1251,8 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
     <categoryEntry id="cdaa-645b-fda7-8556" name="Third-line Unit Sub-type" publicationId="48c2-d023-0069-001a" page="5" hidden="false">
       <rules>
         <rule id="7754-b90f-cde4-f3e3" name="Third-line Unit Sub-type" publicationId="48c2-d023-0069-001a" page="5" hidden="false">
-          <description>• When an Armour Penetration roll would inflict a Glancing Hit on a model with this Unit Sub-type, it instead inflicts a Penetrating Hit.
+          <description>The following rules apply to all models with the Third-Line Sub-type:
+• When an Armour Penetration roll would inflict a Glancing Hit on a model with this Unit Sub-type, it instead inflicts a Penetrating Hit.
 • An enemy player may never score Victory points for the destruction of a model with this Unit Sub-type, this includes models with this Unit Sub-type that are selected as Lords of War.</description>
         </rule>
       </rules>
@@ -1460,7 +1463,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
       <rules>
         <rule id="e2d9-fe0d-1717-3a37" name="Anathema Sub-type" publicationId="15a4-fc68-502d-48a9" page="129" hidden="false">
           <description>• A unit that includes at least one model with the Anathema Sub-type may not be directly targeted by any Psychic Power or use any Psychic power or make attacks with a Psychic Weapon, Psychic Powers whose effects would otherwise be applied to a unit that includes at least one model with the Anathema Sub-type (due to area of effect, scattering or other rules) have no effect, but are not cancelled and may continue to affect other units.
-• A model with the Anathema Sub-type that is allocated Wounds caused by a Psychic Weapon (which is any weapon granted to a unit or model by a Psychic Discipline) will always fail to Wound without any dice being rolled and any special rules attached to that Psychic Weapon will not trigger. Any Wounds allocated to a model with the Anathema Unit Sub-type caused by a Force Weapon gain no benefit from the Force special rules, but are otherwise resolved as normal. These effects do not apply to a model with the Transport Sub-type that has models with the Anathema Sub-type Embarked within, unless the model with the Transport Sub-type also has the Anathema Sub-type.
+• A model with the Anathema Sub-type that is allocated Wounds caused by a Psychic Weapon (which is any weapon granted to a unit or model by a Psychic Discipline) will always fail to Wound without any dice being rolled and any special rules attached to that Psychic Weapon will not trigger. Any Wounds allocated to a model with the Anathema Unit Sub-type caused by a Force Weapon gain no benefit from the Force, Achean Force, or Soul Tear Special Rules, but are otherwise resolved as normal. These effects do not apply to a model with the Transport Sub-type that has models with the Anathema Sub-type Embarked within, unless the model with the Transport Sub-type also has the Anathema Sub-type.
 • All models that no not have the Anathema Sub-type but are part of a unit that includes one of more models with the Anathema Sub-type, suffer a penalty of -2 to their Leadership Characteristic. Any unit with at least one model within 6&quot; of a model with the Anathema Sub-type suffers a penalty of -1 to the Leadership of all models in the unit that do not also have the Anathema Sub-type, or -2 if that unit includes one of more models with the Corrupted Unit Sub-type. Note that these two penalties are not cumulative; they apply only the more severe penalty. However, they do stack with other special that modify Leadership (such as Fear (X)).
 • A unit that is Embarked on a Vehicle, Fortification or Building suffers no penalties to its Leadership Characteristic due to the Anathema Sub-type, However, units with the Stubborn special rule do suffer penalties to their Leadership from the effects of this Sub-type (note that this only applies to the Stubborn special rule, and other special rules that ignore penalties to Leadership ignore the effects of the Anathema Sub-type).
 
@@ -15898,7 +15901,7 @@ Until Fulgrim Transfigured is placed on the battlefield in this manner, all mode
           </constraints>
           <rules>
             <rule id="e36c-1974-5c74-ccc6" name="Legacy of the Great Crusade" publicationId="48c2-d023-0069-001a" page="9" hidden="false">
-              <description>All Imperialis Militia Grenadier Squad, Imperialis Militia Command Cadres, and Discipline Masters in a Detachment with this Provenance increase their Ballistic Skill by +1 (to a maximum of 4). A Force Commander in a Detachment with this Provenance increases its Initiative to 5.</description>
+              <description>All Imperialis Militia Grenadier Squad, Imperialis Militia Command Cadres, and units that contain a Discipline Master or Mounted Discipline Master in a Detachment with this Provenance increase their Ballistic Skill by +1 (to a maximum of 4). A Force Commander in a Detachment with this Provenance increases its Initiative to 5.</description>
             </rule>
           </rules>
           <costs>
@@ -15912,7 +15915,7 @@ Until Fulgrim Transfigured is placed on the battlefield in this manner, all mode
           </constraints>
           <rules>
             <rule id="8d20-f35d-f6d9-1186" name="Clanfolk Levy" publicationId="48c2-d023-0069-001a" page="9" hidden="false">
-              <description>A Detachment with this Provenance may choose to fill Compulsory Troops choices only with Imperialis Militia Cavalry Squads, with all models in Imperialis Militia Cavalry Squads selected as Compulsory Troops choices gaining a bonus of +1 to their Leadership Characteristic (this does not allow Imperialis Militia Cavalry Squads to be selected as non-Compulsory Troops choices). In addition, a Detachment with this Provenance may include four additional Fast Attack choices – but these additional choices may only be used to select Imperialis Militia Cavalry Squads.</description>
+              <description>A Detachment with this Provenance may choose to fill Compulsory Troops choices only with Imperialis Militia Cavalry Squads. Units selected in this manner gain the Line Sub-type. In addition, all models in Imperialis Militia Cavalry Squads gain a bonus of +1 to their Leadership Characteristic. In addition, a Detachment with this Provenance may include four additional Fast Attack choices – but these additional choices may only be used to select Imperialis Militia Cavalry Squads.</description>
             </rule>
           </rules>
           <costs>
@@ -16002,7 +16005,9 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Cyber-augment o
           </constraints>
           <rules>
             <rule id="2b3e-1985-202a-b31f" name="Cyber-augmetics" publicationId="48c2-d023-0069-001a" page="10" hidden="false">
-              <description>All eligible units and models gain the Feel No Pain (6+) and Slow and Purposeful special rules. This Provenance may not be chosen in conjunction with the Gene-crafted Provenance and any Detachment with this Provenance is treated as Sworn Brothers by any Detachment with the Mechanicum Faction in the same army.</description>
+              <description>All eligible units and models gain the Feel No Pain (6+) Special Rule, and any eligible unit may be given the Slow and Purposeful Special Rule at no additional points cost. In addition, any unit which includes a Militia Medicae improves the Feel No Pain (6+) Special Rule provided by their Auto-Medicus to a (5+).
+
+This Provenance may not be chosen in conjunction with the Gene-crafted Provenance and any Detachment with this Provenance is treated as Sworn Brothers by any Detachment with the Mechanicum Faction in the same army.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -16125,7 +16130,7 @@ Option – Chainaxes: Any model eligible to benefit from this Provenance may upg
           </constraints>
           <rules>
             <rule id="ddaa-0389-1b2e-89ae" name="Kinfolk Helots" publicationId="48c2-d023-0069-001a" page="11" hidden="false">
-              <description>All eligible units and models receive an increase of +1 to their Toughness Characteristic but also lower their Initiative and Movement Characteristics by -1 (to a minimum of 1, models with a Movement of 0 or - are not affected and remain Movement 0 or -). All eligible models in a Detachment with this Provenance and the Character Unit Sub-type gain the Battlesmith (6+) special rule, or if they also have the Independent Character special rule gain the Battlesmith (5+) special rule instead. This Provenance may not be chosen in conjunction with the Ogryn Conscripts Provenance.</description>
+              <description>All eligible units and models change their Toughness Characteristic to be one higher than its starting value (a Toughness characteristic of 3 being changed to 4 on their statline, for example), but also change their Initiative and Movement Characteristics to be one lower than its starting value (in the same way as above). All eligible models in a Detachment with this Provenance and the Character Unit Sub-type gain the Battlesmith (6+) special rule, or if they also have the Independent Character special rule gain the Battlesmith (5+) special rule instead. This Provenance may not be chosen in conjunction with the Ogryn Conscripts Provenance.</description>
             </rule>
           </rules>
           <costs>
@@ -16146,7 +16151,7 @@ Option – Chainaxes: Any model eligible to benefit from this Provenance may upg
           </constraints>
           <rules>
             <rule id="b726-7fd3-991b-4752" name="Abhuman Muster" publicationId="48c2-d023-0069-001a" page="11" hidden="false">
-              <description>All eligible units and models receive an increase of +1 to their Strength Characteristic but also lower their Ballistic Skill by -1 (to a minimum of 1) and, if they do not already possess any variant of the Bulky (X) special rule, gain the Bulky (2) special rule. All eligible models in a Detachment with this Provenance and the Character Unit Sub-type gain the Hammer of Wrath (1) special rule, or if they also have the Independent Character special rule or the Monstrous Unit Sub-type gain the Hammer of Wrath (2) special rule instead. This Provenance may not be chosen in conjunction with the Ogryn Conscripts Provenance.</description>
+              <description>All eligible units and models change their Strength and Movement Characteristic to be one higher than its starting value (a Strength characteristic of 3 being changed to 4 on their statline, for example), but also change their Ballistic Skill Characteristic to be one lower than its starting value (in the same way as above) and, if they do not already possess any variant of the Bulky (X) Special Rule, gain the Bulky (2) Special Rule. All eligible models in a Detachment with this Provenance gain the Hammer of Wrath (1) Special Rule. If a model also has the Character Unit Sub-type or the Monstrous Unit Sub-type, they gain the Hammer of Wrath (2) Special Rule instead, or +1 to an existing Hammer of Wrath (X) Special Rule if they already have the Hammer of Wrath (2) Special Rule. This Provenance may not be chosen in conjunction with the Ogryn Conscripts Provenance.</description>
             </rule>
           </rules>
           <costs>
@@ -16366,13 +16371,15 @@ A unit with this special rule that has been joined by a model after or during de
               <description>All eligible models in a Detachment with this Provenance may upgrade lasguns to lasrifles for no additional cost.
 
 
-• Option – Blessed Arms: Eligible models in Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres may upgrade lasguns to laslocks and may upgrade sniper rifles to arc rifles at a cost of +45 points per unit, regardless of the number of models or types of weapons upgraded in a given unit.
+• Option – Blessed Arms: Eligible models in Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres may upgrade Lasguns to Las-locks at no additional points cost, and may upgrade Sniper Rifles to Arc Rifles at a cost of +25 points per unit, regardless of the number of models or types of weapons upgraded in a given unit.
 
 
 • Option – Sanctified Weapons: A Force Commander in a Detachment with this Provenance may exchange a close combat weapon for a corposant stave for +5 points and/or a laspistol for a radium pistol for +5 points. A Force Commander may take a servo-arm for +10 points.
 
 
-This Provenance cannot be taken in conjunction with the Armoury of Old Night Provenance.</description>
+This Provenance cannot be taken in conjunction with the Armoury of Old Night Provenance.
+
+Any Detachment with this Provenance is treated as Sworn Brothers by any Detachment with the Mechanicum Faction in the same army.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -16403,7 +16410,9 @@ This Provenance cannot be taken in conjunction with the Armoury of Old Night Pro
               <description>All Imperialis Militia Levy Squads in a Detachment with this Provenance receive +1 to their Leadership Characteristic and gain the Stubborn and The Rite of Pure Thought special rules (see page 108 of Liber Mechanicum). However, the Detachment’s Compulsory Troops choices must be filled by Imperialis Militia Levy Squads, and it may not have more Infantry units, excepting HQ choices, of other types than it has Imperialis Militia Levy Squads in total. For example, if it has three Imperialis Militia Levy Squads, it can have a maximum of three additional Infantry squads of other kinds. Imperialis Militia Levy Squads in an army with this Provenance may  not be joined by a Discipline Master.
 
 
-This Provenance cannot be taken in conjunction with the Abhuman Muster, Tainted Flesh, Gene-crafted, Unending Hordes, Feral Warriors or Ogryn Conscripts Provenances.</description>
+This Provenance cannot be taken in conjunction with the Abhuman Muster, Tainted Flesh, Gene-crafted, Unending Hordes, Feral Warriors or Ogryn Conscripts Provenances.
+
+Any Detachment with this Provenance is treated as Sworn Brothers by any Detachment with the Mechanicum Faction in the same army.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -19185,7 +19194,7 @@ All units selected in this manner count as part of the same Troops choice for th
 
 Once deployed onto the battlefield, all units selected in this manner are treated as separate and distinct units or choices for any Primary or Secondary Objectives or other special rules and operate as separate units in all ways. Units selected as part of the same Troops choice may have different options selected for them, and are not required to be identical.
 
-When assigning additional models to units using the Among the Ranks and Militia Medicae Support special rules, each unit selected using the Strength in Numbers special rule is considered separate and may have models assigned to it as per the normal rules as the controlling player chooses.</description>
+When assigning additional models to units using any Special Rules, each unit selected using the Strength in Numbers special rule is considered separate and may have models assigned to it as per the normal rules as the controlling player chooses.</description>
     </rule>
     <rule id="4a92-bb9b-613a-accb" name="Entangle (X)" publicationId="15a4-fc68-502d-48a9" page="132" hidden="false">
       <description>An attack that has this special rule does not roll to Wound using the normal rules, instead roll To Wound by comparing the Attack’s Strength to the target’s Strength Characteristic, using the Strength Characteristic in place of Toughness on the To Wound table. If any Attacks with this special rule inflict Wounds, do not make Armour Saves or Damage Mitigation rolls for those Wounds – instead for each Wound inflicted by an Attack with this special rule, reduce the Movement Characteristic of all models in the target unit by the number in brackets that is included as part of this special rule (to a minimum of 1) until the end of the controlling player’s next turn. The Wounds caused by Attacks with this special rule are then discarded and neither reduce the target model’s Wounds Characteristic nor cause any models to be removed as casualties (this does not affect Wounds inflicted by Attacks without this special rule that are part of the same Shooting Attack).

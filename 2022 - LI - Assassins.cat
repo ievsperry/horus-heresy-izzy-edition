@@ -30,6 +30,11 @@
         <infoLink id="2226-c89c-e5fc-3d45" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
         <infoLink id="e9b1-bf56-095d-f9ff" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
         <infoLink id="84e7-571f-66d3-0eee" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
+        <infoLink id="1d92-0b40-0349-cfbb" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Preferred Enemy (Characters)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0023-51b9-50b3-c66b" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
@@ -177,7 +182,7 @@
             <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
             <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
             <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
             <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
             <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
             <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
@@ -211,7 +216,9 @@
           <profiles>
             <profile id="be9b-4c97-4d93-8f9d" name="Polymorphine" publicationId="15a4-fc68-502d-48a9" page="FAQ" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
               <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit composed entirely of models with polymorphine may not be targeted for a Shooting Attack, Charge or Reaction of any kind by an enemy unit as long as the unit with polymorphine has not made an attack of any kind during the battle. Once a unit or model with polymorphine has made a Shooting Attack (including during a Reaction) then polymorphine has no further effect.</characteristic>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit composed entirely of models with polymorphine may not be targeted for a Shooting Attack, Charge or Reaction of any kind by an enemy unit as long as the unit with polymorphine has not made an attack of any kind during the battle. Once a unit or model with polymorphine has made a Shooting Attack (including during a Reaction) then polymorphine has no further effect.
+
+In addition, whilst the effects of Polymorphine are active, the model equipped with it does not count as a Scoring or Denial Unit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -296,11 +303,11 @@
           <characteristics>
             <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Assassin, Light, Anathema)</characteristic>
             <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
             <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
             <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
             <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
             <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
             <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
             <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
@@ -451,6 +458,7 @@
             <modifier type="set" field="name" value="Counter-Attack (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="a11b-4fd3-d75e-5e85" name="No Witnesses" hidden="false" targetId="b475-d844-3ca8-94b3" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3e59-53b2-2e89-e5c7" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
@@ -585,7 +593,9 @@
           <profiles>
             <profile id="9320-3e0b-895d-a211" name="Auspectre" publicationId="15a4-fc68-502d-48a9" page="125" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
               <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Enemy models cannot be deployed using the Infiltrate special rule within 18&quot; of a model with an auspectre. In addition, when any enemy unit is deployed to the battlefield from Reserves, a model with an auspectre may make the Interceptor Advanced Reaction (see page 309 of the Horus Heresy: Age of Darkness rulebook) without expending a point of the Reactive player&apos;s Reaction Allotment. This does not allow the unit to make more than one Reaction per Phase, but does allow the controlling player to exceed the normal threee Reaction limit in a given Phase. Instead of usin gthe profile of a weapon the model has, a model with the auspectre may instead make a Leadership test. If the Leadership test is passed, the controlling player may instead make a Shooting Attack with any Defensive weapon available to any model with the Vehicle Unit Type (both friendly or enemy within 12&quot;, that is in range and line of sight of the targeted model. If the Leadership test is failed, the model may not make an Interceptor Advanced Reaction.</characteristic>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Enemy models cannot be deployed using the Infiltrate special rule within 18&quot; of a model with an auspectre. In addition, when any enemy unit is deployed to the battlefield from Reserves, a model with an auspectre may make the Interceptor Advanced Reaction (see page 309 of the Horus Heresy: Age of Darkness rulebook) without expending a point of the Reactive player's Reaction Allotment. This does not allow the unit to make more than one Reaction per Phase, but does allow the controlling player to exceed the normal threee Reaction limit in a given Phase. Instead of usin gthe profile of a weapon the model has, a model with the auspectre may instead make a Leadership test. If the Leadership test is passed, the controlling player may instead make a Shooting Attack with any Defensive weapon available to any model with the Vehicle Unit Type (both friendly or enemy within 12&quot;, that is in range and line of sight of the targeted model. If the Leadership test is failed, the model may not make an Interceptor Advanced Reaction.
+
+Note that weapons selected to fire in this manner must still follow the rules and restrictions placed upon them by their mountings, Unit Types, or Unit Sub-types, such as allowed targets for reactions in the case of Knights and Titans only being allowed to react to other Knights and Titans, Super-heavy Vehicles, Lumbering Flyers or any model with 8 or more Wounds.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -629,7 +639,7 @@
           <profiles>
             <profile id="ee8b-8261-7110-fede" name="Autotomic Servo-limbs" publicationId="15a4-fc68-502d-48a9" page="125" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
               <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per battle, at the start of any turn, the controlling player of the model with the autotomagic servo-limbs may choose to grant the model the Hit &amp; Run special rule unitil the start of their next turn.</characteristic>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per battle, at the start of any turn, the Controlling Player of a model with Autotomic Servo-Limbs may choose to grant that model the Counter-Attack (2) Special Rule until the start of their next turn.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -686,6 +696,11 @@
         <infoLink id="a53d-cd94-834c-1e22" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
         <infoLink id="be2a-a441-9b99-7967" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
         <infoLink id="7283-74ac-17f6-31af" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
+        <infoLink id="c714-fd82-d165-34d1" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Fleet (2)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f41a-599a-1e9e-1289" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
@@ -790,7 +805,7 @@
             <characteristic name="BS" typeId="74ae-c840-0036-d244">8</characteristic>
             <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
             <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
             <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
             <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
             <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
@@ -902,7 +917,9 @@
       <profiles>
         <profile id="c516-0961-ebaf-22c5" name="Panoply Of The Assassin" publicationId="15a4-fc68-502d-48a9" page="156" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models with the Panoply of the Assassin have a 4+ Armour Save and a 4+ Invulnerable Save.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models with the Panoply of the Assassin have a 4+ Armour Save and a 4+ Invulnerable Save.
+
+A model equipped with the Panoply of the Assassin also gains Frag Grenades, and the Hit &amp; Run and Shrouded (5+) Special Rules.</characteristic>
           </characteristics>
         </profile>
       </profiles>

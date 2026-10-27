@@ -800,4 +800,168 @@ for g in ("Earthshaker Artillery Platforms", "Medusa Artillery Platforms"):
 o.chars_all(SA, "Artillery Platform", WS="-", BS="4", S="7", T="7", W="4", I="-", A="-", Ld="5", Sv="3+")
 o.chars_all(SA, "Auxilia Gunner", Sv="4+")
 
+# ======================================================================= Legacies: Assassins and Liber Imperium wargear
+ASN = "LI - Assassins"
+o.char(ASN, "Clade Vindicare Assassin", "P:Clade Vindicare Assassin", W="3")
+o.char(ASN, "Clade Culexus Assassin", "P:Clade Culexus Assassin", WS="5", W="3")
+o.char(ASN, "Clade Callidus Assassin", "P:Clade Callidus Assassin", W="3")
+o.text(ASN, "P:Polymorphine", fn=append("In addition, whilst the effects of Polymorphine are active, the model equipped with it "
+                                        "does not count as a Scoring or Denial Unit."))
+o.rule(ASN, "Clade Eversor Assassin", add="No Witnesses")
+o.rule(ASN, "Clade Adamus Assassin", add="Preferred Enemy (Characters)")
+o.rule(ASN, "Clade Venenum Assassin", add="Fleet (2)")
+o.add_link(ASN, "Clade Vanus Infocyte Assassin", to="Panoply Of The Assassin")
+o.text(ASN, "P:Autotomic Servo-limbs", fn=whole(
+    "Once per battle, at the start of any turn, the Controlling Player of a model with Autotomic Servo-Limbs may choose to "
+    "grant that model the Counter-Attack (2) Special Rule until the start of their next turn."))
+o.text(ASN, "P:Auspectre", fn=append(
+    "Note that weapons selected to fire in this manner must still follow the rules and restrictions placed upon them by "
+    "their mountings, Unit Types, or Unit Sub-types, such as allowed targets for reactions in the case of Knights and "
+    "Titans only being allowed to react to other Knights and Titans, Super-heavy Vehicles, Lumbering Flyers or any model "
+    "with 8 or more Wounds."))
+o.text(ASN, "P:Panoply Of The Assassin", fn=append(
+    "A model equipped with the Panoply of the Assassin also gains Frag Grenades, and the Hit & Run and Shrouded (5+) "
+    "Special Rules."))
+o.text("gst", "R:Assassin Sub-type", fn=append(
+    "• Models with the Assassin Sub-type gain the Precision Shots (2+), Precision Strikes (2+), and Predator's Gaze "
+    "Special Rules."))
+o.text("gst", "R:Anathema Sub-type", fn=sub(
+    "caused by a Force Weapon gain no benefit from the Force special rules,",
+    "caused by a Force Weapon gain no benefit from the Force, Achean Force, or Soul Tear Special Rules,"))
+o.text(SA, "R:Demolition Vehicle", fn=sub(
+    "When a model with this special rule is called upon to make attacks during an Assault, instead of rolling To Hit as "
+    "normal it instead", "At Initiative step 10, instead of rolling To Hit as normal, a model with this Special Rule instead"))
+o.text(CUS, "P:Praesidium Shield", fn=sub(
+    "A Praesidium shield confers a 5+ Invulnerable Save – this does not stack with existing Invulnerable Saves and if a "
+    "model has more than one such save, the controlling player must select one to use against any Wounds inflicted on "
+    "that model.", "A model with a Praesidium Shield adds +1 to its Invulnerable Save (to a maximum of 3+) or an "
+    "Invulnerable Save of 6+ if they do not already possess one."))
+o.text(SA, "E:Command Vox", "P:Command Vox", fn=append(
+    "While at least one model with a Command Vox is present on the battlefield and not Embarked in a Vehicle or Building, "
+    "the Controlling Player may re-roll any Scatter rolls made (whether as part of a weapon attack or the deployment of a "
+    "model or unit), as long as the model with the Command Vox has line of sight to the unit targeted by the attack or the "
+    "point chosen as the target of the deployment."))
+o.rule(CUS, "E:Gyrfalcon Jetbike", add="Skilled Rider")
+o.text(SOS, "P:Erinyes Jetbike", fn=append(
+    "In addition, any model equipped with an Erinyes Jetbike sets its Movement Characteristic to 18\", and gains the "
+    "Skilled Rider and Battle-Hardened (1) Special Rules."))
+o.rule(SOS, "E:Erinyes Jetbike", add=("Skilled Rider", "Battle-Hardened (1)"))
+
+# ======================================================================= Legacies: Imperialis Militia (and Constanix II)
+IM = "Imperialis Militia"
+o.text("gst", "R:Third-line Unit Sub-type", fn=lambda t: t if t.startswith("The following rules apply") else
+       "The following rules apply to all models with the Third-Line Sub-type:\n" + t)
+o.text(IM, "P:Merchant Princeling", char="Text", fn=append(
+    "If the Warlord has a Retinue unit of any kind, this unit is instead automatically designated as the Warlord's "
+    "Lifeguard unit. A Warlord with this Trait also gains the Heavy Unit Sub-Type."))
+o.text("gst", "R:Legacy of the Great Crusade", fn=sub(
+    "Imperialis Militia Command Cadres, and Discipline Masters in a Detachment",
+    "Imperialis Militia Command Cadres, and units that contain a Discipline Master or Mounted Discipline Master in a Detachment"))
+o.text("gst", "R:Clanfolk Levy", fn=whole(
+    "A Detachment with this Provenance may choose to fill Compulsory Troops choices only with Imperialis Militia Cavalry "
+    "Squads. Units selected in this manner gain the Line Sub-type. In addition, all models in Imperialis Militia Cavalry "
+    "Squads gain a bonus of +1 to their Leadership Characteristic. In addition, a Detachment with this Provenance may "
+    "include four additional Fast Attack choices – but these additional choices may only be used to select Imperialis "
+    "Militia Cavalry Squads."))
+o.text("gst", "R:Cyber-Augmetics", fn=whole(
+    "All eligible units and models gain the Feel No Pain (6+) Special Rule, and any eligible unit may be given the Slow "
+    "and Purposeful Special Rule at no additional points cost. In addition, any unit which includes a Militia Medicae "
+    "improves the Feel No Pain (6+) Special Rule provided by their Auto-Medicus to a (5+).\n\n"
+    "This Provenance may not be chosen in conjunction with the Gene-crafted Provenance and any Detachment with this "
+    "Provenance is treated as Sworn Brothers by any Detachment with the Mechanicum Faction in the same army."))
+o.text("gst", "R:Kinfolk Helots", fn=sub(
+    "receive an increase of +1 to their Toughness Characteristic but also lower their Initiative and Movement "
+    "Characteristics by -1 (to a minimum of 1, models with a Movement of 0 or - are not affected and remain Movement 0 or -).",
+    "change their Toughness Characteristic to be one higher than its starting value (a Toughness characteristic of 3 being "
+    "changed to 4 on their statline, for example), but also change their Initiative and Movement Characteristics to be one "
+    "lower than its starting value (in the same way as above)."))
+o.text("gst", "R:Abhuman Muster", fn=whole(
+    "All eligible units and models change their Strength and Movement Characteristic to be one higher than its starting "
+    "value (a Strength characteristic of 3 being changed to 4 on their statline, for example), but also change their "
+    "Ballistic Skill Characteristic to be one lower than its starting value (in the same way as above) and, if they do not "
+    "already possess any variant of the Bulky (X) Special Rule, gain the Bulky (2) Special Rule. All eligible models in a "
+    "Detachment with this Provenance gain the Hammer of Wrath (1) Special Rule. If a model also has the Character Unit "
+    "Sub-type or the Monstrous Unit Sub-type, they gain the Hammer of Wrath (2) Special Rule instead, or +1 to an existing "
+    "Hammer of Wrath (X) Special Rule if they already have the Hammer of Wrath (2) Special Rule. This Provenance may not be "
+    "chosen in conjunction with the Ogryn Conscripts Provenance."))
+o.text(IM, "R:Among the Ranks", fn=sub(
+    "Discipline Masters may only be assigned to units composed entirely of models with the Infantry Unit Type and Militia "
+    "Unit Sub-type, unless upgraded to a Mounted Discipline Master, in which case that model must be assigned to an "
+    "Imperialis Militia Cavalry Squad.",
+    "Discipline Masters may only be assigned to units composed entirely of models with the Infantry Unit Type, and either "
+    "the Militia or Artillery Unit Sub-types, unless upgraded to a Mounted Discipline Master, in which case that model must "
+    "be assigned to a Unit with the Cavalry Unit Type and the Militia Unit Sub-type."))
+o.text("gst", "R:Strength in Numbers", fn=sub("using the Among the Ranks and Militia Medicae Support special rules",
+                                              "using any Special Rules"))
+o.text(IM, "R:Emplaced", fn=append(
+    "If taken as part of a Mortalis Assault Force Organisation Chart, a unit that includes any models with this Special "
+    "Rule may only make the Suppress Reaction."))
+o.text(IM, "P:Militia Standard", fn=append(
+    "A unit that includes at least one model with a Militia Standard gains the Line Sub-type for as long as that model is "
+    "part of the unit."))
+o.text("gst", "R:Arms of the Omnissiah", fn=lambda t: t.replace(
+    "may upgrade lasguns to laslocks and may upgrade sniper rifles to arc rifles at a cost of +45 points per unit",
+    "may upgrade Lasguns to Las-locks at no additional points cost, and may upgrade Sniper Rifles to Arc Rifles at a cost "
+    "of +25 points per unit") + ("" if "Sworn Brothers" in t else "\n\nAny Detachment with this Provenance is treated as "
+    "Sworn Brothers by any Detachment with the Mechanicum Faction in the same army."))
+o.text("gst", "R:Augmented Levy", fn=append(
+    "Any Detachment with this Provenance is treated as Sworn Brothers by any Detachment with the Mechanicum Faction in "
+    "the same army."))
+for e in ("Mounted Force Commander*", "Mounted Discipline Master*"):
+    o.category(IM, "E:" + e, add="Skirmish Sub-type")
+    o.category(IM, "E:" + e, add="Light Sub-type")
+o.cost(IM, "IM - Command Cadre", "2) Militia Bodyguard", v=5)
+o.cost(IM, "IM - Command Cadre", "2) Militia Bodyguard", "1.4) One Militia bodyguard Special Weapon:", "Plasma Gun", v=10)
+o.rename(IM, "IM - Command Cadre", "2) Militia Bodyguard", "1.4) One Militia bodyguard Special Weapon:",
+         to="1.4) For every five models in the unit, one Militia Bodyguard in the squad may exchange their Lasgun for one of the following:")
+o.rename(IM, "IM - Grenadier Squad", "2) Grenadier", "1.4) Two Grenadiers may exchange their Lasgun for:",
+         to="1.4) For every ten models in the unit, up to two Grenadiers in the squad may exchange their Lasgun for one of the following:")
+for m in ("Lascannon", "Autocannon", "Heavy Stubber", "Missile Launcher Frag/Krak", "Mortar", "Multilaser", "Heavy Bolter"):
+    o.cost(IM, "IM - Fire Support Squad", "Militia Fire Team w/ " + m, v=10)
+o.price(IM, "IM - Fire Support Squad", 5)
+o.category(IM, "IM - Fire Support Squad", add="Skirmish Sub-type")
+o.rule(IM, "IM - Fire Support Squad", add="Crew-Served Weapon")
+o.rename(IM, "IM - Fire Support Squad", "Missile Launcher w/Frag & Krak Missiles", to="Missile Launcher (with Frag, Krak, and Flak Missiles)")
+o.price(IM, "IM - Reconnaissance Squad", 15)
+o.category(IM, "IM - Reconnaissance Squad", add="Skirmish Sub-type")
+o.rename(IM, "IM - Reconnaissance Squad", "3) All models in the unit may exchange their shotguns for one of the following",
+         to="3) Any model in the unit may exchange their Shotguns, Lascarbines, or Stubcarbines for one of the following:")
+o.cost(IM, "IM - Field Gun Battery", "Militia Field Gun w/ Heavy Lascannon", "Heavy Lascannon", v=10)
+o.cost(IM, "IM - Field Gun Battery", "Militia Field Gun w/ Kalliope Mortar", "Kalliope Mortar", v=10)
+o.category(IM, "IM - Field Gun Battery", add="Skirmish Sub-type")
+o.add_link(IM, "IM - Arvus Transport", to="Heavy Stubber", shown="Hull (Front) Mounted Heavy Stubber")
+o.add_link(IM, "IM - Arvus Transport", to="Searchlights")
+o.chars_all(IM, "Outrider", W="2")
+o.char(IM, "IM - Cavalry Squad", "P:Outrider Sergeant", W="2", UT="Cavalry (Light, Militia, Skirmish, Character)")
+o.char(IM, "IM - Cavalry Squad", "P:Outrider", UT="Cavalry (Light, Militia, Skirmish)")
+o.category(IM, "IM - Cavalry Squad", add="Skirmish Sub-type")
+o.rename(IM, "IM - Cavalry Squad", "2) One Militia Outrider in the unit may take one of the following:",
+         to="2) For every five models in the unit, one Militia Outrider in the unit may take one of the following:")
+o.cost(IM, "IM - Cavalry Squad", "3) Squad Weapon - All models in the unit may take one of the following:", "Militia Lance", v=2)
+o.price(IM, "IM - Beastmasters", 30 - 3 * 8)
+o.rule(IM, "IM - Beastmasters", "1.1) Handlers", add="Fleet (1)")
+o.category(IM, "IM - Beastmasters", "1.1) Handlers", add="Light Sub-type")
+o.raw(IM, "IM - Beastmasters", what="War Beasts Rage (2)", fn=lambda x: x.replace('value="Rage (1)"', 'value="Rage (2)"'))
+o.cost(IM, "IM - Sentinel Squadron", "Sentinel", v=40)
+o.rename(IM, "IM - Sentinel Squadron", "L:Missile Launcher w/Frag & Krak Missiles", to="Missile Launcher (with Frag, Krak, and Flak Missiles)")
+o.rule(IM, "IM - Thunderbolt Fighter", add="Divisio Aeronautica Air Superiority")
+IMM = (IM, "IM - Malcador Heavy Tank")
+o.rule(*IMM, add="Independent Fire Control")
+o.retarget(*IMM, "1) May exchange its Hull (Front) Mounted battlecannon for one of the following:", "Gravis Lascannon",
+           to="Gravis Heavy Lascannon", shown="Hull (Front) Mounted Twin-linked Gravis Heavy Lascannon")
+o.cost(*IMM, "3) May exchange its Hull (Left) & Hull (Right) Mounted heavy bolters for:", "Lascannon", v=15)
+o.cost(*IMM, "2) May exchange its Hull (Front) Mounted heavy bolter for one of the following:", "Demolisher Cannon", v=35)
+ILR = (IM, "IM - Leman Russ", "1) All models may exchange their Turret Mounted Battlecannon for one of the following:")
+o.rename(*ILR, "Turret Mounted Gravis Autocannons", to="Turret Mounted Exterminator Autocannon")
+o.retarget(*ILR, "Turret Mounted Exterminator Autocannon", "Gravis Autocannon", to="Exterminator Autocannon")
+o.rename(*ILR, "Turret Mounted Gravis Lascannons", to="Turret Mounted Gravis Heavy Lascannon")
+o.retarget(*ILR, "Turret Mounted Gravis Heavy Lascannon", "Gravis Lascannon", to="Gravis Heavy Lascannon")
+o.cost(IM, "IM - Leman Russ", "2) May exchange their Hull (Front) Mounted Heavy Bolter for one of the following:", "Lascannon", v=10)
+for c in ("Earthshaker Gun Carriage", "Medusa Gun Carriage"):
+    o.char(IM, "IM - Heavy Ordnance Battery", "P:" + c, UT="Infantry (Static Artillery*, Heavy)", WS="-", BS="3", S="7", T="7",
+           W="4", I="-", A="-", Ld="5", Sv="3+")
+    o.rule(IM, "IM - Heavy Ordnance Battery", "E:" + c, add=("Immobile", "Bulky (5)"))
+o.rule(IM, "IM - Gorgon Heavy Transporter", add="Assault Vehicle")
+o.char(IM, "IM - Baneblade Super-heavy Battle Tank", "P:Militia Baneblade", HP="12")
+
 o.report()
