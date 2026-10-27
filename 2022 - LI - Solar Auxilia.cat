@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="50" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="51" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -14,8 +14,13 @@
     </categoryEntry>
   </categoryEntries>
   <selectionEntries>
-    <selectionEntry id="b35c-9232-1993-823c" name="Armoured Fist - Leman Russ Strike Squadron" hidden="true" collective="false" import="false" type="upgrade">
+    <selectionEntry id="b35c-9232-1993-823c" name="Armoured Fist - Auxilia Armoured Tercio" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
+        <modifier type="add" field="category" value="6399-5c65-7833-1025">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f42-a824-fb5f-8fea" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="and">
@@ -32,14 +37,18 @@
         <categoryLink id="1a8b-0e69-4574-ebb1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="b5c3-bbcb-1830-c624" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="ba87-d770-24f2-e5f5" name="Leman Russ Strike Squadron" hidden="false" collective="false" import="true" targetId="3fce-bf1a-6369-a386" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8a3b-f135-dbe4-fb3c" name="Auxilia Armoured Tercio unit" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5958-a96a-5930-beba" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b53-2aa5-9eca-fed6" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75f9-0a36-eff7-2708" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69c2-e409-d56a-07d3" type="max"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
+          <entryLinks>
+            <entryLink id="c4a8-b071-e7d9-19cb" name="Leman Russ Strike Squadron" hidden="false" collective="false" import="true" targetId="3fce-bf1a-6369-a386" type="selectionEntry"/>
+            <entryLink id="d436-3f2b-c90f-951e" name="Leman Russ Assault Squadron" hidden="false" collective="false" import="true" targetId="813c-fa93-375d-5f3e" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -8525,7 +8534,7 @@ While at least one model with a Command Vox is present on the battlefield and no
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink id="3388-068b-9209-4592" name="Hull (Front) Mounted Twin-linked Gravis Heavy Lascannon" hidden="false" collective="false" import="true" targetId="4112-5cbe-71fd-ece4" type="selectionEntry">
+                <entryLink id="3388-068b-9209-4592" name="Hull (Front) Mounted Twin-linked Gravis Heavy Lascannon" hidden="false" collective="false" import="true" targetId="11d0-bae3-0c6e-f922" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
@@ -9608,7 +9617,7 @@ While at least one model with a Command Vox is present on the battlefield and no
                 </modifier>
               </modifiers>
               <entryLinks>
-                <entryLink id="d045-b197-7d17-2ab0" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry">
+                <entryLink id="d045-b197-7d17-2ab0" name="Autocannon" hidden="false" collective="false" import="true" targetId="0a9c-0518-1ab2-0fe0" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="Turret Mounted Twin-linked Autocannon"/>
                   </modifiers>
@@ -9616,9 +9625,6 @@ While at least one model with a Command Vox is present on the battlefield and no
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9eb6-2610-e578-a0f1" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0e6-8e6d-fbc9-9f23" type="min"/>
                   </constraints>
-                  <infoLinks>
-                    <infoLink id="a8ee-1db6-8c93-d3c0" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
-                  </infoLinks>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -9650,7 +9656,7 @@ While at least one model with a Command Vox is present on the battlefield and no
             </selectionEntry>
             <selectionEntry id="d822-797e-d15a-435a" name="Turret Mounted Twin-linked Multi-Laser" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="6dd4-29d5-5668-7a3b" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+                <entryLink id="6dd4-29d5-5668-7a3b" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="9782-c3fe-fc11-ffab" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="Turret Mounted Twin-linked Multi-Laser"/>
                   </modifiers>
@@ -9658,9 +9664,6 @@ While at least one model with a Command Vox is present on the battlefield and no
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a01-bd31-4054-ec99" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b24a-bce6-1949-c6e6" type="min"/>
                   </constraints>
-                  <infoLinks>
-                    <infoLink id="3056-bb78-b0b5-1ad7" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
-                  </infoLinks>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -10503,7 +10506,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9df5-4bcd-6f7d-6442" type="min"/>
               </constraints>
             </entryLink>
-            <entryLink id="7455-18e9-ef4c-5e13" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+            <entryLink id="7455-18e9-ef4c-5e13" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="491a-5e35-7ea2-c578" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Hull (Front) Mounted twin-linked heavy stubber"/>
               </modifiers>
@@ -10511,9 +10514,6 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a7d-c42f-7123-01e6" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c0f-6ba1-d111-bcf6" type="min"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="a0a4-47c9-3a03-2851" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
-              </infoLinks>
             </entryLink>
             <entryLink id="513a-52ff-6080-7201" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="0873-34dd-e52d-d33c" type="selectionEntry">
               <constraints>
@@ -12165,14 +12165,17 @@ Limitations
           <rules>
             <rule id="a28b-aeef-6d88-8985" name="Armoured Fist Pattern Cohorts" publicationId="15a4-fc68-502d-48a9" page="71" hidden="false">
               <description>Effects
-• A Detachment using this Cohort Doctrine may select Auxilia Armoured Tercios as non-Compulsory Troops choices. An Auxilia Armoured Tercio selected as a Troops choice may only consist of a single unit, which must be a Solar Auxilia Leman Russ Strike Squadron.
+• A Detachment using this Cohort Doctrine may select Auxilia Armoured Tercios as Troops choices. An Auxilia Armoured Tercio selected as a Troops choice may only consist of a single unit. Auxilia Armoured Tercios selected as Compulsory Troop Choices in a Primary Detachment using this Cohort Doctrine gain the Line Unit Sub-type.
 • In a Primary Detachment using this Cohort Doctrine, a single Solar Auxilia Armoured Command Section composed of only a single Leman Russ Command Tank, must be selected as a HQ choice. This Leman Russ Command Tank gains the Cohort Doctrines special rule and must be selected as the army’s Warlord and must use the Armoured Legate Warlord trait (see below). A model with the Vehicle Unit Type must be selected as the Warlord of an army using this Cohort Doctrine, regardless of any rules which would require a model to be selected as the army’s Warlord (note this means that some units and Characters cannot be selected as part of this army):
+• The first time in a game that any models with the Infantry Unit Type Disembark from their own Dedicated Transport, they gain the Relentless Special Rule until the end of that turn.
 
 Warlord Trait: Armoured Legate
 A Warlord with this Warlord Trait gains the Cohort Doctrines special rule, a 5+ Invulnerable Save and increases its BS by +1.
 
 Limitations
-• All units composed entirely of models with the Infantry Unit Type must begin the battle Embarked on a model with the Transport Unit Sub-type or in Reserves. (THIS MUST BE MANUALLY CHECKED)</description>
+• All units composed entirely of models with the Infantry Unit Type must begin the battle Embarked on a model with the Transport Unit Sub-type or in Reserves, unless the unit has the Mechanised Unit Sub-type. (THIS MUST BE MANUALLY CHECKED)
+• A Detachment using this Cohort Doctrine may not include any models with a Movement Characteristic of 0 or '-'.
+• An army which includes at least one Detachment using this Cohort Doctrine may not select any Fortification choices.</description>
             </rule>
           </rules>
           <costs>

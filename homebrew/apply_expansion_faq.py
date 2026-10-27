@@ -752,6 +752,49 @@ o.text(SA, "R:Solar Auxilia Command Tank", fn=lambda t: t if "Armoured Legate ma
 o.text(SA, "R:Reborn Cohorts", fn=lambda t: re.sub(r"Effects\n• [^\n]*", "Effects\n• All models with the Infantry Unit "
     "Type in a Detachment using this Cohort Doctrine gain a bonus of +1 to their Leadership Characteristic, to a maximum of "
     "Leadership 10, and the Stubborn Special Rule.", t, count=1))
+o.text(SA, "R:Armoured Fist Pattern Cohorts", fn=lambda t: t if "Mechanised Unit Sub-type" in t else re.sub(
+    r"Effects\n• [^\n]*", "Effects\n• A Detachment using this Cohort Doctrine may select Auxilia Armoured Tercios as Troops "
+    "choices. An Auxilia Armoured Tercio selected as a Troops choice may only consist of a single unit. Auxilia Armoured "
+    "Tercios selected as Compulsory Troop Choices in a Primary Detachment using this Cohort Doctrine gain the Line Unit "
+    "Sub-type.", t, count=1).replace(
+    "\n\nWarlord Trait: Armoured Legate", "\n• The first time in a game that any models with the Infantry Unit Type "
+    "Disembark from their own Dedicated Transport, they gain the Relentless Special Rule until the end of that turn.\n\n"
+    "Warlord Trait: Armoured Legate", 1).replace(
+    "or in Reserves. (THIS MUST BE MANUALLY CHECKED)", "or in Reserves, unless the unit has the Mechanised Unit Sub-type. "
+    "(THIS MUST BE MANUALLY CHECKED)\n• A Detachment using this Cohort Doctrine may not include any models with a "
+    "Movement Characteristic of 0 or '-'.\n• An army which includes at least one Detachment using this Cohort Doctrine "
+    "may not select any Fortification choices."))
+
+
+def armoured_fist_troops(x):
+    """The Troops choice is any single unit of an Auxilia Armoured Tercio, with Line when it is Compulsory."""
+    if "Auxilia Armoured Tercio" in x:
+        return x
+    x = x.replace('name="Armoured Fist - Leman Russ Strike Squadron"', 'name="Armoured Fist - Auxilia Armoured Tercio"')
+    m = re.search(r"\n(\s*)<entryLinks>\s*<entryLink [^>]*name=\"Leman Russ Strike Squadron\".*?</entryLinks>", x, re.S)
+    ind = m.group(1)
+    con = lambda kind, gid: (f'<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" '
+                             f'includeChildSelections="false" includeChildForces="false" id="{make_id(gid, kind)}" type="{kind}"/>')
+    gid = make_id("armoured fist tercio unit")
+    links = "".join(f'{ind}      <entryLink id="{make_id(gid, n)}" name="{n}" hidden="false" collective="false" import="true" '
+                    f'targetId="{tid}" type="selectionEntry"/>\n'
+                    for n, tid in (("Leman Russ Strike Squadron", "3fce-bf1a-6369-a386"),
+                                   ("Leman Russ Assault Squadron", "813c-fa93-375d-5f3e")))
+    group = (f"\n{ind}<selectionEntryGroups>\n{ind}  <selectionEntryGroup id=\"{gid}\" name=\"Auxilia Armoured Tercio unit\" "
+             f"hidden=\"false\" collective=\"false\" import=\"true\">\n{ind}    <constraints>\n{ind}      {con('min', gid)}\n"
+             f"{ind}      {con('max', gid)}\n{ind}    </constraints>\n{ind}    <entryLinks>\n{links}{ind}    </entryLinks>\n"
+             f"{ind}  </selectionEntryGroup>\n{ind}</selectionEntryGroups>")
+    x = x[:m.start()] + group + x[m.end():]
+    line = (f'\n{ind}  <modifier type="add" field="category" value="6399-5c65-7833-1025">\n{ind}    <conditions>\n'
+            f'{ind}      <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f42-a824-fb5f-8fea" '
+            f'shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>\n'
+            f'{ind}    </conditions>\n{ind}  </modifier>')
+    return x.replace("<modifiers>", "<modifiers>" + line, 1)
+
+
+o.raw(SA, "E:Armoured Fist - " + ("Auxilia Armoured Tercio" if "Armoured Fist - Auxilia Armoured Tercio" in
+                                  o.F.text[o.F.file(SA)] else "Leman Russ Strike Squadron"),
+      fn=armoured_fist_troops, what="Troops choice: any single unit of an Auxilia Armoured Tercio")
 o.text(SA, "R:Penal Pattern Cohorts", fn=lambda t: t if "Chainsword for +1" in t else t.replace(
     "Lascarbine, Lasgun, Stubcarbine, Autorifle, or Shotgun", "Lascarbine, Lasgun, Stubcarbine, Autorifle, Laspistol and "
     "Close Combat Weapon, or Shotgun").replace("\nLimitations", "\n• Any model in a Detachment using this Cohort Doctrine "

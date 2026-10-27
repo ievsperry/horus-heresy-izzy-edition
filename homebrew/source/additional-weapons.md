@@ -202,6 +202,30 @@ _The weapons of the Horus Heresy are widely varied and strange beyond measure in
 | Exitus Rifle | 100" | 7 | 2 | Heavy 1, Murderous Strike (5+), Rending (6+), Sniper, Brutal (2) |
 | Lidless Stare (Psychic Weapon) | Template | 2 | - | Assault 1, Pinning, Force, Instant Death |
 
+## Twin-linked Weapons
+
+A twin-linked weapon is its weapon with the Twin-linked special rule.
+
+| Weapon | Range | Str | AP | Type |
+|---|---|---|---|---|
+| Twin-linked Adrathic Devastator | 18" | 6 | 3 | Heavy 2, Instant Death, Armourbane (Ranged), Breaching (4+), Gets Hot, Ejector Blowout, Twin-linked |
+| Twin-linked Autocannon | 48" | 7 | 4 | Heavy 2, Rending (6+), Twin-linked |
+| Twin-linked Avenger Bolt Cannon | 36" | 6 | 3 | Heavy 7, Twin-linked |
+| Twin-linked Earthshaker Cannon | 12" - 240" | 9 | 4 | Ordnance 1, Barrage, Large Blast (5"), Shred, Pinning, Breaching (5+), Twin-linked |
+| Twin-linked Gravis Heavy Lascannon | 48" | 10 | 2 | Heavy 2, Sunder, Twin-linked |
+| Twin-linked Graviton Gun | 18" | † | 4 | Heavy 1, Blast (3"), Concussive (1), †Graviton Pulse, Haywire, Twin-linked |
+| Twin-linked Heavy Conversion Beam Cannon - Heavy Conversion Beam Cannon (1) | Up to 18" | 7 | - | Heavy 1, Large Blast (5"), Blind, Twin-linked |
+| Twin-linked Heavy Conversion Beam Cannon - Heavy Conversion Beam Cannon (2) | More than 18"-42" | 9 | 4 | Heavy 1, Large Blast (5"), Blind, Twin-linked |
+| Twin-linked Heavy Conversion Beam Cannon - Heavy Conversion Beam Cannon (3) | More than 42"-72" | 12 | 1 | Heavy 1, Large Blast (5"), Blind, Twin-linked |
+| Twin-linked Heavy Stubber | 36" | 4 | 6 | Heavy 3, Twin-linked |
+| Twin-linked Infernus Firepike | Template | 6 | 4 | Heavy 1, Torrent (9"), Twin-linked |
+| Twin-linked Kheres Assault Cannon | 24" | 6 | 4 | Heavy 6, Rending (6+), Twin-linked |
+| Twin-linked Multi-Laser | 36" | 6 | 6 | Heavy 3, Twin-linked |
+| Twin-linked Multi-Melta | 24" | 8 | 1 | Heavy 1, Armourbane (Melta), Twin-linked |
+| Twin-linked Turbo-Laser Destructor | 96" | 12 | 2 | Destroyer 1, Large Blast (5"), Ignores Cover, Twin-linked |
+| Twin-linked Volcano Cannon | 120" | 14 | 1 | Destroyer 1, Large Blast (5"), Ignores Cover, Twin-linked |
+| Twin-linked Volkite Caliver | 30" | 6 | 5 | Heavy 3, Deflagrate, Twin-linked |
+
 # Melee Weapons
 
 ## Chain Weapons

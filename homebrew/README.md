@@ -248,6 +248,17 @@ loading. The script prints anything in the doc it could not place.
 - A biomorph whose text says "adds 1 to its Strength, to a best of 8" (Improved Strength, Improved
   Toughness, Killer Impulse) is offered only to units whose models are all below that best, at the
   cost scale of the other biomorphs, and shows each model's raised value once taken.
+- A "**Name.** text" rule ends at the next heading, so a table or list under a following "####" heading no
+  longer joins the rule before it.
+- In the official catalogues, Expansion FAQ limits that depend on play or on the Detachment (Armoured Fist Pattern
+  Cohorts: Infantry must start Embarked, no models with Movement 0, no Fortifications, Line only in a Primary
+  Detachment) are rule text only; the Armoured Fist Troops choice itself takes any one Leman Russ Strike or Assault
+  Squadron and gains Line as a Compulsory Troops choice.
+
+## Game system and official catalogue tools
+
+These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run them from the repo root.
+
 - `homebrew/source/additional-special-rules.md` holds special rules any catalogue may use (Afterburner,
   Augmetics (X), Rupture (X) and so on). `python3 homebrew/add_gst_rules.py` adds them to the shared rules
   of `2022 - Horus Heresy.gst`, or updates the ones it added; each "## Name" section is a rule, its italic
@@ -267,6 +278,15 @@ loading. The script prints anything in the doc it could not place.
   data, so running it again changes nothing, and it lists any change it could not place. Its edit operations
   (find an entry by a name path, set a cost or characteristic, add or drop a rule, retarget a weapon option and so
   on) live in `homebrew/faq_tools.py`; they edit the XML text in place, so each file keeps its own formatting, and
-  only link to rules and entries a catalogue can see through its imports.
-- A "**Name.** text" rule ends at the next heading, so a table or list under a following "####" heading no
-  longer joins the rule before it.
+  only link to rules and entries a catalogue can see through its imports. A full run takes a minute or two.
+  It covers Liber Astartes, Liber Hereticus, Liber Mechanicum, Liber Imperium, the Legacies books (Legiones
+  Astartes, Mechanicum, Solar Auxilia, Assassins, Imperialis Militia, Daemons of the Ruinstorm), the campaign books
+  (Martian Civil War, Beta-Garmon, Siege of Cthonia) and the Exemplary Battles. The Blackshields Oaths (Panoply of
+  Old, The Spoils of Victory) are game system rules, so their changes are made there. Clarifications with no data
+  entry (how a rule is played) are left out.
+- `python3 homebrew/add_twin_linked.py` gives every twin-linked weapon its own entry. Wherever a catalogue names a
+  "Twin-linked <weapon>" and the weapons list has <weapon> but not the twin-linked one, it adds a "Twin-linked
+  <weapon>" row to the "Twin-linked Weapons" section of `additional-weapons.md` (the weapon's profile plus the
+  Twin-linked special rule), runs `add_gst_weapons.py` to put it in the game system, and points the options that
+  show the twin-linked weapon (by name, or by carrying a separate Twin-linked rule) at the new entry. Running it
+  again changes nothing.
