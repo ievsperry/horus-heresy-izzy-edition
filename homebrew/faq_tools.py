@@ -285,8 +285,10 @@ class Ops:
     def __init__(self):
         self.F = Files()
         self.failed = []
-        self.cats = {norm(m.group(2)): m.group(1) for m in re.finditer(
-            r'<categoryEntry id="([^"]+)" name="([^"]+)"', self.F.text[GST])}
+        self.cats = {}
+        for p in [GST] + self.F.paths:
+            for m in re.finditer(r'<categoryEntry (?:id="([^"]+)" name="([^"]+)"|name="([^"]+)" id="([^"]+)")', self.F.text[p]):
+                self.cats.setdefault(norm(m.group(2) or m.group(3)), m.group(1) or m.group(4))
 
     def run(self, label, fn):
         try:

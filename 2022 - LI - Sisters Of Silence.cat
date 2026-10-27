@@ -1729,6 +1729,11 @@
     <selectionEntry id="79dd-3c50-1ada-5cfc" name="Silent Fury" publicationId="15a4-fc68-502d-48a9" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="17cc-cdff-f607-79d6" name="Silent Sisterhood (X)" hidden="false" targetId="1d8d-3038-9267-6f1b" type="rule"/>
+        <infoLink id="afe3-3f9c-591a-f0aa" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Firing Protocols (2)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="41d2-f0d2-14d0-fe27" name="Cavalry Unit Type" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
@@ -2321,6 +2326,7 @@
             <categoryLink targetId="bff2-ae16-74a8-8712" id="b416-fea6-4f26-b398" name="Light Sub-type" primary="false"/>
             <categoryLink targetId="59a4-7b61-600a-c457" id="2e60-51f0-4ba3-b06f" name="Skirmish Sub-type" primary="false"/>
             <categoryLink targetId="7e5d-d73e-8ff4-7345" id="a3fe-a911-4218-b75d" name="Anathema Sub-type" primary="false"/>
+            <categoryLink id="4b1f-47ee-fe62-a551" name="Antigrav Sub-type" hidden="false" targetId="4303-1348-cce4-9501" primary="false"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2339,7 +2345,7 @@
         <categoryLink id="5526-deb2-d4aa-dff7" name="Anathema Sub-type" hidden="false" targetId="7e5d-d73e-8ff4-7345" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="63c8-c778-befe-4cb5" name="The entire unit may exchange their Vratine bolters for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="129a-c1a9-4c42-49c2">
+        <selectionEntryGroup id="63c8-c778-befe-4cb5" name="Any model in the unit may exchange their Vratine Bolter for one of the following options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="129a-c1a9-4c42-49c2">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c532-dc0a-182a-b57c" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82cf-0de9-a9c2-814a" type="min"/>
@@ -2520,8 +2526,8 @@
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Light, Line, Anathema)</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
                     <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
                     <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
                     <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
@@ -2579,7 +2585,7 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f98c-acc3-52c0-e438" type="min"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="4392-b160-a459-ffa3" name="Vratine Armour" hidden="false" collective="false" import="true" targetId="91c6-82e2-3c3e-fe76" type="selectionEntry">
+                <entryLink id="4392-b160-a459-ffa3" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a2b7-7a5c-a930-f133" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0dae-83a0-d0f6-fdf2" type="min"/>
@@ -2715,7 +2721,7 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8791-dbb3-014e-be55" type="min"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="b53b-ab7a-7273-3ad4" name="Vratine Armour" hidden="false" collective="false" import="true" targetId="91c6-82e2-3c3e-fe76" type="selectionEntry">
+                <entryLink id="b53b-ab7a-7273-3ad4" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ac6-8b0e-547e-cd1d" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4073-ad39-c541-78c4" type="min"/>
@@ -2872,7 +2878,7 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f2cf-2e79-dc8c-6235" type="min"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="68c0-0595-dd4a-e40c" name="Vratine Armour" hidden="false" collective="false" import="true" targetId="91c6-82e2-3c3e-fe76" type="selectionEntry">
+                <entryLink id="68c0-0595-dd4a-e40c" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bbb2-9355-d197-73c9" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="659c-988c-6c2c-bb25" type="min"/>
@@ -3475,13 +3481,13 @@
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Light, Anathema, Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
                 <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
                 <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
               </characteristics>
             </profile>
@@ -3630,6 +3636,12 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1450-a1a7-6cc4-5cc6" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="aa56-6553-476d-32d7" name="Voidsheen Cloak" hidden="false" collective="false" import="true" targetId="9449-eb87-30c1-43c0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec86-70a8-052a-83c6" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c71-76a9-c981-9fdd" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -3653,13 +3665,13 @@
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Light, Anathema)</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
                     <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
                     <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
                     <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
                     <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
                     <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                     <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
                     <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
                   </characteristics>
                 </profile>
@@ -3689,9 +3701,15 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09b9-6e1e-ce49-8a1f" type="max"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="d943-08f2-88dc-c514" name="Voidsheen Cloak" hidden="false" collective="false" import="true" targetId="9449-eb87-30c1-43c0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a768-4bf6-3ca0-0fb0" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="022d-20df-c508-5edf" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
               <categoryLinks>
                 <categoryLink targetId="bff2-ae16-74a8-8712" id="1a0b-cda2-422b-a4ad" name="Light Sub-type" primary="false"/>
@@ -3786,9 +3804,15 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cf0-ff7e-9106-0aff" type="max"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="5e92-452d-fbb0-6ea0" name="Voidsheen Cloak" hidden="false" collective="false" import="true" targetId="9449-eb87-30c1-43c0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fa8-cfb0-7788-9cf5" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce88-dc39-dc0b-4b01" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
               <infoLinks>
                 <infoLink id="c4f7-365a-e592-0f7e" name="Eradicator" targetId="1a1e-a7fd-7c32-3f56" type="profile"/>
@@ -3815,7 +3839,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a2df-539a-6cc6-92a3" name="Prosecutor Cadre" publicationId="15a4-fc68-502d-48a9" hidden="false" collective="false" import="true" type="unit">
@@ -4178,7 +4202,7 @@
         <categoryLink id="c81b-2a93-d091-3f92" name="Light Sub-type" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
         <categoryLink id="a8ad-9b44-f397-f115" name="Line Sub-type" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
         <categoryLink id="d300-24f4-6452-4ad4" name="Anathema Sub-type" hidden="false" targetId="7e5d-d73e-8ff4-7345" primary="false"/>
-        <categoryLink id="2e13-4669-f5a8-771a" name="Silent Sisterhood (Chamber of Oblivion)" hidden="false" targetId="a7e3-4559-7267-8bf6" primary="false"/>
+        <categoryLink id="8d39-5aa3-4d4f-490f" name="Silent Sisterhood (Chamber of Vigilance)" hidden="false" targetId="b6d7-6924-37fb-dd32" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="cc46-771e-9470-f9e9" name="Vigilator Mistress" hidden="false" collective="false" import="true" type="model">
@@ -4594,7 +4618,7 @@
                 <entryLink id="3f76-eeb7-d812-b12a" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="3d50-2f85-06ff-6aee" type="selectionEntry"/>
                 <entryLink id="d046-533d-3b5e-fdef" name="Execution Blade" hidden="false" collective="false" import="true" targetId="adc6-3519-204d-2921" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -4892,7 +4916,7 @@
                 </infoLink>
                 <infoLink id="a9a8-91ea-7ca1-60ba" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
                   <modifiers>
-                    <modifier type="set" field="name" value="Rage (1)"/>
+                    <modifier type="set" field="name" value="Rage (2)"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
@@ -5029,7 +5053,7 @@
                 </infoLink>
                 <infoLink id="6bf1-885e-f51a-4e36" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
                   <modifiers>
-                    <modifier type="set" field="name" value="Rage (1)"/>
+                    <modifier type="set" field="name" value="Rage (2)"/>
                   </modifiers>
                 </infoLink>
                 <infoLink id="1948-674a-38d9-e6d3" name="Cyber Felidae" targetId="fa66-ffb8-0dad-a440" type="profile"/>
@@ -5120,7 +5144,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b739-d90c-49d7-903c" name="Firebrand Cadre" publicationId="15a4-fc68-502d-48a9" hidden="false" collective="false" import="true" type="unit">
@@ -6227,7 +6251,7 @@
           <entryLinks>
             <entryLink id="90b8-aff7-0f92-1403" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
             <entryLink id="fc01-2529-ac53-3132" name="Snare Cannon" hidden="false" collective="false" import="true" targetId="d267-639b-ec89-95e2" type="selectionEntry"/>
-            <entryLink id="d9ad-fc98-bfca-6a83" name="Adrathic Destructor" hidden="false" collective="false" import="true" targetId="8339-4003-fe88-b536" type="selectionEntry">
+            <entryLink id="d9ad-fc98-bfca-6a83" name="Adrathic Devastator (with Suspensor Web)" hidden="false" collective="false" import="true" targetId="3dd2-ef61-7c2a-0b1e" type="selectionEntry">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20">
                   <repeats>
@@ -6898,7 +6922,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d732-3008-0d8e-c711" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="4249-7465-c325-e974" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
+            <entryLink id="4249-7465-c325-e974" name="Gravis Melta Cannon" hidden="false" collective="false" import="true" targetId="ef6c-f656-171a-03e1" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hull (Front) Mounted multi-melta" field="name"/>
               </modifiers>
@@ -7605,7 +7629,7 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2482-6990-f46b-0ad6" type="min"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="5598-eee6-c207-cca7" name="Vratine Armour" hidden="false" collective="false" import="true" targetId="91c6-82e2-3c3e-fe76" type="selectionEntry">
+                <entryLink id="5598-eee6-c207-cca7" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="310d-0a23-4353-daa2" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f34-6f1a-145b-37b5" type="min"/>
@@ -7645,7 +7669,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink id="0cea-c0aa-5664-a898" name="Vratine Armour" hidden="false" collective="false" import="true" targetId="91c6-82e2-3c3e-fe76" type="selectionEntry">
+                <entryLink id="0cea-c0aa-5664-a898" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="438c-6c3c-2145-8e97" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4aaf-b1a2-38f7-6cae" type="min"/>
@@ -7709,7 +7733,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink id="cb26-2997-e94c-d698" name="Vratine Armour" hidden="false" collective="false" import="true" targetId="91c6-82e2-3c3e-fe76" type="selectionEntry">
+                <entryLink id="cb26-2997-e94c-d698" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b540-a7b7-512d-d072" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67da-0a4f-ffad-64bd" type="min"/>
@@ -7842,7 +7866,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink id="5b45-adfb-af67-bbca" name="Vratine Armour" hidden="false" collective="false" import="true" targetId="91c6-82e2-3c3e-fe76" type="selectionEntry">
+                <entryLink id="5b45-adfb-af67-bbca" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d073-a30c-a29c-cc62" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c914-68b0-e44d-c340" type="min"/>

@@ -656,4 +656,148 @@ o.retarget(MECH, "Ordo Reductor Minotaur Battery", "Ordo Reductor Minotaur", "Tw
 o.rename(MECH, "Ordo Reductor Minotaur Battery", "Ordo Reductor Minotaur", "L:Hunter-Killer Missile",
          to="Hull (Rear) Mounted Hunter-Killer Missile")
 
+# ======================================================================= Liber Imperium
+CUS, SOS = "LI - Custodes", "LI - Sisters Of Silence"
+o.text(CUS, "P:Golden Exemplar", char="Text", fn=append(
+    "Furthermore, the first Reaction made in each Game Turn by this Warlord and any unit he has joined does not use up a "
+    "point of the Controlling Player's Reaction Allotment."))
+for unit, grp in (("Custodes Tribune", "Tribune Weapon"), ("E:Custodian Shield Captain", "Shield Captain Weapon")):
+    o.cost(CUS, unit, grp, "Paragon Blade", v=0)
+    o.cost(CUS, unit, grp, "Meridian Swords", v=35)
+    o.cost(CUS, unit, grp, "Paragon Glaive", v=10)
+o.cost(CUS, "Hetaeron Guard Squad", "Hetaeron Guard", v=60)
+o.cost(CUS, "Hetaeron Guard Squad", "Hetaeron Guard", "Weapon", "L:Paragon Blade", v=0)
+o.cost(CUS, "Hetaeron Guard Squad", "Hetaeron Guard", "Weapon", "L:Meridian Swords", v=35)
+o.char(CUS, "Custodian Guard Squad", "P:Custodian", A="3")
+o.char(CUS, "Sentinel Guard Squad", "P:Sentinel", A="3")
+o.char(CUS, "Agamatus Jetbike Squadron", "P:Agamatus", A="2")
+o.cost(CUS, "Custodian Venatari Squad", "Venatari w/ Kinetic Destoyer and Tarsus Buckler", v=60)
+o.cost(CUS, "Custodian Venatari Squad", "Venatari w/ Venatari Lance", v=70)
+o.price(CUS, "Custodian Venatari Squad", 10)
+o.char(CUS, "Custodian Venatari Squad", "P:Venatari", A="3")
+o.rename(CUS, "E:Caladius Grav-Tank", "Turret Mounted Illastus Accelerator Cannon", to="Turret Mounted Iliastus Accelerator Cannon Arrays")
+o.rule(SOS, "Silent Fury", add="Firing Protocols (2)")
+o.category(SOS, "Silent Fury", "E:Silent Fury", add="Antigrav Sub-type")
+o.char(SOS, "Questora Cadre", "P:Questora", WS="4", BS="5")
+o.rename(SOS, "Questora Cadre", "The entire unit may exchange their Vratine bolters for:",
+         to="Any model in the unit may exchange their Vratine Bolter for one of the following options:")
+ART = o.shared_id("Artificer Armour")[0]
+for unit in ("Questora Cadre", "Raptora Cadre"):
+    o.raw(SOS, unit, what="Artificer Armour instead of Vratine Armour", fn=lambda x: re.sub(
+        r'(<entryLink [^>]*)name="Vratine Armour"([^>]*)targetId="[^"]*"', r'\1name="Artificer Armour"\2targetId="' + ART + '"', x))
+o.cost(SOS, "Eradicator Cadre", "Eradicator w/ Vratine Bolter", v=15)
+o.cost(SOS, "Eradicator Cadre", "Eradicator w/ options", v=15)
+o.price(SOS, "Eradicator Cadre", 20)
+o.char(SOS, "Eradicator Cadre", "P:Eradicator", BS="5", Ld="8")
+o.char(SOS, "Eradicator Cadre", "P:Eradicator Mistress", BS="5", Ld="9")
+for m in ("Eradicator Mistress", "Eradicator w/ Vratine Bolter", "Eradicator w/ options"):
+    o.add_link(SOS, "Eradicator Cadre", m, to="Voidsheen Cloak")
+o.category(SOS, "Vigilator Cadre", remove="Silent Sisterhood (Chamber of Oblivion)")
+o.category(SOS, "Vigilator Cadre", add="Silent Sisterhood (Chamber of Vigilance)")
+o.retarget(SOS, "Kharon Pattern Acquistor", "1) Hull (Front) Mounted Weapon", "Multi-Melta", to="Gravis Melta Cannon")
+o.price(SOS, "Pursuer Cadre", 15)
+o.cost(SOS, "Pursuer Cadre", "Pursuer", "Execution Blade", v=5)
+o.raw(SOS, "Pursuer Cadre", what="Rage (2)", fn=lambda x: x.replace('value="Rage (1)"', 'value="Rage (2)"'))
+o.retarget(SOS, "Expurgator Cadre", "L:Adrathic Destructor", to="Adrathic Devastator",
+           shown="Adrathic Devastator (with Suspensor Web)")
+
+# ======================================================================= Liber Imperium and Legacies: Solar Auxilia
+SA = "LI - Solar Auxilia"
+o.rule(SA, "Legate Marshal", "Solar Auxilia Legate Marshal", add="Field Officer")
+for unit, models in (("Tactical Command Section", ("Auxilia Companion", "Auxilia Captain")),
+                     ("Companion Sections", ("Auxilia Companion",))):
+    o.rule(SA, unit, add="Chosen Warriors")
+    for m in models:
+        o.add_link(SA, unit, m, to="Close Combat Weapon")
+o.cost(SA, "Companion Sections", "Auxilia Companion", "Magna Combi-weapon", v=10)
+for m in ("Power Sword", "Power Lance", "Power Maul", "Power Axe"):
+    o.cost(SA, "Veletaris Command Section", "Veletarii w/ " + m, v=13)
+o.price(SA, "Veletaris Command Section", 50 - 4 * 8)
+o.maxsel(SA, "Veletaris Command Section", "G:Veletarii", v=19)
+for m in ("Lasrifle", "Autorifle", "Lascarbine", "Lasgun", "Shotgun", "Stubcarbine"):
+    o.cost(SA, "Line Command Section", "Auxilia Veteran w/ " + m, v=6)
+o.cost(SA, "Line Command Section", "Auxilia Veteran w/ Lasrifle and Bayonet", v=7)
+o.price(SA, "Line Command Section", 40 - 4 * 6)
+o.maxsel(SA, "Line Command Section", "Auxilia Veterans", v=19)
+o.char(SA, "Line Command Section", "P:Auxilia Troop Master", Ld="8")
+LR = (SA, "Leman Russ Strike Squadron", "1) All models may exchange their Turret Mounted Battlecannon for one of the following:")
+o.rename(*LR, "Two Turret Mounted Gravis Autocannons", to="Turret Mounted Exterminator Autocannon")
+o.retarget(*LR, "Turret Mounted Exterminator Autocannon", "Gravis Autocannon", to="Exterminator Autocannon")
+o.rename(*LR, "Turret Mounted Gravis Lascannons", to="Turret Mounted Gravis Heavy Lascannon")
+o.retarget(*LR, "Turret Mounted Gravis Heavy Lascannon", "Gravis Lascannon", to="Gravis Heavy Lascannon")
+o.cost(SA, "Leman Russ Assault Squadron", "Leman Russ Battle Tank", v=145)
+o.char(SA, "Leman Russ Assault Squadron", "P:Leman Russ Battle Tank", Rear="11")
+o.rule(SA, "Artillery Command Section", add="Artillery Spotters")
+o.rule(SA, "Tarantula Sentry Battery", remove="Bulky (X)", add="Immobile")
+o.char(SA, "Tarantula Sentry Battery", "P:Tarantula Sentry Gun", WS="-", BS="3", S="5", T="5", W="2", I="-", A="-", Ld="5", Sv="3+")
+o.char(SA, "Rapier Battery", "P:Auxilia Gunner", Sv="4+")
+MH = (SA, "Malcador Heavy Tank Squadron", "Malcador Heavy Tank")
+o.retarget(*MH, "1) May exchange its Hull (Front) Mounted battlecannon for one of the following:", "Gravis Lascannon",
+           to="Gravis Heavy Lascannon", shown="Hull (Front) Mounted Twin-linked Gravis Heavy Lascannon")
+o.cost(*MH, "3) May exchange its Hull (Left) & Hull (Right) Mounted heavy bolters for:", "Lascannon", v=15)
+o.cost(*MH, "2) May exchange its Hull (Front) Mounted heavy bolter for one of the following:", "Demolisher Cannon", v=35)
+o.rule(SA, "Valdor Tank Destroyer Squadron", add="Independent Fire Control")
+o.rule(SA, "Malcador Infernus Squadron", add="Independent Fire Control")
+o.price(SA, "E:Dracosan Armoured Transport", 135)
+o.cost(SA, "E:Dracosan Armoured Transport", "Demolisher Cannon", v=20)
+o.char(SA, "P:Aurox Transport", Tr="12")
+o.add_link(SA, "E:Arvus Transport", to="Heavy Stubber", shown="Hull (Front) Mounted Heavy Stubber")
+o.text(SA, "R:Solar Auxilia Command Tank", fn=lambda t: t if "Armoured Legate may nominate" in t else re.sub(
+    r"A Leman Russ Command Tank must be assigned to a Leman Russ Strike Squadron or a Leman Russ Assault Squadron\.?",
+    "A model with this Special Rule must be assigned to another unit made up entirely of models with the Vehicle Unit "
+    "Type purchased as part of the same Tercio.\n\nAn Armoured Legate may nominate a single Auxilia Armoured Tercio in "
+    "the same Detachment, and may use their Solar Auxilia Command Tank Special Rule to join squads within that Tercio as "
+    "if they were purchased as part of it.\n\nIn addition, a model with this Special Rule may still make Shooting Attacks "
+    "as normal in a turn in which they use their Cognis-Signum to provide +1 Ballistic Skill to all other models in their "
+    "unit, even though this would normally be prevented by using this Wargear.", t))
+o.text(SA, "R:Reborn Cohorts", fn=lambda t: re.sub(r"Effects\n• [^\n]*", "Effects\n• All models with the Infantry Unit "
+    "Type in a Detachment using this Cohort Doctrine gain a bonus of +1 to their Leadership Characteristic, to a maximum of "
+    "Leadership 10, and the Stubborn Special Rule.", t, count=1))
+o.text(SA, "R:Penal Pattern Cohorts", fn=lambda t: t if "Chainsword for +1" in t else t.replace(
+    "Lascarbine, Lasgun, Stubcarbine, Autorifle, or Shotgun", "Lascarbine, Lasgun, Stubcarbine, Autorifle, Laspistol and "
+    "Close Combat Weapon, or Shotgun").replace("\nLimitations", "\n• Any model in a Detachment using this Cohort Doctrine "
+    "may replace a Close Combat Weapon with a Chainsword for +1 point per model.\nLimitations", 1))
+o.text(SA, "R:Feral Pattern Cohorts", fn=lambda t: t if "Chain Axe for +2" in t else t.replace("\nLimitations",
+    "\n• All models with the Infantry Unit Type from a Detachment using this Cohort Doctrine gain a bonus of +1 to their "
+    "Weapon Skill, to a maximum of 5, for the duration of any player turn in which they make a Successful Charge.\n"
+    "• Any model in a Detachment using this Cohort Doctrine may replace a Bayonet with a Chain Bayonet for +1 point per "
+    "model.\n• Any model with the Character Unit Sub-type in a Detachment using this Cohort Doctrine may exchange a Close "
+    "Combat Weapon for a Chain Axe for +2 points per model.\nLimitations", 1))
+o.text(SA, "R:Siege Pattern Cohorts", fn=lambda t: t if "Defence Line" in t else t.replace(
+    "as both Elites and Heavy Support choices.", "as both Elites and Heavy Support choices. In addition, they may select "
+    "Solar Auxilia Artillery Battery squads as both Heavy Support and Fortification choices.").replace("\nLimitations",
+    "\n• Any unit eligible to purchase a Dedicated Transport may instead elect to purchase a Defence Line without "
+    "occupying a Fortification Force Organisation slot, but the cost in points must be counted towards the army total as "
+    "usual. A unit which has selected a Defence Line in this way counts as having purchased a Dedicated Transport.\n"
+    "Limitations", 1) + "\n• A Detachment using this Cohort Doctrine may only be selected for an army's Primary Detachment.")
+# Legacies: Solar Auxilia
+o.cost(SA, "Thunderer Siege Tank Squadron", "Thunderer Siege Tank", v=135)
+o.cost(SA, "Destroyer Tank Hunter Squadron", "Destroyer Tank Hunter", v=135)
+o.raw(SA, "Trojan Support Vehicle", what="Field Repair (3+)", fn=lambda x: re.sub(r'value="Field Repair \(\d\+\)"',
+      'value="Field Repair (3+)"', x))
+o.retarget(SA, "Minotaur Battery", "Minotaur", "Earthshaker cannon", to="Earthshaker Battery",
+           shown="Centreline (Rear) Mounted Earthshaker Battery")
+o.rename(SA, "Minotaur Battery", "Minotaur", "L:Hunter-Killer Missile", to="Hull (Rear) Mounted Hunter-Killer Missile")
+o.move_slot("Macharius Heavy Tank Squadron", "Lords of War:", "Heavy Support:")
+o.cat_strip("Macharius Heavy Tank Squadron", ("LoW & Primarchs (25% Limit)",))
+o.cost(SA, "Macharius Heavy Tank Squadron", "Macharius Heavy Tank", v=330)
+o.maxsel(SA, "Macharius Heavy Tank Squadron", "Macharius Heavy Tank", v=3)
+for unit, pts, extra in (("Stormblade", 475, {}), ("Baneblade", 450, {}), ("Banehammer", 475, {"Tr": "22"}),
+                         ("Stormlord", 450, {"Tr": "32"}), ("Shadowsword", 525, {}), ("Stormsword", 475, {})):
+    o.price(SA, unit, pts)
+    o.char(SA, unit, "P:" + unit, Front="14", **extra)
+o.add_link(SA, "Stormblade", to="Heavy Bolter", shown="Hull (Front) Mounted Heavy Bolter")
+o.rule(SA, "Banehammer", add="Tank Desant (10)")
+o.rule(SA, "Stormlord", add=("Tank Desant (10)", "Assault Vehicle"))
+o.char(SA, "Stormlord", "P:Stormlord", **{"Access Points": "A Solar Auxilia Stormlord has one Access Point at the rear of the hull."})
+o.price(SA, "Praetor Armoured Assault Launcher", 450)
+o.rename(SA, "Praetor Armoured Assault Launcher", "E:Praetor Launcher", to="Centreline Mounted Praetor Launcher")
+o.char(SA, "Crassus Armoured Assault Transport", "P:Crassus Armoured Assault Transport", Tr="48")
+o.rule(SA, "Crassus Armoured Assault Transport", add="Transport Bay")
+o.price(SA, "Artillery Battery", 0)
+for g in ("Earthshaker Artillery Platforms", "Medusa Artillery Platforms"):
+    o.rule(SA, "Artillery Battery", g, "E:" + g, add=("Immobile", "Bulky (5)"))
+o.chars_all(SA, "Artillery Platform", WS="-", BS="4", S="7", T="7", W="4", I="-", A="-", Ld="5", Sv="3+")
+o.chars_all(SA, "Auxilia Gunner", Sv="4+")
+
 o.report()
