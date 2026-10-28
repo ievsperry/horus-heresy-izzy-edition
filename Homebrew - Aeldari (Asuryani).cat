@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="d5ae-9e15-7ef2-10f7" name="Asuryani for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Asuryani" />
   </publications>
@@ -7377,13 +7377,51 @@
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="c934-7222-c0c1-58d5" primary="false" name="Character" />
             <categoryLink targetId="4303-1348-cce4-9501" id="799d-8b55-fa20-a2e3" primary="false" name="Antigrav Sub-type" />
           </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Chainsword" hidden="false" id="aa55-b4ac-f41e-767a" type="selectionEntry" targetId="9374-085c-d37e-3577">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange Chainsword" hidden="false" id="1a9c-6199-85b5-cd8c" defaultSelectionEntryId="ff21-9789-3ebf-90b0">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2751-3e3e-132d-3be2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3db-5134-10d5-f062" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e81d-de42-8fc7-4fe7" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3aa9-fce9-d76b-272d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
-            </entryLink>
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="ff21-9789-3ebf-90b0" type="selectionEntry" targetId="9374-085c-d37e-3577">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6642-a43f-6f50-eb89" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="9644-1448-b96c-fa36" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f80a-ddee-421f-fb4d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Exchange Shuriken Pistol" hidden="false" id="93b8-7117-dbf0-21d1" defaultSelectionEntryId="5908-ad3d-a1df-7697">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b47f-c351-07d7-d957" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7776-8e40-0f1b-8b8a" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Shuriken pistol" hidden="false" id="5908-ad3d-a1df-7697" type="selectionEntry" targetId="7373-8dff-46c4-b9a3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cb6-5999-a174-5823" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Fusion pistol" hidden="false" id="44dd-e546-db5a-b258" type="selectionEntry" targetId="da43-db7d-6af4-f325">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd52-8261-d109-134b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
             <entryLink import="true" name="Heavy Mesh Armour" hidden="false" id="e4ba-6b07-e7e7-fd49" type="selectionEntry" targetId="6260-0f86-7e05-38b7">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73d3-6af5-7728-8c6f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7394,12 +7432,6 @@
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4765-5490-aefd-c061" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f23f-e2ba-db8d-1fce" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Shuriken pistol" hidden="false" id="8a6b-4ac0-84ed-34c8" type="selectionEntry" targetId="7373-8dff-46c4-b9a3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0371-f134-2ca7-26ea" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e47a-def1-b4d4-fd15" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
             <entryLink import="true" name="Skyrunner Jetbike" hidden="false" id="c6e6-3663-a83b-6cbd" type="selectionEntry" targetId="7633-a641-a0b7-07fa">
@@ -7456,6 +7488,25 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="99b0-ace2-3649-120e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Skyrunner Officer: Options" hidden="false" id="50b8-2793-d792-98ca">
+          <entryLinks>
+            <entryLink import="true" name="Forceshield" hidden="false" id="da0c-b8ce-e990-c58f" type="selectionEntry" targetId="b1e6-837a-ea1f-5b93">
+              <modifiers>
+                <modifier type="increment" field="c131-7b00-fc76-18df" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="3889-9a5a-afd3-2361" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdbd-bb5b-dbd5-0790" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c131-7b00-fc76-18df" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
