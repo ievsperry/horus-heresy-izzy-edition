@@ -12,10 +12,12 @@ working. Anything the parser cannot place is listed on stderr.
 """
 import hashlib
 import itertools
+import itertools
 import os
 import re
 import sys
 import xml.etree.ElementTree as ET
+from copy import deepcopy
 
 GAME_SYSTEM_ID = "28d4-bd2e-4858-ece6"
 GAME_SYSTEM_REVISION = "130"  # the first revision with the Xenos allegiance
@@ -26,6 +28,7 @@ GAME_SYSTEM_REVISION = "130"  # the first revision with the Xenos allegiance
 XENOS_FACTIONS = {"Tyranids", "Orks", "Necrons", "T'au Empire", "Drukhari", "Asuryani", "Anhrathe", "Rillietann", "Leagues of Votann"}
 XENOS_ARMY_CATEGORY = ("3c8e-5a1d-9b47-e2f0", "Xenos Army")
 PTS = "d2ee-04cb-5f8a-2642"
+ALLIED_DETACHMENT = "d4f2-6da5-b6de-06ec"
 
 UNIT_PROFILE = "4bb2-cb95-e6c8-5a21"
 # the characteristics of a unit profile, in the order of its stats
@@ -166,7 +169,33 @@ def load_gst_wargear(path=GST_FILE):
 
 
 # 40k names for weapons 2.0 has under another name
-OFFICIAL_ALIASES = {"storm bolter": "combi-bolter", "boltgun": "bolter", "force stave": "force staff"}
+OFFICIAL_ALIASES = {"storm bolter": "combi-bolter", "boltgun": "bolter", "force stave": "force staff",
+                    "psyk-out grenades": "psyk-out granades"}
+
+
+def load_official_items(root=None):
+    """Weapons, wargear and rules of the official catalogues, for the items a doc names but leaves to them
+    ("Auric Warplate", "Legio Custodes"): {key: element} and {key: (name, text)}, keyed without punctuation."""
+    root = root or os.path.dirname(GST_FILE) or "."
+    entries, rules = {}, {}
+    for f in sorted(os.listdir(root)):
+        if not f.endswith(".cat") or f.startswith("Homebrew"):
+            continue
+        cat = ET.parse(os.path.join(root, f)).getroot()
+        for e in cat.iter():
+            tag = e.tag.split("}")[-1]
+            if tag == "selectionEntry" and e.get("type") == "upgrade" and any(
+                    p.get("typeName") in ("Weapon", "Wargear Item") for p in e.iter() if p.tag.endswith("}profile")):
+                entries.setdefault(loose(e.get("name")), e)
+            elif tag == "rule":
+                text = "".join(d.text or "" for d in e if d.tag.endswith("}description")).strip()
+                if text:
+                    rules.setdefault(loose(re.sub(r"\s*\(X\+?\)$", "", e.get("name"))), (e.get("name"), text))
+    return entries, rules
+
+
+def loose(name):
+    return re.sub(r"[^a-z0-9]", "", name.lower().replace("&apos;", "'"))
 
 # Where a weapon is mounted is not part of its name: "Hull (Front) Mounted heavy bolter" is a heavy bolter.
 MOUNT = r"^(?:hull mounted|hull \(front\) mounted|pintle mounted|sponson mounted|turret mounted|co-axial|centreline mounted|arm mounted|carapace mounted) "
@@ -306,8 +335,19 @@ def parse_doc(text):
                 cur["subs"].remove(sub)
             sub = {"title": ln[5:].strip(), "lines": []}
             cur["subs"].append(sub)
+        elif ln.startswith("#### ") and sub is not None:
+            # "#### Adjuevant Medicae" inside "### Retainers Militant": a model the unit may include,
+            # with its own datasheet; any other "####" heading stays part of the datasheet's text
+            sub.setdefault("children", []).append({"title": ln[5:].strip(), "lines": [], "heading": ln})
         elif cur is not None:
-            (sub or cur)["lines"].append(ln)
+            (sub["children"][-1] if sub and sub.get("children") else sub or cur)["lines"].append(ln)
+    for sec in sections:
+        for sub in sec["subs"]:
+            kids = sub.pop("children", [])
+            sub["retainers"] = [k for k in kids if "Unit Composition" in [l.strip() for l in k["lines"]]]
+            for k in kids:
+                if k not in sub["retainers"]:
+                    sub["lines"] += [k["heading"]] + k["lines"]
     return sections
 
 
@@ -319,9 +359,16 @@ def blocks(lines):
         m = re.fullmatch(r"\*\*([A-Za-z ]+)\*\*", ln.strip()) or re.fullmatch(
             r"(Unit Composition|Wargear|Unit Type|Special Rules|Options|Dedicated Transport|Transport|Access Points)",
             ln.strip())
+        dt = re.match(r"Dedicated Transport: (.+)", ln.strip())
         if m:
             key = m.group(1)
             out[key] = []
+        elif dt:  # "Dedicated Transport: the unit may select an Arvus Transport, ..."
+            key = "Dedicated Transport"
+            out[key] = [dt.group(1)]
+        elif ln.startswith("| Option |") and key not in ("Options", "_pre"):
+            key = "Options"  # an options table with no heading of its own
+            out[key] = [ln]
         else:
             out[key].append(ln)
     return out
@@ -356,6 +403,10 @@ def parse_datasheet(title, lines, slot):
     ds["wargear"] = list_items(b.get("Wargear", []))
     ds["types"] = list_items(b.get("Unit Type", []))
     ds["rules"] = list_items(b.get("Special Rules", []))
+    # "A Rogue Trader that takes Indomitus Terminator Armour gains +1 Wound...": a note after the rules list
+    ds["notes"] += [strip_md(l) for l in b.get("Special Rules", []) if l.strip() and not l.startswith(("- ", "|", "_", "#", "**")) and not re.match(r"[\w ]+: ", l)]
+    army = next((re.match(r"0-(\d+) per army", l.strip()) for l in b["_pre"] if re.match(r"0-(\d+) per army", l.strip())), None)
+    ds["army_limit"] = int(army.group(1)) if army else None
     ds["transport"] = list_items(b.get("Transport", []))
     ds["access"] = list_items(b.get("Access Points", []))
     ds["dt"] = paragraphs(b.get("Dedicated Transport", []))
@@ -746,12 +797,24 @@ class Builder:
                 for header, arows in tables:
                     if header[0] in ("Artefact", "Relic", "Signature system"):
                         self.build_artefacts(header, arows, text)
-                        who = re.search(r"One (.+?) \(not a Unique character\) may take", text or "")
+                        who = re.search(r"One (.+?) \(not a Unique character\) may take", text or "") or \
+                            (header[0] == "Relic" and re.search(r"^An? (.+?) may take one ", text or ""))  # "A Rogue Trader Militant"
                         if who:
                             self.artefact_bearers = [w.strip() for w in re.split(r",| or ", who.group(1)) if w.strip()]
+                        if header[0] == "Relic":
+                            self.artefact_group = name  # "Archaeotechnological Relics"
                         text = None
                     elif header[0] == "Vehicle battle system":
                         self.build_vehicle_systems(arows, text)
+                        text = None
+                    elif header[:2] == ["Wargear", "Effect"]:
+                        # "### Forceshield, Improved Forceshield and Holo-Suit": a row for each item
+                        for r in arows:
+                            eid = make_id("wargear", self.faction, r[0])
+                            e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=r[0],
+                                   hidden=False, id=eid, publicationId=self.pub_id)
+                            add_text_profile(e, WARGEAR_PROFILE, r[0], " ".join(x for x in (text, r[1] + ".") if x), eid)
+                            self.upgrades[norm(r[0])] = eid
                         text = None
                 if text is None:
                     continue
@@ -1475,8 +1538,8 @@ class Builder:
         if self.artefacts and self.artefact_bearers and not unique and \
                 any(norm(ds["name"]) == norm(b) for b in self.artefact_bearers):
             gkey = make_id(me.get("id"), "signature")
-            g = el(child(me, "selectionEntryGroups"), "selectionEntryGroup", name="Signature System",
-                   hidden=False, id=gkey)
+            g = el(child(me, "selectionEntryGroups"), "selectionEntryGroup",
+                   name=getattr(self, "artefact_group", "Signature System"), hidden=False, id=gkey)
             add_constraint(g, "max", 1, gkey + "max")
             for aname, eid, cost in self.artefacts:
                 add_cost(self.link(child(g, "entryLinks"), eid, aname, gkey, maximum=1), cost)
@@ -1785,6 +1848,23 @@ class Builder:
             for sub in bio["subs"]:
                 if sub["title"] == "Regeneration":
                     self.define_rule("Regeneration (X)", " ".join(paragraphs(sub["lines"])))
+        # "### Warrants of Trade ... must select one Warrant of Trade below" with "#### Warrant of Compliance"
+        # and the rest: the rule, and the choices a model with it picks from
+        self.rule_choices = {}
+        for sub in (sec["subs"] if sec else []):
+            intro = list(itertools.takewhile(lambda l: not l.startswith("#### "), sub["lines"]))
+            if not re.search(r"must select one", " ".join(intro)) or len(intro) == len(sub["lines"]):
+                continue
+            if norm(sub["title"]) not in self.local_rules:
+                self.define_rule(sub["title"], full_text(intro))
+            choices, cur = [], None
+            for ln in sub["lines"][len(intro):]:
+                if ln.startswith("#### "):
+                    cur = [ln[5:].strip(), []]
+                    choices.append(cur)
+                else:
+                    cur[1].append(ln)
+            self.rule_choices[sub["title"]] = [(n, full_text(lines)) for n, lines in choices]
         self.define_rule("Invulnerable Save (X)",
                          "The model has an Invulnerable Save of X, which may be taken against any "
                          "Wound instead of its armour save.")
@@ -2591,6 +2671,7 @@ class Builder:
             if cand in self.upgrades:
                 return self.upgrades[cand]
         for cand in [t] + list(singular(t)):
+            cand = OFFICIAL_ALIASES.get(cand, cand)
             if cand in self.gst_wargear and not any(c in self.upgrades for c in singular(t)):
                 return self.gst_wargear[cand]
         if t.startswith("regeneration"):
@@ -2599,6 +2680,72 @@ class Builder:
         if coded != t:
             return self.find_upgrade(coded)
         return None
+
+    def weapon_choice(self, name):
+        """'Force Weapon' with the doc's Force Axe, Force Maul, Force Staff and Force Sword: a choice of one."""
+        m = re.fullmatch(r"(\w+) weapon", norm(name))
+        kinds = sorted(k for k in self.weapons if m and re.fullmatch(m.group(1) + r" \w+", k)) if m else []
+        if len(kinds) < 2:
+            return None
+        if norm(name) in self.upgrades:
+            return self.upgrades[norm(name)]
+        eid = make_id("choice", self.faction, name)
+        e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=name, hidden=False,
+               id=eid, publicationId=self.pub_id)
+        g = el(el(e, "selectionEntryGroups"), "selectionEntryGroup", name=name, hidden=False, id=make_id(eid, "group"),
+               defaultSelectionEntryId=make_id(eid, "link", kinds[0]))
+        add_constraint(g, "min", 1, eid + "min")
+        add_constraint(g, "max", 1, eid + "max")
+        links = el(g, "entryLinks")
+        for k in kinds:
+            w = self.shared_entries.find(f"selectionEntry[@id='{self.weapons[k]}']")
+            el(links, "entryLink", import_=True, name=w.get("name"), hidden=False, id=make_id(eid, "link", k),
+               type="selectionEntry", targetId=self.weapons[k])
+        add_cost(e, 0)
+        self.upgrades[norm(name)] = eid
+        return eid
+
+    def official_entry(self, name):
+        """A weapon or piece of wargear the doc leaves to the official lists: a copy of the official entry,
+        keeping its profiles and the game system rules it links."""
+        if not hasattr(self, "official_items"):
+            self.official_items, self.official_rules = load_official_items()
+        k = loose(re.sub(r"\s*\(.*?\)$", "", name))
+        for gid_map in (self.gst_weapons, self.gst_wargear):  # "Melta Bombs" is the game system's "Meltabombs"
+            hit = next((v for n, v in gid_map.items() if loose(n) in (k, k.rstrip("s"))), None)
+            if hit:
+                return hit
+        src = self.official_items.get(k)
+        if src is None:
+            src = self.official_items.get(k.rstrip("s"))
+        if src is None:
+            return None
+        if ("official", k) in self.upgrades:
+            return self.upgrades[("official", k)]
+        eid = make_id("official", self.faction, src.get("name"))
+        gst_ids = {i for i, _ in self.gst_rules.values()}
+        e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=src.get("name"), hidden=False,
+               id=eid, publicationId=self.pub_id)
+        for part in src:
+            tag = part.tag.split("}")[-1]
+            if tag not in ("profiles", "infoLinks"):
+                continue
+            copy = deepcopy(part)
+            for x in copy.iter():
+                x.tag = x.tag.split("}")[-1]  # out of the catalogue's namespace
+                for a in ("publicationId", "page"):
+                    x.attrib.pop(a, None)
+                if x.get("id"):
+                    x.set("id", make_id(eid, x.get("id")))
+            if tag == "infoLinks":
+                for il in list(copy):
+                    if il.get("targetId") not in gst_ids:
+                        copy.remove(il)
+            if len(copy):
+                e.append(copy)
+        add_cost(e, 0)
+        self.upgrades[("official", k)] = eid
+        return eid
 
     def generic_upgrade(self, name, key):
         """An option that is neither a weapon nor a biomorph, kept as a named upgrade."""
@@ -2812,9 +2959,10 @@ class Builder:
             own = {}
             for l, m in only:
                 own.setdefault(only_model(m.group(2)), []).extend(re.split(r" and ", m.group(1)))
-            if set(own) >= set(models):
+            if set(own) >= set(models) or not any(self.find_weapon(i)[0] for items in own.values() for i in items):
                 # "Lasgun (Jungle Fighters only)", "Laspistol (Jungle Fighter Sergeant only)": every model's
-                # own weapons are listed, so the rest ("Close combat weapon") is everyone's
+                # own weapons are listed, so the rest ("Close combat weapon") is everyone's; and a banner
+                # (Standard Bearer only) is carried beside the weapons everyone has
                 gear = common
             lines = [f"{n}: " + ", ".join(gear + items) for n, items in own.items()]
             others = [n for n in models if n not in own]
@@ -3231,6 +3379,9 @@ class Builder:
                 mname = crew[0]  # "Any TX-42" in a squadron of Piranha TX-42s
             if mname:
                 subject_models = [mname]
+            either = [model_for(x, exact=True) for x in subject.split(" or ")] if " or " in subject else []
+            if determiner in ("Any", "Each") and len(set(either)) > 1 and all(either):
+                subject_models = either  # "Any Militant Bodyguard or Trader-Militant Standard Bearer"
             # "Any Broadside" is the Broadside Shas'ui and the Broadside Shas'vre
             several = [n for n in models if re.search(r"(^| )" + re.escape(norm(singular_name(subject or ""))) + r"( |$)", norm(n))]
             if determiner in ("Any", "Each") and len(several) > 1 and not (
@@ -3278,6 +3429,13 @@ class Builder:
                     models[dst]["cost"] = self.cost(cost)
                 else:
                     self.problems.append(f"{ds['name']}: replacement '{name}'")
+            return
+        both = ex and not ex.group(1) and re.fullmatch(r"(.+?) and/or (.+?)(?:, each)?", ex.group(2))
+        if both:
+            # "their Laspistol and/or Power Weapon, each for one of": a swap of each
+            for part in both.groups():
+                self.apply_option_group(ds, unit, models, model_for, dict(grp, header=grp["header"].replace(ex.group(2), part)),
+                                        unit_upgrades)
             return
         if ex:
             qualifier = (ex.group(1) or "").strip()
@@ -3650,6 +3808,10 @@ class Builder:
             if iw:
                 self.link(links, iw, w, m["id"], count=1)
                 continue
+            oid = self.weapon_choice(w) or self.official_entry(w)
+            if oid:  # "Auric Warplate": the official item
+                self.link(links, oid, re.sub(r"\s*\(.*?\)", "", w).strip(), m["id"], count=1)
+                continue
             self.problems.append(f"{ds['name']}: wargear '{w}' is not defined in the doc")
             gid = self.generic_upgrade(w, key)
             self.link(links, gid, w, m["id"], count=1)
@@ -3950,6 +4112,7 @@ class Builder:
         if not wid and not parts_text:
             # "Hyperphase sword and dispersion shield": a weapon and a piece of wargear
             parts = [(w, k) if w else (self.find_upgrade(x), 1) for (w, k), x in zip(parts, label.split(" and "))]
+            parts = [(w, k) if w else (self.official_entry(x), 1) for (w, k), x in zip(parts, label.split(" and "))]
         if all(w for w, _ in parts):
             links = el(e, "entryLinks")
             names = texts if len(parts) > 1 else [label]
@@ -4038,12 +4201,49 @@ class Builder:
             el(child(unit, "infoLinks"), "infoLink", name=inner[1], id=make_id(uid, "info", line), hidden=False,
                targetId=inner[0], type="rule")
             return
+        if not hasattr(self, "official_rules"):
+            self.official_items, self.official_rules = load_official_items()
+        official = self.official_rules.get(loose(re.sub(r"\s*\(X\+?\)$", "", line)))
+        if official:  # "Legio Custodes": the official rule's text
+            self.define_rule(official[0], official[1])
+            self.link_rule(unit, line, uid)
+            return
         if True:
             self.problems.append(f"{ds['name']}: rule '{line}' is not defined in the doc")
             self.define_rule(line, "Listed on this datasheet but not defined in the conversion doc.")
             self.link_rule(unit, line, uid)
 
     # ---- force entries
+
+    def build_force_entries(self):
+        """'| Aegis Militant Detachment (Primary only) | ... |' with 'HQ: 1 Compulsory', 'Elites: 2 Compulsory,
+        +3 Optional' rows: a Force Organisation Chart of the faction's own, taken once per army."""
+        sub = next((x for sec in self.sections for x in sec["subs"] if x["title"] == "Force Organisation"), None)
+        for header, rows in section_tables({"lines": sub["lines"], "subs": []}) if sub else []:
+            if "Detachment" not in header[0] or "Primary" not in header[0]:
+                continue  # the game system's own Allied and Lords of War Detachments
+            name = re.sub(r"\s*\(.*?\)$", "", header[0])
+            fid = make_id("force", self.faction, name)
+            fe = el(child(self.root, "forceEntries"), "forceEntry", name=name, hidden=False, id=fid)
+            cl = el(fe, "categoryLinks")
+            a = el(cl, "categoryLink", name=ALLEGIANCE_CATEGORY[1], hidden=False, id=make_id(fid, "allegiance"),
+                   targetId=ALLEGIANCE_CATEGORY[0], primary=False)
+            add_constraint(a, "min", 2, fid + "allegiance min", children=True)  # the Allegiance and the army entry
+            add_constraint(a, "max", 2, fid + "allegiance max", children=True)
+            for r in rows:
+                m = re.match(r"(HQ|Elites|Troops|Fast Attack|Heavy Support|Lords of War): (.+)", r[0])
+                if not m:
+                    continue
+                need = re.search(r"(\d+) Compulsory", m.group(2))
+                extra = re.search(r"\+(\d+) Optional", m.group(2))
+                low = int(need.group(1)) if need else 0
+                cat, cname, _ = SLOTS[m.group(1)][0]
+                link = el(cl, "categoryLink", name=cname, hidden=False, id=make_id(fid, cname), targetId=cat, primary=False)
+                add_constraint(link, "min", low, fid + cname + "min", scope="force", children=True)
+                add_constraint(link, "max", low + (int(extra.group(1)) if extra else 0), fid + cname + "max",
+                               scope="force", children=True)
+            c = el(el(fe, "constraints"), "constraint", type="max", value=1, field="forces", scope="roster", shared=True,
+                   id=make_id(fid, "once"), percentValue=False, includeChildSelections=False, includeChildForces=False)
 
     def build_entry_links(self):
         links = child(self.root, "entryLinks")
@@ -4067,6 +4267,8 @@ class Builder:
             add_category(e, *UNIT_CATEGORY, e.get("id"))
             if ds.get("limit"):
                 add_constraint(e, "max", ds["limit"], e.get("id") + "limit", scope="force", children=True)
+            if ds.get("army_limit"):  # "0-1 per army."
+                add_constraint(e, "max", ds["army_limit"], e.get("id") + "army", scope="roster", children=True)
         self.build_composites(links)
         self.exclusive_entries(links)
 
@@ -4226,9 +4428,16 @@ class Builder:
         platoons = {c["name"] for c in self.composites}
         for s in self.sections:
             if s["title"] in SLOTS or s["title"] in ("Dedicated Transports", "Kill Team Units") or s["title"] in platoons:
+                # "## Troops" opening "These units are Dedicated Transports.": the units are transports
+                slot = "Dedicated Transports" if any("These units are Dedicated Transports" in l for l in s["lines"]) \
+                    else s["title"]
                 for sub in s["subs"]:
-                    ds = parse_datasheet(sub["title"], sub["lines"], s["title"])
+                    ds = parse_datasheet(sub["title"], sub["lines"], slot)
                     if ds:
+                        ds["retainers"] = [parse_datasheet(f"{k['title']} — 0 pts", k["lines"], slot)
+                                           for k in sub.get("retainers", [])]
+                        self.take_retainer_options(ds)
+                        self.expand_carried_weapons(ds)
                         self.datasheets.append(ds)
         self.add_listed_options()
         self.profile_index = {}
@@ -4243,21 +4452,139 @@ class Builder:
             self.take_shrine_options(ds)
         for ds in self.datasheets:
             self.build_unit(ds)
+            self.attach_retainers(ds)
         self.add_transport_options()
         self.attach_aspect_shrines()
         self.add_warlords()
         self.build_army_entry()
+        self.build_force_entries()
         self.build_entry_links()
         self.apply_rites()
         self.apply_subfaction_rules()
         self.apply_granted_biomorphs()
         self.apply_rule_limits()
+        self.apply_rule_choices()
         self.root.append(self.shared_entries)
         if len(self.shared_groups):
             self.root.append(self.shared_groups)
         self.root.append(self.shared_rules)
         sort_children(self.root)
         return self.root
+
+    # "If the army includes a Detachment with the Mechanicum Faction": the selections that show it has one
+    ARMY_MARKERS = [
+        ("Asuryani Sub-faction", ["d799-5beb-3b5c-80a0"]),
+        ("Imperial Army Faction", ["f689-fd0d-ffb0-c255", "5522-4fd9-12d5-460afds"]),
+        ("Legiones Astartes (X)", ["11f2-472f-c1d1-9ae9"]),
+        ("Legio Custodes Sub-faction", ["e0d0-c905-b01e-fc15"]),
+        ("Mechanicum Faction", ["ddf5-d792-3146-6e9a"]),
+        ("Saedath Sub-faction", ["da07-9606-c8f2-cbc0"]),
+        ("Sisters of Silence Sub-faction", ["4d60-2ab7-244f-3414"]),
+    ]
+
+    def expand_carried_weapons(self, ds):
+        """'Any model may exchange either or both of its Arkadia Pattern Grav-Attack's Heavy Bolters': the
+        weapons the wargear carries ('An Arkadia Pattern Grav-Attack has two Heavy Bolters') join the model's
+        wargear, so the exchange swaps them."""
+        text = "\n".join(l for sec in self.wargear_sections() for sub in sec["subs"] for l in sub["lines"])
+        for row in ds["options"]:
+            m = re.search(r"either or both of its (.+?)'s (.+?) for", row[0])
+            if not m:
+                continue
+            held = re.search(r"An? " + re.escape(m.group(1)) + r" has (\w+) " + re.escape(m.group(2)), text)
+            count = held.group(1) if held else "two"
+            if not any(norm(w).endswith(norm(m.group(2))) for w in ds["wargear"]):
+                ds["wargear"].append(f"{count.capitalize()} {m.group(2)}")
+            row[0] = row[0].replace(m.group(0), f"its {m.group(2)} for")
+
+    def take_retainer_options(self, ds):
+        """Lift the option rows that buy a '####' retainer out of the unit's options: each retainer is
+        (datasheet, cost, how many, the selections that must be in the army for it to show)."""
+        ds["retainer_opts"] = []
+        if not ds.get("retainers"):
+            return
+        by_name = {norm(r["name"]): r for r in ds["retainers"] if r}
+        keep, header = [], None
+        for row in ds["options"]:
+            label = strip_md(row[0])
+            if not row[0].startswith(("–", "-")):
+                header = label.rstrip(":")
+                keep.append(row)
+                continue
+            m = re.match(r"(?:up to (\w+) )?(.+?)$", label.lstrip("– ").strip(), re.I)
+            r = by_name.get(norm(m.group(2))) or by_name.get(norm(re.sub(r"s$", "", m.group(2))))
+            if not r:
+                keep.append(row)
+                continue
+            n = self.count_word(header.split("may include")[-1]) if "up to" in header.lower() else 1
+            markers = next((ids for text, ids in self.ARMY_MARKERS if header.startswith("If the army") and text in header), None)
+            if header.startswith("If the army") and not markers:
+                self.problems.append(f"{ds['name']}: no army marker for '{header}'")
+            ds["retainer_opts"].append((r, self.cost(row[1] if len(row) > 1 else ""), n or 1, markers or []))
+        # headers left with no rows of their own
+        ds["options"] = [r for i, r in enumerate(keep)
+                         if r[0].startswith(("–", "-")) or (i + 1 < len(keep) and keep[i + 1][0].startswith(("–", "-")))]
+        for r in ds["retainers"]:
+            if r and not any(o[0] is r for o in ds["retainer_opts"]):
+                self.problems.append(f"{ds['name']}: no option buys the retainer '{r['name']}'")
+
+    def attach_retainers(self, ds):
+        """Each retainer is built as a unit of its own, then its model joins the unit in a Retainers group."""
+        if not ds.get("retainer_opts"):
+            return
+        uid = self.units[ds["name"]]
+        unit = self.shared_entries.find(f"selectionEntry[@id='{uid}']")
+        gid = make_id(uid, "retainers")
+        g = el(child(unit, "selectionEntryGroups"), "selectionEntryGroup", name="Retainers", hidden=False, id=gid)
+        gses = el(g, "selectionEntries")
+        for rds, cost, n, markers in ds["retainer_opts"]:
+            ruid = self.build_unit(rds)
+            runit = self.shared_entries.find(f"selectionEntry[@id='{ruid}']")
+            self.shared_entries.remove(runit)
+            del self.units[rds["name"]]
+            me = runit.find("selectionEntries/selectionEntry")
+            # the retainer's own rules and option groups go with its model
+            for tag in ("rules", "infoLinks", "selectionEntryGroups", "entryLinks"):
+                src = runit.find(tag)
+                if src is not None:
+                    child(me, tag).extend(list(src))
+            for c in me.find("constraints"):
+                c.set("value", "0" if c.get("type") == "min" else str(n))
+            me.find("costs/cost").set("value", str(cost))
+            if markers:
+                me.set("hidden", "true")
+                mod = el(child(me, "modifiers"), "modifier", type="set", field="hidden", value="false")
+                conds = el(el(el(mod, "conditionGroups"), "conditionGroup", type="or"), "conditions")
+                for cid in markers:
+                    el(conds, "condition", type="atLeast", value=1, field="selections", scope="roster", childId=cid,
+                       shared=True, includeChildSelections=True, includeChildForces=True)
+            gses.append(me)
+
+    def apply_rule_choices(self):
+        """A unit with Warrants of Trade must pick one Warrant; in an Allied Detachment it picks none."""
+        for name, choices in getattr(self, "rule_choices", {}).items():
+            rid = self.local_rules[norm(name)][0]
+            for unit in self.shared_entries.findall("selectionEntry[@type='unit']"):
+                if not any(il.get("targetId") == rid for il in unit.iter("infoLink")):
+                    continue
+                uid = unit.get("id")
+                gid = make_id(uid, "choice", name)
+                g = el(child(unit, "selectionEntryGroups"), "selectionEntryGroup", name=name, hidden=False, id=gid)
+                cmin = add_constraint(g, "min", 1, gid + "min")
+                add_constraint(g, "max", 1, gid + "max")
+                for field, value in (("hidden", "true"), (cmin, 0)):
+                    mod = el(child(g, "modifiers"), "modifier", type="set", field=field, value=value)
+                    el(el(mod, "conditions"), "condition", type="instanceOf", value=0, field="selections",
+                       scope="ancestor", childId=ALLIED_DETACHMENT, shared=True, includeChildSelections=True,
+                       includeChildForces=False)
+                ses = el(g, "selectionEntries")
+                for cname, text in choices:
+                    eid = make_id(gid, cname)
+                    e = el(ses, "selectionEntry", type="upgrade", import_=True, name=cname, hidden=False, id=eid,
+                           publicationId=self.pub_id)
+                    add_constraint(e, "max", 1, eid + "max")
+                    add_rule(e, cname, text, eid)
+                    add_cost(e, 0)
 
     def apply_rule_limits(self):
         """'An army may only include a maximum of one model with this special rule per 1,000 points'

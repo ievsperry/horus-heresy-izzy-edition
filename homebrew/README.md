@@ -19,6 +19,7 @@ python3 homebrew/build_catalogue.py homebrew/source/drukhari.md "Homebrew - Aeld
 python3 homebrew/build_catalogue.py homebrew/source/asuryani.md "Homebrew - Aeldari (Asuryani).cat"
 python3 homebrew/build_catalogue.py homebrew/source/anhrathe.md "Homebrew - Aeldari (Anhrathe).cat"
 python3 homebrew/build_catalogue.py homebrew/source/rillietann.md "Homebrew - Aeldari (Rillietann).cat"
+python3 homebrew/build_catalogue.py homebrew/source/traders-militant.md "Homebrew - Traders Militant.cat"
 ```
 
 Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
@@ -229,6 +230,31 @@ loading. The script prints anything in the doc it could not place.
 - A "## Primarch" section puts its units in the game system's Primarch slot (Ghazghkull Thraka),
   counting toward the Lords of War and Primarchs points limit. "If you take this entry, you may not
   also take X" makes the two entries exclusive (only one Vect).
+- A "####" heading inside a datasheet that has its own Unit Composition (the Retainers Militant's Adjuevant
+  Medicae, Navigator Nobilis and the rest) is a model the unit may include: it keeps its own profile, wargear,
+  rules and options, and sits in a "Retainers" group on the unit at the cost and count its option row gives
+  ("one of each", "up to two"). A retainer whose row starts "If the army includes a Detachment with the X
+  Faction/Sub-faction" only shows while the roster has that army's selection (the Mechanicum, Legio Custodes,
+  Sisters of Silence, Solar Auxilia or Imperialis Militia entry of the game system, the Asuryani or Rillietann
+  army entry, or a unit with the Legiones Astartes category).
+- A "Force Organisation" table headed "X Detachment (Primary only)" with rows such as "HQ: 1 Compulsory" and
+  "Elites: 2 Compulsory, +3 Optional" is a Force Organisation Chart of the catalogue's own (the Aegis Militant
+  Detachment), taken once per army. Allied and Lords of War Detachments stay the game system's.
+- A rule under "## Army-wide Special Rules" that says a model "must select one" of the "####" headings below
+  it (Warrants of Trade) is a required pick of one on every unit with the rule, hidden and optional when the
+  unit is in an Allied Detachment.
+- Items the doc names but leaves to the official lists (Auric Warplate, Execution Blade, Legio Custodes,
+  Ex Oblivio) are copied from the official catalogues, keeping their profiles, text and the core rules they
+  link; "Melta Bombs" and "Psyk-Out Grenades" are the game system's Meltabombs and Psyk-out Granades. "Force
+  Weapon", when the armoury lists Force Axe, Maul, Staff and Sword, is a pick of one of them.
+- A "| Wargear | Effect |" table under one heading ("Forceshield, Improved Forceshield and Holo-Suit") is an
+  item per row. A "| Relic | Effect | Cost |" table whose text says "A Rogue Trader Militant may take one" is a
+  group of that heading's name on that unit.
+- "Any Militant Bodyguard or Trader-Militant Standard Bearer may exchange" applies to both models. "their
+  Laspistol and/or Power Weapon, each for one of" is a separate swap of each. "either or both of its Arkadia
+  Pattern Grav-Attack's Heavy Bolters" swaps the weapons the wargear says it has. An options table with no
+  heading, a "Dedicated Transport: ..." line, "0-1 per army." (one per roster), a "## Troops" section that says
+  "These units are Dedicated Transports.", and a note written after the Special Rules list are all read.
 
 ## Not enforced
 
@@ -254,6 +280,10 @@ loading. The script prints anything in the doc it could not place.
   Cohorts: Infantry must start Embarked, no models with Movement 0, no Fortifications, Line only in a Primary
   Detachment) are rule text only; the Armoured Fist Troops choice itself takes any one Leman Russ Strike or Assault
   Squadron and gains Line as a Compulsory Troops choice.
+- Traders Militant: the Aegis Militant Detachment's extra Elites choice from the Knights Errant, Divisio
+  Assassinorum or Cults Abominatio lists, Traders Militant Elites taken as Troops in an Allied Detachment, the
+  Allied Detachment count (one per 1,000 points) and the Warrants of Trade's Detachment limits are rule text
+  only. The Indomitus Terminator Armour's +1 Wound and Heavy Sub-type on the Rogue Trader is a note.
 
 ## Game system and official catalogue tools
 
