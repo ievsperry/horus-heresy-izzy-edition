@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="212" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="214" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -1691,6 +1691,26 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
               <conditions>
                 <condition field="selections" scope="force" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="atLeast"/>
               </conditions>
+            </modifier>
+            <modifier type="increment" field="5474-d2f8-4d1d-66be" value="1">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8b09-15d1-a2c5-8532" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="db4a-57f3-f451-da91" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="5474-d2f8-4d1d-66be" value="1">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8b09-15d1-a2c5-8532" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                    <condition type="atLeast" value="2" field="selections" scope="force" childId="db4a-57f3-f451-da91" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>

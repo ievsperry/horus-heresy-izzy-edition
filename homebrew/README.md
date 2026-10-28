@@ -243,6 +243,44 @@ loading. The script prints anything in the doc it could not place.
 - A rule under "## Army-wide Special Rules" that says a model "must select one" of the "####" headings below
   it (Warrants of Trade) is a required pick of one on every unit with the rule, hidden and optional when the
   unit is in an Allied Detachment.
+- "A Rogue Trader that takes Indomitus Terminator Armour gains +1 Wound and the Heavy Sub-type": once the model has
+  the item, its profile shows the extra Wound and the Sub-type in its Unit Type, and it has the Sub-type's category.
+- A doc title without "for The" ("Traders Militant Horus Heresy 2.0 - Homebrew Conversion") still names the
+  faction ("Traders Militant").
+- Army-building limits a list's rules set beyond what its datasheets say live in their own module, named in
+  `FACTION_LIMITS` in build_catalogue.py and run after the catalogue is built. `traders_militant_limits.py`:
+  - Each Detachment is counted by the faction selection every catalogue requires in a force (the Allegiance
+    entry: "Mechanicum", "XIII: Ultramarines", a homebrew army entry), and Xenos Detachments by the Xenos Army
+    category.
+  - Each Warrant of Trade carries its Limitations as limits on the Warrant, so the app flags the Warrant the army
+    breaks: Compliance (no Xenos Detachments; at most one Agents of the Emperor or Warmaster Detachment), Conquest
+    (at most one Xenos Detachment; no Agents Detachments), Exploration (exactly one Xenos Detachment; at most one
+    Legiones Astartes Detachment, counting Blackshields and Shattered Legions; at most two Mechanicum; no Agents
+    Detachments) and Warrant-Breaker (Allied and Optional Detachments only from Xenos or Imperial Army Factions;
+    no Faction more than twice). Agents of the Emperor are Legio Custodes and Sisters of Silence; Agents of the
+    Warmaster are Daemons of the Ruinstorm and Bound Daemons. The Imperial Army is Solar Auxilia, Imperialis
+    Militia and the homebrew Astra Militarum.
+  - The Aegis Militant Detachment may take one Clade Assassins, Nathaniel Garro or Tylos Rubio (Loyalist) or
+    Cults Abominatio (Traitor) unit from LI - Assassins and Agents as an Elites choice, shown as the official
+    catalogues show them (Garro and Rubio with Legacies). It counts toward the Elites maximum but not the two
+    Compulsory Elites, and only one may be taken.
+  - "Allied Detachments (one per 1,000 points)", taken automatically in the Aegis Militant Detachment, is flagged
+    when the army has more Allied Detachments than one per full 1,000 points of its points limit, plus one for
+    the Detachment a Warrant's Effects add (Compliance: an Agents Detachment; Conquest: a Xenos Detachment;
+    Exploration: up to two Mechanicum Detachments).
+- "For every five models in the unit, one ... may" is a one-in-five limit like "For every 5 models,". "either or
+  both Bolt Pistols" swaps each pistol; "both Bolt Pistols for one of" swaps the pair for one item. "its A or B for
+  one of", when the model has both, is a swap of each. "Any model without a X may take" reads as "Any model".
+  "The entire unit may take: Haywire grenades, +3 points each" costs that per model.
+- "Needle Cannon (with Suspensor Web)" is the weapon and the Suspensor Web; brackets that only name the weapon's own
+  profiles ("Reaper Launcher (with Starswarm, Starshot, and Starhawk Missiles)") are the weapon. "Executor
+  Great-Blade with in-built Vratine Bolter" is both weapons. Armoury rows "X (Ranged)" and "X (Melee)" are one
+  weapon X with both profiles. A free option repeating the weapon the swap starts with is left out.
+- "its Halian Heavy Jetbike's Heavy Snare Cannon" works like "either or both of its X's Y": the weapon the wargear
+  says it has ("A Halian Heavy Jetbike has a Heavy Snare Cannon") joins the model's wargear.
+- From the official catalogues the Builder also takes items behind a mount ("Centreline Mounted Enhanced Arachnus
+  Blaze Cannon"), "Twin-Linked X" (X's profiles with Twin-linked), and singular or plural names ("Spectra Cloak" is
+  "Spectra Cloaks"). An official rule spelt another way ("Ex Oblivio", "Ex-Oblivio") is linked by its own name.
 - Items the doc names but leaves to the official lists (Auric Warplate, Execution Blade, Legio Custodes,
   Ex Oblivio) are copied from the official catalogues, keeping their profiles, text and the core rules they
   link; "Melta Bombs" and "Psyk-Out Grenades" are the game system's Meltabombs and Psyk-out Granades. "Force
@@ -280,10 +318,7 @@ loading. The script prints anything in the doc it could not place.
   Cohorts: Infantry must start Embarked, no models with Movement 0, no Fortifications, Line only in a Primary
   Detachment) are rule text only; the Armoured Fist Troops choice itself takes any one Leman Russ Strike or Assault
   Squadron and gains Line as a Compulsory Troops choice.
-- Traders Militant: the Aegis Militant Detachment's extra Elites choice from the Knights Errant, Divisio
-  Assassinorum or Cults Abominatio lists, Traders Militant Elites taken as Troops in an Allied Detachment, the
-  Allied Detachment count (one per 1,000 points) and the Warrants of Trade's Detachment limits are rule text
-  only. The Indomitus Terminator Armour's +1 Wound and Heavy Sub-type on the Rogue Trader is a note.
+- Traders Militant: Traders Militant Elites taken as Troops in an Allied Detachment are rule text only.
 
 ## Game system and official catalogue tools
 
@@ -332,3 +367,24 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Twin-linked special rule), runs `add_gst_weapons.py` to put it in the game system, and points the options that
   show the twin-linked weapon (by name, or by carrying a separate Twin-linked rule) at the new entry. Running it
   again changes nothing.
+- `python3 homebrew/add_sisters_of_silence.py` adds the Liber Imperatus Sisters of Silence expansion (the Claude Doc
+  "Sisters of Silence Horus Heresy 2.0 - Homebrew Conversion", kept as `source/sisters-of-silence.md`) to
+  `2022 - LI - Sisters Of Silence.cat`. build_catalogue.py's Builder reads the doc's datasheets; their units then
+  move into the official file as text, linked to the official entries wherever the catalogue, its libraries or the
+  game system already have them (Vratine Bolter, Execution Blade, Silent Sisterhood (X)), so only new weapons and
+  wargear are added. Each unit carries its Chamber as the official units do (the Chamber's category and its
+  required Silent Sisterhood (Chamber of X) entry; an Oblivion or Judgement HQ also counts as that Chamber's HQ),
+  with the Anathema Sub-type. It also writes:
+  - the root entries (vehicles and walkers hidden in a Zone Mortalis force, Sikari Dar and the Knight Ensign
+    Covenant one per army) and the Dedicated Transports each datasheet names, by size;
+  - the two-pistol swaps (one group of two pistols and one-pistol swaps, Perditor heavy weapons one in five; one
+    group for swapping both, which empties the first), the Caedecii's Sinistrae Magnificat (one per unit, and no
+    Spiculus Bolt Launcher or Vratine Missile Launcher on the model that has it);
+  - Sikari Dar's Eater of Daemons Warlord Trait (the Warlord whenever she is in the Primary Detachment) and her two
+    extra Fast Attack choices, which must be Pursuer Cadres and do not count toward the Chamber of Oblivion limit
+    (the Crusade chart's Fast Attack maximum and the Chamber limit each rise by one per Pursuer Cadre, up to two);
+  - the doc's extra options on official units (Indictor Axe for the Knight Abyssal, Knight Centura and Raptora;
+    the Questora's and Eradicator's new Vratine Bolter swaps; Artificer Armour for Knight Vestals; Charnabal or
+    Power Weapons for Subjugators) and the Silent Sisterhood Grav-Rhino and Rhino for the official Cadres that may
+    take them, as an alternative to their Kharon Pattern Acquisitor, while they have no more than twelve models.
+  It refuses to run on a catalogue that already has the expansion.
