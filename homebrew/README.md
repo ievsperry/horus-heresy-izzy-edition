@@ -243,6 +243,31 @@ loading. The script prints anything in the doc it could not place.
 - A rule under "## Army-wide Special Rules" that says a model "must select one" of the "####" headings below
   it (Warrants of Trade) is a required pick of one on every unit with the rule, hidden and optional when the
   unit is in an Allied Detachment.
+- "A Rogue Trader that takes Indomitus Terminator Armour gains +1 Wound and the Heavy Sub-type": once the model has
+  the item, its profile shows the extra Wound and the Sub-type in its Unit Type, and it has the Sub-type's category.
+- A doc title without "for The" ("Traders Militant Horus Heresy 2.0 - Homebrew Conversion") still names the
+  faction ("Traders Militant").
+- Army-building limits a list's rules set beyond what its datasheets say live in their own module, named in
+  `FACTION_LIMITS` in build_catalogue.py and run after the catalogue is built. `traders_militant_limits.py`:
+  - Each Detachment is counted by the faction selection every catalogue requires in a force (the Allegiance
+    entry: "Mechanicum", "XIII: Ultramarines", a homebrew army entry), and Xenos Detachments by the Xenos Army
+    category.
+  - Each Warrant of Trade carries its Limitations as limits on the Warrant, so the app flags the Warrant the army
+    breaks: Compliance (no Xenos Detachments; at most one Agents of the Emperor or Warmaster Detachment), Conquest
+    (at most one Xenos Detachment; no Agents Detachments), Exploration (exactly one Xenos Detachment; at most one
+    Legiones Astartes Detachment, counting Blackshields and Shattered Legions; at most two Mechanicum; no Agents
+    Detachments) and Warrant-Breaker (Allied and Optional Detachments only from Xenos or Imperial Army Factions;
+    no Faction more than twice). Agents of the Emperor are Legio Custodes and Sisters of Silence; Agents of the
+    Warmaster are Daemons of the Ruinstorm and Bound Daemons. The Imperial Army is Solar Auxilia, Imperialis
+    Militia and the homebrew Astra Militarum.
+  - The Aegis Militant Detachment may take one Clade Assassins, Nathaniel Garro or Tylos Rubio (Loyalist) or
+    Cults Abominatio (Traitor) unit from LI - Assassins and Agents as an Elites choice, shown as the official
+    catalogues show them (Garro and Rubio with Legacies). It counts toward the Elites maximum but not the two
+    Compulsory Elites, and only one may be taken.
+  - "Allied Detachments (one per 1,000 points)", taken automatically in the Aegis Militant Detachment, is flagged
+    when the army has more Allied Detachments than one per full 1,000 points of its points limit, plus one for
+    the Detachment a Warrant's Effects add (Compliance: an Agents Detachment; Conquest: a Xenos Detachment;
+    Exploration: up to two Mechanicum Detachments).
 - Items the doc names but leaves to the official lists (Auric Warplate, Execution Blade, Legio Custodes,
   Ex Oblivio) are copied from the official catalogues, keeping their profiles, text and the core rules they
   link; "Melta Bombs" and "Psyk-Out Grenades" are the game system's Meltabombs and Psyk-out Granades. "Force
@@ -280,10 +305,7 @@ loading. The script prints anything in the doc it could not place.
   Cohorts: Infantry must start Embarked, no models with Movement 0, no Fortifications, Line only in a Primary
   Detachment) are rule text only; the Armoured Fist Troops choice itself takes any one Leman Russ Strike or Assault
   Squadron and gains Line as a Compulsory Troops choice.
-- Traders Militant: the Aegis Militant Detachment's extra Elites choice from the Knights Errant, Divisio
-  Assassinorum or Cults Abominatio lists, Traders Militant Elites taken as Troops in an Allied Detachment, the
-  Allied Detachment count (one per 1,000 points) and the Warrants of Trade's Detachment limits are rule text
-  only. The Indomitus Terminator Armour's +1 Wound and Heavy Sub-type on the Rogue Trader is a note.
+- Traders Militant: Traders Militant Elites taken as Troops in an Allied Detachment are rule text only.
 
 ## Game system and official catalogue tools
 

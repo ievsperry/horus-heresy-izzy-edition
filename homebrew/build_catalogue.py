@@ -11,6 +11,7 @@ IDs are derived from names, so rebuilding keeps them stable and saved rosters ke
 working. Anything the parser cannot place is listed on stderr.
 """
 import hashlib
+import importlib
 import itertools
 import itertools
 import os
@@ -29,6 +30,8 @@ XENOS_FACTIONS = {"Tyranids", "Orks", "Necrons", "T'au Empire", "Drukhari", "Asu
 XENOS_ARMY_CATEGORY = ("3c8e-5a1d-9b47-e2f0", "Xenos Army")
 PTS = "d2ee-04cb-5f8a-2642"
 ALLIED_DETACHMENT = "d4f2-6da5-b6de-06ec"
+# Army-building limits a list's rules set that the doc's wording alone cannot carry: faction -> module in homebrew/
+FACTION_LIMITS = {"Traders Militant": "traders_militant_limits"}
 
 UNIT_PROFILE = "4bb2-cb95-e6c8-5a21"
 # the characteristics of a unit profile, in the order of its stats
@@ -3272,6 +3275,7 @@ class Builder:
             self.add_unit_rule(unit, line, uid, ds)
         if ds["transport"]:
             add_rule(unit, "Transport", " ".join(ds["transport"]), uid)
+        self.apply_wargear_profiles(ds, unit, models)
         for n in ds["notes"]:
             if n:
                 add_rule(unit, "Note", n, uid + n[:20])
@@ -3306,6 +3310,38 @@ class Builder:
         # Categories on the unit itself.
         add_category(unit, *UNIT_CATEGORY, uid)
         return uid
+
+    def apply_wargear_profiles(self, ds, unit, models):
+        """'A Rogue Trader that takes Indomitus Terminator Armour gains +1 Wound and the Heavy Sub-type': once the
+        model has the item, its profile shows the extra Wounds and the Sub-type, and it has the Sub-type's category."""
+        keep = []
+        for n in ds["notes"]:
+            m = re.match(r"An? (.+?) that takes (.+?) gains \+(\d) Wounds?(?: and the (\w+) Sub-type)?(?:\.\s*|$)", n)
+            mname = m and next((x for x in models if forms(x) & forms(m.group(1))), None)
+            item = m and self.find_upgrade(m.group(2))
+            if not (mname and item):
+                keep.append(n)
+                continue
+            keep.append(n[m.end():])  # the rest of the note ("The Rogue Trader may also take one ...")
+            me = unit.find(f"selectionEntries/selectionEntry[@id='{models[mname]['id']}']")
+            prof = me.find("profiles/profile")
+            mods = child(prof, "modifiers")
+            changes = [("increment", UNIT_CHARS[6][1], m.group(3))]
+            if m.group(4):
+                typ = models[mname]["types"]
+                typ = re.sub(r"\((.+)\)$", lambda x: f"({m.group(4)}, {x.group(1)})", typ) if typ.endswith(")") \
+                    else f"{typ} ({m.group(4)})"
+                changes.append(("set", UNIT_CHARS[0][1], typ))
+            for kind, field, value in changes:
+                mod = el(mods, "modifier", type=kind, field=field, value=value)
+                el(el(mod, "conditions"), "condition", type="atLeast", value=1, field="selections", scope=me.get("id"),
+                   childId=item, shared=True, includeChildSelections=True, includeChildForces=False)
+            cat = TYPE_CATEGORIES.get(m.group(4) or "")
+            if cat:
+                mod = el(child(me, "modifiers"), "modifier", type="add", field="category", value=cat[0])
+                el(el(mod, "conditions"), "condition", type="atLeast", value=1, field="selections", scope=me.get("id"),
+                   childId=item, shared=True, includeChildSelections=True, includeChildForces=False)
+        ds["notes"] = keep
 
     @staticmethod
     def count_word(text):
@@ -4464,6 +4500,8 @@ class Builder:
         self.apply_granted_biomorphs()
         self.apply_rule_limits()
         self.apply_rule_choices()
+        if self.faction in FACTION_LIMITS:
+            importlib.import_module(FACTION_LIMITS[self.faction]).apply(self)
         self.root.append(self.shared_entries)
         if len(self.shared_groups):
             self.root.append(self.shared_groups)
@@ -4562,6 +4600,7 @@ class Builder:
 
     def apply_rule_choices(self):
         """A unit with Warrants of Trade must pick one Warrant; in an Allied Detachment it picks none."""
+        self.rule_choice_ids = {}  # "Warrant of Conquest" -> its entry on each unit
         for name, choices in getattr(self, "rule_choices", {}).items():
             rid = self.local_rules[norm(name)][0]
             for unit in self.shared_entries.findall("selectionEntry[@type='unit']"):
@@ -4580,6 +4619,7 @@ class Builder:
                 ses = el(g, "selectionEntries")
                 for cname, text in choices:
                     eid = make_id(gid, cname)
+                    self.rule_choice_ids.setdefault(cname, []).append(eid)
                     e = el(ses, "selectionEntry", type="upgrade", import_=True, name=cname, hidden=False, id=eid,
                            publicationId=self.pub_id)
                     add_constraint(e, "max", 1, eid + "max")
@@ -4622,7 +4662,7 @@ class Builder:
 # Child element order required by the BattleScribe catalogue schema.
 CATALOGUE_ORDER = ["readme", "publications", "costTypes", "profileTypes", "categoryEntries", "forceEntries",
                    "selectionEntries", "entryLinks", "rules", "infoLinks", "sharedSelectionEntries",
-                   "sharedSelectionEntryGroups", "sharedRules", "sharedProfiles", "sharedInfoGroups"]
+                   "sharedSelectionEntryGroups", "sharedRules", "sharedProfiles", "sharedInfoGroups", "catalogueLinks"]
 ENTRY_ORDER = ["comment", "modifiers", "modifierGroups", "constraints", "profiles", "rules", "infoGroups",
                "infoLinks", "categoryLinks", "selectionEntries", "selectionEntryGroups", "entryLinks", "costs",
                "characteristics"]
@@ -4645,7 +4685,7 @@ def main():
     src, out = sys.argv[1], sys.argv[2]
     text = open(src, encoding="utf-8").read()
     first = next(l for l in text.splitlines() if l.startswith("# "))[2:].strip()
-    faction = re.sub(r" for The Horus Heresy.*", "", first)
+    faction = re.sub(r" (?:for )?(?:The )?Horus Heresy.*", "", first)  # "Traders Militant Horus Heresy 2.0 - ..."
     doc_name = first if "Homebrew" in first else first + " — Homebrew Conversion"
 
     # BattleScribe and NewRecruit only offer an update when the revision goes up, so a
