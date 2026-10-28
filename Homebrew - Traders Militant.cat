@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="7842-5e80-aeae-2118" name="Homebrew - Traders Militant" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="7842-5e80-aeae-2118" name="Homebrew - Traders Militant" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="3ea8-cc3d-f08e-1e10" name="Traders Militant Horus Heresy 2.0 - Homebrew Conversion" shortName="HB - Traders Militant" />
   </publications>
@@ -525,9 +525,9 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Lascutter (Ranged)" hidden="false" id="418f-f52f-480b-7483" publicationId="3ea8-cc3d-f08e-1e10">
+    <selectionEntry type="upgrade" import="true" name="Lascutter" hidden="false" id="b225-98e7-1fae-7bcf" publicationId="3ea8-cc3d-f08e-1e10">
       <profiles>
-        <profile name="Lascutter (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="797c-ef33-1c49-ad6e" publicationId="3ea8-cc3d-f08e-1e10">
+        <profile name="Lascutter (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="75e3-5752-5844-7acc" publicationId="3ea8-cc3d-f08e-1e10">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">8"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
@@ -535,13 +535,22 @@
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Ranged)</characteristic>
           </characteristics>
         </profile>
+        <profile name="Lascutter (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5c23-ede2-1a10-4b6b" publicationId="3ea8-cc3d-f08e-1e10">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Makeshift Weapon</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Armourbane (X)" id="0b3f-ca7f-afa7-f5d5" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+        <infoLink name="Armourbane (X)" id="9c4f-fdc2-04e0-e9a6" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Armourbane (Ranged)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Makeshift Weapon" id="e1e8-c897-c179-ddf3" hidden="false" targetId="bb08-45e8-c605-7990" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Photon Gauntlet" hidden="false" id="af3b-1079-5fab-5749" publicationId="3ea8-cc3d-f08e-1e10">
@@ -1017,21 +1026,6 @@
             <modifier type="set" field="name" value="Rending (6+)" />
           </modifiers>
         </infoLink>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Lascutter (Melee)" hidden="false" id="6a06-7629-7f22-1934" publicationId="3ea8-cc3d-f08e-1e10">
-      <profiles>
-        <profile name="Lascutter (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="463f-b85d-dab5-841d" publicationId="3ea8-cc3d-f08e-1e10">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Makeshift Weapon</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Makeshift Weapon" id="2cab-c55e-a215-b64d" hidden="false" targetId="bb08-45e8-c605-7990" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lightning Claw" hidden="false" id="6faa-379a-30e0-6bf0" publicationId="3ea8-cc3d-f08e-1e10">
@@ -3133,7 +3127,7 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Lascutter (Ranged)" hidden="false" id="e9ab-ac4d-7f1b-13e0" type="selectionEntry" targetId="418f-f52f-480b-7483">
+                    <entryLink import="true" name="Lascutter" hidden="false" id="e9ab-ac4d-7f1b-13e0" type="selectionEntry" targetId="b225-98e7-1fae-7bcf">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45f2-855d-00d4-0f28" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
@@ -4848,6 +4842,7 @@
               </rules>
               <infoLinks>
                 <infoLink name="Chosen Warriors" id="fd77-e476-ce5a-2c75" hidden="false" targetId="13d1-9270-6539-08ed" type="rule" />
+                <infoLink name="Ex-Oblivio" id="bef5-5246-c83b-2438" hidden="false" targetId="b144-8f40-58fc-1fde" type="rule" />
                 <infoLink name="Fleet (X)" id="7702-0c93-6996-c056" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
                   <modifiers>
                     <modifier type="set" field="name" value="Fleet (1)" />
@@ -7207,35 +7202,51 @@ Limitations
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4332-f102-9114-9b06" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7108-8f62-f706-8946" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 5" hidden="false" id="623c-11af-4743-fa79">
+                  <modifiers>
+                    <modifier type="increment" field="5141-118a-92b5-7ae8" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="4c2c-c693-5671-95f0" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ce7-3645-ed47-33a1" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="4c2c-c693-5671-95f0" shared="true" id="5141-118a-92b5-7ae8" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Chainfist" hidden="false" id="4ddb-0d42-10c0-f14f" type="selectionEntry" targetId="2d4c-60e9-98d7-e3f5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2f2-3835-df43-d6b8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Lascutter" hidden="false" id="1e43-b4f3-7b5b-b1fb" type="selectionEntry" targetId="b225-98e7-1fae-7bcf">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6191-e558-8300-11c0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Power Fist" hidden="false" id="a850-163c-5002-a3e3" type="selectionEntry" targetId="768d-b89b-7328-d749">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f50-514f-c0bd-d92e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Close Combat Weapon" hidden="false" id="4cb1-d1b7-497d-74f6" type="selectionEntry" targetId="3d50-2f85-06ff-6aee">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d00-86fa-545d-b913" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Chainfist" hidden="false" id="4ddb-0d42-10c0-f14f" type="selectionEntry" targetId="2d4c-60e9-98d7-e3f5">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2f2-3835-df43-d6b8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Lascutter (Ranged)" hidden="false" id="1e43-b4f3-7b5b-b1fb" type="selectionEntry" targetId="418f-f52f-480b-7483">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6191-e558-8300-11c0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Power Fist" hidden="false" id="a850-163c-5002-a3e3" type="selectionEntry" targetId="768d-b89b-7328-d749">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f50-514f-c0bd-d92e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -7735,59 +7746,75 @@ Limitations
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1db3-56b7-10d7-3d03" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d91f-acb5-8199-bdfb" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 5" hidden="false" id="dc95-ae77-73c9-5f17">
+                  <modifiers>
+                    <modifier type="increment" field="0c98-de32-d324-f40d" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="1281-4460-247f-844b" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="de81-782c-38a9-e42b" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="1281-4460-247f-844b" shared="true" id="0c98-de32-d324-f40d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Assault Needler" hidden="false" id="5af0-0615-f8c2-fdc9" type="selectionEntry" targetId="bb3d-b162-c773-70a2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd6d-ff0b-6b37-89b0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Hot-Shot Volley Gun" hidden="false" id="2431-999c-9ba0-b595" type="selectionEntry" targetId="d45c-1362-59a4-3d4f">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bb1-e989-b722-cfd3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Lascutter" hidden="false" id="c720-f278-7a0e-81be" type="selectionEntry" targetId="b225-98e7-1fae-7bcf">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d414-21df-917f-e354" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Multi-Laser" hidden="false" id="f941-0e5f-d560-7872" type="selectionEntry" targetId="2a5b-eae4-8918-2bbe">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f330-59d7-0039-ebac" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Rotor Cannon" hidden="false" id="ea02-74f0-8548-5a65" type="selectionEntry" targetId="5ce3-3aa5-3f5e-9ead">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="340b-6ee1-3756-bb9b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Volkite Caliver" hidden="false" id="075c-e15b-9452-f86f" type="selectionEntry" targetId="d5ae-acb9-f9b9-951d">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c91-c277-edec-0934" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Lasgun" hidden="false" id="7250-2d80-8009-f7d9" type="selectionEntry" targetId="376e-c5d6-99c3-49c9">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a96e-8569-4794-b1c7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Assault Needler" hidden="false" id="5af0-0615-f8c2-fdc9" type="selectionEntry" targetId="bb3d-b162-c773-70a2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd6d-ff0b-6b37-89b0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Hot-Shot Volley Gun" hidden="false" id="2431-999c-9ba0-b595" type="selectionEntry" targetId="9a5c-b838-ebd8-afe5">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bb1-e989-b722-cfd3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Lascutter (Ranged)" hidden="false" id="c720-f278-7a0e-81be" type="selectionEntry" targetId="418f-f52f-480b-7483">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d414-21df-917f-e354" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Multi-Laser (with Suspensor Web)" hidden="false" id="f941-0e5f-d560-7872" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f330-59d7-0039-ebac" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Rotor Cannon" hidden="false" id="ea02-74f0-8548-5a65" type="selectionEntry" targetId="5ce3-3aa5-3f5e-9ead">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="340b-6ee1-3756-bb9b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Volkite Caliver" hidden="false" id="075c-e15b-9452-f86f" type="selectionEntry" targetId="d5ae-acb9-f9b9-951d">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c91-c277-edec-0934" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
                 </entryLink>
                 <entryLink import="true" name="Hot-Shot Lasgun" hidden="false" id="3401-2f73-65e7-9bf0" type="selectionEntry" targetId="4970-188e-26a4-506c">
                   <constraints>
@@ -8224,6 +8251,44 @@ Limitations
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="13" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hot-Shot Volley Gun" hidden="false" id="d45c-1362-59a4-3d4f" publicationId="3ea8-cc3d-f08e-1e10">
+      <entryLinks>
+        <entryLink import="true" name="Hot-Shot Volley Gun" hidden="false" id="aebe-a506-7361-0a28" type="selectionEntry" targetId="9a5c-b838-ebd8-afe5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d497-e2db-93da-47f1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78e3-0628-2852-965b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Suspensor Web" hidden="false" id="49b8-f4ce-c5d4-7ff6" type="selectionEntry" targetId="3fe5-af5e-a1a2-bedf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72db-1d94-2386-4422" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a083-36bd-8902-5b6d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Multi-Laser" hidden="false" id="2a5b-eae4-8918-2bbe" publicationId="3ea8-cc3d-f08e-1e10">
+      <entryLinks>
+        <entryLink import="true" name="Multi-Laser" hidden="false" id="5625-fd08-97cb-efdb" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa94-cef0-7f54-6161" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8d0-d849-8ac6-e38a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Suspensor Web" hidden="false" id="574d-6561-76c2-dcc2" type="selectionEntry" targetId="3fe5-af5e-a1a2-bedf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="369f-8c7e-5617-479e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54fa-71f1-a05f-35e5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Arvus Transport" hidden="false" id="62db-6f83-55ac-a923" publicationId="3ea8-cc3d-f08e-1e10">

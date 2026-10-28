@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="d5ae-9e15-7ef2-10f7" name="Asuryani for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Asuryani" />
   </publications>
@@ -991,12 +991,34 @@
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Force, Murderous Strike (6+)</characteristic>
           </characteristics>
         </profile>
+        <profile name="Singing Spear (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="75bb-69fa-2172-17d2" publicationId="d5ae-9e15-7ef2-10f7">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Soul Tear</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Singing Spear (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0a62-6d9d-d0ad-6401" publicationId="d5ae-9e15-7ef2-10f7">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+), Soul Tear</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Force" id="d77b-ca8e-0fa0-1d9a" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule" />
         <infoLink name="Murderous Strike (X)" id="a87c-0c63-bdb2-e5bd" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Murderous Strike (6+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Soul Tear" id="1017-286f-6785-db27" hidden="false" targetId="e038-90d4-cabf-24e7" type="rule" />
+        <infoLink name="Breaching (X)" id="8f04-36e4-827d-cad8" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (5+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1246,9 +1268,9 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Laser Lance (Ranged)" hidden="false" id="d45d-8091-e095-718d" publicationId="d5ae-9e15-7ef2-10f7">
+    <selectionEntry type="upgrade" import="true" name="Laser Lance" hidden="false" id="ed0d-7448-0728-0bd7" publicationId="d5ae-9e15-7ef2-10f7">
       <profiles>
-        <profile name="Laser Lance (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d0f4-51d9-2907-ac92" publicationId="d5ae-9e15-7ef2-10f7">
+        <profile name="Laser Lance (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1083-4720-a5df-dccd" publicationId="d5ae-9e15-7ef2-10f7">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -1256,9 +1278,27 @@
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Lance</characteristic>
           </characteristics>
         </profile>
+        <profile name="Laser Lance (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0f5d-3c5b-8768-9ecd" publicationId="d5ae-9e15-7ef2-10f7">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+), Lance, Reach (1)</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Lance" id="7f73-1f45-fcf2-9f3d" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule" />
+        <infoLink name="Lance" id="da6d-6d74-4c50-75a1" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule" />
+        <infoLink name="Breaching (X)" id="9c51-3088-8487-2498" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (5+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Reach (X)" id="89b6-c3a1-b651-79b7" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Reach (1)" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lynx Pulsar" hidden="false" id="9253-7b03-a03f-4025" publicationId="d5ae-9e15-7ef2-10f7">
@@ -1469,9 +1509,9 @@
         <infoLink name="Skyfire" id="aaad-bca7-44f8-0498" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule" />
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Star Lance (Ranged)" hidden="false" id="9b10-b927-2de2-1230" publicationId="d5ae-9e15-7ef2-10f7">
+    <selectionEntry type="upgrade" import="true" name="Star Lance" hidden="false" id="a393-e2f0-49d8-86a1" publicationId="d5ae-9e15-7ef2-10f7">
       <profiles>
-        <profile name="Star Lance (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="b034-90ca-1b8b-e2b2" publicationId="d5ae-9e15-7ef2-10f7">
+        <profile name="Star Lance (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ba74-80f8-94ac-d655" publicationId="d5ae-9e15-7ef2-10f7">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -1479,14 +1519,27 @@
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (5+), Lance</characteristic>
           </characteristics>
         </profile>
+        <profile name="Star Lance (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="b9ab-1599-d7eb-4511" publicationId="d5ae-9e15-7ef2-10f7">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Lance, Reach (1)</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Breaching (X)" id="7da2-854b-b9cc-9998" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+        <infoLink name="Breaching (X)" id="805d-cd68-d908-59cc" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Breaching (5+)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Lance" id="80a1-efbc-2b5a-23de" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule" />
+        <infoLink name="Lance" id="1691-6416-cbc8-2c54" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule" />
+        <infoLink name="Reach (X)" id="21a4-6d09-36dc-8f12" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Reach (1)" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sunrifle" hidden="false" id="921f-5d8d-93be-620e" publicationId="d5ae-9e15-7ef2-10f7">
@@ -1929,9 +1982,9 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Chainsabre (Ranged)" hidden="false" id="d94d-7e9d-5f29-d34d" publicationId="d5ae-9e15-7ef2-10f7">
+    <selectionEntry type="upgrade" import="true" name="Chainsabre" hidden="false" id="3e16-de2b-b7e1-cead" publicationId="d5ae-9e15-7ef2-10f7">
       <profiles>
-        <profile name="Chainsabre (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="8066-6382-494e-c47e" publicationId="d5ae-9e15-7ef2-10f7">
+        <profile name="Chainsabre (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1d0a-66d6-7fc0-680a" publicationId="d5ae-9e15-7ef2-10f7">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -1939,13 +1992,27 @@
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (6+)</characteristic>
           </characteristics>
         </profile>
+        <profile name="Chainsabre (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="27ff-856b-9f38-6997" publicationId="d5ae-9e15-7ef2-10f7">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+), Shred</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Breaching (X)" id="3078-becc-87c5-328a" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+        <infoLink name="Breaching (X)" id="01f6-bf68-a735-88b7" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Breaching (6+)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Breaching (X)" id="f3c8-6673-688d-6c0b" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (5+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shred" id="d5be-313c-2c39-b29a" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gravis Shuriken Cannon" hidden="false" id="f7e8-ec8f-97f5-498b" publicationId="d5ae-9e15-7ef2-10f7">
@@ -1967,9 +2034,9 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scorpion's Claw (Ranged)" hidden="false" id="22f1-a329-9023-ce09" publicationId="d5ae-9e15-7ef2-10f7">
+    <selectionEntry type="upgrade" import="true" name="Scorpion's Claw" hidden="false" id="ad8f-31e6-dbf5-35c8" publicationId="d5ae-9e15-7ef2-10f7">
       <profiles>
-        <profile name="Scorpion's Claw (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="887b-f37e-c895-16ec" publicationId="d5ae-9e15-7ef2-10f7">
+        <profile name="Scorpion's Claw (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e09b-e1db-1091-eac9" publicationId="d5ae-9e15-7ef2-10f7">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -1977,13 +2044,27 @@
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (6+)</characteristic>
           </characteristics>
         </profile>
+        <profile name="Scorpion's Claw (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="8f14-e273-dff5-0341" publicationId="d5ae-9e15-7ef2-10f7">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Murderous Strike (6+), Specialist Weapon</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Breaching (X)" id="5787-de28-25c4-e2c1" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+        <infoLink name="Breaching (X)" id="5060-a46b-9e30-979c" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Breaching (6+)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Murderous Strike (X)" id="1fc9-b2af-498e-3fd3" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Murderous Strike (6+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Specialist Weapon" id="9f4b-8b46-c1bc-0ac7" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sonic Lance" hidden="false" id="1b6f-dfc0-f269-b358" publicationId="d5ae-9e15-7ef2-10f7">
@@ -2081,21 +2162,6 @@
         <infoLink name="Skyfire" id="c10c-53bd-cb3c-08de" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule" />
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Singing Spear (Ranged)" hidden="false" id="52c5-ed0e-3bd4-0c58" publicationId="d5ae-9e15-7ef2-10f7">
-      <profiles>
-        <profile name="Singing Spear (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="23ee-e634-954d-eb0b" publicationId="d5ae-9e15-7ef2-10f7">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Soul Tear</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Soul Tear" id="6622-7ab1-526e-f945" hidden="false" targetId="e038-90d4-cabf-24e7" type="rule" />
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Grenade Pack" hidden="false" id="164d-f5f5-9caf-4b61" publicationId="d5ae-9e15-7ef2-10f7">
       <profiles>
         <profile name="Grenade Pack" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d251-a006-e135-ec6b" publicationId="d5ae-9e15-7ef2-10f7">
@@ -2133,14 +2199,22 @@
         <infoLink name="Haywire" id="0fe8-34b6-e017-d05b" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule" />
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Triskele (Ranged)" hidden="false" id="ed1b-7e2b-09d0-195e" publicationId="d5ae-9e15-7ef2-10f7">
+    <selectionEntry type="upgrade" import="true" name="Triskele" hidden="false" id="225b-0153-66bb-e90c" publicationId="d5ae-9e15-7ef2-10f7">
       <profiles>
-        <profile name="Triskele (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="62c1-57b1-507f-c88d" publicationId="d5ae-9e15-7ef2-10f7">
+        <profile name="Triskele (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7a0c-73fc-8d28-19c8" publicationId="d5ae-9e15-7ef2-10f7">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Triskele (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="70e9-2dff-4391-610f" publicationId="d5ae-9e15-7ef2-10f7">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2168,26 +2242,6 @@
             <modifier type="set" field="name" value="Two-Handed" />
           </modifiers>
         </infoLink>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Chainsabre (Melee)" hidden="false" id="804d-3f44-1498-a5e4" publicationId="d5ae-9e15-7ef2-10f7">
-      <profiles>
-        <profile name="Chainsabre (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="265d-c75e-b353-a220" publicationId="d5ae-9e15-7ef2-10f7">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+), Shred</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Breaching (X)" id="2fa9-c44e-6c4f-d94f" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Breaching (5+)" />
-          </modifiers>
-        </infoLink>
-        <infoLink name="Shred" id="408f-94ff-86cd-9fd8" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="9374-085c-d37e-3577" publicationId="d5ae-9e15-7ef2-10f7">
@@ -2302,51 +2356,6 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Laser Lance (Melee)" hidden="false" id="d147-e2ac-fe6d-b34d" publicationId="d5ae-9e15-7ef2-10f7">
-      <profiles>
-        <profile name="Laser Lance (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="fe73-5baa-7af8-7636" publicationId="d5ae-9e15-7ef2-10f7">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+), Lance, Reach (1)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Breaching (X)" id="40ca-9ad9-9c2b-3632" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Breaching (5+)" />
-          </modifiers>
-        </infoLink>
-        <infoLink name="Lance" id="07af-cd54-d6f6-8314" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule" />
-        <infoLink name="Reach (X)" id="60a7-84ea-00ad-2417" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Reach (1)" />
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Star Lance (Melee)" hidden="false" id="04ea-117d-e531-5bba" publicationId="d5ae-9e15-7ef2-10f7">
-      <profiles>
-        <profile name="Star Lance (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d49e-1c5b-6079-343a" publicationId="d5ae-9e15-7ef2-10f7">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+5</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Lance, Reach (1)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Lance" id="9de2-dc17-ca05-df58" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule" />
-        <infoLink name="Reach (X)" id="ecdd-36b9-b35a-2b32" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Reach (1)" />
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Axe" hidden="false" id="3471-0fdc-2aa5-336e" publicationId="d5ae-9e15-7ef2-10f7">
       <profiles>
         <profile name="Power Axe" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5476-3bb4-23d8-f299" publicationId="d5ae-9e15-7ef2-10f7">
@@ -2431,26 +2440,6 @@
           </modifiers>
         </infoLink>
         <infoLink name="Shred" id="d314-efbc-3659-370f" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule" />
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scorpion's Claw (Melee)" hidden="false" id="133e-b992-c647-990e" publicationId="d5ae-9e15-7ef2-10f7">
-      <profiles>
-        <profile name="Scorpion's Claw (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="493e-ece3-38a7-9118" publicationId="d5ae-9e15-7ef2-10f7">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Murderous Strike (6+), Specialist Weapon</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Murderous Strike (X)" id="dbc5-071e-d4e8-a40f" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Murderous Strike (6+)" />
-          </modifiers>
-        </infoLink>
-        <infoLink name="Specialist Weapon" id="0913-ee1d-4622-5f88" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Star Glaive" hidden="false" id="70d5-6356-eec5-7f79" publicationId="d5ae-9e15-7ef2-10f7">
@@ -2699,26 +2688,6 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Singing Spear (Melee)" hidden="false" id="b872-777e-01d2-8e00" publicationId="d5ae-9e15-7ef2-10f7">
-      <profiles>
-        <profile name="Singing Spear (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6cd1-1bb7-893d-9229" publicationId="d5ae-9e15-7ef2-10f7">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+), Soul Tear</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Breaching (X)" id="12e2-d613-f768-ac28" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Breaching (5+)" />
-          </modifiers>
-        </infoLink>
-        <infoLink name="Soul Tear" id="63ad-d38e-21bf-d479" hidden="false" targetId="e038-90d4-cabf-24e7" type="rule" />
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Haywire Grenade" hidden="false" id="b8fd-4b6d-2090-828b" publicationId="d5ae-9e15-7ef2-10f7">
       <profiles>
         <profile name="Haywire Grenade" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="8f79-6955-321a-ae28" publicationId="d5ae-9e15-7ef2-10f7">
@@ -2800,18 +2769,6 @@
           </modifiers>
         </infoLink>
       </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Triskele (Melee)" hidden="false" id="b663-d3a6-f89a-80b6" publicationId="d5ae-9e15-7ef2-10f7">
-      <profiles>
-        <profile name="Triskele (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2f01-72d3-fe87-c100" publicationId="d5ae-9e15-7ef2-10f7">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Arhra's Bane" hidden="false" id="3134-be3c-2115-ea25" publicationId="d5ae-9e15-7ef2-10f7">
       <profiles>
@@ -4338,7 +4295,7 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
-            <entryLink import="true" name="Triskele (Ranged)" hidden="false" id="4bcc-9966-c40b-f9d1" type="selectionEntry" targetId="ed1b-7e2b-09d0-195e">
+            <entryLink import="true" name="Triskele" hidden="false" id="4bcc-9966-c40b-f9d1" type="selectionEntry" targetId="225b-0153-66bb-e90c">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01ce-0c1f-8510-f5bd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -4495,7 +4452,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5732-e735-9d19-2ce6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Laser Lance" hidden="false" id="fad4-78b4-ee28-a074" type="selectionEntry" targetId="d45d-8091-e095-718d" />
+            <entryLink import="true" name="Laser Lance" hidden="false" id="fad4-78b4-ee28-a074" type="selectionEntry" targetId="ed0d-7448-0728-0bd7" />
             <entryLink import="true" name="Power Weapon" hidden="false" id="cdaa-6bca-d601-a822" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0197-9106-cc2c-345a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4504,7 +4461,7 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
-            <entryLink import="true" name="Star Lance (Ranged)" hidden="false" id="a744-ea02-f672-6e1d" type="selectionEntry" targetId="9b10-b927-2de2-1230">
+            <entryLink import="true" name="Star Lance" hidden="false" id="a744-ea02-f672-6e1d" type="selectionEntry" targetId="a393-e2f0-49d8-86a1">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ebb-a334-0114-1550" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -4577,7 +4534,7 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
-            <entryLink import="true" name="Scorpion's Claw (Ranged)" hidden="false" id="251e-2ce3-b828-ca24" type="selectionEntry" targetId="22f1-a329-9023-ce09">
+            <entryLink import="true" name="Scorpion's Claw" hidden="false" id="251e-2ce3-b828-ca24" type="selectionEntry" targetId="ad8f-31e6-dbf5-35c8">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9922-0e43-6894-2686" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
@@ -4625,10 +4582,10 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Chainsabres" hidden="false" id="94ff-ff53-3f31-7af4" publicationId="d5ae-9e15-7ef2-10f7">
       <entryLinks>
-        <entryLink import="true" name="Chainsabre (Ranged)" hidden="false" id="7f22-db7c-c5bd-c858" type="selectionEntry" targetId="d94d-7e9d-5f29-d34d">
+        <entryLink import="true" name="Chainsabre" hidden="false" id="7485-d510-e78e-d80b" type="selectionEntry" targetId="3e16-de2b-b7e1-cead">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9e01-04be-b210-67ba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f32a-e112-dd11-5547" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7afe-aa6c-ddec-a8d2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0b7a-3602-57f5-0c8e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
         </entryLink>
       </entryLinks>
@@ -9700,10 +9657,10 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Exchange both of its Hull (Front) Mounted Phoenix Missile Launchers" hidden="false" id="c07a-a77b-c314-c64a" defaultSelectionEntryId="d24f-8497-e1ee-2a83">
+            <selectionEntryGroup name="Exchange of its Hull (Front) Mounted Phoenix Missile Launchers" hidden="false" id="c07a-a77b-c314-c64a" defaultSelectionEntryId="d24f-8497-e1ee-2a83">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="29d3-b85f-bcd5-5753" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5d94-ac66-6767-bc68" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29d3-b85f-bcd5-5753" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d94-ac66-6767-bc68" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Phoenix Missile Launcher" hidden="false" id="d24f-8497-e1ee-2a83" type="selectionEntry" targetId="cf6d-2da6-e634-bc73">
@@ -9713,7 +9670,7 @@
                 </entryLink>
                 <entryLink import="true" name="Nightfire Missile Launcher" hidden="false" id="62a9-17fe-9f52-a4ae" type="selectionEntry" targetId="000f-8d42-c79a-60ad">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="304b-8a1e-6bae-06c7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="304b-8a1e-6bae-06c7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
@@ -9970,10 +9927,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6d7-e19a-ba32-454a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Laser Lance (Ranged)" hidden="false" id="a488-2b9a-e9b9-be50" type="selectionEntry" targetId="d45d-8091-e095-718d">
+            <entryLink import="true" name="Laser Lance" hidden="false" id="bf31-7bc4-5073-7a50" type="selectionEntry" targetId="ed0d-7448-0728-0bd7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72af-7c20-7a88-a1dc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c153-bcaa-7391-a7f3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8060-600d-e20c-71d8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bce-dba3-370f-11c0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
             <entryLink import="true" name="Plasma Grenades" hidden="false" id="0c1a-d900-446b-aa89" type="selectionEntry" targetId="7626-2ad3-9f96-58bf">
@@ -12694,10 +12651,10 @@
             <categoryLink targetId="4280-2d8-16c6-d60b" id="85e6-b6e9-d36c-c680" primary="false" name="Titan Sub-type" />
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Exchange both of its Arm Mounted Revenant Pulsars" hidden="false" id="e0c5-61a3-7c6b-35d0" defaultSelectionEntryId="c96e-7b1c-199b-56e8">
+            <selectionEntryGroup name="Exchange of its Arm Mounted Revenant Pulsars" hidden="false" id="e0c5-61a3-7c6b-35d0" defaultSelectionEntryId="c96e-7b1c-199b-56e8">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="aadd-ed26-6630-33a7" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7a97-34cc-1dae-2721" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aadd-ed26-6630-33a7" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a97-34cc-1dae-2721" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Revenant Pulsar" hidden="false" id="c96e-7b1c-199b-56e8" type="selectionEntry" targetId="a7a0-1f50-1008-1425">
@@ -12707,7 +12664,7 @@
                 </entryLink>
                 <entryLink import="true" name="Two Arm Mounted Sonic Lances" hidden="false" id="e6d8-f763-5dd5-6a07" type="selectionEntry" targetId="d327-72e2-9ecf-c32e">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1c34-a7ff-ae5d-d7b8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c34-a7ff-ae5d-d7b8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75" />

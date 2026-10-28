@@ -171,6 +171,9 @@ def load_gst_wargear(path=GST_FILE):
     return items
 
 
+# "Burna (cutting)", "Reclaimator-Chainclaw (Ranged)": one profile of a weapon with several
+MODE = r"(.+?) \(([a-z][^)]*|Ranged|Melee|Shooting)\)"
+
 # 40k names for weapons 2.0 has under another name
 OFFICIAL_ALIASES = {"storm bolter": "combi-bolter", "boltgun": "bolter", "force stave": "force staff",
                     "psyk-out grenades": "psyk-out granades"}
@@ -673,7 +676,7 @@ class Builder:
                         self.power_rows.append((r[0], f"{r[2]} phase. {r[3]}", title, disc))
         names = {norm(r["name"]) for r in rows}
         # "Spear of the Void Dragon (melee)" and "(ranged)" are one weapon even with no plain row
-        mode_bases = [norm(m.group(1)) for r in rows for m in [re.fullmatch(r"(.+?) \(([a-z][^)]*)\)", r["name"])] if m]
+        mode_bases = [norm(m.group(1)) for r in rows for m in [re.fullmatch(MODE, r["name"])] if m]
         names |= {b for b in mode_bases if mode_bases.count(b) > 1}
         grouped = {}
         for r in rows:
@@ -682,7 +685,7 @@ class Builder:
             # "Burna (cutting)" are extra profiles of one weapon.
             m = re.fullmatch(r"(.+?) – (.+)", name)
             alt = re.fullmatch(r"(.+?) \(alternative fire mode of (.+)\)", name)
-            mode = re.fullmatch(r"(.+?) \(([a-z][^)]*)\)", name)
+            mode = re.fullmatch(MODE, name)
             if m:
                 parent, pname = m.group(1), name
             elif alt:
@@ -2713,14 +2716,19 @@ class Builder:
         keeping its profiles and the game system rules it links."""
         if not hasattr(self, "official_items"):
             self.official_items, self.official_rules = load_official_items()
+        name = re.sub(MOUNT, "", name, flags=re.I)  # "Centreline Mounted Enhanced Arachnus Blaze Cannon"
+        tl = re.match(r"twin[- ]linked (.+)", name, re.I)
+        if tl:  # "Twin-Linked Spiculus Bolt Launcher": the official weapon with Twin-linked
+            return self.official_twin_linked(tl.group(1))
         k = loose(re.sub(r"\s*\(.*?\)$", "", name))
         for gid_map in (self.gst_weapons, self.gst_wargear):  # "Melta Bombs" is the game system's "Meltabombs"
             hit = next((v for n, v in gid_map.items() if loose(n) in (k, k.rstrip("s"))), None)
             if hit:
                 return hit
         src = self.official_items.get(k)
-        if src is None:
-            src = self.official_items.get(k.rstrip("s"))
+        for alt in (k.rstrip("s"), k + "s"):  # "Spectra Cloak" is the official "Spectra Cloaks"
+            if src is None:
+                src = self.official_items.get(alt)
         if src is None:
             return None
         if ("official", k) in self.upgrades:
@@ -2750,6 +2758,43 @@ class Builder:
         self.upgrades[("official", k)] = eid
         return eid
 
+    def official_twin_linked(self, base):
+        """'Twin-Linked X' from X (the game system's or an official catalogue's): its profiles with Twin-linked."""
+        wid = self.find_weapon(base)[0] or self.official_entry(base)
+        if not wid:
+            return None
+        name = "Twin-linked " + base
+        if norm(name) in self.weapons:
+            return self.weapons[norm(name)]
+        src = self.shared_entries.find(f"selectionEntry[@id='{wid}']")
+        if src is None:  # a game system weapon: the profile comes from the game system file
+            gst = ET.parse(GST_FILE).getroot()
+            ns = "{http://www.battlescribe.net/schema/gameSystemSchema}"
+            src = next(e for e in gst.find(ns + "sharedSelectionEntries") if e.get("id") == wid)
+        eid = make_id("twin-linked", self.faction, base)
+        e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=name, hidden=False, id=eid,
+               publicationId=self.pub_id)
+        for p in [p for p in src.iter() if p.tag.split("}")[-1] == "profile" and p.get("typeName") == "Weapon"]:
+            chars = {c.get("name"): c.text for c in p.iter() if c.tag.split("}")[-1] == "characteristic"}
+            typ = chars.get("Type") or ""
+            if "twin-linked" not in typ.lower():
+                typ = f"{typ}, Twin-linked" if typ else "Twin-linked"
+            self.weapon_profile(e, "Twin-linked " + p.get("name"), chars.get("Range"), chars.get("Strength"),
+                                chars.get("AP"), typ, eid)
+        self.link_rule(e, "Twin-linked", eid)
+        add_cost(e, 0)
+        self.weapons[norm(name)] = eid
+        self.weapon_names[norm(name)] = name
+        return eid
+
+    def weapon_profile(self, entry, name, rng, st, ap, typ, key):
+        pe = el(child(entry, "profiles"), "profile", name=name, typeId=WEAPON_PROFILE, typeName="Weapon", hidden=False,
+                id=make_id(key, "profile", name), publicationId=self.pub_id)
+        chars = el(pe, "characteristics")
+        for (cname, cid), val in zip(WEAPON_CHARS, (rng, st, ap, typ)):
+            el(chars, "characteristic", name=cname, typeId=cid).text = val or "-"
+        return pe
+
     def generic_upgrade(self, name, key):
         """An option that is neither a weapon nor a biomorph, kept as a named upgrade."""
         k = norm(name)
@@ -2770,6 +2815,28 @@ class Builder:
         return self.upgrades[k]
 
     def option_target(self, name, key):
+        built = re.match(r"(.+?) with (?:an? )?in-built (.+)$", name)
+        if built and self.find_weapon(built.group(1))[0] and self.find_weapon(built.group(2))[0]:
+            # "Executor Great-Blade with in-built Vratine Bolter": both weapons
+            return self.wrapper_entry(name, None, 1, None, parts_text=[built.group(1), built.group(2)]), 1, True
+        withm = re.match(r"(.+?) \(with (.+)\)$", name)
+        extras = [p for p in re.split(r", (?:and )?| and ", withm.group(2)) if self.find_weapon(p)[0] or self.find_upgrade(p)] \
+            if withm else []
+        if withm and extras and self.find_weapon(withm.group(1))[0]:
+            # "Needle Cannon (with Suspensor Web)": the weapon and what comes with it
+            if norm(name) not in self.upgrades:
+                eid = make_id("wrapper", self.faction, name)
+                e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=withm.group(1),
+                       hidden=False, id=eid, publicationId=self.pub_id)
+                links = el(e, "entryLinks")
+                parts = [withm.group(1)] + re.split(r", | and ", withm.group(2))
+                for part in parts:  # "Psyk-Out and Rad Missiles" are the weapon's own profiles
+                    target = self.find_weapon(part)[0] or self.find_upgrade(part)
+                    if target:
+                        self.link(links, target, part, eid, count=1)
+                add_cost(e, 0)
+                self.upgrades[norm(name)] = eid
+            return self.upgrades[norm(name)], 1, True
         wid, n = self.find_weapon(re.sub(r"\badditional ", "", name))
         if wid and n > 1:
             return self.wrapper_entry(name, wid, n, None), 1, True
@@ -3376,9 +3443,10 @@ class Builder:
         determiner = header.split(" ")[0]
         required = None
         ratio_per, ratio_all = 1, False
-        m = re.match(r"For every (\d+) models, (?:one|up to (\w+)) (.+?)( with an? [\w' -]+?)? may", header)
+        m = re.match(r"For every (\d+|two|three|four|five|six) models(?: in the unit)?, (?:one|up to (\w+)) (.+?)( with an? [\w' -]+?)? may",
+                     header)
         if m:
-            ratio, subject = int(m.group(1)), m.group(3)
+            ratio, subject = NUMBER_WORDS.get(m.group(1)) or int(m.group(1)), m.group(3)
             # "For every 10 models, up to two Shock Troopers may", "one Shock Trooper with a lasgun may":
             # counted on every model in the unit
             ratio_all = bool(m.group(2) or m.group(4))
@@ -3401,6 +3469,7 @@ class Builder:
                 fixed = 1  # "One Guardsman may exchange his lasgun", "One model may take": one in the unit
         if subject:
             subject = re.sub(r"^(?:other|remaining) ", "", subject)  # "One other Guardsman", "Any remaining Guardsman"
+            subject = re.sub(r" without an? .+$", "", subject)  # "Any model without a Sinistrae Magnificat"
         subject_models = []
         # Only "The ..." and "A ..." can name the whole unit; "Any Genestealer" is one model.
         whole_unit = determiner in ("The", "A", "An") and bool(forms(subject or "") & unit_words)
@@ -3443,7 +3512,7 @@ class Builder:
         other = bool(re.match(r"(?:One|Two|Three|Any|Up to \w+) (?:other|remaining) ", header))
         ci = re.search(r"up to (\w+) if an? (.+?) is taken", header)
         cap_if = (NUMBER_WORDS.get(ci.group(1), 1), ci.group(2)) if ci else None
-        ex = re.search(r"(?:may|must) exchange (?:his |her |its |their )?(either pair of |one pair of |either |all \w+ |one of its |any |one )?(.+?) for", header)
+        ex = re.search(r"(?:may|must) exchange (?:his |her |its |their )?(either pair of |one pair of |either or both |either |both |all \w+ |one of its |any |one )?(.+?) for", header)
         replaced = "replaced with" in header
         if ex and re.match(r"The (entire|whole) unit", header):
             what = ex.group(2)
@@ -3467,6 +3536,10 @@ class Builder:
                     self.problems.append(f"{ds['name']}: replacement '{name}'")
             return
         both = ex and not ex.group(1) and re.fullmatch(r"(.+?) and/or (.+?)(?:, each)?", ex.group(2))
+        either = ex and not ex.group(1) and re.fullmatch(r"(.+?) or (.+)", ex.group(2))
+        if either and ratio is None and fixed is None and subject_models and all(any(norm(w) == norm(x) for w in models[subject_models[0]]["wargear"])
+                                             for x in either.groups()):
+            both = either  # "its Executor Great-Blade with in-built Vratine Bolter or Vratine Bolt Cannon": each
         if both:
             # "their Laspistol and/or Power Weapon, each for one of": a swap of each
             for part in both.groups():
@@ -3479,6 +3552,8 @@ class Builder:
             items = []
             for n, c in grp["items"]:
                 im = re.search(r"\s*\(1 in (\d+) models\)", n)
+                if norm(n) == norm(what) and not im:
+                    continue  # the weapon it starts with, listed again as a free pick
                 items.append((n.replace(im.group(0), "") if im else n, c, int(im.group(1)) if im else ratio))
             for mname in subject_models:
                 # "Any Warrior may exchange its devourer" and "One in every three may exchange its
@@ -3560,8 +3635,9 @@ class Builder:
                 else:
                     models[mm]["max"] += 1
                 continue
-            if "per model" in cost or "for the whole unit" in name:
-                unit_upgrades.append((name, self.cost(cost), "per model" in cost, 1))
+            each = "per model" in cost or (per_unit and re.search(r"points? each", cost) and "entire unit" in header.lower())
+            if each or "for the whole unit" in name:
+                unit_upgrades.append((name, self.cost(cost), bool(each), 1))
                 continue
             if per_unit:
                 unit_upgrades.append((name, self.cost(cost), False, 1))
@@ -3664,7 +3740,7 @@ class Builder:
                 item_max = n
                 if g["qualifier"].startswith("one pair") or g["qualifier"] == "one":
                     item_max = 1  # "one macro-scalpel" of two
-                if g["qualifier"].startswith("all"):
+                if g["qualifier"].startswith(("all", "both")):  # "both Bolt Pistols for one of"
                     size, item_max = 1, 1
                 ge = el(groups, "selectionEntryGroup", name=f"Exchange {g['what']}", hidden=False, id=gkey,
                         defaultSelectionEntryId=make_id(gkey, "link", "default"))
@@ -4143,12 +4219,16 @@ class Builder:
             return self.upgrades[norm(name)]
         e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=name, hidden=False,
                id=eid, publicationId=self.pub_id)
+        built = re.match(r"(.+?) with (?:an? )?in-built (.+)$", label)
+        if built and not wid and not parts_text:
+            parts_text = [built.group(1), built.group(2)]  # "Executor Great-Blade with in-built Vratine Bolter"
         texts = parts_text or label.split(" and ")
         parts = [(wid, n)] if wid else [self.find_weapon(x) for x in texts]
         if not wid and not parts_text:
             # "Hyperphase sword and dispersion shield": a weapon and a piece of wargear
             parts = [(w, k) if w else (self.find_upgrade(x), 1) for (w, k), x in zip(parts, label.split(" and "))]
-            parts = [(w, k) if w else (self.official_entry(x), 1) for (w, k), x in zip(parts, label.split(" and "))]
+        if not wid:  # "Vratine Bolter": the official weapon
+            parts = [(w, k) if w else (self.official_entry(x), 1) for (w, k), x in zip(parts, texts)]
         if all(w for w, _ in parts):
             links = el(e, "entryLinks")
             names = texts if len(parts) > 1 else [label]
@@ -4242,7 +4322,7 @@ class Builder:
         official = self.official_rules.get(loose(re.sub(r"\s*\(X\+?\)$", "", line)))
         if official:  # "Legio Custodes": the official rule's text
             self.define_rule(official[0], official[1])
-            self.link_rule(unit, line, uid)
+            self.link_rule(unit, line, uid) or self.link_rule(unit, official[0], uid)  # "Ex Oblivio" is "Ex-Oblivio"
             return
         if True:
             self.problems.append(f"{ds['name']}: rule '{line}' is not defined in the doc")
@@ -4526,13 +4606,14 @@ class Builder:
         wargear, so the exchange swaps them."""
         text = "\n".join(l for sec in self.wargear_sections() for sub in sec["subs"] for l in sub["lines"])
         for row in ds["options"]:
-            m = re.search(r"either or both of its (.+?)'s (.+?) for", row[0])
+            # "its Halian Heavy Jetbike's Heavy Snare Cannon for" ("A Halian Heavy Jetbike has a Heavy Snare Cannon")
+            m = re.search(r"(?:either or both of )?its (.+?)'s (.+?) for", row[0])
             if not m:
                 continue
             held = re.search(r"An? " + re.escape(m.group(1)) + r" has (\w+) " + re.escape(m.group(2)), text)
             count = held.group(1) if held else "two"
             if not any(norm(w).endswith(norm(m.group(2))) for w in ds["wargear"]):
-                ds["wargear"].append(f"{count.capitalize()} {m.group(2)}")
+                ds["wargear"].append(m.group(2) if count in ("a", "an", "one") else f"{count.capitalize()} {m.group(2)}")
             row[0] = row[0].replace(m.group(0), f"its {m.group(2)} for")
 
     def take_retainer_options(self, ds):

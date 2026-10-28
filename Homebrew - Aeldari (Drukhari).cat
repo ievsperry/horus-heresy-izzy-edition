@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -6196,11 +6196,19 @@
         <selectionEntryGroup name="Unit Upgrades" hidden="false" id="0c96-4ba4-4ab6-d1a1">
           <entryLinks>
             <entryLink import="true" name="Haywire grenades" hidden="false" id="7d01-0ea4-d1bf-4391" type="selectionEntry" targetId="bdfa-f987-49c9-aecc">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="3270-f65f-9383-fdb8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b30-1929-797e-095d" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="3270-f65f-9383-fdb8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abb3-4f6a-c1fb-3a69" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab53-0015-a986-65c7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -6519,6 +6527,80 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup name="Haemoxyte: Options" hidden="false" id="4020-0a29-2c03-d095">
+          <modifiers>
+            <modifier type="increment" field="f118-50a1-2737-2d73" value="1">
+              <repeats>
+                <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="009f-4007-5354-718f" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f118-50a1-2737-2d73" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Splinter pistol" hidden="false" id="5bef-4264-7142-a814" type="selectionEntry" targetId="e670-1c31-6300-cd2d">
+              <modifiers>
+                <modifier type="increment" field="553b-7040-ebd1-b452" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="009f-4007-5354-718f" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="3fd5-f57c-9e82-be70" shared="true" id="553b-7040-ebd1-b452" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Hexrifle" hidden="false" id="a47c-6153-eda4-68ac" type="selectionEntry" targetId="f5c9-ff85-1cf0-ef6a">
+              <modifiers>
+                <modifier type="increment" field="9243-dabd-42a6-c6c9" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="009f-4007-5354-718f" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="3fd5-f57c-9e82-be70" shared="true" id="9243-dabd-42a6-c6c9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Liquifier gun" hidden="false" id="8c5b-99c0-5e59-d94d" type="selectionEntry" targetId="80ce-e4f1-ea90-9f0f">
+              <modifiers>
+                <modifier type="increment" field="62dc-71d9-4d23-4e8c" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="009f-4007-5354-718f" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="3fd5-f57c-9e82-be70" shared="true" id="62dc-71d9-4d23-4e8c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Ossefactor" hidden="false" id="e360-cc13-9e90-68e1" type="selectionEntry" targetId="f76a-6cc3-b71d-ed5c">
+              <modifiers>
+                <modifier type="increment" field="e032-958b-20b9-9a77" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="009f-4007-5354-718f" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="3fd5-f57c-9e82-be70" shared="true" id="e032-958b-20b9-9a77" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="High Acothyst: Options" hidden="false" id="92bb-9e03-1657-3121">
           <modifiers>
             <modifier type="increment" field="a4e8-f64b-e106-c9d5" value="1">
@@ -6542,42 +6624,6 @@
               </costs>
             </entryLink>
             <entryLink import="true" name="Liquifier gun" hidden="false" id="1e3f-931b-68a8-e6cf" type="selectionEntry" targetId="80ce-e4f1-ea90-9f0f">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="a535-5951-2c55-df1b">
-          <entryLinks>
-            <entryLink import="true" name="Splinter pistol" hidden="false" id="e744-9e03-0405-cd74" type="selectionEntry" targetId="e670-1c31-6300-cd2d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3b3-cd84-8fa1-7e8c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Hexrifle" hidden="false" id="19fb-da94-8118-e99e" type="selectionEntry" targetId="f5c9-ff85-1cf0-ef6a">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2706-f3f0-a060-e94f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Liquifier gun" hidden="false" id="f287-a8cc-f2cb-bc2b" type="selectionEntry" targetId="80ce-e4f1-ea90-9f0f">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e7a-1f55-a764-3927" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Ossefactor" hidden="false" id="457f-702d-0451-5f1a" type="selectionEntry" targetId="f76a-6cc3-b71d-ed5c">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05bb-0167-620c-4913" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
@@ -7869,43 +7915,59 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ffb-46c9-ccda-a832" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08c7-b37b-b160-6eab" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 5" hidden="false" id="46e9-016e-4e0f-2baa">
+                  <modifiers>
+                    <modifier type="increment" field="406c-d190-65a6-2459" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="9cc5-d445-c486-d7be" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e89b-f3f1-22e2-3eec" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="9cc5-d445-c486-d7be" shared="true" id="406c-d190-65a6-2459" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Blaster" hidden="false" id="8cf1-7b2a-6cb3-4a1c" type="selectionEntry" targetId="38c9-eef9-1b6b-614a">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78fa-eee4-d863-2086" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Shredder" hidden="false" id="999a-8a0a-31c4-6714" type="selectionEntry" targetId="016e-6fc3-2e91-078e">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4bb-7b5d-d452-5dae" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Splinter cannon" hidden="false" id="f2b5-da98-1ccb-e06c" type="selectionEntry" targetId="4804-cfe3-384a-5d6c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6abe-0aa5-215e-e66e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Dark lance" hidden="false" id="8d5b-a56b-232a-a3b7" type="selectionEntry" targetId="f261-8aa5-240e-f868">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d74d-7ba1-2432-8716" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Splinter rifle" hidden="false" id="4ddf-4000-1dd1-f8d4" type="selectionEntry" targetId="eebb-37fe-4e0a-f8e4">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4260-5a3b-d99b-21e7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Blaster" hidden="false" id="8cf1-7b2a-6cb3-4a1c" type="selectionEntry" targetId="38c9-eef9-1b6b-614a">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78fa-eee4-d863-2086" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Shredder" hidden="false" id="999a-8a0a-31c4-6714" type="selectionEntry" targetId="016e-6fc3-2e91-078e">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4bb-7b5d-d452-5dae" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Splinter cannon" hidden="false" id="f2b5-da98-1ccb-e06c" type="selectionEntry" targetId="4804-cfe3-384a-5d6c">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6abe-0aa5-215e-e66e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Dark lance" hidden="false" id="8d5b-a56b-232a-a3b7" type="selectionEntry" targetId="f261-8aa5-240e-f868">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d74d-7ba1-2432-8716" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -8299,6 +8361,80 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup name="Wrack: Options" hidden="false" id="0cd0-183a-c0ab-0d28">
+          <modifiers>
+            <modifier type="increment" field="0916-8a70-cc1d-7c4d" value="1">
+              <repeats>
+                <repeat field="selections" scope="3576-3678-7a9e-2c63" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2717-a86d-f20d-ee38" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0916-8a70-cc1d-7c4d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Splinter pistol" hidden="false" id="361a-2524-a10c-6d29" type="selectionEntry" targetId="e670-1c31-6300-cd2d">
+              <modifiers>
+                <modifier type="increment" field="434e-6364-809d-ba06" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2717-a86d-f20d-ee38" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="3576-3678-7a9e-2c63" shared="true" id="434e-6364-809d-ba06" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Hexrifle" hidden="false" id="07ba-b786-3131-c796" type="selectionEntry" targetId="f5c9-ff85-1cf0-ef6a">
+              <modifiers>
+                <modifier type="increment" field="9273-d78e-367f-f11e" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2717-a86d-f20d-ee38" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="3576-3678-7a9e-2c63" shared="true" id="9273-d78e-367f-f11e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Liquifier gun" hidden="false" id="4481-78c8-18f3-d55b" type="selectionEntry" targetId="80ce-e4f1-ea90-9f0f">
+              <modifiers>
+                <modifier type="increment" field="b147-8fa6-d103-9c05" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2717-a86d-f20d-ee38" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="3576-3678-7a9e-2c63" shared="true" id="b147-8fa6-d103-9c05" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Ossefactor" hidden="false" id="4c1f-0d04-61fb-304f" type="selectionEntry" targetId="f76a-6cc3-b71d-ed5c">
+              <modifiers>
+                <modifier type="increment" field="c6c4-8244-2b9f-85e0" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2717-a86d-f20d-ee38" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="3576-3678-7a9e-2c63" shared="true" id="c6c4-8244-2b9f-85e0" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="Acothyst: Options" hidden="false" id="8144-702e-b6c0-0509">
           <modifiers>
             <modifier type="increment" field="2b37-8612-f553-fe43" value="1">
@@ -8322,42 +8458,6 @@
               </costs>
             </entryLink>
             <entryLink import="true" name="Liquifier gun" hidden="false" id="c97b-6161-9363-f10c" type="selectionEntry" targetId="80ce-e4f1-ea90-9f0f">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="5857-2a61-e2a2-5d19">
-          <entryLinks>
-            <entryLink import="true" name="Splinter pistol" hidden="false" id="c503-7c24-451b-9524" type="selectionEntry" targetId="e670-1c31-6300-cd2d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="234d-b2df-4a3c-be7c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Hexrifle" hidden="false" id="eca9-95ed-647d-8e01" type="selectionEntry" targetId="f5c9-ff85-1cf0-ef6a">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45f4-d412-bc4d-a6b3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Liquifier gun" hidden="false" id="cf71-2890-d8ca-4dce" type="selectionEntry" targetId="80ce-e4f1-ea90-9f0f">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca93-277a-91ed-63c6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Ossefactor" hidden="false" id="839f-b3a5-fc55-a6e3" type="selectionEntry" targetId="f76a-6cc3-b71d-ed5c">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9133-8f6e-abc9-6e58" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
@@ -8450,35 +8550,51 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a49-8a5a-11aa-f90e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41ea-9cd5-f49f-9645" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 5" hidden="false" id="6a34-61a2-05b8-7784">
+                  <modifiers>
+                    <modifier type="increment" field="57cc-cce3-765f-411f" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="2c97-b7fb-774d-14e0" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3f14-9675-c6dc-df2b" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="2c97-b7fb-774d-14e0" shared="true" id="57cc-cce3-765f-411f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Hydra gauntlets" hidden="false" id="b53f-f328-b69e-f83a" type="selectionEntry" targetId="9b29-0ab5-5a57-d0bc">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98c4-be94-e4bd-e288" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Razorflails" hidden="false" id="66b8-e641-7268-5fe3" type="selectionEntry" targetId="348a-dfbe-ff15-4a33">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7190-2262-bda0-e830" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Shardnet and impaler" hidden="false" id="74fc-f302-5441-0cb8" type="selectionEntry" targetId="aed4-79c2-491a-4e43">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50d1-4b68-8fc9-23b5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Splinter pistol" hidden="false" id="ff31-612b-7119-98de" type="selectionEntry" targetId="e670-1c31-6300-cd2d">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90ff-9b75-bfca-d554" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Hydra gauntlets" hidden="false" id="b53f-f328-b69e-f83a" type="selectionEntry" targetId="9b29-0ab5-5a57-d0bc">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98c4-be94-e4bd-e288" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Razorflails" hidden="false" id="66b8-e641-7268-5fe3" type="selectionEntry" targetId="348a-dfbe-ff15-4a33">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7190-2262-bda0-e830" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Shardnet and impaler" hidden="false" id="74fc-f302-5441-0cb8" type="selectionEntry" targetId="aed4-79c2-491a-4e43">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50d1-4b68-8fc9-23b5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -8632,11 +8748,19 @@
         <selectionEntryGroup name="Unit Upgrades" hidden="false" id="fd5c-c345-0ee3-3c06">
           <entryLinks>
             <entryLink import="true" name="Haywire grenades" hidden="false" id="4a90-ef0e-74a5-f422" type="selectionEntry" targetId="bdfa-f987-49c9-aecc">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="2c97-b7fb-774d-14e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3f14-9675-c6dc-df2b" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="2c97-b7fb-774d-14e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71ec-209a-7c41-1010" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14b0-6349-3ed0-17fe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
           </entryLinks>
@@ -9331,35 +9455,51 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9296-a7d1-f305-7cbd" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a92-95bb-0eb4-ed08" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 3" hidden="false" id="37f1-de3e-53f9-8d8a">
+                  <modifiers>
+                    <modifier type="increment" field="4011-412f-4f3f-814e" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="1521-01b7-c395-59eb" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d1e-ff02-b5af-8f2d" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="1521-01b7-c395-59eb" shared="true" id="4011-412f-4f3f-814e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Blaster" hidden="false" id="37cd-c3cc-bd05-8a27" type="selectionEntry" targetId="38c9-eef9-1b6b-614a">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5baf-93fd-0f6c-ea40" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Heat lance" hidden="false" id="47b8-a9ca-64ef-fec2" type="selectionEntry" targetId="e4ee-5b46-4d9c-614c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e27c-4d69-ddbb-cb88" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Splinter cannon" hidden="false" id="31d8-90dd-2eee-aa63" type="selectionEntry" targetId="4804-cfe3-384a-5d6c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a17c-aeb3-e75f-e153" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Splinter rifle" hidden="false" id="c0c7-4a1f-032e-eda3" type="selectionEntry" targetId="eebb-37fe-4e0a-f8e4">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9897-26de-9def-9dd7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Blaster" hidden="false" id="37cd-c3cc-bd05-8a27" type="selectionEntry" targetId="38c9-eef9-1b6b-614a">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5baf-93fd-0f6c-ea40" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Heat lance" hidden="false" id="47b8-a9ca-64ef-fec2" type="selectionEntry" targetId="e4ee-5b46-4d9c-614c">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e27c-4d69-ddbb-cb88" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Splinter cannon" hidden="false" id="31d8-90dd-2eee-aa63" type="selectionEntry" targetId="4804-cfe3-384a-5d6c">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a17c-aeb3-e75f-e153" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -9368,19 +9508,35 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b4f-0fd9-79a2-9521" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f908-fd7b-6638-2991" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 3" hidden="false" id="ab19-51d0-8f90-9188">
+                  <modifiers>
+                    <modifier type="increment" field="2700-fda9-03f4-815b" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="1521-01b7-c395-59eb" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d1e-ff02-b5af-8f2d" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="1521-01b7-c395-59eb" shared="true" id="2700-fda9-03f4-815b" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Chain-snares" hidden="false" id="fcbd-17f5-35fb-1229" type="selectionEntry" targetId="dbd2-9152-eeac-f759">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6353-a0fb-1d2c-54ea" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Bladevanes" hidden="false" id="e183-cc76-ac38-6f6d" type="selectionEntry" targetId="53e6-bfba-0819-4e03">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b15b-2216-3ec1-6868" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Chain-snares" hidden="false" id="fcbd-17f5-35fb-1229" type="selectionEntry" targetId="dbd2-9152-eeac-f759">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6353-a0fb-1d2c-54ea" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>

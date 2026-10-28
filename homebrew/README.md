@@ -268,6 +268,19 @@ loading. The script prints anything in the doc it could not place.
     when the army has more Allied Detachments than one per full 1,000 points of its points limit, plus one for
     the Detachment a Warrant's Effects add (Compliance: an Agents Detachment; Conquest: a Xenos Detachment;
     Exploration: up to two Mechanicum Detachments).
+- "For every five models in the unit, one ... may" is a one-in-five limit like "For every 5 models,". "either or
+  both Bolt Pistols" swaps each pistol; "both Bolt Pistols for one of" swaps the pair for one item. "its A or B for
+  one of", when the model has both, is a swap of each. "Any model without a X may take" reads as "Any model".
+  "The entire unit may take: Haywire grenades, +3 points each" costs that per model.
+- "Needle Cannon (with Suspensor Web)" is the weapon and the Suspensor Web; brackets that only name the weapon's own
+  profiles ("Reaper Launcher (with Starswarm, Starshot, and Starhawk Missiles)") are the weapon. "Executor
+  Great-Blade with in-built Vratine Bolter" is both weapons. Armoury rows "X (Ranged)" and "X (Melee)" are one
+  weapon X with both profiles. A free option repeating the weapon the swap starts with is left out.
+- "its Halian Heavy Jetbike's Heavy Snare Cannon" works like "either or both of its X's Y": the weapon the wargear
+  says it has ("A Halian Heavy Jetbike has a Heavy Snare Cannon") joins the model's wargear.
+- From the official catalogues the Builder also takes items behind a mount ("Centreline Mounted Enhanced Arachnus
+  Blaze Cannon"), "Twin-Linked X" (X's profiles with Twin-linked), and singular or plural names ("Spectra Cloak" is
+  "Spectra Cloaks"). An official rule spelt another way ("Ex Oblivio", "Ex-Oblivio") is linked by its own name.
 - Items the doc names but leaves to the official lists (Auric Warplate, Execution Blade, Legio Custodes,
   Ex Oblivio) are copied from the official catalogues, keeping their profiles, text and the core rules they
   link; "Melta Bombs" and "Psyk-Out Grenades" are the game system's Meltabombs and Psyk-out Granades. "Force
@@ -354,3 +367,24 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Twin-linked special rule), runs `add_gst_weapons.py` to put it in the game system, and points the options that
   show the twin-linked weapon (by name, or by carrying a separate Twin-linked rule) at the new entry. Running it
   again changes nothing.
+- `python3 homebrew/add_sisters_of_silence.py` adds the Liber Imperatus Sisters of Silence expansion (the Claude Doc
+  "Sisters of Silence Horus Heresy 2.0 - Homebrew Conversion", kept as `source/sisters-of-silence.md`) to
+  `2022 - LI - Sisters Of Silence.cat`. build_catalogue.py's Builder reads the doc's datasheets; their units then
+  move into the official file as text, linked to the official entries wherever the catalogue, its libraries or the
+  game system already have them (Vratine Bolter, Execution Blade, Silent Sisterhood (X)), so only new weapons and
+  wargear are added. Each unit carries its Chamber as the official units do (the Chamber's category and its
+  required Silent Sisterhood (Chamber of X) entry; an Oblivion or Judgement HQ also counts as that Chamber's HQ),
+  with the Anathema Sub-type. It also writes:
+  - the root entries (vehicles and walkers hidden in a Zone Mortalis force, Sikari Dar and the Knight Ensign
+    Covenant one per army) and the Dedicated Transports each datasheet names, by size;
+  - the two-pistol swaps (one group of two pistols and one-pistol swaps, Perditor heavy weapons one in five; one
+    group for swapping both, which empties the first), the Caedecii's Sinistrae Magnificat (one per unit, and no
+    Spiculus Bolt Launcher or Vratine Missile Launcher on the model that has it);
+  - Sikari Dar's Eater of Daemons Warlord Trait (the Warlord whenever she is in the Primary Detachment) and her two
+    extra Fast Attack choices, which must be Pursuer Cadres and do not count toward the Chamber of Oblivion limit
+    (the Crusade chart's Fast Attack maximum and the Chamber limit each rise by one per Pursuer Cadre, up to two);
+  - the doc's extra options on official units (Indictor Axe for the Knight Abyssal, Knight Centura and Raptora;
+    the Questora's and Eradicator's new Vratine Bolter swaps; Artificer Armour for Knight Vestals; Charnabal or
+    Power Weapons for Subjugators) and the Silent Sisterhood Grav-Rhino and Rhino for the official Cadres that may
+    take them, as an alternative to their Kharon Pattern Acquisitor, while they have no more than twelve models.
+  It refuses to run on a catalogue that already has the expansion.
