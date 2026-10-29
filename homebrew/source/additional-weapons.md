@@ -62,7 +62,7 @@ _Firing enormous, unguided shells, these weapons have been largely the same sinc
 | Nemesis Quake Cannon | 24" - 480" | 10/8/6 | 3 | Destroyer 1, Apocalyptic Mega-Blast, Barrage, Breaching (4+), Seismic Shock, Concussive (1) |
 | Praetor Launcher - Firestorm Munitions | 72" | 7 | 4 | Ordnance 2, Barrage, Massive Blast (7"), Pinning, Shell Shock (2), Rending (5+), Ignores Cover |
 | Praetor Launcher - Foehammer Munitions | 12" - 72" | 8 | 3 | Heavy 12, Guided Fire, Breaching (5+), Ignores Cover |
-| Thunderblast Cannon | 36" | 8 | 4 | Ordnance 1, Large Blast (5"), Rupture (5+), Pinning |
+| Thunderblast Cannon | 72" | 8 | 4 | Ordnance 1, Large Blast (5"), Rupture (5+), Pinning |
 
 ## Bolt Weapons
 

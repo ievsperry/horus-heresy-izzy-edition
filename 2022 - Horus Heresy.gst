@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="221" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="222" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -10317,7 +10317,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <profiles>
         <profile id="f07f-46e5-bb68-ff74" name="Thunderblast Cannon" publicationId="48c2-d023-0069-001a" page="38" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Rupture (5+), Pinning</characteristic>
