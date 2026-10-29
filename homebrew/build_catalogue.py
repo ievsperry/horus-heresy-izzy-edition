@@ -3628,6 +3628,9 @@ class Builder:
         subject_models = []
         # Only "The ..." and "A ..." can name the whole unit; "Any Genestealer" is one model.
         whole_unit = determiner in ("The", "A", "An") and bool(forms(subject or "") & unit_words)
+        if whole_unit and model_for(subject, exact=True) and [n for n, mm in models.items() if mm["min"] > 0] == [
+                model_for(subject, exact=True)] and models[model_for(subject, exact=True)]["max"] == 1:
+            whole_unit = False  # "The Warboss may take one of" in a unit of a Warboss and his grot attendants
         if subject and not whole_unit and norm(subject) not in ("model", "models"):
             mname = model_for(subject, exact=True)
             if not mname and determiner in ("Any", "Each", "One"):

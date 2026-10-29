@@ -56,7 +56,7 @@ Additional hits generated in this way do not themselves generate additional hits
 
 After deployment, all models immediately operate independently and are no longer treated as a single unit.
 
-**'Ere We Go!** When rolling charge distance, the unit may re-roll one of the dice. If the charge still fails, the unit moves the full distance rolled toward the target, instead of the usual reduced failed-charge move†.
+**'Ere We Go!** When rolling charge distance, the unit may re-roll one of the dice. If the charge still fails, the unit moves the full distance rolled toward the target, instead of the usual reduced failed-charge move†. In addition, the unit gains Furious Charge (1). If the unit already has Furious Charge (X) from another source, increase X by 1, to a maximum of Furious Charge (3), or Furious Charge (4) for models with the Might iz Right! special rule.
 
 **Exhaust Belch.** After this unit completes a Run move, place a flamer template touching the rear of the model. Any unit touched by the template suffers D3 Strength 5 AP – hits with the Pinning special rule.
 
@@ -118,6 +118,8 @@ If the test is failed, both units immediately suffer D6 Strength 6 AP – hits t
 Only units of the same type may Mob Up. Shoota Boyz may Mob Up only with other Shoota Boyz mobs.
 
 **Mo' Dakka.** When a model with this special rule generates an additional hit from Dakka!, the additional hit gains all of the same special rules and effects possessed by the original attack, including Rending, Breaching, Armourbane, Pinning and similar weapon effects.
+
+**Monster Hunters.** A model with this special rule may re-roll To Wound rolls of 1 against Vehicles, Dreadnoughts and Monstrous Creatures.
 
 **Odd Mob.** The Meks, Painboys and Weirdboys of a warband stand outside the mobs, lending their talents wherever the boss sends them. Only on the longest Waaagh!s would an Odd Boy find himself krumpin' alongside the same lads time and time again. An Odd Mob is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, each Odd Boy in an Odd Mob, together with any grots he has taken, either becomes a separate unit or is assigned to another unit from the same Detachment of the army the Odd Mob was selected as part of. An Odd Boy may only be assigned to a unit composed entirely of models with the Infantry Unit Type and the same Klan (X) special rule as the Odd Boy, and may not join a unit that includes models in Mega Armour.
 
@@ -835,7 +837,7 @@ Base sizes follow recent 40k kits and are approximate; use whatever your models 
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Deffkilla Wartrike | 14 | 5 | 2 | 5 | 6 | 4 | 4 | 4 | 9 | 4+ | 90x52mm |
+| Deffkilla Wartrike | 14 | 5 | 2 | 5 | 6 | 4 | 4 | 3 | 9 | 4+ | 90x52mm |
 
 **Unit Composition**
 
@@ -926,7 +928,7 @@ Base sizes follow recent 40k kits and are approximate; use whatever your models 
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Ork Boss | 6 | 5 | 2 | 4 | 5 | 4 | 3 | 4 | 8 | 5+ | 40mm |
+| Ork Boss | 6 | 5 | 2 | 4 | 5 | 4 | 3 | 3 | 8 | 5+ | 40mm |
 | Grot Attendant | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
@@ -984,7 +986,7 @@ Base sizes follow recent 40k kits and are approximate; use whatever your models 
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Painboss | 6 | 5 | 2 | 5 | 5 | 5 | 3 | 4 | 8 | 5+ | 40mm |
+| Painboss | 6 | 5 | 2 | 5 | 5 | 5 | 3 | 3 | 8 | 5+ | 40mm |
 | Grot Orderly | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
@@ -1035,7 +1037,7 @@ Base sizes follow recent 40k kits and are approximate; use whatever your models 
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Warboss | 7 | 6 | 2 | 5 | 5 | 4 | 4 | 5 | 9 | 5+ | 40mm |
+| Warboss | 7 | 6 | 2 | 5 | 5 | 4 | 4 | 4 | 9 | 5+ | 40mm |
 | Grot Attendant | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 _A Warboss with mega armour uses this profile instead: M 6, WS 6, BS 2, S 5, T 5, W 5, I 3, A 5, Ld 9, Sv 2+._
@@ -1092,13 +1094,16 @@ _A Warboss with mega armour uses this profile instead: M 6, WS 6, BS 2, S 5, T 5
 | – Attack squig | +10 points |
 | – Bosspole | +10 points |
 | – Waaagh! banner | +35 points |
+| **The Warboss may take one of the following:** |  |
+| – Blessin' ah Brutal | +15 points |
+| – Blessin' ah Kunnin' | +15 points |
 
 ### Warboss Retinue — 140 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Boss Retainer | 7 | 5 | 2 | 4 | 4 | 2 | 3 | 3 | 6 | 5+ | 40mm |
-| Head Nob | 7 | 5 | 2 | 4 | 4 | 3 | 4 | 4 | 7 | 5+ | 40mm |
+| Boss Retainer | 7 | 5 | 2 | 4 | 4 | 2 | 3 | 2 | 6 | 5+ | 40mm |
+| Head Nob | 7 | 5 | 2 | 4 | 4 | 3 | 4 | 3 | 7 | 5+ | 40mm |
 | Grot Attendant | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 _A Boss Retainer with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 4, W 3, I 2, A 3, Ld 6, Sv 2+._
@@ -1165,7 +1170,7 @@ _A Head Nob with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Weirdboss | 6 | 5 | 2 | 4 | 5 | 5 | 4 | 4 | 8 | 6+ | 40mm |
+| Weirdboss | 6 | 5 | 2 | 4 | 5 | 5 | 4 | 3 | 8 | 6+ | 40mm |
 | Runt Orkalyte | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
@@ -1272,15 +1277,15 @@ _A Head Nob with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 
 - Must join one Stormboyz unit; that unit has Deep Strike and re-rolls Deep Strike scatter
 - Waaagh!
 
-### Da Twinz — 340 pts
+### Da Twinz — 350 pts
 
 _Professa Gorkell is a surprisingly articulate Painboss who wears half a pair of human spectacles on his nose. He believes he is executing a grand, calculated vision to build the ultimate Cybork army. Boss Morkhyde is pure, unchecked Ork id. He is completely non-verbal except for roars, covered in crude iron plates, and treats the operating table like a scrap heap, violently welding whatever junk is nearby directly to the patient._
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Boss Morkhyde | 6 | 5 | 2 | 5 | 5 | 5 | 3 | 5 | 8 | 5+ | 40mm |
+| Boss Morkhyde | 6 | 6 | 2 | 5 | 5 | 5 | 4 | 4 | 8 | 5+ | 40mm |
 | Grot Orderly | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
-| Professa Gorkell | 6 | 5 | 2 | 5 | 5 | 5 | 3 | 4 | 9 | 5+ | 40mm |
+| Professa Gorkell | 6 | 5 | 2 | 5 | 5 | 5 | 5 | 3 | 9 | 5+ | 40mm |
 
 **Unit Composition**
 
@@ -1372,7 +1377,7 @@ _Professa Gorkell is a surprisingly articulate Painboss who wears half a pair of
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Mad Dok Grotsnik | 6 | 5 | 2 | 5 | 4 | 3 | 3 | 4 | 8 | 6+ | 32mm |
+| Mad Dok Grotsnik | 6 | 5 | 2 | 5 | 4 | 3 | 3 | 3 | 8 | 6+ | 32mm |
 
 **Unit Composition**
 
@@ -1408,9 +1413,9 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Mek Boss Buzzgob | 6 | 5 | 2 | 5 | 4 | 3 | 3 | 4 | 8 | 4+ | 40mm |
-| Dok Scrabbit | 6 | 2 | 3 | 2 | 2 | 2 | 3 | 2 | 5 | – | 25mm |
-| Grot Gorgutz | 6 | 2 | 3 | 2 | 2 | 2 | 3 | 2 | 5 | – | 25mm |
+| Mek Boss Buzzgob | 6 | 5 | 2 | 5 | 4 | 3 | 3 | 3 | 8 | 4+ | 40mm |
+| Dok Scrabbit | 6 | 2 | 3 | 2 | 2 | 2 | 3 | 1 | 5 | – | 25mm |
+| Grot Gorgutz | 6 | 2 | 3 | 2 | 2 | 2 | 3 | 1 | 5 | – | 25mm |
 
 **Unit Composition**
 
@@ -1450,7 +1455,7 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Mozrog Skragbad | 10 | 6 | 2 | 6 | 6 | 7 | 3 | 6 | 9 | 4+ | 170x105mm |
+| Mozrog Skragbad | 10 | 6 | 2 | 6 | 6 | 7 | 3 | 5 | 9 | 4+ | 170x105mm |
 
 **Unit Composition**
 
@@ -1585,7 +1590,7 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Bannernob | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 8 | 4+ | 40mm |
+| Bannernob | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 2 | 8 | 4+ | 40mm |
 
 **Unit Composition**
 
@@ -1616,8 +1621,8 @@ _The most cunning Mek of his Waaagh!, who can keep a battlewagon running with no
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Burna Boy | 7 | 3 | 2 | 4 | 4 | 1 | 3 | 1 | 6 | 5+ | 32mm |
-| Burna Spanna | 7 | 4 | 2 | 4 | 4 | 2 | 3 | 2 | 7 | 5+ | 40mm |
+| Burna Boy | 6 | 3 | 2 | 4 | 4 | 1 | 3 | 1 | 6 | 5+ | 32mm |
+| Burna Spanna | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 2 | 7 | 5+ | 40mm |
 | Grot Attendant | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
@@ -1671,8 +1676,8 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Meganob | 5 | 4 | 2 | 4 | 5 | 3 | 2 | 3 | 7 | 2+ | 40mm |
-| Mega Boss Nob | 5 | 5 | 2 | 4 | 5 | 4 | 2 | 4 | 8 | 2+ | 40mm |
+| Meganob | 5 | 4 | 2 | 4 | 5 | 3 | 2 | 2 | 7 | 2+ | 40mm |
+| Mega Boss Nob | 5 | 5 | 2 | 4 | 5 | 4 | 2 | 3 | 8 | 2+ | 40mm |
 
 **Unit Composition**
 
@@ -1736,7 +1741,7 @@ _The Odd Boys are the Meks, Painboys and Weirdboys of the warband. The unit cost
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Mek | 6 | 4 | 3 | 4 | 4 | 2 | 3 | 2 | 6 | 4+ | 32mm |
-| Painboy | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 6 | 5+ | 32mm |
+| Painboy | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 2 | 6 | 5+ | 32mm |
 | Weirdboy | 6 | 3 | 2 | 4 | 4 | 3 | 3 | 2 | 6 | 6+ | 32mm |
 | Grot Oiler | 6 | 2 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 | Grot Orderly | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
@@ -1762,14 +1767,14 @@ _The Odd Boys are the Meks, Painboys and Weirdboys of the warband. The unit cost
 **Special Rules**
 
 - Odd Mob
-- Bigga iz Betta (Mek and Painboy only)
-- Bulky (2) (Mek and Painboy only)
+- Bigga iz Betta
+- Bulky (2)
 - Dakka! (6+) (Mek only)
-- Dok's Tools: Friendly Ork Infantry units joined by a Painboy gain Feel No Pain (5+). If the unit already possesses Feel No Pain, improve that roll by +1 to a maximum of Feel No Pain (4+).
+- Dok's Tools: Friendly Ork Infantry units joined by a Painboy gain Feel No Pain (6+). If the unit already possesses Feel No Pain, improve that roll by +1 to a maximum of Feel No Pain (4+).
 - 'Ere We Go!
 - Klan (X)
 - Mek-Smasha (5+) (Mek only)
-- Might iz Right! (Mek and Painboy only)
+- Might iz Right!
 - Mob Rule
 - Oddboy
 - Perils of the Waaagh! (Weirdboy only)
@@ -1814,7 +1819,7 @@ _The Odd Boys are the Meks, Painboys and Weirdboys of the warband. The unit cost
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Nob on Smasha Squig | 10 | 4 | 2 | 5 | 5 | 3 | 3 | 4 | 7 | 4+ | 75x42mm |
+| Nob on Smasha Squig | 10 | 4 | 2 | 5 | 5 | 3 | 3 | 3 | 7 | 4+ | 75x42mm |
 
 **Unit Composition**
 
@@ -1847,8 +1852,8 @@ _The Odd Boys are the Meks, Painboys and Weirdboys of the warband. The unit cost
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Nob | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 7 | 6+ | 32mm |
-| Boss Nob | 6 | 5 | 2 | 4 | 4 | 3 | 3 | 4 | 8 | 6+ | 32mm |
+| Nob | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 2 | 7 | 6+ | 32mm |
+| Boss Nob | 6 | 5 | 2 | 4 | 4 | 3 | 3 | 3 | 8 | 6+ | 32mm |
 
 **Unit Composition**
 
@@ -1915,9 +1920,9 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Nob on Warbike | 14 | 4 | 2 | 4 | 5 | 2 | 3 | 3 | 7 | 4+ | 75x42mm |
-| Boss Nob on Warbike | 14 | 4 | 2 | 4 | 5 | 2 | 3 | 4 | 8 | 4+ | 75x42mm |
-| Painboy on Warbike | 14 | 4 | 2 | 4 | 5 | 2 | 3 | 3 | 7 | 4+ | 75x42mm |
+| Nob on Warbike | 14 | 4 | 2 | 4 | 5 | 2 | 3 | 2 | 7 | 4+ | 75x42mm |
+| Boss Nob on Warbike | 14 | 4 | 2 | 4 | 5 | 2 | 3 | 3 | 8 | 4+ | 75x42mm |
+| Painboy on Warbike | 14 | 4 | 2 | 4 | 5 | 2 | 3 | 2 | 7 | 4+ | 75x42mm |
 | Ammo Runt | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
 
 **Unit Composition**
@@ -2023,12 +2028,12 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 
 ## Troops
 
-### 'Ard Boyz — 95 pts
+### 'Ard Boyz — 115 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 'Ard Boy | 6 | 4 | 2 | 4 | 4 | 1 | 2 | 2 | 6 | 5+ | 32mm |
-| 'Ard Nob | 6 | 5 | 2 | 4 | 4 | 2 | 3 | 3 | 7 | 5+ | 40mm |
+| 'Ard Boy | 6 | 4 | 2 | 4 | 4 | 1 | 3 | 1 | 6 | 5+ | 32mm |
+| 'Ard Nob | 6 | 5 | 2 | 4 | 4 | 2 | 3 | 2 | 7 | 5+ | 40mm |
 
 **Unit Composition**
 
@@ -2053,7 +2058,6 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 - Bulky (2) ('Ard Nob only)
 - Dakka! (6+)
 - 'Ere We Go!
-- Furious Charge (1)
 - Might iz Right! ('Ard Nob only)
 - Mob Rule
 - Mob Up
@@ -2071,7 +2075,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 |---|---|
 | **One 'Ard Boy may be upgraded to a 'Ard Nob** | +10 points |
 | **The mob may include:** |  |
-| – Up to 20 additional 'ard boyz | +9 points each |
+| – Up to 20 additional 'ard boyz | +11 points each |
 | **For every 10 'Ard Boyz in the mob, one 'Ard Boy may exchange his Shoota for one of the following:** |  |
 | – Big shoota | +10 points |
 | – Rokkit launcha | +15 points |
@@ -2096,8 +2100,8 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Beast Snagga Boy | 6 | 4 | 2 | 4 | 4 | 1 | 3 | 2 | 7 | 5+ | 32mm |
-| Beast Snagga Nob | 6 | 4 | 2 | 5 | 4 | 2 | 3 | 3 | 7 | 5+ | 40mm |
+| Beast Snagga Boy | 6 | 4 | 2 | 4 | 4 | 1 | 3 | 1 | 7 | 5+ | 32mm |
+| Beast Snagga Nob | 6 | 4 | 2 | 5 | 4 | 2 | 3 | 2 | 7 | 5+ | 40mm |
 
 **Unit Composition**
 
@@ -2122,6 +2126,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 - Klan (X)
 - Might iz Right! (Beast Snagga Nob only)
 - Mob Rule
+- Monster Hunters
 - Monster Hunters: re-roll to-wound rolls of 1 against Vehicles, Dreadnoughts and Monstrous Creatures
 - Waaagh!
 
@@ -2145,10 +2150,12 @@ The unit may ride a Kill Rig or Hunta Rig as a Dedicated Transport. This does no
 
 _Boyz who have grown bigger, faster and meaner than the rest of the mob, but not yet big enough to be Nobz._
 
+_Legacy Unit._
+
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Big Boy | 7 | 4 | 2 | 4 | 4 | 1 | 3 | 2 | 7 | 6+ | 32mm |
-| Boss Nob | 7 | 4 | 2 | 4 | 4 | 2 | 3 | 3 | 7 | 6+ | 32mm |
+| Big Boy | 6 | 4 | 2 | 4 | 4 | 1 | 3 | 1 | 7 | 6+ | 32mm |
+| Boss Nob | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 2 | 7 | 6+ | 32mm |
 
 **Unit Composition**
 
@@ -2158,6 +2165,7 @@ _Boyz who have grown bigger, faster and meaner than the rest of the mob, but not
 
 - Slugga and choppa, or shoota (all models alike)
 - Stikkbombz
+- Da armour
 
 **Unit Type**
 
@@ -2168,6 +2176,7 @@ _Boyz who have grown bigger, faster and meaner than the rest of the mob, but not
 
 - Bigga iz Betta (Boss Nob only)
 - Bulky (2) (Boss Nob only)
+- Dakka! (5+)
 - 'Ere We Go!
 - Klan (X)
 - Might iz Right! (Boss Nob only)
@@ -2184,7 +2193,7 @@ A unit of no more than 12 models may take a Trukk as a Dedicated Transport. Any 
 |---|---|
 | **The Big Boyz may take:** |  |
 | – Up to 10 additional Big Boyz | +9 points each |
-| – Shoota and choppa on every model (shoots with the shoota, fights with the choppa) | +1 point per model |
+| – All Da Kit (choppa, shoota and slugga) | +1 point per model |
 | – 'Eavy armour (4+ save) for the whole unit | +4 points per model |
 | **For every 10 models, one Big Boy may exchange his slugga or shoota for:** |  |
 | – Big shoota | +5 points |
@@ -2201,8 +2210,8 @@ A unit of no more than 12 models may take a Trukk as a Dedicated Transport. Any 
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Boy | 6 | 4 | 2 | 3 | 4 | 1 | 2 | 2 | 6 | 6+ | 32mm |
-| Nob | 6 | 4 | 2 | 3 | 4 | 2 | 3 | 3 | 7 | 6+ | 32mm |
+| Boy | 6 | 4 | 2 | 3 | 4 | 1 | 2 | 1 | 6 | 6+ | 32mm |
+| Nob | 6 | 4 | 2 | 3 | 4 | 2 | 3 | 2 | 7 | 6+ | 32mm |
 
 **Unit Composition**
 
@@ -2267,7 +2276,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Gretchin | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
-| Runtherder | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 2 | 7 | 6+ | 25mm |
+| Runtherder | 6 | 4 | 2 | 4 | 4 | 2 | 3 | 2 | 7 | 6+ | 32mm |
 
 **Unit Composition**
 
@@ -2341,7 +2350,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 
 - Bigga iz Betta (Nob only)
 - Bulky (2) (Nob only)
-- Dakka! (5+)
+- Dakka! (6+)
 - 'Ere We Go!
 - Klan (X)
 - Might iz Right! (Nob only)
@@ -2706,8 +2715,8 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Kommando | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 2 | 6 | 5+ | 32mm |
-| Kommando Nob | 6 | 5 | 2 | 3 | 4 | 2 | 4 | 3 | 7 | 5+ | 40mm |
+| Kommando | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 1 | 6 | 5+ | 32mm |
+| Kommando Nob | 6 | 5 | 2 | 3 | 4 | 2 | 4 | 2 | 7 | 5+ | 40mm |
 | Kommando Grot | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
@@ -2779,7 +2788,7 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Kustom Boosta-blasta | 14 | 3 | 2 | 4 | 5 | 6 | 3 | 4 | 7 | 4+ | Use model |
+| Kustom Boosta-blasta | 14 | 3 | 2 | 4 | 5 | 6 | 3 | 3 | 7 | 4+ | Use model |
 
 **Unit Composition**
 
@@ -2896,7 +2905,7 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Shokkjump Dragsta | 14 | 3 | 2 | 4 | 5 | 4 | 3 | 4 | 6 | 4+ | Use model |
+| Shokkjump Dragsta | 14 | 3 | 2 | 4 | 5 | 4 | 3 | 3 | 6 | 4+ | Use model |
 
 **Unit Composition**
 
@@ -2921,7 +2930,7 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 - Firing Protocols (3)
 - Klan (X)
 - Ramshackled Carapace (6+)
-- Shokk Tunnel Drive: Instead of Running during the Movement phase, a Shokkjump Dragsta may immediately remove itself from the battlefield and redeploy anywhere within 24" using the Deep Strike rules. If the scatter roll results in a Mishap, the Dragsta instead suffers D3 Strength 8 AP2 hits.
+- Shokk Tunnel Drive: Instead of Running during the Movement phase, a Shokkjump Dragsta may immediately remove itself from the battlefield and redeploy anywhere within 24" using the Deep Strike rules. If the scatter roll results in a Mishap (a roll of doubles), all units within D6" (including the Dragsta) suffer D3 hits at Strength 3+D3, AP D6.
 - Speed Freekz
 
 **Options**
@@ -2940,8 +2949,8 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Squighog Boy | 10 | 4 | 2 | 5 | 5 | 2 | 3 | 3 | 7 | 4+ | 75x42mm |
-| Squighog Nob | 10 | 4 | 2 | 5 | 5 | 3 | 3 | 4 | 7 | 4+ | 75x42mm |
+| Squighog Boy | 10 | 4 | 2 | 5 | 5 | 2 | 3 | 2 | 7 | 4+ | 75x42mm |
+| Squighog Nob | 10 | 4 | 2 | 5 | 5 | 3 | 3 | 3 | 7 | 4+ | 75x42mm |
 
 **Unit Composition**
 
@@ -2984,8 +2993,8 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Stormboy | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 2 | 6 | 5+ | 32mm |
-| Storm Nob Boss | 6 | 5 | 2 | 4 | 4 | 2 | 4 | 3 | 7 | 5+ | 40mm |
+| Stormboy | 6 | 4 | 2 | 3 | 4 | 1 | 3 | 1 | 6 | 5+ | 32mm |
+| Storm Nob Boss | 6 | 5 | 2 | 4 | 4 | 2 | 4 | 2 | 7 | 5+ | 40mm |
 
 **Unit Composition**
 
@@ -3045,8 +3054,8 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Warbiker | 12 | 4 | 2 | 4 | 5 | 2 | 3 | 2 | 6 | 4+ | 75x42mm |
-| Nob Biker | 12 | 5 | 2 | 4 | 5 | 3 | 4 | 3 | 7 | 4+ | 75x42mm |
+| Warbiker | 12 | 4 | 2 | 4 | 5 | 2 | 3 | 1 | 6 | 4+ | 75x42mm |
+| Nob Biker | 12 | 5 | 2 | 4 | 5 | 3 | 4 | 2 | 7 | 4+ | 75x42mm |
 
 **Unit Composition**
 
@@ -3306,8 +3315,8 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Flash Git | 6 | 4 | 3 | 4 | 4 | 2 | 3 | 2 | 7 | 4+ | 32mm |
-| Kaptin | 6 | 5 | 3 | 4 | 4 | 3 | 4 | 3 | 8 | 4+ | 32mm |
+| Flash Git | 6 | 4 | 3 | 4 | 4 | 2 | 3 | 1 | 7 | 4+ | 32mm |
+| Kaptin | 6 | 5 | 3 | 4 | 4 | 3 | 4 | 2 | 8 | 4+ | 32mm |
 | Ammo Runt | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 **Unit Composition**
@@ -3477,7 +3486,7 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Killa Kan | 6 | 3 | 3 | 5 | 6 | 3 | 2 | 2 | 5 | 4+ | 60mm |
+| Killa Kan | 6 | 3 | 3 | 5 | 6 | 3 | 3 | 2 | 5 | 4+ | 60mm |
 
 **Unit Composition**
 
