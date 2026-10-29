@@ -28,6 +28,10 @@ After the attack has been resolved, remove one Ammo Runt from play.
 
 In addition, Cavalry models count as four models each for the purposes of determining Mob Rule bonuses.
 
+**Blessin' ah Brutal.** Gork, who is brutal but kunnin', favours the Orks who smash the hardest. A model with this special rule has a 5+ Invulnerable Save and Furious Charge (+1).
+
+**Blessin' ah Kunnin'.** Mork, who is kunnin' but brutal, favours the Orks who think one step ahead of the krumpin'. A model with this special rule has a 5+ Invulnerable Save and Counter-Attack (+1).
+
 **Breakin' Heads.** If a unit with Mob Rule that includes a Nob, Boss Nob or Ork character fails a Morale check or Pinning test, it may choose to pass it instead. If it does, the unit suffers D3 automatic hits at Strength 6, AP –, allocated by the Ork player to models other than characters; armour saves may be taken.
 
 **Da Biggest is Da Best.** Among the Orks, leadership belongs only to the strongest, loudest and most violently successful warlords. The greatest bosses dominate their mobs through brute strength, terrifying aggression and the simple certainty that anyone challenging their authority will be beaten to death publicly and immediately. Entire Waaagh!s rise and fall around such figures as lesser Orks instinctively gather beneath the biggest and meanest leaders they can find.
@@ -124,6 +128,8 @@ Only units of the same type may Mob Up. Shoota Boyz may Mob Up only with other S
 Once per battle, at the start of the controlling player's turn, a model accompanied by one or more Oil Runts may immediately regain a single lost Wound or Hull Point.
 
 After the repair has been resolved, remove one Oil Runt from play.
+
+**One Mind; Two Mobs.** Professa Gorkell and Boss Morkhyde are bought together as one HQ choice but are deployed as two separate units. Each keeps the Klan (X) shown on its datasheet.
 
 **Open-topped.** The vehicle gains the Assault Vehicle special rule, but adds 1 to its rolls on the Vehicle Damage table when it suffers a penetrating hit. The entire vehicle counts as its Access Point.
 
@@ -344,18 +350,18 @@ Every Ork belongs to a Klan, and each Klan fights in its own way. Klans work lik
 
 **Klan Advanced Reactions.** Each Klan has its own Advanced Reaction, usable only by units with that Klan (X) rule. It is available in addition to Get Stuck In and costs one point of the Reaction Allotment like any other reaction†.
 
-**Named characters.** A Unique character belongs to the Klan listed below and may only be included in a detachment of that Klan. Kaptin Badrukk is the exception: he may be included in a Bad Moons or a Freebooterz detachment, and takes that detachment's Klan.
+**Named characters.** A Unique character belongs to the Klan listed below and may only be included in a detachment of that Klan. Kaptin Badrukk is the exception: he may be included in a Bad Moons or a Freebooterz detachment, and takes that detachment's Klan. Da Twinz may be included in a Bad Moons or a Snakebites detachment (see One Mind; Two Mobs).
 
 | Klan | Unique characters |
 |---|---|
-| Bad Moons | Kaptin Badrukk |
+| Bad Moons | Da Twinz (Professa Gorkell), Kaptin Badrukk |
 | Blood Axes | Boss Snikrot |
 | Deathskulls | Mad Dok Grotsnik |
 | Evil Sunz | Wazdakka Gutsmek |
 | Freebooterz | Kaptin Badrukk |
 | Goffs | Boss Zagstruk, Ghazghkull Thraka, Mek Boss Buzzgob |
 | Rustboyz | – |
-| Snakebites | Old Zogwort, Mozrog Skragbad, Zodgrod Wortsnagga |
+| Snakebites | Da Twinz (Boss Morkhyde), Old Zogwort, Mozrog Skragbad, Zodgrod Wortsnagga |
 
 ### Bad Moons
 
@@ -1265,6 +1271,67 @@ _A Head Nob with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 
 - Mob Rule
 - Must join one Stormboyz unit; that unit has Deep Strike and re-rolls Deep Strike scatter
 - Waaagh!
+
+### Da Twinz — 340 pts
+
+_Professa Gorkell is a surprisingly articulate Painboss who wears half a pair of human spectacles on his nose. He believes he is executing a grand, calculated vision to build the ultimate Cybork army. Boss Morkhyde is pure, unchecked Ork id. He is completely non-verbal except for roars, covered in crude iron plates, and treats the operating table like a scrap heap, violently welding whatever junk is nearby directly to the patient._
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Boss Morkhyde | 6 | 5 | 2 | 5 | 5 | 5 | 3 | 5 | 8 | 5+ | 40mm |
+| Grot Orderly | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
+| Professa Gorkell | 6 | 5 | 2 | 5 | 5 | 5 | 3 | 4 | 9 | 5+ | 40mm |
+
+**Unit Composition**
+
+- 1 Boss Morkhyde
+- 1 Professa Gorkell
+
+**Wargear**
+
+- Big choppa
+- Da armour
+- Dok's tools
+- Power klaw
+- Slugga
+- Stikkbombz
+- 'Urty syringe
+
+**Unit Type**
+
+- Boss Morkhyde: Infantry (Independent Character, Unique)
+- Grot Orderly: Infantry
+- Professa Gorkell: Infantry (Independent Character, Unique)
+
+**Special Rules**
+
+- Bigga iz Betta
+- Blessin' ah Brutal (Boss Morkhyde only)
+- Blessin' ah Kunnin' (Professa Gorkell only)
+- Bulky (3)
+- Counter-Attack (1) (Boss Morkhyde only)
+- Da Biggest is Da Best
+- 'Ere We Go!
+- Hammer of Wrath (1) (Boss Morkhyde only)
+- It Will Not Die (6+) (Boss Morkhyde only)
+- Klan (Bad Moons) (Professa Gorkell only)
+- Klan (Snakebites) (Boss Morkhyde only)
+- Mek-Smasha (5+) (Professa Gorkell only)
+- Might iz Right!
+- Mob Rule
+- Oddboy
+- One Mind; Two Mobs
+- Rage (2) (Boss Morkhyde only)
+- Rampage (2)
+- Sudden Strike (1) (Boss Morkhyde only)
+- Waaagh!
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **Professa Gorkell and Boss Morkhyde may each take one grot orderly:** |  |
+| – Up to 2 grot orderlies | +10 points each |
 
 ### Kaptin Badrukk — 115 pts
 
