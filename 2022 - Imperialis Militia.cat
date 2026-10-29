@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="53" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="54" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -1213,6 +1213,18 @@ Unless noted, the effects of any rules featured in the Provenance’s descriptio
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="42ca-85cd-7b94-153d" name="Power Pack" hidden="true" collective="false" import="true" targetId="e4f0-85a6-7252-4b76" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5854-5d36-277b-a71d" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -1498,6 +1510,18 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e952-8d06-5da9-4629" type="min"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f86-0aa3-b7e1-1697" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="fb70-e8f5-7ad8-df6e" name="Power Pack" hidden="true" collective="false" import="true" targetId="e4f0-85a6-7252-4b76" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ff7-66aa-0c53-dd0b" type="max"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2034,6 +2058,18 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23f6-d2f8-f98f-2e8c" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="8128-0ddf-09c6-3cbf" name="Power Pack" hidden="true" collective="false" import="true" targetId="e4f0-85a6-7252-4b76" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0735-809e-dc83-5c64" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
@@ -2437,6 +2473,18 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
           <entryLinks>
             <entryLink id="67e2-f67e-2c33-2770" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
             <entryLink id="2a21-9b69-f3e8-80fc" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="088d-527f-114b-afd4" type="selectionEntryGroup"/>
+            <entryLink id="4ed2-0921-f213-c131" name="Power Pack" hidden="true" collective="false" import="true" targetId="e4f0-85a6-7252-4b76" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="935d-ce83-69c0-eb13" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -3048,6 +3096,18 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25ab-797c-0008-3df5" type="max"/>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ea2-0091-cb20-f418" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="4c5c-7557-1bec-ce03" name="Power Pack" hidden="true" collective="false" import="true" targetId="e4f0-85a6-7252-4b76" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a7d-edb4-6d92-2804" type="max"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
@@ -4017,6 +4077,18 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1a0-3b3a-1aca-76a6" type="min"/>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98f7-2ee0-6d96-f3f1" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="1139-1c98-87d9-423b" name="Power Pack" hidden="true" collective="false" import="true" targetId="e4f0-85a6-7252-4b76" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09a9-0268-dfc8-f77d" type="max"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
@@ -5068,6 +5140,20 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="c485-afe8-44d0-ec1b" name="Power Pack" hidden="true" collective="false" import="true" targetId="e4f0-85a6-7252-4b76" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="613a-4d43-f95e-9e99" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -5799,6 +5885,20 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
             <categoryLink targetId="66b2-c457-4d5e-8041" id="9f81-b7f4-4619-ade9" name="Militia Unit Sub-type" primary="false"/>
             <categoryLink targetId="bff2-ae16-74a8-8712" id="d5b1-ff57-4159-8820" name="Light Sub-type" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="fc6e-e966-932a-6070" name="Power Pack" hidden="true" collective="false" import="true" targetId="e4f0-85a6-7252-4b76" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2165-7779-0bdd-5e2e" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -9509,6 +9609,20 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="50ff-e6fc-a8cb-bc5c" name="Power Pack" hidden="true" collective="false" import="true" targetId="e4f0-85a6-7252-4b76" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbad-b14a-baca-7a78" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
           </costs>
@@ -10059,6 +10173,18 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6937-23fb-33d6-844f" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0fa3-94e2-9a71-a1c7" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8e7d-01e1-5af8-bbc6" name="Power Pack" hidden="true" collective="false" import="true" targetId="e4f0-85a6-7252-4b76" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33cd-0ef8-6f56-bb0d" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
