@@ -165,7 +165,16 @@ loading. The script prints anything in the doc it could not place.
   shrine's weapon swaps. A Skyrunner Jetbike sets Move 18 and makes the model Cavalry (Antigrav). "May be
   selected by up to N Exarchs in a Detachment" limits that shrine per detachment for Exarchs only.
   In an Exarch unit, a model taken more than once is split into one entry per model ("Exarch",
-  "Exarch 2", ...), so each Exarch picks its own shrine and that shrine's weapon options.
+  "Exarch 2", ...), so each Exarch picks its own shrine and that shrine's weapon options. A note under the Options
+  "_No more than 3 Exarchs in the unit may select the same Aspect Shrine._" caps each shrine within the unit;
+  "_The unit may contain up to 7 models, no more than 4 of any one kind ..._" caps each kind of model and all
+  of them together (an upgraded model, such as a Skyrunner Officer, becomes a model of its own kind and costs
+  the model it was upgraded from as well). The weapon a shrine gives is the default pick of its exchange and may
+  be kept; "Twin-linked Avenger Catapult" is its own twin-linked weapon.
+- A datasheet rule "Warlord: Storm of Silence" naming a "### Warlord: Storm of Silence" section is a trait the
+  model takes once it is the Warlord, in place of the Warlord Traits pick.
+- A rule whose words before an apostrophe name an entry ("Scorpion's Sting (X)" and the Scorpion) gets a copy
+  under each name a weapon uses ("Scorpion's Sting (1)"), so the list apps link the rule, not the vehicle.
 - "## Grand Performances" is only shown when the detachment has a Saedath (Rillietann) unit, and is then
   required.
 - "If the army includes any Phoenix Lord models, one of them must be the Warlord" (on a "### X (type)")

@@ -533,7 +533,7 @@ May be selected by a single Exarch in a Detachment.
 | Option | Cost |
 | --- | --- |
 | An Aspect Exarchs unit may include: |  |
-| – Up to 3 additional Exarchs | +20 points per model |
+| – Up to 7 additional Exarchs | +20 points per model |
 | Each Exarch must select a single Aspect Shrine upgrade (see Aspect Shrines): |  |
 | – Aspect Shrine: Dark Reaper | +30 points |
 | – Aspect Shrine: Dire Avenger | +15 points |
@@ -544,6 +544,8 @@ May be selected by a single Exarch in a Detachment.
 | – Aspect Shrine: Striking Scorpion | +25 points |
 | – Aspect Shrine: Swooping Hawk | +20 points |
 | – Aspect Shrine: Warp Spider | +20 points |
+
+_No more than 3 Exarchs in the unit may select the same Aspect Shrine._
 
 ### 0-1 Autarch — 80 pts
 
@@ -1114,7 +1116,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 | Option | Cost |
 | --- | --- |
 | A Guardian Officer Cadre may include: |  |
-| – Up to 8 additional Guardian Officers | +20 points per model |
+| – Up to 6 additional Guardian Officers | +20 points per model |
 | Any Guardian Officer may be upgraded to a: |  |
 | – Skyrunner Officer | +15 points |
 | Any Guardian Officer may take one of the following: |  |
@@ -1127,6 +1129,8 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 | – Fusion Pistol | +10 points |
 | Any Guardian Officer or Skyrunner Officer may take a: |  |
 | – Forceshield | +15 points |
+
+_The unit may contain up to 7 models, no more than 4 of any one kind (Guardian Officers and Skyrunner Officers)._
 
 ### Howling Banshees — 95 pts
 
