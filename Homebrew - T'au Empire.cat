@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -2274,9 +2274,9 @@
         <infoLink name="Shred" id="0936-3208-60e9-0104" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule" />
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="EMP grenade" hidden="false" id="1063-8dd9-dffb-6c30" publicationId="733a-d454-80f2-c90e">
+    <selectionEntry type="upgrade" import="true" name="EMP grenades" hidden="false" id="f715-c10d-8517-de58" publicationId="733a-d454-80f2-c90e">
       <profiles>
-        <profile name="EMP grenade" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5808-0993-2278-9652" publicationId="733a-d454-80f2-c90e">
+        <profile name="EMP grenades" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="fef1-8a78-fb24-9d95" publicationId="733a-d454-80f2-c90e">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
@@ -2286,8 +2286,8 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Haywire" id="1b37-d5b6-79f1-17a9" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule" />
-        <infoLink name="Limited Ammunition (Limited Use)" id="a0e9-10b4-de51-08e7" hidden="false" targetId="03f7-3f04-b43b-91ff" type="rule">
+        <infoLink name="Haywire" id="7d22-7874-7a42-f961" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule" />
+        <infoLink name="Limited Ammunition (Limited Use)" id="284d-5c13-16f2-4474" hidden="false" targetId="03f7-3f04-b43b-91ff" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Limited Use" />
           </modifiers>
@@ -11785,7 +11785,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Unit Upgrades" hidden="false" id="9d96-fd37-ef53-e201">
           <entryLinks>
-            <entryLink import="true" name="EMP grenade" hidden="false" id="008b-c82c-cbc5-5ad5" type="selectionEntry" targetId="1063-8dd9-dffb-6c30">
+            <entryLink import="true" name="EMP grenades" hidden="false" id="008b-c82c-cbc5-5ad5" type="selectionEntry" targetId="f715-c10d-8517-de58">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="2">
                   <repeats>
@@ -12709,7 +12709,7 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
               </costs>
             </entryLink>
-            <entryLink import="true" name="EMP grenade" hidden="false" id="bde8-ada7-b17d-614f" type="selectionEntry" targetId="1063-8dd9-dffb-6c30">
+            <entryLink import="true" name="EMP grenades" hidden="false" id="bde8-ada7-b17d-614f" type="selectionEntry" targetId="f715-c10d-8517-de58">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="2">
                   <repeats>
@@ -13645,7 +13645,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Unit Upgrades" hidden="false" id="de13-2c11-698b-d9ea">
           <entryLinks>
-            <entryLink import="true" name="EMP grenade" hidden="false" id="f758-f3b6-f7f6-adb4" type="selectionEntry" targetId="1063-8dd9-dffb-6c30">
+            <entryLink import="true" name="EMP grenades" hidden="false" id="f758-f3b6-f7f6-adb4" type="selectionEntry" targetId="f715-c10d-8517-de58">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="2">
                   <repeats>
@@ -18015,7 +18015,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Unit Upgrades" hidden="false" id="0555-37e9-b363-a49b">
           <entryLinks>
-            <entryLink import="true" name="EMP grenade" hidden="false" id="36d2-bacd-5e06-6483" type="selectionEntry" targetId="1063-8dd9-dffb-6c30">
+            <entryLink import="true" name="EMP grenades" hidden="false" id="36d2-bacd-5e06-6483" type="selectionEntry" targetId="f715-c10d-8517-de58">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="2">
                   <repeats>
@@ -18413,10 +18413,10 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e45e-5a62-627f-21f4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="EMP grenade" hidden="false" id="8673-1282-30bf-e762" type="selectionEntry" targetId="1063-8dd9-dffb-6c30">
+                <entryLink import="true" name="EMP grenades" hidden="false" id="1698-8892-e523-c618" type="selectionEntry" targetId="f715-c10d-8517-de58">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db91-cc56-e5db-a4f8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29ac-b028-3cbe-2323" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a709-27c8-e489-a4a6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcc2-0a6b-ed36-9081" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Fusion grenade" hidden="false" id="ef33-c590-77aa-071c" type="selectionEntry" targetId="3706-ce46-c059-0ebb">
