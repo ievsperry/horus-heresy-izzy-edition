@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -7623,7 +7623,7 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Splinter pistol and razorflails" hidden="false" id="c202-6526-0b0f-20f8" type="selectionEntry" targetId="57fb-917a-3919-6efc">
+                    <entryLink import="true" name="Splinter pistol and razorflails" hidden="false" id="c202-6526-0b0f-20f8" type="selectionEntry" targetId="9370-405f-fbdd-97b6">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afbd-e0cd-890f-0992" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
@@ -7662,7 +7662,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="e8a4-d7c9-559b-9756" childId="57fb-917a-3919-6efc" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="e8a4-d7c9-559b-9756" childId="9370-405f-fbdd-97b6" shared="true" includeChildSelections="true" includeChildForces="false" />
                         <condition type="atLeast" value="1" field="selections" scope="e8a4-d7c9-559b-9756" childId="a0af-2d3a-d50a-4b88" shared="true" includeChildSelections="true" includeChildForces="false" />
                       </conditions>
                     </conditionGroup>
@@ -7672,7 +7672,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="e8a4-d7c9-559b-9756" childId="57fb-917a-3919-6efc" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="e8a4-d7c9-559b-9756" childId="9370-405f-fbdd-97b6" shared="true" includeChildSelections="true" includeChildForces="false" />
                         <condition type="atLeast" value="1" field="selections" scope="e8a4-d7c9-559b-9756" childId="a0af-2d3a-d50a-4b88" shared="true" includeChildSelections="true" includeChildForces="false" />
                       </conditions>
                     </conditionGroup>
@@ -7862,7 +7862,22 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Splinter pistol and razorflails" hidden="false" id="57fb-917a-3919-6efc" publicationId="9356-fc9b-2fee-7d11" />
+    <selectionEntry type="upgrade" import="true" name="Splinter pistol and razorflails" hidden="false" id="9370-405f-fbdd-97b6" publicationId="9356-fc9b-2fee-7d11">
+      <entryLinks>
+        <entryLink import="true" name="Splinter pistol" hidden="false" id="4548-a02c-90cd-822b" type="selectionEntry" targetId="e670-1c31-6300-cd2d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff31-426c-f513-2b55" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9f4-f604-15d3-38a1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Razorflails" hidden="false" id="1b93-eb54-3867-e405" type="selectionEntry" targetId="348a-dfbe-ff15-4a33">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cdd8-5931-9889-ee58" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58ca-e713-b1d2-b330" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kabalite Warriors" hidden="false" id="9cc5-d445-c486-d7be" publicationId="9356-fc9b-2fee-7d11">
       <infoLinks>
         <infoLink name="Xenos" id="3cad-300c-8bb0-0d57" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />

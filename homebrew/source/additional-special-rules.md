@@ -8,6 +8,10 @@ _To stand in proximity of the Repressor-Constructs bound to the Silent Sisterhoo
 
 Models with the Traitor Allegiance suffer a penalty of -1 to their Initiative and Leadership Characteristics whilst within 6" of a unit containing a model with this Special Rule. This penalty is cumulative with other effects, and units with the Stubborn Special Rule do suffer penalties to their Leadership from the effects of this Special Rule (note that this only applies to the Stubborn Special Rule, and other Special Rules that ignore penalties to Leadership ignore the effects of the Abominant Aura Special Rule).
 
+## Advanced Weapons
+
+A unit with this Special Rule adds +1 Strength (to a maximum of 4) to its Lasrifles, Laspistols and Rotor Cannons.
+
 ## Aerial Interception
 
 _Some weapon platforms were equipped with suites of sensor auguries, gyroscopic aim assistors, or other more arcane targeting systems which let them quickly bring heavier weapons to bear upon incoming aircraft._
@@ -196,6 +200,10 @@ If a Kelaino Sky-Talon suffers the Crash and Burn damage result whilst it is car
 
 Designer's Note: The Bunker should be roughly of a size which allows it to fit on a 120 x 92mm base.
 
+## Blitz Barrage
+
+Once per game, before any Shooting Attacks in one of its Controlling Player's Shooting phases, a unit with a model with this Special Rule may declare a Blitz Barrage. That phase, it may fire each of its Ordnance weapons twice. The second Shooting Attack may target a different unit but otherwise follows the normal rules.
+
 ## Burst (X)
 
 _Designed to fire multiple projectiles in quick succession, the speed of such fire ensured that if one shot was on target, all that followed it were also sure to connect._
@@ -259,6 +267,14 @@ A Deathstrike Missile Platform may not fire its Deathstrike Missile normally for
 The Controlling Player must laugh maniacally, then proceed to resolve their selected Warhead anywhere on the battlefield - It should be noted that the Warheads do not have a Range as the Blast Marker can be placed anywhere the battlefield! This Blast Marker must still be Scattered following the usual Rules, reducing the distance scattered by the model's own unmodified Ballistic Skill.
 
 Once fired, a Deathstrike Missile may not be fired again for the remainder of the game for any reason, and is counted as having suffered an irreparable Weapon Destroyed Result. A Deathstrike Missile cannot suffer the effects of Weapon Destroyed results for any other reason, and is immune to any effects which would allow another player to fire a weapon belonging to an enemy model.
+
+## Concentrated Fire
+
+Advanced Reaction, available to a unit with an Armoured Fist Marshal. It uses a point of the Reaction Allotment as normal.
+
+• Trigger: an enemy unit makes a Shooting Attack targeting this unit.
+• After all To Hit, Armour Penetration, Invulnerable Save and Damage Mitigation rolls, but before lost Hull Points or Vehicle Damage results are applied, the reacting unit makes a Shooting Attack at the triggering unit.
+• Each model may fire all its Defensive Weapons and up to one Battle Weapon. Template weapons may only be used if the target is within 8", and must use Wall of Death.
 
 ## Countermeasures
 
