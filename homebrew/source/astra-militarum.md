@@ -2459,7 +2459,7 @@ All weapons listed here are counted as 'Las' weapons for those rules that affect
 | --- | --- | --- | --- | --- |
 | Bombast field gun | 48" | 8 | 4 | Ordnance 1, Barrage, Large Blast (5") |
 | Castigator gatling cannon | 24" | 6 | 4 | Heavy 12 |
-| Chem cannon | Template | 1 | - | Heavy 1, Breaching (5+), Fleshbane |
+| Chem cannon | Template | 1 | – | Heavy 1, Breaching (5+), Fleshbane |
 | Deathstrike missile | 960" | 10 | 1 | Destroyer 1, Barrage, Massive Blast (7"), One Use |
 | Eradicator nova cannon | 36" | 6 | 4 | Heavy 1, Large Blast (5"), Ignores Cover |
 | Exterminator autocannon | 48" | 7 | 4 | Heavy 6, Rending (5+), Twin-linked |
