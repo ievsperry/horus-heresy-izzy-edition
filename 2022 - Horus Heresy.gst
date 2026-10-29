@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="214" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="215" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -19916,6 +19916,18 @@ This area of terrain does not confer a Cover Save and no model within its bounda
 4 - Armour Repairs: All models affected may re-roll Armour Save rolls of 1.
 5 - Cooling Coils: All models affected's Ranged Weapons increase the number of shots they fire by 1 (for example, a weapon with Assault 2 becoming Assault 3), and may ignore the effects of the Gets Hot Special Rule on their weapons, if they have it.
 6 - Complete Overhaul: The Controlling Player may choose two different results from this table and apply them to the unit.</description>
+    </rule>
+    <rule id="cb1a-0b73-586d-f347" name="Advanced Weapons" hidden="false">
+      <description>A unit with this Special Rule adds +1 Strength (to a maximum of 4) to its Lasrifles, Laspistols and Rotor Cannons.</description>
+    </rule>
+    <rule id="1003-277b-d7d6-5ea5" name="Blitz Barrage" hidden="false">
+      <description>Once per game, before any Shooting Attacks in one of its Controlling Player's Shooting phases, a unit with a model with this Special Rule may declare a Blitz Barrage. That phase, it may fire each of its Ordnance weapons twice. The second Shooting Attack may target a different unit but otherwise follows the normal rules.</description>
+    </rule>
+    <rule id="fb11-9321-0bc8-4b0e" name="Concentrated Fire" hidden="false">
+      <description>Advanced Reaction, available to a unit with an Armoured Fist Marshal. It uses a point of the Reaction Allotment as normal.
+• Trigger: an enemy unit makes a Shooting Attack targeting this unit.
+• After all To Hit, Armour Penetration, Invulnerable Save and Damage Mitigation rolls, but before lost Hull Points or Vehicle Damage results are applied, the reacting unit makes a Shooting Attack at the triggering unit.
+• Each model may fire all its Defensive Weapons and up to one Battle Weapon. Template weapons may only be used if the target is within 8", and must use Wall of Death.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

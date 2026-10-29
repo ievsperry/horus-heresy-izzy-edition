@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6aaf-163e-5512-c78e" name="Homebrew - Astra Militarum" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6aaf-163e-5512-c78e" name="Homebrew - Astra Militarum" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="0fda-9dad-a0bf-40e6" name="Astra Militarum for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Astra Militarum" />
   </publications>
@@ -7661,7 +7661,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8488-a707-6097-04a4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Laspistol and close combat weapon" hidden="false" id="a03b-528e-2c0c-347a" type="selectionEntry" targetId="df2b-cae1-5ea0-fd06">
+                <entryLink import="true" name="Laspistol and close combat weapon" hidden="false" id="a03b-528e-2c0c-347a" type="selectionEntry" targetId="1404-aaa7-1e7c-b9a1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d7c-bf4f-ec27-beb4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -8101,7 +8101,22 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Laspistol and close combat weapon" hidden="false" id="df2b-cae1-5ea0-fd06" publicationId="0fda-9dad-a0bf-40e6" />
+    <selectionEntry type="upgrade" import="true" name="Laspistol and close combat weapon" hidden="false" id="1404-aaa7-1e7c-b9a1" publicationId="0fda-9dad-a0bf-40e6">
+      <entryLinks>
+        <entryLink import="true" name="Laspistol" hidden="false" id="00e1-09ed-b13b-5141" type="selectionEntry" targetId="ebf6-962f-2e4a-6ee1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="374d-2e17-f375-858b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1900-7eef-a3ac-fc1c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Close combat weapon" hidden="false" id="47ed-2c6f-51dc-e2ac" type="selectionEntry" targetId="30bd-0f6d-7ae4-8ae0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4b1-d37b-327d-7e37" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1e0-f86a-6582-fde0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Infantry Squad" hidden="false" id="bb89-e7dc-d0b6-f9fa" publicationId="0fda-9dad-a0bf-40e6">
       <rules>
         <rule name="Note" id="c7ff-ade7-c8f7-3dba" hidden="false">
@@ -9739,7 +9754,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Sergeant's autogun and close combat weapon" hidden="false" id="6608-f413-1efc-a28b" type="selectionEntry" targetId="37fa-0aa0-0366-48a1">
+                <entryLink import="true" name="Sergeant's autogun and close combat weapon" hidden="false" id="6608-f413-1efc-a28b" type="selectionEntry" targetId="b48e-d99a-eaa3-9c06">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba8e-8b86-fcb4-2982" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -9763,7 +9778,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="c883-6aa1-c534-639b" childId="37fa-0aa0-0366-48a1" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="c883-6aa1-c534-639b" childId="b48e-d99a-eaa3-9c06" shared="true" includeChildSelections="true" includeChildForces="false" />
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -9772,7 +9787,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="c883-6aa1-c534-639b" childId="37fa-0aa0-0366-48a1" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="c883-6aa1-c534-639b" childId="b48e-d99a-eaa3-9c06" shared="true" includeChildSelections="true" includeChildForces="false" />
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -9933,7 +9948,22 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="11" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sergeant's autogun and close combat weapon" hidden="false" id="37fa-0aa0-0366-48a1" publicationId="0fda-9dad-a0bf-40e6" />
+    <selectionEntry type="upgrade" import="true" name="Sergeant's autogun and close combat weapon" hidden="false" id="b48e-d99a-eaa3-9c06" publicationId="0fda-9dad-a0bf-40e6">
+      <entryLinks>
+        <entryLink import="true" name="Sergeant's autogun" hidden="false" id="d742-e426-a45a-e7ce" type="selectionEntry" targetId="7e9d-8c96-1fb4-415c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="62e2-9696-d97b-ea3d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0b7-4717-41d8-3d14" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Close combat weapon" hidden="false" id="a74d-12cf-fbe9-cf0d" type="selectionEntry" targetId="30bd-0f6d-7ae4-8ae0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22eb-6063-f011-a6ab" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b75-e771-8e03-8ba6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Catachan Jungle Fighters" hidden="false" id="7e6f-9f19-9d4f-021d" publicationId="0fda-9dad-a0bf-40e6">
       <infoLinks>
         <infoLink name="Jungle Ambush" id="d85e-45dc-8228-630e" hidden="false" targetId="0c77-151c-99aa-1d8a" type="rule" />
@@ -10507,7 +10537,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="49f1-5a8a-8f32-5804" childId="3404-a476-7df6-3473" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="49f1-5a8a-8f32-5804" childId="d88c-bf09-3b6a-3327" shared="true" includeChildSelections="true" includeChildForces="false" />
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -10516,7 +10546,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="49f1-5a8a-8f32-5804" childId="3404-a476-7df6-3473" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="49f1-5a8a-8f32-5804" childId="d88c-bf09-3b6a-3327" shared="true" includeChildSelections="true" includeChildForces="false" />
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -10569,7 +10599,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Boltgun and close combat weapon" hidden="false" id="bd0b-42d0-3167-e2c5" type="selectionEntry" targetId="3404-a476-7df6-3473">
+                <entryLink import="true" name="Boltgun and close combat weapon" hidden="false" id="bd0b-42d0-3167-e2c5" type="selectionEntry" targetId="d88c-bf09-3b6a-3327">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b826-1fe0-15e4-df26" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -10729,7 +10759,22 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="11" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Boltgun and close combat weapon" hidden="false" id="3404-a476-7df6-3473" publicationId="0fda-9dad-a0bf-40e6" />
+    <selectionEntry type="upgrade" import="true" name="Boltgun and close combat weapon" hidden="false" id="d88c-bf09-3b6a-3327" publicationId="0fda-9dad-a0bf-40e6">
+      <entryLinks>
+        <entryLink import="true" name="Boltgun" hidden="false" id="e5c6-6db3-3040-c5fc" type="selectionEntry" targetId="1ade-0c02-5612-252b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf75-3c4d-6c92-a31a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d48-ceb2-d145-62f4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Close combat weapon" hidden="false" id="317d-17da-663c-aa4e" type="selectionEntry" targetId="30bd-0f6d-7ae4-8ae0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1bf6-6be9-9bc2-0b72" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4d7-5d08-3e86-0259" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Chimera" hidden="false" id="371c-c767-ed07-2bb8" publicationId="0fda-9dad-a0bf-40e6">
       <rules>
         <rule name="Amphibious" id="e2fa-7367-b4df-f953" hidden="false">

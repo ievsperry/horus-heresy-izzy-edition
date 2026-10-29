@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="d5ae-9e15-7ef2-10f7" name="Asuryani for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Asuryani" />
   </publications>
@@ -5229,7 +5229,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Charnabal Weapon" hidden="false" id="97a2-138f-3f93-7d41" type="selectionEntry" targetId="7e06-03ac-d88e-a6e8">
+                <entryLink import="true" name="Charnabal Weapon" hidden="false" id="97a2-138f-3f93-7d41" type="selectionEntry" targetId="25f5-18e5-10e3-760f">
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="30b0-401d-4ac6-1477" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -5436,7 +5436,24 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Charnabal Weapon" hidden="false" id="7e06-03ac-d88e-a6e8" publicationId="d5ae-9e15-7ef2-10f7" />
+    <selectionEntry type="upgrade" import="true" name="Charnabal Weapon" hidden="false" id="25f5-18e5-10e3-760f" publicationId="d5ae-9e15-7ef2-10f7">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Charnabal Weapon" hidden="false" id="c88d-2f8d-40b1-656c" defaultSelectionEntryId="2f1f-6f26-d3bb-0e13">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="616d-0b43-0876-6b1f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c81e-6c00-13e7-d4b0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Charnabal Glaive" hidden="false" id="2f1f-6f26-d3bb-0e13" type="selectionEntry" targetId="3ba2-682e-ce15-043f" />
+            <entryLink import="true" name="Charnabal Sabre" hidden="false" id="0b8b-3ff3-0a84-5ff7" type="selectionEntry" targetId="2d0b-453b-f714-cf9c" />
+            <entryLink import="true" name="Charnabal Tabar" hidden="false" id="41a4-a8b9-ec21-d766" type="selectionEntry" targetId="7a8b-61c5-ddcf-8bd8" />
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+      </costs>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Eldrad Ulthran" hidden="false" id="6954-2e79-5413-98a6" publicationId="d5ae-9e15-7ef2-10f7">
       <rules>
         <rule name="Psychic Discipline" id="9c6c-a4be-a080-7c75" hidden="false">
@@ -12302,7 +12319,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Searchlight" hidden="false" id="2fe8-14b0-178f-dc86" type="selectionEntry" targetId="82bb-f795-b3e0-3266">
+                <entryLink import="true" name="Searchlight" hidden="false" id="2fe8-14b0-178f-dc86" type="selectionEntry" targetId="4ae3-79b4-6051-505e">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da75-5387-7fe4-ebf3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -12330,7 +12347,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="550" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Searchlight" hidden="false" id="82bb-f795-b3e0-3266" publicationId="d5ae-9e15-7ef2-10f7" />
     <selectionEntry type="unit" import="true" name="Lynx" hidden="false" id="c893-005f-2161-0031" publicationId="d5ae-9e15-7ef2-10f7">
       <infoLinks>
         <infoLink name="Xenos" id="674a-f703-9b9d-7988" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
@@ -12457,7 +12473,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Searchlight" hidden="false" id="0f33-5ccf-c40d-417c" type="selectionEntry" targetId="82bb-f795-b3e0-3266">
+                <entryLink import="true" name="Searchlight" hidden="false" id="0f33-5ccf-c40d-417c" type="selectionEntry" targetId="4ae3-79b4-6051-505e">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7750-281c-e0b7-3d56" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -12546,7 +12562,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Arm Mounted Wraith Glaive and Twin-linked Gravis Starcannon" hidden="false" id="bba3-1b3b-4279-45e5" type="selectionEntry" targetId="d79e-2435-fdf9-3950">
+                <entryLink import="true" name="Arm Mounted Wraith Glaive and Twin-linked Gravis Starcannon" hidden="false" id="bba3-1b3b-4279-45e5" type="selectionEntry" targetId="5e53-27ed-605d-9cd2">
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3e3a-1ca7-1958-50f4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -12607,7 +12623,22 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2500" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Arm Mounted Wraith Glaive and Twin-linked Gravis Starcannon" hidden="false" id="d79e-2435-fdf9-3950" publicationId="d5ae-9e15-7ef2-10f7" />
+    <selectionEntry type="upgrade" import="true" name="Arm Mounted Wraith Glaive and Twin-linked Gravis Starcannon" hidden="false" id="5e53-27ed-605d-9cd2" publicationId="d5ae-9e15-7ef2-10f7">
+      <entryLinks>
+        <entryLink import="true" name="Wraith Glaive" hidden="false" id="770a-3cf5-5465-2c93" type="selectionEntry" targetId="46c1-e65f-e42e-6373">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bfa-e3b3-06ee-66e5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7dd-2d4e-e6e8-88f7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gravis Starcannon" hidden="false" id="70f4-60be-8c7e-7548" type="selectionEntry" targetId="7cc7-0899-5883-a98c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c99-3a3d-e0e0-b076" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70ce-7ffc-437c-04de" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Revenant Titan" hidden="false" id="bc07-fdd0-4ef6-6104" publicationId="d5ae-9e15-7ef2-10f7">
       <infoLinks>
         <infoLink name="Xenos" id="0c37-a2f7-639d-adf6" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
@@ -12837,7 +12868,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Searchlight" hidden="false" id="79fc-7747-6d79-ddbe" type="selectionEntry" targetId="82bb-f795-b3e0-3266">
+                <entryLink import="true" name="Searchlight" hidden="false" id="79fc-7747-6d79-ddbe" type="selectionEntry" targetId="4ae3-79b4-6051-505e">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42b5-71e8-4bea-7b9d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>

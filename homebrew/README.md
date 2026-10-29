@@ -278,6 +278,17 @@ loading. The script prints anything in the doc it could not place.
   weapon X with both profiles. A free option repeating the weapon the swap starts with is left out.
 - "its Halian Heavy Jetbike's Heavy Snare Cannon" works like "either or both of its X's Y": the weapon the wargear
   says it has ("A Halian Heavy Jetbike has a Heavy Snare Cannon") joins the model's wargear.
+- An option item the doc does not define is looked for before it becomes a named placeholder: "Chainsword and
+  Laspistol" is both items, and "Storm Axe" or "Charnabal Weapon" is the official catalogues' or the game system's
+  entry (any game system entry by name, singular or plural). A game system weapon whose profiles sit in its own
+  entries ("Missile Launcher": frag, krak) is a weapon too. This fills options that used to be empty in the
+  Traders Militant, Astra Militarum and Aeldari lists.
+- A swap of an item the model only gets from another swap ("The Troop Master may exchange its Shotgun for:
+  Laspistol", then "may exchange a Laspistol for one of") joins that swap at both costs; when the first swap gives
+  two items ("Laspistol and Close Combat Weapon"), each part may be swapped, so every combination is offered.
+- "exchange a Laspistol for", "up to two Centreline Mounted Twin-Linked Lascannons, each for", counts up to twelve
+  ("Eight Hull (Front) Mounted Hellstrike Missiles"), "Special Rules: None", a wargear heading naming its bearer
+  ("Ambulator Frame (Ireton MaSade)") and "Two Dreadnought Power Gloves with in-built Twin-Linked Bolters" are read.
 - From the official catalogues the Builder also takes items behind a mount ("Centreline Mounted Enhanced Arachnus
   Blaze Cannon"), "Twin-Linked X" (X's profiles with Twin-linked), and singular or plural names ("Spectra Cloak" is
   "Spectra Cloaks"). An official rule spelt another way ("Ex Oblivio", "Ex-Oblivio") is linked by its own name.
@@ -367,6 +378,9 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Twin-linked special rule), runs `add_gst_weapons.py` to put it in the game system, and points the options that
   show the twin-linked weapon (by name, or by carrying a separate Twin-linked rule) at the new entry. Running it
   again changes nothing.
+- `homebrew/expansion_tools.py` holds what the expansion scripts below share: building the doc's units with the
+  Builder, moving them into an official catalogue linked to the official entries wherever those exist, and editing
+  the official file as text so it keeps its formatting.
 - `python3 homebrew/add_sisters_of_silence.py` adds the Liber Imperatus Sisters of Silence expansion (the Claude Doc
   "Sisters of Silence Horus Heresy 2.0 - Homebrew Conversion", kept as `source/sisters-of-silence.md`) to
   `2022 - LI - Sisters Of Silence.cat`. build_catalogue.py's Builder reads the doc's datasheets; their units then
@@ -387,4 +401,31 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     the Questora's and Eradicator's new Vratine Bolter swaps; Artificer Armour for Knight Vestals; Charnabal or
     Power Weapons for Subjugators) and the Silent Sisterhood Grav-Rhino and Rhino for the official Cadres that may
     take them, as an alternative to their Kharon Pattern Acquisitor, while they have no more than twelve models.
+  It refuses to run on a catalogue that already has the expansion.
+- `python3 homebrew/add_solar_auxilia.py` adds the Liber Imperatus Solar Auxilia expansion (the Claude Doc "Solar
+  Auxilia Horus Heresy 2.0 - Homebrew Conversion", kept as `source/solar-auxilia.md`) to `2022 - LI - Solar
+  Auxilia.cat`, after its three new rules (Advanced Weapons, Blitz Barrage, Concentrated Fire) are in
+  `additional-special-rules.md` and the game system. The units take the official catalogue's names ("Breacher
+  Section", not "Solar Auxilia Breacher Section"). It also writes:
+  - the Breacher, Infantry Support, Carnodon, Light Armoured and Verticalis Drop Tercios as the official Tercios are
+    built (one choice of up to three Sections; the Carnodon Tercio takes the official Carnodon Strike Squadrons),
+    and the Sabre Battery (0-3) in the official Artillery Tercio;
+  - the Sections' Dedicated Transports by size (Aurox or Termite up to ten models, Chimera up to twelve, Dracosan or
+    Hades at any size; Arvus or Kelaino for the Verticalis Drop Sections), hidden in a Zone Mortalis force;
+  - the eight new Cohort Doctrines in the official pick (Apostle only for a Traitor Detachment, Legion-Sworn only
+    for an Allied one, Scourge never for an Allied one) with the slots they open (Possessed Auxilia, Furibundus,
+    Extremis, Aethon, Hellhound, Infantry Support Tercio, Macharius, Aello), and the doc's additions to the Iron and
+    Siege Pattern Cohorts' text;
+  - the Armoured Fist, Dictatii (one per army, +1 BS and +2 Hull Points shown on the vehicle) and Ordnance Corps
+    Marshals on the vehicles the doc names, one per model; the new Warlord Traits beside the official pick (Super-Heavy
+    Armoured Legate only with Steel Fury Pattern Cohorts); Ireton MaSade's Master of the Battlefield, his Cohort
+    Doctrines and his Extremis Warsuit with the Mechanised profile; the Battle Psyker's Core Psychic Discipline
+    (Anathemata too with Apostle Pattern Cohorts); the Deathstrike's warhead and the Manticore's four missiles;
+  - the extra options on official units: Companion and Tactical Command Section swaps and Heavy Void Armour for the
+    whole unit, new Veletarii loadouts and Prime weapons, the Arvus Transport's hull weapon, Twin-Linked and Flare
+    Shield, the Leman Russ Command Tank's turret, the Leman Russ Squadrons' turrets (per tank), the Macharius hull
+    and sponson weapons, Dozer Blade and Flare Shield, the Malcador's side weapons and Siege Retrofit, and a second
+    Valdor (235 points) with its centreline weapon.
+  The doc's Aethon Heavy Sentinel Squadron is a Fast Attack unit of its own; the official Aethon entry is left as it
+  is. Cohort Doctrine limits on unit counts and play are rule text only.
   It refuses to run on a catalogue that already has the expansion.
