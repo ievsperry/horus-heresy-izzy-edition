@@ -312,6 +312,19 @@ A model that upgrades a Chainsword to a Falax Blade replaces the Chainsword with
 | Tarsus Buckler | - | +1 | 3 | Melee |
 | Telemon Cestus | - | 10 | 1 | Melee, Specialist Weapon, Sunder, Brutal (3) |
 
+## Power Pack Weapons
+
+_Mining and engineering tools of the Militia work gangs and their abhuman kin, run off a Power Pack._
+
+A model with a Power Pack (0 points; Infantry Characters only) may take up to two of the following: Circular Stone Saw (+5 points), Stone Burner (+10 points), Gem Extractor, Kinfolk Arc Welder.
+
+| Weapon | Range | Str | AP | Type |
+|---|---|---|---|---|
+| Circular Stone Saw | - | 4 | 5 | Melee, Shred |
+| Gem Extractor | - | 6 | 3 | Melee, Rending (6+) |
+| Kinfolk Arc Welder | - | 7 | 2 | Melee, Unwieldy (3) |
+| Stone Burner | 6" | 7 | 2 | Pistol 1, Armourbane (Melta) |
+
 ## Extrinsica Melee Weapons
 
 The weapons below are designed to represent the varied and deadly weapons that could be found in the armouries of the Legiones Astartes, Mechanicum, Imperial Commanders, and beyond across the battlefields of the Great Crusade and Horus Heresy. Unspeakably rare, even when compared to Paragon Blades, these armaments were seen only in the direst of circumstances. Known collectively as "Extrinsica" (Those from Without), these dread weapons claimed countless lives for many masters on both sides of the Heresy.
