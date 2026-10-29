@@ -328,15 +328,15 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 | **The Archon may exchange their close combat weapon for one of the following:** |  |
 | – Agoniser blade | +5 points |
 | – Agoniser whip | +5 points |
-| – Power lance | +10 points |
+| – Aeldari Power Lance | +10 points |
 | – Mindphase gauntlet | +10 points |
 | – Huskblade | +15 points |
 | – Archite glaive | +15 points |
 | – Djinn blade | +20 points |
 | **The Archon may exchange their splinter pistol for one of the following:** |  |
-| – Blast pistol | +10 points |
+| – Aeldari Blast Pistol | +10 points |
 | – Shardcarbine | +5 points |
-| – Blaster | +10 points |
+| – Aeldari Blaster | +10 points |
 | **The Archon may take any of the following:** |  |
 | – Clone field | +15 points |
 | – Crucible of Malediction | +20 points |
@@ -390,7 +390,7 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 | – Huskblade | +15 points |
 | – Power weapon | +10 points |
 | **The Master Archon may exchange their splinter pistol for one of the following:** |  |
-| – Blast pistol | +10 points |
+| – Aeldari Blast Pistol | +10 points |
 | – Parasite's Kiss | +10 points |
 | **The Master Archon may take any of the following:** |  |
 | – Clone field | +15 points |
@@ -445,11 +445,11 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 | **The Succubus may exchange their Hekatarii blade for one of the following:** |  |
 | – Agoniser blade | +5 points |
 | – Agoniser whip | +5 points |
-| – Power lance | +10 points |
+| – Aeldari Power Lance | +10 points |
 | – Archite glaive | +15 points |
 | – Huskblade | +15 points |
 | **The Succubus may exchange their splinter pistol for:** |  |
-| – Blast pistol | +10 points |
+| – Aeldari Blast Pistol | +10 points |
 | **The Succubus may take:** |  |
 | – Soul trap | +15 points |
 | **The Succubus may take one of the following:** |  |
@@ -503,11 +503,11 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 | – Archite glaive | +15 points |
 | – Djinn blade | +15 points |
 | – Hydra gauntlets | +10 points |
-| – Power lance | +10 points |
+| – Aeldari Power Lance | +10 points |
 | – Razorflails | +10 points |
 | – Shardnet and impaler | +10 points |
 | **The Master Succubus may exchange their splinter pistol for one of the following:** |  |
-| – Blast pistol | +10 points |
+| – Aeldari Blast Pistol | +10 points |
 | – Haywire grenades | +5 points |
 | **The Master Succubus may take any of the following:** |  |
 | – Clone field | +15 points |
@@ -555,7 +555,7 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 | Option | Cost |
 | --- | --: |
 | **The Haemonculus may exchange their stinger pistol for one of the following:** |  |
-| – Blast pistol | +10 points |
+| – Aeldari Blast Pistol | +10 points |
 | – Mindphase gauntlet | +10 points |
 | **The Haemonculus may take any of the following:** |  |
 | – Clone field | +15 points |
@@ -608,7 +608,7 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 | Option | Cost |
 | --- | --: |
 | **The Master Haemonculus may exchange their stinger pistol for one of the following:** |  |
-| – Blast pistol | +10 points |
+| – Aeldari Blast Pistol | +10 points |
 | – Mindphase gauntlet | +10 points |
 | **The Master Haemonculus may take any of the following:** |  |
 | – Crucible of Malediction | +15 points |
@@ -890,11 +890,11 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 | **The Syren may exchange their Hekatarii blade for one of the following:** |  |
 | – Agoniser blade | +5 points |
 | – Agoniser whip | +5 points |
-| – Power lance | +10 points |
+| – Aeldari Power Lance | +10 points |
 | – Archite glaive | +15 points |
 | – Huskblade | +15 points |
 | **The Syren may exchange their splinter pistol for:** |  |
-| – Blast pistol | +10 points |
+| – Aeldari Blast Pistol | +10 points |
 | **The entire unit may take:** |  |
 | – Haywire grenades | +3 points each |
 | **The Syren may take:** |  |
@@ -1081,7 +1081,7 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 | – Up to 5 additional Trueborn | +18 points each |
 | **Any Trueborn may exchange their splinter rifle for one of the following:** |  |
 | – Shardcarbine | Free |
-| – Blaster | +15 points each |
+| – Aeldari Blaster | +15 points each |
 | – Haywire blaster | +15 points each |
 | – Shredder | +5 points each |
 | – Splinter cannon | +15 points each |
@@ -1092,8 +1092,8 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 | – Huskblade | +15 points |
 | – Archite glaive | +15 points |
 | **The Dracon may exchange their splinter rifle for one of the following:** |  |
-| – Blast pistol | +10 points |
-| – Blaster | +10 points |
+| – Aeldari Blast Pistol | +10 points |
+| – Aeldari Blaster | +10 points |
 
 ### Mandrakes — 75 pts
 
@@ -1211,13 +1211,13 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 | **The Archsybarite may exchange their close combat weapon for:** |  |
 | – Power weapon | +10 points |
 | **The Archsybarite may exchange their splinter rifle for one of the following:** |  |
-| – Blast pistol | +10 points |
+| – Aeldari Blast Pistol | +10 points |
 | – Splinter pistol | +5 points |
 | **The Archsybarite may take one of the following:** |  |
 | – Kabalite icon | +10 points |
 | – Phantasm grenade launcher | +10 points |
 | **One Kabalite Agent may exchange their splinter rifle for one of the following:** |  |
-| – Blaster | +10 points |
+| – Aeldari Blaster | +10 points |
 | – Shredder | +10 points |
 | **One Kabalite Agent may exchange their splinter rifle for one of the following:** |  |
 | – Dark lance | +20 points |
@@ -1272,7 +1272,7 @@ _A model equipped with a stimm-needler may not exchange its splinter rifle._
 | **The unit may include:** |  |
 | – Up to 10 additional Kabalite Warriors | +8 points each |
 | **For every 5 models in the unit, one Kabalite Warrior may exchange their splinter rifle for one of the following:** |  |
-| – Blaster | +15 points |
+| – Aeldari Blaster | +15 points |
 | – Shredder | +5 points |
 | – Splinter cannon | +15 points |
 | – Dark lance | +20 points |
@@ -1283,7 +1283,7 @@ _A model equipped with a stimm-needler may not exchange its splinter rifle._
 | **The Sybarite may exchange their splinter rifle for:** |  |
 | – Shardcarbine | Free |
 | **The Sybarite may exchange their splinter pistol for:** |  |
-| – Blast pistol | +10 points |
+| – Aeldari Blast Pistol | +10 points |
 | **The Sybarite may take any of the following:** |  |
 | – Phantasm grenade launcher | +10 points |
 | – Soul-sight helm | +10 points |
@@ -1387,11 +1387,11 @@ _A model equipped with a stimm-needler may not exchange its splinter rifle._
 | **The Hekatrix may exchange their Hekatarii blade for one of the following:** |  |
 | – Agoniser blade | +5 points |
 | – Agoniser whip | +5 points |
-| – Power lance | +10 points |
+| – Aeldari Power Lance | +10 points |
 | – Archite glaive | +15 points |
 | – Huskblade | +15 points |
 | **The Hekatrix may exchange their splinter pistol for:** |  |
-| – Blast pistol | +10 points |
+| – Aeldari Blast Pistol | +10 points |
 | **The entire unit may take:** |  |
 | – Haywire grenades | +3 points each |
 
@@ -1539,7 +1539,7 @@ _A model equipped with a stimm-needler may not exchange its splinter rifle._
 | **The Helliarch may exchange their hellglaive for one of the following:** |  |
 | – Agoniser blade | +5 points |
 | – Agoniser whip | +5 points |
-| – Power lance | +10 points |
+| – Aeldari Power Lance | +10 points |
 | – Archite glaive | +15 points |
 | – Huskblade | +15 points |
 
@@ -1583,7 +1583,7 @@ _A model equipped with a stimm-needler may not exchange its splinter rifle._
 | **The unit may include:** |  |
 | – Up to 6 additional Reavers | +23 points each |
 | **For every 3 models in the unit, one Reaver may exchange their splinter rifle for one of the following:** |  |
-| – Blaster | +10 points |
+| – Aeldari Blaster | +10 points |
 | – Heat lance | +15 points |
 | – Splinter cannon | +10 points |
 | **For every 3 models in the unit, one Reaver may exchange their bladevanes for:** |  |
@@ -1592,12 +1592,12 @@ _A model equipped with a stimm-needler may not exchange its splinter rifle._
 | – Hekatarii blade | +5 points |
 | – Agoniser blade | +5 points |
 | – Agoniser whip | +5 points |
-| – Power lance | +10 points |
+| – Aeldari Power Lance | +10 points |
 | – Archite glaive | +15 points |
 | – Huskblade | +15 points |
 | **The Arena Champion may exchange their splinter pistol for one of the following:** |  |
-| – Blast pistol | +10 points |
-| – Blaster | +10 points |
+| – Aeldari Blast Pistol | +10 points |
+| – Aeldari Blaster | +10 points |
 
 ### Scourge Talonstrike Cadre — 70 pts
 
@@ -1640,7 +1640,7 @@ _Fleet values granted to this unit are added to Run moves and Jet Pack moves._
 | **The unit may include:** |  |
 | – Up to 5 additional Scourge Talonstrikes | +12 points each |
 | **Any model may exchange their shardcarbine for one of the following:** |  |
-| – Blaster | +10 points each |
+| – Aeldari Blaster | +10 points each |
 | – Haywire blaster | +15 points each |
 | – Shredder | +5 points each |
 | – Heat blaster | +10 points each |
@@ -2353,8 +2353,8 @@ All weapons listed here are counted as 'Darklight' weapons for those rules that 
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Blast pistol | 6" | 8 | 2 | Pistol 1, Lance |
-| Blaster | 18" | 8 | 2 | Assault 1, Lance |
+| Aeldari Blast Pistol | 6" | 8 | 2 | Pistol 1, Lance |
+| Aeldari Blaster | 18" | 8 | 2 | Assault 1, Lance |
 | Blaster cannon | 24" | 8 | 2 | Heavy 1, Lance |
 
 #### Coven Ranged Weapons
@@ -2391,7 +2391,7 @@ All weapons listed here are counted as 'Darklight' weapons for those rules that 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Disintegrator blaster | 18" | 5 | 3 | Assault 2, Rending (5+) |
-| Disintegrator cannon | 36" | 5 | 3 | Heavy 3, Rending (5+) |
+| Disintegrator cannon | 36" | 9 | 2 | Heavy 2, Rending (5+), Sunder |
 | Pulse disintegrator | 36" | 8 | 2 | Heavy 6, Pinning, Shell Shock (1) |
 | Twin disintegrator cannon | 36" | 5 | 3 | Heavy 6, Rending (5+) |
 
@@ -2412,7 +2412,7 @@ All weapons listed here are counted as 'Darklight' weapons for those rules that 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Haywire blaster | 18" | 4 | 4 | Assault 1, Haywire, Deflagrate |
-| Haywire cannon | 24" | 5 | 4 | Heavy 2, Haywire, Deflagrate |
+| Haywire cannon | 36" | 4 | 3 | Assault 3, Haywire |
 
 #### Grenade Weapons
 
@@ -2420,7 +2420,7 @@ All weapons listed here are counted as 'Darklight' weapons for those rules that 
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Haywire grenades | 6" | 2 | – | Assault 1, Haywire, One Use, Deflagrate, Blast (3") |
+| Haywire grenades (ranged) | 6" | 2 | – | Assault 1, Haywire, One Use, Deflagrate, Blast (3") |
 | Haywire grenades – melee | – | User | – | Melee, Haywire, Exoshock (5+), One Use |
 | Phantasm grenade launcher | 18" | 1 | – | Assault 1, Blast (3"), Pinning, Limited Use |
 | Plasma grenades | 8" | 4 | 4 | Assault 1, Blast (3"), One Use |
@@ -2527,7 +2527,7 @@ The Parasite's Kiss is a relic splinter pistol: only one may be taken in the arm
 | Djinn blade | – | +1 | 2 | Melee, Rending (5+), Rampage (2) |
 | Electrocorrosive whip | – | User | 4 | Melee, Breaching (6+), Concussive (2), Shell Shock (1) |
 | Glimmersteel blade | – | User | 5 | Melee |
-| Power lance | – | +2 | 3 | Melee, Reach (2), Sudden Strike (1), Two-handed |
+| Aeldari Power Lance | – | +2 | 3 | Melee, Reach (1), Sudden Strike (2) |
 | Rending claws | – | User | 5 | Melee, Rending (5+), Shred |
 | Sceptre of the Dark City | – | +1 | 3 | Melee, Murderous Strike (5+) |
 | Sslyth warblade | – | +1 | 3 | Melee, Rending (6+), Shred |

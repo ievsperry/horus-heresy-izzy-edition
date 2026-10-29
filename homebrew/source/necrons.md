@@ -969,7 +969,7 @@ _One unit of Cryptothralls may be taken for each Cryptek, Technomancer, Plasmanc
 | Option | Cost |
 |---|---|
 | **The Triarch Stalker may exchange its heat ray for:** |  |
-| – Particle shredder | +0 points |
+| – Necron Particle Shredder | +0 points |
 | – Twin-linked heavy gauss cannon | +15 points |
 
 ## Troops
@@ -1919,7 +1919,7 @@ _Particle beams, focused heat rays and the disintegrating weapons of the Destroy
 | Heat ray – dispersed | Template | 5 | 4 | Heavy 1 |
 | Particle beamer | 24" | 6 | 5 | Heavy 1, Blast (3") |
 | Particle caster | 12" | 6 | 5 | Pistol 1 |
-| Particle shredder | 24" | 7 | 4 | Heavy 1, Large Blast (5") |
+| Necron Particle Shredder | 24" | 7 | 4 | Heavy 1, Large Blast (5") |
 | Particle whip | 24" | 8 | 3 | Ordnance 1, Large Blast (5") |
 | Scouring eye | 12" | 5 | 4 | Pistol 2 |
 | Synaptic disintegrator | 24" | 4 | 5 | Rapid Fire, Sniper† |

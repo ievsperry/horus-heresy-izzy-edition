@@ -676,9 +676,15 @@ class Builder:
                     else:
                         self.power_rows.append((r[0], f"{r[2]} phase. {r[3]}", title, disc))
         names = {norm(r["name"]) for r in rows}
-        # "Spear of the Void Dragon (melee)" and "(ranged)" are one weapon even with no plain row
-        mode_bases = [norm(m.group(1)) for r in rows for m in [re.fullmatch(MODE, r["name"])] if m]
-        names |= {b for b in mode_bases if mode_bases.count(b) > 1}
+        # "Spear of the Void Dragon (melee)" and "(ranged)" are one weapon even with no plain row, as are
+        # "Haywire Grenade (melee)" and "Haywire grenades (ranged)", or a "(ranged)" row and a "– melee" row
+        mkey = lambda s: re.sub(r"s$", "", norm(s))
+        bases = {}
+        for r in rows:
+            m = re.fullmatch(MODE, r["name"]) or re.fullmatch(r"(.+?) – (.+)", r["name"])
+            bases.setdefault(mkey(m.group(1) if m else r["name"]), []).append(m.group(1) if m else r["name"])
+        mode_parent = {k: v[0] for k, v in bases.items() if len(v) > 1}
+        names |= {norm(v) for v in mode_parent.values()}
         grouped = {}
         for r in rows:
             name = r["name"]
@@ -688,9 +694,11 @@ class Builder:
             alt = re.fullmatch(r"(.+?) \(alternative fire mode of (.+)\)", name)
             mode = re.fullmatch(MODE, name)
             if m:
-                parent, pname = m.group(1), name
+                parent, pname = mode_parent.get(mkey(m.group(1)), m.group(1)), name
             elif alt:
                 parent, pname = alt.group(2), alt.group(1)
+            elif mode and mkey(mode.group(1)) in mode_parent:
+                parent, pname = mode_parent[mkey(mode.group(1))], name
             elif mode and norm(mode.group(1)) in names:
                 parent, pname = mode.group(1), name
             else:

@@ -1033,7 +1033,7 @@ Razor-edged blades driven by powerful motors.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Chainfist | - | x2 | 2 | Melee, Armourbane (Melee), Unwieldy |
+| Chainfist | - | x2 | 2 | Melee, Armourbane (Melee), Unwieldy (3) |
 
 #### Power Weapons
 
@@ -1053,7 +1053,7 @@ A Servo-Arm grants one extra attack per turn and a Machinator Array two, using t
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Machinator Array | - | +1 | 2 | Melee, Armourbane (Melee), Shred, Unwieldy |
+| Machinator Array | - | +1 | 2 | Melee, Armourbane (Melee), Shred, Unwieldy (4) |
 | Servo-Arm | - | 8 | 2 | Melee, Unwieldy |
 
 #### Exotic Melee Weapons

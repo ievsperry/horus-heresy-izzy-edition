@@ -2406,7 +2406,7 @@ Weapons that already exist in 2.0 use their official profiles: bolt pistol, bolt
 | Flakk missiles | 48" | 7 | 3 | Heavy 1, Skyfire |
 | Missile launcher – frag | 48" | 4 | 6 | Heavy 1, Blast (3"), Pinning |
 | Missile launcher – krak | 48" | 8 | 3 | Heavy 1 |
-| Mortar | 48" | 4 | 6 | Heavy 1, Barrage, Blast (3")† |
+| Mortar | 48" | 4 | 6 | Heavy 1, Blast (3"), Barrage, Pinning |
 
 #### Abhuman and Specialist Guns
 
@@ -2416,11 +2416,11 @@ Weapons that already exist in 2.0 use their official profiles: bolt pistol, bolt
 | --- | --- | --- | --- | --- |
 | Demolition charge | 6" | 8 | 2 | Assault 1, Large Blast (5"), One Use |
 | Grenadier gauntlet | 12" | 4 | 6 | Assault 1, Blast (3") |
-| Ripper gun | 12" | 5 | – | Assault 3 |
+| Ripper gun | 12" | 5 | – | Assault 5 |
 | Ripper pistol | 12" | 3 | – | Pistol 1, Poisoned (3+)† |
 | Sergeant's autogun | 24" | 3 | – | Assault 2 |
-| Shotgun | 12" | 3 | – | Assault 2 |
-| Sniper rifle | 36" | 3 | 6 | Heavy 1, Sniper, Rending (6+), Pinning† |
+| Shotgun | 12" | 3 | – | Assault 2, Concussive (1) |
+| Sniper rifle | 72" | 5 | 6 | Heavy 1, Rending (5+), Sniper, Pinning |
 
 #### Aircraft Weapons
 
@@ -2429,8 +2429,8 @@ Weapons that already exist in 2.0 use their official profiles: bolt pistol, bolt
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Hellfury missile | 72" | 4 | 5 | Heavy 1, Large Blast (5"), One Use |
-| Hellstrike missile | 72" | 8 | 3 | Heavy 1, One Use |
-| Multiple rocket pod | 24" | 4 | 6 | Heavy 1, Large Blast (5") |
+| Hellstrike missile | 72" | 9 | 2 | Heavy 1, Sunder, One Shot |
+| Multiple rocket pod | 24" | 4 | 6 | Heavy 1, Large Blast (5"), Pinning |
 
 #### Las Weapons
 
@@ -2441,11 +2441,11 @@ All weapons listed here are counted as 'Las' weapons for those rules that affect
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Death Rider lascarbine | 18" | 3 | – | Assault 2 |
-| Heavy lascannon | 48" | 10 | 2 | Heavy 1, Lance |
+| Heavy lascannon | 48" | 10 | 2 | Heavy 1, Sunder |
 | Hot-shot lasgun | 18" | 3 | 3 | Rapid Fire |
-| Hot-shot laspistol | 6" | 3 | 3 | Pistol 1 |
+| Hot-shot laspistol | 9" | 3 | 3 | Pistol 1, Breaching (6+) |
 | Hot-shot marksman rifle | 36" | 3 | 3 | Heavy 1, Sniper, Pinning† |
-| Hot-shot volley gun | 24" | 4 | 3 | Heavy 4 |
+| Hot-shot volley gun | 24" | 4 | 3 | Heavy 4, Breaching (6+) |
 | Lasgun | 24" | 3 | – | Rapid Fire |
 | Laspistol | 12" | 3 | – | Pistol 1 |
 | Long-las | 36" | 3 | 6 | Heavy 1, Sniper, Rending (6+), Pinning |
@@ -2459,13 +2459,13 @@ All weapons listed here are counted as 'Las' weapons for those rules that affect
 | --- | --- | --- | --- | --- |
 | Bombast field gun | 48" | 8 | 4 | Ordnance 1, Barrage, Large Blast (5") |
 | Castigator gatling cannon | 24" | 6 | 4 | Heavy 12 |
-| Chem cannon | Template | 1 | 3 | Heavy 1, Poisoned (2+)† |
+| Chem cannon | Template | 1 | - | Heavy 1, Breaching (5+), Fleshbane |
 | Deathstrike missile | 960" | 10 | 1 | Destroyer 1, Barrage, Massive Blast (7"), One Use |
 | Eradicator nova cannon | 36" | 6 | 4 | Heavy 1, Large Blast (5"), Ignores Cover |
 | Exterminator autocannon | 48" | 7 | 4 | Heavy 6, Rending (5+), Twin-linked |
-| Inferno cannon | Template | 6 | 4 | Heavy 1; the template may be placed with its narrow end up to 12" from the Hellhound† |
+| Inferno cannon | Hellstorm | 8 | 4 | Ordnance 1, Torrent (9"), Breaching (6+), Concussive (1) |
 | Malleus rocket launcher | 48" | 6 | 4 | Heavy 4, Blast (3") |
-| Melta cannon | 24" | 8 | 1 | Heavy 1, Large Blast (5"), Armourbane (Ranged) |
+| Melta cannon | 60" | 10 | 1 | Heavy 1, Massive Blast (7"), Armourbane (Melta) |
 | Oppressor cannon | 72" | 10 | 2 | Ordnance 1, Large Blast (5"), Sunder |
 | Ordnance Barrage | 120" | 9 | 3 | Ordnance 1, Barrage, Large Blast (5"), One Use |
 | Punisher gatling cannon | 24" | 5 | – | Heavy 20 |

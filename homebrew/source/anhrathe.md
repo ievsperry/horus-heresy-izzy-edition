@@ -180,7 +180,7 @@ No other units may be selected as part of this Detachment.
 | Option | Cost |
 | --- | --: |
 | **The Corsair Baron may exchange his void sabre for:** |  |
-| – Power lance | +5 points |
+| – Aeldari Power Lance | +5 points |
 | **The Corsair Baron may exchange his mistshield for:** |  |
 | – Voidfield | +15 points |
 | **The Corsair Baron may take any of the following:** |  |
@@ -236,7 +236,7 @@ No other units may be selected as part of this Detachment.
 | **The Corsair Prince may exchange his Aeldari power sword for one of the following:** |  |
 | – Agoniser blade | +10 points |
 | – Mistshield glaive | +10 points |
-| – Power lance | +10 points |
+| – Aeldari Power Lance | +10 points |
 | – Two Hekatarii blades | +5 points |
 | – Void sabre | +5 points |
 | **The Corsair Prince may take any of the following:** |  |
@@ -397,7 +397,7 @@ No other units may be selected as part of this Detachment.
 | **The unit may include:** |  |
 | – Up to 5 additional Corsair Bladesworn | +19 points each |
 | **Any model may exchange its void sabre for one of the following:** |  |
-| – Power lance | +5 points each |
+| – Aeldari Power Lance | +5 points each |
 | – Mistshield glaive | +10 points each |
 | **The entire unit may exchange its mistshields for one of the following:** |  |
 | – Corsair jet packs | +5 points each |
@@ -533,7 +533,7 @@ No other units may be selected as part of this Detachment.
 | – Neuro disruptor | +10 points |
 | **Any model may exchange its close combat weapon for one of the following:** |  |
 | – Void sabre | +5 points each |
-| – Power lance | +10 points each |
+| – Aeldari Power Lance | +10 points each |
 | – Mistshield glaive | +15 points each |
 | **The entire unit may exchange its mistshields for one of the following:** |  |
 | – Corsair jet packs | +5 points each |
@@ -1008,9 +1008,9 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Fusion pistol | 6" | 8 | 1 | Assault 1, Armourbane (Melta) |
-| Neuro disruptor | 12" | 3 | 2 | Assault 1, Fleshbane |
-| Shuriken pistol | 12" | 4 | 5 | Pistol 1, Breaching (5+) |
+| Fusion pistol | 8" | 8 | 1 | Pistol 1, Armourbane (Melta) |
+| Neuro disruptor | 12" | 3 | 2 | Pistol 1, Fleshbane |
+| Shuriken pistol | 12" | 4 | 5 | Pistol 1, Breaching (6+) |
 
 ### Corsair Basic Weapons
 
@@ -1019,8 +1019,8 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Las blaster | 24" | 3 | 5 | Assault 4 |
-| Ranger long rifle | 36" | 4 | 5 | Heavy 1, Pinning, Precision Shots (5+), Rending (5+) |
-| Shuriken catapult | 18" | 4 | 5 | Assault 2, Breaching (5+) |
+| Ranger long rifle | 48" | 5 | 4 | Heavy 1, Pinning, Rending (5+), Sniper |
+| Shuriken catapult | 18" | 4 | 5 | Assault 2, Breaching (6+) |
 | Shuriken rifle | 24" | 4 | 5 | Rapid Fire, Breaching (5+) |
 | Twin-linked shuriken catapult | 18" | 4 | 5 | Assault 2, Breaching (5+), Twin-linked |
 
@@ -1041,7 +1041,7 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Bright lance | 36" | 8 | 2 | Heavy 1, Lance |
-| Disintegrator cannon | 36" | 5 | 3 | Heavy 3, Rending (5+) |
+| Disintegrator cannon | 36" | 9 | 2 | Heavy 2, Rending (5+), Sunder |
 | Pulse laser | 48" | 8 | 2 | Heavy 2, Sunder, Exoshock (6+) |
 | Scatter laser | 36" | 6 | 6 | Heavy 4 |
 | Shuriken cannon | 24" | 6 | 5 | Assault 3, Breaching (5+) |
@@ -1053,7 +1053,7 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Haywire grenades | 6" | 2 | – | Assault 1, Haywire, One Use, Deflagrate, Blast (3") |
+| Haywire grenades (ranged) | 6" | 2 | – | Assault 1, Haywire, One Use, Deflagrate, Blast (3") |
 | Plasma grenades | 6" | 4 | 4 | Assault 1, Blast (3") |
 | Starfang grenade launcher | 18" | 4 | 4 | Assault 1, Blast (5"), Pinning |
 
@@ -1068,7 +1068,7 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 | Close combat blade | – | User | – | Melee |
 | Hekatarii blade | – | User | 4 | Melee, Rending (6+) |
 | Mistshield glaive | – | +2 | 3 | Melee, Reach (2), Shred |
-| Power lance | – | +1 | 3 | Melee, Reach (1), Sudden Strike (2) |
+| Aeldari Power Lance | – | +1 | 3 | Melee, Reach (1), Sudden Strike (2) |
 | Void sabre | – | User | 3 | Melee, Rending (4+) |
 
 ### Splinter Weapons
@@ -1124,14 +1124,14 @@ Count as Force and Witch weapons. A model that may take a Witch Weapon may take 
 The following are rarer and cannot be taken as a generic Witch Weapon choice. A model armed with two weapons marked \* gains +2 Attacks instead of +1.
 
 | Weapon | Range | Str | AP | Type |
-| Singing Spear (Melee) | – | User | 3 | Melee, Breaching (5+), Soul Tear |
+| Singing Spear (Melee) | – | User | 2 | Melee, Force, Murderous Strike (6+) |
 
 #### Exotic and Miscellaneous Melee Weapons
 
 Aeldari weapons strange enough to defy easy classification.
 
 | Weapon | Range | Str | AP | Type |
-| Haywire Grenade | – | – | – | Melee, Detonation, Haywire |
+| Haywire Grenade (melee) | – | – | – | Melee, Detonation, Haywire |
 
 ## Psychic Discipline: Runes of Battle
 

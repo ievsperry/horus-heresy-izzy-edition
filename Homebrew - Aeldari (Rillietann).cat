@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d599-f058-3b6f-af65" name="Homebrew - Aeldari (Rillietann)" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d599-f058-3b6f-af65" name="Homebrew - Aeldari (Rillietann)" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="307a-4562-12d7-0868" name="Rillietann for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Rillietann" />
   </publications>
@@ -186,10 +186,10 @@
       <profiles>
         <profile name="Fusion pistol" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="701d-3396-7fd4-0368" publicationId="307a-4562-12d7-0868">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">6"</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">8"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Armourbane (Melta)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -208,7 +208,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Fleshbane</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Fleshbane</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -223,14 +223,14 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Breaching (5+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Breaching (X)" id="714c-c499-f271-6a22" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+        <infoLink name="Breaching (X)" id="345d-8f36-3e8c-407c" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Breaching (5+)" />
+            <modifier type="set" field="name" value="Breaching (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -302,12 +302,20 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Haywire grenades" hidden="false" id="7eb9-98a2-eeda-2729" publicationId="307a-4562-12d7-0868">
       <profiles>
-        <profile name="Haywire grenades" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9327-34b0-64bb-b39c" publicationId="307a-4562-12d7-0868">
+        <profile name="Haywire grenades (ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="04ea-dad7-4a08-a1b1" publicationId="307a-4562-12d7-0868">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">6"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Haywire, One Use, Deflagrate, Blast (3")</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Haywire Grenade (melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9839-9469-f645-e487" publicationId="307a-4562-12d7-0868">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">-</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Detonation, Haywire</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -319,6 +327,7 @@
             <modifier type="set" field="name" value="Blast (3&quot;)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Detonation" id="6dbf-6f1c-eec7-3c26" hidden="false" targetId="8a47-9fc5-16fb-b46e" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma grenades" hidden="false" id="87e2-ed95-679a-bb7e" publicationId="307a-4562-12d7-0868">
@@ -719,22 +728,6 @@
             <modifier type="set" field="name" value="Rending (6+)" />
           </modifiers>
         </infoLink>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Haywire Grenade" hidden="false" id="b4d2-3b6b-5b21-fd9d" publicationId="307a-4562-12d7-0868">
-      <profiles>
-        <profile name="Haywire Grenade" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="62f9-dafe-4fff-1165" publicationId="307a-4562-12d7-0868">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">-</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Detonation, Haywire</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Detonation" id="88cc-ab12-632f-3048" hidden="false" targetId="8a47-9fc5-16fb-b46e" type="rule" />
-        <infoLink name="Haywire" id="ca9a-eef2-941a-0be1" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Miststave" hidden="false" id="54d4-817e-4892-aaf0" publicationId="307a-4562-12d7-0868">

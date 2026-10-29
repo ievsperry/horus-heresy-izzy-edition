@@ -277,7 +277,8 @@ loading. The script prints anything in the doc it could not place.
 - "Needle Cannon (with Suspensor Web)" is the weapon and the Suspensor Web; brackets that only name the weapon's own
   profiles ("Reaper Launcher (with Starswarm, Starshot, and Starhawk Missiles)") are the weapon. "Executor
   Great-Blade with in-built Vratine Bolter" is both weapons. Armoury rows "X (Ranged)" and "X (Melee)" are one
-  weapon X with both profiles. A free option repeating the weapon the swap starts with is left out.
+  weapon X with both profiles, also when the names differ only by a plural ("Haywire Grenade (melee)" and
+  "Haywire grenades (ranged)") or the other profile is a "X – melee" row. A free option repeating the weapon the swap starts with is left out.
 - "its Halian Heavy Jetbike's Heavy Snare Cannon" works like "either or both of its X's Y": the weapon the wargear
   says it has ("A Halian Heavy Jetbike has a Heavy Snare Cannon") joins the model's wargear.
 - An option item the doc does not define is looked for before it becomes a named placeholder: "Chainsword and

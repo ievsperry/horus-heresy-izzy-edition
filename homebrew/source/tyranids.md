@@ -2558,7 +2558,7 @@ A model with two pairs of the same talons or claws makes one additional Attack.
 | Piercing claws and talons | – | User | 4 | Melee, Rending (5+) |
 | Powerful limbs | – | User | 4 | Melee |
 | Prime talons | – | User | 4 | Melee, Shred |
-| Rending claws | – | User | – | Melee, Rending (6+) |
+| Rending claws (natural) | – | User | – | Melee, Rending (6+) |
 | Screamer-killer talons | – | +1 | 2 | Melee, Shred |
 | Scything talons | – | +1 | 6 | Melee, Shred |
 | Scything talons and crushing claws | – | +1 | 3 | Melee, Brutal (2) |

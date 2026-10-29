@@ -2497,7 +2497,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 | Option | Cost |
 | --- | --- |
 | A Lynx may exchange its Centreline Mounted Lynx Pulsar for a: |  |
-| – Centreline Mounted Sonic Lance | +75 points |
+| – Centreline Mounted Asuryani Sonic Lance | +75 points |
 | A Lynx may exchange its Hull (Front) Mounted Shuriken Cannon for one of the following: |  |
 | – Hull (Front) Mounted Bright Lance | +15 points |
 | – Hull (Front) Mounted Scatter Laser | +5 points |
@@ -2583,7 +2583,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 | A Revenant Titan unit may include: |  |
 | – Up to 1 additional Revenant Titan | +750 points |
 | A Revenant Titan may exchange both of its Arm Mounted Revenant Pulsars for: |  |
-| – Two Arm Mounted Sonic Lances | +75 points |
+| – Two Arm Mounted Asuryani Sonic Lances | +75 points |
 | A Revenant Titan may take a: |  |
 | – Hull (Front) Mounted Scatter Laser | +5 points |
 
@@ -3467,8 +3467,8 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Fusion pistol | 6" | 8 | 1 | Assault 1, Armourbane (Melta) |
-| Shuriken pistol | 12" | 4 | 5 | Pistol 1, Breaching (5+) |
+| Fusion pistol | 8" | 8 | 1 | Pistol 1, Armourbane (Melta) |
+| Shuriken pistol | 12" | 4 | 5 | Pistol 1, Breaching (6+) |
 
 ### Corsair Basic Weapons
 
@@ -3476,8 +3476,8 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Ranger long rifle | 36" | 4 | 5 | Heavy 1, Pinning, Precision Shots (5+), Rending (5+) |
-| Shuriken catapult | 18" | 4 | 5 | Assault 2, Breaching (5+) |
+| Ranger long rifle | 48" | 5 | 4 | Heavy 1, Pinning, Rending (5+), Sniper |
+| Shuriken catapult | 18" | 4 | 5 | Assault 2, Breaching (6+) |
 | Twin-linked shuriken catapult | 18" | 4 | 5 | Assault 2, Breaching (5+), Twin-linked |
 
 ### Corsair Special Weapons
@@ -3508,7 +3508,7 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Haywire grenades | 6" | 2 | – | Assault 1, Haywire, One Use, Deflagrate, Blast (3") |
+| Haywire grenades (ranged) | 6" | 2 | – | Assault 1, Haywire, One Use, Deflagrate, Blast (3") |
 | Plasma grenades | 6" | 4 | 4 | Assault 1, Blast (3") |
 
 ### Corsair Psychic Weapons
@@ -3630,7 +3630,7 @@ Bladed disks fired at supersonic velocities to shred their targets.
 Waves of sonic force that shatter armour and disintegrate flesh.
 
 | Weapon | Range | Str | AP | Type |
-| Sonic Lance | 48" | 8 | 3 | Ordnance 1, Armourbane (Ranged), Blast (3"), Breaching (5+), Ignores Cover, Murderous Strike (6+), Pinning, Shell Shock (1), Sonic Pulse |
+| Asuryani Sonic Lance | 48" | 8 | 3 | Ordnance 1, Armourbane (Ranged), Blast (3"), Breaching (5+), Ignores Cover, Murderous Strike (6+), Pinning, Shell Shock (1), Sonic Pulse |
 | Vibro Cannon | 36" | 7 | 3 | Heavy 1, Heavy Beam, Ignores Cover, Pinning, Rending (5+), Shell Shock (1) |
 | Vibro Disruptor | 36" | 7 | 3 | Heavy 3, Ignores Cover, Pinning, Rending (5+), Shell Shock (1), Skyfire |
 
@@ -3667,7 +3667,7 @@ Crystalline teeth that chew through almost any armour.
 Hyper-sharp blades relying on reflexes and raw skill. A model that may take a Charnabal Weapon may take any of these.
 
 | Weapon | Range | Str | AP | Type |
-| Charnabal Glaive | – | +1 | – | Melee, Breaching (5+), Duellist's Edge (2), Two-Handed |
+| Charnabal Glaive | – | +1 | – | Melee, Breaching (5+), Duellist's Edge (2), Two-handed |
 | Charnabal Sabre | – | User | – | Melee, Breaching (5+), Duellist's Edge (1) |
 | Charnabal Tabar | – | +2 | – | Melee, Breaching (6+), Duellist's Edge (1) |
 
@@ -3715,14 +3715,14 @@ The following are rarer and cannot be taken as a generic Witch Weapon choice. A 
 | Ghostglaive – Sweeping Strike | – | User | 2 | Melee, Reaping Blow (3) |
 | Ghostspear | – | User | 2 | Melee, Brutal (2), Force |
 | Ghostsword | – | +1 | 3 | Melee, Blade Spirit, Breaching (5+); +2 Attacks instead of +1 for a model armed with two |
-| Singing Spear (Melee) | – | User | 3 | Melee, Breaching (5+), Soul Tear |
+| Singing Spear (Melee) | – | User | 2 | Melee, Force, Murderous Strike (6+) |
 
 #### Exotic and Miscellaneous Melee Weapons
 
 Aeldari weapons strange enough to defy easy classification.
 
 | Weapon | Range | Str | AP | Type |
-| Haywire Grenade | – | – | – | Melee, Detonation, Haywire |
+| Haywire Grenade (melee) | – | – | – | Melee, Detonation, Haywire |
 | Mandiblaster | – | 4 | 6 | Melee, Poisoned (4+), Scorpion's Sting (1), Specialist Weapon |
 | Melta Bomb | – | 8 | 1 | Melee, Armourbane (Melee), Detonation, Instant Death, Unwieldy |
 | Psytronome Shaper | – | +1 | – | Melee, Rending (6+) |
