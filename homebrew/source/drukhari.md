@@ -2420,11 +2420,12 @@ All weapons listed here are counted as 'Darklight' weapons for those rules that 
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Haywire grenades (ranged) | 6" | 2 | – | Assault 1, Haywire, One Use, Deflagrate, Blast (3") |
-| Haywire grenades – melee | – | User | – | Melee, Haywire, Exoshock (5+), One Use |
+| Haywire grenades (ranged) | 9" | 3 | 6 | Grenade 1, Haywire, Small Blast (3"), Barrage, Pinning |
+| Haywire grenades – melee | – | 3 | 6 | Grenade 1, Haywire, Exoshock (5+) |
 | Phantasm grenade launcher | 18" | 1 | – | Assault 1, Blast (3"), Pinning, Limited Use |
-| Plasma grenades | 8" | 4 | 4 | Assault 1, Blast (3"), One Use |
+| Plasma grenades | 9" | 4 | 4 | Grenade 1, Pinning, Small Blast (3"), Barrage, Concussion (1), Limited Ammunition, Shell Shock (1) |
 | Torment grenade launchers | 18" | 1 | – | Assault 1, Small Blast (3"), Fleshbane, Pinning, Shell Shock (1) |
+| Torment grenades | 9" | 1 | – | Grenade 1, Poisoned (4+), Small Blast (3"), Pinning, Barrage, Shell Shock (2) |
 | Venom bomb | 6" | 2 | – | Assault 1, Poisoned (3+), One Use, Blast (3") |
 
 #### Other Ranged Weapons

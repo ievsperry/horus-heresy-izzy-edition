@@ -1846,7 +1846,7 @@ A Servo-Arm grants one extra attack per turn and a Machinator Array two, using t
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Machinator Array | - | +1 | 2 | Melee, Armourbane (Melee), Shred, Unwieldy (4) |
-| Servo-Arm | - | 8 | 2 | Melee, Unwieldy |
+| Servo-Arm | - | 8 | 2 | Melee, Extra Attacks (1), Unwieldy (3) |
 
 #### Exotic Melee Weapons
 
@@ -1859,7 +1859,7 @@ Masterwork and alien blades without equal in the Imperial armouries.
 | Harlequin's Edge | - | User | - | Melee, Dimensional Edge (4+), Murderous Strike (6+), Rending (4+) |
 | Harlequin's Embrace | - | 6 | 3 | Melee, Embrace of Death (2), Monofilament |
 | Harlequin's Kiss | - | +1 | - | Melee, Murderous Strike (6+), Rending (5+) |
-| Haywire Grenade (melee) | - | - | - | Melee, Detonation, Haywire |
+| Haywire Grenade (melee) | - | 3 | 6 | Grenade 1, Haywire, Exoshock (5+) |
 
 ## Rules Checklist
 

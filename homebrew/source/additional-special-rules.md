@@ -240,6 +240,15 @@ _The sheer weight of the cargo this vehicle carries made it hard to properly dep
 
 If a model with this Special Rule is carrying a Vehicle or any Dreadnoughts in its Auxiliary Vehicle Bay, reduce any rolls for Countermeasures Saves it makes by -1.
 
+## Concussion (X)
+
+Optional rule: When a model suffers one or more Wounds from an attack with this Special Rule, that model's unit must immediately pass a Toughness Test at the end of the current Weapon Step. To pass a Toughness Test, the controlling player rolls a D6; if the result is less than or equal to the target model's current Toughness Characteristic, the test is passed.
+
+- A roll of a 6 on the D6 always fails, regardless of the model's Toughness Characteristic.
+- If the Toughness Characteristic of the target model is twice or more the Strength Characteristic of the Concussion attack, the target unit is entirely immune to this rule and no test is required.
+
+If the Toughness Test is failed, the target unit's Initiative Characteristic is reduced by X (to a minimum of 1) until the end of the current turn.
+
 ## Consul (X)
 
 _Despite their lofty station that had otherwise outstripped the rank of Consul, Astartes Centurions would often retain all the privileges of their former rank._
@@ -283,6 +292,10 @@ _Whether achieved via immense speed, thermic flares, or other more esoteric mean
 A model with this Special Rule has a 5+ Invulnerable Save against any Shooting Attacks which have the Skyfire Special Rule made against it.
 
 A model with this Special Rule which does not make a Zoom move in the Controlling Player's Movement Phase cannot claim the benefit of this Special Rule during the rest of the Controlling Player's turn, as well as the Opposing Player's turn.
+
+## Cover (X+)
+
+Optional rule: Cover (X+) does not grant a save; it grants a Damage Mitigation roll of X+ instead.
 
 ## Crew-Served Weapon
 
@@ -439,6 +452,17 @@ If a Graviton Pulse weapon also has the Blast type, then leave the Blast marker 
 _The sheer power of the graviton-repellers used to keep some anti-grav craft airborne would push back and pummel any foolish enough to approach._
 
 Whenever a charge is declared against a model with this Special Rule, the Charging unit suffers a -2 penalty to their Charge roll.
+
+## Grenades
+
+Grenades are represented in battle as Wargear items with a specific effect rather than as weapons. Using grenades does not count as a Shooting Attack and their effects are entirely covered by the rules presented here. Note that grenade launchers do not use these rules and are Shooting Weapons governed by the standard Shooting rules.
+
+Optional rule: Grenade weapons are short-range, explosive projectiles thrown by infantry to clear out enemy positions before launching an assault. When a model fires a weapon with the Grenade weapon type, it follows all the normal rules for Blast weapons with the following exceptions:
+
+- Scatter Distance: When determining the scatter distance for a Grenade weapon, roll only a single D6 instead of 2D6. The total scatter distance is equal to the result of the D6 minus the firing model's Ballistic Skill (to a minimum of 0).
+- Assault Vectors: A unit containing models that have fired a Grenade weapon in their Shooting phase may still declare and resolve a Charge in the same turn.
+- Defensive Fire: Weapons with the Grenade type may be fired as part of an Overwatch Reaction and as part of the Interceptor Advanced Reaction, provided the target is within the weapon's maximum range.
+- All Grenades are Limited Use.
 
 ## Guardian Retainers
 
@@ -976,6 +1000,12 @@ During Deployment, a unit with this Special Rule may be given the Subterranean A
 _Awkward to bring to bear, certain weapons were best used as part of a crushing charge to harness their full effect._
 
 A model may only attack with this weapon on a turn in which it makes a Charge (even if that Charge is Disordered), but does not gain a bonus attack for Charging or from any Special Rules that would normally grant additional Attacks.
+
+## Unwieldy
+
+A model attacking with this weapon Piles-in and fights at Initiative step 1, unless it has the Dreadnought Unit Type or Monstrous sub-type.
+
+Optional rule: Unwieldy / Unwieldy (X) – A model attacking with this weapon does not fight at Initiative step 1; instead its Initiative is lowered by X. If no value is listed, its Initiative is reduced by 3, to a minimum of 1.
 
 ## Unified Assault
 

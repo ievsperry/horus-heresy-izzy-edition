@@ -2649,7 +2649,7 @@ Cutting beams that do the most damage up close.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Heavy Lascutter (Melee) | - | 10 | 1 | Melee, Armourbane (Melee), Specialist Weapon, Unwieldy |
+| Heavy Lascutter (Melee) | - | 10 | 1 | Melee, Armourbane (Melee), Specialist Weapon, Unwieldy (4) |
 | Lascutter (Melee) | - | 10 | 1 | Melee, Makeshift Weapon |
 
 #### Power Weapons
@@ -2667,7 +2667,7 @@ A Servo-Arm grants one extra attack per turn, using this profile.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Servo-Arm | - | 8 | 2 | Melee, Unwieldy |
+| Servo-Arm | - | 8 | 2 | Melee, Extra Attacks (1), Unwieldy (3) |
 
 #### Exotic Melee Weapons
 
@@ -2676,7 +2676,7 @@ Corrupted relics and warp-twisted flesh.
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Mutated Appendage | - | +2 | 4 | Melee, Rending (5+) |
-| Tainted Axe | - | +1 | 2 | Melee, Murderous Strike (6+), Unwieldy |
+| Tainted Axe | - | +1 | 2 | Melee, Unwieldy (1), Murderous Strike (6+) |
 | Tainted Blade | - | User | 3 | Melee, Murderous Strike (6+), Rending (6+) |
 | Tainted Maul | - | +2 | 3 | Melee, Murderous Strike (6+) |
 

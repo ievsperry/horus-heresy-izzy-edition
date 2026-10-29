@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -1892,7 +1892,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1902,7 +1902,11 @@
             <modifier type="set" field="name" value="Armourbane (Melee)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Unwieldy" id="f322-589f-740d-031d" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="e63e-dc81-8d91-35a8" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (2)" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fusion blades" hidden="false" id="4373-e099-e3a6-6103" publicationId="733a-d454-80f2-c90e">
@@ -1988,6 +1992,7 @@
             <modifier type="set" field="name" value="Armourbane (Ranged)" />
           </modifiers>
         </infoLink>
+        <infoLink id="d26d-de33-c4f0-4be6" name="Fusion blaster" hidden="false" targetId="c6ec-83e5-8133-4f72" type="profile" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fusion collider" hidden="false" id="9a71-6332-3bb4-9d94" publicationId="733a-d454-80f2-c90e">
@@ -2098,6 +2103,7 @@
             <modifier type="set" field="name" value="Breaching (6+)" />
           </modifiers>
         </infoLink>
+        <infoLink id="3382-488d-b30c-b9e3" name="Cyclic ion blaster" hidden="false" targetId="d278-1637-25d0-6fa1" type="profile" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cyclic ion raker" hidden="false" id="272c-f7e3-be28-e9d2" publicationId="733a-d454-80f2-c90e">
@@ -2212,6 +2218,7 @@
             <modifier type="set" field="name" value="Rending (4+)" />
           </modifiers>
         </infoLink>
+        <infoLink id="8698-fc48-0c27-0af0" name="Plasma rifle" hidden="false" targetId="0ae4-9af9-a923-b099" type="profile" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Quad ion turret" hidden="false" id="005e-4d79-5aea-1880" publicationId="733a-d454-80f2-c90e">
@@ -2272,19 +2279,19 @@
         <profile name="EMP grenade" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5808-0993-2278-9652" publicationId="733a-d454-80f2-c90e">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">-</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Limited Use, Haywire</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Haywire, Limited Use</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
+        <infoLink name="Haywire" id="1b37-d5b6-79f1-17a9" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule" />
         <infoLink name="Limited Ammunition (Limited Use)" id="a0e9-10b4-de51-08e7" hidden="false" targetId="03f7-3f04-b43b-91ff" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Limited Use" />
           </modifiers>
         </infoLink>
-        <infoLink name="Haywire" id="1b37-d5b6-79f1-17a9" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fusion grenade" hidden="false" id="3706-ce46-c059-0ebb" publicationId="733a-d454-80f2-c90e">
@@ -2294,7 +2301,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Single Use, Armourbane (Melee), Instant Death</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Single Use, Armourbane (Melee), Instant Death, Limited Ammunition</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2310,6 +2317,11 @@
           </modifiers>
         </infoLink>
         <infoLink name="Instant Death" id="3eef-55be-8c24-8841" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule" />
+        <infoLink name="Limited Ammunition (Limited Use)" id="c49e-1c83-a0e0-4126" hidden="false" targetId="03f7-3f04-b43b-91ff" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Limited Ammunition" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kill Team close combat blade" hidden="false" id="0dc0-c7ef-506b-84e8" publicationId="733a-d454-80f2-c90e">
@@ -2453,6 +2465,7 @@
           </modifiers>
         </infoLink>
         <infoLink name="Barrage" id="87fa-7226-bcf0-c496" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule" />
+        <infoLink id="0979-e6d9-5cfa-b999" name="Airbursting fragmentation projector" hidden="false" targetId="172d-807a-dfeb-5483" type="profile" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cluster rocket system" hidden="false" id="95e2-41b4-7732-154c" publicationId="733a-d454-80f2-c90e">
@@ -2562,6 +2575,7 @@
             <modifier type="set" field="name" value="Blast (3&quot;)" />
           </modifiers>
         </infoLink>
+        <infoLink id="c092-9927-d3d5-e4bb" name="Missile pod" hidden="false" targetId="9558-53c9-4f9e-f7a0" type="profile" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Seeker missile" hidden="false" id="4286-6a78-b87f-fd86" publicationId="733a-d454-80f2-c90e">
@@ -2581,6 +2595,7 @@
             <modifier type="set" field="name" value="One Use" />
           </modifiers>
         </infoLink>
+        <infoLink id="3346-c38c-ede3-72f5" name="Seeker missile" hidden="false" targetId="d5ff-e907-33ac-60cf" type="profile" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Smart missile system" hidden="false" id="5731-8303-207d-9c0e" publicationId="733a-d454-80f2-c90e">
@@ -2609,6 +2624,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="d318-5894-44eb-767d" name="Burst cannon" hidden="false" targetId="9958-e919-2e82-f01e" type="profile" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy burst cannon" hidden="false" id="276e-5847-e1ff-1ecf" publicationId="733a-d454-80f2-c90e">
       <profiles>
@@ -2855,6 +2873,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="b643-ec51-f689-7ece" name="Airbursting fragmentation projector" hidden="false" targetId="71a1-1bfc-d5b4-5e29" type="profile" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Burst cannon" hidden="false" id="4d30-3e85-9492-f4ab" publicationId="733a-d454-80f2-c90e">
       <profiles>
@@ -2864,6 +2885,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="6373-add6-119b-879c" name="Burst cannon" hidden="false" targetId="7c60-57c6-ae5d-6fe1" type="profile" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cyclic ion blaster" hidden="false" id="e0e4-58b5-0043-831d" publicationId="733a-d454-80f2-c90e">
       <profiles>
@@ -2873,6 +2897,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="aea5-7b38-d872-f512" name="Cyclic ion blaster" hidden="false" targetId="3500-5011-1688-0285" type="profile" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="2f9f-9ebf-258c-4754" publicationId="733a-d454-80f2-c90e">
       <profiles>
@@ -2891,6 +2918,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="dfdf-3771-f485-6b1e" name="Fusion blaster" hidden="false" targetId="90a5-ecb9-85d9-7171" type="profile" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Missile pod" hidden="false" id="614e-dcb8-98cb-7d16" publicationId="733a-d454-80f2-c90e">
       <profiles>
@@ -2900,6 +2930,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="8bad-eb07-629f-534f" name="Missile pod" hidden="false" targetId="3b19-57e5-876e-7276" type="profile" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma rifle" hidden="false" id="7007-27ea-76e3-b7ee" publicationId="733a-d454-80f2-c90e">
       <profiles>
@@ -2909,6 +2942,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="8ff8-4ffe-ecf9-9d6b" name="Plasma rifle" hidden="false" targetId="a984-83a6-d53e-19ed" type="profile" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Advanced targeting system*" hidden="false" id="5db5-72b3-81e7-b901" publicationId="733a-d454-80f2-c90e">
       <profiles>
@@ -3565,6 +3601,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="0f2f-ae2b-4f74-206d" name="Seeker missile" hidden="false" targetId="482d-de01-aad6-78bb" type="profile" />
+      </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Seeker missile" hidden="false" id="42a5-bc73-9363-40f0" type="selectionEntry" targetId="4286-6a78-b87f-fd86">
           <constraints>

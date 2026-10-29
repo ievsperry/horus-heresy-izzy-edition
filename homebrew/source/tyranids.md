@@ -2512,16 +2512,16 @@ _Bio-weapons grown for creatures that hunt tanks and titans._
 | Distensible jaws | – | +2 | 2 | Melee |
 | Grasping talons (Dimachaeron) | – | User | 4 | Melee; +1 Attack |
 | Lashwhips | – | User | 4 | Melee, Reach (2) |
-| Massive crushing claws | – | x2 | 2 | Melee, Unwieldy, Brutal (2) |
+| Massive crushing claws | – | x2 | 2 | Melee, Unwieldy (3), Brutal (2) |
 | Massive scything talons | – | +1 | 3 | Melee, Shred |
 | Massive toxic lashes | – | User | 3 | Melee, Poisoned (2+)†, Reach (2) |
 | Monstrous bonesword and lash whip | – | User | 2 | Melee, Instant Death, Reaping Blow (1)† |
-| Monstrous crushing claws | – | x2 | 2 | Melee, Unwieldy, Brutal (2) |
+| Monstrous crushing claws | – | x2 | 2 | Melee, Unwieldy (3), Brutal (2) |
 | Monstrous rending claws | – | User | 2 | Melee, Rending (5+) |
 | Monstrous scything talons | – | User | 3 | Melee, Shred |
 | Sickle-claws (Dimachaeron) | – | +1 | 2 | Melee, Rending (5+) |
 | Siphon lashes | – | User | 4 | Melee, Reach (2) |
-| Wrecker claws (Stone-crusher) | – | x2 | 2 | Melee, Brutal (2), Armourbane (Melee), Unwieldy |
+| Wrecker claws (Stone-crusher) | – | x2 | 2 | Melee, Brutal (2), Armourbane (Melee), Unwieldy (3), Wrecker |
 
 #### Tails, Maws and Spurs
 
@@ -2602,6 +2602,7 @@ _Living guns that fire beetles, spines and acid-filled grubs, carried by the swa
 | Spinemaws | 6" | 2 | – | Pistol 1 |
 | Stinger salvo | 24" | 5 | 4 | Assault 4 |
 | Twin-linked devourers with brainleech worms | 18" | 6 | – | Assault 6, Twin-linked |
+| Flesh hooks | 9" | 3 | – | Grenade 1, Pinning, Small Blast (3"), Barrage, Concussion (1), Limited Ammunition |
 
 #### Bio-plasma, Acid and Flame
 

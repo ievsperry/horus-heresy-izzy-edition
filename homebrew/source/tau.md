@@ -3122,7 +3122,7 @@ Wargear of the Eight, and the weapons and natural arms of the Kroot's beasts.
 | Great Knarloc beak and talons | – | 7 | 4 | Melee, Brutal (2) |
 | Kalamandra's claws | – | 5 | 5 | Melee; +1 Attack |
 | Knarloc beak and talons | – | 5 | 5 | Melee |
-| Onager gauntlet | – | x2 | 1 | Melee, Armourbane (Melee), Unwieldy |
+| Onager gauntlet | – | x2 | 1 | Melee, Armourbane (Melee), Unwieldy (2) |
 
 ##### Fortification and Specialist Weapons
 
@@ -3171,8 +3171,8 @@ Specialist weapons carried by the Kill Team units.
 |---|---|---|---|---|
 | Accelerator bow | 24" | 4 | 5 | Assault 1, Rending (6+) |
 | Dvorgite skinner | Template | 4 | 5 | Assault 1, Shred |
-| EMP grenade | – | – | – | Melee, Limited Use, Haywire |
-| Fusion grenade | – | 8 | 1 | Melee, Single Use, Armourbane (Melee), Instant Death |
+| EMP grenade | – | 2 | 6 | Melee, Haywire, Limited Use |
+| Fusion grenade | – | 8 | 1 | Melee, Single Use, Armourbane (Melee), Instant Death, Limited Ammunition |
 | Kill Team close combat blade | – | User | 5 | Melee |
 | Kroot long blade | – | +1 | 4 | Melee, Two-handed |
 | Kroot pistol | 12" | 4 | 6 | Pistol 1 |

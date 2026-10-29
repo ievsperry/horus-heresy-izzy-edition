@@ -2381,7 +2381,7 @@ Weapons that already exist in 2.0 use their official profiles: bolt pistol, bolt
 | The Blade of Conquest | – | +1 | 3 | Melee, Master-crafted |
 | Conquest | – | +1 | 2 | Melee, Murderous Strike (5+)† |
 | Envenomed blade | – | User | – | Melee, Poisoned (2+)† |
-| Eviscerator | – | x2 | 2 | Melee, Two-handed, Unwieldy |
+| Eviscerator | – | x2 | 2 | Melee, Two-handed, Unwieldy (2) |
 | Huge knife | – | +1 | 5 | Melee |
 | Hunting lance | – | +2 | 3 | Melee; only in a turn in which the bearer charged |
 | Konstantin's hooves | – | 5 | – | Melee; two additional Attacks |

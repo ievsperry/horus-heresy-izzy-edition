@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6aaf-163e-5512-c78e" name="Homebrew - Astra Militarum" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6aaf-163e-5512-c78e" name="Homebrew - Astra Militarum" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="0fda-9dad-a0bf-40e6" name="Astra Militarum for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Astra Militarum" />
   </publications>
@@ -935,13 +935,17 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Unwieldy (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Two-handed" id="789c-e094-ed99-e964" hidden="false" targetId="4c23-e863-a569-7617" type="rule" />
-        <infoLink name="Unwieldy" id="cd3e-dc0f-1aa0-9764" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="4c0c-bb65-d7bf-0c03" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (2)" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Huge knife" hidden="false" id="af26-0a70-57a3-42db" publicationId="0fda-9dad-a0bf-40e6">
@@ -7067,10 +7071,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07f3-586e-74fa-d687" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="204d-fec7-c353-fc19" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="f523-9e8e-ad1b-48bf" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d74-aa0d-374a-0781" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d71-0431-748d-ac1e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9636-3fce-9631-85ad" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46ff-8b5f-3b14-d384" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -7179,10 +7183,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b04-c0d2-4d31-18f5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="c8b6-23e8-802a-b02f" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="414e-f873-75b0-4e74" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74c0-30db-fd9e-8987" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1df4-9d4f-b62a-3b83" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="366a-5f58-aa2a-7451" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d21-c73c-e863-d4ca" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -7222,10 +7226,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff85-0877-4f55-4342" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="1c0b-99c9-8b6b-628a" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="bd81-490e-4601-5746" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="959e-d5fd-9b05-6eab" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2d1-4d7e-53cb-1382" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="76fd-9636-a626-3ced" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16fe-299f-8c29-3da0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
             <entryLink import="true" name="Lasgun" hidden="false" id="27ec-eecb-3d35-339e" type="selectionEntry" targetId="7a8a-0c41-655c-dc64">
@@ -7613,10 +7617,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aca5-4ef0-5c34-7b56" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="b935-126c-7b97-3800" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="e976-df16-3200-49a4" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6300-1495-6cd4-4873" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8124-727a-e341-2f95" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5faf-2bc9-3644-ad7b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86b6-e9a0-a5ba-1a23" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -7883,10 +7887,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a649-30ff-98d9-ae61" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="d86f-249b-9cb4-4048" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="fe3e-2475-0705-33f6" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc9a-b620-4622-890c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e86-79e7-0df7-0d2d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12f2-8fc1-6571-1f94" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2455-8d0e-b619-73bc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -7927,10 +7931,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e135-7883-8507-cdf6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="8f80-bba6-b7ca-6d32" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="98ff-3414-d024-3a6c" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b37-29f1-d9d8-e157" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf7a-cec6-f70d-0ace" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a05d-023c-cf84-468d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f8b-aada-63e9-7f6a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
             <entryLink import="true" name="Lasgun" hidden="false" id="826f-3eff-36ae-0f71" type="selectionEntry" targetId="7a8a-0c41-655c-dc64">
@@ -8432,10 +8436,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="803d-015a-dd99-0274" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="a266-7a0f-8c4f-4082" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="b0dd-d66c-81e7-ba06" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca08-6f9e-6d29-c06b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3248-7fa9-b03e-881e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8569-29ba-a28b-f7e4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be37-4ee9-bcd6-9e97" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8537,10 +8541,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5016-6e15-380d-37b1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="6ede-aacf-c8c1-2f8c" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="6cfc-1574-9a29-a970" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7240-15f6-8d70-d225" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1959-969d-fe50-5978" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35e1-cc88-259f-0fe1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d742-5657-10f1-0791" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8581,10 +8585,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da75-1e7b-b3d2-2d12" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="dd3c-0450-c9bb-f40e" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="0b38-7c0f-8b64-8af1" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf3a-ba68-575c-d134" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17bb-4cc2-b818-3499" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="423d-d417-db8a-4da0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43fd-ea9d-4971-2bf8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
             <entryLink import="true" name="Lasgun" hidden="false" id="9872-0e83-0023-1b55" type="selectionEntry" targetId="7a8a-0c41-655c-dc64">

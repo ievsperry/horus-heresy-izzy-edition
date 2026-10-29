@@ -278,7 +278,9 @@ loading. The script prints anything in the doc it could not place.
   profiles ("Reaper Launcher (with Starswarm, Starshot, and Starhawk Missiles)") are the weapon. "Executor
   Great-Blade with in-built Vratine Bolter" is both weapons. Armoury rows "X (Ranged)" and "X (Melee)" are one
   weapon X with both profiles, also when the names differ only by a plural ("Haywire Grenade (melee)" and
-  "Haywire grenades (ranged)") or the other profile is a "X – melee" row. A free option repeating the weapon the swap starts with is left out.
+  "Haywire grenades (ranged)") or the other profile is a "X – melee" row. A wargear item and a weapon with the same name
+  (Stikkbombz, which count as frag grenades, and their thrown profile) stay two entries, and each shows the
+  other's profile, so a unit sees both whichever one it takes. A free option repeating the weapon the swap starts with is left out.
 - "its Halian Heavy Jetbike's Heavy Snare Cannon" works like "either or both of its X's Y": the weapon the wargear
   says it has ("A Halian Heavy Jetbike has a Heavy Snare Cannon") joins the model's wargear.
 - An option item the doc does not define is looked for before it becomes a named placeholder: "Chainsword and
@@ -344,7 +346,9 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   flavour line stays in the source. A catalogue built here still prefers a rule its own doc defines. A rule the
   game system already has under its own id (in its shared rules or a Unit Sub-type) has its text set to the
   source's; pass `--keep-existing` to leave those alone. The file holds the Imperatus Special Rules and Unit
-  Sub-types (Anathema, Asuryani, Corrupted, Guardian, Rillietann, Sycophantica).
+  Sub-types (Anathema, Asuryani, Corrupted, Guardian, Rillietann, Sycophantica). Optional rules are marked "Optional rule:": Concussion (X)
+  and Cover (X+) are new rules, while Grenades and Unwieldy keep their core text with the optional rule added
+  after it.
 - `python3 homebrew/sync_catalogue_rules.py` gives the official catalogues' own copies of shared rules (the
   Custodes Auramite Talon, Gravitic Repulsion, Master of the Shield-Hosts and Slayer of Kings, the Solar Auxilia
   Command Tank, the Sisters of Silence Vigilant Covenant) the text `additional-special-rules.md` has for them.

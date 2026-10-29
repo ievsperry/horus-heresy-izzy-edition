@@ -4668,6 +4668,7 @@ class Builder:
         self.apply_granted_biomorphs()
         self.apply_rule_limits()
         self.apply_rule_choices()
+        self.share_namesake_profiles()
         if self.faction in FACTION_LIMITS:
             importlib.import_module(FACTION_LIMITS[self.faction]).apply(self)
         self.root.append(self.shared_entries)
@@ -4676,6 +4677,26 @@ class Builder:
         self.root.append(self.shared_rules)
         sort_children(self.root)
         return self.root
+
+    def share_namesake_profiles(self):
+        """A wargear item and a weapon of the same name ("Stikkbombz" counting as frag grenades and its
+        thrown profile) are two entries; whichever one a unit takes also shows the other's profile."""
+        by = {}
+        for e in self.shared_entries.findall("selectionEntry[@type='upgrade']"):
+            by.setdefault(norm(e.get("name")), []).append(e)
+        for name, es in by.items():
+            kinds = {}
+            for e in es:
+                for p in e.findall("profiles/profile"):
+                    kinds.setdefault(p.get("typeId"), (e, p))
+            if WEAPON_PROFILE not in kinds or WARGEAR_PROFILE[0] not in kinds:
+                continue
+            (we, wp), (ge, gp) = kinds[WEAPON_PROFILE], kinds[WARGEAR_PROFILE[0]]
+            if we is ge:
+                continue
+            for e, p in ((we, gp), (ge, wp)):
+                el(child(e, "infoLinks"), "infoLink", id=make_id(e.get("id"), "namesake", p.get("id")),
+                   name=p.get("name"), hidden=False, targetId=p.get("id"), type="profile")
 
     # "If the army includes a Detachment with the Mechanicum Faction": the selections that show it has one
     ARMY_MARKERS = [

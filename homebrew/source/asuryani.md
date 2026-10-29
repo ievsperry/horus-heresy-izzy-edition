@@ -3508,8 +3508,8 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Haywire grenades (ranged) | 6" | 2 | – | Assault 1, Haywire, One Use, Deflagrate, Blast (3") |
-| Plasma grenades | 6" | 4 | 4 | Assault 1, Blast (3") |
+| Haywire grenades (ranged) | 9" | 3 | 6 | Grenade 1, Haywire, Small Blast (3"), Barrage, Pinning |
+| Plasma grenades | 9" | 4 | 4 | Grenade 1, Pinning, Small Blast (3"), Barrage, Concussion (1), Limited Ammunition, Shell Shock (1) |
 
 ### Corsair Psychic Weapons
 
@@ -3684,7 +3684,7 @@ Power discharged at close range to punch great holes in a target.
 Count as Power weapons. A model that may take a Power Weapon may take any of the first four.
 
 | Weapon | Range | Str | AP | Type |
-| Power Axe | – | +1 | 2 | Melee, Unwieldy |
+| Power Axe | – | +1 | 2 | Melee, Unwieldy (1) |
 | Power Maul | – | +2 | 3 | Melee |
 | Power Sword | – | User | 3 | Melee, Rending (6+) |
 
@@ -3697,7 +3697,7 @@ The following are rarer and cannot be taken as a generic Power Weapon choice:
 | Star Glaive | – | +2 | 2 | Melee, Master-crafted, Murderous Strike (5+), Two-Handed |
 | Wraith Gauntlet | – | User | 2 | Melee, Brutal (2) |
 | Wraith Glaive | – | 14 | 1 | Melee, Destructor, Instant Death, Reaping Blow (3) |
-| Wraithsword – Piercing Blow | – | 10 | 1 | Melee, Murderous Strike (5+), Two-Handed, Unwieldy |
+| Wraithsword – Piercing Blow | – | 10 | 1 | Melee, Murderous Strike (5+), Two-Handed, Unwieldy (3) |
 | Wraithsword – Sweeping Strike | – | User | 3 | Melee, Breaching (6+), Reaping Blow (3) |
 
 #### Witch Weapons (Melee)
@@ -3710,7 +3710,7 @@ The following are rarer and cannot be taken as a generic Witch Weapon choice. A 
 
 | Weapon | Range | Str | AP | Type |
 | Diresword | – | User | 3 | Melee, Brutal (2), Murderous Strike (6+), Rending (5+), Sanctic |
-| Ghost Axe | – | +3 | 2 | Melee, Brutal (2), Specialist Weapon, Unwieldy |
+| Ghost Axe | – | +3 | 2 | Melee, Brutal (2), Specialist Weapon, Unwieldy (2) |
 | Ghostglaive – Piercing Blow | – | 12 | 1 | Melee, Armourbane (Melee), Brutal (2), Murderous Strike (5+), Two-Handed |
 | Ghostglaive – Sweeping Strike | – | User | 2 | Melee, Reaping Blow (3) |
 | Ghostspear | – | User | 2 | Melee, Brutal (2), Force |
@@ -3722,9 +3722,9 @@ The following are rarer and cannot be taken as a generic Witch Weapon choice. A 
 Aeldari weapons strange enough to defy easy classification.
 
 | Weapon | Range | Str | AP | Type |
-| Haywire Grenade (melee) | – | – | – | Melee, Detonation, Haywire |
+| Haywire Grenade (melee) | – | 3 | 6 | Grenade 1, Haywire, Exoshock (5+) |
 | Mandiblaster | – | 4 | 6 | Melee, Poisoned (4+), Scorpion's Sting (1), Specialist Weapon |
-| Melta Bomb | – | 8 | 1 | Melee, Armourbane (Melee), Detonation, Instant Death, Unwieldy |
+| Melta Bomb | – | 8 | 1 | Melee, Armourbane (Melee), Detonation, Instant Death, Unwieldy (4) |
 | Psytronome Shaper | – | +1 | – | Melee, Rending (6+) |
 | Triskele (Melee) | – | User | 3 | Melee |
 

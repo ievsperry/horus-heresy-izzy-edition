@@ -4038,7 +4038,7 @@ _A rokkit strapped to a big stick, swung at the nearest tank. It rarely ends wel
 
 | Weapon | Range | Str | AP | Type |
 |---|---|---|---|---|
-| Tankhammer | – | 8 | 4 | Melee, Armourbane (Melee), Unwieldy, Two-Handed, Gets Hot |
+| Tankhammer | – | 8 | 4 | Melee, Armourbane (Melee), Unwieldy (2), Two-Handed, Gets Hot |
 
 ### Tellyporta
 
@@ -4199,6 +4199,7 @@ Rokkit launchas, kopta rokkit launchas, grotzookas and every weapon whose name i
 | Squig launchas | 48" | 5 | 5 | Heavy D6, Barrage, Blast (3") |
 | Stikkbomb flinga | 12" | 3 | – | Assault 1, Blast (3"), Pinning |
 | Stikkbomb launcha | 24" | 5 | 5 | Assault 1, Large Blast (5"), Pinning |
+| Stikkbombz | 9" | 3 | – | Grenade 1, Pinning, Small Blast (3"), Barrage, Concussion (1), Limited Ammunition |
 | Supa-rokkit | 100" | 8 | 3 | Heavy 1, Large Blast (5"), One Use |
 | Supa-lobba | 48" | 7 | 4 | Ordnance 1, Massive Blast (7"), Barrage |
 | Tankbusta rokkit | 24" | 8 | 3 | Assault 1, Sunder, Rending (6+) |
@@ -4229,14 +4230,14 @@ Beastchoppas, big choppas, choppas, mega-choppas and 'uge choppas are counted as
 |---|---|---|---|---|
 | Beastchoppa | – | +2 | 4 | Melee, Breaching (5+) |
 | Big choppa | – | +2 | 5 | Melee, Two-handed, Breaching (6+) |
-| Breacha ram | – | x2 | 2 | Melee, Unwieldy, Armourbane (Melee) |
+| Breacha ram | – | x2 | 2 | Melee, Unwieldy (2), Armourbane (Melee) |
 | Buzzsaw | – | +2 | 3 | Melee, Rending (6+) |
 | Choppa | – | User | – | Melee |
 | Da Grabzappa | – | 5 | 3 | Melee, Concussive (1) |
 | Da Vulcha's Klaws | – | +2 | 2 | Melee, Reach (2) |
 | Deff rolla | – | 10 | 3 | Vehicle wargear; D6 hits on each unit rammed or tank-shocked |
 | Dread klaw | – | x2 | 2 | Melee, Armourbane (Melee); +1 Attack for each additional dread klaw |
-| Dread saw | – | x2 | 2 | Melee, Armourbane (Melee), Unwieldy |
+| Dread saw | – | x2 | 2 | Melee, Armourbane (Melee), Unwieldy (3) |
 | Gork's Klaw | – | x2 | 2 | Melee, Instant Death, Brutal (3)†, Reaping Blow (2)† |
 | Grabba stikk | – | User | – | Melee, Concussive (2) |
 | Grabbin' klaw | – | +1 | 2 | Melee; +1 Attack |
@@ -4244,12 +4245,12 @@ Beastchoppas, big choppas, choppas, mega-choppas and 'uge choppas are counted as
 | Hammer of Mork | – | User | 3 | Melee, Force, Breaching (5+), Concussive (1) |
 | Kan klaw | – | x2 | 2 | Melee, Armourbane (Melee) |
 | Killa jet (cutting) | – | +2 | 2 | Melee |
-| Killsaw | – | x2 | 2 | Melee, Armourbane (Melee), Unwieldy |
+| Killsaw | – | x2 | 2 | Melee, Armourbane (Melee), Unwieldy (2) |
 | Klaw of Gork / Klaw of Mork | – | 10 | 1 | Melee, Armourbane (Melee); may instead make one attack at S x2 |
 | Mega-choppa | – | 10 | 1 | Melee, Destroyer |
 | Mork's Teeth | – | +1 | 4 | Melee; +1 Attack |
-| Moz's klaw | – | x2 | 2 | Melee, Unwieldy |
-| Power klaw | – | x2 | 2 | Melee, Unwieldy, Specialist Weapon |
+| Moz's klaw | – | x2 | 2 | Melee, Unwieldy (2) |
+| Power klaw | – | x2 | 2 | Melee, Unwieldy (2), Specialist Weapon |
 | Power snappa | – | +2 | 3 | Melee |
 | Power stabba | – | +1 | 3 | Melee, Rending (5+) |
 | Saw blades | – | +1 | – | Melee, Rending (6+) |
@@ -4259,7 +4260,7 @@ Beastchoppas, big choppas, choppas, mega-choppas and 'uge choppas are counted as
 | Stikka | – | +1 | 4 | Melee |
 | Stompy feet | – | User | 4 | Melee |
 | Titanic klaw | – | 10 | 1 | Melee, Destroyer |
-| 'Uge choppa | – | +3 | 5 | Melee, Two-handed, Unwieldy, Breaching (5+) |
+| 'Uge choppa | – | +3 | 5 | Melee, Two-handed, Unwieldy (2), Breaching (5+) |
 | 'Urty syringe | – | User | 6 | Melee, Poisoned (3+), Rending (6+), Murderous Strike (6+) |
 | Weirdboy staff | – | User | – | Melee, Force† |
 | Worldsplitter klaw | – | x2 | 1 | Melee, Brutal (2), Murderous Strike (6+), Specialist Weapon |

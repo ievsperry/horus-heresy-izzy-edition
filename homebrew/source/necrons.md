@@ -1851,7 +1851,7 @@ _The ancient weapons of the Necron nobility and their guards._
 | Staff of Stars (melee) | – | x2 | 2 | Melee, Rending (6+) |
 | Staff of tomorrow | – | +1 | 3 | Melee; the bearer may re-roll failed to-hit rolls |
 | Voidblade | – | User | 3 | Melee, Rending (6+), Shred; +1 Attack |
-| Voidscythe | – | x2 | 1 | Melee, Unwieldy, Rending (5+), Armourbane (Melee) |
+| Voidscythe | – | x2 | 1 | Melee, Unwieldy (2), Rending (5+), Armourbane (Melee) |
 | Warscythe | – | x2 | 2 | Melee, Two-handed, Rending (5+), Armourbane (Melee) |
 
 ### Ranged Weapons

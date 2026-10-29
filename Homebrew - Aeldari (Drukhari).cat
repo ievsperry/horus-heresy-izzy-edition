@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -1504,34 +1504,36 @@
       <profiles>
         <profile name="Haywire grenades (ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5757-3b60-ef89-43d3" publicationId="9356-fc9b-2fee-7d11">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">6"</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Haywire, One Use, Deflagrate, Blast (3")</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">9"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Grenade 1, Haywire, Small Blast (3"), Barrage, Pinning</characteristic>
           </characteristics>
         </profile>
         <profile name="Haywire grenades – melee" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f981-dd38-1873-80c4" publicationId="9356-fc9b-2fee-7d11">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Haywire, Exoshock (5+), One Use</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Grenade 1, Haywire, Exoshock (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Haywire" id="7591-dce6-d7b3-fa85" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule" />
-        <infoLink name="Deflagrate" id="149c-d5d6-f9f2-7202" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule" />
-        <infoLink name="Blast" id="3106-33ac-77a1-09ae" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+        <infoLink name="Blast" id="17a9-a97f-3b2b-5adb" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Blast (3&quot;)" />
+            <modifier type="set" field="name" value="Small Blast (3&quot;)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Barrage" id="b146-5958-acbf-9012" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule" />
+        <infoLink name="Pinning" id="f3d9-df73-8493-7f7a" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
         <infoLink name="Exoshock (X)" id="156c-90c8-76ad-f325" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Exoshock (5+)" />
           </modifiers>
         </infoLink>
+        <infoLink id="119f-af55-96d3-e6b6" name="Haywire Grenades" hidden="false" targetId="d7eb-d63a-87d4-74f4" type="profile" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Phantasm grenade launcher" hidden="false" id="216f-8d5d-6f0d-47a8" publicationId="9356-fc9b-2fee-7d11">
@@ -1552,25 +1554,40 @@
           </modifiers>
         </infoLink>
         <infoLink name="Pinning" id="1cf8-5e53-ace1-5d4e" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+        <infoLink id="7b03-a78c-b4f0-1ba6" name="Phantasm Grenade Launcher" hidden="false" targetId="d86e-a259-1e74-d4c2" type="profile" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma grenades" hidden="false" id="f73e-6418-eca1-dd80" publicationId="9356-fc9b-2fee-7d11">
       <profiles>
         <profile name="Plasma grenades" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a872-2088-bf38-13b1" publicationId="9356-fc9b-2fee-7d11">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">8"</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">9"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3"), One Use</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Grenade 1, Pinning, Small Blast (3"), Barrage, Concussion (1), Limited Ammunition, Shell Shock (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Blast" id="b5e8-2f4d-9c70-c5d4" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+        <infoLink name="Pinning" id="bc1c-5d76-caa0-e7a5" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+        <infoLink name="Blast" id="c523-34b6-f410-f0f3" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Blast (3&quot;)" />
+            <modifier type="set" field="name" value="Small Blast (3&quot;)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Barrage" id="8bfa-072e-6ebf-3d15" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule" />
+        <infoLink name="Concussion (X)" id="66c1-e5d1-dd37-37f1" hidden="false" targetId="019c-9f2c-548b-b0ff" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussion (1)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Limited Ammunition" id="a959-480f-c26f-a70d" hidden="false" targetId="9f09-5cb8-c3ea-c3f8" type="rule" />
+        <infoLink name="Shell Shock (X)" id="8294-6912-45d0-441e" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (1)" />
+          </modifiers>
+        </infoLink>
+        <infoLink id="f694-1d8b-3d1e-c02f" name="Plasma Grenades" hidden="false" targetId="7a3f-fd07-19c2-02e6" type="profile" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Torment grenade launchers" hidden="false" id="2988-2c64-d49a-bd89" publicationId="9356-fc9b-2fee-7d11">
@@ -1595,6 +1612,37 @@
         <infoLink name="Shell Shock (X)" id="de9e-c7f7-0dcd-aeb0" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Shell Shock (1)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Torment grenades" hidden="false" id="eac2-a934-1278-d61a" publicationId="9356-fc9b-2fee-7d11">
+      <profiles>
+        <profile name="Torment grenades" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7231-0162-cc46-3428" publicationId="9356-fc9b-2fee-7d11">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">9"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Grenade 1, Poisoned (4+), Small Blast (3"), Pinning, Barrage, Shell Shock (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Poisoned (X)" id="0bbf-6fea-5989-4416" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Poisoned (4+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Blast" id="9250-e05c-57bc-9f2c" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Small Blast (3&quot;)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" id="f315-e2d9-2a00-e046" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+        <infoLink name="Barrage" id="aa6d-1874-e4ef-d930" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule" />
+        <infoLink name="Shell Shock (X)" id="597d-94c5-f5cd-f3a9" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (2)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -2908,6 +2956,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="c45d-6d58-447f-98dc" name="Haywire grenades (ranged)" hidden="false" targetId="5757-3b60-ef89-43d3" type="profile" />
+      </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Haywire grenades" hidden="false" id="f4f4-3959-02f5-9aaa" type="selectionEntry" targetId="bdfa-f987-49c9-aecc">
           <constraints>
@@ -2970,6 +3021,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="6d4f-0787-6cef-2304" name="Phantasm grenade launcher" hidden="false" targetId="8bb0-84fb-e448-f58e" type="profile" />
+      </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Phantasm grenade launcher" hidden="false" id="104b-d62c-d944-845b" type="selectionEntry" targetId="216f-8d5d-6f0d-47a8">
           <constraints>
@@ -2987,6 +3041,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="258b-791d-b036-8efb" name="Plasma grenades" hidden="false" targetId="a872-2088-bf38-13b1" type="profile" />
+      </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Plasma grenades" hidden="false" id="431a-63d3-516b-0138" type="selectionEntry" targetId="f73e-6418-eca1-dd80">
           <constraints>
