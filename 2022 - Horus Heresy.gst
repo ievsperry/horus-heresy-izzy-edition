@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="220" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="221" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -8291,24 +8291,25 @@ A. No.</description>
       <profiles>
         <profile id="27dd-e9b5-2f18-b4fa" name="Medusa Mortar" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5"), Pinning, Rending (5+), Brutal (2)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Barrage, Shred, Rupture (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="3424-3fd9-eb0f-6c75" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+        <infoLink id="c3e9-5a2d-9f64-1b37" name="Ordnance" hidden="false" targetId="6c55-22c8-1b01-2105" type="rule"/>
         <infoLink id="9e2a-6480-6755-6aa7" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Large Blast (5&quot;)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="af3a-0ec2-deae-7622" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-        <infoLink id="f2d9-3b51-0c2b-c2ac" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+        <infoLink id="3424-3fd9-eb0f-6c75" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+        <infoLink id="d4fa-6b3e-a075-2c48" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink id="e50b-7c4f-b186-3d59" name="Rupture (X)" hidden="false" targetId="d530-0b40-4723-af90" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Rending (6+)"/>
+            <modifier type="set" field="name" value="Rupture (6+)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -10316,16 +10317,25 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <profiles>
         <profile id="f07f-46e5-bb68-ff74" name="Thunderblast Cannon" publicationId="48c2-d023-0069-001a" page="38" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Barrage, Pinning, Rupture (5+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Rupture (5+), Pinning</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="31b2-27ab-63b5-48b7" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-        <infoLink id="f8d5-d63e-7260-958b" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+        <infoLink id="31b2-27ab-63b5-48b7" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Large Blast (5&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a1c7-3e0b-7d42-9f15" name="Ordnance" hidden="false" targetId="6c55-22c8-1b01-2105" type="rule"/>
+        <infoLink id="b2d8-4f1c-8e53-0a26" name="Rupture (X)" hidden="false" targetId="d530-0b40-4723-af90" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rupture (5+)"/>
+          </modifiers>
+        </infoLink>
         <infoLink id="58b7-2695-ba0d-8156" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
       </infoLinks>
       <costs>
@@ -10430,9 +10440,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <profile id="06e1-e0e9-5540-c4c1" name="Heavy Frag Rocket" publicationId="48c2-d023-0069-001a" page="39" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large (5&quot;) Blast, Pinning, One Use</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Pinning, One Use</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10452,13 +10462,11 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Skyfire, Sunder, One Use</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, One Use</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="772a-c269-0f0c-3e1a" name="Skyfire" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule"/>
-        <infoLink id="0acf-09c9-9c42-cbc8" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
         <infoLink id="80d2-89b3-65ad-a766" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
       </infoLinks>
       <costs>

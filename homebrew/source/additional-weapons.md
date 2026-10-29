@@ -56,13 +56,13 @@ _Firing enormous, unguided shells, these weapons have been largely the same sinc
 | Earthshaker Battery | 12" - 240" | 9 | 4 | Ordnance 2, Barrage, Large Blast (5"), Shred, Pinning, Breaching (5+) |
 | Earthshaker Cannon | 12" - 240" | 9 | 4 | Ordnance 1, Barrage, Large Blast (5"), Shred, Pinning, Breaching (5+) |
 | Mars-Colossus Bombard | 12" - 72" | 7 | 3 | Ordnance 1, Barrage, Large Blast (5"), Pinning, Shell Shock (1), Ignores Cover, Wrecker |
-| Medusa Mortar | 36" | 9 | 4 | Ordnance 1, Barrage, Large Blast (5"), Pinning, Rending (5+), Brutal (2) |
+| Medusa Mortar | 36" | 9 | 4 | Ordnance 1, Large Blast (5"), Barrage, Shred, Rupture (6+) |
 | Morbus Bombard | 36" | 10 | 4 | Ordnance 1, Barrage, Large Blast (5"), Pinning, Rending (5+) |
 | Mori Quake Cannon | 24" - 360" | 10/8/6 | 3 | Destroyer 1, Apocalyptic Mega-Blast, Barrage, Breaching (4+), Seismic Shock, Concussive (1) |
 | Nemesis Quake Cannon | 24" - 480" | 10/8/6 | 3 | Destroyer 1, Apocalyptic Mega-Blast, Barrage, Breaching (4+), Seismic Shock, Concussive (1) |
 | Praetor Launcher - Firestorm Munitions | 72" | 7 | 4 | Ordnance 2, Barrage, Massive Blast (7"), Pinning, Shell Shock (2), Rending (5+), Ignores Cover |
 | Praetor Launcher - Foehammer Munitions | 12" - 72" | 8 | 3 | Heavy 12, Guided Fire, Breaching (5+), Ignores Cover |
-| Thunderblast Cannon | 72" | 7 | 4 | Heavy 1, Blast (3"), Barrage, Pinning, Rupture (5+) |
+| Thunderblast Cannon | 36" | 8 | 4 | Ordnance 1, Large Blast (5"), Rupture (5+), Pinning |
 
 ## Bolt Weapons
 
