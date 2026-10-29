@@ -969,7 +969,7 @@ _One unit of Cryptothralls may be taken for each Cryptek, Technomancer, Plasmanc
 | Option | Cost |
 |---|---|
 | **The Triarch Stalker may exchange its heat ray for:** |  |
-| – Particle shredder | +0 points |
+| – Necron Particle Shredder | +0 points |
 | – Twin-linked heavy gauss cannon | +15 points |
 
 ## Troops
@@ -1851,7 +1851,7 @@ _The ancient weapons of the Necron nobility and their guards._
 | Staff of Stars (melee) | – | x2 | 2 | Melee, Rending (6+) |
 | Staff of tomorrow | – | +1 | 3 | Melee; the bearer may re-roll failed to-hit rolls |
 | Voidblade | – | User | 3 | Melee, Rending (6+), Shred; +1 Attack |
-| Voidscythe | – | x2 | 1 | Melee, Unwieldy, Rending (5+), Armourbane (Melee) |
+| Voidscythe | – | x2 | 1 | Melee, Unwieldy (2), Rending (5+), Armourbane (Melee) |
 | Warscythe | – | x2 | 2 | Melee, Two-handed, Rending (5+), Armourbane (Melee) |
 
 ### Ranged Weapons
@@ -1919,7 +1919,7 @@ _Particle beams, focused heat rays and the disintegrating weapons of the Destroy
 | Heat ray – dispersed | Template | 5 | 4 | Heavy 1 |
 | Particle beamer | 24" | 6 | 5 | Heavy 1, Blast (3") |
 | Particle caster | 12" | 6 | 5 | Pistol 1 |
-| Particle shredder | 24" | 7 | 4 | Heavy 1, Large Blast (5") |
+| Necron Particle Shredder | 24" | 7 | 4 | Heavy 1, Large Blast (5") |
 | Particle whip | 24" | 8 | 3 | Ordnance 1, Large Blast (5") |
 | Scouring eye | 12" | 5 | 4 | Pistol 2 |
 | Synaptic disintegrator | 24" | 4 | 5 | Rapid Fire, Sniper† |

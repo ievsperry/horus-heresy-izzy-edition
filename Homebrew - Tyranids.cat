@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="25" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="27" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -1031,12 +1031,16 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Brutal (2)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy (3), Brutal (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Unwieldy" id="63b4-4d3f-ab26-c081" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="7489-7257-a541-8ec3" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (3)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Brutal (X)" id="e9ea-1a0c-5b5e-1c79" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Brutal (2)" />
@@ -1110,12 +1114,16 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Brutal (2)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy (3), Brutal (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Unwieldy" id="9b36-6b19-043b-a0af" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="2fcf-3ed9-f9c7-de61" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (3)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Brutal (X)" id="cae0-0457-f1ce-5496" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Brutal (2)" />
@@ -1202,7 +1210,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Armourbane (Melee), Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Armourbane (Melee), Unwieldy (3), Wrecker</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1217,7 +1225,12 @@
             <modifier type="set" field="name" value="Armourbane (Melee)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Unwieldy" id="30ef-3ed9-46f2-916d" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="d5ea-f39d-10e5-a5dd" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (3)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Wrecker" id="7b2f-fd27-a114-091f" hidden="false" targetId="ba77-a802-55df-da67" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Acid maw" hidden="false" id="48ac-629f-d138-a997" publicationId="7478-cf16-4f88-170b">
@@ -1544,9 +1557,9 @@
         <infoLink name="Shred" id="563d-a270-1cbd-a67e" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule" />
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Rending claws" hidden="false" id="e933-1a0d-1f8f-53a2" publicationId="7478-cf16-4f88-170b">
+    <selectionEntry type="upgrade" import="true" name="Rending claws (natural)" hidden="false" id="19f0-9111-895e-e017" publicationId="7478-cf16-4f88-170b">
       <profiles>
-        <profile name="Rending claws" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7b22-eeb3-95e2-a59d" publicationId="7478-cf16-4f88-170b">
+        <profile name="Rending claws (natural)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d619-8a40-c1da-f237" publicationId="7478-cf16-4f88-170b">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
@@ -1556,7 +1569,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Rending (X)" id="5a0d-4269-7125-987a" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+        <infoLink name="Rending (X)" id="9ab0-563a-a483-00ec" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Rending (6+)" />
           </modifiers>
@@ -1964,6 +1977,34 @@
       </profiles>
       <infoLinks>
         <infoLink name="Twin-linked" id="a6a6-0b9c-ed4d-5891" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flesh hooks" hidden="false" id="4efc-96ef-4ab7-1101" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Flesh hooks" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="05f4-d911-09a5-1a02" publicationId="7478-cf16-4f88-170b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">9"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Grenade 1, Pinning, Small Blast (3"), Barrage, Concussion (1), Limited Ammunition</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pinning" id="2f1f-6a1e-a54f-eff5" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+        <infoLink name="Blast" id="3803-3ec1-0d00-1324" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Small Blast (3&quot;)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Barrage" id="3d04-e18e-90b9-21ab" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule" />
+        <infoLink name="Concussion (X)" id="dc1b-1327-f7fc-cde1" hidden="false" targetId="019c-9f2c-548b-b0ff" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussion (1)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Limited Ammunition" id="02cc-0ea2-87fe-8f42" hidden="false" targetId="9f09-5cb8-c3ea-c3f8" type="rule" />
+        <infoLink id="e4ae-13f5-5762-9a6d" name="Flesh Hooks" hidden="false" targetId="b9e0-10da-31b3-695a" type="profile" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Acid spray" hidden="false" id="5397-71e9-f972-da3f" publicationId="7478-cf16-4f88-170b">
@@ -2442,6 +2483,17 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="4370-a156-6016-2123" name="Flesh hooks" hidden="false" targetId="05f4-d911-09a5-1a02" type="profile" />
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Flesh hooks" hidden="false" id="deb4-41a3-d2c6-695a" type="selectionEntry" targetId="4efc-96ef-4ab7-1101">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e9a-5b22-0276-5191" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5199-b4eb-cacf-5980" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hardened Carapace" hidden="false" id="7721-6ee3-0c29-5e74" publicationId="7478-cf16-4f88-170b">
       <profiles>
@@ -5620,7 +5672,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b21-5ec0-0e3c-35b1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Rending claws" hidden="false" id="759d-3d8e-f554-4afc" type="selectionEntry" targetId="e933-1a0d-1f8f-53a2">
+                <entryLink import="true" name="Rending claws (natural)" hidden="false" id="759d-3d8e-f554-4afc" type="selectionEntry" targetId="19f0-9111-895e-e017">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9f3-7fec-cfda-0cba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -5693,7 +5745,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Flesh Hooks" hidden="false" id="0ea6-f587-2e2e-4582" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+                <entryLink import="true" name="Flesh hooks" hidden="false" id="0ea6-f587-2e2e-4582" type="selectionEntry" targetId="4efc-96ef-4ab7-1101">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e48b-746e-2802-9255" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -6203,16 +6255,16 @@
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="dde9-994d-923f-281e" primary="false" name="Unique Sub-type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Flesh Hooks" hidden="false" id="f2bf-aea7-7d84-3c49" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+            <entryLink import="true" name="Flesh hooks" hidden="false" id="f2bf-aea7-7d84-3c49" type="selectionEntry" targetId="4efc-96ef-4ab7-1101">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6971-66cc-2481-adc6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a59-e10b-2d25-3c5e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Rending claws" hidden="false" id="7f7b-0bef-52c3-84c0" type="selectionEntry" targetId="e933-1a0d-1f8f-53a2">
+            <entryLink import="true" name="Rending claws (natural)" hidden="false" id="379e-0739-e385-80b7" type="selectionEntry" targetId="19f0-9111-895e-e017">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6cb-8770-81e3-1b21" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f03b-c868-6081-220b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0742-7445-26ee-a795" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="255d-9c1f-dcd5-6a2d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
             <entryLink import="true" name="Scything talons" hidden="false" id="77b3-ca44-6304-780d" type="selectionEntry" targetId="94f5-3302-5047-8b9e">
@@ -6434,7 +6486,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0946-4a3a-8549-b000" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Rending claws" hidden="false" id="d2ed-2ac1-9a89-f967" type="selectionEntry" targetId="e933-1a0d-1f8f-53a2">
+                <entryLink import="true" name="Rending claws (natural)" hidden="false" id="d2ed-2ac1-9a89-f967" type="selectionEntry" targetId="19f0-9111-895e-e017">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fad7-f944-caba-f288" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -7327,16 +7379,16 @@
             <categoryLink targetId="59a4-7b61-600a-c457" id="850d-ff37-a2d8-07be" primary="false" name="Skirmish Sub-type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Flesh Hooks" hidden="false" id="916a-e67e-d194-3d80" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+            <entryLink import="true" name="Flesh hooks" hidden="false" id="916a-e67e-d194-3d80" type="selectionEntry" targetId="4efc-96ef-4ab7-1101">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89f3-a443-46f9-d974" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f71-2475-6020-18cc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Rending claws" hidden="false" id="2472-7c9c-f557-a35a" type="selectionEntry" targetId="e933-1a0d-1f8f-53a2">
+            <entryLink import="true" name="Rending claws (natural)" hidden="false" id="9383-6dc5-d2a2-54a6" type="selectionEntry" targetId="19f0-9111-895e-e017">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e90-0d4f-3892-e44d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e061-5b91-576c-65e4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="833e-f692-b30d-b5fa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ece1-e215-25e3-15e4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
             <entryLink import="true" name="Scything talons" hidden="false" id="c7be-da83-666a-7c2d" type="selectionEntry" targetId="94f5-3302-5047-8b9e">
@@ -9067,10 +9119,10 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Rending claws" hidden="false" id="64c2-3c92-7bc7-e0bd" type="selectionEntry" targetId="e933-1a0d-1f8f-53a2">
+            <entryLink import="true" name="Rending claws (natural)" hidden="false" id="2b59-fdf3-031c-087d" type="selectionEntry" targetId="19f0-9111-895e-e017">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5170-f476-6410-22db" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d066-57af-d78c-b248" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="97c2-66e7-4b05-1e48" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aed9-9628-75ef-9a51" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -11890,7 +11942,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5a0-4cbd-c7c8-516f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Rending claws" hidden="false" id="688e-a16b-d5b8-2aa1" type="selectionEntry" targetId="e933-1a0d-1f8f-53a2">
+                <entryLink import="true" name="Rending claws (natural)" hidden="false" id="688e-a16b-d5b8-2aa1" type="selectionEntry" targetId="19f0-9111-895e-e017">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a893-1729-e997-e07e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -12129,7 +12181,7 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
               </costs>
             </entryLink>
-            <entryLink import="true" name="Flesh Hooks" hidden="false" id="27ff-5a4c-6609-a3c6" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
+            <entryLink import="true" name="Flesh hooks" hidden="false" id="27ff-5a4c-6609-a3c6" type="selectionEntry" targetId="4efc-96ef-4ab7-1101">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
                   <repeats>
@@ -14298,7 +14350,7 @@
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="130f-9902-85e6-b9c0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Rending claws" hidden="false" id="6a40-6838-04ce-e12d" type="selectionEntry" targetId="e933-1a0d-1f8f-53a2">
+                <entryLink import="true" name="Rending claws (natural)" hidden="false" id="6a40-6838-04ce-e12d" type="selectionEntry" targetId="19f0-9111-895e-e017">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7fc-a6d2-dff3-43cb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -14955,7 +15007,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9646-6607-a95c-7323" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Rending claws" hidden="false" id="6f4a-7249-08e2-ab68" type="selectionEntry" targetId="e933-1a0d-1f8f-53a2">
+                <entryLink import="true" name="Rending claws (natural)" hidden="false" id="6f4a-7249-08e2-ab68" type="selectionEntry" targetId="19f0-9111-895e-e017">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66b3-7dc3-741b-be66" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>

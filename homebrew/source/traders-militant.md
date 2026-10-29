@@ -1696,8 +1696,8 @@ Relics of a lost technology, still in use during the Heresy.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Disintegrator | 24" | 5 | 2 | Rapid Fire, Gets Hot, Instant Death |
-| Disintegrator Pistol | 12" | 5 | 2 | Pistol 1, Gets Hot, Instant Death |
+| Disintegrator | 24" | 5 | 2 | Rapid Fire, Instant Death, Gets Hot |
+| Disintegrator Pistol | 12" | 5 | 2 | Pistol 1, Instant Death, Gets Hot |
 
 #### Flame Weapons
 
@@ -1713,8 +1713,8 @@ Gravitic anomalies that short machinery and pulp flesh.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Graviton Gun | 18" | \* | 4 | Heavy 1, Blast (3"), Concussive (1), Graviton Pulse, Haywire |
-| Graviton Imploder | 18" | \* | 3 | Heavy 2, Concussive (1), Graviton Pulse, Haywire |
+| Graviton Gun | 18" | † | 4 | Heavy 1, Blast (3"), Concussive (1), Graviton Pulse, Haywire |
+| Graviton Imploder | 18" | † | 3 | Heavy 2, Concussive (1), Graviton Pulse, Haywire |
 
 #### Las Weapons
 
@@ -1723,11 +1723,11 @@ Reliable, rechargeable las weapons, made by the billion.
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Hot-Shot Lasgun | 18" | 3 | 3 | Rapid Fire |
-| Hot-Shot Laspistol | 9" | 3 | 3 | Pistol 1 |
-| Hot-Shot Volley Gun | 24" | 4 | 3 | Heavy 3 |
+| Hot-Shot Laspistol | 9" | 3 | 3 | Pistol 1, Breaching (6+) |
+| Hot-Shot Volley Gun | 24" | 4 | 3 | Heavy 4, Breaching (6+) |
 | Lascutter (Ranged) | 8" | 10 | 1 | Assault 1, Armourbane (Ranged) |
 | Photon Gauntlet | 12" | 5 | 2 | Assault 2, Blind, Gets Hot |
-| Photon Thruster | 24" | 6 | 2 | Assault 2, Blind, Gets Hot, Lance |
+| Photon Thruster | 24" | 6 | 2 | Assault 2, Blind, Lance, Gets Hot |
 | Ranger Long-Rifle | 48" | 5 | 4 | Heavy 1, Pinning, Rending (5+), Sniper |
 
 #### Melta Weapons
@@ -1738,7 +1738,7 @@ Beams hot enough to run armour and flesh like wax.
 | --- | --- | --- | --- | --- |
 | Fusion Gun | 12" | 8 | 1 | Assault 1, Armourbane (Melta) |
 | Fusion Pistol | 8" | 8 | 1 | Pistol 1, Armourbane (Melta) |
-| Gravis Melta Cannon | 24" | 8 | 1 | Heavy 2, Armourbane (Melta), Twin-Linked |
+| Gravis Melta Cannon | 24" | 8 | 1 | Heavy 2, Armourbane (Melta), Twin-linked |
 
 #### Missile Weapons
 
@@ -1746,7 +1746,7 @@ Rocket-propelled warheads, from anti-infantry to tank hunting.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Havoc Launcher | 48" | 5 | 5 | Heavy 1, Blast (3"), Twin-Linked |
+| Havoc Launcher | 48" | 5 | 5 | Heavy 1, Blast (3"), Twin-linked |
 
 #### Plasma Weapons
 
@@ -1763,8 +1763,8 @@ Concentrated radiation that melts flesh from bone.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Irad-Cleanser | Template | 2 | 5 | Assault 1, Fleshbane, Rad-Phage |
-| Lucifex | 8" | 2 | 5 | Pistol 1, Fleshbane, Rad-Phage |
+| Irad-Cleanser | Template | 2 | 5 | Assault 1, Fleshbane, Rad-phage |
+| Lucifex | 8" | 2 | 5 | Pistol 1, Fleshbane, Rad-phage |
 
 #### Shuriken Weapons
 
@@ -1790,7 +1790,7 @@ Ancient ray weapons, older than the Imperium itself.
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Volkite Caliver | 30" | 6 | 5 | Heavy 3, Deflagrate |
-| Volkite Dual-Culverin | 45" | 6 | 5 | Heavy 6, Deflagrate, Twin-Linked |
+| Volkite Dual-Culverin | 45" | 6 | 5 | Heavy 6, Deflagrate, Twin-linked |
 
 #### Exotic Ranged Weapons
 
@@ -1798,7 +1798,7 @@ Weapons so unusual they form a class of their own.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Neuro Disruptor | 12" | 1 | 2 | Pistol 1, Fleshbane |
+| Neuro Disruptor | 12" | 3 | 2 | Pistol 1, Fleshbane |
 | Vortex Grenade | 8" | 8 | 2 | Assault 1, Blast (3"), Concussive (1), Haywire, One Use, Ponderous Aim, Vortex |
 
 ### Melee Weapons
@@ -1809,8 +1809,8 @@ Razor-edged blades driven by powerful motors.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Chainfist | - | x2 | 2 | Melee, Armourbane (Melee), Unwieldy |
-| Heavy Chainsword | - | +2 | - | Melee, Rending (6+), Shred, Two-Handed |
+| Chainfist | - | x2 | 2 | Melee, Armourbane (Melee), Unwieldy (3) |
+| Heavy Chainsword | - | +2 | - | Melee, Shred, Two-handed, Rupture (6+) |
 
 #### Force Weapons
 
@@ -1818,7 +1818,7 @@ Weapons that channel a psyker's might. A model that may take a Force Weapon may 
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Force Axe | - | +1 | 2 | Melee, Force, Unwieldy |
+| Force Axe | - | +1 | 2 | Melee, Force, Unwieldy (2) |
 | Force Maul | - | +2 | 3 | Melee, Force |
 | Force Staff | - | +1 | 3 | Melee, Force, Reach (1) |
 | Force Sword | - | User | 3 | Melee, Force, Rending (6+) |
@@ -1845,8 +1845,8 @@ A Servo-Arm grants one extra attack per turn and a Machinator Array two, using t
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Machinator Array | - | +1 | 2 | Melee, Armourbane (Melee), Shred, Unwieldy |
-| Servo-Arm | - | 8 | 2 | Melee, Unwieldy |
+| Machinator Array | - | +1 | 2 | Melee, Armourbane (Melee), Shred, Unwieldy (4) |
+| Servo-Arm | - | 8 | 2 | Melee, Extra Attacks (1), Unwieldy (3) |
 
 #### Exotic Melee Weapons
 
@@ -1854,12 +1854,12 @@ Masterwork and alien blades without equal in the Imperial armouries.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Corposant Stave | - | +1 | 4 | Melee, Haywire, Two-Handed |
+| Corposant Stave | - | +1 | 4 | Melee, Haywire, Two-handed |
 | Harlequin's Caress | - | User | - | Melee, Fleshbane, Rending (5+) |
 | Harlequin's Edge | - | User | - | Melee, Dimensional Edge (4+), Murderous Strike (6+), Rending (4+) |
 | Harlequin's Embrace | - | 6 | 3 | Melee, Embrace of Death (2), Monofilament |
 | Harlequin's Kiss | - | +1 | - | Melee, Murderous Strike (6+), Rending (5+) |
-| Haywire Grenade | - | - | - | Melee, Detonation, Haywire |
+| Haywire Grenade (melee) | - | 3 | 6 | Grenade 1, Haywire, Exoshock (5+) |
 
 ## Rules Checklist
 

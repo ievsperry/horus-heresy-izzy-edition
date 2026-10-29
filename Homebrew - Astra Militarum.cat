@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6aaf-163e-5512-c78e" name="Homebrew - Astra Militarum" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6aaf-163e-5512-c78e" name="Homebrew - Astra Militarum" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="0fda-9dad-a0bf-40e6" name="Astra Militarum for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Astra Militarum" />
   </publications>
@@ -935,13 +935,17 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Unwieldy (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Two-handed" id="789c-e094-ed99-e964" hidden="false" targetId="4c23-e863-a569-7617" type="rule" />
-        <infoLink name="Unwieldy" id="cd3e-dc0f-1aa0-9764" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="4c0c-bb65-d7bf-0c03" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (2)" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Huge knife" hidden="false" id="af26-0a70-57a3-42db" publicationId="0fda-9dad-a0bf-40e6">
@@ -1068,17 +1072,18 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Barrage, Blast (3")†</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Barrage, Pinning</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Barrage" id="0523-8d32-732b-934b" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule" />
         <infoLink name="Blast" id="fa72-7625-71b5-d934" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Blast (3&quot;)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Barrage" id="0523-8d32-732b-934b" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule" />
+        <infoLink name="Pinning" id="3d1b-10e6-325d-42cb" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Demolition charge" hidden="false" id="44b2-f1a7-29a7-2b05" publicationId="0fda-9dad-a0bf-40e6">
@@ -1126,7 +1131,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 5</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1169,29 +1174,36 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Concussive (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Concussive (X)" id="4a4e-c721-ba45-6bf2" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (1)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sniper rifle" hidden="false" id="0e10-c9c7-f586-54c6" publicationId="0fda-9dad-a0bf-40e6">
       <profiles>
         <profile name="Sniper rifle" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9767-80f7-cf3f-7a5c" publicationId="0fda-9dad-a0bf-40e6">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sniper, Rending (6+), Pinning†</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Rending (5+), Sniper, Pinning</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Sniper" id="fb0d-1952-7e14-0144" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule" />
-        <infoLink name="Rending (X)" id="3b33-f94b-043e-8c40" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+        <infoLink name="Rending (X)" id="9d14-2137-7a7d-0ec3" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Rending (6+)" />
+            <modifier type="set" field="name" value="Rending (5+)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Sniper" id="fb0d-1952-7e14-0144" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule" />
         <infoLink name="Pinning" id="e23c-9398-9645-6bac" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
       </infoLinks>
     </selectionEntry>
@@ -1219,12 +1231,15 @@
         <profile name="Hellstrike missile" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="cbc6-e40e-fe91-9420" publicationId="0fda-9dad-a0bf-40e6">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, One Use</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sunder, One Shot</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Sunder" id="d270-8e37-fafa-f78f" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Multiple rocket pod" hidden="false" id="86ff-b443-9ad6-173b" publicationId="0fda-9dad-a0bf-40e6">
       <profiles>
@@ -1233,7 +1248,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5")</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5"), Pinning</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1243,6 +1258,7 @@
             <modifier type="set" field="name" value="Large Blast (5&quot;)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Pinning" id="1774-94f1-2a1a-0828" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Death Rider lascarbine" hidden="false" id="b216-d0ea-0533-33a8" publicationId="0fda-9dad-a0bf-40e6">
@@ -1264,12 +1280,12 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Lance</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sunder</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Lance" id="5f71-96e3-37fe-55d1" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule" />
+        <infoLink name="Sunder" id="4a22-0ba3-23b5-6701" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hot-shot lasgun" hidden="false" id="5c87-a198-e8a1-2a6e" publicationId="0fda-9dad-a0bf-40e6">
@@ -1288,13 +1304,20 @@
       <profiles>
         <profile name="Hot-shot laspistol" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5bb3-bf5a-67bd-34b9" publicationId="0fda-9dad-a0bf-40e6">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">6"</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">9"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="e93c-92cd-f4f7-ab8c" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (6+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hot-shot marksman rifle" hidden="false" id="dad5-0155-702d-341f" publicationId="0fda-9dad-a0bf-40e6">
       <profiles>
@@ -1319,10 +1342,17 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="3dd5-8a72-2d63-59dc" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (6+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lasgun" hidden="false" id="7a8a-0c41-655c-dc64" publicationId="0fda-9dad-a0bf-40e6">
       <profiles>
@@ -1422,17 +1452,18 @@
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Poisoned (2+)†</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Breaching (5+), Fleshbane</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Poisoned (X)" id="bd69-4ee0-230a-d480" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+        <infoLink name="Breaching (X)" id="6734-c795-b25d-f190" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Poisoned (2+)" />
+            <modifier type="set" field="name" value="Breaching (5+)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Fleshbane" id="68f6-3757-f15a-d0ba" hidden="false" targetId="40cd-9505-253c-e76f" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Deathstrike missile" hidden="false" id="6407-9ef8-2a2c-08f4" publicationId="0fda-9dad-a0bf-40e6">
@@ -1499,13 +1530,30 @@
       <profiles>
         <profile name="Inferno cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5846-7508-0f93-9b8c" publicationId="0fda-9dad-a0bf-40e6">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Hellstorm</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1; the template may be placed with its narrow end up to 12" from the Hellhound†</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Torrent (9"), Breaching (6+), Concussive (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Torrent (X)" id="cd58-5195-1a93-c90f" hidden="false" targetId="5cfb-fc94-e6db-43b8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Torrent (9&quot;)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="fcef-ca20-b5a3-a414" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (6+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Concussive (X)" id="e9e9-b03c-0f85-bed2" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (1)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Malleus rocket launcher" hidden="false" id="6c1f-cd59-adaa-62bd" publicationId="0fda-9dad-a0bf-40e6">
       <profiles>
@@ -1530,22 +1578,22 @@
       <profiles>
         <profile name="Melta cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="eb9f-b902-391c-d9f4" publicationId="0fda-9dad-a0bf-40e6">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5"), Armourbane (Ranged)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Massive Blast (7"), Armourbane (Melta)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Blast" id="f40a-f0e9-6c06-c141" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+        <infoLink name="Blast" id="9b77-b994-4d21-1b6b" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Large Blast (5&quot;)" />
+            <modifier type="set" field="name" value="Massive Blast (7&quot;)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Armourbane (X)" id="4c40-687e-e39d-df5a" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+        <infoLink name="Armourbane (X)" id="0cc7-228c-7c3a-e934" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Armourbane (Ranged)" />
+            <modifier type="set" field="name" value="Armourbane (Melta)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -7023,10 +7071,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07f3-586e-74fa-d687" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="204d-fec7-c353-fc19" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="f523-9e8e-ad1b-48bf" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d74-aa0d-374a-0781" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d71-0431-748d-ac1e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9636-3fce-9631-85ad" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46ff-8b5f-3b14-d384" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -7135,10 +7183,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b04-c0d2-4d31-18f5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="c8b6-23e8-802a-b02f" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="414e-f873-75b0-4e74" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74c0-30db-fd9e-8987" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1df4-9d4f-b62a-3b83" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="366a-5f58-aa2a-7451" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d21-c73c-e863-d4ca" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -7178,10 +7226,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff85-0877-4f55-4342" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="1c0b-99c9-8b6b-628a" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="bd81-490e-4601-5746" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="959e-d5fd-9b05-6eab" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2d1-4d7e-53cb-1382" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="76fd-9636-a626-3ced" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16fe-299f-8c29-3da0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
             <entryLink import="true" name="Lasgun" hidden="false" id="27ec-eecb-3d35-339e" type="selectionEntry" targetId="7a8a-0c41-655c-dc64">
@@ -7569,10 +7617,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aca5-4ef0-5c34-7b56" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="b935-126c-7b97-3800" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="e976-df16-3200-49a4" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6300-1495-6cd4-4873" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8124-727a-e341-2f95" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5faf-2bc9-3644-ad7b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86b6-e9a0-a5ba-1a23" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -7839,10 +7887,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a649-30ff-98d9-ae61" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="d86f-249b-9cb4-4048" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="fe3e-2475-0705-33f6" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc9a-b620-4622-890c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e86-79e7-0df7-0d2d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12f2-8fc1-6571-1f94" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2455-8d0e-b619-73bc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -7883,10 +7931,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e135-7883-8507-cdf6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="8f80-bba6-b7ca-6d32" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="98ff-3414-d024-3a6c" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b37-29f1-d9d8-e157" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf7a-cec6-f70d-0ace" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a05d-023c-cf84-468d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f8b-aada-63e9-7f6a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
             <entryLink import="true" name="Lasgun" hidden="false" id="826f-3eff-36ae-0f71" type="selectionEntry" targetId="7a8a-0c41-655c-dc64">
@@ -8388,10 +8436,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="803d-015a-dd99-0274" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="a266-7a0f-8c4f-4082" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="b0dd-d66c-81e7-ba06" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca08-6f9e-6d29-c06b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3248-7fa9-b03e-881e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8569-29ba-a28b-f7e4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be37-4ee9-bcd6-9e97" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8493,10 +8541,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5016-6e15-380d-37b1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="6ede-aacf-c8c1-2f8c" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="6cfc-1574-9a29-a970" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7240-15f6-8d70-d225" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1959-969d-fe50-5978" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35e1-cc88-259f-0fe1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d742-5657-10f1-0791" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8537,10 +8585,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da75-1e7b-b3d2-2d12" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="dd3c-0450-c9bb-f40e" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+            <entryLink import="true" name="frag grenades" hidden="false" id="0b38-7c0f-8b64-8af1" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf3a-ba68-575c-d134" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17bb-4cc2-b818-3499" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="423d-d417-db8a-4da0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43fd-ea9d-4971-2bf8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
             <entryLink import="true" name="Lasgun" hidden="false" id="9872-0e83-0023-1b55" type="selectionEntry" targetId="7a8a-0c41-655c-dc64">

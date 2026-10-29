@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="216" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="219" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -4121,7 +4121,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Concussive (1), †Graviton Pulse, Haywire</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Concussive (1), Graviton Pulse, Haywire</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5673,8 +5673,8 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Detonation, Unwieldy, Breaching (6+)</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Limited Ammunition, Single Attack</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5690,6 +5690,14 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
         <profile id="ccc0-4896-212b-4d53" name="Frag Grenades" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with frag grenades makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ae72-5974-0836-f309" name="Frag Grenades (Ranged)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">9"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Grenade 1, Pinning, Small Blast (3"), Barrage, Concussion (1), Limited Ammunition</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5744,7 +5752,7 @@ Invulnerable Saves granted by a refractor field or iron halo do not stack with o
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Detonation, Unwieldy, Armourbane (Melee), Instant Death</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Detonation, Instant Death, Unwieldy (4)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6176,7 +6184,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Shred, Armourbane (Melee)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Shred, Unwieldy (4)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6265,7 +6273,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Force</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Force, Unwieldy (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6299,10 +6307,10 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
       <profiles>
         <profile id="7d00-2ff3-911f-11b9" name="Force Staff" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">.</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1), Force</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Force, Reach (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6325,7 +6333,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Force</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Force, Rending (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6344,7 +6352,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Rending (6+), Specialist Weapon</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Shred, Specialist Weapon</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6391,7 +6399,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6409,7 +6417,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Specialist Weapon</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy (2), Specialist Weapon</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6487,7 +6495,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Extra Attacks (1), Unwieldy (3)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6510,7 +6518,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Brutal (2), Specialist Weapon</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy (3), Brutal (2), Specialist Weapon</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6636,9 +6644,9 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
         <profile id="e147-61b4-fee1-d9c2" name="Chainfist" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2x</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy (3)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6698,7 +6706,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Haywire</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Haywire, Two-handed</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7155,7 +7163,7 @@ Four single Blast Shields</characteristic>
           <profiles>
             <profile id="9cc5-50ae-e725-393a" name="Arcus Missile Launcher - Pyrax Warheads" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
                 <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Ignores Cover, Pinning</characteristic>
@@ -8958,6 +8966,7 @@ A. No.</description>
       <infoLinks>
         <infoLink id="d340-25a1-93b6-b0bd" name="Grenades" hidden="false" targetId="6f5f-8f7c-d18b-cd42" type="rule"/>
         <infoLink id="c3d1-dc02-772b-c0e4" name="Frag Grenades" targetId="ccc0-4896-212b-4d53" type="profile"/>
+        <infoLink id="5751-57b2-1a8d-876b" name="Frag Grenades (Ranged)" targetId="ae72-5974-0836-f309" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -11807,7 +11816,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Haywire, Two-handed</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy (2), Haywire, Two-handed</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11843,7 +11852,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Shred, Murderous Strike (5+), Unwieldy, Breaching (5+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Shred, Murderous Strike (5+), Unwieldy (2), Breaching (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -18953,7 +18962,8 @@ If a model makes any attack, then they may only gain the benefit of the Precisio
       <description>When rolling on the Vehicle Damage table to resolve Hits against a Slow Vehicle, roll an additional D6 and before determining the result discard the highest single dice rolled. In addition, when a Slow Vehicle moves at Cruising Speed, it may only fire Snap Shots, regardless of the normal rules for Vehicles and Shooting.</description>
     </rule>
     <rule id="1570-c21a-881f-8b8a" name="Unwieldy" publicationId="e77a-823a-da94-16b9" page="249" hidden="false">
-      <description>A model attacking with this weapon Piles-in and fights at Initiative step 1, unless it has the Dreadnought Unit Type or Monstrous sub-type.</description>
+      <description>A model attacking with this weapon Piles-in and fights at Initiative step 1, unless it has the Dreadnought Unit Type or Monstrous sub-type.
+Optional rule: Unwieldy / Unwieldy (X) – A model attacking with this weapon does not fight at Initiative step 1; instead its Initiative is lowered by X. If no value is listed, its Initiative is reduced by 3, to a minimum of 1.</description>
     </rule>
     <rule id="8542-ee9d-e2fa-52fe" name="Twin-linked" publicationId="e77a-823a-da94-16b9" page="249" hidden="false">
       <description>When attacking with a weapon that has this special rule, the controlling player may re-roll all failed To Hit rolls.
@@ -19174,7 +19184,12 @@ You can move a unit in one part of a multi-part Building into an adjacent and un
 Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&apos;s armour with an Ordnance weapon, roll two dice instead of one and pick the highest result.</description>
     </rule>
     <rule id="6f5f-8f7c-d18b-cd42" name="Grenades" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false">
-      <description>Grenades are represented in battle as Wargear items with a specific effect rather than as weapons. Using grenades does not count as a Shooting Attack and their effects are entirely covered by the rules presented here. Note that grenade launchers do not use these rules and are Shooting Weapons governed by the standard Shooting rules.</description>
+      <description>Grenades are represented in battle as Wargear items with a specific effect rather than as weapons. Using grenades does not count as a Shooting Attack and their effects are entirely covered by the rules presented here. Note that grenade launchers do not use these rules and are Shooting Weapons governed by the standard Shooting rules.
+Optional rule: Grenade weapons are short-range, explosive projectiles thrown by infantry to clear out enemy positions before launching an assault. When a model fires a weapon with the Grenade weapon type, it follows all the normal rules for Blast weapons with the following exceptions:
+- Scatter Distance: When determining the scatter distance for a Grenade weapon, roll only a single D6 instead of 2D6. The total scatter distance is equal to the result of the D6 minus the firing model's Ballistic Skill (to a minimum of 0).
+- Assault Vectors: A unit containing models that have fired a Grenade weapon in their Shooting phase may still declare and resolve a Charge in the same turn.
+- Defensive Fire: Weapons with the Grenade type may be fired as part of an Overwatch Reaction and as part of the Interceptor Advanced Reaction, provided the target is within the weapon's maximum range.
+- All Grenades are Limited Use.</description>
     </rule>
     <rule id="d1c9-ee74-4e4f-8830" name="Sanctic" publicationId="e77a-823a-da94-16b9" page="325" hidden="false">
       <description>A weapon with this Special Rule always wounds models with the Daemon Unit Type on a 2+ and any successful Invulnerable Saves made by models with the Daemon Unit Type against any Wounds it inflicts must be re-rolled.</description>
@@ -19928,6 +19943,15 @@ This area of terrain does not confer a Cover Save and no model within its bounda
 • Trigger: an enemy unit makes a Shooting Attack targeting this unit.
 • After all To Hit, Armour Penetration, Invulnerable Save and Damage Mitigation rolls, but before lost Hull Points or Vehicle Damage results are applied, the reacting unit makes a Shooting Attack at the triggering unit.
 • Each model may fire all its Defensive Weapons and up to one Battle Weapon. Template weapons may only be used if the target is within 8", and must use Wall of Death.</description>
+    </rule>
+    <rule id="019c-9f2c-548b-b0ff" name="Concussion (X)" hidden="false">
+      <description>Optional rule: When a model suffers one or more Wounds from an attack with this Special Rule, that model's unit must immediately pass a Toughness Test at the end of the current Weapon Step. To pass a Toughness Test, the controlling player rolls a D6; if the result is less than or equal to the target model's current Toughness Characteristic, the test is passed.
+- A roll of a 6 on the D6 always fails, regardless of the model's Toughness Characteristic.
+- If the Toughness Characteristic of the target model is twice or more the Strength Characteristic of the Concussion attack, the target unit is entirely immune to this rule and no test is required.
+If the Toughness Test is failed, the target unit's Initiative Characteristic is reduced by X (to a minimum of 1) until the end of the current turn.</description>
+    </rule>
+    <rule id="3364-99b6-f1fe-eb18" name="Cover (X+)" hidden="false">
+      <description>Optional rule: Cover (X+) does not grant a save; it grants a Damage Mitigation roll of X+ instead.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

@@ -2465,7 +2465,7 @@ The great guns of the Auxilia's tanks.
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Demolisher Cannon | 24" | 12 | 3 | Ordnance 1, Blast (3"), Brutal (3), Rending (6+), Sunder, Wrecker |
-| Eradicator Nova Cannon | 36" | 6 | 4 | Heavy 1, Agripinaan Guidance System, Ignores Cover, Large Blast (5") |
+| Eradicator Nova Cannon | 36" | 6 | 4 | Heavy 1, Large Blast (5"), Ignores Cover |
 | Oppressor Cannon | 72" | 10 | 2 | Heavy 2, Brutal (3), Sunder |
 | Praetorian Battle Cannon | 48" | 8 | 4 | Heavy 2, Breaching (6+), Large Blast (5"), Pinning |
 | Pulveriser Cannon | 18" | 10 | 3 | Heavy 1, Blast (3"), Breaching (6+), Brutal (2), Sunder |
@@ -2527,7 +2527,7 @@ Gravitic anomalies that short machinery and pulp flesh.
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Graviton Annihilator | 48" | \* | 3 | Ordnance 1, Concussive (2), Gravitic Implosion, Haywire, Large Blast (5") |
-| Graviton Gun | 18" | \* | 4 | Heavy 1, Blast (3"), Concussive (1), Graviton Pulse, Haywire |
+| Graviton Gun | 18" | † | 4 | Heavy 1, Blast (3"), Concussive (1), Graviton Pulse, Haywire |
 
 #### Las Weapons
 
@@ -2537,8 +2537,8 @@ Reliable, rechargeable las weapons, from sidearms to cutting beams.
 | --- | --- | --- | --- | --- |
 | Heavy Lascutter (Ranged) | 12" | 10 | 1 | Heavy 1, Armourbane (Ranged) |
 | Hot-Shot Lasgun | 18" | 3 | 3 | Rapid Fire |
-| Hot-Shot Laspistol | 9" | 3 | 3 | Pistol 1 |
-| Hot-Shot Volley Gun | 24" | 4 | 3 | Heavy 3 |
+| Hot-Shot Laspistol | 9" | 3 | 3 | Pistol 1, Breaching (6+) |
+| Hot-Shot Volley Gun | 24" | 4 | 3 | Heavy 4, Breaching (6+) |
 | Lascutter (Ranged) | 8" | 10 | 1 | Assault 1, Armourbane (Ranged) |
 | Las-Lock | 18" | 4 | 6 | Assault 2 |
 | Lasgun Arrays | 24" | 3 | - | Rapid Fire, Array Fire (3) |
@@ -2598,7 +2598,7 @@ Super-heated plasma that burns hotter than a star.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Omega Pattern Plasma Blastgun | 48" | 9 | 3 | Ordnance 1, Gets Hot, Massive Blast (7"), Rending (4+) |
+| Omega Pattern Plasma Blastgun | 36" | 9 | 3 | Ordnance 1, Gets Hot, Massive Blast (7"), Rending (4+) |
 
 #### Volkite Weapons
 
@@ -2629,7 +2629,7 @@ Razor-edged blades driven by powerful motors.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Chainfist | - | x2 | 2 | Melee, Armourbane (Melee), Unwieldy |
+| Chainfist | - | x2 | 2 | Melee, Armourbane (Melee), Unwieldy (3) |
 | Heavy Chainsword | - | +2 | - | Melee, Rending (6+), Shred, Two-Handed |
 
 #### Force Weapons
@@ -2638,7 +2638,7 @@ Weapons that channel a psyker's might. A model that may take a Force Weapon may 
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Force Axe | - | +1 | 2 | Melee, Force, Unwieldy |
+| Force Axe | - | +1 | 2 | Melee, Force, Unwieldy (2) |
 | Force Maul | - | +2 | 3 | Melee, Force |
 | Force Staff | - | +1 | 3 | Melee, Force, Reach (1) |
 | Force Sword | - | User | 3 | Melee, Force, Rending (6+) |
@@ -2649,7 +2649,7 @@ Cutting beams that do the most damage up close.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Heavy Lascutter (Melee) | - | 10 | 1 | Melee, Armourbane (Melee), Specialist Weapon, Unwieldy |
+| Heavy Lascutter (Melee) | - | 10 | 1 | Melee, Armourbane (Melee), Specialist Weapon, Unwieldy (4) |
 | Lascutter (Melee) | - | 10 | 1 | Melee, Makeshift Weapon |
 
 #### Power Weapons
@@ -2667,7 +2667,7 @@ A Servo-Arm grants one extra attack per turn, using this profile.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Servo-Arm | - | 8 | 2 | Melee, Unwieldy |
+| Servo-Arm | - | 8 | 2 | Melee, Extra Attacks (1), Unwieldy (3) |
 
 #### Exotic Melee Weapons
 
@@ -2676,7 +2676,7 @@ Corrupted relics and warp-twisted flesh.
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Mutated Appendage | - | +2 | 4 | Melee, Rending (5+) |
-| Tainted Axe | - | +1 | 2 | Melee, Murderous Strike (6+), Unwieldy |
+| Tainted Axe | - | +1 | 2 | Melee, Unwieldy (1), Murderous Strike (6+) |
 | Tainted Blade | - | User | 3 | Melee, Murderous Strike (6+), Rending (6+) |
 | Tainted Maul | - | +2 | 3 | Melee, Murderous Strike (6+) |
 

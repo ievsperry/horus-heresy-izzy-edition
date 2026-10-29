@@ -533,7 +533,7 @@ May be selected by a single Exarch in a Detachment.
 | Option | Cost |
 | --- | --- |
 | An Aspect Exarchs unit may include: |  |
-| – Up to 3 additional Exarchs | +20 points per model |
+| – Up to 7 additional Exarchs | +20 points per model |
 | Each Exarch must select a single Aspect Shrine upgrade (see Aspect Shrines): |  |
 | – Aspect Shrine: Dark Reaper | +30 points |
 | – Aspect Shrine: Dire Avenger | +15 points |
@@ -544,6 +544,8 @@ May be selected by a single Exarch in a Detachment.
 | – Aspect Shrine: Striking Scorpion | +25 points |
 | – Aspect Shrine: Swooping Hawk | +20 points |
 | – Aspect Shrine: Warp Spider | +20 points |
+
+_No more than 3 Exarchs in the unit may select the same Aspect Shrine._
 
 ### 0-1 Autarch — 80 pts
 
@@ -1114,7 +1116,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 | Option | Cost |
 | --- | --- |
 | A Guardian Officer Cadre may include: |  |
-| – Up to 8 additional Guardian Officers | +20 points per model |
+| – Up to 6 additional Guardian Officers | +20 points per model |
 | Any Guardian Officer may be upgraded to a: |  |
 | – Skyrunner Officer | +15 points |
 | Any Guardian Officer may take one of the following: |  |
@@ -1127,6 +1129,8 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 | – Fusion Pistol | +10 points |
 | Any Guardian Officer or Skyrunner Officer may take a: |  |
 | – Forceshield | +15 points |
+
+_The unit may contain up to 7 models, no more than 4 of any one kind (Guardian Officers and Skyrunner Officers)._
 
 ### Howling Banshees — 95 pts
 
@@ -2497,7 +2501,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 | Option | Cost |
 | --- | --- |
 | A Lynx may exchange its Centreline Mounted Lynx Pulsar for a: |  |
-| – Centreline Mounted Sonic Lance | +75 points |
+| – Centreline Mounted Asuryani Sonic Lance | +75 points |
 | A Lynx may exchange its Hull (Front) Mounted Shuriken Cannon for one of the following: |  |
 | – Hull (Front) Mounted Bright Lance | +15 points |
 | – Hull (Front) Mounted Scatter Laser | +5 points |
@@ -2583,7 +2587,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 | A Revenant Titan unit may include: |  |
 | – Up to 1 additional Revenant Titan | +750 points |
 | A Revenant Titan may exchange both of its Arm Mounted Revenant Pulsars for: |  |
-| – Two Arm Mounted Sonic Lances | +75 points |
+| – Two Arm Mounted Asuryani Sonic Lances | +75 points |
 | A Revenant Titan may take a: |  |
 | – Hull (Front) Mounted Scatter Laser | +5 points |
 
@@ -3467,8 +3471,8 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Fusion pistol | 6" | 8 | 1 | Assault 1, Armourbane (Melta) |
-| Shuriken pistol | 12" | 4 | 5 | Pistol 1, Breaching (5+) |
+| Fusion pistol | 8" | 8 | 1 | Pistol 1, Armourbane (Melta) |
+| Shuriken pistol | 12" | 4 | 5 | Pistol 1, Breaching (6+) |
 
 ### Corsair Basic Weapons
 
@@ -3476,8 +3480,8 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Ranger long rifle | 36" | 4 | 5 | Heavy 1, Pinning, Precision Shots (5+), Rending (5+) |
-| Shuriken catapult | 18" | 4 | 5 | Assault 2, Breaching (5+) |
+| Ranger long rifle | 48" | 5 | 4 | Heavy 1, Pinning, Rending (5+), Sniper |
+| Shuriken catapult | 18" | 4 | 5 | Assault 2, Breaching (6+) |
 | Twin-linked shuriken catapult | 18" | 4 | 5 | Assault 2, Breaching (5+), Twin-linked |
 
 ### Corsair Special Weapons
@@ -3508,8 +3512,8 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Haywire grenades | 6" | 2 | – | Assault 1, Haywire, One Use, Deflagrate, Blast (3") |
-| Plasma grenades | 6" | 4 | 4 | Assault 1, Blast (3") |
+| Haywire grenades (ranged) | 9" | 3 | 6 | Grenade 1, Haywire, Small Blast (3"), Barrage, Pinning |
+| Plasma grenades | 9" | 4 | 4 | Grenade 1, Pinning, Small Blast (3"), Barrage, Concussion (1), Limited Ammunition, Shell Shock (1) |
 
 ### Corsair Psychic Weapons
 
@@ -3630,7 +3634,7 @@ Bladed disks fired at supersonic velocities to shred their targets.
 Waves of sonic force that shatter armour and disintegrate flesh.
 
 | Weapon | Range | Str | AP | Type |
-| Sonic Lance | 48" | 8 | 3 | Ordnance 1, Armourbane (Ranged), Blast (3"), Breaching (5+), Ignores Cover, Murderous Strike (6+), Pinning, Shell Shock (1), Sonic Pulse |
+| Asuryani Sonic Lance | 48" | 8 | 3 | Ordnance 1, Armourbane (Ranged), Blast (3"), Breaching (5+), Ignores Cover, Murderous Strike (6+), Pinning, Shell Shock (1), Sonic Pulse |
 | Vibro Cannon | 36" | 7 | 3 | Heavy 1, Heavy Beam, Ignores Cover, Pinning, Rending (5+), Shell Shock (1) |
 | Vibro Disruptor | 36" | 7 | 3 | Heavy 3, Ignores Cover, Pinning, Rending (5+), Shell Shock (1), Skyfire |
 
@@ -3667,7 +3671,7 @@ Crystalline teeth that chew through almost any armour.
 Hyper-sharp blades relying on reflexes and raw skill. A model that may take a Charnabal Weapon may take any of these.
 
 | Weapon | Range | Str | AP | Type |
-| Charnabal Glaive | – | +1 | – | Melee, Breaching (5+), Duellist's Edge (2), Two-Handed |
+| Charnabal Glaive | – | +1 | – | Melee, Breaching (5+), Duellist's Edge (2), Two-handed |
 | Charnabal Sabre | – | User | – | Melee, Breaching (5+), Duellist's Edge (1) |
 | Charnabal Tabar | – | +2 | – | Melee, Breaching (6+), Duellist's Edge (1) |
 
@@ -3684,7 +3688,7 @@ Power discharged at close range to punch great holes in a target.
 Count as Power weapons. A model that may take a Power Weapon may take any of the first four.
 
 | Weapon | Range | Str | AP | Type |
-| Power Axe | – | +1 | 2 | Melee, Unwieldy |
+| Power Axe | – | +1 | 2 | Melee, Unwieldy (1) |
 | Power Maul | – | +2 | 3 | Melee |
 | Power Sword | – | User | 3 | Melee, Rending (6+) |
 
@@ -3697,7 +3701,7 @@ The following are rarer and cannot be taken as a generic Power Weapon choice:
 | Star Glaive | – | +2 | 2 | Melee, Master-crafted, Murderous Strike (5+), Two-Handed |
 | Wraith Gauntlet | – | User | 2 | Melee, Brutal (2) |
 | Wraith Glaive | – | 14 | 1 | Melee, Destructor, Instant Death, Reaping Blow (3) |
-| Wraithsword – Piercing Blow | – | 10 | 1 | Melee, Murderous Strike (5+), Two-Handed, Unwieldy |
+| Wraithsword – Piercing Blow | – | 10 | 1 | Melee, Murderous Strike (5+), Two-Handed, Unwieldy (3) |
 | Wraithsword – Sweeping Strike | – | User | 3 | Melee, Breaching (6+), Reaping Blow (3) |
 
 #### Witch Weapons (Melee)
@@ -3710,21 +3714,21 @@ The following are rarer and cannot be taken as a generic Witch Weapon choice. A 
 
 | Weapon | Range | Str | AP | Type |
 | Diresword | – | User | 3 | Melee, Brutal (2), Murderous Strike (6+), Rending (5+), Sanctic |
-| Ghost Axe | – | +3 | 2 | Melee, Brutal (2), Specialist Weapon, Unwieldy |
+| Ghost Axe | – | +3 | 2 | Melee, Brutal (2), Specialist Weapon, Unwieldy (2) |
 | Ghostglaive – Piercing Blow | – | 12 | 1 | Melee, Armourbane (Melee), Brutal (2), Murderous Strike (5+), Two-Handed |
 | Ghostglaive – Sweeping Strike | – | User | 2 | Melee, Reaping Blow (3) |
 | Ghostspear | – | User | 2 | Melee, Brutal (2), Force |
 | Ghostsword | – | +1 | 3 | Melee, Blade Spirit, Breaching (5+); +2 Attacks instead of +1 for a model armed with two |
-| Singing Spear (Melee) | – | User | 3 | Melee, Breaching (5+), Soul Tear |
+| Singing Spear (Melee) | – | User | 2 | Melee, Force, Murderous Strike (6+) |
 
 #### Exotic and Miscellaneous Melee Weapons
 
 Aeldari weapons strange enough to defy easy classification.
 
 | Weapon | Range | Str | AP | Type |
-| Haywire Grenade | – | – | – | Melee, Detonation, Haywire |
+| Haywire Grenade (melee) | – | 3 | 6 | Grenade 1, Haywire, Exoshock (5+) |
 | Mandiblaster | – | 4 | 6 | Melee, Poisoned (4+), Scorpion's Sting (1), Specialist Weapon |
-| Melta Bomb | – | 8 | 1 | Melee, Armourbane (Melee), Detonation, Instant Death, Unwieldy |
+| Melta Bomb | – | 8 | 1 | Melee, Armourbane (Melee), Detonation, Instant Death, Unwieldy (4) |
 | Psytronome Shaper | – | +1 | – | Melee, Rending (6+) |
 | Triskele (Melee) | – | User | 3 | Melee |
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="36" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="37" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -2011,6 +2011,7 @@ The effect lasts until the end of the turn.</description>
           </modifiers>
         </infoLink>
         <infoLink name="Pinning" id="f807-4ac7-88c4-a32e" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+        <infoLink id="f625-9cf6-49e1-36ca" name="Stikkbomb Flinga" hidden="false" targetId="024a-f90e-08cc-86d0" type="profile" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stikkbomb launcha" hidden="false" id="ce57-1416-77b0-33c4" publicationId="96d0-c462-d158-fbad">
@@ -2031,6 +2032,34 @@ The effect lasts until the end of the turn.</description>
           </modifiers>
         </infoLink>
         <infoLink name="Pinning" id="4ef9-2ee4-4f27-b26c" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stikkbombz" hidden="false" id="b763-1097-3232-7b0d" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Stikkbombz" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="50b0-9f88-d5dd-acd9" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">9"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Grenade 1, Pinning, Small Blast (3"), Barrage, Concussion (1), Limited Ammunition</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pinning" id="5e18-385b-1e04-fbc1" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+        <infoLink name="Blast" id="f169-f27b-7ae0-4bce" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Small Blast (3&quot;)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Barrage" id="fa61-0578-5147-4f1d" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule" />
+        <infoLink name="Concussion (X)" id="9c1c-a5be-bd85-b520" hidden="false" targetId="019c-9f2c-548b-b0ff" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussion (1)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Limited Ammunition" id="23ed-cf46-2ad8-93ea" hidden="false" targetId="9f09-5cb8-c3ea-c3f8" type="rule" />
+        <infoLink id="a6e5-bd4f-fed2-c3ef" name="Stikkbombz" hidden="false" targetId="402d-9eb8-e4a2-4e62" type="profile" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Supa-rokkit" hidden="false" id="50ba-0a7c-ebd5-ddda" publicationId="96d0-c462-d158-fbad">
@@ -2259,12 +2288,16 @@ The effect lasts until the end of the turn.</description>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Armourbane (Melee)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy (2), Armourbane (Melee)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Unwieldy" id="a0a1-ff09-9559-8de2" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="6f68-7de1-2aac-e7c0" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (2)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Armourbane (X)" id="493d-62b8-fd90-eb9b" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Armourbane (Melee)" />
@@ -2352,6 +2385,9 @@ The effect lasts until the end of the turn.</description>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="2958-357a-dc8d-e7d2" name="Deff Rolla" hidden="false" targetId="9319-a345-1855-9230" type="profile" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Dread klaw" hidden="false" id="f685-8493-6be8-461b" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -2379,7 +2415,7 @@ The effect lasts until the end of the turn.</description>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy (3)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2389,7 +2425,11 @@ The effect lasts until the end of the turn.</description>
             <modifier type="set" field="name" value="Armourbane (Melee)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Unwieldy" id="cb86-5fec-20f1-953a" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="9909-c639-39b2-bfc5" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (3)" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gork's Klaw" hidden="false" id="3f88-b57f-d922-e705" publicationId="96d0-c462-d158-fbad">
@@ -2447,6 +2487,9 @@ The effect lasts until the end of the turn.</description>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="93cf-bd0d-4ed8-6f60" name="Grabbin' Klaw" hidden="false" targetId="7ca0-74bf-86cf-9779" type="profile" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Grot stabba" hidden="false" id="a672-29e6-7845-0208" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -2511,7 +2554,7 @@ The effect lasts until the end of the turn.</description>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2521,7 +2564,11 @@ The effect lasts until the end of the turn.</description>
             <modifier type="set" field="name" value="Armourbane (Melee)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Unwieldy" id="d351-ac94-7795-3390" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="eee6-d86c-d453-a391" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (2)" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Klaw of Gork / Klaw of Mork" hidden="false" id="287e-758a-223d-9796" publicationId="96d0-c462-d158-fbad">
@@ -2577,12 +2624,16 @@ The effect lasts until the end of the turn.</description>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Unwieldy" id="1943-d451-0b6c-3719" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="927d-4391-da8b-018d" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (2)" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power klaw" hidden="false" id="0ecd-3c66-1dd0-3426" publicationId="96d0-c462-d158-fbad">
@@ -2592,12 +2643,16 @@ The effect lasts until the end of the turn.</description>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Specialist Weapon</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy (2), Specialist Weapon</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Unwieldy" id="a342-54d0-09f7-5482" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="4398-4d8f-c573-dbfc" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (2)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Specialist Weapon" id="27c9-68f7-f644-b4cc" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule" />
       </infoLinks>
     </selectionEntry>
@@ -2757,13 +2812,17 @@ The effect lasts until the end of the turn.</description>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+3</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Unwieldy, Breaching (5+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Unwieldy (2), Breaching (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Two-handed" id="cc64-ec74-f5a3-d0b9" hidden="false" targetId="4c23-e863-a569-7617" type="rule" />
-        <infoLink name="Unwieldy" id="f957-245a-f29b-8a77" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="fca1-94fb-a4d5-c1b5" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (2)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Breaching (X)" id="64b8-54f6-80c4-ee42" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Breaching (5+)" />
@@ -2851,6 +2910,9 @@ The effect lasts until the end of the turn.</description>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="969d-f4a4-d2b6-2d46" name="Wreckin' Ball" hidden="false" targetId="a840-42b2-d717-0b63" type="profile" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Da Rippa" hidden="false" id="90af-52da-83f5-5655" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -2944,7 +3006,7 @@ The effect lasts until the end of the turn.</description>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy, Two-Handed, Gets Hot</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy (2), Two-Handed, Gets Hot</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2954,7 +3016,11 @@ The effect lasts until the end of the turn.</description>
             <modifier type="set" field="name" value="Armourbane (Melee)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Unwieldy" id="f637-c2af-b240-cc17" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="7646-5f51-9aaf-3b2b" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (2)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Two-handed" id="7756-ff31-7404-c04c" hidden="false" targetId="4c23-e863-a569-7617" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Two-Handed" />
@@ -3275,6 +3341,9 @@ The effect lasts until the end of the turn.</description>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="4fae-2811-b1e5-5270" name="Deff rolla" hidden="false" targetId="96e4-920c-c5d7-1cf4" type="profile" />
+      </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Deff rolla" hidden="false" id="8c50-3dc1-668a-e2b7" type="selectionEntry" targetId="5135-ed40-b48a-4e54">
           <constraints>
@@ -3328,6 +3397,9 @@ The effect lasts until the end of the turn.</description>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="db8e-8947-08c9-b2f5" name="Grabbin' klaw" hidden="false" targetId="a15e-457e-e434-cac3" type="profile" />
+      </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Grabbin' klaw" hidden="false" id="6637-d928-7176-fdd7" type="selectionEntry" targetId="cb3d-c317-cbe1-231d">
           <constraints>
@@ -3580,6 +3652,9 @@ The effect lasts until the end of the turn.</description>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="36f0-47eb-dbe1-d60b" name="Stikkbomb flinga" hidden="false" targetId="d269-38ed-9126-3ebf" type="profile" />
+      </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Stikkbomb flinga" hidden="false" id="9da5-efe0-76cb-d090" type="selectionEntry" targetId="92c7-b271-8572-ee11">
           <constraints>
@@ -3597,6 +3672,17 @@ The effect lasts until the end of the turn.</description>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="076d-d588-515b-cf83" name="Stikkbombz" hidden="false" targetId="50b0-9f88-d5dd-acd9" type="profile" />
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Stikkbombz" hidden="false" id="e753-7ef4-e93e-6994" type="selectionEntry" targetId="b763-1097-3232-7b0d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e316-5869-b0cb-c64e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2486-46ef-6f72-512b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tankbusta Bombz" hidden="false" id="13d1-b389-4f9a-4f6f" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -3661,6 +3747,9 @@ The effect lasts until the end of the turn.</description>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="c2a3-1880-e39e-f28f" name="Wreckin' ball" hidden="false" targetId="df37-3a72-7c31-2bc4" type="profile" />
+      </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Wreckin' ball" hidden="false" id="de2e-3042-af41-dc4e" type="selectionEntry" targetId="af08-16c7-9e1f-7635">
           <constraints>
@@ -3777,7 +3866,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d98-97ad-a5ce-d675" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="523f-1ebf-fb82-482c" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="523f-1ebf-fb82-482c" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="993b-041e-e53c-067b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8034-a00b-9a55-a707" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4108,7 +4197,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="8b41-3f66-686f-c80f" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="8b41-3f66-686f-c80f" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc6d-ed0c-fd75-a867" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6647-9e1c-a12c-e6e2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4626,7 +4715,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="07b5-3d6e-bbe4-82ca" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="07b5-3d6e-bbe4-82ca" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb67-fe06-b3cb-7a33" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8b9-3d8c-5692-eeb1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4953,7 +5042,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="ba57-7c8a-8f50-9c95" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="ba57-7c8a-8f50-9c95" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd85-420d-1826-b46b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4077-6065-efe1-f9e6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -5273,7 +5362,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed17-bd59-39c7-03ce" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="6e1a-ea92-44a6-1ccd" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="6e1a-ea92-44a6-1ccd" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dabd-87bd-81e5-821c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b825-f5f3-78d8-b964" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -5554,7 +5643,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="11ad-feb6-7785-184e" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="11ad-feb6-7785-184e" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="511c-47d9-26dc-5bf1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b80-c4e6-0ba2-1730" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -5951,7 +6040,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="6116-66b7-381a-b5bb" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="6116-66b7-381a-b5bb" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="258a-0824-7dd0-31ad" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7d7-1604-1b7f-96a0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6007,7 +6096,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3da-ece6-dc08-a059" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="a6be-fa8b-0e90-b4b9" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="a6be-fa8b-0e90-b4b9" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66c8-21ec-7b73-a28c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8280-f1cb-3edb-6b0c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6169,7 +6258,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a52-0d5c-d6db-8acd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="0b5e-7a15-0986-b1f6" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="0b5e-7a15-0986-b1f6" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c4d-7299-3f15-9c3a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa2b-534b-12c4-be47" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6404,7 +6493,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcc7-4abf-3b8f-8758" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="96c2-0893-2aa7-a844" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="96c2-0893-2aa7-a844" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5df0-4218-98a4-6f35" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a62-c4d5-709c-ca3c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6546,7 +6635,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="703d-f886-7d3f-1cca" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="a83a-e30c-e97c-a6e3" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="a83a-e30c-e97c-a6e3" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af3c-ae5e-aeec-13aa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="354d-5c19-d79a-de5d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6711,7 +6800,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cae-ff99-608a-0f48" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="a95d-1252-73b3-4515" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="a95d-1252-73b3-4515" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55bf-0a1d-ac9d-7011" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5934-7be2-7ec8-e285" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7077,7 +7166,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb30-a97c-bcdd-a3b8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="ef03-572e-6a97-0d41" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="ef03-572e-6a97-0d41" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10bb-effb-055e-1273" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="342e-8ca6-6507-c225" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7909,7 +7998,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e61-b81e-e0c8-65bb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="2d29-f1f0-8bc9-85b6" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="2d29-f1f0-8bc9-85b6" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5272-0769-16a8-a764" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2488-3db2-e0ee-9152" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7990,7 +8079,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="415c-64c5-8513-2f10" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="a838-9cc5-1d13-ccac" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="a838-9cc5-1d13-ccac" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce07-bdd1-1fdb-d6ea" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff3f-f98e-ce6c-b523" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8073,7 +8162,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="f791-0529-9acf-1288" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="f791-0529-9acf-1288" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1bae-c6b5-e9ca-1585" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cb9-8922-510b-6ed7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8357,7 +8446,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a46f-6d04-20ce-9f19" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="10d6-a7e9-a359-3472" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="10d6-a7e9-a359-3472" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b78a-656c-d1e2-7019" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6d7-8390-b9b8-6bca" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8414,7 +8503,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e60-b469-df13-c1fc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="5815-0690-ea7d-fb62" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="5815-0690-ea7d-fb62" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1da3-3c31-b616-d202" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bc7-08eb-c51d-e977" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8797,7 +8886,7 @@ The effect lasts until the end of the turn.</description>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Stikkbombz" hidden="false" id="a2a6-2cb6-8d4a-7623" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+                <entryLink import="true" name="Stikkbombz" hidden="false" id="a2a6-2cb6-8d4a-7623" type="selectionEntry" targetId="b763-1097-3232-7b0d">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7da3-1b66-4589-99c4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94b8-136d-a279-95d4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8899,7 +8988,7 @@ The effect lasts until the end of the turn.</description>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17f4-6a2c-aef4-7103" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Stikkbombz" hidden="false" id="7e43-92af-0e45-d776" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+                <entryLink import="true" name="Stikkbombz" hidden="false" id="7e43-92af-0e45-d776" type="selectionEntry" targetId="b763-1097-3232-7b0d">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b57-f178-14a0-4cd0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6538-e9a4-0eb6-f0b7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -9050,7 +9139,7 @@ The effect lasts until the end of the turn.</description>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de05-19b0-7fdc-9541" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Stikkbombz" hidden="false" id="32ab-7157-eb54-27c9" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+                <entryLink import="true" name="Stikkbombz" hidden="false" id="32ab-7157-eb54-27c9" type="selectionEntry" targetId="b763-1097-3232-7b0d">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c21-9441-01b9-2a10" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cd5-64e9-cd2a-3b6e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -9160,7 +9249,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0610-55d2-9540-04ad" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="8182-6ff4-7640-4842" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="8182-6ff4-7640-4842" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e089-55f9-6241-1270" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9a8-8d0a-2663-c525" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -9326,7 +9415,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="c5a6-7839-6d25-1353" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="c5a6-7839-6d25-1353" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="158b-81ec-a3ec-083f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="976e-3d7e-7a76-26cd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -9448,7 +9537,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="8edf-82f2-7a79-fc88" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="8edf-82f2-7a79-fc88" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0182-890f-410c-655e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b52-3cda-048d-63cc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -9758,7 +9847,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="280d-5be7-bded-e30f" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="280d-5be7-bded-e30f" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fcb9-06e8-4889-c5f1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c03b-03cb-3e71-755b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -9870,7 +9959,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="c7a1-5f45-838e-0155" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="c7a1-5f45-838e-0155" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="19a5-0c7a-fd84-2bb3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="193d-9569-9f2e-cd4b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -9986,7 +10075,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="f9bb-09a4-4cb0-83bf" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="f9bb-09a4-4cb0-83bf" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c693-79c8-5ce0-3dad" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c97-a2a9-d466-f5c1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -10257,7 +10346,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="92b4-1164-4471-a71a" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="92b4-1164-4471-a71a" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9122-04ae-a425-e3fa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6e0-79f1-c36b-3411" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -10346,7 +10435,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a54-9881-bb4a-ef63" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="6287-13b0-5e70-2a76" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="6287-13b0-5e70-2a76" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed30-7054-7067-4971" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f849-fb70-4d3d-e599" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -10549,7 +10638,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2b9-647f-66b0-2f28" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="0e22-f4b3-7d25-ff82" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="0e22-f4b3-7d25-ff82" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4eda-6195-a115-5ef2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6aa6-c406-d398-58b0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -10676,7 +10765,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f22-92c0-3e26-9af6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="23b1-e215-ea31-4feb" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="23b1-e215-ea31-4feb" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1e6-0f67-b1ba-1f62" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52e9-fcc6-29f2-71a7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -10892,7 +10981,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="738a-9e7e-c365-110d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="e2c9-7fe7-6d81-1efc" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="e2c9-7fe7-6d81-1efc" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7250-845e-1f93-98a8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0b4-a3d0-f883-f5d9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -10959,7 +11048,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc04-ab85-16fa-a1ca" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="559f-19d3-3be8-d9c3" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="559f-19d3-3be8-d9c3" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5429-f559-e67d-ae77" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14da-1b69-7776-a7b5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -11084,7 +11173,7 @@ The effect lasts until the end of the turn.</description>
             <categoryLink targetId="6399-5c65-7833-1025" id="5f69-5982-c41a-8a61" primary="false" name="Line Sub-type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="6e15-045c-f556-4b1e" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="6e15-045c-f556-4b1e" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bab-7967-0581-41ac" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5690-700e-95a5-8140" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -11123,7 +11212,7 @@ The effect lasts until the end of the turn.</description>
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="d917-0954-48e0-a504" primary="false" name="Character" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="83cd-32c2-e966-02b8" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="83cd-32c2-e966-02b8" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="092b-ef5c-c942-df72" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc62-8a31-11fd-dc71" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -11534,7 +11623,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edc2-b348-9775-0cc0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="4a71-72d2-a9c4-9f55" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="4a71-72d2-a9c4-9f55" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e24c-295e-2739-ce7a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ac8-a26b-6cc5-9d08" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -11633,7 +11722,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="34ec-ec90-c1ac-d0c7" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="34ec-ec90-c1ac-d0c7" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d20e-769a-f632-f030" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7556-1563-ed8e-ebb0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -11805,7 +11894,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eff-ede3-880f-b48c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="e05e-deb7-31a3-ebc5" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="e05e-deb7-31a3-ebc5" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9f6-ff50-0b13-3d31" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a632-4487-7756-9551" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -12110,7 +12199,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8505-a87f-62ff-e98e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="c503-b608-1c48-b9c7" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="c503-b608-1c48-b9c7" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8758-8b76-e275-a4e7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46bb-5dbf-10e9-9184" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -12209,7 +12298,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="c370-af6f-956d-d398" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="c370-af6f-956d-d398" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="39b9-380b-2923-ec4b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0d8-0317-6864-b2c3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -12441,7 +12530,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41f7-4737-9e1f-03dc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="5c71-0b44-0d5c-9f59" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="5c71-0b44-0d5c-9f59" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d37c-4b08-ce9f-f057" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34b6-48de-8e68-b85c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -13313,7 +13402,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6802-12fc-5bfe-8882" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="7a8c-25fb-52a1-b4ec" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="7a8c-25fb-52a1-b4ec" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3606-3241-7535-9e10" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70fd-6396-bd27-fa1e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -13513,7 +13602,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="891f-d027-ce46-2345" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="891f-d027-ce46-2345" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0cb2-2559-57c3-8e02" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d909-2d5d-2d14-07d4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -13618,7 +13707,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="e007-db0d-887d-1d80" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="e007-db0d-887d-1d80" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e3e-c929-7398-329a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73a2-6b61-2170-6735" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -14573,7 +14662,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="d902-3cf9-e00b-0416" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="d902-3cf9-e00b-0416" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a03-4591-8c63-61a6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da7c-70c6-4954-d695" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -14691,7 +14780,7 @@ The effect lasts until the end of the turn.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="b132-c53b-05ad-6870" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="b132-c53b-05ad-6870" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53ab-dcc5-a8a7-f111" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16e5-af87-53c1-4e06" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -14832,7 +14921,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e4b-7ee3-1cdb-0a5a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="7880-a4ab-d02d-4640" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="7880-a4ab-d02d-4640" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1257-15dc-4b25-a978" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37f9-1615-9fc6-c9e2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -14950,7 +15039,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1426-71ea-1558-8e88" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="56ee-7fde-fbad-0a02" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="56ee-7fde-fbad-0a02" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d5af-ffaa-f6b1-6e9e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2733-20c7-b8e2-1924" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -15841,7 +15930,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="829a-a2b4-7c83-8866" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="8e52-1932-7ab0-c796" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="8e52-1932-7ab0-c796" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5cc4-d3f8-2d39-ca8d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b4a-b732-6ccc-bbc7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -15929,7 +16018,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e4d-4019-4b31-c7da" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="a393-e7a0-a9b7-023e" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="a393-e7a0-a9b7-023e" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f712-6616-49df-3422" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14c8-29b5-ce56-752f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -15990,7 +16079,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d38-b113-7212-4064" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="5525-8ee9-9ed4-3919" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="5525-8ee9-9ed4-3919" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6435-7a80-44ca-cec8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c608-f32b-06cf-cbe1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -16620,7 +16709,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d72e-d149-3185-c3b8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="7146-170d-b987-46b5" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="7146-170d-b987-46b5" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92ca-9a05-34ad-3389" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49e0-c91e-e7a9-da9b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -16676,7 +16765,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13c4-8758-f4e7-0c2a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="0394-8db3-c764-65cd" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="0394-8db3-c764-65cd" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d03-7113-dd7f-a7e1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c72-7497-adc3-da51" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -17121,7 +17210,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81a6-a743-29c7-f1ab" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="c3b7-24e6-3d57-cc4d" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="c3b7-24e6-3d57-cc4d" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="125b-3c87-4bca-0c71" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2797-be52-793a-65ed" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -17240,7 +17329,7 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67a5-4520-7a37-4e53" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbombz" hidden="false" id="69ce-b5f2-dfa8-d690" type="selectionEntry" targetId="960a-b583-75a7-cab5">
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="69ce-b5f2-dfa8-d690" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bdd5-d7ca-a88b-5385" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aed1-33eb-5ef2-709d" percentValue="false" includeChildSelections="false" includeChildForces="false" />

@@ -1033,7 +1033,7 @@ Razor-edged blades driven by powerful motors.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Chainfist | - | x2 | 2 | Melee, Armourbane (Melee), Unwieldy |
+| Chainfist | - | x2 | 2 | Melee, Armourbane (Melee), Unwieldy (3) |
 
 #### Power Weapons
 
@@ -1042,7 +1042,7 @@ Rare disruption-field weapons that may not be taken as a generic Power Weapon. A
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Executor Great-Blade | - | User | 3 | Melee, Reaping Blow (2), Rending (5+) |
-| Indictor Axe | - | +3 | 2 | Melee, Murderous Strike (6+), Rending (6+), Two-Handed, Unwieldy |
+| Indictor Axe | - | +3 | 2 | Melee, Murderous Strike (6+), Rending (6+), Two-Handed, Unwieldy (1) |
 | Lightning Claw | - | User | 3 | Melee, Rending (6+), Shred, Specialist Weapon |
 | Reclaimator-Chainclaw (Melee) | - | +1 | 3 | Melee, Breaching (5+), Brutal (2) |
 | Terminus Power Claw | - | x2 | 2 | Melee, Brutal (2) |
@@ -1053,8 +1053,8 @@ A Servo-Arm grants one extra attack per turn and a Machinator Array two, using t
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Machinator Array | - | +1 | 2 | Melee, Armourbane (Melee), Shred, Unwieldy |
-| Servo-Arm | - | 8 | 2 | Melee, Unwieldy |
+| Machinator Array | - | +1 | 2 | Melee, Armourbane (Melee), Shred, Unwieldy (4) |
+| Servo-Arm | - | 8 | 2 | Melee, Extra Attacks (1), Unwieldy (3) |
 
 #### Exotic Melee Weapons
 

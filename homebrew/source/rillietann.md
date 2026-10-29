@@ -693,9 +693,9 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Fusion pistol | 6" | 8 | 1 | Assault 1, Armourbane (Melta) |
-| Neuro disruptor | 12" | 3 | 2 | Assault 1, Fleshbane |
-| Shuriken pistol | 12" | 4 | 5 | Pistol 1, Breaching (5+) |
+| Fusion pistol | 8" | 8 | 1 | Pistol 1, Armourbane (Melta) |
+| Neuro disruptor | 12" | 3 | 2 | Pistol 1, Fleshbane |
+| Shuriken pistol | 12" | 4 | 5 | Pistol 1, Breaching (6+) |
 
 ### Corsair Special Weapons
 
@@ -721,8 +721,8 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Haywire grenades | 6" | 2 | – | Assault 1, Haywire, One Use, Deflagrate, Blast (3") |
-| Plasma grenades | 6" | 4 | 4 | Assault 1, Blast (3") |
+| Haywire grenades (ranged) | 9" | 3 | 6 | Grenade 1, Haywire, Small Blast (3"), Barrage, Pinning |
+| Plasma grenades | 9" | 4 | 4 | Grenade 1, Pinning, Small Blast (3"), Barrage, Concussion (1), Limited Ammunition, Shell Shock (1) |
 
 ### Ranged Weapons
 
@@ -808,7 +808,7 @@ The following are rarer and cannot be taken as a generic Power Weapon choice:
 Aeldari weapons strange enough to defy easy classification.
 
 | Weapon | Range | Str | AP | Type |
-| Haywire Grenade | – | – | – | Melee, Detonation, Haywire |
+| Haywire Grenade (melee) | – | 3 | 6 | Grenade 1, Haywire, Exoshock (5+) |
 | Miststave | – | +1 | – | Melee, Concussive (1), Force, Poisoned (3+), Reach (1) |
 | Zephyrglaive | – | +1 | 2 | Melee, Rending (5+), Two-Handed |
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="7842-5e80-aeae-2118" name="Homebrew - Traders Militant" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="7842-5e80-aeae-2118" name="Homebrew - Traders Militant" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="3ea8-cc3d-f08e-1e10" name="Traders Militant Horus Heresy 2.0 - Homebrew Conversion" shortName="HB - Traders Militant" />
   </publications>
@@ -398,13 +398,13 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Gets Hot, Instant Death</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Instant Death, Gets Hot</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Gets Hot" id="968c-35f6-b566-1469" hidden="false" targetId="679f-9d97-5ace-a652" type="rule" />
         <infoLink name="Instant Death" id="515a-f288-a681-864e" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule" />
+        <infoLink name="Gets Hot" id="968c-35f6-b566-1469" hidden="false" targetId="679f-9d97-5ace-a652" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Disintegrator Pistol" hidden="false" id="d6a5-c26c-caf0-c7cc" publicationId="3ea8-cc3d-f08e-1e10">
@@ -414,13 +414,13 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Gets Hot, Instant Death</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Instant Death, Gets Hot</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Gets Hot" id="3fed-7847-d1a7-720c" hidden="false" targetId="679f-9d97-5ace-a652" type="rule" />
         <infoLink name="Instant Death" id="fa59-4779-f2be-40e3" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule" />
+        <infoLink name="Gets Hot" id="3fed-7847-d1a7-720c" hidden="false" targetId="679f-9d97-5ace-a652" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Flamestorm Cannon" hidden="false" id="77a0-ee46-b519-a9b0" publicationId="3ea8-cc3d-f08e-1e10">
@@ -447,7 +447,7 @@
         <profile name="Graviton Gun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="eb9b-738e-3083-cc84" publicationId="3ea8-cc3d-f08e-1e10">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">\*</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Concussive (1), Graviton Pulse, Haywire</characteristic>
           </characteristics>
@@ -473,7 +473,7 @@
         <profile name="Graviton Imploder" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="16a0-88d7-543f-9155" publicationId="3ea8-cc3d-f08e-1e10">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">\*</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Concussive (1), Graviton Pulse, Haywire</characteristic>
           </characteristics>
@@ -508,10 +508,17 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">9"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="e009-885b-6cf8-bfc6" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (6+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hot-Shot Volley Gun" hidden="false" id="9a5c-b838-ebd8-afe5" publicationId="3ea8-cc3d-f08e-1e10">
       <profiles>
@@ -520,10 +527,17 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="3252-3110-f9b6-ccf5" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (6+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lascutter" hidden="false" id="b225-98e7-1fae-7bcf" publicationId="3ea8-cc3d-f08e-1e10">
       <profiles>
@@ -576,14 +590,14 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Blind, Gets Hot, Lance</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Blind, Lance, Gets Hot</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Blind" id="90d6-69f9-735b-1bc6" hidden="false" targetId="d836-747d-07d6-2b63" type="rule" />
-        <infoLink name="Gets Hot" id="cdec-c2ec-194c-b62d" hidden="false" targetId="679f-9d97-5ace-a652" type="rule" />
         <infoLink name="Lance" id="b3ae-3ea6-2f35-2225" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule" />
+        <infoLink name="Gets Hot" id="cdec-c2ec-194c-b62d" hidden="false" targetId="679f-9d97-5ace-a652" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ranger Long-Rifle" hidden="false" id="822a-6f90-6285-302e" publicationId="3ea8-cc3d-f08e-1e10">
@@ -652,7 +666,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Armourbane (Melta), Twin-Linked</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Armourbane (Melta), Twin-linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -662,11 +676,7 @@
             <modifier type="set" field="name" value="Armourbane (Melta)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Twin-linked" id="a353-df8c-8c37-1a12" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Twin-Linked" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Twin-linked" id="cd49-213a-12bf-7bf0" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Havoc Launcher" hidden="false" id="6c31-fd03-b9be-4498" publicationId="3ea8-cc3d-f08e-1e10">
@@ -676,7 +686,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Twin-Linked</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Twin-linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -686,11 +696,7 @@
             <modifier type="set" field="name" value="Blast (3&quot;)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Twin-linked" id="8562-484b-2738-ed47" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Twin-Linked" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Twin-linked" id="29f4-7df5-3b35-8b59" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Phased Plasma-Fusil" hidden="false" id="1bf6-21c8-5dec-bb96" publicationId="3ea8-cc3d-f08e-1e10">
@@ -745,13 +751,17 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Fleshbane, Rad-Phage</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Fleshbane, Rad-phage</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Fleshbane" id="8519-7057-7d44-4931" hidden="false" targetId="40cd-9505-253c-e76f" type="rule" />
-        <infoLink name="Rad-Phage" id="2a1d-2f96-9448-09ba" hidden="false" targetId="8189-e963-d2e5-5d3d" type="rule" />
+        <infoLink name="Rad-Phage" id="88d7-feae-3c4a-1b38" hidden="false" targetId="8189-e963-d2e5-5d3d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rad-phage" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lucifex" hidden="false" id="7b19-fb27-9629-2c30" publicationId="3ea8-cc3d-f08e-1e10">
@@ -761,13 +771,17 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">8"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Fleshbane, Rad-Phage</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Fleshbane, Rad-phage</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Fleshbane" id="a1c2-ee88-cd75-9c8f" hidden="false" targetId="40cd-9505-253c-e76f" type="rule" />
-        <infoLink name="Rad-Phage" id="02af-19c6-f9c4-def2" hidden="false" targetId="8189-e963-d2e5-5d3d" type="rule" />
+        <infoLink name="Rad-Phage" id="eedb-e502-3018-0afb" hidden="false" targetId="8189-e963-d2e5-5d3d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rad-phage" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Shuriken Catapult" hidden="false" id="7571-f29d-2ce0-03fe" publicationId="3ea8-cc3d-f08e-1e10">
@@ -857,17 +871,13 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">45"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Deflagrate, Twin-Linked</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Deflagrate, Twin-linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Deflagrate" id="a54a-3fb9-0049-1130" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule" />
-        <infoLink name="Twin-linked" id="d7c4-8a25-f67b-426e" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Twin-Linked" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Twin-linked" id="4081-2591-4332-db28" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Neuro Disruptor" hidden="false" id="4c6d-d5ac-bb30-8750" publicationId="3ea8-cc3d-f08e-1e10">
@@ -875,7 +885,7 @@
         <profile name="Neuro Disruptor" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f0f1-46e2-abfb-8302" publicationId="3ea8-cc3d-f08e-1e10">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">1</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Fleshbane</characteristic>
           </characteristics>
@@ -919,7 +929,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy (3)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -929,7 +939,11 @@
             <modifier type="set" field="name" value="Armourbane (Melee)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Unwieldy" id="45b7-666a-99a9-5d40" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="1218-408d-b190-d8ff" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (3)" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Chainsword" hidden="false" id="e425-012d-443b-97ff" publicationId="3ea8-cc3d-f08e-1e10">
@@ -939,20 +953,16 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Shred, Two-Handed</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Two-handed, Rupture (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Rending (X)" id="61fe-9794-e904-914e" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Rending (6+)" />
-          </modifiers>
-        </infoLink>
         <infoLink name="Shred" id="dab1-52c2-bc79-a4d9" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule" />
-        <infoLink name="Two-handed" id="3516-0b85-d488-7830" hidden="false" targetId="4c23-e863-a569-7617" type="rule">
+        <infoLink name="Two-handed" id="47cb-c5ce-474c-f5b1" hidden="false" targetId="4c23-e863-a569-7617" type="rule" />
+        <infoLink name="Rupture (X)" id="4b44-6a3f-a119-f9ec" hidden="false" targetId="d530-0b40-4723-af90" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Two-Handed" />
+            <modifier type="set" field="name" value="Rupture (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -964,13 +974,17 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Force, Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Force, Unwieldy (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Force" id="ed3e-b47a-7433-0a00" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule" />
-        <infoLink name="Unwieldy" id="b904-a906-3565-4c8e" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="7ee3-2c99-5fe9-3b28" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (2)" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Force Maul" hidden="false" id="7f22-4bd5-0928-7798" publicationId="3ea8-cc3d-f08e-1e10">
@@ -1056,7 +1070,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Shred, Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Shred, Unwieldy (4)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1067,7 +1081,11 @@
           </modifiers>
         </infoLink>
         <infoLink name="Shred" id="e69a-28ce-e6f6-c48c" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule" />
-        <infoLink name="Unwieldy" id="8b4a-d39c-1117-2688" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="2942-77b4-d6b7-533c" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (4)" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Servo-Arm" hidden="false" id="e183-7632-ce89-b454" publicationId="3ea8-cc3d-f08e-1e10">
@@ -1077,12 +1095,16 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Extra Attacks (1), Unwieldy (3)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Unwieldy" id="36cd-1f88-8ec1-deae" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="9012-fab0-59f5-cc42" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (3)" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Corposant Stave" hidden="false" id="194d-4ece-c5d2-30af" publicationId="3ea8-cc3d-f08e-1e10">
@@ -1092,17 +1114,13 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Haywire, Two-Handed</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Haywire, Two-handed</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Haywire" id="d29b-511b-3a60-123f" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule" />
-        <infoLink name="Two-handed" id="079c-807b-4813-5414" hidden="false" targetId="4c23-e863-a569-7617" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Two-Handed" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Two-handed" id="7ac6-67cd-9363-090f" hidden="false" targetId="4c23-e863-a569-7617" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Harlequin's Caress" hidden="false" id="c3e9-d4ca-26aa-07f3" publicationId="3ea8-cc3d-f08e-1e10">
@@ -1197,20 +1215,24 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Haywire Grenade" hidden="false" id="b084-ab39-ae8e-12bb" publicationId="3ea8-cc3d-f08e-1e10">
+    <selectionEntry type="upgrade" import="true" name="Haywire Grenade (melee)" hidden="false" id="bf18-975d-9718-4071" publicationId="3ea8-cc3d-f08e-1e10">
       <profiles>
-        <profile name="Haywire Grenade" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c72a-e5a9-d87c-c01b" publicationId="3ea8-cc3d-f08e-1e10">
+        <profile name="Haywire Grenade (melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a3e9-a2dd-bf01-eca2" publicationId="3ea8-cc3d-f08e-1e10">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">-</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Detonation, Haywire</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Grenade 1, Haywire, Exoshock (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Detonation" id="eb9f-7d1d-66bf-30a1" hidden="false" targetId="8a47-9fc5-16fb-b46e" type="rule" />
-        <infoLink name="Haywire" id="4da4-4a0f-073e-ec81" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule" />
+        <infoLink name="Haywire" id="142f-0297-c4e1-66a9" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule" />
+        <infoLink name="Exoshock (X)" id="6f68-26d9-4c52-016b" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Exoshock (5+)" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Void Darts" hidden="false" id="99b8-d168-7b80-cc54" publicationId="3ea8-cc3d-f08e-1e10">
@@ -3334,7 +3356,7 @@
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Options" hidden="false" id="fbe8-8370-ce62-0555">
                   <entryLinks>
-                    <entryLink import="true" name="Haywire Grenade" hidden="false" id="c411-cdc0-f0ce-f1c0" type="selectionEntry" targetId="b084-ab39-ae8e-12bb">
+                    <entryLink import="true" name="Haywire Grenade (melee)" hidden="false" id="c411-cdc0-f0ce-f1c0" type="selectionEntry" targetId="bf18-975d-9718-4071">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e9f-a762-1168-a581" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
@@ -4767,7 +4789,7 @@
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Options" hidden="false" id="9073-f0ee-5998-7fb3">
                   <entryLinks>
-                    <entryLink import="true" name="Haywire Grenade" hidden="false" id="e51a-7534-33bf-0032" type="selectionEntry" targetId="b084-ab39-ae8e-12bb">
+                    <entryLink import="true" name="Haywire Grenade (melee)" hidden="false" id="e51a-7534-33bf-0032" type="selectionEntry" targetId="bf18-975d-9718-4071">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9a1-a3a7-7996-b114" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
@@ -5061,7 +5083,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Two-handed, Murderous Strike (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy (2), Two-handed, Murderous Strike (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5206,7 +5228,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+3</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Unwieldy (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5295,7 +5317,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5563,7 +5585,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Haywire Grenade" hidden="false" id="2b4c-b469-757a-1706" type="selectionEntry" targetId="b084-ab39-ae8e-12bb">
+                <entryLink import="true" name="Haywire Grenade (melee)" hidden="false" id="2b4c-b469-757a-1706" type="selectionEntry" targetId="bf18-975d-9718-4071">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bbe-ab7b-de4f-960d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>

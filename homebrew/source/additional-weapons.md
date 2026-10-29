@@ -124,6 +124,7 @@ _Grenade launchers are simple, singular weapons, but the fact their design has r
 | Weapon | Range | Str | AP | Type |
 |---|---|---|---|---|
 | Vratine Grenade Launcher - Krak | 24" | 6 | 4 | Assault 1, Rupture (6+) |
+| Frag Grenades (Ranged) | 9" | 3 | - | Grenade 1, Pinning, Small Blast (3"), Barrage, Concussion (1), Limited Ammunition |
 | Grenade Launcher - Krak | 24" | 6 | 4 | Assault 1, Rupture (6+) |
 | Hermes Grenade Launcher - Krak | 18" | 6 | 4 | Assault 2, Rupture (6+) |
 
@@ -286,7 +287,7 @@ All weapons listed here are counted as 'Graviton' weapons for those rules that a
 
 | Weapon | Range | Str | AP | Type |
 |---|---|---|---|---|
-| Graviton Crusher | - | x2 | 2 | Melee, Unwieldy, Haywire, Two-handed |
+| Graviton Crusher | - | x2 | 2 | Melee, Unwieldy (2), Haywire, Two-handed |
 | Graviton Ram (Melee) | - | 10 | 1 | Melee, Armourbane (Melee), Concussive (2), Brutal (2) |
 
 ## Exotic and Miscellaneous Melee Weapons
@@ -299,13 +300,13 @@ A model that upgrades a Chainsword to a Falax Blade replaces the Chainsword with
 |---|---|---|---|---|
 | Charonite Claws | - | +3 | 3 | Melee, Two-handed, Rending (5+), Murderous Strike (6+) |
 | Dawnbringer | - | 10 | 1 | Melee, Master-crafted, Two-handed, Armourbane (Melee), Instant Death, Brutal (2) |
-| Excoriator Chainaxe | - | +2 | 3 | Melee, Two-handed, Shred, Murderous Strike (5+), Unwieldy, Breaching (5+) |
+| Excoriator Chainaxe | - | +2 | 3 | Melee, Two-handed, Shred, Murderous Strike (5+), Unwieldy (2), Breaching (5+) |
 | Falax Blades | - | +1 | 5 | Melee, Specialist Weapon, Breaching (5+), Duellist's Edge (1) |
 | Forgebreaker | - | 12 | 1 | Melee, Master-crafted, Exoshock (3+), Brutal (3), Two-handed |
 | Hookfang | - | User | 3 | Melee, Poisoned (3+), The Venom, Breaching (5+) |
 | Hellcrusher Claws | - | 10 | 2 | Melee, Brutal (3), Sunder |
 | Lascutter (Melee) | - | 10 | 1 | Melee, Makeshift Weapon |
-| Krak Grenades | - | 6 | 3 | Melee, Detonation, Unwieldy, Breaching (6+) |
+| Krak Grenades (Melee) | - | 6 | 4 | Melee, Rending (6+), Limited Ammunition, Single Attack |
 | Melta Lance | - | 8 | 1 | Melee, Ungainly, Lance, Sudden Strike (2), Two-handed, One Use |
 | Ripper Gun | - | +1 | 5 | Melee, Reaping Blow (1), Two-handed |
 | Tarsus Buckler | - | +1 | 3 | Melee |
