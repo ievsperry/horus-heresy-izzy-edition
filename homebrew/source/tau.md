@@ -3171,7 +3171,7 @@ Specialist weapons carried by the Kill Team units.
 |---|---|---|---|---|
 | Accelerator bow | 24" | 4 | 5 | Assault 1, Rending (6+) |
 | Dvorgite skinner | Template | 4 | 5 | Assault 1, Shred |
-| EMP grenade | – | 2 | 6 | Melee, Haywire, Limited Use |
+| EMP grenades | – | 2 | 6 | Melee, Haywire, Limited Use |
 | Fusion grenade | – | 8 | 1 | Melee, Single Use, Armourbane (Melee), Instant Death, Limited Ammunition |
 | Kill Team close combat blade | – | User | 5 | Melee |
 | Kroot long blade | – | +1 | 4 | Melee, Two-handed |

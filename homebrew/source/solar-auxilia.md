@@ -2537,8 +2537,8 @@ Reliable, rechargeable las weapons, from sidearms to cutting beams.
 | --- | --- | --- | --- | --- |
 | Heavy Lascutter (Ranged) | 12" | 10 | 1 | Heavy 1, Armourbane (Ranged) |
 | Hot-Shot Lasgun | 18" | 3 | 3 | Rapid Fire |
-| Hot-Shot Laspistol | 9" | 3 | 3 | Pistol 1, Breaching (6+) |
-| Hot-Shot Volley Gun | 24" | 4 | 3 | Heavy 4, Breaching (6+) |
+| Hot-Shot Laspistol | 9" | 3 | 3 | Pistol 1 |
+| Hot-Shot Volley Gun | 24" | 4 | 3 | Heavy 4 |
 | Lascutter (Ranged) | 8" | 10 | 1 | Assault 1, Armourbane (Ranged) |
 | Las-Lock | 18" | 4 | 6 | Assault 2 |
 | Lasgun Arrays | 24" | 3 | - | Rapid Fire, Array Fire (3) |

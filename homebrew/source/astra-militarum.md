@@ -2443,9 +2443,9 @@ All weapons listed here are counted as 'Las' weapons for those rules that affect
 | Death Rider lascarbine | 18" | 3 | – | Assault 2 |
 | Heavy lascannon | 48" | 10 | 2 | Heavy 1, Sunder |
 | Hot-shot lasgun | 18" | 3 | 3 | Rapid Fire |
-| Hot-shot laspistol | 9" | 3 | 3 | Pistol 1, Breaching (6+) |
+| Hot-shot laspistol | 9" | 3 | 3 | Pistol 1 |
 | Hot-shot marksman rifle | 36" | 3 | 3 | Heavy 1, Sniper, Pinning† |
-| Hot-shot volley gun | 24" | 4 | 3 | Heavy 4, Breaching (6+) |
+| Hot-shot volley gun | 24" | 4 | 3 | Heavy 4 |
 | Lasgun | 24" | 3 | – | Rapid Fire |
 | Laspistol | 12" | 3 | – | Pistol 1 |
 | Long-las | 36" | 3 | 6 | Heavy 1, Sniper, Rending (6+), Pinning |

@@ -1723,8 +1723,8 @@ Reliable, rechargeable las weapons, made by the billion.
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Hot-Shot Lasgun | 18" | 3 | 3 | Rapid Fire |
-| Hot-Shot Laspistol | 9" | 3 | 3 | Pistol 1, Breaching (6+) |
-| Hot-Shot Volley Gun | 24" | 4 | 3 | Heavy 4, Breaching (6+) |
+| Hot-Shot Laspistol | 9" | 3 | 3 | Pistol 1 |
+| Hot-Shot Volley Gun | 24" | 4 | 3 | Heavy 4 |
 | Lascutter (Ranged) | 8" | 10 | 1 | Assault 1, Armourbane (Ranged) |
 | Photon Gauntlet | 12" | 5 | 2 | Assault 2, Blind, Gets Hot |
 | Photon Thruster | 24" | 6 | 2 | Assault 2, Blind, Lance, Gets Hot |
