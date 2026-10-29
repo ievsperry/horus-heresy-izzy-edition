@@ -374,8 +374,8 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   game system lacks to its shared entries. The Extrinsica Melee Weapons carry their points, the Extrinsica
   rule and a category allowing one per army. Homebrew catalogues take these changes from their own sources.
 - The game system also holds a **Power Pack** wargear entry (0 points) whose Power Pack Weapons group allows up
-  to two different Power Pack Weapons from `additional-weapons.md` (Circular Stone Saw, Gem Extractor, Kinfolk
-  Arc Welder, Stone Burner). `python3 homebrew/add_power_pack.py` sets that limit and links the Power Pack to
+  to two different Power Pack Weapons from `additional-weapons.md` (Circular Stone Saw +5, Gem Extractor +10,
+  Kinfolk Arc Welder +15, Stone Burner +10 points). `python3 homebrew/add_power_pack.py` sets that limit and links the Power Pack to
   every Imperialis Militia Infantry Character, hidden unless the Detachment has the Kinfolk Helots Provenance.
   Running it again changes nothing.
 - `python3 homebrew/apply_core_faq.py` applies the Liber FAQ, Errata and Balance Changes for the Core Rulebook

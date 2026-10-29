@@ -5,7 +5,7 @@ usage: python3 homebrew/add_power_pack.py
 
 The Power Pack and its weapons are shared entries of the game system (added by add_gst_weapons.py from the Power
 Pack Weapons section of additional-weapons.md). This script lets a model take up to two different Power Pack
-weapons (each at most once), and links the Power Pack to every Imperialis Militia model with the Infantry Unit
+weapons (each at most once) at their points costs, and links the Power Pack to every Imperialis Militia model with the Infantry Unit
 Type and Character Sub-type, hidden unless its Detachment has the Kinfolk Helots Provenance. Running it again
 changes nothing."""
 import re
@@ -16,9 +16,11 @@ from faq_tools import GST, Ops, make_id  # noqa: E402
 
 POWER_PACK = "e4f0-85a6-7252-4b76"
 KINFOLK_HELOTS = "2bd7-54d3-b0a9-1e44"
-DESC = ("A model with a Power Pack may take up to two different weapons from the following list: Circular Stone Saw, "
-        "Gem Extractor, Kinfolk Arc Welder and Stone Burner. Only a model with both the Infantry Unit Type and the "
-        "Character Sub-type, in a Detachment with the Kinfolk Helots Provenance, may take a Power Pack.")
+COSTS = {"Circular Stone Saw": 5, "Gem Extractor": 10, "Kinfolk Arc Welder": 15, "Stone Burner": 10}
+DESC = ("A model with a Power Pack may take up to two different weapons from the following list: Circular Stone Saw "
+        "(+5 points), Gem Extractor (+10 points), Kinfolk Arc Welder (+15 points) and Stone Burner (+10 points). "
+        "Only a model with both the Infantry Unit Type and the Character Sub-type, in a Detachment with the Kinfolk "
+        "Helots Provenance, may take a Power Pack.")
 MODELS = [
     ("IM - Force Commander", "1) Force Commander"),
     ("IM - Medicae Detachment", "Militia Medicae w/ Autopistol"),
@@ -47,6 +49,9 @@ def main():
 
         def one_each(m):
             link = m.group(0)
+            name = re.search(r'name="([^"]+)"', link).group(1)
+            link = re.sub(r'(<cost [^>]*value=")[^"]*(")', lambda c: c.group(1) + str(COSTS[name]) + c.group(2),
+                          link, count=1)
             if "<constraints>" in link:
                 return link
             ind = m.group(1)

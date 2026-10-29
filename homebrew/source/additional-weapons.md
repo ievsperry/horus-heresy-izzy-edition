@@ -316,7 +316,7 @@ A model that upgrades a Chainsword to a Falax Blade replaces the Chainsword with
 
 _Mining and engineering tools of the Militia work gangs and their abhuman kin, run off a Power Pack._
 
-A Power Pack costs 0 points and may be taken by an Imperialis Militia model with the Infantry Unit Type and the Character Sub-type in a Detachment with the Kinfolk Helots Provenance. A model with a Power Pack may take up to two different weapons from the list below.
+A Power Pack costs 0 points and may be taken by an Imperialis Militia model with the Infantry Unit Type and the Character Sub-type in a Detachment with the Kinfolk Helots Provenance. A model with a Power Pack may take up to two different weapons from the list below: Circular Stone Saw (+5 points), Gem Extractor (+10 points), Kinfolk Arc Welder (+15 points), Stone Burner (+10 points).
 
 | Weapon | Range | Str | AP | Type |
 |---|---|---|---|---|

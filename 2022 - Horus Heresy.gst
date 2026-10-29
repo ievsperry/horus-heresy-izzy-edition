@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="224" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="225" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -12425,7 +12425,7 @@ In addition, a model receives no benefit from the Hammer of Wrath (X) Special Ru
       <profiles>
         <profile id="c49b-2f15-e08f-2851" name="Power Pack" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a Power Pack may take up to two different weapons from the following list: Circular Stone Saw, Gem Extractor, Kinfolk Arc Welder and Stone Burner. Only a model with both the Infantry Unit Type and the Character Sub-type, in a Detachment with the Kinfolk Helots Provenance, may take a Power Pack.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a Power Pack may take up to two different weapons from the following list: Circular Stone Saw (+5 points), Gem Extractor (+10 points), Kinfolk Arc Welder (+15 points) and Stone Burner (+10 points). Only a model with both the Infantry Unit Type and the Character Sub-type, in a Detachment with the Kinfolk Helots Provenance, may take a Power Pack.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -12448,7 +12448,7 @@ In addition, a model receives no benefit from the Hammer of Wrath (X) Special Ru
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ad8-5665-14d3-1511" includeChildSelections="false"/>
               </constraints>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink id="af70-ca3b-e81a-a023" name="Kinfolk Arc Welder" hidden="false" collective="false" import="true" targetId="07c6-191e-1022-f6f0" type="selectionEntry">
@@ -12456,7 +12456,7 @@ In addition, a model receives no benefit from the Hammer of Wrath (X) Special Ru
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51d5-5994-1179-de04" includeChildSelections="false"/>
               </constraints>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink id="d0ae-cf14-122d-270a" name="Stone Burner" hidden="false" collective="false" import="true" targetId="c769-0d69-3285-abe9" type="selectionEntry">
