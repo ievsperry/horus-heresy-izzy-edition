@@ -6,8 +6,9 @@ usage: python3 homebrew/add_power_pack.py
 The Power Pack and its weapons are shared entries of the game system (added by add_gst_weapons.py from the Power
 Pack Weapons section of additional-weapons.md). This script lets a model take up to two different Power Pack
 weapons (each at most once) at their points costs, and links the Power Pack to every Imperialis Militia model with the Infantry Unit
-Type and Character Sub-type, hidden unless its Detachment has the Kinfolk Helots Provenance. Running it again
-changes nothing."""
+Type and Character Sub-type, hidden unless its Detachment has the Kinfolk Helots Provenance. Ogryn squads may not
+be taken in a Detachment with Kinfolk Helots, so the Ogryn Brute Squad is hidden there and limited to none (its
+Ogryn Boss takes no Power Pack). Running it again changes nothing."""
 import re
 import sys
 
@@ -30,7 +31,6 @@ MODELS = [
     ("IM - Levy Squad", "Levy Sergeant"),
     ("IM - Grenadier Squad", "1) Grenadier Sergeant"),
     ("IM - Reconnaissance Squad", "Scout Sergeant"),
-    ("IM - Ogryn Brute Squad", "Ogryn Boss"),
     ("IM - Rogue Psyker", "Rogue Psyker"),
 ]
 
@@ -91,6 +91,38 @@ def main():
                  f'{ind}</entryLink>')
             o.F.insert_child(p, sp, "entryLinks", [x], f"{unit} > {model}: + Power Pack")
         o.run(f"{unit} > {model}", go)
+
+    def no_ogryns():
+        p = o.F.file("Imperialis Militia")
+        s = o.F.text[p]
+        nl = o.F.nl(p)
+        for m in reversed(list(re.finditer(r'\n([ \t]*)<entryLink id="([^"]+)" name="IM - Ogryn Brute Squad" [^>]*>', s))):
+            ind, lid = m.group(1), m.group(2)
+            end = s.index("</entryLink>", m.end())
+            b = s[m.end():end]
+            cid = make_id("kinfolk no ogryns", lid)
+            if cid in b:
+                continue
+            cond = (f'{ind}      <conditions>{nl}{ind}        <condition field="selections" scope="force" value="1" '
+                    f'percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" '
+                    f'childId="{KINFOLK_HELOTS}" type="atLeast"/>{nl}{ind}      </conditions>{nl}')
+            mods = (f'{ind}    <modifier type="set" field="hidden" value="true">{nl}{cond}{ind}    </modifier>{nl}'
+                    f'{ind}    <modifier type="set" field="{cid}" value="0">{nl}{cond}{ind}    </modifier>{nl}')
+            con = (f'{ind}    <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" '
+                   f'includeChildSelections="false" includeChildForces="false" id="{cid}" type="max"/>{nl}')
+            if "</modifiers>" in b:
+                k = b.index(f"{ind}  </modifiers>")
+                b = b[:k] + mods + b[k:]
+            else:
+                b = f"{nl}{ind}  <modifiers>{nl}{mods}{ind}  </modifiers>{nl}" + b.lstrip("\r\n")
+            if "<constraints>" in b:
+                k = b.index(f"{ind}  </constraints>")
+                b = b[:k] + con + b[k:]
+            else:
+                k = b.index(f"{ind}  <categoryLinks>")
+                b = b[:k] + f"{ind}  <constraints>{nl}{con}{ind}  </constraints>{nl}" + b[k:]
+            o.F.replace(p, m.end(), end, b, "IM - Ogryn Brute Squad: none with Kinfolk Helots")
+    o.run("no ogryns", no_ogryns)
     o.report()
 
 

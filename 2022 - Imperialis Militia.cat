@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="54" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="55" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -196,6 +196,21 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="0769-58d8-b5e6-2c8d" name="IM - Ogryn Brute Squad" hidden="false" collective="false" import="false" targetId="e6d5-9f6a-b62b-c477" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="a4e8-3e3f-cfd7-b6ba" value="0">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4e8-3e3f-cfd7-b6ba" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="7ab3-6772-b87b-a387" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="125f-a3a7-f2c3-1e96" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
@@ -336,7 +351,20 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="068a-b3a6-e331-af78" value="0">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="068a-b3a6-e331-af78" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="c1c5-2d1b-7e6e-51ac" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="16ea-3da4-2540-9d42" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
@@ -9609,20 +9637,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="50ff-e6fc-a8cb-bc5c" name="Power Pack" hidden="true" collective="false" import="true" targetId="e4f0-85a6-7252-4b76" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbad-b14a-baca-7a78" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
           </costs>
