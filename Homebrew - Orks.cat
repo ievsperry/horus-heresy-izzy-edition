@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="37" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="38" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -417,6 +417,7 @@ A Detachment that contains at least one model with the Da Biggest is Da Best spe
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="f84c-1b57-13b6-1c96" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="6d87-06e8-9ef4-ffe6" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="6cc3-496a-6e59-e1a3" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="4026-3402-57ae-30da" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="f160-c711-57c0-513a" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="96c3-bbf8-296f-c6ab" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="13f1-a28a-af4f-0551" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -439,6 +440,7 @@ A Detachment that contains at least one model with the Da Biggest is Da Best spe
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="f84c-1b57-13b6-1c96" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="6d87-06e8-9ef4-ffe6" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="6cc3-496a-6e59-e1a3" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="4026-3402-57ae-30da" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="f160-c711-57c0-513a" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="96c3-bbf8-296f-c6ab" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="13f1-a28a-af4f-0551" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -643,6 +645,13 @@ The effect lasts until the end of the turn.</description>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="c43b-5118-bc1c-6b66" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="88c6-4be4-45d7-c0fd" primary="false" name="Compulsory HQ:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="907a-9cd2-86c6-f494" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Da Twinz" hidden="false" id="52d3-4934-817b-db14" type="selectionEntry" targetId="4026-3402-57ae-30da">
+      <categoryLinks>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" id="cee9-d0bc-d45b-7d96" primary="true" name="HQ:" />
+        <categoryLink targetId="f823-8c1d-6a87-26a1" id="69b9-031b-1318-fde5" primary="false" name="Compulsory HQ:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="cb5d-0ad7-a98b-8b65" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Kaptin Badrukk" hidden="false" id="eea7-edbb-f90d-ba74" type="selectionEntry" targetId="f160-c711-57c0-513a">
@@ -6699,6 +6708,381 @@ The effect lasts until the end of the turn.</description>
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="90" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Da Twinz" hidden="false" id="4026-3402-57ae-30da" publicationId="96d0-c462-d158-fbad">
+      <rules>
+        <rule name="Note" id="c9f5-18d8-9d52-6f86" hidden="false">
+          <description>Professa Gorkell is a surprisingly articulate Painboss who wears half a pair of human spectacles on his nose. He believes he is executing a grand, calculated vision to build the ultimate Cybork army. Boss Morkhyde is pure, unchecked Ork id. He is completely non-verbal except for roars, covered in crude iron plates, and treats the operating table like a scrap heap, violently welding whatever junk is nearby directly to the patient.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="0a58-3a36-3dbb-0443" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bigga iz Betta" id="52ca-e990-4923-c5fe" hidden="false" targetId="150c-ba53-b501-3917" type="rule" />
+        <infoLink name="Blessin' ah Brutal" id="9ce3-3365-552b-b66d" hidden="false" targetId="23f7-9085-a1ce-d014" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Blessin' ah Brutal (Boss Morkhyde only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Blessin' ah Kunnin'" id="3f71-f7ef-7fd1-ecc0" hidden="false" targetId="bd16-bfeb-199b-3955" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Blessin' ah Kunnin' (Professa Gorkell only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="2ff5-aab8-0671-3f60" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (3)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Counter-Attack (X)" id="64e2-cc3d-47f6-c39e" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Counter-Attack (1) (Boss Morkhyde only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Da Biggest is Da Best" id="7c09-6258-022c-4227" hidden="false" targetId="ebb2-7a37-35c8-2c7f" type="rule" />
+        <infoLink name="'Ere We Go!" id="7630-43b3-4a87-13bb" hidden="false" targetId="fe04-50c9-c0ad-8fb5" type="rule" />
+        <infoLink name="Hammer of Wrath (X)" id="5af9-1d7a-01ee-cd32" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (1) (Boss Morkhyde only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="It Will Not Die (X)" id="3c4e-2ad5-0a21-6e19" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="It Will Not Die (6+) (Boss Morkhyde only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Klan (X)" id="893f-8983-e904-e5eb" hidden="false" targetId="a734-620c-db79-3594" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Klan (Bad Moons) (Professa Gorkell only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Klan (X)" id="89d7-27c3-6ab1-768c" hidden="false" targetId="a734-620c-db79-3594" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Klan (Snakebites) (Boss Morkhyde only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Mek-Smasha (X)" id="1f3f-cba5-a76b-9508" hidden="false" targetId="6989-913d-92e6-2a8b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Mek-Smasha (5+) (Professa Gorkell only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Might iz Right!" id="4913-291d-de30-f22a" hidden="false" targetId="ebd9-925c-cabf-9b62" type="rule" />
+        <infoLink name="Mob Rule" id="ec55-6574-2125-abaf" hidden="false" targetId="9986-6062-e065-6f8a" type="rule" />
+        <infoLink name="Oddboy" id="9b6e-96f2-bff4-8d77" hidden="false" targetId="487b-f932-39ab-f602" type="rule" />
+        <infoLink name="One Mind; Two Mobs" id="5685-b4f7-d348-28dc" hidden="false" targetId="f48f-4a3a-6d4c-5699" type="rule" />
+        <infoLink name="Rage (X)" id="8e19-4a08-538c-a97a" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rage (2) (Boss Morkhyde only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Rampage (X)" id="92fa-09bc-5e5d-5a6a" hidden="false" targetId="3efb-2a2c-2d0b-92fc" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rampage (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Sudden Strike (X)" id="0098-4b69-fec6-741e" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Sudden Strike (1) (Boss Morkhyde only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Waaagh!" id="91a6-0fa0-9790-1477" hidden="false" targetId="01d0-45ce-18b3-5564" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="dfee-3b6e-2407-b12a" primary="false" name="Unit:" />
+        <categoryLink targetId="5422-252b-9f8f-d46b" id="a3a8-badf-a755-21cf" primary="false" name="Da Biggest is Da Best" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Boss Morkhyde" hidden="false" id="92d6-9f89-1b1c-5fe5" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3849-190c-4195-8ff5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83fb-c5d0-f56a-3e28" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Boss Morkhyde" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="0e1c-a2ba-10c9-0fb0" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Independent Character, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">5</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="90b6-9f1b-5191-66d7" primary="false" name="Infantry Unit Type" />
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="0dcf-b2c3-fa99-ae2b" primary="false" name="Independent Character" />
+            <categoryLink targetId="aa94-5c65-d1f1-46a4" id="b926-8871-c30a-5ec4" primary="false" name="Unique Sub-type" />
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Big choppa" hidden="false" id="9445-fde5-2940-1272" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64d4-29f6-8369-2550" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c668-d7fc-a20d-06e7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Da Armour" hidden="false" id="66f9-c98c-4855-d5e2" type="selectionEntry" targetId="ff87-f2ad-bb74-ba22">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b39-f632-1743-5a5f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7eca-8d65-0f82-449b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Dok's Tools" hidden="false" id="1c55-1922-c2a1-fe06" type="selectionEntry" targetId="bf21-85ba-b63a-bf2c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f7d-f4f2-d2c5-d048" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b819-8bc1-29ec-8752" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power klaw" hidden="false" id="5f49-1cfb-c9b9-ef07" type="selectionEntry" targetId="0ecd-3c66-1dd0-3426">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09fe-7c0b-d957-367b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1b3-6465-5de6-6937" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Slugga" hidden="false" id="b4df-3887-c273-7983" type="selectionEntry" targetId="63e5-3ea4-aa90-6a1e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f22f-c564-4cc3-6334" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ff6-d71e-9278-c556" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="92b6-0722-8239-9f36" type="selectionEntry" targetId="b763-1097-3232-7b0d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42ed-1e52-cd74-92b7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8384-d97e-41a0-cc3d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="'Urty syringe" hidden="false" id="2a98-c4f3-207c-373a" type="selectionEntry" targetId="9b2a-5cab-e889-da13">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ffa-d91a-8ce9-ac1d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a352-9c58-b131-ff52" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="8d6d-2d79-0821-a588" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="a9de-8154-4796-84e5" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="a9de-8154-4796-84e5" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="669a-ae9c-8123-7219" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="a9de-8154-4796-84e5" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5150-f28c-375b-ad54" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="a9de-8154-4796-84e5" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="ccb3-b830-f9f4-48b5" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9de-8154-4796-84e5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="cc9e-4364-b839-ee7e" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="92d6-9f89-1b1c-5fe5" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="555c-0736-b894-5a77" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="92d6-9f89-1b1c-5fe5" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="9919-34fd-23fd-99b1" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="92d6-9f89-1b1c-5fe5" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="555c-0736-b894-5a77" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9919-34fd-23fd-99b1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Grot Orderly" hidden="false" id="9c52-43db-c340-3ad0" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6a43-49d9-bc02-80e8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="71f2-6b92-1e88-0997" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Grot Orderly" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="c175-ba4a-545e-a41f" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">2</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">2</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">6+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="bf26-275c-2dd0-ce9b" primary="false" name="Infantry Unit Type" />
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Grot stabba" hidden="false" id="f7aa-2def-932c-93c8" type="selectionEntry" targetId="a672-29e6-7845-0208">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7428-bf6e-3085-9e0b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4feb-977d-df29-c271" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Professa Gorkell" hidden="false" id="b79d-e05d-d6a0-ec16" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22fe-0151-6e97-69d8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="324d-f7be-d3fd-4b96" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Professa Gorkell" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="d8e3-9010-97a2-65ae" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Independent Character, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="e93b-54ef-4509-e1ce" primary="false" name="Infantry Unit Type" />
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="68c4-47a8-f340-d6bf" primary="false" name="Independent Character" />
+            <categoryLink targetId="aa94-5c65-d1f1-46a4" id="185d-7732-484f-7a31" primary="false" name="Unique Sub-type" />
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Big choppa" hidden="false" id="8bd2-997e-abb3-4cff" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e587-0afa-cd23-db0b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83fb-6f73-be88-8b04" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Da Armour" hidden="false" id="d98e-98ce-9531-8302" type="selectionEntry" targetId="ff87-f2ad-bb74-ba22">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0841-d942-f330-57a7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d314-40e7-d307-19b0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Dok's Tools" hidden="false" id="3d10-b360-c20a-ebd2" type="selectionEntry" targetId="bf21-85ba-b63a-bf2c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e7b-4de7-ff5c-b2bb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f78f-1759-e0dd-7524" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power klaw" hidden="false" id="014a-cbfa-ed9d-4ac4" type="selectionEntry" targetId="0ecd-3c66-1dd0-3426">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f53-b6dc-9e92-c3de" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fafe-9346-4a9e-10d6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Slugga" hidden="false" id="f0b4-9db9-9dbb-f9ff" type="selectionEntry" targetId="63e5-3ea4-aa90-6a1e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3218-40e9-8ec3-a379" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bc0-8c0e-de2b-9fcf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="5376-0dd5-0650-8a1c" type="selectionEntry" targetId="b763-1097-3232-7b0d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a99d-2598-7725-e3f3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba5e-6123-ade2-41fb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="'Urty syringe" hidden="false" id="8013-199e-6583-8a24" type="selectionEntry" targetId="9b2a-5cab-e889-da13">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69db-03ba-d4e1-3183" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f24-f6c7-ffae-5a7e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="a3aa-94a7-9e95-eac8" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="d710-0e10-8f84-7d5f" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9620-3dd7-98b0-db67" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="d710-0e10-8f84-7d5f" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="669a-ae9c-8123-7219" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="d710-0e10-8f84-7d5f" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5150-f28c-375b-ad54" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="d710-0e10-8f84-7d5f" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="ccb3-b830-f9f4-48b5" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d710-0e10-8f84-7d5f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="8034-7da1-f3a3-05f3" type="selectionEntryGroup" targetId="28b2-da56-af1f-f4c8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="b79d-e05d-d6a0-ec16" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e2e5-0faa-282b-ce34" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="b79d-e05d-d6a0-ec16" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="db93-a58c-46ba-a377" value="2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="b79d-e05d-d6a0-ec16" childId="31da-a322-2edb-e599" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e2e5-0faa-282b-ce34" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db93-a58c-46ba-a377" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups />
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="340" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kaptin Badrukk" hidden="false" id="f160-c711-57c0-513a" publicationId="96d0-c462-d158-fbad">
@@ -18078,6 +18462,12 @@ The effect lasts until the end of the turn.</description>
     <rule name="Bigga iz Betta" id="150c-ba53-b501-3917" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>Models with the Bulky (X) special rule that join a unit add X to the total number of models in the unit for the purposes of determining Mob Rule bonuses. In addition, Cavalry models count as four models each for the purposes of determining Mob Rule bonuses.</description>
     </rule>
+    <rule name="Blessin' ah Brutal" id="23f7-9085-a1ce-d014" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Gork, who is brutal but kunnin', favours the Orks who smash the hardest. A model with this special rule has a 5+ Invulnerable Save and Furious Charge (+1).</description>
+    </rule>
+    <rule name="Blessin' ah Kunnin'" id="bd16-bfeb-199b-3955" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Mork, who is kunnin' but brutal, favours the Orks who think one step ahead of the krumpin'. A model with this special rule has a 5+ Invulnerable Save and Counter-Attack (+1).</description>
+    </rule>
     <rule name="Breakin' Heads" id="740a-e433-bb54-c49d" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>If a unit with Mob Rule that includes a Nob, Boss Nob or Ork character fails a Morale check or Pinning test, it may choose to pass it instead. If it does, the unit suffers D3 automatic hits at Strength 6, AP –, allocated by the Ork player to models other than characters; armour saves may be taken.</description>
     </rule>
@@ -18154,6 +18544,9 @@ Da Biggest is Da Best is treated as equivalent to Master of the Legion for the p
     </rule>
     <rule name="Oil Runts" id="25c9-098f-a1c7-3184" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>Oil Runts are filthy little mechanics and lubricant carriers that swarm over weapons, armour plates and damaged machinery attempting crude battlefield repairs while avoiding being stepped on by their larger kin. Once per battle, at the start of the controlling player's turn, a model accompanied by one or more Oil Runts may immediately regain a single lost Wound or Hull Point. After the repair has been resolved, remove one Oil Runt from play.</description>
+    </rule>
+    <rule name="One Mind; Two Mobs" id="f48f-4a3a-6d4c-5699" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Professa Gorkell and Boss Morkhyde are bought together as one HQ choice but are deployed as two separate units. Each keeps the Klan (X) shown on its datasheet.</description>
     </rule>
     <rule name="Open-topped" id="792a-d019-9e41-d7f8" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>The vehicle gains the Assault Vehicle special rule, but adds 1 to its rolls on the Vehicle Damage table when it suffers a penetrating hit. The entire vehicle counts as its Access Point.</description>
