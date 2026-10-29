@@ -1036,12 +1036,38 @@ class Builder:
             keep.append(row)
         ds["options"] = keep
 
+    def split_models(self, unit):
+        """A model entry taken several times is one selection with a count, so every model would share
+        one pick: each Exarch becomes its own entry ("Exarch", "Exarch 2", ...) to choose its own Shrine."""
+        holder = unit.find("selectionEntries")
+        for me in list(holder.findall("selectionEntry[@type='model']")):
+            cons = {c.get("type"): c for c in me.findall("constraints/constraint") if c.get("field") == "selections"}
+            if "max" not in cons or int(float(cons["max"].get("value"))) < 2:
+                continue
+            count = int(float(cons["max"].get("value")))
+            cons["max"].set("value", "1")
+            at = list(holder).index(me)
+            for i in range(2, count + 1):
+                copy = deepcopy(me)
+                ids = {e.get("id"): make_id(e.get("id"), str(i)) for e in copy.iter() if e.get("id")}
+                for e in copy.iter():
+                    for k, v in e.attrib.items():
+                        if v in ids:
+                            e.set(k, ids[v])
+                copy.set("name", f"{me.get('name')} {i}")
+                for c in copy.findall("constraints/constraint"):
+                    if c.get("type") == "min" and c.get("field") == "selections":
+                        c.set("value", "0")
+                holder.insert(at + i - 1, copy)
+
     def attach_aspect_shrines(self):
         for ds in self.datasheets:
             if not ds.get("shrines") or not self.shrines:
                 continue
             unit = self.shared_entries.find(f"selectionEntry[@id='{self.units[ds['name']]}']")
             exarch = "exarch" in norm(ds["name"])
+            if exarch:
+                self.split_models(unit)
             for me in unit.findall("selectionEntries/selectionEntry[@type='model']"):
                 mid = me.get("id")
                 gkey = make_id(mid, "aspect shrine")

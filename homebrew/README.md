@@ -164,6 +164,8 @@ loading. The script prints anything in the doc it could not place.
   Armour" swaps the armour and save, "gains ... at no cost" adds the items, and its option table becomes the
   shrine's weapon swaps. A Skyrunner Jetbike sets Move 18 and makes the model Cavalry (Antigrav). "May be
   selected by up to N Exarchs in a Detachment" limits that shrine per detachment for Exarchs only.
+  In an Exarch unit, a model taken more than once is split into one entry per model ("Exarch",
+  "Exarch 2", ...), so each Exarch picks its own shrine and that shrine's weapon options.
 - "## Grand Performances" is only shown when the detachment has a Saedath (Rillietann) unit, and is then
   required.
 - "If the army includes any Phoenix Lord models, one of them must be the Warlord" (on a "### X (type)")
