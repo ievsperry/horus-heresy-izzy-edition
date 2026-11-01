@@ -482,6 +482,32 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     the Earthshaker Gun Carriage's Anvilus or Manticore, and up to two more Malcador Heavy Tanks (+160 each).
   The Mining Colony and Knight World options and the rest of each Provenance's effects are rule text only. It
   refuses to run on a catalogue that already has the expansion.
+- `python3 homebrew/add_mechanicum.py` adds the Liber Ingenium expansion (the Claude Doc "Liber Mechanicum", kept as
+  `source/mechanicum.md`) after its rules and the Crawler, Servitor and Skitarii Sub-types are in
+  `additional-special-rules.md` and the game system. It writes:
+  - 44 new units into `2022 - Mechanicum.cat`, and the Questoris Knight Moirax Talon (Troops), Knight Dominus and
+    Knight Maeliviax (Lords of War) into `2022 - Questoris Household.cat`, with Traitor or Loyalist units shown only
+    in that army, Primarchs in the Primarch slot, and the 0-1 Cydonian Sisterhood Clade and 0-3 Questoris Knight
+    Moirax Talon per Detachment;
+  - the Orders of Lesser Techno-Arcana: one is required on each Magos Prime and Magos Prime on Abeyant (the Abeyant
+    only Lachrimallion, Macroteknia or Ruinor), and each Order is allowed once per army;
+  - the Skitariiax-Primus Order on the official Archmagos Prime (not on Abeyant), as an alternative to the official
+    Higher Orders;
+  - the Legiones Skitarii Warlord Traits on Skitarii characters, shown once the character is the Warlord, and Kelbor-Hal's
+    and the doc's fixed Warlord Traits;
+  - the doc's Additional Options tables on the official units, in `2022 - Mechanicum.cat` and, for Knights, Titans
+    and the Thanatar, in `2022 - Mech Library.cat`. Exchanges join the official pick that holds the weapon they
+    replace. A weapon the unit always has (the Armigers' Phaeton Autocannons, Reaper Chainblade and Thermal Lance)
+    becomes the default of a new pick of its own. Other options go in a "Liber Ingenium options" pick. Weapons the
+    doc defines, or that an official catalogue holds inline, are copied in. The Tech-Priest Auxilia also gain the
+    Porphetian Armoured Carrier (eight models or fewer) and the Skorpius Dunerider as Dedicated Transports. The
+    Knight Questoris's Arm Mounted Dual Vulcanis Blades take the battle cannon's arm, and the Reaper Chainsword's arm
+    pick is then emptied and hidden;
+  - the "1. Questoris Crusader Host Force Organisation Chart" in the game system: 1-10 Lords of War, up to two Troops
+    per Lord of War, no 25% limit category.
+  Rule text only: the Arcuitor's Hunter Killer swap, the Mechadendrite Hive's "if it does not take" limits, the
+  Crusader Host's Questoris-only and Primary-only limits and the Skitariiax-Protectorate's Compulsory Troops
+  limit. It refuses to run on a catalogue that already has the expansion.
 - `python3 homebrew/build_dark_compliance.py` builds `Homebrew - Armies of Dark Compliance.cat`, the doc's Army of
   Dark Compliance: a Primary Detachment on the Crusade chart from both the Imperialis Militia and Legiones Astartes
   lists. It links both lists rather than copying them, and its own root entries are: "Army of Dark Compliance" (the

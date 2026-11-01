@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="230" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="231" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -2544,6 +2544,38 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="c2e7-a23b-9550-671a"/>
       </constraints>
+    </forceEntry>
+    <forceEntry id="c1a5-7e2b-4d0f-9a61" name="1. Questoris Crusader Host Force Organisation Chart" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="c154-2269-6caa-4699" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="aad3-9167-5dd1-aa52" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0b26-1fc1-6130-854f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9c58-b625-7e42-b242" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="001f-c81a-e3ee-6044" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="75d6-e17b-27ce-6c0d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="10" field="selections" scope="force" shared="true" id="d53e-0435-2c2a-f01e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="93a1-c012-c22c-5d57" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="false">
+          <modifiers>
+            <modifier type="increment" field="637c-26b9-1280-6f87" value="2">
+              <repeats>
+                <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c658-dc6b-727b-c488" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="637c-26b9-1280-6f87" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ec72-2d18-fe14-bc40" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
@@ -20362,6 +20394,114 @@ If the Toughness Test is failed, the target unit's Initiative Characteristic is 
     </rule>
     <rule id="640a-b320-41c3-0571" name="The Warmaster's Due" hidden="false">
       <description>When a model with this Special Rule would get a Cover Save from intervening models that include Militia from the same Detachment, it may take +1 to that Cover Save (maximum 4+). If it does, once all saves are made, the intervening Militia unit closest to the firer along the line of fire suffers D3+1 Wounds with no saves or Damage Mitigation of any kind, allocated as if the enemy had shot it, to Militia models first. The bonus cannot be used against weapons that do not roll To Hit. A model with this rule may not join a unit with Expendable models, and Expendable models may not join a unit with this rule.</description>
+    </rule>
+    <rule id="6bc1-fc36-1a7c-9a1e" name="Archaeotechnological Marvel" hidden="false">
+      <description>You may only include one of these models in your army, in games of 2,000 points or more where the detachment also includes an Archmagos Prime. If the Archmagos Prime has the Reductor High Order of Techno-Arcana, you may include two instead of one.</description>
+    </rule>
+    <rule id="b47d-2890-c223-a46e" name="Auxiliary Gunners" hidden="false">
+      <description>A weapon with this special rule may fire at a different target from the model's other weapons at no penalty.</description>
+    </rule>
+    <rule id="e71f-03da-077d-bb39" name="Command Node" hidden="false">
+      <description>A friendly unit with the Skitarii Sub-type wholly within 12" of a model with this special rule may use its unmodified Leadership for any Morale or Pinning tests.</description>
+    </rule>
+    <rule id="ba67-c4f6-4017-fc99" name="Command Protocols (X)" hidden="false">
+      <description>This rule always has a qualifier in brackets:
+- **Kill-Clade:** this model, and any unit it has joined, may re-roll the dice when rolling Charge distance. If a model with this special rule is your Warlord, all Sicarian Kill-Clades in the same Detachment gain the Line Sub-type for as long as the Warlord has not been removed as a casualty.
+- **Skitarius:** once per game, at the start of the controlling player's Shooting phase, nominate one unit with the Skitarii Sub-type within 12" of this model. That unit may re-roll To Hit rolls of 1 during that Shooting phase.</description>
+    </rule>
+    <rule id="3302-c5e2-eab6-9532" name="Crawler Sub-type" hidden="false">
+      <description>- May fire Heavy and Ordnance weapons and count as Stationary even if it moved in the preceding Movement phase.
+- Is never slowed by Difficult Terrain and automatically passes Dangerous Terrain tests.</description>
+    </rule>
+    <rule id="f0a7-68a6-8d43-7b76" name="Cybernetica Data-Web" hidden="false">
+      <description>A model with this special rule may ignore the Programmed Behaviour restrictions of the Cybernetica Sub-type while a friendly model equipped with a cortex controller is within 24". It may always make Reactions, ignoring the Automata Sub-type's restrictions on Reactions, and it can never be affected by Cybertheurgy from any source, friendly or enemy.</description>
+    </rule>
+    <rule id="4de4-6a01-2686-9594" name="Datasphere Uplink" hidden="false">
+      <description>During deployment, if your army includes any models with this special rule, select one of the Protocols below. At the start of any Game Turn you may activate it; it lasts until the start of the next Game Turn, and all models in your army with this special rule gain its effect.
+- **Predatory Engrams:** +1 Attacks and +1 Initiative.
+- **Scrapcoded Exultation:** Shrouded (6+).
+- **Self-Repair Programming:** models that have lost a Wound or Hull Point but remain in play regain 1 Wound or 1 Hull Point, up to their starting value.
+- **Targeting Cryptogram:** +1 Ballistic Skill.</description>
+    </rule>
+    <rule id="ad60-2bd1-eef9-2e04" name="Defensor-Grid Projector" hidden="false">
+      <description>Friendly units wholly within 6" of a model with this special rule are protected by its Void Shields. While it has Void Shields remaining, Shooting Attacks against protected units strike the Void Shields instead. If an attack collapses the last Void Shield, the rest of it strikes the originally targeted unit.</description>
+    </rule>
+    <rule id="5469-415b-810f-4334" name="Fabricatus-Primus" hidden="false">
+      <description>Kelbor-Hal has the Artificia Machina, Artificia Cybernetica and Ephemera Incursus Cybertheurgic Arcana, with all their Rites and weapons, plus the unique Cybertheurgic weapon Exiguo Maelifica. He also has Bonds of Vassalage and Master Technomancer (*Liber Mechanicum*, page 98).</description>
+    </rule>
+    <rule id="6cf7-5d99-a4c5-fe18" name="High Techno-arcana: Noospherica" hidden="false">
+      <description>Friendly models with the Cybernetica or Servitor Sub-type within 6" of Koriel Zeth gain +1 to their To Hit rolls. At the start of the controlling player's Game Turn, select one friendly unit with the Cybernetica Sub-type wholly within 12" of her: until the start of that player's next Game Turn, it may ignore any Unit Type or Sub-type restrictions on making Reactions.</description>
+    </rule>
+    <rule id="1ae8-1f9b-1a70-1051" name="High Techno-arcana: Technoarchaeologica" hidden="false">
+      <description>If Arkhan Land is holding an objective marker at the start of the controlling player's turn, he may investigate it. If he does, he may not move or charge that turn but may shoot as normal. At the end of the turn, if he is within 3" of the objective marker, the controlling player gains 1 Victory Point.</description>
+    </rule>
+    <rule id="19a1-b64a-a062-5082" name="Hovercraft" hidden="false">
+      <description>A model with this special rule ignores all penalties for moving over Difficult and Dangerous Terrain. However, if it starts or ends its move in Difficult or Dangerous Terrain, it must take a Dangerous Terrain test.</description>
+    </rule>
+    <rule id="44ba-e86a-0d98-e756" name="Marksman Teams" hidden="false">
+      <description>At the start of the controlling player's Shooting phase, a unit containing models with this special rule that did not move in the preceding Movement phase may focus its fire. If it does, those models add +1 to their To Hit rolls for Shooting Attacks, but may not use any variant of Firing Protocols (X) in that Shooting phase. The effect ends at the end of the Shooting phase.</description>
+    </rule>
+    <rule id="6029-cdae-9860-977f" name="Master Cybertheurgist: Domina Ignis" hidden="false">
+      <description>Koriel Zeth has all the Rites and weapons of the Artificia Machina and Ephemera Incursus arcanas.</description>
+    </rule>
+    <rule id="c802-28fd-a2a0-abb0" name="Master Cybertheurgist: Magister Machinis" hidden="false">
+      <description>Arkhan Land has all the Rites and weapons of the Artificia Machina and Artificia Cybernetica arcanas.</description>
+    </rule>
+    <rule id="2212-55da-e804-1406" name="Methodical Advance" hidden="false">
+      <description>A model with this special rule may never make Sweeping Advances.</description>
+    </rule>
+    <rule id="5500-0fb9-f656-a937" name="Modular" hidden="false">
+      <description>Some options for a model with this special rule cost both points and Module Slots. Its wargear list shows how many Module Slots it has, and it may not buy upgrades needing more Module Slots than it has.</description>
+    </rule>
+    <rule id="6449-b88c-bcec-0519" name="Neurostatic Aura" hidden="false">
+      <description>An enemy unit locked in combat with a model with this special rule subtracts 1 from its Weapon Skill and Initiative. This is not cumulative: a model suffers the penalty only once, however many models with this rule it is engaged with.</description>
+    </rule>
+    <rule id="9ec6-b43b-2119-af6b" name="Null-Rounds" hidden="false">
+      <description>Successful Invulnerable Saves against Wounds caused by a weapon with this special rule must be re-rolled.</description>
+    </rule>
+    <rule id="dc9d-bb00-3f98-6c3b" name="Overseer Transport" hidden="false">
+      <description>Any model with the Mechanicum Faction allegiance and the Independent Character Sub-type may buy this model as a Dedicated Transport and embark on it before the game. Another unit may join it, counting as though the character had joined that unit, as long as it fits in the Transport Capacity and the character could join it.</description>
+    </rule>
+    <rule id="b92f-5ba5-e245-c529" name="Praetorian Retinue" hidden="false">
+      <description>A Praetorian Servitor Maniple may only be included as a Retinue Squad, in a Detachment that includes a model with the Independent Character Sub-type and the Feudal Hierarchy or Command Node special rule. That model must be the Retinue Squad's Leader: it deploys with the Maniple and may not voluntarily leave it during play. A Maniple taken this way does not use a Force Organisation slot and counts as part of the same unit as its Leader.</description>
+    </rule>
+    <rule id="7885-4ea3-f29f-9ebb" name="Prey-Snare (X)" hidden="false">
+      <description>If a weapon with this special rule hits but does not remove the target model, both players roll a D6 and add Strength: the firer uses the weapon's Strength, and the target uses its unmodified Strength, or its highest Armour Value if it has no Strength. Re-roll ties. If the target loses, place it in base contact with the firing model by the shortest route; it counts as having been charged by the firing model in the following Assault phase. If the target wins, it breaks free. Buildings and Zooming Flyers are never affected. If a model is pulled out of coherency, its unit must move back into coherency with it as soon as it can, and the whole unit counts as locked in combat. If fired as an Overwatch Reaction and a model is snared, the rest of its unit may still charge, as a Disordered Charge with the snared model as the initial model. The qualifier limits what can be snared:
+- **Majoris:** only affects a model whose starting Hull Points or Wounds are no more than double the firing model's.
+- **Maxima:** may only target Vehicles or models with 8 or more Wounds, and has no effect on a model whose starting Hull Points or Wounds are more than double the firing model's.
+- **Minoris:** cannot affect units with the Knight, Titan or Gargantuan Unit Type or Sub-type.</description>
+    </rule>
+    <rule id="5392-c81f-bedf-9e97" name="Prototype Construct" hidden="false">
+      <description>A model with this special rule must take a Dangerous Terrain test whenever it Runs, but counts its Initiative as 2 higher for movement made by Running or as part of a Reaction.</description>
+    </rule>
+    <rule id="1516-6cbb-af15-9260" name="Rad-Saturation" hidden="false">
+      <description>An enemy unit locked in combat with one or more models with this special rule subtracts 1 from its Toughness, to a minimum of 1. This does not stack with rad grenades or Rad-Phage, but does affect Instant Death thresholds. In addition, attacks targeting a unit with this special rule have their Strength reduced by 1.</description>
+    </rule>
+    <rule id="b3c4-8b19-eab6-91f2" name="Repulsor Grid" hidden="false">
+      <description>Each time a model with this special rule passes an Invulnerable Save on a roll of 6, the unit that fired immediately suffers a hit with the profile of the weapon that fired. Weapons that do not roll To Hit cannot activate it.</description>
+    </rule>
+    <rule id="495d-b0ca-8188-f09e" name="Sepketar Maniple" hidden="false">
+      <description>When deployed, at the start of the battle or arriving from Reserves, all models in the unit must be placed in unit coherency. Afterwards they operate independently and are not a single unit; each counts as its own unit for Victory Points, Units Destroyed and similar rules.</description>
+    </rule>
+    <rule id="92be-675a-797c-bdf7" name="Servitor Sub-type" hidden="false">
+      <description>- Successful Wounds from attacks with Poisoned or Fleshbane must be re-rolled against this model.
+- Has Fearless.
+- May fire all of its weapons in each Shooting Attack, including as part of a Reaction.
+- May not use the Withdraw, Evade or Hold the Line Reactions.
+- May fire Heavy weapons and count as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal whatever Shooting Attacks it made that turn.</description>
+    </rule>
+    <rule id="92de-76e6-4fff-843b" name="Skitarii Sub-type" hidden="false">
+      <description>- Infantry have Feel No Pain (6+), unless they have a better version from another source.
+- Vehicles have It Will Not Die (6+), unless they have a better version from another source.
+- May re-roll Feel No Pain rolls against weapons with Poisoned (X) or Rad-Phage.
+- Has Datasphere Uplink.
+- A Detachment may not include more models with this Sub-type than without it, unless its Compulsory HQ choice has the Skitarii Sub-type.</description>
+    </rule>
+    <rule id="ce43-d1e8-f538-1fe0" name="Thermal Riders" hidden="false">
+      <description>At the start of the controlling player's Movement phase, a unit with this special rule that is not locked in combat may be placed back into Reserves. If it is, it may make a Deep Strike Assault as normal in your next player turn.</description>
+    </rule>
+    <rule id="698b-60a7-9b04-4d5c" name="Zenith Protocol" hidden="false">
+      <description>While the Praetorian Retinue's Leader is alive, all Praetorian Servitors in the Maniple gain +1 Weapon Skill and +1 Ballistic Skill.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
