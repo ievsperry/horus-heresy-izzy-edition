@@ -480,5 +480,15 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     Grenadier Hot-Shot weapons, Reconnaissance Shroud Bombs, the Arvus Transport's hull weapon and Twin-Linked,
     Cavalry Militia Lances and Lascarbines, Sentinel weapons and extras, the four new War Beasts for the Beastmasters,
     the Earthshaker Gun Carriage's Anvilus or Manticore, and up to two more Malcador Heavy Tanks (+160 each).
-  Armies of Dark Compliance, the Mining Colony and Knight World options, and the rest of each Provenance's effects
-  are rule text only. It refuses to run on a catalogue that already has the expansion.
+  The Mining Colony and Knight World options and the rest of each Provenance's effects are rule text only. It
+  refuses to run on a catalogue that already has the expansion.
+- `python3 homebrew/build_dark_compliance.py` builds `Homebrew - Armies of Dark Compliance.cat`, the doc's Army of
+  Dark Compliance: a Primary Detachment on the Crusade chart from both the Imperialis Militia and Legiones Astartes
+  lists. It links both lists rather than copying them, and its own root entries are: "Army of Dark Compliance" (the
+  Allegiance-slot faction choice, holding the Imperialis Militia faction entry and one Legion, with the Detachment's
+  rules and The Warmaster's Due; an error in a Loyalist army or outside a Crusade chart); every Imperialis Militia
+  root entry, Militia units without an Independent Character able to take Expendable (losing the Line Sub-type) and
+  no Militia unit able to hold the Warlord; and the Legiones Astartes units every Legion's catalogue has (no
+  Primarchs, Legion-specific units or Rites of War), each with The Warmaster's Due. The unit-count limit, the
+  Allied Detachment limit and the Legiones Hereticus ban are rule text. Run it again after the Militia or Legion
+  lists change; each run raises its revision by one.
