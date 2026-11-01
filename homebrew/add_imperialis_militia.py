@@ -64,8 +64,8 @@ def short(name):
 
 
 def doc_text():
-    """The doc, with the wording the Builder reads: the official 'Laspistol or Autopistol' choice is one weapon (the
-    two share a profile), the Militia Cavalry Mount is an official special rule, not wargear, and the Militia Jet Pack
+    """The doc, with the wording the Builder reads: 'Laspistol or Autopistol' (and 'Lasgun or Autorifle') is read as
+    the las weapon, and auto_weapons() gives the auto one back beside it; the Militia Cavalry Mount is an official special rule, not wargear, and the Militia Jet Pack
     is defined as the official one is (the official catalogue has it only inside its units)."""
     text = open(DOC, encoding="utf-8").read()
     text = text.replace("Laspistol or Autopistol", "Laspistol").replace("Lasgun or Autorifle", "Lasgun")
@@ -727,7 +727,61 @@ def special_cases(b, root, entries):
     add_rule(me, "Manticore Missile Launcher", "A Manticore Missile Launcher carries four missiles and may fire only "
              "one of them in each Shooting Attack.", me.get("id"))
     tidy(b, root, entries)
+    auto_weapons(b, entries)
     return missiles
+
+
+AUTO = {"Laspistol": "Autopistol", "Lasgun": "Autorifle"}
+
+
+def auto_weapons(b, entries):
+    """'Laspistol or Autopistol', 'Lasgun or Autorifle': two different weapons. Wherever a unit the doc gives that
+    choice has the las weapon, it gets the auto one beside it: in every pick that offers the las weapon, at the same
+    cost, and as a pick of the two where a model simply carries it."""
+    doc = open(DOC, encoding="utf-8").read()
+    for ds in b.datasheets:
+        i = doc.index(f"### {ds['name']} ")
+        j = doc.find("\n### ", i + 4)
+        text = doc[i:j if j > 0 else None]
+        pairs = {las: auto for las, auto in AUTO.items() if f"{las} or {auto}" in text}
+        if not pairs:
+            continue
+        u = entries[b.units[ds["name"]]]
+        for g in list(u.iter("selectionEntryGroup")):
+            links = g.find("entryLinks")
+            if links is None:
+                continue
+            for las, auto in pairs.items():
+                l = next((x for x in links if x.get("name") == las), None)
+                if l is None or any(x.get("name") == auto for x in links):
+                    continue
+                c = deep(l)
+                c.set("name", auto)
+                c.set("targetId", any_entry(auto))
+                for x in c.iter():
+                    if x.get("id"):
+                        x.set("id", mid(x.get("id"), auto))
+                for x in c.iter():
+                    if x.get("field") and x.get("field") != "hidden" and not x.get("field").startswith("d2ee"):
+                        x.set("field", mid(x.get("field"), auto))
+                links.insert(list(links).index(l) + 1, c)
+        for m in [x for x in u.iter("selectionEntry") if x.get("type") == "model"]:
+            links = m.find("entryLinks")
+            if links is None:
+                continue
+            for las, auto in pairs.items():
+                l = next((x for x in links if x.get("name") == las), None)
+                if l is None:
+                    continue
+                links.remove(l)
+                key = mid(m.get("id"), las, auto)
+                g = el(child(m, "selectionEntryGroups"), "selectionEntryGroup", name=f"{las} or {auto}", hidden=False,
+                       id=key, defaultSelectionEntryId=mid(key, las))
+                add_constraint(g, "min", 1, mid(key, "min"))
+                add_constraint(g, "max", 1, mid(key, "max"))
+                gl = el(g, "entryLinks")
+                gl.append(link_el(las, l.get("targetId"), key, mx=1))
+                gl.append(link_el(auto, any_entry(auto), key, mx=1))
 
 
 def one_more_per_five(unit, model_id):

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="56" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="57" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -13385,6 +13385,11 @@ A unit that includes at least one model with a Militia Standard gains the Line S
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fd5-dde2-4cac-7195" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Autopistol" hidden="false" id="f382-4ab9-d091-7cfb" type="selectionEntry" targetId="6ae1-a373-ee8e-79e5">
+                  <constraints>
+                    <constraint type="max" value="1" field="6510-5809-023b-3e39" scope="parent" shared="true" id="c895-f0e8-cb3a-0459" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Blast Pistol" hidden="false" id="0ae8-7147-09a9-8189" type="selectionEntry" targetId="2460-375d-31f4-4bdf">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d653-c388-04c3-92d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -13519,6 +13524,11 @@ A unit that includes at least one model with a Militia Standard gains the Line S
                 <entryLink import="true" name="Laspistol" hidden="false" id="c506-68cf-be82-ab24" type="selectionEntry" targetId="654d-be88-b0a8-7ae5">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d17-90a9-2ae7-5c13" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Autopistol" hidden="false" id="4c20-84f2-8221-6359" type="selectionEntry" targetId="6ae1-a373-ee8e-79e5">
+                  <constraints>
+                    <constraint type="max" value="1" field="6510-5809-023b-3e39" scope="parent" shared="true" id="4b53-4b33-f141-0c0a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Blast Pistol" hidden="false" id="965f-4f33-fb44-4c00" type="selectionEntry" targetId="2460-375d-31f4-4bdf">
@@ -13844,18 +13854,30 @@ A unit that includes at least one model with a Militia Standard gains the Line S
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Laspistol or Autopistol" hidden="false" id="49d5-365f-5966-2fd0" defaultSelectionEntryId="bab8-199c-27fc-c6f6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4bd-250e-845e-57b0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f71-5849-98c0-5c0b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="bab8-199c-27fc-c6f6" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0367-2049-9585-0f3e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="ca15-e1b2-1485-582f" name="Autopistol" hidden="false" collective="false" import="true" targetId="6ae1-a373-ee8e-79e5" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9731-9671-6439-8094" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Force Staff" hidden="false" id="3789-b967-b42f-9b76" type="selectionEntry" targetId="5132-9034-5e79-13c8">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2ea-01ef-81d4-5a87" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba27-169d-9845-a850" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Laspistol" hidden="false" id="1c75-eb36-95af-96ef" type="selectionEntry" targetId="654d-be88-b0a8-7ae5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="49e5-755c-2a23-277f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2d6-4b9b-4202-93be" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="5d46-ce93-da78-efb4" type="selectionEntry" targetId="0176-56a3-d590-b103">
@@ -14008,6 +14030,29 @@ A unit that includes at least one model with a Militia Standard gains the Line S
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c70c-3f7e-5217-3287" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Autorifle" hidden="false" id="edb9-5ed7-709e-86f0" type="selectionEntry" targetId="57dd-dff6-d173-3bf1">
+                  <constraints>
+                    <constraint type="max" value="1" field="9e09-e7b9-cebe-f73a" scope="parent" shared="true" id="17bb-6c18-18e1-8e5e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Laspistol or Autopistol" hidden="false" id="f7dd-a6aa-d1f4-f8f9" defaultSelectionEntryId="357f-19eb-e792-b040">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6dd9-82ac-417b-600a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7578-bbf8-9c3e-0539" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="357f-19eb-e792-b040" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a624-6a41-8f1a-a7bb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="070b-00d3-13d5-6aa4" name="Autopistol" hidden="false" collective="false" import="true" targetId="6ae1-a373-ee8e-79e5" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38d2-f919-b191-5880" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -14028,12 +14073,6 @@ A unit that includes at least one model with a Militia Standard gains the Line S
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75a2-214a-1ca6-2583" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f880-d184-91f1-2620" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Laspistol" hidden="false" id="ad74-caa0-523a-b60b" type="selectionEntry" targetId="654d-be88-b0a8-7ae5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c4c-29d4-9015-9fa3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7694-8a97-0379-cc38" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -14086,6 +14125,11 @@ A unit that includes at least one model with a Militia Standard gains the Line S
                 <entryLink import="true" name="Laspistol" hidden="false" id="0313-3599-1c52-f036" type="selectionEntry" targetId="654d-be88-b0a8-7ae5">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e867-dcf4-48cf-76d4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Autopistol" hidden="false" id="e82d-c023-f9bb-fba5" type="selectionEntry" targetId="6ae1-a373-ee8e-79e5">
+                  <constraints>
+                    <constraint type="max" value="1" field="6510-5809-023b-3e39" scope="parent" shared="true" id="0857-1522-2dbe-5fef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Blast Pistol" hidden="false" id="5bcb-d70c-fb03-2501" type="selectionEntry" targetId="2460-375d-31f4-4bdf">
@@ -14199,6 +14243,24 @@ A unit that includes at least one model with a Militia Standard gains the Line S
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Lasgun or Autorifle" hidden="false" id="9c77-4627-9572-dadb" defaultSelectionEntryId="9f7b-c6ab-7f01-18ad">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d28-01f4-26ca-225d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1882-8471-6a26-5a6f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="9f7b-c6ab-7f01-18ad" name="Lasgun" hidden="false" collective="false" import="true" targetId="376e-c5d6-99c3-49c9" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3718-8547-8e73-d7d9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="3bb5-2f10-6ef1-738d" name="Autorifle" hidden="false" collective="false" import="true" targetId="57dd-dff6-d173-3bf1" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="752d-5459-a1ef-ec6a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Frag Grenades" hidden="false" id="a3b3-07fb-b2e3-bed9" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
@@ -14211,12 +14273,6 @@ A unit that includes at least one model with a Militia Standard gains the Line S
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7956-7e14-42a7-2ef8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e83-3117-97df-287f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Lasgun" hidden="false" id="be9d-0c8f-9fbf-dc1a" type="selectionEntry" targetId="376e-c5d6-99c3-49c9">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26dc-5249-dace-3a8b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1839-af50-5d02-56cb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="828c-8e9e-c664-c076" type="selectionEntry" targetId="0176-56a3-d590-b103">
@@ -14964,6 +15020,11 @@ A unit that includes at least one model with a Militia Standard gains the Line S
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d196-2ebc-5495-c60b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Autopistol" hidden="false" id="c24a-ca74-465e-7459" type="selectionEntry" targetId="6ae1-a373-ee8e-79e5">
+                  <constraints>
+                    <constraint type="max" value="1" field="6510-5809-023b-3e39" scope="parent" shared="true" id="dc67-7837-515e-9a13" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Blast Pistol" hidden="false" id="9f5a-d1e6-7ea3-3a01" type="selectionEntry" targetId="2460-375d-31f4-4bdf">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88dc-a150-644b-91a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -15116,6 +15177,11 @@ A unit that includes at least one model with a Militia Standard gains the Line S
                 <entryLink import="true" name="Laspistol" hidden="false" id="d5ac-9532-383f-5a6f" type="selectionEntry" targetId="654d-be88-b0a8-7ae5">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70e5-4689-6034-33e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Autopistol" hidden="false" id="2647-ecb5-03bb-5684" type="selectionEntry" targetId="6ae1-a373-ee8e-79e5">
+                  <constraints>
+                    <constraint type="max" value="1" field="6510-5809-023b-3e39" scope="parent" shared="true" id="69aa-055f-f737-7816" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Blast Pistol" hidden="false" id="4bec-589e-63f1-2183" type="selectionEntry" targetId="2460-375d-31f4-4bdf">
@@ -16163,6 +16229,14 @@ A unit that includes at least one model with a Militia Standard gains the Line S
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Autopistol" hidden="false" id="1591-0251-a29f-2fdc" type="selectionEntry" targetId="6ae1-a373-ee8e-79e5">
+                  <constraints>
+                    <constraint type="max" value="1" field="6510-5809-023b-3e39" scope="parent" shared="true" id="5907-9659-5593-00ff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
                 <entryLink import="true" name="Stubcarbines" hidden="false" id="fe4c-0372-fbc0-0810" type="selectionEntry" targetId="a7cc-88cb-c6e8-6d4c">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5477-7894-7131-d4c6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -16403,6 +16477,21 @@ A unit that includes at least one model with a Militia Standard gains the Line S
               </modifiers>
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b51a-85c9-8795-1892" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Autopistol" hidden="false" id="0004-cf4c-4118-268b" type="selectionEntry" targetId="6ae1-a373-ee8e-79e5">
+              <modifiers>
+                <modifier type="increment" field="da98-c44b-d4db-1232" value="1">
+                  <repeats>
+                    <repeat field="6510-5809-023b-3e39" scope="5970-864e-fcf3-b3f3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e936-a5ac-2a2e-5151" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="6510-5809-023b-3e39" scope="parent" shared="true" id="da98-c44b-d4db-1232" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
@@ -19380,6 +19469,24 @@ A unit that includes at least one model with a Militia Standard gains the Line S
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Laspistol or Autopistol" hidden="false" id="974c-f20f-87c0-0262" defaultSelectionEntryId="624b-c11f-375a-e276">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9e0-0668-3759-eff1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab16-05d4-2c90-15c3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="624b-c11f-375a-e276" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="082e-753e-2a66-6718" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="4f23-2332-50ff-8fe8" name="Autopistol" hidden="false" collective="false" import="true" targetId="6ae1-a373-ee8e-79e5" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a838-8b75-bb4b-70ad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Close Combat Weapon" hidden="false" id="94d2-9bdc-f0eb-1a96" type="selectionEntry" targetId="3d50-2f85-06ff-6aee">
@@ -19392,12 +19499,6 @@ A unit that includes at least one model with a Militia Standard gains the Line S
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d30-1922-d20f-2f35" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b45-0e36-e926-a316" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Laspistol" hidden="false" id="809c-0996-c999-ad73" type="selectionEntry" targetId="654d-be88-b0a8-7ae5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4baf-76b8-7ab5-485c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cabb-7d05-74f0-9178" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -19519,6 +19620,11 @@ A unit that includes at least one model with a Militia Standard gains the Line S
                 <entryLink import="true" name="Laspistol" hidden="false" id="4323-dce8-1989-8cc0" type="selectionEntry" targetId="654d-be88-b0a8-7ae5">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c042-b0f7-7135-f8af" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Autopistol" hidden="false" id="53ea-3f2b-93f5-5154" type="selectionEntry" targetId="6ae1-a373-ee8e-79e5">
+                  <constraints>
+                    <constraint type="max" value="1" field="6510-5809-023b-3e39" scope="parent" shared="true" id="b2fb-5e3b-526f-58ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Blast Pistol" hidden="false" id="c3e5-7f56-4236-0795" type="selectionEntry" targetId="2460-375d-31f4-4bdf">

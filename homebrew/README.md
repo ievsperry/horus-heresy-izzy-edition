@@ -456,7 +456,8 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   `2022 - Imperialis Militia.cat`, after The Warmaster's Due is in `additional-special-rules.md` and the game
   system (the doc's other rules were already there). Its 44 units take the official catalogue's names ("IM -
   Astropath"). Before building, it rewords what the Builder cannot read: "Laspistol or Autopistol" and "Lasgun or
-  Autorifle" become the Laspistol and Lasgun (they share a profile), the Militia Cavalry Mount becomes the official
+  Autorifle" are read as the las weapon and the auto weapon is then given back beside it (in every pick offering the
+  las weapon, at its cost, or as a pick of the two), the Militia Cavalry Mount becomes the official
   rule it is, the Militia Jet Pack is defined from the official profile, the Ogryn Beastmasters' Great War Beasts
   join its datasheet, and the models bought as options get their kit. It also writes:
   - up to three Great War Beasts per Ogryn Handler in any mix, the Manticore's four missiles, the Mounted Command
