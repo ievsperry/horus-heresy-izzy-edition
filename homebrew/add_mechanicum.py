@@ -728,7 +728,11 @@ def plan_options(rows, files, doc_entries, notes, special=None):
     return ops
 
 
-def special_rows():
+DUAL_BLADES = ("Knight Questoris", "Exchange an Arm Mounted Reaper Chainsword and Arm Mounted Rapid Fire Battle "
+               "Cannon for Arm Mounted Dual Vulcanis Blades")
+
+
+def special_rows(doc_entries=()):
     """Rows that are not a weapon or wargear pick."""
     def transports(u):
         g = next(x for x in u.iter(C + "selectionEntryGroup") if x.get("name") == "Dedicated Transport")
@@ -747,7 +751,28 @@ def special_rows():
         add_cost(l, 10)
         return [("LIBER", "entryLinks", [l])]
 
+    def dual_blades(u):
+        """'Exchange an Arm Mounted Reaper Chainsword and Arm Mounted Rapid Fire Battle Cannon for Arm Mounted Dual
+        Vulcanis Blades': the blades take the battle cannon's arm, and the chainsword's arm pick then holds nothing."""
+        groups = list(u.iter(C + "selectionEntryGroup"))
+        cannon = next(g for g in groups if "Rapid-Fire Battle Cannon" in g.get("name"))
+        sword = next(g for g in groups if "Reaper Chainsword" in g.get("name"))
+        name = "Arm Mounted Dual Vulcanis Blades"
+        e = option_element(name, name, [LIBRARY, et.GST], doc_entries, mid(u.get("id"), "li option", DUAL_BLADES[1]),
+                           15, None, None, f"{DUAL_BLADES[1]} (+15 points).")
+        mods = []
+        for c in sword.findall(C + "constraints/" + C + "constraint"):
+            m = E("modifier", type="set", field=c.get("id"), value=0)
+            cond(m, "atLeast", 1, e.get("id"), scope=u.get("id"))
+            mods.append(m)
+        m = E("modifier", type="set", field="hidden", value="true")
+        cond(m, "atLeast", 1, e.get("id"), scope=u.get("id"))
+        mods.append(m)
+        return [(cannon.get("id"), "selectionEntries" if e.tag == "selectionEntry" else "entryLinks", [e]),
+                (sword.get("id"), "modifiers", mods)]
+
     return {
+        DUAL_BLADES: dual_blades,
         ("Tech-Priest Auxilia", next(o for u, o, c in option_rows("#### Additional Options for Existing Elites Units")
                                      if u == "Tech-Priest Auxilia")): transports,
         ("Ordo Reductor Minotaur Battery", "Any Minotaur may take one Pintle Mounted Combi-Weapon (any type)"): combi,
@@ -844,7 +869,7 @@ def main():
     for path, heads in OPTION_TABLES.items():
         et.configure(path, LIBS, DOC, "", "liber ingenium options")
         rows = [r for h in heads for r in option_rows(h)]
-        apply_ops(plan_options(rows, [path, LIBRARY], doc_entries, notes, special_rows()))
+        apply_ops(plan_options(rows, [path, LIBRARY], doc_entries, notes, special_rows(doc_entries)))
     for n in notes:
         print("  note:", n)
 
@@ -854,6 +879,7 @@ def main():
     for path in (MECH, QUESTORIS, LIBRARY):
         t = Text(path)
         t.s = t.s.replace("\\*", "*")  # the doc's escaped asterisks ("Gravitic Implosion\*")
+        t.s = re.sub(r"<description>\*[^*<]+\* ", "<description>", t.s)  # a doc rule's flavour line
         t.save()
 
 

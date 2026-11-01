@@ -500,7 +500,9 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     replace. A weapon the unit always has (the Armigers' Phaeton Autocannons, Reaper Chainblade and Thermal Lance)
     becomes the default of a new pick of its own. Other options go in a "Liber Ingenium options" pick. Weapons the
     doc defines, or that an official catalogue holds inline, are copied in. The Tech-Priest Auxilia also gain the
-    Porphetian Armoured Carrier (eight models or fewer) and the Skorpius Dunerider as Dedicated Transports;
+    Porphetian Armoured Carrier (eight models or fewer) and the Skorpius Dunerider as Dedicated Transports. The
+    Knight Questoris's Arm Mounted Dual Vulcanis Blades take the battle cannon's arm, and the Reaper Chainsword's arm
+    pick is then emptied and hidden;
   - the "1. Questoris Crusader Host Force Organisation Chart" in the game system: 1-10 Lords of War, up to two Troops
     per Lord of War, no 25% limit category.
   Rule text only: the Arcuitor's Hunter Killer swap, the Mechadendrite Hive's "if it does not take" limits, the

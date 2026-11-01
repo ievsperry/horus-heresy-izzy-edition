@@ -46,6 +46,8 @@ These rules work alongside the special rules in *Liber Mechanicum* and the Horus
 
 **Gravitic Implosion.** *This weapon's strikes are strong enough to pulp flesh and grind armour to paste.* Instead of rolling To Wound, a non-Vehicle model hit by this weapon must roll under its Strength on 2D6 or suffer a Wound; a double 6 always fails. Armour Saves and Damage Mitigation rolls may be taken as normal, except Shrouded. Against targets with an Armour Value, roll 4D6 for armour penetration. If the weapon also has the Blast type, leave the Blast marker in place after resolving all Wounds, or otherwise mark the area: it counts as Difficult and Dangerous Terrain until the start of the attacking player's next turn.
 
+**Greuso Protocol.** *The Mechanicum Knight Moirax is kept at the heel of valuable automata and constructs as their guardian, running ahead to identify and neutralise threats; its programmed behaviours keep it within range of its ward.* A unit that includes one or more models with this special rule may make use of the Greuso Protocol Advanced Reaction. Advanced Reaction: Greuso Protocol – This Advanced Reaction may be made whenever an enemy unit declares a Charge targeting a friendly unit with the Automata Unit Type or Knight Unit Sub-type which is within 12" of another friendly unit that includes at least one model with the Greuso Protocol special rule and is not itself locked in combat. The unit with the Greuso Protocol special rule may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. A unit that makes a Shooting Attack as part of a Greuso Protocol Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapons or special rules that otherwise ignore line of sight, and Vehicles may only fire Defensive Weapons. Template weapons used as part of a Greuso Protocol Reaction use the Wall of Death rule instead of firing normally. The unit targeted by the Greuso Protocol Reaction may not take Cover Saves against Wounds inflicted as part of that Reaction.
+
 **High Techno-arcana: Noospherica.** *Koriel Zeth only. The Noosphere, newly pioneered, let its masters render their will in pure data.* Friendly models with the Cybernetica or Servitor Sub-type within 6" of Koriel Zeth gain +1 to their To Hit rolls. At the start of the controlling player's Game Turn, select one friendly unit with the Cybernetica Sub-type wholly within 12" of her: until the start of that player's next Game Turn, it may ignore any Unit Type or Sub-type restrictions on making Reactions.
 
 **High Techno-arcana: Technoarchaeologica.** *Arkhan Land only. Magi who recover lost technologies are held in both mistrust and awe.* If Arkhan Land is holding an objective marker at the start of the controlling player's turn, he may investigate it. If he does, he may not move or charge that turn but may shoot as normal. At the end of the turn, if he is within 3" of the objective marker, the controlling player gains 1 Victory Point.
@@ -84,6 +86,8 @@ These rules work alongside the special rules in *Liber Mechanicum* and the Horus
 - **Maxima:** may only target Vehicles or models with 8 or more Wounds, and has no effect on a model whose starting Hull Points or Wounds are more than double the firing model's.
 - **Minoris:** cannot affect units with the Knight, Titan or Gargantuan Unit Type or Sub-type.
 
+**Pride of Place.** A model with the Pride of Place special rule cannot embark onto or be transported by any Transport vehicle.
+
 **Prototype Construct.** *Built on imperfect prototype technology, these engines can flare, jolt, explode or shut down for good.* A model with this special rule must take a Dangerous Terrain test whenever it Runs, but counts its Initiative as 2 higher for movement made by Running or as part of a Reaction.
 
 **Rad-Saturation.** *Bathed in radiation, these Skitarii trust the Omnissiah to protect them.* An enemy unit locked in combat with one or more models with this special rule subtracts 1 from its Toughness, to a minimum of 1. This does not stack with rad grenades or Rad-Phage, but does affect Instant Death thresholds. In addition, attacks targeting a unit with this special rule have their Strength reduced by 1.
@@ -95,6 +99,8 @@ These rules work alongside the special rules in *Liber Mechanicum* and the Horus
 **Shieldbreaker.** *A warp-skip drive in these munitions lets them pierce shielding.* Invulnerable Saves may not be taken against Wounds or Hull Point damage from a weapon with this special rule. It also ignores Void Shields (X) and flare shields.
 
 **Sonic Pulse.** *Like the sonic destructors of the Ordinatus Ulator, this pulse shakes even the strongest armour apart.* Place the Blast (3") marker touching the firing weapon's barrel. Instead of scattering it, move it in a straight line away from the firing model, within the weapon's 45° forward arc, until it reaches maximum range or leaves the battlefield. Every model it passes over suffers one automatic hit. Flyers cannot be hit. Against Knights, Titans, Super-heavy Vehicles, Buildings and Fortifications, the hit's Strength becomes 8.
+
+**Surveillance Protocols.** A model with the Surveillance Protocols special rule and the Cybernetica Unit Sub-type may ignore the Programmed Behaviour provision described as part of that Sub-type during the Charge sub-phase.
 
 **Tank Desant.** *Troops ride on this vehicle's armoured hull, guarding it as they go.* A model embarked on a model with this special rule may fire its ranged weapons as though it were not embarked, measuring range from the Transport's hull.
 
@@ -2171,7 +2177,7 @@ These options can be used with Games Workshop's official datasheets, at the cost
 | **An Oppressor Siege Tank may exchange its Turret Mounted Baneblade Cannon and Co-axial Mounted Autocannon for one of the following options:** |  |
 | – Hull (Front) Mounted Hellhammer Cannon | +25 points |
 | – Hull (Front) Mounted Magma Cannon\* | +50 points |
-| – Hull (Front) Mounted Quake Cannon | +25 points |
+| – Hull (Front) Mounted Mori Quake Cannon | +25 points |
 | – Hull (Front) Mounted Tremor Cannon\* | +50 points |
 | – Hull (Front) Mounted Volcano Cannon | +25 points |
 | – Hull (Front) Mounted Vulcan Mega-Bolter\* | +50 points |
@@ -2802,6 +2808,8 @@ These items work alongside the wargear in *Liber Mechanicum*.
 
 **Teleportation Transponders.** The unit counts as having Deep Strike.
 
+**Utan Jump Booster.** *Similar in purpose to a jump pack, the Utan jump booster burns a toxic propellant for extra lift; deadly to any other user, it is made for automata like the Arlatax, which suffer nothing from its foul clouds.* A unit composed entirely of models with Utan jump boosters may set its Move Characteristic to a value of 12 for the duration of the controlling player's turn. This allows the unit to move up to 12", regardless of the Movement Characteristic shown on its profile and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge distance). In addition, the unit ignores terrain while Moving and Charging. A unit that ends or begins its movement or a Charge in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Utan jump boosters, and treats all Difficult Terrain as Dangerous Terrain.
+
 ## Rules Checklist
 
 These rules appear on datasheets but are not defined in Liber Ingenium. Most are core rulebook or *Liber Mechanicum* rules; the ones marked as open questions could not be confirmed.
@@ -2809,11 +2817,11 @@ These rules appear on datasheets but are not defined in Liber Ingenium. Most are
 | Rule or item | Used by | Where it is defined |
 | --- | --- | --- |
 | Galvanic Traction Drive, Paragon of Metal, Battlesmith (X), Firing Protocols (X), Feudal Hierarchy, Patris Cybernetica | Several units | *Liber Mechanicum* |
-| Greuso Protocol, Moirax Talon | Questoris Knight Moirax Talon | Open question: not found in Liber Ingenium |
-| Pride of Place | Magos Prime on Abeyant, Kelbor-Hal | Open question: not found in Liber Ingenium |
-| Surveillance Protocols | Herax Battle-Automata Maniple | Open question: not found in Liber Ingenium |
+| Greuso Protocol, Moirax Talon | Questoris Knight Moirax Talon | Greuso Protocol: Mechanicum Special Rules, above; Moirax Talon: *Liber Mechanicum* (Armiger and Moirax Talons) |
+| Pride of Place | Magos Prime on Abeyant, Kelbor-Hal | Mechanicum Special Rules, above |
+| Surveillance Protocols | Herax Battle-Automata Maniple | Mechanicum Special Rules, above |
 | Thanatar Maniple | Thanatar-Cynis Siege-Automata Maniple | Open question: likely *Liber Mechanicum* (Thanatar) |
-| Utan Jump Booster | 0-1 Arcuitor Magisterium option | Open question: not found in Liber Ingenium |
+| Utan Jump Booster | 0-1 Arcuitor Magisterium option | Mechanicum Wargear, above |
 | Warlord: Ever-Vigilant, The Logic of Victory, The Science of Slaughter | Arkhan Land, Koriel Zeth, Remiare | *Liber Mechanicum*, pages 15–16 |
 
 **Source notes**

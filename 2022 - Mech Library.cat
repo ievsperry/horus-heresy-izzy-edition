@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="61" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="62" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -3670,6 +3670,23 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="50b4-a35e-137d-20a8" name="May exchange its Arm Mounted Reaper Chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="0696-eba7-6d52-40ce">
+          <modifiers>
+            <modifier type="set" field="d5b3-9991-171e-6f89" value="0">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="3706-a84c-678d-b1c6" childId="7bb7-15f3-8072-a723" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="5c78-ad94-6633-d88f" value="0">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="3706-a84c-678d-b1c6" childId="7bb7-15f3-8072-a723" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="3706-a84c-678d-b1c6" childId="7bb7-15f3-8072-a723" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5b3-9991-171e-6f89" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c78-ad94-6633-d88f" type="max"/>
@@ -3756,9 +3773,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb15-c258-5d87-50ea" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="39f1-3c77-cc93-eee7" name="Arm Mounted Dual Vulcanis Blades" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7bb7-15f3-8072-a723" name="Arm Mounted Dual Vulcanis Blades" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile name="Dual Vulcanis Blades" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f80d-f956-0a5e-f47d">
+                <profile name="Dual Vulcanis Blades" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="b682-22c5-2d64-77dd">
                   <characteristics>
                     <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                     <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3768,8 +3785,8 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Paired Weapons" id="0bcb-179c-32bf-f14c" hidden="false" targetId="a504-0299-ebbf-9763" type="rule"/>
-                <infoLink name="Deflagrate" id="23a0-3914-fb06-ee8e" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+                <infoLink name="Paired Weapons" id="8586-baa0-92a2-8ccb" hidden="false" targetId="a504-0299-ebbf-9763" type="rule"/>
+                <infoLink name="Deflagrate" id="deb4-b895-59e1-e983" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
