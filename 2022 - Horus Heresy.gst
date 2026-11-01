@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="227" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="230" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -16285,7 +16285,10 @@ Until Fulgrim Transfigured is placed on the battlefield in this manner, all mode
           </constraints>
           <rules>
             <rule id="e36c-1974-5c74-ccc6" name="Legacy of the Great Crusade" publicationId="48c2-d023-0069-001a" page="9" hidden="false">
-              <description>All Imperialis Militia Grenadier Squad, Imperialis Militia Command Cadres, and units that contain a Discipline Master or Mounted Discipline Master in a Detachment with this Provenance increase their Ballistic Skill by +1 (to a maximum of 4). A Force Commander in a Detachment with this Provenance increases its Initiative to 5.</description>
+              <description>All Imperialis Militia Grenadier Squad, Imperialis Militia Command Cadres, and units that contain a Discipline Master or Mounted Discipline Master in a Detachment with this Provenance increase their Ballistic Skill by +1 (to a maximum of 4). A Force Commander in a Detachment with this Provenance increases its Initiative to 5.
+
+Liber Imperatus addition
+• Mounted Command Cadres gain +1 BS (maximum 4).</description>
             </rule>
           </rules>
           <costs>
@@ -16391,7 +16394,10 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Cyber-augment o
             <rule id="2b3e-1985-202a-b31f" name="Cyber-augmetics" publicationId="48c2-d023-0069-001a" page="10" hidden="false">
               <description>All eligible units and models gain the Feel No Pain (6+) Special Rule, and any eligible unit may be given the Slow and Purposeful Special Rule at no additional points cost. In addition, any unit which includes a Militia Medicae improves the Feel No Pain (6+) Special Rule provided by their Auto-Medicus to a (5+).
 
-This Provenance may not be chosen in conjunction with the Gene-crafted Provenance and any Detachment with this Provenance is treated as Sworn Brothers by any Detachment with the Mechanicum Faction in the same army.</description>
+This Provenance may not be chosen in conjunction with the Gene-crafted Provenance and any Detachment with this Provenance is treated as Sworn Brothers by any Detachment with the Mechanicum Faction in the same army.
+
+Liber Imperatus addition
+• Enginseer Adepts in Enginseer Auxilia Detachments gain the Line Sub-type and Battle-Automata.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -16456,7 +16462,10 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Tainted Flesh P
             <rule id="99c0-0263-9acc-a659" name="Survivors of the Dark Age" publicationId="48c2-d023-0069-001a" page="10" hidden="false">
               <description>Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres with this Provenance may take either a Legion Rhino Transport, Legion Termite Assault Drill or Legion Land Raider Proteus Carrier as a Dedicated Transport so long as they number 10 models or less. See the Legiones Astartes Crusade Army List for details and points costs, however all such vehicles lose the Legiones Astartes (X) special rule, gain the Third-line Unit Sub-type and reduce their Ballistic Skill to 3.
 
-BS NOTE (This Provenance cannot be taken in conjunction with the Debased Rabble or Tainted Flesh Provenance. See relevant Provenance.)</description>
+BS NOTE (This Provenance cannot be taken in conjunction with the Debased Rabble or Tainted Flesh Provenance. See relevant Provenance.)
+
+Liber Imperatus addition
+• Any Vehicle may exchange a Pintle Mounted Heavy Stubber for a Pintle Mounted Twin-Linked Bolter for free.</description>
             </rule>
             <rule name="Voidjumpers" hidden="false" id="2d04-8f0b-cfb7-cac1" publicationId="91df-ed64-4216-5bab">
               <description>Option – Voidjumpers: All models in an Imperialis Militia Reconnaissance Squad may be upgraded to be Voidjumpers for +20 points per unit. Models upgraded to Voidjumpers have Militia jet packs and must replace their Shotgun with two laspistols or two autopistols. Any Discipline Masters, Militia Medicae and any other models assigned to the squad before deployment (but not models that join the unit by means of the Independent Character special rule) may be given Militia jet packs for no additional cost. A model with a Militia jet pack may not be given any weapon with the Heavy type.</description>
@@ -16477,7 +16486,10 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Debased Rabble 
 
 Option – Relic Arms: Eligible models in Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres may upgrade lasguns to either volkite chargers or assault needlers; may upgrade laspistols to either volkite serpenta or needle pistols; may upgrade sniper rifles to needle vulnus; and heavy stubbers to volkite culverin or needle cannon at a cost of +30 points per unit, regardless of the number of models or types of weapons upgraded in a given unit.
 
-Option – Heirlooms of Past Glory: A Force Commander in a Detachment with this Provenance may exchange a power weapon for a paragon blade for +10 points and/or a laspistol for an archaeotech pistol for a further +10 points.</description>
+Option – Heirlooms of Past Glory: A Force Commander in a Detachment with this Provenance may exchange a power weapon for a paragon blade for +10 points and/or a laspistol for an archaeotech pistol for a further +10 points.
+
+Liber Imperatus addition
+• Carnodon Squadrons may exchange their Turret Mounted Gravis Multi-Laser for a Turret Mounted Volkite Culverin, and their Two Sponson Mounted Heavy Flamers for Two Sponson Mounted Volkite Calivers, for free. Hellhound Squadrons may exchange their Turret Mounted Gravis Heavy Flamer for a Turret Mounted Chem Cannon (+10 points each). Relic Arms: Mounted Command Cadres may upgrade Lasguns to Volkite Chargers or Assault Needlers, Laspistols to Volkite Serpentas or Needle Pistols, Sniper Rifles to Needle Vulnus, and Heavy Stubbers to Volkite Culverins or Needle Cannons, for +30 points per unit.</description>
             </rule>
           </rules>
           <costs>
@@ -16507,6 +16519,16 @@ Option – Chainaxes: Any model eligible to benefit from this Provenance may upg
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="greaterThan"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="eeb4-e0b3-35e7-9063" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="62d4-da9b-3a92-2cbe" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="aa3c-195b-15fd-b874" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eeb4-e0b3-35e7-9063" type="max"/>
@@ -16514,7 +16536,10 @@ Option – Chainaxes: Any model eligible to benefit from this Provenance may upg
           </constraints>
           <rules>
             <rule id="ddaa-0389-1b2e-89ae" name="Kinfolk Helots" publicationId="48c2-d023-0069-001a" page="11" hidden="false">
-              <description>All eligible units and models change their Toughness Characteristic to be one higher than its starting value (a Toughness characteristic of 3 being changed to 4 on their statline, for example), but also change their Initiative and Movement Characteristics to be one lower than its starting value (in the same way as above). All eligible models in a Detachment with this Provenance and the Character Unit Sub-type gain the Battlesmith (6+) special rule, or if they also have the Independent Character special rule gain the Battlesmith (5+) special rule instead. This Provenance may not be chosen in conjunction with the Ogryn Conscripts Provenance.</description>
+              <description>All eligible units and models change their Toughness Characteristic to be one higher than its starting value (a Toughness characteristic of 3 being changed to 4 on their statline, for example), but also change their Initiative and Movement Characteristics to be one lower than its starting value (in the same way as above). All eligible models in a Detachment with this Provenance and the Character Unit Sub-type gain the Battlesmith (6+) special rule, or if they also have the Independent Character special rule gain the Battlesmith (5+) special rule instead. This Provenance may not be chosen in conjunction with the Ogryn Conscripts Provenance.
+
+Liber Imperatus addition
+• Any Infantry Character may take a Power Pack for free. A model with one may take up to two different weapons from: Circular Stone Saw (+5 points), Gem Extractor (+10 points), Kinfolk Arc Welder (+15 points), Stone Burner (+10 points). A Detachment with this Provenance may not include Ogryn Brute Squads.</description>
             </rule>
           </rules>
           <costs>
@@ -16527,6 +16552,15 @@ Option – Chainaxes: Any model eligible to benefit from this Provenance may upg
               <conditions>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="greaterThan"/>
               </conditions>
+            </modifier>
+            <modifier type="set" field="bac1-a170-98c4-6e93" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="62d4-da9b-3a92-2cbe" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -16559,6 +16593,16 @@ Option – Chainaxes: Any model eligible to benefit from this Provenance may upg
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="af84-c2c4-acbe-4612" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="2a2d-8b75-b986-d5e1" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="5408-9c0d-5d6e-4b30" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af84-c2c4-acbe-4612" type="max"/>
@@ -16569,7 +16613,10 @@ Option – Chainaxes: Any model eligible to benefit from this Provenance may upg
               <description>This Provenance may only be selected by an army with the Traitor Allegiance.
 All eligible units and models with this Provenance gain the Crusader and Hatred (Everything) special rules. However, they must always declare a Charge targeting an enemy if they are able. Imperialis Militia Grenadier Squads may not be taken in a Detachment which uses this Provenance and this Provenance may not be used in conjunction with the Survivors of the Dark Age Provenance.
 
-BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stronghold Provenance. See relevant Provenance.)</description>
+BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stronghold Provenance. See relevant Provenance.)
+
+Liber Imperatus addition
+• A Force Commander may exchange a Power Weapon for a Tainted Axe, Tainted Blade or Tainted Maul (+5 points).</description>
             </rule>
           </rules>
           <infoLinks>
@@ -16604,6 +16651,15 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stro
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" field="e492-0f79-662a-b9ca" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="2a2d-8b75-b986-d5e1" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e492-0f79-662a-b9ca" type="max"/>
@@ -16617,7 +16673,10 @@ All eligible units and models receive the Fear (1) and Furious Charge (1) specia
 
 This Provenance cannot be taken in conjunction with the Survivors of the Dark Age, Gene-crafted, Ogryn Conscripts or Alchem-jackers Provenances.
 
-BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stronghold Provenance. See relevant Provenance.)</description>
+BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stronghold Provenance. See relevant Provenance.)
+
+Liber Imperatus addition
+• A Force Commander may exchange a Power Weapon for a Tainted Axe, Tainted Blade or Tainted Maul (+5 points). Ascendant Rogue Psykers may be taken as HQ. The 0-1 limit on Mutated Spawn is removed. Corrupted units, and units with Among the Flock, Militia Medicae Support or Legiones Astartes (X), do not count as Infantry units when working out how many Levy Squads the Detachment must include.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -16650,6 +16709,16 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stro
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" field="e021-4acd-1832-691f" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="62d4-da9b-3a92-2cbe" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="aa3c-195b-15fd-b874" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e021-4acd-1832-691f" type="max"/>
@@ -16659,7 +16728,10 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stro
             <rule id="621a-e558-72e8-9482" name="Ogryn Conscripts" publicationId="48c2-d023-0069-001a" page="12" hidden="false">
               <description>A Detachment with this Provenance may select Imperialis Militia Ogryn Brute Squads as Troops choices, with those selected as Compulsory Troops choices gaining the Line Unit Sub-type. All Discipline Masters, Militia Medicae and Force Commanders selected as part of a Detachment with this Provenance may join Imperialis Militia Ogryn Brute Squads, ignoring the usual restrictions for joining a unit with the Monstrous Unit Sub-type.
 
-BS NOTE (This Provenance cannot be taken in conjunction with the Kinfolk Helots, Abhuman Muster, Tainted Flesh &amp; Industrial Stronghold Provenance. See relevant Provenance.)</description>
+BS NOTE (This Provenance cannot be taken in conjunction with the Kinfolk Helots, Abhuman Muster, Tainted Flesh &amp; Industrial Stronghold Provenance. See relevant Provenance.)
+
+Liber Imperatus addition
+• Ogryn Beastmasters may be taken as Fast Attack. Ogryn Brute Squads gain &quot;It's Dark In Dere!&quot;, and those of no more than 3 models may take a Militia Chimera Transport or a Vehicle with an Auxiliary Crew Bay as a Dedicated Transport. Astropaths, Ascendant Rogue Psykers, Demagogues, Discipline Masters, Force Commanders, Militia Medicae and Rogue Psykers may join Ogryn Brute Squads and Ogryn Beastmasters despite the Monstrous Sub-type.</description>
             </rule>
           </rules>
           <costs>
@@ -16826,6 +16898,212 @@ Liber Mechanicum for details and points costs). All Triaros Armoured Conveyors a
 This Provenance cannot be taken in conjunction with the Survivors of the Dark Age or Clanfolk Levy Provenances.</description>
             </rule>
           </rules>
+        </selectionEntry>
+        <selectionEntry id="4de8-3d63-d537-b626" name="17 Acolytes of the Saviour Emperor" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="d3da-3074-a7ec-99f5" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="2a2d-8b75-b986-d5e1" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d0b6-712f-0b12-a308" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5740-848f-dc82-7c7e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ead7-6860-cefd-ec6f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Acolytes of the Saviour Emperor" id="0a57-6475-44a2-b2d1" hidden="false">
+              <description>• Only an army with the Loyalist Allegiance may take this Provenance.
+• All eligible units are immune to Fear and gain Crusader and Hatred (Corrupted, Daemons).
+• Every Compulsory Troops choice must have a Demagogue or Mounted Demagogue assigned before the game; each unit taken through Strength in Numbers needs its own.
+• Imperialis Militia Discipline Master Cadres may not be taken.
+• Legiones Astartes Detachments of any variant count this Detachment as one Alliance level lower.
+• May not be combined with Mark of the Aeldari.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="62d4-da9b-3a92-2cbe" name="18 Knight World" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="b9bc-96f6-3a0b-d325" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="d15d-c66d-d47f-8aee" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="2bd7-54d3-b0a9-1e44" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="07d0-18a3-ce4d-c1b4" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="aa3c-195b-15fd-b874" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2328-850d-7288-2efd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c99b-00e0-e7be-7eff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Knight World" id="fa81-7460-8303-0286" hidden="false">
+              <description>• If this is the Primary Detachment's Provenance, the army must include at least one Knight, in a Questoris Household, Questoris Crusader Host or Lord of War Detachment. A Knight in a Lord of War Detachment may take a Household Rank as if in a Questoris Household.
+• Militia models gain +1 To Hit in their Shooting phase against an enemy unit already shot that phase by a Knight.
+• The Detachment may take one Armiger Helverin Talon or Armiger Warglaive Talon as Heavy Support, which loses Armiger Talon.
+• The Detachment and units with the Armiger Unit Type or Knight Sub-type count each other as Sworn Brothers.
+• On an Aegis Militant chart, this Detachment unlocks one Knight as a Lord of War choice, as if it had the Mechanicum Faction.
+• May not be combined with Abhuman Muster, Kinfolk Helots, Ogryn Conscripts or Ratling Enclave.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2a2d-8b75-b986-d5e1" name="19 Mark of the Aeldari" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="11db-5652-fac6-e75e" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="4de8-3d63-d537-b626" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="8d80-c401-0303-d0f9" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="d5e5-b44b-5db6-ab16" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="27e2-7e02-1e57-3ad3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3724-da2c-6ae8-c8fb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Mark of the Aeldari" id="7cf0-78fc-ee31-7d1b" hidden="false">
+              <description>• Infantry Squads, Grenadier Squads and Command Cadres may exchange Lasguns for Lasblasters for free.
+• Grenadier Squads and Command Cadres may exchange Lasguns for Shuriken Catapults (+20 points per unit) and Laspistols for Shuriken Pistols (+10 points per unit).
+• A Force Commander may exchange a Laspistol for a Shuriken Pistol (free) or a Fusion Pistol (+10 points).
+• Any model with Frag Grenades may exchange them for Plasma Grenades for free.
+• The Detachment counts as Sworn Brothers with Aeldari Detachments of any Sub-faction. As an Allied Detachment it counts as Xenos Allegiance and may join an army whose Primary Detachment is any Aeldari Sub-faction.
+• Legiones Astartes, Imperial Army, Agents of the Emperor and Agents of the Warmaster Detachments count it as By the Emperor's/Warmaster's Command, except Traders Militant, which count it as Sworn Brothers.
+• May not be combined with Acolytes of the Saviour Emperor, Debased Rabble or Tainted Flesh.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4c0e-c6f7-8b1b-36f9" name="20 Mining Colony" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a66e-4eb5-32d4-c5fd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b80f-b77f-3536-e73b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Mining Colony" id="7799-0f8e-a9c5-3415" hidden="false">
+              <description>• Eligible units ignore the Night Fighting -1 BS and Leadership penalties.
+• Grenadier Squads may take a Militia Hades Breaching Drill or a Goliath Heavy Vehicle with an Auxiliary Crew Bay as a Dedicated Transport; Command Cadres may take a Militia Hades Breaching Drill or Goliath Heavy Vehicle.
+• Any all-Infantry unit without Monstrous or Mechanised may take up to two of these, in any combination (repeats allowed): Heavy Rock Saw (+5 points each), Heavy Rock Drill (+10 points each), Heavy Rock Cutter (+15 points each).
+• Any all-Infantry unit may exchange a Heavy Stubber for a Seismic Cannon (+10 points each) or a Mining Laser (+15 points each).
+• Any all-Infantry unit (Mechanised included) may exchange a Lascannon for a Heavy Seismic Cannon or Heavy Mining Laser for free.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="aa3c-195b-15fd-b874" name="21 Ratling Enclave" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="b4e2-3157-afeb-6c42" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="2bd7-54d3-b0a9-1e44" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="62d4-da9b-3a92-2cbe" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="07d0-18a3-ce4d-c1b4" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="047b-4019-416f-b9b4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf79-9a35-19b7-dacd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Ratling Enclave" id="484a-607e-23e7-3bf9" hidden="false">
+              <description>• Infantry and Cavalry models gain +1 BS and +1 Initiative but suffer -1 Movement, WS, Strength and Toughness (minimum 1). Models with Movement 0 or - are unaffected, as are Ratling Squads.
+• Imperialis Militia Ratling Squads may be taken as Troops.
+• Force Commanders may take a Longlas or Sniper Rifle for +10 points.
+• Legiones Astartes and Solar Auxilia Detachments count this Detachment as Distrusted Allies.
+• May not be combined with Kinfolk Helots, Knight World or Ogryn Conscripts.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5408-9c0d-5d6e-4b30" name="22 Trailblazers" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="45c7-69f7-f672-2ec9" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="8d80-c401-0303-d0f9" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="0d25-3ab7-05d5-752f" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9998-512a-cfc6-f943" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdc1-a2e8-6cb7-4e76" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Trailblazers" id="3c4a-3013-f042-bb1f" hidden="false">
+              <description>• Reconnaissance Squads lose Support Squad, gain the Line Sub-type, and gain +1 BS (maximum 4).
+• Any number of models in Command Cadres and Grenadier Squads may exchange their Lasgun for a Longlas or Sniper Rifle for +10 points each.
+• May not be combined with Debased Rabble or Voidborne Raiders.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0d25-3ab7-05d5-752f" name="23 Voidborne Raiders" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="e52d-4d52-93cc-b5c1" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="5408-9c0d-5d6e-4b30" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="43e7-dbd6-e74d-d022" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b100-5207-65f0-2e0a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Voidborne Raiders" id="0b3b-5032-af90-dcc7" hidden="false">
+              <description>• All Infantry gain the Heavy Sub-type and lose Light.
+• A Force Commander not upgraded to a Mounted Force Commander may take a Boarding Shield for free; any other Infantry Character may take one for +5 points.
+• Infantry in Command Cadres and Grenadier Squads may take Boarding Shields for +25 points per unit.
+• Infantry Squads may take Combat Shields for +20 points per unit.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -20081,6 +20359,9 @@ If the Toughness Test is failed, the target unit's Initiative Characteristic is 
     </rule>
     <rule id="3364-99b6-f1fe-eb18" name="Cover (X+)" hidden="false">
       <description>Optional rule: Cover (X+) does not grant a save; it grants a Damage Mitigation roll of X+ instead.</description>
+    </rule>
+    <rule id="640a-b320-41c3-0571" name="The Warmaster's Due" hidden="false">
+      <description>When a model with this Special Rule would get a Cover Save from intervening models that include Militia from the same Detachment, it may take +1 to that Cover Save (maximum 4+). If it does, once all saves are made, the intervening Militia unit closest to the firer along the line of fire suffers D3+1 Wounds with no saves or Damage Mitigation of any kind, allocated as if the enemy had shot it, to Militia models first. The bonus cannot be used against weapons that do not roll To Hit. A model with this rule may not join a unit with Expendable models, and Expendable models may not join a unit with this rule.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

@@ -119,8 +119,6 @@ Only units of the same type may Mob Up. Shoota Boyz may Mob Up only with other S
 
 **Mo' Dakka.** When a model with this special rule generates an additional hit from Dakka!, the additional hit gains all of the same special rules and effects possessed by the original attack, including Rending, Breaching, Armourbane, Pinning and similar weapon effects.
 
-**Monster Hunters.** A model with this special rule may re-roll To Wound rolls of 1 against Vehicles, Dreadnoughts and Monstrous Creatures.
-
 **Odd Mob.** The Meks, Painboys and Weirdboys of a warband stand outside the mobs, lending their talents wherever the boss sends them. Only on the longest Waaagh!s would an Odd Boy find himself krumpin' alongside the same lads time and time again. An Odd Mob is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, each Odd Boy in an Odd Mob, together with any grots he has taken, either becomes a separate unit or is assigned to another unit from the same Detachment of the army the Odd Mob was selected as part of. An Odd Boy may only be assigned to a unit composed entirely of models with the Infantry Unit Type and the same Klan (X) special rule as the Odd Boy, and may not join a unit that includes models in Mega Armour.
 
 **Oddboy.** Oddboyz may join Ork units normally, but do not count toward unit size when determining bonuses granted by the Mob Rule special rule.
@@ -2126,8 +2124,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 - Klan (X)
 - Might iz Right! (Beast Snagga Nob only)
 - Mob Rule
-- Monster Hunters
-- Monster Hunters: re-roll to-wound rolls of 1 against Vehicles, Dreadnoughts and Monstrous Creatures
+- Monster Hunter
 - Waaagh!
 
 **Dedicated Transport**
