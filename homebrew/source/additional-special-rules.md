@@ -969,6 +969,12 @@ _Unlike the more precise and controlled reactor cores of Legiones Astartes Dread
 
 Whenever a model with this Special Rule rolls a dice to determine an explosion radius, add +3" to the result rolled.
 
+## The Warmaster's Due
+
+_Mortal levies were spent without hesitation to shield the Warmaster's Astartes._
+
+When a model with this Special Rule would get a Cover Save from intervening models that include Militia from the same Detachment, it may take +1 to that Cover Save (maximum 4+). If it does, once all saves are made, the intervening Militia unit closest to the firer along the line of fire suffers D3+1 Wounds with no saves or Damage Mitigation of any kind, allocated as if the enemy had shot it, to Militia models first. The bonus cannot be used against weapons that do not roll To Hit. A model with this rule may not join a unit with Expendable models, and Expendable models may not join a unit with this rule.
+
 ## Titanic Weight
 
 _Certain weapons were so cumbersome or were simply heavy enough that even the monstrously strong struggled to wield them._

@@ -451,3 +451,33 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   The doc's Aethon Heavy Sentinel Squadron is a Fast Attack unit of its own; the official Aethon entry is left as it
   is. Cohort Doctrine limits on unit counts and play are rule text only.
   It refuses to run on a catalogue that already has the expansion.
+- `python3 homebrew/add_imperialis_militia.py` adds the Liber Imperatus Imperialis Militia expansion (the Claude Doc
+  "Imperialis Militia Horus Heresy 2.0 - Homebrew Conversion", kept as `source/imperialis-militia.md`) to
+  `2022 - Imperialis Militia.cat`, after The Warmaster's Due is in `additional-special-rules.md` and the game
+  system (the doc's other rules were already there). Its 44 units take the official catalogue's names ("IM -
+  Astropath"). Before building, it rewords what the Builder cannot read: "Laspistol or Autopistol" and "Lasgun or
+  Autorifle" become the Laspistol and Lasgun (they share a profile), the Militia Cavalry Mount becomes the official
+  rule it is, the Militia Jet Pack is defined from the official profile, the Ogryn Beastmasters' Great War Beasts
+  join its datasheet, and the models bought as options get their kit. It also writes:
+  - up to three Great War Beasts per Ogryn Handler in any mix, the Manticore's four missiles, the Mounted Command
+    Cadre's extra Lieutenants, and the options that give a rule (Bunker Drop, Pathfinder, Twin-linked);
+  - the Dedicated Transports by the doc's rules: Aurox, Chimera, Rhino, Termite (ten models; three or four for a
+    Fire Support Squad), Land Raider Proteus (Command Cadres, Grenadiers, Rogue Psykers), Rhino Advancer (twenty;
+    six for a Fire Support Squad), Rogue Psykers only with a Militia Warden, the Survivors of the Dark Age ones only
+    with that Provenance. The doc's Land Raider Proteus, Rhino and Termite replace the official entries, which the
+    official units' picks pointed at;
+  - the seven new Provenances of War (17 to 23) in the game system's pick, with what they may not be combined with
+    (both ways) and Acolytes only for a Loyalist army; the doc's additions appended to the official Provenances'
+    text; Ratling Squads as Troops (Ratling Enclave), Ogryn Beastmasters as Fast Attack (Ogryn Conscripts), no
+    Discipline Master Cadres with Acolytes; units with Provenance (X) shown only with it, Traitor units only in a
+    Traitor army, and Mutated Spawn 0-1 per Detachment except with Tainted Flesh;
+  - the Provenances' options on official units (Lasblasters, Shuriken Catapults and Pistols, Fusion Pistol;
+    Longlas or Sniper Rifle; Boarding and Combat Shields; Tainted weapons for the Force Commander), each shown only
+    with its Provenance;
+  - the doc's extra options on official units: Command Cadre Lieutenants, Medicae Carapace Armour, Ogryn Brute and
+    Boss weapons, Carapace Armour for Fire Support Squads and the Heavy Ordnance and Rapier Batteries' gunners,
+    Grenadier Hot-Shot weapons, Reconnaissance Shroud Bombs, the Arvus Transport's hull weapon and Twin-Linked,
+    Cavalry Militia Lances and Lascarbines, Sentinel weapons and extras, the four new War Beasts for the Beastmasters,
+    the Earthshaker Gun Carriage's Anvilus or Manticore, and up to two more Malcador Heavy Tanks (+160 each).
+  Armies of Dark Compliance, the Mining Colony and Knight World options, and the rest of each Provenance's effects
+  are rule text only. It refuses to run on a catalogue that already has the expansion.
