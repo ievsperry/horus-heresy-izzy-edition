@@ -306,7 +306,7 @@ class Text:
         pad = " " * (indent + 2)
         close = f"{self.nl}{pad}</{container}>"
         open_tag = re.search(rf"{re.escape(self.nl)}{pad}<{container}>", body)
-        text = "".join(self.nl + xml(e, indent // 2 + 2) for e in elements).replace("\n", self.nl)
+        text = "".join(self.nl + xml(e, indent // 2 + 2).replace("\n", self.nl) for e in elements)
         if open_tag:
             j = body.index(close, open_tag.start())
             body = body[:j] + text + body[j:]

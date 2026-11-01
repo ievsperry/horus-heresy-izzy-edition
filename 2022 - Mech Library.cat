@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="60" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="61" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -968,8 +968,88 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50f1-c5f2-900d-aa63" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b48-0daa-8549-a156" type="max"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry id="bdda-971e-11ac-6abc" name="Carapace Mounted Graviton Destructor" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Graviton Destructor" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="44e5-2880-eb0d-9e1b">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">60"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">*</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Massive Blast (7"), Gravitic Implosion*, Concussive (3)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" id="cd8d-c79b-9e4b-2028" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b3f2-8a20-4b52-db17" name="Volkite Eradicator" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Volkite Eradicator" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="40af-228d-1db0-19be">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">60"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Heavy Beam, Breaching (5+), Deflagrate, Pinning</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Deflagrate" id="c55d-c584-9ad6-1e85" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+                    <infoLink name="Pinning" id="14bc-7ae9-5595-feb4" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7118-f354-1933-ef46" name="Vortex Missile" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Vortex Missile" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ea66-1bff-ef3b-86bc">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36-240"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">16</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Destructor, Instant Death, Massive Blast (7"), Vortex, One Use</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Destructor" id="4cc8-9efb-ee95-ac8f" hidden="false" targetId="1f93-c765-f7b2-a025" type="rule"/>
+                    <infoLink name="Instant Death" id="a26d-f6e7-7ac8-56ae" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+                    <infoLink name="Blast" id="662f-e714-3096-450a" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+                    <infoLink name="Vortex" id="b33f-9cec-8308-67be" hidden="false" targetId="0dce-0338-cada-277b" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <entryLinks>
                 <entryLink id="e134-8a55-0bb8-c02f" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="true" targetId="e127-4c28-1a5b-e372" type="selectionEntry"/>
+                <entryLink id="4180-c851-f79d-f6fd" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="aa57-fc73-86fe-217c" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b182-07eb-1456-3569" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="c666-29f6-42da-2e07" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="faa8-1674-5788-548d" name="Twin-Linked Turbo Laser Destructor" hidden="false" collective="false" import="true" targetId="f947-d7f1-40bd-f425" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="953d-1dda-7eae-2d4c" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="b953-83d7-6cc1-5695" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1297,6 +1377,64 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1353-9f50-6ddf-f09a" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4818-85f0-f870-8523" type="max"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry id="4544-46c5-887e-b61e" name="Arm Mounted Graviton Destructor" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Graviton Destructor" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="aea8-759f-a771-b85a">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">60"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">*</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Massive Blast (7"), Gravitic Implosion*, Concussive (3)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" id="be93-d907-e644-0a21" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4e79-cd7b-3a89-1411" name="Ursus Claw" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Ursus Claw" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a96e-83d0-f9fd-e489">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">11</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Destructor, Sniper, Prey-Snare (Maxima)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Destructor" id="0e32-50eb-1c21-71a2" hidden="false" targetId="1f93-c765-f7b2-a025" type="rule"/>
+                    <infoLink name="Sniper" id="6e72-b630-abc4-1f22" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1f96-fb2e-3e92-da63" name="Volkite Eradicator" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Volkite Eradicator" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="25a9-674e-6bad-33d7">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">60"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Heavy Beam, Breaching (5+), Deflagrate, Pinning</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Deflagrate" id="c670-e8bc-0434-659c" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+                    <infoLink name="Pinning" id="64e2-b3cc-0220-148d" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <entryLinks>
                 <entryLink id="3575-1717-6410-e0d6" name="Twin-linked Turbo Laser-Destructor" hidden="false" collective="false" import="true" targetId="f947-d7f1-40bd-f425" type="selectionEntry"/>
                 <entryLink id="d7e1-874e-679e-bb26" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="b953-83d7-6cc1-5695" type="selectionEntry"/>
@@ -1309,6 +1447,64 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba5e-0d6f-27d1-94fd" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a9f-7623-0860-35fc" type="max"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry id="3d2d-5575-ead9-b3dc" name="Arm Mounted Graviton Destructor" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Graviton Destructor" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2646-f578-f8c3-511e">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">60"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">*</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Massive Blast (7"), Gravitic Implosion*, Concussive (3)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" id="24d7-4a63-1a6f-c599" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4286-f79a-df27-f7c8" name="Ursus Claw" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Ursus Claw" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="93fd-e583-7312-5aee">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">11</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Destructor, Sniper, Prey-Snare (Maxima)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Destructor" id="008d-ad69-6186-c806" hidden="false" targetId="1f93-c765-f7b2-a025" type="rule"/>
+                    <infoLink name="Sniper" id="a8fc-0f90-6cef-41be" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0742-7a42-4f99-525d" name="Volkite Eradicator" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Volkite Eradicator" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a475-9c2a-5c7d-1756">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">60"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Heavy Beam, Breaching (5+), Deflagrate, Pinning</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Deflagrate" id="1ddb-97d1-f5c4-e02b" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+                    <infoLink name="Pinning" id="d5ff-3bd0-dc2a-26e0" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <entryLinks>
                 <entryLink id="2c2d-1225-7f72-a9e7" name="Twin-linked Turbo Laser-Destructor" hidden="false" collective="false" import="true" targetId="f947-d7f1-40bd-f425" type="selectionEntry"/>
                 <entryLink id="10b6-946d-d13e-c214" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="b953-83d7-6cc1-5695" type="selectionEntry"/>
@@ -1434,6 +1630,21 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="4926-4517-bcbe-14c7" name="Arm Mounted Twin-Linked Graviton Ruinator" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Graviton Ruinator" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="83e9-69dc-179e-71db">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">*</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Blast (10"), Gravitic Implosion*, Concussive (3)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="baf6-5b24-9ff5-36fc" name="Mori Quake Cannon" hidden="false" collective="false" import="true" targetId="eab1-7776-c8da-da00" type="selectionEntry"/>
@@ -1457,6 +1668,21 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="dc65-7927-328f-134c" name="Arm Mounted Twin-Linked Graviton Ruinator" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Graviton Ruinator" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ffc2-5e71-6eae-4d01">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">*</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Blast (10"), Gravitic Implosion*, Concussive (3)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="ecb9-a680-093f-de7d" name="Mori Quake Cannon" hidden="false" collective="false" import="true" targetId="eab1-7776-c8da-da00" type="selectionEntry"/>
@@ -1470,6 +1696,47 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0ab-6650-1cc4-c146" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a4e-9b49-7652-09e7" type="max"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry id="177c-7a88-5467-6af9" name="Carapace Mounted Twin-Linked Vulcan Mega-Bolters" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="e030-569b-037c-f9e8" name="Vulcan Mega-Bolter" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">60"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 15, Pinning, Shell Shock (1), Reactor Overload</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Pinning" id="9921-f1ab-de7c-77b5" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d6c7-a653-e733-2381" name="Carapace Mounted Vortex Missiles" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Vortex Missile" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4db5-ec90-4738-2202">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36-240"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">16</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Destructor, Instant Death, Massive Blast (7"), Vortex, One Use</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Destructor" id="0cfb-10f5-68b5-0fc8" hidden="false" targetId="1f93-c765-f7b2-a025" type="rule"/>
+                    <infoLink name="Instant Death" id="a444-81f6-a56f-759d" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+                    <infoLink name="Blast" id="09e3-627b-950a-4eac" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+                    <infoLink name="Vortex" id="808b-4301-2d3b-b9e7" hidden="false" targetId="0dce-0338-cada-277b" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <entryLinks>
                 <entryLink id="223a-0c19-9a43-5488" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="true" targetId="e127-4c28-1a5b-e372" type="selectionEntry">
                   <modifiers>
@@ -1480,6 +1747,21 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   <modifiers>
                     <modifier type="set" field="name" value="Two Laser Blasters"/>
                   </modifiers>
+                </entryLink>
+                <entryLink id="d033-0e55-5a63-e44b" name="Carapace Mounted Gatling Blasters" hidden="false" collective="false" import="true" targetId="12c4-10db-40e2-04c4" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="4c73-0a7b-9bbd-fdae" name="Carapace Mounted Melta Cannons" hidden="false" collective="false" import="true" targetId="7a16-0e23-c633-c668" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="347b-4a73-6287-d57c" name="Carapace Mounted Plasma Blastguns" hidden="false" collective="false" import="true" targetId="c666-29f6-42da-2e07" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -1866,42 +2148,6 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             </infoLink>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="b6ee-a502-fb9c-3c13" name="Phaeton Autocannon" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4734-7785-5af6-6884" type="min"/>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8173-6104-20ea-6e27" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="5b79-445b-5319-4753" name="Phaeton Autocannon - AP rounds" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">64"</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Sunder, Rending (6+)</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="5f64-9724-2862-6c79" name="Phaeton Autocannon - Ignis rounds" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">64"</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Ignores Cover, Rending (6+)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="2d03-00b5-6aae-3095" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Rending (6+)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="1420-62c4-7652-2f5e" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
-                <infoLink id="bcee-5876-e983-b2ea" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="88d3-7193-f0f5-0c05" name="May Exchange its Heavy Stubber for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="772d-7881-f4c3-7d37">
@@ -1909,6 +2155,44 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed7b-c1cd-1951-9426" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23a7-567f-83e8-99ba" type="max"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry id="5522-8147-579a-e107" name="Hyperion Multi-Launcher" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Hyperion Multi-Launcher – Flak" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c3ec-635f-3eab-37f3">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Skyfire</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Hyperion Multi-Launcher – Frag" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4338-a10f-3259-0d17">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (5"), Pinning</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Hyperion Multi-Launcher – Krak" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c3ee-67ab-c7a7-de9d">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Skyfire" id="2158-ed36-6bcd-58e9" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule"/>
+                    <infoLink name="Blast" id="00d6-9636-b773-4eea" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+                    <infoLink name="Pinning" id="0e5c-bda3-81d8-d413" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <entryLinks>
                 <entryLink id="68a3-aa13-83b2-e9ea" name="Meltagun" hidden="false" collective="false" import="true" targetId="4ebd-57e0-3560-e568" type="selectionEntry">
                   <costs>
@@ -1917,6 +2201,121 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 </entryLink>
                 <entryLink id="772d-7881-f4c3-7d37" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
               </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="066a-52bb-350e-84b0" name="Phaeton Autocannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="b6ee-a502-fb9c-3c13">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="817a-c73e-aca5-001e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0f43-5b80-fd5a-a3d5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="b6ee-a502-fb9c-3c13" name="Phaeton Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8173-6104-20ea-6e27" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="5b79-445b-5319-4753" name="Phaeton Autocannon - AP rounds" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">64"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Sunder, Rending (6+)</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile id="5f64-9724-2862-6c79" name="Phaeton Autocannon - Ignis rounds" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">64"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Ignores Cover, Rending (6+)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="2d03-00b5-6aae-3095" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Rending (6+)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="1420-62c4-7652-2f5e" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+                    <infoLink id="bcee-5876-e983-b2ea" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1257-b327-168a-7710" name="Hurricane Missile Pod" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Hurricane Missile Pod – Flak" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c34d-1767-20c9-ad2e">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Skyfire</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Hurricane Missile Pod – Frag" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ae75-dc70-1552-fafe">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (5"), Pinning</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Hurricane Missile Pod – Krak" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="013a-7dca-b722-0e39">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Skyfire" id="5a22-52fd-cb01-fbde" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule"/>
+                    <infoLink name="Blast" id="da5b-0420-f693-e0a9" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+                    <infoLink name="Pinning" id="1a5f-c058-5169-fb0a" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c79e-e6c0-7d40-e59e" name="Punisher Chaincannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Punisher Chaincannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="99d0-f2fe-8f0f-d737">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 10, Pinning, Shell Shock (1)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Pinning" id="51ef-3cca-813e-a819" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1679-d1ec-9717-3471" name="Thermal Lance" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="e6ac-702d-3e74-1d31" name="Thermal Lance" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Armourbane (Melta), Twin-linked</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Twin-linked" id="ef4c-79e7-6ff3-3371" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -1940,6 +2339,27 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4100-34a1-a69a-0057" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="f2ca-e0f1-971d-9916" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="bd5d-61fa-d2f6-45a2" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d29b-bf30-0fdd-115d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Heedless Slaughter (Unit)" hidden="false" type="selectionEntry" id="6f45-1f64-3b35-2abe" targetId="7282-cf21-e30d-73fe"/>
       </entryLinks>
@@ -1994,55 +2414,6 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             </infoLink>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="9bc0-713a-2b98-9b6c" name="Reaper Chainblade" publicationId="bde1-6db1-163b-3b76" page="120" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be79-908d-715c-3772" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab9e-e24d-8372-1b92" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="74fb-33d3-4e56-97b0" name="Reaper Chainblade" publicationId="bde1-6db1-163b-3b76" page="120" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Sunder, Brutal (2)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="55b9-5a7b-7ea4-b5e9" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a056-13de-4a3a-56fd" name="Thermal Lance" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2d5-a790-2eec-c53a" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="267c-dbe1-4030-3243" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="f220-4068-517b-9120" name="Thermal Lance" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Armourbane (Melta), Twin-linked</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="616e-69e2-4fbb-9698" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Armourbane (Melta)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="d32d-6bff-6e5b-3646" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="6472-dba6-bfc8-4315" name="May Exchange its Heavy Stubber for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="c29c-1d53-acc6-1aee">
@@ -2057,6 +2428,187 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   </costs>
                 </entryLink>
                 <entryLink id="c29c-1d53-acc6-1aee" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="014f-54e9-4f5e-152c" name="Reaper Chainblade" hidden="false" collective="false" import="true" defaultSelectionEntryId="9bc0-713a-2b98-9b6c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a623-7100-ca5d-ed9b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b2c-ddb8-4809-fd73" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="9bc0-713a-2b98-9b6c" name="Reaper Chainblade" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab9e-e24d-8372-1b92" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="74fb-33d3-4e56-97b0" name="Reaper Chainblade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Sunder, Brutal (2)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="55b9-5a7b-7ea4-b5e9" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b46e-26f3-6b3c-a9ca" name="Armiger Breaker-Claw" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Armiger Breaker-Claw" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a595-62bc-27ba-6d41">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Sunder, Wrecker, Brutal (2)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Sunder" id="2fe0-60a8-13fd-3af4" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+                    <infoLink name="Wrecker" id="91ec-be8c-bac4-8300" hidden="false" targetId="ba77-a802-55df-da67" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3646-82dc-f9f0-e318" name="Armiger Harvest Scythe" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Armiger Harvest Scythe" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="93dc-a3c1-26b5-efb7">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+), Reaping Blow (2)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="83e9-e700-b50f-ec2a" name="Armiger Siege Maul" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Armiger Siege Maul" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6077-a196-2a90-d983">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="eacb-01e2-dbb1-eaa8" name="Armiger Stormwrought Warblade" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Armiger Stormwrought Warblade" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="41c7-e9c6-5673-1c0f">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (6+), Murderous Strike (6+)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5b3f-9ec7-6140-4e44" name="Thermal Lance" hidden="false" collective="false" import="true" defaultSelectionEntryId="a056-13de-4a3a-56fd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d29-db0a-6ffe-ec79" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6be-24d1-2c3d-5b9d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="a056-13de-4a3a-56fd" name="Thermal Lance" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="267c-dbe1-4030-3243" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="f220-4068-517b-9120" name="Thermal Lance" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Armourbane (Melta), Twin-linked</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="616e-69e2-4fbb-9698" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Armourbane (Melta)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="d32d-6bff-6e5b-3646" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fc87-1855-c763-982c" name="Armiger Breaker-Claw" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Armiger Breaker-Claw" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a28e-db19-35d4-da31">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Sunder, Wrecker, Brutal (2)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Sunder" id="6a9d-22ab-d04f-81e2" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+                    <infoLink name="Wrecker" id="8fa1-453c-9834-5bfa" hidden="false" targetId="ba77-a802-55df-da67" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="350c-caa4-0b04-870e" name="Punisher Chaincannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Punisher Chaincannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="faff-0de6-8f3f-1249">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 10, Pinning, Shell Shock (1)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Pinning" id="55db-806c-4fb2-234a" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="615a-5749-3792-13dc" name="Flamestorm Cannon" hidden="false" collective="false" import="true" targetId="af97-b307-a484-4fbe" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="268c-f4c2-d657-01a4" name="Gravis Plasma Cannon" hidden="false" collective="false" import="true" targetId="32ad-6250-29c7-5466" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a42c-e6f2-c5b4-1c00" name="Reaper Chainblade" hidden="false" collective="false" import="true" targetId="cc2e-5c46-dd70-9e3f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -2081,6 +2633,27 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3d99-ee01-69db-1772" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="6a32-b190-6f21-4454" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="df92-71d6-bf1a-d62e" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e10-9506-b232-9831" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Heedless Slaughter (Unit)" hidden="false" type="selectionEntry" id="530e-7511-951c-ef26" targetId="7282-cf21-e30d-73fe"/>
       </entryLinks>
@@ -2628,6 +3201,18 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <entryLink import="true" name="Ionic lash" hidden="false" type="selectionEntry" id="3ec7-6093-8bb2-a08c" targetId="23cf-fac2-4878-aeff"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="875a-3b2f-ebcc-6010" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="b44d-d6f0-98ec-e138" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb9e-16da-2fe4-1779" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="437f-7773-a0d0-6061" id="ef18-a873-c9ac-c547" primary="false" name="Knight Sub-type"/>
@@ -2895,6 +3480,18 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <entryLink import="true" name="Ionic lash" hidden="false" type="selectionEntry" id="2f87-51c-8b52-2129" targetId="23cf-fac2-4878-aeff"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="66c1-06d4-25f1-997e" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="bb74-ec7e-e86b-73eb" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="825e-9c77-1406-2d72" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="437f-7773-a0d0-6061" id="cf43-9ff1-8b7f-da37" primary="false" name="Knight Sub-type"/>
@@ -3077,6 +3674,67 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5b3-9991-171e-6f89" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c78-ad94-6633-d88f" type="max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="eb2a-c60b-1408-d8b8" name="Arm Mounted Draconis Glaive" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile name="Draconis Glaive" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="00ec-c072-3ca4-ee8b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1), Brutal (3)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e1d1-d5e4-8c12-84e0" name="Arm Mounted Laser Lance" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile name="Laser Lance (Ranged)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f4a2-ac7b-1c69-ddf9">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Laser Lance (Melee)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="127a-e555-8653-5a2d">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Sunder, Exoshock (5+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Sunder" id="729c-5113-75a5-3f76" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8909-7984-d841-efe6" name="Arm Mounted Questoris Breacher Maul" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile name="Questoris Breacher Maul" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="970c-012b-f8ed-c62e">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Wrecker, Breaching (5+), Murderous Strike (5+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Wrecker" id="e081-ad83-7ed5-fbaf" hidden="false" targetId="ba77-a802-55df-da67" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="0696-eba7-6d52-40ce" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="2164-1725-d032-ed49" type="selectionEntry"/>
             <entryLink id="e73c-d4d2-93ca-a357" name="Avenger Gatling Cannon with In-Built Heavy Flamer" hidden="false" collective="false" import="true" targetId="1d6f-970d-3b89-7886" type="selectionEntry">
@@ -3097,6 +3755,27 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5880-a723-06d0-f71e" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb15-c258-5d87-50ea" type="max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="39f1-3c77-cc93-eee7" name="Arm Mounted Dual Vulcanis Blades" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile name="Dual Vulcanis Blades" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f80d-f956-0a5e-f47d">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Paired Weapons, Deflagrate, Breaching (5+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Paired Weapons" id="0bcb-179c-32bf-f14c" hidden="false" targetId="a504-0299-ebbf-9763" type="rule"/>
+                <infoLink name="Deflagrate" id="23a0-3914-fb06-ee8e" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="e8d4-85bf-0041-ff2b" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="2164-1725-d032-ed49" type="selectionEntry"/>
             <entryLink id="0dfe-4f99-9af3-2f7e" name="Avenger Gatling Cannon with In-Built Heavy Flamer" hidden="false" collective="false" import="true" targetId="1d6f-970d-3b89-7886" type="selectionEntry">
@@ -3145,6 +3824,18 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             </entryLink>
             <entryLink id="5ff5-f328-43d4-46ec" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="1809-a6e7-c4a2-bc91" type="selectionEntry"/>
             <entryLink id="e054-aa4f-7961-930f" name="Twin-Linked Icarus Autocannon" hidden="false" collective="false" import="true" targetId="bd87-e395-1602-d73a" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8d51-e136-8c98-2eaa" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="8922-6633-1021-2a81" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab3c-dc95-07cd-fbd6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5498,6 +6189,20 @@ Once a unit with this Special Rule has separated, each model counts as its own u
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2358-7312-6a81-9b22" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="927e-4b86-fcf7-b94f" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71a5-9b8f-8240-cf2f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Ruinous Cybernetica" hidden="false" id="f169-7a22-0e2b-faa2" type="selectionEntry" targetId="c7f4-8f4e-f31d-5323"/>
       </entryLinks>
