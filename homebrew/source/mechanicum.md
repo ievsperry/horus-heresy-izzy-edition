@@ -2587,6 +2587,7 @@ Before a model shoots with an Icarus Array, it declares whether it activates its
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Disruptor Missile Launcher | 36" | 6 | 5 | Heavy 2, Large Blast (5"), Disruption (5+) |
+| EM-Storm Charge | 3" | 3 | 3 | Bomb 2, Large Blast (5"), Haywire, Concussive (2), One Use |
 | Hurricane Missile Pod – Flak | 36" | 7 | 3 | Heavy 2, Skyfire |
 | Hurricane Missile Pod – Frag | 36" | 4 | 6 | Heavy 1, Blast (5"), Pinning |
 | Hurricane Missile Pod – Krak | 36" | 8 | 3 | Heavy 2 |

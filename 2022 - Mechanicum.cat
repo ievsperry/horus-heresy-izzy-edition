@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="55" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="56" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -13581,7 +13581,7 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Two Hull (Front) Mounted EM-Storm Charges" hidden="false" id="38a9-8305-8c8d-1b04" type="selectionEntry" targetId="8ce5-7905-27f8-dd2e">
+                <entryLink import="true" name="Two Hull (Front) Mounted EM-Storm Charges" hidden="false" id="38a9-8305-8c8d-1b04" type="selectionEntry" targetId="b765-e403-7b27-f9c1">
                   <constraints>
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2278-3e9a-0b62-f945" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -16543,6 +16543,31 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="EM-Storm Charge" hidden="false" id="0423-e001-b111-9223">
+      <profiles>
+        <profile name="EM-Storm Charge" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="793c-6d03-aae3-f9d8">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">3"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Bomb 2, Large Blast (5"), Haywire, Concussive (2), One Use</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="79a7-a35f-b6d2-d6a9" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Large Blast (5&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Haywire" id="7123-d682-ba24-66e3" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule"/>
+        <infoLink name="Concussive (X)" id="68ba-483e-c2d4-77e4" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tectomagnic Bomb Rack" hidden="false" id="41e6-e7b0-1229-10f5">
       <profiles>
         <profile name="Tectomagnic Bomb Rack" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9a0f-a432-0ce5-1d31">
@@ -17598,7 +17623,16 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted EM-Storm Charges" hidden="false" id="8ce5-7905-27f8-dd2e"/>
+    <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted EM-Storm Charges" hidden="false" id="b765-e403-7b27-f9c1">
+      <entryLinks>
+        <entryLink import="true" name="EM-Storm Charge" hidden="false" id="5186-b710-a6c3-4e5a" type="selectionEntry" targetId="0423-e001-b111-9223">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4d6e-0cc5-5db9-cd80" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7ffb-101f-a2fd-f993" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Kraken Penetrator Missiles" hidden="false" id="c519-6895-f3ed-0994">
       <entryLinks>
         <entryLink id="2d24-166e-0a43-9e69" name="Kraken Penetrator Missiles" hidden="false" collective="false" import="true" targetId="9157-ad0d-ea66-f726" type="selectionEntry">
