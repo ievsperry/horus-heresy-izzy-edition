@@ -2716,6 +2716,8 @@ These items work alongside the wargear in *Liber Mechanicum*.
 | Praetorian Warplate | 3+ | 5+ |
 | Sicarian Battle Armour | 4+ | 6+ |
 
+**Corpus Skitarii.** The Corpus Skitarii confers a 4+ Armour Save. In addition, a model with Corpus Skitarii may re-roll Feel No Pain Damage Mitigation rolls which are the result of attacks made by weapons with the Poisoned (X) or Rad-phage special rules.
+
 ### Auxiliary Systems (Ordinatus-Exemplar)
 
 **Cascade Shield Projector.** The model is equipped with Void Shields (2) and a flare shield.

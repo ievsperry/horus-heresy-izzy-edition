@@ -38,8 +38,8 @@ C = et.NS["cat"]
 TRAITOR, LOYALIST = "f9c0-0c5a-3e24-58c7", "d0b6-712f-0b12-a308"
 PRIMARCH_SLOT = [("e031-3c2-e3f8-d40a", "Primarch:", True)]
 
-# What the Builder cannot place: Corpus Skitarii is named on datasheets but defined nowhere in the doc
-ALLOWED = [r"wargear 'Corpus Skitarii'", r"rule 'Armiger and Moirax Talons'"]
+# What the Builder cannot place: the Questoris rule the official catalogue names otherwise
+ALLOWED = [r"rule 'Armiger and Moirax Talons'"]
 
 SUB_TYPES = {"Light": ("bff2-ae16-74a8-8712", "Light Sub-type"), "Automata": ("d8ab-8e21-e193-63ba", "Automata Unit Type"),
              "Hover": ("3a7a-8bb7-b0d3-e2e7", "Hover Sub-type"), "Reinforced": ("9b0d-738c-10e4-4ec1", "Reinforced Sub-type")}
@@ -285,10 +285,6 @@ def tidy(b, root, key):
                     targetId=rid, type="rule")
             if RULE_OPTIONS[k]:
                 el(el(il, "modifiers"), "modifier", type="set", field="name", value=RULE_OPTIONS[k])
-            continue
-        if k == "corpus skitarii":
-            add_rule(e, name, "Named on the Skitarii datasheets of Liber Ingenium but not defined in it (an open "
-                     "question in the doc's Rules Checklist).", e.get("id"))
             continue
         parts = re.split(r" with in-built | and ", name, flags=re.I)
         for part in parts:

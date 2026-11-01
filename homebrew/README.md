@@ -504,8 +504,8 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   - the "1. Questoris Crusader Host Force Organisation Chart" in the game system: 1-10 Lords of War, up to two Troops
     per Lord of War, no 25% limit category.
   Rule text only: the Arcuitor's Hunter Killer swap, the Mechadendrite Hive's "if it does not take" limits, the
-  Crusader Host's Questoris-only and Primary-only limits, the Skitariiax-Protectorate's Compulsory Troops limit and
-  Corpus Skitarii (not defined in the doc). It refuses to run on a catalogue that already has the expansion.
+  Crusader Host's Questoris-only and Primary-only limits and the Skitariiax-Protectorate's Compulsory Troops
+  limit. It refuses to run on a catalogue that already has the expansion.
 - `python3 homebrew/build_dark_compliance.py` builds `Homebrew - Armies of Dark Compliance.cat`, the doc's Army of
   Dark Compliance: a Primary Detachment on the Crusade chart from both the Imperialis Militia and Legiones Astartes
   lists. It links both lists rather than copying them, and its own root entries are: "Army of Dark Compliance" (the
