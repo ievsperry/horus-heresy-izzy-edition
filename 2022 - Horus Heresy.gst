@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="233" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="234" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -9283,6 +9283,26 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="6006-ce35-4f52-35f3" name="Hardwired Defences" hidden="false" targetId="c577-0288-3a53-d1ed" type="rule"/>
         <infoLink id="16ab-5bc7-9bc4-fc39" name="Power of the Machine Spirit" hidden="false" targetId="5a93-13e0-809d-782a" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="822b-56f0-a3ee-9068" name="Orbital Deployment (Drop Pod or Deep Strike Assault)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf1b-becc-32ff-b1ad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule id="4f7e-0f18-ce87-8d3d" name="Orbital Deployment" hidden="false">
+              <description>Instead of deploying it as a Fortification, the Hammerfall Bunker may be assigned to a Drop Pod Assault or Deep Strike Assault. It then gains Orbital Assault Vehicle, Inertial Guidance System and Deep Strike, so it can land outside your Deployment Zone, and may be taken in a Drop Pod Assault.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="234c-11e1-deb4-15be" name="Orbital Assault Vehicle" hidden="false" targetId="7fc9-7bcd-b44c-6719" type="rule"/>
+            <infoLink id="34f3-d5c9-e799-0a20" name="Inertial Guidance System" hidden="false" targetId="d222-fde9-51b8-8739" type="rule"/>
+            <infoLink id="be11-23bb-35b9-7e71" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="a2ac-a5fa-9bd1-d0b9" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true" defaultSelectionEntryId="c496-e4dc-1ee7-09d9">
           <constraints>

@@ -402,7 +402,13 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Psychic Discipline: Anathemata for the Davinite Lodge Priest, the Sun Killer Squad's Multi-Melta with a
   Suspensor Web, and the doc's wording as a "Liber Panoptica:" note on the rules it changes (Recon Company,
   Armoured Spearhead, Fury of the Ancients, Auxiliary Vehicle Bay, Rocket Barrage, The Stage is Set, Implacable,
-  Ephemera Perfidiae, Lacyraemarta, Forbidden Protocols, Rites of the Beast). The doc's special rules and weapon
+  Ephemera Perfidiae, Lacyraemarta, Forbidden Protocols, Rites of the Beast). It also makes the doc's weapon and
+  option changes: Ephemera Exocluo's Blind becomes Sensor Flare; the Talon of Perdition's profile says a model with
+  two gains +2 Attacks; the Iliastus Assault Cannon (shown only to the Blood Angels and Imperial Fists) costs the
+  Heavy Flamer's points +10 per weapon in every pick beside one (a pair of sponsons +20), and joins the picks with a
+  Twin-Linked Heavy Flamer and the Cavalry units' picks with a Heavy Flamer ("if one model does, all must" stays
+  rule text); and the Hammerfall Bunker may take Orbital Deployment (Orbital Assault Vehicle, Inertial Guidance
+  System and Deep Strike, to land by Drop Pod or Deep Strike Assault). The doc's special rules and weapon
   profiles were already in `additional-special-rules.md` and `additional-weapons.md`; the later weapon updates
   (Medusa Mortar, Thunderblast Cannon, Krak Grenades, Unwieldy (X)) are kept. Running it again changes nothing.
 - `python3 homebrew/add_twin_linked.py` gives every twin-linked weapon its own entry. Wherever a catalogue names a
