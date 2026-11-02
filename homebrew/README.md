@@ -394,6 +394,23 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   (Martian Civil War, Beta-Garmon, Siege of Cthonia) and the Exemplary Battles. The Blackshields Oaths (Panoply of
   Old, The Spoils of Victory) are game system rules, so their changes are made there. Clarifications with no data
   entry (how a rule is played) are left out.
+- `python3 homebrew/apply_panoptica_update.py` applies what the Liber Panoptica conversion doc (the Claude Doc
+  "Liber Panoptica for The Horus Heresy 2.0 — Homebrew Conversion", kept as `source/panoptica.md`) changes that
+  the two scripts above had not: the Orion Assault Dropship's Transport Capacity 36, the Solar Auxilia
+  Stormhammer's Front Armour 14, Shabran Darr's Shattered Legionary, the Warlord Battle Titan's Void Shields (8),
+  Hardwired Defences on the Hammerfall Bunker (with Power of the Machine Spirit) and the Vengeance Weapon Battery,
+  Psychic Discipline: Anathemata for the Davinite Lodge Priest, the Sun Killer Squad's Multi-Melta with a
+  Suspensor Web, and the doc's wording as a "Liber Panoptica:" note on the rules it changes (Recon Company,
+  Armoured Spearhead, Fury of the Ancients, Auxiliary Vehicle Bay, Rocket Barrage, The Stage is Set, Implacable,
+  Ephemera Perfidiae, Lacyraemarta, Forbidden Protocols, Rites of the Beast). It also makes the doc's weapon and
+  option changes: Ephemera Exocluo's Blind becomes Sensor Flare; the Talon of Perdition's profile says a model with
+  two gains +2 Attacks; the Iliastus Assault Cannon (shown only to the Blood Angels and Imperial Fists) costs the
+  Heavy Flamer's points +10 per weapon in every pick beside one (a pair of sponsons +20), and joins the picks with a
+  Twin-Linked Heavy Flamer and the Cavalry units' picks with a Heavy Flamer ("if one model does, all must" stays
+  rule text); and the Hammerfall Bunker may take Orbital Deployment (Orbital Assault Vehicle, Inertial Guidance
+  System and Deep Strike, to land by Drop Pod or Deep Strike Assault). The doc's special rules and weapon
+  profiles were already in `additional-special-rules.md` and `additional-weapons.md`; the later weapon updates
+  (Medusa Mortar, Thunderblast Cannon, Krak Grenades, Unwieldy (X)) are kept. Running it again changes nothing.
 - `python3 homebrew/add_twin_linked.py` gives every twin-linked weapon its own entry. Wherever a catalogue names a
   "Twin-linked <weapon>" and the weapons list has <weapon> but not the twin-linked one, it adds a "Twin-linked
   <weapon>" row to the "Twin-linked Weapons" section of `additional-weapons.md` (the weapon's profile plus the
