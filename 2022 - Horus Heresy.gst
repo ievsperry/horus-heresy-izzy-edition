@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="231" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="232" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -14685,7 +14685,8 @@ Limitations
 • A Detachment using this Rite of War may not include any models with the Vehicle Unit Type that do not also have the Flyer Sub-type.
 • A Detachment using this Rite of War may not select any Fortification choices.
 
-^Manually check restrictions and limitations</description>
+^Manually check restrictions and limitations
+Liber Centura: any unit that may take a Legion Land Raider Proteus Carrier as a Dedicated Transport may take a Legion Caestus Assault Ram instead.</description>
             </rule>
           </rules>
           <costs>
@@ -14722,7 +14723,8 @@ Limitations
 • All units in a Detachment using this Rite of War composed entirely of models with the Infantry Unit Type must begin the battle Embarked upon a model with both the Flyer and Transport Sub-types.
 • A Detachment using this Rite of War may not include any models with the Dreadnought Unit Type.
 • An Allied Detachment may not use this Rite of War.
-• A Detachment using this Rite of War may not select any Fortification choices.</description>
+• A Detachment using this Rite of War may not select any Fortification choices.
+Liber Centura: Legion Sky-Seeker Squadrons lose Support Squad.</description>
             </rule>
           </rules>
           <costs>
@@ -14789,7 +14791,8 @@ Limitations
 • A Detachment using this Rite of War may only select a single Heavy Support choice and a single Fast Attack choice.
 • An Allied Detachment may not use this Rite of War.
 • An army using this Rite of War may not select any Fortification choices.
-• An army using this Rite of War may not include more non-Infantry units than it does Infantry units.</description>
+• An army using this Rite of War may not include more non-Infantry units than it does Infantry units.
+Liber Centura: Legion Assault Veteran Squads may be taken as Troops, and gain the Line Sub-type when taken as Compulsory Troops. Saturnine Terminator Squads may be taken as Heavy Support.</description>
             </rule>
           </rules>
           <costs>
@@ -14921,7 +14924,8 @@ Limitations
 • A Detachment using this Rite of War may not select any Fortification choices.
 • A Detachment using this Rite of War may not select a Lords of War Detachment.
 • This Rite of War may only be selected for an army’s Primary Detachment.
-• An army whose Primary Detachment is using this Rite of War may not roll to Seize the Initiative.</description>
+• An army whose Primary Detachment is using this Rite of War may not roll to Seize the Initiative.
+Liber Centura: Legion Castra Ferrum Dreadnought Talons may be taken as Troops, including as Compulsory Troops, and gain the Line Sub-type when taken as Troops. Legion Contemptor-Cortus Talons may be taken as Troops. The Warlord may be any Dreadnought with the Character Sub-type, instead of a Legion Contemptor Dreadnought with the Venerable Ancient upgrade.</description>
             </rule>
           </rules>
           <costs>
@@ -16270,6 +16274,232 @@ Fulgrim Transfigured must be included in a Detachment using this Corrupted Rite 
 Until Fulgrim Transfigured is placed on the battlefield in this manner, all models in a Detachment he is part of have the Stubborn special rule.</description>
             </rule>
           </rules>
+        </selectionEntry>
+        <selectionEntry id="8050-fa21-e4ef-01fb" name="Breacher Spearhead" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule name="Breacher Spearhead" id="5b8e-c7e1-1852-7e26" hidden="false">
+              <description>Effects
+• A model with a boarding shield in base contact with another friendly model from its unit gains +1 to the boarding shield's Invulnerable Save, to a maximum of 4+.
+• Legion Tactical Support Squads and Legion Veteran Squads may take boarding shields for +5 points per model. The whole squad must take them, and gains the Heavy Sub-type.
+• Units with the Infantry (Heavy) Sub-type gain Relentless.
+• Units with the Infantry (Heavy) Sub-type equipped with boarding shields gain Heart of the Legion.
+Limitations
+• Units made up entirely of Infantry (Heavy) with boarding shields must fill the Compulsory Troops choices. This does not override Support Squad.
+• The Warlord must be an Independent Character equipped with a boarding shield.
+• If the Primary Detachment uses this Rite of War, the army may not include any unit with a jump pack, jet pack, bike or jetbike.
+• The Detachment must contain more Infantry units with the Heavy Sub-type than without it.
+• An Allied Detachment may not use this Rite of War, and the Detachment may not take Fortifications.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="845d-fdb2-6f82-8b5d" name="Destroyer Company" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule name="Destroyer Company" id="289c-8b99-f0b7-c18e" hidden="false">
+              <description>Effects
+• Legion Destroyer Assault Squads and Legion Mortalis Destroyer Squads may be taken as Troops.
+• Any unit made up entirely of models with Bitter Duty, Cult of Morkai or Shadow of Death (excluding Independent Characters) may be taken as Troops.
+• Any model with the Character Sub-type not wearing Terminator armour may take rad grenades for +10 points per model.
+• Any model with a missile launcher or gravis missile launcher may also take rad missiles for +5 points per model.
+• Independent Characters may buy Bitter Duty for +15 points per model.
+• Each enemy Scoring or Denial unit destroyed by this Detachment while within control range of an objective gives the controlling player +1 Victory Point.
+Limitations
+• The Compulsory HQ choice must be a model with the Siege Breaker or Moritat Legiones Consularis upgrade (it need not be the Warlord). This may prevent some other characters being taken.
+• If the Primary Detachment uses this Rite of War, the army may not include an Allied Detachment.
+• An Allied Detachment may not use this Rite of War, and the Detachment may not take Fortifications.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1626-e477-8660-5e2b" name="Storm-Lance Tumen" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule name="Storm-Lance Tumen" id="56f0-ce5f-37ec-98f9" hidden="false">
+              <description>Effects
+• Legion Outrider Squadrons and Legion Spatha Attack Bike Squadrons may be taken as Troops. Outrider Squadrons taken as Troops gain the Line Sub-type.
+• Any model with a Legion Spatha attack bike gains Hammer of Wrath (2).
+• Legion Hussar Squadrons gain Scout.
+Limitations
+• The Warlord must be equipped with a Legion Spatha combat bike.
+• Vehicles must have the Flyer, Fast or Skimmer Sub-type.
+• All units made up entirely of Infantry must begin the battle embarked on a model with both the Flyer and Transport Sub-types.
+• The Detachment may not include Dreadnoughts or Automata.
+• An Allied Detachment may not use this Rite of War, and the Detachment may not take Fortifications.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d11d-e31d-ab81-bdd5" name="Tactica Obliqua" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule name="Tactica Obliqua" id="0bed-4a49-7600-891d" hidden="false">
+              <description>Effects
+• The Detachment gains the Shifting Tides special rule.
+• Legion Veteran Squads and Legion Veteran Assault Squads may benefit from any Shifting Tides doctrine. From Tactical Advance they gain Heart of the Legion for that turn, but not the range increase.
+Shifting Tides. At the start of your turn you may activate one doctrine below; it lasts until the start of your next turn. Only one doctrine may be active each turn, and each may be used only once per game.
+• Ranged Devastation: Legion Tactical Support Squads and Legion Heavy Support Squads gain +1 Ballistic Skill and Split Fire.
+• Tactical Advance: Legion Tactical Squads increase the range of Heart of the Legion from 6" to 12" and gain Relentless.
+• Vicious Assault: Legion Assault Squads, Assault Support Squads and Despoiler Squads gain +1 Weapon Skill and Furious Charge (1).
+Limitations
+• The Compulsory Troops choices must be filled by at least two Legion Tactical Squads at maximum size.
+• The Detachment must include at least one Legion Assault Squad or Legion Despoiler Squad, and at least one Legion Heavy Support Squad.
+• Only a Primary Detachment with the Loyalist allegiance may use this Rite of War.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bfd2-33a3-f35f-9ad3" name="The Iron Without (IW)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="The Iron Without" id="848f-7fe2-42cd-5e8b" hidden="false">
+              <description>Effects
+• Legion Heavy Support Squads may be taken as non-Compulsory Troops.
+• Before the game, assign at least 3 Infantry or Cavalry units to a Flanking Assault; they gain Outflank. Lords of War cannot be assigned.
+• Infantry and Dreadnought units gain Hatred (Traitors) while within 18" of the Detachment's Warlord.
+Limitations
+• The Detachment must include a Warsmith, a Siege Breaker Consul or Barabas Dantioch, and that model must be the army's Warlord.
+• The Detachment may take only one Fast Attack choice.
+• Only a Detachment with the Loyalist allegiance may use this Rite of War.
+• No models may be assigned to a Deep Strike Assault or Subterranean Assault.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9e0c-55ba-f962-3bac" name="Bolt From Blue Skies (WS)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Bolt From Blue Skies" id="ca66-c308-c896-6eeb" hidden="false">
+              <description>Effects
+• Models with Legiones Astartes (White Scars) add +1" to their Charge distance if their unit moved its maximum Movement distance in the preceding Movement phase.
+• Under the same condition, they may re-roll To Wound rolls of 1 and failed Armour Penetration rolls.
+• Legion Outrider Squadrons and Legion Sky-Hunter Squadrons may be taken as Troops, and gain the Line Sub-type when taken as Compulsory Troops.
+• Cavalry with the Antigrav Sub-type gain Shrouded (6+) if they moved in the preceding Movement phase.
+Limitations
+• All Independent Characters must take a Legion Scimitar Jetbike, Shamshir Jetbike, Sojutsu Pattern Voidbike or Legion Spatha Combat Bike.
+• If all Cavalry units in the Detachment are removed from play, your opponent gains an additional D3 Victory Points.
+• Heavy Support and Lords of War choices must have Movement 16 or higher.
+• The Compulsory Troops choices must be Legion Outrider Squadrons or Legion Sky-Hunter Squadrons.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6289-7a50-cbe2-e5f4" name="The Gates of Hel (IH)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="The Gates of Hel" id="928d-74af-b069-6905" hidden="false">
+              <description>Effects
+• Iron Revenants may be taken as Troops. Iron Revenants taken as Compulsory Troops gain the Line Sub-type and Heart of the Legion.
+• Any Ghola unit with at least one model within 12" of a Legion Techmarine, or of an Independent Character with Legiones Astartes (Iron Hands), may re-roll Feel No Pain rolls of 1.
+• Thallax Cohorts (Liber Mechanicum) may be taken as non-Compulsory Troops.
+Limitations
+• The Warlord must be a model with the Keys of Hel upgrade, or Lord Crius.
+• The Detachment may not include Ferrus Manus, may not take an Allied Detachment, and may not take Fortifications.
+• All Compulsory Troops must be Iron Revenants.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2d73-62e5-4df2-8ac2" name="The Red Marked (UM)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e0f-3552-8842-f281" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="The Red Marked" id="7c2d-ed89-9846-ff3c" hidden="false">
+              <description>Effects
+• All models with Legiones Astartes (Ultramarines) in the Detachment gain Hatred (Traitors).
+• Red-Marked Squads may be taken as Troops, and gain the Line Sub-type when taken as Compulsory Troops.
+• Independent Characters in the Detachment may buy Brothers in Censure for +10 points.
+Limitations
+• The Detachment may not include Roboute Guilliman, and may not take an Allied Detachment.
+• Aeonid Thiel must be the Compulsory HQ choice and the Warlord.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0ce6-15b0-fac8-e717" name="Rukal Breacher Battalion (SoH)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Rukal Breacher Battalion" id="ab15-ee41-bd29-a1d1" hidden="false">
+              <description>Effects
+• Models with Legiones Astartes (Sons of Horus) gain Rage (2) when they successfully charge an enemy unit already locked in combat, or one that is the target of at least one other charge in the same Charge sub-phase.
+• Rukal Breacher Squads may be taken as Troops, and gain the Line Sub-type when taken as Compulsory Troops.
+• Infantry (Heavy) units equipped with Boarding Shields gain Chosen Warriors and Heart of the Legion.
+Limitations
+• The Detachment must take a Legion Centurion with the Dark Emissary Consul upgrade as an HQ choice, in addition to the Praetor or other character that allows the Rite of War.
+• The Detachment must have the Traitor allegiance.
+• The Detachment must include more units with the Heavy Sub-type than without.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <modifiers>

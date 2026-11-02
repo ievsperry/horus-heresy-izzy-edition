@@ -508,6 +508,33 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Rule text only: the Arcuitor's Hunter Killer swap, the Mechadendrite Hive's "if it does not take" limits, the
   Crusader Host's Questoris-only and Primary-only limits and the Skitariiax-Protectorate's Compulsory Troops
   limit. It refuses to run on a catalogue that already has the expansion.
+- `python3 homebrew/add_centura.py` adds the Liber Centura expansion (the Claude Doc "Liber Centura for The Horus
+  Heresy 2.0 — Homebrew Conversion", kept as `source/centura.md`). Run it after the doc's 55 special rules are in
+  `additional-special-rules.md` and the game system. It writes:
+  - 29 units for every Legion in `2022 - Legiones Astartes.cat`, root-linked from the library so every Legion
+    catalogue has them. The three Saturnine units the library already has are left as they are, since the doc
+    follows the Saturnine conversion for them. Consularis choices link the official Legiones Consularis pick;
+    Pater Consularis upgrades carry the doc's text; the official items the doc names (Terminator armours, in-built
+    weapons, Quad Launcher shells, the Ferromantic Deflector) link or copy the official entries;
+  - 59 Legion units and characters into each `2022 - LA - <Legion>.cat`. The doc gives these no Force
+    Organisation slot, so it infers one: characters are HQ, Omegon a Primarch, the Wind Riders, Ar'Kan Attack
+    Speeder, Darkwing Gunship and Raptors Fast Attack, the Firestorm Bombard and Infernus Predator Heavy Support,
+    the rest Elites. The Rhino Castellan is a Dedicated Transport pick on the Iron Warriors units that can take a
+    Rhino. The official Sanguinary Guard Squad stays as it is (official rules take priority, as the doc says);
+  - the doc's 9 Rites of War in the game system's Rites of War pick (each Legion's shown only to that Legion, as the
+    official ones are), its additions to Angel's Wrath, Fury of the Ancients, Pride of the Legion and Sky-Hunter
+    Phalanx appended to their text, and its 10 Legiones Consularis upgrades in the official pick (Lodge Master for
+    a Traitor army, Terran-Born Crusader for a Loyalist one, each Legion's own for that Legion, one per army where
+    the doc says so);
+  - the doc's Additional Options on the official units (Praetors, Castra Ferrum and Deredeo Dreadnoughts,
+    Terminator Indomitus, Primaris-Lightning, Spatha, Tarantula, Achilles, Macharius, Minotaur, Whirlwind, Medusan
+    Immortals);
+  - each Legion's own upgrades for any of its units (Xenobane Cannons, Olympian Shrapnel Weapons, Power Tulwars,
+    Helfrost Pistols, Ghola Sub-type, Medusan Zweihander, The Keys of Hel, Achea Force Stave, Conflagration Melta
+    Weapons, Magma Plating, the Thousand Sons disciplines) as rules on the Legion's entry in its catalogue.
+  Rule text only: the Rites' effects and limitations, the Legion upgrades above, the per-five-models and
+  up-to-three limits of the Additional Options, the Spatha Sergeant and extra Whirlwinds, and the rules the doc's
+  Rules Checklist leaves undefined. It refuses to run on a library that already has the expansion.
 - `python3 homebrew/build_dark_compliance.py` builds `Homebrew - Armies of Dark Compliance.cat`, the doc's Army of
   Dark Compliance: a Primary Detachment on the Crusade chart from both the Imperialis Militia and Legiones Astartes
   lists. It links both lists rather than copying them, and its own root entries are: "Army of Dark Compliance" (the

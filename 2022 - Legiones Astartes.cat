@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="225" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="226" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -10436,6 +10436,18 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="cf80-07a8-b770-048c" name="Deredeo Atomantic Pavaise" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile name="Deredeo Atomantic Pavaise" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="f809-d7b2-b75a-41fc">
+                      <characteristics>
+                        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The bearer has a 4+ Invulnerable Save against Shooting Attacks; this does not replace the effects of an atomantic deflector. Friendly Infantry wholly within 4" of the Deredeo's base gain a 6+ Invulnerable Save against Shooting Attacks, or +1 to an existing Invulnerable Save, to a maximum of 4+. This has no effect in close combat and does not stack with other effects that improve an Invulnerable Save, including other pavaises.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="5b40-de41-8989-b648" name="Aiolos Missile Launcher" hidden="false" collective="false" import="true" targetId="273e-a288-f4cf-3b49" type="selectionEntry">
@@ -14583,6 +14595,25 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
           </modifierGroups>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="dca2-7075-5a63-c897" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="8131-9717-27fb-0ad4" name="Upgrade any one weapon to have Master-Crafted" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3997-ef49-dc4b-965f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <rules>
+                <rule name="Upgrade any one weapon to have Master-Crafted" id="b8e7-9366-63f9-84fb" hidden="false">
+                  <description>Upgrade any one weapon to have Master-Crafted (+10 points).</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ba0d-0b4a-2122-951c" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
@@ -15219,6 +15250,25 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
           </modifierGroups>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7d8f-8eb2-d0dd-b53c" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="cc05-33bd-1830-f848" name="Upgrade any one weapon to have Master-Crafted" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0b4-e382-9d80-9ed8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <rules>
+                <rule name="Upgrade any one weapon to have Master-Crafted" id="f19a-973e-5d7a-7d5f" hidden="false">
+                  <description>Upgrade any one weapon to have Master-Crafted (+10 points).</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="467b-d1c9-09dc-f5d3" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
@@ -45741,6 +45791,21 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
+                <entryLink id="5515-a15a-ea69-2133" name="Volkite Culverin" hidden="false" collective="false" import="true" targetId="be59-37cb-5a81-0183" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ba42-50d6-3eb4-9bf4" name="Gravis Siege Drill" hidden="false" collective="false" import="true" targetId="ef07-fbf3-b551-92e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="715d-bd74-3827-58c4" name="Seismic Hammer" hidden="false" collective="false" import="true" targetId="6cea-0216-a1df-25c4" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="d276-79d0-2989-80dd" name="2) Weapon Option 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="0f35-46b7-e7fb-9d8d">
@@ -45903,6 +45968,65 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ac7-aeda-1fae-8a0a" type="max"/>
               </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="689b-732c-f70d-ff51" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="51a3-e374-18b1-a8d8" name="Frag Launchers" hidden="false" collective="false" import="true" targetId="c8d5-fc93-2b32-e3b6" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="daf7-b23b-5474-5836" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cdc-e606-8fef-5eda" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="20d0-4918-ab72-6b3b" name="In-built Graviton Gun (in place of in-built Combi-Bolter)" hidden="false" collective="false" import="true" targetId="b65a-bd50-8ae6-7d5c" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ce9-e2d6-4c36-475f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink id="a0d7-8ab6-775e-d182" name="In-built Heavy Flamer (in place of in-built Combi-Bolter)" hidden="false" collective="false" import="true" targetId="af54-7614-d4c3-54ec" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9761-f32d-df64-b534" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="23ce-d42a-82ae-c711" name="In-built Meltagun (in place of in-built Combi-Bolter)" hidden="false" collective="false" import="true" targetId="f865-7592-d88a-1c92" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8ab-21a5-3e81-f322" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink id="87f4-9572-5802-7bed" name="In-built Plasma Blaster (in place of in-built Combi-Bolter)" hidden="false" collective="false" import="true" targetId="0ed6-1ce4-3b6d-5e67" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0627-b113-9fbf-0929" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2fd9-f09f-032d-048c" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc7b-24a7-a1dd-dc1e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -46437,6 +46561,11 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                       </costs>
                     </entryLink>
+                    <entryLink id="45ff-9064-fc63-1ab4" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="8da3-424f-f00d-6a11" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="1af2-262c-0278-6061" name="1) Ranged Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce8a-5c75-47b6-8fcd">
@@ -46464,6 +46593,21 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                     <entryLink import="true" name="Xenos Deathlock" hidden="false" id="b11e-ef85-3b7b-923f" type="selectionEntry" targetId="2c50-304f-b74a-33da">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="8c64-5df8-6b97-ea3a" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="cd52-e9e8-3ab1-995c" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="1498-ad07-04ab-253a" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="43f5-3815-6b3a-a363" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="7ea4-dc8c-2018-b9b4" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="6f6e-ad55-e093-6503" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -47037,6 +47181,18 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
               </modifiers>
             </entryLink>
             <entryLink id="3f22-e7fb-c3fa-638c" name="The Spreading Corruption" hidden="false" collective="false" import="true" targetId="f783-f0ea-fe35-cdeb" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8a07-1505-dd45-434c" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="069c-1c7d-0564-1d7c" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="bde9-5abf-ec3d-2273" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93b6-fddf-6b19-64a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -48795,6 +48951,11 @@ A model equipped with a Legion Spatha Attack Bike must change its Unit Type to C
             <entryLink id="3c0f-883a-0088-f61e" name="Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry"/>
             <entryLink id="5933-0e86-c10f-5f07" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry"/>
             <entryLink id="4dec-b767-c96b-fdbb" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+            <entryLink id="6bd6-e214-cc53-c2ed" name="Volkite Culverin" hidden="false" collective="false" import="true" targetId="be59-37cb-5a81-0183" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="ba75-6e7b-fc74-f866" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
@@ -48855,6 +49016,41 @@ A model equipped with a Legion Spatha Attack Bike must change its Unit Type to C
             <entryLink id="1674-c173-085e-c790" name="Legion Vexilla" hidden="false" collective="false" import="true" targetId="21b1-2a90-9826-1782" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12ce-8c05-7f4d-4a0e" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5ae3-61ba-94bd-a0ab" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="4f32-3a0d-ca58-ca55" name="If the unit has at least three models, one may be upgraded to a Legion Spatha Attack Bike Sergeant (M14 WS4 BS4 S4 T4 W3 I4 A3 Ld8 Sv3+); it may still upgrade its bike's Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6ca-479d-f61f-92ee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <rules>
+                <rule name="If the unit has at least three models, one may be upgraded to a Legion Spatha Attack Bike Sergeant (M14 WS4 BS4 S4 T4 W3 I4 A3 Ld8 Sv3+); it may still upgrade its bike's Heavy Bolter" id="239c-5a88-3099-3c56" hidden="false">
+                  <description>If the unit has at least three models, one may be upgraded to a Legion Spatha Attack Bike Sergeant (M14 WS4 BS4 S4 T4 W3 I4 A3 Ld8 Sv3+); it may still upgrade its bike's Heavy Bolter (Free).</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="b5b3-eca3-2d8f-0860" name="Legion Vexilla" hidden="false" collective="false" import="true" targetId="21b1-2a90-9826-1782" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4505-5521-2b1c-348e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="1a69-a2d5-fd79-e1d4" name="Nuncio Vox" hidden="false" collective="false" import="true" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8735-ff22-aa37-453e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -50566,6 +50762,23 @@ A model equipped with a Legion Spatha Attack Bike must change its Unit Type to C
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="d3a3-dc68-5f95-09fa" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="ac9e-b06b-80b2-57fb" name="Up to two additional Legion Whirlwinds" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05bc-9d92-77fb-d576" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <rules>
+                <rule name="Up to two additional Legion Whirlwinds" id="8331-a241-53fb-aab8" hidden="false">
+                  <description>Up to two additional Legion Whirlwinds (+100 points).</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="1096-b982-95fc-da62" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="0873-34dd-e52d-d33c" type="selectionEntry">
@@ -51795,6 +52008,105 @@ A model equipped with a Legion Spatha Attack Bike must change its Unit Type to C
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="56d9-837f-1d44-11d2" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="4236-ac1d-fbbf-4379" name="EM-Storm Charges" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3360-e70d-ed17-5b25" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="EM-Storm Charge" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5450-4087-a39a-4db6">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">Bomb</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Bomb 2, Large Blast (5"), Haywire, Concussive, One Use</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Blast" id="141e-efcb-d859-dab5" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+                <infoLink name="Haywire" id="0918-8829-696c-98b8" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6b2d-8c03-dbde-f102" name="Phosphex Cluster Bombs" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9344-ab90-21c0-c24b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Phosphex Cluster Bombs" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="90c5-4d47-da5c-c92b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">Bomb</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Bomb 3, Blast (3"), Barrage, Poisoned (3+), Crawling Fire, Lingering Death, One Use</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Blast" id="a4ac-1179-13ce-73a9" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+                <infoLink name="Barrage" id="bc87-df9a-4b75-cdd6" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+                <infoLink name="Crawling Fire" id="e280-4de6-3b5b-261e" hidden="false" targetId="8258-a7af-e4df-531d" type="rule"/>
+                <infoLink name="Lingering Death" id="56e1-8836-ae29-c7a5" hidden="false" targetId="be87-f0e5-7446-972b" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9fd4-8937-f994-03a7" name="Battle Servitor Control" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b57a-1eea-1274-c359" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Battle Servitor Control" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1d8b-34e3-4f7f-084c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The model gains Sunder.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="7fc6-1be5-7362-a324" name="Hull (Front) Mounted Predator Cannon" hidden="false" collective="false" import="true" targetId="5dae-7de0-325d-589b" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1d4-1050-ec0a-bcf7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink id="5af5-3bc3-72e0-5c26" name="Multi-Lasers" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96a7-eb7d-5580-c1a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="8df4-4769-6235-a200" name="Reaper Autocannons" hidden="false" collective="false" import="true" targetId="b87f-48de-6ced-043b" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acf1-4980-d1db-e951" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink id="4e52-06a9-2532-a434" name="Cyclone Missile Launcher" hidden="false" collective="false" import="true" targetId="3e5a-ad5d-4607-7489" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80ee-7f7f-f332-20e0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="1bd6-8e12-f3e1-c489" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
@@ -52157,6 +52469,78 @@ Pinning, One Use</characteristic>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
+            <selectionEntry id="f873-9f7e-cec9-d880" name="Gravis Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile name="Gravis Heavy Flamer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="b683-a1c2-fc3e-e9aa">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Torrent (8")</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="729f-ba9a-14d2-3e59" name="Twin-Linked Rotor Cannons" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="9ccc-eb1a-c073-d707" name="Rotor Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">30"</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 4, Pinning, Shell Shock (1)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Twin-linked" id="e1cf-f2c3-ccbb-cdf6" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+                <infoLink name="Pinning" id="b36a-e544-0c90-6b38" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c1e0-3bbf-8873-2828" name="Multi-Melta and Searchlight" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="ce79-a780-a0d8-aed8" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7f6-67f2-7967-41b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b118-47dc-ccd4-a9e8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="03e9-7e1a-4d32-18eb" name="Searchlight" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="730b-64b6-a147-8179" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fa0-cccc-cb65-67ee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="71ff-4cde-11c2-bf5f" name="Quad Launcher (with Frag and Shatter Shells)" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="a5ad-e460-85d2-8385" name="Quad Launcher - Frag" hidden="false" collective="false" import="true" targetId="333a-6c28-1031-9134" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a70-ff37-4b4c-c0cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6cd-6d4e-1ac3-773f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="0053-6ca1-fcce-6376" name="Quad Launcher - Shatter" hidden="false" collective="false" import="true" targetId="adb6-7963-11bd-e72b" type="selectionEntry">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f75e-610f-f70c-5683" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1853-c15d-5f85-c911" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <modifierGroups>
             <modifierGroup type="and">
@@ -52180,6 +52564,18 @@ Pinning, One Use</characteristic>
               <comment>The Flesh Is Weak</comment>
             </modifierGroup>
           </modifierGroups>
+          <entryLinks>
+            <entryLink id="18c0-fdba-4142-6789" name="Multi-Lasers" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="08fc-c8b9-a964-198d" name="Volkite Dual-Culverin" hidden="false" collective="false" import="true" targetId="f4d8-bf09-2552-1c6a" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="c047-0fa8-d8c0-73ea" name="Legiones Unit Upgrades:" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
@@ -52251,6 +52647,70 @@ Pinning, One Use</characteristic>
             </entryLink>
             <entryLink id="5908-4378-65d6-5b3a" name="The Spreading Corruption" hidden="false" collective="false" import="true" targetId="f783-f0ea-fe35-cdeb" type="selectionEntry"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6462-a216-6cbc-e82d" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="1828-94c7-9dce-6ee2" name="Hyperios Command Platform" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="362c-46a6-9aff-57e5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hyperios Command Platform" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="581d-dc33-4ea3-fedb">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While it is on the table, the bearer gives Split Fire to all Hyperios air-defence launchers in its unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8ee6-4e3c-8393-65a0" name="Forward Deployment" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f2c-5b92-6ba5-1ba8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Forward Deployment" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ba3a-b647-1e13-6842">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The unit has Scout, and cannot be placed into Reserves.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5dc8-4ee2-04d3-8222" name="Concealed Positions" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1d6-e9fc-f1dc-b2e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Concealed Positions" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="543d-3848-579e-2151">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The unit has Shrouded (4+) until it first fires any of its weapons.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="99e9-51c1-4b42-5556" name="Drop Capsules" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1133-0715-bdd4-fa1c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Drop Capsules" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="4e1f-2fa3-9b09-2d58">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The unit has Deep Strike.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -53021,6 +53481,25 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="d132-9b04-709d-09a6" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="e0fb-9f74-99bf-59aa" name="Phosphex Canister Shot" hidden="false" collective="false" import="true" targetId="54f7-ff39-7324-e4d3" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20">
+                  <repeats>
+                    <repeat field="selections" scope="4996-8971-603f-e2a2" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b62d-f8f3-a7ed-fa7c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="015e-3f00-2006-7218" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
@@ -53694,6 +54173,26 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="12bc-b618-f23e-5e17" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="0790-8abd-2df6-a09d" name="Sponson Mounted Heavy Bolters (in place of Sponson Mounted Heavy Stubbers)" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fc8-8cb4-0e28-4227" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="a71b-ec1a-96fb-633e" name="Sponson Mounted Heavy Flamers (in place of Sponson Mounted Heavy Stubbers)" hidden="false" collective="false" import="true" targetId="70ff-3191-63bf-0278" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="929d-1750-7020-8ce2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="3dab-3f91-0f4b-6f35" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
@@ -53869,6 +54368,58 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0195-5fd8-3f51-c08d" name="Liber Ingenium options" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="b36a-e780-4d4d-94a0" name="Pintle Mounted Twin-Linked Bolter" hidden="false" collective="false" import="true" targetId="e31a-fd70-35c7-8bed" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2cb-fbfa-e5ac-fc48" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="c63b-93c7-af35-9bc8" name="Pintle Mounted Heavy Flamer" hidden="false" collective="false" import="true" targetId="70ff-3191-63bf-0278" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="090a-e4c8-ecc1-d2fa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9836-4d3a-b64d-bee7" name="Pintle Mounted Combi-Weapon" hidden="false" collective="false" import="true" targetId="4d7e-634f-c1ed-4e9c" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7905-d872-3685-017b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9a17-ad93-34f1-14ad" name="Pintle Mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3760-7592-b565-5a97" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink id="f7f2-4d06-e720-6db7" name="Pintle Mounted Havoc Launcher" hidden="false" collective="false" import="true" targetId="bde9-5abf-ec3d-2273" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bbf-f7e3-f09b-6e64" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink id="163b-a709-c844-269d" name="Pintle Mounted Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="398e-d487-2d13-d50f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -91997,6 +92548,212 @@ Any Solar Auxilia Rifles Sections included through the use of the Overseer’s R
               </conditions>
             </modifier>
           </modifiers>
+        </selectionEntry>
+        <selectionEntry id="8a30-0f9d-8f26-650e" name="Lodge Master" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Legiones Consularis: Lodge Master" id="4f40-0a4b-ef0b-cdd9" hidden="false">
+              <description>Only a Centurion with the Traitor allegiance may take this upgrade. The Lodge Master gains Preferred Enemy (Loyalists), Exemplar of Treason and I Can't Say.
+Exemplar of Treason. The Lodge Master's Leadership is 10, and the Lodge Master and any unit it joins automatically pass Leadership tests.
+I Can't Say. Before the game, its Detachment secretly notes one objective below, revealed only after the game. If the objective is not achieved by the end of the game, your opponent gains 1 Victory Point.
+• Hand of the Warmaster: when totalling Victory Points at the end of the game, the Lodge Master counts as having the Line Sub-type for controlling objectives. If it holds an objective outside your deployment zone at the end of the game, you gain 1 Victory Point.
+• Killer of Gods and Kings: if an enemy Primarch is slain by a model with the same Legiones Astartes (X) as the Lodge Master, you gain 1 Victory Point.
+• Mentor to All: select a friendly Independent Character, other than the Lodge Master, from the same Detachment. If it survives the game, you gain 1 Victory Point.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ee01-d2f3-dbc4-aa4c" name="Terran-Born Crusader" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d0b6-712f-0b12-a308" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Legiones Consularis: Terran-Born Crusader" id="62ea-275a-622a-416c" hidden="false">
+              <description>Only a Centurion with the Loyalist allegiance may take this upgrade. The Terran-Born Crusader gains Blood of a Thousand Worlds and In the Light of the Emperor, and may give one of its weapons Master-Crafted at no cost.
+Blood of a Thousand Worlds. The Terran-Born Crusader and any unit it joins gain Preferred Enemy (Traitor) and Stubborn.
+In the Light of the Emperor. The Terran-Born Crusader gains Adamantium Will (5+). Units with the Corrupted or Daemon Sub-type within 12" of it suffer -1 Leadership for Morale tests. When working out the turn-based bonuses or penalties of a Daemon unit, any such unit within 12" of it counts the Game Turn as one higher than it is.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2790-894c-500b-b752" name="The Lord Cypher" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="b2b4-2198-0b90-dd9f" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5346-59aa-9f90-abfa" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Legiones Consularis: The Lord Cypher" id="dfd2-bf26-fe4e-2c76" hidden="false">
+              <description>A Legion Centurion, Tartaros Centurion, Indomitus Centurion or Cataphractii Centurion with Legiones Astartes (Dark Angels) may take this instead of a standard Consul upgrade. Only one Lord Cypher may be taken per army.
+• Special rules: the Lord Cypher and all models in a unit he joins gain Fearless and Hatred (Everything!). His Leadership becomes 10, and he gains For Caliban and Terra!.
+• Wargear: gains two bolt pistols and a Calibanite warblade at no cost. He may replace his bolt pistols with a Volkite Serpenta (+2), Hand Flamer (+2), Plasma Pistol (+5), Inferno Pistol (+5), Archaeotech Pistol (+10) or Disintegrator Pistol (+15).
+For Caliban and Terra! Once per battle, at the start of one of the controlling player's turns, the Lord Cypher may take a Leadership test. If passed, choose one friendly unit within 18" and line of sight: it gains Hatred (Everything!) until the start of the controlling player's next Game Turn, and automatically regroups if Falling Back or stops being Pinned. If failed, the unit still regroups and stops being Pinned, but gains nothing else.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="88f6-1a83-ad2f-2d30" name="Kakophonix Prime" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="3edc-a1b9-6dc6-b1ea" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Legiones Consularis: Kakophonix Prime" id="1a3f-c085-8303-b498" hidden="false">
+              <description>A Legion Centurion with Legiones Astartes (Emperor's Children) and the Traitor allegiance may take this instead of a standard Consul upgrade.
+• Special rules: gains Choir of Screams, Fearless and Rising Crescendo, and the Heavy Sub-type. His Leadership becomes 10.
+• Wargear: gains the Sonic Shrieker surgical augment and a Cacophony (Liber Hereticus, page 161) at no cost. He may not take a bike or jetbike.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4292-ef9d-8eeb-7916" name="Priest of Iron" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4916-965e-8339-44f6" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Legiones Consularis: Priest of Iron" id="b2df-9790-96f5-58ae" hidden="false">
+              <description>A Legion Centurion, Tartaros Centurion, Cataphractii Centurion or Indomitus Centurion with Legiones Astartes (Space Wolves) may take this instead of a standard Consul upgrade.
+• Special rules: gains Battlesmith (4+), Legiones Thallaxes, Master of Automata and Runis Machinitor.
+• Wargear: gains a machinator array and a Helfrost Pistol at no cost. May take a cortex controller (+15) and a cyber-familiar (+20).
+Runis Machinitor. Before the game, choose up to two vehicles in the Priest of Iron's Detachment. For the whole game they may move at up to Cruising Speed in the Movement phase but count as not having moved for their Shooting Attacks.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c83a-dae8-3807-03bf" name="Seraphim Majoris" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="296e-301e-3ce1-1c15" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Legiones Consularis: Seraphim Majoris" id="7ae3-f08a-86cf-de45" hidden="false">
+              <description>A Legion Centurion with Legiones Astartes (Blood Angels) may take this instead of a standard Consul upgrade.
+• Special rules: gains Flaring Heavenfall and Bloodlust of the Damned.
+• Wargear: gains an Angelus Pattern Jump Pack at no cost.
+Bloodlust of the Damned. When a unit containing a Seraphim Majoris destroys an enemy Infantry or Cavalry unit, it gains Rage (2). Each further unit it destroys this way increases Rage by 1, to a maximum of Rage (4).
+Flaring Heavenfall. When a unit containing a Seraphim Majoris completes a Deep Strike, every enemy unit within 6" of a model with this rule must take an immediate Blind test at -1 Initiative.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f849-4858-4426-142d" name="Lanistus" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="90ee-77dd-1b7f-ddfe" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Legiones Consularis: Lanistus" id="1519-e927-77bb-cbe1" hidden="false">
+              <description>A Legion Centurion with Legiones Astartes (World Eaters) may take this instead of a standard Consul upgrade.
+• Special rules: gains Familia Gladiatorium.
+• Wargear: replaces his Chainsword with a Caedere Weapon (or a pair of Falax Blades) at no cost. He may not take a Legion Spatha Combat Bike, Legion Scimitar Jetbike, Legion Warhawk Jump Pack, Bolter, or Minor or Magna Combi-Weapon.
+Familia Gladiatorium. During army selection, a Detachment with a Lanistus may select one Legion Tactical Squad or Legion Despoiler Squad with Legiones Astartes (World Eaters) in the same Detachment. The Lanistus must join it before the game and may not leave it; no other Independent Character may join it, and it loses the Line Sub-type. While the Lanistus is alive, every model in the unit (the Lanistus included) gains Furious Charge (1) and Counter-Attack (1), and the unit gains Savage Arsenal.
+Savage Arsenal. Any model in a unit with this special rule may exchange a Chainsword for a single Caedere Weapon for +10 points per weapon.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4c46-9020-1df4-7761" name="Alchymus" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="dd1f-1c51-706c-e5f7" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Legiones Consularis: Alchymus" id="c565-9620-3419-a91d" hidden="false">
+              <description>A Legion Centurion with Legiones Astartes (Death Guard) may take this instead of a standard Consul upgrade.
+• Special rules: gains Alchem Munitions and Withering Aura.
+• Wargear: gains Toxin Bombs at no cost. He may not take a Legion Spatha Combat Bike, Legion Scimitar Jetbike or Legion Warhawk Jump Pack.
+• For the Creeping Death Rite of War, a Centurion with this upgrade may fill the Limitation that otherwise needs a Legion, Cataphractii or Tartaros Centurion with the Siege Breaker upgrade.
+Alchem Munitions. The Alchymus and any unit he joins gain Poisoned (3+) for all melee attacks, and Fleshbane and Gets Hot for all ranged attacks made with Bolt and Auto weapons.
+Withering Aura. Any model locked in combat with an Alchymus that does not have Legiones Astartes (Death Guard) suffers -1 Strength for the duration of the combat.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1786-9f6f-d474-1ba5" name="The Pyre Guard" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="c805-ca3a-ff93-5e2f" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Legiones Consularis: The Pyre Guard" id="cbf4-4d3a-fff9-46e6" hidden="false">
+              <description>A Legion Centurion, Cataphractii Centurion, Indomitus Centurion or Tartaros Centurion with Legiones Astartes (Salamanders) may take this instead of a standard Consul upgrade.
+• Special rules: +1 Weapon Skill and Never Back Down (Liber Astartes, page 108). He may give one melee weapon Master-Crafted at no cost. For Rites of War, he counts as a Legion Champion.
+• Wargear: replaces his Refractor Field with an Iron Halo, and his Bolter with a Minor or Magna Combi-Weapon, at no cost. He may take a Dragonscale Storm Shield for +10 points.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6196-25d7-9822-51b9" name="Animatus" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="c0df-c1fa-5ddc-9ee5" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Legiones Consularis: Animatus" id="0a70-d1c8-8a78-b6d6" hidden="false">
+              <description>A Legion Centurion with Legiones Astartes (Alpha Legion) may take this instead of a standard Consul upgrade.
+• Special rules: gains Effigist of Contempt.
+• Wargear: gains The Hydra's Teeth at no cost. He may not take a Legion Spatha Combat Bike or Legion Scimitar Jetbike.
+Effigist of Contempt. A model with this special rule must issue or accept a challenge whenever possible. In a challenge, it may raise its Weapon Skill and Initiative to match its opponent's for the duration of the challenge.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>

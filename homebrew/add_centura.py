@@ -11,6 +11,7 @@ import os
 import re
 import sys
 import xml.etree.ElementTree as ET
+from xml.sax.saxutils import escape
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import add_mechanicum as am  # noqa: E402  (the shared transplant pipeline)
@@ -261,6 +262,8 @@ def consularis_links(b, entries):
                           id=et.mid(u.get("id"), "consularis"), type="selectionEntryGroup", targetId=CONSULARIS)
 
 
+DOC_ENTRIES = []  # every Builder entry, for the options to copy weapons the doc defines
+
 # ---- the Legion-specific units
 
 
@@ -382,6 +385,7 @@ def add_legions():
         key = f"liber centura {legion}"
 
         def hook(b, root, entries, key=key):
+            DOC_ENTRIES.extend(root.find("sharedSelectionEntries"))
             consularis_links(b, entries)
             return fill_empty(b, root, key) | profile_owners(root)
 
@@ -393,12 +397,269 @@ def add_legions():
             print(f"  Rhino Castellan on {rhino_castellan(path)} units")
 
 
+# ---- Rites of War (the game system's pick)
+
+
+RITES = "cf3e-1d75-6f91-651f"
+LEGION_CODES = {"Dark Angels": "DA", "Emperor's Children": "EC", "Iron Warriors": "IW", "White Scars": "WS",
+                "Space Wolves": "SW", "Imperial Fists": "IF", "Night Lords": "NL", "Blood Angels": "BA",
+                "Iron Hands": "IH", "World Eaters": "WE", "Ultramarines": "UM", "Death Guard": "DG",
+                "Thousand Sons": "TS", "Sons of Horus": "SoH", "Word Bearers": "WB", "Salamanders": "SAL",
+                "Raven Guard": "RG", "Alpha Legion": "AL"}
+MODIFIED_RITES = {"Angel's Wrath": "ed1f-9473-df70-4544", "Fury of the Ancients": "b5b7-3410-a8e5-95a6",
+                  "Pride of the Legion": "4ca1-b02c-e2c7-5f09", "Sky-Hunter Phalanx": "2c36-fde3-14ed-4db4"}
+
+
+def rite_text(body):
+    """A Rite's block as the game system words its Rites: 'Effects' and 'Limitations' with bullets, its own
+    special rules after them."""
+    out = []
+    for ln in body.split("\n"):
+        ln = ln.strip()
+        if not ln or re.fullmatch(r"\*[^*].*\*", ln):
+            continue
+        m = re.fullmatch(r"\*\*(Effects|Limitations)\*\*", ln)
+        if m:
+            out.append(m.group(1))
+        elif ln.startswith("- "):
+            out.append("• " + bc.strip_md(ln[2:]).replace("*", ""))
+        else:
+            out.append(bc.strip_md(ln).replace("*", ""))
+    return "\n".join(out)
+
+
+def rites():
+    """The doc's Rites of War in the game system's Rites of War pick (each Legion's shown only to that Legion, as
+    the official ones are), and its additions to four official Unaligned Rites appended to their text."""
+    G = et.NS["gst"]
+    gst = et.Text(et.GST)
+    groot = ET.fromstring(gst.s.encode("utf-8"))
+    group = next(g for g in groot.iter(G + "selectionEntryGroup") if g.get("id") == RITES)
+    existing = {e.get("name") for e in group.iter(G + "selectionEntry")}
+    text = doc()
+    blocks = [(None, m) for m in re.finditer(r"^#### Rite of War: ([^\n]+)\n(.*?)(?=^#{2,4} |\Z)",
+                                              section(text, "Rites of War"), re.M | re.S)]
+    for legion, sec in legion_sections():
+        blocks += [(legion, m) for m in re.finditer(r"^#### Rite of War: ([^\n]+)\n(.*?)(?=^#### |\Z)", sec,
+                                                    re.M | re.S)]
+    new = []
+    for legion, m in blocks:
+        name = m.group(1).strip() + (f" ({LEGION_CODES[legion]})" if legion else "")
+        if name in existing:
+            continue
+        rid = bc.make_id("centura rite", name)
+        e = et.E("selectionEntry", id=rid, name=name, hidden=False, collective=False, import_=True, type="upgrade")
+        if legion:
+            # the same gating as an official Rite of this Legion
+            twin = next(x for x in group.iter(G + "selectionEntry") if x.get("name").endswith(f"({LEGION_CODES[legion]})"))
+            mods = twin.find(G + "modifiers")
+            if mods is not None:
+                c = et.deep(mods)
+                for x in c.iter():
+                    x.tag = x.tag.split("}")[-1]
+                    if x.get("id"):
+                        x.set("id", bc.make_id(rid, x.get("id")))
+                e.append(c)
+        bc.add_rule(e, m.group(1).strip(), rite_text(m.group(2)), rid)
+        bc.add_cost(e, 0)
+        new.append(e)
+    if new:
+        gst.add(RITES, "selectionEntries", new)
+    for name, eid in MODIFIED_RITES.items():
+        add = re.search(r"^- \*\*" + re.escape(name) + r":\*\* (.+)$", text, re.M).group(1)
+        start, end, _, _ = gst.block(eid)
+        body = gst.s[start:end]
+        if "Liber Centura:" in body:
+            continue
+        k = body.index("</description>")
+        body = body[:k] + gst.nl + "Liber Centura: " + escape(add) + body[k:]
+        gst.s = gst.s[:start] + body + gst.s[end:]
+    gst.save()
+    return len(new)
+
+
+# ---- Legiones Consularis (the library's official pick)
+
+
+TRAITOR, LOYALIST = "f9c0-0c5a-3e24-58c7", "d0b6-712f-0b12-a308"
+
+
+def legion_ids():
+    """{Legion: the game system's Legion choice ('IV: Iron Warriors'), the one the official catalogues gate on}."""
+    G = et.NS["gst"]
+    gst_text = open(et.GST, encoding="utf-8").read()
+    lib_text = open(LIBRARY, encoding="utf-8").read()
+    out = {}
+    for e in ET.parse(et.GST).getroot().iter(G + "selectionEntry"):
+        m = re.fullmatch(r"[IVXL]+: (.+)", e.get("name") or "")
+        if m and m.group(1) in LEGION_CODES:
+            uses = gst_text.count(f'childId="{e.get("id")}"') + lib_text.count(f'childId="{e.get("id")}"')
+            if uses > out.get(m.group(1), (None, -1))[1]:
+                out[m.group(1)] = (e.get("id"), uses)
+    return {k: v[0] for k, v in out.items()}
+
+
+def block_text(body):
+    """A doc block's rules text: its paragraphs and bullets, the flavour line left out."""
+    out = []
+    for ln in body.split("\n"):
+        ln = ln.strip()
+        if not ln or re.fullmatch(r"\*[^*].*\*", ln) or ln.startswith("|"):
+            continue
+        out.append(("• " if ln.startswith("- ") else "") + bc.strip_md(re.sub(r"^- ", "", ln)).replace("*", ""))
+    return "\n".join(out)
+
+
+def consularis():
+    """The doc's Legiones Consularis upgrades in the official pick: Lodge Master for a Traitor army, Terran-Born
+    Crusader for a Loyalist one, each Legion's own for that Legion."""
+    cat = et.Text(LIBRARY)
+    if bc.make_id("centura consularis", "Lodge Master") in cat.s:
+        return 0
+    ids = legion_ids()
+    blocks = [(None, m) for m in re.finditer(r"^#### Legiones Consularis: ([^\n]+?) \(\+(\d+) points\)\n(.*?)(?=^#{2,4} |\Z)",
+                                              section(doc(), "Legiones Consularis and Pater Consularis"), re.M | re.S)]
+    for legion, sec in legion_sections():
+        blocks += [(legion, m) for m in re.finditer(r"^#### Legiones Consularis: ([^\n]+?) \(\+(\d+) points\)\n(.*?)"
+                                                    r"(?=^#### |\Z)", sec, re.M | re.S)]
+    new = []
+    for legion, m in blocks:
+        name, pts, body = m.group(1), int(m.group(2)), m.group(3)
+        eid = bc.make_id("centura consularis", name)
+        e = et.E("selectionEntry", id=eid, name=name, hidden=False, collective=False, import_=True, type="upgrade")
+        if legion:
+            gate, kind = ids[legion], "equalTo"
+        else:
+            gate = TRAITOR if "Traitor allegiance" in body else LOYALIST if "Loyalist allegiance" in body else None
+            kind = "equalTo"
+        if gate:
+            mod = bc.el(bc.child(e, "modifiers"), "modifier", type="set", field="hidden", value="true")
+            bc.el(bc.el(mod, "conditions"), "condition", type=kind, value=0, field="selections", scope="force",
+                  childId=gate, shared=True, includeChildSelections=True, includeChildForces=False, percentValue=False)
+        if re.search(r"Only one [^.]* may be taken per army", body):
+            bc.add_constraint(e, "max", 1, bc.make_id(eid, "army"), scope="roster", children=True)
+        bc.add_rule(e, f"Legiones Consularis: {name}", block_text(body), eid)
+        bc.add_cost(e, pts)
+        new.append(e)
+    cat.add(CONSULARIS, "selectionEntries", new)
+    cat.save()
+    return len(new)
+
+
+# ---- options on the official units, and each Legion's own upgrades
+
+
+OPTION_TABLES = {
+    LIBRARY: ["#### Additional Options for Existing HQ Units", "#### Additional Options for Existing Elites Units",
+              "#### Additional Options for Existing Troops Units",
+              "#### Additional Options for Existing Fast Attack Units",
+              "#### Additional Options for Existing Heavy Support Units"],
+    "2022 - LA - Iron Hands.cat": ["#### Additional Options for Existing Iron Hands Units"],
+}
+# the doc's names for the official units
+UNIT_NAMES = {"Legion Castraferrum Dreadnought Talon": "Castra Ferrum Dreadnought Talon",
+              "Legion Cataphractii Praetor": "Praetor, Cataphractii", "Legion Tartaros Praetor": "Praetor, Tartaros",
+              "Legion Deredeo Dreadnought Talon": "Deredeo Dreadnought Talon",
+              "Legion Land Raider Achilles": "Land Raider Achilles Squadron",
+              "Legion Spatha Attack Bike Squadron": "Spatha Attack Bike Squadron",
+              "Legion Tarantula Sentry Gun Battery": "Tarantula Sentry Gun Battery",
+              "Legion Terminator Indomitus Squad": "Terminator Indomitus Squad",
+              "Legion Whirlwind Squadron": "Whirlwind"}
+
+
+def normalise(unit, option, cost):
+    """A row in the wording plan_options reads ('Exchange X for Y', 'The unit may take X'); a list with a cost
+    each ('Heavy Flamer (+5), Heavy Bolter (+10)') as one row per item."""
+    o = re.sub(r"\s*\((?:see [^()]*|with in-built [^()]*)\)", "", option)
+    listed = re.findall(r"([A-Z][^,():]+?) \(\+(\d+)(?:, [^)]*)?\)", o)
+    if len(listed) > 1:
+        head = re.match(r"(Deployment option): ", o)
+        mount = re.search(r"take one (Pintle Mounted) ", o)
+        out = []
+        for item, pts in listed:
+            item = re.sub(r"^(?:or |.*?: |.*?take one )", "", item.strip())
+            if mount and not item.startswith(mount.group(1)):
+                item = f"{mount.group(1)} {item}"
+            item = re.sub(r"Combi-Weapon of any type", "Combi-Weapon", item)
+            out.append((unit, f"Deployment option: {item}" if head else f"The unit may take {item}", f"+{pts} points"))
+        return out
+    o = re.sub(r"^For every (?:five|5) models, one [\w -]+? may ", "Any model may ", o)
+    o = re.sub(r", (?:instead of|fired by) .*$", "", o)
+    m = re.match(r"(?:Any|One) [\w -]+? may (?:exchange|replace) (?:its |his |their |all four )?(?:attack bike's )?(.+?) "
+                 r"(?:for|with) (?:an? )?(.+)$", o)
+    if m:
+        return [(unit, f"Exchange {m.group(1)} for {m.group(2)}", cost)]
+    m = re.match(r"Replace an? (.+?) (?:with in-built Combi-Bolter )?or an? .+? with an? (.+)$", o)
+    if m:  # "Replace a Gravis Power Fist with in-built Combi-Bolter or a Gravis Bolt Cannon with a ...": the arm
+        return [(unit, f"Exchange {m.group(1)} for {m.group(2)}", cost)]
+    m = re.match(r"(?:Any|One) [\w -]+? may take (?:up to \w+ |an? )?(.+)$", o)
+    if m:
+        return [(unit, f"The unit may take {re.sub(r's$', '', m.group(1)) if 'Missiles' in m.group(1) else m.group(1)}",
+                 cost)]
+    return [(unit, o, cost)]
+
+
+def options(doc_entries):
+    notes = []
+    for path, heads in OPTION_TABLES.items():
+        et.configure(path, am.LIBS, DOC, "", "liber centura options")
+        rows = [r for h in heads for u, o, c in am.option_rows(h) for r in normalise(UNIT_NAMES.get(u, u), o, c)]
+        am.apply_ops(am.plan_options(rows, [path], doc_entries, notes))
+    return notes
+
+
+def table_text(body):
+    """A Legion upgrade block's text, its upgrade table as bullets ('Heavy Bolter: Xenobane Cannon, +2 points per
+    weapon')."""
+    out = []
+    for ln in body.split("\n"):
+        cells = [c.strip() for c in ln.strip().strip("|").split("|")] if ln.startswith("|") else None
+        if cells and cells[0] not in ("Weapon", "Unit") and not set(cells[0]) <= {"-"}:
+            out.append(f"• {cells[0]}: {cells[1]}" + (f", {cells[2]}" if len(cells) > 2 else ""))
+        elif not cells:
+            out.append(ln)
+    return block_text("\n".join(out))
+
+
+def legion_upgrades():
+    """Each Legion's own upgrades the doc gives for any of its units (Xenobane Cannons, Power Tulwars, Magma
+    Plating, The Keys of Hel...): their text on the Legion's entry in its catalogue, where the Legion is chosen."""
+    n = 0
+    for legion, sec in legion_sections():
+        path = legion_file(legion)
+        cat = et.Text(path)
+        root = ET.fromstring(cat.s.encode("utf-8"))
+        C = et.NS["cat"]
+        entry = next((l for l in root.find(C + "entryLinks") if re.fullmatch(r"[IVXL]+: " + re.escape(legion),
+                                                                              l.get("name") or "")), None)
+        if entry is None:
+            continue
+        rules = []
+        for g in re.finditer(r"^#### ([^\n]+)\n(.*?)(?=^#### |\Z)", sec, re.M | re.S):
+            title = g.group(1)
+            if re.search(r" — \d+ pts$|Special Rules$|^Legiones Consularis|^Rite of War", title):
+                continue
+            name = re.sub(r" \(\+\d+ points\)$", "", title)
+            rid = bc.make_id("centura legion upgrade", legion, name)
+            if rid in cat.s:
+                continue
+            r = et.E("rule", id=rid, name=f"Liber Centura: {name}", hidden=False)
+            bc.el(r, "description").text = table_text(g.group(2))
+            rules.append(r)
+        if rules:
+            cat.add(entry.get("id"), "rules", rules)
+            cat.save()
+            n += len(rules)
+    return n
+
+
 def main():
     setup()
     if 'name="Legion Indomitus Praetor"' in open(LIBRARY, encoding="utf-8").read():
         sys.exit(f"{LIBRARY} already has the Liber Centura expansion")
 
     def hook(b, root, entries):
+        DOC_ENTRIES.extend(root.find("sharedSelectionEntries"))
         consularis_links(b, entries)
         return fill_empty(b, root, "liber centura") | profile_owners(root)
 
@@ -407,6 +668,11 @@ def main():
     cat.save()
     print(f"{LIBRARY}: {len(units)} units, {len(keep)} entries")
     add_legions()
+    print(f"Rites of War: {rites()} added")
+    print(f"Legiones Consularis: {consularis()} added")
+    for note in options(DOC_ENTRIES):
+        print("  note:", note)
+    print(f"Legion upgrades: {legion_upgrades()} rules on the Legions' entries")
 
 
 if __name__ == "__main__" and sys.argv[1:2] == ["--legion-check"]:
