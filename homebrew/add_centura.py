@@ -101,8 +101,23 @@ def fixes(text):
     text = text.replace("- Fire Point (One Per Hull Arc, 4)\n", "")  # the profile's Fire Points
     # extra models the Builder reads as "Up to N additional X"
     text = text.replace("| – One additional Havoc Master |", "| – Up to 1 additional Havoc Master |")
-    text = text.replace("| – Up to one additional Legion ", "| – Up to 1 additional Legion ")
+    text = text.replace("| – Up to one additional ", "| – Up to 1 additional ")
+    text = text.replace("Sonic Shrieker Surgical Augment", "Sonic Shriekers")
+    text = text.replace("Achea Pattern Force Weapon", "Achea Force Sword")  # its default (Liber Hereticus)
+    text = text.replace("Legion Shamshir Jetbike", "Shamshir Jetbike")
+    # Wind Rider Brethren: a Scimitar Jetbike whose in-built heavy bolter is a volkite culverin
+    text = text.replace("- Legion Scimitar Jetbike (with in-built Volkite Culverin, replacing its usual Heavy Bolter)\n",
+                        "- Scimitar Jetbike\n- Volkite Culverin\n")
+    text = text.replace("may exchange its jetbike's in-built Volkite Culverin for a:", "may exchange its Volkite Culverin for a:")
+    # Varagyr: "one of the following: Frost Axe, Frost Sword or Frost Claw" is the Frost Blade the options exchange
+    text = text.replace("- One of the following: Frost Axe, Frost Sword or Frost Claw\n", "- Frost Sword\n")
+    text = text.replace("| **Any model in the unit may exchange his Frost Blade for a:** |  |\n",
+                        "| **Any model in the unit may exchange his Frost Sword for a:** |  |\n| – Frost Axe | Free |\n"
+                        "| – Frost Claw | Free |\n")
+    text = text.replace("| **The Thegn Tartaros may exchange his Frost Blade for a:** |",
+                        "| **The Thegn Tartaros may exchange his Frost Sword for a:** |")
     text = text.replace("Phosphex Canister Shot\\*", "Phosphex Canister Shot")
+    text = text.replace("- Hit and Run\n", "- Hit & Run\n")
     for a, b in RENAMES.items():
         text = text.replace(a, b)
     return text
@@ -127,6 +142,7 @@ ALLOWED = [r"wargear '(Ferromantic Deflector|Gravis Power Fist with in-built Com
 
 
 def setup():
+    am.MOUNT = am.MOUNT.replace("Arm)", "Arm|Wing \\(Front\\))")
     et.SLOTS.setdefault("Fortifications", [("a24f-12d8-36c1-f477", "Fortification:", True)])
     am.DOC = DOC
     am.LIBS = ["2022 - Mech Library.cat"]
@@ -180,6 +196,13 @@ def fill_empty(b, root, key):
                     bc.child(e, "entryLinks").append(et.link_el(weapon, t, e.get("id"), mn=1, mx=1))
                     made.add(t)
             continue
+        w = re.match(r".+? with (.+)$", name)  # "Missile Launcher with Eclipse Missiles": the munition
+        if w and not w.group(1).endswith(" Shells"):
+            t = am.weapon_target(b, root, re.sub(am.MOUNT, "", w.group(1)), key)
+            if t:
+                bc.child(e, "entryLinks").append(et.link_el(w.group(1), t, e.get("id"), mn=1, mx=1))
+                made.add(t)
+                continue
         shells = re.match(r"(?:Centreline Mounted )?(?:Quad Launcher with )?(\w+) Shells$", name)
         tries = [re.sub(r"^In-built ", "", name)] + ([f"Quad Launcher - {shells.group(1)}"] if shells else [])
         if name == "Phosphex Canister Shot":
@@ -202,7 +225,19 @@ def fill_empty(b, root, key):
                 if x.get("id"):
                     x.set("id", et.mid(key, name, x.get("id")))
             bc.child(e, "profiles").append(c)
+            continue
+        if e.get("type") == "upgrade" and not re.match(r"(Up to|One|Two) ", name):
+            bc.add_rule(e, name, "Named in Liber Centura but not defined in it (see the doc's Rules Checklist).",
+                        e.get("id"))
     return made
+
+
+def profile_owners(root):
+    """The Builder's entries whose profiles another entry links to ('The Chirurgeon' wargear shows the weapon's
+    profile): they travel with the expansion."""
+    owner = {p.get("id"): e.get("id") for e in root.find("sharedSelectionEntries") for p in e.iter("profile")}
+    return {owner[l.get("targetId")] for l in root.iter("infoLink")
+            if l.get("type") == "profile" and l.get("targetId") in owner}
 
 
 def consularis_links(b, entries):
@@ -226,6 +261,138 @@ def consularis_links(b, entries):
                           id=et.mid(u.get("id"), "consularis"), type="selectionEntryGroup", targetId=CONSULARIS)
 
 
+# ---- the Legion-specific units
+
+
+# units a Legion's catalogue already has: left as they are
+LEGION_EXISTING = {"Blood Angels": ("Sanguinary Guard",)}
+FAST_ATTACK = ("Wind Rider Brethren", "Ar'Kan Attack Speeder", "Darkwing Gunship", "Raptors, Mutated",
+               "Raptors, Proto-Astartes")
+HEAVY_SUPPORT = ("Firestorm Bombard Squadron", "Infernus Predator Squadron")
+DEDICATED = ("Rhino Castellan",)
+
+
+def legion_sections():
+    """[(Legion name, section text)] for the doc's Legion-specific sections."""
+    text = doc()
+    i = text.index("## Legion-Specific Rules and Units")
+    j = text.index("## Armoury of the Legions")
+    parts = re.split(r"^### [IVXL]+ – (.+)$", text[i:j], flags=re.M)
+    return [(parts[k].strip(), parts[k + 1]) for k in range(1, len(parts), 2)]
+
+
+def infer_slot(name, body):
+    """The doc gives no Force Organisation slot for these: characters are HQ choices, vehicles and bikes Fast Attack
+    or Heavy Support, and the rest (squads) Elites."""
+    if name in FAST_ATTACK:
+        return "Fast Attack"
+    if name in HEAVY_SUPPORT:
+        return "Heavy Support"
+    if name in DEDICATED:
+        return "Dedicated Transport"
+    types = re.search(r"\*\*Unit Type\*\*\n\n(.*?)\n\n", body, re.S)
+    types = types.group(1) if types else ""
+    if "Primarch" in types:
+        return "Lords of War"
+    if "Unique" in types and ("Character" in types):
+        return "HQ"
+    return "Elites"
+
+
+def legion_text(legion, sec):
+    """A Legion's section as the Builder reads it: its special rules as the army-wide rules, its fixed Warlord
+    Traits, its datasheets under the slots inferred for them, and the Armoury and Wargear."""
+    text = doc()
+    title = text.split("\n", 1)[0]
+    rules, traits = [], []
+    m = re.search(r"^#### [^\n]+ Special Rules\n(.*?)(?=^#### |\Z)", sec, re.M | re.S)
+    for ln in (m.group(1) if m else "").split("\n"):
+        w = re.match(r"\*\*Warlord: (.+?)\.\*\* (.*)$", ln)
+        if w:
+            traits.append(f"### Warlord: {w.group(1)}\n\n{w.group(2)}\n")
+        elif ln.startswith("**") and "Not defined in Liber Centura" not in ln:
+            rules.append(ln)
+    slots = {}
+    skip = LEGION_EXISTING.get(legion, ())
+    for d in re.finditer(r"^#### ((?:0-\d+ )?([^\n]+?)) — (\d+) pts\n(.*?)(?=^#### |\Z)", sec, re.M | re.S):
+        if d.group(2) in skip:
+            continue
+        slot = infer_slot(d.group(2), d.group(4))
+        if slot == "Dedicated Transport":
+            slot = "Elites"  # built as a unit; dedicated_transports() takes its root link away
+        slots.setdefault(slot, []).append(f"### {d.group(1)} — {d.group(3)} pts\n{d.group(4)}")
+    # the Legion's own wargear ("#### Magma Plating"), beside the Armoury's
+    gear = []
+    for g in re.finditer(r"^#### ([^\n]+)\n(.*?)(?=^#### |\Z)", sec, re.M | re.S):
+        if re.search(r" — \d+ pts$|Special Rules$|^Legiones Consularis|^Rite of War|^Additional Options|"
+                     r"Psychic Disciplines$|Sub-type$|\(\+\d+ points\)$", g.group(1)):
+            continue
+        if re.search(r"^\| Weapon \| (Upgrades to|Exchanged for) \|", g.group(2), re.M):
+            continue  # an upgrade table ("Xenobane Cannons"): options on the units, not an item
+        gear.append(f"#### {g.group(1)}\n" + re.sub(r"^\*[^*\n]+\*$", "", g.group(2), flags=re.M))
+    order = ("HQ", "Elites", "Troops", "Fast Attack", "Heavy Support", "Lords of War")
+    units = "\n".join(f"## {s}\n\n" + "\n".join(slots[s]) for s in order if s in slots)
+    wargear = wargear_items(section(text, "Legiones Wargear"))
+    out = [title, "## Army-wide Special Rules\n\n" + "\n\n".join(rules)]
+    if traits:
+        out.append("## Warlord Traits\n\n" + "\n".join(traits))
+    out += [units, armoury(text), wargear + "\n" + "\n".join(gear)]
+    return fixes("\n".join(out))
+
+
+def rhino_castellan(path):
+    """'A Rhino Castellan may be taken instead of a Legion Rhino Transport as a Dedicated Transport by any unit that
+    could take one': a pick on the Iron Warriors catalogue's links to those units, and no root link of its own."""
+    cat = et.Text(path)
+    root = ET.fromstring(cat.s.encode("utf-8"))
+    C = et.NS["cat"]
+    castellan = next(e for e in root.find(C + "sharedSelectionEntries") if e.get("name") == "Rhino Castellan")
+    lib = ET.parse(LIBRARY).getroot()
+    rhino_units = {u.get("id") for u in lib.find(C + "sharedSelectionEntries")
+                   if any(l.get("name") in ("Legion Rhino Transport", "Rhino Transport") for l in u.iter(C + "entryLink"))}
+    n = 0
+    for link in root.find(C + "entryLinks"):
+        if link.get("targetId") == castellan.get("id"):
+            cat.remove(link.get("id"))
+        elif link.get("targetId") in rhino_units:
+            g = et.E("selectionEntryGroup", id=et.mid(link.get("id"), "castellan"), name="Dedicated Transport (Iron Warriors)",
+                     hidden=False, collective=False, import_=True)
+            bc.add_constraint(g, "max", 1, et.mid(link.get("id"), "castellan max"))
+            bc.child(g, "entryLinks").append(et.link_el("Rhino Castellan", castellan.get("id"), et.mid(link.get("id"),
+                                                                                                    "castellan"), mx=1))
+            cat.add(link.get("id"), "selectionEntryGroups", [g])
+            n += 1
+    cat.save()
+    return n
+
+
+LEGION_ALLOWED = [r"is not defined in the doc", r"has no weapon", r"matches no wargear"]
+
+
+def legion_file(legion):
+    return f"2022 - LA - {legion}.cat"
+
+
+def add_legions():
+    """Each Legion's own units into its catalogue."""
+    am.ALLOWED = ALLOWED + LEGION_ALLOWED
+    am.LIBS = [LIBRARY, "2022 - Mech Library.cat"]
+    for legion, sec in legion_sections():
+        path = legion_file(legion)
+        key = f"liber centura {legion}"
+
+        def hook(b, root, entries, key=key):
+            consularis_links(b, entries)
+            return fill_empty(b, root, key) | profile_owners(root)
+
+        cat, b, entries, units, roots, keep = am.transplant_into(path, legion_text(legion, sec),
+                                                                 f"Legiones Astartes ({legion})", key, hook)
+        cat.save()
+        print(f"{path}: {len(units)} units, {len(keep)} entries")
+        if legion == "Iron Warriors":
+            print(f"  Rhino Castellan on {rhino_castellan(path)} units")
+
+
 def main():
     setup()
     if 'name="Legion Indomitus Praetor"' in open(LIBRARY, encoding="utf-8").read():
@@ -233,13 +400,21 @@ def main():
 
     def hook(b, root, entries):
         consularis_links(b, entries)
-        return fill_empty(b, root, "liber centura")
+        return fill_empty(b, root, "liber centura") | profile_owners(root)
 
     cat, b, entries, units, roots, keep = am.transplant_into(LIBRARY, generic_text(), "Legiones Astartes",
                                                              "liber centura", hook)
     cat.save()
     print(f"{LIBRARY}: {len(units)} units, {len(keep)} entries")
+    add_legions()
 
 
-if __name__ == "__main__":
+if __name__ == "__main__" and sys.argv[1:2] == ["--legion-check"]:
+    setup()
+    for legion, sec in legion_sections():
+        t = legion_text(legion, sec)
+        b = bc.Builder("Liber Centura", f"Legiones Astartes ({legion})", t)
+        b.build()
+        print(legion, len(b.datasheets), [p for p in b.problems])
+elif __name__ == "__main__":
     main()
