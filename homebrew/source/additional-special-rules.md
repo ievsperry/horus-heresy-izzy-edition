@@ -24,11 +24,27 @@ _Colossal secondary combustors attached to the main engines of a flyer allowed t
 
 Once per game at the start of the Movement Phase, a model with this Special Rule may elect to fire its Afterburner. If it does so, the model may make an additional move after its normal move, up to its normal Movement Characteristic. Note that for this additional move, the Movement value cannot be modified in any way.
 
+## Agesine Protocols
+
+A model with this special rule may never make a Sweeping Advance.
+
 ## Agripinaan Guidance System
 
 _Pioneered by the Forge World of Agripinaa, these guidance systems contained an array of additional scanners and range finders. Though initially promising, these systems caused cataclysmic errors and conflicts with almost all other machine spirits. Only the Eradicator pattern of Leman Russ, and a scant handful of other chassis, showed complete compatibility with these systems, their machine spirits belligerent enough to accept the technology - all the better to lay waste to their enemies._
 
 A weapon with this Special Rule may roll two Scatter Dice when firing a weapon with the Blast (X) Special Rule; and may select one of those dice to discard when resolving that weapons scatter. When firing a weapon with this Special Rule, if this model re-rolls its scatter die then it must re-roll both.
+
+## Air Defence Screen
+
+_Batteries of interlinked anti-air weapons can deny whole areas of sky to the foe._
+
+When deployed before the game, each model with this special rule is placed as a separate unit and is treated as a separate unit for the rest of the game. A model with this special rule must target the closest enemy Flyer in range, if there is one; otherwise it may target other units as normal.
+
+## Airburst Munitions
+
+_These munitions fill the sky with scything shrapnel to bring down airborne targets._
+
+A weapon with this special rule may only target models with the Flyer or Antigrav Sub-type, or models that activated a jump pack, jet pack or wings in the opponent's previous Game Turn, and can never hit any other kind of target. It may hit Flyers with its Blasts, even though this is normally prevented.
 
 ## Alpha Psyker
 
@@ -66,6 +82,10 @@ _A true Machina Opus, this machine is the brainchild of a single magos who wishe
 
 You may only include one of these models in your army, in games of 2,000 points or more where the detachment also includes an Archmagos Prime. If the Archmagos Prime has the Reductor High Order of Techno-Arcana, you may include two instead of one.
 
+## Armour Interlock
+
+If a model with this special rule is in base contact with another model with it, friendly models within 3" claiming an Intervening Model Cover Save from it improve that save by 1, to a maximum of 2+. Cover from other sources is unaffected.
+
 ## Armoured Doors
 
 _Often retracted when delivering its passengers on the ground, the Otos' heavy duty doors were designed to protect its cargo from the vagaries of void combat._
@@ -91,6 +111,10 @@ _These spotters worked in tandem with their charges, calling targets for those u
 A unit with this Special Rule may grant the benefits of a Cognis Signum it has purchased to a single unit with at least one model within 6" of a model from this unit, instead of using the benefit itself.
 
 Note that the unit must be from the same Tercio as it to grant it the benefits of the Cognis Signum in this way.
+
+## Artisans of War
+
+When a model with this special rule fights in the Assault phase, it may re-roll To Hit rolls of 1.
 
 ## Astra Telepathica
 
@@ -143,6 +167,12 @@ When deployed onto the battlefield (either at the start of the battle or when ar
 _Independent firing control subsystems allowed this weapon to track and fire without requiring their operator to direct them._
 
 A weapon with this Special Rule can fire at a different target to the other weapons the model is armed with.
+
+## Automata Attendants
+
+_Clustered around their charge, the Servo-Automata will give their synthetic lives to protect them._
+
+A Legion Servo-Automata Maniple may only be taken in a Detachment that includes a model with the Techmarine Covenant special rule, and never in an army without one. It is a Retinue Squad, and that model is its Leader; if there are several, the controlling player picks one. The Retinue Squad does not use a Force Organisation slot, counts as part of its Leader's unit, must deploy with its Leader, and the Leader may not voluntarily leave it.
 
 ## Auxilia Rangers
 
@@ -200,6 +230,10 @@ _For those who had already given themselves to the darkness, it was only a small
 
 A model with this Special Rule may be given the Corrupted Sub-type at no additional cost in points. This must be decided at the start of the battle before any models are deployed and may not be changed during the battle.
 
+## Brothers in Censure
+
+A unit with any models with this special rule may only join or be joined by models that also have it. If joined by Aeonid Thiel, the unit gains Preferred Enemy (Legiones Astartes).
+
 ## Bunker Drop
 
 _Many forces of the Imperialis Militia chose to utilise makeshift fortifications on the battlefields of the Horus Heresy. Typically retrofitted cargo containers, these were well built enough to protect those inside from small arms fire, if not a little claustrophobic._
@@ -239,6 +273,14 @@ When conducting a Ramming attack, the hit is automatically resolved at Strength 
 In addition, the model has an Invulnerable Save of 5+ against any attacks against its Front Armour, including any damage it suffers as a result of it Ramming or being Rammed itself.
 
 A model with this Special Rule is immune to the effects of the Armourbane (Melta) Special Rule, meaning that no extra D6 for armour penetration can be rolled against the model as a result of this Special Rule.
+
+## Captain of the Bloody 5th
+
+Infantry with Legiones Astartes (Blood Angels) in a Detachment that includes Nassir Amit, and not wearing any pattern of Terminator armour, may take Flaying Knives at no cost. Dawnbreaker Cohorts, Angel's Tears, Sanguinary Guard and models with the Unique Sub-type may not.
+
+## Choir of Screams
+
+Units made up entirely of models with Legiones Astartes (Emperor's Children) in a Detachment with a Kakophonix Prime may exchange weapons as follows:
 
 ## Close-Quarters Boarding Protocol
 
@@ -356,6 +398,10 @@ Though attacks which would otherwise inflict Instant Death in this way may not b
 
 Attacks which have the Instant Death Special Rule in their profile are unaffected by this Special Rule and function normally.
 
+## Damnation's Destiny
+
+An opponent may never score Slay the Warlord for Luther, and he never counts towards Attrition totals in missions that use them.
+
 ## Datasphere Uplink
 
 _The uplink connecting all Skitarii and their war machines allows orders to change on the fly._
@@ -366,6 +412,12 @@ During deployment, if your army includes any models with this special rule, sele
 - **Scrapcoded Exultation:** Shrouded (6+).
 - **Self-Repair Programming:** models that have lost a Wound or Hull Point but remain in play regain 1 Wound or 1 Hull Point, up to their starting value.
 - **Targeting Cryptogram:** +1 Ballistic Skill.
+
+## Debilitating
+
+_These weapons leave painful, disfiguring wounds that make their targets easier prey._
+
+A unit hit by a weapon with this special rule has its Strength reduced by 1 until the end of the controlling player's next Game Turn, to a minimum of 1. This does not stack with other Debilitating attacks, but does stack with other rules that reduce Strength.
 
 ## Defender
 
@@ -387,6 +439,10 @@ When a model is allocated a Wound or Hull Point Loss inflicted by a weapon with 
 
 In addition, if the target of this attack is a model with the Knight, Titan, Gargantuan, Super-Heavy Vehicle, or Building or Fortification Unit Type, or the Monstrous Unit Sub-type, increase the number of Wounds suffered or Hull Points lost to 2D6.
 
+## Devourer Retinue
+
+A Devourer Terminator Squad may be taken as a Retinue Squad instead of an Elites choice, in a Detachment with at least one model that has Master of the Legion and Legiones Astartes (World Eaters). That model must be its Leader, must deploy with it, and may not voluntarily leave it. It does not use a Force Organisation slot and counts as part of its Leader's unit. A squad taken this way loses Bitter Duty.
+
 ## Dimensional Edge (X)
 
 _The blade of this weapon was not truly at home in our reality, and the exotic matter that constitutes its form would, when caught in the right phase, pass straight through any matter it touched._
@@ -394,6 +450,16 @@ _The blade of this weapon was not truly at home in our reality, and the exotic m
 Weapons with this Special Rule can only ever cause a Wound on the number indicated in brackets.
 
 No Saves or Damage Mitigation rolls of any kind may be taken against Wounds caused by this weapon.
+
+## Distrusted By Our Own
+
+A unit with this special rule never benefits from positive Leadership modifiers from friendly units, unless they come from a unit with Brothers in Censure or from The Red Marked Rite of War. It may still use Aeonid Thiel's Leadership if he joins it.
+
+## Dreadnought Magna-Grapples
+
+_Magnetic clamps let any vehicular cargo be carried._
+
+Instead of a vehicle in its Auxiliary Vehicle Bay, a Legion Storm Eagle Transporter may carry up to two Legion Contemptor Dreadnoughts, Contemptor-Cortus Dreadnoughts, Castra Ferrum Dreadnoughts, Contemptor Centurions or Castra Ferrum Centurions, in any combination. They embark and disembark as normal for an Auxiliary Vehicle Bay, but do not gain Assault Vehicle when disembarking.
 
 ## Ejector Blowout
 
@@ -424,6 +490,10 @@ A unit that includes any models with this Special Rule may only make the Return 
 _Some engines on civilian vehicles could be coaxed to impressive levels of performance, at some risk to the vehicle and its crew both._
 
 Whenever a unit with this Special Rule moves as part of a Reaction, the distance may be increased by +6", but if the unit chooses to do so, all models in the unit must immediately make a Dangerous Terrain Test once the move is complete.
+
+## Every Door a New Horror
+
+While Aeonid Thiel is locked in combat with an enemy unit with the Corrupted or Daemon Sub-type, he has a 5+ Invulnerable Save.
 
 ## Exposed Compartment
 
@@ -475,6 +545,10 @@ _The officers of the Solar Auxilia were never far from the front lines, ready an
 
 When this model with this Special Rule joins a unit with the Close-Order Unit Sub-Type, it automatically gains the Close-Order Unit Sub-Type for as long as it remains part of that unit.
 
+## Fires of Faith
+
+Sor Talgron gains the Anathemata and Diabolism Disciplines (*Liber Hereticus*, pages 106 and 309). He also counts as an Esoterist, so a Traitor army he is part of may select Ruinstorm Daemon units as described in the Esoterist entry (*Liber Hereticus*, page 106).
+
 ## Follow-Up Attack
 
 _Rather than carrying any passengers, troops followed behind Hades Drills as they cleared a path to the surface._
@@ -484,6 +558,10 @@ Before the game begins, you may assign a single Infantry unit from the same Deta
 When an Auxilia Hades Drill or Militia Hades Drill arrives as part of a Subterranean Assault, place a 3" Blast Marker directly beneath the model. This marker is now treated as Difficult Terrain, and the Blast Marker remains in play for the rest of the game. The Auxilia Hades Drill or Militia Hades Drill gains the Shrouded (5+) Special Rule for the duration of the turn it arrives.
 
 In any of the Controlling Player's following Movement Phases, the unit embarked upon the Auxilia Hades Drill or Militia Hades Drill may be deployed as though it was disembarking, measuring from any point of the Blast Marker. The unit may move up to their Movement Characteristic and may choose to Run. A unit deploying in this way cannot be the target of the Interceptor Advanced Reaction if it deploys in the Controlling Player's first Movement Phase after the Auxilia Hades Drill or Militia Hades Drill has arrived. A unit can still be deployed in this way even if the Auxilia Hades Drill or Militia Hades Drill is destroyed after it has been deployed. If there is not sufficient room to deploy the unit, then it must remain in Reserve and move onto the battlefield in their Controlling Player's next turn.
+
+## Fortress of the Mind
+
+Psychic powers, friendly or enemy, that target Astelan or a unit he has joined suffer -2 to the Psychic check.
 
 ## Forward Defences
 
@@ -497,11 +575,23 @@ _Through wit, guile, and no small amount of favours exchanged, the forces led by
 
 As long as a model with this Special Rule has not been removed as a casualty and is your army's Warlord, all models in an army that contains them count their Level of Alliance as Fellow Warriors, unless they are already Sworn Brothers.
 
+## Freakish Agility
+
+This unit may move through other units, friendly and enemy, as if they were not there, but must end its move with every model at least 1" from enemy models and not overlapping any other base or hull.
+
 ## Furibundus Talon
 
 _Whilst often deployed from great landing vessels in drop-racks, once on the ground the Solar Auxilia Dreadnoughts would separate, each undertaking the objectives assigned to them by their Legate._
 
 When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves) all models in the unit must be placed within unit coherency, but afterwards operate independently and are not treated as a single unit. Once a unit with this Special Rule has separated, each model counts as its own unit for the purposes of Victory Points, Units Destroyed, and similar rules.
+
+## Genetic Enhancement
+
+During army selection, the unit must choose one enhancement:
+
+## Goading to Slaughter
+
+While Hol Beloth is on the table and not Falling Back, once per game at the start of the controlling player's Assault phase, every model in the army with Legiones Astartes (Word Bearers) may set its Weapon Skill to 5 for that phase.
 
 ## Gravitic Implosion
 
@@ -516,6 +606,10 @@ If a Graviton Pulse weapon also has the Blast type, then leave the Blast marker 
 _The sheer power of the graviton-repellers used to keep some anti-grav craft airborne would push back and pummel any foolish enough to approach._
 
 Whenever a charge is declared against a model with this Special Rule, the Charging unit suffers a -2 penalty to their Charge roll.
+
+## Graviton Backlash
+
+If a model with this special rule was not locked in combat in the previous turn, models making melee attacks against it suffer -1 to their To Hit rolls.
 
 ## Grenades
 
@@ -584,6 +678,14 @@ _Certain combat units were not heavy enough to be considered vehicles, but were 
 
 A model with this Special Rule may not Embark on a model unless it has the Transport Bay Special Rule.
 
+## Helfather Retinue
+
+A Helfather Covenant may only be included as a Retinue Squad, in a Detachment with at least one model that has Master of the Legion, Legiones Astartes (Iron Hands) and Keys of Hel. That model must be its Leader, must deploy with it, and may not voluntarily leave it. It does not use a Force Organisation slot and counts as part of its Leader's unit.
+
+## Herald of the Primarch
+
+A model with this special rule must always issue or accept challenges when possible. In a challenge, Azkaellon gains +1 Weapon Skill and his melee attacks gain Brutal (2).
+
 ## Heralds of the Advance
 
 _Moving at speeds impossible to manage for those not augmented to endure, those employed by a Rogue Trader to range ahead of the main forces and scout safe lanes to their goals were unmistakable in their role as the heralds of the Militant Host._
@@ -591,6 +693,10 @@ _Moving at speeds impossible to manage for those not augmented to endure, those 
 A unit that includes any models with this Special Rule may not join or be joined by any model that does not also have this Special Rule.
 
 In addition, a unit that includes any models with this Special Rule never counts as a Scoring unit or a Denial unit regardless of any other Special Rules or Mission rules in use – however, a model with this Special Rule may re-roll all failed Shrouded Damage Mitigation rolls.
+
+## Hexapentic Ward
+
+Hol Beloth may ignore the first wound he suffers in the game from a failed save, even one that would cause Instant Death.
 
 ## High Techno-arcana: Noospherica
 
@@ -666,6 +772,10 @@ _The dim and cramped confines of vehicle interiors were not designed with Ogryns
 
 If a unit with this Special Rule selects a Dedicated Transport, a model without this Special Rule (such as a Discipline Master) must be assigned to them before the game begins. So long as a model without this Special Rule is part of the unit, models with this Special Rule may Embark upon a Vehicle with the Transport Unit Sub-Type and the Infantry Transport Special Rule, ignoring the usual restriction on models with the Bulky (X) Special Rule being ineligible to Embark, but must still adhere to Bulky (X) for the purposes of Transport Capacity.
 
+## Kiavahran Repulsor Field
+
+Shrouded Damage Mitigation rolls made by this unit improve by 1, and it gains Shrouded (6+) if it does not already have it. When an enemy unit targets it with the Interceptor Reaction, that unit must pass an Initiative test or suffer -1 Ballistic Skill for those attacks.
+
 ## Launch System Failure
 
 _With the unimaginable power of some weapons came a deadly repercussion - unspent munitions easily turning upon their wielders at the merest unlucky happenstance._
@@ -694,6 +804,18 @@ _Not unlike Battle Tank Cohorts, many officers of the Solar Auxilia were trained
 
 A model with this Special Rule is selected as a separate unit, but during deployment must be assigned to another unit from the same Tercio and may not be deployed as a separate unit. If multiple appropriate units are available, the Controlling Player chooses which unit a model with this Special Rule is assigned to. Once assigned to a unit, a model with this Special Rule counts as a part of that unit and may not leave the unit during play for any reason.
 
+## Line Breakers
+
+Once per game, when working out combat resolution for a combat including a unit with this special rule, you may add the total of that unit's remaining Wounds to its score of Wounds inflicted.
+
+## Lord of Abominations
+
+A Detachment that includes Fabius Bile may ignore the 0-1 limit on Terata Enhanced Warriors.
+
+## Lord of the Schadenhold
+
+Before the game, nominate up to two Fortifications or terrain features in your deployment zone; their Cover Saves improve by 1.
+
 ## Lords of the Ruinstorm
 
 _Among the thronging masses of the warp, the greatest amongst them were rare indeed, and jealous in their command._
@@ -711,6 +833,10 @@ A model equipped with a weapon with this Special Rule may only make a single att
 _Paired operators and gunners could achieve a precision others could not._
 
 At the start of the controlling player's Shooting phase, a unit containing models with this special rule that did not move in the preceding Movement phase may focus its fire. If it does, those models add +1 to their To Hit rolls for Shooting Attacks, but may not use any variant of Firing Protocols (X) in that Shooting phase. The effect ends at the end of the Shooting phase.
+
+## Marksman's Tutelage
+
+When Omegon or any member of a unit he has joined makes a Shooting Attack, weapon range is not restricted or affected by Night Fighting, Shroud Bombs or any other special rule. No model may make Shrouded rolls against Wounds from Omegon's Shooting Attacks.
 
 ## Master Cybertheurgist: Domina Ignis
 
@@ -730,6 +856,10 @@ _Among the Legio Custodes, many distinctive and recognisable differences in how 
 
 A model with this Special Rule is required to select a single Shield-Host upgrade. However, no model may take more than one such upgrade, and no model in your army may select the same Shield-Host upgrade option as another. Each Shield-Host upgrade must be paid for at a cost in points, indicated as part of the army list entry for the unit. Shield-Host upgrades may provide Special Rules, Wargear, Unit Sub-types, or other effects; these are noted in their description, along with any other benefits or restrictions. In all cases, the Shield-Host's description will indicate all changes, benefits and restrictions.
 
+## Master of the Zadyin Arga
+
+Targutai Yesugei always knows the Telepathy and The Storm's Fury Psychic Disciplines and may not take any others. He may take a Dark Sons of Death unit as a Retinue as if he were a Legion Consul with the Stormseer upgrade.
+
 ## Methodical Advance
 
 _This Automata's ponderous advance is easy to predict and avoid._
@@ -748,6 +878,12 @@ _Whilst mutated in form beyond recognition, one trait survived – the desire to
 
 A unit with this Special Rule must always Charge in the Assault phase, if possible. If multiple targets are available, the Controlling Player may choose their Charge target. The unit must always attempt to Sweeping Advance, if able.
 
+## Misericordia
+
+_Inertial suppression clamps lock transported troops in place._
+
+A model with this special rule can carry models in any type of Legion Terminator armour, including Legion-specific Terminator units, that have Bulky (2) as if they did not have Bulky (2).
+
 ## Modular
 
 _These machines can be rearmed and refitted at a moment's notice._
@@ -765,6 +901,12 @@ A model with this Special Rule and the Psyker Sub-type automatically knows the T
 _The air around these hunters shimmers with malign data-djinn and corrosive code._
 
 An enemy unit locked in combat with a model with this special rule subtracts 1 from its Weapon Skill and Initiative. This is not cumulative: a model suffers the penalty only once, however many models with this rule it is engaged with.
+
+## Neverborn
+
+_The soul of these creatures is more daemon than man._
+
+A unit with this special rule may be taken in a Legiones Astartes (X) Detachment with the Traitor allegiance, even though it does not have Legiones Astartes (X).
 
 ## No Witnesses
 
@@ -815,6 +957,12 @@ Any model with the Mechanicum Faction allegiance and the Independent Character S
 _Some weapons require they are used together to achieve full effectiveness._
 
 A model armed with a weapon with this Special Rule gains an extra Attack.
+
+## Pater Consularis
+
+_For the greatest Legion leaders there is no rest; even in death they are expected to serve._
+
+A model with this special rule must select exactly one Pater Consularis upgrade. If it is slain, your opponent gains one additional Victory Point. Your army may include only one model with this special rule.
 
 ## Plasma Burn
 
@@ -896,6 +1044,16 @@ Nominate any point over which this model moved this turn, and place a single mod
 
 Once the final position of the placed model is determined, deploy the rest of the unit in coherency with it. Any models that cannot be placed into coherency and at least 1" away from enemy models are destroyed.
 
+## Raptor Lieutenant
+
+Navar Hef may only join units of Raptors, Proto-Astartes or Raptors, Mutated.
+
+## Reactor Overcharge
+
+_When a little more power could mean life or death, some are willing to take the risk._
+
+Once per game, in the controlling player's turn, a model with this special rule may overcharge its reactor. It first suffers D3 Wounds with no saves or Damage Mitigation rolls allowed. If it survives, until the start of the controlling player's next turn it adds 2" to its maximum Move and Charge distances, adds +1 Attacks and +1 Initiative, and its atomantic repulsor's Invulnerable Save becomes 5+. If it is removed as a casualty while overcharged, its atomantic repulsor's automatic hits are resolved at 6".
+
 ## Regenerating Horror
 
 _The most devastating blows and the heaviest firepower could only inflict so much damage against such an unnatural abomination._
@@ -954,6 +1112,14 @@ _Fluid in the air in a way the eye struggles to track, this weapon seems to be i
 
 Models making an attack against a model wielding a weapon with this Special Rule must subtract X from their Weapon Skill.
 
+## Risen from the Ashes
+
+Solomon Demeter and any unit he joins have Hatred (Traitors), but may not Run or make Sweeping Advances.
+
+## Rising Crescendo
+
+A Kakophoni Squad that includes the Kakophonix Prime ignores Gets Hot and gains Shell Shock (2) with its Cacophony weapons.
+
 ## Rupture (X)
 
 _Some weapons lacked the raw power to penetrate the thickest armour, but lighter targets would still find themselves torn apart under such blows regardless._
@@ -969,6 +1135,14 @@ Note that a weapon that has both the Rupture (X) and Gets Hot Special Rules alwa
 _Some attacks were imbued with energies that allowed them to directly damage even the most incorporeal of foes._
 
 A weapon with this Special Rule always wounds models with the Daemon Unit Type on a 2+ and any successful Invulnerable Saves made by models with the Daemon Unit Type against any Wounds it inflicts must be re-rolled.
+
+## Sanguinary Retinue
+
+A Sanguinary Guard unit may only be included as a Retinue Squad, in a Detachment with at least one model that has Master of the Legion and Legiones Astartes (Blood Angels) and is either Sanguinius or equipped with a Legion Warhawk Jump Pack. That model must be its Leader, must deploy with it, and may not voluntarily leave it; if the Leader deploys by Deep Strike Assault, the unit must too. It does not use a Force Organisation slot and counts as part of its Leader's unit.
+
+## Secrets and Lies
+
+Luther may not be taken in an army that includes Lion El'Jonson.
 
 ## Seismic Shock
 
@@ -1091,6 +1265,14 @@ _Whilst this weapon burnt and tore at all living things, it inflicted the most t
 
 When attacking a model with the Daemon, Psyker, or Corrupted Unit Type or Sub-types, a weapon with this Special Rule gains the Fleshbane, Instant Death, and Breaching (3+) Special Rules.
 
+## Spearhead Commander
+
+Before the game, assign Castrmen Orth to a Vehicle in the same army with a Front Armour of at least 13 (not one with the Knight, Titan or Unique Sub-type); he should be modelled on it. He takes up no Transport Capacity and may not leave unless it is Immobilised or Destroyed; otherwise he is treated as a transported model if it is Destroyed. While he is assigned, the vehicle may use his Ballistic Skill of 5 and add +1 Strength to one Battle Weapon. It loses any Legiones Astartes (X) and gains Legiones Astartes (Iron Hands), and may not take a Legiones Decurion upgrade. If a Primary Detachment containing Orth uses the Armoured Spearhead Rite of War, Orth must be the Warlord instead of a model gaining the Master of Armour Warlord Trait and Master of the Legion.
+
+## Spiteful Binding
+
+At the end of any player's Assault phase, if Skraivok attacked in melee against an enemy model with a higher Weapon Skill than his own, roll a D6. On a 6, Skraivok is removed from play as a casualty, and the opposing player may not claim Slay the Warlord for it.
+
 ## Spotted!
 
 _These lights blazed beyond that of mere illum-beacons or handheld torches, allowing none to escape their rays and brightening all to see._
@@ -1123,6 +1305,22 @@ The following rules apply to all models with the Sycophantica Sub-type:
 • Models with the Sycophantica Unit Sub-type may fire Heavy and Ordnance weapons and count as Stationary even if they moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
 • Models with the Sycophantica Unit Sub-type ignore any penalties to their Initiative Characteristic when Charging into or through Difficult Terrain or Dangerous Terrain.
 
+## Synthetica Mindlock
+
+_With no will of their own, these automatons revert to basic programming when unaccompanied._
+
+A unit with this special rule may make Reactions, ignoring the Automata Sub-type's restrictions, as long as it includes a Legion Techmarine.
+
+## Tachseer
+
+A Legion Command Squad with Legion Scimitar Jetbikes led by Shiban Khan may exchange them for Legion Shamshir Jetbikes at no cost.
+
+## Tank Desant
+
+_Troops ride on this vehicle's armoured hull, guarding it as they go._
+
+A model embarked on a model with this special rule may fire its ranged weapons as though it were not embarked, measuring range from the Transport's hull.
+
 ## Tank Desant (X)
 
 _When troops embarked upon this vehicle, they did so across its armoured hull, and so formed an additional layer of protection for their carrier, as they could defend it from harm directly._
@@ -1139,6 +1337,10 @@ _Enginseers were the most common of the Mechancium's Tech-Priests; they regularl
 
 While the unit contains any number of Servo-Automata, Enginseer Adepts in the unit improve their Battlesmith (X) Special Rule to Battlesmith (4+).
 
+## Tetrach's Chosen
+
+Barabas Dantioch may be taken in an Iron Warriors Detachment, or in a Detachment with Legiones Astartes (Ultramarines) or (Imperial Fists). He keeps Legiones Astartes (Iron Warriors) but may not be the Warlord there. All units in that Detachment treat him as Sworn Brothers, but he may embark on its Transports.
+
 ## The Black Shield
 
 _After escaping the betrayal at Istvaan III, Crysos Morturg continued to harass his Traitor brethren as Captain of the 108th Independent Company._
@@ -1152,6 +1354,14 @@ In addition, if Crysos Morturg is selected as the army's Warlord in a Blackshiel
 If Crysos Morturg is selected as the army's Warlord in a Blackshields Detachment, you can include Death Guard Mortus Poisoner Squads as part of that Detachment.
 
 If you do so, replace their Legiones Astartes (Death Guard) Special Rule with the Legiones Astartes (Blackshields) Special Rule.
+
+## The Mongrel Legion
+
+The unit counts as having Legiones Astartes (Emperor's Children) for army selection and other rules that interact with it, but gains none of its bonuses. Only Fabius Bile may join it.
+
+## There's No Room for Honour Here
+
+Whenever Aeonid Thiel issues a challenge that is accepted, or accepts one, he may make a Shooting Attack at his opponent with his Bolt Pistol before the combat begins. The pistol gains Concussive (1) for that attack, and any wounds are resolved before the combat begins.
 
 ## Thermal Riders
 
@@ -1183,6 +1393,12 @@ _Some combatants upon the battlefields of the Age of Darkness had irredeemably g
 
 A model with this special rule may only be included in an army that has the Traitor Allegiance.
 
+## Transport Skiff
+
+_Little more than an engine strapped to a grav-plate, skiffs have a useful place in the Legions' armouries._
+
+A model with this special rule gains Infantry Transport and Assault Vehicle; for those rules and the Transport Sub-type, a Legion Whispercutter counts as a Vehicle. When it loses its last Wound, every embarked model suffers a Strength 6, AP - hit, allocated by the controlling player. Survivors are placed where the model was, or as close as possible, in coherency and at least 1" from enemy models; any that cannot be placed are removed as casualties. The unit must then take a Pinning test.
+
 ## Tremor
 
 _Whilst most conventional barrage ordnance described great looping arcs through the sky, these weapons instead burrowed into the earth itself._
@@ -1202,6 +1418,16 @@ During Deployment, a unit with this Special Rule may be given the Subterranean A
 _Awkward to bring to bear, certain weapons were best used as part of a crushing charge to harness their full effect._
 
 A model may only attack with this weapon on a turn in which it makes a Charge (even if that Charge is Disordered), but does not gain a bonus attack for Charging or from any Special Rules that would normally grant additional Attacks.
+
+## Unstable Disposition
+
+The unit automatically passes the first failed Morale or Pinning test it must take each turn.
+
+## Unstable Internment
+
+_Madness from low-quality cybernetics is slow to manifest, but irreversible once it does._
+
+A model with this special rule must always attempt to charge or make a Sweeping Advance if it can, and can never count as Scoring.
 
 ## Unwieldy
 
@@ -1235,6 +1461,12 @@ A Knight Vestal cannot be assigned to any unit that includes one or more models 
 
 No more than one Knight Vestal may be assigned to any given unit. Once assigned to a unit, the Knight Vestal is considered part of that unit and may not leave under any circumstances - if that unit is removed as a casualty then the Knight Vestal is removed as well. In battles using Victory Points, no Victory Points are ever scored for removing a Knight Vestal as a casualty. When assigned to a unit, a Knight Vestal gains all of the Special Rules (with the exception of those that specifically forbid it, such as the Bitter Duty Special Rule) and Unit Sub-types listed for the unit to which it is attached, but does not gain access to any additional wargear options available to the unit to which it is assigned.
 
+## Volatile Ordnance
+
+_Prototype weaponry often malfunctions, but the field data is worth the risk._
+
+All Heavy weapons on a model with this special rule have Gets Hot. While the squad includes at least one Havoc Master, it may ignore the first Gets Hot result it suffers each phase.
+
 ## Volatile Plasma Containment
 
 _Some plasma weapons' containment fields were not designed to resist external pressure - and the effects of damage from hostile forces could often detonate them._
@@ -1252,6 +1484,16 @@ No line of sight may be drawn through, into, or out of the area covered by the V
 Any models that enter the boundary of this area of terrain, or begin the Movement phase of the model's Controlling Player within its boundaries, immediately suffer one Str 10, AP 1 Hit and the Instant Death and Armourbane (Melee) special rules. If the model has the Vehicle Unit Type and suffers a Penetrating Hit due to this effect then it adds a modifier of +3 to that roll on the Vehicle Damage table.
 
 This area of terrain does not confer a Cover Save and no model within its boundary may use a Cover Save granted by any other rule or effect.
+
+## Vox Override
+
+_These arrays blast data across many channels to break through the static._
+
+While a model with this special rule is deployed on the battlefield, you may re-roll failed rolls to see whether a Reserve is Disordered.
+
+## Walker in Shadow
+
+Omegon has Deep Strike, Scout and Infiltrate, and may confer them on a single unit that joins him via the chosen deployment method. On the turn a unit using this rule enters the battle, it also gains Shrouded (4+) for that turn.
 
 ## Warp Resplendent
 
@@ -1278,6 +1520,16 @@ Once per game turn, at the start of the Controlling Player's Shooting Phase, the
 4 - Armour Repairs: All models affected may re-roll Armour Save rolls of 1.
 5 - Cooling Coils: All models affected's Ranged Weapons increase the number of shots they fire by 1 (for example, a weapon with Assault 2 becoming Assault 3), and may ignore the effects of the Gets Hot Special Rule on their weapons, if they have it.
 6 - Complete Overhaul: The Controlling Player may choose two different results from this table and apply them to the unit.
+
+## Whispercutter
+
+_Projectors cast false images and scatter-shrouds to hide the vehicle's true position._
+
+A model with this special rule that moves at least half its Movement gains Shrouded (6+) until the start of its controlling player's next Movement phase.
+
+## Winds of the Storm
+
+A unit including models with this special rule may only be joined by a Legion Centurion with the Stormseer Consul upgrade or by Targutai Yesugei. Legion Techmarines and Apothecaries may not be assigned to it unless they also have this special rule.
 
 ## Wrecker
 

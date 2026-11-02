@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8866-00ec-715f-f21a" name="LA -   VII: Imperial Fists" revision="48" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8866-00ec-715f-f21a" name="LA -   VII: Imperial Fists" revision="49" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="b3e4-1487-4ab7-7515" name="Alexis Polux" hidden="false" collective="false" import="false" targetId="9229-b4f9-2213-9672" type="selectionEntry">
       <modifiers>
@@ -3881,6 +3881,12 @@
         <categoryLink id="572d-7210-cb0b-3fcf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="1afc-8afb-7f00-9198" name="Huscarl Indomitus Terminator Squad" hidden="false" collective="false" import="false" targetId="aba9-ede2-0b1b-9d87" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="cb32-d380-8304-08fb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="5580-31f2-2eb8-aebd" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="19ce-b8dc-dd40-fee9" name="Phalanx Warder Squad" hidden="false" collective="false" import="true" type="unit">
@@ -6162,6 +6168,212 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Huscarl Indomitus Terminator Squad" hidden="false" id="aba9-ede2-0b1b-9d87">
+      <rules>
+        <rule name="Legiones Astartes (Imperial Fists)" id="d4be-e7d0-e1b9-6caf" hidden="false">
+          <description>Legiones Astartes (Imperial Fists)</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Bulky (X)" id="11b5-0b05-9df2-72f5" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" id="1e7a-dab5-39ae-c3c8" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink name="Huscarl Retinue" id="9e8f-4c64-eaba-be9b" hidden="false" targetId="b749-3821-4724-1c9e" type="rule"/>
+        <infoLink name="Iron Bulwark" id="afee-8b0c-5625-e8e5" hidden="false" targetId="235c-ee1f-442b-bd63" type="rule"/>
+        <infoLink name="Relentless" id="b47d-504f-88d3-58d1" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink name="Stubborn" id="7850-18c9-3283-e3e7" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+      </infoLinks>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Huscarl Indomitus" hidden="false" id="3e83-e657-e4ea-7e39">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="fdf9-ca5d-6f82-76ff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="e266-b99c-152a-86ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Huscarl Indomitus" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="7490-5e68-1baf-985d">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="e29a-72a3-39b7-d7f8" primary="false" name="Infantry Unit Type"/>
+            <categoryLink targetId="9231-183c-b97b-63f9" id="4100-0cd2-cc6e-8b16" primary="false" name="Heavy Sub-type"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange Power Weapon" hidden="false" id="a71d-e46b-4de5-f8a5" defaultSelectionEntryId="72c0-20a7-64b8-012a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c60c-1301-4fc0-2716" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71ca-81de-de6f-7682" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="72c0-20a7-64b8-012a" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e6d-b29e-c581-23ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Solarite Power Gauntlet" hidden="false" id="2471-22df-30c4-3222" type="selectionEntry" targetId="b682-2c89-f979-aa74">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9683-adaa-e9d3-c17e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Indomitus Terminator Armour" hidden="false" id="b379-da52-d3a0-0fcc" type="selectionEntry" targetId="5a55-baa5-1602-7223">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b380-247e-8e5e-f10f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2abc-bcf9-8617-f33a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Vigil Storm Shield" hidden="false" id="a1d6-9087-2065-cf32" type="selectionEntry" targetId="9036-de5a-581a-718b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f79-aafa-bdc6-9833" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06c4-1386-cd10-e9e0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Huscarl-Master Indomitus" hidden="false" id="986b-7d7f-afa6-1813">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4622-32a7-a422-e5c1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdbf-9b53-dd96-39ab" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Huscarl-Master Indomitus" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="a886-f741-658d-1a43">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="bb0f-1350-d55b-42da" primary="false" name="Infantry Unit Type"/>
+            <categoryLink targetId="9231-183c-b97b-63f9" id="3642-1b48-850f-f25c" primary="false" name="Heavy Sub-type"/>
+            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="1b7d-8f17-bb8d-811b" primary="false" name="Character"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Indomitus Terminator Armour" hidden="false" id="2d8f-4cb3-a2b7-211e" type="selectionEntry" targetId="5a55-baa5-1602-7223">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="006b-b3c5-c6d7-0220" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32c9-f347-4ee8-979a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power Weapon" hidden="false" id="1c0f-f9fc-094d-71fa" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f1e-47c0-8d32-44aa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c968-4bc3-047d-ecd3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Vigil Storm Shield" hidden="false" id="09a1-904f-81b6-790a" type="selectionEntry" targetId="9036-de5a-581a-718b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d81-7be4-1b86-f830" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c46-fec3-b265-bb69" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Huscarl-Master Indomitus: Options" hidden="false" id="5b25-127f-47ed-ec3f">
+          <entryLinks>
+            <entryLink import="true" name="Grenade Harness" hidden="false" id="8290-e4b5-51c6-68b6" type="selectionEntry" targetId="251a-860d-2c4d-62cc">
+              <modifiers>
+                <modifier type="increment" field="33f1-6cfa-c389-7dd4" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="aba9-ede2-0b1b-9d87" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="986b-7d7f-afa6-1813" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="33f1-6cfa-c389-7dd4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Chirurgeon" hidden="false" id="95e6-8f1c-34c0-792d">
+      <profiles>
+        <profile name="The Chirurgeon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3cd3-25c4-0630-5d9e">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Shred, Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Unwieldy" id="b921-47ac-7073-08d6" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink name="Shred" id="7850-b846-e1dc-6c75" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink name="Breaching (X)" id="313d-3cfa-e1b8-f452" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3e43-85cc-e010-00f2" name="The Chirurgeon" hidden="false" targetId="bc55-6749-ccd6-0cba" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Chirurgeon" hidden="false" id="96f1-aeb5-1f9b-8aa7">
+      <profiles>
+        <profile name="The Chirurgeon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="bc55-6749-ccd6-0cba">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Gives Feel No Pain (4+) and It Will Not Die (4+). Fabius makes 3 additional attacks in the Assault phase with The Chirurgeon's profile.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="fa9a-9615-1385-da35" name="The Chirurgeon" hidden="false" targetId="3cd3-25c4-0630-5d9e" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="The Chirurgeon" hidden="false" id="d331-49e9-1429-816a" type="selectionEntry" targetId="95e6-8f1c-34c0-792d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3f9-cc98-c2de-3e0f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e20e-5cc3-5650-dd4e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="446f-102e-289b-bdc5" name="Retinue" hidden="false" collective="false" import="true">
@@ -6330,6 +6542,11 @@ While locked in combat with an enemy unit that includes the enemy Warlord, or an
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule name="Huscarl Retinue" id="b749-3821-4724-1c9e" hidden="false">
+      <description>Listed on this datasheet but not defined in the conversion doc.</description>
+    </rule>
+  </sharedRules>
   <catalogueLinks>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>

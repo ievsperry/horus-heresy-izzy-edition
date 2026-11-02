@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="67" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="68" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <modifiers>
@@ -5813,6 +5813,15 @@
     <categoryLink id="bec8-22aa-3c43-2a41" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
     </categoryLinks>
     </entryLink>
+    <entryLink id="15e1-7a71-bdb3-2644" name="Omegon" hidden="false" collective="false" import="false" targetId="d385-2f24-1429-73e5" type="selectionEntry">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="caa2-407a-ddf6-173e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="45d7-a90c-1957-1b8a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="a503-f939-0ecf-5da2" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6161-d387-f086-0958" name="Lernaean Terminator Squad" publicationId="09c5-eeae-f398-b653" page="338" hidden="false" collective="false" import="true" type="unit">
@@ -7653,6 +7662,262 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Omegon" hidden="false" id="d385-2f24-1429-73e5">
+      <rules>
+        <rule name="Legiones Astartes (Alpha Legion)" id="d222-310b-447a-84d6" hidden="false">
+          <description>Legiones Astartes (Alpha Legion)</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Adamantium Will (X+)" id="3f7b-3f66-967c-842b" hidden="false" targetId="4380-44a5-f01a-d964" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Adamantium Will (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Marksman's Tutelage" id="01fb-4e49-3ba6-4d04" hidden="false" targetId="265c-f8ab-6db7-24c5" type="rule"/>
+        <infoLink name="Master of the Legion" id="b982-4f1e-afde-3b81" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule"/>
+        <infoLink name="Move Through Cover" id="a1b7-1e57-d5da-2614" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
+        <infoLink name="Pathfinder" id="5ffe-14ed-af5e-fa79" hidden="false" targetId="ec97-7aa8-49f5-b298" type="rule"/>
+        <infoLink name="Shrouded (X)" id="658f-aca7-872b-8edd" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shrouded (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Walker in Shadow" id="5e46-a37e-7623-72a0" hidden="false" targetId="d0c1-6a32-2657-7622" type="rule"/>
+      </infoLinks>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Omegon" hidden="false" id="5d7f-3c45-39ef-ad6b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38ce-d649-0938-d7ed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d325-6b14-5fa2-e912" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Omegon" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="7f83-09fc-8327-4416">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Skirmish, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">7</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="59a4-7b61-600a-c457" id="8523-d43c-7f5f-0e6f" primary="false" name="Skirmish Sub-type"/>
+            <categoryLink targetId="aa94-5c65-d1f1-46a4" id="89de-e076-fc8c-9e34" primary="false" name="Unique Sub-type"/>
+            <categoryLink targetId="ad5f-31db-8bc7-5c46" id="1a5c-9fd8-7506-3a59" primary="false" name="Primarch Unit Type"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Frag Grenades" hidden="false" id="431f-3d49-dc67-464b" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da17-c570-71fe-554d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8192-7c6e-3e07-f6d9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak Grenades" hidden="false" id="abd8-809e-0a37-f260" type="selectionEntry" targetId="99df-2421-acf7-a5ad">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d725-f0dc-befb-ddc0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28e3-c2df-d2d0-d8f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Melta Bombs" hidden="false" id="83a8-1da0-b9bd-3f67" type="selectionEntry" targetId="b9dd-3b21-f3f8-78e3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f26-e7c0-61d5-3211" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="012e-35d6-b49e-8cd6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Shroud Bombs" hidden="false" id="7baa-6424-eba1-0223" type="selectionEntry" targetId="5d4d-36b7-6bf5-fc92">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="97e6-64b1-a9db-55e8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48d3-9318-8cf8-a9d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="The Basilisk's Raiment" hidden="false" id="b23b-aae0-b1fd-15e8" type="selectionEntry" targetId="508b-4c5b-9845-1026">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f49-b754-c765-da34" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bac-0ae9-49a1-a590" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="The Hydra's Spite" hidden="false" id="707b-fc26-00c7-d227" type="selectionEntry" targetId="dc0f-3293-1189-d792">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4651-c3bc-2baa-095c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a541-c639-d2ec-2207" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="The Pale Sword" hidden="false" id="b1f5-9be2-6eea-3d2f" type="selectionEntry" targetId="e944-a74b-9be4-e9ba">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0637-8e44-8b5f-9223" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74cd-dc03-a34d-73ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="The Whispering Death" hidden="false" id="f0f1-c74a-5648-86c7" type="selectionEntry" targetId="ecff-998b-6b2c-34d1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6406-6556-5c46-2253" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="950b-724f-26f9-9e45" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Three Venom Spheres" hidden="false" id="6b5d-ce78-73f8-5104" type="selectionEntry" targetId="0451-19e3-0daf-c6b7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="386c-4906-c36c-94e7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8922-77c0-8d93-61bf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="450"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Chirurgeon" hidden="false" id="9dfd-a869-0d4f-79cf">
+      <profiles>
+        <profile name="The Chirurgeon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9612-793d-29a9-1f0f">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Shred, Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Unwieldy" id="da36-3e27-d97e-6c3b" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink name="Shred" id="154c-cb44-482b-a17e" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink name="Breaching (X)" id="6e5b-03a9-e901-109c" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="29a6-6c88-f256-2deb" name="The Chirurgeon" hidden="false" targetId="29ab-c4c9-c841-d834" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Pale Sword" hidden="false" id="e944-a74b-9be4-e9ba">
+      <profiles>
+        <profile name="The Pale Sword" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2c79-548f-9b90-75c3">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Fleshbane, Instant Death, Duellist's Edge (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fleshbane" id="a994-a2da-9a62-84a4" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
+        <infoLink name="Instant Death" id="801f-f818-b020-d8e1" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink name="Duellist’s Edge (X)" id="22af-45b7-9e47-0795" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Duellist's Edge (1)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Whispering Death" hidden="false" id="ecff-998b-6b2c-34d1">
+      <profiles>
+        <profile name="The Whispering Death" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2007-d312-e34a-e050">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Sniper, Sunder, Pinning, Shell Shock (2), Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Sniper" id="5cd5-cd96-77ba-7c6b" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+        <infoLink name="Sunder" id="3186-6aa5-4247-746e" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink name="Pinning" id="2d73-3bf4-20dc-f945" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink name="Shell Shock (X)" id="e5a2-3495-bcf7-ce9e" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Brutal (X)" id="87ff-af0e-ca2a-9624" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Basilisk's Raiment" hidden="false" id="508b-4c5b-9845-1026">
+      <profiles>
+        <profile name="The Basilisk's Raiment" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3cb3-e95a-2f14-f1c8">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Gives a 2+ Armour Save and a 4+ Invulnerable Save, and adds +1 to Omegon's Cover Saves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (X)" id="2f80-2121-136f-b887" hidden="false" targetId="500f-355d-1b56-1d4c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (4+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Chirurgeon" hidden="false" id="ba97-7b55-1a48-1cb9">
+      <profiles>
+        <profile name="The Chirurgeon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="29ab-c4c9-c841-d834">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Gives Feel No Pain (4+) and It Will Not Die (4+). Fabius makes 3 additional attacks in the Assault phase with The Chirurgeon's profile.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="59b7-ced0-ee4f-9358" name="The Chirurgeon" hidden="false" targetId="9612-793d-29a9-1f0f" type="profile"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="The Chirurgeon" hidden="false" id="16d7-e1cc-39d5-49d1" type="selectionEntry" targetId="9dfd-a869-0d4f-79cf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f414-5a82-352d-fb4d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eafa-6b92-ba00-d73f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Hydra's Spite" hidden="false" id="dc0f-3293-1189-d792">
+      <profiles>
+        <profile id="8d9f-c72f-3407-8cff" name="The Hydra's Spite" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Rending (4+), Master-crafted</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1f8b-cbc1-05a9-c900" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="011b-5310-fd2f-32a7" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Three Venom Spheres" hidden="false" id="0451-19e3-0daf-c6b7">
+      <entryLinks>
+        <entryLink id="8519-8dad-24e4-8d6a" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="82f5-cca1-51a0-31dd" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="d008-3d58-884e-43cd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="84fd-2905-f4ca-23b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

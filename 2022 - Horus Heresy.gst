@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="231" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="232" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -14685,7 +14685,8 @@ Limitations
 • A Detachment using this Rite of War may not include any models with the Vehicle Unit Type that do not also have the Flyer Sub-type.
 • A Detachment using this Rite of War may not select any Fortification choices.
 
-^Manually check restrictions and limitations</description>
+^Manually check restrictions and limitations
+Liber Centura: any unit that may take a Legion Land Raider Proteus Carrier as a Dedicated Transport may take a Legion Caestus Assault Ram instead.</description>
             </rule>
           </rules>
           <costs>
@@ -14722,7 +14723,8 @@ Limitations
 • All units in a Detachment using this Rite of War composed entirely of models with the Infantry Unit Type must begin the battle Embarked upon a model with both the Flyer and Transport Sub-types.
 • A Detachment using this Rite of War may not include any models with the Dreadnought Unit Type.
 • An Allied Detachment may not use this Rite of War.
-• A Detachment using this Rite of War may not select any Fortification choices.</description>
+• A Detachment using this Rite of War may not select any Fortification choices.
+Liber Centura: Legion Sky-Seeker Squadrons lose Support Squad.</description>
             </rule>
           </rules>
           <costs>
@@ -14789,7 +14791,8 @@ Limitations
 • A Detachment using this Rite of War may only select a single Heavy Support choice and a single Fast Attack choice.
 • An Allied Detachment may not use this Rite of War.
 • An army using this Rite of War may not select any Fortification choices.
-• An army using this Rite of War may not include more non-Infantry units than it does Infantry units.</description>
+• An army using this Rite of War may not include more non-Infantry units than it does Infantry units.
+Liber Centura: Legion Assault Veteran Squads may be taken as Troops, and gain the Line Sub-type when taken as Compulsory Troops. Saturnine Terminator Squads may be taken as Heavy Support.</description>
             </rule>
           </rules>
           <costs>
@@ -14921,7 +14924,8 @@ Limitations
 • A Detachment using this Rite of War may not select any Fortification choices.
 • A Detachment using this Rite of War may not select a Lords of War Detachment.
 • This Rite of War may only be selected for an army’s Primary Detachment.
-• An army whose Primary Detachment is using this Rite of War may not roll to Seize the Initiative.</description>
+• An army whose Primary Detachment is using this Rite of War may not roll to Seize the Initiative.
+Liber Centura: Legion Castra Ferrum Dreadnought Talons may be taken as Troops, including as Compulsory Troops, and gain the Line Sub-type when taken as Troops. Legion Contemptor-Cortus Talons may be taken as Troops. The Warlord may be any Dreadnought with the Character Sub-type, instead of a Legion Contemptor Dreadnought with the Venerable Ancient upgrade.</description>
             </rule>
           </rules>
           <costs>
@@ -16270,6 +16274,232 @@ Fulgrim Transfigured must be included in a Detachment using this Corrupted Rite 
 Until Fulgrim Transfigured is placed on the battlefield in this manner, all models in a Detachment he is part of have the Stubborn special rule.</description>
             </rule>
           </rules>
+        </selectionEntry>
+        <selectionEntry id="8050-fa21-e4ef-01fb" name="Breacher Spearhead" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule name="Breacher Spearhead" id="5b8e-c7e1-1852-7e26" hidden="false">
+              <description>Effects
+• A model with a boarding shield in base contact with another friendly model from its unit gains +1 to the boarding shield's Invulnerable Save, to a maximum of 4+.
+• Legion Tactical Support Squads and Legion Veteran Squads may take boarding shields for +5 points per model. The whole squad must take them, and gains the Heavy Sub-type.
+• Units with the Infantry (Heavy) Sub-type gain Relentless.
+• Units with the Infantry (Heavy) Sub-type equipped with boarding shields gain Heart of the Legion.
+Limitations
+• Units made up entirely of Infantry (Heavy) with boarding shields must fill the Compulsory Troops choices. This does not override Support Squad.
+• The Warlord must be an Independent Character equipped with a boarding shield.
+• If the Primary Detachment uses this Rite of War, the army may not include any unit with a jump pack, jet pack, bike or jetbike.
+• The Detachment must contain more Infantry units with the Heavy Sub-type than without it.
+• An Allied Detachment may not use this Rite of War, and the Detachment may not take Fortifications.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="845d-fdb2-6f82-8b5d" name="Destroyer Company" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule name="Destroyer Company" id="289c-8b99-f0b7-c18e" hidden="false">
+              <description>Effects
+• Legion Destroyer Assault Squads and Legion Mortalis Destroyer Squads may be taken as Troops.
+• Any unit made up entirely of models with Bitter Duty, Cult of Morkai or Shadow of Death (excluding Independent Characters) may be taken as Troops.
+• Any model with the Character Sub-type not wearing Terminator armour may take rad grenades for +10 points per model.
+• Any model with a missile launcher or gravis missile launcher may also take rad missiles for +5 points per model.
+• Independent Characters may buy Bitter Duty for +15 points per model.
+• Each enemy Scoring or Denial unit destroyed by this Detachment while within control range of an objective gives the controlling player +1 Victory Point.
+Limitations
+• The Compulsory HQ choice must be a model with the Siege Breaker or Moritat Legiones Consularis upgrade (it need not be the Warlord). This may prevent some other characters being taken.
+• If the Primary Detachment uses this Rite of War, the army may not include an Allied Detachment.
+• An Allied Detachment may not use this Rite of War, and the Detachment may not take Fortifications.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1626-e477-8660-5e2b" name="Storm-Lance Tumen" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule name="Storm-Lance Tumen" id="56f0-ce5f-37ec-98f9" hidden="false">
+              <description>Effects
+• Legion Outrider Squadrons and Legion Spatha Attack Bike Squadrons may be taken as Troops. Outrider Squadrons taken as Troops gain the Line Sub-type.
+• Any model with a Legion Spatha attack bike gains Hammer of Wrath (2).
+• Legion Hussar Squadrons gain Scout.
+Limitations
+• The Warlord must be equipped with a Legion Spatha combat bike.
+• Vehicles must have the Flyer, Fast or Skimmer Sub-type.
+• All units made up entirely of Infantry must begin the battle embarked on a model with both the Flyer and Transport Sub-types.
+• The Detachment may not include Dreadnoughts or Automata.
+• An Allied Detachment may not use this Rite of War, and the Detachment may not take Fortifications.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d11d-e31d-ab81-bdd5" name="Tactica Obliqua" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule name="Tactica Obliqua" id="0bed-4a49-7600-891d" hidden="false">
+              <description>Effects
+• The Detachment gains the Shifting Tides special rule.
+• Legion Veteran Squads and Legion Veteran Assault Squads may benefit from any Shifting Tides doctrine. From Tactical Advance they gain Heart of the Legion for that turn, but not the range increase.
+Shifting Tides. At the start of your turn you may activate one doctrine below; it lasts until the start of your next turn. Only one doctrine may be active each turn, and each may be used only once per game.
+• Ranged Devastation: Legion Tactical Support Squads and Legion Heavy Support Squads gain +1 Ballistic Skill and Split Fire.
+• Tactical Advance: Legion Tactical Squads increase the range of Heart of the Legion from 6" to 12" and gain Relentless.
+• Vicious Assault: Legion Assault Squads, Assault Support Squads and Despoiler Squads gain +1 Weapon Skill and Furious Charge (1).
+Limitations
+• The Compulsory Troops choices must be filled by at least two Legion Tactical Squads at maximum size.
+• The Detachment must include at least one Legion Assault Squad or Legion Despoiler Squad, and at least one Legion Heavy Support Squad.
+• Only a Primary Detachment with the Loyalist allegiance may use this Rite of War.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bfd2-33a3-f35f-9ad3" name="The Iron Without (IW)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="The Iron Without" id="848f-7fe2-42cd-5e8b" hidden="false">
+              <description>Effects
+• Legion Heavy Support Squads may be taken as non-Compulsory Troops.
+• Before the game, assign at least 3 Infantry or Cavalry units to a Flanking Assault; they gain Outflank. Lords of War cannot be assigned.
+• Infantry and Dreadnought units gain Hatred (Traitors) while within 18" of the Detachment's Warlord.
+Limitations
+• The Detachment must include a Warsmith, a Siege Breaker Consul or Barabas Dantioch, and that model must be the army's Warlord.
+• The Detachment may take only one Fast Attack choice.
+• Only a Detachment with the Loyalist allegiance may use this Rite of War.
+• No models may be assigned to a Deep Strike Assault or Subterranean Assault.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9e0c-55ba-f962-3bac" name="Bolt From Blue Skies (WS)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Bolt From Blue Skies" id="ca66-c308-c896-6eeb" hidden="false">
+              <description>Effects
+• Models with Legiones Astartes (White Scars) add +1" to their Charge distance if their unit moved its maximum Movement distance in the preceding Movement phase.
+• Under the same condition, they may re-roll To Wound rolls of 1 and failed Armour Penetration rolls.
+• Legion Outrider Squadrons and Legion Sky-Hunter Squadrons may be taken as Troops, and gain the Line Sub-type when taken as Compulsory Troops.
+• Cavalry with the Antigrav Sub-type gain Shrouded (6+) if they moved in the preceding Movement phase.
+Limitations
+• All Independent Characters must take a Legion Scimitar Jetbike, Shamshir Jetbike, Sojutsu Pattern Voidbike or Legion Spatha Combat Bike.
+• If all Cavalry units in the Detachment are removed from play, your opponent gains an additional D3 Victory Points.
+• Heavy Support and Lords of War choices must have Movement 16 or higher.
+• The Compulsory Troops choices must be Legion Outrider Squadrons or Legion Sky-Hunter Squadrons.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6289-7a50-cbe2-e5f4" name="The Gates of Hel (IH)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="The Gates of Hel" id="928d-74af-b069-6905" hidden="false">
+              <description>Effects
+• Iron Revenants may be taken as Troops. Iron Revenants taken as Compulsory Troops gain the Line Sub-type and Heart of the Legion.
+• Any Ghola unit with at least one model within 12" of a Legion Techmarine, or of an Independent Character with Legiones Astartes (Iron Hands), may re-roll Feel No Pain rolls of 1.
+• Thallax Cohorts (Liber Mechanicum) may be taken as non-Compulsory Troops.
+Limitations
+• The Warlord must be a model with the Keys of Hel upgrade, or Lord Crius.
+• The Detachment may not include Ferrus Manus, may not take an Allied Detachment, and may not take Fortifications.
+• All Compulsory Troops must be Iron Revenants.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2d73-62e5-4df2-8ac2" name="The Red Marked (UM)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e0f-3552-8842-f281" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="The Red Marked" id="7c2d-ed89-9846-ff3c" hidden="false">
+              <description>Effects
+• All models with Legiones Astartes (Ultramarines) in the Detachment gain Hatred (Traitors).
+• Red-Marked Squads may be taken as Troops, and gain the Line Sub-type when taken as Compulsory Troops.
+• Independent Characters in the Detachment may buy Brothers in Censure for +10 points.
+Limitations
+• The Detachment may not include Roboute Guilliman, and may not take an Allied Detachment.
+• Aeonid Thiel must be the Compulsory HQ choice and the Warlord.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0ce6-15b0-fac8-e717" name="Rukal Breacher Battalion (SoH)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Rukal Breacher Battalion" id="ab15-ee41-bd29-a1d1" hidden="false">
+              <description>Effects
+• Models with Legiones Astartes (Sons of Horus) gain Rage (2) when they successfully charge an enemy unit already locked in combat, or one that is the target of at least one other charge in the same Charge sub-phase.
+• Rukal Breacher Squads may be taken as Troops, and gain the Line Sub-type when taken as Compulsory Troops.
+• Infantry (Heavy) units equipped with Boarding Shields gain Chosen Warriors and Heart of the Legion.
+Limitations
+• The Detachment must take a Legion Centurion with the Dark Emissary Consul upgrade as an HQ choice, in addition to the Praetor or other character that allows the Rite of War.
+• The Detachment must have the Traitor allegiance.
+• The Detachment must include more units with the Heavy Sub-type than without.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -20502,6 +20732,171 @@ If the Toughness Test is failed, the target unit's Initiative Characteristic is 
     </rule>
     <rule id="698b-60a7-9b04-4d5c" name="Zenith Protocol" hidden="false">
       <description>While the Praetorian Retinue's Leader is alive, all Praetorian Servitors in the Maniple gain +1 Weapon Skill and +1 Ballistic Skill.</description>
+    </rule>
+    <rule id="f9f7-b882-7ec7-bad9" name="Agesine Protocols" hidden="false">
+      <description>A model with this special rule may never make a Sweeping Advance.</description>
+    </rule>
+    <rule id="a627-78d9-68cf-4a78" name="Air Defence Screen" hidden="false">
+      <description>When deployed before the game, each model with this special rule is placed as a separate unit and is treated as a separate unit for the rest of the game. A model with this special rule must target the closest enemy Flyer in range, if there is one; otherwise it may target other units as normal.</description>
+    </rule>
+    <rule id="fbdd-9f70-4339-d0f7" name="Airburst Munitions" hidden="false">
+      <description>A weapon with this special rule may only target models with the Flyer or Antigrav Sub-type, or models that activated a jump pack, jet pack or wings in the opponent's previous Game Turn, and can never hit any other kind of target. It may hit Flyers with its Blasts, even though this is normally prevented.</description>
+    </rule>
+    <rule id="6c0c-41fb-6511-be48" name="Armour Interlock" hidden="false">
+      <description>If a model with this special rule is in base contact with another model with it, friendly models within 3" claiming an Intervening Model Cover Save from it improve that save by 1, to a maximum of 2+. Cover from other sources is unaffected.</description>
+    </rule>
+    <rule id="5c22-b28a-cca4-0adb" name="Artisans of War" hidden="false">
+      <description>When a model with this special rule fights in the Assault phase, it may re-roll To Hit rolls of 1.</description>
+    </rule>
+    <rule id="3cbb-dfee-2306-2855" name="Automata Attendants" hidden="false">
+      <description>A Legion Servo-Automata Maniple may only be taken in a Detachment that includes a model with the Techmarine Covenant special rule, and never in an army without one. It is a Retinue Squad, and that model is its Leader; if there are several, the controlling player picks one. The Retinue Squad does not use a Force Organisation slot, counts as part of its Leader's unit, must deploy with its Leader, and the Leader may not voluntarily leave it.</description>
+    </rule>
+    <rule id="167a-f807-3f7f-23eb" name="Brothers in Censure" hidden="false">
+      <description>A unit with any models with this special rule may only join or be joined by models that also have it. If joined by Aeonid Thiel, the unit gains Preferred Enemy (Legiones Astartes).</description>
+    </rule>
+    <rule id="5697-87e8-e63e-a220" name="Captain of the Bloody 5th" hidden="false">
+      <description>Infantry with Legiones Astartes (Blood Angels) in a Detachment that includes Nassir Amit, and not wearing any pattern of Terminator armour, may take Flaying Knives at no cost. Dawnbreaker Cohorts, Angel's Tears, Sanguinary Guard and models with the Unique Sub-type may not.</description>
+    </rule>
+    <rule id="a8a9-1244-8d3c-56d6" name="Choir of Screams" hidden="false">
+      <description>Units made up entirely of models with Legiones Astartes (Emperor's Children) in a Detachment with a Kakophonix Prime may exchange weapons as follows:</description>
+    </rule>
+    <rule id="270b-6cf8-73aa-77e6" name="Damnation's Destiny" hidden="false">
+      <description>An opponent may never score Slay the Warlord for Luther, and he never counts towards Attrition totals in missions that use them.</description>
+    </rule>
+    <rule id="b6e2-8bae-1d65-e83a" name="Debilitating" hidden="false">
+      <description>A unit hit by a weapon with this special rule has its Strength reduced by 1 until the end of the controlling player's next Game Turn, to a minimum of 1. This does not stack with other Debilitating attacks, but does stack with other rules that reduce Strength.</description>
+    </rule>
+    <rule id="e81b-bdce-43e4-7902" name="Devourer Retinue" hidden="false">
+      <description>A Devourer Terminator Squad may be taken as a Retinue Squad instead of an Elites choice, in a Detachment with at least one model that has Master of the Legion and Legiones Astartes (World Eaters). That model must be its Leader, must deploy with it, and may not voluntarily leave it. It does not use a Force Organisation slot and counts as part of its Leader's unit. A squad taken this way loses Bitter Duty.</description>
+    </rule>
+    <rule id="6c65-e2b4-b592-d5ae" name="Distrusted By Our Own" hidden="false">
+      <description>A unit with this special rule never benefits from positive Leadership modifiers from friendly units, unless they come from a unit with Brothers in Censure or from The Red Marked Rite of War. It may still use Aeonid Thiel's Leadership if he joins it.</description>
+    </rule>
+    <rule id="e8f5-9f74-683e-e2e0" name="Dreadnought Magna-Grapples" hidden="false">
+      <description>Instead of a vehicle in its Auxiliary Vehicle Bay, a Legion Storm Eagle Transporter may carry up to two Legion Contemptor Dreadnoughts, Contemptor-Cortus Dreadnoughts, Castra Ferrum Dreadnoughts, Contemptor Centurions or Castra Ferrum Centurions, in any combination. They embark and disembark as normal for an Auxiliary Vehicle Bay, but do not gain Assault Vehicle when disembarking.</description>
+    </rule>
+    <rule id="39e5-b058-9ad4-df24" name="Every Door a New Horror" hidden="false">
+      <description>While Aeonid Thiel is locked in combat with an enemy unit with the Corrupted or Daemon Sub-type, he has a 5+ Invulnerable Save.</description>
+    </rule>
+    <rule id="d09c-85ae-5ecb-a25f" name="Fires of Faith" hidden="false">
+      <description>Sor Talgron gains the Anathemata and Diabolism Disciplines (*Liber Hereticus*, pages 106 and 309). He also counts as an Esoterist, so a Traitor army he is part of may select Ruinstorm Daemon units as described in the Esoterist entry (*Liber Hereticus*, page 106).</description>
+    </rule>
+    <rule id="d4f1-2c21-8037-c0f8" name="Fortress of the Mind" hidden="false">
+      <description>Psychic powers, friendly or enemy, that target Astelan or a unit he has joined suffer -2 to the Psychic check.</description>
+    </rule>
+    <rule id="2b0e-b987-2bdb-588b" name="Freakish Agility" hidden="false">
+      <description>This unit may move through other units, friendly and enemy, as if they were not there, but must end its move with every model at least 1" from enemy models and not overlapping any other base or hull.</description>
+    </rule>
+    <rule id="1356-f65a-2876-528c" name="Genetic Enhancement" hidden="false">
+      <description>During army selection, the unit must choose one enhancement:</description>
+    </rule>
+    <rule id="2fda-f736-13b4-ac11" name="Goading to Slaughter" hidden="false">
+      <description>While Hol Beloth is on the table and not Falling Back, once per game at the start of the controlling player's Assault phase, every model in the army with Legiones Astartes (Word Bearers) may set its Weapon Skill to 5 for that phase.</description>
+    </rule>
+    <rule id="b6dd-9074-8748-157c" name="Graviton Backlash" hidden="false">
+      <description>If a model with this special rule was not locked in combat in the previous turn, models making melee attacks against it suffer -1 to their To Hit rolls.</description>
+    </rule>
+    <rule id="40a0-4bfc-1d89-0cee" name="Helfather Retinue" hidden="false">
+      <description>A Helfather Covenant may only be included as a Retinue Squad, in a Detachment with at least one model that has Master of the Legion, Legiones Astartes (Iron Hands) and Keys of Hel. That model must be its Leader, must deploy with it, and may not voluntarily leave it. It does not use a Force Organisation slot and counts as part of its Leader's unit.</description>
+    </rule>
+    <rule id="6e9d-22f1-a951-07cd" name="Herald of the Primarch" hidden="false">
+      <description>A model with this special rule must always issue or accept challenges when possible. In a challenge, Azkaellon gains +1 Weapon Skill and his melee attacks gain Brutal (2).</description>
+    </rule>
+    <rule id="ff98-0c51-fcf5-2379" name="Hexapentic Ward" hidden="false">
+      <description>Hol Beloth may ignore the first wound he suffers in the game from a failed save, even one that would cause Instant Death.</description>
+    </rule>
+    <rule id="7beb-3a37-fe64-d628" name="Kiavahran Repulsor Field" hidden="false">
+      <description>Shrouded Damage Mitigation rolls made by this unit improve by 1, and it gains Shrouded (6+) if it does not already have it. When an enemy unit targets it with the Interceptor Reaction, that unit must pass an Initiative test or suffer -1 Ballistic Skill for those attacks.</description>
+    </rule>
+    <rule id="7039-2ba3-8b2a-4b24" name="Line Breakers" hidden="false">
+      <description>Once per game, when working out combat resolution for a combat including a unit with this special rule, you may add the total of that unit's remaining Wounds to its score of Wounds inflicted.</description>
+    </rule>
+    <rule id="c2ec-783f-b03a-63e0" name="Lord of Abominations" hidden="false">
+      <description>A Detachment that includes Fabius Bile may ignore the 0-1 limit on Terata Enhanced Warriors.</description>
+    </rule>
+    <rule id="f105-9a73-e965-a402" name="Lord of the Schadenhold" hidden="false">
+      <description>Before the game, nominate up to two Fortifications or terrain features in your deployment zone; their Cover Saves improve by 1.</description>
+    </rule>
+    <rule id="265c-f8ab-6db7-24c5" name="Marksman's Tutelage" hidden="false">
+      <description>When Omegon or any member of a unit he has joined makes a Shooting Attack, weapon range is not restricted or affected by Night Fighting, Shroud Bombs or any other special rule. No model may make Shrouded rolls against Wounds from Omegon's Shooting Attacks.</description>
+    </rule>
+    <rule id="3768-f248-4180-aec4" name="Master of the Zadyin Arga" hidden="false">
+      <description>Targutai Yesugei always knows the Telepathy and The Storm's Fury Psychic Disciplines and may not take any others. He may take a Dark Sons of Death unit as a Retinue as if he were a Legion Consul with the Stormseer upgrade.</description>
+    </rule>
+    <rule id="5add-2e3f-8980-b0ce" name="Misericordia" hidden="false">
+      <description>A model with this special rule can carry models in any type of Legion Terminator armour, including Legion-specific Terminator units, that have Bulky (2) as if they did not have Bulky (2).</description>
+    </rule>
+    <rule id="f3b7-ea38-92be-e8bf" name="Neverborn" hidden="false">
+      <description>A unit with this special rule may be taken in a Legiones Astartes (X) Detachment with the Traitor allegiance, even though it does not have Legiones Astartes (X).</description>
+    </rule>
+    <rule id="749b-b8ee-e30b-2839" name="Pater Consularis" hidden="false">
+      <description>A model with this special rule must select exactly one Pater Consularis upgrade. If it is slain, your opponent gains one additional Victory Point. Your army may include only one model with this special rule.</description>
+    </rule>
+    <rule id="b6d1-84ac-720f-fefa" name="Raptor Lieutenant" hidden="false">
+      <description>Navar Hef may only join units of Raptors, Proto-Astartes or Raptors, Mutated.</description>
+    </rule>
+    <rule id="ca96-8ee0-080c-8170" name="Reactor Overcharge" hidden="false">
+      <description>Once per game, in the controlling player's turn, a model with this special rule may overcharge its reactor. It first suffers D3 Wounds with no saves or Damage Mitigation rolls allowed. If it survives, until the start of the controlling player's next turn it adds 2" to its maximum Move and Charge distances, adds +1 Attacks and +1 Initiative, and its atomantic repulsor's Invulnerable Save becomes 5+. If it is removed as a casualty while overcharged, its atomantic repulsor's automatic hits are resolved at 6".</description>
+    </rule>
+    <rule id="d59a-e41b-8401-fc2a" name="Risen from the Ashes" hidden="false">
+      <description>Solomon Demeter and any unit he joins have Hatred (Traitors), but may not Run or make Sweeping Advances.</description>
+    </rule>
+    <rule id="231f-38fd-45bb-5993" name="Rising Crescendo" hidden="false">
+      <description>A Kakophoni Squad that includes the Kakophonix Prime ignores Gets Hot and gains Shell Shock (2) with its Cacophony weapons.</description>
+    </rule>
+    <rule id="1269-aecd-8e8a-77bb" name="Sanguinary Retinue" hidden="false">
+      <description>A Sanguinary Guard unit may only be included as a Retinue Squad, in a Detachment with at least one model that has Master of the Legion and Legiones Astartes (Blood Angels) and is either Sanguinius or equipped with a Legion Warhawk Jump Pack. That model must be its Leader, must deploy with it, and may not voluntarily leave it; if the Leader deploys by Deep Strike Assault, the unit must too. It does not use a Force Organisation slot and counts as part of its Leader's unit.</description>
+    </rule>
+    <rule id="a0c5-70e5-0e91-9dec" name="Secrets and Lies" hidden="false">
+      <description>Luther may not be taken in an army that includes Lion El'Jonson.</description>
+    </rule>
+    <rule id="5e07-12ad-1fd1-e722" name="Spearhead Commander" hidden="false">
+      <description>Before the game, assign Castrmen Orth to a Vehicle in the same army with a Front Armour of at least 13 (not one with the Knight, Titan or Unique Sub-type); he should be modelled on it. He takes up no Transport Capacity and may not leave unless it is Immobilised or Destroyed; otherwise he is treated as a transported model if it is Destroyed. While he is assigned, the vehicle may use his Ballistic Skill of 5 and add +1 Strength to one Battle Weapon. It loses any Legiones Astartes (X) and gains Legiones Astartes (Iron Hands), and may not take a Legiones Decurion upgrade. If a Primary Detachment containing Orth uses the Armoured Spearhead Rite of War, Orth must be the Warlord instead of a model gaining the Master of Armour Warlord Trait and Master of the Legion.</description>
+    </rule>
+    <rule id="58b3-65aa-f616-19f0" name="Spiteful Binding" hidden="false">
+      <description>At the end of any player's Assault phase, if Skraivok attacked in melee against an enemy model with a higher Weapon Skill than his own, roll a D6. On a 6, Skraivok is removed from play as a casualty, and the opposing player may not claim Slay the Warlord for it.</description>
+    </rule>
+    <rule id="d415-4492-4ca4-2a9b" name="Synthetica Mindlock" hidden="false">
+      <description>A unit with this special rule may make Reactions, ignoring the Automata Sub-type's restrictions, as long as it includes a Legion Techmarine.</description>
+    </rule>
+    <rule id="e219-e894-b574-7bbe" name="Tachseer" hidden="false">
+      <description>A Legion Command Squad with Legion Scimitar Jetbikes led by Shiban Khan may exchange them for Legion Shamshir Jetbikes at no cost.</description>
+    </rule>
+    <rule id="87f7-ba8b-fdeb-4dd5" name="Tank Desant" hidden="false">
+      <description>A model embarked on a model with this special rule may fire its ranged weapons as though it were not embarked, measuring range from the Transport's hull.</description>
+    </rule>
+    <rule id="6da9-e283-2ba5-b1ed" name="Tetrach's Chosen" hidden="false">
+      <description>Barabas Dantioch may be taken in an Iron Warriors Detachment, or in a Detachment with Legiones Astartes (Ultramarines) or (Imperial Fists). He keeps Legiones Astartes (Iron Warriors) but may not be the Warlord there. All units in that Detachment treat him as Sworn Brothers, but he may embark on its Transports.</description>
+    </rule>
+    <rule id="0a11-979f-3529-fcd5" name="The Mongrel Legion" hidden="false">
+      <description>The unit counts as having Legiones Astartes (Emperor's Children) for army selection and other rules that interact with it, but gains none of its bonuses. Only Fabius Bile may join it.</description>
+    </rule>
+    <rule id="c18f-96b3-187e-2d16" name="There's No Room for Honour Here" hidden="false">
+      <description>Whenever Aeonid Thiel issues a challenge that is accepted, or accepts one, he may make a Shooting Attack at his opponent with his Bolt Pistol before the combat begins. The pistol gains Concussive (1) for that attack, and any wounds are resolved before the combat begins.</description>
+    </rule>
+    <rule id="dd57-9a77-ebab-5198" name="Transport Skiff" hidden="false">
+      <description>A model with this special rule gains Infantry Transport and Assault Vehicle; for those rules and the Transport Sub-type, a Legion Whispercutter counts as a Vehicle. When it loses its last Wound, every embarked model suffers a Strength 6, AP - hit, allocated by the controlling player. Survivors are placed where the model was, or as close as possible, in coherency and at least 1" from enemy models; any that cannot be placed are removed as casualties. The unit must then take a Pinning test.</description>
+    </rule>
+    <rule id="4d8b-8dca-f48e-5f52" name="Unstable Disposition" hidden="false">
+      <description>The unit automatically passes the first failed Morale or Pinning test it must take each turn.</description>
+    </rule>
+    <rule id="9964-d7b3-0cfd-51cb" name="Unstable Internment" hidden="false">
+      <description>A model with this special rule must always attempt to charge or make a Sweeping Advance if it can, and can never count as Scoring.</description>
+    </rule>
+    <rule id="2f20-6898-18eb-3468" name="Volatile Ordnance" hidden="false">
+      <description>All Heavy weapons on a model with this special rule have Gets Hot. While the squad includes at least one Havoc Master, it may ignore the first Gets Hot result it suffers each phase.</description>
+    </rule>
+    <rule id="6c8b-1e85-165a-d50b" name="Vox Override" hidden="false">
+      <description>While a model with this special rule is deployed on the battlefield, you may re-roll failed rolls to see whether a Reserve is Disordered.</description>
+    </rule>
+    <rule id="d0c1-6a32-2657-7622" name="Walker in Shadow" hidden="false">
+      <description>Omegon has Deep Strike, Scout and Infiltrate, and may confer them on a single unit that joins him via the chosen deployment method. On the turn a unit using this rule enters the battle, it also gains Shrouded (4+) for that turn.</description>
+    </rule>
+    <rule id="fe8c-867c-a9e1-7cc2" name="Whispercutter" hidden="false">
+      <description>A model with this special rule that moves at least half its Movement gains Shrouded (6+) until the start of its controlling player's next Movement phase.</description>
+    </rule>
+    <rule id="6d05-7946-47cd-11b9" name="Winds of the Storm" hidden="false">
+      <description>A unit including models with this special rule may only be joined by a Legion Centurion with the Stormseer Consul upgrade or by Targutai Yesugei. Legion Techmarines and Apothecaries may not be assigned to it unless they also have this special rule.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
