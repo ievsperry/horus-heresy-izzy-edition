@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="232" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="233" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -9162,6 +9162,9 @@ Two Turret Mounted Lascannons</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="8e99-19e1-b84a-db0b" name="Vengeance Weapon Battery" publicationId="d0df-7166-5cd3-89fd" page="97" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="c58e-b189-c4ae-46c3" name="Hardwired Defences" hidden="false" targetId="c577-0288-3a53-d1ed" type="rule"/>
+      </infoLinks>
       <selectionEntries>
         <selectionEntry id="aae4-f940-dab5-adc3" name="Vengeance Weapon Battery" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -9277,6 +9280,8 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       </rules>
       <infoLinks>
         <infoLink id="af2f-a797-a259-ec68" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
+        <infoLink id="6006-ce35-4f52-35f3" name="Hardwired Defences" hidden="false" targetId="c577-0288-3a53-d1ed" type="rule"/>
+        <infoLink id="16ab-5bc7-9bc4-fc39" name="Power of the Machine Spirit" hidden="false" targetId="5a93-13e0-809d-782a" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a2ac-a5fa-9bd1-d0b9" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true" defaultSelectionEntryId="c496-e4dc-1ee7-09d9">
@@ -14659,7 +14664,8 @@ An army whose Warlord has this Trait counts any Allied Detachment that has any v
 Limitations
 • No unit in a Detachment using this Rite of War that includes any models with the Heavy Sub-type may be deployed onto the battlefield during deployment, and must instead be placed into Reserves. 
 • A Detachment using this Rite of War may not select any Fortification choices.
-• All Compulsory Troops choices in a Detachment using this Rite of War must be Legion Reconnaissance Squads or Legion Scout Squads.</description>
+• All Compulsory Troops choices in a Detachment using this Rite of War must be Legion Reconnaissance Squads or Legion Scout Squads.
+Liber Panoptica: Legion Scout Squads gain the Line Sub-type. The re-roll for first turn also covers Strategic Advantage, as well as Seize the Initiative and First Strike attempts.</description>
             </rule>
           </rules>
           <costs>
@@ -14863,7 +14869,8 @@ Limitations
 • A Detachment using this Rite of War may not include any models with a Movement Characteristic of 0 or ‘-’.
 • This Rite of War may only be selected for an army’s Primary Detachment.
 
-^Manually check limitations on Deployment</description>
+^Manually check limitations on Deployment
+Liber Panoptica: one single-model Legion Sicaran, Predator or Kratos Squadron must be taken as an HQ choice. It gains Master of the Legion and Legiones Astartes Command Tank, must be the Warlord (even though it is a Vehicle) and must use the Master of Armour Warlord Trait.</description>
             </rule>
           </rules>
           <costs>
@@ -14925,7 +14932,8 @@ Limitations
 • A Detachment using this Rite of War may not select a Lords of War Detachment.
 • This Rite of War may only be selected for an army’s Primary Detachment.
 • An army whose Primary Detachment is using this Rite of War may not roll to Seize the Initiative.
-Liber Centura: Legion Castra Ferrum Dreadnought Talons may be taken as Troops, including as Compulsory Troops, and gain the Line Sub-type when taken as Troops. Legion Contemptor-Cortus Talons may be taken as Troops. The Warlord may be any Dreadnought with the Character Sub-type, instead of a Legion Contemptor Dreadnought with the Venerable Ancient upgrade.</description>
+Liber Centura: Legion Castra Ferrum Dreadnought Talons may be taken as Troops, including as Compulsory Troops, and gain the Line Sub-type when taken as Troops. Legion Contemptor-Cortus Talons may be taken as Troops. The Warlord may be any Dreadnought with the Character Sub-type, instead of a Legion Contemptor Dreadnought with the Venerable Ancient upgrade.
+Liber Panoptica: new Limitation: each Dreadnought with the Line Sub-type is worth +1 Victory Point to the opponent when destroyed.</description>
             </rule>
           </rules>
           <costs>
@@ -16271,7 +16279,8 @@ Fulgrim Transfigured must be included in a Detachment using this Corrupted Rite 
               <description>Before the start of the first turn, when placing units into Reserves, if Fulgrim Transfigured has not joined a unit and does not have a Retinue Squad, the controlling player may place Fulgrim Transfigured into Reserves and must declare to their opponent a Turn number from Turn 2 - 4, indicating on which of their own turns they will bring Fulgrim Transfigured into play from Reserves. At the start of the declared turn, the controlling player must place Fulgrim Transfigured wholly within 6&quot; of a unit with the Legiones Hereticus (Emperor’s Children) special rule, and not within 1&quot; of any enemy models. If this is not possible, Fulgrim Transfigured cannot be set up this turn, and the controlling player must attempt to deploy Fulgrim Transfigured again at the start of their following turn.
 
 
-Until Fulgrim Transfigured is placed on the battlefield in this manner, all models in a Detachment he is part of have the Stubborn special rule.</description>
+Until Fulgrim Transfigured is placed on the battlefield in this manner, all models in a Detachment he is part of have the Stubborn special rule.
+Liber Panoptica: a model deployed by this rule counts as having arrived by Deep Strike Assault for Movement, Shooting Attacks and Charges.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -19694,7 +19703,8 @@ Once all units are deployed, any enemy units within line of sight and range may 
 Once all units from the Area Denial Drop have been deployed and any Interceptor Reactions have been resolved, the turn proceeds as normal. Units that have been deployed as part of an Area Denial Drop may not Move or Run in the same Movement phase as they are deployed, but may Shoot and declare Charges as normal (if the models deployed as part of the Area Denial Drop are allowed to make Charges).</description>
     </rule>
     <rule id="8837-14e8-344a-1f39" name="Auxiliary Vehicle Bay" publicationId="a716-c1c4-7b26-8424" page="117" hidden="false">
-      <description>Models with the Vehicle Unit Type may Embark on a model with this Special Rule, Embarking and Disembarking as per the normal rules for Embarking/Disembarking. A model with this Special Rule may carry one model with the Vehicle Unit Type whose starting Hull Points Characteristic is 4 or less. A model with the Vehicle Unit Type Embarking or Disembarking from a model with this Special Rule may do so from any point on the model's base, or its hull if it has no base.</description>
+      <description>Models with the Vehicle Unit Type may Embark on a model with this Special Rule, Embarking and Disembarking as per the normal rules for Embarking/Disembarking. A model with this Special Rule may carry one model with the Vehicle Unit Type whose starting Hull Points Characteristic is 4 or less. A model with the Vehicle Unit Type Embarking or Disembarking from a model with this Special Rule may do so from any point on the model's base, or its hull if it has no base.
+Liber Panoptica: Flyers and models with Movement 0 can never embark in it. A model normally forbidden in list building (for example by a Rite of War) may still be taken if it starts the game embarked in an Auxiliary Vehicle Bay.</description>
     </rule>
     <rule id="d1b8-31da-c53c-4fe2" name="Bitter Duty" publicationId="a716-c1c4-7b26-8424" page="117" hidden="false">
       <description>A unit that includes any models with this special rule may not be joined by any model that does not also have this special rule (this includes Legion Techmarines and Legion Apothecaries, which may not be assigned to a unit with this special rule unless they also have this special rule).</description>
@@ -19773,7 +19783,8 @@ Once assigned to a unit, the Legion Techmarine is considered part of that unit a
       <description>When a target with an Armour Value is struck by a weapon with this special rule, the amount of Hull Point damage caused by the weapon is doubled.</description>
     </rule>
     <rule id="88df-ea13-cc92-8193" name="Rocket Barrage" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
-      <description>If a model that has a weapon with this special rule does not move in the Movement phase of a given turn, that weapon may be given the Rending (4+) and Pinning special rules until the start of the controlling player’s next turn.</description>
+      <description>If a model that has a weapon with this special rule does not move in the Movement phase of a given turn, that weapon may be given the Rending (4+) and Pinning special rules until the start of the controlling player’s next turn.
+Liber Panoptica: a model that did not move gains Rending (5+), Shell Shock (1) and Pinning with the weapon until the start of its next turn.</description>
     </rule>
     <rule id="6b79-ac44-4d89-2124" name="Retinue" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
       <description>A Legion Command Squad, Legion Cataphractii Terminator Command Squad or Legion Tartaros Command Squad may only be selected as part of a Detachment that includes at least one model with the Master of the Legion special rule. A unit selected in this manner is considered a ‘Retinue Squad’ and the model with the Master of the Legion special rule is referred to as the Retinue Squad’s Leader for the purposes of this special rule (if the Detachment includes more than one model with the Master of the Legion special rule then the controlling player selects one as the unit’s Leader). The Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. The Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play. A Legion Command Squad, Legion Cataphractii Terminator Command Squad or Legion Tartaros Command Squad may not be selected as part of an army without a Leader.</description>
