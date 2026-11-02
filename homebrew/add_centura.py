@@ -478,6 +478,328 @@ def rites():
     return len(new)
 
 
+# Rites of War that move units to another slot: (Rite, catalogue, unit, slot, with Compulsory Troops)
+RITE_SLOTS = [
+    ("Destroyer Company", LIBRARY, "Destroyer Assault Squad", "Troops", True),
+    ("Destroyer Company", LIBRARY, "Mortalis Destroyer Squad", "Troops", True),
+    ("Storm-Lance Tumen", LIBRARY, "Outrider Squadron", "Troops", True),
+    ("Storm-Lance Tumen", LIBRARY, "Spatha Attack Bike Squadron", "Troops", True),
+    ("Fury of the Ancients", LIBRARY, "Castra Ferrum Dreadnought Talon", "Troops", True),
+    ("Fury of the Ancients", LIBRARY, "Legion Contemptor-Cortus Dreadnought Talon", "Troops", True),
+    ("Pride of the Legion", LIBRARY, "Legion Assault Veteran Squad", "Troops", True),
+    ("Pride of the Legion", LIBRARY, "Saturnine Terminator Squad", "Heavy Support", False),
+    ("The Iron Without (IW)", "2022 - LA - Iron Warriors.cat", "Heavy Support Squad", "Troops", False),
+    ("Bolt From Blue Skies (WS)", "2022 - LA - White Scars.cat", "Outrider Squadron", "Troops", True),
+    ("Bolt From Blue Skies (WS)", "2022 - LA - White Scars.cat", "Sky-Hunter Squadron", "Troops", True),
+    ("The Gates of Hel (IH)", "2022 - LA - Iron Hands.cat", "Iron Revenants", "Troops", True),
+    ("The Red Marked (UM)", "2022 - LA - Ultramarines.cat", "Red-Marked Squad", "Troops", True),
+    ("Rukal Breacher Battalion (SoH)", "2022 - LA - Sons of Horus.cat", "Rukal Breacher Squad", "Troops", True),
+]
+
+
+def rite_id(name):
+    official = {"Fury of the Ancients": MODIFIED_RITES["Fury of the Ancients"],
+                "Pride of the Legion": MODIFIED_RITES["Pride of the Legion"]}
+    return official.get(name) or bc.make_id("centura rite", name)
+
+
+def rite_slots():
+    """'X may be taken as Troops': as the official Rites do it, a second root link to the unit in that slot,
+    shown only while the Detachment has the Rite."""
+    C = et.NS["cat"]
+    unit_ids = {}
+    for f in {f for _, f, _, _, _ in RITE_SLOTS} | {LIBRARY}:
+        unit_ids.update({(f, e.get("name")): e.get("id") for e in ET.parse(f).getroot().find(C + "sharedSelectionEntries")
+                         if e.get("type") == "unit"})
+    lib_units = {n: i for (f, n), i in unit_ids.items() if f == LIBRARY}
+    by_file = {}
+    for rite, f, unit, slot, compulsory in RITE_SLOTS:
+        uid = unit_ids.get((f, unit)) or lib_units[unit]
+        lid = bc.make_id("centura rite slot", rite, unit)
+        l = et.E("entryLink", id=lid, name=unit, hidden=True, collective=False, import_=False, targetId=uid,
+                 type="selectionEntry")
+        mod = bc.el(bc.el(l, "modifiers"), "modifier", type="set", field="hidden", value="false")
+        bc.el(bc.el(mod, "conditions"), "condition", type="atLeast", value=1, field="selections", scope="force",
+              childId=rite_id(rite), shared=True, includeChildSelections=True, includeChildForces=False,
+              percentValue=False)
+        cats = bc.el(l, "categoryLinks")
+        bc.el(cats, "categoryLink", id=bc.make_id(lid, "unit"), name="Unit:", hidden=False,
+              targetId="36c3-e85e-97cc-c503", primary=False)
+        for cid, cname, primary in et.SLOTS[slot]:
+            if primary or (compulsory and "Compulsory" in cname):
+                bc.el(cats, "categoryLink", id=bc.make_id(lid, cid), name=cname, hidden=False, targetId=cid,
+                      primary=primary)
+        by_file.setdefault(f, []).append(l)
+    n = 0
+    for f, links in by_file.items():
+        cat = et.Text(f)
+        links = [l for l in links if l.get("id") not in cat.s]
+        if links:
+            am.add_top(cat, "entryLinks", links)
+            cat.save()
+            n += len(links)
+    return n
+
+
+# ---- each Legion's weapon upgrades, beside the weapons they replace
+
+# (Legion, weapon, upgrade, extra points, characters only, independent characters only)
+SWAPS = [
+    ("Dark Angels", "Gravis Bolt Cannon", "Gravis Xenobane Cannon", 5, False, False),
+    ("Dark Angels", "Gravis Heavy Bolter Battery", "Gravis Xenobane Cannon Battery", 5, False, False),
+    ("Dark Angels", "Heavy Bolter", "Xenobane Cannon", 2, False, False),
+    ("Dark Angels", "Twin-Linked Heavy Bolter", "Twin-Linked Xenobane Cannon", 2, False, False),
+    ("Iron Warriors", "Gravis Heavy Bolter Battery", "Gravis Shrapnel Cannon Battery", 10, False, False),
+    ("Iron Warriors", "Twin-Linked Heavy Bolter", "Twin-Linked Shrapnel Cannon", 2, False, False),
+    ("Salamanders", "Cyclonic Melta Lance", "Conflagration Melta Lance", 10, False, False),
+    ("Salamanders", "Gravis Melta Cannon", "Conflagration Melta Cannon", 10, False, False),
+    ("Salamanders", "Meltagun", "Conflagration Meltagun", 5, False, False),
+    ("Salamanders", "Multi-Melta", "Conflagration Multi-Melta", 10, False, False),
+    ("White Scars", "Power Glaive", "Power Tulwar", 0, True, False),
+    ("Space Wolves", "Bolt Pistol", "Helfrost Pistol", 20, True, False),
+    ("Iron Hands", "Power Weapon", "Medusan Zweihander", 10, True, False),
+    ("Thousand Sons", "Achea Force Sword", "Achea Force Stave", 0, False, False),
+    ("Blood Angels", "Warhawk Jump Pack", "Angelus Pattern Jump Pack", 25, False, True),
+]
+
+
+def doc_entries():
+    """The Builder's entries for the whole doc (the weapons and wargear it defines)."""
+    if not DOC_ENTRIES:
+        texts = [("Legiones Astartes", generic_text())] + [(f"Legiones Astartes ({l})", legion_text(l, s_))
+                                                           for l, s_ in legion_sections()]
+        for faction, t in texts:
+            b = bc.Builder("Liber Centura", faction, t)
+            DOC_ENTRIES.extend(b.build().find("sharedSelectionEntries"))
+    return DOC_ENTRIES
+
+
+def swaps():
+    """'Any model with Legiones Astartes (Salamanders) may exchange a Meltagun for a Conflagration Meltagun (+5)':
+    the upgrade beside the weapon in every pick that offers it, in the library and the Legion's catalogue, shown
+    only to that Legion (and only on characters where the doc says so). The upgrades are shared entries in the
+    library, copied from the doc's profiles."""
+    C = et.NS["cat"]
+    et.configure(LIBRARY, am.LIBS, DOC, "", "liber centura swaps")
+    ids = legion_ids()
+    lib = et.Text(LIBRARY)
+    lroot = ET.fromstring(lib.s.encode("utf-8"))
+    shared = {e.get("name"): e.get("id") for e in lroot.find(C + "sharedSelectionEntries")}
+    new, targets = [], {}
+    for _, _, up, _, _, _ in SWAPS:
+        if up in targets:
+            continue
+        if up in shared:
+            targets[up] = shared[up]
+            continue
+        src = am.anywhere(up, doc_entries())
+        if src is None:
+            continue
+        e = am.clone(src, up, bc.make_id("centura swap", up))
+        e.set("id", bc.make_id("centura swap weapon", up))
+        bc.add_cost(e, 0)
+        new.append(e)
+        targets[up] = e.get("id")
+    if new:
+        am.add_top(lib, "sharedSelectionEntries", new)
+        lib.save()
+    n = 0
+    for f in [LIBRARY] + [legion_file(l) for l in sorted({x[0] for x in SWAPS})]:
+        cat = et.Text(f)
+        root = ET.fromstring(cat.s.encode("utf-8"))
+        parent = {c: p_ for p_ in root.iter() for c in p_}
+        def character(g, independent):
+            x = g
+            while x is not None:
+                cats = [c.get("name") or "" for c in x.findall(f"{C}categoryLinks/{C}categoryLink")]
+                types = [p_.findtext(f".//{C}characteristic[@name='Unit Type']") or "" for p_ in
+                         x.findall(f"{C}profiles/{C}profile")]
+                if any(("Independent Character" if independent else "Character") in t for t in cats + types):
+                    return True
+                x = parent.get(x)
+            return False
+        adds = []
+        for g in root.iter(C + "selectionEntryGroup"):
+            items = list(g.findall(f"{C}entryLinks/{C}entryLink")) + list(g.findall(f"{C}selectionEntries/{C}selectionEntry"))
+            for legion, weapon, up, pts, chars, ics in SWAPS:
+                if f != LIBRARY and f != legion_file(legion) or up not in targets:
+                    continue
+                if not any(am.bare(x.get("name") or "") == am.bare(weapon) for x in items):
+                    continue
+                if any(am.bare(x.get("name") or "") == am.bare(up) for x in items):
+                    continue
+                if (chars or ics) and not character(g, ics):
+                    continue
+                src = next(x for x in items if am.bare(x.get("name") or "") == am.bare(weapon))
+                base = next((float(c.get("value")) for c in src.findall(f"{C}costs/{C}cost")), 0)
+                lid = bc.make_id("centura swap", g.get("id"), up)
+                if lid in cat.s:
+                    continue
+                l = et.E("entryLink", id=lid, name=up, hidden=False, collective=False, import_=True,
+                         targetId=targets[up], type="selectionEntry")
+                mod = bc.el(bc.el(l, "modifiers"), "modifier", type="set", field="hidden", value="true")
+                bc.el(bc.el(mod, "conditions"), "condition", type="equalTo", value=0, field="selections",
+                      scope="force", childId=ids[legion], shared=True, includeChildSelections=True,
+                      includeChildForces=False, percentValue=False)
+                mx = next((c for c in src.findall(f"{C}constraints/{C}constraint") if c.get("type") == "max"), None)
+                if mx is not None:
+                    bc.el(bc.child(l, "constraints"), "constraint", type="max", value=mx.get("value"),
+                          field="selections", scope="parent", shared=True, id=bc.make_id(lid, "max"),
+                          percentValue=False, includeChildSelections=False, includeChildForces=False)
+                bc.add_cost(l, int(base + pts) if float(base + pts).is_integer() else base + pts)
+                adds.append((g.get("id"), l))
+        for gid, l in adds:
+            start, end, indent, _ = cat.block(gid)
+            body = cat.s[start:end]
+            if "<entryLinks>" in body and not re.search(re.escape(cat.nl) + " " * (indent + 2) + "<entryLinks>", body):
+                continue  # an official pick laid out irregularly: its own list could not be found
+            cat.add(gid, "entryLinks", [l])
+        if adds:
+            cat.save()
+            n += len(adds)
+    return n
+
+
+# ---- limits on the Additional Options, Magma Plating, the Saturnine Centurion's Consularis
+
+
+# (catalogue, unit, option name, limit): "for every five models, one ..." (per5) or a fixed most
+OPTION_LIMITS = [
+    (LIBRARY, "Terminator Indomitus Squad", "Havoc Launcher", "per5"),
+    (LIBRARY, "Terminator Indomitus Squad", "Plasma Blaster", "per5"),
+    (LIBRARY, "Terminator Indomitus Squad", "Plasma Cannon", "per5"),
+    ("2022 - LA - Iron Hands.cat", "Medusan Immortal Squad", "Power Weapon", "per5"),
+    (LIBRARY, "Castra Ferrum Dreadnought Talon", "Hunter-Killer Missile", 2),
+]
+UP_TO_THREE = (LIBRARY, "Legion Primaris-Lightning Strike Fighter")
+
+
+def option_limits():
+    """'For every five models, one Legion Indomitus may take a Havoc Launcher': at most one per five models in the
+    unit; 'up to two Hunter-Killer Missiles'; the Primaris-Lightning's 'up to three of the following'."""
+    C = et.NS["cat"]
+    n = 0
+    for f in {x[0] for x in OPTION_LIMITS} | {UP_TO_THREE[0]}:
+        cat = et.Text(f)
+        root = ET.fromstring(cat.s.encode("utf-8"))
+        units = {e.get("name"): e for e in root.find(C + "sharedSelectionEntries") if e.get("type") == "unit"}
+        for f_, unit, option, limit in OPTION_LIMITS:
+            if f_ != f:
+                continue
+            u = units[unit]
+            for l in [x for x in u.iter(C + "entryLink") if x.get("id") in OPTION_IDS and x.get("name") == option]:
+                cons = l.findall(f"{C}constraints/{C}constraint")
+                if limit == "per5":
+                    cid = bc.make_id(l.get("id"), "per five")
+                    if cid in cat.s:
+                        continue
+                    c = et.E("constraint", type="max", value=0, field="selections", scope=u.get("id"), shared=True,
+                             id=cid, percentValue=False, includeChildSelections=True, includeChildForces=False)
+                    m = et.E("modifier", type="increment", field=cid, value=1)
+                    bc.el(bc.el(m, "repeats"), "repeat", field="selections", scope=u.get("id"), value=5,
+                          percentValue=False, shared=True, includeChildSelections=True, includeChildForces=False,
+                          childId="model", repeats=1, roundUp=False)
+                    cat.add(l.get("id"), "constraints", [c])
+                    cat.add(l.get("id"), "modifiers", [m])
+                else:
+                    for c in cons:
+                        if c.get("type") == "max" and c.get("value") != str(limit):
+                            a, b_, _, _ = cat.block(c.get("id"))
+                            cat.s = cat.s[:a] + re.sub(r'value="[^"]*"', f'value="{limit}"', cat.s[a:b_], 1) + cat.s[b_:]
+                n += 1
+        if f == UP_TO_THREE[0]:
+            u = units[UP_TO_THREE[1]]
+            g = next((x for x in u.iter(C + "selectionEntryGroup") if x.get("id") in OPTION_IDS), None)
+            if g is not None and bc.make_id(g.get("id"), "up to three") not in cat.s:
+                cat.add(g.get("id"), "constraints", [et.E("constraint", type="max", value=3, field="selections",
+                                                          scope="parent", shared=True,
+                                                          id=bc.make_id(g.get("id"), "up to three"),
+                                                          percentValue=False, includeChildSelections=True,
+                                                          includeChildForces=False)])
+                n += 1
+        cat.save()
+    return n
+
+
+def magma_plating():
+    """'Any model with Legiones Astartes (Salamanders) and the Vehicle Unit Type may take Magma Plating for +15
+    points': on every vehicle in the library and the Salamanders catalogue, shown only to the Salamanders."""
+    C = et.NS["cat"]
+    et.configure(LIBRARY, am.LIBS, DOC, "", "liber centura magma")
+    sal = legion_ids()["Salamanders"]
+    lib = et.Text(LIBRARY)
+    mid_ = bc.make_id("centura magma plating")
+    if mid_ not in lib.s:
+        src = am.anywhere("Magma Plating", doc_entries())
+        e = am.clone(src, "Magma Plating", "centura magma")
+        e.set("id", mid_)
+        bc.add_cost(e, 0)
+        am.add_top(lib, "sharedSelectionEntries", [e])
+        lib.save()
+    n = 0
+    for f in (LIBRARY, legion_file("Salamanders")):
+        cat = et.Text(f)
+        root = ET.fromstring(cat.s.encode("utf-8"))
+        for e in root.find(C + "sharedSelectionEntries").iter(C + "selectionEntry"):
+            if e.get("type") not in ("unit", "model"):
+                continue
+            if not any("Vehicle" in (p.get("typeName") or "") for p in e.findall(f"{C}profiles/{C}profile")):
+                continue
+            lid = bc.make_id("centura magma", e.get("id"))
+            if lid in cat.s:
+                continue
+            l = et.link_el("Magma Plating", mid_, lid, mx=1, pts=15)
+            l.set("id", lid)
+            mod = bc.el(bc.child(l, "modifiers"), "modifier", type="set", field="hidden", value="true")
+            bc.el(bc.el(mod, "conditions"), "condition", type="equalTo", value=0, field="selections", scope="force",
+                  childId=sal, shared=True, includeChildSelections=True, includeChildForces=False, percentValue=False)
+            start, end, indent, _ = cat.block(e.get("id"))
+            body = cat.s[start:end]
+            if "<entryLinks>" in body and not re.search(re.escape(cat.nl) + " " * (indent + 2) + "<entryLinks>", body):
+                continue
+            cat.add(e.get("id"), "entryLinks", [l])
+            n += 1
+        cat.save()
+    return n
+
+
+def saturnine_consularis():
+    """The Centurion in Saturnine Terminator Armour 'may select one Legiones Consularis upgrade': Legion Forge Lord,
+    Mortificator or Siege Breaker only, copies of the official upgrades, in place of the whole official pick."""
+    C = et.NS["cat"]
+    cat = et.Text(LIBRARY)
+    root = ET.fromstring(cat.s.encode("utf-8"))
+    u = next(e for e in root.find(C + "sharedSelectionEntries") if e.get("name") == "Centurion in Saturnine Terminator Armour")
+    link = next((l for l in u.iter(C + "entryLink") if l.get("targetId") == CONSULARIS), None)
+    if link is None:
+        return 0
+    owner = next(x for x in u.iter() if link in list(x))
+    holder = next(x for x in u.iter() if owner in list(x))
+    official = next(g for g in root.find(C + "sharedSelectionEntryGroups") if g.get("id") == CONSULARIS)
+    pts = {"Forge Lord": 40, "Mortificator": 25, "Siege Breaker": 45}  # the datasheet's costs
+    g = et.E("selectionEntryGroup", id=bc.make_id(u.get("id"), "saturnine consularis"), name="Legiones Consularis",
+             hidden=False, collective=False, import_=True)
+    bc.add_constraint(g, "max", 1, bc.make_id(u.get("id"), "saturnine consularis max"))
+    for e in official.find(C + "selectionEntries"):
+        if e.get("name") not in pts:
+            continue
+        c = et.deep(e)
+        ids = {x.get("id"): bc.make_id("centura saturnine", x.get("id")) for x in c.iter() if x.get("id")}
+        for x in c.iter():
+            x.tag = x.tag.split("}")[-1]
+            for a in ("id", "field", "childId", "targetId", "scope"):
+                if x.get(a) in ids and not (a == "targetId" and x.tag in ("categoryLink", "infoLink", "entryLink")):
+                    x.set(a, ids[x.get(a)])
+        for cost in c.iter("cost"):
+            if cost.get("name") == "Pts" and cost in list(c.find("costs") if c.find("costs") is not None else []):
+                cost.set("value", str(pts[e.get("name")]))
+        bc.child(g, "selectionEntries").append(c)
+    cat.remove(link.get("id"))
+    cat.add(holder.get("id"), "selectionEntryGroups", [g])
+    cat.save()
+    return 1
+
+
 # ---- Legiones Consularis (the library's official pick)
 
 
@@ -599,12 +921,18 @@ def normalise(unit, option, cost):
     return [(unit, o, cost)]
 
 
+OPTION_IDS = set()  # the ids options() wrote
+
+
 def options(doc_entries):
     notes = []
+    before = {f: set(re.findall(r'\sid="([^"]+)"', open(f, encoding="utf-8").read())) for f in OPTION_TABLES}
     for path, heads in OPTION_TABLES.items():
         et.configure(path, am.LIBS, DOC, "", "liber centura options")
         rows = [r for h in heads for u, o, c in am.option_rows(h) for r in normalise(UNIT_NAMES.get(u, u), o, c)]
         am.apply_ops(am.plan_options(rows, [path], doc_entries, notes))
+    for f in OPTION_TABLES:
+        OPTION_IDS.update(set(re.findall(r'\sid="([^"]+)"', open(f, encoding="utf-8").read())) - before[f])
     return notes
 
 
@@ -670,9 +998,14 @@ def main():
     add_legions()
     print(f"Rites of War: {rites()} added")
     print(f"Legiones Consularis: {consularis()} added")
+    print(f"Rites of War slots: {rite_slots()} links")
+    print(f"Legion weapon upgrades: {swaps()} options")
     for note in options(DOC_ENTRIES):
         print("  note:", note)
     print(f"Legion upgrades: {legion_upgrades()} rules on the Legions' entries")
+    print(f"Option limits: {option_limits()}")
+    print(f"Magma Plating: on {magma_plating()} vehicles")
+    print(f"Saturnine Centurion Consularis: {saturnine_consularis()}")
 
 
 if __name__ == "__main__" and sys.argv[1:2] == ["--legion-check"]:

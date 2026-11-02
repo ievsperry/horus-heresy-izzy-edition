@@ -529,12 +529,24 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   - the doc's Additional Options on the official units (Praetors, Castra Ferrum and Deredeo Dreadnoughts,
     Terminator Indomitus, Primaris-Lightning, Spatha, Tarantula, Achilles, Macharius, Minotaur, Whirlwind, Medusan
     Immortals);
-  - each Legion's own upgrades for any of its units (Xenobane Cannons, Olympian Shrapnel Weapons, Power Tulwars,
-    Helfrost Pistols, Ghola Sub-type, Medusan Zweihander, The Keys of Hel, Achea Force Stave, Conflagration Melta
-    Weapons, Magma Plating, the Thousand Sons disciplines) as rules on the Legion's entry in its catalogue.
-  Rule text only: the Rites' effects and limitations, the Legion upgrades above, the per-five-models and
-  up-to-three limits of the Additional Options, the Spatha Sergeant and extra Whirlwinds, and the rules the doc's
-  Rules Checklist leaves undefined. It refuses to run on a library that already has the expansion.
+  - the Rites that move units to another slot ("Legion Destroyer Assault Squads may be taken as Troops"), as the
+    official Rites do it: a second root link to the unit in that slot, shown only while the Detachment has the
+    Rite (14 of them, including the doc's additions to Fury of the Ancients and Pride of the Legion);
+  - each Legion's weapon upgrades beside the weapons they replace, in every pick of the library and the Legion's
+    catalogue that offers them, shown only to that Legion and at the weapon's cost plus the doc's (Xenobane and
+    Shrapnel Cannons, Conflagration Melta weapons, Power Tulwars, Helfrost Pistols and Medusan Zweihanders for
+    characters, the Achea Force Stave, the Angelus Pattern Jump Pack for Independent Characters), and Magma
+    Plating (+15) on every vehicle for the Salamanders;
+  - the Additional Options' limits: one per five models (Terminator Indomitus Havoc Launchers, Plasma Blasters and
+    Plasma Cannons, Medusan Immortal Power Weapons), two Hunter-Killer Missiles, the Primaris-Lightning's "up to
+    three", and the Saturnine Centurion's Consularis choice as copies of the official Forge Lord, Mortificator and
+    Siege Breaker at the datasheet's costs;
+  - each Legion's own upgrades (as above, and the Ghola Sub-type, The Keys of Hel and the Thousand Sons
+    disciplines) as rules on the Legion's entry in its catalogue.
+  Rule text only: the Rites' other effects and their limitations, the Line Sub-type a Rite grants, the Ghola
+  Sub-type, The Keys of Hel, the Thousand Sons disciplines, the two-weapon Power Tulwar exchanges, the doc's
+  "upgrade all of the following weapons in the unit" (each weapon is upgraded on its own), the Spatha Sergeant and
+  extra Whirlwinds, and the rules the doc's Rules Checklist leaves undefined. It refuses to run on a library that already has the expansion.
 - `python3 homebrew/build_dark_compliance.py` builds `Homebrew - Armies of Dark Compliance.cat`, the doc's Army of
   Dark Compliance: a Primary Detachment on the Crusade chart from both the Imperialis Militia and Legiones Astartes
   lists. It links both lists rather than copying them, and its own root entries are: "Army of Dark Compliance" (the
