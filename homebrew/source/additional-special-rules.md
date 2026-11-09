@@ -193,6 +193,7 @@ A weapon with this special rule may fire at a different target from the model's 
 _Certain transports were of such large scale that they were able to carry smaller vehicles directly into battle, though the risk of deploying them under fire was considerable._
 
 Models with the Vehicle Unit Type may Embark on a model with this Special Rule, Embarking and Disembarking as per the normal rules for Embarking/Disembarking. A model with this Special Rule may carry one model with the Vehicle Unit Type whose starting Hull Points Characteristic is 4 or less. A model with the Vehicle Unit Type Embarking or Disembarking from a model with this Special Rule may do so from any point on the model's base, or its hull if it has no base.
+Liber Panoptica: Flyers and models with Movement 0 can never embark in it. A model normally forbidden in list building (for example by a Rite of War) may still be taken if it starts the game embarked in an Auxiliary Vehicle Bay.
 
 ## Battle Focus
 
@@ -804,6 +805,15 @@ _Not unlike Battle Tank Cohorts, many officers of the Solar Auxilia were trained
 
 A model with this Special Rule is selected as a separate unit, but during deployment must be assigned to another unit from the same Tercio and may not be deployed as a separate unit. If multiple appropriate units are available, the Controlling Player chooses which unit a model with this Special Rule is assigned to. Once assigned to a unit, a model with this Special Rule counts as a part of that unit and may not leave the unit during play for any reason.
 
+## Line (X)
+
+Optional rule: When a unit with the Line Sub-type holds an Objective at the end of its controlling player's turn, that player gains X Victory Points. In addition, at the end of the game the controlling player gains X Victory Points if the unit was not destroyed. A unit with the Line Sub-type that is not listed as Line (X) is treated as having Line (1). A unit that is Pinned, Stunned, Falling Back or under any similar status gains no Victory Points from Line (X): it must be free of them at the end of the turn to score for holding an Objective, and at the end of the game to score for surviving.
+
+## Line Sub-type
+
+• A unit that includes at least one model with the Line sub-type counts as both a Scoring and Denial unit.
+Optional rule: Line (X) – When this unit holds an Objective at the end of its controlling player's turn, that player gains X Victory Points, and at the end of the game they gain X Victory Points if the unit was not destroyed. A unit not listed as Line (X) is treated as having Line (1). A unit that is Pinned, Stunned, Falling Back or under any similar status gains no Victory Points from Line (X): it must be free of them at the end of the turn to score for holding an Objective, and at the end of the game to score for surviving.
+
 ## Line Breakers
 
 Once per game, when working out combat resolution for a combat including a unit with this special rule, you may add the total of that unit's remaining Wounds to its score of Wounds inflicted.
@@ -1033,6 +1043,10 @@ Wherever a model equipped with a weapon with this Special Rule suffers a wound a
 _Bathed in radiation, these Skitarii trust the Omnissiah to protect them._
 
 An enemy unit locked in combat with one or more models with this special rule subtracts 1 from its Toughness, to a minimum of 1. This does not stack with rad grenades or Rad-Phage, but does affect Instant Death thresholds. In addition, attacks targeting a unit with this special rule have their Strength reduced by 1.
+
+## Rapid Fire (X)
+
+Optional rule: A model firing a Rapid Fire (X) weapon at a target within half the weapon's range makes X additional shots with it. A weapon with the Rapid Fire type that is not listed as Rapid Fire (X) is treated as having Rapid Fire (1).
 
 ## Rapid Insertion
 
