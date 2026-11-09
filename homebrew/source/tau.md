@@ -243,10 +243,10 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | 2.0 slot | T'au units |
 |---|---|
 | HQ | Commander, Cadre Fireblade, Ethereal, Aun'Va, Aun'Shi, Commander Farsight, Commander Shadowsun, Kroot Shaper, Shas'o R'alai, Shas'o R'myr, Commander Brightsword, Commander O'Vesa, The Twin Lance, Commander Bravestorm, Commander Sha'vastos, Commander Arra'kon, Sub-commander Torchstar, Kroot Master Shaper, Kroot Flesh Shaper, Kroot Trail Shaper, Kroot War Shaper, Kroot Lone-spear |
-| Elites | Crisis Battlesuits, Crisis Bodyguards, Stealth Battlesuits, Riptide, Ghostkeel, Firesight Marksman, Darkstrider, Kroot Farstalkers, XV9 Hazard Support Team, XV81 Crisis Battlesuits, XV84 Crisis Battlesuits, DX-4 Technical Drones, Farstalker Kinband, Ethereal Guard |
+| Elites | Crisis Battlesuits, Crisis Bodyguards, Stealth Battlesuits, Riptide, Ghostkeel, Firesight Marksman, Darkstrider, Kroot Farstalkers, XV9 Hazard Support Team, XV81 Crisis Battlesuits, XV84 Crisis Battlesuits, DX-4 Technical Drones, Ethereal Guard |
 | Troops | Strike Team, Breacher Team, Kroot Carnivores, Hunter Cadre, Gue'vesa Squad |
 | Dedicated Transports | Devilfish |
-| Fast Attack | Pathfinders, Tactical Drones, Piranhas, Vespid Stingwings, Kroot Hounds, Krootox Riders, Sun Shark Bomber, Razorshark Strike Fighter, Tetra Scout Speeders, Remora Stealth Drones, Barracuda, Orca Dropship, Piranha TX-42, Pathfinder Kill Team, Vespid Stingwing Kill Team, Krootox Rampagers, Knarloc Riders |
+| Fast Attack | Pathfinders, Tactical Drones, Piranhas, Vespid Stingwings, Kroot Hounds, Krootox Riders, Sun Shark Bomber, Razorshark Strike Fighter, Tetra Scout Speeders, Remora Stealth Drones, Barracuda, Orca Dropship, Piranha TX-42, Krootox Rampagers, Knarloc Riders |
 | Heavy Support | Broadside Battlesuits, Hammerhead Gunship, Sky Ray Gunship, Sniper Drone Team, Heavy Gun Drones, XV109 Y'vahra, XV107 R'varna, Drone Sentry Turret, Shas'vre Ob'lotai 9-0, Great Knarloc |
 | Lord of War | KV128 Stormsurge, KX139 Ta'unar Supremacy Armour, Tiger Shark Fighter-Bomber, Manta Super-heavy Dropship |
 
@@ -1260,45 +1260,64 @@ Crisis Bodyguards may only be taken if the army includes a Commander, Commander 
 | – Two burst cannons | +5 points |
 | – Two fusion blasters | +15 points |
 
-#### Kroot Farstalkers — 85 pts
+#### Kroot Farstalkers — 120 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Kroot Farstalker | 7 | 4 | 3 | 4 | 3 | 1 | 3 | 2 | 7 | 6+ | 28.5mm |
+| Kinband Leader | 7 | 4 | 3 | 4 | 3 | 2 | 3 | 3 | 8 | 6+ | 28.5mm |
+| Kroot Warrior | 7 | 4 | 3 | 4 | 3 | 1 | 3 | 2 | 7 | 6+ | 28.5mm |
+| Bow-hunter | 7 | 4 | 3 | 4 | 3 | 1 | 3 | 2 | 7 | 6+ | 28.5mm |
+| Cold-blooded | 7 | 4 | 3 | 4 | 3 | 1 | 3 | 2 | 8 | 6+ | 28.5mm |
+| Cut-skin | 7 | 5 | 3 | 4 | 3 | 1 | 4 | 3 | 7 | 6+ | 28.5mm |
+| Heavy Gunner | 7 | 4 | 3 | 4 | 3 | 1 | 3 | 2 | 7 | 6+ | 28.5mm |
+| Long-sight | 7 | 4 | 4 | 4 | 3 | 1 | 3 | 2 | 7 | 6+ | 28.5mm |
+| Pistolier | 7 | 4 | 3 | 4 | 3 | 1 | 3 | 2 | 7 | 6+ | 28.5mm |
+| Stalker | 7 | 4 | 3 | 4 | 3 | 1 | 4 | 2 | 7 | 6+ | 28.5mm |
+| Tracker | 7 | 4 | 3 | 4 | 3 | 1 | 3 | 2 | 7 | 6+ | 28.5mm |
 | Kroot Hound | 10 | 4 | 0 | 4 | 3 | 1 | 5 | 2 | 6 | 6+ | 40mm |
 
 **Unit Composition**
 
-- 9 Kroot Farstalkers
-- 1 Kroot Hound
+- 1 Kinband Leader
+- 9 models chosen from Kroot Warriors, the specialists above (each at most once) and up to 2 Kroot Hounds
 
 **Wargear**
 
-- Farstalkers: Kroot rifle, close combat weapon
-- Kroot Hound: ripping fangs
+- Bow-hunter: accelerator bow, close combat weapon
+- Cut-skin: Kroot long blade, Kroot pistol
+- Heavy Gunner: dvorgite skinner or Londaxi tribalest, close combat weapon
+- Kinband Leader: Kroot rifle or Kroot pistol and ritual blade
+- Kroot Hounds: ripping fangs
+- Kroot Warriors, Cold-blooded, Tracker: Kroot rifle, close combat weapon
+- Long-sight: Kroot hunting rifle, close combat weapon
+- Pistolier: two Kroot pistols, close combat weapon
+- Stalker: Kroot long blade, Kroot rifle
 
 **Unit Type**
 
-- Kroot Farstalker: Infantry (Skirmish)
-- Kroot Hound: Cavalry (Beast)
+- Kinband Leader: Infantry (Skirmish, Character)
+- Kroot Hounds: Cavalry (Beast)
+- All other models: Infantry (Skirmish)
 
 **Special Rules**
 
 - Auxiliaries
+- Cold-blooded: while he lives, the unit may re-roll failed Morale checks and Pinning tests
 - Infiltrate
 - Move Through Cover
+- Pistolier: may fire both Kroot pistols in the Shooting phase, and may use them in close combat as an extra Attack
+- Stalker: may move up to 6" after deployment and before the first turn
 - Stealth
-- Trackers: the unit ignores Stealth and Shrouded on its targets
+- Tracker: while he lives, the unit ignores Stealth and Shrouded on its targets
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **Up to three Farstalkers may exchange their Kroot rifle for:** |  |
-| – Kroot hunting rifle | +5 points |
-| – Kroot scattergun | free |
-| – Londaxi tribalest | +10 points |
-| – Pulse carbine | +5 points |
+| **The Kroot Farstalkers may take:** |  |
+| – Up to 5 additional Kroot Warriors | +8 points each |
+| **The Bow-hunter may take:** |  |
+| – Tanglebomb launcher | +5 points |
 
 #### Riptide — 180 pts
 
@@ -1877,35 +1896,50 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 | **The unit may take:** |  |
 | – Up to 2 additional Krootox Riders | +35 points each |
 
-#### Pathfinders — 55 pts
+#### Pathfinders — 130 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Pathfinder | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
 | Pathfinder Shas'ui | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 2 | 8 | 5+ | 25mm |
+| Pathfinder | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
+| Blooded | 6 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
+| Marksman | 6 | 2 | 4 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
+| Assault Grenadier | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
+| Drone Controller | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
+| Communications Specialist | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
+| Medical Technician | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
+| Transpectral Interference Specialist | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
+| Weapons Expert | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
 
 **Unit Composition**
 
-- 5 Pathfinders
+- 1 Pathfinder Shas'ui
+- 9 models chosen from Pathfinders and the specialists above (each specialist at most once)
 
 **Wargear**
 
-- Markerlight
-- Photon grenades
-- Pulse carbine
-- Recon armour
+- Assault Grenadier: pulse carbine, EMP grenades, fusion grenades
+- Blooded: pulse carbine, Kill Team close combat blade
+- Every model: pulse carbine, markerlight, recon armour, photon grenades, unless noted below
+- Marksman: pulse rifle with targeting optics, instead of pulse carbine and markerlight
+- Medical Technician: medi-pack
+- Weapons Expert: ion rifle or rail rifle, instead of pulse carbine and markerlight
 
 **Unit Type**
 
-- Pathfinder: Infantry (Skirmish)
 - Pathfinder Shas'ui: Infantry (Skirmish, Character)
+- All other models: Infantry (Skirmish)
 
 **Special Rules**
 
+- Communications Specialist: while he lives, the unit may re-roll failed Reserves rolls, and friendly units spending this unit's Markerlight tokens gain one extra token's effect
 - Drone Controller
+- Drone Specialist: drones in the unit use the Drone Controller's Ballistic Skill while he lives
+- Medical Technician: while he lives, the unit has Feel No Pain (6+)
 - Move Through Cover
 - Scout
 - Sept (X)
+- Transpectral Interference: while he lives, enemy units targeted by the unit do not receive cover saves from Stealth or Shrouded
 
 Dedicated Transport
 
@@ -1915,16 +1949,10 @@ The unit may take a Devilfish as a Dedicated Transport.
 
 | Option | Cost |
 |---|---|
-| **The Pathfinders may take:** |  |
+| **The unit may take up to three drones from:** |  |
+| – Gun, Marker, Shield, Recon, Pulse Accelerator or Grav-inhibitor Drones | Drone costs |
+| **The unit may take:** |  |
 | – Up to 5 additional Pathfinders | +11 points each |
-| **Up to three Pathfinders may exchange their pulse carbine and markerlight for:** |  |
-| – Ion rifle | +10 points |
-| – Rail rifle | +15 points |
-| One Pathfinder may be upgraded to a Shas'ui | +10 points |
-| **The unit may take one each of:** |  |
-| – Recon Drone | Drone costs |
-| – Grav-inhibitor Drone | Drone costs |
-| – Pulse Accelerator Drone | Drone costs |
 
 #### Piranha TX-42 — 55 pts
 
@@ -2069,40 +2097,47 @@ Use the Drone profiles and equipment from the Drones section.
 | **Any Tetra may take:** |  |
 | – Disruption pod (Shrouded (6+)) | +5 points |
 
-#### Vespid Stingwings — 75 pts
+#### Vespid Stingwings — 110 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Vespid Stingwing | 6 | 3 | 3 | 3 | 4 | 1 | 5 | 1 | 6 | 4+ | 32mm |
-| Strain Leader | 6 | 3 | 3 | 3 | 4 | 1 | 5 | 2 | 7 | 4+ | 32mm |
+| Strain Leader | 6 | 3 | 3 | 3 | 4 | 2 | 5 | 2 | 7 | 4+ | 32mm |
+| Vespid Warrior | 6 | 3 | 3 | 3 | 4 | 1 | 5 | 1 | 6 | 4+ | 32mm |
+| Oracle | 6 | 3 | 3 | 3 | 4 | 1 | 5 | 1 | 7 | 4+ | 32mm |
+| Shadestrain | 6 | 3 | 4 | 3 | 4 | 1 | 5 | 1 | 6 | 4+ | 32mm |
 
 **Unit Composition**
 
-- 3 Vespid Stingwings
 - 1 Strain Leader
+- 5 models chosen from Vespid Warriors, 1 Oracle and 1 Shadestrain
 
 **Wargear**
 
-- Neutron blaster
+- Oracle: neutron blaster, communion helm
+- Shadestrain: neutron grenade launcher, close combat weapon
+- Strain Leader: neutron blaster, Strain Leader's blade
+- Vespid Warriors: neutron blaster, close combat weapon
 - Vespid Wings
 
 **Unit Type**
 
-- Vespid Stingwing: Infantry
 - Strain Leader: Infantry (Character)
+- All other models: Infantry
 
 **Special Rules**
 
 - Auxiliaries
 - Deep Strike
 - Move Through Cover
+- Oracle: while the Oracle lives, the unit does not scatter when arriving by Deep Strike, and may re-roll failed Morale checks
+- Shadestrain: the Shadestrain has Stealth
 
 **Options**
 
 | Option | Cost |
 |---|---|
-| **The Vespid may take:** |  |
-| – Up to 8 additional Vespid Stingwings | +18 points each |
+| **The unit may take:** |  |
+| – Up to 5 additional Vespid Warriors | +18 points each |
 
 ### Heavy Support
 
@@ -2589,66 +2624,7 @@ Use the Sniper Drone profile from the Drones section. A Firesight Marksman may b
 
 ### Kill Team Units
 
-These datasheets bring the T'au Kill Teams to the battlefield as small specialist units. Each takes the slot shown in its heading, uses the normal T'au or Auxiliaries rules, and may include each named specialist only once. Specialists are separate models with their own profiles and wargear; the weapons are in the Kill Team Weapons table in the Armoury.
-
-#### Farstalker Kinband (Elites) — 120 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Kinband Leader | 7 | 4 | 3 | 4 | 3 | 2 | 3 | 3 | 8 | 6+ | 28.5mm |
-| Kroot Warrior | 7 | 4 | 3 | 4 | 3 | 1 | 3 | 2 | 7 | 6+ | 28.5mm |
-| Bow-hunter | 7 | 4 | 3 | 4 | 3 | 1 | 3 | 2 | 7 | 6+ | 28.5mm |
-| Cold-blooded | 7 | 4 | 3 | 4 | 3 | 1 | 3 | 2 | 8 | 6+ | 28.5mm |
-| Cut-skin | 7 | 5 | 3 | 4 | 3 | 1 | 4 | 3 | 7 | 6+ | 28.5mm |
-| Heavy Gunner | 7 | 4 | 3 | 4 | 3 | 1 | 3 | 2 | 7 | 6+ | 28.5mm |
-| Long-sight | 7 | 4 | 4 | 4 | 3 | 1 | 3 | 2 | 7 | 6+ | 28.5mm |
-| Pistolier | 7 | 4 | 3 | 4 | 3 | 1 | 3 | 2 | 7 | 6+ | 28.5mm |
-| Stalker | 7 | 4 | 3 | 4 | 3 | 1 | 4 | 2 | 7 | 6+ | 28.5mm |
-| Tracker | 7 | 4 | 3 | 4 | 3 | 1 | 3 | 2 | 7 | 6+ | 28.5mm |
-| Kroot Hound | 10 | 4 | 0 | 4 | 3 | 1 | 5 | 2 | 6 | 6+ | 40mm |
-
-**Unit Composition**
-
-- 1 Kinband Leader
-- 9 models chosen from Kroot Warriors, the specialists above (each at most once) and up to 2 Kroot Hounds
-
-**Wargear**
-
-- Bow-hunter: accelerator bow, close combat weapon
-- Cut-skin: Kroot long blade, Kroot pistol
-- Heavy Gunner: dvorgite skinner or Londaxi tribalest, close combat weapon
-- Kinband Leader: Kroot rifle or Kroot pistol and ritual blade
-- Kroot Hounds: ripping fangs
-- Kroot Warriors, Cold-blooded, Tracker: Kroot rifle, close combat weapon
-- Long-sight: Kroot hunting rifle, close combat weapon
-- Pistolier: two Kroot pistols, close combat weapon
-- Stalker: Kroot long blade, Kroot rifle
-
-**Unit Type**
-
-- Kinband Leader: Infantry (Skirmish, Character)
-- Kroot Hounds: Cavalry (Beast)
-- All other models: Infantry (Skirmish)
-
-**Special Rules**
-
-- Auxiliaries
-- Cold-blooded: while he lives, the unit may re-roll failed Morale checks and Pinning tests
-- Infiltrate
-- Move Through Cover
-- Pistolier: may fire both Kroot pistols in the Shooting phase, and may use them in close combat as an extra Attack
-- Stalker: may move up to 6" after deployment and before the first turn
-- Stealth
-- Tracker: while he lives, the unit ignores Stealth and Shrouded on its targets
-
-**Options**
-
-| Option | Cost |
-|---|---|
-| **The Kinband may take:** |  |
-| – Up to 5 additional Kroot Warriors | +8 points each |
-| **The Bow-hunter may take:** |  |
-| – Tanglebomb launcher | +5 points |
+The Pathfinders, Vespid Stingwings and Kroot Farstalkers datasheets above are the Kill Team versions of those units, with their specialists. The Hunter Cadre below brings the Fire Warrior Kill Team to the battlefield as a unit of its own. It takes the slot shown in its heading, uses the normal T'au rules, and may include each named specialist only once. Specialists are separate models with their own profiles and wargear; the weapons are in the Kill Team Weapons table in the Armoury.
 
 #### Hunter Cadre (Troops) — 100 pts
 
@@ -2690,102 +2666,6 @@ These datasheets bring the T'au Kill Teams to the battlefield as small specialis
 | **The unit may take up to three drones from:** |  |
 | – Gun, Marker, Shield, Guardian or Grav-inhibitor Drones | Drone costs |
 | The unit may take a Devilfish as a Dedicated Transport | Devilfish cost |
-
-#### Pathfinder Kill Team (Fast Attack) — 130 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Pathfinder Shas'ui | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 2 | 8 | 5+ | 25mm |
-| Pathfinder | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
-| Blooded | 6 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
-| Marksman | 6 | 2 | 4 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
-| Assault Grenadier | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
-| Drone Controller | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
-| Communications Specialist | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
-| Medical Technician | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
-| Transpectral Interference Specialist | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
-| Weapons Expert | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 5+ | 25mm |
-
-**Unit Composition**
-
-- 1 Pathfinder Shas'ui
-- 9 models chosen from Pathfinders and the specialists above (each specialist at most once)
-
-**Wargear**
-
-- Assault Grenadier: pulse carbine, EMP grenades, fusion grenades
-- Blooded: pulse carbine, Kill Team close combat blade
-- Every model: pulse carbine, markerlight, recon armour, photon grenades, unless noted below
-- Marksman: pulse rifle with targeting optics, instead of pulse carbine and markerlight
-- Medical Technician: medi-pack
-- Weapons Expert: ion rifle or rail rifle, instead of pulse carbine and markerlight
-
-**Unit Type**
-
-- Pathfinder Shas'ui: Infantry (Skirmish, Character)
-- All other models: Infantry (Skirmish)
-
-**Special Rules**
-
-- Communications Specialist: while he lives, the unit may re-roll failed Reserves rolls, and friendly units spending this unit's Markerlight tokens gain one extra token's effect
-- Drone Controller
-- Drone Specialist: drones in the unit use the Drone Controller's Ballistic Skill while he lives
-- Medical Technician: while he lives, the unit has Feel No Pain (6+)
-- Move Through Cover
-- Scout
-- Sept (X)
-- Transpectral Interference: while he lives, enemy units targeted by the unit do not receive cover saves from Stealth or Shrouded
-
-**Options**
-
-| Option | Cost |
-|---|---|
-| **The unit may take up to three drones from:** |  |
-| – Gun, Marker, Shield, Recon, Pulse Accelerator or Grav-inhibitor Drones | Drone costs |
-| **The unit may take:** |  |
-| – Up to 5 additional Pathfinders | +11 points each |
-
-#### Vespid Stingwing Kill Team (Fast Attack) — 110 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Strain Leader | 6 | 3 | 3 | 3 | 4 | 2 | 5 | 2 | 7 | 4+ | 32mm |
-| Vespid Warrior | 6 | 3 | 3 | 3 | 4 | 1 | 5 | 1 | 6 | 4+ | 32mm |
-| Oracle | 6 | 3 | 3 | 3 | 4 | 1 | 5 | 1 | 7 | 4+ | 32mm |
-| Shadestrain | 6 | 3 | 4 | 3 | 4 | 1 | 5 | 1 | 6 | 4+ | 32mm |
-
-**Unit Composition**
-
-- 1 Strain Leader
-- 5 models chosen from Vespid Warriors, 1 Oracle and 1 Shadestrain
-
-**Wargear**
-
-- Oracle: neutron blaster, communion helm
-- Shadestrain: neutron grenade launcher, close combat weapon
-- Strain Leader: neutron blaster, Strain Leader's blade
-- Vespid Warriors: neutron blaster, close combat weapon
-- Vespid Wings
-
-**Unit Type**
-
-- Strain Leader: Infantry (Character)
-- All other models: Infantry
-
-**Special Rules**
-
-- Auxiliaries
-- Deep Strike
-- Move Through Cover
-- Oracle: while the Oracle lives, the unit does not scatter when arriving by Deep Strike, and may re-roll failed Morale checks
-- Shadestrain: the Shadestrain has Stealth
-
-**Options**
-
-| Option | Cost |
-|---|---|
-| **The unit may take:** |  |
-| – Up to 5 additional Vespid Warriors | +18 points each |
 
 ## Wargear
 
