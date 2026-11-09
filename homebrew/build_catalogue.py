@@ -4447,6 +4447,27 @@ class Builder:
         line = line.replace("†", "")
         if norm(line) == "none":
             return
+        # "Spore Cloud (as Venomthropes)" reuses another datasheet's rule text;
+        # "Supreme Loyalty (as Ethereal, 24")" and "Nova Reactor (as Riptide); O'Vesa may re-roll the Leadership
+        # test" add to it: the other datasheet's text, then the difference.
+        ref = re.fullmatch(r"(.+?) \(as ([^,()]+?)(?:, ([^()]+))?\)(?:[;,]? (.+))?", line)
+        if ref:
+            src = norm(ref.group(2))
+            for other in self.datasheets:
+                on = norm(other["name"])
+                if (on == src or src in list(singular(other["name"])) or on.endswith(" " + src)  # "the Nightbringer"
+                        or on.startswith(src + " ")):  # "Broadside" is the Broadside Battlesuits datasheet
+                    for r in other["rules"]:
+                        if r.startswith(ref.group(1) + ":"):
+                            text = r.partition(": ")[2].replace("†", "")
+                            text = text[0].upper() + text[1:]
+                            if ref.group(3):
+                                text += f"\n{ds['name']}: {ref.group(3)}."
+                            if ref.group(4):
+                                more = ref.group(4).strip().rstrip(".")
+                                text += "\n" + more[0].upper() + more[1:] + "."
+                            add_rule(unit, ref.group(1), text, uid)
+                            return
         name, sep, text = line.partition(": ")
         if sep and not re.fullmatch(r".*\(X\)", name):
             # "Warp Field: invulnerable save (3+)" -> both the local rule and the invuln link
@@ -4469,16 +4490,6 @@ class Builder:
         if norm(line).startswith("may only join"):
             add_rule(unit, "Independent Character restriction", line, uid)
             return
-        # "Spore Cloud (as Venomthropes)" reuses another datasheet's rule text.
-        ref = re.fullmatch(r"(.+?) \(as (.+?)\)", line)
-        if ref:
-            for other in self.datasheets:
-                if (norm(other["name"]) in (norm(ref.group(2)),) or norm(ref.group(2)) in list(singular(other["name"]))
-                        or norm(other["name"]).endswith(" " + norm(ref.group(2)))):  # "the Nightbringer"
-                    for r in other["rules"]:
-                        if r.startswith(ref.group(1) + ":"):
-                            add_rule(unit, ref.group(1), r.partition(": ")[2].replace("†", ""), uid)
-                            return
         if self.link_rule(unit, line, uid):
             return
         # "Mek-Smasha (4+), improved to (3+) by Grot Gorgutz": the rule, then a note.
