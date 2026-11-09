@@ -1953,6 +1953,9 @@ The unit may take a Devilfish as a Dedicated Transport.
 | – Gun, Marker, Shield, Recon, Pulse Accelerator or Grav-inhibitor Drones | Drone costs |
 | **The unit may take:** |  |
 | – Up to 5 additional Pathfinders | +11 points each |
+| **Up to three Pathfinders may exchange their pulse carbine and markerlight for:** |  |
+| – Ion rifle | +10 points |
+| – Rail rifle | +15 points |
 
 #### Piranha TX-42 — 55 pts
 
