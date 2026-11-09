@@ -355,9 +355,13 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   flavour line stays in the source. A catalogue built here still prefers a rule its own doc defines. A rule the
   game system already has under its own id (in its shared rules or a Unit Sub-type) has its text set to the
   source's; pass `--keep-existing` to leave those alone. The file holds the Imperatus Special Rules and Unit
-  Sub-types (Anathema, Asuryani, Corrupted, Guardian, Rillietann, Sycophantica). Optional rules are marked "Optional rule:": Concussion (X)
-  and Cover (X+) are new rules, while Grenades and Unwieldy keep their core text with the optional rule added
-  after it.
+  Sub-types (Anathema, Asuryani, Corrupted, Guardian, Rillietann, Sycophantica). Optional rules are marked "Optional rule:": Concussion (X),
+  Cover (X+), Line (X) and Rapid Fire (X) are new rules, while Grenades, Unwieldy and the Line Sub-type keep their
+  core text with the optional rule added after it. Rapid Fire (X) gives X extra shots within half range (a Rapid
+  Fire weapon with no value is Rapid Fire (1)); Line (X) scores X Victory Points for holding an Objective at the end
+  of its player's turn (even if the player does not control it) and X more at the end of the game if the unit survives (no value means Line (1), and a unit
+  that is Pinned, Stunned, Falling Back or under a similar status scores nothing). Both live only in the game
+  system, so every catalogue gets them without a change of its own.
 - `python3 homebrew/sync_catalogue_rules.py` gives the official catalogues' own copies of shared rules (the
   Custodes Auramite Talon, Gravitic Repulsion, Master of the Shield-Hosts and Slayer of Kings, the Solar Auxilia
   Command Tank, the Sisters of Silence Vigilant Covenant) the text `additional-special-rules.md` has for them.
