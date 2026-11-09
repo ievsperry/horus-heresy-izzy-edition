@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -586,12 +586,6 @@
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="fc12-ddbe-5ac9-1bb9" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="151f-86e9-c718-43d5" primary="false" name="Unit:" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Ravener Kill Team" hidden="false" id="6fa0-4aaf-cc59-86d8" type="selectionEntry" targetId="62f9-049f-ce78-4d8f">
-      <categoryLinks>
-        <categoryLink targetId="20ef-cd01-a8da-376e" id="61af-638d-6f3b-74b3" primary="true" name="Fast Attack:" />
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="bfc8-b1c1-59d3-4b37" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Raveners" hidden="false" id="5e79-5a7c-2e90-8c6e" type="selectionEntry" targetId="5daf-42a4-aa69-0aad">
@@ -13345,937 +13339,45 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ravener Kill Team" hidden="false" id="62f9-049f-ce78-4d8f" publicationId="7478-cf16-4f88-170b">
+    <selectionEntry type="unit" import="true" name="Raveners" hidden="false" id="5daf-42a4-aa69-0aad" publicationId="7478-cf16-4f88-170b">
       <rules>
-        <rule name="Burrow" id="06ba-da42-ba96-e29d" hidden="false">
+        <rule name="Burrow" id="c124-5c13-37d9-c65c" hidden="false">
           <description>Instead of moving in your Movement phase, the unit may burrow. Remove it from the battlefield; at the start of your next Movement phase it arrives by Subterranean Assault without a Reserves roll. A unit that arrives this way may still charge that turn</description>
         </rule>
-        <rule name="Distend Dorsal Sac (Venomspitter)" id="7393-b76b-de74-437e" hidden="false">
+        <rule name="Distend Dorsal Sac (Venomspitter)" id="aefb-6b65-bba3-e0a5" hidden="false">
           <description>Once per game, before shooting, the Venomspitter's venom bolt gains Rending (5+) and +1 shot, and its range becomes 18" until the end of the phase</description>
         </rule>
-        <rule name="Hypersensory Hunter (Tremorscythe)" id="70c7-2a49-d358-7f54" hidden="false">
+        <rule name="Hypersensory Hunter (Tremorscythe)" id="eeb9-b991-7dbb-d799" hidden="false">
           <description>The unit may declare a charge in the same turn it arrives from burrowing</description>
         </rule>
-        <rule name="Instinctive Hunter (Warrior)" id="18bf-6a5f-0c1b-4030" hidden="false">
+        <rule name="Instinctive Hunter (Warrior)" id="05cd-3b18-c3f4-3343" hidden="false">
           <description>Each Ravener Warrior's melee weapons gain Rending (5+) against enemy units that have lost at least one model or Wound, or that Fell Back in their last turn</description>
         </rule>
-        <rule name="Neuropredatory Crest (Prime)" id="0023-b1a5-c2de-beca" hidden="false">
+        <rule name="Neuropredatory Crest (Prime)" id="fa35-df87-593a-d81a" hidden="false">
           <description>Enemy units within 3" of the Prime may not re-roll to-hit, to-wound or saving throws, and count as having half their models (rounding down) when holding or contesting objectives</description>
         </rule>
-        <rule name="Reinforced Carapace (Wrecker)" id="132a-336c-5cb1-4fe6" hidden="false">
+        <rule name="Reinforced Carapace (Wrecker)" id="81b7-b427-4f56-f526" hidden="false">
           <description>Attacks with Strength 8 or higher subtract 1 from their Strength when targeting the Wrecker</description>
         </rule>
-        <rule name="Subterranean Ambush (Tremorscythe)" id="5564-0be8-f8f3-d99b" hidden="false">
+        <rule name="Subterranean Ambush (Tremorscythe)" id="add2-2764-0741-7382" hidden="false">
           <description>While the Tremorscythe lives, the unit may use this Advanced Reaction in the Movement phase. Trigger: an enemy unit ends a move within 6" of the unit, or within 6" of where the unit burrowed if it is underground. The unit makes a Shooting Attack against the triggering unit, or arrives (if underground) by Subterranean Assault within 6" of it without scattering</description>
         </rule>
-        <rule name="Synapse Creature (Prime only)" id="43fb-ae7c-3784-5eae" hidden="false">
+        <rule name="Synapse Creature (Prime only)" id="a2ff-c245-273a-5a7f" hidden="false">
           <description>While the Prime lives, the unit counts as within Synapse range</description>
         </rule>
-        <rule name="Synaptic Link (Prime)" id="86b7-ece4-a42e-dc4a" hidden="false">
+        <rule name="Synaptic Link (Prime)" id="4e55-55ff-cd4a-a55f" hidden="false">
           <description>At the start of each of your turns, roll a D6. If the result is at least twice the current game turn number, your army may make one additional reaction this game turn. If it is less than the game turn number, the Prime suffers one wound with no saves allowed</description>
         </rule>
-        <rule name="Toxic Lunge (Felltalon)" id="49f8-9035-d716-3615" hidden="false">
+        <rule name="Toxic Lunge (Felltalon)" id="3d79-5f93-2a53-fe9d" hidden="false">
           <description>Once per game, at the start of the Assault phase, one enemy unit within 2" of the Felltalon suffers D3+2 hits at Strength 4, AP 5, with Poisoned (3+)</description>
         </rule>
-        <rule name="Note" id="8821-3983-ead2-5382" hidden="false">
+        <rule name="Note" id="afb4-6bd4-f850-ebfd" hidden="false">
           <description>A brood of specialised Raveners led by a Prime, bred to tunnel beneath enemy lines and erupt among them. Converted from the Kill Team: Typhon datacards.</description>
         </rule>
-        <rule name="Note" id="3466-e55b-348f-a1ec" hidden="false">
+        <rule name="Note" id="e9e0-a748-201b-0a4c" hidden="false">
           <description>The base cost is the Prime (50 points) and four Ravener Warriors (30 points each). A full set of specialists brings the unit to 200 points.</description>
         </rule>
       </rules>
-      <infoLinks>
-        <infoLink name="Xenos" id="e45a-a450-15da-ab72" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
-        <infoLink name="Subterranean Assault" id="a7d5-873d-37a6-d5ca" hidden="false" targetId="33d4-d46d-7f47-3ad2" type="rule" />
-        <infoLink name="Hammer of Wrath (X)" id="09b4-2dc9-462d-2a11" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)" />
-          </modifiers>
-        </infoLink>
-        <infoLink name="Hive Fleet (X)" id="e1b7-5078-8996-af22" hidden="false" targetId="6ef3-1641-fb7e-9d1f" type="rule" />
-        <infoLink name="Instinctive Behaviour (X)" id="3c02-fa18-0c83-e2c6" hidden="false" targetId="0c47-6f24-0e9d-304e" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Instinctive Behaviour (Feed)" />
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="056e-c569-ddf4-9545" primary="false" name="Unit:" />
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Ravener Prime" hidden="false" id="4fda-7ba9-dde9-17b2" publicationId="7478-cf16-4f88-170b">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9491-1c76-128a-09d4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0137-8c61-d622-2ff3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <profiles>
-            <profile name="Ravener Prime" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="fb59-4a5d-3277-b01b" publicationId="7478-cf16-4f88-170b">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e478-41d4-a092-48a8" value="5">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="c6ca-7b02-e5a8-2d68" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="c32b-5fdd-3fbe-9b1f" value="5">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="98f8-e5ca-dfe6-e3a5" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Character, Monstrous)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">12</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="60ae-a922-e9f8-da74" primary="false" name="Cavalry Unit Type" />
-            <categoryLink targetId="7d95-f9d1-440a-67bd" id="42a4-41b8-3fc7-95fe" primary="false" name="Monstrous Sub-type" />
-            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="2570-15be-b0be-8480" primary="false" name="Character" />
-          </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Tail blade" hidden="false" id="920f-0bb7-facd-3910" type="selectionEntry" targetId="ec30-fbdc-59d6-d8ae">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b34e-78c5-6862-237b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="571e-9583-8a12-a5c3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Scything talons and rending claws" hidden="false" id="a3f6-948d-c903-8922" type="selectionEntry" targetId="11b2-3868-c060-d6e7">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="208b-ebd8-67ee-016e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e05f-48a8-7c5c-823c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Ravener Felltalon" hidden="false" id="984e-0fdf-2651-37ae" publicationId="7478-cf16-4f88-170b">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="90e4-bb43-3b5d-cf5f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c5a-4995-4e54-8023" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <profiles>
-            <profile name="Ravener Felltalon" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="7d17-d8b6-02fc-ce25" publicationId="7478-cf16-4f88-170b">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e478-41d4-a092-48a8" value="5">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="c6ca-7b02-e5a8-2d68" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="c32b-5fdd-3fbe-9b1f" value="5">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="98f8-e5ca-dfe6-e3a5" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Monstrous)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">12</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="2da9-bca2-f740-4acd" primary="false" name="Cavalry Unit Type" />
-            <categoryLink targetId="7d95-f9d1-440a-67bd" id="49b6-d1d3-17f5-7887" primary="false" name="Monstrous Sub-type" />
-          </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Pincer tail" hidden="false" id="39af-ebfa-3d81-7e1a" type="selectionEntry" targetId="aedf-2306-a7a9-7d17">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8964-d8ff-cf34-183b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79e8-a084-1a5a-fa81" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Toxic glands" hidden="false" id="095f-71a3-ed7d-6725" type="selectionEntry" targetId="4e2f-ad5f-382d-8dfd">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="411a-ce61-0879-e98b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b46f-0523-9665-2416" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Toxic scythes" hidden="false" id="374d-84c1-75df-d6d4" type="selectionEntry" targetId="3d2e-564c-0ab7-d0b3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9a5-d17f-54fa-ec99" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bc6-ecbf-1682-a6d1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Ravener Tremorscythe" hidden="false" id="8568-c9bd-72cd-5b38" publicationId="7478-cf16-4f88-170b">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="34d8-23a8-9195-a150" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03f7-e53f-85a6-4a34" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <profiles>
-            <profile name="Ravener Tremorscythe" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="a8f7-964c-c1ab-7d55" publicationId="7478-cf16-4f88-170b">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e478-41d4-a092-48a8" value="5">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="c6ca-7b02-e5a8-2d68" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="c32b-5fdd-3fbe-9b1f" value="5">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="98f8-e5ca-dfe6-e3a5" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Monstrous)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">12</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="243e-34d2-2c8d-1a7d" primary="false" name="Cavalry Unit Type" />
-            <categoryLink targetId="7d95-f9d1-440a-67bd" id="29e8-784b-abf7-8e16" primary="false" name="Monstrous Sub-type" />
-          </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Pincer tail" hidden="false" id="7855-19a5-bdb4-6ed8" type="selectionEntry" targetId="aedf-2306-a7a9-7d17">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a11f-c7b2-c49b-a29a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="feb2-ee97-6c21-f06d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Scything talons and rending claws" hidden="false" id="5281-a29f-e8a7-6842" type="selectionEntry" targetId="11b2-3868-c060-d6e7">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cbf2-7a4f-bba0-fc90" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f3f-afd7-7e83-be64" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Ravener Venomspitter" hidden="false" id="e4d9-5cc9-3f3e-13e7" publicationId="7478-cf16-4f88-170b">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7c84-eada-cf2a-946c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df0f-57ef-63ac-b2d0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <profiles>
-            <profile name="Ravener Venomspitter" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="1956-7ad4-4ce7-c477" publicationId="7478-cf16-4f88-170b">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e478-41d4-a092-48a8" value="5">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="c6ca-7b02-e5a8-2d68" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="c32b-5fdd-3fbe-9b1f" value="5">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="98f8-e5ca-dfe6-e3a5" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Monstrous)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">12</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="f33f-f305-d658-2bfa" primary="false" name="Cavalry Unit Type" />
-            <categoryLink targetId="7d95-f9d1-440a-67bd" id="b964-28d4-6509-90a4" primary="false" name="Monstrous Sub-type" />
-          </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Pincer tail" hidden="false" id="f765-7ea9-9fe8-f685" type="selectionEntry" targetId="aedf-2306-a7a9-7d17">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7ba-7cf0-0fdb-2494" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bed-8701-aff3-0e61" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Venom bolt" hidden="false" id="89b4-269d-11f7-740c" type="selectionEntry" targetId="e91b-0811-cea5-70f9">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afec-9118-fa1c-e8da" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b66-6539-b88a-60f2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Scything talons" hidden="false" id="af89-feee-10b4-4f17" type="selectionEntry" targetId="94f5-3302-5047-8b9e">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6299-990f-3bef-6694" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4ba-c0fd-e958-92e6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Ravener Warrior" hidden="false" id="f455-23b4-5efb-ee66" publicationId="7478-cf16-4f88-170b">
-          <modifiers>
-            <modifier type="decrement" field="3597-ea9b-817b-a2e1" value="1">
-              <repeats>
-                <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="aa81-9f34-ce34-4b8d" value="1">
-              <repeats>
-                <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="3597-ea9b-817b-a2e1" value="1">
-              <repeats>
-                <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="aa81-9f34-ce34-4b8d" value="1">
-              <repeats>
-                <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="3597-ea9b-817b-a2e1" value="1">
-              <repeats>
-                <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="aa81-9f34-ce34-4b8d" value="1">
-              <repeats>
-                <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="3597-ea9b-817b-a2e1" value="1">
-              <repeats>
-                <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="aa81-9f34-ce34-4b8d" value="1">
-              <repeats>
-                <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="3597-ea9b-817b-a2e1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="aa81-9f34-ce34-4b8d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <profiles>
-            <profile name="Ravener Warrior" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="ced8-fc8b-1b53-9854" publicationId="7478-cf16-4f88-170b">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e478-41d4-a092-48a8" value="5">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="c6ca-7b02-e5a8-2d68" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="c32b-5fdd-3fbe-9b1f" value="5">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="98f8-e5ca-dfe6-e3a5" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Monstrous)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">12</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="3f63-b8bd-7189-27b2" primary="false" name="Cavalry Unit Type" />
-            <categoryLink targetId="7d95-f9d1-440a-67bd" id="df9c-67c2-d425-cb76" primary="false" name="Monstrous Sub-type" />
-          </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Pincer tail" hidden="false" id="51ae-0fd6-a78d-7d18" type="selectionEntry" targetId="aedf-2306-a7a9-7d17">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3e6-feda-f7bb-2a2b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2982-7a4d-882b-091d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Scything talons" hidden="false" id="2e29-4b6d-4383-83d6" type="selectionEntry" targetId="94f5-3302-5047-8b9e">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9739-5d0a-12d8-d80e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b3-a027-44b7-cb6f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Ravener Wrecker" hidden="false" id="82d2-3d9b-54dd-f7c3" publicationId="7478-cf16-4f88-170b">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c595-cc23-e9d4-8046" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8ab-2493-fa4d-f442" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <profiles>
-            <profile name="Ravener Wrecker" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="2bba-7b22-dbed-81a8" publicationId="7478-cf16-4f88-170b">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="3+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="e478-41d4-a092-48a8" value="6">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="c6ca-7b02-e5a8-2d68" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="c32b-5fdd-3fbe-9b1f" value="5">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="62f9-049f-ce78-4d8f" childId="98f8-e5ca-dfe6-e3a5" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Monstrous)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">12</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="f862-8537-4df5-76e1" primary="false" name="Cavalry Unit Type" />
-            <categoryLink targetId="7d95-f9d1-440a-67bd" id="7e99-2699-4a4b-6615" primary="false" name="Monstrous Sub-type" />
-          </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Bone mace (Ravener)" hidden="false" id="5573-15c8-f308-9082" type="selectionEntry" targetId="b3b0-5fbc-cb8f-4b8d">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3dc-c7c9-64a0-51f5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81f7-a39f-61d9-e4d3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Scything talons and crushing claws" hidden="false" id="27ca-fada-2e48-1124" type="selectionEntry" targetId="0224-9a05-c11c-9f1e">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87e9-b309-b897-0c19" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d9a-da6f-5d41-a5ce" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Biomorphs" hidden="false" id="109c-67a8-78b4-5438">
-          <entryLinks>
-            <entryLink import="true" name="Adrenal Glands" hidden="false" id="4805-f811-d020-8d65" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fda-7ba9-dde9-17b2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f455-23b4-5efb-ee66" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bad1-46bd-b7c2-0f8d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Dynamic Camouflage" hidden="false" id="044f-cd1c-4623-7b9d" type="selectionEntry" targetId="e29e-5b38-88bf-c84d">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fda-7ba9-dde9-17b2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f455-23b4-5efb-ee66" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b23-3cec-e3cb-6fce" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Engrained Aggression" hidden="false" id="6614-9ca2-0168-9255" type="selectionEntry" targetId="f43d-08b1-cc02-a85e">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fda-7ba9-dde9-17b2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f455-23b4-5efb-ee66" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94fb-ce43-7bcf-e63e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Flesh Hooks" hidden="false" id="6ee9-cd1d-e3b4-7b3f" type="selectionEntry" targetId="d875-07dc-1a2b-eeb6">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fda-7ba9-dde9-17b2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f455-23b4-5efb-ee66" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce71-cd87-d64b-9859" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Hardened Carapace" hidden="false" id="4cb5-9932-a761-eb09" type="selectionEntry" targetId="7721-6ee3-0c29-5e74">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fda-7ba9-dde9-17b2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f455-23b4-5efb-ee66" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4801-759b-1f89-20d7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Hulking Brute" hidden="false" id="6af3-3c3b-47e9-39a9" type="selectionEntry" targetId="a45a-67a0-fc98-7600">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fda-7ba9-dde9-17b2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f455-23b4-5efb-ee66" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a3b-9526-a70d-9298" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Improved Strength" hidden="false" id="08c7-41e8-7b21-de68" type="selectionEntry" targetId="c6ca-7b02-e5a8-2d68">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fda-7ba9-dde9-17b2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f455-23b4-5efb-ee66" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1683-96ab-499a-f881" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Improved Toughness" hidden="false" id="5c5b-e3f9-9777-24d5" type="selectionEntry" targetId="98f8-e5ca-dfe6-e3a5">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fda-7ba9-dde9-17b2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f455-23b4-5efb-ee66" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf92-85da-cf60-8804" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Toxin Sacs" hidden="false" id="6d62-640a-e64f-2390" type="selectionEntry" targetId="644e-956c-bbee-3079">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fda-7ba9-dde9-17b2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f455-23b4-5efb-ee66" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f7b-a454-b250-e126" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Walking Terror" hidden="false" id="fbb8-a731-7dd0-382c" type="selectionEntry" targetId="63af-e8c8-0de6-6d52">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fda-7ba9-dde9-17b2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f455-23b4-5efb-ee66" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="908d-8e02-24ad-3f13" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Wraithful Will" hidden="false" id="6b73-340e-8ff8-ea75" type="selectionEntry" targetId="d656-9147-4b24-eea3">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fda-7ba9-dde9-17b2" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="984e-0fdf-2651-37ae" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8568-c9bd-72cd-5b38" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d9-5cc9-3f3e-13e7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f455-23b4-5efb-ee66" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="62f9-049f-ce78-4d8f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82d2-3d9b-54dd-f7c3" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e23d-05dd-95b1-a2bc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="170" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Raveners" hidden="false" id="5daf-42a4-aa69-0aad" publicationId="7478-cf16-4f88-170b">
       <infoLinks>
         <infoLink name="Xenos" id="c0e0-a3da-ebbd-3a99" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Subterranean Assault" id="7225-82d2-d7bc-3c3b" hidden="false" targetId="33d4-d46d-7f47-3ad2" type="rule" />
@@ -14295,13 +13397,75 @@
         <categoryLink targetId="36c3-e85e-97cc-c503" id="9675-e2af-a258-9660" primary="false" name="Unit:" />
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Ravener" hidden="false" id="3d94-acca-d077-13cd" publicationId="7478-cf16-4f88-170b">
+        <selectionEntry type="model" import="true" name="Ravener Prime" hidden="false" id="f6f3-538a-fe7a-24c7" publicationId="7478-cf16-4f88-170b">
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="cbd8-7100-2438-a196" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="2ecb-e328-9682-772d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9548-9e13-12b0-99db" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e576-d114-ff2c-76a8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
-            <profile name="Ravener" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="0ace-acce-abff-ff01" publicationId="7478-cf16-4f88-170b">
+            <profile name="Ravener Prime" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="2b62-4adb-e071-85b2" publicationId="7478-cf16-4f88-170b">
+              <modifiers>
+                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e478-41d4-a092-48a8" value="5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="c6ca-7b02-e5a8-2d68" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c32b-5fdd-3fbe-9b1f" value="5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="98f8-e5ca-dfe6-e3a5" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Character, Monstrous)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">12</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="e95c-ee06-c0b5-8720" primary="false" name="Cavalry Unit Type" />
+            <categoryLink targetId="7d95-f9d1-440a-67bd" id="dddf-83a3-36cb-e396" primary="false" name="Monstrous Sub-type" />
+            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="2099-ad4a-4fa2-bde8" primary="false" name="Character" />
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Tail blade" hidden="false" id="d705-68e2-6734-6e4e" type="selectionEntry" targetId="ec30-fbdc-59d6-d8ae">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d668-1700-2fc7-9b3d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07de-6880-68bf-9a22" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Scything talons and rending claws" hidden="false" id="c52b-6fa5-1aac-1cd0" type="selectionEntry" targetId="11b2-3868-c060-d6e7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75ea-89db-6c8e-e547" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="377f-f8e0-5c52-80bd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ravener Felltalon" hidden="false" id="c4e9-478f-4fdf-f3f5" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ecb3-270b-e6cb-e077" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7678-d781-2e4c-e81e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Ravener Felltalon" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="bad8-3ddb-064e-d75a" publicationId="7478-cf16-4f88-170b">
               <modifiers>
                 <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
                   <conditions>
@@ -14335,74 +13499,359 @@
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="2de1-b3b8-84c5-3fbe" primary="false" name="Cavalry Unit Type" />
-            <categoryLink targetId="7d95-f9d1-440a-67bd" id="97a2-f4ac-020f-3782" primary="false" name="Monstrous Sub-type" />
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="8a15-e7ea-0f84-603c" primary="false" name="Cavalry Unit Type" />
+            <categoryLink targetId="7d95-f9d1-440a-67bd" id="ff8c-b3f6-ae75-d811" primary="false" name="Monstrous Sub-type" />
           </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Exchange scything talons" hidden="false" id="ec6a-82bc-9d7a-b403" defaultSelectionEntryId="819d-c78d-b7ad-421b">
+          <entryLinks>
+            <entryLink import="true" name="Pincer tail" hidden="false" id="732f-ea63-d7ce-372c" type="selectionEntry" targetId="aedf-2306-a7a9-7d17">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="014c-5b93-1f85-bdae" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b1ee-968b-1616-99ed" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0a4-631e-8f15-c4ce" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53d1-6fea-f16c-69fa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Scything talons" hidden="false" id="819d-c78d-b7ad-421b" type="selectionEntry" targetId="94f5-3302-5047-8b9e">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="130f-9902-85e6-b9c0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Rending claws (natural)" hidden="false" id="6a40-6838-04ce-e12d" type="selectionEntry" targetId="19f0-9111-895e-e017">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7fc-a6d2-dff3-43cb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+            </entryLink>
+            <entryLink import="true" name="Toxic glands" hidden="false" id="2077-9d51-77d4-452d" type="selectionEntry" targetId="4e2f-ad5f-382d-8dfd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1831-94eb-51d6-4c13" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1be0-1c0f-507d-8c1a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Toxic scythes" hidden="false" id="601b-fbb9-280b-0ec7" type="selectionEntry" targetId="3d2e-564c-0ab7-d0b3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f74b-c5f4-2e93-bce2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9ef-8bf4-9c13-0991" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Options" hidden="false" id="1c78-64ad-8896-2f5b">
+        <selectionEntry type="model" import="true" name="Ravener Tremorscythe" hidden="false" id="45f4-752c-e843-1933" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5195-7872-54ba-53c7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6ba-85bd-fc12-cf5f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Ravener Tremorscythe" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="3563-5a4d-a0ae-7d7c" publicationId="7478-cf16-4f88-170b">
+              <modifiers>
+                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e478-41d4-a092-48a8" value="5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="c6ca-7b02-e5a8-2d68" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c32b-5fdd-3fbe-9b1f" value="5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="98f8-e5ca-dfe6-e3a5" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Monstrous)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">12</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="cb98-b54c-7764-a0ed" primary="false" name="Cavalry Unit Type" />
+            <categoryLink targetId="7d95-f9d1-440a-67bd" id="ca01-5f8d-ebe8-9828" primary="false" name="Monstrous Sub-type" />
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Pincer tail" hidden="false" id="368a-4643-48fc-50e2" type="selectionEntry" targetId="aedf-2306-a7a9-7d17">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1de8-478d-20c4-c4b1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e731-92a8-6271-d303" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Scything talons and rending claws" hidden="false" id="ac41-1f14-7c4b-a3ac" type="selectionEntry" targetId="11b2-3868-c060-d6e7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0415-0d77-6378-104c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d993-3d4d-3eb4-6808" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ravener Venomspitter" hidden="false" id="c570-68e0-0095-52c0" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2cef-0d6b-f885-d73d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="821c-a8fb-ae3d-9655" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Ravener Venomspitter" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="2f07-8a5d-9ff1-f161" publicationId="7478-cf16-4f88-170b">
+              <modifiers>
+                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e478-41d4-a092-48a8" value="5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="c6ca-7b02-e5a8-2d68" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c32b-5fdd-3fbe-9b1f" value="5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="98f8-e5ca-dfe6-e3a5" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Monstrous)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">12</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="d81a-7020-c332-efb8" primary="false" name="Cavalry Unit Type" />
+            <categoryLink targetId="7d95-f9d1-440a-67bd" id="9631-91da-5f5b-fd9f" primary="false" name="Monstrous Sub-type" />
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Pincer tail" hidden="false" id="7cf2-b0be-6eb5-56b6" type="selectionEntry" targetId="aedf-2306-a7a9-7d17">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30d3-01de-92c8-90c7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee6d-1a2a-1005-c137" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Venom bolt" hidden="false" id="3ea2-ecb8-becb-bfdb" type="selectionEntry" targetId="e91b-0811-cea5-70f9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="49a8-e308-75bd-268a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ae2-6ae4-c518-9dc0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Scything talons" hidden="false" id="74c9-aa7e-b34d-1572" type="selectionEntry" targetId="94f5-3302-5047-8b9e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75f1-cf5f-7374-2501" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6a9-2fb8-0fdd-2649" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ravener Warrior" hidden="false" id="194e-cc8e-7e4e-7342" publicationId="7478-cf16-4f88-170b">
           <modifiers>
-            <modifier type="increment" field="8e4b-12ac-668f-989e" value="1">
+            <modifier type="decrement" field="b613-2019-cd3a-3765" value="1">
               <repeats>
-                <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4e9-478f-4fdf-f3f5" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e1d3-243c-503e-9b8f" value="1">
+              <repeats>
+                <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4e9-478f-4fdf-f3f5" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b613-2019-cd3a-3765" value="1">
+              <repeats>
+                <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f4-752c-e843-1933" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e1d3-243c-503e-9b8f" value="1">
+              <repeats>
+                <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f4-752c-e843-1933" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b613-2019-cd3a-3765" value="1">
+              <repeats>
+                <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c570-68e0-0095-52c0" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e1d3-243c-503e-9b8f" value="1">
+              <repeats>
+                <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c570-68e0-0095-52c0" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b613-2019-cd3a-3765" value="1">
+              <repeats>
+                <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-1e2a-b07c-5a96" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e1d3-243c-503e-9b8f" value="1">
+              <repeats>
+                <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-1e2a-b07c-5a96" repeats="1" roundUp="false" />
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8e4b-12ac-668f-989e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="b613-2019-cd3a-3765" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e1d3-243c-503e-9b8f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
+          <profiles>
+            <profile name="Ravener Warrior" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="a1fb-6319-f364-71d4" publicationId="7478-cf16-4f88-170b">
+              <modifiers>
+                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e478-41d4-a092-48a8" value="5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="c6ca-7b02-e5a8-2d68" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c32b-5fdd-3fbe-9b1f" value="5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="98f8-e5ca-dfe6-e3a5" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Monstrous)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">12</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="e4ba-1abb-597c-db9c" primary="false" name="Cavalry Unit Type" />
+            <categoryLink targetId="7d95-f9d1-440a-67bd" id="82ed-04b5-c37c-71c4" primary="false" name="Monstrous Sub-type" />
+          </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Spinefists" hidden="false" id="2f42-07b1-7ffb-4a03" type="selectionEntry" targetId="da62-fcb3-f5d4-ce9b">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-              </costs>
+            <entryLink import="true" name="Pincer tail" hidden="false" id="4c48-9ae7-8e03-4904" type="selectionEntry" targetId="aedf-2306-a7a9-7d17">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db27-6bf8-c3d3-2c86" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a14-eb6d-4502-2291" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
             </entryLink>
-            <entryLink import="true" name="Devourer" hidden="false" id="9e57-823b-2034-3faa" type="selectionEntry" targetId="32a9-34fe-5362-e9c5">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Deathspitter" hidden="false" id="c351-9d3a-6926-0a5e" type="selectionEntry" targetId="c243-52b2-0b39-9b5b">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
+            <entryLink import="true" name="Scything talons" hidden="false" id="0186-6a95-e85b-f735" type="selectionEntry" targetId="94f5-3302-5047-8b9e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6a1-5453-f9b1-27ef" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d94-88ba-4b39-2f2f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ravener Wrecker" hidden="false" id="c9e4-1e2a-b07c-5a96" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cd35-7659-1d0f-3a35" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b78-ec9c-9481-508c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Ravener Wrecker" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="4aac-9a9b-34a6-b816" publicationId="7478-cf16-4f88-170b">
+              <modifiers>
+                <modifier type="set" field="e593-6b3c-f169-04f0" value="3+">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="7721-6ee3-0c29-5e74" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e478-41d4-a092-48a8" value="6">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="c6ca-7b02-e5a8-2d68" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c32b-5fdd-3fbe-9b1f" value="5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5daf-42a4-aa69-0aad" childId="98f8-e5ca-dfe6-e3a5" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Monstrous)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">12</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="186c-4d24-9e08-dbe9" primary="false" name="Cavalry Unit Type" />
+            <categoryLink targetId="7d95-f9d1-440a-67bd" id="4bff-20b7-f7f8-3dab" primary="false" name="Monstrous Sub-type" />
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Bone mace (Ravener)" hidden="false" id="e822-243c-47ad-2ee9" type="selectionEntry" targetId="b3b0-5fbc-cb8f-4b8d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8926-d9ed-9f09-451c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6e5-7179-42ad-2243" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Scything talons and crushing claws" hidden="false" id="b9b5-1e22-e52d-17d6" type="selectionEntry" targetId="0224-9a05-c11c-9f1e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="feaa-d808-0332-3cd5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6df2-b8bb-d268-003f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="fdcd-67c8-4b96-794d">
           <entryLinks>
             <entryLink import="true" name="Adrenal Glands" hidden="false" id="031d-c529-2c9b-1fe8" type="selectionEntry" targetId="d4e9-99f8-c287-dcd9">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
                   <repeats>
-                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6f3-538a-fe7a-24c7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4e9-478f-4fdf-f3f5" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f4-752c-e843-1933" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c570-68e0-0095-52c0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="194e-cc8e-7e4e-7342" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-1e2a-b07c-5a96" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -14417,7 +13866,32 @@
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
                   <repeats>
-                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6f3-538a-fe7a-24c7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4e9-478f-4fdf-f3f5" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f4-752c-e843-1933" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c570-68e0-0095-52c0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="194e-cc8e-7e4e-7342" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-1e2a-b07c-5a96" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -14432,7 +13906,32 @@
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
                   <repeats>
-                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6f3-538a-fe7a-24c7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4e9-478f-4fdf-f3f5" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f4-752c-e843-1933" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c570-68e0-0095-52c0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="194e-cc8e-7e4e-7342" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-1e2a-b07c-5a96" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -14447,7 +13946,32 @@
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
                   <repeats>
-                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6f3-538a-fe7a-24c7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4e9-478f-4fdf-f3f5" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f4-752c-e843-1933" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c570-68e0-0095-52c0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="194e-cc8e-7e4e-7342" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-1e2a-b07c-5a96" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -14462,7 +13986,32 @@
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
                   <repeats>
-                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6f3-538a-fe7a-24c7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4e9-478f-4fdf-f3f5" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f4-752c-e843-1933" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c570-68e0-0095-52c0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="194e-cc8e-7e4e-7342" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-1e2a-b07c-5a96" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -14477,7 +14026,32 @@
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
                   <repeats>
-                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6f3-538a-fe7a-24c7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4e9-478f-4fdf-f3f5" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f4-752c-e843-1933" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c570-68e0-0095-52c0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="194e-cc8e-7e4e-7342" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-1e2a-b07c-5a96" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -14492,7 +14066,32 @@
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
                   <repeats>
-                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6f3-538a-fe7a-24c7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4e9-478f-4fdf-f3f5" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f4-752c-e843-1933" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c570-68e0-0095-52c0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="194e-cc8e-7e4e-7342" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-1e2a-b07c-5a96" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -14507,7 +14106,32 @@
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
                   <repeats>
-                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6f3-538a-fe7a-24c7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4e9-478f-4fdf-f3f5" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f4-752c-e843-1933" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c570-68e0-0095-52c0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="194e-cc8e-7e4e-7342" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-1e2a-b07c-5a96" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -14522,7 +14146,32 @@
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
                   <repeats>
-                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6f3-538a-fe7a-24c7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4e9-478f-4fdf-f3f5" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f4-752c-e843-1933" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c570-68e0-0095-52c0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="194e-cc8e-7e4e-7342" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-1e2a-b07c-5a96" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -14537,7 +14186,32 @@
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
                   <repeats>
-                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6f3-538a-fe7a-24c7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4e9-478f-4fdf-f3f5" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f4-752c-e843-1933" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c570-68e0-0095-52c0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="194e-cc8e-7e4e-7342" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-1e2a-b07c-5a96" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -14552,7 +14226,32 @@
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
                   <repeats>
-                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d94-acca-d077-13cd" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6f3-538a-fe7a-24c7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4e9-478f-4fdf-f3f5" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45f4-752c-e843-1933" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c570-68e0-0095-52c0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="194e-cc8e-7e4e-7342" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="5daf-42a4-aa69-0aad" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-1e2a-b07c-5a96" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -14567,7 +14266,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="170" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sky-Slasher Swarms" hidden="false" id="6ef7-ddc4-e862-83e8" publicationId="7478-cf16-4f88-170b">

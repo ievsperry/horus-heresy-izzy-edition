@@ -200,7 +200,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Elites | Hive Guard, Tyrant Guard, Lictor, Deathleaper, Genestealers, Neurolictor, Venomthropes, Zoanthropes, Pyrovores, Haruspex, Maleceptor, The Red Terror, Von Ryan's Leapers, Psychophage, Malanthrope |
 | Troops | Termagants, Hormagaunts, Neurogaunts, Ripper Swarms, Tyranid Warriors |
 | Dedicated Transports | Mycetic Spore, Tyrannocyte |
-| Fast Attack | Gargoyles, Raveners, Ravener Kill Team, Meiotic Spores, Sky-Slasher Swarms, Tyranid Shrikes, Harpy, Hive Crone, Spore Mines, Mucolid Spores |
+| Fast Attack | Gargoyles, Raveners, Meiotic Spores, Sky-Slasher Swarms, Tyranid Shrikes, Harpy, Hive Crone, Spore Mines, Mucolid Spores |
 | Heavy Support | Carnifexes, Screamer-Killer, Biovores, Barbgaunts, Trygon, Mawloc, Tyrannofex, Toxicrene, Exocrine, Norn Assimilator, Sporocyst, Dimachaeron, Stone-crusher Carnifex |
 | Lord of War | Hierophant Bio-titan, Harridan, Scythed Hierodule, Barbed Hierodule |
 
@@ -1560,7 +1560,7 @@ _Huge floating mines spawned in the guts of bio-titans, which drift toward the e
 | **The Mucolid Spores may take:** |  |
 | – Up to 2 additional Mucolid Spores | +25 points each |
 
-### Ravener Kill Team — 170 pts
+### Raveners — 170 pts
 
 _A brood of specialised Raveners led by a Prime, bred to tunnel beneath enemy lines and erupt among them. Converted from the Kill Team: Typhon datacards._
 
@@ -1620,44 +1620,6 @@ _A brood of specialised Raveners led by a Prime, bred to tunnel beneath enemy li
 | – Ravener Wrecker | +10 points |
 
 _The base cost is the Prime (50 points) and four Ravener Warriors (30 points each). A full set of specialists brings the unit to 200 points._
-
-### Raveners — 90 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Ravener | 12 | 5 | 3 | 4 | 4 | 3 | 5 | 3 | 6 | 5+ | 60mm |
-
-**Unit Composition**
-
-- 3 Raveners
-
-**Wargear**
-
-- Two scything talons
-
-**Unit Type**
-
-- Ravener: Cavalry (Monstrous)
-
-**Special Rules**
-
-- Subterranean Assault
-- Hammer of Wrath (1)
-- Hive Fleet (X)
-- Instinctive Behaviour (Feed)
-
-**Options**
-
-| Option | Cost |
-|---|---|
-| **The Raveners may take:** |  |
-| – Up to 6 additional Raveners | +30 points each |
-| **Any Ravener may exchange one pair of scything talons for:** |  |
-| – Rending claws | +5 points |
-| **Any Ravener may take one of the following:** |  |
-| – Spinefists | +5 points |
-| – Devourer | +5 points |
-| – Deathspitter | +10 points |
 
 ### Sky-Slasher Swarms — 45 pts
 
