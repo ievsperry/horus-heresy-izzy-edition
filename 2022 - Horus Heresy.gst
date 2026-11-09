@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="235" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="236" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -723,7 +723,7 @@ During any Reaction that allows a unit equipped entirely with Jet Packs to move,
       <rules>
         <rule id="bc1e-9c95-f971-cd7b" name="Line Sub-type" publicationId="e77a-823a-da94-16b9" page="196" hidden="false">
           <description>• A unit that includes at least one model with the Line sub-type counts as both a Scoring and Denial unit.
-Optional rule: Line (X) – When this unit holds an Objective at the end of its controlling player's turn, that player gains X Victory Points, and at the end of the game they gain X Victory Points if the unit was not destroyed. A unit not listed as Line (X) is treated as having Line (1). A unit that is Pinned, Stunned, Falling Back or under any similar status gains no Victory Points from Line (X): it must be free of them at the end of the turn to score for holding an Objective, and at the end of the game to score for surviving.</description>
+Optional rule: Line (X) – When this unit holds an Objective at the end of its controlling player's turn, that player gains X Victory Points (even if they do not control that Objective), and at the end of the game they gain X Victory Points if the unit was not destroyed. A unit not listed as Line (X) is treated as having Line (1). A unit that is Pinned, Stunned, Falling Back or under any similar status gains no Victory Points from Line (X): it must be free of them at the end of the turn to score for holding an Objective, and at the end of the game to score for surviving.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -20931,7 +20931,7 @@ If the Toughness Test is failed, the target unit's Initiative Characteristic is 
       <description>A unit including models with this special rule may only be joined by a Legion Centurion with the Stormseer Consul upgrade or by Targutai Yesugei. Legion Techmarines and Apothecaries may not be assigned to it unless they also have this special rule.</description>
     </rule>
     <rule id="17b2-8d9c-5099-edd0" name="Line (X)" hidden="false">
-      <description>Optional rule: When a unit with the Line Sub-type holds an Objective at the end of its controlling player's turn, that player gains X Victory Points. In addition, at the end of the game the controlling player gains X Victory Points if the unit was not destroyed. A unit with the Line Sub-type that is not listed as Line (X) is treated as having Line (1). A unit that is Pinned, Stunned, Falling Back or under any similar status gains no Victory Points from Line (X): it must be free of them at the end of the turn to score for holding an Objective, and at the end of the game to score for surviving.</description>
+      <description>Optional rule: When a unit with the Line Sub-type holds an Objective at the end of its controlling player's turn, that player gains X Victory Points. The player gains these Victory Points even if they do not control that Objective. In addition, at the end of the game the controlling player gains X Victory Points if the unit was not destroyed. A unit with the Line Sub-type that is not listed as Line (X) is treated as having Line (1). A unit that is Pinned, Stunned, Falling Back or under any similar status gains no Victory Points from Line (X): it must be free of them at the end of the turn to score for holding an Objective, and at the end of the game to score for surviving.</description>
     </rule>
     <rule id="47d7-7ac6-5c81-8002" name="Rapid Fire (X)" hidden="false">
       <description>Optional rule: A model firing a Rapid Fire (X) weapon at a target within half the weapon's range makes X additional shots with it. A weapon with the Rapid Fire type that is not listed as Rapid Fire (X) is treated as having Rapid Fire (1).</description>

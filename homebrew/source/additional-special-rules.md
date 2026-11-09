@@ -807,12 +807,12 @@ A model with this Special Rule is selected as a separate unit, but during deploy
 
 ## Line (X)
 
-Optional rule: When a unit with the Line Sub-type holds an Objective at the end of its controlling player's turn, that player gains X Victory Points. In addition, at the end of the game the controlling player gains X Victory Points if the unit was not destroyed. A unit with the Line Sub-type that is not listed as Line (X) is treated as having Line (1). A unit that is Pinned, Stunned, Falling Back or under any similar status gains no Victory Points from Line (X): it must be free of them at the end of the turn to score for holding an Objective, and at the end of the game to score for surviving.
+Optional rule: When a unit with the Line Sub-type holds an Objective at the end of its controlling player's turn, that player gains X Victory Points. The player gains these Victory Points even if they do not control that Objective. In addition, at the end of the game the controlling player gains X Victory Points if the unit was not destroyed. A unit with the Line Sub-type that is not listed as Line (X) is treated as having Line (1). A unit that is Pinned, Stunned, Falling Back or under any similar status gains no Victory Points from Line (X): it must be free of them at the end of the turn to score for holding an Objective, and at the end of the game to score for surviving.
 
 ## Line Sub-type
 
 • A unit that includes at least one model with the Line sub-type counts as both a Scoring and Denial unit.
-Optional rule: Line (X) – When this unit holds an Objective at the end of its controlling player's turn, that player gains X Victory Points, and at the end of the game they gain X Victory Points if the unit was not destroyed. A unit not listed as Line (X) is treated as having Line (1). A unit that is Pinned, Stunned, Falling Back or under any similar status gains no Victory Points from Line (X): it must be free of them at the end of the turn to score for holding an Objective, and at the end of the game to score for surviving.
+Optional rule: Line (X) – When this unit holds an Objective at the end of its controlling player's turn, that player gains X Victory Points (even if they do not control that Objective), and at the end of the game they gain X Victory Points if the unit was not destroyed. A unit not listed as Line (X) is treated as having Line (1). A unit that is Pinned, Stunned, Falling Back or under any similar status gains no Victory Points from Line (X): it must be free of them at the end of the turn to score for holding an Objective, and at the end of the game to score for surviving.
 
 ## Line Breakers
 
