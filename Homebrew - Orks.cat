@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="40" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="41" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -9980,16 +9980,16 @@ The effect lasts until the end of the turn.</description>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2" />
               </costs>
             </entryLink>
-            <entryLink import="true" name="Ork bionics" hidden="false" id="9386-4426-074d-8b55" type="selectionEntry" targetId="a57c-8223-b5a4-3f1f">
+            <entryLink import="true" name="Cybork Body" hidden="false" id="3c6e-5265-d18d-c0e8" type="selectionEntry" targetId="db38-ed87-8517-73be">
               <modifiers>
-                <modifier type="increment" field="310c-4bda-c8ec-e604" value="1">
+                <modifier type="increment" field="fe9e-1016-b323-c789" value="1">
                   <repeats>
                     <repeat field="selections" scope="9036-bb11-8eb1-8456" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="121e-9ff5-d580-594b" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="310c-4bda-c8ec-e604" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fe9e-1016-b323-c789" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -10017,16 +10017,16 @@ The effect lasts until the end of the turn.</description>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2" />
               </costs>
             </entryLink>
-            <entryLink import="true" name="Ork bionics" hidden="false" id="f390-33cb-97a7-9cf5" type="selectionEntry" targetId="a57c-8223-b5a4-3f1f">
+            <entryLink import="true" name="Cybork Body" hidden="false" id="2daf-749f-22c8-7c76" type="selectionEntry" targetId="db38-ed87-8517-73be">
               <modifiers>
-                <modifier type="increment" field="fafe-6cbe-3303-8030" value="1">
+                <modifier type="increment" field="d95b-167b-162d-cc28" value="1">
                   <repeats>
                     <repeat field="selections" scope="9036-bb11-8eb1-8456" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37e4-6508-0df9-9943" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fafe-6cbe-3303-8030" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d95b-167b-162d-cc28" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -10109,7 +10109,6 @@ The effect lasts until the end of the turn.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="43" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ork bionics" hidden="false" id="a57c-8223-b5a4-3f1f" publicationId="96d0-c462-d158-fbad" />
     <selectionEntry type="unit" import="true" name="Nobz on Warbikes" hidden="false" id="9e43-2dd3-c19a-e5db" publicationId="96d0-c462-d158-fbad">
       <rules>
         <rule name="Speed Demons" id="4cf5-2632-7812-f3cb" hidden="false">
@@ -16549,6 +16548,23 @@ The effect lasts until the end of the turn.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edb9-dbab-061d-3b87" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <entryLinks>
+            <entryLink import="true" name="'Chinork' Warkopta" hidden="false" id="7411-2336-48df-a5cc" type="selectionEntry" targetId="e69a-0026-5292-5a0e">
+              <modifiers>
+                <modifier type="set" field="f132-3d71-3298-1fe6" value="0">
+                  <conditions>
+                    <condition type="greaterThan" value="12" field="selections" scope="3ec2-3e4c-530e-7631" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5150-f28c-375b-ad54" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f132-3d71-3298-1fe6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
             <entryLink import="true" name="Battlewagon" hidden="false" id="187f-ded4-0179-c7d5" type="selectionEntry" targetId="c1b6-e7ed-7eed-f97c">
               <modifiers>
                 <modifier type="set" field="f210-6c65-bde3-bd0f" value="0">

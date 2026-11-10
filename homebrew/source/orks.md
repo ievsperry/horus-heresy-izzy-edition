@@ -1905,7 +1905,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 | – Big shoota | +10 points each |
 | **Any Nob may take:** |  |
 | – Twin sluggas | +2 points each |
-| – Ork bionics | +10 points each |
+| – Cybork body | +10 points each |
 | **The Boss Nob may take:** |  |
 | – Waaagh! banner | +20 points |
 | **The entire mob may take one of the following:** |  |

@@ -4708,7 +4708,7 @@ class Builder:
         for ds in self.datasheets:
             text = " ".join(ds["dt"])
             named = [t for t in transports if t is not ds and forms(t["name"]) & {norm(w) for w in
-                     re.findall(r"[A-Z][\w'-]+(?: [A-Z][\w'-]+)*", text)}]
+                     re.findall(r"'?[A-Z][\w'-]+(?: '?[A-Z][\w'-]+)*", text)}]  # "'Chinork' Warkopta"
             if not named:
                 continue
             uid = self.units[ds["name"]]
