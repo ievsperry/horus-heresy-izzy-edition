@@ -10,7 +10,10 @@ official ones. Each gains the doc's Grey Knights rules and pays for them per mod
 - Land Raiders (Proteus Carrier and Phobos) and the Rhino: Brotherhood (X) and Aegis, +10 points per Land Raider
   and +5 points per Rhino. The Rhino is the Dedicated Transport of the units whose datasheet offers one.
 
-2.0 has no Razorback, so the doc's "Rhino or Razorback" is the Rhino."""
+2.0 has no Razorback, so the doc's "Rhino or Razorback" is the Rhino.
+
+The Rites of War that bar these kinds of unit bar the official ones too: Purifier Crusade (no Land Raiders) hides
+the official Land Raiders, and Teleport Assault (no Dedicated Transports) hides the Rhino."""
 from build_catalogue import PTS, SLOTS, TYPE_CATEGORIES, UNIT_CATEGORY, add_constraint, child, el, make_id
 
 LIBRARY = ("6393-649c-7213-a327", "Legions Astartes")
@@ -51,6 +54,12 @@ def surcharge(e, target, points, models=()):
            includeChildSelections=True, includeChildForces=False, childId=m, repeats=1, roundUp=False)
 
 
+def barred_by(b, e, rite):
+    """Hidden while the force has chosen that Rite of War."""
+    mod = el(child(e, "modifiers"), "modifier", type="set", field="hidden", value="true")
+    b.rite_condition(mod, make_id("rite", b.faction, rite))
+
+
 def official_unit(b, links, name, target, points, models, psyker, slot):
     key = make_id("official unit", b.faction, name)
     e = el(links, "entryLink", import_=True, name=name, hidden=False, id=key, type="selectionEntry",
@@ -60,6 +69,7 @@ def official_unit(b, links, name, target, points, models, psyker, slot):
     for cat, cname, primary in SLOTS[slot] + [UNIT_CATEGORY + (False,)]:
         el(child(e, "categoryLinks"), "categoryLink", targetId=cat, id=make_id(key, "cat", cat), primary=primary,
            name=cname)
+    return e
 
 
 def apply(b):
@@ -69,7 +79,7 @@ def apply(b):
     for name, target, points, models in DREADNOUGHTS:
         official_unit(b, links, name, target, points, models, True, "Heavy Support")
     for name, target, points, models in LAND_RAIDERS:
-        official_unit(b, links, name, target, points, models, False, "Heavy Support")
+        barred_by(b, official_unit(b, links, name, target, points, models, False, "Heavy Support"), "Purifier Crusade")
     name, target, points = RHINO
     for unit_name in TRANSPORTED:
         uid = b.units[unit_name]
@@ -84,3 +94,4 @@ def apply(b):
         add_constraint(e, "max", 1, key + "max")
         surcharge(e, target, points)
         grey_knights_rules(b, e, key, False)
+        barred_by(b, e, "Teleport Assault")

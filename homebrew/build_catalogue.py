@@ -2485,7 +2485,14 @@ class Builder:
             m = re.match(r"(?:may not include (?:any )?|no |any )(.+)$", clause)
             if not m or re.search(r"\bmore\b|outnumber", clause):
                 continue  # "may not include more Infantry units than Dreadnought units": text only
+            items = []
             for item in re.split(r",\s*(?:or\s+)?(?=any |no )|,\s+or\s+", m.group(1)):
+                parts = re.split(r"\s+or\s+", item)  # "Nemesis Dreadknights or Land Raiders": two items
+                if len(parts) > 1 and not self.rite_banned(item) and all(self.rite_banned(p) for p in parts):
+                    items += parts
+                else:
+                    items.append(item)
+            for item in items:
                 banned = self.rite_banned(item)
                 for ds in banned:
                     for link in self.root.find("entryLinks"):

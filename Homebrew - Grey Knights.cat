@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -243,6 +243,28 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Purifier Crusade" hidden="false" id="0c08-5cd5-0cae-3c97" publicationId="c336-0f01-71db-7a8f">
+              <modifiers>
+                <modifier type="set" field="4f7f-795b-35b0-5745" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5201-a352-e828-7459" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="d579-e18f-8852-5fef" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1ae5-f2f4-f0eb-de51" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8dde-1ab8-7b53-081e" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2c3e-4d65-b5a4-847f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f7f-795b-35b0-5745" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d579-e18f-8852-5fef" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dde-1ab8-7b53-081e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="70bb-d0e6-6d34-8c71" hidden="false">
                   <description>Purifier Squads may be taken as Troops and gain the Line sub-type.</description>
@@ -430,18 +452,39 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Land Raider Crusader" hidden="false" id="52cf-0488-80c6-a1b6" type="selectionEntry" targetId="1ae5-f2f4-f0eb-de51">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0c08-5cd5-0cae-3c97" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="2b70-9872-cebe-561f" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="fd3a-5420-fdc8-4d73" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Land Raider Redeemer" hidden="false" id="1bcf-a407-d73a-b09c" type="selectionEntry" targetId="2c3e-4d65-b5a4-847f">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0c08-5cd5-0cae-3c97" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="dd6a-bbe6-1993-8c45" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="53ca-be6e-da8e-4561" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Nemesis Dreadknight" hidden="false" id="46f0-fb07-bbca-64ee" type="selectionEntry" targetId="5201-a352-e828-7459">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0c08-5cd5-0cae-3c97" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="88b3-6569-0e8d-36ee" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="8b9e-e169-5bb1-4cb9" primary="false" name="Unit:" />
@@ -458,6 +501,11 @@
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="4a3b-8958-41eb-9b28" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0c08-5cd5-0cae-3c97" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
       </modifiers>
@@ -546,6 +594,11 @@
             <repeat field="selections" scope="b6cd-dd1a-6b2c-41d6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="048e-67cc-d24d-9f46" repeats="1" roundUp="false" />
           </repeats>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0c08-5cd5-0cae-3c97" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Brotherhood (X)" id="08cf-345d-c84f-10d0" hidden="false" targetId="4749-6b7c-76d3-27ab" type="rule" />
@@ -562,6 +615,11 @@
           <repeats>
             <repeat field="selections" scope="681a-7426-96af-caac" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bf3-9b8d-578a-38f1" repeats="1" roundUp="false" />
           </repeats>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0c08-5cd5-0cae-3c97" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -3782,6 +3840,11 @@
             <entryLink import="true" name="Rhino Transport" hidden="false" id="e09a-3f56-5a2f-49d2" type="selectionEntry" targetId="03f1-8ed9-9867-8d18">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5" />
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="237f-cee9-50aa-c5e1" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b350-959c-ac28-4bbc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4438,6 +4501,11 @@
             <entryLink import="true" name="Rhino Transport" hidden="false" id="d625-d8d5-04e6-e3aa" type="selectionEntry" targetId="03f1-8ed9-9867-8d18">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5" />
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="237f-cee9-50aa-c5e1" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e87-273e-4991-04f5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -5393,6 +5461,11 @@
             <entryLink import="true" name="Rhino Transport" hidden="false" id="45a3-3713-5dcf-0bdf" type="selectionEntry" targetId="03f1-8ed9-9867-8d18">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5" />
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="237f-cee9-50aa-c5e1" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b507-d606-d87f-6d1f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
