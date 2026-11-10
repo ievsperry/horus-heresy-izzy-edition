@@ -44,9 +44,9 @@ A model with the Da Biggest is Da Best special rule grants the following benefit
 
 Da Biggest is Da Best is treated as equivalent to Master of the Legion for the purposes of any campaign rules, mission effects or special interactions that reference Master of the Legion.
 
-**Dakka! (X).** When making Shooting Attacks with Auto weapons, unmodified To Hit rolls of X+ generate one additional hit.
+**Dakka! (X).** When making Shooting Attacks with Auto weapons, each unmodified To Hit roll of X+ triggers one additional To Hit roll, made with the firing model's base Ballistic Skill; if it succeeds, it scores one more hit. It is not an automatic hit.
 
-Additional hits generated in this way do not themselves generate additional hits.
+Additional To Hit rolls made in this way do not themselves trigger Dakka!, and the hits they score do not have any of the special rules of the original attack.
 
 **Deadly Demise.** When a model with this special rule is destroyed, but before it is removed from play, all units within 6" suffer a Strength 8 AP – hit with Rending (6+).
 
@@ -117,7 +117,7 @@ If the test is failed, both units immediately suffer D6 Strength 6 AP – hits t
 
 Only units of the same type may Mob Up. Shoota Boyz may Mob Up only with other Shoota Boyz mobs.
 
-**Mo' Dakka.** When a model with this special rule generates an additional hit from Dakka!, the additional hit gains all of the same special rules and effects possessed by the original attack, including Rending, Breaching, Armourbane, Pinning and similar weapon effects.
+**Mo' Dakka.** When a model with this special rule scores a hit with an additional To Hit roll from Dakka!, that hit gains all of the same special rules and effects possessed by the original attack, including Rending, Breaching, Armourbane, Pinning and similar weapon effects.
 
 **Odd Mob.** The Meks, Painboys and Weirdboys of a warband stand outside the mobs, lending their talents wherever the boss sends them. Only on the longest Waaagh!s would an Odd Boy find himself krumpin' alongside the same lads time and time again. An Odd Mob is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, each Odd Boy in an Odd Mob, together with any grots he has taken, either becomes a separate unit or is assigned to another unit from the same Detachment of the army the Odd Mob was selected as part of. An Odd Boy may only be assigned to a unit composed entirely of models with the Infantry Unit Type and the same Klan (X) special rule as the Odd Boy, and may not join a unit that includes models in Mega Armour.
 
