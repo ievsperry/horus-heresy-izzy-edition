@@ -311,6 +311,19 @@ A Grey Knights army may take one Rite of War:
 - Daemon Hunters
 - Martial Superiority: in a challenge, he may re-roll failed to-hit rolls
 
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The Champion may exchange his storm bolter for:** |  |
+| – Incinerator | +5 points |
+| – Psilencer | +5 points |
+| – Psycannon | +10 points |
+| **The Champion may exchange his nemesis force sword for:** |  |
+| – Nemesis force halberd or nemesis warding stave | +0 points |
+| – Pair of nemesis falchions | +5 points |
+| – Daemon hammer | +5 points |
+
 ### Brotherhood Chaplain — 110 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -429,6 +442,15 @@ A Grey Knights army may take one Rite of War:
 | --- | --: |
 | **The unit may take:** |  |
 | – Up to 3 additional Brotherhood Techmarines | +85 points each |
+| **Any Brotherhood Techmarine may exchange his boltgun for:** |  |
+| – Storm bolter\* | +0 points |
+| – Incinerator | +5 points |
+| – Psilencer | +5 points |
+| – Psycannon | +10 points |
+| **Any Brotherhood Techmarine may exchange his nemesis force sword for:** |  |
+| – Nemesis force halberd or nemesis warding stave | +0 points |
+| – Pair of nemesis falchions | +5 points |
+| – Daemon hammer | +5 points |
 
 ### Castellan Crowe — 130 pts
 
@@ -646,6 +668,14 @@ A Grey Knights army may take one Rite of War:
 | --- | --: |
 | **The unit may take:** |  |
 | – Up to 3 additional Brotherhood Apothecaries | +90 points each |
+| **Any Brotherhood Apothecary may exchange his storm bolter for:** |  |
+| – Incinerator | +5 points |
+| – Psilencer | +5 points |
+| – Psycannon | +10 points |
+| **Any Brotherhood Apothecary may exchange his nemesis force sword for:** |  |
+| – Nemesis force halberd or nemesis warding stave | +0 points |
+| – Pair of nemesis falchions | +5 points |
+| – Daemon hammer | +5 points |
 
 ### Paladin Ancient — 95 pts
 
@@ -676,6 +706,19 @@ A Grey Knights army may take one Rite of War:
 - Brotherhood of Psykers
 - Daemon Hunters
 - Teleport Strike
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The Paladin Ancient may exchange his storm bolter for:** |  |
+| – Incinerator | +5 points |
+| – Psilencer | +5 points |
+| – Psycannon | +10 points |
+| **The Paladin Ancient may exchange his nemesis force sword for:** |  |
+| – Nemesis force halberd or nemesis warding stave | +0 points |
+| – Pair of nemesis falchions | +5 points |
+| – Daemon hammer | +5 points |
 
 ### Paladin Squad — 150 pts
 
