@@ -12,13 +12,13 @@ The design goals: every Grey Knight is a psyker, armed with a nemesis force weap
 
 ### Units to take from the official 2.0 books
 
-Use the official datasheet for these units, adding the Brotherhood (X) and Aegis rules from this document†:
+Use the official datasheet for these units, adding the Grey Knights rules and points below†:
 
-| 40k unit | Official 2.0 equivalent |
-| --- | --- |
-| Dreadnought, Venerable Dreadnought | Legion Dreadnought (Mk IV) and Contemptor Dreadnought |
-| Land Raider | Land Raider Proteus or Phobos |
-| Rhino, Razorback | Legion Rhino, Legion Razorback |
+| 40k unit | Official 2.0 equivalent | Grey Knights rules | Extra points |
+| --- | --- | --- | --: |
+| Dreadnought, Venerable Dreadnought | Castra Ferrum Dreadnought Talon and Contemptor Dreadnought Talon (Heavy Support) | Psyker sub-type, Brotherhood of Psykers, Daemon Hunters, Brotherhood (X), Aegis | +25 points per Dreadnought |
+| Land Raider | Land Raider Proteus Carrier Squadron or Land Raider Phobos Squadron (Heavy Support) | Brotherhood (X), Aegis | +10 points per Land Raider |
+| Rhino, Razorback | Rhino Transport (2.0 has no Razorback), as the Dedicated Transport of a unit that may take one | Brotherhood (X), Aegis | +5 points |
 
 Everything else, including the Land Raider Crusader and Redeemer and the Stormraven Gunship, has a datasheet below.
 
