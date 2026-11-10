@@ -177,10 +177,12 @@ MODE = r"(.+?) \(([a-z][^)]*|Ranged|Melee|Shooting)\)"
 # 40k names for weapons 2.0 has under another name
 OFFICIAL_ALIASES = {"storm bolter": "combi-bolter", "boltgun": "bolter", "force stave": "force staff",
                     "psyk-out grenades": "psyk-out granades",
-                    # 40k names for the 2.0 weapons (Grey Knights)
+                    # 40k names for the 2.0 weapons (Grey Knights). A twin heavy bolter, lascannon or multi-melta
+                    # is only ever on a vehicle or Dreadnought, where 2.0 has the Gravis weapon (the Gravis Bolt
+                    # Cannon is its gravis heavy bolter)
                     "assault cannon": "kheres assault cannon", "twin assault cannon": "twin-linked kheres assault cannon",
-                    "twin heavy bolter": "twin-linked heavy bolter", "twin lascannon": "twin-linked lascannon",
-                    "twin multi-melta": "twin-linked multi-melta", "frag assault launchers": "frag launchers"}
+                    "twin heavy bolter": "gravis bolt cannon", "twin lascannon": "gravis lascannon",
+                    "twin multi-melta": "gravis melta cannon", "frag assault launchers": "frag launchers"}
 
 
 def load_official_items(root=None):
@@ -2785,6 +2787,9 @@ class Builder:
         for cand in [t] + [t.replace(" tail", "")] + list(singular(t)):
             if cand in self.weapons:
                 return self.weapons[cand], n
+        for cand in [t] + list(singular(t)):  # "Twin lascannon": the 40k name for the 2.0 Gravis Lascannon
+            if cand in OFFICIAL_ALIASES and OFFICIAL_ALIASES[cand] in self.gst_weapons:
+                return self.gst_weapons[OFFICIAL_ALIASES[cand]], n
         if t.startswith(("twin ", "twin-linked ")):
             wid, _ = self.find_weapon(t.split(" ", 1)[1])
             if wid:

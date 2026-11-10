@@ -110,8 +110,10 @@ loading. The script prints anything in the doc it could not place.
   detachment picks one Brotherhood (1st to 8th), which gives its units Brotherhood (X) with that Brotherhood's
   rules, Advanced Reaction and Warlord Trait. Wargear the doc marks with an asterisk ("Storm bolter\*") keeps its
   official 2.0 rules, and the 40k names map to the 2.0 weapons: an assault cannon is the Kheres assault cannon,
-  a twin assault cannon the twin-linked Kheres assault cannon, a twin heavy bolter, lascannon or multi-melta the
-  twin-linked one, and frag assault launchers the official frag launchers. Dreadnoughts, the Land Raider
+  a twin assault cannon the twin-linked Kheres assault cannon, and frag assault launchers the official frag
+  launchers. Twin heavy bolters, lascannons and multi-meltas are only on vehicles and Dreadnoughts, so they are the
+  Gravis Bolt Cannon, Gravis Lascannon and Gravis Melta Cannon (in any homebrew list: the Astra Militarum
+  Vendetta's twin lascannons are Gravis Lascannons too). Dreadnoughts, the Land Raider
   Proteus and Phobos, Rhinos and Razorbacks come from the official lists. Servitors and the vehicles have
   Brotherhood (X) only, as the doc says.
 - Wargear grouped under a heading ("### Armour" holding "#### Kabalite Armour") is read item by item.
