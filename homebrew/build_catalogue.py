@@ -1480,7 +1480,8 @@ class Builder:
         # drop headers whose rows were all drones
         ds["options"] = [r for i, r in enumerate(keep)
                          if r[0].startswith(("–", "-")) or (i + 1 < len(keep) and keep[i + 1][0].startswith(("–", "-")))
-                         or not r[0].startswith("**")]
+                         or not r[0].startswith("**")
+                         or (len(r) > 1 and r[1].strip())]  # "**One Pathfinder may be upgraded to a Blooded** | +5"
         for row in rows:
             if "difference in drone costs" in (row[1] if len(row) > 1 else "").lower():
                 spec = {"types": self.drone_names(strip_md(row[0]).lstrip("– ")), "swap": True}

@@ -1910,7 +1910,7 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 | **The unit may take:** |  |
 | – Up to 2 additional Krootox Riders | +35 points each |
 
-#### Pathfinders — 130 pts
+#### Pathfinders — 65 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -1928,7 +1928,7 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 **Unit Composition**
 
 - 1 Pathfinder Shas'ui
-- 9 models chosen from Pathfinders and the specialists above (each specialist at most once)
+- 4 Pathfinders
 
 **Wargear**
 
@@ -1967,6 +1967,14 @@ The unit may take a Devilfish as a Dedicated Transport.
 | – Gun, Marker, Shield, Recon, Pulse Accelerator or Grav-inhibitor Drones | Drone costs |
 | **The unit may take:** |  |
 | – Up to 5 additional Pathfinders | +11 points each |
+| **One Pathfinder may be upgraded to an Assault Grenadier** | +5 points |
+| **One Pathfinder may be upgraded to a Blooded** | +5 points |
+| **One Pathfinder may be upgraded to a Communications Specialist** | +5 points |
+| **One Pathfinder may be upgraded to a Drone Controller** | +5 points |
+| **One Pathfinder may be upgraded to a Marksman** | +5 points |
+| **One Pathfinder may be upgraded to a Medical Technician** | +5 points |
+| **One Pathfinder may be upgraded to a Transpectral Interference Specialist** | +5 points |
+| **One Pathfinder may be upgraded to a Weapons Expert** | +5 points |
 | **Up to three Pathfinders may exchange their pulse carbine and markerlight for:** |  |
 | – Ion rifle | +10 points |
 | – Rail rifle | +15 points |
