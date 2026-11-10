@@ -918,6 +918,10 @@ _The soul of these creatures is more daemon than man._
 
 A unit with this special rule may be taken in a Legiones Astartes (X) Detachment with the Traitor allegiance, even though it does not have Legiones Astartes (X).
 
+## Night Vision
+
+A unit that contains at least one model with this Special Rule ignores the effects of Night Fighting (see page 308) and no model may make Shrouded rolls to negate Wounds or Hull Points inflicted by their attacks. In addition, the unit can detect and target units with the Stealth special rule within 18" instead of 12".
+
 ## No Witnesses
 
 _As an ancient Terran adage went, "there can be no witnesses if there are no survivors"..._

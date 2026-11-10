@@ -21,6 +21,7 @@ python3 homebrew/build_catalogue.py homebrew/source/anhrathe.md "Homebrew - Aeld
 python3 homebrew/build_catalogue.py homebrew/source/rillietann.md "Homebrew - Aeldari (Rillietann).cat"
 python3 homebrew/build_catalogue.py homebrew/source/traders-militant.md "Homebrew - Traders Militant.cat"
 python3 homebrew/build_catalogue.py homebrew/source/grey-knights.md "Homebrew - Grey Knights.cat"
+python3 homebrew/build_catalogue.py homebrew/source/leagues-of-votann.md "Homebrew - Leagues of Votann.cat"
 ```
 
 Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
@@ -112,6 +113,9 @@ loading. The script prints anything in the doc it could not place.
   names (Drone Specialist on the Drone Controller).
 - A Warlord Traits section may list its generic traits as "### Name" sub-sections, "#### Name" headings (T'au) or
   "- **Name:** text" bullets (Grey Knights); a leading flavour line is left out of the trait's text.
+- Leagues of Votann take the Xenos allegiance. Each detachment picks a League, and a character's own weapon
+  profiled in its datasheet (the Arkanyst Evaluator's transmatter inverter, Berehk Stornbröw's Kromlôk's Revenge)
+  is built like an armoury weapon. The Grimnyr's ancestral ward stave is the official Force Staff.
 - Grey Knights are not Xenos either: like the Astra Militarum, the army may be Loyalist or Traitor. Each
   detachment picks one Brotherhood (1st to 8th), which gives its units Brotherhood (X) with that Brotherhood's
   rules, Advanced Reaction and Warlord Trait. Wargear the doc marks with an asterisk ("Storm bolter\*") keeps its
