@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="227" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="228" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -88391,11 +88391,37 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
             <categoryLink targetId="4f07-3d45-4f28-a0c6" id="f0b3-2354-3ee5-b967" primary="false" name="Independent Character"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" hidden="false" id="fcfe-1e8c-fc03-81b7">
+            <selectionEntryGroup name="Exchange Combi-Bolter" hidden="false" id="fcfe-1e8c-fc03-81b7" defaultSelectionEntryId="a8fa-8877-615b-94d8">
+              <modifiers>
+                <modifier type="set" field="4389-c084-c02d-1034" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="ca91-644b-67c2-f894" childId="8da3-424f-f00d-6a11" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="e0e5-7183-2882-ed71" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="ca91-644b-67c2-f894" childId="8da3-424f-f00d-6a11" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0e5-7183-2882-ed71" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4389-c084-c02d-1034" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0e5-7183-2882-ed71" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <entryLinks>
+                <entryLink import="true" name="Combi-Bolter" hidden="false" id="a8fa-8877-615b-94d8" type="selectionEntry" targetId="a498-c66f-9eb7-ca9a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="518e-486d-e166-bd5b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Magna Combi-Weapon" hidden="false" id="e524-fce5-f9a4-f2f8" type="selectionEntry" targetId="4d02-259d-fa50-ef3a">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbfc-846e-cc41-a37c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -88430,11 +88456,17 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Options" hidden="false" id="633b-51b2-cae9-221b">
+            <selectionEntryGroup name="Exchange Power Weapon" hidden="false" id="633b-51b2-cae9-221b" defaultSelectionEntryId="dd4a-b320-0fab-ce5d">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eab3-a04b-19fa-9d11" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce2f-2200-d004-9151" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eab3-a04b-19fa-9d11" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <entryLinks>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="dd4a-b320-0fab-ce5d" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cc2-0e93-8200-3610" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Chainfist" hidden="false" id="2d72-6047-4579-6a82" type="selectionEntry" targetId="7347-c5b1-5da3-a78f">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59b1-e68e-36d4-821d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -88467,34 +88499,36 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Exchange Power Weapon and Combi-Bolter" hidden="false" id="b784-d7d6-0aea-113c" defaultSelectionEntryId="310c-0fbc-348d-abb5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ac0-e83a-617a-9565" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e1b-9acf-a96c-51d5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Combi-Bolter" hidden="false" id="310c-0fbc-348d-abb5" type="selectionEntry" targetId="a498-c66f-9eb7-ca9a">
+                <entryLink import="true" name="Two Lightning Claws" hidden="false" id="47f4-c4ef-fe50-c004" type="selectionEntry" targetId="8da3-424f-f00d-6a11">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e32-02f5-e79c-cc09" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Two Lightning Claws" hidden="false" id="54b5-7e62-ccd0-bd01" type="selectionEntry" targetId="8da3-424f-f00d-6a11">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50b4-6616-1871-4a23" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaf5-512f-5b14-6771" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
+                <entryLink id="a175-0c28-a5e1-3712" name="Medusan Zweihander" hidden="false" collective="false" import="true" targetId="30bc-89b8-3a6b-8fe9" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="bfc9-c99c-bf8a-3917" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa7b-481c-3c74-8f6b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Options" hidden="false" id="c700-b7c4-1e63-eb6c">
+            <selectionEntryGroup name="Options" hidden="false" id="b784-d7d6-0aea-113c">
               <entryLinks>
-                <entryLink import="true" name="Grenade Harness" hidden="false" id="09cf-eccd-2746-eae5" type="selectionEntry" targetId="251a-860d-2c4d-62cc">
+                <entryLink import="true" name="Grenade Harness" hidden="false" id="a778-0d83-168a-317b" type="selectionEntry" targetId="251a-860d-2c4d-62cc">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c45-e23a-0155-7cba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cc4-275e-4dad-49a5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -88508,12 +88542,6 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d81-ef07-e977-f3ab" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9d7-f47f-a212-65c0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Power Weapon" hidden="false" id="aaa1-c650-fbd1-11b4" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ef8-b97c-a355-6021" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="071b-0d44-a936-0602" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="c5bd-731c-4c7d-dae5" type="selectionEntry" targetId="0176-56a3-d590-b103">
@@ -88574,7 +88602,27 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
             <categoryLink targetId="9231-183c-b97b-63f9" id="4333-6460-c05c-4c5d" primary="false" name="Heavy Sub-type"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Exchange Power Weapon and Combi-Bolter" hidden="false" id="ad0f-4a36-98a8-e7ea" defaultSelectionEntryId="9186-48c3-273e-0f93">
+            <selectionEntryGroup name="Exchange Combi-Bolter" hidden="false" id="ad0f-4a36-98a8-e7ea" defaultSelectionEntryId="9186-48c3-273e-0f93">
+              <modifiers>
+                <modifier type="set" field="438d-f484-c9ec-3038" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="8b58-824f-52fe-606a" childId="8da3-424f-f00d-6a11" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="8e77-f989-8fed-1a2b" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="8b58-824f-52fe-606a" childId="8da3-424f-f00d-6a11" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="438d-f484-c9ec-3038" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e77-f989-8fed-1a2b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -88585,9 +88633,86 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddf4-5779-3d35-185d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Two Lightning Claws" hidden="false" id="1a92-f9bc-592a-2d0c" type="selectionEntry" targetId="8da3-424f-f00d-6a11">
+                <entryLink import="true" name="Magna Combi-Weapon" hidden="false" id="ca30-f4b0-e212-921e" type="selectionEntry" targetId="4d02-259d-fa50-ef3a">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cf4-8d2d-7ef3-141e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08dc-5840-949d-40c1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Minor Combi-Weapon" hidden="false" id="12e4-477f-2955-549a" type="selectionEntry" targetId="53c0-b5d7-f001-b816">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7df-ccde-d64f-c737" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Proteus-pattern Storm Shield" hidden="false" id="1bee-a185-04c0-7ec2" type="selectionEntry" targetId="82b5-dbc8-0060-97a4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52ca-8409-bd5f-f5ed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Volkite Charger" hidden="false" id="655f-3fcf-be93-571d" type="selectionEntry" targetId="6f6e-ad55-e093-6503">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b50-b9b1-c0e7-9b4f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Exchange Power Weapon" hidden="false" id="5ea6-264e-fe2f-91b6" defaultSelectionEntryId="a488-1d4b-d884-88d0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd71-3db3-b509-b9e5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ba5-4ceb-28dc-5624" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="a488-1d4b-d884-88d0" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a34-0007-2feb-3664" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chainfist" hidden="false" id="37d8-b592-bb5f-99e7" type="selectionEntry" targetId="7347-c5b1-5da3-a78f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc51-6b04-2a5d-60b0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Lightning Claw" hidden="false" id="a137-81f2-109f-90c7" type="selectionEntry" targetId="6923-4e42-5691-b13f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9619-c7cf-5fde-7a01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Fist" hidden="false" id="2296-a110-9aca-a472" type="selectionEntry" targetId="768d-b89b-7328-d749">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d52b-10ae-9658-c03c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Thunder Hammer" hidden="false" id="67a3-69d3-d4a5-4714" type="selectionEntry" targetId="838c-4002-713d-d7c6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a357-49b6-964b-09a2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Two Lightning Claws" hidden="false" id="235e-c1be-cf3a-f221" type="selectionEntry" targetId="8da3-424f-f00d-6a11">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a01a-c75a-5de6-0ce8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
@@ -88601,12 +88726,6 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24df-1330-68fe-ced9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34f1-78f2-6d43-6ab8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Power Weapon" hidden="false" id="a944-0044-4cea-05a4" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c84-c0de-5550-2912" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f575-facd-b742-3706" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -88744,70 +88863,6 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Magna Combi-Weapon" hidden="false" id="a862-e6fb-db78-b315" type="selectionEntry" targetId="4d02-259d-fa50-ef3a">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29e3-917f-e425-73cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Minor Combi-Weapon" hidden="false" id="0ea9-74ae-5d2b-ed1a" type="selectionEntry" targetId="53c0-b5d7-f001-b816">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e0a-b32c-01e0-ada6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Proteus-pattern Storm Shield" hidden="false" id="c022-ef49-34b8-9366" type="selectionEntry" targetId="82b5-dbc8-0060-97a4">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f50-a9e1-c5e8-d025" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Volkite Charger" hidden="false" id="76c0-b451-bb5d-5277" type="selectionEntry" targetId="6f6e-ad55-e093-6503">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dbc-db7a-54f9-f839" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Chainfist" hidden="false" id="7b9d-3781-bcd8-fe3b" type="selectionEntry" targetId="7347-c5b1-5da3-a78f">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="660a-6a9b-d267-6767" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Lightning Claw" hidden="false" id="60c5-6091-abab-2a14" type="selectionEntry" targetId="6923-4e42-5691-b13f">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b93f-a74e-3e7b-cab2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Power Fist" hidden="false" id="1cc2-3ab8-ae60-dd64" type="selectionEntry" targetId="768d-b89b-7328-d749">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98ec-7e07-3eed-f5f4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Thunder Hammer" hidden="false" id="9805-6655-1b17-9f4d" type="selectionEntry" targetId="838c-4002-713d-d7c6">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c47-b3bc-fd0a-3856" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-              </costs>
-            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -88857,11 +88912,17 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
             <categoryLink targetId="4f07-3d45-4f28-a0c6" id="2c8b-ddb0-7351-454b" primary="false" name="Independent Character"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" hidden="false" id="3648-1cd5-49bb-dc8d">
+            <selectionEntryGroup name="Exchange Combi-Bolter" hidden="false" id="3648-1cd5-49bb-dc8d" defaultSelectionEntryId="4d2e-3c51-c257-3381">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be9d-834f-40d3-8caf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b0f-c35d-62a0-68a4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be9d-834f-40d3-8caf" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <entryLinks>
+                <entryLink import="true" name="Combi-Bolter" hidden="false" id="4d2e-3c51-c257-3381" type="selectionEntry" targetId="a498-c66f-9eb7-ca9a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a89-c216-748b-00da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Magna Combi-Weapon" hidden="false" id="6a23-21a9-3578-dc5a" type="selectionEntry" targetId="4d02-259d-fa50-ef3a">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a98-de49-1e89-529d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -88894,13 +88955,47 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Two Lightning Claws" hidden="false" id="bce6-125a-e8e7-ea5f" type="selectionEntry" targetId="8da3-424f-f00d-6a11">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="deb6-69c6-b51e-e2de" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Options" hidden="false" id="070d-4978-91ce-a660">
+            <selectionEntryGroup name="Exchange Power Weapon" hidden="false" id="070d-4978-91ce-a660" defaultSelectionEntryId="855e-23f0-ea22-943e">
+              <modifiers>
+                <modifier type="set" field="5290-4d81-7ebe-dad7" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="28e3-1334-32ac-7bb4" childId="8da3-424f-f00d-6a11" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="d937-6c9c-e694-2e70" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="28e3-1334-32ac-7bb4" childId="8da3-424f-f00d-6a11" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d937-6c9c-e694-2e70" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5290-4d81-7ebe-dad7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d937-6c9c-e694-2e70" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <entryLinks>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="855e-23f0-ea22-943e" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dac-1e4a-9a18-31d9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Chainfist" hidden="false" id="fc93-8327-21cb-8aa9" type="selectionEntry" targetId="7347-c5b1-5da3-a78f">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f652-59d3-8ff9-4e3e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -88941,28 +89036,7 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Exchange Combi-Bolter and Power Weapon" hidden="false" id="bc03-ecf9-829a-994f" defaultSelectionEntryId="1975-f65f-9949-f9ec">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d90-227b-9629-75af" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dd3-7dbe-aa0d-e159" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Power Weapon" hidden="false" id="1975-f65f-9949-f9ec" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b41-a2b8-4ba7-26c9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Two Lightning Claws" hidden="false" id="280c-cc99-64b7-2fbf" type="selectionEntry" targetId="8da3-424f-f00d-6a11">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2800-f604-564a-b73e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="c865-f45d-4ac7-cc37" name="Medusan Zweihander" hidden="false" collective="false" import="true" targetId="30bc-89b8-3a6b-8fe9" type="selectionEntry">
+                <entryLink id="2bca-4fb6-b626-59ad" name="Medusan Zweihander" hidden="false" collective="false" import="true" targetId="30bc-89b8-3a6b-8fe9" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
@@ -88971,7 +89045,19 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5175-fb6a-e1d5-5a97" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb76-ecea-2687-2aff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="bc03-ecf9-829a-994f">
+              <entryLinks>
+                <entryLink import="true" name="The Master-Crafted Special Rule" hidden="false" id="189d-a1fa-9679-9a1a" type="selectionEntry" targetId="f7ed-4fe6-55ff-1544">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9758-8d1d-fb36-964e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -88981,21 +89067,9 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="1d3b-7b0d-568d-2be8">
               <entryLinks>
-                <entryLink import="true" name="The Master-Crafted Special Rule" hidden="false" id="bc92-a9b0-2eed-efb8" type="selectionEntry" targetId="f7ed-4fe6-55ff-1544">
+                <entryLink import="true" name="Grenade Harness" hidden="false" id="c82a-8006-ad0d-ba3d" type="selectionEntry" targetId="251a-860d-2c4d-62cc">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1d2-9d69-1280-9ea4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Options" hidden="false" id="456d-4d3a-0ece-a9fe">
-              <entryLinks>
-                <entryLink import="true" name="Grenade Harness" hidden="false" id="aa66-b09e-5ac9-8eab" type="selectionEntry" targetId="251a-860d-2c4d-62cc">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15e2-4331-179c-d54d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afc3-2f47-f718-d854" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -89005,12 +89079,6 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Combi-Bolter" hidden="false" id="9a61-925b-c5ba-57e6" type="selectionEntry" targetId="a498-c66f-9eb7-ca9a">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c886-a8b3-ff3f-3f80" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3669-b002-fe81-8190" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Indomitus Terminator Armour" hidden="false" id="a4d1-8dce-e841-5a9d" type="selectionEntry" targetId="5a55-baa5-1602-7223">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9544-dad3-860b-d5c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -89329,16 +89397,150 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="9db1-92db-1547-00be" primary="false" name="Infantry Unit Type"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Exchange Bolt Pistol and Chainsword" hidden="false" id="9c5c-123c-8f23-b29d" defaultSelectionEntryId="0c3a-c9ec-45de-de02">
+            <selectionEntryGroup name="Exchange Bolt Pistol" hidden="false" id="9c5c-123c-8f23-b29d" defaultSelectionEntryId="0c3a-c9ec-45de-de02">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dced-9897-cd92-a476" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35ab-d29c-67d3-2aaa" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 5" hidden="false" id="8500-b8e6-a85c-e89c">
+                  <modifiers>
+                    <modifier type="increment" field="18f7-2fcd-694c-a08f" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="528e-6258-1995-1b13" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e72a-0872-9e9d-d9c9" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="528e-6258-1995-1b13" shared="true" id="18f7-2fcd-694c-a08f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Flamer" hidden="false" id="85ba-64ec-30c7-9429" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="196e-dffd-2f84-f832" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Graviton Gun" hidden="false" id="55cb-86cd-44a6-e7c0" type="selectionEntry" targetId="5303-5a3e-de51-1707">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71de-ed9f-a6ef-a55a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="273a-2fd4-9b3a-6990" type="selectionEntry" targetId="07fd-c24a-9235-4206">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db75-c12f-0187-cf55" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Flamer" hidden="false" id="bbd2-929f-0238-da27" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a94f-d2d7-b2b8-fd65" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="ceb8-04c5-b079-42b7" type="selectionEntry" targetId="4ebd-57e0-3560-e568">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4c9-2c15-f299-ee32" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Gun" hidden="false" id="f37a-be73-deff-e0ea" type="selectionEntry" targetId="f0d1-332b-c719-ede7">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a96-d874-2211-9572" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="fe2e-f65d-284e-0d3d" name="Xenobane Cannon" hidden="false" collective="false" import="true" targetId="4671-84be-5e28-4e5f" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="true">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="b2b4-2198-0b90-dd9f" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47b0-692d-60ca-b9a5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="17"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="d89a-1531-7837-f167" name="Conflagration Meltagun" hidden="false" collective="false" import="true" targetId="a3e8-ca7f-782b-1f01" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="true">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="c805-ca3a-ff93-5e2f" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55ab-ea29-28cf-d531" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Chainsword" hidden="false" id="0c3a-c9ec-45de-de02" type="selectionEntry" targetId="06e7-a6ae-ed1c-eb03">
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="0c3a-c9ec-45de-de02" type="selectionEntry" targetId="e5ae-6872-37aa-8600">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efef-dd7a-064e-8fa1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Hand Flamer" hidden="false" id="803c-8389-5a23-adf5" type="selectionEntry" targetId="e337-adf4-a11f-0280">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40d4-f421-3587-1fbb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Magna Combi-Weapon" hidden="false" id="a3a9-9f8c-f1d5-344b" type="selectionEntry" targetId="4d02-259d-fa50-ef3a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d428-bbe9-98e0-37b1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Minor Combi-Weapon" hidden="false" id="9758-8914-7b22-5bb2" type="selectionEntry" targetId="53c0-b5d7-f001-b816">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6e8-a372-71a1-c709" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="3f54-18d1-0a09-db38" type="selectionEntry" targetId="717f-cf0a-1593-4bd8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3567-050f-9402-8189" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Volkite Serpenta" hidden="false" id="f3fc-e68e-64b6-8dc4" type="selectionEntry" targetId="d535-1da8-290d-69a6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da89-5c14-1fe7-f347" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
                 </entryLink>
                 <entryLink import="true" name="Two Lightning Claws" hidden="false" id="2661-6f1d-103b-f5c1" type="selectionEntry" targetId="8da3-424f-f00d-6a11">
                   <constraints>
@@ -89350,14 +89552,93 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Exchange Chainsword" hidden="false" id="b9df-6ea1-4e4e-d7ea" defaultSelectionEntryId="4da7-f58d-82ab-ec1e">
+              <modifiers>
+                <modifier type="set" field="c600-3d1b-25ad-54a3" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="e72a-0872-9e9d-d9c9" childId="07fd-c24a-9235-4206" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="e72a-0872-9e9d-d9c9" childId="4ebd-57e0-3560-e568" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="e72a-0872-9e9d-d9c9" childId="5303-5a3e-de51-1707" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="e72a-0872-9e9d-d9c9" childId="5507-b432-3b4c-df12" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="e72a-0872-9e9d-d9c9" childId="8da3-424f-f00d-6a11" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="e72a-0872-9e9d-d9c9" childId="9f41-82e2-90f6-973a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="e72a-0872-9e9d-d9c9" childId="f0d1-332b-c719-ede7" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="a256-cdd7-1c61-9842" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="e72a-0872-9e9d-d9c9" childId="07fd-c24a-9235-4206" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="e72a-0872-9e9d-d9c9" childId="4ebd-57e0-3560-e568" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="e72a-0872-9e9d-d9c9" childId="5303-5a3e-de51-1707" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="e72a-0872-9e9d-d9c9" childId="5507-b432-3b4c-df12" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="e72a-0872-9e9d-d9c9" childId="8da3-424f-f00d-6a11" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="e72a-0872-9e9d-d9c9" childId="9f41-82e2-90f6-973a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="e72a-0872-9e9d-d9c9" childId="f0d1-332b-c719-ede7" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c600-3d1b-25ad-54a3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a256-cdd7-1c61-9842" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="4da7-f58d-82ab-ec1e" type="selectionEntry" targetId="06e7-a6ae-ed1c-eb03">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fd9-79c5-7a82-2d64" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Charnabal Weapon" hidden="false" id="2465-e862-7ef0-7760" type="selectionEntry" targetId="e749-ba9b-bb76-a7d9">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4af-4400-e7e6-22b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy Chainsword" hidden="false" id="c308-8e5d-4086-4ce7" type="selectionEntry" targetId="ba92-3eda-3a71-dabb">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a18d-ed20-ec52-39aa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Lightning Claw" hidden="false" id="e131-6d3f-7f73-a319" type="selectionEntry" targetId="6923-4e42-5691-b13f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6e1-7d40-8a11-6e2a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Fist" hidden="false" id="0366-bd6d-fedb-ea11" type="selectionEntry" targetId="768d-b89b-7328-d749">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1789-7244-d7c2-d0b9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="a0e3-dc09-5c04-5e1a" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3eb4-897f-0425-78b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Bolt Pistol" hidden="false" id="bb69-e65d-a410-7a20" type="selectionEntry" targetId="e5ae-6872-37aa-8600">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ae1-7616-47d3-41bf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5584-d89e-e95b-463b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Frag Grenades" hidden="false" id="1e39-68f6-05a5-05e6" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79d2-67c5-ae9c-96d8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -89474,140 +89755,6 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Legion Assault Veteran: Options" hidden="false" id="1ae9-33a0-124b-cbc6">
-          <modifiers>
-            <modifier type="increment" field="96c0-7109-6fdf-411e" value="1">
-              <repeats>
-                <repeat field="selections" scope="528e-6258-1995-1b13" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e72a-0872-9e9d-d9c9" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="96c0-7109-6fdf-411e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Flamer" hidden="false" id="ef59-51d7-8e00-bf49" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
-              <modifiers>
-                <modifier type="increment" field="c024-2d12-47a7-8fdf" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="528e-6258-1995-1b13" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e72a-0872-9e9d-d9c9" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="528e-6258-1995-1b13" shared="true" id="c024-2d12-47a7-8fdf" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Graviton Gun" hidden="false" id="6a92-1898-48b2-5805" type="selectionEntry" targetId="5303-5a3e-de51-1707">
-              <modifiers>
-                <modifier type="increment" field="ce11-6ae7-c5c8-75ac" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="528e-6258-1995-1b13" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e72a-0872-9e9d-d9c9" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="528e-6258-1995-1b13" shared="true" id="ce11-6ae7-c5c8-75ac" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Heavy Bolter" hidden="false" id="1a3b-7d86-96f7-2d56" type="selectionEntry" targetId="07fd-c24a-9235-4206">
-              <modifiers>
-                <modifier type="increment" field="a825-e4db-d1b4-0bd6" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="528e-6258-1995-1b13" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e72a-0872-9e9d-d9c9" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="528e-6258-1995-1b13" shared="true" id="a825-e4db-d1b4-0bd6" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Heavy Flamer" hidden="false" id="70f8-e5d1-6a71-319d" type="selectionEntry" targetId="5507-b432-3b4c-df12">
-              <modifiers>
-                <modifier type="increment" field="a114-2c94-cdcd-7580" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="528e-6258-1995-1b13" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e72a-0872-9e9d-d9c9" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="528e-6258-1995-1b13" shared="true" id="a114-2c94-cdcd-7580" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Meltagun" hidden="false" id="f8b8-1df0-549c-5746" type="selectionEntry" targetId="4ebd-57e0-3560-e568">
-              <modifiers>
-                <modifier type="increment" field="05e6-b536-1e17-679b" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="528e-6258-1995-1b13" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e72a-0872-9e9d-d9c9" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="528e-6258-1995-1b13" shared="true" id="05e6-b536-1e17-679b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Plasma Gun" hidden="false" id="772c-7070-6ddf-f88a" type="selectionEntry" targetId="f0d1-332b-c719-ede7">
-              <modifiers>
-                <modifier type="increment" field="175a-1c03-5ef7-7336" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="528e-6258-1995-1b13" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e72a-0872-9e9d-d9c9" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="528e-6258-1995-1b13" shared="true" id="175a-1c03-5ef7-7336" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink id="edbf-d752-904c-5a7d" name="Xenobane Cannon" hidden="false" collective="false" import="true" targetId="4671-84be-5e28-4e5f" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b2b4-2198-0b90-dd9f" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8114-7ad3-aa5e-8c1d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="17"/>
-              </costs>
-            </entryLink>
-            <entryLink id="6223-fb43-4100-c564" name="Conflagration Meltagun" hidden="false" collective="false" import="true" targetId="a3e8-ca7f-782b-1f01" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c805-ca3a-ff93-5e2f" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4e2d-7f37-40d1-a917" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Legion Assault Veteran Sergeant: Options" hidden="false" id="fa4f-0123-9189-aad6">
           <entryLinks>
             <entryLink import="true" name="Melta Bombs" hidden="false" id="8841-13e7-2d27-4b1b" type="selectionEntry" targetId="b9dd-3b21-f3f8-78e3">
@@ -89643,86 +89790,6 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Hand Flamer" hidden="false" id="32fb-3166-5da7-7ca8" type="selectionEntry" targetId="e337-adf4-a11f-0280">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ac0-4f89-f36c-21db" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Magna Combi-Weapon" hidden="false" id="f089-5fff-aeaf-3503" type="selectionEntry" targetId="4d02-259d-fa50-ef3a">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d071-9edb-48cb-b4d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Minor Combi-Weapon" hidden="false" id="5043-f37a-c923-26a4" type="selectionEntry" targetId="53c0-b5d7-f001-b816">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc47-e57d-5cf0-e2f9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Plasma Pistol" hidden="false" id="a1e1-31b6-4cf9-f012" type="selectionEntry" targetId="717f-cf0a-1593-4bd8">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74ec-9160-126f-0221" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Volkite Serpenta" hidden="false" id="7cba-349d-b39a-1df8" type="selectionEntry" targetId="d535-1da8-290d-69a6">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="492f-ab31-c265-c400" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Charnabal Weapon" hidden="false" id="f56e-373b-91cc-f6bb" type="selectionEntry" targetId="e749-ba9b-bb76-a7d9">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c918-166d-e322-a7db" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Heavy Chainsword" hidden="false" id="8da8-13f3-2141-6076" type="selectionEntry" targetId="ba92-3eda-3a71-dabb">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fa5-4a37-0c3d-c093" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Lightning Claw" hidden="false" id="cbcd-cee1-fab6-d7ad" type="selectionEntry" targetId="6923-4e42-5691-b13f">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c661-003b-9d8e-f4e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Power Fist" hidden="false" id="4dbc-d1be-d847-ddfb" type="selectionEntry" targetId="768d-b89b-7328-d749">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd20-d5fa-4c8c-8496" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Power Weapon" hidden="false" id="2f3f-c325-9a97-157a" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38ca-007d-aa74-8aa9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -90030,13 +90097,130 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="0e11-8036-a396-3554" primary="false" name="Infantry Unit Type"/>
           </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Bolter" hidden="false" id="aeb0-1041-28f3-0bc7" type="selectionEntry" targetId="1ade-0c02-5612-252b">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange Bolter" hidden="false" id="674d-b4da-bf01-f065" defaultSelectionEntryId="23ee-ae36-a615-3677">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d18e-c710-bf55-503c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3711-7a83-47d2-7841" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f72-8b4f-264e-490d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="104d-a812-bee5-b877" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
-            </entryLink>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 5" hidden="false" id="03fb-fa4e-24e4-3c38">
+                  <modifiers>
+                    <modifier type="increment" field="b72e-e5c7-2746-0c6e" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="e632-1525-ac0a-cfdf" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cecd-f578-a262-2992" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="e632-1525-ac0a-cfdf" shared="true" id="b72e-e5c7-2746-0c6e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Flamer" hidden="false" id="bb07-e4d8-5f0c-44df" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a3f-749f-b138-d96e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="9072-6397-86a6-da14" type="selectionEntry" targetId="4ebd-57e0-3560-e568">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="309d-97e2-c7ce-2805" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Gun" hidden="false" id="334b-c149-a17c-efcc" type="selectionEntry" targetId="f0d1-332b-c719-ede7">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28f9-d8d7-c531-f6c0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="01f5-2135-1cdb-b4b8" name="Conflagration Meltagun" hidden="false" collective="false" import="true" targetId="a3e8-ca7f-782b-1f01" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="true">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="c805-ca3a-ff93-5e2f" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7931-bbb0-1496-c8ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Bolter" hidden="false" id="23ee-ae36-a615-3677" type="selectionEntry" targetId="1ade-0c02-5612-252b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="462f-89cd-f277-decc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Exchange of their Twisted Talons" hidden="false" id="c73e-58fe-97de-6043" defaultSelectionEntryId="2d7f-8d9a-2591-57fb">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3b48-ef96-bf3f-99ba" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7e1e-0788-92cc-aeb4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 5" hidden="false" id="730d-7586-e285-8198">
+                  <modifiers>
+                    <modifier type="increment" field="e054-fade-4924-787e" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="e632-1525-ac0a-cfdf" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cecd-f578-a262-2992" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="e632-1525-ac0a-cfdf" shared="true" id="e054-fade-4924-787e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Lightning Claw" hidden="false" id="9784-5bae-542c-378d" type="selectionEntry" targetId="6923-4e42-5691-b13f">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7383-6798-928a-36f8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Power Fist" hidden="false" id="0351-6fd5-bc00-31c2" type="selectionEntry" targetId="768d-b89b-7328-d749">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b783-dd05-a87b-ab03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="6e79-cf37-bd44-8a60" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b9c-7d36-bd60-3675" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Twisted Talons" hidden="false" id="2d7f-8d9a-2591-57fb" type="selectionEntry" targetId="2305-e073-38d8-ab08">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bd89-692d-f24e-e707" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
             <entryLink import="true" name="Frag Grenades" hidden="false" id="887f-be4b-2b98-add6" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ece-6eef-481d-eee5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -90055,153 +90239,13 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44dc-4457-389d-80c3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Twisted Talons" hidden="false" id="e930-0211-68d6-cfdf" type="selectionEntry" targetId="2305-e073-38d8-ab08">
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9c7c-a400-13eb-c82a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="39f2-53b0-6c1f-571a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Options" hidden="false" id="dca4-ef99-7bc5-85f3">
-          <modifiers>
-            <modifier type="increment" field="a3e9-ee4e-6bfe-ca7c" value="1">
-              <repeats>
-                <repeat field="selections" scope="e632-1525-ac0a-cfdf" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cecd-f578-a262-2992" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a3e9-ee4e-6bfe-ca7c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Flamer" hidden="false" id="02fa-3a00-c590-2413" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
-              <modifiers>
-                <modifier type="increment" field="2427-103e-9187-ba98" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="e632-1525-ac0a-cfdf" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cecd-f578-a262-2992" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="e632-1525-ac0a-cfdf" shared="true" id="2427-103e-9187-ba98" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Meltagun" hidden="false" id="d0d2-c562-6afc-ebe5" type="selectionEntry" targetId="4ebd-57e0-3560-e568">
-              <modifiers>
-                <modifier type="increment" field="40aa-31ac-c7ab-014e" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="e632-1525-ac0a-cfdf" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cecd-f578-a262-2992" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="e632-1525-ac0a-cfdf" shared="true" id="40aa-31ac-c7ab-014e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Plasma Gun" hidden="false" id="3ece-46bb-6f12-60d1" type="selectionEntry" targetId="f0d1-332b-c719-ede7">
-              <modifiers>
-                <modifier type="increment" field="19bb-3fb3-f041-9f14" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="e632-1525-ac0a-cfdf" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cecd-f578-a262-2992" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="e632-1525-ac0a-cfdf" shared="true" id="19bb-3fb3-f041-9f14" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink id="97fb-6563-4e58-39b6" name="Conflagration Meltagun" hidden="false" collective="false" import="true" targetId="a3e8-ca7f-782b-1f01" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c805-ca3a-ff93-5e2f" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4203-c065-84cf-204c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Options" hidden="false" id="c5eb-ff89-3993-1508">
-          <modifiers>
-            <modifier type="increment" field="2f1c-1a62-a31f-7c20" value="1">
-              <repeats>
-                <repeat field="selections" scope="e632-1525-ac0a-cfdf" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cecd-f578-a262-2992" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2f1c-1a62-a31f-7c20" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Lightning Claw" hidden="false" id="ea46-a8d0-942f-001c" type="selectionEntry" targetId="6923-4e42-5691-b13f">
-              <modifiers>
-                <modifier type="increment" field="fa5b-8703-f672-a54c" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="e632-1525-ac0a-cfdf" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cecd-f578-a262-2992" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="e632-1525-ac0a-cfdf" shared="true" id="fa5b-8703-f672-a54c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Power Fist" hidden="false" id="bea4-f441-8818-e85e" type="selectionEntry" targetId="768d-b89b-7328-d749">
-              <modifiers>
-                <modifier type="increment" field="8e7b-7712-0fa8-e4f3" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="e632-1525-ac0a-cfdf" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cecd-f578-a262-2992" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="e632-1525-ac0a-cfdf" shared="true" id="8e7b-7712-0fa8-e4f3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Power Weapon" hidden="false" id="4c50-9778-31f1-e7d3" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
-              <modifiers>
-                <modifier type="increment" field="75da-acd8-6223-856b" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="e632-1525-ac0a-cfdf" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cecd-f578-a262-2992" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="e632-1525-ac0a-cfdf" shared="true" id="75da-acd8-6223-856b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <selectionEntryGroups/>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
       </costs>

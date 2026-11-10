@@ -3760,7 +3760,7 @@ class Builder:
         other = bool(re.match(r"(?:One|Two|Three|Any|Up to \w+) (?:other|remaining) ", header))
         ci = re.search(r"up to (\w+) if an? (.+?) is taken", header)
         cap_if = (NUMBER_WORDS.get(ci.group(1), 1), ci.group(2)) if ci else None
-        ex = re.search(r"(?:may|must) exchange (?:his |her |its |their |an? (?!pair))?(either pair of |one pair of |either or both |either |both |all \w+ |one of its |any |one |up to \w+ )?(.+?)(?:, each)? for", header)
+        ex = re.search(r"(?:may|must) exchange (?:his |her |its |their |an? (?!pair))?(either pair of |one pair of |either or both |either |both |all \w+ |one of its |any |one |up to \w+ )?(.+?)(?:, each)? (?:for|with(?= one of| an? | the following))", header)
         replaced = "replaced with" in header
         if ex and re.match(r"The (entire|whole) unit", header):
             what = ex.group(2)
