@@ -478,6 +478,11 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
 - `homebrew/expansion_tools.py` holds what the expansion scripts below share: building the doc's units with the
   Builder, moving them into an official catalogue linked to the official entries wherever those exist, and editing
   the official file as text so it keeps its formatting.
+- `python3 homebrew/fix_sisters_of_silence_links.py` points the expansion units' weapons and wargear that the doc
+  only names (Execution Blade, Vratine Bolter, Melta Bombs, ...) at the official entries, and copies in the Legio
+  Custodes profiles the Sisters of Silence catalogue cannot import (Corvae Las-Pulser, Solarite Power Lance,
+  Spiculus Bolt Launcher, Venatari Jump Harness). The expansion tools now link such names to the official entries
+  themselves.
 - `python3 homebrew/add_sisters_of_silence.py` adds the Liber Imperatus Sisters of Silence expansion (the Claude Doc
   "Sisters of Silence Horus Heresy 2.0 - Homebrew Conversion", kept as `source/sisters-of-silence.md`) to
   `2022 - LI - Sisters Of Silence.cat`. build_catalogue.py's Builder reads the doc's datasheets; their units then
