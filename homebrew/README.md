@@ -367,7 +367,8 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Command Tank, the Sisters of Silence Vigilant Covenant) the text `additional-special-rules.md` has for them.
   Running it again changes nothing.
 - House rule, The Shattered Veil (Daemons of the Ruinstorm Allied Detachment): the rule text is in
-  `additional-special-rules.md` and shows on the Daemons of the Ruinstorm entry only in an Allied Detachment. Edited
+  `additional-special-rules.md` and shows (with The Fading Echo) on the Daemons of the Ruinstorm entry and on
+  each unit an Allied Detachment may take, only in an Allied Detachment, so it prints with those units. Edited
   by hand in the data: the game system's Allied Detachment allows at most 1 Elites, 2 Troops and no Heavy Support
   when it holds Daemons of the Ruinstorm, and `2022 - Daemons - Daemons of the Ruinstorm.cat` hides the Daemon
   Sovereign, the Heavy Support and Lords of War units and the Navigator, Lodge Priest and Cults Abominatio HQs in an
