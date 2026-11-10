@@ -798,7 +798,7 @@ A Grey Knights army may take one Rite of War:
 
 - Aegis
 - Brotherhood (X)
-- Brotherhood of Psykers (also knows Purifying Flame)
+- Brotherhood of Psykers (knows Purifying Flame instead of Hammerhand)
 - Daemon Hunters
 - Hatred (Everything)
 
@@ -1154,7 +1154,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 
 - Aegis
 - Brotherhood (X)
-- Brotherhood of Psykers
+- Brotherhood of Psykers (knows Sanctuary instead of Hammerhand)
 - Daemon Hunters
 - Hammer of Wrath (2)
 - Invulnerable save (5+)
@@ -1202,7 +1202,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 
 - Aegis
 - Brotherhood (X)
-- Brotherhood of Psykers (also knows Astral Aim)
+- Brotherhood of Psykers (knows Astral Aim instead of Hammerhand)
 - Daemon Hunters
 
 **Dedicated Transport**

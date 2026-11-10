@@ -116,6 +116,8 @@ loading. The script prints anything in the doc it could not place.
   rule: "Ancestral Lore (2)" and "Psykana (2)" two, "(knows 3 additional Sanctic powers)" three, "(knows every Sanctic
   power)" all of them (Leagues of Votann, Astra Militarum, Grey Knights). A unit given its powers some other way
   ("Hive Mind (X)") is left alone.
+  "(knows X instead of Y)" swaps one known power for another and "(also knows X)" adds one (Grey Knights
+  Purgation and Purifier Squads, Nemesis Dreadknight); the official Dreadnoughts know Purge Soul and Sanctuary.
 - A Warlord Traits section may list its generic traits as "### Name" sub-sections, "#### Name" headings (T'au) or
   "- **Name:** text" bullets (Grey Knights); a leading flavour line is left out of the trait's text.
 - Leagues of Votann take the Xenos allegiance. Each detachment picks a League, and a character's own weapon

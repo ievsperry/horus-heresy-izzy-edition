@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -582,6 +582,20 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Sanctuary" hidden="false" id="555b-426b-0513-1377" type="selectionEntry" targetId="c5d1-c9bf-8767-f964">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0bec-d489-d355-a9c1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02ca-e109-2c4e-e188" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Purge Soul" hidden="false" id="9bcf-48b2-8c4e-23f0" type="selectionEntry" targetId="a9e5-32e6-720a-6808">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b205-e3dc-022b-64e7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2856-a881-578e-9599" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink import="true" name="Contemptor Dreadnought Talon" hidden="false" id="7ad9-3f9d-cc1e-9efa" type="selectionEntry" targetId="d664-5692-cd41-f9be">
       <modifiers>
@@ -623,6 +637,20 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Sanctuary" hidden="false" id="c759-c49d-6a75-3088" type="selectionEntry" targetId="c5d1-c9bf-8767-f964">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26b6-030e-ab32-5472" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6170-9545-5ea8-0b13" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Purge Soul" hidden="false" id="723b-76bc-b088-30ce" type="selectionEntry" targetId="a9e5-32e6-720a-6808">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4939-b87c-3dae-295b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c05-b614-80e1-3605" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink import="true" name="Land Raider Proteus Carrier Squadron" hidden="false" id="a96c-9fa6-166e-a1b9" type="selectionEntry" targetId="b6cd-dd1a-6b2c-41d6">
       <modifiers>
@@ -2677,6 +2705,12 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86e7-2dc6-5522-8ad1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Purifying Flame" hidden="false" id="880f-4fcb-d0df-369a" type="selectionEntry" targetId="6217-7693-ed78-e47d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88d0-261b-be9c-b5ed" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b013-eb50-4504-ed1b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="130" />
@@ -4072,9 +4106,9 @@
       <infoLinks>
         <infoLink name="Aegis" id="a822-15f4-62ea-29d6" hidden="false" targetId="41d3-9cb2-190d-0937" type="rule" />
         <infoLink name="Brotherhood (X)" id="ee89-962f-a9df-9e5c" hidden="false" targetId="4749-6b7c-76d3-27ab" type="rule" />
-        <infoLink name="Brotherhood of Psykers" id="9717-821c-fd8e-2e72" hidden="false" targetId="9a82-d3a3-4eaf-9404" type="rule">
+        <infoLink name="Brotherhood of Psykers" id="843e-7fbf-19a7-c457" hidden="false" targetId="9a82-d3a3-4eaf-9404" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Brotherhood of Psykers (also knows Purifying Flame)" />
+            <modifier type="set" field="name" value="Brotherhood of Psykers (knows Purifying Flame instead of Hammerhand)" />
           </modifiers>
         </infoLink>
         <infoLink name="Daemon Hunters" id="4afb-419f-76b7-394f" hidden="false" targetId="5d79-0af6-07b2-be70" type="rule" />
@@ -4356,16 +4390,16 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Hammerhand" hidden="false" id="6852-ae32-7161-d1ad" type="selectionEntry" targetId="0f81-f1f1-f06a-5ef5">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bcc0-5f1e-584b-66d1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc83-6568-71a9-3558" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Purge Soul" hidden="false" id="53d1-5b18-494f-a16d" type="selectionEntry" targetId="a9e5-32e6-720a-6808">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae8b-e4f2-2138-147e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e62-b6c8-c922-82bc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Purifying Flame" hidden="false" id="1865-f6cb-d8c0-61f4" type="selectionEntry" targetId="6217-7693-ed78-e47d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7531-de53-4f4a-7ad7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9795-904d-f579-3b54" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
         </entryLink>
       </entryLinks>
@@ -5712,7 +5746,11 @@
       <infoLinks>
         <infoLink name="Aegis" id="ba9d-52f3-d5a2-d764" hidden="false" targetId="41d3-9cb2-190d-0937" type="rule" />
         <infoLink name="Brotherhood (X)" id="99d3-09d6-65da-2993" hidden="false" targetId="4749-6b7c-76d3-27ab" type="rule" />
-        <infoLink name="Brotherhood of Psykers" id="6c9c-7a8e-4102-710c" hidden="false" targetId="9a82-d3a3-4eaf-9404" type="rule" />
+        <infoLink name="Brotherhood of Psykers" id="fb0f-9916-d17b-d3d7" hidden="false" targetId="9a82-d3a3-4eaf-9404" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brotherhood of Psykers (knows Sanctuary instead of Hammerhand)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Daemon Hunters" id="4339-9d16-876e-a91a" hidden="false" targetId="5d79-0af6-07b2-be70" type="rule" />
         <infoLink name="Hammer of Wrath (X)" id="678f-60c7-b008-1c12" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
@@ -5840,16 +5878,16 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Hammerhand" hidden="false" id="ed12-b5f3-b0eb-a7df" type="selectionEntry" targetId="0f81-f1f1-f06a-5ef5">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3938-451f-5217-37e4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b39-3368-6e44-49e3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Purge Soul" hidden="false" id="e3e0-5ee6-9582-617f" type="selectionEntry" targetId="a9e5-32e6-720a-6808">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7898-a838-0c68-9362" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f568-495f-7be4-2652" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Sanctuary" hidden="false" id="e949-e654-35ae-867e" type="selectionEntry" targetId="c5d1-c9bf-8767-f964">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0184-d974-ea57-cad8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89a1-5aa6-ef9c-f10e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
         </entryLink>
       </entryLinks>
@@ -5861,9 +5899,9 @@
       <infoLinks>
         <infoLink name="Aegis" id="8981-d921-02a9-154f" hidden="false" targetId="41d3-9cb2-190d-0937" type="rule" />
         <infoLink name="Brotherhood (X)" id="20ca-c390-43a2-d3a4" hidden="false" targetId="4749-6b7c-76d3-27ab" type="rule" />
-        <infoLink name="Brotherhood of Psykers" id="1d0a-d1b0-adc3-2f0d" hidden="false" targetId="9a82-d3a3-4eaf-9404" type="rule">
+        <infoLink name="Brotherhood of Psykers" id="5e52-9eb8-ed9d-1133" hidden="false" targetId="9a82-d3a3-4eaf-9404" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Brotherhood of Psykers (also knows Astral Aim)" />
+            <modifier type="set" field="name" value="Brotherhood of Psykers (knows Astral Aim instead of Hammerhand)" />
           </modifiers>
         </infoLink>
         <infoLink name="Daemon Hunters" id="2792-3e71-40f0-6fe4" hidden="false" targetId="5d79-0af6-07b2-be70" type="rule" />
@@ -6055,16 +6093,16 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Hammerhand" hidden="false" id="c947-e92d-c05c-3a2e" type="selectionEntry" targetId="0f81-f1f1-f06a-5ef5">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f965-ebad-535e-711d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="094b-9383-b09e-251b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Purge Soul" hidden="false" id="6ba9-5f57-d870-2e32" type="selectionEntry" targetId="a9e5-32e6-720a-6808">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9b4-122c-f37d-44ed" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d6d-f772-9dea-e871" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Astral Aim" hidden="false" id="e096-a046-1525-969a" type="selectionEntry" targetId="222a-1316-e919-7bcf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3680-7199-c81d-2408" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3597-a133-3fdc-1c50" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
         </entryLink>
       </entryLinks>

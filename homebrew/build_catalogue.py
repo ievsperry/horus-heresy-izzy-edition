@@ -4885,8 +4885,15 @@ class Builder:
                 clause = re.search(r"knows (.+?)(?:, plus\b|\.(?:\s|$))", text)
                 clause = clause.group(1) if clause else ""
                 known = [(n, i) for n, i in items if re.search(r"\b" + re.escape(n) + r"\b", clause, re.I)]
-                rest = [(n, i) for n, i in items if (n, i) not in known]
                 inner = (re.search(r"\((.+)\)$", line) or [None, ""])[1]
+                by_name = {norm(n): (n, i) for n, i in items}
+                swap = re.search(r"knows (.+?) instead of (.+)$", inner)
+                if swap and norm(swap.group(1)) in by_name:  # "(knows Astral Aim instead of Hammerhand)"
+                    known = [k for k in known if norm(k[0]) != norm(swap.group(2))] + [by_name[norm(swap.group(1))]]
+                also = re.search(r"also knows (.+)$", inner)
+                if also and norm(also.group(1)) in by_name:  # "(also knows Purifying Flame)"
+                    known.append(by_name[norm(also.group(1))])
+                rest = [(n, i) for n, i in items if (n, i) not in known]
                 if re.search(r"\bevery\b", inner):
                     known, rest, n = items, [], 0
                 else:
