@@ -2663,7 +2663,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 | May exchange an Arm Mounted Deathshroud Cannon for one of the following: |  |
 | – Arm Mounted Ghostglaive | Free |
 | – Arm Mounted Inferno Lance | Free |
-| – Arm Mounted Scattershield | Free |
+| – Scattershield | Free |
 
 ### Vampire Hunter — 700 pts
 
@@ -2766,7 +2766,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 | – Hull (Front) Mounted Starcannon | +15 points |
 | May exchange an Arm Mounted Heavy Wraithcannon for one of the following: |  |
 | – Arm Mounted Ghostglaive | Free |
-| – Arm Mounted Scattershield | Free |
+| – Scattershield | Free |
 | – Arm Mounted Suncannon | Free |
 
 ## Fortifications

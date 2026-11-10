@@ -12,6 +12,7 @@ official ones. Each gains the doc's Grey Knights rules and pays for them per mod
 
 2.0 has no Razorback, so the doc's "Rhino or Razorback" is the Rhino.
 
+The Dreadnoughts know Purge Soul and Sanctuary (in place of Hammerhand), as the Nemesis Dreadknight does.
 A Dreadnought Talon may take a Teleport Harness (the doc's wargear: Deep Strike) for +40 points per Dreadnought,
 and the Teleport Harness links the game system's Deep Strike rule.
 
@@ -28,6 +29,7 @@ LAND_RAIDERS = [("Land Raider Proteus Carrier Squadron", "b6cd-dd1a-6b2c-41d6", 
                  ["c123-bdc6-a6ba-79a2", "048e-67cc-d24d-9f46"]),
                 ("Land Raider Phobos Squadron", "681a-7426-96af-caac", 10, ["8bf3-9b8d-578a-38f1"])]
 RHINO = ("Rhino Transport", "03f1-8ed9-9867-8d18", 5)
+DREADNOUGHT_POWERS = ["Purge Soul", "Sanctuary"]
 DEEP_STRIKE = "f1e1-986f-c783-ca9e"  # the game system's Deep Strike rule
 HARNESS_POINTS = 40  # per Dreadnought
 TRANSPORTED = ["Purifier Squad", "Strike Squad", "Purgation Squad"]  # "may take a Rhino or Razorback"
@@ -103,6 +105,9 @@ def apply(b):
     for name, target, points, models in DREADNOUGHTS:
         e = official_unit(b, links, name, target, points, models, True, "Heavy Support")
         teleport_harness(b, e, target, models)
+        for pname, pid in b.powers + b.psychic_weapons:
+            if pname in DREADNOUGHT_POWERS:
+                b.link(child(e, "entryLinks"), pid, pname, make_id(e.get("id"), "powers"), count=1)
     for name, target, points, models in LAND_RAIDERS:
         barred_by(b, official_unit(b, links, name, target, points, models, False, "Heavy Support"), "Purifier Crusade")
     name, target, points = RHINO

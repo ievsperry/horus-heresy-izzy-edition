@@ -26,7 +26,7 @@ GAME_SYSTEM_REVISION = "130"  # the first revision with the Xenos allegiance
 # Factions that take the Xenos allegiance. Their army selection carries the Xenos Army
 # category, which makes the game system require Xenos for that force, and every unit
 # links the Xenos rule.
-XENOS_FACTIONS = {"Tyranids", "Orks", "Necrons", "T'au Empire", "Drukhari", "Asuryani", "Anhrathe", "Rillietann", "Leagues of Votann"}
+XENOS_FACTIONS = {"Tyranids", "Orks", "Necrons", "T'au Empire", "Drukhari", "Asuryani", "Anhrathe", "Rillietann"}
 XENOS_ARMY_CATEGORY = ("3c8e-5a1d-9b47-e2f0", "Xenos Army")
 PTS = "d2ee-04cb-5f8a-2642"
 ALLIED_DETACHMENT = "d4f2-6da5-b6de-06ec"
@@ -187,7 +187,8 @@ OFFICIAL_ALIASES = {"storm bolter": "combi-bolter", "boltgun": "bolter", "force 
                     "assault cannon": "kheres assault cannon", "twin assault cannon": "twin-linked kheres assault cannon",
                     "twin heavy bolter": "gravis bolt cannon", "twin lascannon": "gravis lascannon",
                     "twin multi-melta": "gravis melta cannon", "frag assault launchers": "frag launchers",
-                    "ancestral ward stave": "force staff"}  # Votann
+                    "ancestral ward stave": "force staff",  # Votann
+                    "autogun": "autorifle", "telepathy stave": "force staff"}  # Astra Militarum: the 2.0 names
 
 
 def load_official_items(root=None):
@@ -692,8 +693,8 @@ class Builder:
                             continue  # the armoury gives its profile too
                         parts = [x.strip() for x in r[3].split(",")]
                         parts[0] = re.sub(r"^[A-Za-z ]+:\s*", "", parts[0])  # "Beam: 24\""
-                        rows.append({"name": r[0], "range": parts[0], "str": parts[1].lstrip("S"),
-                                     "ap": parts[2].lstrip("AP"), "type": ", ".join(parts[3:]),
+                        rows.append({"name": r[0], "range": parts[0], "str": parts[1].lstrip("S").strip(),
+                                     "ap": parts[2].lstrip("AP").strip(), "type": ", ".join(parts[3:]),
                                      "psychic_weapon": True, "psy_table": title, "psy_disc": disc})
                     else:
                         self.power_rows.append((r[0], f"{r[2]} phase. {r[3]}", title, disc))
@@ -2932,13 +2933,26 @@ class Builder:
         if ("official", k) in self.upgrades:
             return self.upgrades[("official", k)]
         eid = make_id("official", self.faction, src.get("name"))
+        if self.shared_entries.find(f"selectionEntry[@id='{eid}']") is not None:  # found by another spelling
+            self.upgrades[("official", k)] = eid
+            return eid
         gst_ids = {i for i, _ in self.gst_rules.values()}
         e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=src.get("name"), hidden=False,
                id=eid, publicationId=self.pub_id)
-        for part in src:
+        parts = [p for p in src if p.tag.split("}")[-1] in ("profiles", "infoLinks")]
+        if not any(p.tag.endswith("profiles") for p in parts):
+            # "Meridian Swords": its profiles are on the entries for each way of using it
+            parts = []
+            for tag in ("profiles", "infoLinks"):
+                group, seen = ET.Element(tag), set()
+                for x in src.iter():
+                    if x.tag.endswith("}" + tag[:-1]) and (x.get("name"), x.get("targetId")) not in seen:
+                        seen.add((x.get("name"), x.get("targetId")))
+                        group.append(x)
+                if len(group):
+                    parts.append(group)
+        for part in parts:
             tag = part.tag.split("}")[-1]
-            if tag not in ("profiles", "infoLinks"):
-                continue
             copy = deepcopy(part)
             for x in copy.iter():
                 x.tag = x.tag.split("}")[-1]  # out of the catalogue's namespace
@@ -3002,10 +3016,16 @@ class Builder:
                    hidden=False, id=eid, publicationId=self.pub_id)
             if "(" not in name and norm(name) in self.local_rules:
                 self.link_rule(e, name, eid)  # an option that is one of the doc's rules ("Master of the Void")
+            elif re.fullmatch(r".+? \(\d+\+?\"?\)", name) and self.rule_target(re.sub(r" \(.*\)$", "", name)):
+                self.link_rule(e, name, eid)  # a rule with its value: "Combat Drugs (2)"
+            elif "(" not in name and self.rule_target(name):
+                self.link_rule(e, name, eid)  # a game system rule: "Twin-Linked", "Master-Crafted"
             m = re.match(r"(.+?) \((.+)\)$", name)
             if m and len(m.group(2)) > 6:
                 e.set("name", m.group(1))
                 add_text_profile(e, WARGEAR_PROFILE, m.group(1), m.group(2)[0].upper() + m.group(2)[1:], eid)
+            if re.search(r"\bone per army\b", name, re.I):  # "Knight Commander Pask (...; one per army)"
+                add_constraint(e, "max", 1, eid + "army", scope="roster", children=True)
             for pname, pid in self.powers:
                 if re.search(r"knows " + re.escape(pname), name, re.I):
                     self.link(child(e, "entryLinks"), pid, pname, eid, count=1)
@@ -3063,6 +3083,19 @@ class Builder:
         oid = self.weapon_choice(name) or self.official_entry(name)
         if oid:  # "Storm Axe", "Charnabal Weapon": the official item
             return oid, 1, True
+        num = re.match(r"(" + "|".join(NUMBER_WORDS) + r") (.+)$", name, re.I)
+        oid = num and self.official_entry(num.group(2))
+        if oid:  # "Two Solarite Power Talons": the official weapon, twice
+            return self.wrapper_entry(name, oid, NUMBER_WORDS[num.group(1).lower()], None), 1, True
+        mc = re.match(r"master[- ]crafted (.+)$", name, re.I)
+        base = mc and (self.find_weapon(mc.group(1))[0] or self.weapon_choice(mc.group(1))
+                       or self.official_entry(mc.group(1)))
+        if base:  # "Master-Crafted Power Weapon": the weapon, with Master-crafted
+            wid = self.wrapper_entry(name, base, 1, None)
+            we = self.shared_entries.find(f"selectionEntry[@id='{wid}']")
+            if not any(i.get("name") == "Master-crafted" for i in we.iter("infoLink")):
+                self.link_rule(we, "Master-crafted", wid)
+            return wid, 1, True
         return self.generic_upgrade(name.replace("†", ""), key), 1, False
 
     # ---- units
@@ -3556,13 +3589,18 @@ class Builder:
         # Unit-level upgrades; biomorphs go with the unit's other biomorphs.
         if unit_upgrades:
             groups = child(unit, "selectionEntryGroups")
-            for name, cost, per_model, umax in unit_upgrades:
+            for name, cost, per_model, umax, *pick in unit_upgrades:
+                pick = pick[0] if pick else None
                 bio = self.is_biomorph(name.replace(" for the whole unit", ""))
-                gid = make_id(uid, "biomorphs" if bio else "unit upgrades")
+                gid = make_id(uid, "biomorphs" if bio else "unit upgrades", *([pick] if pick else []))
                 g = groups.find(f"selectionEntryGroup[@id='{gid}']")
                 if g is None:
                     g = el(groups, "selectionEntryGroup", name="Biomorphs" if bio else "Unit Upgrades",
                            hidden=False, id=gid)
+                    if pick:  # one of these for the unit, and required when the doc says it must
+                        add_constraint(g, "max", 1, gid + "max")
+                        if re.search(r"\bmust\b", pick):
+                            add_constraint(g, "min", 1, gid + "min")
                 links = child(g, "entryLinks")
                 target, _, _ = self.option_target(name.replace(" for the whole unit", ""), uid)
                 e = self.link(links, target, name.replace(" for the whole unit", ""), uid + "uu",
@@ -3649,8 +3687,9 @@ class Builder:
         determiner = header.split(" ")[0]
         required = None
         ratio_per, ratio_all = 1, False
-        m = re.match(r"For every (\d+|two|three|four|five|six) models(?: in the unit)?, (?:one|up to (\w+)) (.+?)( with an? [\w' -]+?)? may",
-                     header)
+        # "For every 5 models in the unit", "For every 10 Boyz in the mob", "For every two Legion Indomitus Chosen in the unit"
+        m = re.match(r"For every (\d+|two|three|four|five|six) (?:models|[\w' -]+?)(?: in the (?:unit|mob|squad|squadron|brood))?, "
+                     r"(?:one|up to (\w+)) (.+?)( with an? [\w' -]+?)? may", header)
         if m:
             ratio, subject = NUMBER_WORDS.get(m.group(1)) or int(m.group(1)), m.group(3)
             # "For every 10 models, up to two Shock Troopers may", "one Shock Trooper with a lasgun may":
@@ -3721,7 +3760,7 @@ class Builder:
         other = bool(re.match(r"(?:One|Two|Three|Any|Up to \w+) (?:other|remaining) ", header))
         ci = re.search(r"up to (\w+) if an? (.+?) is taken", header)
         cap_if = (NUMBER_WORDS.get(ci.group(1), 1), ci.group(2)) if ci else None
-        ex = re.search(r"(?:may|must) exchange (?:his |her |its |their |an? (?!pair))?(either pair of |one pair of |either or both |either |both |all \w+ |one of its |any |one |up to \w+ )?(.+?)(?:, each)? for", header)
+        ex = re.search(r"(?:may|must) exchange (?:his |her |its |their |an? (?!pair))?(either pair of |one pair of |either or both |either |both |all \w+ |one of its |any |one |up to \w+ )?(.+?)(?:, each)? (?:for|with(?= one of| an? | the following))", header)
         replaced = "replaced with" in header
         if ex and re.match(r"The (entire|whole) unit", header):
             what = ex.group(2)
@@ -3849,7 +3888,9 @@ class Builder:
                 unit_upgrades.append((name, self.cost(cost), bool(each), 1))
                 continue
             if per_unit:
-                unit_upgrades.append((name, self.cost(cost), False, 1))
+                # "The entire squad must select one of the following options": one choice for the unit
+                pick = header if one_of and not re.search(r"\bmay take any\b", header) else None
+                unit_upgrades.append((name, self.cost(cost), False, 1, pick))
                 continue
             rest.append((name, cost, None))
         if rest and not per_unit:
@@ -4284,6 +4325,9 @@ class Builder:
                         add_constraint(ag, "max", g["fixed"] * per, akey + "fixed")
                     else:
                         self.per_model_limit(ag, akey, uid, m["id"], per)
+                if g["ratio"] and g["one_of"]:
+                    # "For every 5 Warbikers, one Warbiker may take one of the following": one pick per 5 in all
+                    self.ratio_limit(ge, g["ratio"], ds, m, all_models=g.get("ratio_all"))
                 for nm, c, imax in g["items"]:
                     if (nm, c, imax) in armoury:
                         continue
@@ -4708,7 +4752,7 @@ class Builder:
         for ds in self.datasheets:
             text = " ".join(ds["dt"])
             named = [t for t in transports if t is not ds and forms(t["name"]) & {norm(w) for w in
-                     re.findall(r"[A-Z][\w'-]+(?: [A-Z][\w'-]+)*", text)}]
+                     re.findall(r"'?[A-Z][\w'-]+(?: '?[A-Z][\w'-]+)*", text)}]  # "'Chinork' Warkopta"
             if not named:
                 continue
             uid = self.units[ds["name"]]
@@ -4836,6 +4880,7 @@ class Builder:
         self.share_namesake_profiles()
         self.exact_named_rules()
         self.specialist_rules()
+        self.discipline_rules()
         if self.faction in FACTION_LIMITS:
             importlib.import_module(FACTION_LIMITS[self.faction]).apply(self)
         self.root.append(self.shared_entries)
@@ -4849,6 +4894,66 @@ class Builder:
                    id=make_id("library", self.faction, lname), targetId=lib, importRootEntries=False)
         sort_children(self.root)
         return self.root
+
+    def discipline_rules(self):
+        """With one discipline that no datasheet names: a rule whose text says what a psyker "knows" gives a
+        unit with that rule the powers its text names ("Ancestral Lore (X)": knows the Ancestral Wrath
+        psychic weapon; "Brotherhood of Psykers": knows Hammerhand and Purge Soul), and a pick of the
+        rest: "Ancestral Lore (2)" two of them, "(knows 3 additional Sanctic powers)" three, "(knows
+        every Sanctic power)" all of them. The unit counts as a single psyker, so they sit on the unit."""
+        if len(self.psy_sections) != 1 or self.disciplines:
+            return
+        disc = self.psy_sections[0]["disc"]
+        items = [(n, i) for n, i in self.powers + self.psychic_weapons if self.psy_disc.get(i) in (disc, None)]
+        # a power table's psychic weapon the armoury profiles ("Gaze of the Emperor") is in the discipline too
+        for header, rows in section_tables(self.psy_sections[0]):
+            if header[:2] == ["Power", "Kind"]:
+                for r in rows:
+                    wid = self.find_weapon(r[0])[0] if "weapon" in r[1].lower() else None
+                    if wid and all(i != wid for _, i in items):
+                        items.append((r[0], wid))
+        if not items:
+            return
+        for ds in self.datasheets:
+            unit = self.shared_entries.find(f"selectionEntry[@id='{self.units[ds['name']]}']")
+            ids = {i for _, i in items}
+            if unit is None or any(l.get("targetId") in ids for l in unit.iter("entryLink")):
+                continue  # its powers are given already ("Hive Mind (X)", a known discipline)
+            for line in ds["rules"]:
+                base = re.sub(r"\s*\(.*\)$", "", line).strip()
+                rule = self.shared_rules.find(f"rule[@id='{self.local_rules.get(norm(base), (None,))[0]}']")
+                text = rule.findtext("description") if rule is not None else ""
+                if " knows " not in f" {text} ":
+                    continue
+                # only what the "knows ..." clause names, not the power table the rule's text may carry
+                clause = re.search(r"knows (.+?)(?:, plus\b|\.(?:\s|$))", text)
+                clause = clause.group(1) if clause else ""
+                known = [(n, i) for n, i in items if re.search(r"\b" + re.escape(n) + r"\b", clause, re.I)]
+                inner = (re.search(r"\((.+)\)$", line) or [None, ""])[1]
+                by_name = {norm(n): (n, i) for n, i in items}
+                swap = re.search(r"knows (.+?) instead of (.+)$", inner)
+                if swap and norm(swap.group(1)) in by_name:  # "(knows Astral Aim instead of Hammerhand)"
+                    known = [k for k in known if norm(k[0]) != norm(swap.group(2))] + [by_name[norm(swap.group(1))]]
+                also = re.search(r"also knows (.+)$", inner)
+                if also and norm(also.group(1)) in by_name:  # "(also knows Purifying Flame)"
+                    known.append(by_name[norm(also.group(1))])
+                rest = [(n, i) for n, i in items if (n, i) not in known]
+                if re.search(r"\bevery\b", inner):
+                    known, rest, n = items, [], 0
+                else:
+                    m = re.fullmatch(r"(\d+)", inner.strip()) or re.search(r"knows (\w+) additional", inner)
+                    n = (int(m.group(1)) if m.group(1).isdigit() else NUMBER_WORDS.get(m.group(1).lower(), 0)) if m else 0
+                key = make_id(unit.get("id"), "discipline", base)
+                for name, pid in known:
+                    self.link(child(unit, "entryLinks"), pid, name, key, count=1)
+                if n and rest:
+                    g = el(child(unit, "selectionEntryGroups"), "selectionEntryGroup", name=f"{disc}: Psychic Powers",
+                           hidden=False, id=make_id(key, "pick"))
+                    add_constraint(g, "min", min(n, len(rest)), key + "min")
+                    add_constraint(g, "max", min(n, len(rest)), key + "max")
+                    for name, pid in rest:
+                        self.link(child(g, "entryLinks"), pid, name, key + "pick", maximum=1)
+                break
 
     def specialist_rules(self):
         """A unit's own rule that belongs to one of its models goes on that model, so it prints with it: the

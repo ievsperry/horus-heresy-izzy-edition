@@ -44,9 +44,9 @@ A model with the Da Biggest is Da Best special rule grants the following benefit
 
 Da Biggest is Da Best is treated as equivalent to Master of the Legion for the purposes of any campaign rules, mission effects or special interactions that reference Master of the Legion.
 
-**Dakka! (X).** When making Shooting Attacks with Auto weapons, unmodified To Hit rolls of X+ generate one additional hit.
+**Dakka! (X).** When making Shooting Attacks with Auto weapons, each unmodified To Hit roll of X+ triggers one additional To Hit roll, made with the firing model's base Ballistic Skill; if it succeeds, it scores one more hit. It is not an automatic hit.
 
-Additional hits generated in this way do not themselves generate additional hits.
+Additional To Hit rolls made in this way do not themselves trigger Dakka!, and the hits they score do not have any of the special rules of the original attack.
 
 **Deadly Demise.** When a model with this special rule is destroyed, but before it is removed from play, all units within 6" suffer a Strength 8 AP – hit with Rending (6+).
 
@@ -117,7 +117,7 @@ If the test is failed, both units immediately suffer D6 Strength 6 AP – hits t
 
 Only units of the same type may Mob Up. Shoota Boyz may Mob Up only with other Shoota Boyz mobs.
 
-**Mo' Dakka.** When a model with this special rule generates an additional hit from Dakka!, the additional hit gains all of the same special rules and effects possessed by the original attack, including Rending, Breaching, Armourbane, Pinning and similar weapon effects.
+**Mo' Dakka.** When a model with this special rule scores a hit with an additional To Hit roll from Dakka!, that hit gains all of the same special rules and effects possessed by the original attack, including Rending, Breaching, Armourbane, Pinning and similar weapon effects.
 
 **Odd Mob.** The Meks, Painboys and Weirdboys of a warband stand outside the mobs, lending their talents wherever the boss sends them. Only on the longest Waaagh!s would an Odd Boy find himself krumpin' alongside the same lads time and time again. An Odd Mob is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, each Odd Boy in an Odd Mob, together with any grots he has taken, either becomes a separate unit or is assigned to another unit from the same Detachment of the army the Odd Mob was selected as part of. An Odd Boy may only be assigned to a unit composed entirely of models with the Infantry Unit Type and the same Klan (X) special rule as the Odd Boy, and may not join a unit that includes models in Mega Armour.
 
@@ -1905,7 +1905,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 | – Big shoota | +10 points each |
 | **Any Nob may take:** |  |
 | – Twin sluggas | +2 points each |
-| – Ork bionics | +10 points each |
+| – Cybork body | +10 points each |
 | **The Boss Nob may take:** |  |
 | – Waaagh! banner | +20 points |
 | **The entire mob may take one of the following:** |  |
@@ -3586,6 +3586,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 | Mek Gun | 3 | – | – | – | 7 | 2 | – | – | – | 3+ | 60mm |
 | Gretchin crew | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
 | Ammo Runt | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
+| Mek | 6 | 4 | 3 | 4 | 4 | 2 | 3 | 2 | 6 | 4+ | 32mm |
 
 **Unit Composition**
 
@@ -3596,15 +3597,18 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 
 - Gretchin crew: none
 - Mek Gun: kannon
+- Mek: Shoota, Big choppa, Stikkbombz, 'Eavy armour
 
 **Unit Type**
 
 - Mek Gun: Artillery†
 - Gretchin crew: Infantry
+- Mek: Infantry (Character)
 
 **Special Rules**
 
 - Gretchin crew are not affected by Waaagh!
+- Mek-Smasha (5+) (Mek only)
 - Gun Crew: the gun cannot move unless crew are within 2"; if all crew die, remove the gun
 
 **Options**
@@ -3613,7 +3617,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 |---|---|
 | **The Mek Gunz may take:** |  |
 | – Up to 5 additional Mek Gunz, each with 2 Gretchin crew | +20 points each |
-| – One Mek, who joins the unit | Free |
+| – Up to 1 Mek | Free |
 | – Ammo runts | +3 points each |
 | **Any Mek Gun may exchange its kannon for:** |  |
 | – Lobba | +0 points |
@@ -3817,7 +3821,7 @@ _A Stompa has six Fire Points._
 | **The Stompa may take any of the following:** |  |
 | – Grot riggers | +25 points |
 | – Red paint job | +10 points |
-| – Extra armour plates | +20 points |
+| – Extra armour plates | +75 points |
 
 The Stompa is a Titan-scale model. If your group plays without Titans, swap it out or use the 2.0 Super-heavy limit on its points.
 
@@ -3922,6 +3926,10 @@ Friendly Ork Infantry units joined by a model with Dok's tools gain Feel No Pain
 _'Eavy Armour consists of thick reinforced plating, oversized shoulder guards and massive armoured slabs hammered together by Ork meks and riveted directly onto the wearer. Though cumbersome and poorly balanced by Imperial standards, such armour dramatically increases an Ork's battlefield survivability while doing little to hinder their brutal style of warfare._
 
 'Eavy armour grants a 4+ Armour Save.
+
+### Extra Armour Plates
+
+The vehicle's Ramshackled Vehicle (X) improves by 1 (a Ramshackled Vehicle (5+) becomes 4+).
 
 ### Fetishes of Gork and Mork
 
@@ -4176,6 +4184,7 @@ All weapons listed here are counted as 'Dakka' weapons for those rules that affe
 | Rattler kannon | 24" | 6 | 6 | Heavy 2D6 |
 | Shoota | 24" | 4 | 6 | Assault 2 |
 | Slugga | 12" | 4 | – | Pistol 1 |
+| Snipa rifle | 36" | 4 | 5 | Heavy 1, Precision Shots (6+), Murderous Strike (6+), Breaching (6+) |
 | Snazzgun (flash burst) | 24" | 5 | 3 | Assault 2, Twin-linked, Gets Hot, Rending (4+) |
 | Snazzgun (kustom barrage) | 36" | 7 | 4 | Heavy 1, Large Blast (5"), Twin-linked, Pinning, Shell Shock (1), Rending (6+) |
 | Snazzgun (more dakka) | 24" | 6 | 4 | Assault 6, Twin-linked |

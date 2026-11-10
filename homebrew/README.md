@@ -70,8 +70,7 @@ loading. The script prints anything in the doc it could not place.
 - Weapons and psychic powers from the doc's armoury, linked to the core rules
   in `2022 - Horus Heresy.gst` wherever a rule of the same name exists.
 
-- Xenos factions (Tyranids, Orks, Necrons, T'au Empire, Drukhari, Asuryani, Anhrathe, Rillietann,
-  Leagues of Votann) take the Xenos allegiance added to `2022 - Horus Heresy.gst`: their army
+- Xenos factions (Tyranids, Orks, Necrons, T'au Empire, Drukhari, Asuryani, Anhrathe, Rillietann) take the Xenos allegiance added to `2022 - Horus Heresy.gst`: their army
   selection makes Xenos required for the force, and every unit has the Xenos rule.
 
 - Vehicles, Dreadnoughts, Knights and Titans get the game system's Vehicle or Knights
@@ -111,9 +110,37 @@ loading. The script prints anything in the doc it could not place.
   the model of the same name (Medical Technician, Cold-blooded, Oracle), the model it starts (Transpectral
   Interference), the model in its brackets (Distend Dorsal Sac (Venomspitter)), or the model a "while he lives" rule
   names (Drone Specialist on the Drone Controller).
+- With one psychic discipline that no datasheet names, a rule whose text says what a psyker "knows" gives a unit
+  with that rule the powers its "knows ..." sentence names, and a pick of the rest of the discipline sized by the
+  rule: "Ancestral Lore (2)" and "Psykana (2)" two, "(knows 3 additional Sanctic powers)" three, "(knows every Sanctic
+  power)" all of them (Leagues of Votann, Astra Militarum, Grey Knights). A unit given its powers some other way
+  ("Hive Mind (X)") is left alone.
+  "(knows X instead of Y)" swaps one known power for another and "(also knows X)" adds one (Grey Knights
+  Purgation and Purifier Squads, Nemesis Dreadknight); the official Dreadnoughts know Purge Soul and Sanctuary.
 - A Warlord Traits section may list its generic traits as "### Name" sub-sections, "#### Name" headings (T'au) or
   "- **Name:** text" bullets (Grey Knights); a leading flavour line is left out of the trait's text.
-- Leagues of Votann take the Xenos allegiance. Each detachment picks a League, and a character's own weapon
+- An option named after a rule with its value ("Combat Drugs (2)") links that rule.
+- "For every 10 Boyz in the mob, one Boy may ..." is a ratio like "For every 10 models": one per ten of them. A
+  ratio pick of "one of the following" shares one limit across its items (one Warbiker in five takes a kopta rokkit
+  launcha or a kustom mega-blasta, not both). A unit-wide "one of the following" (Hellions' Bladevanes or
+  Chain-snares) allows one, and "must select one of the following" requires one.
+- Legiones Inductii: the Combi-grav is a Magna Combi-weapon with a Graviton Gun (the Bolter (Primary) and
+  Graviton Gun profiles, One Use, Blast, Concussive (1), Graviton Pulse and Haywire), and the Blood Angels and
+  World Eaters squads' Heavy chainaxe is the Legiones Hereticus one; they were text-only placeholders.
+- "May exchange their Combi-Bolter with one of the following" is an exchange, like "for": the Liber Centura
+  options worded that way (Indomitus Centurion, Praetor and squads, Assault Veterans, Possessed, Iron Revenants,
+  Dekadarch, Firehost) replace the weapon rather than adding to it.
+- Questoris Household: Canis Rex is Unique (the Unique Sub-type, one per roster) and the Knight Abominant has the
+  Psyker Sub-type, as the Imperial and Chaos Knights doc's Unit Types say.
+- The Mechanicum Electro-Priest Conclave must take one of its two Electoo kits (a min 1 / max 1 on the official
+  catalogue's group).
+- An option whose name says "one per army" ("Knight Commander Pask (...; one per army)") may be taken once in the
+  roster. The 40k "autogun" and "telepathy stave" are the 2.0 Autorifle and Force Staff.
+- An option named after a game system rule ("Twin-Linked", "Master-Crafted") links it; "Master-Crafted Power
+  Weapon" is the weapon with Master-crafted; "Two Solarite Power Talons" is two of the official weapon. An official
+  weapon whose profiles sit on its sub-entries (the Meridian Swords' three forms) is copied with all of them.
+- Leagues of Votann may be Loyalist, Traitor or Xenos: the army does not force an allegiance and its units do
+  not have the Xenos rule. Each detachment picks a League, and a character's own weapon
   profiled in its datasheet (the Arkanyst Evaluator's transmatter inverter, Berehk Stornbröw's Kromlôk's Revenge)
   is built like an armoury weapon. The Grimnyr's ancestral ward stave is the official Force Staff.
 - Grey Knights are not Xenos either: like the Astra Militarum, the army may be Loyalist or Traitor. Each
@@ -394,8 +421,8 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   source's; pass `--keep-existing` to leave those alone. The file holds the Imperatus Special Rules and Unit
   Sub-types (Anathema, Asuryani, Corrupted, Guardian, Rillietann, Sycophantica). Optional rules are marked "Optional rule:": Concussion (X),
   Cover (X+), Line (X) and Rapid Fire (X) are new rules, while Grenades, Unwieldy and the Line Sub-type keep their
-  core text with the optional rule added after it. Rapid Fire (X) gives X extra shots within half range (a Rapid
-  Fire weapon with no value is Rapid Fire (1)); Line (X) scores X Victory Points for holding an Objective at the end
+  core text with the optional rule added after it. Rapid Fire (X) makes X attacks at full range and 2X within half
+  range (a Rapid Fire weapon with no value is Rapid Fire (1)); Line (X) scores X Victory Points for holding an Objective at the end
   of its player's turn (even if the player does not control it) and X more at the end of the game if the unit survives (no value means Line (1), and a unit
   that is Pinned, Stunned, Falling Back or under a similar status scores nothing). Both live only in the game
   system, so every catalogue gets them without a change of its own.
@@ -470,6 +497,14 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
 - `homebrew/expansion_tools.py` holds what the expansion scripts below share: building the doc's units with the
   Builder, moving them into an official catalogue linked to the official entries wherever those exist, and editing
   the official file as text so it keeps its formatting.
+- `python3 homebrew/fix_solar_auxilia_links.py` gives the Solar Auxilia Praetorian's "Turret Mounted Oppressor Cannon
+  with Co-axial Autocannon" option its weapons (the Oppressor Cannon profile and the game system's Autocannon), which
+  add_solar_auxilia.py had left as an empty entry.
+- `python3 homebrew/fix_sisters_of_silence_links.py` points the expansion units' weapons and wargear that the doc
+  only names (Execution Blade, Vratine Bolter, Melta Bombs, ...) at the official entries, and copies in the Legio
+  Custodes profiles the Sisters of Silence catalogue cannot import (Corvae Las-Pulser, Solarite Power Lance,
+  Spiculus Bolt Launcher, Venatari Jump Harness). The expansion tools now link such names to the official entries
+  themselves.
 - `python3 homebrew/add_sisters_of_silence.py` adds the Liber Imperatus Sisters of Silence expansion (the Claude Doc
   "Sisters of Silence Horus Heresy 2.0 - Homebrew Conversion", kept as `source/sisters-of-silence.md`) to
   `2022 - LI - Sisters Of Silence.cat`. build_catalogue.py's Builder reads the doc's datasheets; their units then

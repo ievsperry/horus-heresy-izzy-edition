@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="e1a3-795b-be05-784b" name="Leagues of Votann for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Leagues of Votann" />
   </publications>
@@ -18,7 +18,6 @@
       </profiles>
       <categoryLinks>
         <categoryLink targetId="e90d-e5a8-f42d-da84" id="1ebc-4643-8ad5-6f4a" primary="true" name="Allegiance:" />
-        <categoryLink targetId="3c8e-5a1d-9b47-e2f0" id="fa35-073e-0f42-5d6f" primary="false" name="Xenos Army" />
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="League" hidden="false" id="6fd5-ac50-fc3b-92fb">
@@ -1277,7 +1276,7 @@
           <characteristics>
             <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18"</characteristic>
             <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">6</characteristic>
-            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9"> 3</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">3</characteristic>
             <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault D6, Psychic</characteristic>
           </characteristics>
         </profile>
@@ -1429,7 +1428,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="d6a2-232e-a69a-95a6" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="7265-51f8-fecb-bce6" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -1554,7 +1552,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="60d4-69ec-3557-ce99" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="ef61-035b-63d0-0305" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -1665,7 +1662,6 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Brôkhyr Iron-master" hidden="false" id="ce8d-afa6-6195-376e" publicationId="e1a3-795b-be05-784b">
       <infoLinks>
-        <infoLink name="Xenos" id="e0d9-c915-ddf1-ddfe" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Battlesmith (X)" id="896d-13a2-d18e-6855" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Battlesmith (4+)" />
@@ -1852,7 +1848,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="3ca1-0325-d876-7ede" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="4749-4994-5d07-198e" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -1978,7 +1973,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="55e6-cbd2-7823-bc59" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="caa8-5dc6-0612-42d5" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -2107,7 +2101,6 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Grimnyr" hidden="false" id="2ea1-3c5b-1cc3-191f" publicationId="e1a3-795b-be05-784b">
       <infoLinks>
-        <infoLink name="Xenos" id="3114-5a1e-88a4-4782" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Ancestral Lore (X)" id="6a16-fe4e-a57d-3e49" hidden="false" targetId="7bc4-43dd-5e6c-2ad5" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Ancestral Lore (2)" />
@@ -2207,6 +2200,39 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ancestral Lore: Psychic Powers" hidden="false" id="3362-2f17-b86e-4699">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b12f-ee9d-8a93-cce5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fefd-9fb5-3350-8a17" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Ancestral Ward" hidden="false" id="bd5b-1c21-4871-603e" type="selectionEntry" targetId="c0be-53e1-9b40-b7a2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d02-f4da-3f9d-bdb9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Fortify" hidden="false" id="92a4-626b-e8cb-7ecf" type="selectionEntry" targetId="7c0a-d541-9db8-106c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="140c-eb5a-e09e-8367" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Null Vortex" hidden="false" id="332f-f76c-ca1f-0f68" type="selectionEntry" targetId="b531-3eb4-0a17-8974">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c91b-d96e-ff49-eb60" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Ancestral Wrath" hidden="false" id="6237-4d00-0f25-e29c" type="selectionEntry" targetId="391e-eb8c-bc0b-60c7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="515e-91c5-8b9a-138e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1aa7-0caf-267f-796d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75" />
       </costs>
@@ -2218,7 +2244,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="635a-a8a2-2640-fb4e" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="c137-9fba-df3b-03f4" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -2403,7 +2428,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="0deb-65cf-d133-e785" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="dd9c-1f5c-6134-7224" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -2511,7 +2535,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="166c-a986-eeda-3eb7" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="af39-82ca-837c-b3b4" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -2631,7 +2654,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="32a7-68f2-6809-a9ec" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="dde3-bee5-98c4-e3e3" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -2760,7 +2782,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="5763-2037-02e3-2df5" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="1706-1027-ad7a-2115" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -2984,7 +3005,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="420d-6e56-64cb-361c" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="a5e1-36d6-137c-6d97" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -3189,7 +3209,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="7549-f787-3300-09a6" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="033f-55ce-b74b-8c58" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -3298,7 +3317,6 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hearthkyn Warriors" hidden="false" id="1838-a245-2204-75f5" publicationId="e1a3-795b-be05-784b">
       <infoLinks>
-        <infoLink name="Xenos" id="1316-ed48-1c67-b7d6" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="e704-3735-49d0-be51" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -3364,9 +3382,9 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Autoch-pattern bolt shotgun" hidden="false" id="024d-3203-fc6d-6235" type="selectionEntry" targetId="b173-7ef6-0be1-42ff">
+                    <entryLink import="true" name="Bolt shotgun" hidden="false" id="81be-73e1-5e11-d229" type="selectionEntry" targetId="9551-998d-6911-060e">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99c0-bf00-1322-f8ad" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2702-ae50-1a18-8ee7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -3568,7 +3586,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Autoch-pattern bolt shotgun" hidden="false" id="b173-7ef6-0be1-42ff" publicationId="e1a3-795b-be05-784b" />
     <selectionEntry type="upgrade" import="true" name="Medipack" hidden="false" id="60ad-b6cf-9acd-c974" publicationId="e1a3-795b-be05-784b">
       <profiles>
         <profile name="Medipack" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7acb-5c65-2bb5-8c3c">
@@ -3580,7 +3597,6 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kapricus Carrier" hidden="false" id="9bfe-381a-f82a-4969" publicationId="e1a3-795b-be05-784b">
       <infoLinks>
-        <infoLink name="Xenos" id="b3b0-d470-bbb5-8a71" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="8656-4b7b-c75a-15d5" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -3667,7 +3683,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="296c-66d1-2368-44ac" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="df83-5d01-fef8-ab52" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -3777,7 +3792,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="4e27-d94b-5d88-ba59" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="82e0-d80b-7c1b-2e69" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -3916,7 +3930,6 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kapricus Defenders" hidden="false" id="1679-773d-8159-a7ba" publicationId="e1a3-795b-be05-784b">
       <infoLinks>
-        <infoLink name="Xenos" id="8bba-97ad-8d66-ea63" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="82e1-22fc-fe39-604f" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -4004,7 +4017,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="8a00-9c73-0ac7-3c74" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="8a2f-8ab0-b8a0-2b8a" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -4102,7 +4114,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="a0aa-0c8d-12ef-32b9" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="6155-5b80-0bde-3c32" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -4210,7 +4221,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="5ccb-160e-c420-41bd" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="5016-b094-08ab-57ff" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />
@@ -4354,7 +4364,6 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Xenos" id="6b27-f01c-c2b0-2547" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Eye of the Ancestors (Judgement)" id="ee3f-9638-1509-5281" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Eye of the Ancestors" />

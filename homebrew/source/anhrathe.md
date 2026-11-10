@@ -850,7 +850,7 @@ No other units may be selected as part of this Detachment.
 | **The Corsair Venom may exchange its twin-linked splinter rifle for:** |  |
 | – Splinter cannon | +5 points |
 | **The Corsair Venom may take:** |  |
-| – Additional splinter cannon | +10 points |
+| – Splinter cannon | +10 points |
 | **The Corsair Venom may take one of the following:** |  |
 | – Bladevanes | +10 points |
 | – Chain-snares | +10 points |

@@ -680,7 +680,7 @@ The unit may take a Sagitaur (5 or fewer models) or a Kapricus Carrier as a Dedi
 | – Up to 10 additional Hearthkyn Warriors | +10 points each |
 | **For every 5 models, one Warrior may exchange his bolter for:** |  |
 | – Ion blaster | +5 points |
-| – Autoch-pattern bolt shotgun | +0 points |
+| – Bolt shotgun | +0 points |
 | – EtaCarn plasma gun | +10 points |
 | – HYLas beam cannon | +15 points |
 | – L7 missile launcher | +15 points |

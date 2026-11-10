@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="54" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="55" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="6107-168e-198e-2e94" name="X: Iron Hands" hidden="false" collective="false" import="false" targetId="bfc9-c99c-bf8a-3917" type="selectionEntry">
       <modifiers>
@@ -5616,17 +5616,74 @@ Keys of Hel. During army selection, Infantry units with Legiones Astartes (Iron 
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="f8d4-56db-e6bb-f908" primary="false" name="Infantry Unit Type"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange Bolter" hidden="false" id="69b4-068f-62c6-2ca3" defaultSelectionEntryId="dfa5-dd72-c702-b5f4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b31-32c6-1f49-27a8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="187e-db0c-1c84-e258" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 5" hidden="false" id="99fa-d2a1-c0ef-b2ee">
+                  <modifiers>
+                    <modifier type="increment" field="99a2-9fe2-e3ce-904e" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="7c22-9978-9d9d-8d83" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc84-f264-9e04-73da" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="7c22-9978-9d9d-8d83" shared="true" id="99a2-9fe2-e3ce-904e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Graviton Gun" hidden="false" id="659a-407e-4b92-e080" type="selectionEntry" targetId="5303-5a3e-de51-1707">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7fa-e04b-06af-e887" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="cfab-4eba-08d2-b9a2" type="selectionEntry" targetId="4ebd-57e0-3560-e568">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2500-cfd8-5d83-ac6a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Gun" hidden="false" id="a5c9-cb17-303c-dd14" type="selectionEntry" targetId="f0d1-332b-c719-ede7">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="414b-7566-b50e-373b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Volkite Culverin" hidden="false" id="c6e4-ea7b-ee7a-12c8" type="selectionEntry" targetId="170d-44e0-455c-8207">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="834d-afe6-e77e-9fdc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Bolter" hidden="false" id="dfa5-dd72-c702-b5f4" type="selectionEntry" targetId="1ade-0c02-5612-252b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a7c-0bb1-d801-2531" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Bolt Pistol" hidden="false" id="db45-3d9a-58a7-c83c" type="selectionEntry" targetId="e5ae-6872-37aa-8600">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a628-738c-5a48-a3a9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ad9-cd24-5a4f-6880" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Bolter" hidden="false" id="7b99-16fc-c829-ba69" type="selectionEntry" targetId="1ade-0c02-5612-252b">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b1f-9d22-7eb1-b5d5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad95-4464-000f-2153" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Frag Grenades" hidden="false" id="4960-71a4-eaa3-2b2a" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
@@ -5840,80 +5897,6 @@ Keys of Hel. During army selection, Infantry units with Legiones Astartes (Iron 
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Iron Revenant: Options" hidden="false" id="d289-7b1c-6c23-8cdf">
-          <modifiers>
-            <modifier type="increment" field="12ae-30ed-ff1f-c333" value="1">
-              <repeats>
-                <repeat field="selections" scope="7c22-9978-9d9d-8d83" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc84-f264-9e04-73da" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="12ae-30ed-ff1f-c333" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Graviton Gun" hidden="false" id="c9b0-57c0-3fd9-b7e5" type="selectionEntry" targetId="5303-5a3e-de51-1707">
-              <modifiers>
-                <modifier type="increment" field="6f95-f64d-b1d7-0e46" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="7c22-9978-9d9d-8d83" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc84-f264-9e04-73da" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="7c22-9978-9d9d-8d83" shared="true" id="6f95-f64d-b1d7-0e46" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Meltagun" hidden="false" id="c8a7-648f-6ddd-9bb9" type="selectionEntry" targetId="4ebd-57e0-3560-e568">
-              <modifiers>
-                <modifier type="increment" field="73ff-1c28-e923-0dce" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="7c22-9978-9d9d-8d83" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc84-f264-9e04-73da" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="7c22-9978-9d9d-8d83" shared="true" id="73ff-1c28-e923-0dce" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Plasma Gun" hidden="false" id="5846-a0d6-5799-66a9" type="selectionEntry" targetId="f0d1-332b-c719-ede7">
-              <modifiers>
-                <modifier type="increment" field="d0d5-7eba-6bcd-e0f4" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="7c22-9978-9d9d-8d83" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc84-f264-9e04-73da" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="7c22-9978-9d9d-8d83" shared="true" id="d0d5-7eba-6bcd-e0f4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Volkite Culverin" hidden="false" id="7103-f3b5-aed7-84dc" type="selectionEntry" targetId="170d-44e0-455c-8207">
-              <modifiers>
-                <modifier type="increment" field="dc46-a0e3-c719-dfa9" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="7c22-9978-9d9d-8d83" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc84-f264-9e04-73da" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="7c22-9978-9d9d-8d83" shared="true" id="dc46-a0e3-c719-dfa9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
           </entryLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="6dbb-42c9-758d-cd66" name="Necrons for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Necrons" />
   </publications>
@@ -1378,6 +1378,21 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Solar staff" hidden="false" id="b01f-9a27-e6d3-b55b" publicationId="6dbb-42c9-758d-cd66">
+      <profiles>
+        <profile name="Solar staff" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ac22-02d4-ca24-fb10" publicationId="6dbb-42c9-758d-cd66">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blind" id="ad63-9bac-d972-ae9f" hidden="false" targetId="d836-747d-07d6-2b63" type="rule" />
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Staff of light" hidden="false" id="3e7b-3836-b58c-bd0f" publicationId="6dbb-42c9-758d-cd66">
       <profiles>
         <profile name="Staff of light" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="348e-67be-133b-07a5" publicationId="6dbb-42c9-758d-cd66">
@@ -1429,6 +1444,30 @@
         <infoLink name="Armourbane (X)" id="3366-d297-d5dc-4ceb" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Armourbane (Ranged)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tremorstave" hidden="false" id="763f-a4e8-df62-e9f6" publicationId="6dbb-42c9-758d-cd66">
+      <profiles>
+        <profile name="Tremorstave" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6119-b29d-4209-0cf0" publicationId="6dbb-42c9-758d-cd66">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3"), Concussive (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="0a3c-4f33-0d34-496b" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Blast (3&quot;)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Concussive (X)" id="3541-4de4-f08c-db11" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (1)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -2469,23 +2508,23 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Canoptek cloak" hidden="false" id="7c81-5daf-d5dc-b837" type="selectionEntry" targetId="fec2-8576-0a97-1f2c">
+                <entryLink import="true" name="Canoptek Cloak" hidden="false" id="bd18-e557-a40c-694c" type="selectionEntry" targetId="d1da-e1d0-14d6-60b2">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c45d-9faa-d760-cd17" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5b5-1762-eb29-a09c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Solar staff" hidden="false" id="c240-f966-bd72-bed3" type="selectionEntry" targetId="f205-2da8-b98e-9105">
+                <entryLink import="true" name="Solar staff" hidden="false" id="1da0-d1aa-4fdb-c397" type="selectionEntry" targetId="b01f-9a27-e6d3-b55b">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3de-8c9b-31b7-78a5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0747-0815-6ae6-dd83" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Tremorstave" hidden="false" id="62a8-170a-055d-d7d6" type="selectionEntry" targetId="94c0-51d2-62c9-28a7">
+                <entryLink import="true" name="Tremorstave" hidden="false" id="62a8-170a-055d-d7d6" type="selectionEntry" targetId="763f-a4e8-df62-e9f6">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56c0-5ce4-e39b-12f9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -2562,33 +2601,6 @@
         <profile name="Veil of darkness" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="93a0-47f6-7495-e61d">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per game, the unit may teleport as Deep Strike</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Canoptek cloak" hidden="false" id="fec2-8576-0a97-1f2c" publicationId="6dbb-42c9-758d-cd66">
-      <profiles>
-        <profile name="Canoptek cloak" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="66b3-983e-a24d-91c0">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Infantry (Mechanised); M10; Battlesmith (5+)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Solar staff" hidden="false" id="f205-2da8-b98e-9105" publicationId="6dbb-42c9-758d-cd66">
-      <profiles>
-        <profile name="Solar staff" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="8acc-c842-393a-e432">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Template, S4, AP 5, Assault 1, Blind</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Tremorstave" hidden="false" id="94c0-51d2-62c9-28a7" publicationId="6dbb-42c9-758d-cd66">
-      <profiles>
-        <profile name="Tremorstave" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6b60-e613-9eea-a687">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">24", S4, AP –, Assault 1, Blast (3"), Concussive (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4084,9 +4096,9 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" hidden="false" id="939e-ce48-11fb-28b1">
               <entryLinks>
-                <entryLink import="true" name="Canoptek cloak" hidden="false" id="e196-10e3-334b-43de" type="selectionEntry" targetId="2c02-7a2f-78a8-e98b">
+                <entryLink import="true" name="Canoptek Cloak" hidden="false" id="a6ae-2af3-6ed2-d985" type="selectionEntry" targetId="d1da-e1d0-14d6-60b2">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91be-4502-7885-2a2b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3db7-e641-372b-bff7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
@@ -4146,15 +4158,6 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65" />
       </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Canoptek cloak" hidden="false" id="2c02-7a2f-78a8-e98b" publicationId="6dbb-42c9-758d-cd66">
-      <profiles>
-        <profile name="Canoptek cloak" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="43b2-b29c-f859-06be">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Infantry (Mechanised); M10</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Trazyn the Infinite" hidden="false" id="fd8b-0069-cb40-1721" publicationId="6dbb-42c9-758d-cd66">
       <rules>

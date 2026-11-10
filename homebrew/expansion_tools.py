@@ -121,7 +121,9 @@ def transplant(b, root, idx, units=None, extra_ids=()):
                 todo.append(target)
     remap = {}
     for r in used:
-        if r in entries and entries[r].find("profiles") is not None and entries[r].get("type") == "upgrade":
+        if r in entries and entries[r].get("type") == "upgrade" and (entries[r].find("profiles") is not None
+                                                                     or len(entries[r]) == 0):
+            # an empty entry is a name the doc leaves to the official books ("Execution Blade"): link theirs
             name = norm(entries[r].get("name"))
             if name in idx["entry"]:
                 remap[r] = idx["entry"][name]

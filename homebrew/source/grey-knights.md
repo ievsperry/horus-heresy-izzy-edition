@@ -48,12 +48,12 @@ Every Grey Knights unit knows Hammerhand and Purge Soul. Librarians, Grand Maste
 
 | Power | Kind | Phase | Effect |
 | --- | --- | --- | --- |
-| Astral Aim | Psychic power | Shooting (start) | The unit's ranged weapons may target units out of line of sight, and the targets gain no cover saves† |
+| Astral Aim | Psychic power | Movement (start) | The unit's ranged weapons may target units out of line of sight, and the targets gain no cover saves† |
 | Banishment | Psychic power | Shooting | One enemy Daemon unit within 24" loses its Invulnerable Save until the end of the turn |
 | Gate of Infinity | Psychic power | Movement (start) | Remove the unit and place it anywhere on the battlefield, as though arriving by Deep Strike |
 | Hammerhand | Psychic power | Assault (start) | The unit adds 1 to its Strength in close combat until the end of the phase |
-| Purge Soul | Psychic weapon | Shooting | 18", S5, AP 4, Assault 1, Psychic; wounds on the target's Leadership instead of Toughness† |
-| Purifying Flame | Psychic weapon | Shooting | Template, S5, AP 4, Assault 1, Psychic, Shred |
+| Purge Soul | Psychic weapon | Shooting | 18", S5, AP 4, Assault 1, Psychic, Sanctic, Murderous Strike (6+), Rending (6+) |
+| Purifying Flame | Psychic weapon | Shooting | Template, S5, AP 4, Assault 1, Psychic, Shred, Sanctic |
 | Sanctuary | Psychic power | Movement (start) | The unit gains a 5+ Invulnerable Save (or improves an existing one by 1, to a best of 3+) until your next turn |
 | Vortex of Doom | Psychic weapon | Shooting | 12", S10, AP 1, Assault 1, Blast (3"), Psychic, Rending (6+) |
 
@@ -798,7 +798,7 @@ A Grey Knights army may take one Rite of War:
 
 - Aegis
 - Brotherhood (X)
-- Brotherhood of Psykers (also knows Purifying Flame)
+- Brotherhood of Psykers (knows Purifying Flame instead of Hammerhand)
 - Daemon Hunters
 - Hatred (Everything)
 
@@ -1050,7 +1050,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Heavy psycannon | +15 points |
 | – Gatling psilencer | +10 points |
 | **The Stormraven may take:** |  |
-| – Two hurricane bolter sponsons | +20 points |
+| – Two Sponson Mounted Hurricane Bolters | +20 points |
 
 ## Heavy Support
 
@@ -1154,7 +1154,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 
 - Aegis
 - Brotherhood (X)
-- Brotherhood of Psykers
+- Brotherhood of Psykers (knows Sanctuary instead of Hammerhand)
 - Daemon Hunters
 - Hammer of Wrath (2)
 - Invulnerable save (5+)
@@ -1202,7 +1202,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 
 - Aegis
 - Brotherhood (X)
-- Brotherhood of Psykers (also knows Astral Aim)
+- Brotherhood of Psykers (knows Astral Aim instead of Hammerhand)
 - Daemon Hunters
 
 **Dedicated Transport**
@@ -1339,7 +1339,7 @@ All weapons listed here are counted as 'Psychic' weapons for those rules that af
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Hurricane bolter | 24" | 4 | 5 | Heavy 6, Breaching (6+) |
+| Hurricane bolter | 24" | 4 | 5 | Rapid Fire (3), Twin-linked |
 | Stormstrike missile | 72" | 8 | 2 | Heavy 1, Rending (6+), One Use |
 | Typhoon missile launcher – krak | 48" | 8 | 3 | Heavy 2 |
 | Typhoon missile launcher – frag | 48" | 4 | 6 | Heavy 2, Blast (3") |

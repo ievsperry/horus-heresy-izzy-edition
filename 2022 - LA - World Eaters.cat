@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="53" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="54" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
   <entryLinks>
     <entryLink id="d647-fd99-73e0-bd57" name="Angron" hidden="false" collective="false" import="false" targetId="6352-8efa-0cc4-cfa7" type="selectionEntry">
       <modifiers>
@@ -5919,6 +5919,59 @@
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="bfed-373d-09f8-5311" primary="false" name="Character"/>
           </categoryLinks>
           <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange Bolt Pistol" hidden="false" id="ff53-19f8-acea-78e4" defaultSelectionEntryId="3683-04a7-2a36-c74a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd3a-e92d-7704-f6ae" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="575f-9cc1-3d70-fe3f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="3683-04a7-2a36-c74a" type="selectionEntry" targetId="e5ae-6872-37aa-8600">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c92-8a6c-720c-d8e5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="79b6-d786-b27e-77c5" type="selectionEntry" targetId="717f-cf0a-1593-4bd8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f661-a642-3933-a8f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Fist" hidden="false" id="cb65-11cf-a2fb-d17f" type="selectionEntry" targetId="768d-b89b-7328-d749">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39fa-a5f6-459b-b5d2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="4b97-1bd3-fa9c-9200" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e464-fbf8-c07f-fdd1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Thunder Hammer" hidden="false" id="5b53-2560-6b89-dcc2" type="selectionEntry" targetId="838c-4002-713d-d7c6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b821-5640-effa-7ce2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Volkite Serpenta" hidden="false" id="56a2-0c6b-ac21-6431" type="selectionEntry" targetId="d535-1da8-290d-69a6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="451f-f9e2-daaf-21b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
             <selectionEntryGroup name="Exchange Power Armour" hidden="false" id="887f-b429-a9fb-3b20" defaultSelectionEntryId="f363-fa3d-f4f1-9624">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a36-9f9b-8169-5bca" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -5946,12 +5999,6 @@
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6639-33b9-0e72-a802" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a54-c3f9-3b53-7fe3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Bolt Pistol" hidden="false" id="e0f2-c378-3db6-75e9" type="selectionEntry" targetId="e5ae-6872-37aa-8600">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b931-419a-7874-ef70" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3c2-e4e4-6045-8a4d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Chain Axe" hidden="false" id="50c4-3af4-ac39-304a" type="selectionEntry" targetId="85b9-4e50-af11-c295">
@@ -6115,45 +6162,6 @@
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2e03-c426-d039-3ea7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Dekadarch: Options" hidden="false" id="660f-2735-e16b-8fe6">
-          <modifiers>
-            <modifier type="increment" field="683f-72ad-ab34-58e4" value="1">
-              <repeats>
-                <repeat field="selections" scope="8e3c-73e6-848b-8f19" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed72-0610-fdf0-88ad" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="683f-72ad-ab34-58e4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Plasma Pistol" hidden="false" id="4e9c-7818-ff2b-9b70" type="selectionEntry" targetId="717f-cf0a-1593-4bd8">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Power Fist" hidden="false" id="bf01-4ecb-b7a6-b38c" type="selectionEntry" targetId="768d-b89b-7328-d749">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Power Weapon" hidden="false" id="5df1-beb0-225c-af0d" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Thunder Hammer" hidden="false" id="68c9-969c-a5f9-667c" type="selectionEntry" targetId="838c-4002-713d-d7c6">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Volkite Serpenta" hidden="false" id="da4e-11c8-5857-d5bc" type="selectionEntry" targetId="d535-1da8-290d-69a6">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
