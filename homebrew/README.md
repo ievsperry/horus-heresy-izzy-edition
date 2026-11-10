@@ -120,6 +120,9 @@ loading. The script prints anything in the doc it could not place.
 - A Warlord Traits section may list its generic traits as "### Name" sub-sections, "#### Name" headings (T'au) or
   "- **Name:** text" bullets (Grey Knights); a leading flavour line is left out of the trait's text.
 - An option named after a rule with its value ("Combat Drugs (2)") links that rule.
+- An option named after a game system rule ("Twin-Linked", "Master-Crafted") links it; "Master-Crafted Power
+  Weapon" is the weapon with Master-crafted; "Two Solarite Power Talons" is two of the official weapon. An official
+  weapon whose profiles sit on its sub-entries (the Meridian Swords' three forms) is copied with all of them.
 - Leagues of Votann may be Loyalist, Traitor or Xenos: the army does not force an allegiance and its units do
   not have the Xenos rule. Each detachment picks a League, and a character's own weapon
   profiled in its datasheet (the Arkanyst Evaluator's transmatter inverter, Berehk Stornbröw's Kromlôk's Revenge)

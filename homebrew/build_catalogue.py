@@ -2932,13 +2932,26 @@ class Builder:
         if ("official", k) in self.upgrades:
             return self.upgrades[("official", k)]
         eid = make_id("official", self.faction, src.get("name"))
+        if self.shared_entries.find(f"selectionEntry[@id='{eid}']") is not None:  # found by another spelling
+            self.upgrades[("official", k)] = eid
+            return eid
         gst_ids = {i for i, _ in self.gst_rules.values()}
         e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=src.get("name"), hidden=False,
                id=eid, publicationId=self.pub_id)
-        for part in src:
+        parts = [p for p in src if p.tag.split("}")[-1] in ("profiles", "infoLinks")]
+        if not any(p.tag.endswith("profiles") for p in parts):
+            # "Meridian Swords": its profiles are on the entries for each way of using it
+            parts = []
+            for tag in ("profiles", "infoLinks"):
+                group, seen = ET.Element(tag), set()
+                for x in src.iter():
+                    if x.tag.endswith("}" + tag[:-1]) and (x.get("name"), x.get("targetId")) not in seen:
+                        seen.add((x.get("name"), x.get("targetId")))
+                        group.append(x)
+                if len(group):
+                    parts.append(group)
+        for part in parts:
             tag = part.tag.split("}")[-1]
-            if tag not in ("profiles", "infoLinks"):
-                continue
             copy = deepcopy(part)
             for x in copy.iter():
                 x.tag = x.tag.split("}")[-1]  # out of the catalogue's namespace
@@ -3004,6 +3017,8 @@ class Builder:
                 self.link_rule(e, name, eid)  # an option that is one of the doc's rules ("Master of the Void")
             elif re.fullmatch(r".+? \(\d+\+?\"?\)", name) and self.rule_target(re.sub(r" \(.*\)$", "", name)):
                 self.link_rule(e, name, eid)  # a rule with its value: "Combat Drugs (2)"
+            elif "(" not in name and self.rule_target(name):
+                self.link_rule(e, name, eid)  # a game system rule: "Twin-Linked", "Master-Crafted"
             m = re.match(r"(.+?) \((.+)\)$", name)
             if m and len(m.group(2)) > 6:
                 e.set("name", m.group(1))
@@ -3065,6 +3080,19 @@ class Builder:
         oid = self.weapon_choice(name) or self.official_entry(name)
         if oid:  # "Storm Axe", "Charnabal Weapon": the official item
             return oid, 1, True
+        num = re.match(r"(" + "|".join(NUMBER_WORDS) + r") (.+)$", name, re.I)
+        oid = num and self.official_entry(num.group(2))
+        if oid:  # "Two Solarite Power Talons": the official weapon, twice
+            return self.wrapper_entry(name, oid, NUMBER_WORDS[num.group(1).lower()], None), 1, True
+        mc = re.match(r"master[- ]crafted (.+)$", name, re.I)
+        base = mc and (self.find_weapon(mc.group(1))[0] or self.weapon_choice(mc.group(1))
+                       or self.official_entry(mc.group(1)))
+        if base:  # "Master-Crafted Power Weapon": the weapon, with Master-crafted
+            wid = self.wrapper_entry(name, base, 1, None)
+            we = self.shared_entries.find(f"selectionEntry[@id='{wid}']")
+            if not any(i.get("name") == "Master-crafted" for i in we.iter("infoLink")):
+                self.link_rule(we, "Master-crafted", wid)
+            return wid, 1, True
         return self.generic_upgrade(name.replace("†", ""), key), 1, False
 
     # ---- units

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="7842-5e80-aeae-2118" name="Homebrew - Traders Militant" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="7842-5e80-aeae-2118" name="Homebrew - Traders Militant" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="3ea8-cc3d-f08e-1e10" name="Traders Militant Horus Heresy 2.0 - Homebrew Conversion" shortName="HB - Traders Militant" />
   </publications>
@@ -4132,7 +4132,7 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Master-Crafted Power Weapon" hidden="false" id="bc5e-7858-1909-6bc2" type="selectionEntry" targetId="546e-aae8-6adf-f70d">
+                    <entryLink import="true" name="Master-Crafted Power Weapon" hidden="false" id="bc5e-7858-1909-6bc2" type="selectionEntry" targetId="7e4b-59cc-be2e-5089">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d3e-3dff-9f66-d115" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
@@ -4196,7 +4196,7 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Two Solarite Power Talons" hidden="false" id="711f-99a3-7b46-4961" type="selectionEntry" targetId="0580-5e9d-b2dc-7b63">
+                    <entryLink import="true" name="Two Solarite Power Talons" hidden="false" id="711f-99a3-7b46-4961" type="selectionEntry" targetId="ee30-c976-7f06-462f">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6521-2bbb-074c-635b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
@@ -5239,8 +5239,60 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Master-Crafted Power Weapon" hidden="false" id="546e-aae8-6adf-f70d" publicationId="3ea8-cc3d-f08e-1e10" />
+    <selectionEntry type="upgrade" import="true" name="Master-Crafted Power Weapon" hidden="false" id="7e4b-59cc-be2e-5089" publicationId="3ea8-cc3d-f08e-1e10">
+      <infoLinks>
+        <infoLink name="Master-crafted" id="2780-601b-250e-3956" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule" />
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Master-Crafted Power Weapon" hidden="false" id="2d9a-2f63-88c4-de76" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="459a-aeb8-f1c1-c0b0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b99d-82de-b800-4c4e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Meridian Swords" hidden="false" id="5f42-2b35-919e-7f90" publicationId="3ea8-cc3d-f08e-1e10">
+      <profiles>
+        <profile id="7217-8de1-4015-9fa6" name="Meridian Swords (Grasp the Rainbow Serpent)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Measured Strike, Instant Death</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dae3-b1d0-c539-ccf5" name="Meridian Swords (Hands Cut the Clouds)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Murderous Strike (4+)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c71b-3e43-980a-fa63" name="Meridian Swords (Raptor Spreads its Wings)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Rampage (3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e646-d482-fffb-382b" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule" />
+        <infoLink id="f444-dc1e-b23c-ce9c" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule" />
+        <infoLink id="c92f-a90c-11f8-77b2" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Murderous Strike (4+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink id="0ba8-4541-f073-2eed" name="Rampage (X)" hidden="false" targetId="3efb-2a2c-2d0b-92fc" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rampage (3)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
@@ -5344,7 +5396,16 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Two Solarite Power Talons" hidden="false" id="0580-5e9d-b2dc-7b63" publicationId="3ea8-cc3d-f08e-1e10" />
+    <selectionEntry type="upgrade" import="true" name="Two Solarite Power Talons" hidden="false" id="ee30-c976-7f06-462f" publicationId="3ea8-cc3d-f08e-1e10">
+      <entryLinks>
+        <entryLink import="true" name="Solarite Power Talon" hidden="false" id="3dfe-dddf-d781-2dc6" type="selectionEntry" targetId="2318-5882-85ce-e91a">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6f38-12a6-c5f7-093d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ef0f-89ee-dd94-2e1a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Auric Warplate" hidden="false" id="0b43-7352-f2f0-f1fe" publicationId="3ea8-cc3d-f08e-1e10">
       <profiles>
         <profile id="3bf3-3f50-7fa1-0ba8" name="Auric Warplate" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
@@ -5375,7 +5436,15 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Master-Crafted" hidden="false" id="cbe6-02c6-881b-3b7d" publicationId="3ea8-cc3d-f08e-1e10" />
+    <selectionEntry type="upgrade" import="true" name="Master-Crafted" hidden="false" id="cbe6-02c6-881b-3b7d" publicationId="3ea8-cc3d-f08e-1e10">
+      <infoLinks>
+        <infoLink name="Master-crafted" id="f731-a8fd-8bd4-70c3" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Master-Crafted" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Execution Blade" hidden="false" id="9494-1cf8-2a2d-46f5" publicationId="3ea8-cc3d-f08e-1e10">
       <entryLinks>
         <entryLink import="true" name="Execution Blade" hidden="false" id="6981-7fed-8c32-d498" type="selectionEntry" targetId="c0f6-4eb1-3f01-3ea0">
@@ -8645,7 +8714,15 @@ Limitations
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Twin-Linked" hidden="false" id="96d0-57d9-627e-561f" publicationId="3ea8-cc3d-f08e-1e10" />
+    <selectionEntry type="upgrade" import="true" name="Twin-Linked" hidden="false" id="96d0-57d9-627e-561f" publicationId="3ea8-cc3d-f08e-1e10">
+      <infoLinks>
+        <infoLink name="Twin-linked" id="2138-bca0-49f7-1869" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Twin-Linked" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Aurox Transport" hidden="false" id="0e72-83e6-aa8c-dbf0" publicationId="3ea8-cc3d-f08e-1e10">
       <infoLinks>
         <infoLink name="Infantry Transport" id="c7d9-4404-1a35-4b33" hidden="false" targetId="0c6b-9cc1-5801-3e83" type="rule" />
