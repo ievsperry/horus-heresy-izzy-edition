@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -6611,9 +6611,15 @@
                 <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="009f-4007-5354-718f" repeats="1" roundUp="false" />
               </repeats>
             </modifier>
+            <modifier type="increment" field="f0f1-305d-0da7-f407" value="1">
+              <repeats>
+                <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="009f-4007-5354-718f" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f118-50a1-2737-2d73" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="0" field="selections" scope="3fd5-f57c-9e82-be70" shared="true" id="f0f1-305d-0da7-f407" percentValue="false" includeChildSelections="true" includeChildForces="false" />
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Splinter pistol" hidden="false" id="5bef-4264-7142-a814" type="selectionEntry" targetId="e670-1c31-6300-cd2d">
@@ -8460,9 +8466,15 @@
                 <repeat field="selections" scope="3576-3678-7a9e-2c63" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2717-a86d-f20d-ee38" repeats="1" roundUp="false" />
               </repeats>
             </modifier>
+            <modifier type="increment" field="dbcb-6a31-df0c-1875" value="1">
+              <repeats>
+                <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2717-a86d-f20d-ee38" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0916-8a70-cc1d-7c4d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="0" field="selections" scope="3576-3678-7a9e-2c63" shared="true" id="dbcb-6a31-df0c-1875" percentValue="false" includeChildSelections="true" includeChildForces="false" />
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Splinter pistol" hidden="false" id="361a-2524-a10c-6d29" type="selectionEntry" targetId="e670-1c31-6300-cd2d">
@@ -9450,7 +9462,10 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="9ef4-b3ad-4f97-8278">
+        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="db26-a4d0-7c7a-37e7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d99-dd33-c378-fd13" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Bladevanes" hidden="false" id="3eaf-2152-5b75-ed29" type="selectionEntry" targetId="53e6-bfba-0819-4e03">
               <constraints>

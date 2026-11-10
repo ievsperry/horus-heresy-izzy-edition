@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6aaf-163e-5512-c78e" name="Homebrew - Astra Militarum" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6aaf-163e-5512-c78e" name="Homebrew - Astra Militarum" revision="25" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="0fda-9dad-a0bf-40e6" name="Astra Militarum for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Astra Militarum" />
   </publications>
@@ -10777,9 +10777,15 @@
                 <repeat field="selections" scope="0df8-02e9-1508-23b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="48fd-dd6a-5a13-88dc" repeats="1" roundUp="false" />
               </repeats>
             </modifier>
+            <modifier type="increment" field="9680-9d72-47c6-28b1" value="1">
+              <repeats>
+                <repeat field="selections" scope="0df8-02e9-1508-23b5" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e292-b998-d317-1bc5" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="0" field="selections" scope="0df8-02e9-1508-23b5" shared="true" id="9680-9d72-47c6-28b1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Death Korps Medi-pack" hidden="false" id="3b94-0f4b-14f7-8c4b" type="selectionEntry" targetId="9bb1-7536-4e54-ce43">

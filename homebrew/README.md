@@ -120,6 +120,12 @@ loading. The script prints anything in the doc it could not place.
 - A Warlord Traits section may list its generic traits as "### Name" sub-sections, "#### Name" headings (T'au) or
   "- **Name:** text" bullets (Grey Knights); a leading flavour line is left out of the trait's text.
 - An option named after a rule with its value ("Combat Drugs (2)") links that rule.
+- "For every 10 Boyz in the mob, one Boy may ..." is a ratio like "For every 10 models": one per ten of them. A
+  ratio pick of "one of the following" shares one limit across its items (one Warbiker in five takes a kopta rokkit
+  launcha or a kustom mega-blasta, not both). A unit-wide "one of the following" (Hellions' Bladevanes or
+  Chain-snares) allows one, and "must select one of the following" requires one.
+- The Mechanicum Electro-Priest Conclave must take one of its two Electoo kits (a min 1 / max 1 on the official
+  catalogue's group).
 - An option whose name says "one per army" ("Knight Commander Pask (...; one per army)") may be taken once in the
   roster. The 40k "autogun" and "telepathy stave" are the 2.0 Autorifle and Force Staff.
 - An option named after a game system rule ("Twin-Linked", "Master-Crafted") links it; "Master-Crafted Power

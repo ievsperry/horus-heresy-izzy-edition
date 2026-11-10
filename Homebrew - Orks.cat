@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="45" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="46" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -6244,7 +6244,10 @@ The effect lasts until the end of the turn.</description>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="64e8-1ad4-c1a9-298a">
+        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="8025-a59f-f4bd-5c60">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fafe-f7ae-d5df-37de" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="'Eavy Armour" hidden="false" id="07f5-f9e7-de6e-53de" type="selectionEntry" targetId="e4bb-7234-0498-89ca">
               <constraints>
@@ -10091,7 +10094,10 @@ The effect lasts until the end of the turn.</description>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="9d2b-9e07-be25-0170">
+        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="a4b6-1619-c86b-f188">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7f8-b48f-144e-2aff" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Da Armour" hidden="false" id="a3ce-ed16-e2b8-2006" type="selectionEntry" targetId="ff87-f2ad-bb74-ba22">
               <constraints>
@@ -11019,27 +11025,43 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6ff-e78f-bff3-1c3f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bd9-a6f6-08ca-05b9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 10" hidden="false" id="f7ff-c4b9-a475-e674">
+                  <modifiers>
+                    <modifier type="increment" field="e5f9-7500-2f81-3c7a" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="0c61-c745-ff64-39a6" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb99-50ea-5aa2-7df0" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="0c61-c745-ff64-39a6" shared="true" id="e5f9-7500-2f81-3c7a" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Big shoota" hidden="false" id="1d26-a7a3-dff1-105b" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec58-9fdd-dd45-0bcd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Rokkit launcha" hidden="false" id="3a60-c35b-9d86-7cd2" type="selectionEntry" targetId="03dd-8729-f70c-99b5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2ca-cb03-f629-35de" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Shoota" hidden="false" id="43a4-429d-f5cf-5b89" type="selectionEntry" targetId="990f-9119-5362-90f3">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6d3-90b1-2766-cc39" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Big shoota" hidden="false" id="1d26-a7a3-dff1-105b" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec58-9fdd-dd45-0bcd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Rokkit launcha" hidden="false" id="3a60-c35b-9d86-7cd2" type="selectionEntry" targetId="03dd-8729-f70c-99b5">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2ca-cb03-f629-35de" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -11048,27 +11070,43 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf19-32fe-66d2-f09f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07a1-b119-16ec-1911" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 10" hidden="false" id="f512-7bac-4cca-2d40">
+                  <modifiers>
+                    <modifier type="increment" field="67a7-5a37-0001-0fff" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="0c61-c745-ff64-39a6" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb99-50ea-5aa2-7df0" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="0c61-c745-ff64-39a6" shared="true" id="67a7-5a37-0001-0fff" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Big choppa" hidden="false" id="c6f2-ba25-9e03-2efc" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81e9-bb71-7978-6415" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="'Uge choppa" hidden="false" id="2fc4-8440-8771-d1d8" type="selectionEntry" targetId="4e26-ad46-72d3-6708">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22fb-92e8-e66d-b4ea" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Choppa" hidden="false" id="8615-ca6b-ac34-e123" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9ec-1a93-63a0-0500" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Big choppa" hidden="false" id="c6f2-ba25-9e03-2efc" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81e9-bb71-7978-6415" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="'Uge choppa" hidden="false" id="2fc4-8440-8771-d1d8" type="selectionEntry" targetId="4e26-ad46-72d3-6708">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22fb-92e8-e66d-b4ea" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -12062,27 +12100,43 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3317-fb58-daa6-dc48" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac01-97d5-576a-e677" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 10" hidden="false" id="b33b-dc91-d3a8-0ff0">
+                  <modifiers>
+                    <modifier type="increment" field="ea31-0c01-e5a1-f4dc" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="ddb3-9996-7aa6-91fc" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b49-8499-65df-febe" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="ddb3-9996-7aa6-91fc" shared="true" id="ea31-0c01-e5a1-f4dc" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Big shoota" hidden="false" id="3d99-d2d3-f633-a04b" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3057-ec28-e46d-90ac" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Rokkit launcha" hidden="false" id="973f-d4a5-5807-bc69" type="selectionEntry" targetId="03dd-8729-f70c-99b5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b459-f027-0377-5b77" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Choppa" hidden="false" id="827a-ad7f-4497-bec5" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59f5-b501-3592-ccc4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Big shoota" hidden="false" id="3d99-d2d3-f633-a04b" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3057-ec28-e46d-90ac" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Rokkit launcha" hidden="false" id="973f-d4a5-5807-bc69" type="selectionEntry" targetId="03dd-8729-f70c-99b5">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b459-f027-0377-5b77" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -12225,7 +12279,10 @@ The effect lasts until the end of the turn.</description>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="64ef-c261-1f89-45f7">
+        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="b534-958f-7e30-e9e5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43bf-6e84-c70a-69f1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Da Armour" hidden="false" id="5089-1c1d-3a96-9d80" type="selectionEntry" targetId="ff87-f2ad-bb74-ba22">
               <constraints>
@@ -12243,6 +12300,10 @@ The effect lasts until the end of the turn.</description>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2" />
               </costs>
             </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="64ef-c261-1f89-45f7">
+          <entryLinks>
             <entryLink import="true" name="All Da Kit" hidden="false" id="af5f-5604-feb4-21bf" type="selectionEntry" targetId="0802-d091-50bb-86eb">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac18-eeea-165d-a108" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -12496,7 +12557,10 @@ The effect lasts until the end of the turn.</description>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="6273-0b27-b538-6235">
+        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="462a-07fc-d50b-629d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df22-7157-c41e-2c3b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Out of no where" hidden="false" id="520e-dfdc-a2d5-0f8c" type="selectionEntry" targetId="07fe-f516-b6fe-0d30">
               <constraints>
@@ -12616,27 +12680,43 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f71f-3d99-cede-34e0" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a992-7041-c81d-4406" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 10" hidden="false" id="6ca6-90e6-50cd-ea47">
+                  <modifiers>
+                    <modifier type="increment" field="67c0-6f71-b196-c88b" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="b0c0-2156-074c-cac7" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b8c2-a908-e384-98df" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="b0c0-2156-074c-cac7" shared="true" id="67c0-6f71-b196-c88b" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Big shoota" hidden="false" id="058c-ea32-d00a-412c" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4358-1ebf-6b64-19a1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Rokkit launcha" hidden="false" id="7fe8-e921-9ff8-6240" type="selectionEntry" targetId="03dd-8729-f70c-99b5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46e8-cf3d-9ffa-ad63" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Shoota" hidden="false" id="2dc2-bc6d-3c90-c774" type="selectionEntry" targetId="990f-9119-5362-90f3">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6962-1085-8cb6-4db1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Big shoota" hidden="false" id="058c-ea32-d00a-412c" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4358-1ebf-6b64-19a1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Rokkit launcha" hidden="false" id="7fe8-e921-9ff8-6240" type="selectionEntry" targetId="03dd-8729-f70c-99b5">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46e8-cf3d-9ffa-ad63" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -12779,7 +12859,10 @@ The effect lasts until the end of the turn.</description>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="e219-c5aa-8ba7-4d99">
+        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="6abd-119f-07db-86be">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4751-7134-18ab-195c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Da Armour" hidden="false" id="4dc3-8c45-e325-9ed8" type="selectionEntry" targetId="ff87-f2ad-bb74-ba22">
               <constraints>
@@ -12797,6 +12880,10 @@ The effect lasts until the end of the turn.</description>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2" />
               </costs>
             </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="e219-c5aa-8ba7-4d99">
+          <entryLinks>
             <entryLink import="true" name="All Da Kit" hidden="false" id="9d99-2b51-199f-0f1b" type="selectionEntry" targetId="0802-d091-50bb-86eb">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a43-dc29-3417-b81f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -13972,35 +14059,51 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3fb-057b-a4d7-b3ac" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4b9-b164-0791-4940" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 5" hidden="false" id="1341-3d93-a160-a917">
+                  <modifiers>
+                    <modifier type="increment" field="618d-9619-8ed9-6ac9" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="85f7-e6c1-316b-8a41" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb2e-9b4e-b43e-6649" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="85f7-e6c1-316b-8a41" shared="true" id="618d-9619-8ed9-6ac9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Big shoota" hidden="false" id="4ea4-aeea-de94-5682" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06a0-e938-5ac7-07dc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Burna" hidden="false" id="3447-101b-ef17-995e" type="selectionEntry" targetId="d68a-f2d5-bb23-b277">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="423c-f3c7-f2ac-073a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Rokkit launcha" hidden="false" id="73ea-ff6c-fb34-ce37" type="selectionEntry" targetId="03dd-8729-f70c-99b5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="366f-98ec-7452-8a25" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Slugga" hidden="false" id="f0e7-f39c-82d3-edc3" type="selectionEntry" targetId="63e5-3ea4-aa90-6a1e">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="648f-d8d5-b355-74e9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Big shoota" hidden="false" id="4ea4-aeea-de94-5682" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06a0-e938-5ac7-07dc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Burna" hidden="false" id="3447-101b-ef17-995e" type="selectionEntry" targetId="d68a-f2d5-bb23-b277">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="423c-f3c7-f2ac-073a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Rokkit launcha" hidden="false" id="73ea-ff6c-fb34-ce37" type="selectionEntry" targetId="03dd-8729-f70c-99b5">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="366f-98ec-7452-8a25" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -14033,19 +14136,35 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e325-191e-9809-430f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e84-529b-0c6b-77c9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 5" hidden="false" id="ebcf-6b7a-6df8-b215">
+                  <modifiers>
+                    <modifier type="increment" field="c2c5-1aea-2041-2c10" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="85f7-e6c1-316b-8a41" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb2e-9b4e-b43e-6649" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="85f7-e6c1-316b-8a41" shared="true" id="c2c5-1aea-2041-2c10" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Big choppa" hidden="false" id="a99f-db42-3e61-2942" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fa3-9bca-3c24-7bd6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Choppa" hidden="false" id="10e1-0511-2bcc-5b32" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="799c-1d2e-361e-ac21" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Big choppa" hidden="false" id="a99f-db42-3e61-2942" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fa3-9bca-3c24-7bd6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -15033,27 +15152,43 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8017-8c8f-f806-1cab" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39c8-c784-a861-df12" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 5" hidden="false" id="cf58-2003-bf97-85bc">
+                  <modifiers>
+                    <modifier type="increment" field="effb-e365-809a-e445" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="48ab-8983-6176-3321" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bfc-3f38-35b6-152e" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="48ab-8983-6176-3321" shared="true" id="effb-e365-809a-e445" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Big shoota" hidden="false" id="eedc-d204-ebbb-335c" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ce3-5d7d-79b3-8338" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Rokkit launcha" hidden="false" id="93a7-4851-ef5f-c31f" type="selectionEntry" targetId="03dd-8729-f70c-99b5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84d2-e315-aa4b-4eee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Slugga" hidden="false" id="694a-3f0f-46cf-2211" type="selectionEntry" targetId="63e5-3ea4-aa90-6a1e">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5448-2003-1e4d-3c31" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Big shoota" hidden="false" id="eedc-d204-ebbb-335c" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ce3-5d7d-79b3-8338" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Rokkit launcha" hidden="false" id="93a7-4851-ef5f-c31f" type="selectionEntry" targetId="03dd-8729-f70c-99b5">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84d2-e315-aa4b-4eee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -15084,27 +15219,43 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1b5-46f6-1975-53f7" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d66b-3bfe-b8b6-2386" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 5" hidden="false" id="459a-d046-f6eb-20bf">
+                  <modifiers>
+                    <modifier type="increment" field="1ee4-3fcf-a455-8add" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="48ab-8983-6176-3321" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bfc-3f38-35b6-152e" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="48ab-8983-6176-3321" shared="true" id="1ee4-3fcf-a455-8add" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Big choppa" hidden="false" id="119a-0591-892f-044e" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1a6-f59c-b4ee-5d05" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="'Uge choppa" hidden="false" id="a5b8-e51c-ba01-89af" type="selectionEntry" targetId="4e26-ad46-72d3-6708">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="788b-9771-5e0f-8b14" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Choppa" hidden="false" id="1799-e766-1579-9656" type="selectionEntry" targetId="72b5-8b95-8a6e-bffd">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b22-25ab-2650-c892" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Big choppa" hidden="false" id="119a-0591-892f-044e" type="selectionEntry" targetId="e931-bec6-c7e5-21a9">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1a6-f59c-b4ee-5d05" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="'Uge choppa" hidden="false" id="a5b8-e51c-ba01-89af" type="selectionEntry" targetId="4e26-ad46-72d3-6708">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="788b-9771-5e0f-8b14" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -15506,6 +15657,56 @@ The effect lasts until the end of the turn.</description>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup name="Warbiker: Options" hidden="false" id="e53e-299e-2732-ffd3">
+          <modifiers>
+            <modifier type="increment" field="456b-45ee-93e8-91e7" value="1">
+              <repeats>
+                <repeat field="selections" scope="8c6e-615f-d7f1-0103" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9be1-1cbb-7aaa-7906" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="702d-d351-1034-8354" value="1">
+              <repeats>
+                <repeat field="selections" scope="8c6e-615f-d7f1-0103" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9be1-1cbb-7aaa-7906" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="456b-45ee-93e8-91e7" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="0" field="selections" scope="8c6e-615f-d7f1-0103" shared="true" id="702d-d351-1034-8354" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Kopta rokkit launcha" hidden="false" id="92ef-e592-fadc-382f" type="selectionEntry" targetId="4356-fd1e-39fb-39a3">
+              <modifiers>
+                <modifier type="increment" field="802f-d8d5-efed-7dbd" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="8c6e-615f-d7f1-0103" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9be1-1cbb-7aaa-7906" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="8c6e-615f-d7f1-0103" shared="true" id="802f-d8d5-efed-7dbd" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Kustom mega-blasta" hidden="false" id="d503-4872-aad2-af8a" type="selectionEntry" targetId="f4fe-dba3-e6d0-7b91">
+              <modifiers>
+                <modifier type="increment" field="4eaa-0d6c-76ef-ca8d" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="8c6e-615f-d7f1-0103" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9be1-1cbb-7aaa-7906" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="8c6e-615f-d7f1-0103" shared="true" id="4eaa-0d6c-76ef-ca8d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="Nob Biker: Options" hidden="false" id="f728-f138-5466-bbdc">
           <entryLinks>
             <entryLink import="true" name="Bosspole" hidden="false" id="5464-df18-f95b-8b77" type="selectionEntry" targetId="e2e0-a4e5-4709-03c3">
@@ -15536,26 +15737,6 @@ The effect lasts until the end of the turn.</description>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="892f-1bfa-39ea-5615">
-          <entryLinks>
-            <entryLink import="true" name="Kopta rokkit launcha" hidden="false" id="f44e-fdd5-a6c6-bdd4" type="selectionEntry" targetId="4356-fd1e-39fb-39a3">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="626d-532f-5c18-f899" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Kustom mega-blasta" hidden="false" id="c0ca-03fc-d0a5-fd62" type="selectionEntry" targetId="f4fe-dba3-e6d0-7b91">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="074e-9988-841d-75ee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
               </costs>
             </entryLink>
           </entryLinks>

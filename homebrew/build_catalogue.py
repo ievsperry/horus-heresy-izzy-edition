@@ -3589,13 +3589,18 @@ class Builder:
         # Unit-level upgrades; biomorphs go with the unit's other biomorphs.
         if unit_upgrades:
             groups = child(unit, "selectionEntryGroups")
-            for name, cost, per_model, umax in unit_upgrades:
+            for name, cost, per_model, umax, *pick in unit_upgrades:
+                pick = pick[0] if pick else None
                 bio = self.is_biomorph(name.replace(" for the whole unit", ""))
-                gid = make_id(uid, "biomorphs" if bio else "unit upgrades")
+                gid = make_id(uid, "biomorphs" if bio else "unit upgrades", *([pick] if pick else []))
                 g = groups.find(f"selectionEntryGroup[@id='{gid}']")
                 if g is None:
                     g = el(groups, "selectionEntryGroup", name="Biomorphs" if bio else "Unit Upgrades",
                            hidden=False, id=gid)
+                    if pick:  # one of these for the unit, and required when the doc says it must
+                        add_constraint(g, "max", 1, gid + "max")
+                        if re.search(r"\bmust\b", pick):
+                            add_constraint(g, "min", 1, gid + "min")
                 links = child(g, "entryLinks")
                 target, _, _ = self.option_target(name.replace(" for the whole unit", ""), uid)
                 e = self.link(links, target, name.replace(" for the whole unit", ""), uid + "uu",
@@ -3682,8 +3687,9 @@ class Builder:
         determiner = header.split(" ")[0]
         required = None
         ratio_per, ratio_all = 1, False
-        m = re.match(r"For every (\d+|two|three|four|five|six) models(?: in the unit)?, (?:one|up to (\w+)) (.+?)( with an? [\w' -]+?)? may",
-                     header)
+        # "For every 5 models in the unit", "For every 10 Boyz in the mob", "For every two Legion Indomitus Chosen in the unit"
+        m = re.match(r"For every (\d+|two|three|four|five|six) (?:models|[\w' -]+?)(?: in the (?:unit|mob|squad|squadron|brood))?, "
+                     r"(?:one|up to (\w+)) (.+?)( with an? [\w' -]+?)? may", header)
         if m:
             ratio, subject = NUMBER_WORDS.get(m.group(1)) or int(m.group(1)), m.group(3)
             # "For every 10 models, up to two Shock Troopers may", "one Shock Trooper with a lasgun may":
@@ -3882,7 +3888,9 @@ class Builder:
                 unit_upgrades.append((name, self.cost(cost), bool(each), 1))
                 continue
             if per_unit:
-                unit_upgrades.append((name, self.cost(cost), False, 1))
+                # "The entire squad must select one of the following options": one choice for the unit
+                pick = header if one_of and not re.search(r"\bmay take any\b", header) else None
+                unit_upgrades.append((name, self.cost(cost), False, 1, pick))
                 continue
             rest.append((name, cost, None))
         if rest and not per_unit:
@@ -4317,6 +4325,9 @@ class Builder:
                         add_constraint(ag, "max", g["fixed"] * per, akey + "fixed")
                     else:
                         self.per_model_limit(ag, akey, uid, m["id"], per)
+                if g["ratio"] and g["one_of"]:
+                    # "For every 5 Warbikers, one Warbiker may take one of the following": one pick per 5 in all
+                    self.ratio_limit(ge, g["ratio"], ds, m, all_models=g.get("ratio_all"))
                 for nm, c, imax in g["items"]:
                     if (nm, c, imax) in armoury:
                         continue
