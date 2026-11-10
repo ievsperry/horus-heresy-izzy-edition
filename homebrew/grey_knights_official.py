@@ -10,7 +10,13 @@ official ones. Each gains the doc's Grey Knights rules and pays for them per mod
 - Land Raiders (Proteus Carrier and Phobos) and the Rhino: Brotherhood (X) and Aegis, +10 points per Land Raider
   and +5 points per Rhino. The Rhino is the Dedicated Transport of the units whose datasheet offers one.
 
-2.0 has no Razorback, so the doc's "Rhino or Razorback" is the Rhino."""
+2.0 has no Razorback, so the doc's "Rhino or Razorback" is the Rhino.
+
+A Dreadnought Talon may take a Teleport Harness (the doc's wargear: Deep Strike) for +40 points per Dreadnought,
+and the Teleport Harness links the game system's Deep Strike rule.
+
+The Rites of War that bar these kinds of unit bar the official ones too: Purifier Crusade (no Land Raiders) hides
+the official Land Raiders, and Teleport Assault (no Dedicated Transports) hides the Rhino."""
 from build_catalogue import PTS, SLOTS, TYPE_CATEGORIES, UNIT_CATEGORY, add_constraint, child, el, make_id
 
 LIBRARY = ("6393-649c-7213-a327", "Legions Astartes")
@@ -22,6 +28,8 @@ LAND_RAIDERS = [("Land Raider Proteus Carrier Squadron", "b6cd-dd1a-6b2c-41d6", 
                  ["c123-bdc6-a6ba-79a2", "048e-67cc-d24d-9f46"]),
                 ("Land Raider Phobos Squadron", "681a-7426-96af-caac", 10, ["8bf3-9b8d-578a-38f1"])]
 RHINO = ("Rhino Transport", "03f1-8ed9-9867-8d18", 5)
+DEEP_STRIKE = "f1e1-986f-c783-ca9e"  # the game system's Deep Strike rule
+HARNESS_POINTS = 40  # per Dreadnought
 TRANSPORTED = ["Purifier Squad", "Strike Squad", "Purgation Squad"]  # "may take a Rhino or Razorback"
 
 
@@ -51,6 +59,12 @@ def surcharge(e, target, points, models=()):
            includeChildSelections=True, includeChildForces=False, childId=m, repeats=1, roundUp=False)
 
 
+def barred_by(b, e, rite):
+    """Hidden while the force has chosen that Rite of War."""
+    mod = el(child(e, "modifiers"), "modifier", type="set", field="hidden", value="true")
+    b.rite_condition(mod, make_id("rite", b.faction, rite))
+
+
 def official_unit(b, links, name, target, points, models, psyker, slot):
     key = make_id("official unit", b.faction, name)
     e = el(links, "entryLink", import_=True, name=name, hidden=False, id=key, type="selectionEntry",
@@ -60,16 +74,37 @@ def official_unit(b, links, name, target, points, models, psyker, slot):
     for cat, cname, primary in SLOTS[slot] + [UNIT_CATEGORY + (False,)]:
         el(child(e, "categoryLinks"), "categoryLink", targetId=cat, id=make_id(key, "cat", cat), primary=primary,
            name=cname)
+    return e
+
+
+def teleport_harness(b, e, target, models):
+    """The doc's Teleport Harness for a Dreadnought Talon: one per unit, +40 points for each Dreadnought in it."""
+    harness = b.shared_entries.find("selectionEntry[@name='Teleport Harness']")
+    lid = make_id(e.get("id"), "teleport harness")
+    g = el(child(e, "selectionEntryGroups"), "selectionEntryGroup", name="Teleport Harness", hidden=False,
+           id=make_id(lid, "group"))
+    add_constraint(g, "max", 1, lid + "group")
+    l = el(child(g, "entryLinks"), "entryLink", import_=True, name="Teleport Harness", hidden=False, id=lid,
+           type="selectionEntry", targetId=harness.get("id"))
+    add_constraint(l, "max", 1, lid)
+    for m in models:
+        mod = el(child(l, "modifiers"), "modifier", type="increment", field=PTS, value=HARNESS_POINTS)
+        el(el(mod, "repeats"), "repeat", field="selections", scope=target, value=1, percentValue=False, shared=True,
+           includeChildSelections=True, includeChildForces=False, childId=m, repeats=1, roundUp=False)
 
 
 def apply(b):
+    harness = b.shared_entries.find("selectionEntry[@name='Teleport Harness']")
+    el(child(harness, "infoLinks"), "infoLink", name="Deep Strike", id=make_id(harness.get("id"), "deep strike"),
+       hidden=False, targetId=DEEP_STRIKE, type="rule")
     el(child(b.root, "catalogueLinks"), "catalogueLink", name=LIBRARY[1], targetId=LIBRARY[0], type="catalogue",
        importRootEntries=False, id=make_id("library", b.faction, LIBRARY[1]))
     links = child(b.root, "entryLinks")
     for name, target, points, models in DREADNOUGHTS:
-        official_unit(b, links, name, target, points, models, True, "Heavy Support")
+        e = official_unit(b, links, name, target, points, models, True, "Heavy Support")
+        teleport_harness(b, e, target, models)
     for name, target, points, models in LAND_RAIDERS:
-        official_unit(b, links, name, target, points, models, False, "Heavy Support")
+        barred_by(b, official_unit(b, links, name, target, points, models, False, "Heavy Support"), "Purifier Crusade")
     name, target, points = RHINO
     for unit_name in TRANSPORTED:
         uid = b.units[unit_name]
@@ -84,3 +119,4 @@ def apply(b):
         add_constraint(e, "max", 1, key + "max")
         surcharge(e, target, points)
         grey_knights_rules(b, e, key, False)
+        barred_by(b, e, "Teleport Assault")

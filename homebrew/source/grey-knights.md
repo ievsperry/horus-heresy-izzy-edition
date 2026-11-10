@@ -16,7 +16,7 @@ Use the official datasheet for these units, adding the Grey Knights rules and po
 
 | 40k unit | Official 2.0 equivalent | Grey Knights rules | Extra points |
 | --- | --- | --- | --: |
-| Dreadnought, Venerable Dreadnought | Castra Ferrum Dreadnought Talon and Contemptor Dreadnought Talon (Heavy Support) | Psyker sub-type, Brotherhood of Psykers, Daemon Hunters, Brotherhood (X), Aegis | +25 points per Dreadnought |
+| Dreadnought, Venerable Dreadnought | Castra Ferrum Dreadnought Talon and Contemptor Dreadnought Talon (Heavy Support) | Psyker sub-type, Brotherhood of Psykers, Daemon Hunters, Brotherhood (X), Aegis | +25 points per Dreadnought; a Teleport Harness (Deep Strike) costs +40 points per Dreadnought |
 | Land Raider | Land Raider Proteus Carrier Squadron or Land Raider Phobos Squadron (Heavy Support) | Brotherhood (X), Aegis | +10 points per Land Raider |
 | Rhino, Razorback | Rhino Transport (2.0 has no Razorback), as the Dedicated Transport of a unit that may take one | Brotherhood (X), Aegis | +5 points |
 
@@ -565,6 +565,8 @@ A Grey Knights army may take one Rite of War:
 | **The Grand Master may exchange his heavy psycannon for:** |  |
 | – Heavy incinerator | +0 points |
 | – Gatling psilencer | +0 points |
+| **The Grand Master may take:** |  |
+| – Teleport harness | +40 points |
 
 ### Grand Master Voldus — 190 pts
 
@@ -1170,6 +1172,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Gatling psilencer | +15 points |
 | **The Dreadknight may take:** |  |
 | – Personal teleporter (gains Teleport Strike) | +20 points |
+| – Teleport harness | +40 points |
 
 ### Purgation Squad — 120 pts
 
@@ -1256,6 +1259,12 @@ Psyk-out grenades count as frag grenades. In addition, enemy psykers and Daemons
 *An amulet that projects a protective conversion field.*
 
 A model with a rosarius has a 4+ Invulnerable Save.
+
+### Teleport Harness
+
+*A heavy teleport array that lets a Dreadnought or Dreadknight strike from orbit.*
+
+The model has the Deep Strike special rule.
 
 ### The Shield of Titan
 
