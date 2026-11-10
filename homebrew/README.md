@@ -115,7 +115,10 @@ loading. The script prints anything in the doc it could not place.
   Gravis Bolt Cannon, Gravis Lascannon and Gravis Melta Cannon (in any homebrew list: the Astra Militarum
   Vendetta's twin lascannons are Gravis Lascannons too). Dreadnoughts, the Land Raider
   Proteus and Phobos, Rhinos and Razorbacks come from the official lists. Servitors and the vehicles have
-  Brotherhood (X) only, as the doc says.
+  Brotherhood (X) only, as the doc says. Every Grey Knight has the Psyker sub-type (Servitors and vehicles do not),
+  the Nemesis Dreadknight and the Grand Master in one are Armigers (the Mech Library's Armiger Unit Type, which the
+  catalogue links that library for), and the Stormraven may swap its twin heavy bolter (the Gravis Bolt Cannon) for
+  a heavy psycannon (+15) or gatling psilencer (+10).
 - Wargear grouped under a heading ("### Armour" holding "#### Kabalite Armour") is read item by item.
   "Scourge wings (count as a jump pack)" is the official jump pack under the doc's name. "May exchange
   any dark lance" lets each of the three be swapped; "one macro-scalpel" only one of the two.

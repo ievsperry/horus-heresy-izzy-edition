@@ -8,7 +8,7 @@ This is a homebrew conversion of the 7th edition Codex: Grey Knights (2014) rang
 
 The design goals: every Grey Knight is a psyker, armed with a nemesis force weapon and trained from birth to hunt daemons. They are few in number and very expensive, better than Legionaries in almost every way, and their army-wide psychic might lets them shrug off enemy sorcery, teleport across the battlefield and smash daemons apart.
 
-**Unit types:** Grey Knights in power armour and Aegis Terminator armour are Infantry. The Nemesis Dreadknight is Infantry (Mechanised). Interceptors use the official 2.0 Jump Pack rules for their personal teleporters.
+**Unit types:** Grey Knights in power armour and Aegis Terminator armour are Infantry. The Nemesis Dreadknight is an Armiger. Interceptors use the official 2.0 Jump Pack rules for their personal teleporters.
 
 ### Units to take from the official 2.0 books
 
@@ -222,7 +222,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Brother-Captain: Infantry (Independent Character)
+- Brother-Captain: Infantry (Independent Character, Psyker)
 
 **Special Rules**
 
@@ -264,7 +264,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Brother-Captain Stern: Infantry (Independent Character, Unique)
+- Brother-Captain Stern: Infantry (Independent Character, Unique, Psyker)
 
 **Special Rules**
 
@@ -296,7 +296,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Brotherhood Champion: Infantry (Independent Character)
+- Brotherhood Champion: Infantry (Independent Character, Psyker)
 
 **Special Rules**
 
@@ -326,7 +326,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Brotherhood Chaplain: Infantry (Independent Character)
+- Brotherhood Chaplain: Infantry (Independent Character, Psyker)
 
 **Special Rules**
 
@@ -365,7 +365,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Brotherhood Librarian: Infantry (Independent Character)
+- Brotherhood Librarian: Infantry (Independent Character, Psyker)
 
 **Special Rules**
 
@@ -407,7 +407,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Brotherhood Techmarine: Infantry (Independent Character)
+- Brotherhood Techmarine: Infantry (Independent Character, Psyker)
 
 **Special Rules**
 
@@ -435,7 +435,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Castellan Crowe: Infantry (Independent Character, Unique)
+- Castellan Crowe: Infantry (Independent Character, Unique, Psyker)
 
 **Special Rules**
 
@@ -466,7 +466,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Grand Master: Infantry (Independent Character)
+- Grand Master: Infantry (Independent Character, Psyker)
 
 **Special Rules**
 
@@ -509,7 +509,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Grand Master in Nemesis Dreadknight: Infantry (Mechanised, Independent Character)
+- Grand Master in Nemesis Dreadknight: Armiger (Independent Character, Psyker)
 
 **Special Rules**
 
@@ -550,7 +550,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Grand Master Voldus: Infantry (Independent Character, Unique)
+- Grand Master Voldus: Infantry (Independent Character, Unique, Psyker)
 
 **Special Rules**
 
@@ -581,7 +581,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Kaldor Draigo: Infantry (Independent Character, Unique)
+- Kaldor Draigo: Infantry (Independent Character, Unique, Psyker)
 
 **Special Rules**
 
@@ -616,7 +616,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Brotherhood Apothecary: Infantry (Independent Character)
+- Brotherhood Apothecary: Infantry (Independent Character, Psyker)
 
 **Special Rules**
 
@@ -646,7 +646,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Paladin Ancient: Infantry (Independent Character)
+- Paladin Ancient: Infantry (Independent Character, Psyker)
 
 **Special Rules**
 
@@ -676,7 +676,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Paladin: Infantry
+- Paladin: Infantry (Psyker)
 
 **Special Rules**
 
@@ -726,8 +726,8 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Purifier: Infantry
-- Knight of the Flame: Infantry (Character)
+- Purifier: Infantry (Psyker)
+- Knight of the Flame: Infantry (Character, Psyker)
 
 **Special Rules**
 
@@ -814,8 +814,8 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 
 **Unit Type**
 
-- Terminator: Infantry (Line)
-- Justicar: Infantry (Character, Line)
+- Terminator: Infantry (Line, Psyker)
+- Justicar: Infantry (Character, Line, Psyker)
 
 **Special Rules**
 
@@ -863,8 +863,8 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 
 **Unit Type**
 
-- Grey Knight: Infantry (Line)
-- Justicar: Infantry (Character, Line)
+- Grey Knight: Infantry (Line, Psyker)
+- Justicar: Infantry (Character, Line, Psyker)
 
 **Special Rules**
 
@@ -917,8 +917,8 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 
 **Unit Type**
 
-- Interceptor: Infantry
-- Interceptor Justicar: Infantry (Character)
+- Interceptor: Infantry (Psyker)
+- Interceptor Justicar: Infantry (Character, Psyker)
 
 **Special Rules**
 
@@ -982,6 +982,8 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Twin lascannon\* or twin multi-melta\* | +0 points |
 | **The Stormraven may exchange its twin heavy bolter for:** |  |
 | – Typhoon missile launcher | +10 points |
+| – Heavy psycannon | +15 points |
+| – Gatling psilencer | +10 points |
 | **The Stormraven may take:** |  |
 | – Two hurricane bolter sponsons | +20 points |
 
@@ -1081,7 +1083,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 
 **Unit Type**
 
-- Nemesis Dreadknight: Infantry (Mechanised)
+- Nemesis Dreadknight: Armiger (Psyker)
 
 **Special Rules**
 
@@ -1127,8 +1129,8 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 
 **Unit Type**
 
-- Purgator: Infantry
-- Purgator Justicar: Infantry (Character)
+- Purgator: Infantry (Psyker)
+- Purgator Justicar: Infantry (Character, Psyker)
 
 **Special Rules**
 

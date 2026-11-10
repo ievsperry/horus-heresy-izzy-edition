@@ -114,7 +114,11 @@ TYPE_CATEGORIES = {
     "Super-heavy": ("7381-1130-ca6e-1806", "Super-heavy Sub-type"),
     "Mechanised": ("e929-a5c3-451c-6f19", "Mechanised Unit Sub-type"),
     "Artillery": ("6f99-c178-6f9d-fb63", "Artillery Sub-type"),
+    "Armiger": ("41ff-7fc9-d4a0-da2", "Armiger Unit Type"),
 }
+# Categories that live in a library catalogue rather than the game system: category id -> (catalogue id, name).
+# A catalogue that uses one links that library.
+LIBRARY_CATEGORIES = {"41ff-7fc9-d4a0-da2": ("3129-da35-55e0-642d", "Mech Library")}
 
 GST_FILE = "2022 - Horus Heresy.gst"
 
@@ -4800,6 +4804,11 @@ class Builder:
         if len(self.shared_groups):
             self.root.append(self.shared_groups)
         self.root.append(self.shared_rules)
+        used = {c.get("targetId") for c in self.root.iter("categoryLink")}
+        for cid, (lib, lname) in sorted(LIBRARY_CATEGORIES.items()):
+            if cid in used:  # "Armiger Unit Type" is the Mech Library's
+                el(child(self.root, "catalogueLinks"), "catalogueLink", type="catalogue", name=lname,
+                   id=make_id("library", self.faction, lname), targetId=lib, importRootEntries=False)
         sort_children(self.root)
         return self.root
 
