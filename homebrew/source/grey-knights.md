@@ -38,6 +38,10 @@ Every Grey Knights unit in this document has **Brotherhood (X)**, **Aegis**, **D
 
 **Teleport Strike.** Grey Knights in Aegis Terminator armour, Strike Squads and Interceptor Squads have Deep Strike, and do not scatter if any friendly Grey Knights unit is within 6" of the target point†.
 
+**Apothecarion Detachment.** A Brotherhood Apothecary unit is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed, every model in it must be assigned to another unit from the same Detachment. Brotherhood Apothecaries wear Aegis Terminator armour, so a Brotherhood Apothecary may only be assigned to a unit composed entirely of Infantry models in Aegis Terminator armour with the same Brotherhood (X) special rule as the Apothecary. No Brotherhood Apothecary may be assigned to a unit that includes one or more models with the Independent Character special rule or the Unique Sub-type (but such models may join a unit that includes a Brotherhood Apothecary as normal during deployment or any following turn). No more than one Brotherhood Apothecary may be assigned to any given unit. Once assigned, the Apothecary is part of that unit and may not leave it under any circumstances; if that unit is removed as a casualty, the Apothecary is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Brotherhood Apothecary as a casualty. When assigned to a unit, a Brotherhood Apothecary gains all of the special rules (except those that specifically forbid it) and Unit Sub-types listed for that unit, but does not gain access to any additional Wargear options available to it.
+
+**Techmarine Covenant.** A Brotherhood Techmarine unit is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed, every model in it must be assigned to another unit from the same Detachment. A Brotherhood Techmarine may only be assigned to a unit composed entirely of models with the Infantry Unit Type and the same Brotherhood (X) special rule as the Techmarine, and may not join a unit with Terminator armour of any kind. No Brotherhood Techmarine may be assigned to a unit that includes one or more models with the Independent Character special rule or the Unique Sub-type (but such models may join a unit that includes a Brotherhood Techmarine as normal during deployment or any following turn). No more than one Brotherhood Techmarine may be assigned to any given unit. Once assigned, the Techmarine is part of that unit and may not leave it under any circumstances; if that unit is removed as a casualty, the Techmarine is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Brotherhood Techmarine as a casualty. When assigned to a unit, a Brotherhood Techmarine gains all of the special rules (except those that specifically forbid it) and Unit Sub-types listed for that unit, but does not gain access to any additional Wargear options available to it.
+
 ## Psychic Discipline: Sanctic
 
 Every Grey Knights unit knows Hammerhand and Purge Soul. Librarians, Grand Masters and named characters know more, as their datasheets state.
@@ -388,7 +392,7 @@ A Grey Knights army may take one Rite of War:
 | – Nemesis force sword or nemesis force halberd | +0 points |
 | – Daemon hammer | +5 points |
 
-### Brotherhood Techmarine — 85 pts
+### 0-1 Brotherhood Techmarine — 85 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -407,7 +411,7 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Brotherhood Techmarine: Infantry (Independent Character, Psyker)
+- Brotherhood Techmarine: Infantry (Character, Psyker)
 
 **Special Rules**
 
@@ -417,6 +421,14 @@ A Grey Knights army may take one Rite of War:
 - Brotherhood of Psykers
 - Daemon Hunters
 - Rite of Warding: one friendly vehicle within 6" gains a 6+ Invulnerable Save
+- Techmarine Covenant
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The unit may take:** |  |
+| – Up to 3 additional Brotherhood Techmarines | +85 points each |
 
 ### Castellan Crowe — 130 pts
 
@@ -597,7 +609,7 @@ A Grey Knights army may take one Rite of War:
 
 ## Elites
 
-### Brotherhood Apothecary — 90 pts
+### 0-1 Brotherhood Apothecary — 90 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -616,16 +628,24 @@ A Grey Knights army may take one Rite of War:
 
 **Unit Type**
 
-- Brotherhood Apothecary: Infantry (Independent Character, Psyker)
+- Brotherhood Apothecary: Infantry (Character, Psyker)
 
 **Special Rules**
 
 - Aegis
+- Apothecarion Detachment
 - Brotherhood (X)
 - Brotherhood of Psykers
 - Daemon Hunters
-- Narthecium: the unit he joins has Feel No Pain (5+)
+- Narthecium: the unit he is assigned to has Feel No Pain (5+)
 - Teleport Strike
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The unit may take:** |  |
+| – Up to 3 additional Brotherhood Apothecaries | +90 points each |
 
 ### Paladin Ancient — 95 pts
 

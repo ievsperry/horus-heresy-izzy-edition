@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -319,6 +319,9 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Brotherhood Techmarine" hidden="false" id="246f-0403-903b-a38a" type="selectionEntry" targetId="9284-11a3-8aa8-e888">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fd74-ab29-d7ff-8c05" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="ea76-9f93-331d-c3f7" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="3eff-6491-4bf8-ee96" primary="false" name="Compulsory HQ:" />
@@ -361,6 +364,9 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Brotherhood Apothecary" hidden="false" id="5511-31eb-bc40-20ff" type="selectionEntry" targetId="e3b8-2f2f-3f71-7cfd">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b1dc-a397-46f6-d9e9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="4d4b-c27d-8b7c-c780" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="fdac-a334-63aa-1b87" primary="false" name="Unit:" />
@@ -1989,6 +1995,7 @@
         <infoLink name="Brotherhood (X)" id="b6de-f4d6-0ce7-01e0" hidden="false" targetId="4749-6b7c-76d3-27ab" type="rule" />
         <infoLink name="Brotherhood of Psykers" id="c782-b3b6-939f-f069" hidden="false" targetId="9a82-d3a3-4eaf-9404" type="rule" />
         <infoLink name="Daemon Hunters" id="a078-c016-85dd-8cfc" hidden="false" targetId="5d79-0af6-07b2-be70" type="rule" />
+        <infoLink name="Techmarine Covenant" id="a5f3-fb2e-c7b6-50c1" hidden="false" targetId="0eae-0080-c466-8f38" type="rule" />
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="eab2-7fb4-9c88-ba9d" primary="false" name="Unit:" />
@@ -1997,12 +2004,12 @@
         <selectionEntry type="model" import="true" name="Brotherhood Techmarine" hidden="false" id="93a9-679c-18c4-6ef7" publicationId="c336-0f01-71db-7a8f">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df20-1fbe-f9df-4f76" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fea-d4d8-e5b5-e838" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="1fea-d4d8-e5b5-e838" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
             <profile name="Brotherhood Techmarine" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="3da3-f795-09f1-034c" publicationId="c336-0f01-71db-7a8f">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Independent Character, Psyker)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Psyker)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -2018,7 +2025,7 @@
           </profiles>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="a00a-5c98-602c-02f2" primary="false" name="Infantry Unit Type" />
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="463a-222e-c877-61bd" primary="false" name="Independent Character" />
+            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="d023-688f-8ead-a01e" primary="false" name="Character" />
             <categoryLink targetId="6e0c-29ba-a445-8321" id="fecd-9dbf-057d-0fb3" primary="false" name="Psyker:" />
           </categoryLinks>
           <entryLinks>
@@ -2093,12 +2100,13 @@
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85" />
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups />
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85" />
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Castellan Crowe" hidden="false" id="f0e1-5026-b5cf-1ffa" publicationId="c336-0f01-71db-7a8f">
@@ -2857,11 +2865,12 @@
     <selectionEntry type="unit" import="true" name="Brotherhood Apothecary" hidden="false" id="e3b8-2f2f-3f71-7cfd" publicationId="c336-0f01-71db-7a8f">
       <rules>
         <rule name="Narthecium" id="e41a-6b25-a7ab-cc18" hidden="false">
-          <description>The unit he joins has Feel No Pain (5+)</description>
+          <description>The unit he is assigned to has Feel No Pain (5+)</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink name="Aegis" id="1928-a366-24a5-676e" hidden="false" targetId="41d3-9cb2-190d-0937" type="rule" />
+        <infoLink name="Apothecarion Detachment" id="ee51-5a68-e8ee-4f9a" hidden="false" targetId="f89b-5770-4109-0fa1" type="rule" />
         <infoLink name="Brotherhood (X)" id="1172-0345-a0ed-c743" hidden="false" targetId="4749-6b7c-76d3-27ab" type="rule" />
         <infoLink name="Brotherhood of Psykers" id="46ee-62bb-263b-2b7b" hidden="false" targetId="9a82-d3a3-4eaf-9404" type="rule" />
         <infoLink name="Daemon Hunters" id="e6bf-8d1d-6c4f-2e97" hidden="false" targetId="5d79-0af6-07b2-be70" type="rule" />
@@ -2874,12 +2883,12 @@
         <selectionEntry type="model" import="true" name="Brotherhood Apothecary" hidden="false" id="4587-9f70-ddab-83b0" publicationId="c336-0f01-71db-7a8f">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b13-0001-96d6-bb5c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de92-67f1-94dc-c932" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="de92-67f1-94dc-c932" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
             <profile name="Brotherhood Apothecary" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="bce3-df14-8aa2-b0b7" publicationId="c336-0f01-71db-7a8f">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Independent Character, Psyker)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Psyker)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -2895,7 +2904,7 @@
           </profiles>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="d2fe-a859-e6f2-f644" primary="false" name="Infantry Unit Type" />
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="b044-0c30-8589-799f" primary="false" name="Independent Character" />
+            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="1f3b-3b9c-f1fc-7934" primary="false" name="Character" />
             <categoryLink targetId="6e0c-29ba-a445-8321" id="e835-171e-2357-bfdb" primary="false" name="Psyker:" />
           </categoryLinks>
           <entryLinks>
@@ -2925,12 +2934,13 @@
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="90" />
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups />
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="90" />
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Paladin Ancient" hidden="false" id="23e9-e127-3091-e7a7" publicationId="c336-0f01-71db-7a8f">
@@ -5320,6 +5330,12 @@
     </rule>
     <rule name="Teleport Strike" id="df3e-b9ef-b7f6-8dc6" hidden="false" publicationId="c336-0f01-71db-7a8f">
       <description>Grey Knights in Aegis Terminator armour, Strike Squads and Interceptor Squads have Deep Strike, and do not scatter if any friendly Grey Knights unit is within 6" of the target point†.</description>
+    </rule>
+    <rule name="Apothecarion Detachment" id="f89b-5770-4109-0fa1" hidden="false" publicationId="c336-0f01-71db-7a8f">
+      <description>A Brotherhood Apothecary unit is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed, every model in it must be assigned to another unit from the same Detachment. Brotherhood Apothecaries wear Aegis Terminator armour, so a Brotherhood Apothecary may only be assigned to a unit composed entirely of Infantry models in Aegis Terminator armour with the same Brotherhood (X) special rule as the Apothecary. No Brotherhood Apothecary may be assigned to a unit that includes one or more models with the Independent Character special rule or the Unique Sub-type (but such models may join a unit that includes a Brotherhood Apothecary as normal during deployment or any following turn). No more than one Brotherhood Apothecary may be assigned to any given unit. Once assigned, the Apothecary is part of that unit and may not leave it under any circumstances; if that unit is removed as a casualty, the Apothecary is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Brotherhood Apothecary as a casualty. When assigned to a unit, a Brotherhood Apothecary gains all of the special rules (except those that specifically forbid it) and Unit Sub-types listed for that unit, but does not gain access to any additional Wargear options available to it.</description>
+    </rule>
+    <rule name="Techmarine Covenant" id="0eae-0080-c466-8f38" hidden="false" publicationId="c336-0f01-71db-7a8f">
+      <description>A Brotherhood Techmarine unit is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed, every model in it must be assigned to another unit from the same Detachment. A Brotherhood Techmarine may only be assigned to a unit composed entirely of models with the Infantry Unit Type and the same Brotherhood (X) special rule as the Techmarine, and may not join a unit with Terminator armour of any kind. No Brotherhood Techmarine may be assigned to a unit that includes one or more models with the Independent Character special rule or the Unique Sub-type (but such models may join a unit that includes a Brotherhood Techmarine as normal during deployment or any following turn). No more than one Brotherhood Techmarine may be assigned to any given unit. Once assigned, the Techmarine is part of that unit and may not leave it under any circumstances; if that unit is removed as a casualty, the Techmarine is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Brotherhood Techmarine as a casualty. When assigned to a unit, a Brotherhood Techmarine gains all of the special rules (except those that specifically forbid it) and Unit Sub-types listed for that unit, but does not gain access to any additional Wargear options available to it.</description>
     </rule>
     <rule name="Brotherhood (X)" id="4749-6b7c-76d3-27ab" hidden="false" publicationId="c336-0f01-71db-7a8f">
       <description>When building an army, choose one Brotherhood for each detachment. Every unit in that detachment gains Brotherhood (X). Kaldor Draigo and Castellan Crowe may join any Brotherhood; Brother-Captain Stern only the 3rd Brotherhood; Grand Master Voldus only the 3rd Brotherhood. Each Brotherhood's Advanced Reaction is available in addition to Psychic Ward and costs one point of the Reaction Allotment†.</description>

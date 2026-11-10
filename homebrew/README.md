@@ -124,6 +124,11 @@ loading. The script prints anything in the doc it could not place.
   the Nemesis Dreadknight and the Grand Master in one are Armigers (the Mech Library's Armiger Unit Type, which the
   catalogue links that library for), and the Stormraven may swap its twin heavy bolter (the Gravis Bolt Cannon) for
   a heavy psycannon (+15) or gatling psilencer (+10).
+  The Brotherhood Techmarine and Brotherhood Apothecary are 0-1 per detachment ("### 0-1 ..." in the doc), each may
+  take up to 3 more models at the same cost, and they are Characters rather than Independent Characters: the
+  Techmarine Covenant and Apothecarion Detachment rules (Grey Knights versions of the Legion ones, keyed on
+  Brotherhood (X), with no bike clauses, and the Apothecary going only to Aegis Terminator units) assign each model
+  to a unit before deployment.
 - Wargear grouped under a heading ("### Armour" holding "#### Kabalite Armour") is read item by item.
   "Scourge wings (count as a jump pack)" is the official jump pack under the doc's name. "May exchange
   any dark lance" lets each of the three be swapped; "one macro-scalpel" only one of the two.
