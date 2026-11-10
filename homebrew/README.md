@@ -20,6 +20,7 @@ python3 homebrew/build_catalogue.py homebrew/source/asuryani.md "Homebrew - Aeld
 python3 homebrew/build_catalogue.py homebrew/source/anhrathe.md "Homebrew - Aeldari (Anhrathe).cat"
 python3 homebrew/build_catalogue.py homebrew/source/rillietann.md "Homebrew - Aeldari (Rillietann).cat"
 python3 homebrew/build_catalogue.py homebrew/source/traders-militant.md "Homebrew - Traders Militant.cat"
+python3 homebrew/build_catalogue.py homebrew/source/grey-knights.md "Homebrew - Grey Knights.cat"
 ```
 
 Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
@@ -104,6 +105,15 @@ loading. The script prints anything in the doc it could not place.
   a boltgun the bolter, a force stave the force staff), and a weapon's mount is not part of its name
   ("Hull (Front) Mounted heavy bolter" is the official heavy bolter). Wargear marked "(Sergeant only)"
   replaces that model's weapons, and "Flamer, grenade launcher or sniper rifle" is one pick of three.
+
+- Grey Knights are not Xenos either: like the Astra Militarum, the army may be Loyalist or Traitor. Each
+  detachment picks one Brotherhood (1st to 8th), which gives its units Brotherhood (X) with that Brotherhood's
+  rules, Advanced Reaction and Warlord Trait. Wargear the doc marks with an asterisk ("Storm bolter\*") keeps its
+  official 2.0 rules, and the 40k names map to the 2.0 weapons: an assault cannon is the Kheres assault cannon,
+  a twin assault cannon the twin-linked Kheres assault cannon, a twin heavy bolter, lascannon or multi-melta the
+  twin-linked one, and frag assault launchers the official frag launchers. Dreadnoughts, the Land Raider
+  Proteus and Phobos, Rhinos and Razorbacks come from the official lists. Servitors and the vehicles have
+  Brotherhood (X) only, as the doc says.
 - Wargear grouped under a heading ("### Armour" holding "#### Kabalite Armour") is read item by item.
   "Scourge wings (count as a jump pack)" is the official jump pack under the doc's name. "May exchange
   any dark lance" lets each of the three be swapped; "one macro-scalpel" only one of the two.

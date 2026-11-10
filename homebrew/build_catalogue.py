@@ -176,7 +176,11 @@ MODE = r"(.+?) \(([a-z][^)]*|Ranged|Melee|Shooting)\)"
 
 # 40k names for weapons 2.0 has under another name
 OFFICIAL_ALIASES = {"storm bolter": "combi-bolter", "boltgun": "bolter", "force stave": "force staff",
-                    "psyk-out grenades": "psyk-out granades"}
+                    "psyk-out grenades": "psyk-out granades",
+                    # 40k names for the 2.0 weapons (Grey Knights)
+                    "assault cannon": "kheres assault cannon", "twin assault cannon": "twin-linked kheres assault cannon",
+                    "twin heavy bolter": "twin-linked heavy bolter", "twin lascannon": "twin-linked lascannon",
+                    "twin multi-melta": "twin-linked multi-melta", "frag assault launchers": "frag launchers"}
 
 
 def load_official_items(root=None):
@@ -2860,6 +2864,7 @@ class Builder:
         if not hasattr(self, "official_items"):
             self.official_items, self.official_rules = load_official_items()
         name = re.sub(MOUNT, "", name, flags=re.I)  # "Centreline Mounted Enhanced Arachnus Blaze Cannon"
+        name = OFFICIAL_ALIASES.get(norm(name), name)  # "Twin assault cannon": the official 2.0 weapon
         tl = re.match(r"twin[- ]linked (.+)", name, re.I)
         if tl:  # "Twin-Linked Spiculus Bolt Launcher": the official weapon with Twin-linked
             return self.official_twin_linked(tl.group(1))
@@ -5020,6 +5025,8 @@ def sort_children(node):
 def main():
     src, out = sys.argv[1], sys.argv[2]
     text = open(src, encoding="utf-8").read()
+    # "Storm bolter\*": an asterisk marks wargear that keeps its official 2.0 rules; the name is the same
+    text = re.sub(r"(?<=\w)\\\*", "", text)
     first = next(l for l in text.splitlines() if l.startswith("# "))[2:].strip()
     faction = re.sub(r" (?:for )?(?:The )?Horus Heresy.*", "", first)  # "Traders Militant Horus Heresy 2.0 - ..."
     doc_name = first if "Homebrew" in first else first + " — Homebrew Conversion"
