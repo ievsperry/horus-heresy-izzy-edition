@@ -261,9 +261,9 @@ _The Cryptek of the 7th edition Codex, a technomage able to carry any of the arc
 | **The Cryptek may take one of:** |  |
 | – Chronometron (the Cryptek's unit has a 5+ Invulnerable Save) | +15 points |
 | – Veil of darkness (once per game, the unit may teleport as Deep Strike) | +25 points |
-| – Canoptek cloak (Infantry (Mechanised); M10; Battlesmith (5+)†) | +20 points |
-| – Solar staff (Template, S4, AP 5, Assault 1, Blind) | +10 points |
-| – Tremorstave (24", S4, AP –, Assault 1, Blast (3"), Concussive (1)) | +10 points |
+| – Canoptek cloak | +20 points |
+| – Solar staff | +10 points |
+| – Tremorstave | +10 points |
 
 ### Destroyer Lord — 125 pts
 
@@ -631,7 +631,7 @@ _The Lokhust Lord of 9th edition is the same model, and uses this datasheet._
 | Option | Cost |
 |---|---|
 | **The Technomancer may take:** |  |
-| – Canoptek cloak (Infantry (Mechanised); M10) | +20 points |
+| – Canoptek cloak | +20 points |
 
 ### Trazyn the Infinite — 130 pts
 
@@ -1868,10 +1868,12 @@ _The arcane weapons of the Crypteks and the Necron nobility._
 | Gauntlet of fire | Template | 4 | 5 | Assault 1, Shred |
 | Plasmic lance | 18" | 7 | 3 | Assault 3 |
 | Rod of covenant | 12" | 5 | 2 | Assault 1, Rending (6+) |
+| Solar staff | Template | 4 | 5 | Assault 1, Blind |
 | Staff of light | 12" | 5 | 3 | Assault 3 |
 | Staff of Stars | 24" | 6 | 2 | Assault 3, Rending (6+) |
 | Staff of the Destroyer | 18" | 6 | 1 | Assault 3, Rending (5+) |
 | Tachyon arrow | 120" | 10 | 1 | Assault 1, One Use, Rending (5+), Armourbane (Ranged) |
+| Tremorstave | 24" | 4 | – | Assault 1, Blast (3"), Concussive (1) |
 
 #### Doomsday and Death Weapons
 

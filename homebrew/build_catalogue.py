@@ -26,7 +26,7 @@ GAME_SYSTEM_REVISION = "130"  # the first revision with the Xenos allegiance
 # Factions that take the Xenos allegiance. Their army selection carries the Xenos Army
 # category, which makes the game system require Xenos for that force, and every unit
 # links the Xenos rule.
-XENOS_FACTIONS = {"Tyranids", "Orks", "Necrons", "T'au Empire", "Drukhari", "Asuryani", "Anhrathe", "Rillietann", "Leagues of Votann"}
+XENOS_FACTIONS = {"Tyranids", "Orks", "Necrons", "T'au Empire", "Drukhari", "Asuryani", "Anhrathe", "Rillietann"}
 XENOS_ARMY_CATEGORY = ("3c8e-5a1d-9b47-e2f0", "Xenos Army")
 PTS = "d2ee-04cb-5f8a-2642"
 ALLIED_DETACHMENT = "d4f2-6da5-b6de-06ec"

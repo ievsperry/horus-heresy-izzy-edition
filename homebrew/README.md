@@ -70,8 +70,7 @@ loading. The script prints anything in the doc it could not place.
 - Weapons and psychic powers from the doc's armoury, linked to the core rules
   in `2022 - Horus Heresy.gst` wherever a rule of the same name exists.
 
-- Xenos factions (Tyranids, Orks, Necrons, T'au Empire, Drukhari, Asuryani, Anhrathe, Rillietann,
-  Leagues of Votann) take the Xenos allegiance added to `2022 - Horus Heresy.gst`: their army
+- Xenos factions (Tyranids, Orks, Necrons, T'au Empire, Drukhari, Asuryani, Anhrathe, Rillietann) take the Xenos allegiance added to `2022 - Horus Heresy.gst`: their army
   selection makes Xenos required for the force, and every unit has the Xenos rule.
 
 - Vehicles, Dreadnoughts, Knights and Titans get the game system's Vehicle or Knights
@@ -120,7 +119,8 @@ loading. The script prints anything in the doc it could not place.
   Purgation and Purifier Squads, Nemesis Dreadknight); the official Dreadnoughts know Purge Soul and Sanctuary.
 - A Warlord Traits section may list its generic traits as "### Name" sub-sections, "#### Name" headings (T'au) or
   "- **Name:** text" bullets (Grey Knights); a leading flavour line is left out of the trait's text.
-- Leagues of Votann take the Xenos allegiance. Each detachment picks a League, and a character's own weapon
+- Leagues of Votann may be Loyalist, Traitor or Xenos: the army does not force an allegiance and its units do
+  not have the Xenos rule. Each detachment picks a League, and a character's own weapon
   profiled in its datasheet (the Arkanyst Evaluator's transmatter inverter, Berehk Stornbröw's Kromlôk's Revenge)
   is built like an armoury weapon. The Grimnyr's ancestral ward stave is the official Force Staff.
 - Grey Knights are not Xenos either: like the Astra Militarum, the army may be Loyalist or Traitor. Each
