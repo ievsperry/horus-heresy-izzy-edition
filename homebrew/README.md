@@ -20,6 +20,7 @@ python3 homebrew/build_catalogue.py homebrew/source/asuryani.md "Homebrew - Aeld
 python3 homebrew/build_catalogue.py homebrew/source/anhrathe.md "Homebrew - Aeldari (Anhrathe).cat"
 python3 homebrew/build_catalogue.py homebrew/source/rillietann.md "Homebrew - Aeldari (Rillietann).cat"
 python3 homebrew/build_catalogue.py homebrew/source/traders-militant.md "Homebrew - Traders Militant.cat"
+python3 homebrew/build_catalogue.py homebrew/source/grey-knights.md "Homebrew - Grey Knights.cat"
 ```
 
 Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
@@ -104,6 +105,30 @@ loading. The script prints anything in the doc it could not place.
   a boltgun the bolter, a force stave the force staff), and a weapon's mount is not part of its name
   ("Hull (Front) Mounted heavy bolter" is the official heavy bolter). Wargear marked "(Sergeant only)"
   replaces that model's weapons, and "Flamer, grenade launcher or sniper rifle" is one pick of three.
+
+- Grey Knights are not Xenos either: like the Astra Militarum, the army may be Loyalist or Traitor. Each
+  detachment picks one Brotherhood (1st to 8th), which gives its units Brotherhood (X) with that Brotherhood's
+  rules, Advanced Reaction and Warlord Trait. Wargear the doc marks with an asterisk ("Storm bolter\*") keeps its
+  official 2.0 rules, and the 40k names map to the 2.0 weapons: an assault cannon is the Kheres assault cannon,
+  a twin assault cannon the twin-linked Kheres assault cannon, and frag assault launchers the official frag
+  launchers. Twin heavy bolters, lascannons and multi-meltas are only on vehicles and Dreadnoughts, so they are the
+  Gravis Bolt Cannon, Gravis Lascannon and Gravis Melta Cannon (in any homebrew list: the Astra Militarum
+  Vendetta's twin lascannons are Gravis Lascannons too). Dreadnoughts, the Land Raider
+  Proteus and Phobos, Rhinos and Razorbacks come from the official lists: `homebrew/grey_knights_official.py`
+  (run by the builder for Grey Knights) links the Legions Astartes library's Castra Ferrum and Contemptor
+  Dreadnought Talons and Land Raider Proteus Carrier and Phobos Squadrons as Heavy Support, and its Rhino Transport
+  as the Dedicated Transport of the Purifier, Strike and Purgation Squads (2.0 has no Razorback). Dreadnoughts gain
+  the Psyker sub-type, Brotherhood of Psykers, Daemon Hunters, Brotherhood (X) and Aegis for +25 points each; Land
+  Raiders and the Rhino gain Brotherhood (X) and Aegis for +10 points per Land Raider and +5 per Rhino. Servitors and the vehicles have
+  Brotherhood (X) only, as the doc says. Every Grey Knight has the Psyker sub-type (Servitors and vehicles do not),
+  the Nemesis Dreadknight and the Grand Master in one are Armigers (the Mech Library's Armiger Unit Type, which the
+  catalogue links that library for), and the Stormraven may swap its twin heavy bolter (the Gravis Bolt Cannon) for
+  a heavy psycannon (+15) or gatling psilencer (+10).
+  The Brotherhood Techmarine and Brotherhood Apothecary are 0-1 per detachment ("### 0-1 ..." in the doc), each may
+  take up to 3 more models at the same cost, and they are Characters rather than Independent Characters: the
+  Techmarine Covenant and Apothecarion Detachment rules (Grey Knights versions of the Legion ones, keyed on
+  Brotherhood (X), with no bike clauses, and the Apothecary going only to Aegis Terminator units) assign each model
+  to a unit before deployment.
 - Wargear grouped under a heading ("### Armour" holding "#### Kabalite Armour") is read item by item.
   "Scourge wings (count as a jump pack)" is the official jump pack under the doc's name. "May exchange
   any dark lance" lets each of the three be swapped; "one macro-scalpel" only one of the two.

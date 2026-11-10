@@ -31,7 +31,7 @@ XENOS_ARMY_CATEGORY = ("3c8e-5a1d-9b47-e2f0", "Xenos Army")
 PTS = "d2ee-04cb-5f8a-2642"
 ALLIED_DETACHMENT = "d4f2-6da5-b6de-06ec"
 # Army-building limits a list's rules set that the doc's wording alone cannot carry: faction -> module in homebrew/
-FACTION_LIMITS = {"Traders Militant": "traders_militant_limits"}
+FACTION_LIMITS = {"Traders Militant": "traders_militant_limits", "Grey Knights": "grey_knights_official"}
 
 UNIT_PROFILE = "4bb2-cb95-e6c8-5a21"
 # the characteristics of a unit profile, in the order of its stats
@@ -114,7 +114,11 @@ TYPE_CATEGORIES = {
     "Super-heavy": ("7381-1130-ca6e-1806", "Super-heavy Sub-type"),
     "Mechanised": ("e929-a5c3-451c-6f19", "Mechanised Unit Sub-type"),
     "Artillery": ("6f99-c178-6f9d-fb63", "Artillery Sub-type"),
+    "Armiger": ("41ff-7fc9-d4a0-da2", "Armiger Unit Type"),
 }
+# Categories that live in a library catalogue rather than the game system: category id -> (catalogue id, name).
+# A catalogue that uses one links that library.
+LIBRARY_CATEGORIES = {"41ff-7fc9-d4a0-da2": ("3129-da35-55e0-642d", "Mech Library")}
 
 GST_FILE = "2022 - Horus Heresy.gst"
 
@@ -176,7 +180,13 @@ MODE = r"(.+?) \(([a-z][^)]*|Ranged|Melee|Shooting)\)"
 
 # 40k names for weapons 2.0 has under another name
 OFFICIAL_ALIASES = {"storm bolter": "combi-bolter", "boltgun": "bolter", "force stave": "force staff",
-                    "psyk-out grenades": "psyk-out granades"}
+                    "psyk-out grenades": "psyk-out granades",
+                    # 40k names for the 2.0 weapons (Grey Knights). A twin heavy bolter, lascannon or multi-melta
+                    # is only ever on a vehicle or Dreadnought, where 2.0 has the Gravis weapon (the Gravis Bolt
+                    # Cannon is its gravis heavy bolter)
+                    "assault cannon": "kheres assault cannon", "twin assault cannon": "twin-linked kheres assault cannon",
+                    "twin heavy bolter": "gravis bolt cannon", "twin lascannon": "gravis lascannon",
+                    "twin multi-melta": "gravis melta cannon", "frag assault launchers": "frag launchers"}
 
 
 def load_official_items(root=None):
@@ -2781,6 +2791,9 @@ class Builder:
         for cand in [t] + [t.replace(" tail", "")] + list(singular(t)):
             if cand in self.weapons:
                 return self.weapons[cand], n
+        for cand in [t] + list(singular(t)):  # "Twin lascannon": the 40k name for the 2.0 Gravis Lascannon
+            if cand in OFFICIAL_ALIASES and OFFICIAL_ALIASES[cand] in self.gst_weapons:
+                return self.gst_weapons[OFFICIAL_ALIASES[cand]], n
         if t.startswith(("twin ", "twin-linked ")):
             wid, _ = self.find_weapon(t.split(" ", 1)[1])
             if wid:
@@ -2860,6 +2873,7 @@ class Builder:
         if not hasattr(self, "official_items"):
             self.official_items, self.official_rules = load_official_items()
         name = re.sub(MOUNT, "", name, flags=re.I)  # "Centreline Mounted Enhanced Arachnus Blaze Cannon"
+        name = OFFICIAL_ALIASES.get(norm(name), name)  # "Twin assault cannon": the official 2.0 weapon
         tl = re.match(r"twin[- ]linked (.+)", name, re.I)
         if tl:  # "Twin-Linked Spiculus Bolt Launcher": the official weapon with Twin-linked
             return self.official_twin_linked(tl.group(1))
@@ -4790,6 +4804,11 @@ class Builder:
         if len(self.shared_groups):
             self.root.append(self.shared_groups)
         self.root.append(self.shared_rules)
+        used = {c.get("targetId") for c in self.root.iter("categoryLink")}
+        for cid, (lib, lname) in sorted(LIBRARY_CATEGORIES.items()):
+            if cid in used:  # "Armiger Unit Type" is the Mech Library's
+                el(child(self.root, "catalogueLinks"), "catalogueLink", type="catalogue", name=lname,
+                   id=make_id("library", self.faction, lname), targetId=lib, importRootEntries=False)
         sort_children(self.root)
         return self.root
 
@@ -5020,6 +5039,8 @@ def sort_children(node):
 def main():
     src, out = sys.argv[1], sys.argv[2]
     text = open(src, encoding="utf-8").read()
+    # "Storm bolter\*": an asterisk marks wargear that keeps its official 2.0 rules; the name is the same
+    text = re.sub(r"(?<=\w)\\\*", "", text)
     first = next(l for l in text.splitlines() if l.startswith("# "))[2:].strip()
     faction = re.sub(r" (?:for )?(?:The )?Horus Heresy.*", "", first)  # "Traders Militant Horus Heresy 2.0 - ..."
     doc_name = first if "Homebrew" in first else first + " — Homebrew Conversion"
