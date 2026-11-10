@@ -3923,6 +3923,10 @@ _'Eavy Armour consists of thick reinforced plating, oversized shoulder guards an
 
 'Eavy armour grants a 4+ Armour Save.
 
+### Extra Armour Plates
+
+The vehicle's Ramshackled Vehicle (X) improves by 1 (a Ramshackled Vehicle (5+) becomes 4+).
+
 ### Fetishes of Gork and Mork
 
 A model with fetishes of Gork and Mork has the Fetishes of Gork and Mork special rule.
@@ -4176,6 +4180,7 @@ All weapons listed here are counted as 'Dakka' weapons for those rules that affe
 | Rattler kannon | 24" | 6 | 6 | Heavy 2D6 |
 | Shoota | 24" | 4 | 6 | Assault 2 |
 | Slugga | 12" | 4 | – | Pistol 1 |
+| Snipa rifle | 36" | 4 | 5 | Heavy 1, Precision Shots (6+), Murderous Strike (6+), Breaching (6+) |
 | Snazzgun (flash burst) | 24" | 5 | 3 | Assault 2, Twin-linked, Gets Hot, Rending (4+) |
 | Snazzgun (kustom barrage) | 36" | 7 | 4 | Heavy 1, Large Blast (5"), Twin-linked, Pinning, Shell Shock (1), Rending (6+) |
 | Snazzgun (more dakka) | 24" | 6 | 4 | Assault 6, Twin-linked |

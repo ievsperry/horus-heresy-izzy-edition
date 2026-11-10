@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="41" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="42" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -1280,6 +1280,35 @@ The effect lasts until the end of the turn.</description>
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Snipa rifle" hidden="false" id="23fa-bfb5-1a1b-129f" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Snipa rifle" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a053-c287-3a5d-5707" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Precision Shots (6+), Murderous Strike (6+), Breaching (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Precision Shots (X)" id="3ab9-0276-a4b0-f97e" hidden="false" targetId="4b71-81ee-31f4-fa09" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Precision Shots (6+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Murderous Strike (X)" id="0671-f579-a373-1600" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Murderous Strike (6+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="daed-5933-1419-b6ae" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (6+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Snazzgun" hidden="false" id="5ff7-443a-7a40-f445" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -3376,6 +3405,15 @@ The effect lasts until the end of the turn.</description>
         <profile name="'Eavy Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7b5b-084d-d861-02b5">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">'Eavy armour grants a 4+ Armour Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Extra Armour Plates" hidden="false" id="a6cb-c99b-f45c-912a" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Extra Armour Plates" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6e47-2262-3ec7-e280">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The vehicle's Ramshackled Vehicle (X) improves by 1 (a Ramshackled Vehicle (5+) becomes 4+).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -14180,9 +14218,9 @@ The effect lasts until the end of the turn.</description>
         </selectionEntryGroup>
         <selectionEntryGroup name="Kommando: Options" hidden="false" id="5752-e913-e29c-d5d8">
           <entryLinks>
-            <entryLink import="true" name="Snipa rifle" hidden="false" id="2f19-1202-de06-5402" type="selectionEntry" targetId="ef1f-aac8-14d7-6290">
+            <entryLink import="true" name="Snipa rifle" hidden="false" id="efae-60cb-9a3b-ebcf" type="selectionEntry" targetId="23fa-bfb5-1a1b-129f">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81da-b449-b726-c62c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2f0-6cfa-5227-9721" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -14215,7 +14253,6 @@ The effect lasts until the end of the turn.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="21" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Snipa rifle" hidden="false" id="ef1f-aac8-14d7-6290" publicationId="96d0-c462-d158-fbad" />
     <selectionEntry type="unit" import="true" name="Kustom Boosta-blasta" hidden="false" id="93dc-35cf-a53a-a555" publicationId="96d0-c462-d158-fbad">
       <infoLinks>
         <infoLink name="Xenos" id="2050-1a66-25e0-f7f8" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
@@ -18186,7 +18223,7 @@ The effect lasts until the end of the turn.</description>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Extra armour plates" hidden="false" id="ec2b-9965-9830-dbc0" type="selectionEntry" targetId="b6a4-4a2e-f0a4-46de">
+                <entryLink import="true" name="Extra Armour Plates" hidden="false" id="ec2b-9965-9830-dbc0" type="selectionEntry" targetId="a6cb-c99b-f45c-912a">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e6a-a5b0-dcec-d287" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -18234,7 +18271,6 @@ The effect lasts until the end of the turn.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="775" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Extra armour plates" hidden="false" id="b6a4-4a2e-f0a4-46de" publicationId="96d0-c462-d158-fbad" />
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Warlord Traits" hidden="false" id="28b2-da56-af1f-f4c8">
