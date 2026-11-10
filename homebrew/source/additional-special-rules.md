@@ -1389,6 +1389,16 @@ _Unlike the more precise and controlled reactor cores of Legiones Astartes Dread
 
 Whenever a model with this Special Rule rolls a dice to determine an explosion radius, add +3" to the result rolled.
 
+## The Shattered Veil
+
+_A warp tear or psychic ritual keeps the Daemons anchored to reality._
+
+House rule: Any Traitor army may include a Daemons of the Ruinstorm Allied Detachment. It follows the standard rules for an Allied Detachment, with these changes:
+• Force Organisation: the Compulsory HQ must be a Ruinstorm Daemon Hierarch or Ruinstorm Daemon Harbinger (a Daemon Sovereign may not be taken), and the Compulsory Troops must be Ruinstorm Lesser Daemons. The detachment may also take up to 1 Elites (Ruinstorm Daemon Brutes or Beasts), 1 more Troops (Lesser Daemons or Daemon Swarms) and 1 Fast Attack (Ruinstorm Daemon Harriers or Cavalry). It has no Heavy Support or Lords of War choices.
+• Anchor Requirement: the detachment cannot be deployed on the battlefield at the start of the game; its units must start in Reserves (or Deep Strike Reserves, if they have Deep Strike). While no friendly model with the Psyker Sub-type from the primary detachment is alive on the battlefield, Reserve rolls for the detachment's units suffer a -2 penalty.
+• Distrusted Allies: the detachment treats every unit of the primary army as a Distrusted Ally. Its units cannot be affected by psychic powers or Warlord Traits from the primary army, and their destruction never causes friendly units to take Morale checks.
+• Veil Degradation: Ruinstorm rules that count down from the start of the game, such as the Unstable Veil, begin in the first turn as normal, whether or not the detachment's units have arrived from Reserves.
+
 ## The Warmaster's Due
 
 _Mortal levies were spent without hesitation to shield the Warmaster's Astartes._
