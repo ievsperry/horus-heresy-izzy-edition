@@ -1279,7 +1279,7 @@ All weapons listed here are force weapons, and gain Murderous Strike (5+) agains
 | --- | --- | --- | --- | --- |
 | Daemon hammer | – | x2 | 2 | Melee, Unwieldy (3), Concussive (1), Rending (6+) |
 | Dreadfist | – | x2 | 2 | Melee, Brutal (2); +1 Attack if the Dreadknight has two |
-| Nemesis daemon greathammer | – | x2 | 1 | Melee, Unwieldy, Brutal (3), Rending (6+) |
+| Nemesis daemon greathammer | – | x2 | 1 | Melee, Unwieldy (3), Brutal (3), Rending (6+) |
 | Nemesis force halberd | – | +1 | 3 | Melee, Reach (1) |
 | Nemesis force sword | – | +1 | 3 | Melee, Breaching (6+) |
 | Nemesis greatsword | – | +2 | 2 | Melee, Rending (6+), Reach (1) |
