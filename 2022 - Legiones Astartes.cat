@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="228" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="229" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -74252,21 +74252,19 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
       </costs>
     </selectionEntry>
     <selectionEntry id="e1da-887a-8f23-733e" name="Combi-grav" publicationId="f7e8-0665-06af-803c" hidden="false" collective="false" import="true" type="upgrade">
-      <rules>
-        <rule id="275b-2176-4787-440e" name="Combi-grav" publicationId="f7e8-0665-06af-803c" hidden="false">
-          <description>No 2.0 profile; see the Legiones Inductii conversion.</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f369-3554-74e7-ed2b" name="Heavy chainaxe" publicationId="f7e8-0665-06af-803c" hidden="false" collective="false" import="true" type="upgrade">
-      <rules>
-        <rule id="3d1a-5425-f171-b95e" name="Heavy chainaxe" publicationId="f7e8-0665-06af-803c" hidden="false">
-          <description>No 2.0 profile; see the Legiones Inductii conversion.</description>
-        </rule>
-      </rules>
+      <infoLinks>
+        <infoLink id="fdd1-c37b-9a38-c89e" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
+        <infoLink id="5866-a708-5dd0-31ed" name="Graviton Gun" hidden="false" targetId="cfef-faee-48a6-ae88" type="profile"/>
+        <infoLink id="99c1-ef91-082a-48d9" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+        <infoLink id="87f8-2619-611b-3e5e" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="00ab-8d30-cb72-2ddc" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="eb14-1b62-8f36-f48a" name="Graviton Pulse" hidden="false" targetId="5b9c-2738-616c-abdf" type="rule"/>
+        <infoLink id="53fe-98ed-51ac-07ab" name="Haywire" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -74521,7 +74519,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="aef0-9f29-1906-474b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f369-3554-74e7-ed2b" type="atLeast"/>
+                        <condition field="selections" scope="aef0-9f29-1906-474b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8468-3824-285f-7ed2" type="atLeast"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -74530,7 +74528,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="aef0-9f29-1906-474b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f369-3554-74e7-ed2b" type="atLeast"/>
+                        <condition field="selections" scope="aef0-9f29-1906-474b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8468-3824-285f-7ed2" type="atLeast"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -74583,7 +74581,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
               <selectionEntryGroups>
                 <selectionEntryGroup id="923e-a772-bf00-f3d8" name="May exchange for" hidden="false" collective="false" import="true">
                   <entryLinks>
-                    <entryLink id="2356-696d-f95b-00c9" name="Heavy chainaxe" hidden="false" collective="false" import="true" targetId="f369-3554-74e7-ed2b" type="selectionEntry">
+                    <entryLink id="2356-696d-f95b-00c9" name="Heavy chainaxe" hidden="false" collective="false" import="true" targetId="8468-3824-285f-7ed2" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
@@ -77835,7 +77833,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="2ddf-397e-88c3-1ff9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f369-3554-74e7-ed2b" type="atLeast"/>
+                        <condition field="selections" scope="2ddf-397e-88c3-1ff9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8468-3824-285f-7ed2" type="atLeast"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -77844,7 +77842,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="2ddf-397e-88c3-1ff9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f369-3554-74e7-ed2b" type="atLeast"/>
+                        <condition field="selections" scope="2ddf-397e-88c3-1ff9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8468-3824-285f-7ed2" type="atLeast"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -77897,7 +77895,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
               <selectionEntryGroups>
                 <selectionEntryGroup id="8c78-d585-4ce6-b107" name="May exchange for" hidden="false" collective="false" import="true">
                   <entryLinks>
-                    <entryLink id="49fb-7654-263d-e1a6" name="Heavy chainaxe" hidden="false" collective="false" import="true" targetId="f369-3554-74e7-ed2b" type="selectionEntry">
+                    <entryLink id="49fb-7654-263d-e1a6" name="Heavy chainaxe" hidden="false" collective="false" import="true" targetId="8468-3824-285f-7ed2" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>

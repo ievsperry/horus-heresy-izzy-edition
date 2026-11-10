@@ -124,6 +124,9 @@ loading. The script prints anything in the doc it could not place.
   ratio pick of "one of the following" shares one limit across its items (one Warbiker in five takes a kopta rokkit
   launcha or a kustom mega-blasta, not both). A unit-wide "one of the following" (Hellions' Bladevanes or
   Chain-snares) allows one, and "must select one of the following" requires one.
+- Legiones Inductii: the Combi-grav is a Magna Combi-weapon with a Graviton Gun (the Bolter (Primary) and
+  Graviton Gun profiles, One Use, Blast, Concussive (1), Graviton Pulse and Haywire), and the Blood Angels and
+  World Eaters squads' Heavy chainaxe is the Legiones Hereticus one; they were text-only placeholders.
 - "May exchange their Combi-Bolter with one of the following" is an exchange, like "for": the Liber Centura
   options worded that way (Indomitus Centurion, Praetor and squads, Assault Veterans, Possessed, Iron Revenants,
   Dekadarch, Firehost) replace the weapon rather than adding to it.
