@@ -12,6 +12,9 @@ official ones. Each gains the doc's Grey Knights rules and pays for them per mod
 
 2.0 has no Razorback, so the doc's "Rhino or Razorback" is the Rhino.
 
+A Dreadnought Talon may take a Teleport Harness (the doc's wargear: Deep Strike) for +40 points per Dreadnought,
+and the Teleport Harness links the game system's Deep Strike rule.
+
 The Rites of War that bar these kinds of unit bar the official ones too: Purifier Crusade (no Land Raiders) hides
 the official Land Raiders, and Teleport Assault (no Dedicated Transports) hides the Rhino."""
 from build_catalogue import PTS, SLOTS, TYPE_CATEGORIES, UNIT_CATEGORY, add_constraint, child, el, make_id
@@ -25,6 +28,8 @@ LAND_RAIDERS = [("Land Raider Proteus Carrier Squadron", "b6cd-dd1a-6b2c-41d6", 
                  ["c123-bdc6-a6ba-79a2", "048e-67cc-d24d-9f46"]),
                 ("Land Raider Phobos Squadron", "681a-7426-96af-caac", 10, ["8bf3-9b8d-578a-38f1"])]
 RHINO = ("Rhino Transport", "03f1-8ed9-9867-8d18", 5)
+DEEP_STRIKE = "f1e1-986f-c783-ca9e"  # the game system's Deep Strike rule
+HARNESS_POINTS = 40  # per Dreadnought
 TRANSPORTED = ["Purifier Squad", "Strike Squad", "Purgation Squad"]  # "may take a Rhino or Razorback"
 
 
@@ -72,12 +77,32 @@ def official_unit(b, links, name, target, points, models, psyker, slot):
     return e
 
 
+def teleport_harness(b, e, target, models):
+    """The doc's Teleport Harness for a Dreadnought Talon: one per unit, +40 points for each Dreadnought in it."""
+    harness = b.shared_entries.find("selectionEntry[@name='Teleport Harness']")
+    lid = make_id(e.get("id"), "teleport harness")
+    g = el(child(e, "selectionEntryGroups"), "selectionEntryGroup", name="Teleport Harness", hidden=False,
+           id=make_id(lid, "group"))
+    add_constraint(g, "max", 1, lid + "group")
+    l = el(child(g, "entryLinks"), "entryLink", import_=True, name="Teleport Harness", hidden=False, id=lid,
+           type="selectionEntry", targetId=harness.get("id"))
+    add_constraint(l, "max", 1, lid)
+    for m in models:
+        mod = el(child(l, "modifiers"), "modifier", type="increment", field=PTS, value=HARNESS_POINTS)
+        el(el(mod, "repeats"), "repeat", field="selections", scope=target, value=1, percentValue=False, shared=True,
+           includeChildSelections=True, includeChildForces=False, childId=m, repeats=1, roundUp=False)
+
+
 def apply(b):
+    harness = b.shared_entries.find("selectionEntry[@name='Teleport Harness']")
+    el(child(harness, "infoLinks"), "infoLink", name="Deep Strike", id=make_id(harness.get("id"), "deep strike"),
+       hidden=False, targetId=DEEP_STRIKE, type="rule")
     el(child(b.root, "catalogueLinks"), "catalogueLink", name=LIBRARY[1], targetId=LIBRARY[0], type="catalogue",
        importRootEntries=False, id=make_id("library", b.faction, LIBRARY[1]))
     links = child(b.root, "entryLinks")
     for name, target, points, models in DREADNOUGHTS:
-        official_unit(b, links, name, target, points, models, True, "Heavy Support")
+        e = official_unit(b, links, name, target, points, models, True, "Heavy Support")
+        teleport_harness(b, e, target, models)
     for name, target, points, models in LAND_RAIDERS:
         barred_by(b, official_unit(b, links, name, target, points, models, False, "Heavy Support"), "Purifier Crusade")
     name, target, points = RHINO

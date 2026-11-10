@@ -121,7 +121,9 @@ loading. The script prints anything in the doc it could not place.
   Dreadnought Talons and Land Raider Proteus Carrier and Phobos Squadrons as Heavy Support, and its Rhino Transport
   as the Dedicated Transport of the Purifier, Strike and Purgation Squads (2.0 has no Razorback). Dreadnoughts gain
   the Psyker sub-type, Brotherhood of Psykers, Daemon Hunters, Brotherhood (X) and Aegis for +25 points each; Land
-  Raiders and the Rhino gain Brotherhood (X) and Aegis for +10 points per Land Raider and +5 per Rhino. Servitors and the vehicles have
+  Raiders and the Rhino gain Brotherhood (X) and Aegis for +10 points per Land Raider and +5 per Rhino.
+  A Dreadnought Talon may take a Teleport Harness (Deep Strike) for +40 points per Dreadnought, as the Nemesis
+  Dreadknight and Grand Master in Nemesis Dreadknight may for +40 points. Servitors and the vehicles have
   Brotherhood (X) only, as the doc says. Every Grey Knight has the Psyker sub-type (Servitors and vehicles do not),
   the Nemesis Dreadknight and the Grand Master in one are Armigers (the Mech Library's Armiger Unit Type, which the
   catalogue links that library for), and the Stormraven may swap its twin heavy bolter (the Gravis Bolt Cannon) for

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -561,6 +561,27 @@
         <categoryLink targetId="7031-469a-1aeb-eab0" id="fee7-6358-063b-7bd8" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="a1a4-0c16-97c8-3b20" primary="false" name="Unit:" />
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Teleport Harness" hidden="false" id="143b-ae45-c300-4c40">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2442-bfb1-1ed6-b2b6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Teleport Harness" hidden="false" id="addf-336d-8edd-c42b" type="selectionEntry" targetId="9f80-7aed-1501-2482">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="40">
+                  <repeats>
+                    <repeat field="selections" scope="daf7-b23b-5474-5836" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5524-7631-a4d9-9cf9" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9551-a306-163f-b0aa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink import="true" name="Contemptor Dreadnought Talon" hidden="false" id="7ad9-3f9d-cc1e-9efa" type="selectionEntry" targetId="d664-5692-cd41-f9be">
       <modifiers>
@@ -581,6 +602,27 @@
         <categoryLink targetId="7031-469a-1aeb-eab0" id="83b7-4c25-a355-1e3b" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="c06f-afb1-542e-4107" primary="false" name="Unit:" />
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Teleport Harness" hidden="false" id="f8e2-b689-c87d-adda">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02fb-cd06-9df0-1fc8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Teleport Harness" hidden="false" id="9a03-c68b-973f-3901" type="selectionEntry" targetId="9f80-7aed-1501-2482">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="40">
+                  <repeats>
+                    <repeat field="selections" scope="d664-5692-cd41-f9be" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9fd-2c7d-ab6a-89af" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c6c-c28c-8678-3461" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink import="true" name="Land Raider Proteus Carrier Squadron" hidden="false" id="a96c-9fa6-166e-a1b9" type="selectionEntry" targetId="b6cd-dd1a-6b2c-41d6">
       <modifiers>
@@ -1188,6 +1230,18 @@
             <modifier type="set" field="name" value="Invulnerable Save (4+)" />
           </modifiers>
         </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Teleport Harness" hidden="false" id="9f80-7aed-1501-2482" publicationId="c336-0f01-71db-7a8f">
+      <profiles>
+        <profile name="Teleport Harness" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3550-07d1-8716-87c9">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">*A heavy teleport array that lets a Dreadnought or Dreadknight strike from orbit.* The model has the Deep Strike special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="b9a2-fb40-fdc0-b12f" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Shield of Titan" hidden="false" id="37ef-3b06-9e51-b187" publicationId="c336-0f01-71db-7a8f">
@@ -2757,6 +2811,18 @@
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="f526-3b0d-8bd3-18f0">
+              <entryLinks>
+                <entryLink import="true" name="Teleport Harness" hidden="false" id="e107-c8ba-5ec7-5db2" type="selectionEntry" targetId="9f80-7aed-1501-2482">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e75c-19be-2b96-747e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40" />
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -5267,6 +5333,14 @@
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Teleport Harness" hidden="false" id="00ac-8eec-f523-317a" type="selectionEntry" targetId="9f80-7aed-1501-2482">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="426e-6223-2a49-0d09" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40" />
                   </costs>
                 </entryLink>
               </entryLinks>
