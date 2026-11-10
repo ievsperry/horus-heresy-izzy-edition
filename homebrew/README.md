@@ -124,6 +124,8 @@ loading. The script prints anything in the doc it could not place.
   ratio pick of "one of the following" shares one limit across its items (one Warbiker in five takes a kopta rokkit
   launcha or a kustom mega-blasta, not both). A unit-wide "one of the following" (Hellions' Bladevanes or
   Chain-snares) allows one, and "must select one of the following" requires one.
+- Questoris Household: Canis Rex is Unique (the Unique Sub-type, one per roster) and the Knight Abominant has the
+  Psyker Sub-type, as the Imperial and Chaos Knights doc's Unit Types say.
 - The Mechanicum Electro-Priest Conclave must take one of its two Electoo kits (a min 1 / max 1 on the official
   catalogue's group).
 - An option whose name says "one per army" ("Knight Commander Pask (...; one per army)") may be taken once in the
