@@ -372,7 +372,8 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   when it holds Daemons of the Ruinstorm, and `2022 - Daemons - Daemons of the Ruinstorm.cat` hides the Daemon
   Sovereign, the Heavy Support and Lords of War units and the Navigator, Lodge Priest and Cults Abominatio HQs in an
   Allied Detachment, so its Compulsory HQ is a Hierarch or Harbinger. The Anchor Requirement, Distrusted Allies and
-  Veil Degradation are rule text only. Ruinstorm could already be taken only by Traitor armies.
+  Veil Degradation are rule text only, and so is its addendum The Fading Echo (the Unstable Veil for allied
+  Daemons), linked beside it. Ruinstorm could already be taken only by Traitor armies.
 - `python3 homebrew/add_imperatus_wargear.py` adds the Imperatus Archaeotechnological Relics (Apex Digital Weapon,
   Displacer Matrix, Grav-Wave Generator) to the game system as a one-per-model group the Solar Auxilia Legate
   Marshal may take, and the Imperialis Militia Force Commander may take with the Armoury of Old Night Provenance

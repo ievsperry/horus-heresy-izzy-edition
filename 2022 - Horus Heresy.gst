@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="237" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="238" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -20959,7 +20959,14 @@ If the Toughness Test is failed, the target unit's Initiative Characteristic is 
 • Force Organisation: the Compulsory HQ must be a Ruinstorm Daemon Hierarch or Ruinstorm Daemon Harbinger (a Daemon Sovereign may not be taken), and the Compulsory Troops must be Ruinstorm Lesser Daemons. The detachment may also take up to 1 Elites (Ruinstorm Daemon Brutes or Beasts), 1 more Troops (Lesser Daemons or Daemon Swarms) and 1 Fast Attack (Ruinstorm Daemon Harriers or Cavalry). It has no Heavy Support or Lords of War choices.
 • Anchor Requirement: the detachment cannot be deployed on the battlefield at the start of the game; its units must start in Reserves (or Deep Strike Reserves, if they have Deep Strike). While no friendly model with the Psyker Sub-type from the primary detachment is alive on the battlefield, Reserve rolls for the detachment's units suffer a -2 penalty.
 • Distrusted Allies: the detachment treats every unit of the primary army as a Distrusted Ally. Its units cannot be affected by psychic powers or Warlord Traits from the primary army, and their destruction never causes friendly units to take Morale checks.
-• Veil Degradation: Ruinstorm rules that count down from the start of the game, such as the Unstable Veil, begin in the first turn as normal, whether or not the detachment's units have arrived from Reserves.</description>
+• Veil Degradation: the detachment's units are subject to the Unstable Veil, as set out in The Fading Echo.</description>
+    </rule>
+    <rule id="df6e-3482-d5ed-0e42" name="The Fading Echo" hidden="false">
+      <description>House rule (addendum to The Shattered Veil): the Unstable Veil applies to every unit in a Daemons of the Ruinstorm Allied Detachment.
+• The Unstable Veil: at the start of each game turn, from the first turn, each Daemon unit in the detachment takes a Leadership test. If it fails, every model in the unit suffers a permanent, cumulative -1 penalty to Strength and Toughness.
+• Delayed Arrival, Immediate Countdown: the test is taken from the first turn even while the unit is in Reserves, and penalties it suffers there stay with it when it arrives.
+• The Psyker Battery: if a friendly model with the Psyker Sub-type from the primary army is within 12" of a Daemon unit when it takes the test, the unit may re-roll a failed test.
+• Banished to the Warp: if a unit's Toughness is reduced to 0 by these penalties, its remaining models are removed from play as casualties.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
