@@ -71,8 +71,17 @@ When a model fires a markerlight, each hit places one Markerlight token on the t
 | Tokens | Effect for the firing unit |
 |---|---|
 | 1 | Re-roll to-hit rolls of 1 |
+| 1 | The attack gains Pinning |
 | 2 | Add 1 to Ballistic Skill (to a max of 5) |
+| 2 | The attack gains Shell Shock (1) |
 | 3 | The target does not receive cover saves against this attack |
+| 3 | Re-roll failed to-hit rolls |
+| 3 | Re-roll to-wound rolls of 1 |
+| 4 | The attack gains Exoshock (5+) |
+| 4 | The attack gains Rending (5+) |
+| 5 | The attack gains Murderous Strike (5+) |
+
+Each effect is bought separately, for the number of tokens shown.
 
 A seeker missile may instead spend one token to fire at Ballistic Skill 5, without line of sight to the target.
 
@@ -195,7 +204,7 @@ You may re-roll one Reserves roll each turn. In addition, while the Warlord is o
 
 A commander who sees the whole battle as a single firing solution.
 
-Friendly units within 12" of the Warlord gain one extra Markerlight token's effect when they spend tokens. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Shooting phase, above its normal Reaction Allotment†.
+Each hit from the markerlights of friendly units within 12" of the Warlord places one extra Markerlight token. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Shooting phase, above its normal Reaction Allotment†.
 
 #### Through Unity, Devastation
 
@@ -1937,7 +1946,7 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 
 **Special Rules**
 
-- Communications Specialist: while he lives, the unit may re-roll failed Reserves rolls, and friendly units spending this unit's Markerlight tokens gain one extra token's effect
+- Communications Specialist: while he lives, the unit may re-roll failed Reserves rolls, and each hit from the unit's markerlights places one extra Markerlight token
 - Drone Controller
 - Drone Specialist: drones in the unit use the Drone Controller's Ballistic Skill while he lives
 - Medical Technician: while he lives, the unit has Feel No Pain (6+)
