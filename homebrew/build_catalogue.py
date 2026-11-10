@@ -186,7 +186,8 @@ OFFICIAL_ALIASES = {"storm bolter": "combi-bolter", "boltgun": "bolter", "force 
                     # Cannon is its gravis heavy bolter)
                     "assault cannon": "kheres assault cannon", "twin assault cannon": "twin-linked kheres assault cannon",
                     "twin heavy bolter": "gravis bolt cannon", "twin lascannon": "gravis lascannon",
-                    "twin multi-melta": "gravis melta cannon", "frag assault launchers": "frag launchers"}
+                    "twin multi-melta": "gravis melta cannon", "frag assault launchers": "frag launchers",
+                    "ancestral ward stave": "force staff"}  # Votann
 
 
 def load_official_items(root=None):
@@ -658,6 +659,14 @@ class Builder:
             aux += a
         for ws in self.wargear_sections():
             rows += parse_weapon_tables(ws)[0]  # e.g. the tankhammer, listed as wargear
+        # a character's own weapon, profiled in its datasheet ("Transmatter Inverter" under the Arkanyst
+        # Evaluator), when the armoury does not have it
+        known = {norm(r["name"]) for r in rows}
+        for s in self.sections:
+            if s["title"] in SLOTS:
+                for sub in s["subs"]:
+                    rows += [r for r in parse_weapon_tables({"lines": sub["lines"], "subs": []})[0]
+                             if norm(r["name"]) not in known]
         self.power_rows = []
         # "#### Weirdboy Psychic Powers": tables under a heading belong to that table, apart from the
         # discipline every psyker knows (the tables before any heading).
