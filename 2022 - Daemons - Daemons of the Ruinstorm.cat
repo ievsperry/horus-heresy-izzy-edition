@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac63-5340-2e9e-1eb6" name="Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="18" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac63-5340-2e9e-1eb6" name="Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="21" battleScribeVersion="2.03" type="catalogue">
   <entryLinks>
     <entryLink import="false" name="Daemons of the Ruinstorm" hidden="false" type="selectionEntry" id="e271-f450-1c28-5b7b" targetId="afca-3047-fb26-d097">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="142b-4893-b1b8-df6b"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="b8fc-1b54-3801-6733" name="The Shattered Veil" hidden="false" targetId="6a21-fe63-1857-c12b" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: not in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="49bb-17f8-66f5-172a" name="The Fading Echo" hidden="false" targetId="df6e-3482-d5ed-0e42" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: not in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink targetId="e90d-e5a8-f42d-da84" id="27c7-e48-9b25-b38f" primary="true" name="Allegiance:"/>
       </categoryLinks>
@@ -17,6 +39,14 @@
       </modifiers>
     </entryLink>
     <entryLink import="false" name="Ruinstorm Daemon Sovereign" hidden="false" type="selectionEntry" id="61db-a83f-c0b6-90fd" targetId="2f3f-adc4-b19f-a5c7">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>The Shattered Veil: not in a Ruinstorm Allied Detachment</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="5bef-275-968-1f88" primary="false" name="Unit:"/>
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="9b39-aee6-628-7679" primary="false" name="Compulsory HQ:"/>
@@ -79,6 +109,14 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Greater Ruinstorm Daemon Beast" hidden="false" type="selectionEntry" id="271c-cc74-3c17-d759" targetId="41a0-6caa-af06-3684">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>The Shattered Veil: not in a Ruinstorm Allied Detachment</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="1f63-b797-ecca-9698" primary="false" name="Unit:"/>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="e6c-80f3-6dcc-9285" primary="true" name="Heavy Support:"/>
@@ -86,6 +124,14 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Ruinstorm Daemon Behemoth" hidden="false" type="selectionEntry" id="59ea-d83-a465-2697" targetId="240a-1822-9e4f-3080">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>The Shattered Veil: not in a Ruinstorm Allied Detachment</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="4366-6f11-50bb-788b" primary="false" name="Unit:"/>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="b906-2c88-de71-f891" primary="true" name="Heavy Support:"/>
@@ -93,6 +139,14 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Ruinstorm Arch-Daemon" hidden="false" type="selectionEntry" id="bde9-cbb2-1c62-da9a" targetId="1fbb-b82e-ae1e-5a12">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>The Shattered Veil: not in a Ruinstorm Allied Detachment</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="ac16-61f4-489b-9b43" primary="false" name="Unit:"/>
         <categoryLink targetId="c658-dc6b-727b-c488" id="b3f-ca75-5e86-c6fe" primary="true" name="Lords of War:"/>
@@ -100,6 +154,14 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Ka’bandha Unbound" hidden="false" type="selectionEntry" id="d606-d66-9d34-6fb4" targetId="baa5-baed-1a62-c820">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>The Shattered Veil: not in a Ruinstorm Allied Detachment</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="5a84-831c-e73f-7391" primary="false" name="Unit:"/>
         <categoryLink targetId="c658-dc6b-727b-c488" id="8b06-8469-b53d-66f0" primary="true" name="Lords of War:"/>
@@ -107,6 +169,14 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Cor’bax Utterblight Unbound" hidden="false" type="selectionEntry" id="957e-2292-544d-8031" targetId="ef9d-3ad6-1f39-b84b">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>The Shattered Veil: not in a Ruinstorm Allied Detachment</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="6452-7f07-bc29-5d6f" primary="false" name="Unit:"/>
         <categoryLink targetId="c658-dc6b-727b-c488" id="69a1-4379-610d-416c" primary="true" name="Lords of War:"/>
@@ -114,6 +184,14 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Samus Unbound" hidden="false" type="selectionEntry" id="6f48-b881-40f3-5da" targetId="63f0-9b87-6482-87ee">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>The Shattered Veil: not in a Ruinstorm Allied Detachment</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="d89d-34dc-cb3d-7b9f" primary="false" name="Unit:"/>
         <categoryLink targetId="c658-dc6b-727b-c488" id="e313-85de-a363-2ca9" primary="true" name="Lords of War:"/>
@@ -121,16 +199,40 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Expeditionary Navigator" hidden="false" type="selectionEntry" id="9c45-3bab-77a7-1588" targetId="ce53-e40c-65b6-4d3a">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>The Shattered Veil: not in a Ruinstorm Allied Detachment</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="42f2-a7cc-161c-7108" primary="true" name="HQ:"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Davinite Lodge Priest" hidden="false" type="selectionEntry" id="430c-1c94-e60f-653" targetId="fe13-4a8f-b2af-1e40">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>The Shattered Veil: not in a Ruinstorm Allied Detachment</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="d5e9-9d7e-2a4d-311d" primary="true" name="HQ:"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Cults Abominatio" hidden="false" type="selectionEntry" id="5b8b-6c4f-15ec-ba95" targetId="4a00-03d4-a850-884b">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <comment>The Shattered Veil: not in a Ruinstorm Allied Detachment</comment>
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="5f61-7027-ca66-53d3" primary="true" name="HQ:"/>
       </categoryLinks>
@@ -545,6 +647,26 @@
           </modifiers>
         </infoLink>
         <infoLink id="c24e-cdd4-5aff-fae4" name="Independent Character" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule"/>
+        <infoLink id="8429-3419-edb2-816f" name="The Shattered Veil" hidden="false" targetId="6a21-fe63-1857-c12b" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3017-a25c-bda6-3aeb" name="The Fading Echo" hidden="false" targetId="df6e-3482-d5ed-0e42" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="May take up to two of the following options:" hidden="false" id="ea1-884d-4e8a-4a66">
@@ -839,6 +961,28 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135"/>
       </costs>
+      <infoLinks>
+        <infoLink id="6454-6ecd-b9dc-a392" name="The Shattered Veil" hidden="false" targetId="6a21-fe63-1857-c12b" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="7857-04e3-d12c-0752" name="The Fading Echo" hidden="false" targetId="df6e-3482-d5ed-0e42" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink targetId="e699-d9cd-e68e-46d9" id="e2f3-8a17-7b35-4909" primary="false" name="Daemon Unit Type"/>
       </categoryLinks>
@@ -977,6 +1121,26 @@
             <modifier type="set" field="name" value="Æthereal Invulnerability (5+)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="fd38-d5ed-323f-565e" name="The Shattered Veil" hidden="false" targetId="6a21-fe63-1857-c12b" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="2a20-7cd5-374c-11b7" name="The Fading Echo" hidden="false" targetId="df6e-3482-d5ed-0e42" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
@@ -1084,6 +1248,26 @@
           </modifiers>
         </infoLink>
         <infoLink id="3e11-b9aa-45f4-ca2d" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+        <infoLink id="02f7-0618-ff5d-31ef" name="The Shattered Veil" hidden="false" targetId="6a21-fe63-1857-c12b" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="1069-e0f1-8bd8-61ae" name="The Fading Echo" hidden="false" targetId="df6e-3482-d5ed-0e42" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Daemon Beasts" hidden="false" id="8d09-1913-b79f-5c35" defaultSelectionEntryId="e8d9-781b-531d-9386">
@@ -1351,6 +1535,26 @@
             <modifier type="set" field="name" value="Æthereal Invulnerability (5+)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="7063-bf7a-a72b-9552" name="The Shattered Veil" hidden="false" targetId="6a21-fe63-1857-c12b" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="39cf-0486-b728-2b11" name="The Fading Echo" hidden="false" targetId="df6e-3482-d5ed-0e42" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" hidden="false" id="ae2b-1534-a94a-6448" defaultSelectionEntryId="8b6b-f0e0-821-b328">
@@ -1503,6 +1707,26 @@
         </infoLink>
         <infoLink name="Support Squad" hidden="false" type="rule" id="8282-b9ea-e72a-3905" targetId="768e-56d6-ca52-24ae"/>
         <infoLink id="7257-af2d-90b1-d06c" name="Daemonic Hordes" hidden="false" targetId="baba-f9ca-ab93-eb68" type="rule"/>
+        <infoLink id="6311-83d1-8540-506a" name="The Shattered Veil" hidden="false" targetId="6a21-fe63-1857-c12b" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="0c50-47eb-61dc-0446" name="The Fading Echo" hidden="false" targetId="df6e-3482-d5ed-0e42" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
@@ -1653,6 +1877,26 @@
             <modifier type="set" field="name" value="Bulky (2)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="b597-2844-548b-3205" name="The Shattered Veil" hidden="false" targetId="6a21-fe63-1857-c12b" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5ef9-b3ba-b579-d147" name="The Fading Echo" hidden="false" targetId="df6e-3482-d5ed-0e42" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
@@ -1787,6 +2031,26 @@
           </modifiers>
         </infoLink>
         <infoLink id="58ba-867b-0a62-fa0f" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink id="032b-66f8-57e2-03a0" name="The Shattered Veil" hidden="false" targetId="6a21-fe63-1857-c12b" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5691-7c36-e10d-fd1c" name="The Fading Echo" hidden="false" targetId="df6e-3482-d5ed-0e42" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>The Shattered Veil: only in a Ruinstorm Allied Detachment</comment>
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" hidden="false" id="38df-f8ac-dd92-a3e5" defaultSelectionEntryId="174b-985e-fc0e-beef">

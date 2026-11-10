@@ -1316,6 +1316,11 @@ Crisis Bodyguards may only be taken if the army includes a Commander, Commander 
 |---|---|
 | **The Kroot Farstalkers may take:** |  |
 | – Up to 5 additional Kroot Warriors | +8 points each |
+| **Up to three Kroot Warriors may exchange their Kroot rifle for:** |  |
+| – Kroot hunting rifle | +5 points |
+| – Kroot scattergun | free |
+| – Londaxi tribalest | +10 points |
+| – Pulse carbine | +5 points |
 | **The Bow-hunter may take:** |  |
 | – Tanglebomb launcher | +5 points |
 
@@ -1953,6 +1958,9 @@ The unit may take a Devilfish as a Dedicated Transport.
 | – Gun, Marker, Shield, Recon, Pulse Accelerator or Grav-inhibitor Drones | Drone costs |
 | **The unit may take:** |  |
 | – Up to 5 additional Pathfinders | +11 points each |
+| **Up to three Pathfinders may exchange their pulse carbine and markerlight for:** |  |
+| – Ion rifle | +10 points |
+| – Rail rifle | +15 points |
 
 #### Piranha TX-42 — 55 pts
 

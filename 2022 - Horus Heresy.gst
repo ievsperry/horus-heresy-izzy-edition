@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="236" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="238" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -2024,6 +2024,12 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="1" field="7cc0-0be3-0046-e962">
+              <comment>The Shattered Veil (Ruinstorm Allied Detachment)</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </categoryLink>
         <categoryLink id="7838-d570-4570-89ad" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="false">
@@ -2043,6 +2049,12 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
               </conditions>
               <comment>Pride is Our Armour</comment>
+            </modifier>
+            <modifier type="set" value="2" field="ced6-f029-0392-ae11">
+              <comment>The Shattered Veil (Ruinstorm Allied Detachment)</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </categoryLink>
@@ -2122,6 +2134,12 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
             <modifier type="increment" value="3" field="0bc1-40ca-638b-3578">
               <conditions>
                 <condition type="equalTo" value="3" field="selections" scope="force" childId="dfbc-8edd-e14f-fd80" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="0bc1-40ca-638b-3578">
+              <comment>The Shattered Veil (Ruinstorm Allied Detachment)</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -20935,6 +20953,20 @@ If the Toughness Test is failed, the target unit's Initiative Characteristic is 
     </rule>
     <rule id="47d7-7ac6-5c81-8002" name="Rapid Fire (X)" hidden="false">
       <description>Optional rule: A model firing a Rapid Fire (X) weapon at a target within half the weapon's range makes X additional shots with it. A weapon with the Rapid Fire type that is not listed as Rapid Fire (X) is treated as having Rapid Fire (1).</description>
+    </rule>
+    <rule id="6a21-fe63-1857-c12b" name="The Shattered Veil" hidden="false">
+      <description>House rule: Any Traitor army may include a Daemons of the Ruinstorm Allied Detachment. It follows the standard rules for an Allied Detachment, with these changes:
+• Force Organisation: the Compulsory HQ must be a Ruinstorm Daemon Hierarch or Ruinstorm Daemon Harbinger (a Daemon Sovereign may not be taken), and the Compulsory Troops must be Ruinstorm Lesser Daemons. The detachment may also take up to 1 Elites (Ruinstorm Daemon Brutes or Beasts), 1 more Troops (Lesser Daemons or Daemon Swarms) and 1 Fast Attack (Ruinstorm Daemon Harriers or Cavalry). It has no Heavy Support or Lords of War choices.
+• Anchor Requirement: the detachment cannot be deployed on the battlefield at the start of the game; its units must start in Reserves (or Deep Strike Reserves, if they have Deep Strike). While no friendly model with the Psyker Sub-type from the primary detachment is alive on the battlefield, Reserve rolls for the detachment's units suffer a -2 penalty.
+• Distrusted Allies: the detachment treats every unit of the primary army as a Distrusted Ally. Its units cannot be affected by psychic powers or Warlord Traits from the primary army, and their destruction never causes friendly units to take Morale checks.
+• Veil Degradation: the detachment's units are subject to the Unstable Veil, as set out in The Fading Echo.</description>
+    </rule>
+    <rule id="df6e-3482-d5ed-0e42" name="The Fading Echo" hidden="false">
+      <description>House rule (addendum to The Shattered Veil): the Unstable Veil applies to every unit in a Daemons of the Ruinstorm Allied Detachment.
+• The Unstable Veil: at the start of each game turn, from the first turn, each Daemon unit in the detachment takes a Leadership test. If it fails, every model in the unit suffers a permanent, cumulative -1 penalty to Strength and Toughness.
+• Delayed Arrival, Immediate Countdown: the test is taken from the first turn even while the unit is in Reserves, and penalties it suffers there stay with it when it arrives.
+• The Psyker Battery: if a friendly model with the Psyker Sub-type from the primary army is within 12" of a Daemon unit when it takes the test, the unit may re-roll a failed test.
+• Banished to the Warp: if a unit's Toughness is reduced to 0 by these penalties, its remaining models are removed from play as casualties.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
