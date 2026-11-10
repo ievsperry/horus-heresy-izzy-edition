@@ -4836,6 +4836,7 @@ class Builder:
         self.share_namesake_profiles()
         self.exact_named_rules()
         self.specialist_rules()
+        self.discipline_rules()
         if self.faction in FACTION_LIMITS:
             importlib.import_module(FACTION_LIMITS[self.faction]).apply(self)
         self.root.append(self.shared_entries)
@@ -4849,6 +4850,59 @@ class Builder:
                    id=make_id("library", self.faction, lname), targetId=lib, importRootEntries=False)
         sort_children(self.root)
         return self.root
+
+    def discipline_rules(self):
+        """With one discipline that no datasheet names: a rule whose text says what a psyker "knows" gives a
+        unit with that rule the powers its text names ("Ancestral Lore (X)": knows the Ancestral Wrath
+        psychic weapon; "Brotherhood of Psykers": knows Hammerhand and Purge Soul), and a pick of the
+        rest: "Ancestral Lore (2)" two of them, "(knows 3 additional Sanctic powers)" three, "(knows
+        every Sanctic power)" all of them. The unit counts as a single psyker, so they sit on the unit."""
+        if len(self.psy_sections) != 1 or self.disciplines:
+            return
+        disc = self.psy_sections[0]["disc"]
+        items = [(n, i) for n, i in self.powers + self.psychic_weapons if self.psy_disc.get(i) in (disc, None)]
+        # a power table's psychic weapon the armoury profiles ("Gaze of the Emperor") is in the discipline too
+        for header, rows in section_tables(self.psy_sections[0]):
+            if header[:2] == ["Power", "Kind"]:
+                for r in rows:
+                    wid = self.find_weapon(r[0])[0] if "weapon" in r[1].lower() else None
+                    if wid and all(i != wid for _, i in items):
+                        items.append((r[0], wid))
+        if not items:
+            return
+        for ds in self.datasheets:
+            unit = self.shared_entries.find(f"selectionEntry[@id='{self.units[ds['name']]}']")
+            ids = {i for _, i in items}
+            if unit is None or any(l.get("targetId") in ids for l in unit.iter("entryLink")):
+                continue  # its powers are given already ("Hive Mind (X)", a known discipline)
+            for line in ds["rules"]:
+                base = re.sub(r"\s*\(.*\)$", "", line).strip()
+                rule = self.shared_rules.find(f"rule[@id='{self.local_rules.get(norm(base), (None,))[0]}']")
+                text = rule.findtext("description") if rule is not None else ""
+                if " knows " not in f" {text} ":
+                    continue
+                # only what the "knows ..." clause names, not the power table the rule's text may carry
+                clause = re.search(r"knows (.+?)(?:, plus\b|\.(?:\s|$))", text)
+                clause = clause.group(1) if clause else ""
+                known = [(n, i) for n, i in items if re.search(r"\b" + re.escape(n) + r"\b", clause, re.I)]
+                rest = [(n, i) for n, i in items if (n, i) not in known]
+                inner = (re.search(r"\((.+)\)$", line) or [None, ""])[1]
+                if re.search(r"\bevery\b", inner):
+                    known, rest, n = items, [], 0
+                else:
+                    m = re.fullmatch(r"(\d+)", inner.strip()) or re.search(r"knows (\w+) additional", inner)
+                    n = (int(m.group(1)) if m.group(1).isdigit() else NUMBER_WORDS.get(m.group(1).lower(), 0)) if m else 0
+                key = make_id(unit.get("id"), "discipline", base)
+                for name, pid in known:
+                    self.link(child(unit, "entryLinks"), pid, name, key, count=1)
+                if n and rest:
+                    g = el(child(unit, "selectionEntryGroups"), "selectionEntryGroup", name=f"{disc}: Psychic Powers",
+                           hidden=False, id=make_id(key, "pick"))
+                    add_constraint(g, "min", min(n, len(rest)), key + "min")
+                    add_constraint(g, "max", min(n, len(rest)), key + "max")
+                    for name, pid in rest:
+                        self.link(child(g, "entryLinks"), pid, name, key + "pick", maximum=1)
+                break
 
     def specialist_rules(self):
         """A unit's own rule that belongs to one of its models goes on that model, so it prints with it: the

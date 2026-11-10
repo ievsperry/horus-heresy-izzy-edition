@@ -111,6 +111,11 @@ loading. The script prints anything in the doc it could not place.
   the model of the same name (Medical Technician, Cold-blooded, Oracle), the model it starts (Transpectral
   Interference), the model in its brackets (Distend Dorsal Sac (Venomspitter)), or the model a "while he lives" rule
   names (Drone Specialist on the Drone Controller).
+- With one psychic discipline that no datasheet names, a rule whose text says what a psyker "knows" gives a unit
+  with that rule the powers its "knows ..." sentence names, and a pick of the rest of the discipline sized by the
+  rule: "Ancestral Lore (2)" and "Psykana (2)" two, "(knows 3 additional Sanctic powers)" three, "(knows every Sanctic
+  power)" all of them (Leagues of Votann, Astra Militarum, Grey Knights). A unit given its powers some other way
+  ("Hive Mind (X)") is left alone.
 - A Warlord Traits section may list its generic traits as "### Name" sub-sections, "#### Name" headings (T'au) or
   "- **Name:** text" bullets (Grey Knights); a leading flavour line is left out of the trait's text.
 - Leagues of Votann take the Xenos allegiance. Each detachment picks a League, and a character's own weapon

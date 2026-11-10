@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="e1a3-795b-be05-784b" name="Leagues of Votann for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Leagues of Votann" />
   </publications>
@@ -2207,6 +2207,39 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ancestral Lore: Psychic Powers" hidden="false" id="3362-2f17-b86e-4699">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b12f-ee9d-8a93-cce5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fefd-9fb5-3350-8a17" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Ancestral Ward" hidden="false" id="bd5b-1c21-4871-603e" type="selectionEntry" targetId="c0be-53e1-9b40-b7a2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d02-f4da-3f9d-bdb9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Fortify" hidden="false" id="92a4-626b-e8cb-7ecf" type="selectionEntry" targetId="7c0a-d541-9db8-106c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="140c-eb5a-e09e-8367" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Null Vortex" hidden="false" id="332f-f76c-ca1f-0f68" type="selectionEntry" targetId="b531-3eb4-0a17-8974">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c91b-d96e-ff49-eb60" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Ancestral Wrath" hidden="false" id="6237-4d00-0f25-e29c" type="selectionEntry" targetId="391e-eb8c-bc0b-60c7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="515e-91c5-8b9a-138e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1aa7-0caf-267f-796d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75" />
       </costs>
@@ -3364,9 +3397,9 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Autoch-pattern bolt shotgun" hidden="false" id="024d-3203-fc6d-6235" type="selectionEntry" targetId="b173-7ef6-0be1-42ff">
+                    <entryLink import="true" name="Bolt shotgun" hidden="false" id="81be-73e1-5e11-d229" type="selectionEntry" targetId="9551-998d-6911-060e">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99c0-bf00-1322-f8ad" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2702-ae50-1a18-8ee7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -3568,7 +3601,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Autoch-pattern bolt shotgun" hidden="false" id="b173-7ef6-0be1-42ff" publicationId="e1a3-795b-be05-784b" />
     <selectionEntry type="upgrade" import="true" name="Medipack" hidden="false" id="60ad-b6cf-9acd-c974" publicationId="e1a3-795b-be05-784b">
       <profiles>
         <profile name="Medipack" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7acb-5c65-2bb5-8c3c">
