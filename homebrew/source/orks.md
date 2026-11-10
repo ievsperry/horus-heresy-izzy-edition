@@ -3817,7 +3817,7 @@ _A Stompa has six Fire Points._
 | **The Stompa may take any of the following:** |  |
 | – Grot riggers | +25 points |
 | – Red paint job | +10 points |
-| – Extra armour plates | +20 points |
+| – Extra armour plates | +75 points |
 
 The Stompa is a Titan-scale model. If your group plays without Titans, swap it out or use the 2.0 Super-heavy limit on its points.
 
