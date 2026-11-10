@@ -3586,6 +3586,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 | Mek Gun | 3 | – | – | – | 7 | 2 | – | – | – | 3+ | 60mm |
 | Gretchin crew | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
 | Ammo Runt | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
+| Mek | 6 | 4 | 3 | 4 | 4 | 2 | 3 | 2 | 6 | 4+ | 32mm |
 
 **Unit Composition**
 
@@ -3596,15 +3597,18 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 
 - Gretchin crew: none
 - Mek Gun: kannon
+- Mek: Shoota, Big choppa, Stikkbombz, 'Eavy armour
 
 **Unit Type**
 
 - Mek Gun: Artillery†
 - Gretchin crew: Infantry
+- Mek: Infantry (Character)
 
 **Special Rules**
 
 - Gretchin crew are not affected by Waaagh!
+- Mek-Smasha (5+) (Mek only)
 - Gun Crew: the gun cannot move unless crew are within 2"; if all crew die, remove the gun
 
 **Options**
@@ -3613,7 +3617,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 |---|---|
 | **The Mek Gunz may take:** |  |
 | – Up to 5 additional Mek Gunz, each with 2 Gretchin crew | +20 points each |
-| – One Mek, who joins the unit | Free |
+| – Up to 1 Mek | Free |
 | – Ammo runts | +3 points each |
 | **Any Mek Gun may exchange its kannon for:** |  |
 | – Lobba | +0 points |
