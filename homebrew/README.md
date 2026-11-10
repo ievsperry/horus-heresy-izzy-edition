@@ -106,6 +106,10 @@ loading. The script prints anything in the doc it could not place.
   ("Hull (Front) Mounted heavy bolter" is the official heavy bolter). Wargear marked "(Sergeant only)"
   replaces that model's weapons, and "Flamer, grenade launcher or sniper rifle" is one pick of three.
 
+- A unit's own special rule that belongs to one of its optional models goes on that model, so it prints with it:
+  the model of the same name (Medical Technician, Cold-blooded, Oracle), the model it starts (Transpectral
+  Interference), the model in its brackets (Distend Dorsal Sac (Venomspitter)), or the model a "while he lives" rule
+  names (Drone Specialist on the Drone Controller).
 - A Warlord Traits section may list its generic traits as "### Name" sub-sections, "#### Name" headings (T'au) or
   "- **Name:** text" bullets (Grey Knights); a leading flavour line is left out of the trait's text.
 - Grey Knights are not Xenos either: like the Astra Militarum, the army may be Loyalist or Traitor. Each

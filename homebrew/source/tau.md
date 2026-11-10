@@ -253,7 +253,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 |---|---|
 | HQ | Commander, Cadre Fireblade, Ethereal, Aun'Va, Aun'Shi, Commander Farsight, Commander Shadowsun, Kroot Shaper, Shas'o R'alai, Shas'o R'myr, Commander Brightsword, Commander O'Vesa, The Twin Lance, Commander Bravestorm, Commander Sha'vastos, Commander Arra'kon, Sub-commander Torchstar, Kroot Master Shaper, Kroot Flesh Shaper, Kroot Trail Shaper, Kroot War Shaper, Kroot Lone-spear |
 | Elites | Crisis Battlesuits, Crisis Bodyguards, Stealth Battlesuits, Riptide, Ghostkeel, Firesight Marksman, Darkstrider, Kroot Farstalkers, XV9 Hazard Support Team, XV81 Crisis Battlesuits, XV84 Crisis Battlesuits, DX-4 Technical Drones, Ethereal Guard |
-| Troops | Strike Team, Breacher Team, Kroot Carnivores, Hunter Cadre, Gue'vesa Squad |
+| Troops | Strike Team, Breacher Team, Kroot Carnivores, Gue'vesa Squad |
 | Dedicated Transports | Devilfish |
 | Fast Attack | Pathfinders, Tactical Drones, Piranhas, Vespid Stingwings, Kroot Hounds, Krootox Riders, Sun Shark Bomber, Razorshark Strike Fighter, Tetra Scout Speeders, Remora Stealth Drones, Barracuda, Orca Dropship, Piranha TX-42, Krootox Rampagers, Knarloc Riders |
 | Heavy Support | Broadside Battlesuits, Hammerhead Gunship, Sky Ray Gunship, Sniper Drone Team, Heavy Gun Drones, XV109 Y'vahra, XV107 R'varna, Drone Sentry Turret, Shas'vre Ob'lotai 9-0, Great Knarloc |
@@ -1588,7 +1588,7 @@ The unit may take a Devilfish as a Dedicated Transport. This does not use up an 
 | Option | Cost |
 |---|---|
 | **The Breacher Team may take:** |  |
-| – Up to 5 additional Shas'la | +10 points each |
+| – Up to 7 additional Shas'la | +10 points each |
 | **One Shas'la may be upgraded to a Shas'ui, who may take:** |  |
 | – Markerlight | +10 points |
 | **The unit may take up to two drones from:** |  |
@@ -1910,7 +1910,7 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 | **The unit may take:** |  |
 | – Up to 2 additional Krootox Riders | +35 points each |
 
-#### Pathfinders — 130 pts
+#### Pathfinders — 65 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -1928,7 +1928,7 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 **Unit Composition**
 
 - 1 Pathfinder Shas'ui
-- 9 models chosen from Pathfinders and the specialists above (each specialist at most once)
+- 4 Pathfinders
 
 **Wargear**
 
@@ -1967,6 +1967,14 @@ The unit may take a Devilfish as a Dedicated Transport.
 | – Gun, Marker, Shield, Recon, Pulse Accelerator or Grav-inhibitor Drones | Drone costs |
 | **The unit may take:** |  |
 | – Up to 5 additional Pathfinders | +11 points each |
+| **One Pathfinder may be upgraded to an Assault Grenadier** | +5 points |
+| **One Pathfinder may be upgraded to a Blooded** | +5 points |
+| **One Pathfinder may be upgraded to a Communications Specialist** | +5 points |
+| **One Pathfinder may be upgraded to a Drone Controller** | +5 points |
+| **One Pathfinder may be upgraded to a Marksman** | +5 points |
+| **One Pathfinder may be upgraded to a Medical Technician** | +5 points |
+| **One Pathfinder may be upgraded to a Transpectral Interference Specialist** | +5 points |
+| **One Pathfinder may be upgraded to a Weapons Expert** | +5 points |
 | **Up to three Pathfinders may exchange their pulse carbine and markerlight for:** |  |
 | – Ion rifle | +10 points |
 | – Rail rifle | +15 points |
@@ -2639,51 +2647,6 @@ Use the Sniper Drone profile from the Drones section. A Firesight Marksman may b
 - Reflective Field: each unmodified save of 6 made using the Energy Shield inflicts one hit at Strength 5, AP 5 on the attacking unit
 - Tidewall Mobility
 
-### Kill Team Units
-
-The Pathfinders, Vespid Stingwings and Kroot Farstalkers datasheets above are the Kill Team versions of those units, with their specialists. The Hunter Cadre below brings the Fire Warrior Kill Team to the battlefield as a unit of its own. It takes the slot shown in its heading, uses the normal T'au rules, and may include each named specialist only once. Specialists are separate models with their own profiles and wargear; the weapons are in the Kill Team Weapons table in the Armoury.
-
-#### Hunter Cadre (Troops) — 100 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Fire Warrior Shas'ui | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 2 | 8 | 4+ | 25mm |
-| Fire Warrior | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 4+ | 25mm |
-| Breacher | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 4+ | 25mm |
-| Fire Warrior Gunner | 6 | 2 | 3 | 3 | 3 | 1 | 2 | 1 | 7 | 4+ | 25mm |
-
-**Unit Composition**
-
-- 1 Fire Warrior Shas'ui
-- 9 models chosen from Fire Warriors, Breachers and up to 2 Fire Warrior Gunners
-
-**Wargear**
-
-- Breachers: pulse blaster, combat armour, photon grenades
-- Fire Warrior Gunners: pulse gunner rifle, combat armour, photon grenades
-- Fire Warrior Shas'ui and Fire Warriors: pulse rifle or pulse carbine, combat armour, photon grenades
-
-**Unit Type**
-
-- Fire Warrior Shas'ui: Infantry (Character, Line)
-- All other models: Infantry (Line)
-
-**Special Rules**
-
-- Drone Controller
-- Kauyon Discipline: in a turn in which the unit did not move, it may re-roll to-hit rolls of 1
-- Sept (X)
-
-**Options**
-
-| Option | Cost |
-|---|---|
-| **The Shas'ui may take:** |  |
-| – Markerlight | +10 points |
-| **The unit may take up to three drones from:** |  |
-| – Gun, Marker, Shield, Guardian or Grav-inhibitor Drones | Drone costs |
-| The unit may take a Devilfish as a Dedicated Transport | Devilfish cost |
-
 ## Wargear
 
 ### Items
@@ -2930,7 +2893,7 @@ One Commander, Cadre Fireblade or Ethereal (not a Unique character) may take one
 | Riptide, Y'vahra, R'varna | A seeker missile | +8 points |
 | Stealth Battlesuits | The Shas'vre may take one support system | See Battlesuit Armoury |
 | Strike Team, Breacher Team, Pathfinders | The Shas'ui may take a target lock (may shoot a different target from his unit) | +5 points |
-| Strike Team, Breacher Team, Pathfinders, Hunter Cadre | EMP grenades for the whole unit | +2 points per model |
+| Strike Team, Breacher Team, Pathfinders | EMP grenades for the whole unit | +2 points per model |
 | Vespid Stingwings | The Strain Leader may take a neutron grenade launcher instead of his neutron blaster | +5 points |
 
 #### Vehicle Battle Systems
@@ -3074,7 +3037,6 @@ Specialist weapons carried by the Kill Team units.
 | Kroot long blade | – | +1 | 4 | Melee, Two-handed |
 | Kroot pistol | 12" | 4 | 6 | Pistol 1 |
 | Neutron grenade launcher | 24" | 5 | 4 | Assault 1, Blast (3") |
-| Pulse gunner rifle | 30" | 5 | 5 | Heavy 3 |
 | Pulse rifle with targeting optics | 36" | 5 | 5 | Heavy 1, Sniper, Pinning |
 | Strain Leader's blade | – | +1 | 4 | Melee |
 | Tanglebomb launcher | 24" | 3 | – | Assault 1, Blast (3"), Pinning, Concussive (1) |
@@ -3146,5 +3108,5 @@ These entries rely on 2.0 wording that should be confirmed. Where your book diff
 
 ## Sources
 
-Profiles and points are adapted from 7th to 10th edition T'au Empire rules from memory, with no pages looked up; treat every value as approximate and playtest it. The Kill Team specialist rosters and their wargear, especially the Vespid Oracle and Shadestrain and the Hunter Cadre, are best guesses, as are the wargear of the Kroot Lone-spear and the special rules of Farsight's Eight, and should be checked against the current Kill Team rules.
+Profiles and points are adapted from 7th to 10th edition T'au Empire rules from memory, with no pages looked up; treat every value as approximate and playtest it. The Kill Team specialist rosters and their wargear, especially the Vespid Oracle and Shadestrain, are best guesses, as are the wargear of the Kroot Lone-spear and the special rules of Farsight's Eight, and should be checked against the current Kill Team rules.
 

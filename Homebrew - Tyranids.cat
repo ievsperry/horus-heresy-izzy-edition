@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -9901,9 +9901,6 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Zoanthropes" hidden="false" id="6578-cb54-f125-d03f" publicationId="7478-cf16-4f88-170b">
       <rules>
-        <rule name="Spirit Leech (Neurothrope only)" id="2a9c-d1c3-bf9a-bdc4" hidden="false">
-          <description>Once per turn, when the unit's psychic weapons cause unsaved Wounds, one friendly Tyranid unit within 12" restores one lost Wound</description>
-        </rule>
         <rule name="Warp Field" id="82a3-94bb-0da8-f893" hidden="false">
           <description>Invulnerable save (3+)</description>
         </rule>
@@ -10073,6 +10070,11 @@
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule name="Spirit Leech (Neurothrope only)" id="2a9c-d1c3-bf9a-bdc4" hidden="false">
+              <description>Once per turn, when the unit's psychic weapons cause unsaved Wounds, one friendly Tyranid unit within 12" restores one lost Wound</description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="6f19-98b8-6c03-20a7" primary="false" name="Infantry Unit Type" />
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="ee51-0124-16c0-6b48" primary="false" name="Character" />
@@ -13344,33 +13346,6 @@
         <rule name="Burrow" id="c124-5c13-37d9-c65c" hidden="false">
           <description>Instead of moving in your Movement phase, the unit may burrow. Remove it from the battlefield; at the start of your next Movement phase it arrives by Subterranean Assault without a Reserves roll. A unit that arrives this way may still charge that turn</description>
         </rule>
-        <rule name="Distend Dorsal Sac (Venomspitter)" id="aefb-6b65-bba3-e0a5" hidden="false">
-          <description>Once per game, before shooting, the Venomspitter's venom bolt gains Rending (5+) and +1 shot, and its range becomes 18" until the end of the phase</description>
-        </rule>
-        <rule name="Hypersensory Hunter (Tremorscythe)" id="eeb9-b991-7dbb-d799" hidden="false">
-          <description>The unit may declare a charge in the same turn it arrives from burrowing</description>
-        </rule>
-        <rule name="Instinctive Hunter (Warrior)" id="05cd-3b18-c3f4-3343" hidden="false">
-          <description>Each Ravener Warrior's melee weapons gain Rending (5+) against enemy units that have lost at least one model or Wound, or that Fell Back in their last turn</description>
-        </rule>
-        <rule name="Neuropredatory Crest (Prime)" id="fa35-df87-593a-d81a" hidden="false">
-          <description>Enemy units within 3" of the Prime may not re-roll to-hit, to-wound or saving throws, and count as having half their models (rounding down) when holding or contesting objectives</description>
-        </rule>
-        <rule name="Reinforced Carapace (Wrecker)" id="81b7-b427-4f56-f526" hidden="false">
-          <description>Attacks with Strength 8 or higher subtract 1 from their Strength when targeting the Wrecker</description>
-        </rule>
-        <rule name="Subterranean Ambush (Tremorscythe)" id="add2-2764-0741-7382" hidden="false">
-          <description>While the Tremorscythe lives, the unit may use this Advanced Reaction in the Movement phase. Trigger: an enemy unit ends a move within 6" of the unit, or within 6" of where the unit burrowed if it is underground. The unit makes a Shooting Attack against the triggering unit, or arrives (if underground) by Subterranean Assault within 6" of it without scattering</description>
-        </rule>
-        <rule name="Synapse Creature (Prime only)" id="a2ff-c245-273a-5a7f" hidden="false">
-          <description>While the Prime lives, the unit counts as within Synapse range</description>
-        </rule>
-        <rule name="Synaptic Link (Prime)" id="4e55-55ff-cd4a-a55f" hidden="false">
-          <description>At the start of each of your turns, roll a D6. If the result is at least twice the current game turn number, your army may make one additional reaction this game turn. If it is less than the game turn number, the Prime suffers one wound with no saves allowed</description>
-        </rule>
-        <rule name="Toxic Lunge (Felltalon)" id="3d79-5f93-2a53-fe9d" hidden="false">
-          <description>Once per game, at the start of the Assault phase, one enemy unit within 2" of the Felltalon suffers D3+2 hits at Strength 4, AP 5, with Poisoned (3+)</description>
-        </rule>
         <rule name="Note" id="afb4-6bd4-f850-ebfd" hidden="false">
           <description>A brood of specialised Raveners led by a Prime, bred to tunnel beneath enemy lines and erupt among them. Converted from the Kill Team: Typhon datacards.</description>
         </rule>
@@ -13436,6 +13411,17 @@
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule name="Neuropredatory Crest (Prime)" id="fa35-df87-593a-d81a" hidden="false">
+              <description>Enemy units within 3" of the Prime may not re-roll to-hit, to-wound or saving throws, and count as having half their models (rounding down) when holding or contesting objectives</description>
+            </rule>
+            <rule name="Synapse Creature (Prime only)" id="a2ff-c245-273a-5a7f" hidden="false">
+              <description>While the Prime lives, the unit counts as within Synapse range</description>
+            </rule>
+            <rule name="Synaptic Link (Prime)" id="4e55-55ff-cd4a-a55f" hidden="false">
+              <description>At the start of each of your turns, roll a D6. If the result is at least twice the current game turn number, your army may make one additional reaction this game turn. If it is less than the game turn number, the Prime suffers one wound with no saves allowed</description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink targetId="6d79-a3e4-381f-7b0f" id="e95c-ee06-c0b5-8720" primary="false" name="Cavalry Unit Type" />
             <categoryLink targetId="7d95-f9d1-440a-67bd" id="dddf-83a3-36cb-e396" primary="false" name="Monstrous Sub-type" />
@@ -13498,6 +13484,11 @@
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule name="Toxic Lunge (Felltalon)" id="3d79-5f93-2a53-fe9d" hidden="false">
+              <description>Once per game, at the start of the Assault phase, one enemy unit within 2" of the Felltalon suffers D3+2 hits at Strength 4, AP 5, with Poisoned (3+)</description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink targetId="6d79-a3e4-381f-7b0f" id="8a15-e7ea-0f84-603c" primary="false" name="Cavalry Unit Type" />
             <categoryLink targetId="7d95-f9d1-440a-67bd" id="ff8c-b3f6-ae75-d811" primary="false" name="Monstrous Sub-type" />
@@ -13565,6 +13556,14 @@
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule name="Hypersensory Hunter (Tremorscythe)" id="eeb9-b991-7dbb-d799" hidden="false">
+              <description>The unit may declare a charge in the same turn it arrives from burrowing</description>
+            </rule>
+            <rule name="Subterranean Ambush (Tremorscythe)" id="add2-2764-0741-7382" hidden="false">
+              <description>While the Tremorscythe lives, the unit may use this Advanced Reaction in the Movement phase. Trigger: an enemy unit ends a move within 6" of the unit, or within 6" of where the unit burrowed if it is underground. The unit makes a Shooting Attack against the triggering unit, or arrives (if underground) by Subterranean Assault within 6" of it without scattering</description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink targetId="6d79-a3e4-381f-7b0f" id="cb98-b54c-7764-a0ed" primary="false" name="Cavalry Unit Type" />
             <categoryLink targetId="7d95-f9d1-440a-67bd" id="ca01-5f8d-ebe8-9828" primary="false" name="Monstrous Sub-type" />
@@ -13626,6 +13625,11 @@
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule name="Distend Dorsal Sac (Venomspitter)" id="aefb-6b65-bba3-e0a5" hidden="false">
+              <description>Once per game, before shooting, the Venomspitter's venom bolt gains Rending (5+) and +1 shot, and its range becomes 18" until the end of the phase</description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink targetId="6d79-a3e4-381f-7b0f" id="d81a-7020-c332-efb8" primary="false" name="Cavalry Unit Type" />
             <categoryLink targetId="7d95-f9d1-440a-67bd" id="9631-91da-5f5b-fd9f" primary="false" name="Monstrous Sub-type" />
@@ -13735,6 +13739,11 @@
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule name="Instinctive Hunter (Warrior)" id="05cd-3b18-c3f4-3343" hidden="false">
+              <description>Each Ravener Warrior's melee weapons gain Rending (5+) against enemy units that have lost at least one model or Wound, or that Fell Back in their last turn</description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink targetId="6d79-a3e4-381f-7b0f" id="e4ba-1abb-597c-db9c" primary="false" name="Cavalry Unit Type" />
             <categoryLink targetId="7d95-f9d1-440a-67bd" id="82ed-04b5-c37c-71c4" primary="false" name="Monstrous Sub-type" />
@@ -13796,6 +13805,11 @@
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule name="Reinforced Carapace (Wrecker)" id="81b7-b427-4f56-f526" hidden="false">
+              <description>Attacks with Strength 8 or higher subtract 1 from their Strength when targeting the Wrecker</description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink targetId="6d79-a3e4-381f-7b0f" id="186c-4d24-9e08-dbe9" primary="false" name="Cavalry Unit Type" />
             <categoryLink targetId="7d95-f9d1-440a-67bd" id="4bff-20b7-f7f8-3dab" primary="false" name="Monstrous Sub-type" />

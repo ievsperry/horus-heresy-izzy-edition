@@ -1480,7 +1480,8 @@ class Builder:
         # drop headers whose rows were all drones
         ds["options"] = [r for i, r in enumerate(keep)
                          if r[0].startswith(("–", "-")) or (i + 1 < len(keep) and keep[i + 1][0].startswith(("–", "-")))
-                         or not r[0].startswith("**")]
+                         or not r[0].startswith("**")
+                         or (len(r) > 1 and r[1].strip())]  # "**One Pathfinder may be upgraded to a Blooded** | +5"
         for row in rows:
             if "difference in drone costs" in (row[1] if len(row) > 1 else "").lower():
                 spec = {"types": self.drone_names(strip_md(row[0]).lstrip("– ")), "swap": True}
@@ -4825,6 +4826,7 @@ class Builder:
         self.apply_rule_choices()
         self.share_namesake_profiles()
         self.exact_named_rules()
+        self.specialist_rules()
         if self.faction in FACTION_LIMITS:
             importlib.import_module(FACTION_LIMITS[self.faction]).apply(self)
         self.root.append(self.shared_entries)
@@ -4838,6 +4840,42 @@ class Builder:
                    id=make_id("library", self.faction, lname), targetId=lib, importRootEntries=False)
         sort_children(self.root)
         return self.root
+
+    def specialist_rules(self):
+        """A unit's own rule that belongs to one of its models goes on that model, so it prints with it: the
+        model of the same name ("Medical Technician", "Cold-blooded"), the model it starts ("Transpectral
+        Interference" for the Transpectral Interference Specialist), the model in its brackets ("Distend
+        Dorsal Sac (Venomspitter)", "Synapse Creature (Prime only)"), or the one model a "while he lives"
+        rule names ("Drone Specialist": the Drone Controller's Ballistic Skill)."""
+        for unit in self.shared_entries.findall("selectionEntry[@type='unit']"):
+            models = [m for m in unit.iter("selectionEntry") if m.get("type") == "model"]
+            names = {m.get("name") for m in models}
+            if len(names) < 2:
+                continue
+            # a model the unit must have ("Gun crew") keeps a same-named rule on the unit: it is the unit's rule
+            optional = {m.get("name") for m in models
+                        if any(c.get("type") == "min" and c.get("value") == "0" for c in m.findall("constraints/constraint"))}
+            rules = unit.find("rules")
+            for r in list(rules) if rules is not None else []:
+                name, text = r.get("name") or "", r.findtext("description") or ""
+                key = norm(re.sub(r"\s*\(.*?\)", "", name))
+                paren = re.search(r"\(([^)]+?)(?: only)?\)$", name)
+                hit = [n for n in optional if norm(n) == key or norm(n).startswith(key + " ")]
+                if not hit and paren:
+                    hit = [n for n in names if norm(n) == norm(paren.group(1))
+                           or norm(n).endswith(" " + norm(paren.group(1)))]
+                if not hit and re.search(r"while (?:he|she|it) lives", text):
+                    hit = [n for n in names if re.search(r"\b" + re.escape(n) + r"\b", text)]
+                if len(set(hit)) != 1:
+                    continue
+                rules.remove(r)
+                for i, m in enumerate(mm for mm in models if mm.get("name") == hit[0]):
+                    copy = r if i == 0 else ET.fromstring(ET.tostring(r))
+                    if i:
+                        copy.set("id", make_id(r.get("id"), m.get("id")))
+                    child(m, "rules").append(copy)
+            if rules is not None and not len(rules):
+                unit.remove(rules)
 
     def exact_named_rules(self):
         """"Scorpion's Sting (1)" in a weapon's Type: the list apps find the rule by the name in the text, and
