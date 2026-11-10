@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -628,6 +628,19 @@
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="159a-0b92-ae14-6b65" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="5bea-ffaa-c1ed-29cf" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Beastmasters" hidden="false" id="c401-a395-db32-30e1" type="selectionEntry" targetId="0a3b-9786-cd55-ee21">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="67b7-e6c0-508e-2918" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="d998-8e39-7b3b-fcd3" primary="true" name="Fast Attack:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="81ac-2cf4-c9e6-9f70" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Razorwing Jetfighter" hidden="false" id="a108-e46f-f0e9-6b34" type="selectionEntry" targetId="c796-0417-a8ef-120b">
@@ -3817,7 +3830,15 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="145" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Combat Drugs (2)" hidden="false" id="d309-aec1-eb52-ba04" publicationId="9356-fc9b-2fee-7d11" />
+    <selectionEntry type="upgrade" import="true" name="Combat Drugs (2)" hidden="false" id="d309-aec1-eb52-ba04" publicationId="9356-fc9b-2fee-7d11">
+      <infoLinks>
+        <infoLink name="Combat Drugs (X)" id="25d3-f971-fd13-f242" hidden="false" targetId="c076-e675-7af7-9383" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Combat Drugs (2)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Succubus" hidden="false" id="c022-08d8-b3bd-3a2e" publicationId="9356-fc9b-2fee-7d11">
       <infoLinks>
         <infoLink name="Xenos" id="40ce-4edf-a442-e91f" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
@@ -9106,9 +9127,9 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="59f3-1ec2-2145-e709">
               <entryLinks>
-                <entryLink import="true" name="Additional splinter cannon" hidden="false" id="380a-90cf-61f4-8f05" type="selectionEntry" targetId="d008-7aab-6964-094f">
+                <entryLink import="true" name="Splinter cannon" hidden="false" id="182c-6c47-3b9b-ddf6" type="selectionEntry" targetId="4804-cfe3-384a-5d6c">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5da1-01a7-8f25-bd53" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f7a-77a0-1cb1-4547" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -9217,7 +9238,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Additional splinter cannon" hidden="false" id="d008-7aab-6964-094f" publicationId="9356-fc9b-2fee-7d11" />
     <selectionEntry type="unit" import="true" name="Hellions" hidden="false" id="1073-aa80-2458-219c" publicationId="9356-fc9b-2fee-7d11">
       <modifiers>
         <modifier type="add" field="category" value="6399-5c65-7833-1025">
@@ -10025,6 +10045,259 @@
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="22" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Beastmasters" hidden="false" id="0a3b-9786-cd55-ee21" publicationId="9356-fc9b-2fee-7d11">
+      <rules>
+        <rule name="Khymerae" id="7906-e02f-5f3a-8f71" hidden="false">
+          <description>Invulnerable save (5+)</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="6d06-4f50-bec3-01c0" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Combat Drugs (X)" id="b17e-e9b9-e045-80fe" hidden="false" targetId="c076-e675-7af7-9383" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Combat Drugs (1) (Beastmaster only)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Invulnerable Save (X)" id="85f1-7e3c-464e-2adc" hidden="false" targetId="2d12-951d-7304-58f8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (5+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Night Vision" id="7fe3-2721-7960-e3f9" hidden="false" targetId="bb43-b436-18ab-1c61" type="rule" />
+        <infoLink name="Aeldari (X)" id="d282-f6c3-2cdf-3842" hidden="false" targetId="fbd1-9907-8259-c689" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Aeldari (Drukhari, Wych Cult)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Power From Pain" id="95f2-4edc-ae0b-4b9a" hidden="false" targetId="ceac-7e1a-2851-4684" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="a4c1-f6f2-8fc5-85e8" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Beastmaster" hidden="false" id="8035-ebeb-e42f-54a9" publicationId="9356-fc9b-2fee-7d11">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0414-1ae8-5214-7430" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="47cb-86bf-14e9-2e21" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Beastmaster" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="c6b2-37d6-5257-d643" publicationId="9356-fc9b-2fee-7d11">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Jump, Character)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">14</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">6+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Beast Packs" id="05a2-51ca-ff54-46e5" hidden="false">
+              <description>Beasts may only use the Beastmaster's Leadership while he lives; if he is slain, the beasts become subject to Rage (2)</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="275c-c7b4-2717-16bd" primary="false" name="Infantry Unit Type" />
+            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="4156-cb95-768a-ce65" primary="false" name="Character" />
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Splinter pods" hidden="false" id="dd01-9589-5b11-21f6" type="selectionEntry" targetId="de89-aabb-d1ac-8d70">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="317c-4c30-057f-277d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee79-7b6f-c6b8-8ca1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Agoniser whip" hidden="false" id="e6b4-a3c4-2f05-e645" type="selectionEntry" targetId="068a-3658-358f-6832">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a83-0bff-6ccb-6acc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac84-d081-6696-9450" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Wych Armour" hidden="false" id="8759-4a31-5a4c-74f5" type="selectionEntry" targetId="9a01-d1c3-5a97-430b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4919-9422-bbeb-0cf9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9846-ad71-8e64-164e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Khymera" hidden="false" id="b97f-38b1-0841-b853" publicationId="9356-fc9b-2fee-7d11">
+          <modifiers>
+            <modifier type="increment" field="4804-c9b9-bec6-8532" value="5">
+              <repeats>
+                <repeat field="selections" scope="0a3b-9786-cd55-ee21" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8035-ebeb-e42f-54a9" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f2bf-1463-d3b8-d804" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4804-c9b9-bec6-8532" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Khymera" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="5126-12d6-4050-9f27" publicationId="9356-fc9b-2fee-7d11">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">12</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">0</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">–</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="98cc-5da7-a66c-7e7a" primary="false" name="Cavalry Unit Type" />
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Claws and teeth" hidden="false" id="338c-a138-335c-18c5" type="selectionEntry" targetId="4a05-3651-d26d-acb3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c39-d35a-33d2-d643" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98bc-13e4-d382-ef13" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Clawed Fiend" hidden="false" id="b31a-944e-af06-d6e4" publicationId="9356-fc9b-2fee-7d11">
+          <modifiers>
+            <modifier type="increment" field="0f12-d005-88b5-01f4" value="2">
+              <repeats>
+                <repeat field="selections" scope="0a3b-9786-cd55-ee21" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8035-ebeb-e42f-54a9" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ccee-bedd-456a-423b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0f12-d005-88b5-01f4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Clawed Fiend" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="ca46-5df9-2db7-d0bd" publicationId="9356-fc9b-2fee-7d11">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">10</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">0</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">–</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="3c12-c2df-4d9f-ad7b" primary="false" name="Cavalry Unit Type" />
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Claws and teeth" hidden="false" id="4ad8-263a-5544-6b3f" type="selectionEntry" targetId="4a05-3651-d26d-acb3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe82-fa99-2ba6-fc0e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e239-2f38-df8d-6f00" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Razorwing Flock" hidden="false" id="a717-9dd3-8493-ebc4" publicationId="9356-fc9b-2fee-7d11">
+          <modifiers>
+            <modifier type="increment" field="3a52-0910-c5fe-6450" value="5">
+              <repeats>
+                <repeat field="selections" scope="0a3b-9786-cd55-ee21" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8035-ebeb-e42f-54a9" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6505-4fd1-2f1a-a5ca" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3a52-0910-c5fe-6450" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Razorwing Flock" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="10c4-e760-2336-b6a8" publicationId="9356-fc9b-2fee-7d11">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Jump)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">14</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">0</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">–</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Razorwing Flock" id="970d-cd16-0e34-497d" hidden="false">
+              <description>Swarm</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="1a7b-8785-9c16-45d3" primary="false" name="Infantry Unit Type" />
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Claws and teeth" hidden="false" id="73bd-8b67-a747-1d6e" type="selectionEntry" targetId="4a05-3651-d26d-acb3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b067-b655-72a0-f0b9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bf6-7b8f-7f3d-6b37" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="154f-27f0-1416-38f8">
+          <modifiers>
+            <modifier type="set" field="56cc-bd8b-c611-70e6" value="0">
+              <conditions>
+                <condition type="greaterThan" value="20" field="selections" scope="0a3b-9786-cd55-ee21" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56cc-bd8b-c611-70e6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Raider" hidden="false" id="fe24-6188-c254-2de3" type="selectionEntry" targetId="4153-e526-d4bf-727e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8e5-f3ef-d246-8a24" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Venom" hidden="false" id="dd96-b36d-2b0a-6248" type="selectionEntry" targetId="c446-630f-82a5-7611">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65d7-6ea8-3c9d-99af" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Razorwing Jetfighter" hidden="false" id="c796-0417-a8ef-120b" publicationId="9356-fc9b-2fee-7d11">

@@ -3002,6 +3002,8 @@ class Builder:
                    hidden=False, id=eid, publicationId=self.pub_id)
             if "(" not in name and norm(name) in self.local_rules:
                 self.link_rule(e, name, eid)  # an option that is one of the doc's rules ("Master of the Void")
+            elif re.fullmatch(r".+? \(\d+\+?\"?\)", name) and self.rule_target(re.sub(r" \(.*\)$", "", name)):
+                self.link_rule(e, name, eid)  # a rule with its value: "Combat Drugs (2)"
             m = re.match(r"(.+?) \((.+)\)$", name)
             if m and len(m.group(2)) > 6:
                 e.set("name", m.group(1))

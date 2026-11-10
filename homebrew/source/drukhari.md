@@ -1480,7 +1480,7 @@ _A model equipped with a stimm-needler may not exchange its splinter rifle._
 | **The Venom may exchange its twin-linked splinter rifle for:** |  |
 | – Splinter cannon | +5 points |
 | **The Venom may take:** |  |
-| – Additional splinter cannon | +10 points |
+| – Splinter cannon | +10 points |
 | **The Venom may take one of the following:** |  |
 | – Bladevanes | +10 points |
 | – Chain-snares | +10 points |
@@ -1645,7 +1645,7 @@ _Fleet values granted to this unit are added to Run moves and Jet Pack moves._
 | – Shredder | +5 points each |
 | – Heat blaster | +10 points each |
 
-### Beastmasters — 15 pts, plus beasts
+### Beastmasters — 15 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1661,12 +1661,13 @@ _Fleet values granted to this unit are added to Run moves and Jet Pack moves._
 **Wargear**
 
 - Beastmaster: splinter pods, agoniser whip, Wych armour
-- Beasts: claws and teeth
+- Khymera, Clawed Fiend and Razorwing Flock: claws and teeth
 
 **Unit Type**
 
 - Beastmaster: Infantry (Jump, Character)
-- Khymera and Clawed Fiend: Cavalry
+- Khymera: Cavalry
+- Clawed Fiend: Cavalry
 - Razorwing Flock: Infantry (Jump)
 
 **Special Rules**
@@ -1683,11 +1684,12 @@ _Fleet values granted to this unit are added to Run moves and Jet Pack moves._
 
 | Option | Cost |
 | --- | --: |
-| **The unit may include up to 5 Beastmasters, and for each Beastmaster up to:** |  |
-| – 5 Khymerae | +10 points each |
-| – 2 Clawed Fiends | +40 points each |
-| – 5 Razorwing Flocks | +15 points each |
-| – Additional Beastmaster | +12 points each |
+| **The unit may include:** |  |
+| – Up to 4 additional Beastmasters | +12 points each |
+| **Each Beastmaster may take:** |  |
+| – Up to 5 Khymera | +10 points each |
+| – Up to 2 Clawed Fiends | +40 points each |
+| – Up to 5 Razorwing Flocks | +15 points each |
 
 ### Razorwing Jetfighter — 130 pts
 

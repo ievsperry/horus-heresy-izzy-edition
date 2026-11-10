@@ -119,6 +119,7 @@ loading. The script prints anything in the doc it could not place.
   Purgation and Purifier Squads, Nemesis Dreadknight); the official Dreadnoughts know Purge Soul and Sanctuary.
 - A Warlord Traits section may list its generic traits as "### Name" sub-sections, "#### Name" headings (T'au) or
   "- **Name:** text" bullets (Grey Knights); a leading flavour line is left out of the trait's text.
+- An option named after a rule with its value ("Combat Drugs (2)") links that rule.
 - Leagues of Votann may be Loyalist, Traitor or Xenos: the army does not force an allegiance and its units do
   not have the Xenos rule. Each detachment picks a League, and a character's own weapon
   profiled in its datasheet (the Arkanyst Evaluator's transmatter inverter, Berehk Stornbröw's Kromlôk's Revenge)
