@@ -187,7 +187,8 @@ OFFICIAL_ALIASES = {"storm bolter": "combi-bolter", "boltgun": "bolter", "force 
                     "assault cannon": "kheres assault cannon", "twin assault cannon": "twin-linked kheres assault cannon",
                     "twin heavy bolter": "gravis bolt cannon", "twin lascannon": "gravis lascannon",
                     "twin multi-melta": "gravis melta cannon", "frag assault launchers": "frag launchers",
-                    "ancestral ward stave": "force staff"}  # Votann
+                    "ancestral ward stave": "force staff",  # Votann
+                    "autogun": "autorifle", "telepathy stave": "force staff"}  # Astra Militarum: the 2.0 names
 
 
 def load_official_items(root=None):
@@ -3023,6 +3024,8 @@ class Builder:
             if m and len(m.group(2)) > 6:
                 e.set("name", m.group(1))
                 add_text_profile(e, WARGEAR_PROFILE, m.group(1), m.group(2)[0].upper() + m.group(2)[1:], eid)
+            if re.search(r"\bone per army\b", name, re.I):  # "Knight Commander Pask (...; one per army)"
+                add_constraint(e, "max", 1, eid + "army", scope="roster", children=True)
             for pname, pid in self.powers:
                 if re.search(r"knows " + re.escape(pname), name, re.I):
                     self.link(child(e, "entryLinks"), pid, pname, eid, count=1)

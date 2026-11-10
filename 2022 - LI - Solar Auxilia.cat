@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="58" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="59" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -25053,7 +25053,37 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Turret Mounted Oppressor Cannon with Co-axial Autocannon" hidden="false" id="3db2-9119-847d-45cb"/>
+    <selectionEntry type="upgrade" import="true" name="Turret Mounted Oppressor Cannon with Co-axial Autocannon" hidden="false" id="3db2-9119-847d-45cb">
+      <profiles>
+        <profile name="Oppressor Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="18c7-195e-2d8b-b157">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Brutal (3), Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Brutal (X)" hidden="false" id="3810-ec02-5f00-979d" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (3)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Sunder" hidden="false" id="0e9d-2f75-e1cc-3d07" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Co-axial Autocannon" hidden="false" id="98b4-f17c-ad65-e2e4" type="selectionEntry" targetId="56b3-de09-9fea-deb6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf25-63f7-55d6-2ddd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e84-cdfa-04fa-2a23" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Heavy Stubbers" hidden="false" id="edd8-aaa7-d61e-a44e">
       <entryLinks>
         <entryLink import="true" name="Two Sponson Mounted Heavy Stubbers" hidden="false" id="b1fc-f86c-eeb0-dab2" type="selectionEntry" targetId="f227-a61a-3215-932b">

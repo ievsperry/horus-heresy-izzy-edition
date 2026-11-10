@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -5512,9 +5512,9 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="1371-16a4-61b7-dfbd">
               <entryLinks>
-                <entryLink import="true" name="Two hurricane bolter sponsons" hidden="false" id="bc10-7f24-e570-a219" type="selectionEntry" targetId="2b6a-0c4d-dad0-7ba8">
+                <entryLink import="true" name="Two Sponson Mounted Hurricane Bolters" hidden="false" id="5337-0c20-fd69-718d" type="selectionEntry" targetId="16fc-cff9-690e-aacd">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5be-28fe-263c-2a35" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec5d-5738-883c-9746" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
@@ -5540,7 +5540,16 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Two hurricane bolter sponsons" hidden="false" id="2b6a-0c4d-dad0-7ba8" publicationId="c336-0f01-71db-7a8f" />
+    <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Hurricane Bolters" hidden="false" id="16fc-cff9-690e-aacd" publicationId="c336-0f01-71db-7a8f">
+      <entryLinks>
+        <entryLink import="true" name="Hurricane bolter" hidden="false" id="7bcc-7799-1ab3-ce12" type="selectionEntry" targetId="cebb-35e4-6870-86d6">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9188-310a-96e8-4135" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a7a6-b1ef-e86d-61b8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Land Raider Crusader" hidden="false" id="1ae5-f2f4-f0eb-de51" publicationId="c336-0f01-71db-7a8f">
       <rules>
         <rule name="Assault Vehicle" id="a009-5704-43a9-444a" hidden="false">

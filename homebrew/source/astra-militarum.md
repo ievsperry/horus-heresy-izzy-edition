@@ -1961,7 +1961,7 @@ A unit of no more than 12 models may take a Chimera or Taurox as a Dedicated Tra
 | Option | Cost |
 | --- | --: |
 | **The battery may take:** |  |
-| – One additional Field Gun with 2 crew | +50 points |
+| – Up to 1 additional Field Gun, each with 2 Gun crew | +50 points |
 | **Any Field Gun may exchange its bombast field gun for:** |  |
 | – Malleus rocket launcher | +0 points |
 | – Heavy lascannon | +10 points |
@@ -2047,7 +2047,8 @@ Use this datasheet only for the turret variants without an official 2.0 version;
 | – Pintle Mounted storm bolter or heavy stubber | +5 points |
 | – Hunter-killer missile | +10 points |
 | – Track guards | +10 points |
-| **One Leman Russ in the army may be upgraded to Knight Commander Pask (BS 4, Tank Orders (2), Unique)** | +50 points |
+| **One Leman Russ in the army may be upgraded to:** |  |
+| – Knight Commander Pask (BS 4, Tank Orders (2), Unique; one per army) | +50 points |
 
 ### Manticore — 135 pts
 
@@ -2107,9 +2108,9 @@ Use this datasheet only for the turret variants without an official 2.0 version;
 | – Castigator gatling cannon | +0 points |
 | – Oppressor cannon | +10 points |
 | **The Rogal Dorn may take:** |  |
-| – Two sponson multi-meltas | +30 points |
-| – Two sponson heavy stubbers | +10 points |
-| – Pask's Command: upgrade to Knight Commander Pask, as the Leman Russ option | +50 points |
+| – Two Sponson Mounted Multi-meltas | +30 points |
+| – Two Sponson Mounted Heavy Stubbers | +10 points |
+| – Knight Commander Pask (BS 4, Tank Orders (2), Unique; one per army) | +50 points |
 
 ### Wyvern — 65 pts
 
@@ -2215,6 +2216,12 @@ Only one of each heirloom may be taken per army.
 ## Wargear
 
 Wargear that already exists in 2.0 (frag and krak grenades, melta bombs, smoke launchers, hunter-killer missiles, dozer blades) uses its official rules. House rule: smoke launchers grant Shrouded (5+) instead of their 6+ Cover Save; the official rule is kept alongside it in the game system.
+
+### Artillery Vox-link
+
+*A long-range vox array tied into the regiment's artillery fire-control net.*
+
+The Master of Ordnance uses the artillery vox-link to Call In the Barrage and to act as a Range Finder (see his datasheet).
 
 ### Brute Shield
 

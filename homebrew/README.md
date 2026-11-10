@@ -120,6 +120,8 @@ loading. The script prints anything in the doc it could not place.
 - A Warlord Traits section may list its generic traits as "### Name" sub-sections, "#### Name" headings (T'au) or
   "- **Name:** text" bullets (Grey Knights); a leading flavour line is left out of the trait's text.
 - An option named after a rule with its value ("Combat Drugs (2)") links that rule.
+- An option whose name says "one per army" ("Knight Commander Pask (...; one per army)") may be taken once in the
+  roster. The 40k "autogun" and "telepathy stave" are the 2.0 Autorifle and Force Staff.
 - An option named after a game system rule ("Twin-Linked", "Master-Crafted") links it; "Master-Crafted Power
   Weapon" is the weapon with Master-crafted; "Two Solarite Power Talons" is two of the official weapon. An official
   weapon whose profiles sit on its sub-entries (the Meridian Swords' three forms) is copied with all of them.
@@ -481,6 +483,9 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
 - `homebrew/expansion_tools.py` holds what the expansion scripts below share: building the doc's units with the
   Builder, moving them into an official catalogue linked to the official entries wherever those exist, and editing
   the official file as text so it keeps its formatting.
+- `python3 homebrew/fix_solar_auxilia_links.py` gives the Solar Auxilia Praetorian's "Turret Mounted Oppressor Cannon
+  with Co-axial Autocannon" option its weapons (the Oppressor Cannon profile and the game system's Autocannon), which
+  add_solar_auxilia.py had left as an empty entry.
 - `python3 homebrew/fix_sisters_of_silence_links.py` points the expansion units' weapons and wargear that the doc
   only names (Execution Blade, Vratine Bolter, Melta Bombs, ...) at the official entries, and copies in the Legio
   Custodes profiles the Sisters of Silence catalogue cannot import (Corvae Las-Pulser, Solarite Power Lance,

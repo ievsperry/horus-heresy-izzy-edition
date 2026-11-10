@@ -1050,7 +1050,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Heavy psycannon | +15 points |
 | – Gatling psilencer | +10 points |
 | **The Stormraven may take:** |  |
-| – Two hurricane bolter sponsons | +20 points |
+| – Two Sponson Mounted Hurricane Bolters | +20 points |
 
 ## Heavy Support
 
