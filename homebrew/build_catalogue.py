@@ -318,11 +318,14 @@ def normalise_headings(text):
                 stack.pop()
             new = min(level, stack[-1][1] + 1) if stack else level
             stack.append((level, new))
+            skipped = new < level  # "## Warlord Traits" then "#### Precision of the Hunter": already one level down
             ln = "#" * new + " " + m.group(2)
             m = re.match(r"(#{2,6}) (.+)", ln)
+        else:
+            skipped = False
         if m and len(m.group(1)) == 2:
             parent = m.group(2).strip()
-        if m and len(m.group(1)) >= 3:
+        if m and len(m.group(1)) >= 3 and not skipped:
             title = m.group(2).strip()
             if len(m.group(1)) == 3 and parent == "Wargear" and "Armoury" not in title and "Wargear" not in title:
                 title += " Wargear"
@@ -2620,7 +2623,24 @@ class Builder:
         g = el(self.shared_groups, "selectionEntryGroup", name="Warlord Traits", hidden=False, id=wid)
         add_constraint(g, "max", 1, wid + "max")
         ses = el(g, "selectionEntries")
-        traits = [(s["title"], " ".join(paragraphs(s["lines"])), None) for s in wl["subs"]]
+        def body(lines):  # its first line is the flavour ("A patient hunter who...") when the rule follows
+            ps = paragraphs(lines)
+            return " ".join(ps[1:] if len(ps) > 1 else ps)
+        traits = [(s["title"], body(s["lines"]), None) for s in wl["subs"]]
+        # "#### Precision of the Hunter" and its paragraphs (T'au), or "- **Daemonslayer:** text" (Grey Knights)
+        cur = None
+        for ln in wl["lines"]:
+            h = re.match(r"#### (.+)", ln)
+            b = re.match(r"- \*\*(.+?):\*\* (.+)", ln)
+            if h:
+                cur = [h.group(1).strip(), []]
+                traits.append(cur)
+            elif b:
+                cur = None
+                traits.append([b.group(1), b.group(2)])
+            elif cur is not None:
+                cur[1].append(ln)
+        traits = [t if len(t) == 3 else (t[0], t[1] if isinstance(t[1], str) else body(t[1]), None) for t in traits]
         for fleets, _, _ in self.subfaction_sections():  # sub-factions, then Obsessions
             for sub in fleets["subs"]:
                 for ln in sub["lines"]:

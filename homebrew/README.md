@@ -106,6 +106,8 @@ loading. The script prints anything in the doc it could not place.
   ("Hull (Front) Mounted heavy bolter" is the official heavy bolter). Wargear marked "(Sergeant only)"
   replaces that model's weapons, and "Flamer, grenade launcher or sniper rifle" is one pick of three.
 
+- A Warlord Traits section may list its generic traits as "### Name" sub-sections, "#### Name" headings (T'au) or
+  "- **Name:** text" bullets (Grey Knights); a leading flavour line is left out of the trait's text.
 - Grey Knights are not Xenos either: like the Astra Militarum, the army may be Loyalist or Traitor. Each
   detachment picks one Brotherhood (1st to 8th), which gives its units Brotherhood (X) with that Brotherhood's
   rules, Advanced Reaction and Warlord Trait. Wargear the doc marks with an asterisk ("Storm bolter\*") keeps its

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -13945,7 +13945,7 @@ O'Vesa may re-roll the Leadership test.</description>
       </modifiers>
       <rules>
         <rule name="Communications Specialist" id="2fa1-7dd8-87b8-2e1f" hidden="false">
-          <description>While he lives, the unit may re-roll failed Reserves rolls, and friendly units spending this unit's Markerlight tokens gain one extra token's effect</description>
+          <description>While he lives, the unit may re-roll failed Reserves rolls, and each hit from the unit's markerlights places one extra Markerlight token</description>
         </rule>
         <rule name="Drone Specialist" id="d029-0257-762a-6dd8" hidden="false">
           <description>Drones in the unit use the Drone Controller's Ballistic Skill while he lives</description>
@@ -18930,6 +18930,60 @@ Except that instead of extra heavy burst cannon shots, the Y'vahra may choose No
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc39-dbe5-897a-8c30" percentValue="false" includeChildSelections="false" includeChildForces="false" />
       </constraints>
       <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Exemplar of the Kauyon" hidden="false" id="b3ac-7b8b-7969-711e" publicationId="733a-d454-80f2-c90e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7610-237a-6439-f56e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Exemplar of the Kauyon" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="46b8-cf4b-b196-395b">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">You may re-roll one Reserves roll each turn. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Movement phase, above its normal Reaction Allotment.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="8a90-0141-b1bc-71ba" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Precision of the Hunter" hidden="false" id="e9c9-99ea-88ce-010d" publicationId="733a-d454-80f2-c90e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35d3-6e9c-a41c-7a00" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Precision of the Hunter" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="bdd2-8511-8cd0-0c76">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Each hit from the markerlights of friendly units within 12" of the Warlord places one extra Markerlight token. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Shooting phase, above its normal Reaction Allotment.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="1a06-5574-c811-36c2" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Through Unity, Devastation" hidden="false" id="d4f4-b249-e388-a71d" publicationId="733a-d454-80f2-c90e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4afd-13d8-f8ff-aa2c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Through Unity, Devastation" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="4d62-fa65-7ad4-69ba">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When a friendly unit within 12" of the Warlord uses Supporting Fire, one additional unit may fire Overwatch. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="1158-146a-d9a0-39ad" id="521c-3c2d-0547-e791" primary="true" name="Warlord Traits:" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Master Engineer" hidden="true" id="6315-555e-0069-4834" publicationId="733a-d454-80f2-c90e">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -19109,7 +19163,7 @@ Except that instead of extra heavy burst cannon shots, the Y'vahra may choose No
       <description>Some weapons, either due to a restricted capacity to store shells, a terrifying rate of fire or a complex loading mechanism, are prone to running out of ammunition in the heat of battle. Once drained of their reserves, these weapons become little more than burdens to their wielders, impotent until the battle is concluded and specialised equipment can be used to replenish their stores. After all Shooting Attacks for a weapon with this special rule have been fully resolved, roll a D6, adding +1 if the weapon has fired before in the same battle. If the total of this roll is 6 or more then the weapon may no longer be used to make Shooting Attacks in this battle. If this weapon is unable to make further Shooting Attacks then it may not be targeted by a Weapon Destroyed result on the Vehicle Damage table, and for the purposes of such a result is treated as though it had already been destroyed.</description>
     </rule>
     <rule name="Markerlights" id="055e-aced-4c7e-9337" hidden="false" publicationId="733a-d454-80f2-c90e">
-      <description>When a model fires a markerlight, each hit places one Markerlight token on the target unit instead of causing damage. Tokens last until the end of the turn. Before another friendly unit shoots at the marked unit, it may spend tokens as follows (each token once): A seeker missile may instead spend one token to fire at Ballistic Skill 5, without line of sight to the target.</description>
+      <description>When a model fires a markerlight, each hit places one Markerlight token on the target unit instead of causing damage. Tokens last until the end of the turn. Before another friendly unit shoots at the marked unit, it may spend tokens as follows (each token once): Each effect is bought separately, for the number of tokens shown. A seeker missile may instead spend one token to fire at Ballistic Skill 5, without line of sight to the target.</description>
     </rule>
     <rule name="One Use/One Shot (Single Use)" id="c5b0-0198-8b8d-7972" hidden="false" publicationId="733a-d454-80f2-c90e">
       <description>Certain items can only be used once, so a general must choose wisely when to do so. A weapon or ability with this special rule can only be used once during the course of a battle. Once a weapon with the One Use or One Shot special rule has been used to attack, it is no longer counted as a weapon and may not be destroyed (for example, by rolls on the Vehicle Damage table) or repaired by any other rule or effect.</description>
