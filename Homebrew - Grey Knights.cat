@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -1083,16 +1083,17 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Breaching (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire (3), Twin-linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Breaching (X)" id="de62-972e-99c9-3336" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+        <infoLink name="Rapid Fire (X)" id="278f-8def-6d82-f768" hidden="false" targetId="47d7-7ac6-5c81-8002" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Breaching (6+)" />
+            <modifier type="set" field="name" value="Rapid Fire (3)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Twin-linked" id="b212-d82b-c8ca-f3aa" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stormstrike missile" hidden="false" id="84b3-04de-09b9-9c53" publicationId="c336-0f01-71db-7a8f">
@@ -1147,11 +1148,24 @@
           <characteristics>
             <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18"</characteristic>
             <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">5</characteristic>
-            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9"> 4</characteristic>
-            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Psychic; wounds on the target's Leadership instead of Toughness†</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Psychic, Sanctic, Murderous Strike (6+), Rending (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Sanctic" id="46df-03ee-c228-b5ba" hidden="false" targetId="d1c9-ee74-4e4f-8830" type="rule" />
+        <infoLink name="Murderous Strike (X)" id="01cd-baaa-7a22-d8cc" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Murderous Strike (6+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Rending (X)" id="c46c-d205-c6db-4e4c" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (6+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Purifying Flame" hidden="false" id="6217-7693-ed78-e47d" publicationId="c336-0f01-71db-7a8f">
       <profiles>
@@ -1159,13 +1173,14 @@
           <characteristics>
             <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">Template</characteristic>
             <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">5</characteristic>
-            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9"> 4</characteristic>
-            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Psychic, Shred</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Psychic, Shred, Sanctic</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Shred" id="0add-29b7-7adb-105a" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule" />
+        <infoLink name="Sanctic" id="7297-0017-c640-b9fd" hidden="false" targetId="d1c9-ee74-4e4f-8830" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vortex of Doom" hidden="false" id="28cc-8c58-6404-d337" publicationId="c336-0f01-71db-7a8f">
@@ -1174,7 +1189,7 @@
           <characteristics>
             <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">12"</characteristic>
             <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">10</characteristic>
-            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9"> 1</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">1</characteristic>
             <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Blast (3"), Psychic, Rending (6+)</characteristic>
           </characteristics>
         </profile>
@@ -1285,7 +1300,7 @@
       <profiles>
         <profile name="Astral Aim" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power" hidden="false" id="bb2c-0f95-61ca-2f43">
           <characteristics>
-            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Shooting (start) phase. The unit's ranged weapons may target units out of line of sight, and the targets gain no cover saves†</characteristic>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Movement (start) phase. The unit's ranged weapons may target units out of line of sight, and the targets gain no cover saves†</characteristic>
           </characteristics>
         </profile>
       </profiles>

@@ -401,8 +401,8 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   source's; pass `--keep-existing` to leave those alone. The file holds the Imperatus Special Rules and Unit
   Sub-types (Anathema, Asuryani, Corrupted, Guardian, Rillietann, Sycophantica). Optional rules are marked "Optional rule:": Concussion (X),
   Cover (X+), Line (X) and Rapid Fire (X) are new rules, while Grenades, Unwieldy and the Line Sub-type keep their
-  core text with the optional rule added after it. Rapid Fire (X) gives X extra shots within half range (a Rapid
-  Fire weapon with no value is Rapid Fire (1)); Line (X) scores X Victory Points for holding an Objective at the end
+  core text with the optional rule added after it. Rapid Fire (X) makes X attacks at full range and 2X within half
+  range (a Rapid Fire weapon with no value is Rapid Fire (1)); Line (X) scores X Victory Points for holding an Objective at the end
   of its player's turn (even if the player does not control it) and X more at the end of the game if the unit survives (no value means Line (1), and a unit
   that is Pinned, Stunned, Falling Back or under a similar status scores nothing). Both live only in the game
   system, so every catalogue gets them without a change of its own.

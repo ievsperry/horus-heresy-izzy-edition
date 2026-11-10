@@ -1050,7 +1050,7 @@ An enemy unit locked in combat with one or more models with this special rule su
 
 ## Rapid Fire (X)
 
-Optional rule: A model firing a Rapid Fire (X) weapon at a target within half the weapon's range makes X additional shots with it. A weapon with the Rapid Fire type that is not listed as Rapid Fire (X) is treated as having Rapid Fire (1).
+Optional rule: A model firing a Rapid Fire (X) weapon makes X attacks with it at full range, and twice that many (2X) against a target within half the weapon's range. A weapon with the Rapid Fire type that is not listed as Rapid Fire (X) is treated as having Rapid Fire (1).
 
 ## Rapid Insertion
 

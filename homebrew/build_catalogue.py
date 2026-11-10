@@ -692,8 +692,8 @@ class Builder:
                             continue  # the armoury gives its profile too
                         parts = [x.strip() for x in r[3].split(",")]
                         parts[0] = re.sub(r"^[A-Za-z ]+:\s*", "", parts[0])  # "Beam: 24\""
-                        rows.append({"name": r[0], "range": parts[0], "str": parts[1].lstrip("S"),
-                                     "ap": parts[2].lstrip("AP"), "type": ", ".join(parts[3:]),
+                        rows.append({"name": r[0], "range": parts[0], "str": parts[1].lstrip("S").strip(),
+                                     "ap": parts[2].lstrip("AP").strip(), "type": ", ".join(parts[3:]),
                                      "psychic_weapon": True, "psy_table": title, "psy_disc": disc})
                     else:
                         self.power_rows.append((r[0], f"{r[2]} phase. {r[3]}", title, disc))
