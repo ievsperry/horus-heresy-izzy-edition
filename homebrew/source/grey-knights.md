@@ -1244,9 +1244,9 @@ All weapons listed here are counted as 'Flame' weapons for those rules that affe
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Flamestorm cannon | Template | 6 | 3 | Heavy 1, Breaching (6+) |
-| Heavy incinerator | Template | 6 | 4 | Heavy 1, Shred, Torrent (6") |
-| Incinerator | Template | 6 | 4 | Assault 1, Shred |
+| Flamestorm cannon | Template | 6 | 3 | Heavy 1, Breaching (6+), Sanctic |
+| Heavy incinerator | Template | 6 | 4 | Heavy 1, Shred, Torrent (6"), Sanctic |
+| Incinerator | Template | 6 | 4 | Assault 1, Shred, Sanctic |
 
 #### Psycannons and Psilencers
 
@@ -1256,10 +1256,10 @@ All weapons listed here are counted as 'Psychic' weapons for those rules that af
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Gatling psilencer | 24" | 4 | 5 | Heavy 12, Force, Psychic |
-| Heavy psycannon | 24" | 8 | 4 | Heavy 6, Breaching (5+) |
-| Psilencer | 24" | 4 | 5 | Heavy 6, Force, Psychic |
-| Psycannon | 24" | 7 | 4 | Heavy 3, Breaching (5+) |
+| Gatling psilencer | 24" | 4 | 5 | Heavy 12, Force, Psychic, Sanctic |
+| Heavy psycannon | 24" | 8 | 4 | Heavy 6, Breaching (5+), Sanctic |
+| Psilencer | 24" | 4 | 5 | Heavy 6, Force, Psychic, Sanctic |
+| Psycannon | 24" | 7 | 4 | Heavy 3, Breaching (5+), Sanctic |
 
 #### Vehicle Weapons
 
