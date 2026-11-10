@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -582,12 +582,16 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Concussive (1), Rending (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy (3), Concussive (1), Rending (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Unwieldy" id="f8fa-b85d-a262-7a22" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule" />
+        <infoLink name="Unwieldy" id="7069-a578-b0b7-2c40" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (3)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Concussive (X)" id="a8a5-73be-6bb8-1d23" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Concussive (1)" />
