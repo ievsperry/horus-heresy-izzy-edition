@@ -2875,7 +2875,7 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 
 **Wargear**
 
-- Saw blades (melee: S+1, AP 4, Shred)
+- Saw blades
 - Squig launchas
 
 **Unit Type**
