@@ -1931,7 +1931,8 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 - Choppa
 - Slugga
 - Stikkbombz
-- Warbike (twin-linked big shoota)
+- Warbike
+- Twin-linked big shoota (mounted on the warbike)
 
 **Unit Type**
 
