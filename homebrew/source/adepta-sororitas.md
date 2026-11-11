@@ -1426,9 +1426,9 @@ The unit may take a Sororitas Rhino or Immolator as a Dedicated Transport. This 
 | --- | --: |
 | **The unit may take:** |  |
 | – Up to 2 additional Mortifiers | +80 points each |
-| **Any Mortifier may exchange its two heavy bolters for:** |  |
+| **Any Mortifier or Anchorite may exchange its two heavy bolters for:** |  |
 | – Two Ministorum heavy flamers | +0 points |
-| **Any Mortifier may exchange its penitent buzz-blades for:** |  |
+| **Any Mortifier or Anchorite may exchange its penitent buzz-blades for:** |  |
 | – Two penitent flails | +0 points |
 | **One Mortifier may be upgraded to an Anchorite (one per army; Armour Save 3+, loses Rage, gains a 5+ Invulnerable Save from its sarcophagus)** | +20 points |
 
