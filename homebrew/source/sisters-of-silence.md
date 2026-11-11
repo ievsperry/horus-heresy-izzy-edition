@@ -126,7 +126,7 @@ These options are added to the official Knight Abyssal datasheet.
 
 | Option | Cost |
 | --- | --- |
-| The Knight Abyssal may exchange her Execution Blade and/or Bolt Pistol for: |  |
+| The Knight Abyssal may exchange her Execution Blade or Bolt Pistol (not both) for: |  |
 | – Indictor Axe | Free |
 
 ### Knight Centura — additional options
@@ -135,7 +135,7 @@ These options are added to the official Knight Centura datasheet.
 
 | Option | Cost |
 | --- | --- |
-| The Knight Centura may exchange her Execution Blade and/or Bolt Pistol for: |  |
+| The Knight Centura may exchange her Execution Blade or Bolt Pistol (not both) for: |  |
 | – Indictor Axe | Free |
 
 ### Questora Cadre — additional options

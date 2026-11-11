@@ -213,12 +213,19 @@ def existing_units(cat, b):
     tag = lambda x, t: x.tag == c + t
     axe = b.weapons[norm("Indictor Axe")]
 
-    # Knight Abyssal and Knight Centura: "may exchange her Execution Blade and/or Bolt Pistol for: Indictor Axe"
+    # Knight Abyssal and Knight Centura: "may exchange her Execution Blade or Bolt Pistol for: Indictor Axe", one
+    # axe only: either pick's limit is 0 once the model has two
     for name in ("Knight Abyssal", "Knight Centura"):
         u = units[name]
+        me = find_in(u, lambda x: tag(x, "selectionEntry") and x.get("type") == "model")
         for gname in ("1) Melee Weapon", "2) Ranged Weapon"):
             g = find_in(u, lambda x: tag(x, "selectionEntryGroup") and x.get("name") == gname)
-            cat.add(g.get("id"), "entryLinks", [link_el("Indictor Axe", axe, g.get("id"), mx=1, pts=0)])
+            l = link_el("Indictor Axe", axe, g.get("id"), mx=1, pts=0)
+            cmax = next(c for c in l.iter() if c.tag.endswith("constraint") and c.get("type") == "max")
+            mod = el(el(l, "modifiers"), "modifier", type="set", field=cmax.get("id"), value=0)
+            el(el(mod, "conditions"), "condition", type="atLeast", value=2, field="selections", scope=me.get("id"),
+               childId=axe, shared=True, includeChildSelections=True, includeChildForces=False, percentValue=False)
+            cat.add(g.get("id"), "entryLinks", [l])
 
     # Questora Cadre: "Any model may exchange its Vratine Bolter for one of" (priced per model, like its other swaps)
     u = units["Questora Cadre"]
