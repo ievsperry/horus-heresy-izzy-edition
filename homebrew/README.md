@@ -582,6 +582,12 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Custodes profiles the Sisters of Silence catalogue cannot import (Corvae Las-Pulser, Solarite Power Lance,
   Spiculus Bolt Launcher, Venatari Jump Harness). The expansion tools now link such names to the official entries
   themselves.
+- To rebuild the Sisters of Silence expansion after a Builder change: take `2022 - LI - Sisters Of Silence.cat` as it
+  was before the expansion (commit 9bee36b), run `add_sisters_of_silence.py` and `fix_sisters_of_silence_links.py`,
+  keep only the catalogue (the game system already has the Chamber allowances, so drop its changes), and re-apply
+  the official Eyrine Needle Pistol rename. Done once so that "may take one of" picks allow one item, the Shrikes'
+  "Two Shrike Talons" swap is one pick of a pair, and the twin-linked Vratine Bolter and Corvae Las-Pulser show
+  their profiles.
 - `python3 homebrew/add_sisters_of_silence.py` adds the Liber Imperatus Sisters of Silence expansion (the Claude Doc
   "Sisters of Silence Horus Heresy 2.0 - Homebrew Conversion", kept as `source/sisters-of-silence.md`) to
   `2022 - LI - Sisters Of Silence.cat`. build_catalogue.py's Builder reads the doc's datasheets; their units then

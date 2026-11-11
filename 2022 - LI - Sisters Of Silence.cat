@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="585a-5ac2-a233-a6a6" name="LI - Sisters of Silence" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="585a-5ac2-a233-a6a6" name="LI - Sisters of Silence" revision="31" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b760-8313-847f-1afa" name="Obivion HQ" hidden="false"/>
     <categoryEntry id="a9b6-f66f-e8ee-553e" name="Judgement HQ" hidden="false"/>
@@ -9196,7 +9196,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Proteus Neuro-Lash" hidden="false" id="2335-2c9f-371b-4a72" type="selectionEntry" targetId="4d36-dac5-86a1-46cc">
+                <entryLink import="true" name="Proteus Neuro-lash" hidden="false" id="2335-2c9f-371b-4a72" type="selectionEntry" targetId="4d36-dac5-86a1-46cc">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d61-b243-6665-0d7a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -9292,7 +9292,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Proteus Neuro-Lash" hidden="false" id="2816-24ae-5c3a-9d53" type="selectionEntry" targetId="4d36-dac5-86a1-46cc">
+                <entryLink import="true" name="Proteus Neuro-lash" hidden="false" id="2816-24ae-5c3a-9d53" type="selectionEntry" targetId="4d36-dac5-86a1-46cc">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a41-5021-46ed-3777" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -9613,48 +9613,28 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="2890-cb41-f743-656d">
+          <modifiers>
+            <modifier type="increment" field="b728-c1ea-3c9c-fbe7" value="1">
+              <repeats>
+                <repeat field="selections" scope="a4a8-fb83-603c-a0e5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef70-8f16-7714-bc08" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b728-c1ea-3c9c-fbe7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
-            <entryLink import="true" name="Charnabal Weapon" hidden="false" id="1c76-49d9-c887-b4b5" type="selectionEntry" targetId="e749-ba9b-bb76-a7d9">
-              <modifiers>
-                <modifier type="increment" field="14bd-0c93-7b01-a90f" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a4a8-fb83-603c-a0e5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef70-8f16-7714-bc08" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="14bd-0c93-7b01-a90f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
+            <entryLink import="true" name="Charnabal Weapon" hidden="false" id="3bf8-0a8f-9a3d-64be" type="selectionEntry" targetId="e749-ba9b-bb76-a7d9">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Execution Blade" hidden="false" id="387d-6926-7c03-63b7" type="selectionEntry" targetId="adc6-3519-204d-2921">
-              <modifiers>
-                <modifier type="increment" field="49ec-7fef-2607-0dd2" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a4a8-fb83-603c-a0e5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef70-8f16-7714-bc08" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="49ec-7fef-2607-0dd2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
+            <entryLink import="true" name="Execution Blade" hidden="false" id="b17f-d028-0126-c2f1" type="selectionEntry" targetId="adc6-3519-204d-2921">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Power Weapon" hidden="false" id="997c-09d8-5ab8-7160" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
-              <modifiers>
-                <modifier type="increment" field="e4bc-de44-0d21-3beb" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a4a8-fb83-603c-a0e5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef70-8f16-7714-bc08" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e4bc-de44-0d21-3beb" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -9807,7 +9787,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                   <modifiers>
                     <modifier type="increment" field="1b60-4fdf-b167-e8f6" value="1">
                       <repeats>
-                        <repeat field="selections" scope="67df-2025-2c69-07ee" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="24d8-a509-6cea-2ba4" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="67df-2025-2c69-07ee" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -9863,7 +9843,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Vratine Nemesis Bolter" hidden="false" id="a557-517c-fc0d-372c" type="selectionEntry" targetId="166c-3838-707b-86f3">
+                    <entryLink import="true" name="Vratine Nemesis Bolters" hidden="false" id="a557-517c-fc0d-372c" type="selectionEntry" targetId="36c6-b6ae-bac0-6741">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c92-0c89-d6db-2902" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
@@ -9997,7 +9977,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88f1-4ce1-8fb8-00fa" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Execution Blade" hidden="false" id="4d65-77d1-f3e7-5b5e" type="selectionEntry" targetId="adc6-3519-204d-2921">
+                <entryLink import="true" name="Execution Blade" hidden="false" id="4d65-77d1-f3e7-5b5e" type="selectionEntry" targetId="8a3d-2b1b-bcdb-329a">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9be9-7814-b628-9483" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -10026,7 +10006,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Proteus Neuro-Lash" hidden="false" id="69a4-a200-cb36-e8cf" type="selectionEntry" targetId="4d36-dac5-86a1-46cc">
+                <entryLink import="true" name="Proteus Neuro-lash" hidden="false" id="69a4-a200-cb36-e8cf" type="selectionEntry" targetId="4d36-dac5-86a1-46cc">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3af3-3b4b-17cd-31dd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -10140,16 +10120,16 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
         </selectionEntryGroup>
         <selectionEntryGroup name="Perditor: Options" hidden="false" id="836b-aff9-71d2-b207">
           <entryLinks>
-            <entryLink import="true" name="Compression Tanks" hidden="false" id="7346-0ac7-7107-9433" type="selectionEntry" targetId="3ac3-045d-bc0e-d7fe">
+            <entryLink import="true" name="Compression Tanks" hidden="false" id="6aaf-ec5a-a107-eb16" type="selectionEntry" targetId="3ac3-045d-bc0e-d7fe">
               <modifiers>
-                <modifier type="increment" field="1848-0b27-3eef-2088" value="1">
+                <modifier type="increment" field="257d-302c-4445-14ce" value="1">
                   <repeats>
                     <repeat field="selections" scope="67df-2025-2c69-07ee" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="24d8-a509-6cea-2ba4" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1848-0b27-3eef-2088" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="257d-302c-4445-14ce" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -10159,16 +10139,16 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
         </selectionEntryGroup>
         <selectionEntryGroup name="Perditor Mistress: Options" hidden="false" id="4f12-d43e-28b0-563a">
           <entryLinks>
-            <entryLink import="true" name="Compression Tanks" hidden="false" id="1a3a-587a-63ee-dca0" type="selectionEntry" targetId="3ac3-045d-bc0e-d7fe">
+            <entryLink import="true" name="Compression Tanks" hidden="false" id="536c-7772-9a1c-ac57" type="selectionEntry" targetId="3ac3-045d-bc0e-d7fe">
               <modifiers>
-                <modifier type="increment" field="1972-e7a7-0ea3-fc73" value="1">
+                <modifier type="increment" field="6b6b-ca8c-0bb4-257b" value="1">
                   <repeats>
                     <repeat field="selections" scope="67df-2025-2c69-07ee" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbf-dc1d-1769-b733" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1972-e7a7-0ea3-fc73" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6b6b-ca8c-0bb4-257b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -10177,63 +10157,33 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Perditor Mistress: Options" hidden="false" id="af64-a0eb-7219-db2e">
+          <modifiers>
+            <modifier type="increment" field="b539-3663-e69f-571f" value="1">
+              <repeats>
+                <repeat field="selections" scope="67df-2025-2c69-07ee" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbf-dc1d-1769-b733" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b539-3663-e69f-571f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Disintegrator Pistol" hidden="false" id="d57c-3f6c-6ef0-b86b" type="selectionEntry" targetId="980e-b1e7-a4a4-407f">
-              <modifiers>
-                <modifier type="increment" field="17b5-78f7-65ac-d502" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="67df-2025-2c69-07ee" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbf-dc1d-1769-b733" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="17b5-78f7-65ac-d502" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Magna Combi-Weapon" hidden="false" id="83f9-473e-dbc3-17b2" type="selectionEntry" targetId="4d02-259d-fa50-ef3a">
-              <modifiers>
-                <modifier type="increment" field="0a17-360c-ec7a-4641" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="67df-2025-2c69-07ee" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbf-dc1d-1769-b733" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0a17-360c-ec7a-4641" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Minor Combi-Weapon" hidden="false" id="35a0-d521-d318-b141" type="selectionEntry" targetId="53c0-b5d7-f001-b816">
-              <modifiers>
-                <modifier type="increment" field="80e3-b497-fe47-8688" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="67df-2025-2c69-07ee" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbf-dc1d-1769-b733" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="80e3-b497-fe47-8688" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Twin-Linked Vratine Bolter" hidden="false" id="721f-a74d-ed70-6b3a" type="selectionEntry" targetId="9238-cc93-8c31-a9c5">
-              <modifiers>
-                <modifier type="increment" field="7cc6-1f03-10ea-7136" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="67df-2025-2c69-07ee" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbf-dc1d-1769-b733" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7cc6-1f03-10ea-7136" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
+            <entryLink import="true" name="Twin-linked Vratine Bolter" hidden="false" id="743d-99c8-58cd-6f61" type="selectionEntry" targetId="79c7-340d-176d-afde">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
               </costs>
@@ -10536,7 +10486,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Execution Blade" hidden="false" id="ff26-ec99-656f-0a73" type="selectionEntry" targetId="adc6-3519-204d-2921">
+            <entryLink import="true" name="Execution Blade" hidden="false" id="ff26-ec99-656f-0a73" type="selectionEntry" targetId="8a3d-2b1b-bcdb-329a">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="71ff-8ca0-0b6d-c941" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bea3-01a9-4a8a-60fe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -10568,48 +10518,28 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Repressor Mistress: Options" hidden="false" id="9455-c7bd-f968-a4e5">
+          <modifiers>
+            <modifier type="increment" field="6e03-66a7-5da5-08a4" value="1">
+              <repeats>
+                <repeat field="selections" scope="462c-f663-74af-1382" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb50-e73e-3cda-edf9" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6e03-66a7-5da5-08a4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Machinator Array" hidden="false" id="935a-32f2-8c61-00b8" type="selectionEntry" targetId="66f5-697c-605c-f1bb">
-              <modifiers>
-                <modifier type="increment" field="a0ba-51b8-a3b1-c780" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="462c-f663-74af-1382" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb50-e73e-3cda-edf9" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a0ba-51b8-a3b1-c780" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Servo-Arm" hidden="false" id="1361-c5eb-3958-50cf" type="selectionEntry" targetId="4168-fc85-8912-7188">
-              <modifiers>
-                <modifier type="increment" field="3a57-5aa1-1fe5-bfd9" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="462c-f663-74af-1382" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb50-e73e-3cda-edf9" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3a57-5aa1-1fe5-bfd9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Voidscale Cloak" hidden="false" id="196b-c536-475d-4428" type="selectionEntry" targetId="bd74-a0c5-cee0-bb03">
-              <modifiers>
-                <modifier type="increment" field="a51a-1e5b-cbe8-8560" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="462c-f663-74af-1382" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb50-e73e-3cda-edf9" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a51a-1e5b-cbe8-8560" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
+            <entryLink import="true" name="Voidscale Cloak" hidden="false" id="3b62-1ea2-443f-8acd" type="selectionEntry" targetId="bd74-a0c5-cee0-bb03">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -10685,6 +10615,9 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="f69e-00da-6070-fe4f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d95f-742e-b21b-e74d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
               <entryLinks>
                 <entryLink import="true" name="Pintle Mounted Combi-Weapon" hidden="false" id="9fb1-a274-7537-0778" type="selectionEntry" targetId="3290-ce9d-b702-fe47">
                   <constraints>
@@ -10726,7 +10659,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Pintle Mounted Snare Cannon" hidden="false" id="1692-f312-00e7-8edb" type="selectionEntry" targetId="d267-639b-ec89-95e2">
+                <entryLink import="true" name="Snare Cannon" hidden="false" id="1692-f312-00e7-8edb" type="selectionEntry" targetId="d267-639b-ec89-95e2">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed61-d575-939c-d69b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -10831,6 +10764,9 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="30a4-bfe7-2bbe-7997">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="537d-99c7-ed2a-3911" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
               <entryLinks>
                 <entryLink import="true" name="Pintle Mounted Combi-Weapon" hidden="false" id="e501-331b-8042-e9e2" type="selectionEntry" targetId="3290-ce9d-b702-fe47">
                   <constraints>
@@ -10872,7 +10808,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Pintle Mounted Snare Cannon" hidden="false" id="e5df-69f8-649a-b9ef" type="selectionEntry" targetId="d267-639b-ec89-95e2">
+                <entryLink import="true" name="Snare Cannon" hidden="false" id="e5df-69f8-649a-b9ef" type="selectionEntry" targetId="d267-639b-ec89-95e2">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2119-e833-6c3b-e70e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -10984,7 +10920,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f790-79a2-c21d-1624" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Corvae Las-Pulser" hidden="false" id="b756-56da-fb69-0d49" type="selectionEntry" targetId="a4c5-6014-9624-e97b">
+                <entryLink import="true" name="Corvae Las-Pulser" hidden="false" id="b756-56da-fb69-0d49" type="selectionEntry" targetId="9deb-5044-f690-bd44">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b657-6786-57c6-3413" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -11197,9 +11133,9 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17b5-3734-5df0-edbb" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Twin-Linked Vratine Bolter" hidden="false" id="e86a-1965-e539-01d7" type="selectionEntry" targetId="9238-cc93-8c31-a9c5">
+                <entryLink import="true" name="Twin-linked Vratine Bolter" hidden="false" id="e86a-1965-e539-01d7" type="selectionEntry" targetId="79c7-340d-176d-afde">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6037-d524-d9b8-79a6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b97-5bdd-f0b9-e2e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Twin-Linked Flamer" hidden="false" id="dc44-83e1-51c8-ad30" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
@@ -11242,7 +11178,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Execution Blade" hidden="false" id="c8cf-5ba6-34c3-fcf9" type="selectionEntry" targetId="adc6-3519-204d-2921">
+                <entryLink import="true" name="Execution Blade" hidden="false" id="c8cf-5ba6-34c3-fcf9" type="selectionEntry" targetId="8a3d-2b1b-bcdb-329a">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b36a-3882-2eb5-f081" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -11258,7 +11194,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Solarite Power Lance" hidden="false" id="0be0-77aa-c845-49b8" type="selectionEntry" targetId="7794-292a-b00b-571b">
+                <entryLink import="true" name="Solarite Power Lance" hidden="false" id="0be0-77aa-c845-49b8" type="selectionEntry" targetId="5874-728c-a29f-1d1e">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c0b-c797-f3f8-7fe7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -11366,9 +11302,9 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb10-b379-bf34-f712" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Twin-Linked Vratine Bolter" hidden="false" id="c184-082b-5b66-3622" type="selectionEntry" targetId="9238-cc93-8c31-a9c5">
+                <entryLink import="true" name="Twin-linked Vratine Bolter" hidden="false" id="c184-082b-5b66-3622" type="selectionEntry" targetId="79c7-340d-176d-afde">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7f4-455e-b4ea-5915" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcfd-e9e8-5d17-ce1a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Twin-Linked Flamer" hidden="false" id="1b3b-bea1-95dc-5d00" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
@@ -11411,7 +11347,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Execution Blade" hidden="false" id="1257-3f2f-0565-b638" type="selectionEntry" targetId="adc6-3519-204d-2921">
+                <entryLink import="true" name="Execution Blade" hidden="false" id="1257-3f2f-0565-b638" type="selectionEntry" targetId="8a3d-2b1b-bcdb-329a">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d51-54fc-227c-bc33" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -11427,7 +11363,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Solarite Power Lance" hidden="false" id="708b-7891-6958-bdf2" type="selectionEntry" targetId="7794-292a-b00b-571b">
+                <entryLink import="true" name="Solarite Power Lance" hidden="false" id="708b-7891-6958-bdf2" type="selectionEntry" targetId="5874-728c-a29f-1d1e">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c74-a005-1437-2fb9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -11451,7 +11387,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Proteus Neuro-Lash" hidden="false" id="068d-0e1e-ce82-e02f" type="selectionEntry" targetId="4d36-dac5-86a1-46cc">
+                <entryLink import="true" name="Proteus Neuro-lash" hidden="false" id="068d-0e1e-ce82-e02f" type="selectionEntry" targetId="4d36-dac5-86a1-46cc">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be5f-d826-4a88-cedc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -11545,16 +11481,16 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
         </selectionEntryGroup>
         <selectionEntryGroup name="Impetor: Options" hidden="false" id="fbdf-7c4c-aabe-cefb">
           <entryLinks>
-            <entryLink import="true" name="Compression Tanks" hidden="false" id="a7b2-444d-6025-a581" type="selectionEntry" targetId="3ac3-045d-bc0e-d7fe">
+            <entryLink import="true" name="Compression Tanks" hidden="false" id="8235-c2a3-de47-c183" type="selectionEntry" targetId="3ac3-045d-bc0e-d7fe">
               <modifiers>
-                <modifier type="increment" field="c3fc-33d2-973c-0674" value="1">
+                <modifier type="increment" field="cd44-5da1-60ae-8fc2" value="1">
                   <repeats>
                     <repeat field="selections" scope="68d0-297f-cf74-e2f0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3f17-fad1-72a8-e320" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c3fc-33d2-973c-0674" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cd44-5da1-60ae-8fc2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -11564,16 +11500,16 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
         </selectionEntryGroup>
         <selectionEntryGroup name="Impetor Mistress: Options" hidden="false" id="6360-49e0-9f71-d68d">
           <entryLinks>
-            <entryLink import="true" name="Compression Tanks" hidden="false" id="b5da-c163-ab25-ce00" type="selectionEntry" targetId="3ac3-045d-bc0e-d7fe">
+            <entryLink import="true" name="Compression Tanks" hidden="false" id="80ec-65ee-cc1f-24ef" type="selectionEntry" targetId="3ac3-045d-bc0e-d7fe">
               <modifiers>
-                <modifier type="increment" field="c617-04e8-f576-fad7" value="1">
+                <modifier type="increment" field="2e47-bd02-936a-6f2f" value="1">
                   <repeats>
                     <repeat field="selections" scope="68d0-297f-cf74-e2f0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9172-b5f1-c9d5-fd90" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c617-04e8-f576-fad7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2e47-bd02-936a-6f2f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -11650,7 +11586,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a74a-ba28-9568-2ad1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Centreline Mounted Twin-Linked Corvae Las-Pulser" hidden="false" id="1026-9cfe-35fd-6707" type="selectionEntry" targetId="3aef-fda5-b171-8b94">
+                <entryLink import="true" name="Twin-linked Corvae Las-Pulser" hidden="false" id="1026-9cfe-35fd-6707" type="selectionEntry" targetId="5938-c2b4-dca0-1505">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cba-255f-fe28-5e28" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -11748,18 +11684,18 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange Two Shrike Talons" hidden="false" id="de39-4c0b-8d27-a386" defaultSelectionEntryId="566e-2ba9-bd72-c28c">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2b70-2acb-d371-fd73" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="504a-3193-cdcd-617c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b70-2acb-d371-fd73" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="504a-3193-cdcd-617c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Shrike Talon" hidden="false" id="566e-2ba9-bd72-c28c" type="selectionEntry" targetId="1003-a088-29ce-4cd5">
+                <entryLink import="true" name="Two Shrike Talons" hidden="false" id="566e-2ba9-bd72-c28c" type="selectionEntry" targetId="aa39-57bf-ea81-ffad">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a21b-be9a-0a8e-545a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5afd-86b0-3f5e-f80b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Two Charnabal Sabres" hidden="false" id="3d34-4429-4f88-72eb" type="selectionEntry" targetId="91a8-5e22-02dc-b9f5">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="616c-25f5-efa4-9079" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="616c-25f5-efa4-9079" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -11767,15 +11703,15 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                 </entryLink>
                 <entryLink import="true" name="Two Charnabal Tabars" hidden="false" id="23ed-4fd2-a710-2eff" type="selectionEntry" targetId="a6bc-27b7-7ae4-608b">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e65e-45b4-6945-3f28" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e65e-45b4-6945-3f28" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Two Power Weapons" hidden="false" id="09d4-faff-0ebe-0300" type="selectionEntry" targetId="3dd7-f3b9-cf68-ede8">
+                <entryLink import="true" name="Two Power Weapons" hidden="false" id="09d4-faff-0ebe-0300" type="selectionEntry" targetId="d5ab-8cb6-59cc-49a3">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1dbf-695e-7586-8f59" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dbf-695e-7586-8f59" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
@@ -11844,18 +11780,18 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange Two Shrike Talons" hidden="false" id="c0f4-98e4-b509-70da" defaultSelectionEntryId="b98d-80af-dd0c-300e">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="853e-e1eb-34f6-2f6f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9634-6958-765c-a869" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="853e-e1eb-34f6-2f6f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9634-6958-765c-a869" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Shrike Talon" hidden="false" id="b98d-80af-dd0c-300e" type="selectionEntry" targetId="1003-a088-29ce-4cd5">
+                <entryLink import="true" name="Two Shrike Talons" hidden="false" id="b98d-80af-dd0c-300e" type="selectionEntry" targetId="aa39-57bf-ea81-ffad">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f830-9c6b-0d2d-a05b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd74-429f-6a4b-1c81" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Two Charnabal Sabres" hidden="false" id="97b8-3705-b231-424b" type="selectionEntry" targetId="91a8-5e22-02dc-b9f5">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0dc1-6746-9a5e-ac20" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dc1-6746-9a5e-ac20" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -11863,15 +11799,15 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                 </entryLink>
                 <entryLink import="true" name="Two Charnabal Tabars" hidden="false" id="f0cb-9e7a-0117-ef05" type="selectionEntry" targetId="a6bc-27b7-7ae4-608b">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e39b-b9b5-15c9-1758" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e39b-b9b5-15c9-1758" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Two Power Weapons" hidden="false" id="2d0d-af3a-1cb2-9de5" type="selectionEntry" targetId="3dd7-f3b9-cf68-ede8">
+                <entryLink import="true" name="Two Power Weapons" hidden="false" id="2d0d-af3a-1cb2-9de5" type="selectionEntry" targetId="d5ab-8cb6-59cc-49a3">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4c2d-6ab5-85e5-63c5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c2d-6ab5-85e5-63c5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
@@ -11879,15 +11815,15 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                 </entryLink>
                 <entryLink import="true" name="Power Fist" hidden="false" id="61ab-05fe-d974-7665" type="selectionEntry" targetId="768d-b89b-7328-d749">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="acd5-d71b-cba8-2344" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acd5-d71b-cba8-2344" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Proteus Neuro-Lash" hidden="false" id="2edd-5744-20c0-cfd5" type="selectionEntry" targetId="4d36-dac5-86a1-46cc">
+                <entryLink import="true" name="Proteus Neuro-lash" hidden="false" id="2edd-5744-20c0-cfd5" type="selectionEntry" targetId="4d36-dac5-86a1-46cc">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9852-362b-04f9-3725" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9852-362b-04f9-3725" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -11895,7 +11831,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                 </entryLink>
                 <entryLink import="true" name="Two Lightning Claws" hidden="false" id="0bf1-7e4d-857c-fce8" type="selectionEntry" targetId="7426-2df2-6200-090e">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b609-527c-b8cd-ae85" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b609-527c-b8cd-ae85" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -11993,16 +11929,16 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
         </selectionEntryGroup>
         <selectionEntryGroup name="Shrike: Options" hidden="false" id="573c-5957-d7fb-64d5">
           <entryLinks>
-            <entryLink import="true" name="Vratine Bolter" hidden="false" id="6711-10ee-a690-bcf4" type="selectionEntry" targetId="b48a-f5cb-983d-3832">
+            <entryLink import="true" name="Vratine Bolter" hidden="false" id="9ab6-f89b-31b4-aef6" type="selectionEntry" targetId="b48a-f5cb-983d-3832">
               <modifiers>
-                <modifier type="increment" field="5b86-5136-313b-165c" value="1">
+                <modifier type="increment" field="8512-c552-22ce-65f2" value="1">
                   <repeats>
                     <repeat field="selections" scope="8763-ed3f-91dc-499b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e1d-1c7c-935c-368a" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5b86-5136-313b-165c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8512-c552-22ce-65f2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -12012,16 +11948,16 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
         </selectionEntryGroup>
         <selectionEntryGroup name="Shrike Mistress: Options" hidden="false" id="4456-3b85-d90a-86ca">
           <entryLinks>
-            <entryLink import="true" name="Vratine Bolter" hidden="false" id="0838-cff6-bc09-38b9" type="selectionEntry" targetId="b48a-f5cb-983d-3832">
+            <entryLink import="true" name="Vratine Bolter" hidden="false" id="689f-93dd-db01-20a7" type="selectionEntry" targetId="b48a-f5cb-983d-3832">
               <modifiers>
-                <modifier type="increment" field="9b47-c197-6670-b36d" value="1">
+                <modifier type="increment" field="6b26-dad7-c441-8893" value="1">
                   <repeats>
                     <repeat field="selections" scope="8763-ed3f-91dc-499b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53c0-2433-f725-0932" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9b47-c197-6670-b36d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6b26-dad7-c441-8893" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -12191,7 +12127,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Twin-Linked Corvae Las-Pulser" hidden="false" id="b47a-a0e3-9d9c-c185" type="selectionEntry" targetId="0c9e-68d0-51d2-d64e">
+                <entryLink import="true" name="Twin-linked Corvae Las-Pulser" hidden="false" id="b47a-a0e3-9d9c-c185" type="selectionEntry" targetId="5938-c2b4-dca0-1505">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcda-89f7-85f6-8857" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -12279,7 +12215,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Twin-Linked Corvae Las-Pulser" hidden="false" id="144a-7ed5-dde9-a32d" type="selectionEntry" targetId="0c9e-68d0-51d2-d64e">
+                <entryLink import="true" name="Twin-linked Corvae Las-Pulser" hidden="false" id="144a-7ed5-dde9-a32d" type="selectionEntry" targetId="5938-c2b4-dca0-1505">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="696c-6bb7-eb1b-adbf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -12305,43 +12241,28 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="b671-ac02-ca20-faa2">
+          <modifiers>
+            <modifier type="increment" field="6410-e10a-4e58-d4d7" value="1">
+              <repeats>
+                <repeat field="selections" scope="e747-eca7-7ce1-a04d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d33-0561-515a-ed9e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="6410-e10a-4e58-d4d7" value="1">
+              <repeats>
+                <repeat field="selections" scope="e747-eca7-7ce1-a04d" childId="7920-52a6-be6f-ee9a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6410-e10a-4e58-d4d7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
-            <entryLink import="true" name="Spiculus Bolt Launcher" hidden="false" id="38a1-5aa3-3b43-f30c" type="selectionEntry" targetId="c538-41cb-bc52-9777">
-              <modifiers>
-                <modifier type="increment" field="6be6-f2c0-c6e2-7dec" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="e747-eca7-7ce1-a04d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d33-0561-515a-ed9e" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="6be6-f2c0-c6e2-7dec" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="e747-eca7-7ce1-a04d" childId="7920-52a6-be6f-ee9a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6be6-f2c0-c6e2-7dec" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
+            <entryLink import="true" name="Spiculus Bolt Launcher" hidden="false" id="ed2b-9930-10b3-7b7a" type="selectionEntry" targetId="a7be-487e-b8d6-0b98">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Vratine Missile Launcher" hidden="false" id="aefd-5562-56fa-3c84" type="selectionEntry" targetId="0ee4-7a2e-804a-a934">
-              <modifiers>
-                <modifier type="increment" field="7df9-af52-c0b6-4f54" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="e747-eca7-7ce1-a04d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d33-0561-515a-ed9e" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="7df9-af52-c0b6-4f54" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="e747-eca7-7ce1-a04d" childId="7920-52a6-be6f-ee9a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7df9-af52-c0b6-4f54" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
+            <entryLink import="true" name="Vratine Missile Launcher" hidden="false" id="8a63-a3b7-edc4-8a97" type="selectionEntry" targetId="b4c6-3b91-378e-81c1">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
@@ -12414,7 +12335,7 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a26e-8bcf-2b3e-0748" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Centreline Mounted Twin-Linked Corvae Las-Pulser" hidden="false" id="4b8c-836f-e8da-1f99" type="selectionEntry" targetId="3aef-fda5-b171-8b94">
+                <entryLink import="true" name="Twin-linked Corvae Las-Pulser" hidden="false" id="4b8c-836f-e8da-1f99" type="selectionEntry" targetId="5938-c2b4-dca0-1505">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="121a-f7aa-ec52-2c9c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -12720,7 +12641,11 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
             <modifier type="set" field="name" value="Two-Handed"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Unwieldy" id="10d6-22cd-4818-7f34" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink name="Unwieldy" id="2491-b90d-a3df-e241" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (1)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Terminus Power Claw" hidden="false" id="0320-df85-1a25-a223">
@@ -12888,11 +12813,8 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Deep Strike" hidden="false" id="407e-c75a-bc3f-3a3f">
       <infoLinks>
-        <infoLink name="Deep Strike" hidden="false" id="dc3d-8a6b-7b5b-d7d7" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink name="Deep Strike" id="03fb-7eb8-bc17-0796" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vratine Armour" hidden="false" id="3dc4-7771-30f4-05c5">
       <entryLinks>
@@ -12906,20 +12828,20 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Hand Flamers" hidden="false" id="68f0-3572-c0a7-5ee9">
       <entryLinks>
-        <entryLink import="true" name="Two Hand Flamers" hidden="false" id="89a9-bc87-a1fa-1616" type="selectionEntry" targetId="e337-adf4-a11f-0280">
+        <entryLink import="true" name="Hand Flamer" hidden="false" id="5081-40f5-87eb-0233" type="selectionEntry" targetId="e337-adf4-a11f-0280">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d48c-9083-0583-5084" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="825b-a60e-02b9-b8ba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7d05-f9c0-f06b-df3f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="31b5-390f-b63e-ad35" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Needle Pistols" hidden="false" id="6761-66c9-4d70-8a5b">
       <entryLinks>
-        <entryLink import="true" name="Two Needle Pistols" hidden="false" id="5c57-bbdc-e046-a543" type="selectionEntry" targetId="fdd4-06c7-4608-b07f">
+        <entryLink import="true" name="Needle Pistol" hidden="false" id="b763-bc46-b578-48e3" type="selectionEntry" targetId="fdd4-06c7-4608-b07f">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b08d-4117-5da7-a5b9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="21f2-22c8-3ef7-1bf7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="76e5-f050-fe30-cd70" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2e85-6c86-d621-24f3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -12987,19 +12909,29 @@ In addition, any model equipped with an Erinyes Jetbike sets its Movement Charac
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Vratine Nemesis Bolter" hidden="false" id="166c-3838-707b-86f3">
+    <selectionEntry type="upgrade" import="true" name="Execution Blade" hidden="false" id="8a3d-2b1b-bcdb-329a">
+      <entryLinks>
+        <entryLink import="true" name="Execution Blade" hidden="false" id="f9de-b402-0a95-8310" type="selectionEntry" targetId="adc6-3519-204d-2921">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da06-1d6f-c4a2-3e7b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f57-b9e0-63c3-0f95" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked Vratine Bolter" hidden="false" id="79c7-340d-176d-afde">
       <profiles>
-        <profile name="Vratine Nemesis Bolter" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="f719-3e27-da1a-81eb">
+        <profile name="Twin-linked Vratine Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1d90-529f-8d25-2c13">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">With Suspensor Web</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Psy-shock, Twin-linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Twin-Linked Vratine Bolter" hidden="false" id="9238-cc93-8c31-a9c5">
       <infoLinks>
-        <infoLink name="Vratine Bolter" hidden="false" id="4a54-1cd3-cb1d-6341" targetId="a2be-5af6-49b2-8ec5" type="profile"/>
-        <infoLink name="Twin-linked" hidden="false" id="0a44-8ae8-f619-ee41" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink name="Twin-linked" id="1e4f-b06c-ef5e-5f1a" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -13037,9 +12969,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Corvae Las-Pulser" hidden="false" id="a4c5-6014-9624-e97b">
+    <selectionEntry type="upgrade" import="true" name="Corvae Las-Pulser" hidden="false" id="9deb-5044-f690-bd44">
       <profiles>
-        <profile name="Corvae Las-Pulser" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="986d-2aed-9560-a811">
+        <profile id="58fb-e6ee-ced4-6057" name="Corvae Las-Pulser" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
@@ -13052,9 +12984,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Solarite Power Lance" hidden="false" id="7794-292a-b00b-571b">
+    <selectionEntry type="upgrade" import="true" name="Solarite Power Lance" hidden="false" id="5874-728c-a29f-1d1e">
       <profiles>
-        <profile name="Solarite Power Lance" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="167f-93ec-ae52-75a4">
+        <profile id="48b3-f3dc-9291-f250" name="Solarite Power Lance" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
@@ -13064,9 +12996,17 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Armourbane (X)" hidden="false" id="0361-1c87-bd6e-a254" targetId="cb59-f920-f071-7cd4" type="rule"/>
-        <infoLink name="Two-handed" hidden="false" id="d97b-6852-299a-4541" targetId="4c23-e863-a569-7617" type="rule"/>
-        <infoLink name="Sudden Strike (X)" hidden="false" id="fe92-4015-e14b-55b8" targetId="58b3-7d84-b92d-1363" type="rule"/>
+        <infoLink id="cbbf-7758-4581-b665" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melee)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3816-b071-f3b6-695a" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+        <infoLink id="3788-14fc-de86-adf2" name="Sudden Strike (X)" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Sudden Strike (3)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -13081,6 +13021,24 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spiculus Bolt Launcher" hidden="false" id="a7be-487e-b8d6-0b98">
+      <profiles>
+        <profile id="e034-ec61-e603-0a80" name="Spiculus Bolt Launcher" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4ecc-7a75-e3c3-3db7" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin-linked Spiculus Bolt Launcher" hidden="false" id="40b8-9508-c4c5-a9de">
       <profiles>
@@ -13100,47 +13058,63 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Centreline Mounted Twin-Linked Corvae Las-Pulser" hidden="false" id="3aef-fda5-b171-8b94">
+    <selectionEntry type="upgrade" import="true" name="Twin-linked Corvae Las-Pulser" hidden="false" id="5938-c2b4-dca0-1505">
+      <profiles>
+        <profile name="Twin-linked Corvae Las-Pulser" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="fd10-d3f0-1e93-2dfe">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
-        <infoLink name="Corvae Las-Pulser" hidden="false" id="8b47-bf3f-114c-e178" targetId="986d-2aed-9560-a811" type="profile"/>
-        <infoLink name="Twin-linked" hidden="false" id="5626-4283-dd92-dd1a" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink name="Twin-linked" id="6352-3ec7-8a2f-d069" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two Shrike Talons" hidden="false" id="aa39-57bf-ea81-ffad">
+      <entryLinks>
+        <entryLink import="true" name="Shrike Talon" hidden="false" id="0730-52d5-0987-25db" type="selectionEntry" targetId="1003-a088-29ce-4cd5">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0bb3-8390-6721-b63e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e942-d88b-e31b-bced" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Charnabal Sabres" hidden="false" id="91a8-5e22-02dc-b9f5">
       <entryLinks>
-        <entryLink import="true" name="Two Charnabal Sabres" hidden="false" id="4a32-6964-28cf-c5de" type="selectionEntry" targetId="30c2-57eb-5bbe-be0b">
+        <entryLink import="true" name="Charnabal Sabre" hidden="false" id="c3b1-c903-804e-2256" type="selectionEntry" targetId="30c2-57eb-5bbe-be0b">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b563-8f6c-97c4-9e71" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="751c-90ad-4927-8d7f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c3dd-e015-33a6-5aa5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2b46-1e28-a571-f26e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Charnabal Tabars" hidden="false" id="a6bc-27b7-7ae4-608b">
       <entryLinks>
-        <entryLink import="true" name="Two Charnabal Tabars" hidden="false" id="bc28-ac06-b657-79d8" type="selectionEntry" targetId="4611-c33e-f360-7246">
+        <entryLink import="true" name="Charnabal Tabar" hidden="false" id="20a4-2ad5-f88c-b7a5" type="selectionEntry" targetId="4611-c33e-f360-7246">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0021-9e8f-c6f7-56de" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b47c-8030-c0cc-1e48" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="54b3-e9e6-ad7e-ca0a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="98b1-fa4b-3f0c-0d37" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Two Power Weapons" hidden="false" id="3dd7-f3b9-cf68-ede8">
+    <selectionEntry type="upgrade" import="true" name="Two Power Weapons" hidden="false" id="d5ab-8cb6-59cc-49a3">
       <entryLinks>
-        <entryLink import="true" name="Power Weapon" hidden="false" id="837e-db87-5022-bd69" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
+        <entryLink import="true" name="Power Weapon" hidden="false" id="4294-4943-3b0b-6d9b" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4d47-905e-09ac-e8d0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9b55-3a00-edbd-5672" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9f6c-344e-1a55-30d8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="daf8-2746-1cf3-42d9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Lightning Claws" hidden="false" id="7426-2df2-6200-090e">
       <entryLinks>
@@ -13168,29 +13142,33 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Twin-Linked Corvae Las-Pulser" hidden="false" id="0c9e-68d0-51d2-d64e">
-      <infoLinks>
-        <infoLink name="Corvae Las-Pulser" hidden="false" id="56ea-5f7c-f9ee-0081" targetId="986d-2aed-9560-a811" type="profile"/>
-        <infoLink name="Twin-linked" hidden="false" id="1a11-1a56-bf0f-14ef" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Spiculus Bolt Launcher" hidden="false" id="c538-41cb-bc52-9777">
+    <selectionEntry type="upgrade" import="true" name="Vratine Missile Launcher" hidden="false" id="b4c6-3b91-378e-81c1">
       <profiles>
-        <profile name="Spiculus Bolt Launcher" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="52db-1cae-ad65-0af2">
+        <profile id="4019-825d-4b3d-8701" name="Vratine Missile Launcher - Frag" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Pinning</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ab18-3e37-6197-2cbc" name="Vratine Missile Launcher - Krak" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0aed-f712-f437-daa6" name="Vratine Missile Launcher - Psyk-out" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Pinning</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Psy-shock</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Pinning" hidden="false" id="5ec1-29e5-e6f4-d09e" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
