@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="27" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -7574,11 +7574,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hand of the Archon" hidden="false" id="1e97-bc4a-1d6d-ba6e" publicationId="9356-fc9b-2fee-7d11">
-      <rules>
-        <rule name="Note" id="9c2b-71cb-1f1a-bcd9" hidden="false">
-          <description>A model equipped with a stimm-needler may not exchange its splinter rifle.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink name="Xenos" id="b7aa-9ef3-8ce8-71d3" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Aeldari (X)" id="f9a2-752a-7f96-9544" hidden="false" targetId="fbd1-9907-8259-c689" type="rule">
@@ -7726,9 +7721,9 @@
                     <constraint type="max" value="1" field="selections" scope="1e97-bc4a-1d6d-ba6e" shared="true" id="78b4-f45c-1bba-dfe9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Two pain sculptors" hidden="false" id="cf7a-2fd6-333b-0a8b" type="selectionEntry" targetId="a0af-2d3a-d50a-4b88">
+                    <entryLink import="true" name="Splinter rifle and stimm-needler" hidden="false" id="bfc2-5467-eb52-a5db" type="selectionEntry" targetId="ae2a-b978-5063-21a4">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec3f-1d60-0c98-d14a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="955a-6580-696f-b6e5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -7741,9 +7736,24 @@
                     <constraint type="max" value="1" field="selections" scope="1e97-bc4a-1d6d-ba6e" shared="true" id="8401-61b6-8cae-4d62" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Splinter pistol and razorflails" hidden="false" id="d35c-a85c-5ce4-1f8a" type="selectionEntry" targetId="9370-405f-fbdd-97b6">
+                    <entryLink import="true" name="Two pain sculptors" hidden="false" id="9c53-deac-9079-8a11" type="selectionEntry" targetId="a0af-2d3a-d50a-4b88">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1bb-ae73-93d8-a18f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a378-45bb-d5bb-aab5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Up to 1 may exchange for" hidden="false" id="695c-1298-c137-381c">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="1e97-bc4a-1d6d-ba6e" shared="true" id="66df-fb5c-446e-5ea3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Splinter pistol and razorflails" hidden="false" id="be6a-a2fb-5938-ba29" type="selectionEntry" targetId="9370-405f-fbdd-97b6">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baab-e176-c1b9-1b31" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
@@ -7905,18 +7915,6 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Kabalite Agent: Options" hidden="false" id="b402-f7fa-5b4f-7527">
-          <entryLinks>
-            <entryLink import="true" name="Stimm-needler" hidden="false" id="6dd8-753c-a44e-5af4" type="selectionEntry" targetId="6e40-9734-fd9f-58ed">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b858-4830-8fa2-635d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Archsybarite: Options" hidden="false" id="5204-cbbf-db49-c6ea">
           <modifiers>
             <modifier type="increment" field="ddfa-00c3-3f92-45d6" value="1">
@@ -7969,6 +7967,22 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="110" />
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Splinter rifle and stimm-needler" hidden="false" id="ae2a-b978-5063-21a4" publicationId="9356-fc9b-2fee-7d11">
+      <entryLinks>
+        <entryLink import="true" name="Splinter rifle" hidden="false" id="66dc-27dd-c9c9-ad54" type="selectionEntry" targetId="eebb-37fe-4e0a-f8e4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6143-9205-9762-2fcb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90e7-30b1-1283-1e35" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Stimm-needler" hidden="false" id="36ba-71b8-04f3-a000" type="selectionEntry" targetId="6e40-9734-fd9f-58ed">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab8d-617b-2dd4-0fad" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9d0-ae3a-baaa-3ec3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two pain sculptors" hidden="false" id="a0af-2d3a-d50a-4b88" publicationId="9356-fc9b-2fee-7d11">
       <entryLinks>

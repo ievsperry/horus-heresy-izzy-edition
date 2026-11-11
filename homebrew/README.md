@@ -193,7 +193,8 @@ loading. The script prints anything in the doc it could not place.
   like "up to two". "The Dreadknight may take up to two of:" allows two picks in all.
 - "One Kabalite Agent may exchange their splinter rifle and close combat weapon for" is, like each other "One
   Kabalite Agent" line, one Agent's own pick of the rifle swap (and it gives up the close combat weapon too); each
-  Agent makes one swap. "Up to two Novitiates may exchange their autogun and close combat weapon" is likewise a
+  Agent makes one swap. The stimm-needler is one of those picks, "Splinter rifle and stimm-needler", so an Agent
+  who takes it keeps the rifle and cannot exchange it. "Up to two Novitiates may exchange their autogun and close combat weapon" is likewise a
   pick of the autogun swap, two in the unit.
 - "A model equipped with Mega Armour may instead exchange its Big Choppa for" (Ork Boss, Warboss): those picks
   have a limit of 0 until that model takes Mega Armour.
