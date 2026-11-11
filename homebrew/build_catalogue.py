@@ -1386,6 +1386,8 @@ class Builder:
                     continue
                 rows = next((r for h, r in section_tables({"lines": part["lines"], "subs": []})
                              if h[:2] == ["Equipment", "Effect"]), [])
+                if not rows:
+                    continue  # another table (the T'au "Vehicle battle system | Effect | Cost", read elsewhere)
                 for uname in re.split(r", | or | and ", who.group(1)):
                     ds = next((d for d in self.datasheets if norm(d["name"]) == norm(uname)), None)
                     if not ds:
@@ -3439,6 +3441,9 @@ class Builder:
                               r"(?: \((.+)\))?$", header)
                 if hm:
                     upto, src_name, dst_name, note = hm.groups()
+                    # "One Hammerhead in the army may be upgraded to Longstrike", "(one per army; ...)": one per roster
+                    per_army = bool(re.search(r" in the army$", src_name) or re.search(r"\bone per army\b", note or "", re.I))
+                    src_name = re.sub(r" in the army$", "", src_name)
                     src, dst = model_for(src_name), model_for(dst_name)
                     if src and not dst:
                         dst = self.model_without_profile(ds, models, dst_name, None)
@@ -3448,6 +3453,7 @@ class Builder:
                         models[dst]["replaces"] = src
                         models[dst]["max"] = (NUMBER_WORDS.get(upto) or int(upto)) if upto else 1
                         models[dst]["cost"] = self.cost(cost_txt)
+                        models[dst]["per_army"] = per_army
                         if note:
                             models[dst]["note"] = note
                     else:
@@ -3510,6 +3516,8 @@ class Builder:
                     id=m["id"], publicationId=self.pub_id)
             add_constraint(me, "min", m["min"], m["id"] + "min")
             cmax = add_constraint(me, "max", max(m["max"], m["min"]), m["id"] + "max")
+            if m.get("per_army"):
+                add_constraint(me, "max", 1, m["id"] + "army", scope="roster", children=True)
             cmin = make_id(m["id"] + "min", "min")
             # Counts that move with other models: (fields, step, other model, every N of it).
             moves = [((cmin, cmax), -o.get("replaces_n", 1), o["id"], 1) for o in models.values() if o["replaces"] == mname]
