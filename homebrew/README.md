@@ -22,6 +22,7 @@ python3 homebrew/build_catalogue.py homebrew/source/rillietann.md "Homebrew - Ae
 python3 homebrew/build_catalogue.py homebrew/source/traders-militant.md "Homebrew - Traders Militant.cat"
 python3 homebrew/build_catalogue.py homebrew/source/grey-knights.md "Homebrew - Grey Knights.cat"
 python3 homebrew/build_catalogue.py homebrew/source/leagues-of-votann.md "Homebrew - Leagues of Votann.cat"
+python3 homebrew/build_catalogue.py homebrew/source/adepta-sororitas.md "Homebrew - Adepta Sororitas.cat"
 ```
 
 Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
@@ -171,6 +172,23 @@ loading. The script prints anything in the doc it could not place.
   Techmarine Covenant and Apothecarion Detachment rules (Grey Knights versions of the Legion ones, keyed on
   Brotherhood (X), with no bike clauses, and the Apothecary going only to Aegis Terminator units) assign each model
   to a unit before deployment.
+- Adepta Sororitas, like the Grey Knights, may be Loyalist or Traitor. Each detachment picks one Order Militant,
+  which gives its units Order (X) with that Order's rules, Advanced Reaction and Warlord Trait. The army's Faith
+  system (Acts of Faith, Gaining Faith, Miracles, and the table of Acts) and the Unit Types notes are on the army
+  selection: a "### Faith" sub-section of the Army-wide Special Rules that is not a rule a unit has is shown there,
+  its table one line to a row. The Celestian Insidiants are built from "## Kill Team: Celestian Insidiants",
+  their slot from "(Elites)" in the datasheet title. "Combi-weapon" is the game system's Minor Combi-weapon.
+- A "Unit | Option | Cost" row may name a squad by its models ("Battle Sisters", "Celestians"): that is the
+  Battle Sisters Squad, the Celestian Squad.
+- An "Equipment | Effect | Cost" table under "Any Sororitas Rhino, Immolator, Exorcist or Castigator may take
+  any of the following, each once" gives each of those datasheets each item, unless it already offers it (the
+  hunter-killer missile on each datasheet). An official item (Dozer blade, Searchlight) keeps its own rules; a
+  new one (Extra armour, Laud hailer) carries the table's effect.
+- "Up to two Insidiant Warriors may be upgraded to Insidiant Cremators" works like "One ... may be upgraded to
+  a ...": up to two of the model become the other kind, each in place of a Warrior.
+- A swap of a pair for a pair ("its two heavy bolters for two Ministorum heavy flamers", "its two dark lances
+  for two disintegrator cannons") is one pick of a whole pair: before, a pair counted as three selections (the
+  pick and the two weapons in it) and broke the swap.
 - Wargear grouped under a heading ("### Armour" holding "#### Kabalite Armour") is read item by item.
   "Scourge wings (count as a jump pack)" is the official jump pack under the doc's name. "May exchange
   any dark lance" lets each of the three be swapped; "one macro-scalpel" only one of the two.

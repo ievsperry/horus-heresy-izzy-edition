@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -9263,18 +9263,18 @@ O'Vesa may re-roll the Leadership test.</description>
             </selectionEntryGroup>
             <selectionEntryGroup name="Exchange two flamers" hidden="false" id="aa1c-8cf0-f907-a37f" defaultSelectionEntryId="718d-5bb2-d2c1-7e84">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="98ce-6d30-1f45-eace" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="262c-97fa-7430-7fe9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98ce-6d30-1f45-eace" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="262c-97fa-7430-7fe9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="two flamers" hidden="false" id="718d-5bb2-d2c1-7e84" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
+                <entryLink import="true" name="Two flamers" hidden="false" id="718d-5bb2-d2c1-7e84" type="selectionEntry" targetId="c109-62c8-a3ad-57c8">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="41c2-fe45-b00f-6b84" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3471-bc84-8983-723c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Two burst cannons" hidden="false" id="d2a2-6393-36ea-b036" type="selectionEntry" targetId="0f95-438c-cd6a-89ca">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fd97-c851-4ed2-c009" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd97-c851-4ed2-c009" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
@@ -9282,7 +9282,7 @@ O'Vesa may re-roll the Leadership test.</description>
                 </entryLink>
                 <entryLink import="true" name="Two fusion blasters" hidden="false" id="42ce-641c-a1be-9e13" type="selectionEntry" targetId="6f2a-163f-3cc4-2be6">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a914-a14e-f9db-68fe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a914-a14e-f9db-68fe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
@@ -9419,6 +9419,16 @@ O'Vesa may re-roll the Leadership test.</description>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="160" />
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two flamers" hidden="false" id="c109-62c8-a3ad-57c8" publicationId="733a-d454-80f2-c90e">
+      <entryLinks>
+        <entryLink import="true" name="Flamer" hidden="false" id="0ae4-b226-65ef-8c78" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fa9f-7d94-5679-a171" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6abb-0991-f7c6-8030" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two burst cannons" hidden="false" id="0f95-438c-cd6a-89ca" publicationId="733a-d454-80f2-c90e">
       <entryLinks>
@@ -10948,18 +10958,18 @@ O'Vesa may re-roll the Leadership test.</description>
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange two twin-linked burst cannons" hidden="false" id="238c-03a3-3c74-9a1b" defaultSelectionEntryId="0d47-4fb9-bcc3-dabe">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a293-27f1-509f-a116" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f410-a0ea-ad93-7a8d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a293-27f1-509f-a116" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f410-a0ea-ad93-7a8d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Burst cannon" hidden="false" id="0d47-4fb9-bcc3-dabe" type="selectionEntry" targetId="6c09-740f-760c-0fd5">
+                <entryLink import="true" name="Two twin-linked burst cannons" hidden="false" id="0d47-4fb9-bcc3-dabe" type="selectionEntry" targetId="d20c-7b79-4bdf-b187">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c000-636a-1501-ace7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f3e-210a-f26b-c093" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Two phased ion guns" hidden="false" id="8e99-6d72-791a-28b2" type="selectionEntry" targetId="1975-0970-f765-8eea">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d9fd-72c5-f8aa-0d8b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9fd-72c5-f8aa-0d8b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -10967,7 +10977,7 @@ O'Vesa may re-roll the Leadership test.</description>
                 </entryLink>
                 <entryLink import="true" name="Two fusion cascades" hidden="false" id="cb4b-79f8-2723-ef2b" type="selectionEntry" targetId="be91-e6a5-88cd-d8ad">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8c35-515b-92e8-ee10" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c35-515b-92e8-ee10" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
@@ -10975,7 +10985,7 @@ O'Vesa may re-roll the Leadership test.</description>
                 </entryLink>
                 <entryLink import="true" name="Two pulse submunitions cannons" hidden="false" id="f924-5bf5-ec50-472c" type="selectionEntry" targetId="bc65-ec0c-4615-19ed">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="193e-3bd1-1347-9b85" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="193e-3bd1-1347-9b85" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -11208,6 +11218,16 @@ O'Vesa may re-roll the Leadership test.</description>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two twin-linked burst cannons" hidden="false" id="d20c-7b79-4bdf-b187" publicationId="733a-d454-80f2-c90e">
+      <entryLinks>
+        <entryLink import="true" name="Burst cannon" hidden="false" id="99d4-942d-0c05-0acf" type="selectionEntry" targetId="6c09-740f-760c-0fd5">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d778-ba8a-413a-65ee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="76a0-1489-24c6-e55b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two phased ion guns" hidden="false" id="1975-0970-f765-8eea" publicationId="733a-d454-80f2-c90e">
       <entryLinks>
@@ -15125,18 +15145,18 @@ O'Vesa may re-roll the Leadership test.</description>
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange two rail rifles" hidden="false" id="8db7-6b1b-fb20-9781" defaultSelectionEntryId="6df1-e90c-a966-e161">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f536-cb0d-7bed-a568" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c068-bb88-0757-2274" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f536-cb0d-7bed-a568" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c068-bb88-0757-2274" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Rail rifle" hidden="false" id="6df1-e90c-a966-e161" type="selectionEntry" targetId="3816-64dd-3c88-1048">
+                <entryLink import="true" name="Two rail rifles" hidden="false" id="6df1-e90c-a966-e161" type="selectionEntry" targetId="60f9-eeab-fdff-1e90">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3396-f1e8-e201-75d1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e03-5f9b-751e-e60d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Two fusion blasters" hidden="false" id="1f26-ab28-9690-3a25" type="selectionEntry" targetId="6f2a-163f-3cc4-2be6">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="44b3-ab66-6553-41db" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44b3-ab66-6553-41db" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
@@ -15144,7 +15164,7 @@ O'Vesa may re-roll the Leadership test.</description>
                 </entryLink>
                 <entryLink import="true" name="Two plasma rifles" hidden="false" id="635a-c3dd-190d-c89d" type="selectionEntry" targetId="5125-1926-31dc-8cf4">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d3f5-ca13-1537-cf50" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3f5-ca13-1537-cf50" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -15152,7 +15172,7 @@ O'Vesa may re-roll the Leadership test.</description>
                 </entryLink>
                 <entryLink import="true" name="Two ion rifles" hidden="false" id="d2a7-a5cd-4697-050a" type="selectionEntry" targetId="8143-0d10-9925-8830">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ae75-a54c-46a7-b2e5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae75-a54c-46a7-b2e5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -15160,7 +15180,7 @@ O'Vesa may re-roll the Leadership test.</description>
                 </entryLink>
                 <entryLink import="true" name="Two missile pods" hidden="false" id="bca0-6670-4614-0a75" type="selectionEntry" targetId="a0aa-7fc5-f4fe-31a8">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b9ad-bdc8-2b25-333f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9ad-bdc8-2b25-333f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -15198,6 +15218,16 @@ O'Vesa may re-roll the Leadership test.</description>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two rail rifles" hidden="false" id="60f9-eeab-fdff-1e90" publicationId="733a-d454-80f2-c90e">
+      <entryLinks>
+        <entryLink import="true" name="Rail rifle" hidden="false" id="3449-b03f-8194-84f4" type="selectionEntry" targetId="3816-64dd-3c88-1048">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4e78-5bd1-fb6e-91aa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4118-fc5e-3c84-50c9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two plasma rifles" hidden="false" id="5125-1926-31dc-8cf4" publicationId="733a-d454-80f2-c90e">
       <entryLinks>
@@ -16504,6 +16534,18 @@ O'Vesa may re-roll the Leadership test.</description>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Hammerhead" hidden="false" id="afb2-de15-c689-9da4" publicationId="733a-d454-80f2-c90e">
+          <modifiers>
+            <modifier type="decrement" field="7ecd-217f-4948-0696" value="1">
+              <repeats>
+                <repeat field="selections" scope="855e-0bbc-6450-58ce" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8df1-11be-e2f5-56d0" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="0c89-2c0b-cc4a-3fcc" value="1">
+              <repeats>
+                <repeat field="selections" scope="855e-0bbc-6450-58ce" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8df1-11be-e2f5-56d0" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ecd-217f-4948-0696" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c89-2c0b-cc4a-3fcc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -16715,7 +16757,49 @@ O'Vesa may re-roll the Leadership test.</description>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Longstrike" hidden="false" id="8df1-11be-e2f5-56d0" publicationId="733a-d454-80f2-c90e">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8eba-b890-8d51-fe84" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1866-eeec-3c19-badc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Longstrike" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="b8c9-d928-0c26-316f" publicationId="733a-d454-80f2-c90e">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Antigrav)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">14</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">–</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Longstrike" id="77c1-a756-1565-1e91" hidden="false">
+              <description>BS 5, Sept (T'au), Unique, Tank Ace: re-roll to-hit rolls of 1 against vehicles</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="4303-1348-cce4-9501" id="0fc3-5d96-4b92-1211" primary="false" name="Antigrav Sub-type" />
+            <categoryLink targetId="e2b6-b770-784c-9e95" id="15b8-ce34-985b-eaba" primary="false" name="Vehicle:" />
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Railgun" hidden="false" id="e835-cdd7-dc52-aff8" type="selectionEntry" targetId="ed81-3993-b720-c8e8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="799e-c628-8f9f-d3eb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ec2-236f-ac87-933f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40" />
+          </costs>
+        </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups />
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125" />
       </costs>
@@ -17695,18 +17779,18 @@ Except that instead of extra heavy burst cannon shots, the Y'vahra may choose No
             </selectionEntryGroup>
             <selectionEntryGroup name="Exchange two flamers" hidden="false" id="8a7e-35ec-9fa1-5d5a" defaultSelectionEntryId="1fa0-de2d-cf02-25a8">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3941-1f07-d3c3-ce20" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5770-458b-32f7-a413" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3941-1f07-d3c3-ce20" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5770-458b-32f7-a413" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Two flamers" hidden="false" id="1fa0-de2d-cf02-25a8" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
+                <entryLink import="true" name="Two flamers" hidden="false" id="1fa0-de2d-cf02-25a8" type="selectionEntry" targetId="c109-62c8-a3ad-57c8">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d9d5-98fc-e483-da29" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="621e-aed2-1526-e20c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Two burst cannons" hidden="false" id="30b4-32dd-80f7-ea23" type="selectionEntry" targetId="0f95-438c-cd6a-89ca">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="adc0-b9a4-ac47-a4e3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adc0-b9a4-ac47-a4e3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
@@ -17714,7 +17798,7 @@ Except that instead of extra heavy burst cannon shots, the Y'vahra may choose No
                 </entryLink>
                 <entryLink import="true" name="Two airbursting fragmentation projectors" hidden="false" id="f3af-bd95-13b4-e172" type="selectionEntry" targetId="bd25-5187-fb49-5906">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="534f-188c-d51b-7201" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="534f-188c-d51b-7201" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />

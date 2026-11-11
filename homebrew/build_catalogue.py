@@ -1374,6 +1374,38 @@ class Builder:
                             continue
                         ds["options"] += self.option_rows(ds["name"], opt, cost)
 
+    def add_equipment_tables(self):
+        """'Any Sororitas Rhino, Immolator, Exorcist or Castigator may take any of the following, each once:'
+        over an 'Equipment | Effect | Cost' table: each item an option on each datasheet named, unless the
+        datasheet already offers it."""
+        for sec in self.wargear_sections():
+            for part in [sec] + sec["subs"]:
+                who = next((re.match(r"Any (.+?) may take any of the following", l) for l in part["lines"]
+                            if re.match(r"Any (.+?) may take any of the following", l)), None)
+                if not who:
+                    continue
+                rows = next((r for h, r in section_tables({"lines": part["lines"], "subs": []})
+                             if h[:2] == ["Equipment", "Effect"]), [])
+                for uname in re.split(r", | or | and ", who.group(1)):
+                    ds = next((d for d in self.datasheets if norm(d["name"]) == norm(uname)), None)
+                    if not ds:
+                        self.problems.append(f"{part.get('title', sec['title'])}: no datasheet '{uname}'")
+                        continue
+                    offered = {norm(strip_md(r[0]).lstrip("– ").replace("*", "")) for r in ds["options"]}
+                    items = []
+                    for r in rows:
+                        name = r[0].replace("\\*", "").replace("*", "").strip()
+                        if norm(name) in offered:
+                            continue
+                        effect = r[1].replace("†", "").strip() if len(r) > 1 else ""
+                        # an official item ("Searchlight") keeps its own rules; a new one carries the doc's effect
+                        official = self.find_weapon(name)[0] or self.official_entry(name)
+                        label = name if official or effect in ("", "–", "-") else \
+                            f"{name} ({effect[0].lower() + effect[1:]})"
+                        items.append([f"– {label}", r[2] if len(r) > 2 else ""])
+                    if items:
+                        ds["options"] += [[f"**The {ds['name']} may take:**", ""]] + items
+
     @staticmethod
     def option_rows(unit, opt, cost):
         def row(h, *items):
@@ -2026,6 +2058,20 @@ class Builder:
             add_category(army, *XENOS_ARMY_CATEGORY, eid)
         add_cost(army, 0)
         groups = el(army, "selectionEntryGroups")
+        # "### Faith" under the army-wide rules: a system for the whole army, not a rule a unit has, shown on
+        # the army with its tables ("Act of Faith | When | Effect")
+        aw = self.section("Army-wide Special Rules")
+        for sub in (aw["subs"] if aw else []):
+            if norm(sub["title"]) in self.local_rules or norm(sub["title"]) in self.gst_rules \
+                    or sub["title"].endswith("(X)"):  # "Dimensional Edge (X)": a rule units have, with its value
+                continue
+            text = full_text(sub["lines"])
+            for header, rows in section_tables({"lines": sub["lines"], "subs": []}):
+                # "• Divine Guidance (when the unit is selected to shoot): the unit may re-roll ..."
+                text += "\n\n" + "\n".join(
+                    f"• {r[0]} ({r[1][0].lower() + r[1][1:]}): {r[2]}" if len(r) == 3 else
+                    f"• {r[0]}" + "".join(f"; {h}: {c}" for h, c in zip(header[1:], r[1:])) for r in rows)
+            add_rule(army, sub["title"], text.replace("†", ""), make_id(eid, "army rule", sub["title"]))
 
         react = self.section("Advanced Reaction")
         if react:
@@ -3358,19 +3404,23 @@ class Builder:
                         self.problems.append(f"{ds['name']}: team header '{header}'")
                         mode = None
                     continue
-                hm = re.match(r"One (.+?) may be upgraded to an? (.+?)(?: \((.+)\))?$", header)
+                # "One Insidiant Warrior may be upgraded to an Insidiant Denuncia", "Up to two Insidiant Warriors
+                # may be upgraded to Insidiant Cremators": that many of the model become the other kind
+                hm = re.match(r"(?:One|Up to (two|three|four|five|\d+)) (.+?) may be upgraded to (?:an? )?(.+?)"
+                              r"(?: \((.+)\))?$", header)
                 if hm:
-                    src, dst = model_for(hm.group(1)), model_for(hm.group(2))
+                    upto, src_name, dst_name, note = hm.groups()
+                    src, dst = model_for(src_name), model_for(dst_name)
                     if src and not dst:
-                        dst = self.model_without_profile(ds, models, hm.group(2), None)
+                        dst = self.model_without_profile(ds, models, dst_name, None)
                     if src and not dst:
-                        dst = self.model_without_profile(ds, models, hm.group(2), None, base=src)
+                        dst = self.model_without_profile(ds, models, dst_name, None, base=src)
                     if src and dst:
                         models[dst]["replaces"] = src
-                        models[dst]["max"] = 1
+                        models[dst]["max"] = (NUMBER_WORDS.get(upto) or int(upto)) if upto else 1
                         models[dst]["cost"] = self.cost(cost_txt)
-                        if hm.group(3):
-                            models[dst]["note"] = hm.group(3)
+                        if note:
+                            models[dst]["note"] = note
                     else:
                         self.problems.append(f"{ds['name']}: upgrade header '{header}'")
                     mode = None
@@ -4016,10 +4066,16 @@ class Builder:
                     item_max = 1  # "one macro-scalpel" of two
                 if g["qualifier"].startswith(("all", "both")):  # "both Bolt Pistols for one of"
                     size, item_max = 1, 1
+                # "its two heavy bolters for two Ministorum heavy flamers": a pick of one pair for another. Each
+                # pair is one selection, so the pick counts the pairs, not the weapons inside them.
+                pairs = n > 1 and not g.get("subs") and g["items"] and all(
+                    NUMBER_WORDS.get(nm.split(" ")[0].lower()) == n for nm, _, _ in g["items"])
+                if pairs:
+                    size, item_max = 1, 1
                 ge = el(groups, "selectionEntryGroup", name=f"Exchange {g['what']}", hidden=False, id=gkey,
                         defaultSelectionEntryId=make_id(gkey, "link", "default"))
-                add_constraint(ge, "min", size, gkey + "min", children=True)
-                add_constraint(ge, "max", size, gkey + "max", children=True)
+                add_constraint(ge, "min", size, gkey + "min", children=not pairs)
+                add_constraint(ge, "max", size, gkey + "max", children=not pairs)
                 gl = el(ge, "entryLinks")
                 uid = self.units[ds["name"]]
                 # "One in every three may exchange" and "Up to two may exchange" share one limit
@@ -4061,7 +4117,7 @@ class Builder:
                         e = self.link(holder, tid, name, skey, maximum=item_max)
                         self.save_on_model(me, m, tid)
                         add_cost(e, self.cost(cost))
-                if oid and not g["qualifier"].startswith("all"):
+                if oid and not g["qualifier"].startswith("all") and not pairs:
                     twin = norm(original).startswith("twin") and not norm(self.weapon_names_for(oid, original)).startswith("twin")
                     e = el(gl, "entryLink", import_=True,
                            name=original if twin else self.weapon_names_for(oid, original), hidden=False,
@@ -4522,6 +4578,11 @@ class Builder:
                      for (w, _), x in zip(parts, texts)]
             if len(set(map(norm, shown))) < len(shown) and len(names) == len(parts):
                 shown = names  # "Power Weapon and Improved Forceshield": each part by its own name
+            # "Two heavy bolters": each of the two is a "Heavy bolter"
+            shown = [(lambda w: w[0].upper() + w[1:])(re.sub(r"(?<!s)s(?=$| \()", "", re.sub(
+                         r"ies(?=$| \()", "y", x.split(" ", 1)[1])))
+                     if x.split(" ")[0].lower() in NUMBER_WORDS and " " in x and k > 1 else x
+                     for x, (_, k) in zip(shown, parts)]
             for (w, k), shown_name in zip(parts, shown):
                 self.link(links, w, shown_name, eid, count=k)
         else:
@@ -4857,6 +4918,7 @@ class Builder:
                         self.expand_carried_weapons(ds)
                         self.datasheets.append(ds)
         self.add_listed_options()
+        self.add_equipment_tables()
         self.profile_index = {}
         for ds in self.datasheets:
             for p in ds["profiles"]:

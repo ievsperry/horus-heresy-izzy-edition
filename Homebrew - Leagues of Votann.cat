@@ -4298,18 +4298,18 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Exchange two twin bolt cannons" hidden="false" id="6157-2a8c-4045-fadc" defaultSelectionEntryId="313f-25d5-4697-6ba6">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="544b-eae9-5edf-ba32" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="947c-8f1a-f4e6-5ea6" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="544b-eae9-5edf-ba32" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="947c-8f1a-f4e6-5ea6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bolt cannon" hidden="false" id="313f-25d5-4697-6ba6" type="selectionEntry" targetId="cb12-ec05-9bda-ecaa">
+                <entryLink import="true" name="Two twin bolt cannons" hidden="false" id="313f-25d5-4697-6ba6" type="selectionEntry" targetId="ed6e-0a41-452d-5534">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b45e-7885-3065-c2d4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a377-9ebd-5e3d-1fb0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Two twin ion beamers" hidden="false" id="baa6-9a56-937a-d581" type="selectionEntry" targetId="9dfe-18d2-6980-64c8">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1840-b1ee-1774-830b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1840-b1ee-1774-830b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -4346,6 +4346,16 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="300" />
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two twin bolt cannons" hidden="false" id="ed6e-0a41-452d-5534" publicationId="e1a3-795b-be05-784b">
+      <entryLinks>
+        <entryLink import="true" name="Bolt cannon" hidden="false" id="a5f8-dea6-2909-da6e" type="selectionEntry" targetId="cb12-ec05-9bda-ecaa">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3520-32f8-a025-05f2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="36eb-941b-65a6-8128" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two twin ion beamers" hidden="false" id="9dfe-18d2-6980-64c8" publicationId="e1a3-795b-be05-784b">
       <entryLinks>
