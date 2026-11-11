@@ -1339,7 +1339,7 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 | – Hexrifle | +10 points |
 | – Liquifier gun | +10 points |
 
-### Wyches — 40 pts
+### Wyches — 75 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

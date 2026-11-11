@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="e1a3-795b-be05-784b" name="Leagues of Votann for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Leagues of Votann" />
   </publications>
@@ -4463,9 +4463,9 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd7e-519b-9efd-5465" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Plasma knife" hidden="false" id="c36e-f905-6328-06c8" type="selectionEntry" targetId="60ac-c880-fb34-5430">
+                <entryLink import="true" name="Heavy volkanite disintegrator and Plasma knife" hidden="false" id="c36e-f905-6328-06c8" type="selectionEntry" targetId="3ee6-cdec-9808-6033">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52eb-5b93-901d-3119" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dda-419f-992e-243b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Autoch-pattern bolter and plasma sword" hidden="false" id="7599-e715-2434-b485" type="selectionEntry" targetId="89b6-1ab9-9b45-3c72">
@@ -4479,14 +4479,6 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Heavy volkanite disintegrator" hidden="false" id="12e8-17d5-fe34-9dc6" type="selectionEntry" targetId="7500-aff9-fefc-dec2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="916c-128c-dad9-932d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="208f-7441-9698-8b8c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
           </costs>
@@ -4496,6 +4488,22 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45" />
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy volkanite disintegrator and Plasma knife" hidden="false" id="3ee6-cdec-9808-6033" publicationId="e1a3-795b-be05-784b">
+      <entryLinks>
+        <entryLink import="true" name="Heavy volkanite disintegrator" hidden="false" id="fda3-435b-c4f7-7bcd" type="selectionEntry" targetId="7500-aff9-fefc-dec2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58ab-a5a3-a672-5f13" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b84-3ce8-61d3-b0f1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Plasma knife" hidden="false" id="2790-4c58-8f84-f4fd" type="selectionEntry" targetId="60ac-c880-fb34-5430">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7583-c991-6d97-8f97" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="778d-ff64-daf3-d543" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Autoch-pattern bolter and plasma sword" hidden="false" id="89b6-1ab9-9b45-3c72" publicationId="e1a3-795b-be05-784b">
       <entryLinks>

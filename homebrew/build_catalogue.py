@@ -3916,6 +3916,15 @@ class Builder:
                     same[0].setdefault("subs", []).append({"fixed": fixed, "required": required, "items": list(items),
                                                            "cap_if": cap_if, "within": instead, "requires": requires})
                     target = same[0]
+                elif same and qualifier == "one" and same[0]["qualifier"] == "one" and not fixed:
+                    # "may exchange one macro-surgical scalpel for" twice, each with its own list: one swap of
+                    # the pair, one pick from each list
+                    if same[0]["items"]:
+                        same[0].setdefault("subs", []).insert(0, {"fixed": None, "pick": True, "items": same[0]["items"]})
+                        same[0]["items"] = []
+                    same[0].setdefault("subs", []).append({"fixed": None, "pick": True, "items": list(items),
+                                                           "requires": requires})
+                    target = same[0]
                 elif same:
                     same[0]["items"] += items
                     target = same[0]
@@ -4100,6 +4109,9 @@ class Builder:
             if g["kind"] == "exchange":
                 original = None
                 n = 1
+                both = g["what"].split(" and ")
+                both_w = [next((w for w in wargear if norm(w) == norm(x) or forms(w) & forms(x)), None) for x in both]
+                both_w = both_w if len(both) == 2 and all(both_w) and both_w[0] != both_w[1] else None
                 for w in wargear:
                     wn = norm(w)
                     tn = norm(g["what"])
@@ -4116,8 +4128,13 @@ class Builder:
                 if original is None:
                     self.problems.append(f"{ds['name']}: exchange of '{g['what']}' matches no wargear")
                     continue
+                if both_w:
+                    # "their Hekatarii blade and splinter pistol for": a swap of its own that gives up both
+                    # weapons, so the default is the pair and neither stays as fixed wargear
+                    used.update(both_w)
+                    original = " and ".join(both_w)
                 used.add(original)
-                oid, n = self.find_weapon(original)
+                oid, n = (None, 1) if both_w else self.find_weapon(original)
                 size = n
                 item_max = n
                 if g["qualifier"].startswith("one pair") or g["qualifier"] == "one":
@@ -4126,8 +4143,11 @@ class Builder:
                     size, item_max = 1, 1
                 # "its two heavy bolters for two Ministorum heavy flamers": a pick of one pair for another. Each
                 # pair is one selection, so the pick counts the pairs, not the weapons inside them.
-                pairs = n > 1 and not g.get("subs") and g["items"] and all(
+                # "its two splinter cannons for one of: Two heat lances, Talos stinger pod": the swap names the
+                # pair, so it is one pick even when an item is a single weapon
+                pairs = n > 1 and not g.get("subs") and g["items"] and (all(
                     NUMBER_WORDS.get(nm.split(" ")[0].lower()) == n for nm, _, _ in g["items"])
+                    or NUMBER_WORDS.get(g["what"].split(" ")[0].lower()) == n)
                 if pairs:
                     size, item_max = 1, 1
                 ge = el(groups, "selectionEntryGroup", name=f"Exchange {g['what']}", hidden=False, id=gkey,
@@ -4171,6 +4191,11 @@ class Builder:
                             add_constraint(ssub, "min", sub["required"], skey + "min", scope=uid, children=True)
                         if sub.get("cap_if"):
                             self.cap_if(ssub, make_id(skey + "max", "max"), sub["cap_if"], uid, key)
+                        holder = el(ssub, "entryLinks")
+                    elif sub.get("pick"):
+                        ssub = el(child(ge, "selectionEntryGroups"), "selectionEntryGroup",
+                                  name=f"Swap {si + 1}: one of", hidden=False, id=skey)
+                        add_constraint(ssub, "max", 1, skey + "max", children=True)
                         holder = el(ssub, "entryLinks")
                     for name, cost, _ in sub["items"]:
                         alts = self.alternatives(name, ds)  # "Heavy bolter or Ministorum heavy flamer": each
