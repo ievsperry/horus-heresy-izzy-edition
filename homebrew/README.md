@@ -51,6 +51,8 @@ loading. The script prints anything in the doc it could not place.
   and Gargantuan ("Gargantuan models may not take them" leaves them out). A datasheet that
   prices a biomorph itself keeps its own cost, and units the Biomorphs section says "may
   not take biomorphs" (spores and transports) get none.
+  The named list of small models ("+1 point per model for Termagants, ... Neurogaunts") names units, so
+  every model in a listed unit pays that rate, the Neurogaunt Nodebeast included.
 - Options: extra models, weapon exchanges (including "one in every three"),
   per-model and whole-unit upgrades, and model upgrades such as the Neurothrope.
   "Each type only once" limits are enforced.

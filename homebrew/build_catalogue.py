@@ -1824,7 +1824,8 @@ class Builder:
                     if granted is not None and any(norm(r) == norm(granted.get("name")) for r in ds["rules"]):
                         continue
                     cost = rule["model"]
-                    if rule.get("small") and forms(mname) & set().union(*(forms(n) for n in rule["small"][1])):
+                    # the list names units, so every model of a listed unit pays it (the Neurogaunt Nodebeast too)
+                    if rule.get("small") and (forms(mname) | forms(ds["name"])) & set().union(*(forms(n) for n in rule["small"][1])):
                         cost = rule["small"][0]  # gaunt-sized models
                     if "Gargantuan" in m["types"]:
                         if rule.get("no_gargantuan"):
