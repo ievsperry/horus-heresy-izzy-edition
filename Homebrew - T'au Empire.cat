@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="27" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -4488,13 +4488,6 @@ Aun'Va: 24".</description>
           </constraints>
           <profiles>
             <profile name="Commander" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="5227-e703-68a8-4bbb" publicationId="733a-d454-80f2-c90e">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="af45-16c3-26c6-d2e5" childId="d622-9c99-9fd4-cb8c" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Battlesuit (Independent Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
@@ -4705,52 +4698,21 @@ Aun'Va: 24".</description>
               <entryLinks />
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="cea5-ac2a-2d36-2fc3">
-              <entryLinks>
-                <entryLink import="true" name="Iridium Armour" hidden="false" id="6806-5f58-ea4b-1de2" type="selectionEntry" targetId="d622-9c99-9fd4-cb8c">
-                  <modifiers>
-                    <modifier type="set" field="8372-e9a4-7645-6743" value="0">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="125d-7905-01a0-c4f7" childId="edc8-a788-6f45-156b" shared="true" includeChildSelections="true" includeChildForces="false" />
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8372-e9a4-7645-6743" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Shield generator" hidden="false" id="46da-7b26-ebf6-9f6a" type="selectionEntry" targetId="47e8-907d-9b3a-159d">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc7a-94d5-db74-5dcb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Options" hidden="false" id="a81f-904a-e0de-ca10">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbf4-2e6f-3837-e426" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc01-6fd2-3a9e-194c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="XV86 Coldstar battlesuit" hidden="false" id="aa08-73ff-f5b5-fcd5" type="selectionEntry" targetId="cee9-3ac3-8d85-654c">
+                <entryLink import="true" name="XV86 Coldstar battlesuit" hidden="false" id="601c-359d-4e76-649f" type="selectionEntry" targetId="cee9-3ac3-8d85-654c">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2d2-b398-5cf2-275c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59c5-55ad-eb3d-acbd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="XV85 Enforcer battlesuit" hidden="false" id="06fd-55af-caa8-2e89" type="selectionEntry" targetId="edc8-a788-6f45-156b">
+                <entryLink import="true" name="XV85 Enforcer battlesuit" hidden="false" id="9444-619b-30bb-3d69" type="selectionEntry" targetId="edc8-a788-6f45-156b">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86db-2059-6d26-d4d1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2541-1fef-dbb2-84a4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
@@ -11275,19 +11237,40 @@ O'Vesa may re-roll the Leadership test.</description>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be4e-cda8-3349-66ae" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7326-2a92-9199-d054" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 3" hidden="false" id="0184-d634-4b27-971c">
+                  <modifiers>
+                    <modifier type="increment" field="2c94-dca5-d8fc-179a" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="2c94-dca5-d8fc-179a" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ebe-96eb-86cd-984f" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="bc1a-129a-d2a5-a80a" shared="true" id="2c94-dca5-d8fc-179a" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Fusion blaster" hidden="false" id="9f10-aedf-7186-d7fd" type="selectionEntry" targetId="a66d-d1fe-1e09-0e6f">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79f6-560b-0089-71c4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Burst cannon" hidden="false" id="3b8b-6983-16a3-4f24" type="selectionEntry" targetId="6c09-740f-760c-0fd5">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09a3-8c0a-ce01-a2a8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Fusion blaster" hidden="false" id="9f10-aedf-7186-d7fd" type="selectionEntry" targetId="a66d-d1fe-1e09-0e6f">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79f6-560b-0089-71c4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -11333,13 +11316,51 @@ O'Vesa may re-roll the Leadership test.</description>
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="e860-a811-7f2f-980a" primary="false" name="Character" />
             <categoryLink targetId="e929-a5c3-451c-6f19" id="6de4-52ca-c604-7512" primary="false" name="Mechanised Unit Sub-type" />
           </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Burst cannon" hidden="false" id="f57e-8bf7-5a35-ded3" type="selectionEntry" targetId="6c09-740f-760c-0fd5">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange burst cannon" hidden="false" id="59c3-aa37-f7ea-4032" defaultSelectionEntryId="2cf8-f4b1-14be-e83b">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b901-3f12-04c3-02a6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="708d-f449-06b0-9d3e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd63-2473-af3f-16a6" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11a8-ab3e-be02-1a14" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
-            </entryLink>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 3" hidden="false" id="2ebe-96eb-86cd-984f">
+                  <modifiers>
+                    <modifier type="increment" field="cc0b-1ca1-5ef0-cbf7" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="cc0b-1ca1-5ef0-cbf7" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0184-d634-4b27-971c" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="bc1a-129a-d2a5-a80a" shared="true" id="cc0b-1ca1-5ef0-cbf7" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Fusion blaster" hidden="false" id="4118-c43c-6f0c-4b2d" type="selectionEntry" targetId="a66d-d1fe-1e09-0e6f">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="097f-6caa-2a87-c3e2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Burst cannon" hidden="false" id="2cf8-f4b1-14be-e83b" type="selectionEntry" targetId="6c09-740f-760c-0fd5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce07-69fb-e42d-91b0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
             <entryLink import="true" name="Stealth Battlesuit" hidden="false" id="55b8-4284-706c-e5df" type="selectionEntry" targetId="7a95-95e8-8bd1-7f3f">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b035-be98-a4f0-8eb7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -11353,33 +11374,33 @@ O'Vesa may re-roll the Leadership test.</description>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Stealth Shas'vre: Options" hidden="false" id="a08b-59ab-ca65-f137">
+        <selectionEntryGroup name="Stealth Shas'vre: Options" hidden="false" id="c3c2-8aa0-99c3-0571">
           <entryLinks>
-            <entryLink import="true" name="Markerlight" hidden="false" id="6c34-6954-8971-c3c0" type="selectionEntry" targetId="8dd6-6e07-6920-7831">
+            <entryLink import="true" name="Markerlight" hidden="false" id="35b1-276e-6657-4f08" type="selectionEntry" targetId="8dd6-6e07-6920-7831">
               <modifiers>
-                <modifier type="increment" field="40dc-1dff-5cf2-ea51" value="1">
+                <modifier type="increment" field="1faa-e217-7a87-5910" value="1">
                   <repeats>
                     <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="40dc-1dff-5cf2-ea51" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1faa-e217-7a87-5910" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
             </entryLink>
-            <entryLink import="true" name="Homing Beacon" hidden="false" id="2533-35ef-cb01-3a9b" type="selectionEntry" targetId="7d9a-12d3-479c-a341">
+            <entryLink import="true" name="Homing Beacon" hidden="false" id="92a5-ccb6-d966-5ed8" type="selectionEntry" targetId="7d9a-12d3-479c-a341">
               <modifiers>
-                <modifier type="increment" field="02fc-d646-3c29-d115" value="1">
+                <modifier type="increment" field="7b43-23c0-9a40-809d" value="1">
                   <repeats>
                     <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="02fc-d646-3c29-d115" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7b43-23c0-9a40-809d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
@@ -11387,206 +11408,206 @@ O'Vesa may re-roll the Leadership test.</description>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Stealth Shas'vre: Options" hidden="false" id="c3c2-8aa0-99c3-0571">
+        <selectionEntryGroup name="Stealth Shas'vre: Options" hidden="false" id="875f-d3db-cb5e-70d1">
           <modifiers>
-            <modifier type="increment" field="fe69-a939-e176-8e48" value="1">
+            <modifier type="increment" field="9b2d-e0a4-62e3-7339" value="1">
               <repeats>
                 <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fe69-a939-e176-8e48" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d01-3fbb-ef3b-e434" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9b2d-e0a4-62e3-7339" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd4b-1a4c-19dd-41b2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Stealth Shas'vre: Battlesuit Armoury" hidden="false" id="b9d2-0393-e7e6-7953">
+            <selectionEntryGroup name="Stealth Shas'vre: Battlesuit Armoury" hidden="false" id="2c3d-d4e2-b05a-15d8">
               <modifiers>
-                <modifier type="increment" field="ebe6-bfd2-c11d-f0a5" value="1">
+                <modifier type="increment" field="39f0-06fe-1b2e-fbba" value="1">
                   <repeats>
                     <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ebe6-bfd2-c11d-f0a5" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="39f0-06fe-1b2e-fbba" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Blacksun filter" hidden="false" id="1dc5-0971-149b-41e0" type="selectionEntry" targetId="9e7d-b4ce-b122-3b47">
+                <entryLink import="true" name="Blacksun filter" hidden="false" id="ec2b-4d5a-aba5-aab3" type="selectionEntry" targetId="9e7d-b4ce-b122-3b47">
                   <modifiers>
-                    <modifier type="increment" field="52a7-dd56-e3ef-9984" value="1">
+                    <modifier type="increment" field="be9e-0073-39b7-dc46" value="1">
                       <repeats>
                         <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="52a7-dd56-e3ef-9984" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="be9e-0073-39b7-dc46" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Positional relay" hidden="false" id="c4c1-9ddc-ecae-3766" type="selectionEntry" targetId="d520-ac5a-1690-5ab8">
+                <entryLink import="true" name="Positional relay" hidden="false" id="6df7-d92c-267e-a46d" type="selectionEntry" targetId="d520-ac5a-1690-5ab8">
                   <modifiers>
-                    <modifier type="increment" field="6d26-44da-92b6-2e99" value="1">
+                    <modifier type="increment" field="2e86-4709-94ed-8c42" value="1">
                       <repeats>
                         <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6d26-44da-92b6-2e99" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2e86-4709-94ed-8c42" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Advanced targeting system" hidden="false" id="8172-dcdc-b1c3-7ffa" type="selectionEntry" targetId="43d7-24d5-88d6-76c0">
+                <entryLink import="true" name="Advanced targeting system" hidden="false" id="35a1-2f69-737b-16aa" type="selectionEntry" targetId="43d7-24d5-88d6-76c0">
                   <modifiers>
-                    <modifier type="increment" field="0b44-c83a-87c4-83f5" value="1">
+                    <modifier type="increment" field="5bfc-cd5c-d0df-8bd6" value="1">
                       <repeats>
                         <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0b44-c83a-87c4-83f5" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5bfc-cd5c-d0df-8bd6" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Counterfire defence system" hidden="false" id="b5f7-899e-e068-9761" type="selectionEntry" targetId="78d0-20cc-4ce6-73ab">
+                <entryLink import="true" name="Counterfire defence system" hidden="false" id="ab73-ff1a-dc9f-b94a" type="selectionEntry" targetId="78d0-20cc-4ce6-73ab">
                   <modifiers>
-                    <modifier type="increment" field="98a3-b1f7-6878-4bb7" value="1">
+                    <modifier type="increment" field="16f7-94a8-c16d-45e9" value="1">
                       <repeats>
                         <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="98a3-b1f7-6878-4bb7" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="16f7-94a8-c16d-45e9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Drone controller" hidden="false" id="0f54-7826-91c2-d5c0" type="selectionEntry" targetId="cc41-a240-f7e8-cdf6">
+                <entryLink import="true" name="Drone controller" hidden="false" id="c1ee-4229-2975-150f" type="selectionEntry" targetId="cc41-a240-f7e8-cdf6">
                   <modifiers>
-                    <modifier type="increment" field="296f-48c0-53e3-a759" value="1">
+                    <modifier type="increment" field="30a3-e91e-be5b-f0c9" value="1">
                       <repeats>
                         <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="296f-48c0-53e3-a759" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="30a3-e91e-be5b-f0c9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Early warning override" hidden="false" id="e112-9a7d-b227-712e" type="selectionEntry" targetId="a97d-83c8-621e-e14a">
+                <entryLink import="true" name="Early warning override" hidden="false" id="5b4a-658d-e7bc-9558" type="selectionEntry" targetId="a97d-83c8-621e-e14a">
                   <modifiers>
-                    <modifier type="increment" field="4156-ee82-82d0-c80b" value="1">
+                    <modifier type="increment" field="feec-da03-3fd2-7c2d" value="1">
                       <repeats>
                         <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4156-ee82-82d0-c80b" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="feec-da03-3fd2-7c2d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Multi-tracker" hidden="false" id="953c-964a-2579-8509" type="selectionEntry" targetId="4797-7fb1-0e3e-8502">
+                <entryLink import="true" name="Multi-tracker" hidden="false" id="df9b-1f30-178b-5013" type="selectionEntry" targetId="4797-7fb1-0e3e-8502">
                   <modifiers>
-                    <modifier type="increment" field="173a-e37a-d390-e4ec" value="1">
+                    <modifier type="increment" field="3ae0-21b8-9d09-8ab8" value="1">
                       <repeats>
                         <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="173a-e37a-d390-e4ec" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3ae0-21b8-9d09-8ab8" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Shield generator" hidden="false" id="b169-1a97-af16-e1c8" type="selectionEntry" targetId="d7b2-1940-b695-d935">
+                <entryLink import="true" name="Shield generator" hidden="false" id="7231-d66e-37cf-1c92" type="selectionEntry" targetId="d7b2-1940-b695-d935">
                   <modifiers>
-                    <modifier type="increment" field="1550-5a91-69af-c829" value="1">
+                    <modifier type="increment" field="b42c-5010-57a4-e099" value="1">
                       <repeats>
                         <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1550-5a91-69af-c829" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b42c-5010-57a4-e099" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Stimulant injector" hidden="false" id="aaf9-b8ed-6676-edd2" type="selectionEntry" targetId="8799-624c-377c-8ee2">
+                <entryLink import="true" name="Stimulant injector" hidden="false" id="2546-dc73-c46e-f3c0" type="selectionEntry" targetId="8799-624c-377c-8ee2">
                   <modifiers>
-                    <modifier type="increment" field="8b87-af6e-cbe8-3b18" value="1">
+                    <modifier type="increment" field="6e16-ebd5-771c-bab7" value="1">
                       <repeats>
                         <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8b87-af6e-cbe8-3b18" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6e16-ebd5-771c-bab7" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Target lock" hidden="false" id="0014-b2c3-5fbb-342c" type="selectionEntry" targetId="4422-18c9-0610-3951">
+                <entryLink import="true" name="Target lock" hidden="false" id="7ef4-128d-c706-6a04" type="selectionEntry" targetId="4422-18c9-0610-3951">
                   <modifiers>
-                    <modifier type="increment" field="b584-2d7a-c167-3618" value="1">
+                    <modifier type="increment" field="3393-6e8c-e480-62f1" value="1">
                       <repeats>
                         <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b584-2d7a-c167-3618" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3393-6e8c-e480-62f1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Vectored retro-thrusters" hidden="false" id="9e29-a421-4cbf-d63e" type="selectionEntry" targetId="bd86-5c23-499f-2900">
+                <entryLink import="true" name="Vectored retro-thrusters" hidden="false" id="fc4b-9821-afbb-55c9" type="selectionEntry" targetId="bd86-5c23-499f-2900">
                   <modifiers>
-                    <modifier type="increment" field="7d10-1bff-7c60-e3ae" value="1">
+                    <modifier type="increment" field="8ff7-12e8-80bf-b2c2" value="1">
                       <repeats>
                         <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7d10-1bff-7c60-e3ae" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8ff7-12e8-80bf-b2c2" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Velocity tracker" hidden="false" id="434e-3d8f-1f6c-d59f" type="selectionEntry" targetId="7b5a-56b6-d8c4-2147">
+                <entryLink import="true" name="Velocity tracker" hidden="false" id="0315-ecdf-6d73-754a" type="selectionEntry" targetId="7b5a-56b6-d8c4-2147">
                   <modifiers>
-                    <modifier type="increment" field="b88d-ad70-614a-b74c" value="1">
+                    <modifier type="increment" field="b978-c51d-eba8-34c8" value="1">
                       <repeats>
                         <repeat field="selections" scope="bc1a-129a-d2a5-a80a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e4-b9fd-07c2-b6b5" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b88d-ad70-614a-b74c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b978-c51d-eba8-34c8" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
