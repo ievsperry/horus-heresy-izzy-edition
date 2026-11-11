@@ -187,7 +187,7 @@ OFFICIAL_ALIASES = {"storm bolter": "combi-bolter", "boltgun": "bolter", "force 
                     "assault cannon": "kheres assault cannon", "twin assault cannon": "twin-linked kheres assault cannon",
                     "twin heavy bolter": "gravis bolt cannon", "twin lascannon": "gravis lascannon",
                     "twin multi-melta": "gravis melta cannon", "frag assault launchers": "frag launchers",
-                    "ancestral ward stave": "force staff",  # Votann
+                    "ancestral ward stave": "force staff", "rune staff": "force staff",  # Votann
                     "autogun": "autorifle", "telepathy stave": "force staff"}  # Astra Militarum: the 2.0 names
 
 
@@ -3717,7 +3717,9 @@ class Builder:
         model has the item, its profile shows the extra Wounds and the Sub-type, and it has the Sub-type's category."""
         keep = []
         for n in ds["notes"]:
-            m = re.match(r"An? (.+?) that takes (.+?) gains \+(\d) Wounds?(?: and the (\w+) Sub-type)?(?:\.\s*|$)", n)
+            # "A Kâhl that takes Exo-armour gains the Heavy Sub-type": the Sub-type alone
+            m = re.match(r"An? (.+?) that takes (.+?) gains(?: \+(\d) Wounds?)?(?: and)?(?: the (\w+) Sub-type)?(?:\.\s*|$)", n)
+            m = m if m and (m.group(3) or m.group(4)) else None
             mname = m and next((x for x in models if forms(x) & forms(m.group(1))), None)
             item = m and self.find_upgrade(m.group(2))
             if not (mname and item):
@@ -3727,7 +3729,7 @@ class Builder:
             me = unit.find(f"selectionEntries/selectionEntry[@id='{models[mname]['id']}']")
             prof = me.find("profiles/profile")
             mods = child(prof, "modifiers")
-            changes = [("increment", UNIT_CHARS[6][1], m.group(3))]
+            changes = [("increment", UNIT_CHARS[6][1], m.group(3))] if m.group(3) else []
             if m.group(4):
                 typ = models[mname]["types"]
                 typ = re.sub(r"\((.+)\)$", lambda x: f"({m.group(4)}, {x.group(1)})", typ) if typ.endswith(")") \
@@ -4112,11 +4114,13 @@ class Builder:
                 both = g["what"].split(" and ")
                 both_w = [next((w for w in wargear if norm(w) == norm(x) or forms(w) & forms(x)), None) for x in both]
                 both_w = both_w if len(both) == 2 and all(both_w) and both_w[0] != both_w[1] else None
-                for w in wargear:
-                    wn = norm(w)
-                    tn = norm(g["what"])
-                    if tn in wn or any(c in wn for c in singular(tn)) or wn.endswith(tn.split()[-1]):
-                        original = w
+                tn = norm(g["what"])
+                # the weapon it names before one that only ends the same way: "its twin HYLas beam cannon" is
+                # not the "Bolt cannon" listed first
+                for test in (lambda wn: tn in wn,
+                             lambda wn: any(c in wn for c in singular(tn)) or wn.endswith(tn.split()[-1])):
+                    original = next((w for w in wargear if test(norm(w))), None)
+                    if original:
                         break
                 if original is None:
                     whats = g["what"].split(" or ") + g["what"].split(" and ")[:1]

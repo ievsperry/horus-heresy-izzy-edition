@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="e1a3-795b-be05-784b" name="Leagues of Votann for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Leagues of Votann" />
   </publications>
@@ -2258,12 +2258,31 @@
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Kâhl" hidden="false" id="0e5a-38ba-4d10-9618" publicationId="e1a3-795b-be05-784b">
+          <modifiers>
+            <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="0e5a-38ba-4d10-9618" childId="2683-1a84-acb0-4254" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a878-0b0f-1ed2-f37d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e34-5343-c27a-2b58" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
             <profile name="Kâhl" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="41b8-5300-4cfd-77cc" publicationId="e1a3-795b-be05-784b">
+              <modifiers>
+                <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="0e5a-38ba-4d10-9618" childId="2683-1a84-acb0-4254" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Heavy, Independent Character)">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="0e5a-38ba-4d10-9618" childId="2683-1a84-acb0-4254" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Independent Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">5</characteristic>
@@ -2303,7 +2322,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Rune staff" hidden="false" id="9726-a8ce-e63c-8388" type="selectionEntry" targetId="bf71-d620-dc52-7ee3">
+                <entryLink import="true" name="Rune staff (force weapon)" hidden="false" id="9726-a8ce-e63c-8388" type="selectionEntry" targetId="5132-9034-5e79-13c8">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="849e-2ac0-0e92-302a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -2334,11 +2353,20 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Options" hidden="false" id="ce56-6d1f-f38e-4b76">
+            <selectionEntryGroup name="Exchange void armour" hidden="false" id="ce56-6d1f-f38e-4b76" defaultSelectionEntryId="5572-f858-e139-49c5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d80-a81a-f407-59b5" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40b0-3c6a-94be-d00a" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
               <entryLinks>
-                <entryLink import="true" name="Exo-armour" hidden="false" id="aff6-6df5-dd9f-6d7b" type="selectionEntry" targetId="f818-669e-175e-4860">
+                <entryLink import="true" name="Void armour" hidden="false" id="5572-f858-e139-49c5" type="selectionEntry" targetId="44bb-8066-c045-54bf">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="885b-f05f-b83e-576e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="991a-0391-61ff-d9e2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Exo-armour" hidden="false" id="3860-23c4-5dc3-20ef" type="selectionEntry" targetId="2683-1a84-acb0-4254">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6f8-71f7-652d-17c7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
@@ -2348,12 +2376,6 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Void Armour" hidden="false" id="9762-0034-7d79-dc7c" type="selectionEntry" targetId="44bb-8066-c045-54bf">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6ab-5b74-c898-6e0f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6a9-31ba-e59d-7003" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Weavefield Crest" hidden="false" id="fff1-5928-2760-28aa" type="selectionEntry" targetId="9f56-bdfb-7d26-7854">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c14-a1e9-f7e3-85e9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -2399,24 +2421,6 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="90" />
       </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Rune staff" hidden="false" id="bf71-d620-dc52-7ee3" publicationId="e1a3-795b-be05-784b">
-      <profiles>
-        <profile name="Rune staff" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d997-4911-e47d-51eb">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Force weapon</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Exo-armour" hidden="false" id="f818-669e-175e-4860" publicationId="e1a3-795b-be05-784b">
-      <profiles>
-        <profile name="Exo-armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b63d-914a-5132-967b">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">2+ save; Infantry (Heavy, Character); 40mm base</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Memnyr Strategist" hidden="false" id="d5f3-b30d-e555-dde1" publicationId="e1a3-795b-be05-784b">
       <rules>
@@ -3090,9 +3094,9 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Kinlynk heavy weapon" hidden="false" id="d63d-544e-d69d-3713" type="selectionEntry" targetId="f70e-3749-2e3c-0a6f">
+                    <entryLink import="true" name="Ion beamer" hidden="false" id="6bc3-d56a-cdd7-5e8f" type="selectionEntry" targetId="abf6-db26-162c-da98">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea83-83bc-4b95-b221" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ff7-8787-9ae8-3af0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
@@ -3191,16 +3195,6 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="110" />
       </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Kinlynk heavy weapon" hidden="false" id="f70e-3749-2e3c-0a6f" publicationId="e1a3-795b-be05-784b">
-      <entryLinks>
-        <entryLink import="true" name="Ion beamer" hidden="false" id="9320-98ba-593d-5855" type="selectionEntry" targetId="abf6-db26-162c-da98">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ab5-d86c-5622-6a4e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a44-1e24-e6c3-4d4d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-        </entryLink>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ironkin Steeljacks with Melee Weapons" hidden="false" id="49d1-c108-d648-bf7f" publicationId="e1a3-795b-be05-784b">
       <rules>
@@ -3973,7 +3967,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a004-6eae-2659-3177" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bolt cannon" hidden="false" id="8fa0-3a5c-838a-4b5a" type="selectionEntry" targetId="cb12-ec05-9bda-ecaa">
+                <entryLink import="true" name="Twin HYLas beam cannon" hidden="false" id="8fa0-3a5c-838a-4b5a" type="selectionEntry" targetId="ff22-e2bb-382b-42f9">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b58-6d68-d877-aecf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -3993,10 +3987,10 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Twin HYLas beam cannon" hidden="false" id="c91e-26b8-0bd0-e08f" type="selectionEntry" targetId="ff22-e2bb-382b-42f9">
+            <entryLink import="true" name="Bolt cannon" hidden="false" id="e076-1a67-a7b8-67d2" type="selectionEntry" targetId="cb12-ec05-9bda-ecaa">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e8a1-ff14-f4b4-5513" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a01a-86c1-ffee-f950" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4ed-eb31-d4e7-98dc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8829-5f5a-c97e-bcc7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
