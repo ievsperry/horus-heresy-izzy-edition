@@ -3967,7 +3967,7 @@ class Builder:
                 # devourer" are one choice of what replaces the devourer.
                 same = [g for g in models[mname]["groups"] if g["kind"] == "exchange" and norm(g["what"]) == norm(what)]
                 # "One Battle Sister may exchange her boltgun for" twice: two Sisters, each with her own pick
-                if same and (fixed != same[0]["fixed"] or required or instead
+                if same and (fixed != same[0]["fixed"] or required or instead or requires
                              or (fixed and determiner == "One" and same[0].get("one"))):
                     # "Any Veteran ... shotgun", "One other Veteran ... heavy flamer", "Up to three remaining
                     # Veterans ... special weapons": one swap of the lasgun, each pick with its own limit
@@ -3990,6 +3990,11 @@ class Builder:
                     target = {"kind": "exchange", "what": what, "qualifier": qualifier,
                               "items": list(items), "fixed": fixed, "required": required, "cap_if": cap_if,
                               "one": determiner == "One"}
+                    if requires:
+                        # "Any model equipped with Mega Armour may exchange its Kombi-Shoota for": its only swap
+                        # of that weapon, still only with the Mega Armour
+                        target["items"] = []
+                        target["subs"] = [{"fixed": None, "items": list(items), "requires": requires}]
                     models[mname]["groups"].append(target)
                 if ratio_all:
                     target.update(ratio_per=ratio_per, ratio_all=True, each_once=each_once)
@@ -4749,8 +4754,15 @@ class Builder:
         if not rid or cmax is None:
             self.problems.append(f"{ds['name']}: no '{item}' for 'a model equipped with {item}'")
             return
+        # The item may sit on the model, in a unit-level pick for that model (a unit with grot attendants),
+        # or be bought for the whole mob (Warboss Retinue): look where it is offered.
+        uid = self.units[ds["name"]]
+        ue = next((u for u in self.shared_entries.iter("selectionEntry") if u.get("id") == uid), None)
+        me = next((m for m in ue.iter("selectionEntry") if m.get("id") == model_id), None) if ue is not None else None
+        on_model = me is not None and any(l.get("targetId") == rid for l in me.iter("entryLink"))
         mod = el(child(e, "modifiers"), "modifier", type="set", field=cmax.get("id"), value=0)
-        el(el(mod, "conditions"), "condition", type="lessThan", value=1, field="selections", scope=model_id,
+        el(el(mod, "conditions"), "condition", type="lessThan", value=1, field="selections",
+           scope=model_id if on_model else uid,
            childId=rid, shared=True, includeChildSelections=True, includeChildForces=False)
 
     def shared_ratio(self, uid, what, every, sub):

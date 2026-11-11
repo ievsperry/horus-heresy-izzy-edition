@@ -3324,11 +3324,8 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 
 **Wargear**
 
-- Snazzgun
-- Slugga
-- Choppa
-- Stikkbombz
-- 'Eavy armour
+- Flash Gitz and Kaptin: snazzgun, slugga, choppa, stikkbombz, 'eavy armour
+- Ammo Runt: grot blasta
 
 **Unit Type**
 
