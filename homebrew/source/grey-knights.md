@@ -812,7 +812,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | --- | --: |
 | **The squad may take:** |  |
 | – Up to 5 additional Purifiers | +24 points each |
-| **For every 5 models, two Purifiers may exchange their storm bolter for:** |  |
+| **For every 5 models, two models may exchange their storm bolter for:** |  |
 | – Incinerator | +5 points |
 | – Psilencer | +5 points |
 | – Psycannon | +15 points |
@@ -896,7 +896,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | --- | --: |
 | **The squad may take:** |  |
 | – Up to 5 additional Terminators | +35 points each |
-| **For every 5 models, one Terminator may exchange his storm bolter for:** |  |
+| **For every 5 models, one model may exchange its storm bolter for:** |  |
 | – Incinerator | +5 points |
 | – Psilencer | +5 points |
 | – Psycannon | +15 points |
@@ -949,7 +949,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | --- | --: |
 | **The squad may take:** |  |
 | – Up to 5 additional Grey Knights | +20 points each |
-| **For every 5 models, one Grey Knight may exchange his storm bolter for:** |  |
+| **For every 5 models, one model may exchange its storm bolter for:** |  |
 | – Incinerator | +5 points |
 | – Psilencer | +5 points |
 | – Psycannon | +15 points |
@@ -1000,7 +1000,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | --- | --: |
 | **The squad may take:** |  |
 | – Up to 5 additional Interceptors | +24 points each |
-| **For every 5 models, one Interceptor may exchange his storm bolter for:** |  |
+| **For every 5 models, one model may exchange its storm bolter for:** |  |
 | – Incinerator | +5 points |
 | – Psilencer | +5 points |
 | – Psycannon | +15 points |
@@ -1215,7 +1215,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | --- | --: |
 | **The squad may take:** |  |
 | – Up to 5 additional Purgators | +24 points each |
-| **Up to four Purgators may exchange their storm bolter for:** |  |
+| **Up to four models may exchange their storm bolter for:** |  |
 | – Incinerator | +5 points each |
 | – Psilencer | +5 points each |
 | – Psycannon | +15 points each |
