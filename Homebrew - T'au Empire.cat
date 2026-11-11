@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="25" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="26" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -14179,21 +14179,15 @@ O'Vesa may re-roll the Leadership test.</description>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Markerlight" hidden="false" id="804b-92d6-04bf-a75a" type="selectionEntry" targetId="8dd6-6e07-6920-7831">
+                <entryLink import="true" name="Pulse carbine and markerlight" hidden="false" id="804b-92d6-04bf-a75a" type="selectionEntry" targetId="1b87-d2b7-737f-4c42">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="696d-e10f-c4d8-8a2c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee39-319c-4982-b7fc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Pulse carbine" hidden="false" id="27cd-a30e-b980-485e" type="selectionEntry" targetId="841d-336f-13a6-d9a5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9b9-4c8d-b286-6622" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d83-32aa-8878-6911" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Recon Armour" hidden="false" id="0117-722e-92cd-06b0" type="selectionEntry" targetId="f202-6a4b-bc3d-8232">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89bc-1287-cfe2-bbfc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -15077,6 +15071,22 @@ O'Vesa may re-roll the Leadership test.</description>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="21" />
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pulse carbine and markerlight" hidden="false" id="1b87-d2b7-737f-4c42" publicationId="733a-d454-80f2-c90e">
+      <entryLinks>
+        <entryLink import="true" name="Pulse carbine" hidden="false" id="551b-652f-605b-b40a" type="selectionEntry" targetId="841d-336f-13a6-d9a5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="112b-3055-a9f7-9b18" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6157-580d-9ae6-076c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Markerlight" hidden="false" id="969c-0c6e-d9b1-2baf" type="selectionEntry" targetId="8dd6-6e07-6920-7831">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a5d-1828-1296-cfc7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2304-6768-319c-d1cc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ion rifle" hidden="false" id="4c3c-073c-4f84-472a" publicationId="733a-d454-80f2-c90e">
       <entryLinks>

@@ -208,7 +208,13 @@ loading. The script prints anything in the doc it could not place.
   a ...": up to two of the model become the other kind, each in place of a Warrior.
 - A swap of a pair for a pair ("its two heavy bolters for two Ministorum heavy flamers", "its two dark lances
   for two disintegrator cannons") is one pick of a whole pair: before, a pair counted as three selections (the
-  pick and the two weapons in it) and broke the swap.
+  pick and the two weapons in it) and broke the swap. A swap that names the pair ("its two splinter cannons for
+  one of: Two heat lances, Talos stinger pod") is one pick too, even when an item is a single weapon.
+- "may exchange their Hekatarii blade and splinter pistol for" with no other swap of either weapon (Wyches,
+  Bloodbrides, Corsair Voidscarred and Skyreavers, the Steeljack Theyn, Ork Boyz, Pathfinders) gives up both: the default is the pair, and
+  neither weapon stays as fixed wargear beside the pick.
+- Two "may exchange one macro-surgical scalpel for" swaps, each with its own list (the Talos), are one swap of
+  the two scalpels with one pick from each list, not two picks from either.
 - Wargear grouped under a heading ("### Armour" holding "#### Kabalite Armour") is read item by item.
   "Scourge wings (count as a jump pack)" is the official jump pack under the doc's name. "May exchange
   any dark lance" lets each of the three be swapped; "one macro-scalpel" only one of the two.
