@@ -28,7 +28,7 @@ class GameTests(unittest.TestCase):
         print("Loading NR")
 
         driver.execute_script('localStorage.setItem("local", "true")')
-        # seems to end up running before the system initializes, so we don't need to refresh
+        driver.refresh()
 
         print("Waiting up to 30 seconds for the theme pop-up")
         try:
