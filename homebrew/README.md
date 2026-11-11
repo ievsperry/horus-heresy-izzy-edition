@@ -588,6 +588,12 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   the official Eyrine Needle Pistol rename. Done once so that "may take one of" picks allow one item, the Shrikes'
   "Two Shrike Talons" swap is one pick of a pair, and the twin-linked Vratine Bolter and Corvae Las-Pulser show
   their profiles.
+- The Liber Imperatus Legio Custodes expansion (the Claude Doc "Legio Custodes Horus Heresy 2.0 - Homebrew
+  Conversion", kept as `source/legio-custodes.md`) is in `2022 - LI - Custodes.cat`: six Shield Captains and the
+  Host-Master, Allarus Terminators, the Contemptor-Moritiax Talon, Dawneagles, the Grav-Raider, Grav-Spartan and
+  Land Raider carriers, the Chambers of the Golden Host, the Shield-Hosts and the extra options on the official
+  Hetaeron, Custodian Guard and Sagittarum squads. It was written into the official file directly, with no
+  add script in this repository; the doc is the reference to check it against.
 - `python3 homebrew/add_sisters_of_silence.py` adds the Liber Imperatus Sisters of Silence expansion (the Claude Doc
   "Sisters of Silence Horus Heresy 2.0 - Homebrew Conversion", kept as `source/sisters-of-silence.md`) to
   `2022 - LI - Sisters Of Silence.cat`. build_catalogue.py's Builder reads the doc's datasheets; their units then
