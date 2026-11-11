@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="7842-5e80-aeae-2118" name="Homebrew - Traders Militant" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="7842-5e80-aeae-2118" name="Homebrew - Traders Militant" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="3ea8-cc3d-f08e-1e10" name="Traders Militant Horus Heresy 2.0 - Homebrew Conversion" shortName="HB - Traders Militant" />
   </publications>
@@ -3737,6 +3737,9 @@
               </categoryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Options" hidden="false" id="4b8a-f08f-f00e-c48d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1f6-59b0-81ba-285f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Astartes Shotgun" hidden="false" id="d596-8766-2991-9894" type="selectionEntry" targetId="9bae-113b-1e34-81ac">
                       <constraints>
@@ -4526,6 +4529,9 @@
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Options" hidden="false" id="61d9-82c7-8263-b607">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f482-2845-b850-6b7a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Conversion Beamer" hidden="false" id="83df-c8fc-61e8-5e68" type="selectionEntry" targetId="3e03-1e68-f8ff-a3a5">
                       <constraints>
@@ -6049,6 +6055,9 @@
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="8cb3-1a21-4e22-0510">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e62-cb3c-987d-2e55" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <entryLinks>
                 <entryLink import="true" name="Assault Needler" hidden="false" id="afaf-b034-437b-30d9" type="selectionEntry" targetId="bb3d-b162-c773-70a2">
                   <constraints>
@@ -8758,6 +8767,9 @@ Limitations
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" hidden="false" id="5239-e122-c8d9-5594">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5d2-3bcd-108f-932d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <entryLinks>
                 <entryLink import="true" name="Pintle Mounted Heavy Flamer" hidden="false" id="f283-9da2-e67a-ad91" type="selectionEntry" targetId="5507-b432-3b4c-df12">
                   <constraints>
@@ -8940,6 +8952,9 @@ Limitations
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="eed8-6660-096e-7ff5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02a7-e91a-cc91-c030" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <entryLinks>
                 <entryLink import="true" name="Pintle Mounted Heavy Flamer" hidden="false" id="b5ee-6630-4c0a-e846" type="selectionEntry" targetId="5507-b432-3b4c-df12">
                   <constraints>
@@ -9380,48 +9395,28 @@ Limitations
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="4c6b-f9e6-140d-2592">
+          <modifiers>
+            <modifier type="increment" field="ce6f-6ee2-17cd-51ed" value="1">
+              <repeats>
+                <repeat field="selections" scope="f5a9-b3e2-3156-9f56" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9211-78e4-bbd8-eedc" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ce6f-6ee2-17cd-51ed" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Pintle Mounted Heavy Flamer" hidden="false" id="0094-3336-9ba7-894a" type="selectionEntry" targetId="5507-b432-3b4c-df12">
-              <modifiers>
-                <modifier type="increment" field="b0b0-ab0c-b4e8-fff1" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="f5a9-b3e2-3156-9f56" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9211-78e4-bbd8-eedc" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b0b0-ab0c-b4e8-fff1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
               </costs>
             </entryLink>
             <entryLink import="true" name="Pintle Mounted Heavy Stubber" hidden="false" id="5c21-f079-f160-4b3e" type="selectionEntry" targetId="f227-a61a-3215-932b">
-              <modifiers>
-                <modifier type="increment" field="91ed-a4b6-4097-181a" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="f5a9-b3e2-3156-9f56" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9211-78e4-bbd8-eedc" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="91ed-a4b6-4097-181a" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
               </costs>
             </entryLink>
             <entryLink import="true" name="Pintle Mounted Multi-Laser" hidden="false" id="4d0d-65c9-7bdd-c064" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
-              <modifiers>
-                <modifier type="increment" field="68fa-ac39-520c-68c6" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="f5a9-b3e2-3156-9f56" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9211-78e4-bbd8-eedc" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="68fa-ac39-520c-68c6" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
