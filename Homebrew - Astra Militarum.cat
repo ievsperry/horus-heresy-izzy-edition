@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6aaf-163e-5512-c78e" name="Homebrew - Astra Militarum" revision="27" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6aaf-163e-5512-c78e" name="Homebrew - Astra Militarum" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="0fda-9dad-a0bf-40e6" name="Astra Militarum for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Astra Militarum" />
   </publications>
@@ -527,18 +527,39 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Cadian Shock Troops" hidden="false" id="e688-2458-b24b-fd3d" type="selectionEntry" targetId="44a0-c618-ce9d-6262">
+      <modifiers>
+        <modifier type="add" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="9510-5d77-7cea-145f" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="0072-2983-1258-6914" primary="true" name="Troops:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="d05a-0b9a-a5be-a189" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Catachan Jungle Fighters" hidden="false" id="9e2e-259c-81a7-b61c" type="selectionEntry" targetId="7e6f-9f19-9d4f-021d">
+      <modifiers>
+        <modifier type="add" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="365f-05ef-4447-be95" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="5a5c-4cf2-6a3b-76e5" primary="true" name="Troops:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="8fda-08cd-4fa0-6c1e" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Death Korps of Krieg" hidden="false" id="5274-31bc-1b12-ab6d" type="selectionEntry" targetId="0df8-02e9-1508-23b5">
+      <modifiers>
+        <modifier type="add" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="bf51-017e-dbd4-920d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="fdef-c9b2-cbed-4c84" primary="true" name="Troops:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="58fc-0a86-22a8-edb2" primary="false" name="Unit:" />
@@ -7587,7 +7608,15 @@
           </modifiers>
         </infoLink>
         <infoLink name="Shock Troops" id="be32-bc6e-96ac-4fbb" hidden="false" targetId="c826-b0d7-018e-7a7d" type="rule" />
-        <infoLink name="Support Squad" id="6806-ad84-f447-cfdb" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule" />
+        <infoLink name="Support Squad" id="6806-ad84-f447-cfdb" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9510-5d77-7cea-145f" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Move Through Cover" id="6d03-a315-8133-5377" hidden="true" targetId="2b6f-bfec-759e-1746" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -7635,12 +7664,28 @@
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Fury of the Regiment" id="1ee6-ecfe-6d86-d038" hidden="true" targetId="928d-06ac-2dfe-9f35" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9510-5d77-7cea-145f" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="1e05-fc9e-125f-1976" primary="false" name="Unit:" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Shock Trooper" hidden="false" id="5af1-7dca-3d94-6541" publicationId="0fda-9dad-a0bf-40e6">
+          <modifiers>
+            <modifier type="add" field="category" value="6399-5c65-7833-1025">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9510-5d77-7cea-145f" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="6c95-2eba-b196-bee2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="7ed6-b3e4-84bc-ef64" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7779,6 +7824,13 @@
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Shock Trooper Sergeant" hidden="false" id="c883-6aa1-c534-639b" publicationId="0fda-9dad-a0bf-40e6">
+          <modifiers>
+            <modifier type="add" field="category" value="6399-5c65-7833-1025">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9510-5d77-7cea-145f" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7241-ac22-48b5-59e0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc59-6f68-7489-ecff" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8044,7 +8096,15 @@
           </modifiers>
         </infoLink>
         <infoLink name="Scout" id="2e09-8c95-7010-3f46" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule" />
-        <infoLink name="Support Squad" id="30fa-4687-5790-2b89" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule" />
+        <infoLink name="Support Squad" id="30fa-4687-5790-2b89" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="365f-05ef-4447-be95" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Move Through Cover" id="1fe9-fdc8-9311-222a" hidden="true" targetId="2b6f-bfec-759e-1746" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -8092,12 +8152,28 @@
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Fury of the Regiment" id="84de-6bbe-2595-1d2e" hidden="true" targetId="928d-06ac-2dfe-9f35" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="365f-05ef-4447-be95" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="b756-00d3-5095-6474" primary="false" name="Unit:" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Jungle Fighter" hidden="false" id="c8c2-24b1-9c84-459e" publicationId="0fda-9dad-a0bf-40e6">
+          <modifiers>
+            <modifier type="add" field="category" value="6399-5c65-7833-1025">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="365f-05ef-4447-be95" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="5dc3-d811-3d05-a574" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="531f-3e21-b7a9-1bb5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8186,6 +8262,13 @@
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Jungle Fighter Sergeant" hidden="false" id="f126-56c1-e2fe-3338" publicationId="0fda-9dad-a0bf-40e6">
+          <modifiers>
+            <modifier type="add" field="category" value="6399-5c65-7833-1025">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="365f-05ef-4447-be95" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eeb4-1d2b-0811-a6c0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5fe-3d98-c6f4-6a21" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8361,7 +8444,15 @@
             <modifier type="set" field="name" value="Regimental Line (Death Korps of Krieg)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Support Squad" id="eff8-2d78-1cb3-86de" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule" />
+        <infoLink name="Support Squad" id="eff8-2d78-1cb3-86de" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bf51-017e-dbd4-920d" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Move Through Cover" id="cd1f-6f43-45be-8766" hidden="true" targetId="2b6f-bfec-759e-1746" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -8409,12 +8500,28 @@
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Fury of the Regiment" id="a4d0-9901-3f92-5548" hidden="true" targetId="928d-06ac-2dfe-9f35" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bf51-017e-dbd4-920d" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="b298-1839-72bb-d199" primary="false" name="Unit:" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Death Korps Trooper" hidden="false" id="48fd-dd6a-5a13-88dc" publicationId="0fda-9dad-a0bf-40e6">
+          <modifiers>
+            <modifier type="add" field="category" value="6399-5c65-7833-1025">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bf51-017e-dbd4-920d" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="0375-697e-7239-4170" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="05da-9aa1-e66f-1bb2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8575,6 +8682,13 @@
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Death Korps Watchmaster" hidden="false" id="49f1-5a8a-8f32-5804" publicationId="0fda-9dad-a0bf-40e6">
+          <modifiers>
+            <modifier type="add" field="category" value="6399-5c65-7833-1025">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bf51-017e-dbd4-920d" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b205-9e5b-52c6-5fbf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ab8-34a9-c371-0599" percentValue="false" includeChildSelections="false" includeChildForces="false" />

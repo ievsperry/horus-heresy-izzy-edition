@@ -147,6 +147,9 @@ loading. The script prints anything in the doc it could not place.
   not have the Xenos rule. Each detachment picks a League, and a character's own weapon
   profiled in its datasheet (the Arkanyst Evaluator's transmatter inverter, Berehk Stornbröw's Kromlôk's Revenge)
   is built like an armoury weapon. The Grimnyr's ancestral ward stave is the official Force Staff.
+- "Regimental Line (Cadian)" (Astra Militarum: Cadian Shock Troops, Catachan Jungle Fighters, Death Korps of Krieg):
+  the unit has Support Squad unless its detachment's Regiment is that regiment. Then Support Squad is hidden, the
+  unit shows Fury of the Regiment, its models gain the Line sub-type and it may fill a Compulsory Troops slot.
 - Grey Knights are not Xenos either: like the Astra Militarum, the army may be Loyalist or Traitor. Each
   detachment picks one Brotherhood (1st to 8th), which gives its units Brotherhood (X) with that Brotherhood's
   rules, Advanced Reaction and Warlord Trait. Wargear the doc marks with an asterisk ("Storm bolter\*") keeps its

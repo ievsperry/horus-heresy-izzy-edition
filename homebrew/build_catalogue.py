@@ -2445,6 +2445,35 @@ class Builder:
                                         self.chosen(el(child(link, "modifiers"), "modifier", type="set", field="hidden",
                                                        value="true"), fid)
 
+    def regimental_line(self):
+        """'Regimental Line (Cadian)': a Support Squad Troops choice, unless its detachment's Regiment is Cadian;
+        then it loses Support Squad, its models gain the Line sub-type and Fury of the Regiment, and it may be
+        a compulsory Troops choice."""
+        compulsory = next(c for c in SLOTS["Troops"] if c[1] == "Compulsory Troops:")
+        for ds in self.datasheets:
+            rl = next((re.match(r"Regimental Line \((.+?)\)", r) for r in ds["rules"] if r.startswith("Regimental Line (")), None)
+            if not rl:
+                continue
+            fid = make_id("fleet", self.faction, rl.group(1))
+            uid = self.units[ds["name"]]
+            unit = self.shared_entries.find(f"selectionEntry[@id='{uid}']")
+            if unit is None or not any(e.get("id") == fid for e in self.root.iter("selectionEntry")):
+                self.problems.append(f"{ds['name']}: no regiment '{rl.group(1)}' for Regimental Line")
+                continue
+            for il in unit.findall("infoLinks/infoLink"):
+                if norm(il.get("name")) == norm("Support Squad"):
+                    self.chosen(el(child(il, "modifiers"), "modifier", type="set", field="hidden", value="true"), fid)
+            self.granted_rule(ds, "Fury of the Regiment", fid, None, None)
+            for me in unit.iter("selectionEntry"):
+                if me.get("type") == "model" and not any(c.get("targetId") == TYPE_CATEGORIES["Line"][0]
+                                                         for c in me.findall("categoryLinks/categoryLink")):
+                    self.chosen(el(child(me, "modifiers"), "modifier", type="add", field="category",
+                                   value=TYPE_CATEGORIES["Line"][0]), fid)
+            for link in self.root.find("entryLinks"):
+                if link.get("targetId") == uid and any(c.get("name") == "Troops:" for c in link.iter("categoryLink")):
+                    self.chosen(el(child(link, "modifiers"), "modifier", type="add", field="category",
+                                   value=compulsory[0]), fid)
+
     def granted_rule(self, ds, rname, fid, size, way):
         uid = self.units[ds["name"]]
         unit = self.shared_entries.find(f"selectionEntry[@id='{uid}']")
@@ -4979,6 +5008,7 @@ class Builder:
         self.build_entry_links()
         self.apply_rites()
         self.apply_subfaction_rules()
+        self.regimental_line()
         self.apply_granted_biomorphs()
         self.apply_rule_limits()
         self.apply_rule_choices()
