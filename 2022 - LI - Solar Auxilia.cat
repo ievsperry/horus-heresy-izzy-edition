@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="59" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="60" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -14343,123 +14343,53 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Servo-Automata: Options" hidden="false" id="78ec-06aa-3454-b166">
+          <modifiers>
+            <modifier type="increment" field="edf8-39d1-15df-0dc5" value="1">
+              <repeats>
+                <repeat field="selections" scope="5843-d622-98e4-3abb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7702-a1ec-706c-71a0" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="edf8-39d1-15df-0dc5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Flamer" hidden="false" id="86da-7a2c-f005-14b5" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
-              <modifiers>
-                <modifier type="increment" field="af9a-3f85-fea2-8467" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="5843-d622-98e4-3abb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7702-a1ec-706c-71a0" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="af9a-3f85-fea2-8467" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Grenade Launcher (with Frag and Krak Rounds)" hidden="false" id="763a-23b5-89f6-07c8" type="selectionEntry" targetId="e0f3-3743-a9d0-f5f1">
-              <modifiers>
-                <modifier type="increment" field="8c1f-3846-77bb-5480" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="5843-d622-98e4-3abb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7702-a1ec-706c-71a0" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8c1f-3846-77bb-5480" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Heavy Bolter" hidden="false" id="f961-0c05-5c24-5e99" type="selectionEntry" targetId="07fd-c24a-9235-4206">
-              <modifiers>
-                <modifier type="increment" field="c5ed-d975-ec8d-4eb9" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="5843-d622-98e4-3abb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7702-a1ec-706c-71a0" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c5ed-d975-ec8d-4eb9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Las-Lock" hidden="false" id="f211-7b55-d47c-82b5" type="selectionEntry" targetId="6491-5e10-ba7e-e0d3">
-              <modifiers>
-                <modifier type="increment" field="eaba-6a96-1563-af0c" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="5843-d622-98e4-3abb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7702-a1ec-706c-71a0" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="eaba-6a96-1563-af0c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Maxima Bolter" hidden="false" id="11be-335d-dc72-4710" type="selectionEntry" targetId="1d3e-1b60-d133-ea0d">
-              <modifiers>
-                <modifier type="increment" field="451e-4192-b422-50ed" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="5843-d622-98e4-3abb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7702-a1ec-706c-71a0" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="451e-4192-b422-50ed" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Multi-Melta" hidden="false" id="6f0c-534b-cf65-ee76" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
-              <modifiers>
-                <modifier type="increment" field="6c59-fed1-e0c1-a967" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="5843-d622-98e4-3abb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7702-a1ec-706c-71a0" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6c59-fed1-e0c1-a967" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Rotor Cannon" hidden="false" id="45d8-9d25-a2ee-8c3f" type="selectionEntry" targetId="5ce3-3aa5-3f5e-9ead">
-              <modifiers>
-                <modifier type="increment" field="4fb2-e3fe-a17c-5523" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="5843-d622-98e4-3abb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7702-a1ec-706c-71a0" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4fb2-e3fe-a17c-5523" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Servo-Arm" hidden="false" id="ff4a-7443-d28e-9e93" type="selectionEntry" targetId="4168-fc85-8912-7188">
-              <modifiers>
-                <modifier type="increment" field="1364-f128-ab10-c51d" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="5843-d622-98e4-3abb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7702-a1ec-706c-71a0" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1364-f128-ab10-c51d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
@@ -14539,7 +14469,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                   <modifiers>
                     <modifier type="increment" field="ac50-a1fd-55ef-cca1" value="1">
                       <repeats>
-                        <repeat field="selections" scope="0702-b043-fb18-c659" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab14-a01b-9452-ab16" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="0702-b043-fb18-c659" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -15154,33 +15084,23 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="d299-0d5a-becb-9940">
+          <modifiers>
+            <modifier type="increment" field="1756-1ce8-fee5-e73e" value="1">
+              <repeats>
+                <repeat field="selections" scope="8afd-0c55-3ef9-c980" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="054c-2a23-e15b-ce60" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1756-1ce8-fee5-e73e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Servo-Arm" hidden="false" id="0aba-84dc-882e-6aa3" type="selectionEntry" targetId="4168-fc85-8912-7188">
-              <modifiers>
-                <modifier type="increment" field="c520-4f08-8fd5-ec33" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="8afd-0c55-3ef9-c980" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="054c-2a23-e15b-ce60" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c520-4f08-8fd5-ec33" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Vox Interlock" hidden="false" id="99e5-39cc-47cc-4a2b" type="selectionEntry" targetId="c04e-5624-3615-0660">
-              <modifiers>
-                <modifier type="increment" field="fb28-9be1-52dc-0de6" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="8afd-0c55-3ef9-c980" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="054c-2a23-e15b-ce60" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fb28-9be1-52dc-0de6" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -15296,33 +15216,23 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="e812-fa3d-1bbe-f953">
+          <modifiers>
+            <modifier type="increment" field="fe79-dad6-af1d-94d1" value="1">
+              <repeats>
+                <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fe79-dad6-af1d-94d1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Havoc Launcher" hidden="false" id="d929-5115-033e-f854" type="selectionEntry" targetId="bde9-5abf-ec3d-2273">
-              <modifiers>
-                <modifier type="increment" field="fddd-7ade-2bb6-d698" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fddd-7ade-2bb6-d698" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Helical Targeting Array" hidden="false" id="a10c-7c0f-82b7-d7d5" type="selectionEntry" targetId="ff29-460e-a589-a376">
-              <modifiers>
-                <modifier type="increment" field="6775-19b7-fa3c-7e66" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6775-19b7-fa3c-7e66" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
@@ -15330,123 +15240,53 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Options" hidden="false" id="c546-6224-e3e2-03bd">
+          <modifiers>
+            <modifier type="increment" field="04f5-295e-42af-5797" value="1">
+              <repeats>
+                <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="04f5-295e-42af-5797" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Gravis Autocannon" hidden="false" id="24c9-2522-53b0-a31e" type="selectionEntry" targetId="8a23-e57d-b4a8-14a9">
-              <modifiers>
-                <modifier type="increment" field="a753-1e94-10ca-6d18" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a753-1e94-10ca-6d18" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Gravis Bolt Cannon" hidden="false" id="a16c-b9f1-1a3c-43aa" type="selectionEntry" targetId="3b5f-52ab-6534-94a3">
-              <modifiers>
-                <modifier type="increment" field="5e20-dbae-6389-899c" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5e20-dbae-6389-899c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Gravis Lascannon" hidden="false" id="fb12-1c33-4e63-67ea" type="selectionEntry" targetId="1fe0-7c96-5200-0e39">
-              <modifiers>
-                <modifier type="increment" field="4937-713b-7355-c7e2" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4937-713b-7355-c7e2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Gravis Missile Launcher" hidden="false" id="c302-5d28-b353-fe1a" type="selectionEntry" targetId="03d1-c76e-13e2-da3b">
-              <modifiers>
-                <modifier type="increment" field="6bfe-7e99-85b1-7c70" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6bfe-7e99-85b1-7c70" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Gravis Plasma Cannon" hidden="false" id="6c3f-7ed4-5610-693c" type="selectionEntry" targetId="32ad-6250-29c7-5466">
-              <modifiers>
-                <modifier type="increment" field="2a55-f79b-5f7c-c717" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2a55-f79b-5f7c-c717" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Kheres Assault Cannon" hidden="false" id="35ff-259f-60c0-9829" type="selectionEntry" targetId="fe77-2e74-160d-c7af">
-              <modifiers>
-                <modifier type="increment" field="e3a0-986a-f86b-eaad" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e3a0-986a-f86b-eaad" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Multi-Melta" hidden="false" id="528b-2eb8-a8dc-fd4a" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
-              <modifiers>
-                <modifier type="increment" field="9d86-0833-7ef4-88f5" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9d86-0833-7ef4-88f5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Volkite Culverin" hidden="false" id="e793-3516-4c56-aa06" type="selectionEntry" targetId="170d-44e0-455c-8207">
-              <modifiers>
-                <modifier type="increment" field="b570-8e07-59a6-b62e" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b570-8e07-59a6-b62e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -15454,33 +15294,23 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Options" hidden="false" id="6767-cf77-f608-f55a">
+          <modifiers>
+            <modifier type="increment" field="4158-f8c9-b111-7ca0" value="1">
+              <repeats>
+                <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4158-f8c9-b111-7ca0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Flamer" hidden="false" id="8132-bda0-10b0-6132" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
-              <modifiers>
-                <modifier type="increment" field="7f20-d128-e57d-6d39" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7f20-d128-e57d-6d39" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Meltagun" hidden="false" id="30df-3f90-f116-1a45" type="selectionEntry" targetId="4ebd-57e0-3560-e568">
-              <modifiers>
-                <modifier type="increment" field="acf9-a3c9-fee3-127b" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a228-5d60-a835-8e7c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c45c-5c48-d476-a0b2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="acf9-a3c9-fee3-127b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
@@ -15785,63 +15615,33 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Auxilia Breacher Troop Master: Options" hidden="false" id="815f-bc01-e078-bdf4">
+          <modifiers>
+            <modifier type="increment" field="73c2-4d71-6d8b-4607" value="1">
+              <repeats>
+                <repeat field="selections" scope="36c0-4ca4-1da6-3d86" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b18-1d56-f52a-9ad3" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="73c2-4d71-6d8b-4607" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Chainfist" hidden="false" id="ce21-18b1-78b0-702b" type="selectionEntry" targetId="7347-c5b1-5da3-a78f">
-              <modifiers>
-                <modifier type="increment" field="879e-643d-b4f2-e46a" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="36c0-4ca4-1da6-3d86" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b18-1d56-f52a-9ad3" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="879e-643d-b4f2-e46a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Charnabal Weapon" hidden="false" id="fe94-fcda-a9b4-8eb5" type="selectionEntry" targetId="e749-ba9b-bb76-a7d9">
-              <modifiers>
-                <modifier type="increment" field="e802-6d80-1983-0bd6" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="36c0-4ca4-1da6-3d86" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b18-1d56-f52a-9ad3" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e802-6d80-1983-0bd6" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Power Fist" hidden="false" id="0b1c-0083-f18a-c732" type="selectionEntry" targetId="768d-b89b-7328-d749">
-              <modifiers>
-                <modifier type="increment" field="04d3-0c02-2ee8-d277" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="36c0-4ca4-1da6-3d86" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b18-1d56-f52a-9ad3" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="04d3-0c02-2ee8-d277" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Power Weapon" hidden="false" id="047c-8884-5ef4-3534" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
-              <modifiers>
-                <modifier type="increment" field="a67a-00b4-be94-ecb9" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="36c0-4ca4-1da6-3d86" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b18-1d56-f52a-9ad3" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a67a-00b4-be94-ecb9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -16221,63 +16021,33 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Auxilia Breacher Sergeant: Options" hidden="false" id="8765-8b85-5360-2d17">
+          <modifiers>
+            <modifier type="increment" field="a9a6-4561-1b81-6375" value="1">
+              <repeats>
+                <repeat field="selections" scope="1282-38aa-1c7c-2873" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c10-bf10-de5d-15ed" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a9a6-4561-1b81-6375" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Chainfist" hidden="false" id="779e-236f-110c-70b9" type="selectionEntry" targetId="7347-c5b1-5da3-a78f">
-              <modifiers>
-                <modifier type="increment" field="d9a2-3d8e-6543-1628" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="1282-38aa-1c7c-2873" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c10-bf10-de5d-15ed" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d9a2-3d8e-6543-1628" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Charnabal Weapon" hidden="false" id="a2f1-1eac-2810-0f99" type="selectionEntry" targetId="e749-ba9b-bb76-a7d9">
-              <modifiers>
-                <modifier type="increment" field="f9ce-41aa-f155-5649" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="1282-38aa-1c7c-2873" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c10-bf10-de5d-15ed" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f9ce-41aa-f155-5649" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Power Fist" hidden="false" id="dc9a-9873-2e7c-ab49" type="selectionEntry" targetId="768d-b89b-7328-d749">
-              <modifiers>
-                <modifier type="increment" field="cb8e-d6cd-a5b6-485e" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="1282-38aa-1c7c-2873" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c10-bf10-de5d-15ed" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cb8e-d6cd-a5b6-485e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Power Weapon" hidden="false" id="93c3-4c17-fc8f-72bc" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
-              <modifiers>
-                <modifier type="increment" field="5e5e-c336-28ae-c742" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="1282-38aa-1c7c-2873" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c10-bf10-de5d-15ed" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5e5e-c336-28ae-c742" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -17227,7 +16997,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                   <modifiers>
                     <modifier type="increment" field="bc38-af7c-3a23-3a90" value="1">
                       <repeats>
-                        <repeat field="selections" scope="c0df-57cd-1e23-4923" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="49c4-eeb5-0295-b9ab" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="c0df-57cd-1e23-4923" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -18245,7 +18015,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07b2-084d-d79f-3123" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Hull (Front) Mounted Multi-Laser" hidden="false" id="3ab6-62a8-9632-902c" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
+                <entryLink import="true" name="Turret Mounted Multi-Laser" hidden="false" id="3ab6-62a8-9632-902c" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c389-55e0-8b3e-c6e7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -18314,6 +18084,9 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="dfc8-c79b-ef46-eab5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62d5-99bf-8b62-c1b6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
               <entryLinks>
                 <entryLink import="true" name="Pintle Mounted Heavy Flamer" hidden="false" id="b580-9d63-a6a2-211b" type="selectionEntry" targetId="5507-b432-3b4c-df12">
                   <constraints>
@@ -18387,12 +18160,6 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3bab-10e7-c521-2917" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e3f-c07d-52f7-13b2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Turret Mounted Multi-Laser" hidden="false" id="cd12-e8d8-009c-3dbe" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3b6-9348-f7bc-824e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2267-b346-39af-7743" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -18475,18 +18242,18 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             </selectionEntryGroup>
             <selectionEntryGroup name="Exchange Two Sponson Mounted Heavy Flamers" hidden="false" id="7be6-06b7-8b2c-b8bb" defaultSelectionEntryId="ac39-9488-076d-87da">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7c0d-b28c-12c0-7593" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bd27-8cfb-884b-e5f4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c0d-b28c-12c0-7593" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd27-8cfb-884b-e5f4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Two Sponson Mounted Heavy Flamers" hidden="false" id="ac39-9488-076d-87da" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+                <entryLink import="true" name="Two Sponson Mounted Heavy Flamers" hidden="false" id="ac39-9488-076d-87da" type="selectionEntry" targetId="3a72-244f-35b9-a37d">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5199-dd02-242d-c385" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16b2-b8ad-0165-f2b9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Two Sponson Mounted Autocannons" hidden="false" id="ea85-1bec-ffe1-3124" type="selectionEntry" targetId="bf96-1adb-72f1-b4eb">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0124-10cb-0884-7df5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0124-10cb-0884-7df5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -18494,7 +18261,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Two Sponson Mounted Heavy Bolters" hidden="false" id="e823-a51d-b574-b4f8" type="selectionEntry" targetId="c24b-7427-d478-a3cc">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="74f8-3ab5-d171-fdfa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74f8-3ab5-d171-fdfa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -18502,7 +18269,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Two Sponson Mounted Lascannons" hidden="false" id="d94d-8bcb-5370-602b" type="selectionEntry" targetId="a788-96e9-5850-f547">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="15f3-9af4-1a6d-6045" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15f3-9af4-1a6d-6045" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
@@ -18510,7 +18277,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Two Sponson Mounted Multi-Lasers" hidden="false" id="ccf6-7133-c44a-ae1a" type="selectionEntry" targetId="0aae-c134-30a3-b00a">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="18ce-3340-13a0-0609" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18ce-3340-13a0-0609" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -18518,7 +18285,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Two Sponson Mounted Volkite Calivers" hidden="false" id="8fb1-1472-3193-a7ca" type="selectionEntry" targetId="2f42-f0fa-c487-1468">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5aee-f73f-e441-39a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5aee-f73f-e441-39a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -18527,6 +18294,9 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="1e12-67f0-c990-0d8a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0d8-4d53-455d-4b1e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
               <entryLinks>
                 <entryLink import="true" name="Pintle Mounted Heavy Flamer" hidden="false" id="808f-0264-7004-e26e" type="selectionEntry" targetId="5507-b432-3b4c-df12">
                   <constraints>
@@ -18721,48 +18491,28 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="ce4b-b702-8bad-93c3">
+          <modifiers>
+            <modifier type="increment" field="2cb4-b123-c038-2654" value="1">
+              <repeats>
+                <repeat field="selections" scope="8c5a-ee1c-a976-39d1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cfeb-83d7-cdf3-8f42" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2cb4-b123-c038-2654" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Pintle Mounted Heavy Flamer" hidden="false" id="db07-4849-851b-85b3" type="selectionEntry" targetId="5507-b432-3b4c-df12">
-              <modifiers>
-                <modifier type="increment" field="9dd5-0ddd-bc49-0552" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="8c5a-ee1c-a976-39d1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cfeb-83d7-cdf3-8f42" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9dd5-0ddd-bc49-0552" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Pintle Mounted Heavy Stubber" hidden="false" id="7446-9101-c25d-4b30" type="selectionEntry" targetId="f227-a61a-3215-932b">
-              <modifiers>
-                <modifier type="increment" field="6bb6-5b2f-3573-84f3" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="8c5a-ee1c-a976-39d1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cfeb-83d7-cdf3-8f42" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6bb6-5b2f-3573-84f3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Pintle Mounted Multi-Laser" hidden="false" id="efde-3ed1-4ceb-3fe6" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
-              <modifiers>
-                <modifier type="increment" field="05cf-208f-eca7-7657" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="8c5a-ee1c-a976-39d1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cfeb-83d7-cdf3-8f42" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="05cf-208f-eca7-7657" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -18909,6 +18659,9 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="15da-1b63-27c2-b685">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3398-c997-0151-1c4a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
               <entryLinks>
                 <entryLink import="true" name="Pintle Mounted Combi-Weapon" hidden="false" id="a173-9118-ec33-6ec6" type="selectionEntry" targetId="fe1c-2431-077d-62cb">
                   <constraints>
@@ -19109,78 +18862,38 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="b708-0069-a7f5-1a3f">
+          <modifiers>
+            <modifier type="increment" field="f902-0a47-4547-d04d" value="1">
+              <repeats>
+                <repeat field="selections" scope="18e3-8971-3bad-d8b6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66ee-a0b6-5be5-0783" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f902-0a47-4547-d04d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Pintle Mounted Combi-Weapon" hidden="false" id="0a79-ab1d-2177-3044" type="selectionEntry" targetId="fe1c-2431-077d-62cb">
-              <modifiers>
-                <modifier type="increment" field="e746-b052-f40e-b08f" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="18e3-8971-3bad-d8b6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66ee-a0b6-5be5-0783" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e746-b052-f40e-b08f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Pintle Mounted Heavy Flamer" hidden="false" id="aeaa-b15b-1bc1-62e1" type="selectionEntry" targetId="5507-b432-3b4c-df12">
-              <modifiers>
-                <modifier type="increment" field="f5c2-9450-d382-021e" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="18e3-8971-3bad-d8b6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66ee-a0b6-5be5-0783" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f5c2-9450-d382-021e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Pintle Mounted Heavy Stubber" hidden="false" id="4d5a-67a9-aa9c-e41e" type="selectionEntry" targetId="f227-a61a-3215-932b">
-              <modifiers>
-                <modifier type="increment" field="39d2-7a17-ea78-a7d7" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="18e3-8971-3bad-d8b6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66ee-a0b6-5be5-0783" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="39d2-7a17-ea78-a7d7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Pintle Mounted Multi-Laser" hidden="false" id="a8d2-3247-7239-3b1c" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
-              <modifiers>
-                <modifier type="increment" field="d959-5b9b-d205-b2fe" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="18e3-8971-3bad-d8b6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66ee-a0b6-5be5-0783" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d959-5b9b-d205-b2fe" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Pintle Mounted Twin-Linked Bolter" hidden="false" id="2fc4-ba58-f687-79ac" type="selectionEntry" targetId="1ade-0c02-5612-252b">
-              <modifiers>
-                <modifier type="increment" field="a26e-e5f1-4a73-ce08" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="18e3-8971-3bad-d8b6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66ee-a0b6-5be5-0783" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a26e-e5f1-4a73-ce08" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
@@ -20324,108 +20037,48 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="3b57-60c4-31cb-601b">
+          <modifiers>
+            <modifier type="increment" field="fae3-6931-43b9-d924" value="1">
+              <repeats>
+                <repeat field="selections" scope="7bd6-7207-03ad-ae57" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d544-0fda-2a0a-adc2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fae3-6931-43b9-d924" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Autocannon" hidden="false" id="6c2d-2ad5-5382-727c" type="selectionEntry" targetId="56b3-de09-9fea-deb6">
-              <modifiers>
-                <modifier type="increment" field="33bf-c9a8-3593-f486" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="7bd6-7207-03ad-ae57" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d544-0fda-2a0a-adc2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="33bf-c9a8-3593-f486" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Heavy Flamer" hidden="false" id="7c95-d07a-435c-5ead" type="selectionEntry" targetId="5507-b432-3b4c-df12">
-              <modifiers>
-                <modifier type="increment" field="5c60-fc3a-07b5-1a0c" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="7bd6-7207-03ad-ae57" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d544-0fda-2a0a-adc2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5c60-fc3a-07b5-1a0c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Lascannon" hidden="false" id="18db-b72f-19e2-26df" type="selectionEntry" targetId="b252-5a86-6e0f-218b">
-              <modifiers>
-                <modifier type="increment" field="e9c3-6fee-7b24-5d27" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="7bd6-7207-03ad-ae57" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d544-0fda-2a0a-adc2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e9c3-6fee-7b24-5d27" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Missile Launcher (with Flak, Frag and Krak Missiles)" hidden="false" id="2790-f0fa-b170-5222" type="selectionEntry" targetId="0ec3-6c91-952c-e0ea">
-              <modifiers>
-                <modifier type="increment" field="8aa8-ecca-8747-b472" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="7bd6-7207-03ad-ae57" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d544-0fda-2a0a-adc2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8aa8-ecca-8747-b472" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Multi-Melta" hidden="false" id="17d6-7aaa-4b8b-ad44" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
-              <modifiers>
-                <modifier type="increment" field="78d3-bf7e-ba44-63c4" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="7bd6-7207-03ad-ae57" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d544-0fda-2a0a-adc2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="78d3-bf7e-ba44-63c4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Plasma Cannon" hidden="false" id="ac52-eee8-7bbb-de86" type="selectionEntry" targetId="43f5-3815-6b3a-a363">
-              <modifiers>
-                <modifier type="increment" field="365f-373c-bf91-f405" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="7bd6-7207-03ad-ae57" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d544-0fda-2a0a-adc2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="365f-373c-bf91-f405" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Volkite Culverin" hidden="false" id="425e-55dd-4d7c-d013" type="selectionEntry" targetId="170d-44e0-455c-8207">
-              <modifiers>
-                <modifier type="increment" field="ca03-0b83-3edf-5cab" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="7bd6-7207-03ad-ae57" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d544-0fda-2a0a-adc2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ca03-0b83-3edf-5cab" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -20537,10 +20190,13 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" hidden="false" id="6b82-64ed-8915-14b3">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6a44-afe1-aeae-689a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
               <entryLinks>
                 <entryLink import="true" name="Cyclone Missile Launcher" hidden="false" id="e0fc-31d5-ecc3-f84f" type="selectionEntry" targetId="8bb0-82c9-2328-2cfa">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="638e-be50-37d8-41fb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="638e-be50-37d8-41fb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
@@ -20548,7 +20204,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Hull (Front) Mounted Gravis Multi-Laser" hidden="false" id="3745-6f05-7be8-0f78" type="selectionEntry" targetId="9938-d8d4-e0cc-b883">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e79e-1906-4361-afed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e79e-1906-4361-afed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -20556,7 +20212,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Two Hull (Front) Mounted Hellstrike Missiles" hidden="false" id="3719-80bd-03d7-ff56" type="selectionEntry" targetId="cb82-ebf0-dd52-f8f4">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcf9-75b0-d0ab-a110" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bcf9-75b0-d0ab-a110" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -20564,7 +20220,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Two Hull (Front) Mounted Skystrike Missiles" hidden="false" id="df46-911a-0d9b-4f1d" type="selectionEntry" targetId="7044-ada5-5036-8b7d">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e19-1f9a-da1b-09ee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3e19-1f9a-da1b-09ee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -20701,33 +20357,23 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="11ab-6c66-9a95-bf36">
+          <modifiers>
+            <modifier type="increment" field="ea79-7023-78a4-dd55" value="1">
+              <repeats>
+                <repeat field="selections" scope="a48c-24a6-e2bc-c9be" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-1851-cda8-e70d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ea79-7023-78a4-dd55" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Two Sponson Mounted Heavy Bolters" hidden="false" id="b288-c0f3-2625-b627" type="selectionEntry" targetId="c24b-7427-d478-a3cc">
-              <modifiers>
-                <modifier type="increment" field="d74e-13f9-f569-5607" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a48c-24a6-e2bc-c9be" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-1851-cda8-e70d" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d74e-13f9-f569-5607" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Two Sponson Mounted Multi-Lasers" hidden="false" id="7a09-b43d-5675-c3b4" type="selectionEntry" targetId="0aae-c134-30a3-b00a">
-              <modifiers>
-                <modifier type="increment" field="0c28-7b4c-6d1f-ab2b" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a48c-24a6-e2bc-c9be" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="745c-1851-cda8-e70d" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0c28-7b4c-6d1f-ab2b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
@@ -20814,108 +20460,48 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="27ec-56f9-5a94-21f7">
+          <modifiers>
+            <modifier type="increment" field="d401-f0b5-c456-adb1" value="1">
+              <repeats>
+                <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d401-f0b5-c456-adb1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Heavy Bolter" hidden="false" id="c9f8-f6a1-5d4e-2e81" type="selectionEntry" targetId="07fd-c24a-9235-4206">
-              <modifiers>
-                <modifier type="increment" field="eae3-2b1f-c322-5d9a" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="eae3-2b1f-c322-5d9a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Heavy Flamer" hidden="false" id="f3a7-4043-7c85-66c8" type="selectionEntry" targetId="5507-b432-3b4c-df12">
-              <modifiers>
-                <modifier type="increment" field="344a-8e79-ce08-f91f" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="344a-8e79-ce08-f91f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Lascannon" hidden="false" id="a0a4-d550-648f-0ef4" type="selectionEntry" targetId="b252-5a86-6e0f-218b">
-              <modifiers>
-                <modifier type="increment" field="3021-92e3-8dc2-8044" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3021-92e3-8dc2-8044" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Missile Launcher (with Flak, Frag and Krak Missiles)" hidden="false" id="ef5d-600a-69ef-dec3" type="selectionEntry" targetId="0ec3-6c91-952c-e0ea">
-              <modifiers>
-                <modifier type="increment" field="8280-b2b1-bf9b-f982" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8280-b2b1-bf9b-f982" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Multi-Melta" hidden="false" id="9568-dab8-749f-fdcf" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
-              <modifiers>
-                <modifier type="increment" field="c938-b747-9ac3-cd27" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c938-b747-9ac3-cd27" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Plasma Cannon" hidden="false" id="fdcc-7ffb-dc9d-5f26" type="selectionEntry" targetId="43f5-3815-6b3a-a363">
-              <modifiers>
-                <modifier type="increment" field="0830-87a3-d7fd-7109" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0830-87a3-d7fd-7109" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Volkite Culverin" hidden="false" id="42b5-1e72-6cd3-1cc7" type="selectionEntry" targetId="170d-44e0-455c-8207">
-              <modifiers>
-                <modifier type="increment" field="665e-dded-73f3-9841" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="665e-dded-73f3-9841" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -20923,93 +20509,43 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Options" hidden="false" id="9cc5-ad2a-a4db-8fe8">
+          <modifiers>
+            <modifier type="increment" field="2824-aa9d-5431-f878" value="1">
+              <repeats>
+                <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2824-aa9d-5431-f878" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Cyclone Missile Launcher" hidden="false" id="7bfb-295b-87ba-2dad" type="selectionEntry" targetId="8bb0-82c9-2328-2cfa">
-              <modifiers>
-                <modifier type="increment" field="66f3-d18c-b312-3a00" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="66f3-d18c-b312-3a00" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Gravis Autocannon" hidden="false" id="4ba0-877c-f6c2-cf86" type="selectionEntry" targetId="8a23-e57d-b4a8-14a9">
-              <modifiers>
-                <modifier type="increment" field="f92f-2578-8b46-1788" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f92f-2578-8b46-1788" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Gravis Lascannon" hidden="false" id="e691-fe65-d96c-3252" type="selectionEntry" targetId="1fe0-7c96-5200-0e39">
-              <modifiers>
-                <modifier type="increment" field="d1b1-5760-47de-e1fc" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d1b1-5760-47de-e1fc" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Gravis Melta Cannon" hidden="false" id="e8dc-0f50-9a17-9d4e" type="selectionEntry" targetId="ef6c-f656-171a-03e1">
-              <modifiers>
-                <modifier type="increment" field="d3cd-caeb-8bfa-2687" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d3cd-caeb-8bfa-2687" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Gravis Multi-Laser" hidden="false" id="e76d-b427-1c51-d610" type="selectionEntry" targetId="9938-d8d4-e0cc-b883">
-              <modifiers>
-                <modifier type="increment" field="81bf-2b4f-7757-67b5" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="81bf-2b4f-7757-67b5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Volkite Dual-Culverin" hidden="false" id="f91b-373d-b9fd-84a8" type="selectionEntry" targetId="fead-f3b9-f7c7-1081">
-              <modifiers>
-                <modifier type="increment" field="885c-752d-3eb7-f5ee" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="43c7-ceea-c060-7ccc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06b5-3f4f-1813-9f1c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="885c-752d-3eb7-f5ee" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
@@ -21159,7 +20695,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce78-a88b-c36e-5017" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Hull (Front) Mounted Heavy Flamer" hidden="false" id="0f20-6d8d-03c4-ccf2" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+                <entryLink import="true" name="Gravis Heavy Flamer" hidden="false" id="0f20-6d8d-03c4-ccf2" type="selectionEntry" targetId="c096-a298-16ce-9333">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77e6-3f27-d4df-bc8c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -21227,12 +20763,6 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb80-9356-f219-d86b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Gravis Heavy Flamer" hidden="false" id="d0ff-66d1-e166-89f1" type="selectionEntry" targetId="c096-a298-16ce-9333">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82eb-f0f6-1013-5fa1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0170-70eb-dd64-43ed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
@@ -21241,48 +20771,28 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="a088-dc18-00b2-2ec8">
+          <modifiers>
+            <modifier type="increment" field="127d-46d6-e1aa-a528" value="1">
+              <repeats>
+                <repeat field="selections" scope="442d-fa18-e843-72f5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88a0-8260-587b-125c" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="127d-46d6-e1aa-a528" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Pintle Mounted Heavy Flamer" hidden="false" id="9484-a7c3-6168-c4bc" type="selectionEntry" targetId="5507-b432-3b4c-df12">
-              <modifiers>
-                <modifier type="increment" field="9f8e-eeb7-aa9e-dd69" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="442d-fa18-e843-72f5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88a0-8260-587b-125c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9f8e-eeb7-aa9e-dd69" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Pintle Mounted Heavy Stubber" hidden="false" id="864c-b5df-8c6d-8777" type="selectionEntry" targetId="f227-a61a-3215-932b">
-              <modifiers>
-                <modifier type="increment" field="951f-2083-a3dc-3863" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="442d-fa18-e843-72f5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88a0-8260-587b-125c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="951f-2083-a3dc-3863" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Pintle Mounted Multi-Laser" hidden="false" id="c465-733b-e4c8-30a4" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
-              <modifiers>
-                <modifier type="increment" field="d2b5-8c9e-b6dc-ee7f" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="442d-fa18-e843-72f5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88a0-8260-587b-125c" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d2b5-8c9e-b6dc-ee7f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -21403,18 +20913,18 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             </selectionEntryGroup>
             <selectionEntryGroup name="Exchange Two Hull (Front) Mounted Hellstrike Missiles" hidden="false" id="97e3-b3d3-aa72-7535" defaultSelectionEntryId="e5c3-5323-d0b1-27bc">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="64f0-4b2b-4a08-10d4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="39c8-6022-0482-4e90" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64f0-4b2b-4a08-10d4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39c8-6022-0482-4e90" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Hellstrike Missile" hidden="false" id="e5c3-5323-d0b1-27bc" type="selectionEntry" targetId="5e24-bdca-a89c-0f40">
+                <entryLink import="true" name="Two Hull (Front) Mounted Hellstrike Missiles" hidden="false" id="e5c3-5323-d0b1-27bc" type="selectionEntry" targetId="cb82-ebf0-dd52-f8f4">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="562d-d8b6-9484-8150" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d84-85ea-fdf1-f8bd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Two Centreline Mounted Multiple Rocket Pods" hidden="false" id="365b-16e4-a360-483c" type="selectionEntry" targetId="f9b7-a91a-1cd1-5703">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="844f-54f7-1528-d5a5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="844f-54f7-1528-d5a5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -21438,33 +20948,23 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="8315-12a7-a18a-86c2">
+          <modifiers>
+            <modifier type="increment" field="51b6-c2ed-c5e0-1993" value="1">
+              <repeats>
+                <repeat field="selections" scope="b406-b353-58b4-b65a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7738-2459-1dce-ca81" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="51b6-c2ed-c5e0-1993" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Two Sponson Mounted Heavy Bolters" hidden="false" id="57ec-c4df-0a19-3efc" type="selectionEntry" targetId="c24b-7427-d478-a3cc">
-              <modifiers>
-                <modifier type="increment" field="c4ae-0c75-e724-37d6" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="b406-b353-58b4-b65a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7738-2459-1dce-ca81" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c4ae-0c75-e724-37d6" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Two Sponson Mounted Multi-Lasers" hidden="false" id="2c20-2a3e-5d46-d110" type="selectionEntry" targetId="0aae-c134-30a3-b00a">
-              <modifiers>
-                <modifier type="increment" field="b749-cab6-a508-16c7" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="b406-b353-58b4-b65a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7738-2459-1dce-ca81" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b749-cab6-a508-16c7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
@@ -21539,18 +21039,18 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7be5-ee29-35b4-54c1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3b42-b738-2dff-ae82" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7be5-ee29-35b4-54c1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b42-b738-2dff-ae82" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Two Centreline Mounted Gravis Multi-Lasers" hidden="false" id="c246-6ce3-778b-f392" type="selectionEntry" targetId="9938-d8d4-e0cc-b883">
+                <entryLink import="true" name="Two Centreline Mounted Gravis Multi-Lasers" hidden="false" id="c246-6ce3-778b-f392" type="selectionEntry" targetId="6176-9694-32f4-3ecb">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f5fa-f1a6-a798-2c28" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e5d-2db8-8927-6f40" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Two Centreline Mounted Autocannons" hidden="false" id="1352-e42b-bc5b-94a2" type="selectionEntry" targetId="654c-c405-f925-0439">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0934-0bc9-9165-3800" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0934-0bc9-9165-3800" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -21558,7 +21058,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Two Centreline Mounted Lascannons" hidden="false" id="f7c3-53b6-aecd-4438" type="selectionEntry" targetId="6a72-4754-077d-a685">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="827e-b1e7-3f01-1e0f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="827e-b1e7-3f01-1e0f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
@@ -21566,7 +21066,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Two Centreline Mounted Missile Launchers (with Frag and Krak Missiles)" hidden="false" id="a472-36ba-b6f3-fc2a" type="selectionEntry" targetId="ac97-a427-9509-3187">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="18aa-7519-2d3e-79ee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18aa-7519-2d3e-79ee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -21574,7 +21074,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Two Centreline Mounted Multiple Rocket Pods" hidden="false" id="edde-5d4e-0c46-fdf3" type="selectionEntry" targetId="f9b7-a91a-1cd1-5703">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1a1b-eadb-a2a7-3f2b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a1b-eadb-a2a7-3f2b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -21584,18 +21084,18 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             </selectionEntryGroup>
             <selectionEntryGroup name="Exchange Two Hull (Front) Mounted Hellstrike Missiles" hidden="false" id="ffde-360c-f50a-4f1c" defaultSelectionEntryId="5fe9-8cf4-1dfe-993f">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a013-642d-47f7-3f1e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b8ff-e7f8-5749-8fee" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a013-642d-47f7-3f1e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8ff-e7f8-5749-8fee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Hellstrike Missile" hidden="false" id="5fe9-8cf4-1dfe-993f" type="selectionEntry" targetId="5e24-bdca-a89c-0f40">
+                <entryLink import="true" name="Two Hull (Front) Mounted Hellstrike Missiles" hidden="false" id="5fe9-8cf4-1dfe-993f" type="selectionEntry" targetId="cb82-ebf0-dd52-f8f4">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1f56-d68c-748a-0ac4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4dd-6502-5449-2447" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Six Hull (Front) Mounted Hunter-Killer Missiles" hidden="false" id="93a6-440a-a778-a69a" type="selectionEntry" targetId="d913-52b8-a914-f283">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5d17-bd80-8d36-c53f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d17-bd80-8d36-c53f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
@@ -21603,7 +21103,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Two Centreline Mounted Multiple Rocket Pods" hidden="false" id="3bea-887f-0091-2ce5" type="selectionEntry" targetId="f9b7-a91a-1cd1-5703">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c5e2-b3d4-8b4a-e7dd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5e2-b3d4-8b4a-e7dd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -21611,7 +21111,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Two Hull (Front) Mounted Fragmentation Bombs" hidden="false" id="5141-c451-1d7c-bbce" type="selectionEntry" targetId="8e31-17c0-d019-9c98">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6b5a-aa86-847b-a278" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b5a-aa86-847b-a278" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -21619,7 +21119,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Punisher Rotary Cannon" hidden="false" id="bf70-ec11-209a-c9f5" type="selectionEntry" targetId="24ac-6ba9-ffdd-4140">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d22f-63b6-a041-a374" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d22f-63b6-a041-a374" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
@@ -21726,78 +21226,38 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="eb70-6a3f-7b97-1f5f">
+          <modifiers>
+            <modifier type="increment" field="509d-5f83-87ba-f0d7" value="1">
+              <repeats>
+                <repeat field="selections" scope="2ce2-c4d1-b17f-d3f8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8435-f990-fea1-dace" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="509d-5f83-87ba-f0d7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Graviton Gun" hidden="false" id="333b-f29d-2bec-e487" type="selectionEntry" targetId="5303-5a3e-de51-1707">
-              <modifiers>
-                <modifier type="increment" field="a323-5ce9-bb92-66a8" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="2ce2-c4d1-b17f-d3f8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8435-f990-fea1-dace" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a323-5ce9-bb92-66a8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Heavy Bolter" hidden="false" id="4fec-a8cb-04ae-c1cd" type="selectionEntry" targetId="07fd-c24a-9235-4206">
-              <modifiers>
-                <modifier type="increment" field="295f-312d-d658-51aa" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="2ce2-c4d1-b17f-d3f8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8435-f990-fea1-dace" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="295f-312d-d658-51aa" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Heavy Flamer" hidden="false" id="6878-f689-e810-5d0f" type="selectionEntry" targetId="5507-b432-3b4c-df12">
-              <modifiers>
-                <modifier type="increment" field="d5a6-7dff-8eeb-dced" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="2ce2-c4d1-b17f-d3f8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8435-f990-fea1-dace" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d5a6-7dff-8eeb-dced" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Kheres Assault Cannon" hidden="false" id="a23f-fb5b-2ae4-dcad" type="selectionEntry" targetId="fe77-2e74-160d-c7af">
-              <modifiers>
-                <modifier type="increment" field="508b-a67e-3045-83ba" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="2ce2-c4d1-b17f-d3f8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8435-f990-fea1-dace" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="508b-a67e-3045-83ba" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Volkite Culverin" hidden="false" id="6113-adc6-2cca-2b0f" type="selectionEntry" targetId="170d-44e0-455c-8207">
-              <modifiers>
-                <modifier type="increment" field="8a77-c385-e9e3-957d" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="2ce2-c4d1-b17f-d3f8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8435-f990-fea1-dace" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8a77-c385-e9e3-957d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
@@ -21805,33 +21265,23 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Options" hidden="false" id="4ecb-8dcc-db89-16a6">
+          <modifiers>
+            <modifier type="increment" field="ea5b-4c92-e999-8ad9" value="1">
+              <repeats>
+                <repeat field="selections" scope="2ce2-c4d1-b17f-d3f8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8435-f990-fea1-dace" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ea5b-4c92-e999-8ad9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Cyclone Missile Launcher" hidden="false" id="536e-afd9-8772-e898" type="selectionEntry" targetId="8bb0-82c9-2328-2cfa">
-              <modifiers>
-                <modifier type="increment" field="63a9-ce25-880f-dcde" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="2ce2-c4d1-b17f-d3f8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8435-f990-fea1-dace" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="63a9-ce25-880f-dcde" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Twin-Linked Kheres Assault Cannon" hidden="false" id="ca8e-15bb-4978-27d0" type="selectionEntry" targetId="fe77-2e74-160d-c7af">
-              <modifiers>
-                <modifier type="increment" field="94b4-80c0-07ba-2ee4" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="2ce2-c4d1-b17f-d3f8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8435-f990-fea1-dace" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="94b4-80c0-07ba-2ee4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <infoLinks>
                 <infoLink name="Twin-linked" id="1d1c-af8e-9641-5b7c" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
               </infoLinks>
@@ -21840,31 +21290,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
               </costs>
             </entryLink>
             <entryLink import="true" name="Twin-Linked Multi-Laser" hidden="false" id="4f0d-6838-70f2-78f3" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
-              <modifiers>
-                <modifier type="increment" field="08eb-e7c3-3c13-469f" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="2ce2-c4d1-b17f-d3f8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8435-f990-fea1-dace" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="08eb-e7c3-3c13-469f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Twin-Linked Volkite Culverin" hidden="false" id="5a72-bf25-8685-f0ab" type="selectionEntry" targetId="170d-44e0-455c-8207">
-              <modifiers>
-                <modifier type="increment" field="9d7c-afa7-fb0d-020a" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="2ce2-c4d1-b17f-d3f8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8435-f990-fea1-dace" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9d7c-afa7-fb0d-020a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
@@ -21931,18 +21361,18 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange Two Twin-Linked Heavy Stubbers" hidden="false" id="6d78-8ff0-7059-cc40" defaultSelectionEntryId="0dfe-5367-3dbf-41ca">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a150-71fd-4552-84c8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9e3a-ab85-371b-2577" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a150-71fd-4552-84c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e3a-ab85-371b-2577" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Two Twin-Linked Heavy Stubbers" hidden="false" id="0dfe-5367-3dbf-41ca" type="selectionEntry" targetId="f227-a61a-3215-932b">
+                <entryLink import="true" name="Two Twin-Linked Heavy Stubbers" hidden="false" id="0dfe-5367-3dbf-41ca" type="selectionEntry" targetId="6f95-df5c-1596-6e2f">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7b65-dcbc-f6f7-2413" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8463-11b8-8037-15ab" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Gravis Autocannon" hidden="false" id="707c-ef62-6a0a-cad5" type="selectionEntry" targetId="8a23-e57d-b4a8-14a9">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="34ee-c404-c6fb-5506" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34ee-c404-c6fb-5506" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -21950,7 +21380,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Gravis Bolt Cannon" hidden="false" id="047a-6940-0434-9ffc" type="selectionEntry" targetId="3b5f-52ab-6534-94a3">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9da7-6792-db00-18c3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9da7-6792-db00-18c3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -21958,7 +21388,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Gravis Lascannon" hidden="false" id="0212-ca30-5d15-37b9" type="selectionEntry" targetId="1fe0-7c96-5200-0e39">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9e2d-3e4e-ad3a-3dcd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e2d-3e4e-ad3a-3dcd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
@@ -21966,7 +21396,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Gravis Multi-Laser" hidden="false" id="462e-a4af-72aa-728f" type="selectionEntry" targetId="9938-d8d4-e0cc-b883">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2bce-18d3-cdc7-f684" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bce-18d3-cdc7-f684" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -21974,7 +21404,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 </entryLink>
                 <entryLink import="true" name="Sabre Searchlight" hidden="false" id="03f4-61bb-32dd-d457" type="selectionEntry" targetId="b436-831c-fcf4-91ad">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f1a8-055d-a778-5ef1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1a8-055d-a778-5ef1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -22305,13 +21735,13 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange Sponson Mounted Heavy Stubbers" hidden="false" id="5735-3629-92b0-8c2a" defaultSelectionEntryId="c190-0444-fb6e-74aa">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eff7-bee3-9e8b-ca42" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7668-1d2c-ee2a-350c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eff7-bee3-9e8b-ca42" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7668-1d2c-ee2a-350c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Two Sponson Mounted Heavy Stubbers" hidden="false" id="c190-0444-fb6e-74aa" type="selectionEntry" targetId="f227-a61a-3215-932b">
+                <entryLink import="true" name="Two Sponson Mounted Heavy Stubbers" hidden="false" id="c190-0444-fb6e-74aa" type="selectionEntry" targetId="edd8-aaa7-d61e-a44e">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7f4d-c60f-ce2a-be30" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaf1-95cb-2dad-de02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Two Sponson Mounted Autocannons" hidden="false" id="67ec-c895-c1d3-7b5b" type="selectionEntry" targetId="bf96-1adb-72f1-b4eb">
@@ -22714,7 +22144,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9096-3a6c-7745-33ee" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Kheres Assault Cannon" hidden="false" id="3e95-3f92-e65a-0db0" type="selectionEntry" targetId="fe77-2e74-160d-c7af">
+                <entryLink import="true" name="Praetorian Battle Cannon" hidden="false" id="3e95-3f92-e65a-0db0" type="selectionEntry" targetId="daff-f554-17c2-b0db">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d97-c88e-0e13-dea6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -22767,12 +22197,6 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7782-c8d5-3064-4502" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Praetorian Battle Cannon" hidden="false" id="6073-f887-30f3-cca3" type="selectionEntry" targetId="daff-f554-17c2-b0db">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d92-fa0f-18a3-8dbc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac73-a6e7-c25c-d72d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250"/>
@@ -22781,63 +22205,33 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="fe76-4bfe-28d5-35b5">
+          <modifiers>
+            <modifier type="increment" field="eb2f-9aae-f0dc-2905" value="1">
+              <repeats>
+                <repeat field="selections" scope="98ea-5249-e32d-e184" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="691a-7118-b258-b827" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="eb2f-9aae-f0dc-2905" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Two Sponson Mounted Heavy Bolters" hidden="false" id="3d1c-40e0-f0f7-0531" type="selectionEntry" targetId="c24b-7427-d478-a3cc">
-              <modifiers>
-                <modifier type="increment" field="ebb2-2b44-0b5a-59f7" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="98ea-5249-e32d-e184" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="691a-7118-b258-b827" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ebb2-2b44-0b5a-59f7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Two Sponson Mounted Heavy Flamers" hidden="false" id="4418-0887-f8b2-b04b" type="selectionEntry" targetId="3a72-244f-35b9-a37d">
-              <modifiers>
-                <modifier type="increment" field="ca6f-3c41-b927-a97c" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="98ea-5249-e32d-e184" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="691a-7118-b258-b827" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ca6f-3c41-b927-a97c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Two Sponson Mounted Heavy Stubbers" hidden="false" id="d92f-9960-9940-91f3" type="selectionEntry" targetId="edd8-aaa7-d61e-a44e">
-              <modifiers>
-                <modifier type="increment" field="dc4e-59b1-080a-18e4" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="98ea-5249-e32d-e184" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="691a-7118-b258-b827" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="dc4e-59b1-080a-18e4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Two Sponson Mounted Multi-Meltas" hidden="false" id="504c-bbd6-52d2-4473" type="selectionEntry" targetId="f9af-c4c8-0526-bea3">
-              <modifiers>
-                <modifier type="increment" field="8b6e-2421-6f75-d891" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="98ea-5249-e32d-e184" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="691a-7118-b258-b827" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8b6e-2421-6f75-d891" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
               </costs>
@@ -22845,33 +22239,23 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Options" hidden="false" id="9e13-9ff2-209d-7804">
+          <modifiers>
+            <modifier type="increment" field="1b80-2a82-5cad-3847" value="1">
+              <repeats>
+                <repeat field="selections" scope="98ea-5249-e32d-e184" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="691a-7118-b258-b827" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1b80-2a82-5cad-3847" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Two Hull (Front) Mounted Heavy Stubbers" hidden="false" id="194b-167c-d464-7508" type="selectionEntry" targetId="e7a9-3cdb-253e-17d5">
-              <modifiers>
-                <modifier type="increment" field="1264-8c59-6f20-ca02" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="98ea-5249-e32d-e184" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="691a-7118-b258-b827" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1264-8c59-6f20-ca02" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Two Hull (Front) Mounted Meltaguns" hidden="false" id="eaad-79e4-2823-9da8" type="selectionEntry" targetId="17c4-2565-7a32-0c17">
-              <modifiers>
-                <modifier type="increment" field="92bb-56e0-9a09-503d" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="98ea-5249-e32d-e184" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="691a-7118-b258-b827" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="92bb-56e0-9a09-503d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
@@ -22879,48 +22263,28 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Options" hidden="false" id="6222-f3f6-65a9-7ffa">
+          <modifiers>
+            <modifier type="increment" field="bc70-8574-8372-649e" value="1">
+              <repeats>
+                <repeat field="selections" scope="98ea-5249-e32d-e184" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="691a-7118-b258-b827" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bc70-8574-8372-649e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Pintle Mounted Heavy Flamer" hidden="false" id="f9f8-ee39-e549-250b" type="selectionEntry" targetId="5507-b432-3b4c-df12">
-              <modifiers>
-                <modifier type="increment" field="923b-0adb-f53a-527e" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="98ea-5249-e32d-e184" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="691a-7118-b258-b827" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="923b-0adb-f53a-527e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Pintle Mounted Heavy Stubber" hidden="false" id="a3fd-0730-27f2-e985" type="selectionEntry" targetId="f227-a61a-3215-932b">
-              <modifiers>
-                <modifier type="increment" field="81b6-481e-8408-128c" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="98ea-5249-e32d-e184" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="691a-7118-b258-b827" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="81b6-481e-8408-128c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Pintle Mounted Multi-Laser" hidden="false" id="6bcb-719b-6528-63db" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
-              <modifiers>
-                <modifier type="increment" field="0da0-90ed-0fe9-6f95" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="98ea-5249-e32d-e184" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="691a-7118-b258-b827" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0da0-90ed-0fe9-6f95" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -23108,18 +22472,18 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange Eight Hull (Front) Mounted Hellstrike Missiles" hidden="false" id="8100-4a5b-86b3-83d5" defaultSelectionEntryId="e57e-aa27-cd2f-6432">
               <constraints>
-                <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="576d-e072-479f-1786" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="4219-9db8-2c24-7112" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="576d-e072-479f-1786" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4219-9db8-2c24-7112" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Hellstrike Missile" hidden="false" id="e57e-aa27-cd2f-6432" type="selectionEntry" targetId="5e24-bdca-a89c-0f40">
+                <entryLink import="true" name="Eight Hull (Front) Mounted Hellstrike Missiles" hidden="false" id="e57e-aa27-cd2f-6432" type="selectionEntry" targetId="354e-90ff-7189-f734">
                   <constraints>
-                    <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="0bb4-d6d5-abff-a2f1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e2d-026e-95a3-0219" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Eight Hull (Front) Mounted Skystrike Missiles" hidden="false" id="f5fe-e944-52d6-7b17" type="selectionEntry" targetId="5e94-aa6a-3594-4c9d">
                   <constraints>
-                    <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="8071-a90f-6de3-7ed5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8071-a90f-6de3-7ed5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
@@ -23393,21 +22757,20 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       <profiles>
         <profile name="Eradicator Nova Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="cee5-8d21-b08a-929d">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Ignores Cover</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5"), Ignores Cover</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Agripinaan Guidance System" id="fd21-00f0-48dc-a9d8" hidden="false" targetId="442c-af15-da2c-236c" type="rule"/>
-        <infoLink name="Ignores Cover" id="7516-b8ca-72a9-7a13" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
         <infoLink name="Blast" id="73be-c62a-13dc-1d01" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Large Blast (5&quot;)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Ignores Cover" id="7516-b8ca-72a9-7a13" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Praetorian Battle Cannon" hidden="false" id="daff-f554-17c2-b0db">
@@ -23645,7 +23008,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           </modifiers>
         </infoLink>
         <infoLink name="Specialist Weapon" id="4412-6e9c-6cdf-a1e2" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
-        <infoLink name="Unwieldy" id="f6e2-1f2b-9ad3-5b50" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink name="Unwieldy" id="33b9-e7d5-39b8-083a" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (4)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hot-Shot Lasgun" hidden="false" id="5484-fa87-0039-2dc4">
@@ -23659,6 +23026,13 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire (X)" id="2933-3b8e-3139-ab82" hidden="false" targetId="47d7-7ac6-5c81-8002" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rapid Fire"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hot-Shot Laspistol" hidden="false" id="72e6-7cfc-b8a3-5826">
       <profiles>
@@ -23676,7 +23050,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       <profiles>
         <profile name="Hot-Shot Volley Gun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="48de-c3d4-1dcd-0f56">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4</characteristic>
@@ -23696,6 +23070,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </profile>
       </profiles>
       <infoLinks>
+        <infoLink name="Rapid Fire (X)" id="f0e3-6f89-780c-db22" hidden="false" targetId="47d7-7ac6-5c81-8002" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rapid Fire"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Array Fire (X)" id="8a5b-1764-f0db-6583" hidden="false" targetId="4bc8-35ce-7f15-fc4c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Array Fire (3)"/>
@@ -23818,7 +23197,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       <profiles>
         <profile name="Omega Pattern Plasma Blastgun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0a6b-1b88-a4cb-7c45">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Gets Hot, Massive Blast (7"), Rending (4+)</characteristic>
@@ -24126,10 +23505,10 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Close Combat Weapons" hidden="false" id="ab7a-84d7-63f3-02fd">
       <entryLinks>
-        <entryLink import="true" name="Two Close Combat Weapons" hidden="false" id="1d6a-7c0f-a19d-9e5f" type="selectionEntry" targetId="3d50-2f85-06ff-6aee">
+        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="322a-48dc-881d-2d4b" type="selectionEntry" targetId="3d50-2f85-06ff-6aee">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c5d3-bdca-acb5-33c7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="276c-1de5-851d-c8ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a27f-840b-1b28-ff0b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0aeb-5d4c-07b1-903b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -24752,10 +24131,10 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       <profiles>
         <profile id="1e16-2814-da89-5b29" name="Mortar" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Barrage, Pinning</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Barrage, Pinning</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -24868,42 +24247,52 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Heavy Flamers" hidden="false" id="3a72-244f-35b9-a37d">
+      <entryLinks>
+        <entryLink import="true" name="Sponson Mounted Heavy Flamer" hidden="false" id="2b01-a1aa-3632-82f7" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="23c1-3303-dac9-8c98" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5224-7cb0-d9c1-769a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Autocannons" hidden="false" id="bf96-1adb-72f1-b4eb">
       <entryLinks>
-        <entryLink import="true" name="Two Sponson Mounted Autocannons" hidden="false" id="9ca5-b6d6-7e3b-4fcc" type="selectionEntry" targetId="56b3-de09-9fea-deb6">
+        <entryLink import="true" name="Sponson Mounted Autocannon" hidden="false" id="a3e8-93f0-a96c-d4bc" type="selectionEntry" targetId="56b3-de09-9fea-deb6">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="83f9-63bb-d9a8-cfa5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7191-b962-a58b-afbd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3fac-2eb7-792d-cdc8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3df3-f8c2-5386-0eb8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Heavy Bolters" hidden="false" id="c24b-7427-d478-a3cc">
       <entryLinks>
-        <entryLink import="true" name="Two Sponson Mounted Heavy Bolters" hidden="false" id="e4de-8bb7-cde4-d78f" type="selectionEntry" targetId="07fd-c24a-9235-4206">
+        <entryLink import="true" name="Sponson Mounted Heavy Bolter" hidden="false" id="048f-9334-9a79-6139" type="selectionEntry" targetId="07fd-c24a-9235-4206">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d9c4-4a20-9469-1ca5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2b50-19cc-6d59-216d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9ac4-16e7-4156-0eba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e696-9462-48a9-50ce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Lascannons" hidden="false" id="a788-96e9-5850-f547">
       <entryLinks>
-        <entryLink import="true" name="Two Sponson Mounted Lascannons" hidden="false" id="1a8f-a3e2-011e-01b1" type="selectionEntry" targetId="b252-5a86-6e0f-218b">
+        <entryLink import="true" name="Sponson Mounted Lascannon" hidden="false" id="23b4-a7ae-ee2c-b606" type="selectionEntry" targetId="b252-5a86-6e0f-218b">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8892-98fe-73ce-c25d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="10ed-e3ca-2b41-21fe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e086-7e18-24a9-0be5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9309-212c-4c09-55ac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Multi-Lasers" hidden="false" id="0aae-c134-30a3-b00a">
       <entryLinks>
-        <entryLink import="true" name="Two Sponson Mounted Multi-Lasers" hidden="false" id="7fcb-4998-e0cf-10c8" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
+        <entryLink import="true" name="Sponson Mounted Multi-Laser" hidden="false" id="3a67-4a13-5639-aa2b" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b33e-2587-2c37-6f00" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="08dc-7ee5-183e-ee3e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ad72-da9a-7209-22d9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c80b-2ce0-e192-3215" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -24973,42 +24362,52 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two Centreline Mounted Gravis Multi-Lasers" hidden="false" id="6176-9694-32f4-3ecb">
+      <entryLinks>
+        <entryLink import="true" name="Centreline Mounted Gravis Multi-Laser" hidden="false" id="649f-76d2-8a00-c9ba" type="selectionEntry" targetId="9938-d8d4-e0cc-b883">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5b8e-faf6-983f-3197" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1d46-0d2d-bea5-e5b9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Centreline Mounted Autocannons" hidden="false" id="654c-c405-f925-0439">
       <entryLinks>
-        <entryLink import="true" name="Two Centreline Mounted Autocannons" hidden="false" id="0f3f-cf14-a706-e8e1" type="selectionEntry" targetId="56b3-de09-9fea-deb6">
+        <entryLink import="true" name="Centreline Mounted Autocannon" hidden="false" id="ebca-74be-85f5-8734" type="selectionEntry" targetId="56b3-de09-9fea-deb6">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fd36-9299-7dd9-ee87" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e2fa-0059-1317-67e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="daf2-7010-eb20-9ce3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6acb-2c74-ad12-f57d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Centreline Mounted Lascannons" hidden="false" id="6a72-4754-077d-a685">
       <entryLinks>
-        <entryLink import="true" name="Two Centreline Mounted Lascannons" hidden="false" id="4e75-a8fd-81cc-9ae9" type="selectionEntry" targetId="b252-5a86-6e0f-218b">
+        <entryLink import="true" name="Centreline Mounted Lascannon" hidden="false" id="5ca0-a3ac-544c-42b3" type="selectionEntry" targetId="b252-5a86-6e0f-218b">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="493d-6f1f-a0e3-d3fc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0c9c-3f8d-a23a-20b1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3d9c-e809-a088-f4da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a5ec-de23-251a-685c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Centreline Mounted Missile Launchers (with Frag and Krak Missiles)" hidden="false" id="ac97-a427-9509-3187">
       <entryLinks>
-        <entryLink import="true" name="Two Centreline Mounted Missile Launchers (with Frag and Krak Missiles)" hidden="false" id="57e0-a3bf-dfde-e34a" type="selectionEntry" targetId="0ec3-6c91-952c-e0ea">
+        <entryLink import="true" name="Centreline Mounted Missile Launcher (with Frag and Krak Missiles)" hidden="false" id="a591-9c98-494e-7b44" type="selectionEntry" targetId="0ec3-6c91-952c-e0ea">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="09f0-0ced-6393-d9b0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d08b-3b0c-fef4-9dba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="bdd4-c205-c118-d550" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bc69-66b5-2e12-daac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Six Hull (Front) Mounted Hunter-Killer Missiles" hidden="false" id="d913-52b8-a914-f283">
       <entryLinks>
-        <entryLink import="true" name="Six Hull (Front) Mounted Hunter-Killer Missiles" hidden="false" id="7ce5-8e89-95d9-767b" type="selectionEntry" targetId="1bf8-72f8-c331-6900">
+        <entryLink import="true" name="Hull (Front) Mounted Hunter-Killer Missile" hidden="false" id="55a9-bd99-eb39-9eaf" type="selectionEntry" targetId="1bf8-72f8-c331-6900">
           <constraints>
-            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="9555-2858-9dfe-ddab" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="af64-3b3f-036d-9320" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="462d-bbfb-810f-624e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b202-0c56-e474-80c5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -25023,32 +24422,42 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Heavy Flamers" hidden="false" id="3a72-244f-35b9-a37d">
+    <selectionEntry type="upgrade" import="true" name="Two Twin-Linked Heavy Stubbers" hidden="false" id="6f95-df5c-1596-6e2f">
       <entryLinks>
-        <entryLink import="true" name="Two Sponson Mounted Heavy Flamers" hidden="false" id="2f05-58df-c407-25f9" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+        <entryLink import="true" name="Twin-Linked Heavy Stubber" hidden="false" id="f86b-ce64-0086-a5ae" type="selectionEntry" targetId="f227-a61a-3215-932b">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="bf3a-9add-3001-6619" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2117-a7b0-b5aa-821c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="65d0-696f-cf43-bacc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9a29-17a9-59dd-5c89" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Heavy Stubbers" hidden="false" id="edd8-aaa7-d61e-a44e">
+      <entryLinks>
+        <entryLink import="true" name="Sponson Mounted Heavy Stubber" hidden="false" id="d24e-a327-5641-5f57" type="selectionEntry" targetId="f227-a61a-3215-932b">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="63a1-b33b-13fe-5a4b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="37bf-f2d2-9080-27cd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Multi-Meltas" hidden="false" id="f9af-c4c8-0526-bea3">
       <entryLinks>
-        <entryLink import="true" name="Two Sponson Mounted Multi-Meltas" hidden="false" id="e933-ff80-8757-fd9d" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
+        <entryLink import="true" name="Sponson Mounted Multi-Melta" hidden="false" id="1afd-a796-d275-d9d2" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="86a3-2c6f-1506-8850" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6b22-041a-208b-7cd3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b565-811b-b919-8773" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8f69-2d61-de8e-6319" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Plasma Cannons" hidden="false" id="4859-e18b-9ef1-0b67">
       <entryLinks>
-        <entryLink import="true" name="Two Sponson Mounted Plasma Cannons" hidden="false" id="4eea-edc3-c381-2e33" type="selectionEntry" targetId="43f5-3815-6b3a-a363">
+        <entryLink import="true" name="Sponson Mounted Plasma Cannon" hidden="false" id="798c-adc1-b308-d032" type="selectionEntry" targetId="43f5-3815-6b3a-a363">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="67c7-c1b3-3e03-2f21" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5a7f-c97e-83df-75ec" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7ff0-c42a-3f03-bf71" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c1c7-b02b-5a6b-fc76" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -25084,32 +24493,32 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Heavy Stubbers" hidden="false" id="edd8-aaa7-d61e-a44e">
-      <entryLinks>
-        <entryLink import="true" name="Two Sponson Mounted Heavy Stubbers" hidden="false" id="b1fc-f86c-eeb0-dab2" type="selectionEntry" targetId="f227-a61a-3215-932b">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="711c-6fd7-8822-01ed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="acc5-72e0-d248-2783" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Heavy Stubbers" hidden="false" id="e7a9-3cdb-253e-17d5">
       <entryLinks>
-        <entryLink import="true" name="Two Hull (Front) Mounted Heavy Stubbers" hidden="false" id="2802-627b-8fba-59e0" type="selectionEntry" targetId="f227-a61a-3215-932b">
+        <entryLink import="true" name="Hull (Front) Mounted Heavy Stubber" hidden="false" id="3b7e-c771-1988-b485" type="selectionEntry" targetId="f227-a61a-3215-932b">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b2fa-a12a-8117-8421" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7528-fa9e-dc20-b00d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9221-f315-7915-d597" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e3c9-aadc-f9b1-18be" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Meltaguns" hidden="false" id="17c4-2565-7a32-0c17">
       <entryLinks>
-        <entryLink import="true" name="Two Hull (Front) Mounted Meltaguns" hidden="false" id="98a7-0fcf-fed2-e858" type="selectionEntry" targetId="4ebd-57e0-3560-e568">
+        <entryLink import="true" name="Hull (Front) Mounted Meltagun" hidden="false" id="480f-f4cf-b609-8394" type="selectionEntry" targetId="4ebd-57e0-3560-e568">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4942-7e03-953a-e9a7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d1c4-6bad-dd6d-61b3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c4a3-2368-201b-0599" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1fa4-7fde-6a6e-820f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eight Hull (Front) Mounted Hellstrike Missiles" hidden="false" id="354e-90ff-7189-f734">
+      <entryLinks>
+        <entryLink import="true" name="Hellstrike Missile" hidden="false" id="6eb3-559f-38f8-9e0e" type="selectionEntry" targetId="5e24-bdca-a89c-0f40">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="274b-656b-9ab2-57d0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="3345-70f6-0744-8fba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -25482,90 +24891,90 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Autocannons" hidden="false" id="16d2-964d-1e8c-8158">
       <entryLinks>
-        <entryLink import="true" name="Two Autocannons" hidden="false" id="9cc5-35b6-037f-0b4a" type="selectionEntry" targetId="56b3-de09-9fea-deb6">
+        <entryLink import="true" name="Autocannon" hidden="false" id="4e2a-bb7a-d16b-804f" type="selectionEntry" targetId="56b3-de09-9fea-deb6">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c207-a850-3ab0-ba17" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b986-1dc0-f9ba-49a3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="56db-6fd6-6037-bbc0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5723-9b62-e3a1-7fb2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="719e-0086-1b04-8682">
       <entryLinks>
-        <entryLink import="true" name="Two Heavy Bolters" hidden="false" id="5843-270f-ed70-ef34" type="selectionEntry" targetId="07fd-c24a-9235-4206">
+        <entryLink import="true" name="Heavy Bolter" hidden="false" id="1dcf-1031-9367-41ea" type="selectionEntry" targetId="07fd-c24a-9235-4206">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0762-681d-f9bc-709f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6634-6f72-680a-21f4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a4ef-9114-ddf3-387c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9e9c-8d87-03ee-d7b0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="fa1d-f75c-3567-ed78">
       <entryLinks>
-        <entryLink import="true" name="Two Heavy Flamers" hidden="false" id="857c-280b-ed37-3b37" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+        <entryLink import="true" name="Heavy Flamer" hidden="false" id="b7cd-fcb3-9f50-8e6e" type="selectionEntry" targetId="5507-b432-3b4c-df12">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fb5a-440a-ae07-4163" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ffe7-b682-713f-7cf6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3124-7524-8456-1ece" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e2a5-5f89-9f86-2a36" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Lascannons" hidden="false" id="2ab8-84b9-14d4-9429">
       <entryLinks>
-        <entryLink import="true" name="Two Lascannons" hidden="false" id="9719-b801-8c13-4fd5" type="selectionEntry" targetId="b252-5a86-6e0f-218b">
+        <entryLink import="true" name="Lascannon" hidden="false" id="74da-6d8d-4fa0-525c" type="selectionEntry" targetId="b252-5a86-6e0f-218b">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2dab-ba89-e7a4-daca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="95b4-396f-275c-991d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="204c-4e93-d71e-bed5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="db3b-5d1e-8005-1a0d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Multi-Lasers" hidden="false" id="dabd-6a48-e267-e774">
       <entryLinks>
-        <entryLink import="true" name="Two Multi-Lasers" hidden="false" id="ba92-45c5-b450-bdd2" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
+        <entryLink import="true" name="Multi-Laser" hidden="false" id="8f5d-7765-e574-3f03" type="selectionEntry" targetId="003b-af4b-0094-f5c3">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c479-6387-5f90-0a9a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3f17-ac84-4ec4-4a14" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fcb1-6dfa-4a6a-05ac" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2e7a-5f22-127c-bee5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Multi-Meltas" hidden="false" id="a2fa-2f55-a425-79a4">
       <entryLinks>
-        <entryLink import="true" name="Two Multi-Meltas" hidden="false" id="b37c-8369-41ab-9854" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
+        <entryLink import="true" name="Multi-Melta" hidden="false" id="0cc6-e668-be61-51f8" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9cb3-9586-1638-b0eb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d325-a9ed-0fed-893b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="92c6-599b-1ac7-2f4f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="21ed-8167-b4e4-1e88" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two Plasma Cannons" hidden="false" id="9843-419d-bef1-58f0">
       <entryLinks>
-        <entryLink import="true" name="Two Plasma Cannons" hidden="false" id="02c2-e81d-b742-13f8" type="selectionEntry" targetId="43f5-3815-6b3a-a363">
+        <entryLink import="true" name="Plasma Cannon" hidden="false" id="fc67-0163-7164-f133" type="selectionEntry" targetId="43f5-3815-6b3a-a363">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="be21-46ee-935f-a986" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f5a5-8309-24ad-3333" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8ead-3cda-acf5-0acf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d15f-78c1-93e0-914c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="One Side (Left) and One Side (Right) Mounted Multi-Melta" hidden="false" id="819f-3282-b77f-8c67">
       <entryLinks>
-        <entryLink import="true" name="One Side (Left) and One Side (Right) Mounted Multi-Melta" hidden="false" id="2592-5300-030e-49db" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
+        <entryLink import="true" name="Side (Left) and One Side (Right) Mounted Multi-Melta" hidden="false" id="e5ef-c379-00fe-8830" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1576-95c8-0e50-b1bf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1d98-d7ea-c542-43e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e408-a8a6-c37e-f078" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3a5e-0a35-8dc4-6b7c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="One Side (Left) and One Side (Right) Mounted Plasma Cannon" hidden="false" id="cf8d-82d0-3b69-eeea">
       <entryLinks>
-        <entryLink import="true" name="One Side (Left) and One Side (Right) Mounted Plasma Cannon" hidden="false" id="b717-754a-1e0a-8920" type="selectionEntry" targetId="43f5-3815-6b3a-a363">
+        <entryLink import="true" name="Side (Left) and One Side (Right) Mounted Plasma Cannon" hidden="false" id="7d83-8232-04a2-7c35" type="selectionEntry" targetId="43f5-3815-6b3a-a363">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2cc4-df88-1adb-0d6b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ae6a-73f3-1c83-42a3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6c57-5dca-7f9e-5ab2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4aa3-3fec-b008-6a3d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>

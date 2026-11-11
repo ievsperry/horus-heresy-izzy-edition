@@ -641,7 +641,12 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     Valdor (235 points) with its centreline weapon.
   The doc's Aethon Heavy Sentinel Squadron is a Fast Attack unit of its own; the official Aethon entry is left as it
   is. Cohort Doctrine limits on unit counts and play are rule text only.
-  It refuses to run on a catalogue that already has the expansion.
+  It refuses to run on a catalogue that already has the expansion. To rebuild the expansion with the current
+  Builder, take the catalogue as it was before the expansion (commit 9bee36b) with its stray carriage returns
+  stripped, run `add_solar_auxilia.py` and `fix_solar_auxilia_links.py`, drop their game system changes (the rules
+  are already there), and re-apply the catalogue's later commits (`git diff 3f27853 HEAD`). This was last done to
+  give the expansion the Builder's one-of limits, pair swaps (Hellstrike Missiles, sponsons), the Chimera's Turret
+  Mounted Multi-Laser and the Gravis Heavy Flamer as defaults, and the Omega Pattern Plasma Blastgun's 36" range.
 - `python3 homebrew/add_imperialis_militia.py` adds the Liber Imperatus Imperialis Militia expansion (the Claude Doc
   "Imperialis Militia Horus Heresy 2.0 - Homebrew Conversion", kept as `source/imperialis-militia.md`) to
   `2022 - Imperialis Militia.cat`, after The Warmaster's Due is in `additional-special-rules.md` and the game
