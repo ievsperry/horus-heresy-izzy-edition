@@ -102,6 +102,8 @@ loading. The script prints anything in the doc it could not place.
   only the systems. Riptides, R'varna, Y'vahra, Broadsides and the Stormsurge get only the support
   systems marked with an asterisk. "Up to two support systems" caps the pick at two, and "Each model
   must take one of the following: Battlesuit weapons" is at least one per model.
+  XV81 and XV84 Crisis Battlesuits take up to two picks per model, weapons and support systems in any
+  combination (two of the same weapon count as one twin-linked weapon).
 - Drones bought "for each battlesuit" or by "Each model" count every battlesuit in the unit, the
   Shas'vre a Shas'ui was upgraded to included.
 - An option whose note says "may not take iridium armour" (the XV85 Enforcer) blocks that item while

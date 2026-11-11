@@ -1475,7 +1475,7 @@ A Forge World Crisis variant built around a smart missile system, able to rain g
 **Wargear**
 
 - Advanced targeting system
-- One weapon from the Battlesuit Armoury (bought below)
+- Up to two weapons or support systems from the Battlesuit Armoury (bought below)
 - Smart missile system
 - XV81 Crisis battlesuit (jet pack)
 
@@ -1497,10 +1497,9 @@ A Forge World Crisis variant built around a smart missile system, able to rain g
 |---|---|
 | **The unit may take:** |  |
 | – Up to 2 additional XV81 Crisis Shas'vre | +45 points each |
-| **Each model must take one of the following:** |  |
-| – Battlesuit weapons | See Battlesuit Armoury |
+| **Each model must take up to two of the following, in any combination:** |  |
+| – Battlesuit weapons and support systems | See Battlesuit Armoury |
 | **Each model may take:** |  |
-| – One support system | See Battlesuit Armoury |
 | – Up to two Gun, Marker or Shield Drones | Drone costs |
 
 #### XV84 Crisis Battlesuits — 45 pts
@@ -1519,7 +1518,7 @@ A Forge World Crisis variant fitted with a networked markerlight and drone contr
 
 - Drone controller
 - Networked markerlight
-- One weapon from the Battlesuit Armoury (bought below)
+- Up to two weapons or support systems from the Battlesuit Armoury (bought below)
 - XV84 Crisis battlesuit (jet pack)
 
 **Unit Type**
@@ -1541,10 +1540,9 @@ A Forge World Crisis variant fitted with a networked markerlight and drone contr
 |---|---|
 | **The unit may take:** |  |
 | – Up to 2 additional XV84 Crisis Shas'vre | +45 points each |
-| **Each model must take one of the following:** |  |
-| – Battlesuit weapons | See Battlesuit Armoury |
+| **Each model must take up to two of the following, in any combination:** |  |
+| – Battlesuit weapons and support systems | See Battlesuit Armoury |
 | **Each model may take:** |  |
-| – One support system | See Battlesuit Armoury |
 | – Up to two Gun, Marker or Shield Drones | Drone costs |
 
 ### Troops
