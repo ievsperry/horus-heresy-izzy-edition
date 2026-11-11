@@ -1102,7 +1102,6 @@ _A Warboss with mega armour uses this profile instead: M 6, WS 6, BS 2, S 5, T 5
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Boss Retainer | 7 | 5 | 2 | 4 | 4 | 2 | 3 | 2 | 6 | 5+ | 40mm |
 | Head Nob | 7 | 5 | 2 | 4 | 4 | 3 | 4 | 3 | 7 | 5+ | 40mm |
-| Grot Attendant | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
 
 _A Boss Retainer with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 4, W 3, I 2, A 3, Ld 6, Sv 2+._
 _A Head Nob with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 4, W 4, I 3, A 4, Ld 7, Sv 2+._
@@ -1123,7 +1122,6 @@ _A Head Nob with mega armour uses this profile instead: M 6, WS 5, BS 2, S 4, T 
 
 - Boss Retainer: Infantry
 - Head Nob: Infantry (Character)
-- Grot Attendant: Infantry
 
 **Special Rules**
 
@@ -1933,7 +1931,8 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 - Choppa
 - Slugga
 - Stikkbombz
-- Warbike (twin-linked big shoota)
+- Warbike
+- Twin-linked big shoota (mounted on the warbike)
 
 **Unit Type**
 
@@ -3062,6 +3061,7 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 **Wargear**
 
 - Warbike
+- Twin-linked big shoota (mounted on the warbike)
 - Slugga
 - Choppa
 - Stikkbombz
@@ -3094,7 +3094,7 @@ The Battlewagon is also available as a Dedicated Transport to the units that lis
 |---|---|
 | **The mob may include:** |  |
 | – Up to 5 additional warbikers | +34 points each |
-| **For every 5 Warbikers in the mob, one Warbiker may take one of the following, in place of his warbike's twin-linked big shoota:** |  |
+| **For every 5 Warbikers in the mob, one Warbiker may exchange his twin-linked big shoota for one of the following:** |  |
 | – Kopta rokkit launcha | +10 points |
 | – Kustom mega-blasta | +15 points |
 | **The Nob Biker may exchange his Choppa for one of the following:** |  |
@@ -3314,7 +3314,7 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Flash Git | 6 | 4 | 3 | 4 | 4 | 2 | 3 | 1 | 7 | 4+ | 32mm |
 | Kaptin | 6 | 5 | 3 | 4 | 4 | 3 | 4 | 2 | 8 | 4+ | 32mm |
-| Ammo Runt | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
+| Ammo Runt | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
 
 **Unit Composition**
 
@@ -3324,11 +3324,8 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 
 **Wargear**
 
-- Snazzgun
-- Slugga
-- Choppa
-- Stikkbombz
-- 'Eavy armour
+- Flash Gitz and Kaptin: snazzgun, slugga, choppa, stikkbombz, 'eavy armour
+- Ammo Runt: grot blasta
 
 **Unit Type**
 
@@ -3530,7 +3527,7 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Loota | 6 | 3 | 3 | 4 | 4 | 1 | 2 | 1 | 6 | 5+ | 32mm |
 | Spanner Nob | 6 | 4 | 3 | 4 | 4 | 2 | 3 | 2 | 7 | 5+ | 40mm |
-| Ammo Runt | 6 | 3 | 3 | 2 | 2 | 1 | 4 | 1 | 5 | 6+ | 25mm |
+| Ammo Runt | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
 
 **Unit Composition**
 
@@ -3539,10 +3536,8 @@ _This model may be selected as a Heavy Support choice, or as a Dedicated Transpo
 
 **Wargear**
 
-- Deffgun
-- Slugga
-- Stikkbombz
-- Da armour
+- Lootas and Spanner Nob: deffgun, slugga, stikkbombz, da armour
+- Ammo Runt: grot blasta
 
 **Unit Type**
 
@@ -3573,6 +3568,7 @@ The unit may take a Trukk or a Battlewagon as a Dedicated Transport. This does n
 |---|---|
 | **The mob may include:** |  |
 | – Up to 5 additional lootas | +22 points each |
+| – Up to 2 ammo runts | +5 points each |
 | **The Spanner Nob may take:** |  |
 | – Bosspole | +10 points |
 | – Waaagh! banner | +35 points |

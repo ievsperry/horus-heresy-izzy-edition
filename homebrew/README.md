@@ -217,7 +217,10 @@ loading. The script prints anything in the doc it could not place.
   who takes it keeps the rifle and cannot exchange it. "Up to two Novitiates may exchange their autogun and close combat weapon" is likewise a
   pick of the autogun swap, two in the unit.
 - "A model equipped with Mega Armour may instead exchange its Big Choppa for" (Ork Boss, Warboss): those picks
-  have a limit of 0 until that model takes Mega Armour.
+  have a limit of 0 until that model takes Mega Armour. "Any model equipped with Mega Armour may exchange"
+  (Warboss Retinue) works the same, also when it is the model's only swap of that weapon or joins another
+  swap of it. The check looks where the Mega Armour is offered: on the model, or in the unit's own options
+  (a unit with grot attendants, or Mega Armour for the entire mob).
 - "One Hammerhead in the army may be upgraded to Longstrike", or an upgrade noted "(one per army; ...)" (the
   Sororitas Anchorite), is one per roster, not one per unit. Give the upgraded model its own stat line in the
   datasheet's table (Longstrike, BS 5) or it uses the base model's.
