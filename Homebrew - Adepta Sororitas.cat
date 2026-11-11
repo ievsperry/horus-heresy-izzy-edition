@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3858-8951-c1f7-3986" name="Homebrew - Adepta Sororitas" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3858-8951-c1f7-3986" name="Homebrew - Adepta Sororitas" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="1bb1-1c40-9f73-9fdb" name="Adepta Sororitas for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Adepta Sororitas" />
   </publications>
@@ -3686,6 +3686,39 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="14b5-4d92-a091-101a" shared="true" id="ec2a-f4e5-1ccb-4004" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                   </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Up to 1 may exchange for" hidden="false" id="85f5-1f0b-3c21-9598">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="14b5-4d92-a091-101a" shared="true" id="de24-ce07-5d4d-4f67" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                      </constraints>
+                      <entryLinks>
+                        <entryLink import="true" name="Heavy bolter" hidden="false" id="4048-9aae-fa61-6a2f" type="selectionEntry" targetId="07fd-c24a-9235-4206">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc6a-11f4-a9ed-39d5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                          </constraints>
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Ministorum heavy flamer" hidden="false" id="2a20-9008-7f23-7bf5" type="selectionEntry" targetId="b6a1-df5f-4e44-6fad">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ae2-fbd7-9fbe-da16" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                          </constraints>
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Multi-melta" hidden="false" id="d947-3ba1-461b-bb4f" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd4b-8027-fc5c-8e66" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                          </constraints>
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                   <entryLinks>
                     <entryLink import="true" name="Flamer" hidden="false" id="9017-4d46-ec3d-08a3" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
                       <constraints>
@@ -3851,48 +3884,10 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Celestian: Options" hidden="false" id="b530-e504-218b-2e01">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Heavy bolter or Ministorum heavy flamer" hidden="false" id="e2f5-6c4e-e7a4-4cb5">
-              <modifiers>
-                <modifier type="increment" field="233b-93fe-4d14-bf80" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="14b5-4d92-a091-101a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8dae-42cc-63ef-cb30" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="233b-93fe-4d14-bf80" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Heavy bolter" hidden="false" id="5329-2b03-65e3-6d09" type="selectionEntry" targetId="07fd-c24a-9235-4206">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Ministorum heavy flamer" hidden="false" id="a3ab-f098-17a4-e6b2" type="selectionEntry" targetId="b6a1-df5f-4e44-6fad">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Multi-melta" hidden="false" id="c09e-3bf7-0bc4-e706" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
+            <entryLink import="true" name="Simulacrum Imperialis" hidden="false" id="ee22-08f6-58fc-8839" type="selectionEntry" targetId="b62f-0e71-9a34-447f">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38cf-cb7b-6460-1952" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Celestian: Options" hidden="false" id="b6a5-7a0e-9cd1-fb66">
-          <entryLinks>
-            <entryLink import="true" name="Simulacrum Imperialis" hidden="false" id="9f55-54c9-c794-7ab2" type="selectionEntry" targetId="b62f-0e71-9a34-447f">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e8a-2b3d-18bf-842a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e35c-a483-db9c-aa8a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
@@ -5423,25 +5418,32 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Heavy bolter" hidden="false" id="a4c5-cec7-bc81-3296" type="selectionEntry" targetId="07fd-c24a-9235-4206">
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Up to 1 may exchange for" hidden="false" id="83cc-82ce-1d79-b34e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="9888-144b-d569-830a" shared="true" id="dbad-0efe-4215-d4d1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy bolter" hidden="false" id="6aba-21b4-ddc9-1939" type="selectionEntry" targetId="07fd-c24a-9235-4206">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3517-5a27-a585-f4ee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7849-9706-ba3a-c97f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Ministorum heavy flamer" hidden="false" id="68aa-9719-69ff-8c5b" type="selectionEntry" targetId="b6a1-df5f-4e44-6fad">
+                    <entryLink import="true" name="Ministorum heavy flamer" hidden="false" id="5c90-56ab-4bd5-a208" type="selectionEntry" targetId="b6a1-df5f-4e44-6fad">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcae-6751-005b-b6fd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a589-8fba-bc00-a1ee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Multi-melta" hidden="false" id="d5a0-b02a-8480-36fc" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
+                    <entryLink import="true" name="Multi-melta" hidden="false" id="546f-e28d-ede9-4aa4" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="067d-0e0a-1161-257d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95e5-2a8f-e7db-7904" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />

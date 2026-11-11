@@ -184,6 +184,11 @@ loading. The script prints anything in the doc it could not place.
   any of the following, each once" gives each of those datasheets each item, unless it already offers it (the
   hunter-killer missile on each datasheet). An official item (Dozer blade, Searchlight) keeps its own rules; a
   new one (Extra armour, Laud hailer) carries the table's effect.
+- Two headers "One Battle Sister may exchange her boltgun for:" are two Sisters, each with her own pick (a
+  special weapon and a heavy weapon), not one pick from both lists (likewise the Drukhari Kabalite Agents).
+  "One Celestian may instead exchange her boltgun for" after "Up to two Celestians may exchange ..." is one of
+  those two picks, from its own list. "A model equipped with Mega Armour may instead exchange its Big Choppa"
+  (Ork Boss) is a swap of the Big Choppa, not an extra weapon. An "X or Y" item in such a pick is a choice of each.
 - "Up to two Insidiant Warriors may be upgraded to Insidiant Cremators" works like "One ... may be upgraded to
   a ...": up to two of the model become the other kind, each in place of a Warrior.
 - A swap of a pair for a pair ("its two heavy bolters for two Ministorum heavy flamers", "its two dark lances

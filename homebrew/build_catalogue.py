@@ -3727,6 +3727,10 @@ class Builder:
 
     def apply_option_group(self, ds, unit, models, model_for, grp, unit_upgrades):
         header = grp["header"]
+        # "Up to two Celestians may exchange their boltgun for ...; One Celestian may instead exchange her
+        # boltgun for": one of those two picks, from this list
+        instead = " may instead " in header
+        header = header.replace(" may instead ", " may ")
         # "A Heavy Weapons Team with a missile launcher may take": only as many as there are launchers
         wm = re.match(r"((?:Any|Each|An?) .+?) with an? (.+?) (may take.*)$", header)
         with_item = wm.group(2) if wm else None
@@ -3860,18 +3864,21 @@ class Builder:
                 # "Any Warrior may exchange its devourer" and "One in every three may exchange its
                 # devourer" are one choice of what replaces the devourer.
                 same = [g for g in models[mname]["groups"] if g["kind"] == "exchange" and norm(g["what"]) == norm(what)]
-                if same and (fixed != same[0]["fixed"] or required):
+                # "One Battle Sister may exchange her boltgun for" twice: two Sisters, each with her own pick
+                if same and (fixed != same[0]["fixed"] or required or instead
+                             or (fixed and determiner == "One" and same[0].get("one"))):
                     # "Any Veteran ... shotgun", "One other Veteran ... heavy flamer", "Up to three remaining
                     # Veterans ... special weapons": one swap of the lasgun, each pick with its own limit
                     same[0].setdefault("subs", []).append({"fixed": fixed, "required": required, "items": list(items),
-                                                           "cap_if": cap_if})
+                                                           "cap_if": cap_if, "within": instead})
                     target = same[0]
                 elif same:
                     same[0]["items"] += items
                     target = same[0]
                 else:
                     target = {"kind": "exchange", "what": what, "qualifier": qualifier,
-                              "items": list(items), "fixed": fixed, "required": required, "cap_if": cap_if}
+                              "items": list(items), "fixed": fixed, "required": required, "cap_if": cap_if,
+                              "one": determiner == "One"}
                     models[mname]["groups"].append(target)
                 if ratio_all:
                     target.update(ratio_per=ratio_per, ratio_all=True, each_once=each_once)
@@ -4104,7 +4111,9 @@ class Builder:
                     skey = make_id(gkey, "sub", str(si))
                     holder = gl
                     if sub["fixed"]:
-                        ssub = el(child(ge, "selectionEntryGroups"), "selectionEntryGroup",
+                        # "may instead": inside the first pick, so it counts toward that pick's limit too
+                        parent = fsub if sub.get("within") and g.get("fixed") else ge
+                        ssub = el(child(parent, "selectionEntryGroups"), "selectionEntryGroup",
                                   name=f"Up to {sub['fixed']} may exchange for", hidden=False, id=skey)
                         add_constraint(ssub, "max", sub["fixed"], skey + "max", scope=uid, children=True)
                         if sub.get("required"):
@@ -4113,10 +4122,12 @@ class Builder:
                             self.cap_if(ssub, make_id(skey + "max", "max"), sub["cap_if"], uid, key)
                         holder = el(ssub, "entryLinks")
                     for name, cost, _ in sub["items"]:
-                        tid, _, _ = self.option_target(name, key)
-                        e = self.link(holder, tid, name, skey, maximum=item_max)
-                        self.save_on_model(me, m, tid)
-                        add_cost(e, self.cost(cost))
+                        alts = self.alternatives(name, ds)  # "Heavy bolter or Ministorum heavy flamer": each
+                        for tid, label, acost in alts or [(self.option_target(name, key)[0], name, None)]:
+                            e = self.link(holder, tid, label or self.weapon_names_for(tid, name), skey,
+                                          maximum=item_max)
+                            self.save_on_model(me, m, tid)
+                            add_cost(e, self.cost(cost) if acost is None else acost)
                 if oid and not g["qualifier"].startswith("all") and not pairs:
                     twin = norm(original).startswith("twin") and not norm(self.weapon_names_for(oid, original)).startswith("twin")
                     e = el(gl, "entryLink", import_=True,
