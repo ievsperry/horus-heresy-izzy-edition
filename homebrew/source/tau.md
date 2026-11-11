@@ -1475,7 +1475,7 @@ A Forge World Crisis variant built around a smart missile system, able to rain g
 **Wargear**
 
 - Advanced targeting system
-- One weapon from the Battlesuit Armoury (bought below)
+- Up to two weapons or support systems from the Battlesuit Armoury (bought below)
 - Smart missile system
 - XV81 Crisis battlesuit (jet pack)
 
@@ -1497,10 +1497,9 @@ A Forge World Crisis variant built around a smart missile system, able to rain g
 |---|---|
 | **The unit may take:** |  |
 | – Up to 2 additional XV81 Crisis Shas'vre | +45 points each |
-| **Each model must take one of the following:** |  |
-| – Battlesuit weapons | See Battlesuit Armoury |
+| **Each model must take up to two of the following, in any combination:** |  |
+| – Battlesuit weapons and support systems | See Battlesuit Armoury |
 | **Each model may take:** |  |
-| – One support system | See Battlesuit Armoury |
 | – Up to two Gun, Marker or Shield Drones | Drone costs |
 
 #### XV84 Crisis Battlesuits — 45 pts
@@ -1519,7 +1518,7 @@ A Forge World Crisis variant fitted with a networked markerlight and drone contr
 
 - Drone controller
 - Networked markerlight
-- One weapon from the Battlesuit Armoury (bought below)
+- Up to two weapons or support systems from the Battlesuit Armoury (bought below)
 - XV84 Crisis battlesuit (jet pack)
 
 **Unit Type**
@@ -1541,10 +1540,9 @@ A Forge World Crisis variant fitted with a networked markerlight and drone contr
 |---|---|
 | **The unit may take:** |  |
 | – Up to 2 additional XV84 Crisis Shas'vre | +45 points each |
-| **Each model must take one of the following:** |  |
-| – Battlesuit weapons | See Battlesuit Armoury |
+| **Each model must take up to two of the following, in any combination:** |  |
+| – Battlesuit weapons and support systems | See Battlesuit Armoury |
 | **Each model may take:** |  |
-| – One support system | See Battlesuit Armoury |
 | – Up to two Gun, Marker or Shield Drones | Drone costs |
 
 ### Troops
@@ -2825,7 +2823,7 @@ A Warmaker battlesuit confers a 2+ Armour Save, a 4+ Invulnerable Save, a jet pa
 
 ### Battlesuit Armoury
 
-Commanders and Crisis battlesuits choose their weapons and support systems from this list, up to the number their datasheet allows. A battlesuit may take two of the same weapon, which then count as a single twin-linked weapon†. Support systems marked with an asterisk may also be taken by Riptides, Broadsides and the Stormsurge where their options allow.
+Commanders and Crisis battlesuits choose their weapons and support systems from this list, up to the number their datasheet allows. A battlesuit may take the same weapon more than once; each is a separate weapon, not a twin-linked one. Support systems marked with an asterisk may also be taken by Riptides, Broadsides and the Stormsurge where their options allow.
 
 #### Additional Support Systems
 
@@ -3102,7 +3100,6 @@ These entries rely on 2.0 wording that should be confirmed. Where your book diff
 - Reaction Allotment, Overwatch from a second unit (Supporting Fire), Return Fire, and extra reactions from Warlord Traits.
 - Advancing then shooting (Vior'la, Zephyr's Grace, The Twin Lance).
 - Weapon special rules: Sniper, Pinning, Rending, Armourbane, Sunder, Breaching, Skyfire, Interceptor, Hit and Run, firing without line of sight.
-- Twin-linked weapons when a battlesuit takes two of the same weapon.
 - Grenade effects on the charge bonus (photon grenades), and Outflank.
 
 ## Sources

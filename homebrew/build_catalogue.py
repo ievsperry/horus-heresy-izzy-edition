@@ -1349,8 +1349,9 @@ class Builder:
 
     def suit_armoury_group(self, parent, key, title, items, ds, per_model=None):
         """A group of the Battlesuit Armoury weapons and systems the option names, each at its cost: a
-        weapon at most twice (two of the same count as one twin-linked weapon), a system once. per_model
-        (unit id, model id) puts those limits on each model of a pick shared across the unit."""
+        weapon as often as the pick allows (two of the same are two weapons, not one twin-linked one), a
+        system once. per_model (unit id, model id) puts the system limit on each model of a pick shared
+        across the unit."""
         names = [norm(it[0]) for it in items]
         systems_only = all("system" in n and "weapon" not in n for n in names)
         weapons_only = all("weapon" in n and "system" not in n for n in names)
@@ -1364,7 +1365,10 @@ class Builder:
                 continue
             if "Commanders only" in name and not commander:
                 continue
-            most = 2 if kind == "weapon" else 1
+            if kind == "weapon":
+                add_cost(self.link(child(g, "entryLinks"), eid, name, key), cost)
+                continue
+            most = 1
             if per_model:
                 e = self.link(child(g, "entryLinks"), eid, name, key)
                 for c in list(e.findall("constraints/constraint")):
