@@ -413,8 +413,10 @@ Kromlôk's Revenge combines a plasma blade with a mass driver. Each time Berehk 
 | – Rune staff (force weapon) | +0 points |
 | **The Kâhl may exchange his autoch-pattern combi-bolter for:** |  |
 | – Volkanite disintegrator | +10 points |
-| **The Kâhl may take:** |  |
-| – Exo-armour (2+ save; Infantry (Heavy, Character); 40mm base) | +25 points |
+| **The Kâhl may exchange his void armour for:** |  |
+| – Exo-armour (40mm base) | +25 points |
+
+_A Kâhl that takes Exo-armour gains the Heavy Sub-type._
 
 ### Memnyr Strategist — 65 pts
 
@@ -598,7 +600,7 @@ Kromlôk's Revenge combines a plasma blade with a mass driver. Each time Berehk 
 | **Up to two Yaegirs may exchange their bolt revolver for:** |  |
 | – Yaegir riflescope rifle (sniper) | +5 points |
 | – Bolt shotgun | +0 points |
-| – Kinlynk heavy weapon (ion beamer) | +15 points |
+| – Ion beamer (Kinlynk heavy weapon) | +15 points |
 
 ### Ironkin Steeljacks with Melee Weapons — 115 pts
 

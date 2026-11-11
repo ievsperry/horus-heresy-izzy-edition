@@ -213,6 +213,11 @@ loading. The script prints anything in the doc it could not place.
 - "may exchange their Hekatarii blade and splinter pistol for" with no other swap of either weapon (Wyches,
   Bloodbrides, Corsair Voidscarred and Skyreavers, the Steeljack Theyn, Ork Boyz, Pathfinders) gives up both: the default is the pair, and
   neither weapon stays as fixed wargear beside the pick.
+- "may exchange its twin HYLas beam cannon for" swaps the weapon it names before one that only ends the same
+  way: before, the Kapricus Defender gave up its bolt cannon and the Rogal Dorn its co-axial autocannon.
+- A datasheet note "A Kâhl that takes Exo-armour gains the Heavy Sub-type" (in italics under Options) gives the
+  Sub-type and its category once the model has the item, like "gains +1 Wound and the Heavy Sub-type".
+- "Rune staff" is the official Force Staff, like the Grimnyr's ancestral ward stave.
 - Two "may exchange one macro-surgical scalpel for" swaps, each with its own list (the Talos), are one swap of
   the two scalpels with one pick from each list, not two picks from either.
 - Wargear grouped under a heading ("### Armour" holding "#### Kabalite Armour") is read item by item.
