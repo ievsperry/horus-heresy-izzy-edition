@@ -2823,7 +2823,7 @@ A Warmaker battlesuit confers a 2+ Armour Save, a 4+ Invulnerable Save, a jet pa
 
 ### Battlesuit Armoury
 
-Commanders and Crisis battlesuits choose their weapons and support systems from this list, up to the number their datasheet allows. A battlesuit may take two of the same weapon, which then count as a single twin-linked weapon†. Support systems marked with an asterisk may also be taken by Riptides, Broadsides and the Stormsurge where their options allow.
+Commanders and Crisis battlesuits choose their weapons and support systems from this list, up to the number their datasheet allows. A battlesuit may take the same weapon more than once; each is a separate weapon, not a twin-linked one. Support systems marked with an asterisk may also be taken by Riptides, Broadsides and the Stormsurge where their options allow.
 
 #### Additional Support Systems
 
@@ -3100,7 +3100,6 @@ These entries rely on 2.0 wording that should be confirmed. Where your book diff
 - Reaction Allotment, Overwatch from a second unit (Supporting Fire), Return Fire, and extra reactions from Warlord Traits.
 - Advancing then shooting (Vior'la, Zephyr's Grace, The Twin Lance).
 - Weapon special rules: Sniper, Pinning, Rending, Armourbane, Sunder, Breaching, Skyfire, Interceptor, Hit and Run, firing without line of sight.
-- Twin-linked weapons when a battlesuit takes two of the same weapon.
 - Grenade effects on the charge bonus (photon grenades), and Outflank.
 
 ## Sources
