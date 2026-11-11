@@ -1364,7 +1364,10 @@ class Builder:
                 for r in rows:
                     opt, cost = r[1], r[2] if len(r) > 2 else ""
                     for uname in [u.strip() for u in r[0].split(",")]:
+                        # "Celestians" or "Battle Sisters": the "Celestian Squad", the "Battle Sisters Squad"
+                        squad = {norm(uname) + " squad", re.sub(r"s$", "", norm(uname)) + " squad"}
                         ds = next((d for d in self.datasheets if norm(d["name"]) == norm(uname)), None) or \
+                            next((d for d in self.datasheets if norm(d["name"]) in squad), None) or \
                             next((d for d in self.datasheets if norm(d["name"]).endswith(" " + norm(uname))), None)
                         if not ds:
                             self.problems.append(f"Unit Options: no datasheet '{uname}'")
@@ -4029,7 +4032,7 @@ class Builder:
                         sub = el(child(ge, "selectionEntryGroups"), "selectionEntryGroup",
                                  name=f"Up to {per} in every {r} models" if per > 1 else f"One in every {r}",
                                  hidden=False, id=skey)
-                        self.ratio_limit(sub, r, ds, m, per=per, all_models=g.get("ratio_all"))
+                        self.ratio_limit(sub, r, ds, m, per=per)
                         ratio_subs[r] = el(sub, "entryLinks")
                     return ratio_subs[r]
                 if g.get("fixed"):
@@ -4077,7 +4080,7 @@ class Builder:
                             add_cost(e, self.cost(cost) if acost is None else acost)
                             self.save_on_model(me, m, tid)
                             if ratio and g.get("each_once"):
-                                self.ratio_limit(e, ratio, ds, m, all_models=True)
+                                self.ratio_limit(e, ratio, ds, m)
                         continue
                     if g["qualifier"].startswith("all"):
                         e = self.wrapper(holder, name, gkey, name, ds)
@@ -4088,7 +4091,7 @@ class Builder:
                     add_cost(e, self.cost(cost))
                     if ratio and g.get("each_once"):
                         # "no weapon may be taken more than once per 10 models"
-                        self.ratio_limit(e, ratio, ds, m, all_models=True)
+                        self.ratio_limit(e, ratio, ds, m)
             else:
                 ge = el(groups, "selectionEntryGroup", name="Options", hidden=False, id=gkey)
                 if g["one_of"]:
@@ -4134,7 +4137,7 @@ class Builder:
                     if rm and name.lower().startswith("regeneration"):
                         self.link_rule(e, f"Regeneration ({rm.group(1)})", e.get("id"))
                     if g["ratio"]:
-                        self.ratio_limit(e, g["ratio"], ds, m, all_models=g.get("ratio_all"))
+                        self.ratio_limit(e, g["ratio"], ds, m)
         if pooled_take or m.get("exclusive"):
             self.exclusive_upgrades(ds, me, m, key, groups, pooled_take)
         m["drops"] = drops
@@ -4327,7 +4330,7 @@ class Builder:
                         self.per_model_limit(ag, akey, uid, m["id"], per)
                 if g["ratio"] and g["one_of"]:
                     # "For every 5 Warbikers, one Warbiker may take one of the following": one pick per 5 in all
-                    self.ratio_limit(ge, g["ratio"], ds, m, all_models=g.get("ratio_all"))
+                    self.ratio_limit(ge, g["ratio"], ds, m)
                 for nm, c, imax in g["items"]:
                     if (nm, c, imax) in armoury:
                         continue
@@ -4370,7 +4373,7 @@ class Builder:
                         elif not g["one_of"] and not alts:
                             self.per_model_limit(e, e.get("id"), uid, m["id"])
                         if g["ratio"]:
-                            self.ratio_limit(e, g["ratio"], ds, m, all_models=g.get("ratio_all"))
+                            self.ratio_limit(e, g["ratio"], ds, m)
                         rm = re.search(r"\((\d\+)\)", nm)
                         if rm and nm.lower().startswith("regeneration"):
                             self.link_rule(e, f"Regeneration ({rm.group(1)})", e.get("id"))
@@ -4526,17 +4529,17 @@ class Builder:
         self.upgrades[norm(name)] = eid
         return eid
 
-    def ratio_limit(self, e, every, ds, m, per=1, all_models=False):
+    def ratio_limit(self, e, every, ds, m, per=1):
         """'One in every three' / '1 in 10 models': max 1 per N models in the unit. 'For every 10
-        models, up to two' counts every model in the unit, two per ten."""
+        models, up to two': two per ten. The count is every model in the unit, its leader (Sergeant,
+        Nob, Justicar, Sister Superior) too, but not the models inside a transport it takes."""
         uid = self.units[ds["name"]]
         cid = add_constraint(e, "max", 0, make_id(e.get("id"), "ratio"), scope=uid, children=True)
         mods = child(e, "modifiers")
         mod = el(mods, "modifier", type="increment", field=cid, value=per)
         reps = el(mod, "repeats")
         el(reps, "repeat", field="selections", scope=uid, value=every, percentValue=False, shared=True,
-           includeChildSelections=True, includeChildForces=False, childId="model" if all_models else m["id"],
-           repeats=1, roundUp=False)
+           includeChildSelections=False, includeChildForces=False, childId="model", repeats=1, roundUp=False)
 
     def add_unit_rule(self, unit, line, uid, ds):
         line = line.replace("†", "")
@@ -4839,7 +4842,9 @@ class Builder:
                            if "**Platoon Composition**" in sub["lines"]]
         platoons = {c["name"] for c in self.composites}
         for s in self.sections:
-            if s["title"] in SLOTS or s["title"] in ("Dedicated Transports", "Kill Team Units") or s["title"] in platoons:
+            # "## Kill Team: Celestian Insidiants" holding "### Celestian Insidiants (Elites) — 160 pts"
+            if s["title"] in SLOTS or s["title"] in ("Dedicated Transports", "Kill Team Units") or s["title"] in platoons \
+                    or s["title"].startswith("Kill Team:"):
                 # "## Troops" opening "These units are Dedicated Transports.": the units are transports
                 slot = "Dedicated Transports" if any("These units are Dedicated Transports" in l for l in s["lines"]) \
                     else s["title"]

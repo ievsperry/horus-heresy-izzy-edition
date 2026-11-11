@@ -120,6 +120,9 @@ loading. The script prints anything in the doc it could not place.
 - A Warlord Traits section may list its generic traits as "### Name" sub-sections, "#### Name" headings (T'au) or
   "- **Name:** text" bullets (Grey Knights); a leading flavour line is left out of the trait's text.
 - An option named after a rule with its value ("Combat Drugs (2)") links that rule.
+- Every ratio ("For every 5 models", "For every 10 Boyz in the mob", "one in every three") counts every model in
+  the unit, its leader too (Sergeant, Nob, Justicar, Sister Superior): a Strike Squad of four Grey Knights and a
+  Justicar has five models, so one may take a special weapon. Models inside a transport the unit takes do not count.
 - "For every 10 Boyz in the mob, one Boy may ..." is a ratio like "For every 10 models": one per ten of them. A
   ratio pick of "one of the following" shares one limit across its items (one Warbiker in five takes a kopta rokkit
   launcha or a kustom mega-blasta, not both). A unit-wide "one of the following" (Hellions' Bladevanes or
