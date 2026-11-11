@@ -3838,10 +3838,11 @@ class Builder:
         ratio_per, ratio_all = 1, False
         # "For every 5 models in the unit", "For every 10 Boyz in the mob", "For every two Legion Indomitus Chosen in the unit"
         m = re.match(r"For every (\d+|two|three|four|five|six) (?:models|[\w' -]+?)(?: in the (?:unit|mob|squad|squadron|brood))?, "
-                     r"(?:one|up to (?P<upto>\w+)|(?P<n>two|three|four|five)) (?P<who>.+?)(?P<with> with an? [\w' -]+?)? may",
+                     r"(?:one|up to (?P<upto>\w+)|(?P<n>two|three|four|five))(?: (?P<who>.+?))?(?P<with> with an? [\w' -]+?)? may",
                      header)
         if m:
-            ratio, subject = NUMBER_WORDS.get(m.group(1)) or int(m.group(1)), m.group("who")
+            # "For every 3 models, one may exchange": one model of any kind
+            ratio, subject = NUMBER_WORDS.get(m.group(1)) or int(m.group(1)), m.group("who") or "model"
             # "For every 10 models, up to two Shock Troopers may", "For every 5 models, two Paladins may",
             # "one Shock Trooper with a lasgun may": counted on every model in the unit
             per = m.group("upto") or m.group("n")
@@ -3893,6 +3894,9 @@ class Builder:
                         norm(n) == norm(mname) for n in models) and any(" weapons team" in norm(n) for n in several))):
                 subject_models = several
         per_unit = False
+        if not subject_models and ratio and norm(subject or "") in ("model", "models"):
+            # "For every 3 models, one may exchange": any model, the Shas'vre too, within one limit
+            subject_models = [n for n, mm in models.items() if (mm["min"] > 0 or mm["replaces"]) and "(Drone)" not in mm["types"]]
         if not subject_models and determiner in ("Any", "Each") and norm(subject or "") in ("model", "models"):
             # "Any model may take": every kind of model in the unit, not its attendants
             subject_models = [n for n, mm in models.items() if mm["min"] > 0 or mm["replaces"]]
@@ -4219,6 +4223,7 @@ class Builder:
                                  name=f"Up to {per} in every {r} models" if per > 1 else f"One in every {r}",
                                  hidden=False, id=skey)
                         self.ratio_limit(sub, r, ds, m, per=per)
+                        self.shared_ratio(uid, g["what"], r, sub)
                         ratio_subs[r] = el(sub, "entryLinks")
                     return ratio_subs[r]
                 if g.get("fixed"):
@@ -4743,6 +4748,21 @@ class Builder:
         mod = el(child(e, "modifiers"), "modifier", type="set", field=cmax.get("id"), value=0)
         el(el(mod, "conditions"), "condition", type="lessThan", value=1, field="selections", scope=model_id,
            childId=rid, shared=True, includeChildSelections=True, includeChildForces=False)
+
+    def shared_ratio(self, uid, what, every, sub):
+        """The same 'one in every 3' swap on several kinds of model (Stealth Shas'ui and Shas'vre) is one
+        limit: each model's pick counts the others' picks against its own."""
+        if not hasattr(self, "_ratio_subs"):
+            self._ratio_subs = {}
+        others = self._ratio_subs.setdefault((uid, norm(what), every), [])
+        for o in others:
+            for a, b in ((sub, o), (o, sub)):
+                c = next(c for c in a.findall("constraints/constraint") if c.get("type") == "max")
+                mod = el(child(a, "modifiers"), "modifier", type="decrement", field=c.get("id"), value=1)
+                el(el(mod, "repeats"), "repeat", field="selections", scope=uid, value=1, percentValue=False,
+                   shared=True, includeChildSelections=True, includeChildForces=False, childId=b.get("id"),
+                   repeats=1, roundUp=False)
+        others.append(sub)
 
     def ratio_limit(self, e, every, ds, m, per=1):
         """'One in every three' / '1 in 10 models': max 1 per N models in the unit. 'For every 10

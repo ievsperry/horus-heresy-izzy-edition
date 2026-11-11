@@ -439,8 +439,6 @@ Drones are small, semi-intelligent machines that fly alongside T'au units, carry
 | – Support systems | varies |
 | **The Commander may take:** |  |
 | – Up to 2 drones from: Gun, Marker, Shield or Missile | Drone costs |
-| – Iridium armour (2+ save) | +20 points |
-| – Shield generator (4+ Invulnerable Save) | +25 points |
 | **The Commander may be upgraded to (choose one):** |  |
 | – XV86 Coldstar battlesuit (its jet pack adds +12 to its Movement instead of +6; Bulky (4) instead of Bulky (3)) | +20 points |
 | – XV85 Enforcer battlesuit (2+ save; Bulky (4) instead of Bulky (3); may not take iridium armour) | +20 points |

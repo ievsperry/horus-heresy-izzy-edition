@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="d5ae-9e15-7ef2-10f7" name="Asuryani for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Asuryani" />
   </publications>
@@ -11651,35 +11651,51 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9af-87e1-00ac-61a4" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b0a-45bb-b949-3188" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 5" hidden="false" id="ce3e-7d92-a8d6-43ec">
+                  <modifiers>
+                    <modifier type="increment" field="b63f-0c27-70a0-b76c" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="5a78-b277-cacb-c355" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="5a78-b277-cacb-c355" shared="true" id="b63f-0c27-70a0-b76c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="4b33-a74a-c147-aca8" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d1b-8419-78ea-2ebe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Flamer" hidden="false" id="edac-0d6c-253d-21be" type="selectionEntry" targetId="d91b-d178-5cef-dc8c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4271-b3fd-b534-5ff1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Fusion gun" hidden="false" id="a911-259d-982e-75a5" type="selectionEntry" targetId="2044-a335-439f-cb5a">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c6d-d56c-bff2-4810" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Chainsword" hidden="false" id="ace4-4e3b-20f1-aea2" type="selectionEntry" targetId="9374-085c-d37e-3577">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c11-8b6a-72c5-64ad" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Power Weapon" hidden="false" id="4b33-a74a-c147-aca8" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d1b-8419-78ea-2ebe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Flamer" hidden="false" id="edac-0d6c-253d-21be" type="selectionEntry" targetId="d91b-d178-5cef-dc8c">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4271-b3fd-b534-5ff1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Fusion gun" hidden="false" id="a911-259d-982e-75a5" type="selectionEntry" targetId="2044-a335-439f-cb5a">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c6d-d56c-bff2-4810" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
