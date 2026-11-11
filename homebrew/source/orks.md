@@ -119,6 +119,8 @@ Only units of the same type may Mob Up. Shoota Boyz may Mob Up only with other S
 
 **Mo' Dakka.** When a model with this special rule scores a hit with an additional To Hit roll from Dakka!, that hit gains all of the same special rules and effects possessed by the original attack, including Rending, Breaching, Armourbane, Pinning and similar weapon effects.
 
+**Monster Hunter.** A unit that contains at least one model with this special rule re-rolls all failed To Wound rolls against Dreadnoughts, Automata and Primarch models as well as any unit with the Monstrous sub-type.
+
 **Odd Mob.** The Meks, Painboys and Weirdboys of a warband stand outside the mobs, lending their talents wherever the boss sends them. Only on the longest Waaagh!s would an Odd Boy find himself krumpin' alongside the same lads time and time again. An Odd Mob is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, each Odd Boy in an Odd Mob, together with any grots he has taken, either becomes a separate unit or is assigned to another unit from the same Detachment of the army the Odd Mob was selected as part of. An Odd Boy may only be assigned to a unit composed entirely of models with the Infantry Unit Type and the same Klan (X) special rule as the Odd Boy, and may not join a unit that includes models in Mega Armour.
 
 **Oddboy.** Oddboyz may join Ork units normally, but do not count toward unit size when determining bonuses granted by the Mob Rule special rule.
@@ -130,6 +132,10 @@ Once per battle, at the start of the controlling player's turn, a model accompan
 After the repair has been resolved, remove one Oil Runt from play.
 
 **One Mind; Two Mobs.** Professa Gorkell and Boss Morkhyde are bought together as one HQ choice but are deployed as two separate units. Each keeps the Klan (X) shown on its datasheet.
+
+This unit may be included in a Bad Moons or a Snakebites detachment, and either model may join units with Klan (Bad Moons) or Klan (Snakebites). If this unit is chosen as the Warlord, Professa Gorkell must be the Warlord.
+
+If Professa Gorkell is removed from play, Boss Morkhyde gains Rampage (3), Rage (3), Counter-Attack (2) and It Will Not Die (5+) in place of his own values for the rest of the battle. From then on, he must declare a charge whenever he is able to, and must charge the closest enemy unit.
 
 **Open-topped.** The vehicle gains the Assault Vehicle special rule, but adds 1 to its rolls on the Vehicle Damage table when it suffers a penetrating hit. The entire vehicle counts as its Access Point.
 
@@ -298,7 +304,7 @@ There is no psychic phase in 2.0. A Weirdboy uses his powers in the phase each o
 
 **Waaagh! Energy.** A Weirdboy increases its Leadership characteristic by +1 for the purposes of making Psychic checks for every 10 friendly Ork Infantry models within 12", to a maximum bonus of +3. His Leadership can never be raised above 10 by this rule. Models with both the Bigga iz Betta and Bulky (X) special rules count as X additional models for the purposes of determining Waaagh! Energy. The power of the Waaagh! is hard to control: an Ork Psychic check suffers Perils of the Warp on any double, even if the check is passed.
 
-**Perils of the Waaagh!** If a Weirdboy fails a Psychic check, it automatically suffers Perils of the Warp. In addition, all units within D6" plus the current Waaagh! Energy bonus suffer D6 Strength 3 AP – hits with the Pinning and Shell Shock (1) special rules. The Weirdboy's current Waaagh! Energy bonus is also added to:
+**Perils of the Waaagh!** If a Weirdboy fails a Psychic check, it automatically suffers Perils of the Warp. In addition, all units within D6" plus the current Waaagh! Energy bonus suffer D6 Strength D3 AP D6 hits with the Pinning and Shell Shock (0) special rules. The Weirdboy's current Waaagh! Energy bonus is also added to:
 
 - the range of the effect
 - the Strength of the hits
