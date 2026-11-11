@@ -1334,7 +1334,10 @@ class Builder:
                         if save:
                             self.save_change[eid] = int(save.group(1))
                         self.upgrades.setdefault(norm(re.sub(r"\s*\(.*\)$", "", name)), eid)
-                        self.suit_armoury.append((name, eid, self.cost(r[2] if len(r) > 2 else ""), "system"))
+                        # "Support systems marked with an asterisk may also be taken by Riptides, Broadsides and
+                        # the Stormsurge": the starred ones are the only ones those suits get
+                        self.suit_armoury.append((name, eid, self.cost(r[2] if len(r) > 2 else ""),
+                                                  "starred" if r[0].strip().endswith("*") else "system"))
 
     def is_suit_armoury(self, name, cost):
         n = norm(name)
@@ -1342,16 +1345,34 @@ class Builder:
             "varies" in cost.lower() or "battlesuit armoury" in cost.lower()
             or n.startswith(("support system", "battlesuit weapons", "one support system")))
 
-    def suit_armoury_group(self, parent, key, title, systems_only=False):
-        """A group of every Battlesuit Armoury weapon and system, each at its cost."""
+    STARRED_SUITS = re.compile(r"Riptide|R'varna|Y'vahra|Broadside|Stormsurge")
+
+    def suit_armoury_group(self, parent, key, title, items, ds, per_model=None):
+        """A group of the Battlesuit Armoury weapons and systems the option names, each at its cost: a
+        weapon at most twice (two of the same count as one twin-linked weapon), a system once. per_model
+        (unit id, model id) puts those limits on each model of a pick shared across the unit."""
+        names = [norm(it[0]) for it in items]
+        systems_only = all("system" in n and "weapon" not in n for n in names)
+        weapons_only = all("weapon" in n and "system" not in n for n in names)
+        starred_only = bool(self.STARRED_SUITS.search(ds["name"]))
         g = el(child(parent, "selectionEntryGroups"), "selectionEntryGroup", name=title, hidden=False, id=key)
         commander = getattr(self, "_suit_commander", False)
         for name, eid, cost, kind in self.suit_armoury:
-            if systems_only and kind != "system":
+            if systems_only and kind == "weapon" or weapons_only and kind != "weapon":
+                continue
+            if starred_only and kind != "starred":
                 continue
             if "Commanders only" in name and not commander:
                 continue
-            add_cost(self.link(child(g, "entryLinks"), eid, name, key), cost)
+            most = 2 if kind == "weapon" else 1
+            if per_model:
+                e = self.link(child(g, "entryLinks"), eid, name, key)
+                for c in list(e.findall("constraints/constraint")):
+                    e.find("constraints").remove(c)
+                self.per_model_limit(e, make_id(key, eid), per_model[0], per_model[1], most)
+            else:
+                e = self.link(child(g, "entryLinks"), eid, name, key, maximum=most)
+            add_cost(e, cost)
         return g
 
     def add_listed_options(self):
@@ -1514,7 +1535,7 @@ class Builder:
             spec = {"types": names, "min": 0, "max": self.count_word(item) if re.match(r"up to", item, re.I)
                     else (self.count_word(hl.split("may take")[-1]) if "drones from" in hl else len(names) == 1 and 1),
                     "each": "one each of" in hl,
-                    "per_suit": hl.lower().startswith("for each battlesuit") or hl.startswith("Any ")}
+                    "per_suit": hl.lower().startswith("for each battlesuit") or hl.startswith(("Any ", "Each model "))}
             if "difference in drone costs" in cost.lower():
                 spec["swap"] = True
             chosen = next((sp for sp in specs if sp.get("chosen") and set(sp["types"]) == set(names)), None)
@@ -1597,7 +1618,8 @@ class Builder:
     def apply_drone_specs(self, ds, unit, uid, models, specs):
         """Drone groups after the model entries: a group per option, its drones bought as models."""
         ses = unit.find("selectionEntries")
-        suits = [m["id"] for m in models.values() if m["min"] > 0 and "Drone" not in m["types"]]
+        # every battlesuit, the Shas'vre a Shas'ui is upgraded to included
+        suits = [m["id"] for m in models.values() if (m["min"] > 0 or m.get("max")) and "Drone" not in m["types"]]
         for i, sp in enumerate(specs):
             if "drones_off" in sp:
                 drone = models.get(sp["drones_off"])
@@ -3673,6 +3695,7 @@ class Builder:
         if ds["transport"]:
             add_rule(unit, "Transport", " ".join(ds["transport"]), uid)
         self.apply_wargear_profiles(ds, unit, models)
+        self.apply_may_not_take(ds, unit)
         for n in ds["notes"]:
             if n:
                 add_rule(unit, "Note", n, uid + n[:20])
@@ -3712,6 +3735,26 @@ class Builder:
         # Categories on the unit itself.
         add_category(unit, *UNIT_CATEGORY, uid)
         return uid
+
+    def apply_may_not_take(self, ds, unit):
+        """'XV85 Enforcer battlesuit (2+ save; ...; may not take iridium armour)': while the model has the
+        option, the item it names has a limit of 0. The item is matched by its first word, so "iridium
+        armour" also covers the armoury's "Iridium battlesuit"."""
+        for r in ds["options"]:
+            m = r and re.match(r"[–-]\s*(.+?)\s*\((?:.*?;\s*)?may not take (?:an? )?([^;)]+)\)", strip_md(r[0]))
+            if not m:
+                continue
+            word = norm(m.group(2)).split(" ")[0]
+            src = [l for l in unit.iter("entryLink") if norm(l.get("name", "")) == norm(m.group(1))]
+            if not src or len(word) < 5:
+                continue
+            ids = sorted({l.get("targetId") for l in src})
+            for l in unit.iter("entryLink"):
+                if norm(l.get("name", "")).split(" ")[0] != word:
+                    continue
+                for c in l.findall("constraints/constraint"):
+                    if c.get("type") == "max":
+                        self.unless_selected(l, c.get("id"), unit.get("id"), ids)
 
     def apply_wargear_profiles(self, ds, unit, models):
         """'A Rogue Trader that takes Indomitus Terminator Armour gains +1 Wound and the Heavy Sub-type': once the
@@ -3754,6 +3797,10 @@ class Builder:
 
     @staticmethod
     def cost(txt):
+        # "–10 points" (Twin Kroot rifles in place of a Kroot gun) is a saving
+        neg = re.match(r"\s*[–−-]\s?(\d+)", txt or "")
+        if neg:
+            return -int(neg.group(1))
         m = re.search(r"\+?(\d+)", txt or "")
         return int(m.group(1)) if m else 0
 
@@ -4255,9 +4302,9 @@ class Builder:
                 if armoury:
                     # "The Commander must take up to four of the following": the Battlesuit Armoury
                     akey = make_id(gkey, "armoury")
-                    systems_only = all("system" in norm(it[0]) and "weapon" not in norm(it[0]) for it in armoury)
-                    ag = self.suit_armoury_group(ge, akey, "Battlesuit Armoury", systems_only)
-                    most = g.get("group_max") or self.count_word(armoury[0][0])
+                    ag = self.suit_armoury_group(ge, akey, "Battlesuit Armoury", armoury, ds)
+                    # "Up to two support systems" arrives as "support systems" bought up to twice
+                    most = g.get("group_max") or self.count_word(armoury[0][0]) or armoury[0][2]
                     if most:
                         add_constraint(ag, "max", most, akey + "max")
                     if "must take" in g.get("title", ""):
@@ -4471,13 +4518,15 @@ class Builder:
                 armoury = [it for it in g["items"] if self.is_suit_armoury(it[0], it[1])]
                 if armoury:
                     akey = make_id(gkey, "armoury")
-                    systems_only = all("system" in norm(it[0]) and "weapon" not in norm(it[0]) for it in armoury)
-                    ag = self.suit_armoury_group(ge, akey, f"{prefix}Battlesuit Armoury", systems_only)
-                    per = g.get("group_max") or self.count_word(armoury[0][0]) or 1
+                    ag = self.suit_armoury_group(ge, akey, f"{prefix}Battlesuit Armoury", armoury, ds, (uid, m["id"]))
+                    per = g.get("group_max") or self.count_word(armoury[0][0]) or armoury[0][2] or 1
                     if g.get("fixed"):
                         add_constraint(ag, "max", g["fixed"] * per, akey + "fixed")
                     else:
                         self.per_model_limit(ag, akey, uid, m["id"], per)
+                    if "must take" in g.get("title", ""):
+                        # "Each model must take one of the following: Battlesuit weapons": at least one each
+                        self.per_model_limit(ag, akey, uid, m["id"], 1, kind="min")
                 if g["ratio"] and g["one_of"]:
                     # "For every 5 Warbikers, one Warbiker may take one of the following": one pick per 5 in all
                     self.ratio_limit(ge, g["ratio"], ds, m)
