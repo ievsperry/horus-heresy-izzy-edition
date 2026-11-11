@@ -3929,7 +3929,8 @@ class Builder:
             for mm in models.values():
                 mm["wargear"] = [w for w in mm["wargear"] if w != original]
             return
-        one_of = "one of the following" in header or "choose one" in header
+        # "may take one of the following", "choose one", or a bare "may take one of:" (Cryptek, Tomb Blades)
+        one_of = "one of the following" in header or "choose one" in header or bool(re.search(r"\bone of$", header))
         if replaced:
             # "Any Ravener Warrior may be replaced with (each type only once)"
             base = subject_models[0]

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="6dbb-42c9-758d-cd66" name="Necrons for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Necrons" />
   </publications>
@@ -2498,6 +2498,9 @@
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" hidden="false" id="ea5d-a77c-12f8-83a9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b91-c26d-847c-7194" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <entryLinks>
                 <entryLink import="true" name="Chronometron" hidden="false" id="5f71-710d-d851-2828" type="selectionEntry" targetId="1468-6018-ffe1-de1d">
                   <constraints>
@@ -3506,18 +3509,18 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Tachyon arrow" hidden="false" id="8f43-ffae-3c9c-bb25" type="selectionEntry" targetId="6ca8-2260-e423-aaa6">
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="11b8-e859-5ea3-dff8">
+              <entryLinks>
+                <entryLink import="true" name="Tachyon arrow" hidden="false" id="5cd6-7340-821b-1275" type="selectionEntry" targetId="6ca8-2260-e423-aaa6">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0961-e2d9-a5e6-f514" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="023e-adb3-d5c1-e4f1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
                   </costs>
                 </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Options" hidden="false" id="11b8-e859-5ea3-dff8">
-              <entryLinks>
                 <entryLink import="true" name="Resurrection Orb" hidden="false" id="8504-5dd5-d3b3-5226" type="selectionEntry" targetId="cc13-8fa1-31cd-3b63">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a56d-b88f-ad69-73df" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -3698,14 +3701,6 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Tachyon arrow" hidden="false" id="d292-8ebe-9b46-3014" type="selectionEntry" targetId="6ca8-2260-e423-aaa6">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6dbe-4d39-7f54-d530" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
-                  </costs>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Exchange twin-linked tesla destructor" hidden="false" id="1f98-b535-fb7a-d732" defaultSelectionEntryId="7f72-bcba-18b5-5eae">
@@ -3731,6 +3726,14 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="8c6e-db93-06e3-f642">
               <entryLinks>
+                <entryLink import="true" name="Tachyon arrow" hidden="false" id="1d92-5c62-6f23-4c5e" type="selectionEntry" targetId="6ca8-2260-e423-aaa6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1321-bfc8-f80f-5ed4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+                  </costs>
+                </entryLink>
                 <entryLink import="true" name="Resurrection Orb" hidden="false" id="c78c-3a36-0c26-dc44" type="selectionEntry" targetId="cc13-8fa1-31cd-3b63">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f6f-aa6a-dcc4-3499" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -5893,48 +5896,28 @@
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="424f-204e-f7d7-7a6c">
+          <modifiers>
+            <modifier type="increment" field="e558-9053-c98d-45e0" value="1">
+              <repeats>
+                <repeat field="selections" scope="52bd-c684-720c-a834" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c734-0f27-77f4-f069" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e558-9053-c98d-45e0" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Whip coils" hidden="false" id="8bd5-46b3-c4a4-2c23" type="selectionEntry" targetId="e076-9c27-d0dd-8cee">
-              <modifiers>
-                <modifier type="increment" field="55e8-f84a-c294-e4c9" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="52bd-c684-720c-a834" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c734-0f27-77f4-f069" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="55e8-f84a-c294-e4c9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
               </costs>
             </entryLink>
             <entryLink import="true" name="Particle caster" hidden="false" id="4795-c11b-7f0b-d51b" type="selectionEntry" targetId="6ab5-8d25-ec69-79f8">
-              <modifiers>
-                <modifier type="increment" field="9a3e-a0d8-03f5-2dab" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="52bd-c684-720c-a834" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c734-0f27-77f4-f069" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9a3e-a0d8-03f5-2dab" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
               </costs>
             </entryLink>
             <entryLink import="true" name="Transdimensional beamer" hidden="false" id="26de-c7d4-49f5-ff3c" type="selectionEntry" targetId="71c5-bd44-7e42-49fa">
-              <modifiers>
-                <modifier type="increment" field="89e6-b3e7-d48e-2699" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="52bd-c684-720c-a834" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c734-0f27-77f4-f069" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="89e6-b3e7-d48e-2699" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
               </costs>
@@ -6250,48 +6233,28 @@
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="75fc-6278-9126-ce4f">
+          <modifiers>
+            <modifier type="increment" field="9a89-e8c9-aeee-63b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="ed78-b274-9cb3-485d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6421-3637-4dfb-9c04" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9a89-e8c9-aeee-63b9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Shield vanes" hidden="false" id="d1de-5f82-722a-8d82" type="selectionEntry" targetId="b0a7-952e-d786-87d6">
-              <modifiers>
-                <modifier type="increment" field="b76c-8cfa-23c6-a082" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="ed78-b274-9cb3-485d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6421-3637-4dfb-9c04" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b76c-8cfa-23c6-a082" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
               </costs>
             </entryLink>
             <entryLink import="true" name="Nebuloscope" hidden="false" id="b410-a3f7-8e2d-a026" type="selectionEntry" targetId="c1d5-69d5-e921-db65">
-              <modifiers>
-                <modifier type="increment" field="c608-19bd-8d0d-7085" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="ed78-b274-9cb3-485d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6421-3637-4dfb-9c04" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c608-19bd-8d0d-7085" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
               </costs>
             </entryLink>
             <entryLink import="true" name="Shadowloom" hidden="false" id="7037-29a9-5d99-868f" type="selectionEntry" targetId="06e3-02ce-507e-31f3">
-              <modifiers>
-                <modifier type="increment" field="185b-4077-0892-e16b" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="ed78-b274-9cb3-485d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6421-3637-4dfb-9c04" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="185b-4077-0892-e16b" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
               </costs>

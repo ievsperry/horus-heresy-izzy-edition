@@ -485,8 +485,8 @@ _The Lokhust Lord of 9th edition is the same model, and uses this datasheet._
 | **The Overlord may exchange his staff of light for:** |  |
 | – Hyperphase sword or voidblade | +0 points |
 | – Warscythe or voidscythe | +10 points |
-| – Tachyon arrow (in addition to his melee weapon) | +30 points |
 | **The Overlord may take:** |  |
+| – Tachyon arrow (in addition to his staff of light) | +30 points |
 | – Resurrection orb | +30 points |
 | – Phase shifter | +25 points |
 | – Sempiternal weave | +15 points |
@@ -528,10 +528,10 @@ _An Overlord riding to war on a Catacomb Command Barge: the Overlord at 90 point
 | **The Overlord may exchange his staff of light for:** |  |
 | – Hyperphase sword or voidblade | +0 points |
 | – Warscythe or voidscythe | +10 points |
-| – Tachyon arrow (in addition to his melee weapon) | +30 points |
 | **The Overlord may exchange his twin-linked tesla destructor for:** |  |
 | – Gauss cannon | +0 points |
 | **The Overlord may take:** |  |
+| – Tachyon arrow (in addition to his staff of light) | +30 points |
 | – Resurrection orb | +30 points |
 | – Phase shifter | +25 points |
 | – Sempiternal weave | +15 points |
