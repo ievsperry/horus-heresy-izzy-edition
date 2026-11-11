@@ -148,7 +148,7 @@ Use the 2.0 Crusade Force Organisation chart. Each unit takes the slot of the se
 
 | 2.0 slot | Necron units |
 |---|---|
-| HQ | Overlord, Lord, Destroyer Lord, Royal Warden, Skorpekh Lord, Cryptek, Technomancer, Plasmancer, Chronomancer, Psychomancer, Imotekh the Stormlord, Nemesor Zahndrekh, Vargard Obyron, Illuminor Szeras, Orikan the Diviner, Anrakyr the Traveller, Trazyn the Infinite |
+| HQ | Overlord, Overlord on Catacomb Command Barge, Lord, Destroyer Lord, Royal Warden, Skorpekh Lord, Cryptek, Technomancer, Plasmancer, Chronomancer, Psychomancer, Imotekh the Stormlord, Nemesor Zahndrekh, Vargard Obyron, Illuminor Szeras, Orikan the Diviner, Anrakyr the Traveller, Trazyn the Infinite |
 | Elites | Lychguard, Deathmarks, Triarch Praetorians, Triarch Stalker, Flayed Ones, Skorpekh Destroyers, Hexmark Destroyer, Cryptothralls, Canoptek Plasmacyte |
 | Troops | Necron Warriors, Immortals |
 | Dedicated Transports | Ghost Ark, Night Scythe |
@@ -162,7 +162,7 @@ A Necron army may take one Rite of War:
 
 **Destroyer Cult.** Requires a Destroyer Lord or Skorpekh Lord as Warlord. Benefit: Destroyers, Heavy Destroyers, Skorpekh and Ophydian Destroyers gain Rage (2), and Destroyers may be taken as Troops. Limitation: no Necron Warriors, and no Ghost Arks.
 
-**Royal Court.** Requires an Overlord as Warlord. Benefit: Lychguard may be taken as Troops and gain the Line sub-type, and the Overlord may take a Royal Warden and up to two Crypteks without using HQ slots. Limitation: no Destroyers of any kind.
+**Royal Court.** Requires an Overlord or Overlord on Catacomb Command Barge as Warlord. Benefit: Lychguard may be taken as Troops and gain the Line sub-type, and the Overlord may take a Royal Warden and up to two Crypteks without using HQ slots. Limitation: no Destroyers of any kind.
 
 **Tomb World Awakening.** Requires any Necron HQ as Warlord. Benefit: every unit improves its Reanimation Protocols by 1, to a best of 4+, in the first two game turns. Limitation: no Fast Attack choices, and every unit must deploy on the battlefield (no Reserves).
 
@@ -491,8 +491,51 @@ _The Lokhust Lord of 9th edition is the same model, and uses this datasheet._
 | – Phase shifter | +25 points |
 | – Sempiternal weave | +15 points |
 | – Translocation shroud | +20 points |
-| **The Overlord may take one of:** |  |
-| – Catacomb Command Barge (becomes Cavalry (Mechanised, Independent Character); M14, T6, W5, 3+; twin-linked tesla destructor or gauss cannon; Hammer of Wrath (2)) | +80 points |
+
+### Overlord on Catacomb Command Barge — 170 pts
+
+_An Overlord riding to war on a Catacomb Command Barge: the Overlord at 90 points and the barge at 80._
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Overlord on Catacomb Command Barge | 14 | 5 | 5 | 5 | 6 | 5 | 3 | 3 | 10 | 3+ | Use model |
+
+**Unit Composition**
+
+- 1 Overlord on Catacomb Command Barge
+
+**Wargear**
+
+- Staff of light
+- Twin-linked tesla destructor
+
+**Unit Type**
+
+- Overlord on Catacomb Command Barge: Cavalry (Mechanised, Independent Character)
+
+**Special Rules**
+
+- Dynasty (X)
+- Ever-living
+- Hammer of Wrath (2)
+- My Will Be Done: the unit he joins may re-roll failed to-hit rolls of 1
+- Reanimation Protocols (5+)
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Overlord may exchange his staff of light for:** |  |
+| – Hyperphase sword or voidblade | +0 points |
+| – Warscythe or voidscythe | +10 points |
+| – Tachyon arrow (in addition to his melee weapon) | +30 points |
+| **The Overlord may exchange his twin-linked tesla destructor for:** |  |
+| – Gauss cannon | +0 points |
+| **The Overlord may take:** |  |
+| – Resurrection orb | +30 points |
+| – Phase shifter | +25 points |
+| – Sempiternal weave | +15 points |
+| – Translocation shroud | +20 points |
 
 ### Plasmancer — 65 pts
 
@@ -1658,7 +1701,7 @@ Each C'tan Shard and the Tesseract Vault knows the powers its datasheet lists. O
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Szarekh | 8 | 7 | 5 | 6 | 7 | 6 | 4 | 5 | 10 | 2+ | Use model |
+| Szarekh | 14 | 7 | 5 | 6 | 7 | 6 | 4 | 5 | 10 | 2+ | Use model |
 | Triarchal Menhir | 8 | – | 4 | 5 | 6 | 3 | 2 | – | 10 | 3+ | 60mm |
 
 **Unit Composition**
@@ -1668,12 +1711,12 @@ Each C'tan Shard and the Tesseract Vault knows the powers its datasheet lists. O
 
 **Wargear**
 
-- Szarekh: Staff of Stars, Sceptre of Eternal Glory, Szarekh's command barge
+- Szarekh: Staff of Stars, Sceptre of Eternal Glory, Szarekh's command barge, twin-linked tesla destructor
 - Triarchal Menhirs: anti-materiel cannon
 
 **Unit Type**
 
-- Szarekh: Infantry (Mechanised, Monstrous, Unique)
+- Szarekh: Cavalry (Mechanised, Unique)
 - Triarchal Menhir: Infantry (Mechanised)
 
 **Special Rules**
@@ -1681,11 +1724,19 @@ Each C'tan Shard and the Tesseract Vault knows the powers its datasheet lists. O
 - Dynasty (Szarekhan)
 - Eternal Warrior
 - Ever-living
+- Hammer of Wrath (2)
 - Invulnerable save (4+)
 - Menhir Defence: while a Menhir lives, wounds allocated to Szarekh may be allocated to a Menhir instead, as Look Out, Sir! on a 2+†
 - Reanimation Protocols (4+)
 - The Silent King: if he is in your army, Szarekh must be your Warlord. Every friendly Necron unit improves its Reanimation Protocols by 1 while within 12" of him
 - Triarchal Command: once per turn, one friendly Necron unit within 12" may make an additional reaction without spending from your Reaction Allotment†
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **Szarekh may exchange his twin-linked tesla destructor for:** |  |
+| – Gauss cannon | +0 points |
 
 ### Tesseract Vault — 550 pts
 
