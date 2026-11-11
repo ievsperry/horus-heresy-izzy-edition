@@ -3731,6 +3731,11 @@ class Builder:
         # boltgun for": one of those two picks, from this list
         instead = " may instead " in header
         header = header.replace(" may instead ", " may ")
+        # "A model equipped with Mega Armour may exchange its Big Choppa for": only while it has the Mega Armour
+        eq = re.match(r"(An?|Any) model equipped with (?:an? )?(.+?) (may .+)$", header)
+        requires = None
+        if eq:
+            requires, header = eq.group(2), f"{eq.group(1)} model {eq.group(3)}"
         # "A Heavy Weapons Team with a missile launcher may take": only as many as there are launchers
         wm = re.match(r"((?:Any|Each|An?) .+?) with an? (.+?) (may take.*)$", header)
         with_item = wm.group(2) if wm else None
@@ -3746,13 +3751,15 @@ class Builder:
         ratio_per, ratio_all = 1, False
         # "For every 5 models in the unit", "For every 10 Boyz in the mob", "For every two Legion Indomitus Chosen in the unit"
         m = re.match(r"For every (\d+|two|three|four|five|six) (?:models|[\w' -]+?)(?: in the (?:unit|mob|squad|squadron|brood))?, "
-                     r"(?:one|up to (\w+)) (.+?)( with an? [\w' -]+?)? may", header)
+                     r"(?:one|up to (?P<upto>\w+)|(?P<n>two|three|four|five)) (?P<who>.+?)(?P<with> with an? [\w' -]+?)? may",
+                     header)
         if m:
-            ratio, subject = NUMBER_WORDS.get(m.group(1)) or int(m.group(1)), m.group(3)
-            # "For every 10 models, up to two Shock Troopers may", "one Shock Trooper with a lasgun may":
-            # counted on every model in the unit
-            ratio_all = bool(m.group(2) or m.group(4))
-            ratio_per = NUMBER_WORDS.get(m.group(2) or "one", 1)
+            ratio, subject = NUMBER_WORDS.get(m.group(1)) or int(m.group(1)), m.group("who")
+            # "For every 10 models, up to two Shock Troopers may", "For every 5 models, two Paladins may",
+            # "one Shock Trooper with a lasgun may": counted on every model in the unit
+            per = m.group("upto") or m.group("n")
+            ratio_all = bool(per or m.group("with"))
+            ratio_per = NUMBER_WORDS.get(per or "one", 1)
         each_once = bool(re.search(r"no weapon may be taken more than once", header))
         m = m or re.match(r"(Two|Three|Four|Five|Six|\d+) (.+?) must exchange", header)
         if m and subject is None:
@@ -3807,7 +3814,7 @@ class Builder:
             subject_models = [n for n, mm in models.items() if mm["min"] > 0 or mm["max"] > 0][:1] or list(models)[:1]
             per_unit = not single and fixed is None
         group_max = None
-        gm = re.search(r"up to (\w+) of the following", header)
+        gm = re.search(r"up to (\w+) of(?: the following\b|$)", header)  # also "may take up to two of:" (Dreadknight)
         if gm:
             group_max = NUMBER_WORDS.get(gm.group(1), self.cost(gm.group(1)))
         if determiner == "Each" and norm(subject or "") in ("model", "models") and not subject_models:
@@ -3870,7 +3877,7 @@ class Builder:
                     # "Any Veteran ... shotgun", "One other Veteran ... heavy flamer", "Up to three remaining
                     # Veterans ... special weapons": one swap of the lasgun, each pick with its own limit
                     same[0].setdefault("subs", []).append({"fixed": fixed, "required": required, "items": list(items),
-                                                           "cap_if": cap_if, "within": instead})
+                                                           "cap_if": cap_if, "within": instead, "requires": requires})
                     target = same[0]
                 elif same:
                     same[0]["items"] += items
@@ -4015,9 +4022,16 @@ class Builder:
                 g["what"] = a
                 ga = g
             else:
-                ga["items"] += g["items"]
+                if g.get("fixed"):
+                    # "One Kabalite Agent may exchange their splinter rifle and close combat weapon for": its own
+                    # pick of the rifle's swap, one Agent's, like the other "One Kabalite Agent" picks
+                    ga.setdefault("subs", []).append({"fixed": g["fixed"], "required": g.get("required"),
+                                                      "items": list(g["items"]), "cap_if": g.get("cap_if")})
+                else:
+                    ga["items"] += g["items"]
+                ga.setdefault("subs", []).extend(g.get("subs", []))
                 m["groups"].remove(g)
-            drops.append((b, [n for n, _, _ in g["items"]]))
+            drops.append((b, [n for n, _, _ in g["items"]] + [n for sub in g.get("subs", []) for n, _, _ in sub["items"]]))
         pooled_take = [g for g in m["groups"] if m.get("exclusive") and g["kind"] == "take" and g.get("fixed")]
         for g in pooled_take:
             g["on_model"] = True
@@ -4128,6 +4142,8 @@ class Builder:
                                           maximum=item_max)
                             self.save_on_model(me, m, tid)
                             add_cost(e, self.cost(cost) if acost is None else acost)
+                            if sub.get("requires"):
+                                self.only_with(e, sub["requires"], m["id"], ds)
                 if oid and not g["qualifier"].startswith("all") and not pairs:
                     twin = norm(original).startswith("twin") and not norm(self.weapon_names_for(oid, original)).startswith("twin")
                     e = el(gl, "entryLink", import_=True,
@@ -4600,6 +4616,17 @@ class Builder:
             self.problems.append(f"{ds['name'] if ds else name}: wrapper '{label}' has no weapon")
         self.upgrades[norm(name)] = eid
         return eid
+
+    def only_with(self, e, item, model_id, ds):
+        """'A model equipped with Mega Armour may exchange ...': the pick's limit is 0 unless the model has the item."""
+        rid = self.find_upgrade(item) or self.find_weapon(item)[0] or self.official_entry(item)
+        cmax = next((c for c in e.findall("constraints/constraint") if c.get("type") == "max"), None)
+        if not rid or cmax is None:
+            self.problems.append(f"{ds['name']}: no '{item}' for 'a model equipped with {item}'")
+            return
+        mod = el(child(e, "modifiers"), "modifier", type="set", field=cmax.get("id"), value=0)
+        el(el(mod, "conditions"), "condition", type="lessThan", value=1, field="selections", scope=model_id,
+           childId=rid, shared=True, includeChildSelections=True, includeChildForces=False)
 
     def ratio_limit(self, e, every, ds, m, per=1):
         """'One in every three' / '1 in 10 models': max 1 per N models in the unit. 'For every 10

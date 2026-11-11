@@ -189,6 +189,14 @@ loading. The script prints anything in the doc it could not place.
   "One Celestian may instead exchange her boltgun for" after "Up to two Celestians may exchange ..." is one of
   those two picks, from its own list. "A model equipped with Mega Armour may instead exchange its Big Choppa"
   (Ork Boss) is a swap of the Big Choppa, not an extra weapon. An "X or Y" item in such a pick is a choice of each.
+- "For every 5 models, two Paladins may exchange ..." allows two picks per five models (Paladins, Purifiers),
+  like "up to two". "The Dreadknight may take up to two of:" allows two picks in all.
+- "One Kabalite Agent may exchange their splinter rifle and close combat weapon for" is, like each other "One
+  Kabalite Agent" line, one Agent's own pick of the rifle swap (and it gives up the close combat weapon too); each
+  Agent makes one swap. "Up to two Novitiates may exchange their autogun and close combat weapon" is likewise a
+  pick of the autogun swap, two in the unit.
+- "A model equipped with Mega Armour may instead exchange its Big Choppa for" (Ork Boss, Warboss): those picks
+  have a limit of 0 until that model takes Mega Armour.
 - "Up to two Insidiant Warriors may be upgraded to Insidiant Cremators" works like "One ... may be upgraded to
   a ...": up to two of the model become the other kind, each in place of a Warrior.
 - A swap of a pair for a pair ("its two heavy bolters for two Ministorum heavy flamers", "its two dark lances

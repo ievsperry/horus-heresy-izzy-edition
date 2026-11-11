@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3858-8951-c1f7-3986" name="Homebrew - Adepta Sororitas" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3858-8951-c1f7-3986" name="Homebrew - Adepta Sororitas" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="1bb1-1c40-9f73-9fdb" name="Adepta Sororitas for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Adepta Sororitas" />
   </publications>
@@ -5763,6 +5763,31 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5eeb-f58c-8cdb-912a" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a5c-65be-c537-7ce4" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Up to 2 may exchange for" hidden="false" id="8e07-d4de-1d2d-ae65">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="87e5-9fee-bc07-434d" shared="true" id="bfef-f61a-e2f7-ea91" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Penitent eviscerator" hidden="false" id="4d90-8254-fbe4-0426" type="selectionEntry" targetId="0c90-b190-8364-741d">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a15d-104b-68d6-bd90" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Flamer" hidden="false" id="29b6-71d6-848c-11c8" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1ee-2808-ec7d-b519" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="autogun" hidden="false" id="5a0c-9ea8-a1a9-072e" type="selectionEntry" targetId="57dd-dff6-d173-3bf1">
                   <constraints>
@@ -5775,22 +5800,6 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Penitent eviscerator" hidden="false" id="401a-adb3-66c5-63a1" type="selectionEntry" targetId="0c90-b190-8364-741d">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a81-92dd-9797-20f3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Flamer" hidden="false" id="7864-42e9-571e-0990" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0acd-cf5a-c4cd-7288" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                   </costs>
                 </entryLink>
               </entryLinks>
