@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="51" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="52" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -6284,35 +6284,6 @@ The effect lasts until the end of the turn.</description>
               </constraints>
             </entryLink>
           </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Grot Attendant" hidden="false" id="bdeb-ea9e-ab24-6b05" publicationId="96d0-c462-d158-fbad">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8433-b511-9f15-65dc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7e5f-60c1-7b0a-acaf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <profiles>
-            <profile name="Grot Attendant" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="d365-232d-a352-fcad" publicationId="96d0-c462-d158-fbad">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">2</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">2</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="362f-d046-302f-33b8" primary="false" name="Infantry Unit Type" />
-          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
           </costs>
@@ -15589,6 +15560,53 @@ The effect lasts until the end of the turn.</description>
             <categoryLink targetId="6d79-a3e4-381f-7b0f" id="6a31-3dbd-2cff-741c" primary="false" name="Cavalry Unit Type" />
             <categoryLink targetId="59a4-7b61-600a-c457" id="88a7-53cc-6e59-4e73" primary="false" name="Skirmish Sub-type" />
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked big shoota" hidden="false" id="717e-acb0-796d-b49a" defaultSelectionEntryId="deb7-35ef-43f2-a958">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4813-4f4c-9a43-fba7" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36cf-831b-d4a9-8ea4" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One in every 5" hidden="false" id="1043-a150-ed4b-22d3">
+                  <modifiers>
+                    <modifier type="increment" field="71cf-a8b8-8f44-2600" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="8c6e-615f-d7f1-0103" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="8c6e-615f-d7f1-0103" shared="true" id="71cf-a8b8-8f44-2600" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Kopta rokkit launcha" hidden="false" id="0c2f-436b-4ee2-60a7" type="selectionEntry" targetId="4356-fd1e-39fb-39a3">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3532-fe27-cced-12f0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Kustom mega-blasta" hidden="false" id="0617-c543-aa3e-54f6" type="selectionEntry" targetId="f4fe-dba3-e6d0-7b91">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bb3-5920-f2d9-e22f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked big shoota" hidden="false" id="deb7-35ef-43f2-a958" type="selectionEntry" targetId="6658-e52b-0dc5-d975">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="801b-cb3a-61c2-2bc5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Warbike" hidden="false" id="7293-5f41-fec3-ee8d" type="selectionEntry" targetId="75f2-0220-1fb3-60d2">
               <constraints>
@@ -15726,6 +15744,12 @@ The effect lasts until the end of the turn.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1426-71ea-1558-8e88" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Twin-linked big shoota" hidden="false" id="c545-ff26-7b64-e4dd" type="selectionEntry" targetId="6658-e52b-0dc5-d975">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7fd-1e5e-a848-f496" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d192-2e87-de9e-bf97" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
             <entryLink import="true" name="Stikkbombz" hidden="false" id="56ee-7fde-fbad-0a02" type="selectionEntry" targetId="b763-1097-3232-7b0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d5af-ffaa-f6b1-6e9e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -15745,56 +15769,6 @@ The effect lasts until the end of the turn.</description>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Warbiker: Options" hidden="false" id="e53e-299e-2732-ffd3">
-          <modifiers>
-            <modifier type="increment" field="456b-45ee-93e8-91e7" value="1">
-              <repeats>
-                <repeat field="selections" scope="8c6e-615f-d7f1-0103" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9be1-1cbb-7aaa-7906" repeats="1" roundUp="false" />
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="702d-d351-1034-8354" value="1">
-              <repeats>
-                <repeat field="selections" scope="8c6e-615f-d7f1-0103" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="456b-45ee-93e8-91e7" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-            <constraint type="max" value="0" field="selections" scope="8c6e-615f-d7f1-0103" shared="true" id="702d-d351-1034-8354" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Kopta rokkit launcha" hidden="false" id="92ef-e592-fadc-382f" type="selectionEntry" targetId="4356-fd1e-39fb-39a3">
-              <modifiers>
-                <modifier type="increment" field="802f-d8d5-efed-7dbd" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="8c6e-615f-d7f1-0103" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="8c6e-615f-d7f1-0103" shared="true" id="802f-d8d5-efed-7dbd" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Kustom mega-blasta" hidden="false" id="d503-4872-aad2-af8a" type="selectionEntry" targetId="f4fe-dba3-e6d0-7b91">
-              <modifiers>
-                <modifier type="increment" field="4eaa-0d6c-76ef-ca8d" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="8c6e-615f-d7f1-0103" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="8c6e-615f-d7f1-0103" shared="true" id="4eaa-0d6c-76ef-ca8d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Nob Biker: Options" hidden="false" id="f728-f138-5466-bbdc">
           <entryLinks>
             <entryLink import="true" name="Bosspole" hidden="false" id="5464-df18-f95b-8b77" type="selectionEntry" targetId="e2e0-a4e5-4709-03c3">
@@ -16772,15 +16746,15 @@ The effect lasts until the end of the turn.</description>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">2</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">2</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">2</characteristic>
                 <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">2</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">6+</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">–</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -17505,22 +17479,22 @@ The effect lasts until the end of the turn.</description>
         <selectionEntry type="model" import="true" name="Ammo Runt" hidden="false" id="b7a7-2bef-39d7-2088" publicationId="96d0-c462-d158-fbad">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9912-6be8-250d-3dda" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2557-7d9b-6da6-78cf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2557-7d9b-6da6-78cf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
             <profile name="Ammo Runt" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="89fd-c204-89fa-6f5b" publicationId="96d0-c462-d158-fbad">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">2</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">2</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">2</characteristic>
                 <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">2</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">6+</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">–</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -17536,7 +17510,7 @@ The effect lasts until the end of the turn.</description>
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
           </costs>
         </selectionEntry>
       </selectionEntries>
