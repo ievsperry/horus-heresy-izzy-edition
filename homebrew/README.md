@@ -112,6 +112,9 @@ loading. The script prints anything in the doc it could not place.
 - "For every 3 models, one may exchange its burst cannon" (Stealth Battlesuits) and "For every five Storm
   Guardians, one may exchange" name no model, so any model of the unit may take the swap, the leader
   (Shas'vre) included, and every model's pick counts toward one shared limit for the unit.
+  "Up to four models may exchange their storm bolter" (Purgation Squad) works the same: any model, the
+  Justicar too, with one cap of four for the squad. This applies to swaps only; "One model may take" a
+  bosspole still goes to one model.
 - Kill Teams: "9 models chosen from..." is a group of exactly that many, each specialist at
   most once. A model whose wargear reads "X or Y" chooses one.
 - Weapons that keep their official 2.0 profile (the flamer) link to the game system's entry.

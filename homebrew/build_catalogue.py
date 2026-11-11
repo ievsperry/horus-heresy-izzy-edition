@@ -3898,8 +3898,12 @@ class Builder:
                         norm(n) == norm(mname) for n in models) and any(" weapons team" in norm(n) for n in several))):
                 subject_models = several
         per_unit = False
-        if not subject_models and ratio and norm(subject or "") in ("model", "models"):
-            # "For every 3 models, one may exchange": any model, the Shas'vre too, within one limit
+        any_model = False
+        if not subject_models and (ratio or fixed) and norm(subject or "") in ("model", "models") \
+                and re.search(r"(?:may|must) exchange ", header):
+            any_model = True
+            # "For every 3 models, one may exchange", "Up to four models may exchange": any model, the
+            # Shas'vre or Justicar too, within one limit
             subject_models = [n for n, mm in models.items() if (mm["min"] > 0 or mm["replaces"]) and "(Drone)" not in mm["types"]]
         if not subject_models and determiner in ("Any", "Each") and norm(subject or "") in ("model", "models"):
             # "Any model may take": every kind of model in the unit, not its attendants
@@ -3990,7 +3994,7 @@ class Builder:
                 else:
                     target = {"kind": "exchange", "what": what, "qualifier": qualifier,
                               "items": list(items), "fixed": fixed, "required": required, "cap_if": cap_if,
-                              "one": determiner == "One"}
+                              "one": determiner == "One", "any_model": any_model}
                     if requires:
                         # "Any model equipped with Mega Armour may exchange its Kombi-Shoota for": its only swap
                         # of that weapon, still only with the Mega Armour
@@ -4243,6 +4247,8 @@ class Builder:
                     add_constraint(fsub, "max", g["fixed"], fkey + "max", scope=uid, children=True)
                     if g.get("required"):
                         add_constraint(fsub, "min", g["required"], fkey + "min", scope=uid, children=True)
+                    if g.get("any_model"):
+                        self.shared_ratio(uid, g["what"], "fixed", fsub)  # every model's pick, one limit
                     fixed_links = el(fsub, "entryLinks")
                 for si, sub in enumerate(g.get("subs", [])):
                     # a further pick of the same swap with its own limit across the unit
