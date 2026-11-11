@@ -97,6 +97,16 @@ loading. The script prints anything in the doc it could not place.
 - Battlesuit Armoury weapons and support systems are a pick list on the units that use it
   (four for a Commander, three per Crisis battlesuit). Rows of a "Unit | Option | Cost" table
   are added to the datasheets they name.
+  Each weapon may be taken at most twice (two of the same count as one twin-linked weapon) and each
+  support system once, per model. "Battlesuit weapons" offers only the weapons and "One support system"
+  only the systems. Riptides, R'varna, Y'vahra, Broadsides and the Stormsurge get only the support
+  systems marked with an asterisk. "Up to two support systems" caps the pick at two, and "Each model
+  must take one of the following: Battlesuit weapons" is at least one per model.
+- Drones bought "for each battlesuit" or by "Each model" count every battlesuit in the unit, the
+  Shas'vre a Shas'ui was upgraded to included.
+- An option whose note says "may not take iridium armour" (the XV85 Enforcer) blocks that item while
+  taken; the item is matched by its first word, so the armoury's "Iridium battlesuit" is blocked too.
+- A cost written with a minus sign ("Twin Kroot rifles | –10 points") lowers the points.
 - Kill Teams: "9 models chosen from..." is a group of exactly that many, each specialist at
   most once. A model whose wargear reads "X or Y" chooses one.
 - Weapons that keep their official 2.0 profile (the flamer) link to the game system's entry.
