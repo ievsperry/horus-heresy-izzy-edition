@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="6dbb-42c9-758d-cd66" name="Necrons for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Necrons" />
   </publications>
@@ -252,7 +252,7 @@
                   <description>Lychguard may be taken as Troops and gain the Line sub-type, and the Overlord may take a Royal Warden and up to two Crypteks without using HQ slots.</description>
                 </rule>
                 <rule name="Limitations" id="fa66-428c-2e11-257f" hidden="false">
-                  <description>Requires an Overlord as Warlord.   no Destroyers of any kind.</description>
+                  <description>Requires an Overlord or Overlord on Catacomb Command Barge as Warlord.   no Destroyers of any kind.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -365,6 +365,13 @@
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="ceaf-13c4-f164-3eaa" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="aa04-c432-2e74-48b4" primary="false" name="Compulsory HQ:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="2391-1907-77d5-fbf8" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Overlord on Catacomb Command Barge" hidden="false" id="d359-f90b-6de9-7c4f" type="selectionEntry" targetId="ec0c-5270-a2fe-4e20">
+      <categoryLinks>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" id="668b-b242-458e-99d2" primary="true" name="HQ:" />
+        <categoryLink targetId="f823-8c1d-6a87-26a1" id="8ecc-b33e-c384-ad9e" primary="false" name="Compulsory HQ:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="67d4-9975-20bd-e43e" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Plasmancer" hidden="false" id="f002-9b89-db62-ebf1" type="selectionEntry" targetId="3f3d-f79c-279a-e1ac">
@@ -3545,18 +3552,6 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Options" hidden="false" id="ab19-faa0-0336-5648">
-              <entryLinks>
-                <entryLink import="true" name="Catacomb Command Barge" hidden="false" id="feaa-55a5-5286-bdba" type="selectionEntry" targetId="0480-0e5e-8d5b-633a">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="787c-be93-ca1a-f64f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80" />
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Warlord" hidden="false" id="f198-74ff-b4cc-36c8" type="selectionEntry" targetId="0176-56a3-d590-b103">
@@ -3604,14 +3599,218 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="90" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Catacomb Command Barge" hidden="false" id="0480-0e5e-8d5b-633a" publicationId="6dbb-42c9-758d-cd66">
-      <profiles>
-        <profile name="Catacomb Command Barge" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="2f83-fd4a-535b-005f">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Becomes Cavalry (Mechanised, Independent Character); M14, T6, W5, 3+; twin-linked tesla destructor or gauss cannon; Hammer of Wrath (2)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry type="unit" import="true" name="Overlord on Catacomb Command Barge" hidden="false" id="ec0c-5270-a2fe-4e20" publicationId="6dbb-42c9-758d-cd66">
+      <rules>
+        <rule name="My Will Be Done" id="18b7-4282-8999-06df" hidden="false">
+          <description>The unit he joins may re-roll failed to-hit rolls of 1</description>
+        </rule>
+        <rule name="Note" id="cc9f-80d9-0793-2aa4" hidden="false">
+          <description>An Overlord riding to war on a Catacomb Command Barge: the Overlord at 90 points and the barge at 80.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="be4c-cf6c-25a7-c5ff" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Dynasty (X)" id="545b-e3a2-930a-0552" hidden="false" targetId="92dd-e265-ca98-0c15" type="rule" />
+        <infoLink name="Ever-living" id="8869-128e-f835-28d6" hidden="false" targetId="ad3d-babd-4538-d27f" type="rule" />
+        <infoLink name="Hammer of Wrath (X)" id="ae68-4446-aa00-f1a7" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Reanimation Protocols (X)" id="0a50-079b-a9dc-7094" hidden="false" targetId="02d0-b2f6-035f-b837" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Reanimation Protocols (5+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="3211-1521-cc07-5d6c" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Overlord on Catacomb Command Barge" hidden="false" id="2eeb-ffa8-86aa-4610" publicationId="6dbb-42c9-758d-cd66">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68da-c508-d8cf-fbf7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5b4-23bd-4270-0547" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Overlord on Catacomb Command Barge" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="8a86-a1a7-cd77-1819" publicationId="6dbb-42c9-758d-cd66">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Mechanised, Independent Character)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">14</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="9aa1-a47c-4954-fbfa" primary="false" name="Cavalry Unit Type" />
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="edd6-2f53-4596-7859" primary="false" name="Independent Character" />
+            <categoryLink targetId="e929-a5c3-451c-6f19" id="9998-03a1-26da-f1d2" primary="false" name="Mechanised Unit Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange staff of light" hidden="false" id="ae7a-297e-469c-b2f6" defaultSelectionEntryId="0134-2efb-dd5d-7bc6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0db7-6ba8-be3d-6f84" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9a1-abf9-67ee-fae2" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Staff of light" hidden="false" id="0134-2efb-dd5d-7bc6" type="selectionEntry" targetId="3e7b-3836-b58c-bd0f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8937-ce98-7e3a-858d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Hyperphase sword" hidden="false" id="086d-f4b7-6e71-7ba1" type="selectionEntry" targetId="2a66-9165-7b73-a73b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0c6-74ec-2ace-23d4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Voidblade" hidden="false" id="fb58-0307-df58-56cf" type="selectionEntry" targetId="0c39-1426-6baf-2c3b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3b3-5ddd-3326-345a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Warscythe" hidden="false" id="08d0-c672-47d3-f969" type="selectionEntry" targetId="a86e-ba1e-f9d3-1cd8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9eda-1d35-9b75-7cd7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Voidscythe" hidden="false" id="4c84-3b44-f94d-206a" type="selectionEntry" targetId="c963-2994-a354-1d6a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f15-0136-370f-6984" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Tachyon arrow" hidden="false" id="d292-8ebe-9b46-3014" type="selectionEntry" targetId="6ca8-2260-e423-aaa6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6dbe-4d39-7f54-d530" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Exchange twin-linked tesla destructor" hidden="false" id="1f98-b535-fb7a-d732" defaultSelectionEntryId="7f72-bcba-18b5-5eae">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4db-f236-5226-5dce" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ded2-816c-8e25-9a9c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked tesla destructor" hidden="false" id="7f72-bcba-18b5-5eae" type="selectionEntry" targetId="447c-355c-1223-b998">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5bd-61d2-d934-1952" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Gauss cannon" hidden="false" id="f621-e3a1-206b-cdab" type="selectionEntry" targetId="bdd6-2d16-b50c-687e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1f5-ca56-0c2e-045b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="8c6e-db93-06e3-f642">
+              <entryLinks>
+                <entryLink import="true" name="Resurrection Orb" hidden="false" id="c78c-3a36-0c26-dc44" type="selectionEntry" targetId="cc13-8fa1-31cd-3b63">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f6f-aa6a-dcc4-3499" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Phase Shifter" hidden="false" id="0bab-185a-d72e-410a" type="selectionEntry" targetId="6598-b61b-c3f1-74fb">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22f5-9ec1-b032-17f8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Sempiternal Weave" hidden="false" id="d3ee-11d5-2cab-e1f2" type="selectionEntry" targetId="539d-fdc8-3c9c-1b3d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63bb-d5c9-bc79-00af" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Translocation Shroud" hidden="false" id="b39f-10dd-2750-3bd5" type="selectionEntry" targetId="9804-4c24-fd54-898a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da80-400c-688b-8a27" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Warlord" hidden="false" id="48a4-b5af-e201-2a0c" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="8ad3-11f7-f596-f996" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6b09-f140-c83a-fae8" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8ad3-11f7-f596-f996" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0247-ddd5-9aca-d110" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ad3-11f7-f596-f996" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="afe5-d818-c31a-53ec" type="selectionEntryGroup" targetId="0beb-64c2-9792-abf1">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="2eeb-ffa8-86aa-4610" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="4865-0250-3dc6-71f2" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="2eeb-ffa8-86aa-4610" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4865-0250-3dc6-71f2" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c738-f368-a3e8-344e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="170" />
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Plasmancer" hidden="false" id="3f3d-f79c-279a-e1ac" publicationId="6dbb-42c9-758d-cd66">
       <rules>
@@ -7134,6 +7333,11 @@
         </infoLink>
         <infoLink name="Eternal Warrior" id="d841-efd6-a895-6529" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule" />
         <infoLink name="Ever-living" id="2c46-07cd-0eac-da82" hidden="false" targetId="ad3d-babd-4538-d27f" type="rule" />
+        <infoLink name="Hammer of Wrath (X)" id="ece9-1dd3-f725-d396" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (2)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Invulnerable Save (X)" id="079a-ded2-cc82-83bb" hidden="false" targetId="bf2b-b1a4-ef3b-b16c" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Invulnerable Save (4+)" />
@@ -7157,8 +7361,8 @@
           <profiles>
             <profile name="Szarekh" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="2f62-d7a8-aea1-8e32" publicationId="6dbb-42c9-758d-cd66">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Mechanised, Monstrous, Unique)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Mechanised, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">14</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
@@ -7172,11 +7376,33 @@
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="f478-453d-df5e-ae9b" primary="false" name="Infantry Unit Type" />
-            <categoryLink targetId="7d95-f9d1-440a-67bd" id="5dcb-fac2-ae41-a96e" primary="false" name="Monstrous Sub-type" />
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="19f0-21f2-f540-e3ca" primary="false" name="Cavalry Unit Type" />
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="cf10-4c74-d216-e654" primary="false" name="Unique Sub-type" />
             <categoryLink targetId="e929-a5c3-451c-6f19" id="2595-1201-0e85-8d2e" primary="false" name="Mechanised Unit Sub-type" />
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked tesla destructor" hidden="false" id="af71-0ecc-a9c2-34c0" defaultSelectionEntryId="efd9-6cf9-e2bc-ffbf">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bf6-9334-3422-77ec" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="977b-fdc7-975c-a24f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked tesla destructor" hidden="false" id="efd9-6cf9-e2bc-ffbf" type="selectionEntry" targetId="447c-355c-1223-b998">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="858c-2004-98d7-10be" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Gauss cannon" hidden="false" id="2f92-5fee-0a3a-58a5" type="selectionEntry" targetId="bdd6-2d16-b50c-687e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1787-0b24-a73b-3e1d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Staff of Stars" hidden="false" id="6dab-92e6-6431-4c0b" type="selectionEntry" targetId="56f2-c484-fce3-f8c4">
               <constraints>
