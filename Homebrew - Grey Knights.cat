@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -4026,35 +4026,51 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b79d-a36d-6a27-2a87" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="595e-0801-ec1f-29f3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Up to 2 in every 5 models" hidden="false" id="4486-80c2-f501-f52e">
+                  <modifiers>
+                    <modifier type="increment" field="8fb7-1c47-77f4-6e6c" value="2">
+                      <repeats>
+                        <repeat field="selections" scope="d053-eee3-582f-4715" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="d053-eee3-582f-4715" shared="true" id="8fb7-1c47-77f4-6e6c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Incinerator" hidden="false" id="1a78-972e-35f7-f8b0" type="selectionEntry" targetId="1b9f-5998-9b33-e5eb">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eddb-94fd-6334-ea48" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Psilencer" hidden="false" id="8a34-c8ec-137f-803c" type="selectionEntry" targetId="e276-8f77-c67f-9cd0">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f662-fc08-01f9-5e90" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Psycannon" hidden="false" id="825a-7fa2-7905-98e3" type="selectionEntry" targetId="2371-9e24-12d1-d6f4">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4f5-f342-b57e-e3b9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Storm bolter" hidden="false" id="9cbe-75a6-4cc3-3f81" type="selectionEntry" targetId="a498-c66f-9eb7-ca9a">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcc2-bb9a-9d08-d848" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Incinerator" hidden="false" id="1a78-972e-35f7-f8b0" type="selectionEntry" targetId="1b9f-5998-9b33-e5eb">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eddb-94fd-6334-ea48" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Psilencer" hidden="false" id="8a34-c8ec-137f-803c" type="selectionEntry" targetId="e276-8f77-c67f-9cd0">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f662-fc08-01f9-5e90" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Psycannon" hidden="false" id="825a-7fa2-7905-98e3" type="selectionEntry" targetId="2371-9e24-12d1-d6f4">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4f5-f342-b57e-e3b9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -4176,35 +4192,51 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="34c3-2397-0d3a-a6c8" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dc0-3ba3-3c7c-9d8a" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Up to 2 in every 5 models" hidden="false" id="320f-f6e1-92bd-ad8d">
+                  <modifiers>
+                    <modifier type="increment" field="c73a-c6b9-24ac-58a3" value="2">
+                      <repeats>
+                        <repeat field="selections" scope="ba09-4426-f694-81ff" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="ba09-4426-f694-81ff" shared="true" id="c73a-c6b9-24ac-58a3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Incinerator" hidden="false" id="9dd9-5a8a-e51a-f10e" type="selectionEntry" targetId="1b9f-5998-9b33-e5eb">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="411d-a5a4-1b3a-4fba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Psilencer" hidden="false" id="f1be-9b13-e55e-e0b9" type="selectionEntry" targetId="e276-8f77-c67f-9cd0">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ddd-85a7-3da2-86a3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Psycannon" hidden="false" id="698e-6995-16f9-6dc4" type="selectionEntry" targetId="2371-9e24-12d1-d6f4">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5f9-a22c-1a05-4432" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Storm bolter" hidden="false" id="23aa-7054-47f0-947f" type="selectionEntry" targetId="a498-c66f-9eb7-ca9a">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44cd-1814-e09f-4e93" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Incinerator" hidden="false" id="9dd9-5a8a-e51a-f10e" type="selectionEntry" targetId="1b9f-5998-9b33-e5eb">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="411d-a5a4-1b3a-4fba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Psilencer" hidden="false" id="f1be-9b13-e55e-e0b9" type="selectionEntry" targetId="e276-8f77-c67f-9cd0">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ddd-85a7-3da2-86a3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Psycannon" hidden="false" id="698e-6995-16f9-6dc4" type="selectionEntry" targetId="2371-9e24-12d1-d6f4">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5f9-a22c-1a05-4432" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -4571,7 +4603,7 @@
                   <modifiers>
                     <modifier type="increment" field="58f5-a947-16d6-6828" value="1">
                       <repeats>
-                        <repeat field="selections" scope="a06e-f880-0e3c-d72c" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c5-0761-5800-bb2f" repeats="1" roundUp="false" />
+                        <repeat field="selections" scope="a06e-f880-0e3c-d72c" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -4860,7 +4892,7 @@
                   <modifiers>
                     <modifier type="increment" field="4d7c-11fc-bbde-74d3" value="1">
                       <repeats>
-                        <repeat field="selections" scope="952b-1b89-5991-8ab9" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd46-e774-5152-4015" repeats="1" roundUp="false" />
+                        <repeat field="selections" scope="952b-1b89-5991-8ab9" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -5165,7 +5197,7 @@
                   <modifiers>
                     <modifier type="increment" field="23d2-b443-f88d-1a21" value="1">
                       <repeats>
-                        <repeat field="selections" scope="746f-72a2-ef15-55d8" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a74-dbb6-5ec8-7eb7" repeats="1" roundUp="false" />
+                        <repeat field="selections" scope="746f-72a2-ef15-55d8" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -5848,10 +5880,13 @@
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="f568-f3e7-4a53-2849">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c30a-28cf-d4ef-5578" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <entryLinks>
                 <entryLink import="true" name="Heavy incinerator" hidden="false" id="8a70-55cf-d74c-cf81" type="selectionEntry" targetId="d500-2e96-6897-77e8">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01e1-f9b8-a2b4-f2dc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="01e1-f9b8-a2b4-f2dc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
@@ -5859,7 +5894,7 @@
                 </entryLink>
                 <entryLink import="true" name="Heavy psycannon" hidden="false" id="4508-aa84-c1e3-0e10" type="selectionEntry" targetId="f3c2-652e-6c8f-2d03">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a3c-9cdd-561d-7dc9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1a3c-9cdd-561d-7dc9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
@@ -5867,7 +5902,7 @@
                 </entryLink>
                 <entryLink import="true" name="Gatling psilencer" hidden="false" id="679f-051c-cf26-8e88" type="selectionEntry" targetId="7ca0-8042-401b-e6d4">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1df-41be-9f34-3efc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a1df-41be-9f34-3efc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />

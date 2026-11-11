@@ -22,6 +22,7 @@ python3 homebrew/build_catalogue.py homebrew/source/rillietann.md "Homebrew - Ae
 python3 homebrew/build_catalogue.py homebrew/source/traders-militant.md "Homebrew - Traders Militant.cat"
 python3 homebrew/build_catalogue.py homebrew/source/grey-knights.md "Homebrew - Grey Knights.cat"
 python3 homebrew/build_catalogue.py homebrew/source/leagues-of-votann.md "Homebrew - Leagues of Votann.cat"
+python3 homebrew/build_catalogue.py homebrew/source/adepta-sororitas.md "Homebrew - Adepta Sororitas.cat"
 ```
 
 Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
@@ -120,6 +121,9 @@ loading. The script prints anything in the doc it could not place.
 - A Warlord Traits section may list its generic traits as "### Name" sub-sections, "#### Name" headings (T'au) or
   "- **Name:** text" bullets (Grey Knights); a leading flavour line is left out of the trait's text.
 - An option named after a rule with its value ("Combat Drugs (2)") links that rule.
+- Every ratio ("For every 5 models", "For every 10 Boyz in the mob", "one in every three") counts every model in
+  the unit, its leader too (Sergeant, Nob, Justicar, Sister Superior): a Strike Squad of four Grey Knights and a
+  Justicar has five models, so one may take a special weapon. Models inside a transport the unit takes do not count.
 - "For every 10 Boyz in the mob, one Boy may ..." is a ratio like "For every 10 models": one per ten of them. A
   ratio pick of "one of the following" shares one limit across its items (one Warbiker in five takes a kopta rokkit
   launcha or a kustom mega-blasta, not both). A unit-wide "one of the following" (Hellions' Bladevanes or
@@ -143,6 +147,9 @@ loading. The script prints anything in the doc it could not place.
   not have the Xenos rule. Each detachment picks a League, and a character's own weapon
   profiled in its datasheet (the Arkanyst Evaluator's transmatter inverter, Berehk Stornbröw's Kromlôk's Revenge)
   is built like an armoury weapon. The Grimnyr's ancestral ward stave is the official Force Staff.
+- "Regimental Line (Cadian)" (Astra Militarum: Cadian Shock Troops, Catachan Jungle Fighters, Death Korps of Krieg):
+  the unit has Support Squad unless its detachment's Regiment is that regiment. Then Support Squad is hidden, the
+  unit shows Fury of the Regiment, its models gain the Line sub-type and it may fill a Compulsory Troops slot.
 - Grey Knights are not Xenos either: like the Astra Militarum, the army may be Loyalist or Traitor. Each
   detachment picks one Brotherhood (1st to 8th), which gives its units Brotherhood (X) with that Brotherhood's
   rules, Advanced Reaction and Warlord Trait. Wargear the doc marks with an asterisk ("Storm bolter\*") keeps its
@@ -168,6 +175,37 @@ loading. The script prints anything in the doc it could not place.
   Techmarine Covenant and Apothecarion Detachment rules (Grey Knights versions of the Legion ones, keyed on
   Brotherhood (X), with no bike clauses, and the Apothecary going only to Aegis Terminator units) assign each model
   to a unit before deployment.
+- Adepta Sororitas, like the Grey Knights, may be Loyalist or Traitor. Each detachment picks one Order Militant,
+  which gives its units Order (X) with that Order's rules, Advanced Reaction and Warlord Trait. The army's Faith
+  system (Acts of Faith, Gaining Faith, Miracles, and the table of Acts) and the Unit Types notes are on the army
+  selection: a "### Faith" sub-section of the Army-wide Special Rules that is not a rule a unit has is shown there,
+  its table one line to a row. The Celestian Insidiants are built from "## Kill Team: Celestian Insidiants",
+  their slot from "(Elites)" in the datasheet title. "Combi-weapon" is the game system's Minor Combi-weapon.
+- A "Unit | Option | Cost" row may name a squad by its models ("Battle Sisters", "Celestians"): that is the
+  Battle Sisters Squad, the Celestian Squad.
+- An "Equipment | Effect | Cost" table under "Any Sororitas Rhino, Immolator, Exorcist or Castigator may take
+  any of the following, each once" gives each of those datasheets each item, unless it already offers it (the
+  hunter-killer missile on each datasheet). An official item (Dozer blade, Searchlight) keeps its own rules; a
+  new one (Extra armour, Laud hailer) carries the table's effect.
+- Two headers "One Battle Sister may exchange her boltgun for:" are two Sisters, each with her own pick (a
+  special weapon and a heavy weapon), not one pick from both lists (likewise the Drukhari Kabalite Agents).
+  "One Celestian may instead exchange her boltgun for" after "Up to two Celestians may exchange ..." is one of
+  those two picks, from its own list. "A model equipped with Mega Armour may instead exchange its Big Choppa"
+  (Ork Boss) is a swap of the Big Choppa, not an extra weapon. An "X or Y" item in such a pick is a choice of each.
+- "For every 5 models, two Paladins may exchange ..." allows two picks per five models (Paladins, Purifiers),
+  like "up to two". "The Dreadknight may take up to two of:" allows two picks in all.
+- "One Kabalite Agent may exchange their splinter rifle and close combat weapon for" is, like each other "One
+  Kabalite Agent" line, one Agent's own pick of the rifle swap (and it gives up the close combat weapon too); each
+  Agent makes one swap. The stimm-needler is one of those picks, "Splinter rifle and stimm-needler", so an Agent
+  who takes it keeps the rifle and cannot exchange it. "Up to two Novitiates may exchange their autogun and close combat weapon" is likewise a
+  pick of the autogun swap, two in the unit.
+- "A model equipped with Mega Armour may instead exchange its Big Choppa for" (Ork Boss, Warboss): those picks
+  have a limit of 0 until that model takes Mega Armour.
+- "Up to two Insidiant Warriors may be upgraded to Insidiant Cremators" works like "One ... may be upgraded to
+  a ...": up to two of the model become the other kind, each in place of a Warrior.
+- A swap of a pair for a pair ("its two heavy bolters for two Ministorum heavy flamers", "its two dark lances
+  for two disintegrator cannons") is one pick of a whole pair: before, a pair counted as three selections (the
+  pick and the two weapons in it) and broke the swap.
 - Wargear grouped under a heading ("### Armour" holding "#### Kabalite Armour") is read item by item.
   "Scourge wings (count as a jump pack)" is the official jump pack under the doc's name. "May exchange
   any dark lance" lets each of the three be swapped; "one macro-scalpel" only one of the two.

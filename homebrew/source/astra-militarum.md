@@ -912,6 +912,10 @@ _30 points for the Tank Commander, plus his Leman Russ and the 1-2 other Leman R
 - Move Through Cover
 - Regiment (X)
 
+**Dedicated Transport**
+
+The squad may take a Chimera, Taurox or Taurox Prime as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
 **Options**
 
 | Option | Cost |
@@ -956,6 +960,10 @@ _30 points for the Tank Commander, plus his Leman Russ and the 1-2 other Leman R
 - Deep Strike
 - Move Through Cover
 - Regiment (X)
+
+**Dedicated Transport**
+
+The squad may take a Chimera, Taurox or Taurox Prime as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
 
 **Options**
 
@@ -1064,6 +1072,173 @@ The squad may take a Chimera or Taurox as a Dedicated Transport. This does not u
 - 0-1 Conscripts
 
 The squads are in Infantry Platoon below, and each is a separate unit on the battlefield. Their weapon options come from the Platoon Weapon Lists.
+
+### Cadian Shock Troops — 65 pts
+
+A separate Troops unit, not part of an Infantry Platoon.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Shock Trooper | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
+| Shock Trooper Sergeant | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
+
+**Unit Composition**
+
+- 9 Shock Troopers
+- 1 Shock Trooper Sergeant
+
+**Wargear**
+
+- Close combat weapon (Shock Troopers only)
+- Chainsword (Shock Trooper Sergeant only)
+- Flak armour
+- Frag grenades
+- Lasgun (Shock Troopers only)
+- Laspistol (Shock Trooper Sergeant only)
+
+**Unit Type**
+
+- Shock Trooper: Infantry
+- Shock Trooper Sergeant: Infantry (Character)
+
+**Special Rules**
+
+- Regiment (X)
+- Regimental Line (Cadian)
+- Shock Troops
+- Support Squad
+
+**Dedicated Transport**
+
+A unit of no more than 12 models may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The unit may include:** |  |
+| – Up to 10 additional Shock Troopers | +6 points each |
+| **For every 10 models, up to two Shock Troopers may exchange their lasgun for one of the following (no weapon may be taken more than once per 10 models):** |  |
+| – Flamer or grenade launcher | +5 points each |
+| – Meltagun | +10 points each |
+| – Plasma gun | +15 points each |
+| **For every 10 models, one Shock Trooper with a lasgun may take:** |  |
+| – Vox-caster | +5 points |
+| **Any Shock Trooper Sergeant may exchange his laspistol for:** |  |
+| – Bolt pistol | +1 point |
+| **Any Shock Trooper Sergeant may exchange his laspistol and chainsword for:** |  |
+| – Sergeant's autogun and close combat weapon | +0 points |
+| **The entire unit may exchange its flak armour for:** |  |
+| – Carapace armour | +3 points per model |
+
+### Catachan Jungle Fighters — 65 pts
+
+A separate Troops unit, not part of an Infantry Platoon.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Jungle Fighter | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
+| Jungle Fighter Sergeant | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
+
+**Unit Composition**
+
+- 9 Jungle Fighters
+- 1 Jungle Fighter Sergeant
+
+**Wargear**
+
+- Close combat weapon
+- Flak armour
+- Frag grenades
+- Lasgun (Jungle Fighters only)
+- Laspistol (Jungle Fighter Sergeant only)
+
+**Unit Type**
+
+- Jungle Fighter: Infantry
+- Jungle Fighter Sergeant: Infantry (Character)
+
+**Special Rules**
+
+- Jungle Ambush
+- Regiment (X)
+- Regimental Line (Catachan)
+- Scout
+- Support Squad
+
+**Dedicated Transport**
+
+A unit of no more than 12 models may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The unit may include:** |  |
+| – Up to 10 additional Jungle Fighters | +6 points each |
+| **For every 5 models, one Jungle Fighter may exchange his lasgun for:** |  |
+| – Flamer | +5 points each |
+| **For every 10 models, one Jungle Fighter with a lasgun may take:** |  |
+| – Vox-caster | +5 points |
+
+### Death Korps of Krieg — 65 pts
+
+A separate Troops unit, not part of an Infantry Platoon.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Death Korps Trooper | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
+| Death Korps Watchmaster | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
+
+**Unit Composition**
+
+- 9 Death Korps Troopers
+- 1 Death Korps Watchmaster
+
+**Wargear**
+
+- Chainsword (Death Korps Watchmaster only)
+- Close combat weapon (Death Korps Troopers only)
+- Flak armour
+- Frag grenades
+- Lasgun (Death Korps Troopers only)
+- Laspistol (Death Korps Watchmaster only)
+
+**Unit Type**
+
+- Death Korps Trooper: Infantry
+- Death Korps Watchmaster: Infantry (Character)
+
+**Special Rules**
+
+- Regiment (X)
+- Regimental Line (Death Korps of Krieg)
+- Support Squad
+
+**Dedicated Transport**
+
+A unit of no more than 12 models may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The unit may include:** |  |
+| – Up to 10 additional Death Korps Troopers | +6 points each |
+| **For every 10 models, up to two Death Korps Troopers may exchange their lasgun for one of the following (no weapon may be taken more than once per 10 models):** |  |
+| – Flamer, grenade launcher or long-las | +5 points each |
+| – Meltagun | +10 points each |
+| – Plasma gun | +15 points each |
+| **For every 10 models, one Death Korps Trooper with a lasgun may take one of the following (a model may only take one):** |  |
+| – Death Korps medi-pack | +10 points |
+| – Vox-caster | +5 points |
+| **Any Death Korps Watchmaster may exchange his laspistol and chainsword for:** |  |
+| – Boltgun and close combat weapon | +1 point |
+| **Any Death Korps Watchmaster may exchange his chainsword for:** |  |
+| – Power sword | +10 points |
+| **Any Death Korps Watchmaster may exchange his laspistol for one of the following:** |  |
+| – Bolt pistol | +1 point |
+| – Plasma pistol | +10 points |
 
 ## Infantry Platoon
 
@@ -1329,173 +1504,6 @@ _Each Infantry Platoon may include one squad of Conscripts._
 | --- | --: |
 | **The Conscripts may take:** |  |
 | – Up to 30 additional Conscripts | +3 points each |
-
-### Cadian Shock Troops — 65 pts
-
-A separate Troops unit, not part of an Infantry Platoon.
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Shock Trooper | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
-| Shock Trooper Sergeant | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
-
-**Unit Composition**
-
-- 9 Shock Troopers
-- 1 Shock Trooper Sergeant
-
-**Wargear**
-
-- Close combat weapon (Shock Troopers only)
-- Chainsword (Shock Trooper Sergeant only)
-- Flak armour
-- Frag grenades
-- Lasgun (Shock Troopers only)
-- Laspistol (Shock Trooper Sergeant only)
-
-**Unit Type**
-
-- Shock Trooper: Infantry
-- Shock Trooper Sergeant: Infantry (Character)
-
-**Special Rules**
-
-- Regiment (X)
-- Regimental Line (Cadian)
-- Shock Troops
-- Support Squad
-
-**Dedicated Transport**
-
-A unit of no more than 12 models may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The unit may include:** |  |
-| – Up to 10 additional Shock Troopers | +6 points each |
-| **For every 10 models, up to two Shock Troopers may exchange their lasgun for one of the following (no weapon may be taken more than once per 10 models):** |  |
-| – Flamer or grenade launcher | +5 points each |
-| – Meltagun | +10 points each |
-| – Plasma gun | +15 points each |
-| **For every 10 models, one Shock Trooper with a lasgun may take:** |  |
-| – Vox-caster | +5 points |
-| **Any Shock Trooper Sergeant may exchange his laspistol for:** |  |
-| – Bolt pistol | +1 point |
-| **Any Shock Trooper Sergeant may exchange his laspistol and chainsword for:** |  |
-| – Sergeant's autogun and close combat weapon | +0 points |
-| **The entire unit may exchange its flak armour for:** |  |
-| – Carapace armour | +3 points per model |
-
-### Catachan Jungle Fighters — 65 pts
-
-A separate Troops unit, not part of an Infantry Platoon.
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Jungle Fighter | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
-| Jungle Fighter Sergeant | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
-
-**Unit Composition**
-
-- 9 Jungle Fighters
-- 1 Jungle Fighter Sergeant
-
-**Wargear**
-
-- Close combat weapon
-- Flak armour
-- Frag grenades
-- Lasgun (Jungle Fighters only)
-- Laspistol (Jungle Fighter Sergeant only)
-
-**Unit Type**
-
-- Jungle Fighter: Infantry
-- Jungle Fighter Sergeant: Infantry (Character)
-
-**Special Rules**
-
-- Jungle Ambush
-- Regiment (X)
-- Regimental Line (Catachan)
-- Scout
-- Support Squad
-
-**Dedicated Transport**
-
-A unit of no more than 12 models may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The unit may include:** |  |
-| – Up to 10 additional Jungle Fighters | +6 points each |
-| **For every 5 models, one Jungle Fighter may exchange his lasgun for:** |  |
-| – Flamer | +5 points each |
-| **For every 10 models, one Jungle Fighter with a lasgun may take:** |  |
-| – Vox-caster | +5 points |
-
-### Death Korps of Krieg — 65 pts
-
-A separate Troops unit, not part of an Infantry Platoon.
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Death Korps Trooper | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 1 | 7 | 5+ | 25mm |
-| Death Korps Watchmaster | 7 | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 8 | 5+ | 25mm |
-
-**Unit Composition**
-
-- 9 Death Korps Troopers
-- 1 Death Korps Watchmaster
-
-**Wargear**
-
-- Chainsword (Death Korps Watchmaster only)
-- Close combat weapon (Death Korps Troopers only)
-- Flak armour
-- Frag grenades
-- Lasgun (Death Korps Troopers only)
-- Laspistol (Death Korps Watchmaster only)
-
-**Unit Type**
-
-- Death Korps Trooper: Infantry
-- Death Korps Watchmaster: Infantry (Character)
-
-**Special Rules**
-
-- Regiment (X)
-- Regimental Line (Death Korps of Krieg)
-- Support Squad
-
-**Dedicated Transport**
-
-A unit of no more than 12 models may take a Chimera or Taurox as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **The unit may include:** |  |
-| – Up to 10 additional Death Korps Troopers | +6 points each |
-| **For every 10 models, up to two Death Korps Troopers may exchange their lasgun for one of the following (no weapon may be taken more than once per 10 models):** |  |
-| – Flamer, grenade launcher or long-las | +5 points each |
-| – Meltagun | +10 points each |
-| – Plasma gun | +15 points each |
-| **For every 10 models, one Death Korps Trooper with a lasgun may take one of the following (a model may only take one):** |  |
-| – Death Korps medi-pack | +10 points |
-| – Vox-caster | +5 points |
-| **Any Death Korps Watchmaster may exchange his laspistol and chainsword for:** |  |
-| – Boltgun and close combat weapon | +1 point |
-| **Any Death Korps Watchmaster may exchange his chainsword for:** |  |
-| – Power sword | +10 points |
-| **Any Death Korps Watchmaster may exchange his laspistol for one of the following:** |  |
-| – Bolt pistol | +1 point |
-| – Plasma pistol | +10 points |
 
 ## Dedicated Transports
 

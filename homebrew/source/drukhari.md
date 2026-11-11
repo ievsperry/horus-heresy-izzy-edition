@@ -1230,10 +1230,8 @@ A Drukhari army may take one Rite of War, chosen when the army is built; these a
 | – Two pain sculptors | +10 points |
 | **One Kabalite Agent may exchange their splinter rifle and close combat weapon for:** |  |
 | – Splinter pistol and razorflails | +15 points |
-| **One Kabalite Agent with a splinter rifle may take:** |  |
-| – Stimm-needler | +10 points |
-
-_A model equipped with a stimm-needler may not exchange its splinter rifle._
+| **One Kabalite Agent may exchange their splinter rifle for:** |  |
+| – Splinter rifle and stimm-needler | +10 points |
 
 ### Kabalite Warriors — 80 pts
 

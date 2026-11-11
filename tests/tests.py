@@ -28,7 +28,7 @@ class GameTests(unittest.TestCase):
         print("Loading NR")
 
         driver.execute_script('localStorage.setItem("local", "true")')
-        # seems to end up running before the system initializes, so we don't need to refresh
+        driver.refresh()
 
         print("Waiting up to 30 seconds for the theme pop-up")
         try:
@@ -55,7 +55,7 @@ class GameTests(unittest.TestCase):
         # Load the 1st system.
         import_buttons = self.wait.until(lambda drv:
                                          drv.find_elements(By.XPATH,
-                                                           "//*[@id='mainContent']/div[1]/div[@class='item']"))
+                                                           "//*[@id='mainContent']//div[contains(concat(' ', normalize-space(@class), ' '), ' item ')]"))
         if len(import_buttons) > 0:
             print("Loading the first game system")
             import_buttons[0].click()

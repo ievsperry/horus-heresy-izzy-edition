@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -6613,7 +6613,7 @@
             </modifier>
             <modifier type="increment" field="f0f1-305d-0da7-f407" value="1">
               <repeats>
-                <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="009f-4007-5354-718f" repeats="1" roundUp="false" />
+                <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
               </repeats>
             </modifier>
           </modifiers>
@@ -6626,7 +6626,7 @@
               <modifiers>
                 <modifier type="increment" field="553b-7040-ebd1-b452" value="1">
                   <repeats>
-                    <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="009f-4007-5354-718f" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -6641,7 +6641,7 @@
               <modifiers>
                 <modifier type="increment" field="9243-dabd-42a6-c6c9" value="1">
                   <repeats>
-                    <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="009f-4007-5354-718f" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -6656,7 +6656,7 @@
               <modifiers>
                 <modifier type="increment" field="62dc-71d9-4d23-4e8c" value="1">
                   <repeats>
-                    <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="009f-4007-5354-718f" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -6671,7 +6671,7 @@
               <modifiers>
                 <modifier type="increment" field="e032-958b-20b9-9a77" value="1">
                   <repeats>
-                    <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="009f-4007-5354-718f" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="3fd5-f57c-9e82-be70" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -7574,11 +7574,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hand of the Archon" hidden="false" id="1e97-bc4a-1d6d-ba6e" publicationId="9356-fc9b-2fee-7d11">
-      <rules>
-        <rule name="Note" id="9c2b-71cb-1f1a-bcd9" hidden="false">
-          <description>A model equipped with a stimm-needler may not exchange its splinter rifle.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink name="Xenos" id="b7aa-9ef3-8ce8-71d3" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Aeldari (X)" id="f9a2-752a-7f96-9544" hidden="false" targetId="fbd1-9907-8259-c689" type="rule">
@@ -7666,49 +7661,99 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Dark lance" hidden="false" id="1e12-d26f-430f-e750" type="selectionEntry" targetId="f261-8aa5-240e-f868">
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Up to 1 may exchange for" hidden="false" id="8e60-76a2-896b-5a7b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="1e97-bc4a-1d6d-ba6e" shared="true" id="9902-1ceb-0011-6296" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Dark lance" hidden="false" id="a3ea-077b-9b07-05be" type="selectionEntry" targetId="f261-8aa5-240e-f868">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edc3-5f85-a3ad-7edc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c09-baff-cce9-cc63" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Splinter cannon" hidden="false" id="ce32-6af7-46ca-a97e" type="selectionEntry" targetId="4804-cfe3-384a-5d6c">
+                    <entryLink import="true" name="Splinter cannon" hidden="false" id="fe7e-a7da-29d8-08fa" type="selectionEntry" targetId="4804-cfe3-384a-5d6c">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de9b-7c15-aae9-ab0a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16d0-404a-e21b-5178" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Stinger pistol" hidden="false" id="fdc6-b209-2e64-2aed" type="selectionEntry" targetId="ebfb-05e6-f1d6-22cf">
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Up to 1 may exchange for" hidden="false" id="f209-5211-0cf3-5e1a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="1e97-bc4a-1d6d-ba6e" shared="true" id="f48b-f22e-62e5-b893" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Stinger pistol" hidden="false" id="1554-8f42-1b7e-e727" type="selectionEntry" targetId="ebfb-05e6-f1d6-22cf">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="481b-d7de-fa6a-de82" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c386-ad87-cfc1-a1c7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Shardcarbine" hidden="false" id="76b5-3f50-bef8-0065" type="selectionEntry" targetId="2687-1709-5893-7299">
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Up to 1 may exchange for" hidden="false" id="f6ad-3721-228b-b49c">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="1e97-bc4a-1d6d-ba6e" shared="true" id="237a-93e6-abfc-34a9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Shardcarbine" hidden="false" id="f324-fd44-71a0-e908" type="selectionEntry" targetId="2687-1709-5893-7299">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a4d-172f-cb1b-ed1f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e11-93d5-ed7d-32a5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Two pain sculptors" hidden="false" id="2c20-6e2e-a73f-571d" type="selectionEntry" targetId="a0af-2d3a-d50a-4b88">
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Up to 1 may exchange for" hidden="false" id="fa84-0df0-f076-1db3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="1e97-bc4a-1d6d-ba6e" shared="true" id="78b4-f45c-1bba-dfe9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Splinter rifle and stimm-needler" hidden="false" id="bfc2-5467-eb52-a5db" type="selectionEntry" targetId="ae2a-b978-5063-21a4">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3d9-f6a9-23a4-111e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="955a-6580-696f-b6e5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Splinter pistol and razorflails" hidden="false" id="c202-6526-0b0f-20f8" type="selectionEntry" targetId="9370-405f-fbdd-97b6">
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Up to 1 may exchange for" hidden="false" id="3604-c0cb-7f64-de60">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="1e97-bc4a-1d6d-ba6e" shared="true" id="8401-61b6-8cae-4d62" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Two pain sculptors" hidden="false" id="9c53-deac-9079-8a11" type="selectionEntry" targetId="a0af-2d3a-d50a-4b88">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afbd-e0cd-890f-0992" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a378-45bb-d5bb-aab5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Up to 1 may exchange for" hidden="false" id="695c-1298-c137-381c">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="1e97-bc4a-1d6d-ba6e" shared="true" id="66df-fb5c-446e-5ea3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Splinter pistol and razorflails" hidden="false" id="be6a-a2fb-5938-ba29" type="selectionEntry" targetId="9370-405f-fbdd-97b6">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baab-e176-c1b9-1b31" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
@@ -7870,18 +7915,6 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Kabalite Agent: Options" hidden="false" id="b402-f7fa-5b4f-7527">
-          <entryLinks>
-            <entryLink import="true" name="Stimm-needler" hidden="false" id="6dd8-753c-a44e-5af4" type="selectionEntry" targetId="6e40-9734-fd9f-58ed">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b858-4830-8fa2-635d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Archsybarite: Options" hidden="false" id="5204-cbbf-db49-c6ea">
           <modifiers>
             <modifier type="increment" field="ddfa-00c3-3f92-45d6" value="1">
@@ -7934,6 +7967,22 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="110" />
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Splinter rifle and stimm-needler" hidden="false" id="ae2a-b978-5063-21a4" publicationId="9356-fc9b-2fee-7d11">
+      <entryLinks>
+        <entryLink import="true" name="Splinter rifle" hidden="false" id="66dc-27dd-c9c9-ad54" type="selectionEntry" targetId="eebb-37fe-4e0a-f8e4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6143-9205-9762-2fcb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90e7-30b1-1283-1e35" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Stimm-needler" hidden="false" id="36ba-71b8-04f3-a000" type="selectionEntry" targetId="6e40-9734-fd9f-58ed">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab8d-617b-2dd4-0fad" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9d0-ae3a-baaa-3ec3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two pain sculptors" hidden="false" id="a0af-2d3a-d50a-4b88" publicationId="9356-fc9b-2fee-7d11">
       <entryLinks>
@@ -8018,7 +8067,7 @@
                   <modifiers>
                     <modifier type="increment" field="406c-d190-65a6-2459" value="1">
                       <repeats>
-                        <repeat field="selections" scope="9cc5-d445-c486-d7be" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e89b-f3f1-22e2-3eec" repeats="1" roundUp="false" />
+                        <repeat field="selections" scope="9cc5-d445-c486-d7be" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -8468,7 +8517,7 @@
             </modifier>
             <modifier type="increment" field="dbcb-6a31-df0c-1875" value="1">
               <repeats>
-                <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2717-a86d-f20d-ee38" repeats="1" roundUp="false" />
+                <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
               </repeats>
             </modifier>
           </modifiers>
@@ -8481,7 +8530,7 @@
               <modifiers>
                 <modifier type="increment" field="434e-6364-809d-ba06" value="1">
                   <repeats>
-                    <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2717-a86d-f20d-ee38" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -8496,7 +8545,7 @@
               <modifiers>
                 <modifier type="increment" field="9273-d78e-367f-f11e" value="1">
                   <repeats>
-                    <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2717-a86d-f20d-ee38" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -8511,7 +8560,7 @@
               <modifiers>
                 <modifier type="increment" field="b147-8fa6-d103-9c05" value="1">
                   <repeats>
-                    <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2717-a86d-f20d-ee38" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -8526,7 +8575,7 @@
               <modifiers>
                 <modifier type="increment" field="c6c4-8244-2b9f-85e0" value="1">
                   <repeats>
-                    <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2717-a86d-f20d-ee38" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="3576-3678-7a9e-2c63" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
@@ -8659,7 +8708,7 @@
                   <modifiers>
                     <modifier type="increment" field="57cc-cce3-765f-411f" value="1">
                       <repeats>
-                        <repeat field="selections" scope="2c97-b7fb-774d-14e0" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3f14-9675-c6dc-df2b" repeats="1" roundUp="false" />
+                        <repeat field="selections" scope="2c97-b7fb-774d-14e0" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -9566,7 +9615,7 @@
                   <modifiers>
                     <modifier type="increment" field="4011-412f-4f3f-814e" value="1">
                       <repeats>
-                        <repeat field="selections" scope="1521-01b7-c395-59eb" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d1e-ff02-b5af-8f2d" repeats="1" roundUp="false" />
+                        <repeat field="selections" scope="1521-01b7-c395-59eb" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -9619,7 +9668,7 @@
                   <modifiers>
                     <modifier type="increment" field="2700-fda9-03f4-815b" value="1">
                       <repeats>
-                        <repeat field="selections" scope="1521-01b7-c395-59eb" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d1e-ff02-b5af-8f2d" repeats="1" roundUp="false" />
+                        <repeat field="selections" scope="1521-01b7-c395-59eb" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -10357,18 +10406,18 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange two dark lances" hidden="false" id="e2e3-0383-84dc-3831" defaultSelectionEntryId="4504-ab7b-9557-c50c">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="27d1-9ea5-0f02-892b" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6b70-7fd0-2335-e801" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27d1-9ea5-0f02-892b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b70-7fd0-2335-e801" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Dark lance" hidden="false" id="4504-ab7b-9557-c50c" type="selectionEntry" targetId="f261-8aa5-240e-f868">
+                <entryLink import="true" name="Two dark lances" hidden="false" id="4504-ab7b-9557-c50c" type="selectionEntry" targetId="9cc6-4c25-959d-6999">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e3b1-5f46-215f-67e8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6049-1f6e-0904-d424" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Two disintegrator cannons" hidden="false" id="0561-88a1-a075-0b20" type="selectionEntry" targetId="cdb0-1c5c-11d7-fed7">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="673a-f0f6-bee4-4cff" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="673a-f0f6-bee4-4cff" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -10434,6 +10483,16 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="130" />
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two dark lances" hidden="false" id="9cc6-4c25-959d-6999" publicationId="9356-fc9b-2fee-7d11">
+      <entryLinks>
+        <entryLink import="true" name="Dark lance" hidden="false" id="6551-9626-93e1-f069" type="selectionEntry" targetId="f261-8aa5-240e-f868">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8520-310a-c2ac-4fa1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a31f-0660-1c29-7737" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two disintegrator cannons" hidden="false" id="cdb0-1c5c-11d7-fed7" publicationId="9356-fc9b-2fee-7d11">
       <entryLinks>
@@ -11390,18 +11449,18 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange two void lances" hidden="false" id="b77a-f3a3-e3ce-2f95" defaultSelectionEntryId="b86f-f176-5491-7766">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="bd16-683c-a672-c6eb" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d524-0459-930d-151d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd16-683c-a672-c6eb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d524-0459-930d-151d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Void lance" hidden="false" id="b86f-f176-5491-7766" type="selectionEntry" targetId="94ae-a615-ba58-9159">
+                <entryLink import="true" name="Two void lances" hidden="false" id="b86f-f176-5491-7766" type="selectionEntry" targetId="1994-e61d-d041-a494">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a505-e897-a853-9370" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e44a-a326-a4c2-1d31" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Two dark scythes" hidden="false" id="caad-21a3-6e67-d2b9" type="selectionEntry" targetId="0a65-adb7-3581-4f9b">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1b17-d268-6ced-8dd7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b17-d268-6ced-8dd7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -11454,6 +11513,16 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="145" />
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two void lances" hidden="false" id="1994-e61d-d041-a494" publicationId="9356-fc9b-2fee-7d11">
+      <entryLinks>
+        <entryLink import="true" name="Void lance" hidden="false" id="0ecc-0cfa-a122-9c77" type="selectionEntry" targetId="94ae-a615-ba58-9159">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1faa-c8b7-8c71-c280" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7ec7-042a-2c1a-f40f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two dark scythes" hidden="false" id="0a65-adb7-3581-4f9b" publicationId="9356-fc9b-2fee-7d11">
       <entryLinks>
