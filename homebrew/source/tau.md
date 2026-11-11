@@ -2251,6 +2251,7 @@ Uses the Gun Drone profile and Drone Docking rule for its drones.
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
 |---|---|---|---|---|---|---|---|---|
 | Hammerhead | 14 | 3 | 13 | 12 | 10 | 3 | – | Flying base |
+| Longstrike | 14 | 5 | 13 | 12 | 10 | 3 | – | Flying base |
 
 **Unit Composition**
 

@@ -201,6 +201,9 @@ loading. The script prints anything in the doc it could not place.
   pick of the autogun swap, two in the unit.
 - "A model equipped with Mega Armour may instead exchange its Big Choppa for" (Ork Boss, Warboss): those picks
   have a limit of 0 until that model takes Mega Armour.
+- "One Hammerhead in the army may be upgraded to Longstrike", or an upgrade noted "(one per army; ...)" (the
+  Sororitas Anchorite), is one per roster, not one per unit. Give the upgraded model its own stat line in the
+  datasheet's table (Longstrike, BS 5) or it uses the base model's.
 - "Up to two Insidiant Warriors may be upgraded to Insidiant Cremators" works like "One ... may be upgraded to
   a ...": up to two of the model become the other kind, each in place of a Warrior.
 - A swap of a pair for a pair ("its two heavy bolters for two Ministorum heavy flamers", "its two dark lances
