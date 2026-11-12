@@ -364,11 +364,27 @@ A Grey Knights army may take one Rite of War:
 - The Aegis
 - Brotherhood (3rd, the Wardmakers)
 - Brotherhood of Psykers
+- Brotherhood Psyker
+- Minor Psychic Powers
+- Psychic Discipline (Dominus or Sanctic)
 - Legiones Astartes (Grey Knights)
 - Invulnerable save (4+)
 - Strands of Fate: once per turn, re-roll any one dice roll for Stern or his unit
 - Teleport Strike
 - Zone of Banishment: enemy Daemons within 6" reduce their Invulnerable Saves by 1
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **Brother-Captain Stern must select one of the following Minor Psychic Powers:** |  |
+| – Astral Aim | Free |
+| – Cleansing Flame | Free |
+| – Gates of Infinity | Free |
+| – Hammerhand | Free |
+| – Holocaust | Free |
+| – Warp Quake | Free |
+| – Warp Shroud | Free |
 
 ### Brotherhood Chaplain — 110 pts
 
@@ -408,6 +424,8 @@ A Grey Knights army may take one Rite of War:
 | – Incinerator | +5 points |
 | – Psilencer | +5 points |
 | – Psycannon | +10 points |
+| **The Chaplain may take:** |  |
+| – Brotherhood Psyker | +15 points |
 
 ### Brotherhood Librarian — 140 pts
 
@@ -516,6 +534,8 @@ A Grey Knights army may take one Rite of War:
 | – Nemesis force halberd or nemesis force warding staff | +0 points |
 | – Two nemesis force falchions | +5 points |
 | – Nemesis daemon hammer | +5 points |
+| **Any Brotherhood Techmarine may take:** |  |
+| – Brotherhood Psyker | +15 points each |
 
 ### Castellan Crowe — 130 pts
 
@@ -541,11 +561,26 @@ A Grey Knights army may take one Rite of War:
 - The Aegis
 - Brotherhood (8th, the Purifiers)
 - Brotherhood of Psykers
+- Brotherhood Psyker
+- Minor Psychic Powers
 - Psychic Discipline (Sanctic)
 - Champion of the Purifiers: the unit he joins has Hatred (Everything) and Feel No Pain (6+)
 - Legiones Astartes (Grey Knights)
 - Invulnerable save (4+)
 - Taint of Antwyr: if Crowe fails a Psychic check, he suffers 1 Wound instead of Perils of the Warp
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **Castellan Crowe must select one of the following Minor Psychic Powers:** |  |
+| – Astral Aim | Free |
+| – Cleansing Flame | Free |
+| – Gates of Infinity | Free |
+| – Hammerhand | Free |
+| – Holocaust | Free |
+| – Warp Quake | Free |
+| – Warp Shroud | Free |
 
 ### Grand Master — 185 pts
 
@@ -920,6 +955,8 @@ _To join a Brotherhood Terminator Squad or a Paladin Squad, a Brother Apothecary
 | – Nemesis force halberd or nemesis force warding staff | +0 points |
 | – Two nemesis force falchions | +5 points |
 | – Nemesis daemon hammer | +5 points |
+| **The Paladin Ancient may take:** |  |
+| – Brotherhood Psyker | +15 points |
 
 ### Paladin Squad — 200 pts
 
@@ -981,6 +1018,8 @@ _To join a Brotherhood Terminator Squad or a Paladin Squad, a Brother Apothecary
 | **The entire unit may take:** |  |
 | – Psybolts | +5 points per model |
 | – Purity Seals | +2 points per model |
+| **The Paragon may take:** |  |
+| – Brotherhood Psyker | +15 points |
 
 ### Purifier Squad — 125 pts
 
@@ -1033,6 +1072,8 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Nemesis force halberd or nemesis force warding staff | +0 points |
 | – Two nemesis force falchions | +5 points |
 | – Nemesis daemon hammer | +10 points |
+| **The Knight of the Flame may take:** |  |
+| – Brotherhood Psyker | +15 points |
 
 ### Servitors — 40 pts
 
@@ -1180,6 +1221,8 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Nemesis force halberd or nemesis force warding staff | +0 points |
 | – Two nemesis force falchions | +5 points |
 | – Nemesis daemon hammer | +10 points |
+| **The Justicar may take:** |  |
+| – Brotherhood Psyker | +15 points |
 
 ## Fast Attack
 
@@ -1231,6 +1274,8 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Nemesis force halberd or nemesis force warding staff | +0 points |
 | – Two nemesis force falchions | +5 points |
 | – Nemesis daemon hammer | +10 points |
+| **The Interceptor Justicar may take:** |  |
+| – Brotherhood Psyker | +15 points |
 
 ### Interceptor Terminator Squad — 275 pts
 
@@ -1559,6 +1604,8 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Incinerator | +5 points each |
 | – Psilencer | +5 points each |
 | – Psycannon | +15 points each |
+| **The Purgator Justicar may take:** |  |
+| – Brotherhood Psyker | +15 points |
 
 ## Wargear
 

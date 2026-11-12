@@ -210,7 +210,8 @@ loading. The script prints anything in the doc it could not place.
   Interceptor Squad. A Brotherhood Psyker taken as an option (+15) holds its own picks, made once it is taken: one
   Minor Psychic Power and one Psychic Discipline (the builder adds them to any option that is a rule saying "must
   select one X and one Psychic Discipline"). A Justicar or Dreadlancer that carries a minor power
-  (Hammerhand, Gates of Infinity) keeps it and picks a second: an exception the rule states. Dreadfists, nemesis daemon hammers and nemesis greatswords are
+  (Hammerhand, Gates of Infinity) keeps it and picks a second: an exception the rule states. Every Character has Brotherhood Psyker by default or as
+  this option (Stern and Crowe by default; Crowe keeps Sanctic as his discipline). Dreadfists, nemesis daemon hammers and nemesis greatswords are
   Unwieldy (3).
 - Adepta Sororitas, like the Grey Knights, may be Loyalist or Traitor. Each detachment picks one Order Militant,
   which gives its units Order (X) with that Order's rules, Advanced Reaction and Warlord Trait. The army's Faith
