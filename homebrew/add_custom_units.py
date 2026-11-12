@@ -172,12 +172,15 @@ def red_fangs_changes():
         costs = re.sub(r'(<cost name="Pts"[^>]*value=")[^"]*', lambda m: m.group(1) + str(value), block[cs[0]:cs[1]])
         return block[:cs[0]] + costs + block[cs[1]:]
 
+    def named(name):  # before or after red_fangs_models renames the models
+        return name if f'name="{name}"' in unit else RED_FANGS_NAMES[name]
+
     for name in ("Legionaries (collective)", "Legionary w/ Options"):
-        j = unit.index(f'name="{name}"')
+        j = unit.index(f'name="{named(name)}"')
         ea, eb = element_span(unit, unit.rfind("<selectionEntry", 0, j), "selectionEntry")
         unit = unit[:ea] + set_cost(unit[ea:eb], 0) + unit[eb:]
     unit = set_cost(unit, RED_FANGS_COST)
-    j = unit.index('name="0) Legionaries"')
+    j = unit.index(f'name="{named("0) Legionaries")}"')
     ga, gb = element_span(unit, unit.rfind("<selectionEntryGroup", 0, j), "selectionEntryGroup")
     group = re.sub(r'(<constraint [^>]*value=")\d+("[^>]*type="max")', r"\g<1>4\2", unit[ga:gb], count=1)
     unit = unit[:ga] + group + unit[gb:]
@@ -209,7 +212,65 @@ def red_fangs_sync():
     return "The Red Fangs: rules and weapon names up to date"
 
 
+RED_FANGS_NAMES = {"Legion Support Sergeant": "Alpha Fang", "Legionary": "Fang Legionary",
+                   "Legionaries (collective)": "Fang Legionaries", "Legionary w/ Options": "Fang Legionary w/ Options",
+                   "0) Legionaries": "0) Fang Legionaries"}
+
+
+def red_fangs_models():
+    """The Alpha Fang and Fang Legionaries: the models and profiles renamed, Initiative 3, and a combat blade with the
+    bolt pistol every model already has."""
+    we = open(WORLD_EATERS, encoding="utf-8").read()
+    if 'name="Alpha Fang"' in we:
+        return "The Red Fangs: models already the Alpha Fang and Fang Legionaries"
+    nl = nl_of(we)
+    blade = (f'<selectionEntry id="{mk("combat blade")}" name="Combat Blade" hidden="false" collective="false" '
+             f'import="true" type="upgrade"><profiles><profile id="{mk("combat blade", "profile")}" name="Combat Blade" '
+             f'hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon"><characteristics>'
+             f'<characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>'
+             f'<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>'
+             f'<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>'
+             f'<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>'
+             f'</characteristics></profile></profiles><costs><cost {PTS} value="0"/></costs></selectionEntry>')
+    a = re.search(r'<selectionEntry [^>]*name="The Red Fangs"', we).start()
+    a, b = element_span(we, a, "selectionEntry")
+    unit = we[a:b]
+    # Initiative 3 on both profiles
+    unit = re.sub(r'(<characteristic name="I" typeId="62d3-22d7-2d49-52dc">)[^<]*', r"\g<1>3", unit)
+    # the combat blade on every model, beside its bolt pistol
+    for name in ("Legion Support Sergeant", "Legionaries (collective)", "Legionary w/ Options"):
+        j = re.search(r'<selectionEntry [^>]*name="%s"[^>]*type="model"' % re.escape(name), unit).start()
+        ma, mb = element_span(unit, j, "selectionEntry")
+        model = unit[ma:mb]
+        link = (f'<entryLink id="{mk("combat blade link", name)}" name="Combat Blade" hidden="false" collective="false" '
+                f'import="true" targetId="{mk("combat blade")}" type="selectionEntry"><constraints>'
+                f'<constraint type="min" value="1" field="selections" scope="parent" shared="true" '
+                f'id="{mk("combat blade link", name, "min")}" percentValue="false" includeChildSelections="false" '
+                f'includeChildForces="false"/><constraint type="max" value="1" field="selections" scope="parent" '
+                f'shared="true" id="{mk("combat blade link", name, "max")}" percentValue="false" '
+                f'includeChildSelections="false" includeChildForces="false"/></constraints></entryLink>')
+        links = child_span(model, "entryLinks")
+        if links:
+            end = links[1] - len("</entryLinks>")
+            model = model[:end] + link + model[end:]
+        else:
+            after = child_span(model, "selectionEntryGroups") or child_span(model, "categoryLinks") \
+                or child_span(model, "profiles")
+            model = model[:after[1]] + f"<entryLinks>{link}</entryLinks>" + model[after[1]:]
+        unit = unit[:ma] + model + unit[mb:]
+    # the names
+    for old, new in RED_FANGS_NAMES.items():
+        unit = re.sub(r'(<(?:selectionEntry|selectionEntryGroup|profile|infoLink) [^>]*name=")%s"' % re.escape(old),
+                      lambda m: m.group(1) + new + '"', unit)
+    we = we[:a] + unit + we[b:]
+    i = we.index("  </sharedSelectionEntries>")
+    we = we[:i] + "    " + blade + nl + we[i:]
+    open(WORLD_EATERS, "w", encoding="utf-8", newline="").write(we)
+    return "The Red Fangs: the Alpha Fang and Fang Legionaries, I3, combat blades"
+
+
 if __name__ == "__main__":
     print(red_fangs())
     print(red_fangs_changes())
     print(red_fangs_sync())
+    print(red_fangs_models())

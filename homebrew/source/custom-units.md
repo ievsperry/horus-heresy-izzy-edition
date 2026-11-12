@@ -14,24 +14,26 @@ Liber Izonian collects the custom units made for this project. Each unit is writ
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Legion Support Sergeant | 7 | 4 | 4 | 4 | 4 | 2 | 4 | 2 | 8 | 3+ |
-| Legionary | 7 | 4 | 4 | 4 | 4 | 2 | 4 | 1 | 7 | 3+ |
+| Alpha Fang | 7 | 4 | 4 | 4 | 4 | 2 | 3 | 2 | 8 | 3+ |
+| Fang Legionary | 7 | 4 | 4 | 4 | 4 | 2 | 3 | 1 | 7 | 3+ |
 
 **Unit Composition**
 
-- 1 Legion Support Sergeant
-- 4 Legionaries
+- 1 Alpha Fang
+- 4 Fang Legionaries
 
-The unit is always five models; it may not include additional Legionaries.
+The unit is always five models; it may not include additional Fang Legionaries.
 
 **Wargear**
 
-- Heavy bolter (Wrathful Souls), on every Legionary
+- Bolt pistol
+- Combat blade
+- Heavy bolter (Wrathful Souls), on every Fang Legionary
 
 **Unit Type**
 
-- Legion Support Sergeant: Infantry (Heavy, Character)
-- Legionary: Infantry (Heavy)
+- Alpha Fang: Infantry (Heavy, Character)
+- Fang Legionary: Infantry (Heavy)
 
 **Special Rules**
 
@@ -58,3 +60,4 @@ The Heavy Support Squad's other heavy weapons are not available.
 | --- | --- | :-: | :-: | --- |
 | Heavy bolter (Wrathful Souls) | 36" | 5 | 4 | Heavy 4, Rupture (6+) |
 | Autocannon (Wrathful Souls) | 48" | 7 | 4 | Heavy 3, Rending (6+) |
+| Combat blade | – | User | – | Melee |
