@@ -1,14 +1,16 @@
-# Custom Units for The Horus Heresy 2.0
+# Liber Izonian for The Horus Heresy 2.0 — Custom Units
 
-Units made for this project, written into the official catalogues by `homebrew/add_custom_units.py`. Each unit uses
-the official datasheet it is based on unless its entry says otherwise.
+Nov 12, 2026 · @Isaac
+
+## Introduction
+
+Liber Izonian collects the custom units made for this project. Each unit is written into the official catalogues by `homebrew/add_custom_units.py`, with its source kept as `homebrew/source/custom-units.md`. A unit uses the official datasheet it is based on — the same models, characteristics, wargear, options and Dedicated Transports — unless its entry says otherwise.
 
 ## World Eaters
 
 ### The Red Fangs (Heavy Support) — 100 pts
 
-*Based on the Legion Heavy Support Squad: the same models, characteristics, wargear, options and Dedicated Transports
-unless noted below.*
+*Based on the Legion Heavy Support Squad: the same models, characteristics, wargear, options and Dedicated Transports unless noted below.*
 
 **Unit Composition**
 
