@@ -1658,14 +1658,14 @@ All weapons listed here have the Nemesis Force special rule (see Nemesis Force).
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Dreadfist | – | x2 | 2 | Melee, Brutal (2), Unwieldy, Nemesis Force |
+| Dreadfist | – | x2 | 2 | Melee, Brutal (2), Unwieldy (3), Nemesis Force |
 | Nemesis daemon greathammer | – | x2 | 1 | Melee, Nemesis Force, Unwieldy (3), Brutal (3), Rending (6+) |
-| Nemesis daemon hammer | – | x2 | 2 | Melee, Unwieldy, Brutal (2), Nemesis Force |
+| Nemesis daemon hammer | – | x2 | 2 | Melee, Unwieldy (3), Brutal (2), Nemesis Force |
 | Nemesis force falchion | – | User | 3 | Melee, Shred, Nemesis Force |
 | Nemesis force halberd | – | +1 | 3 | Melee, Reach (1), Nemesis Force |
 | Nemesis force sword | – | User | 3 | Melee, Rending (6+), Nemesis Force |
 | Nemesis force warding staff | – | +2 | 3 | Melee, Nemesis Force |
-| Nemesis greatsword | – | +2 | 2 | Melee, Rending (6+), Murderous Strike (6+), Specialist Weapon, Unwieldy, Nemesis Force |
+| Nemesis greatsword | – | +2 | 2 | Melee, Rending (6+), Murderous Strike (6+), Specialist Weapon, Unwieldy (3), Nemesis Force |
 
 #### Unique and Other Weapons
 

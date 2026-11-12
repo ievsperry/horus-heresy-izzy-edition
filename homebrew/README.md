@@ -207,8 +207,10 @@ loading. The script prints anything in the doc it could not place.
   weapon profiles and the datasheets it covers; where it and the earlier conversion disagree it is used, and every
   unit keeps Brotherhood of Psykers (the Psyker sub-type, no powers of its own). Its Dreadknight Talon replaces the
   Nemesis Dreadknight; the Interceptor Terminator Squad and Grey Knight Dreadlancer Talon are new units beside the
-  Interceptor Squad. A Brotherhood Psyker taken as an option (+15) is rule text: its minor power and discipline are
-  not picks.
+  Interceptor Squad. A Brotherhood Psyker taken as an option (+15) holds its own picks, made once it is taken: one
+  Minor Psychic Power and one Psychic Discipline (the builder adds them to any option that is a rule saying "must
+  select one X and one Psychic Discipline"). Dreadfists, nemesis daemon hammers and nemesis greatswords are
+  Unwieldy (3).
 - Adepta Sororitas, like the Grey Knights, may be Loyalist or Traitor. Each detachment picks one Order Militant,
   which gives its units Order (X) with that Order's rules, Advanced Reaction and Warlord Trait. The army's Faith
   system (Acts of Faith, Gaining Faith, Miracles, and the table of Acts) and the Unit Types notes are on the army

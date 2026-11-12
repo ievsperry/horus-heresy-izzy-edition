@@ -3138,8 +3138,34 @@ class Builder:
             for pname, pid in self.powers:
                 if re.search(r"knows " + re.escape(pname), name, re.I):
                     self.link(child(e, "entryLinks"), pid, pname, eid, count=1)
+            self.rule_option_picks(e, name, eid)
             self.upgrades[k] = eid
         return self.upgrades[k]
+
+    def rule_option_picks(self, e, name, eid):
+        """An option that is a rule saying "This model must select one Minor Psychic Power and one Psychic
+        Discipline" (Grey Knights' Brotherhood Psyker, +15) holds those picks, made once it is taken."""
+        text = next((l for s in self.sections for l in s["lines"]
+                     if l.startswith(f"**{name}.**")), "")
+        m = re.search(r"must select one (.+?) and one Psychic Discipline", text)
+        if not m:
+            return
+        groups = child(e, "selectionEntryGroups")
+        sec = next((s for s in self.sections if norm(s["title"]) == norm(m.group(1) + "s")), None)
+        picks = [(sub["title"], self.upgrades.get(norm(sub["title"]))) for sub in (sec["subs"] if sec else [])]
+        lists = [(m.group(1) + "s", [p for p in picks if p[1]])]
+        if self.disciplines:
+            lists.append(("Psychic Disciplines", list(self.disciplines.items())))
+        for label, items in lists:
+            if not items:
+                continue
+            gkey = make_id(eid, label)
+            g = el(groups, "selectionEntryGroup", name=label, hidden=False, id=gkey)
+            add_constraint(g, "min", 1, gkey + "min")
+            add_constraint(g, "max", 1, gkey + "max")
+            gl = el(g, "entryLinks")
+            for n, tid in items:
+                self.link(gl, tid, n, gkey, maximum=1)
 
     def option_target(self, name, key):
         built = re.match(r"(.+?) with (?:an? )?in-built (.+)$", name)
