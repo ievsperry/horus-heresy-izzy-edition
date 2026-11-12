@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="229" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="230" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -91495,18 +91495,12 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
           <entryLinks>
             <entryLink import="true" name="Legion Veteran Sergeant" hidden="false" id="3a56-8aca-b39d-b0c2" type="selectionEntry" targetId="1575-ef15-aa1c-a3c5">
               <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20">
-                  <repeats>
-                    <repeat field="selections" scope="a7de-75a0-4186-5593" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d89-091c-90d9-0326" repeats="1" roundUp="false"/>
-                    <repeat field="selections" scope="a7de-75a0-4186-5593" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db8e-7ef6-0f13-c7c2" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8ab-5471-d6e6-f9f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
+<modifier type="increment" field="d398-a375-170c-ff55" value="1"><repeats><repeat field="selections" scope="a7de-75a0-4186-5593" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/></repeats></modifier>
+<modifier type="decrement" field="d398-a375-170c-ff55" value="1"/>
+</modifiers>
+<constraints><constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d398-a375-170c-ff55" percentValue="false" includeChildSelections="false" includeChildForces="false"/></constraints>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Krak Grenades" hidden="false" id="8921-7896-6e8d-85da" type="selectionEntry" targetId="99df-2421-acf7-a5ad">
@@ -94281,10 +94275,10 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
                   <repeats>
-                    <repeat field="selections" scope="1643-ebdb-7744-de48" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f4f-743d-9b53-e57f" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="1643-ebdb-7744-de48" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cde7-86c1-e200-731b" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
-              </modifiers>
+              <modifier type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="1643-ebdb-7744-de48" childId="cde7-86c1-e200-731b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/></conditions></modifier></modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8621-c4cd-bde8-a2fe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -94296,10 +94290,10 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
                   <repeats>
-                    <repeat field="selections" scope="1643-ebdb-7744-de48" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f4f-743d-9b53-e57f" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="1643-ebdb-7744-de48" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cde7-86c1-e200-731b" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
-              </modifiers>
+              <modifier type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="1643-ebdb-7744-de48" childId="cde7-86c1-e200-731b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/></conditions></modifier></modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab58-f94f-81e9-7915" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -94311,10 +94305,10 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
                   <repeats>
-                    <repeat field="selections" scope="1643-ebdb-7744-de48" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f4f-743d-9b53-e57f" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="1643-ebdb-7744-de48" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cde7-86c1-e200-731b" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
-              </modifiers>
+              <modifier type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="1643-ebdb-7744-de48" childId="cde7-86c1-e200-731b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/></conditions></modifier></modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dcb-6768-e8ae-2f90" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -94326,10 +94320,10 @@ Blood Frenzy – (Assault phase, once per battle). Trigger: an enemy unit declar
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
                   <repeats>
-                    <repeat field="selections" scope="1643-ebdb-7744-de48" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f4f-743d-9b53-e57f" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="1643-ebdb-7744-de48" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cde7-86c1-e200-731b" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
-              </modifiers>
+              <modifier type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" field="selections" scope="1643-ebdb-7744-de48" childId="cde7-86c1-e200-731b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/></conditions></modifier></modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a89-f22e-59c9-8820" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>

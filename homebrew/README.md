@@ -737,6 +737,10 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     Plasma Cannons, Medusan Immortal Power Weapons), two Hunter-Killer Missiles, the Primaris-Lightning's "up to
     three", and the Saturnine Centurion's Consularis choice as copies of the official Forge Lord, Mortificator and
     Siege Breaker at the datasheet's costs;
+  - two options the Builder priced "per model" across the whole unit: the Novicii Squad's extra Veteran Sergeants
+    are +20 points each, one for every ten models beyond the first ten, and the Vindicator Thunderers' extra shells
+    cost per Quad Launcher and are hidden until the squadron has one (`python3 homebrew/add_centura.py
+    --per-model-fixes` applies just this step to the library);
   - each Legion's own upgrades (as above, and the Ghola Sub-type, The Keys of Hel and the Thousand Sons
     disciplines) as rules on the Legion's entry in its catalogue.
   Rule text only: the Rites' other effects and their limitations, the Line Sub-type a Rite grants, the Ghola
