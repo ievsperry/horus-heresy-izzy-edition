@@ -12,7 +12,10 @@ Liber Izonian collects the custom units made for this project. Each unit is writ
 
 *Based on the Legion Heavy Support Squad: the same models, characteristics, wargear, options and Dedicated Transports unless noted below.*
 
-Every model has a Wounds Characteristic of 2.
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Legion Support Sergeant | 7 | 4 | 4 | 4 | 4 | 2 | 4 | 2 | 8 | 3+ |
+| Legionary | 7 | 4 | 4 | 4 | 4 | 2 | 4 | 1 | 7 | 3+ |
 
 **Unit Composition**
 
@@ -24,6 +27,11 @@ The unit is always five models; it may not include additional Legionaries.
 **Wargear**
 
 - Heavy bolter (Wrathful Souls), on every Legionary
+
+**Unit Type**
+
+- Legion Support Sergeant: Infantry (Heavy, Character)
+- Legionary: Infantry (Heavy)
 
 **Special Rules**
 

@@ -160,7 +160,8 @@ RED_FANGS_COST, RED_FANGS_WOUNDS = 130, 2  # always the sergeant and four Legion
 
 
 def red_fangs_changes():
-    """Always five models (the sergeant and four Legionaries, no more), 130 points, and 2 Wounds on both profiles."""
+    """Always five models (the sergeant and four Legionaries, no more), 130 points, 2 Wounds on both profiles and the
+    Legionary's Toughness filled in."""
     we = open(WORLD_EATERS, encoding="utf-8").read()
     a = re.search(r'<selectionEntry [^>]*name="The Red Fangs"', we).start()
     a, b = element_span(we, a, "selectionEntry")
@@ -181,6 +182,9 @@ def red_fangs_changes():
     group = re.sub(r'(<constraint [^>]*value=")\d+("[^>]*type="max")', r"\g<1>4\2", unit[ga:gb], count=1)
     unit = unit[:ga] + group + unit[gb:]
     unit = re.sub(r'(<characteristic name="W" typeId="57ee-1126-32a9-5672">)[^<]*', rf"\g<1>{RED_FANGS_WOUNDS}", unit)
+    # the official Legionary profile leaves Toughness blank: the Legionary is T4, as the sergeant
+    unit = unit.replace('<characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f"/>',
+                        '<characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>')
     if unit != we[a:b]:
         open(WORLD_EATERS, "w", encoding="utf-8", newline="").write(we[:a] + unit + we[b:])
         return "The Red Fangs: five models, 130 points, W2"
