@@ -151,6 +151,13 @@ def load_gst_weapons(path=GST_FILE):
     return weapons
 
 
+def load_gst_profile(name, path=GST_FILE):
+    """A profile the game system shares by name (the Aetheric Lightning Psychic Weapon)."""
+    ns = "{http://www.battlescribe.net/schema/gameSystemSchema}"
+    sp = ET.parse(path).getroot().find(ns + "sharedProfiles")
+    return next((p.get("id") for p in sp if p.get("name") == name), None) if sp is not None else None
+
+
 def load_gst_choices(path=GST_FILE):
     """Game system entries that are a choice of weapons ("Power Weapon": axe, lance, maul or sword), by name."""
     ns = "{http://www.battlescribe.net/schema/gameSystemSchema}"
@@ -1216,6 +1223,9 @@ class Builder:
         lines = (norm(l[2:]) for s in self.sections for sub in [s] + s["subs"] for l in sub["lines"] if l.startswith("- "))
         if len(self.psy_sections) < 2 and not any(l in named for l in lines):
             return  # one discipline that every psyker has (unless a datasheet names it: Phantasmancy)
+        core = any(re.search(r"Any Psyker that selects a Psychic Discipline also gains the Aetheric Lightning", l)
+                   for s in self.sections for l in s["lines"])
+        core_lightning = load_gst_profile("Aetheric Lightning") if core else None
         for psy in self.psy_sections:
             name = psy["disc"]
             did = make_id("discipline", self.faction, name)
@@ -1239,6 +1249,12 @@ class Builder:
                 for n, i in items:
                     if norm(n) in pick:
                         self.link(gl, i, n, gid, maximum=1)
+            if core_lightning:
+                # "Any Psyker that selects a Psychic Discipline also gains the Aetheric Lightning Psychic Weapon":
+                # the game system's profile, as its own disciplines give it
+                el(child(e, "infoLinks"), "infoLink", name="Aetheric Lightning", id=make_id(did, "aetheric lightning"),
+                   hidden=False, targetId=core_lightning, type="profile")
+                self.link_rule(e, "Force", did)
             add_cost(e, 0)
             self.disciplines[name] = did
 

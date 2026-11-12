@@ -36,9 +36,19 @@ Every Grey Knights unit in this document has **Brotherhood (X)**, **The Aegis**,
 
 **Brotherhood of Psykers.** Every Grey Knight is a psyker: a model with this special rule has the Psyker Unit Sub-type. Its psychic powers come only from its datasheet: the Brotherhood Psyker and Brotherhood Librarian special rules, a Psychic Discipline it names, and any Minor Psychic Power it selects or carries. Psychic checks are made against the unit's Leadership; a failed check causes Perils of the Warp as in the 2.0 rulebook†.
 
-**Brotherhood Psyker.** This model must select one Minor Psychic Power and one Psychic Discipline. A model that already carries a Minor Psychic Power from its datasheet's Wargear keeps it and selects a second, so it has two; this is an exception to the Minor Psychic Powers rule.
+**Brotherhood Psyker.** This model must select one Minor Psychic Power and one Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy). A model that already carries a Minor Psychic Power from its datasheet's Wargear keeps it and selects a second, so it has two; this is an exception to the Minor Psychic Powers rule.
 
 **Brotherhood Librarian.** This model must select one Minor Psychic Power and two Psychic Disciplines. Only one Psychic Discipline may be used per Combat Turn.
+
+**Core Psychic Discipline List.** Any Psyker that selects a Psychic Discipline also gains the Aetheric Lightning Psychic Weapon. This includes the Dominus, Sanctic, Anathemata, Divination and Telepathy Disciplines.
+
+*Aetheric lightning is the fury of the Warp itself, coalesced and given form by the will of the psyker and directed at their foes like a storm of eldritch power.*
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Aetheric Lightning | 18" | 3 | 4 | Assault 4, Force |
+
+Force: Any Psyker with a weapon or ability with this special rule may choose to make a Psychic check before making any attacks with that weapon or resolving the ability. If the test is successful then the Strength value of any attacks made is doubled. If the test is failed then a Perils of the Warp attack is resolved targeting the unit containing the model that failed its test. If the Psyker survives Perils of the Warp then it may attack as normal.
 
 **Dreadknight Talon.** When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves), all models with this special rule in a unit must be placed within unit coherency but afterwards operate independently and are not treated as a unit.
 
@@ -95,6 +105,80 @@ Instead of making a Shooting Attack, a Psyker with this Psychic Power may select
 | Purifying Flame | Template | 5 | 4 | Assault 1, Deflagrate, Torrent (6"), Psychic Focus, Nemesis Force |
 
 Attacks made with this weapon gain Rending (3+) against units containing one or more models with the Daemon or Corrupted Sub-types.
+
+## Psychic Discipline: Anathemata
+
+A Psyker with this Discipline and the Traitor Allegiance gains the Breach the Veil Psychic Power and the Void Darts and Aetheric Lightning Psychic Weapons. A Psyker with this Discipline and the Loyalist Allegiance gains the Seal the Veil Psychic Power and the Void Darts and Aetheric Lightning Psychic Weapons.
+
+### Breach the Veil (Psychic Power)
+
+*Esoterists are dedicated to the study of the Warp and its denizens, seeing them as tools for the prosecution of war, unburdened by loyalty or purpose. If they can chain them to the cause of their master, then they will gladly sacrifice their sanity in the pursuit of victory.*
+
+Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a point within 12" and at least 3" away from any enemy model or Impassable Terrain – place a Blast (3") Marker to represent the Warp Rift until this power is resolved.
+
+The controlling player may then choose to make a Psychic check for the Esoterist. If the Check is failed or not taken then the chosen point is scattered as per the normal rules for Scatter. If it scatters onto Impassable Terrain, within 3" of an enemy model, or off of the edge of the battlefield then the Esoterist suffers Perils of the Warp, and the chosen point is moved the minimum distance required in a direction of the controlling player's choice to place it clear of all Impassable Terrain, on the battlefield, and at least 3" away from any enemy model. If the Check is passed then the Warp Rift does not scatter.
+
+Once the final location of the chosen point is determined, the Esoterist's controlling player may choose to deploy up to one of the Ruinstorm Daemon units in Reserves onto the battlefield (that player may choose to place no units if they wish). That unit moves onto the battlefield from any point along the edge of the Blast marker placed to represent the Warp Rift as if it was entering play from Reserves, treating the Warp Rift marker as though it was the controlling player's battlefield edge.
+
+Once all models in the unit have moved onto the battlefield, the Warp Rift marker is removed from play. The Daemon unit brought into play by use of this power may be targeted by the Interceptor Reaction and may act as normal in the Shooting phase in which it arrives and may declare a Charge in the Assault phase of the turn in which it enters play.
+
+Note that to use this power, a player will need access to the Ruinstorm Daemon Army List.
+
+### Void Darts (Psychic Weapon)
+
+*By tearing a series of tiny apertures into reality itself, the Esoterist can unleash the fury of hell itself upon the foe, channelling the power of the Warp for his own purposes.*
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Void darts | 18" | 5 | 4 | Assault 12, Sanctic, Deflagrate, Psychic Focus |
+
+Sanctic: A weapon with this special rule always Wounds models with the Daemon Unit Type on a 2+ and any successful Invulnerable Saves made by models with the Daemon Unit Type against any Wounds it inflicts must be re-rolled.
+
+### Seal the Veil (Psychic Power)
+
+*Some Esoterists study the Warp with the sole intent of discovering the weakness of those creatures that dwell within. They master the sealing of aetheric energy and investigate any method of repelling the foul entities that spill from that realm, no matter how strange or ritualistic such arcane tricks might be. Though those battle-psykers that have received real training may scoff at their dubious rites, few can deny their effectiveness in battle.*
+
+Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single enemy unit composed entirely of models with the Daemon Unit Type or Corrupted Unit Sub-type that is within line of sight and has at least one model within 18" of the Psyker. All models in the target unit must reduce their Strength and Toughness by 1 (to a minimum of Toughness or Strength 1) until the end of the target unit's controlling player's next turn – the controlling player of the Psyker using this Power may then choose to make a Psychic check for the Psyker. If the Check is passed the target unit also suffers Perils of the Warp, and if the Check is failed then both the target unit and the Psyker using this Psychic Power suffer Perils of the Warp.
+
+## Psychic Discipline: Divination
+
+A Psyker with this Discipline gains all the listed Powers, weapons and other special rules, as well as the Aetheric Lightning Psychic Weapon.
+
+### Divinatory Aegis (Psychic Power)
+
+*Diviners can effortlessly predict the paths of bullets and swords. By focusing their warp-sight even more closely, they can guide their allies' aim, bringing a swift and merciless death to their foes.*
+
+Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit within 12". The target unit gains the Precision Strikes (6+) and Precision Shots (6+) special rules for the duration of the current player turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then the target unit instead gains the Precision Strikes (5+) and Precision Shots (5+) special rules for the duration of the current player turn. If the Check is failed then no additional benefit is gained and the Psyker suffers Perils of the Warp.
+
+### Diviner's Dart (Psychic Weapon)
+
+*The diviner can manifest their fury as a bolt of psychic energy, a dart that twists and spirals through the carnage of battle to unerringly strike the target's weakest point.*
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Diviner's Dart | 18" | 6 | 2 | Assault 1, Sniper, Guided Fire, Psychic Focus |
+
+## Psychic Discipline: Telepathy
+
+A Psyker with this Discipline gains all the listed Powers, weapon and other special rules, as well as the Aetheric Lightning Psychic Weapon.
+
+### Telepathic Fugue (Psychic Power)
+
+*Paranoia, confusion and panic are heightened to a debilitating degree as the telepath alters their foes' perceptions, denying them a chance to react to the reality around them.*
+
+Once per turn, at the start of any Phase, the Psyker with this Psychic Power's controlling player may select a single enemy unit within 24" and line of sight of the Psyker and take a Psychic check. If that Check is passed then the target unit may not make any Reactions for the duration of that Phase. If the Check is failed then the Psyker suffers Perils of the Warp.
+
+### Telepathic Hallucinations (Psychic Weapon)
+
+*The armour of the foe cannot protect them from the telepath's cruel assault, infiltrating the minds of their victims and turning brother against brother.*
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Telepathic Hallucinations | 36" | - | - | Assault 6, Hallucinations, Psychic Focus |
+
+Hallucinations: A unit that suffers one or more Hits from a Weapon with this special rule must make an immediate Pinning test, adding one to the result of the roll for each Hit scored by this attack before the result is decided. For example, if a Psyker attacks an enemy unit that has a Leadership of 8, scoring 3 Hits with Telepathic Hallucinations, then that unit must make an immediate Pinning test and add 3 to the result rolled before determining the result.
+
+Psychic Focus: Before making any To Hit rolls with this weapon, the Psyker must make a Psychic check. If the Check is passed, then the Psyker may attack as normal using the profile shown for this weapon. If the Check is failed, then the Psyker suffers Perils of the Warp, and if the model is not removed as a casualty then it may attack as normal but may not use this weapon.
 
 ## Minor Psychic Powers
 
@@ -309,7 +393,7 @@ A Grey Knights army may take one Rite of War:
 - Fearless
 - Legiones Astartes (Grey Knights)
 - Minor Psychic Powers
-- Psychic Discipline (Dominus or Sanctic)
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
 - Relentless
 - The Aegis
 
@@ -366,7 +450,7 @@ A Grey Knights army may take one Rite of War:
 - Brotherhood of Psykers
 - Brotherhood Psyker
 - Minor Psychic Powers
-- Psychic Discipline (Dominus or Sanctic)
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
 - Legiones Astartes (Grey Knights)
 - Invulnerable save (4+)
 - Strands of Fate: once per turn, re-roll any one dice roll for Stern or his unit
@@ -614,7 +698,7 @@ A Grey Knights army may take one Rite of War:
 - Fearless
 - Legiones Astartes (Grey Knights)
 - Minor Psychic Powers
-- Psychic Discipline (Dominus or Sanctic)
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
 - Relentless
 - The Aegis
 
@@ -671,7 +755,7 @@ A Grey Knights army may take one Rite of War:
 - Brotherhood of Psykers
 - Brotherhood Psyker
 - Minor Psychic Powers
-- Psychic Discipline (Dominus or Sanctic)
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
 - Legiones Astartes (Grey Knights)
 - Hammer of Wrath (2)
 - Invulnerable save (5+)
@@ -1534,7 +1618,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 - Legiones Astartes (Grey Knights)
 - Minor Psychic Powers
 - Move Through Cover
-- Psychic Discipline (Dominus or Sanctic)
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
 - The Aegis
 
 **Options**

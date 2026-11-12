@@ -212,7 +212,10 @@ loading. The script prints anything in the doc it could not place.
   select one X and one Psychic Discipline"). A Justicar or Dreadlancer that carries a minor power
   (Hammerhand, Gates of Infinity) keeps it and picks a second: an exception the rule states. Every Character has Brotherhood Psyker by default or as
   this option (Stern and Crowe by default; Crowe keeps Sanctic as his discipline). The option sits on the model that takes it, so
-  every Techmarine, Apothecary and Dreadlancer that takes it makes its own minor power and discipline picks. Dreadfists, nemesis daemon hammers and nemesis greatswords are
+  every Techmarine, Apothecary and Dreadlancer that takes it makes its own minor power and discipline picks. A Brotherhood Psyker picks Dominus, Sanctic, Anathemata,
+  Divination or Telepathy (the last three written out in the md, as Traders Militant does Anathemata). When the
+  md has the rule "Any Psyker that selects a Psychic Discipline also gains the Aetheric Lightning Psychic Weapon",
+  the builder gives every discipline the game system's Aetheric Lightning profile and the Force rule. Dreadfists, nemesis daemon hammers and nemesis greatswords are
   Unwieldy (3).
 - Adepta Sororitas, like the Grey Knights, may be Loyalist or Traitor. Each detachment picks one Order Militant,
   which gives its units Order (X) with that Order's rules, Advanced Reaction and Warlord Trait. The army's Faith
