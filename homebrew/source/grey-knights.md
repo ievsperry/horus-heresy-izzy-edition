@@ -34,7 +34,7 @@ Every Grey Knights unit in this document has **Brotherhood (X)**, **Aegis**, **D
 
 **Daemon Hunters.** The unit has Preferred Enemy (Daemons) and Hatred (Daemons)†, and never suffers Fear† from Daemons.
 
-**Nemesis Force Weapons.** Every nemesis weapon is a force weapon†. In addition, against Daemons, its attacks gain Murderous Strike (5+).
+**Nemesis Force.** The controlling player of any unit that includes one or more models with the Psyker Unit Sub-type and a weapon or ability with this special rule may choose to activate this special rule before making any attacks with that weapon or resolving the ability. To activate this special rule, the controlling player must make a single Psychic check using the Leadership Characteristic of any model in the unit that does not have the Independent Character special rule (unless the unit is entirely composed of models with the Independent Character special rule, in which case the controlling player can select which of those models' Leadership Characteristics is used). If the Check is successful, then the Strength value of all attacks made with weapons or abilities with this special rule is increased by +2 (in addition to any modifiers the attack or weapon may already possess); this benefit is applied only in the Phase in which these attacks are made and ends immediately after that Phase is resolved. If the Check is failed then no benefit is gained and the unit does not suffer Perils of the Warp, but the models in that unit may attack as normal. In addition, while this special rule is active, when an attack made with a weapon or ability with this special rule rolls a 6+ To Wound against a unit with the Daemon, Corrupted, Corrupted Engine or Malefic Unit Type or Sub-type, that unit may not take an Invulnerable Save against it, only its armour save.
 
 **Teleport Strike.** Grey Knights in Aegis Terminator armour, Strike Squads and Interceptor Squads have Deep Strike, and do not scatter if any friendly Grey Knights unit is within 6" of the target point†.
 
@@ -176,7 +176,7 @@ Units with Brotherhood (8th) gain the following:
 
 A Grey Knights Warlord chooses one of the three generic traits below, or the Warlord Trait of his Brotherhood.
 
-- **Daemonslayer:** the Warlord's attacks against Daemons gain Murderous Strike (4+). In addition, your army may make one additional reaction in your opponent's Assault phase†.
+- **Daemonslayer:** the Warlord's attacks against units with the Daemon, Corrupted, Corrupted Engine or Malefic Unit Type or Sub-type gain Murderous Strike (4+). In addition, your army may make one additional reaction in your opponent's Assault phase†.
 - **Nemesis Lord:** the Warlord knows one additional Sanctic power and adds 1 to his Leadership for Psychic checks. In addition, your army may make one additional reaction in your opponent's Shooting phase†.
 - **Unyielding Will:** friendly Grey Knights units within 12" may re-roll failed Psychic checks once per phase. In addition, your army may make one additional reaction in your opponent's Movement phase†.
 
@@ -1282,18 +1282,18 @@ Weapons that already exist in 2.0 use their official profiles (storm bolter, bol
 
 *Every Grey Knight's blade is a nemesis force weapon, forged on Titan and wrought with sigils of warding.*
 
-All weapons listed here are force weapons, and gain Murderous Strike (5+) against Daemons (see Nemesis Force Weapons).
+All weapons listed here have the Nemesis Force special rule (see Nemesis Force) and gain Murderous Strike (6+) against units with the Daemon, Corrupted, Corrupted Engine or Malefic Unit Type or Sub-type.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Daemon hammer | – | x2 | 2 | Melee, Unwieldy (3), Concussive (1), Rending (6+) |
-| Dreadfist | – | x2 | 2 | Melee, Brutal (2); +1 Attack if the Dreadknight has two |
-| Nemesis daemon greathammer | – | x2 | 1 | Melee, Unwieldy (3), Brutal (3), Rending (6+) |
-| Nemesis force halberd | – | +1 | 3 | Melee, Reach (1) |
-| Nemesis force sword | – | +1 | 3 | Melee, Breaching (6+) |
-| Nemesis greatsword | – | +2 | 2 | Melee, Rending (6+), Reach (1) |
-| Nemesis warding stave | – | +1 | 4 | Melee; the bearer has a 6+ Invulnerable Save in close combat or +1 if the model already has one to a max of +4. |
-| Pair of nemesis falchions | – | User | 3 | Melee; +1 Attack |
+| Daemon hammer | – | x2 | 2 | Melee, Nemesis Force, Unwieldy (3), Concussive (1), Rending (6+) |
+| Dreadfist | – | x2 | 2 | Melee, Nemesis Force, Brutal (2); +1 Attack if the Dreadknight has two |
+| Nemesis daemon greathammer | – | x2 | 1 | Melee, Nemesis Force, Unwieldy (3), Brutal (3), Rending (6+) |
+| Nemesis force halberd | – | +1 | 3 | Melee, Nemesis Force, Reach (1) |
+| Nemesis force sword | – | +1 | 3 | Melee, Nemesis Force, Breaching (6+) |
+| Nemesis greatsword | – | +2 | 2 | Melee, Nemesis Force, Rending (6+), Reach (1) |
+| Nemesis warding stave | – | +1 | 4 | Melee, Nemesis Force; the bearer has a 6+ Invulnerable Save in close combat or +1 if the model already has one to a max of +4. |
+| Pair of nemesis falchions | – | User | 3 | Melee, Nemesis Force; +1 Attack |
 
 #### Unique and Other Weapons
 
@@ -1304,7 +1304,7 @@ All weapons listed here are force weapons, and gain Murderous Strike (5+) agains
 | The Black Blade of Antwyr (Crowe) | – | +2 | 2 | Melee, Rending (5+); +1 Attack |
 | Crozius arcanum | – | +1 | 4 | Melee, Concussive (1) |
 | Malleus Argyrum (Voldus) | – | x2 | 2 | Melee, Concussive (2), Rending (6+) |
-| The Titansword (Draigo) | – | x2 | 2 | Melee, Rending (4+), Murderous Strike (4+) against Daemons |
+| The Titansword (Draigo) | – | x2 | 2 | Melee, Rending (4+), Murderous Strike (4+) against units with the Daemon, Corrupted, Corrupted Engine or Malefic Unit Type or Sub-type |
 
 ### Ranged Weapons
 
@@ -1317,8 +1317,8 @@ All weapons listed here are counted as 'Flame' weapons for those rules that affe
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Flamestorm cannon | Template | 6 | 3 | Heavy 1, Breaching (6+), Sanctic |
-| Heavy incinerator | Template | 6 | 4 | Heavy 1, Shred, Torrent (6"), Sanctic |
-| Incinerator | Template | 6 | 4 | Assault 1, Shred, Sanctic |
+| Heavy incinerator | Template | 6 | 4 | Heavy 1, Shred, Torrent (6"), Nemesis Force |
+| Incinerator | Template | 6 | 4 | Assault 1, Shred, Nemesis Force |
 
 #### Psycannons and Psilencers
 
@@ -1328,10 +1328,10 @@ All weapons listed here are counted as 'Psychic' weapons for those rules that af
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Gatling psilencer | 24" | 4 | 5 | Heavy 12, Force, Psychic, Sanctic |
-| Heavy psycannon | 24" | 8 | 4 | Heavy 6, Breaching (5+), Sanctic |
-| Psilencer | 24" | 4 | 5 | Heavy 6, Force, Psychic, Sanctic |
-| Psycannon | 24" | 7 | 4 | Heavy 3, Breaching (5+), Sanctic |
+| Gatling psilencer | 24" | 4 | 5 | Heavy 12, Nemesis Force, Psychic |
+| Heavy psycannon | 24" | 8 | 4 | Heavy 6, Breaching (5+), Nemesis Force |
+| Psilencer | 24" | 4 | 5 | Heavy 6, Nemesis Force, Psychic |
+| Psycannon | 24" | 7 | 4 | Heavy 3, Breaching (5+), Nemesis Force |
 
 #### Vehicle Weapons
 
