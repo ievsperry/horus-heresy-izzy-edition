@@ -594,6 +594,22 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Land Raider carriers, the Chambers of the Golden Host, the Shield-Hosts and the extra options on the official
   Hetaeron, Custodian Guard and Sagittarum squads. It was written into the official file directly, with no
   add script in this repository; the doc is the reference to check it against.
+- The Saturnine conversion (the Claude Doc "Saturnine Terminators and Dreadnought for The Horus Heresy 2.0 —
+  Conversion", kept as `source/saturnine.md`) is in `2022 - Legiones Astartes.cat`: the Praetor in Saturnine
+  Terminator Armour, the Saturnine Terminator Squad and the Saturnine Dreadnought, as Legends units every Legion
+  catalogue links (Liber Centura adds the Centurion in Saturnine Terminator Armour and the Pride of the Legion
+  Heavy Support slot). It was written into the library directly, with no add script; the doc is the reference.
+  The Dreadnought has a heavy plasma bombard, a disintegrator cannon and two photonic incinerators, each
+  exchanged in its own pick; the incinerators go as a pair ("Two Concussive Resonators", "Two Heavy Particle
+  Shredders"), each pair one entry linking the weapon twice.
+- `python3 homebrew/add_saturnine_command_squad.py` adds the Saturnine Command Squad from `source/saturnine.md` to
+  the library (an HQ choice linked from every Legion catalogue and Shattered Legions the way the Praetor in
+  Saturnine Terminator Armour is, without the Compulsory HQ slot): a Chosen Champion and one to five Chosen with
+  paired Saturnine disruption fists (one entry linking the fist twice), each pair of weapons it may exchange them
+  for as one entry, a particle shredder or plasma blaster per model, and a Legion standard for one Chosen. It adds the
+  Saturnine concussion hammer and war axe, which the Praetor and Centurion in Saturnine Terminator Armour may take in
+  place of their disruption fist (+10), and rewords the Thermal Diffraction Field rule for any model that has one.
+  It refuses to run on a library that already has the unit.
 - `python3 homebrew/add_sisters_of_silence.py` adds the Liber Imperatus Sisters of Silence expansion (the Claude Doc
   "Sisters of Silence Horus Heresy 2.0 - Homebrew Conversion", kept as `source/sisters-of-silence.md`) to
   `2022 - LI - Sisters Of Silence.cat`. build_catalogue.py's Builder reads the doc's datasheets; their units then
@@ -737,6 +753,10 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     Plasma Cannons, Medusan Immortal Power Weapons), two Hunter-Killer Missiles, the Primaris-Lightning's "up to
     three", and the Saturnine Centurion's Consularis choice as copies of the official Forge Lord, Mortificator and
     Siege Breaker at the datasheet's costs;
+  - two options the Builder priced "per model" across the whole unit: the Novicii Squad's extra Veteran Sergeants
+    are +20 points each, one for every ten models beyond the first ten, and the Vindicator Thunderers' extra shells
+    cost per Quad Launcher and are hidden until the squadron has one (`python3 homebrew/add_centura.py
+    --per-model-fixes` applies just this step to the library);
   - each Legion's own upgrades (as above, and the Ghola Sub-type, The Keys of Hel and the Thousand Sons
     disciplines) as rules on the Legion's entry in its catalogue.
   Rule text only: the Rites' other effects and their limitations, the Line Sub-type a Rite grants, the Ghola

@@ -981,6 +981,68 @@ def legion_upgrades():
     return n
 
 
+def per_model_fixes():
+    """Two options the Builder prices "per model" over the whole unit: the Novicii Squad's extra Veteran Sergeants
+    ("for every ten models in the unit beyond its original starting size, one Legion Novitiate may be upgraded",
+    +20 points each, so none until twenty models) and the Vindicator Thunderers' extra shells (only for models
+    armed with a Quad Launcher, at the price per such model)."""
+    C = et.NS["cat"]
+    cat = et.Text(LIBRARY)
+    root = ET.fromstring(cat.s.encode("utf-8"))
+    units = {e.get("name"): e for e in root.find(C + "sharedSelectionEntries") if e.get("type") == "unit"}
+    n = 0
+
+    def link(unit, name):
+        return next(x for x in unit.iter(C + "entryLink") if x.get("name") == name)
+
+    def body(eid):
+        a, b_, _, _ = cat.block(eid)
+        return a, b_, cat.s[a:b_]
+
+    def repeat(scope, child_id, value):
+        return (f'<repeat field="selections" scope="{scope}" value="{value}" percentValue="false" shared="true" '
+                f'includeChildSelections="true" includeChildForces="false" childId="{child_id}" repeats="1" '
+                f'roundUp="false"/>')
+
+    u = units["Legion Novicii Squad"]
+    sg = next(x for x in u.iter(C + "selectionEntryGroup") if x.get("name") == "Unit Upgrades")
+    sl = next(x for x in sg.iter(C + "entryLink") if x.get("name") == "Legion Veteran Sergeant")
+    cid = bc.make_id(sl.get("id"), "per ten beyond ten")
+    if cid not in cat.s:
+        a, b_, t = body(sl.get("id"))
+        t = re.sub(r"\s*<modifiers>.*?</modifiers>", "", t, count=1, flags=re.S)
+        t = t.replace('<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"', '<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"')
+        t = re.sub(r"<constraints>.*?</constraints>",
+                   f'<constraints><constraint type="max" value="0" field="selections" scope="parent" shared="true" '
+                   f'id="{cid}" percentValue="false" includeChildSelections="false" includeChildForces="false"/>'
+                   f'</constraints>', t, count=1, flags=re.S)
+        nl = "\r\n" if "\r\n" in t else "\n"
+        mods = (f'<modifiers>{nl}<modifier type="increment" field="{cid}" value="1"><repeats>'
+                + repeat(u.get("id"), "model", 10) + f'</repeats></modifier>{nl}'
+                f'<modifier type="decrement" field="{cid}" value="1"/>{nl}</modifiers>{nl}')
+        t = t.replace("<constraints>", mods + "<constraints>", 1)
+        cat.s = cat.s[:a] + t + cat.s[b_:]
+        n += 1
+
+    u = units["Legion Vindicator Thunderer Squadron"]
+    quad = link(u, "Centreline Mounted Quad Launcher with Frag Shells").get("targetId")
+    for shell in ("Incendiary Shells", "Phosphex Canister Shot", "Shatter Shells", "Splinter Shells"):
+        sh = link(u, shell)
+        a, b_, t = body(sh.get("id"))
+        if quad in t:
+            continue
+        t = re.sub(r'(<repeat [^>]*childId=")[^"]+', lambda m: m.group(1) + quad, t, count=1)
+        t = re.sub(r'(<repeat [^>]*scope=")[^"]+', lambda m: m.group(1) + u.get("id"), t, count=1)
+        cond = (f'<modifier type="set" field="hidden" value="true"><conditions><condition type="lessThan" value="1" '
+                f'field="selections" scope="{u.get("id")}" childId="{quad}" shared="true" percentValue="false" '
+                f'includeChildSelections="true" includeChildForces="false"/></conditions></modifier>')
+        t = t.replace("</modifiers>", cond + "</modifiers>", 1)
+        cat.s = cat.s[:a] + t + cat.s[b_:]
+        n += 1
+    cat.save()
+    return n
+
+
 def main():
     setup()
     if 'name="Legion Indomitus Praetor"' in open(LIBRARY, encoding="utf-8").read():
@@ -1006,9 +1068,13 @@ def main():
     print(f"Option limits: {option_limits()}")
     print(f"Magma Plating: on {magma_plating()} vehicles")
     print(f"Saturnine Centurion Consularis: {saturnine_consularis()}")
+    print(f"Per-model options: {per_model_fixes()} fixed")
 
 
-if __name__ == "__main__" and sys.argv[1:2] == ["--legion-check"]:
+if __name__ == "__main__" and sys.argv[1:2] == ["--per-model-fixes"]:
+    setup()
+    print(f"Per-model options: {per_model_fixes()} fixed")
+elif __name__ == "__main__" and sys.argv[1:2] == ["--legion-check"]:
     setup()
     for legion, sec in legion_sections():
         t = legion_text(legion, sec)
