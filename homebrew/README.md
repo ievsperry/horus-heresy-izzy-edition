@@ -594,6 +594,13 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Land Raider carriers, the Chambers of the Golden Host, the Shield-Hosts and the extra options on the official
   Hetaeron, Custodian Guard and Sagittarum squads. It was written into the official file directly, with no
   add script in this repository; the doc is the reference to check it against.
+- The Saturnine conversion (the Claude Doc "Saturnine Terminators and Dreadnought for The Horus Heresy 2.0 —
+  Conversion", kept as `source/saturnine.md`) is in `2022 - Legiones Astartes.cat`: the Praetor in Saturnine
+  Terminator Armour, the Saturnine Terminator Squad and the Saturnine Dreadnought, as Legends units every Legion
+  catalogue links (Liber Centura adds the Centurion in Saturnine Terminator Armour and the Pride of the Legion
+  Heavy Support slot). It was written into the library directly, with no add script; the doc is the reference.
+  The Dreadnought's second primary weapon must match the first (two heavy plasma bombards or two disintegrator
+  cannons) unless it is exchanged for an inversion beam or graviton pulveriser: a mixed pair is a roster error.
 - `python3 homebrew/add_sisters_of_silence.py` adds the Liber Imperatus Sisters of Silence expansion (the Claude Doc
   "Sisters of Silence Horus Heresy 2.0 - Homebrew Conversion", kept as `source/sisters-of-silence.md`) to
   `2022 - LI - Sisters Of Silence.cat`. build_catalogue.py's Builder reads the doc's datasheets; their units then
