@@ -143,6 +143,7 @@ Rules marked † lean on exact 2.0 wording; the checklist at the end lists them.
 - Paired Saturnine disruption fists
 - Thermal diffraction field
 - Saturnine teleport synchroniser
+- Saturnine Terminator armour
 
 **Unit Type**
 
@@ -158,6 +159,7 @@ Rules marked † lean on exact 2.0 wording; the checklist at the end lists them.
 - Deep Strike
 - Retinue
 - Chosen Warriors
+- Saturnine Terminator Armour
 
 **Options**
 

@@ -17,7 +17,7 @@ RULES = {  # game system and library rules, by name
     "Legiones Astartes (X)": "ffcb-13b4-9b4c-84da", "Bulky (X)": "676c-7b75-4b6f-9405",
     "Relentless": "7adf-ac9a-5035-522d", "Slow and Purposeful": "d69a-cfb3-db43-32c5",
     "Deep Strike": "f1e1-986f-c783-ca9e", "Retinue": "6b79-ac44-4d89-2124", "Chosen Warriors": "13d1-9270-6539-08ed",
-    "Legends": "6bd6-620e-c9db-b8e5", "Thermal Diffraction Field": "261a-aaba-ab5f-13a7",
+    "Legends": "6bd6-620e-c9db-b8e5", "Saturnine Terminator Armour": "3917-f2a2-5a53-b4ae", "Thermal Diffraction Field": "261a-aaba-ab5f-13a7",
     "Unwieldy": "1570-c21a-881f-8b8a", "Brutal (X)": "5079-1fec-d32b-8b84", "Concussive (X)": "7ce5-1bfb-64e6-f826",
     "Concussion (X)": "019c-9f2c-548b-b0ff", "Murderous Strike (X)": "93b9-1454-0e7c-42ae",
     "Reaping Blow (X)": "bd8c-4f52-d682-1b40",
@@ -177,7 +177,7 @@ def shared_entries():
                    ["Infantry Unit Type", "Heavy Sub-type"], lambda k: kit(k, standard=True))
     unit_rules = [("Legiones Astartes (X)", None), ("Bulky (X)", "Bulky (3)"), ("Relentless", None),
                   ("Slow and Purposeful", None), ("Deep Strike", None), ("Retinue", None),
-                  ("Chosen Warriors", None), ("Legends", None)]
+                  ("Chosen Warriors", None), ("Saturnine Terminator Armour", None), ("Legends", None)]
     unit = (f'<selectionEntry id="{mk("unit")}" name="Saturnine Command Squad" publicationId="{PUB}" hidden="false" '
             f'collective="false" import="true" type="unit">'
             f'<infoLinks>{"".join(rule("unit", n, v) for n, v in unit_rules)}</infoLinks>'
