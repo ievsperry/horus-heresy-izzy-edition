@@ -610,6 +610,14 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Saturnine concussion hammer and war axe, which the Praetor and Centurion in Saturnine Terminator Armour may take in
   place of their disruption fist (+10), and rewords the Thermal Diffraction Field rule for any model that has one.
   It refuses to run on a library that already has the unit.
+- `python3 homebrew/add_custom_units.py` adds the custom units of Liber Izonian (the Claude Doc "Liber Izonian for
+  The Horus Heresy 2.0 — Custom Units", kept as `source/custom-units.md`) to the official catalogues, each once. The Red Fangs are a copy of the library's Heavy Support Squad (every id renewed, so its
+  Legion options and transports stay as they are) in `2022 - LA - World Eaters.cat`, linked like the Heavy Support
+  Squad, always five models (130 points, W2), with only heavy bolters or autocannons (+5 per
+  model) as their own "Heavy Bolter (Wrathful Souls)" and "Autocannon (Wrathful Souls)" entries, so the official
+  weapons and every other unit's are untouched. Wrathful
+  Souls' Overwatch and World Eaters-against-World Eaters effects and Dying Gift are rule text. The copy keeps the
+  official entry's schema-order quirks (15 schema warnings, as the library's Heavy Support Squad has).
 - `python3 homebrew/add_sisters_of_silence.py` adds the Liber Imperatus Sisters of Silence expansion (the Claude Doc
   "Sisters of Silence Horus Heresy 2.0 - Homebrew Conversion", kept as `source/sisters-of-silence.md`) to
   `2022 - LI - Sisters Of Silence.cat`. build_catalogue.py's Builder reads the doc's datasheets; their units then
