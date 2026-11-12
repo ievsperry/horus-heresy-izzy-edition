@@ -650,7 +650,9 @@ class Builder:
     # ---- weapons
 
     def wargear_sections(self):
-        return [s for s in self.sections if s["title"] == "Biomorphs" or "Wargear" in s["title"]]
+        # "## Minor Psychic Powers" (Grey Knights): each power is picked like a Thousand Sons Minor Arcana
+        return [s for s in self.sections
+                if s["title"] in ("Biomorphs", "Minor Psychic Powers") or "Wargear" in s["title"]]
 
     def build_weapons(self):
         rows, aux = [], []

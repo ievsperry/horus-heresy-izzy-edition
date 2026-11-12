@@ -136,8 +136,11 @@ loading. The script prints anything in the doc it could not place.
   rule: "Ancestral Lore (2)" and "Psykana (2)" two, "(knows 3 additional Sanctic powers)" three, "(knows every Sanctic
   power)" all of them (Leagues of Votann, Astra Militarum, Grey Knights). A unit given its powers some other way
   ("Hive Mind (X)") is left alone.
-  "(knows X instead of Y)" swaps one known power for another and "(also knows X)" adds one (Grey Knights
-  Purgation and Purifier Squads, Nemesis Dreadknight); the official Dreadnoughts know Purge Soul and Sanctuary.
+  "(knows X instead of Y)" swaps one known power for another and "(also knows X)" adds one.
+- A "## Minor Psychic Powers" section (Grey Knights) is built like a wargear section: each power is an entry with
+  its text, picked as a Thousand Sons psyker picks a Minor Arcana ("must select one of the following Minor Psychic
+  Powers", one per model), or carried by every model when a datasheet lists it in its Wargear ("Hammerhand (Minor
+  Psychic Power)").
 - A Warlord Traits section may list its generic traits as "### Name" sub-sections, "#### Name" headings (T'au) or
   "- **Name:** text" bullets (Grey Knights); a leading flavour line is left out of the trait's text.
 - An option named after a rule with its value ("Combat Drugs (2)") links that rule.
@@ -184,19 +187,28 @@ loading. The script prints anything in the doc it could not place.
   (run by the builder for Grey Knights) links the Legions Astartes library's Castra Ferrum and Contemptor
   Dreadnought Talons and Land Raider Proteus Carrier and Phobos Squadrons as Heavy Support, and its Rhino Transport
   as the Dedicated Transport of the Purifier, Strike and Purgation Squads (2.0 has no Razorback). Dreadnoughts gain
-  the Psyker sub-type, Brotherhood of Psykers, Daemon Hunters, Brotherhood (X) and Aegis for +25 points each; Land
-  Raiders and the Rhino gain Brotherhood (X) and Aegis for +10 points per Land Raider and +5 per Rhino.
-  A Dreadnought Talon may take a Teleport Harness (Deep Strike) for +40 points per Dreadnought, as the Nemesis
-  Dreadknight and Grand Master in Nemesis Dreadknight may for +40 points. Servitors and the vehicles have
+  the Psyker sub-type, Brotherhood of Psykers, Legiones Astartes (Grey Knights), Brotherhood (X) and The Aegis for
+  +25 points each (Brotherhood of Psykers gives no powers, so they know none); Land Raiders and the Rhino gain
+  Brotherhood (X), The Aegis and Legiones Astartes (Grey Knights) for +10 points per Land Raider and +5 per Rhino.
+  A Dreadnought Talon may take a Teleport Harness (Deep Strike) for +40 points per Dreadnought, as the Grand Master
+  in Nemesis Dreadknight may for +40 points. Servitors and the vehicles have
   Brotherhood (X) only, as the doc says. Every Grey Knight has the Psyker sub-type (Servitors and vehicles do not),
-  the Nemesis Dreadknight and the Grand Master in one are Armigers (the Mech Library's Armiger Unit Type, which the
+  the Dreadknight, Dreadlancer and Grand Master in Nemesis Dreadknight are Armigers (the Mech Library's Armiger Unit Type, which the
   catalogue links that library for), and the Stormraven may swap its twin heavy bolter (the Gravis Bolt Cannon) for
   a heavy psycannon (+15) or gatling psilencer (+10).
-  The Brotherhood Techmarine and Brotherhood Apothecary are 0-1 per detachment ("### 0-1 ..." in the doc), each may
-  take up to 3 more models at the same cost, and they are Characters rather than Independent Characters: the
-  Techmarine Covenant and Apothecarion Detachment rules (Grey Knights versions of the Legion ones, keyed on
-  Brotherhood (X), with no bike clauses, and the Apothecary going only to Aegis Terminator units) assign each model
-  to a unit before deployment.
+  The Brotherhood Techmarine is 0-1 per detachment ("### 0-1 ..." in the doc) and may take up to 3 more models at
+  the same cost; the Brother Apothecary may take up to 4 more. They are Characters rather than Independent
+  Characters: the Techmarine Covenant and Apothecarion Detachment rules (Grey Knights versions of the Legion ones,
+  keyed on Brotherhood (X), with no bike clauses) assign each model to a unit before deployment; an Apothecary
+  joins a Brotherhood Terminator or Paladin Squad only in Aegis Terminator armour (its Terminator profile is text).
+  Liber Daemonicus (the user's file, merged into `source/grey-knights.md`) supplies the army rules (The Aegis,
+  Legiones Astartes (Grey Knights), Nemesis Force, Brotherhood Psyker and Librarian, Dreadknight Talon, Minor
+  Psychic Powers), the Dominus and Sanctic disciplines, the minor powers, the Aegis armours and other wargear, the
+  weapon profiles and the datasheets it covers; where it and the earlier conversion disagree it is used, and every
+  unit keeps Brotherhood of Psykers (the Psyker sub-type, no powers of its own). Its Dreadknight Talon replaces the
+  Nemesis Dreadknight; the Interceptor Terminator Squad and Grey Knight Dreadlancer Talon are new units beside the
+  Interceptor Squad. A Brotherhood Psyker taken as an option (+15) is rule text: its minor power and discipline are
+  not picks.
 - Adepta Sororitas, like the Grey Knights, may be Loyalist or Traitor. Each detachment picks one Order Militant,
   which gives its units Order (X) with that Order's rules, Advanced Reaction and Warlord Trait. The army's Faith
   system (Acts of Faith, Gaining Faith, Miracles, and the table of Acts) and the Unit Types notes are on the army

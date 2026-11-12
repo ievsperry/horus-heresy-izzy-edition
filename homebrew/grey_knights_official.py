@@ -5,14 +5,14 @@ The units link the Legions Astartes library's own entries, so their profiles, wa
 official ones. Each gains the doc's Grey Knights rules and pays for them per model:
 
 - Dreadnoughts (Castra Ferrum, the 2.0 Mk IV-pattern Legion Dreadnought, and Contemptor) are piloted by Grey
-  Knights: Psyker sub-type, Brotherhood of Psykers, Daemon Hunters, Brotherhood (X) and Aegis, +25 points per
-  Dreadnought.
-- Land Raiders (Proteus Carrier and Phobos) and the Rhino: Brotherhood (X) and Aegis, +10 points per Land Raider
-  and +5 points per Rhino. The Rhino is the Dedicated Transport of the units whose datasheet offers one.
+  Knights: Psyker sub-type, Brotherhood of Psykers, Legiones Astartes (Grey Knights), Brotherhood (X) and The
+  Aegis, +25 points per Dreadnought.
+- Land Raiders (Proteus Carrier and Phobos) and the Rhino: Brotherhood (X), The Aegis and Legiones Astartes (Grey
+  Knights), +10 points per Land Raider and +5 points per Rhino. The Rhino is the Dedicated Transport of the units whose datasheet offers one.
 
 2.0 has no Razorback, so the doc's "Rhino or Razorback" is the Rhino.
 
-The Dreadnoughts know Purge Soul and Sanctuary (in place of Hammerhand), as the Nemesis Dreadknight does.
+Brotherhood of Psykers gives the Dreadnoughts the Psyker sub-type only (Liber Daemonicus): they know no powers.
 A Dreadnought Talon may take a Teleport Harness (the doc's wargear: Deep Strike) for +40 points per Dreadnought,
 and the Teleport Harness links the game system's Deep Strike rule.
 
@@ -29,7 +29,7 @@ LAND_RAIDERS = [("Land Raider Proteus Carrier Squadron", "b6cd-dd1a-6b2c-41d6", 
                  ["c123-bdc6-a6ba-79a2", "048e-67cc-d24d-9f46"]),
                 ("Land Raider Phobos Squadron", "681a-7426-96af-caac", 10, ["8bf3-9b8d-578a-38f1"])]
 RHINO = ("Rhino Transport", "03f1-8ed9-9867-8d18", 5)
-DREADNOUGHT_POWERS = ["Purge Soul", "Sanctuary"]
+DREADNOUGHT_POWERS = []  # Brotherhood of Psykers grants no powers
 DEEP_STRIKE = "f1e1-986f-c783-ca9e"  # the game system's Deep Strike rule
 HARNESS_POINTS = 40  # per Dreadnought
 TRANSPORTED = ["Purifier Squad", "Strike Squad", "Purgation Squad"]  # "may take a Rhino or Razorback"
@@ -41,7 +41,8 @@ def rule_id(b, name):
 
 
 def grey_knights_rules(b, e, key, psyker):
-    names = (["Brotherhood of Psykers", "Daemon Hunters"] if psyker else []) + ["Brotherhood (X)", "Aegis"]
+    names = (["Brotherhood of Psykers"] if psyker else []) + ["Brotherhood (X)", "The Aegis",
+                                                             "Legiones Astartes (Grey Knights)"]
     for n in names:
         el(child(e, "infoLinks"), "infoLink", name=n, id=make_id(key, "rule", n), hidden=False,
            targetId=rule_id(b, n), type="rule")
