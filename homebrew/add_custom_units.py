@@ -156,11 +156,11 @@ def red_fangs():
     return "The Red Fangs: added to " + WORLD_EATERS
 
 
-RED_FANGS_UNIT_COST, RED_FANGS_MODEL_COST = 42, 17  # 110 points for the sergeant and four, +17 per Legionary
+RED_FANGS_COST, RED_FANGS_WOUNDS = 130, 2  # always the sergeant and four Legionaries
 
 
-def red_fangs_costs():
-    """110 points for the starting five (the unit's own 42 and four Legionaries at 17), +17 per additional one."""
+def red_fangs_changes():
+    """Always five models (the sergeant and four Legionaries, no more), 130 points, and 2 Wounds on both profiles."""
     we = open(WORLD_EATERS, encoding="utf-8").read()
     a = re.search(r'<selectionEntry [^>]*name="The Red Fangs"', we).start()
     a, b = element_span(we, a, "selectionEntry")
@@ -174,14 +174,18 @@ def red_fangs_costs():
     for name in ("Legionaries (collective)", "Legionary w/ Options"):
         j = unit.index(f'name="{name}"')
         ea, eb = element_span(unit, unit.rfind("<selectionEntry", 0, j), "selectionEntry")
-        unit = unit[:ea] + set_cost(unit[ea:eb], RED_FANGS_MODEL_COST) + unit[eb:]
-    unit = set_cost(unit, RED_FANGS_UNIT_COST)
+        unit = unit[:ea] + set_cost(unit[ea:eb], 0) + unit[eb:]
+    unit = set_cost(unit, RED_FANGS_COST)
+    j = unit.index('name="0) Legionaries"')
+    ga, gb = element_span(unit, unit.rfind("<selectionEntryGroup", 0, j), "selectionEntryGroup")
+    group = re.sub(r'(<constraint [^>]*value=")\d+("[^>]*type="max")', r"\g<1>4\2", unit[ga:gb], count=1)
+    unit = unit[:ga] + group + unit[gb:]
+    unit = re.sub(r'(<characteristic name="W" typeId="57ee-1126-32a9-5672">)[^<]*', rf"\g<1>{RED_FANGS_WOUNDS}", unit)
     if unit != we[a:b]:
         open(WORLD_EATERS, "w", encoding="utf-8", newline="").write(we[:a] + unit + we[b:])
-        return "The Red Fangs: 110 points, +17 per Legionary"
-    return "The Red Fangs: costs already set"
-
+        return "The Red Fangs: five models, 130 points, W2"
+    return "The Red Fangs: already five models, 130 points, W2"
 
 if __name__ == "__main__":
     print(red_fangs())
-    print(red_fangs_costs())
+    print(red_fangs_changes())
