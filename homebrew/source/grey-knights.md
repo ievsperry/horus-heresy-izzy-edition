@@ -36,7 +36,7 @@ Every Grey Knights unit in this document has **Brotherhood (X)**, **The Aegis**,
 
 **Brotherhood of Psykers.** Every Grey Knight is a psyker: a model with this special rule has the Psyker Unit Sub-type. Its psychic powers come only from its datasheet: the Brotherhood Psyker and Brotherhood Librarian special rules, a Psychic Discipline it names, and any Minor Psychic Power it selects or carries. Psychic checks are made against the unit's Leadership; a failed check causes Perils of the Warp as in the 2.0 rulebook†.
 
-**Brotherhood Psyker.** This model must select one Minor Psychic Power and one Psychic Discipline.
+**Brotherhood Psyker.** This model must select one Minor Psychic Power and one Psychic Discipline. A model that already carries a Minor Psychic Power from its datasheet's Wargear keeps it and selects a second, so it has two; this is an exception to the Minor Psychic Powers rule.
 
 **Brotherhood Librarian.** This model must select one Minor Psychic Power and two Psychic Disciplines. Only one Psychic Discipline may be used per Combat Turn.
 
