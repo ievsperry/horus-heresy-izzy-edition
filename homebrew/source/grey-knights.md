@@ -257,13 +257,12 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 
 | 2.0 slot | Grey Knights units |
 | --- | --- |
-| HQ | Grand Master, Brother-Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus |
+| HQ | Grand Master, Brother-Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus |
 | Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary, Servitors |
 | Troops | Strike Squad, Brotherhood Terminator Squad |
 | Dedicated Transports | Rhino\*, Razorback\* |
 | Fast Attack | Interceptor Squad, Interceptor Terminator Squad, Grey Knight Dreadlancer Talon, Stormraven Gunship |
 | Heavy Support | Purgation Squad, Dreadknight Talon, Land Raider Crusader, Land Raider Redeemer, Dreadnoughts\* and Land Raider Proteus or Phobos\* |
-| Lords of War | Kaldor Draigo |
 
 *Official 2.0 datasheets.*
 
@@ -702,6 +701,61 @@ A Grey Knights army may take one Rite of War:
 | Option | Cost |
 | --- | --: |
 | **Grand Master Voldus must select one of the following Minor Psychic Powers:** |  |
+| – Astral Aim | Free |
+| – Cleansing Flame | Free |
+| – Gates of Infinity | Free |
+| – Hammerhand | Free |
+| – Holocaust | Free |
+| – Warp Quake | Free |
+| – Warp Shroud | Free |
+
+### Kaldor Draigo — 375 pts
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Kaldor Draigo | 6 | 7 | 6 | 5 | 5 | 6 | 6 | 6 | 10 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 1 Kaldor Draigo
+
+**Wargear**
+
+- Aegis Terminator armour
+- Frag grenades\*
+- Krak grenades\*
+- Psychic hood\*
+- Storm bolter\*
+- Titan shield
+- Titan sword
+
+**Unit Type**
+
+- Kaldor Draigo: Infantry (Heavy, Independent Character, Unique, Psyker)
+
+**Special Rules**
+
+- Brotherhood (X)
+- Brotherhood Librarian
+- Brotherhood of Psykers
+- Deep Strike
+- Eternal Warrior
+- Fearless
+- It Will Not Die (6+)
+- Legiones Astartes (Grey Knights)
+- Master of the Legion
+- Minor Psychic Powers
+- Preferred Enemy (Daemon, Thousand Sons)
+- Psychic Discipline (Dominus and Sanctic)
+- Relentless
+- Supreme Grand Master: if Kaldor Draigo is in your army he must be your Warlord, and this is his Warlord Trait. Friendly units with the Legiones Astartes (Grey Knights) special rule within 12" of Kaldor Draigo gain +1 Leadership, and may use his Leadership Characteristic when making Morale Checks, Pinning Checks, Regroup Tests and Psychic Checks. Kaldor Draigo gains Adamantium Will (3+). So long as he has not been removed as a casualty, his controlling player may make one additional Reaction during the opponent's Movement Phase; it follows all normal rules for Reactions and does not allow the same unit to React more than once to the same triggering event
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **Kaldor Draigo must select one of the following Minor Psychic Powers:** |  |
 | – Astral Aim | Free |
 | – Cleansing Flame | Free |
 | – Gates of Infinity | Free |
@@ -1505,63 +1559,6 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Incinerator | +5 points each |
 | – Psilencer | +5 points each |
 | – Psycannon | +15 points each |
-
-## Lords of War
-
-### Kaldor Draigo — 375 pts
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Kaldor Draigo | 6 | 7 | 6 | 5 | 5 | 6 | 6 | 6 | 10 | 2+ | 40mm |
-
-**Unit Composition**
-
-- 1 Kaldor Draigo
-
-**Wargear**
-
-- Aegis Terminator armour
-- Frag grenades\*
-- Krak grenades\*
-- Psychic hood\*
-- Storm bolter\*
-- Titan shield
-- Titan sword
-
-**Unit Type**
-
-- Kaldor Draigo: Infantry (Heavy, Independent Character, Unique, Psyker)
-
-**Special Rules**
-
-- Brotherhood (X)
-- Brotherhood Librarian
-- Brotherhood of Psykers
-- Deep Strike
-- Eternal Warrior
-- Fearless
-- It Will Not Die (6+)
-- Legiones Astartes (Grey Knights)
-- Master of the Legion
-- Minor Psychic Powers
-- Preferred Enemy (Daemon, Thousand Sons)
-- Psychic Discipline (Dominus and Sanctic)
-- Relentless
-- Supreme Grand Master: if Kaldor Draigo is in your army he must be your Warlord, and this is his Warlord Trait. Friendly units with the Legiones Astartes (Grey Knights) special rule within 12" of Kaldor Draigo gain +1 Leadership, and may use his Leadership Characteristic when making Morale Checks, Pinning Checks, Regroup Tests and Psychic Checks. Kaldor Draigo gains Adamantium Will (3+). So long as he has not been removed as a casualty, his controlling player may make one additional Reaction during the opponent's Movement Phase; it follows all normal rules for Reactions and does not allow the same unit to React more than once to the same triggering event
-- The Aegis
-
-**Options**
-
-| Option | Cost |
-| --- | --: |
-| **Kaldor Draigo must select one of the following Minor Psychic Powers:** |  |
-| – Astral Aim | Free |
-| – Cleansing Flame | Free |
-| – Gates of Infinity | Free |
-| – Hammerhand | Free |
-| – Holocaust | Free |
-| – Warp Quake | Free |
-| – Warp Shroud | Free |
 
 ## Wargear
 

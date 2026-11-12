@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -371,6 +371,13 @@
         <categoryLink targetId="36c3-e85e-97cc-c503" id="1d1f-6763-4c18-cdba" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Kaldor Draigo" hidden="false" id="d9f2-202b-9b9d-185d" type="selectionEntry" targetId="d613-5424-6b15-948b">
+      <categoryLinks>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" id="ece3-c078-0947-49e0" primary="true" name="HQ:" />
+        <categoryLink targetId="f823-8c1d-6a87-26a1" id="1009-4dcf-f91d-6447" primary="false" name="Compulsory HQ:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="d1a8-da1c-9808-15be" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Brotherhood Champion" hidden="false" id="6d8d-f55a-49f6-cfc9" type="selectionEntry" targetId="f603-2daa-d4f1-b688">
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="69fa-f828-3de7-158f" primary="true" name="Elites:" />
@@ -495,20 +502,6 @@
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="3b70-7d43-bfd3-46b5" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="9e46-a3f8-5829-f031" primary="false" name="Unit:" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Kaldor Draigo" hidden="false" id="d9f2-202b-9b9d-185d" type="selectionEntry" targetId="d613-5424-6b15-948b">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="4a3b-8958-41eb-9b28" shared="true" includeChildSelections="true" includeChildForces="false" />
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink targetId="c658-dc6b-727b-c488" id="55d0-c2cc-be6a-4a9a" primary="true" name="Lords of War:" />
-        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="9d07-503f-4fe7-f40c" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="d1a8-da1c-9808-15be" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Dreadknight Talon" hidden="true" id="701f-7a6b-e893-bed6" type="selectionEntry" targetId="fbe9-651b-7b02-04c1">
@@ -3582,6 +3575,238 @@
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="190" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kaldor Draigo" hidden="false" id="d613-5424-6b15-948b" publicationId="c336-0f01-71db-7a8f">
+      <rules>
+        <rule name="Psychic Discipline" id="f12e-e65d-cae0-9260" hidden="false">
+          <description>Dominus and Sanctic</description>
+        </rule>
+        <rule name="Supreme Grand Master" id="2f96-a412-997f-090a" hidden="false">
+          <description>If Kaldor Draigo is in your army he must be your Warlord, and this is his Warlord Trait. Friendly units with the Legiones Astartes (Grey Knights) special rule within 12" of Kaldor Draigo gain +1 Leadership, and may use his Leadership Characteristic when making Morale Checks, Pinning Checks, Regroup Tests and Psychic Checks. Kaldor Draigo gains Adamantium Will (3+). So long as he has not been removed as a casualty, his controlling player may make one additional Reaction during the opponent's Movement Phase; it follows all normal rules for Reactions and does not allow the same unit to React more than once to the same triggering event</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Brotherhood (X)" id="28fa-4683-ee3c-8210" hidden="false" targetId="4749-6b7c-76d3-27ab" type="rule" />
+        <infoLink name="Brotherhood Librarian" id="1c30-11a4-2295-8ab8" hidden="false" targetId="30e4-f198-63af-7fc7" type="rule" />
+        <infoLink name="Brotherhood of Psykers" id="8695-4536-0125-0ec1" hidden="false" targetId="9a82-d3a3-4eaf-9404" type="rule" />
+        <infoLink name="Deep Strike" id="46ad-de8e-1b68-d0b7" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
+        <infoLink name="Eternal Warrior" id="2f1c-f7cb-bbb7-95e1" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule" />
+        <infoLink name="Fearless" id="f938-70ca-a0a9-fc7f" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
+        <infoLink name="It Will Not Die (X)" id="4269-97e2-e64d-6282" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="It Will Not Die (6+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Legiones Astartes (Grey Knights)" id="eca0-3f92-135d-ef53" hidden="false" targetId="9ade-e6da-6ebe-c8d6" type="rule" />
+        <infoLink name="Master of the Legion" id="c492-c426-d800-4f8a" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule" />
+        <infoLink name="Minor Psychic Powers" id="0e0b-56b6-691c-fc1e" hidden="false" targetId="8dae-272b-41c6-ee22" type="rule" />
+        <infoLink name="Preferred Enemy (X)" id="3a4b-5963-83da-a9c1" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Preferred Enemy (Daemon, Thousand Sons)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Relentless" id="2d3d-0449-d518-5f98" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule" />
+        <infoLink name="The Aegis" id="5dba-3125-c82c-ae4d" hidden="false" targetId="f384-a120-63d6-aaf2" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="6c9f-371e-887c-e40f" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Kaldor Draigo" hidden="false" id="127e-1bef-2be7-e452" publicationId="c336-0f01-71db-7a8f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0bd0-7bb6-b866-9f4d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f74c-1926-93a3-8906" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Kaldor Draigo" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="f3a5-d2b3-fcaa-0391" publicationId="c336-0f01-71db-7a8f">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Independent Character, Unique, Psyker)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="a78a-2ee9-b7c7-0d34" primary="false" name="Infantry Unit Type" />
+            <categoryLink targetId="9231-183c-b97b-63f9" id="0dcb-dcce-7c96-d494" primary="false" name="Heavy Sub-type" />
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="b49f-a5a8-54d1-17ce" primary="false" name="Independent Character" />
+            <categoryLink targetId="6e0c-29ba-a445-8321" id="87c4-d3ee-9940-5cef" primary="false" name="Psyker:" />
+            <categoryLink targetId="aa94-5c65-d1f1-46a4" id="ff5e-0587-b5d7-4c3e" primary="false" name="Unique Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="045e-22c8-1eea-433c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d4e-61af-0f45-12ab" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bfdc-e485-d37d-1f61" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Astral Aim" hidden="false" id="6acf-ce52-57e8-d442" type="selectionEntry" targetId="b6d3-57d1-fa45-ad91">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4984-7c52-272b-159f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Cleansing Flame" hidden="false" id="7348-49fa-51ea-12e5" type="selectionEntry" targetId="9ce2-c38f-5f7b-a65a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a55-20a4-786d-4282" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Gates of Infinity" hidden="false" id="4a08-a871-97eb-c1ac" type="selectionEntry" targetId="22c0-2463-d374-b556">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c490-b0b9-694c-7b85" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Hammerhand" hidden="false" id="6d61-d9dc-0960-ab97" type="selectionEntry" targetId="a701-c3a9-39a7-d9ad">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30f0-49de-3e84-225f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Holocaust" hidden="false" id="857c-b2ca-32fc-4a8d" type="selectionEntry" targetId="b955-244c-5ccb-dfc4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c4c-10c4-3bd5-f65e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Warp Quake" hidden="false" id="8fca-1358-8f91-fafe" type="selectionEntry" targetId="207a-cf13-95ef-b63a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd3f-07b1-5f89-fcd9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Warp Shroud" hidden="false" id="783a-8f5d-fb07-dad2" type="selectionEntry" targetId="b5be-87ca-e330-404d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1595-22fc-da69-f82d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Aegis Terminator Armour" hidden="false" id="3eac-720f-8a93-cd0c" type="selectionEntry" targetId="a03b-838f-f694-0bf9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a11-3815-deaf-630d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4748-ef13-e5e7-abb9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="d5fe-9746-7b52-b56b" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e86-0ecb-6cd6-fe6b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6439-b040-e319-b848" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="f40c-0d37-3d9c-62e7" type="selectionEntry" targetId="99df-2421-acf7-a5ad">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f66-e7cd-972b-ad48" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4286-ec3f-384c-0827" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic hood" hidden="false" id="b1a1-3fb6-9b1f-f9fd" type="selectionEntry" targetId="4df2-d42b-504d-3ec5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="835d-44cf-9e87-ecfa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f745-6cba-11ed-0de8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Storm bolter" hidden="false" id="b0a9-5fd6-197b-5190" type="selectionEntry" targetId="a498-c66f-9eb7-ca9a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d4a-6fb6-6148-ab4a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6646-b60a-9770-acb2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Titan Shield" hidden="false" id="2942-9101-61d9-294c" type="selectionEntry" targetId="ac1c-290c-0723-f99e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c06-81bc-36bc-ea3d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="887d-97dd-d4f5-6aeb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Titan sword" hidden="false" id="4ddb-07cc-29e0-9c91" type="selectionEntry" targetId="e12e-8587-a714-9cd0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f3cc-19a3-40ce-b84b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3057-3234-cd50-9284" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Dominus" hidden="false" id="9f23-3823-10fb-d4dd" type="selectionEntry" targetId="7030-0a64-63f7-35af">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4c8-9128-8545-8e8f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8cd9-ad54-3735-d883" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sanctic" hidden="false" id="ce7c-3028-b9e1-b63b" type="selectionEntry" targetId="8413-3595-2f40-a327">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d421-30b6-de9c-766e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1fe-22e5-7c6b-ce52" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord" hidden="false" id="b888-ce67-7f4c-7f52" type="selectionEntry" targetId="0176-56a3-d590-b103">
+              <modifiers>
+                <modifier type="set" field="1df0-7666-95c9-35c7" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4a3b-8958-41eb-9b28" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="1df0-7666-95c9-35c7" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0c08-5cd5-0cae-3c97" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1df0-7666-95c9-35c7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4af6-6ffd-3075-33fc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warlord Traits" hidden="false" id="46ac-575b-c1da-f5fd" type="selectionEntryGroup" targetId="cc20-5c75-ba1b-13e5">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="127e-1bef-2be7-e452" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="d043-339a-c753-4bdf" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="127e-1bef-2be7-e452" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d043-339a-c753-4bdf" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5878-bdb3-0b5c-580c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="375" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Brotherhood Champion" hidden="false" id="f603-2daa-d4f1-b688" publicationId="c336-0f01-71db-7a8f">
@@ -7468,238 +7693,6 @@
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="24" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Kaldor Draigo" hidden="false" id="d613-5424-6b15-948b" publicationId="c336-0f01-71db-7a8f">
-      <rules>
-        <rule name="Psychic Discipline" id="f12e-e65d-cae0-9260" hidden="false">
-          <description>Dominus and Sanctic</description>
-        </rule>
-        <rule name="Supreme Grand Master" id="2f96-a412-997f-090a" hidden="false">
-          <description>If Kaldor Draigo is in your army he must be your Warlord, and this is his Warlord Trait. Friendly units with the Legiones Astartes (Grey Knights) special rule within 12" of Kaldor Draigo gain +1 Leadership, and may use his Leadership Characteristic when making Morale Checks, Pinning Checks, Regroup Tests and Psychic Checks. Kaldor Draigo gains Adamantium Will (3+). So long as he has not been removed as a casualty, his controlling player may make one additional Reaction during the opponent's Movement Phase; it follows all normal rules for Reactions and does not allow the same unit to React more than once to the same triggering event</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="Brotherhood (X)" id="28fa-4683-ee3c-8210" hidden="false" targetId="4749-6b7c-76d3-27ab" type="rule" />
-        <infoLink name="Brotherhood Librarian" id="1c30-11a4-2295-8ab8" hidden="false" targetId="30e4-f198-63af-7fc7" type="rule" />
-        <infoLink name="Brotherhood of Psykers" id="8695-4536-0125-0ec1" hidden="false" targetId="9a82-d3a3-4eaf-9404" type="rule" />
-        <infoLink name="Deep Strike" id="46ad-de8e-1b68-d0b7" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
-        <infoLink name="Eternal Warrior" id="2f1c-f7cb-bbb7-95e1" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule" />
-        <infoLink name="Fearless" id="f938-70ca-a0a9-fc7f" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
-        <infoLink name="It Will Not Die (X)" id="4269-97e2-e64d-6282" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="It Will Not Die (6+)" />
-          </modifiers>
-        </infoLink>
-        <infoLink name="Legiones Astartes (Grey Knights)" id="eca0-3f92-135d-ef53" hidden="false" targetId="9ade-e6da-6ebe-c8d6" type="rule" />
-        <infoLink name="Master of the Legion" id="c492-c426-d800-4f8a" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule" />
-        <infoLink name="Minor Psychic Powers" id="0e0b-56b6-691c-fc1e" hidden="false" targetId="8dae-272b-41c6-ee22" type="rule" />
-        <infoLink name="Preferred Enemy (X)" id="3a4b-5963-83da-a9c1" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Preferred Enemy (Daemon, Thousand Sons)" />
-          </modifiers>
-        </infoLink>
-        <infoLink name="Relentless" id="2d3d-0449-d518-5f98" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule" />
-        <infoLink name="The Aegis" id="5dba-3125-c82c-ae4d" hidden="false" targetId="f384-a120-63d6-aaf2" type="rule" />
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="6c9f-371e-887c-e40f" primary="false" name="Unit:" />
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Kaldor Draigo" hidden="false" id="127e-1bef-2be7-e452" publicationId="c336-0f01-71db-7a8f">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0bd0-7bb6-b866-9f4d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f74c-1926-93a3-8906" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <profiles>
-            <profile name="Kaldor Draigo" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="f3a5-d2b3-fcaa-0391" publicationId="c336-0f01-71db-7a8f">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Independent Character, Unique, Psyker)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="a78a-2ee9-b7c7-0d34" primary="false" name="Infantry Unit Type" />
-            <categoryLink targetId="9231-183c-b97b-63f9" id="0dcb-dcce-7c96-d494" primary="false" name="Heavy Sub-type" />
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="b49f-a5a8-54d1-17ce" primary="false" name="Independent Character" />
-            <categoryLink targetId="6e0c-29ba-a445-8321" id="87c4-d3ee-9940-5cef" primary="false" name="Psyker:" />
-            <categoryLink targetId="aa94-5c65-d1f1-46a4" id="ff5e-0587-b5d7-4c3e" primary="false" name="Unique Sub-type" />
-          </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Options" hidden="false" id="045e-22c8-1eea-433c">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d4e-61af-0f45-12ab" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bfdc-e485-d37d-1f61" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Astral Aim" hidden="false" id="6acf-ce52-57e8-d442" type="selectionEntry" targetId="b6d3-57d1-fa45-ad91">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4984-7c52-272b-159f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Cleansing Flame" hidden="false" id="7348-49fa-51ea-12e5" type="selectionEntry" targetId="9ce2-c38f-5f7b-a65a">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a55-20a4-786d-4282" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Gates of Infinity" hidden="false" id="4a08-a871-97eb-c1ac" type="selectionEntry" targetId="22c0-2463-d374-b556">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c490-b0b9-694c-7b85" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Hammerhand" hidden="false" id="6d61-d9dc-0960-ab97" type="selectionEntry" targetId="a701-c3a9-39a7-d9ad">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30f0-49de-3e84-225f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Holocaust" hidden="false" id="857c-b2ca-32fc-4a8d" type="selectionEntry" targetId="b955-244c-5ccb-dfc4">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c4c-10c4-3bd5-f65e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Warp Quake" hidden="false" id="8fca-1358-8f91-fafe" type="selectionEntry" targetId="207a-cf13-95ef-b63a">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd3f-07b1-5f89-fcd9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Warp Shroud" hidden="false" id="783a-8f5d-fb07-dad2" type="selectionEntry" targetId="b5be-87ca-e330-404d">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1595-22fc-da69-f82d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Aegis Terminator Armour" hidden="false" id="3eac-720f-8a93-cd0c" type="selectionEntry" targetId="a03b-838f-f694-0bf9">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a11-3815-deaf-630d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4748-ef13-e5e7-abb9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="d5fe-9746-7b52-b56b" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e86-0ecb-6cd6-fe6b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6439-b040-e319-b848" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Krak grenades" hidden="false" id="f40c-0d37-3d9c-62e7" type="selectionEntry" targetId="99df-2421-acf7-a5ad">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f66-e7cd-972b-ad48" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4286-ec3f-384c-0827" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Psychic hood" hidden="false" id="b1a1-3fb6-9b1f-f9fd" type="selectionEntry" targetId="4df2-d42b-504d-3ec5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="835d-44cf-9e87-ecfa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f745-6cba-11ed-0de8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Storm bolter" hidden="false" id="b0a9-5fd6-197b-5190" type="selectionEntry" targetId="a498-c66f-9eb7-ca9a">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d4a-6fb6-6148-ab4a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6646-b60a-9770-acb2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Titan Shield" hidden="false" id="2942-9101-61d9-294c" type="selectionEntry" targetId="ac1c-290c-0723-f99e">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c06-81bc-36bc-ea3d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="887d-97dd-d4f5-6aeb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Titan sword" hidden="false" id="4ddb-07cc-29e0-9c91" type="selectionEntry" targetId="e12e-8587-a714-9cd0">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f3cc-19a3-40ce-b84b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3057-3234-cd50-9284" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Dominus" hidden="false" id="9f23-3823-10fb-d4dd" type="selectionEntry" targetId="7030-0a64-63f7-35af">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4c8-9128-8545-8e8f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8cd9-ad54-3735-d883" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Sanctic" hidden="false" id="ce7c-3028-b9e1-b63b" type="selectionEntry" targetId="8413-3595-2f40-a327">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d421-30b6-de9c-766e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1fe-22e5-7c6b-ce52" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Warlord" hidden="false" id="b888-ce67-7f4c-7f52" type="selectionEntry" targetId="0176-56a3-d590-b103">
-              <modifiers>
-                <modifier type="set" field="1df0-7666-95c9-35c7" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="4a3b-8958-41eb-9b28" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="1df0-7666-95c9-35c7" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0c08-5cd5-0cae-3c97" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1df0-7666-95c9-35c7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4af6-6ffd-3075-33fc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Warlord Traits" hidden="false" id="46ac-575b-c1da-f5fd" type="selectionEntryGroup" targetId="cc20-5c75-ba1b-13e5">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="127e-1bef-2be7-e452" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="d043-339a-c753-4bdf" value="1">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="127e-1bef-2be7-e452" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d043-339a-c753-4bdf" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5878-bdb3-0b5c-580c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="375" />
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
