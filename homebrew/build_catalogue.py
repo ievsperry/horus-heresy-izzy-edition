@@ -578,6 +578,7 @@ class Builder:
         self.weapons = {}          # normalised name -> shared entry id
         self.weapon_names = {}     # normalised name -> display name
         self.upgrades = {}         # normalised name -> shared entry id (biomorphs, misc)
+        self.pick_options = set()  # upgrade ids holding picks of their own (Brotherhood Psyker): taken per model
         self.powers = []           # (name, id) psychic powers
         # "## Psychic Discipline: Runes of Battle": a doc may have several, which psykers choose from
         self.psy_sections = [dict(s, disc=s["title"].partition(": ")[2].strip() or None)
@@ -3150,6 +3151,7 @@ class Builder:
         m = re.search(r"must select one (.+?) and one Psychic Discipline", text)
         if not m:
             return
+        self.pick_options.add(eid)
         groups = child(e, "selectionEntryGroups")
         sec = next((s for s in self.sections if norm(s["title"]) == norm(m.group(1) + "s")), None)
         picks = [(sub["title"], self.upgrades.get(norm(sub["title"]))) for sub in (sec["subs"] if sec else [])]
@@ -4516,6 +4518,19 @@ class Builder:
             gkey = make_id(m["id"], "unit group", str(gi))
             if g.get("on_model"):
                 continue  # one of the model's own upgrades (exclusive_upgrades)
+            picks = [it for it in g["items"] if self.pick_options and g["kind"] != "exchange"
+                     and not g.get("one_of") and self.upgrades.get(norm(it[0])) in self.pick_options]
+            if picks:
+                # "Any Brotherhood Techmarine may take: Brotherhood Psyker": on each model, so every model
+                # that takes it makes its own picks; the rest of the list stays a unit option
+                me = next(e for e in unit.iter("selectionEntry") if e.get("id") == m["id"])
+                for nm, c, _ in picks:
+                    tid = self.option_target(nm, key)[0]
+                    lk = self.link(child(me, "entryLinks"), tid, nm, gkey + nm, maximum=1)
+                    add_cost(lk, self.cost(c))
+                g = dict(g, items=[it for it in g["items"] if it not in picks])
+                if not g["items"]:
+                    continue
             if g["kind"] == "exchange" and not g.get("unit_pool"):
                 continue  # on the model itself (add_model_wargear), so the swap replaces the weapon
             if g["kind"] == "exchange":

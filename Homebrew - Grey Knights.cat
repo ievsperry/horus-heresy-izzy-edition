@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="26" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="27" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -2764,6 +2764,14 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
+            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="7732-077f-5714-25ca" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e13-e118-e109-793f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Artificer armour" hidden="false" id="f028-7d05-48f4-5f2b" type="selectionEntry" targetId="583e-62cb-53f1-f952">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="231d-c724-5bed-009f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -2827,27 +2835,7 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Options" hidden="false" id="ecda-2dbb-b56b-ed3a">
-          <entryLinks>
-            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="6c56-c9bf-ab90-47dd" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
-              <modifiers>
-                <modifier type="increment" field="91ea-1674-2553-a413" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="9284-11a3-8aa8-e888" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a9-679c-18c4-6ef7" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="91ea-1674-2553-a413" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <selectionEntryGroups />
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
@@ -4126,6 +4114,14 @@
             <categoryLink targetId="6e0c-29ba-a445-8321" id="6a7b-7997-1ee9-f173" primary="false" name="Psyker:" />
           </categoryLinks>
           <entryLinks>
+            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="ecd9-e628-ff0d-65e4" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bef0-a3e5-ceef-5e19" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Aegis Terminator Armour" hidden="false" id="9851-c489-2f9d-c487" type="selectionEntry" targetId="a03b-838f-f694-0bf9">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="20b1-b79e-bf7a-bd60" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4300,21 +4296,6 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Brotherhood Champion: Options" hidden="false" id="6a55-4aff-19ae-8838">
           <entryLinks>
-            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="2e34-7e52-383a-8435" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
-              <modifiers>
-                <modifier type="increment" field="f208-d06a-f7c1-ae35" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="f603-2daa-d4f1-b688" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3734-c9fd-1970-b31e" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f208-d06a-f7c1-ae35" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
             <entryLink import="true" name="Icon of Justice" hidden="false" id="a522-fc08-73c6-f105" type="selectionEntry" targetId="439a-4ddc-a6d7-7c30">
               <modifiers>
                 <modifier type="increment" field="d5f1-cb1d-4880-58d2" value="1">
@@ -4497,6 +4478,14 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
+            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="ba15-c32d-578e-bb65" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e819-6601-db53-e385" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Frag grenades" hidden="false" id="f7df-02b4-42d4-7e6d" type="selectionEntry" targetId="cf9c-327b-3449-00d7">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7901-e9bf-1a96-3304" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4530,21 +4519,6 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="285d-e2ab-6580-c34f">
           <entryLinks>
-            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="c979-2025-fa18-db7c" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
-              <modifiers>
-                <modifier type="increment" field="44b8-2b58-0f98-29ea" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="6d3b-fcde-ea7a-9b08" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44ed-9756-eb3b-aec6" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="44b8-2b58-0f98-29ea" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
             <entryLink import="true" name="Purity Seals" hidden="false" id="7966-99df-16d6-8741" type="selectionEntry" targetId="d56c-c025-dfb4-8b79">
               <modifiers>
                 <modifier type="increment" field="4e43-a25a-9e24-805a" value="1">
@@ -5015,6 +4989,14 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
+            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="aefb-d465-2bbd-bfe1" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d82-d6e3-c011-2e7a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Aegis Terminator Armour" hidden="false" id="4cd7-d5ee-a38b-d0b9" type="selectionEntry" targetId="a03b-838f-f694-0bf9">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5322-dce3-e2cc-14fc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -5095,25 +5077,6 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6b0a-c686-7c59-0d7c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Paragon: Options" hidden="false" id="dfe8-251f-f1e7-47db">
-          <entryLinks>
-            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="6f93-86bd-82e1-512a" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
-              <modifiers>
-                <modifier type="increment" field="e37f-ddc1-f7bd-66c4" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="d053-eee3-582f-4715" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b36-6061-61fc-8087" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e37f-ddc1-f7bd-66c4" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
@@ -5492,6 +5455,14 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
+            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="8560-53ee-f755-a9bf" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1200-4f59-e118-c91d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Power armour" hidden="false" id="aaa9-242d-7987-bfca" type="selectionEntry" targetId="2d9d-480e-7c14-1a6f">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5be1-cd07-30ce-3b2a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -5517,25 +5488,6 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Knight of the Flame: Options" hidden="false" id="0361-9d2f-7610-25c6">
-          <entryLinks>
-            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="d306-fd33-5dba-3a4a" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
-              <modifiers>
-                <modifier type="increment" field="bb17-ffe8-0e31-f91c" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="ba09-4426-f694-81ff" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9917-27f1-8767-6f9e" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bb17-ffe8-0e31-f91c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Dedicated Transport" hidden="false" id="5623-fa37-76ce-dcf6">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0a8-ede0-4c58-77cb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -5915,6 +5867,14 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
+            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="900d-4a93-beb8-67de" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b0c-4941-8485-e71c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Aegis Terminator Armour" hidden="false" id="6803-58de-37c8-7a18" type="selectionEntry" targetId="a03b-838f-f694-0bf9">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6bc3-01af-628c-1561" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -5954,21 +5914,6 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Justicar: Options" hidden="false" id="36c6-f54e-60b0-844f">
           <entryLinks>
-            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="5206-b194-0037-ba77" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
-              <modifiers>
-                <modifier type="increment" field="92b8-159c-786c-dea5" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="a06e-f880-0e3c-d72c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9afe-c591-98e0-2d1a" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="92b8-159c-786c-dea5" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
             <entryLink import="true" name="Icon of Justice" hidden="false" id="9be3-2f40-00c5-8eff" type="selectionEntry" targetId="439a-4ddc-a6d7-7c30">
               <modifiers>
                 <modifier type="increment" field="946e-72d7-569e-d020" value="1">
@@ -6323,6 +6268,14 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
+            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="2c57-2d67-614c-4d5f" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3364-0f52-d3b7-f95f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Power armour" hidden="false" id="db2c-9639-9e2f-e527" type="selectionEntry" targetId="2d9d-480e-7c14-1a6f">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5797-d626-1020-7ba3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6342,25 +6295,6 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Justicar: Options" hidden="false" id="02f0-8eea-094f-4737">
-          <entryLinks>
-            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="ffa6-3492-03b9-5e69" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
-              <modifiers>
-                <modifier type="increment" field="7a3b-1b7f-09e4-b9f9" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="952b-1b89-5991-8ab9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b41-a54b-1b73-c8c0" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7a3b-1b7f-09e4-b9f9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Dedicated Transport" hidden="false" id="c3d2-798c-2558-0233">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adf2-846d-f341-d3b1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6696,6 +6630,14 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
+            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="08a6-8ee3-3665-f710" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82c7-1958-876c-92f6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Personal Teleporter" hidden="false" id="0b2f-deea-a8b3-e69a" type="selectionEntry" targetId="249a-4293-2dcf-c69f">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f459-ae1d-3c6d-cc1e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6720,27 +6662,7 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Interceptor Justicar: Options" hidden="false" id="0ade-6143-c994-5aa6">
-          <entryLinks>
-            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="677f-9b42-e283-7fb6" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
-              <modifiers>
-                <modifier type="increment" field="4273-a410-8e8a-7420" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="746f-72a2-ef15-55d8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee1d-adc3-82e6-e6b3" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4273-a410-8e8a-7420" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <selectionEntryGroups />
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="24" />
       </costs>
@@ -6963,6 +6885,14 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
+            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="b2e5-9b8a-c180-0515" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="152b-f9a1-3365-60bd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Aegis Tartaros Armour" hidden="false" id="7708-361f-1ce5-5eea" type="selectionEntry" targetId="8bf8-4bc1-fb1a-cd63">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="465f-617a-9416-3660" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6990,21 +6920,6 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Interceptor Justicar: Options" hidden="false" id="d441-4c40-6952-e9f9">
           <entryLinks>
-            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="ce0d-2091-9c5f-81b0" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
-              <modifiers>
-                <modifier type="increment" field="e211-8c6e-e465-fdfb" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="8d45-33eb-73fd-1f51" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96bf-df80-f16a-39a3" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e211-8c6e-e465-fdfb" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
             <entryLink import="true" name="Icon of Justice" hidden="false" id="319d-b44c-d393-dc5f" type="selectionEntry" targetId="439a-4ddc-a6d7-7c30">
               <modifiers>
                 <modifier type="increment" field="8bbe-c9b0-ad7c-2408" value="1">
@@ -7163,6 +7078,14 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
+            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="098e-34be-125c-e307" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bff3-0a2d-0dd1-d310" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Atomantic deflector" hidden="false" id="c671-a272-11ec-73cb" type="selectionEntry" targetId="38fb-9a0b-edef-a497">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80f3-20ca-d294-0190" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7184,21 +7107,6 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" hidden="false" id="9f82-44fe-eb9c-322d">
           <entryLinks>
-            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="b2ce-e01b-cc81-dc09" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
-              <modifiers>
-                <modifier type="increment" field="7134-7f40-953f-df50" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="e92f-9e4d-ac6b-6b2c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ec8-e9b3-f3ee-9d33" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7134-7f40-953f-df50" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
             <entryLink import="true" name="Teleport Harness" hidden="false" id="ef86-8a8b-d5e1-051f" type="selectionEntry" targetId="9f80-7aed-1501-2482">
               <modifiers>
                 <modifier type="increment" field="1488-dffc-ac42-d20b" value="1">
@@ -7987,6 +7895,14 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
+            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="51c3-336b-3a12-6ff5" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a35d-d893-e19b-ce44" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Astral Aim" hidden="false" id="5fe4-aada-02b3-fc39" type="selectionEntry" targetId="b6d3-57d1-fa45-ad91">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7dee-48d1-715d-ca51" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8018,25 +7934,6 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Purgator Justicar: Options" hidden="false" id="bcaf-5f0a-de12-14d3">
-          <entryLinks>
-            <entryLink import="true" name="Brotherhood Psyker" hidden="false" id="1c13-e030-3179-925b" type="selectionEntry" targetId="5f44-a669-2db0-7b2a">
-              <modifiers>
-                <modifier type="increment" field="aa24-c7a9-9af1-164f" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="f4b5-9622-cd75-681a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="baff-7665-18b0-ffa8" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="aa24-c7a9-9af1-164f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Dedicated Transport" hidden="false" id="8269-d812-0818-5fb7">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcb2-c5ee-2439-7948" percentValue="false" includeChildSelections="false" includeChildForces="false" />
