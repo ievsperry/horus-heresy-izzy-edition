@@ -8,7 +8,7 @@ Liber Izonian collects the custom units made for this project. Each unit is writ
 
 ## World Eaters
 
-### The Red Fangs (Heavy Support) — 100 pts
+### The Red Fangs (Heavy Support) — 110 pts
 
 *Based on the Legion Heavy Support Squad: the same models, characteristics, wargear, options and Dedicated Transports unless noted below.*
 
@@ -34,7 +34,7 @@ Liber Izonian collects the custom units made for this project. Each unit is writ
 | Option | Cost |
 | --- | --: |
 | **The squad may include:** |  |
-| – Up to 5 additional Legionaries | +15 points each |
+| – Up to 5 additional Legionaries | +17 points each |
 | **The entire squad may exchange its heavy bolters for:** |  |
 | – Autocannons | +5 points per model |
 

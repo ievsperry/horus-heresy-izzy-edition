@@ -156,5 +156,32 @@ def red_fangs():
     return "The Red Fangs: added to " + WORLD_EATERS
 
 
+RED_FANGS_UNIT_COST, RED_FANGS_MODEL_COST = 42, 17  # 110 points for the sergeant and four, +17 per Legionary
+
+
+def red_fangs_costs():
+    """110 points for the starting five (the unit's own 42 and four Legionaries at 17), +17 per additional one."""
+    we = open(WORLD_EATERS, encoding="utf-8").read()
+    a = re.search(r'<selectionEntry [^>]*name="The Red Fangs"', we).start()
+    a, b = element_span(we, a, "selectionEntry")
+    unit = we[a:b]
+
+    def set_cost(block, value):
+        cs = child_span(block, "costs")
+        costs = re.sub(r'(<cost name="Pts"[^>]*value=")[^"]*', lambda m: m.group(1) + str(value), block[cs[0]:cs[1]])
+        return block[:cs[0]] + costs + block[cs[1]:]
+
+    for name in ("Legionaries (collective)", "Legionary w/ Options"):
+        j = unit.index(f'name="{name}"')
+        ea, eb = element_span(unit, unit.rfind("<selectionEntry", 0, j), "selectionEntry")
+        unit = unit[:ea] + set_cost(unit[ea:eb], RED_FANGS_MODEL_COST) + unit[eb:]
+    unit = set_cost(unit, RED_FANGS_UNIT_COST)
+    if unit != we[a:b]:
+        open(WORLD_EATERS, "w", encoding="utf-8", newline="").write(we[:a] + unit + we[b:])
+        return "The Red Fangs: 110 points, +17 per Legionary"
+    return "The Red Fangs: costs already set"
+
+
 if __name__ == "__main__":
     print(red_fangs())
+    print(red_fangs_costs())
