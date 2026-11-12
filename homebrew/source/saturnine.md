@@ -180,8 +180,9 @@ Rules marked † lean on exact 2.0 wording; the checklist at the end lists them.
 
 - Atomantic deflector\*
 - Saturnine Dreadnought fists
-- Two heavy plasma bombards or two disintegrator cannons (chosen when the army is built)
-- Two support weapons, chosen from: photonic incinerator, concussive resonator
+- Disintegrator cannon
+- Heavy plasma bombard
+- Two photonic incinerators
 
 **Unit Type**
 
@@ -198,9 +199,17 @@ Rules marked † lean on exact 2.0 wording; the checklist at the end lists them.
 
 | Option | Cost |
 | --- | --: |
-| **The Dreadnought may exchange one primary weapon for:** |  |
-| – Inversion beam | +10 points |
-| – Graviton pulveriser | +15 points |
+| **The Dreadnought may exchange its heavy plasma bombard for one of the following:** |  |
+| – Disintegrator cannon | +10 points |
+| – Inversion beamer | +10 points |
+| – Graviton pulveriser | +10 points |
+| **The Dreadnought may exchange its disintegrator cannon for one of the following:** |  |
+| – Heavy plasma bombard | Free |
+| – Inversion beamer | Free |
+| – Graviton pulveriser | Free |
+| **The Dreadnought may exchange both photonic incinerators for one of the following:** |  |
+| – Two concussive resonators | +10 points |
+| – Two heavy particle shredders | +10 points |
 | **The Dreadnought may take:** |  |
 | – Up to two hunter-killer missiles\* or a Dreadnought drop pod\* as permitted for other Legion Dreadnoughts | As official costs |
 
@@ -217,13 +226,14 @@ Weapons marked with an asterisk on a datasheet use their official 2.0 profile. W
 | Concussive resonator | Template | 6 | 4 | Assault 1, Concussive (1), Pinning |
 | Disintegrator cannon | 36" | 9 | 2 | Heavy 2, Rending (5+), Sunder |
 | Graviton pulveriser | 24" | – | 4 | Heavy 1, Large Blast (5"), Graviton†, Concussive (2); gains Sunder if the Dreadnought did not move this turn |
+| Heavy particle shredder | 12" | 7 | 4 | Assault 3, Shred |
 | Photonic incinerator | Template | 5 | 4 | Assault 1, Shred |
 | Saturnine Dreadnought fists | – | 10 | 3 | Melee, Brutal (2) |
-| Inversion beam – 18" to 42" | 42" | 8 | 3 | Heavy 1, Blast (3") |
-| Inversion beam – 42" to 72" | 72" | 10 | 2 | Heavy 1, Blast (3"), Rending (6+) |
+| Inversion beamer – 18" to 42" | 42" | 8 | 3 | Heavy 1, Blast (3") |
+| Inversion beamer – 42" to 72" | 72" | 10 | 2 | Heavy 1, Blast (3"), Rending (6+) |
 | Heavy plasma bombard – Maximal fire | 48" | 8 | 4 | Heavy 1, Large Blast (5"), Barrage, Rending (4+), Gets Hot |
 | Heavy plasma bombard – Sustained fire | 48" | 7 | 4 | Heavy 1, Large Blast (5"), Barrage, Rending (6+) |
-| Inversion beam – Up to 18" | 18" | 6 | 4 | Heavy 1, Blast (3") |
+| Inversion beamer – Up to 18" | 18" | 6 | 4 | Heavy 1, Blast (3") |
 
 ### Saturnine Terminator Weapons
 

@@ -599,8 +599,9 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Terminator Armour, the Saturnine Terminator Squad and the Saturnine Dreadnought, as Legends units every Legion
   catalogue links (Liber Centura adds the Centurion in Saturnine Terminator Armour and the Pride of the Legion
   Heavy Support slot). It was written into the library directly, with no add script; the doc is the reference.
-  The Dreadnought's second primary weapon must match the first (two heavy plasma bombards or two disintegrator
-  cannons) unless it is exchanged for an inversion beam or graviton pulveriser: a mixed pair is a roster error.
+  The Dreadnought has a heavy plasma bombard, a disintegrator cannon and two photonic incinerators, each
+  exchanged in its own pick; the incinerators go as a pair ("Two Concussive Resonators", "Two Heavy Particle
+  Shredders"), each pair one entry linking the weapon twice.
 - `python3 homebrew/add_sisters_of_silence.py` adds the Liber Imperatus Sisters of Silence expansion (the Claude Doc
   "Sisters of Silence Horus Heresy 2.0 - Homebrew Conversion", kept as `source/sisters-of-silence.md`) to
   `2022 - LI - Sisters Of Silence.cat`. build_catalogue.py's Builder reads the doc's datasheets; their units then
