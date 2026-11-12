@@ -151,6 +151,13 @@ def load_gst_weapons(path=GST_FILE):
     return weapons
 
 
+def load_gst_profile(name, path=GST_FILE):
+    """A profile the game system shares by name (the Aetheric Lightning Psychic Weapon)."""
+    ns = "{http://www.battlescribe.net/schema/gameSystemSchema}"
+    sp = ET.parse(path).getroot().find(ns + "sharedProfiles")
+    return next((p.get("id") for p in sp if p.get("name") == name), None) if sp is not None else None
+
+
 def load_gst_choices(path=GST_FILE):
     """Game system entries that are a choice of weapons ("Power Weapon": axe, lance, maul or sword), by name."""
     ns = "{http://www.battlescribe.net/schema/gameSystemSchema}"
@@ -578,6 +585,7 @@ class Builder:
         self.weapons = {}          # normalised name -> shared entry id
         self.weapon_names = {}     # normalised name -> display name
         self.upgrades = {}         # normalised name -> shared entry id (biomorphs, misc)
+        self.pick_options = set()  # upgrade ids holding picks of their own (Brotherhood Psyker): taken per model
         self.powers = []           # (name, id) psychic powers
         # "## Psychic Discipline: Runes of Battle": a doc may have several, which psykers choose from
         self.psy_sections = [dict(s, disc=s["title"].partition(": ")[2].strip() or None)
@@ -650,7 +658,9 @@ class Builder:
     # ---- weapons
 
     def wargear_sections(self):
-        return [s for s in self.sections if s["title"] == "Biomorphs" or "Wargear" in s["title"]]
+        # "## Minor Psychic Powers" (Grey Knights): each power is picked like a Thousand Sons Minor Arcana
+        return [s for s in self.sections
+                if s["title"] in ("Biomorphs", "Minor Psychic Powers") or "Wargear" in s["title"]]
 
     def build_weapons(self):
         rows, aux = [], []
@@ -1213,6 +1223,9 @@ class Builder:
         lines = (norm(l[2:]) for s in self.sections for sub in [s] + s["subs"] for l in sub["lines"] if l.startswith("- "))
         if len(self.psy_sections) < 2 and not any(l in named for l in lines):
             return  # one discipline that every psyker has (unless a datasheet names it: Phantasmancy)
+        core = any(re.search(r"Any Psyker that selects a Psychic Discipline also gains the Aetheric Lightning", l)
+                   for s in self.sections for l in s["lines"])
+        core_lightning = load_gst_profile("Aetheric Lightning") if core else None
         for psy in self.psy_sections:
             name = psy["disc"]
             did = make_id("discipline", self.faction, name)
@@ -1236,6 +1249,12 @@ class Builder:
                 for n, i in items:
                     if norm(n) in pick:
                         self.link(gl, i, n, gid, maximum=1)
+            if core_lightning:
+                # "Any Psyker that selects a Psychic Discipline also gains the Aetheric Lightning Psychic Weapon":
+                # the game system's profile, as its own disciplines give it
+                el(child(e, "infoLinks"), "infoLink", name="Aetheric Lightning", id=make_id(did, "aetheric lightning"),
+                   hidden=False, targetId=core_lightning, type="profile")
+                self.link_rule(e, "Force", did)
             add_cost(e, 0)
             self.disciplines[name] = did
 
@@ -3136,8 +3155,35 @@ class Builder:
             for pname, pid in self.powers:
                 if re.search(r"knows " + re.escape(pname), name, re.I):
                     self.link(child(e, "entryLinks"), pid, pname, eid, count=1)
+            self.rule_option_picks(e, name, eid)
             self.upgrades[k] = eid
         return self.upgrades[k]
+
+    def rule_option_picks(self, e, name, eid):
+        """An option that is a rule saying "This model must select one Minor Psychic Power and one Psychic
+        Discipline" (Grey Knights' Brotherhood Psyker, +15) holds those picks, made once it is taken."""
+        text = next((l for s in self.sections for l in s["lines"]
+                     if l.startswith(f"**{name}.**")), "")
+        m = re.search(r"must select one (.+?) and one Psychic Discipline", text)
+        if not m:
+            return
+        self.pick_options.add(eid)
+        groups = child(e, "selectionEntryGroups")
+        sec = next((s for s in self.sections if norm(s["title"]) == norm(m.group(1) + "s")), None)
+        picks = [(sub["title"], self.upgrades.get(norm(sub["title"]))) for sub in (sec["subs"] if sec else [])]
+        lists = [(m.group(1) + "s", [p for p in picks if p[1]])]
+        if self.disciplines:
+            lists.append(("Psychic Disciplines", list(self.disciplines.items())))
+        for label, items in lists:
+            if not items:
+                continue
+            gkey = make_id(eid, label)
+            g = el(groups, "selectionEntryGroup", name=label, hidden=False, id=gkey)
+            add_constraint(g, "min", 1, gkey + "min")
+            add_constraint(g, "max", 1, gkey + "max")
+            gl = el(g, "entryLinks")
+            for n, tid in items:
+                self.link(gl, tid, n, gkey, maximum=1)
 
     def option_target(self, name, key):
         built = re.match(r"(.+?) with (?:an? )?in-built (.+)$", name)
@@ -4488,6 +4534,19 @@ class Builder:
             gkey = make_id(m["id"], "unit group", str(gi))
             if g.get("on_model"):
                 continue  # one of the model's own upgrades (exclusive_upgrades)
+            picks = [it for it in g["items"] if self.pick_options and g["kind"] != "exchange"
+                     and not g.get("one_of") and self.upgrades.get(norm(it[0])) in self.pick_options]
+            if picks:
+                # "Any Brotherhood Techmarine may take: Brotherhood Psyker": on each model, so every model
+                # that takes it makes its own picks; the rest of the list stays a unit option
+                me = next(e for e in unit.iter("selectionEntry") if e.get("id") == m["id"])
+                for nm, c, _ in picks:
+                    tid = self.option_target(nm, key)[0]
+                    lk = self.link(child(me, "entryLinks"), tid, nm, gkey + nm, maximum=1)
+                    add_cost(lk, self.cost(c))
+                g = dict(g, items=[it for it in g["items"] if it not in picks])
+                if not g["items"]:
+                    continue
             if g["kind"] == "exchange" and not g.get("unit_pool"):
                 continue  # on the model itself (add_model_wargear), so the swap replaces the weapon
             if g["kind"] == "exchange":
