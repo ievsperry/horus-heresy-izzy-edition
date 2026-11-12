@@ -602,6 +602,14 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   The Dreadnought has a heavy plasma bombard, a disintegrator cannon and two photonic incinerators, each
   exchanged in its own pick; the incinerators go as a pair ("Two Concussive Resonators", "Two Heavy Particle
   Shredders"), each pair one entry linking the weapon twice.
+- `python3 homebrew/add_saturnine_command_squad.py` adds the Saturnine Command Squad from `source/saturnine.md` to
+  the library (an HQ choice linked from every Legion catalogue and Shattered Legions the way the Praetor in
+  Saturnine Terminator Armour is, without the Compulsory HQ slot): a Chosen Champion and one to five Chosen with
+  paired Saturnine disruption fists (one entry linking the fist twice), each pair of weapons it may exchange them
+  for as one entry, a particle shredder or plasma blaster per model, and a Legion standard for one Chosen. It adds the
+  Saturnine concussion hammer and war axe, which the Praetor and Centurion in Saturnine Terminator Armour may take in
+  place of their disruption fist (+10), and rewords the Thermal Diffraction Field rule for any model that has one.
+  It refuses to run on a library that already has the unit.
 - `python3 homebrew/add_sisters_of_silence.py` adds the Liber Imperatus Sisters of Silence expansion (the Claude Doc
   "Sisters of Silence Horus Heresy 2.0 - Homebrew Conversion", kept as `source/sisters-of-silence.md`) to
   `2022 - LI - Sisters Of Silence.cat`. build_catalogue.py's Builder reads the doc's datasheets; their units then

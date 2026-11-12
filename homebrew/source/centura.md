@@ -250,6 +250,9 @@ Legion Contemptor Centurions and Legion Castra Ferrum Centurions have the Pater 
 | **The Centurion may exchange his plasma blaster for:** |  |
 | – Plasma bombard | +5 points |
 | – Twin heavy disintegrator | +10 points |
+| **The Centurion may exchange his Saturnine disruption fist for:** |  |
+| – Saturnine concussion hammer | +10 points |
+| – Saturnine war axe | +10 points |
 | **The Centurion may take:** |  |
 | – Particle shredder | +5 points |
 | **A Centurion with the Legion Forge Lord upgrade may take:** |  |
@@ -5419,6 +5422,8 @@ These match the *Saturnine Terminators and Dreadnought* conversion doc. Weapons 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Particle shredder | 8" | 6 | 4 | Assault 3, Shred |
+| Saturnine concussion hammer | – | x2 | 2 | Melee, Unwieldy (4), Brutal (2), Concussive (2), Concussion (2) |
+| Saturnine war axe | – | +1 | 2 | Melee, Murderous Strike (6+), Reaping Blow (2), Unwieldy (2) |
 | Plasma bombard – Maximal fire | 36" | 8 | 4 | Heavy 1, Large Blast (5"), Barrage, Gets Hot, Rending (4+) |
 | Plasma bombard – Sustained fire | 36" | 7 | 4 | Heavy 1, Blast (3"), Barrage, Rending (6+) |
 | Saturnine disruption fist | – | x2 | 2 | Melee, Brutal (2), Unwieldy, Specialist Weapon |
