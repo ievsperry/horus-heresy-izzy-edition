@@ -44,7 +44,7 @@ The Heavy Support Squad's other heavy weapons are not available.
 
 **Wrathful Souls.** A unit with this special rule armed with heavy bolters gives them Rupture (6+); when the unit makes Shooting Attacks as part of an Overwatch Reaction, this becomes Rupture (4+). Against a unit with the Legiones Astartes (World Eaters) special rule of a different Allegiance, the Rupture (X) becomes Breaching (X) of the same value instead. In addition, its autocannons fire one additional shot (Heavy 3 instead of Heavy 2).
 
-**Dying Gift.** At the start of the controlling player's Shooting phase, a unit with this special rule armed with heavy bolters or autocannons may elect to give those weapons the Gets Hot special rule for the phase and to improve their Rupture (X) or Rending (X) to Rupture (4+) or Rending (4+). A Wound suffered from Gets Hot while this is in effect is resolved at the improved AP: AP 3 for a weapon with Rupture and AP 2 for one with Rending.
+**Dying Gift.** Once per battle, at the start of the controlling player's Shooting phase, a unit with this special rule armed with heavy bolters or autocannons may elect to give those weapons the Gets Hot special rule for the phase and to improve their Rupture (X) or Rending (X) to Rupture (4+) or Rending (4+). A Wound suffered from Gets Hot while this is in effect is resolved at the improved AP: AP 3 for a weapon with Rupture and AP 2 for one with Rending.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | :-: | :-: | --- |

@@ -27,7 +27,7 @@ WRATHFUL_SOULS = (
     "(World Eaters) special rule of a different Allegiance, the Rupture (X) becomes Breaching (X) of the same value "
     "instead. In addition, its autocannons fire one additional shot (Heavy 3 instead of Heavy 2).")
 DYING_GIFT = (
-    "At the start of the controlling player&apos;s Shooting phase, a unit with this special rule armed with heavy "
+    "Once per battle, at the start of the controlling player&apos;s Shooting phase, a unit with this special rule armed with heavy "
     "bolters or autocannons may elect to give those weapons the Gets Hot special rule for the phase and to improve "
     "their Rupture (X) or Rending (X) to Rupture (4+) or Rending (4+). A Wound suffered from Gets Hot while this is in "
     "effect is resolved at the improved AP: AP 3 for a weapon with Rupture and AP 2 for one with Rending.")
@@ -128,9 +128,9 @@ def red_fangs():
     il = child_span(unit, "infoLinks")
     unit = unit[:il[1] - len("</infoLinks>")] + rules + unit[il[1] - len("</infoLinks>"):]
     unit = renew_ids(unit, "red fangs")
-    weapons = (weapon("heavy bolter", "Heavy Bolter", "Heavy Bolter (Wrathful Souls)", "36&quot;", "5", "4",
+    weapons = (weapon("heavy bolter", "Heavy Bolter (Wrathful Souls)", "Heavy Bolter (Wrathful Souls)", "36&quot;", "5", "4",
                       "Heavy 4, Rupture (6+)", "Rupture (X)", "Rupture (6+)")
-               + weapon("autocannon", "Autocannon", "Autocannon (Wrathful Souls)", "48&quot;", "7", "4",
+               + weapon("autocannon", "Autocannon (Wrathful Souls)", "Autocannon (Wrathful Souls)", "48&quot;", "7", "4",
                         "Heavy 3, Rending (6+)", "Rending (X)", "Rending (6+)"))
     i = we.index("  </sharedSelectionEntries>")
     we = we[:i] + "    " + unit + nl + "    " + weapons + nl + we[i:]
@@ -186,6 +186,26 @@ def red_fangs_changes():
         return "The Red Fangs: five models, 130 points, W2"
     return "The Red Fangs: already five models, 130 points, W2"
 
+def red_fangs_sync():
+    """Keep an existing catalogue in step: the rules' text, and the Wrathful Souls weapons named apart from the
+    official heavy bolter and autocannon (only The Red Fangs link them)."""
+    we = open(WORLD_EATERS, encoding="utf-8").read()
+    before = we
+    for key, text in (("wrathful souls", WRATHFUL_SOULS), ("dying gift", DYING_GIFT)):
+        we = re.sub(r'(<rule id="%s"[^>]*>\s*<description>).*?(</description>)' % mk(key),
+                    lambda m: m.group(1) + text + m.group(2), we, count=1, flags=re.S)
+    for key, name in (("heavy bolter", "Heavy Bolter"), ("autocannon", "Autocannon")):
+        new = f"{name} (Wrathful Souls)"
+        we = re.sub(r'(<selectionEntry id="%s" name=")[^"]*' % mk(key), lambda m: m.group(1) + new, we, count=1)
+        we = re.sub(r'(<entryLink [^>]*name=")%s("[^>]*targetId="%s")' % (re.escape(name), mk(key)),
+                    lambda m: m.group(1) + new + m.group(2), we)
+    if we != before:
+        open(WORLD_EATERS, "w", encoding="utf-8", newline="").write(we)
+        return "The Red Fangs: rules and weapon names brought up to date"
+    return "The Red Fangs: rules and weapon names up to date"
+
+
 if __name__ == "__main__":
     print(red_fangs())
     print(red_fangs_changes())
+    print(red_fangs_sync())
