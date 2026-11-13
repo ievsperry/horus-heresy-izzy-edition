@@ -650,7 +650,8 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   - the eight Daemonic Assassins as HQ choices that are not Compulsory HQ and can never be the Warlord, each with
     its Dominion's category. One is an error unless the Detachment's Ætheric Dominion is its own; under Formless
     Distortion any one may be taken, and two different ones are an error;
-  - the Ætheric Blessings: every Daemon unit, official and new, may take one, priced per model (the new units'
+  - the Ætheric Blessings, which add to their Dominion's Detachment Ability without repeating it: every Daemon
+    unit, official and new, may take one, priced per model (the new units'
     datasheet price; otherwise +5 for 1-Wound models, +15 for 2 to 4 Wounds, +30 for 5 or more). Each shows (and
     is allowed) only with its own Dominion, or any one under Formless Distortion;
   - Master of the Ruinstorm on the Ruinstorm Daemon Sovereign and Harbinger, with the Master of the Legion rule
@@ -680,7 +681,8 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     the Ruinstorm, Bound Daemons, Word Bearers, Legiones Astartes, Imperialis Militia), takes the doc's Detachment
     Ability and Restriction as its rule, links the special rules it gives (Rage (2), Feel No Pain (5+), Shrouded
     (6+) and so on) and shows its Advanced Reaction. The official Infernal Tempest Elemental Eruption weapon is gone.
-    Heedless Slaughter is an error in a Detachment with a Psyker, and Ravenous Dissolution in an Allied Detachment or
+    Heedless Slaughter is an error in a Daemons of the Ruinstorm Detachment with a Psyker (in any other army it may
+    share the army and Detachment with Psykers, but is an error with a Psyker in its own unit), and Ravenous Dissolution in an Allied Detachment or
     an army that has one; the other Restrictions are rule text;
   - in `2022 - Daemons - Daemons of the Ruinstorm.cat`, Empyric Surge shows on the army's Ætheric Dominion entry, and
     a Ruinstorm Warlord (Sovereign, Hierarch, Harbinger, or the Arch-Daemon for the Maw of Annihilation) picks one of

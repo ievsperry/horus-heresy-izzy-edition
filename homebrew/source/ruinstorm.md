@@ -727,7 +727,7 @@ These replace the official Ætheric Dominion rules for every army that selects a
 
 **Detachment Ability:** Models gain the Rage (2) and Furious Charge (1) special rules.
 
-**Restriction:** Units in a Detachment with this Dominion may not include any models with the Psyker Unit Sub-type (and may not manifest Psychic Powers or Psychic Weapons).
+**Restriction:** In a Daemons of the Ruinstorm army, a Detachment with this Dominion may not include any models with the Psyker Unit Sub-type (and its units may not manifest Psychic Powers or Psychic Weapons). In any other army, units with this Dominion may be in the same army and Detachment as Psykers, but no model with the Psyker Unit Sub-type may be part of, or join, a unit with this Dominion.
 
 **Advanced Reaction: Blood-Crazed Retaliation (Assault Phase)**
 
@@ -892,35 +892,35 @@ While a Warlord with this Trait is on the battlefield, friendly units with the D
 
 *As the Warp saturates realspace, daemonic entities draw sustenance and twisted power from the specific emotional and metaphysical currents of their patron Ætheric Dominion. By manifesting an Ætheric Blessing, a daemonic pack or behemoth attunes itself to the deeper resonances of the Empyrean.*
 
-Any unit with the Daemon Unit Type (or Corrupted Engine Unit Sub-type) may purchase one Ætheric Blessing matching the Ætheric Dominion of its Detachment (or any single Ætheric Blessing if the Detachment has the Formless Distortion Dominion). Unless a unit's datasheet states otherwise, a Blessing costs +5 points per model for units of 1-Wound models, +15 points per model for units of 2–4 Wound models, and +30 points per model for 5+ Wound models and Walkers.
+Any unit with the Daemon Unit Type (or Corrupted Engine Unit Sub-type) may purchase one Ætheric Blessing matching the Ætheric Dominion of its Detachment (or any single Ætheric Blessing if the Detachment has the Formless Distortion Dominion). A Blessing adds to its Dominion's Detachment Ability; it never repeats it. Unless a unit's datasheet states otherwise, a Blessing costs +5 points per model for units of 1-Wound models, +15 points per model for units of 2–4 Wound models, and +30 points per model for 5+ Wound models and Walkers.
 
 ### Heedless Slaughter
 
-Models in a unit with this Ætheric Blessing gain the Rage (2) and Furious Charge (1) special rules, and may re-roll failed Charge Distance rolls.
+Models in a unit with this Ætheric Blessing gain the Hammer of Wrath (1) special rule (or increase an existing Hammer of Wrath value by +1), and may re-roll failed Charge Distance rolls.
 
 ### Putrid Corruption
 
-Models in a unit with this Ætheric Blessing gain the Feel No Pain (5+) special rule (or improve an existing Feel No Pain roll by +1, to a maximum of 4+), and enemy units locked in close combat with them suffer a -1 penalty to their Toughness Characteristic (to a minimum of T 1) when resolving To Wound rolls in the Assault phase.
+Enemy units locked in close combat with a unit with this Ætheric Blessing suffer a -1 penalty to their Toughness Characteristic when resolving To Wound rolls in the Assault phase and a -1 penalty to their Initiative Characteristic (each to a minimum of 1).
 
 ### Infernal Tempest
 
-Models in a unit with this Ætheric Blessing improve their Daemonic Invulnerable Save by +1 (to a maximum of 4+), and all ranged weapons and Psychic Weapons used by models in the unit gain the Rending (6+) special rule (or improve an existing Rending value by +1, to a maximum of 4+).
+All ranged weapons and Psychic Weapons used by models in a unit with this Ætheric Blessing gain the Soul Blaze and Rending (6+) special rules (or improve an existing Rending value by +1, to a maximum of 4+).
 
 ### Rapturous Sensation
 
-Models in a unit with this Ætheric Blessing gain a +1 bonus to their Initiative Characteristic, gain the Fleet (2) special rule, and inflict Rending (5+) on all close combat attacks (or improve an existing close combat Rending value by +1, to a maximum of 4+).
+Models in a unit with this Ætheric Blessing gain the Hit & Run and Sudden Strike (1) special rules.
 
 ### Encroaching Ruin
 
-All Melee weapons and ranged weapons used by models in a unit with this Ætheric Blessing gain the Armourbane (Melee) or Sunder special rule (as appropriate to the weapon type), and enemy units within 6" of one or more units with this Blessing reduce their Cover Saves by -1 (to a minimum of 6+).
+Models in a unit with this Ætheric Blessing gain the Fear (1) special rule (or increase an existing Fear value by +1), and enemy units within 6" of one or more units with this Blessing reduce their Cover Saves by -1 (to a minimum of 6+).
 
 ### Malevolent Artifice
 
-Models in a unit with this Ætheric Blessing gain a +1 bonus to their Armour Save (or gain a 4+ Armour Save if they do not possess one) and gain the It Will Not Die (5+) special rule.
+Models in a unit with this Ætheric Blessing gain the Relentless special rule, and all of their ranged weapons gain the Breaching (6+) special rule (or improve an existing Breaching value by +1, to a maximum of 4+).
 
 ### Ravenous Dissolution
 
-Models in a unit with this Ætheric Blessing gain the Hatred (Everything) special rule, and their Melee weapons gain the Murderous Strike (6+) special rule (or improve an existing Murderous Strike value by +1, to a maximum of 4+).
+The Melee weapons of models in a unit with this Ætheric Blessing gain the Murderous Strike (6+) special rule (or improve an existing Murderous Strike value by +1, to a maximum of 4+), and the unit adds +1 to its Combat Resolution score in any combat that includes an enemy model with the Character Unit Sub-type.
 
 ### Formless Distortion
 

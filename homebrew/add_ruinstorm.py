@@ -267,8 +267,8 @@ def main():
     for n in assassins:
         for parent in list(unit(n).iter()):
             for l in list(parent):
-                if l.tag == "entryLink" and l.get("targetId") == WARLORD:
-                    parent.remove(l)  # Harbinger of Execution: never the Warlord
+                if l.tag == "entryLink" and (l.get("targetId") == WARLORD or l.get("name") == "Warlord Traits"):
+                    parent.remove(l)  # Harbinger of Execution: never the Warlord, so no Warlord Trait either
     for n, weapon in MUST_EXCHANGE.items():
         for g in unit(n).iter("selectionEntryGroup"):
             for l in list(g.findall("entryLinks/entryLink")):

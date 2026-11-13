@@ -7,7 +7,8 @@ usage: python3 homebrew/apply_ruinstorm_dominions.py
   Ruinstorm, Bound Daemons, Word Bearers, Legiones Astartes, Imperialis Militia) takes the doc's Detachment Ability
   and Restriction as its rule, links the special rules it gives, and shows its Advanced Reaction. The official
   Infernal Tempest Elemental Eruption weapon goes. Two Restrictions are checked: Heedless Slaughter is an error in a
-  Detachment with a Psyker, and Ravenous Dissolution in an Allied Detachment or an army that has one.
+  Daemons of the Ruinstorm Detachment with a Psyker (in any other army, only with a Psyker in the same unit), and
+  Ravenous Dissolution in an Allied Detachment or an army that has one.
 - 2022 - Daemons - Daemons of the Ruinstorm.cat: the Empyric Surge Advanced Reaction on the army's Ætheric Dominion
   entry, and the Warlord Traits: the three generic traits and each Dominion's trait (shown, and allowed, only in a
   Detachment of that Dominion) replace the official Ruinstorm and generic traits. The Arch-Daemon, a Warlord only for
@@ -30,6 +31,7 @@ DOC = "homebrew/source/ruinstorm.md"
 REACTION = ("90b9-7fab-87db-aed3", "Reactions", "c627-4637-8de5-65fb")
 WARLORD_TRAIT = et.WARLORD_TRAIT
 PSYKER_CATEGORY = "6e0c-29ba-a445-8321"
+RUINSTORM_FACTION = "afca-3047-fb26-d097"  # the game system's Daemons of the Ruinstorm army entry
 ALLIED = "d4f2-6da5-b6de-06ec"
 DOMINIONS = {"Heedless Slaughter": "3d70-1d54-a791-ac60", "Putrid Corruption": "b7db-bf16-47c5-dc05",
              "Infernal Tempest": "e4fb-66cd-e07d-609b", "Rapturous Sensation": "1214-3abe-c6d1-2038",
@@ -151,10 +153,17 @@ def main():
             el(e, "profiles").append(profile(REACTION, f"Advanced Reaction: {reaction[0]}", reaction[1], name))
             cmax = next(c for c in e.findall("constraints/constraint") if c.get("type") == "max")
             mods = bc.child(e, "modifiers")
-            if name == "Heedless Slaughter":  # no Psykers in the Detachment
+            if name == "Heedless Slaughter":
+                # a Daemons of the Ruinstorm Detachment may have no Psyker; in any other army a Psyker may be in the
+                # Detachment but not in the unit with this Dominion
                 m = el(mods, "modifier", type="set", field=cmax.get("id"), value=0)
-                el(m, "comment").text = "Heedless Slaughter: no Psykers in the Detachment"
-                cond(m, PSYKER_CATEGORY)
+                el(m, "comment").text = ("Heedless Slaughter: no Psykers in a Daemons of the Ruinstorm Detachment, "
+                                         "or in the unit elsewhere")
+                g = el(el(m, "conditionGroups"), "conditionGroup", type="or")
+                cond(g, PSYKER_CATEGORY, scope="parent")
+                ruinstorm = el(bc.child(g, "conditionGroups"), "conditionGroup", type="and")
+                cond(ruinstorm, RUINSTORM_FACTION)
+                cond(ruinstorm, PSYKER_CATEGORY)
             if name == "Ravenous Dissolution":  # no Allied Detachment, and never one itself
                 m = el(mods, "modifier", type="set", field=cmax.get("id"), value=0)
                 el(m, "comment").text = "Ravenous Dissolution: no Allied Detachment"

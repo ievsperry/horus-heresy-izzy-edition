@@ -158,7 +158,7 @@ At the start of each of the controlling player's turns, while a Warlord with thi
 
 *A leader whose unbreakable will turns aside even the powers of the warp.*
 
-A Warlord with this Trait gains the Adamantine Will (4+) special rule (or improves an existing Adamantine Will roll by +1, to a maximum of 2+). Furthermore, whenever an enemy model with the Psyker Unit Sub-type attempts to make a Psychic check while within 12" of a Warlord with this Trait, that model suffers Perils of the Warp on any double rolled on the 2D6 Psychic check (rather than only on double 1s or double 6s). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.
+A Warlord with this Trait gains the Adamantium Will (4+) special rule (or improves an existing Adamantium Will roll by +1, to a maximum of 2+). Furthermore, whenever an enemy model with the Psyker Unit Sub-type attempts to make a Psychic check while within 12" of a Warlord with this Trait, that model suffers Perils of the Warp on any double rolled on the 2D6 Psychic check (rather than only on double 1s or double 6s). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.
 
 ## Force Organisation and Rites of War
 
