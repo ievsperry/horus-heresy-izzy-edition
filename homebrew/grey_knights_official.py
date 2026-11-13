@@ -19,6 +19,9 @@ and the Teleport Harness links the game system's Deep Strike rule.
 The Rites of War that bar these kinds of unit bar the official ones too: Purifier Crusade (no Land Raiders) hides
 the official Land Raiders, and Teleport Assault (no Dedicated Transports) hides the Rhino.
 
+The Aegis Captain may take an Aegis Bastion Squad as a Retinue (no Force Organisation slot), as an official
+Legion leader takes a Command Squad.
+
 Grey Knights are always Loyalist: a force that picks the Traitor allegiance may not take the Grey Knights army
 entry (BattleScribe reports it as over its limit)."""
 from build_catalogue import PTS, SLOTS, TYPE_CATEGORIES, UNIT_CATEGORY, add_constraint, child, el, make_id
@@ -101,7 +104,10 @@ def teleport_harness(b, e, target, models):
 
 
 def loyalist_only(b):
-    """Grey Knights are always Loyalist: with Traitor chosen in the force, the army entry may not be taken."""
+    """The Aegis Captain may take an Aegis Bastion Squad as a Retinue (no Force Organisation slot), as an official
+Legion leader takes a Command Squad.
+
+Grey Knights are always Loyalist: with Traitor chosen in the force, the army entry may not be taken."""
     army = b.root.find(f"selectionEntries/selectionEntry[@id='{make_id('army', b.faction)}']")
     cmax = next(c for c in army.findall("constraints/constraint") if c.get("type") == "max")
     m = el(child(army, "modifiers"), "modifier", type="set", field=cmax.get("id"), value=0)
@@ -109,8 +115,24 @@ def loyalist_only(b):
        childId=TRAITOR, shared=True, includeChildSelections=True, includeChildForces=False)
 
 
+def aegis_retinue(b):
+    """The Aegis Captain takes an Aegis Bastion Squad as his Retinue, as an official Legion leader takes a
+    Command Squad: a "Retinue" group in his own entry, so the squad uses no Force Organisation slot. The
+    squad's "0-1" limit is on the squad itself, so a Detachment has one at most, however it is taken."""
+    cap = b.shared_entries.find(f"selectionEntry[@id='{b.units['Aegis Captain']}']")
+    sid = b.units["Aegis Bastion Squad"]
+    squad = b.shared_entries.find(f"selectionEntry[@id='{sid}']")
+    gid = make_id(cap.get("id"), "retinue")
+    g = el(child(cap, "selectionEntryGroups"), "selectionEntryGroup", name="Retinue", hidden=False, id=gid)
+    add_constraint(g, "max", 1, gid + "max")
+    el(child(g, "entryLinks"), "entryLink", import_=True, name=squad.get("name"), hidden=False,
+       id=make_id(gid, "squad"), type="selectionEntry", targetId=sid)
+    add_constraint(squad, "max", 1, make_id(sid, "one per force"), scope="force", children=True)
+
+
 def apply(b):
     loyalist_only(b)
+    aegis_retinue(b)
     harness = b.shared_entries.find("selectionEntry[@name='Teleport Harness']")
     el(child(harness, "infoLinks"), "infoLink", name="Deep Strike", id=make_id(harness.get("id"), "deep strike"),
        hidden=False, targetId=DEEP_STRIKE, type="rule")

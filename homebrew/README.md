@@ -229,7 +229,9 @@ loading. The script prints anything in the doc it could not place.
   Troops may fill Compulsory slots. A "**Brotherhood Trait: X.**" line names its Brotherhood's rules
   ("Fury of the Vanguard: Unwavering"). The 0-1 Aegis Bastion Squad (Elites) wears Aegis-Cataphractii
   Terminator armour; only its Warden-Justicar is a Brotherhood Psyker, so a rule or "Psychic Discipline (...)"
-  marked "(Warden-Justicar only)" gives the discipline pick to that model alone. Dreadfists, nemesis daemon hammers and nemesis greatswords are
+  marked "(Warden-Justicar only)" gives the discipline pick to that model alone. The Aegis Captain (HQ) may take the Aegis Bastion Squad as a
+  Retinue: like an official Legion leader's Command Squad, it is a "Retinue" group in his entry and uses no Force
+  Organisation slot (grey_knights_official.py), and the squad's 0-1 limit counts it however it is taken. Dreadfists, nemesis daemon hammers and nemesis greatswords are
   Unwieldy (3).
 - Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,
   which gives its units Order (X) with that Order's rules, Advanced Reaction and Warlord Trait. The army's Faith

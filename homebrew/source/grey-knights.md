@@ -334,7 +334,7 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 
 | 2.0 slot | Grey Knights units |
 | --- | --- |
-| HQ | Grand Master, Brother-Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus |
+| HQ | Grand Master, Brother-Captain, Aegis Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus |
 | Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary, Aegis Bastion Squad (0-1), Servitors |
 | Troops | Strike Squad, Brotherhood Terminator Squad |
 | Dedicated Transports | Rhino\*, Razorback\* |
@@ -475,6 +475,74 @@ A Grey Knights army may take one Rite of War.
 | – Icon of Justice | +15 points |
 | – Purity Seals | +5 points |
 | – Psybolts | +5 points |
+
+### Aegis Captain — 145 pts
+
+*A Brother-Captain sworn to the Aegis Bastions, clad in Aegis-Cataphractii plate from the vaults of Deimos. Where he stands with his wardens, the line of the Grey Knights does not break.*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Aegis Captain | 6 | 6 | 5 | 4 | 4 | 4 | 5 | 4 | 10 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 1 Aegis Captain
+
+**Wargear**
+
+- Aegis-Cataphractii Terminator armour
+- Frag grenades\*
+- Krak grenades\*
+- Nemesis force halberd
+- Storm bolter\*
+
+**Unit Type**
+
+- Aegis Captain: Infantry (Heavy, Independent Character, Psyker)
+
+**Special Rules**
+
+- Aegis Retinue: the Aegis Captain may take one Aegis Bastion Squad as a Retinue Squad, with himself as its Leader, as the Retinue special rule describes. It does not use a Force Organisation slot, counts as part of his unit, must deploy with him, and he may not voluntarily leave it. It still counts as the Detachment's one Aegis Bastion Squad
+- Brotherhood (X)
+- Brotherhood of Psykers
+- Brotherhood Psyker
+- Bulky (2)
+- Deep Strike
+- Hatred (Daemons)
+- Legiones Astartes (Grey Knights)
+- Minor Psychic Powers
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
+- Relentless
+- Stubborn
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The Aegis Captain must select one of the following Minor Psychic Powers:** |  |
+| – Astral Aim | Free |
+| – Cleansing Flame | Free |
+| – Gates of Infinity | Free |
+| – Hammerhand | Free |
+| – Holocaust | Free |
+| – Warp Quake | Free |
+| – Warp Shroud | Free |
+| **The Aegis Captain may exchange his nemesis force halberd for one of the following:** |  |
+| – Nemesis force sword | Free |
+| – Two nemesis force falchions | +5 points |
+| – Nemesis force warding staff | +5 points |
+| – Nemesis daemon hammer | +15 points |
+| **The Aegis Captain may exchange his storm bolter for one of the following:** |  |
+| – Incinerator | +10 points |
+| – Psilencer | +10 points |
+| – Psycannon | +15 points |
+| **The Aegis Captain may take:** |  |
+| – Icon of Justice | +15 points |
+| – Purity Seals | +5 points |
+| – Psybolts | +5 points |
+| – Grenade harness\* | +10 points |
+| – Melta bombs\* | +10 points |
 
 ### Brother-Captain Stern — 165 pts
 
