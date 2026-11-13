@@ -270,7 +270,7 @@ When selecting an army with the T'au Empire faction trait, the controlling playe
 
 **Prerequisites**
 
-- A Detachment using this Rite of War must include an Ethereal or a Cadre Fireblade with the Cadre Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.
+- A Detachment using this Rite of War must include an Ethereal, a Cadre Fireblade or a Blade-Sworn Cadre Master with the Cadre Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.
 
 **Effects**
 
@@ -291,7 +291,7 @@ When selecting an army with the T'au Empire faction trait, the controlling playe
 
 **Prerequisites**
 
-- A Detachment using this Rite of War must include a T'au Commander (in Enforcer, Coldstar, or Crisis Battlesuit armour) or a Cadre Fireblade with the Cadre Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.
+- A Detachment using this Rite of War must include a T'au Commander (in Enforcer, Coldstar, or Crisis Battlesuit armour), a Cadre Fireblade or a Blade-Sworn Cadre Master with the Cadre Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.
 
 **Effects**
 
@@ -350,7 +350,7 @@ When selecting an army with the T'au Empire faction trait, the controlling playe
 
 ## Force Organisation
 
-Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, Heavy Support, Dedicated Transports and Lord of War. Each unit takes the slot of the section it appears under:
+Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, Heavy Support, Dedicated Transports, Lord of War and Fortifications. Each unit takes the slot of the section it appears under:
 
 | 2.0 slot | T'au units |
 |---|---|
@@ -361,6 +361,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Fast Attack | Pathfinders, Tactical Drones, Piranhas, Vespid Stingwings, Kroot Hounds, Krootox Riders, Sun Shark Bomber, Razorshark Strike Fighter, Tetra Scout Speeders, Remora Stealth Drones, Barracuda, Orca Dropship, Piranha TX-42, Krootox Rampagers, Knarloc Riders |
 | Heavy Support | Broadside Battlesuits, Hammerhead Gunship, Sky Ray Gunship, Sniper Drone Team, Heavy Gun Drones, XV109 Y'vahra, XV107 R'varna, Drone Sentry Turret, Shas'vre Ob'lotai 9-0, Great Knarloc |
 | Lord of War | KV128 Stormsurge, KX139 Ta'unar Supremacy Armour, Tiger Shark Fighter-Bomber, Manta Super-heavy Dropship |
+| Fortifications | Tidewall Droneport, Tidewall Gunrig, Tidewall Shieldline |
 
 ### Drones
 
