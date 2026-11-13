@@ -175,7 +175,8 @@ loading. The script prints anything in the doc it could not place.
 - "Regimental Line (Cadian)" (Astra Militarum: Cadian Shock Troops, Catachan Jungle Fighters, Death Korps of Krieg):
   the unit has Support Squad unless its detachment's Regiment is that regiment. Then Support Squad is hidden, the
   unit shows Fury of the Regiment, its models gain the Line sub-type and it may fill a Compulsory Troops slot.
-- Grey Knights are not Xenos either: like the Astra Militarum, the army may be Loyalist or Traitor. Each
+- Grey Knights are not Xenos either, and are always Loyalist: in a force with the Traitor allegiance the Grey
+  Knights army entry is over its limit (grey_knights_official.py). Each
   detachment picks one Brotherhood (1st to 8th), which gives its units Brotherhood (X) with that Brotherhood's
   rules, Advanced Reaction and Warlord Trait. Wargear the doc marks with an asterisk ("Storm bolter\*") keeps its
   official 2.0 rules, and the 40k names map to the 2.0 weapons: an assault cannon is the Kheres assault cannon,
@@ -212,12 +213,31 @@ loading. The script prints anything in the doc it could not place.
   select one X and one Psychic Discipline"). A Justicar or Dreadlancer that carries a minor power
   (Hammerhand, Gates of Infinity) keeps it and picks a second: an exception the rule states. Every Character has Brotherhood Psyker by default or as
   this option (Stern and Crowe by default; Crowe keeps Sanctic as his discipline). The option sits on the model that takes it, so
-  every Techmarine, Apothecary and Dreadlancer that takes it makes its own minor power and discipline picks. A Brotherhood Psyker picks Dominus, Sanctic, Anathemata,
+  every Techmarine, Apothecary and Dreadlancer that takes it makes its own minor power and discipline picks. The Brotherhood Librarian picks two of the five ("Psychic Discipline (two of
+  Dominus, ...)": a pick of exactly two); Voldus and Draigo keep Dominus and Sanctic. A Brotherhood Psyker picks Dominus, Sanctic, Anathemata,
   Divination or Telepathy (the last three written out in the md, as Traders Militant does Anathemata). When the
   md has the rule "Any Psyker that selects a Psychic Discipline also gains the Aetheric Lightning Psychic Weapon",
-  the builder gives every discipline the game system's Aetheric Lightning profile and the Force rule. Dreadfists, nemesis daemon hammers and nemesis greatswords are
+  the builder gives every discipline the game system's Aetheric Lightning profile and the Force rule. Anathemata
+  gives Grey Knights Seal the Veil and Void Darts only (Breach the Veil is the Traitor power). Kaldor Draigo's
+  "Warlord: Supreme Grand Master (...)" is a fixed Warlord Trait: he must be the Warlord and takes it
+  automatically, in place of the Warlord Traits pick. The Rites of War, Brotherhoods and generic Warlord
+  Traits use the full wording the user supplied. A Rite with a **Prerequisites** block is written in the book's long
+  form ("Engines of Tithe: Dreadknight Talons may be selected as Elites choices in a Detachment using this Rite
+  of War"); the builder reads it in the short form its Rite checks use (rite_plain), so its Prerequisites limit
+  the Warlord and its Effects and Limitations change slots and bar units as before. Nemesis Strike makes Grey
+  Knight Dreadlancer Talons non-Compulsory Troops with the Line sub-type; Paladin Retinue and Purifier Crusade
+  Troops may fill Compulsory slots. A "**Brotherhood Trait: X.**" line names its Brotherhood's rules
+  ("Fury of the Vanguard: Unwavering"). The 0-1 Aegis Bastion Squad (Elites) wears Aegis-Cataphractii
+  Terminator armour; only its Warden-Justicar is a Brotherhood Psyker, so a rule or "Psychic Discipline (...)"
+  marked "(Warden-Justicar only)" gives the discipline pick to that model alone. The Aegis Captain (HQ) may take the Aegis Bastion Squad as a
+  Retinue: like an official Legion leader's Command Squad, it is a "Retinue" group in his entry and uses no Force
+  Organisation slot (grey_knights_official.py), and the squad's 0-1 limit counts it however it is taken. The 0-1 Purifier Bladeguard Squad (Elites) has
+  Purifying Flame (Assault Variant), named so as not to clash with the Sanctic psychic weapon, and Soul Blaze, an
+  army rule (2.0 has none); its Knight of the Flame alone is a Brotherhood Psyker. Its 0-1 limit is lifted in a
+  Detachment whose Brotherhood is the 8th (grey_knights_official.py), and Soul Blaze hits gain Rending (6+) against
+  Daemon, Corrupted, Corrupted Engine and Malefic models. Dreadfists, nemesis daemon hammers and nemesis greatswords are
   Unwieldy (3).
-- Adepta Sororitas, like the Grey Knights, may be Loyalist or Traitor. Each detachment picks one Order Militant,
+- Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,
   which gives its units Order (X) with that Order's rules, Advanced Reaction and Warlord Trait. The army's Faith
   system (Acts of Faith, Gaining Faith, Miracles, and the table of Acts) and the Unit Types notes are on the army
   selection: a "### Faith" sub-section of the Army-wide Special Rules that is not a rule a unit has is shown there,

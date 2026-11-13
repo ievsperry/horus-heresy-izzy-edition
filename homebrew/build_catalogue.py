@@ -1269,7 +1269,7 @@ class Builder:
                 self.link(links, self.disciplines[n], n, m["id"], count=1)
             return
         pool = named if " or " in inner else list(self.disciplines)
-        two = "one other" in inner
+        two = "one other" in inner or norm(inner).startswith("two of")  # "(two of Dominus, Sanctic or ...)"
         gkey = make_id(m["id"], "disciplines")
         g = el(groups, "selectionEntryGroup", name="Psychic Disciplines",
                hidden=False, id=gkey)
@@ -1277,7 +1277,8 @@ class Builder:
         add_constraint(g, "max", 2 if two else 1, gkey + "max")
         gl = el(g, "entryLinks")
         for n in pool:
-            self.link(gl, self.disciplines[n], n, gkey, maximum=1, minimum=1 if two and n in named else None)
+            self.link(gl, self.disciplines[n], n, gkey, maximum=1,
+                      minimum=1 if "one other" in inner and n in named else None)
 
     def build_power_tables(self):
         """'### Powers of the C'tan' with a Power | Effect table: abilities datasheets name."""
@@ -2085,6 +2086,26 @@ class Builder:
                          "Wound instead of its armour save.")
 
     @staticmethod
+    def rite_plain(text):
+        """A Rite's effect or limitation in the book's long form, put in the short form the Rite checks read
+        (Grey Knights): "Engines of Tithe: Dreadknight Talons may be selected as Elites choices in a Detachment
+        using this Rite of War" is "Dreadknight Talons may be taken as Elites"."""
+        s = re.sub(r"^[A-Z][\w'-]*(?: [\w'-]+){0,4}: (?=[A-Z])", "", text)  # "Engines of Tithe: "
+        s = re.sub(r"A Detachment using this Rite of War must include (?:an? )?(.+?) with the Master of the Legion "
+                   r"special rule, and this model must be the army['\u2019]s Warlord", r"Requires \1 as Warlord", s)
+        s = re.sub(r"^No units in a Detachment using this Rite of War may be deployed inside or select (.+?)\.?$",
+                   r"A Detachment using this Rite of War may not include any \1.", s)
+        if s.startswith("A Detachment using this Rite of War"):
+            return re.sub(r"(may not include any .+?)(?: of any variant)?(?: \(.*\))?\.$", r"\1.",
+                          s.replace(" choices.", "."))
+        s = s.replace(" in a Detachment using this Rite of War", "").replace("may be selected as", "may be taken as")
+        s = re.sub(r"may be taken as non-Compulsory (\w[\w ]*?) choices", r"may be taken as \1 (non-compulsory)", s)
+        s = re.sub(r" choices in addition to (.+?) choices", r" as well as \1", s)
+        s = re.sub(r"may be taken as (\w[\w ]*?) choices", r"may be taken as \1", s)
+        return re.sub(r"\. Any unit selected in this manner gains the Line \((\d)\) Unit Sub-type\.?$",
+                      r" and gain the Line sub-type (Line (\1)).", s)
+
+    @staticmethod
     def rite_from_text(name, text):
         """'Requires ... Benefit: ... Limitation: ...' as Effects and Limitations."""
         parts = re.split(r"\s*(?=Benefit:|Limitations?:)", text)
@@ -2150,11 +2171,15 @@ class Builder:
                     m = el(el(f, "modifiers"), "modifier", type="set", field="hidden", value="false")
                     el(el(m, "conditions"), "condition", type="atLeast", value=1, field="selections", scope="force",
                        childId=fleet_ids[parent], shared=True, includeChildSelections=True, includeChildForces=False)
+                trait = None  # "**Brotherhood Trait: Fury of the Vanguard.** ...": its parts are named for it
                 for ln in sub["lines"]:
+                    tm = re.match(r"\*\*(?!Warlord)[A-Za-z ]+ Trait: (.+?)\.\*\*", ln)
+                    if tm:
+                        trait = tm.group(1)
                     if ln.startswith("- "):
                         m = re.match(r"\*\*(.+?):\*\* (.+)", ln[2:])
                         if m:
-                            add_rule(f, m.group(1), m.group(2), fid)
+                            add_rule(f, f"{trait}: {m.group(1)}" if trait else m.group(1), m.group(2), fid)
                     m = re.match(r"\*\*Advanced Reaction: (.+?)\*\* (.+)", ln)
                     if m:
                         add_text_profile(f, REACTION_PROFILE, m.group(1), strip_md(m.group(2)), fid)
@@ -2209,8 +2234,14 @@ class Builder:
                        id=re_id, publicationId=self.pub_id)
                 add_category(r, *RITE_CATEGORY, re_id, primary=True)
                 b = blocks(sub["lines"])
-                self.rite_specs.append({"name": name, "id": re_id, "effects": list_items(b.get("Effects", [])),
-                                        "limits": list_items(b.get("Limitations", []))})
+                prereq = list_items(b.get("Prerequisites", []))
+                # the book's long form ("**Prerequisites**", "Engines of Tithe: ... may be selected as ...")
+                plain = self.rite_plain if "Prerequisites" in b else (lambda x: x)
+                self.rite_specs.append({"name": name, "id": re_id,
+                                        "effects": [plain(x) for x in list_items(b.get("Effects", []))],
+                                        "limits": [plain(x) for x in prereq + list_items(b.get("Limitations", []))]})
+                if prereq:
+                    add_rule(r, "Prerequisites", " ".join(prereq).replace("†", ""), re_id)
                 add_rule(r, "Effects", " ".join(list_items(b.get("Effects", []))).replace("†", ""), re_id)
                 add_rule(r, "Limitations", " ".join(list_items(b.get("Limitations", []))), re_id)
                 add_cost(r, 0)
@@ -2386,7 +2417,8 @@ class Builder:
                     slot = re.match(r"may be taken as (Compulsory )?(Troops|Fast Attack|Elites|Heavy Support)", phrase)
                     if slot:
                         self.rite_slot(links, rite, ds, uid, slot.group(2),
-                                       bool(slot.group(1)) or "line sub-type" in norm(" ".join(rite["effects"])))
+                                       bool(slot.group(1)) or ("line sub-type" in norm(" ".join(rite["effects"]))
+                                                               and "non-compulsory" not in norm(phrase)))
                     elif re.match(r"gains? the line sub-type", phrase, re.I):
                         self.rite_line(unit, rid)
                     elif re.match(r"may contain up to (\d+) models", phrase) or re.match(r"may be taken in units of up to (\d+)", phrase):
@@ -2837,6 +2869,8 @@ class Builder:
                 elif not eligible:
                     eligible = [next((me for me in models if forms(me.get("name")) & forms(ds["name"])), models[0])]
             fixed = next((r.split(":", 1)[1].strip() for r in ds["rules"] if r.startswith("Warlord: ")), None)
+            if fixed:  # "Warlord: Supreme Grand Master (Kaldor Draigo must be your Warlord ...)": the trait's name
+                fixed = re.sub(r"\s*\(.*\)$", "", fixed)
             for me in eligible:
                 self.give_warlord(me, must)
                 if fixed:
@@ -4498,6 +4532,9 @@ class Builder:
                 for name, pid in items:
                     self.link(gl, pid, name, gkey, maximum=1)
         disc = next((r for r in ds["rules"] if norm(r).startswith("psychic discipline")), None)
+        only = re.search(r"\(([^()]+) only\)$", disc or "")
+        if only and self.disciplines and not forms(only.group(1)) & forms(m["profile"]["name"]):
+            disc = None  # "Psychic Discipline (...) (Warden-Justicar only)": not this model's
         if disc and self.disciplines and "Psyker" in m["types"]:
             self.discipline_pick(disc, m, links, groups)
             disc = None

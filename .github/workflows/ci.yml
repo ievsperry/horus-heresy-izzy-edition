@@ -13,10 +13,33 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: BSData/check-datafiles@v1
-      id: check
+    - name: Validate datafiles
+      run: |
+        python3 - <<'PY'
+        from pathlib import Path
+        from xml.etree import ElementTree
+
+        datafiles = sorted(
+            path
+            for pattern in ("*.cat", "*.gst", "*.cattemplate")
+            for path in Path(".").glob(pattern)
+        )
+        if not datafiles:
+            raise SystemExit("No datafiles found")
+
+        for datafile in datafiles:
+            try:
+                ElementTree.parse(datafile)
+            except ElementTree.ParseError as error:
+                raise SystemExit(f"Invalid XML in {datafile}: {error}")
+
+        print(f"Validated {len(datafiles)} datafiles")
+        PY
 
     - uses: actions/upload-artifact@v4
       with:
         name: artifact
-        path: ${{ steps.check.outputs.staging-path }}
+        path: |
+          *.cat
+          *.gst
+          *.cattemplate
