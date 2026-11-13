@@ -699,6 +699,26 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     the three generic traits or its Detachment's Dominion trait (shown, and allowed, only with that Dominion). These
     replace the official Ruinstorm and generic Warlord Traits; the Unbound characters keep their own.
   It refuses to run twice.
+- `python3 homebrew/add_titan_legions.py` adds the Titan Legions expansion (kept as `source/titan-legions.md`) to
+  `2022 - Titan Legions.cat`, with its Warlord Traits in `2022 - Mech Library.cat`. It writes:
+  - the Moderati Recon Foot-Patrols (Fast Attack), Enginseer Field-Repair Team (Elites) and Secutarii Ballistarii
+    (Heavy Support), shown only in a Titan Maniple, and the doc's Termite Assault Drill (the game system's Termite
+    profile) as their Dedicated Transport by size, beside the official Triaros Armoured Conveyor. The Galvanic
+    Carbine, Transuranic Arquebus and Arc-Welder use the official profiles; the Heavy Arc-Rifle, Radium Culverin,
+    Icarus Flak-Launcher, Torsion Cannon and Heavy Hydraulic Clamp were written for the expansion;
+  - the Titan Maniple's Expanded Maniple Support: +2 Elites, +2 Fast Attack and +2 Heavy Support while it has a Rite
+    of War, and its Titans then outside the LoW & Primarchs (25% Limit) category;
+  - the three Rites of War in a Rite of War entry (Titan Maniple only), each an error without a Secutarii Axiarch or
+    a Titan (Vanguard: a Warhound), with a Fortification or barred Titan (Iron Phalanx, Vanguard) or with an Allied
+    Detachment (Ordo Destructor); the Enginseers (Iron Phalanx) and Ballistarii (Ordo Destructor) as non-Compulsory
+    Troops, the Moderati as Compulsory Troops with Line and no Support Squad (Vanguard), Line for the Peltasts and
+    Hoplites, and a Termite for Hoplites, Peltasts and Ballistarii of ten or fewer (Ordo Destructor);
+  - the Interlocking Phalanx and Void-Shield Overload Advanced Reactions on the army's Divisio Tactica entry, and the
+    three Warlord Traits as a "Titan Legions" choice in the Mech Library's Warlord Traits (the Axiarch's and the
+    Titans'), shown with Divisio Tactica: The Titan Legions.
+  Rule text only: the Warlord bar for the LI - Assassins and Agents HQs under a Rite, the Vanguard's "Ballistarii only
+  in a Dedicated Transport" and every in-game effect. build_catalogue.py's IRREGULAR plurals now include automata
+  and ballistarii (no other catalogue changes). It refuses to run twice.
 - `python3 homebrew/add_imperatus_wargear.py` adds the Imperatus Archaeotechnological Relics (Apex Digital Weapon,
   Displacer Matrix, Grav-Wave Generator) to the game system as a one-per-model group the Solar Auxilia Legate
   Marshal may take, and the Imperialis Militia Force Commander may take with the Armoury of Old Night Provenance

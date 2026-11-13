@@ -268,7 +268,7 @@ def norm(s):
     return s
 
 
-IRREGULAR = {"incubi": "incubus"}
+IRREGULAR = {"incubi": "incubus", "automata": "automaton", "servo-automata": "servo-automaton", "ballistarii": "ballistarius"}
 
 
 def singular(word):
