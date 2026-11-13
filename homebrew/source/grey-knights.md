@@ -1046,7 +1046,7 @@ A Grey Knights army may take one Rite of War.
 
 **Unit Type**
 
-- Janus: Infantry (Character, Unique, Psyker)
+- Janus: Infantry (Independent Character, Unique, Psyker)
 
 **Special Rules**
 
@@ -1085,7 +1085,7 @@ A Grey Knights army may take one Rite of War.
 
 **Unit Type**
 
-- Koios: Infantry (Character, Heavy, Unique, Psyker)
+- Koios: Infantry (Independent Character, Heavy, Unique, Psyker)
 
 **Special Rules**
 
@@ -1140,7 +1140,7 @@ A Grey Knights army may take one Rite of War.
 
 **Unit Type**
 
-- Satre: Infantry (Character, Unique, Psyker)
+- Satre: Infantry (Independent Character, Unique, Psyker)
 
 **Special Rules**
 
@@ -1191,7 +1191,7 @@ A Grey Knights army may take one Rite of War.
 
 **Unit Type**
 
-- Iapto: Infantry (Character, Heavy, Unique, Psyker)
+- Iapto: Infantry (Independent Character, Heavy, Unique, Psyker)
 
 **Special Rules**
 
@@ -1245,7 +1245,7 @@ A Grey Knights army may take one Rite of War.
 
 **Unit Type**
 
-- Yotun: Infantry (Character, Unique, Psyker)
+- Yotun: Infantry (Independent Character, Unique, Psyker)
 
 **Special Rules**
 
@@ -1296,7 +1296,7 @@ A Grey Knights army may take one Rite of War.
 
 **Unit Type**
 
-- Epimetheus: Infantry (Character, Heavy, Unique, Psyker)
+- Epimetheus: Infantry (Independent Character, Heavy, Unique, Psyker)
 
 **Special Rules**
 
@@ -1352,7 +1352,7 @@ A Grey Knights army may take one Rite of War.
 
 **Unit Type**
 
-- Ogen: Infantry (Character, Unique, Psyker)
+- Ogen: Infantry (Independent Character, Unique, Psyker)
 
 **Special Rules**
 
@@ -1407,7 +1407,7 @@ A Grey Knights army may take one Rite of War.
 
 **Unit Type**
 
-- Khyron: Infantry (Character, Unique, Psyker)
+- Khyron: Infantry (Independent Character, Unique, Psyker)
 
 **Special Rules**
 
