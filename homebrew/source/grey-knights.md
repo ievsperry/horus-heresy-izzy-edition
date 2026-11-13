@@ -342,7 +342,7 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 
 | 2.0 slot | Grey Knights units |
 | --- | --- |
-| HQ | Grand Master, Brother-Captain, Aegis Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus, Supreme Grand Master Janus, Grand Masters Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron; Brotherhood Command Squad and Brotherhood Tartaros Command Squad as Retinues (no slot) |
+| HQ | Grand Master, Brother-Captain, Aegis Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus, Supreme Grand Master Janus, Grand Masters Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron; Brotherhood Command Squad, Brotherhood Terminator Command Squad and Brotherhood Tartaros Command Squad as Retinues (no slot) |
 | Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary, Aegis Bastion Squad (0-1), Purifier Bladeguard Squad (0-1), Servitors |
 | Troops | Strike Squad, Brotherhood Terminator Squad |
 | Dedicated Transports | Rhino\*, Razorback\* |
@@ -1559,6 +1559,69 @@ This unit may only be taken as a Retinue Squad of a model with the Master of the
 | – Psycannon | +15 points each |
 | **The Tartaros Standard Bearer may take:** |  |
 | – Grenade harness\* | +5 points |
+| **The entire unit may take:** |  |
+| – Psybolts | +5 points per model |
+| – Purity Seals | +2 points per model |
+
+### Brotherhood Terminator Command Squad — 175 pts
+
+*The honour guard of a Grand Master in Aegis Terminator plate, a wall of warded ceramite around their lord and his banner.*
+
+This unit may only be taken as a Retinue Squad of a model with the Master of the Legion special rule (not the Grand Master in Nemesis Dreadknight), as the Retinue special rule describes. It does not use a Force Organisation slot, counts as part of its Leader's unit, must deploy with its Leader, and the Leader may not voluntarily leave it.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Terminator Chosen | 6 | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+ | 40mm |
+| Terminator Standard Bearer | 6 | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 2 Terminator Chosen
+- 1 Terminator Standard Bearer
+
+**Wargear**
+
+- Aegis Terminator armour
+- Frag grenades\*
+- Krak grenades\*
+- Nemesis force halberd
+- Storm bolter\*
+- Brotherhood banner (Terminator Standard Bearer only)
+
+**Unit Type**
+
+- Terminator Chosen: Infantry (Heavy, Psyker)
+- Terminator Standard Bearer: Infantry (Heavy, Psyker)
+
+**Special Rules**
+
+- Brotherhood Banner: friendly Grey Knights units within 6" of the Standard Bearer add 1 to their Attacks in a turn in which they charged, and may re-roll failed Morale checks
+- Brotherhood (X)
+- Brotherhood of Psykers
+- Chosen Warriors
+- Deep Strike
+- Legiones Astartes (Grey Knights)
+- Relentless
+- Retinue
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The squad may take:** |  |
+| – Up to 2 additional Terminator Chosen | +55 points each |
+| **Any model may exchange its nemesis force halberd for one of the following:** |  |
+| – Nemesis force sword | Free |
+| – Two nemesis force falchions | +5 points each |
+| – Nemesis force warding staff | +5 points each |
+| – Nemesis daemon hammer | +10 points each |
+| **Any Terminator Chosen may exchange its storm bolter for one of the following:** |  |
+| – Incinerator | +10 points each |
+| – Psilencer | +10 points each |
+| – Psycannon | +15 points each |
+| **The Terminator Standard Bearer may take:** |  |
+| – Icon of Justice | +15 points |
 | **The entire unit may take:** |  |
 | – Psybolts | +5 points per model |
 | – Purity Seals | +2 points per model |

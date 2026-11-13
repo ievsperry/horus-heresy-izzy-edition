@@ -20,7 +20,7 @@ The Rites of War that bar these kinds of unit bar the official ones too: Purifie
 the official Land Raiders, and Teleport Assault (no Dedicated Transports) hides the Rhino.
 
 Every model with Master of the Legion (but the Grand Master in Nemesis Dreadknight) may take a Brotherhood
-Command Squad or Brotherhood Tartaros Command Squad as a Retinue (no Force Organisation slot), as an official
+Command Squad, Terminator Command Squad or Tartaros Command Squad as a Retinue (no Force Organisation slot), as an official
 Legion leader takes a Command Squad; the Aegis Captain may take an Aegis Bastion Squad instead.
 
 The 0-1 Purifier Bladeguard Squad has no limit in a Detachment whose Brotherhood is the 8th.
@@ -113,7 +113,7 @@ def teleport_harness(b, e, target, models):
 
 def loyalist_only(b):
     """Every model with Master of the Legion (but the Grand Master in Nemesis Dreadknight) may take a Brotherhood
-Command Squad or Brotherhood Tartaros Command Squad as a Retinue (no Force Organisation slot), as an official
+Command Squad, Terminator Command Squad or Tartaros Command Squad as a Retinue (no Force Organisation slot), as an official
 Legion leader takes a Command Squad; the Aegis Captain may take an Aegis Bastion Squad instead.
 
 The 0-1 Purifier Bladeguard Squad has no limit in a Detachment whose Brotherhood is the 8th.
@@ -129,13 +129,14 @@ Grey Knights are always Loyalist: with Traitor chosen in the force, the army ent
        childId=TRAITOR, shared=True, includeChildSelections=True, includeChildForces=False)
 
 
-COMMAND_SQUADS = ["Brotherhood Command Squad", "Brotherhood Tartaros Command Squad"]
+COMMAND_SQUADS = ["Brotherhood Command Squad", "Brotherhood Terminator Command Squad",
+                  "Brotherhood Tartaros Command Squad"]
 NO_RETINUE = ["Grand Master in Nemesis Dreadknight"]  # infantry may not join a Dreadknight
 
 
 def retinues(b):
     """Retinue Squads, as an official Legion leader takes a Command Squad: every model with Master of the Legion
-    (but the Grand Master in Nemesis Dreadknight) has a "Retinue" group in his own entry holding the two Command
+    (but the Grand Master in Nemesis Dreadknight) has a "Retinue" group in his own entry holding the three Command
     Squads, and the Aegis Captain the Aegis Bastion Squad too, so a Retinue uses no Force Organisation slot. The
     Command Squads are taken only this way; the Aegis Bastion Squad's 0-1 limit is on the squad, so a Detachment
     has one at most, however it is taken."""
