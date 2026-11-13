@@ -199,11 +199,33 @@ def brotherhood_only(b):
                    childId=ids[n], shared=True, includeChildSelections=True, includeChildForces=False)
 
 
+FOUNDERS = ["Supreme Grand Master Janus", "Grand Master Koios", "Grand Master Satre", "Grand Master Iapto",
+            "Grand Master Yotun", "Grand Master Epimetheus", "Grand Master Ogen", "Grand Master Khyron"]
+RITE_LEADERS = {"Paladin Retinue": FOUNDERS, "Teleport Assault": FOUNDERS, "Purifier Crusade": ["Aegis Captain"]}
+
+
+def rite_leaders(b):
+    """Janus and the founding Grand Masters count as Grand Masters, and the Aegis Captain as a Brother-Captain, for
+    the Rites' prerequisites: their Warlord option is not barred while that Rite is chosen."""
+    for rite, leaders in RITE_LEADERS.items():
+        rid = next(e.get("id") for e in b.root.iter("selectionEntry") if e.get("name") == rite)
+        for name in leaders:
+            unit = b.shared_entries.find(f"selectionEntry[@id='{b.units[name]}']")
+            for link in unit.iter("entryLink"):
+                if link.get("name") != "Warlord":
+                    continue
+                mods = link.find("modifiers")
+                for m in list(mods if mods is not None else []):
+                    if any(c.get("childId") == rid for c in m.iter("condition")):
+                        mods.remove(m)
+
+
 def apply(b):
     loyalist_only(b)
     retinues(b)
     purifier_bladeguard(b)
     brotherhood_only(b)
+    rite_leaders(b)
     harness = b.shared_entries.find("selectionEntry[@name='Teleport Harness']")
     el(child(harness, "infoLinks"), "infoLink", name="Deep Strike", id=make_id(harness.get("id"), "deep strike"),
        hidden=False, targetId=DEEP_STRIKE, type="rule")

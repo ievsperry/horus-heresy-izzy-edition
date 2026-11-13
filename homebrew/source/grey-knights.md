@@ -353,6 +353,8 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 
 A Grey Knights army may take one Rite of War.
 
+For these prerequisites, Supreme Grand Master Janus and the founding Grand Masters (Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron) count as Grand Masters, and the Aegis Captain counts as a Brother-Captain.
+
 ### Rite of War: Nemesis Strike
 
 *The heaviest daemon-engines and nemesis exo-suits of Titan are unleashed as an unstoppable armoured spearhead, crushing the greatest manifestations of the Warp beneath sanctified steel.*

@@ -3198,6 +3198,21 @@ class Builder:
             self.upgrades[k] = eid
         return self.upgrades[k]
 
+    def unique_limits(self):
+        """A unit with a model of the Unique Sub-type may be taken once per force, as official Unique characters
+        are (Constantin Valdor): unless the doc already limits it."""
+        cat = TYPE_CATEGORIES["Unique"][0]
+        links = self.root.find("entryLinks")
+        for unit in self.shared_entries.findall("selectionEntry[@type='unit']"):
+            if not any(c.get("targetId") == cat for c in unit.iter("categoryLink")):
+                continue
+            uid = unit.get("id")
+            holders = [unit] + [l for l in (links if links is not None else []) if l.get("targetId") == uid]
+            if any(c.get("type") == "max" and float(c.get("value")) <= 1 and c.get("scope") in ("force", "roster")
+                   for h in holders for c in h.findall("constraints/constraint")):
+                continue
+            add_constraint(unit, "max", 1, make_id(uid, "unique"), scope="force", children=True)
+
     def rule_option_picks(self, e, name, eid):
         """An option that is a rule saying "This model must select one Minor Psychic Power and one Psychic
         Discipline" (Grey Knights' Brotherhood Psyker, +15) holds those picks, made once it is taken."""
@@ -5247,6 +5262,7 @@ class Builder:
         self.exact_named_rules()
         self.specialist_rules()
         self.discipline_rules()
+        self.unique_limits()
         if self.faction in FACTION_LIMITS:
             importlib.import_module(FACTION_LIMITS[self.faction]).apply(self)
         self.root.append(self.shared_entries)
