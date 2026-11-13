@@ -38,6 +38,22 @@ Every T'au unit in this document has **Sept (X)** unless its entry says otherwis
 
 Kroot and Vespid fight for the Greater Good, but not as T'au. They do not gain Sept (X) traits, never benefit from Ethereal Invocations, and may not use Supporting Fire. Kroot units have Move Through Cover and Infiltrate unless their entry says otherwise.
 
+#### Cadre Commander
+
+A model with this special rule counts as having the Master of the Legion special rule for the Prerequisites of a Rite of War: a Detachment may take a Rite of War that requires it while this model is the army's Warlord.
+
+#### Kroot
+
+*Native to the dense, primeval forests of Pech, the Kroot are an avian-descended species of apex predators and fierce mercenaries bound to the T'au Empire. Possessing uncanny fieldcraft, savage close-combat instincts, and the unique biological ability to absorb the genetic traits of the prey they consume, Kroot kindreds excel in ambush warfare and brutal hand-to-hand slaughter.*
+
+A model with the Kroot special rule is subject to the following rules:
+
+- **Auxiliary Sub-type:** Models with the Kroot special rule also possess the Auxiliary Unit Sub-type. They do not gain a Sept (X) special rule, may not make or benefit from the Supporting Fire Advanced Reaction, and may not benefit from Ethereal Invocations or Markerlight tokens.
+- **Masters of the Undergrowth:** Models with the Kroot special rule gain the Move Through Cover special rule. In addition, while at least half of the models in a unit composed entirely of models with the Kroot special rule are within Area Terrain or behind a Defence Line, all models in that unit gain a +1 bonus to their Cover Save (to a maximum of 3+), or gain a 6+ Cover Save if they do not already possess one.
+- **Primal Savagery:** Models with the Kroot special rule gain a +1 bonus to their Attacks Characteristic in any turn in which they made a successful Charge.
+- **Shaper's Guidance:** A unit composed entirely of models with the Kroot special rule may only be joined by Independent Characters that also possess the Kroot special rule (such as a Kroot Shaper). While a Kroot Shaper is joined to a unit with the Kroot special rule, all models in that unit may use the Shaper's Leadership Characteristic and gain the Stubborn special rule.
+- **Evolutionary Adaptations:** If a unit composed entirely of models with the Kroot special rule includes a Kroot Shaper (or is part of a Detachment using the Kroot Kindred Rite of War), the controlling player may select one of the following genetic adaptations for that unit at the start of the battle, before deployment, for +2 points per model. Skeletal Wings / Swift Striders: models in the unit add +1" to their Movement Characteristic and gain the Fleet (1) special rule. Thickened Hide: models in the unit improve their Armour Save to 5+ (instead of 6+). Muscular Hypertrophy: models in the unit add +1 to their Strength Characteristic.
+
 #### Drone Controller
 
 A unit with this special rule may include models with the Drone sub-type, either as part of its Unit Composition or bought from its Options, up to the number its datasheet allows. These drones follow the Drone (sub-type) rules for drones taken as part of a parent unit.
@@ -112,138 +128,221 @@ If the model has not moved this turn, it cannot be targeted by ranged attacks fr
 
 #### Supporting Fire
 
-T'au units use the 2.0 core reactions as normal, plus this advanced reaction. It costs one point of the Reaction Allotment like any other reaction†.
+Units with the T'au Empire faction trait have access to all Core Reactions presented in the Warhammer: The Horus Heresy – Age of Darkness Rulebook, as well as the following unique Advanced Reaction. Unless otherwise stated, declaring an Advanced Reaction costs 1 point of the controlling player's Reaction Allotment in the appropriate phase.
 
-**Supporting Fire** (Assault phase). Trigger: an enemy unit declares a charge against a T'au unit. Up to one other friendly T'au unit (not Auxiliaries) within 6" of the charged unit fires Overwatch at the charging unit, as well as the charged unit†.
+**Supporting Fire** (Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, immediately after an enemy unit declares a Charge against a friendly unit composed entirely of models with the T'au Empire faction trait, before any Overwatch attacks are resolved. Effect: Every other friendly unit composed entirely of models with the T'au Empire faction trait (excluding units with the Auxiliary Unit Sub-type, such as Kroot or Vespid) that has at least one model within 12" of the targeted unit, has line of sight to the charging enemy unit, and is not currently locked in combat, Falling Back, or Pinned may immediately make an Overwatch Shooting Attack targeting the charging enemy unit, in addition to the targeted unit itself making an Overwatch Shooting Attack as normal. (Note: Each supporting unit firing Overwatch as part of this Reaction counts as having expended its ability to make Reactions for that phase.)
 
 ### Septs
 
-Every T'au force is drawn from a sept world, each with its own approach to the Greater Good. Septs work like Ork Klans and Drukhari Obsessions.
+*Every T'au military cadre is drawn from a specific sept world, each possessing its own martial traditions, technological specializations, and tactical philosophies in service to the Greater Good.*
 
-**Sept (X).** When building an army, choose one Sept for each detachment. Every T'au unit in that detachment (not Auxiliaries) gains Sept (X), where X is the chosen Sept. Commander Farsight and his Bodyguard may only join a Farsight Enclaves detachment; Commander Shadowsun, Aun'Va and Longstrike may only join a T'au Sept detachment. Other Unique characters may join any Sept.
+**Sept (X).** When selecting an army, the controlling player must select a single Sept for each Detachment with the T'au Empire faction trait. Every model in that Detachment with the T'au Empire faction trait (excluding models with the Auxiliary Unit Sub-type) replaces the 'X' in its Sept (X) special rule with the chosen Sept (e.g., Sept (T'au)).
 
-**Sept Advanced Reactions.** Each Sept has its own Advanced Reaction, usable only by units with that Sept (X). It is available in addition to Supporting Fire and costs one point of the Reaction Allotment†.
+- **Special Character Restrictions:** Models with the Sept (Any) special rule may be included in a Detachment of any Sept, and adopt that Detachment's Sept for the duration of the battle. Models with a fixed Sept may only be included in a Detachment matching their specific Sept. Farsight Enclaves only: Commander Farsight and Farsight's Bodyguard have the Sept (Farsight Enclaves) special rule. T'au Sept only: Commander Shadowsun, Aun'Va, and Longstrike have the Sept (T'au) special rule.
+- **Sept Advanced Reactions:** Each Sept grants access to a unique Advanced Reaction, which is available only to units composed entirely of models with that specific Sept (X) special rule. Unless otherwise stated, a Sept Advanced Reaction is available in addition to the Core Reactions and Supporting Fire, and costs 1 point of the controlling player's Reaction Allotment in the appropriate phase.
 
 #### Bork'an
 
-A sept of scientists and engineers who field the most advanced weapons in the Empire:
+*A sept of scientists and engineers who field the most advanced weapons and experimental wargear in the Empire.*
 
-- **Sensor Specialists:** markerlights add one extra Markerlight token for each hit.
-- **Superior Craftsmanship:** add 6" to the range of Heavy weapons on battlesuits and vehicles.
+**Sept Trait: Masters of Prototype Craft.**
 
-**Advanced Reaction: Prototype Shields** (Shooting phase). Trigger: a Bork'an battlesuit or vehicle is selected as the target of a Shooting Attack. Against that attack, the unit gains a 5+ Invulnerable Save.
+- **Sensor Specialists:** Whenever a model with the Sept (Bork'an) special rule scores one or more hits on an enemy unit with a Markerlight, that enemy unit gains one additional Markerlight token (in addition to the tokens generated by the hits).
+- **Superior Craftsmanship:** Models with the Sept (Bork'an) special rule that have the Battlesuit Unit Sub-type or the Vehicle Unit Type add +6" to the maximum range of all Heavy ranged weapons they are equipped with.
 
-**Warlord Trait: Master Engineer.** One weapon carried by the Warlord gains Master-crafted. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Shooting phase, above its normal Reaction Allotment†.
+**Advanced Reaction: Prototype Shields** (Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, after an enemy unit selects a friendly unit composed entirely of models with the Sept (Bork'an) special rule that have the Battlesuit Unit Sub-type or the Vehicle Unit Type as the target of a Shooting Attack, before any To Hit rolls are made. Effect: Until the end of that Shooting Attack, all models in the reacting unit gain a 5+ Invulnerable Save (or improve an existing Invulnerable Save by +1, to a maximum of 4+).
+
+**Warlord Trait: Master Engineer.** One ranged or melee weapon carried by a Warlord with this Trait gains the Master-crafted special rule for the duration of the battle. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord is on the battlefield and has not been removed as a casualty.
 
 #### Dal'yth
 
-A sept of resilient defenders who use the terrain like no other:
+*A sept of resilient defenders and adaptive tacticians who utilize terrain and camouflage like no other.*
 
-- **Adaptive Camouflage:** the unit has Shrouded (6+) in a turn in which it did not move.
-- **Hold the Line:** Infantry may re-roll failed Morale checks while in cover.
+**Sept Trait: Mantle of the Ghost-Hunter.**
 
-**Advanced Reaction: Fall Back and Fire** (Assault phase). Trigger: an enemy unit declares a charge against a Dal'yth unit. Instead of firing Overwatch, the unit moves up to D6 plus its Initiative Characteristic in inches directly away from the charging unit.
+- **Adaptive Camouflage:** Models with the Sept (Dal'yth) special rule gain the Shrouded (6+) special rule during any turn in which their unit did not make a move during the Movement phase (including disembarking or arriving from Reserves).
+- **Hold the Line:** Units composed entirely of models with the Infantry Unit Type and the Sept (Dal'yth) special rule may re-roll failed Morale checks while at least half of the models in the unit are within Area Terrain or behind a Defence Line.
 
-**Warlord Trait: Unbreakable Defender.** The Warlord and any unit he joins gain Shrouded (5+) while in cover. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Shooting phase, above its normal Reaction Allotment†.
+**Advanced Reaction: Fall Back and Fire** (Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Sept (Dal'yth) special rule, before any Overwatch attacks are resolved. Effect: The reacting unit forfeits its ability to make an Overwatch reaction against the charging unit. Instead, every model in the reacting unit may immediately make a move of up to D6 + its Initiative Characteristic in inches directly away from the charging enemy unit (this move may not bring any model within 1" of an enemy model or off the battlefield edge). The charging unit must still complete its Charge distance roll as normal.
+
+**Warlord Trait: Unbreakable Defender.** A Warlord with this Trait, and any unit he joins, gains the Shrouded (5+) special rule while at least half of the models in the unit are within Area Terrain or behind a Defence Line. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord is on the battlefield and has not been removed as a casualty.
 
 #### Farsight Enclaves
 
-Breakaway warriors who embrace close-quarters battle in a way the rest of the Empire abhors:
+*Breakaway warriors hardened by endless war against the Orks and the horrors of the Warp, embracing close-quarters battle in a way the rest of the Empire abhors.*
 
-- **Devastating Counterstrike:** the unit may re-roll to-wound rolls of 1 against targets within 12".
-- **Way of the Short Blade:** Infantry and battlesuits add 1 to their Weapon Skill, to a maximum of 4.
+**Sept Trait: Way of the Short Blade.**
 
-**Advanced Reaction: Hammer Strike** (Movement phase). Trigger: an enemy unit ends a move within 12" of a Farsight Enclaves battlesuit unit. The battlesuits move up to 6" toward the triggering unit; if this brings them within 1", they count as having charged and fight in the next Assault phase†.
+- **Devastating Counterstrike:** Models with the Sept (Farsight Enclaves) special rule re-roll To Wound rolls of 1 when making Shooting Attacks or close combat attacks against enemy units within 12".
+- **Way of the Short Blade:** Models with the Sept (Farsight Enclaves) special rule that have the Infantry Unit Type or the Battlesuit Unit Sub-type gain a +1 bonus to their Weapon Skill Characteristic (to a maximum of WS 4).
 
-**Warlord Trait: Martial Mastery.** The Warlord adds 1 to his Attacks, and his melee weapons gain Rending (6+). In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment†.
+**Advanced Reaction: Hammer Strike** (Movement phase). Trigger: This Advanced Reaction may be declared in the Movement phase, after an enemy unit ends a move within 12" of a friendly unit composed entirely of models with the Sept (Farsight Enclaves) special rule and the Battlesuit Unit Sub-type. Effect: Every model in the reacting unit may immediately make a move of up to 6" directly toward the triggering enemy unit. If this move brings any model in the reacting unit within 1" of an enemy model from that unit, move the reacting models into base contact; the reacting unit is locked in combat, counts as having made a successful Charge, and fights in the ensuing Assault phase.
+
+**Warlord Trait: Martial Mastery.** A Warlord with this Trait gains a +1 bonus to his Attacks Characteristic, and all Melee weapons he wields gain the Rending (6+) special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord is on the battlefield and has not been removed as a casualty.
 
 #### Sa'cea
 
-A crowded sept of disciplined, methodical soldiers:
+*A densely populated sept world of disciplined, methodical soldiers renowned for urban warfare and unwavering fire control.*
 
-- **Calm Discipline:** the unit may re-roll to-hit rolls of 1 in a turn in which it did not move.
-- **Superior Training:** the unit adds 1 to its Ballistic Skill when firing Overwatch, to a maximum of 5.
+**Sept Trait: Urban Fire-Discipline.**
 
-**Advanced Reaction: Steady Volleys** (Assault phase). Trigger: an enemy unit declares a charge against a Sa'cea unit. The unit fires Overwatch with every model, and the charger subtracts 2 from its charge distance roll.
+- **Calm Discipline:** Models with the Sept (Sa'cea) special rule re-roll To Hit rolls of 1 when making Shooting Attacks during any turn in which their unit did not move during the Movement phase (including disembarking or arriving from Reserves).
+- **Superior Training:** Models with the Sept (Sa'cea) special rule add +1 to their Ballistic Skill Characteristic (to a maximum of BS 5) when making Overwatch Shooting Attacks instead of firing as Snap Shots.
 
-**Warlord Trait: Disciplined Commander.** Friendly Sa'cea units within 12" of the Warlord use his Leadership. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment†.
+**Advanced Reaction: Steady Volleys** (Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Sept (Sa'cea) special rule, before any Overwatch attacks are resolved. Effect: Every model in the reacting unit may make an Overwatch Shooting Attack against the charging unit (benefiting from Superior Training), and the charging enemy unit must subtract 2 from its Charge Distance roll (to a minimum of 0).
+
+**Warlord Trait: Disciplined Commander.** Friendly units composed entirely of models with the Sept (Sa'cea) special rule within 12" of a Warlord with this Trait may use the Warlord's Leadership Characteristic for all Morale, Pinning, and Regroup tests. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord is on the battlefield and has not been removed as a casualty.
 
 #### T'au Sept
 
-The first and greatest sept, disciplined masters of combined fire:
+*The first and greatest sept of the Empire, supreme masters of combined-arms doctrine and interlocking fields of fire.*
 
-- **Cadre Discipline:** the unit adds 1 to its Leadership, to a maximum of 10.
-- **Coordinated Fire:** when using Supporting Fire, up to two other units may fire Overwatch instead of one.
+**Sept Trait: Coordinated Firepower.**
 
-**Advanced Reaction: Mont'ka Strike** (Shooting phase). Trigger: a T'au Sept unit is selected as the target of a Shooting Attack. The unit makes a Return Fire Shooting Attack before the enemy attack is resolved, instead of after it.
+- **Cadre Discipline:** Models with the Sept (T'au) special rule gain a +1 bonus to their Leadership Characteristic (to a maximum of Ld 10).
+- **Coordinated Fire:** When declaring the Supporting Fire Advanced Reaction on behalf of a friendly unit with the Sept (T'au) special rule, up to two other friendly units with the Sept (T'au) special rule within 6" of the charged unit may fire Overwatch in support, instead of one.
 
-**Warlord Trait: Master of the Hunter Cadre.** Friendly T'au units within 12" of the Warlord may re-roll to-hit rolls of 1 against units with at least one Markerlight token. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Shooting phase, above its normal Reaction Allotment†.
+**Advanced Reaction: Mont'ka Strike** (Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, after an enemy unit selects a friendly unit composed entirely of models with the Sept (T'au) special rule as the target of a Shooting Attack, before any To Hit rolls are made. Effect: The reacting unit immediately makes a Return Fire Shooting Attack targeting the active enemy unit, resolving all shots before the enemy unit resolves its Shooting Attack (any casualties inflicted by this Return Fire attack are removed before the enemy unit rolls To Hit).
+
+**Warlord Trait: Master of the Hunter Cadre.** Friendly units composed entirely of models with the T'au Empire faction trait within 12" of a Warlord with this Trait re-roll To Hit rolls of 1 when making Shooting Attacks against enemy units that have at least one Markerlight token. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord is on the battlefield and has not been removed as a casualty.
 
 #### Vior'la
 
-A fiery sept whose warriors favour aggressive, close-range firepower:
+*A fiery, aggressive sept world whose hot-blooded warriors favor rapid, close-range firestorms and relentless momentum.*
 
-- **Hot-blooded:** Rapid Fire weapons fire one extra shot at targets within half range.
-- **Strike Fast:** the unit may Advance and still shoot Rapid Fire and Assault weapons in the same turn†.
+**Sept Trait: Fury of the Hot-Blooded.**
 
-**Advanced Reaction: Burning Charge** (Movement phase). Trigger: an enemy unit ends a move within 12" of a Vior'la unit. The Vior'la unit makes a Shooting Attack against the triggering unit, using only Rapid Fire and Assault weapons.
+- **Hot-Blooded:** Models with the Sept (Vior'la) special rule fire one additional shot with all Rapid Fire weapons when firing at enemy targets within half of the weapon's maximum range (e.g., firing 3 shots at 15" with a 30" Pulse Rifle instead of 2).
+- **Strike Fast:** Units composed entirely of models with the Sept (Vior'la) special rule may make Shooting Attacks in the Shooting phase even if they made a Run move in the same Shooting phase, firing Rapid Fire and Assault weapons at their full Ballistic Skill rather than as Snap Shots.
 
-**Warlord Trait: Fiery Commander.** The Warlord and any unit he joins may re-roll to-wound rolls of 1 with Rapid Fire weapons. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Movement phase, above its normal Reaction Allotment†.
+**Advanced Reaction: Burning Charge** (Movement phase). Trigger: This Advanced Reaction may be declared in the Movement phase, after an enemy unit ends a move within 12" of, and within line of sight of, a friendly unit composed entirely of models with the Sept (Vior'la) special rule. Effect: The reacting unit may immediately make a Shooting Attack targeting the triggering enemy unit, firing only weapons with the Rapid Fire or Assault weapon types (this counts as an Interceptor reaction).
+
+**Warlord Trait: Fiery Commander.** A Warlord with this Trait, and any unit he joins, re-rolls To Wound rolls of 1 when making Shooting Attacks with Rapid Fire weapons. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord is on the battlefield and has not been removed as a casualty.
 
 ## Warlord Traits
 
-A T'au Warlord chooses one Warlord Trait: one of the three generic traits below, or the Warlord Trait of his Sept. An Auxiliary Warlord (such as a Kroot Shaper) may only choose a generic trait.
+If an army's Warlord has the T'au Empire faction trait, the controlling player may select one of the three generic Warlord Traits below, or the specific Warlord Trait associated with the Warlord's Sept. A Warlord with the Auxiliary Unit Sub-type (such as a Kroot Shaper) may only select one of the three generic Warlord Traits below.
 
 #### Exemplar of the Kauyon
 
-A patient hunter who lets the enemy walk into the trap.
+*A patient hunter who lets the enemy walk into the trap.*
 
-You may re-roll one Reserves roll each turn. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Movement phase, above its normal Reaction Allotment†.
+While a Warlord with this Trait is on the battlefield (or in Reserves), the controlling player may re-roll one Reserves roll per turn. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord is on the battlefield and has not been removed as a casualty.
 
 #### Precision of the Hunter
 
-A commander who sees the whole battle as a single firing solution.
+*A commander who sees the whole battle as a single firing solution.*
 
-Each hit from the markerlights of friendly units within 12" of the Warlord places one extra Markerlight token. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Shooting phase, above its normal Reaction Allotment†.
+Whenever a friendly unit within 12" of a Warlord with this Trait scores one or more hits on an enemy unit with a Markerlight, that enemy unit gains one additional Markerlight token. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord is on the battlefield and has not been removed as a casualty.
 
 #### Through Unity, Devastation
 
-A leader who coordinates every gun under his command.
+*A leader who coordinates every gun under his command.*
 
-When a friendly unit within 12" of the Warlord uses Supporting Fire, one additional unit may fire Overwatch. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment†.
+Whenever a friendly unit within 12" of a Warlord with this Trait is the target of a Charge and declares the Supporting Fire Advanced Reaction, one additional friendly unit with the T'au Empire faction trait within 6" of the charged unit may fire Overwatch in support. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord is on the battlefield and has not been removed as a casualty.
 
 ### Ethereal Invocations
 
-Ethereals are not psykers; their power comes from the total devotion of the T'au. At the start of your Movement phase, each Ethereal may make one invocation. It takes a Leadership test; if it passes, the invocation affects every friendly T'au unit (not Auxiliaries) within 12" until the start of your next turn. Aun'Va may make two invocations each turn.
+Ethereals are not psykers, nor do they draw upon the perilous energies of the Warp; their authority stems from the absolute spiritual devotion and harmony of the T'au castes.
+
+At the start of the controlling player's Movement phase, before any units are moved, each friendly model with the Ethereal special rule on the battlefield (and not embarked inside a Transport or Falling Back) may attempt to intone one Invocation from the list below (Aun'Va may attempt to intone up to two different Invocations per turn).
+
+To intone an Invocation, make a Leadership test for the Ethereal. If the test is passed, the chosen Invocation takes effect immediately, affecting the Ethereal and every friendly unit composed entirely of models with the T'au Empire faction trait (excluding units with the Auxiliary Unit Sub-type) within 12" of the Ethereal until the start of the controlling player's next turn. A unit may only benefit from a single Invocation at any one time.
 
 | Invocation | Effect |
 |---|---|
-| Calm of Tides | Units automatically pass Morale checks and Pinning tests |
-| Sense of Stone | Units have Feel No Pain (6+), or improve an existing Feel No Pain by 1 |
-| Storm of Fire | Rapid Fire weapons fire one extra shot at targets within half range |
-| Zephyr's Grace | Units may Advance and still shoot in the same turn |
-
-**Failed Invocations.** If the Leadership test fails, the invocation has no effect, and the Ethereal may not invoke again until your next turn.
+| Storm of Fire | Models in affected units gain the Rending (6+) special rule on all Shooting Attacks made with Pulse Rifles, Pulse Carbines, Pulse Blasters, and Pulse Pistols. |
+| Sense of Stone | Models in affected units gain the Feel No Pain (6+) special rule (or improve an existing Feel No Pain roll by +1, to a maximum of 4+). |
+| Zephyr's Grace | Affected units add +1" to their Run moves and Charge Distance rolls, and may re-roll failed Dangerous Terrain tests. |
+| Calm of Tides | Affected units gain the Stubborn special rule and may re-roll failed Morale and Pinning tests. |
 
 ## Rites of War
 
-A T'au army may take one Rite of War, chosen when the army is built. Each has a benefit and a limitation.
+When selecting an army with the T'au Empire faction trait, the controlling player may select a single Rite of War for their Primary Detachment, provided the Detachment's Warlord meets all listed Prerequisites. Only one Rite of War may be selected per Detachment, and all Effects and Limitations apply for the duration of the battle.
 
-#### Hunter Cadre
+#### Rite of War: Hunter Cadre
 
-Requires an Ethereal or Cadre Fireblade as Warlord. Benefit: every Strike Team and Breacher Team may include one Marker Drone without counting toward its drone limit, and Supporting Fire may be used by one additional unit. Limitation: no Lords of War, and Infantry must outnumber battlesuits.
+*The cornerstone of Fire Caste military doctrine, a Hunter Cadre integrates disciplined Fire Warrior infantry teams, reconnaissance pathfinders, and heavy battlesuit support into a seamless web of interlocking fire. Guided by the inspirational wisdom of an Ethereal or the sharp tactical acumen of a Cadre Fireblade, every squad fights as a single cohesive organism.*
 
-#### Kauyon
+**Prerequisites**
 
-Requires a Commander or Cadre Fireblade as Warlord. Benefit: Pathfinders may be taken as Troops and gain the Line sub-type, and Strike Teams and Pathfinders gain Infiltrate. Limitation: no unit may Advance in the first game turn.
+- A Detachment using this Rite of War must include an Ethereal or a Cadre Fireblade with the Cadre Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.
 
-#### Kroot Kindred
+**Effects**
 
-Requires a Kroot Shaper as Warlord. Benefit: Kroot Carnivores may be taken in units of up to 30, and Kroot Hounds and Krootox Riders may be taken as Troops. Limitation: no battlesuits other than Stealth Battlesuits, and no Lords of War.
+- Integrated Markerlight Network: Every Strike Team and Breacher Team in a Detachment using this Rite of War may include one Marker Drone at its normal points cost without that Drone counting toward the unit's maximum Drone limit.
+- Coordinated Supporting Fire: Whenever an enemy unit declares a Charge against a friendly unit with the T'au Empire faction trait in a Detachment using this Rite of War, one additional friendly unit with the Supporting Fire special rule (within 6" of the charged unit) may fire Overwatch in support, above the normal limit of supporting units.
+- Fire Caste Discipline: While the army's Warlord is alive on the battlefield, friendly Strike Teams, Breacher Teams, and Pathfinder Teams within 12" of the Warlord gain the Stubborn special rule and may re-roll failed Pinning tests.
+- Volley Fire: Once per battle, at the start of any of the controlling player's Shooting phases, the Warlord may issue a Coordinated Volley command. Until the end of that Shooting phase, all Pulse Rifles, Pulse Carbines, and Pulse Blasters fired by friendly units within 12" of the Warlord gain the Rending (6+) special rule.
 
-#### Mont'ka
+**Limitations**
 
-Requires a Commander as Warlord. Benefit: Crisis Battlesuits may be taken as Troops and gain the Line sub-type. Limitation: no Heavy Support choices other than Broadsides, and no Kroot units.
+- A Detachment using this Rite of War may not include any Lords of War choices.
+- A Detachment using this Rite of War must include strictly more Infantry units (excluding Battlesuits and Drones) than Battlesuit units (counted across all Force Organisation slots).
+- A Detachment using this Rite of War may not select any Fortification choices.
+
+#### Rite of War: Kauyon
+
+*Kauyon, the Patient Hunter. The philosophy of Kauyon teaches that the hunter must become one with the terrain, luring the prey into a carefully prepared killing ground before springing the trap with devastating precision. Hidden scouts and forward observers paint targets with invisible markerlight beams while concealed fire teams wait patiently for the enemy to overextend.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a T'au Commander (in Enforcer, Coldstar, or Crisis Battlesuit armour) or a Cadre Fireblade with the Cadre Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- Eyes of the Hunter: Pathfinder Teams may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected as a Compulsory Troops choice in this manner gains the Line Unit Sub-type.
+- Concealed Ambush: Every Strike Team and Pathfinder Team in a Detachment using this Rite of War gains the Infiltrate and Move Through Cover special rules.
+- Lure of the Trap: During the first game turn, all friendly units with the T'au Empire faction trait in a Detachment using this Rite of War gain the Shrouded (5+) special rule.
+- Spring the Trap: From the second game turn onwards, whenever a friendly unit with the T'au Empire faction trait makes a Shooting Attack against an enemy unit that is within 12" of a friendly Pathfinder Team or Stealth Battlesuit Team, models in the firing unit re-roll To Hit rolls of 1.
+
+**Limitations**
+
+- No unit in a Detachment using this Rite of War may make a Run move (or Advance move) in the Shooting phase of the first game turn, nor may any unit declare a Charge in the Assault phase of the first game turn.
+- No unit in a Detachment using this Rite of War may deploy via Deep Strike (including Manta Strike).
+- All Compulsory Troops choices in a Detachment using this Rite of War must be Strike Teams or Pathfinder Teams.
+
+#### Rite of War: Kroot Kindred
+
+*Operating on the untamed fringes of T'au expansion or sweeping through dense jungles and ruined cities ahead of the main Fire Caste advance, a Kroot Kindred relies on primal cunning, ambush tactics, and overwhelming savage ferocity. Guided by the evolutionary instincts of their Shapers, packs of Carnivores, Hounds, and lumbering Krootox tear enemy formations apart in brutal close-quarters slaughter.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a Kroot Shaper (or Kroot Master Shaper) as the army's Warlord.
+
+**Effects**
+
+- Mercenary Horde: Kroot Carnivore Squads in a Detachment using this Rite of War may increase their maximum unit size to up to 30 models (at their standard points cost per additional model).
+- Beasts of Pech: Kroot Hound Packs and Krootox Rider Squads may be selected as Troops choices in a Detachment using this Rite of War. Any Kroot Carnivore Squad, Kroot Hound Pack, or Krootox Rider Squad selected as a Compulsory Troops choice gains the Line Unit Sub-type.
+- Apex Predators: Every model with the Kroot special rule in a Detachment using this Rite of War gains the Infiltrate and Scout special rules.
+- Feast of Flesh: Whenever a unit composed entirely of models with the Kroot special rule destroys an enemy Infantry or Cavalry unit in the Assault phase, every model in that Kroot unit immediately gains the Feel No Pain (5+) special rule (or improves an existing Feel No Pain roll by +1, to a maximum of 4+) for the remainder of the battle.
+
+**Limitations**
+
+- A Detachment using this Rite of War may not include any Battlesuit units (including Commanders in Battlesuits, Crisis, Broadside, Riptide, or Ghostkeel Battlesuits) other than Stealth Battlesuit Teams, nor may it include any T'au Vehicles (such as Devilfish, Hammerheads, or Sky Rays).
+- A Detachment using this Rite of War may not include any Lords of War choices or Fortification choices.
+- All Compulsory Troops choices in a Detachment using this Rite of War must be Kroot Carnivore Squads, Kroot Hound Packs, or Krootox Rider Squads.
+
+#### Rite of War: Mont'ka
+
+*Mont'ka, the Killing Blow. The philosophy of Mont'ka is the art of the decisive, lightning-fast strike—concentrating overwhelming mobile firepower against the enemy's command nodes and vital strongpoints to shatter their cohesion before they can react. Spearheaded by jet-pack Crisis Battlesuits dropping from low orbit, the Cadre strikes like a thunderbolt.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a T'au Commander (equipped with an Enforcer, Coldstar, or Crisis Battlesuit) with the Cadre Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- Vanguard of the Killing Blow: Crisis Battlesuit Teams may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected as a Compulsory Troops choice in this manner gains the Line Unit Sub-type.
+- Sudden Strike: Every Crisis Battlesuit Team and T'au Commander in a Detachment using this Rite of War gains the Deep Strike (or Manta Strike) special rule, and the controlling player adds +1 to all Reserves rolls made for units arriving via Deep Strike.
+- Aggressive Mobility: During the first two game turns, all units composed entirely of models with the Battlesuit Unit Sub-type (or Jet Pack Infantry) in a Detachment using this Rite of War may re-roll failed Thrust / Jet Pack move distance rolls in the Assault phase, and treat all ranged weapons as having the Assault type during any turn in which they arrived via Deep Strike.
+- Decapitation Protocol: At the start of the game, after deployment is complete, the controlling player may nominate one enemy unit containing the opposing Warlord or an HQ choice. All friendly Crisis Battlesuit Teams and T'au Commanders gain the Preferred Enemy special rule against that nominated unit for the remainder of the battle.
+
+**Limitations**
+
+- A Detachment using this Rite of War may not select any Heavy Support choices other than Broadside Battlesuit Teams.
+- A Detachment using this Rite of War may not include any Kroot or Vespid auxiliary units, nor may it include any Fortification choices.
+- All Compulsory Troops choices in a Detachment using this Rite of War must be Crisis Battlesuit Teams or Breacher Teams.
 
 ## Force Organisation
 
@@ -331,12 +430,13 @@ Drones are small, semi-intelligent machines that fly alongside T'au units, carry
 
 **Special Rules**
 
+
+- Cadre Commander
 - Ethereal Invocations
 - Independent Character
 - Master of the Blade: Aun'Shi may re-roll failed to-hit rolls in close combat
 - Sept (X)
 - Supreme Loyalty (as Ethereal)
-
 #### Aun'Va — 100 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -361,12 +461,13 @@ Drones are small, semi-intelligent machines that fly alongside T'au units, carry
 
 **Special Rules**
 
+
 - Bodyguard: while an Ethereal Guard is alive, wounds allocated to Aun'Va are allocated to an Ethereal Guard instead†
+- Cadre Commander
 - Ethereal Invocations (two per turn)
 - Martyrdom (as Ethereal)
 - Sept (T'au)
 - Supreme Loyalty (as Ethereal, 24")
-
 #### Cadre Fireblade — 50 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -390,6 +491,7 @@ Drones are small, semi-intelligent machines that fly alongside T'au units, carry
 
 **Special Rules**
 
+- Cadre Commander
 - Drone Controller
 - Independent Character
 - Sept (X)
@@ -424,6 +526,7 @@ Drones are small, semi-intelligent machines that fly alongside T'au units, carry
 **Special Rules**
 
 - Bulky (3)
+- Cadre Commander
 - Drone Controller
 - Independent Character (may only join battlesuit units)
 - Jet Packs
@@ -468,12 +571,13 @@ One of Farsight's Eight, who carries more guns into battle than any other Crisis
 
 **Special Rules**
 
+
 - Bulky (3)
+- Cadre Commander
 - Independent Character (may only join battlesuit units)
 - Jet Packs
 - Sept (Farsight Enclaves)
 - Weapon Master: Arra'kon may fire each of his weapons at a different target, and may re-roll to-hit rolls of 1
-
 #### Commander Bravestorm — 140 pts
 
 One of Farsight's Eight, whose iridium battlesuit has carried him through more close-quarters fights than any T'au should survive.
@@ -500,12 +604,13 @@ One of Farsight's Eight, whose iridium battlesuit has carried him through more c
 
 **Special Rules**
 
+
 - Bulky (3)
+- Cadre Commander
 - Fearless Champion: Bravestorm has Feel No Pain (5+) and Rage (2)
 - Independent Character (may only join battlesuit units)
 - Jet Packs
 - Sept (Farsight Enclaves)
-
 #### Commander Brightsword — 140 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -532,14 +637,15 @@ One of Farsight's Eight, whose iridium battlesuit has carried him through more c
 
 **Special Rules**
 
+
 - Bulky (3)
+- Cadre Commander
 - Drone Controller
 - Fail-safe Detonator: if Brightsword is slain, every unit within 3" (friend or foe) suffers D6 hits at Strength 6, AP 4
 - Independent Character (may only join battlesuit units)
 - Jet Packs
 - Sept (X)
 - Warscaper Field: while the Warscaper Drone is alive, Brightsword and any unit he joins have Shrouded (5+)
-
 #### Commander Farsight — 165 pts
 
 Commander Farsight now fights in the XV-86 Supernova battlesuit, a bespoke suit forged for him by the Earth Caste of the Enclaves, faster and better armoured than his old Crisis suit.
@@ -565,14 +671,15 @@ Commander Farsight now fights in the XV-86 Supernova battlesuit, a bespoke suit 
 
 **Special Rules**
 
+
 - Bulky (4)
+- Cadre Commander
 - Independent Character (may only join battlesuit units)
 - Jet Packs
 - Sept (Farsight Enclaves)
 - Supreme Commander: if he is in your army, Farsight must be your Warlord
 - Way of the Short Blade: Farsight and any unit he joins gain Furious Charge (1)
 - XV-86 Supernova Battlesuit: Farsight's jet pack move in the Shooting phase is 9" instead of 6", and once per game he may re-roll all failed to-hit and to-wound rolls in one Assault phase
-
 #### Commander O'Vesa — 300 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -600,7 +707,9 @@ Commander Farsight now fights in the XV-86 Supernova battlesuit, a bespoke suit 
 
 **Special Rules**
 
+
 - Bulky (8)
+- Cadre Commander
 - Drone Controller
 - Earth Caste Engineer: O'Vesa has Battlesmith (5+)†, which he may use on friendly battlesuits as well as vehicles
 - Invulnerable save (4+)
@@ -608,7 +717,6 @@ Commander Farsight now fights in the XV-86 Supernova battlesuit, a bespoke suit 
 - Master of the Forge: friendly Bork'an battlesuits within 12" may re-roll to-hit rolls of 1
 - Nova Reactor (as Riptide); O'Vesa may re-roll the Leadership test
 - Sept (Bork'an)
-
 #### Commander Shadowsun — 135 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -631,7 +739,9 @@ Commander Farsight now fights in the XV-86 Supernova battlesuit, a bespoke suit 
 
 **Special Rules**
 
+
 - Bulky (2)
+- Cadre Commander
 - Drone Controller
 - Independent Character (may only join battlesuit units)
 - Infiltrate
@@ -641,7 +751,6 @@ Commander Farsight now fights in the XV-86 Supernova battlesuit, a bespoke suit 
 - Shrouded (5+)
 - Stealth
 - Supreme Commander: if she is in your army, Shadowsun must be your Warlord
-
 #### Commander Sha'vastos — 120 pts
 
 One of Farsight's Eight, a steadfast commander famed for holding the line against impossible odds.
@@ -667,12 +776,13 @@ One of Farsight's Eight, a steadfast commander famed for holding the line agains
 
 **Special Rules**
 
+
 - Bulky (3)
+- Cadre Commander
 - Independent Character (may only join battlesuit units)
 - Jet Packs
 - Puretide Engram Chip: once per game, Sha'vastos and his unit automatically pass every Morale check and Pinning test until the end of the turn, and may re-roll failed to-hit rolls
 - Sept (Farsight Enclaves)
-
 #### Ethereal — 50 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -694,6 +804,7 @@ One of Farsight's Eight, a steadfast commander famed for holding the line agains
 
 **Special Rules**
 
+- Cadre Commander
 - Drone Controller
 - Ethereal Invocations
 - Independent Character
@@ -730,12 +841,13 @@ One of Farsight's Eight, a steadfast commander famed for holding the line agains
 
 **Special Rules**
 
+
 - Auxiliaries
 - Feast of the Fallen: the unit he joins has Feel No Pain (6+), and once per game, after destroying an enemy unit in close combat, adds 1 to its Strength until the end of the game
 - Independent Character (may only join Kroot units)
 - Infiltrate
+- Kroot
 - Move Through Cover
-
 #### Kroot Lone-spear — 85 pts
 
 A solitary Kroot hunter mounted on a Kalamandra, who stalks great prey alone.
@@ -760,12 +872,13 @@ A solitary Kroot hunter mounted on a Kalamandra, who stalks great prey alone.
 
 **Special Rules**
 
+
 - Auxiliaries
 - Hunter of Great Prey: the Lone-spear may re-roll failed to-wound rolls against characters, Dreadnoughts and Monstrous Creatures
+- Kroot
 - Lone Hunter: the Lone-spear may never join a unit
 - Move Through Cover
 - Scout
-
 #### Kroot Master Shaper — 60 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -787,12 +900,13 @@ A solitary Kroot hunter mounted on a Kalamandra, who stalks great prey alone.
 
 **Special Rules**
 
+
 - Auxiliaries
 - Independent Character (may only join Kroot units)
 - Infiltrate
 - Kindred Lord: Kroot units within 12" use his Leadership and may re-roll failed Morale checks
+- Kroot
 - Move Through Cover
-
 #### Kroot Shaper — 35 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -817,6 +931,7 @@ A solitary Kroot hunter mounted on a Kalamandra, who stalks great prey alone.
 - Auxiliaries
 - Independent Character (may only join Kroot units)
 - Infiltrate
+- Kroot
 - Kroot Leader: Kroot units within 12" may use his Leadership
 - Move Through Cover
 
@@ -849,12 +964,13 @@ A solitary Kroot hunter mounted on a Kalamandra, who stalks great prey alone.
 
 **Special Rules**
 
+
 - Auxiliaries
 - Independent Character (may only join Kroot units)
 - Infiltrate
+- Kroot
 - Move Through Cover
 - Trail Shaper: the unit he joins gains Outflank† and Scout
-
 #### Kroot War Shaper — 45 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -876,12 +992,13 @@ A solitary Kroot hunter mounted on a Kalamandra, who stalks great prey alone.
 
 **Special Rules**
 
+
 - Auxiliaries
 - Independent Character (may only join Kroot units)
 - Infiltrate
+- Kroot
 - Move Through Cover
 - Tactical Instinct: the unit he joins gains Furious Charge (1) and may re-roll its charge distance
-
 #### Shas'o R'alai — 120 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -905,14 +1022,15 @@ A solitary Kroot hunter mounted on a Kalamandra, who stalks great prey alone.
 
 **Special Rules**
 
+
 - Bulky (4)
+- Cadre Commander
 - Drone Controller
 - Independent Character
 - Jet Packs
 - Prototype Systems: R'alai may re-roll to-hit rolls of 1
 - Sept (X)
 - Swift Shield: R'alai and any unit he joins gain Deep Strike, and do not scatter if arriving in the first turn they may
-
 #### Shas'o R'myr — 150 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -936,13 +1054,14 @@ A solitary Kroot hunter mounted on a Kalamandra, who stalks great prey alone.
 
 **Special Rules**
 
+
 - Battle-forged Hero: R'myr has Feel No Pain (5+)
 - Bulky (3)
+- Cadre Commander
 - Independent Character (may only join battlesuit units)
 - Inspiring Example: friendly battlesuit units within 12" may use his Leadership
 - Jet Packs
 - Sept (X)
-
 #### Sub-commander Torchstar — 110 pts
 
 One of Farsight's Eight, who burns her way through the enemy at point-blank range.
@@ -1311,6 +1430,7 @@ Crisis Bodyguards may only be taken if the army includes a Commander, Commander 
 - Auxiliaries
 - Cold-blooded: while he lives, the unit may re-roll failed Morale checks and Pinning tests
 - Infiltrate
+- Kroot
 - Move Through Cover
 - Pistolier: may fire both Kroot pistols in the Shooting phase, and may use them in close combat as an extra Attack
 - Stalker: may move up to 6" after deployment and before the first turn
@@ -1330,6 +1450,10 @@ Crisis Bodyguards may only be taken if the army includes a Commander, Commander 
 | – Pulse carbine | +5 points |
 | **The Bow-hunter may take:** |  |
 | – Tanglebomb launcher | +5 points |
+| **The entire unit may take one of the following Evolutionary Adaptations (see Kroot; only with a Kroot Shaper or under Kroot Kindred):** |  |
+| – Skeletal Wings / Swift Striders | +2 points per model |
+| – Thickened Hide | +2 points per model |
+| – Muscular Hypertrophy | +2 points per model |
 
 #### Riptide — 180 pts
 
@@ -1666,6 +1790,7 @@ The unit may take a Devilfish as a Dedicated Transport.
 - Auxiliaries
 - Fieldcraft: the unit has Shrouded (6+) while in area terrain
 - Infiltrate
+- Kroot
 - Move Through Cover
 
 **Options**
@@ -1675,6 +1800,10 @@ The unit may take a Devilfish as a Dedicated Transport.
 | **The Kroot Carnivores may take:** |  |
 | – Up to 10 additional Kroot Carnivores | +6 points each |
 | One Carnivore may be upgraded to a Kroot Long-quill | +5 points |
+| **The entire unit may take one of the following Evolutionary Adaptations (see Kroot; only with a Kroot Shaper or under Kroot Kindred):** |  |
+| – Skeletal Wings / Swift Striders | +2 points per model |
+| – Thickened Hide | +2 points per model |
+| – Muscular Hypertrophy | +2 points per model |
 
 #### Strike Team — 45 pts
 
@@ -1797,6 +1926,7 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 - Auxiliaries
 - Fleet (1)
 - Hammer of Wrath (1)
+- Kroot
 - Move Through Cover
 - Pack Hunters: the unit may re-roll failed charge distance rolls
 
@@ -1807,6 +1937,10 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 | **The unit may take:** |  |
 | – Up to 6 additional Knarloc Riders | +30 points each |
 | One Rider may be upgraded to a Knarloc Rider Shaper | +10 points |
+| **The entire unit may take one of the following Evolutionary Adaptations (see Kroot; only with a Kroot Shaper or under Kroot Kindred):** |  |
+| – Skeletal Wings / Swift Striders | +2 points per model |
+| – Thickened Hide | +2 points per model |
+| – Muscular Hypertrophy | +2 points per model |
 
 #### Kroot Hounds — 30 pts
 
@@ -1831,6 +1965,7 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 - Auxiliaries
 - Fleet (1)
 - Infiltrate
+- Kroot
 - Move Through Cover
 
 **Options**
@@ -1839,6 +1974,10 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 |---|---|
 | **The Kroot Hounds may take:** |  |
 | – Up to 7 additional Kroot Hounds | +6 points each |
+| **The entire unit may take one of the following Evolutionary Adaptations (see Kroot; only with a Kroot Shaper or under Kroot Kindred):** |  |
+| – Skeletal Wings / Swift Striders | +2 points per model |
+| – Thickened Hide | +2 points per model |
+| – Muscular Hypertrophy | +2 points per model |
 
 #### Krootox Rampagers — 120 pts
 
@@ -1864,6 +2003,7 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 - Auxiliaries
 - Fleet (1)
 - Hammer of Wrath (1)
+- Kroot
 - Move Through Cover
 - Rampage (1)
 
@@ -1873,6 +2013,10 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 |---|---|
 | **The unit may take:** |  |
 | – Up to 3 additional Krootox Rampagers | +40 points each |
+| **The entire unit may take one of the following Evolutionary Adaptations (see Kroot; only with a Kroot Shaper or under Kroot Kindred):** |  |
+| – Skeletal Wings / Swift Striders | +2 points per model |
+| – Thickened Hide | +2 points per model |
+| – Muscular Hypertrophy | +2 points per model |
 
 #### Krootox Riders — 35 pts
 
@@ -1897,6 +2041,7 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 
 - Auxiliaries
 - Hammer of Wrath (1)
+- Kroot
 - Move Through Cover
 
 **Options**
@@ -1905,6 +2050,10 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 |---|---|
 | **The unit may take:** |  |
 | – Up to 2 additional Krootox Riders | +35 points each |
+| **The entire unit may take one of the following Evolutionary Adaptations (see Kroot; only with a Kroot Shaper or under Kroot Kindred):** |  |
+| – Skeletal Wings / Swift Striders | +2 points per model |
+| – Thickened Hide | +2 points per model |
+| – Muscular Hypertrophy | +2 points per model |
 
 #### Pathfinders — 65 pts
 
@@ -2229,6 +2378,7 @@ Use the Drone profiles and equipment from the Drones section.
 
 - Auxiliaries
 - Hammer of Wrath (1)
+- Kroot
 - Move Through Cover
 - Rampaging Beast: in a turn in which it charged, the Great Knarloc adds 1 to its Attacks
 
@@ -2239,6 +2389,10 @@ Use the Drone profiles and equipment from the Drones section.
 | **The Great Knarloc may exchange its Kroot gun for:** |  |
 | – Twin Kroot rifles | –10 points |
 | – Twin Londaxi tribalests | +10 points |
+| **The entire unit may take one of the following Evolutionary Adaptations (see Kroot; only with a Kroot Shaper or under Kroot Kindred):** |  |
+| – Skeletal Wings / Swift Striders | +2 points per model |
+| – Thickened Hide | +2 points per model |
+| – Muscular Hypertrophy | +2 points per model |
 
 #### Hammerhead Gunship — 125 pts
 

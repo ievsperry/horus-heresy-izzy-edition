@@ -266,6 +266,14 @@ loading. The script prints anything in the doc it could not place.
   category (which a rule link cannot reach): it adds a shared copy of the rule to the file that defines it and
   links that, or links a reachable shared rule of the same name. The builder does not offer the shared copies of
   rules a category carries (Independent Character, Line Sub-type): homebrew units get the category.
+- T'au Empire: four Rites of War (Hunter Cadre, Kauyon, Kroot Kindred, Mont'ka) in the long Prerequisites/Effects/
+  Limitations form, made by tau_rites.py from unit lists (the builder's reading of them is cleared): who may be the
+  Warlord (Cadre Commander, on the Commander, the named Commanders and Shas'o, the Cadre Fireblade and the Ethereals,
+  counts as Master of the Legion for it), the slots and Line, Kroot Carnivores up to 30, the rules granted, the bans,
+  the compulsory Troops and one more drone for Strike and Breacher Teams under Hunter Cadre. Commander Farsight
+  (Farsight Enclaves) and Commander Shadowsun and Aun'Va (T'au Sept) are an error in a Detachment of another Sept.
+  The Kroot special rule is on every Kroot datasheet; its Evolutionary Adaptations are a pick of one, +2 points per
+  model, on the Kroot squads.
 - A unit with a model of the Unique Sub-type may be taken once per force, as official Unique characters are
   (Constantin Valdor): the builder adds that limit unless the doc already sets one (unique_limits).
 - Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,
