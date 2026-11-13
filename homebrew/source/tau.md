@@ -113,7 +113,17 @@ A weapon or ability with this special rule can only be used once during the cour
 
 #### Saviour Protocols
 
-When a wound is allocated to a friendly T'au character or battlesuit within 3" of a friendly Drone, you may roll a D6; on a 2+, that wound is allocated to the Drone instead (use the Drone's save)†.
+*Programmed with unwavering self-preservation overrides tailored to protect their Fire Caste masters, Tactical Drones automatically intercept incoming fire and lethal blows, interposing their armoured discs directly into the path of enemy rounds and blades.*
+
+Every Drone has this special rule.
+
+- **Trigger and Eligibility:** Whenever a friendly model with the T'au Empire faction trait and the Infantry Unit Type (including Battlesuits and Characters, but excluding Drones and Auxiliaries) fails a Saving Throw against a wound (or suffers an unsaved wound from an attack that does not allow Saving Throws), and there is at least one friendly model with the Saviour Protocols special rule (such as a Gun Drone, Marker Drone, or Shield Drone) within 3" of that model (either as part of the same unit or as a separate friendly unit), the controlling player may choose to activate Saviour Protocols.
+- **Intercepting the Blow:** Roll a D6: on a 2+, the wound is intercepted. Instead of allocating the wound or its Damage (including Instant Death or Brutal multiple wounds) to the original target, a single eligible Drone within 3" is immediately removed as a casualty (no Saving Throws or Feel No Pain rolls may be made to prevent this Drone from being destroyed).
+- **Limitations:** A single Drone can only intercept one wound (and is destroyed upon doing so, even if the intercepted attack had Brutal (X) or Instant Death). Saviour Protocols may not be used to intercept wounds caused by Perils of the Warp, Gets Hot, or close combat attacks made while fighting in a Challenge.
+
+#### Heart of the Cadre
+
+A unit with this special rule counts as having the Heart of the Legion special rule.
 
 #### Sept (X)
 
@@ -135,6 +145,8 @@ If the model has not moved this turn, it cannot be targeted by ranged attacks fr
 Units with the T'au Empire faction trait have access to all Core Reactions presented in the Warhammer: The Horus Heresy – Age of Darkness Rulebook, as well as the following unique Advanced Reaction. Unless otherwise stated, declaring an Advanced Reaction costs 1 point of the controlling player's Reaction Allotment in the appropriate phase.
 
 **Supporting Fire** (Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, immediately after an enemy unit declares a Charge against a friendly unit composed entirely of models with the T'au Empire faction trait, before any Overwatch attacks are resolved. Effect: Every other friendly unit composed entirely of models with the T'au Empire faction trait (excluding units with the Auxiliary Unit Sub-type, such as Kroot or Vespid) that has at least one model within 12" of the targeted unit, has line of sight to the charging enemy unit, and is not currently locked in combat, Falling Back, or Pinned may immediately make an Overwatch Shooting Attack targeting the charging enemy unit, in addition to the targeted unit itself making an Overwatch Shooting Attack as normal. (Note: Each supporting unit firing Overwatch as part of this Reaction counts as having expended its ability to make Reactions for that phase.)
+
+Supporting Fire may only be declared once in each of the opposing player's Assault phases, but may be used more than once per game.
 
 ### Septs
 
@@ -191,7 +203,7 @@ Units with the T'au Empire faction trait have access to all Core Reactions prese
 **Sept Trait: Urban Fire-Discipline.**
 
 - **Calm Discipline:** Models with the Sept (Sa'cea) special rule re-roll To Hit rolls of 1 when making Shooting Attacks during any turn in which their unit did not move during the Movement phase (including disembarking or arriving from Reserves).
-- **Superior Training:** Models with the Sept (Sa'cea) special rule add +1 to their Ballistic Skill Characteristic (to a maximum of BS 5) when making Overwatch Shooting Attacks instead of firing as Snap Shots.
+- **Superior Training:** Models with the Sept (Sa'cea) special rule add +1 to their Ballistic Skill Characteristic (to a maximum of BS 5) when making Overwatch Shooting Attacks.
 
 **Advanced Reaction: Steady Volleys** (Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Sept (Sa'cea) special rule, before any Overwatch attacks are resolved. Effect: Every model in the reacting unit may make an Overwatch Shooting Attack against the charging unit (benefiting from Superior Training), and the charging enemy unit must subtract 2 from its Charge Distance roll (to a minimum of 0).
 
@@ -222,6 +234,19 @@ Units with the T'au Empire faction trait have access to all Core Reactions prese
 **Advanced Reaction: Burning Charge** (Movement phase). Trigger: This Advanced Reaction may be declared in the Movement phase, after an enemy unit ends a move within 12" of, and within line of sight of, a friendly unit composed entirely of models with the Sept (Vior'la) special rule. Effect: The reacting unit may immediately make a Shooting Attack targeting the triggering enemy unit, firing only weapons with the Rapid Fire or Assault weapon types (this counts as an Interceptor reaction).
 
 **Warlord Trait: Fiery Commander.** A Warlord with this Trait, and any unit he joins, re-rolls To Wound rolls of 1 when making Shooting Attacks with Rapid Fire weapons. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord is on the battlefield and has not been removed as a casualty.
+
+#### Kyu'shan
+
+*An ancient, secluded sphere of worlds on the eastern fringes of the Empire, where the Fire Caste upholds the feudal martial codes, cyber-forged bladework, and ancestral honours of the Jade Throne.*
+
+**Sept Trait: Code of the Jade Throne.**
+
+- **Ancestral Discipline:** Models with the Sept (Kyu'shan) special rule gain the Stubborn special rule and add +1 to their Weapon Skill Characteristic (to a maximum of WS 4).
+- **Disciplined Riposte:** Models with the Sept (Kyu'shan) special rule gain the Counter-Attack (1) special rule during any Assault phase in which they did not make a Run move in the preceding Shooting phase.
+
+**Advanced Reaction: Blade-Wall Counterstrike** (Assault phase). Trigger: Declared in the Assault phase, immediately after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Sept (Kyu'shan) special rule, before any Overwatch attacks are resolved. Effect: The reacting unit forfeits its ability to make an Overwatch reaction against the charging unit. Instead, every model in the reacting unit gains a +1 bonus to its Initiative Characteristic and improves the Rending value of its Melee weapons by +1 (to a maximum of 4+) until the end of the current Assault phase.
+
+**Warlord Trait: Daimyo of the Eternal Host.** A Warlord with this Trait, and any unit he joins, gains the Preferred Enemy (Everything) special rule when fighting in a Challenge or within 3" of an Objective marker. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord is on the battlefield and has not been removed as a casualty.
 
 ## Warlord Traits
 
@@ -348,6 +373,26 @@ When selecting an army with the T'au Empire faction trait, the controlling playe
 - A Detachment using this Rite of War may not include any Kroot or Vespid auxiliary units, nor may it include any Fortification choices.
 - All Compulsory Troops choices in a Detachment using this Rite of War must be Crisis Battlesuit Teams or Breacher Teams.
 
+#### Rite of War: Host of the Jade Throne
+
+*Marching beneath towering silken holo-banners and horned Crisis Battlesuits, the warriors of Sept Kyu'shan advance as an unbreakable feudal phalanx, meeting the Empire's deadliest foes with disciplined pulse volleys and resonant vibro-steel.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must be aligned to Sept Kyu'shan, and must include a T'au Commander or Cadre Fireblade with the Cadre Commander special rule as the army's Warlord.
+
+**Effects**
+
+- Vanguard of the Jade Throne: Crisis Battlesuit Teams may be selected as non-Compulsory Troops choices in a Detachment using this Rite of War, and gain the Heart of the Cadre special rule.
+- Unbreakable Honour: Every unit in a Detachment using this Rite of War composed entirely of models with the Infantry Unit Type (including Battlesuits) automatically passes all Pinning tests, and adds +1 to its Combat Resolution score whenever fighting in the Assault phase while within 12" of the army's Warlord.
+- Banzai Protocol: Once per battle, at the start of any of the controlling player's Assault phases, the Warlord may sound the War-Drums of Kyu'shan. Until the end of that Assault phase, all friendly units with the Sept (Kyu'shan) special rule gain the Furious Charge (1) special rule and may re-roll failed Charge Distance rolls.
+
+**Limitations**
+
+- A Detachment using this Rite of War may not include any Kroot or Vespid auxiliary units, nor may it include any Fortification choices.
+- A Detachment using this Rite of War may only select a single Heavy Support choice.
+- All Compulsory Troops choices in a Detachment using this Rite of War must be Strike Teams or Breacher Teams.
+
 ## Force Organisation
 
 Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, Heavy Support, Dedicated Transports, Lord of War and Fortifications. Each unit takes the slot of the section it appears under:
@@ -355,7 +400,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | 2.0 slot | T'au units |
 |---|---|
 | HQ | Blade-Sworn Cadre Master, Crisis Bodyguard Team, Fireblade Honour Guard Team, Ethereal Honour Guard and Blade-Sworn Honour Guard Team (Retinue Squads only), Commander, Cadre Fireblade, Ethereal, Aun'Va, Aun'Shi, Commander Farsight, Commander Shadowsun, Kroot Shaper, Shas'o R'alai, Shas'o R'myr, Commander Brightsword, Commander O'Vesa, The Twin Lance, Commander Bravestorm, Commander Sha'vastos, Commander Arra'kon, Sub-commander Torchstar, Kroot Master Shaper, Kroot Flesh Shaper, Kroot Trail Shaper, Kroot War Shaper, Kroot Lone-spear |
-| Elites | Crisis Battlesuits, Crisis Bodyguards (also a Retinue Squad), Farsight Blade-Sworn Team, Stealth Battlesuits, Riptide, Ghostkeel, Firesight Marksman, Darkstrider, Kroot Farstalkers, XV9 Hazard Support Team, XV81 Crisis Battlesuits, XV84 Crisis Battlesuits, DX-4 Technical Drones, Ethereal Guard |
+| Elites | Crisis Battlesuits, Crisis Bodyguards (also a Retinue Squad), Farsight Blade-Sworn Team, Royal Guard Team, Stealth Battlesuits, Riptide, Ghostkeel, Firesight Marksman, Darkstrider, Kroot Farstalkers, XV9 Hazard Support Team, XV81 Crisis Battlesuits, XV84 Crisis Battlesuits, DX-4 Technical Drones, Ethereal Guard |
 | Troops | Strike Team, Breacher Team, Kroot Carnivores, Gue'vesa Squad |
 | Dedicated Transports | Devilfish |
 | Fast Attack | Pathfinders, Tactical Drones, Piranhas, Vespid Stingwings, Kroot Hounds, Krootox Riders, Sun Shark Bomber, Razorshark Strike Fighter, Tetra Scout Speeders, Remora Stealth Drones, Barracuda, Orca Dropship, Piranha TX-42, Krootox Rampagers, Knarloc Riders |
@@ -531,6 +576,8 @@ A Detachment may only include one or more Blade-Sworn Cadre Masters if every mod
 | – Repulsor jet-pack (Deep Strike) | +15 points |
 | **The Blade-Sworn Cadre Master may take up to two drones from:** |  |
 | – Gun, Marker or Shield Drones | Drone costs |
+| **The Blade-Sworn Cadre Master may take (Sept wargear):** |  |
+| – Talisman of Arthas Moloch | +20 points |
 
 _The Cadre Master's drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward Transport capacity. Cadre Commander is limited to one model with the rule for every full 1,000 points in the army._
 
@@ -570,6 +617,25 @@ _The Cadre Master's drones cost +10 points (Gun Drone) or +15 points (Marker or 
 | **The Cadre Fireblade may take:** |  |
 | – Up to 2 Gun, Marker or Shield Drones | Drone costs |
 | – Repulsor jet-pack (Sept (Farsight Enclaves) only, so he may join Blade-Sworn with Repulsor Jet-Packs; Deep Strike) | +15 points |
+| **The Cadre Fireblade may take (Sept and experimental wargear):** |  |
+| – Vibro-blade | +5 points |
+| – Vibro-lance | +5 points |
+| – Grav-resonance maul | +15 points |
+| – Vibro-axe | +5 points |
+| – Vibro-maul | +5 points |
+| – Paired vibro-blades | +10 points |
+| – Gravitic impact hammer | +20 points |
+| – Harmonic aegis projector | +15 points |
+| – Puretide engram neurochip (T'au Sept) | +20 points |
+| – Command-link drone (T'au Sept) | +15 points |
+| – High-capacity pulse drum | +10 points |
+| – Seeker-suite targeter | +10 points |
+| – Dynamic mirror-field | +15 points |
+| – Urban breacher shield | +10 points |
+| – Talisman of Arthas Moloch | +20 points |
+| – Experimental sub-munition rail-carbine | +20 points |
+| – Chrono-harmonic scrambler field | +20 points |
+| – Tactical telemetry relay-array | +20 points |
 
 #### Commander — 85 pts
 
@@ -612,6 +678,31 @@ _The Cadre Master's drones cost +10 points (Gun Drone) or +15 points (Marker or 
 | **The Commander may be upgraded to (choose one):** |  |
 | – XV86 Coldstar battlesuit (its jet pack adds +12 to its Movement instead of +6; Bulky (4) instead of Bulky (3)) | +20 points |
 | – XV85 Enforcer battlesuit (2+ save; Bulky (4) instead of Bulky (3); may not take iridium armour) | +20 points |
+| **The Commander may take (Sept and experimental wargear):** |  |
+| – Vibro-blade | +5 points |
+| – Vibro-lance | +5 points |
+| – Grav-resonance maul | +15 points |
+| – Oni battlesuit cleaver | +10 points |
+| – Harmonic aegis projector | +15 points |
+| – Puretide engram neurochip (T'au Sept) | +20 points |
+| – Command-link drone (T'au Sept) | +15 points |
+| – Vector-lock retro-thrusters | +10 points |
+| – Thermoneutronic projector | +15 points |
+| – Sub-orbital thruster pack | +15 points |
+| – Overcharged plasma accelerator | +15 points |
+| – Seeker-suite targeter | +10 points |
+| – Experimental nova-shield | +20 points |
+| – Dynamic mirror-field | +15 points |
+| – Stealth-drone controller | +10 points |
+| – Multi-spectrum sensor suite (Sa'cea) | +15 points |
+| – Stabilized fire-control uplink | +10 points |
+| – Fusion blades | +15 points |
+| – Onager gauntlet | +15 points |
+| – Talisman of Arthas Moloch | +20 points |
+| – Quantum-phase blink projector | +25 points |
+| – Experimental sub-munition rail-carbine | +20 points |
+| – Chrono-harmonic scrambler field | +20 points |
+| – Tactical telemetry relay-array | +20 points |
 
 #### Commander Arra'kon — 130 pts
 
@@ -886,6 +977,14 @@ One of Farsight's Eight, a steadfast commander famed for holding the line agains
 | **The Ethereal may take:** |  |
 | – Hover drone (counts as a jet pack) | +5 points |
 | – Up to 2 Gun, Marker or Shield Drones | Drone costs |
+| **The Ethereal may take (Sept and experimental wargear):** |  |
+| – Harmonic aegis projector | +15 points |
+| – Repulsor jet-pack | +15 points |
+| – Puretide engram neurochip (T'au Sept) | +20 points |
+| – Command-link drone (T'au Sept) | +15 points |
+| – Dynamic mirror-field | +15 points |
+| – Chrono-harmonic scrambler field | +20 points |
+| – Tactical telemetry relay-array | +20 points |
 
 #### Kroot Flesh Shaper — 40 pts
 
@@ -1251,6 +1350,15 @@ A Retinue Squad (see Retinue Squads) for any model with the Cadre Commander spec
 | – Onager gauntlet (one per unit) | +15 points |
 | **For each battlesuit, the unit may take up to two drones from:** |  |
 | – Gun, Marker or Shield Drones | Drone costs |
+| **Any model may take (Sept and experimental wargear):** |  |
+| – Oni battlesuit cleaver | +10 points each |
+| – Thermoneutronic projector | +15 points each |
+| – Experimental nova-shield | +20 points each |
+| – Stabilized fire-control uplink | +10 points each |
+| – Experimental sub-munition rail-carbine | +20 points |
+| **The entire unit may take (Sept wargear):** |  |
+| – Vector-lock retro-thrusters | +10 points per model |
+| – Sub-orbital thruster pack | +15 points per model |
 
 _Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward unit size or Transport capacity._
 
@@ -1291,6 +1399,7 @@ A Retinue Squad (see Retinue Squads) for an Ethereal or a Cadre Fireblade with t
 - Sworn Protectors: models in this unit may re-roll failed Look Out, Sir! rolls made to intercept wounds allocated to the Commander that unlocked this unit
 
 Dedicated Transport
+
 A Fireblade Honour Guard Team numbering 12 models or fewer (including the joined HQ model, excluding Drones) may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
 
 **Options**
@@ -1305,6 +1414,15 @@ A Fireblade Honour Guard Team numbering 12 models or fewer (including the joined
 | – Cadre bonding banner | +15 points |
 | **The unit may take up to two drones from:** |  |
 | – Gun, Marker or Shield Drones | Drone costs |
+| **Any model may take (Sept wargear):** |  |
+| – Vibro-blade | +5 points each |
+| – Vibro-lance | +5 points each |
+| – Grav-resonance maul | +15 points each |
+| – Urban breacher shield | +10 points each |
+| **The unit may take (Sept wargear):** |  |
+| – Sashimono holo-banner | +15 points |
+| **The entire unit may take (Sept wargear):** |  |
+| – Repulsor jet-pack | +10 points per model |
 
 _Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward unit size or Transport capacity._
 
@@ -1344,6 +1462,7 @@ A Retinue Squad (see Retinue Squads) for an Ethereal (including Aun'Va or Aun'Sh
 - Sept (X)
 
 Dedicated Transport
+
 An Ethereal Honour Guard numbering 12 models or fewer (including the joined Ethereal, excluding Drones) may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
 
 **Options**
@@ -1358,6 +1477,10 @@ An Ethereal Honour Guard numbering 12 models or fewer (including the joined Ethe
 | – Sacred caste standard | +15 points |
 | **The unit may take up to two drones from:** |  |
 | – Gun, Marker or Shield Drones | Drone costs |
+| **Any model may take (Sept wargear):** |  |
+| – Vibro-blade | +5 points each |
+| – Vibro-lance | +5 points each |
+| – Grav-resonance maul | +15 points each |
 
 _Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward Transport capacity. The Equalizer's shield generator confers a 4+ Invulnerable Save._
 
@@ -1399,6 +1522,7 @@ A Retinue Squad (see Retinue Squads) for a Blade-Sworn Cadre Master (or Commande
 - Sworn Protectors: models in this unit may re-roll failed Look Out, Sir! rolls made to intercept wounds allocated to the Commander that unlocked this unit
 
 Dedicated Transport
+
 A Blade-Sworn Honour Guard Team numbering 12 models or fewer (including the joined HQ model, excluding Drones) that has not been equipped with Repulsor Jet-Packs may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
 
 **Options**
@@ -1465,6 +1589,22 @@ _Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each,
 | **For each battlesuit, the unit may take up to two drones from:** |  |
 | – Gun, Marker, Shield or Missile Drones | Drone costs |
 | One Shas'ui may be upgraded to a Crisis Shas'vre | +10 points |
+| **The Crisis Shas'vre may take (Sept and experimental wargear):** |  |
+| – Oni battlesuit cleaver | +10 points |
+| – Harmonic aegis projector | +15 points |
+| – Thermoneutronic projector | +15 points |
+| – Overcharged plasma accelerator | +15 points |
+| – Seeker-suite targeter | +10 points |
+| – Experimental nova-shield | +20 points |
+| – Dynamic mirror-field | +15 points |
+| – Multi-spectrum sensor suite (Sa'cea) | +15 points |
+| – Onager gauntlet | +15 points |
+| – Experimental sub-munition rail-carbine | +20 points |
+| **Any model may take (Sept wargear):** |  |
+| – Stabilized fire-control uplink | +10 points each |
+| **The entire unit may take (Sept wargear):** |  |
+| – Vector-lock retro-thrusters | +10 points per model |
+| – Sub-orbital thruster pack | +15 points per model |
 
 #### Crisis Bodyguards — 100 pts
 
@@ -1507,6 +1647,17 @@ May be taken as an Elites choice, or as a Retinue Squad (see Retinue Squads) for
 | – Battlesuit weapons and support systems | See Battlesuit Armoury |
 | **For each battlesuit, the unit may take up to two drones from:** |  |
 | – Gun, Marker, Shield or Missile Drones | Drone costs |
+| **Any model may take (Sept and experimental wargear):** |  |
+| – Oni battlesuit cleaver | +10 points each |
+| – Thermoneutronic projector | +15 points each |
+| – Experimental nova-shield | +20 points each |
+| – Stabilized fire-control uplink | +10 points each |
+| – Fusion blades | +15 points each |
+| – Onager gauntlet | +15 points |
+| – Experimental sub-munition rail-carbine | +20 points |
+| **The entire unit may take (Sept wargear):** |  |
+| – Vector-lock retro-thrusters | +10 points per model |
+| – Sub-orbital thruster pack | +15 points per model |
 
 #### Darkstrider — 75 pts
 
@@ -1644,6 +1795,7 @@ A Detachment may only include one or more Farsight Blade-Sworn Teams if every mo
 - Sept (Farsight Enclaves)
 
 Dedicated Transport
+
 A Farsight Blade-Sworn Team numbering 10 models or fewer (excluding Drones) that has not been equipped with Repulsor Jet-Packs may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
 
 **Options**
@@ -1739,6 +1891,11 @@ _A Blade-Sworn Team's drones cost +10 points (Gun Drone) or +15 points (Marker o
 | **The Ghostkeel may exchange its two flamers for:** |  |
 | – Two burst cannons | +5 points |
 | – Two fusion blasters | +15 points |
+| **The Ghostkeel may take (Sept wargear):** |  |
+| – Vector-lock retro-thrusters | +10 points |
+| – Experimental nova-shield | +20 points |
+| – Dynamic mirror-field | +15 points |
+| – Stealth-drone controller | +10 points |
 
 #### Kroot Farstalkers — 120 pts
 
@@ -1850,6 +2007,78 @@ _A Blade-Sworn Team's drones cost +10 points (Gun Drone) or +15 points (Marker o
 | **The Riptide may take:** |  |
 | – Up to 2 Shielded Missile Drones | Drone costs |
 | – Up to two support systems | See Battlesuit Armoury |
+| **The Riptide may take (Sept wargear):** |  |
+| – Overcharged plasma accelerator | +15 points |
+| – Stabilized fire-control uplink | +10 points |
+
+#### Royal Guard Team — 140 pts
+
+*The sworn household retainers and elite close-assault champions of a T'au Commander or Ethereal council. Clad in ornate, multi-layered combat plate and armed with master-tuned vibro-weapons and gravitic tetsubo mauls, Royal Guard squads form an unyielding martial vanguard, advancing in stoic lockstep or bounding into the fray on repulsor packs to shatter the deadliest foes of the Empire.*
+
+A Detachment with the T'au Empire faction trait may include 0–1 Royal Guard Team as an Elites choice. If every model in the Detachment has the Sept (Kyu'shan) or Sept (Farsight Enclaves) special rule, the Detachment may include any number of Royal Guard Teams.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Royal Guard Shas'la | 6 | 4 | 4 | 3 | 3 | 1 | 4 | 2 | 9 | 3+ | 25mm |
+| Royal Guard Shas'vre | 6 | 5 | 4 | 3 | 3 | 1 | 4 | 3 | 9 | 3+ | 25mm |
+
+**Unit Composition**
+
+- 4 Royal Guard Shas'la
+- 1 Royal Guard Shas'vre
+
+**Wargear**
+
+- EMP grenades
+- Ornate Fire Warrior combat armour
+- Photon grenades
+- Pulse pistol
+- Vibro-blade
+
+**Unit Type**
+
+- Royal Guard Shas'la: Infantry
+- Royal Guard Shas'vre: Infantry (Character)
+
+**Special Rules**
+
+- Bonding Knife Ritual: the unit may re-roll failed Morale checks
+- Chosen Warriors
+- Counter-Attack (1)
+- Sept (X)
+- Stubborn
+- Sworn Retainers: models in this unit may re-roll failed Look Out, Sir! rolls made to intercept wounds allocated to a T'au Commander, Cadre Fireblade, Blade-Sworn Cadre Master, or Ethereal joined to this unit
+
+Dedicated Transport
+
+A Royal Guard Team numbering 10 models or fewer (excluding Drones) that has not taken Repulsor jet-packs may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Royal Guard Team may take:** |  |
+| – Up to 5 additional Royal Guard Shas'la | +24 points each |
+| **Any model may exchange its vibro-blade for one of the following:** |  |
+| – Vibro-axe | free |
+| – Vibro-maul | free |
+| – Vibro-lance | free |
+| **Any model may exchange its pulse pistol and vibro-blade for:** |  |
+| – Paired vibro-blades | +5 points |
+| **For every 5 models, one Royal Guard Shas'la may exchange its pulse pistol and vibro-blade for one of the following:** |  |
+| – Grav-resonance maul | +10 points |
+| – Gravitic impact hammer | +15 points |
+| **One Royal Guard Shas'la may take:** |  |
+| – Cadre honour standard | +15 points |
+| **The Royal Guard Shas'vre may take:** |  |
+| – Fusion grenades (counts as melta bombs) | +10 points |
+| – Shield generator | +10 points |
+| **The entire unit may take:** |  |
+| – Repulsor jet-pack | +10 points per model |
+| **The unit may take up to two drones from:** |  |
+| – Gun, Marker or Shield Drones | Drone costs |
+
+_Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward unit size or Transport capacity. Repulsor jet-packs are not taken by the unit's Drones._
 
 #### Stealth Battlesuits — 80 pts
 
@@ -1895,6 +2124,13 @@ _A Blade-Sworn Team's drones cost +10 points (Gun Drone) or +15 points (Marker o
 | – Homing beacon (friendly units Deep Striking within 6" do not scatter) | +5 points |
 | **The unit may take up to two drones from:** |  |
 | – Gun, Marker or Shield Drones | Drone costs |
+| **The Stealth Shas'vre may take (Sept wargear):** |  |
+| – Thermoneutronic projector | +15 points |
+| – Seeker-suite targeter | +10 points |
+| – Dynamic mirror-field | +15 points |
+| – Stealth-drone controller | +10 points |
+| **The entire unit may take (Sept wargear):** |  |
+| – Vector-lock retro-thrusters | +10 points per model |
 
 #### XV9 Hazard Support Team — 75 pts
 
@@ -2067,6 +2303,13 @@ The unit may take a Devilfish as a Dedicated Transport. This does not use up an 
 | – Markerlight | +10 points |
 | **The unit may take up to two drones from:** |  |
 | – Gun, Marker, Shield, Guardian or Grav-inhibitor Drones | Drone costs |
+| **The Shas'ui may take (Sept wargear):** |  |
+| – Vibro-blade | +5 points |
+| – Vibro-lance | +5 points |
+| – Grav-resonance maul | +15 points |
+| – Urban breacher shield | +10 points |
+| **The unit may take (Sept wargear):** |  |
+| – Sashimono holo-banner | +15 points |
 
 #### Gue'vesa Squad — 70 pts
 
@@ -2204,6 +2447,14 @@ The unit may take a Devilfish as a Dedicated Transport. This does not use up an 
 | – Gun, Marker, Shield, Guardian or Grav-inhibitor Drones | Drone costs |
 | **The unit may take:** |  |
 | – DS8 tactical support turret with missile pod or smart missile system (crewed by the unit; may not move) | +15 points |
+| **The Shas'ui may take (Sept wargear):** |  |
+| – Vibro-blade | +5 points |
+| – Vibro-lance | +5 points |
+| – Grav-resonance maul | +15 points |
+| – High-capacity pulse drum | +10 points |
+| – Urban breacher shield | +10 points |
+| **The unit may take (Sept wargear):** |  |
+| – Sashimono holo-banner | +15 points |
 
 ### Dedicated Transports
 
@@ -2251,6 +2502,8 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 | – Up to two seeker missiles | +8 points each |
 | – Disruption pod (Shrouded (6+)) | +5 points |
 | – Point defence targeting relay (+1 Ballistic Skill when firing Overwatch) | +5 points |
+| **The Devilfish may take (Sept wargear):** |  |
+| – Null-signature array | +15 points |
 
 ### Fast Attack
 
@@ -2477,6 +2730,14 @@ The unit may take a Devilfish as a Dedicated Transport.
 | **Up to three Pathfinders may exchange their pulse carbine and markerlight for:** |  |
 | – Ion rifle | +10 points |
 | – Rail rifle | +15 points |
+| **The Pathfinder Shas'ui may take (Sept wargear):** |  |
+| – Vibro-blade | +5 points |
+| – Vibro-lance | +5 points |
+| – Grav-resonance maul | +15 points |
+| – High-capacity pulse drum | +10 points |
+| – Seeker-suite targeter | +10 points |
+| – Stealth-drone controller | +10 points |
+| – Multi-spectrum sensor suite (Sa'cea) | +15 points |
 
 #### Piranha TX-42 — 60 pts
 
@@ -2561,6 +2822,8 @@ Each Piranha carries two Gun Drones, using the Gun Drone profile and the Drone D
 | – Fusion blaster | +10 points |
 | **Any Piranha may take:** |  |
 | – Up to two seeker missiles | +8 points each |
+| **Any Piranha may take (Sept wargear):** |  |
+| – Null-signature array | +15 points each |
 
 #### Tactical Drones — 50 pts
 
@@ -2708,6 +2971,14 @@ Use the Drone profiles and equipment from the Drones section.
 | – One support system | See Battlesuit Armoury |
 | – Up to two Missile or Shield Drones | Drone costs |
 | One Shas'ui may be upgraded to a Broadside Shas'vre | +10 points |
+| **The Broadside Shas'vre may take (Sept wargear):** |  |
+| – Harmonic aegis projector | +15 points |
+| – Overcharged plasma accelerator | +15 points |
+| – Experimental nova-shield | +20 points |
+| – Multi-spectrum sensor suite (Sa'cea) | +15 points |
+| **Any Broadside may take (Sept wargear):** |  |
+| – Null-signature array | +15 points each |
+| – Stabilized fire-control uplink | +10 points each |
 
 #### Great Knarloc — 110 pts
 
@@ -2791,6 +3062,10 @@ Uses the Gun Drone profile and Drone Docking rule for its drones.
 | – Up to two seeker missiles | +8 points each |
 | – Disruption pod (Shrouded (6+)) | +5 points |
 | One Hammerhead in the army may be upgraded to Longstrike (BS 5, Sept (T'au), Unique, Tank Ace: re-roll to-hit rolls of 1 against vehicles) | +40 points |
+| **The Hammerhead may take (Sept wargear):** |  |
+| – Overcharged plasma accelerator | +15 points |
+| – Null-signature array | +15 points |
+| – Stabilized fire-control uplink | +10 points |
 
 #### Heavy Gun Drones — 55 pts
 
@@ -2890,6 +3165,9 @@ One of Farsight's Eight: the mind of a dead Broadside pilot, preserved in an AI 
 | **The Sky Ray may exchange its two Gun Drones for:** |  |
 | – Twin-linked burst cannon | free |
 | – Twin-linked smart missile system | +5 points |
+| **The Sky Ray may take (Sept wargear):** |  |
+| – Null-signature array | +15 points |
+| – Stabilized fire-control uplink | +10 points |
 
 #### Sniper Drone Team — 50 pts
 
@@ -3231,13 +3509,23 @@ At the start of your turn, the bearer's unit has It Will Not Die (6+) if it has 
 
 #### Repulsor Jet-Pack
 
-*Adapted by Earth Caste engineers of the Farsight Enclaves from Vespid flight-harness stabilizers and miniaturized battlesuit thrusters, the Repulsor Jet-Pack allows close-assault Fire Warriors to bound over defensive barricades, execute hit-and-run thruster hops under fire, and strike alongside Crisis Battlesuit cadres.*
+*Adapted by Earth Caste engineers from Vespid flight-harness stabilizers and miniaturized battlesuit thrusters, the Repulsor Jet-Pack allows close-assault Fire Warriors to bound over defensive barricades, execute hit-and-run thruster hops under fire, and strike alongside Crisis Battlesuit cadres.*
 
 A model equipped with a Repulsor Jet-Pack is subject to the following rules:
 
-- **Jet Pack Mobility:** A unit composed entirely of models equipped with Repulsor Jet-Packs may choose to increase its Movement Characteristic by +6" (increasing the Blade-Sworn's Movement to 12"), move over friendly and enemy models/units, and ignore terrain while moving during the Movement phase. A unit that begins or ends its movement in Dangerous Terrain must still take Dangerous Terrain tests as normal, even when employing Repulsor Jet-Packs, and treats Difficult Terrain as Dangerous Terrain.
-- **Shooting Phase Thrust Move:** In addition to the Movement bonus during the Movement phase, a unit composed entirely of models equipped with Repulsor Jet-Packs may make an additional move of 6" during the Shooting phase. This move must be taken after the unit has completed any Shooting Attacks, is not limited by the weapons fired by that unit during the Shooting phase, and ignores terrain and may move over friendly and enemy models/units in the same manner as moves made using a Repulsor Jet-Pack in the Movement phase. (Note: A unit may not make this 6" Shooting phase move if it made a Run move in the same phase.)
-- **Reaction Boost:** During any Reaction that allows a unit composed entirely of models equipped with Repulsor Jet-Packs to move (such as Reposition or Hammer Strike), increase the distance of that move by +6", and the unit ignores terrain and models in the same manner as other Repulsor Jet-Pack moves.
+- **Jet Pack Mobility:** A unit composed entirely of models equipped with Repulsor Jet-Packs may choose to increase its Movement Characteristic by +6", move over friendly and enemy models/units, and ignore terrain while moving during the Movement phase. A unit that begins or ends its movement in Dangerous Terrain must still take Dangerous Terrain tests as normal, even when employing Repulsor Jet-Packs, and treats Difficult Terrain as Dangerous Terrain.
+- **Shooting Phase Thrust Move:** In addition to the Movement bonus during the Movement phase, a unit composed entirely of models equipped with Repulsor Jet-Packs may make an additional move of 6" during the Shooting phase. This move must be taken after the unit has completed any Shooting Attacks, is not limited by the weapons fired by that unit during the Shooting phase, and ignores terrain and may move over friendly and enemy models/units in the same manner as moves made using a Repulsor Jet-Pack in the Movement phase. (A unit may not make this 6" Shooting phase move if it made a Run move in the same phase.)
+- **Special Rules:** Any model equipped with a Repulsor Jet-Pack gains the Deep Strike special rule.
+- **Reaction Boost:** During any Reaction that allows a unit composed entirely of models equipped with Repulsor Jet-Packs to move, increase the distance of that move by +6", and the unit ignores terrain and models in the same manner as other Repulsor Jet-Pack moves.
+- **Transport Restrictions:** Models equipped with a Repulsor Jet-Pack may not embark inside a TY7 Devilfish (or any other Transport Vehicle that cannot carry Jet Pack models).
+
+#### Cadre Honour Standard
+
+The bearer's unit adds +1 to its Combat Resolution score, and friendly units with the T'au Empire faction trait within 6" of the bearer may re-roll failed Morale and Pinning tests.
+
+#### Ornate Fire Warrior Combat Armour
+
+Confers a 3+ Armour Save.
 
 #### Riptide Shield Generator
 
@@ -3274,6 +3562,110 @@ The bearer gains the Void Shields (6) special rule.
 The crystalline wings of the Vespid, letting them hover and dart across the battlefield.
 
 Vespid Wings count as a jump pack. A model with Vespid Wings follows all the rules for a Legion Warhawk jump pack†, under the name Vespid Wings.
+
+### Sept Wargear
+
+Each major Sept maintains its own specialized prototypes, ancestral relics and tactical upgrades. A model may only take wargear from the section matching its Sept (X) special rule; the datasheets list who may take each item. "Limit 1 per Detachment" items may be taken by only one model in a Detachment.
+
+#### Kyu'shan Vibro-Armoury
+
+Sept (Kyu'shan) only. Vibro-blades, vibro-lances and grav-resonance mauls, at the costs on each datasheet, for T'au Commanders, Cadre Fireblades, Strike and Breacher Team Shas'ui, Pathfinder Shas'ui, Fireblade Honour Guard and Ethereal Honour Guard.
+
+#### Oni Battlesuit Cleaver
+
+Sept (Kyu'shan) only. A melee weapon (see the Armoury) for T'au Commanders, Crisis Shas'vre and Crisis Bodyguard Shas'vre.
+
+#### Harmonic Aegis Projector
+
+Sept (Kyu'shan) only. Confers a 4+ Invulnerable Save against Melee attacks and grants the bearer's unit Adamantium Will (5+). T'au Commanders, Cadre Fireblades, Ethereals, Crisis Shas'vre and Broadside Shas'vre.
+
+#### Sashimono Holo-Banner
+
+Sept (Kyu'shan) only. One per unit. The bearer's unit adds +1 to its Combat Resolution score, and friendly Sept (Kyu'shan) units within 6" may re-roll failed Morale and Pinning tests. Strike Teams, Breacher Teams and Fireblade Honour Guard Teams.
+
+#### Puretide Engram Neurochip (T'au Sept)
+
+Sept (T'au) only. Limit 1 per Detachment. Once per game turn, the controlling player may select the bearer's unit (or one friendly unit composed entirely of models with the Sept (T'au) special rule within 12" of the bearer) to either re-roll all To Hit rolls of 1 during a single Shooting phase, or automatically pass a single Morale or Pinning test. T'au Commanders, Cadre Fireblades and Ethereals.
+
+#### Command-Link Drone (T'au Sept)
+
+Sept (T'au) only. Counts as one of the bearer's Drone slots. Friendly units composed entirely of models with the Sept (T'au) special rule within 18" (instead of the normal 12") of the bearer's unit may declare and participate in the Supporting Fire Advanced Reaction when the bearer's unit is charged. T'au Commanders, Cadre Fireblades and Ethereals.
+
+#### Vector-Lock Retro-Thrusters
+
+Sept (T'au) only. Taken by every Battlesuit model in the unit. Models in the unit gain the Hit & Run special rule. T'au Commanders, Crisis Battlesuits, Crisis Bodyguards, Stealth Battlesuits and Ghostkeels.
+
+#### Sub-Orbital Thruster Pack
+
+Sept (Vior'la) only. Taken by every Battlesuit model in the unit. Models in the unit may re-roll scatter distance dice when arriving via Deep Strike, and add +2" to the distance moved during their 6" Shooting phase Jet Pack move. T'au Commanders, Crisis Battlesuits and Crisis Bodyguards.
+
+#### High-Capacity Pulse Drum
+
+Sept (Vior'la) only. Upgrades one pulse rifle or pulse carbine: the weapon's Type becomes Assault 3 (it keeps its Range, Strength and AP). Cadre Fireblades, Strike Team Shas'ui and Pathfinder Shas'ui.
+
+#### Overcharged Plasma Accelerator
+
+Sept (Bork'an) only. Upgrades one plasma rifle or ion cannon: the weapon adds +1 to its Strength and gains Rending (5+), but gains Gets Hot (or suffers Gets Hot on rolls of 1 or 2 if it already has Gets Hot). T'au Commanders, Crisis Shas'vre, Broadside Shas'vre, Riptides and Hammerheads equipped with a plasma rifle or ion cannon.
+
+#### Seeker-Suite Targeter
+
+Sept (Bork'an) only. All models in the bearer's unit add +6" to the maximum range of their Markerlights, and enemy units targeted by the bearer's unit reduce their Cover Saves by -1 (to a minimum of 6+). T'au Commanders, Cadre Fireblades, Crisis Shas'vre, Stealth Shas'vre and Pathfinder Shas'ui.
+
+#### Experimental Nova-Shield
+
+Sept (Bork'an) only. Confers a 4+ Invulnerable Save. Once per game, at the start of any opposing phase, the bearer may overcharge the shield to improve its Invulnerable Save to 3+ until the end of that phase; at the end of that phase, roll a D6: on a 1, the bearer suffers 1 automatic wound with no saves allowed. T'au Commanders, Crisis Shas'vre, Crisis Bodyguard Shas'vre, Broadside Shas'vre and Ghostkeels.
+
+#### Dynamic Mirror-Field
+
+Sept (Dal'yth) only. Confers the Shrouded (5+) special rule on the bearer's unit during any turn in which the unit did not move in the Movement phase. During Night Fighting, enemy units more than 18" away may only target the bearer's unit with Snap Shots. T'au Commanders, Cadre Fireblades, Ethereals, Crisis Shas'vre, Stealth Shas'vre and Ghostkeels.
+
+#### Stealth-Drone Controller
+
+Sept (Dal'yth) only. Any Tactical Drones attached to the bearer's unit gain the Infiltrate and Shrouded (5+) special rules while within coherency of the bearer. Stealth Shas'vre, Ghostkeels, Pathfinder Shas'ui and T'au Commanders.
+
+#### Null-Signature Array
+
+Sept (Dal'yth) only. Enemy units making Interceptor reactions targeting this model suffer a -1 penalty to their Ballistic Skill, and the model gains Shrouded (6+) against Shooting Attacks made from more than 24" away. Devilfish, Hammerheads, Sky Rays, Piranhas and Broadside Battlesuits.
+
+#### Urban Breacher Shield
+
+Sept (Sa'cea) only. Confers a 5+ Invulnerable Save against Shooting Attacks originating from within 12", and a +1 bonus to the bearer's Armour Save (to a maximum of 2+) against Blast and Template weapons. Cadre Fireblades, Strike and Breacher Team Shas'ui and Fireblade Honour Guard.
+
+#### Multi-Spectrum Sensor Suite (Sa'cea)
+
+Sept (Sa'cea) only. In any Shooting phase in which the bearer does not make a Shooting Attack of its own, all other models in the bearer's unit gain the Ignores Cover special rule on Shooting Attacks made against targets within 24". T'au Commanders, Crisis Shas'vre, Broadside Shas'vre and Pathfinder Shas'ui.
+
+#### Stabilized Fire-Control Uplink
+
+Sept (Sa'cea) only. The model adds +1 to its Ballistic Skill (to a maximum of BS 5) and may re-roll To Hit rolls of 1 when making Overwatch Shooting Attacks. Any Battlesuit model or T'au Vehicle: Commanders, Crisis, Broadsides, Riptides, Hammerheads and Sky Rays.
+
+#### Farsight Vibro-Armoury
+
+Sept (Farsight Enclaves) only. Vibro-blades, vibro-axes, vibro-mauls, paired vibro-blades and gravitic impact hammers, at the costs on each datasheet, for Cadre Fireblades (the Blade-Sworn carry them already).
+
+#### Talisman of Arthas Moloch
+
+Sept (Farsight Enclaves) only. Limit 1 per Detachment. Confers Adamantium Will (3+) on the bearer's unit, and enemy models with the Psyker Unit Sub-type within 12" of the bearer suffer Perils of the Warp on any double rolled when making a Psychic check. T'au Commanders, Blade-Sworn Cadre Masters and Cadre Fireblades.
+
+### Experimental Wargear
+
+Volatile Earth Caste prototypes, field-tested by senior Fire Caste commanders and battlesuit veterans. Any Sept may take them; each is limited to one per Detachment.
+
+#### Quantum-Phase Blink Projector
+
+Limit 1 per Detachment. T'au Commanders. Once per battle, at the start of the controlling player's Movement phase, while the bearer is on the battlefield and not locked in combat, Falling Back, or Pinned, the bearer and any unit he has joined may activate the projector: remove the bearer's unit from the battlefield and immediately redeploy it via Deep Strike anywhere on the battlefield more than 9" away from enemy models. Empyric Instability: the unit rolls scatter dice as normal; if a double is rolled on the 2D6 scatter distance, the unit still arrives safely but suffers D3 automatic wounds with no Armour or Cover saves allowed (Invulnerable saves may be taken).
+
+#### Experimental Sub-Munition Rail-Carbine
+
+Limit 1 per Detachment. Replaces one primary ranged weapon or occupies one Battlesuit hardpoint. T'au Commanders, Cadre Fireblades, Crisis Shas'vre and Crisis Bodyguard Shas'vre. Select one of its two firing modes (see the Armoury) each time it is fired.
+
+#### Chrono-Harmonic Scrambler Field
+
+Limit 1 per Detachment. T'au Commanders, Cadre Fireblades and Ethereals (not Auxiliaries). While the bearer is on the battlefield and not embarked, it generates a 12" aura. Spatial Disruption: enemy units arriving via Deep Strike (including Drop Pods and teleporting units) may not be placed within 12" of the bearer; a unit that scatters into this bubble suffers a Deep Strike Mishap; and an enemy Deep Strike Assault made while an enemy unit is within 12" of the bearer (or targeting a unit within 12" of it) is Disordered on a D6 roll of 1-3. Gravitic Drag: enemy units declaring a Charge that targets or passes within 12" of the bearer subtract 2" from their Charge Distance roll (to a minimum of 0) and lose Furious Charge and Sudden Strike for that Assault phase.
+
+#### Tactical Telemetry Relay-Array
+
+Limit 1 per Detachment. T'au Commanders, Cadre Fireblades and Ethereals (not Auxiliaries). Whenever a friendly unit composed entirely of models with the T'au Empire faction trait within 12" of the bearer is the target of a Charge and triggers Supporting Fire, other eligible friendly T'au units within 12" of the charged unit may join that Supporting Fire Overwatch even without line of sight to the charging unit. Firing models still need line of sight to allocate wounds, unless they fire weapons that ignore line of sight (such as smart missile systems) or the charging unit has at least one Markerlight token.
 
 ### Armour
 
@@ -3543,7 +3935,9 @@ Wargear of the Eight, and the weapons and natural arms of the Kroot's beasts.
 | Great Knarloc beak and talons | – | 7 | 4 | Melee, Brutal (2) |
 | Kalamandra's claws | – | 5 | 5 | Melee; +1 Attack |
 | Knarloc beak and talons | – | 5 | 5 | Melee |
-| Onager gauntlet | – | x2 | 1 | Melee, Armourbane (Melee), Unwieldy (2) |
+| Onager gauntlet | – | 10 | 1 | Melee, Brutal (3), Unwieldy (2) |
+| Oni battlesuit cleaver | – | +2 | 3 | Melee, Two-handed, Rending (5+), Reach (1) |
+| Thermoneutronic projector (melee) | – | 5 | 3 | Melee, Shred |
 
 ##### Fortification and Specialist Weapons
 
@@ -3551,8 +3945,11 @@ Weapons carried by the Tidewall fortifications and specialist commanders.
 
 | Weapon | Range | Str | AP | Type |
 |---|---|---|---|---|
-| Fusion blades (melee) | – | x2 | 1 | Melee, Armourbane (Melee) |
+| Fusion blades (melee) | – | 8 | 1 | Melee, Armourbane (Melee), Paired Weapons |
 | Fusion blades (ranged) | 18" | 8 | 1 | Assault 1, Armourbane (Ranged), Twin-linked |
+| Thermoneutronic projector (ranged) | Template | 5 | 3 | Assault 1, Ignores Cover, Shred |
+| Experimental sub-munition rail-carbine (solid sabot dart) | 36" | 8 | 2 | Assault 2, Rending (4+), Sunder |
+| Experimental sub-munition rail-carbine (flechette shrapnel burst) | 24" | 5 | 4 | Assault 4, Pinning, Shred |
 | Supremacy railgun – solid shot | 72" | 10 | 1 | Heavy 1, Armourbane (Ranged), Sunder |
 | Supremacy railgun – submunition | 72" | 7 | 4 | Heavy 1, Large Blast (5") |
 
