@@ -344,9 +344,9 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 | --- | --- |
 | HQ | Grand Master, Brother-Captain, Aegis Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus, Supreme Grand Master Janus, Grand Masters Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron, Brotherhood Command Squad, Brotherhood Terminator Command Squad, Brotherhood Tartaros Command Squad (each also a Retinue) |
 | Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary, Aegis Bastion Squad (0-1), Purifier Bladeguard Squad (0-1), Servitors |
-| Troops | Strike Squad, Brotherhood Terminator Squad |
+| Troops | Strike Squad, Brotherhood Terminator Squad, Grey Knight Reconnaissance Squad, Grey Knight Scout Squad |
 | Dedicated Transports | Rhino\*, Razorback\* |
-| Fast Attack | Interceptor Squad, Interceptor Terminator Squad, Grey Knight Dreadlancer Talon, Stormraven Gunship |
+| Fast Attack | Interceptor Squad, Interceptor Terminator Squad, Grey Knight Dreadlancer Talon, Stormraven Gunship, Grey Knight Seeker Squad |
 | Heavy Support | Purgation Squad, Dreadknight Talon, Land Raider Crusader, Land Raider Redeemer, Dreadnoughts\* and Land Raider Proteus or Phobos\* |
 
 *Official 2.0 datasheets.*
@@ -2202,6 +2202,126 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | **The Justicar may take:** |  |
 | – Brotherhood Psyker | +15 points |
 
+### Grey Knight Reconnaissance Squad — 100 pts
+
+*Brother-Knights trained in the arts of the hunt, sent ahead of the Brotherhood to find the lairs of the daemon and the witch before the strike falls.*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Recon Knight | 7 | 5 | 4 | 4 | 4 | 1 | 4 | 1 | 8 | 3+ | 32mm |
+| Recon Justicar | 7 | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+ | 32mm |
+
+**Unit Composition**
+
+- 4 Recon Knights
+- 1 Recon Justicar
+
+**Wargear**
+
+- Bolt pistol\*
+- Bolter\*
+- Frag grenades\*
+- Krak grenades\*
+- Power armour\*
+- Psyk-out grenades
+- Shroud bombs\*
+
+**Unit Type**
+
+- Recon Knight: Infantry (Line, Skirmish, Psyker)
+- Recon Justicar: Infantry (Character, Line, Skirmish, Psyker)
+
+**Special Rules**
+
+- Brotherhood (X)
+- Brotherhood of Psykers
+- Infiltrate
+- Legiones Astartes (Grey Knights)
+- Outflank
+- Scout
+- Support Squad
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The squad may take:** |  |
+| – Up to 5 additional Recon Knights | +17 points each |
+| **Any Recon Knight may exchange its bolter for:** |  |
+| – Astartes shotgun\* | Free |
+| **One Recon Knight may take one of the following:** |  |
+| – Nuncio-vox\* | +10 points |
+| – Augury scanner\* | +10 points |
+| **The Recon Justicar may exchange his bolter for one of the following:** |  |
+| – Nemesis force sword | +5 points |
+| – Nemesis force halberd | +5 points |
+| – Two nemesis force falchions | +10 points |
+| **The Recon Justicar may take:** |  |
+| – Brotherhood Psyker | +15 points |
+| – Melta bombs\* | +5 points |
+
+
+### Grey Knight Scout Squad — 75 pts
+
+*Neophytes of Titan not yet raised to the Brotherhood, sent lightly armoured to stalk the foe and to learn the hunt.*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Scout Initiate | 8 | 5 | 4 | 4 | 4 | 1 | 4 | 1 | 8 | 4+ | 32mm |
+| Scout Justicar | 8 | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 4+ | 32mm |
+
+**Unit Composition**
+
+- 4 Scout Initiates
+- 1 Scout Justicar
+
+**Wargear**
+
+- Bolt pistol\*
+- Bolter\*
+- Frag grenades\*
+- Krak grenades\*
+- Psyk-out grenades
+- Scout armour\*
+- Shroud bombs\*
+
+**Unit Type**
+
+- Scout Initiate: Infantry (Light, Skirmish, Psyker)
+- Scout Justicar: Infantry (Character, Light, Skirmish, Psyker)
+
+**Special Rules**
+
+- Brotherhood (X)
+- Brotherhood of Psykers
+- Infiltrate
+- Legiones Astartes (Grey Knights)
+- Move Through Cover
+- Outflank
+- Scout
+- Support Squad
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The squad may take:** |  |
+| – Up to 5 additional Scout Initiates | +13 points each |
+| **Any Scout Initiate may exchange its bolter for:** |  |
+| – Astartes shotgun\* | Free |
+| **One Scout Initiate may take:** |  |
+| – Nuncio-vox\* | +10 points |
+| **The Scout Justicar may exchange his bolter for one of the following:** |  |
+| – Nemesis force sword | +5 points |
+| – Nemesis force halberd | +5 points |
+| – Two nemesis force falchions | +10 points |
+| **The Scout Justicar may take:** |  |
+| – Brotherhood Psyker | +15 points |
+| – Melta bombs\* | +5 points |
+
+
 ## Fast Attack
 
 ### Interceptor Squad — 120 pts
@@ -2401,6 +2521,64 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Gatling psilencer | +10 points |
 | **The Stormraven may take:** |  |
 | – Two Sponson Mounted Hurricane Bolters | +20 points |
+
+### Grey Knight Seeker Squad — 140 pts
+
+*Hunters of the Brotherhood armed with specialist bolt shells, who mark the greatest servants of the Warp and see them slain before they can act.*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Seeker Knight | 7 | 5 | 5 | 4 | 4 | 1 | 4 | 1 | 8 | 3+ | 32mm |
+| Seeker Justicar | 7 | 5 | 5 | 4 | 4 | 1 | 4 | 2 | 9 | 3+ | 32mm |
+
+**Unit Composition**
+
+- 4 Seeker Knights
+- 1 Seeker Justicar
+
+**Wargear**
+
+- Bolt pistol\*
+- Frag grenades\*
+- Kraken bolter\*
+- Krak grenades\*
+- Power armour\*
+- Psyk-out grenades
+
+**Unit Type**
+
+- Seeker Knight: Infantry (Skirmish, Psyker)
+- Seeker Justicar: Infantry (Character, Skirmish, Psyker)
+
+**Special Rules**
+
+- Brotherhood (X)
+- Brotherhood of Psykers
+- Infiltrate
+- Legiones Astartes (Grey Knights)
+- Marked For Death
+- Precision Shots (4+)
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The squad may take:** |  |
+| – Up to 5 additional Seeker Knights | +18 points each |
+| **Any Seeker Knight may exchange its kraken bolter for:** |  |
+| – Banestrike bolter\* | Free |
+| **One Seeker Knight may take one of the following:** |  |
+| – Nuncio-vox\* | +10 points |
+| – Augury scanner\* | +10 points |
+| **The Seeker Justicar may exchange his kraken bolter for one of the following:** |  |
+| – Banestrike bolter\* | Free |
+| – Nemesis force sword | +5 points |
+| – Nemesis force halberd | +5 points |
+| **The Seeker Justicar may take:** |  |
+| – Brotherhood Psyker | +15 points |
+| – Melta bombs\* | +5 points |
+
 
 ## Heavy Support
 
