@@ -241,7 +241,12 @@ loading. The script prints anything in the doc it could not place.
   Daemon, Corrupted, Corrupted Engine and Malefic models. The Grand Master, Grand Master in Nemesis
   Dreadknight, Brother-Captain, Castellan Crowe, Kaldor Draigo and the Aegis Captain have Master of the Legion, so they can lead a Rite;
   For the Rites' prerequisites, Janus and the founding Grand Masters count as
-  Grand Masters and the Aegis Captain as a Brother-Captain (RITE_LEADERS). Characters bound to a Brotherhood (Stern, Voldus and the founding Grand Masters Koios to Khyron) are
+  Grand Masters and the Aegis Captain as a Brother-Captain (RITE_LEADERS). The Grey Knight Reconnaissance, Scout and Seeker Squads follow the official Legion Recon, Scout and
+  Seeker Squads (slots, kit, rules and options) with Grey Knights profiles and rules; the Recon Squad carries storm bolters (nemesis bolter upgrade), Scouts may
+  take banestrike or nemesis bolters and one in five a psycannon, psilencer or incinerator, and Seekers carry
+  twin-linked combi-kraken bolters (combi-banestrike upgrade). Every Justicar-type leader below HQ takes Brotherhood
+  Psyker as a +15 upgrade, and every unit with a bolt weapon may take Psybolts (which now cover all bolt weapons). Grey Knights may also take a generic Legion Rite of War: the game system's Rites of War group is offered inside
+  their Rite of War choice (legion_rites), whose limit of one counts both. Characters bound to a Brotherhood (Stern, Voldus and the founding Grand Masters Koios to Khyron) are
   always shown but an error in a Detachment of another Brotherhood (BROTHERHOOD_ONLY in grey_knights_official.py). Supreme Grand Master Janus
   picks up to three disciplines ("Psychic Discipline (up to three of ...)") and carries every minor power. A
   "Warlord: X" rule may name a Brotherhood's own trait ("Warlord: First Among Equals"): the model takes that trait

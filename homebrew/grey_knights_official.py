@@ -222,12 +222,28 @@ def rite_leaders(b):
                         mods.remove(m)
 
 
+LEGION_RITES = "cf3e-1d75-6f91-651f"  # the game system's "Rites of War" group the Legion catalogues offer
+
+
+def legion_rites(b):
+    """Grey Knights may take a Legion Rite of War instead of their own: the game system's Rites of War group (the
+    Legion catalogues' own, whose Legion-specific Rites hide unless their Legion is chosen) is offered inside the
+    Grey Knights "Rite of War" choice, and that choice's limit of one counts it too."""
+    army = b.root.find(f"selectionEntries/selectionEntry[@id='{make_id('army', b.faction)}']")
+    g = next(x for x in army.iter("selectionEntryGroup") if x.get("name") == "Rite of War")
+    for c in g.findall("constraints/constraint"):
+        c.set("includeChildSelections", "true")
+    el(child(g, "entryLinks"), "entryLink", import_=True, name="Legion Rites of War", hidden=False,
+       id=make_id(g.get("id"), "legion rites"), type="selectionEntryGroup", targetId=LEGION_RITES)
+
+
 def apply(b):
     loyalist_only(b)
     retinues(b)
     purifier_bladeguard(b)
     brotherhood_only(b)
     rite_leaders(b)
+    legion_rites(b)
     harness = b.shared_entries.find("selectionEntry[@name='Teleport Harness']")
     el(child(harness, "infoLinks"), "infoLink", name="Deep Strike", id=make_id(harness.get("id"), "deep strike"),
        hidden=False, targetId=DEEP_STRIKE, type="rule")

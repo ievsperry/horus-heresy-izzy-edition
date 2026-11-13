@@ -344,14 +344,14 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 | --- | --- |
 | HQ | Grand Master, Brother-Captain, Aegis Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus, Supreme Grand Master Janus, Grand Masters Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron, Brotherhood Command Squad, Brotherhood Terminator Command Squad, Brotherhood Tartaros Command Squad (each also a Retinue) |
 | Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary, Aegis Bastion Squad (0-1), Purifier Bladeguard Squad (0-1), Servitors |
-| Troops | Strike Squad, Brotherhood Terminator Squad |
+| Troops | Strike Squad, Brotherhood Terminator Squad, Grey Knight Reconnaissance Squad, Grey Knight Scout Squad |
 | Dedicated Transports | Rhino\*, Razorback\* |
-| Fast Attack | Interceptor Squad, Interceptor Terminator Squad, Grey Knight Dreadlancer Talon, Stormraven Gunship |
+| Fast Attack | Interceptor Squad, Interceptor Terminator Squad, Grey Knight Dreadlancer Talon, Stormraven Gunship, Grey Knight Seeker Squad |
 | Heavy Support | Purgation Squad, Dreadknight Talon, Land Raider Crusader, Land Raider Redeemer, Dreadnoughts\* and Land Raider Proteus or Phobos\* |
 
 *Official 2.0 datasheets.*
 
-A Grey Knights army may take one Rite of War.
+A Grey Knights army may take one Rite of War: one of the four below, or one of the generic Legion Rites of War (such as Pride of the Legion or Armoured Spearhead), with its own requirements.
 
 For these prerequisites, Supreme Grand Master Janus and the founding Grand Masters (Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron) count as Grand Masters, and the Aegis Captain counts as a Brother-Captain.
 
@@ -602,6 +602,9 @@ For these prerequisites, Supreme Grand Master Janus and the founding Grand Maste
 | – Holocaust | Free |
 | – Warp Quake | Free |
 | – Warp Shroud | Free |
+| **Brother-Captain Stern may take:** |  |
+| – Psybolts | +5 points |
+
 
 ### Brotherhood Chaplain — 110 pts
 
@@ -642,6 +645,7 @@ For these prerequisites, Supreme Grand Master Janus and the founding Grand Maste
 | – Psilencer | +5 points |
 | – Psycannon | +10 points |
 | **The Chaplain may take:** |  |
+| – Psybolts | +5 points |
 | – Brotherhood Psyker | +15 points |
 
 ### Brotherhood Librarian — 140 pts
@@ -752,6 +756,7 @@ For these prerequisites, Supreme Grand Master Janus and the founding Grand Maste
 | – Two nemesis force falchions | +5 points |
 | – Nemesis daemon hammer | +5 points |
 | **Any Brotherhood Techmarine may take:** |  |
+| – Psybolts | +5 points each |
 | – Brotherhood Psyker | +15 points each |
 
 ### Castellan Crowe — 130 pts
@@ -963,6 +968,9 @@ For these prerequisites, Supreme Grand Master Janus and the founding Grand Maste
 | – Holocaust | Free |
 | – Warp Quake | Free |
 | – Warp Shroud | Free |
+| **Grand Master Voldus may take:** |  |
+| – Psybolts | +5 points |
+
 
 ### Kaldor Draigo — 375 pts
 
@@ -1018,6 +1026,9 @@ For these prerequisites, Supreme Grand Master Janus and the founding Grand Maste
 | – Holocaust | Free |
 | – Warp Quake | Free |
 | – Warp Shroud | Free |
+| **Kaldor Draigo may take:** |  |
+| – Psybolts | +5 points |
+
 
 ### Supreme Grand Master Janus — 325 pts
 
@@ -1785,6 +1796,7 @@ _To join a Brotherhood Terminator Squad or a Paladin Squad, a Brother Apothecary
 | – Two nemesis force falchions | +5 points |
 | – Nemesis daemon hammer | +5 points |
 | **The Paladin Ancient may take:** |  |
+| – Psybolts | +5 points |
 | – Brotherhood Psyker | +15 points |
 
 ### Paladin Squad — 200 pts
@@ -1903,6 +1915,9 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Nemesis daemon hammer | +10 points |
 | **The Knight of the Flame may take:** |  |
 | – Brotherhood Psyker | +15 points |
+| **The entire unit may take:** |  |
+| – Psybolts | +5 points per model |
+
 
 ### 0-1 Purifier Bladeguard Squad — 195 pts
 
@@ -1938,14 +1953,11 @@ A Detachment with the Legiones Astartes (Grey Knights) special rule may include 
 
 - Brotherhood (X)
 - Brotherhood of Psykers
-- Brotherhood Psyker (Knight of the Flame only)
 - Chosen Warriors
 - Fearless
 - Furious Charge (1)
 - Hatred (Daemons)
 - Legiones Astartes (Grey Knights)
-- Minor Psychic Powers (Knight of the Flame only)
-- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy) (Knight of the Flame only)
 - Purifying Flame (Assault Variant)
 - The Aegis
 
@@ -1962,17 +1974,10 @@ A Detachment with the Legiones Astartes (Grey Knights) special rule may include 
 | – Nemesis daemon hammer | +15 points each |
 | **The entire unit may take:** |  |
 | – Personal teleporters | +20 points per model |
-| **The Knight of the Flame must select one of the following Minor Psychic Powers:** |  |
-| – Astral Aim | Free |
-| – Cleansing Flame | Free |
-| – Gates of Infinity | Free |
-| – Hammerhand | Free |
-| – Holocaust | Free |
-| – Warp Quake | Free |
-| – Warp Shroud | Free |
 | **The Knight of the Flame may exchange his Aegis Power armour for:** |  |
 | – Aegis Artificer armour | +10 points |
 | **The Knight of the Flame may take:** |  |
+| – Brotherhood Psyker | +15 points |
 | – Melta bombs\* | +10 points |
 
 ### 0-1 Aegis Bastion Squad — 265 pts
@@ -2006,14 +2011,11 @@ A Detachment with the Legiones Astartes (Grey Knights) special rule may include 
 
 - Brotherhood (X)
 - Brotherhood of Psykers
-- Brotherhood Psyker (Warden-Justicar only)
 - Bulky (2)
 - Chosen Warriors
 - Deep Strike
 - Hatred (Daemons)
 - Legiones Astartes (Grey Knights)
-- Minor Psychic Powers (Warden-Justicar only)
-- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy) (Warden-Justicar only)
 - Relentless
 - Stubborn
 - The Aegis
@@ -2041,15 +2043,8 @@ A Detachment with the Legiones Astartes (Grey Knights) special rule may include 
 | – Incinerator | +15 points |
 | – Psycannon | +20 points |
 | – Psilencer | +20 points |
-| **The Warden-Justicar must select one of the following Minor Psychic Powers:** |  |
-| – Astral Aim | Free |
-| – Cleansing Flame | Free |
-| – Gates of Infinity | Free |
-| – Hammerhand | Free |
-| – Holocaust | Free |
-| – Warp Quake | Free |
-| – Warp Shroud | Free |
 | **The Warden-Justicar may take:** |  |
+| – Brotherhood Psyker | +15 points |
 | – Grenade harness\* | +10 points |
 | – Melta bombs\* | +10 points |
 
@@ -2201,6 +2196,138 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Nemesis daemon hammer | +10 points |
 | **The Justicar may take:** |  |
 | – Brotherhood Psyker | +15 points |
+| **The entire unit may take:** |  |
+| – Psybolts | +5 points per model |
+
+
+### Grey Knight Reconnaissance Squad — 100 pts
+
+*Brother-Knights trained in the arts of the hunt, sent ahead of the Brotherhood to find the lairs of the daemon and the witch before the strike falls.*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Recon Knight | 7 | 5 | 4 | 4 | 4 | 1 | 4 | 1 | 8 | 3+ | 32mm |
+| Recon Justicar | 7 | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+ | 32mm |
+
+**Unit Composition**
+
+- 4 Recon Knights
+- 1 Recon Justicar
+
+**Wargear**
+
+- Bolt pistol\*
+- Frag grenades\*
+- Krak grenades\*
+- Power armour\*
+- Psyk-out grenades
+- Shroud bombs\*
+- Storm bolter\*
+
+**Unit Type**
+
+- Recon Knight: Infantry (Line, Skirmish, Psyker)
+- Recon Justicar: Infantry (Character, Line, Skirmish, Psyker)
+
+**Special Rules**
+
+- Brotherhood (X)
+- Brotherhood of Psykers
+- Infiltrate
+- Legiones Astartes (Grey Knights)
+- Outflank
+- Scout
+- Support Squad
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The squad may take:** |  |
+| – Up to 5 additional Recon Knights | +17 points each |
+| **Any model may exchange its storm bolter for:** |  |
+| – Nemesis bolter\* | +10 points |
+| **One Recon Knight may take one of the following:** |  |
+| – Nuncio-vox\* | +10 points |
+| – Augury scanner\* | +10 points |
+| **The Recon Justicar may exchange his bolt pistol for one of the following:** |  |
+| – Nemesis force sword | +5 points |
+| – Nemesis force halberd | +5 points |
+| – Two nemesis force falchions | +10 points |
+| **The Recon Justicar may take:** |  |
+| – Brotherhood Psyker | +15 points |
+| – Melta bombs\* | +5 points |
+| **The entire unit may take:** |  |
+| – Psybolts | +5 points per model |
+
+
+### Grey Knight Scout Squad — 75 pts
+
+*Neophytes of Titan not yet raised to the Brotherhood, sent lightly armoured to stalk the foe and to learn the hunt.*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Scout Initiate | 8 | 5 | 4 | 4 | 4 | 1 | 4 | 1 | 8 | 4+ | 32mm |
+| Scout Justicar | 8 | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 4+ | 32mm |
+
+**Unit Composition**
+
+- 4 Scout Initiates
+- 1 Scout Justicar
+
+**Wargear**
+
+- Bolt pistol\*
+- Bolter\*
+- Frag grenades\*
+- Krak grenades\*
+- Psyk-out grenades
+- Scout armour\*
+- Shroud bombs\*
+
+**Unit Type**
+
+- Scout Initiate: Infantry (Light, Skirmish, Psyker)
+- Scout Justicar: Infantry (Character, Light, Skirmish, Psyker)
+
+**Special Rules**
+
+- Brotherhood (X)
+- Brotherhood of Psykers
+- Infiltrate
+- Legiones Astartes (Grey Knights)
+- Move Through Cover
+- Outflank
+- Scout
+- Support Squad
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The squad may take:** |  |
+| – Up to 5 additional Scout Initiates | +13 points each |
+| **Any model may exchange its bolter for one of the following:** |  |
+| – Banestrike bolter\* | +5 points |
+| – Nemesis bolter\* | +10 points |
+| **For every five models in the unit, one Scout Initiate may exchange its bolter for one of the following:** |  |
+| – Incinerator | +5 points |
+| – Psilencer | +5 points |
+| – Psycannon | +15 points |
+| **One Scout Initiate may take:** |  |
+| – Nuncio-vox\* | +10 points |
+| **The Scout Justicar may exchange his bolt pistol for one of the following:** |  |
+| – Nemesis force sword | +5 points |
+| – Nemesis force halberd | +5 points |
+| – Two nemesis force falchions | +10 points |
+| **The Scout Justicar may take:** |  |
+| – Brotherhood Psyker | +15 points |
+| – Melta bombs\* | +5 points |
+| **The entire unit may take:** |  |
+| – Psybolts | +5 points per model |
+
 
 ## Fast Attack
 
@@ -2254,6 +2381,9 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Nemesis daemon hammer | +10 points |
 | **The Interceptor Justicar may take:** |  |
 | – Brotherhood Psyker | +15 points |
+| **The entire unit may take:** |  |
+| – Psybolts | +5 points per model |
+
 
 ### Interceptor Terminator Squad — 275 pts
 
@@ -2401,6 +2531,65 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Gatling psilencer | +10 points |
 | **The Stormraven may take:** |  |
 | – Two Sponson Mounted Hurricane Bolters | +20 points |
+
+### Grey Knight Seeker Squad — 140 pts
+
+*Hunters of the Brotherhood armed with specialist bolt shells, who mark the greatest servants of the Warp and see them slain before they can act.*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Seeker Knight | 7 | 5 | 5 | 4 | 4 | 1 | 4 | 1 | 8 | 3+ | 32mm |
+| Seeker Justicar | 7 | 5 | 5 | 4 | 4 | 1 | 4 | 2 | 9 | 3+ | 32mm |
+
+**Unit Composition**
+
+- 4 Seeker Knights
+- 1 Seeker Justicar
+
+**Wargear**
+
+- Bolt pistol\*
+- Frag grenades\*
+- Combi-kraken bolter
+- Krak grenades\*
+- Power armour\*
+- Psyk-out grenades
+
+**Unit Type**
+
+- Seeker Knight: Infantry (Skirmish, Psyker)
+- Seeker Justicar: Infantry (Character, Skirmish, Psyker)
+
+**Special Rules**
+
+- Brotherhood (X)
+- Brotherhood of Psykers
+- Infiltrate
+- Legiones Astartes (Grey Knights)
+- Marked For Death
+- Precision Shots (4+)
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The squad may take:** |  |
+| – Up to 5 additional Seeker Knights | +18 points each |
+| **Any model may exchange its combi-kraken bolter for:** |  |
+| – Combi-banestrike bolter | Free |
+| **One Seeker Knight may take one of the following:** |  |
+| – Nuncio-vox\* | +10 points |
+| – Augury scanner\* | +10 points |
+| **The Seeker Justicar may exchange his bolt pistol for one of the following:** |  |
+| – Nemesis force sword | +5 points |
+| – Nemesis force halberd | +5 points |
+| **The Seeker Justicar may take:** |  |
+| – Brotherhood Psyker | +15 points |
+| – Melta bombs\* | +5 points |
+| **The entire unit may take:** |  |
+| – Psybolts | +5 points per model |
+
 
 ## Heavy Support
 
@@ -2584,6 +2773,9 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Psycannon | +15 points each |
 | **The Purgator Justicar may take:** |  |
 | – Brotherhood Psyker | +15 points |
+| **The entire unit may take:** |  |
+| – Psybolts | +5 points per model |
+
 
 ## Wargear
 
@@ -2645,7 +2837,7 @@ A personal teleporter counts as a jump pack, using the official 2.0 Jump Pack ru
 
 ### Psybolts
 
-Storm bolters carried by models equipped with Psybolts gain the Nemesis Force special rule.
+Bolt weapons (storm bolters, bolters, boltguns, bolt pistols, and kraken, banestrike, nemesis and combi bolters) carried by models equipped with Psybolts gain the Nemesis Force special rule.
 
 ### Psyk-out Grenades
 
@@ -2750,6 +2942,17 @@ All weapons listed here are counted as 'Psychic' weapons for those rules that af
 | Heavy psycannon | 24" | 8 | 4 | Heavy 6, Breaching (5+), Nemesis Force |
 | Psilencer | 24" | 3 | – | Heavy 6, Pinning, Shell Shock (1), Nemesis Force |
 | Psycannon | 24" | 6 | 4 | Heavy 4, Nemesis Force |
+
+#### Combi-bolters
+
+*Twinned bolters of the Brotherhood's Seekers, fitted with specialist bolt shells.*
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Combi-banestrike bolter | 18" | 5 | 4 | Rapid Fire, Breaching (6+), Twin-linked |
+| Combi-kraken bolter – default | 30" | 4 | 4 | Rapid Fire, Twin-linked |
+| Combi-kraken bolter – scorpius rounds | 24" | 5 | 4 | Assault 1, Breaching (4+), Twin-linked |
+| Combi-kraken bolter – tempest rounds | 18" | 3 | 6 | Assault 3, Ignores Cover, Twin-linked |
 
 #### Vehicle Weapons
 
