@@ -476,7 +476,7 @@ A Grey Knights army may take one Rite of War.
 | – Purity Seals | +5 points |
 | – Psybolts | +5 points |
 
-### Aegis Captain — 145 pts
+### Aegis Captain — 135 pts
 
 *A Brother-Captain sworn to the Aegis Bastions, clad in Aegis-Cataphractii plate from the vaults of Deimos. Where he stands with his wardens, the line of the Grey Knights does not break.*
 
