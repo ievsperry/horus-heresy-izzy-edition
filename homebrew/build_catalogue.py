@@ -31,7 +31,8 @@ XENOS_ARMY_CATEGORY = ("3c8e-5a1d-9b47-e2f0", "Xenos Army")
 PTS = "d2ee-04cb-5f8a-2642"
 ALLIED_DETACHMENT = "d4f2-6da5-b6de-06ec"
 # Army-building limits a list's rules set that the doc's wording alone cannot carry: faction -> module in homebrew/
-FACTION_LIMITS = {"Traders Militant": "traders_militant_limits", "Grey Knights": "grey_knights_official"}
+FACTION_LIMITS = {"Traders Militant": "traders_militant_limits", "Grey Knights": "grey_knights_official",
+                  "Adepta Sororitas": "sororitas_rites"}
 
 UNIT_PROFILE = "4bb2-cb95-e6c8-5a21"
 # the characteristics of a unit profile, in the order of its stats
@@ -2093,8 +2094,11 @@ class Builder:
         (Grey Knights): "Engines of Tithe: Dreadknight Talons may be selected as Elites choices in a Detachment
         using this Rite of War" is "Dreadknight Talons may be taken as Elites"."""
         s = re.sub(r"^[A-Z][\w'-]*(?: [\w'-]+){0,4}: (?=[A-Z])", "", text)  # "Engines of Tithe: "
-        s = re.sub(r"A Detachment using this Rite of War must include (?:an? )?(.+?) with the Master of the Legion "
-                   r"special rule, and this model must be the army['\u2019]s Warlord", r"Requires \1 as Warlord", s)
+        s = re.sub(r" \(or [^()]*\)", "", s)  # "(or Master of the Legion)", "a Dogmata (or Missionary)"
+        s = re.sub(r"A Detachment using this Rite of War must include (?:an? )?(.+?) with the (?:Master of the Legion|"
+                   r"Order Commander) special rule, and this model must be the army['\u2019]s Warlord", r"Requires \1 as Warlord", s)
+        s = re.sub(r"A Detachment using this Rite of War must include (?:an? )?(.+?) as the army['\u2019]s Warlord",
+                   r"Requires \1 as Warlord", s)  # "must include a Ministorum Priest or a Dogmata as the army's Warlord"
         s = re.sub(r"^No units in a Detachment using this Rite of War may be deployed inside or select (.+?)\.?$",
                    r"A Detachment using this Rite of War may not include any \1.", s)
         if s.startswith("A Detachment using this Rite of War"):
@@ -2755,7 +2759,9 @@ class Builder:
             return
         allowed_units, allowed_rules = [], []
         for name in re.split(r",\s*|\s+or\s+", m.group(1)):
-            name = re.sub(r"^(?:an?|the)\s+", "", name.strip())
+            name = re.sub(r"^(?:or\s+)?(?:an?|the)\s+", "", name.strip())  # "..., Junith Eruita, or a Canoness"
+            name = re.sub(r"^or\s+", "", name)
+            name = re.sub(r"\s+equipped with .+$", "", name)  # "a Canoness equipped with a Jump Pack"
             rule = re.search(r"\bwith (.+)$", name)
             if rule and not re.search(r"\bwings\b", rule.group(1)):
                 allowed_rules.append(rule.group(1))

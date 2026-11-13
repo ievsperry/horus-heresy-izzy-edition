@@ -267,6 +267,18 @@ loading. The script prints anything in the doc it could not place.
   selection: a "### Faith" sub-section of the Army-wide Special Rules that is not a rule a unit has is shown there,
   its table one line to a row. The Celestian Insidiants are built from "## Kill Team: Celestian Insidiants",
   their slot from "(Elites)" in the datasheet title. "Combi-weapon" is the game system's Minor Combi-weapon.
+  Each Order's "**Order Trait: X.**" line names its two rules ("Blood of the Martyrs: Martyrs' Fury"). Seven Rites
+  of War (Armoured Convent, Crusade of Faith, Penitent Host, Wings of the Saint, The Cleansing Pyre, Bastion of the
+  Martyred Heart, Shadows of the Sanctum) in the long Prerequisites/Effects/Limitations form; the Canoness and
+  Palatine have Order Commander, which counts as Master of the Legion for a Rite's Prerequisites. The builder reads
+  each Rite's Warlord ("with the Order Commander (or Master of the Legion) special rule", "a Dogmata (or Missionary)
+  as the army's Warlord", "a Canoness equipped with a Jump Pack"); sororitas_rites.py clears the rest of its reading
+  and makes the effects from unit lists: the slots each Rite opens and the Line sub-type, the rules it grants
+  (Immolators' Scout, the penitents' Rage (1), Hit & Run and Deep Strike for the jump units, Stubborn and Heart of
+  the Legion for Infantry, Infiltrate, Move Through Cover and Outflank), the units it bars, and the Troops its
+  Compulsory Troops slots must be. Sororitas profiles have no Jump sub-type: the jump units are the Seraphim,
+  Zephyrim, Junith Eruita and Saint Celestine. Shadows of the Sanctum lets Dominion Squads be Troops, since its
+  Compulsory Troops may be Dominions.
 - A "Unit | Option | Cost" row may name a squad by its models ("Battle Sisters", "Celestians"): that is the
   Battle Sisters Squad, the Celestian Squad.
 - An "Equipment | Effect | Cost" table under "Any Sororitas Rhino, Immolator, Exorcist or Castigator may take
