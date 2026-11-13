@@ -1220,8 +1220,8 @@ A Detachment with the Legiones Astartes (Grey Knights) special rule may include 
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Bastion Brother | 6 | 4 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+ | 40mm |
-| Warden-Justicar | 6 | 4 | 4 | 4 | 4 | 2 | 4 | 3 | 9 | 2+ | 40mm |
+| Bastion Brother | 6 | 5 | 5 | 4 | 4 | 2 | 4 | 2 | 9 | 2+ | 40mm |
+| Warden-Justicar | 6 | 5 | 5 | 4 | 4 | 2 | 4 | 3 | 9 | 2+ | 40mm |
 
 **Unit Composition**
 
