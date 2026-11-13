@@ -342,7 +342,7 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 
 | 2.0 slot | Grey Knights units |
 | --- | --- |
-| HQ | Grand Master, Brother-Captain, Aegis Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus, Supreme Grand Master Janus, Grand Masters Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron |
+| HQ | Grand Master, Brother-Captain, Aegis Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus, Supreme Grand Master Janus, Grand Masters Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron; Brotherhood Command Squad and Brotherhood Tartaros Command Squad as Retinues (no slot) |
 | Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary, Aegis Bastion Squad (0-1), Purifier Bladeguard Squad (0-1), Servitors |
 | Troops | Strike Squad, Brotherhood Terminator Squad |
 | Dedicated Transports | Rhino\*, Razorback\* |
@@ -1437,6 +1437,131 @@ A Grey Knights army may take one Rite of War.
 | – Holocaust | Free |
 | – Warp Quake | Free |
 | – Warp Shroud | Free |
+
+### Brotherhood Command Squad — 130 pts
+
+*The chosen brethren of a Grand Master or Brother-Captain, clad in Aegis artificer plate and sworn to guard their lord and his banner.*
+
+This unit may only be taken as a Retinue Squad of a model with the Master of the Legion special rule (not the Grand Master in Nemesis Dreadknight), as the Retinue special rule describes. It does not use a Force Organisation slot, counts as part of its Leader's unit, must deploy with its Leader, and the Leader may not voluntarily leave it.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brotherhood Chosen | 7 | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+ | 32mm |
+| Brotherhood Standard Bearer | 7 | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+ | 32mm |
+
+**Unit Composition**
+
+- 2 Brotherhood Chosen
+- 1 Brotherhood Standard Bearer
+
+**Wargear**
+
+- Aegis Artificer armour
+- Frag grenades\*
+- Krak grenades\*
+- Nemesis force sword
+- Psyk-out grenades
+- Storm bolter\*
+- Brotherhood banner (Brotherhood Standard Bearer only)
+
+**Unit Type**
+
+- Brotherhood Chosen: Infantry (Psyker)
+- Brotherhood Standard Bearer: Infantry (Psyker)
+
+**Special Rules**
+
+- Brotherhood Banner: friendly Grey Knights units within 6" of the Standard Bearer add 1 to their Attacks in a turn in which they charged, and may re-roll failed Morale checks
+- Brotherhood (X)
+- Brotherhood of Psykers
+- Chosen Warriors
+- Legiones Astartes (Grey Knights)
+- Relentless
+- Retinue
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The squad may take:** |  |
+| – Up to 6 additional Brotherhood Chosen | +35 points each |
+| **Any model may exchange its nemesis force sword for one of the following:** |  |
+| – Nemesis force halberd | Free |
+| – Two nemesis force falchions | +5 points each |
+| – Nemesis force warding staff | +5 points each |
+| – Nemesis daemon hammer | +10 points each |
+| **Any Brotherhood Chosen may exchange its storm bolter for one of the following:** |  |
+| – Incinerator | +10 points each |
+| – Psilencer | +10 points each |
+| – Psycannon | +15 points each |
+| **One Brotherhood Chosen may take:** |  |
+| – Narthecium | +15 points |
+| **The entire unit may take:** |  |
+| – Personal teleporters | +20 points per model |
+| – Psybolts | +5 points per model |
+| – Purity Seals | +2 points per model |
+
+### Brotherhood Tartaros Command Squad — 175 pts
+
+*Veteran brethren of the inner circle in Aegis Tartaros plate, swift enough to keep pace with their lord and strong enough to stand against the greatest horrors of the Warp.*
+
+This unit may only be taken as a Retinue Squad of a model with the Master of the Legion special rule (not the Grand Master in Nemesis Dreadknight), as the Retinue special rule describes. It does not use a Force Organisation slot, counts as part of its Leader's unit, must deploy with its Leader, and the Leader may not voluntarily leave it.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Tartaros Chosen | 7 | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+ | 40mm |
+| Tartaros Standard Bearer | 7 | 5 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 2 Tartaros Chosen
+- 1 Tartaros Standard Bearer
+
+**Wargear**
+
+- Aegis Tartaros armour
+- Nemesis force halberd
+- Storm bolter\*
+- Brotherhood banner (Tartaros Standard Bearer only)
+
+**Unit Type**
+
+- Tartaros Chosen: Infantry (Psyker)
+- Tartaros Standard Bearer: Infantry (Psyker)
+
+**Special Rules**
+
+- Brotherhood Banner: friendly Grey Knights units within 6" of the Standard Bearer add 1 to their Attacks in a turn in which they charged, and may re-roll failed Morale checks
+- Brotherhood (X)
+- Brotherhood of Psykers
+- Chosen Warriors
+- Deep Strike
+- Legiones Astartes (Grey Knights)
+- Relentless
+- Retinue
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The squad may take:** |  |
+| – Up to 2 additional Tartaros Chosen | +55 points each |
+| **Any model may exchange its nemesis force halberd for one of the following:** |  |
+| – Nemesis force sword | Free |
+| – Two nemesis force falchions | +5 points each |
+| – Nemesis force warding staff | +5 points each |
+| – Nemesis daemon hammer | +10 points each |
+| **Any Tartaros Chosen may exchange its storm bolter for one of the following:** |  |
+| – Incinerator | +10 points each |
+| – Psilencer | +10 points each |
+| – Psycannon | +15 points each |
+| **The Tartaros Standard Bearer may take:** |  |
+| – Grenade harness\* | +5 points |
+| **The entire unit may take:** |  |
+| – Psybolts | +5 points per model |
+| – Purity Seals | +2 points per model |
 
 ## Elites
 

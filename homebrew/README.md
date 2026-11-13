@@ -229,7 +229,9 @@ loading. The script prints anything in the doc it could not place.
   Troops may fill Compulsory slots. A "**Brotherhood Trait: X.**" line names its Brotherhood's rules
   ("Fury of the Vanguard: Unwavering"). The 0-1 Aegis Bastion Squad (Elites) wears Aegis-Cataphractii
   Terminator armour; only its Warden-Justicar is a Brotherhood Psyker, so a rule or "Psychic Discipline (...)"
-  marked "(Warden-Justicar only)" gives the discipline pick to that model alone. The Aegis Captain (HQ) may take the Aegis Bastion Squad as a
+  marked "(Warden-Justicar only)" gives the discipline pick to that model alone. The Brotherhood Command Squad (Aegis artificer armour) and Brotherhood Tartaros Command
+  Squad are taken only as a Retinue of a model with Master of the Legion (not the Grand Master in Nemesis
+  Dreadknight), each such leader holding a "Retinue" group (grey_knights_official.py retinues()). The Aegis Captain (HQ) may take the Aegis Bastion Squad as a
   Retinue: like an official Legion leader's Command Squad, it is a "Retinue" group in his entry and uses no Force
   Organisation slot (grey_knights_official.py), and the squad's 0-1 limit counts it however it is taken. The 0-1 Purifier Bladeguard Squad (Elites) has
   Purifying Flame (Assault Variant), named so as not to clash with the Sanctic psychic weapon, and Soul Blaze, an
