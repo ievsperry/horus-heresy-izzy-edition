@@ -16,6 +16,8 @@ Points start from 7th edition costs and are scaled to official 2.0 Legion and So
 
 Every unit in this document has **Order (X)** unless its entry says otherwise. Sororitas Infantry (Battle Sisters, Celestians, Dominions, Seraphim, Zephyrim, Retributors, Novitiates and Sororitas characters) also have **Shield of Faith**.
 
+**Order Commander.** A model with this special rule counts as having the Master of the Legion special rule for the Prerequisites of a Rite of War: a Detachment may take a Rite of War that requires it while this model is the army's Warlord.
+
 **Shield of Faith.** The model has a 6+ Invulnerable Save. Models that already have an Invulnerable Save improve it by 1 instead, to a best of 4+.
 
 ### Faith
@@ -51,99 +53,112 @@ Sororitas units use the 2.0 core reactions as normal, plus this advanced reactio
 
 ## Orders Militant
 
-Every Sororitas force is drawn from one of the six major Orders Militant. Orders work like Ork Klans and Drukhari Obsessions.
+*The fighting arm of the Ecclesiarchy is divided into six great Orders Militant, each upholding the sacred teachings and martial traditions of its founding Saint.*
 
-**Order (X).** When building an army, choose one Order for each detachment. Every unit in that detachment gains Order (X), where X is the chosen Order. Saint Celestine, Morvenn Vahl and the Triumph of Saint Katherine may join any Order. Junith Eruita may only join Our Martyred Lady.
+**Order (X).** When selecting an army, the controlling player must select a single Order Militant for each Detachment with the Adepta Sororitas faction trait. Every model in that Detachment replaces the 'X' in its Order (X) special rule with the chosen Order (e.g., Order (Our Martyred Lady)).
 
-**Order Advanced Reactions.** Each Order has its own Advanced Reaction, usable only by units with that Order (X). It is available in addition to Righteous Retribution and costs one point of the Reaction Allotment†.
+- **Special Character Restrictions:** Models with the Order (Any) special rule (such as Saint Celestine, Morvenn Vahl, and the Triumph of Saint Katherine) may be included in a Detachment of any Order, and adopt that Detachment's Order for the duration of the battle. Models with a fixed Order (such as Junith Eruita, who has Order (Our Martyred Lady)) may only be included in a Detachment matching their specific Order.
+- **Order Advanced Reactions:** Each Order Militant grants access to a unique Advanced Reaction, which is available only to units composed entirely of models with that specific Order (X) special rule. Unless otherwise stated, an Order Advanced Reaction is available in addition to the core Reactions and Righteous Retribution, and costs 1 point of the controlling player's Reaction Allotment in the appropriate phase.
 
 ### Order of Our Martyred Lady
 
 *The Order that remembers the martyrdom of Saint Katherine, and draws strength from every fallen Sister.*
 
-- **Martyrs' Fury:** gain 2 Faith points instead of 1 through Martyrdom for this Order's units.
-- **Vengeance:** the unit adds 1 to its Attacks in a turn in which a friendly unit within 6" was destroyed.
+**Order Trait: Blood of the Martyrs.**
 
-**Advanced Reaction: Martyrs' Vengeance** (Assault phase). Trigger: a friendly unit within 6" of a unit with this Order is destroyed in close combat. The unit moves up to D6 plus its Initiative toward the enemy unit that destroyed it; if this brings it into base contact, it counts as having charged†.
+- **Martyrs' Fury:** Whenever the controlling player gains Faith Points via the Martyrdom special rule as a result of a unit with the Order (Our Martyred Lady) special rule being destroyed, they gain 2 Faith Points instead of 1.
+- **Vengeance:** Models with the Order (Our Martyred Lady) special rule gain a +1 bonus to their Attacks Characteristic in any turn in which a friendly unit with the Adepta Sororitas faction trait within 6" of their unit was completely destroyed.
 
-**Warlord Trait: Inspirational Martyr.** If the Warlord is slain, gain D3+1 Faith points, and every friendly unit within 12" gains Rage (2) for the rest of the game.
+**Advanced Reaction: Martyrs' Vengeance** (Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, immediately after a friendly unit with the Adepta Sororitas faction trait within 6" of a friendly unit composed entirely of models with the Order (Our Martyred Lady) special rule is completely destroyed in close combat. Effect: Every model in the reacting unit may immediately make a move of up to D6 + its Initiative Characteristic in inches directly toward the enemy unit that destroyed the friendly unit. If this move brings any model in the reacting unit into base contact with an enemy model from that unit, it is locked in combat and counts as having made a successful Charge for that Assault phase.
+
+**Warlord Trait: Inspirational Martyr.** If a Warlord with this Trait is removed as a casualty, the controlling player immediately gains D3+1 Faith Points, and every friendly unit composed entirely of models with the Adepta Sororitas faction trait within 12" of the Warlord's last position gains the Rage (2) special rule for the remainder of the battle. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
 
 ### Order of the Argent Shroud
 
-*An Order of selfless heroes whose battle-sisters fight in silence and swift advance.*
+*An Order of selfless heroes whose Battle Sisters fight in silence and swift advance.*
 
-- **Selfless Heroism:** Sororitas characters may re-roll failed Look Out, Sir! rolls†.
-- **Silent Advance:** the unit may Advance and still shoot in the same turn.
+**Order Trait: Deeds, Not Words.**
 
-**Advanced Reaction: Swift Redeployment** (Movement phase). Trigger: an enemy unit ends a move within 12" of an Argent Shroud unit. The unit moves up to D6 plus its Initiative Characteristic in inches in any direction.
+- **Selfless Heroism:** Friendly models with the Character Unit Sub-type and the Order (Argent Shroud) special rule may re-roll failed Look Out, Sir! rolls.
+- **Silent Advance:** Units composed entirely of models with the Order (Argent Shroud) special rule may make Shooting Attacks in the Shooting phase even if they made a Run move in the same Shooting phase (resolving those attacks as Snap Shots unless they possess a special rule that allows otherwise).
 
-**Warlord Trait: Quiet Fury.** The Warlord and any unit she joins gain Scout.
+**Advanced Reaction: Swift Redeployment** (Movement phase). Trigger: This Advanced Reaction may be declared in the Movement phase, after an enemy unit ends a move within 12" of a friendly unit composed entirely of models with the Order (Argent Shroud) special rule. Effect: Every model in the reacting unit may immediately make a move of up to D6 + its Initiative Characteristic in inches in any direction. This move may not bring any model within 1" of an enemy model, and does not prevent the unit from moving, shooting, or charging as normal in its own turn.
+
+**Warlord Trait: Quiet Fury.** A Warlord with this Trait, and any unit she joins, gains the Scout special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.
 
 ### Order of the Bloody Rose
 
 *An Order that seeks out close combat with a fervour bordering on bloodlust.*
 
-- **Blood Price:** the unit may re-roll failed charge distance rolls.
-- **Furious Rage:** the unit adds 1 to its Attacks in a turn in which it charged.
+**Order Trait: Fury of Saint Mina.**
 
-**Advanced Reaction: Bloody Counter-charge** (Assault phase). Trigger: an enemy unit declares a charge against a Bloody Rose unit. Instead of firing Overwatch, the unit gains Counter-Charge (1) until the end of the phase†.
+- **Blood Price:** Units composed entirely of models with the Order (Bloody Rose) special rule may re-roll failed Charge Distance rolls.
+- **Furious Rage:** Models with the Order (Bloody Rose) special rule gain a +1 bonus to their Attacks Characteristic in any turn in which they made a successful Charge.
 
-**Warlord Trait: Beacon of Rage.** The Warlord and any unit she joins gain Rage (2) and Furious Charge (1).
+**Advanced Reaction: Bloody Counter-Charge** (Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Order (Bloody Rose) special rule, before any Overwatch attacks are resolved. Effect: The reacting unit forfeits its ability to make an Overwatch reaction against the charging unit. Instead, every model in the reacting unit gains the Counter-Attack (1) special rule until the end of the current Assault phase.
+
+**Warlord Trait: Beacon of Rage.** A Warlord with this Trait, and any unit she joins, gains the Rage (2) and Furious Charge (1) special rules. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
 
 ### Order of the Ebon Chalice
 
 *The oldest Order, steeped in tradition, whose Sisters fight with flawless discipline.*
 
-- **Ancient Rituals:** once per turn, you may spend Faith points on an Act of Faith for an Ebon Chalice unit even if that Act has already been used this turn.
-- **Fervent Discipline:** in a turn in which it did not move, the unit may re-roll to-hit rolls of 1 with ranged weapons.
+**Order Trait: Custodians of the First Covenant.**
 
-**Advanced Reaction: Fire and Faith** (Shooting phase). Trigger: an Ebon Chalice unit is selected as the target of a Shooting Attack. The unit makes a Return Fire Shooting Attack before the enemy attack is resolved, instead of after it.
+- **Ancient Rituals:** Once per turn, the controlling player may spend Faith Points to perform an Act of Faith on a unit composed entirely of models with the Order (Ebon Chalice) special rule, even if that specific Act of Faith has already been performed by another unit during the same turn.
+- **Fervent Discipline:** In a turn in which a unit composed entirely of models with the Order (Ebon Chalice) special rule did not move during the Movement phase (including disembarking or arriving from Reserves), models in that unit re-roll To Hit rolls of 1 when making Shooting Attacks.
 
-**Warlord Trait: Keeper of the Rites.** Once per turn, the Warlord may perform an Act of Faith on her own unit without spending a Faith point.
+**Advanced Reaction: Fire and Faith** (Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, after an enemy unit selects a friendly unit composed entirely of models with the Order (Ebon Chalice) special rule as the target of a Shooting Attack, before any To Hit rolls are made. Effect: The reacting unit immediately makes a Return Fire Shooting Attack targeting the active enemy unit, resolving all shots before the enemy unit resolves its Shooting Attack (any casualties inflicted by this Return Fire attack are removed before the enemy unit rolls To Hit).
+
+**Warlord Trait: Keeper of the Rites.** Once per turn, a Warlord with this Trait may perform an Act of Faith on her own unit without spending any Faith Points from the Faith Pool. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.
 
 ### Order of the Sacred Rose
 
 *An Order famous for its composure, steadying the line where others would break.*
 
-- **Calm Under Fire:** the unit may re-roll failed Morale checks.
-- **Serene Composure:** the unit adds 1 to its Leadership, to a maximum of 10.
+**Order Trait: Spirit of Saint Arabella.**
 
-**Advanced Reaction: Unshakeable Line** (Assault phase). Trigger: an enemy unit declares a charge against a Sacred Rose unit. The unit fires Overwatch with every model, adding 1 to its Ballistic Skill for the Overwatch, to a maximum of 5†.
+- **Calm Under Fire:** Units composed entirely of models with the Order (Sacred Rose) special rule may re-roll failed Morale checks.
+- **Serene Composure:** Models with the Order (Sacred Rose) special rule gain a +1 bonus to their Leadership Characteristic (to a maximum of 10).
 
-**Warlord Trait: Serene Leader.** Friendly Sororitas units within 12" of the Warlord use her Leadership.
+**Advanced Reaction: Unshakeable Line** (Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Order (Sacred Rose) special rule, before any Overwatch attacks are resolved. Effect: Every model in the reacting unit may make an Overwatch Shooting Attack against the charging unit, adding +1 to its Ballistic Skill Characteristic for those Overwatch attacks (to a maximum of 5) instead of firing as Snap Shots.
+
+**Warlord Trait: Serene Leader.** Friendly units composed entirely of models with the Adepta Sororitas faction trait within 12" of a Warlord with this Trait may use the Warlord's Leadership Characteristic for all Morale, Pinning, and Regroup tests. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
 
 ### Order of the Valorous Heart
 
 *An Order of penitents who seek redemption through suffering.*
 
-- **Imperturbable:** the unit has Feel No Pain (6+), or improves an existing Feel No Pain by 1.
-- **Penitent Bearing:** the unit may re-roll failed Pinning tests.
+**Order Trait: Stoic Suffering.**
 
-**Advanced Reaction: Unbending Endurance** (Shooting phase). Trigger: a Valorous Heart unit is selected as the target of a Shooting Attack. Against that attack, the unit improves its Feel No Pain by a further 1, to a best of 4+.
+- **Imperturbable:** Models with the Order (Valorous Heart) special rule gain the Feel No Pain (6+) special rule (or improve an existing Feel No Pain roll by +1, to a maximum of 4+).
+- **Penitent Bearing:** Units composed entirely of models with the Order (Valorous Heart) special rule may re-roll failed Pinning tests.
 
-**Warlord Trait: Iron Penitent.** The Warlord and any unit she joins have Feel No Pain (5+), or improve an existing Feel No Pain by 1.
+**Advanced Reaction: Unbending Endurance** (Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, after an enemy unit selects a friendly unit composed entirely of models with the Order (Valorous Heart) special rule as the target of a Shooting Attack, before any To Hit rolls are made. Effect: Until the end of that Shooting Attack, all models in the reacting unit improve their Feel No Pain roll by an additional +1 (to a maximum of 4+).
+
+**Warlord Trait: Iron Penitent.** A Warlord with this Trait, and any unit she joins, gains the Feel No Pain (5+) special rule (or improves an existing Feel No Pain roll by +1, to a maximum of 4+). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.
 
 ## Warlord Traits
 
-A Sororitas Warlord chooses one Warlord Trait: one of the three generic traits below, or the Warlord Trait of her Order.
+If an army's Warlord has the Adepta Sororitas faction trait, the controlling player may select one of the three generic Warlord Traits below, or the specific Warlord Trait associated with the Warlord's Order Militant.
 
 ### Executioner of Heretics
 
 *A hunter of traitors and witches who never lets the enemy escape judgement.*
 
-The Warlord and any unit she joins have Hatred against every enemy unit, and Preferred Enemy (Psykers)†. In addition, your army may make one additional reaction in your opponent's Shooting phase, above its normal Reaction Allotment†.
+A Warlord with this Trait, and any unit she joins, gains the Hatred (Everything) special rule. In addition, the Warlord and any unit she joins gain the Preferred Enemy (Psykers) special rule against any unit containing at least one model with the Psyker Unit Sub-type. Furthermore, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.
 
 ### Indomitable Belief
 
 *A leader whose faith steadies every Sister who sees her.*
 
-At the start of each of your turns, gain 1 additional Faith point while the Warlord is on the battlefield. In addition, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment†.
+At the start of each of the controlling player's turns, while a Warlord with this Trait is deployed on the battlefield (and has not been removed as a casualty or embarked within a Transport), the controlling player immediately adds +1 Faith Point to their Faith Pool. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
 
 ### Pure of Will
 
 *A leader whose unbreakable will turns aside even the powers of the warp.*
 
-The Warlord has Adamantium Will (4+), and enemy psykers within 12" of her suffer Perils of the Warp on any double. In addition, your army may make one additional reaction in your opponent's Movement phase, above its normal Reaction Allotment†.
+A Warlord with this Trait gains the Adamantine Will (4+) special rule (or improves an existing Adamantine Will roll by +1, to a maximum of 2+). Furthermore, whenever an enemy model with the Psyker Unit Sub-type attempts to make a Psychic check while within 12" of a Warlord with this Trait, that model suffers Perils of the Warp on any double rolled on the 2D6 Psychic check (rather than only on double 1s or double 6s). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.
 
 ## Force Organisation and Rites of War
 
@@ -158,15 +173,146 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Fast Attack | Seraphim Squad, Zephyrim Squad, Dominion Squad |
 | Heavy Support | Retributor Squad, Exorcist, Castigator, Penitent Engines, Mortifiers |
 
-A Sororitas army may take one Rite of War, chosen when the army is built. Each has a benefit and a limitation.
+When selecting an army with the Adepta Sororitas faction trait, the controlling player may select a single Rite of War for their Primary Detachment, provided the Detachment's Warlord meets all listed Prerequisites. Only one Rite of War may be selected per Detachment, and all Effects and Limitations apply for the duration of the battle.
 
-**Armoured Convent.** Requires Morvenn Vahl or a Canoness as Warlord. Benefit: Paragon Warsuits may be taken as Troops and gain the Line sub-type, and Immolators gain Scout. Limitation: every Infantry unit must start the game embarked on a transport.
+### Rite of War: Armoured Convent
 
-**Crusade of Faith.** Requires a Canoness or Saint Celestine as Warlord. Benefit: at the start of the game, gain D3 Faith points, and Sororitas units may perform two Acts of Faith per phase instead of one. Limitation: no Penitent Engines, Mortifiers or Repentia.
+*Mounted within roaring Immolators, sanctified Rhinos, and towering Paragon Warsuits, the Order rides to war as an unstoppable mechanized phalanx. Beneath billowing banners and hymns of battle, their armoured spearhead crashes directly into the enemy lines before the heretic can even bring their heavy ordnance to bear.*
 
-**Penitent Host.** Requires a Ministorum Priest or Dogmata as Warlord. Benefit: Repentia Squads and Arco-flagellants may be taken as Troops and gain the Line sub-type, and Penitent Engines may be taken as Elites. Limitation: the army may not include more Battle Sisters Squads than penitent units (Repentia, Arco-flagellants, Penitent Engines and Mortifiers).
+**Prerequisites**
 
-**Wings of the Saint.** Requires a Canoness with a jump pack, Saint Celestine or Junith Eruita as Warlord. Benefit: Seraphim and Zephyrim Squads may be taken as Troops and gain the Line sub-type. Limitation: no Heavy Support choices other than Exorcists.
+- A Detachment using this Rite of War must include Morvenn Vahl or a Canoness with the Order Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- Exemplars of the Convent: Paragon Warsuit Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected as a Compulsory Troops choice in this manner gains the Line Unit Sub-type.
+- Vanguard of Flame: All Sororitas Immolators (including Dedicated Transports) in a Detachment using this Rite of War gain the Scout special rule.
+- Sanctified Advance: All Vehicles with the Adepta Sororitas faction trait in a Detachment using this Rite of War gain the Smoke Launchers wargear upgrade at no additional points cost, and may re-roll failed Dangerous Terrain tests.
+
+**Limitations**
+
+- Every unit in a Detachment using this Rite of War composed of models with the Infantry Unit Type (excluding models in Paragon Warsuits or Jump Infantry) must begin the battle embarked inside a Transport Vehicle (either a Dedicated Transport or a Heavy Support Transport such as a Repressor or Land Raider). Any Infantry unit that cannot be embarked inside a Transport during deployment may not be included in the Detachment.
+- A Detachment using this Rite of War may not include any Fortification choices.
+
+### Rite of War: Crusade of Faith
+
+*Led by the living martyrs and supreme commanders of the Ecclesiarchy, the Sisters of Battle march forward in an unbroken tide of prayer and bolter fire. So pure is their devotion that miracles manifest around them with blinding frequency, turning aside lethal blows and guiding every shot to the heart of the faithless.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include Saint Celestine or a Canoness with the Order Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- Wellspring of Devotion: At the start of the first game turn, before any units are activated or moved, the controlling player immediately adds +D3 Faith Points to their Faith Pool.
+- Fervour Unbound: Friendly units with the Adepta Sororitas faction trait in a Detachment using this Rite of War may attempt to perform up to two Acts of Faith per phase (instead of the normal limit of one), though a single unit may still only benefit from one Act of Faith per phase.
+- Martyr's Resolve: While the army's Warlord is alive on the battlefield, friendly units composed entirely of models with the Adepta Sororitas faction trait within 12" of the Warlord gain the Stubborn special rule and re-roll failed Shield of Faith rolls of 1.
+
+**Limitations**
+
+- A Detachment using this Rite of War may not include any Penitent Engines, Mortifiers, Sisters Repentia, or Arco-flagellants, nor may it include any Ministorum Priests or Preachers.
+- All Compulsory Troops choices in a Detachment using this Rite of War must be Battle Sisters Squads.
+
+### Rite of War: Penitent Host
+
+*Driven forward by the thunderous sermons of Ecclesiarchal zealots and the deafening roar of buzz-blades, the disgraced and the damned hurl themselves at the enemy in a frenzied wave of self-sacrifice. Seeking absolution only in violent death, these penitents tear through enemy battlelines without fear or hesitation.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a Ministorum Priest or a Dogmata (or Missionary) as the army's Warlord.
+
+**Effects**
+
+- Absolution in Blood: Sisters Repentia Squads and Arco-flagellant Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected as a Compulsory Troops choice in this manner gains the Line Unit Sub-type.
+- Engines of Redemption: Penitent Engines (and Mortifiers) may be selected as Elites choices in addition to Heavy Support choices in a Detachment using this Rite of War.
+- Zealous Frenzy: All Sisters Repentia, Arco-flagellants, Penitent Engines, and Mortifiers in a Detachment using this Rite of War gain the Rage (1) special rule and add +1 to their Charge Distance rolls while within 12" of a friendly Ministorum Priest, Dogmata, or Repentia Superior.
+
+**Limitations**
+
+- A Detachment using this Rite of War may not include more Battle Sisters Squads than total Penitent units (Sisters Repentia Squads, Arco-flagellant Squads, Penitent Engines, and Mortifiers) counted across all Force Organisation slots.
+- A Detachment using this Rite of War may not select any Fortification choices, and may not include an Allied Detachment.
+
+### Rite of War: Wings of the Saint
+
+*Descending from the heavens on plumes of golden fire, the angelic warrior-maidens of the Seraphim and Zephyrim orders strike like avenging Valkyries. Guided by the blazing presence of the Living Saint or the sacred pulpit of their commander, they shatter the enemy's flanks before vanishing back into the smoke.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include Saint Celestine, Junith Eruita, or a Canoness equipped with a Jump Pack with the Order Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- Angelic Host: Seraphim Squads and Zephyrim Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected as a Compulsory Troops choice in this manner gains the Line Unit Sub-type.
+- Descent of the Faithful: All units in a Detachment using this Rite of War composed entirely of models with the Jump Infantry Unit Sub-type (or the Flyer Unit Type) gain the Deep Strike special rule, and may re-roll scatter dice when arriving via a Deep Strike Assault.
+- Empyrean Grace: Units composed entirely of models with the Jump Infantry Unit Sub-type in a Detachment using this Rite of War gain the Hit & Run special rule and improve their Shield of Faith Invulnerable Save by +1 (to a maximum of 4+) during any turn in which they arrived via Deep Strike or made a successful Charge.
+
+**Limitations**
+
+- A Detachment using this Rite of War may not select any Heavy Support choices other than Exorcists.
+- A Detachment using this Rite of War may not select any Fortification choices.
+- All Compulsory Troops choices in a Detachment using this Rite of War must be Seraphim Squads or Zephyrim Squads.
+
+### Rite of War: The Cleansing Pyre
+
+*Following the sacred Trinity of Bolter, Flamer, and Melta, the Order advances in tightly coordinated purge-echelons to incinerate corruption at point-blank range. Beneath billowing clouds of promethium smoke and searing thermal blasts, neither fortified bunker nor armoured war-machine can survive their purifying wrath.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a Canoness or Palatine with the Order Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- Heralds of the Flame: Dominion Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected as a Compulsory Troops choice in this manner gains the Line Unit Sub-type.
+- Sacred Promethium: All Flamer, Heavy Flamer, Hand Flamer, and Immolation Flamer weapons fired by models in a Detachment using this Rite of War gain the Shred special rule and add +1 to their Strength Characteristic during any turn in which the firing unit did not arrive from Reserves.
+- Wrath of the Melta: All Meltaguns, Multi-Meltas, and Inferno Pistols fired by models in a Detachment using this Rite of War increase the range at which they roll an additional D6 for Armour Penetration (their Melta range) by +3".
+- Purge by Fire: Once per battle, at the start of any of the controlling player's Shooting phases, the Warlord may declare a Grand Conflagration. Until the end of that Shooting phase, all friendly units with the Adepta Sororitas faction trait within 12" of the Warlord gain the Ignores Cover special rule on all Shooting Attacks.
+
+**Limitations**
+
+- A Detachment using this Rite of War may not include any Zephyrim Squads, Seraphim Squads, or Jump Infantry units.
+- A Detachment using this Rite of War may not include any Penitent Engines, Mortifiers, or Arco-flagellants.
+- All Compulsory Troops choices in a Detachment using this Rite of War must be Dominion Squads or Battle Sisters Squads.
+
+### Rite of War: Bastion of the Martyred Heart
+
+*Sworn to defend a sacred relic, cathedral-shrine, or vital breach to the last drop of blood, the Sisters form an impenetrable shield-wall of halberds, storm shields, and heavy ordnance. Every Sister who falls in the line only ignites a colder, more lethal fury in the survivors.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include Junith Eruita, Triumph of Saint Katherine, or a Canoness with the Order Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- Shield of the Order: Celestian Sacresant Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected as a Compulsory Troops choice in this manner gains the Line Unit Sub-type.
+- Unbroken Phalanx: Every unit in a Detachment using this Rite of War composed entirely of models with the Infantry Unit Type gains the Stubborn and Heart of the Legion special rules (granting Feel No Pain (6+)—or improving an existing Feel No Pain roll by +1, to a maximum of 4+—while within 3" of an Objective marker or friendly Fortification).
+- Fury of the Fallen: Whenever a friendly unit with the Adepta Sororitas faction trait in this Detachment is reduced below half of its starting model count, all surviving models in that unit gain the Hatred (Everything) and Counter-Attack (1) special rules for the remainder of the battle.
+- Sanctified Ground: A Detachment using this Rite of War may include up to two Fortification choices instead of the normal limit of one, and any Retributor Squads deployed within 3" of a friendly Fortification or Objective marker gain the Relentless special rule.
+
+**Limitations**
+
+- No unit in a Detachment using this Rite of War may make Sweeping Advances in the Assault phase, nor may any unit deploy via Deep Strike or Outflank.
+- A Detachment using this Rite of War may not select any Fast Attack choices.
+- All Compulsory Troops choices in a Detachment using this Rite of War must be Battle Sisters Squads or Celestian Sacresant Squads.
+
+### Rite of War: Shadows of the Sanctum
+
+*Operating as covert inquisitorial strike teams, pilgrim-scouts, and vanguard raiders, these Sisters strike from unexpected quarters to assassinate heretic demagogues and dismantle enemy supply lines before the main Ecclesiarchal crusade arrives.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a Palatine or Canoness with the Order Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- Vanguard of the Faithful: Sisters Novitiate Squads and Dominion Squads in a Detachment using this Rite of War gain the Infiltrate and Move Through Cover special rules. Any Sisters Novitiate Squad selected as a Compulsory Troops choice gains the Line Unit Sub-type.
+- Outflanking Strike: Any unit in a Detachment using this Rite of War composed entirely of models with the Infantry Unit Type (excluding models with the Heavy Unit Sub-type) or Dedicated Transports gains the Outflank special rule, and the controlling player may re-roll failed Reserves rolls for units arriving via Outflank.
+- Ambush of the Righteous: During the first game turn, all friendly units with the Adepta Sororitas faction trait gain the Shrouded (5+) special rule, and enemy units suffer a -1 penalty to their Leadership Characteristic when taking Pinning tests caused by Shooting Attacks from units in this Detachment.
+
+**Limitations**
+
+- A Detachment using this Rite of War may not include any Heavy Support choices (including Exorcists, Castigators, or Retributor Squads), nor may it include any Paragon Warsuit Squads.
+- A Detachment using this Rite of War may not select any Fortification choices, and may not include an Allied Detachment.
+- All Compulsory Troops choices in a Detachment using this Rite of War must be Sisters Novitiate Squads or Dominion Squads.
 
 ## HQ
 
@@ -227,6 +373,7 @@ A Sororitas army may take one Rite of War, chosen when the army is built. Each h
 
 - Independent Character
 - Lead the Righteous: friendly Sororitas units within 12" may use her Leadership
+- Order Commander
 - Order (X)
 - Shield of Faith
 
@@ -362,6 +509,7 @@ A Sororitas army may take one Rite of War, chosen when the army is built. Each h
 
 - Field Commander: once per turn, the unit she joins may perform an Act of Faith even if that Act has already been used this turn
 - Independent Character
+- Order Commander
 - Order (X)
 - Shield of Faith
 
@@ -948,7 +1096,7 @@ The unit may take a Sororitas Rhino or Immolator as a Dedicated Transport. This 
 | Option | Cost |
 | --- | --: |
 | **The squad may take:** |  |
-| – Up to 5 additional Sisters Repentia | +15 points each |
+| – Up to 15 additional Sisters Repentia | +15 points each |
 
 ### Sanctifiers — 95 pts
 

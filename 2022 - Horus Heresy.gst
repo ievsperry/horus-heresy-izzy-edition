@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="240" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="241" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -163,7 +163,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="0d88-efe0-d7f2-b00a" name="Independent Character" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule"/>
+        <infoLink id="0d88-efe0-d7f2-b00a" name="Independent Character" hidden="false" targetId="6b27-b800-9297-4761" type="rule"/>
         <infoLink id="8234-2d15-6c2f-6062" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
         <infoLink id="d5ca-7903-8a29-f059" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
         <infoLink id="e721-b1da-84ba-8996" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
@@ -352,7 +352,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
             <modifier type="set" field="name" value="Heart of the Legion (if at 50% of less of unit size)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="9afe-5527-9b81-e837" name="Line Sub-type" hidden="false" targetId="bc1e-9c95-f971-cd7b" type="rule">
+        <infoLink id="9afe-5527-9b81-e837" name="Line Sub-type" hidden="false" targetId="6208-2b9a-b171-ef05" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -1369,7 +1369,7 @@ In addition, a Knight or Titan gains +2 Attacks for being equipped with two Mele
     </categoryEntry>
     <categoryEntry id="4280-2d8-16c6-d60b" name="Titan Sub-type" hidden="false">
       <infoLinks>
-        <infoLink name="Knights and Titans" hidden="false" type="rule" id="400b-3ae9-44d5-6df1" targetId="d0e-e683-6ab9-4f0"/>
+        <infoLink name="Knights and Titans" hidden="false" type="rule" id="400b-3ae9-44d5-6df1" targetId="ef3b-a8ad-9b19-a8a9"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry name="Unique Sub-type" hidden="false" id="aa94-5c65-d1f1-46a4"/>
@@ -20968,6 +20968,121 @@ If the Toughness Test is failed, the target unit's Initiative Characteristic is 
 • The Psyker Battery: if a friendly model with the Psyker Sub-type from the primary army is within 12" of a Daemon unit when it takes the test, the unit may re-roll a failed test.
 • Banished to the Warp: if a unit's Toughness is reduced to 0 by these penalties, its remaining models are removed from play as casualties.</description>
     </rule>
+    <rule name="Augmetic Transport Bay" hidden="false" id="fa2f-02ed-e09d-2c74">
+    <description>A model with this special rule may only be Embarked upon by models that previously had the Infantry Unit Type, but have had it replaced with the Automata Unit Type by The Flesh Is Weak (Oath of Vengeance and Wrath). A model with this special rule also increases its Transport Capacity by 3.
+    
+    A Legion Rhino Transport that gains this Special Rule may be selected as a Dedicated Transport for a Legion Tactical Squad or Legion Despoiler Squad composed of up to 15 models, rather than 10 models as is normally the case.</description>
+    </rule>
+    <rule id="6b27-b800-9297-4761" name="Independent Character" publicationId="e77a-823a-da94-16b9" page="241" hidden="false">
+    <description>Independent Characters can join other units. They cannot, however, join units that contain Vehicles, Dreadnoughts, Automata or any model with the Monstrous sub-type (unless the Independent Character also has that Unit Type or sub-type). They can join other Independent Characters though to form a powerful multicharacter unit.
+    
+    Joining and Leaving a Unit
+    An Independent Character can begin the game already with a unit, either by being deployed in unit coherency with it or, if the unit is in Reserve, by you informing your opponent which unit it has joined.
+    
+    In order to join a unit, an Independent Character simply has to move so that they are within unit coherency distance of a friendly unit at the end of their Movement phase. If the Independent Character is within unit coherency of more than one unit at the end of its Movement phase, the player must declare which unit it is joining. If an Independent Character does not intend to, or cannot, join a unit, it must, where possible, remain outside of unit coherency with that unit at the end of the Movement phase. This is to make clear whether they have joined a unit or not. Note that after an Independent Character joins a unit, that unit can Move no further that Movement phase.
+    An Independent Character can leave a unit during the Movement phase by moving out of unit coherency with it. They cannot join or leave during any other Phase – once shots are fired or Charges are declared.
+    
+    An Independent Character cannot leave a unit while either they or the unit are in Reserve, locked in combat, Falling Back or have been Pinned. They cannot join a unit that is in Reserve, locked in combat or Falling Back. If an Independent Character joins a unit, and all other models in that unit are killed, they again become a unit of one model at the start of the following Phase. While an Independent Character is part of a unit, they count as part of the unit for all rules purposes, though they still follow the rules for Characters.
+    
+    Special Rules
+    When an Independent Character joins a unit, it might have different special rules from those of the unit. Unless specified in the rule itself (as in the Stubborn special rule), the unit’s special rules are not conferred upon the Independent Character, and the Independent Character’s special rules are not conferred upon the unit. Special rules that are conferred to the unit only apply for as long as the Independent Character is with them.
+    
+    Independent Characters and Infiltrate
+    An Independent Character without the Infiltrate special rule cannot join a unit of Infiltrators during deployment, and vice versa.
+    
+    Independent Characters and Ongoing Effects
+    Sometimes, a unit that an Independent Character has joined will be the target of a beneficial or harmful effect, such as those bestowed by the Blind special rule, for example. If the Independent Character leaves the unit, both the Independent Character and the unit continue to be affected by the effect, so you’ll need to mark the Independent Character accordingly.
+    
+    Conversely, if an Independent Character joins a unit after that unit has been the target of an ongoing effect (or joins a unit after they themselves have been the target of an ongoing effect), benefits and penalties from that effect are not shared.</description>
+    </rule>
+    <rule id="6208-2b9a-b171-ef05" name="Line Sub-type" publicationId="e77a-823a-da94-16b9" page="196" hidden="false">
+    <description>• A unit that includes at least one model with the Line sub-type counts as both a Scoring and Denial unit.
+    Optional rule: Line (X) – When this unit holds an Objective at the end of its controlling player's turn, that player gains X Victory Points (even if they do not control that Objective), and at the end of the game they gain X Victory Points if the unit was not destroyed. A unit not listed as Line (X) is treated as having Line (1). A unit that is Pinned, Stunned, Falling Back or under any similar status gains no Victory Points from Line (X): it must be free of them at the end of the turn to score for holding an Objective, and at the end of the game to score for surviving.</description>
+    </rule>
+    <rule id="ef3b-a8ad-9b19-a8a9" name="Knights and Titans" publicationId="e77a-823a-da94-16b9" page="216" hidden="false">
+    <description>Very long. See 216. Summary from the Omega Coded:
+    Measuring:
+    - If model has a base, measure to base. If model does not, measure to the hull, except for when firing its weapons.
+    Movement:
+    - Ignore Difficult and Dangerous Terrain but may not end its move in Impassable Terrain.
+    - May move over enemy Infantry and Cavalry types but may not finish their movement within 1” of a model.
+    - May not Run.
+    - May not make Ram Attacks.
+    - If rammed, enemy vehicle always takes hits at Str10 and inflicts D3 HP of damage. If Knight or Titan survives the Ram, may attack the vehicle in the Assault phase.
+    Shooting:
+    - Always count as stationary, may fire Ordnance weapons with no effect on firing other weapons.
+    - May fire all weapons at different targets (must declare all targets before firing).
+    - Arm Mounted Weapon Arc: May fire in any Firing Arc, except the Hull (Rear). Count as Defensive weapons.
+    - Carapace Mounted Weapon Arc: May fire in any arc but may not target models within 12” of firing model.
+    Assault:
+    - May declare Charges.
+    - Cannot be locked in combat.
+    - Any hits are resolved against its Front AV.
+    - Gains +1 attack for each Melee weapon after the first
+    - In addition to normal attacks may make;
+    Stomp Attacks:
+    - Makes D3+unmodified Attack characteristic attacks, Resolved at initiative 1, AP2 with the model’s unmodified WS and STR.
+    - May not make Stomp Attacks against Super Heavy Vehicles, Lumbering Flyers, Knights and Titans or any model with 8+ wounds.
+    - May not Sweeping Advances, Pile-in Moves or Consolidations.
+    Damage:
+    - Any effects from Shaken, Stunned, Immobilised or Weapon Destroyed have no effect but lose HP as normal.
+    - If suffer an explodes result, lose D3 HP instead.
+    - Effects which permanently lower AV have no effect.
+    - Catastrophic Damage: When loses final HP, it explodes. Every model within 6+D6 measured from the hull takes a str7+d3 AP4 hit. Any units hit must immediately take a Pinning test.
+    Reactions:
+    - May only make Reactions in response to – Super Heavy Vehicles, Lumbering Flyers, Knights and Titans or any model with 8+ wounds.
+    - May not perform Death or Glory Reactions
+    
+    Any model with either the Knight or Titan Unit Type gain the Hammer of Wrath (3) Special Rule.
+    A Knight or Titan may make a Charge move against a model in area terrain, ignoring vertical distances - treat the model being charged as though it is on the ground floor for the purposes of charges. A Knight or Titan may make a melee attack against a model whose base is within 1&quot; horizontally of their own, regardless of vertical distance.
+    In addition, a Knight or Titan gains +2 Attacks for being equipped with two Melee weapons, instead of the normal +1 it would gain for having Two Weapons (page 184).</description>
+    </rule>
+    <rule id="d35d-0685-499b-8581" name="Fast Vehicles" hidden="true">
+    <description>When a Fast Vehicle moves, other than to pivot in place, it is always considered to have moved at Combat Speed regardless of how many inches it moves, unless it chooses to move Flat-out.
+    In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</description>
+    </rule>
+    <rule name="The Stage is Set" hidden="false" id="d40a-ea13-41fe-5c56" publicationId="7f9d-5e88-241d-e861" page="19">
+    <description>Before the start of the first turn, when placing units into Reserves, if Fulgrim Transfigured has not joined a unit and does not have a Retinue Squad, the controlling player may place Fulgrim Transfigured into Reserves and must declare to their opponent a Turn number from Turn 2 - 4, indicating on which of their own turns they will bring Fulgrim Transfigured into play from Reserves. At the start of the declared turn, the controlling player must place Fulgrim Transfigured wholly within 6&quot; of a unit with the Legiones Hereticus (Emperor’s Children) special rule, and not within 1&quot; of any enemy models. If this is not possible, Fulgrim Transfigured cannot be set up this turn, and the controlling player must attempt to deploy Fulgrim Transfigured again at the start of their following turn.
+    
+    
+    Until Fulgrim Transfigured is placed on the battlefield in this manner, all models in a Detachment he is part of have the Stubborn special rule.
+    Liber Panoptica: a model deployed by this rule counts as having arrived by Deep Strike Assault for Movement, Shooting Attacks and Charges.</description>
+    </rule>
+    <rule id="c1fa-0ed8-94b3-a337" name="Anathema Sub-type" publicationId="15a4-fc68-502d-48a9" page="129" hidden="false">
+    <description>The following rules apply to all models with the Anathema Sub-type:
+    • A unit that includes at least one model with the Anathema Sub-type may not be directly targeted by any Psychic Power or use any Psychic Power or make attacks with a Psychic Weapon. Psychic Powers whose effects would otherwise be applied to a unit that includes at least one model with the Anathema Sub-type (due to area of effect, scattering or other rules) have no effect, but are not cancelled and may continue to affect other units.
+    • A model with the Anathema Sub-type that is allocated Wounds caused by a Psychic Weapon (which is any weapon granted to a unit or model by a Psychic Discipline) will always fail to Wound without any dice being rolled and any special rules attached to that Psychic Weapon will not trigger. Any Wounds allocated to a model with the Anathema Unit Sub-type caused by a Force Weapon gain no benefit from the Force, Achean Force, or Soul Tear Special Rules, but are otherwise resolved as normal. These effects do not apply to a model with the Transport Sub-type that has models with the Anathema Sub-type Embarked within, unless the model with the Transport Sub-type also has the Anathema Sub-type.
+    • All models that do not have the Anathema Sub-type, but are part of a unit that includes one or more models with the Anathema Sub-type, suffer a penalty of -2 to their Leadership Characteristic, and models with the Anathema Sub-type suffer a penalty of -1 to their Leadership. Any unit with at least one model within 6" of a model with the Anathema Sub-type suffers a penalty of -1 to the Leadership of all models in that unit that do not also have the Anathema Sub-type, or -2 if that unit includes one or more models with the Corrupted or Psyker Sub-types, or the Daemon Unit Type. Note that these two penalties are not cumulative; they apply only the most severe penalty. However, they do stack with other Special Rules that modify Leadership (such as the Fear (X) Special Rule).
+    • A unit that is Embarked on a Vehicle, Fortification or Building suffers no penalties to its Leadership Characteristic due to the Anathema Sub-type. However, units with the Stubborn Special Rule do suffer penalties to their Leadership from the effects of this Sub-type (note that this only applies to the Stubborn Special Rule, and other special rules that ignore penalties to Leadership ignore the effects of the Anathema Sub-type).</description>
+    </rule>
+    <rule id="8e2d-7555-5680-ccda" name="Corrupted Sub-type" publicationId="09c5-eeae-f398-b653" page="307" hidden="false">
+    <description>The following rules apply to all models with the Corrupted Sub-type:
+    • All models with the Corrupted Unit Sub-type gain the Fear (1) Special Rule.
+    • Any Hits inflicted on a model with the Corrupted Unit Sub-type by a weapon with the Force or Psychic Focus Special Rules gain the Instant Death Special Rule.
+    • Any unit composed entirely of models with the Corrupted Unit Sub-type is immune to the effects of the Fear (X) Special Rule, automatically passes Regroup tests, and cannot choose to fail a Morale check due to the Our Weapons Are Useless Special Rule. When a unit composed entirely of models with the Corrupted Unit Sub-type fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no saves or Damage Mitigation rolls of any kind allowed.
+    • No unit that does not also have the Corrupted Unit Sub-type or the Daemon Unit Type may join a unit that includes one or more models with the Corrupted Unit Sub-type.</description>
+    </rule>
+    <rule name="Sycophantic Retinue" hidden="true" id="498c-cc24-ef86-4263" publicationId="7f9d-5e88-241d-e861" page="108">
+    <description>While Fulgrim Transfigured is on the battlefield, models with this special rule gain the Preferred Enemy (Everything) special rule.</description>
+    <modifiers>
+    <modifier type="set" value="false" field="hidden">
+    <conditions>
+    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a27-97d3-a06-ef35" type="equalTo"/>
+    </conditions>
+    </modifier>
+    </modifiers>
+    </rule>
+    <rule name="Ruinous Cybernetica" id="265f-5633-86da-f780" hidden="false" publicationId="4934-46f7-208b-b4af" page="151">
+    <description>At the start of the controlling player&apos;s Shooting phase, that player can make a Leadership test for any units made up entirely of models with this special rule.
+    
+    If that test is passed, until the end of the turn: 
+    
+    All models in the unit are not subject to the Programmed Behaviour provision, as detailed in the Cybernetica Unit Sub-type.
+    
+    At the start of the Charge sub-phase, a Charge must be declared for this unit if there is an enemy unit within 2&quot;, and the closest enemy unit must always be selected as the target of this Charge if possible (if multiple eligible units are equally distant then the controlling player must select one of those eligible units to be the target of the Charge).
+    
+    If that test is failed, the unit suffers one Wound, allocated by the controlling player. No Saving Throws or Damage Mitigation rolls of any kind may be made against this Wound.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="f52c-1f37-acd2-703c" name="Tartaros Terminator Armour" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
@@ -21064,6 +21179,6 @@ Only models with the Vehicle Unit Type and Flyer Sub-type may make the Combat Ai
     </profile>
   </sharedProfiles>
   <infoLinks>
-    <infoLink id="cf3c-4951-8835-0aeb" name="Fast Vehicles" targetId="2cbf-c1a1-844a-6456" type="rule"/>
+    <infoLink id="cf3c-4951-8835-0aeb" name="Fast Vehicles" targetId="d35d-0685-499b-8581" type="rule"/>
   </infoLinks>
 </gameSystem>

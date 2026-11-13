@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="57" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="58" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -2087,7 +2087,7 @@ Unless noted, the effects of any rules featured in the Provenance’s descriptio
               </constraints>
               <infoLinks>
                 <infoLink id="32f9-647c-31c6-9e6e" name="Militia Medicae" hidden="false" targetId="7b10-5286-071b-4776" type="profile"/>
-                <infoLink id="fbbc-071c-263e-a1b7" name="Militia Medicae Support" hidden="false" targetId="fef0-61ab-c1ec-1110" type="rule"/>
+                <infoLink id="fbbc-071c-263e-a1b7" name="Militia Medicae Support" hidden="false" targetId="1f7c-4a3f-e1a7-0b23" type="rule"/>
                 <infoLink id="c56f-7c73-4c7d-2ec9" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
                   <modifiers>
                     <modifier type="set" field="name" value="Battlesmith (6+)"/>
@@ -2328,7 +2328,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     </modifier>
                   </modifiers>
                 </infoLink>
-                <infoLink id="149f-3c6e-77cf-eef8" name="Militia Medicae Support" targetId="fef0-61ab-c1ec-1110" type="rule"/>
+                <infoLink id="149f-3c6e-77cf-eef8" name="Militia Medicae Support" targetId="1f7c-4a3f-e1a7-0b23" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="b9ab-6033-8791-a60b" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
@@ -2410,7 +2410,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     </modifier>
                   </modifiers>
                 </infoLink>
-                <infoLink id="7853-dc2f-2401-3bb7" name="Militia Medicae Support" targetId="fef0-61ab-c1ec-1110" type="rule"/>
+                <infoLink id="7853-dc2f-2401-3bb7" name="Militia Medicae Support" targetId="1f7c-4a3f-e1a7-0b23" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="f315-1696-b72a-d1c3" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
@@ -10843,7 +10843,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               </constraints>
               <infoLinks>
                 <infoLink id="576c-4898-12c5-ef43" name="Gunners" hidden="false" targetId="e8bd-ea2f-066c-a59f" type="profile"/>
-                <infoLink id="1060-0a3a-fba7-0be8" name="Man the Guns" targetId="1e01-7a98-dc6f-561f" type="rule"/>
+                <infoLink id="1060-0a3a-fba7-0be8" name="Man the Guns" targetId="6861-4c1f-d165-5249" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="1ece-126f-876a-b249" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
@@ -24966,6 +24966,16 @@ If taken as part of a Mortalis Assault Force Organisation Chart, a unit that inc
     </rule>
     <rule name="Household Retinue" id="3d09-eaf4-fba4-ec20" hidden="false">
       <description>Listed on this datasheet but not defined in the conversion doc.</description>
+    </rule>
+    <rule id="1f7c-4a3f-e1a7-0b23" name="Militia Medicae Support" publicationId="48c2-d023-0069-001a" page="22" hidden="false">
+    <description>A Militia Medicae Detachment is selected in the same way as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in an Imperialis Militia Medicae Detachment must be assigned to another unit from the same Detachment of the army they were selected as part of. Militia Medicae may only be assigned to units composed entirely of models with the Infantry Unit Type and Militia Unit Sub-type. No more than one Militia Medicae may be assigned to any given unit.
+    
+    Once assigned to a unit, the Militia Medicae is considered part of that unit and may not leave it under any circumstances – if that unit is removed as a casualty then the Militia Medicae is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Militia Medicae as a casualty. When assigned to a unit, a Militia Medicae gains all of the special rules (with the exception of those that specifically forbid it, such as the Bitter Duty special rule) and Unit Sub-types listed for the unit to which it is attached, but does not gain access to any additional Wargear options available to the unit to which it is assigned.
+    
+    Note that only Militia Medicae selected as part of a Detachment with the Ogryn Conscripts Provenance may be attached to Imperialis Militia Ogryn Brute Squads.</description>
+    </rule>
+    <rule id="6861-4c1f-d165-5249" name="Man the Guns" publicationId="48c2-d023-0069-001a" page="34" hidden="false">
+    <description>A Militia Heavy Ordnance Battery may only attack with a maximum number of Gun Carriages equal to the number of Militia Gunners in the unit when making a Shooting Attack. If the unit includes fewer Militia Gunners than it does Gun Carriages then only a number of Gun Carriages equal to the number of Militia Gunners may attack as part of a Shooting Attack – the controlling player may select which Gun Carriages may attack. If a Militia Heavy Ordnance Battery includes less than two Militia Gunners for each Gun Carriage then any attacks made by all Gun Carriages in the unit during a Shooting Attack are resolved at a Ballistic Skill of 1 and any result of a ‘Hit’ on the Scatter dice must be re-rolled. If a unit that includes a Gun Carriage is forced to Fall Back then all models in that unit are immediately removed as casualties instead.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>

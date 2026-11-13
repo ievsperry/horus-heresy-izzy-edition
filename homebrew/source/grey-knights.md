@@ -354,7 +354,7 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 | 2.0 slot | Grey Knights units |
 | --- | --- |
 | HQ | Grand Master, Brother-Captain, Aegis Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus, Supreme Grand Master Janus, Grand Masters Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron, Brotherhood Command Squad, Brotherhood Terminator Command Squad, Brotherhood Tartaros Command Squad (each also a Retinue) |
-| Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary, Aegis Bastion Squad (0-1), Purifier Bladeguard Squad (0-1), Servitors |
+| Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary (0-1), Aegis Bastion Squad (0-1), Purifier Bladeguard Squad (0-1), Servitors |
 | Troops | Strike Squad, Brotherhood Terminator Squad, Prognosticar Vanguard Squad, Watcher-in-the-Veil Squad |
 | Dedicated Transports | Rhino\*, Razorback\* |
 | Fast Attack | Interceptor Squad, Interceptor Terminator Squad, Grey Knight Dreadlancer Talon, Stormraven Gunship, Exactor Squad |
@@ -1763,7 +1763,7 @@ This unit may be taken as an HQ choice (it may not fill a compulsory HQ slot), o
 | – Psilencer | +10 points each |
 | – Incinerator | +10 points each |
 
-### Brother Apothecary — 65 pts
+### 0-1 Brother Apothecary — 65 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

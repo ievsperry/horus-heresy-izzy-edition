@@ -31,7 +31,8 @@ XENOS_ARMY_CATEGORY = ("3c8e-5a1d-9b47-e2f0", "Xenos Army")
 PTS = "d2ee-04cb-5f8a-2642"
 ALLIED_DETACHMENT = "d4f2-6da5-b6de-06ec"
 # Army-building limits a list's rules set that the doc's wording alone cannot carry: faction -> module in homebrew/
-FACTION_LIMITS = {"Traders Militant": "traders_militant_limits", "Grey Knights": "grey_knights_official"}
+FACTION_LIMITS = {"Traders Militant": "traders_militant_limits", "Grey Knights": "grey_knights_official",
+                  "Adepta Sororitas": "sororitas_rites"}
 
 UNIT_PROFILE = "4bb2-cb95-e6c8-5a21"
 # the characteristics of a unit profile, in the order of its stats
@@ -127,7 +128,13 @@ def load_gst_rules(path=GST_FILE):
     """Special rules defined in the game system, keyed by name without its '(X)' part."""
     ns = "{http://www.battlescribe.net/schema/gameSystemSchema}"
     rules = {}
-    for r in ET.parse(path).getroot().find(ns + "sharedRules"):
+    root = ET.parse(path).getroot()
+    # a rule a category carries (Independent Character, Line Sub-type) has a shared copy for official rule links;
+    # a homebrew unit gets the category instead, so the copy is not offered here
+    carried = {r.get("name") for c in root.iter(ns + "categoryEntry") for r in c.iter(ns + "rule")}
+    for r in root.find(ns + "sharedRules"):
+        if r.get("name") in carried:
+            continue
         rules[norm(re.sub(r"\s*\(X\+?\)$", "", r.get("name")))] = (r.get("id"), r.get("name"))
     return rules
 
@@ -2093,8 +2100,11 @@ class Builder:
         (Grey Knights): "Engines of Tithe: Dreadknight Talons may be selected as Elites choices in a Detachment
         using this Rite of War" is "Dreadknight Talons may be taken as Elites"."""
         s = re.sub(r"^[A-Z][\w'-]*(?: [\w'-]+){0,4}: (?=[A-Z])", "", text)  # "Engines of Tithe: "
-        s = re.sub(r"A Detachment using this Rite of War must include (?:an? )?(.+?) with the Master of the Legion "
-                   r"special rule, and this model must be the army['\u2019]s Warlord", r"Requires \1 as Warlord", s)
+        s = re.sub(r" \(or [^()]*\)", "", s)  # "(or Master of the Legion)", "a Dogmata (or Missionary)"
+        s = re.sub(r"A Detachment using this Rite of War must include (?:an? )?(.+?) with the (?:Master of the Legion|"
+                   r"Order Commander) special rule, and this model must be the army['\u2019]s Warlord", r"Requires \1 as Warlord", s)
+        s = re.sub(r"A Detachment using this Rite of War must include (?:an? )?(.+?) as the army['\u2019]s Warlord",
+                   r"Requires \1 as Warlord", s)  # "must include a Ministorum Priest or a Dogmata as the army's Warlord"
         s = re.sub(r"^No units in a Detachment using this Rite of War may be deployed inside or select (.+?)\.?$",
                    r"A Detachment using this Rite of War may not include any \1.", s)
         if s.startswith("A Detachment using this Rite of War"):
@@ -2755,7 +2765,9 @@ class Builder:
             return
         allowed_units, allowed_rules = [], []
         for name in re.split(r",\s*|\s+or\s+", m.group(1)):
-            name = re.sub(r"^(?:an?|the)\s+", "", name.strip())
+            name = re.sub(r"^(?:or\s+)?(?:an?|the)\s+", "", name.strip())  # "..., Junith Eruita, or a Canoness"
+            name = re.sub(r"^or\s+", "", name)
+            name = re.sub(r"\s+equipped with .+$", "", name)  # "a Canoness equipped with a Jump Pack"
             rule = re.search(r"\bwith (.+)$", name)
             if rule and not re.search(r"\bwings\b", rule.group(1)):
                 allowed_rules.append(rule.group(1))
@@ -4986,6 +4998,17 @@ class Builder:
             add_rule(unit, title, line, uid + line[:30])
             return
         inner = self.gst_inner_rules.get(norm(line))
+        if inner and norm(line) == norm("Independent Character"):
+            # the game system's rule lives in its Independent Character category, not its shared rules: a
+            # model in that category has the rule (and joins units as one), so the category is given instead
+            cat, cname = TYPE_CATEGORIES["Independent Character"]
+            models = [me for me in unit.findall("selectionEntries/selectionEntry") if me.get("type") == "model"]
+            chars = [me for me in models if any(c.get("targetId") == TYPE_CATEGORIES["Character"][0]
+                                                for c in me.findall("categoryLinks/categoryLink"))] or models
+            for me in chars:
+                if not any(c.get("targetId") == cat for c in me.findall("categoryLinks/categoryLink")):
+                    add_category(me, cat, cname, me.get("id"))
+            return
         if inner:  # a datasheet rule the game system defines inside one of its entries
             el(child(unit, "infoLinks"), "infoLink", name=inner[1], id=make_id(uid, "info", line), hidden=False,
                targetId=inner[0], type="rule")

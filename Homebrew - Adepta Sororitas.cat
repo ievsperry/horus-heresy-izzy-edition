@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3858-8951-c1f7-3986" name="Homebrew - Adepta Sororitas" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3858-8951-c1f7-3986" name="Homebrew - Adepta Sororitas" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="1bb1-1c40-9f73-9fdb" name="Adepta Sororitas for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Adepta Sororitas" />
   </publications>
@@ -53,16 +53,16 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
               <profiles>
                 <profile name="Martyrs' Vengeance" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="3830-91a1-b5b9-3304">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: a friendly unit within 6" of a unit with this Order is destroyed in close combat. The unit moves up to D6 plus its Initiative toward the enemy unit that destroyed it; if this brings it into base contact, it counts as having charged†.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, immediately after a friendly unit with the Adepta Sororitas faction trait within 6" of a friendly unit composed entirely of models with the Order (Our Martyred Lady) special rule is completely destroyed in close combat. Effect: Every model in the reacting unit may immediately make a move of up to D6 + its Initiative Characteristic in inches directly toward the enemy unit that destroyed the friendly unit. If this move brings any model in the reacting unit into base contact with an enemy model from that unit, it is locked in combat and counts as having made a successful Charge for that Assault phase.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Martyrs' Fury" id="6ad5-61ed-b80b-8669" hidden="false">
-                  <description>gain 2 Faith points instead of 1 through Martyrdom for this Order's units.</description>
+                <rule name="Blood of the Martyrs: Martyrs' Fury" id="c479-c259-b2ad-2366" hidden="false">
+                  <description>Whenever the controlling player gains Faith Points via the Martyrdom special rule as a result of a unit with the Order (Our Martyred Lady) special rule being destroyed, they gain 2 Faith Points instead of 1.</description>
                 </rule>
-                <rule name="Vengeance" id="b3e1-68a7-0f48-9c65" hidden="false">
-                  <description>the unit adds 1 to its Attacks in a turn in which a friendly unit within 6" was destroyed.</description>
+                <rule name="Blood of the Martyrs: Vengeance" id="4d1a-586c-1060-b298" hidden="false">
+                  <description>Models with the Order (Our Martyred Lady) special rule gain a +1 bonus to their Attacks Characteristic in any turn in which a friendly unit with the Adepta Sororitas faction trait within 6" of their unit was completely destroyed.</description>
                 </rule>
               </rules>
               <costs>
@@ -73,16 +73,16 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
               <profiles>
                 <profile name="Swift Redeployment" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="2dfc-c9dd-fe95-08fc">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Trigger: an enemy unit ends a move within 12" of an Argent Shroud unit. The unit moves up to D6 plus its Initiative Characteristic in inches in any direction.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Trigger: This Advanced Reaction may be declared in the Movement phase, after an enemy unit ends a move within 12" of a friendly unit composed entirely of models with the Order (Argent Shroud) special rule. Effect: Every model in the reacting unit may immediately make a move of up to D6 + its Initiative Characteristic in inches in any direction. This move may not bring any model within 1" of an enemy model, and does not prevent the unit from moving, shooting, or charging as normal in its own turn.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Selfless Heroism" id="9550-9429-d437-970e" hidden="false">
-                  <description>Sororitas characters may re-roll failed Look Out, Sir! rolls†.</description>
+                <rule name="Deeds, Not Words: Selfless Heroism" id="5138-f19c-d47f-9404" hidden="false">
+                  <description>Friendly models with the Character Unit Sub-type and the Order (Argent Shroud) special rule may re-roll failed Look Out, Sir! rolls.</description>
                 </rule>
-                <rule name="Silent Advance" id="0e3c-79df-7e18-664d" hidden="false">
-                  <description>the unit may Advance and still shoot in the same turn.</description>
+                <rule name="Deeds, Not Words: Silent Advance" id="fe75-17de-d494-292b" hidden="false">
+                  <description>Units composed entirely of models with the Order (Argent Shroud) special rule may make Shooting Attacks in the Shooting phase even if they made a Run move in the same Shooting phase (resolving those attacks as Snap Shots unless they possess a special rule that allows otherwise).</description>
                 </rule>
               </rules>
               <costs>
@@ -91,18 +91,18 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Order of the Bloody Rose" hidden="false" id="ea72-413b-bf9b-eeed" publicationId="1bb1-1c40-9f73-9fdb">
               <profiles>
-                <profile name="Bloody Counter-charge" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="463f-cee7-2d06-6d73">
+                <profile name="Bloody Counter-Charge" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="3b8c-3f98-ce6e-fae3">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: an enemy unit declares a charge against a Bloody Rose unit. Instead of firing Overwatch, the unit gains Counter-Charge (1) until the end of the phase†.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Order (Bloody Rose) special rule, before any Overwatch attacks are resolved. Effect: The reacting unit forfeits its ability to make an Overwatch reaction against the charging unit. Instead, every model in the reacting unit gains the Counter-Attack (1) special rule until the end of the current Assault phase.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Blood Price" id="d1b6-57f8-194a-8e64" hidden="false">
-                  <description>the unit may re-roll failed charge distance rolls.</description>
+                <rule name="Fury of Saint Mina: Blood Price" id="b4cd-22a9-2e73-25ed" hidden="false">
+                  <description>Units composed entirely of models with the Order (Bloody Rose) special rule may re-roll failed Charge Distance rolls.</description>
                 </rule>
-                <rule name="Furious Rage" id="1de1-94bc-39ff-3d3f" hidden="false">
-                  <description>the unit adds 1 to its Attacks in a turn in which it charged.</description>
+                <rule name="Fury of Saint Mina: Furious Rage" id="bee4-595a-911f-610f" hidden="false">
+                  <description>Models with the Order (Bloody Rose) special rule gain a +1 bonus to their Attacks Characteristic in any turn in which they made a successful Charge.</description>
                 </rule>
               </rules>
               <costs>
@@ -113,16 +113,16 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
               <profiles>
                 <profile name="Fire and Faith" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="8f76-9466-1f09-b5b2">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: an Ebon Chalice unit is selected as the target of a Shooting Attack. The unit makes a Return Fire Shooting Attack before the enemy attack is resolved, instead of after it.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, after an enemy unit selects a friendly unit composed entirely of models with the Order (Ebon Chalice) special rule as the target of a Shooting Attack, before any To Hit rolls are made. Effect: The reacting unit immediately makes a Return Fire Shooting Attack targeting the active enemy unit, resolving all shots before the enemy unit resolves its Shooting Attack (any casualties inflicted by this Return Fire attack are removed before the enemy unit rolls To Hit).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Ancient Rituals" id="c049-da72-bcb7-fb7e" hidden="false">
-                  <description>once per turn, you may spend Faith points on an Act of Faith for an Ebon Chalice unit even if that Act has already been used this turn.</description>
+                <rule name="Custodians of the First Covenant: Ancient Rituals" id="28d2-0cef-1857-1ca4" hidden="false">
+                  <description>Once per turn, the controlling player may spend Faith Points to perform an Act of Faith on a unit composed entirely of models with the Order (Ebon Chalice) special rule, even if that specific Act of Faith has already been performed by another unit during the same turn.</description>
                 </rule>
-                <rule name="Fervent Discipline" id="5198-d3fe-1123-af51" hidden="false">
-                  <description>in a turn in which it did not move, the unit may re-roll to-hit rolls of 1 with ranged weapons.</description>
+                <rule name="Custodians of the First Covenant: Fervent Discipline" id="ada3-a989-7290-ea90" hidden="false">
+                  <description>In a turn in which a unit composed entirely of models with the Order (Ebon Chalice) special rule did not move during the Movement phase (including disembarking or arriving from Reserves), models in that unit re-roll To Hit rolls of 1 when making Shooting Attacks.</description>
                 </rule>
               </rules>
               <costs>
@@ -133,16 +133,16 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
               <profiles>
                 <profile name="Unshakeable Line" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="0141-0cdb-7afd-f817">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: an enemy unit declares a charge against a Sacred Rose unit. The unit fires Overwatch with every model, adding 1 to its Ballistic Skill for the Overwatch, to a maximum of 5†.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Order (Sacred Rose) special rule, before any Overwatch attacks are resolved. Effect: Every model in the reacting unit may make an Overwatch Shooting Attack against the charging unit, adding +1 to its Ballistic Skill Characteristic for those Overwatch attacks (to a maximum of 5) instead of firing as Snap Shots.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Calm Under Fire" id="148c-29c7-9efd-5704" hidden="false">
-                  <description>the unit may re-roll failed Morale checks.</description>
+                <rule name="Spirit of Saint Arabella: Calm Under Fire" id="5571-31c5-de4e-8f49" hidden="false">
+                  <description>Units composed entirely of models with the Order (Sacred Rose) special rule may re-roll failed Morale checks.</description>
                 </rule>
-                <rule name="Serene Composure" id="66a9-a3b3-54dc-d204" hidden="false">
-                  <description>the unit adds 1 to its Leadership, to a maximum of 10.</description>
+                <rule name="Spirit of Saint Arabella: Serene Composure" id="6173-da2b-c233-ac9a" hidden="false">
+                  <description>Models with the Order (Sacred Rose) special rule gain a +1 bonus to their Leadership Characteristic (to a maximum of 10).</description>
                 </rule>
               </rules>
               <costs>
@@ -153,16 +153,16 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
               <profiles>
                 <profile name="Unbending Endurance" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="801e-09cf-2866-4e7d">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: a Valorous Heart unit is selected as the target of a Shooting Attack. Against that attack, the unit improves its Feel No Pain by a further 1, to a best of 4+.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, after an enemy unit selects a friendly unit composed entirely of models with the Order (Valorous Heart) special rule as the target of a Shooting Attack, before any To Hit rolls are made. Effect: Until the end of that Shooting Attack, all models in the reacting unit improve their Feel No Pain roll by an additional +1 (to a maximum of 4+).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Imperturbable" id="bebd-c741-dba8-0d0b" hidden="false">
-                  <description>the unit has Feel No Pain (6+), or improves an existing Feel No Pain by 1.</description>
+                <rule name="Stoic Suffering: Imperturbable" id="c6d0-2003-5113-f1b5" hidden="false">
+                  <description>Models with the Order (Valorous Heart) special rule gain the Feel No Pain (6+) special rule (or improve an existing Feel No Pain roll by +1, to a maximum of 4+).</description>
                 </rule>
-                <rule name="Penitent Bearing" id="eb2b-261e-1dfb-ffd0" hidden="false">
-                  <description>the unit may re-roll failed Pinning tests.</description>
+                <rule name="Stoic Suffering: Penitent Bearing" id="435f-a62e-dad8-5ac2" hidden="false">
+                  <description>Units composed entirely of models with the Order (Valorous Heart) special rule may re-roll failed Pinning tests.</description>
                 </rule>
               </rules>
               <costs>
@@ -178,11 +178,14 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Armoured Convent" hidden="false" id="20f3-4160-8f7e-e3c1" publicationId="1bb1-1c40-9f73-9fdb">
               <rules>
+                <rule name="Prerequisites" id="3edd-f499-085b-fce4" hidden="false">
+                  <description>A Detachment using this Rite of War must include Morvenn Vahl or a Canoness with the Order Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.</description>
+                </rule>
                 <rule name="Effects" id="912c-df2b-ed21-6913" hidden="false">
-                  <description>Paragon Warsuits may be taken as Troops and gain the Line sub-type, and Immolators gain Scout.</description>
+                  <description>Exemplars of the Convent: Paragon Warsuit Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected as a Compulsory Troops choice in this manner gains the Line Unit Sub-type. Vanguard of Flame: All Sororitas Immolators (including Dedicated Transports) in a Detachment using this Rite of War gain the Scout special rule. Sanctified Advance: All Vehicles with the Adepta Sororitas faction trait in a Detachment using this Rite of War gain the Smoke Launchers wargear upgrade at no additional points cost, and may re-roll failed Dangerous Terrain tests.</description>
                 </rule>
                 <rule name="Limitations" id="db00-3546-c750-cead" hidden="false">
-                  <description>Requires Morvenn Vahl or a Canoness as Warlord.   every Infantry unit must start the game embarked on a transport.</description>
+                  <description>Every unit in a Detachment using this Rite of War composed of models with the Infantry Unit Type (excluding models in Paragon Warsuits or Jump Infantry) must begin the battle embarked inside a Transport Vehicle (either a Dedicated Transport or a Heavy Support Transport such as a Repressor or Land Raider). Any Infantry unit that cannot be embarked inside a Transport during deployment may not be included in the Detachment. A Detachment using this Rite of War may not include any Fortification choices.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -193,12 +196,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Crusade of Faith" hidden="false" id="0457-ec4d-d05c-d8bf" publicationId="1bb1-1c40-9f73-9fdb">
+              <modifiers>
+                <modifier type="set" field="9f5f-70b6-4867-c033" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="028a-7999-cbf4-e7ec" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="0bc6-9a4d-e4a1-dc6d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="929b-2b4e-6189-ccfd" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="d5c4-66ce-d502-e1b7" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="d78e-429a-3f14-677e" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f5f-70b6-4867-c033" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
+                <rule name="Prerequisites" id="85c2-79e4-6848-d9b8" hidden="false">
+                  <description>A Detachment using this Rite of War must include Saint Celestine or a Canoness with the Order Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.</description>
+                </rule>
                 <rule name="Effects" id="6b82-11b6-471e-2ce3" hidden="false">
-                  <description>at the start of the game, gain D3 Faith points, and Sororitas units may perform two Acts of Faith per phase instead of one.</description>
+                  <description>Wellspring of Devotion: At the start of the first game turn, before any units are activated or moved, the controlling player immediately adds +D3 Faith Points to their Faith Pool. Fervour Unbound: Friendly units with the Adepta Sororitas faction trait in a Detachment using this Rite of War may attempt to perform up to two Acts of Faith per phase (instead of the normal limit of one), though a single unit may still only benefit from one Act of Faith per phase. Martyr's Resolve: While the army's Warlord is alive on the battlefield, friendly units composed entirely of models with the Adepta Sororitas faction trait within 12" of the Warlord gain the Stubborn special rule and re-roll failed Shield of Faith rolls of 1.</description>
                 </rule>
                 <rule name="Limitations" id="eefd-38d1-1058-75b7" hidden="false">
-                  <description>Requires a Canoness or Saint Celestine as Warlord.   no Penitent Engines, Mortifiers or Repentia.</description>
+                  <description>A Detachment using this Rite of War may not include any Penitent Engines, Mortifiers, Sisters Repentia, or Arco-flagellants, nor may it include any Ministorum Priests or Preachers. All Compulsory Troops choices in a Detachment using this Rite of War must be Battle Sisters Squads.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -210,11 +234,14 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Penitent Host" hidden="false" id="2272-ad17-ba5a-a39a" publicationId="1bb1-1c40-9f73-9fdb">
               <rules>
+                <rule name="Prerequisites" id="f464-40fa-c217-127d" hidden="false">
+                  <description>A Detachment using this Rite of War must include a Ministorum Priest or a Dogmata (or Missionary) as the army's Warlord.</description>
+                </rule>
                 <rule name="Effects" id="e260-c05d-ef45-9313" hidden="false">
-                  <description>Repentia Squads and Arco-flagellants may be taken as Troops and gain the Line sub-type, and Penitent Engines may be taken as Elites.</description>
+                  <description>Absolution in Blood: Sisters Repentia Squads and Arco-flagellant Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected as a Compulsory Troops choice in this manner gains the Line Unit Sub-type. Engines of Redemption: Penitent Engines (and Mortifiers) may be selected as Elites choices in addition to Heavy Support choices in a Detachment using this Rite of War. Zealous Frenzy: All Sisters Repentia, Arco-flagellants, Penitent Engines, and Mortifiers in a Detachment using this Rite of War gain the Rage (1) special rule and add +1 to their Charge Distance rolls while within 12" of a friendly Ministorum Priest, Dogmata, or Repentia Superior.</description>
                 </rule>
                 <rule name="Limitations" id="7ca9-f5cd-3804-58e4" hidden="false">
-                  <description>Requires a Ministorum Priest or Dogmata as Warlord.   the army may not include more Battle Sisters Squads than penitent units (Repentia, Arco-flagellants, Penitent Engines and Mortifiers).</description>
+                  <description>A Detachment using this Rite of War may not include more Battle Sisters Squads than total Penitent units (Sisters Repentia Squads, Arco-flagellant Squads, Penitent Engines, and Mortifiers) counted across all Force Organisation slots. A Detachment using this Rite of War may not select any Fortification choices, and may not include an Allied Detachment.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -226,43 +253,147 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Wings of the Saint" hidden="false" id="bf6d-f280-55be-1109" publicationId="1bb1-1c40-9f73-9fdb">
               <modifiers>
-                <modifier type="set" field="0973-6044-255d-6662" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="26b9-2f7d-5d16-a1b6" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="0ed9-8e64-9a3f-5a3d" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="028a-7999-cbf4-e7ec" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="9443-d7e0-7e8c-8627" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d78e-429a-3f14-677e" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="8d57-f98a-364d-2c1d" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7e3a-3a11-9a90-1a5f" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
+                <modifier type="set" field="0f2f-9370-ab2c-5f9e" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="028a-7999-cbf4-e7ec" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="26b9-2f7d-5d16-a1b6" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="7e3a-3a11-9a90-1a5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="d78e-429a-3f14-677e" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0973-6044-255d-6662" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ed9-8e64-9a3f-5a3d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9443-d7e0-7e8c-8627" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d57-f98a-364d-2c1d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f2f-9370-ab2c-5f9e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
+                <rule name="Prerequisites" id="75a8-4f22-6964-9ea5" hidden="false">
+                  <description>A Detachment using this Rite of War must include Saint Celestine, Junith Eruita, or a Canoness equipped with a Jump Pack with the Order Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.</description>
+                </rule>
                 <rule name="Effects" id="71c1-7c93-ee1d-973e" hidden="false">
-                  <description>Seraphim and Zephyrim Squads may be taken as Troops and gain the Line sub-type.</description>
+                  <description>Angelic Host: Seraphim Squads and Zephyrim Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected as a Compulsory Troops choice in this manner gains the Line Unit Sub-type. Descent of the Faithful: All units in a Detachment using this Rite of War composed entirely of models with the Jump Infantry Unit Sub-type (or the Flyer Unit Type) gain the Deep Strike special rule, and may re-roll scatter dice when arriving via a Deep Strike Assault. Empyrean Grace: Units composed entirely of models with the Jump Infantry Unit Sub-type in a Detachment using this Rite of War gain the Hit &amp; Run special rule and improve their Shield of Faith Invulnerable Save by +1 (to a maximum of 4+) during any turn in which they arrived via Deep Strike or made a successful Charge.</description>
                 </rule>
                 <rule name="Limitations" id="aa7d-b330-9faa-b6a7" hidden="false">
-                  <description>Requires a Canoness with a jump pack, Saint Celestine or Junith Eruita as Warlord.   no Heavy Support choices other than Exorcists.</description>
+                  <description>A Detachment using this Rite of War may not select any Heavy Support choices other than Exorcists. A Detachment using this Rite of War may not select any Fortification choices. All Compulsory Troops choices in a Detachment using this Rite of War must be Seraphim Squads or Zephyrim Squads.</description>
                 </rule>
               </rules>
               <categoryLinks>
                 <categoryLink targetId="d494-e450-d4aa-579a" id="3a00-3ecf-91b7-7427" primary="true" name="Rite of War:" />
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Cleansing Pyre" hidden="false" id="0491-d54c-d6bf-b00d" publicationId="1bb1-1c40-9f73-9fdb">
+              <modifiers>
+                <modifier type="set" field="7cb8-b789-e661-adf5" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="028a-7999-cbf4-e7ec" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="913a-909a-a322-ae7a" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="9657-dbba-b923-1d9e" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="c26f-7768-c989-99c3" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="d5c4-66ce-d502-e1b7" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="d78e-429a-3f14-677e" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fc6f-9801-ba29-7240" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cb8-b789-e661-adf5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <rules>
+                <rule name="Prerequisites" id="e2be-bbed-a75c-c87a" hidden="false">
+                  <description>A Detachment using this Rite of War must include a Canoness or Palatine with the Order Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.</description>
+                </rule>
+                <rule name="Effects" id="3c33-1523-8c92-76ba" hidden="false">
+                  <description>Heralds of the Flame: Dominion Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected as a Compulsory Troops choice in this manner gains the Line Unit Sub-type. Sacred Promethium: All Flamer, Heavy Flamer, Hand Flamer, and Immolation Flamer weapons fired by models in a Detachment using this Rite of War gain the Shred special rule and add +1 to their Strength Characteristic during any turn in which the firing unit did not arrive from Reserves. Wrath of the Melta: All Meltaguns, Multi-Meltas, and Inferno Pistols fired by models in a Detachment using this Rite of War increase the range at which they roll an additional D6 for Armour Penetration (their Melta range) by +3". Purge by Fire: Once per battle, at the start of any of the controlling player's Shooting phases, the Warlord may declare a Grand Conflagration. Until the end of that Shooting phase, all friendly units with the Adepta Sororitas faction trait within 12" of the Warlord gain the Ignores Cover special rule on all Shooting Attacks.</description>
+                </rule>
+                <rule name="Limitations" id="70d6-937e-a52b-89a5" hidden="false">
+                  <description>A Detachment using this Rite of War may not include any Zephyrim Squads, Seraphim Squads, or Jump Infantry units. A Detachment using this Rite of War may not include any Penitent Engines, Mortifiers, or Arco-flagellants. All Compulsory Troops choices in a Detachment using this Rite of War must be Dominion Squads or Battle Sisters Squads.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink targetId="d494-e450-d4aa-579a" id="604f-1810-e207-2932" primary="true" name="Rite of War:" />
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bastion of the Martyred Heart" hidden="false" id="f8c6-cb54-ff11-4005" publicationId="1bb1-1c40-9f73-9fdb">
+              <modifiers>
+                <modifier type="set" field="f074-b72f-96db-a70e" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="9657-dbba-b923-1d9e" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="9fab-84f4-7975-089e" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="fc6f-9801-ba29-7240" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f074-b72f-96db-a70e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <rules>
+                <rule name="Prerequisites" id="907a-b614-7e31-c39f" hidden="false">
+                  <description>A Detachment using this Rite of War must include Junith Eruita, Triumph of Saint Katherine, or a Canoness with the Order Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.</description>
+                </rule>
+                <rule name="Effects" id="cb9c-69e6-617a-e37a" hidden="false">
+                  <description>Shield of the Order: Celestian Sacresant Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected as a Compulsory Troops choice in this manner gains the Line Unit Sub-type. Unbroken Phalanx: Every unit in a Detachment using this Rite of War composed entirely of models with the Infantry Unit Type gains the Stubborn and Heart of the Legion special rules (granting Feel No Pain (6+)—or improving an existing Feel No Pain roll by +1, to a maximum of 4+—while within 3" of an Objective marker or friendly Fortification). Fury of the Fallen: Whenever a friendly unit with the Adepta Sororitas faction trait in this Detachment is reduced below half of its starting model count, all surviving models in that unit gain the Hatred (Everything) and Counter-Attack (1) special rules for the remainder of the battle. Sanctified Ground: A Detachment using this Rite of War may include up to two Fortification choices instead of the normal limit of one, and any Retributor Squads deployed within 3" of a friendly Fortification or Objective marker gain the Relentless special rule.</description>
+                </rule>
+                <rule name="Limitations" id="8268-f2ab-4a0c-125b" hidden="false">
+                  <description>No unit in a Detachment using this Rite of War may make Sweeping Advances in the Assault phase, nor may any unit deploy via Deep Strike or Outflank. A Detachment using this Rite of War may not select any Fast Attack choices. All Compulsory Troops choices in a Detachment using this Rite of War must be Battle Sisters Squads or Celestian Sacresant Squads.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink targetId="d494-e450-d4aa-579a" id="23d0-3592-836b-b0da" primary="true" name="Rite of War:" />
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shadows of the Sanctum" hidden="false" id="75f1-adfa-f983-c9b1" publicationId="1bb1-1c40-9f73-9fdb">
+              <modifiers>
+                <modifier type="set" field="dc74-a486-8c51-b8a5" value="0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="0046-9b0e-614b-f26a" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="028a-7999-cbf4-e7ec" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="06fd-9681-1bb2-487f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="26b9-2f7d-5d16-a1b6" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="7e3a-3a11-9a90-1a5f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="d78e-429a-3f14-677e" shared="true" includeChildSelections="true" includeChildForces="false" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc74-a486-8c51-b8a5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <rules>
+                <rule name="Prerequisites" id="4df8-1fef-f729-6170" hidden="false">
+                  <description>A Detachment using this Rite of War must include a Palatine or Canoness with the Order Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.</description>
+                </rule>
+                <rule name="Effects" id="fd29-f353-41eb-cf85" hidden="false">
+                  <description>Vanguard of the Faithful: Sisters Novitiate Squads and Dominion Squads in a Detachment using this Rite of War gain the Infiltrate and Move Through Cover special rules. Any Sisters Novitiate Squad selected as a Compulsory Troops choice gains the Line Unit Sub-type. Outflanking Strike: Any unit in a Detachment using this Rite of War composed entirely of models with the Infantry Unit Type (excluding models with the Heavy Unit Sub-type) or Dedicated Transports gains the Outflank special rule, and the controlling player may re-roll failed Reserves rolls for units arriving via Outflank. Ambush of the Righteous: During the first game turn, all friendly units with the Adepta Sororitas faction trait gain the Shrouded (5+) special rule, and enemy units suffer a -1 penalty to their Leadership Characteristic when taking Pinning tests caused by Shooting Attacks from units in this Detachment.</description>
+                </rule>
+                <rule name="Limitations" id="f365-9525-1e1a-aea9" hidden="false">
+                  <description>A Detachment using this Rite of War may not include any Heavy Support choices (including Exorcists, Castigators, or Retributor Squads), nor may it include any Paragon Warsuit Squads. A Detachment using this Rite of War may not select any Fortification choices, and may not include an Allied Detachment. All Compulsory Troops choices in a Detachment using this Rite of War must be Sisters Novitiate Squads or Dominion Squads.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink targetId="d494-e450-d4aa-579a" id="fb3e-6e7e-67e8-299b" primary="true" name="Rite of War:" />
               </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -299,6 +430,13 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Junith Eruita" hidden="false" id="de73-9070-d4b5-e7e1" type="selectionEntry" targetId="913a-909a-a322-ae7a">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="c630-f522-57ef-ae5a" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="feba-250e-3aae-b629" primary="false" name="Compulsory HQ:" />
@@ -320,6 +458,13 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Saint Celestine" hidden="false" id="785e-80b9-f4b5-9777" type="selectionEntry" targetId="c26f-7768-c989-99c3">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="4ded-a398-578b-e964" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="fb4e-9657-0c48-eac4" primary="false" name="Compulsory HQ:" />
@@ -348,6 +493,18 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Arco-flagellants" hidden="false" id="949c-74cb-ccf1-cd75" type="selectionEntry" targetId="d5c4-66ce-d502-e1b7">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0457-ec4d-d05c-d8bf" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="ced0-5b54-6683-144e" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="2f5d-cee7-2c87-fbf5" primary="false" name="Unit:" />
@@ -402,18 +559,39 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Ministorum Priest" hidden="false" id="a56f-28d2-84b7-a2c6" type="selectionEntry" targetId="929b-2b4e-6189-ccfd">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0457-ec4d-d05c-d8bf" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="e777-40c6-4633-4da3" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="eb82-1d96-0e7b-01a1" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Paragon Warsuits" hidden="false" id="e501-d2ab-77b8-7f8e" type="selectionEntry" targetId="0046-9b0e-614b-f26a">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="bb00-f5ea-4ffc-a1c6" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="d3c9-831a-5ad1-fe40" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Repentia Squad" hidden="false" id="e2bf-5ea3-0380-da37" type="selectionEntry" targetId="0bc6-9a4d-e4a1-dc6d">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0457-ec4d-d05c-d8bf" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="652d-454d-d84f-691b" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="3a69-f7e8-8a01-807f" primary="false" name="Unit:" />
@@ -426,6 +604,18 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Battle Sisters Squad" hidden="false" id="abe2-c4eb-0efa-c5d1" type="selectionEntry" targetId="9888-144b-d569-830a">
+      <modifiers>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="e856-a513-eb60-258e" primary="true" name="Troops:" />
         <categoryLink targetId="8f42-a824-fb5f-8fea" id="b407-2604-3228-5211" primary="false" name="Compulsory Troops:" />
@@ -433,6 +623,28 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Sisters Novitiate" hidden="false" id="a762-6204-17a2-f013" type="selectionEntry" targetId="87e5-9fee-bc07-434d">
+      <modifiers>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0457-ec4d-d05c-d8bf" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="b5eb-aab4-b458-0c1b" primary="true" name="Troops:" />
         <categoryLink targetId="8f42-a824-fb5f-8fea" id="71cd-5c38-1ca8-7c4c" primary="false" name="Compulsory Troops:" />
@@ -440,18 +652,49 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Dominion Squad" hidden="false" id="548e-6748-0562-7b54" type="selectionEntry" targetId="9fab-84f4-7975-089e">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="0ef4-69a4-cac2-c244" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="8864-f528-1760-c85f" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Seraphim Squad" hidden="false" id="f689-36b1-c357-78a7" type="selectionEntry" targetId="fc6f-9801-ba29-7240">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="4876-8120-52cf-de43" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="d536-b025-69d7-6f71" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Zephyrim Squad" hidden="false" id="6e48-12b7-cff6-2ae4" type="selectionEntry" targetId="9657-dbba-b923-1d9e">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="1817-6044-2997-e5a9" primary="true" name="Fast Attack:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="f3c3-b9af-709b-b074" primary="false" name="Unit:" />
@@ -464,6 +707,11 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="0500-dacb-e7b8-14e0" primary="true" name="Heavy Support:" />
@@ -471,6 +719,13 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Exorcist" hidden="false" id="9043-60cd-4876-4fae" type="selectionEntry" targetId="06fd-9681-1bb2-487f">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="ff6c-22af-db33-2903" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="f074-5bce-f4d0-3bce" primary="false" name="Unit:" />
@@ -480,7 +735,22 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0457-ec4d-d05c-d8bf" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
       </modifiers>
@@ -493,7 +763,22 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0457-ec4d-d05c-d8bf" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
       </modifiers>
@@ -507,6 +792,11 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
       </modifiers>
@@ -528,6 +818,36 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <condition type="atLeast" value="1" field="selections" scope="force" childId="20f3-4160-8f7e-e3c1" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0457-ec4d-d05c-d8bf" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="4602-18ae-3724-dfa6" primary="true" name="Troops:" />
@@ -540,6 +860,26 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="2272-ad17-ba5a-a39a" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
       </modifiers>
@@ -556,6 +896,31 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <condition type="atLeast" value="1" field="selections" scope="force" childId="2272-ad17-ba5a-a39a" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="4012-5edc-b561-8407" primary="true" name="Troops:" />
@@ -563,7 +928,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         <categoryLink targetId="36c3-e85e-97cc-c503" id="f159-4484-5c26-5b6a" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Penitent Engines" hidden="true" id="bddc-0c47-4f00-9469" type="selectionEntry" targetId="d78e-429a-3f14-677e">
+    <entryLink import="true" name="Penitent Engines" hidden="true" id="ced2-0912-dc8d-0747" type="selectionEntry" targetId="d78e-429a-3f14-677e">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -575,10 +940,48 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="0529-4ec9-7df1-9f65" primary="true" name="Elites:" />
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="251d-f5b4-bdb6-7da5" primary="false" name="Unit:" />
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="095f-d6be-700c-32dc" primary="true" name="Elites:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="6a38-8584-f65e-a039" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mortifiers" hidden="true" id="77c0-5ba9-41ec-d54b" type="selectionEntry" targetId="028a-7999-cbf4-e7ec">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2272-ad17-ba5a-a39a" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="01a2-2454-b3a0-ae24" primary="true" name="Elites:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="091c-4b27-be79-369d" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Seraphim Squad" hidden="true" id="2063-292f-f222-3e7b" type="selectionEntry" targetId="fc6f-9801-ba29-7240">
@@ -586,6 +989,31 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
       </modifiers>
@@ -602,11 +1030,93 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="3a12-f0ae-93c8-fb9a" primary="true" name="Troops:" />
         <categoryLink targetId="8f42-a824-fb5f-8fea" id="81ac-3271-6eaa-c515" primary="false" name="Compulsory Troops:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="e000-e767-0df6-cc37" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Dominion Squad" hidden="true" id="3566-8a8d-967f-147d" type="selectionEntry" targetId="9fab-84f4-7975-089e">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="0e59-b491-2bd0-215c" primary="true" name="Troops:" />
+        <categoryLink targetId="8f42-a824-fb5f-8fea" id="f8cd-51a2-5f87-34e3" primary="false" name="Compulsory Troops:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="79b5-d20e-4fa8-2470" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Celestian Sacresants" hidden="true" id="47c0-91a3-f3d7-7694" type="selectionEntry" targetId="6fcf-aa97-f17c-57dd">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="c39f-b5c2-1a87-bc4c" primary="true" name="Troops:" />
+        <categoryLink targetId="8f42-a824-fb5f-8fea" id="54d2-863d-4c6a-ed63" primary="false" name="Compulsory Troops:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="584d-1945-a9cf-f214" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Dominion Squad" hidden="true" id="2ee7-3fbf-b095-ba05" type="selectionEntry" targetId="9fab-84f4-7975-089e">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="73c3-e9d2-b789-8f5c" primary="true" name="Troops:" />
+        <categoryLink targetId="8f42-a824-fb5f-8fea" id="d0fe-ac10-325b-43b2" primary="false" name="Compulsory Troops:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="32be-fde3-507a-2d64" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1612,9 +2122,35 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Independent Character" id="f78b-1ae9-779d-917d" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule" />
         <infoLink name="Order (X)" id="4993-c395-2650-fe1f" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="357d-9e15-0214-106d" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="e826-abc1-6b7d-8ad8" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="33eb-5122-b51f-57a2" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="5015-f0ea-70a1-2ae0" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="99f8-0f86-368e-600c" primary="false" name="Unit:" />
@@ -1646,6 +2182,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="e40f-8ca5-08a1-4adb" primary="false" name="Infantry Unit Type" />
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="a33b-5af1-edca-6f10" primary="false" name="Character" />
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="292a-9ad2-70b0-3090" primary="false" name="Unique Sub-type" />
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="5e0b-8234-a55d-a9dc" primary="false" name="Independent Character" />
           </categoryLinks>
           <entryLinks>
             <entryLink import="true" name="Blade of Vigil (Thurga)" hidden="false" id="00b8-2dfb-bca8-d658" type="selectionEntry" targetId="4340-fd7d-edf0-c2c0">
@@ -1680,6 +2217,21 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                 <modifier type="set" field="b623-c6c4-fd8e-bb83" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="b623-c6c4-fd8e-bb83" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="b623-c6c4-fd8e-bb83" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="b623-c6c4-fd8e-bb83" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1736,6 +2288,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="f81a-906c-f8e2-533b" primary="false" name="Infantry Unit Type" />
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="42ed-ce4b-fc37-04c9" primary="false" name="Character" />
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="0611-732a-9a00-2423" primary="false" name="Unique Sub-type" />
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="cf55-e714-6243-edc7" primary="false" name="Independent Character" />
           </categoryLinks>
           <entryLinks>
             <entryLink import="true" name="Warlord" hidden="false" id="8d9e-0f97-238e-15e3" type="selectionEntry" targetId="0176-56a3-d590-b103">
@@ -1758,6 +2311,21 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                 <modifier type="set" field="52f3-09b5-69fb-acc8" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="52f3-09b5-69fb-acc8" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="52f3-09b5-69fb-acc8" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="52f3-09b5-69fb-acc8" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1801,9 +2369,36 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Independent Character" id="521f-4c63-cde9-1fc9" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule" />
+        <infoLink name="Order Commander" id="fc5e-e2c3-f4e9-0970" hidden="false" targetId="da2f-f399-f68f-7fd3" type="rule" />
         <infoLink name="Order (X)" id="672c-095e-ef14-db2b" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="c08b-98c4-1d36-8fa6" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="1fee-a181-a46b-ade8" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="1725-b083-d2f0-98de" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="81a8-4fd3-8dd2-8cea" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="8436-5ac2-e69e-4401" primary="false" name="Unit:" />
@@ -1834,6 +2429,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="a777-275e-0c99-3188" primary="false" name="Infantry Unit Type" />
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="9489-1881-b9c2-2594" primary="false" name="Character" />
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="7e86-ab86-cd2a-ec8b" primary="false" name="Independent Character" />
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange bolt pistol" hidden="false" id="e93b-7ed7-48b3-5e44" defaultSelectionEntryId="77ef-83f2-f61d-340a">
@@ -2030,11 +2626,6 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2272-ad17-ba5a-a39a" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
-                <modifier type="set" field="6058-76d4-de93-6bd6" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6058-76d4-de93-6bd6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -2083,7 +2674,6 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <modifier type="set" field="name" value="Adamantium Will (3+)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Independent Character" id="be8a-13f2-d9c7-2aea" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule" />
         <infoLink name="Invulnerable Save (X)" id="1ee1-6817-30fb-1316" hidden="false" targetId="3340-8300-cc17-3aa4" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Invulnerable Save (4+)" />
@@ -2091,6 +2681,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         </infoLink>
         <infoLink name="Order (X)" id="9a68-caf3-2ae0-c1bc" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="79e9-b4db-5f0d-3cc2" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="eac3-ac56-6ff2-7069" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="59d7-78b6-70f8-be2c" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="870a-6c28-10a4-3c3a" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="753a-2355-ccf0-65ec" primary="false" name="Unit:" />
@@ -2122,6 +2739,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="1eec-76ca-9917-51a9" primary="false" name="Infantry Unit Type" />
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="63fa-df51-6fcb-3db8" primary="false" name="Character" />
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="4697-a911-10c1-f597" primary="false" name="Unique Sub-type" />
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="09e8-06ba-c9d6-87e6" primary="false" name="Independent Character" />
           </categoryLinks>
           <entryLinks>
             <entryLink import="true" name="Deliverance (Ephrael Stern)" hidden="false" id="b9e4-97b7-aa22-7956" type="selectionEntry" targetId="774d-8f7c-e4ef-0efc">
@@ -2162,6 +2780,21 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                 <modifier type="set" field="bfb5-b2c2-d922-bb2a" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="bfb5-b2c2-d922-bb2a" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="bfb5-b2c2-d922-bb2a" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="bfb5-b2c2-d922-bb2a" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2207,13 +2840,57 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Independent Character" id="a533-9c27-b722-4292" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule" />
         <infoLink name="Order (X)" id="611d-4645-ed22-56e0" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Order (Our Martyred Lady)" />
           </modifiers>
         </infoLink>
         <infoLink name="Shield of Faith" id="1d00-0087-94f0-0400" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Deep Strike" id="3bc4-84b3-ce17-cee1" hidden="true" targetId="f1e1-986f-c783-ca9e" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hit &amp; Run" id="ff56-fcbb-8dda-1114" hidden="true" targetId="5986-e960-d432-affd" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stubborn" id="5015-cb3c-b5d5-5cc7" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="2e97-0243-93e3-4ea3" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="91e2-3806-f8ee-8e54" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="28d9-2d64-e3ec-47b7" primary="false" name="Unit:" />
@@ -2245,6 +2922,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="a5de-d5cb-d011-236a" primary="false" name="Infantry Unit Type" />
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="7b6e-9435-cf62-ade5" primary="false" name="Character" />
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="c14f-80f1-2b14-c067" primary="false" name="Unique Sub-type" />
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="0454-5d3d-6929-6356" primary="false" name="Independent Character" />
           </categoryLinks>
           <entryLinks>
             <entryLink import="true" name="Bolt pistol" hidden="false" id="246a-1d7f-19b2-6344" type="selectionEntry" targetId="e5ae-6872-37aa-8600">
@@ -2286,6 +2964,16 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                 <modifier type="set" field="c5fe-f67e-41d4-74a8" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2272-ad17-ba5a-a39a" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c5fe-f67e-41d4-74a8" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c5fe-f67e-41d4-74a8" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2339,6 +3027,24 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       <infoLinks>
         <infoLink name="Order (X)" id="9bf0-c3b6-0c4b-9f18" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="9482-59c7-9c9e-d49a" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="f9d2-1705-f498-c70c" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="de59-62c6-bab0-d985" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="c3ae-9dfa-7885-8ca1" primary="false" name="Unit:" />
@@ -2414,6 +3120,21 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
+                <modifier type="set" field="c9cc-e8b8-53c2-490e" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c9cc-e8b8-53c2-490e" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c9cc-e8b8-53c2-490e" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9cc-e8b8-53c2-490e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -2455,9 +3176,36 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Independent Character" id="4f21-bea6-5e12-23b0" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule" />
+        <infoLink name="Order Commander" id="3fe9-538b-997d-b1bc" hidden="false" targetId="da2f-f399-f68f-7fd3" type="rule" />
         <infoLink name="Order (X)" id="1aa6-94c6-6e22-9a3b" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="0b00-018d-d4a2-13d4" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="4679-9188-7c74-d294" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="549e-6b51-5a7f-2344" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="d3ea-5a36-443a-d8b1" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="8a09-fa58-16db-3d3a" primary="false" name="Unit:" />
@@ -2488,6 +3236,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="6711-a6cd-04b8-dcd7" primary="false" name="Infantry Unit Type" />
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="3572-b6bc-92e1-a080" primary="false" name="Character" />
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="1b22-bc6a-b226-82bf" primary="false" name="Independent Character" />
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange bolt pistol" hidden="false" id="6707-fcbd-24d8-6c01" defaultSelectionEntryId="79a9-d304-4337-fa64">
@@ -2626,6 +3375,11 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
+                <modifier type="set" field="36b1-32f0-05d4-de9b" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36b1-32f0-05d4-de9b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -2688,6 +3442,42 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         </infoLink>
         <infoLink name="Order (X)" id="c47a-72e5-3e47-5580" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="184b-8962-bfaa-451d" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Hit &amp; Run" id="5e71-6981-00f7-52fd" hidden="true" targetId="5986-e960-d432-affd" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stubborn" id="85ff-7a5c-4664-468e" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="cbee-e9b6-c84d-4384" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="ed93-d175-26ee-c257" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="bf27-1216-e023-777c" primary="false" name="Unit:" />
@@ -2749,6 +3539,21 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                 <modifier type="set" field="00df-2215-51fb-2971" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="2272-ad17-ba5a-a39a" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="00df-2215-51fb-2971" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="00df-2215-51fb-2971" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="00df-2215-51fb-2971" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2854,6 +3659,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         </infoLink>
         <infoLink name="Order (X)" id="420c-9cea-903d-9cc7" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="e430-941b-b61f-fded" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="35b5-c829-7bd9-5661" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="35cb-6a51-1852-4412" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="6b43-25e2-1631-d99e" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="4371-baeb-8df8-262b" primary="false" name="Unit:" />
@@ -3018,6 +3850,21 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
+                <modifier type="set" field="14aa-80f5-4011-ece6" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="14aa-80f5-4011-ece6" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="14aa-80f5-4011-ece6" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14aa-80f5-4011-ece6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -3142,6 +3989,24 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         </infoLink>
         <infoLink name="Order (X)" id="3137-1a80-e3bf-75b7" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="a856-e956-7eef-7c1e" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="6639-3c41-31ec-59cd" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="5d91-d2a6-27e4-88dc" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="4d09-c1a1-cd73-8be2" primary="false" name="Unit:" />
@@ -3216,6 +4081,16 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
+                <modifier type="set" field="e00c-8426-80bc-9d39" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e00c-8426-80bc-9d39" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e00c-8426-80bc-9d39" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -3269,6 +4144,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </rules>
       <infoLinks>
         <infoLink name="Order (X)" id="047b-a1bf-57aa-2fde" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
+        <infoLink name="Stubborn" id="bd5f-40a7-967e-412a" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="9e10-43b6-76fe-6a4d" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="eeb1-5561-9de2-994e" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="52fd-5120-641e-efc5" primary="false" name="Unit:" />
@@ -3354,6 +4256,21 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
+                <modifier type="set" field="3e6b-aa9f-d3b3-625b" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="3e6b-aa9f-d3b3-625b" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="3e6b-aa9f-d3b3-625b" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e6b-aa9f-d3b3-625b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -3413,6 +4330,43 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <modifier type="set" field="name" value="Rage (2)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Rage (X)" id="81ef-7d7c-d29d-c551" hidden="true" targetId="564d-3550-ae44-2f99" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rage (1)" />
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2272-ad17-ba5a-a39a" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stubborn" id="08ae-0f7a-c0bd-c1ae" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="8f69-7e35-f19a-a489" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="0131-1925-4a1f-2ec0" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="557a-29a3-db88-a470" primary="false" name="Unit:" />
@@ -3469,6 +4423,13 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Celestian Sacresants" hidden="false" id="6fcf-aa97-f17c-57dd" publicationId="1bb1-1c40-9f73-9fdb">
+      <modifiers>
+        <modifier type="add" field="category" value="6399-5c65-7833-1025">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule name="Bodyguard" id="ef1c-f9ec-74fd-f311" hidden="false">
           <description>An Independent Character who joins the unit may allocate wounds to the Sacresants as Look Out, Sir! on a 2+</description>
@@ -3487,12 +4448,46 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           </modifiers>
         </infoLink>
         <infoLink name="Shield of Faith" id="43c1-64b1-4221-2b39" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="d9ce-6c7d-cd66-1574" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="6d1b-be7f-3526-0496" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="388e-17b2-566d-f427" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="ad97-0886-79ae-a624" primary="false" name="Unit:" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Celestian Sacresant" hidden="false" id="1981-34f9-2c29-9059" publicationId="1bb1-1c40-9f73-9fdb">
+          <modifiers>
+            <modifier type="add" field="category" value="6399-5c65-7833-1025">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="d8f4-cdcb-c62a-7645" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="85ba-565f-f9a1-c3c3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -3567,6 +4562,13 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Sacresant Superior" hidden="false" id="c0cf-529a-2d22-9629" publicationId="1bb1-1c40-9f73-9fdb">
+          <modifiers>
+            <modifier type="add" field="category" value="6399-5c65-7833-1025">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c574-fc9f-cf8b-db46" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fc4-7de7-8a8e-dfc1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -3666,6 +4668,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           </modifiers>
         </infoLink>
         <infoLink name="Shield of Faith" id="190c-3ee5-9110-27af" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="a004-d46f-49ba-8541" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="249a-0067-585a-dd33" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="7c11-f8ca-563b-fd6f" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="7fae-7784-c6f6-aca8" primary="false" name="Unit:" />
@@ -4013,6 +5042,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </rules>
       <infoLinks>
         <infoLink name="Order (X)" id="2b33-0d2c-b2ff-d78d" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
+        <infoLink name="Stubborn" id="184c-998d-2130-c4ac" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="00e9-73b7-1bcb-8507" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="7841-f0f4-b643-2a8a" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="304c-dd64-3bf5-f09a" primary="false" name="Unit:" />
@@ -4105,6 +5161,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <modifier type="set" field="name" value="Precision Strikes (5+)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Stubborn" id="18e7-6d4c-0064-d02f" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="7aaa-efc1-b788-b2c4" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="f4eb-c924-5796-a3c6" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="5395-33fa-989f-6cae" primary="false" name="Unit:" />
@@ -4163,6 +5246,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       <infoLinks>
         <infoLink name="Order (X)" id="33d6-0568-10ae-b70a" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="dd15-a8dc-c129-eea7" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="524f-8be8-3bf1-019a" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="26b8-5e9c-891b-e8ca" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="fe82-b4c8-2aea-9c4e" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="ec75-ec6f-eec8-3497" primary="false" name="Unit:" />
@@ -4244,6 +5354,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       <infoLinks>
         <infoLink name="Order (X)" id="6ab7-93c6-d95d-8ccf" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="9dfb-5465-88fa-2631" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="26b4-b20c-c332-1863" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="5dd8-b367-f285-b2fb" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="7d85-e669-6250-fe03" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="3b38-6f2f-8822-fec2" primary="false" name="Unit:" />
@@ -4323,6 +5460,21 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
+                <modifier type="set" field="0108-1fb3-be6e-267d" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="0108-1fb3-be6e-267d" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="0108-1fb3-be6e-267d" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0108-1fb3-be6e-267d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4365,6 +5517,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       <infoLinks>
         <infoLink name="Order (X)" id="df44-4433-7388-d326" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="d0bf-2883-6fc3-7d96" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="2bd2-bcea-bd82-553a" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="d419-2ffe-6385-9b7d" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="f36a-df1e-7ac3-2e7d" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="e5ee-3a53-21b9-4e50" primary="false" name="Unit:" />
@@ -4446,6 +5625,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       <infoLinks>
         <infoLink name="Order (X)" id="cc86-0862-7efe-516e" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="2e79-f225-5253-a3b9" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="8949-79c3-bb62-5597" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="ec75-bb50-d8ff-433e" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="3625-2ed7-5e55-4ab3" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="5401-ab0a-04d3-88b5" primary="false" name="Unit:" />
@@ -4529,6 +5735,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </rules>
       <infoLinks>
         <infoLink name="Order (X)" id="9787-7d4f-69b4-6f22" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
+        <infoLink name="Stubborn" id="d97f-dc3a-7d82-2e68" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="5a6e-ba4c-e526-ae9a" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="049b-45d4-8118-ee0b" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="77e6-1af1-d805-934b" primary="false" name="Unit:" />
@@ -4672,6 +5905,21 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
+                <modifier type="set" field="2053-94ee-b979-800b" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="2053-94ee-b979-800b" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="2053-94ee-b979-800b" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2053-94ee-b979-800b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4721,6 +5969,24 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         </infoLink>
         <infoLink name="Order (X)" id="7264-3caf-5ad0-52ea" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="1019-4c3b-2000-8ca3" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="c88c-2aa2-0893-81ee" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="fe9f-1deb-fac5-74de" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="00db-efe2-4065-498d" primary="false" name="Unit:" />
@@ -4994,6 +6260,43 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <modifier type="set" field="name" value="Rage (2)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Rage (X)" id="4fa4-3d0f-d7fa-7c5b" hidden="true" targetId="564d-3550-ae44-2f99" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rage (1)" />
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2272-ad17-ba5a-a39a" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stubborn" id="35a7-3772-2517-ba66" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="48d5-cd97-9da9-9400" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="1378-34e8-9d9a-2d65" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="2442-34e4-2a84-94fd" primary="false" name="Unit:" />
@@ -5009,7 +6312,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           </modifiers>
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="80bc-2aad-5fca-1298" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="4e5b-9dac-2ddd-33ac" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="4e5b-9dac-2ddd-33ac" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
             <profile name="Sister Repentia" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="ea97-cbb3-8732-cffe" publicationId="1bb1-1c40-9f73-9fdb">
@@ -5119,6 +6422,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           </modifiers>
         </infoLink>
         <infoLink name="Order (X)" id="1c4f-cc3a-afc1-e8c3" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
+        <infoLink name="Stubborn" id="732a-d967-9991-a777" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="41eb-a7bb-f81c-f5a2" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="23a7-26f2-2891-9001" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="6ddf-80c0-097a-4216" primary="false" name="Unit:" />
@@ -5372,6 +6702,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       <infoLinks>
         <infoLink name="Order (X)" id="30ec-0733-4d86-37db" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="5b9b-d9f9-f6dd-1bfd" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="3449-7780-eb88-a6b6" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="83b1-ae76-9753-edf4" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="5499-9627-dda6-481e" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="8316-965d-f6ac-d224" primary="false" name="Unit:" />
@@ -5733,6 +7090,13 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sisters Novitiate" hidden="false" id="87e5-9fee-bc07-434d" publicationId="1bb1-1c40-9f73-9fdb">
+      <modifiers>
+        <modifier type="add" field="category" value="6399-5c65-7833-1025">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule name="Eager to Prove" id="aafb-5f02-baff-2af3" hidden="false">
           <description>The unit has Rage (2)</description>
@@ -5746,6 +7110,51 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         </infoLink>
         <infoLink name="Order (X)" id="eeba-c2e7-66ed-536d" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="21ad-edb6-826c-a3a5" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="26a9-b512-3a7b-d1ae" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="eb67-c789-95fd-e22f" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Infiltrate" id="1408-1a48-73fc-4619" hidden="true" targetId="0e32-5b92-a95a-8464" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Move Through Cover" id="2e90-7ea3-f943-b1f4" hidden="true" targetId="2b6f-bfec-759e-1746" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="aa22-e43a-d32c-8d68" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="92cc-3a79-a0b3-77f7" primary="false" name="Unit:" />
@@ -6009,6 +7418,15 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Outflank" id="1ef2-2034-0094-4f8d" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="d432-bd40-0e1f-6ed3" primary="false" name="Unit:" />
@@ -6169,6 +7587,15 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </rules>
       <infoLinks>
         <infoLink name="Order (X)" id="01ee-b87d-519f-e6ca" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
+        <infoLink name="Outflank" id="b6e4-3111-91b6-8a91" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="13d1-bad3-d6f6-5428" primary="false" name="Unit:" />
@@ -6280,6 +7707,13 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dominion Squad" hidden="false" id="9fab-84f4-7975-089e" publicationId="1bb1-1c40-9f73-9fdb">
+      <modifiers>
+        <modifier type="add" field="category" value="6399-5c65-7833-1025">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule name="Vanguard of the Faith" id="1829-74e2-ada1-c4a1" hidden="false">
           <description>The unit may re-roll to-wound rolls of 1 against units within 12"</description>
@@ -6289,12 +7723,64 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         <infoLink name="Order (X)" id="1f00-ca92-d9f7-b05a" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Scout" id="1144-0e1e-f361-fff3" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule" />
         <infoLink name="Shield of Faith" id="903b-7e13-9d3c-1097" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="058f-325e-13fd-1133" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="dfe3-8a36-5a93-db30" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Infiltrate" id="8ec4-4988-0f5e-2c87" hidden="true" targetId="0e32-5b92-a95a-8464" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Move Through Cover" id="bbe7-bdc1-0a25-94c5" hidden="true" targetId="2b6f-bfec-759e-1746" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="70ec-e5a0-b705-b3ba" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="8cb7-21fe-2906-564d" primary="false" name="Unit:" />
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Dominion" hidden="false" id="e027-4341-de53-7eb1" publicationId="1bb1-1c40-9f73-9fdb">
+          <modifiers>
+            <modifier type="add" field="category" value="6399-5c65-7833-1025">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8916-357a-e374-8549" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="947c-b675-05f9-440d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6406,6 +7892,13 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Dominion Superior" hidden="false" id="0abb-a916-caea-c285" publicationId="1bb1-1c40-9f73-9fdb">
+          <modifiers>
+            <modifier type="add" field="category" value="6399-5c65-7833-1025">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="0491-d54c-d6bf-b00d" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c080-a2bf-de67-0e84" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8733-fa0d-511a-2d71" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6569,6 +8062,42 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         <infoLink name="Deep Strike" id="c507-89dd-75bc-f5e0" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
         <infoLink name="Order (X)" id="4b0f-b1af-cb3d-c29c" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="653f-b4a9-ece6-57d4" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Hit &amp; Run" id="4c75-9483-03cd-5690" hidden="true" targetId="5986-e960-d432-affd" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stubborn" id="7e76-d5f3-c165-1dd9" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="8ae6-22d9-04aa-3e75" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="dac1-1b14-7b2e-dfec" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="4338-4c6f-d301-3db7" primary="false" name="Unit:" />
@@ -6856,6 +8385,42 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         </infoLink>
         <infoLink name="Order (X)" id="ccfa-9752-343d-d1d2" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="79dd-ff7f-8a8a-63a3" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Hit &amp; Run" id="845a-c49a-ccec-4403" hidden="true" targetId="5986-e960-d432-affd" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bf6d-f280-55be-1109" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stubborn" id="3f81-7614-2643-807a" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="5a91-542b-c779-1fd8" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="a93e-9b25-ee82-8fbf" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="07ef-e12c-bf3e-7e50" primary="false" name="Unit:" />
@@ -7350,6 +8915,34 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <modifier type="set" field="name" value="Rage (2)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Rage (X)" id="c819-7f9d-2e46-9c3d" hidden="true" targetId="564d-3550-ae44-2f99" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rage (1)" />
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2272-ad17-ba5a-a39a" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stubborn" id="dee6-f980-18ad-6230" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="c579-b529-bb0e-10f6" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="b341-6582-8074-0758" primary="false" name="Unit:" />
@@ -7590,6 +9183,34 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
             <modifier type="set" field="name" value="Rage (2)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Rage (X)" id="d03d-49a2-d0c6-e2dc" hidden="true" targetId="564d-3550-ae44-2f99" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rage (1)" />
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2272-ad17-ba5a-a39a" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stubborn" id="fd3e-b715-94d8-641a" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="d8ef-3595-0c84-8c0c" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="4474-1164-530d-0204" primary="false" name="Unit:" />
@@ -7671,6 +9292,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
       <infoLinks>
         <infoLink name="Order (X)" id="5c47-4ca4-1915-7ef0" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="5b18-80cf-fc84-a2b7" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="3468-72e6-3cbd-e772" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="ab30-78b4-8b1b-f46e" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="403c-c7b6-463d-08ff" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="2c68-562d-9b48-6661" primary="false" name="Unit:" />
@@ -7935,6 +9583,33 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
         </infoLink>
         <infoLink name="Order (X)" id="1785-54ec-8b36-20ea" hidden="false" targetId="c81d-97d6-8640-e9c3" type="rule" />
         <infoLink name="Shield of Faith" id="fffd-aa83-14aa-919e" hidden="false" targetId="5251-be94-c535-6673" type="rule" />
+        <infoLink name="Stubborn" id="b936-0f93-08b7-469a" hidden="true" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heart of the Legion" id="0444-ce81-a06e-087b" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8c6-cb54-ff11-4005" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Outflank" id="396d-ad58-22e1-a5cd" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="75f1-adfa-f983-c9b1" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="b3aa-dec8-b05d-697a" primary="false" name="Unit:" />
@@ -8538,7 +10213,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           <profiles>
             <profile name="Executioner of Heretics" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="5963-88fc-6ebc-167d">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit she joins have Hatred against every enemy unit, and Preferred Enemy (Psykers). In addition, your army may make one additional reaction in your opponent's Shooting phase, above its normal Reaction Allotment.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and any unit she joins, gains the Hatred (Everything) special rule. In addition, the Warlord and any unit she joins gain the Preferred Enemy (Psykers) special rule against any unit containing at least one model with the Psyker Unit Sub-type. Furthermore, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8556,7 +10231,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           <profiles>
             <profile name="Indomitable Belief" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="5fac-d7c6-6f81-9026">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">At the start of each of your turns, gain 1 additional Faith point while the Warlord is on the battlefield. In addition, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">At the start of each of the controlling player's turns, while a Warlord with this Trait is deployed on the battlefield (and has not been removed as a casualty or embarked within a Transport), the controlling player immediately adds +1 Faith Point to their Faith Pool. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8574,7 +10249,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           <profiles>
             <profile name="Pure of Will" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="169f-9498-c1d5-f59a">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord has Adamantium Will (4+), and enemy psykers within 12" of her suffer Perils of the Warp on any double. In addition, your army may make one additional reaction in your opponent's Movement phase, above its normal Reaction Allotment.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Adamantine Will (4+) special rule (or improves an existing Adamantine Will roll by +1, to a maximum of 2+). Furthermore, whenever an enemy model with the Psyker Unit Sub-type attempts to make a Psychic check while within 12" of a Warlord with this Trait, that model suffers Perils of the Warp on any double rolled on the 2D6 Psychic check (rather than only on double 1s or double 6s). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8599,7 +10274,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           <profiles>
             <profile name="Inspirational Martyr" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="42e1-0e39-4d97-a58e">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If the Warlord is slain, gain D3+1 Faith points, and every friendly unit within 12" gains Rage (2) for the rest of the game.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If a Warlord with this Trait is removed as a casualty, the controlling player immediately gains D3+1 Faith Points, and every friendly unit composed entirely of models with the Adepta Sororitas faction trait within 12" of the Warlord's last position gains the Rage (2) special rule for the remainder of the battle. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8624,7 +10299,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           <profiles>
             <profile name="Quiet Fury" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="d723-b7f0-4bad-4c5b">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit she joins gain Scout.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and any unit she joins, gains the Scout special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8649,7 +10324,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           <profiles>
             <profile name="Beacon of Rage" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="0ee1-b1ba-cdc0-deeb">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit she joins gain Rage (2) and Furious Charge (1).</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and any unit she joins, gains the Rage (2) and Furious Charge (1) special rules. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8674,7 +10349,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           <profiles>
             <profile name="Keeper of the Rites" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="5dbc-299d-4ecb-1bbc">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Once per turn, the Warlord may perform an Act of Faith on her own unit without spending a Faith point.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Once per turn, a Warlord with this Trait may perform an Act of Faith on her own unit without spending any Faith Points from the Faith Pool. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8699,7 +10374,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           <profiles>
             <profile name="Serene Leader" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="ef6a-2556-4059-bd91">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Friendly Sororitas units within 12" of the Warlord use her Leadership.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Friendly units composed entirely of models with the Adepta Sororitas faction trait within 12" of a Warlord with this Trait may use the Warlord's Leadership Characteristic for all Morale, Pinning, and Regroup tests. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8724,7 +10399,7 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           <profiles>
             <profile name="Iron Penitent" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="1a5f-ffd5-b445-6940">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit she joins have Feel No Pain (5+), or improve an existing Feel No Pain by 1.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and any unit she joins, gains the Feel No Pain (5+) special rule (or improves an existing Feel No Pain roll by +1, to a maximum of 4+). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8739,11 +10414,17 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
+    <rule name="Order Commander" id="da2f-f399-f68f-7fd3" hidden="false" publicationId="1bb1-1c40-9f73-9fdb">
+      <description>A model with this special rule counts as having the Master of the Legion special rule for the Prerequisites of a Rite of War: a Detachment may take a Rite of War that requires it while this model is the army's Warlord.</description>
+    </rule>
     <rule name="Shield of Faith" id="5251-be94-c535-6673" hidden="false" publicationId="1bb1-1c40-9f73-9fdb">
       <description>The model has a 6+ Invulnerable Save. Models that already have an Invulnerable Save improve it by 1 instead, to a best of 4+.</description>
     </rule>
     <rule name="Order (X)" id="c81d-97d6-8640-e9c3" hidden="false" publicationId="1bb1-1c40-9f73-9fdb">
-      <description>When building an army, choose one Order for each detachment. Every unit in that detachment gains Order (X), where X is the chosen Order. Saint Celestine, Morvenn Vahl and the Triumph of Saint Katherine may join any Order. Junith Eruita may only join Our Martyred Lady.</description>
+      <description>When selecting an army, the controlling player must select a single Order Militant for each Detachment with the Adepta Sororitas faction trait. Every model in that Detachment replaces the 'X' in its Order (X) special rule with the chosen Order (e.g., Order (Our Martyred Lady)).
+
+• Special Character Restrictions: Models with the Order (Any) special rule (such as Saint Celestine, Morvenn Vahl, and the Triumph of Saint Katherine) may be included in a Detachment of any Order, and adopt that Detachment's Order for the duration of the battle. Models with a fixed Order (such as Junith Eruita, who has Order (Our Martyred Lady)) may only be included in a Detachment matching their specific Order.
+• Order Advanced Reactions: Each Order Militant grants access to a unique Advanced Reaction, which is available only to units composed entirely of models with that specific Order (X) special rule. Unless otherwise stated, an Order Advanced Reaction is available in addition to the core Reactions and Righteous Retribution, and costs 1 point of the controlling player's Reaction Allotment in the appropriate phase.</description>
     </rule>
     <rule name="Invulnerable Save (X)" id="3340-8300-cc17-3aa4" hidden="false" publicationId="1bb1-1c40-9f73-9fdb">
       <description>The model has an Invulnerable Save of X, which may be taken against any Wound instead of its armour save.</description>
