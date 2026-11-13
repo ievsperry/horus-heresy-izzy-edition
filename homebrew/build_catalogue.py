@@ -1270,11 +1270,13 @@ class Builder:
             return
         pool = named if " or " in inner else list(self.disciplines)
         two = "one other" in inner or norm(inner).startswith("two of")  # "(two of Dominus, Sanctic or ...)"
+        upto = re.match(r"up to (two|three|four) of", norm(inner))  # "(up to three of Dominus, ...)": 1 to 3
+        lo, hi = (1, NUMBER_WORDS[upto.group(1)]) if upto else ((2, 2) if two else (1, 1))
         gkey = make_id(m["id"], "disciplines")
         g = el(groups, "selectionEntryGroup", name="Psychic Disciplines",
                hidden=False, id=gkey)
-        add_constraint(g, "min", 2 if two else 1, gkey + "min")
-        add_constraint(g, "max", 2 if two else 1, gkey + "max")
+        add_constraint(g, "min", lo, gkey + "min")
+        add_constraint(g, "max", hi, gkey + "max")
         gl = el(g, "entryLinks")
         for n in pool:
             self.link(gl, self.disciplines[n], n, gkey, maximum=1,
@@ -2882,9 +2884,12 @@ class Builder:
         is the Warlord and may not select any other'): the trait is taken once the model is the Warlord,
         in place of the Warlord Traits pick."""
         sec = next((sub for s in self.sections for sub in [s] + s["subs"] if sub["title"] == f"Warlord: {name}"), None)
-        if sec is None:  # "Warlord: Ghazghkull must be your Warlord" is not a trait
+        # or a sub-faction's own trait ("Warlord: First Among Equals", the 1st Brotherhood's): its text
+        line = next((m.group(1) for s in self.sections for sub in [s] + s["subs"] for l in sub["lines"]
+                     for m in [re.match(r"\*\*Warlord Trait: " + re.escape(name) + r"\.\*\* (.+)", l)] if m), None)
+        if sec is None and line is None:  # "Warlord: Ghazghkull must be your Warlord" is not a trait
             return
-        text = " ".join(paragraphs(sec["lines"]))
+        text = " ".join(paragraphs(sec["lines"])) if sec is not None else line
         mid = me.get("id")
         links = me.find("entryLinks")
         pick = links.find(f"entryLink[@id='{make_id(mid, 'warlord traits')}']") if links is not None else None
@@ -3192,6 +3197,21 @@ class Builder:
             self.rule_option_picks(e, name, eid)
             self.upgrades[k] = eid
         return self.upgrades[k]
+
+    def unique_limits(self):
+        """A unit with a model of the Unique Sub-type may be taken once per force, as official Unique characters
+        are (Constantin Valdor): unless the doc already limits it."""
+        cat = TYPE_CATEGORIES["Unique"][0]
+        links = self.root.find("entryLinks")
+        for unit in self.shared_entries.findall("selectionEntry[@type='unit']"):
+            if not any(c.get("targetId") == cat for c in unit.iter("categoryLink")):
+                continue
+            uid = unit.get("id")
+            holders = [unit] + [l for l in (links if links is not None else []) if l.get("targetId") == uid]
+            if any(c.get("type") == "max" and float(c.get("value")) <= 1 and c.get("scope") in ("force", "roster")
+                   for h in holders for c in h.findall("constraints/constraint")):
+                continue
+            add_constraint(unit, "max", 1, make_id(uid, "unique"), scope="force", children=True)
 
     def rule_option_picks(self, e, name, eid):
         """An option that is a rule saying "This model must select one Minor Psychic Power and one Psychic
@@ -5242,6 +5262,7 @@ class Builder:
         self.exact_named_rules()
         self.specialist_rules()
         self.discipline_rules()
+        self.unique_limits()
         if self.faction in FACTION_LIMITS:
             importlib.import_module(FACTION_LIMITS[self.faction]).apply(self)
         self.root.append(self.shared_entries)

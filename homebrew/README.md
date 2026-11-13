@@ -229,14 +229,25 @@ loading. The script prints anything in the doc it could not place.
   Troops may fill Compulsory slots. A "**Brotherhood Trait: X.**" line names its Brotherhood's rules
   ("Fury of the Vanguard: Unwavering"). The 0-1 Aegis Bastion Squad (Elites) wears Aegis-Cataphractii
   Terminator armour; only its Warden-Justicar is a Brotherhood Psyker, so a rule or "Psychic Discipline (...)"
-  marked "(Warden-Justicar only)" gives the discipline pick to that model alone. The Aegis Captain (HQ) may take the Aegis Bastion Squad as a
+  marked "(Warden-Justicar only)" gives the discipline pick to that model alone. The Brotherhood Command Squad (Aegis artificer armour), Brotherhood Terminator Command Squad
+  (Aegis Terminator armour) and Brotherhood Tartaros Command Squad are taken only as a Retinue of a model with Master of the Legion (not the Grand Master in Nemesis
+  Dreadknight), each such leader holding a "Retinue" group (grey_knights_official.py retinues()). The Aegis Captain (HQ) may take the Aegis Bastion Squad as a
   Retinue: like an official Legion leader's Command Squad, it is a "Retinue" group in his entry and uses no Force
   Organisation slot (grey_knights_official.py), and the squad's 0-1 limit counts it however it is taken. The 0-1 Purifier Bladeguard Squad (Elites) has
   Purifying Flame (Assault Variant), named so as not to clash with the Sanctic psychic weapon, and Soul Blaze, an
   army rule (2.0 has none); its Knight of the Flame alone is a Brotherhood Psyker. Its 0-1 limit is lifted in a
   Detachment whose Brotherhood is the 8th (grey_knights_official.py), and Soul Blaze hits gain Rending (6+) against
-  Daemon, Corrupted, Corrupted Engine and Malefic models. Dreadfists, nemesis daemon hammers and nemesis greatswords are
+  Daemon, Corrupted, Corrupted Engine and Malefic models. The Grand Master, Grand Master in Nemesis
+  Dreadknight, Brother-Captain, Castellan Crowe, Kaldor Draigo and the Aegis Captain have Master of the Legion, so they can lead a Rite;
+  For the Rites' prerequisites, Janus and the founding Grand Masters count as
+  Grand Masters and the Aegis Captain as a Brother-Captain (RITE_LEADERS). Characters bound to a Brotherhood (Stern, Voldus and the founding Grand Masters Koios to Khyron) show
+  only in a Detachment of that Brotherhood (BROTHERHOOD_ONLY in grey_knights_official.py). Supreme Grand Master Janus
+  picks up to three disciplines ("Psychic Discipline (up to three of ...)") and carries every minor power. A
+  "Warlord: X" rule may name a Brotherhood's own trait ("Warlord: First Among Equals"): the model takes that trait
+  when it is the Warlord, in place of the pick. Dreadfists, nemesis daemon hammers and nemesis greatswords are
   Unwieldy (3).
+- A unit with a model of the Unique Sub-type may be taken once per force, as official Unique characters are
+  (Constantin Valdor): the builder adds that limit unless the doc already sets one (unique_limits).
 - Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,
   which gives its units Order (X) with that Order's rules, Advanced Reaction and Warlord Trait. The army's Faith
   system (Acts of Faith, Gaining Faith, Miracles, and the table of Acts) and the Unit Types notes are on the army

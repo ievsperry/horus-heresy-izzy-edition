@@ -19,13 +19,19 @@ and the Teleport Harness links the game system's Deep Strike rule.
 The Rites of War that bar these kinds of unit bar the official ones too: Purifier Crusade (no Land Raiders) hides
 the official Land Raiders, and Teleport Assault (no Dedicated Transports) hides the Rhino.
 
-The Aegis Captain may take an Aegis Bastion Squad as a Retinue (no Force Organisation slot), as an official
-Legion leader takes a Command Squad.
+Every model with Master of the Legion (but the Grand Master in Nemesis Dreadknight) may take a Brotherhood
+Command Squad, Terminator Command Squad or Tartaros Command Squad as a Retinue (no Force Organisation slot), as an official
+Legion leader takes a Command Squad; the Aegis Captain may take an Aegis Bastion Squad instead.
 
 The 0-1 Purifier Bladeguard Squad has no limit in a Detachment whose Brotherhood is the 8th.
 
+Characters bound to a Brotherhood (Stern, Voldus and the founding Grand Masters) show only in a Detachment of
+that Brotherhood.
+
 Grey Knights are always Loyalist: a force that picks the Traitor allegiance may not take the Grey Knights army
 entry (BattleScribe reports it as over its limit)."""
+import re
+
 from build_catalogue import PTS, SLOTS, TYPE_CATEGORIES, UNIT_CATEGORY, add_constraint, child, el, make_id
 
 LIBRARY = ("6393-649c-7213-a327", "Legions Astartes")
@@ -106,10 +112,14 @@ def teleport_harness(b, e, target, models):
 
 
 def loyalist_only(b):
-    """The Aegis Captain may take an Aegis Bastion Squad as a Retinue (no Force Organisation slot), as an official
-Legion leader takes a Command Squad.
+    """Every model with Master of the Legion (but the Grand Master in Nemesis Dreadknight) may take a Brotherhood
+Command Squad, Terminator Command Squad or Tartaros Command Squad as a Retinue (no Force Organisation slot), as an official
+Legion leader takes a Command Squad; the Aegis Captain may take an Aegis Bastion Squad instead.
 
 The 0-1 Purifier Bladeguard Squad has no limit in a Detachment whose Brotherhood is the 8th.
+
+Characters bound to a Brotherhood (Stern, Voldus and the founding Grand Masters) show only in a Detachment of
+that Brotherhood.
 
 Grey Knights are always Loyalist: with Traitor chosen in the force, the army entry may not be taken."""
     army = b.root.find(f"selectionEntries/selectionEntry[@id='{make_id('army', b.faction)}']")
@@ -119,19 +129,36 @@ Grey Knights are always Loyalist: with Traitor chosen in the force, the army ent
        childId=TRAITOR, shared=True, includeChildSelections=True, includeChildForces=False)
 
 
-def aegis_retinue(b):
-    """The Aegis Captain takes an Aegis Bastion Squad as his Retinue, as an official Legion leader takes a
-    Command Squad: a "Retinue" group in his own entry, so the squad uses no Force Organisation slot. The
-    squad's "0-1" limit is on the squad itself, so a Detachment has one at most, however it is taken."""
-    cap = b.shared_entries.find(f"selectionEntry[@id='{b.units['Aegis Captain']}']")
-    sid = b.units["Aegis Bastion Squad"]
-    squad = b.shared_entries.find(f"selectionEntry[@id='{sid}']")
-    gid = make_id(cap.get("id"), "retinue")
-    g = el(child(cap, "selectionEntryGroups"), "selectionEntryGroup", name="Retinue", hidden=False, id=gid)
-    add_constraint(g, "max", 1, gid + "max")
-    el(child(g, "entryLinks"), "entryLink", import_=True, name=squad.get("name"), hidden=False,
-       id=make_id(gid, "squad"), type="selectionEntry", targetId=sid)
-    add_constraint(squad, "max", 1, make_id(sid, "one per force"), scope="force", children=True)
+COMMAND_SQUADS = ["Brotherhood Command Squad", "Brotherhood Terminator Command Squad",
+                  "Brotherhood Tartaros Command Squad"]
+NO_RETINUE = ["Grand Master in Nemesis Dreadknight"]  # infantry may not join a Dreadknight
+
+
+def retinues(b):
+    """Retinue Squads, as an official Legion leader takes a Command Squad: every model with Master of the Legion
+    (but the Grand Master in Nemesis Dreadknight) has a "Retinue" group in his own entry holding the three Command
+    Squads, and the Aegis Captain the Aegis Bastion Squad too, so a Retinue uses no Force Organisation slot. The
+    Command Squads are taken only this way; the Aegis Bastion Squad's 0-1 limit is on the squad, so a Detachment
+    has one at most, however it is taken."""
+    squads = [b.units[n] for n in COMMAND_SQUADS]
+    links = b.root.find("entryLinks")
+    for link in list(links):
+        if link.get("targetId") in squads:
+            links.remove(link)
+    bastion = b.units["Aegis Bastion Squad"]
+    squad = b.shared_entries.find(f"selectionEntry[@id='{bastion}']")
+    add_constraint(squad, "max", 1, make_id(bastion, "one per force"), scope="force", children=True)
+    for ds in b.datasheets:
+        if "Master of the Legion" not in ds["rules"] or ds["name"] in NO_RETINUE:
+            continue
+        lead = b.shared_entries.find(f"selectionEntry[@id='{b.units[ds['name']]}']")
+        gid = make_id(lead.get("id"), "retinue")
+        g = el(child(lead, "selectionEntryGroups"), "selectionEntryGroup", name="Retinue", hidden=False, id=gid)
+        add_constraint(g, "max", 1, gid + "max")
+        for sid in squads + ([bastion] if ds["name"] == "Aegis Captain" else []):
+            s = b.shared_entries.find(f"selectionEntry[@id='{sid}']")
+            el(child(g, "entryLinks"), "entryLink", import_=True, name=s.get("name"), hidden=False,
+               id=make_id(gid, s.get("name")), type="selectionEntry", targetId=sid)
 
 
 def purifier_bladeguard(b):
@@ -148,10 +175,57 @@ def purifier_bladeguard(b):
                    childId=eighth, shared=True, includeChildSelections=True, includeChildForces=False)
 
 
+BROTHERHOOD_ONLY = {"Brother-Captain Stern": ["3rd"], "Grand Master Voldus": ["3rd"], "Grand Master Koios": ["1st"],
+                    "Grand Master Satre": ["2nd"], "Grand Master Iapto": ["3rd"], "Grand Master Yotun": ["4th"],
+                    "Grand Master Epimetheus": ["5th"], "Grand Master Ogen": ["6th"],
+                    "Grand Master Khyron": ["7th", "8th"]}
+
+
+def brotherhood_only(b):
+    """Characters bound to a Brotherhood (Stern and Voldus the 3rd, each founding Grand Master his own) show only
+    in a Detachment whose Brotherhood is one of theirs."""
+    ids = {e.get("name", "").split(" ")[0]: e.get("id") for e in b.root.iter("selectionEntry")
+           if re.match(r"\d(st|nd|rd|th) Brotherhood", e.get("name", ""))}
+    for name, nths in BROTHERHOOD_ONLY.items():
+        uid = b.units[name]
+        for link in b.root.find("entryLinks"):
+            if link.get("targetId") != uid:
+                continue
+            link.set("hidden", "true")
+            m = el(child(link, "modifiers"), "modifier", type="set", field="hidden", value="false")
+            conds = el(el(el(m, "conditionGroups"), "conditionGroup", type="or"), "conditions")
+            for n in nths:
+                el(conds, "condition", type="atLeast", value=1, field="selections", scope="force",
+                   childId=ids[n], shared=True, includeChildSelections=True, includeChildForces=False)
+
+
+FOUNDERS = ["Supreme Grand Master Janus", "Grand Master Koios", "Grand Master Satre", "Grand Master Iapto",
+            "Grand Master Yotun", "Grand Master Epimetheus", "Grand Master Ogen", "Grand Master Khyron"]
+RITE_LEADERS = {"Paladin Retinue": FOUNDERS, "Teleport Assault": FOUNDERS, "Purifier Crusade": ["Aegis Captain"]}
+
+
+def rite_leaders(b):
+    """Janus and the founding Grand Masters count as Grand Masters, and the Aegis Captain as a Brother-Captain, for
+    the Rites' prerequisites: their Warlord option is not barred while that Rite is chosen."""
+    for rite, leaders in RITE_LEADERS.items():
+        rid = next(e.get("id") for e in b.root.iter("selectionEntry") if e.get("name") == rite)
+        for name in leaders:
+            unit = b.shared_entries.find(f"selectionEntry[@id='{b.units[name]}']")
+            for link in unit.iter("entryLink"):
+                if link.get("name") != "Warlord":
+                    continue
+                mods = link.find("modifiers")
+                for m in list(mods if mods is not None else []):
+                    if any(c.get("childId") == rid for c in m.iter("condition")):
+                        mods.remove(m)
+
+
 def apply(b):
     loyalist_only(b)
-    aegis_retinue(b)
+    retinues(b)
     purifier_bladeguard(b)
+    brotherhood_only(b)
+    rite_leaders(b)
     harness = b.shared_entries.find("selectionEntry[@name='Teleport Harness']")
     el(child(harness, "infoLinks"), "infoLink", name="Deep Strike", id=make_id(harness.get("id"), "deep strike"),
        hidden=False, targetId=DEEP_STRIKE, type="rule")
