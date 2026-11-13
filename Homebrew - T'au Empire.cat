@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="36" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="37" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -700,19 +700,6 @@
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="da21-b5e7-26e6-603d" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="52ee-2329-74be-c0f9" primary="false" name="Unit:" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Crisis Bodyguards" hidden="false" id="c5c7-e452-ec90-e8e7" type="selectionEntry" targetId="1ebd-e776-6ef5-7dff">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="eac8-ddaf-f8c3-8efd" primary="true" name="Elites:" />
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="4329-dbca-9a44-8d59" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Darkstrider" hidden="false" id="b14f-6acb-ee31-f6d2" type="selectionEntry" targetId="c951-ad19-7bc8-7075">
@@ -1439,14 +1426,53 @@
         <profile name="Honour blade" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="14b6-bad2-ec33-539d" publicationId="733a-d454-80f2-c90e">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Rending (5+), Reach (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Two-handed" id="b4c7-84fa-78d0-151a" hidden="false" targetId="4c23-e863-a569-7617" type="rule" />
+        <infoLink name="Rending (X)" id="b1d7-d809-9c50-51e7" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (5+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Reach (X)" id="6a3e-5968-3b37-9ece" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Reach (1)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Equalizer" hidden="false" id="0853-ca05-df4a-1118" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Equalizer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a867-6572-171c-e915" publicationId="733a-d454-80f2-c90e">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+), Concussive (1), Duellist's Edge (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rending (X)" id="a93c-c65f-6bcc-7a02" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (5+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Concussive (X)" id="b977-54d7-4fb9-ffb2" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (1)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Duellist’s Edge (X)" id="d06b-2e0f-34ae-b853" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Duellist's Edge (1)" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Honour stave" hidden="false" id="538a-2e3c-6f4f-cb72" publicationId="733a-d454-80f2-c90e">
@@ -3486,6 +3512,15 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sacred Caste Standard" hidden="false" id="638d-32d4-7cf2-5bc5" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Sacred Caste Standard" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="4af0-30bf-c354-b393">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">*The standard of the Aun, borne before the Ethereal Caste by its sworn guardians.* The range of the joined Ethereal's Invocations is increased from 12" to 18", and the bearer's unit adds 1 to its combat resolution.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stealth Field Generator" hidden="false" id="ebfb-7d82-2516-125d" publicationId="733a-d454-80f2-c90e">
       <profiles>
         <profile name="Stealth Field Generator" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b970-6a50-f11c-f65f">
@@ -3557,6 +3592,15 @@
         <profile name="Master-crafted Combat Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7d12-7035-964d-ffea">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Fire Warrior combat armour forged to a master's standard for the Blade-Sworn Cadre Masters of the Farsight Enclaves. Master-crafted combat armour confers a 3+ Armour Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ornate Combat Armour" hidden="false" id="7da2-4e79-61a5-6385" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Ornate Combat Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b9d4-75c8-d136-446b">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Ornate, reinforced carapace armour emblazoned with the caste symbols of the Aun, worn by the Ethereal Honour Guard. Ornate combat armour confers a 3+ Armour Save.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4311,6 +4355,7 @@
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Fireblade Honour Guard Team" hidden="false" id="b017-28e2-46e7-23f2" type="selectionEntry" targetId="cfd7-3a08-4c02-c18f" />
+            <entryLink import="true" name="Ethereal Honour Guard" hidden="false" id="0b51-4ea2-91e7-d50f" type="selectionEntry" targetId="65dc-d7df-34e6-a0e5" />
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4518,6 +4563,7 @@ Aun'Va: 24".</description>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Fireblade Honour Guard Team" hidden="false" id="9452-c6c5-0550-9f80" type="selectionEntry" targetId="cfd7-3a08-4c02-c18f" />
+            <entryLink import="true" name="Ethereal Honour Guard" hidden="false" id="e532-b5a9-b1b2-e7a2" type="selectionEntry" targetId="65dc-d7df-34e6-a0e5" />
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5854,6 +5900,7 @@ Aun'Va: 24".</description>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Crisis Bodyguard Team" hidden="false" id="66fc-1331-aad1-227b" type="selectionEntry" targetId="566a-2a4b-144e-8210" />
+            <entryLink import="true" name="Crisis Bodyguards" hidden="false" id="8d39-965d-e8c8-bb69" type="selectionEntry" targetId="1ebd-e776-6ef5-7dff" />
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6029,6 +6076,7 @@ Aun'Va: 24".</description>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Crisis Bodyguard Team" hidden="false" id="8b87-6c8e-d412-36af" type="selectionEntry" targetId="566a-2a4b-144e-8210" />
+            <entryLink import="true" name="Crisis Bodyguards" hidden="false" id="fadf-c969-5e1f-7600" type="selectionEntry" targetId="1ebd-e776-6ef5-7dff" />
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6198,6 +6246,7 @@ Aun'Va: 24".</description>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Crisis Bodyguard Team" hidden="false" id="6e32-78d3-77ac-ed3e" type="selectionEntry" targetId="566a-2a4b-144e-8210" />
+            <entryLink import="true" name="Crisis Bodyguards" hidden="false" id="ec3a-fe7b-0878-1c84" type="selectionEntry" targetId="1ebd-e776-6ef5-7dff" />
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6386,6 +6435,7 @@ Aun'Va: 24".</description>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Crisis Bodyguard Team" hidden="false" id="84b0-04cc-4a95-0748" type="selectionEntry" targetId="566a-2a4b-144e-8210" />
+            <entryLink import="true" name="Crisis Bodyguards" hidden="false" id="04f3-52d0-e48e-bb4b" type="selectionEntry" targetId="1ebd-e776-6ef5-7dff" />
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6550,6 +6600,7 @@ Aun'Va: 24".</description>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Crisis Bodyguard Team" hidden="false" id="8bb7-ae55-7088-7393" type="selectionEntry" targetId="566a-2a4b-144e-8210" />
+            <entryLink import="true" name="Crisis Bodyguards" hidden="false" id="8045-05eb-ab0b-ff5c" type="selectionEntry" targetId="1ebd-e776-6ef5-7dff" />
             <entryLink import="true" name="Blade-Sworn Honour Guard Team" hidden="false" id="d79f-02c0-989f-b457" type="selectionEntry" targetId="2b89-acb8-6d09-334b">
               <modifiers>
                 <modifier type="set" field="7e29-dc3f-edc7-bdd4" value="0">
@@ -6807,6 +6858,7 @@ O'Vesa may re-roll the Leadership test.</description>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Crisis Bodyguard Team" hidden="false" id="0c25-e210-af4b-f073" type="selectionEntry" targetId="566a-2a4b-144e-8210" />
+            <entryLink import="true" name="Crisis Bodyguards" hidden="false" id="7a6d-9c93-f4ba-1f66" type="selectionEntry" targetId="1ebd-e776-6ef5-7dff" />
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -7060,6 +7112,7 @@ O'Vesa may re-roll the Leadership test.</description>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Crisis Bodyguard Team" hidden="false" id="f692-4041-6a6d-3ad1" type="selectionEntry" targetId="566a-2a4b-144e-8210" />
+            <entryLink import="true" name="Crisis Bodyguards" hidden="false" id="ba7a-e43b-6a21-a656" type="selectionEntry" targetId="1ebd-e776-6ef5-7dff" />
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -7217,6 +7270,7 @@ O'Vesa may re-roll the Leadership test.</description>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Crisis Bodyguard Team" hidden="false" id="4e7b-bb79-7d0c-2e13" type="selectionEntry" targetId="566a-2a4b-144e-8210" />
+            <entryLink import="true" name="Crisis Bodyguards" hidden="false" id="a14c-3a0f-8542-1dc7" type="selectionEntry" targetId="1ebd-e776-6ef5-7dff" />
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -7295,7 +7349,7 @@ O'Vesa may re-roll the Leadership test.</description>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="499a-cbd6-03c1-d609" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Equalizers" hidden="false" id="4af3-3fca-78e0-0454" type="selectionEntry" targetId="4fc9-8569-b30a-1fa7">
+                <entryLink import="true" name="Equalizer" hidden="false" id="4af3-3fca-78e0-0454" type="selectionEntry" targetId="0853-ca05-df4a-1118">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf25-435b-8376-6bde" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -7580,21 +7634,13 @@ O'Vesa may re-roll the Leadership test.</description>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Fireblade Honour Guard Team" hidden="false" id="5f22-e887-b527-cd43" type="selectionEntry" targetId="cfd7-3a08-4c02-c18f" />
+            <entryLink import="true" name="Ethereal Honour Guard" hidden="false" id="2ae0-59c1-f8b9-e936" type="selectionEntry" targetId="65dc-d7df-34e6-a0e5" />
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50" />
       </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Equalizers" hidden="false" id="4fc9-8569-b30a-1fa7" publicationId="733a-d454-80f2-c90e">
-      <profiles>
-        <profile name="Equalizers" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ae6b-687d-b027-945e">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Paired honour blades: melee, S+1, AP 4, +1 Attack</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kroot Flesh Shaper" hidden="false" id="d1a1-9630-f91a-65a7" publicationId="733a-d454-80f2-c90e">
       <rules>
@@ -8561,6 +8607,7 @@ O'Vesa may re-roll the Leadership test.</description>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Crisis Bodyguard Team" hidden="false" id="4eec-5322-5cf7-7946" type="selectionEntry" targetId="566a-2a4b-144e-8210" />
+            <entryLink import="true" name="Crisis Bodyguards" hidden="false" id="198d-fa19-dd47-04b2" type="selectionEntry" targetId="1ebd-e776-6ef5-7dff" />
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -8717,6 +8764,7 @@ O'Vesa may re-roll the Leadership test.</description>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Crisis Bodyguard Team" hidden="false" id="1d6b-7271-cbda-19e0" type="selectionEntry" targetId="566a-2a4b-144e-8210" />
+            <entryLink import="true" name="Crisis Bodyguards" hidden="false" id="f604-a9e9-209b-a295" type="selectionEntry" targetId="1ebd-e776-6ef5-7dff" />
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -9282,51 +9330,6 @@ O'Vesa may re-roll the Leadership test.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2739-f826-65d8-d625" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Warlord" hidden="false" id="374c-bb5b-925a-fda2" type="selectionEntry" targetId="0176-56a3-d590-b103">
-              <modifiers>
-                <modifier type="set" field="73b8-ee97-724b-695c" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="66f9-182f-9b11-5cad" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="73b8-ee97-724b-695c" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5b32-965a-e245-0c26" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="73b8-ee97-724b-695c" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="73b8-ee97-724b-695c" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73b8-ee97-724b-695c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Warlord Traits" hidden="false" id="6f51-56de-af27-7655" type="selectionEntryGroup" targetId="e448-30fb-324a-651e">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="b579-b925-1d64-c518" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="eca2-d3f1-122b-f7b5" value="1">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="b579-b925-1d64-c518" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="eca2-d3f1-122b-f7b5" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f11-9832-07a1-7eb6" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65" />
@@ -9863,51 +9866,6 @@ O'Vesa may re-roll the Leadership test.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1b6-08ed-ff1c-a535" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Warlord" hidden="false" id="6cbe-91a4-e766-afcb" type="selectionEntry" targetId="0176-56a3-d590-b103">
-              <modifiers>
-                <modifier type="set" field="7eb2-2a76-479a-ff33" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="66f9-182f-9b11-5cad" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="7eb2-2a76-479a-ff33" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5b32-965a-e245-0c26" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="7eb2-2a76-479a-ff33" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="7eb2-2a76-479a-ff33" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7eb2-2a76-479a-ff33" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Warlord Traits" hidden="false" id="60fa-dafc-5107-8c11" type="selectionEntryGroup" targetId="e448-30fb-324a-651e">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="d332-1036-5beb-ccfb" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="5f2e-5a19-289a-d1e0" value="1">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="d332-1036-5beb-ccfb" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5f2e-5a19-289a-d1e0" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fa8-d3e3-58ea-30ca" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-              </constraints>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="18" />
@@ -10071,6 +10029,295 @@ O'Vesa may re-roll the Leadership test.</description>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="13" />
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ethereal Honour Guard" hidden="false" id="65dc-d7df-34e6-a0e5" publicationId="733a-d454-80f2-c90e">
+      <rules>
+        <rule name="Bonding Knife Ritual" id="8e6f-799d-ec2c-5ff3" hidden="false">
+          <description>The unit may re-roll failed Morale checks</description>
+        </rule>
+        <rule name="Devoted Guardians" id="1aad-2a64-e793-0442" hidden="false">
+          <description>While the Ethereal that unlocked this unit is joined to it, all models in this unit gain the Fearless special rule; if the Ethereal is slain, the unit immediately gains Hatred (Everything) and Rage (1) for the remainder of the battle</description>
+        </rule>
+        <rule name="Selfless Sacrifice" id="4d25-7198-5b37-3a89" hidden="false">
+          <description>Models in this unit automatically pass Look Out, Sir! rolls made to intercept wounds allocated to an Ethereal joined to this unit, without needing to roll a D6</description>
+        </rule>
+        <rule name="Note" id="36b7-799f-363a-dd08" hidden="false">
+          <description>Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward Transport capacity. The Equalizer's shield generator confers a 4+ Invulnerable Save.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="7191-bf7d-17b9-a606" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Chosen Warriors" id="37a0-5729-8ab1-45fa" hidden="false" targetId="13d1-9270-6539-08ed" type="rule" />
+        <infoLink name="Retinue Squads" id="0d3b-ec76-67e0-d7f3" hidden="false" targetId="1cd8-30ea-2fc3-ddc7" type="rule" />
+        <infoLink name="Sept (X)" id="0131-8b4b-c501-a309" hidden="false" targetId="de79-d017-7909-4d83" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="721d-225c-7dfc-afb2" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ethereal Honour Guard Shas'vre" hidden="false" id="bfa4-881b-859f-3c7a" publicationId="733a-d454-80f2-c90e">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="4ded-ff8d-affa-af2d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="8274-308c-8eb8-6189" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Ethereal Honour Guard Shas'vre" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="d7f7-d2a3-6ab6-072f" publicationId="733a-d454-80f2-c90e">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="e875-02f0-159c-3234" primary="false" name="Infantry Unit Type" />
+            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="9a18-2f87-f266-a55c" primary="false" name="Character" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange pulse pistol and honour blade" hidden="false" id="d8ae-0b31-f52c-8c90" defaultSelectionEntryId="2e8f-d6ba-0582-5369">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="566c-a8dd-5170-4870" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb2f-8939-c78b-d1a4" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Pulse pistol and Honour blade" hidden="false" id="2e8f-d6ba-0582-5369" type="selectionEntry" targetId="f42a-fea2-ad72-4ef2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57e4-f1a8-7995-f374" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Equalizer and shield generator" hidden="false" id="af68-f8fc-6243-67db" type="selectionEntry" targetId="ccae-a407-93bc-3c8c">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8e7-d934-7cd8-8cbc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="EMP grenades" hidden="false" id="883a-e6a3-8545-77ed" type="selectionEntry" targetId="f715-c10d-8517-de58">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d5b-52ab-8bc7-16fb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d85-47ea-9ba7-95a8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Ornate Combat Armour" hidden="false" id="0e82-569c-c388-22f5" type="selectionEntry" targetId="7da2-4e79-61a5-6385">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aabe-5f72-bed7-49fa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d36-adf5-22f2-7753" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Photon Grenades" hidden="false" id="182d-69c0-eff1-5d92" type="selectionEntry" targetId="6fc1-7d02-98ce-6693">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1f9-658e-d86c-ab6b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79ea-31a0-0ea5-b5ef" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ethereal Honour Guard Shas'vre: Options" hidden="false" id="64f9-27d8-edcb-48d9">
+          <entryLinks>
+            <entryLink import="true" name="Sacred Caste Standard" hidden="false" id="4743-4c52-8a80-9766" type="selectionEntry" targetId="638d-32d4-7cf2-5bc5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e09-0549-eb9f-397f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Drones" hidden="false" id="52a3-70c3-87a3-c61f">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3a88-47a1-7592-9216" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Gun Drone" hidden="false" id="d7f6-09af-575b-5245" publicationId="733a-d454-80f2-c90e">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b2ef-dd4b-5a9f-7926" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="43ac-e158-52c6-ccf5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <profiles>
+                <profile name="Gun Drone" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="5430-bc1d-49cd-9192" publicationId="733a-d454-80f2-c90e">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Drone)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">10</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">2</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="425b-9a04-729d-bacd" primary="false" name="Infantry Unit Type" />
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked pulse carbine" hidden="false" id="dc4b-fe12-a7d4-317a" type="selectionEntry" targetId="841d-336f-13a6-d9a5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="275a-b525-e969-c26b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44c1-9fa4-fcac-3b05" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Twin-linked" id="ddb8-bb42-3218-9015" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+                  </infoLinks>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Marker Drone" hidden="false" id="9e74-0bd3-6042-4206" publicationId="733a-d454-80f2-c90e">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="60b9-4802-c0dc-78f6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e23b-6079-66fe-0e41" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <profiles>
+                <profile name="Marker Drone" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="3d84-cf82-5e3e-b377" publicationId="733a-d454-80f2-c90e">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Drone)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">10</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">2</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="957e-1758-f010-4b77" primary="false" name="Infantry Unit Type" />
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Markerlight" hidden="false" id="64f2-5846-4b26-af12" type="selectionEntry" targetId="8dd6-6e07-6920-7831">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69fd-7cb6-1ebb-488f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a318-7c72-8780-2e6e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="0c92-34dd-41d5-e8fc" publicationId="733a-d454-80f2-c90e">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="49fd-c162-af62-ac38" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="af29-a346-c791-49ba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <profiles>
+                <profile name="Shield Drone" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="e763-4e3b-fc99-fbf2" publicationId="733a-d454-80f2-c90e">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Drone)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">10</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">2</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="6177-da63-9cf0-e043" primary="false" name="Infantry Unit Type" />
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Shield generator" hidden="false" id="ac5b-c9cd-c972-c4d6" type="selectionEntry" targetId="47e8-907d-9b3a-159d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fdeb-041f-10a3-6d11" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa50-f1c2-2f14-7960" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="1df1-0bb8-d635-d4ca">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df10-608b-2cc9-d31a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Devilfish" hidden="false" id="c222-c91a-a0fa-8b8c" type="selectionEntry" targetId="e98d-942b-8285-d8e4">
+              <modifiers>
+                <modifier type="set" field="7b22-3f1a-2d1e-6112" value="0">
+                  <conditions>
+                    <condition type="greaterThan" value="12" field="selections" scope="65dc-d7df-34e6-a0e5" childId="model" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b22-3f1a-2d1e-6112" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pulse pistol and Honour blade" hidden="false" id="f42a-fea2-ad72-4ef2" publicationId="733a-d454-80f2-c90e">
+      <entryLinks>
+        <entryLink import="true" name="Pulse pistol" hidden="false" id="63ba-bbab-8cea-e63b" type="selectionEntry" targetId="3831-56e0-584a-6ff7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26de-b245-f6df-d490" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53e3-7f43-0bfa-20d4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Honour blade" hidden="false" id="e075-07cc-372f-22bf" type="selectionEntry" targetId="ee4b-db29-92f1-84ce">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fddb-caa6-8129-5c0f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad74-ce10-0284-f378" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Equalizer and shield generator" hidden="false" id="ccae-a407-93bc-3c8c" publicationId="733a-d454-80f2-c90e">
+      <entryLinks>
+        <entryLink import="true" name="Equalizer" hidden="false" id="6236-8d80-ac91-c470" type="selectionEntry" targetId="0853-ca05-df4a-1118">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="028c-994f-5b66-53b1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="257f-7696-a819-c4d6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Shield generator" hidden="false" id="7e99-4eb4-c27d-1c18" type="selectionEntry" targetId="47e8-907d-9b3a-159d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c0a8-4f08-34d0-17f4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4f3-5671-6fab-74a6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Blade-Sworn Honour Guard Team" hidden="false" id="2b89-acb8-6d09-334b" publicationId="733a-d454-80f2-c90e">
       <rules>
@@ -10248,51 +10495,6 @@ O'Vesa may re-roll the Leadership test.</description>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0585-74af-277d-5d55" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6105-e16e-f21d-2a79" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Warlord" hidden="false" id="c940-2851-7029-19a3" type="selectionEntry" targetId="0176-56a3-d590-b103">
-              <modifiers>
-                <modifier type="set" field="b90c-6799-7e65-90e2" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="66f9-182f-9b11-5cad" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="b90c-6799-7e65-90e2" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5b32-965a-e245-0c26" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="b90c-6799-7e65-90e2" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="b90c-6799-7e65-90e2" value="0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="0fa7-291c-4f61-1431" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b90c-6799-7e65-90e2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Warlord Traits" hidden="false" id="4371-11c3-0e01-2b2e" type="selectionEntryGroup" targetId="e448-30fb-324a-651e">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="8d25-369a-8499-871a" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="27d3-1ba4-1893-d015" value="1">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="8d25-369a-8499-871a" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="false" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="27d3-1ba4-1893-d015" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1193-a533-b82d-3913" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -11319,6 +11521,7 @@ O'Vesa may re-roll the Leadership test.</description>
         </infoLink>
         <infoLink name="Drone Controller" id="f1d1-f284-5daa-2dfc" hidden="false" targetId="c521-c1b6-bf08-26db" type="rule" />
         <infoLink name="Jet Packs" id="8044-661f-9457-4a5a" hidden="false" targetId="cec5-f1a0-ee98-0e56" type="rule" />
+        <infoLink name="Retinue Squads" id="2fc2-dbb4-ddd7-f956" hidden="false" targetId="1cd8-30ea-2fc3-ddc7" type="rule" />
         <infoLink name="Sept (X)" id="44d1-6e86-6629-d3a7" hidden="false" targetId="de79-d017-7909-4d83" type="rule" />
       </infoLinks>
       <categoryLinks>

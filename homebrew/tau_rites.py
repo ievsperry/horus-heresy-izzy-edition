@@ -27,12 +27,14 @@ BOTH_WEAPONS = ("Paired vibro-blades", "Grav-resonance maul", "Gravitic impact h
 SEPT_ONLY_DETACHMENT = ["Farsight Blade-Sworn Team", "Blade-Sworn Cadre Master", "Blade-Sworn Honour Guard Team"]
 BLADE_SWORN = ["Farsight Blade-Sworn Team", "Blade-Sworn Cadre Master", "Blade-Sworn Honour Guard Team"]  # two-weapon swaps
 # units whose drones cost 10/15/15 points
-OWN_DRONE_COSTS = BLADE_SWORN + ["Crisis Bodyguard Team", "Fireblade Honour Guard Team"]
+OWN_DRONE_COSTS = BLADE_SWORN + ["Crisis Bodyguard Team", "Fireblade Honour Guard Team", "Ethereal Honour Guard"]
 JET_PACK_TEAMS = ["Farsight Blade-Sworn Team", "Blade-Sworn Honour Guard Team"]  # no Devilfish with Repulsor Jet-Packs
 # Retinue Squads: the squad and who may take it (no Force Organisation slot; one in the leader's own entry)
 RETINUES = {
     "Crisis Bodyguard Team": lambda b: [d["name"] for d in b.datasheets if "Cadre Commander" in d["rules"] and battlesuit(d)],
+    "Crisis Bodyguards": lambda b: [d["name"] for d in b.datasheets if "Cadre Commander" in d["rules"] and battlesuit(d)],
     "Fireblade Honour Guard Team": lambda b: ETHEREALS + ["Cadre Fireblade"],
+    "Ethereal Honour Guard": lambda b: ETHEREALS,
     "Blade-Sworn Honour Guard Team": lambda b: ["Blade-Sworn Cadre Master", "Commander Farsight"],
 }
 FARSIGHT_OPTIONS = {"Crisis Bodyguard Team": ["Fusion blades", "Onager gauntlet"]}  # Farsight Enclaves only
@@ -280,6 +282,11 @@ def apply(b):
 
     # Retinue Squads: no Force Organisation slot; a "Retinue" choice (one squad) in each leader's own entry
     retinue_ids = {b.units[n] for n in RETINUES if n in b.units}
+    for n in RETINUES:  # a Retinue Squad's characters are bodyguards, not Warlords
+        for me in (unit(n).findall("selectionEntries/selectionEntry") if n in b.units else []):
+            for l in me.findall("entryLinks/entryLink"):
+                if l.get("name") in ("Warlord", "Warlord Traits"):
+                    me.find("entryLinks").remove(l)
     for l in list(links):
         if l.get("targetId") in retinue_ids:
             links.remove(l)

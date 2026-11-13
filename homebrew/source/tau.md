@@ -354,8 +354,8 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 
 | 2.0 slot | T'au units |
 |---|---|
-| HQ | Blade-Sworn Cadre Master, Crisis Bodyguard Team, Fireblade Honour Guard Team and Blade-Sworn Honour Guard Team (Retinue Squads only), Commander, Cadre Fireblade, Ethereal, Aun'Va, Aun'Shi, Commander Farsight, Commander Shadowsun, Kroot Shaper, Shas'o R'alai, Shas'o R'myr, Commander Brightsword, Commander O'Vesa, The Twin Lance, Commander Bravestorm, Commander Sha'vastos, Commander Arra'kon, Sub-commander Torchstar, Kroot Master Shaper, Kroot Flesh Shaper, Kroot Trail Shaper, Kroot War Shaper, Kroot Lone-spear |
-| Elites | Crisis Battlesuits, Crisis Bodyguards, Farsight Blade-Sworn Team, Stealth Battlesuits, Riptide, Ghostkeel, Firesight Marksman, Darkstrider, Kroot Farstalkers, XV9 Hazard Support Team, XV81 Crisis Battlesuits, XV84 Crisis Battlesuits, DX-4 Technical Drones, Ethereal Guard |
+| HQ | Blade-Sworn Cadre Master, Crisis Bodyguards, Crisis Bodyguard Team, Fireblade Honour Guard Team, Ethereal Honour Guard and Blade-Sworn Honour Guard Team (Retinue Squads only), Commander, Cadre Fireblade, Ethereal, Aun'Va, Aun'Shi, Commander Farsight, Commander Shadowsun, Kroot Shaper, Shas'o R'alai, Shas'o R'myr, Commander Brightsword, Commander O'Vesa, The Twin Lance, Commander Bravestorm, Commander Sha'vastos, Commander Arra'kon, Sub-commander Torchstar, Kroot Master Shaper, Kroot Flesh Shaper, Kroot Trail Shaper, Kroot War Shaper, Kroot Lone-spear |
+| Elites | Crisis Battlesuits, Farsight Blade-Sworn Team, Stealth Battlesuits, Riptide, Ghostkeel, Firesight Marksman, Darkstrider, Kroot Farstalkers, XV9 Hazard Support Team, XV81 Crisis Battlesuits, XV84 Crisis Battlesuits, DX-4 Technical Drones, Ethereal Guard |
 | Troops | Strike Team, Breacher Team, Kroot Carnivores, Gue'vesa Squad |
 | Dedicated Transports | Devilfish |
 | Fast Attack | Pathfinders, Tactical Drones, Piranhas, Vespid Stingwings, Kroot Hounds, Krootox Riders, Sun Shark Bomber, Razorshark Strike Fighter, Tetra Scout Speeders, Remora Stealth Drones, Barracuda, Orca Dropship, Piranha TX-42, Krootox Rampagers, Knarloc Riders |
@@ -1307,6 +1307,59 @@ A Fireblade Honour Guard Team numbering 12 models or fewer (including the joined
 
 _Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward unit size or Transport capacity._
 
+#### Ethereal Honour Guard — 110 pts
+
+*Chosen from the most fanatically devoted Fire Warriors of a Sept world, the Ethereal Honour Guard cast aside their pulse rifles in favour of ceremonial Equalizers and two-handed Honour Blades. Clad in ornate, reinforced carapace armour emblazoned with the caste symbols of the Aun, these silent sentinels stand ready to intercept any blow aimed at their spiritual leaders, willingly laying down their lives without hesitation so that the wisdom of the Ethereal Caste may endure.*
+
+A Retinue Squad (see Retinue Squads) for an Ethereal (including Aun'Va or Aun'Shi) with the Cadre Commander special rule.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Ethereal Honour Guard Shas'vre | 6 | 4 | 4 | 3 | 3 | 1 | 4 | 2 | 9 | 3+ | 25mm |
+
+**Unit Composition**
+
+- 4 Ethereal Honour Guard Shas'vre
+
+**Wargear**
+
+- EMP grenades
+- Honour blade
+- Ornate combat armour
+- Photon grenades
+- Pulse pistol
+
+**Unit Type**
+
+- Ethereal Honour Guard Shas'vre: Infantry (Character)
+
+**Special Rules**
+
+- Bonding Knife Ritual: the unit may re-roll failed Morale checks
+- Chosen Warriors
+- Devoted Guardians: while the Ethereal that unlocked this unit is joined to it, all models in this unit gain the Fearless special rule; if the Ethereal is slain, the unit immediately gains Hatred (Everything) and Rage (1) for the remainder of the battle
+- Retinue Squads
+- Selfless Sacrifice: models in this unit automatically pass Look Out, Sir! rolls made to intercept wounds allocated to an Ethereal joined to this unit, without needing to roll a D6
+- Sept (X)
+
+Dedicated Transport
+An Ethereal Honour Guard numbering 12 models or fewer (including the joined Ethereal, excluding Drones) may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Ethereal Honour Guard may take:** |  |
+| – Up to 6 additional Ethereal Honour Guard Shas'vre | +20 points each |
+| **Any model may exchange its pulse pistol and honour blade for:** |  |
+| – Equalizer and shield generator | +10 points |
+| **One Ethereal Honour Guard Shas'vre may take:** |  |
+| – Sacred caste standard | +15 points |
+| **The unit may take up to two drones from:** |  |
+| – Gun, Marker or Shield Drones | Drone costs |
+
+_Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward Transport capacity. The Equalizer's shield generator confers a 4+ Invulnerable Save._
+
 #### Blade-Sworn Honour Guard Team — 145 pts
 
 *The deadliest close-quarters duelists of the Farsight Enclaves, hand-selected by a Blade-Sworn Cadre Master to serve as his personal assault vanguard. Clad in master-crafted combat armour and wielding custom-tuned vibro-weapons and gravitic hammers, they carve a bloody path through enemy champions so their commander may strike down the opposing warlord.*
@@ -1414,7 +1467,7 @@ _Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each,
 
 #### Crisis Bodyguards — 100 pts
 
-Crisis Bodyguards may only be taken if the army includes a Commander, Commander Farsight or Commander Shadowsun.
+A Retinue Squad (see Retinue Squads) for any model with the Cadre Commander special rule and the Battlesuit Unit Sub-type (including Commander Farsight and Commander Shadowsun).
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -1439,6 +1492,7 @@ Crisis Bodyguards may only be taken if the army includes a Commander, Commander 
 - Bulky (3)
 - Drone Controller
 - Jet Packs
+- Retinue Squads
 - Sept (X)
 - Sworn Protectors: while a Commander has joined the unit, any Bodyguard may take wounds allocated to him as Look Out, Sir! on a 2+†
 
@@ -3190,6 +3244,12 @@ The shield projector built into Commander O'Vesa's Riptide.
 
 The bearer has a 4+ Invulnerable Save.
 
+#### Sacred Caste Standard
+
+*The standard of the Aun, borne before the Ethereal Caste by its sworn guardians.*
+
+The range of the joined Ethereal's Invocations is increased from 12" to 18", and the bearer's unit adds 1 to its combat resolution.
+
 #### Stealth Field Generator
 
 A sensor-baffling field projected by the Ghostkeel's stealth drones.
@@ -3229,6 +3289,12 @@ A Broadside battlesuit confers a 2+ Armour Save and Bulky (4). It does not confe
 Fire Warrior combat armour forged to a master's standard for the Blade-Sworn Cadre Masters of the Farsight Enclaves.
 
 Master-crafted combat armour confers a 3+ Armour Save.
+
+##### Ornate Combat Armour
+
+Ornate, reinforced carapace armour emblazoned with the caste symbols of the Aun, worn by the Ethereal Honour Guard.
+
+Ornate combat armour confers a 3+ Armour Save.
 
 ##### Reinforced Combat Armour
 
@@ -3404,7 +3470,8 @@ The ceremonial weapons of the Ethereal Caste and its guards, and the blades, cla
 |---|---|---|---|---|
 | Close combat weapon | – | User | – | Melee |
 | The Dawn Blade | – | +1 | 2 | Melee, Murderous Strike (6+) |
-| Honour blade | – | +1 | 4 | Melee, Two-handed |
+| Honour blade | – | +2 | 4 | Melee, Two-handed, Rending (5+), Reach (1) |
+| Equalizer | – | +1 | 4 | Melee, Rending (5+), Concussive (1), Duellist's Edge (1) |
 | Honour stave | – | +1 | – | Melee, Two-handed, Concussive (1) |
 | Krootox fists | – | User | – | Melee |
 | Rampager claws | – | +1 | 4 | Melee, Shred |
