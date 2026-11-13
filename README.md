@@ -1,13 +1,6 @@
 Horus Heresy
 ============
 
-[![Latest release](https://img.shields.io/github/release/BSData/horus-heresy.svg?style=flat-square)](https://github.com/BSData/horus-heresy-2nd-edition/releases)
-[![Commits (since latest release)](https://img.shields.io/github/commits-since/BSData/horus-heresy/latest.svg?style=flat-square)](https://github.com/BSData/horus-heresy-2nd-edition/releases)
-[![Open bugs](https://img.shields.io/github/issues/BSData/horus-heresy/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/horus-heresy-2nd-edition/issues)
-[![Contributors](https://img.shields.io/github/contributors/BSData/horus-heresy.svg?style=flat-square)](https://github.com/BSData/horus-heresy-2nd-edition/graphs/contributors)
-[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/horus-heresy.svg?style=flat-square)](https://github.com/BSData/horus-heresy-2nd-edition/pulse/monthly)
-[![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://www.bsdata.net/discord)
-
 
 ## Overview ##
 
