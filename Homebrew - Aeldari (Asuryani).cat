@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="d5ae-9e15-7ef2-10f7" name="Asuryani for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Asuryani" />
   </publications>
@@ -8506,6 +8506,18 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Farseer" hidden="false" id="3266-4ef3-47f2-50fb" publicationId="d5ae-9e15-7ef2-10f7">
+          <modifiers>
+            <modifier type="decrement" field="930a-9e85-3e47-45c9" value="1">
+              <repeats>
+                <repeat field="selections" scope="fde9-2b2d-3227-e2dd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b536-2e1f-0ef1-4378" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="89b3-6f40-b875-6a90" value="1">
+              <repeats>
+                <repeat field="selections" scope="fde9-2b2d-3227-e2dd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b536-2e1f-0ef1-4378" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="930a-9e85-3e47-45c9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89b3-6f40-b875-6a90" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8776,6 +8788,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups />
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150" />
       </costs>
@@ -16603,7 +16616,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       <infoLinks>
         <infoLink name="Xenos" id="0084-dfe9-ed2e-1dc5" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Holo-Emitter" id="9fbb-dd12-a74d-4903" hidden="false" targetId="7318-7e03-d38a-418b" type="rule" />
-        <infoLink name="Multi-Part Fortification" id="9ced-8175-520c-2f5c" hidden="false" targetId="5fa9-e87f-754d-77b3" type="rule" />
+        <infoLink name="Multi-part Fortifications" id="c130-a575-8f0a-306e" hidden="false" targetId="eaa0-9ac0-9de9-32e0" type="rule" />
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="0fd8-8f8c-7260-2300" primary="false" name="Unit:" />
@@ -17106,9 +17119,6 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
     </rule>
     <rule name="Invulnerable Save (X)" id="a59c-ba92-c096-58d8" hidden="false" publicationId="d5ae-9e15-7ef2-10f7">
       <description>The model has an Invulnerable Save of X, which may be taken against any Wound instead of its armour save.</description>
-    </rule>
-    <rule name="Multi-Part Fortification" id="5fa9-e87f-754d-77b3" hidden="false" publicationId="d5ae-9e15-7ef2-10f7">
-      <description>Listed on this datasheet but not defined in the conversion doc.</description>
     </rule>
     <rule name="Scorpion's Sting (1)" id="035a-ed01-7d05-bb5d" hidden="false" publicationId="d5ae-9e15-7ef2-10f7">
       <description>The model causes 1 immediate Hits with this weapon at Initiative step 10, but may not assign any further attacks to it. This does not grant an additional Pile In move.</description>

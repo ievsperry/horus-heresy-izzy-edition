@@ -659,8 +659,6 @@ _No more than 3 Exarchs in the unit may select the same Aspect Shrine._
 
 - Farseer: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
 - Farseer Skyrunner: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade, Skyrunner Jetbike
-- A Farseer may be upgraded to a:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
-- A Farseer may exchange its Witch Weapon for:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
 
 **Unit Type**
 
@@ -681,8 +679,7 @@ _No more than 3 Exarchs in the unit may select the same Aspect Shrine._
 
 | Option | Cost |
 | --- | --- |
-| A Farseer may be upgraded to a: |  |
-| – Farseer Skyrunner | +25 points |
+| **One Farseer may be upgraded to a Farseer Skyrunner** | +25 points |
 | A Farseer may exchange its witchblade for: |  |
 | – Witch staff | Free |
 | – Singing Spear | +5 points |
@@ -1093,12 +1090,6 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 
 - Guardian Officer: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol
 - Skyrunner Officer: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol, Skyrunner Jetbike
-- A Guardian Officer Cadre may include:: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol
-- Any Guardian Officer may be upgraded to a:: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol
-- Any Guardian Officer may take one of the following:: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol
-- Any Guardian Officer or Skyrunner Officer may exchange its Chainsword for a:: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol
-- Any Guardian Officer or Skyrunner Officer may exchange its Shuriken Pistol for a:: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol
-- Any Guardian Officer or Skyrunner Officer may take a:: Chainsword, Heavy Mesh Armour, Plasma Grenades, Shuriken Pistol
 
 **Unit Type**
 
@@ -1193,12 +1184,6 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 
 - Warlock: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
 - Warlock Skyrunner: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade, Skyrunner Jetbike
-- A Seer Council may include:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
-- The whole unit may be upgraded to:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
-- Any Warlock may exchange its Witch Weapon for a:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
-- One model in the unit may take a:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
-- One model in the unit may take a:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
-- One model in the unit may take a:: Plasma Grenades, Rune Armour, Shuriken Pistol, Witchblade
 
 **Unit Type**
 
@@ -1457,12 +1442,6 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 
 - Guardian Defender: Plasma Grenades, Mesh Armour, Shuriken Catapult
 - Defender Platform: Plasma Grenades, Shuriken Cannon
-- A Guardian Defenders unit may include:: Plasma Grenades
-- For every ten Guardian Defenders in the unit, it may add:: Plasma Grenades
-- Any Defender Platform may exchange its Shuriken Cannon for one of the following:: Plasma Grenades
-- One model in the unit may take a:: Plasma Grenades
-- One model in the unit may take a:: Plasma Grenades
-- One model in the unit may take a:: Plasma Grenades
 
 **Unit Type**
 
@@ -1561,14 +1540,6 @@ A unit of no more than twelve models may take a Wave Serpent as a Dedicated Tran
 
 - Storm Guardian: Plasma Grenades, Chainsword, Mesh Armour, Shuriken Pistol
 - Defender Platform: Plasma Grenades, Shuriken Cannon
-- A Storm Guardians unit may include:: Plasma Grenades
-- For every ten Storm Guardians in the unit, it may add:: Plasma Grenades
-- Any Defender Platform may exchange its Shuriken Cannon for one of the following:: Plasma Grenades
-- For every five Storm Guardians, one may exchange its Chainsword for a:: Plasma Grenades
-- For every five Storm Guardians, one may exchange its Chainsword and Shuriken Pistol for one of the following:: Plasma Grenades
-- One model in the unit may take a:: Plasma Grenades
-- One model in the unit may take a:: Plasma Grenades
-- One model in the unit may take a:: Plasma Grenades
 
 **Unit Type**
 
@@ -2275,11 +2246,6 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 
 - Guardian Crew: Mesh Armour, Plasma Grenades, Shuriken Catapult
 - Support Weapon: Shadow Weaver
-- A Vaul's Wrath Support Battery may include (each additional Support Weapon adds 2 Guardian Crew at no extra cost):: 
-- Every Support Weapon may exchange its Shadow Weaver for one of the following (all must take the same):: 
-- One model in the unit may take a:: 
-- One model in the unit may take a:: 
-- One model in the unit may take a:: 
 
 **Unit Type**
 
@@ -2789,7 +2755,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 **Special Rules**
 
 - Holo-Emitter
-- Multi-Part Fortification
+- Multi-part Fortifications
 
 **Options**
 
