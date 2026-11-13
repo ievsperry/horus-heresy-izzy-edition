@@ -1,8 +1,369 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="32" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="33" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
+  <forceEntries>
+    <forceEntry name="Aeldari Warhost Detachment" hidden="false" id="e381-f5aa-187a-2fa6">
+      <modifiers>
+        <modifier type="set" value="0" field="8e0d-16b1-bd06-ed65">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="886a-325d-ad26-8955" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="8e0d-16b1-bd06-ed65">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="e319-27b1-69b4-33ff" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="8e0d-16b1-bd06-ed65">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="3909-dd50-290e-98a8" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="8e0d-16b1-bd06-ed65" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      </constraints>
+      <rules>
+        <rule name="Aeldari Warhost Detachment" id="325a-7d65-6eb9-e936" hidden="false">
+          <description>Civilization Alignment. Before selecting any units for this Detachment, choose one of the following Civilization Keywords: Asuryani, Drukhari, Anhrathe or Rillietann. All units selected as part of the Detachment must possess the chosen Civilization Keyword unless specifically stated otherwise. The selected Civilization determines which Civilization Trait, Advanced Reaction and Warlord Trait are available to the Detachment.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Allegiance:" hidden="false" id="ac2a-1ff1-57cb-a3c3" targetId="e90d-e5a8-f42d-da84" primary="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="36e7-f373-d6cd-c7a1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d548-6ea0-6ae2-d847" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="HQ:" hidden="false" id="4bdd-13fc-2fa1-0dac" targetId="4f85-eb33-30c9-8f51" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="d490-f4d7-8feb-ca43" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="c5e5-5917-6573-592b" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops:" hidden="false" id="4e3d-46d5-c154-f227" targetId="9b5d-fac7-799b-d7e7" primary="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="force" shared="true" id="7ba8-6cc9-1b68-7a3f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="6" field="selections" scope="force" shared="true" id="13d9-b71e-eda0-8733" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites:" hidden="false" id="7398-5872-55d2-846f" targetId="7aee-565f-b0ae-294e" primary="false">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="5de0-e5eb-e34d-e278" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack:" hidden="false" id="700e-9ca8-1ab8-528b" targetId="20ef-cd01-a8da-376e" primary="false">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="da4d-7aa6-89b8-1881" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support:" hidden="false" id="64f7-adaa-192c-289d" targetId="7031-469a-1aeb-eab0" primary="false">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="a255-36fd-65ff-0f46" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Lords of War:" hidden="false" id="ad24-dbdb-789d-0cc0" targetId="c658-dc6b-727b-c488" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="25ff-cbc0-f802-a6e9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Aeldari Auxiliary Detachment" hidden="false" id="e489-7422-beaa-6a89">
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="e1c1-4f3b-7608-7778" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      </constraints>
+      <rules>
+        <rule name="Aeldari Auxiliary Detachment" id="67d7-63ef-e1b7-200d" hidden="false">
+          <description>No Lords of War choices may be selected as part of an Aeldari Auxiliary Detachment.
+Supporting Force. Units selected as part of an Aeldari Auxiliary Detachment may never be selected as the army's Warlord.
+Independent Command. An Aeldari Auxiliary Detachment may be selected from a different Aeldari Civilization than the Primary Detachment. Units selected as part of an Auxiliary Detachment only benefit from the Civilization Trait, Advanced Reaction and Warlord Trait associated with their own Civilization. They do not gain the benefits of those selected by the Primary Detachment.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Allegiance:" hidden="false" id="0c5b-12ff-a820-e993" targetId="e90d-e5a8-f42d-da84" primary="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9b31-1cbc-4378-4a3f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d79e-4ad4-e9e3-3841" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="HQ:" hidden="false" id="0688-17c2-af28-8a30" targetId="4f85-eb33-30c9-8f51" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="d534-5acd-5cd3-4f09" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5139-ce4b-cd97-4895" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops:" hidden="false" id="6a0f-2a6a-cd90-3ff3" targetId="9b5d-fac7-799b-d7e7" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="a8a1-b075-5d6b-f72d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e6da-f468-aed4-2e1d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites:" hidden="false" id="6bb6-d840-33b5-81b5" targetId="7aee-565f-b0ae-294e" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bee6-27c9-bd01-a0b3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack:" hidden="false" id="8c11-2041-949d-0b46" targetId="20ef-cd01-a8da-376e" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7371-b39d-6170-71e8" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support:" hidden="false" id="4701-b255-2c2c-deb9" targetId="7031-469a-1aeb-eab0" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1aaf-ef54-df08-bc86" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Aeldari Allied Detachment" hidden="false" id="9a95-ef59-6e14-f1d9">
+      <modifiers>
+        <modifier type="set" value="0" field="e587-19a2-80cc-a2fe">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="e381-f5aa-187a-2fa6" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="e587-19a2-80cc-a2fe">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="886a-325d-ad26-8955" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="e587-19a2-80cc-a2fe">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="e319-27b1-69b4-33ff" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="e587-19a2-80cc-a2fe">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="3909-dd50-290e-98a8" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="e587-19a2-80cc-a2fe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      </constraints>
+      <rules>
+        <rule name="Aeldari Allied Detachment" id="0bf9-923e-29c5-8227" hidden="false">
+          <description>No Lords of War choices may be selected as part of an Aeldari Allied Detachment.
+Allied Civilization. An Aeldari Allied Detachment must be selected from a different Civilization than the army's Primary Detachment.
+Separate Command. Units selected as part of an Allied Detachment may never be selected as the army's Warlord. Units selected as part of an Allied Detachment only benefit from the Civilization Trait, Advanced Reaction and Warlord Trait associated with their own Civilization.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Allegiance:" hidden="false" id="78df-ef96-203b-b2b0" targetId="e90d-e5a8-f42d-da84" primary="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1d45-f88b-c8ce-0bc9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1dda-f864-265f-0250" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="HQ:" hidden="false" id="2996-5149-5374-9d80" targetId="4f85-eb33-30c9-8f51" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="5754-81e1-ff26-b6a1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="119e-6174-9f42-8558" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops:" hidden="false" id="5e96-b7d7-3d9f-222e" targetId="9b5d-fac7-799b-d7e7" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="36da-428d-f0be-c36b" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="106c-3ca3-459e-d710" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites:" hidden="false" id="175a-3cf8-6bcf-548d" targetId="7aee-565f-b0ae-294e" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e886-37af-f485-ed40" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack:" hidden="false" id="976d-007a-1a2a-e52c" targetId="20ef-cd01-a8da-376e" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0f8b-f043-e36e-3881" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support:" hidden="false" id="d69d-43f1-cdab-88e3" targetId="7031-469a-1aeb-eab0" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="919b-9050-d570-fe76" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Aeldari Lords of War Detachment" hidden="false" id="51f3-9c4e-4fc7-aed4">
+      <modifiers>
+        <modifier type="set" value="1" field="3bc8-bd6d-9173-c15d">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="e381-f5aa-187a-2fa6" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="1974-9144-bad8-e0a7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+        <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="3bc8-bd6d-9173-c15d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      </constraints>
+      <rules>
+        <rule name="Aeldari Lords of War Detachment" id="f92f-d3e0-77d4-7c69" hidden="false">
+          <description>No other units may be selected as part of this Detachment.
+Civilization Alignment. An Aeldari Lords of War Detachment may only be selected if the army includes an Aeldari Warhost Primary Detachment. All units selected as part of this Detachment must possess the same Civilization Keyword as the army's Primary Detachment unless specifically stated otherwise.
+Engines of Legend. Units selected as part of an Aeldari Lords of War Detachment may never be selected as the army's Warlord.
+Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords of War units in total.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Allegiance:" hidden="false" id="202b-afaa-4c56-f3b3" targetId="e90d-e5a8-f42d-da84" primary="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2cab-1302-cc0a-5e49" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c97f-5bbd-8bee-b1c3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Lords of War:" hidden="false" id="e7c0-7835-bbda-c5d7" targetId="c658-dc6b-727b-c488" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="6e80-e023-3bd8-7393" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9177-50ec-567a-0568" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Drukhari Realspace Raiders: Kabal Detachment" hidden="false" id="886a-325d-ad26-8955">
+      <modifiers>
+        <modifier type="set" value="0" field="dc63-cc37-ca01-6700">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="e381-f5aa-187a-2fa6" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="dc63-cc37-ca01-6700" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Allegiance:" hidden="false" id="e774-74e9-a5a8-82fc" targetId="e90d-e5a8-f42d-da84" primary="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="10a6-df42-39eb-4b38" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7abe-698b-b2a4-61dc" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="HQ:" hidden="false" id="07f8-ba89-56b0-2c85" targetId="4f85-eb33-30c9-8f51" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8930-738d-0674-8a56" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="1eaa-1d77-5a9c-018e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops:" hidden="false" id="d122-8f93-5a48-07fd" targetId="9b5d-fac7-799b-d7e7" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="173e-c015-03fd-ecdf" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="f029-fc3a-5a9c-095f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites:" hidden="false" id="c4a3-294e-6828-43da" targetId="7aee-565f-b0ae-294e" primary="false">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2391-28e3-f01e-c5d0" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack:" hidden="false" id="c5c5-a5da-c5c3-0d33" targetId="20ef-cd01-a8da-376e" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ce98-9c08-4550-3ab6" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support:" hidden="false" id="94bb-3716-9f2e-ca75" targetId="7031-469a-1aeb-eab0" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0741-c520-fabd-dcf8" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Drukhari Realspace Raiders: Wych Cult Detachment" hidden="false" id="e319-27b1-69b4-33ff">
+      <modifiers>
+        <modifier type="set" value="0" field="b2a2-2a93-8579-8739">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="e381-f5aa-187a-2fa6" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="b2a2-2a93-8579-8739" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Allegiance:" hidden="false" id="f7d1-ff10-7773-9dd4" targetId="e90d-e5a8-f42d-da84" primary="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5004-5fff-446c-0a66" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e37b-3d0f-269c-3b1d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="HQ:" hidden="false" id="4cca-8b5c-a955-e8a8" targetId="4f85-eb33-30c9-8f51" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="10eb-4742-fed9-d7c8" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="1cd8-8728-72b4-0039" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops:" hidden="false" id="e287-4d4c-66fc-48f7" targetId="9b5d-fac7-799b-d7e7" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8c39-ff16-684a-5a6e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="03a7-6132-f3fd-7b13" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites:" hidden="false" id="2157-47d2-f330-f36c" targetId="7aee-565f-b0ae-294e" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2a67-3b3c-3e1d-2192" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack:" hidden="false" id="6879-a50e-52a5-b434" targetId="20ef-cd01-a8da-376e" primary="false">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="703f-0667-f7cd-c641" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support:" hidden="false" id="a0fc-e62a-3c92-8dd9" targetId="7031-469a-1aeb-eab0" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="136a-1cb3-ba01-d7c6" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Drukhari Realspace Raiders: Haemonculus Coven Detachment" hidden="false" id="3909-dd50-290e-98a8">
+      <modifiers>
+        <modifier type="set" value="0" field="cbda-718f-0fbb-9215">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="e381-f5aa-187a-2fa6" shared="true" includeChildSelections="true" includeChildForces="true" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="cbda-718f-0fbb-9215" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Allegiance:" hidden="false" id="3e93-596f-9272-fa3f" targetId="e90d-e5a8-f42d-da84" primary="false">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="891c-f3f8-7b4d-4d50" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="aafb-219c-502c-b37c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="HQ:" hidden="false" id="428f-bbb3-0a32-58e1" targetId="4f85-eb33-30c9-8f51" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="6079-eb3c-445b-a3db" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="949c-323b-1073-7e52" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops:" hidden="false" id="decf-ec6d-141a-d58c" targetId="9b5d-fac7-799b-d7e7" primary="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="d965-bc41-015d-16de" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="50e3-5942-fe53-10b3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites:" hidden="false" id="b8a9-96ac-3d55-438a" targetId="7aee-565f-b0ae-294e" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8a4b-455f-7ee6-40e3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack:" hidden="false" id="1e30-898f-f24a-09fe" targetId="20ef-cd01-a8da-376e" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c1ca-0f20-08e9-b70d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support:" hidden="false" id="e3f2-01da-7bf0-0ad1" targetId="7031-469a-1aeb-eab0" primary="false">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="8433-5990-bd66-d0ab" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Drukhari" hidden="false" id="897b-5b98-3dff-b74a" publicationId="9356-fc9b-2fee-7d11">
       <constraints>
@@ -3471,6 +3832,21 @@
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="cbd6-8945-00cc-b091" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
+                <modifier type="set" value="0" field="472e-74d4-df74-d756">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e489-7422-beaa-6a89" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="472e-74d4-df74-d756">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a95-ef59-6e14-f1d9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="472e-74d4-df74-d756">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="51f3-9c4e-4fc7-aed4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="472e-74d4-df74-d756" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5b1a-dc53-2633-fb42" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -3759,6 +4135,21 @@
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="2017-a2c3-e70f-4170" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
+                <modifier type="set" value="0" field="5efb-f8b9-c89b-d6ae">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e489-7422-beaa-6a89" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="5efb-f8b9-c89b-d6ae">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a95-ef59-6e14-f1d9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="5efb-f8b9-c89b-d6ae">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="51f3-9c4e-4fc7-aed4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="5efb-f8b9-c89b-d6ae" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5b1a-dc53-2633-fb42" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -4074,6 +4465,21 @@
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="202e-0c83-0df1-cb72" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
+                <modifier type="set" value="0" field="3710-c53c-cd96-b418">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e489-7422-beaa-6a89" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="3710-c53c-cd96-b418">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a95-ef59-6e14-f1d9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="3710-c53c-cd96-b418">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="51f3-9c4e-4fc7-aed4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="3710-c53c-cd96-b418" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="67b7-e6c0-508e-2918" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -4360,6 +4766,21 @@
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="fc14-f8b6-6e8f-3244" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
+                <modifier type="set" value="0" field="c7f9-9d6c-915d-cbc9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e489-7422-beaa-6a89" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="c7f9-9d6c-915d-cbc9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a95-ef59-6e14-f1d9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="c7f9-9d6c-915d-cbc9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="51f3-9c4e-4fc7-aed4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="c7f9-9d6c-915d-cbc9" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="67b7-e6c0-508e-2918" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -4600,6 +5021,21 @@
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="f448-635a-9a0d-eae4" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
+                <modifier type="set" value="0" field="bb9c-6f2c-d6cd-9914">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e489-7422-beaa-6a89" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="bb9c-6f2c-d6cd-9914">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a95-ef59-6e14-f1d9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="bb9c-6f2c-d6cd-9914">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="51f3-9c4e-4fc7-aed4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="bb9c-6f2c-d6cd-9914" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5b1a-dc53-2633-fb42" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -4837,6 +5273,21 @@
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="fd16-ae9e-954c-14c3" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
+                <modifier type="set" value="0" field="980a-92b4-2e62-e24a">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e489-7422-beaa-6a89" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="980a-92b4-2e62-e24a">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a95-ef59-6e14-f1d9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="980a-92b4-2e62-e24a">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="51f3-9c4e-4fc7-aed4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="980a-92b4-2e62-e24a" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5b1a-dc53-2633-fb42" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -5008,6 +5459,21 @@
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="76ee-5694-a81e-9836" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
+                <modifier type="set" value="0" field="c89f-d851-12d1-7291">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e489-7422-beaa-6a89" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="c89f-d851-12d1-7291">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a95-ef59-6e14-f1d9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="c89f-d851-12d1-7291">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="51f3-9c4e-4fc7-aed4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="c89f-d851-12d1-7291" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="67b7-e6c0-508e-2918" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -5187,6 +5653,21 @@
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="f5b3-739a-4eea-4c0b" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
+                <modifier type="set" value="0" field="ff97-fb7a-b025-5b5f">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e489-7422-beaa-6a89" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="ff97-fb7a-b025-5b5f">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a95-ef59-6e14-f1d9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="ff97-fb7a-b025-5b5f">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="51f3-9c4e-4fc7-aed4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="ff97-fb7a-b025-5b5f" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5b1a-dc53-2633-fb42" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -5358,6 +5839,21 @@
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="9999-bb1e-2b20-f4f6" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
+                <modifier type="set" value="0" field="49bd-e02b-8a9f-4895">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e489-7422-beaa-6a89" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="49bd-e02b-8a9f-4895">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a95-ef59-6e14-f1d9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="49bd-e02b-8a9f-4895">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="51f3-9c4e-4fc7-aed4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="49bd-e02b-8a9f-4895" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5b1a-dc53-2633-fb42" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -5529,6 +6025,21 @@
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="4f8d-c8fe-21a7-5c67" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
+                <modifier type="set" value="0" field="adfe-2f71-c344-b4c9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e489-7422-beaa-6a89" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="adfe-2f71-c344-b4c9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a95-ef59-6e14-f1d9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="adfe-2f71-c344-b4c9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="51f3-9c4e-4fc7-aed4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="adfe-2f71-c344-b4c9" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5b1a-dc53-2633-fb42" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -5690,6 +6201,21 @@
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="82b3-7e2e-46b3-8a6a" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
+                <modifier type="set" value="0" field="1819-0424-1163-6904">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e489-7422-beaa-6a89" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="1819-0424-1163-6904">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a95-ef59-6e14-f1d9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="1819-0424-1163-6904">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="51f3-9c4e-4fc7-aed4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="1819-0424-1163-6904" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5b1a-dc53-2633-fb42" shared="true" includeChildSelections="true" includeChildForces="false" />
@@ -11738,6 +12264,21 @@
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="9059-f9ad-c139-47f3" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
+                <modifier type="set" value="0" field="fc8c-4336-a4f7-1ebc">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e489-7422-beaa-6a89" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="fc8c-4336-a4f7-1ebc">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a95-ef59-6e14-f1d9" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="fc8c-4336-a4f7-1ebc">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="51f3-9c4e-4fc7-aed4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="fc8c-4336-a4f7-1ebc" value="0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5b1a-dc53-2633-fb42" shared="true" includeChildSelections="true" includeChildForces="false" />

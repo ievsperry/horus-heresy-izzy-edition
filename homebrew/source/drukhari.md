@@ -246,7 +246,77 @@ The Warlord and any unit it joins improve their Feel No Pain by 1. In addition, 
 
 ## Detachments
 
-The Aeldari Warhost, Auxiliary, Allied and Lords of War detachments are in the Aeldari document. Drukhari armies may also use this detachment.
+Drukhari armies may use the Aeldari Warhost, Auxiliary, Allied and Lords of War Detachments, or the Drukhari Realspace Raiders Detachment.
+
+### Aeldari Warhost Detachment
+
+*The Aeldari Warhost represents the primary military formation of an Aeldari civilization. Whether assembled from the disciplined hosts of the Asuryani, the predatory armies of the Drukhari, the roaming fleets of the Anhrathe or the enigmatic performers of the Rillietann, a Warhost is a complete fighting force capable of prosecuting war across entire worlds. Each Warhost is shaped by the traditions, doctrines and methods of its civilization, bringing its own distinct style of warfare to the battlefield.*
+
+| Battlefield Role | Selections |
+| --- | --- |
+| HQ (Compulsory) | 1-3 |
+| Troops (Compulsory) | 2-6 |
+| Elites | 0-4 |
+| Fast Attack | 0-4 |
+| Heavy Support | 0-4 |
+| Lords of War | 0-1 |
+
+**Civilization Alignment.** Before selecting any units for this Detachment, choose one of the following Civilization Keywords: Asuryani, Drukhari, Anhrathe or Rillietann. All units selected as part of the Detachment must possess the chosen Civilization Keyword unless specifically stated otherwise. The selected Civilization determines which Civilization Trait, Advanced Reaction and Warlord Trait are available to the Detachment.
+
+### Aeldari Auxiliary Detachment
+
+*Aeldari commanders frequently deploy specialist forces alongside larger armies. Reconnaissance parties, corsair raiding bands, spirit-hosts, travelling masques and countless other formations may be dispatched independently to achieve specific objectives while remaining subordinate to a larger warhost.*
+
+| Battlefield Role | Selections |
+| --- | --- |
+| HQ (Compulsory) | 1 |
+| Troops (Compulsory) | 1 |
+| Troops | 0-2 |
+| Elites | 0-1 |
+| Fast Attack | 0-1 |
+| Heavy Support | 0-1 |
+
+No Lords of War choices may be selected as part of an Aeldari Auxiliary Detachment.
+
+**Supporting Force.** Units selected as part of an Aeldari Auxiliary Detachment may never be selected as the army's Warlord.
+
+**Independent Command.** An Aeldari Auxiliary Detachment may be selected from a different Aeldari Civilization than the Primary Detachment. Units selected as part of an Auxiliary Detachment only benefit from the Civilization Trait, Advanced Reaction and Warlord Trait associated with their own Civilization. They do not gain the benefits of those selected by the Primary Detachment.
+
+### Aeldari Allied Detachment
+
+*Though divided by culture, ideology and circumstance, the scattered civilizations of the Aeldari will occasionally fight alongside one another. Such alliances are often temporary and driven by necessity, but when the skeins of fate demand it, Craftworld warhosts, Corsair fleets, Harlequin masques and even the denizens of Commorragh may unite against a common foe.*
+
+| Battlefield Role | Selections |
+| --- | --- |
+| HQ (Compulsory) | 1 |
+| Troops (Compulsory) | 1 |
+| Troops | 0-1 |
+| Elites | 0-1 |
+| Fast Attack | 0-1 |
+| Heavy Support | 0-1 |
+
+No Lords of War choices may be selected as part of an Aeldari Allied Detachment.
+
+**Allied Civilization.** An Aeldari Allied Detachment must be selected from a different Civilization than the army's Primary Detachment.
+
+**Separate Command.** Units selected as part of an Allied Detachment may never be selected as the army's Warlord. Units selected as part of an Allied Detachment only benefit from the Civilization Trait, Advanced Reaction and Warlord Trait associated with their own Civilization.
+
+### Aeldari Lords of War Detachment
+
+*The most ancient and powerful engines of war maintained by the Aeldari are seldom committed to battle. Whether towering Wraith constructs, ancient grav-tanks, or god-machines capable of laying waste to entire armies, these weapons are only unleashed when the fate of a Craftworld, Kabal, Corsair Fleet or Masque hangs in the balance. When deployed, they serve as the spearhead of an Aeldari offensive, bringing overwhelming firepower and destructive force to bear against the enemy.*
+
+| Battlefield Role | Selections |
+| --- | --- |
+| Lords of War (Compulsory) | 1 |
+| Lords of War (Optional) | 0-2 |
+
+No other units may be selected as part of this Detachment.
+
+**Civilization Alignment.** An Aeldari Lords of War Detachment may only be selected if the army includes an Aeldari Warhost Primary Detachment. All units selected as part of this Detachment must possess the same Civilization Keyword as the army's Primary Detachment unless specifically stated otherwise.
+
+**Engines of Legend.** Units selected as part of an Aeldari Lords of War Detachment may never be selected as the army's Warlord.
+
+**Lords of War.** An Aeldari Lords of War Detachment may contain up to three Lords of War units in total.
 
 ### Drukhari Realspace Raiders Detachment
 

@@ -5057,6 +5057,153 @@ class Builder:
             c = el(el(fe, "constraints"), "constraint", type="max", value=1, field="forces", scope="roster", shared=True,
                    id=make_id(fid, "once"), percentValue=False, includeChildSelections=False, includeChildForces=False)
 
+    def build_detachment_charts(self):
+        """'## Detachments' sub-sections that chart their slots: a Force Organisation Chart of the faction's own
+        for each. Two table forms:
+
+        - '**Primary Detachment**' / '**Support Detachment (Optional)**' over 'Battlefield Role | Minimum |
+          Maximum' (Orks: Waaagh! Warband): 'X: Primary Detachment', 'X: Support Detachment'.
+        - 'Battlefield Role | Selections' with rows 'HQ (Compulsory) | 1-3', 'Troops | 0-2' (Aeldari Warhost):
+          the sub-section's own name; with several count columns (Realspace Raiders: Kabal, Wych Cult and
+          Haemonculus Coven Detachments) one chart per column, 'X: Column'.
+
+        The first chart of the section is the army's Primary: one per army, and one Primary chart only. A Support
+        Detachment needs its own chart's Primary. From the text: 'may only be selected if the army includes an X
+        Primary Detachment' needs that chart; 'from a different Civilization than the army's Primary
+        Detachment' may not sit beside this list's Primary; units 'may never be selected as the army's
+        Warlord' cannot be the Warlord in it; units named in 'may only be selected as part of the army's
+        Primary Detachment: ...' are an error in the Support Detachment. The rest of the sub-section is the
+        chart's rules text. Allied and Lords of War Detachments the section does not chart stay the game
+        system's."""
+        sec = next((s for s in self.sections if s["title"] == "Detachments"), None)
+        charts = []  # {name, rows: [(slot, low, high)], text, kind, sub}
+        for sub in (sec["subs"] if sec else []):
+            base = re.sub(r"\s+Organi[sz]ation Chart$", "", sub["title"])
+            parts, label, notes, cols = {}, None, [], None
+            for ln in sub["lines"]:
+                b = re.fullmatch(r"\*\*(.+?)\*\*", ln.strip())
+                if b:
+                    label = b.group(1)
+                    if not re.match(r"(Primary|Support|Allied|Lords of War) Detachment", label):
+                        notes.append(label + ".")
+                    continue
+                cells = [c.strip() for c in ln.strip().strip("|").split("|")] if ln.startswith("|") else None
+                if cells and all(re.fullmatch(r":?-+:?", c) for c in cells):
+                    continue
+                if cells and cells[0] == "Battlefield Role":
+                    cols = cells[1:]
+                    continue
+                if cells:
+                    role = re.match(r"(HQ|Elites|Troops|Fast Attack|Heavy Support|Lords of War|Primarch)"
+                                    r"(?: \((Compulsory|Optional)\))?$", cells[0])
+                    if role and cols and cols[0] == "Minimum" and label and re.match(r"(Primary|Support) Detachment", label):
+                        parts.setdefault(label, []).append((role.group(1), cells[1], cells[2]))
+                    elif role and cols and cols[0] != "Minimum" and all(re.fullmatch(r"\d+(?:-\d+)?", c) for c in cells[1:]):
+                        for col, val in zip(cols, cells[1:]):
+                            lo, _, hi = val.partition("-")
+                            hi = hi or lo
+                            if role.group(2) == "Optional":  # "Lords of War (Optional) | 0-2"
+                                lo = "0"
+                            parts.setdefault(col if len(cols) > 1 else "", []).append((role.group(1), lo, hi))
+                    else:
+                        notes.append(f"{cells[0]}: {', '.join(cells[1:])}.")
+                    continue
+                if ln.strip() and not ln.startswith(("_", "#")) and not re.fullmatch(r"\*[^*].*\*", ln.strip()):
+                    notes.append(("• " if ln.startswith("- ") else "") + strip_md(ln[2:] if ln.startswith("- ") else ln))
+            text = "\n".join(notes)
+            for label, rows in parts.items():
+                if label.startswith(("Primary Detachment", "Support Detachment")):
+                    kind = "Primary" if label.startswith("Primary") else "Support"
+                    name = f"{re.sub(r'\s+Detachment$', '', base)}: {kind} Detachment"
+                else:  # a chart split in columns is one formation: "Drukhari Realspace Raiders: Kabal Detachment"
+                    kind = "Primary" if label else None
+                    name = f"{re.sub(r'\s+Detachment$', '', base)}: {label}" if label else base
+                totals = {}
+                for slot, lo, hi in rows:  # "Troops (Compulsory) | 1" and "Troops | 0-2": 1 to 3
+                    l0, h0 = totals.get(slot, (0, 0))
+                    totals[slot] = (l0 + (int(lo) if lo.isdigit() else 0), h0 + (int(hi) if hi.isdigit() else 0))
+                charts.append(dict(name=name, rows=totals, text=text, kind=kind, base=base))
+        if not charts:
+            return
+        if not any(c["kind"] == "Primary" and c["name"].endswith("Primary Detachment") for c in charts):
+            first = charts[0]["base"]  # "Aeldari Warhost Detachment": the army's main formation
+            for c in charts:
+                if c["base"] == first:
+                    c["kind"] = "Primary"
+        for c in charts:
+            fid = c["fid"] = make_id("force", self.faction, c["name"])
+            fe = c["entry"] = el(child(self.root, "forceEntries"), "forceEntry", name=c["name"], hidden=False, id=fid)
+            cl = el(fe, "categoryLinks")
+            a = el(cl, "categoryLink", name=ALLEGIANCE_CATEGORY[1], hidden=False, id=make_id(fid, "allegiance"),
+                   targetId=ALLEGIANCE_CATEGORY[0], primary=False)
+            add_constraint(a, "min", 2, fid + "allegiance min", children=True)  # the Allegiance and the army entry
+            add_constraint(a, "max", 2, fid + "allegiance max", children=True)
+            for slot, (low, high) in c["rows"].items():
+                cat, cname, _ = SLOTS[slot][0]
+                link = el(cl, "categoryLink", name=cname, hidden=False, id=make_id(fid, cname), targetId=cat, primary=False)
+                if low:
+                    add_constraint(link, "min", low, fid + cname + "min", scope="force", children=True)
+                add_constraint(link, "max", high, fid + cname + "max", scope="force", children=True)
+            if c["text"]:
+                title = re.sub(r"\s+Detachment$", "", c["base"]) if c["name"] != c["base"] else c["base"]
+                add_rule(fe, title, c["text"], fid)
+            once = make_id(fid, "once")
+            el(el(fe, "constraints"), "constraint", type="max", value=0 if c["kind"] == "Support" else 1,
+               field="forces", scope="roster", shared=True, id=once, percentValue=False,
+               includeChildSelections=False, includeChildForces=False)
+        primaries = [c for c in charts if c["kind"] == "Primary"]
+
+        def when(c, value, other, kind="atLeast"):
+            m = el(child(c["entry"], "modifiers"), "modifier", type="set", value=value, field=make_id(c["fid"], "once"))
+            el(el(m, "conditions"), "condition", type=kind, value=1, field="forces", scope="roster", childId=other,
+               shared=True, includeChildSelections=True, includeChildForces=True)
+
+        for c in charts:
+            own = next((p for p in primaries if p["base"] == c["base"]), None)
+            if c["kind"] == "Primary":
+                for p in primaries:  # one Primary chart per army (a split chart's parts go together)
+                    if p["base"] != c["base"]:
+                        when(c, 0, p["fid"])
+            elif c["kind"] == "Support" and own:
+                when(c, 1, own["fid"])  # beside its own chart's Primary only
+            needs = re.search(r"may only be selected if the army includes an? (.+?) Primary Detachment", c["text"])
+            if needs:
+                req = next((p for p in primaries if norm(p["name"]).startswith(norm(needs.group(1)))), None)
+                if req:
+                    cid = make_id(c["fid"], "needs primary")
+                    el(c["entry"].find("constraints"), "constraint", type="max", value=0, field="forces", scope="roster",
+                       shared=True, id=cid, percentValue=False, includeChildSelections=False, includeChildForces=False)
+                    m = el(child(c["entry"], "modifiers"), "modifier", type="set", value=1, field=cid)
+                    el(el(m, "conditions"), "condition", type="atLeast", value=1, field="forces", scope="roster",
+                       childId=req["fid"], shared=True, includeChildSelections=True, includeChildForces=True)
+            if c["kind"] != "Primary" and re.search(r"different Civilization than the army's Primary", c["text"]):
+                for p in primaries:  # an Allied Detachment of another civilization: not beside this list's Primary
+                    when(c, 0, p["fid"])
+            if re.search(r"may never be selected as the army's Warlord", c["text"]):
+                for wl in self.shared_entries.iter("entryLink"):
+                    if wl.get("targetId") != WARLORD_ENTRY:
+                        continue
+                    cmax = next((x for x in wl.findall("constraints/constraint") if x.get("type") == "max"), None)
+                    if cmax is None:
+                        continue
+                    m = el(child(wl, "modifiers"), "modifier", type="set", value=0, field=cmax.get("id"))
+                    el(el(m, "conditions"), "condition", type="instanceOf", value=1, field="selections",
+                       scope="ancestor", childId=c["fid"], shared=True, includeChildSelections=True,
+                       includeChildForces=False)
+            only = re.search(r"may only be selected as part of the army's Primary Detachment: (.+?)\.", c["text"])
+            if only and c["kind"] == "Support":
+                for n in re.split(r",\s*|\s+and\s+", only.group(1)):
+                    ds = next((d for d in self.datasheets if norm(d["name"]) == norm(n)), None)
+                    for link in (self.root.find("entryLinks") if ds else []):
+                        if link.get("targetId") != self.units[ds["name"]]:
+                            continue
+                        cid = add_constraint(link, "max", 1, make_id(link.get("id"), "primary only"), scope="force",
+                                             children=True)
+                        m = el(child(link, "modifiers"), "modifier", type="set", field=cid, value=0)
+                        el(el(m, "conditions"), "condition", type="instanceOf", value=1, field="selections",
+                           scope="ancestor", childId=c["fid"], shared=True, includeChildSelections=True,
+                           includeChildForces=False)
+
     def build_entry_links(self):
         links = child(self.root, "entryLinks")
         platoons = {c["name"] for c in self.composites}
@@ -5275,6 +5422,7 @@ class Builder:
         self.build_army_entry()
         self.build_force_entries()
         self.build_entry_links()
+        self.build_detachment_charts()
         self.apply_rites()
         self.apply_subfaction_rules()
         self.regimental_line()
