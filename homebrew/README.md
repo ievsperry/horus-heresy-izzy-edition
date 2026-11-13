@@ -227,7 +227,9 @@ loading. The script prints anything in the doc it could not place.
   the Warlord and its Effects and Limitations change slots and bar units as before. Nemesis Strike makes Grey
   Knight Dreadlancer Talons non-Compulsory Troops with the Line sub-type; Paladin Retinue and Purifier Crusade
   Troops may fill Compulsory slots. A "**Brotherhood Trait: X.**" line names its Brotherhood's rules
-  ("Fury of the Vanguard: Unwavering"). Dreadfists, nemesis daemon hammers and nemesis greatswords are
+  ("Fury of the Vanguard: Unwavering"). The 0-1 Aegis Bastion Squad (Elites) wears Aegis-Cataphractii
+  Terminator armour; only its Warden-Justicar is a Brotherhood Psyker, so a rule or "Psychic Discipline (...)"
+  marked "(Warden-Justicar only)" gives the discipline pick to that model alone. Dreadfists, nemesis daemon hammers and nemesis greatswords are
   Unwieldy (3).
 - Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,
   which gives its units Order (X) with that Order's rules, Advanced Reaction and Warlord Trait. The army's Faith

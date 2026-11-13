@@ -335,7 +335,7 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 | 2.0 slot | Grey Knights units |
 | --- | --- |
 | HQ | Grand Master, Brother-Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus |
-| Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary, Servitors |
+| Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary, Aegis Bastion Squad (0-1), Servitors |
 | Troops | Strike Squad, Brotherhood Terminator Squad |
 | Dedicated Transports | Rhino\*, Razorback\* |
 | Fast Attack | Interceptor Squad, Interceptor Terminator Squad, Grey Knight Dreadlancer Talon, Stormraven Gunship |
@@ -1212,6 +1212,84 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | **The Knight of the Flame may take:** |  |
 | – Brotherhood Psyker | +15 points |
 
+### 0-1 Aegis Bastion Squad — 265 pts
+
+*Clad in archaic, heavy-plated Cataphractii Terminator armour engraved with hexagrammic wards and silvered runes of banishment, Aegis Bastion Squads serve as the immovable bulwark of a Grey Knights strike force. Forged in the hidden vaults of Deimos during the Chapter's earliest days, their reinforced shield generators and psychic matrices allow them to weather the most apocalyptic daemonic assaults without yielding a single step.*
+
+A Detachment with the Legiones Astartes (Grey Knights) special rule may include no more than one Aegis Bastion Squad.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Bastion Brother | 6 | 4 | 4 | 4 | 4 | 2 | 4 | 2 | 9 | 2+ | 40mm |
+| Warden-Justicar | 6 | 4 | 4 | 4 | 4 | 2 | 4 | 3 | 9 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 4 Bastion Brothers
+- 1 Warden-Justicar
+
+**Wargear**
+
+- Aegis-Cataphractii Terminator armour
+- Nemesis force sword
+- Storm bolter\*
+
+**Unit Type**
+
+- Bastion Brother: Infantry (Heavy, Psyker)
+- Warden-Justicar: Infantry (Character, Heavy, Psyker)
+
+**Special Rules**
+
+- Brotherhood (X)
+- Brotherhood of Psykers
+- Brotherhood Psyker (Warden-Justicar only)
+- Bulky (2)
+- Chosen Warriors
+- Deep Strike
+- Hatred (Daemons)
+- Legiones Astartes (Grey Knights)
+- Minor Psychic Powers (Warden-Justicar only)
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy) (Warden-Justicar only)
+- Relentless
+- Stubborn
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The Aegis Bastion Squad may include:** |  |
+| – Up to 5 additional Bastion Brothers | +45 points each |
+| **The entire unit may take:** |  |
+| – Psybolts | +5 points per model |
+| **Any model may exchange its nemesis force sword for one of the following:** |  |
+| – Nemesis force halberd | Free |
+| – Two nemesis force falchions | Free |
+| – Nemesis force warding staff | +5 points each |
+| – Nemesis daemon hammer | +15 points each |
+| **One Bastion Brother may exchange its storm bolter for:** |  |
+| – Narthecium | +15 points |
+| **For every five models in the unit, one Bastion Brother may exchange its storm bolter for one of the following:** |  |
+| – Incinerator | +15 points |
+| – Psycannon | +20 points |
+| – Psilencer | +20 points |
+| **The Warden-Justicar may exchange his storm bolter for one of the following:** |  |
+| – Incinerator | +15 points |
+| – Psycannon | +20 points |
+| – Psilencer | +20 points |
+| **The Warden-Justicar must select one of the following Minor Psychic Powers:** |  |
+| – Astral Aim | Free |
+| – Cleansing Flame | Free |
+| – Gates of Infinity | Free |
+| – Hammerhand | Free |
+| – Holocaust | Free |
+| – Warp Quake | Free |
+| – Warp Shroud | Free |
+| **The Warden-Justicar may take:** |  |
+| – Grenade harness\* | +10 points |
+| – Melta bombs\* | +10 points |
+
 ### Servitors — 40 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -1751,6 +1829,12 @@ Wargear marked with an asterisk on a datasheet (power armour, artificer armour, 
 ### Aegis Artificer Armour
 
 A model equipped with Aegis Artificer armour gains a 2+ Armour Save. Models may also Run, even if they have the Heavy sub-type, but their Initiative is still calculated at -1.
+
+### Aegis-Cataphractii Terminator Armour
+
+*A rare, heavily modified variant of the Cataphractii pattern maintained exclusively by the armourers of Titan, incorporating sanctified silvered ceramite and psychically attuned shield capacitors.*
+
+A model equipped with Aegis-Cataphractii Terminator Armour has a 2+ Armour Save and a 4+ Invulnerable Save, and gains the Adamantium Will (3+), Relentless and Shrouded (6+) special rules and the Heavy Unit Sub-type. A model equipped with Aegis-Cataphractii Terminator Armour may not make Run moves in the Shooting phase, nor may it make Sweeping Advances in the Assault phase.
 
 ### Aegis Dreadknight Armour
 

@@ -4532,6 +4532,9 @@ class Builder:
                 for name, pid in items:
                     self.link(gl, pid, name, gkey, maximum=1)
         disc = next((r for r in ds["rules"] if norm(r).startswith("psychic discipline")), None)
+        only = re.search(r"\(([^()]+) only\)$", disc or "")
+        if only and self.disciplines and not forms(only.group(1)) & forms(m["profile"]["name"]):
+            disc = None  # "Psychic Discipline (...) (Warden-Justicar only)": not this model's
         if disc and self.disciplines and "Psyker" in m["types"]:
             self.discipline_pick(disc, m, links, groups)
             disc = None
