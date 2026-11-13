@@ -214,7 +214,7 @@ Grey Knights use the 2.0 core reactions as normal, plus this advanced reaction. 
 
 The Grey Knights are organised into eight Brotherhoods, plus the Purifiers. Brotherhoods work like Ork Klans and Sororitas Orders.
 
-**Brotherhood (X).** When building an army, choose one Brotherhood for each detachment. Every unit in that detachment gains Brotherhood (X). Kaldor Draigo, Castellan Crowe and Supreme Grand Master Janus may join any Brotherhood; Brother-Captain Stern, Grand Master Voldus and Grand Master Iapto only the 3rd Brotherhood; Grand Master Koios only the 1st, Satre the 2nd, Yotun the 4th, Epimetheus the 5th and Ogen the 6th; Grand Master Khyron the 7th or the 8th. Each shows only in a Detachment of his Brotherhood. Each Brotherhood's Advanced Reaction is available in addition to Psychic Ward and costs one point of the Reaction Allotment†.
+**Brotherhood (X).** When building an army, choose one Brotherhood for each detachment. Every unit in that detachment gains Brotherhood (X). Kaldor Draigo, Castellan Crowe and Supreme Grand Master Janus may join any Brotherhood; Brother-Captain Stern, Grand Master Voldus and Grand Master Iapto only the 3rd Brotherhood; Grand Master Koios only the 1st, Satre the 2nd, Yotun the 4th, Epimetheus the 5th and Ogen the 6th; Grand Master Khyron the 7th or the 8th. Each may only be taken in a Detachment of his Brotherhood; taken in any other, the army builder shows an error. Each Brotherhood's Advanced Reaction is available in addition to Psychic Ward and costs one point of the Reaction Allotment†.
 
 ### 1st Brotherhood, the Swordbearers
 
