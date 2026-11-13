@@ -4992,6 +4992,17 @@ class Builder:
             add_rule(unit, title, line, uid + line[:30])
             return
         inner = self.gst_inner_rules.get(norm(line))
+        if inner and norm(line) == norm("Independent Character"):
+            # the game system's rule lives in its Independent Character category, not its shared rules: a
+            # model in that category has the rule (and joins units as one), so the category is given instead
+            cat, cname = TYPE_CATEGORIES["Independent Character"]
+            models = [me for me in unit.findall("selectionEntries/selectionEntry") if me.get("type") == "model"]
+            chars = [me for me in models if any(c.get("targetId") == TYPE_CATEGORIES["Character"][0]
+                                                for c in me.findall("categoryLinks/categoryLink"))] or models
+            for me in chars:
+                if not any(c.get("targetId") == cat for c in me.findall("categoryLinks/categoryLink")):
+                    add_category(me, cat, cname, me.get("id"))
+            return
         if inner:  # a datasheet rule the game system defines inside one of its entries
             el(child(unit, "infoLinks"), "infoLink", name=inner[1], id=make_id(uid, "info", line), hidden=False,
                targetId=inner[0], type="rule")

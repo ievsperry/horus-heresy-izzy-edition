@@ -259,6 +259,9 @@ loading. The script prints anything in the doc it could not place.
   "Warlord: X" rule may name a Brotherhood's own trait ("Warlord: First Among Equals"): the model takes that trait
   when it is the Warlord, in place of the pick. Dreadfists, nemesis daemon hammers and nemesis greatswords are
   Unwieldy (3).
+- "Independent Character" in a datasheet's Special Rules gives its character models (every model if none is a
+  Character) the game system's Independent Character category, which carries the rule. The game system defines
+  that rule inside the category, not as a shared rule, so a rule link to it does not resolve.
 - A unit with a model of the Unique Sub-type may be taken once per force, as official Unique characters are
   (Constantin Valdor): the builder adds that limit unless the doc already sets one (unique_limits).
 - Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,

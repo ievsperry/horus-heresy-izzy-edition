@@ -1096,7 +1096,7 @@ The unit may take a Sororitas Rhino or Immolator as a Dedicated Transport. This 
 | Option | Cost |
 | --- | --: |
 | **The squad may take:** |  |
-| – Up to 5 additional Sisters Repentia | +15 points each |
+| – Up to 15 additional Sisters Repentia | +15 points each |
 
 ### Sanctifiers — 95 pts
 
