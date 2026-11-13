@@ -16,6 +16,9 @@ Brotherhood of Psykers gives the Dreadnoughts the Psyker sub-type only (Liber Da
 A Dreadnought Talon may take a Teleport Harness (the doc's wargear: Deep Strike) for +40 points per Dreadnought,
 and the Teleport Harness links the game system's Deep Strike rule.
 
+Grey Knights take only their own six Rites of War; gk_rites adds the slots, Line, Support Squad, compulsory-Troops,
+ban and Teleport Assault effects the builder's Rite reading misses for their wording.
+
 The Rites of War that bar these kinds of unit bar the official ones too: Purifier Crusade (no Land Raiders) hides
 the official Land Raiders, and Teleport Assault (no Dedicated Transports) hides the Rhino.
 
@@ -222,19 +225,134 @@ def rite_leaders(b):
                         mods.remove(m)
 
 
-LEGION_RITES = "cf3e-1d75-6f91-651f"  # the game system's "Rites of War" group the Legion catalogues offer
+# The Grey Knights' own Rites of War (the generic Legion ones are not offered). The builder reads the slots, bans
+# and Warlord from the md; what its reading misses for these Rites' wording is done here, unit by unit.
+CHAMPION_TROOPS = ["Paladin Squad", "Aegis Bastion Squad"]  # Elites squads all in Terminator armour
+CHAMPION_HEAVY = ["Aegis Bastion Squad"]  # all in Aegis-Cataphractii
+CHAMPION_FAST = ["Brotherhood Tartaros Command Squad"]  # all in Aegis Tartaros (Interceptor Terminators are FA already)
+COMPULSORY_ONLY = {  # Rite: the only units that may fill its Compulsory Troops
+    "Prognosticar Vanguard": ["Prognosticar Vanguard Squad", "Watcher-in-the-Veil Squad"],
+    "Purifier Crusade": ["Purifier Squad", "Purifier Bladeguard Squad"],
+    "Paladin Retinue": ["Paladin Squad"],
+    "Nemesis Strike": ["Strike Squad", "Brotherhood Terminator Squad"],
+    "Champions of Titan": CHAMPION_TROOPS + ["Brotherhood Terminator Squad"],
+}
+RITE_BANS = {  # Rite: units it bars (the official Dreadnoughts and Land Raiders by their link names)
+    "Purifier Crusade": ["Dreadknight Talon", "Grey Knight Dreadlancer Talon", "Grand Master in Nemesis Dreadknight",
+                         "Castra Ferrum Dreadnought Talon", "Contemptor Dreadnought Talon", "Land Raider Crusader",
+                         "Land Raider Redeemer", "Land Raider Proteus Carrier Squadron", "Land Raider Phobos Squadron"],
+    "Paladin Retinue": ["Strike Squad", "Interceptor Squad", "Purgation Squad"],
+}
+SINGLE_SLOTS = {"Purifier Crusade": ["Heavy Support"], "Paladin Retinue": ["Fast Attack", "Heavy Support"]}
+LINE_UNITS = {"Purifier Crusade": ["Purifier Squad", "Purifier Bladeguard Squad"], "Paladin Retinue": ["Paladin Squad"],
+              "Nemesis Strike": ["Grey Knight Dreadlancer Talon"], "Champions of Titan": CHAMPION_TROOPS}
+TERMINATOR_WORDS = ("terminator armour", "cataphractii", "tartaros")
 
 
-def legion_rites(b):
-    """Grey Knights may take a Legion Rite of War instead of their own: the game system's Rites of War group (the
-    Legion catalogues' own, whose Legion-specific Rites hide unless their Legion is chosen) is offered inside the
-    Grey Knights "Rite of War" choice, and that choice's limit of one counts it too."""
-    army = b.root.find(f"selectionEntries/selectionEntry[@id='{make_id('army', b.faction)}']")
-    g = next(x for x in army.iter("selectionEntryGroup") if x.get("name") == "Rite of War")
-    for c in g.findall("constraints/constraint"):
-        c.set("includeChildSelections", "true")
-    el(child(g, "entryLinks"), "entryLink", import_=True, name="Legion Rites of War", hidden=False,
-       id=make_id(g.get("id"), "legion rites"), type="selectionEntryGroup", targetId=LEGION_RITES)
+def gk_rites(b):
+    rites = {r["name"]: r for r in b.rite_specs}
+    links = b.root.find("entryLinks")
+    ds_by = {d["name"]: d for d in b.datasheets}
+    unit = lambda n: b.shared_entries.find(f"selectionEntry[@id='{b.units[n]}']")
+    compulsory = next(c for c in SLOTS["Troops"] if c[1] == "Compulsory Troops:")[0]
+
+    def has_cat(link, cat):
+        return any(c.get("targetId") == cat for c in link.findall("categoryLinks/categoryLink"))
+
+    def rite_links(name):
+        return [l for l in links if l.get("name") == name]
+
+    def slot(rite, name, s, comp):
+        """The Rite's own link for the unit in slot s: the builder's if it made one, else a new one."""
+        own = make_id("rite root", b.faction, rite["name"], name)
+        mine = next((l for l in links if l.get("id") == own and has_cat(l, SLOTS[s][0][0])), None)
+        if mine is None:
+            if any(l.get("id") == own for l in links):  # the Rite's link for another slot: this one is the second
+                before = len(links)
+                b.rite_slot(links, rite, ds_by[name], b.units[name], s, comp)
+                e = links[before]
+                e.set("id", make_id(own, s))
+                for c in e.iter("categoryLink"):
+                    c.set("id", make_id(c.get("id"), s))
+                return
+            b.rite_slot(links, rite, ds_by[name], b.units[name], s, comp)
+        elif comp and s == "Troops" and not has_cat(mine, compulsory):
+            el(child(mine, "categoryLinks"), "categoryLink", targetId=compulsory, id=make_id(own, "compulsory"),
+               primary=False, name="Compulsory Troops:")
+
+    def error(rite, key, conds):
+        entry = b.root.find(f"selectionEntries/selectionEntry//selectionEntry[@id='{rite['id']}']")
+        cid = add_constraint(entry, "max", 1, make_id(rite["id"], "gk limit", key))
+        mod = el(child(entry, "modifiers"), "modifier", type="set", field=cid, value=0)
+        grp = el(el(mod, "conditionGroups"), "conditionGroup", type="or")
+        conds(el(grp, "conditions"))
+
+    # Champions of Titan: Terminator squads as Troops, Cataphractii as Heavy Support, Tartaros as Fast Attack;
+    # every unit must be in Terminator armour
+    rite = rites["Champions of Titan"]
+    for n in CHAMPION_TROOPS:
+        slot(rite, n, "Troops", True)
+    for n in CHAMPION_HEAVY:
+        slot(rite, n, "Heavy Support", False)
+    for n in CHAMPION_FAST:
+        slot(rite, n, "Fast Attack", False)
+    termi = {d["name"] for d in b.datasheets
+             if any(w in " ".join(map(str, d["wargear"] + d["options"])).lower() for w in TERMINATOR_WORDS)}
+    others = sorted({l.get("targetId") for l in links if l.get("name") not in termi})
+    error(rite, "terminators", lambda c: [el(c, "condition", type="atLeast", value=1, field="selections", scope="force",
+          childId=t, shared=True, includeChildSelections=True, includeChildForces=False) for t in others])
+
+    # Prognosticar Vanguard: Support Squad (no Compulsory Troops slot) but under this Rite; Exactors as Troops
+    rite = rites["Prognosticar Vanguard"]
+    for n in COMPULSORY_ONLY["Prognosticar Vanguard"]:
+        for l in rite_links(n):
+            for c in l.findall("categoryLinks/categoryLink"):
+                if c.get("targetId") == compulsory:
+                    l.find("categoryLinks").remove(c)
+            b.rite_condition(el(child(l, "modifiers"), "modifier", type="add", field="category", value=compulsory), rite["id"])
+        for il in unit(n).findall("infoLinks/infoLink"):
+            if il.get("name") == "Support Squad":
+                b.rite_condition(el(child(il, "modifiers"), "modifier", type="set", field="hidden", value="true"), rite["id"])
+    slot(rite, "Exactor Squad", "Troops", False)
+    # Purifier Crusade and Paladin Retinue: their Troops may fill the compulsory slots
+    for n in LINE_UNITS["Purifier Crusade"]:
+        slot(rites["Purifier Crusade"], n, "Troops", True)
+    slot(rites["Paladin Retinue"], "Paladin Squad", "Troops", True)
+
+    # the Troops a Rite's Compulsory Troops must be
+    for name, allowed in COMPULSORY_ONLY.items():
+        rite = rites[name]
+        for l in links:
+            if l.get("name") not in allowed and (has_cat(l, compulsory) or l.get("name") in ("Prognosticar Vanguard Squad",
+                                                                                            "Watcher-in-the-Veil Squad")):
+                b.rite_condition(el(child(l, "modifiers"), "modifier", type="remove", field="category", value=compulsory),
+                                 rite["id"])
+    for name, units in LINE_UNITS.items():
+        for n in units:
+            b.rite_line(unit(n), rites[name]["id"])
+    for name, banned in RITE_BANS.items():
+        rite = rites[name]
+        for l in links:
+            if l.get("name") in banned:
+                b.rite_condition(el(child(l, "modifiers"), "modifier", type="set", field="hidden", value="true"), rite["id"])
+        ids = sorted({l.get("targetId") for l in links if l.get("name") in banned})
+        error(rite, "bans", lambda c, ids=ids: [el(c, "condition", type="atLeast", value=1, field="selections",
+              scope="force", childId=t, shared=True, includeChildSelections=True, includeChildForces=False) for t in ids])
+    for name, slots in SINGLE_SLOTS.items():
+        for s in slots:
+            b.rite_error(rites[name], "one " + s, lambda c, cat=SLOTS[s][0][0]: el(c, "condition", type="greaterThan",
+                value=1, field="selections", scope="force", childId=cat, shared=True, includeChildSelections=True,
+                includeChildForces=False))
+
+    # Teleport Assault: Infantry and Dreadknights without personal teleporters gain the rule; Dreadknights alone
+    rite = rites["Teleport Assault"]
+    for d in b.datasheets:
+        kit = " ".join(map(str, d["wargear"])).lower()
+        if "personal teleporter" in kit or not any(re.search(r"\b(Infantry|Armiger)\b", t) for t in d["types"]):
+            continue
+        b.rite_rule(unit(d["name"]), b.units[d["name"]], rite["id"], "Teleport Assault")
+    for n in ("Dreadknight Talon", "Grey Knight Dreadlancer Talon"):
+        b.rite_size(unit(n), rite["id"], 1)
 
 
 def apply(b):
@@ -243,7 +361,7 @@ def apply(b):
     purifier_bladeguard(b)
     brotherhood_only(b)
     rite_leaders(b)
-    legion_rites(b)
+    gk_rites(b)
     harness = b.shared_entries.find("selectionEntry[@name='Teleport Harness']")
     el(child(harness, "infoLinks"), "infoLink", name="Deep Strike", id=make_id(harness.get("id"), "deep strike"),
        hidden=False, targetId=DEEP_STRIKE, type="rule")
