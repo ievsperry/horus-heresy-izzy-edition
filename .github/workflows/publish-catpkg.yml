@@ -1,12 +1,31 @@
-# This workflow adds the necessary assets to every release
-# For more details, visit https://github.com/BSData/publish-catpkg
+# This workflow adds the files BattleScribe and New Recruit update from to every release: one .catz/.gstz per
+# data file, the .catpkg.json repository description, the .bsi data index and the .bsr bundle.
+# It replaces the BSData/publish-catpkg action, which GitHub can no longer resolve (every release from v2.1.8
+# failed with "Unable to resolve action bsdata/publish-catpkg, repository not found"); the files and their names
+# are the same as that action's.
 name: Publish catpkg
 on:
   release:
     types: [ published, edited ]
+
+permissions:
+  contents: write
+
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: BSData/publish-catpkg@v1
+    - uses: actions/checkout@v4
+
+    - name: Build the update files
+      env:
+        TAG: ${{ github.event.release.tag_name }}
+        PUBLISHED: ${{ github.event.release.published_at }}
+        TITLE: ${{ github.event.release.name }}
+      run: python3 .github/scripts/publish_catpkg.py "$GITHUB_REPOSITORY" "$TAG" "$PUBLISHED" "$TITLE"
+
+    - name: Attach them to the release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: ${{ github.event.release.tag_name }}
+        files: dist/*
