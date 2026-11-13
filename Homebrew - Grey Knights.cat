@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="37" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="38" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -438,6 +438,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Purifier Bladeguard Squad" hidden="false" id="6cf9-48d2-7146-e789" type="selectionEntry" targetId="839b-7c8d-f05b-5aff">
+      <modifiers>
+        <modifier type="set" field="c114-43a5-30b4-248d" value="-1">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="fcdf-96a7-d7bc-2110" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c114-43a5-30b4-248d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
       </constraints>
@@ -9866,7 +9873,7 @@
       <description>Instead of acting solely as a ranged template weapon, a melee Purifier squad's psychic fire erupts outward in close combat. Cleansing Aura: at the start of each Fight sub-phase, before any Initiative steps are resolved, every enemy unit locked in combat with one or more units with this special rule suffers D6 automatic hits per 5 models in the Purifier unit (resolved at Strength 4, AP 4, Ignores Cover, Soul Blaze). Models with the Daemon, Corrupted, Corrupted Engine, or Malefic Unit Type or Sub-type suffer 2D6 automatic hits instead.</description>
     </rule>
     <rule name="Soul Blaze" id="dc95-4c17-7e8c-5be2" hidden="false" publicationId="c336-0f01-71db-7a8f">
-      <description>Whenever an enemy unit suffers one or more unsaved Wounds from an attack with the Soul Blaze special rule, it is set ablaze; place a marker next to the unit as a reminder. A unit cannot have more than one Soul Blaze marker on it at a time, regardless of how many Soul Blaze attacks wound it. At the end of every turn (both yours and your opponent's), roll a D6 for each unit with a Soul Blaze marker. On a 1–3 the flames burn out and the marker is removed. On a 4+ the unit stays ablaze and immediately suffers D3 hits resolved at Strength 4, AP 5, with the Ignores Cover special rule. Any Wounds caused by Soul Blaze are Randomly Allocated among the models in the burning unit.</description>
+      <description>Whenever an enemy unit suffers one or more unsaved Wounds from an attack with the Soul Blaze special rule, it is set ablaze; place a marker next to the unit as a reminder. A unit cannot have more than one Soul Blaze marker on it at a time, regardless of how many Soul Blaze attacks wound it. At the end of every turn (both yours and your opponent's), roll a D6 for each unit with a Soul Blaze marker. On a 1–3 the flames burn out and the marker is removed. On a 4+ the unit stays ablaze and immediately suffers D3 hits resolved at Strength 4, AP 5, with the Ignores Cover special rule. Any Wounds caused by Soul Blaze are Randomly Allocated among the models in the burning unit. Against models with the Daemon, Corrupted or Malefic Unit Type or Sub-type, Soul Blaze hits gain Rending (6+).</description>
     </rule>
     <rule name="Teleport Strike" id="df3e-b9ef-b7f6-8dc6" hidden="false" publicationId="c336-0f01-71db-7a8f">
       <description>Grey Knights in Aegis Terminator armour, Strike Squads and Interceptor Squads have Deep Strike, and do not scatter if any friendly Grey Knights unit is within 6" of the target point†.</description>

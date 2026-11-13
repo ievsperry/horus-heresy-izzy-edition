@@ -22,6 +22,8 @@ the official Land Raiders, and Teleport Assault (no Dedicated Transports) hides 
 The Aegis Captain may take an Aegis Bastion Squad as a Retinue (no Force Organisation slot), as an official
 Legion leader takes a Command Squad.
 
+The 0-1 Purifier Bladeguard Squad has no limit in a Detachment whose Brotherhood is the 8th.
+
 Grey Knights are always Loyalist: a force that picks the Traitor allegiance may not take the Grey Knights army
 entry (BattleScribe reports it as over its limit)."""
 from build_catalogue import PTS, SLOTS, TYPE_CATEGORIES, UNIT_CATEGORY, add_constraint, child, el, make_id
@@ -107,6 +109,8 @@ def loyalist_only(b):
     """The Aegis Captain may take an Aegis Bastion Squad as a Retinue (no Force Organisation slot), as an official
 Legion leader takes a Command Squad.
 
+The 0-1 Purifier Bladeguard Squad has no limit in a Detachment whose Brotherhood is the 8th.
+
 Grey Knights are always Loyalist: with Traitor chosen in the force, the army entry may not be taken."""
     army = b.root.find(f"selectionEntries/selectionEntry[@id='{make_id('army', b.faction)}']")
     cmax = next(c for c in army.findall("constraints/constraint") if c.get("type") == "max")
@@ -130,9 +134,24 @@ def aegis_retinue(b):
     add_constraint(squad, "max", 1, make_id(sid, "one per force"), scope="force", children=True)
 
 
+def purifier_bladeguard(b):
+    """The 0-1 Purifier Bladeguard Squad is not limited to one in a Detachment whose Brotherhood is the 8th."""
+    uid = b.units["Purifier Bladeguard Squad"]
+    eighth = next(e.get("id") for e in b.root.iter("selectionEntry") if e.get("name", "").startswith("8th Brotherhood"))
+    for link in b.root.find("entryLinks"):
+        if link.get("targetId") != uid:
+            continue
+        for c in link.findall("constraints/constraint"):
+            if c.get("type") == "max" and c.get("scope") == "force":
+                m = el(child(link, "modifiers"), "modifier", type="set", field=c.get("id"), value=-1)
+                el(el(m, "conditions"), "condition", type="atLeast", value=1, field="selections", scope="force",
+                   childId=eighth, shared=True, includeChildSelections=True, includeChildForces=False)
+
+
 def apply(b):
     loyalist_only(b)
     aegis_retinue(b)
+    purifier_bladeguard(b)
     harness = b.shared_entries.find("selectionEntry[@name='Teleport Harness']")
     el(child(harness, "infoLinks"), "infoLink", name="Deep Strike", id=make_id(harness.get("id"), "deep strike"),
        hidden=False, targetId=DEEP_STRIKE, type="rule")
