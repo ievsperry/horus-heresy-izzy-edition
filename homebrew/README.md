@@ -674,6 +674,19 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   of Change's Deep Strike rule beyond the Soul-Forge Engine, and the Warlord bar for the LI - Assassins and Agents
   HQs (Navigator, Lodge Priest, Cults Abominatio), whose entries live in another catalogue. It refuses to run on a
   catalogue that already has the expansion.
+- `python3 homebrew/apply_ruinstorm_dominions.py` applies the doc's Ætheric Dominions, Advanced Reactions and
+  Warlord Traits (run after `add_ruinstorm.py`):
+  - in `Daemon Library.cat`, each of the eight Ætheric Dominions, which every army that picks one uses (Daemons of
+    the Ruinstorm, Bound Daemons, Word Bearers, Legiones Astartes, Imperialis Militia), takes the doc's Detachment
+    Ability and Restriction as its rule, links the special rules it gives (Rage (2), Feel No Pain (5+), Shrouded
+    (6+) and so on) and shows its Advanced Reaction. The official Infernal Tempest Elemental Eruption weapon is gone.
+    Heedless Slaughter is an error in a Detachment with a Psyker, and Ravenous Dissolution in an Allied Detachment or
+    an army that has one; the other Restrictions are rule text;
+  - in `2022 - Daemons - Daemons of the Ruinstorm.cat`, Empyric Surge shows on the army's Ætheric Dominion entry, and
+    a Ruinstorm Warlord (Sovereign, Hierarch, Harbinger, or the Arch-Daemon for the Maw of Annihilation) picks one of
+    the three generic traits or its Detachment's Dominion trait (shown, and allowed, only with that Dominion). These
+    replace the official Ruinstorm and generic Warlord Traits; the Unbound characters keep their own.
+  It refuses to run twice.
 - `python3 homebrew/add_imperatus_wargear.py` adds the Imperatus Archaeotechnological Relics (Apex Digital Weapon,
   Displacer Matrix, Grav-Wave Generator) to the game system as a one-per-model group the Solar Auxilia Legate
   Marshal may take, and the Imperialis Militia Force Commander may take with the Armoury of Old Night Provenance

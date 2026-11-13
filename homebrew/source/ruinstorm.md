@@ -717,6 +717,177 @@ Projected from the shifting forms of Warp-Spawn and Cataclysm Brutes. If a model
 | Maw-Blades of Annihilation | - | +1 | 2 | Melee, Murderous Strike (4+), Precision Strikes (3+), Paired Weapon |
 | Morphing Warp-Weapons | - | +1 | 2 | Melee, Duellist's Edge (1), Precision Strikes (3+), Shred |
 
+## Ætheric Dominions
+
+These replace the official Ætheric Dominion rules for every army that selects an Ætheric Dominion. Each Dominion gives the Detachment its Detachment Ability and Restriction, an Advanced Reaction usable only by units aligned to that Dominion (costing 1 point of the Reaction Allotment), and a Warlord Trait.
+
+### Heedless Slaughter
+
+*Driven by an insatiable hunger for bloodshed, these entities abandon all sorcery and subtlety to slaughter their foes in close combat.*
+
+**Detachment Ability:** Models gain the Rage (2) and Furious Charge (1) special rules.
+
+**Restriction:** Units in a Detachment with this Dominion may not include any models with the Psyker Unit Sub-type (and may not manifest Psychic Powers or Psychic Weapons).
+
+**Advanced Reaction: Blood-Crazed Retaliation (Assault Phase)**
+
+- Trigger: Declared in the Assault phase, immediately after an enemy unit declares a Charge against a friendly unit aligned to Heedless Slaughter.
+- Effect: Every model in the reacting unit gains the Counter-Attack (1) special rule until the end of the current Assault phase, and adds +1 to its Weapon Skill Characteristic during the ensuing Fight sub-phase.
+
+**Warlord Trait: Herald of the Brass Throne**
+
+A Warlord with this Trait, and any unit he joins, gains the Preferred Enemy (Everything) special rule when fighting in the Assault phase, and adds +2" to its Charge Distance rolls. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
+
+### Putrid Corruption
+
+*Bloated with necrotic filth and surrounded by clouds of plague-flies, these daemons endure catastrophic firepower through sheer, rotting resilience.*
+
+**Detachment Ability:** Models gain the Feel No Pain (5+) special rule (or improve an existing Feel No Pain roll by +1, to a maximum of 4+).
+
+**Restriction:** Models in a Detachment with this Dominion may not make Run moves in the Shooting phase, nor may they make Sweeping Advances in the Assault phase.
+
+**Advanced Reaction: Cloud of Flies (Shooting Phase)**
+
+- Trigger: Declared in the Shooting phase, after an enemy unit selects a friendly unit aligned to Putrid Corruption as the target of a Shooting Attack, before any To Hit rolls are made.
+- Effect: Until the end of that Shooting Attack, all models in the reacting unit gain the Shrouded (4+) special rule, and the attacking enemy unit suffers a -1 penalty to its Ballistic Skill Characteristic (to a minimum of BS 1).
+
+**Warlord Trait: Lord of the Blighted Host**
+
+Friendly units with the Daemon Unit Type within 12" of a Warlord with this Trait improve their It Will Not Die roll by +1 (to a maximum of 4+) and re-roll failed Feel No Pain rolls of 1. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.
+
+### Infernal Tempest
+
+*Wreathed in prismatic warp-lightning and shifting illusions, these manifestations distort fate and unleash devastating empyric sorcery.*
+
+**Detachment Ability:** Models improve their Daemonic Invulnerable Save by +1 (to a maximum of 4+), and models with the Psyker Unit Sub-type may re-roll failed Psychic checks once per phase.
+
+**Restriction:** Models in a Detachment with this Dominion suffer a -1 penalty to their Strength Characteristic (to a minimum of S 1) when resolving close combat attacks in the Assault phase.
+
+**Advanced Reaction: Flickering Displacement (Shooting Phase)**
+
+- Trigger: Declared in the Shooting phase, after an enemy unit selects a friendly unit aligned to Infernal Tempest as the target of a Shooting Attack, before any To Hit rolls are made.
+- Effect: Until the end of that Shooting Attack, all models in the reacting unit improve their Daemonic Invulnerable Save by +1 (to a maximum of 3+), and if the attacking unit rolls any unmodified To Hit rolls of 1, the attacking unit immediately suffers D3 automatic hits at Strength 5, AP 3, Soul Blaze.
+
+**Warlord Trait: Architect of Fate**
+
+Once per game, while a Warlord with this Trait is on the battlefield, the controlling player may re-roll any single dice roll (including a single dice as part of a 2D6 roll) or force the opposing player to re-roll a single successful dice roll. Furthermore, the Warlord may manifest one additional Psychic Weapon or Psychic Power per phase. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.
+
+### Rapturous Sensation
+
+*Moving with blinding, hypnotic grace, these lithe predators strike before mortal eyes can track their blades.*
+
+**Detachment Ability:** Models gain a +1 bonus to their Initiative Characteristic, gain the Fleet (2) special rule, and inflict Rending (6+) on all close combat attacks (or improve an existing close combat Rending value by +1).
+
+**Restriction:** Models in a Detachment with this Dominion suffer a -1 penalty to their Toughness Characteristic (to a minimum of T 1).
+
+**Advanced Reaction: Quicksilver Feint (Assault Phase)**
+
+- Trigger: Declared in the Assault phase, immediately after an enemy unit completes a successful Charge against a friendly unit aligned to Rapturous Sensation.
+- Effect: During the ensuing Fight sub-phase, all models in the reacting unit fight at the Initiative 10 step regardless of their actual Initiative Characteristic, and enemy models locked in combat with the reacting unit suffer a -1 penalty to their Weapon Skill Characteristic (to a minimum of WS 1).
+
+**Warlord Trait: Sovereign of Excess**
+
+A Warlord with this Trait, and any unit he joins, gains the Hit & Run and Sudden Strike (1) special rules, and increases its Fear value by +1 (e.g., from Fear (1) to Fear (2)). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
+
+### Encroaching Ruin
+
+*Where these bleak, ash-shrouded manifestations tread, ceramite cracks, bunkers crumble to dust, and fortifications wither into nothingness.*
+
+**Detachment Ability:** All Melee weapons and ranged weapons used by models in this Detachment gain the Armourbane (Melee) or Sunder special rule (as appropriate to the weapon type), and models gain the Move Through Cover special rule.
+
+**Restriction:** Models in a Detachment with this Dominion may not deploy via Deep Strike (unless arriving via an explicit scenario or Rite of War rule).
+
+**Advanced Reaction: Wave of Decay (Movement Phase)**
+
+- Trigger: Declared in the Movement phase, after an enemy unit ends a move within 12" of a friendly unit aligned to Encroaching Ruin.
+- Effect: The triggering enemy unit must immediately take a Dangerous Terrain test for every model in the unit (vehicles take a Dangerous Terrain test on a D6 roll of 1 or 2), and any Armour Values on enemy Vehicles within 12" are reduced by -1 until the end of the turn.
+
+**Warlord Trait: Harbinger of Inevitable End**
+
+Enemy units within 12" of a Warlord with this Trait may not make Reactions in the Movement or Assault phases, and suffer a -1 penalty to their Leadership Characteristic (to a maximum penalty of -2 from all sources). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.
+
+### Malevolent Artifice
+
+*Fused with possessed iron, roaring pistons, and cursed alchemy, these entities embody the union of daemon and war-machine.*
+
+**Detachment Ability:** Models gain a +1 bonus to their Armour Save (or gain a 5+ Armour Save if they do not possess one) and gain the It Will Not Die (5+) special rule.
+
+**Restriction:** Models in a Detachment with this Dominion may not make Run moves in the Shooting phase.
+
+**Advanced Reaction: Infernal Overdrive (Shooting Phase)**
+
+- Trigger: Declared in the Shooting phase, after an enemy unit selects a friendly unit aligned to Malevolent Artifice as the target of a Shooting Attack.
+- Effect: After the enemy Shooting Attack is resolved, the reacting unit may immediately make a Return Fire Shooting Attack targeting the active enemy unit, adding +1 to the Strength Characteristic of all ranged weapons fired during that reaction.
+
+**Warlord Trait: Master of the Soul-Forge**
+
+Friendly Corrupted Engines, Soul-Forge Engines, Daemon Behemoths, and Cataclysm Brute Packs within 12" of a Warlord with this Trait may re-roll failed To Hit rolls of 1 with all ranged and Melee weapons, and automatically pass Dangerous Terrain tests. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.
+
+### Ravenous Dissolution
+
+*Born of pure spite and cosmic nihilism, these horrors tear apart fellow warp-spawn, witches, zealots, and mortal champions alike with equal malice.*
+
+**Detachment Ability:** Models gain the Hatred (Everything) special rule. In addition, models in a Detachment with this Dominion re-roll To Wound rolls of 1 in the Assault phase against any unit containing at least one model with the Daemon, Corrupted, Corrupted Engine, Malefic, or Psyker Unit Type or Sub-type, or any unit with the Faith special rule (including units with Acts of Faith or Shield of Faith).
+
+**Restriction:** A Detachment with this Dominion may never include an Allied Detachment (and may not be taken as an Allied Detachment itself).
+
+**Advanced Reaction: Spiteful Frenzy (Assault Phase)**
+
+- Trigger: Declared in the Assault phase, immediately after one or more models in a friendly unit aligned to Ravenous Dissolution are removed as casualties during an Initiative step before that unit has fought.
+- Effect: For each model removed as a casualty from the reacting unit during that Initiative step, one surviving model in the reacting unit gains +1 Attack until the end of the current Assault phase (to a maximum of +2 Attacks per model), and all attacks made by the reacting unit gain Murderous Strike (5+).
+
+**Warlord Trait: Avatar of Cosmic Spite**
+
+A Warlord with this Trait, and any unit he joins, re-rolls all failed To Wound rolls in the Assault phase against units containing at least one model with the Daemon, Corrupted, Corrupted Engine, Malefic, or Psyker Unit Type or Sub-type, or any unit with the Faith special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
+
+### Formless Distortion
+
+*Unbound by any single emotional current of the Warp, these ever-mutating horrors shift forms continuously to adapt to any foe.*
+
+**Detachment Ability:** Models gain the Shrouded (6+) special rule, and at the start of the controlling player's turn, may re-roll failed reserves or Deep Strike scatter dice.
+
+**Restriction:** Units in a Detachment with this Dominion suffer D3+1 automatic wounds (instead of the normal D3) whenever they fail a Morale check.
+
+**Advanced Reaction: Reality Tear (Movement Phase)**
+
+- Trigger: Declared in the Movement phase, after an enemy unit ends a move within 12" of a friendly unit aligned to Formless Distortion.
+- Effect: Remove the reacting unit from the battlefield and immediately redeploy it via Deep Strike anywhere within 12" of its previous position (and more than 1" away from enemy models and Impassable Terrain) without scattering.
+
+**Warlord Trait: Weaver of the Unbound Veil**
+
+At the start of each of the controlling player's turns, while a Warlord with this Trait is on the battlefield, the controlling player may select one friendly unit with the Daemon Unit Type within 18" of the Warlord to gain either +1 Strength, +1 Toughness, or a 4+ Daemonic Invulnerable Save until the start of the controlling player's next turn. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.
+
+## Advanced Reactions
+
+Units with the Daemons of the Ruinstorm faction trait have access to all Core Reactions presented in the Warhammer: The Horus Heresy – Age of Darkness Rulebook, as well as the following unique Advanced Reaction. Unless otherwise stated, declaring an Advanced Reaction costs 1 point of the controlling player's Reaction Allotment in the appropriate phase.
+
+### Empyric Surge (Movement Phase)
+
+- Trigger: This Advanced Reaction may be declared in the Movement phase, immediately after an enemy unit ends a move within 12" of, and within line of sight of, a friendly unit composed entirely of models with the Daemon Unit Type.
+- Effect: Every model in the reacting unit may immediately make a move of up to D6 + its Initiative Characteristic in inches directly toward the triggering enemy unit. This move ignores Difficult Terrain, and if it brings any model in the reacting unit within 1" of an enemy model from that unit, move the reacting models into base contact; the reacting unit is locked in combat and counts as having made a successful Charge for the ensuing Assault phase. A unit with the Putrid Corruption Dominion may still declare this Advanced Reaction, but rolls D3 instead of D6 for its movement distance.
+
+## Warlord Traits
+
+A Daemons of the Ruinstorm Warlord may select one of the three generic Warlord Traits below, or the Warlord Trait of its Detachment's Ætheric Dominion (see Ætheric Dominions). These replace the official Daemons of the Ruinstorm and generic Warlord Traits.
+
+### Lord of the Unstable Veil
+
+*Where this towering manifestation treads, the boundary between realspace and the Immaterium collapses entirely, sustaining the daemonic host against the banishing pull of the material universe.*
+
+Friendly units composed entirely of models with the Daemon Unit Type within 12" of a Warlord with this Trait ignore all negative Strength and Toughness modifiers caused by the Unstable Veil (Turn 5 and Turn 6+) rule, and suffer 1 fewer automatic wound (to a minimum of 0) whenever they fail a Morale check. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.
+
+### Scourge of the Material Realm
+
+*Born from humanity's darkest fears and bloodiest atrocities, this entity radiates an aura of palpable terror that shatters mortal courage and tears apart soul-wards.*
+
+A Warlord with this Trait increases his Fear special rule to Fear (2) (or Fear (3) if he already possesses Fear (2)), and all Melee weapons he wields gain the Murderous Strike (5+) and Brutal (2) special rules. Furthermore, enemy units within 6" of the Warlord suffer a -1 penalty to their Adamantium Will and Shield of Faith rolls. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
+
+### Herald of the Great Breach
+
+*Acting as a living beacon in the Warp, this commander guides legions of reinforcements through tearing reality-scars directly onto the battlefield with devastating precision.*
+
+While a Warlord with this Trait is on the battlefield, friendly units with the Daemon Unit Type arriving via Deep Strike within 12" of the Warlord do not scatter when placed on the battlefield, and the controlling player may add +1 to all Reserves rolls made for units in the Warlord's Detachment. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.
+
 ## Ætheric Blessings of the Ruinstorm
 
 *As the Warp saturates realspace, daemonic entities draw sustenance and twisted power from the specific emotional and metaphysical currents of their patron Ætheric Dominion. By manifesting an Ætheric Blessing, a daemonic pack or behemoth attunes itself to the deeper resonances of the Empyrean.*

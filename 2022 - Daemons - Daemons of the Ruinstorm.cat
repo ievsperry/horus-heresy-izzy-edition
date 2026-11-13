@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac63-5340-2e9e-1eb6" name="Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="23" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac63-5340-2e9e-1eb6" name="Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="24" battleScribeVersion="2.03" type="catalogue">
   <entryLinks>
     <entryLink import="false" name="Daemons of the Ruinstorm" hidden="false" type="selectionEntry" id="e271-f450-1c28-5b7b" targetId="afca-3047-fb26-d097">
       <constraints>
@@ -6065,6 +6065,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4438-b641-ab05-7b30" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Warlord Traits (Ruinstorm Daemons)" hidden="false" type="selectionEntryGroup" id="a890-8f27-bdbf-c763" targetId="2f76-74c1-d329-d3ab"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Ruinstorm Arch-Daemon may take up to three of the following options" hidden="false" id="a55f-e665-3b09-a2a6">
@@ -13932,6 +13933,14 @@ Once all models in the selected units have moved onto the battlefield, the Warp 
   </sharedRules>
   <selectionEntries>
     <selectionEntry type="upgrade" import="false" name="Ætheric Dominion (Whole Army)" hidden="false" id="f6d5-4f8d-7bcc-1405">
+      <profiles>
+        <profile id="41c9-54f9-01d3-8569" name="Advanced Reaction: Empyric Surge (Movement Phase)" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">Trigger: This Advanced Reaction may be declared in the Movement phase, immediately after an enemy unit ends a move within 12" of, and within line of sight of, a friendly unit composed entirely of models with the Daemon Unit Type.
+Effect: Every model in the reacting unit may immediately make a move of up to D6 + its Initiative Characteristic in inches directly toward the triggering enemy unit. This move ignores Difficult Terrain, and if it brings any model in the reacting unit within 1" of an enemy model from that unit, move the reacting models into base contact; the reacting unit is locked in combat and counts as having made a successful Charge for the ensuing Assault phase. A unit with the Putrid Corruption Dominion may still declare this Advanced Reaction, but rolls D3 instead of D6 for its movement distance.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink targetId="5d31-e5d-67bd-1083" id="1b05-8967-710b-6c83" primary="true" name="Ætheric Dominion (Whole Army)"/>
       </categoryLinks>
@@ -14729,47 +14738,262 @@ Once all models in the selected units have moved onto the battlefield, the Warp 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="554-8210-6ec7-1913" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Conqueror of Kings" hidden="false" id="e904-3af4-3acb-635" publicationId="8775-88f5-cfdd-24f6" page="5">
+            <selectionEntry type="upgrade" import="true" name="Lord of the Unstable Veil" hidden="false" id="59d6-b34a-3140-27cb">
               <profiles>
-                <profile name="Conqueror of Kings" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="dd45-6c2c-352d-7c60" publicationId="8775-88f5-cfdd-24f6" page="5">
+                <profile id="9e3d-4b12-29e5-1faa" name="Lord of the Unstable Veil" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains +1 Attacks when locked in combat with a model that has the Independent Character special rule or with any unit that such a model has joined. All models within a unit a Warlord with this Trait has joined, including the Warlord itself, gains +1 Strength when locked in combat with a model that has the Independent Character special rule or with any unit that such a model has joined. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Friendly units composed entirely of models with the Daemon Unit Type within 12" of a Warlord with this Trait ignore all negative Strength and Toughness modifiers caused by the Unstable Veil (Turn 5 and Turn 6+) rule, and suffer 1 fewer automatic wound (to a minimum of 0) whenever they fail a Morale check. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Entropic Force" hidden="false" id="6531-32bb-c803-d19d" publicationId="8775-88f5-cfdd-24f6" page="5">
+            <selectionEntry type="upgrade" import="true" name="Scourge of the Material Realm" hidden="false" id="95b0-9484-54a9-7d9f">
               <profiles>
-                <profile name="Entropic Force" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="985d-e826-55e1-db68" publicationId="8775-88f5-cfdd-24f6" page="5">
+                <profile id="12ed-11ab-6958-1d8c" name="Scourge of the Material Realm" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Damage Mitigation rolls taken against Wounds inflicted by a Warlord with this Trait, and all models within a unit it has joined, can only succeed on a roll of a 6, regardless of the value of the roll. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait increases his Fear special rule to Fear (2) (or Fear (3) if he already possesses Fear (2)), and all Melee weapons he wields gain the Murderous Strike (5+) and Brutal (2) special rules. Furthermore, enemy units within 6" of the Warlord suffer a -1 penalty to their Adamantium Will and Shield of Faith rolls. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Eternal Reveller" hidden="false" id="9fd-af9c-bf91-737c" publicationId="8775-88f5-cfdd-24f6" page="5">
+            <selectionEntry type="upgrade" import="true" name="Herald of the Great Breach" hidden="false" id="dd9c-b10f-09a7-6a3d">
               <profiles>
-                <profile name="Eternal Reveller" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="4789-4239-e69e-74c2" publicationId="8775-88f5-cfdd-24f6" page="5">
+                <profile id="904c-4e34-7503-fae0" name="Herald of the Great Breach" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and all models within a unit it has joined, may declare Charges during the Assault phase even if they have Run that turn. When Charging, a Warlord with this Trait, and all models within a unit it has joined, may choose to not roll for Charge Distance – instead, they count the Charge Distance as equal to the Initiative characteristic of the Warlord. If it does so, the Charge Distance cannot be increased in any way. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">While a Warlord with this Trait is on the battlefield, friendly units with the Daemon Unit Type arriving via Deep Strike within 12" of the Warlord do not scatter when placed on the battlefield, and the controlling player may add +1 to all Reserves rolls made for units in the Warlord's Detachment. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Walker of Paths" hidden="false" id="c3a2-41b9-90e8-f5ff" publicationId="8775-88f5-cfdd-24f6" page="5">
+            <selectionEntry type="upgrade" import="true" name="Herald of the Brass Throne" hidden="false" id="cf71-c13a-e3ca-982f">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="4fdc-327d-3007-28d1" value="0">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fdc-327d-3007-28d1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
               <profiles>
-                <profile name="Walker of Paths" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="5d9c-a9dd-650b-ae92" publicationId="8775-88f5-cfdd-24f6" page="5">
+                <profile id="1531-488a-2b2e-408f" name="Herald of the Brass Throne" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">An army whose Warlord has this Trait may, at the start of the battle once all players have deployed all of their units onto the battlefield (including Infiltrators and Scouts) and any rolls to Seize the Initiative have been made, select up to two units with the Daemon Unit Type that are under their control and deployed on the battlefield. The selected unit(s) may be removed from the battlefield and placed in Reserve. For each unit removed from the battlefield in this way, the controlling player must deploy a unit with the Daemon Unit Type from Reserve on the battlefield, following the constraints of the mission being played. The units chosen to be placed in Reserve may enter the battlefield as normal or via the Herald of Unreality special rule, if a model within the army has that special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Heedless Slaughter only. A Warlord with this Trait, and any unit he joins, gains the Preferred Enemy (Everything) special rule when fighting in the Assault phase, and adds +2" to its Charge Distance rolls. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lord of the Blighted Host" hidden="false" id="8553-8d0c-8097-71cb">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="1292-d32c-4dc1-4516" value="0">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1292-d32c-4dc1-4516" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile id="0299-a5cd-840a-605a" name="Lord of the Blighted Host" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Putrid Corruption only. Friendly units with the Daemon Unit Type within 12" of a Warlord with this Trait improve their It Will Not Die roll by +1 (to a maximum of 4+) and re-roll failed Feel No Pain rolls of 1. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Architect of Fate" hidden="false" id="8325-c7b4-69d4-951f">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="6dde-f28c-4e50-0e94" value="0">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6dde-f28c-4e50-0e94" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile id="eac2-c0f7-1d06-5f0e" name="Architect of Fate" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Infernal Tempest only. Once per game, while a Warlord with this Trait is on the battlefield, the controlling player may re-roll any single dice roll (including a single dice as part of a 2D6 roll) or force the opposing player to re-roll a single successful dice roll. Furthermore, the Warlord may manifest one additional Psychic Weapon or Psychic Power per phase. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sovereign of Excess" hidden="false" id="0ff2-8ab8-c733-83da">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="1563-f33d-1cec-a940" value="0">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1563-f33d-1cec-a940" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile id="92c7-d639-3434-c50c" name="Sovereign of Excess" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Rapturous Sensation only. A Warlord with this Trait, and any unit he joins, gains the Hit &amp; Run and Sudden Strike (1) special rules, and increases its Fear value by +1 (e.g., from Fear (1) to Fear (2)). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Harbinger of Inevitable End" hidden="false" id="f772-2944-5a16-56f8">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="28db-b99b-b00b-6698" value="0">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28db-b99b-b00b-6698" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile id="37d7-2dc8-30e6-eae1" name="Harbinger of Inevitable End" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Encroaching Ruin only. Enemy units within 12" of a Warlord with this Trait may not make Reactions in the Movement or Assault phases, and suffer a -1 penalty to their Leadership Characteristic (to a maximum penalty of -2 from all sources). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Master of the Soul-Forge" hidden="false" id="8a85-5713-e30d-8e89">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="2262-e927-2dfa-2263" value="0">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2262-e927-2dfa-2263" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile id="9c74-dbb2-a579-dfdd" name="Master of the Soul-Forge" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Malevolent Artifice only. Friendly Corrupted Engines, Soul-Forge Engines, Daemon Behemoths, and Cataclysm Brute Packs within 12" of a Warlord with this Trait may re-roll failed To Hit rolls of 1 with all ranged and Melee weapons, and automatically pass Dangerous Terrain tests. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Avatar of Cosmic Spite" hidden="false" id="1327-d7b2-f9b7-eb4c">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="14b5-a97a-afd1-027c" value="0">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14b5-a97a-afd1-027c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile id="c042-a435-0d71-2f7e" name="Avatar of Cosmic Spite" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Ravenous Dissolution only. A Warlord with this Trait, and any unit he joins, re-rolls all failed To Wound rolls in the Assault phase against units containing at least one model with the Daemon, Corrupted, Corrupted Engine, Malefic, or Psyker Unit Type or Sub-type, or any unit with the Faith special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Weaver of the Unbound Veil" hidden="false" id="c5a2-befb-3eea-66a0">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="334d-b434-1661-6e5e" value="0">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="334d-b434-1661-6e5e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile id="648e-5461-2fa3-8e18" name="Weaver of the Unbound Veil" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Formless Distortion only. At the start of each of the controlling player's turns, while a Warlord with this Trait is on the battlefield, the controlling player may select one friendly unit with the Daemon Unit Type within 18" of the Warlord to gain either +1 Strength, +1 Toughness, or a 4+ Daemonic Invulnerable Save until the start of the controlling player's next turn. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3c07-396e-92c6-905b" name="Generic Warlord Traits" hidden="false" collective="false" import="true" targetId="c064-819f-d9ef-1775" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
