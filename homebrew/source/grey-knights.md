@@ -58,6 +58,10 @@ Force: Any Psyker with a weapon or ability with this special rule may choose to 
 
 **Nemesis Force.** The controlling player of any unit that includes one or more models with the Psyker Unit Sub-type and a weapon or ability with this special rule may choose to activate this special rule before making any attacks with that weapon or resolving the ability. To activate this special rule, the controlling player must make a single Psychic Check using the Leadership Characteristic of any model in the unit that does not have the Independent Character Special Rule (unless the unit is entirely composed of models with the Independent Character Special Rule, in which case the controlling player may select which model's Leadership Characteristic is used). If the Check is successful, the Strength value of all attacks made with weapons or abilities with this special rule is increased by +2. In addition, all attacks made with weapons or abilities with this special rule gain Rending (6+) and Murderous Strike (6+). When targeting models with the Daemon Unit Type, attacks made with weapons or abilities with this special rule instead gain Rending (4+) and Murderous Strike (4+). If a weapon already possesses Rending and/or Murderous Strike, improve the value of each by +1 to a maximum of Rending (4+) and Murderous Strike (4+), or Rending (3+) and Murderous Strike (3+) when targeting models with the Daemon Unit Type. These benefits last until the end of the current Phase. If the Check is failed, no benefit is gained, but the models in that unit may attack as normal. This can trigger Perils of the Warp.
 
+**Purifying Flame (Assault Variant).** Instead of acting solely as a ranged template weapon, a melee Purifier squad's psychic fire erupts outward in close combat. Cleansing Aura: at the start of each Fight sub-phase, before any Initiative steps are resolved, every enemy unit locked in combat with one or more units with this special rule suffers D6 automatic hits per 5 models in the Purifier unit (resolved at Strength 4, AP 4, Ignores Cover, Soul Blaze). Models with the Daemon, Corrupted, Corrupted Engine, or Malefic Unit Type or Sub-type suffer 2D6 automatic hits instead.
+
+**Soul Blaze.** Whenever an enemy unit suffers one or more unsaved Wounds from an attack with the Soul Blaze special rule, it is set ablaze; place a marker next to the unit as a reminder. A unit cannot have more than one Soul Blaze marker on it at a time, regardless of how many Soul Blaze attacks wound it. At the end of every turn (both yours and your opponent's), roll a D6 for each unit with a Soul Blaze marker. On a 1–3 the flames burn out and the marker is removed. On a 4+ the unit stays ablaze and immediately suffers D3 hits resolved at Strength 4, AP 5, with the Ignores Cover special rule. Any Wounds caused by Soul Blaze are Randomly Allocated among the models in the burning unit.
+
 **Teleport Strike.** Grey Knights in Aegis Terminator armour, Strike Squads and Interceptor Squads have Deep Strike, and do not scatter if any friendly Grey Knights unit is within 6" of the target point†.
 
 **Apothecarion Detachment.** A Brother Apothecary unit is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed, every model in it must be assigned to another unit from the same Detachment. A Brother Apothecary may only be assigned to a unit composed entirely of Infantry models with the same Brotherhood (X) special rule as the Apothecary; to be assigned to a Brotherhood Terminator Squad or a Paladin Squad, the Apothecary must wear Aegis Terminator armour. No Brother Apothecary may be assigned to a unit that includes one or more models with the Independent Character special rule or the Unique Sub-type (but such models may join a unit that includes a Brother Apothecary as normal during deployment or any following turn). No more than one Brother Apothecary may be assigned to any given unit. Once assigned, the Apothecary is part of that unit and may not leave it under any circumstances; if that unit is removed as a casualty, the Apothecary is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Brother Apothecary as a casualty. When assigned to a unit, a Brother Apothecary gains all of the special rules (except those that specifically forbid it) and Unit Sub-types listed for that unit, but does not gain access to any additional Wargear options available to it.
@@ -335,7 +339,7 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 | 2.0 slot | Grey Knights units |
 | --- | --- |
 | HQ | Grand Master, Brother-Captain, Aegis Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus |
-| Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary, Aegis Bastion Squad (0-1), Servitors |
+| Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary, Aegis Bastion Squad (0-1), Purifier Bladeguard Squad (0-1), Servitors |
 | Troops | Strike Squad, Brotherhood Terminator Squad |
 | Dedicated Transports | Rhino\*, Razorback\* |
 | Fast Attack | Interceptor Squad, Interceptor Terminator Squad, Grey Knight Dreadlancer Talon, Stormraven Gunship |
@@ -1279,6 +1283,77 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Nemesis daemon hammer | +10 points |
 | **The Knight of the Flame may take:** |  |
 | – Brotherhood Psyker | +15 points |
+
+### 0-1 Purifier Bladeguard Squad — 195 pts
+
+*While standard Purifier Squads advance behind rolling curtains of soul-searing psychic flame, Purifier Bladeguard wade directly into the thick of daemonic hordes. Wreathed in blinding halos of white-hot etheric fire, these incorruptible blademasters cleave through corruption with twin Nemesis blades and sanctified storm bolters, burning away the taint of the Warp at arm's reach.*
+
+A Detachment with the Legiones Astartes (Grey Knights) special rule may include no more than one Purifier Bladeguard Squad.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Purifier Bladeguard | 7 | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+ | 32mm |
+| Knight of the Flame | 7 | 5 | 4 | 4 | 4 | 1 | 4 | 3 | 9 | 3+ | 32mm |
+
+**Unit Composition**
+
+- 4 Purifier Bladeguard
+- 1 Knight of the Flame
+
+**Wargear**
+
+- Aegis Power armour
+- Frag grenades\*
+- Krak grenades\*
+- Psybolts
+- Storm bolter\*
+- Two nemesis force falchions
+
+**Unit Type**
+
+- Purifier Bladeguard: Infantry (Psyker)
+- Knight of the Flame: Infantry (Character, Psyker)
+
+**Special Rules**
+
+- Brotherhood (X)
+- Brotherhood of Psykers
+- Brotherhood Psyker (Knight of the Flame only)
+- Chosen Warriors
+- Fearless
+- Furious Charge (1)
+- Hatred (Daemons)
+- Legiones Astartes (Grey Knights)
+- Minor Psychic Powers (Knight of the Flame only)
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy) (Knight of the Flame only)
+- Purifying Flame (Assault Variant)
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The Purifier Bladeguard Squad may include:** |  |
+| – Up to 5 additional Purifier Bladeguard | +34 points each |
+| **Any model may exchange its two nemesis force falchions for one of the following:** |  |
+| – Nemesis force sword | Free |
+| – Nemesis force halberd | Free |
+| – Nemesis force warding staff | +5 points each |
+| – Nemesis daemon hammer | +15 points each |
+| **The entire unit may take:** |  |
+| – Personal teleporters | +20 points per model |
+| **The Knight of the Flame must select one of the following Minor Psychic Powers:** |  |
+| – Astral Aim | Free |
+| – Cleansing Flame | Free |
+| – Gates of Infinity | Free |
+| – Hammerhand | Free |
+| – Holocaust | Free |
+| – Warp Quake | Free |
+| – Warp Shroud | Free |
+| **The Knight of the Flame may exchange his Aegis Power armour for:** |  |
+| – Aegis Artificer armour | +10 points |
+| **The Knight of the Flame may take:** |  |
+| – Melta bombs\* | +10 points |
 
 ### 0-1 Aegis Bastion Squad — 265 pts
 
