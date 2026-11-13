@@ -128,7 +128,13 @@ def load_gst_rules(path=GST_FILE):
     """Special rules defined in the game system, keyed by name without its '(X)' part."""
     ns = "{http://www.battlescribe.net/schema/gameSystemSchema}"
     rules = {}
-    for r in ET.parse(path).getroot().find(ns + "sharedRules"):
+    root = ET.parse(path).getroot()
+    # a rule a category carries (Independent Character, Line Sub-type) has a shared copy for official rule links;
+    # a homebrew unit gets the category instead, so the copy is not offered here
+    carried = {r.get("name") for c in root.iter(ns + "categoryEntry") for r in c.iter(ns + "rule")}
+    for r in root.find(ns + "sharedRules"):
+        if r.get("name") in carried:
+            continue
         rules[norm(re.sub(r"\s*\(X\+?\)$", "", r.get("name")))] = (r.get("id"), r.get("name"))
     return rules
 

@@ -262,6 +262,10 @@ loading. The script prints anything in the doc it could not place.
 - "Independent Character" in a datasheet's Special Rules gives its character models (every model if none is a
   Character) the game system's Independent Character category, which carries the rule. The game system defines
   that rule inside the category, not as a shared rule, so a rule link to it does not resolve.
+- share_inline_rules.py fixes rule links in the official files that point at a rule defined inside an entry or
+  category (which a rule link cannot reach): it adds a shared copy of the rule to the file that defines it and
+  links that, or links a reachable shared rule of the same name. The builder does not offer the shared copies of
+  rules a category carries (Independent Character, Line Sub-type): homebrew units get the category.
 - A unit with a model of the Unique Sub-type may be taken once per force, as official Unique characters are
   (Constantin Valdor): the builder adds that limit unless the doc already sets one (unique_limits).
 - Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,
