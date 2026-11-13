@@ -32,7 +32,7 @@ PTS = "d2ee-04cb-5f8a-2642"
 ALLIED_DETACHMENT = "d4f2-6da5-b6de-06ec"
 # Army-building limits a list's rules set that the doc's wording alone cannot carry: faction -> module in homebrew/
 FACTION_LIMITS = {"Traders Militant": "traders_militant_limits", "Grey Knights": "grey_knights_official",
-                  "Adepta Sororitas": "sororitas_rites"}
+                  "Adepta Sororitas": "sororitas_rites", "T'au Empire": "tau_rites"}
 
 UNIT_PROFILE = "4bb2-cb95-e6c8-5a21"
 # the characteristics of a unit profile, in the order of its stats
