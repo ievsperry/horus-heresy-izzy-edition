@@ -281,6 +281,8 @@ loading. The script prints anything in the doc it could not place.
   Devilfish. The Blade-Sworn Cadre Master (HQ) has the same locks, drone costs and swaps, and may lead Hunter Cadre
   and Kauyon as the Cadre Fireblade does; a Cadre Fireblade's Repulsor jet-pack is Farsight Enclaves only.
   Commander Farsight's XV-86 Supernova counts as a Coldstar for Kauyon and Mont'ka.
+  Cadre Commander is Master of the Legion: like the Legiones Astartes catalogue's Master of the Legion entry, it is
+  a 0-point upgrade every Cadre Commander model must take, at most one per full 1,000 points of the roster.
 - A unit with a model of the Unique Sub-type may be taken once per force, as official Unique characters are
   (Constantin Valdor): the builder adds that limit unless the doc already sets one (unique_limits).
 - Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,

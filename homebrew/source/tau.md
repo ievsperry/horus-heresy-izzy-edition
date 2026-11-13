@@ -40,7 +40,7 @@ Kroot and Vespid fight for the Greater Good, but not as T'au. They do not gain S
 
 #### Cadre Commander
 
-A model with this special rule counts as having the Master of the Legion special rule for the Prerequisites of a Rite of War: a Detachment may take a Rite of War that requires it while this model is the army's Warlord.
+A model with this special rule is treated exactly as if it had the Master of the Legion special rule: it may lead a Rite of War whose Prerequisites call for Master of the Legion (or Cadre Commander), and anything that refers to Master of the Legion applies to it. An army may include no more than one model with the Cadre Commander special rule for every full 1,000 points in the army, as Master of the Legion.
 
 #### Kroot
 
@@ -523,11 +523,11 @@ A Detachment may only include one or more Blade-Sworn Cadre Masters if every mod
 | – Plasma pistol | +10 points |
 | **The Blade-Sworn Cadre Master may take:** |  |
 | – Fusion grenades (counts as melta bombs) | +10 points |
-| – Repulsor jet-pack (Bulky (2) and Deep Strike) | +15 points |
+| – Repulsor jet-pack (Deep Strike) | +15 points |
 | **The Blade-Sworn Cadre Master may take up to two drones from:** |  |
 | – Gun, Marker or Shield Drones | Drone costs |
 
-_The Cadre Master's drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward Transport capacity. Cadre Commander is limited to one model with the rule per 1,000 points._
+_The Cadre Master's drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward Transport capacity. Cadre Commander is limited to one model with the rule for every full 1,000 points in the army._
 
 #### Cadre Fireblade — 50 pts
 
@@ -564,7 +564,7 @@ _The Cadre Master's drones cost +10 points (Gun Drone) or +15 points (Marker or 
 |---|---|
 | **The Cadre Fireblade may take:** |  |
 | – Up to 2 Gun, Marker or Shield Drones | Drone costs |
-| – Repulsor jet-pack (Sept (Farsight Enclaves) only, so he may join Blade-Sworn with Repulsor Jet-Packs; Bulky (2) and Deep Strike) | +15 points |
+| – Repulsor jet-pack (Sept (Farsight Enclaves) only, so he may join Blade-Sworn with Repulsor Jet-Packs; Deep Strike) | +15 points |
 
 #### Commander — 85 pts
 

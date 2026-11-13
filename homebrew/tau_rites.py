@@ -13,7 +13,7 @@ T'au Sept one: shown, but an error in a Detachment of another Sept.
 """
 import re
 
-from build_catalogue import SLOTS, WARLORD_ENTRY, add_constraint, child, el, make_id
+from build_catalogue import PTS, SLOTS, WARLORD_ENTRY, add_constraint, child, el, make_id
 
 COMPULSORY = next(c for c in SLOTS["Troops"] if c[1] == "Compulsory Troops:")[0]
 
@@ -261,6 +261,36 @@ def apply(b):
                 for a in aux:
                     el(conds, "condition", type="atLeast", value=1, field="selections", scope="force", childId=a,
                        shared=True, includeChildSelections=True, includeChildForces=False)
+
+    # Cadre Commander is Master of the Legion: one model with it for every full 1,000 points in the army, as the
+    # Legiones Astartes catalogue's Master of the Legion entry does (a 0-point upgrade every such model must take,
+    # at most one per 1,000 points of the roster)
+    cc_units = [d["name"] for d in b.datasheets if "Cadre Commander" in d["rules"]]
+    if cc_units:
+        eid = make_id("cadre commander", b.faction, "limit")
+        e = el(b.shared_entries, "selectionEntry", type="upgrade", import_=True, name="Cadre Commander", hidden=False,
+               id=eid, publicationId=b.pub_id)
+        cmax = make_id(eid, "per 1000")
+        m = el(el(e, "modifiers"), "modifier", type="increment", field=cmax, value=1)
+        el(el(m, "repeats"), "repeat", field=PTS, scope="roster", value=1000, percentValue=False, shared=True,
+           includeChildSelections=False, includeChildForces=False, childId="any", repeats=1, roundUp=False)
+        el(el(e, "constraints"), "constraint", type="max", value=0, field="selections", scope="roster", shared=True,
+           id=cmax, percentValue=False, includeChildSelections=True, includeChildForces=False)
+        rule = next((r for tree in (b.shared_rules, b.root) for r in tree.iter("rule")
+                     if r.get("name") == "Cadre Commander"), None)
+        if rule is not None:
+            el(el(e, "infoLinks"), "infoLink", name="Cadre Commander", id=make_id(eid, "rule"), hidden=False,
+               targetId=rule.get("id"), type="rule")
+        el(el(e, "costs"), "cost", name="Pts", typeId=PTS, value=0)
+        for n in cc_units:
+            for me in unit(n).findall("selectionEntries/selectionEntry"):
+                if me.get("type") != "model":
+                    continue
+                lid = make_id(me.get("id"), "cadre commander")
+                link = el(child(me, "entryLinks"), "entryLink", import_=True, name="Cadre Commander", hidden=False,
+                          id=lid, type="selectionEntry", targetId=eid)
+                add_constraint(link, "min", 1, lid + "min")
+                add_constraint(link, "max", 1, lid + "max")
 
     # characters of one Sept: an error in a Detachment of another
     for n, sept in FIXED_SEPT.items():
