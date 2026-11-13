@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="31bf-eb23-33a-3d65" name="Daemon Library" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="8" battleScribeVersion="2.03" type="catalogue" authorName="a">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="31bf-eb23-33a-3d65" name="Daemon Library" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="10" battleScribeVersion="2.03" type="catalogue" authorName="a">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="002f-0e40-9d49-2a22" name="The Ætheric Dominion (X)" hidden="false" collective="false" import="true">
       <constraints>
@@ -15,21 +15,6 @@ A unit which includes models with this special rule without a specific Ætheric 
       </rules>
       <selectionEntries>
         <selectionEntry id="ca6c-e8cf-7bc1-eaa0" name="Encroaching Ruin" hidden="false" collective="false" import="true" type="upgrade" publicationId="8775-88f5-cfdd-24f6" page="3">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b96-95de-21aa-94f4" type="max"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5b94-5ed5-4856-5d3d"/>
-          </constraints>
-          <rules>
-            <rule id="4438-874e-901d-f86" name="Encroaching Ruin" publicationId="8775-88f5-cfdd-24f6" page="3" hidden="false">
-              <description>When a unit entirely composed of models with this special rule and the Daemon Unit Type fails a Morale check, it only suffers 1 automatic Wound with no Saves of any kind allowed instead of D3 Wounds as specified in the Daemon Unit Type. In addition, models with this special rule gain the Move Through Cover special rule.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="3444-b4fd-578d-804" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
           <modifiers>
             <modifier type="set" value="0" field="1b96-95de-21aa-94f4">
               <conditionGroups>
@@ -47,24 +32,42 @@ A unit which includes models with this special rule without a specific Ætheric 
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b96-95de-21aa-94f4" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5b94-5ed5-4856-5d3d"/>
+          </constraints>
+          <profiles>
+            <profile id="75f7-f593-1b7b-7746" name="Advanced Reaction: Wave of Decay (Movement Phase)" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">Trigger: Declared in the Movement phase, after an enemy unit ends a move within 12" of a friendly unit aligned to Encroaching Ruin.
+Effect: The triggering enemy unit must immediately take a Dangerous Terrain test for every model in the unit (vehicles take a Dangerous Terrain test on a D6 roll of 1 or 2), and any Armour Values on enemy Vehicles within 12" are reduced by -1 until the end of the turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="4438-874e-901d-f86" name="Encroaching Ruin" hidden="false">
+              <description>Detachment Ability: All Melee weapons and ranged weapons used by models in this Detachment gain the Armourbane (Melee) or Sunder special rule (as appropriate to the weapon type), and models gain the Move Through Cover special rule.
+
+Restriction: Models in a Detachment with this Dominion may not deploy via Deep Strike (unless arriving via an explicit scenario or Rite of War rule).</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="7c37-eb30-9328-2c36" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Armourbane (Melee)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="1a05-f6a8-7057-e189" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+            <infoLink id="ed42-d1ea-0e64-ca2e" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink targetId="c42-1919-c37e-51f0" id="4d2b-fa7e-23d0-80f8" primary="false" name="Encroaching Ruin"/>
           </categoryLinks>
-        </selectionEntry>
-        <selectionEntry id="3d70-1d54-a791-ac60" name="Heedless Slaughter" hidden="false" collective="false" import="true" type="upgrade" publicationId="8775-88f5-cfdd-24f6" page="3">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15a6-3993-5dd2-b14" type="max"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5d04-bd7d-dced-173a"/>
-          </constraints>
-          <rules>
-            <rule id="a57e-1003-3f17-d12e" name="Heedless Slaughter" publicationId="8775-88f5-cfdd-24f6" page="3" hidden="false">
-              <description>A unit entirely composed of models with this special rule must declare a Charge if able when they begin the Assault phase within 8&quot; of an enemy unit. If there is more than one eligible target, the controlling player chooses the target of any Charges made so long as that target is within 8&quot;. Note that this does not allow models with this special rule to Charge a different unit to one that they made a Shooting Attack against in the previous Shooting phase, even if they have made Shooting Attacks against a unit which is further than 8&quot; away and there are eligible targets for a Charge within 8&quot;.
-Additionally, a unit entirely composed of models with this special rule adds +1 to the score used to determine if they win a Combat in the Assault phase (this modifier is cumulative with other modifiers to Combat Resolution) and adds +1 to the value of any rolls made to determine the result of a Sweeping Advance.</description>
-            </rule>
-          </rules>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="3d70-1d54-a791-ac60" name="Heedless Slaughter" hidden="false" collective="false" import="true" type="upgrade" publicationId="8775-88f5-cfdd-24f6" page="3">
           <modifiers>
             <modifier type="set" value="0" field="15a6-3993-5dd2-b14">
               <conditionGroups>
@@ -81,55 +84,64 @@ Additionally, a unit entirely composed of models with this special rule adds +1 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" field="15a6-3993-5dd2-b14" value="0">
+              <comment>Heedless Slaughter: no Psykers in a Daemons of the Ruinstorm Detachment, or in the unit elsewhere</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6e0c-29ba-a445-8321" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="6e0c-29ba-a445-8321" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
-          <categoryLinks>
-            <categoryLink targetId="f074-f60a-9aa6-c52a" id="a3b9-1c8f-9b90-618a" primary="false" name="Heedless Slaughter"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry id="8ed0-3582-f536-c48e" name="Formless Distortion" publicationId="8775-88f5-cfdd-24f6" page="4" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b89-dc3-165b-e9ce" type="max"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a479-4aa6-f789-880a"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15a6-3993-5dd2-b14" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5d04-bd7d-dced-173a"/>
           </constraints>
+          <profiles>
+            <profile id="da1e-a128-4799-ffeb" name="Advanced Reaction: Blood-Crazed Retaliation (Assault Phase)" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">Trigger: Declared in the Assault phase, immediately after an enemy unit declares a Charge against a friendly unit aligned to Heedless Slaughter.
+Effect: Every model in the reacting unit gains the Counter-Attack (1) special rule until the end of the current Assault phase, and adds +1 to its Weapon Skill Characteristic during the ensuing Fight sub-phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <rules>
-            <rule id="3546-bb80-a1d7-7d1d" name="Formless Distortion" publicationId="8775-88f5-cfdd-24f6" page="4" hidden="false">
-              <description>When selecting a combat at the beginning of the Fight sub-phase, roll a D3 for each unit entirely composed of models with this special rule that is locked in combat. All close combat attacks made by models in the combat with this special rule gain additional special rules corresponding to the D3 roll until the end of that combat phase:
-D3 - Result
-1 - Coruscating Ectoplasma: Concussive (1), Lance
-2 - Lashing Pseudopods: Reach (1)
-3 - Vorpal Talons: Shred, Sunder</description>
+            <rule id="a57e-1003-3f17-d12e" name="Heedless Slaughter" hidden="false">
+              <description>Detachment Ability: Models gain the Rage (2) and Furious Charge (1) special rules.
+
+Restriction: In a Daemons of the Ruinstorm army, a Detachment with this Dominion may not include any models with the Psyker Unit Sub-type (and its units may not manifest Psychic Powers or Psychic Weapons). In any other army, units with this Dominion may be in the same army and Detachment as Psykers, but no model with the Psyker Unit Sub-type may be part of, or join, a unit with this Dominion.</description>
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="d70b-ffcf-5e62-899d" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+            <infoLink id="42bf-31bf-fcc0-1a66" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Concussive (1) (Formless Distortion)"/>
+                <modifier type="set" field="name" value="Rage (2)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="9689-a4d9-4ea0-c2c9" name="Lance" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule">
+            <infoLink id="5ef2-7fa0-8380-4cbf" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Lance (Formless Distortion)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="f077-bad5-9bde-b2ae" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Reach (1) (Formless Distortion)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="5001-f368-c680-3ee8" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Shred (Formless Distortion)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="9144-7ca8-3e67-ee6e" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Sunder (Formless Distortion)"/>
+                <modifier type="set" field="name" value="Furious Charge (1)"/>
               </modifiers>
             </infoLink>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="f074-f60a-9aa6-c52a" id="a3b9-1c8f-9b90-618a" primary="false" name="Heedless Slaughter"/>
+          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="8ed0-3582-f536-c48e" name="Formless Distortion" publicationId="8775-88f5-cfdd-24f6" page="4" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" value="0" field="3b89-dc3-165b-e9ce">
               <conditionGroups>
@@ -147,26 +159,40 @@ D3 - Result
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b89-dc3-165b-e9ce" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a479-4aa6-f789-880a"/>
+          </constraints>
+          <profiles>
+            <profile id="3c4a-d599-faa6-79a4" name="Advanced Reaction: Reality Tear (Movement Phase)" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">Trigger: Declared in the Movement phase, after an enemy unit ends a move within 12" of a friendly unit aligned to Formless Distortion.
+Effect: Remove the reacting unit from the battlefield and immediately redeploy it via Deep Strike anywhere within 12" of its previous position (and more than 1" away from enemy models and Impassable Terrain) without scattering.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="3546-bb80-a1d7-7d1d" name="Formless Distortion" hidden="false">
+              <description>Detachment Ability: Models gain the Shrouded (6+) special rule, and at the start of the controlling player's turn, may re-roll failed reserves or Deep Strike scatter dice.
+
+Restriction: Units in a Detachment with this Dominion suffer D3+1 automatic wounds (instead of the normal D3) whenever they fail a Morale check.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="4814-4311-4ad6-4f61" name="Shrouded (X)" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Shrouded (6+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink targetId="9556-82c1-c70a-126e" id="d912-34cf-3f4a-8e22" primary="false" name="Formless Distortion"/>
           </categoryLinks>
-        </selectionEntry>
-        <selectionEntry id="b7db-bf16-47c5-dc05" name="Putrid Corruption" publicationId="8775-88f5-cfdd-24f6" page="3" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df60-2ef1-7656-9bd4" type="max"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="16d2-6ab1-cba5-8828"/>
-          </constraints>
-          <rules>
-            <rule id="94eb-7da4-953-529f" name="Putrid Corruption" publicationId="8775-88f5-cfdd-24f6" page="3" hidden="false">
-              <description>Models with this special rule gain the Heavy Unit Sub-type and may make a special Corrupted Resilience roll to avoid being Wounded (this is a Damage Mitigation roll which is made after unsaved Wounds are suffered). Corrupted Resilience rolls may not be taken against unsaved Wounds that have the Instant Death, Psychic Focus or Force special rule. To make a Corrupted Resilience roll, roll a D6 each time an unsaved Wound is suffered. On a result of 5+, the unsaved Wound is discounted – treat it as having been saved. On any other result the Wound is taken as normal.
-
-
-BS NOTE: This does not always seem to apply the unit type to all units. Unsure how to resolve.</description>
-            </rule>
-          </rules>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="b7db-bf16-47c5-dc05" name="Putrid Corruption" publicationId="8775-88f5-cfdd-24f6" page="3" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" value="0" field="df60-2ef1-7656-9bd4">
               <conditionGroups>
@@ -184,23 +210,40 @@ BS NOTE: This does not always seem to apply the unit type to all units. Unsure h
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df60-2ef1-7656-9bd4" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="16d2-6ab1-cba5-8828"/>
+          </constraints>
+          <profiles>
+            <profile id="8331-ab6d-bfa2-06c7" name="Advanced Reaction: Cloud of Flies (Shooting Phase)" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">Trigger: Declared in the Shooting phase, after an enemy unit selects a friendly unit aligned to Putrid Corruption as the target of a Shooting Attack, before any To Hit rolls are made.
+Effect: Until the end of that Shooting Attack, all models in the reacting unit gain the Shrouded (4+) special rule, and the attacking enemy unit suffers a -1 penalty to its Ballistic Skill Characteristic (to a minimum of BS 1).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="94eb-7da4-953-529f" name="Putrid Corruption" hidden="false">
+              <description>Detachment Ability: Models gain the Feel No Pain (5+) special rule (or improve an existing Feel No Pain roll by +1, to a maximum of 4+).
+
+Restriction: Models in a Detachment with this Dominion may not make Run moves in the Shooting phase, nor may they make Sweeping Advances in the Assault phase.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="ed3a-713d-6ace-110e" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Feel No Pain (5+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink targetId="8cf6-d802-d054-6a86" id="4f2b-3140-b910-3821" primary="false" name="Putrid Corruption"/>
           </categoryLinks>
-        </selectionEntry>
-        <selectionEntry id="945c-b969-75eb-19d9" name="Ravenous Dissolution" publicationId="8775-88f5-cfdd-24f6" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c74-20f9-5431-4525" type="max"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5850-fc1b-fba6-42b0"/>
-          </constraints>
-          <rules>
-            <rule id="ef2f-faf6-8a1a-d10b" name="Ravenous Dissolution" publicationId="8775-88f5-cfdd-24f6" page="4" hidden="false">
-              <description>Any model with this special rule adds +1 to all To Hit rolls during the first round of any close combat where they are locked in combat with a unit containing at least one enemy model with either the Daemon Unit Type, Corrupted or Psyker Unit Sub-type, or the Independent Character special rule. If an enemy unit Charges this unit when it is already locked in combat then that does count as a new ‘first’ round of combat for the effects of this special rule.</description>
-            </rule>
-          </rules>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="945c-b969-75eb-19d9" name="Ravenous Dissolution" publicationId="8775-88f5-cfdd-24f6" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" value="0" field="2c74-20f9-5431-4525">
               <conditionGroups>
@@ -217,26 +260,52 @@ BS NOTE: This does not always seem to apply the unit type to all units. Unsure h
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" field="2c74-20f9-5431-4525" value="0">
+              <comment>Ravenous Dissolution: no Allied Detachment</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="d4f2-6da5-b6de-06ec" shared="true" includeChildSelections="true" includeChildForces="true" percentValue="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c74-20f9-5431-4525" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5850-fc1b-fba6-42b0"/>
+          </constraints>
+          <profiles>
+            <profile id="d46a-c5bb-49eb-d311" name="Advanced Reaction: Spiteful Frenzy (Assault Phase)" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">Trigger: Declared in the Assault phase, immediately after one or more models in a friendly unit aligned to Ravenous Dissolution are removed as casualties during an Initiative step before that unit has fought.
+Effect: For each model removed as a casualty from the reacting unit during that Initiative step, one surviving model in the reacting unit gains +1 Attack until the end of the current Assault phase (to a maximum of +2 Attacks per model), and all attacks made by the reacting unit gain Murderous Strike (5+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="ef2f-faf6-8a1a-d10b" name="Ravenous Dissolution" hidden="false">
+              <description>Detachment Ability: Models gain the Hatred (Everything) special rule. In addition, models in a Detachment with this Dominion re-roll To Wound rolls of 1 in the Assault phase against any unit containing at least one model with the Daemon, Corrupted, Corrupted Engine, Malefic, or Psyker Unit Type or Sub-type, or any unit with the Faith special rule (including units with Acts of Faith or Shield of Faith).
+
+Restriction: A Detachment with this Dominion may never include an Allied Detachment (and may not be taken as an Allied Detachment itself).</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="cb34-6afa-fce7-6635" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Hatred (Everything)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink targetId="2774-1a32-f196-be76" id="64c3-8913-231f-55af" primary="false" name="Ravenous Dissolution"/>
           </categoryLinks>
-        </selectionEntry>
-        <selectionEntry id="1214-3abe-c6d1-2038" name="Rapturous Sensation" publicationId="8775-88f5-cfdd-24f6" page="3" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f74-713f-9742-119e" type="max"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="630c-571e-f8f5-9419"/>
-          </constraints>
-          <rules>
-            <rule id="1bf8-cca9-299a-6c5a" name="Rapturous Sensation" publicationId="8775-88f5-cfdd-24f6" page="3" hidden="false">
-              <description>On a turn in which they make a successful Charge, unless that Charge is Disordered, models with this special rule make their attacks in an assault at one Initiative step higher than normal – after any Initiative modifiers from other special rules have been taken into account.
-
-Additionally, units entirely composed of models with this special rule must re-roll all failed Initiative tests to determine if they suffer the effects of the Blind special rule as well as all failed Leadership tests to determine if they suffer the effects of the Concussive (X) special rule.</description>
-            </rule>
-          </rules>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="1214-3abe-c6d1-2038" name="Rapturous Sensation" publicationId="8775-88f5-cfdd-24f6" page="3" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" value="0" field="9f74-713f-9742-119e">
               <conditionGroups>
@@ -254,23 +323,45 @@ Additionally, units entirely composed of models with this special rule must re-r
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f74-713f-9742-119e" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="630c-571e-f8f5-9419"/>
+          </constraints>
+          <profiles>
+            <profile id="db31-f333-88d7-44f4" name="Advanced Reaction: Quicksilver Feint (Assault Phase)" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">Trigger: Declared in the Assault phase, immediately after an enemy unit completes a successful Charge against a friendly unit aligned to Rapturous Sensation.
+Effect: During the ensuing Fight sub-phase, all models in the reacting unit fight at the Initiative 10 step regardless of their actual Initiative Characteristic, and enemy models locked in combat with the reacting unit suffer a -1 penalty to their Weapon Skill Characteristic (to a minimum of WS 1).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="1bf8-cca9-299a-6c5a" name="Rapturous Sensation" hidden="false">
+              <description>Detachment Ability: Models gain a +1 bonus to their Initiative Characteristic, gain the Fleet (2) special rule, and inflict Rending (6+) on all close combat attacks (or improve an existing close combat Rending value by +1).
+
+Restriction: Models in a Detachment with this Dominion suffer a -1 penalty to their Toughness Characteristic (to a minimum of T 1).</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="bea1-681b-9c7a-9641" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Fleet (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="adf9-e196-668b-09d8" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rending (6+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink targetId="a1d4-4662-c944-19cc" id="d1d3-9004-1185-6ece" primary="false" name="Rapturous Sensation"/>
           </categoryLinks>
-        </selectionEntry>
-        <selectionEntry id="9508-8124-d34a-500a" name="Malevolent Artifice" publicationId="8775-88f5-cfdd-24f6" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc04-6295-5d05-77ec" type="max"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="813c-889b-e59a-8005"/>
-          </constraints>
-          <rules>
-            <rule id="c488-ac28-c303-57b" name="Malevolent Artifice" publicationId="8775-88f5-cfdd-24f6" page="4" hidden="false">
-              <description>Models with this special rule may re-roll all failed Armour Saves taken against any Wounds resolved at a Strength value lower than their Toughness Characteristic. This special rule has no effect on Cover Saves or Invulnerable Saves.</description>
-            </rule>
-          </rules>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="9508-8124-d34a-500a" name="Malevolent Artifice" publicationId="8775-88f5-cfdd-24f6" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" value="0" field="cc04-6295-5d05-77ec">
               <conditionGroups>
@@ -288,60 +379,40 @@ Additionally, units entirely composed of models with this special rule must re-r
               </conditionGroups>
             </modifier>
           </modifiers>
-          <categoryLinks>
-            <categoryLink targetId="bcf6-8350-9099-1e91" id="e208-25ca-de5b-1bc4" primary="false" name="Malevolent Artifice"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry id="e4fb-66cd-e07d-609b" name="Infernal Tempest" publicationId="8775-88f5-cfdd-24f6" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56cb-9c09-b338-b107" type="max"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6add-ddd3-87db-6d42"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc04-6295-5d05-77ec" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="813c-889b-e59a-8005"/>
           </constraints>
+          <profiles>
+            <profile id="8643-7c0a-942d-1ca5" name="Advanced Reaction: Infernal Overdrive (Shooting Phase)" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">Trigger: Declared in the Shooting phase, after an enemy unit selects a friendly unit aligned to Malevolent Artifice as the target of a Shooting Attack.
+Effect: After the enemy Shooting Attack is resolved, the reacting unit may immediately make a Return Fire Shooting Attack targeting the active enemy unit, adding +1 to the Strength Characteristic of all ranged weapons fired during that reaction.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <rules>
-            <rule id="457b-86dd-cedd-ce60" name="Infernal Tempest" publicationId="8775-88f5-cfdd-24f6" page="4" hidden="false">
-              <description>Models with this special rule gain the Hammer of Wrath (1) special rule or, if they already have a version of the Hammer of Wrath (X) special rule, they increase the value in brackets by +1. All wounds inflicted by any variant of the Hammer of Wrath (X) special rule possessed by a unit with this special rule also gain the Deflagrate special rule.
-Additionally, models with this special rule gain a Shooting Attack with the following profile: (Elemental Eruption)
+            <rule id="c488-ac28-c303-57b" name="Malevolent Artifice" hidden="false">
+              <description>Detachment Ability: Models gain a +1 bonus to their Armour Save (or gain a 5+ Armour Save if they do not possess one) and gain the It Will Not Die (5+) special rule.
 
-
-BS NOTE: This does not always seem to apply. If you add/remove a model in the army it seems to work most of the time.</description>
+Restriction: Models in a Detachment with this Dominion may not make Run moves in the Shooting phase.</description>
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="6016-f417-8f48-e9c8" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule">
+            <infoLink id="d96a-5f3c-4fa4-e9d5" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Deflagrate (Hammer of Wrath)"/>
+                <modifier type="set" field="name" value="It Will Not Die (5+)"/>
               </modifiers>
             </infoLink>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="374b-d9a4-d52b-8b30" name="Elemental Eruption" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c92-2b59-9a77-5d7d" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffd2-2c4e-dbf8-7c71" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="c4cf-1c6a-5c17-fbc0" name="Elemental Eruption" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">8&quot;</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Deflagrate, Retaliation</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="1f43-512-5a44-b56" name="Retaliation" publicationId="8775-88f5-cfdd-24f6" page="4" hidden="false">
-                  <description>Attacks may only be made using weapons with this special rule as part of a Reaction and automatically hit the target unit without needing to roll To Hit.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="bcf6-8350-9099-1e91" id="e208-25ca-de5b-1bc4" primary="false" name="Malevolent Artifice"/>
+          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="e4fb-66cd-e07d-609b" name="Infernal Tempest" publicationId="8775-88f5-cfdd-24f6" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" value="0" field="56cb-9c09-b338-b107">
               <conditionGroups>
@@ -359,9 +430,31 @@ BS NOTE: This does not always seem to apply. If you add/remove a model in the ar
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56cb-9c09-b338-b107" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6add-ddd3-87db-6d42"/>
+          </constraints>
+          <profiles>
+            <profile id="06ad-c5f1-8a4f-5ab1" name="Advanced Reaction: Flickering Displacement (Shooting Phase)" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">Trigger: Declared in the Shooting phase, after an enemy unit selects a friendly unit aligned to Infernal Tempest as the target of a Shooting Attack, before any To Hit rolls are made.
+Effect: Until the end of that Shooting Attack, all models in the reacting unit improve their Daemonic Invulnerable Save by +1 (to a maximum of 3+), and if the attacking unit rolls any unmodified To Hit rolls of 1, the attacking unit immediately suffers D3 automatic hits at Strength 5, AP 3, Soul Blaze.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="457b-86dd-cedd-ce60" name="Infernal Tempest" hidden="false">
+              <description>Detachment Ability: Models improve their Daemonic Invulnerable Save by +1 (to a maximum of 4+), and models with the Psyker Unit Sub-type may re-roll failed Psychic checks once per phase.
+
+Restriction: Models in a Detachment with this Dominion suffer a -1 penalty to their Strength Characteristic (to a minimum of S 1) when resolving close combat attacks in the Assault phase.</description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink targetId="6508-4f6a-0dc1-8f56" id="f640-7c10-df4e-07fa" primary="false" name="Infernal Tempest"/>
           </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
