@@ -30,6 +30,8 @@ Points start from 7th edition costs and are scaled to official 2.0 Legion values
 
 Every Grey Knights unit in this document has **Brotherhood (X)**, **The Aegis**, **Legiones Astartes (Grey Knights)** and **Brotherhood of Psykers**, unless its entry says otherwise. Where Liber Daemonicus and the earlier conversion disagree, Liber Daemonicus is used.
 
+**Loyalist.** A Grey Knights army must take the Loyalist Allegiance; it may never be Traitor.
+
 **The Aegis.** All models with the Legiones Astartes (Grey Knights) special rule gain Adamantium Will (5+) and Shrouded (6+). In addition, enemy units making Shooting Attacks against a model with the Legiones Astartes (Grey Knights) special rule treat that model as being 3" further away than it actually is when determining weapon range, the effects of Special Rules, and whether a model is within a specified distance. When making Psychic Checks, units composed entirely of models with the Legiones Astartes (Grey Knights) special rule may re-roll Psychic Check results of 1.
 
 **Legiones Astartes (Grey Knights).** All models with the Legiones Astartes (Grey Knights) special rule gain the Preferred Enemy (Daemons) and Stubborn special rules.
@@ -108,21 +110,7 @@ Attacks made with this weapon gain Rending (3+) against units containing one or 
 
 ## Psychic Discipline: Anathemata
 
-A Psyker with this Discipline and the Traitor Allegiance gains the Breach the Veil Psychic Power and the Void Darts and Aetheric Lightning Psychic Weapons. A Psyker with this Discipline and the Loyalist Allegiance gains the Seal the Veil Psychic Power and the Void Darts and Aetheric Lightning Psychic Weapons.
-
-### Breach the Veil (Psychic Power)
-
-*Esoterists are dedicated to the study of the Warp and its denizens, seeing them as tools for the prosecution of war, unburdened by loyalty or purpose. If they can chain them to the cause of their master, then they will gladly sacrifice their sanity in the pursuit of victory.*
-
-Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a point within 12" and at least 3" away from any enemy model or Impassable Terrain – place a Blast (3") Marker to represent the Warp Rift until this power is resolved.
-
-The controlling player may then choose to make a Psychic check for the Esoterist. If the Check is failed or not taken then the chosen point is scattered as per the normal rules for Scatter. If it scatters onto Impassable Terrain, within 3" of an enemy model, or off of the edge of the battlefield then the Esoterist suffers Perils of the Warp, and the chosen point is moved the minimum distance required in a direction of the controlling player's choice to place it clear of all Impassable Terrain, on the battlefield, and at least 3" away from any enemy model. If the Check is passed then the Warp Rift does not scatter.
-
-Once the final location of the chosen point is determined, the Esoterist's controlling player may choose to deploy up to one of the Ruinstorm Daemon units in Reserves onto the battlefield (that player may choose to place no units if they wish). That unit moves onto the battlefield from any point along the edge of the Blast marker placed to represent the Warp Rift as if it was entering play from Reserves, treating the Warp Rift marker as though it was the controlling player's battlefield edge.
-
-Once all models in the unit have moved onto the battlefield, the Warp Rift marker is removed from play. The Daemon unit brought into play by use of this power may be targeted by the Interceptor Reaction and may act as normal in the Shooting phase in which it arrives and may declare a Charge in the Assault phase of the turn in which it enters play.
-
-Note that to use this power, a player will need access to the Ruinstorm Daemon Army List.
+A Psyker with this Discipline and the Traitor Allegiance gains the Breach the Veil Psychic Power and the Void Darts and Aetheric Lightning Psychic Weapons. A Psyker with this Discipline and the Loyalist Allegiance gains the Seal the Veil Psychic Power and the Void Darts and Aetheric Lightning Psychic Weapons. Grey Knights are always Loyalist, so a Grey Knights Psyker with this Discipline gains Seal the Veil, Void Darts and Aetheric Lightning; Breach the Veil is not used.
 
 ### Void Darts (Psychic Weapon)
 
@@ -335,6 +323,10 @@ A Grey Knights Warlord chooses one of the three generic traits below, or the War
 - **Nemesis Lord:** the Warlord may select one additional Minor Psychic Power and adds 1 to his Leadership for Psychic checks. In addition, your army may make one additional reaction in your opponent's Shooting phase†.
 - **Unyielding Will:** friendly Grey Knights units within 12" may re-roll failed Psychic checks once per phase. In addition, your army may make one additional reaction in your opponent's Movement phase†.
 
+## Warlord: Supreme Grand Master
+
+Kaldor Draigo automatically has this Trait if he is the Warlord and may not select any other. Friendly units with the Legiones Astartes (Grey Knights) special rule within 12" of Kaldor Draigo gain +1 Leadership, and may use his Leadership Characteristic when making Morale Checks, Pinning Checks, Regroup Tests and Psychic Checks. Kaldor Draigo gains Adamantium Will (3+). So long as he has not been removed as a casualty, his controlling player may make one additional Reaction during the opponent's Movement Phase; it follows all normal rules for Reactions and does not allow the same unit to React more than once to the same triggering event.
+
 ## Force Organisation and Rites of War
 
 Use the 2.0 Crusade Force Organisation chart. New units take these slots:
@@ -352,7 +344,7 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 
 A Grey Knights army may take one Rite of War:
 
-**Nemesis Strike.** Requires a Grand Master in Nemesis Dreadknight as Warlord. Benefit: Dreadknight Talons may be taken as Elites as well as Heavy Support. Limitation: no Lords of War, and Troops must outnumber Dreadknight Talons.
+**Nemesis Strike.** Requires a Grand Master in Nemesis Dreadknight as Warlord. Benefit: Dreadknight Talons may be taken as Elites as well as Heavy Support. Grey Knight Dreadlancer Talons may be taken as Troops and gain the Line sub-type (Line (1)). Limitation: no Lords of War, and Troops must outnumber Dreadknight Talons.
 
 **Paladin Retinue.** Requires a Grand Master or Kaldor Draigo as Warlord. Benefit: Paladin Squads may be taken as Troops and gain the Line sub-type. Limitation: no Strike Squads.
 
@@ -867,7 +859,7 @@ A Grey Knights army may take one Rite of War:
 - Preferred Enemy (Daemon, Thousand Sons)
 - Psychic Discipline (Dominus and Sanctic)
 - Relentless
-- Supreme Grand Master: if Kaldor Draigo is in your army he must be your Warlord, and this is his Warlord Trait. Friendly units with the Legiones Astartes (Grey Knights) special rule within 12" of Kaldor Draigo gain +1 Leadership, and may use his Leadership Characteristic when making Morale Checks, Pinning Checks, Regroup Tests and Psychic Checks. Kaldor Draigo gains Adamantium Will (3+). So long as he has not been removed as a casualty, his controlling player may make one additional Reaction during the opponent's Movement Phase; it follows all normal rules for Reactions and does not allow the same unit to React more than once to the same triggering event
+- Warlord: Supreme Grand Master (Kaldor Draigo must be your Warlord if he is in your army)
 - The Aegis
 
 **Options**

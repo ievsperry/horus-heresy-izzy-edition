@@ -2837,6 +2837,8 @@ class Builder:
                 elif not eligible:
                     eligible = [next((me for me in models if forms(me.get("name")) & forms(ds["name"])), models[0])]
             fixed = next((r.split(":", 1)[1].strip() for r in ds["rules"] if r.startswith("Warlord: ")), None)
+            if fixed:  # "Warlord: Supreme Grand Master (Kaldor Draigo must be your Warlord ...)": the trait's name
+                fixed = re.sub(r"\s*\(.*\)$", "", fixed)
             for me in eligible:
                 self.give_warlord(me, must)
                 if fixed:

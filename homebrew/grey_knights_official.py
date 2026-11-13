@@ -17,7 +17,10 @@ A Dreadnought Talon may take a Teleport Harness (the doc's wargear: Deep Strike)
 and the Teleport Harness links the game system's Deep Strike rule.
 
 The Rites of War that bar these kinds of unit bar the official ones too: Purifier Crusade (no Land Raiders) hides
-the official Land Raiders, and Teleport Assault (no Dedicated Transports) hides the Rhino."""
+the official Land Raiders, and Teleport Assault (no Dedicated Transports) hides the Rhino.
+
+Grey Knights are always Loyalist: a force that picks the Traitor allegiance may not take the Grey Knights army
+entry (BattleScribe reports it as over its limit)."""
 from build_catalogue import PTS, SLOTS, TYPE_CATEGORIES, UNIT_CATEGORY, add_constraint, child, el, make_id
 
 LIBRARY = ("6393-649c-7213-a327", "Legions Astartes")
@@ -31,6 +34,7 @@ LAND_RAIDERS = [("Land Raider Proteus Carrier Squadron", "b6cd-dd1a-6b2c-41d6", 
 RHINO = ("Rhino Transport", "03f1-8ed9-9867-8d18", 5)
 DREADNOUGHT_POWERS = []  # Brotherhood of Psykers grants no powers
 DEEP_STRIKE = "f1e1-986f-c783-ca9e"  # the game system's Deep Strike rule
+TRAITOR = "f9c0-0c5a-3e24-58c7"  # the game system's Traitor allegiance entry
 HARNESS_POINTS = 40  # per Dreadnought
 TRANSPORTED = ["Purifier Squad", "Strike Squad", "Purgation Squad"]  # "may take a Rhino or Razorback"
 
@@ -96,7 +100,17 @@ def teleport_harness(b, e, target, models):
            includeChildSelections=True, includeChildForces=False, childId=m, repeats=1, roundUp=False)
 
 
+def loyalist_only(b):
+    """Grey Knights are always Loyalist: with Traitor chosen in the force, the army entry may not be taken."""
+    army = b.root.find(f"selectionEntries/selectionEntry[@id='{make_id('army', b.faction)}']")
+    cmax = next(c for c in army.findall("constraints/constraint") if c.get("type") == "max")
+    m = el(child(army, "modifiers"), "modifier", type="set", field=cmax.get("id"), value=0)
+    el(el(m, "conditions"), "condition", type="atLeast", value=1, field="selections", scope="force",
+       childId=TRAITOR, shared=True, includeChildSelections=True, includeChildForces=False)
+
+
 def apply(b):
+    loyalist_only(b)
     harness = b.shared_entries.find("selectionEntry[@name='Teleport Harness']")
     el(child(harness, "infoLinks"), "infoLink", name="Deep Strike", id=make_id(harness.get("id"), "deep strike"),
        hidden=False, targetId=DEEP_STRIKE, type="rule")

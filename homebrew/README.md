@@ -175,7 +175,8 @@ loading. The script prints anything in the doc it could not place.
 - "Regimental Line (Cadian)" (Astra Militarum: Cadian Shock Troops, Catachan Jungle Fighters, Death Korps of Krieg):
   the unit has Support Squad unless its detachment's Regiment is that regiment. Then Support Squad is hidden, the
   unit shows Fury of the Regiment, its models gain the Line sub-type and it may fill a Compulsory Troops slot.
-- Grey Knights are not Xenos either: like the Astra Militarum, the army may be Loyalist or Traitor. Each
+- Grey Knights are not Xenos either, and are always Loyalist: in a force with the Traitor allegiance the Grey
+  Knights army entry is over its limit (grey_knights_official.py). Each
   detachment picks one Brotherhood (1st to 8th), which gives its units Brotherhood (X) with that Brotherhood's
   rules, Advanced Reaction and Warlord Trait. Wargear the doc marks with an asterisk ("Storm bolter\*") keeps its
   official 2.0 rules, and the 40k names map to the 2.0 weapons: an assault cannon is the Kheres assault cannon,
@@ -215,9 +216,13 @@ loading. The script prints anything in the doc it could not place.
   every Techmarine, Apothecary and Dreadlancer that takes it makes its own minor power and discipline picks. A Brotherhood Psyker picks Dominus, Sanctic, Anathemata,
   Divination or Telepathy (the last three written out in the md, as Traders Militant does Anathemata). When the
   md has the rule "Any Psyker that selects a Psychic Discipline also gains the Aetheric Lightning Psychic Weapon",
-  the builder gives every discipline the game system's Aetheric Lightning profile and the Force rule. Dreadfists, nemesis daemon hammers and nemesis greatswords are
+  the builder gives every discipline the game system's Aetheric Lightning profile and the Force rule. Anathemata
+  gives Grey Knights Seal the Veil and Void Darts only (Breach the Veil is the Traitor power). Kaldor Draigo's
+  "Warlord: Supreme Grand Master (...)" is a fixed Warlord Trait: he must be the Warlord and takes it
+  automatically, in place of the Warlord Traits pick. Nemesis Strike lets Grey Knight Dreadlancer Talons be
+  Troops with the Line sub-type. Dreadfists, nemesis daemon hammers and nemesis greatswords are
   Unwieldy (3).
-- Adepta Sororitas, like the Grey Knights, may be Loyalist or Traitor. Each detachment picks one Order Militant,
+- Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,
   which gives its units Order (X) with that Order's rules, Advanced Reaction and Warlord Trait. The army's Faith
   system (Acts of Faith, Gaining Faith, Miracles, and the table of Acts) and the Unit Types notes are on the army
   selection: a "### Faith" sub-section of the Army-wide Special Rules that is not a rule a unit has is shown there,
