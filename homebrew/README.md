@@ -283,6 +283,11 @@ loading. The script prints anything in the doc it could not place.
   Commander Farsight's XV-86 Supernova counts as a Coldstar for Kauyon and Mont'ka.
   Cadre Commander is Master of the Legion: like the Legiones Astartes catalogue's Master of the Legion entry, it is
   a 0-point upgrade every Cadre Commander model must take, at most one per full 1,000 points of the roster.
+  T'au Retinue Squads (Crisis Bodyguard Team, Fireblade Honour Guard Team, Blade-Sworn Honour Guard Team) use no
+  Force Organisation slot: each eligible Cadre Commander has a "Retinue" choice (one squad) in its own entry, and the
+  squads have no choice of their own (tau_rites.py RETINUES). Their drones cost 10/15/15; the Crisis Bodyguards'
+  fusion blades and Onager gauntlet (one per unit) are Farsight Enclaves only; the Blade-Sworn Honour Guard are
+  Farsight Enclaves only, with the Blade-Sworn swaps and no Devilfish with Repulsor jet-packs.
 - A unit with a model of the Unique Sub-type may be taken once per force, as official Unique characters are
   (Constantin Valdor): the builder adds that limit unless the doc already sets one (unique_limits).
 - Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,

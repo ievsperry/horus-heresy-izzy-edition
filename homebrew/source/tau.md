@@ -54,6 +54,10 @@ A model with the Kroot special rule is subject to the following rules:
 - **Shaper's Guidance:** A unit composed entirely of models with the Kroot special rule may only be joined by Independent Characters that also possess the Kroot special rule (such as a Kroot Shaper). While a Kroot Shaper is joined to a unit with the Kroot special rule, all models in that unit may use the Shaper's Leadership Characteristic and gain the Stubborn special rule.
 - **Evolutionary Adaptations:** If a unit composed entirely of models with the Kroot special rule includes a Kroot Shaper (or is part of a Detachment using the Kroot Kindred Rite of War), the controlling player may select one of the following genetic adaptations for that unit at the start of the battle, before deployment, for +2 points per model. Skeletal Wings / Swift Striders: models in the unit add +1" to their Movement Characteristic and gain the Fleet (1) special rule. Thickened Hide: models in the unit improve their Armour Save to 5+ (instead of 6+). Muscular Hypertrophy: models in the unit add +1 to their Strength Characteristic.
 
+#### Retinue Squads
+
+A T'au Retinue Squad does not occupy a Force Organisation slot, and is instead selected as part of the same HQ choice as the model with the Cadre Commander special rule that unlocked it. A Detachment may include one Retinue Squad for each model with the Cadre Commander special rule it contains. A Retinue Squad must be deployed with the character that unlocked it joined to the unit, and that character may not voluntarily leave the Retinue Squad during the battle unless the Retinue Squad is destroyed.
+
 #### Drone Controller
 
 A unit with this special rule may include models with the Drone sub-type, either as part of its Unit Composition or bought from its Options, up to the number its datasheet allows. These drones follow the Drone (sub-type) rules for drones taken as part of a parent unit.
@@ -350,7 +354,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 
 | 2.0 slot | T'au units |
 |---|---|
-| HQ | Blade-Sworn Cadre Master, Commander, Cadre Fireblade, Ethereal, Aun'Va, Aun'Shi, Commander Farsight, Commander Shadowsun, Kroot Shaper, Shas'o R'alai, Shas'o R'myr, Commander Brightsword, Commander O'Vesa, The Twin Lance, Commander Bravestorm, Commander Sha'vastos, Commander Arra'kon, Sub-commander Torchstar, Kroot Master Shaper, Kroot Flesh Shaper, Kroot Trail Shaper, Kroot War Shaper, Kroot Lone-spear |
+| HQ | Blade-Sworn Cadre Master, Crisis Bodyguard Team, Fireblade Honour Guard Team and Blade-Sworn Honour Guard Team (Retinue Squads only), Commander, Cadre Fireblade, Ethereal, Aun'Va, Aun'Shi, Commander Farsight, Commander Shadowsun, Kroot Shaper, Shas'o R'alai, Shas'o R'myr, Commander Brightsword, Commander O'Vesa, The Twin Lance, Commander Bravestorm, Commander Sha'vastos, Commander Arra'kon, Sub-commander Torchstar, Kroot Master Shaper, Kroot Flesh Shaper, Kroot Trail Shaper, Kroot War Shaper, Kroot Lone-spear |
 | Elites | Crisis Battlesuits, Crisis Bodyguards, Farsight Blade-Sworn Team, Stealth Battlesuits, Riptide, Ghostkeel, Firesight Marksman, Darkstrider, Kroot Farstalkers, XV9 Hazard Support Team, XV81 Crisis Battlesuits, XV84 Crisis Battlesuits, DX-4 Technical Drones, Ethereal Guard |
 | Troops | Strike Team, Breacher Team, Kroot Carnivores, Gue'vesa Squad |
 | Dedicated Transports | Devilfish |
@@ -1196,6 +1200,175 @@ Shas'ri Locai and Shas'ri Lantar, Exemplars Sunsear and Scatterflare, the new fa
 - Point-blank Killers: when the unit fights in close combat, each Exemplar may make a Shooting Attack with its battlesuit pulse pistol instead of its normal Attacks, at Initiative 4†
 - Sept (Vior'la)
 - The Twin Lance may not join other units, and no character may join them
+
+#### Crisis Bodyguard Team — 140 pts
+
+*Hand-picked from the most decorated Shas'vre veterans of a Sept's hunter cadres, Crisis Bodyguards pilot master-crafted XV8 Battlesuits tuned for rapid reaction and maximum firepower. Sworn to shield their Commander with their own armoured frames, they drop directly into the fiercest firestorms to secure vital objectives and eliminate enemy command nodes.*
+
+A Retinue Squad (see Retinue Squads) for any model with the Cadre Commander special rule and the Battlesuit Unit Sub-type (including Commander Farsight and Commander Shadowsun).
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Crisis Bodyguard Shas'vre | 8 | 3 | 4 | 5 | 5 | 3 | 3 | 3 | 9 | 3+ | 50mm |
+
+**Unit Composition**
+
+- 2 Crisis Bodyguard Shas'vre
+
+**Wargear**
+
+- Blacksun filter
+- Multi-tracker
+- Up to three weapons or support systems each from the Battlesuit Armoury (bought below)
+- XV8 Crisis battlesuit (jet pack)
+
+**Unit Type**
+
+- Crisis Bodyguard Shas'vre: Battlesuit (Character)
+
+**Special Rules**
+
+- Bonding Knife Ritual: the unit may re-roll failed Morale checks
+- Bulky (3)
+- Chosen Warriors
+- Deep Strike
+- Relentless
+- Retinue Squads
+- Sept (X)
+- Sworn Protectors: models in this unit may re-roll failed Look Out, Sir! rolls made to intercept wounds allocated to the Commander that unlocked this unit
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Crisis Bodyguard Team may take:** |  |
+| – Up to 4 additional Crisis Bodyguard Shas'vre | +65 points each |
+| **Each model must take up to three of the following:** |  |
+| – Battlesuit weapons and support systems | See Battlesuit Armoury |
+| **Any model may take (Sept (Farsight Enclaves) only):** |  |
+| – Fusion blades (replaces two fusion blasters) | +15 points each |
+| – Onager gauntlet (one per unit) | +15 points |
+| **For each battlesuit, the unit may take up to two drones from:** |  |
+| – Gun, Marker or Shield Drones | Drone costs |
+
+_Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward unit size or Transport capacity._
+
+#### Fireblade Honour Guard Team — 85 pts
+
+*Chosen from the most steadfast Fire Warriors who have survived dozens of campaigns alongside their Cadre Fireblade or Ethereal, these veterans form an unyielding wall of pulse fire and white-hot loyalty around their commander. Armed with master-crafted pulse weapons and reinforced combat plate, they anchor the battleline through the heaviest enemy barrages.*
+
+A Retinue Squad (see Retinue Squads) for an Ethereal or a Cadre Fireblade with the Cadre Commander special rule.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Honour Guard Shas'ui | 6 | 3 | 4 | 3 | 3 | 1 | 3 | 2 | 9 | 4+ | 25mm |
+
+**Unit Composition**
+
+- 4 Honour Guard Shas'ui
+
+**Wargear**
+
+- EMP grenades
+- Photon grenades
+- Pulse pistol
+- Pulse rifle
+- Reinforced combat armour
+
+**Unit Type**
+
+- Honour Guard Shas'ui: Infantry (Character)
+
+**Special Rules**
+
+- Bonding Knife Ritual: the unit may re-roll failed Morale checks
+- Chosen Warriors
+- Honour Guard Weapons: the unit's pulse rifles and pulse blasters have the Master-crafted special rule
+- Retinue Squads
+- Sept (X)
+- Stubborn
+- Sworn Protectors: models in this unit may re-roll failed Look Out, Sir! rolls made to intercept wounds allocated to the Commander that unlocked this unit
+
+Dedicated Transport
+A Fireblade Honour Guard Team numbering 12 models or fewer (including the joined HQ model, excluding Drones) may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Fireblade Honour Guard Team may take:** |  |
+| – Up to 6 additional Honour Guard Shas'ui | +18 points each |
+| **Any model may exchange its pulse rifle for:** |  |
+| – Pulse blaster | free |
+| **One Honour Guard Shas'ui may take:** |  |
+| – Cadre bonding banner | +15 points |
+| **The unit may take up to two drones from:** |  |
+| – Gun, Marker or Shield Drones | Drone costs |
+
+_Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward unit size or Transport capacity._
+
+#### Blade-Sworn Honour Guard Team — 145 pts
+
+*The deadliest close-quarters duelists of the Farsight Enclaves, hand-selected by a Blade-Sworn Cadre Master to serve as his personal assault vanguard. Clad in master-crafted combat armour and wielding custom-tuned vibro-weapons and gravitic hammers, they carve a bloody path through enemy champions so their commander may strike down the opposing warlord.*
+
+A Retinue Squad (see Retinue Squads) for a Blade-Sworn Cadre Master (or Commander Farsight) in a Detachment where every model has the Sept (Farsight Enclaves) special rule.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Honour Guard Shas'vre | 6 | 4 | 4 | 3 | 3 | 1 | 4 | 3 | 9 | 3+ | 25mm |
+
+**Unit Composition**
+
+- 4 Honour Guard Shas'vre
+
+**Wargear**
+
+- EMP grenades
+- Master-crafted combat armour
+- Photon grenades
+- Pulse pistol
+- Vibro-blade
+
+**Unit Type**
+
+- Honour Guard Shas'vre: Infantry (Character)
+
+**Special Rules**
+
+- Bonding Knife Ritual: the unit may re-roll failed Morale checks
+- Chosen Warriors
+- Furious Charge (1)
+- Hit & Run
+- Retinue Squads
+- Sept (Farsight Enclaves)
+- Stubborn
+- Sworn Protectors: models in this unit may re-roll failed Look Out, Sir! rolls made to intercept wounds allocated to the Commander that unlocked this unit
+
+Dedicated Transport
+A Blade-Sworn Honour Guard Team numbering 12 models or fewer (including the joined HQ model, excluding Drones) that has not been equipped with Repulsor Jet-Packs may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Blade-Sworn Honour Guard Team may take:** |  |
+| – Up to 6 additional Honour Guard Shas'vre | +26 points each |
+| **Any model may exchange its vibro-blade for one of the following:** |  |
+| – Vibro-axe | free |
+| – Vibro-maul | free |
+| – Vibro-lance | free |
+| **Any model may exchange its pulse pistol and vibro-blade for one of the following:** |  |
+| – Paired vibro-blades | +5 points |
+| – Grav-resonance maul | +10 points |
+| – Gravitic impact hammer | +15 points |
+| **Any model may take:** |  |
+| – Shield generator (5+ Invulnerable Save) | +5 points |
+| **The entire unit (excluding drones) may take:** |  |
+| – Repulsor jet-packs | +10 points per model |
+| **The unit may take up to two drones from:** |  |
+| – Gun, Marker or Shield Drones | Drone costs |
+
+_Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward unit size or Transport capacity._
 
 ### Elites
 
@@ -2934,6 +3107,12 @@ Packs, ammunition and supplies strapped to a Great Knarloc for the Kroot that ma
 
 - **Leadership Aura:** friendly Kroot units within 6" of the Great Knarloc add 1 to their Leadership.
 - **Ammunition Supply:** if a friendly Kroot Carnivore or Kroot auxiliary unit within 6" rolls a 1 to hit in the Shooting phase, it may re-roll that dice.
+
+#### Cadre Bonding Banner
+
+*The banner of a Fire caste cadre, carried by its most honoured warrior.*
+
+The bearer's unit adds 1 to its combat resolution, and friendly T'au units within 6" of the bearer may re-roll failed Morale and Pinning tests.
 
 #### Communion Helm
 
