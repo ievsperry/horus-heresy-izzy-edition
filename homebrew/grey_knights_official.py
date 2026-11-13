@@ -138,13 +138,9 @@ def retinues(b):
     """Retinue Squads, as an official Legion leader takes a Command Squad: every model with Master of the Legion
     (but the Grand Master in Nemesis Dreadknight) has a "Retinue" group in his own entry holding the three Command
     Squads, and the Aegis Captain the Aegis Bastion Squad too, so a Retinue uses no Force Organisation slot. The
-    Command Squads are taken only this way; the Aegis Bastion Squad's 0-1 limit is on the squad, so a Detachment
+    Command Squads are Elites choices as well; the Aegis Bastion Squad's 0-1 limit is on the squad, so a Detachment
     has one at most, however it is taken."""
     squads = [b.units[n] for n in COMMAND_SQUADS]
-    links = b.root.find("entryLinks")
-    for link in list(links):
-        if link.get("targetId") in squads:
-            links.remove(link)
     bastion = b.units["Aegis Bastion Squad"]
     squad = b.shared_entries.find(f"selectionEntry[@id='{bastion}']")
     add_constraint(squad, "max", 1, make_id(bastion, "one per force"), scope="force", children=True)
