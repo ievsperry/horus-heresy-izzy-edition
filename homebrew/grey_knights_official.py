@@ -25,8 +25,8 @@ Legion leader takes a Command Squad; the Aegis Captain may take an Aegis Bastion
 
 The 0-1 Purifier Bladeguard Squad has no limit in a Detachment whose Brotherhood is the 8th.
 
-Characters bound to a Brotherhood (Stern, Voldus and the founding Grand Masters) show only in a Detachment of
-that Brotherhood.
+Characters bound to a Brotherhood (Stern, Voldus and the founding Grand Masters) are an error in a Detachment of
+another Brotherhood.
 
 Grey Knights are always Loyalist: a force that picks the Traitor allegiance may not take the Grey Knights army
 entry (BattleScribe reports it as over its limit)."""
@@ -118,8 +118,8 @@ Legion leader takes a Command Squad; the Aegis Captain may take an Aegis Bastion
 
 The 0-1 Purifier Bladeguard Squad has no limit in a Detachment whose Brotherhood is the 8th.
 
-Characters bound to a Brotherhood (Stern, Voldus and the founding Grand Masters) show only in a Detachment of
-that Brotherhood.
+Characters bound to a Brotherhood (Stern, Voldus and the founding Grand Masters) are an error in a Detachment of
+another Brotherhood.
 
 Grey Knights are always Loyalist: with Traitor chosen in the force, the army entry may not be taken."""
     army = b.root.find(f"selectionEntries/selectionEntry[@id='{make_id('army', b.faction)}']")
@@ -138,13 +138,14 @@ def retinues(b):
     """Retinue Squads, as an official Legion leader takes a Command Squad: every model with Master of the Legion
     (but the Grand Master in Nemesis Dreadknight) has a "Retinue" group in his own entry holding the three Command
     Squads, and the Aegis Captain the Aegis Bastion Squad too, so a Retinue uses no Force Organisation slot. The
-    Command Squads are taken only this way; the Aegis Bastion Squad's 0-1 limit is on the squad, so a Detachment
+    Command Squads are HQ choices as well; the Aegis Bastion Squad's 0-1 limit is on the squad, so a Detachment
     has one at most, however it is taken."""
     squads = [b.units[n] for n in COMMAND_SQUADS]
-    links = b.root.find("entryLinks")
-    for link in list(links):
+    for link in b.root.find("entryLinks"):  # HQ choices, but with no Warlord they never fill a Compulsory HQ slot
         if link.get("targetId") in squads:
-            links.remove(link)
+            for c in link.findall("categoryLinks/categoryLink"):
+                if c.get("name", "").startswith("Compulsory"):
+                    link.find("categoryLinks").remove(c)
     bastion = b.units["Aegis Bastion Squad"]
     squad = b.shared_entries.find(f"selectionEntry[@id='{bastion}']")
     add_constraint(squad, "max", 1, make_id(bastion, "one per force"), scope="force", children=True)
@@ -182,8 +183,9 @@ BROTHERHOOD_ONLY = {"Brother-Captain Stern": ["3rd"], "Grand Master Voldus": ["3
 
 
 def brotherhood_only(b):
-    """Characters bound to a Brotherhood (Stern and Voldus the 3rd, each founding Grand Master his own) show only
-    in a Detachment whose Brotherhood is one of theirs."""
+    """Characters bound to a Brotherhood (Stern and Voldus the 3rd, each founding Grand Master his own) are always
+    shown, but may be taken only in a Detachment whose Brotherhood is one of theirs: elsewhere they are over their
+    limit (max 0), which BattleScribe and New Recruit report as an error."""
     ids = {e.get("name", "").split(" ")[0]: e.get("id") for e in b.root.iter("selectionEntry")
            if re.match(r"\d(st|nd|rd|th) Brotherhood", e.get("name", ""))}
     for name, nths in BROTHERHOOD_ONLY.items():
@@ -191,11 +193,11 @@ def brotherhood_only(b):
         for link in b.root.find("entryLinks"):
             if link.get("targetId") != uid:
                 continue
-            link.set("hidden", "true")
-            m = el(child(link, "modifiers"), "modifier", type="set", field="hidden", value="false")
-            conds = el(el(el(m, "conditionGroups"), "conditionGroup", type="or"), "conditions")
-            for n in nths:
-                el(conds, "condition", type="atLeast", value=1, field="selections", scope="force",
+            add_constraint(link, "max", 0, make_id(link.get("id"), "brotherhood only"), scope="force", children=True)
+            cmax = link.findall("constraints/constraint")[-1]
+            for n in nths:  # one plain modifier per Brotherhood (Khyron has two)
+                m = el(child(link, "modifiers"), "modifier", type="set", field=cmax.get("id"), value=1)
+                el(el(m, "conditions"), "condition", type="atLeast", value=1, field="selections", scope="force",
                    childId=ids[n], shared=True, includeChildSelections=True, includeChildForces=False)
 
 

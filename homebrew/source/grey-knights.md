@@ -214,7 +214,7 @@ Grey Knights use the 2.0 core reactions as normal, plus this advanced reaction. 
 
 The Grey Knights are organised into eight Brotherhoods, plus the Purifiers. Brotherhoods work like Ork Klans and Sororitas Orders.
 
-**Brotherhood (X).** When building an army, choose one Brotherhood for each detachment. Every unit in that detachment gains Brotherhood (X). Kaldor Draigo, Castellan Crowe and Supreme Grand Master Janus may join any Brotherhood; Brother-Captain Stern, Grand Master Voldus and Grand Master Iapto only the 3rd Brotherhood; Grand Master Koios only the 1st, Satre the 2nd, Yotun the 4th, Epimetheus the 5th and Ogen the 6th; Grand Master Khyron the 7th or the 8th. Each shows only in a Detachment of his Brotherhood. Each Brotherhood's Advanced Reaction is available in addition to Psychic Ward and costs one point of the Reaction Allotment†.
+**Brotherhood (X).** When building an army, choose one Brotherhood for each detachment. Every unit in that detachment gains Brotherhood (X). Kaldor Draigo, Castellan Crowe and Supreme Grand Master Janus may join any Brotherhood; Brother-Captain Stern, Grand Master Voldus and Grand Master Iapto only the 3rd Brotherhood; Grand Master Koios only the 1st, Satre the 2nd, Yotun the 4th, Epimetheus the 5th and Ogen the 6th; Grand Master Khyron the 7th or the 8th. Each may only be taken in a Detachment of his Brotherhood; taken in any other, the army builder shows an error. Each Brotherhood's Advanced Reaction is available in addition to Psychic Ward and costs one point of the Reaction Allotment†.
 
 ### 1st Brotherhood, the Swordbearers
 
@@ -342,7 +342,7 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 
 | 2.0 slot | Grey Knights units |
 | --- | --- |
-| HQ | Grand Master, Brother-Captain, Aegis Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus, Supreme Grand Master Janus, Grand Masters Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron; Brotherhood Command Squad, Brotherhood Terminator Command Squad and Brotherhood Tartaros Command Squad as Retinues (no slot) |
+| HQ | Grand Master, Brother-Captain, Aegis Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus, Supreme Grand Master Janus, Grand Masters Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron, Brotherhood Command Squad, Brotherhood Terminator Command Squad, Brotherhood Tartaros Command Squad (each also a Retinue) |
 | Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary, Aegis Bastion Squad (0-1), Purifier Bladeguard Squad (0-1), Servitors |
 | Troops | Strike Squad, Brotherhood Terminator Squad |
 | Dedicated Transports | Rhino\*, Razorback\* |
@@ -1444,7 +1444,7 @@ For these prerequisites, Supreme Grand Master Janus and the founding Grand Maste
 
 *The chosen brethren of a Grand Master or Brother-Captain, clad in Aegis artificer plate and sworn to guard their lord and his banner.*
 
-This unit may only be taken as a Retinue Squad of a model with the Master of the Legion special rule (not the Grand Master in Nemesis Dreadknight), as the Retinue special rule describes. It does not use a Force Organisation slot, counts as part of its Leader's unit, must deploy with its Leader, and the Leader may not voluntarily leave it.
+This unit may be taken as an HQ choice (it may not fill a compulsory HQ slot), or as a Retinue Squad of a model with the Master of the Legion special rule (not the Grand Master in Nemesis Dreadknight), as the Retinue special rule describes. As a Retinue Squad it does not use a Force Organisation slot, counts as part of its Leader's unit, must deploy with its Leader, and the Leader may not voluntarily leave it.
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1508,7 +1508,7 @@ This unit may only be taken as a Retinue Squad of a model with the Master of the
 
 *Veteran brethren of the inner circle in Aegis Tartaros plate, swift enough to keep pace with their lord and strong enough to stand against the greatest horrors of the Warp.*
 
-This unit may only be taken as a Retinue Squad of a model with the Master of the Legion special rule (not the Grand Master in Nemesis Dreadknight), as the Retinue special rule describes. It does not use a Force Organisation slot, counts as part of its Leader's unit, must deploy with its Leader, and the Leader may not voluntarily leave it.
+This unit may be taken as an HQ choice (it may not fill a compulsory HQ slot), or as a Retinue Squad of a model with the Master of the Legion special rule (not the Grand Master in Nemesis Dreadknight), as the Retinue special rule describes. As a Retinue Squad it does not use a Force Organisation slot, counts as part of its Leader's unit, must deploy with its Leader, and the Leader may not voluntarily leave it.
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1569,7 +1569,7 @@ This unit may only be taken as a Retinue Squad of a model with the Master of the
 
 *The honour guard of a Grand Master in Aegis Terminator plate, a wall of warded ceramite around their lord and his banner.*
 
-This unit may only be taken as a Retinue Squad of a model with the Master of the Legion special rule (not the Grand Master in Nemesis Dreadknight), as the Retinue special rule describes. It does not use a Force Organisation slot, counts as part of its Leader's unit, must deploy with its Leader, and the Leader may not voluntarily leave it.
+This unit may be taken as an HQ choice (it may not fill a compulsory HQ slot), or as a Retinue Squad of a model with the Master of the Legion special rule (not the Grand Master in Nemesis Dreadknight), as the Retinue special rule describes. As a Retinue Squad it does not use a Force Organisation slot, counts as part of its Leader's unit, must deploy with its Leader, and the Leader may not voluntarily leave it.
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
