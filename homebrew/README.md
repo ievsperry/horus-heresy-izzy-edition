@@ -475,6 +475,13 @@ loading. The script prints anything in the doc it could not place.
 - A "Force Organisation" table headed "X Detachment (Primary only)" with rows such as "HQ: 1 Compulsory" and
   "Elites: 2 Compulsory, +3 Optional" is a Force Organisation Chart of the catalogue's own (the Aegis Militant
   Detachment), taken once per army. Allied and Lords of War Detachments stay the game system's.
+- "## Detachments" with "### X Organization Chart" (or "### X Detachment") sub-sections whose "**Primary
+  Detachment**" and "**Support Detachment (Optional)**" tables give each Battlefield Role's Minimum and Maximum
+  (Orks: Waaagh! Warband, Scappin' Waaagh!) are Force Organisation Charts of the catalogue's own, named
+  "X: Primary Detachment" and "X: Support Detachment". One Primary chart per army; a Support Detachment only
+  beside its own chart's Primary; units named in "may only be selected as part of the army's Primary
+  Detachment: ..." are an error in the Support Detachment. The rest of the sub-section (role assignments,
+  restrictions) is the Detachment's rules text. Allied and Lords of War Detachments stay the game system's.
 - A rule under "## Army-wide Special Rules" that says a model "must select one" of the "####" headings below
   it (Warrants of Trade) is a required pick of one on every unit with the rule, hidden and optional when the
   unit is in an Allied Detachment.
