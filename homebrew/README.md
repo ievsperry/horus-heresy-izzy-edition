@@ -482,6 +482,13 @@ loading. The script prints anything in the doc it could not place.
   beside its own chart's Primary; units named in "may only be selected as part of the army's Primary
   Detachment: ..." are an error in the Support Detachment. The rest of the sub-section (role assignments,
   restrictions) is the Detachment's rules text. Allied and Lords of War Detachments stay the game system's.
+  The Aeldari form is a "Battlefield Role | Selections" table ("HQ (Compulsory) | 1-3", "Troops | 0-2"; rows
+  of one role add up): the Aeldari Warhost, Auxiliary, Allied and Lords of War Detachments in every Aeldari
+  catalogue (Drukhari too). With no "Primary Detachment" label, the first chart (the Warhost) is the Primary,
+  once per army. A chart with several count columns (Drukhari Realspace Raiders: Kabal, Wych Cult and
+  Haemonculus Coven) is one per column, together a Primary formation instead of the Warhost. From the text:
+  the Lords of War Detachment needs the Warhost; the Allied Detachment (another civilization) is not taken
+  beside this list's Primary; units in the Auxiliary, Allied and Lords of War Detachments cannot be the Warlord.
 - A rule under "## Army-wide Special Rules" that says a model "must select one" of the "####" headings below
   it (Warrants of Trade) is a required pick of one on every unit with the rule, hidden and optional when the
   unit is in an Allied Detachment.
