@@ -515,6 +515,7 @@ A Grey Knights army may take one Rite of War.
 - Deep Strike
 - Hatred (Daemons)
 - Legiones Astartes (Grey Knights)
+- Master of the Legion
 - Minor Psychic Powers
 - Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
 - Relentless
