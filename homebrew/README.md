@@ -290,7 +290,8 @@ loading. The script prints anything in the doc it could not place.
   an Elites choice (ALSO_OWN_SLOT). Their drones cost 10/15/15; the Crisis Bodyguards'
   fusion blades and Onager gauntlet (one per unit) are Farsight Enclaves only; the Blade-Sworn Honour Guard are
   Farsight Enclaves only, with the Blade-Sworn swaps and no Devilfish with Repulsor jet-packs. A Retinue Squad's
-  characters have no Warlord choice. The Honour blade is +2, AP 4, Rending (5+), Reach (1) for everyone who carries it.
+  characters have no Warlord choice. The Ethereal Honour Guard carry the Covenant blade
+  (+2, AP 4, Two-handed, Rending (5+), Reach (1)); the Honour blade keeps its own profile.
 - A unit with a model of the Unique Sub-type may be taken once per force, as official Unique characters are
   (Constantin Valdor): the builder adds that limit unless the doc already sets one (unique_limits).
 - Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,

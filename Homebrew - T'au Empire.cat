@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="38" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="39" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -1439,6 +1439,21 @@
         <profile name="Honour blade" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="14b6-bad2-ec33-539d" publicationId="733a-d454-80f2-c90e">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Two-handed" id="b4c7-84fa-78d0-151a" hidden="false" targetId="4c23-e863-a569-7617" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Covenant blade" hidden="false" id="85da-8a83-884d-3e19" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Covenant blade" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="87d5-2888-7c84-b9da" publicationId="733a-d454-80f2-c90e">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Rending (5+), Reach (1)</characteristic>
@@ -1446,13 +1461,13 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Two-handed" id="b4c7-84fa-78d0-151a" hidden="false" targetId="4c23-e863-a569-7617" type="rule" />
-        <infoLink name="Rending (X)" id="b1d7-d809-9c50-51e7" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+        <infoLink name="Two-handed" id="62cd-5350-283d-a2ea" hidden="false" targetId="4c23-e863-a569-7617" type="rule" />
+        <infoLink name="Rending (X)" id="e47e-0f9a-615e-4dff" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Rending (5+)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Reach (X)" id="6a3e-5968-3b37-9ece" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+        <infoLink name="Reach (X)" id="91f0-a5e3-9943-fe28" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Reach (1)" />
           </modifiers>
@@ -10095,13 +10110,13 @@ O'Vesa may re-roll the Leadership test.</description>
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="9a18-2f87-f266-a55c" primary="false" name="Character" />
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Exchange pulse pistol and honour blade" hidden="false" id="d8ae-0b31-f52c-8c90" defaultSelectionEntryId="2e8f-d6ba-0582-5369">
+            <selectionEntryGroup name="Exchange pulse pistol and covenant blade" hidden="false" id="d8ae-0b31-f52c-8c90" defaultSelectionEntryId="2e8f-d6ba-0582-5369">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="566c-a8dd-5170-4870" percentValue="false" includeChildSelections="true" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb2f-8939-c78b-d1a4" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Pulse pistol and Honour blade" hidden="false" id="2e8f-d6ba-0582-5369" type="selectionEntry" targetId="f42a-fea2-ad72-4ef2">
+                <entryLink import="true" name="Pulse pistol and Covenant blade" hidden="false" id="2e8f-d6ba-0582-5369" type="selectionEntry" targetId="d775-a55c-af3b-a41c">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57e4-f1a8-7995-f374" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
@@ -10300,18 +10315,18 @@ O'Vesa may re-roll the Leadership test.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pulse pistol and Honour blade" hidden="false" id="f42a-fea2-ad72-4ef2" publicationId="733a-d454-80f2-c90e">
+    <selectionEntry type="upgrade" import="true" name="Pulse pistol and Covenant blade" hidden="false" id="d775-a55c-af3b-a41c" publicationId="733a-d454-80f2-c90e">
       <entryLinks>
-        <entryLink import="true" name="Pulse pistol" hidden="false" id="63ba-bbab-8cea-e63b" type="selectionEntry" targetId="3831-56e0-584a-6ff7">
+        <entryLink import="true" name="Pulse pistol" hidden="false" id="85dd-0157-714b-07a1" type="selectionEntry" targetId="3831-56e0-584a-6ff7">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26de-b245-f6df-d490" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53e3-7f43-0bfa-20d4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4987-b649-dc08-00dc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64f6-ba61-221f-f43e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Honour blade" hidden="false" id="e075-07cc-372f-22bf" type="selectionEntry" targetId="ee4b-db29-92f1-84ce">
+        <entryLink import="true" name="Covenant blade" hidden="false" id="8b10-13a7-d0cb-485d" type="selectionEntry" targetId="85da-8a83-884d-3e19">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fddb-caa6-8129-5c0f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad74-ce10-0284-f378" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca94-7718-a1ef-a39f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0a1-315c-026f-d68e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
         </entryLink>
       </entryLinks>

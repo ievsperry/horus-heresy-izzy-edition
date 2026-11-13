@@ -1309,7 +1309,7 @@ _Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each,
 
 #### Ethereal Honour Guard — 110 pts
 
-*Chosen from the most fanatically devoted Fire Warriors of a Sept world, the Ethereal Honour Guard cast aside their pulse rifles in favour of ceremonial Equalizers and two-handed Honour Blades. Clad in ornate, reinforced carapace armour emblazoned with the caste symbols of the Aun, these silent sentinels stand ready to intercept any blow aimed at their spiritual leaders, willingly laying down their lives without hesitation so that the wisdom of the Ethereal Caste may endure.*
+*Chosen from the most fanatically devoted Fire Warriors of a Sept world, the Ethereal Honour Guard cast aside their pulse rifles in favour of ceremonial Equalizers and two-handed Covenant Blades. Clad in ornate, reinforced carapace armour emblazoned with the caste symbols of the Aun, these silent sentinels stand ready to intercept any blow aimed at their spiritual leaders, willingly laying down their lives without hesitation so that the wisdom of the Ethereal Caste may endure.*
 
 A Retinue Squad (see Retinue Squads) for an Ethereal (including Aun'Va or Aun'Shi) with the Cadre Commander special rule.
 
@@ -1324,7 +1324,7 @@ A Retinue Squad (see Retinue Squads) for an Ethereal (including Aun'Va or Aun'Sh
 **Wargear**
 
 - EMP grenades
-- Honour blade
+- Covenant blade
 - Ornate combat armour
 - Photon grenades
 - Pulse pistol
@@ -1351,7 +1351,7 @@ An Ethereal Honour Guard numbering 12 models or fewer (including the joined Ethe
 |---|---|
 | **The Ethereal Honour Guard may take:** |  |
 | – Up to 6 additional Ethereal Honour Guard Shas'vre | +20 points each |
-| **Any model may exchange its pulse pistol and honour blade for:** |  |
+| **Any model may exchange its pulse pistol and covenant blade for:** |  |
 | – Equalizer and shield generator | +10 points |
 | **One Ethereal Honour Guard Shas'vre may take:** |  |
 | – Sacred caste standard | +15 points |
@@ -3470,7 +3470,8 @@ The ceremonial weapons of the Ethereal Caste and its guards, and the blades, cla
 |---|---|---|---|---|
 | Close combat weapon | – | User | – | Melee |
 | The Dawn Blade | – | +1 | 2 | Melee, Murderous Strike (6+) |
-| Honour blade | – | +2 | 4 | Melee, Two-handed, Rending (5+), Reach (1) |
+| Honour blade | – | +1 | 4 | Melee, Two-handed |
+| Covenant blade | – | +2 | 4 | Melee, Two-handed, Rending (5+), Reach (1) |
 | Equalizer | – | +1 | 4 | Melee, Rending (5+), Concussive (1), Duellist's Edge (1) |
 | Honour stave | – | +1 | – | Melee, Two-handed, Concussive (1) |
 | Krootox fists | – | User | – | Melee |
