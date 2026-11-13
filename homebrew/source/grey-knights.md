@@ -62,7 +62,18 @@ Force: Any Psyker with a weapon or ability with this special rule may choose to 
 
 **Soul Blaze.** Whenever an enemy unit suffers one or more unsaved Wounds from an attack with the Soul Blaze special rule, it is set ablaze; place a marker next to the unit as a reminder. A unit cannot have more than one Soul Blaze marker on it at a time, regardless of how many Soul Blaze attacks wound it. At the end of every turn (both yours and your opponent's), roll a D6 for each unit with a Soul Blaze marker. On a 1–3 the flames burn out and the marker is removed. On a 4+ the unit stays ablaze and immediately suffers D3 hits resolved at Strength 4, AP 5, with the Ignores Cover special rule. Any Wounds caused by Soul Blaze are Randomly Allocated among the models in the burning unit. Against models with the Daemon, Corrupted, Corrupted Engine or Malefic Unit Type or Sub-type, Soul Blaze hits gain Rending (6+).
 
+**Relic (X).** Ancient artifacts of irreplaceable cultural significance, standard-bearing icons of legendary crusades, or individual warriors carrying the heavy burden of a Legion's legacy—the loss of such prizes is a catastrophic blow to morale and a major triumph for the foe. If a unit with this Special Rule is destroyed by any means, the opposing player immediately scores a number of additional Victory Points equal to the value of X specified in brackets (e.g., Relic (2) scores 2 additional Victory Points). These Victory Points are awarded in addition to any Victory Points normally scored for destroying the unit (such as those gained from the Price of Failure, Slay the Warlord, or standard Mission-specific objectives). If multiple units with this Special Rule are destroyed during a single battle, the opposing player scores the additional Victory Points for each unit individually.
+
 **Teleport Strike.** Grey Knights in Aegis Terminator armour, Strike Squads and Interceptor Squads have Deep Strike, and do not scatter if any friendly Grey Knights unit is within 6" of the target point†.
+
+**Teleport Assault.** *A teleport assault is a coordinated mass-translocation of battle-brothers directly from the teleportarium chambers of an orbiting strike cruiser into the teeth of the enemy line. Only the Grey Knights, shielded by their Aegis armour and guided by the Chapter's Prognosticars, can endure the perilous energies of a simultaneous, low-orbit mass teleportation without being torn apart by the Warp.* Before the start of the first turn, when placing units into Reserve, a player using the Teleport Assault Rite of War must assign all units in that Detachment with the Teleport Assault special rule to perform a Teleport Assault. All units assigned to a Teleport Assault must enter play at the start of the controlling player's first turn, before any other units are moved, following this procedure:
+
+1. First Unit Placement: To deploy those models assigned to a Teleport Assault onto the battlefield, first the controlling player must select any one unit assigned to the assault. Place the first model of that unit anywhere on the battlefield that is at least 1" from any enemy model, battlefield edge, or piece of Impassable Terrain, and then scatter that model. Deploy the remaining models of that unit in unit coherency around the first model (no model may be placed within 1" of an enemy model or within Impassable Terrain; any model that cannot be placed is removed as a casualty).
+2. Mishap / Off-Target Positioning: If the unit's final position places any model within 1" of an enemy model, any battlefield edge, or a piece of Impassable Terrain, then the controlling player's opponent may move that unit to any position within 18" where all models can be placed more than 1" from any enemy model, battlefield edge, or piece of Impassable Terrain. If there is no suitable position within 18", then the unit may be repositioned anywhere on the battlefield that is more than 1" from any enemy model, battlefield edge, or piece of Impassable Terrain.
+3. Disordered vs. Coordinated Strike: Once this first unit has been deployed, roll a D6. On a 1 (Disordered Assault), the opposing player may deploy each remaining unit in the Teleport Assault anywhere within 24" of the first unit without scattering. On a 2 or higher (Coordinated Strike), the controlling player deploys each remaining unit anywhere within 24" of the first unit without scattering. Either way, no model may be placed within 1" of an enemy model or within Impassable Terrain. If the Detachment includes any 7th Brotherhood (Prescient Brethren) units or a model with a Teleport Homer, the controlling player may re-roll this D6.
+4. Psychic & Ozone Shockwave: Once all units in the Teleport Assault have been placed, any enemy units that have one or more models within 6" of any model deployed as part of the Teleport Assault must make an immediate Pinning test, blinded and deafened by the thunderclap of displaced air and psychic lightning.
+5. Interceptor Reactions: Once all Pinning tests are resolved, any enemy units that are neither Pinned nor Falling Back and are within line of sight may choose to make the Interceptor Reaction targeting any one of the units deployed as part of the Teleport Assault. No Reaction other than Interceptor may be made against the deployment of a unit as part of a Teleport Assault.
+6. Turn Progression & Charge Restrictions: Once all units from the Teleport Assault have been deployed and any Interceptor Reactions have been resolved, the turn proceeds as normal. Units that have been deployed as part of a Teleport Assault may not Move or Run in the same turn as they are deployed, and may not declare or resolve a Charge in the Assault phase of the same turn they are deployed, but may make Shooting Attacks as normal in the Shooting phase.
 
 **Apothecarion Detachment.** A Brother Apothecary unit is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed, every model in it must be assigned to another unit from the same Detachment. A Brother Apothecary may only be assigned to a unit composed entirely of Infantry models with the same Brotherhood (X) special rule as the Apothecary; to be assigned to a Brotherhood Terminator Squad or a Paladin Squad, the Apothecary must wear Aegis Terminator armour. No Brother Apothecary may be assigned to a unit that includes one or more models with the Independent Character special rule or the Unique Sub-type (but such models may join a unit that includes a Brother Apothecary as normal during deployment or any following turn). No more than one Brother Apothecary may be assigned to any given unit. Once assigned, the Apothecary is part of that unit and may not leave it under any circumstances; if that unit is removed as a casualty, the Apothecary is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Brother Apothecary as a casualty. When assigned to a unit, a Brother Apothecary gains all of the special rules (except those that specifically forbid it) and Unit Sub-types listed for that unit, but does not gain access to any additional Wargear options available to it.
 
@@ -344,20 +355,113 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 | --- | --- |
 | HQ | Grand Master, Brother-Captain, Aegis Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus, Supreme Grand Master Janus, Grand Masters Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron, Brotherhood Command Squad, Brotherhood Terminator Command Squad, Brotherhood Tartaros Command Squad (each also a Retinue) |
 | Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary, Aegis Bastion Squad (0-1), Purifier Bladeguard Squad (0-1), Servitors |
-| Troops | Strike Squad, Brotherhood Terminator Squad, Grey Knight Reconnaissance Squad, Grey Knight Scout Squad |
+| Troops | Strike Squad, Brotherhood Terminator Squad, Prognosticar Vanguard Squad, Watcher-in-the-Veil Squad |
 | Dedicated Transports | Rhino\*, Razorback\* |
-| Fast Attack | Interceptor Squad, Interceptor Terminator Squad, Grey Knight Dreadlancer Talon, Stormraven Gunship, Grey Knight Seeker Squad |
+| Fast Attack | Interceptor Squad, Interceptor Terminator Squad, Grey Knight Dreadlancer Talon, Stormraven Gunship, Exactor Squad |
 | Heavy Support | Purgation Squad, Dreadknight Talon, Land Raider Crusader, Land Raider Redeemer, Dreadnoughts\* and Land Raider Proteus or Phobos\* |
 
 *Official 2.0 datasheets.*
 
-A Grey Knights army may take one Rite of War: one of the four below, or one of the generic Legion Rites of War (such as Pride of the Legion or Armoured Spearhead), with its own requirements.
+A Grey Knights army may take one of the six Rites of War below. The generic Legion Rites of War are not available.
 
 For these prerequisites, Supreme Grand Master Janus and the founding Grand Masters (Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron) count as Grand Masters, and the Aegis Captain counts as a Brother-Captain.
 
+### Rite of War: Champions of Titan
+
+*Adapted from Rite of War: Pride of the Legion. Each Brotherhood of Titan maintains an inner circle of veteran champions and battle-hardened Terminator cadres forged in the crucible of daemonic war. Deployed together as a gleaming, impenetrable phalanx of sanctified silver, these elite warriors focus their combined psychic might and martial mastery to shatter the greatest horrors of the Warp.*
+
+**Effects**
+
+- Any unit composed entirely of models equipped with Aegis Terminator Armour, Aegis-Cataphractii Terminator Armour, Aegis-Tartaros Terminator Armour, or any other pattern of Terminator armour that is normally selected as an Elites choice may be selected as a Troops choice in a Detachment using this Rite of War.
+- Any unit selected as a Compulsory Troops choice in a Detachment using this Rite of War gains the Line Unit Sub-type.
+- Any unit composed entirely of models equipped with Aegis-Cataphractii Terminator Armour (or standard Cataphractii Terminator Armour) may also be selected as a Heavy Support choice in a Detachment using this Rite of War.
+- Any unit composed entirely of models equipped with Aegis-Tartaros Terminator Armour (or standard Tartaros Terminator Armour) may also be selected as a Fast Attack choice in a Detachment using this Rite of War.
+
+**Limitations**
+
+- Every model in a Detachment using this Rite of War must be equipped with Aegis Terminator Armour, Aegis-Cataphractii Terminator Armour, Aegis-Tartaros Terminator Armour, or another pattern of Terminator armour. Models that cannot be equipped with Terminator armour (such as standard power-armoured Infantry, Vehicles, Dreadnoughts, or Fortifications) may not be included in a Detachment using this Rite of War.
+
+### Rite of War: Prognosticar Vanguard
+
+*Adapted from Rite of War: Legion Recon Company. Guided by the precognitive visions of Titan's seers, the Chapter's stealth-warded pathfinders slip into corrupted warzones long before the main strike force arrives, securing vital teleport beacons and eliminating key targets from the shadows.*
+
+**Effects**
+
+- Prognosticar Vanguard Squads and Watcher-in-the-Veil Squads in a Detachment using this Rite of War do not have the Support Squad special rule (allowing them to be taken as Compulsory Troops choices and score objectives).
+- Exactor Squads may be taken as non-Compulsory Troops choices in a Detachment using this Rite of War.
+- A player whose army includes at least one Detachment using this Rite of War may re-roll any dice they roll to see which player takes the first turn or when attempting to Seize the Initiative.
+
+**Limitations**
+
+- No unit in a Detachment using this Rite of War that includes any models with the Heavy Unit Sub-type may be deployed onto the battlefield during deployment, and must instead be placed into Reserves.
+- A Detachment using this Rite of War may not select any Fortification choices.
+- All Compulsory Troops choices in a Detachment using this Rite of War must be Prognosticar Vanguard Squads or Watcher-in-the-Veil Squads.
+
+### Rite of War: Teleport Assault
+
+*Striking directly from the teleportarium chambers of an orbiting strike cruiser, the Grey Knights materialize at the heart of the enemy battleline in a blinding flash of ozone and psychic lightning, decapitating daemonic hosts before a cohesive defence can be mounted.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a Grand Master or Kaldor Draigo with the Master of the Legion special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- Every unit in a Detachment using this Rite of War composed entirely of models with the Infantry Unit Type (including models in Aegis Power Armour, Aegis Artificer Armour, and any pattern of Aegis Terminator Armour) or the Dreadnought Unit Type (including Dreadknights) gains the Teleport Assault special rule, unless they are equipped with Jump Packs or Personal Teleporters.
+- When taken as part of a Detachment using this Rite of War, units composed of models with the Dreadnought Unit Type may not be selected in units of more than one model.
+
+**Limitations**
+
+- All units in a Detachment using this Rite of War with the Teleport Assault special rule must deploy by means of a Teleport Assault.
+- A Detachment using this Rite of War may not select any Dedicated Transports or Fortification choices.
+- Any models selected as part of a Detachment that do not have the Teleport Assault special rule (such as Vehicles, Flyers, or units with Personal Teleporters) must be placed into Reserves during deployment and may not deploy onto the battlefield at the start of the game (though units with Personal Teleporters or Deep Strike may still arrive via normal Deep Strike Assaults from Turn 2 onwards).
+
+### Rite of War: Purifier Crusade
+
+*Wreathed in soul-searing psychic flame, the incorruptible brethren of the Purifier Order advance on foot in grim, relentless lockstep. Spurning heavy armoured transports and towering war-engines, they march directly into the heart of warp-tainted warzones, relying on their blazing psychic aura and unmatched bladework to scour all corruption from the battlefield.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include Castellan Crowe or a Brother-Captain (or a Praetor / Grand Master with the Brotherhood (8th) special rule) with the Master of the Legion special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- Cleansing Flame: Purifier Squads and Purifier Bladeguard Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected as a Compulsory Troops choice in this manner gains the Line Unit Sub-type.
+- March of the Incorruptible: Every unit in a Detachment using this Rite of War composed entirely of models with the Infantry Unit Type (excluding models with the Heavy Unit Sub-type) gains the Crusader special rule (adding +1 to their Run distances and Sweeping Advance rolls) and increases the range of their Purifying Flame psychic weapons by +3" (or adds +1 to the number of automatic hits inflicted by close-combat Purifying Flame / Cleansing Aura effects).
+- Beacon of Purity: Friendly units composed entirely of models with the Legiones Astartes (Grey Knights) special rule within 12" of the army's Warlord gain the Stubborn special rule and automatically pass any Morale or Pinning tests caused by models with the Daemon, Corrupted, Corrupted Engine, or Malefic Unit Type or Sub-type.
+- Relentless Purge: Once per game, at the start of any of the controlling player's Assault phases, the Warlord may declare a Great Cleansing. Until the end of that Assault phase, all friendly Purifier Squads and Purifier Bladeguard Squads in the Detachment gain the Rage (1) special rule.
+
+**Limitations**
+
+- A Detachment using this Rite of War may not include any Dreadknight Talons or Dreadnought units of any type.
+- A Detachment using this Rite of War may not include any Land Raiders or Spartan Assault Tanks of any variant (including as Dedicated Transports).
+- A Detachment using this Rite of War may not select any Fortification choices, and may only select a single Heavy Support choice.
+- All Compulsory Troops choices in a Detachment using this Rite of War must be Purifier Squads or Purifier Bladeguard Squads.
+
+### Rite of War: Paladin Retinue
+
+*The mightiest champions of the Grey Knights march to war as an impenetrable phalanx of Aegis Terminator plate, sworn to stand unbroken against the greatest horrors of the Immaterium. Each Paladin has survived the eight trials of Titan and banished a Greater Daemon in single combat, forming an unyielding wall of sanctified ceramite and Nemesis steel around their commander.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a Grand Master or Kaldor Draigo with the Master of the Legion special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- Chosen of the Chamber: Paladin Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected as a Compulsory Troops choice in this manner gains the Line Unit Sub-type.
+- Anvil of Titan: Every model in a Detachment using this Rite of War equipped with Aegis Terminator Armour, Aegis-Cataphractii Terminator Armour, or Aegis-Tartaros Terminator Armour gains the Stubborn and Heart of the Legion special rules (granting Feel No Pain (6+)—or improving an existing Feel No Pain roll by +1, to a maximum of 4+—while within 3" of an Objective marker).
+- Sworn Protectors: While the army's Warlord is joined to a Paladin Squad, every model in that unit gains a +1 bonus to its Weapon Skill Characteristic when fighting in a Challenge or against units containing at least one model with the Daemon, Corrupted, Corrupted Engine, or Malefic Unit Type or Sub-type.
+- Oath of the Inner Sanctum: Once per battle, at the start of any opposing Assault phase, the Warlord may invoke the Oath of the Inner Sanctum. Until the end of that Assault phase, all friendly Paladin Squads in the Detachment gain the Counter-Attack (1) special rule.
+
+**Limitations**
+
+- A Detachment using this Rite of War may not include any Strike Squads, Interceptor Squads, or Purgation Squads.
+- All Compulsory Troops choices in a Detachment using this Rite of War must be Paladin Squads.
+- A Detachment using this Rite of War may only select a single Fast Attack choice and a single Heavy Support choice, and may not select any Fortification choices.
+
 ### Rite of War: Nemesis Strike
 
-*The heaviest daemon-engines and nemesis exo-suits of Titan are unleashed as an unstoppable armoured spearhead, crushing the greatest manifestations of the Warp beneath sanctified steel.*
+*The heaviest sanctified war-engines and Nemesis exo-suits of Titan are unleashed as an unstoppable armoured spearhead, crushing the greatest manifestations of the Warp beneath hallowed steel. Guided by the psychic communion of their pilots, these towering walkers advance through torrents of warp-fire and sorcery to shatter Greater Daemons and corrupted war-machines in brutal close combat.*
 
 **Prerequisites**
 
@@ -366,62 +470,17 @@ For these prerequisites, Supreme Grand Master Janus and the founding Grand Maste
 **Effects**
 
 - Engines of Tithe: Dreadknight Talons may be selected as Elites choices in addition to Heavy Support choices in a Detachment using this Rite of War.
-- Spearhead of Titan: Grey Knight Dreadlancer Talons may be selected as non-Compulsory Troops choices in a Detachment using this Rite of War. Any unit selected in this manner gains the Line (1) Unit Sub-type.
+- Spearhead of Titan: Grey Knight Dreadlancer Talons may be selected as non-Compulsory Troops choices in a Detachment using this Rite of War. Any unit selected in this manner gains the Line Unit Sub-type.
+- Resonance of the Aegis: All models with the Dreadnought Unit Type (including Dreadknight Talons and Grey Knight Dreadlancer Talons) in a Detachment using this Rite of War gain the Adamantine Will (4+) special rule (or improve an existing Adamantine Will roll by +1, to a maximum of 2+) and may re-roll failed Psychic checks when manifesting psychic weapons or powers.
+- Sanctified Stampede: Models in a Dreadknight Talon or Grey Knight Dreadlancer Talon in a Detachment using this Rite of War gain the Hammer of Wrath (D3) special rule (resolved at the model's unmodified Strength Characteristic and AP 3) in any turn in which they make a successful Charge.
+- Overload the Conduits: Once per battle, at the start of any of the controlling player's Shooting phases, the Warlord may trigger an Aegis Conduit Surge. Until the end of that Shooting phase, all Heavy weapons mounted on Dreadknight Talons and Grey Knight Dreadlancer Talons within 12" of the Warlord gain the Rending (6+) special rule (or improve an existing Rending value by +1, to a maximum of 4+).
 
 **Limitations**
 
 - A Detachment using this Rite of War may not include any Lords of War choices.
-- A Detachment using this Rite of War must include more Troops choices than Dreadknight Talons (across all Force Organisation slots).
-
-### Rite of War: Paladin Retinue
-
-*The mightiest champions of the Grey Knights march to war as an impenetrable phalanx of Aegis Terminator plate, sworn to stand unbroken against the greatest horrors of the Immaterium.*
-
-**Prerequisites**
-
-- A Detachment using this Rite of War must include a Grand Master or Kaldor Draigo with the Master of the Legion special rule, and this model must be the army's Warlord.
-
-**Effects**
-
-- Chosen of the Chamber: Paladin Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected in this manner gains the Line (1) Unit Sub-type.
-
-**Limitations**
-
-- A Detachment using this Rite of War may not include any Strike Squads.
-
-### Rite of War: Purifier Crusade
-
-*Wreathed in soul-searing psychic flame, the incorruptible brethren of the Purifier Order advance on foot to cleanse the taint of the Warp from the battlefield.*
-
-**Prerequisites**
-
-- A Detachment using this Rite of War must include Castellan Crowe or a Brother-Captain with the Master of the Legion special rule, and this model must be the army's Warlord.
-
-**Effects**
-
-- Cleansing Flame: Purifier Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected in this manner gains the Line (1) Unit Sub-type.
-
-**Limitations**
-
-- A Detachment using this Rite of War may not include any Dreadknight Talons.
-- A Detachment using this Rite of War may not include any Land Raiders of any variant (including as Dedicated Transports).
-
-### Rite of War: Teleport Assault
-
-*Striking directly from the teleportarium chambers of an orbiting strike cruiser, the Grey Knights materialize at the heart of the enemy battleline in a blinding flash of ozone and psychic lightning.*
-
-**Prerequisites**
-
-- A Detachment using this Rite of War must include a Grand Master or Kaldor Draigo with the Master of the Legion special rule, and this model must be the army's Warlord.
-
-**Effects**
-
-- First Strike Teleportation: Every unit in a Detachment using this Rite of War composed entirely of models equipped with Aegis Terminator Armour gains the Deep Strike special rule. When making a Deep Strike Assault using units from this Detachment, the controlling player may elect to make their Deep Strike Assault in their first Player Turn, rather than waiting until the second Player Turn.
-
-**Limitations**
-
-- No units in a Detachment using this Rite of War may be deployed inside or select Dedicated Transports.
-- At least half of the units (rounding up) in a Detachment using this Rite of War must be placed in Reserves (including Deep Strike Reserves) during deployment.
+- A Detachment using this Rite of War must include strictly more Troops choices than Dreadknight Talons (counted across all Force Organisation slots).
+- A Detachment using this Rite of War may not select any Fortification choices, and may not include an Allied Detachment.
+- All Compulsory Troops choices in a Detachment using this Rite of War must be standard Strike Squads (or Brotherhood Terminator Squads if permitted by another rule), ensuring a core infantry support element accompanies the walker spearhead.
 
 ## HQ
 
@@ -525,6 +584,7 @@ For these prerequisites, Supreme Grand Master Janus and the founding Grand Maste
 - Minor Psychic Powers
 - Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
 - Relentless
+- Relic (2)
 - Stubborn
 - The Aegis
 
@@ -1073,6 +1133,7 @@ For these prerequisites, Supreme Grand Master Janus and the founding Grand Maste
 - Master of the Legion
 - Minor Psychic Powers
 - Psychic Discipline (up to three of Dominus, Sanctic, Anathemata, Divination or Telepathy)
+- Relic (2)
 - Shard of the Crimson King: Janus may select up to three Psychic Disciplines (instead of one) and knows all Minor Psychic Powers. He may manifest up to two Psychic Powers or Psychic Weapons per phase, and once per turn may re-roll a failed Psychic check
 - Warlord: Architect of Titan
 - The Aegis
@@ -1111,6 +1172,7 @@ For these prerequisites, Supreme Grand Master Janus and the founding Grand Maste
 - Master of the Legion
 - Minor Psychic Powers
 - Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
+- Relic (2)
 - Tactical Exemplar: friendly units composed entirely of models with the Brotherhood (1st) special rule within 12" of Koios may use his Leadership Characteristic for Morale and Pinning tests and gain the Counter-Attack (1) special rule
 - Warlord: First Among Equals
 - The Aegis
@@ -1219,6 +1281,7 @@ For these prerequisites, Supreme Grand Master Janus and the founding Grand Maste
 - Master of the Legion
 - Minor Psychic Powers
 - Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
+- Relic (2)
 - Warlord: Master of Wards
 - The Aegis
 
@@ -1322,6 +1385,7 @@ For these prerequisites, Supreme Grand Master Janus and the founding Grand Maste
 - Master of the Legion
 - Minor Psychic Powers
 - Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
+- Relic (2)
 - Stubborn
 - Unbroken Line: while Epimetheus is on the battlefield, any unit he joins gains the Heart of the Legion special rule and reduces the Strength Characteristic of all incoming Shooting Attacks targeting it by 1 (to a minimum of 1)
 - Warlord: Stalwart
@@ -1545,13 +1609,14 @@ This unit may be taken as an HQ choice (it may not fill a compulsory HQ slot), o
 
 **Special Rules**
 
-- Brotherhood Banner: friendly Grey Knights units within 6" of the Standard Bearer add 1 to their Attacks in a turn in which they charged, and may re-roll failed Morale checks
 - Brotherhood (X)
+- Brotherhood Banner: friendly Grey Knights units within 6" of the Standard Bearer add 1 to their Attacks in a turn in which they charged, and may re-roll failed Morale checks
 - Brotherhood of Psykers
 - Chosen Warriors
 - Deep Strike
 - Legiones Astartes (Grey Knights)
 - Relentless
+- Relic (2)
 - Retinue
 - The Aegis
 
@@ -2017,6 +2082,7 @@ A Detachment with the Legiones Astartes (Grey Knights) special rule may include 
 - Hatred (Daemons)
 - Legiones Astartes (Grey Knights)
 - Relentless
+- Relic (2)
 - Stubborn
 - The Aegis
 
@@ -2200,19 +2266,19 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | – Psybolts | +5 points per model |
 
 
-### Grey Knight Reconnaissance Squad — 100 pts
+### Prognosticar Vanguard Squad — 100 pts
 
-*Brother-Knights trained in the arts of the hunt, sent ahead of the Brotherhood to find the lairs of the daemon and the witch before the strike falls.*
+*Guided directly by the precognitive visions of the Chapter's Prognosticars, these specialized reconnaissance formations arrive on the battlefield hours or even days before a daemonic incursion breaches realspace. Utilizing minor telepathic shrouding and short-range etheric divination, Prognosticar Vanguard Squads outmaneuver enemy patrols with uncanny precision, positioning themselves at the exact fault lines where the veil between worlds is thinnest. By the time the enemy realizes the silver-armoured pathfinders are in their midst, the Vanguard has already locked down key strategic ground and called down the wrath of the Grey Knights upon the emerging host.*
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Recon Knight | 7 | 5 | 4 | 4 | 4 | 1 | 4 | 1 | 8 | 3+ | 32mm |
-| Recon Justicar | 7 | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+ | 32mm |
+| Vanguard Knight | 7 | 5 | 4 | 4 | 4 | 1 | 4 | 1 | 8 | 3+ | 32mm |
+| Vanguard-Justicar | 7 | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 3+ | 32mm |
 
 **Unit Composition**
 
-- 4 Recon Knights
-- 1 Recon Justicar
+- 4 Vanguard Knights
+- 1 Vanguard-Justicar
 
 **Wargear**
 
@@ -2226,8 +2292,8 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 
 **Unit Type**
 
-- Recon Knight: Infantry (Line, Skirmish, Psyker)
-- Recon Justicar: Infantry (Character, Line, Skirmish, Psyker)
+- Vanguard Knight: Infantry (Line, Skirmish, Psyker)
+- Vanguard-Justicar: Infantry (Character, Line, Skirmish, Psyker)
 
 **Special Rules**
 
@@ -2235,7 +2301,9 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 - Brotherhood of Psykers
 - Infiltrate
 - Legiones Astartes (Grey Knights)
+- Line (1)
 - Outflank
+- Relic (1)
 - Scout
 - Support Squad
 - The Aegis
@@ -2245,36 +2313,36 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | Option | Cost |
 | --- | --: |
 | **The squad may take:** |  |
-| – Up to 5 additional Recon Knights | +17 points each |
+| – Up to 5 additional Vanguard Knights | +17 points each |
 | **Any model may exchange its storm bolter for:** |  |
 | – Nemesis bolter\* | +10 points |
-| **One Recon Knight may take one of the following:** |  |
+| **One Vanguard Knight may take one of the following:** |  |
 | – Nuncio-vox\* | +10 points |
 | – Augury scanner\* | +10 points |
-| **The Recon Justicar may exchange his bolt pistol for one of the following:** |  |
+| **The Vanguard-Justicar may exchange his bolt pistol for one of the following:** |  |
 | – Nemesis force sword | +5 points |
 | – Nemesis force halberd | +5 points |
 | – Two nemesis force falchions | +10 points |
-| **The Recon Justicar may take:** |  |
+| **The Vanguard-Justicar may take:** |  |
 | – Brotherhood Psyker | +15 points |
 | – Melta bombs\* | +5 points |
 | **The entire unit may take:** |  |
 | – Psybolts | +5 points per model |
 
 
-### Grey Knight Scout Squad — 75 pts
+### Watcher-in-the-Veil Squad — 75 pts
 
-*Neophytes of Titan not yet raised to the Brotherhood, sent lightly armoured to stalk the foe and to learn the hunt.*
+*Operating far ahead of the Chapter's main battlelines, Watcher-in-the-Veil Squads serve as the silent eyes and ears of Titan within corrupted warzones. Clad in lightened, matte-silver carapace plate etched with mind-clouding hexagrammic wards, these agile warriors mask their psychic presence entirely, moving unseen through the ruins of daemon-plagued cities and warp-storms. Their sacred duty is to map the shifting geometry of the Immaterium, secure vital teleportation homers for the Brotherhood's Terminator strike forces, and eliminate cultist sentries before a single alarm can be raised.*
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Scout Initiate | 8 | 5 | 4 | 4 | 4 | 1 | 4 | 1 | 8 | 4+ | 32mm |
-| Scout Justicar | 8 | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 4+ | 32mm |
+| Veil Watcher | 8 | 5 | 4 | 4 | 4 | 1 | 4 | 1 | 8 | 4+ | 32mm |
+| Watch-Justicar | 8 | 5 | 4 | 4 | 4 | 1 | 4 | 2 | 9 | 4+ | 32mm |
 
 **Unit Composition**
 
-- 4 Scout Initiates
-- 1 Scout Justicar
+- 4 Veil Watchers
+- 1 Watch-Justicar
 
 **Wargear**
 
@@ -2288,8 +2356,8 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 
 **Unit Type**
 
-- Scout Initiate: Infantry (Light, Skirmish, Psyker)
-- Scout Justicar: Infantry (Character, Light, Skirmish, Psyker)
+- Veil Watcher: Infantry (Line, Light, Skirmish, Psyker)
+- Watch-Justicar: Infantry (Character, Line, Light, Skirmish, Psyker)
 
 **Special Rules**
 
@@ -2297,8 +2365,10 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 - Brotherhood of Psykers
 - Infiltrate
 - Legiones Astartes (Grey Knights)
+- Line (2)
 - Move Through Cover
 - Outflank
+- Relic (1)
 - Scout
 - Support Squad
 - The Aegis
@@ -2308,21 +2378,21 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | Option | Cost |
 | --- | --: |
 | **The squad may take:** |  |
-| – Up to 5 additional Scout Initiates | +13 points each |
+| – Up to 5 additional Veil Watchers | +13 points each |
 | **Any model may exchange its bolter for one of the following:** |  |
 | – Banestrike bolter\* | +5 points |
 | – Nemesis bolter\* | +10 points |
-| **For every five models in the unit, one Scout Initiate may exchange its bolter for one of the following:** |  |
+| **For every five models in the unit, one Veil Watcher may exchange its bolter for one of the following:** |  |
 | – Incinerator | +5 points |
 | – Psilencer | +5 points |
 | – Psycannon | +15 points |
-| **One Scout Initiate may take:** |  |
+| **One Veil Watcher may take:** |  |
 | – Nuncio-vox\* | +10 points |
-| **The Scout Justicar may exchange his bolt pistol for one of the following:** |  |
+| **The Watch-Justicar may exchange his bolt pistol for one of the following:** |  |
 | – Nemesis force sword | +5 points |
 | – Nemesis force halberd | +5 points |
 | – Two nemesis force falchions | +10 points |
-| **The Scout Justicar may take:** |  |
+| **The Watch-Justicar may take:** |  |
 | – Brotherhood Psyker | +15 points |
 | – Melta bombs\* | +5 points |
 | **The entire unit may take:** |  |
@@ -2417,6 +2487,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 - Legiones Astartes (Grey Knights)
 - Minor Psychic Powers
 - Relentless
+- Relic (2)
 - Stubborn
 - The Aegis
 
@@ -2532,19 +2603,19 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | **The Stormraven may take:** |  |
 | – Two Sponson Mounted Hurricane Bolters | +20 points |
 
-### Grey Knight Seeker Squad — 140 pts
+### Exactor Squad — 140 pts
 
-*Hunters of the Brotherhood armed with specialist bolt shells, who mark the greatest servants of the Warp and see them slain before they can act.*
+*Relentless hunters of the Sixth Brotherhood and sanctioned executioners of the Chapter, Exactor Squads are tasked with tracking and slaying the most dangerous rogue psykers, daemonhosts, and mortal champions of the Ruinous Powers. Armed with master-crafted Nemesis bolters, sanctified psybolt ammunition, and esoteric target-auguries tuned to etheric signatures, they slip through the chaos of the battlefield to isolate their marked quarry. Once an Exactor Squad locks onto a target's warp-spoor, neither mortal retinues nor sorcerous wards can shield the heretic from a synchronized volley of silver-tipped, psychically charged rounds.*
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Seeker Knight | 7 | 5 | 5 | 4 | 4 | 1 | 4 | 1 | 8 | 3+ | 32mm |
-| Seeker Justicar | 7 | 5 | 5 | 4 | 4 | 1 | 4 | 2 | 9 | 3+ | 32mm |
+| Exactor Knight | 7 | 5 | 5 | 4 | 4 | 1 | 4 | 1 | 8 | 3+ | 32mm |
+| Exactor-Justicar | 7 | 5 | 5 | 4 | 4 | 1 | 4 | 2 | 9 | 3+ | 32mm |
 
 **Unit Composition**
 
-- 4 Seeker Knights
-- 1 Seeker Justicar
+- 4 Exactor Knights
+- 1 Exactor-Justicar
 
 **Wargear**
 
@@ -2557,8 +2628,8 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 
 **Unit Type**
 
-- Seeker Knight: Infantry (Skirmish, Psyker)
-- Seeker Justicar: Infantry (Character, Skirmish, Psyker)
+- Exactor Knight: Infantry (Skirmish, Psyker)
+- Exactor-Justicar: Infantry (Character, Skirmish, Psyker)
 
 **Special Rules**
 
@@ -2568,6 +2639,7 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 - Legiones Astartes (Grey Knights)
 - Marked For Death
 - Precision Shots (4+)
+- Relic (2)
 - The Aegis
 
 **Options**
@@ -2575,16 +2647,16 @@ The unit may take a Rhino\* or Razorback\* as a Dedicated Transport. This does n
 | Option | Cost |
 | --- | --: |
 | **The squad may take:** |  |
-| – Up to 5 additional Seeker Knights | +18 points each |
+| – Up to 5 additional Exactor Knights | +18 points each |
 | **Any model may exchange its combi-kraken bolter for:** |  |
 | – Combi-banestrike bolter | Free |
-| **One Seeker Knight may take one of the following:** |  |
+| **One Exactor Knight may take one of the following:** |  |
 | – Nuncio-vox\* | +10 points |
 | – Augury scanner\* | +10 points |
-| **The Seeker Justicar may exchange his bolt pistol for one of the following:** |  |
+| **The Exactor-Justicar may exchange his bolt pistol for one of the following:** |  |
 | – Nemesis force sword | +5 points |
 | – Nemesis force halberd | +5 points |
-| **The Seeker Justicar may take:** |  |
+| **The Exactor-Justicar may take:** |  |
 | – Brotherhood Psyker | +15 points |
 | – Melta bombs\* | +5 points |
 | **The entire unit may take:** |  |
