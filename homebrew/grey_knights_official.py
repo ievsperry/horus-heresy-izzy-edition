@@ -24,10 +24,13 @@ Legion leader takes a Command Squad.
 
 The 0-1 Purifier Bladeguard Squad has no limit in a Detachment whose Brotherhood is the 8th.
 
-Brother-Captain Stern and Grand Master Voldus show only in a Detachment whose Brotherhood is the 3rd.
+Characters bound to a Brotherhood (Stern, Voldus and the founding Grand Masters) show only in a Detachment of
+that Brotherhood.
 
 Grey Knights are always Loyalist: a force that picks the Traitor allegiance may not take the Grey Knights army
 entry (BattleScribe reports it as over its limit)."""
+import re
+
 from build_catalogue import PTS, SLOTS, TYPE_CATEGORIES, UNIT_CATEGORY, add_constraint, child, el, make_id
 
 LIBRARY = ("6393-649c-7213-a327", "Legions Astartes")
@@ -113,7 +116,8 @@ Legion leader takes a Command Squad.
 
 The 0-1 Purifier Bladeguard Squad has no limit in a Detachment whose Brotherhood is the 8th.
 
-Brother-Captain Stern and Grand Master Voldus show only in a Detachment whose Brotherhood is the 3rd.
+Characters bound to a Brotherhood (Stern, Voldus and the founding Grand Masters) show only in a Detachment of
+that Brotherhood.
 
 Grey Knights are always Loyalist: with Traitor chosen in the force, the army entry may not be taken."""
     army = b.root.find(f"selectionEntries/selectionEntry[@id='{make_id('army', b.faction)}']")
@@ -152,26 +156,35 @@ def purifier_bladeguard(b):
                    childId=eighth, shared=True, includeChildSelections=True, includeChildForces=False)
 
 
-def third_brotherhood_only(b):
-    """Brother-Captain Stern and Grand Master Voldus may only join the 3rd Brotherhood: they show only in a
-    Detachment whose Brotherhood is the 3rd."""
-    third = next(e.get("id") for e in b.root.iter("selectionEntry") if e.get("name", "").startswith("3rd Brotherhood"))
-    for name in ("Brother-Captain Stern", "Grand Master Voldus"):
+BROTHERHOOD_ONLY = {"Brother-Captain Stern": ["3rd"], "Grand Master Voldus": ["3rd"], "Grand Master Koios": ["1st"],
+                    "Grand Master Satre": ["2nd"], "Grand Master Iapto": ["3rd"], "Grand Master Yotun": ["4th"],
+                    "Grand Master Epimetheus": ["5th"], "Grand Master Ogen": ["6th"],
+                    "Grand Master Khyron": ["7th", "8th"]}
+
+
+def brotherhood_only(b):
+    """Characters bound to a Brotherhood (Stern and Voldus the 3rd, each founding Grand Master his own) show only
+    in a Detachment whose Brotherhood is one of theirs."""
+    ids = {e.get("name", "").split(" ")[0]: e.get("id") for e in b.root.iter("selectionEntry")
+           if re.match(r"\d(st|nd|rd|th) Brotherhood", e.get("name", ""))}
+    for name, nths in BROTHERHOOD_ONLY.items():
         uid = b.units[name]
         for link in b.root.find("entryLinks"):
             if link.get("targetId") != uid:
                 continue
             link.set("hidden", "true")
             m = el(child(link, "modifiers"), "modifier", type="set", field="hidden", value="false")
-            el(el(m, "conditions"), "condition", type="atLeast", value=1, field="selections", scope="force",
-               childId=third, shared=True, includeChildSelections=True, includeChildForces=False)
+            conds = el(el(el(m, "conditionGroups"), "conditionGroup", type="or"), "conditions")
+            for n in nths:
+                el(conds, "condition", type="atLeast", value=1, field="selections", scope="force",
+                   childId=ids[n], shared=True, includeChildSelections=True, includeChildForces=False)
 
 
 def apply(b):
     loyalist_only(b)
     aegis_retinue(b)
     purifier_bladeguard(b)
-    third_brotherhood_only(b)
+    brotherhood_only(b)
     harness = b.shared_entries.find("selectionEntry[@name='Teleport Harness']")
     el(child(harness, "infoLinks"), "infoLink", name="Deep Strike", id=make_id(harness.get("id"), "deep strike"),
        hidden=False, targetId=DEEP_STRIKE, type="rule")

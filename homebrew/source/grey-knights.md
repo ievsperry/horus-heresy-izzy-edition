@@ -214,7 +214,7 @@ Grey Knights use the 2.0 core reactions as normal, plus this advanced reaction. 
 
 The Grey Knights are organised into eight Brotherhoods, plus the Purifiers. Brotherhoods work like Ork Klans and Sororitas Orders.
 
-**Brotherhood (X).** When building an army, choose one Brotherhood for each detachment. Every unit in that detachment gains Brotherhood (X). Kaldor Draigo and Castellan Crowe may join any Brotherhood; Brother-Captain Stern only the 3rd Brotherhood; Grand Master Voldus only the 3rd Brotherhood. Each Brotherhood's Advanced Reaction is available in addition to Psychic Ward and costs one point of the Reaction Allotment†.
+**Brotherhood (X).** When building an army, choose one Brotherhood for each detachment. Every unit in that detachment gains Brotherhood (X). Kaldor Draigo, Castellan Crowe and Supreme Grand Master Janus may join any Brotherhood; Brother-Captain Stern, Grand Master Voldus and Grand Master Iapto only the 3rd Brotherhood; Grand Master Koios only the 1st, Satre the 2nd, Yotun the 4th, Epimetheus the 5th and Ogen the 6th; Grand Master Khyron the 7th or the 8th. Each shows only in a Detachment of his Brotherhood. Each Brotherhood's Advanced Reaction is available in addition to Psychic Ward and costs one point of the Reaction Allotment†.
 
 ### 1st Brotherhood, the Swordbearers
 
@@ -332,13 +332,17 @@ If an army's Warlord has the Legiones Astartes (Grey Knights) special rule, the 
 
 Kaldor Draigo automatically has this Trait if he is the Warlord and may not select any other. Friendly units with the Legiones Astartes (Grey Knights) special rule within 12" of Kaldor Draigo gain +1 Leadership, and may use his Leadership Characteristic when making Morale Checks, Pinning Checks, Regroup Tests and Psychic Checks. Kaldor Draigo gains Adamantium Will (3+). So long as he has not been removed as a casualty, his controlling player may make one additional Reaction during the opponent's Movement Phase; it follows all normal rules for Reactions and does not allow the same unit to React more than once to the same triggering event.
 
+## Warlord: Architect of Titan
+
+If Janus is the army's Warlord, he and any unit he joins gain the Fearless and Preferred Enemy (Daemons) special rules. In addition, an army whose Warlord has this Trait may make one additional Reaction during any phase of the opposing player's turn, as long as Janus has not been removed as a casualty.
+
 ## Force Organisation and Rites of War
 
 Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 
 | 2.0 slot | Grey Knights units |
 | --- | --- |
-| HQ | Grand Master, Brother-Captain, Aegis Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus |
+| HQ | Grand Master, Brother-Captain, Aegis Captain, Brotherhood Librarian, Brotherhood Chaplain, Brotherhood Techmarine, Grand Master in Nemesis Dreadknight, Kaldor Draigo, Castellan Crowe, Brother-Captain Stern, Grand Master Voldus, Supreme Grand Master Janus, Grand Masters Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron |
 | Elites | Brotherhood Champion, Paladin Squad, Purifier Squad, Paladin Ancient, Brother Apothecary, Aegis Bastion Squad (0-1), Purifier Bladeguard Squad (0-1), Servitors |
 | Troops | Strike Squad, Brotherhood Terminator Squad |
 | Dedicated Transports | Rhino\*, Razorback\* |
@@ -1005,6 +1009,427 @@ A Grey Knights army may take one Rite of War.
 | Option | Cost |
 | --- | --: |
 | **Kaldor Draigo must select one of the following Minor Psychic Powers:** |  |
+| – Astral Aim | Free |
+| – Cleansing Flame | Free |
+| – Gates of Infinity | Free |
+| – Hammerhand | Free |
+| – Holocaust | Free |
+| – Warp Quake | Free |
+| – Warp Shroud | Free |
+
+### Supreme Grand Master Janus — 325 pts
+
+*Formerly Revuel Arvida of the Thousand Sons Corvidae Cult, fused with a loyal shard of Magnus the Red. First Supreme Grand Master of the Grey Knights.*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Janus | 7 | 6 | 5 | 4 | 4 | 4 | 5 | 4 | 10 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 1 Janus
+
+**Wargear**
+
+- Aegis Tartaros armour
+- Iron halo\*
+- Psybolts
+- Storm bolter\*
+- The Blade of Ianius
+- Astral Aim (Minor Psychic Power)
+- Cleansing Flame (Minor Psychic Power)
+- Gates of Infinity (Minor Psychic Power)
+- Hammerhand (Minor Psychic Power)
+- Holocaust (Minor Psychic Power)
+- Warp Quake (Minor Psychic Power)
+- Warp Shroud (Minor Psychic Power)
+
+**Unit Type**
+
+- Janus: Infantry (Character, Unique, Psyker)
+
+**Special Rules**
+
+- Adamantium Will (3+)
+- Brotherhood (X)
+- Brotherhood of Psykers
+- Brotherhood Psyker
+- Bulky (2)
+- Hatred (Daemons)
+- Legiones Astartes (Grey Knights)
+- Master of the Legion
+- Minor Psychic Powers
+- Psychic Discipline (up to three of Dominus, Sanctic, Anathemata, Divination or Telepathy)
+- Shard of the Crimson King: Janus may select up to three Psychic Disciplines (instead of one) and knows all Minor Psychic Powers. He may manifest up to two Psychic Powers or Psychic Weapons per phase, and once per turn may re-roll a failed Psychic check
+- Warlord: Architect of Titan
+- The Aegis
+
+### Grand Master Koios — 235 pts
+
+*Formerly Tylos Rubio, Codicier of the Ultramarines XIIIth Legion and Founding Grand Master of the 1st Brotherhood (the Swordbearers).*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Koios | 6 | 6 | 5 | 4 | 4 | 3 | 5 | 4 | 10 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 1 Koios
+
+**Wargear**
+
+- Aegis-Cataphractii Terminator armour
+- Gladius Titanis
+- Psybolts
+- Storm bolter\*
+
+**Unit Type**
+
+- Koios: Infantry (Character, Heavy, Unique, Psyker)
+
+**Special Rules**
+
+- Brotherhood (1st, the Swordbearers)
+- Brotherhood of Psykers
+- Brotherhood Psyker
+- Bulky (2)
+- Hatred (Daemons)
+- Legiones Astartes (Grey Knights)
+- Master of the Legion
+- Minor Psychic Powers
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
+- Tactical Exemplar: friendly units composed entirely of models with the Brotherhood (1st) special rule within 12" of Koios may use his Leadership Characteristic for Morale and Pinning tests and gain the Counter-Attack (1) special rule
+- Warlord: First Among Equals
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **Koios must select one of the following Minor Psychic Powers:** |  |
+| – Astral Aim | Free |
+| – Cleansing Flame | Free |
+| – Gates of Infinity | Free |
+| – Hammerhand | Free |
+| – Holocaust | Free |
+| – Warp Quake | Free |
+| – Warp Shroud | Free |
+
+### Grand Master Satre — 230 pts
+
+*Formerly Vardas Ison of the Blood Angels IXth Legion and Founding Grand Master of the 2nd Brotherhood (the Blades of Victory).*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Satre | 7 | 7 | 5 | 4 | 4 | 3 | 6 | 4 | 10 | 2+ | 32mm |
+
+**Unit Composition**
+
+- 1 Satre
+
+**Wargear**
+
+- Aegis Artificer armour
+- Crimson Edge
+- Frag grenades\*
+- Iron halo\*
+- Krak grenades\*
+- Personal teleporter
+- Psybolts
+- Storm bolter\*
+
+**Unit Type**
+
+- Satre: Infantry (Character, Unique, Psyker)
+
+**Special Rules**
+
+- Brotherhood (2nd, the Blades of Victory)
+- Brotherhood of Psykers
+- Brotherhood Psyker
+- Furious Charge (1)
+- Hatred (Daemons)
+- Legiones Astartes (Grey Knights)
+- Master of the Legion
+- Minor Psychic Powers
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
+- Seraphic Duelist: Satre must issue and accept Challenges whenever possible. While fighting in a Challenge, Satre re-rolls all failed To Hit rolls and imposes a -1 penalty on the opposing model's Weapon Skill Characteristic (to a minimum of 1)
+- Warlord: Unstoppable Champion
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **Satre must select one of the following Minor Psychic Powers:** |  |
+| – Astral Aim | Free |
+| – Cleansing Flame | Free |
+| – Gates of Infinity | Free |
+| – Hammerhand | Free |
+| – Holocaust | Free |
+| – Warp Quake | Free |
+| – Warp Shroud | Free |
+
+### Grand Master Iapto — 240 pts
+
+*Formerly Severian ("The Wolf") of the Luna Wolves XVIth Legion and Founding Grand Master of the 3rd Brotherhood (the Wardmakers).*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Iapto | 6 | 6 | 5 | 4 | 4 | 3 | 5 | 4 | 10 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 1 Iapto
+
+**Wargear**
+
+- Aegis-Cataphractii Terminator armour
+- Psybolts
+- Storm bolter\*
+- The Ward-Stave of Luna
+
+**Unit Type**
+
+- Iapto: Infantry (Character, Heavy, Unique, Psyker)
+
+**Special Rules**
+
+- Adamantium Will (3+)
+- Aegis Conduit: friendly units composed entirely of models with the Legiones Astartes (Grey Knights) special rule within 12" of Iapto improve their Adamantium Will roll by +1 (to a maximum of 2+)
+- Brotherhood (3rd, the Wardmakers)
+- Brotherhood of Psykers
+- Brotherhood Psyker
+- Bulky (2)
+- Hatred (Daemons)
+- Legiones Astartes (Grey Knights)
+- Master of the Legion
+- Minor Psychic Powers
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
+- Warlord: Master of Wards
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **Iapto must select one of the following Minor Psychic Powers:** |  |
+| – Astral Aim | Free |
+| – Cleansing Flame | Free |
+| – Gates of Infinity | Free |
+| – Hammerhand | Free |
+| – Holocaust | Free |
+| – Warp Quake | Free |
+| – Warp Shroud | Free |
+
+### Grand Master Yotun — 235 pts
+
+*Formerly a warrior of the Space Wolves VIth Legion and Founding Grand Master of the 4th Brotherhood (the Rapiers).*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Yotun | 7 | 6 | 5 | 4 | 4 | 3 | 5 | 4 | 10 | 2+ | 32mm |
+
+**Unit Composition**
+
+- 1 Yotun
+
+**Wargear**
+
+- Aegis Artificer armour
+- Frag grenades\*
+- Frost-Fury
+- Iron halo\*
+- Jotunheimr
+- Krak grenades\*
+
+**Unit Type**
+
+- Yotun: Infantry (Character, Unique, Psyker)
+
+**Special Rules**
+
+- Brotherhood (4th, the Rapiers)
+- Brotherhood of Psykers
+- Brotherhood Psyker
+- Hatred (Daemons)
+- Legiones Astartes (Grey Knights)
+- Master of the Legion
+- Minor Psychic Powers
+- Pack Hunter's Volley: any unit Yotun joins may re-roll To Wound rolls of 1 when making Shooting Attacks against enemy units within 12"
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
+- Relentless
+- Warlord: Strategist
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **Yotun must select one of the following Minor Psychic Powers:** |  |
+| – Astral Aim | Free |
+| – Cleansing Flame | Free |
+| – Gates of Infinity | Free |
+| – Hammerhand | Free |
+| – Holocaust | Free |
+| – Warp Quake | Free |
+| – Warp Shroud | Free |
+
+### Grand Master Epimetheus — 240 pts
+
+*Formerly a warrior of the Dark Angels Ist Legion and Founding Grand Master of the 5th Brotherhood (the Preservers).*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Epimetheus | 6 | 6 | 5 | 4 | 4 | 3 | 5 | 4 | 10 | 2+ | 40mm |
+
+**Unit Composition**
+
+- 1 Epimetheus
+
+**Wargear**
+
+- Aegis-Cataphractii Terminator armour
+- Caliban's Oath
+- Psybolts
+- Storm bolter\*
+
+**Unit Type**
+
+- Epimetheus: Infantry (Character, Heavy, Unique, Psyker)
+
+**Special Rules**
+
+- Brotherhood (5th, the Preservers)
+- Brotherhood of Psykers
+- Brotherhood Psyker
+- Bulky (2)
+- Hatred (Daemons)
+- Legiones Astartes (Grey Knights)
+- Master of the Legion
+- Minor Psychic Powers
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
+- Stubborn
+- Unbroken Line: while Epimetheus is on the battlefield, any unit he joins gains the Heart of the Legion special rule and reduces the Strength Characteristic of all incoming Shooting Attacks targeting it by 1 (to a minimum of 1)
+- Warlord: Stalwart
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **Epimetheus must select one of the following Minor Psychic Powers:** |  |
+| – Astral Aim | Free |
+| – Cleansing Flame | Free |
+| – Gates of Infinity | Free |
+| – Hammerhand | Free |
+| – Holocaust | Free |
+| – Warp Quake | Free |
+| – Warp Shroud | Free |
+
+### Grand Master Ogen — 225 pts
+
+*Formerly a warrior of the Raven Guard XIXth Legion (implied to be Chief Librarian Balsar Kurthuri) and Founding Grand Master of the 6th Brotherhood (the Exactors).*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Ogen | 7 | 6 | 5 | 4 | 4 | 3 | 5 | 4 | 10 | 2+ | 32mm |
+
+**Unit Composition**
+
+- 1 Ogen
+
+**Wargear**
+
+- Aegis Artificer armour
+- Frag grenades\*
+- Iron halo\*
+- Krak grenades\*
+- Personal teleporter
+- Psybolts
+- Shadow-Talons
+- Storm bolter\*
+
+**Unit Type**
+
+- Ogen: Infantry (Character, Unique, Psyker)
+
+**Special Rules**
+
+- Brotherhood (6th, the Exactors)
+- Brotherhood of Psykers
+- Brotherhood Psyker
+- Hatred (Daemons)
+- Infiltrate
+- Legiones Astartes (Grey Knights)
+- Master of the Legion
+- Minor Psychic Powers
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
+- Shrouded (5+)
+- Strike from the Blind Spot: Ogen and any unit he joins gain the Scout and Outflank special rules, and enemy units may not make Overwatch reactions against them
+- Warlord: Merciless Hunter
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **Ogen must select one of the following Minor Psychic Powers:** |  |
+| – Astral Aim | Free |
+| – Cleansing Flame | Free |
+| – Gates of Infinity | Free |
+| – Hammerhand | Free |
+| – Holocaust | Free |
+| – Warp Quake | Free |
+| – Warp Shroud | Free |
+
+### Grand Master Khyron — 230 pts
+
+*Formerly a warrior of the Night Lords VIIIth Legion (widely believed to be Chief Librarian Fel Zharost) and Founding Grand Master of the 7th Brotherhood (the Prescient Brethren).*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Khyron | 7 | 6 | 5 | 4 | 4 | 3 | 5 | 4 | 10 | 2+ | 32mm |
+
+**Unit Composition**
+
+- 1 Khyron
+
+**Wargear**
+
+- Aegis Artificer armour
+- Frag grenades\*
+- Iron halo\*
+- Krak grenades\*
+- Nostraman Judgement
+- Psybolts
+- Storm bolter\*
+
+**Unit Type**
+
+- Khyron: Infantry (Character, Unique, Psyker)
+
+**Special Rules**
+
+- Brotherhood (7th, the Prescient Brethren, or 8th, the Purifiers)
+- Brotherhood of Psykers
+- Brotherhood Psyker
+- Dark Foresight: once per game, at the start of any Player Turn, Khyron may select a single enemy unit within 18" and line of sight. Until the end of that Player Turn, the opposing player must re-roll all successful To Hit rolls or all successful Saving Throws (controlling player's choice) made for that unit
+- Fear (1)
+- Hatred (Daemons)
+- Legiones Astartes (Grey Knights)
+- Master of the Legion
+- Minor Psychic Powers
+- Night Vision
+- Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
+- Warlord: Prescience
+- The Aegis
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **Khyron must select one of the following Minor Psychic Powers:** |  |
 | – Astral Aim | Free |
 | – Cleansing Flame | Free |
 | – Gates of Infinity | Free |
@@ -2093,6 +2518,19 @@ All weapons listed here have the Nemesis Force special rule (see Nemesis Force).
 | Crozius arcanum | – | +1 | 4 | Melee, Concussive (1) |
 | Malleus Argyrum (Voldus) | – | x2 | 2 | Melee, Concussive (2), Rending (6+) |
 | Titan sword | – | +2 | 2 | Melee, Rending (5+), Murderous Strike (5+), Master-crafted, Two-handed, Nemesis Force |
+| Caliban's Oath (Epimetheus) | – | +1 | 2 | Melee, Master-crafted, Breaching (5+), Duellist's Edge (1), Sanctic |
+| Crimson Edge (Satre) | – | +2 | 2 | Melee, Master-crafted, Sudden Strike (1), Sanctic |
+| Frost-Fury (Yotun) | 24" | 7 | 4 | Heavy 4, Master-crafted, Rending (5+), Sanctic |
+| Gladius Titanis (Koios) | – | +1 | 2 | Melee, Master-crafted, Rending (5+), Sanctic |
+| Jotunheimr (Yotun) | – | x2 | 2 | Melee, Master-crafted, Unwieldy (3), Brutal (2), Sanctic |
+| Nostraman Judgement (Khyron) | – | +2 | 2 | Melee, Master-crafted, Murderous Strike (5+), Fear (1), Sanctic |
+| Shadow-Talons (Ogen) | – | +1 | 2 | Melee, Master-crafted, Rending (5+), Shred, Sanctic, Paired |
+| The Blade of Ianius (Janus) | – | +1 | 2 | Melee, Master-crafted, Murderous Strike (5+), Sanctic |
+| The Ward-Stave of Luna (Iapto) | – | +2 | 2 | Melee, Master-crafted, Concussive (1), Sanctic, Aegis Shielding |
+
+**Aegis Shielding.** While fighting in the Assault phase, a model wielding The Ward-Stave of Luna improves its Invulnerable Save to 3+.
+
+**Paired.** Grants +2 Attacks instead of the normal +1 Attack for fighting with two Melee weapons.
 
 ### Ranged Weapons
 
