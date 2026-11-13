@@ -1399,6 +1399,7 @@ A Retinue Squad (see Retinue Squads) for an Ethereal or a Cadre Fireblade with t
 - Sworn Protectors: models in this unit may re-roll failed Look Out, Sir! rolls made to intercept wounds allocated to the Commander that unlocked this unit
 
 Dedicated Transport
+
 A Fireblade Honour Guard Team numbering 12 models or fewer (including the joined HQ model, excluding Drones) may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
 
 **Options**
@@ -1461,6 +1462,7 @@ A Retinue Squad (see Retinue Squads) for an Ethereal (including Aun'Va or Aun'Sh
 - Sept (X)
 
 Dedicated Transport
+
 An Ethereal Honour Guard numbering 12 models or fewer (including the joined Ethereal, excluding Drones) may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
 
 **Options**
@@ -1520,6 +1522,7 @@ A Retinue Squad (see Retinue Squads) for a Blade-Sworn Cadre Master (or Commande
 - Sworn Protectors: models in this unit may re-roll failed Look Out, Sir! rolls made to intercept wounds allocated to the Commander that unlocked this unit
 
 Dedicated Transport
+
 A Blade-Sworn Honour Guard Team numbering 12 models or fewer (including the joined HQ model, excluding Drones) that has not been equipped with Repulsor Jet-Packs may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
 
 **Options**
@@ -1792,6 +1795,7 @@ A Detachment may only include one or more Farsight Blade-Sworn Teams if every mo
 - Sept (Farsight Enclaves)
 
 Dedicated Transport
+
 A Farsight Blade-Sworn Team numbering 10 models or fewer (excluding Drones) that has not been equipped with Repulsor Jet-Packs may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
 
 **Options**
