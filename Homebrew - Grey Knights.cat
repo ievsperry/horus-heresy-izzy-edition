@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -2528,7 +2528,7 @@
     <selectionEntry type="unit" import="true" name="Brotherhood Librarian" hidden="false" id="ae0f-1e45-8adf-8f8a" publicationId="c336-0f01-71db-7a8f">
       <rules>
         <rule name="Psychic Discipline" id="76d4-0fe8-7fea-55af" hidden="false">
-          <description>Dominus and Sanctic</description>
+          <description>two of Dominus, Sanctic, Anathemata, Divination or Telepathy</description>
         </rule>
       </rules>
       <infoLinks>
@@ -2749,6 +2749,39 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Psychic Disciplines" hidden="false" id="cc10-7f75-5b42-f1a9">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7ce1-23ab-6f8e-5ead" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="53f4-dc11-6e9d-6cc1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Dominus" hidden="false" id="b725-de8b-0a5d-79f7" type="selectionEntry" targetId="7030-0a64-63f7-35af">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="873a-4544-d306-b83a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Sanctic" hidden="false" id="f675-86a6-5802-1f7e" type="selectionEntry" targetId="8413-3595-2f40-a327">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f284-df06-1328-6364" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Anathemata" hidden="false" id="527b-9c87-4248-5e8f" type="selectionEntry" targetId="3dd0-858c-394e-513c">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae81-b2cc-a1f2-a7d3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Divination" hidden="false" id="fee2-df89-f787-db60" type="selectionEntry" targetId="a4d2-8299-15ff-1dc5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94ce-03d9-2f92-9475" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Telepathy" hidden="false" id="709d-7ffe-b80a-c389" type="selectionEntry" targetId="9f53-e7c1-dc34-0ea8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b982-ce6e-4269-cbf8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Aegis Terminator Armour" hidden="false" id="8bb3-972a-7bf3-720b" type="selectionEntry" targetId="a03b-838f-f694-0bf9">
@@ -2767,18 +2800,6 @@
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bd3-7243-0510-f179" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5525-a761-35e7-3538" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Dominus" hidden="false" id="70e7-473b-7da9-ed47" type="selectionEntry" targetId="7030-0a64-63f7-35af">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12b8-39c3-ba1c-d6f6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d95-0384-b5c3-c81d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Sanctic" hidden="false" id="021b-0069-71e0-9b94" type="selectionEntry" targetId="8413-3595-2f40-a327">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96ed-aa7e-7f73-4ab3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a133-2ccb-c4fa-b8f6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="6177-34f4-404f-b134" type="selectionEntry" targetId="0176-56a3-d590-b103">

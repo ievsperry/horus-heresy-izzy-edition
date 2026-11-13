@@ -213,7 +213,8 @@ loading. The script prints anything in the doc it could not place.
   select one X and one Psychic Discipline"). A Justicar or Dreadlancer that carries a minor power
   (Hammerhand, Gates of Infinity) keeps it and picks a second: an exception the rule states. Every Character has Brotherhood Psyker by default or as
   this option (Stern and Crowe by default; Crowe keeps Sanctic as his discipline). The option sits on the model that takes it, so
-  every Techmarine, Apothecary and Dreadlancer that takes it makes its own minor power and discipline picks. A Brotherhood Psyker picks Dominus, Sanctic, Anathemata,
+  every Techmarine, Apothecary and Dreadlancer that takes it makes its own minor power and discipline picks. The Brotherhood Librarian picks two of the five ("Psychic Discipline (two of
+  Dominus, ...)": a pick of exactly two); Voldus and Draigo keep Dominus and Sanctic. A Brotherhood Psyker picks Dominus, Sanctic, Anathemata,
   Divination or Telepathy (the last three written out in the md, as Traders Militant does Anathemata). When the
   md has the rule "Any Psyker that selects a Psychic Discipline also gains the Aetheric Lightning Psychic Weapon",
   the builder gives every discipline the game system's Aetheric Lightning profile and the Force rule. Anathemata

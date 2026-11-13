@@ -534,7 +534,7 @@ A Grey Knights army may take one Rite of War:
 - Fearless
 - Legiones Astartes (Grey Knights)
 - Minor Psychic Powers
-- Psychic Discipline (Dominus and Sanctic)
+- Psychic Discipline (two of Dominus, Sanctic, Anathemata, Divination or Telepathy)
 - Relentless
 - The Aegis
 

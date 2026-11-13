@@ -1269,7 +1269,7 @@ class Builder:
                 self.link(links, self.disciplines[n], n, m["id"], count=1)
             return
         pool = named if " or " in inner else list(self.disciplines)
-        two = "one other" in inner
+        two = "one other" in inner or norm(inner).startswith("two of")  # "(two of Dominus, Sanctic or ...)"
         gkey = make_id(m["id"], "disciplines")
         g = el(groups, "selectionEntryGroup", name="Psychic Disciplines",
                hidden=False, id=gkey)
@@ -1277,7 +1277,8 @@ class Builder:
         add_constraint(g, "max", 2 if two else 1, gkey + "max")
         gl = el(g, "entryLinks")
         for n in pool:
-            self.link(gl, self.disciplines[n], n, gkey, maximum=1, minimum=1 if two and n in named else None)
+            self.link(gl, self.disciplines[n], n, gkey, maximum=1,
+                      minimum=1 if "one other" in inner and n in named else None)
 
     def build_power_tables(self):
         """'### Powers of the C'tan' with a Power | Effect table: abilities datasheets name."""
