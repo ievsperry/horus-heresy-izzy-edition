@@ -1426,7 +1426,7 @@ _Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each,
 
 ### Elites
 
-#### Crisis Battlesuits — 75 pts
+#### Crisis Battlesuits — 80 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -1539,7 +1539,7 @@ May be taken as an Elites choice, or as a Retinue Squad (see Retinue Squads) for
 - Stealth
 - Structural Analyser: the unit he joins may re-roll to-wound rolls of 1 with ranged weapons
 
-#### DX-4 Technical Drones — 40 pts
+#### DX-4 Technical Drones — 45 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -1572,7 +1572,7 @@ May be taken as an Elites choice, or as a Retinue Squad (see Retinue Squads) for
 | **The unit may take:** |  |
 | – Up to 4 additional DX-4 Technical Drones | +20 points each |
 
-#### Ethereal Guard — 60 pts
+#### Ethereal Guard — 65 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -1851,7 +1851,7 @@ _A Blade-Sworn Team's drones cost +10 points (Gun Drone) or +15 points (Marker o
 | – Up to 2 Shielded Missile Drones | Drone costs |
 | – Up to two support systems | See Battlesuit Armoury |
 
-#### Stealth Battlesuits — 75 pts
+#### Stealth Battlesuits — 80 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -1896,7 +1896,7 @@ _A Blade-Sworn Team's drones cost +10 points (Gun Drone) or +15 points (Marker o
 | **The unit may take up to two drones from:** |  |
 | – Gun, Marker or Shield Drones | Drone costs |
 
-#### XV9 Hazard Support Team — 70 pts
+#### XV9 Hazard Support Team — 75 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -1938,7 +1938,7 @@ _A Blade-Sworn Team's drones cost +10 points (Gun Drone) or +15 points (Marker o
 | – One support system | See Battlesuit Armoury |
 | – Up to two Gun, Marker or Shield Drones | Drone costs |
 
-#### XV81 Crisis Battlesuits — 45 pts
+#### XV81 Crisis Battlesuits — 50 pts
 
 A Forge World Crisis variant built around a smart missile system, able to rain guided missiles on enemies in cover or out of sight.
 
@@ -1980,7 +1980,7 @@ A Forge World Crisis variant built around a smart missile system, able to rain g
 | **Each model may take:** |  |
 | – Up to two Gun, Marker or Shield Drones | Drone costs |
 
-#### XV84 Crisis Battlesuits — 45 pts
+#### XV84 Crisis Battlesuits — 50 pts
 
 A Forge World Crisis variant fitted with a networked markerlight and drone control systems, coordinating the cadre's fire.
 
@@ -2025,7 +2025,7 @@ A Forge World Crisis variant fitted with a networked markerlight and drone contr
 
 ### Troops
 
-#### Breacher Team — 50 pts
+#### Breacher Team — 55 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -2118,7 +2118,7 @@ The unit may take a Devilfish as a Dedicated Transport.
 | – Markerlight | +10 points |
 | – Close combat weapon | free |
 
-#### Kroot Carnivores — 60 pts
+#### Kroot Carnivores — 65 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -2159,7 +2159,7 @@ The unit may take a Devilfish as a Dedicated Transport.
 | – Thickened Hide | +2 points per model |
 | – Muscular Hypertrophy | +2 points per model |
 
-#### Strike Team — 45 pts
+#### Strike Team — 50 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -2254,7 +2254,7 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 
 ### Fast Attack
 
-#### Knarloc Riders — 90 pts
+#### Knarloc Riders — 95 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -2296,7 +2296,7 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 | – Thickened Hide | +2 points per model |
 | – Muscular Hypertrophy | +2 points per model |
 
-#### Kroot Hounds — 30 pts
+#### Kroot Hounds — 35 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -2333,7 +2333,7 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 | – Thickened Hide | +2 points per model |
 | – Muscular Hypertrophy | +2 points per model |
 
-#### Krootox Rampagers — 120 pts
+#### Krootox Rampagers — 125 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -2372,7 +2372,7 @@ This model may only be selected as a Dedicated Transport for another unit and ma
 | – Thickened Hide | +2 points per model |
 | – Muscular Hypertrophy | +2 points per model |
 
-#### Krootox Riders — 35 pts
+#### Krootox Riders — 40 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -2478,7 +2478,7 @@ The unit may take a Devilfish as a Dedicated Transport.
 | – Ion rifle | +10 points |
 | – Rail rifle | +15 points |
 
-#### Piranha TX-42 — 55 pts
+#### Piranha TX-42 — 60 pts
 
 Each Piranha carries two Gun Drones, using the Gun Drone profile and the Drone Docking rule from the Devilfish.
 
@@ -2520,7 +2520,7 @@ Each Piranha carries two Gun Drones, using the Gun Drone profile and the Drone D
 | **Any TX-42 may take:** |  |
 | – Up to two seeker missiles | +8 points each |
 
-#### Piranhas — 45 pts
+#### Piranhas — 50 pts
 
 Each Piranha carries two Gun Drones, using the Gun Drone profile and the Drone Docking rule from the Devilfish.
 
@@ -2586,7 +2586,7 @@ Use the Drone profiles and equipment from the Drones section.
 | **The unit may take:** |  |
 | – Up to 8 additional Gun, Marker or Shield Drones | Drone costs |
 
-#### Tetra Scout Speeders — 70 pts
+#### Tetra Scout Speeders — 75 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -2665,7 +2665,7 @@ Use the Drone profiles and equipment from the Drones section.
 
 ### Heavy Support
 
-#### Broadside Battlesuits — 70 pts
+#### Broadside Battlesuits — 75 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -2792,7 +2792,7 @@ Uses the Gun Drone profile and Drone Docking rule for its drones.
 | – Disruption pod (Shrouded (6+)) | +5 points |
 | One Hammerhead in the army may be upgraded to Longstrike (BS 5, Sept (T'au), Unique, Tank Ace: re-roll to-hit rolls of 1 against vehicles) | +40 points |
 
-#### Heavy Gun Drones — 50 pts
+#### Heavy Gun Drones — 55 pts
 
 Use the Heavy Gun Drone profile from the Drones section.
 
@@ -2891,7 +2891,7 @@ One of Farsight's Eight: the mind of a dead Broadside pilot, preserved in an AI 
 | – Twin-linked burst cannon | free |
 | – Twin-linked smart missile system | +5 points |
 
-#### Sniper Drone Team — 45 pts
+#### Sniper Drone Team — 50 pts
 
 Use the Sniper Drone profile from the Drones section. A Firesight Marksman may be taken with this unit (see Elites).
 
