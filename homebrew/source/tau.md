@@ -350,7 +350,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 
 | 2.0 slot | T'au units |
 |---|---|
-| HQ | Commander, Cadre Fireblade, Ethereal, Aun'Va, Aun'Shi, Commander Farsight, Commander Shadowsun, Kroot Shaper, Shas'o R'alai, Shas'o R'myr, Commander Brightsword, Commander O'Vesa, The Twin Lance, Commander Bravestorm, Commander Sha'vastos, Commander Arra'kon, Sub-commander Torchstar, Kroot Master Shaper, Kroot Flesh Shaper, Kroot Trail Shaper, Kroot War Shaper, Kroot Lone-spear |
+| HQ | Blade-Sworn Cadre Master, Commander, Cadre Fireblade, Ethereal, Aun'Va, Aun'Shi, Commander Farsight, Commander Shadowsun, Kroot Shaper, Shas'o R'alai, Shas'o R'myr, Commander Brightsword, Commander O'Vesa, The Twin Lance, Commander Bravestorm, Commander Sha'vastos, Commander Arra'kon, Sub-commander Torchstar, Kroot Master Shaper, Kroot Flesh Shaper, Kroot Trail Shaper, Kroot War Shaper, Kroot Lone-spear |
 | Elites | Crisis Battlesuits, Crisis Bodyguards, Farsight Blade-Sworn Team, Stealth Battlesuits, Riptide, Ghostkeel, Firesight Marksman, Darkstrider, Kroot Farstalkers, XV9 Hazard Support Team, XV81 Crisis Battlesuits, XV84 Crisis Battlesuits, DX-4 Technical Drones, Ethereal Guard |
 | Troops | Strike Team, Breacher Team, Kroot Carnivores, Gue'vesa Squad |
 | Dedicated Transports | Devilfish |
@@ -468,6 +468,67 @@ Drones are small, semi-intelligent machines that fly alongside T'au units, carry
 - Martyrdom (as Ethereal)
 - Sept (T'au)
 - Supreme Loyalty (as Ethereal, 24")
+#### Blade-Sworn Cadre Master — 110 pts
+
+*While orthodox T'au Cadre Fireblades direct fire-lines from behind ranks of pulse rifles, the Blade-Sworn Cadre Masters of the Farsight Enclaves lead from the absolute front of the assault. Veterans of countless brutal boarding actions and close-quarters campaigns, these master duelists eschew bulky battlesuits in favour of reinforced combat armour, high-output repulsor packs, and custom-forged vibro-weapons, inspiring their fellow Fire Warriors to meet the Imperium's deadliest shock troops blade-to-blade.*
+
+A Detachment may only include one or more Blade-Sworn Cadre Masters if every model in the Detachment has the Sept (Farsight Enclaves) special rule.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Blade-Sworn Cadre Master | 6 | 5 | 5 | 3 | 3 | 3 | 5 | 4 | 9 | 3+ | 25mm |
+
+**Unit Composition**
+
+- 1 Blade-Sworn Cadre Master
+
+**Wargear**
+
+- EMP grenades
+- Master-crafted combat armour
+- Photon grenades
+- Pulse pistol
+- Shield generator
+- Vibro-blade
+
+**Unit Type**
+
+- Blade-Sworn Cadre Master: Infantry (Independent Character)
+
+**Special Rules**
+
+- Bonding Knife Ritual: the unit may re-roll failed Morale checks
+- Cadre Commander
+- Furious Charge (1)
+- Hit & Run
+- Independent Character
+- Sept (Farsight Enclaves)
+- Stubborn
+- Way of the Short Blade Exemplar: Lead the Charge: the Cadre Master, and any unit he joins, may re-roll failed Charge Distance rolls and gains a +1 bonus to its Initiative Characteristic during any turn in which it made a successful Charge. Synchronized Strike: once per battle, at the start of any of the controlling player's Assault phases, a Blade-Sworn Cadre Master on the battlefield may declare a Synchronized Strike. Until the end of that Assault phase, all models in the Cadre Master's unit (and any friendly Farsight Blade-Sworn Teams within 6") improve the Rending value of their Vibro-weapons by +1 (Rending (5+) improves to Rending (4+), and Rending (6+) to Rending (5+))
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Blade-Sworn Cadre Master may exchange his vibro-blade for one of the following:** |  |
+| – Vibro-axe | free |
+| – Vibro-maul | free |
+| – Vibro-lance | free |
+| **The Blade-Sworn Cadre Master may exchange his pulse pistol and vibro-blade for one of the following:** |  |
+| – Paired vibro-blades | +5 points |
+| – Grav-resonance maul | +15 points |
+| – Gravitic impact hammer | +20 points |
+| **The Blade-Sworn Cadre Master may exchange his pulse pistol for one of the following:** |  |
+| – Pulse carbine and markerlight | +10 points |
+| – Plasma pistol | +10 points |
+| **The Blade-Sworn Cadre Master may take:** |  |
+| – Fusion grenades (counts as melta bombs) | +10 points |
+| – Repulsor jet-pack (Bulky (2) and Deep Strike) | +15 points |
+| **The Blade-Sworn Cadre Master may take up to two drones from:** |  |
+| – Gun, Marker or Shield Drones | Drone costs |
+
+_The Cadre Master's drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward Transport capacity. Cadre Commander is limited to one model with the rule per 1,000 points._
+
 #### Cadre Fireblade — 50 pts
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
@@ -503,6 +564,7 @@ Drones are small, semi-intelligent machines that fly alongside T'au units, carry
 |---|---|
 | **The Cadre Fireblade may take:** |  |
 | – Up to 2 Gun, Marker or Shield Drones | Drone costs |
+| – Repulsor jet-pack (Sept (Farsight Enclaves) only, so he may join Blade-Sworn with Repulsor Jet-Packs; Bulky (2) and Deep Strike) | +15 points |
 
 #### Commander — 85 pts
 
@@ -1354,7 +1416,7 @@ A Detachment may only include one or more Farsight Blade-Sworn Teams if every mo
 - Sept (Farsight Enclaves)
 
 Dedicated Transport
-A Farsight Blade-Sworn Team numbering 10 models or fewer (excluding Drones) may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+A Farsight Blade-Sworn Team numbering 10 models or fewer (excluding Drones) that has not been equipped with Repulsor Jet-Packs may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
 
 **Options**
 
@@ -1374,6 +1436,8 @@ A Farsight Blade-Sworn Team numbering 10 models or fewer (excluding Drones) may 
 | **The Blade-Sworn Shas'ui may take:** |  |
 | – Fusion grenades (counts as melta bombs) | +10 points |
 | – Shield generator (5+ Invulnerable Save) | +10 points |
+| **The entire unit (excluding drones) may take:** |  |
+| – Repulsor jet-packs | +10 points per model |
 | **The unit may take up to two drones from:** |  |
 | – Gun, Marker or Shield Drones | Drone costs |
 
@@ -2981,6 +3045,12 @@ The heavily armoured XV88, a walking gun platform.
 
 A Broadside battlesuit confers a 2+ Armour Save and Bulky (4). It does not confer a jet pack.
 
+##### Master-crafted Combat Armour
+
+Fire Warrior combat armour forged to a master's standard for the Blade-Sworn Cadre Masters of the Farsight Enclaves.
+
+Master-crafted combat armour confers a 3+ Armour Save.
+
 ##### Reinforced Combat Armour
 
 Heavier, high-mobility Fire Warrior combat armour, reinforced by the Earth Caste of the Farsight Enclaves for close assault.
@@ -3174,6 +3244,7 @@ Developed by Earth Caste engineers loyal to Commander Farsight, vibro-weapons ut
 | Vibro-lance | – | User | 5 | Melee, Rending (5+), Furious Charge (1), Reach (1) |
 | Paired vibro-blades | – | User | 5 | Melee, Rending (5+), Duellist's Edge (1), Paired Weapons |
 | Grav-resonance maul | – | +2 | 3 | Melee, Two-handed, Unwieldy (2), Concussive (1), Haywire |
+| Gravitic impact hammer | – | x2 | 2 | Melee, Two-handed, Unwieldy (3), Brutal (2), Haywire |
 
 #### Ranged Weapons
 

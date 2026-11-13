@@ -275,9 +275,12 @@ loading. The script prints anything in the doc it could not place.
   The Kroot special rule is on every Kroot datasheet; its Evolutionary Adaptations are a pick of one, +2 points per
   model, on the Kroot squads.
   Kauyon and Mont'ka need a Commander whose wargear is a Crisis, Coldstar or Enforcer battlesuit (the Commander,
-  Arra'kon, Bravestorm, Brightsword, Sha'vastos, R'myr). The Farsight Blade-Sworn Team is Farsight Enclaves only and
+  Arra'kon, Bravestorm, Brightsword, Farsight, Sha'vastos, R'myr). The Farsight Blade-Sworn Team is Farsight Enclaves only and
   an error beside Auxiliaries; its drones cost 10/15/15, and paired vibro-blades, the grav-resonance maul and the
-  gravitic impact hammer replace both its pulse pistol and vibro-blade.
+  gravitic impact hammer replace both its pulse pistol and vibro-blade. Repulsor jet-packs for the whole Team bar its
+  Devilfish. The Blade-Sworn Cadre Master (HQ) has the same locks, drone costs and swaps, and may lead Hunter Cadre
+  and Kauyon as the Cadre Fireblade does; a Cadre Fireblade's Repulsor jet-pack is Farsight Enclaves only.
+  Commander Farsight's XV-86 Supernova counts as a Coldstar for Kauyon and Mont'ka.
 - A unit with a model of the Unique Sub-type may be taken once per force, as official Unique characters are
   (Constantin Valdor): the builder adds that limit unless the doc already sets one (unique_limits).
 - Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,

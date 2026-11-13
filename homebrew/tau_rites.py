@@ -19,11 +19,12 @@ COMPULSORY = next(c for c in SLOTS["Troops"] if c[1] == "Compulsory Troops:")[0]
 
 ETHEREALS = ["Ethereal", "Aun'Va", "Aun'Shi"]
 FIXED_SEPT = {"Commander Farsight": "Farsight Enclaves", "Commander Shadowsun": "T'au Sept", "Aun'Va": "T'au Sept",
-              "Farsight Blade-Sworn Team": "Farsight Enclaves"}
+              "Farsight Blade-Sworn Team": "Farsight Enclaves", "Blade-Sworn Cadre Master": "Farsight Enclaves"}
 BLADE_SWORN_DRONES = {"Gun Drone": 10, "Marker Drone": 15, "Shield Drone": 15}
 BOTH_WEAPONS = ("Paired vibro-blades", "Grav-resonance maul", "Gravitic impact hammer")  # replace pistol and blade
 # "may only include ... if every model in the Detachment has the Sept (X) special rule": no Auxiliaries beside it
-SEPT_ONLY_DETACHMENT = ["Farsight Blade-Sworn Team"]
+SEPT_ONLY_DETACHMENT = ["Farsight Blade-Sworn Team", "Blade-Sworn Cadre Master"]
+BLADE_SWORN = ["Farsight Blade-Sworn Team", "Blade-Sworn Cadre Master"]  # their drone costs and two-weapon swaps
 
 
 def commanders(b):
@@ -45,14 +46,15 @@ def kroot(d):
 
 def suited_commanders(b):
     """The Commanders in an Enforcer, Coldstar or Crisis Battlesuit (Kauyon, Mont'ka): their wargear says so (the
-    Commander's XV8 Crisis suit, which it may upgrade to an XV85 Enforcer or XV86 Coldstar)."""
+    Commander's XV8 Crisis suit, which it may upgrade to an XV85 Enforcer or XV86 Coldstar; Farsight's XV-86
+    Supernova counts as a Coldstar)."""
     return [n for n in commanders(b)
-            if re.search(r"\b(Crisis|Coldstar|Enforcer)\b", " ".join(map(str, next(d for d in b.datasheets if d["name"] == n)["wargear"])))]
+            if re.search(r"\b(Crisis|Coldstar|Enforcer|XV-?86)\b", " ".join(map(str, next(d for d in b.datasheets if d["name"] == n)["wargear"])))]
 
 
 WARLORDS = {
-    "Hunter Cadre": lambda b: ETHEREALS + ["Cadre Fireblade"],
-    "Kauyon": lambda b: suited_commanders(b) + ["Cadre Fireblade"],
+    "Hunter Cadre": lambda b: ETHEREALS + ["Cadre Fireblade", "Blade-Sworn Cadre Master"],
+    "Kauyon": lambda b: suited_commanders(b) + ["Cadre Fireblade", "Blade-Sworn Cadre Master"],
     "Kroot Kindred": lambda b: ["Kroot Shaper", "Kroot Master Shaper"],
     "Mont'ka": lambda b: suited_commanders(b),
 }
@@ -203,10 +205,12 @@ def apply(b):
             parent[l].remove(l)
             links_el.append(l)
 
-    # Farsight Blade-Sworn Team: its own drone costs, and the swaps that replace both pistol and vibro-blade
-    bs = unit("Farsight Blade-Sworn Team") if "Farsight Blade-Sworn Team" in b.units else None
-    if bs is not None:
-        for g in bs.findall("selectionEntryGroups/selectionEntryGroup"):
+    # the Blade-Sworn: their own drone costs, and the swaps that replace both pistol and vibro-blade
+    for n in BLADE_SWORN:
+        bs = unit(n) if n in b.units else None
+        if bs is None:
+            continue
+        for g in bs.iter("selectionEntryGroup"):
             if g.get("name") == "Drones":
                 for e in g.findall("selectionEntries/selectionEntry"):
                     cost = BLADE_SWORN_DRONES.get(e.get("name"))
@@ -224,6 +228,27 @@ def apply(b):
                 for eid in both:
                     el(conds, "condition", type="atLeast", value=1, field="selections", scope=me.get("id"), childId=eid,
                        shared=True, includeChildSelections=True, includeChildForces=False)
+    # a Blade-Sworn Team with Repulsor Jet-Packs may not take a Devilfish
+    team = unit("Farsight Blade-Sworn Team") if "Farsight Blade-Sworn Team" in b.units else None
+    if team is not None:
+        pack = next((l for l in team.iter("entryLink") if l.get("name", "").lower().startswith("repulsor jet-pack")), None)
+        dt = next((g for g in team.iter("selectionEntryGroup") if g.get("name") == "Dedicated Transport"), None)
+        if pack is not None and dt is not None:
+            for c in dt.findall("constraints/constraint"):
+                if c.get("type") == "max":
+                    m = el(child(dt, "modifiers"), "modifier", type="set", field=c.get("id"), value=0)
+                    el(el(m, "conditions"), "condition", type="atLeast", value=1, field="selections",
+                       scope=b.units["Farsight Blade-Sworn Team"], childId=pack.get("id"), shared=True,
+                       includeChildSelections=True, includeChildForces=False)
+    # a Cadre Fireblade's Repulsor Jet-Pack: Farsight Enclaves only
+    fb = unit("Cadre Fireblade") if "Cadre Fireblade" in b.units else None
+    fsid = make_id("fleet", b.faction, "Farsight Enclaves")
+    for l in (fb.iter("entryLink") if fb is not None else []):
+        if l.get("name", "").lower().startswith("repulsor jet-pack"):
+            cid = add_constraint(l, "max", 0, make_id(l.get("id"), "farsight only"), scope="force", children=True)
+            m = el(child(l, "modifiers"), "modifier", type="set", field=cid, value=-1)
+            el(el(m, "conditions"), "condition", type="atLeast", value=1, field="selections", scope="force",
+               childId=fsid, shared=True, includeChildSelections=True, includeChildForces=False)
 
     # a unit whose Detachment must be all of one Sept: an error beside any Auxiliaries (they have no Sept)
     aux = sorted({b.units[d["name"]] for d in b.datasheets if any(r.startswith("Auxiliaries") for r in d["rules"])})
