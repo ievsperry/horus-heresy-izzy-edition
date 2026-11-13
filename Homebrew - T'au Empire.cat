@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="37" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="38" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -700,6 +700,19 @@
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="da21-b5e7-26e6-603d" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="52ee-2329-74be-c0f9" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Crisis Bodyguards" hidden="false" id="c5c7-e452-ec90-e8e7" type="selectionEntry" targetId="1ebd-e776-6ef5-7dff">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="199e-8be5-49e6-f62e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="eac8-ddaf-f8c3-8efd" primary="true" name="Elites:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="4329-dbca-9a44-8d59" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Darkstrider" hidden="false" id="b14f-6acb-ee31-f6d2" type="selectionEntry" targetId="c951-ad19-7bc8-7075">

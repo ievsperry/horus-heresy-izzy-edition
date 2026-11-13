@@ -286,7 +286,8 @@ loading. The script prints anything in the doc it could not place.
   T'au Retinue Squads (Crisis Bodyguards, Crisis Bodyguard Team, Fireblade Honour Guard Team, Ethereal Honour
   Guard, Blade-Sworn Honour Guard Team) use no
   Force Organisation slot: each eligible Cadre Commander has a "Retinue" choice (one squad) in its own entry, and the
-  squads have no choice of their own (tau_rites.py RETINUES). Their drones cost 10/15/15; the Crisis Bodyguards'
+  squads have no choice of their own (tau_rites.py RETINUES), but the Crisis Bodyguards, which may also be taken as
+  an Elites choice (ALSO_OWN_SLOT). Their drones cost 10/15/15; the Crisis Bodyguards'
   fusion blades and Onager gauntlet (one per unit) are Farsight Enclaves only; the Blade-Sworn Honour Guard are
   Farsight Enclaves only, with the Blade-Sworn swaps and no Devilfish with Repulsor jet-packs. A Retinue Squad's
   characters have no Warlord choice. The Honour blade is +2, AP 4, Rending (5+), Reach (1) for everyone who carries it.

@@ -354,8 +354,8 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 
 | 2.0 slot | T'au units |
 |---|---|
-| HQ | Blade-Sworn Cadre Master, Crisis Bodyguards, Crisis Bodyguard Team, Fireblade Honour Guard Team, Ethereal Honour Guard and Blade-Sworn Honour Guard Team (Retinue Squads only), Commander, Cadre Fireblade, Ethereal, Aun'Va, Aun'Shi, Commander Farsight, Commander Shadowsun, Kroot Shaper, Shas'o R'alai, Shas'o R'myr, Commander Brightsword, Commander O'Vesa, The Twin Lance, Commander Bravestorm, Commander Sha'vastos, Commander Arra'kon, Sub-commander Torchstar, Kroot Master Shaper, Kroot Flesh Shaper, Kroot Trail Shaper, Kroot War Shaper, Kroot Lone-spear |
-| Elites | Crisis Battlesuits, Farsight Blade-Sworn Team, Stealth Battlesuits, Riptide, Ghostkeel, Firesight Marksman, Darkstrider, Kroot Farstalkers, XV9 Hazard Support Team, XV81 Crisis Battlesuits, XV84 Crisis Battlesuits, DX-4 Technical Drones, Ethereal Guard |
+| HQ | Blade-Sworn Cadre Master, Crisis Bodyguard Team, Fireblade Honour Guard Team, Ethereal Honour Guard and Blade-Sworn Honour Guard Team (Retinue Squads only), Commander, Cadre Fireblade, Ethereal, Aun'Va, Aun'Shi, Commander Farsight, Commander Shadowsun, Kroot Shaper, Shas'o R'alai, Shas'o R'myr, Commander Brightsword, Commander O'Vesa, The Twin Lance, Commander Bravestorm, Commander Sha'vastos, Commander Arra'kon, Sub-commander Torchstar, Kroot Master Shaper, Kroot Flesh Shaper, Kroot Trail Shaper, Kroot War Shaper, Kroot Lone-spear |
+| Elites | Crisis Battlesuits, Crisis Bodyguards (also a Retinue Squad), Farsight Blade-Sworn Team, Stealth Battlesuits, Riptide, Ghostkeel, Firesight Marksman, Darkstrider, Kroot Farstalkers, XV9 Hazard Support Team, XV81 Crisis Battlesuits, XV84 Crisis Battlesuits, DX-4 Technical Drones, Ethereal Guard |
 | Troops | Strike Team, Breacher Team, Kroot Carnivores, Gue'vesa Squad |
 | Dedicated Transports | Devilfish |
 | Fast Attack | Pathfinders, Tactical Drones, Piranhas, Vespid Stingwings, Kroot Hounds, Krootox Riders, Sun Shark Bomber, Razorshark Strike Fighter, Tetra Scout Speeders, Remora Stealth Drones, Barracuda, Orca Dropship, Piranha TX-42, Krootox Rampagers, Knarloc Riders |
@@ -1467,7 +1467,7 @@ _Drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each,
 
 #### Crisis Bodyguards — 100 pts
 
-A Retinue Squad (see Retinue Squads) for any model with the Cadre Commander special rule and the Battlesuit Unit Sub-type (including Commander Farsight and Commander Shadowsun).
+May be taken as an Elites choice, or as a Retinue Squad (see Retinue Squads) for any model with the Cadre Commander special rule and the Battlesuit Unit Sub-type (including Commander Farsight and Commander Shadowsun).
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|

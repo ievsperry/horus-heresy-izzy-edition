@@ -37,6 +37,7 @@ RETINUES = {
     "Ethereal Honour Guard": lambda b: ETHEREALS,
     "Blade-Sworn Honour Guard Team": lambda b: ["Blade-Sworn Cadre Master", "Commander Farsight"],
 }
+ALSO_OWN_SLOT = ["Crisis Bodyguards"]  # a Retinue Squad that may also be taken as its own Elites choice
 FARSIGHT_OPTIONS = {"Crisis Bodyguard Team": ["Fusion blades", "Onager gauntlet"]}  # Farsight Enclaves only
 ONE_PER_UNIT = {"Crisis Bodyguard Team": ["Onager gauntlet"]}
 
@@ -287,8 +288,9 @@ def apply(b):
             for l in me.findall("entryLinks/entryLink"):
                 if l.get("name") in ("Warlord", "Warlord Traits"):
                     me.find("entryLinks").remove(l)
-    for l in list(links):
-        if l.get("targetId") in retinue_ids:
+    also_slot = {b.units[n] for n in ALSO_OWN_SLOT if n in b.units}
+    for l in list(links):  # no slot of their own, but for those that may also be taken on their own
+        if l.get("targetId") in retinue_ids - also_slot:
             links.remove(l)
     leaders = {}
     for n, who in RETINUES.items():
