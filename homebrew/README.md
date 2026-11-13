@@ -220,8 +220,14 @@ loading. The script prints anything in the doc it could not place.
   the builder gives every discipline the game system's Aetheric Lightning profile and the Force rule. Anathemata
   gives Grey Knights Seal the Veil and Void Darts only (Breach the Veil is the Traitor power). Kaldor Draigo's
   "Warlord: Supreme Grand Master (...)" is a fixed Warlord Trait: he must be the Warlord and takes it
-  automatically, in place of the Warlord Traits pick. Nemesis Strike lets Grey Knight Dreadlancer Talons be
-  Troops with the Line sub-type. Dreadfists, nemesis daemon hammers and nemesis greatswords are
+  automatically, in place of the Warlord Traits pick. The Rites of War, Brotherhoods and generic Warlord
+  Traits use the full wording the user supplied. A Rite with a **Prerequisites** block is written in the book's long
+  form ("Engines of Tithe: Dreadknight Talons may be selected as Elites choices in a Detachment using this Rite
+  of War"); the builder reads it in the short form its Rite checks use (rite_plain), so its Prerequisites limit
+  the Warlord and its Effects and Limitations change slots and bar units as before. Nemesis Strike makes Grey
+  Knight Dreadlancer Talons non-Compulsory Troops with the Line sub-type; Paladin Retinue and Purifier Crusade
+  Troops may fill Compulsory slots. A "**Brotherhood Trait: X.**" line names its Brotherhood's rules
+  ("Fury of the Vanguard: Unwavering"). Dreadfists, nemesis daemon hammers and nemesis greatswords are
   Unwieldy (3).
 - Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,
   which gives its units Order (X) with that Order's rules, Advanced Reaction and Warlord Trait. The army's Faith

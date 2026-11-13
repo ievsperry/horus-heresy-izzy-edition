@@ -216,112 +216,113 @@ The Grey Knights are organised into eight Brotherhoods, plus the Purifiers. Brot
 
 *The Chapter's foremost blademasters, who lead the charge and are first into every breach.*
 
-Units with Brotherhood (1st) gain the following:
+**Brotherhood Trait: Fury of the Vanguard.** Units with Brotherhood (1st) gain the following:
 
-- **Unwavering:** the unit has a Leadership of 10.
-- **Vanguard of the Chapter:** the unit adds 1 to its Attacks in a turn in which it charged.
+- **Unwavering:** All models with the Brotherhood (1st) special rule have a Leadership Characteristic of 10 (this may not be modified above 10).
+- **Vanguard of the Chapter:** Models with the Brotherhood (1st) special rule gain a +1 bonus to their Attacks Characteristic in any turn in which they made a successful Charge.
 
-**Advanced Reaction: Blades Drawn** (Assault phase). Trigger: an enemy unit declares a charge against a 1st Brotherhood unit. Instead of firing Overwatch, the unit gains Counter-Charge (1) until the end of the phase†.
+**Advanced Reaction: Blades Drawn** (Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Brotherhood (1st) special rule, before any Overwatch attacks are resolved. Effect: The reacting unit forfeits its ability to make an Overwatch reaction against the charging unit. Instead, every model in the reacting unit gains the Counter-Attack (1) special rule until the end of the current Assault phase.
 
-**Warlord Trait: First Among Equals.** The Warlord and any unit he joins gain Rage (2).
+**Warlord Trait: First Among Equals.** A Warlord with this Trait, and any unit he joins, gains the Rage (2) special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
 
 ### 2nd Brotherhood, the Blades of Victory
 
 *Duellists without peer, whose speed and precision have won a hundred wars.*
 
-Units with Brotherhood (2nd) gain the following:
+**Brotherhood Trait: Peerless Duellists.** Units with Brotherhood (2nd) gain the following:
 
-- **Blade Mastery:** the unit may re-roll to-hit rolls of 1 in close combat.
-- **Lightning Reflexes:** the unit adds 1 to its Initiative.
+- **Blade Mastery:** Models with the Brotherhood (2nd) special rule re-roll To Hit rolls of 1 when fighting in the Assault phase.
+- **Lightning Reflexes:** Models with the Brotherhood (2nd) special rule gain a +1 bonus to their Initiative Characteristic.
 
-**Advanced Reaction: Riposte** (Assault phase). Trigger: an enemy unit declares a charge against a 2nd Brotherhood unit. In the following combat, the unit strikes first this phase regardless of Initiative†.
+**Advanced Reaction: Riposte** (Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, immediately after an enemy unit completes a successful Charge against a friendly unit composed entirely of models with the Brotherhood (2nd) special rule. Effect: During the ensuing Fight sub-phase, all models in the reacting unit fight at the Initiative 10 step, regardless of their actual Initiative Characteristic or any penalties from unwieldy weapons.
 
-**Warlord Trait: Unstoppable Champion.** The Warlord's melee weapons gain Rending (6+).
+**Warlord Trait: Unstoppable Champion.** All Melee weapons wielded by a Warlord with this Trait gain the Rending (6+) special rule (or improve an existing Rending value by 1, to a maximum of 4+). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
 
 ### 3rd Brotherhood, the Wardmakers
 
 *The Chapter's most potent psykers, masters of warding and banishment.*
 
-Units with Brotherhood (3rd) gain the following:
+**Brotherhood Trait: Masters of the Aegis.** Units with Brotherhood (3rd) gain the following:
 
-- **Psychic Discipline:** once per phase, the unit may re-roll a failed Psychic check.
-- **Searing Wards:** the unit's Dominus Blast and Purifying Flame gain Shred.
+- **Psychic Discipline:** Once per phase, a unit composed entirely of models with the Brotherhood (3rd) special rule may re-roll a single failed Psychic check.
+- **Searing Wards:** Any Dominus Blast or Purifying Flame psychic weapon used by a model with the Brotherhood (3rd) special rule gains the Shred special rule.
 
-**Advanced Reaction: Ward of the Brotherhood** (Shooting phase). Trigger: a 3rd Brotherhood unit is selected as the target of a Shooting Attack. Against that attack, the unit gains a 5+ Invulnerable Save, or improves an existing one by 1.
+**Advanced Reaction: Ward of the Brotherhood** (Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, after an enemy unit selects a friendly unit composed entirely of models with the Brotherhood (3rd) special rule as the target of a Shooting Attack, before any To Hit rolls are made. Effect: Until the end of that Shooting Attack, all models in the reacting unit gain a 5+ Invulnerable Save. If a model already possesses an Invulnerable Save, it improves that save by +1 instead (to a maximum of 3+).
 
-**Warlord Trait: Master of Wards.** The Warlord may select one additional Minor Psychic Power.
+**Warlord Trait: Master of Wards.** A Warlord with this Trait may select one additional Minor Psychic Power at the start of the battle. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.
 
 ### 4th Brotherhood, the Rapiers
 
 *Marksmen and tacticians who prefer to purge the enemy at range.*
 
-Units with Brotherhood (4th) gain the following:
+**Brotherhood Trait: Precision Volley.** Units with Brotherhood (4th) gain the following:
 
-- **Rapier Volleys:** the unit's storm bolters gain Breaching (6+).
-- **Steady Aim:** the unit may re-roll to-hit rolls of 1 with ranged weapons.
+- **Rapier Volleys:** All Storm Bolters (and Combi-bolters) fired by models with the Brotherhood (4th) special rule gain the Breaching (6+) special rule.
+- **Steady Aim:** Models with the Brotherhood (4th) special rule re-roll To Hit rolls of 1 when making Shooting Attacks.
 
-**Advanced Reaction: Covering Bolters** (Shooting phase). Trigger: a 4th Brotherhood unit is selected as the target of a Shooting Attack. Another friendly Grey Knights unit within 6" of the target makes a Return Fire Shooting Attack against the attacker.
+**Advanced Reaction: Covering Bolters** (Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, after an enemy unit selects a friendly unit composed entirely of models with the Brotherhood (4th) special rule as the target of a Shooting Attack. Effect: Rather than the targeted unit reacting, a single other friendly unit composed entirely of models with the Legiones Astartes (Grey Knights) special rule within 6" of the targeted unit may immediately make a Return Fire Shooting Attack targeting the active enemy unit, following all standard Return Fire restrictions.
 
-**Warlord Trait: Strategist.** You may re-roll one Reserves roll each turn.
+**Warlord Trait: Strategist.** While a Warlord with this Trait is alive (including while in Reserves), the controlling player may re-roll one Reserves roll per turn. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.
 
 ### 5th Brotherhood, the Preservers
 
 *Stoic guardians who hold the line against any horror.*
 
-Units with Brotherhood (5th) gain the following:
+**Brotherhood Trait: Bastion of Titan.** Units with Brotherhood (5th) gain the following:
 
-- **Stoic Defenders:** the unit has Feel No Pain (6+).
-- **Unbreakable:** the unit cannot be Pinned.
+- **Stoic Defenders:** Models with the Brotherhood (5th) special rule gain the Feel No Pain (6+) special rule.
+- **Unbreakable:** Units composed entirely of models with the Brotherhood (5th) special rule automatically pass all Pinning tests.
 
-**Advanced Reaction: Unyielding Anvil** (Assault phase). Trigger: an enemy unit declares a charge against a 5th Brotherhood unit. The charging unit subtracts D3 from its charge distance.
+**Advanced Reaction: Unyielding Anvil** (Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, immediately after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Brotherhood (5th) special rule. Effect: The charging enemy unit must subtract D3 from its Charge Distance roll (to a minimum of 0).
 
-**Warlord Trait: Stalwart.** The Warlord and any unit he joins have Feel No Pain (5+).
+**Warlord Trait: Stalwart.** A Warlord with this Trait, and any unit he joins, gains the Feel No Pain (5+) special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
 
 ### 6th Brotherhood, the Exactors
 
 *Relentless hunters of daemons and witches, who never let their quarry escape.*
 
-Units with Brotherhood (6th) gain the following:
+**Brotherhood Trait: Inexorable Hunt.** Units with Brotherhood (6th) gain the following:
 
-- **Relentless Pursuit:** the unit may re-roll to-wound rolls of 1 against Daemons and psykers.
+- **Relentless Pursuit:** Models with the Brotherhood (6th) special rule re-roll To Wound rolls of 1 against any unit containing at least one model with the Psyker Unit Sub-type, or the Daemon, Corrupted, Corrupted Engine, or Malefic Unit Type or Sub-type.
+- **Sanctified Quarry:** Units composed entirely of models with the Brotherhood (6th) special rule add +1 to their Sweeping Advance rolls.
 
-**Advanced Reaction: Swift Retribution** (Movement phase). Trigger: an enemy unit ends a move within 12" of a 6th Brotherhood unit. The unit makes a Shooting Attack against the triggering unit.
+**Advanced Reaction: Swift Retribution** (Movement phase). Trigger: This Advanced Reaction may be declared in the Movement phase, after an enemy unit ends a move within 12" of, and within line of sight of, a friendly unit composed entirely of models with the Brotherhood (6th) special rule. Effect: The reacting unit may immediately make a Shooting Attack targeting the triggering enemy unit, following all normal rules for Shooting Attacks (this counts as an Interceptor reaction).
 
-**Warlord Trait: Merciless Hunter.** The Warlord has Preferred Enemy (Everything).
+**Warlord Trait: Merciless Hunter.** A Warlord with this Trait gains the Preferred Enemy (Everything) special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.
 
 ### 7th Brotherhood, the Prescient Brethren
 
 *Seers who strike exactly where and when the Emperor wills it.*
 
-Units with Brotherhood (7th) gain the following:
+**Brotherhood Trait: Sight Beyond Sight.** Units with Brotherhood (7th) gain the following:
 
-- **Foreseen Arrival:** add 1 to Reserves rolls for the unit.
-- **Perfect Teleport:** the unit's Teleport Strike never scatters.
+- **Foreseen Arrival:** Add +1 to all Reserves rolls (including Deep Strike Assault rolls) made for units composed entirely of models with the Brotherhood (7th) special rule.
+- **Perfect Teleport:** Any unit composed entirely of models with the Brotherhood (7th) special rule arriving via Deep Strike (or Teleport Strike) does not scatter when placed on the battlefield (it must still be placed more than 1" away from enemy models and impassable terrain).
 
-**Advanced Reaction: Foresight** (Movement phase). Trigger: an enemy unit ends a move within 12" of a 7th Brotherhood unit. The unit moves up to D6 plus its Initiative Characteristic in inches.
+**Advanced Reaction: Foresight** (Movement phase). Trigger: This Advanced Reaction may be declared in the Movement phase, after an enemy unit ends a move within 12" of a friendly unit composed entirely of models with the Brotherhood (7th) special rule. Effect: Every model in the reacting unit may immediately make a move of up to D6 + its Initiative Characteristic in inches. This move may not bring any model within 1" of an enemy model, and does not prevent the unit from shooting or charging in its own turn.
 
-**Warlord Trait: Prescience.** Once per game, re-roll any single dice roll.
+**Warlord Trait: Prescience.** Once per game, while the Warlord is on the battlefield, the controlling player may re-roll any single dice roll (including a single dice as part of a 2D6 or multi-dice roll) made for a friendly unit with the Legiones Astartes (Grey Knights) special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.
 
 ### 8th Brotherhood, the Purifiers
 
 *The incorruptible elite, whose souls burn with a holy flame that no daemon can endure.*
 
-Units with Brotherhood (8th) gain the following:
+**Brotherhood Trait: Soul-Fire of Purity.** Units with Brotherhood (8th) gain the following:
 
-- **Purifying Fire:** every unit knows the Purifying Flame psychic weapon.
-- **Purity of Purpose:** the unit has Hatred (Everything).
+- **Purifying Fire:** Every Psyker model with the Brotherhood (8th) special rule automatically knows the Purifying Flame psychic weapon in addition to any other psychic powers or weapons it possesses.
+- **Purity of Purpose:** Models with the Brotherhood (8th) special rule gain the Hatred (Everything) special rule.
 
-**Advanced Reaction: Purging Volley** (Assault phase). Trigger: an enemy unit declares a charge against an 8th Brotherhood unit. The unit fires Overwatch with Purifying Flame, at full Ballistic Skill.
+**Advanced Reaction: Purging Volley** (Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Brotherhood (8th) special rule. Effect: The reacting unit makes an Overwatch Shooting Attack targeting the charging unit using the Purifying Flame psychic weapon (if equipped/known), resolving those attacks at the models' full Ballistic Skill rather than as Snap Shots.
 
-**Warlord Trait: Knight of the Flame.** The Warlord and any unit he joins ignore Fear and automatically pass Morale checks.
+**Warlord Trait: Knight of the Flame.** A Warlord with this Trait, and any unit he joins, gains the Fearless special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
 
 ## Warlord Traits
 
-A Grey Knights Warlord chooses one of the three generic traits below, or the Warlord Trait of his Brotherhood.
+If an army's Warlord has the Legiones Astartes (Grey Knights) special rule, the controlling player may select one of the three generic Warlord Traits below, or the specific Warlord Trait associated with the Warlord's Brotherhood.
 
-- **Daemonslayer:** the Warlord's attacks against units with the Daemon, Corrupted, Corrupted Engine or Malefic Unit Type or Sub-type gain Murderous Strike (4+). In addition, your army may make one additional reaction in your opponent's Assault phase†.
-- **Nemesis Lord:** the Warlord may select one additional Minor Psychic Power and adds 1 to his Leadership for Psychic checks. In addition, your army may make one additional reaction in your opponent's Shooting phase†.
-- **Unyielding Will:** friendly Grey Knights units within 12" may re-roll failed Psychic checks once per phase. In addition, your army may make one additional reaction in your opponent's Movement phase†.
+- **Daemonslayer:** All Melee attacks made by the Warlord against models with the Daemon, Corrupted, Corrupted Engine, or Malefic Unit Type or Sub-type gain the Murderous Strike (4+) special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
+- **Nemesis Lord:** The Warlord may select one additional Minor Psychic Power at the start of the battle, and adds +1 to his Leadership Characteristic when making Psychic checks (to a maximum of 10). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.
+- **Unyielding Will:** Friendly units composed entirely of models with the Legiones Astartes (Grey Knights) special rule within 12" of the Warlord may re-roll failed Psychic checks once per phase. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.
 
 ## Warlord: Supreme Grand Master
 
@@ -342,15 +343,75 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 
 *Official 2.0 datasheets.*
 
-A Grey Knights army may take one Rite of War:
+A Grey Knights army may take one Rite of War.
 
-**Nemesis Strike.** Requires a Grand Master in Nemesis Dreadknight as Warlord. Benefit: Dreadknight Talons may be taken as Elites as well as Heavy Support. Grey Knight Dreadlancer Talons may be taken as Troops and gain the Line sub-type (Line (1)). Limitation: no Lords of War, and Troops must outnumber Dreadknight Talons.
+### Rite of War: Nemesis Strike
 
-**Paladin Retinue.** Requires a Grand Master or Kaldor Draigo as Warlord. Benefit: Paladin Squads may be taken as Troops and gain the Line sub-type. Limitation: no Strike Squads.
+*The heaviest daemon-engines and nemesis exo-suits of Titan are unleashed as an unstoppable armoured spearhead, crushing the greatest manifestations of the Warp beneath sanctified steel.*
 
-**Purifier Crusade.** Requires Castellan Crowe or a Brother-Captain as Warlord. Benefit: Purifier Squads may be taken as Troops and gain the Line sub-type. Limitation: no Dreadknight Talons or Land Raiders.
+**Prerequisites**
 
-**Teleport Assault.** Requires a Grand Master or Kaldor Draigo as Warlord. Benefit: every unit in Aegis Terminator armour may arrive by Deep Strike from the first game turn†. Limitation: no Dedicated Transports, and at least half the army must start in Reserves.
+- A Detachment using this Rite of War must include a Grand Master in Nemesis Dreadknight with the Master of the Legion special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- Engines of Tithe: Dreadknight Talons may be selected as Elites choices in addition to Heavy Support choices in a Detachment using this Rite of War.
+- Spearhead of Titan: Grey Knight Dreadlancer Talons may be selected as non-Compulsory Troops choices in a Detachment using this Rite of War. Any unit selected in this manner gains the Line (1) Unit Sub-type.
+
+**Limitations**
+
+- A Detachment using this Rite of War may not include any Lords of War choices.
+- A Detachment using this Rite of War must include more Troops choices than Dreadknight Talons (across all Force Organisation slots).
+
+### Rite of War: Paladin Retinue
+
+*The mightiest champions of the Grey Knights march to war as an impenetrable phalanx of Aegis Terminator plate, sworn to stand unbroken against the greatest horrors of the Immaterium.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a Grand Master or Kaldor Draigo with the Master of the Legion special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- Chosen of the Chamber: Paladin Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected in this manner gains the Line (1) Unit Sub-type.
+
+**Limitations**
+
+- A Detachment using this Rite of War may not include any Strike Squads.
+
+### Rite of War: Purifier Crusade
+
+*Wreathed in soul-searing psychic flame, the incorruptible brethren of the Purifier Order advance on foot to cleanse the taint of the Warp from the battlefield.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include Castellan Crowe or a Brother-Captain with the Master of the Legion special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- Cleansing Flame: Purifier Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected in this manner gains the Line (1) Unit Sub-type.
+
+**Limitations**
+
+- A Detachment using this Rite of War may not include any Dreadknight Talons.
+- A Detachment using this Rite of War may not include any Land Raiders of any variant (including as Dedicated Transports).
+
+### Rite of War: Teleport Assault
+
+*Striking directly from the teleportarium chambers of an orbiting strike cruiser, the Grey Knights materialize at the heart of the enemy battleline in a blinding flash of ozone and psychic lightning.*
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a Grand Master or Kaldor Draigo with the Master of the Legion special rule, and this model must be the army's Warlord.
+
+**Effects**
+
+- First Strike Teleportation: Every unit in a Detachment using this Rite of War composed entirely of models equipped with Aegis Terminator Armour gains the Deep Strike special rule. When making a Deep Strike Assault using units from this Detachment, the controlling player may elect to make their Deep Strike Assault in their first Player Turn, rather than waiting until the second Player Turn.
+
+**Limitations**
+
+- No units in a Detachment using this Rite of War may be deployed inside or select Dedicated Transports.
+- At least half of the units (rounding up) in a Detachment using this Rite of War must be placed in Reserves (including Deep Strike Reserves) during deployment.
 
 ## HQ
 

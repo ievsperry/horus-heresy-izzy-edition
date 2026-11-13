@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="31" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -37,16 +37,16 @@
               <profiles>
                 <profile name="Blades Drawn" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="b54e-eaa7-8bc1-cc27">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: an enemy unit declares a charge against a 1st Brotherhood unit. Instead of firing Overwatch, the unit gains Counter-Charge (1) until the end of the phase†.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Brotherhood (1st) special rule, before any Overwatch attacks are resolved. Effect: The reacting unit forfeits its ability to make an Overwatch reaction against the charging unit. Instead, every model in the reacting unit gains the Counter-Attack (1) special rule until the end of the current Assault phase.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Unwavering" id="48cd-6af7-8fb1-3a2f" hidden="false">
-                  <description>the unit has a Leadership of 10.</description>
+                <rule name="Fury of the Vanguard: Unwavering" id="08d9-75d3-0b76-8ef3" hidden="false">
+                  <description>All models with the Brotherhood (1st) special rule have a Leadership Characteristic of 10 (this may not be modified above 10).</description>
                 </rule>
-                <rule name="Vanguard of the Chapter" id="a8fd-c6c2-1c37-1108" hidden="false">
-                  <description>the unit adds 1 to its Attacks in a turn in which it charged.</description>
+                <rule name="Fury of the Vanguard: Vanguard of the Chapter" id="f827-6c38-2e93-c7bd" hidden="false">
+                  <description>Models with the Brotherhood (1st) special rule gain a +1 bonus to their Attacks Characteristic in any turn in which they made a successful Charge.</description>
                 </rule>
               </rules>
               <costs>
@@ -57,16 +57,16 @@
               <profiles>
                 <profile name="Riposte" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="bc08-0685-f23c-091a">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: an enemy unit declares a charge against a 2nd Brotherhood unit. In the following combat, the unit strikes first this phase regardless of Initiative†.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, immediately after an enemy unit completes a successful Charge against a friendly unit composed entirely of models with the Brotherhood (2nd) special rule. Effect: During the ensuing Fight sub-phase, all models in the reacting unit fight at the Initiative 10 step, regardless of their actual Initiative Characteristic or any penalties from unwieldy weapons.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Blade Mastery" id="be8b-2716-e542-2469" hidden="false">
-                  <description>the unit may re-roll to-hit rolls of 1 in close combat.</description>
+                <rule name="Peerless Duellists: Blade Mastery" id="6751-ce5d-542d-8931" hidden="false">
+                  <description>Models with the Brotherhood (2nd) special rule re-roll To Hit rolls of 1 when fighting in the Assault phase.</description>
                 </rule>
-                <rule name="Lightning Reflexes" id="ad46-d40b-cd0a-7da5" hidden="false">
-                  <description>the unit adds 1 to its Initiative.</description>
+                <rule name="Peerless Duellists: Lightning Reflexes" id="b2e7-40f7-4eb7-1b93" hidden="false">
+                  <description>Models with the Brotherhood (2nd) special rule gain a +1 bonus to their Initiative Characteristic.</description>
                 </rule>
               </rules>
               <costs>
@@ -77,16 +77,16 @@
               <profiles>
                 <profile name="Ward of the Brotherhood" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="4863-dd64-74f0-a082">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: a 3rd Brotherhood unit is selected as the target of a Shooting Attack. Against that attack, the unit gains a 5+ Invulnerable Save, or improves an existing one by 1.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, after an enemy unit selects a friendly unit composed entirely of models with the Brotherhood (3rd) special rule as the target of a Shooting Attack, before any To Hit rolls are made. Effect: Until the end of that Shooting Attack, all models in the reacting unit gain a 5+ Invulnerable Save. If a model already possesses an Invulnerable Save, it improves that save by +1 instead (to a maximum of 3+).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Psychic Discipline" id="3b5b-defa-e6a8-a68f" hidden="false">
-                  <description>once per phase, the unit may re-roll a failed Psychic check.</description>
+                <rule name="Masters of the Aegis: Psychic Discipline" id="28ae-3244-c7ab-1f2d" hidden="false">
+                  <description>Once per phase, a unit composed entirely of models with the Brotherhood (3rd) special rule may re-roll a single failed Psychic check.</description>
                 </rule>
-                <rule name="Searing Wards" id="e793-cbd6-5948-15d1" hidden="false">
-                  <description>the unit's Dominus Blast and Purifying Flame gain Shred.</description>
+                <rule name="Masters of the Aegis: Searing Wards" id="cc19-34af-df21-a207" hidden="false">
+                  <description>Any Dominus Blast or Purifying Flame psychic weapon used by a model with the Brotherhood (3rd) special rule gains the Shred special rule.</description>
                 </rule>
               </rules>
               <costs>
@@ -97,16 +97,16 @@
               <profiles>
                 <profile name="Covering Bolters" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="e915-16c3-28f4-08eb">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: a 4th Brotherhood unit is selected as the target of a Shooting Attack. Another friendly Grey Knights unit within 6" of the target makes a Return Fire Shooting Attack against the attacker.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, after an enemy unit selects a friendly unit composed entirely of models with the Brotherhood (4th) special rule as the target of a Shooting Attack. Effect: Rather than the targeted unit reacting, a single other friendly unit composed entirely of models with the Legiones Astartes (Grey Knights) special rule within 6" of the targeted unit may immediately make a Return Fire Shooting Attack targeting the active enemy unit, following all standard Return Fire restrictions.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Rapier Volleys" id="1df5-54ae-0ba6-2672" hidden="false">
-                  <description>the unit's storm bolters gain Breaching (6+).</description>
+                <rule name="Precision Volley: Rapier Volleys" id="3027-cb80-4b5f-23ca" hidden="false">
+                  <description>All Storm Bolters (and Combi-bolters) fired by models with the Brotherhood (4th) special rule gain the Breaching (6+) special rule.</description>
                 </rule>
-                <rule name="Steady Aim" id="83ae-17de-0bc4-517a" hidden="false">
-                  <description>the unit may re-roll to-hit rolls of 1 with ranged weapons.</description>
+                <rule name="Precision Volley: Steady Aim" id="89d7-7468-e5ed-deda" hidden="false">
+                  <description>Models with the Brotherhood (4th) special rule re-roll To Hit rolls of 1 when making Shooting Attacks.</description>
                 </rule>
               </rules>
               <costs>
@@ -117,16 +117,16 @@
               <profiles>
                 <profile name="Unyielding Anvil" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="a7b9-901e-a231-db25">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: an enemy unit declares a charge against a 5th Brotherhood unit. The charging unit subtracts D3 from its charge distance.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, immediately after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Brotherhood (5th) special rule. Effect: The charging enemy unit must subtract D3 from its Charge Distance roll (to a minimum of 0).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Stoic Defenders" id="edc1-fbdb-b61a-67a9" hidden="false">
-                  <description>the unit has Feel No Pain (6+).</description>
+                <rule name="Bastion of Titan: Stoic Defenders" id="5e31-8755-29e9-ba7b" hidden="false">
+                  <description>Models with the Brotherhood (5th) special rule gain the Feel No Pain (6+) special rule.</description>
                 </rule>
-                <rule name="Unbreakable" id="6c28-d7c6-e688-f231" hidden="false">
-                  <description>the unit cannot be Pinned.</description>
+                <rule name="Bastion of Titan: Unbreakable" id="0119-3db3-b268-29b5" hidden="false">
+                  <description>Units composed entirely of models with the Brotherhood (5th) special rule automatically pass all Pinning tests.</description>
                 </rule>
               </rules>
               <costs>
@@ -137,13 +137,16 @@
               <profiles>
                 <profile name="Swift Retribution" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="98f4-4479-9d7d-6a29">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Trigger: an enemy unit ends a move within 12" of a 6th Brotherhood unit. The unit makes a Shooting Attack against the triggering unit.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Trigger: This Advanced Reaction may be declared in the Movement phase, after an enemy unit ends a move within 12" of, and within line of sight of, a friendly unit composed entirely of models with the Brotherhood (6th) special rule. Effect: The reacting unit may immediately make a Shooting Attack targeting the triggering enemy unit, following all normal rules for Shooting Attacks (this counts as an Interceptor reaction).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Relentless Pursuit" id="4c98-832c-5851-e993" hidden="false">
-                  <description>the unit may re-roll to-wound rolls of 1 against Daemons and psykers.</description>
+                <rule name="Inexorable Hunt: Relentless Pursuit" id="30dd-7699-a9d7-9637" hidden="false">
+                  <description>Models with the Brotherhood (6th) special rule re-roll To Wound rolls of 1 against any unit containing at least one model with the Psyker Unit Sub-type, or the Daemon, Corrupted, Corrupted Engine, or Malefic Unit Type or Sub-type.</description>
+                </rule>
+                <rule name="Inexorable Hunt: Sanctified Quarry" id="f337-71d6-5422-5020" hidden="false">
+                  <description>Units composed entirely of models with the Brotherhood (6th) special rule add +1 to their Sweeping Advance rolls.</description>
                 </rule>
               </rules>
               <costs>
@@ -154,16 +157,16 @@
               <profiles>
                 <profile name="Foresight" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="13bc-80be-0ef7-d3a9">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Trigger: an enemy unit ends a move within 12" of a 7th Brotherhood unit. The unit moves up to D6 plus its Initiative Characteristic in inches.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Trigger: This Advanced Reaction may be declared in the Movement phase, after an enemy unit ends a move within 12" of a friendly unit composed entirely of models with the Brotherhood (7th) special rule. Effect: Every model in the reacting unit may immediately make a move of up to D6 + its Initiative Characteristic in inches. This move may not bring any model within 1" of an enemy model, and does not prevent the unit from shooting or charging in its own turn.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Foreseen Arrival" id="74a7-5b68-5ba8-07ab" hidden="false">
-                  <description>add 1 to Reserves rolls for the unit.</description>
+                <rule name="Sight Beyond Sight: Foreseen Arrival" id="ee4b-5fc3-7e30-7b73" hidden="false">
+                  <description>Add +1 to all Reserves rolls (including Deep Strike Assault rolls) made for units composed entirely of models with the Brotherhood (7th) special rule.</description>
                 </rule>
-                <rule name="Perfect Teleport" id="f6cd-2c12-6b74-a097" hidden="false">
-                  <description>the unit's Teleport Strike never scatters.</description>
+                <rule name="Sight Beyond Sight: Perfect Teleport" id="c456-f557-c4c4-a006" hidden="false">
+                  <description>Any unit composed entirely of models with the Brotherhood (7th) special rule arriving via Deep Strike (or Teleport Strike) does not scatter when placed on the battlefield (it must still be placed more than 1" away from enemy models and impassable terrain).</description>
                 </rule>
               </rules>
               <costs>
@@ -174,16 +177,16 @@
               <profiles>
                 <profile name="Purging Volley" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="502b-2a23-ac5f-b85a">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: an enemy unit declares a charge against an 8th Brotherhood unit. The unit fires Overwatch with Purifying Flame, at full Ballistic Skill.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Brotherhood (8th) special rule. Effect: The reacting unit makes an Overwatch Shooting Attack targeting the charging unit using the Purifying Flame psychic weapon (if equipped/known), resolving those attacks at the models' full Ballistic Skill rather than as Snap Shots.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Purifying Fire" id="88d8-09cb-6384-daf5" hidden="false">
-                  <description>every unit knows the Purifying Flame psychic weapon.</description>
+                <rule name="Soul-Fire of Purity: Purifying Fire" id="73ad-3d7f-ed84-2969" hidden="false">
+                  <description>Every Psyker model with the Brotherhood (8th) special rule automatically knows the Purifying Flame psychic weapon in addition to any other psychic powers or weapons it possesses.</description>
                 </rule>
-                <rule name="Purity of Purpose" id="ea7c-d2e5-ad91-1ce1" hidden="false">
-                  <description>the unit has Hatred (Everything).</description>
+                <rule name="Soul-Fire of Purity: Purity of Purpose" id="c47b-9aab-318a-1336" hidden="false">
+                  <description>Models with the Brotherhood (8th) special rule gain the Hatred (Everything) special rule.</description>
                 </rule>
               </rules>
               <costs>
@@ -209,11 +212,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae9d-2706-6eac-8d79" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
+                <rule name="Prerequisites" id="b02a-1216-a971-eb02" hidden="false">
+                  <description>A Detachment using this Rite of War must include a Grand Master in Nemesis Dreadknight with the Master of the Legion special rule, and this model must be the army's Warlord.</description>
+                </rule>
                 <rule name="Effects" id="89ff-12c4-64f1-c513" hidden="false">
-                  <description>Dreadknight Talons may be taken as Elites as well as Heavy Support. Grey Knight Dreadlancer Talons may be taken as Troops and gain the Line sub-type (Line (1)).</description>
+                  <description>Engines of Tithe: Dreadknight Talons may be selected as Elites choices in addition to Heavy Support choices in a Detachment using this Rite of War. Spearhead of Titan: Grey Knight Dreadlancer Talons may be selected as non-Compulsory Troops choices in a Detachment using this Rite of War. Any unit selected in this manner gains the Line (1) Unit Sub-type.</description>
                 </rule>
                 <rule name="Limitations" id="ae07-680a-799d-8544" hidden="false">
-                  <description>Requires a Grand Master in Nemesis Dreadknight as Warlord.   no Lords of War, and Troops must outnumber Dreadknight Talons.</description>
+                  <description>A Detachment using this Rite of War may not include any Lords of War choices. A Detachment using this Rite of War must include more Troops choices than Dreadknight Talons (across all Force Organisation slots).</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -235,11 +241,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b872-f0df-ae5d-d810" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
+                <rule name="Prerequisites" id="f1b4-11cb-e83a-d98e" hidden="false">
+                  <description>A Detachment using this Rite of War must include a Grand Master or Kaldor Draigo with the Master of the Legion special rule, and this model must be the army's Warlord.</description>
+                </rule>
                 <rule name="Effects" id="c6f8-bae6-36e0-7011" hidden="false">
-                  <description>Paladin Squads may be taken as Troops and gain the Line sub-type.</description>
+                  <description>Chosen of the Chamber: Paladin Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected in this manner gains the Line (1) Unit Sub-type.</description>
                 </rule>
                 <rule name="Limitations" id="accd-88f7-a35d-6049" hidden="false">
-                  <description>Requires a Grand Master or Kaldor Draigo as Warlord.   no Strike Squads.</description>
+                  <description>A Detachment using this Rite of War may not include any Strike Squads.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -273,11 +282,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dde-1ab8-7b53-081e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
+                <rule name="Prerequisites" id="efab-3d2c-1762-b6ba" hidden="false">
+                  <description>A Detachment using this Rite of War must include Castellan Crowe or a Brother-Captain with the Master of the Legion special rule, and this model must be the army's Warlord.</description>
+                </rule>
                 <rule name="Effects" id="70bb-d0e6-6d34-8c71" hidden="false">
-                  <description>Purifier Squads may be taken as Troops and gain the Line sub-type.</description>
+                  <description>Cleansing Flame: Purifier Squads may be selected as Troops choices in a Detachment using this Rite of War. Any unit selected in this manner gains the Line (1) Unit Sub-type.</description>
                 </rule>
                 <rule name="Limitations" id="8161-6bd3-d160-b5fc" hidden="false">
-                  <description>Requires Castellan Crowe or a Brother-Captain as Warlord.   no Dreadknight Talons or Land Raiders.</description>
+                  <description>A Detachment using this Rite of War may not include any Dreadknight Talons. A Detachment using this Rite of War may not include any Land Raiders of any variant (including as Dedicated Transports).</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -289,11 +301,14 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Teleport Assault" hidden="false" id="237f-cee9-50aa-c5e1" publicationId="c336-0f01-71db-7a8f">
               <rules>
+                <rule name="Prerequisites" id="fe3f-9579-d6bb-b086" hidden="false">
+                  <description>A Detachment using this Rite of War must include a Grand Master or Kaldor Draigo with the Master of the Legion special rule, and this model must be the army's Warlord.</description>
+                </rule>
                 <rule name="Effects" id="ff6b-31e3-0965-9e06" hidden="false">
-                  <description>every unit in Aegis Terminator armour may arrive by Deep Strike from the first game turn.</description>
+                  <description>First Strike Teleportation: Every unit in a Detachment using this Rite of War composed entirely of models equipped with Aegis Terminator Armour gains the Deep Strike special rule. When making a Deep Strike Assault using units from this Detachment, the controlling player may elect to make their Deep Strike Assault in their first Player Turn, rather than waiting until the second Player Turn.</description>
                 </rule>
                 <rule name="Limitations" id="7aa8-f61d-7d32-1ccc" hidden="false">
-                  <description>Requires a Grand Master or Kaldor Draigo as Warlord.   no Dedicated Transports, and at least half the army must start in Reserves.</description>
+                  <description>No units in a Detachment using this Rite of War may be deployed inside or select Dedicated Transports. At least half of the units (rounding up) in a Detachment using this Rite of War must be placed in Reserves (including Deep Strike Reserves) during deployment.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -539,7 +554,6 @@
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="a231-1bac-09a6-09c0" primary="true" name="Troops:" />
-        <categoryLink targetId="8f42-a824-fb5f-8fea" id="b421-f384-bb6a-ac8d" primary="false" name="Compulsory Troops:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="351b-f45b-f256-1c86" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
@@ -8287,7 +8301,7 @@
           <profiles>
             <profile name="Daemonslayer" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="1af6-4c63-4c9f-9559">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">the Warlord's attacks against units with the Daemon, Corrupted, Corrupted Engine or Malefic Unit Type or Sub-type gain Murderous Strike (4+). In addition, your army may make one additional reaction in your opponent's Assault phase.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All Melee attacks made by the Warlord against models with the Daemon, Corrupted, Corrupted Engine, or Malefic Unit Type or Sub-type gain the Murderous Strike (4+) special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8305,7 +8319,7 @@
           <profiles>
             <profile name="Nemesis Lord" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="686e-be34-6b76-9db2">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">the Warlord may select one additional Minor Psychic Power and adds 1 to his Leadership for Psychic checks. In addition, your army may make one additional reaction in your opponent's Shooting phase.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord may select one additional Minor Psychic Power at the start of the battle, and adds +1 to his Leadership Characteristic when making Psychic checks (to a maximum of 10). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8323,7 +8337,7 @@
           <profiles>
             <profile name="Unyielding Will" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="1123-e585-154d-479d">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">friendly Grey Knights units within 12" may re-roll failed Psychic checks once per phase. In addition, your army may make one additional reaction in your opponent's Movement phase.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Friendly units composed entirely of models with the Legiones Astartes (Grey Knights) special rule within 12" of the Warlord may re-roll failed Psychic checks once per phase. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8348,7 +8362,7 @@
           <profiles>
             <profile name="First Among Equals" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="e8a1-1de2-660c-8b38">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit he joins gain Rage (2).</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and any unit he joins, gains the Rage (2) special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8373,7 +8387,7 @@
           <profiles>
             <profile name="Unstoppable Champion" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="4e68-47e2-6aa8-5bfe">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord's melee weapons gain Rending (6+).</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All Melee weapons wielded by a Warlord with this Trait gain the Rending (6+) special rule (or improve an existing Rending value by 1, to a maximum of 4+). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8398,7 +8412,7 @@
           <profiles>
             <profile name="Master of Wards" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="4290-3cbb-1ad5-16fd">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord may select one additional Minor Psychic Power.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait may select one additional Minor Psychic Power at the start of the battle. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8423,7 +8437,7 @@
           <profiles>
             <profile name="Strategist" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="a57f-d37a-2432-c5a6">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">You may re-roll one Reserves roll each turn.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">While a Warlord with this Trait is alive (including while in Reserves), the controlling player may re-roll one Reserves roll per turn. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8448,7 +8462,7 @@
           <profiles>
             <profile name="Stalwart" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="d16d-fd83-75e0-0fee">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit he joins have Feel No Pain (5+).</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and any unit he joins, gains the Feel No Pain (5+) special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8473,7 +8487,7 @@
           <profiles>
             <profile name="Merciless Hunter" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="75c0-1de9-ae42-94d1">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord has Preferred Enemy (Everything).</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Preferred Enemy (Everything) special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8498,7 +8512,7 @@
           <profiles>
             <profile name="Prescience" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="b8ab-ec55-7fd5-1357">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Once per game, re-roll any single dice roll.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Once per game, while the Warlord is on the battlefield, the controlling player may re-roll any single dice roll (including a single dice as part of a 2D6 or multi-dice roll) made for a friendly unit with the Legiones Astartes (Grey Knights) special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8523,7 +8537,7 @@
           <profiles>
             <profile name="Knight of the Flame" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="aeca-4ded-82ac-a343">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit he joins ignore Fear and automatically pass Morale checks.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and any unit he joins, gains the Fearless special rule. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
