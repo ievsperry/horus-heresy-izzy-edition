@@ -449,6 +449,7 @@ A Grey Knights army may take one Rite of War.
 - Deep Strike
 - Fearless
 - Legiones Astartes (Grey Knights)
+- Master of the Legion
 - Minor Psychic Powers
 - Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
 - Relentless
@@ -771,6 +772,7 @@ A Grey Knights army may take one Rite of War.
 - Brotherhood (8th, the Purifiers)
 - Brotherhood of Psykers
 - Brotherhood Psyker
+- Master of the Legion
 - Minor Psychic Powers
 - Psychic Discipline (Sanctic)
 - Champion of the Purifiers: the unit he joins has Hatred (Everything) and Feel No Pain (6+)
@@ -822,6 +824,7 @@ A Grey Knights army may take one Rite of War.
 - Deep Strike
 - Fearless
 - Legiones Astartes (Grey Knights)
+- Master of the Legion
 - Minor Psychic Powers
 - Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
 - Relentless
@@ -879,6 +882,7 @@ A Grey Knights army may take one Rite of War.
 - Brotherhood (X)
 - Brotherhood of Psykers
 - Brotherhood Psyker
+- Master of the Legion
 - Minor Psychic Powers
 - Psychic Discipline (Dominus, Sanctic, Anathemata, Divination or Telepathy)
 - Legiones Astartes (Grey Knights)

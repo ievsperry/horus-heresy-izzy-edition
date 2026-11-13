@@ -235,7 +235,9 @@ loading. The script prints anything in the doc it could not place.
   Purifying Flame (Assault Variant), named so as not to clash with the Sanctic psychic weapon, and Soul Blaze, an
   army rule (2.0 has none); its Knight of the Flame alone is a Brotherhood Psyker. Its 0-1 limit is lifted in a
   Detachment whose Brotherhood is the 8th (grey_knights_official.py), and Soul Blaze hits gain Rending (6+) against
-  Daemon, Corrupted, Corrupted Engine and Malefic models. Dreadfists, nemesis daemon hammers and nemesis greatswords are
+  Daemon, Corrupted, Corrupted Engine and Malefic models. The Grand Master, Grand Master in Nemesis
+  Dreadknight, Brother-Captain, Castellan Crowe and Kaldor Draigo have Master of the Legion, so they can lead a Rite;
+  Brother-Captain Stern and Grand Master Voldus show only in a 3rd Brotherhood Detachment. Dreadfists, nemesis daemon hammers and nemesis greatswords are
   Unwieldy (3).
 - Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,
   which gives its units Order (X) with that Order's rules, Advanced Reaction and Warlord Trait. The army's Faith

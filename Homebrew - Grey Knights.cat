@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="39" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="40" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -341,7 +341,14 @@
         <categoryLink targetId="36c3-e85e-97cc-c503" id="c695-ad9f-e752-505d" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Brother-Captain Stern" hidden="false" id="14bf-173d-dc78-dc3f" type="selectionEntry" targetId="393e-cb94-52a0-349c">
+    <entryLink import="true" name="Brother-Captain Stern" hidden="true" id="14bf-173d-dc78-dc3f" type="selectionEntry" targetId="393e-cb94-52a0-349c">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3dc-675b-97c4-3550" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="4ce8-9c7f-5390-058a" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="8c60-2150-4b43-d737" primary="false" name="Compulsory HQ:" />
@@ -393,7 +400,14 @@
         <categoryLink targetId="36c3-e85e-97cc-c503" id="f821-5527-8c1c-1ed7" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Grand Master Voldus" hidden="false" id="bcaf-04b5-76c4-56cd" type="selectionEntry" targetId="40c2-068e-731f-a604">
+    <entryLink import="true" name="Grand Master Voldus" hidden="true" id="bcaf-04b5-76c4-56cd" type="selectionEntry" targetId="40c2-068e-731f-a604">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3dc-675b-97c4-3550" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="454d-e0bb-e1a3-1948" primary="true" name="HQ:" />
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="dc9e-8f77-197e-92e0" primary="false" name="Compulsory HQ:" />
@@ -1781,6 +1795,7 @@
         <infoLink name="Deep Strike" id="6218-9afc-c261-4f81" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
         <infoLink name="Fearless" id="764e-bf48-4bb8-88dd" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
         <infoLink name="Legiones Astartes (Grey Knights)" id="c613-db97-6873-53b3" hidden="false" targetId="9ade-e6da-6ebe-c8d6" type="rule" />
+        <infoLink name="Master of the Legion" id="94e8-dc5d-2037-8c40" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule" />
         <infoLink name="Minor Psychic Powers" id="34e5-767b-3b44-bea8" hidden="false" targetId="8dae-272b-41c6-ee22" type="rule" />
         <infoLink name="Relentless" id="83fe-3fd8-a5df-9615" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule" />
         <infoLink name="The Aegis" id="f146-9704-37e5-4050" hidden="false" targetId="f384-a120-63d6-aaf2" type="rule" />
@@ -3534,6 +3549,7 @@
         </infoLink>
         <infoLink name="Brotherhood of Psykers" id="8960-137c-a385-3d00" hidden="false" targetId="9a82-d3a3-4eaf-9404" type="rule" />
         <infoLink name="Brotherhood Psyker" id="6d7e-a855-a2a1-d864" hidden="false" targetId="a06c-a50b-e14c-bb0d" type="rule" />
+        <infoLink name="Master of the Legion" id="859a-3b1a-d281-ad00" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule" />
         <infoLink name="Minor Psychic Powers" id="2e40-787a-0c43-6839" hidden="false" targetId="8dae-272b-41c6-ee22" type="rule" />
         <infoLink name="Legiones Astartes (Grey Knights)" id="fd21-55f9-4ede-0e32" hidden="false" targetId="9ade-e6da-6ebe-c8d6" type="rule" />
         <infoLink name="Invulnerable Save (X)" id="ec6d-6b81-aac6-3894" hidden="false" targetId="2e5e-c3f1-d335-9842" type="rule">
@@ -3722,6 +3738,7 @@
         <infoLink name="Deep Strike" id="eeca-6430-6942-eb96" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
         <infoLink name="Fearless" id="f24e-a3ca-e43e-7fc7" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
         <infoLink name="Legiones Astartes (Grey Knights)" id="c9cd-7859-80a9-c44e" hidden="false" targetId="9ade-e6da-6ebe-c8d6" type="rule" />
+        <infoLink name="Master of the Legion" id="3712-d751-ae63-1a0a" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule" />
         <infoLink name="Minor Psychic Powers" id="e953-ff14-02ee-40df" hidden="false" targetId="8dae-272b-41c6-ee22" type="rule" />
         <infoLink name="Relentless" id="dc78-a115-b78d-4616" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule" />
         <infoLink name="The Aegis" id="c4f5-85a9-2550-a7ad" hidden="false" targetId="f384-a120-63d6-aaf2" type="rule" />
@@ -4056,6 +4073,7 @@
         <infoLink name="Brotherhood (X)" id="6344-70dc-9dc5-941d" hidden="false" targetId="4749-6b7c-76d3-27ab" type="rule" />
         <infoLink name="Brotherhood of Psykers" id="1e4f-840e-70c5-897a" hidden="false" targetId="9a82-d3a3-4eaf-9404" type="rule" />
         <infoLink name="Brotherhood Psyker" id="53ef-5a74-15bf-06e7" hidden="false" targetId="a06c-a50b-e14c-bb0d" type="rule" />
+        <infoLink name="Master of the Legion" id="d960-832a-1102-13ec" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule" />
         <infoLink name="Minor Psychic Powers" id="ebbf-d452-5a8f-93f9" hidden="false" targetId="8dae-272b-41c6-ee22" type="rule" />
         <infoLink name="Legiones Astartes (Grey Knights)" id="ba8b-b240-bada-01ea" hidden="false" targetId="9ade-e6da-6ebe-c8d6" type="rule" />
         <infoLink name="Hammer of Wrath (X)" id="044f-022b-3041-6d4a" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
