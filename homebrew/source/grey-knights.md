@@ -351,7 +351,7 @@ Use the 2.0 Crusade Force Organisation chart. New units take these slots:
 
 *Official 2.0 datasheets.*
 
-A Grey Knights army may take one Rite of War.
+A Grey Knights army may take one Rite of War: one of the four below, or one of the generic Legion Rites of War (such as Pride of the Legion or Armoured Spearhead), with its own requirements.
 
 For these prerequisites, Supreme Grand Master Janus and the founding Grand Masters (Koios, Satre, Iapto, Yotun, Epimetheus, Ogen and Khyron) count as Grand Masters, and the Aegis Captain counts as a Brother-Captain.
 
