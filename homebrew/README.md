@@ -274,6 +274,10 @@ loading. The script prints anything in the doc it could not place.
   (Farsight Enclaves) and Commander Shadowsun and Aun'Va (T'au Sept) are an error in a Detachment of another Sept.
   The Kroot special rule is on every Kroot datasheet; its Evolutionary Adaptations are a pick of one, +2 points per
   model, on the Kroot squads.
+  Kauyon and Mont'ka need a Commander whose wargear is a Crisis, Coldstar or Enforcer battlesuit (the Commander,
+  Arra'kon, Bravestorm, Brightsword, Sha'vastos, R'myr). The Farsight Blade-Sworn Team is Farsight Enclaves only and
+  an error beside Auxiliaries; its drones cost 10/15/15, and paired vibro-blades, the grav-resonance maul and the
+  gravitic impact hammer replace both its pulse pistol and vibro-blade.
 - A unit with a model of the Unique Sub-type may be taken once per force, as official Unique characters are
   (Constantin Valdor): the builder adds that limit unless the doc already sets one (unique_limits).
 - Adepta Sororitas, like the Astra Militarum, may be Loyalist or Traitor. Each detachment picks one Order Militant,

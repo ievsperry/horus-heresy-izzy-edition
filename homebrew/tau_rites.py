@@ -18,7 +18,12 @@ from build_catalogue import SLOTS, WARLORD_ENTRY, add_constraint, child, el, mak
 COMPULSORY = next(c for c in SLOTS["Troops"] if c[1] == "Compulsory Troops:")[0]
 
 ETHEREALS = ["Ethereal", "Aun'Va", "Aun'Shi"]
-FIXED_SEPT = {"Commander Farsight": "Farsight Enclaves", "Commander Shadowsun": "T'au Sept", "Aun'Va": "T'au Sept"}
+FIXED_SEPT = {"Commander Farsight": "Farsight Enclaves", "Commander Shadowsun": "T'au Sept", "Aun'Va": "T'au Sept",
+              "Farsight Blade-Sworn Team": "Farsight Enclaves"}
+BLADE_SWORN_DRONES = {"Gun Drone": 10, "Marker Drone": 15, "Shield Drone": 15}
+BOTH_WEAPONS = ("Paired vibro-blades", "Grav-resonance maul", "Gravitic impact hammer")  # replace pistol and blade
+# "may only include ... if every model in the Detachment has the Sept (X) special rule": no Auxiliaries beside it
+SEPT_ONLY_DETACHMENT = ["Farsight Blade-Sworn Team"]
 
 
 def commanders(b):
@@ -38,11 +43,18 @@ def kroot(d):
     return "Kroot" in d["rules"]  # the Kroot special rule
 
 
+def suited_commanders(b):
+    """The Commanders in an Enforcer, Coldstar or Crisis Battlesuit (Kauyon, Mont'ka): their wargear says so (the
+    Commander's XV8 Crisis suit, which it may upgrade to an XV85 Enforcer or XV86 Coldstar)."""
+    return [n for n in commanders(b)
+            if re.search(r"\b(Crisis|Coldstar|Enforcer)\b", " ".join(map(str, next(d for d in b.datasheets if d["name"] == n)["wargear"])))]
+
+
 WARLORDS = {
     "Hunter Cadre": lambda b: ETHEREALS + ["Cadre Fireblade"],
-    "Kauyon": lambda b: commanders(b) + ["Cadre Fireblade"],
+    "Kauyon": lambda b: suited_commanders(b) + ["Cadre Fireblade"],
     "Kroot Kindred": lambda b: ["Kroot Shaper", "Kroot Master Shaper"],
-    "Mont'ka": lambda b: commanders(b),
+    "Mont'ka": lambda b: suited_commanders(b),
 }
 # Rite: [(unit, slot, may fill a Compulsory Troops slot)]; such a Troops unit gains the Line sub-type
 SLOT_RITES = {
@@ -190,6 +202,40 @@ def apply(b):
         for l in found:
             parent[l].remove(l)
             links_el.append(l)
+
+    # Farsight Blade-Sworn Team: its own drone costs, and the swaps that replace both pistol and vibro-blade
+    bs = unit("Farsight Blade-Sworn Team") if "Farsight Blade-Sworn Team" in b.units else None
+    if bs is not None:
+        for g in bs.findall("selectionEntryGroups/selectionEntryGroup"):
+            if g.get("name") == "Drones":
+                for e in g.findall("selectionEntries/selectionEntry"):
+                    cost = BLADE_SWORN_DRONES.get(e.get("name"))
+                    for c in e.findall("costs/cost"):
+                        if cost is not None:
+                            c.set("value", str(cost))
+        for me in bs.findall("selectionEntries/selectionEntry"):
+            both = [e.get("id") for e in me.iter("selectionEntry") if e.get("name") in BOTH_WEAPONS]
+            blade = next((g for g in me.iter("selectionEntryGroup") if g.get("name") == "Exchange vibro-blade"), None)
+            if blade is None or not both:
+                continue
+            for c in blade.findall("constraints/constraint"):  # the vibro-blade (or its swap) goes with the pistol
+                m = el(child(blade, "modifiers"), "modifier", type="set", field=c.get("id"), value=0)
+                conds = el(el(el(m, "conditionGroups"), "conditionGroup", type="or"), "conditions")
+                for eid in both:
+                    el(conds, "condition", type="atLeast", value=1, field="selections", scope=me.get("id"), childId=eid,
+                       shared=True, includeChildSelections=True, includeChildForces=False)
+
+    # a unit whose Detachment must be all of one Sept: an error beside any Auxiliaries (they have no Sept)
+    aux = sorted({b.units[d["name"]] for d in b.datasheets if any(r.startswith("Auxiliaries") for r in d["rules"])})
+    for n in SEPT_ONLY_DETACHMENT:
+        for l in links:
+            if n in b.units and l.get("targetId") == b.units[n] and aux:
+                cid = add_constraint(l, "max", 1000, make_id(l.get("id"), "no auxiliaries"), scope="force", children=True)
+                m = el(child(l, "modifiers"), "modifier", type="set", field=cid, value=0)
+                conds = el(el(el(m, "conditionGroups"), "conditionGroup", type="or"), "conditions")
+                for a in aux:
+                    el(conds, "condition", type="atLeast", value=1, field="selections", scope="force", childId=a,
+                       shared=True, includeChildSelections=True, includeChildForces=False)
 
     # characters of one Sept: an error in a Detachment of another
     for n, sept in FIXED_SEPT.items():

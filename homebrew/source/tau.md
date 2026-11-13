@@ -351,7 +351,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | 2.0 slot | T'au units |
 |---|---|
 | HQ | Commander, Cadre Fireblade, Ethereal, Aun'Va, Aun'Shi, Commander Farsight, Commander Shadowsun, Kroot Shaper, Shas'o R'alai, Shas'o R'myr, Commander Brightsword, Commander O'Vesa, The Twin Lance, Commander Bravestorm, Commander Sha'vastos, Commander Arra'kon, Sub-commander Torchstar, Kroot Master Shaper, Kroot Flesh Shaper, Kroot Trail Shaper, Kroot War Shaper, Kroot Lone-spear |
-| Elites | Crisis Battlesuits, Crisis Bodyguards, Stealth Battlesuits, Riptide, Ghostkeel, Firesight Marksman, Darkstrider, Kroot Farstalkers, XV9 Hazard Support Team, XV81 Crisis Battlesuits, XV84 Crisis Battlesuits, DX-4 Technical Drones, Ethereal Guard |
+| Elites | Crisis Battlesuits, Crisis Bodyguards, Farsight Blade-Sworn Team, Stealth Battlesuits, Riptide, Ghostkeel, Firesight Marksman, Darkstrider, Kroot Farstalkers, XV9 Hazard Support Team, XV81 Crisis Battlesuits, XV84 Crisis Battlesuits, DX-4 Technical Drones, Ethereal Guard |
 | Troops | Strike Team, Breacher Team, Kroot Carnivores, Gue'vesa Squad |
 | Dedicated Transports | Devilfish |
 | Fast Attack | Pathfinders, Tactical Drones, Piranhas, Vespid Stingwings, Kroot Hounds, Krootox Riders, Sun Shark Bomber, Razorshark Strike Fighter, Tetra Scout Speeders, Remora Stealth Drones, Barracuda, Orca Dropship, Piranha TX-42, Krootox Rampagers, Knarloc Riders |
@@ -1316,6 +1316,68 @@ Crisis Bodyguards may only be taken if the army includes a Commander, Commander 
 | **The unit may take:** |  |
 | – Up to 5 additional Ethereal Guard | +12 points each |
 | – Up to 2 Shield Drones | Drone costs |
+
+#### Farsight Blade-Sworn Team — 135 pts
+
+*Forged in the brutal, close-quarters crucibles of the Arkunasha War and the Arthas Moloch campaigns, the Blade-Sworn are veteran Fire Warriors of the Farsight Enclaves who have abandoned traditional long-range doctrine in favour of the Way of the Short Blade. Clad in reinforced, high-mobility combat armour and armed with Earth Caste-engineered vibro-weapons capable of shearing through ceramite with ultrasonic resonance, they fight alongside Commander Farsight's battlesuit cadres as lethal shock-assault infantry.*
+
+A Detachment may only include one or more Farsight Blade-Sworn Teams if every model in the Detachment has the Sept (Farsight Enclaves) special rule.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Blade-Sworn Shas'la | 6 | 4 | 4 | 3 | 3 | 1 | 4 | 2 | 8 | 4+ | 25mm |
+| Blade-Sworn Shas'ui | 6 | 4 | 4 | 3 | 3 | 1 | 4 | 3 | 9 | 4+ | 25mm |
+
+**Unit Composition**
+
+- 4 Blade-Sworn Shas'la
+- 1 Blade-Sworn Shas'ui
+
+**Wargear**
+
+- EMP grenades
+- Photon grenades
+- Pulse pistol
+- Reinforced combat armour
+- Vibro-blade
+
+**Unit Type**
+
+- Blade-Sworn Shas'la: Infantry
+- Blade-Sworn Shas'ui: Infantry (Character)
+
+**Special Rules**
+
+- Bonding Knife Ritual: the unit may re-roll failed Morale checks
+- Furious Charge (1)
+- Hit & Run
+- Sept (Farsight Enclaves)
+
+Dedicated Transport
+A Farsight Blade-Sworn Team numbering 10 models or fewer (excluding Drones) may take a Devilfish as a Dedicated Transport. This does not use up an additional Force Organisation slot, but its points cost must still be paid.
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Farsight Blade-Sworn Team may take:** |  |
+| – Up to 5 additional Blade-Sworn Shas'la | +22 points each |
+| **Any model may exchange its vibro-blade for one of the following:** |  |
+| – Vibro-axe | free |
+| – Vibro-maul | free |
+| – Vibro-lance | free |
+| **Any model may exchange its pulse pistol and vibro-blade for:** |  |
+| – Paired vibro-blades | +5 points |
+| **For every five models in the unit, one Blade-Sworn Shas'la may exchange its pulse pistol and vibro-blade for one of the following:** |  |
+| – Grav-resonance maul | +10 points |
+| – Gravitic impact hammer | +15 points |
+| **The Blade-Sworn Shas'ui may take:** |  |
+| – Fusion grenades (counts as melta bombs) | +10 points |
+| – Shield generator (5+ Invulnerable Save) | +10 points |
+| **The unit may take up to two drones from:** |  |
+| – Gun, Marker or Shield Drones | Drone costs |
+
+_A Blade-Sworn Team's drones cost +10 points (Gun Drone) or +15 points (Marker or Shield Drone) each, and do not count toward unit size or Transport capacity._
 
 #### Firesight Marksman — 40 pts
 
@@ -2869,6 +2931,16 @@ Tools and micro-fabricators that patch damaged machines in the field.
 
 At the start of your turn, the bearer's unit has It Will Not Die (6+) if it has a Wounds characteristic; a vehicle instead restores one lost Hull Point on a 6+.
 
+#### Repulsor Jet-Pack
+
+*Adapted by Earth Caste engineers of the Farsight Enclaves from Vespid flight-harness stabilizers and miniaturized battlesuit thrusters, the Repulsor Jet-Pack allows close-assault Fire Warriors to bound over defensive barricades, execute hit-and-run thruster hops under fire, and strike alongside Crisis Battlesuit cadres.*
+
+A model equipped with a Repulsor Jet-Pack is subject to the following rules:
+
+- **Jet Pack Mobility:** A unit composed entirely of models equipped with Repulsor Jet-Packs may choose to increase its Movement Characteristic by +6" (increasing the Blade-Sworn's Movement to 12"), move over friendly and enemy models/units, and ignore terrain while moving during the Movement phase. A unit that begins or ends its movement in Dangerous Terrain must still take Dangerous Terrain tests as normal, even when employing Repulsor Jet-Packs, and treats Difficult Terrain as Dangerous Terrain.
+- **Shooting Phase Thrust Move:** In addition to the Movement bonus during the Movement phase, a unit composed entirely of models equipped with Repulsor Jet-Packs may make an additional move of 6" during the Shooting phase. This move must be taken after the unit has completed any Shooting Attacks, is not limited by the weapons fired by that unit during the Shooting phase, and ignores terrain and may move over friendly and enemy models/units in the same manner as moves made using a Repulsor Jet-Pack in the Movement phase. (Note: A unit may not make this 6" Shooting phase move if it made a Run move in the same phase.)
+- **Reaction Boost:** During any Reaction that allows a unit composed entirely of models equipped with Repulsor Jet-Packs to move (such as Reposition or Hammer Strike), increase the distance of that move by +6", and the unit ignores terrain and models in the same manner as other Repulsor Jet-Pack moves.
+
 #### Riptide Shield Generator
 
 The shield projector built into Commander O'Vesa's Riptide.
@@ -2908,6 +2980,12 @@ From the light recon armour of a Pathfinder to the heavy plates of a Broadside b
 The heavily armoured XV88, a walking gun platform.
 
 A Broadside battlesuit confers a 2+ Armour Save and Bulky (4). It does not confer a jet pack.
+
+##### Reinforced Combat Armour
+
+Heavier, high-mobility Fire Warrior combat armour, reinforced by the Earth Caste of the Farsight Enclaves for close assault.
+
+Reinforced combat armour confers a 4+ Armour Save.
 
 ##### Combat Armour
 
@@ -3083,6 +3161,19 @@ The ceremonial weapons of the Ethereal Caste and its guards, and the blades, cla
 | Rampager claws | – | +1 | 4 | Melee, Shred |
 | Ripping fangs | – | User | – | Melee, Rending (6+) |
 | Ritual blade | – | User | 5 | Melee |
+
+##### Vibro-weapons and Gravitic Melee Weapons
+
+Developed by Earth Caste engineers loyal to Commander Farsight, vibro-weapons utilize high-frequency ultrasonic generators to oscillate a hyper-dense alloy edge thousands of times per second. For breaking heavy armour and enemy walkers in close quarters, select Blade-Sworn specialists carry miniaturized grav-inhibitor projectors mounted onto heavy two-handed hafted weapons, crushing targets beneath localized gravitational singularities upon impact.
+
+| Weapon | Range | Str | AP | Type |
+|---|---|---|---|---|
+| Vibro-blade | – | User | 5 | Melee, Rending (5+), Duellist's Edge (1) |
+| Vibro-axe | – | +1 | 5 | Melee, Rending (5+), Unwieldy (1) |
+| Vibro-maul | – | +2 | 5 | Melee, Rending (6+), Concussive (1) |
+| Vibro-lance | – | User | 5 | Melee, Rending (5+), Furious Charge (1), Reach (1) |
+| Paired vibro-blades | – | User | 5 | Melee, Rending (5+), Duellist's Edge (1), Paired Weapons |
+| Grav-resonance maul | – | +2 | 3 | Melee, Two-handed, Unwieldy (2), Concussive (1), Haywire |
 
 #### Ranged Weapons
 
