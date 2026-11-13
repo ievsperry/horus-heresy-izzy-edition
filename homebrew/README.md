@@ -639,6 +639,41 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Allied Detachment, so its Compulsory HQ is a Hierarch or Harbinger. The Anchor Requirement, Distrusted Allies and
   Veil Degradation are rule text only, and so is its addendum The Fading Echo (the Unstable Veil for allied
   Daemons), linked beside it. Ruinstorm could already be taken only by Traitor armies.
+- `python3 homebrew/add_ruinstorm.py` adds the Daemons of the Ruinstorm expansion (kept as `source/ruinstorm.md`) to
+  `2022 - Daemons - Daemons of the Ruinstorm.cat`. Daemons of the Ruinstorm stay Traitor only (the game system's
+  faction entry allows none in a roster with the Loyalist allegiance or a Loyalist Legion). It writes:
+  - the Herald Conclave and Incinerator Swarm (Elites), Warp-Spawn Pack (Troops, a Support Squad), Sky-Ray Pack and
+    Flesh-Reaper Cavalry (Fast Attack), and Soul-Forge Engine and Cataclysm Brute Pack (Heavy Support, hidden in an
+    Allied Detachment like the official Heavy Support), each with the Daemon Unit Type (the Soul-Forge Engine the
+    Corrupted Engine Sub-type) and Traitor, and The Shattered Veil and The Fading Echo where an Allied Detachment
+    may take them. The Warp-Spawn's Warp-Fire Bolts and the Brutes' Empyric Rotary Torrent must be exchanged;
+  - the eight Daemonic Assassins as HQ choices that are not Compulsory HQ and can never be the Warlord, each with
+    its Dominion's category. One is an error unless the Detachment's Ætheric Dominion is its own; under Formless
+    Distortion any one may be taken, and two different ones are an error;
+  - the Ætheric Blessings: every Daemon unit, official and new, may take one, priced per model (the new units'
+    datasheet price; otherwise +5 for 1-Wound models, +15 for 2 to 4 Wounds, +30 for 5 or more). Each shows (and
+    is allowed) only with its own Dominion, or any one under Formless Distortion;
+  - Master of the Ruinstorm on the Ruinstorm Daemon Sovereign and Harbinger, with the Master of the Legion rule
+    linked, and its limit: Sovereigns and Harbingers together, at most one per full 1,000 points of the army's
+    points limit;
+  - the twelve Rites of War in a Rite of War entry (Primary Detachment only). A Rite is an error when the
+    Detachment breaks it: no Sovereign or Harbinger (or Arch-Daemon for the Maw of Annihilation) in it, the wrong
+    Dominion (a Dominion's Rite shows only with it), a barred unit or slot (Lords of War anywhere in the army),
+    too many Heavy Support or too few Troops choices, an Allied Detachment in the army (Phalanx, Maw), or no
+    Herald Conclave and Soul-Forge Engine or Behemoth (Soul-Forge Conclave). Only the Rite's Warlord may be the
+    Warlord (the Hierarch and the Unbound never), with the Blessing, wings or flight, or Ætheric Conduit (Psyker)
+    the Rite names. A Rite gives its extra Troops choices (Line when it allows them as Compulsory Troops) and the
+    Phalanx's Cataclysm Brute Pack as Elites, takes Compulsory Troops from units its list leaves out, drops the
+    Warp-Spawn's Support Squad, raises unit sizes (Lesser Daemons, Daemon Swarms and Warp-Spawn to 20 or 25),
+    takes 1 point per model beyond ten off Swarming Horde units, lets Soul-Forge Engines form squadrons of up to
+    three, takes 5 points per model off Malevolent Artifice Blessings that cost more than 5, and makes every
+    eligible unit take a Dominion Rite's Blessing. "Lesser Daemon Swarms" are both the Lesser Daemons and the
+    Daemon Swarms.
+  Rule text only: every in-game effect, Heedless Slaughter's ranged weapon ban beyond the Warp-Spawn, Incinerators
+  and Cataclysm Brutes, the Screaming Host's flying-units-only rule beyond the ground units it names, Conflagration
+  of Change's Deep Strike rule beyond the Soul-Forge Engine, and the Warlord bar for the LI - Assassins and Agents
+  HQs (Navigator, Lodge Priest, Cults Abominatio), whose entries live in another catalogue. It refuses to run on a
+  catalogue that already has the expansion.
 - `python3 homebrew/add_imperatus_wargear.py` adds the Imperatus Archaeotechnological Relics (Apex Digital Weapon,
   Displacer Matrix, Grav-Wave Generator) to the game system as a one-per-model group the Solar Auxilia Legate
   Marshal may take, and the Imperialis Militia Force Commander may take with the Armoury of Old Night Provenance
