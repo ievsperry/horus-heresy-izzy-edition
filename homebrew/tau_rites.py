@@ -13,7 +13,7 @@ T'au Sept one: shown, but an error in a Detachment of another Sept.
 """
 import re
 
-from build_catalogue import PTS, SLOTS, WARLORD_ENTRY, add_constraint, child, el, make_id
+from build_catalogue import PTS, SLOTS, WARLORD_ENTRY, add_constraint, child, el, make_id, norm
 
 COMPULSORY = next(c for c in SLOTS["Troops"] if c[1] == "Compulsory Troops:")[0]
 
@@ -27,8 +27,9 @@ BOTH_WEAPONS = ("Paired vibro-blades", "Grav-resonance maul", "Gravitic impact h
 SEPT_ONLY_DETACHMENT = ["Farsight Blade-Sworn Team", "Blade-Sworn Cadre Master", "Blade-Sworn Honour Guard Team"]
 BLADE_SWORN = ["Farsight Blade-Sworn Team", "Blade-Sworn Cadre Master", "Blade-Sworn Honour Guard Team"]  # two-weapon swaps
 # units whose drones cost 10/15/15 points
-OWN_DRONE_COSTS = BLADE_SWORN + ["Crisis Bodyguard Team", "Fireblade Honour Guard Team", "Ethereal Honour Guard"]
-JET_PACK_TEAMS = ["Farsight Blade-Sworn Team", "Blade-Sworn Honour Guard Team"]  # no Devilfish with Repulsor Jet-Packs
+OWN_DRONE_COSTS = BLADE_SWORN + ["Crisis Bodyguard Team", "Fireblade Honour Guard Team", "Ethereal Honour Guard",
+                                 "Royal Guard Team"]
+JET_PACK_TEAMS = ["Farsight Blade-Sworn Team", "Blade-Sworn Honour Guard Team", "Royal Guard Team"]  # no Devilfish with Repulsor Jet-Packs
 # Retinue Squads: the squad and who may take it (no Force Organisation slot; one in the leader's own entry)
 RETINUES = {
     "Crisis Bodyguard Team": lambda b: [d["name"] for d in b.datasheets if "Cadre Commander" in d["rules"] and battlesuit(d)],
@@ -38,7 +39,145 @@ RETINUES = {
     "Blade-Sworn Honour Guard Team": lambda b: ["Blade-Sworn Cadre Master", "Commander Farsight"],
 }
 ALSO_OWN_SLOT = ["Crisis Bodyguards"]  # a Retinue Squad that may also be taken as its own Elites choice
-FARSIGHT_OPTIONS = {"Crisis Bodyguard Team": ["Fusion blades", "Onager gauntlet"]}  # Farsight Enclaves only
+# Sept wargear: unit -> {option: the Septs that may take it}; None is experimental wargear (any Sept). An option is
+# hidden, and an error if taken, outside its Septs.
+SEPT_WARGEAR = {'Blade-Sworn Cadre Master': {'Talisman of Arthas Moloch': ['Farsight Enclaves']},
+ 'Breacher Team': {'Grav-resonance maul': ["Kyu'shan"],
+                   'Sashimono holo-banner': ["Kyu'shan"],
+                   'Urban breacher shield': ["Sa'cea"],
+                   'Vibro-blade': ["Kyu'shan"],
+                   'Vibro-lance': ["Kyu'shan"]},
+ 'Broadside Battlesuits': {'Experimental nova-shield': ["Bork'an"],
+                           'Harmonic aegis projector': ["Kyu'shan"],
+                           "Multi-spectrum sensor suite (Sa'cea)": ["Sa'cea"],
+                           'Null-signature array': ["Dal'yth"],
+                           'Overcharged plasma accelerator': ["Bork'an"],
+                           'Stabilized fire-control uplink': ["Sa'cea"]},
+ 'Cadre Fireblade': {'Chrono-harmonic scrambler field': None,
+                     "Command-link drone (T'au Sept)": ["T'au Sept"],
+                     'Dynamic mirror-field': ["Dal'yth"],
+                     'Experimental sub-munition rail-carbine': None,
+                     'Grav-resonance maul': ["Kyu'shan"],
+                     'Gravitic impact hammer': ['Farsight Enclaves'],
+                     'Harmonic aegis projector': ["Kyu'shan"],
+                     'High-capacity pulse drum': ["Vior'la"],
+                     'Paired vibro-blades': ['Farsight Enclaves'],
+                     "Puretide engram neurochip (T'au Sept)": ["T'au Sept"],
+                     'Repulsor jet-pack': ['Farsight Enclaves', "Kyu'shan"],
+                     'Seeker-suite targeter': ["Bork'an"],
+                     'Tactical telemetry relay-array': None,
+                     'Talisman of Arthas Moloch': ['Farsight Enclaves'],
+                     'Urban breacher shield': ["Sa'cea"],
+                     'Vibro-axe': ['Farsight Enclaves'],
+                     'Vibro-blade': ["Kyu'shan", 'Farsight Enclaves'],
+                     'Vibro-lance': ["Kyu'shan"],
+                     'Vibro-maul': ['Farsight Enclaves']},
+ 'Commander': {'Chrono-harmonic scrambler field': None,
+               "Command-link drone (T'au Sept)": ["T'au Sept"],
+               'Dynamic mirror-field': ["Dal'yth"],
+               'Experimental nova-shield': ["Bork'an"],
+               'Experimental sub-munition rail-carbine': None,
+               'Fusion blades': ['Farsight Enclaves'],
+               'Grav-resonance maul': ["Kyu'shan"],
+               'Harmonic aegis projector': ["Kyu'shan"],
+               "Multi-spectrum sensor suite (Sa'cea)": ["Sa'cea"],
+               'Onager gauntlet': ['Farsight Enclaves'],
+               'Oni battlesuit cleaver': ["Kyu'shan"],
+               'Overcharged plasma accelerator': ["Bork'an"],
+               "Puretide engram neurochip (T'au Sept)": ["T'au Sept"],
+               'Quantum-phase blink projector': None,
+               'Seeker-suite targeter': ["Bork'an"],
+               'Stabilized fire-control uplink': ["Sa'cea"],
+               'Stealth-drone controller': ["Dal'yth"],
+               'Sub-orbital thruster pack': ["Vior'la"],
+               'Tactical telemetry relay-array': None,
+               'Talisman of Arthas Moloch': ['Farsight Enclaves'],
+               'Thermoneutronic projector': ["Vior'la"],
+               'Vector-lock retro-thrusters': ["T'au Sept"],
+               'Vibro-blade': ["Kyu'shan"],
+               'Vibro-lance': ["Kyu'shan"]},
+ 'Crisis Battlesuits': {'Dynamic mirror-field': ["Dal'yth"],
+                        'Experimental nova-shield': ["Bork'an"],
+                        'Experimental sub-munition rail-carbine': None,
+                        'Harmonic aegis projector': ["Kyu'shan"],
+                        "Multi-spectrum sensor suite (Sa'cea)": ["Sa'cea"],
+                        'Onager gauntlet': ['Farsight Enclaves'],
+                        'Oni battlesuit cleaver': ["Kyu'shan"],
+                        'Overcharged plasma accelerator': ["Bork'an"],
+                        'Seeker-suite targeter': ["Bork'an"],
+                        'Stabilized fire-control uplink': ["Sa'cea"],
+                        'Sub-orbital thruster pack': ["Vior'la"],
+                        'Thermoneutronic projector': ["Vior'la"],
+                        'Vector-lock retro-thrusters': ["T'au Sept"]},
+ 'Crisis Bodyguard Team': {'Experimental nova-shield': ["Bork'an"],
+                           'Experimental sub-munition rail-carbine': None,
+                           'Fusion blades': ['Farsight Enclaves'],
+                           'Onager gauntlet': ['Farsight Enclaves'],
+                           'Oni battlesuit cleaver': ["Kyu'shan"],
+                           'Stabilized fire-control uplink': ["Sa'cea"],
+                           'Sub-orbital thruster pack': ["Vior'la"],
+                           'Thermoneutronic projector': ["Vior'la"],
+                           'Vector-lock retro-thrusters': ["T'au Sept"]},
+ 'Crisis Bodyguards': {'Experimental nova-shield': ["Bork'an"],
+                       'Experimental sub-munition rail-carbine': None,
+                       'Fusion blades': ['Farsight Enclaves'],
+                       'Onager gauntlet': ['Farsight Enclaves'],
+                       'Oni battlesuit cleaver': ["Kyu'shan"],
+                       'Stabilized fire-control uplink': ["Sa'cea"],
+                       'Sub-orbital thruster pack': ["Vior'la"],
+                       'Thermoneutronic projector': ["Vior'la"],
+                       'Vector-lock retro-thrusters': ["T'au Sept"]},
+ 'Devilfish': {'Null-signature array': ["Dal'yth"]},
+ 'Ethereal': {'Chrono-harmonic scrambler field': None,
+              "Command-link drone (T'au Sept)": ["T'au Sept"],
+              'Dynamic mirror-field': ["Dal'yth"],
+              'Harmonic aegis projector': ["Kyu'shan"],
+              "Puretide engram neurochip (T'au Sept)": ["T'au Sept"],
+              'Repulsor jet-pack': ["Kyu'shan"],
+              'Tactical telemetry relay-array': None},
+ 'Ethereal Honour Guard': {'Grav-resonance maul': ["Kyu'shan"],
+                           'Vibro-blade': ["Kyu'shan"],
+                           'Vibro-lance': ["Kyu'shan"]},
+ 'Fireblade Honour Guard Team': {'Grav-resonance maul': ["Kyu'shan"],
+                                 'Repulsor jet-pack': ["Kyu'shan"],
+                                 'Sashimono holo-banner': ["Kyu'shan"],
+                                 'Urban breacher shield': ["Sa'cea"],
+                                 'Vibro-blade': ["Kyu'shan"],
+                                 'Vibro-lance': ["Kyu'shan"]},
+ 'Ghostkeel': {'Dynamic mirror-field': ["Dal'yth"],
+               'Experimental nova-shield': ["Bork'an"],
+               'Stealth-drone controller': ["Dal'yth"],
+               'Vector-lock retro-thrusters': ["T'au Sept"]},
+ 'Hammerhead Gunship': {'Null-signature array': ["Dal'yth"],
+                        'Overcharged plasma accelerator': ["Bork'an"],
+                        'Stabilized fire-control uplink': ["Sa'cea"]},
+ 'Pathfinders': {'Grav-resonance maul': ["Kyu'shan"],
+                 'High-capacity pulse drum': ["Vior'la"],
+                 "Multi-spectrum sensor suite (Sa'cea)": ["Sa'cea"],
+                 'Seeker-suite targeter': ["Bork'an"],
+                 'Stealth-drone controller': ["Dal'yth"],
+                 'Vibro-blade': ["Kyu'shan"],
+                 'Vibro-lance': ["Kyu'shan"]},
+ 'Piranhas': {'Null-signature array': ["Dal'yth"]},
+ 'Riptide': {'Overcharged plasma accelerator': ["Bork'an"], 'Stabilized fire-control uplink': ["Sa'cea"]},
+ 'Sky Ray Gunship': {'Null-signature array': ["Dal'yth"], 'Stabilized fire-control uplink': ["Sa'cea"]},
+ 'Stealth Battlesuits': {'Dynamic mirror-field': ["Dal'yth"],
+                         'Seeker-suite targeter': ["Bork'an"],
+                         'Stealth-drone controller': ["Dal'yth"],
+                         'Thermoneutronic projector': ["Vior'la"],
+                         'Vector-lock retro-thrusters': ["T'au Sept"]},
+ 'Strike Team': {'Grav-resonance maul': ["Kyu'shan"],
+                 'High-capacity pulse drum': ["Vior'la"],
+                 'Sashimono holo-banner': ["Kyu'shan"],
+                 'Urban breacher shield': ["Sa'cea"],
+                 'Vibro-blade': ["Kyu'shan"],
+                 'Vibro-lance': ["Kyu'shan"]}}
+# "Limit 1 per Detachment"
+ONE_PER_DETACHMENT = ["Puretide engram neurochip (T'au Sept)", "Onager gauntlet", "Talisman of Arthas Moloch",
+                      "Quantum-phase blink projector", "Experimental sub-munition rail-carbine",
+                      "Chrono-harmonic scrambler field", "Tactical telemetry relay-array"]
+# 0-1 per Detachment, any number when every model in it has one of these Septs
+LIMITED_UNLESS_SEPT = {"Royal Guard Team": ["Kyu'shan", "Farsight Enclaves"]}
 ONE_PER_UNIT = {"Crisis Bodyguard Team": ["Onager gauntlet"]}
 
 
@@ -72,18 +211,24 @@ WARLORDS = {
     "Kauyon": lambda b: suited_commanders(b) + ["Cadre Fireblade", "Blade-Sworn Cadre Master"],
     "Kroot Kindred": lambda b: ["Kroot Shaper", "Kroot Master Shaper"],
     "Mont'ka": lambda b: suited_commanders(b),
+    "Host of the Jade Throne": lambda b: [n for n in commanders(b) + ["Cadre Fireblade"]
+                                          if "Cadre Commander" in next(d for d in b.datasheets if d["name"] == n)["rules"]],
 }
+SEPT_RITES = {"Host of the Jade Throne": "Kyu'shan"}  # the Rite's Detachment must be of this Sept
+MAX_SLOTS = {"Host of the Jade Throne": {"Heavy Support": 1}}  # at most this many choices of a slot
 # Rite: [(unit, slot, may fill a Compulsory Troops slot)]; such a Troops unit gains the Line sub-type
 SLOT_RITES = {
     "Kauyon": [("Pathfinders", "Troops", True)],
     "Kroot Kindred": [("Kroot Hounds", "Troops", True), ("Krootox Riders", "Troops", True)],
     "Mont'ka": [("Crisis Battlesuits", "Troops", True)],
+    "Host of the Jade Throne": [("Crisis Battlesuits", "Troops", False)],
 }
 LINE = {"Kroot Kindred": ["Kroot Carnivores"]}  # Troops already, Line when filling the compulsory slot
 COMPULSORY_ONLY = {
     "Kauyon": ["Strike Team", "Pathfinders"],
     "Kroot Kindred": ["Kroot Carnivores", "Kroot Hounds", "Krootox Riders"],
     "Mont'ka": ["Crisis Battlesuits", "Breacher Team"],
+    "Host of the Jade Throne": ["Strike Team", "Breacher Team"],
 }
 SIZES = {"Kroot Kindred": [("Kroot Carnivores", 30)]}
 MORE_DRONES = {"Hunter Cadre": ["Strike Team", "Breacher Team"]}  # one Marker Drone above the drone limit
@@ -98,6 +243,8 @@ def bans(b, name):
     if name == "Kroot Kindred":  # no battlesuits but Stealth Battlesuits, no T'au vehicles, Lords of War or Fortifications
         return [d["name"] for d in ds if battlesuit(d) and d["name"] != "Stealth Battlesuits"] + \
                [d["name"] for d in ds if vehicle(d)] + T_AU_SKIMMERS + slot("Lords of War") + slot("Fortifications")
+    if name == "Host of the Jade Throne":  # no Kroot or Vespid; no Fortifications
+        return [d["name"] for d in ds if kroot(d) or d["name"].startswith("Vespid")] + slot("Fortifications")
     if name == "Mont'ka":  # Heavy Support only Broadsides; no Kroot or Vespid; no Fortifications
         return [n for n in slot("Heavy Support") if n != "Broadside Battlesuits"] + \
                [d["name"] for d in ds if kroot(d) or d["name"].startswith("Vespid")] + slot("Fortifications")
@@ -113,6 +260,8 @@ def grants(b, name):
         return {"Infiltrate": k, "Scout": k}  # Move Through Cover and +1 Attack on the charge are in Kroot
     if name == "Mont'ka":
         return {"Deep Strike": ["Crisis Battlesuits"] + commanders(b)}
+    if name == "Host of the Jade Throne":
+        return {"Heart of the Cadre": ["Crisis Battlesuits"]}
     return {}
 
 
@@ -195,6 +344,20 @@ def apply(b):
                 b.rite_condition(el(child(l, "modifiers"), "modifier", type="set", field="hidden", value="true"), rid)
         if barred:
             error(rite, "bans", sorted({b.units[n] for n in barred}))
+        if name in SEPT_RITES:  # hidden, and an error, unless the Detachment is of the Rite's Sept
+            sid = make_id("fleet", b.faction, SEPT_RITES[name])
+            entry = b.root.find(f"selectionEntries/selectionEntry//selectionEntry[@id='{rid}']")
+            cid = add_constraint(entry, "max", 1, make_id(rid, "tau sept"))
+            for field, value in (("hidden", "true"), (cid, 0)):
+                m = el(child(entry, "modifiers"), "modifier", type="set", field=field, value=value)
+                el(el(m, "conditions"), "condition", type="lessThan", value=1, field="selections", scope="force",
+                   childId=sid, shared=True, includeChildSelections=True, includeChildForces=False)
+        for slot, most in MAX_SLOTS.get(name, {}).items():
+            entry = b.root.find(f"selectionEntries/selectionEntry//selectionEntry[@id='{rid}']")
+            cid = add_constraint(entry, "max", 1, make_id(rid, "tau max", slot))
+            m = el(child(entry, "modifiers"), "modifier", type="set", field=cid, value=0)
+            el(el(m, "conditions"), "condition", type="greaterThan", value=most, field="selections", scope="force",
+               childId=SLOTS[slot][0][0], shared=True, includeChildSelections=True, includeChildForces=False)
         only = COMPULSORY_ONLY.get(name)
         if only:
             for l in links:
@@ -259,28 +422,37 @@ def apply(b):
                        scope=b.units[n], childId=pack.get("id"), shared=True,
                        includeChildSelections=True, includeChildForces=False)
     # options of one Sept, and options one per unit
-    fs = make_id("fleet", b.faction, "Farsight Enclaves")
-    for n, names in FARSIGHT_OPTIONS.items():
-        for e in (unit(n).iter() if n in b.units else []):
-            if e.tag in ("selectionEntry", "entryLink") and e.get("name") in names:
-                cid = add_constraint(e, "max", 0, make_id(e.get("id"), "farsight only"), scope="force", children=True)
-                m = el(child(e, "modifiers"), "modifier", type="set", field=cid, value=-1)
-                el(el(m, "conditions"), "condition", type="atLeast", value=1, field="selections", scope="force",
-                   childId=fs, shared=True, includeChildSelections=True, includeChildForces=False)
+    for n, opts in SEPT_WARGEAR.items():
+        if n not in b.units:
+            b.problems.append(f"Sept wargear: no unit '{n}'")
+            continue
+        wanted = {norm(k): v for k, v in opts.items()}
+        found = set()
+        for e in unit(n).iter():
+            if e.tag not in ("selectionEntry", "entryLink") or norm(e.get("name", "")) not in wanted:
+                continue
+            septs = wanted[norm(e.get("name"))]
+            found.add(norm(e.get("name")))
+            if septs is None:
+                continue
+            ids = [make_id("fleet", b.faction, s_) for s_ in septs]
+            cid = add_constraint(e, "max", 0, make_id(e.get("id"), "sept wargear"), scope="force", children=True)
+            for field, value, kind in ((cid, -1, "or"), ("hidden", "true", "and")):
+                m = el(child(e, "modifiers"), "modifier", type="set", field=field, value=value)
+                conds = el(el(el(m, "conditionGroups"), "conditionGroup", type=kind), "conditions")
+                for sid in ids:
+                    el(conds, "condition", type="atLeast" if kind == "or" else "lessThan", value=1, field="selections",
+                       scope="force", childId=sid, shared=True, includeChildSelections=True, includeChildForces=False)
+        for k in set(wanted) - found:
+            b.problems.append(f"Sept wargear: '{k}' not found in {n}")
+    for name in ONE_PER_DETACHMENT:  # one model in the Detachment
+        for e in b.shared_entries:
+            if norm(e.get("name", "")) == norm(name):
+                add_constraint(e, "max", 1, make_id(e.get("id"), "one per detachment"), scope="force", children=True)
     for n, names in ONE_PER_UNIT.items():
         for e in (unit(n).iter() if n in b.units else []):
             if e.tag in ("selectionEntry", "entryLink") and e.get("name") in names:
                 add_constraint(e, "max", 1, make_id(e.get("id"), "one per unit"), scope=b.units[n], children=True)
-    # a Cadre Fireblade's Repulsor Jet-Pack: Farsight Enclaves only
-    fb = unit("Cadre Fireblade") if "Cadre Fireblade" in b.units else None
-    fsid = make_id("fleet", b.faction, "Farsight Enclaves")
-    for l in (fb.iter("entryLink") if fb is not None else []):
-        if l.get("name", "").lower().startswith("repulsor jet-pack"):
-            cid = add_constraint(l, "max", 0, make_id(l.get("id"), "farsight only"), scope="force", children=True)
-            m = el(child(l, "modifiers"), "modifier", type="set", field=cid, value=-1)
-            el(el(m, "conditions"), "condition", type="atLeast", value=1, field="selections", scope="force",
-               childId=fsid, shared=True, includeChildSelections=True, includeChildForces=False)
-
     # Retinue Squads: no Force Organisation slot; a "Retinue" choice (one squad) in each leader's own entry
     retinue_ids = {b.units[n] for n in RETINUES if n in b.units}
     for n in RETINUES:  # a Retinue Squad's characters are bodyguards, not Warlords
@@ -351,6 +523,31 @@ def apply(b):
                           id=lid, type="selectionEntry", targetId=eid)
                 add_constraint(link, "min", 1, lid + "min")
                 add_constraint(link, "max", 1, lid + "max")
+
+    # 0-1 per Detachment, unless every model in it has one of the Septs (no Auxiliaries beside them)
+    for n, septs in LIMITED_UNLESS_SEPT.items():
+        for l in all_links:
+            if n not in b.units or l.get("targetId") != b.units[n]:
+                continue
+            cid = add_constraint(l, "max", 1, make_id(l.get("id"), "limited"), scope="force", children=True)
+            m = el(child(l, "modifiers"), "modifier", type="set", field=cid, value=-1)
+            g = el(el(m, "conditionGroups"), "conditionGroup", type="and")
+            for a_ in aux:
+                el(child(g, "conditions"), "condition", type="lessThan", value=1, field="selections", scope="force",
+                   childId=a_, shared=True, includeChildSelections=True, includeChildForces=False)
+            og = el(child(g, "conditionGroups"), "conditionGroup", type="or")
+            for sept in septs:
+                el(child(og, "conditions"), "condition", type="atLeast", value=1, field="selections", scope="force",
+                   childId=make_id("fleet", b.faction, sept), shared=True, includeChildSelections=True,
+                   includeChildForces=False)
+
+    # every Drone has Saviour Protocols
+    for e in b.shared_entries.iter("selectionEntry"):
+        if e.get("type") == "model" and re.search(r"\bDrones?$", e.get("name", "")) and \
+                not any(norm(i.get("name", "")) == norm("Saviour Protocols") for i in e.findall("infoLinks/infoLink")):
+            if not b.link_rule(e, "Saviour Protocols", e.get("id") + "saviour"):
+                b.problems.append("no Saviour Protocols rule")
+                break
 
     # characters of one Sept: an error in a Detachment of another
     for n, sept in FIXED_SEPT.items():

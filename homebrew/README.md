@@ -266,12 +266,22 @@ loading. The script prints anything in the doc it could not place.
   category (which a rule link cannot reach): it adds a shared copy of the rule to the file that defines it and
   links that, or links a reachable shared rule of the same name. The builder does not offer the shared copies of
   rules a category carries (Independent Character, Line Sub-type): homebrew units get the category.
-- T'au Empire: four Rites of War (Hunter Cadre, Kauyon, Kroot Kindred, Mont'ka) in the long Prerequisites/Effects/
+- T'au Empire: five Rites of War (Hunter Cadre, Kauyon, Kroot Kindred, Mont'ka, Host of the Jade Throne) in the long Prerequisites/Effects/
   Limitations form, made by tau_rites.py from unit lists (the builder's reading of them is cleared): who may be the
   Warlord (Cadre Commander, on the Commander, the named Commanders and Shas'o, the Cadre Fireblade and the Ethereals,
   counts as Master of the Legion for it), the slots and Line, Kroot Carnivores up to 30, the rules granted, the bans,
   the compulsory Troops and one more drone for Strike and Breacher Teams under Hunter Cadre. Commander Farsight
   (Farsight Enclaves) and Commander Shadowsun and Aun'Va (T'au Sept) are an error in a Detachment of another Sept.
+  Host of the Jade Throne shows only in a Sept Kyu'shan Detachment (an error elsewhere), needs a Commander or Cadre
+  Fireblade with Cadre Commander as Warlord, lets Crisis Battlesuits be non-Compulsory Troops with Heart of the
+  Cadre, bars Kroot, Vespid and Fortifications, allows one Heavy Support choice and takes Compulsory Troops only from
+  Strike and Breacher Teams.
+  Sept wargear (tau_rites.py SEPT_WARGEAR): each Sept's items, and the Kyu'shan and Farsight vibro-weapons, are
+  options on the datasheets the doc names, hidden and an error outside their Septs; the experimental Earth Caste
+  wargear is open to every Sept. "Limit 1 per Detachment" items (ONE_PER_DETACHMENT) are one per force. The Royal
+  Guard Team is 0-1 per Detachment, or any number when the Detachment is Sept Kyu'shan or Farsight Enclaves with no
+  Auxiliaries (LIMITED_UNLESS_SEPT); its drones cost 10/15/15 and its Repulsor jet-packs bar its Devilfish. Every
+  Drone model has Saviour Protocols.
   The Kroot special rule is on every Kroot datasheet; its Evolutionary Adaptations are a pick of one, +2 points per
   model, on the Kroot squads.
   Kauyon and Mont'ka need a Commander whose wargear is a Crisis, Coldstar or Enforcer battlesuit (the Commander,
@@ -279,7 +289,7 @@ loading. The script prints anything in the doc it could not place.
   an error beside Auxiliaries; its drones cost 10/15/15, and paired vibro-blades, the grav-resonance maul and the
   gravitic impact hammer replace both its pulse pistol and vibro-blade. Repulsor jet-packs for the whole Team bar its
   Devilfish. The Blade-Sworn Cadre Master (HQ) has the same locks, drone costs and swaps, and may lead Hunter Cadre
-  and Kauyon as the Cadre Fireblade does; a Cadre Fireblade's Repulsor jet-pack is Farsight Enclaves only.
+  and Kauyon as the Cadre Fireblade does; a Cadre Fireblade's Repulsor jet-pack is Farsight Enclaves or Kyu'shan only.
   Commander Farsight's XV-86 Supernova counts as a Coldstar for Kauyon and Mont'ka.
   Cadre Commander is Master of the Legion: like the Legiones Astartes catalogue's Master of the Legion entry, it is
   a 0-point upgrade every Cadre Commander model must take, at most one per full 1,000 points of the roster.
@@ -288,7 +298,7 @@ loading. The script prints anything in the doc it could not place.
   Force Organisation slot: each eligible Cadre Commander has a "Retinue" choice (one squad) in its own entry, and the
   squads have no choice of their own (tau_rites.py RETINUES), but the Crisis Bodyguards, which may also be taken as
   an Elites choice (ALSO_OWN_SLOT). Their drones cost 10/15/15; the Crisis Bodyguards'
-  fusion blades and Onager gauntlet (one per unit) are Farsight Enclaves only; the Blade-Sworn Honour Guard are
+  fusion blades and Onager gauntlet (one per unit, and one per Detachment) are Farsight Enclaves only; the Blade-Sworn Honour Guard are
   Farsight Enclaves only, with the Blade-Sworn swaps and no Devilfish with Repulsor jet-packs. A Retinue Squad's
   characters have no Warlord choice. The Ethereal Honour Guard carry the Covenant blade
   (+2, AP 4, Two-handed, Rending (5+), Reach (1)); the Honour blade keeps its own profile.
