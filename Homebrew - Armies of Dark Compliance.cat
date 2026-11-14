@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="a59b-3ebb-8cd4-386c" name="Homebrew - Armies of Dark Compliance" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="a59b-3ebb-8cd4-386c" name="Homebrew - Armies of Dark Compliance" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue" authorName="Isaac">
   <entryLinks>
     <entryLink import="false" name="Army of Dark Compliance" hidden="false" id="20f5-e37b-4574-86ab" type="selectionEntry" targetId="12cc-71f9-31de-349a">
       <modifiers>
@@ -1766,6 +1766,20 @@
         </entryLink>
       </entryLinks>
       </entryLink>
+    <entryLink import="true" name="Corrupted Clade Assassins" hidden="false" id="8ac8-8bb9-2197-9d60" type="selectionEntry" targetId="4d91-89dd-5016-6439">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>Agents of the Warmaster: Traitor Detachments only</comment>
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7475-e849-f0e4-3002" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="278d-3188-cf92-8862" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="ba1d-0bea-2bef-6ad1" name="Apothecarion Detachment" hidden="false" collective="false" import="false" targetId="81df-ffd4-a32b-b4a1" type="selectionEntry">
       <comment>template_id_c2bc-2985-468b-b512</comment>
       <infoLinks>
@@ -3475,6 +3489,25 @@
         <entryLink id="202b-5837-a7cb-ec7c" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="9c74-1002-8103-2848" type="selectionEntryGroup">
           </entryLink>
       </entryLinks>
+      </entryLink>
+    <entryLink id="e7d2-8468-258c-8688" name="Saturnine Command Squad" hidden="false" collective="false" import="false" targetId="3156-70ea-9ed1-3574" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="The Warmaster's Due" id="ebd7-6b6c-4ad7-1a8a" hidden="false" targetId="640a-b320-41c3-0571" type="rule"/>
+      </infoLinks>
+    <categoryLinks>
+        <categoryLink id="60ba-c5ab-f998-a10c" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+          </categoryLink>
+        <categoryLink id="f887-693b-c41c-59cc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          </categoryLink>
+      </categoryLinks>
       </entryLink>
     <entryLink id="6dd7-6001-7df5-afae" name="Praetor, Tartaros" hidden="false" collective="false" import="false" targetId="3760-204e-444c-1044" type="selectionEntry">
       <comment>template_id_e95d-4a2f-45c3-b44e</comment>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c01b-0224-f806-0d23" name="Titan Legions" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c01b-0224-f806-0d23" name="Titan Legions" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <forceEntries>
     <forceEntry id="aebe-bed9-b32f-a8ea" name="0. Titan Maniple" hidden="false">
       <categoryLinks>
@@ -400,6 +400,20 @@ Effect: Until the end of that Shooting Attack, the reacting Titan's active Void 
         <categoryLink id="797c-aa4a-4e17-de51" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="a22a-8db6-21e8-6fea" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="cfe0-dfa9-54d0-ff77" name="Titan Legion Min Troop/LoW" hidden="false" targetId="4086-0589-f010-e688" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Corrupted Clade Assassins" hidden="false" id="e6ae-455f-a1f0-a3d6" type="selectionEntry" targetId="4d91-89dd-5016-6439">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>Agents of the Warmaster: Traitor Detachments only</comment>
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="49e5-4726-3822-6c71" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="8778-aaa8-8037-269f" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
