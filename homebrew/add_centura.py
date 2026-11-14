@@ -1043,6 +1043,42 @@ def per_model_fixes():
     return n
 
 
+def standard_wargear_free():
+    """Wargear a datasheet lists as standard is in its points, but an entry link with no cost of its own takes the
+    target's: Artellus Numeon's Mantle of the Elder Drake links the official Mantle, a 25-point upgrade, so he cost
+    230 points instead of 205. Every required wargear link on the doc's datasheets whose target has a points cost
+    gets a cost of 0."""
+    C = et.NS["cat"]
+    names = {re.sub(r"^0-\d+ ", "", m) for m in re.findall(r"^#{3,4} (.+?) — \d+ pts$", doc(), re.M)}
+    priced = {}
+    for f in [LIBRARY] + [legion_file(lg) for lg, _ in legion_sections()] + am.LIBS:
+        for e in ET.parse(f).getroot().iter(C + "selectionEntry"):
+            pts = sum(float(c.get("value")) for c in e.findall(f"{C}costs/{C}cost") if c.get("typeId") == bc.PTS)
+            if pts:
+                priced.setdefault(e.get("id"), pts)
+    n = 0
+    for f in dict.fromkeys([LIBRARY] + [legion_file(lg) for lg, _ in legion_sections()]):
+        cat = et.Text(f)
+        root = ET.fromstring(cat.s.encode("utf-8"))
+        free = []
+        for u in root.iter(C + "selectionEntry"):
+            if u.get("type") != "unit" or u.get("name") not in names:
+                continue
+            for l in u.iter(C + "entryLink"):
+                required = any(c.get("type") == "min" and c.get("scope") == "parent" and float(c.get("value")) >= 1
+                               for c in l.findall(f"{C}constraints/{C}constraint"))
+                if required and l.find(C + "costs") is None and l.get("targetId") in priced:
+                    free.append(l.get("id"))
+        for lid in free:
+            cost = et.E("cost", name="Pts", typeId=bc.PTS, value=0)
+            cat.add(lid, "costs", [cost])
+            n += 1
+        if free:
+            cat.bump("catalogue")
+            cat.save()
+    return n
+
+
 def main():
     setup()
     if 'name="Legion Indomitus Praetor"' in open(LIBRARY, encoding="utf-8").read():
@@ -1069,11 +1105,15 @@ def main():
     print(f"Magma Plating: on {magma_plating()} vehicles")
     print(f"Saturnine Centurion Consularis: {saturnine_consularis()}")
     print(f"Per-model options: {per_model_fixes()} fixed")
+    print(f"Standard wargear made free: {standard_wargear_free()} links")
 
 
 if __name__ == "__main__" and sys.argv[1:2] == ["--per-model-fixes"]:
     setup()
     print(f"Per-model options: {per_model_fixes()} fixed")
+elif __name__ == "__main__" and sys.argv[1:2] == ["--standard-wargear"]:
+    setup()
+    print(f"Standard wargear made free: {standard_wargear_free()} links")
 elif __name__ == "__main__" and sys.argv[1:2] == ["--legion-check"]:
     setup()
     for legion, sec in legion_sections():
