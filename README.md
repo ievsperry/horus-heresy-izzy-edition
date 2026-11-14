@@ -10,7 +10,7 @@ army lists, applies the Liber FAQs and errata, and adds:
 - **14 homebrew armies**, from Adepta Sororitas to Tyranids;
 - **expansions to the official armies**: new units, Rites of War, Advanced Reactions and Warlord Traits for the
   Daemons of the Ruinstorm, Titan Legions, Sisters of Silence, Solar Auxilia, Imperialis Militia, Mechanicum, Legio
-  Custodes and the Legiones Astartes;
+  Custodes and the Legiones Astartes, and Corrupted Clade Assassins for Traitor armies;
 - **house rules** that apply to every list.
 
 It is maintained by the community for personal, non-commercial play, and is in no way endorsed by Games Workshop,
@@ -79,6 +79,7 @@ These docs add to an official catalogue rather than making a new one.
 | Daemons of the Ruinstorm: new units, Daemonic Assassins, Ætheric Blessings, Rites of War | Daemons of the Ruinstorm | `ruinstorm.md` | `add_ruinstorm.py` |
 | Ætheric Dominions, Advanced Reactions and Ruinstorm Warlord Traits | Daemon Library (every army that picks a Dominion), Daemons of the Ruinstorm | `ruinstorm.md` | `apply_ruinstorm_dominions.py` |
 | Titan Legions: Moderati, Enginseers, Ballistarii, Titan Maniple, Rites of War | Titan Legions, Mech Library | `titan-legions.md` | `add_titan_legions.py` |
+| Agents of the Warmaster: Corrupted Clade Assassins for Traitor Detachments | LI - Assassins and Agents, linked from every army that can take the Cults Abominatio | `corrupted-assassins.md` | `add_corrupted_assassins.py` |
 | Sisters of Silence (Liber Imperatus) | LI - Sisters of Silence | `sisters-of-silence.md` | `add_sisters_of_silence.py` |
 | Solar Auxilia (Liber Imperatus) | LI - Solar Auxilia | `solar-auxilia.md` | `add_solar_auxilia.py` |
 | Imperialis Militia (Liber Imperatus) | Imperialis Militia | `imperialis-militia.md` | `add_imperialis_militia.py` |
