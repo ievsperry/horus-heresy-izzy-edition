@@ -3407,6 +3407,7 @@ class Builder:
             return None
 
         pools = []
+        priced = {}  # pool index -> the prices of members "(+N points each)"
         for line in ds["composition"]:
             pm = re.match(r"(\d+)(?:-(\d+))? models chosen from (.+)$", line)
             if pm:
@@ -3432,6 +3433,7 @@ class Builder:
                         members[who] = int(um.group(1) or um.group(2)) if um else total
                         if pc:
                             models[who]["cost"] = int(pc.group(1))  # each bought at its own price
+                            priced.setdefault(len(pools), []).append(int(pc.group(1)))
                 for n, cap in members.items():
                     models[n]["pool"], models[n]["pool_max"], models[n]["max"] = len(pools), cap, cap
                 pools.append((total, most, list(members)))
@@ -3663,6 +3665,10 @@ class Builder:
         # Unit-level costs: the unit carries the listed points minus what its starting models
         # cost, so the starting unit always totals the doc's points.
         base = ds["points"] - sum(m["min"] * m["cost"] for m in models.values() if not m["replaces"])
+        # "1-7 models chosen from up to 3 Meks (+55 points each), ...": the doc's points are the cheapest
+        # unit, the fewest models at the lowest price, so those are not charged again on the unit
+        for i, prices in priced.items():
+            base -= pools[i][0] * min(prices)
         # "4 drones, chosen from Gun, Marker and Shield Drones" are in the unit's points
         for sp in drone_specs:
             if sp.get("chosen"):
