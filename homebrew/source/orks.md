@@ -1738,7 +1738,7 @@ _A unit with a Waaagh! Banner gains +1 Weapon Skill while the Mega Boss Nob rema
 
 ### 0-1 Odd Boys — 55 pts
 
-_The Odd Boys are the Meks, Painboys and Weirdboys of the warband. The unit costs 55 points, plus 55 points for each Odd Boy and the extra for his kind: a Mek +0, a Painboy +20 and a Weirdboy +45 points._
+_The Odd Boys are the Meks, Painboys and Weirdboys of the warband. The unit costs the points of the Odd Boys it includes: 55 points for each Mek, 75 points for each Painboy and 100 points for each Weirdboy, so a single Mek is the cheapest unit at 55 points._
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|

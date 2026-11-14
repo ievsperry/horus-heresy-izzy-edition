@@ -984,6 +984,9 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     are +20 points each, one for every ten models beyond the first ten, and the Vindicator Thunderers' extra shells
     cost per Quad Launcher and are hidden until the squadron has one (`python3 homebrew/add_centura.py
     --per-model-fixes` applies just this step to the library);
+  - standard wargear free: a datasheet's listed wargear is in its points, so a required wargear link to an official
+    entry that has a cost of its own (Artellus Numeon's Mantle of the Elder Drake, a 25-point upgrade) gets a cost
+    of 0 (`python3 homebrew/add_centura.py --standard-wargear` applies just this step);
   - each Legion's own upgrades (as above, and the Ghola Sub-type, The Keys of Hel and the Thousand Sons
     disciplines) as rules on the Legion's entry in its catalogue.
   Rule text only: the Rites' other effects and their limitations, the Line Sub-type a Rite grants, the Ghola
