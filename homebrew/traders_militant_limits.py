@@ -39,6 +39,7 @@ AGENT_UNITS = [("Clade Assassins (Loyalist)", "7363-5a05-4102-24fa", LOYALIST, F
                ("Cults Abominatio", "4a00-03d4-a850-884b", TRAITOR, False),
                ("Nathaniel Garro", "0583-258d-f0a0-2170", LOYALIST, True),
                ("Tylos Rubio", "56bf-2c6d-a0fa-a145", LOYALIST, True)]
+CORRUPTED_ASSASSINS = make_id("corrupted clade assassins", "choice")  # LI - Assassins and Agents, Traitor Elites
 
 
 def faction_entries(own_id, own_name):
@@ -176,6 +177,18 @@ def apply(b):
                                     UNIT_CATEGORY + (False,)):
             el(child(e, "categoryLinks"), "categoryLink", targetId=cat, id=make_id(lid, "cat", cat), primary=primary,
                name=cname)
+
+    # The Corrupted Clade Assassins (add_corrupted_assassins.py): an ordinary Elites choice in a Traitor Detachment,
+    # not one of the Aegis Militant's agents; one per Detachment, or three with an Army of Dark Compliance
+    lid = make_id("agent link", b.faction, "Corrupted Clade Assassins")
+    e = el(links, "entryLink", import_=True, name="Corrupted Clade Assassins", hidden=True, id=lid, type="selectionEntry",
+           targetId=CORRUPTED_ASSASSINS)
+    mod = el(el(e, "modifiers"), "modifier", type="set", field="hidden", value="false")
+    el(el(mod, "conditions"), "condition", type="atLeast", value=1, field="selections", scope="force", childId=TRAITOR,
+       shared=True, includeChildSelections=True, includeChildForces=False)
+    for cat, cname, primary in ((ELITES[0], ELITES[1], True), UNIT_CATEGORY + (False,)):
+        el(child(e, "categoryLinks"), "categoryLink", targetId=cat, id=make_id(lid, "cat", cat), primary=primary,
+           name=cname)
 
     # One Allied Detachment for every 1,000 points, plus the Detachment a Warrant's Effects add
     limits_cat = make_id("category", b.faction, "Aegis Militant Limits")

@@ -719,6 +719,16 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Rule text only: the Warlord bar for the LI - Assassins and Agents HQs under a Rite, the Vanguard's "Ballistarii only
   in a Dedicated Transport" and every in-game effect. build_catalogue.py's IRREGULAR plurals now include automata
   and ballistarii (no other catalogue changes). It refuses to run twice.
+- `python3 homebrew/add_corrupted_assassins.py` adds the Agents of the Warmaster: Corrupted Clade Assassins (kept as
+  `source/corrupted-assassins.md`) to `2022 - LI - Assassins.cat`: Clades Mordicare, Doppelgang, Carnifex, Null-Blight,
+  Hex-Vanus and Plague-Venenum, each an Independent Character with the Character category and Agent of the Warmaster,
+  and at most one of each Clade in a Detachment. They are taken as one "Corrupted Clade Assassins" Elites choice (a
+  pick of one Clade, as the official Clade Assassins (Loyalist) are), shown only in a Traitor Detachment and linked
+  from every catalogue that links the Cults Abominatio: one per Detachment, or three in an Army of Dark Compliance or
+  with The Coils of the Hydra (Alpha Legion) or The Black Reaving (Sons of Horus) Rite of War.
+  `traders_militant_limits.py` links the choice in the Traders Militant catalogue (an ordinary Elites choice, not one of
+  the Aegis Militant's agents), and `build_dark_compliance.py` copies the Imperialis Militia link, so rebuild both
+  after running it. "May only join Traitor units" and every in-game effect are rule text. It refuses to run twice.
 - `python3 homebrew/add_imperatus_wargear.py` adds the Imperatus Archaeotechnological Relics (Apex Digital Weapon,
   Displacer Matrix, Grav-Wave Generator) to the game system as a one-per-model group the Solar Auxilia Legate
   Marshal may take, and the Imperialis Militia Force Commander may take with the Armoury of Old Night Provenance
