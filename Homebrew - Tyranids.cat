@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="33" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="36" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -31,16 +31,16 @@
               <profiles>
                 <profile name="Bow Wave" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="9f43-4917-5513-7e4f">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: an enemy unit declares a charge against a Behemoth unit. Instead of firing Overwatch, the unit gains Counter-Charge (1) until the end of the phase†. The charging unit keeps its bonuses for charging.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, immediately after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Hive Fleet (Behemoth) special rule, before any Overwatch attacks are resolved. Effect: The reacting unit forfeits its ability to make an Overwatch Shooting Attack against the charging unit. Instead, every model in the reacting unit gains the Counter-Attack (1) special rule until the end of the current Assault phase. The charging enemy unit still retains all normal Charge bonuses, such as Furious Charge or Hammer of Wrath, when resolving the combat.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Hyper-aggression" id="562b-f216-ac22-8e77" hidden="false">
-                  <description>add 1 to charge distance rolls.</description>
+                <rule name="Unstoppable Behemoth: Hyper-Aggression" id="e040-0d52-1972-1bd6" hidden="false">
+                  <description>Models in the unit add +1" to all Charge Distance rolls.</description>
                 </rule>
-                <rule name="Overwhelming Assault" id="2868-feb1-d4a8-ee61" hidden="false">
-                  <description>Infantry units of 20 or more models gain Furious Charge (1), or increase an existing Furious Charge (X) by 1.</description>
+                <rule name="Unstoppable Behemoth: Overwhelming Assault" id="05f9-e3a9-9386-35c7" hidden="false">
+                  <description>Units composed entirely of models with the Infantry Unit Type that number 20 or more models at the start of the Assault phase gain the Furious Charge (1) special rule (or increase an existing Furious Charge (X) value by +1).</description>
                 </rule>
               </rules>
               <costs>
@@ -51,16 +51,16 @@
               <profiles>
                 <profile name="Swarming Tide" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="a1ca-2bb6-7049-0313">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Trigger: an enemy unit ends a move within 12" of a Hydra Infantry unit of 10 or more models. The Hydra unit moves up to D6 plus its Initiative Characteristic in inches toward the triggering unit, and must end closer to it.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Trigger: This Advanced Reaction may be declared in the Movement phase, immediately after an enemy unit ends a move within 12" of, and within line of sight of, a friendly unit composed entirely of models with the Hive Fleet (Hydra) special rule and the Infantry Unit Type that currently numbers 10 or more models. Effect: Every model in the reacting Hydra unit may immediately make a move of up to D6 + its Initiative Characteristic in inches directly toward the triggering enemy unit, and must end this move closer to that enemy unit than where it started. This move ignores Difficult Terrain, though it may not bring any model within 1" of an enemy model.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Endless Spawning" id="56dc-dcfd-0096-56bd" hidden="false">
-                  <description>Termagant and Hormagaunt units destroyed during the game may be placed into Reserves once each, at their starting strength; they arrive from your table edge†.</description>
+                <rule name="Endless Swarm: Endless Spawning" id="6b32-3a65-d483-923a" hidden="false">
+                  <description>The first time each friendly Termagant Brood or Hormagaunt Brood in the Detachment is completely destroyed during the battle, the controlling player may immediately place an identical replacement unit (at its starting model count, excluding optional upgrades or attached characters) into Ongoing Reserves. This replacement unit arrives from the controlling player's own board edge at the start of their next Movement phase (each unit may only be replaced once per game).</description>
                 </rule>
-                <rule name="Swarming Masses" id="a35d-e3fd-23bd-402b" hidden="false">
-                  <description>in close combat, a unit that has more models than the enemy unit it is fighting may re-roll to-hit rolls of 1.</description>
+                <rule name="Endless Swarm: Swarming Masses" id="8524-213f-3adb-c7eb" hidden="false">
+                  <description>In the Assault phase, a unit composed entirely of models with the Hive Fleet (Hydra) special rule that outnumbers the enemy unit it is fighting (comparing total model count at the start of the Initiative step) may re-roll all failed To Hit rolls of 1.</description>
                 </rule>
               </rules>
               <costs>
@@ -71,16 +71,16 @@
               <profiles>
                 <profile name="Burrow" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="dc83-6b37-d8f5-4f53">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Trigger: an enemy unit ends a move within 12" of a Jormungandr Infantry unit. The Jormungandr unit gains Shrouded (5+) until the start of its controlling player's next turn.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Trigger: This Advanced Reaction may be declared in the Movement phase, immediately after an enemy unit ends a move within 12" of a friendly unit composed entirely of models with the Hive Fleet (Jormungandr) special rule and the Infantry Unit Type. Effect: Every model in the reacting Jormungandr unit gains the Shrouded (5+) special rule until the start of the controlling player's next turn (representing the broods sinking partially beneath loose soil and rubble).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Deep Burrowers" id="2c6e-0975-b036-4dd6" hidden="false">
-                  <description>Infantry units gain the Burrower biomorph at no cost, whatever their size and even if they could not normally take it.</description>
+                <rule name="Subterranean Terror: Deep Burrowers" id="3244-785e-208c-3d2b" hidden="false">
+                  <description>Every unit composed entirely of models with the Infantry Unit Type gains the Burrower biomorph at no additional points cost, regardless of its unit size or normal wargear restrictions.</description>
                 </rule>
-                <rule name="Tunnel Networks" id="0b85-ce20-38a7-0217" hidden="false">
-                  <description>Infantry units that did not Advance in their last turn count as being in cover, with a 6+ cover save, if they are not already†.</description>
+                <rule name="Subterranean Terror: Tunnel Networks" id="1479-1608-7d40-efc3" hidden="false">
+                  <description>Units composed entirely of models with the Infantry Unit Type that did not make a Run move in their preceding Shooting phase (and did not arrive from Reserves on the current turn) gain a 6+ Cover Save against Shooting Attacks, even if standing in open ground.</description>
                 </rule>
               </rules>
               <costs>
@@ -91,16 +91,16 @@
               <profiles>
                 <profile name="Lightning Reflexes" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="a319-0d43-8687-471c">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: a Kraken unit is selected as the target of a Shooting Attack. Before the attack is resolved, the unit moves up to D6 plus its Initiative Characteristic in inches. If it is then out of range or line of sight, the attack is lost.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, immediately after an enemy unit selects a friendly unit composed entirely of models with the Hive Fleet (Kraken) special rule as the target of a Shooting Attack, before any To Hit rolls are made. Effect: Before the enemy Shooting Attack is resolved, every model in the reacting Kraken unit may immediately move up to D6 + its Initiative Characteristic in inches (treating Difficult Terrain as normal). If this move takes the entire reacting unit out of range or out of line of sight of the attacking enemy unit, the enemy Shooting Attack is immediately lost and may not be redirected to another target.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Ambush Predators" id="becc-fbf4-eac8-3050" hidden="false">
-                  <description>Infantry units of 20 or fewer models gain the Outflank special rule†.</description>
+                <rule name="Questing Tendrils: Ambush Predators" id="4538-2e38-520c-7741" hidden="false">
+                  <description>Units composed entirely of models with the Infantry Unit Type that number 20 or fewer models gain the Outflank special rule.</description>
                 </rule>
-                <rule name="Questing Tendrils" id="cb3e-24e6-926a-e044" hidden="false">
-                  <description>the unit gains Fleet (1).</description>
+                <rule name="Questing Tendrils: Questing Tendrils" id="d825-39b0-e8cb-8567" hidden="false">
+                  <description>All models in the unit gain the Fleet (1) special rule (or increase an existing Fleet (X) value by +1).</description>
                 </rule>
               </rules>
               <costs>
@@ -109,18 +109,18 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Hive Fleet Kronos" hidden="false" id="846c-21b6-826f-827e" publicationId="7478-cf16-4f88-170b">
               <profiles>
-                <profile name="Bio-retaliation" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="10e6-de65-d392-3b43">
+                <profile name="Bio-Retaliation" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="fa1b-4d9b-f622-87d5">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: a Kronos unit is selected as the target of a Shooting Attack. The Kronos unit makes a Shooting Attack against the attacking unit before that attack is resolved. Casualties it causes are removed before the enemy attack is resolved and cannot fire back.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, immediately after an enemy unit selects a friendly unit composed entirely of models with the Hive Fleet (Kronos) special rule as the target of a Shooting Attack, before any To Hit rolls are made. Effect: Before the enemy Shooting Attack is resolved, the reacting Kronos unit may immediately make a full Shooting Attack targeting the active enemy unit (resolving all weapons at full Ballistic Skill). Any enemy models removed as casualties from this reaction are removed before the triggering enemy unit resolves its own Shooting Attack, and may not fire back.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Bio-barrage" id="8e63-8b6f-62fd-4fd4" hidden="false">
-                  <description>the unit may re-roll to-hit rolls of 1 with ranged weapons.</description>
+                <rule name="Psychic Abyss: Bio-Barrage" id="b40c-75e7-0dbc-b0ed" hidden="false">
+                  <description>Models in the unit may re-roll all failed To Hit rolls of 1 when making Shooting Attacks with ranged weapons.</description>
                 </rule>
-                <rule name="Deepening Shadow" id="c002-a8c3-76d2-6e1f" hidden="false">
-                  <description>the range of Shadow in the Warp for Kronos models is 18" instead of 12".</description>
+                <rule name="Psychic Abyss: Deepening Shadow" id="9e8f-9ac2-f6a4-7fd1" hidden="false">
+                  <description>Models in the unit with the Shadow in the Warp special rule increase the range of that rule from 12" to 18".</description>
                 </rule>
               </rules>
               <costs>
@@ -131,16 +131,16 @@
               <profiles>
                 <profile name="Synaptic Shielding" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="5862-112f-6950-9865">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: a Leviathan Synapse creature is selected as the target of a Shooting Attack while within 6" of a friendly Tyranid Infantry unit. Against that attack, the Synapse creature gains Shrouded (5+).</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, immediately after an enemy unit selects a friendly Hive Fleet (Leviathan) model with the Synapse Creature special rule as the target of a Shooting Attack while that Synapse Creature is within 6" of at least one friendly Tyranids unit composed entirely of models with the Infantry Unit Type, before any To Hit rolls are made. Effect: Against that Shooting Attack, the reacting Synapse Creature gains the Shrouded (5+) special rule (representing lesser organisms throwing themselves into the path of incoming fire).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="Synaptic Web" id="a39f-176f-219b-2375" hidden="false">
-                  <description>the range of the Synapse Creature rule is increased by 3" for Leviathan Synapse creatures.</description>
+                <rule name="Synaptic Imperative: Synaptic Web" id="1666-3d7c-4740-3377" hidden="false">
+                  <description>Models in the unit with the Synapse Creature special rule increase the range of their Synapse aura by +3".</description>
                 </rule>
-                <rule name="Unyielding Will" id="0773-909e-5397-9677" hidden="false">
-                  <description>units within range of a Leviathan Synapse creature have Feel No Pain (6+) against Shooting Attacks, or improve an existing Feel No Pain by 1 against Shooting Attacks.</description>
+                <rule name="Synaptic Imperative: Unyielding Will" id="f921-2eab-2de8-cddf" hidden="false">
+                  <description>Friendly units with the Hive Fleet (Leviathan) special rule that are within range of at least one friendly Leviathan Synapse Creature gain the Feel No Pain (6+) special rule against Shooting Attacks (or improve an existing Feel No Pain roll by +1, to a maximum of 4+, against Shooting Attacks).</description>
                 </rule>
               </rules>
               <costs>
@@ -161,7 +161,7 @@
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="c658-dc6b-727b-c488" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
-                <modifier type="set" field="22f5-c98c-fdf7-8151" value="0">
+                <modifier type="set" field="f378-3fb7-ce7e-4cb9" value="0">
                   <conditions>
                     <condition type="greaterThan" value="2" field="selections" scope="force" childId="7031-469a-1aeb-eab0" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
@@ -174,14 +174,17 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f1e-14b0-ce4b-2cda" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22f5-c98c-fdf7-8151" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f378-3fb7-ce7e-4cb9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
+                <rule name="Prerequisites" id="970d-c0f2-bf2e-2473" hidden="false">
+                  <description>A Detachment using this Rite of War must include a Hive Tyrant or a Tervigon as the army's Warlord.</description>
+                </rule>
                 <rule name="Effects" id="aba8-de06-299d-1e2e" hidden="false">
-                  <description>Termagant and Hormagaunt units in a Detachment using this Rite of War may contain up to 40 models, and gain the Without Number (5+) special rule. Ripper Swarms and Gargoyles in a Detachment using this Rite of War gain the Without Number (6+) special rule.</description>
+                  <description>Tide of Chitin and Claws: Termagant Broods and Hormagaunt Broods in a Detachment using this Rite of War may increase their maximum unit size to up to 40 models (at their standard points cost per additional model), and gain the Without Number (5+) special rule. Relentless Skirmishers: Ripper Swarms and Gargoyle Broods in a Detachment using this Rite of War gain the Without Number (6+) special rule.</description>
                 </rule>
                 <rule name="Limitations" id="0e30-38de-c2f4-0189" hidden="false">
-                  <description>A Detachment using this Rite of War must have a Hive Tyrant or Tervigon as its Warlord. A Detachment using this Rite of War may not include any Lords of War, and may include no more than two Heavy Support choices. This Rite of War may not be used by an Allied Detachment.</description>
+                  <description>A Detachment using this Rite of War may not include any Lords of War choices. A Detachment using this Rite of War may include no more than two Heavy Support choices. This Rite of War may not be used by an Allied Detachment.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -193,7 +196,7 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Hidden Brood" hidden="false" id="e176-fe9a-fbf4-cea3" publicationId="7478-cf16-4f88-170b">
               <modifiers>
-                <modifier type="set" field="b03d-264f-1a8b-2fd8" value="0">
+                <modifier type="set" field="c2a0-3cd6-521c-3764" value="0">
                   <conditions>
                     <condition type="lessThan" value="2" field="selections" scope="force" childId="efed-500e-b4c5-4e79" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
@@ -210,15 +213,18 @@
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b03d-264f-1a8b-2fd8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2a0-3cd6-521c-3764" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fac7-aa25-fda9-4ff5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
+                <rule name="Prerequisites" id="9204-3369-41f6-cc78" hidden="false">
+                  <description>A Detachment using this Rite of War must include a Broodlord as the army's Warlord.</description>
+                </rule>
                 <rule name="Effects" id="f9d1-d28f-a6e2-d470" hidden="false">
-                  <description>Genestealer units in a Detachment using this Rite of War may be taken as Troops choices, gain the Line Sub-type and may contain up to 20 models. Genestealer units and Broodlords in a Detachment using this Rite of War gain the Infiltrate and Move Through Cover special rules. A Genestealer unit in a Detachment using this Rite of War that deployed using the Infiltrate special rule may not be targeted by Shooting Attacks during the first game turn.</description>
+                  <description>Vanguard Predators: Genestealer Broods in a Detachment using this Rite of War may be selected as Troops choices, gain the Line Unit Sub-type, and may increase their maximum unit size to up to 20 models (at their standard points cost per additional model). Lurking in the Shadows: All Genestealer Broods and Broodlords in a Detachment using this Rite of War gain the Infiltrate and Move Through Cover special rules (if they do not already possess them). Unseen Ambush: Any Genestealer Brood in a Detachment using this Rite of War that deployed using the Infiltrate special rule may not be selected as the target of Shooting Attacks during the first game turn (unless it has already made a Shooting Attack or declared a Charge).</description>
                 </rule>
                 <rule name="Limitations" id="5b80-f753-7414-454b" hidden="false">
-                  <description>A Detachment using this Rite of War must have a Broodlord as its Warlord. A Detachment using this Rite of War must include at least two Genestealer units. A Detachment using this Rite of War may not include any Lords of War, and may not include more Monstrous units than Genestealer units. This Rite of War may not be used by an Allied Detachment.</description>
+                  <description>A Detachment using this Rite of War must include at least two Genestealer Broods. A Detachment using this Rite of War may not include any Lords of War choices. A Detachment using this Rite of War may not include more units containing models with the Monstrous Unit Sub-type than it includes Genestealer Broods. This Rite of War may not be used by an Allied Detachment.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -237,11 +243,14 @@
                 </modifier>
               </modifiers>
               <rules>
+                <rule name="Prerequisites" id="d4d6-87df-17ef-a5e8" hidden="false">
+                  <description>A Detachment using this Rite of War must include a Hive Tyrant, The Swarmlord, or a Norn Emissary as the army's Warlord.</description>
+                </rule>
                 <rule name="Effects" id="7f94-5530-96d4-9779" hidden="false">
-                  <description>Tyranid Warriors may be taken as Compulsory Troops choices in a Detachment using this Rite of War, lose the Support Squad special rule and gain the Line Sub-type.</description>
+                  <description>Synaptic Bastions: Tyranid Warrior Broods may be selected as Compulsory Troops choices in a Detachment using this Rite of War. When selected in this manner, they lose the Support Squad special rule and gain the Line Unit Sub-type.</description>
                 </rule>
                 <rule name="Limitations" id="4fc6-f5a5-d20b-a6c8" hidden="false">
-                  <description>A Detachment using this Rite of War must have a Hive Tyrant, The Swarmlord or a Norn Emissary as its Warlord. A Detachment using this Rite of War may not include more non-Monstrous Infantry units than Monstrous units. This Rite of War may not be used by an Allied Detachment.</description>
+                  <description>A Detachment using this Rite of War may not include more non-Monstrous Infantry units than it includes units containing models with the Monstrous Unit Sub-type. This Rite of War may not be used by an Allied Detachment.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -260,11 +269,14 @@
                 </modifier>
               </modifiers>
               <rules>
+                <rule name="Prerequisites" id="6b7a-185a-e842-744d" hidden="false">
+                  <description>A Detachment using this Rite of War must include a Hive Tyrant equipped with Wings as the army's Warlord.</description>
+                </rule>
                 <rule name="Effects" id="b855-f4b4-b6f9-200b" hidden="false">
-                  <description>Gargoyles and Tyranid Shrikes may be taken as Troops choices in a Detachment using this Rite of War and gain the Line Sub-type.</description>
+                  <description>Predators of the Upper Air: Gargoyle Broods and Tyranid Shrike Broods may be selected as Troops choices in a Detachment using this Rite of War, and gain the Line Unit Sub-type.</description>
                 </rule>
                 <rule name="Limitations" id="3be0-b818-a304-3123" hidden="false">
-                  <description>A Detachment using this Rite of War must have a Hive Tyrant with wings as its Warlord. Every Infantry unit in a Detachment using this Rite of War must have wings or the Deep Strike special rule, or start the game embarked. This Rite of War may not be used by an Allied Detachment.</description>
+                  <description>Every Infantry unit in a Detachment using this Rite of War must be equipped with Wings, possess the Deep Strike special rule, or begin the battle embarked inside a Transport (such as a Tyrannocyte). This Rite of War may not be used by an Allied Detachment.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -291,7 +303,7 @@
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5c0b-d351-3e1c-e780" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
-                <modifier type="set" field="ebfa-bd7b-7503-e23e" value="0">
+                <modifier type="set" field="10e9-df2a-fdad-3a95" value="0">
                   <conditions>
                     <condition type="greaterThan" value="1" field="selections" scope="force" childId="c658-dc6b-727b-c488" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
@@ -306,14 +318,17 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89e3-4a22-6f60-83cd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87e4-4a88-8cd3-9645" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fee8-4f17-df3d-cd9a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebfa-bd7b-7503-e23e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10e9-df2a-fdad-3a95" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
+                <rule name="Prerequisites" id="c8df-a56c-6976-bc8a" hidden="false">
+                  <description>A Detachment using this Rite of War must include a Trygon Prime or a Tyranid Prime as the army's Warlord.</description>
+                </rule>
                 <rule name="Effects" id="7eb3-04ad-b405-ef97" hidden="false">
-                  <description>Trygons, Mawlocs, Raveners and units with Hive Fleet (Jormungandr) in a Detachment using this Rite of War that arrive by Deep Strike or Subterranean Assault may arrive from the first game turn. These units do not scatter if they arrive within 12" of a friendly Trygon or Mawloc.</description>
+                  <description>First-Wave Breach: Trygons, Mawlocs, Ravener Broods, and any unit with the Hive Fleet (Jormungandr) special rule in a Detachment using this Rite of War that are placed into Reserves to arrive via Deep Strike or Subterranean Assault may make Reserves rolls starting from the first game turn (instead of waiting until Turn 2). Tectonic Beacons: Friendly units arriving via Deep Strike or Subterranean Assault in a Detachment using this Rite of War do not scatter when placed on the battlefield, provided the first model placed is within 12" of a friendly Trygon or Mawloc that is already on the battlefield (and was not placed during the same turn).</description>
                 </rule>
                 <rule name="Limitations" id="115f-e86f-6b0e-d526" hidden="false">
-                  <description>A Detachment using this Rite of War must have a Trygon Prime or Tyranid Prime as its Warlord. A Detachment using this Rite of War may not include any Flyers, and may include no more than one Lord of War. This Rite of War may not be used by an Allied Detachment.</description>
+                  <description>A Detachment using this Rite of War may not include any Flyers. A Detachment using this Rite of War may include no more than one Lord of War choice. This Rite of War may not be used by an Allied Detachment.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -2397,7 +2412,7 @@
             <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">Template</characteristic>
             <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">User</characteristic>
             <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">-</characteristic>
-            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Torrent (6"), Pinning, Concussive (1), Shell Shock (1)</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Torrent (6"), Pinning, Concussive (1), Shell Shock (1), Psychic Focus</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2625,7 +2640,7 @@
       <profiles>
         <profile name="Catalyst" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power" hidden="false" id="4061-12c9-fbe4-1943">
           <characteristics>
-            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">At the start of your Movement phase, the psyker may make a Psychic check. If the Check is passed, one friendly Tyranid unit within 12" gains Feel No Pain (5+), or improves an existing Feel No Pain by 1, until the start of your next turn. If the Check is failed, the psyker suffers Perils of the Warp.</characteristic>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">At the start of the controlling player's Movement phase, a Psyker with this Psychic Power may select a single friendly Tyranid unit within 12". That unit gains the Feel No Pain (6+) special rule (or improves an existing Feel No Pain special rule by +1, to a maximum of 3+) until the start of the controlling player's next turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed, then the target unit instead gains the Feel No Pain (5+) special rule (or improves an existing Feel No Pain special rule by +1, to a maximum of 3+) until the start of the controlling player's next turn. If the Check is failed, then the target unit gains no benefit and the Psyker suffers Perils of the Warp.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2634,7 +2649,7 @@
       <profiles>
         <profile name="Dominion" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power" hidden="false" id="7929-2703-2873-207d">
           <characteristics>
-            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">At the start of your Movement phase, the psyker may make a Psychic check. If the Check is passed, its Synapse Creature range becomes 18" until the start of your next turn. If the Check is failed, the psyker suffers Perils of the Warp.</characteristic>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">At the start of the controlling player's Movement phase, a Psyker with this Psychic Power may increase the range of its Synapse Creature special rule to 15" until the start of the controlling player's next turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed, then the range of its Synapse Creature special rule instead becomes 18" until the start of the controlling player's next turn. If the Check is failed, then the Psyker gains no benefit and suffers Perils of the Warp.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2643,7 +2658,7 @@
       <profiles>
         <profile name="Onslaught" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power" hidden="false" id="320a-81bf-d0de-d01e">
           <characteristics>
-            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">At the start of your Movement phase, the psyker may make a Psychic check. If the Check is passed, one friendly Tyranid unit within 12" may Advance and still make Shooting Attacks this turn. If the Check is failed, the psyker suffers Perils of the Warp.</characteristic>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">At the start of the controlling player's Movement phase, a Psyker with this Psychic Power may select a single friendly Tyranid unit within 12". That unit may make Shooting Attacks in the following Shooting phase even if it Ran in the Movement phase, though all attacks made by the unit must be fired as Snap Shots. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed, then the target unit may instead make Shooting Attacks as normal in the following Shooting phase even if it Ran in the Movement phase. If the Check is failed, then the target unit gains no benefit and the Psyker suffers Perils of the Warp.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2652,7 +2667,7 @@
       <profiles>
         <profile name="Paroxysm" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power" hidden="false" id="d61a-da9f-3a69-1c70">
           <characteristics>
-            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, the psyker may make a Psychic check. If the Check is passed, one enemy unit within 18" subtracts 1 from its Weapon Skill and Ballistic Skill until the start of your next turn. If the Check is failed, the psyker suffers Perils of the Warp.</characteristic>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single enemy unit within 18". That unit suffers a -1 penalty to its Ballistic Skill until the start of the controlling player's next turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed, then the target unit instead suffers a -1 penalty to both its Weapon Skill and Ballistic Skill until the start of the controlling player's next turn. If the Check is failed, then the target unit suffers no penalty and the Psyker suffers Perils of the Warp.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2661,7 +2676,7 @@
       <profiles>
         <profile name="The Horror" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power" hidden="false" id="e545-af2f-2ec0-9103">
           <characteristics>
-            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, the psyker may make a Psychic check. If the Check is passed, one enemy unit within 18" must take a Pinning test with a –2 modifier to its Leadership. If the Check is failed, the psyker suffers Perils of the Warp.</characteristic>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single enemy unit within 18". That unit must immediately take a Pinning test. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed, then the target unit must instead take a Pinning test with a -2 modifier to its Leadership. If the Check is failed, then the target unit suffers no effect and the Psyker suffers Perils of the Warp.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -19271,7 +19286,7 @@
           <profiles>
             <profile name="Adaptive Biology" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="2549-6914-f9e8-a6cf">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord gains Feel No Pain (5+), or improves an existing Feel No Pain by 1. In addition, once per game, a friendly Tyranid unit within 12" of the Warlord may make the Swarm Response reaction without spending a point of the Reaction Allotment.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Feel No Pain (5+) special rule (or improves an existing Feel No Pain roll by +1, to a maximum of 4+). In addition, once per game, while the Warlord is on the battlefield, a single friendly unit with the Tyranids faction trait within 12" of the Warlord may declare the Swarm Response Advanced Reaction without spending a point from the controlling player's Reaction Allotment.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19289,7 +19304,7 @@
           <profiles>
             <profile name="Alpha Leader" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="c68f-3da7-f157-3ef4">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Friendly Tyranid units within 12" of the Warlord may re-roll failed charge distances. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Friendly units composed entirely of models with the Tyranids faction trait within 12" of a Warlord with this Trait may re-roll failed Charge Distance rolls. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19307,7 +19322,7 @@
           <profiles>
             <profile name="Synaptic Lynchpin" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="9f72-e302-0750-996f">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The range of the Warlord's Synapse Creature rule is increased by 3". In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Movement phase, above its normal Reaction Allotment.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait increases the range of its Synapse Creature special rule by +3". In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19332,7 +19347,7 @@
           <profiles>
             <profile name="Monstrous Hunger" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="2d80-9e67-3af7-f764">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit it joins gain Rage (2).</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and any unit it joins, gains the Rage (2) special rule (or increases an existing Rage (X) value by +1). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19357,7 +19372,7 @@
           <profiles>
             <profile name="Brood Mother" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="cc99-7159-efa4-5355">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Once per game, at the start of your turn, the Warlord may return D6 slain models to one friendly Termagant or Hormagaunt unit within 12".</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Once per battle, at the start of the controlling player's Movement phase while the Warlord is on the battlefield, the Warlord may restore D6 previously slain models to a single friendly Termagant Brood or Hormagaunt Brood within 12" (placed in unit coherency and more than 1" away from enemy models; this cannot take the unit above its starting strength). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19382,7 +19397,7 @@
           <profiles>
             <profile name="Subterranean Hunter" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="399d-a85b-c187-55de">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit it joins gain the Burrower biomorph, and may re-roll the Reserves roll to arrive.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and any unit it joins, gains the Burrower biomorph (if it does not already possess it), and the controlling player may re-roll failed Reserves rolls made for the Warlord's unit. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19407,7 +19422,7 @@
           <profiles>
             <profile name="Swift Hunter" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="ab32-b870-0ae7-1514">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit it joins add 2 to their Movement Characteristic.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and any unit it joins, adds +2" to its Movement Characteristic. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19432,7 +19447,7 @@
           <profiles>
             <profile name="Soul Hunger" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="ec49-9d02-ee91-8720">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Enemy Psykers within 18" of the Warlord subtract a further 1 from their Leadership when making Psychic checks.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Enemy models with the Psyker Unit Sub-type (or units with Brotherhood Psyker) within 18" of a Warlord with this Trait suffer an additional -1 penalty to their Leadership Characteristic when making Psychic checks (stacking with Shadow in the Warp), and suffer Perils of the Warp on any double rolled. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19457,7 +19472,7 @@
           <profiles>
             <profile name="Will of the Hive Mind" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="e327-8f96-9f72-04a6">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The range of the Warlord's Synapse Creature rule is increased by a further 6".</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait increases the range of its Synapse Creature special rule by a further +6" (for a total bonus of +9" when combined with Synaptic Web). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19504,10 +19519,10 @@
       <description>Once a unit with this rule has been removed from play or destroyed, roll a D6. On a roll of X or more, the unit is added to Reserves and may return to play in the controlling player's next Movement phase as normal. The unit still counts as destroyed when calculating Victory Points and other win conditions. A unit that returns loses the Line Sub-type and only counts as a Scoring unit.</description>
     </rule>
     <rule name="Hive Mind (X)" id="8118-779a-5fee-b169" hidden="false" publicationId="7478-cf16-4f88-170b">
-      <description>Every Tyranid psyker knows the Psychic Scream psychic weapon, plus X psychic powers from this discipline, chosen when the army is built. X is shown on its datasheet. The Swarmlord knows every power.</description>
+      <description>A Psyker with the Hive Mind (X) special rule gains the Psychic Scream Psychic Weapon, as well as a number of Psychic Powers equal to X from the list below, chosen when the army is mustered (The Swarmlord gains all listed Powers). Some Tyranid Psykers also carry unique Psychic Weapons on their datasheets, which are detailed in the Bio-weapons armoury.</description>
     </rule>
     <rule name="Hive Fleet (X)" id="6ef3-1641-fb7e-9d1f" hidden="false" publicationId="7478-cf16-4f88-170b">
-      <description>When building an army, choose one hive fleet for each detachment. Every unit in that detachment gains Hive Fleet (X), where X is the chosen hive fleet. Unique characters may join any hive fleet, except Old One Eye, who may only join Hive Fleet Behemoth.</description>
+      <description>When building an army with the Tyranids faction trait, the controlling player must select one Hive Fleet for each Detachment in the army. Every model in that Detachment replaces the (X) in its Hive Fleet (X) special rule with the name of the chosen Hive Fleet. Unique characters: models with the Unique Unit Sub-type may be included in a Detachment of any Hive Fleet, with the exception of Old One Eye, who may only be included in a Detachment with the Hive Fleet (Behemoth) special rule.</description>
     </rule>
     <rule name="Regeneration (X)" id="8cfc-b5df-55c5-05f1" hidden="false" publicationId="7478-cf16-4f88-170b">
       <description>A model with regeneration gains Regeneration (X): at the end of each of your turns, if the model has lost any Wounds, roll a D6. On a roll of X or more, it restores one lost Wound, up to its starting value. X is 5+ unless the datasheet says otherwise.</description>

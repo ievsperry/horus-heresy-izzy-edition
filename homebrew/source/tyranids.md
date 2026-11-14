@@ -50,145 +50,155 @@ The swarm closes around anything that attacks it: charging one brood of Tyranids
 
 ## Psychic Discipline: Powers of the Hive Mind
 
-There is no psychic phase in 2.0. A Tyranid psyker uses each power in the phase it names, making a Psychic check against its Leadership; a failed check causes Perils of the Warp as in the 2.0 rulebook†.
-
-**Hive Mind (X).** Every Tyranid psyker knows the Psychic Scream psychic weapon, plus X psychic powers from this discipline, chosen when the army is built. X is shown on its datasheet. The Swarmlord knows every power.
+**Hive Mind (X).** A Psyker with the Hive Mind (X) special rule gains the Psychic Scream Psychic Weapon, as well as a number of Psychic Powers equal to X from the list below, chosen when the army is mustered (The Swarmlord gains all listed Powers). Some Tyranid Psykers also carry unique Psychic Weapons on their datasheets, which are detailed in the Bio-weapons armoury.
 
 ### Catalyst (Psychic Power)
 
-At the start of your Movement phase, the psyker may make a Psychic check. If the Check is passed, one friendly Tyranid unit within 12" gains Feel No Pain (5+), or improves an existing Feel No Pain by 1, until the start of your next turn. If the Check is failed, the psyker suffers Perils of the Warp.
+_Channeling the relentless vitality of the Hive Mind, the psyker knits torn chitin and sears shut grievous wounds in mere heartbeats._
+
+At the start of the controlling player's Movement phase, a Psyker with this Psychic Power may select a single friendly Tyranid unit within 12". That unit gains the Feel No Pain (6+) special rule (or improves an existing Feel No Pain special rule by +1, to a maximum of 3+) until the start of the controlling player's next turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed, then the target unit instead gains the Feel No Pain (5+) special rule (or improves an existing Feel No Pain special rule by +1, to a maximum of 3+) until the start of the controlling player's next turn. If the Check is failed, then the target unit gains no benefit and the Psyker suffers Perils of the Warp.
 
 ### Dominion (Psychic Power)
 
-At the start of your Movement phase, the psyker may make a Psychic check. If the Check is passed, its Synapse Creature range becomes 18" until the start of your next turn. If the Check is failed, the psyker suffers Perils of the Warp.
+_The creature flares with blinding synaptic energy, projecting the Hive Mind's absolute will far across the battlefield._
+
+At the start of the controlling player's Movement phase, a Psyker with this Psychic Power may increase the range of its Synapse Creature special rule to 15" until the start of the controlling player's next turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed, then the range of its Synapse Creature special rule instead becomes 18" until the start of the controlling player's next turn. If the Check is failed, then the Psyker gains no benefit and suffers Perils of the Warp.
 
 ### Onslaught (Psychic Power)
 
-At the start of your Movement phase, the psyker may make a Psychic check. If the Check is passed, one friendly Tyranid unit within 12" may Advance and still make Shooting Attacks this turn. If the Check is failed, the psyker suffers Perils of the Warp.
+_Driven by a sudden surge of telepathic hunger, the swarm bounds forward in an unstoppable blur of claws and bio-weapons._
+
+At the start of the controlling player's Movement phase, a Psyker with this Psychic Power may select a single friendly Tyranid unit within 12". That unit may make Shooting Attacks in the following Shooting phase even if it Ran in the Movement phase, though all attacks made by the unit must be fired as Snap Shots. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed, then the target unit may instead make Shooting Attacks as normal in the following Shooting phase even if it Ran in the Movement phase. If the Check is failed, then the target unit gains no benefit and the Psyker suffers Perils of the Warp.
 
 ### Paroxysm (Psychic Power)
 
-Instead of making a Shooting Attack, the psyker may make a Psychic check. If the Check is passed, one enemy unit within 18" subtracts 1 from its Weapon Skill and Ballistic Skill until the start of your next turn. If the Check is failed, the psyker suffers Perils of the Warp.
+_The psyker floods the minds of its prey with agonizing neural static, dulling their reflexes and clouding their vision._
+
+Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single enemy unit within 18". That unit suffers a -1 penalty to its Ballistic Skill until the start of the controlling player's next turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed, then the target unit instead suffers a -1 penalty to both its Weapon Skill and Ballistic Skill until the start of the controlling player's next turn. If the Check is failed, then the target unit suffers no penalty and the Psyker suffers Perils of the Warp.
 
 ### The Horror (Psychic Power)
 
-Instead of making a Shooting Attack, the psyker may make a Psychic check. If the Check is passed, one enemy unit within 18" must take a Pinning test with a –2 modifier to its Leadership. If the Check is failed, the psyker suffers Perils of the Warp.
+_Projecting a wave of pure, primordial dread into the enemy's consciousness, the beast breaks their resolve before a single shot is fired._
+
+Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single enemy unit within 18". That unit must immediately take a Pinning test. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed, then the target unit must instead take a Pinning test with a -2 modifier to its Leadership. If the Check is failed, then the target unit suffers no effect and the Psyker suffers Perils of the Warp.
 
 ### Psychic Scream (Psychic Weapon)
 
+_Opening its maw, the creature unleashes a deafening psychic shriek that ruptures eardrums and liquefies brain matter._
+
 | Weapon | Range | Str | AP | Type |
 |---|---|---|---|---|
-| Psychic Scream | Template | User | – | Assault 1, Torrent (6"), Pinning, Concussive (1), Shell Shock (1) |
+| Psychic Scream | Template | User | – | Assault 1, Torrent (6"), Pinning, Concussive (1), Shell Shock (1), Psychic Focus |
 
-Some psykers also carry their own psychic weapons, such as a Zoanthrope's warp blast or a Maleceptor's psychic overload; these are listed in the Bio-weapons armoury.
+**Psychic Focus.** Before placing the template for this weapon, the Psyker must make a Psychic check. If the Check is passed, then the Psyker may attack as normal using the profile shown for this weapon. If the Check is failed, then the Psyker suffers Perils of the Warp, and if the model is not removed as a casualty then it may attack as normal but may not use this weapon.
 
 ## Hive Fleets
 
-Every Tyranid swarm belongs to a hive fleet with its own adaptations. Hive fleets work like the Ork Klans and Legiones Astartes (X): they give an army its character without changing its datasheets.
+Every Tyranid swarm belongs to a distinct Hive Fleet, each shaped by the Hive Mind across countless devoured galaxies with specialized bio-morphologies and predatory instincts. In game terms, Hive Fleets function identically to the Legiones Astartes (X) special rule, granting a Detachment its unique tactical character without altering its core datasheets.
 
-**Hive Fleet (X).** When building an army, choose one hive fleet for each detachment. Every unit in that detachment gains Hive Fleet (X), where X is the chosen hive fleet. Unique characters may join any hive fleet, except Old One Eye, who may only join Hive Fleet Behemoth.
+**Hive Fleet (X).** When building an army with the Tyranids faction trait, the controlling player must select one Hive Fleet for each Detachment in the army. Every model in that Detachment replaces the (X) in its Hive Fleet (X) special rule with the name of the chosen Hive Fleet. Unique characters: models with the Unique Unit Sub-type may be included in a Detachment of any Hive Fleet, with the exception of Old One Eye, who may only be included in a Detachment with the Hive Fleet (Behemoth) special rule.
 
-**Hive Fleet Advanced Reactions.** Each hive fleet has its own Advanced Reaction, usable only by units with that Hive Fleet (X). It is available in addition to Swarm Response and costs one point of the Reaction Allotment†.
+**Hive Fleet Advanced Reactions.** Each Hive Fleet grants access to a unique Advanced Reaction, usable only by units composed entirely of models with that specific Hive Fleet (X) special rule. This Advanced Reaction is available in addition to all Core Reactions and the generic Swarm Response Advanced Reaction, and costs 1 point of the controlling player's Reaction Allotment in the appropriate phase.
 
 ### Behemoth
 
-_The first hive fleet to reach the galaxy, a tidal wave of raw aggression that overwhelms its prey by sheer weight of claws._
+_The first major Hive Fleet to breach the Eastern Fringe of the galaxy, Behemoth is an unstoppable battering ram of bio-engineered fury: a crimson tidal wave of towering monsters and relentless gaunt broods that crushes defensive lines beneath sheer, brute force._
 
-Units with Hive Fleet (Behemoth) gain the following:
+**Hive Fleet Trait: Unstoppable Behemoth.** Units composed entirely of models with the Hive Fleet (Behemoth) special rule gain the following benefits:
 
-- **Hyper-aggression:** add 1 to charge distance rolls.
-- **Overwhelming Assault:** Infantry units of 20 or more models gain Furious Charge (1), or increase an existing Furious Charge (X) by 1.
+- **Hyper-Aggression:** Models in the unit add +1" to all Charge Distance rolls.
+- **Overwhelming Assault:** Units composed entirely of models with the Infantry Unit Type that number 20 or more models at the start of the Assault phase gain the Furious Charge (1) special rule (or increase an existing Furious Charge (X) value by +1).
 
-**Advanced Reaction: Bow Wave** (Assault phase). Trigger: an enemy unit declares a charge against a Behemoth unit. Instead of firing Overwatch, the unit gains Counter-Charge (1) until the end of the phase†. The charging unit keeps its bonuses for charging.
+**Advanced Reaction: Bow Wave** (Assault phase). Trigger: This Advanced Reaction may be declared in the Assault phase, immediately after an enemy unit declares a Charge against a friendly unit composed entirely of models with the Hive Fleet (Behemoth) special rule, before any Overwatch attacks are resolved. Effect: The reacting unit forfeits its ability to make an Overwatch Shooting Attack against the charging unit. Instead, every model in the reacting unit gains the Counter-Attack (1) special rule until the end of the current Assault phase. The charging enemy unit still retains all normal Charge bonuses, such as Furious Charge or Hammer of Wrath, when resolving the combat.
 
-**Warlord Trait: Monstrous Hunger.** The Warlord and any unit it joins gain Rage (2).
+**Warlord Trait: Monstrous Hunger.** A Warlord with this Trait, and any unit it joins, gains the Rage (2) special rule (or increases an existing Rage (X) value by +1). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
 
 ### Hydra
 
-_A fleet that wins by numbers alone, spawning broods without end._
+_An insidious, cannibalistic Hive Fleet that overwhelms even the most fortified world through boundless, suffocating numbers, constantly recycling fallen bio-mass to spawn endless waves of chittering lesser organisms._
 
-Units with Hive Fleet (Hydra) gain the following:
+**Hive Fleet Trait: Endless Swarm.** Units composed entirely of models with the Hive Fleet (Hydra) special rule gain the following benefits:
 
-- **Endless Spawning:** Termagant and Hormagaunt units destroyed during the game may be placed into Reserves once each, at their starting strength; they arrive from your table edge†.
-- **Swarming Masses:** in close combat, a unit that has more models than the enemy unit it is fighting may re-roll to-hit rolls of 1.
+- **Endless Spawning:** The first time each friendly Termagant Brood or Hormagaunt Brood in the Detachment is completely destroyed during the battle, the controlling player may immediately place an identical replacement unit (at its starting model count, excluding optional upgrades or attached characters) into Ongoing Reserves. This replacement unit arrives from the controlling player's own board edge at the start of their next Movement phase (each unit may only be replaced once per game).
+- **Swarming Masses:** In the Assault phase, a unit composed entirely of models with the Hive Fleet (Hydra) special rule that outnumbers the enemy unit it is fighting (comparing total model count at the start of the Initiative step) may re-roll all failed To Hit rolls of 1.
 
-**Advanced Reaction: Swarming Tide** (Movement phase). Trigger: an enemy unit ends a move within 12" of a Hydra Infantry unit of 10 or more models. The Hydra unit moves up to D6 plus its Initiative Characteristic in inches toward the triggering unit, and must end closer to it.
+**Advanced Reaction: Swarming Tide** (Movement phase). Trigger: This Advanced Reaction may be declared in the Movement phase, immediately after an enemy unit ends a move within 12" of, and within line of sight of, a friendly unit composed entirely of models with the Hive Fleet (Hydra) special rule and the Infantry Unit Type that currently numbers 10 or more models. Effect: Every model in the reacting Hydra unit may immediately make a move of up to D6 + its Initiative Characteristic in inches directly toward the triggering enemy unit, and must end this move closer to that enemy unit than where it started. This move ignores Difficult Terrain, though it may not bring any model within 1" of an enemy model.
 
-**Warlord Trait: Brood Mother.** Once per game, at the start of your turn, the Warlord may return D6 slain models to one friendly Termagant or Hormagaunt unit within 12".
+**Warlord Trait: Brood Mother.** Once per battle, at the start of the controlling player's Movement phase while the Warlord is on the battlefield, the Warlord may restore D6 previously slain models to a single friendly Termagant Brood or Hormagaunt Brood within 12" (placed in unit coherency and more than 1" away from enemy models; this cannot take the unit above its starting strength). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.
 
 ### Jormungandr
 
-_Burrowing swarms that tunnel beneath their prey and erupt from the ground._
+_Masters of subterranean warfare, the broods of Jormungandr tunnel deep beneath planetary crusts ahead of the main invasion, erupting from hidden sinkholes and seismic fissures behind enemy lines._
 
-Units with Hive Fleet (Jormungandr) gain the following:
+**Hive Fleet Trait: Subterranean Terror.** Units composed entirely of models with the Hive Fleet (Jormungandr) special rule gain the following benefits:
 
-- **Deep Burrowers:** Infantry units gain the Burrower biomorph at no cost, whatever their size and even if they could not normally take it.
-- **Tunnel Networks:** Infantry units that did not Advance in their last turn count as being in cover, with a 6+ cover save, if they are not already†.
+- **Deep Burrowers:** Every unit composed entirely of models with the Infantry Unit Type gains the Burrower biomorph at no additional points cost, regardless of its unit size or normal wargear restrictions.
+- **Tunnel Networks:** Units composed entirely of models with the Infantry Unit Type that did not make a Run move in their preceding Shooting phase (and did not arrive from Reserves on the current turn) gain a 6+ Cover Save against Shooting Attacks, even if standing in open ground.
 
-**Advanced Reaction: Burrow** (Movement phase). Trigger: an enemy unit ends a move within 12" of a Jormungandr Infantry unit. The Jormungandr unit gains Shrouded (5+) until the start of its controlling player's next turn.
+**Advanced Reaction: Burrow** (Movement phase). Trigger: This Advanced Reaction may be declared in the Movement phase, immediately after an enemy unit ends a move within 12" of a friendly unit composed entirely of models with the Hive Fleet (Jormungandr) special rule and the Infantry Unit Type. Effect: Every model in the reacting Jormungandr unit gains the Shrouded (5+) special rule until the start of the controlling player's next turn (representing the broods sinking partially beneath loose soil and rubble).
 
-**Warlord Trait: Subterranean Hunter.** The Warlord and any unit it joins gain the Burrower biomorph, and may re-roll the Reserves roll to arrive.
+**Warlord Trait: Subterranean Hunter.** A Warlord with this Trait, and any unit it joins, gains the Burrower biomorph (if it does not already possess it), and the controlling player may re-roll failed Reserves rolls made for the Warlord's unit. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.
 
 ### Kraken
 
-_A fleet of fast, splintering tendrils that strike from every direction at once._
+_Fracturing into hundreds of hyper-mobile splinter tendrils, Hive Fleet Kraken encircles its prey with blinding speed, striking isolated flanks from ambush before vanishing back into the shadows._
 
-Units with Hive Fleet (Kraken) gain the following:
+**Hive Fleet Trait: Questing Tendrils.** Units composed entirely of models with the Hive Fleet (Kraken) special rule gain the following benefits:
 
-- **Ambush Predators:** Infantry units of 20 or fewer models gain the Outflank special rule†.
-- **Questing Tendrils:** the unit gains Fleet (1).
+- **Ambush Predators:** Units composed entirely of models with the Infantry Unit Type that number 20 or fewer models gain the Outflank special rule.
+- **Questing Tendrils:** All models in the unit gain the Fleet (1) special rule (or increase an existing Fleet (X) value by +1).
 
-**Advanced Reaction: Lightning Reflexes** (Shooting phase). Trigger: a Kraken unit is selected as the target of a Shooting Attack. Before the attack is resolved, the unit moves up to D6 plus its Initiative Characteristic in inches. If it is then out of range or line of sight, the attack is lost.
+**Advanced Reaction: Lightning Reflexes** (Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, immediately after an enemy unit selects a friendly unit composed entirely of models with the Hive Fleet (Kraken) special rule as the target of a Shooting Attack, before any To Hit rolls are made. Effect: Before the enemy Shooting Attack is resolved, every model in the reacting Kraken unit may immediately move up to D6 + its Initiative Characteristic in inches (treating Difficult Terrain as normal). If this move takes the entire reacting unit out of range or out of line of sight of the attacking enemy unit, the enemy Shooting Attack is immediately lost and may not be redirected to another target.
 
-**Warlord Trait: Swift Hunter.** The Warlord and any unit it joins add 2 to their Movement Characteristic.
+**Warlord Trait: Swift Hunter.** A Warlord with this Trait, and any unit it joins, adds +2" to its Movement Characteristic. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.
 
 ### Kronos
 
-_A fleet bred to shoot, and to drown the psychic light of its prey in the Shadow in the Warp._
+_A specialized bio-fleet evolved specifically to hunt prey tainted by the Empyrean, Kronos saturates the battlefield with long-range bio-plasma barrages while projecting a suffocating psychic shadow that smothers enemy sorcery._
 
-Units with Hive Fleet (Kronos) gain the following:
+**Hive Fleet Trait: Psychic Abyss.** Units composed entirely of models with the Hive Fleet (Kronos) special rule gain the following benefits:
 
-- **Bio-barrage:** the unit may re-roll to-hit rolls of 1 with ranged weapons.
-- **Deepening Shadow:** the range of Shadow in the Warp for Kronos models is 18" instead of 12".
+- **Bio-Barrage:** Models in the unit may re-roll all failed To Hit rolls of 1 when making Shooting Attacks with ranged weapons.
+- **Deepening Shadow:** Models in the unit with the Shadow in the Warp special rule increase the range of that rule from 12" to 18".
 
-**Advanced Reaction: Bio-retaliation** (Shooting phase). Trigger: a Kronos unit is selected as the target of a Shooting Attack. The Kronos unit makes a Shooting Attack against the attacking unit before that attack is resolved. Casualties it causes are removed before the enemy attack is resolved and cannot fire back.
+**Advanced Reaction: Bio-Retaliation** (Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, immediately after an enemy unit selects a friendly unit composed entirely of models with the Hive Fleet (Kronos) special rule as the target of a Shooting Attack, before any To Hit rolls are made. Effect: Before the enemy Shooting Attack is resolved, the reacting Kronos unit may immediately make a full Shooting Attack targeting the active enemy unit (resolving all weapons at full Ballistic Skill). Any enemy models removed as casualties from this reaction are removed before the triggering enemy unit resolves its own Shooting Attack, and may not fire back.
 
-**Warlord Trait: Soul Hunger.** Enemy Psykers within 18" of the Warlord subtract a further 1 from their Leadership when making Psychic checks.
+**Warlord Trait: Soul Hunger.** Enemy models with the Psyker Unit Sub-type (or units with Brotherhood Psyker) within 18" of a Warlord with this Trait suffer an additional -1 penalty to their Leadership Characteristic when making Psychic checks (stacking with Shadow in the Warp), and suffer Perils of the Warp on any double rolled. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.
 
 ### Leviathan
 
-_The greatest of the hive fleets, bound together by an unbreakable synaptic web._
+_The largest and most cohesive of all Hive Fleets, Leviathan strikes from beneath the galactic plane with vast, tightly coordinated swarms bound together by an unbreakable synaptic network._
 
-Units with Hive Fleet (Leviathan) gain the following:
+**Hive Fleet Trait: Synaptic Imperative.** Units composed entirely of models with the Hive Fleet (Leviathan) special rule gain the following benefits:
 
-- **Synaptic Web:** the range of the Synapse Creature rule is increased by 3" for Leviathan Synapse creatures.
-- **Unyielding Will:** units within range of a Leviathan Synapse creature have Feel No Pain (6+) against Shooting Attacks, or improve an existing Feel No Pain by 1 against Shooting Attacks.
+- **Synaptic Web:** Models in the unit with the Synapse Creature special rule increase the range of their Synapse aura by +3".
+- **Unyielding Will:** Friendly units with the Hive Fleet (Leviathan) special rule that are within range of at least one friendly Leviathan Synapse Creature gain the Feel No Pain (6+) special rule against Shooting Attacks (or improve an existing Feel No Pain roll by +1, to a maximum of 4+, against Shooting Attacks).
 
-**Advanced Reaction: Synaptic Shielding** (Shooting phase). Trigger: a Leviathan Synapse creature is selected as the target of a Shooting Attack while within 6" of a friendly Tyranid Infantry unit. Against that attack, the Synapse creature gains Shrouded (5+).
+**Advanced Reaction: Synaptic Shielding** (Shooting phase). Trigger: This Advanced Reaction may be declared in the Shooting phase, immediately after an enemy unit selects a friendly Hive Fleet (Leviathan) model with the Synapse Creature special rule as the target of a Shooting Attack while that Synapse Creature is within 6" of at least one friendly Tyranids unit composed entirely of models with the Infantry Unit Type, before any To Hit rolls are made. Effect: Against that Shooting Attack, the reacting Synapse Creature gains the Shrouded (5+) special rule (representing lesser organisms throwing themselves into the path of incoming fire).
 
-**Warlord Trait: Will of the Hive Mind.** The range of the Warlord's Synapse Creature rule is increased by a further 6".
+**Warlord Trait: Will of the Hive Mind.** A Warlord with this Trait increases the range of its Synapse Creature special rule by a further +6" (for a total bonus of +9" when combined with Synaptic Web). In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Shooting phase, as long as the Warlord has not been removed as a casualty.
 
 ## Warlord Traits
 
-A Tyranid Warlord chooses one Warlord Trait: one of the three generic traits below, or the Warlord Trait of its hive fleet.
+When selecting a Warlord for an army with the Tyranids faction trait, the controlling player may select one of the three generic Warlord Traits below, or the specific Warlord Trait associated with their Warlord's Hive Fleet.
 
 ### Adaptive Biology
 
-_Wounds that would kill a lesser beast only teach this one how to survive._
+_Wounds that would cripple or slay a lesser organism merely trigger rapid cellular mutation in this apex bio-form, hardening its chitin and accelerating its regenerative tissues._
 
-The Warlord gains Feel No Pain (5+), or improves an existing Feel No Pain by 1. In addition, once per game, a friendly Tyranid unit within 12" of the Warlord may make the Swarm Response reaction without spending a point of the Reaction Allotment†.
+A Warlord with this Trait gains the Feel No Pain (5+) special rule (or improves an existing Feel No Pain roll by +1, to a maximum of 4+). In addition, once per game, while the Warlord is on the battlefield, a single friendly unit with the Tyranids faction trait within 12" of the Warlord may declare the Swarm Response Advanced Reaction without spending a point from the controlling player's Reaction Allotment.
 
 ### Alpha Leader
 
-_The apex predator of the swarm, driving lesser beasts into the kill._
+_An apex predator whose primal dominance drives surrounding broods into a relentless feeding frenzy, pushing gaunt swarms and warrior packs forward at terrifying speed._
 
-Friendly Tyranid units within 12" of the Warlord may re-roll failed charge distances. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment†.
+Friendly units composed entirely of models with the Tyranids faction trait within 12" of a Warlord with this Trait may re-roll failed Charge Distance rolls. In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Assault phase, as long as the Warlord has not been removed as a casualty.
 
 ### Synaptic Lynchpin
 
-_The Hive Mind's will flows through this creature like a storm._
+_Serving as a living relay node for the Hive Mind's overarching intelligence, this creature floods nearby broods with relentless synaptic commands._
 
-The range of the Warlord's Synapse Creature rule is increased by 3". In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Movement phase, above its normal Reaction Allotment†.
+A Warlord with this Trait increases the range of its Synapse Creature special rule by +3". In addition, an army whose Warlord has this Trait may make one additional Reaction during the opposing player's Movement phase, as long as the Warlord has not been removed as a casualty.
 
 ## Force Organisation and Rites of War
 
@@ -204,80 +214,99 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Heavy Support | Carnifexes, Screamer-Killer, Biovores, Barbgaunts, Trygon, Mawloc, Tyrannofex, Toxicrene, Exocrine, Norn Assimilator, Sporocyst, Dimachaeron, Stone-crusher Carnifex |
 | Lord of War | Hierophant Bio-titan, Harridan, Scythed Hierodule, Barbed Hierodule |
 
-A Tyranid Detachment may take one Rite of War, chosen when the army is built. Each has its own Effects and Limitations.
+When building a Primary Detachment with the Tyranids faction trait, the controlling player may select a single Rite of War, provided the Detachment meets all listed Prerequisites and Limitations. Only one Rite of War may be selected per Detachment, and its Effects and Limitations apply for the duration of the battle.
 
 ### Rite of War: Endless Swarm
 
-_The hive fleet does not count its losses. For every brood that falls, two more pour over the corpses, until the enemy runs out of bullets long before the swarm runs out of bodies._
+_The Hive Fleet does not count its losses. For every brood that falls, two more pour over the corpses, until the enemy runs out of ammunition long before the swarm runs out of bodies._
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a Hive Tyrant or a Tervigon as the army's Warlord.
 
 **Effects**
 
-- Termagant and Hormagaunt units in a Detachment using this Rite of War may contain up to 40 models, and gain the Without Number (5+) special rule. Ripper Swarms and Gargoyles in a Detachment using this Rite of War gain the Without Number (6+) special rule.
+- Tide of Chitin and Claws: Termagant Broods and Hormagaunt Broods in a Detachment using this Rite of War may increase their maximum unit size to up to 40 models (at their standard points cost per additional model), and gain the Without Number (5+) special rule.
+- Relentless Skirmishers: Ripper Swarms and Gargoyle Broods in a Detachment using this Rite of War gain the Without Number (6+) special rule.
 
 **Limitations**
 
-- A Detachment using this Rite of War must have a Hive Tyrant or Tervigon as its Warlord.
-- A Detachment using this Rite of War may not include any Lords of War, and may include no more than two Heavy Support choices.
+- A Detachment using this Rite of War may not include any Lords of War choices.
+- A Detachment using this Rite of War may include no more than two Heavy Support choices.
 - This Rite of War may not be used by an Allied Detachment.
 
 ### Rite of War: Hidden Brood
 
-_Long before the hive fleet arrives, its vanguard is already waiting in the dark places of the world: in the sewers, the mine-shafts and the cargo holds, watching with alien patience for the moment to strike._
+_Long before the Hive Fleet arrives in orbit, its vanguard organisms are already waiting in the dark places of the world, lurking in the sewers, mine-shafts, and sub-levels, watching with alien patience for the exact moment to strike._
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a Broodlord as the army's Warlord.
 
 **Effects**
 
-- Genestealer units in a Detachment using this Rite of War may be taken as Troops choices, gain the Line Sub-type and may contain up to 20 models.
-- Genestealer units and Broodlords in a Detachment using this Rite of War gain the Infiltrate and Move Through Cover special rules.
-- A Genestealer unit in a Detachment using this Rite of War that deployed using the Infiltrate special rule may not be targeted by Shooting Attacks during the first game turn.
+- Vanguard Predators: Genestealer Broods in a Detachment using this Rite of War may be selected as Troops choices, gain the Line Unit Sub-type, and may increase their maximum unit size to up to 20 models (at their standard points cost per additional model).
+- Lurking in the Shadows: All Genestealer Broods and Broodlords in a Detachment using this Rite of War gain the Infiltrate and Move Through Cover special rules (if they do not already possess them).
+- Unseen Ambush: Any Genestealer Brood in a Detachment using this Rite of War that deployed using the Infiltrate special rule may not be selected as the target of Shooting Attacks during the first game turn (unless it has already made a Shooting Attack or declared a Charge).
 
 **Limitations**
 
-- A Detachment using this Rite of War must have a Broodlord as its Warlord.
-- A Detachment using this Rite of War must include at least two Genestealer units.
-- A Detachment using this Rite of War may not include any Lords of War, and may not include more Monstrous units than Genestealer units.
+- A Detachment using this Rite of War must include at least two Genestealer Broods.
+- A Detachment using this Rite of War may not include any Lords of War choices.
+- A Detachment using this Rite of War may not include more units containing models with the Monstrous Unit Sub-type than it includes Genestealer Broods.
 - This Rite of War may not be used by an Allied Detachment.
 
 ### Rite of War: Monstrous Host
 
-_When the Hive Mind meets a foe that cannot be drowned in numbers, it sends its war-beasts instead: a stampede of chitin and bone that shrugs off fire meant for tanks._
+_When the Hive Mind encounters prey that cannot be drowned in numbers alone, it unleashes its towering apex bio-forms instead: a living avalanche of reinforced chitin, crushing claws, and bio-plasma that shrugs off ordnance meant for battle tanks._
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a Hive Tyrant, The Swarmlord, or a Norn Emissary as the army's Warlord.
 
 **Effects**
 
-- Tyranid Warriors may be taken as Compulsory Troops choices in a Detachment using this Rite of War, lose the Support Squad special rule and gain the Line Sub-type.
+- Synaptic Bastions: Tyranid Warrior Broods may be selected as Compulsory Troops choices in a Detachment using this Rite of War. When selected in this manner, they lose the Support Squad special rule and gain the Line Unit Sub-type.
 
 **Limitations**
 
-- A Detachment using this Rite of War must have a Hive Tyrant, The Swarmlord or a Norn Emissary as its Warlord.
-- A Detachment using this Rite of War may not include more non-Monstrous Infantry units than Monstrous units.
+- A Detachment using this Rite of War may not include more non-Monstrous Infantry units than it includes units containing models with the Monstrous Unit Sub-type.
 - This Rite of War may not be used by an Allied Detachment.
 
 ### Rite of War: Skytyrant Swarm
 
-_The sky darkens with leathery wings as a winged tyrant leads its flock in a howling descent, falling upon the enemy from every direction at once._
+_The sky darkens beneath a living storm of leathery wings as a Winged Hive Tyrant leads its aerial broods in a howling descent, striking the enemy's flanks and rear from every direction at once._
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a Hive Tyrant equipped with Wings as the army's Warlord.
 
 **Effects**
 
-- Gargoyles and Tyranid Shrikes may be taken as Troops choices in a Detachment using this Rite of War and gain the Line Sub-type.
+- Predators of the Upper Air: Gargoyle Broods and Tyranid Shrike Broods may be selected as Troops choices in a Detachment using this Rite of War, and gain the Line Unit Sub-type.
 
 **Limitations**
 
-- A Detachment using this Rite of War must have a Hive Tyrant with wings as its Warlord.
-- Every Infantry unit in a Detachment using this Rite of War must have wings or the Deep Strike special rule, or start the game embarked.
+- Every Infantry unit in a Detachment using this Rite of War must be equipped with Wings, possess the Deep Strike special rule, or begin the battle embarked inside a Transport (such as a Tyrannocyte).
 - This Rite of War may not be used by an Allied Detachment.
 
 ### Rite of War: Subterranean Assault
 
-_The ground shakes, the earth splits, and the swarm erupts from below, burrowing beasts tearing open tunnels for the broods that follow._
+_The ground trembles, bedrock fractures, and the swarm erupts from beneath the enemy's boots as colossal burrowing beasts tear open subterranean tunnels for the broods that follow._
+
+**Prerequisites**
+
+- A Detachment using this Rite of War must include a Trygon Prime or a Tyranid Prime as the army's Warlord.
 
 **Effects**
 
-- Trygons, Mawlocs, Raveners and units with Hive Fleet (Jormungandr) in a Detachment using this Rite of War that arrive by Deep Strike or Subterranean Assault may arrive from the first game turn.
-- These units do not scatter if they arrive within 12" of a friendly Trygon or Mawloc†.
+- First-Wave Breach: Trygons, Mawlocs, Ravener Broods, and any unit with the Hive Fleet (Jormungandr) special rule in a Detachment using this Rite of War that are placed into Reserves to arrive via Deep Strike or Subterranean Assault may make Reserves rolls starting from the first game turn (instead of waiting until Turn 2).
+- Tectonic Beacons: Friendly units arriving via Deep Strike or Subterranean Assault in a Detachment using this Rite of War do not scatter when placed on the battlefield, provided the first model placed is within 12" of a friendly Trygon or Mawloc that is already on the battlefield (and was not placed during the same turn).
 
 **Limitations**
 
-- A Detachment using this Rite of War must have a Trygon Prime or Tyranid Prime as its Warlord.
-- A Detachment using this Rite of War may not include any Flyers, and may include no more than one Lord of War.
+- A Detachment using this Rite of War may not include any Flyers.
+- A Detachment using this Rite of War may include no more than one Lord of War choice.
 - This Rite of War may not be used by an Allied Detachment.
 
 ## HQ
