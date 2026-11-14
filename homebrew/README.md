@@ -61,6 +61,12 @@ loading. The script prints anything in the doc it could not place.
   Dedicated Transports section says "may not take" one (spores, winged units) never get it.
 - The army selection: hive fleet (with its rules and advanced reaction), Rite of War,
   and the army-wide advanced reaction.
+- Rites of War and sub-faction rules may use the book's long phrasing as well as the short one: "Termagant Broods
+  and Hormagaunt Broods ... may be selected as Troops choices, gain the Line Unit Sub-type, and may increase their
+  maximum unit size to up to 40 models"; a "When selected in this manner, they ..." sentence that follows; "at
+  least two Genestealer Broods"; "Units composed entirely of models with the Infantry Unit Type that number 20 or
+  fewer models gain ..."; and "A Warlord with this Trait, and any unit it joins, gains ...". A Prerequisites list
+  is read with the Limitations.
 - Warlords: every Character model in an HQ unit (or, in an HQ with no Character, its own model, such
   as the Trygon Prime) may be the Warlord, using the game system's
   Warlord entry, so an army must have exactly one. A model whose datasheet says it "must be

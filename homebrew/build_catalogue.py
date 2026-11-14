@@ -271,6 +271,20 @@ def norm(s):
 IRREGULAR = {"incubi": "incubus", "automata": "automaton", "servo-automata": "servo-automaton", "ballistarii": "ballistarius"}
 
 
+def plain_subject(text):
+    """The rules' long form in the short one the parsers read: "Units composed entirely of models with the Infantry
+    Unit Type that number 20 or fewer models gain" is "Infantry units of 20 or fewer models gain", and "A Warlord with
+    this Trait, and any unit it joins, gains" is "The Warlord and any unit it joins gain"."""
+    text = re.sub(r"\b(?:Every|Each|Any) unit composed entirely of models with the (\w+) Unit Type gains\b",
+                  r"\1 units gain", text)
+    text = re.sub(r"\bUnits composed entirely of models with the (\w+) Unit Type that number (\d+) or (fewer|more) models"
+                  r"(?: at the start of the \w+ phase)?", r"\1 units of \2 or \3 models", text)
+    text = re.sub(r"\bUnits composed entirely of models with the (\w+) Unit Type\b", r"\1 units", text)
+    text = re.sub(r"\bA Warlord with this Trait, and any unit it joins, gains\b", "The Warlord and any unit it joins gain",
+                  text)
+    return text
+
+
 def singular(word):
     w = norm(word)
     if w in IRREGULAR:
@@ -2344,6 +2358,7 @@ class Builder:
         for sub in (fleets["subs"] if fleets else []):
             fid = make_id("fleet", self.faction, sub["title"])
             for ln in sub["lines"]:
+                ln = plain_subject(ln)
                 m = re.search(r"(\w+) units gain the (.+?) biomorph", ln)
                 kind, bio = (m.group(1), m.group(2)) if m and "Warlord" not in ln else (None, None)
                 for ds in self.datasheets if kind else []:
@@ -2377,8 +2392,10 @@ class Builder:
     def rite_units(self, subject):
         """'Termagant and Hormagaunt units', 'Canoptek Wraiths and Canoptek Scarabs': the datasheets named."""
         subject = re.sub(r"\s+in a Detachment using this Rite of War.*$", "", subject.strip())
+        subject = subject.split(": ")[-1]  # "Tide of Chitin and Claws: Termagant Broods": the effect's label goes
         found = []
-        parts = [re.sub(r"\s+units?$", "", p.strip()) for p in re.split(r",\s*(?:and\s+)?|\s+and\s+", subject)]
+        parts = [re.sub(r"\s+(?:units?|broods?)$", "", p.strip(), flags=re.I)
+                 for p in re.split(r",\s*(?:and\s+)?|\s+and\s+", subject)]
         tail = parts[-1].split()[-1] if parts and parts[-1] else ""
         for part in parts:
             if not part or part.lower().startswith(("every", "any", "all", "these", "units")):
@@ -2397,6 +2414,7 @@ class Builder:
         """Split a Rite's effects into (units, verb phrase): 'Pathfinders may be taken as Troops and gain
         the Line sub-type, and Strike Teams and Pathfinders gain Infiltrate'."""
         out = []
+        last = []
         for sentence in re.split(r"(?<=\.)\s+", text.replace("†", "")):
             units = []
             for clause in re.split(r",\s+and\s+(?=[A-Z])|;\s*", sentence.strip().rstrip(".")):
@@ -2405,7 +2423,10 @@ class Builder:
                     continue
                 subject, verbs = clause[:m.start()], clause[m.end():]
                 named = self.rite_units(subject) if not re.match(self.RITE_VERB, clause) else []
+                if not named and re.search(r"\bthey\b", subject, re.I):
+                    named = last  # "When selected in this manner, they lose the Support Squad special rule"
                 units = named or units
+                last = units or last
                 for phrase in re.split(r",?\s+(?:and\s+)?(?=%s)|,\s+(?=%s)" % (self.RITE_VERB, self.RITE_VERB), verbs):
                     out.append((units, phrase.strip()))
         return out
@@ -2421,6 +2442,10 @@ class Builder:
         for rite in self.rite_specs:
             rid = rite["id"]
             for units, phrase in self.rite_effects(" ".join(rite["effects"])):
+                phrase = re.sub(r"^may be selected as ", "may be taken as ", phrase)
+                phrase = re.sub(r"line unit sub-type", "line sub-type", phrase, flags=re.I)
+                phrase = re.sub(r"^may increase their maximum unit size to up to (\d+) models", r"may contain up to \1 models",
+                                phrase)
                 for ds in units:
                     uid = self.units[ds["name"]]
                     unit = self.shared_entries.find(f"selectionEntry[@id='{uid}']")
@@ -2429,7 +2454,7 @@ class Builder:
                     slot = re.match(r"may be taken as (Compulsory )?(Troops|Fast Attack|Elites|Heavy Support)", phrase)
                     if slot:
                         self.rite_slot(links, rite, ds, uid, slot.group(2),
-                                       bool(slot.group(1)) or ("line sub-type" in norm(" ".join(rite["effects"]))
+                                       bool(slot.group(1)) or (bool(re.search(r"line (?:unit )?sub-type", norm(" ".join(rite["effects"]))))
                                                                and "non-compulsory" not in norm(phrase)))
                     elif re.match(r"gains? the line sub-type", phrase, re.I):
                         self.rite_line(unit, rid)
@@ -2518,7 +2543,7 @@ class Builder:
                     m = re.match(r"- \*\*.+?:\*\* (.+)", ln)
                     if not m:
                         continue
-                    text = m.group(1).replace("†", "")
+                    text = plain_subject(m.group(1).replace("†", ""))
                     self.granted_transports(text, fid)
                     for sentence in re.split(r"(?<=\.)\s+", text):
                         g = re.match(r"([A-Z][\w ]+?)(?: of (\d+) or (fewer|more) models)? (?:have|gain)(?: the)? (.+?)"
@@ -2655,7 +2680,7 @@ class Builder:
                     self.rite_error(rite, clause, lambda c, cat=cat, n=n: el(c, "condition", type="greaterThan", value=n,
                         field="selections", scope="force", childId=cat, shared=True, includeChildSelections=True, includeChildForces=False))
                 continue
-            m = re.match(r"must include at least (\w+) (.+?) units?$", clause)
+            m = re.match(r"must include at least (\w+) (.+?) (?:units?|broods?)$", clause, re.I)
             if m:
                 n = NUMBER_WORDS.get(m.group(1), 1)
                 for ds in self.rite_units(m.group(2)):
