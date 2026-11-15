@@ -961,6 +961,11 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Rule text only: the Arcuitor's Hunter Killer swap, the Mechadendrite Hive's "if it does not take" limits, the
   Crusader Host's Questoris-only and Primary-only limits and the Skitariiax-Protectorate's Compulsory Troops
   limit. It refuses to run on a catalogue that already has the expansion.
+- `python3 homebrew/fix_default_picks.py` points five option groups the expansion scripts made at their standard
+  option (the Arvus Transport's and Solar Auxilia hull Heavy Stubber, the Knight Vestal's Vratine Armour, the
+  Armoured Command Section's Battle Cannon and the Valdor's Neutron Beam Laser): their default had pointed at an id
+  that did not exist, so nothing was preselected. Groups upstream BSData left the same way are not touched.
+  Running it again changes nothing.
 - `python3 homebrew/armoured_fist_limits.py` enforces the Armoured Fist Pattern Cohorts Cohort Doctrine's limits in
   the official LI - Solar Auxilia catalogue: the army may take no Fortifications and the Detachment no model with
   Movement 0 or '-' (the Tarantula Sentry Gun, Sabre Platform and Earthshaker Platform), each an error on the
