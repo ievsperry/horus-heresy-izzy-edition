@@ -410,7 +410,9 @@ def blocks(lines):
             r"(Unit Composition|Wargear|Unit Type|Special Rules|Options|Dedicated Transport|Transport|Access Points)",
             ln.strip())
         dt = re.match(r"Dedicated Transport: (.+)", ln.strip())
-        if m:
+        if m and m.group(1) == "Legacy Unit":
+            out[key].append(ln)  # "**Legacy Unit**" (Orks): a note on the unit, not a heading over its profile
+        elif m:
             key = m.group(1)
             out[key] = []
         elif dt:  # "Dedicated Transport: the unit may select an Arvus Transport, ..."
@@ -441,7 +443,8 @@ def parse_datasheet(title, lines, slot):
         name, slot = km.group(1), km.group(2)
     b = blocks(lines)
     ds = {"name": name, "points": int(m.group(2)), "slot": slot, "limit": int(limit.group(1)) if limit else None,
-          "notes": [strip_md(l) for l in b["_pre"] if l.startswith("_")]}
+          "notes": [strip_md(l) if l.startswith("_") else "Legacy Unit." for l in b["_pre"]
+                    if l.startswith("_") or l.strip() == "**Legacy Unit**"]}
     stat_rows = split_table(b["_pre"])
     ds["profiles"] = []
     header = stat_rows[0][1:] if stat_rows else []
@@ -680,8 +683,10 @@ class Builder:
 
     def wargear_sections(self):
         # "## Minor Psychic Powers" (Grey Knights): each power is picked like a Thousand Sons Minor Arcana
+        # "## Grot Attendants" (Orks): models bought as wargear; "## Orky Artifacts": an artifact under each heading
         return [s for s in self.sections
-                if s["title"] in ("Biomorphs", "Minor Psychic Powers") or "Wargear" in s["title"]]
+                if s["title"] in ("Biomorphs", "Minor Psychic Powers", "Grot Attendants") or "Wargear" in s["title"]
+                or re.search(r"\bArte?i?facts?\b", s["title"])]
 
     def build_weapons(self):
         rows, aux = [], []
@@ -833,6 +838,13 @@ class Builder:
             biomorphs = bio["title"] == "Biomorphs"
             for sub in bio["subs"]:
                 name = sub["title"]
+                body = " ".join(sub["lines"])
+                av = re.search(r"\*\*Available to:\*\* (.+?)\. \*\*Cost:\*\* (.+?)\.?$", body.strip())
+                if re.search(r"\bArte?i?facts?\b", bio["title"]) and av:
+                    # "### Da Finkin' Kap" / effect / "**Available to:** Warboss or Big Mek. **Cost:** +25 points."
+                    effect = " ".join(paragraphs([ln for ln in sub["lines"] if not ln.startswith("**Available to:**")]))
+                    self.build_artefacts(["Artefact", "Who", "Effect", "Cost"], [[name, av.group(1), effect, av.group(2)]], "")
+                    continue
                 tables = section_tables({"lines": sub["lines"], "subs": []})
                 weapon_rows = [r[0] for h, rows in tables if h[0] == "Weapon" for r in rows]
                 if weapon_rows and norm(name) in self.weapons:
@@ -4798,7 +4810,7 @@ class Builder:
                 if key.startswith(prefix) and (wanted is None or key[len(prefix):] in wanted):
                     out.append((self.kombi_entry(km.group(1), self.weapon_names[key], wid), self.weapon_names[key], None))
             return out or None
-        if "artefact" in norm(name) or "relic" in norm(name):
+        if "artefact" in norm(name) or "artifact" in norm(name) or "relic" in norm(name):
             return [(eid, aname, cost) for aname, eid, cost in self.artefacts] or None
         return None
 
