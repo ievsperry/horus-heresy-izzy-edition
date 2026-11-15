@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3858-8951-c1f7-3986" name="Homebrew - Adepta Sororitas" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3858-8951-c1f7-3986" name="Homebrew - Adepta Sororitas" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="1bb1-1c40-9f73-9fdb" name="Adepta Sororitas for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Adepta Sororitas" />
   </publications>
@@ -177,6 +177,16 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Armoured Convent" hidden="false" id="20f3-4160-8f7e-e3c1" publicationId="1bb1-1c40-9f73-9fdb">
+              <modifiers>
+                <modifier type="set" field="a05d-39a1-8107-9a41" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a24f-12d8-36c1-f477" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a05d-39a1-8107-9a41" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Prerequisites" id="3edd-f499-085b-fce4" hidden="false">
                   <description>A Detachment using this Rite of War must include Morvenn Vahl or a Canoness with the Order Commander (or Master of the Legion) special rule, and this model must be the army's Warlord.</description>
@@ -259,9 +269,21 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                     <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9888-144b-d569-830a" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
+                <modifier type="set" field="d61b-3c95-1985-d691" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a24f-12d8-36c1-f477" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="bb5d-642d-029f-b3b1" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="d4f2-6da5-b6de-06ec" shared="true" includeChildSelections="true" includeChildForces="true" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="065b-1c11-59a6-3247" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d61b-3c95-1985-d691" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb5d-642d-029f-b3b1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
                 <rule name="Prerequisites" id="f464-40fa-c217-127d" hidden="false">
@@ -295,9 +317,15 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" field="d9b2-bad1-6337-c9d1" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a24f-12d8-36c1-f477" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f2f-9370-ab2c-5f9e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9b2-bad1-6337-c9d1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
                 <rule name="Prerequisites" id="75a8-4f22-6964-9ea5" hidden="false">
@@ -369,9 +397,15 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" field="adcf-f748-3c4e-5095" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="20ef-cd01-a8da-376e" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f074-b72f-96db-a70e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adcf-f748-3c4e-5095" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
                 <rule name="Prerequisites" id="907a-b614-7e31-c39f" hidden="false">
@@ -407,9 +441,27 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" field="fd9a-07c9-d9fe-9cd5" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7031-469a-1aeb-eab0" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="3260-1cab-8f8c-f1e7" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a24f-12d8-36c1-f477" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="1f9b-0653-de99-f440" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="d4f2-6da5-b6de-06ec" shared="true" includeChildSelections="true" includeChildForces="true" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc74-a486-8c51-b8a5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd9a-07c9-d9fe-9cd5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3260-1cab-8f8c-f1e7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f9b-0653-de99-f440" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
                 <rule name="Prerequisites" id="4df8-1fef-f729-6170" hidden="false">

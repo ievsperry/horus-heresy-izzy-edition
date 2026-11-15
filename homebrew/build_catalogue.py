@@ -364,9 +364,113 @@ def normalise_headings(text):
     return "\n".join(out)
 
 
+def normalise_rules(text):
+    """Docs written in the newer rules layout (the Leagues of Votann doc) as the Builder reads them:
+    - "## Votann Warlord Traits" with "**Name.** text" paragraphs: "## Warlord Traits" with a "### Name" each;
+    - "## Faction Advanced Reaction: X" sections: one "## Advanced Reaction" section, a later one a sub-section;
+    - a reaction head ("**Advanced Reaction: Hold the Hold** (Assault phase)") over "- **Trigger:**", "- **Effect:**"
+      and "- **Restriction(s):**" bullets: one paragraph, as reactions are written elsewhere;
+    - "### Rites of War" over "#### Name" with "**Requirement:**", "**Benefits**" and "**Limitations**": a
+      "### Rite of War: Name" each with Prerequisites, Effects and Limitations ("Your Warlord must be a Kahl" is
+      "Requires a Kahl as Warlord");
+    - "### Eye of the Ancestors" under the army-wide rules, with its lists and table: one army-wide rule paragraph;
+    - a "Name | Type | Phase | Effect" psychic table: "Power | Kind | Phase | Effect", and a weapon written
+      'Range: 18" · Str: 6 · AP: 3 · Type: Assault D6' as '18", S6, AP 3, Assault D6'."""
+    if not re.search(r"^#### |^## Faction Advanced Reaction|^## \w+ Warlord Traits$|^\| Name \| Type \| Phase", text, re.M):
+        return text
+    lines = text.split("\n")
+    out, i, section, seen_react, aw_insert = [], 0, "", False, None
+    in_rites = False
+    while i < len(lines):
+        ln = lines[i]
+        if ln.startswith("## "):
+            section = ln[3:].strip()
+            in_rites = False
+            if re.match(r"## \w+ Warlord Traits$", ln):
+                ln = "## Warlord Traits"
+                section = "Warlord Traits"
+            m = re.match(r"## Faction Advanced Reaction: (.+)$", ln)
+            if m:
+                ln = "### " + m.group(1) if seen_react else "## Advanced Reaction: " + m.group(1)
+                seen_react = True
+            if section == "Army-wide Special Rules":
+                out.append(ln)
+                i += 1
+                while i < len(lines) and not lines[i].startswith("#"):  # its own paragraphs, then the rule
+                    out.append(lines[i])
+                    i += 1
+                aw_insert = len(out)
+                continue
+        elif section == "Warlord Traits":
+            m = re.match(r"\*\*(.+?)\.\*\* (.+)$", ln)
+            if m:
+                out += ["### " + m.group(1), "", m.group(2)]
+                i += 1
+                continue
+        if ln.strip() == "### Rites of War":
+            in_rites = True
+            i += 1
+            continue
+        if in_rites:
+            m = re.match(r"#### (.+)$", ln)
+            if m:
+                ln = "### Rite of War: " + m.group(1)
+            m = re.match(r"\*\*Requirement:\*\* (.+)$", ln)
+            if m:
+                req = re.sub(r"^Your Warlord must be a Votann HQ choice", "Requires any Votann HQ as Warlord", m.group(1))
+                req = re.sub(r"^Your Warlord must be (?:an? )?(.+?)\.$", r"Requires a \1 as Warlord.", req)
+                out += ["**Prerequisites**", "", "- " + req]
+                i += 1
+                continue
+            if ln.strip() == "**Benefits**":
+                ln = "**Effects**"
+        if ln.strip() == "### Eye of the Ancestors" and aw_insert is not None:
+            body, j = [], i + 1
+            while j < len(lines) and not lines[j].startswith("#"):
+                t = lines[j].strip()
+                if re.match(r"^\|[\s:|-]+\|$", t) or re.match(r"^\| Tokens \|", t):
+                    pass
+                elif t.startswith("|"):
+                    cells = [c.strip() for c in t.strip("|").split("|")]
+                    body.append("• " + cells[0] + (f" ({cells[1]})" if len(cells) > 2 else "") + ": " + cells[-1])
+                elif t.startswith("- "):
+                    body.append("• " + re.sub(r"\*\*(.+?)\*\*", r"\1", t[2:]))
+                elif t:
+                    body.append(re.sub(r"\*\*(.+?)\*\*", r"\1", t))
+                j += 1
+            out[aw_insert:aw_insert] = ["**Eye of the Ancestors.** " + " ".join(body), ""]
+            aw_insert += 2
+            i = j
+            continue
+        m = re.match(r"(\*\*(?:Advanced Reaction: )?.+?\*\* \([^)]+\)\.?(?: Once per battle\.)?)\s*$", ln)
+        if m and i + 2 < len(lines) and re.match(r"- \*\*Trigger:\*\*", lines[i + 2]):
+            head = m.group(1)
+            head = head if head.endswith(".") else head + "."
+            parts, j = [], i + 2
+            while j < len(lines) and (lines[j].startswith("- ") or lines[j].startswith("  - ")):
+                t = lines[j].strip()[2:]
+                t = re.sub(r"^\*\*(.+?):\*\*\s*", r"\1: ", t)
+                if lines[j].startswith("  - ") and parts:
+                    parts[-1] += (" " if parts[-1].endswith(":") else "; ") + t
+                else:
+                    parts.append(t)
+                j += 1
+            out.append(head + " " + " ".join(parts))
+            i = j
+            continue
+        if re.match(r"^\| Name \| Type \| Phase \| Effect \|", ln):
+            ln = "| Power | Kind | Phase | Effect |"
+        m = re.match(r'^(\| [^|]+ \| Psychic Weapon \| [^|]+ \| )Range: ([^·]+?) · Str: ([^·]+?) · AP: ([^·]+?) · Type: (.+?)( \|)$', ln)
+        if m:
+            ln = f"{m.group(1)}{m.group(2)}, S{m.group(3)}, AP {m.group(4)}, {m.group(5)}{m.group(6)}"
+        out.append(ln)
+        i += 1
+    return "\n".join(out)
+
+
 def parse_doc(text):
     """Split the doc into its ## sections, then ### sub-sections."""
-    text = normalise_headings(text)
+    text = normalise_rules(normalise_headings(text))
     sections = []
     cur = None
     sub = None
@@ -863,6 +967,8 @@ class Builder:
                 # its rules text is what comes before that.
                 own = []
                 for ln in sub["lines"]:
+                    if ln.startswith("**Cost:**"):
+                        continue  # "**Cost:** 15 points." before the item's text: the price, read below
                     if ln.startswith(("|", "**")):
                         break
                     own.append(ln)
@@ -1828,6 +1934,8 @@ class Builder:
             base = re.search(r"\+(\d+) points? per model for every other model", line)
         else:
             base = re.search(r"\+(\d+) points? per model\b(?! for)", line)
+            # "Cost: 15 points. Independent Characters only.": a single model's item at a flat price
+            base = base or re.match(r"Cost:\s*\+?(\d+) points?\.", line)
         monstrous = re.search(r"\+(\d+) points? per Monstrous model", line)
         gargantuan = re.search(r"\+(\d+) points? per Gargantuan model", line)
         return {"model": int(base.group(1)) if base else 0,
@@ -1848,9 +1956,11 @@ class Builder:
     @staticmethod
     def only_types(line):
         """'vehicles, Dreadnoughts and buggies only' -> the unit types that may take it."""
-        m = re.search(r"; (.+?) only", line)
+        m = re.search(r"; (.+?) only", line) or re.search(r"\.\s+([A-Z][^.;]*?) only\b", line)
         if not m:
             return None
+        if "independent character" in m.group(1).lower():  # not every Character
+            return ["Independent Character"]
         words = {"vehicle": "Vehicle", "dreadnought": "Dreadnought", "bugg": "Mechanised",
                  "mechanised": "Mechanised", "monstrous": "Monstrous", "infantry": "Infantry",
                  "cavalry": "Cavalry", "character": "Character", "gargantuan": "Gargantuan"}
@@ -2418,6 +2528,10 @@ class Builder:
             ds = ds or next((d for d in self.datasheets if forms(d["name"]) & forms(part)), None)
             ds = ds or next((d for d in self.datasheets if norm(d["name"]).startswith(norm(part) + " ")
                              or norm(d["name"]).endswith(" " + norm(part))), None)
+            if not ds and re.search(r"\s+squads?$", part, re.I):
+                # "Einhyr Hearthguard squads": the datasheet is "Einhyr Hearthguard" ("Paladin Squads" matched above)
+                bare = re.sub(r"\s+squads?$", "", part, flags=re.I)
+                ds = next((d for d in self.datasheets if forms(d["name"]) & forms(bare)), None)
             if ds and ds not in found:
                 found.append(ds)
         return found
@@ -2626,7 +2740,8 @@ class Builder:
 
     ALLIED_DETACHMENT = "d4f2-6da5-b6de-06ec"
     SLOT_WORDS = {"lords of war": "Lords of War", "lord of war": "Lords of War", "heavy support": "Heavy Support",
-                  "fast attack": "Fast Attack", "elites": "Elites", "troops": "Troops"}
+                  "fast attack": "Fast Attack", "elites": "Elites", "troops": "Troops", "fortification": "Fortifications",
+                  "dedicated transport": "Dedicated Transports"}
 
     def rite_banned(self, item):
         """'Lords of War', 'Flyers', 'any Gretchin', 'Heavy Support choices other than Broadsides',
@@ -2650,6 +2765,9 @@ class Builder:
                    or any("flying base" in norm(p["base"]) for p in d["profiles"])]
         elif norm(base).startswith("battlesuit"):
             out = [d for d in self.datasheets if any("Battlesuit" in t for t in d["types"]) or "battlesuit" in norm(d["name"])]
+        elif re.match(r"units with the (.+?) sub-type$", base, re.I):  # "units with the Wraith Sub-type"
+            word = re.match(r"units with the (.+?) sub-type$", base, re.I).group(1).lower()
+            out = [d for d in self.datasheets if d["name"] in self.units and self.ds_has(d, word)]
         else:
             word = re.sub(r"\s+(?:units?|of any kind)$", "", base)
             out = [d for d in self.datasheets if forms(d["name"]) & forms(word)
@@ -2704,7 +2822,17 @@ class Builder:
     def rite_class(self, phrase):
         """('slot', category id) or ('units', [datasheets]) for one side of a comparison."""
         p = re.sub(r"^(?:total|the)\s+", "", phrase.strip().rstrip("."), flags=re.I)
-        p = re.sub(r"\s+(?:combined|counted across all .*)$", "", p, flags=re.I)
+        p = re.sub(r"^(?:the\s+)?combined number of\s+", "", p, flags=re.I)
+        p = re.sub(r"\s+(?:combined|counted across all .*|in the Detachment)$", "", p, flags=re.I)
+        nc = re.search(r"\s*\(not counting (.+?)\)", p)
+        if nc:  # "Infantry units (not counting Brokhyr Thunderkyn and Independent Characters)"
+            kind, base = self.rite_class(p[:nc.start()] + p[nc.end():])
+            gone = []
+            for part in re.split(r",\s*(?:and\s+)?|\s+and\s+", nc.group(1).replace("\u2063", ",")):
+                hits = self.rite_units(part)
+                word = re.sub(r"s$", "", norm(part))
+                gone += hits or [d for d in self.datasheets if d["name"] in self.units and self.ds_has(d, word)]
+            return kind, [d for d in base if d not in gone]
         listed = re.search(r"\((.+)\)", p)
         if listed:  # "Penitent units (Sisters Repentia Squads, Arco-flagellant Squads, ...)"
             found = []
@@ -2717,7 +2845,7 @@ class Builder:
             return "units", found
         m = re.match(r"(.+?) choices$", p, re.I)
         slot = m and next((v for k, v in self.SLOT_WORDS.items() if norm(m.group(1)).startswith(k)), None)
-        if slot:
+        if slot in SLOTS:
             return "slot", SLOTS[slot][0][0]
         every = [d for d in self.datasheets if d["name"] in self.units]
         m = re.match(r"units equipped with (.+)$", p, re.I)
@@ -2742,6 +2870,7 @@ class Builder:
         if re.search(r"\sand\s", p) and re.search(r"units$", p, re.I):  # "vehicle and Thunderkyn units"
             found = []
             for part in re.split(r"\s+and\s+", re.sub(r"\s+units$", "", p, flags=re.I)):
+                part = re.sub(r"\s+units$", "", part, flags=re.I)
                 found += [d for d in self.rite_class(part + " units")[1] if d not in found]
             return "units", found
         m = re.match(r"(\S+) units$", p, re.I)
@@ -2836,6 +2965,67 @@ class Builder:
             break
         return text.replace("\u2063", ",")
 
+    def rite_slot_bans(self):
+        """Every Rite's "may not include (or select) any Fortification / Lords of War / Heavy Support choices" and
+        "may not include an Allied Detachment" as an error on the Rite, after any faction module has redone the
+        Rites (T'au, Sororitas), so each such limit shows an error when broken. dedupe_rite_errors drops repeats."""
+        for rite in self.rite_specs:
+            for lim in rite["limits"]:
+                text = re.sub(r"^(?:A Detachment using this Rite of War|The Detachment)\s+", "", lim.replace("†", "").strip())
+                text = re.sub(r",?\s+nor may it (?:include|select)\s+", "; may not include ", text)
+                text = re.sub(r"\bmay not select\b", "may not include", text)
+                for clause in re.split(r",\s+(?:and|or)\s+|;\s*|\s+and\s+(?=(?:may|no)\b)", text):
+                    clause = clause.strip().rstrip(".")
+                    if re.match(r"may not include an? Allied Detachment$", clause, re.I):
+                        self.rite_error(rite, "slot ban allied detachment", lambda c: el(c, "condition", type="atLeast",
+                            value=1, field="forces", scope="roster", childId=self.ALLIED_DETACHMENT, shared=True,
+                            includeChildSelections=True, includeChildForces=True))
+                        continue
+                    m = re.match(r"may not include (?:any )?(.+)$", clause)
+                    if not m or re.search(r"\bmore\b", clause):
+                        continue
+                    for item in re.split(r",\s*(?:or\s+)?|\s+or\s+", re.sub(r"\s*\([^)]*\)", "", m.group(1))):
+                        if " other than " in item or "vehicle" in norm(item):
+                            continue  # "Heavy Support choices other than Broadsides": the builder bars the rest
+                        slot = next((v for k, v in self.SLOT_WORDS.items() if norm(item).startswith(k)), None)
+                        if slot == "Dedicated Transports":
+                            # every transport the units offer (a faction module may have added them after the Rites)
+                            offered = {l.get("targetId") for g in self.shared_entries.iter("selectionEntryGroup")
+                                       if "dedicated transport" in norm(g.get("name") or "") for l in g.iter("entryLink")}
+                            offered |= {self.units[d["name"]] for d in self.datasheets
+                                        if d["slot"] == "Dedicated Transports" and d["name"] in self.units}
+                            for tid in sorted(offered):
+                                self.rite_error(rite, "slot ban transport " + tid, lambda c, tid=tid: el(c, "condition",
+                                    type="atLeast", value=1, field="selections", scope="force", childId=tid, shared=True,
+                                    includeChildSelections=True, includeChildForces=False))
+                        if slot in SLOTS:
+                            cat = SLOTS[slot][0][0]
+                            self.rite_error(rite, "slot ban " + slot, lambda c, cat=cat: el(c, "condition", type="atLeast",
+                                value=1, field="selections", scope="force", childId=cat, shared=True,
+                                includeChildSelections=True, includeChildForces=False))
+
+    def dedupe_rite_errors(self):
+        """Two errors on a Rite that fail under the same conditions (the builder's and a faction module's, or a
+        limit written twice) become one."""
+        for rite in self.rite_specs:
+            entry = self.root.find(f"selectionEntries/selectionEntry//selectionEntry[@id='{rite['id']}']")
+            if entry is None or entry.find("constraints") is None or entry.find("modifiers") is None:
+                continue
+            mods = entry.find("modifiers")
+            seen = set()
+            for c in list(entry.find("constraints")):
+                mine = [m for m in mods if m.get("field") == c.get("id")]
+                if not mine or any(m.get("type") != "set" or m.get("value") not in ("0", 0) for m in mine):
+                    continue
+                sig = (c.get("type"), str(c.get("value")), tuple(sorted(
+                    tuple(sorted(x.attrib.items())) for m in mine for x in m.iter("condition"))))
+                if sig in seen:
+                    entry.find("constraints").remove(c)
+                    for m in mine:
+                        mods.remove(m)
+                else:
+                    seen.add(sig)
+
     def rite_limit(self, rite, lim):
         """Enforce what a Rite's limitations can be checked in the app: units it bars are hidden while
         it is chosen, and limits on how many of something are an error on the Rite."""
@@ -2850,13 +3040,20 @@ class Builder:
             return
         text = re.sub(r"^A Detachment using this Rite of War\s+", "", text)
         text = self.rite_compare(rite, text)
+        text = re.sub(r"^The Detachment\s+", "", text)  # "The Detachment may not include any Fast Attack choices"
+        # "may not select any Fortification choices", "..., nor may it include any Fortification", "may only select a
+        # single Fast Attack choice and a single Heavy Support choice": the same limits written another way
+        text = re.sub(r",?\s+nor may it (?:include|select)\s+", "; may not include ", text)
+        text = re.sub(r"\bmay not select\b", "may not include", text)
+        text = re.sub(r"\bmay only (?:select|include) a single\b", "may include no more than one", text)
+        text = re.sub(r"\band a single\b", "and may include no more than one", text)
         for clause in re.split(r",\s+(?:and|or)\s+|;\s*|\s+and\s+(?=(?:may|no)\b)", text):
             clause = clause.strip().rstrip(".")
             m = re.match(r"(?:may include |include )?(?:no )?more than (\w+) (.+?)(?: choices?)?$", clause)
             if m:
                 n = int(m.group(1)) if m.group(1).isdigit() else NUMBER_WORDS.get(m.group(1))
                 slot = next((v for k, v in self.SLOT_WORDS.items() if norm(m.group(2)).startswith(k)), None)
-                if n is not None and slot:
+                if n is not None and slot in SLOTS:
                     cat = SLOTS[slot][0][0]
                     self.rite_error(rite, clause, lambda c, cat=cat, n=n: el(c, "condition", type="greaterThan", value=n,
                         field="selections", scope="force", childId=cat, shared=True, includeChildSelections=True, includeChildForces=False))
@@ -2869,13 +3066,20 @@ class Builder:
                     self.rite_error(rite, clause, lambda c, uid=uid, n=n: el(c, "condition", type="lessThan", value=n,
                         field="selections", scope="force", childId=uid, shared=True, includeChildSelections=True, includeChildForces=False))
                 continue
+            if re.match(r"may not include an? Allied Detachment$", clause, re.I):
+                # an error while the army has an Allied Detachment
+                self.rite_error(rite, "no allied detachment", lambda c: el(c, "condition", type="atLeast", value=1,
+                    field="forces", scope="roster", childId=self.ALLIED_DETACHMENT, shared=True,
+                    includeChildSelections=True, includeChildForces=True))
+                continue
             m = re.match(r"(?:may not include (?:any )?|no |any )(.+)$", clause)
             if not m or re.search(r"\bmore\b|outnumber", clause):
                 continue  # "may not include more Infantry units than Dreadnought units": text only
             items = []
             for item in re.split(r",\s*(?:or\s+)?(?=any |no )|,\s+or\s+", m.group(1)):
                 parts = re.split(r"\s+or\s+", item)  # "Nemesis Dreadknights or Land Raiders": two items
-                if len(parts) > 1 and not self.rite_banned(item) and all(self.rite_banned(p) for p in parts):
+                is_slot = lambda p: any(norm(p).startswith(k) for k in self.SLOT_WORDS)  # "Lords of War choices or Fortification"
+                if len(parts) > 1 and not self.rite_banned(item) and all(self.rite_banned(p) or is_slot(p) for p in parts):
                     items += parts
                 else:
                     items.append(item)
@@ -2893,7 +3097,21 @@ class Builder:
                                 mod = el(child(link, "modifiers"), "modifier", type="set", field="hidden", value="true")
                                 self.rite_condition(mod, rid)
                 slot = next((v for k, v in self.SLOT_WORDS.items() if norm(item).lstrip("any ").startswith(k)), None)
-                if slot and " other than " not in item and "vehicle" not in norm(item):
+                if slot == "Dedicated Transports":
+                    # transports offered inside units ("Rhino Transport" from another catalogue): hidden while the
+                    # Rite is chosen, and an error if one is taken
+                    offered = set()
+                    for g in self.shared_entries.iter("selectionEntryGroup"):
+                        if "dedicated transport" in norm(g.get("name") or ""):
+                            for link in g.iter("entryLink"):
+                                offered.add(link.get("targetId"))
+                                mod = el(child(link, "modifiers"), "modifier", type="set", field="hidden", value="true")
+                                self.rite_condition(mod, rid)
+                    for tid in sorted(offered - {self.units[d["name"]] for d in banned}):
+                        self.rite_error(rite, "bars transport " + tid, lambda c, tid=tid: el(c, "condition",
+                            type="atLeast", value=1, field="selections", scope="force", childId=tid, shared=True,
+                            includeChildSelections=True, includeChildForces=False))
+                if slot in SLOTS and " other than " not in item and "vehicle" not in norm(item):
                     targets = [("no " + slot, SLOTS[slot][0][0])]  # one error for the whole slot
                 else:
                     targets = [("bars " + ds["name"], self.units[ds["name"]]) for ds in banned]
@@ -3969,9 +4187,11 @@ class Builder:
         offers = {}
         for mname, bname, eid, cost, new_save in self.universal_options(ds, models):
             offers.setdefault((bname, eid), {})[mname] = (cost, new_save)
+        own_items = {e for _, e, r in self.universal if r.get("only") == ["Independent Character"]}
         for (bname, eid), per_type in offers.items():
-            if len(per_type) < len(models):
+            if len(per_type) < len(models) and eid not in own_items:
                 continue  # some models in the unit cannot take it, so the unit cannot
+                # (an Independent Character's own item is his, whoever else is in the unit)
             if multi and norm(bname) not in self.biomorph_names:
                 # Ork wargear in a squadron: bought model by model
                 g = child(unit, "selectionEntryGroups").find(f"selectionEntryGroup[@id='{make_id(uid, 'wargear')}']")
@@ -5648,6 +5868,8 @@ class Builder:
         self.unique_limits()
         if self.faction in FACTION_LIMITS:
             importlib.import_module(FACTION_LIMITS[self.faction]).apply(self)
+        self.rite_slot_bans()
+        self.dedupe_rite_errors()
         self.root.append(self.shared_entries)
         if len(self.shared_groups):
             self.root.append(self.shared_groups)

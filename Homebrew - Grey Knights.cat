@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="56" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4b64-b0f5-2138-7dbe" name="Homebrew - Grey Knights" revision="57" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="c336-0f01-71db-7a8f" name="Grey Knights for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Grey Knights" />
   </publications>
@@ -252,6 +252,16 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Prognosticar Vanguard" hidden="false" id="c302-c649-caa7-6507" publicationId="c336-0f01-71db-7a8f">
+              <modifiers>
+                <modifier type="set" field="662f-10d3-cef0-7baa" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a24f-12d8-36c1-f477" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="662f-10d3-cef0-7baa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="bf0f-caad-f888-aec4" hidden="false">
                   <description>Prognosticar Vanguard Squads and Watcher-in-the-Veil Squads in a Detachment using this Rite of War do not have the Support Squad special rule (allowing them to be taken as Compulsory Troops choices and score objectives). Exactor Squads may be taken as non-Compulsory Troops choices in a Detachment using this Rite of War. A player whose army includes at least one Detachment using this Rite of War may re-roll any dice they roll to see which player takes the first turn or when attempting to Seize the Initiative.</description>
@@ -268,6 +278,22 @@
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Teleport Assault" hidden="false" id="237f-cee9-50aa-c5e1" publicationId="c336-0f01-71db-7a8f">
+              <modifiers>
+                <modifier type="set" field="d60e-d2e9-851c-a0a9" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a24f-12d8-36c1-f477" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="b683-502f-d06d-6182" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="03f1-8ed9-9867-8d18" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d60e-d2e9-851c-a0a9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b683-502f-d06d-6182" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Prerequisites" id="fe3f-9579-d6bb-b086" hidden="false">
                   <description>A Detachment using this Rite of War must include a Grand Master or Kaldor Draigo with the Master of the Legion special rule, and this model must be the army's Warlord.</description>
@@ -288,6 +314,16 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Purifier Crusade" hidden="false" id="0c08-5cd5-0cae-3c97" publicationId="c336-0f01-71db-7a8f">
               <modifiers>
+                <modifier type="set" field="0bf9-9a69-37ca-3579" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a24f-12d8-36c1-f477" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c256-380e-3be9-424a" value="0">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="selections" scope="force" childId="7031-469a-1aeb-eab0" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="66c0-b142-b519-fcdc" value="0">
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -301,15 +337,11 @@
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="set" field="6cbe-db80-150c-ea22" value="0">
-                  <conditions>
-                    <condition type="greaterThan" value="1" field="selections" scope="force" childId="7031-469a-1aeb-eab0" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
               </modifiers>
               <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0bf9-9a69-37ca-3579" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c256-380e-3be9-424a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66c0-b142-b519-fcdc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cbe-db80-150c-ea22" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
                 <rule name="Prerequisites" id="efab-3d2c-1762-b6ba" hidden="false">
@@ -331,6 +363,21 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Paladin Retinue" hidden="false" id="375b-d942-3927-3c58" publicationId="c336-0f01-71db-7a8f">
               <modifiers>
+                <modifier type="set" field="7da8-fc8f-74e1-2825" value="0">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="selections" scope="force" childId="20ef-cd01-a8da-376e" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="35a4-7200-0e45-7448" value="0">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="selections" scope="force" childId="7031-469a-1aeb-eab0" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f20c-b4b4-e80c-4763" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a24f-12d8-36c1-f477" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="33fc-ba53-daa5-97b0" value="0">
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -342,21 +389,12 @@
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="set" field="7eb4-fb94-9d82-ce89" value="0">
-                  <conditions>
-                    <condition type="greaterThan" value="1" field="selections" scope="force" childId="20ef-cd01-a8da-376e" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="70e7-6132-478f-c048" value="0">
-                  <conditions>
-                    <condition type="greaterThan" value="1" field="selections" scope="force" childId="7031-469a-1aeb-eab0" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
               </modifiers>
               <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7da8-fc8f-74e1-2825" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35a4-7200-0e45-7448" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f20c-b4b4-e80c-4763" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33fc-ba53-daa5-97b0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7eb4-fb94-9d82-ce89" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70e7-6132-478f-c048" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
                 <rule name="Prerequisites" id="f1b4-11cb-e83a-d98e" hidden="false">
@@ -383,9 +421,21 @@
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="c658-dc6b-727b-c488" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
+                <modifier type="set" field="5354-162e-c28e-3492" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a24f-12d8-36c1-f477" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="dbf0-266a-67c3-ae31" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="d4f2-6da5-b6de-06ec" shared="true" includeChildSelections="true" includeChildForces="true" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae9d-2706-6eac-8d79" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5354-162e-c28e-3492" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbf0-266a-67c3-ae31" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
                 <rule name="Prerequisites" id="b02a-1216-a971-eb02" hidden="false">

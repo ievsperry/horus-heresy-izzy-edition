@@ -611,6 +611,12 @@ loading. The script prints anything in the doc it could not place.
   counts the whole roster, otherwise the Detachment. "Must select more X than Y" is strict. A limit on wargear
   carried ("more units equipped with Skyrunner Jetbikes, Vyper Jetbikes, or Raptor Jetbikes than units without")
   gets a category ("Equipped: ...") that every unit takes while it holds any of that wargear, and counts it.
+- Every Rite limitation that bars something is an error on the Rite when broken, however it is worded ("may not
+  include", "may not select", "nor may it include", "may only select a single ... choice"): a Force Organisation slot
+  (Fortifications, Lords of War, Heavy Support, Fast Attack), the units it names or "units with the X Sub-type",
+  Dedicated Transports (every transport the units offer) and "an Allied Detachment". These are added after any
+  faction module (T'au, Sororitas, Grey Knights) has redone its Rites, and an error two rules would both add is shown
+  once.
 - Rite limitations and effects that are in-game only ("must start the game embarked", "no Reserves",
   Deep Strike from turn one) are text only.
 - Instinctive Behaviour, Synapse and other in-game rules are text only.
@@ -626,6 +632,12 @@ loading. The script prints anything in the doc it could not place.
 - A biomorph whose text says "adds 1 to its Strength, to a best of 8" (Improved Strength, Improved
   Toughness, Killer Impulse) is offered only to units whose models are all below that best, at the
   cost scale of the other biomorphs, and shows each model's raised value once taken.
+- A doc in the newer rules layout (Leagues of Votann) is read as the others are: "## Votann Warlord Traits" with
+  "**Name.**" paragraphs, "## Faction Advanced Reaction: X" sections, reactions written as Trigger/Effect/Restriction
+  bullets, "#### Name" Rites under "### Rites of War" with Requirement/Benefits/Limitations, an army-wide
+  "### Eye of the Ancestors" with its lists and table, and a "Name | Type | Phase | Effect" psychic table. An item
+  with "**Cost:** 15 points. Independent Characters only." is a +15-point option for each Independent Character,
+  whoever else is in the unit.
 - A "**Name.** text" rule ends at the next heading, so a table or list under a following "####" heading no
   longer joins the rule before it.
 - In the official catalogues, the Armoured Fist Pattern Cohorts' "Infantry must start Embarked or in Reserves" is

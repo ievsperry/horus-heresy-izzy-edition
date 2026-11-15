@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="42" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="43" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -189,9 +189,21 @@
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" field="a4a1-d833-946d-da3e" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c658-dc6b-727b-c488" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="fa39-6d85-c1a9-2036" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a24f-12d8-36c1-f477" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="266c-f88b-651a-f5fe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4a1-d833-946d-da3e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa39-6d85-c1a9-2036" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
                 <rule name="Prerequisites" id="dbc0-fbe0-5c32-99aa" hidden="false">
@@ -275,9 +287,21 @@
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" field="c222-7206-5b16-0f61" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c658-dc6b-727b-c488" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="2f63-91a3-e8ae-228b" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a24f-12d8-36c1-f477" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92b0-948c-40df-6c38" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c222-7206-5b16-0f61" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f63-91a3-e8ae-228b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
                 <rule name="Prerequisites" id="27a3-31f3-c248-569e" hidden="false">
@@ -331,9 +355,15 @@
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" field="0ae7-1162-05bb-6538" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a24f-12d8-36c1-f477" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6683-4b95-b13e-fc4d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ae7-1162-05bb-6538" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
                 <rule name="Prerequisites" id="f185-2860-3375-2c4e" hidden="false">
@@ -395,11 +425,17 @@
                     <condition type="greaterThan" value="1" field="selections" scope="force" childId="7031-469a-1aeb-eab0" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </modifier>
+                <modifier type="set" field="c053-247c-e1db-02a0" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a24f-12d8-36c1-f477" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90c0-43e2-0059-7a29" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edef-17de-88d8-a10e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b161-5d41-a9cd-0263" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c053-247c-e1db-02a0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
                 <rule name="Prerequisites" id="dd05-cdc5-73a5-c955" hidden="false">

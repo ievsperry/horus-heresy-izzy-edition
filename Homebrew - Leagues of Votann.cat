@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="e1a3-795b-be05-784b" name="Leagues of Votann for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Leagues of Votann" />
   </publications>
@@ -12,10 +12,21 @@
       <profiles>
         <profile name="Grudgekeepers" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="d7ef-901b-fcf6-8dcc">
           <characteristics>
-            <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: a Votann unit is selected as the target of a Shooting Attack. After the attack is resolved, the attacking unit gains one Judgement token (to a maximum of two), and the Votann unit may make a Return Fire Shooting Attack against it.</characteristic>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: During the enemy Shooting phase, a friendly Votann unit is selected as the target of a Shooting Attack. Effect: The targeted unit reacts. After the enemy Shooting Attack is fully resolved, the attacking unit gains 1 Judgement Token. The reacting unit may then make a Return Fire Shooting Attack against the attacking unit, following all standard rules for Return Fire. It can only do this if it has not been destroyed, is not Pinned, is not Falling Back, and the attacking unit is within Line of Sight and range of at least one of its weapons. Restriction: A unit that makes this Reaction cannot also make a Return Fire Reaction against the same Shooting Attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Debt Collector" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="f74b-6e9d-90ed-6096">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Any Phase Reaction). Trigger: During any phase of your opponent's turn, immediately after an enemy unit with at least 1 Judgement Token finishes resolving an action that has already triggered a friendly Votann unit's Reaction (such as Return Fire, Overwatch, or Interceptor), or immediately after an enemy unit with at least 1 Judgement Token declares a Charge or Shooting Attack against a friendly Votann unit that has already made a Reaction this phase. Effect: Remove 1 Judgement Token from the triggering enemy unit. At the cost of 1 point of your Reaction Allotment, one eligible friendly Votann unit may immediately make a Core Reaction (or Grudgekeepers) targeting that enemy unit. Restrictions: ; This reaction overrides the standard restriction that a single unit cannot make more than one Reaction per phase, allowing a unit that has already reacted this phase to react a second time against the marked target.; You may only use Debt Collector once per phase, and no single Votann unit may ever make more than two Reactions in the same phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule name="Key Terms" id="ab51-c1ba-de9e-2937" hidden="false">
+          <description>• Votann unit: any unit with the Eye of the Ancestors and League (X) special rules. Every unit in this document has both. Wherever these rules say "friendly Votann unit", they mean a friendly unit with those rules.
+• Marked unit: an enemy unit with one or more Judgement Tokens.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink targetId="e90d-e5a8-f42d-da84" id="1ebc-4643-8ad5-6f4a" primary="true" name="Allegiance:" />
       </categoryLinks>
@@ -30,16 +41,16 @@
               <profiles>
                 <profile name="Hold the Hold" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="37c5-9722-29cc-3135">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: an enemy unit declares a charge against a Greater Thurian unit. Instead of firing Overwatch, the unit gains Counter-Charge (1) until the end of the phase†.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Assault phase). Trigger: An enemy unit declares a Charge against a friendly Greater Thurian League unit. Effect: The charged unit does not fire Overwatch. Instead, until the end of the Assault phase, every model in it gains +1 Attack and counts as having charged when determining the effects of Furious Charge (X).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
                 <rule name="Ancestral Bloodlines" id="a3e8-913e-3528-2f11" hidden="false">
-                  <description>the unit adds 1 to its Leadership, to a maximum of 10.</description>
+                  <description>Models with this special rule add +1 to their Leadership characteristic, to a maximum of 10.</description>
                 </rule>
                 <rule name="Bastions of Grit" id="6a1b-2b9c-dcdf-e94c" hidden="false">
-                  <description>Infantry units that did not move in their previous turn have Feel No Pain (6+).</description>
+                  <description>An Infantry unit with this special rule that did not move during its most recent friendly Movement phase gains Feel No Pain (6+) until the start of its next Player Turn. For this rule, moving includes disembarking, but not Reaction moves made during the enemy turn. Sweeping Advance and Consolidation moves made after that Movement phase also cancel the bonus.</description>
                 </rule>
               </rules>
               <costs>
@@ -50,16 +61,16 @@
               <profiles>
                 <profile name="Strike First" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="a9a4-15cb-e43a-6631">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: a Kronus unit is selected as the target of a Shooting Attack. The unit makes a Return Fire Shooting Attack before the enemy attack is resolved, instead of after it.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Once per battle. Trigger: A friendly Kronus Hegemony unit is selected as the target of a Shooting Attack. Effect: The targeted unit immediately makes a Return Fire Shooting Attack against the attacking unit, before the attacking unit resolves its Shooting Attack. Remove casualties from this Reaction before the attacking unit makes its attacks.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
                 <rule name="Hegemony's Wrath" id="6d63-914b-01a8-917a" hidden="false">
-                  <description>the unit adds 1 to its charge distance rolls.</description>
+                  <description>Units with this special rule add +1 to all Charge distance rolls.</description>
                 </rule>
                 <rule name="Long Memory" id="f5d8-ca41-b23b-f268" hidden="false">
-                  <description>when choosing Judgement targets after deployment, choose up to three enemy units instead of two.</description>
+                  <description>If your Primary Detachment has the Kronus Hegemony special rule, you may select up to three enemy units during Marking the Grudge instead of two.</description>
                 </rule>
               </rules>
               <costs>
@@ -70,16 +81,16 @@
               <profiles>
                 <profile name="Rapid Redeployment" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="6fca-fb4a-96a3-b757">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Trigger: an enemy unit ends a move within 12" of a Trans-Hyperian vehicle. The vehicle moves up to 6" in any direction.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Once per battle. Trigger: An enemy unit ends a Move or Rush within 12" of a friendly Trans-Hyperian Alliance Vehicle. A unit arriving from Reserves (including by Deep Strike or Outflank) does not trigger this Reaction. Effect: That Vehicle may immediately make a move of up to 6" in any direction. It cannot end this move within 1" of an enemy model, and it counts as having moved in its next Shooting phase.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
                 <rule name="Mechanised Kin" id="c83a-4599-1927-c9db" hidden="false">
-                  <description>vehicles add 2 to their Movement Characteristic.</description>
+                  <description>Vehicles with this special rule add +2 to their Movement characteristic.</description>
                 </rule>
                 <rule name="Rapid Disembark" id="2779-9242-a533-344e" hidden="false">
-                  <description>Infantry that disembark from a transport may shoot in the same turn as though they had not moved.</description>
+                  <description>An Infantry unit with this special rule that disembarks from a Transport during the Movement phase may shoot in the following Shooting phase as though it had remained stationary.</description>
                 </rule>
               </rules>
               <costs>
@@ -90,16 +101,16 @@
               <profiles>
                 <profile name="Ambush Fire" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="da7a-f813-24ae-91b0">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Trigger: an enemy unit ends a move within 12" of a Urani-Surtr Infantry or Cavalry unit. The unit makes a Shooting Attack against the triggering unit.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Movement phase). Trigger: An enemy unit ends a move within 12" of a friendly Urani-Surtr Regulates Infantry or Cavalry unit that is not Pinned, Falling Back or locked in combat. Effect: The reacting unit may immediately make a Shooting Attack against the triggering unit at its full Ballistic Skill. It must use Snap Shots if the target is a Flyer.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
                 <rule name="Pathfinders" id="9132-e36a-7f71-3a4a" hidden="false">
-                  <description>Hernkyn units gain the Outflank special rule†.</description>
+                  <description>Hernkyn units (such as Hernkyn Pioneers and Hernkyn Yaegirs) with this special rule gain the Outflank special rule.</description>
                 </rule>
                 <rule name="Precise Fire" id="1762-cbb6-8b68-611c" hidden="false">
-                  <description>the unit may re-roll to-wound rolls of 1 with ranged weapons.</description>
+                  <description>Units with this special rule may re-roll To Wound rolls of 1 when making Ranged attacks. Against a marked unit, they may instead re-roll all failed To Wound rolls with Ranged attacks.</description>
                 </rule>
               </rules>
               <costs>
@@ -110,16 +121,16 @@
               <profiles>
                 <profile name="Emergency Shielding" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="a72a-056c-6a1b-7e32">
                   <characteristics>
-                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: a Ymyr vehicle is selected as the target of a Shooting Attack. Against that attack, the vehicle gains a 5+ Invulnerable Save.</characteristic>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">(Shooting phase). Trigger: A friendly Ymyr Conglomerate Vehicle is selected as the target of a Shooting Attack. Effect: Until that Shooting Attack ends, the targeted Vehicle has a 5+ Invulnerable Save against Glancing Hits, Penetrating Hits and hits from weapons with the Destroyer special rule inflicted by that attack.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
                 <rule name="Master Artisans" id="3fe9-860a-e963-51cc" hidden="false">
-                  <description>models with Battlesmith improve it by 1, to a best of 3+.</description>
+                  <description>Models with the Battlesmith (X) special rule improve their Battlesmith target number by 1 (for example, 4+ becomes 3+).</description>
                 </rule>
-                <rule name="Self-repairing Hulls" id="bff7-5ba1-65db-b250" hidden="false">
-                  <description>vehicles gain Grot Riggers (6+)-style self-repair: at the end of each of your turns, roll a D6 for each damaged vehicle; on a 6 it restores one lost Hull Point.</description>
+                <rule name="Self-Repairing Hulls" id="0905-6b2a-d741-f294" hidden="false">
+                  <description>At the end of each friendly Player Turn, roll a D6 for each Ymyr Conglomerate Vehicle on the battlefield that has lost Hull Points. On a 6, it regains 1 lost Hull Point, up to its starting value.</description>
                 </rule>
               </rules>
               <costs>
@@ -135,111 +146,74 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Brôkhyr Guild" hidden="false" id="19ae-b857-e068-48e5" publicationId="e1a3-795b-be05-784b">
               <modifiers>
-                <modifier type="increment" field="4164-bbc6-797d-e4e2" value="1">
+                <modifier type="increment" field="aaaf-3f46-9f8c-71d5" value="1">
                   <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9bfe-381a-f82a-4969" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bfe-381a-f82a-4969" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
-                <modifier type="increment" field="4164-bbc6-797d-e4e2" value="1">
+                <modifier type="increment" field="aaaf-3f46-9f8c-71d5" value="1">
                   <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89d5-ffa6-47a9-f574" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89d5-ffa6-47a9-f574" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
-                <modifier type="increment" field="4164-bbc6-797d-e4e2" value="1">
+                <modifier type="increment" field="aaaf-3f46-9f8c-71d5" value="1">
                   <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1679-773d-8159-a7ba" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1679-773d-8159-a7ba" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
-                <modifier type="increment" field="4164-bbc6-797d-e4e2" value="1">
+                <modifier type="increment" field="aaaf-3f46-9f8c-71d5" value="1">
                   <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a110-5dc1-a3a1-521d" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a110-5dc1-a3a1-521d" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
+                <modifier type="increment" field="aaaf-3f46-9f8c-71d5" value="1">
                   <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="56ea-7bdf-7f5d-e2da" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ed7-8546-6301-ce42" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
+                <modifier type="decrement" field="aaaf-3f46-9f8c-71d5" value="1">
                   <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="05e0-e005-d8da-0c0f" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0bd6-9626-c8fc-31e6" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
+                <modifier type="decrement" field="aaaf-3f46-9f8c-71d5" value="1">
                   <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce8d-afa6-6195-376e" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2738-147d-b5ee-64a3" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
+                <modifier type="decrement" field="aaaf-3f46-9f8c-71d5" value="1">
                   <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f1c2-2c3e-a438-2d07" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6508-20e7-16e7-5d76" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
+                <modifier type="decrement" field="aaaf-3f46-9f8c-71d5" value="1">
                   <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ec7e-6c44-0670-9401" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="49d1-c108-d648-bf7f" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
+                <modifier type="decrement" field="aaaf-3f46-9f8c-71d5" value="1">
                   <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2ea1-3c5b-1cc3-191f" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1838-a245-2204-75f5" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
+                <modifier type="decrement" field="aaaf-3f46-9f8c-71d5" value="1">
                   <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d0d5-75c3-3331-8c1c" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d5f3-b30d-e555-dde1" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f905-ed37-f910-177b" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0bd6-9626-c8fc-31e6" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2738-147d-b5ee-64a3" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6508-20e7-16e7-5d76" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="49d1-c108-d648-bf7f" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1838-a245-2204-75f5" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="4164-bbc6-797d-e4e2" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b939-a824-d594-e0e7" repeats="1" roundUp="false" />
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b939-a824-d594-e0e7" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4164-bbc6-797d-e4e2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaaf-3f46-9f8c-71d5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
+                <rule name="Prerequisites" id="233b-4b2a-1fc3-7f12" hidden="false">
+                  <description>Requires a Brôkhyr Iron-master as Warlord.</description>
+                </rule>
                 <rule name="Effects" id="54cb-676f-fa39-09ea" hidden="false">
-                  <description>Brôkhyr Thunderkyn may be taken as Troops; every model with Battlesmith improves it by 1.</description>
+                  <description>Brôkhyr Thunderkyn squads may be taken as Troops choices. Every model in the Detachment with the Battlesmith (X) special rule improves its target number by 1. This stacks with Master Artisans, subject to the 2+ cap.</description>
                 </rule>
                 <rule name="Limitations" id="a409-344e-7cc4-f044" hidden="false">
-                  <description>Requires a Brôkhyr Iron-master as Warlord.   the army may not include more Infantry units than it has vehicle and Thunderkyn units combined.</description>
+                  <description>The Detachment may not include more Infantry units (not counting Brôkhyr Thunderkyn and Independent Characters) than the combined number of Vehicle units and Brôkhyr Thunderkyn units in the Detachment.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -251,11 +225,14 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Hekaton Spearhead" hidden="false" id="c4a2-a5d1-c625-5db5" publicationId="e1a3-795b-be05-784b">
               <rules>
+                <rule name="Prerequisites" id="abca-3f26-9fe9-4a7b" hidden="false">
+                  <description>Requires any Votann HQ as Warlord, and must begin the game embarked upon a Hekaton Land Fortress.</description>
+                </rule>
                 <rule name="Effects" id="a99c-650e-c49e-45a7" hidden="false">
-                  <description>Hekaton Land Fortresses may be taken as Heavy Support or Lord of War choices, and gain Scout.</description>
+                  <description>Hekaton Land Fortresses may be taken as Elites choices, in addition to Heavy Support choices. The Hekaton Land Fortress carrying your Warlord at the start of the game gains the Scout special rule.</description>
                 </rule>
                 <rule name="Limitations" id="8be2-405d-b21b-d586" hidden="false">
-                  <description>Requires any Votann HQ as Warlord, starting the game embarked on a Hekaton Land Fortress.   every Infantry unit must start the game embarked on a transport.</description>
+                  <description>Every Infantry unit in the Detachment must begin the game embarked upon a Transport with enough capacity. This can be a Dedicated Transport, or a Heavy Support or Lord of War Transport.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -277,11 +254,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb2c-2a1a-fd8a-5e1a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
+                <rule name="Prerequisites" id="ceef-5675-1a31-747e" hidden="false">
+                  <description>Requires a Kâhl or Ûthar the Destined as Warlord.</description>
+                </rule>
                 <rule name="Effects" id="c7f8-8338-9978-0c01" hidden="false">
-                  <description>Einhyr Hearthguard may be taken as Troops and gain the Line sub-type.</description>
+                  <description>Einhyr Hearthguard squads may be taken as Troops choices and gain the Line unit sub-type.</description>
                 </rule>
                 <rule name="Limitations" id="9769-8213-4e50-2163" hidden="false">
-                  <description>Requires a Kâhl or Ûthar the Destined as Warlord.   no Fast Attack choices.</description>
+                  <description>The Detachment may not include any Fast Attack choices.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -303,11 +283,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f626-2bf3-811c-4e1d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
+                <rule name="Prerequisites" id="f1ee-1658-9d1e-d897" hidden="false">
+                  <description>Requires any Votann HQ as Warlord.</description>
+                </rule>
                 <rule name="Effects" id="d01e-2a20-b727-a0ed" hidden="false">
-                  <description>Hernkyn Pioneers and Hernkyn Yaegirs may be taken as Troops and gain the Line sub-type.</description>
+                  <description>Hernkyn Pioneers and Hernkyn Yaegirs may be taken as Troops choices and gain the Line unit sub-type.</description>
                 </rule>
                 <rule name="Limitations" id="8e8d-e7de-6fc8-51f0" hidden="false">
-                  <description>Requires any Votann HQ as Warlord.   no Heavy Support choices.</description>
+                  <description>The Detachment may not include any Heavy Support choices.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -514,6 +497,24 @@
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="9274-b467-17d0-78d4" primary="true" name="Troops:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="d1ae-725a-e87c-7d96" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hekaton Land Fortress" hidden="true" id="c0d7-43b2-9d12-8979" type="selectionEntry" targetId="a110-5dc1-a3a1-521d">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c4a2-a5d1-c625-5db5" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8202-0016-eb84-9b6d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="830d-57c9-d009-6977" primary="true" name="Elites:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="0639-2e96-26c9-5dde" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Einhyr Hearthguard" hidden="true" id="b886-fa52-5f01-b853" type="selectionEntry" targetId="2738-147d-b5ee-64a3">
@@ -751,14 +752,14 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Breaching (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Rupture (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Breaching (X)" id="ba5c-5fe3-96e1-ad68" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+        <infoLink name="Rupture (X)" id="77fc-b587-3798-b042" hidden="false" targetId="d530-0b40-4723-af90" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Breaching (6+)" />
+            <modifier type="set" field="name" value="Rupture (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -770,7 +771,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Breaching (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Rupture (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -780,9 +781,9 @@
             <modifier type="set" field="name" value="Rapid Fire" />
           </modifiers>
         </infoLink>
-        <infoLink name="Breaching (X)" id="9787-c489-9572-e70e" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+        <infoLink name="Rupture (X)" id="0c38-7ac4-7ad0-9822" hidden="false" targetId="d530-0b40-4723-af90" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Breaching (6+)" />
+            <modifier type="set" field="name" value="Rupture (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -794,14 +795,14 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Rupture (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Breaching (X)" id="1d8f-6ceb-cecf-5381" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+        <infoLink name="Rupture (X)" id="d2f5-c1d2-325a-c081" hidden="false" targetId="d530-0b40-4723-af90" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Breaching (6+)" />
+            <modifier type="set" field="name" value="Rupture (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -813,14 +814,14 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Breaching (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Rupture (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Breaching (X)" id="1bc3-10d3-e42d-132c" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+        <infoLink name="Rupture (X)" id="b047-1119-f7f1-29f3" hidden="false" targetId="d530-0b40-4723-af90" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Breaching (6+)" />
+            <modifier type="set" field="name" value="Rupture (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -832,14 +833,14 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">9"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 2, Breaching (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 2, Rupture (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Breaching (X)" id="7426-98e9-0a68-3e9f" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+        <infoLink name="Rupture (X)" id="915a-9491-164b-bf8b" hidden="false" targetId="d530-0b40-4723-af90" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Breaching (6+)" />
+            <modifier type="set" field="name" value="Rupture (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -851,15 +852,15 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">15"</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Shred, Breaching (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Shred, Rupture (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Shred" id="839e-b1a8-d39e-aba5" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule" />
-        <infoLink name="Breaching (X)" id="7dfb-407a-ee03-757e" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+        <infoLink name="Rupture (X)" id="a4f7-95b5-d999-7239" hidden="false" targetId="d530-0b40-4723-af90" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Breaching (6+)" />
+            <modifier type="set" field="name" value="Rupture (6+)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1377,7 +1378,19 @@
             <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18"</characteristic>
             <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">6</characteristic>
             <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">3</characteristic>
-            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault D6, Psychic</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault D6, Psychic, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pinning" id="29fd-0a34-5233-ba49" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grudge-Ledger / Holo-Lectern" hidden="false" id="04d8-1b16-5eca-3067" publicationId="e1a3-795b-be05-784b">
+      <profiles>
+        <profile name="Grudge-Ledger / Holo-Lectern" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="c15e-b64d-8ebe-3d07">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per friendly Shooting phase, before any attacks are made, the bearer may select one enemy unit within 24" and in its Line of Sight. That unit gains 1 temporary Judgement Token.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1492,7 +1505,7 @@
       <profiles>
         <profile name="Ancestral Ward" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power" hidden="false" id="5fef-23a4-6d1f-9b86">
           <characteristics>
-            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Movement (start) phase. The Grimnyr and any unit he has joined gain a 4+ Invulnerable Save against psychic weapons and a 5+ Invulnerable Save against everything else, until the start of your next turn.</characteristic>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Movement (Start) phase. Until the start of your next turn, the Psyker and any unit they have joined gain a 5+ Invulnerable Save, which is improved to a 4+ Invulnerable Save against wounds inflicted by weapons with the Psychic or Force special rules (including Perils of the Warp).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1501,7 +1514,7 @@
       <profiles>
         <profile name="Fortify" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power" hidden="false" id="fda2-d930-ced1-a51b">
           <characteristics>
-            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Movement (start) phase. One friendly Votann unit within 12" gains Feel No Pain (6+), or improves an existing Feel No Pain by 1, until the start of your next turn.</characteristic>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Movement (Start) phase. Select one friendly Votann unit within 12" and Line of Sight of the Psyker. Until the start of your next turn, all models in that unit gain Feel No Pain (6+), or improve an existing Feel No Pain (X) special rule by +1 (to a maximum of 4+).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1510,7 +1523,7 @@
       <profiles>
         <profile name="Null Vortex" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power" hidden="false" id="1c0f-f377-a279-8e76">
           <characteristics>
-            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Shooting phase. Enemy psykers within 18" subtract 2 from their Leadership for Psychic checks until the start of your next turn.</characteristic>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Shooting phase. Until the start of your next turn, all enemy models with the Psyker unit sub-type within 18" of this Psyker suffer a -2 penalty to their Leadership characteristic when taking Psychic Checks or Deny the Witch rolls.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1528,11 +1541,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="7265-51f8-fecb-bce6" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="7265-51f8-fecb-bce6" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="1c72-bb42-689e-0201" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
         <infoLink name="Stubborn Kin" id="1f90-caa0-d5a1-29c5" hidden="false" targetId="b9c6-1e4f-c03f-56fb" type="rule" />
       </infoLinks>
@@ -1584,6 +1593,14 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="40cf-b345-e580-be54" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4cf-cb74-0d37-38aa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Grudge-Ledger / Holo-Lectern" hidden="false" id="a058-e7ff-be3e-ac22" type="selectionEntry" targetId="04d8-1b16-5eca-3067">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9485-8384-f45e-fb11" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="0a73-9504-870b-f953" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
@@ -1655,11 +1672,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="ef61-035b-63d0-0305" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="ef61-035b-63d0-0305" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="Invulnerable Save (X)" id="d3f8-50c0-1dcf-c540" hidden="false" targetId="a75a-fe58-e375-cdb8" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Invulnerable Save (5+)" />
@@ -1718,6 +1731,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33ce-4008-e64d-7f32" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Grudge-Ledger / Holo-Lectern" hidden="false" id="23bf-3812-fed1-4129" type="selectionEntry" targetId="04d8-1b16-5eca-3067">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0c6-7302-33f4-29d8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="0221-51a0-a9fa-3f41" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
                 <modifier type="set" field="791e-5c11-42a9-fe13" value="0">
@@ -1770,11 +1791,7 @@
             <modifier type="set" field="name" value="Battlesmith (4+)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="6a4d-a837-e528-848d" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="6a4d-a837-e528-848d" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="fb1b-a8d5-13c4-f471" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
         <infoLink name="Stubborn Kin" id="5e7e-d836-419a-d59a" hidden="false" targetId="b9c6-1e4f-c03f-56fb" type="rule" />
       </infoLinks>
@@ -1926,6 +1943,25 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Wargear" hidden="false" id="7631-0c2a-e799-6478">
+          <entryLinks>
+            <entryLink import="true" name="Grudge-Ledger / Holo-Lectern" hidden="false" id="ebff-088c-0726-30d2" type="selectionEntry" targetId="04d8-1b16-5eca-3067">
+              <modifiers>
+                <modifier type="increment" field="683b-5f7a-77d4-cf4e" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="ce8d-afa6-6195-376e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d55-f9ba-1caf-d3ac" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="683b-5f7a-77d4-cf4e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75" />
@@ -1956,11 +1992,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="4749-4994-5d07-198e" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="4749-4994-5d07-198e" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="Invulnerable Save (X)" id="f0ee-fdc1-cec6-e524" hidden="false" targetId="a75a-fe58-e375-cdb8" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Invulnerable Save (5+)" />
@@ -2026,6 +2058,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e36a-72f3-bfea-0516" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Grudge-Ledger / Holo-Lectern" hidden="false" id="89a6-43ed-1b47-b9b9" type="selectionEntry" targetId="04d8-1b16-5eca-3067">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8765-42fc-3b50-26ef" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="887d-a466-38cb-d1bd" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
                 <modifier type="set" field="b8a2-3fec-7f56-2ec9" value="0">
@@ -2081,11 +2121,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="caa8-5dc6-0612-42d5" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="caa8-5dc6-0612-42d5" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="3f51-3b7a-c8de-9033" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
         <infoLink name="Stubborn Kin" id="e3da-fd69-a27c-2afb" hidden="false" targetId="b9c6-1e4f-c03f-56fb" type="rule" />
       </infoLinks>
@@ -2162,6 +2198,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="768c-9127-dd9b-8504" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Grudge-Ledger / Holo-Lectern" hidden="false" id="9cd0-7ff5-6c0c-ec18" type="selectionEntry" targetId="04d8-1b16-5eca-3067">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7861-9842-6cba-5b3c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="6303-de4a-ff94-b0b9" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
                 <modifier type="set" field="4d21-6ff6-1ba8-4da1" value="0">
@@ -2214,11 +2258,7 @@
             <modifier type="set" field="name" value="Ancestral Lore (2)" />
           </modifiers>
         </infoLink>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="0248-b7f5-9f12-1395" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="0248-b7f5-9f12-1395" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="5372-dceb-ac5d-e966" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
         <infoLink name="Stubborn Kin" id="5b1c-383e-e8a0-6b5d" hidden="false" targetId="b9c6-1e4f-c03f-56fb" type="rule" />
       </infoLinks>
@@ -2265,6 +2305,14 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6ea-7d01-2b75-be6b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a943-1c52-8d26-2a25" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Grudge-Ledger / Holo-Lectern" hidden="false" id="dcc1-38a8-f2c8-8dff" type="selectionEntry" targetId="04d8-1b16-5eca-3067">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6ca-cb8c-2f4e-7fba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="e2e0-304a-07ea-7e74" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
@@ -2351,11 +2399,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="c137-9fba-df3b-03f4" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="c137-9fba-df3b-03f4" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="a1fd-5207-ca57-ad02" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
         <infoLink name="Stubborn Kin" id="37a2-54bb-2323-f321" hidden="false" targetId="b9c6-1e4f-c03f-56fb" type="rule" />
       </infoLinks>
@@ -2488,6 +2532,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d55e-367f-d4f8-e588" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Grudge-Ledger / Holo-Lectern" hidden="false" id="c4f5-76b9-f7ee-14d8" type="selectionEntry" targetId="04d8-1b16-5eca-3067">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5e3-aa88-9ca4-f3d5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="a4ef-f878-7111-ca66" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
                 <modifier type="set" field="3699-09a1-0652-7862" value="0">
@@ -2538,11 +2590,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="dd9c-1f5c-6134-7224" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="dd9c-1f5c-6134-7224" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="7f17-8b6a-bd79-f99b" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
         <infoLink name="Stubborn Kin" id="b9b9-afbe-ed8c-9ad8" hidden="false" targetId="b9c6-1e4f-c03f-56fb" type="rule" />
       </infoLinks>
@@ -2588,6 +2636,14 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f488-5b36-33b1-5c4e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd7b-759e-1199-d343" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Grudge-Ledger / Holo-Lectern" hidden="false" id="b25e-1de5-5edb-af62" type="selectionEntry" targetId="04d8-1b16-5eca-3067">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e5a-ef3a-4eec-bd89" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
             </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="32ae-1aa8-f946-b876" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
@@ -2647,11 +2703,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="af39-82ca-837c-b3b4" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="af39-82ca-837c-b3b4" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="Invulnerable Save (X)" id="d5a8-b301-c8af-beae" hidden="false" targetId="a75a-fe58-e375-cdb8" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Invulnerable Save (4+)" />
@@ -2717,6 +2769,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7695-b895-e684-36a7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Grudge-Ledger / Holo-Lectern" hidden="false" id="4386-298b-2ead-803e" type="selectionEntry" targetId="04d8-1b16-5eca-3067">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e7c-07b1-ef8b-b9cb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
             <entryLink import="true" name="Warlord" hidden="false" id="9a35-2ac9-4e6c-428c" type="selectionEntry" targetId="0176-56a3-d590-b103">
               <modifiers>
                 <modifier type="set" field="68e5-5ca4-2133-3b64" value="0">
@@ -2765,11 +2825,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="dde3-bee5-98c4-e3e3" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="dde3-bee5-98c4-e3e3" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="Feel No Pain (X)" id="ea55-ccc0-3dd4-12eb" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Feel No Pain (5+)" />
@@ -2893,11 +2949,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="1706-1027-ad7a-2115" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="1706-1027-ad7a-2115" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="4e98-7263-558a-c9e7" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
         <infoLink name="Stubborn Kin" id="b061-6136-255a-9c76" hidden="false" targetId="b9c6-1e4f-c03f-56fb" type="rule" />
       </infoLinks>
@@ -3116,25 +3168,12 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="a5e1-36d6-137c-6d97" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="a5e1-36d6-137c-6d97" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="Infiltrate" id="7470-fd4f-cbbf-2c52" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule" />
         <infoLink name="League (X)" id="fbda-5626-dba0-d88b" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
         <infoLink name="Move Through Cover" id="6cbb-7684-190f-d9af" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule" />
         <infoLink name="Stealth" id="fd7b-909f-a18b-01dd" hidden="false" targetId="c4d7-f993-1a1d-9a93" type="rule" />
         <infoLink name="Stubborn Kin" id="ad1b-ac44-72c5-2c85" hidden="false" targetId="b9c6-1e4f-c03f-56fb" type="rule" />
-        <infoLink name="Outflank" id="edc5-0e27-61c0-f8b4" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="6323-25ed-9221-9ff4" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="34ed-3aaa-ff16-997b" primary="false" name="Unit:" />
@@ -3310,11 +3349,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="033f-55ce-b74b-8c58" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="033f-55ce-b74b-8c58" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="7b64-e261-0d61-37a0" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
       </infoLinks>
       <categoryLinks>
@@ -3418,11 +3453,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hearthkyn Warriors" hidden="false" id="1838-a245-2204-75f5" publicationId="e1a3-795b-be05-784b">
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="e704-3735-49d0-be51" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="e704-3735-49d0-be51" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="a8f4-ff02-1457-afe1" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
         <infoLink name="Stubborn Kin" id="4247-be74-0cdd-adfd" hidden="false" targetId="b9c6-1e4f-c03f-56fb" type="rule" />
       </infoLinks>
@@ -3698,11 +3729,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kapricus Carrier" hidden="false" id="9bfe-381a-f82a-4969" publicationId="e1a3-795b-be05-784b">
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="8656-4b7b-c75a-15d5" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="8656-4b7b-c75a-15d5" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="f383-9480-cf36-bda0" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
       </infoLinks>
       <categoryLinks>
@@ -3784,11 +3811,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="df83-5d01-fef8-ab52" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="df83-5d01-fef8-ab52" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="a19f-824a-9c3e-59e7" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
       </infoLinks>
       <categoryLinks>
@@ -3893,22 +3916,9 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="82e0-d80b-7c1b-2e69" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="82e0-d80b-7c1b-2e69" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="a7be-6ce2-ecfc-a025" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
         <infoLink name="Scout" id="7521-d8c4-1dd3-bfe3" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule" />
-        <infoLink name="Outflank" id="5490-0e0f-31b0-052f" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="6323-25ed-9221-9ff4" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="7bf9-1b4b-951b-c1c0" primary="false" name="Unit:" />
@@ -4031,11 +4041,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kapricus Defenders" hidden="false" id="1679-773d-8159-a7ba" publicationId="e1a3-795b-be05-784b">
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="82e1-22fc-fe39-604f" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="82e1-22fc-fe39-604f" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="a4f6-91be-b982-6f48" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
       </infoLinks>
       <categoryLinks>
@@ -4118,11 +4124,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="8a2f-8ab0-b8a0-2b8a" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="8a2f-8ab0-b8a0-2b8a" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="674c-7229-5c5d-3650" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
         <infoLink name="Stubborn Kin" id="1be7-a66f-afaa-fe9f" hidden="false" targetId="b9c6-1e4f-c03f-56fb" type="rule" />
       </infoLinks>
@@ -4215,11 +4217,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="6155-5b80-0bde-3c32" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="6155-5b80-0bde-3c32" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="5388-114a-c4fc-7880" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
       </infoLinks>
       <categoryLinks>
@@ -4322,21 +4320,8 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="5016-b094-08ab-57ff" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="5016-b094-08ab-57ff" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="8249-0ed8-bcb4-f11e" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
-        <infoLink name="Scout" id="e851-ff4b-17b0-b02e" hidden="true" targetId="aacf-9a7e-982d-b793" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="c4a2-a5d1-c625-5db5" shared="true" includeChildSelections="true" includeChildForces="false" />
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="8dfb-50cb-6896-2554" primary="false" name="Unit:" />
@@ -4475,11 +4460,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Eye of the Ancestors (Judgement)" id="ee3f-9638-1509-5281" hidden="false" targetId="9191-9822-8db6-275c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Eye of the Ancestors" />
-          </modifiers>
-        </infoLink>
+        <infoLink name="Eye of the Ancestors" id="ee3f-9638-1509-5281" hidden="false" targetId="9a27-359a-8678-d056" type="rule" />
         <infoLink name="League (X)" id="7c74-5c26-ff8f-cb26" hidden="false" targetId="8aaa-89ad-e8cb-8d09" type="rule" />
       </infoLinks>
       <categoryLinks>
@@ -4636,7 +4617,7 @@
           <profiles>
             <profile name="Ancestral Bearing" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="2604-a8d3-ea2e-4f54">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Friendly Votann units within 12" of the Warlord use his Leadership. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Friendly Votann units within 12" of your Warlord may use the Warlord's Leadership characteristic for all Morale, Pinning and Leadership checks. While your Warlord is alive and on the battlefield, your army may also make one additional Reaction during your opponent's Assault phase, above its normal Reaction Allotment. A single unit still cannot make more than one Reaction per phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4654,7 +4635,7 @@
           <profiles>
             <profile name="Calculating Tactician" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="8922-cfd9-8502-81e3">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">You may re-roll one Reserves roll each turn. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Movement phase, above its normal Reaction Allotment.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">You may re-roll one Reserves roll or Outflank roll each turn. While your Warlord is alive and on the battlefield, your army may also make one additional Reaction during your opponent's Movement phase, above its normal Reaction Allotment.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4672,7 +4653,7 @@
           <profiles>
             <profile name="Grudgebearer" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="2658-0cbd-4cc6-f953">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit he joins treat every enemy unit as though it had one Judgement token, or one more than it has, to a maximum of two. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Shooting phase, above its normal Reaction Allotment.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When your Warlord and any unit they join make attacks, they treat every enemy unit as having 1 more Judgement Token than it has, to a maximum of 2. Units with no tokens count as having 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4697,7 +4678,7 @@
           <profiles>
             <profile name="Unbreakable" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="a50f-edb7-44f1-6071">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit he joins never become Pinned and automatically pass Morale checks.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Your Warlord and any unit they join automatically pass all Pinning tests and Morale checks. They may still choose to Fall Back voluntarily if another rule allows it.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4722,7 +4703,7 @@
           <profiles>
             <profile name="Grim Conqueror" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="9730-1064-1c23-3e1a">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and any unit he joins gain Furious Charge (1), or increase an existing Furious Charge (X) by 1.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Your Warlord and any unit they join gain Furious Charge (1). A unit that already has Furious Charge (X) increases X by 1 instead.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4747,7 +4728,7 @@
           <profiles>
             <profile name="Convoy Master" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="b2a2-5359-382a-9e45">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord, any unit he joins, and any vehicle he is embarked on gain Scout.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Your Warlord, any unit they join, and any Transport they begin the game embarked upon gain the Scout special rule.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4772,7 +4753,7 @@
           <profiles>
             <profile name="Scout-Master" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="841c-ba43-2d17-c64b">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Before the first turn, redeploy up to three friendly Urani-Surtr units.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Before the first turn begins, you may remove up to three friendly Urani-Surtr Regulates units from the battlefield and redeploy them anywhere within your Deployment Zone, following all standard deployment rules. See Pre-Game Sequence for exact timing.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4797,7 +4778,7 @@
           <profiles>
             <profile name="Master Engineer" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="5183-a2e8-be4c-7e0d">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord gains Battlesmith (4+), or improves an existing Battlesmith by 1.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Your Warlord gains Battlesmith (4+). If they already have Battlesmith (X), improve its target number by 1 instead.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4812,9 +4793,6 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule name="Eye of the Ancestors (Judgement)" id="9191-9822-8db6-275c" hidden="false" publicationId="e1a3-795b-be05-784b">
-      <description>The Kin never forget a slight. After both armies have deployed, choose up to two enemy units; each gains one Judgement token. During the game, an enemy unit gains one Judgement token each time it destroys a Votann unit, to a maximum of two tokens. Units with this rule gain the following against enemy units with Judgement tokens: Tokens: Benefit. 1: Re-roll to-hit rolls of 1. 2: Re-roll to-hit rolls of 1 and to-wound rolls of 1.</description>
-    </rule>
     <rule name="Slow but Sure" id="fd19-24cc-00f6-3ef0" hidden="false" publicationId="e1a3-795b-be05-784b">
       <description>The Kin are short and heavily equipped. Votann Infantry have a Movement Characteristic of 5 unless their entry says otherwise, but may Advance and still shoot Rapid Fire weapons and declare charges in the same turn†.</description>
     </rule>
@@ -4827,11 +4805,17 @@
     <rule name="Void Armour" id="aae4-08fe-8918-77c0" hidden="false" publicationId="e1a3-795b-be05-784b">
       <description>Votann void armour seals against hostile environments. Units with void armour (see Wargear) ignore the Pinning special rule from Blast and Template weapons†.</description>
     </rule>
+    <rule name="Eye of the Ancestors" id="9a27-359a-8678-d056" hidden="false" publicationId="e1a3-795b-be05-784b">
+      <description>All Votann units have the Eye of the Ancestors special rule. It is made up of the following rules. Judgement Tokens. • An enemy unit can hold a maximum of 2 Judgement Tokens at any time, whatever their source. • Tokens are permanent unless a rule says otherwise. They stay until the unit is removed from play. • Some rules give temporary tokens, which are lost at the end of the turn. Temporary tokens count toward the maximum of 2. If a rule would give a unit more tokens than the maximum allows, the extra tokens are not gained. Marking the Grudge. After both players have deployed their armies, the Votann player selects up to two enemy units to each gain 1 Judgement Token. Units on the battlefield and units in Reserves can both be selected. See Pre-Game Sequence for exact timing. Accumulating Grudges. At the end of each Player Turn, each enemy unit that met one or more of the following conditions during that turn gains 1 Judgement Token. A unit gains only 1 token per turn this way, however many conditions it met. • Slayer of Kin: The enemy unit destroyed a friendly Votann unit. • Bane of the Ancestors: The enemy unit inflicted one or more unsaved Wounds or Hull Point losses on your Warlord or on a friendly Votann Independent Character. • Defiler of Claims: The enemy unit ended the turn within 3" of an Objective Marker that you controlled with a Votann unit at the start of that turn. Settling the Debt. When a Votann unit makes attacks against a marked unit, it gains the following cumulative benefits: • 1 (Marked for Reckoning): The Votann unit gains Preferred Enemy against that unit: it may re-roll To Hit and To Wound rolls of 1. • 2 (Blood-Oath Vendetta): As above. In addition, the Votann unit gains Hatred against that unit in the Assault phase, and its Ranged attacks against that unit gain Rending (6+). Any weapon that already has Rending (X), Breaching (X) or Rupture (X) instead improves each of those values by 1 against that unit (for example, 6+ becomes 5+), to a best of 3+.</description>
+    </rule>
     <rule name="Ancestral Lore (X)" id="7bc4-43dd-5e6c-2ad5" hidden="false" publicationId="e1a3-795b-be05-784b">
-      <description>A Grimnyr knows the Ancestral Wrath psychic weapon, plus X psychic powers from the table below, chosen when the army is built. Power: Kind, Phase, Effect. Ancestral Ward: Psychic power, Movement (start), The Grimnyr and any unit he has joined gain a 4+ Invulnerable Save against psychic weapons and a 5+ Invulnerable Save against everything else, until the start of your next turn.. Ancestral Wrath: Psychic weapon, Shooting, 18", S6, AP 3, Assault D6, Psychic. Fortify: Psychic power, Movement (start), One friendly Votann unit within 12" gains Feel No Pain (6+), or improves an existing Feel No Pain by 1, until the start of your next turn.. Null Vortex: Psychic power, Shooting, Enemy psykers within 18" subtract 2 from their Leadership for Psychic checks until the start of your next turn..</description>
+      <description>A model with the Psyker unit sub-type and Ancestral Lore (X) automatically knows the Ancestral Wrath Psychic Weapon, plus X Psychic Powers selected from the table below when building the army.
+
+• Manifesting Powers: Each Psychic Power is used in the phase specified in its entry. To manifest a Psychic Power, make a Psychic Check (roll 2D6 equal to or under the Psyker's Leadership characteristic). If the check is failed, the power is not manifested and the Psyker immediately suffers Perils of the Warp as detailed in the Age of Darkness rulebook.
+• Psychic Weapons: Ancestral Wrath is a ranged weapon fired during the Shooting phase (or during a Shooting phase Reaction, such as Return Fire or Overwatch) using standard shooting rules; it does not require a Psychic Check to fire, though it benefits from the Psychic Focus special rule if the Psyker has not manifested a Psychic Power earlier in that turn.</description>
     </rule>
     <rule name="League (X)" id="8aaa-89ad-e8cb-8d09" hidden="false" publicationId="e1a3-795b-be05-784b">
-      <description>When building an army, choose one League for each detachment. Every unit in that detachment gains League (X), where X is the chosen League. Unique characters may join any League.</description>
+      <description>When building an army, choose one League for each Detachment. Every unit in that Detachment gains the League (X) special rule, where X is the chosen League. Unique Characters (such as Ûthar the Destined) may join any League and gain that Detachment's League (X) rule without breaking Detachment restrictions.</description>
     </rule>
     <rule name="Invulnerable Save (X)" id="a75a-fe58-e375-cdb8" hidden="false" publicationId="e1a3-795b-be05-784b">
       <description>The model has an Invulnerable Save of X, which may be taken against any Wound instead of its armour save.</description>
