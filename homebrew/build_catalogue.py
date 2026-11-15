@@ -2740,7 +2740,8 @@ class Builder:
 
     ALLIED_DETACHMENT = "d4f2-6da5-b6de-06ec"
     SLOT_WORDS = {"lords of war": "Lords of War", "lord of war": "Lords of War", "heavy support": "Heavy Support",
-                  "fast attack": "Fast Attack", "elites": "Elites", "troops": "Troops"}
+                  "fast attack": "Fast Attack", "elites": "Elites", "troops": "Troops", "fortification": "Fortifications",
+                  "dedicated transport": "Dedicated Transports"}
 
     def rite_banned(self, item):
         """'Lords of War', 'Flyers', 'any Gretchin', 'Heavy Support choices other than Broadsides',
@@ -2764,6 +2765,9 @@ class Builder:
                    or any("flying base" in norm(p["base"]) for p in d["profiles"])]
         elif norm(base).startswith("battlesuit"):
             out = [d for d in self.datasheets if any("Battlesuit" in t for t in d["types"]) or "battlesuit" in norm(d["name"])]
+        elif re.match(r"units with the (.+?) sub-type$", base, re.I):  # "units with the Wraith Sub-type"
+            word = re.match(r"units with the (.+?) sub-type$", base, re.I).group(1).lower()
+            out = [d for d in self.datasheets if d["name"] in self.units and self.ds_has(d, word)]
         else:
             word = re.sub(r"\s+(?:units?|of any kind)$", "", base)
             out = [d for d in self.datasheets if forms(d["name"]) & forms(word)
@@ -2841,7 +2845,7 @@ class Builder:
             return "units", found
         m = re.match(r"(.+?) choices$", p, re.I)
         slot = m and next((v for k, v in self.SLOT_WORDS.items() if norm(m.group(1)).startswith(k)), None)
-        if slot:
+        if slot in SLOTS:
             return "slot", SLOTS[slot][0][0]
         every = [d for d in self.datasheets if d["name"] in self.units]
         m = re.match(r"units equipped with (.+)$", p, re.I)
@@ -2961,6 +2965,67 @@ class Builder:
             break
         return text.replace("\u2063", ",")
 
+    def rite_slot_bans(self):
+        """Every Rite's "may not include (or select) any Fortification / Lords of War / Heavy Support choices" and
+        "may not include an Allied Detachment" as an error on the Rite, after any faction module has redone the
+        Rites (T'au, Sororitas), so each such limit shows an error when broken. dedupe_rite_errors drops repeats."""
+        for rite in self.rite_specs:
+            for lim in rite["limits"]:
+                text = re.sub(r"^(?:A Detachment using this Rite of War|The Detachment)\s+", "", lim.replace("†", "").strip())
+                text = re.sub(r",?\s+nor may it (?:include|select)\s+", "; may not include ", text)
+                text = re.sub(r"\bmay not select\b", "may not include", text)
+                for clause in re.split(r",\s+(?:and|or)\s+|;\s*|\s+and\s+(?=(?:may|no)\b)", text):
+                    clause = clause.strip().rstrip(".")
+                    if re.match(r"may not include an? Allied Detachment$", clause, re.I):
+                        self.rite_error(rite, "slot ban allied detachment", lambda c: el(c, "condition", type="atLeast",
+                            value=1, field="forces", scope="roster", childId=self.ALLIED_DETACHMENT, shared=True,
+                            includeChildSelections=True, includeChildForces=True))
+                        continue
+                    m = re.match(r"may not include (?:any )?(.+)$", clause)
+                    if not m or re.search(r"\bmore\b", clause):
+                        continue
+                    for item in re.split(r",\s*(?:or\s+)?|\s+or\s+", re.sub(r"\s*\([^)]*\)", "", m.group(1))):
+                        if " other than " in item or "vehicle" in norm(item):
+                            continue  # "Heavy Support choices other than Broadsides": the builder bars the rest
+                        slot = next((v for k, v in self.SLOT_WORDS.items() if norm(item).startswith(k)), None)
+                        if slot == "Dedicated Transports":
+                            # every transport the units offer (a faction module may have added them after the Rites)
+                            offered = {l.get("targetId") for g in self.shared_entries.iter("selectionEntryGroup")
+                                       if "dedicated transport" in norm(g.get("name") or "") for l in g.iter("entryLink")}
+                            offered |= {self.units[d["name"]] for d in self.datasheets
+                                        if d["slot"] == "Dedicated Transports" and d["name"] in self.units}
+                            for tid in sorted(offered):
+                                self.rite_error(rite, "slot ban transport " + tid, lambda c, tid=tid: el(c, "condition",
+                                    type="atLeast", value=1, field="selections", scope="force", childId=tid, shared=True,
+                                    includeChildSelections=True, includeChildForces=False))
+                        if slot in SLOTS:
+                            cat = SLOTS[slot][0][0]
+                            self.rite_error(rite, "slot ban " + slot, lambda c, cat=cat: el(c, "condition", type="atLeast",
+                                value=1, field="selections", scope="force", childId=cat, shared=True,
+                                includeChildSelections=True, includeChildForces=False))
+
+    def dedupe_rite_errors(self):
+        """Two errors on a Rite that fail under the same conditions (the builder's and a faction module's, or a
+        limit written twice) become one."""
+        for rite in self.rite_specs:
+            entry = self.root.find(f"selectionEntries/selectionEntry//selectionEntry[@id='{rite['id']}']")
+            if entry is None or entry.find("constraints") is None or entry.find("modifiers") is None:
+                continue
+            mods = entry.find("modifiers")
+            seen = set()
+            for c in list(entry.find("constraints")):
+                mine = [m for m in mods if m.get("field") == c.get("id")]
+                if not mine or any(m.get("type") != "set" or m.get("value") not in ("0", 0) for m in mine):
+                    continue
+                sig = (c.get("type"), str(c.get("value")), tuple(sorted(
+                    tuple(sorted(x.attrib.items())) for m in mine for x in m.iter("condition"))))
+                if sig in seen:
+                    entry.find("constraints").remove(c)
+                    for m in mine:
+                        mods.remove(m)
+                else:
+                    seen.add(sig)
+
     def rite_limit(self, rite, lim):
         """Enforce what a Rite's limitations can be checked in the app: units it bars are hidden while
         it is chosen, and limits on how many of something are an error on the Rite."""
@@ -2976,13 +3041,19 @@ class Builder:
         text = re.sub(r"^A Detachment using this Rite of War\s+", "", text)
         text = self.rite_compare(rite, text)
         text = re.sub(r"^The Detachment\s+", "", text)  # "The Detachment may not include any Fast Attack choices"
+        # "may not select any Fortification choices", "..., nor may it include any Fortification", "may only select a
+        # single Fast Attack choice and a single Heavy Support choice": the same limits written another way
+        text = re.sub(r",?\s+nor may it (?:include|select)\s+", "; may not include ", text)
+        text = re.sub(r"\bmay not select\b", "may not include", text)
+        text = re.sub(r"\bmay only (?:select|include) a single\b", "may include no more than one", text)
+        text = re.sub(r"\band a single\b", "and may include no more than one", text)
         for clause in re.split(r",\s+(?:and|or)\s+|;\s*|\s+and\s+(?=(?:may|no)\b)", text):
             clause = clause.strip().rstrip(".")
             m = re.match(r"(?:may include |include )?(?:no )?more than (\w+) (.+?)(?: choices?)?$", clause)
             if m:
                 n = int(m.group(1)) if m.group(1).isdigit() else NUMBER_WORDS.get(m.group(1))
                 slot = next((v for k, v in self.SLOT_WORDS.items() if norm(m.group(2)).startswith(k)), None)
-                if n is not None and slot:
+                if n is not None and slot in SLOTS:
                     cat = SLOTS[slot][0][0]
                     self.rite_error(rite, clause, lambda c, cat=cat, n=n: el(c, "condition", type="greaterThan", value=n,
                         field="selections", scope="force", childId=cat, shared=True, includeChildSelections=True, includeChildForces=False))
@@ -2995,13 +3066,20 @@ class Builder:
                     self.rite_error(rite, clause, lambda c, uid=uid, n=n: el(c, "condition", type="lessThan", value=n,
                         field="selections", scope="force", childId=uid, shared=True, includeChildSelections=True, includeChildForces=False))
                 continue
+            if re.match(r"may not include an? Allied Detachment$", clause, re.I):
+                # an error while the army has an Allied Detachment
+                self.rite_error(rite, "no allied detachment", lambda c: el(c, "condition", type="atLeast", value=1,
+                    field="forces", scope="roster", childId=self.ALLIED_DETACHMENT, shared=True,
+                    includeChildSelections=True, includeChildForces=True))
+                continue
             m = re.match(r"(?:may not include (?:any )?|no |any )(.+)$", clause)
             if not m or re.search(r"\bmore\b|outnumber", clause):
                 continue  # "may not include more Infantry units than Dreadnought units": text only
             items = []
             for item in re.split(r",\s*(?:or\s+)?(?=any |no )|,\s+or\s+", m.group(1)):
                 parts = re.split(r"\s+or\s+", item)  # "Nemesis Dreadknights or Land Raiders": two items
-                if len(parts) > 1 and not self.rite_banned(item) and all(self.rite_banned(p) for p in parts):
+                is_slot = lambda p: any(norm(p).startswith(k) for k in self.SLOT_WORDS)  # "Lords of War choices or Fortification"
+                if len(parts) > 1 and not self.rite_banned(item) and all(self.rite_banned(p) or is_slot(p) for p in parts):
                     items += parts
                 else:
                     items.append(item)
@@ -3019,7 +3097,21 @@ class Builder:
                                 mod = el(child(link, "modifiers"), "modifier", type="set", field="hidden", value="true")
                                 self.rite_condition(mod, rid)
                 slot = next((v for k, v in self.SLOT_WORDS.items() if norm(item).lstrip("any ").startswith(k)), None)
-                if slot and " other than " not in item and "vehicle" not in norm(item):
+                if slot == "Dedicated Transports":
+                    # transports offered inside units ("Rhino Transport" from another catalogue): hidden while the
+                    # Rite is chosen, and an error if one is taken
+                    offered = set()
+                    for g in self.shared_entries.iter("selectionEntryGroup"):
+                        if "dedicated transport" in norm(g.get("name") or ""):
+                            for link in g.iter("entryLink"):
+                                offered.add(link.get("targetId"))
+                                mod = el(child(link, "modifiers"), "modifier", type="set", field="hidden", value="true")
+                                self.rite_condition(mod, rid)
+                    for tid in sorted(offered - {self.units[d["name"]] for d in banned}):
+                        self.rite_error(rite, "bars transport " + tid, lambda c, tid=tid: el(c, "condition",
+                            type="atLeast", value=1, field="selections", scope="force", childId=tid, shared=True,
+                            includeChildSelections=True, includeChildForces=False))
+                if slot in SLOTS and " other than " not in item and "vehicle" not in norm(item):
                     targets = [("no " + slot, SLOTS[slot][0][0])]  # one error for the whole slot
                 else:
                     targets = [("bars " + ds["name"], self.units[ds["name"]]) for ds in banned]
@@ -5776,6 +5868,8 @@ class Builder:
         self.unique_limits()
         if self.faction in FACTION_LIMITS:
             importlib.import_module(FACTION_LIMITS[self.faction]).apply(self)
+        self.rite_slot_bans()
+        self.dedupe_rite_errors()
         self.root.append(self.shared_entries)
         if len(self.shared_groups):
             self.root.append(self.shared_groups)

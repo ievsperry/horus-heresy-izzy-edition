@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="d5ae-9e15-7ef2-10f7" name="Asuryani for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Asuryani" />
   </publications>
@@ -342,6 +342,46 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="The Crucible of Blood" hidden="false" id="6e83-b6f3-c361-f4b2" publicationId="d5ae-9e15-7ef2-10f7">
+              <modifiers>
+                <modifier type="set" field="c02d-fcf1-d5f0-e7f1" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="85e3-03f1-aa70-2ff4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="b897-4c05-62f4-de59" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9a49-ab83-a97d-55cf" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="1084-1637-3015-adee" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c83e-73cd-7714-f0ea" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8ec4-8689-e1b6-faee" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7075-37d2-90bf-f86d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="9d5e-780c-9e5d-6fda" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="75e2-0366-e364-8f8c" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="85ec-ea1a-5a9e-7aec" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="12d1-d939-c43e-55fb" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c02d-fcf1-d5f0-e7f1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b897-4c05-62f4-de59" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1084-1637-3015-adee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ec4-8689-e1b6-faee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d5e-780c-9e5d-6fda" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85ec-ea1a-5a9e-7aec" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="9dee-8cf1-03c9-e4b9" hidden="false">
                   <description>Units eligible to take a Wave Serpent as a Dedicated Transport may instead take a single Falcon as a Dedicated Transport if the unit numbers 5 models or less. Falcon Squadrons may be selected as non-Compulsory Troops choices. Firestorm Squadrons and Night Spinner Squadrons may be selected as Elites choices. Models with the Bonesinger Companions Special Rule may ignore its joining restrictions, and may instead join any unit with the Infantry Unit Type and the Asuryani Sub-type. The Detachment may ignore the 0-1 limit on Bonesinger Conclaves, and may take them as non-Compulsory Troops choices. If the army's Warlord does not have the Unique Sub-type, it gains the Path of the Shaper Special Rule.</description>
@@ -629,9 +669,15 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                     <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c2f-a545-af11-51d9" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
+                <modifier type="set" field="6b74-c962-0d73-09a8" value="0">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="selections" scope="force" childId="20ef-cd01-a8da-376e" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdc2-5a98-4acf-9f85" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b74-c962-0d73-09a8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
                 <rule name="Effects" id="4057-7caa-35c9-c4a6" hidden="false">
@@ -691,9 +737,15 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                     <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36c3-e85e-97cc-c503" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
+                <modifier type="set" field="235d-df57-ddc7-093b" value="0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a24f-12d8-36c1-f477" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8572-edc2-58a1-34c3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="235d-df57-ddc7-093b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <rules>
                 <rule name="Effects" id="3df0-d132-e040-20fb" hidden="false">
@@ -1471,12 +1523,26 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Wraithblades" hidden="false" id="66b5-add9-6c73-25f9" type="selectionEntry" targetId="85e3-03f1-aa70-2ff4">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6e83-b6f3-c361-f4b2" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="6a0d-bd99-9b73-183d" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="1ca3-09a1-8dc3-711d" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Wraithguard" hidden="false" id="9aef-ea3c-6773-7a0e" type="selectionEntry" targetId="9a49-ab83-a97d-55cf">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6e83-b6f3-c361-f4b2" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="5c17-2829-f15e-f6cf" primary="true" name="Elites:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="a8c2-7657-0e90-727e" primary="false" name="Unit:" />
@@ -1607,12 +1673,26 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Wraithlord Conclave" hidden="false" id="f0cf-be5e-4e7e-ddf1" type="selectionEntry" targetId="c83e-73cd-7714-f0ea">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6e83-b6f3-c361-f4b2" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="a137-59ce-699c-f61f" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="251c-6650-5e3a-b3df" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Wraithseer" hidden="false" id="1a1b-e29c-061a-d67a" type="selectionEntry" targetId="7075-37d2-90bf-f86d">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6e83-b6f3-c361-f4b2" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8d9b-d941-dc45-57b3" percentValue="false" includeChildSelections="true" includeChildForces="false" />
       </constraints>
@@ -1657,6 +1737,13 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Skathach Wraithknight" hidden="false" id="0d7e-d607-780f-818d" type="selectionEntry" targetId="75e2-0366-e364-8f8c">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6e83-b6f3-c361-f4b2" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="d136-03c0-dee4-e6af" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="54f4-7ccc-2746-28a5" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -1678,6 +1765,13 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Wraithknight" hidden="false" id="55f8-e35f-685d-10f7" type="selectionEntry" targetId="12d1-d939-c43e-55fb">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6e83-b6f3-c361-f4b2" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="23e9-c75d-04f6-3dab" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="df50-2c2c-2a8d-8bad" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
@@ -1685,12 +1779,26 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Holo-Field Defence Line" hidden="false" id="cf64-4124-4054-24e3" type="selectionEntry" targetId="eaa4-ff53-b5e8-b720">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7904-b140-5846-d462" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="a24f-12d8-36c1-f477" id="a69f-891a-5af1-317f" primary="true" name="Fortification:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="fc86-534b-50ce-a76e" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Webway Gate" hidden="false" id="026b-c7e0-bcf7-ac5d" type="selectionEntry" targetId="3841-bd14-c599-be7a">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7904-b140-5846-d462" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="a24f-12d8-36c1-f477" id="08b4-4457-dfba-4fd5" primary="true" name="Fortification:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="b44e-c754-8f1c-c813" primary="false" name="Unit:" />
