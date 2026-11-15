@@ -585,7 +585,14 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 
 *A Waaagh! Warband does not wage war through discipline or strategic precision. Instead it overwhelms enemies through sheer aggression, momentum and escalating battlefield chaos. As the fighting intensifies, the psychic force of the Waaagh! spreads throughout the army, driving mobs into increasingly reckless acts of destruction while ramshackle machines somehow continue functioning long beyond all logical limits.*
 
-A Waaagh! Warband consists of a Primary Detachment, an optional Support Detachment, an optional Allied Detachment, and an optional Lords of War Detachment. All normal Liber Orks rules, Waaagh! rules and Klan rules apply unless specifically overridden below.
+A Waaagh! Warband consists of:
+
+- a Primary Detachment,
+- an optional Support Detachment,
+- an optional Allied Detachment,
+- and an optional Lords of War Detachment.
+
+All normal Liber Orks rules, Waaagh! rules and Klan rules apply unless specifically overridden below.
 
 **Primary Detachment**
 
@@ -593,10 +600,10 @@ A Waaagh! Warband consists of a Primary Detachment, an optional Support Detachme
 | --- | --- | --- |
 | HQ | 1 | 3 |
 | Troops | 2 | 8 |
-| Elites | – | 4 |
-| Fast Attack | – | 4 |
-| Heavy Support | – | 4 |
-| Primarch | – | 1 |
+| Elites | — | 4 |
+| Fast Attack | — | 4 |
+| Heavy Support | — | 4 |
+| Primarch | — | 1 |
 
 **Support Detachment (Optional)**
 
@@ -604,9 +611,9 @@ A Waaagh! Warband consists of a Primary Detachment, an optional Support Detachme
 | --- | --- | --- |
 | HQ | 1 | 1 |
 | Troops | 1 | 3 |
-| Elites | – | 2 |
-| Fast Attack | – | 2 |
-| Heavy Support | – | 2 |
+| Elites | — | 2 |
+| Fast Attack | — | 2 |
+| Heavy Support | — | 2 |
 
 Units selected as part of a Support Detachment may not outnumber the number of Troops units selected in the Primary Detachment.
 
@@ -616,9 +623,9 @@ Units selected as part of a Support Detachment may not outnumber the number of T
 | --- | --- | --- |
 | HQ | 1 | 1 |
 | Troops | 1 | 2 |
-| Elites | – | 1 |
-| Fast Attack | – | 1 |
-| Heavy Support | – | 1 |
+| Elites | — | 1 |
+| Fast Attack | — | 1 |
+| Heavy Support | — | 1 |
 
 Allied Detachments must obey all normal Faction and Alliance restrictions presented elsewhere in this publication.
 
@@ -626,7 +633,7 @@ Allied Detachments must obey all normal Faction and Alliance restrictions presen
 
 | Battlefield Role | Minimum | Maximum |
 | --- | --- | --- |
-| Lords of War | – | 1 |
+| Lords of War | — | 1 |
 
 Lords of War Detachments may only be selected in games of 2,500 points or greater unless specifically permitted by a mission rule or campaign rule. A single Lords of War Detachment may only contain one unit. However, up to three separate Lords of War Detachments may be selected where permitted by the agreed game size.
 
@@ -674,9 +681,9 @@ All normal Liber Orks rules, Klan rules and Waaagh! rules apply unless specifica
 | --- | --- | --- |
 | HQ | 1 | 2 |
 | Troops | 1 | 8 |
-| Elites | – | 4 |
-| Fast Attack | – | 2 |
-| Heavy Support | – | 2 |
+| Elites | — | 4 |
+| Fast Attack | — | 2 |
+| Heavy Support | — | 2 |
 
 **Battlefield Role Assignment**
 
@@ -828,7 +835,7 @@ Base sizes follow recent 40k kits and are approximate; use whatever your models 
 | – Power klaw | +15 points |
 | – Killsaw | +10 points |
 | **The Big Mek may take any of the following:** |  |
-| – One Orky Artefact | See Orky Artefacts |
+| – One Orky Artifact | See Orky Artifacts |
 | – Attack squig | +15 points |
 | – Gitfinda | +15 points |
 | – Up to 3 grot oilers | +5 points each |
@@ -1091,7 +1098,7 @@ _A Warboss with mega armour uses this profile instead: M 6, WS 6, BS 2, S 5, T 5
 | – Kombi-Skorcha | +10 points |
 | – Kombi-Rokkit | +10 points |
 | **The Warboss may take any of the following:** |  |
-| – One Orky Artefact | See Orky Artefacts |
+| – One Orky Artifact | See Orky Artifacts |
 | – Up to 3 grot attendants (Ammo runts, oil runts, grot orderlies, etc) | +10 points each |
 | – 'Eavy armour (4+) | +10 points |
 | – Mega armour (2+) | +35 points |
@@ -2152,7 +2159,7 @@ The unit may ride a Kill Rig or Hunta Rig as a Dedicated Transport. This does no
 
 _Boyz who have grown bigger, faster and meaner than the rest of the mob, but not yet big enough to be Nobz._
 
-_Legacy Unit._
+**Legacy Unit**
 
 | Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -3827,7 +3834,7 @@ _A Stompa has six Fire Points._
 
 The Stompa is a Titan-scale model. If your group plays without Titans, swap it out or use the 2.0 Super-heavy limit on its points.
 
-## Ork Wargear
+## Grot Attendants
 
 ### Ammo Runt
 
@@ -3850,6 +3857,52 @@ A model accompanied by one or more ammo runts has the Ammo Runts special rule.
 **Special Rules**
 
 - Grot Attendants
+
+### Grot Oiler
+
+_A grot who hands his Mek the right spanner, most of the time._
+
+A model with Mek-Smasha and a grot oiler improves its Mek-Smasha (X) by 1, to a best of Mek-Smasha (4+). For example, Mek-Smasha (5+) becomes Mek-Smasha (4+).
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Grot Oiler | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
+
+**Wargear**
+
+- Grot stabba
+
+**Unit Type**
+
+- Grot Oiler: Infantry
+
+**Special Rules**
+
+- Grot Attendants
+
+### Grot Orderly
+
+_A grot assistant who holds the patient down._
+
+A model accompanied by one or more grot orderlies has the Grot Orderly special rule.
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Grot Orderly | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
+
+**Wargear**
+
+- Grot stabba
+
+**Unit Type**
+
+- Grot Orderly: Infantry
+
+**Special Rules**
+
+- Grot Attendants
+
+## Ork Wargear
 
 ### 'Ard Case
 
@@ -3949,50 +4002,6 @@ _A huge mechanical hook for snagging enemy vehicles._
 
 Enemy Vehicles attempting to move out of base contact with a vehicle equipped with a grabbin' klaw must first pass a Dangerous Terrain test. If failed, the enemy Vehicle may not move that turn.
 
-### Grot Oiler
-
-_A grot who hands his Mek the right spanner, most of the time._
-
-A model with Mek-Smasha and a grot oiler improves its Mek-Smasha (X) by 1, to a best of Mek-Smasha (4+). For example, Mek-Smasha (5+) becomes Mek-Smasha (4+).
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Grot Oiler | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
-
-**Wargear**
-
-- Grot stabba
-
-**Unit Type**
-
-- Grot Oiler: Infantry
-
-**Special Rules**
-
-- Grot Attendants
-
-### Grot Orderly
-
-_A grot assistant who holds the patient down._
-
-A model accompanied by one or more grot orderlies has the Grot Orderly special rule.
-
-| Model | M | WS | BS | S | T | W | I | A | Ld | Sv | Base |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Grot Orderly | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
-
-**Wargear**
-
-- Grot stabba
-
-**Unit Type**
-
-- Grot Orderly: Infantry
-
-**Special Rules**
-
-- Grot Attendants
-
 ### Grot-prod
 
 _A Grot Prod is a crackling electro-prod used to terrorize and discipline nearby Gretchin into battle._
@@ -4020,19 +4029,6 @@ A model equipped with mega armour improves its Armour Save to 2+, increases its 
 ### Mork Charms
 
 Mork charms grant a 5+ Invulnerable Save.
-
-### Orky Artefacts
-
-A Warboss or Big Mek may take one Orky Artefact; each artefact may only be taken once per army.
-
-| Artefact | Who | Effect | Cost |
-|---|---|---|---|
-| Da Finkin' Kap | Warboss or Big Mek | If the bearer is your Warlord, he may choose a second Warlord Trait, which must be a generic Warlord Trait | +25 points |
-| Da Fixxerupperz | Big Mek only | The bearer's Mek-Smasha (X) improves by 1, and he may use it twice each turn | +20 points |
-| Da Killa Klaw | Warboss or Big Mek | Replaces his power klaw: melee, S x2, AP 2, Unwieldy, Shred; the bearer may re-roll failed to-wound rolls | +25 points |
-| Da Lucky Stikk | Warboss or Big Mek | The bearer and any unit he joins add 1 to their Leadership and may re-roll to-hit rolls of 1 in close combat | +25 points |
-| Headwoppa's Killchoppa | Warboss or Big Mek | Replaces his choppa: melee, S+2, AP 4, Murderous Strike (6+) | +20 points |
-| Warboss Gazbag's Blitzbike | Warboss on warbike only | His twin-linked big shoota gains Shred, and he has Shrouded (4+) in a turn in which he Advanced | +20 points |
 
 ### Red Paint Job
 
@@ -4114,14 +4110,6 @@ Stikkbombz count as frag grenades†.
 _Heavy charges for clamping onto armour, with a fuse that is sometimes long enough._
 
 Tankbusta bombz count as melta bombs†.
-
-### Tankhammer
-
-_A rokkit strapped to a big stick, swung at the nearest tank. It rarely ends well for anyone involved._
-
-| Weapon | Range | Str | AP | Type |
-|---|---|---|---|---|
-| Tankhammer | – | 8 | 4 | Melee, Armourbane (Melee), Unwieldy (2), Two-Handed, Gets Hot |
 
 ### Tellyporta
 
@@ -4343,6 +4331,7 @@ Beastchoppas, big choppas, choppas, mega-choppas and 'uge choppas are counted as
 | Squig prodder | – | User | – | Melee, Concussive (1), Squig Prodder |
 | Stikka | – | +1 | 4 | Melee |
 | Stompy feet | – | User | 4 | Melee |
+| Tankhammer | – | 8 | 4 | Melee, Armourbane (Melee), Unwieldy (2), Two-Handed, Gets Hot |
 | Titanic klaw | – | 10 | 1 | Melee, Destroyer |
 | 'Uge choppa | – | +3 | 5 | Melee, Two-handed, Unwieldy (2), Breaching (5+) |
 | 'Urty syringe | – | User | 6 | Melee, Poisoned (3+), Rending (6+), Murderous Strike (6+) |
@@ -4379,6 +4368,46 @@ _Weapons carried by famous bosses, each as loud and dangerous as its owner._
 | Mork's Roar | 24" | 6 | 3 | Assault 4, Shred, Rending (6+) |
 | Stikka (thrown) | 12" | 5 | 4 | Assault 1 |
 
+## Orky Artifacts
+
+A Warboss or Big Mek may take one Orky Artifact; each artifact may only be taken once per army.
+
+### Da Finkin' Kap
+
+If the bearer is your Warlord, he may choose a second Warlord Trait, which must be a generic Warlord Trait.
+
+**Available to:** Warboss or Big Mek. **Cost:** +25 points.
+
+### Da Fixxerupperz
+
+The bearer's Mek-Smasha (X) improves by 1, and he may use it twice each turn.
+
+**Available to:** Big Mek only. **Cost:** +20 points.
+
+### Da Killa Klaw
+
+Replaces his power klaw: melee, S x2, AP 2, Unwieldy, Shred; the bearer may re-roll failed to-wound rolls.
+
+**Available to:** Warboss or Big Mek. **Cost:** +25 points.
+
+### Da Lucky Stikk
+
+The bearer and any unit he joins add 1 to their Leadership and may re-roll to-hit rolls of 1 in close combat.
+
+**Available to:** Warboss or Big Mek. **Cost:** +25 points.
+
+### Headwoppa's Killchoppa
+
+Replaces his choppa: melee, S+2, AP 4, Murderous Strike (6+).
+
+**Available to:** Warboss or Big Mek. **Cost:** +20 points.
+
+### Warboss Gazbag's Blitzbike
+
+His twin-linked big shoota gains Shred, and he has Shrouded (4+) in a turn in which he Advanced.
+
+**Available to:** Warboss on warbike only. **Cost:** +20 points.
+
 ## Rules Checklist (†)
 
 These entries rely on 2.0 wording that should be confirmed. Where your book differs, keep the intent and use the book's mechanic.
@@ -4401,9 +4430,8 @@ These entries rely on 2.0 wording that should be confirmed. Where your book diff
 
 11th edition units checked against these pages; 8th–10th edition units are from memory, with approximate profiles.
 
-- Bell of Lost Souls: 11th edition Ork datasheets
-- Flipside Gaming: Armageddon box contents
-- Warhammer Community: Codex: Orks preview
-- 40k.app: Ghazghkull Thraka, 11th edition
-- Spikey Bits: Ghazghkull 11th edition datasheet
-
+- [Bell of Lost Souls: 11th edition Ork datasheets](https://www.belloflostsouls.net/2026/06/warhammer-40k-11th-edition-ork-datasheets-unveiled-deez-are-da-best.html)
+- [Flipside Gaming: Armageddon box contents](https://flipsidegaming.com/blogs/warhammer/warhammer-40k-11th-edition-armageddon-box-contents)
+- [Warhammer Community: Codex: Orks preview](https://www.warhammer-community.com/en-gb/articles/6pvhlvqm/the-big-summer-preview-new-ork-miniatures-and-codex-are-coming/)
+- [40k.app: Ghazghkull Thraka, 11th edition](https://www.40k.app/factions/orks/units/ghazghkull-thraka)
+- [Spikey Bits: Ghazghkull 11th edition datasheet](https://spikeybits.com/gw-reveals-ghazghkull-40k-rules-datasheet-saga-of-the-beast/)

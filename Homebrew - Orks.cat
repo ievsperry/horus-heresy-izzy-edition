@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="58" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="59" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -36,15 +36,20 @@
       </constraints>
       <rules>
         <rule name="Waaagh! Warband" id="a494-4935-f285-9739" hidden="false">
-          <description>A Waaagh! Warband consists of a Primary Detachment, an optional Support Detachment, an optional Allied Detachment, and an optional Lords of War Detachment. All normal Liber Orks rules, Waaagh! rules and Klan rules apply unless specifically overridden below.
+          <description>A Waaagh! Warband consists of:
+• a Primary Detachment,
+• an optional Support Detachment,
+• an optional Allied Detachment,
+• and an optional Lords of War Detachment.
+All normal Liber Orks rules, Waaagh! rules and Klan rules apply unless specifically overridden below.
 Units selected as part of a Support Detachment may not outnumber the number of Troops units selected in the Primary Detachment.
 HQ: 1, 1.
 Troops: 1, 2.
-Elites: –, 1.
-Fast Attack: –, 1.
-Heavy Support: –, 1.
+Elites: —, 1.
+Fast Attack: —, 1.
+Heavy Support: —, 1.
 Allied Detachments must obey all normal Faction and Alliance restrictions presented elsewhere in this publication.
-Lords of War: –, 1.
+Lords of War: —, 1.
 Lords of War Detachments may only be selected in games of 2,500 points or greater unless specifically permitted by a mission rule or campaign rule. A single Lords of War Detachment may only contain one unit. However, up to three separate Lords of War Detachments may be selected where permitted by the agreed game size.
 Battlefield Role Assignment.
 HQ: Warbosses, Weirdbosses, Painbosses, Mek Bosses.
@@ -120,15 +125,20 @@ Any unit entry with a selection limitation of 0-X applies across all Detachments
       </constraints>
       <rules>
         <rule name="Waaagh! Warband" id="eb7d-4341-ab03-af2e" hidden="false">
-          <description>A Waaagh! Warband consists of a Primary Detachment, an optional Support Detachment, an optional Allied Detachment, and an optional Lords of War Detachment. All normal Liber Orks rules, Waaagh! rules and Klan rules apply unless specifically overridden below.
+          <description>A Waaagh! Warband consists of:
+• a Primary Detachment,
+• an optional Support Detachment,
+• an optional Allied Detachment,
+• and an optional Lords of War Detachment.
+All normal Liber Orks rules, Waaagh! rules and Klan rules apply unless specifically overridden below.
 Units selected as part of a Support Detachment may not outnumber the number of Troops units selected in the Primary Detachment.
 HQ: 1, 1.
 Troops: 1, 2.
-Elites: –, 1.
-Fast Attack: –, 1.
-Heavy Support: –, 1.
+Elites: —, 1.
+Fast Attack: —, 1.
+Heavy Support: —, 1.
 Allied Detachments must obey all normal Faction and Alliance restrictions presented elsewhere in this publication.
-Lords of War: –, 1.
+Lords of War: —, 1.
 Lords of War Detachments may only be selected in games of 2,500 points or greater unless specifically permitted by a mission rule or campaign rule. A single Lords of War Detachment may only contain one unit. However, up to three separate Lords of War Detachments may be selected where permitted by the agreed game size.
 Battlefield Role Assignment.
 HQ: Warbosses, Weirdbosses, Painbosses, Mek Bosses.
@@ -3097,6 +3107,36 @@ The effect lasts until the end of the turn.</description>
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tankhammer" hidden="false" id="f3a6-c0b2-2587-6c74" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Tankhammer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5fdc-2651-3ac9-9ced" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy (2), Two-Handed, Gets Hot</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Armourbane (X)" id="4aeb-33cf-0464-3ff9" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melee)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Unwieldy" id="7646-5f51-9aaf-3b2b" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Unwieldy (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Two-handed" id="7756-ff31-7404-c04c" hidden="false" targetId="4c23-e863-a569-7617" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Two-Handed" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Gets Hot" id="d024-0eba-1384-e5e7" hidden="false" targetId="679f-9d97-5ace-a652" type="rule" />
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Titanic klaw" hidden="false" id="0064-2275-7a68-b714" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Titanic klaw" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9067-9222-b3af-414d" publicationId="96d0-c462-d158-fbad">
@@ -3306,36 +3346,6 @@ The effect lasts until the end of the turn.</description>
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Tankhammer" hidden="false" id="f3a6-c0b2-2587-6c74" publicationId="96d0-c462-d158-fbad">
-      <profiles>
-        <profile name="Tankhammer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5fdc-2651-3ac9-9ced" publicationId="96d0-c462-d158-fbad">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy (2), Two-Handed, Gets Hot</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Armourbane (X)" id="4aeb-33cf-0464-3ff9" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Armourbane (Melee)" />
-          </modifiers>
-        </infoLink>
-        <infoLink name="Unwieldy" id="7646-5f51-9aaf-3b2b" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Unwieldy (2)" />
-          </modifiers>
-        </infoLink>
-        <infoLink name="Two-handed" id="7756-ff31-7404-c04c" hidden="false" targetId="4c23-e863-a569-7617" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Two-Handed" />
-          </modifiers>
-        </infoLink>
-        <infoLink name="Gets Hot" id="d024-0eba-1384-e5e7" hidden="false" targetId="679f-9d97-5ace-a652" type="rule" />
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Frazzle" hidden="false" id="41e2-ac8c-f2d1-0fb4" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Frazzle" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon" hidden="false" id="7b84-bc0b-3bce-e719" publicationId="96d0-c462-d158-fbad">
@@ -3528,6 +3538,24 @@ The effect lasts until the end of the turn.</description>
         <profile name="Ammo Runt" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ad89-1fed-292e-9443">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model accompanied by one or more ammo runts has the Ammo Runts special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grot Oiler" hidden="false" id="9d07-ca90-e7a2-472c" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Grot Oiler" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="daf3-e6e2-9e29-bb1e">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with Mek-Smasha and a grot oiler improves its Mek-Smasha (X) by 1, to a best of Mek-Smasha (4+). For example, Mek-Smasha (5+) becomes Mek-Smasha (4+).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grot Orderly" hidden="false" id="768a-d615-89d8-8769" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Grot Orderly" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5b61-bfe8-f048-df9d">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model accompanied by one or more grot orderlies has the Grot Orderly special rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3725,24 +3753,6 @@ The effect lasts until the end of the turn.</description>
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Grot Oiler" hidden="false" id="9d07-ca90-e7a2-472c" publicationId="96d0-c462-d158-fbad">
-      <profiles>
-        <profile name="Grot Oiler" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="daf3-e6e2-9e29-bb1e">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with Mek-Smasha and a grot oiler improves its Mek-Smasha (X) by 1, to a best of Mek-Smasha (4+). For example, Mek-Smasha (5+) becomes Mek-Smasha (4+).</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Grot Orderly" hidden="false" id="768a-d615-89d8-8769" publicationId="96d0-c462-d158-fbad">
-      <profiles>
-        <profile name="Grot Orderly" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5b61-bfe8-f048-df9d">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model accompanied by one or more grot orderlies has the Grot Orderly special rule.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Grot-prod" hidden="false" id="a0f3-a024-f0e9-2b72" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Grot-prod" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="880d-0acb-6f08-eb8b">
@@ -3808,78 +3818,6 @@ The effect lasts until the end of the turn.</description>
           </modifiers>
         </infoLink>
       </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Da Finkin' Kap" hidden="false" id="31da-a322-2edb-e599" publicationId="96d0-c462-d158-fbad">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8f0b-e6f6-f637-02b1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-      </constraints>
-      <profiles>
-        <profile name="Da Finkin' Kap" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6bff-aca1-b8d4-7c06">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Warboss or Big Mek. If the bearer is your Warlord, he may choose a second Warlord Trait, which must be a generic Warlord Trait</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Da Fixxerupperz" hidden="false" id="60b0-93e9-b002-5ea8" publicationId="96d0-c462-d158-fbad">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fcf6-14c7-c919-44f0" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-      </constraints>
-      <profiles>
-        <profile name="Da Fixxerupperz" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="18f9-23b3-c715-d4b3">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Big Mek only. The bearer's Mek-Smasha (X) improves by 1, and he may use it twice each turn</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Da Killa Klaw" hidden="false" id="c5f6-0f57-6bfd-cdff" publicationId="96d0-c462-d158-fbad">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5304-0e19-846b-906a" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-      </constraints>
-      <profiles>
-        <profile name="Da Killa Klaw" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d4d2-c8a6-e4a4-7576">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Warboss or Big Mek. Replaces his power klaw: melee, S x2, AP 2, Unwieldy, Shred; the bearer may re-roll failed to-wound rolls</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Da Lucky Stikk" hidden="false" id="116e-ee17-d3a3-ebda" publicationId="96d0-c462-d158-fbad">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f8c3-6ff7-05d8-854c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-      </constraints>
-      <profiles>
-        <profile name="Da Lucky Stikk" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="535e-69a5-9278-6068">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Warboss or Big Mek. The bearer and any unit he joins add 1 to their Leadership and may re-roll to-hit rolls of 1 in close combat</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Headwoppa's Killchoppa" hidden="false" id="2de6-6918-9046-7c8d" publicationId="96d0-c462-d158-fbad">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="838e-8ec1-ad20-8278" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-      </constraints>
-      <profiles>
-        <profile name="Headwoppa's Killchoppa" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d733-45ad-19ac-3866">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Warboss or Big Mek. Replaces his choppa: melee, S+2, AP 4, Murderous Strike (6+)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Warboss Gazbag's Blitzbike" hidden="false" id="06a0-9bdd-1a53-33f6" publicationId="96d0-c462-d158-fbad">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7eda-0372-7319-cabe" percentValue="false" includeChildSelections="true" includeChildForces="false" />
-      </constraints>
-      <profiles>
-        <profile name="Warboss Gazbag's Blitzbike" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="cc70-cff1-1d7d-b579">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Warboss on warbike only. His twin-linked big shoota gains Shred, and he has Shrouded (4+) in a turn in which he Advanced</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Red Paint Job" hidden="false" id="c40e-efd7-b51e-395a" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -4074,6 +4012,78 @@ The effect lasts until the end of the turn.</description>
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Da Finkin' Kap" hidden="false" id="31da-a322-2edb-e599" publicationId="96d0-c462-d158-fbad">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8f0b-e6f6-f637-02b1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
+      <profiles>
+        <profile name="Da Finkin' Kap" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6bff-aca1-b8d4-7c06">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Warboss or Big Mek. If the bearer is your Warlord, he may choose a second Warlord Trait, which must be a generic Warlord Trait.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Da Fixxerupperz" hidden="false" id="60b0-93e9-b002-5ea8" publicationId="96d0-c462-d158-fbad">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fcf6-14c7-c919-44f0" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
+      <profiles>
+        <profile name="Da Fixxerupperz" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="18f9-23b3-c715-d4b3">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Big Mek only. The bearer's Mek-Smasha (X) improves by 1, and he may use it twice each turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Da Killa Klaw" hidden="false" id="c5f6-0f57-6bfd-cdff" publicationId="96d0-c462-d158-fbad">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5304-0e19-846b-906a" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
+      <profiles>
+        <profile name="Da Killa Klaw" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d4d2-c8a6-e4a4-7576">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Warboss or Big Mek. Replaces his power klaw: melee, S x2, AP 2, Unwieldy, Shred; the bearer may re-roll failed to-wound rolls.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Da Lucky Stikk" hidden="false" id="116e-ee17-d3a3-ebda" publicationId="96d0-c462-d158-fbad">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f8c3-6ff7-05d8-854c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
+      <profiles>
+        <profile name="Da Lucky Stikk" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="535e-69a5-9278-6068">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Warboss or Big Mek. The bearer and any unit he joins add 1 to their Leadership and may re-roll to-hit rolls of 1 in close combat.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Headwoppa's Killchoppa" hidden="false" id="2de6-6918-9046-7c8d" publicationId="96d0-c462-d158-fbad">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="838e-8ec1-ad20-8278" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
+      <profiles>
+        <profile name="Headwoppa's Killchoppa" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d733-45ad-19ac-3866">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Warboss or Big Mek. Replaces his choppa: melee, S+2, AP 4, Murderous Strike (6+).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warboss Gazbag's Blitzbike" hidden="false" id="06a0-9bdd-1a53-33f6" publicationId="96d0-c462-d158-fbad">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7eda-0372-7319-cabe" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
+      <profiles>
+        <profile name="Warboss Gazbag's Blitzbike" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="cc70-cff1-1d7d-b579">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Warboss on warbike only. His twin-linked big shoota gains Shred, and he has Shrouded (4+) in a turn in which he Advanced.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Da Jump" hidden="false" id="920b-c0d6-3639-f13b" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -4611,44 +4621,44 @@ The effect lasts until the end of the turn.</description>
       <selectionEntryGroups>
         <selectionEntryGroup name="Big Mek: Options" hidden="false" id="9e9d-5ed7-b9f1-e29b">
           <selectionEntryGroups>
-            <selectionEntryGroup name="One Orky Artefact" hidden="false" id="4c05-5523-96dc-e3e8">
+            <selectionEntryGroup name="One Orky Artifact" hidden="false" id="9e9b-c05f-eca6-8c9b">
               <modifiers>
-                <modifier type="increment" field="61c9-b857-3ff9-126b" value="1">
+                <modifier type="increment" field="1be5-0ca2-7483-d464" value="1">
                   <repeats>
                     <repeat field="selections" scope="963a-3aa5-6455-315d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba4-833c-92b9-9f8c" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="61c9-b857-3ff9-126b" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1be5-0ca2-7483-d464" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Da Finkin' Kap" hidden="false" id="67b2-5253-e0e1-0d32" type="selectionEntry" targetId="31da-a322-2edb-e599">
+                <entryLink import="true" name="Da Finkin' Kap" hidden="false" id="8523-a017-cc33-6694" type="selectionEntry" targetId="31da-a322-2edb-e599">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Da Fixxerupperz" hidden="false" id="5888-9193-b191-9454" type="selectionEntry" targetId="60b0-93e9-b002-5ea8">
+                <entryLink import="true" name="Da Fixxerupperz" hidden="false" id="723b-5d99-c453-881a" type="selectionEntry" targetId="60b0-93e9-b002-5ea8">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Da Killa Klaw" hidden="false" id="b94e-a0bb-7e19-0f6d" type="selectionEntry" targetId="c5f6-0f57-6bfd-cdff">
+                <entryLink import="true" name="Da Killa Klaw" hidden="false" id="75c2-79a5-b7ff-42df" type="selectionEntry" targetId="c5f6-0f57-6bfd-cdff">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Da Lucky Stikk" hidden="false" id="58bb-533d-d2fe-c92b" type="selectionEntry" targetId="116e-ee17-d3a3-ebda">
+                <entryLink import="true" name="Da Lucky Stikk" hidden="false" id="2ef2-925c-1ea7-dee1" type="selectionEntry" targetId="116e-ee17-d3a3-ebda">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Headwoppa's Killchoppa" hidden="false" id="b6aa-aaa2-5c08-1e3f" type="selectionEntry" targetId="2de6-6918-9046-7c8d">
+                <entryLink import="true" name="Headwoppa's Killchoppa" hidden="false" id="8232-7c21-657a-9d5a" type="selectionEntry" targetId="2de6-6918-9046-7c8d">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Warboss Gazbag's Blitzbike" hidden="false" id="537d-8ff1-37ad-f41a" type="selectionEntry" targetId="06a0-9bdd-1a53-33f6">
+                <entryLink import="true" name="Warboss Gazbag's Blitzbike" hidden="false" id="0e1d-403b-7bd4-272c" type="selectionEntry" targetId="06a0-9bdd-1a53-33f6">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
                   </costs>
@@ -6085,44 +6095,44 @@ The effect lasts until the end of the turn.</description>
       <selectionEntryGroups>
         <selectionEntryGroup name="Warboss: Options" hidden="false" id="624d-81c0-d6e7-0fcb">
           <selectionEntryGroups>
-            <selectionEntryGroup name="One Orky Artefact" hidden="false" id="1569-9b15-57a5-6cba">
+            <selectionEntryGroup name="One Orky Artifact" hidden="false" id="02d6-eeda-5d5f-c020">
               <modifiers>
-                <modifier type="increment" field="92d8-659b-a622-6640" value="1">
+                <modifier type="increment" field="cd2d-efeb-b63b-12cd" value="1">
                   <repeats>
                     <repeat field="selections" scope="a310-4e70-5397-9815" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6363-48da-3376-f328" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="92d8-659b-a622-6640" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cd2d-efeb-b63b-12cd" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Da Finkin' Kap" hidden="false" id="1bfe-67b3-0eec-5604" type="selectionEntry" targetId="31da-a322-2edb-e599">
+                <entryLink import="true" name="Da Finkin' Kap" hidden="false" id="3cd3-22e3-3a37-6c88" type="selectionEntry" targetId="31da-a322-2edb-e599">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Da Fixxerupperz" hidden="false" id="9c42-f14b-4992-658b" type="selectionEntry" targetId="60b0-93e9-b002-5ea8">
+                <entryLink import="true" name="Da Fixxerupperz" hidden="false" id="368a-6a8a-e26a-fbc0" type="selectionEntry" targetId="60b0-93e9-b002-5ea8">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Da Killa Klaw" hidden="false" id="09b6-9b90-d9ba-4ae4" type="selectionEntry" targetId="c5f6-0f57-6bfd-cdff">
+                <entryLink import="true" name="Da Killa Klaw" hidden="false" id="9048-fbbb-4f46-b194" type="selectionEntry" targetId="c5f6-0f57-6bfd-cdff">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Da Lucky Stikk" hidden="false" id="9338-7eec-07a0-2130" type="selectionEntry" targetId="116e-ee17-d3a3-ebda">
+                <entryLink import="true" name="Da Lucky Stikk" hidden="false" id="8382-5495-ea69-d6cb" type="selectionEntry" targetId="116e-ee17-d3a3-ebda">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Headwoppa's Killchoppa" hidden="false" id="41cf-e51d-4cb2-d7b8" type="selectionEntry" targetId="2de6-6918-9046-7c8d">
+                <entryLink import="true" name="Headwoppa's Killchoppa" hidden="false" id="04a6-11d2-ae0f-dc46" type="selectionEntry" targetId="2de6-6918-9046-7c8d">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Warboss Gazbag's Blitzbike" hidden="false" id="ffec-5af6-b8cb-f6ad" type="selectionEntry" targetId="06a0-9bdd-1a53-33f6">
+                <entryLink import="true" name="Warboss Gazbag's Blitzbike" hidden="false" id="2c74-44d8-03b8-730a" type="selectionEntry" targetId="06a0-9bdd-1a53-33f6">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
                   </costs>
