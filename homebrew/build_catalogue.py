@@ -2668,6 +2668,113 @@ class Builder:
         mod = el(child(entry, "modifiers"), "modifier", type="set", field=cid, value=0)
         condition(el(mod, "conditions"))
 
+    # "may not include more Infantry units than it has Dreadnought units"; "must include at least as many Wraith
+    # units as non-Wraith units" (the second named first)
+    COMPARE = (re.compile(r"(?:the army |the detachment |it )?(?:may not|cannot|must not) (?:include|select) more "
+                          r"(?P<more>.+?) than (?:it (?:has|includes) )?(?P<fewer>.+?)(?=,\s+and\s+no\b|\.?$)", re.I),
+               re.compile(r"(?:the army |the detachment )?must include at least as many (?P<fewer>.+?) as "
+                          r"(?P<more>.+?)\.?$", re.I))
+    MAIN_TYPES = {"infantry", "cavalry", "vehicle", "dreadnought", "bio-construct", "automata", "primarch", "knight"}
+
+    def ds_types(self, ds):
+        """A datasheet's Unit Type lines as (type, [sub-types]): 'Talos Pain Engine: Bio-Construct (Antigrav,
+        Monstrous)' is ('bio-construct', ['antigrav', 'monstrous'])."""
+        out = []
+        for line in ds.get("types", []):
+            t = line.split(": ", 1)[1] if ": " in line else line
+            t = t.replace("†", "")  # "Vehicle (Flyer, Hover, Transport)†"
+            m = re.match(r"([^(]+?)\s*(?:\((.*)\))?\s*$", t.strip())
+            if m:
+                out.append((m.group(1).strip().lower(), [x.strip().lower() for x in (m.group(2) or "").split(",") if x.strip()]))
+        return out
+
+    def ds_is(self, ds, word):
+        """A unit of that type: most of its Unit Type lines (the first on a tie) have it as their type."""
+        ts = self.ds_types(ds)
+        hits = sum(1 for t, _ in ts if t == word)
+        return bool(ts) and (hits * 2 > len(ts) or (hits * 2 == len(ts) and ts[0][0] == word))
+
+    def ds_has(self, ds, word):
+        """A unit containing models with that type or sub-type."""
+        return any(t == word or word in subs for t, subs in self.ds_types(ds))
+
+    def rite_class(self, phrase):
+        """('slot', category id) or ('units', [datasheets]) for one side of a comparison."""
+        p = re.sub(r"^(?:total|the)\s+", "", phrase.strip().rstrip("."), flags=re.I)
+        p = re.sub(r"\s+(?:combined|counted across all .*)$", "", p, flags=re.I)
+        listed = re.search(r"\((.+)\)", p)
+        if listed:  # "Penitent units (Sisters Repentia Squads, Arco-flagellant Squads, ...)"
+            found = []
+            for part in re.split(r",\s*(?:and\s+)?|\s+and\s+", listed.group(1).replace("\u2063", ",")):
+                hits = self.rite_units(part)
+                if not hits:  # "Sisters Repentia Squads": a datasheet whose name's words are all in it
+                    words = lambda n: {re.sub(r"s$", "", w) for w in norm(n).split()}
+                    hits = [d for d in self.datasheets if d["name"] in self.units and words(d["name"]) <= words(part)]
+                found += [d for d in hits if d not in found]
+            return "units", found
+        m = re.match(r"(.+?) choices$", p, re.I)
+        slot = m and next((v for k, v in self.SLOT_WORDS.items() if norm(m.group(1)).startswith(k)), None)
+        if slot:
+            return "slot", SLOTS[slot][0][0]
+        every = [d for d in self.datasheets if d["name"] in self.units]
+        m = re.match(r"units containing models with the (.+?) (?:unit )?sub-type$", p, re.I)
+        if m:
+            return "units", [d for d in every if self.ds_has(d, m.group(1).lower())]
+        m = re.match(r"non-(\S+) (.+)$", p, re.I)
+        if m:
+            base = every if norm(m.group(2)) == "units" else self.rite_class(m.group(2))[1]
+            word = m.group(1).lower()
+            return "units", [d for d in base if not (self.ds_is(d, word) if word in self.MAIN_TYPES else self.ds_has(d, word))]
+        if re.search(r"\sand\s", p) and re.search(r"units$", p, re.I):  # "vehicle and Thunderkyn units"
+            found = []
+            for part in re.split(r"\s+and\s+", re.sub(r"\s+units$", "", p, flags=re.I)):
+                found += [d for d in self.rite_class(part + " units")[1] if d not in found]
+            return "units", found
+        m = re.match(r"(\S+) units$", p, re.I)
+        word = m and m.group(1).lower()
+        if word and (word in self.MAIN_TYPES or any(self.ds_has(d, word) for d in every)):
+            return "units", [d for d in every if (self.ds_is(d, word) if word in self.MAIN_TYPES else self.ds_has(d, word))]
+        return "units", self.rite_units(p)
+
+    def rite_compare(self, rite, text):
+        """A limit comparing two counts is an error on the Rite: its limit of one goes up by one for each unit
+        that may be the more numerous and down by one for each that may not, so it fails exactly when they
+        outnumber them. Returns the text without that limit."""
+        not_counted = re.search(r"\.\s+([^.]+?) (?:is|are) not counted\.?$", text)
+        excluded = self.rite_units(not_counted.group(1)) if not_counted else []
+        if not_counted:
+            text = text[:not_counted.start()] + "."
+        # commas inside brackets are not clause breaks
+        text = re.sub(r"\(([^)]*)\)", lambda m: "(" + m.group(1).replace(",", "\u2063") + ")", text)
+        for pattern in self.COMPARE:
+            m = pattern.search(text)
+            if not m:
+                continue
+            sides = {k: self.rite_class(m.group(k)) for k in ("more", "fewer")}
+            if not all(items for _, items in sides.values()):
+                break  # a side it cannot name stays text only
+            entry = self.root.find(f"selectionEntries/selectionEntry//selectionEntry[@id='{rite['id']}']")
+            if entry is None:
+                break
+            scope = "roster" if re.match(r"the army\b", m.group(0), re.I) else "force"
+            ids = {}
+            for k, (kind, items) in sides.items():
+                ids[k] = [items] if kind == "slot" else [self.units[d["name"]] for d in items if d not in excluded]
+            both = set(ids["more"]) & set(ids["fewer"])  # counted on both sides: no difference
+            cid = add_constraint(entry, "max", 1, make_id(rite["id"], "limit", "compare", m.group(0)))
+            for k, kind in (("fewer", "increment"), ("more", "decrement")):
+                for tid in ids[k]:
+                    if tid in both:
+                        continue
+                    mod = el(child(entry, "modifiers"), "modifier", type=kind, field=cid, value=1)
+                    el(el(mod, "repeats"), "repeat", field="selections", scope=scope, value=1, percentValue=False,
+                       shared=True, includeChildSelections=True, includeChildForces=scope == "roster", childId=tid,
+                       repeats=1, roundUp=False)
+            text = (text[:m.start()] + text[m.end():]).strip()
+            text = re.sub(r"^,\s+and\s+", "", text)
+            break
+        return text.replace("\u2063", ",")
+
     def rite_limit(self, rite, lim):
         """Enforce what a Rite's limitations can be checked in the app: units it bars are hidden while
         it is chosen, and limits on how many of something are an error on the Rite."""
@@ -2681,6 +2788,7 @@ class Builder:
                    childId=self.ALLIED_DETACHMENT, shared=True)
             return
         text = re.sub(r"^A Detachment using this Rite of War\s+", "", text)
+        text = self.rite_compare(rite, text)
         for clause in re.split(r",\s+(?:and|or)\s+|;\s*|\s+and\s+(?=(?:may|no)\b)", text):
             clause = clause.strip().rstrip(".")
             m = re.match(r"(?:may include |include )?(?:no )?more than (\w+) (.+?)(?: choices?)?$", clause)
