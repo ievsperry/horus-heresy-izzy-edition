@@ -608,8 +608,9 @@ loading. The script prints anything in the doc it could not place.
   sub-type ("Psyker units", "units containing models with the Monstrous Unit Sub-type") is any model having it,
   "non-..." is every other unit, a slot ("Heavy Support choices") counts units in it, and anything else, or a
   list in brackets, names datasheets. Units the doc says "are not counted" count on neither side; "the army"
-  counts the whole roster, otherwise the Detachment. A limit on wargear carried ("units equipped with
-  Skyrunner Jetbikes") stays text only.
+  counts the whole roster, otherwise the Detachment. "Must select more X than Y" is strict. A limit on wargear
+  carried ("more units equipped with Skyrunner Jetbikes, Vyper Jetbikes, or Raptor Jetbikes than units without")
+  gets a category ("Equipped: ...") that every unit takes while it holds any of that wargear, and counts it.
 - Rite limitations and effects that are in-game only ("must start the game embarked", "no Reserves",
   Deep Strike from turn one) are text only.
 - Instinctive Behaviour, Synapse and other in-game rules are text only.
@@ -627,11 +628,11 @@ loading. The script prints anything in the doc it could not place.
   cost scale of the other biomorphs, and shows each model's raised value once taken.
 - A "**Name.** text" rule ends at the next heading, so a table or list under a following "####" heading no
   longer joins the rule before it.
-- In the official catalogues, Expansion FAQ limits that depend on play or on the Detachment (Armoured Fist Pattern
-  Cohorts: Infantry must start Embarked, no models with Movement 0, no Fortifications, Line only in a Primary
-  Detachment) are rule text only; the Armoured Fist Troops choice itself takes any one Leman Russ Strike or Assault
-  Squadron and gains Line as a Compulsory Troops choice.
-- Traders Militant: Traders Militant Elites taken as Troops in an Allied Detachment are rule text only.
+- In the official catalogues, the Armoured Fist Pattern Cohorts' "Infantry must start Embarked or in Reserves" is
+  rule text only; its other limits are checked (see armoured_fist_limits.py), and the Armoured Fist Troops choice
+  takes any one Leman Russ Strike or Assault Squadron.
+- Traders Militant: in an Allied Detachment or a Zone Mortalis chart, each Traders Militant unit that can be an
+  Elites choice may also be taken as a Troops choice (a Troops entry shown only there).
 
 ## Game system and official catalogue tools
 
@@ -960,6 +961,11 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Rule text only: the Arcuitor's Hunter Killer swap, the Mechadendrite Hive's "if it does not take" limits, the
   Crusader Host's Questoris-only and Primary-only limits and the Skitariiax-Protectorate's Compulsory Troops
   limit. It refuses to run on a catalogue that already has the expansion.
+- `python3 homebrew/armoured_fist_limits.py` enforces the Armoured Fist Pattern Cohorts Cohort Doctrine's limits in
+  the official LI - Solar Auxilia catalogue: the army may take no Fortifications and the Detachment no model with
+  Movement 0 or '-' (the Tarantula Sentry Gun, Sabre Platform and Earthshaker Platform), each an error on the
+  Doctrine, and the Auxilia Armoured Tercio's Line as Compulsory Troops only in the Primary Detachment (the Crusade
+  Force Organisation Chart). Running it again changes nothing.
 - `python3 homebrew/skitarii_limit.py` enforces the Skitarii Sub-type's "a Detachment may not include more models
   with this Sub-type than without it, unless its Compulsory HQ choice has the Skitarii Sub-type" in the official
   Mechanicum catalogue. Each of the 16 units with the Skitarii Sub-type rule carries the limit, so it applies

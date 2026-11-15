@@ -14,7 +14,7 @@ import glob
 import os
 import xml.etree.ElementTree as ET
 
-from build_catalogue import PTS, UNIT_CATEGORY, add_constraint, add_cost, add_rule, child, el, make_id
+from build_catalogue import PTS, SLOTS, UNIT_CATEGORY, add_category, add_constraint, add_cost, add_rule, child, el, make_id
 
 NS = "{http://www.battlescribe.net/schema/catalogueSchema}"
 ALLEGIANCE = "e90d-e5a8-f42d-da84"
@@ -222,6 +222,30 @@ def apply(b):
             for m in markers:  # the second Mechanicum Detachment needs two
                 condition(child(mg, "conditions"), "greaterThan", i, m)
     add_cost(e, 0)
+    allied_troops(b)
+
+
+ZONE_MORTALIS = "5430-5be1-1613-be44"  # ZM 1. Mortalis Assault Force Organisation Chart
+
+
+def allied_troops(b):
+    """"These units may only otherwise be taken in an Allied Detachment or a Zone Mortalis Engagement Force
+    Organisation Chart; if so, ... any Traders Militant unit that can be an Elites choice may also be taken as a
+    Troops choice": a Troops entry for each, shown only in those forces."""
+    links = b.root.find("entryLinks")
+    for ds in b.datasheets:
+        if ds["slot"] != "Elites" or ds["name"] not in b.units:
+            continue
+        e = el(links, "entryLink", import_=True, name=ds["name"], hidden=True,
+               id=make_id("allied troops", b.faction, ds["name"]), type="selectionEntry", targetId=b.units[ds["name"]])
+        m = el(child(e, "modifiers"), "modifier", type="set", field="hidden", value="false")
+        g = el(el(el(m, "conditionGroups"), "conditionGroup", type="or"), "conditions")
+        for force in (ALLIED, ZONE_MORTALIS):
+            el(g, "condition", type="instanceOf", value=1, field="selections", scope="ancestor", childId=force,
+               shared=True, includeChildSelections=False, includeChildForces=False)
+        for cat, cname, primary in SLOTS["Troops"]:
+            add_category(e, cat, cname, e.get("id"), primary=primary)
+        add_category(e, *UNIT_CATEGORY, e.get("id"))
 
 
 def find(b, eid):

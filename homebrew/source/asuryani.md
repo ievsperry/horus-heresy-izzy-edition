@@ -2610,7 +2610,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 
 **Unit Type**
 
-- Vehicle (Asuryani, Knight)
+- Vehicle (Asuryani, Knight, Wraith)
 
 **Special Rules**
 
@@ -2716,7 +2716,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 
 **Unit Type**
 
-- Vehicle (Asuryani, Knight)
+- Vehicle (Asuryani, Knight, Wraith)
 
 **Special Rules**
 
