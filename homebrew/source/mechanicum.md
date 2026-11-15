@@ -2807,9 +2807,9 @@ These items work alongside the wargear in *Liber Mechanicum*.
 
 **Scapuli-Pattern Thruster Pack.** At the start of the controlling player's Movement phase, or when deployed by Deep Strike Assault, the model may activate the pack: its Movement becomes 14 for that turn, with every benefit of that value, including the Charge bonus. While activated, it ignores terrain when moving and charging, but must take Dangerous Terrain tests when starting or ending a move in Dangerous Terrain. It may move over friendly and enemy models without penalty but must end at least 1" from models in other units.
 
-**Teleportation Transponders.** The unit counts as having Deep Strike.
-
 **Utan Jump Booster.** *Similar in purpose to a jump pack, the Utan jump booster burns a toxic propellant for extra lift; deadly to any other user, it is made for automata like the Arlatax, which suffer nothing from its foul clouds.* A unit composed entirely of models with Utan jump boosters may set its Move Characteristic to a value of 12 for the duration of the controlling player's turn. This allows the unit to move up to 12", regardless of the Movement Characteristic shown on its profile and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge distance). In addition, the unit ignores terrain while Moving and Charging. A unit that ends or begins its movement or a Charge in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Utan jump boosters, and treats all Difficult Terrain as Dangerous Terrain.
+
+**Teleportation Transponders.** The unit counts as having Deep Strike.
 
 ## Rules Checklist
 
@@ -2818,7 +2818,7 @@ These rules appear on datasheets but are not defined in Liber Ingenium. Most are
 | Rule or item | Used by | Where it is defined |
 | --- | --- | --- |
 | Galvanic Traction Drive, Paragon of Metal, Battlesmith (X), Firing Protocols (X), Feudal Hierarchy, Patris Cybernetica | Several units | *Liber Mechanicum* |
-| Greuso Protocol, Moirax Talon | Questoris Knight Moirax Talon | Greuso Protocol: Mechanicum Special Rules, above; Moirax Talon: *Liber Mechanicum* (Armiger and Moirax Talons) |
+| Greuso Protocol, Moirax Talon | Questoris Knight Moirax Talon | Greuso Protocol: Mechanicum Special Rules, above; Moirax Talon: Liber Mechanicum (Armiger and Moirax Talons) |
 | Pride of Place | Magos Prime on Abeyant, Kelbor-Hal | Mechanicum Special Rules, above |
 | Surveillance Protocols | Herax Battle-Automata Maniple | Mechanicum Special Rules, above |
 | Thanatar Maniple | Thanatar-Cynis Siege-Automata Maniple | Open question: likely *Liber Mechanicum* (Thanatar) |
