@@ -12,7 +12,7 @@ It also writes:
 - the Ætheric Blessings: every Daemon unit (official and new) may buy one, priced per model (the datasheet's price,
   or +5 / +15 / +30 by Wounds), shown only with the matching Dominion (any under Formless Distortion);
 - Master of the Ruinstorm on the Ruinstorm Daemon Sovereign and Harbinger, with the Master of the Legion rule and
-  its limit of one such model per full 1,000 points of the army's points limit;
+  its limit of one such model per full 1,000 points of the army's points limit (only when a points limit is set);
 - the Rites of War: Warlord prerequisites, Dominions, extra Troops (and Line) and Elites choices, Compulsory Troops,
   bans, Troops minimums, unit sizes, the Swarming Horde discount, Soul-Forge squadrons, Dark Communion's discount and
   the Blessings each Dominion Rite requires. In-game effects are the Rite's text.
@@ -397,6 +397,10 @@ def main():
         m = modifier(holder, cid, 1, "decrement")
         el(child(m, "repeats"), "repeat", value=1, percentValue=False, repeats=1, roundUp=False, field="selections",
            scope="roster", childId=OFFICIAL[other][0], shared=True, includeChildSelections=True, includeChildForces=True)
+        m = modifier(holder, cid, -1)  # no points limit set: nothing to count against, so no limit
+        el(m, "comment").text = "Master of the Ruinstorm: only checked when the roster has a points limit"
+        el(child(m, "conditions"), "condition", type="equalTo", value=0, percentValue=False, field="limit::" + PTS,
+           scope="roster", childId="any", shared=True, includeChildSelections=True, includeChildForces=False)
         official_adds[n]["constraints"] += list(holder.find("constraints"))
         official_adds[n]["modifiers"] += list(holder.find("modifiers"))
 

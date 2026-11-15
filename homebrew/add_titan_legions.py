@@ -19,8 +19,8 @@ The doc (homebrew/source/titan-legions.md) is read by build_catalogue.py's Build
 - the two Advanced Reactions on the army's Divisio Tactica entry, and the three Warlord Traits as a Titan Legions
   choice in the Mech Library's Warlord Traits (for the Axiarch and the Titans).
 
-Under a Rite the Warlord must be the Axiarch or a Titan: the official HQs from LI - Assassins and Agents keep their
-Warlord choice (rule text). It refuses to run on a catalogue that already has the expansion."""
+Under a Rite the Warlord must be the Axiarch or a Titan; the official HQs from LI - Assassins and Agents have no
+Warlord choice in any catalogue, so they need no bar. It refuses to run on a catalogue that already has the expansion."""
 import re
 import sys
 import xml.etree.ElementTree as ET

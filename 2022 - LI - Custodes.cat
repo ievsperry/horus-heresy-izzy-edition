@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1701" name="LI - Custodes" revision="40" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1701" name="LI - Custodes" revision="41" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="ccca-a9de-0cd9-f8be" name="Legio Custodes" hidden="false">
       <infoLinks>
@@ -77,8 +77,22 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="3293-b6a4-bfc2-2818" name="Chamber of the Golden Host: Hykanatoi" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="4007-82b3-d418-9b00" value="1">
+                  <comment>Chamber of the Golden Host: Hykanatoi: may not include more Vehicle and Dreadnought units than units without those Unit Types</comment>
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="36c3-e85e-97cc-c503" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="4007-82b3-d418-9b00" value="2">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4f1-e2b7-7a58-9a8d" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d99-2638-dcf4-dcf7" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4007-82b3-d418-9b00" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <rules>
                 <rule id="d460-8d35-da43-c1f7" name="Chamber of the Golden Host: Hykanatoi" hidden="false">
@@ -103,8 +117,27 @@ Limitations
               </costs>
             </selectionEntry>
             <selectionEntry id="782b-fe10-5981-04be" name="Chamber of the Golden Host: Kataphraktoi" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="7f4f-b5f6-997b-ec29" value="1">
+                  <comment>Chamber of the Golden Host: Kataphraktoi: may not include more Fast Attack and Heavy Support choices combined than Troops choices</comment>
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="7f4f-b5f6-997b-ec29" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20ef-cd01-a8da-376e" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="7f4f-b5f6-997b-ec29" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7031-469a-1aeb-eab0" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba93-f7f6-975a-ed13" type="max"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f4f-b5f6-997b-ec29" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile id="66b1-c6cf-3c5f-1b42" name="Kataphraktoi Charger (Warlord Trait)" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
