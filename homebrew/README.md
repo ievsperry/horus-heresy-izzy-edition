@@ -960,6 +960,12 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Rule text only: the Arcuitor's Hunter Killer swap, the Mechadendrite Hive's "if it does not take" limits, the
   Crusader Host's Questoris-only and Primary-only limits and the Skitariiax-Protectorate's Compulsory Troops
   limit. It refuses to run on a catalogue that already has the expansion.
+- `python3 homebrew/skitarii_limit.py` enforces the Skitarii Sub-type's "a Detachment may not include more models
+  with this Sub-type than without it, unless its Compulsory HQ choice has the Skitarii Sub-type" in the official
+  Mechanicum catalogue. Each of the 16 units with the Skitarii Sub-type rule carries the limit, so it applies
+  wherever the unit is linked: it is an error on the unit when the Detachment's Skitarii models outnumber its other
+  models. A Sicarian Clademaster or Skitarii Centurius in the Detachment lifts it (the apps cannot tell which HQ
+  fills the Compulsory slot, so any Skitarii HQ counts). Running it again changes nothing.
 - `python3 homebrew/add_centura.py` adds the Liber Centura expansion (the Claude Doc "Liber Centura for The Horus
   Heresy 2.0 — Homebrew Conversion", kept as `source/centura.md`). Run it after the doc's 55 special rules are in
   `additional-special-rules.md` and the game system. It writes:
