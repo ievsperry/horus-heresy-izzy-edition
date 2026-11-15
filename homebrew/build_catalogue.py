@@ -2673,6 +2673,9 @@ class Builder:
     COMPARE = (re.compile(r"(?:the army |the detachment |it )?(?:may not|cannot|must not) (?:include|select) more "
                           r"(?P<more>.+?) than (?:it (?:has|includes) )?(?P<fewer>.+?)(?=,\s+and\s+no\b|\.?$)", re.I),
                re.compile(r"(?:the army |the detachment )?must include at least as many (?P<fewer>.+?) as "
+                          r"(?P<more>.+?)\.?$", re.I),
+               # strictly more: "must select more units equipped with Skyrunner Jetbikes ... than units without"
+               re.compile(r"(?:the army |the detachment )?must (?:select|include) more (?P<fewer>.+?) than "
                           r"(?P<more>.+?)\.?$", re.I))
     MAIN_TYPES = {"infantry", "cavalry", "vehicle", "dreadnought", "bio-construct", "automata", "primarch", "knight"}
 
@@ -2717,6 +2720,17 @@ class Builder:
         if slot:
             return "slot", SLOTS[slot][0][0]
         every = [d for d in self.datasheets if d["name"] in self.units]
+        m = re.match(r"units equipped with (.+)$", p, re.I)
+        if m:  # "units equipped with Skyrunner Jetbikes, Vyper Jetbikes, or Raptor Jetbikes": the wargear's entries
+            ids = []
+            for item in re.split(r",\s*(?:or\s+)?|\s+or\s+", m.group(1)):
+                e = next((x for x in self.shared_entries.findall("selectionEntry")
+                          if x.get("type") == "upgrade" and forms(x.get("name")) & forms(item.strip())), None)
+                if e is not None:
+                    ids.append(e.get("id"))
+            return "equipped", ids
+        if norm(p) == "units without":
+            return "without", None
         m = re.match(r"units containing models with the (.+?) (?:unit )?sub-type$", p, re.I)
         if m:
             return "units", [d for d in every if self.ds_has(d, m.group(1).lower())]
@@ -2736,6 +2750,43 @@ class Builder:
             return "units", [d for d in every if (self.ds_is(d, word) if word in self.MAIN_TYPES else self.ds_has(d, word))]
         return "units", self.rite_units(p)
 
+    def equipped_category(self, rite, wargear):
+        """A category for the units carrying any of this wargear, so they can be counted as units."""
+        cid = make_id("category", self.faction, rite["name"], "equipped")
+        cats = self.root.find("categoryEntries")
+        if cats is None:
+            cats = el(self.root, "categoryEntries")
+        if cats.find(f"categoryEntry[@id='{cid}']") is not None:
+            return cid
+        names = [self.shared_entries.find(f"selectionEntry[@id='{w}']").get("name") for w in wargear]
+        el(cats, "categoryEntry", name="Equipped: " + ", ".join(names) + f" ({rite['name']})", hidden=False, id=cid)
+        for unit in self.shared_entries.findall("selectionEntry"):
+            if unit.get("type") != "unit" or not any(l.get("targetId") in wargear for l in unit.iter("entryLink")) \
+                    and not any(g.get("targetId") for g in unit.iter("entryLink")
+                                if self.links_to(g.get("targetId"), wargear)):
+                continue
+            mod = el(child(unit, "modifiers"), "modifier", type="add", field="category", value=cid)
+            conds = el(el(el(mod, "conditionGroups"), "conditionGroup", type="or"), "conditions")
+            for w in wargear:
+                el(conds, "condition", type="atLeast", value=1, field="selections", scope=unit.get("id"), childId=w,
+                   shared=True, includeChildSelections=True, includeChildForces=False)
+        return cid
+
+    def links_to(self, target, wargear, seen=None):
+        """Whether a shared entry or group reaches any of this wargear through its links."""
+        seen = seen if seen is not None else set()
+        if target in seen:
+            return False
+        seen.add(target)
+        e = next((x for x in self.shared_entries.iter() if x.get("id") == target), None)
+        if e is None:
+            for grp in (self.root.find("sharedSelectionEntryGroups"),):
+                e = next((x for x in (grp.iter() if grp is not None else []) if x.get("id") == target), None)
+        if e is None:
+            return False
+        return any(l.get("targetId") in wargear or self.links_to(l.get("targetId"), wargear, seen)
+                   for l in e.iter("entryLink"))
+
     def rite_compare(self, rite, text):
         """A limit comparing two counts is an error on the Rite: its limit of one goes up by one for each unit
         that may be the more numerous and down by one for each that may not, so it fails exactly when they
@@ -2751,22 +2802,32 @@ class Builder:
             if not m:
                 continue
             sides = {k: self.rite_class(m.group(k)) for k in ("more", "fewer")}
-            if not all(items for _, items in sides.values()):
+            if not all(items for kind, items in sides.values() if kind != "without"):
                 break  # a side it cannot name stays text only
             entry = self.root.find(f"selectionEntries/selectionEntry//selectionEntry[@id='{rite['id']}']")
             if entry is None:
                 break
             scope = "roster" if re.match(r"the army\b", m.group(0), re.I) else "force"
-            ids = {}
+            strict = pattern is self.COMPARE[2]
+            ids, weight = {}, {"more": 1, "fewer": 1}
             for k, (kind, items) in sides.items():
-                ids[k] = [items] if kind == "slot" else [self.units[d["name"]] for d in items if d not in excluded]
+                if kind == "slot":
+                    ids[k] = [items]
+                elif kind == "equipped":
+                    ids[k] = [self.equipped_category(rite, items)]
+                elif kind == "without":  # "units without": every unit, the others counted twice over
+                    ids[k] = [UNIT_CATEGORY[0]]
+                    weight["fewer" if k == "more" else "more"] = 2
+                else:
+                    ids[k] = [self.units[d["name"]] for d in items if d not in excluded]
             both = set(ids["more"]) & set(ids["fewer"])  # counted on both sides: no difference
-            cid = add_constraint(entry, "max", 1, make_id(rite["id"], "limit", "compare", m.group(0)))
+            # the limit starts at one ("no more X than Y": fails when X > Y) or, for "more X than Y", at nothing
+            cid = add_constraint(entry, "max", 0 if strict else 1, make_id(rite["id"], "limit", "compare", m.group(0)))
             for k, kind in (("fewer", "increment"), ("more", "decrement")):
                 for tid in ids[k]:
                     if tid in both:
                         continue
-                    mod = el(child(entry, "modifiers"), "modifier", type=kind, field=cid, value=1)
+                    mod = el(child(entry, "modifiers"), "modifier", type=kind, field=cid, value=weight[k])
                     el(el(mod, "repeats"), "repeat", field="selections", scope=scope, value=1, percentValue=False,
                        shared=True, includeChildSelections=True, includeChildForces=scope == "roster", childId=tid,
                        repeats=1, roundUp=False)

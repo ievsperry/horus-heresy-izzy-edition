@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="d5ae-9e15-7ef2-10f7" name="Asuryani for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Asuryani" />
   </publications>
+  <categoryEntries>
+    <categoryEntry name="Equipped: Skyrunner Jetbike, Vyper Jetbike, Raptor Jetbike (The Serpent Host)" hidden="false" id="4f5b-b0e1-4a77-41d0" />
+  </categoryEntries>
   <forceEntries>
     <forceEntry name="Aeldari Warhost Detachment" hidden="false" id="1569-5207-ecf6-69d7">
       <constraints>
@@ -376,6 +379,16 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                     <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7075-37d2-90bf-f86d" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
+                <modifier type="increment" field="bdc2-5a98-4acf-9f85" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75e2-0366-e364-8f8c" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="bdc2-5a98-4acf-9f85" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12d1-d939-c43e-55fb" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
                 <modifier type="decrement" field="bdc2-5a98-4acf-9f85" value="1">
                   <repeats>
                     <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9973-353e-fce3-d732" repeats="1" roundUp="false" />
@@ -593,22 +606,12 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                 </modifier>
                 <modifier type="decrement" field="bdc2-5a98-4acf-9f85" value="1">
                   <repeats>
-                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75e2-0366-e364-8f8c" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="bdc2-5a98-4acf-9f85" value="1">
-                  <repeats>
                     <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c08-21ac-96f7-2805" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
                 <modifier type="decrement" field="bdc2-5a98-4acf-9f85" value="1">
                   <repeats>
                     <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe5d-7a92-a145-7c59" repeats="1" roundUp="false" />
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="bdc2-5a98-4acf-9f85" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12d1-d939-c43e-55fb" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
                 <modifier type="decrement" field="bdc2-5a98-4acf-9f85" value="1">
@@ -677,6 +680,21 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="The Serpent Host" hidden="false" id="7904-b140-5846-d462" publicationId="d5ae-9e15-7ef2-10f7">
+              <modifiers>
+                <modifier type="increment" field="8572-edc2-58a1-34c3" value="2">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f5b-b0e1-4a77-41d0" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="8572-edc2-58a1-34c3" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36c3-e85e-97cc-c503" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8572-edc2-58a1-34c3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Effects" id="3df0-d132-e040-20fb" hidden="false">
                   <description>Windrider Squads do not have the Support Squad Special Rule. Windrider Squads taken as Compulsory Troops gain the Line Sub-type. Vyper Squadrons may be taken as non-Compulsory Troops. Shining Spears may be taken as Elites choices. A single unit made up entirely of models with Aspect Shrine (Shining Spear) may be selected without restriction, whichever Aspect Shrine upgrades the army has. It still uses a Force Organisation slot as normal.</description>
@@ -5929,6 +5947,19 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Aspect Exarchs" hidden="false" id="9973-353e-fce3-d732" publicationId="d5ae-9e15-7ef2-10f7">
+      <modifiers>
+        <modifier type="add" field="category" value="4f5b-b0e1-4a77-41d0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="9973-353e-fce3-d732" childId="7633-a641-a0b7-07fa" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="9973-353e-fce3-d732" childId="1a07-ea26-7025-2c64" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="9973-353e-fce3-d732" childId="b14d-ef4c-ed82-ba8c" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule name="Note" id="3974-6903-f364-3c9a" hidden="false">
           <description>No more than 3 Exarchs in the unit may select the same Aspect Shrine.</description>
@@ -8803,6 +8834,19 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Autarch" hidden="false" id="1264-37c6-07f6-1fd9" publicationId="d5ae-9e15-7ef2-10f7">
+      <modifiers>
+        <modifier type="add" field="category" value="4f5b-b0e1-4a77-41d0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="1264-37c6-07f6-1fd9" childId="7633-a641-a0b7-07fa" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="1264-37c6-07f6-1fd9" childId="1a07-ea26-7025-2c64" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="1264-37c6-07f6-1fd9" childId="b14d-ef4c-ed82-ba8c" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Xenos" id="f2ef-d9c3-ebc3-2341" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Aspect Shrine (X)" id="0cdc-97b5-7082-cbf4" hidden="false" targetId="ca67-1dda-6b7a-970f" type="rule" />
@@ -9372,6 +9416,19 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Farseer" hidden="false" id="fde9-2b2d-3227-e2dd" publicationId="d5ae-9e15-7ef2-10f7">
+      <modifiers>
+        <modifier type="add" field="category" value="4f5b-b0e1-4a77-41d0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="fde9-2b2d-3227-e2dd" childId="7633-a641-a0b7-07fa" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="fde9-2b2d-3227-e2dd" childId="1a07-ea26-7025-2c64" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="fde9-2b2d-3227-e2dd" childId="b14d-ef4c-ed82-ba8c" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule name="Psychic Discipline" id="5d1d-63fe-b0c6-7e41" hidden="false">
           <description>Runes of Fate</description>
@@ -11299,6 +11356,19 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Guardian Officer Cadre" hidden="false" id="3889-9a5a-afd3-2361" publicationId="d5ae-9e15-7ef2-10f7">
+      <modifiers>
+        <modifier type="add" field="category" value="4f5b-b0e1-4a77-41d0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="3889-9a5a-afd3-2361" childId="7633-a641-a0b7-07fa" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="3889-9a5a-afd3-2361" childId="1a07-ea26-7025-2c64" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="3889-9a5a-afd3-2361" childId="b14d-ef4c-ed82-ba8c" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule name="Note" id="b02c-1a87-9ad9-be99" hidden="false">
           <description>The unit may contain up to 7 models, no more than 4 of any one kind (Guardian Officers and Skyrunner Officers).</description>
@@ -11744,6 +11814,19 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Seer Council" hidden="false" id="c070-6674-5ba4-58d4" publicationId="d5ae-9e15-7ef2-10f7">
+      <modifiers>
+        <modifier type="add" field="category" value="4f5b-b0e1-4a77-41d0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="c070-6674-5ba4-58d4" childId="7633-a641-a0b7-07fa" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="c070-6674-5ba4-58d4" childId="1a07-ea26-7025-2c64" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="c070-6674-5ba4-58d4" childId="b14d-ef4c-ed82-ba8c" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule name="Psychic Discipline" id="0885-0561-86dd-f77a" hidden="false">
           <description>Runes of Battle</description>
@@ -13357,6 +13440,19 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Windriders" hidden="false" id="4707-0391-efa2-129e" publicationId="d5ae-9e15-7ef2-10f7">
+      <modifiers>
+        <modifier type="add" field="category" value="4f5b-b0e1-4a77-41d0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="4707-0391-efa2-129e" childId="7633-a641-a0b7-07fa" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="4707-0391-efa2-129e" childId="1a07-ea26-7025-2c64" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="4707-0391-efa2-129e" childId="b14d-ef4c-ed82-ba8c" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Xenos" id="fde9-6161-4840-8b56" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Battle-Hardened (X)" id="26b5-72cf-e04c-56af" hidden="false" targetId="5c3b-ed0b-4ad0-d547" type="rule">
@@ -13998,6 +14094,19 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Shining Spears" hidden="false" id="c786-f035-65c3-385b" publicationId="d5ae-9e15-7ef2-10f7">
+      <modifiers>
+        <modifier type="add" field="category" value="4f5b-b0e1-4a77-41d0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="c786-f035-65c3-385b" childId="7633-a641-a0b7-07fa" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="c786-f035-65c3-385b" childId="1a07-ea26-7025-2c64" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="c786-f035-65c3-385b" childId="b14d-ef4c-ed82-ba8c" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Xenos" id="f5bd-a6b9-39b0-1384" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Aspect Shrine (X)" id="984b-0c60-c502-29be" hidden="false" targetId="ca67-1dda-6b7a-970f" type="rule">
@@ -14175,6 +14284,17 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="7b54-6c8d-6ece-8cd8" shared="true" includeChildSelections="true" includeChildForces="false" />
           </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="4f5b-b0e1-4a77-41d0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="4d60-0d83-268c-b761" childId="7633-a641-a0b7-07fa" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="4d60-0d83-268c-b761" childId="1a07-ea26-7025-2c64" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="4d60-0d83-268c-b761" childId="b14d-ef4c-ed82-ba8c" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -14511,6 +14631,19 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vyper Squadron" hidden="false" id="f9ac-db80-a842-26bd" publicationId="d5ae-9e15-7ef2-10f7">
+      <modifiers>
+        <modifier type="add" field="category" value="4f5b-b0e1-4a77-41d0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="f9ac-db80-a842-26bd" childId="7633-a641-a0b7-07fa" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="f9ac-db80-a842-26bd" childId="1a07-ea26-7025-2c64" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="atLeast" value="1" field="selections" scope="f9ac-db80-a842-26bd" childId="b14d-ef4c-ed82-ba8c" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Xenos" id="94da-e381-cac2-d09e" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Deep Strike" id="b455-71fe-cddb-0153" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
@@ -17058,7 +17191,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
           <profiles>
             <profile name="Skathach Wraithknight" typeId="75b5-9f7a-156e-6889" typeName="Knights and Titans" hidden="false" id="9b08-a5c3-93dc-f98a" publicationId="d5ae-9e15-7ef2-10f7">
               <characteristics>
-                <characteristic name="Unit Type" typeId="3c44-1e2a-23fe-c9e0">Vehicle (Asuryani, Knight)</characteristic>
+                <characteristic name="Unit Type" typeId="3c44-1e2a-23fe-c9e0">Vehicle (Asuryani, Knight, Wraith)</characteristic>
                 <characteristic name="Move" typeId="7f12-0cc3-9dcd-25bc">16</characteristic>
                 <characteristic name="WS" typeId="4227-8eed-0c5c-a2d9">5</characteristic>
                 <characteristic name="BS" typeId="6c5a-df71-fefa-2ee3">5</characteristic>
@@ -17404,7 +17537,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
           <profiles>
             <profile name="Wraithknight" typeId="75b5-9f7a-156e-6889" typeName="Knights and Titans" hidden="false" id="7f44-d24f-351c-f9e9" publicationId="d5ae-9e15-7ef2-10f7">
               <characteristics>
-                <characteristic name="Unit Type" typeId="3c44-1e2a-23fe-c9e0">Vehicle (Asuryani, Knight)</characteristic>
+                <characteristic name="Unit Type" typeId="3c44-1e2a-23fe-c9e0">Vehicle (Asuryani, Knight, Wraith)</characteristic>
                 <characteristic name="Move" typeId="7f12-0cc3-9dcd-25bc">16</characteristic>
                 <characteristic name="WS" typeId="4227-8eed-0c5c-a2d9">5</characteristic>
                 <characteristic name="BS" typeId="6c5a-df71-fefa-2ee3">5</characteristic>
