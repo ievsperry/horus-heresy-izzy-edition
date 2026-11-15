@@ -147,6 +147,9 @@ def apply(b):
 
     for name, rite in rites.items():
         rid = rite["id"]
+        for lim in rite["limits"]:  # "may not include more Battle Sisters Squads than total Penitent units"
+            if re.search(r"\bmore\b.+\bthan\b|at least as many", lim):
+                b.rite_compare(rite, re.sub(r"^A Detachment using this Rite of War\s+", "", lim.replace("†", "").strip()))
         for n, slot, comp in SLOT_RITES.get(name, []):
             if ds_by[n]["slot"] == slot:
                 continue

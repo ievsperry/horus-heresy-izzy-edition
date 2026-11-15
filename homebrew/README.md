@@ -601,9 +601,17 @@ loading. The script prints anything in the doc it could not place.
 
 ## Not enforced
 
-- Rite of War limitations that compare unit counts ("may not include more Infantry units than
-  Dreadnought units") or are in-game only ("must start the game embarked", "no Reserves"), and Rite
-  effects that are in-game only (Deep Strike from turn one), are text only.
+- A Rite of War limitation that compares two counts ("may not include more Infantry units than it has
+  Dreadnought units", "must include at least as many Wraith units as non-Wraith units", "cannot include more
+  Heavy Support choices than Fast Attack choices") is an error on the Rite when it is broken. Each unit is
+  sorted by its datasheet's Unit Type lines: "Infantry units" are units whose models are mostly Infantry, a
+  sub-type ("Psyker units", "units containing models with the Monstrous Unit Sub-type") is any model having it,
+  "non-..." is every other unit, a slot ("Heavy Support choices") counts units in it, and anything else, or a
+  list in brackets, names datasheets. Units the doc says "are not counted" count on neither side; "the army"
+  counts the whole roster, otherwise the Detachment. A limit on wargear carried ("units equipped with
+  Skyrunner Jetbikes") stays text only.
+- Rite limitations and effects that are in-game only ("must start the game embarked", "no Reserves",
+  Deep Strike from turn one) are text only.
 - Instinctive Behaviour, Synapse and other in-game rules are text only.
 - Lords of War use the game system's existing 25% points category; nothing
   Tyranid-specific is added to it.

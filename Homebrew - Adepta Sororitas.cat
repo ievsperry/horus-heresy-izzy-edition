@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3858-8951-c1f7-3986" name="Homebrew - Adepta Sororitas" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3858-8951-c1f7-3986" name="Homebrew - Adepta Sororitas" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="1bb1-1c40-9f73-9fdb" name="Adepta Sororitas for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Adepta Sororitas" />
   </publications>
@@ -233,6 +233,36 @@ Penitent Engines, Mortifiers and the Anchorite are also Infantry with the Mechan
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Penitent Host" hidden="false" id="2272-ad17-ba5a-a39a" publicationId="1bb1-1c40-9f73-9fdb">
+              <modifiers>
+                <modifier type="increment" field="065b-1c11-59a6-3247" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0bc6-9a4d-e4a1-dc6d" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="065b-1c11-59a6-3247" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5c4-66ce-d502-e1b7" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="065b-1c11-59a6-3247" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d78e-429a-3f14-677e" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="065b-1c11-59a6-3247" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="028a-7999-cbf4-e7ec" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="065b-1c11-59a6-3247" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9888-144b-d569-830a" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="065b-1c11-59a6-3247" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
               <rules>
                 <rule name="Prerequisites" id="f464-40fa-c217-127d" hidden="false">
                   <description>A Detachment using this Rite of War must include a Ministorum Priest or a Dogmata (or Missionary) as the army's Warlord.</description>
