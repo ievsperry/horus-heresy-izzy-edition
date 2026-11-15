@@ -232,9 +232,10 @@ def provenances(b, gst):
         e = E("selectionEntry", id=eid, name=f"{17 + i} {name}", hidden=False, collective=False, import_=True,
               type="upgrade")
         fmax = mid(eid, "force max")
+        fcid = bc.make_id(fmax, "max")  # the id add_constraint gives the force limit below
         others = sorted({x for p in pairs if name in p for x in p if x != name})
         if others:
-            mod = el(el(e, "modifiers"), "modifier", type="set", field=fmax, value=0)
+            mod = el(el(e, "modifiers"), "modifier", type="set", field=fcid, value=0)
             cg = el(el(el(mod, "conditionGroups"), "conditionGroup", type="or"), "conditions")
             for o in others:
                 el(cg, "condition", type="greaterThan", value=0, field="selections", scope="force", childId=PROV[o],
@@ -762,7 +763,9 @@ def auto_weapons(b, entries):
                     if x.get("id"):
                         x.set("id", mid(x.get("id"), auto))
                 for x in c.iter():
-                    if x.get("field") and x.get("field") != "hidden" and not x.get("field").startswith("d2ee"):
+                    # a modifier on one of the copied constraints follows it; "selections", "hidden" and costs stay
+                    if x.get("field") and re.fullmatch(r"[0-9a-f]{1,4}(-[0-9a-f]{1,4}){3}", x.get("field")) \
+                            and not x.get("field").startswith("d2ee"):
                         x.set("field", mid(x.get("field"), auto))
                 links.insert(list(links).index(l) + 1, c)
         for m in [x for x in u.iter("selectionEntry") if x.get("type") == "model"]:
