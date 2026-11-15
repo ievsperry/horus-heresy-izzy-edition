@@ -218,7 +218,7 @@ A Votann Primary Detachment may select one of the following Rites of War, provid
 
 **Benefits**
 
-- The Detachment may take one Hekaton Land Fortress as a Heavy Support choice, in addition to any taken as Lords of War.
+- Hekaton Land Fortresses may be taken as Elites choices, in addition to Heavy Support choices.
 - The Hekaton Land Fortress carrying your Warlord at the start of the game gains the Scout special rule.
 
 **Limitations**
@@ -1264,7 +1264,7 @@ Changes from the first draft, so playtesters know what was changed on purpose:
 - **Once-per-battle limits:** Strike First and Rapid Redeployment are now once per battle, in line with other Advanced Reactions, because they were the strongest Reactions in the draft.
 - **Grudgekeepers:** The targeted unit is now explicitly the one that reacts, and it replaces Return Fire for that attack rather than being used alongside it.
 - **Grudgebearer:** The bonus Shooting-phase Reaction was removed, because the trait was much stronger than the other universal traits.
-- **Hekaton Spearhead:** Limited to one Hekaton as Heavy Support, and only the Warlord's Hekaton gains Scout.
+- **Hekaton Spearhead:** Hekatons may also be taken as Elites choices, and only the Warlord's Hekaton gains Scout.
 - **Precise Fire:** Now improves against marked units, so it no longer simply duplicates Preferred Enemy.
 - **Battlesmith:** One global 2+ cap replaces the conflicting caps in the draft.
 - **Hold the Hold:** Rewritten to avoid an undefined "Counter-Charge" rule.

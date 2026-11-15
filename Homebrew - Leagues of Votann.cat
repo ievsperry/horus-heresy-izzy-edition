@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="e1a3-795b-be05-784b" name="Leagues of Votann for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Leagues of Votann" />
   </publications>
@@ -229,7 +229,7 @@
                   <description>Requires any Votann HQ as Warlord, and must begin the game embarked upon a Hekaton Land Fortress.</description>
                 </rule>
                 <rule name="Effects" id="a99c-650e-c49e-45a7" hidden="false">
-                  <description>The Detachment may take one Hekaton Land Fortress as a Heavy Support choice, in addition to any taken as Lords of War. The Hekaton Land Fortress carrying your Warlord at the start of the game gains the Scout special rule.</description>
+                  <description>Hekaton Land Fortresses may be taken as Elites choices, in addition to Heavy Support choices. The Hekaton Land Fortress carrying your Warlord at the start of the game gains the Scout special rule.</description>
                 </rule>
                 <rule name="Limitations" id="8be2-405d-b21b-d586" hidden="false">
                   <description>Every Infantry unit in the Detachment must begin the game embarked upon a Transport with enough capacity. This can be a Dedicated Transport, or a Heavy Support or Lord of War Transport.</description>
@@ -497,6 +497,24 @@
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="9274-b467-17d0-78d4" primary="true" name="Troops:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="d1ae-725a-e87c-7d96" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hekaton Land Fortress" hidden="true" id="c0d7-43b2-9d12-8979" type="selectionEntry" targetId="a110-5dc1-a3a1-521d">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c4a2-a5d1-c625-5db5" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8202-0016-eb84-9b6d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="830d-57c9-d009-6977" primary="true" name="Elites:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="0639-2e96-26c9-5dde" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Einhyr Hearthguard" hidden="true" id="b886-fa52-5f01-b853" type="selectionEntry" targetId="2738-147d-b5ee-64a3">
