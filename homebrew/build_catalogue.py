@@ -364,9 +364,113 @@ def normalise_headings(text):
     return "\n".join(out)
 
 
+def normalise_rules(text):
+    """Docs written in the newer rules layout (the Leagues of Votann doc) as the Builder reads them:
+    - "## Votann Warlord Traits" with "**Name.** text" paragraphs: "## Warlord Traits" with a "### Name" each;
+    - "## Faction Advanced Reaction: X" sections: one "## Advanced Reaction" section, a later one a sub-section;
+    - a reaction head ("**Advanced Reaction: Hold the Hold** (Assault phase)") over "- **Trigger:**", "- **Effect:**"
+      and "- **Restriction(s):**" bullets: one paragraph, as reactions are written elsewhere;
+    - "### Rites of War" over "#### Name" with "**Requirement:**", "**Benefits**" and "**Limitations**": a
+      "### Rite of War: Name" each with Prerequisites, Effects and Limitations ("Your Warlord must be a Kahl" is
+      "Requires a Kahl as Warlord");
+    - "### Eye of the Ancestors" under the army-wide rules, with its lists and table: one army-wide rule paragraph;
+    - a "Name | Type | Phase | Effect" psychic table: "Power | Kind | Phase | Effect", and a weapon written
+      'Range: 18" · Str: 6 · AP: 3 · Type: Assault D6' as '18", S6, AP 3, Assault D6'."""
+    if not re.search(r"^#### |^## Faction Advanced Reaction|^## \w+ Warlord Traits$|^\| Name \| Type \| Phase", text, re.M):
+        return text
+    lines = text.split("\n")
+    out, i, section, seen_react, aw_insert = [], 0, "", False, None
+    in_rites = False
+    while i < len(lines):
+        ln = lines[i]
+        if ln.startswith("## "):
+            section = ln[3:].strip()
+            in_rites = False
+            if re.match(r"## \w+ Warlord Traits$", ln):
+                ln = "## Warlord Traits"
+                section = "Warlord Traits"
+            m = re.match(r"## Faction Advanced Reaction: (.+)$", ln)
+            if m:
+                ln = "### " + m.group(1) if seen_react else "## Advanced Reaction: " + m.group(1)
+                seen_react = True
+            if section == "Army-wide Special Rules":
+                out.append(ln)
+                i += 1
+                while i < len(lines) and not lines[i].startswith("#"):  # its own paragraphs, then the rule
+                    out.append(lines[i])
+                    i += 1
+                aw_insert = len(out)
+                continue
+        elif section == "Warlord Traits":
+            m = re.match(r"\*\*(.+?)\.\*\* (.+)$", ln)
+            if m:
+                out += ["### " + m.group(1), "", m.group(2)]
+                i += 1
+                continue
+        if ln.strip() == "### Rites of War":
+            in_rites = True
+            i += 1
+            continue
+        if in_rites:
+            m = re.match(r"#### (.+)$", ln)
+            if m:
+                ln = "### Rite of War: " + m.group(1)
+            m = re.match(r"\*\*Requirement:\*\* (.+)$", ln)
+            if m:
+                req = re.sub(r"^Your Warlord must be a Votann HQ choice", "Requires any Votann HQ as Warlord", m.group(1))
+                req = re.sub(r"^Your Warlord must be (?:an? )?(.+?)\.$", r"Requires a \1 as Warlord.", req)
+                out += ["**Prerequisites**", "", "- " + req]
+                i += 1
+                continue
+            if ln.strip() == "**Benefits**":
+                ln = "**Effects**"
+        if ln.strip() == "### Eye of the Ancestors" and aw_insert is not None:
+            body, j = [], i + 1
+            while j < len(lines) and not lines[j].startswith("#"):
+                t = lines[j].strip()
+                if re.match(r"^\|[\s:|-]+\|$", t) or re.match(r"^\| Tokens \|", t):
+                    pass
+                elif t.startswith("|"):
+                    cells = [c.strip() for c in t.strip("|").split("|")]
+                    body.append("• " + cells[0] + (f" ({cells[1]})" if len(cells) > 2 else "") + ": " + cells[-1])
+                elif t.startswith("- "):
+                    body.append("• " + re.sub(r"\*\*(.+?)\*\*", r"\1", t[2:]))
+                elif t:
+                    body.append(re.sub(r"\*\*(.+?)\*\*", r"\1", t))
+                j += 1
+            out[aw_insert:aw_insert] = ["**Eye of the Ancestors.** " + " ".join(body), ""]
+            aw_insert += 2
+            i = j
+            continue
+        m = re.match(r"(\*\*(?:Advanced Reaction: )?.+?\*\* \([^)]+\)\.?(?: Once per battle\.)?)\s*$", ln)
+        if m and i + 2 < len(lines) and re.match(r"- \*\*Trigger:\*\*", lines[i + 2]):
+            head = m.group(1)
+            head = head if head.endswith(".") else head + "."
+            parts, j = [], i + 2
+            while j < len(lines) and (lines[j].startswith("- ") or lines[j].startswith("  - ")):
+                t = lines[j].strip()[2:]
+                t = re.sub(r"^\*\*(.+?):\*\*\s*", r"\1: ", t)
+                if lines[j].startswith("  - ") and parts:
+                    parts[-1] += (" " if parts[-1].endswith(":") else "; ") + t
+                else:
+                    parts.append(t)
+                j += 1
+            out.append(head + " " + " ".join(parts))
+            i = j
+            continue
+        if re.match(r"^\| Name \| Type \| Phase \| Effect \|", ln):
+            ln = "| Power | Kind | Phase | Effect |"
+        m = re.match(r'^(\| [^|]+ \| Psychic Weapon \| [^|]+ \| )Range: ([^·]+?) · Str: ([^·]+?) · AP: ([^·]+?) · Type: (.+?)( \|)$', ln)
+        if m:
+            ln = f"{m.group(1)}{m.group(2)}, S{m.group(3)}, AP {m.group(4)}, {m.group(5)}{m.group(6)}"
+        out.append(ln)
+        i += 1
+    return "\n".join(out)
+
+
 def parse_doc(text):
     """Split the doc into its ## sections, then ### sub-sections."""
-    text = normalise_headings(text)
+    text = normalise_rules(normalise_headings(text))
     sections = []
     cur = None
     sub = None
@@ -863,6 +967,8 @@ class Builder:
                 # its rules text is what comes before that.
                 own = []
                 for ln in sub["lines"]:
+                    if ln.startswith("**Cost:**"):
+                        continue  # "**Cost:** 15 points." before the item's text: the price, read below
                     if ln.startswith(("|", "**")):
                         break
                     own.append(ln)
@@ -1828,6 +1934,8 @@ class Builder:
             base = re.search(r"\+(\d+) points? per model for every other model", line)
         else:
             base = re.search(r"\+(\d+) points? per model\b(?! for)", line)
+            # "Cost: 15 points. Independent Characters only.": a single model's item at a flat price
+            base = base or re.match(r"Cost:\s*\+?(\d+) points?\.", line)
         monstrous = re.search(r"\+(\d+) points? per Monstrous model", line)
         gargantuan = re.search(r"\+(\d+) points? per Gargantuan model", line)
         return {"model": int(base.group(1)) if base else 0,
@@ -1848,9 +1956,11 @@ class Builder:
     @staticmethod
     def only_types(line):
         """'vehicles, Dreadnoughts and buggies only' -> the unit types that may take it."""
-        m = re.search(r"; (.+?) only", line)
+        m = re.search(r"; (.+?) only", line) or re.search(r"\.\s+([A-Z][^.;]*?) only\b", line)
         if not m:
             return None
+        if "independent character" in m.group(1).lower():  # not every Character
+            return ["Independent Character"]
         words = {"vehicle": "Vehicle", "dreadnought": "Dreadnought", "bugg": "Mechanised",
                  "mechanised": "Mechanised", "monstrous": "Monstrous", "infantry": "Infantry",
                  "cavalry": "Cavalry", "character": "Character", "gargantuan": "Gargantuan"}
@@ -2418,6 +2528,10 @@ class Builder:
             ds = ds or next((d for d in self.datasheets if forms(d["name"]) & forms(part)), None)
             ds = ds or next((d for d in self.datasheets if norm(d["name"]).startswith(norm(part) + " ")
                              or norm(d["name"]).endswith(" " + norm(part))), None)
+            if not ds and re.search(r"\s+squads?$", part, re.I):
+                # "Einhyr Hearthguard squads": the datasheet is "Einhyr Hearthguard" ("Paladin Squads" matched above)
+                bare = re.sub(r"\s+squads?$", "", part, flags=re.I)
+                ds = next((d for d in self.datasheets if forms(d["name"]) & forms(bare)), None)
             if ds and ds not in found:
                 found.append(ds)
         return found
@@ -2704,7 +2818,17 @@ class Builder:
     def rite_class(self, phrase):
         """('slot', category id) or ('units', [datasheets]) for one side of a comparison."""
         p = re.sub(r"^(?:total|the)\s+", "", phrase.strip().rstrip("."), flags=re.I)
-        p = re.sub(r"\s+(?:combined|counted across all .*)$", "", p, flags=re.I)
+        p = re.sub(r"^(?:the\s+)?combined number of\s+", "", p, flags=re.I)
+        p = re.sub(r"\s+(?:combined|counted across all .*|in the Detachment)$", "", p, flags=re.I)
+        nc = re.search(r"\s*\(not counting (.+?)\)", p)
+        if nc:  # "Infantry units (not counting Brokhyr Thunderkyn and Independent Characters)"
+            kind, base = self.rite_class(p[:nc.start()] + p[nc.end():])
+            gone = []
+            for part in re.split(r",\s*(?:and\s+)?|\s+and\s+", nc.group(1).replace("\u2063", ",")):
+                hits = self.rite_units(part)
+                word = re.sub(r"s$", "", norm(part))
+                gone += hits or [d for d in self.datasheets if d["name"] in self.units and self.ds_has(d, word)]
+            return kind, [d for d in base if d not in gone]
         listed = re.search(r"\((.+)\)", p)
         if listed:  # "Penitent units (Sisters Repentia Squads, Arco-flagellant Squads, ...)"
             found = []
@@ -2742,6 +2866,7 @@ class Builder:
         if re.search(r"\sand\s", p) and re.search(r"units$", p, re.I):  # "vehicle and Thunderkyn units"
             found = []
             for part in re.split(r"\s+and\s+", re.sub(r"\s+units$", "", p, flags=re.I)):
+                part = re.sub(r"\s+units$", "", part, flags=re.I)
                 found += [d for d in self.rite_class(part + " units")[1] if d not in found]
             return "units", found
         m = re.match(r"(\S+) units$", p, re.I)
@@ -2850,6 +2975,7 @@ class Builder:
             return
         text = re.sub(r"^A Detachment using this Rite of War\s+", "", text)
         text = self.rite_compare(rite, text)
+        text = re.sub(r"^The Detachment\s+", "", text)  # "The Detachment may not include any Fast Attack choices"
         for clause in re.split(r",\s+(?:and|or)\s+|;\s*|\s+and\s+(?=(?:may|no)\b)", text):
             clause = clause.strip().rstrip(".")
             m = re.match(r"(?:may include |include )?(?:no )?more than (\w+) (.+?)(?: choices?)?$", clause)
@@ -3969,9 +4095,11 @@ class Builder:
         offers = {}
         for mname, bname, eid, cost, new_save in self.universal_options(ds, models):
             offers.setdefault((bname, eid), {})[mname] = (cost, new_save)
+        own_items = {e for _, e, r in self.universal if r.get("only") == ["Independent Character"]}
         for (bname, eid), per_type in offers.items():
-            if len(per_type) < len(models):
+            if len(per_type) < len(models) and eid not in own_items:
                 continue  # some models in the unit cannot take it, so the unit cannot
+                # (an Independent Character's own item is his, whoever else is in the unit)
             if multi and norm(bname) not in self.biomorph_names:
                 # Ork wargear in a squadron: bought model by model
                 g = child(unit, "selectionEntryGroups").find(f"selectionEntryGroup[@id='{make_id(uid, 'wargear')}']")

@@ -14,13 +14,6 @@ Votann vehicles use the 2.0 vehicle profile. The Hekaton Land Fortress is a supe
 
 Every unit in this document has **Eye of the Ancestors** and **League (X)** unless its entry says otherwise. Infantry also have **Stubborn Kin**.
 
-**Eye of the Ancestors (Judgement).** The Kin never forget a slight. After both armies have deployed, choose up to two enemy units; each gains one Judgement token. During the game, an enemy unit gains one Judgement token each time it destroys a Votann unit, to a maximum of two tokens. Units with this rule gain the following against enemy units with Judgement tokens:
-
-| Tokens | Benefit |
-| --- | --- |
-| 1 | Re-roll to-hit rolls of 1 |
-| 2 | Re-roll to-hit rolls of 1 and to-wound rolls of 1 |
-
 **Slow but Sure.** The Kin are short and heavily equipped. Votann Infantry have a Movement Characteristic of 5 unless their entry says otherwise, but may Advance and still shoot Rapid Fire weapons and declare charges in the same turn†.
 
 **Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
@@ -29,109 +22,165 @@ Every unit in this document has **Eye of the Ancestors** and **League (X)** unle
 
 **Void Armour.** Votann void armour seals against hostile environments. Units with void armour (see Wargear) ignore the Pinning special rule from Blast and Template weapons†.
 
-## Advanced Reaction: Grudgekeepers
+### Key Terms
 
-Votann units use the 2.0 core reactions as normal, plus this advanced reaction. It costs one point of the Reaction Allotment like any other reaction†.
+- **Votann unit:** any unit with the Eye of the Ancestors and League (X) special rules. Every unit in this document has both. Wherever these rules say "friendly Votann unit", they mean a friendly unit with those rules.
+- **Marked unit:** an enemy unit with one or more Judgement Tokens.
 
-**Grudgekeepers** (Shooting phase). Trigger: a Votann unit is selected as the target of a Shooting Attack. After the attack is resolved, the attacking unit gains one Judgement token (to a maximum of two), and the Votann unit may make a Return Fire Shooting Attack against it.
+### Eye of the Ancestors
 
-## Leagues
+All Votann units have the Eye of the Ancestors special rule. It is made up of the following rules.
 
-Every Votann force serves a League, an alliance of Kindred bound by trade and oath. Leagues work like Ork Klans and Drukhari Obsessions.
+**Judgement Tokens.**
 
-**League (X).** When building an army, choose one League for each detachment. Every unit in that detachment gains League (X), where X is the chosen League. Unique characters may join any League.
+- An enemy unit can hold a maximum of 2 Judgement Tokens at any time, whatever their source.
+- Tokens are permanent unless a rule says otherwise. They stay until the unit is removed from play.
+- Some rules give temporary tokens, which are lost at the end of the turn. Temporary tokens count toward the maximum of 2. If a rule would give a unit more tokens than the maximum allows, the extra tokens are not gained.
 
-**League Advanced Reactions.** Each League has its own Advanced Reaction, usable only by units with that League (X). It is available in addition to Grudgekeepers and costs one point of the Reaction Allotment†.
+**Marking the Grudge.** After both players have deployed their armies, the Votann player selects up to two enemy units to each gain 1 Judgement Token. Units on the battlefield and units in Reserves can both be selected. See Pre-Game Sequence for exact timing.
+
+**Accumulating Grudges.** At the end of each Player Turn, each enemy unit that met one or more of the following conditions during that turn gains 1 Judgement Token. A unit gains only 1 token per turn this way, however many conditions it met.
+
+- **Slayer of Kin:** The enemy unit destroyed a friendly Votann unit.
+- **Bane of the Ancestors:** The enemy unit inflicted one or more unsaved Wounds or Hull Point losses on your Warlord or on a friendly Votann Independent Character.
+- **Defiler of Claims:** The enemy unit ended the turn within 3" of an Objective Marker that you controlled with a Votann unit at the start of that turn.
+
+**Settling the Debt.** When a Votann unit makes attacks against a marked unit, it gains the following cumulative benefits:
+
+| Tokens | Name | Effect |
+| --- | --- | --- |
+| 1 | Marked for Reckoning | The Votann unit gains Preferred Enemy against that unit: it may re-roll To Hit and To Wound rolls of 1. |
+| 2 | Blood-Oath Vendetta | As above. In addition, the Votann unit gains Hatred against that unit in the Assault phase, and its Ranged attacks against that unit gain Rending (6+). Any weapon that already has Rending (X), Breaching (X) or Rupture (X) instead improves each of those values by 1 against that unit (for example, 6+ becomes 5+), to a best of 3+. |
+
+## Faction Advanced Reaction: Grudgekeepers
+
+Votann units use the Age of Darkness core Reactions as normal, and also have access to this Advanced Reaction. It costs 1 point of the Reaction Allotment.
+
+**Grudgekeepers** (Shooting phase)
+
+- **Trigger:** During the enemy Shooting phase, a friendly Votann unit is selected as the target of a Shooting Attack.
+- **Effect:** The targeted unit reacts. After the enemy Shooting Attack is fully resolved, the attacking unit gains 1 Judgement Token. The reacting unit may then make a Return Fire Shooting Attack against the attacking unit, following all standard rules for Return Fire. It can only do this if it has not been destroyed, is not Pinned, is not Falling Back, and the attacking unit is within Line of Sight and range of at least one of its weapons.
+- **Restriction:** A unit that makes this Reaction cannot also make a Return Fire Reaction against the same Shooting Attack.
+
+## Faction Advanced Reaction: Debt Collector
+
+Votann units may use this Advanced Reaction in addition to Core Reactions and Grudgekeepers. It costs 1 point of the Reaction Allotment as normal, plus the removal of a Judgement Token as detailed below.
+
+**Debt Collector** (Any Phase Reaction)
+
+- **Trigger:** During any phase of your opponent's turn, immediately after an enemy unit with at least 1 Judgement Token finishes resolving an action that has already triggered a friendly Votann unit's Reaction (such as Return Fire, Overwatch, or Interceptor), or immediately after an enemy unit with at least 1 Judgement Token declares a Charge or Shooting Attack against a friendly Votann unit that has already made a Reaction this phase.
+- **Effect:** Remove 1 Judgement Token from the triggering enemy unit. At the cost of 1 point of your Reaction Allotment, one eligible friendly Votann unit may immediately make a Core Reaction (or Grudgekeepers) targeting that enemy unit.
+- **Restrictions:**
+  - This reaction overrides the standard restriction that a single unit cannot make more than one Reaction per phase, allowing a unit that has already reacted this phase to react a second time against the marked target.
+  - You may only use Debt Collector once per phase, and no single Votann unit may ever make more than two Reactions in the same phase.
+
+## The Leagues
+
+Every Votann force serves a League: an alliance of Kindred bound by trade, blood-oath and ancestral memory.
+
+**League (X).** When building an army, choose one League for each Detachment. Every unit in that Detachment gains the League (X) special rule, where X is the chosen League. Unique Characters (such as Ûthar the Destined) may join any League and gain that Detachment's League (X) rule without breaking Detachment restrictions.
+
+**League Advanced Reactions.** Each League has its own Advanced Reaction. Only units with the matching League (X) rule can use it. League Reactions are available in addition to Grudgekeepers, and each costs 1 point of the Reaction Allotment.
 
 ### Greater Thurian League
 
 *The oldest and most traditional League, whose warriors stand like mountains.*
 
-- **Ancestral Bloodlines:** the unit adds 1 to its Leadership, to a maximum of 10.
-- **Bastions of Grit:** Infantry units that did not move in their previous turn have Feel No Pain (6+).
+- **Ancestral Bloodlines:** Models with this special rule add +1 to their Leadership characteristic, to a maximum of 10.
+- **Bastions of Grit:** An Infantry unit with this special rule that did not move during its most recent friendly Movement phase gains Feel No Pain (6+) until the start of its next Player Turn. For this rule, moving includes disembarking, but not Reaction moves made during the enemy turn. Sweeping Advance and Consolidation moves made after that Movement phase also cancel the bonus.
 
-**Advanced Reaction: Hold the Hold** (Assault phase). Trigger: an enemy unit declares a charge against a Greater Thurian unit. Instead of firing Overwatch, the unit gains Counter-Charge (1) until the end of the phase†.
+**Advanced Reaction: Hold the Hold** (Assault phase)
 
-**Warlord Trait: Unbreakable.** The Warlord and any unit he joins never become Pinned and automatically pass Morale checks.
+- **Trigger:** An enemy unit declares a Charge against a friendly Greater Thurian League unit.
+- **Effect:** The charged unit does not fire Overwatch. Instead, until the end of the Assault phase, every model in it gains +1 Attack and counts as having charged when determining the effects of Furious Charge (X).
+
+**Warlord Trait: Unbreakable.** Your Warlord and any unit they join automatically pass all Pinning tests and Morale checks. They may still choose to Fall Back voluntarily if another rule allows it.
 
 ### Kronus Hegemony
 
 *An aggressive, expansionist League that takes what it wants and remembers who resisted.*
 
-- **Hegemony's Wrath:** the unit adds 1 to its charge distance rolls.
-- **Long Memory:** when choosing Judgement targets after deployment, choose up to three enemy units instead of two.
+- **Hegemony's Wrath:** Units with this special rule add +1 to all Charge distance rolls.
+- **Long Memory:** If your Primary Detachment has the Kronus Hegemony special rule, you may select up to three enemy units during Marking the Grudge instead of two.
 
-**Advanced Reaction: Strike First** (Shooting phase). Trigger: a Kronus unit is selected as the target of a Shooting Attack. The unit makes a Return Fire Shooting Attack before the enemy attack is resolved, instead of after it.
+**Advanced Reaction: Strike First** (Shooting phase). Once per battle.
 
-**Warlord Trait: Grim Conqueror.** The Warlord and any unit he joins gain Furious Charge (1), or increase an existing Furious Charge (X) by 1.
+- **Trigger:** A friendly Kronus Hegemony unit is selected as the target of a Shooting Attack.
+- **Effect:** The targeted unit immediately makes a Return Fire Shooting Attack against the attacking unit, before the attacking unit resolves its Shooting Attack. Remove casualties from this Reaction before the attacking unit makes its attacks.
+
+**Warlord Trait: Grim Conqueror.** Your Warlord and any unit they join gain Furious Charge (1). A unit that already has Furious Charge (X) increases X by 1 instead.
 
 ### Trans-Hyperian Alliance
 
 *A League of void-traders who fight from armoured vehicles and never stop moving.*
 
-- **Mechanised Kin:** vehicles add 2 to their Movement Characteristic.
-- **Rapid Disembark:** Infantry that disembark from a transport may shoot in the same turn as though they had not moved.
+- **Mechanised Kin:** Vehicles with this special rule add +2 to their Movement characteristic.
+- **Rapid Disembark:** An Infantry unit with this special rule that disembarks from a Transport during the Movement phase may shoot in the following Shooting phase as though it had remained stationary.
 
-**Advanced Reaction: Rapid Redeployment** (Movement phase). Trigger: an enemy unit ends a move within 12" of a Trans-Hyperian vehicle. The vehicle moves up to 6" in any direction.
+**Advanced Reaction: Rapid Redeployment** (Movement phase). Once per battle.
 
-**Warlord Trait: Convoy Master.** The Warlord, any unit he joins, and any vehicle he is embarked on gain Scout.
+- **Trigger:** An enemy unit ends a Move or Rush within 12" of a friendly Trans-Hyperian Alliance Vehicle. A unit arriving from Reserves (including by Deep Strike or Outflank) does not trigger this Reaction.
+- **Effect:** That Vehicle may immediately make a move of up to 6" in any direction. It cannot end this move within 1" of an enemy model, and it counts as having moved in its next Shooting phase.
+
+**Warlord Trait: Convoy Master.** Your Warlord, any unit they join, and any Transport they begin the game embarked upon gain the Scout special rule.
 
 ### Urani-Surtr Regulates
 
 *A League of scouts, prospectors and hunters who strike from ambush.*
 
-- **Pathfinders:** Hernkyn units gain the Outflank special rule†.
-- **Precise Fire:** the unit may re-roll to-wound rolls of 1 with ranged weapons.
+- **Pathfinders:** Hernkyn units (such as Hernkyn Pioneers and Hernkyn Yaegirs) with this special rule gain the Outflank special rule.
+- **Precise Fire:** Units with this special rule may re-roll To Wound rolls of 1 when making Ranged attacks. Against a marked unit, they may instead re-roll all failed To Wound rolls with Ranged attacks.
 
-**Advanced Reaction: Ambush Fire** (Movement phase). Trigger: an enemy unit ends a move within 12" of a Urani-Surtr Infantry or Cavalry unit. The unit makes a Shooting Attack against the triggering unit.
+**Advanced Reaction: Ambush Fire** (Movement phase)
 
-**Warlord Trait: Scout-Master.** Before the first turn, redeploy up to three friendly Urani-Surtr units.
+- **Trigger:** An enemy unit ends a move within 12" of a friendly Urani-Surtr Regulates Infantry or Cavalry unit that is not Pinned, Falling Back or locked in combat.
+- **Effect:** The reacting unit may immediately make a Shooting Attack against the triggering unit at its full Ballistic Skill. It must use Snap Shots if the target is a Flyer.
+
+**Warlord Trait: Scout-Master.** Before the first turn begins, you may remove up to three friendly Urani-Surtr Regulates units from the battlefield and redeploy them anywhere within your Deployment Zone, following all standard deployment rules. See Pre-Game Sequence for exact timing.
 
 ### Ymyr Conglomerate
 
 *A League of engineers and miners, whose vehicles and armour are the finest in the Kin.*
 
-- **Master Artisans:** models with Battlesmith improve it by 1, to a best of 3+.
-- **Self-repairing Hulls:** vehicles gain Grot Riggers (6+)-style self-repair: at the end of each of your turns, roll a D6 for each damaged vehicle; on a 6 it restores one lost Hull Point.
+- **Master Artisans:** Models with the Battlesmith (X) special rule improve their Battlesmith target number by 1 (for example, 4+ becomes 3+).
+- **Self-Repairing Hulls:** At the end of each friendly Player Turn, roll a D6 for each Ymyr Conglomerate Vehicle on the battlefield that has lost Hull Points. On a 6, it regains 1 lost Hull Point, up to its starting value.
 
-**Advanced Reaction: Emergency Shielding** (Shooting phase). Trigger: a Ymyr vehicle is selected as the target of a Shooting Attack. Against that attack, the vehicle gains a 5+ Invulnerable Save.
+**Advanced Reaction: Emergency Shielding** (Shooting phase)
 
-**Warlord Trait: Master Engineer.** The Warlord gains Battlesmith (4+), or improves an existing Battlesmith by 1.
+- **Trigger:** A friendly Ymyr Conglomerate Vehicle is selected as the target of a Shooting Attack.
+- **Effect:** Until that Shooting Attack ends, the targeted Vehicle has a 5+ Invulnerable Save against Glancing Hits, Penetrating Hits and hits from weapons with the Destroyer special rule inflicted by that attack.
 
-## Warlord Traits
+**Warlord Trait: Master Engineer.** Your Warlord gains Battlesmith (4+). If they already have Battlesmith (X), improve its target number by 1 instead.
 
-A Votann Warlord chooses one Warlord Trait: one of the three generic traits below, or the Warlord Trait of his League.
+**Battlesmith cap.** However many rules improve it, Battlesmith (X) can never be better than 2+.
 
-### Ancestral Bearing
+## Votann Warlord Traits
 
-*A leader whose presence steadies every Kin who sees him.*
+When nominating a Votann Warlord, choose one of the three universal traits below, or the Warlord Trait of the Warlord's League (X).
 
-Friendly Votann units within 12" of the Warlord use his Leadership. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Assault phase, above its normal Reaction Allotment†.
+**Ancestral Bearing.** Friendly Votann units within 12" of your Warlord may use the Warlord's Leadership characteristic for all Morale, Pinning and Leadership checks. While your Warlord is alive and on the battlefield, your army may also make one additional Reaction during your opponent's Assault phase, above its normal Reaction Allotment. A single unit still cannot make more than one Reaction per phase.
 
-### Calculating Tactician
+**Calculating Tactician.** You may re-roll one Reserves roll or Outflank roll each turn. While your Warlord is alive and on the battlefield, your army may also make one additional Reaction during your opponent's Movement phase, above its normal Reaction Allotment.
 
-*A commander who weighs every move against the cost in Kin and wealth.*
-
-You may re-roll one Reserves roll each turn. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Movement phase, above its normal Reaction Allotment†.
-
-### Grudgebearer
-
-*A Kâhl whose book of grudges is long, and who intends to settle every one.*
-
-The Warlord and any unit he joins treat every enemy unit as though it had one Judgement token, or one more than it has, to a maximum of two. In addition, while the Warlord is on the battlefield, your army may make one additional reaction in your opponent's Shooting phase, above its normal Reaction Allotment†.
+**Grudgebearer.** When your Warlord and any unit they join make attacks, they treat every enemy unit as having 1 more Judgement Token than it has, to a maximum of 2. Units with no tokens count as having 1.
 
 ## Psychic Discipline: Ancestral Lore
 
-Grimnyr are the Kin's psykers, guardians of ancestral knowledge. A Grimnyr uses each power in the phase it names, making a Psychic check against its Leadership; a failed check causes Perils of the Warp as in the 2.0 rulebook†.
+Grimnyr are the Kin's living conduits to the Votann, drawing upon millennia of ancestral memory and barrier-tech harmonics rather than raw, unshielded Warp energy.
 
-**Ancestral Lore (X).** A Grimnyr knows the Ancestral Wrath psychic weapon, plus X psychic powers from the table below, chosen when the army is built.
+**Ancestral Lore (X).** A model with the Psyker unit sub-type and Ancestral Lore (X) automatically knows the Ancestral Wrath Psychic Weapon, plus X Psychic Powers selected from the table below when building the army.
 
-| Power | Kind | Phase | Effect |
+- **Manifesting Powers:** Each Psychic Power is used in the phase specified in its entry. To manifest a Psychic Power, make a Psychic Check (roll 2D6 equal to or under the Psyker's Leadership characteristic). If the check is failed, the power is not manifested and the Psyker immediately suffers Perils of the Warp as detailed in the Age of Darkness rulebook.
+- **Psychic Weapons:** Ancestral Wrath is a ranged weapon fired during the Shooting phase (or during a Shooting phase Reaction, such as Return Fire or Overwatch) using standard shooting rules; it does not require a Psychic Check to fire, though it benefits from the Psychic Focus special rule if the Psyker has not manifested a Psychic Power earlier in that turn.
+
+### Ancestral Lore Psychic Powers & Weapons
+
+| Name | Type | Phase | Effect |
 | --- | --- | --- | --- |
-| Ancestral Ward | Psychic power | Movement (start) | The Grimnyr and any unit he has joined gain a 4+ Invulnerable Save against psychic weapons and a 5+ Invulnerable Save against everything else, until the start of your next turn. |
-| Ancestral Wrath | Psychic weapon | Shooting | 18", S6, AP 3, Assault D6, Psychic |
-| Fortify | Psychic power | Movement (start) | One friendly Votann unit within 12" gains Feel No Pain (6+), or improves an existing Feel No Pain by 1, until the start of your next turn. |
-| Null Vortex | Psychic power | Shooting | Enemy psykers within 18" subtract 2 from their Leadership for Psychic checks until the start of your next turn. |
+| Ancestral Wrath | Psychic Weapon | Shooting | Range: 18" · Str: 6 · AP: 3 · Type: Assault D6, Psychic, Pinning |
+| Ancestral Ward | Psychic Power | Movement (Start) | Until the start of your next turn, the Psyker and any unit they have joined gain a 5+ Invulnerable Save, which is improved to a 4+ Invulnerable Save against wounds inflicted by weapons with the Psychic or Force special rules (including Perils of the Warp). |
+| Fortify | Psychic Power | Movement (Start) | Select one friendly Votann unit within 12" and Line of Sight of the Psyker. Until the start of your next turn, all models in that unit gain Feel No Pain (6+), or improve an existing Feel No Pain (X) special rule by +1 (to a maximum of 4+). |
+| Null Vortex | Psychic Power | Shooting | Until the start of your next turn, all enemy models with the Psyker unit sub-type within 18" of this Psyker suffer a -2 penalty to their Leadership characteristic when taking Psychic Checks or Deny the Witch rolls. |
 
 ## Force Organisation and Rites of War
 
@@ -146,15 +195,67 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Fast Attack | Hernkyn Pioneers, Kapricus Defenders |
 | Heavy Support | Brôkhyr Thunderkyn, Cthonian Earthshakers, Hekaton Land Fortress, Ironkin Steeljacks with Heavy Volkanite Disintegrators |
 
-A Votann army may take one Rite of War, chosen when the army is built. Each has a benefit and a limitation.
+### Rites of War
 
-**Brôkhyr Guild.** Requires a Brôkhyr Iron-master as Warlord. Benefit: Brôkhyr Thunderkyn may be taken as Troops; every model with Battlesmith improves it by 1. Limitation: the army may not include more Infantry units than it has vehicle and Thunderkyn units combined.
+A Votann Primary Detachment may select one of the following Rites of War, provided it meets all of the Rite's requirements and follows all of its limitations.
 
-**Hekaton Spearhead.** Requires any Votann HQ as Warlord, starting the game embarked on a Hekaton Land Fortress. Benefit: Hekaton Land Fortresses may be taken as Heavy Support or Lord of War choices, and gain Scout. Limitation: every Infantry unit must start the game embarked on a transport.
+#### Brôkhyr Guild
 
-**Oathband.** Requires a Kâhl or Ûthar the Destined as Warlord. Benefit: Einhyr Hearthguard may be taken as Troops and gain the Line sub-type. Limitation: no Fast Attack choices.
+**Requirement:** Your Warlord must be a Brôkhyr Iron-master.
 
-**Prospector Fleet.** Requires any Votann HQ as Warlord. Benefit: Hernkyn Pioneers and Hernkyn Yaegirs may be taken as Troops and gain the Line sub-type. Limitation: no Heavy Support choices.
+**Benefits**
+
+- Brôkhyr Thunderkyn squads may be taken as Troops choices.
+- Every model in the Detachment with the Battlesmith (X) special rule improves its target number by 1. This stacks with Master Artisans, subject to the 2+ cap.
+
+**Limitations**
+
+- The Detachment may not include more Infantry units (not counting Brôkhyr Thunderkyn and Independent Characters) than the combined number of Vehicle units and Brôkhyr Thunderkyn units in the Detachment.
+
+#### Hekaton Spearhead
+
+**Requirement:** Your Warlord must be a Votann HQ choice, and must begin the game embarked upon a Hekaton Land Fortress.
+
+**Benefits**
+
+- The Detachment may take one Hekaton Land Fortress as a Heavy Support choice, in addition to any taken as Lords of War.
+- The Hekaton Land Fortress carrying your Warlord at the start of the game gains the Scout special rule.
+
+**Limitations**
+
+- Every Infantry unit in the Detachment must begin the game embarked upon a Transport with enough capacity. This can be a Dedicated Transport, or a Heavy Support or Lord of War Transport.
+
+#### Oathband
+
+**Requirement:** Your Warlord must be a Kâhl or Ûthar the Destined.
+
+**Benefits**
+
+- Einhyr Hearthguard squads may be taken as Troops choices and gain the Line unit sub-type.
+
+**Limitations**
+
+- The Detachment may not include any Fast Attack choices.
+
+#### Prospector Fleet
+
+**Requirement:** Your Warlord must be a Votann HQ choice.
+
+**Benefits**
+
+- Hernkyn Pioneers and Hernkyn Yaegirs may be taken as Troops choices and gain the Line unit sub-type.
+
+**Limitations**
+
+- The Detachment may not include any Heavy Support choices.
+
+## Pre-Game Sequence
+
+After both armies have deployed, resolve the following steps in this order, then begin the first turn:
+
+1. Scout-Master redeployments (Urani-Surtr Regulates).
+2. Marking the Grudge, plus Long Memory if your Primary Detachment is Kronus Hegemony.
+3. Scout and Infiltrate redeployments for both armies, as normal.
 
 ## HQ
 
@@ -1000,6 +1101,12 @@ The unit may take a Sagitaur (5 or fewer models) or a Kapricus Carrier as a Dedi
 
 ## Wargear
 
+### Grudge-Ledger / Holo-Lectern
+
+**Cost:** 15 points. Independent Characters only.
+
+Once per friendly Shooting phase, before any attacks are made, the bearer may select one enemy unit within 24" and in its Line of Sight. That unit gains 1 temporary Judgement Token.
+
 ### Arkanyst Hauberk
 
 *A heavy hauberk that shields an Arkanyst Evaluator from the emissions of a transmatter inverter.*
@@ -1097,12 +1204,12 @@ All weapons listed here are counted as 'Bolt' weapons for those rules that affec
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Autoch-pattern bolt pistol | 12" | 4 | 5 | Pistol 1, Breaching (6+) |
-| Autoch-pattern bolter | 24" | 4 | 5 | Rapid Fire, Breaching (6+) |
-| Autoch-pattern combi-bolter | 24" | 4 | 5 | Assault 2, Breaching (6+) |
-| Bolt cannon | 36" | 5 | 4 | Heavy 4, Breaching (6+) |
-| Bolt revolver | 9" | 4 | 5 | Pistol 2, Breaching (6+) |
-| Bolt shotgun | 15" | 4 | 5 | Assault 2, Shred, Breaching (6+) |
+| Autoch-pattern bolt pistol | 12" | 4 | 5 | Pistol 1, Rupture (6+) |
+| Autoch-pattern bolter | 24" | 4 | 5 | Rapid Fire, Rupture (6+) |
+| Autoch-pattern combi-bolter | 24" | 4 | 5 | Assault 2, Rupture (6+) |
+| Bolt cannon | 36" | 5 | 4 | Heavy 4, Rupture (6+) |
+| Bolt revolver | 9" | 4 | 5 | Pistol 2, Rupture (6+) |
+| Bolt shotgun | 15" | 4 | 5 | Assault 2, Shred, Rupture (6+) |
 | Yaegir riflescope rifle | 36" | 4 | 5 | Heavy 1, Sniper, Breaching (6+), Pinning† |
 
 #### Beam, Graviton and Heavy Weapons
@@ -1149,6 +1256,21 @@ All weapons listed here are counted as 'Bolt' weapons for those rules that affec
 | --- | --- | --- | --- | --- |
 | Heavy volkanite disintegrator | 24" | 6 | 4 | Heavy 4, Breaching (5+), Shred, Deflagrate |
 | Plasma sword | – | +2 | 2 | Melee, Rending (6+) |
+
+## Design Notes
+
+Changes from the first draft, so playtesters know what was changed on purpose:
+
+- **Once-per-battle limits:** Strike First and Rapid Redeployment are now once per battle, in line with other Advanced Reactions, because they were the strongest Reactions in the draft.
+- **Grudgekeepers:** The targeted unit is now explicitly the one that reacts, and it replaces Return Fire for that attack rather than being used alongside it.
+- **Grudgebearer:** The bonus Shooting-phase Reaction was removed, because the trait was much stronger than the other universal traits.
+- **Hekaton Spearhead:** Limited to one Hekaton as Heavy Support, and only the Warlord's Hekaton gains Scout.
+- **Precise Fire:** Now improves against marked units, so it no longer simply duplicates Preferred Enemy.
+- **Battlesmith:** One global 2+ cap replaces the conflicting caps in the draft.
+- **Hold the Hold:** Rewritten to avoid an undefined "Counter-Charge" rule.
+- **Ambush Fire:** Spelled out in full instead of referring to an "Interceptor reaction".
+- **Tokens:** Temporary and permanent Judgement Tokens are now defined, and "Accumulating Grudges" gives at most 1 token per turn.
+- **Blood-Oath Vendetta:** Gives Rending (6+), and improves existing Rending, Breaching and Rupture values by 1, to a best of 3+.
 
 ## Rules Checklist (†)
 
