@@ -145,6 +145,11 @@ RITES = {
 # ---- the doc's text
 
 
+def without_fortifications(text):
+    """The doc without its Fortifications, which add_ruinstorm_fortifications.py adds."""
+    return re.sub(r"^## Fortifications\n.*?(?=^## )", "", text, flags=re.S | re.M)
+
+
 def doc_sections():
     """{'## title': {'### title': text}} of the doc."""
     out, top, sub = {}, None, None
@@ -256,7 +261,7 @@ def main():
         sys.exit(f"{CAT} already has the Daemons of the Ruinstorm expansion")
     doc = doc_sections()
     idx = et.official_index()
-    b, root = et.build()
+    b, root = et.build(without_fortifications(open(DOC, encoding="utf-8").read()))
     entries = {e.get("id"): e for e in root.find("sharedSelectionEntries")}
     unit = lambda n: entries[b.units[n]]
     ds_by = {d["name"]: d for d in b.datasheets}

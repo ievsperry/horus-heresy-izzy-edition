@@ -81,6 +81,10 @@ loading. The script prints anything in the doc it could not place.
 
 - Xenos factions (Tyranids, Orks, Necrons, T'au Empire, Drukhari, Asuryani, Anhrathe, Rillietann) take the Xenos allegiance added to `2022 - Horus Heresy.gst`: their army
   selection makes Xenos required for the force, and every unit has the Xenos rule.
+- Tyranids take their own Bio-Fortifications (the doc's "## Fortifications") as Fortification choices. Each may take
+  one Hive Fleet Enhancement (`tyranid_fortifications.py`, run by the builder): shown only in a Detachment of that
+  Hive Fleet, and an error in another. A Cluster's enhancement is bought once for the whole unit. The game
+  system's own Fortifications are hidden from a Tyranid Detachment (`faction_fortifications.py`, below).
 
 - Vehicles, Dreadnoughts, Knights and Titans get the game system's Vehicle or Knights
   and Titans profile, and their sub-types (Fast, Flyer, Transport...) as categories.
@@ -726,6 +730,15 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     the three generic traits or its Detachment's Dominion trait (shown, and allowed, only with that Dominion). These
     replace the official Ruinstorm and generic Warlord Traits; the Unbound characters keep their own.
   It refuses to run twice.
+- `python3 homebrew/add_ruinstorm_fortifications.py` adds the doc's Daemonic Fortifications (Warp-Breach Monolith,
+  Altar of Brass & Skulls, Feculent Gnarlmaw, Warp-Lightning Spire) to `2022 - Daemons - Daemons of the Ruinstorm.cat`
+  as Fortification choices with the Daemon Unit Type and Traitor. `add_ruinstorm.py` leaves them out. Each may
+  take one Ætheric Dominion Enhancement, shown only with that Dominion and an error with another. The doc's
+  "Primordial Annihilator" enhancement (Beacon of Undivided Chaos) belongs to Ravenous Dissolution, the eighth
+  Dominion. A Rite that bars Fortification choices bars these too. It refuses to run twice.
+- `python3 homebrew/faction_fortifications.py` hides the game system's eleven standard Fortifications in a Detachment
+  holding the Tyranids or Daemons of the Ruinstorm faction entry, since both armies take their own. Running it
+  again changes nothing.
 - `python3 homebrew/add_titan_legions.py` adds the Titan Legions expansion (kept as `source/titan-legions.md`) to
   `2022 - Titan Legions.cat`, with its Warlord Traits in `2022 - Mech Library.cat`. It writes:
   - the Moderati Recon Foot-Patrols (Fast Attack), Enginseer Field-Repair Team (Elites) and Secutarii Ballistarii
