@@ -680,7 +680,7 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     is allowed) only with its own Dominion, or any one under Formless Distortion;
   - Master of the Ruinstorm on the Ruinstorm Daemon Sovereign and Harbinger, with the Master of the Legion rule
     linked, and its limit: Sovereigns and Harbingers together, at most one per full 1,000 points of the army's
-    points limit;
+    points limit, checked only when the roster has a points limit;
   - the twelve Rites of War in a Rite of War entry (Primary Detachment only). A Rite is an error when the
     Detachment breaks it: no Sovereign or Harbinger (or Arch-Daemon for the Maw of Annihilation) in it, the wrong
     Dominion (a Dominion's Rite shows only with it), a barred unit or slot (Lords of War anywhere in the army),
@@ -695,10 +695,10 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     eligible unit take a Dominion Rite's Blessing. "Lesser Daemon Swarms" are both the Lesser Daemons and the
     Daemon Swarms.
   Rule text only: every in-game effect, Heedless Slaughter's ranged weapon ban beyond the Warp-Spawn, Incinerators
-  and Cataclysm Brutes, the Screaming Host's flying-units-only rule beyond the ground units it names, Conflagration
-  of Change's Deep Strike rule beyond the Soul-Forge Engine, and the Warlord bar for the LI - Assassins and Agents
-  HQs (Navigator, Lodge Priest, Cults Abominatio), whose entries live in another catalogue. It refuses to run on a
-  catalogue that already has the expansion.
+  and Cataclysm Brutes, the Screaming Host's flying-units-only rule beyond the ground units it names, and
+  Conflagration of Change's Deep Strike rule beyond the Soul-Forge Engine. The LI - Assassins and Agents HQs (Navigator,
+  Lodge Priest, Cults Abominatio) have no Warlord choice in any catalogue, so a Rite's Warlord can never be one of
+  them. It refuses to run on a catalogue that already has the expansion.
 - `python3 homebrew/apply_ruinstorm_dominions.py` applies the doc's Ætheric Dominions, Advanced Reactions and
   Warlord Traits (run after `add_ruinstorm.py`):
   - in `Daemon Library.cat`, each of the eight Ætheric Dominions, which every army that picks one uses (Daemons of
@@ -730,8 +730,8 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   - the Interlocking Phalanx and Void-Shield Overload Advanced Reactions on the army's Divisio Tactica entry, and the
     three Warlord Traits as a "Titan Legions" choice in the Mech Library's Warlord Traits (the Axiarch's and the
     Titans'), shown with Divisio Tactica: The Titan Legions.
-  Rule text only: the Warlord bar for the LI - Assassins and Agents HQs under a Rite, the Vanguard's "Ballistarii only
-  in a Dedicated Transport" and every in-game effect. build_catalogue.py's IRREGULAR plurals now include automata
+  Rule text only: the Vanguard's "Ballistarii only in a Dedicated Transport" and every in-game effect. The LI -
+  Assassins and Agents HQs have no Warlord choice in any catalogue, so they never break a Rite's Warlord rule. build_catalogue.py's IRREGULAR plurals now include automata
   and ballistarii (no other catalogue changes). It refuses to run twice.
 - `python3 homebrew/add_corrupted_assassins.py` adds the Agents of the Warmaster: Corrupted Clade Assassins (kept as
   `source/corrupted-assassins.md`) to `2022 - LI - Assassins.cat`: Clades Mordicare, Doppelgang, Carnifex, Null-Blight,
@@ -809,6 +809,11 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Custodes profiles the Sisters of Silence catalogue cannot import (Corvae Las-Pulser, Solarite Power Lance,
   Spiculus Bolt Launcher, Venatari Jump Harness). The expansion tools now link such names to the official entries
   themselves.
+- `python3 homebrew/custodes_chambers.py` enforces the two Chamber of the Golden Host limitations that compare
+  counts in the official LI - Custodes catalogue: Hykanatoi (no more Vehicle and Dreadnought units than other
+  units, using the catalogue's own "Vehicle or Dreadnought (Hykanatoi)" category) and Kataphraktoi (no more Fast
+  Attack and Heavy Support choices combined than Troops choices). Each is an error on the Chamber when broken.
+  Running it again changes nothing.
 - To rebuild the Sisters of Silence expansion after a Builder change: take `2022 - LI - Sisters Of Silence.cat` as it
   was before the expansion (commit 9bee36b), run `add_sisters_of_silence.py` and `fix_sisters_of_silence_links.py`,
   keep only the catalogue (the game system already has the Chamber allowances, so drop its changes), and re-apply
