@@ -19,7 +19,7 @@ own root entries:
 
 The other limits (at most as many Legiones Astartes units as Militia and Third-Line units, no Allied Detachment of
 the same Faction, no Legiones Hereticus models) are rule text on the Detachment entry. Running it again rebuilds the
-catalogue with the same ids; its revision goes up by one."""
+catalogue with the same ids; its revision goes up by one only when the content changed."""
 import glob
 import os
 import re
@@ -130,9 +130,10 @@ def main():
     im = ET.parse(IM).getroot()
     im_head = re.search(r"<catalogue [^>]*>", open(IM, encoding="utf-8").read()).group(0)
     gs_rev = re.search(r'gameSystemRevision="(\d+)"', im_head).group(1)
-    old_rev = 0
+    old_rev, old_text = 0, None
     if os.path.exists(OUT):
-        old_rev = int(re.search(r'<catalogue [^>]*?revision="(\d+)"', open(OUT, encoding="utf-8").read()).group(1))
+        old_text = open(OUT, encoding="utf-8").read()
+        old_rev = int(re.search(r'<catalogue [^>]*?revision="(\d+)"', old_text).group(1))
 
     cat = ET.Element("catalogue", {"xmlns": C[1:-1], "id": CAT_ID, "name": "Homebrew - Armies of Dark Compliance",
                                    "revision": str(old_rev + 1), "battleScribeVersion": "2.03", "library": "false",
@@ -257,8 +258,14 @@ def main():
                 x.attrib[k] = "true" if x.attrib[k] else "false"
     bc_order(cat)
     text = ET.tostring(cat, encoding="unicode").replace(f' xmlns:ns0="{C[1:-1]}"', "").replace(" />", "/>")
-    open(OUT, "w", encoding="utf-8", newline="\n").write('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n' +
-                                                       text + "\n")
+    out = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n' + text + "\n"
+
+    def body(t):  # the catalogue without its revision, and without line-ending differences
+        return re.sub(r'(<catalogue [^>]*?)revision="\d+"', r"\1", t.replace("\r\n", "\n"), count=1)
+    if old_text is not None and body(old_text) == body(out):
+        print(f"{OUT} unchanged: revision {old_rev}, {len(list(roots))} root entries")
+        return
+    open(OUT, "w", encoding="utf-8", newline="\n").write(out)
     print(f"wrote {OUT}: revision {old_rev + 1}, {len(list(roots))} root entries")
 
 
