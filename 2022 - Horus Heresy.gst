@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="241" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="242" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -17211,7 +17211,7 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
         </selectionEntry>
         <selectionEntry id="4de8-3d63-d537-b626" name="17 Acolytes of the Saviour Emperor" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="d3da-3074-a7ec-99f5" value="0">
+            <modifier type="set" field="5740-848f-dc82-7c7e" value="0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -17246,7 +17246,7 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
         </selectionEntry>
         <selectionEntry id="62d4-da9b-3a92-2cbe" name="18 Knight World" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="b9bc-96f6-3a0b-d325" value="0">
+            <modifier type="set" field="2328-850d-7288-2efd" value="0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -17279,7 +17279,7 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
         </selectionEntry>
         <selectionEntry id="2a2d-8b75-b986-d5e1" name="19 Mark of the Aeldari" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="11db-5652-fac6-e75e" value="0">
+            <modifier type="set" field="27e2-7e02-1e57-3ad3" value="0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -17330,7 +17330,7 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
         </selectionEntry>
         <selectionEntry id="aa3c-195b-15fd-b874" name="21 Ratling Enclave" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="b4e2-3157-afeb-6c42" value="0">
+            <modifier type="set" field="047b-4019-416f-b9b4" value="0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -17361,7 +17361,7 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
         </selectionEntry>
         <selectionEntry id="5408-9c0d-5d6e-4b30" name="22 Trailblazers" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="45c7-69f7-f672-2ec9" value="0">
+            <modifier type="set" field="9998-512a-cfc6-f943" value="0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -17389,7 +17389,7 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
         </selectionEntry>
         <selectionEntry id="0d25-3ab7-05d5-752f" name="23 Voidborne Raiders" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="e52d-4d52-93cc-b5c1" value="0">
+            <modifier type="set" field="43e7-dbd6-e74d-d022" value="0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>

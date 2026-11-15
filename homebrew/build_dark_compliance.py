@@ -102,6 +102,23 @@ def all_ids():
     return ids
 
 
+def loaded_ids(im):
+    """The ids this catalogue can reach: the game system, the lists it links and the libraries they link. A Legion
+    entry copied from LA_TEMPLATE may link that Legion's own groups (Sons of Horus Warlord Traits and Retinue),
+    which no catalogue here loads."""
+    by_id = {}
+    for f in glob.glob("*.cat"):
+        m = re.search(r'<catalogue [^>]*?\bid="([^"]+)"', open(f, encoding="utf-8").read())
+        if m:
+            by_id[m.group(1)] = f
+    files = {GST, IM, LA_LIBRARY} | {by_id[c.get("targetId")] for c in im.iter(C + "catalogueLink")
+                                     if c.get("targetId") in by_id}
+    ids = set()
+    for f in files:
+        ids |= set(re.findall(r'\sid="([^"]+)"', open(f, encoding="utf-8").read()))
+    return ids
+
+
 def unit_types(unit):
     return " ".join(c.text or "" for c in unit.iter(C + "characteristic") if c.get("name") == "Unit Type")
 
@@ -196,12 +213,18 @@ def main():
     common = set.intersection(*[{l.get("targetId") for l in ET.parse(p).getroot().find(C + "entryLinks")}
                                 for p in legion_cats])
     known = all_ids()
+    loaded = loaded_ids(im)
     template = ET.parse(LA_TEMPLATE).getroot()
     for l in template.find(C + "entryLinks"):
         t = l.get("targetId")
         if t not in common or t in taken:
             continue
         c = copy_link(l, "la")
+        # links to what only the Legion's own catalogue has
+        for parent in list(c.iter()):
+            for x in list(parent):
+                if x.tag == "entryLink" and x.get("targetId") not in loaded:
+                    parent.remove(x)
         # conditions on what only the Legion's own catalogue has
         for parent in list(c.iter()):
             for cond in list(parent):
