@@ -6,7 +6,8 @@ usage: python3 homebrew/faction_fortifications.py [game system]
 Tyranid Detachments take Bio-Fortifications (homebrew/source/tyranids.md), Ork Detachments take Ork
 Fortifications (homebrew/source/orks.md), Asuryani Detachments take Asuryani Fortifications
 (homebrew/source/asuryani.md), Drukhari Detachments take Drukhari Fortifications
-(homebrew/source/drukhari.md) and Daemons of the Ruinstorm
+(homebrew/source/drukhari.md), Anhrathe Detachments take Anhrathe Fortifications
+(homebrew/source/anhrathe.md) and Daemons of the Ruinstorm
 Detachments take Daemonic Fortifications (homebrew/add_ruinstorm.py), so each of the game system's own
 Fortification entries is hidden in a Detachment holding either faction's army-wide entry. Running it again
 changes nothing; a new faction is added to FACTIONS and the script run again (its old modifier is replaced)."""
@@ -24,7 +25,7 @@ FORTIFICATIONS = {
 # the army-wide entry every Detachment of the faction holds
 FACTIONS = {"b0ce-f3f1-c16f-86d1": "Tyranids", "afca-3047-fb26-d097": "Daemons of the Ruinstorm",
             "adbe-53b5-788c-2bbb": "Orks", "d799-5beb-3b5c-80a0": "Asuryani",
-            "897b-5b98-3dff-b74a": "Drukhari"}
+            "897b-5b98-3dff-b74a": "Drukhari", "bfb0-3cf3-b297-83ed": "Anhrathe"}
 COMMENT = "Hidden for armies with their own Fortifications"
 
 
