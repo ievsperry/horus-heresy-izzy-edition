@@ -8,7 +8,7 @@ A Realspace Raiders Detachment (Kabal, Wych Cult or Haemonculus Coven) may take 
 its Fortification: the other Drukhari Fortifications are hidden there, and an error if taken.
 
 A Fortification with the Flesh-Crafted Carapace adds 1 to its Front, Side and Rear Armour Values on its profile
-(to a maximum of 13).
+(to a maximum of 12).
 """
 from build_catalogue import add_constraint, child, el, make_id
 
@@ -48,7 +48,7 @@ def carapace(b):
             for ch in prof.iter("characteristic"):
                 if ch.get("name") not in ("Front", "Side", "Rear") or not (ch.text or "").strip().isdigit():
                     continue
-                if int(ch.text) >= 13:
+                if int(ch.text) >= 12:
                     continue
                 m = el(child(prof, "modifiers"), "modifier", type="increment", field=ch.get("typeId"), value=1)
                 el(el(m, "conditions"), "condition", type="atLeast", value=1, field="selections",

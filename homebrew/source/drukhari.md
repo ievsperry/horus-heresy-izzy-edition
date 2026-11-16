@@ -2410,7 +2410,7 @@ A model equipped with enhanced aethersails increases its Movement characteristic
 
 ### Flesh-Crafted Carapace
 
-Sub-Faction Enhancement (Haemonculus Covens). Increases the Fortification's Front, Side, and Rear Armour Values by +1 (to a maximum of 13). At the start of each friendly Movement phase, roll a D6; on a 4+, the Fortification restores 1 lost Hull Point. In addition, friendly Haemonculus Coven units within 12" gain Feel No Pain (5+) (or improve an existing Feel No Pain (X) special rule by +1, to a maximum of 4+).
+Sub-Faction Enhancement (Haemonculus Covens). Increases the Fortification's Front, Side, and Rear Armour Values by +1 (to a maximum of 12). At the start of each friendly Movement phase, roll a D6; on a 4+, the Fortification restores 1 lost Hull Point. In addition, friendly Haemonculus Coven units within 12" gain Feel No Pain (5+) (or improve an existing Feel No Pain (X) special rule by +1, to a maximum of 4+).
 
 ### Flickerfield
 
