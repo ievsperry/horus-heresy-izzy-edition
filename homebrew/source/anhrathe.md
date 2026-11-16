@@ -26,6 +26,8 @@ Units with the Anhrathe keyword originate from the Corsair fleets and voidborn r
 
 **Aeldari (X).** The civilization keywords represent the major surviving branches of the Aeldari species. Every Aeldari unit has at least one Civilization keyword, shown as X, which determines which armies, detachments and force organizations may include that unit. These keywords work like Legion, Klan or Household affiliations in other factions. Aeldari units may only be selected in armies whose Civilization keyword matches at least one of the unit's listed Civilization keywords unless specifically stated otherwise. Units with several Civilization keywords may be selected in any army matching one or more of them: a Corsair Voidreaver unit with the keywords Anhrathe and Asuryani may be selected in either an Anhrathe army or an Asuryani army; a Harlequin Shadowseer with the Rillietann keyword may be included only in armies permitted to include Rillietann units; an Incubi unit with only the Drukhari keyword may only be selected in a Drukhari army. Unless specifically stated otherwise, Asuryani and Drukhari units may not be selected within the same Primary Detachment; Rillietann units may be included as Allied or Auxiliary units in any Aeldari army; and Anhrathe units may be selected as Primary, Allied or Auxiliary forces alongside either Asuryani or Drukhari armies.
 
+**Anhrathe Fortification.** Anhrathe Fortifications are deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Infiltrate or Orbital Raid-Drop). They cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on an Anhrathe Fortification fires at BS 4.
+
 **Master of the Void.** Corsair Voidreaver and Corsair Voidscarred units in an army that includes one or more Corsair Princes gain the Line Unit Sub-type.
 
 **Outcasts and Pirates.** Units with this Special Rule may be selected as Non-Compulsory Troops choices in either Asuryani or Drukhari Detachments. Such units do not prevent the inclusion restrictions normally applied between Asuryani and Drukhari units within the same army. They treat Asuryani and Drukhari units as Fellow Warriors.
@@ -37,6 +39,8 @@ Units with the Anhrathe keyword originate from the Corsair fleets and voidborn r
 **Master of Dreams.** A Void Dreamer may select powers from two Psychic Disciplines. One of these Disciplines must be the Voidsong Discipline.
 
 **Wayfinder.** Friendly units with the Aeldari (Anhrathe) special rule within 6" of one or more Way Seekers gain the Scout special rule. In addition, while a Way Seeker is on the battlefield, friendly units with the Aeldari (Anhrathe) special rule gain +1 to Reserve Rolls.
+
+**Void-Cloak Matrix.** A Fortification with this Special Rule has Shrouded (6+) against all shooting attacks made from more than 12" away.
 
 ## Anhrathe Fleets
 
@@ -865,6 +869,158 @@ No other units may be selected as part of this Detachment.
 | – Venom sails | +10 points |
 | – Webway rift generator | +15 points |
 
+## Fortifications
+
+Anhrathe armies may not take the standard Fortifications; they take these Anhrathe Fortifications instead. All of them follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the Anhrathe Fortification and Void-Cloak Matrix special rules:
+
+- **Deployment.** Deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Infiltrate or Orbital Raid-Drop).
+- **Unit Restrictions.** Fortifications cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests.
+- **Void-Cloak Matrix.** Every Anhrathe Fortification is equipped with modified starship stealth fields, granting it Shrouded (6+) against all shooting attacks made from more than 12" away.
+- **Anhrathe Ballistic Skill.** Any automated weapon on an Anhrathe Fortification fires at BS 4 using integrated ship-cogitator targeting relays.
+
+### Void-Beacon — 75 pts
+
+_A sleek, lance-shaped telemetry buoy fired from an Anhrathe frigate's torpedo tubes that buries itself in the ground, scrambling enemy auspex arrays and guiding raiding parties onto high-value targets. Also called a Plunder-Anchor._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Void-Beacon | – | – | 10 | 10 | 10 | 2 | – (Impassable) | No base |
+
+**Unit Composition**
+
+- 1 Void-Beacon
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Anhrathe Fortification
+- Void-Cloak Matrix
+- Infiltrate: unlike standard Fortifications, a Void-Beacon may be deployed using the Infiltrate special rule anywhere outside the enemy Deployment Zone and at least 12" away from enemy units
+- Tactical Telemetry Relay: friendly Anhrathe units arriving via Deep Strike or Outflank within 12" of this Fortification do not scatter, and may re-roll their Reserves roll if entering via this beacon
+- Auspex Scrambler: enemy units within 12" of a Void-Beacon cannot make Interceptor Reactions, and subtract 1 from their Ballistic Skill when making Overwatch Reactions
+
+### Anhrathe Raider-Bastion — 110 pts
+
+_A prefabricated, lightweight drop-redoubt jettisoned from a Void Dreamer's cruiser, blending thin wraithbone plating with Commorrite splinter-racks and looted starship turrets._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anhrathe Raider-Bastion | – | 4 | 11 | 11 | 10 | 4 | 15 (1 Access Point, 6 Fire Points) | No base |
+
+**Unit Composition**
+
+- 1 Anhrathe Raider-Bastion
+
+**Wargear**
+
+- Two shuriken cannons
+- Two splinter cannons
+
+_The shuriken cannons are hull-mounted on the Front and Rear facings and the splinter cannons on the Left and Right facings; all are Automated Fire weapons (BS 4). A crown-mounted turret is an Automated Fire weapon (BS 4) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Anhrathe Fortification
+- Void-Cloak Matrix
+- Raider Battlements: counts as Open-Topped Battlements on the upper terrace capable of holding up to 10 Infantry models, granting a 4+ Cover Save
+- Ship-Cogitator Targeting: during your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)
+- Outcast Bravado: friendly Anhrathe units within 12" of an occupied Raider-Bastion may re-roll failed Morale and Pinning tests, and add +1 to their Initiative when making Hit & Run checks
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Anhrathe Raider-Bastion may exchange its two shuriken cannons and two splinter cannons for one of the following:** |  |
+| – Four shuriken cannons | +0 points |
+| – Four shredders | +10 points |
+| **The Anhrathe Raider-Bastion may take one of the following crown-mounted weapon turrets:** |  |
+| – Bright lance | +20 points |
+| – Dark lance | +20 points |
+| – Dissonance cannon | +25 points |
+| **The Anhrathe Raider-Bastion may take:** |  |
+| – Holo-Field Projectors | +20 points |
+
+### Void-Skiff Tender Platform — 85 pts
+
+_An anti-gravitic starship tender-deck dropped into low atmosphere to rearm Falcon gunships, Venom skimmers, and Anhrathe jetpack raiders mid-engagement._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Void-Skiff Tender Platform | – | 4 | 11 | 11 | 11 | 3 | 15 models or 1 Flyer / Skimmer | No base |
+
+**Unit Composition**
+
+- 1 Void-Skiff Tender Platform
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Anhrathe Fortification
+- Void-Cloak Matrix
+- Refraction Field (5+): Infantry models on the platform gain a 5+ Invulnerable Save against shooting attacks. Any friendly Anhrathe Flyer in Hover mode or Skimmer ending its Movement phase wholly on the platform gains a 4+ Invulnerable Save against shooting attacks and restores 1 lost Hull Point at the end of that turn on a D6 roll of 4+
+- Aether-Sail Recharge: friendly Anhrathe Flyers, Skimmers, Cavalry, and Jump Pack Infantry starting their Movement phase on the platform add +6" to their Movement characteristic for that turn, and gain the Fleet (1) special rule until the end of the turn
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Void-Skiff Tender Platform may take up to two of the following:** |  |
+| – Point-defence scatter laser | +20 points each |
+| **The Void-Skiff Tender Platform may take:** |  |
+| – Void-Recall Transponder | +20 points |
+
+_Each Point-Defence Turret is armed with a point-defence scatter laser (a scatter laser with the Skyfire and Interceptor special rules)._
+
+### Orbital Lance-Pod — 105 pts
+
+_A sleek, single-use orbital drop-turret launched from an Anhrathe battle-barge ahead of a planetary raid to punch through heavy armour and pin defenders in crossfire._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Orbital Lance-Pod | – | 4 | 11 | 11 | 11 | 4 | – (Impassable) | No base |
+
+**Unit Composition**
+
+- 1 Orbital Lance-Pod
+
+**Wargear**
+
+- Twin-linked bright lance
+- Four shuriken cannons
+
+_The crown-mounted weapon is an Automated Fire weapon (BS 4) with a 360° line of sight; the shuriken cannons (or splinter cannons) are hull-mounted Automated Fire weapons (BS 4), one on each facing._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Anhrathe Fortification
+- Void-Cloak Matrix
+- Orbital Raid-Drop: instead of deploying during the Fortifications step, an Orbital Lance-Pod must be placed in Reserves and enters play via Deep Strike (it may arrive on Turn 1 automatically without rolling for Reserves, and does not scatter if placed within 12" of a friendly Void-Beacon). When it lands, every enemy unit within 6" must immediately take a Pinning test at -1 Leadership
+- Ship-Cogitator Targeting: during your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Orbital Lance-Pod may exchange its twin-linked bright lance for one of the following:** |  |
+| – Twin-linked dark lance | +0 points |
+| – Twin-linked dissonance cannon | +25 points |
+| **The Orbital Lance-Pod may exchange up to two shuriken cannons for:** |  |
+| – Splinter cannon | +0 points each |
+
 ## Special Rules
 
 These rules work alongside the official Horus Heresy special rules, under the Core Rulebook's rules and conventions. Unit-specific rules from the datasheets are included here.
@@ -992,6 +1148,14 @@ A model equipped with venom sails gains Fleet (2). If it already has Fleet, incr
 
 A model equipped with a webway rift generator gains Deep Strike. In addition, friendly units arriving from Reserves within 6" of one or more such models may re-roll Reserve rolls and Scatter dice when deploying via Deep Strike.
 
+### Holo-Field Projectors
+
+A Fortification with Holo-Field Projectors improves its Void-Cloak Matrix to Shrouded (5+) against shooting attacks made from more than 12" away.
+
+### Void-Recall Transponder
+
+Once per game, at the end of your Assault phase or Movement phase, one friendly Anhrathe Infantry unit wholly on a Fortification with a Void-Recall Transponder may be removed from the battlefield and placed into Ongoing Reserves (representing rapid extraction back to an orbiting Anhrathe vessel; the unit does not count as destroyed for Victory Points and may re-enter play on a subsequent turn).
+
 ### Other Wargear
 
 #### Plasma Grenades
@@ -1043,11 +1207,17 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Bright lance | 36" | 8 | 2 | Heavy 1, Lance |
+| Dark lance | 36" | 8 | 2 | Heavy 1, Lance, Exoshock (6+) |
+| Dissonance cannon | 24" | 7 | 4 | Heavy 2, Rupture (5+) |
 | Disintegrator cannon | 36" | 9 | 2 | Heavy 2, Rending (5+), Sunder |
 | Pulse laser | 48" | 8 | 2 | Heavy 2, Sunder, Exoshock (6+) |
 | Scatter laser | 36" | 6 | 6 | Heavy 4 |
+| Point-defence scatter laser | 36" | 6 | 6 | Heavy 4, Skyfire, Interceptor |
 | Shuriken cannon | 24" | 6 | 5 | Assault 3, Breaching (5+) |
 | Wraithcannon | 12" | 10 | 2 | Heavy 1, Brutal (2), Instant Death |
+| Twin-linked bright lance | 36" | 8 | 2 | Heavy 1, Lance, Twin-linked |
+| Twin-linked dark lance | 36" | 8 | 2 | Heavy 1, Lance, Exoshock (6+), Twin-linked |
+| Twin-linked dissonance cannon | 24" | 7 | 4 | Heavy 2, Rupture (5+), Twin-linked |
 
 ### Corsair Grenades and Launchers
 

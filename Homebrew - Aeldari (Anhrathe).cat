@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="869f-4e24-3fd7-61f9" name="Homebrew - Aeldari (Anhrathe)" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="869f-4e24-3fd7-61f9" name="Homebrew - Aeldari (Anhrathe)" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="a8f3-52ed-030f-1805" name="Anhrathe for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Anhrathe" />
   </publications>
@@ -336,6 +336,30 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
         <categoryLink targetId="36c3-e85e-97cc-c503" id="cbec-6765-b59a-9986" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Void-Beacon" hidden="false" id="bd78-47ec-4241-7103" type="selectionEntry" targetId="5e37-f6e3-9992-0436">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="fbbe-11fe-43d3-8181" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="bef5-10a5-6c24-01b5" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Anhrathe Raider-Bastion" hidden="false" id="be9c-7470-613a-099b" type="selectionEntry" targetId="de49-6341-f778-3bfa">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="aaf1-5b91-678b-717e" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="b29a-b24f-cbf6-1394" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Void-Skiff Tender Platform" hidden="false" id="5d00-560c-cd3d-57a7" type="selectionEntry" targetId="b909-6415-a29d-a46d">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="62ff-e5df-9160-2023" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="964b-b275-aefc-784d" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Orbital Lance-Pod" hidden="false" id="96d0-566c-c010-a31b" type="selectionEntry" targetId="1318-4d7d-ebea-e1f1">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="8c41-b92a-f602-c462" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="d162-09e9-6094-f806" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Fusion pistol" hidden="false" id="39c6-cdb7-26c2-a092" publicationId="a8f3-52ed-030f-1805">
@@ -552,6 +576,45 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
         <infoLink name="Lance" id="cf93-a71f-bba9-68b4" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule" />
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dark lance" hidden="false" id="97aa-8b44-6abc-fbdb" publicationId="a8f3-52ed-030f-1805">
+      <profiles>
+        <profile name="Dark lance" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="fd83-f19c-7464-b209" publicationId="a8f3-52ed-030f-1805">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Lance, Exoshock (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lance" id="82fc-46ce-5fa6-0956" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule" />
+        <infoLink name="Exoshock (X)" id="871d-be48-ecca-2c60" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Exoshock (6+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dissonance cannon" hidden="false" id="ee7c-fb17-9038-08b0" publicationId="a8f3-52ed-030f-1805">
+      <profiles>
+        <profile name="Dissonance cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="03f7-0139-d565-eb55" publicationId="a8f3-52ed-030f-1805">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Rupture (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rupture (X)" id="4f34-d258-7979-8a78" hidden="false" targetId="d530-0b40-4723-af90" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rupture (5+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Disintegrator cannon" hidden="false" id="fdf9-d0c7-c7bc-b64c" publicationId="a8f3-52ed-030f-1805">
       <profiles>
         <profile name="Disintegrator cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9616-b705-cbe6-c736" publicationId="a8f3-52ed-030f-1805">
@@ -604,6 +667,21 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Point-defence scatter laser" hidden="false" id="aedf-daca-ac26-20b9" publicationId="a8f3-52ed-030f-1805">
+      <profiles>
+        <profile name="Point-defence scatter laser" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e06d-f139-26bc-ed75" publicationId="a8f3-52ed-030f-1805">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Skyfire, Interceptor</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Skyfire" id="3fa8-88f3-0a44-1eea" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule" />
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Shuriken cannon" hidden="false" id="9c2b-a2bc-c47f-2d62" publicationId="a8f3-52ed-030f-1805">
       <profiles>
         <profile name="Shuriken cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="660b-0452-6a6d-2fa7" publicationId="a8f3-52ed-030f-1805">
@@ -641,6 +719,63 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
           </modifiers>
         </infoLink>
         <infoLink name="Instant Death" id="1b65-67a0-5a47-a650" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked bright lance" hidden="false" id="6ed1-b83b-3346-94f6" publicationId="a8f3-52ed-030f-1805">
+      <profiles>
+        <profile name="Twin-linked bright lance" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7d5c-8899-78b4-4580" publicationId="a8f3-52ed-030f-1805">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Lance, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lance" id="6301-024c-fa19-dc5d" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule" />
+        <infoLink name="Twin-linked" id="d015-b8a5-105e-3159" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked dark lance" hidden="false" id="87a8-742a-16ef-050e" publicationId="a8f3-52ed-030f-1805">
+      <profiles>
+        <profile name="Twin-linked dark lance" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7e1b-e820-e2ec-d19e" publicationId="a8f3-52ed-030f-1805">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Lance, Exoshock (6+), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lance" id="ab95-24c9-ee21-fe5a" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule" />
+        <infoLink name="Exoshock (X)" id="0b00-41e1-a03f-4fed" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Exoshock (6+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Twin-linked" id="85e0-6497-dd2b-0a34" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked dissonance cannon" hidden="false" id="8d95-9917-7ae9-0520" publicationId="a8f3-52ed-030f-1805">
+      <profiles>
+        <profile name="Twin-linked dissonance cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ef05-b2cc-02ad-f979" publicationId="a8f3-52ed-030f-1805">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Rupture (5+), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rupture (X)" id="a6a1-e9a7-18d3-659e" hidden="false" targetId="d530-0b40-4723-af90" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rupture (5+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Twin-linked" id="57c6-111f-05b0-5d36" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Haywire grenades" hidden="false" id="71cf-9c22-9d74-0e04" publicationId="a8f3-52ed-030f-1805">
@@ -1363,6 +1498,24 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
         <profile name="Webway Rift Generator" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="270f-9452-2425-f41c">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">*A device that opens controlled breaches into the Webway for the deployment and extraction of Aeldari forces.* A model equipped with a webway rift generator gains Deep Strike. In addition, friendly units arriving from Reserves within 6" of one or more such models may re-roll Reserve rolls and Scatter dice when deploying via Deep Strike.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Holo-Field Projectors" hidden="false" id="c482-0735-4ae2-0a7e" publicationId="a8f3-52ed-030f-1805">
+      <profiles>
+        <profile name="Holo-Field Projectors" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7c67-d174-6fc2-13fc">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Fortification with Holo-Field Projectors improves its Void-Cloak Matrix to Shrouded (5+) against shooting attacks made from more than 12" away.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Void-Recall Transponder" hidden="false" id="9954-2b15-4804-825e" publicationId="a8f3-52ed-030f-1805">
+      <profiles>
+        <profile name="Void-Recall Transponder" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="dbc9-b73e-3a21-7b44">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per game, at the end of your Assault phase or Movement phase, one friendly Anhrathe Infantry unit wholly on a Fortification with a Void-Recall Transponder may be removed from the battlefield and placed into Ongoing Reserves (representing rapid extraction back to an orbiting Anhrathe vessel; the unit does not count as destroyed for Victory Points and may re-enter play on a subsequent turn).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5563,6 +5716,406 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Void-Beacon" hidden="false" id="5e37-f6e3-9992-0436" publicationId="a8f3-52ed-030f-1805">
+      <rules>
+        <rule name="Infiltrate" id="66c5-1e95-d67d-0ae0" hidden="false">
+          <description>Unlike standard Fortifications, a Void-Beacon may be deployed using the Infiltrate special rule anywhere outside the enemy Deployment Zone and at least 12" away from enemy units</description>
+        </rule>
+        <rule name="Tactical Telemetry Relay" id="1f28-1fcb-c70d-a3d9" hidden="false">
+          <description>Friendly Anhrathe units arriving via Deep Strike or Outflank within 12" of this Fortification do not scatter, and may re-roll their Reserves roll if entering via this beacon</description>
+        </rule>
+        <rule name="Auspex Scrambler" id="5248-bdb8-07af-decf" hidden="false">
+          <description>Enemy units within 12" of a Void-Beacon cannot make Interceptor Reactions, and subtract 1 from their Ballistic Skill when making Overwatch Reactions</description>
+        </rule>
+        <rule name="Note" id="9c6f-3312-3ffb-2ba9" hidden="false">
+          <description>A sleek, lance-shaped telemetry buoy fired from an Anhrathe frigate's torpedo tubes that buries itself in the ground, scrambling enemy auspex arrays and guiding raiding parties onto high-value targets. Also called a Plunder-Anchor.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="0458-8316-319d-e8f7" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Anhrathe Fortification" id="9cff-e73c-4ddd-6b72" hidden="false" targetId="5a40-1813-839a-91d0" type="rule" />
+        <infoLink name="Void-Cloak Matrix" id="e413-da9c-cf45-0205" hidden="false" targetId="55e9-6d2e-d7c9-67a5" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="89ac-7227-4dc3-6cae" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Void-Beacon" hidden="false" id="5db3-3141-63c3-526d" publicationId="a8f3-52ed-030f-1805">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c097-4964-f852-bc8f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dce-8c85-c89e-de01" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Void-Beacon" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="49c2-a41f-f52e-3c37" publicationId="a8f3-52ed-030f-1805">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">–</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">10</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Anhrathe Raider-Bastion" hidden="false" id="de49-6341-f778-3bfa" publicationId="a8f3-52ed-030f-1805">
+      <rules>
+        <rule name="Raider Battlements" id="3fec-0afe-0dbd-aac6" hidden="false">
+          <description>Counts as Open-Topped Battlements on the upper terrace capable of holding up to 10 Infantry models, granting a 4+ Cover Save</description>
+        </rule>
+        <rule name="Ship-Cogitator Targeting" id="a0c2-635f-f819-3bcc" hidden="false">
+          <description>During your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)</description>
+        </rule>
+        <rule name="Outcast Bravado" id="9cd4-33da-ef32-d3e0" hidden="false">
+          <description>Friendly Anhrathe units within 12" of an occupied Raider-Bastion may re-roll failed Morale and Pinning tests, and add +1 to their Initiative when making Hit &amp; Run checks</description>
+        </rule>
+        <rule name="Note" id="399f-cf11-a9f8-cb93" hidden="false">
+          <description>A prefabricated, lightweight drop-redoubt jettisoned from a Void Dreamer's cruiser, blending thin wraithbone plating with Commorrite splinter-racks and looted starship turrets.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="15f0-0ede-a272-2d87" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Anhrathe Fortification" id="45a6-2426-abaf-48e0" hidden="false" targetId="5a40-1813-839a-91d0" type="rule" />
+        <infoLink name="Void-Cloak Matrix" id="e14e-62f1-78d8-52a5" hidden="false" targetId="55e9-6d2e-d7c9-67a5" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="6341-8997-3255-772b" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Anhrathe Raider-Bastion" hidden="false" id="8b60-578e-8be6-5abc" publicationId="a8f3-52ed-030f-1805">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a20-2155-5818-4a76" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="074d-cd12-b21a-4656" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Anhrathe Raider-Bastion" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="6136-2979-75f3-9a0f" publicationId="a8f3-52ed-030f-1805">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">15 (1 Access Point, 6 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange two shuriken cannons and two splinter cannons" hidden="false" id="14a0-7058-e709-54b2" defaultSelectionEntryId="f1ad-85cc-e97e-ed75">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2fe5-fe56-cbd4-72ee" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d48-6fba-0ab5-4169" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Two shuriken cannons and Two splinter cannons" hidden="false" id="f1ad-85cc-e97e-ed75" type="selectionEntry" targetId="df77-9f3a-bb74-9420">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="882b-058f-97b3-1558" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Four shuriken cannons" hidden="false" id="9a86-a428-7a2d-2aee" type="selectionEntry" targetId="4b1b-8b20-b1ce-09e6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03fd-564a-d86a-a6fa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Four shredders" hidden="false" id="5c91-588c-8e21-3569" type="selectionEntry" targetId="24df-1229-865c-c348">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75bb-1bef-5b73-7f9c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="a133-c6f9-5298-6d7d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a0e-1eb2-56df-208a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Bright lance" hidden="false" id="c69a-5061-a7e5-fcc4" type="selectionEntry" targetId="b108-7a49-52ac-19c2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41cd-7c40-3d22-5124" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Dark lance" hidden="false" id="dae3-1e75-802a-219e" type="selectionEntry" targetId="97aa-8b44-6abc-fbdb">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c16-bf08-de97-6d18" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Dissonance cannon" hidden="false" id="ab7b-cfbf-5fe0-85ba" type="selectionEntry" targetId="ee7c-fb17-9038-08b0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a67a-37ea-551d-699b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="f7e1-af21-6d14-f294">
+              <entryLinks>
+                <entryLink import="true" name="Holo-Field Projectors" hidden="false" id="3eed-f73c-856d-7d25" type="selectionEntry" targetId="c482-0735-4ae2-0a7e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b22-f4b3-b42a-5ea2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="110" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two shuriken cannons and Two splinter cannons" hidden="false" id="df77-9f3a-bb74-9420" publicationId="a8f3-52ed-030f-1805">
+      <entryLinks>
+        <entryLink import="true" name="Shuriken cannon" hidden="false" id="06bb-334f-f3a1-550e" type="selectionEntry" targetId="9c2b-a2bc-c47f-2d62">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2a49-1285-3116-2594" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2431-b4b4-5977-e22f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Splinter cannon" hidden="false" id="b483-b300-e745-8c66" type="selectionEntry" targetId="10ab-6bfd-cbf3-b421">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="667d-4a67-f78b-c488" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c897-d2d2-6ad8-de4c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Four shuriken cannons" hidden="false" id="4b1b-8b20-b1ce-09e6" publicationId="a8f3-52ed-030f-1805">
+      <entryLinks>
+        <entryLink import="true" name="Shuriken cannon" hidden="false" id="0e90-6d8c-5a40-ff3e" type="selectionEntry" targetId="9c2b-a2bc-c47f-2d62">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="14ca-7c7a-a302-0353" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4ac9-3fd2-67da-a37f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Four shredders" hidden="false" id="24df-1229-865c-c348" publicationId="a8f3-52ed-030f-1805">
+      <entryLinks>
+        <entryLink import="true" name="Shredder" hidden="false" id="a9f3-9d34-b9b7-dfcc" type="selectionEntry" targetId="7be7-0e32-716e-16fa">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="4f35-368d-20ee-6ec5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="1c33-260c-afd7-2071" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Void-Skiff Tender Platform" hidden="false" id="b909-6415-a29d-a46d" publicationId="a8f3-52ed-030f-1805">
+      <rules>
+        <rule name="Refraction Field (5+)" id="5d14-6274-3ba7-f3c8" hidden="false">
+          <description>Infantry models on the platform gain a 5+ Invulnerable Save against shooting attacks. Any friendly Anhrathe Flyer in Hover mode or Skimmer ending its Movement phase wholly on the platform gains a 4+ Invulnerable Save against shooting attacks and restores 1 lost Hull Point at the end of that turn on a D6 roll of 4+</description>
+        </rule>
+        <rule name="Aether-Sail Recharge" id="ff6c-77e7-f4db-92c8" hidden="false">
+          <description>Friendly Anhrathe Flyers, Skimmers, Cavalry, and Jump Pack Infantry starting their Movement phase on the platform add +6" to their Movement characteristic for that turn, and gain the Fleet (1) special rule until the end of the turn</description>
+        </rule>
+        <rule name="Note" id="d34b-8b66-f38c-1da4" hidden="false">
+          <description>An anti-gravitic starship tender-deck dropped into low atmosphere to rearm Falcon gunships, Venom skimmers, and Anhrathe jetpack raiders mid-engagement.</description>
+        </rule>
+        <rule name="Note" id="e21c-029e-0f5c-f56c" hidden="false">
+          <description>Each Point-Defence Turret is armed with a point-defence scatter laser (a scatter laser with the Skyfire and Interceptor special rules).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="1729-34d4-a2e2-253a" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Anhrathe Fortification" id="bfbd-85a8-bca6-fba7" hidden="false" targetId="5a40-1813-839a-91d0" type="rule" />
+        <infoLink name="Void-Cloak Matrix" id="cda3-d887-2f55-29c2" hidden="false" targetId="55e9-6d2e-d7c9-67a5" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="0d37-b1d4-0f93-6d8a" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Void-Skiff Tender Platform" hidden="false" id="2ada-9b72-d641-7d8e" publicationId="a8f3-52ed-030f-1805">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44e2-b3ed-4835-c350" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbc2-1928-4313-f4f3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Void-Skiff Tender Platform" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="c545-ef84-ad0c-02f1" publicationId="a8f3-52ed-030f-1805">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">15 models or 1 Flyer / Skimmer</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="b102-0a00-6c51-a01d">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7a4a-993f-8fc7-fe01" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Point-defence scatter laser" hidden="false" id="f638-9545-2324-596d" type="selectionEntry" targetId="aedf-daca-ac26-20b9">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="00e7-3717-c114-d25e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="2b6d-b560-ec93-f157">
+              <entryLinks>
+                <entryLink import="true" name="Void-Recall Transponder" hidden="false" id="73fa-f716-3577-6840" type="selectionEntry" targetId="9954-2b15-4804-825e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7588-c358-53ef-10a2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Orbital Lance-Pod" hidden="false" id="1318-4d7d-ebea-e1f1" publicationId="a8f3-52ed-030f-1805">
+      <rules>
+        <rule name="Orbital Raid-Drop" id="82fc-579e-dd31-fb63" hidden="false">
+          <description>Instead of deploying during the Fortifications step, an Orbital Lance-Pod must be placed in Reserves and enters play via Deep Strike (it may arrive on Turn 1 automatically without rolling for Reserves, and does not scatter if placed within 12" of a friendly Void-Beacon). When it lands, every enemy unit within 6" must immediately take a Pinning test at -1 Leadership</description>
+        </rule>
+        <rule name="Ship-Cogitator Targeting" id="e82a-3931-7d1b-441b" hidden="false">
+          <description>During your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc</description>
+        </rule>
+        <rule name="Note" id="1419-dd09-cbfd-dc55" hidden="false">
+          <description>A sleek, single-use orbital drop-turret launched from an Anhrathe battle-barge ahead of a planetary raid to punch through heavy armour and pin defenders in crossfire.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="7442-0e98-81c8-06b9" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Anhrathe Fortification" id="21b5-a822-7d7f-94d2" hidden="false" targetId="5a40-1813-839a-91d0" type="rule" />
+        <infoLink name="Void-Cloak Matrix" id="d81e-fe8f-b10b-4fee" hidden="false" targetId="55e9-6d2e-d7c9-67a5" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="698c-72bc-8fca-64d3" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Orbital Lance-Pod" hidden="false" id="800c-7829-f12f-ddfa" publicationId="a8f3-52ed-030f-1805">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6567-dbc6-d23e-8a12" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd7a-7ea4-1fd1-5146" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Orbital Lance-Pod" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="34cb-5b44-4614-9146" publicationId="a8f3-52ed-030f-1805">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked bright lance" hidden="false" id="c084-aa24-c004-0c4d" defaultSelectionEntryId="9c7e-c745-e88a-6f94">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6fe-852f-95a1-b4ab" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7023-2aa0-a96f-e278" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked bright lance" hidden="false" id="9c7e-c745-e88a-6f94" type="selectionEntry" targetId="6ed1-b83b-3346-94f6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fb2-089e-2f45-1dc9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked dark lance" hidden="false" id="8584-774b-19b9-f8d2" type="selectionEntry" targetId="87a8-742a-16ef-050e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad50-8b81-8f01-5c7c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked dissonance cannon" hidden="false" id="2fac-df80-651c-2caf" type="selectionEntry" targetId="8d95-9917-7ae9-0520">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b4f-e54b-f6ea-b717" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Exchange shuriken cannons" hidden="false" id="de67-bd4d-7a1f-56fb" defaultSelectionEntryId="dcfa-8d35-9339-5dba">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="a293-0360-2a5f-5bce" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9e60-2605-390f-1b86" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Shuriken cannon" hidden="false" id="dcfa-8d35-9339-5dba" type="selectionEntry" targetId="9c2b-a2bc-c47f-2d62">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="178a-7c2b-5df1-1480" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Splinter cannon" hidden="false" id="fb18-8e61-46e9-87b0" type="selectionEntry" targetId="10ab-6bfd-cbf3-b421">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a325-c445-9242-6da9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105" />
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Warlord Traits" hidden="false" id="b1bf-dbf5-a760-63ba">
@@ -5627,6 +6180,9 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
     <rule name="Aeldari (X)" id="ab83-1787-6c8b-27fc" hidden="false" publicationId="a8f3-52ed-030f-1805">
       <description>The civilization keywords represent the major surviving branches of the Aeldari species. Every Aeldari unit has at least one Civilization keyword, shown as X, which determines which armies, detachments and force organizations may include that unit. These keywords work like Legion, Klan or Household affiliations in other factions. Aeldari units may only be selected in armies whose Civilization keyword matches at least one of the unit's listed Civilization keywords unless specifically stated otherwise. Units with several Civilization keywords may be selected in any army matching one or more of them: a Corsair Voidreaver unit with the keywords Anhrathe and Asuryani may be selected in either an Anhrathe army or an Asuryani army; a Harlequin Shadowseer with the Rillietann keyword may be included only in armies permitted to include Rillietann units; an Incubi unit with only the Drukhari keyword may only be selected in a Drukhari army. Unless specifically stated otherwise, Asuryani and Drukhari units may not be selected within the same Primary Detachment; Rillietann units may be included as Allied or Auxiliary units in any Aeldari army; and Anhrathe units may be selected as Primary, Allied or Auxiliary forces alongside either Asuryani or Drukhari armies.</description>
     </rule>
+    <rule name="Anhrathe Fortification" id="5a40-1813-839a-91d0" hidden="false" publicationId="a8f3-52ed-030f-1805">
+      <description>Anhrathe Fortifications are deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Infiltrate or Orbital Raid-Drop). They cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on an Anhrathe Fortification fires at BS 4.</description>
+    </rule>
     <rule name="Master of the Void" id="9b8e-8321-d1db-ecab" hidden="false" publicationId="a8f3-52ed-030f-1805">
       <description>Corsair Voidreaver and Corsair Voidscarred units in an army that includes one or more Corsair Princes gain the Line Unit Sub-type.</description>
     </rule>
@@ -5644,6 +6200,9 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
     </rule>
     <rule name="Wayfinder" id="1e2d-3572-b61c-822b" hidden="false" publicationId="a8f3-52ed-030f-1805">
       <description>Friendly units with the Aeldari (Anhrathe) special rule within 6" of one or more Way Seekers gain the Scout special rule. In addition, while a Way Seeker is on the battlefield, friendly units with the Aeldari (Anhrathe) special rule gain +1 to Reserve Rolls.</description>
+    </rule>
+    <rule name="Void-Cloak Matrix" id="55e9-6d2e-d7c9-67a5" hidden="false" publicationId="a8f3-52ed-030f-1805">
+      <description>A Fortification with this Special Rule has Shrouded (6+) against all shooting attacks made from more than 12" away.</description>
     </rule>
     <rule name="Soul Tear" id="e723-3800-b3ef-5f32" hidden="false" publicationId="a8f3-52ed-030f-1805">
       <description>A unit including a Psyker and a weapon or ability with this rule may activate it before attacking with that weapon or resolving that ability, by making a single Psychic check with any Psyker in the unit. - Pass: for that phase, attacks with Soul Tear gain Armourbane (Melee), Armourbane (Ranged), and Fleshbane, and count as having Force for any rule affected by it. - Fail: no benefit, but the unit attacks as normal.</description>
