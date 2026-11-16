@@ -94,7 +94,9 @@ loading. The script prints anything in the doc it could not place.
 - Drukhari take their own Drukhari Fortifications (the doc's "## Fortifications": Torture-Spire, Kabalite
   Blade-Bastion, Void-Raptor Sky-Dock, Dread-Pod Drop-Turret), each with the Drukhari Fortification and
   Night-Shield Matrix rules. Each may take one Sub-Faction Enhancement (`drukhari_fortifications.py`, run by the
-  builder): shown only in a Detachment of that Sub-faction, and an error in another. The game system's own
+  builder): shown only in a Detachment of that Sub-faction, and an error in another. The Flesh-Crafted Carapace
+  adds 1 to the Fortification's Front, Side and Rear Armour on its profile. A Realspace Raiders Detachment takes
+  0-1 Fortifications, and only the Dread-Pod Drop-Turret (the others are hidden there). The game system's own
   Fortifications are hidden from a Drukhari Detachment.
 - Orks take their own Ork Fortifications (the doc's "## Fortifications": Mekboy Workshop, Ork Scrap-Bastion,
   Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement) as Fortification choices, each with the

@@ -335,6 +335,9 @@ No other units may be selected as part of this Detachment.
 | Elites | 0-3 | 0-1 | 0-1 |
 | Fast Attack | 0-1 | 0-3 | 0-1 |
 | Heavy Support | 0-1 | 0-1 | 0-3 |
+| Fortifications | 0-1 | 0-1 | 0-1 |
+
+The only Fortification a Realspace Raiders Detachment may select is a Dread-Pod Drop-Turret.
 
 ## Force Organisation and Rites of War
 
@@ -2184,7 +2187,7 @@ _A razor-edged, spired redoubt dropped from a Kabalite cruiser, bristling with s
 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Kabalite Blade-Bastion | – | 4 | 12 | 12 | 11 | 4 | 15 (1 Access Point, 6 Fire Points) | No base |
+| Kabalite Blade-Bastion | – | 4 | 11 | 11 | 11 | 4 | 15 (1 Access Point, 6 Fire Points) | No base |
 
 **Unit Composition**
 
@@ -2268,7 +2271,7 @@ _A needle-prowed orbital terror-pod fired from a Drukhari raid cruiser that slam
 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Dread-Pod Drop-Turret | – | 4 | 12 | 12 | 12 | 4 | – (Impassable) | No base |
+| Dread-Pod Drop-Turret | – | 4 | 11 | 11 | 11 | 4 | – (Impassable) | No base |
 
 **Unit Composition**
 
