@@ -32,6 +32,8 @@ Every unit in this list has **Hive Fleet (X)**, and **Shadow in the Warp** if it
 
 **Shadow in the Warp.** Enemy Psykers within 12" of a model with this rule subtract 1 from their Leadership when making Psychic checks.
 
+**Bio-Construct.** A Bio-Fortification is a living chitinous organism rather than a mechanical vehicle: enemy weapons with the Haywire special rule have no effect on it, and it cannot be repaired by Battlesmith. Every Bio-Fortification has the Tyranid faction keyword and the Fearless special rule.
+
 **Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
 
 **Synapse Creature.** Friendly Tyranid units within 12" of one or more models with this rule automatically pass Morale checks and Pinning tests, and ignore Instinctive Behaviour. A Synapse creature itself is never affected by Instinctive Behaviour. Every model with this rule is also treated as a Character.
@@ -202,7 +204,7 @@ A Warlord with this Trait increases the range of its Synapse Creature special ru
 
 ## Force Organisation and Rites of War
 
-Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, Heavy Support, Dedicated Transports and Lord of War. Each unit takes the slot of the section it appears under:
+Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, Heavy Support, Dedicated Transports, Lord of War and Fortifications. Each unit takes the slot of the section it appears under:
 
 | 2.0 slot | Tyranid units |
 |---|---|
@@ -213,6 +215,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Fast Attack | Gargoyles, Raveners, Meiotic Spores, Sky-Slasher Swarms, Tyranid Shrikes, Harpy, Hive Crone, Spore Mines, Mucolid Spores |
 | Heavy Support | Carnifexes, Screamer-Killer, Biovores, Barbgaunts, Trygon, Mawloc, Tyrannofex, Toxicrene, Exocrine, Norn Assimilator, Sporocyst, Dimachaeron, Stone-crusher Carnifex |
 | Lord of War | Hierophant Bio-titan, Harridan, Scythed Hierodule, Barbed Hierodule |
+| Fortifications | Capillary Tower, Sporocyst Bio-Fortification, Brood Nest, Bio-Plasma Bastion, Spore-Vent Cluster, Tunnel-Node Cluster, Capillary Spire Cluster |
 
 When building a Primary Detachment with the Tyranids faction trait, the controlling player may select a single Rite of War, provided the Detachment meets all listed Prerequisites and Limitations. Only one Rite of War may be selected per Detachment, and its Effects and Limitations apply for the duration of the battle.
 
@@ -2337,11 +2340,349 @@ Tyranid bio-titans are Infantry with the Monstrous and Gargantuan sub-types. The
 | – Regeneration (5+) | +40 points |
 | – Unnatural Resilience | +15 points |
 
+## Fortifications
+
+Tyranid armies may not take the standard Fortifications; they take these Bio-Fortifications instead. All of them follow the standard Fortification rules from the Age of Darkness 2.0 rulebook:
+
+- **Deployment.** Deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Infiltrate).
+- **Unit Restrictions.** Bio-Fortifications cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests.
+- **Bio-Constructs.** Every Bio-Fortification below has the Tyranid faction keyword and the Fearless special rule. Although they use Armour Values and Hull Points, they represent living chitinous organisms rather than mechanical vehicles: enemy weapons with the Haywire special rule have no effect on them, and they cannot be repaired by Battlesmith.
+
+**Hive Fleet Enhancements.** Each Bio-Fortification may take one Hive Fleet Enhancement matching the Hive Fleet of its Detachment. For a Spore-Vent Cluster, Tunnel-Node Cluster or Capillary Spire Cluster, the cost is paid once for the whole unit: all surviving models gain the enhancement's effects, with aura ranges reduced from 12" to 6" (and the Shadow in the Warp Emitter's from 24" to 12").
+
+### Capillary Tower — 90 pts
+
+_A towering spire of ribbed chitin and pulsing vascular tendrils that pumps digestive enzymes into the atmosphere and anchors the Hive Mind's synaptic web._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Capillary Tower | – | – | 12 | 12 | 12 | 4 | – (Impassable) | No base |
+
+**Unit Composition**
+
+- 1 Capillary Tower
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Bio-Construct
+- Fearless
+- Synaptic Relay (18"): this Fortification counts as a Synapse Creature with an 18" range for all friendly Tyranid units
+- Reclamation Spore-Mist: friendly Tyranid units within 12" of this Fortification gain Feel No Pain (6+) (or improve an existing Feel No Pain (X) special rule by +1, to a maximum of 4+)
+- Acidic Rupture: if this Fortification is reduced to 0 Hull Points, do not roll on the Building Damage table. Instead, roll 2D6 to determine the radius of the rupture in inches. Every non-Tyranid unit within that distance suffers D6 Strength 5 AP 4 hits with the Ignores Cover and Fleshbane special rules before the model is removed
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Capillary Tower may take one of the following Hive Fleet Enhancements:** |  |
+| – Seismic Tremor-Roots | +20 points |
+| – Pheromone Trail Beacon | +20 points |
+| – Dominion Synapse Node | +25 points |
+| – Shadow in the Warp Emitter | +25 points |
+| – Chitinous Tunnel-Network | +20 points |
+| – Endless Brood-Vats | +25 points |
+
+### Sporocyst Bio-Fortification — 105 pts
+
+_A bloated, semi-buried brood-cyst that drifts down from orbit like a living meteor, belching toxic spores and incubating gestation sacs across the battlefield._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Sporocyst Bio-Fortification | – | 3 | 11 | 11 | 11 | 4 | – (Impassable) | No base |
+
+**Unit Composition**
+
+- 1 Sporocyst Bio-Fortification
+
+**Wargear**
+
+- Five deathspitter bio-cannons
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Bio-Construct
+- Fearless
+- Automated Fire: its weapons fire with BS 3 and a 360° line of sight
+- Infiltrate: unlike standard Fortifications, it may be deployed using the Infiltrate special rule anywhere outside the enemy Deployment Zone and at least 12" away from enemy units
+- Automated Bio-Defence: during your Shooting phase, it automatically fires all five deathspitter bio-cannons at the nearest visible enemy unit within range (using BS 3). It may split its fire between up to two different visible enemy units within 24"
+- Spore Seeding: at the start of each friendly Movement phase, if this Fortification is not within 3" of an enemy unit, you may place 1 Spore Mine model (or add 1 model to an existing friendly Spore Mine cluster within 6") completely within 6" of it and at least 1" away from enemy models
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Sporocyst Bio-Fortification may take one of the following Hive Fleet Enhancements:** |  |
+| – Seismic Tremor-Roots | +20 points |
+| – Pheromone Trail Beacon | +20 points |
+| – Dominion Synapse Node | +25 points |
+| – Shadow in the Warp Emitter | +25 points |
+| – Chitinous Tunnel-Network | +20 points |
+| – Endless Brood-Vats | +25 points |
+
+### Brood Nest — 80 pts
+
+_A subterranean network of mucus-lined tunnels and chitinous sphincter-vents from which vanguard organisms erupt behind enemy lines. Also called an Infestation Node._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Brood Nest | – | – | 11 | 11 | 11 | 3 | – (Area Terrain) | No base |
+
+**Unit Composition**
+
+- 1 Brood Nest
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Bio-Construct
+- Fearless
+- Shrouded (6+)
+- Nest Cover: counts as Area Terrain granting a 5+ Cover Save to friendly Tyranid Infantry models within 3"
+- Infiltrate: a Brood Nest may be deployed using the Infiltrate special rule anywhere outside the enemy Deployment Zone and at least 12" away from enemy units
+- Subterranean Conduit: friendly Tyranid units arriving from Reserves (including units using Outflank, but excluding units arriving via Deep Strike or units with the Flyer sub-type) may treat the Brood Nest as a friendly Battlefield Edge for the purpose of entering play. When deploying from Reserves via this rule, models move onto the battlefield measuring their movement distance directly from any point along the perimeter of the Brood Nest's base or terrain footprint, following all standard Reserves movement and coherency rules
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Brood Nest may take one of the following Hive Fleet Enhancements:** |  |
+| – Seismic Tremor-Roots | +20 points |
+| – Pheromone Trail Beacon | +20 points |
+| – Dominion Synapse Node | +25 points |
+| – Shadow in the Warp Emitter | +25 points |
+| – Chitinous Tunnel-Network | +20 points |
+| – Endless Brood-Vats | +25 points |
+
+### Bio-Plasma Bastion — 130 pts
+
+_A massive, heavily armoured carapace-redoubt crowned with a pulsing bio-plasma sphincter capable of melting battle tanks into slag._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Bio-Plasma Bastion | – | 3 | 13 | 13 | 12 | 4 | 10 (Carapace Ramparts) | No base |
+
+**Unit Composition**
+
+- 1 Bio-Plasma Bastion
+
+**Wargear**
+
+- Heavy bio-plasma cannon
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Bio-Construct
+- Fearless
+- Automated Fire: its heavy bio-plasma cannon fires with BS 3 and a 360° line of sight
+- Carapace Ramparts: counts as Open-Topped Battlements granting a 4+ Cover Save to Infantry models occupying it
+- Symbiotic Gunner: during your Shooting phase, if the Bastion is occupied by a friendly Tyranid Infantry unit, one model in that unit may fire the heavy bio-plasma cannon using its own Ballistic Skill instead of shooting its own weapon. If unoccupied, the cannon fires automatically at the nearest visible enemy unit using BS 3
+- Reinforced Chitin: enemy attacks targeting this Fortification do not gain extra armour penetration dice from the Melta special rule unless fired from within half range (6" or less)
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Bio-Plasma Bastion may take one of the following Hive Fleet Enhancements:** |  |
+| – Seismic Tremor-Roots | +20 points |
+| – Pheromone Trail Beacon | +20 points |
+| – Dominion Synapse Node | +25 points |
+| – Shadow in the Warp Emitter | +25 points |
+| – Chitinous Tunnel-Network | +20 points |
+| – Endless Brood-Vats | +25 points |
+
+### Spore-Vent Cluster — 90 pts
+
+_Smaller, low-profile gestation nodules that erupt from the soil in clusters, spitting toxic bio-plasma and seeding drifting spore-mines across contested ground._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Spore-Vent | – | 3 | 9 | 9 | 9 | 2 | – (Impassable) | No base |
+
+**Unit Composition**
+
+- 2 Spore-Vents
+
+**Wargear**
+
+- Two deathspitter bio-cannons
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Bio-Construct
+- Fearless
+- Automated Fire: its weapons fire with BS 3 and a 360° line of sight
+- Cluster Deployment: each Spore-Vent must be deployed within 6" of at least one other Spore-Vent in the unit during the Fortifications deployment step
+- Infiltrate: may be deployed anywhere outside the enemy Deployment Zone and at least 12" away from enemy units
+- Automated Bio-Defence: during your Shooting phase, each Spore-Vent automatically fires its deathspitter bio-cannons at the nearest visible enemy unit within range (using BS 3)
+- Cluster Spore-Seeding: at the start of each friendly Movement phase, roll a D6 for each Spore-Vent not within 3" of an enemy unit. On a 4+, place 1 Spore Mine model (or add 1 model to an existing friendly Spore Mine cluster within 6") completely within 6" of that Spore-Vent and at least 1" away from enemy models
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Spore-Vent Cluster may take:** |  |
+| – Up to 4 additional Spore-Vents | +45 points each |
+| **The Spore-Vent Cluster may take one of the following Hive Fleet Enhancements:** |  |
+| – Seismic Tremor-Roots | +20 points |
+| – Pheromone Trail Beacon | +20 points |
+| – Dominion Synapse Node | +25 points |
+| – Shadow in the Warp Emitter | +25 points |
+| – Chitinous Tunnel-Network | +20 points |
+| – Endless Brood-Vats | +25 points |
+
+### Tunnel-Node Cluster — 70 pts
+
+_A network of smaller chitinous sphincter-vents connected by shallow subterranean burrows, allowing vanguard broods to pop up across multiple flanking angles._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Tunnel-Node | – | – | 9 | 9 | 9 | 2 | – (Area Terrain) | No base |
+
+**Unit Composition**
+
+- 2 Tunnel-Nodes
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Bio-Construct
+- Fearless
+- Cluster Deployment: each Tunnel-Node must be deployed within 6" of at least one other Tunnel-Node in the unit during the Fortifications deployment step
+- Node Cover: counts as Area Terrain granting a 6+ Cover Save to friendly Tyranid Infantry models within 3"
+- Infiltrate: may be deployed anywhere outside the enemy Deployment Zone and at least 12" away from enemy units
+- Vanguard Conduit: friendly Tyranid Infantry units (excluding units with Bulky (3+)) arriving from Reserves may treat any surviving Tunnel-Node as a friendly Battlefield Edge for the purpose of entering play, measuring their movement distance directly from any point along the perimeter of that Tunnel-Node's base
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Tunnel-Node Cluster may take:** |  |
+| – Up to 4 additional Tunnel-Nodes | +35 points each |
+| **The Tunnel-Node Cluster may take one of the following Hive Fleet Enhancements:** |  |
+| – Seismic Tremor-Roots | +20 points |
+| – Pheromone Trail Beacon | +20 points |
+| – Dominion Synapse Node | +25 points |
+| – Shadow in the Warp Emitter | +25 points |
+| – Chitinous Tunnel-Network | +20 points |
+| – Endless Brood-Vats | +25 points |
+
+### Capillary Spire Cluster — 70 pts
+
+_Clustered nodules of ribbed chitin and pulsing vascular vents that erupt across an invaded world in dense groves, seeding localized pockets of digestive mist and synaptic resonance._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Capillary Spire | – | – | 10 | 10 | 10 | 2 | – (Impassable) | No base |
+
+**Unit Composition**
+
+- 2 Capillary Spires
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Bio-Construct
+- Fearless
+- Cluster Deployment: unlike standard Fortifications, all Capillary Spires in the unit must be deployed within 6" of at least one other Spire in the unit during the Fortifications deployment step (they do not need to remain in coherency if models are destroyed)
+- Synaptic Relay (12"): each Capillary Spire counts as a Synapse Creature with a 12" range for all friendly Tyranid units
+- Localized Spore-Mist: friendly Tyranid units within 6" of one or more Capillary Spires gain Feel No Pain (6+) (this does not stack with other Capillary Spires, though it improves an existing Feel No Pain (X) special rule by +1, to a maximum of 5+)
+- Minor Acidic Rupture: if a Capillary Spire is reduced to 0 Hull Points, do not roll on the Building Damage table. Instead, roll 1D6 to determine the radius of the rupture in inches. Every non-Tyranid unit within that distance suffers D3 Strength 4 AP 5 hits with the Ignores Cover and Fleshbane special rules before the model is removed
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Capillary Spire Cluster may take:** |  |
+| – Up to 4 additional Capillary Spires | +35 points each |
+| **The Capillary Spire Cluster may take any of the following:** |  |
+| – Subterranean Eruption | +10 points per model |
+| – Spore-Seeded Drop | +15 points per model |
+| **The Capillary Spire Cluster may take one of the following Hive Fleet Enhancements:** |  |
+| – Seismic Tremor-Roots | +20 points |
+| – Pheromone Trail Beacon | +20 points |
+| – Dominion Synapse Node | +25 points |
+| – Shadow in the Warp Emitter | +25 points |
+| – Chitinous Tunnel-Network | +20 points |
+| – Endless Brood-Vats | +25 points |
+
+## Bio-Fortification Wargear
+
+Hive Fleet Enhancements and the Capillary Spire Cluster's forward-deployment options. An enhancement may only be taken by a Bio-Fortification in a Detachment of its Hive Fleet.
+
+### Seismic Tremor-Roots
+
+_Hive Fleet Behemoth enhancement._
+
+Enemy units within 12" of this Fortification suffer a -2 penalty to Charge distance rolls. Friendly Behemoth units within 12" gain Furious Charge (1) (or improve an existing Furious Charge (X) rule by +1).
+
+### Pheromone Trail Beacon
+
+_Hive Fleet Kraken enhancement._
+
+Friendly Kraken units within 12" of this Fortification gain Fleet (2) and add +1" to their Run moves. In addition, enemy units within 12" cannot make Withdraw Reactions during the Assault phase.
+
+### Dominion Synapse Node
+
+_Hive Fleet Leviathan enhancement._
+
+Increases the Fortification's Synaptic Relay range to 24" (or grants Synaptic Relay (18") if it does not already have it). Friendly Leviathan units within 12" gain Stubborn even if cut off from Synapse, and may re-roll failed Feel No Pain rolls of 1.
+
+### Shadow in the Warp Emitter
+
+_Hive Fleet Kronos enhancement._
+
+Enemy models with the Psyker unit sub-type within 24" of this Fortification suffer a -2 penalty to all Psychic Checks and Deny the Witch rolls. Any enemy Psyker that fails a Psychic Check within 24" automatically suffers Perils of the Warp.
+
+### Chitinous Tunnel-Network
+
+_Hive Fleet Jormungandr enhancement._
+
+Friendly Jormungandr Infantry units within 12" of this Fortification gain Shrouded (5+) if they did not Run or Charge in their previous turn. In addition, enemy units within 12" cannot make Interceptor Reactions against Jormungandr units arriving from Reserves within 12" of this Fortification.
+
+### Endless Brood-Vats
+
+_Hive Fleet Hydra enhancement._
+
+At the start of each friendly Movement phase, select one friendly Hydra Infantry unit with the Swarm or Line sub-type within 12" of this Fortification; that unit immediately restores D3+1 lost models (up to its starting unit size, placed in coherency).
+
+### Subterranean Eruption
+
+All Capillary Spires in the unit gain the Infiltrate special rule, allowing them to deploy anywhere outside the enemy Deployment Zone and at least 12" away from enemy units (while still deploying within 6" of at least one other Spire in the unit).
+
+### Spore-Seeded Drop
+
+Instead of deploying on the battlefield, the Capillary Spire Cluster may be held in Reserves and arrive via Deep Strike (treat the cluster as a single unit for Deep Strike deployment; once the first Spire is placed, all remaining Spires in the unit must be placed within 6" of at least one other Spire in the cluster and at least 1" away from enemy models).
+
 ## Biomorphs
 
 Biomorphs are the Tyranid equivalent of wargear: organs, glands and growths bred into a creature for a purpose. A biomorph is taken by every model in the unit and costs its points for each model, unlike weapon options, which are bought model by model.
 
-Every unit may take adrenal glands, toxin sacs, flesh hooks, engrained aggression and wraithful will, and dynamic camouflage, a hardened carapace, improved strength, improved toughness, killer impulse, walking terror, hulking brute and burrower where its models qualify, at the costs below. A datasheet that lists a biomorph in its options uses its own cost instead. Wings, regeneration, spine banks and Unnatural Resilience may only be taken where a datasheet offers them. Spore Mines, Meiotic Spores, Mucolid Spores, Mycetic Spores, Tyrannocytes and Sporocysts may not take biomorphs.
+Every unit may take adrenal glands, toxin sacs, flesh hooks, engrained aggression and wraithful will, and dynamic camouflage, a hardened carapace, improved strength, improved toughness, killer impulse, walking terror, hulking brute and burrower where its models qualify, at the costs below. A datasheet that lists a biomorph in its options uses its own cost instead. Wings, regeneration, spine banks and Unnatural Resilience may only be taken where a datasheet offers them. Spore Mines, Meiotic Spores, Mucolid Spores, Mycetic Spores, Tyrannocytes, Sporocysts, Sporocyst Bio-Fortifications, Capillary Towers, Brood Nests, Bio-Plasma Bastions, Spore-Vent Clusters, Tunnel-Node Clusters and Capillary Spire Clusters may not take biomorphs.
 
 ### Adrenal Glands
 
@@ -2584,6 +2925,7 @@ _Living guns that fire beetles, spines and acid-filled grubs, carried by the swa
 |---|---|---|---|---|
 | Barblauncher | 24" | 4 | 5 | Heavy 1, Blast (3"), Pinning |
 | Deathspitter | 18" | 5 | 5 | Assault 3 |
+| Deathspitter bio-cannon | 24" | 5 | 4 | Assault 3, Pinning |
 | Devourer | 18" | 4 | – | Assault 3 |
 | Fleshborer | 12" | 4 | 5 | Assault 1 |
 | Fleshborer hive | 18" | 5 | 5 | Assault 20 |
@@ -2599,7 +2941,7 @@ _Living guns that fire beetles, spines and acid-filled grubs, carried by the swa
 
 _Gouts of plasma, acid and burning bile spat from organic chambers._
 
-All weapons listed here are counted as 'Flame' weapons for those rules that affect such weapons, except bio-plasma and bio-plasmic cannons.
+All weapons listed here are counted as 'Flame' weapons for those rules that affect such weapons, except bio-plasma, bio-plasmic cannons and the heavy bio-plasma cannon.
 
 | Weapon | Range | Str | AP | Type |
 |---|---|---|---|---|
@@ -2607,6 +2949,7 @@ All weapons listed here are counted as 'Flame' weapons for those rules that affe
 | Bio-acid spray | Template | 7 | 3 | Assault 1, Shred |
 | Bio-plasma | 12" | 7 | 2 | Assault 1, Blast (3") |
 | Bio-plasmic cannon | 36" | 7 | 2 | Heavy 1, Large Blast (5") |
+| Heavy bio-plasma cannon | 36" | 8 | 2 | Heavy 1, Blast (3"), Brutal (2), Gets Hot |
 | Bio-plasmic scream | 18" | 6 | 3 | Assault 1, Large Blast (5"), Pinning |
 | Choking spores | 12" | 3 | – | Assault 1, Blast (3"), Poisoned (4+)† |
 | Drool cannon | Template | 6 | 4 | Assault 1 |

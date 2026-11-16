@@ -4,7 +4,7 @@ Nov 13, 2026 · @Isaac
 
 ## Introduction
 
-This expansion adds new units, Daemonic Assassins, Ætheric Blessings and Rites of War to the official Daemons of the Ruinstorm army list. It is used alongside the official list, not instead of it.
+This expansion adds new units, Daemonic Fortifications, Daemonic Assassins, Ætheric Blessings and Rites of War to the official Daemons of the Ruinstorm army list. It is used alongside the official list, not instead of it.
 
 Daemons of the Ruinstorm are always part of the Traitor Alliance. Every unit, Daemonic Assassin, Ætheric Blessing and Rite of War here that names an Ætheric Dominion may only be taken in an army whose Ætheric Dominion is that Dominion (or, where its entry says so, any one under Formless Distortion).
 
@@ -17,6 +17,7 @@ Daemons of the Ruinstorm are always part of the Traitor Alliance. Every unit, Da
 | Troops | Ruinstorm Warp-Spawn Pack |
 | Fast Attack | Ruinstorm Sky-Ray Pack, Ruinstorm Flesh-Reaper Cavalry |
 | Heavy Support | Ruinstorm Soul-Forge Engine, Ruinstorm Cataclysm Brute Pack |
+| Fortifications | Warp-Breach Monolith, Altar of Brass & Skulls, Feculent Gnarlmaw, Warp-Lightning Spire |
 
 ## Special Rules
 
@@ -47,6 +48,10 @@ At the end of each turn, roll a D6 for each enemy unit that suffered one or more
 ### Melta
 
 A weapon with this special rule rolls an additional D6 for Armour Penetration when the target is within half its maximum range.
+
+### Daemonic Fortification
+
+A Daemonic Fortification has the Daemon unit sub-type, granting it Fearless and a 5+ Invulnerable Save against all ranged and melee attacks, and counts as a friendly Warp Rift / Locus for Deep Strike and stabilization rules.
 
 ### Paired Weapon
 
@@ -657,6 +662,230 @@ Confers a 3+ Armour Save.
 
 Confers a 4+ Armour Save.
 
+## Fortifications
+
+Daemons of the Ruinstorm armies may not take the standard Fortifications; they take these Daemonic Fortifications instead. All of them follow the standard Fortification rules from the Age of Darkness 2.0 rulebook:
+
+- **Deployment.** Deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Infiltrate or Reality-Fracture Anchor).
+- **Unit Restrictions.** Fortifications cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests.
+- **Daemonic Fortifications.** Every Fortification below has the Daemon unit sub-type (granting Fearless and a 5+ Invulnerable Save against all ranged and melee attacks) and counts as a friendly Warp Rift / Locus for Deep Strike and stabilization rules.
+
+**Ætheric Dominion Enhancements.** When including any Daemonic Fortification in a Daemons of the Ruinstorm Detachment, you may purchase one Ætheric Dominion Enhancement for it, matching the Detachment's Ætheric Dominion.
+
+### Warp-Breach Monolith — 85 pts
+
+*A jagged obelisk of black glass and weeping bone that anchors the Empyrean to realspace, bleeding raw Warp energy onto the battlefield.*
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Warp-Breach Monolith | – | – | 12 | 12 | 12 | 4 | – (Impassable) | No base |
+
+**Unit Composition**
+
+- 1 Warp-Breach Monolith
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Daemonic Fortification
+- Fearless
+- Fear (1)
+- Beacon of the Ruinstorm: friendly Daemons of the Ruinstorm units arriving via Deep Strike within 12" of this Fortification do not scatter
+- Unstable Veil Anchor: friendly Daemons of the Ruinstorm units within 12" of this Fortification subtract 1 from the number of wounds suffered when failing a Daemonic Instability check (to a minimum of 0)
+- Catastrophic Collapse: if this Fortification is reduced to 0 Hull Points, do not roll on the Building Damage table. Instead, center a Large Blast (5") marker over the monolith; every unit under the template (friend or foe) suffers D6 Strength 5 AP 4 hits with the Ignores Cover and Pinning special rules before the model is removed
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Warp-Breach Monolith may take one of the following Ætheric Dominion Enhancements:** |  |
+| – Blood-Slicked Foundation | +20 points |
+| – Festering Contagion | +20 points |
+| – Warp-Storm Conduit | +25 points |
+| – Cacophony of Excess | +15 points |
+| – Reality-Fracture Anchor | +25 points |
+| – Soul-Forge Furnace | +25 points |
+| – Shifting Nightmare | +20 points |
+| – Beacon of Undivided Chaos | +30 points |
+
+
+### Altar of Brass & Skulls — 110 pts
+
+*A blood-slicked dais of fused skulls and iron chains, built to channel the furious slaughter of the Heedless Slaughter Dominion.*
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Altar of Brass & Skulls | – | – | 12 | 12 | 12 | 4 | 10 (Battlements) | No base |
+
+**Unit Composition**
+
+- 1 Altar of Brass & Skulls
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Daemonic Fortification
+- Fearless
+- Open-Topped Battlements: counts as Open-Topped Battlements granting a 4+ Cover Save to models occupying it
+- Tribute of Blood: whenever an enemy unit is completely destroyed in the Assault phase within 12" of this Fortification, place a Blood Token on the Altar (to a maximum of 3). Friendly Daemons of the Ruinstorm units within 12" of the Altar add +1 to their Charge distance rolls while the Altar has at least 1 Blood Token, and gain Rage (2) while it has 3 Blood Tokens
+- Witch-Bane Aura: enemy models with the Psyker unit sub-type within 18" of this Fortification suffer a -2 penalty to all Psychic Checks. In addition, if an enemy Psyker fails a Psychic Check within 18", they suffer Perils of the Warp on any double, rather than just double 1s or double 6s
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Altar of Brass & Skulls may take one of the following Ætheric Dominion Enhancements:** |  |
+| – Blood-Slicked Foundation | +20 points |
+| – Festering Contagion | +20 points |
+| – Warp-Storm Conduit | +25 points |
+| – Cacophony of Excess | +15 points |
+| – Reality-Fracture Anchor | +25 points |
+| – Soul-Forge Furnace | +25 points |
+| – Shifting Nightmare | +20 points |
+| – Beacon of Undivided Chaos | +30 points |
+
+
+### Feculent Gnarlmaw — 75 pts
+
+*A bloated, bell-hung horror of twisted bark and weeping pustules that sprouts violently from corrupted earth, choking the air with miasmic spores.*
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Feculent Gnarlmaw | – | – | 11 | 11 | 11 | 3 | – (Area Terrain) | No base |
+
+**Unit Composition**
+
+- 1 Feculent Gnarlmaw
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Daemonic Fortification
+- Fearless
+- Shrouded (6+)
+- Gnarlmaw Cover: models within 3" of the trunk gain a 5+ Cover Save
+- Infiltrate: unlike standard Fortifications, a Feculent Gnarlmaw may be deployed using the Infiltrate special rule anywhere outside the enemy Deployment Zone and at least 12" away from enemy units
+- Spore Miasma: friendly Daemons of the Ruinstorm units within 6" of a Feculent Gnarlmaw gain Feel No Pain (6+) (or improve an existing Feel No Pain roll by +1, to a maximum of 4+)
+- Choking Rot: enemy non-Vehicle, non-Daemon units that end a Movement phase within 6" of a Feculent Gnarlmaw must take a Toughness test; for each failed test, the unit suffers 1 Wound with no Armour or Cover saves allowed
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Feculent Gnarlmaw may take one of the following Ætheric Dominion Enhancements:** |  |
+| – Blood-Slicked Foundation | +20 points |
+| – Festering Contagion | +20 points |
+| – Warp-Storm Conduit | +25 points |
+| – Cacophony of Excess | +15 points |
+| – Reality-Fracture Anchor | +25 points |
+| – Soul-Forge Furnace | +25 points |
+| – Shifting Nightmare | +20 points |
+| – Beacon of Undivided Chaos | +30 points |
+
+
+### Warp-Lightning Spire — 135 pts
+
+*A crystalline pillar of shifting prism-stone and screaming faces that hurls raw ætheric discharges across the battlefield.*
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Warp-Lightning Spire | – | 3 | 12 | 12 | 12 | 4 | – (Impassable) | No base |
+
+**Unit Composition**
+
+- 1 Warp-Lightning Spire
+
+**Wargear**
+
+- Ætheric Arc-Projector
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Daemonic Fortification
+- Fearless
+- Automated Fire: during your Shooting phase, if this Fortification is not controlled by a friendly Psyker, its Ætheric Arc-Projector automatically fires at the nearest visible enemy unit within range (using BS 3, with a 360° line of sight). If a friendly Daemon Psyker is within 3" of the Spire, the Psyker may direct its fire using their own Ballistic Skill and choose any legal target
+- Locus of Change: friendly Daemons of the Ruinstorm Psykers within 12" of this Fortification gain +1 to their Leadership when taking Psychic Checks and add +6" to the range of any Psychic Weapons they fire
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Warp-Lightning Spire may take one of the following Ætheric Dominion Enhancements:** |  |
+| – Blood-Slicked Foundation | +20 points |
+| – Festering Contagion | +20 points |
+| – Warp-Storm Conduit | +25 points |
+| – Cacophony of Excess | +15 points |
+| – Reality-Fracture Anchor | +25 points |
+| – Soul-Forge Furnace | +25 points |
+| – Shifting Nightmare | +20 points |
+| – Beacon of Undivided Chaos | +30 points |
+
+
+## Daemonic Fortification Wargear
+
+The Ætheric Dominion Enhancements. A Daemonic Fortification may take one, and only one matching its Detachment's Ætheric Dominion.
+
+### Blood-Slicked Foundation
+
+*Heedless Slaughter enhancement.*
+
+Enemy units within 12" of this Fortification cannot make Hold the Line or Withdraw Reactions during the Assault phase. In addition, friendly Heedless Slaughter units within 12" gain Hatred (Everything) during the first round of any Assault.
+
+### Festering Contagion
+
+*Putrid Corruption enhancement.*
+
+The ground within 6" of this Fortification counts as Dangerous Terrain for all non-Daemon units. In addition, enemy units within 6" suffer a -1 penalty to their Toughness characteristic (to a minimum of 1) against all attacks made by friendly Putrid Corruption models.
+
+### Warp-Storm Conduit
+
+*Infernal Tempest enhancement.*
+
+At the start of your Shooting phase, roll a D6 for each enemy unit within 12" of this Fortification. On a 4+, that unit suffers D3 Strength 4 AP 4 hits with the Pinning and Blind special rules. In addition, friendly Infernal Tempest units within 12" gain a 5+ Invulnerable Save against Shooting attacks (or improve an existing Invulnerable Save by +1, to a maximum of 4+).
+
+### Cacophony of Excess
+
+*Rapturous Sensation enhancement.*
+
+Enemy units within 12" of this Fortification suffer a -1 penalty to their Leadership characteristic for all Morale, Pinning, and Fear checks. Friendly Rapturous Sensation units within 12" add +1 to their Initiative characteristic during the Assault phase.
+
+### Reality-Fracture Anchor
+
+*Encroaching Ruin enhancement.*
+
+During deployment, this Fortification may be placed anywhere on the battlefield outside the enemy Deployment Zone and at least 9" away from enemy units. Friendly Encroaching Ruin units within 12" gain Shrouded (5+) and count as being in Cover (4+) even when in the open.
+
+### Soul-Forge Furnace
+
+*Malevolent Artifice enhancement.*
+
+Friendly Malevolent Artifice models with the Daemon Engine or Brute sub-type within 12" of this Fortification add +1 to their Strength characteristic in the Assault phase and restore 1 lost Hull Point or Wound at the start of each friendly turn on a D6 roll of 4+.
+
+### Shifting Nightmare
+
+*Formless Distortion enhancement.*
+
+At the start of each friendly Movement phase, you may remove this Fortification from the battlefield and immediately place it anywhere within 12" of its previous position (at least 1" away from enemy models and impassable terrain). Any enemy unit within 6" of its new position must immediately take a Pinning test at -1 Leadership.
+
+### Beacon of Undivided Chaos
+
+*Ravenous Dissolution enhancement (written as Primordial Annihilator, which is not an Ætheric Dominion).*
+
+This Fortification radiates a 12" Locus of Chaos: friendly Daemons of the Ruinstorm units of any Ætheric Dominion within 12" may re-roll failed Daemonic Instability tests and gain Hatred (Everything) while locked in Assault within 12" of this Fortification.
+
 ## Armoury
 
 ### Ranged Weapons
@@ -691,6 +920,7 @@ Projected from the shifting forms of Warp-Spawn and Cataclysm Brutes. If a model
 | Bile-Spore Censer | 12" | 4 | 3 | Assault 2, Poisoned (2+), Precision Shots (4+), Ignores Cover |
 | Conduit of Change | 24" | 6 | 2 | Assault 3, Psychic Weapon, Precision Shots (2+), Soul Blaze |
 | Aether-Injector Lance | 18" | 7 | 2 | Assault 2, Haywire, Precision Shots (4+) |
+| Ætheric Arc-Projector | 36" | 7 | 3 | Heavy 3, Pinning, Shock Pulse, Rending (5+) |
 
 ### Melee Weapons
 

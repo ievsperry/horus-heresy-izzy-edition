@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="37" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="38" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -1265,6 +1265,48 @@
         <categoryLink targetId="36c3-e85e-97cc-c503" id="0ad8-0a3d-c840-b0c4" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Capillary Tower" hidden="false" id="304d-7048-765e-4146" type="selectionEntry" targetId="e1ba-c642-d668-6f56">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="3c7e-4bd3-8840-5f4f" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="ab25-970d-3b3c-0159" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Sporocyst Bio-Fortification" hidden="false" id="23cd-ce79-3dc4-b578" type="selectionEntry" targetId="21b5-2b82-49f3-6a33">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="6139-ea3c-0a8d-e8a5" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="caab-0ff0-dd82-e3b7" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Brood Nest" hidden="false" id="2c1e-b198-8bfd-ad12" type="selectionEntry" targetId="fce8-81f4-3f7f-3779">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="8a13-0410-b85c-f8f0" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="e940-5b33-bb48-342e" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Bio-Plasma Bastion" hidden="false" id="2a4d-6e0c-0421-bb04" type="selectionEntry" targetId="4885-3877-55e1-23bd">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="b321-8e9e-1ac8-8b2b" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="d61e-c91f-b9cc-92e4" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Spore-Vent Cluster" hidden="false" id="fab6-a3b3-4509-aaf1" type="selectionEntry" targetId="1920-6809-12fd-b9bd">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="03f6-51a4-f8f0-11b7" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="c14c-ee80-2475-0b66" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tunnel-Node Cluster" hidden="false" id="373d-6aa4-db0d-68ce" type="selectionEntry" targetId="df35-26b3-d988-ee05">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="f4ea-75de-66ef-ca29" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="500d-8711-2e2f-1d09" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Capillary Spire Cluster" hidden="false" id="46fb-7290-e40d-f519" type="selectionEntry" targetId="63e9-c786-bea7-ed30">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="5378-9b7f-4fa5-fa48" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="8009-c0a3-65c1-631c" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Genestealers" hidden="true" id="bd5a-2c2a-8839-7f9e" type="selectionEntry" targetId="efed-500e-b4c5-4e79">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -2346,6 +2388,21 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deathspitter bio-cannon" hidden="false" id="7e63-f7b4-5c2a-c713" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Deathspitter bio-cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4d23-cf76-4797-52b1" publicationId="7478-cf16-4f88-170b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pinning" id="f2f0-03ee-fc87-25ad" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Devourer" hidden="false" id="32a9-34fe-5362-e9c5" publicationId="7478-cf16-4f88-170b">
       <profiles>
         <profile name="Devourer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="56ab-e1df-ee59-e3e9" publicationId="7478-cf16-4f88-170b">
@@ -2558,6 +2615,31 @@
             <modifier type="set" field="name" value="Large Blast (5&quot;)" />
           </modifiers>
         </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy bio-plasma cannon" hidden="false" id="cc2a-c2a9-9bf4-36fd" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Heavy bio-plasma cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ca98-f329-349d-e8fc" publicationId="7478-cf16-4f88-170b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Brutal (2), Gets Hot</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="5094-2bee-7bd9-874b" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Blast (3&quot;)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Brutal (X)" id="97c1-1c6d-657f-2fd4" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Gets Hot" id="2ec9-8abf-dcfa-ec04" hidden="false" targetId="679f-9d97-5ace-a652" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bio-plasmic scream" hidden="false" id="9d06-1374-67f1-8953" publicationId="7478-cf16-4f88-170b">
@@ -2913,6 +2995,168 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Seismic Tremor-Roots" hidden="false" id="fcaf-ff30-b292-b925" publicationId="7478-cf16-4f88-170b">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="80f9-0e6a-e0a1-6cd6" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="4b52-35eb-2bf2-059e" value="1">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="80f9-0e6a-e0a1-6cd6" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4b52-35eb-2bf2-059e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      </constraints>
+      <profiles>
+        <profile name="Seismic Tremor-Roots" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d777-497c-5233-1c6a">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Enemy units within 12" of this Fortification suffer a -2 penalty to Charge distance rolls. Friendly Behemoth units within 12" gain Furious Charge (1) (or improve an existing Furious Charge (X) rule by +1).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pheromone Trail Beacon" hidden="false" id="514e-1eb4-a46d-6428" publicationId="7478-cf16-4f88-170b">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="90c5-2465-d473-3cad" value="1">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="27c5-d821-88be-498d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="90c5-2465-d473-3cad" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      </constraints>
+      <profiles>
+        <profile name="Pheromone Trail Beacon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="c964-3f6d-cd48-18ad">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Friendly Kraken units within 12" of this Fortification gain Fleet (2) and add +1" to their Run moves. In addition, enemy units within 12" cannot make Withdraw Reactions during the Assault phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dominion Synapse Node" hidden="false" id="42d7-ab3d-53dd-ca60" publicationId="7478-cf16-4f88-170b">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="7885-a4bb-490d-8a74" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="a54e-8b6b-953a-e560" value="1">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7885-a4bb-490d-8a74" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a54e-8b6b-953a-e560" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      </constraints>
+      <profiles>
+        <profile name="Dominion Synapse Node" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="928d-3d8f-34d8-e9e3">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Increases the Fortification's Synaptic Relay range to 24" (or grants Synaptic Relay (18") if it does not already have it). Friendly Leviathan units within 12" gain Stubborn even if cut off from Synapse, and may re-roll failed Feel No Pain rolls of 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shadow in the Warp Emitter" hidden="false" id="84d5-7e1a-e039-ae72" publicationId="7478-cf16-4f88-170b">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="846c-21b6-826f-827e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="2aaa-26a3-c764-4901" value="1">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="846c-21b6-826f-827e" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2aaa-26a3-c764-4901" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      </constraints>
+      <profiles>
+        <profile name="Shadow in the Warp Emitter" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b051-2e4d-12b4-e481">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Enemy models with the Psyker unit sub-type within 24" of this Fortification suffer a -2 penalty to all Psychic Checks and Deny the Witch rolls. Any enemy Psyker that fails a Psychic Check within 24" automatically suffers Perils of the Warp.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chitinous Tunnel-Network" hidden="false" id="9de6-6896-4608-99f0" publicationId="7478-cf16-4f88-170b">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="af3f-8679-cae4-9fc7" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="4c5b-5ea8-cb09-571e" value="1">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="af3f-8679-cae4-9fc7" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4c5b-5ea8-cb09-571e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      </constraints>
+      <profiles>
+        <profile name="Chitinous Tunnel-Network" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="2c8d-3097-89ef-97fc">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Friendly Jormungandr Infantry units within 12" of this Fortification gain Shrouded (5+) if they did not Run or Charge in their previous turn. In addition, enemy units within 12" cannot make Interceptor Reactions against Jormungandr units arriving from Reserves within 12" of this Fortification.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Endless Brood-Vats" hidden="false" id="290c-8d06-58a3-1d04" publicationId="7478-cf16-4f88-170b">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="94e4-6938-4973-d62d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+        <modifier type="set" field="8100-e197-a1e4-6445" value="1">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="94e4-6938-4973-d62d" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8100-e197-a1e4-6445" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      </constraints>
+      <profiles>
+        <profile name="Endless Brood-Vats" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="269d-3c2c-c136-0abb">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of each friendly Movement phase, select one friendly Hydra Infantry unit with the Swarm or Line sub-type within 12" of this Fortification; that unit immediately restores D3+1 lost models (up to its starting unit size, placed in coherency).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Subterranean Eruption" hidden="false" id="22b8-6aa3-ed36-d9ec" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Subterranean Eruption" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="bd02-07bf-7307-0f60">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">All Capillary Spires in the unit gain the Infiltrate special rule, allowing them to deploy anywhere outside the enemy Deployment Zone and at least 12" away from enemy units (while still deploying within 6" of at least one other Spire in the unit).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spore-Seeded Drop" hidden="false" id="ebc2-b0e3-9c29-fffd" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Spore-Seeded Drop" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="0b26-6164-284c-d02a">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Instead of deploying on the battlefield, the Capillary Spire Cluster may be held in Reserves and arrive via Deep Strike (treat the cluster as a single unit for Deep Strike deployment; once the first Spire is placed, all remaining Spires in the unit must be placed within 6" of at least one other Spire in the cluster and at least 1" away from enemy models).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Adrenal Glands" hidden="false" id="d4e9-99f8-c287-dcd9" publicationId="7478-cf16-4f88-170b">
       <profiles>
@@ -19751,6 +19995,857 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="450" />
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Capillary Tower" hidden="false" id="e1ba-c642-d668-6f56" publicationId="7478-cf16-4f88-170b">
+      <rules>
+        <rule name="Synaptic Relay (18&quot;)" id="56b3-e63b-7586-8e7c" hidden="false">
+          <description>This Fortification counts as a Synapse Creature with an 18" range for all friendly Tyranid units</description>
+        </rule>
+        <rule name="Reclamation Spore-Mist" id="0bab-7254-0ec8-30d2" hidden="false">
+          <description>Friendly Tyranid units within 12" of this Fortification gain Feel No Pain (6+) (or improve an existing Feel No Pain (X) special rule by +1, to a maximum of 4+)</description>
+        </rule>
+        <rule name="Acidic Rupture" id="1758-c24b-0f1e-8fbb" hidden="false">
+          <description>If this Fortification is reduced to 0 Hull Points, do not roll on the Building Damage table. Instead, roll 2D6 to determine the radius of the rupture in inches. Every non-Tyranid unit within that distance suffers D6 Strength 5 AP 4 hits with the Ignores Cover and Fleshbane special rules before the model is removed</description>
+        </rule>
+        <rule name="Note" id="d09b-2dd6-85f6-1430" hidden="false">
+          <description>A towering spire of ribbed chitin and pulsing vascular tendrils that pumps digestive enzymes into the atmosphere and anchors the Hive Mind's synaptic web.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="7688-fe11-7733-9b8b" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bio-Construct" id="d428-d835-f059-81c3" hidden="false" targetId="ff50-9c4c-b6d3-11e9" type="rule" />
+        <infoLink name="Fearless" id="cbd5-aa99-d809-ac45" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="b71f-6c79-0962-4543" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Capillary Tower" hidden="false" id="4ff2-7820-b0e9-579b" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5cf-af55-5cb1-ccff" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35fc-bf01-bc4f-5dfc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Capillary Tower" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="516a-ec15-0c8f-a206" publicationId="7478-cf16-4f88-170b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">–</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="cc56-ebf3-f2a7-6f20">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc51-fc14-f0dd-61cb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Seismic Tremor-Roots" hidden="false" id="04c7-0fa6-3d54-dc7d" type="selectionEntry" targetId="fcaf-ff30-b292-b925">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86cc-794a-cb0b-4b51" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Pheromone Trail Beacon" hidden="false" id="41c5-7541-d4a1-b8fe" type="selectionEntry" targetId="514e-1eb4-a46d-6428">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7701-8bc4-2958-7718" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Dominion Synapse Node" hidden="false" id="f208-35d6-6b2a-1968" type="selectionEntry" targetId="42d7-ab3d-53dd-ca60">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec10-f3bd-a933-b733" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Shadow in the Warp Emitter" hidden="false" id="1ede-08f2-3524-d580" type="selectionEntry" targetId="84d5-7e1a-e039-ae72">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="858b-de58-e591-0afe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Chitinous Tunnel-Network" hidden="false" id="6da0-daaf-c11d-ae3b" type="selectionEntry" targetId="9de6-6896-4608-99f0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1299-c7d0-c77d-ef4d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Endless Brood-Vats" hidden="false" id="8ffa-54d5-bd97-f83b" type="selectionEntry" targetId="290c-8d06-58a3-1d04">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b36-0960-547c-63fe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="90" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sporocyst Bio-Fortification" hidden="false" id="21b5-2b82-49f3-6a33" publicationId="7478-cf16-4f88-170b">
+      <rules>
+        <rule name="Automated Fire" id="eb98-f140-a8c5-7fec" hidden="false">
+          <description>Its weapons fire with BS 3 and a 360° line of sight</description>
+        </rule>
+        <rule name="Infiltrate" id="64fc-6ccb-0c3f-6c21" hidden="false">
+          <description>Unlike standard Fortifications, it may be deployed using the Infiltrate special rule anywhere outside the enemy Deployment Zone and at least 12" away from enemy units</description>
+        </rule>
+        <rule name="Automated Bio-Defence" id="8c5a-889d-b3b2-18d3" hidden="false">
+          <description>During your Shooting phase, it automatically fires all five deathspitter bio-cannons at the nearest visible enemy unit within range (using BS 3). It may split its fire between up to two different visible enemy units within 24"</description>
+        </rule>
+        <rule name="Spore Seeding" id="b7ad-947d-dd72-3b35" hidden="false">
+          <description>At the start of each friendly Movement phase, if this Fortification is not within 3" of an enemy unit, you may place 1 Spore Mine model (or add 1 model to an existing friendly Spore Mine cluster within 6") completely within 6" of it and at least 1" away from enemy models</description>
+        </rule>
+        <rule name="Note" id="edeb-f3fa-6627-3eb3" hidden="false">
+          <description>A bloated, semi-buried brood-cyst that drifts down from orbit like a living meteor, belching toxic spores and incubating gestation sacs across the battlefield.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="a49c-5c18-d2df-c1be" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bio-Construct" id="85e4-9356-2d42-064b" hidden="false" targetId="ff50-9c4c-b6d3-11e9" type="rule" />
+        <infoLink name="Fearless" id="090a-1f48-1bbd-4839" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="e15d-ca9c-a948-f00f" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Sporocyst Bio-Fortification" hidden="false" id="730d-7296-c90f-029d" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a17-46ec-2342-730b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43b5-289d-a440-ef5b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Sporocyst Bio-Fortification" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="bcbe-5a7e-c991-0b26" publicationId="7478-cf16-4f88-170b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="1ee5-f104-7cbe-6a12">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c298-c910-4cec-615a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Seismic Tremor-Roots" hidden="false" id="396d-98f5-93b4-6a89" type="selectionEntry" targetId="fcaf-ff30-b292-b925">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6fd-9a5a-c724-8ecb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Pheromone Trail Beacon" hidden="false" id="f4f1-cd42-98a2-5d81" type="selectionEntry" targetId="514e-1eb4-a46d-6428">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2300-3c57-3160-55e0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Dominion Synapse Node" hidden="false" id="b2ee-abe4-a080-2a62" type="selectionEntry" targetId="42d7-ab3d-53dd-ca60">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f546-6e2e-4679-281b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Shadow in the Warp Emitter" hidden="false" id="04ec-3356-839c-a108" type="selectionEntry" targetId="84d5-7e1a-e039-ae72">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34f3-0fb0-fd5b-0c23" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Chitinous Tunnel-Network" hidden="false" id="166f-c7f2-d3fd-c517" type="selectionEntry" targetId="9de6-6896-4608-99f0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea99-a128-ecea-1c77" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Endless Brood-Vats" hidden="false" id="a480-020a-a7ae-7eb0" type="selectionEntry" targetId="290c-8d06-58a3-1d04">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce82-32bc-dfe0-06e9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Deathspitter bio-cannon" hidden="false" id="bf7e-e5e4-d4f5-f50f" type="selectionEntry" targetId="7e63-f7b4-5c2a-c713">
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="15d3-4dbb-60d0-07d5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="ba2b-e0a8-d5c9-27e2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Brood Nest" hidden="false" id="fce8-81f4-3f7f-3779" publicationId="7478-cf16-4f88-170b">
+      <rules>
+        <rule name="Nest Cover" id="bd0b-1237-1c64-97cf" hidden="false">
+          <description>Counts as Area Terrain granting a 5+ Cover Save to friendly Tyranid Infantry models within 3"</description>
+        </rule>
+        <rule name="Infiltrate" id="acd9-01e5-99dc-7c3f" hidden="false">
+          <description>A Brood Nest may be deployed using the Infiltrate special rule anywhere outside the enemy Deployment Zone and at least 12" away from enemy units</description>
+        </rule>
+        <rule name="Subterranean Conduit" id="7888-ce40-b437-3a3a" hidden="false">
+          <description>Friendly Tyranid units arriving from Reserves (including units using Outflank, but excluding units arriving via Deep Strike or units with the Flyer sub-type) may treat the Brood Nest as a friendly Battlefield Edge for the purpose of entering play. When deploying from Reserves via this rule, models move onto the battlefield measuring their movement distance directly from any point along the perimeter of the Brood Nest's base or terrain footprint, following all standard Reserves movement and coherency rules</description>
+        </rule>
+        <rule name="Note" id="d707-0786-6587-f983" hidden="false">
+          <description>A subterranean network of mucus-lined tunnels and chitinous sphincter-vents from which vanguard organisms erupt behind enemy lines. Also called an Infestation Node.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="c6a6-8d03-10d8-7d7f" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bio-Construct" id="f01b-1702-3f1b-0bfc" hidden="false" targetId="ff50-9c4c-b6d3-11e9" type="rule" />
+        <infoLink name="Fearless" id="2c09-6a6b-a155-9316" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
+        <infoLink name="Shrouded (X)" id="c8cd-1ebe-d1e6-8cbc" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shrouded (6+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="cab7-e6de-7110-0967" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Brood Nest" hidden="false" id="4827-9c86-9194-8ebb" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d60-c029-4018-9836" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e442-8ea0-76a6-d1b0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Brood Nest" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="e333-2cbf-d4a9-7da9" publicationId="7478-cf16-4f88-170b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">–</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Area Terrain)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="74a6-45e9-b796-7046">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a5d-0910-61a7-1d73" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Seismic Tremor-Roots" hidden="false" id="183b-f586-8b31-bf97" type="selectionEntry" targetId="fcaf-ff30-b292-b925">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ec2-dbca-66be-05f4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Pheromone Trail Beacon" hidden="false" id="53a0-2993-224e-3c3b" type="selectionEntry" targetId="514e-1eb4-a46d-6428">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f533-02a7-9956-31b9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Dominion Synapse Node" hidden="false" id="b17f-e3e2-b238-1d3a" type="selectionEntry" targetId="42d7-ab3d-53dd-ca60">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6801-f15c-0f42-4ca9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Shadow in the Warp Emitter" hidden="false" id="0447-57d4-17e8-4565" type="selectionEntry" targetId="84d5-7e1a-e039-ae72">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0da4-51af-2e08-9c28" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Chitinous Tunnel-Network" hidden="false" id="a257-25d0-5527-c1a9" type="selectionEntry" targetId="9de6-6896-4608-99f0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86dc-141e-9adc-9776" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Endless Brood-Vats" hidden="false" id="6783-d38b-773b-babe" type="selectionEntry" targetId="290c-8d06-58a3-1d04">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a79-4245-0b05-2da7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bio-Plasma Bastion" hidden="false" id="4885-3877-55e1-23bd" publicationId="7478-cf16-4f88-170b">
+      <rules>
+        <rule name="Automated Fire" id="d6d4-112b-04b1-bddd" hidden="false">
+          <description>Its heavy bio-plasma cannon fires with BS 3 and a 360° line of sight</description>
+        </rule>
+        <rule name="Carapace Ramparts" id="b89c-918b-80a3-555a" hidden="false">
+          <description>Counts as Open-Topped Battlements granting a 4+ Cover Save to Infantry models occupying it</description>
+        </rule>
+        <rule name="Symbiotic Gunner" id="2a9e-4124-106b-28e3" hidden="false">
+          <description>During your Shooting phase, if the Bastion is occupied by a friendly Tyranid Infantry unit, one model in that unit may fire the heavy bio-plasma cannon using its own Ballistic Skill instead of shooting its own weapon. If unoccupied, the cannon fires automatically at the nearest visible enemy unit using BS 3</description>
+        </rule>
+        <rule name="Reinforced Chitin" id="e255-54b9-4f4d-6d21" hidden="false">
+          <description>Enemy attacks targeting this Fortification do not gain extra armour penetration dice from the Melta special rule unless fired from within half range (6" or less)</description>
+        </rule>
+        <rule name="Note" id="e6b1-bf80-4104-3ebe" hidden="false">
+          <description>A massive, heavily armoured carapace-redoubt crowned with a pulsing bio-plasma sphincter capable of melting battle tanks into slag.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="a1b0-fad4-037d-11e8" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bio-Construct" id="92df-07cc-8a96-2d07" hidden="false" targetId="ff50-9c4c-b6d3-11e9" type="rule" />
+        <infoLink name="Fearless" id="04d4-2730-bdca-525f" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="a2af-77cc-e2a3-d14d" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Bio-Plasma Bastion" hidden="false" id="dd84-e14f-e335-e0cb" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41f4-55cd-561c-5288" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d28-92f0-1776-e697" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Bio-Plasma Bastion" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="c0a1-004d-f555-dad5" publicationId="7478-cf16-4f88-170b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">10 (Carapace Ramparts)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="48b0-b23a-3be4-549d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="583f-b232-73c4-098a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Seismic Tremor-Roots" hidden="false" id="f758-57e3-e1f1-5cce" type="selectionEntry" targetId="fcaf-ff30-b292-b925">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8c9-c99c-e46d-e12d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Pheromone Trail Beacon" hidden="false" id="454d-1598-e776-18d6" type="selectionEntry" targetId="514e-1eb4-a46d-6428">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9aab-e64b-9a5f-d0d2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Dominion Synapse Node" hidden="false" id="3235-1aca-44dc-1f48" type="selectionEntry" targetId="42d7-ab3d-53dd-ca60">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79a8-1348-b8a9-c256" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Shadow in the Warp Emitter" hidden="false" id="7236-4ef5-84cc-0c5b" type="selectionEntry" targetId="84d5-7e1a-e039-ae72">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9d7-c104-dead-f814" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Chitinous Tunnel-Network" hidden="false" id="e3db-07b6-ea1e-0277" type="selectionEntry" targetId="9de6-6896-4608-99f0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18ba-bb49-1541-0d10" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Endless Brood-Vats" hidden="false" id="d976-c963-f17f-5b3a" type="selectionEntry" targetId="290c-8d06-58a3-1d04">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d15f-f728-b919-2ae1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Heavy bio-plasma cannon" hidden="false" id="c3db-498e-a59e-7cfb" type="selectionEntry" targetId="cc2a-c2a9-9bf4-36fd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b9dd-68b6-6683-a662" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8195-ab7f-3f80-2ac4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="130" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Spore-Vent Cluster" hidden="false" id="1920-6809-12fd-b9bd" publicationId="7478-cf16-4f88-170b">
+      <rules>
+        <rule name="Automated Fire" id="f6c2-c037-766f-30a7" hidden="false">
+          <description>Its weapons fire with BS 3 and a 360° line of sight</description>
+        </rule>
+        <rule name="Cluster Deployment" id="30e2-0995-8f74-28ba" hidden="false">
+          <description>Each Spore-Vent must be deployed within 6" of at least one other Spore-Vent in the unit during the Fortifications deployment step</description>
+        </rule>
+        <rule name="Infiltrate" id="35f3-9d42-edad-f1c6" hidden="false">
+          <description>May be deployed anywhere outside the enemy Deployment Zone and at least 12" away from enemy units</description>
+        </rule>
+        <rule name="Automated Bio-Defence" id="841a-75bc-e1bb-feb7" hidden="false">
+          <description>During your Shooting phase, each Spore-Vent automatically fires its deathspitter bio-cannons at the nearest visible enemy unit within range (using BS 3)</description>
+        </rule>
+        <rule name="Cluster Spore-Seeding" id="cb8a-291e-f35d-a801" hidden="false">
+          <description>At the start of each friendly Movement phase, roll a D6 for each Spore-Vent not within 3" of an enemy unit. On a 4+, place 1 Spore Mine model (or add 1 model to an existing friendly Spore Mine cluster within 6") completely within 6" of that Spore-Vent and at least 1" away from enemy models</description>
+        </rule>
+        <rule name="Note" id="c2a0-20ae-0d18-19f4" hidden="false">
+          <description>Smaller, low-profile gestation nodules that erupt from the soil in clusters, spitting toxic bio-plasma and seeding drifting spore-mines across contested ground.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="e6ee-f468-d5d6-452f" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bio-Construct" id="1e3b-b163-8089-e6e6" hidden="false" targetId="ff50-9c4c-b6d3-11e9" type="rule" />
+        <infoLink name="Fearless" id="07ab-d405-405f-05a7" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="0bbd-d784-ba55-1ffb" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Spore-Vent" hidden="false" id="dff1-96a4-2eb9-ba7b" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="13d8-f6f0-7a4a-17e3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b3c8-3e8c-8dbf-17e9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Spore-Vent" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="d57b-3fdd-55e6-da85" publicationId="7478-cf16-4f88-170b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">9</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">9</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">9</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Deathspitter bio-cannon" hidden="false" id="e3f7-30ec-7e00-24cd" type="selectionEntry" targetId="7e63-f7b4-5c2a-c713">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1332-8d91-24bc-fe94" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c248-890e-c76b-76e4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="f894-603c-d226-b507">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4ef-a9a4-36aa-b056" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Seismic Tremor-Roots" hidden="false" id="0713-006b-c320-b4c4" type="selectionEntry" targetId="fcaf-ff30-b292-b925">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0e9-1932-d25f-6b8e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Pheromone Trail Beacon" hidden="false" id="79d1-8333-f523-6559" type="selectionEntry" targetId="514e-1eb4-a46d-6428">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eabd-9e2a-4c24-7b1f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Dominion Synapse Node" hidden="false" id="5bc8-7587-bcaf-31f8" type="selectionEntry" targetId="42d7-ab3d-53dd-ca60">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee0c-84cb-dd51-3dda" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Shadow in the Warp Emitter" hidden="false" id="e305-32f2-cf7a-ed61" type="selectionEntry" targetId="84d5-7e1a-e039-ae72">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4787-c923-68d7-1d09" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Chitinous Tunnel-Network" hidden="false" id="2226-fedf-4f2e-bc9a" type="selectionEntry" targetId="9de6-6896-4608-99f0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="689a-a512-c4ca-96f3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Endless Brood-Vats" hidden="false" id="1451-a5f0-6e06-b03e" type="selectionEntry" targetId="290c-8d06-58a3-1d04">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28a3-f9ff-fc4a-ea60" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tunnel-Node Cluster" hidden="false" id="df35-26b3-d988-ee05" publicationId="7478-cf16-4f88-170b">
+      <rules>
+        <rule name="Cluster Deployment" id="8fda-a74b-b217-784f" hidden="false">
+          <description>Each Tunnel-Node must be deployed within 6" of at least one other Tunnel-Node in the unit during the Fortifications deployment step</description>
+        </rule>
+        <rule name="Node Cover" id="93af-fe62-3139-8755" hidden="false">
+          <description>Counts as Area Terrain granting a 6+ Cover Save to friendly Tyranid Infantry models within 3"</description>
+        </rule>
+        <rule name="Infiltrate" id="2451-3e97-ed90-941c" hidden="false">
+          <description>May be deployed anywhere outside the enemy Deployment Zone and at least 12" away from enemy units</description>
+        </rule>
+        <rule name="Vanguard Conduit" id="41c6-c3e6-784a-ef76" hidden="false">
+          <description>Friendly Tyranid Infantry units (excluding units with Bulky (3+)) arriving from Reserves may treat any surviving Tunnel-Node as a friendly Battlefield Edge for the purpose of entering play, measuring their movement distance directly from any point along the perimeter of that Tunnel-Node's base</description>
+        </rule>
+        <rule name="Note" id="8d5d-0e65-869a-4774" hidden="false">
+          <description>A network of smaller chitinous sphincter-vents connected by shallow subterranean burrows, allowing vanguard broods to pop up across multiple flanking angles.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="4e58-5586-0e70-cb1d" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bio-Construct" id="e400-1032-6af2-4feb" hidden="false" targetId="ff50-9c4c-b6d3-11e9" type="rule" />
+        <infoLink name="Fearless" id="c2f2-72b6-50b1-80cb" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="8f45-7f19-8ccd-a1a7" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tunnel-Node" hidden="false" id="cc08-d1b8-285b-a535" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="566c-ba8e-1e6a-e922" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="afc6-bf8f-bc54-6563" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Tunnel-Node" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="15cd-06c5-de21-ec3a" publicationId="7478-cf16-4f88-170b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">–</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">9</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">9</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">9</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Area Terrain)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="9277-d2af-9cd7-ee80">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de71-8d96-ba54-d7e6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Seismic Tremor-Roots" hidden="false" id="533c-5fd7-eeb0-8e20" type="selectionEntry" targetId="fcaf-ff30-b292-b925">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7b3-a455-fcd9-c1ce" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Pheromone Trail Beacon" hidden="false" id="35e9-88d5-5027-8e5b" type="selectionEntry" targetId="514e-1eb4-a46d-6428">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a57-61ea-96b7-641c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Dominion Synapse Node" hidden="false" id="12be-60af-eb90-8294" type="selectionEntry" targetId="42d7-ab3d-53dd-ca60">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fafe-7668-aa0c-ce7a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Shadow in the Warp Emitter" hidden="false" id="da22-e2a9-f8a6-7fa6" type="selectionEntry" targetId="84d5-7e1a-e039-ae72">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="333c-bea3-736d-5854" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Chitinous Tunnel-Network" hidden="false" id="edf1-9b66-31fa-dad5" type="selectionEntry" targetId="9de6-6896-4608-99f0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d896-736b-6061-cb09" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Endless Brood-Vats" hidden="false" id="e9c3-8b49-3543-c645" type="selectionEntry" targetId="290c-8d06-58a3-1d04">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aea9-d3bb-8ae7-f98d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Capillary Spire Cluster" hidden="false" id="63e9-c786-bea7-ed30" publicationId="7478-cf16-4f88-170b">
+      <rules>
+        <rule name="Cluster Deployment" id="9081-c5f1-5e30-4eb2" hidden="false">
+          <description>Unlike standard Fortifications, all Capillary Spires in the unit must be deployed within 6" of at least one other Spire in the unit during the Fortifications deployment step (they do not need to remain in coherency if models are destroyed)</description>
+        </rule>
+        <rule name="Synaptic Relay (12&quot;)" id="8c5c-feaf-10b6-18c5" hidden="false">
+          <description>Each Capillary Spire counts as a Synapse Creature with a 12" range for all friendly Tyranid units</description>
+        </rule>
+        <rule name="Localized Spore-Mist" id="97b5-d7d5-64a5-0a0a" hidden="false">
+          <description>Friendly Tyranid units within 6" of one or more Capillary Spires gain Feel No Pain (6+) (this does not stack with other Capillary Spires, though it improves an existing Feel No Pain (X) special rule by +1, to a maximum of 5+)</description>
+        </rule>
+        <rule name="Minor Acidic Rupture" id="01e7-b308-f05f-2338" hidden="false">
+          <description>If a Capillary Spire is reduced to 0 Hull Points, do not roll on the Building Damage table. Instead, roll 1D6 to determine the radius of the rupture in inches. Every non-Tyranid unit within that distance suffers D3 Strength 4 AP 5 hits with the Ignores Cover and Fleshbane special rules before the model is removed</description>
+        </rule>
+        <rule name="Note" id="5f52-5b42-29ad-ddcb" hidden="false">
+          <description>Clustered nodules of ribbed chitin and pulsing vascular vents that erupt across an invaded world in dense groves, seeding localized pockets of digestive mist and synaptic resonance.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="1baa-9b04-21d1-86b9" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bio-Construct" id="f278-105f-b2a6-cd0d" hidden="false" targetId="ff50-9c4c-b6d3-11e9" type="rule" />
+        <infoLink name="Fearless" id="eacc-dff8-49b1-cdc7" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="f3bf-8eca-ac78-a288" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Capillary Spire" hidden="false" id="774a-0c4d-53b3-622e" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="68df-0cf8-af18-9794" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e33e-5a5f-03c7-066e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Capillary Spire" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="b909-ca84-7b45-f9c4" publicationId="7478-cf16-4f88-170b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">–</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">10</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="19ce-ca0e-0c0b-ec9e">
+          <entryLinks>
+            <entryLink import="true" name="Subterranean Eruption" hidden="false" id="52ec-d84a-3904-cc21" type="selectionEntry" targetId="22b8-6aa3-ed36-d9ec">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="63e9-c786-bea7-ed30" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774a-0c4d-53b3-622e" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5850-790d-56f6-58b3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Spore-Seeded Drop" hidden="false" id="838e-ff05-10e8-a4f5" type="selectionEntry" targetId="ebc2-b0e3-9c29-fffd">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="63e9-c786-bea7-ed30" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="774a-0c4d-53b3-622e" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1eff-5ae5-8731-1393" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="7ff8-76b0-870e-691f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1afa-2b67-e2d2-e2b4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Seismic Tremor-Roots" hidden="false" id="ce09-2501-4fdf-b7e1" type="selectionEntry" targetId="fcaf-ff30-b292-b925">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbb2-3f68-f3a3-f0ca" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Pheromone Trail Beacon" hidden="false" id="d7c7-1201-20ce-81a3" type="selectionEntry" targetId="514e-1eb4-a46d-6428">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c922-2140-93f2-3c25" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Dominion Synapse Node" hidden="false" id="9e76-3d5c-47f2-133e" type="selectionEntry" targetId="42d7-ab3d-53dd-ca60">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60d1-1c17-ffe9-3743" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Shadow in the Warp Emitter" hidden="false" id="83fe-06bc-7c40-b4eb" type="selectionEntry" targetId="84d5-7e1a-e039-ae72">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12fa-aa20-35c6-1727" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Chitinous Tunnel-Network" hidden="false" id="a280-6f30-55a1-06f9" type="selectionEntry" targetId="9de6-6896-4608-99f0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7498-7464-9510-0792" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Endless Brood-Vats" hidden="false" id="e22a-70f5-16b2-26e8" type="selectionEntry" targetId="290c-8d06-58a3-1d04">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28f6-a884-92cd-637e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Warlord Traits" hidden="false" id="8c43-f436-3af1-8ac4">
@@ -19984,6 +21079,9 @@
     </rule>
     <rule name="Shadow in the Warp" id="685b-e065-f0bf-7d2e" hidden="false" publicationId="7478-cf16-4f88-170b">
       <description>Enemy Psykers within 12" of a model with this rule subtract 1 from their Leadership when making Psychic checks.</description>
+    </rule>
+    <rule name="Bio-Construct" id="ff50-9c4c-b6d3-11e9" hidden="false" publicationId="7478-cf16-4f88-170b">
+      <description>A Bio-Fortification is a living chitinous organism rather than a mechanical vehicle: enemy weapons with the Haywire special rule have no effect on it, and it cannot be repaired by Battlesmith. Every Bio-Fortification has the Tyranid faction keyword and the Fearless special rule.</description>
     </rule>
     <rule name="Stealth" id="64a9-cd0f-ff50-56e2" hidden="false" publicationId="7478-cf16-4f88-170b">
       <description>If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.</description>
