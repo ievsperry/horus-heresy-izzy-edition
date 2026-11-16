@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="245" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="246" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -2749,7 +2749,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
     <entryLink id="39b5-294b-f075-d42d" name="Fortified Wall (Strongpoint)" hidden="false" collective="false" import="true" targetId="4a54-c437-ba4b-be6b" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani</comment>
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -2757,6 +2757,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2796,7 +2797,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
     <entryLink id="7488-dcd5-3230-57d7" name="Imperial Bunker" hidden="false" collective="false" import="true" targetId="5157-f309-77f9-1256" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani</comment>
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -2804,6 +2805,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2843,7 +2845,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
     <entryLink id="427d-eb8e-dbbd-87a2" name="Defence Line" hidden="false" collective="false" import="true" targetId="ea91-0572-393c-e925" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani</comment>
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -2851,6 +2853,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2890,7 +2893,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
     <entryLink id="ffeb-34e6-ea59-170c" name="Firestorm Redoubt" hidden="false" collective="false" import="true" targetId="ad29-7efd-9c94-ac08" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani</comment>
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -2898,6 +2901,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2938,7 +2942,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
     <entryLink id="c3fd-09fe-2ac7-2183" name="Vengeance Weapon Battery" hidden="false" collective="false" import="true" targetId="8e99-19e1-b84a-db0b" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani</comment>
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -2946,6 +2950,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2986,7 +2991,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
     <entryLink id="f1d1-ca61-ae6b-4d33" name="Void Shield Generator" hidden="false" collective="false" import="true" targetId="fa45-1d74-9584-5bd5" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani</comment>
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -2994,6 +2999,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3034,7 +3040,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
     <entryLink id="026e-1405-50cc-e19b" name="Skyshield Landing Pad" hidden="false" collective="false" import="true" targetId="a7fa-db40-52ee-b359" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani</comment>
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -3042,6 +3048,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3082,7 +3089,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
     <entryLink id="dd67-c6ce-04e4-8dc2" name="Fortress Of Redemption" hidden="false" collective="false" import="true" targetId="6392-ce9d-29a7-1851" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani</comment>
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -3090,6 +3097,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3129,7 +3137,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
     <entryLink id="d8a1-2527-d538-bdfb" name="Aquila Strongpoint" hidden="false" collective="false" import="true" targetId="e13d-9ef8-9b0d-bc22" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani</comment>
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -3137,6 +3145,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3178,7 +3187,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
     <entryLink id="01dc-d34a-1988-3919" name="Primus Redoubt" hidden="false" collective="false" import="true" targetId="2d87-bde8-08d5-ae82" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani</comment>
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -3186,6 +3195,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3227,7 +3237,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
     <entryLink id="91a3-bce0-aa49-e830" name="Hammerfall Bunker" hidden="false" collective="false" import="true" targetId="d5f5-a83b-ed8e-61c0" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani</comment>
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -3235,6 +3245,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
