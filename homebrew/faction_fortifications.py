@@ -3,7 +3,8 @@
 
 usage: python3 homebrew/faction_fortifications.py [game system]
 
-Tyranid Detachments take Bio-Fortifications (homebrew/source/tyranids.md) and Daemons of the Ruinstorm
+Tyranid Detachments take Bio-Fortifications (homebrew/source/tyranids.md), Ork Detachments take Ork
+Fortifications (homebrew/source/orks.md) and Daemons of the Ruinstorm
 Detachments take Daemonic Fortifications (homebrew/add_ruinstorm.py), so each of the game system's own
 Fortification entries is hidden in a Detachment holding either faction's army-wide entry. Running it again
 changes nothing; a new faction is added to FACTIONS and the script run again (its old modifier is replaced)."""
@@ -19,7 +20,8 @@ FORTIFICATIONS = {
     "d8a1-2527-d538-bdfb": "Aquila Strongpoint", "01dc-d34a-1988-3919": "Primus Redoubt",
     "91a3-bce0-aa49-e830": "Hammerfall Bunker"}
 # the army-wide entry every Detachment of the faction holds
-FACTIONS = {"b0ce-f3f1-c16f-86d1": "Tyranids", "afca-3047-fb26-d097": "Daemons of the Ruinstorm"}
+FACTIONS = {"b0ce-f3f1-c16f-86d1": "Tyranids", "afca-3047-fb26-d097": "Daemons of the Ruinstorm",
+            "adbe-53b5-788c-2bbb": "Orks"}
 COMMENT = "Hidden for armies with their own Fortifications"
 
 

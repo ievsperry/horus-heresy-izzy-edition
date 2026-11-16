@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="60" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="62" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -58,6 +58,7 @@ Elites: Nobz, Meganobz, Kommandos, Burna Boyz, Flash Gitz.
 Fast Attack: Warbikers, Stormboyz, Buggies, Trukks.
 Heavy Support: Lootas, Mek Gunz, Deff Dreads, Killa Kans.
 Primarch: Ghazghkull Thraka.
+Fortifications: Ork Fortifications.
 Lords of War: Stompas, Gargants, Titans.
 Waaagh! Warband Restrictions.
 • At least half of all Troops selections in the Primary Detachment must possess the Line Sub-type.
@@ -110,6 +111,11 @@ Any unit entry with a selection limitation of 0-X applies across all Detachments
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fc6a-763d-2617-2aca" percentValue="false" includeChildSelections="true" includeChildForces="false" />
           </constraints>
         </categoryLink>
+        <categoryLink name="Fortification:" hidden="false" id="3b6d-d141-653d-5cdb" targetId="a24f-12d8-36c1-f477" primary="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="dd76-5685-3334-123c" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Waaagh! Warband: Support Detachment" hidden="false" id="ef74-92e3-3cd2-40ca">
@@ -147,6 +153,7 @@ Elites: Nobz, Meganobz, Kommandos, Burna Boyz, Flash Gitz.
 Fast Attack: Warbikers, Stormboyz, Buggies, Trukks.
 Heavy Support: Lootas, Mek Gunz, Deff Dreads, Killa Kans.
 Primarch: Ghazghkull Thraka.
+Fortifications: Ork Fortifications.
 Lords of War: Stompas, Gargants, Titans.
 Waaagh! Warband Restrictions.
 • At least half of all Troops selections in the Primary Detachment must possess the Line Sub-type.
@@ -216,6 +223,7 @@ Troops: Boyz, Shoota Boyz, 'Ard Boyz, Gretchin.
 Elites: Nobz, Meganobz, Burna Boyz, Kommandos.
 Fast Attack: Stormboyz, Warbikers.
 Heavy Support: Lootas, Killa Kans, Deff Dreads.
+Fortifications: Ork Fortifications.
 Scappin' Waaagh! Restrictions.
 • No Lords of War units may be selected.
 • No Super-heavy units may be selected.
@@ -256,6 +264,11 @@ Scappin' Waaagh! Restrictions.
         <categoryLink name="Heavy Support:" hidden="false" id="8c54-0a86-42ac-9a34" targetId="7031-469a-1aeb-eab0" primary="false">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="force" shared="true" id="4a63-86cb-5d16-1cc2" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fortification:" hidden="false" id="2d62-6547-0b19-6110" targetId="a24f-12d8-36c1-f477" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2359-e1fb-0b77-12e9" percentValue="false" includeChildSelections="true" includeChildForces="false" />
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -1520,6 +1533,36 @@ The effect lasts until the end of the turn.</description>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="4f14-1997-3961-e468" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Mekboy Workshop" hidden="false" id="118a-4dac-eba0-bef1" type="selectionEntry" targetId="46f6-a556-f864-7b4a">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="5d51-f872-2fd2-8490" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="1f32-4025-8977-9504" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ork Scrap-Bastion" hidden="false" id="8381-1db5-7f0c-73e9" type="selectionEntry" targetId="2641-914b-016a-2b2a">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="b7a4-c645-6299-3aa4" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="ec7e-9429-7b85-1599" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Sky-Blasta Pad" hidden="false" id="a8f8-8b67-0f5b-5d6f" type="selectionEntry" targetId="85ba-ac2c-9190-e825">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="29c3-f116-9529-732d" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="9d93-41ec-3922-6031" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Slam-Dakka Bunker" hidden="false" id="b65d-e21a-0659-8949" type="selectionEntry" targetId="469d-b57b-69ae-a523">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="0a30-5d7d-96dc-1bed" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="05aa-d824-dcac-6f7b" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Aegis Scrap-Wall &amp; Gun Emplacement" hidden="false" id="9aea-0cdc-0ef1-79ee" type="selectionEntry" targetId="475b-2220-762f-c1b8">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="626c-647d-d5fa-c340" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="cc99-941b-4cf3-61b1" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Killa Kans" hidden="true" id="96c8-151d-dfe0-a2b6" type="selectionEntry" targetId="dfb9-1c6b-1b26-a03e">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -1866,6 +1909,53 @@ The effect lasts until the end of the turn.</description>
       </profiles>
       <infoLinks>
         <infoLink name="Twin-linked" id="0b40-953c-41e0-4e5a" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Quad big shoota" hidden="false" id="65ff-67de-8889-4d36" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Quad big shoota" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4dd2-5a7f-cbfc-18b4" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="e82a-9c20-749e-dd86" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flak quad big shoota" hidden="false" id="6147-dd7e-ca26-e17b" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Flak quad big shoota" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5b3c-1eb4-5efd-9698" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Twin-linked, Skyfire, Interceptor</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="4abf-88e4-e6a6-7e3e" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+        <infoLink name="Skyfire" id="0a4d-12f8-eef3-d38f" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flak-turret big shoota" hidden="false" id="c580-8f1d-cd7d-6384" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Flak-turret big shoota" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9694-8e89-1af9-a9dc" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 6, Twin-linked, Skyfire, Interceptor</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="32fe-59be-12a4-7b46" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+        <infoLink name="Skyfire" id="3409-ee45-62f6-2dcd" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin-linked boomstikk" hidden="false" id="e2b1-8a23-a523-f08a" publicationId="96d0-c462-d158-fbad">
@@ -2219,6 +2309,31 @@ The effect lasts until the end of the turn.</description>
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Supa-kannon" hidden="false" id="c572-6c0b-8b3a-a695" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Supa-kannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="51f7-1661-4158-46a8" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5"), Pinning, Rupture (4+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="89ef-3ab7-0abe-db4c" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Large Blast (5&quot;)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" id="e498-eff1-e33a-ace1" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+        <infoLink name="Rupture (X)" id="98c3-c860-f67f-f39e" hidden="false" targetId="d530-0b40-4723-af90" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rupture (4+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tellyport mega-blasta" hidden="false" id="33a6-86d3-ddc3-a866" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Tellyport mega-blasta" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7e8a-98f7-1f95-764e" publicationId="96d0-c462-d158-fbad">
@@ -2248,6 +2363,27 @@ The effect lasts until the end of the turn.</description>
       <infoLinks>
         <infoLink name="Skyfire" id="fcd9-2b83-ed14-eed5" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule" />
         <infoLink name="Sunder" id="e2ac-07ad-f3ec-9ed1" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked kustom mega-kannon" hidden="false" id="19c7-5a63-8adf-e419" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Twin-linked kustom mega-kannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="481a-4361-eeed-d686" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Gets Hot, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="5641-bb9d-b506-40dc" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Blast (3&quot;)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Gets Hot" id="b86c-f1cc-f6cc-dde5" hidden="false" targetId="679f-9d97-5ace-a652" type="rule" />
+        <infoLink name="Twin-linked" id="ba61-f7b4-34d0-e1dc" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wazbom mega-kannon" hidden="false" id="f8e1-e544-25f9-377c" publicationId="96d0-c462-d158-fbad">
@@ -2384,6 +2520,21 @@ The effect lasts until the end of the turn.</description>
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked skorcha" hidden="false" id="72e9-f51c-f9fb-edd4" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Twin-linked skorcha" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="03c7-274b-ef10-c5b5" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="db88-b70e-4208-baa1" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Grotzooka" hidden="false" id="efe6-8eda-5abd-269c" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Grotzooka" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a1c3-03a2-a5bd-49d6" publicationId="96d0-c462-d158-fbad">
@@ -2472,6 +2623,27 @@ The effect lasts until the end of the turn.</description>
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scrap-wall lobba" hidden="false" id="44ba-6a3b-bfc1-c746" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Scrap-wall lobba" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="8f18-8cbe-0117-6c0c" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Barrage, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="63e9-2fa7-86bd-102b" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Blast (3&quot;)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Barrage" id="b0f6-e039-150a-0aaf" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule" />
+        <infoLink name="Pinning" id="9cec-84da-926e-3b24" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Squig launchas" hidden="false" id="16c7-e7cc-5cb9-3f18" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -4141,6 +4313,15 @@ The effect lasts until the end of the turn.</description>
       <infoLinks>
         <infoLink name="Deep Strike" id="6498-5322-9dc0-a847" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tellyporta Homing Beacon" hidden="false" id="2d27-2c8c-aea9-5ee2" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Tellyporta Homing Beacon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="a196-7536-12de-2200">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Friendly Ork units arriving via Deep Strike within 12" of a Fortification with a Tellyporta Homing Beacon do not scatter.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Waaagh! Banner" hidden="false" id="cced-0024-06cc-b831" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -19060,6 +19241,461 @@ The effect lasts until the end of the turn.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="775" />
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mekboy Workshop" hidden="false" id="46f6-a556-f864-7b4a" publicationId="96d0-c462-d158-fbad">
+      <rules>
+        <rule name="Grot Riggers (5+)" id="8b68-01b8-4d41-3a1b" hidden="false">
+          <description>At the end of each friendly Player Turn, roll a D6 for this Fortification and for each friendly Ork Vehicle or Walker within 6" of it. On a 5+, that model restores 1 lost Hull Point (up to its starting maximum)</description>
+        </rule>
+        <rule name="Kustom Jobz" id="187a-ad1c-787f-065d" hidden="false">
+          <description>At the start of your Shooting phase, one friendly Ork Vehicle or Walker within 6" of the Mekboy Workshop may receive a Kustom Refit until the end of the turn. Choose one: More Dakka (all ranged weapons on that Vehicle gain Rending (6+) until the end of the turn); Red Paint Overdrive (that Vehicle adds +3" to its Movement characteristic until the end of your next Movement phase); or Extra Gubbins (that Vehicle gains a 5+ Invulnerable Save against Shooting attacks until the start of your next turn)</description>
+        </rule>
+        <rule name="Scrap-Yard Refit" id="f6d8-5505-4c71-5d3a" hidden="false">
+          <description>Friendly models with the Mek's Tools (or Battlesmith) special rule within 6" of this Fortification add +1 to their repair rolls (to a maximum of 3+)</description>
+        </rule>
+        <rule name="Note" id="8de5-87cb-fc1f-2d3c" hidden="false">
+          <description>A clanking, spark-belching scrap-foundry piled high with spare plates, half-built gubbins, and greasy grots wielding blowtorches.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="bf3d-13cf-50fd-eb8a" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Ork Fortification" id="f0ff-1d6e-ff7e-2da0" hidden="false" targetId="3ab1-541f-ab72-42ad" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="9072-a4c5-6c5e-ce5f" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Mekboy Workshop" hidden="false" id="beb6-f708-877f-ba61" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7385-6122-fc0a-e4c6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5a5-feff-95ec-e913" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Mekboy Workshop" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="148f-75ea-9b9a-18a0" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">10 (1 Access Point, 4 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Big shoota" hidden="false" id="ad08-97f4-5f4c-3025" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6bb2-c2cc-203d-676f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8f30-caff-ac35-09ed" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="95" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ork Scrap-Bastion" hidden="false" id="2641-914b-016a-2b2a" publicationId="96d0-c462-d158-fbad">
+      <rules>
+        <rule name="Scrap Battlements" id="f0c4-e06c-97bc-18bf" hidden="false">
+          <description>Counts as Open-Topped Battlements on the roof capable of holding up to 10 Infantry models, granting a 4+ Cover Save</description>
+        </rule>
+        <rule name="Bosspole Beacon" id="fd94-6f67-95da-b8d6" hidden="false">
+          <description>Friendly Ork units within 12" of an occupied Scrap-Bastion may re-roll failed Morale and Pinning tests</description>
+        </rule>
+        <rule name="Note" id="4549-a098-acf8-5b86" hidden="false">
+          <description>A towering, bolted-together slab of rusted battleship hull plates, spiked girders, and precarious firing slits.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="91cb-ff7f-12dc-c921" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Ork Fortification" id="da98-b853-c0fa-a995" hidden="false" targetId="3ab1-541f-ab72-42ad" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="7863-7693-2fba-a96a" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ork Scrap-Bastion" hidden="false" id="22fc-a95b-ed34-37fa" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f43-6726-90fb-4c4c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0979-1011-a08b-52ce" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Ork Scrap-Bastion" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="24eb-c48c-3a28-198e" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">15 (1 Access Point, 8 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange big shoota" hidden="false" id="0d72-c7ee-11b1-2b84" defaultSelectionEntryId="c27c-05bd-8d6a-d283">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="d6c4-34bf-bb8b-3b1e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="3d1e-08e5-57c0-e6dd" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Big shoota" hidden="false" id="c27c-05bd-8d6a-d283" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0d29-02ff-7596-58da" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Rokkit launcha" hidden="false" id="7b8c-932f-cbc3-717f" type="selectionEntry" targetId="03dd-8729-f70c-99b5">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="46ae-b41b-2ad7-394a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Skorcha" hidden="false" id="e83c-82ca-fdbe-4b79" type="selectionEntry" targetId="00e5-d294-a1f0-e6cf">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="fe4b-94d1-7b28-8f0d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="e45f-a24b-faa2-0c4d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9102-d8fe-89b7-0286" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Supa-kannon" hidden="false" id="002c-e7c0-7397-70d2" type="selectionEntry" targetId="c572-6c0b-8b3a-a695">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8872-7587-0164-e580" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Kustom mega-kannon" hidden="false" id="1ae9-c41f-f8be-f3ed" type="selectionEntry" targetId="f9b2-f3fc-04e8-eab2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84ad-ad16-36b7-97c6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Quad big shoota" hidden="false" id="9117-5e8e-9dea-750e" type="selectionEntry" targetId="65ff-67de-8889-4d36">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ab6-8148-df5e-28c2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sky-Blasta Pad" hidden="false" id="85ba-ac2c-9190-e825" publicationId="96d0-c462-d158-fbad">
+      <rules>
+        <rule name="Open-Topped Platform" id="51b8-82e2-49b4-9ab1" hidden="false">
+          <description>Infantry models on the Sky-Blasta Pad gain a 5+ Cover Save against shooting attacks. Any friendly Ork Flyer in Hover mode or Skimmer ending its Movement phase wholly on the platform gains a 4+ Cover Save and restores 1 lost Hull Point at the end of that turn on a D6 roll of 4+</description>
+        </rule>
+        <rule name="Re-Arm &amp; Refuel" id="634e-0210-9be8-ad16" hidden="false">
+          <description>Friendly Ork Flyers and Jump Pack Infantry starting their Movement phase on the Sky-Blasta Pad add +6" to their Movement characteristic for that turn, and any One Shot weapons (such as Bombs or Supa-Rokkits) on a Flyer that remains stationary on the Pad for a full turn are reloaded</description>
+        </rule>
+        <rule name="Note" id="4fae-fc40-de0b-dabb" hidden="false">
+          <description>A wide, oil-stained steel landing platform ringed with flickering guidance flares, fuel drums, and rickety flak-turrets.</description>
+        </rule>
+        <rule name="Note" id="7fa6-74be-1a35-42a7" hidden="false">
+          <description>Each Flak-turret is armed with a flak-turret big shoota (a twin-linked big shoota with the Skyfire and Interceptor special rules).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="f2d5-17e2-5deb-eea5" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Ork Fortification" id="3107-9f7c-35aa-f6a2" hidden="false" targetId="3ab1-541f-ab72-42ad" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="9501-8ee7-b244-2ff2" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Sky-Blasta Pad" hidden="false" id="2b91-7ae5-511f-c4ac" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7483-8d2d-38a6-ef48" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b680-c072-9d54-5d7d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Sky-Blasta Pad" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="ecc8-7a26-92c4-99d6" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">15 models or 1 Flyer / Skimmer</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="a376-e5fc-62bb-117f">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2650-28ff-096a-7397" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Flak-turret big shoota" hidden="false" id="a2ea-5589-4526-dfc6" type="selectionEntry" targetId="c580-8f1d-cd7d-6384">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1628-f759-f087-ab4b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="5edf-9d7a-4c82-4a96">
+              <entryLinks>
+                <entryLink import="true" name="Tellyporta Homing Beacon" hidden="false" id="5adc-8f87-2678-69c9" type="selectionEntry" targetId="2d27-2c8c-aea9-5ee2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="423e-2059-0b7f-2297" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Slam-Dakka Bunker" hidden="false" id="469d-b57b-69ae-a523" publicationId="96d0-c462-d158-fbad">
+      <rules>
+        <rule name="Orbital Slam-Drop" id="516f-e597-88e6-b99c" hidden="false">
+          <description>Instead of deploying during the Fortifications step, a Slam-Dakka Bunker must be placed in Reserves and enters play via Deep Strike (it may arrive on Turn 1 automatically without rolling for Reserves). When it lands, every unit (friend or foe) within 6" of its hull suffers D6 Strength 6 AP 4 hits with the Pinning special rule</description>
+        </rule>
+        <rule name="Dakka-Storm Automated Fire" id="d442-3715-3aac-4d41" hidden="false">
+          <description>During your Shooting phase, the Slam-Dakka Bunker fires all of its weapons at BS 2. Its turret weapon targets the nearest visible enemy unit within range, while each hull-mounted weapon automatically fires at the nearest visible enemy unit within its 90° fire arc</description>
+        </rule>
+        <rule name="Unstable Reactor" id="2b23-2d22-4d57-ae23" hidden="false">
+          <description>If this Fortification suffers a Catastrophic Damage result (or is reduced to 0 Hull Points), add +1 to the Building Damage table roll</description>
+        </rule>
+        <rule name="Note" id="f7ca-c306-2cd4-9285" hidden="false">
+          <description>A heavily armoured, thruster-braked drop-bunker that slams down from orbit straight into the enemy's teeth, firing continuously in every direction.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="d1f2-25ba-e3fb-9786" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Ork Fortification" id="aaba-6518-e80f-eb88" hidden="false" targetId="3ab1-541f-ab72-42ad" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="a430-31cf-763c-6cc7" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Slam-Dakka Bunker" hidden="false" id="4908-bd54-3fc2-5533" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a1f-60b3-814f-c764" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e30-6c8c-cf04-84ba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Slam-Dakka Bunker" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="1b3d-5073-30dc-a857" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">13</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked kustom mega-kannon" hidden="false" id="fc2d-e85e-5cab-bb1c" defaultSelectionEntryId="737d-7b1e-e74f-5b57">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8eb9-14b7-d903-d65e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6cf-2258-c4e4-ed0e" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked kustom mega-kannon" hidden="false" id="737d-7b1e-e74f-5b57" type="selectionEntry" targetId="19c7-5a63-8adf-e419">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c84-8b88-f26b-2156" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Supa-kannon" hidden="false" id="3b51-5240-8302-4653" type="selectionEntry" targetId="c572-6c0b-8b3a-a695">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bac-8357-1c75-16ee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Exchange twin-linked big shootas" hidden="false" id="f58b-7c43-d0bc-d67d" defaultSelectionEntryId="f232-8f77-40c5-c265">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d5a0-843c-89f7-424c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf30-076a-f6de-1d61" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Four twin-linked big shootas" hidden="false" id="f232-8f77-40c5-c265" type="selectionEntry" targetId="6e1f-1236-e439-8e41">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ae1-b812-77b8-2597" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Four twin-linked skorchas" hidden="false" id="ae40-d279-b4ae-d32c" type="selectionEntry" targetId="e021-cdea-23f2-ee4b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3d0-0dc2-76ab-fc28" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Rokkit launcha" hidden="false" id="a3d2-fa5f-a828-a1d9" type="selectionEntry" targetId="03dd-8729-f70c-99b5">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="370b-eccd-99bd-b450" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0b3a-0267-28d8-e293" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Four twin-linked big shootas" hidden="false" id="6e1f-1236-e439-8e41" publicationId="96d0-c462-d158-fbad">
+      <entryLinks>
+        <entryLink import="true" name="Twin-linked big shoota" hidden="false" id="34ff-d13a-7cf9-3b85" type="selectionEntry" targetId="6658-e52b-0dc5-d975">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="b22e-25e1-c414-e8f8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="a9d8-bb24-92e7-fb74" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Four twin-linked skorchas" hidden="false" id="e021-cdea-23f2-ee4b" publicationId="96d0-c462-d158-fbad">
+      <entryLinks>
+        <entryLink import="true" name="Twin-linked skorcha" hidden="false" id="10bc-df9a-649f-bac2" type="selectionEntry" targetId="72e9-f51c-f9fb-edd4">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="54c2-7463-0c4f-f1ff" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="3e2b-10a6-1ce0-433c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Aegis Scrap-Wall &amp; Gun Emplacement" hidden="false" id="475b-2220-762f-c1b8" publicationId="96d0-c462-d158-fbad">
+      <rules>
+        <rule name="Barricade (4+)" id="0238-d7b4-0676-6ec4" hidden="false">
+          <description>Models behind the Scrap-Wall gain a 4+ Cover Save against shooting attacks, and enemies charging across it count as charging through Difficult Terrain</description>
+        </rule>
+        <rule name="Note" id="6250-ac0c-ba8f-4139" hidden="false">
+          <description>Jagged barricades of welded battlewagon doors, tank traps, and scrap metal manned by eager boyz.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="2173-5e18-3f1d-acea" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Ork Fortification" id="ef06-b801-947f-ac5f" hidden="false" targetId="3ab1-541f-ab72-42ad" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="ce48-8163-0984-e7b5" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Aegis Scrap-Wall" hidden="false" id="f77e-e16b-7f8b-324e" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d300-c3da-e3c6-d42f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a09f-7174-fa45-4b34" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Aegis Scrap-Wall" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="68fc-0332-77e1-8ecc" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Battlefield Debris)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">–</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">–</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">–</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">–</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">–</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">–</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="9310-b207-92cd-3ace">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcba-59c9-7a43-42c2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Flak quad big shoota" hidden="false" id="b634-6732-2d36-1fa2" type="selectionEntry" targetId="6147-dd7e-ca26-e17b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="972a-521b-ed05-6a99" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Kustom mega-kannon" hidden="false" id="f0b8-044d-9d29-84f1" type="selectionEntry" targetId="f9b2-f3fc-04e8-eab2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e18-876f-36d6-fd28" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Scrap-wall lobba" hidden="false" id="b3b9-7304-7e3c-fc22" type="selectionEntry" targetId="44ba-6a3b-bfc1-c746">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf80-df81-1f9d-6ea1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50" />
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Warlord Traits" hidden="false" id="28b2-da56-af1f-f4c8">
@@ -19327,6 +19963,9 @@ The effect lasts until the end of the turn.</description>
   <sharedRules>
     <rule name="Ammo Runts" id="9107-ff91-8a87-766c" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>Ammo Runts scurry alongside their masters carrying spare ammunition, replacement magazines and unstable experimental rounds looted from countless battlefields. Once per battle, before making a Shooting Attack, a model accompanied by one or more Ammo Runts may re-roll all failed To Hit rolls and failed To Wound rolls for a single Shooting Attack. After the attack has been resolved, remove one Ammo Runt from play.</description>
+    </rule>
+    <rule name="Ork Fortification" id="3ab1-541f-ab72-42ad" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>Ork Fortifications are deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Orbital Slam-Drop). They cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on an Ork Fortification fires at BS 2. If a friendly Ork Infantry unit is embarked inside or occupying the Fortification's battlements, models in that unit may fire the Fortification's manual weapons using their own Ballistic Skill.</description>
     </rule>
     <rule name="Bigga iz Betta" id="150c-ba53-b501-3917" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>Models with the Bulky (X) special rule that join a unit add X to the total number of models in the unit for the purposes of determining Mob Rule bonuses. In addition, Cavalry models count as four models each for the purposes of determining Mob Rule bonuses.</description>
