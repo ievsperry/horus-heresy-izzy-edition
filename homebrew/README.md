@@ -92,7 +92,8 @@ loading. The script prints anything in the doc it could not place.
   The shared Aeldari Warhost Detachment takes 0-2 Fortifications and the Aeldari Auxiliary Detachment 0-1 (in all
   four Aeldari lists).
 - T'au take their own T'au Fortifications beside the Tidewalls (the doc's "### Fortifications": Remote Sensor
-  Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker, Orca Sky-Pad), each with the T'au Fortification
+  Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker, Orca Sky-Pad, T'au Command Post, Missile Silo
+  Battery, Pulse Shield Generator, Sensor Beacon Post), each with the T'au Fortification
   rule. Each may take one Sept Enhancement (`tau_fortifications.py`, run from `tau_rites.py`): shown only in a
   Detachment of that Sept, and an error in another. The game system's own Fortifications are hidden from a T'au
   Detachment.

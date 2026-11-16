@@ -139,7 +139,7 @@ If the model has not moved this turn, it cannot be targeted by ranged attacks fr
 
 #### T'au Fortification
 
-A T'au Fortification (Remote Sensor Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker or Orca Sky-Pad) is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Infiltrate or Manta Orbital Insertion). It cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on it fires at BS 3.
+A T'au Fortification (any Fortification below other than a Tidewall) is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Infiltrate or Manta Orbital Insertion). It cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on it fires at BS 3.
 
 #### Tidewall Mobility
 
@@ -414,7 +414,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Fast Attack | Pathfinders, Tactical Drones, Piranhas, Vespid Stingwings, Kroot Hounds, Krootox Riders, Sun Shark Bomber, Razorshark Strike Fighter, Tetra Scout Speeders, Remora Stealth Drones, Barracuda, Orca Dropship, Piranha TX-42, Krootox Rampagers, Knarloc Riders |
 | Heavy Support | Broadside Battlesuits, Hammerhead Gunship, Sky Ray Gunship, Sniper Drone Team, Heavy Gun Drones, XV109 Y'vahra, XV107 R'varna, Drone Sentry Turret, Shas'vre Ob'lotai 9-0, Great Knarloc |
 | Lord of War | KV128 Stormsurge, KX139 Ta'unar Supremacy Armour, Tiger Shark Fighter-Bomber, Manta Super-heavy Dropship |
-| Fortifications | Tidewall Droneport, Tidewall Gunrig, Tidewall Shieldline, Remote Sensor Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker, Orca Sky-Pad |
+| Fortifications | Tidewall Droneport, Tidewall Gunrig, Tidewall Shieldline, Remote Sensor Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker, Orca Sky-Pad, T'au Command Post, Missile Silo Battery, Pulse Shield Generator, Sensor Beacon Post |
 
 ### Drones
 
@@ -3438,7 +3438,7 @@ Use the Sniper Drone profile from the Drones section. A Firesight Marksman may b
 - Reflective Field: each unmodified save of 6 made using the Energy Shield inflicts one hit at Strength 5, AP 5 on the attacking unit
 - Tidewall Mobility
 
-**T'au Fortifications.** The Remote Sensor Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker and Orca Sky-Pad follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the T'au Fortification special rule. Each may take one Sept Enhancement matching its Detachment's Sept (T'au Sept, Vior'la, Bork'an, Sa'cea or Farsight Enclaves).
+**T'au Fortifications.** The Remote Sensor Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker, Orca Sky-Pad, T'au Command Post, Missile Silo Battery, Pulse Shield Generator and Sensor Beacon Post follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the T'au Fortification special rule. Each may take one Sept Enhancement matching its Detachment's Sept (T'au Sept, Vior'la, Bork'an, Sa'cea or Farsight Enclaves).
 
 #### Remote Sensor Tower — 75 pts
 
@@ -3611,6 +3611,172 @@ _An elevated, interlocking alloy landing deck equipped with magnetic docking cla
 
 _Each Skyfire Missile Turret is armed with a skyfire missile pod (a twin-linked missile pod with the Skyfire and Interceptor special rules)._
 
+#### T'au Command Post — 90 pts
+
+_A sleek, anti-grav anchored command hub bristling with communications arrays and drone emitters that coordinates unit target-locks. Also called Caste Relays. Inspired by the Dawn of War Tau Headquarters._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| T'au Command Post | – | 3 | 12 | 12 | 12 | 4 | 10 (1 Access Point, 4 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 T'au Command Post
+
+**Wargear**
+
+- Two twin-linked pulse carbines
+
+_The roof-mounted weapons are Automated Fire weapons (BS 3)._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- T'au Fortification
+- For the Greater Good Relay: friendly T'au Empire units within 12" of a T'au Command Post may use the Leadership characteristic of the highest Leadership T'au model within 12", and may re-roll failed Pinning tests
+- Automated Markerlight Uplink: at the start of your Shooting phase, this Fortification automatically projects 1 Markerlight token onto a single enemy unit within 36" (counting as hitting on a roll of 2+)
+- Shield Generator Field: the T'au Command Post has a 5+ Invulnerable Save against shooting attacks
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The T'au Command Post may exchange both twin-linked pulse carbines for one of the following:** |  |
+| – Two twin-linked burst cannons | +10 points |
+| – Two twin-linked missile pods | +15 points |
+| **The T'au Command Post may take:** |  |
+| – Target Lock / Early Warning Override | +15 points |
+| **The T'au Command Post may take one of the following Sept Enhancements:** |  |
+| – Coordinated Fire-Control | +20 points |
+| – Hot-Blooded Thrust-Relays | +20 points |
+| – Experimental Weapon Accelerators | +25 points |
+| – Urban Camouflage Matrix | +15 points |
+| – Close-Quarters Sensor-Grid | +20 points |
+
+#### Missile Silo Battery — 105 pts
+
+_A heavy vertical-launch tube network designed to rain seeker missiles and smart-missiles across the battlefield. Also called a Sky Ray Battery. Inspired by the Dawn of War Missile Silo / Sky Ray platform._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Missile Silo Battery | – | 3 | 11 | 11 | 11 | 3 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Missile Silo Battery
+
+**Wargear**
+
+- Sky Ray missile battery
+
+_The missile battery is an Automated Fire weapon (BS 3) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- T'au Fortification
+- Guidance System Sync: when firing its Sky Ray missile battery, if the target unit has already been hit by a Markerlight this phase, this Fortification adds +1 to its Armour Penetration rolls and ignores Cover saves
+- Automated Overwatch: once per enemy Assault phase, this Fortification may make an Overwatch Reaction at BS 3 without spending a point from your Reaction Allotment
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Missile Silo Battery may take:** |  |
+| – Four skyfire seeker missiles | +20 points |
+| **The Missile Silo Battery may take one of the following Sept Enhancements:** |  |
+| – Coordinated Fire-Control | +20 points |
+| – Hot-Blooded Thrust-Relays | +20 points |
+| – Experimental Weapon Accelerators | +25 points |
+| – Urban Camouflage Matrix | +15 points |
+| – Close-Quarters Sensor-Grid | +20 points |
+
+_The four skyfire seeker missiles are its Seeker Missile Racks._
+
+#### Pulse Shield Generator — 85 pts
+
+_A hovering dome projector that blankets nearby Fire Warriors and battlesuits in an impenetrable energy barrier. Inspired by the Dawn of War Plasma / Pulse Shield Generator._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Pulse Shield Generator | – | – | 11 | 11 | 11 | 3 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Pulse Shield Generator
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- T'au Fortification
+- Repulsor Shield Grid: friendly T'au Empire Infantry and Battlesuit units wholly within 6" of a Pulse Shield Generator gain a 5+ Invulnerable Save against shooting attacks (a 4+ with the Overcharge Core)
+- Deflective Pulse: enemy units declaring a Charge against friendly units wholly within 6" of the Pulse Shield Generator subtract 2" from their total Charge distance
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Pulse Shield Generator may take:** |  |
+| – Overcharge Core | +20 points |
+| **The Pulse Shield Generator may take one of the following Sept Enhancements:** |  |
+| – Coordinated Fire-Control | +20 points |
+| – Hot-Blooded Thrust-Relays | +20 points |
+| – Experimental Weapon Accelerators | +25 points |
+| – Urban Camouflage Matrix | +15 points |
+| – Close-Quarters Sensor-Grid | +20 points |
+
+#### Sensor Beacon Post — 60 pts
+
+_An automated telemetry and sensor-tower that sweeps the horizon for infiltrators and feeds data to local Fire Caste hunter cadres. Also called a Sensor Beacon Listening Post. Inspired by the Dawn of War Listening Post capture point._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Sensor Beacon Post | – | 3 | 10 | 10 | 10 | 3 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Sensor Beacon Post
+
+**Wargear**
+
+- Twin-linked pulse carbine
+
+_The weapon is an Automated Fire weapon (BS 3) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- T'au Fortification
+- Strategic Nexus Clamp: during deployment, if there is an Objective Marker wholly within your Deployment Zone, this Fortification may be deployed within 1" of that Objective Marker. Friendly T'au Empire units within 3" of this Fortification count as being within range of an Objective Marker controlled by their player for triggering rules and Warlord Traits, though this Fortification does not award Victory Points at the end of the battle
+- Auspex Sweeper: enemy units attempting to deploy via Deep Strike or Infiltrate within 18" of a Sensor Beacon Post scatter an additional D6" in a random direction
+- Automated Overwatch: once per enemy Assault phase, this Fortification may make an Overwatch Reaction at BS 3 without spending a point from your Reaction Allotment
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Sensor Beacon Post may exchange its twin-linked pulse carbine for one of the following:** |  |
+| – Twin-linked burst cannon | +10 points |
+| – Twin-linked missile pod | +15 points |
+| **The Sensor Beacon Post may take one of the following Sept Enhancements:** |  |
+| – Coordinated Fire-Control | +20 points |
+| – Hot-Blooded Thrust-Relays | +20 points |
+| – Experimental Weapon Accelerators | +25 points |
+| – Urban Camouflage Matrix | +15 points |
+| – Close-Quarters Sensor-Grid | +20 points |
+
 ## Wargear
 
 ### Items
@@ -3687,6 +3853,10 @@ The bearer's unit has Feel No Pain (6+).
 A prototype shield projector carried by the Exemplars of the Twin Lance.
 
 The bearer has a 4+ Invulnerable Save, but suffers a wound for each roll of 1 made for that save. Its Armour Save is unchanged.
+
+#### Overcharge Core
+
+A Pulse Shield Generator with an Overcharge Core grants a 4+ Invulnerable Save instead of a 5+ with its Repulsor Shield Grid, but each Invulnerable Save roll of 1 made using it inflicts 1 Strength 5 hit on the unit that made it.
 
 #### Paradox of Duality
 
@@ -3765,6 +3935,10 @@ The bearer gains the Void Shields (2) special rule.
 The layered shield projectors of the Ta'unar Supremacy Armour.
 
 The bearer gains the Void Shields (6) special rule.
+
+#### Target Lock / Early Warning Override
+
+The Fortification gains Interceptor†, and each of its weapons may shoot a different target.
 
 #### Urban Camouflage Matrix
 
@@ -4230,8 +4404,11 @@ Guided missiles and specialist weapons that let T'au firepower reach any target.
 | Sensor-tower markerlight | 36" | – | – | Heavy 1, Skyfire; places Markerlight tokens |
 | Twin-linked networked markerlight | 36" | – | – | Heavy 1, Twin-linked; each hit places D3 Markerlight tokens |
 | Missile pod | 36" | 7 | 4 | Assault 1, Blast (3") |
+| Twin-linked missile pod | 36" | 7 | 4 | Assault 1, Blast (3"), Twin-linked |
 | Skyfire missile pod | 36" | 7 | 4 | Assault 1, Blast (3"), Twin-linked, Skyfire, Interceptor |
 | Seeker missile | 72" | 8 | 3 | Heavy 1, One Use |
+| Skyfire seeker missile | 72" | 8 | 3 | Heavy 1, One Use, Skyfire |
+| Sky Ray missile battery | 72" | 8 | 3 | Heavy 2 |
 | Smart missile system | 30" | 5 | 5 | Heavy 4, Indirect Fire, Barrage† |
 
 ##### Pulse Weapons
