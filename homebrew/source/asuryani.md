@@ -2739,7 +2739,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 
 ## Fortifications
 
-The Wraithbone Bastion, Void-Spinner Sky-Platform and Wraith-Sentinel Drop-Pillar are Asuryani Fortifications. They follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the Asuryani Fortification special rule:
+Asuryani armies may not take the standard Fortifications; they take the Fortifications below instead. The Wraithbone Bastion, Void-Spinner Sky-Platform and Wraith-Sentinel Drop-Pillar are Asuryani Fortifications. They follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the Asuryani Fortification special rule:
 
 - **Deployment.** Deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Webway Orbital Insertion).
 - **Unit Restrictions.** Fortifications cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests.
