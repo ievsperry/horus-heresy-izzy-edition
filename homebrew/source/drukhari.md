@@ -260,6 +260,7 @@ Drukhari armies may use the Aeldari Warhost, Auxiliary, Allied and Lords of War 
 | Fast Attack | 0-4 |
 | Heavy Support | 0-4 |
 | Lords of War | 0-1 |
+| Fortifications | 0-2 |
 
 **Civilization Alignment.** Before selecting any units for this Detachment, choose one of the following Civilization Keywords: Asuryani, Drukhari, Anhrathe or Rillietann. All units selected as part of the Detachment must possess the chosen Civilization Keyword unless specifically stated otherwise. The selected Civilization determines which Civilization Trait, Advanced Reaction and Warlord Trait are available to the Detachment.
 
@@ -275,6 +276,7 @@ Drukhari armies may use the Aeldari Warhost, Auxiliary, Allied and Lords of War 
 | Elites | 0-1 |
 | Fast Attack | 0-1 |
 | Heavy Support | 0-1 |
+| Fortifications | 0-1 |
 
 No Lords of War choices may be selected as part of an Aeldari Auxiliary Detachment.
 

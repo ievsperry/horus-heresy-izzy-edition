@@ -65,6 +65,7 @@ A Warlord with the Asuryani Sub-type may choose one of the traits below instead 
 | Fast Attack | 0-4 |
 | Heavy Support | 0-4 |
 | Lords of War | 0-1 |
+| Fortifications | 0-2 |
 
 **Civilization Alignment.** Before selecting any units for this Detachment, choose one of the following Civilization Keywords: Asuryani, Drukhari, Anhrathe or Rillietann. All units selected as part of the Detachment must possess the chosen Civilization Keyword unless specifically stated otherwise. The selected Civilization determines which Civilization Trait, Advanced Reaction and Warlord Trait are available to the Detachment.
 
@@ -80,6 +81,7 @@ A Warlord with the Asuryani Sub-type may choose one of the traits below instead 
 | Elites | 0-1 |
 | Fast Attack | 0-1 |
 | Heavy Support | 0-1 |
+| Fortifications | 0-1 |
 
 No Lords of War choices may be selected as part of an Aeldari Auxiliary Detachment.
 
@@ -158,7 +160,7 @@ No other units may be selected as part of this Detachment.
 | Heavy Support | Dark Reapers, Falcon Squadron, Fire Prism Squadron, Firestorm Squadron, Night Spinner Squadron, Vaul's Wrath Support Battery, Wraithlord Conclave, Wraithseer |
 | Lords of War | Cobra, Lynx, Phantom Titan, Revenant Titan, Scorpion, Skathach Wraithknight, Vampire Hunter, Vampire Raider, Wraithknight |
 | Dramatis Personae | Asurmen, Avatar of Khaine, Baharroth, Drastanta, Fuegan, Irillyth, Jain Zar, Karandras, Maugan Ra |
-| Fortifications | Holo-Field Defence Line, Webway Gate |
+| Fortifications | Holo-Field Defence Line, Webway Gate, Wraithbone Bastion, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar |
 
 ## Advanced Reaction: Aspects of War
 
@@ -2737,6 +2739,13 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 
 ## Fortifications
 
+Asuryani armies may not take the standard Fortifications; they take the Fortifications below instead. The Wraithbone Bastion, Void-Spinner Sky-Platform and Wraith-Sentinel Drop-Pillar are Asuryani Fortifications. They follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the Asuryani Fortification special rule:
+
+- **Deployment.** Deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Webway Orbital Insertion).
+- **Unit Restrictions.** Fortifications cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests.
+- **Wraithbone Construction.** Every Asuryani Fortification is grown from psycho-reactive wraithbone rather than forged from Imperial adamantium. At the start of each friendly Movement phase, roll a D6 for each damaged Asuryani Fortification within 12" of a friendly Asuryani Psyker (such as a Farseer, Warlock, or Spiritseer); on a 5+, that Fortification restores 1 lost Hull Point (up to its starting maximum).
+- **Asuryani Ballistic Skill.** Any automated weapon on an Asuryani Fortification fires at BS 4 using crystal spirit-matrix targeting.
+
 ### Holo-Field Defence Line — 35 pts
 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
@@ -2787,6 +2796,119 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 
 - Mysterious Statuary
 - Webway Strike
+
+### Wraithbone Bastion — 130 pts
+
+_A sleek, gracefully curved citadel of grown wraithbone, crowned with automated spirit-stone weapon turrets and shimmering holo-fields._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Wraithbone Bastion | – | 4 | 12 | 12 | 12 | 4 | 15 (1 Access Point, 6 Fire Points) | No base |
+
+**Unit Composition**
+
+- 1 Wraithbone Bastion
+
+**Wargear**
+
+- Four twin-linked shuriken cannons
+
+_The hull weapons are Automated Fire weapons (BS 4), one mounted on each facing. An upper-terrace turret is an Automated Fire weapon (BS 4) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Asuryani Fortification
+- Wraithbone Battlements: counts as Open-Topped Battlements on the upper terrace capable of holding up to 10 Infantry models, granting a 4+ Cover Save
+- Spirit-Matrix Targeting: during your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)
+- Beacon of the Path: friendly Asuryani units within 12" of an occupied Wraithbone Bastion may re-roll failed Morale and Pinning tests
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Wraithbone Bastion may exchange all four twin-linked shuriken cannons for one of the following:** |  |
+| – Four scatter lasers | +20 points |
+| – Four starcannons | +40 points |
+| **The Wraithbone Bastion may take one of the following upper-terrace weapon turrets:** |  |
+| – Bright lance | +20 points |
+| – Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | +20 points |
+| – Twin-linked starcannon | +25 points |
+| **The Wraithbone Bastion may take:** |  |
+| – Holo-Field Emitters | +20 points |
+
+### Void-Spinner Sky-Platform — 85 pts
+
+_An elevated, anti-gravitic landing dais anchored by crystal pylons that recharges star-engines and projects a protective refraction dome._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Void-Spinner Sky-Platform | – | 4 | 11 | 11 | 11 | 3 | 15 models or 1 Flyer / Skimmer | No base |
+
+**Unit Composition**
+
+- 1 Void-Spinner Sky-Platform
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Asuryani Fortification
+- Refraction Dome (5+): Infantry models on the platform gain a 5+ Invulnerable Save against shooting attacks. Any friendly Asuryani Flyer in Hover mode or Skimmer ending its Movement phase wholly on the platform gains a 4+ Invulnerable Save against shooting attacks and restores 1 lost Hull Point at the end of that turn on a D6 roll of 4+
+- Star-Engine Recharge: friendly Asuryani Flyers, Skimmers, and Jump Pack Infantry starting their Movement phase on the platform add +6" to their Movement characteristic for that turn
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Void-Spinner Sky-Platform may take up to two of the following:** |  |
+| – Sky-turret scatter laser | +20 points each |
+| **The Void-Spinner Sky-Platform may take:** |  |
+| – Spirit-Stone Relay | +15 points |
+
+_Each Crystal Sky-Turret is armed with a sky-turret scatter laser (a scatter laser with the Skyfire and Interceptor special rules)._
+
+### Wraith-Sentinel Drop-Pillar — 125 pts
+
+_A slender, spear-headed wraithbone obelisk launched from orbit via Webway-assisted drop-conduits to secure drop zones with blinding laser fire._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Wraith-Sentinel Drop-Pillar | – | 4 | 12 | 12 | 12 | 4 | – (Impassable) | No base |
+
+**Unit Composition**
+
+- 1 Wraith-Sentinel Drop-Pillar
+
+**Wargear**
+
+- Twin-linked bright lance
+- Four shuriken cannons
+
+_The crown-mounted weapon is an Automated Fire weapon (BS 4) with a 360° line of sight; the shuriken cannons are hull-mounted Automated Fire weapons (BS 4), one on each facing._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Asuryani Fortification
+- Webway Orbital Insertion: instead of deploying during the Fortifications step, a Wraith-Sentinel Drop-Pillar must be placed in Reserves and enters play via Deep Strike (it may arrive on Turn 1 automatically without rolling for Reserves, and does not scatter if placed within 12" of a friendly Webway Gate or Asuryani Psyker). When it lands, every enemy unit within 6" must immediately take a Pinning test at -1 Leadership
+- Crystal-Node Automated Fire: during your Shooting phase, the Drop-Pillar fires all of its weapons at BS 4. Its crown weapon targets the nearest visible enemy unit within range (prioritizing Vehicles or Monstrous Creatures if armed with a Bright Lance or D-Cannon), while each hull-mounted weapon automatically fires at the nearest visible enemy unit within its 90° fire arc
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Wraith-Sentinel Drop-Pillar may exchange its twin-linked bright lance for one of the following:** |  |
+| – Twin-linked starcannon | +0 points |
+| – D-Cannon | +25 points |
 
 ## Primarch
 
@@ -2848,6 +2970,10 @@ An Aspect Exarchs unit is selected as any other unit, using one Force Organisati
 ### Aspect Shrine (X)
 
 The bracketed value names the model's Aspect Shrine. For each model in a Detachment with the Character Sub-type (or Phoenix Lord Unit Type) and a given Aspect Shrine (X), the Detachment may include up to one other non-Character unit with the matching Aspect Shrine (X). These units still need available Force Organisation slots. Dedicated Transports do not count towards these limits.
+
+### Asuryani Fortification
+
+Asuryani Fortifications are deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Webway Orbital Insertion). They cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on an Asuryani Fortification fires at BS 4. Wraithbone Construction: at the start of each friendly Movement phase, roll a D6 for each damaged Asuryani Fortification within 12" of a friendly Asuryani Psyker (such as a Farseer, Warlock, or Spiritseer); on a 5+, that Fortification restores 1 lost Hull Point (up to its starting maximum).
 
 ### Battle Focus
 
@@ -3427,6 +3553,16 @@ Drastanta and any unit they have joined may make a single Reaction in the Moveme
 
 The first time in a game a unit with a Wireweave Net is charged, the charging player suffers –3" to the Charge distance rolled.
 
+### Fortification Wargear
+
+#### Holo-Field Emitters
+
+A Fortification with Holo-Field Emitters has Shrouded (5+) against shooting attacks made from more than 12" away.
+
+#### Spirit-Stone Relay
+
+Friendly Asuryani units arriving via Deep Strike within 12" of a Fortification with a Spirit-Stone Relay do not scatter.
+
 ## Armoury
 
 Weapons that already exist in 2.0 use their official profiles (flamer). The Aeldari power sword uses the 2.0 power sword profile.
@@ -3467,9 +3603,12 @@ Weapons that already exist in 2.0 use their official profiles (flamer). The Aeld
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Bright lance | 36" | 8 | 2 | Heavy 1, Lance |
+| Twin-linked bright lance | 36" | 8 | 2 | Heavy 1, Lance, Twin-linked |
 | Pulse laser | 48" | 8 | 2 | Heavy 2, Sunder, Exoshock (6+) |
 | Scatter laser | 36" | 6 | 6 | Heavy 4 |
+| Sky-turret scatter laser | 36" | 6 | 6 | Heavy 4, Skyfire, Interceptor |
 | Shuriken cannon | 24" | 6 | 5 | Assault 3, Breaching (5+) |
+| Twin-linked shuriken cannon | 24" | 6 | 5 | Assault 3, Breaching (5+), Twin-linked |
 | Wraithcannon | 12" | 10 | 2 | Heavy 1, Brutal (2), Instant Death |
 
 ### Corsair Grenades and Launchers
@@ -3583,6 +3722,7 @@ Refined Aeldari plasma, trading raw strength for rate of fire and consistency.
 | Weapon | Range | Str | AP | Type |
 | Gravis Starcannon | 36" | 6 | 3 | Heavy 6, Breaching (4+) |
 | Starcannon | 36" | 6 | 3 | Heavy 3, Breaching (4+) |
+| Twin-linked starcannon | 36" | 6 | 3 | Heavy 3, Breaching (4+), Twin-linked |
 | Suncannon | 48" | 7 | 3 | Heavy 1, Massive Blast (7"), Rending (4+) |
 
 #### Shuriken Weapons

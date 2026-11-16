@@ -85,6 +85,12 @@ loading. The script prints anything in the doc it could not place.
   one Hive Fleet Enhancement (`tyranid_fortifications.py`, run by the builder): shown only in a Detachment of that
   Hive Fleet, and an error in another. A Cluster's enhancement is bought once for the whole unit. The game
   system's own Fortifications are hidden from a Tyranid Detachment (`faction_fortifications.py`, below).
+- Asuryani have three Asuryani Fortifications beside the Holo-Field Defence Line and Webway Gate (the doc's
+  "## Fortifications": Wraithbone Bastion, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar), each with the
+  Asuryani Fortification rule. Holo-Field Emitters and the Spirit-Stone Relay are Fortification Wargear. The game
+  system's own Fortifications are hidden from an Asuryani Detachment.
+  The shared Aeldari Warhost Detachment takes 0-2 Fortifications and the Aeldari Auxiliary Detachment 0-1 (in all
+  four Aeldari lists).
 - Orks take their own Ork Fortifications (the doc's "## Fortifications": Mekboy Workshop, Ork Scrap-Bastion,
   Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement) as Fortification choices, each with the
   Ork Fortification army rule. The game system's own Fortifications are hidden from an Ork Detachment. A Waaagh!
@@ -742,7 +748,7 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   "Primordial Annihilator" enhancement (Beacon of Undivided Chaos) belongs to Ravenous Dissolution, the eighth
   Dominion. A Rite that bars Fortification choices bars these too. It refuses to run twice.
 - `python3 homebrew/faction_fortifications.py` hides the game system's eleven standard Fortifications in a Detachment
-  holding the Tyranids, Orks or Daemons of the Ruinstorm faction entry, since these armies take their own. Running it
+  holding the Tyranids, Orks, Asuryani or Daemons of the Ruinstorm faction entry, since these armies take their own. Running it
   again changes nothing.
 - `python3 homebrew/add_titan_legions.py` adds the Titan Legions expansion (kept as `source/titan-legions.md`) to
   `2022 - Titan Legions.cat`, with its Warlord Traits in `2022 - Mech Library.cat`. It writes:
