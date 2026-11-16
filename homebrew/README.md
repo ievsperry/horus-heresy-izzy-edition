@@ -769,9 +769,13 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   `2022 - Horus Heresy.gst` as Fortification choices beside its standard Fortifications, each with the Imperial
   Fortification rule. Twin-linked weapons link the game system's own twin-linked entries, and Reinforced Armoured
   Plating sets Front, Side and Rear Armour to 13 on the profile. The Vox-Relay and Orbital Strike Coordinates rules come
-  with their options; Orbital Strike Coordinates (Legiones Astartes and Solar Auxilia only) is text. It refuses to
+  with their options; Orbital Strike Coordinates is limited by `imperial_fortification_limits.py`. It refuses to
   run twice. `faction_fortifications.py` then hides them from the Xenos armies, the Daemons of the Ruinstorm,
   Necrons, Leagues of Votann and Rillietann.
+- `python3 homebrew/imperial_fortification_limits.py` enforces the Orbital Uplink Bunker's Orbital Strike Coordinates
+  (Legiones Astartes and Solar Auxilia only): hidden, and an error if taken, in a Detachment that holds none of the
+  eighteen Legions', the Blackshields', the Shattered Legions' or the Solar Auxilia's army entries. Running it again
+  changes nothing.
 - `python3 homebrew/faction_fortifications.py` hides the game system's eleven standard Fortifications in a Detachment
   holding the Tyranids, Orks, Asuryani, Drukhari, Anhrathe, T'au Empire or Daemons of the Ruinstorm faction entry, since these armies take their own. Running it
   again changes nothing. The Imperial Fortifications are hidden from those armies
