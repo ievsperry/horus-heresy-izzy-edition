@@ -24,6 +24,8 @@ Once per battle, before making a Shooting Attack, a model accompanied by one or 
 
 After the attack has been resolved, remove one Ammo Runt from play.
 
+**Ork Fortification.** Ork Fortifications are deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Orbital Slam-Drop). They cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on an Ork Fortification fires at BS 2. If a friendly Ork Infantry unit is embarked inside or occupying the Fortification's battlements, models in that unit may fire the Fortification's manual weapons using their own Ballistic Skill.
+
 **Bigga iz Betta.** Models with the Bulky (X) special rule that join a unit add X to the total number of models in the unit for the purposes of determining Mob Rule bonuses.
 
 In addition, Cavalry models count as four models each for the purposes of determining Mob Rule bonuses.
@@ -564,7 +566,7 @@ _Speed is its own reward. Speed Freeks race into battle on bikes and buggies, an
 
 ## Force Organisation
 
-Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, Heavy Support, Dedicated Transports, Lord of War and Primarch. Each unit takes the slot of the section it appears under:
+Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, Heavy Support, Dedicated Transports, Lord of War, Primarch and Fortifications. Each unit takes the slot of the section it appears under:
 
 | 2.0 slot | Ork units |
 |---|---|
@@ -576,6 +578,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Dedicated Transports | Trukk, 'Chinork' Warkopta; Battlewagon for the units that list it |
 | Lord of War | Gorkanaut, Morkanaut, Stompa |
 | Primarch | Ghazghkull Thraka |
+| Fortifications | Mekboy Workshop, Ork Scrap-Bastion, Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement |
 
 ## Detachments
 
@@ -3834,6 +3837,186 @@ _A Stompa has six Fire Points._
 
 The Stompa is a Titan-scale model. If your group plays without Titans, swap it out or use the 2.0 Super-heavy limit on its points.
 
+## Fortifications
+
+Ork armies may not take the standard Fortifications; they take these Ork Fortifications instead. All of them follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the Ork Fortification special rule:
+
+- **Deployment.** Deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Orbital Slam-Drop).
+- **Unit Restrictions.** Fortifications cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests.
+- **Ork Ballistic Skill.** Any automated weapon on an Ork Fortification fires at BS 2. If a friendly Ork Infantry unit is embarked inside or occupying the Fortification's battlements, models in that unit may fire the Fortification's manual weapons using their own Ballistic Skill.
+
+### Mekboy Workshop — 95 pts
+
+_A clanking, spark-belching scrap-foundry piled high with spare plates, half-built gubbins, and greasy grots wielding blowtorches._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Mekboy Workshop | – | 2 | 12 | 12 | 11 | 4 | 10 (1 Access Point, 4 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Mekboy Workshop
+
+**Wargear**
+
+- Two big shootas
+
+_The big shootas are Manual Fire weapons mounted on opposite facings._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Ork Fortification
+- Grot Riggers (5+): at the end of each friendly Player Turn, roll a D6 for this Fortification and for each friendly Ork Vehicle or Walker within 6" of it. On a 5+, that model restores 1 lost Hull Point (up to its starting maximum)
+- Kustom Jobz: at the start of your Shooting phase, one friendly Ork Vehicle or Walker within 6" of the Mekboy Workshop may receive a Kustom Refit until the end of the turn. Choose one: More Dakka (all ranged weapons on that Vehicle gain Rending (6+) until the end of the turn); Red Paint Overdrive (that Vehicle adds +3" to its Movement characteristic until the end of your next Movement phase); or Extra Gubbins (that Vehicle gains a 5+ Invulnerable Save against Shooting attacks until the start of your next turn)
+- Scrap-Yard Refit: friendly models with the Mek's Tools (or Battlesmith) special rule within 6" of this Fortification add +1 to their repair rolls (to a maximum of 3+)
+
+### Ork Scrap-Bastion — 85 pts
+
+_A towering, bolted-together slab of rusted battleship hull plates, spiked girders, and precarious firing slits._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Ork Scrap-Bastion | – | 2 | 13 | 13 | 12 | 4 | 15 (1 Access Point, 8 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Ork Scrap-Bastion
+
+**Wargear**
+
+- Four big shootas
+
+_The big shootas are Manual Fire weapons, one mounted on each facing._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Ork Fortification
+- Scrap Battlements: counts as Open-Topped Battlements on the roof capable of holding up to 10 Infantry models, granting a 4+ Cover Save
+- Bosspole Beacon: friendly Ork units within 12" of an occupied Scrap-Bastion may re-roll failed Morale and Pinning tests
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Ork Scrap-Bastion may exchange any big shoota for one of the following:** |  |
+| – Rokkit launcha | +5 points each |
+| – Skorcha | +5 points each |
+| **The Ork Scrap-Bastion may take one of the following roof-mounted emplacement weapons:** |  |
+| – Supa-kannon | +40 points |
+| – Kustom mega-kannon | +25 points |
+| – Quad big shoota | +20 points |
+
+### Sky-Blasta Pad — 75 pts
+
+_A wide, oil-stained steel landing platform ringed with flickering guidance flares, fuel drums, and rickety flak-turrets._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Sky-Blasta Pad | – | 2 | 11 | 11 | 11 | 3 | 15 models or 1 Flyer / Skimmer | Use model |
+
+**Unit Composition**
+
+- 1 Sky-Blasta Pad
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Ork Fortification
+- Open-Topped Platform: Infantry models on the Sky-Blasta Pad gain a 5+ Cover Save against shooting attacks. Any friendly Ork Flyer in Hover mode or Skimmer ending its Movement phase wholly on the platform gains a 4+ Cover Save and restores 1 lost Hull Point at the end of that turn on a D6 roll of 4+
+- Re-Arm & Refuel: friendly Ork Flyers and Jump Pack Infantry starting their Movement phase on the Sky-Blasta Pad add +6" to their Movement characteristic for that turn, and any One Shot weapons (such as Bombs or Supa-Rokkits) on a Flyer that remains stationary on the Pad for a full turn are reloaded
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Sky-Blasta Pad may take up to two of the following:** |  |
+| – Flak-turret big shoota | +15 points each |
+| **The Sky-Blasta Pad may take:** |  |
+| – Tellyporta Homing Beacon | +15 points |
+
+_Each Flak-turret is armed with a flak-turret big shoota (a twin-linked big shoota with the Skyfire and Interceptor special rules)._
+
+### Slam-Dakka Bunker — 135 pts
+
+_A heavily armoured, thruster-braked drop-bunker that slams down from orbit straight into the enemy's teeth, firing continuously in every direction._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Slam-Dakka Bunker | – | 2 | 13 | 13 | 13 | 4 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Slam-Dakka Bunker
+
+**Wargear**
+
+- Twin-linked kustom mega-kannon
+- Four twin-linked big shootas
+- Four rokkit launchas
+
+_The kustom mega-kannon (or supa-kannon) is turret-mounted with a 360° line of sight; the big shootas (or skorchas) and rokkit launchas are hull-mounted, one on each facing. All fire as Automated Fire at BS 2._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Ork Fortification
+- Orbital Slam-Drop: instead of deploying during the Fortifications step, a Slam-Dakka Bunker must be placed in Reserves and enters play via Deep Strike (it may arrive on Turn 1 automatically without rolling for Reserves). When it lands, every unit (friend or foe) within 6" of its hull suffers D6 Strength 6 AP 4 hits with the Pinning special rule
+- Dakka-Storm Automated Fire: during your Shooting phase, the Slam-Dakka Bunker fires all of its weapons at BS 2. Its turret weapon targets the nearest visible enemy unit within range, while each hull-mounted weapon automatically fires at the nearest visible enemy unit within its 90° fire arc
+- Unstable Reactor: if this Fortification suffers a Catastrophic Damage result (or is reduced to 0 Hull Points), add +1 to the Building Damage table roll
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Slam-Dakka Bunker may exchange its twin-linked kustom mega-kannon for:** |  |
+| – Supa-kannon | +0 points |
+| **The Slam-Dakka Bunker may exchange all four twin-linked big shootas for:** |  |
+| – Four twin-linked skorchas | +15 points |
+
+### Aegis Scrap-Wall & Gun Emplacement — 50 pts
+
+_Jagged barricades of welded battlewagon doors, tank traps, and scrap metal manned by eager boyz._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Aegis Scrap-Wall | – | – | – | – | – | – | – | Use model |
+
+**Unit Composition**
+
+- 1 Aegis Scrap-Wall (up to 4 long wall sections and 4 short wall sections deployed in base-to-base contact)
+
+**Unit Type**
+
+- Fortification (Battlefield Debris)
+
+**Special Rules**
+
+- Ork Fortification
+- Barricade (4+): models behind the Scrap-Wall gain a 4+ Cover Save against shooting attacks, and enemies charging across it count as charging through Difficult Terrain
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Aegis Scrap-Wall may include one Gun Emplacement, manned by any adjacent Infantry model, armed with one of the following:** |  |
+| – Flak quad big shoota | +20 points |
+| – Kustom mega-kannon | +20 points |
+| – Scrap-wall lobba | +20 points |
+
 ## Grot Attendants
 
 ### Ammo Runt
@@ -4121,6 +4304,10 @@ In addition, at the beginning of each of the controlling player's turns, roll a 
 
 If the unit is not Pinned after resolving these hits, it may immediately be removed from the battlefield and placed into Ongoing Reserves. The unit automatically enters play via Deep Strike at the end of the controlling player's following Movement phase.
 
+### Tellyporta Homing Beacon
+
+Friendly Ork units arriving via Deep Strike within 12" of a Fortification with a Tellyporta Homing Beacon do not scatter.
+
 ### Waaagh! Banner
 
 _A towering glyph-banner that fills nearby Orks with even more bloodlust than usual._
@@ -4181,6 +4368,9 @@ All weapons listed here are counted as 'Dakka' weapons for those rules that affe
 | Supa-gatler | 48" | 7 | 4 | Heavy 12, Twin-linked, Pinning |
 | Supa-shoota | 36" | 6 | 4 | Assault 3 |
 | Twin-linked big shoota | 36" | 5 | 5 | Assault 6, Twin-linked |
+| Quad big shoota | 36" | 5 | 5 | Heavy 6, Twin-linked |
+| Flak quad big shoota | 36" | 5 | 5 | Heavy 6, Twin-linked, Skyfire, Interceptor |
+| Flak-turret big shoota | 36" | 5 | 5 | Assault 6, Twin-linked, Skyfire, Interceptor |
 | Twin-linked boomstikk | 12" | 5 | 5 | Assault 2, Twin-linked |
 | Twin-linked rattler kannon | 24" | 6 | 6 | Heavy 2D6, Twin-linked |
 
@@ -4221,8 +4411,10 @@ Kustom mega-blastas, kustom shokk rifles, shokk attack guns, zzap guns and every
 | Shokk attack gun | 60" | 2D6 | D6 | Heavy 1, Large Blast (5"), Mishap |
 | Smasha gun | 36" | 8 | 3 | Heavy 1, Brutal (2) |
 | Stikka kannon | 24" | 7 | 4 | Heavy 2 |
+| Supa-kannon | 60" | 9 | 4 | Ordnance 1, Large Blast (5"), Pinning, Rupture (4+) |
 | Tellyport mega-blasta | 24" | 8 | 2 | Assault 1, Gets Hot |
 | Traktor kannon | 36" | 8 | 3 | Heavy 1, Skyfire, Sunder |
+| Twin-linked kustom mega-kannon | 36" | 8 | 2 | Heavy 1, Blast (3"), Gets Hot, Twin-linked |
 | Wazbom mega-kannon | 36" | 8 | 2 | Heavy 1, Blast (3"), Gets Hot |
 | Zzap gun | 36" | 8 | 2 | Heavy 1, Shock Pulse |
 
@@ -4253,6 +4445,7 @@ All weapons listed here are counted as 'Flame' weapons for those rules that affe
 | Burna (shooting) | Template | 5 | – | Assault 1, Breaching (4+), Pinning, Gets Hot |
 | Killa jet | Template | 4 | 5 | Assault 1 |
 | Skorcha | Template | 5 | 5 | Assault 1 |
+| Twin-linked skorcha | Template | 5 | 5 | Assault 1, Twin-linked |
 
 ### Launchers
 
@@ -4268,6 +4461,7 @@ Rokkit launchas, kopta rokkit launchas, grotzookas and every weapon whose name i
 | Kopta rokkit launcha | 24" | 8 | 3 | Assault D3 |
 | Rokkit kannon | 24" | 8 | 3 | Heavy 2, Blast (3") |
 | Rokkit launcha | 24" | 8 | 3 | Assault 1 |
+| Scrap-wall lobba | 48" | 5 | 5 | Heavy 1, Blast (3"), Barrage, Pinning |
 | Squig launchas | 48" | 5 | 5 | Heavy D6, Barrage, Blast (3") |
 | Stikkbomb flinga | 12" | 3 | – | Assault 1, Blast (3"), Pinning |
 | Stikkbomb launcha | 24" | 5 | 5 | Assault 1, Large Blast (5"), Pinning |
