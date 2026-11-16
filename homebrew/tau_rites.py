@@ -13,6 +13,8 @@ T'au Sept one: shown, but an error in a Detachment of another Sept.
 """
 import re
 
+import tau_fortifications
+
 from build_catalogue import PTS, SLOTS, WARLORD_ENTRY, add_constraint, child, el, make_id, norm
 
 COMPULSORY = next(c for c in SLOTS["Troops"] if c[1] == "Compulsory Troops:")[0]
@@ -289,6 +291,7 @@ def clear_builder_rites(b, rites):
 
 
 def apply(b):
+    tau_fortifications.apply(b)
     rites = {r["name"]: r for r in b.rite_specs}
     clear_builder_rites(b, rites)
     links = b.root.find("entryLinks")
