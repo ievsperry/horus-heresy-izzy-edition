@@ -18,6 +18,10 @@ Every Drukhari unit has **Night Vision** unless its entry says otherwise.
 
 **Drukhari Skimmers.** Drukhari Antigrav vehicles may move over other models and terrain as long as they do not end on top of them†.
 
+**Drukhari Fortification.** Drukhari Fortifications are deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Infiltrate or Orbital Terror-Drop). They cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on a Drukhari Fortification fires at BS 4.
+
+**Night-Shield Matrix.** A Fortification with this Special Rule counts as equipped with night shields: enemy units targeting it for ranged attacks treat it as 6" further away than its actual position, and any ranged attack made at it at over 18" is resolved as Snap Shots.
+
 **Night Vision.** A unit that contains at least one model with this Special Rule ignores the effects of Night Fighting (see page 308) and no model may make Shrouded rolls to negate Wounds or Hull Points inflicted by their attacks. In addition, the unit can detect and target units with the Stealth special rule within 18" instead of 12".
 
 **Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
@@ -331,6 +335,9 @@ No other units may be selected as part of this Detachment.
 | Elites | 0-3 | 0-1 | 0-1 |
 | Fast Attack | 0-1 | 0-3 | 0-1 |
 | Heavy Support | 0-1 | 0-1 | 0-3 |
+| Fortifications | 0-1 | 0-1 | 0-1 |
+
+The only Fortification a Realspace Raiders Detachment may select is a Dread-Pod Drop-Turret.
 
 ## Force Organisation and Rites of War
 
@@ -345,6 +352,7 @@ Use the 2.0 Crusade Force Organisation chart, or the Aeldari and Drukhari detach
 | Fast Attack | Hellions, Reavers, Scourge Talonstrike Cadre, Beastmasters, Razorwing Jetfighter |
 | Heavy Support | Cronos Parasite Engine, Ravager, Scourge Reaper Cadre, Talos Pain Engine, Tantalus, Reaper, Voidraven Bomber |
 | Lord of War | Asdrubael Vect on the Dais of Destruction |
+| Fortifications | Torture-Spire, Kabalite Blade-Bastion, Void-Raptor Sky-Dock, Dread-Pod Drop-Turret |
 
 A Drukhari army may take one Rite of War, chosen when the army is built; these are the Drukhari Rites of Raid that Master of the Raid refers to. Each has a benefit and a limitation.
 
@@ -2133,6 +2141,173 @@ _Fleet values granted to this unit are added to Run moves and Jet Pack moves._
 | **The Dais may take:** |  |
 | – Night shields | +15 points |
 
+## Fortifications
+
+Drukhari armies may not take the standard Fortifications; they take these Drukhari Fortifications instead. All of them follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the Drukhari Fortification special rule: they are deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Infiltrate or Orbital Terror-Drop), and cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests.
+
+**Sub-Faction Enhancements.** Each Drukhari Fortification may take one Sub-Faction Enhancement matching its Detachment's Sub-faction (Kabals, Wych Cults or Haemonculus Covens).
+
+### Torture-Spire — 85 pts
+
+_A jagged tower of blackened iron and barbed hooks hung with shrieking captives and sonic amplifiers that broadcasts pure agony across the battlefield. Also called an Agony Obelisk._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Torture-Spire | – | – | 11 | 11 | 11 | 3 | – (Impassable) | No base |
+
+**Unit Composition**
+
+- 1 Torture-Spire
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Drukhari Fortification
+- Night-Shield Matrix
+- Fear (2)
+- Infiltrate: unlike standard Fortifications, a Torture-Spire may be deployed using the Infiltrate special rule anywhere outside the enemy Deployment Zone and at least 12" away from enemy units
+- Aura of Suffering: enemy units within 12" of a Torture-Spire suffer a -1 penalty to their Leadership characteristic for all Morale, Pinning, and Fear checks
+- Feast of Agony: friendly Drukhari units within 12" of a Torture-Spire gain Feel No Pain (6+) (or improve an existing Feel No Pain (X) special rule by +1, to a maximum of 4+). In addition, friendly Drukhari units within 12" gain Hatred (Everything) against any enemy unit that has failed a Morale or Pinning check earlier in that turn
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Torture-Spire may take one of the following Sub-Faction Enhancements:** |  |
+| – Splinter-Rack Munitions | +20 points |
+| – Combat-Drug Atomisers | +20 points |
+| – Flesh-Crafted Carapace | +25 points |
+
+### Kabalite Blade-Bastion — 120 pts
+
+_A razor-edged, spired redoubt dropped from a Kabalite cruiser, bristling with splinter-racks, dark-light turrets, and barbed battlements._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Kabalite Blade-Bastion | – | 4 | 11 | 11 | 11 | 4 | 15 (1 Access Point, 6 Fire Points) | No base |
+
+**Unit Composition**
+
+- 1 Kabalite Blade-Bastion
+
+**Wargear**
+
+- Four splinter cannons
+
+_The hull weapons are Automated Fire weapons (BS 4), one mounted on each facing. A crown-mounted turret is an Automated Fire weapon (BS 4) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Drukhari Fortification
+- Night-Shield Matrix
+- Razor Battlements: counts as Open-Topped Battlements on the upper terrace capable of holding up to 10 Infantry models, granting a 4+ Cover Save. Any enemy unit charging a Blade-Bastion occupied by friendly models suffers D6 Strength 4 AP – hits with the Rending (6+) special rule before the Assault is resolved
+- Slave-Brain Targeting: during your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Kabalite Blade-Bastion may exchange all four splinter cannons for:** |  |
+| – Four shredders | +10 points |
+| **The Kabalite Blade-Bastion may take one of the following crown-mounted weapon turrets:** |  |
+| – Dark lance | +20 points |
+| – Disintegrator cannon | +20 points |
+| – Twin-linked splinter cannon | +15 points |
+| **The Kabalite Blade-Bastion may take:** |  |
+| – Phantasm Grenade Launcher Array | +15 points |
+| **The Kabalite Blade-Bastion may take one of the following Sub-Faction Enhancements:** |  |
+| – Splinter-Rack Munitions | +20 points |
+| – Combat-Drug Atomisers | +20 points |
+| – Flesh-Crafted Carapace | +25 points |
+
+### Void-Raptor Sky-Dock — 80 pts
+
+_A sleek, crescent-winged anti-gravitic landing platform slung beneath a raid-corvette to refuel screaming Reaver jetbikes and Venom skimmers mid-slaughter._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Void-Raptor Sky-Dock | – | 4 | 11 | 11 | 11 | 3 | 15 models or 1 Flyer / Skimmer | No base |
+
+**Unit Composition**
+
+- 1 Void-Raptor Sky-Dock
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Drukhari Fortification
+- Night-Shield Matrix
+- Flickerfield Canopy (5+): Infantry models on the Sky-Dock gain a 5+ Invulnerable Save against shooting attacks. Any friendly Drukhari Flyer in Hover mode or Skimmer ending its Movement phase wholly on the platform gains a 4+ Invulnerable Save against shooting attacks and restores 1 lost Hull Point at the end of that turn on a D6 roll of 4+
+- Combat-Stim Refit: friendly Drukhari Flyers, Skimmers, and Cavalry (such as Reaver Jetbikes or Hellions) starting their Movement phase on the Sky-Dock add +6" to their Movement characteristic for that turn, and may re-roll failed Dangerous Terrain tests until the end of the turn
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Void-Raptor Sky-Dock may take up to two of the following:** |  |
+| – Sky-lance disintegrator cannon | +20 points each |
+| **The Void-Raptor Sky-Dock may take:** |  |
+| – Webway Portal Beacon | +20 points |
+| **The Void-Raptor Sky-Dock may take one of the following Sub-Faction Enhancements:** |  |
+| – Splinter-Rack Munitions | +20 points |
+| – Combat-Drug Atomisers | +20 points |
+| – Flesh-Crafted Carapace | +25 points |
+
+_Each Sky-Lance Turret is armed with a sky-lance disintegrator cannon (a disintegrator cannon with the Skyfire and Interceptor special rules)._
+
+### Dread-Pod Drop-Turret — 115 pts
+
+_A needle-prowed orbital terror-pod fired from a Drukhari raid cruiser that slams into the battlefield at hypersonic speed, pinning prey in overlapping crossfires._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dread-Pod Drop-Turret | – | 4 | 11 | 11 | 11 | 4 | – (Impassable) | No base |
+
+**Unit Composition**
+
+- 1 Dread-Pod Drop-Turret
+
+**Wargear**
+
+- Twin-linked dark lance
+- Four splinter cannons
+
+_The crown-mounted weapon is an Automated Fire weapon (BS 4) with a 360° line of sight; the splinter cannons (or liquifier guns) are hull-mounted Automated Fire weapons (BS 4), one on each facing._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Drukhari Fortification
+- Night-Shield Matrix
+- Orbital Terror-Drop: instead of deploying during the Fortifications step, a Dread-Pod Drop-Turret must be placed in Reserves and enters play via Deep Strike (it may arrive on Turn 1 automatically without rolling for Reserves, and does not scatter if placed within 12" of a friendly Torture-Spire or Webway Portal Beacon). When it lands, every enemy unit within 6" must immediately take a Pinning test at -1 Leadership
+- Slave-Brain Targeting: during your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Dread-Pod Drop-Turret may exchange its twin-linked dark lance for:** |  |
+| – Twin-linked disintegrator cannon | +0 points |
+| **The Dread-Pod Drop-Turret may exchange all four splinter cannons for:** |  |
+| – Four liquifier guns | +15 points |
+| **The Dread-Pod Drop-Turret may take one of the following Sub-Faction Enhancements:** |  |
+| – Splinter-Rack Munitions | +20 points |
+| – Combat-Drug Atomisers | +20 points |
+| – Flesh-Crafted Carapace | +25 points |
+
 ## Wargear
 
 ### Armour
@@ -2217,6 +2392,10 @@ A model equipped with chain-snares may inflict Hits against one enemy Infantry u
 
 Enemy models suffer -1 Weapon Skill when resolving Melee attacks against the bearer. In addition, the bearer cannot be affected by Precision Shots, Precision Strikes, or any effect that allows attacks to bypass normal targeting rules unless that rule explicitly ignores all forms of targeting protection.
 
+### Combat-Drug Atomisers
+
+Sub-Faction Enhancement (Wych Cults). Friendly Wych Cult units within 12" of this Fortification gain Furious Charge (1) and add +1 to their Initiative characteristic during the Assault phase. In addition, enemy units within 12" cannot make Withdraw Reactions during the Assault phase.
+
 ### Crucible of Malediction
 
 *A warp containment and psychic disruption relic of psycho-reactive alloys, daemon-etched insulation lattices and captured warp resonance cores.*
@@ -2228,6 +2407,10 @@ All units within 12" of one or more models equipped with a Crucible of Maledicti
 *Propulsion augmentation that manipulates atmospheric density gradients, gravitational shear vectors and localized dimensional pressure to generate extreme acceleration and evasive manoeuvring.*
 
 A model equipped with enhanced aethersails increases its Movement characteristic by +4. After completing any movement, the model gains Shrouded (5+). This effect stacks with other sources of Shrouded but cannot improve beyond Shrouded (4+). Enhanced aethersails also allow unrestricted traversal over vertical terrain and battlefield elevation differences, treating such movement as part of standard movement resolution.
+
+### Flesh-Crafted Carapace
+
+Sub-Faction Enhancement (Haemonculus Covens). Increases the Fortification's Front, Side, and Rear Armour Values by +1 (to a maximum of 12). At the start of each friendly Movement phase, roll a D6; on a 4+, the Fortification restores 1 lost Hull Point. In addition, friendly Haemonculus Coven units within 12" gain Feel No Pain (5+) (or improve an existing Feel No Pain (X) special rule by +1, to a maximum of 4+).
 
 ### Flickerfield
 
@@ -2286,6 +2469,10 @@ A unit containing one or more models equipped with a pain amplifier may select t
 *A psycho-sonic launcher that emits hallucinogenic fragmentation waves designed to destabilize perception, memory and command coordination.*
 
 Enemy units that suffer one or more hits from this weapon suffer -2 Leadership until the end of the turn. In addition, any unit that fails a Pinning test caused by this weapon gains the Disordered condition until the end of the turn. Its profile is in the Armoury.
+
+### Phantasm Grenade Launcher Array
+
+Any enemy unit that ends a move within 12" of a Fortification with a Phantasm Grenade Launcher Array must immediately take a Pinning test.
 
 ### Plasma Grenades
 
@@ -2351,6 +2538,10 @@ If a model equipped with a soul trap destroys an enemy Character in Melee, it ga
 
 Friendly Drukhari units within 6" of one or more models with a spirit probe may re-roll To Hit rolls of 1.
 
+### Splinter-Rack Munitions
+
+Sub-Faction Enhancement (Kabals). Friendly Kabal units within 12" of this Fortification (including units embarked inside or occupying its battlements) may re-roll failed To Hit rolls with Poisoned ranged weapons (such as splinter rifles, splinter cannons, and splinter pistols).
+
 ### Stinger Pods
 
 *Toxin dispersal systems that release airborne micro-toxin clouds as the bearer passes over enemy infantry.*
@@ -2374,6 +2565,10 @@ Enemy units within 6" of one or more models equipped with trophy racks must re-r
 *Aerodynamic displacement sails that convert motion into evasive vector distortion fields.*
 
 A model equipped with venom sails gains Fleet (2). If it already has Fleet, increase its value by +1 to a maximum of 4. In addition, after completing a Charge, the model gains Hit & Run until the end of the turn.
+
+### Webway Portal Beacon
+
+Friendly Drukhari units arriving via Deep Strike within 12" of a Fortification with a Webway Portal Beacon do not scatter.
 
 ### Webway Rift Generator
 
@@ -2410,6 +2605,7 @@ All weapons listed here are counted as 'Splinter' weapons for those rules that a
 | Shardcarbine | 18" | 3 | 6 | Assault 3, Poisoned (4+) |
 | Shredder | Template | 3 | 6 | Assault 1, Poisoned (4+) |
 | Splinter cannon | 36" | 5 | 5 | Heavy 4, Poisoned (3+), Rending (6+) |
+| Twin-linked splinter cannon | 36" | 5 | 5 | Heavy 4, Poisoned (3+), Rending (6+), Twin-linked |
 | Splinter pistol | 12" | 3 | 6 | Pistol 1, Poisoned (4+) |
 | Splinter pods | 18" | 3 | 5 | Assault 3, Poisoned (4+), Twin-linked |
 | Splinter rifle | 24" | 4 | 6 | Rapid Fire 1, Poisoned (4+) |
@@ -2454,6 +2650,7 @@ All weapons listed here are counted as 'Darklight' weapons for those rules that 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Dark lance | 36" | 8 | 2 | Heavy 1, Lance, Exoshock (6+) |
+| Twin-linked dark lance | 36" | 8 | 2 | Heavy 1, Lance, Exoshock (6+), Twin-linked |
 | Twin dark lance | 36" | 8 | 2 | Heavy 2, Lance, Exoshock (6+) |
 
 #### Disintegrator Weapons
@@ -2464,6 +2661,8 @@ All weapons listed here are counted as 'Darklight' weapons for those rules that 
 | --- | --- | --- | --- | --- |
 | Disintegrator blaster | 18" | 5 | 3 | Assault 2, Rending (5+) |
 | Disintegrator cannon | 36" | 9 | 2 | Heavy 2, Rending (5+), Sunder |
+| Sky-lance disintegrator cannon | 36" | 9 | 2 | Heavy 2, Rending (5+), Sunder, Skyfire, Interceptor |
+| Twin-linked disintegrator cannon | 36" | 9 | 2 | Heavy 2, Rending (5+), Sunder, Twin-linked |
 | Pulse disintegrator | 36" | 8 | 2 | Heavy 6, Pinning, Shell Shock (1) |
 | Twin disintegrator cannon | 36" | 5 | 3 | Heavy 6, Rending (5+) |
 
