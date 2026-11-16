@@ -58,6 +58,10 @@ A model with the Kroot special rule is subject to the following rules:
 
 A T'au Retinue Squad does not occupy a Force Organisation slot, and is instead selected as part of the same HQ choice as the model with the Cadre Commander special rule that unlocked it. A Detachment may include one Retinue Squad for each model with the Cadre Commander special rule it contains. A Retinue Squad must be deployed with the character that unlocked it joined to the unit, and that character may not voluntarily leave the Retinue Squad during the battle unless the Retinue Squad is destroyed.
 
+#### Drone-Assisted Targeting
+
+During your Shooting phase, each weapon on a Fortification with this Special Rule automatically fires at BS 3 at the nearest visible enemy unit within range (a hull-mounted weapon at the nearest within its 90° fire arc), unless a model embarked inside or occupying its battlements fires it manually using its own Ballistic Skill. A weapon firing at a unit with one or more Markerlight tokens re-rolls failed To Hit rolls.
+
 #### Drone Controller
 
 A unit with this special rule may include models with the Drone sub-type, either as part of its Unit Composition or bought from its Options, up to the number its datasheet allows. These drones follow the Drone (sub-type) rules for drones taken as part of a parent unit.
@@ -132,6 +136,10 @@ When building an army, choose one Sept for each detachment. Every T'au unit in t
 #### Stealth
 
 If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
+
+#### T'au Fortification
+
+A T'au Fortification (Remote Sensor Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker or Orca Sky-Pad) is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Infiltrate or Manta Orbital Insertion). It cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on it fires at BS 3.
 
 #### Tidewall Mobility
 
@@ -406,7 +414,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Fast Attack | Pathfinders, Tactical Drones, Piranhas, Vespid Stingwings, Kroot Hounds, Krootox Riders, Sun Shark Bomber, Razorshark Strike Fighter, Tetra Scout Speeders, Remora Stealth Drones, Barracuda, Orca Dropship, Piranha TX-42, Krootox Rampagers, Knarloc Riders |
 | Heavy Support | Broadside Battlesuits, Hammerhead Gunship, Sky Ray Gunship, Sniper Drone Team, Heavy Gun Drones, XV109 Y'vahra, XV107 R'varna, Drone Sentry Turret, Shas'vre Ob'lotai 9-0, Great Knarloc |
 | Lord of War | KV128 Stormsurge, KX139 Ta'unar Supremacy Armour, Tiger Shark Fighter-Bomber, Manta Super-heavy Dropship |
-| Fortifications | Tidewall Droneport, Tidewall Gunrig, Tidewall Shieldline |
+| Fortifications | Tidewall Droneport, Tidewall Gunrig, Tidewall Shieldline, Remote Sensor Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker, Orca Sky-Pad |
 
 ### Drones
 
@@ -3430,9 +3438,186 @@ Use the Sniper Drone profile from the Drones section. A Firesight Marksman may b
 - Reflective Field: each unmodified save of 6 made using the Energy Shield inflicts one hit at Strength 5, AP 5 on the attacking unit
 - Tidewall Mobility
 
+**T'au Fortifications.** The Remote Sensor Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker and Orca Sky-Pad follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the T'au Fortification special rule. Each may take one Sept Enhancement matching its Detachment's Sept (T'au Sept, Vior'la, Bork'an, Sa'cea or Farsight Enclaves).
+
+#### Remote Sensor Tower — 75 pts
+
+_A sleek, camouflaged reconnaissance pylon dropped ahead of a Hunter Cadre that maps enemy heat signatures, scrambles incoming reserves, and guides long-range fire._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Remote Sensor Tower | – | 3 | 10 | 10 | 10 | 2 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Remote Sensor Tower
+
+**Wargear**
+
+- Sensor-tower markerlight
+
+_The sensor-tower markerlight is a networked markerlight: an Automated Fire weapon (BS 3) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- T'au Fortification
+- Infiltrate: this Fortification is deployed using the standard Infiltrate special rule (anywhere outside the enemy Deployment Zone and at least 18" away from enemy units in line of sight, or 12" away if out of line of sight)
+- Stealth Field (5+): this Fortification has Shrouded (5+) against all shooting attacks made from more than 12" away
+- Tactical Uplink Array: friendly T'au units arriving via Deep Strike within 12" of a Remote Sensor Tower do not scatter. In addition, friendly T'au units within 12" may make Interceptor Reactions at full Ballistic Skill rather than Snap Shots
+- Signal Jammer: enemy units arriving from Reserves (including Deep Strike and Outflank) within 18" of this Fortification subtract 1 from their Reserves rolls and scatter an additional D6" if arriving via Deep Strike. In addition, if an enemy Deep Strike Assault is declared with its initial unit placed within 18" of a Remote Sensor Tower, that Deep Strike Assault becomes Disordered on a D6 roll of 1 or 2 rather than just a 1
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Remote Sensor Tower may take one of the following Sept Enhancements:** |  |
+| – Coordinated Fire-Control | +20 points |
+| – Hot-Blooded Thrust-Relays | +20 points |
+| – Experimental Weapon Accelerators | +25 points |
+| – Urban Camouflage Matrix | +15 points |
+| – Close-Quarters Sensor-Grid | +20 points |
+
+#### Heavy Rail-Turret Emplacement — 125 pts
+
+_An armoured, low-profile gun pit housing a twin-linked Hammerhead railgun turret supported by automated drone-loaders._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Heavy Rail-Turret Emplacement | – | 3 | 12 | 12 | 11 | 3 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Heavy Rail-Turret Emplacement
+
+**Wargear**
+
+- Twin-linked railgun
+
+_The turret weapon is an Automated Fire weapon (BS 3) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- T'au Fortification
+- Drone-Assisted Targeting
+- Stabilized Firing Platform: friendly T'au Infantry units within 3" of this Emplacement gain a 4+ Cover Save against shooting attacks
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Heavy Rail-Turret Emplacement may exchange its twin-linked railgun for one of the following:** |  |
+| – Twin-linked ion cannon | +0 points |
+| – Twin-linked heavy rail rifle array | +15 points |
+| **The Heavy Rail-Turret Emplacement may take up to two of the following:** |  |
+| – Attached Gun Drone | +10 points each |
+| **The Heavy Rail-Turret Emplacement may take one of the following Sept Enhancements:** |  |
+| – Coordinated Fire-Control | +20 points |
+| – Hot-Blooded Thrust-Relays | +20 points |
+| – Experimental Weapon Accelerators | +25 points |
+| – Urban Camouflage Matrix | +15 points |
+| – Close-Quarters Sensor-Grid | +20 points |
+
+#### Manta Strike Drop-Bunker — 135 pts
+
+_A prefabricated, retro-thruster-braked Earth Caste command bunker dropped from the belly of a Manta Missile Destroyer to anchor a newly secured beachhead._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Manta Strike Drop-Bunker | – | 3 | 12 | 12 | 12 | 4 | 15 (1 Access Point, 6 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Manta Strike Drop-Bunker
+
+**Wargear**
+
+- Four burst cannons
+- Smart missile system
+
+_The burst cannons (or missile pods or flamers) are hull-mounted Automated Fire weapons (BS 3), one on each facing. The smart missile system is roof-mounted, an Automated Fire weapon (BS 3) with a 360° line of sight, Ignores Cover and Barrage._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- T'au Fortification
+- Drone-Assisted Targeting
+- Manta Battlements: counts as Open-Topped Battlements on the roof capable of holding up to 10 Infantry models, granting a 4+ Cover Save
+- Manta Orbital Insertion: instead of deploying during the Fortifications step, a Manta Strike Drop-Bunker may be placed in Reserves and enter play via Deep Strike (it may arrive on Turn 1 automatically without rolling for Reserves, and does not scatter if placed within 12" of a friendly Remote Sensor Tower or Pathfinder unit)
+- Cadre Command Relay: friendly T'au units within 12" of an occupied Manta Strike Drop-Bunker may re-roll failed Morale and Pinning tests
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Manta Strike Drop-Bunker may exchange all four burst cannons for one of the following:** |  |
+| – Four missile pods | +25 points |
+| – Four flamers | +0 points |
+| **The Manta Strike Drop-Bunker may take:** |  |
+| – Guardian Shield Generator | +25 points |
+| **The Manta Strike Drop-Bunker may take one of the following Sept Enhancements:** |  |
+| – Coordinated Fire-Control | +20 points |
+| – Hot-Blooded Thrust-Relays | +20 points |
+| – Experimental Weapon Accelerators | +25 points |
+| – Urban Camouflage Matrix | +15 points |
+| – Close-Quarters Sensor-Grid | +20 points |
+
+#### Orca Sky-Pad — 85 pts
+
+_An elevated, interlocking alloy landing deck equipped with magnetic docking clamps, plasma-capacitor chargers, and automated skyfire missile pods. Also called a Drone-Refit Platform._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Orca Sky-Pad | – | 3 | 11 | 11 | 11 | 3 | 15 models or 1 Flyer / Skimmer | Use model |
+
+**Unit Composition**
+
+- 1 Orca Sky-Pad
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- T'au Fortification
+- Repulsor Field (5+): Infantry models on the Orca Sky-Pad gain a 5+ Invulnerable Save against shooting attacks. Any friendly T'au Flyer in Hover mode or Skimmer ending its Movement phase wholly on the platform gains a 4+ Invulnerable Save against shooting attacks and restores 1 lost Hull Point at the end of that turn on a D6 roll of 4+
+- Jetpack & Skimmer Refit: friendly T'au Flyers, Skimmers, and Battlesuit / Jet Pack units starting their Movement phase on the Orca Sky-Pad add +6" to their Movement characteristic for that turn, and may re-roll failed Dangerous Terrain tests until the end of the turn
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Orca Sky-Pad may take up to two of the following:** |  |
+| – Skyfire missile pod | +20 points each |
+| **The Orca Sky-Pad may take:** |  |
+| – Sky-Pad Homing Beacon | +15 points |
+| **The Orca Sky-Pad may take one of the following Sept Enhancements:** |  |
+| – Coordinated Fire-Control | +20 points |
+| – Hot-Blooded Thrust-Relays | +20 points |
+| – Experimental Weapon Accelerators | +25 points |
+| – Urban Camouflage Matrix | +15 points |
+| – Close-Quarters Sensor-Grid | +20 points |
+
+_Each Skyfire Missile Turret is armed with a skyfire missile pod (a twin-linked missile pod with the Skyfire and Interceptor special rules)._
+
 ## Wargear
 
 ### Items
+
+#### Attached Gun Drone
+
+A gun drone that remains docked on its Fortification and fires its twin-linked pulse carbine at BS 3 against the nearest visible enemy unit within 18".
 
 #### Baggage Harness
 
@@ -3447,11 +3632,19 @@ Packs, ammunition and supplies strapped to a Great Knarloc for the Kroot that ma
 
 The bearer's unit adds 1 to its combat resolution, and friendly T'au units within 6" of the bearer may re-roll failed Morale and Pinning tests.
 
+#### Close-Quarters Sensor-Grid
+
+Sept Enhancement (Farsight Enclaves). Friendly Farsight Enclaves units within 12" of this Fortification gain Preferred Enemy (Infantry) when targeting enemy units within 12" of the firing unit, and gain Counter-Attack (1) if charged while within 6" of the Fortification.
+
 #### Communion Helm
 
 A helm that links the Oracle to the will of the Vespid hive.
 
 The bearer gains the Adamantium Will (5+) special rule.
+
+#### Coordinated Fire-Control
+
+Sept Enhancement (T'au Sept). Friendly T'au Sept units within 12" of this Fortification add +1 to their Ballistic Skill when making Overwatch or Return Fire Reactions (to a maximum of BS 4).
 
 #### Disruption Pod
 
@@ -3459,11 +3652,23 @@ A vehicle-mounted system that distorts the vehicle's image.
 
 A vehicle with a disruption pod has Shrouded (6+).
 
+#### Experimental Weapon Accelerators
+
+Sept Enhancement (Bork'an). All ranged weapons mounted on this Fortification, and all Pulse, Plasma, Ion and Rail weapons fired by friendly Bork'an Infantry within 6", add +6" to their maximum range.
+
+#### Guardian Shield Generator
+
+The Fortification and any friendly T'au Infantry models within 3" of it have a 5+ Invulnerable Save against shooting attacks.
+
 #### Homing Beacon
 
 A transmitter that guides incoming battlesuits to their drop point.
 
 Friendly units arriving by Deep Strike within 6" of a model with a homing beacon do not scatter.
+
+#### Hot-Blooded Thrust-Relays
+
+Sept Enhancement (Vior'la). Friendly Vior'la units starting their Movement phase within 12" of this Fortification add +2" to their Movement characteristic and may fire Rapid Fire weapons as Assault weapons during that turn.
 
 #### Hover Drone
 
@@ -3539,6 +3744,10 @@ The bearer has a 4+ Invulnerable Save.
 
 The range of the joined Ethereal's Invocations is increased from 12" to 18", and the bearer's unit adds 1 to its combat resolution.
 
+#### Sky-Pad Homing Beacon
+
+Friendly T'au units arriving via Deep Strike within 12" of a Fortification with a Sky-Pad Homing Beacon do not scatter.
+
 #### Stealth Field Generator
 
 A sensor-baffling field projected by the Ghostkeel's stealth drones.
@@ -3556,6 +3765,10 @@ The bearer gains the Void Shields (2) special rule.
 The layered shield projectors of the Ta'unar Supremacy Armour.
 
 The bearer gains the Void Shields (6) special rule.
+
+#### Urban Camouflage Matrix
+
+Sept Enhancement (Sa'cea). Friendly Sa'cea Infantry units within 12" of this Fortification gain Shrouded (6+) (or improve an existing Shrouded roll by +1, to a maximum of 4+) and may re-roll failed Pinning tests.
 
 #### Vespid Wings
 
@@ -3965,6 +4178,9 @@ Weapons for destroying armour, from the battlesuit's fusion blaster to the Hamme
 | Rail rifle | 30" | 6 | 1 | Rapid Fire, Rending (6+) |
 | Railgun – solid shot | 72" | 10 | 1 | Heavy 1, Armourbane (Ranged), Sunder |
 | Railgun – submunition | 72" | 6 | 4 | Heavy 1, Large Blast (5") |
+| Twin-linked railgun – solid shot | 72" | 10 | 1 | Heavy 1, Twin-linked, Armourbane (Ranged), Sunder |
+| Twin-linked railgun – submunition | 72" | 6 | 4 | Heavy 1, Twin-linked, Large Blast (5"), Pinning |
+| Twin-linked heavy rail rifle array | 60" | 8 | 2 | Heavy 4, Twin-linked, Rending (5+) |
 
 ##### Ion and Plasma Weapons
 
@@ -3977,6 +4193,7 @@ Weapons that strip atoms from their target, or fire superheated plasma without t
 | High-intensity plasma rifle | 30" | 7 | 4 | Rapid Fire, Rending (4+) |
 | Ion accelerator | 72" | 7 | 3 | Heavy 3, Rending (6+) |
 | Ion cannon | 60" | 7 | 3 | Heavy 3, Rending (6+) |
+| Twin-linked ion cannon | 60" | 7 | 3 | Heavy 3, Rending (6+), Twin-linked |
 | Ion rifle | 30" | 7 | 4 | Rapid Fire, Breaching (6+) |
 | Plasma rifle | 24" | 6 | 4 | Rapid Fire, Rending (4+) |
 | Quad ion turret | 30" | 7 | 4 | Heavy 4, Breaching (6+) |
@@ -4010,8 +4227,10 @@ Guided missiles and specialist weapons that let T'au firepower reach any target.
 | Destroyer missile | 120" | 10 | 1 | Heavy 1, Armourbane (Ranged), One Use |
 | High-yield missile pod | 36" | 7 | 4 | Heavy 1, Large Blast (5") |
 | Markerlight | 36" | – | – | Heavy 1; places Markerlight tokens |
+| Sensor-tower markerlight | 36" | – | – | Heavy 1, Skyfire; places Markerlight tokens |
 | Twin-linked networked markerlight | 36" | – | – | Heavy 1, Twin-linked; each hit places D3 Markerlight tokens |
 | Missile pod | 36" | 7 | 4 | Assault 1, Blast (3") |
+| Skyfire missile pod | 36" | 7 | 4 | Assault 1, Blast (3"), Twin-linked, Skyfire, Interceptor |
 | Seeker missile | 72" | 8 | 3 | Heavy 1, One Use |
 | Smart missile system | 30" | 5 | 5 | Heavy 4, Indirect Fire, Barrage† |
 
