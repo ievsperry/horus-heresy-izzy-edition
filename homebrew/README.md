@@ -85,6 +85,9 @@ loading. The script prints anything in the doc it could not place.
   one Hive Fleet Enhancement (`tyranid_fortifications.py`, run by the builder): shown only in a Detachment of that
   Hive Fleet, and an error in another. A Cluster's enhancement is bought once for the whole unit. The game
   system's own Fortifications are hidden from a Tyranid Detachment (`faction_fortifications.py`, below).
+- Asuryani have three Asuryani Fortifications beside the Holo-Field Defence Line and Webway Gate (the doc's
+  "## Fortifications": Wraithbone Bastion, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar), each with the
+  Asuryani Fortification rule. Holo-Field Emitters and the Spirit-Stone Relay are Fortification Wargear.
 - Orks take their own Ork Fortifications (the doc's "## Fortifications": Mekboy Workshop, Ork Scrap-Bastion,
   Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement) as Fortification choices, each with the
   Ork Fortification army rule. The game system's own Fortifications are hidden from an Ork Detachment. A Waaagh!
