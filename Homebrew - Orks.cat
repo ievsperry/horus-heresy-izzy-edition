@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="62" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="63" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -1563,6 +1563,30 @@ The effect lasts until the end of the turn.</description>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="cc99-941b-4cf3-61b1" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Waaagh! Banner Totem" hidden="false" id="ccb5-f9da-16ab-1afc" type="selectionEntry" targetId="8653-4f83-3f23-361b">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="3554-12b0-120b-b3ec" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="01a8-a446-d342-a796" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Gorkamorka Idol" hidden="false" id="526e-e90b-b03c-47f7" type="selectionEntry" targetId="616e-002c-760c-a130">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="c0f7-98ae-ad42-98d5" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="fd3c-5b3e-cc23-b50e" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Supa-Slugga Emplacement" hidden="false" id="6090-442d-572a-a9cc" type="selectionEntry" targetId="6e93-2c1e-3359-cb47">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="3d83-7f18-f90f-04da" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="2441-3bcd-e317-2277" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Scrap-Listening Post" hidden="false" id="a341-c0ff-2a2e-9534" type="selectionEntry" targetId="e881-c8cd-5197-83e8">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="853b-9fdd-4972-1ac1" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="a80f-be2b-467d-aafc" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Killa Kans" hidden="true" id="96c8-151d-dfe0-a2b6" type="selectionEntry" targetId="dfb9-1c6b-1b26-a03e">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -1909,6 +1933,21 @@ The effect lasts until the end of the turn.</description>
       </profiles>
       <infoLinks>
         <infoLink name="Twin-linked" id="0b40-953c-41e0-4e5a" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Supa-slugga battery" hidden="false" id="9b20-57b4-2b3c-78df" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Supa-slugga battery" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c660-a711-34ff-7c54" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pinning" id="0eea-9bba-bb86-100d" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Quad big shoota" hidden="false" id="65ff-67de-8889-4d36" publicationId="96d0-c462-d158-fbad">
@@ -2623,6 +2662,21 @@ The effect lasts until the end of the turn.</description>
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked rokkit launcha" hidden="false" id="1177-404a-4f65-084a" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Twin-linked rokkit launcha" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d076-e893-09e2-acb5" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="647a-7d9e-1db1-4b26" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scrap-wall lobba" hidden="false" id="44ba-6a3b-bfc1-c746" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -4126,6 +4180,22 @@ The effect lasts until the end of the turn.</description>
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Idol Kustom Force Field" hidden="false" id="8056-3c0d-b917-7a19" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Idol Kustom Force Field" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d67f-8541-f984-9020">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Gorkamorka Idol and all friendly Ork units within 3" of it have a 5+ Invulnerable Save against shooting attacks.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (X)" id="2474-5b62-ca84-b833" hidden="false" targetId="85f3-c187-c717-378e" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (5+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kustom Force Field" hidden="false" id="2579-9744-3dac-8284" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Kustom Force Field" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="c89d-619b-5b79-cac9">
@@ -4216,6 +4286,15 @@ The effect lasts until the end of the turn.</description>
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scrap-Wall Barricades" hidden="false" id="76a8-c0f5-8511-5eac" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Scrap-Wall Barricades" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7d9a-86ee-22dc-401e">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Friendly Ork Infantry units within 3" of a Fortification with Scrap-Wall Barricades have a 5+ Cover Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Smoke Bombz" hidden="false" id="3004-e579-9491-f268" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -4319,6 +4398,15 @@ The effect lasts until the end of the turn.</description>
         <profile name="Tellyporta Homing Beacon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="a196-7536-12de-2200">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Friendly Ork units arriving via Deep Strike within 12" of a Fortification with a Tellyporta Homing Beacon do not scatter.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Totem Grot Riggers" hidden="false" id="bf6a-b5d4-d754-6fa7" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Totem Grot Riggers" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1c70-39b4-3221-21d0">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Fortification with Totem Grot Riggers regains 1 lost Hull Point at the start of each friendly Movement phase on a D6 roll of 5+.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -19696,6 +19784,363 @@ The effect lasts until the end of the turn.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50" />
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Waaagh! Banner Totem" hidden="false" id="8653-4f83-3f23-361b" publicationId="96d0-c462-d158-fbad">
+      <rules>
+        <rule name="Green Tide Rally Point" id="f55b-2e2b-2379-7807" hidden="false">
+          <description>Friendly Ork units within 12" of a Waaagh! Banner Totem use the highest Leadership characteristic among friendly Ork units within 12" of any Waaagh! Banner Totem on the battlefield, and may re-roll failed Morale and Pinning tests</description>
+        </rule>
+        <rule name="'Ere We Go! Aura" id="e21a-5fde-89e5-2f99" hidden="false">
+          <description>Friendly Ork Infantry units within 12" of a Waaagh! Banner Totem gain the Fleet (1) special rule</description>
+        </rule>
+        <rule name="Dakka-Totem" id="a161-b389-2555-e97c" hidden="false">
+          <description>During your Shooting phase, this Fortification automatically fires its weapon at BS 2 at the nearest visible enemy unit within range</description>
+        </rule>
+        <rule name="Note" id="97dd-311e-49a3-04ba" hidden="false">
+          <description>A towering, smoke-belching scrap-totem festooned with glyphs, trophy skulls, and twin-linked big shootas that whips nearby Boyz into a bloodthirsty frenzy. Also called a Waaagh! Banner Totem-Turret. Inspired by the Dawn of War Waaagh! Banner.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="c755-83eb-e03e-c93c" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Ork Fortification" id="7fd4-8e13-ece4-fabd" hidden="false" targetId="3ab1-541f-ab72-42ad" type="rule" />
+        <infoLink name="Kustom-Built &amp; Clunky" id="756c-99c8-f8e3-660a" hidden="false" targetId="f943-006d-ce9a-a769" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="4ba7-6827-f105-afab" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Waaagh! Banner Totem" hidden="false" id="cb1d-d740-1683-b84c" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aeff-1c27-6458-332a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9c2-c90d-6b3c-f51e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Waaagh! Banner Totem" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="44bc-bc37-e6b4-7ff6" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked big shoota" hidden="false" id="510f-a105-8325-4640" defaultSelectionEntryId="ab13-4295-9c28-0b45">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a24-5dc0-8969-6fd4" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0811-e848-47e7-24d8" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked big shoota" hidden="false" id="ab13-4295-9c28-0b45" type="selectionEntry" targetId="6658-e52b-0dc5-d975">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e285-6c9e-743b-248c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked rokkit launcha" hidden="false" id="d845-2169-7dd7-86f4" type="selectionEntry" targetId="1177-404a-4f65-084a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c07d-e9ef-5ca3-0994" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Kustom mega-kannon" hidden="false" id="9a64-c5b0-7437-c1b2" type="selectionEntry" targetId="f9b2-f3fc-04e8-eab2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b23-8610-bb2c-9b3c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="6a9b-7d03-b868-8206">
+              <entryLinks>
+                <entryLink import="true" name="Totem Grot Riggers" hidden="false" id="dfb8-8325-11c3-96b6" type="selectionEntry" targetId="bf6a-b5d4-d754-6fa7">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79ea-3ce6-f975-e8ec" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Gorkamorka Idol" hidden="false" id="616e-002c-760c-a130" publicationId="96d0-c462-d158-fbad">
+      <rules>
+        <rule name="Zoggin' Tough" id="4bda-e978-454d-db0b" hidden="false">
+          <description>Friendly Ork Infantry units within 12" of a Gorkamorka Idol gain Feel No Pain (6+) against Wounds caused by shooting attacks</description>
+        </rule>
+        <rule name="Gork's Roar / Mork's Sneakiness" id="5c8f-1724-d60b-4f50" hidden="false">
+          <description>At the start of your turn, choose one: Gork's Roar grants friendly Ork units within 12" +1 Strength in the following Assault phase; Mork's Sneakiness grants friendly Ork units within 12" Shrouded (6+) against shooting attacks made from more than 12" away</description>
+        </rule>
+        <rule name="Krumper's Collapsed Pile" id="aca4-5238-8ed1-877e" hidden="false">
+          <description>If this Fortification is reduced to 0 Hull Points, it automatically Explodes out to D6" (inflicting D6 Strength 6 AP 4 hits on every unit within D6" before the model is removed)</description>
+        </rule>
+        <rule name="Note" id="256c-9b99-9931-01e1" hidden="false">
+          <description>A massive, crude iron-and-stone effigy crackling with unstable kustom-energy fields that supercharge nearby sluggas and give Orks a stubborn refusal to stay down. Also called a Big Mek Altar. Inspired by the Dawn of War Mork / Gork Totems.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="b709-673c-eae8-5e45" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Ork Fortification" id="2c38-a7c6-3352-146d" hidden="false" targetId="3ab1-541f-ab72-42ad" type="rule" />
+        <infoLink name="Kustom-Built &amp; Clunky" id="07b9-3661-ca43-9fb9" hidden="false" targetId="f943-006d-ce9a-a769" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="03b9-b5ae-1243-f30b" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Gorkamorka Idol" hidden="false" id="caaf-a181-a182-1c55" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79d1-d560-a8fc-d49a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ca0-ee26-0bc8-134a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Gorkamorka Idol" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="35f3-3f7c-5e51-6009" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">10 (1 Access Point, 4 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange big shootas" hidden="false" id="31a2-d51a-81ea-656f" defaultSelectionEntryId="65cb-6f06-52e5-a683">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22a8-fefb-2c49-bd97" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa8d-39ac-9ef4-db84" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Two big shootas" hidden="false" id="65cb-6f06-52e5-a683" type="selectionEntry" targetId="984e-4493-4a55-f507">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4fb-3ac6-640d-f581" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Two twin-linked rokkit launchas" hidden="false" id="ab8a-0d91-f37d-05ca" type="selectionEntry" targetId="ed86-65b3-f9cb-98a0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9137-1465-55bf-119d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="df8a-20b3-eb85-57fa">
+              <entryLinks>
+                <entryLink import="true" name="Idol Kustom Force Field" hidden="false" id="6125-d11e-a5d5-c8e3" type="selectionEntry" targetId="8056-3c0d-b917-7a19">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f8c-5995-7ced-b7b0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two big shootas" hidden="false" id="984e-4493-4a55-f507" publicationId="96d0-c462-d158-fbad">
+      <entryLinks>
+        <entryLink import="true" name="Big shoota" hidden="false" id="2b01-25d1-4b5c-2f6e" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f7c7-7c5a-b3cc-23e6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8071-b757-7073-dd17" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two twin-linked rokkit launchas" hidden="false" id="ed86-65b3-f9cb-98a0" publicationId="96d0-c462-d158-fbad">
+      <entryLinks>
+        <entryLink import="true" name="Twin-linked rokkit launcha" hidden="false" id="3efa-4768-68ad-4435" type="selectionEntry" targetId="1177-404a-4f65-084a">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8ca1-913a-3bf4-9dab" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="38b0-c66d-bd1f-6a3e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Supa-Slugga Emplacement" hidden="false" id="6e93-2c1e-3359-cb47" publicationId="96d0-c462-d158-fbad">
+      <rules>
+        <rule name="More Dakka!" id="efe1-eb92-28f5-7f6a" hidden="false">
+          <description>If an enemy unit declares a Charge against this Emplacement or a friendly Ork unit within 3" of it, this Emplacement fires Overwatch rolling 2D6 shots instead of its normal number of shots, hitting on a natural 5+ regardless of Ballistic Skill modifiers</description>
+        </rule>
+        <rule name="Automated Overwatch" id="a8a7-c9f8-1601-27ef" hidden="false">
+          <description>Once per enemy Assault phase, this Fortification may make an Overwatch Reaction without spending a point from your Reaction Allotment</description>
+        </rule>
+        <rule name="Note" id="620f-50d9-1fa6-88d9" hidden="false">
+          <description>An armoured plate-shackled firing pit housing an oversized, belt-fed kinetic slugga cannon built to turn charging infantry into red mist. Also called a Supa-Slugga Gun Emplacement. Inspired by Dawn of War heavy gun nests.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="c06e-b567-1f03-cd66" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Ork Fortification" id="4e81-d767-7234-52ca" hidden="false" targetId="3ab1-541f-ab72-42ad" type="rule" />
+        <infoLink name="Kustom-Built &amp; Clunky" id="667a-b1b4-6c71-e461" hidden="false" targetId="f943-006d-ce9a-a769" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="4a88-b560-6e08-5050" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Supa-Slugga Emplacement" hidden="false" id="73b8-3eb4-a8b8-8eec" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f67-d0d6-d263-2173" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a36-75b2-0f17-5d2d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Supa-Slugga Emplacement" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="41fa-7930-a616-7aa4" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange supa-slugga battery" hidden="false" id="74ab-2cc6-f536-6c0c" defaultSelectionEntryId="bcf2-9271-d859-77d5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f3e4-b718-3b55-0499" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c75b-de62-8fb5-3966" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Supa-slugga battery" hidden="false" id="bcf2-9271-d859-77d5" type="selectionEntry" targetId="9b20-57b4-2b3c-78df">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d46-bdbb-a607-0d7d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Zzap gun" hidden="false" id="0b63-767d-8ac8-c743" type="selectionEntry" targetId="9c6f-805d-2ad1-0f81">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab9c-e34c-9961-d1ee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Skorcha" hidden="false" id="9b02-b011-b0c1-2788" type="selectionEntry" targetId="00e5-d294-a1f0-e6cf">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c52f-f910-ca25-e3eb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scrap-Listening Post" hidden="false" id="e881-c8cd-5197-83e8" publicationId="96d0-c462-d158-fbad">
+      <rules>
+        <rule name="Strategic Nexus Clamp" id="f72c-aefc-790e-2d41" hidden="false">
+          <description>During deployment, if there is an Objective Marker wholly within your Deployment Zone, this Fortification may be deployed within 1" of that Objective Marker. Friendly Ork units within 3" of this Fortification count as being within range of an Objective Marker controlled by their player for triggering rules and Warlord Traits, though this Fortification does not award Victory Points at the end of the battle</description>
+        </rule>
+        <rule name="&quot;OI! LOOKOUT!&quot;" id="4086-fc44-3a25-1453" hidden="false">
+          <description>While at least 1 Gretchin model is embarked inside or within 1" of this Listening Post, friendly Ork units within 6" add +1 to their Initiative when making Reactions to Charges, and may re-roll failed Pinning tests</description>
+        </rule>
+        <rule name="Note" id="4249-85b8-10fb-e3f6" hidden="false">
+          <description>A ramshackle telemetry hut bolted over a strategic nexus, manned by a terrified crew of Gretchin with binoculars and a tin can tied to a string. Also called a Gretchin Scrap-Listening Post. Inspired by the Dawn of War Listening Post capture point.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="8b33-687a-a875-7f77" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Ork Fortification" id="f4b5-540a-c584-4089" hidden="false" targetId="3ab1-541f-ab72-42ad" type="rule" />
+        <infoLink name="Kustom-Built &amp; Clunky" id="d7ae-6f07-f882-7523" hidden="false" targetId="f943-006d-ce9a-a769" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="6662-aca0-99e2-7e8b" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Scrap-Listening Post" hidden="false" id="7a24-0a28-bc42-f17a" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6236-90c9-9952-76b5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49d5-f06b-4b39-3580" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Scrap-Listening Post" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="692c-a040-e1aa-af9c" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">10</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">5 Gretchin models (1 Access Point, 2 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="163a-a194-0d30-c58b">
+              <entryLinks>
+                <entryLink import="true" name="Scrap-Wall Barricades" hidden="false" id="dfae-7455-56ca-2c9b" type="selectionEntry" targetId="76a8-c0f5-8511-5eac">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e066-9368-179c-2abf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Big shoota" hidden="false" id="b2a7-5e2d-1f4b-cae4" type="selectionEntry" targetId="fba4-92a8-093f-9f53">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e78-a1d5-4bb6-a0d0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edf8-f56f-5a52-7388" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50" />
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Warlord Traits" hidden="false" id="28b2-da56-af1f-f4c8">
@@ -19963,6 +20408,9 @@ The effect lasts until the end of the turn.</description>
   <sharedRules>
     <rule name="Ammo Runts" id="9107-ff91-8a87-766c" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>Ammo Runts scurry alongside their masters carrying spare ammunition, replacement magazines and unstable experimental rounds looted from countless battlefields. Once per battle, before making a Shooting Attack, a model accompanied by one or more Ammo Runts may re-roll all failed To Hit rolls and failed To Wound rolls for a single Shooting Attack. After the attack has been resolved, remove one Ammo Runt from play.</description>
+    </rule>
+    <rule name="Kustom-Built &amp; Clunky" id="f943-006d-ce9a-a769" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>An Ork Fortification with this Special Rule gains the Ramshackled Vehicle (6+) special rule.</description>
     </rule>
     <rule name="Ork Fortification" id="3ab1-541f-ab72-42ad" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>Ork Fortifications are deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Orbital Slam-Drop). They cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on an Ork Fortification fires at BS 2. If a friendly Ork Infantry unit is embarked inside or occupying the Fortification's battlements, models in that unit may fire the Fortification's manual weapons using their own Ballistic Skill.</description>
