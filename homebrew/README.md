@@ -764,9 +764,18 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   take one Ætheric Dominion Enhancement, shown only with that Dominion and an error with another. The doc's
   "Primordial Annihilator" enhancement (Beacon of Undivided Chaos) belongs to Ravenous Dissolution, the eighth
   Dominion. A Rite that bars Fortification choices bars these too. It refuses to run twice.
+- `python3 homebrew/add_imperial_fortifications.py` adds the Imperial and Traitor Fortifications (`source/imperial-fortifications.md`:
+  Strategic Listening Post, Automated Sentry Turret Battery, Thermo-Plasma Conduit Tower, Orbital Uplink Bunker) to
+  `2022 - Horus Heresy.gst` as Fortification choices beside its standard Fortifications, each with the Imperial
+  Fortification rule. Twin-linked weapons link the game system's own twin-linked entries, and Reinforced Armoured
+  Plating sets Front, Side and Rear Armour to 13 on the profile. The Vox-Relay and Orbital Strike Coordinates rules come
+  with their options; Orbital Strike Coordinates (Legiones Astartes and Solar Auxilia only) is text. It refuses to
+  run twice. `faction_fortifications.py` then hides them from the Xenos armies, the Daemons of the Ruinstorm,
+  Necrons, Leagues of Votann and Rillietann.
 - `python3 homebrew/faction_fortifications.py` hides the game system's eleven standard Fortifications in a Detachment
   holding the Tyranids, Orks, Asuryani, Drukhari, Anhrathe, T'au Empire or Daemons of the Ruinstorm faction entry, since these armies take their own. Running it
-  again changes nothing.
+  again changes nothing. The Imperial Fortifications are hidden from those armies
+  and also from Necrons, Leagues of Votann and Rillietann.
 - `python3 homebrew/add_titan_legions.py` adds the Titan Legions expansion (kept as `source/titan-legions.md`) to
   `2022 - Titan Legions.cat`, with its Warlord Traits in `2022 - Mech Library.cat`. It writes:
   - the Moderati Recon Foot-Patrols (Fast Attack), Enginseer Field-Repair Team (Elites) and Secutarii Ballistarii

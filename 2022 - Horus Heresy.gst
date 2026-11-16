@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="248" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="249" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -3303,6 +3303,114 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
         <categoryLink id="eec3-bfaa-9984-36f1" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
         <categoryLink targetId="9f1e-fbf0-3032-32fe" id="fd14-fe07-a8d1-6de3" primary="false" name="Building Sub-type"/>
         <categoryLink targetId="3eeb-b4b8-3d85-245a" id="3e79-3259-21e-6162" primary="false" name="Emplacement Sub-type"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4d9d-4f91-cc49-0114" name="Strategic Listening Post" hidden="false" collective="false" import="true" targetId="5880-173d-9580-fe7c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari, Anhrathe, T'au Empire, Necrons, Leagues of Votann, Rillietann</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b0ce-f3f1-c16f-86d1" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bfb0-3cf3-b297-83ed" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9fe0-c647-0c8b-a0ec" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a4f8-8f7b-bae8-719e" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="af4f-b87c-fd33-0f49" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="da07-9606-c8f2-cbc0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6f0b-f9cc-f86d-68af" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="0579-ba86-7d06-eb3d" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9c70-33da-c421-d79f" name="Automated Sentry Turret Battery" hidden="false" collective="false" import="true" targetId="6776-3059-9fd0-71d7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari, Anhrathe, T'au Empire, Necrons, Leagues of Votann, Rillietann</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b0ce-f3f1-c16f-86d1" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bfb0-3cf3-b297-83ed" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9fe0-c647-0c8b-a0ec" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a4f8-8f7b-bae8-719e" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="af4f-b87c-fd33-0f49" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="da07-9606-c8f2-cbc0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7175-3d24-4561-e22e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="b63f-812c-c0f8-7905" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="17f1-6eb0-809a-c658" name="Thermo-Plasma Conduit Tower" hidden="false" collective="false" import="true" targetId="e792-181a-bbd3-b5be" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari, Anhrathe, T'au Empire, Necrons, Leagues of Votann, Rillietann</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b0ce-f3f1-c16f-86d1" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bfb0-3cf3-b297-83ed" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9fe0-c647-0c8b-a0ec" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a4f8-8f7b-bae8-719e" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="af4f-b87c-fd33-0f49" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="da07-9606-c8f2-cbc0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8749-11fe-e199-ee26" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="d9bd-207c-0842-47be" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ef9a-43ec-8c1b-5f75" name="Orbital Uplink Bunker" hidden="false" collective="false" import="true" targetId="4984-9c2f-03dc-d9c5" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari, Anhrathe, T'au Empire, Necrons, Leagues of Votann, Rillietann</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b0ce-f3f1-c16f-86d1" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bfb0-3cf3-b297-83ed" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9fe0-c647-0c8b-a0ec" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a4f8-8f7b-bae8-719e" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="af4f-b87c-fd33-0f49" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="da07-9606-c8f2-cbc0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3c96-51f8-1919-bf10" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="fe13-0210-3883-f57c" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -12726,6 +12834,562 @@ In addition, a model receives no benefit from the Hammer of Wrath (X) Special Ru
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Strategic Listening Post" hidden="false" id="5880-173d-9580-fe7c">
+      <rules>
+        <rule name="Tactical Nexus Deployment" id="fc64-58e2-60a1-d875" hidden="false">
+          <description>During deployment, if there is an Objective Marker wholly within your Deployment Zone, this Fortification may be deployed within 1" of that Objective Marker</description>
+        </rule>
+        <rule name="Automated Overwatch" id="b06a-2f74-d84c-10ec" hidden="false">
+          <description>Once per enemy Assault phase, if an enemy unit declares a Charge against this Fortification or a friendly unit within 3" of it, this Fortification may make an Overwatch Reaction at BS 3 without spending a point from your Reaction Allotment</description>
+        </rule>
+        <rule name="Note" id="70d9-a453-ceba-b3a1" hidden="false">
+          <description>An armoured Imperial telemetry bunker anchored over vital tactical junctions to secure lines of communication and provide overlapping fire support.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Imperial Fortification" id="6099-7dee-67bc-d2eb" hidden="false" targetId="2ad1-af72-c6f8-9a08" type="rule"/>
+      </infoLinks>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Strategic Listening Post" hidden="false" id="bdd4-f875-92b5-d664">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="262d-4346-efc7-2863" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb41-b483-c308-5aea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Strategic Listening Post" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="1a6a-fcee-2d22-598a">
+              <modifiers>
+                <modifier type="set" field="0ef8-a648-01d0-08ee" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5880-173d-9580-fe7c" childId="0343-3bed-3aec-adee" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f150-c0dc-c192-9cb3" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5880-173d-9580-fe7c" childId="0343-3bed-3aec-adee" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8d4e-2aea-fffc-d556" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="5880-173d-9580-fe7c" childId="0343-3bed-3aec-adee" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">10 (1 Access Point, 4 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked heavy bolter" hidden="false" id="8a73-c077-dc65-974b" defaultSelectionEntryId="d516-9570-937d-090c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3456-f7e4-d921-b47d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d31-c505-7bf7-ba20" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked heavy bolter" hidden="false" id="d516-9570-937d-090c" type="selectionEntry" targetId="d03c-9f7e-84fa-d6e8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28da-2a5d-6054-089c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked autocannon" hidden="false" id="7722-ebd6-f168-b555" type="selectionEntry" targetId="0a9c-0518-1ab2-0fe0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d87-a6e4-2fea-6029" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked lascannon" hidden="false" id="6c72-565f-1f16-3d26" type="selectionEntry" targetId="3adf-7150-9ee6-b2de">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50da-d021-cecc-6b4f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked volkite culverin" hidden="false" id="ec91-c57e-bd3c-4805" type="selectionEntry" targetId="eb0b-f445-05c8-c9b8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61b3-97ea-deaf-6feb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="dfe2-1040-61bd-b3e0">
+              <entryLinks>
+                <entryLink import="true" name="Reinforced Armoured Plating" hidden="false" id="e756-c2b2-d8f2-a01d" type="selectionEntry" targetId="0343-3bed-3aec-adee">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57ee-9415-8e1e-0568" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Cognis-Signum / Vox-Relay" hidden="false" id="bbbf-9b41-8b21-6d73" type="selectionEntry" targetId="e2e7-9681-76db-4c00">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99d1-1d9f-75c3-5296" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Automated Sentry Turret Battery" hidden="false" id="6776-3059-9fd0-71d7">
+      <rules>
+        <rule name="Turret Deployment" id="9141-ea6e-c2e4-e71e" hidden="false">
+          <description>All turrets in the unit must be deployed within 12" of at least one other turret in the unit during the Fortifications deployment step</description>
+        </rule>
+        <rule name="Slaved Targeter-Grid" id="b115-9366-8c78-4c72" hidden="false">
+          <description>During your Shooting phase, each turret automatically fires at the nearest visible enemy unit within range. If two or more turrets from the same unit target the same enemy unit, those attacks gain Preferred Enemy (that unit) for that Shooting phase</description>
+        </rule>
+        <rule name="Note" id="8761-c263-0f29-3b0f" hidden="false">
+          <description>Pop-up armoured gun-emplacements slaved to automated targeter-cogitators to lock down fire lanes.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Imperial Fortification" id="2d11-964c-535b-b6c8" hidden="false" targetId="2ad1-af72-c6f8-9a08" type="rule"/>
+      </infoLinks>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Automated Sentry Turret" hidden="false" id="1341-6426-1b0f-6426">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c3e-ad8b-6e67-877a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8440-f5e2-6534-a1d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Automated Sentry Turret" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="c090-6eb0-cb8d-3372">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked heavy bolter" hidden="false" id="2e08-6e99-3add-531e" defaultSelectionEntryId="8fb1-a30d-152a-5f44">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e87-6f1d-992f-3765" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aea4-62c3-1963-853f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked heavy bolter" hidden="false" id="8fb1-a30d-152a-5f44" type="selectionEntry" targetId="d03c-9f7e-84fa-d6e8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e7a-d736-2cdb-28d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked autocannon" hidden="false" id="d453-4a2d-7006-b159" type="selectionEntry" targetId="0a9c-0518-1ab2-0fe0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a969-55fd-7d8a-9a6b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked missile launcher" hidden="false" id="12ec-d639-4e65-3d6a" type="selectionEntry" targetId="d809-1b5f-3ae0-33cd">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7f3-3b94-554c-a18f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma cannon" hidden="false" id="aefb-74cb-e873-294c" type="selectionEntry" targetId="43f5-3815-6b3a-a363">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c572-a36f-79f1-1799" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked lascannon" hidden="false" id="d575-a269-ca23-6caa" type="selectionEntry" targetId="3adf-7150-9ee6-b2de">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1719-442b-2df6-7fad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" hidden="false" id="5470-2e87-f4b9-634e">
+          <entryLinks>
+            <entryLink import="true" name="Camo-Netting" hidden="false" id="50b4-8f3c-fba4-d9ea" type="selectionEntry" targetId="fb97-8e58-fff4-0675">
+              <modifiers>
+                <modifier type="increment" field="ec87-0715-60a8-275a" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="6776-3059-9fd0-71d7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1341-6426-1b0f-6426" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ec87-0715-60a8-275a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="63b7-b952-bfb6-4b16">
+          <entryLinks>
+            <entryLink import="true" name="Searchlights" hidden="false" id="684c-f155-fb92-041b" type="selectionEntry" targetId="4ae3-79b4-6051-505e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f78-93ea-be48-f3f3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Thermo-Plasma Conduit Tower" hidden="false" id="e792-181a-bbd3-b5be">
+      <rules>
+        <rule name="Auxiliary Power Feed" id="4b9a-a302-641e-b317" hidden="false">
+          <description>Friendly units within 12" of this Fortification may re-roll Gets Hot rolls of 1 for Plasma, Volkite, Conversion, and Melta weapons</description>
+        </rule>
+        <rule name="Shield Booster" id="2c8f-4bc9-321e-62ce" hidden="false">
+          <description>Friendly Vehicles and Fortifications within 12" of this Fortification that possess an Invulnerable Save improve that Invulnerable Save by +1 (to a maximum of 4+) against shooting attacks</description>
+        </rule>
+        <rule name="Catastrophic Plasma Meltdown" id="c9ec-bdc3-3b06-01ab" hidden="false">
+          <description>If this Fortification is reduced to 0 Hull Points, centre a Massive Blast (7") marker over the tower; every unit under the template (friend or foe) suffers D6 Strength 8 AP 2 hits with the Ignores Cover and Instant Death special rules before the model is removed</description>
+        </rule>
+        <rule name="Note" id="34c7-24db-e2f2-ee23" hidden="false">
+          <description>An unstable geothermal power-relay tower used by expeditionary forces to feed auxiliary energy into heavy weapons and defensive shield projectors.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Imperial Fortification" id="30ec-9da0-ebc3-ad58" hidden="false" targetId="2ad1-af72-c6f8-9a08" type="rule"/>
+      </infoLinks>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Thermo-Plasma Conduit Tower" hidden="false" id="149f-8a6c-44eb-985d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2705-b381-25cc-4434" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6916-acac-1dee-b031" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Thermo-Plasma Conduit Tower" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="e0e3-fa0a-bd7d-21cc">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">–</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="bd5e-d0de-9d56-ddad">
+              <entryLinks>
+                <entryLink import="true" name="Armoured Ceramite" hidden="false" id="553b-bf33-0d60-3e41" type="selectionEntry" targetId="8ca2-511f-e8ce-f92d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b87b-d4d6-65f0-2b74" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Auxiliary Void Shield" hidden="false" id="9186-97e0-589d-5e00" type="selectionEntry" targetId="1a21-147a-da4f-0fdb">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d11d-1b32-bbb7-0b89" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Orbital Uplink Bunker" hidden="false" id="4984-9c2f-03dc-d9c5">
+      <rules>
+        <rule name="Drop-Beacon Relay" id="d0e2-a092-88aa-c662" hidden="false">
+          <description>Friendly units arriving via Deep Strike (including Drop Pods and Deep Strike Assaults) within 12" of an occupied Orbital Uplink Bunker do not scatter</description>
+        </rule>
+        <rule name="Tactical Auspex Uplink" id="3c38-0df3-00fc-6870" hidden="false">
+          <description>While a friendly HQ or Reconnaissance unit is embarked inside this Fortification, your army gains +1 point to its Reaction Allotment during your opponent's Shooting phase (a single unit still cannot make more than one Reaction per phase)</description>
+        </rule>
+        <rule name="Note" id="fec4-1d00-1495-fdb8" hidden="false">
+          <description>A reinforced command bunker fitted with high-gain void-transponders to guide orbital drop-assaults and direct fire from orbiting warships.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Imperial Fortification" id="15cd-c8e0-3a76-bfa4" hidden="false" targetId="2ad1-af72-c6f8-9a08" type="rule"/>
+      </infoLinks>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Orbital Uplink Bunker" hidden="false" id="ffc3-6a55-ed23-6ff6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6541-be1c-f316-f73e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aafa-8896-2cfb-6208" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Orbital Uplink Bunker" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="9132-0c77-c7ea-f93e">
+              <modifiers>
+                <modifier type="set" field="0ef8-a648-01d0-08ee" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="4984-9c2f-03dc-d9c5" childId="0343-3bed-3aec-adee" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f150-c0dc-c192-9cb3" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="4984-9c2f-03dc-d9c5" childId="0343-3bed-3aec-adee" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8d4e-2aea-fffc-d556" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="4984-9c2f-03dc-d9c5" childId="0343-3bed-3aec-adee" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">10 (1 Access Point)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="fca4-3324-50b2-6dda">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7cf-ff80-6968-c56a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="2c60-4a68-3154-9004" type="selectionEntry" targetId="07fd-c24a-9235-4206">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55fd-dc20-0d3d-f99a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="442f-ee68-1958-e272" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73ba-0f1a-d6d1-65b9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="6116-bf6b-7522-84e2">
+              <entryLinks>
+                <entryLink import="true" name="Reinforced Armoured Plating" hidden="false" id="064b-8a36-4e7e-1a74" type="selectionEntry" targetId="0343-3bed-3aec-adee">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4815-bab3-6e47-fdfc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Armoured Ceramite" hidden="false" id="8ce3-7514-9d00-ac10" type="selectionEntry" targetId="8ca2-511f-e8ce-f92d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d16f-f945-0bf0-c79f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Orbital Strike Coordinates" hidden="false" id="7358-6c96-af1e-071a" type="selectionEntry" targetId="a7ca-e0f7-f61c-1be0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a29c-07af-4952-d6f1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Nuncio-vox" hidden="false" id="b2fb-0ac1-e345-2807" type="selectionEntry" targetId="005e-aae6-ddac-bb45">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1efb-d188-095c-0599" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e85c-2a78-075c-d6b2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Auspex Array" hidden="false" id="76e6-628a-b27e-ae08" type="selectionEntry" targetId="84d1-af25-7781-4aed">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="299a-cf1c-c3de-a438" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef7f-e2fa-38cc-59b6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Void-Transponder Array" hidden="false" id="08e2-92f0-0105-ed2c" type="selectionEntry" targetId="b9f4-0c8c-6bbf-1cc8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3bcf-f2de-1ac1-3440" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b7c-6894-f8f3-4836" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="110"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked missile launcher" hidden="false" id="d809-1b5f-3ae0-33cd">
+      <profiles>
+        <profile name="Twin-linked missile launcher – frag" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e28e-3ea5-8952-b5ce">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Pinning, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Twin-linked missile launcher – krak" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="bc05-f5ce-69c9-7570">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="eb46-09f7-9541-b913" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Blast (3&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" id="d1c6-215c-61e8-2f21" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink name="Twin-linked" id="1d41-94ff-94f1-21e5" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Armoured Ceramite" hidden="false" id="8ca2-511f-e8ce-f92d">
+      <profiles>
+        <profile name="Armoured Ceramite" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="c550-abbb-9bb5-5c57">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Enemy weapons with the Melta special rule do not roll extra armour penetration dice against a Fortification with Armoured Ceramite.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Auspex Array" hidden="false" id="84d1-af25-7781-4aed">
+      <profiles>
+        <profile name="Auspex Array" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3aa4-9a70-e0ae-285d">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An Orbital Uplink Bunker's auspex array gives it the Tactical Auspex Uplink special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Auxiliary Void Shield" hidden="false" id="1a21-147a-da4f-0fdb">
+      <profiles>
+        <profile name="Auxiliary Void Shield" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5089-a640-278f-74b1">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Fortification has 1 Void Shield (AV 12), as detailed in the Age of Darkness rulebook.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Camo-Netting" hidden="false" id="fb97-8e58-fff4-0675">
+      <profiles>
+        <profile name="Camo-Netting" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="9f24-2d0c-81b8-d834">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A turret with camo-netting has Shrouded (6+).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cognis-Signum / Vox-Relay" hidden="false" id="e2e7-9681-76db-4c00">
+      <profiles>
+        <profile name="Cognis-Signum / Vox-Relay" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d97e-e0e6-89fc-a689">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Fortification with a Cognis-Signum / Vox-Relay has the Vox-Relay special rule: friendly Infantry units with the Line sub-type within 6" of it may re-roll failed Morale and Pinning tests. In addition, friendly units within 3" of it (including units embarked inside it) count as being within range of an Objective Marker controlled by their player for the purpose of triggering special rules, Warlord Traits, and Rites of War (such as Heart of the Legion), though the Fortification does not award Victory Points at the end of the battle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Orbital Strike Coordinates" hidden="false" id="a7ca-e0f7-f61c-1be0">
+      <profiles>
+        <profile name="Orbital Strike Coordinates" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="96e1-aede-7a75-85b1">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Legiones Astartes and Solar Auxilia only. Once per game (One Shot), during your Shooting phase, if a friendly HQ model is embarked inside this Fortification, they may call down an Orbital Bombardment instead of firing a weapon: Range Unlimited, Strength 9, AP 2, Ordnance 1, Massive Blast (7"), Barrage, Pinning, One Shot (it always scatters 2D6").</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reinforced Armoured Plating" hidden="false" id="0343-3bed-3aec-adee">
+      <profiles>
+        <profile name="Reinforced Armoured Plating" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="2a70-4517-3813-5aac">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Fortification's Front, Side and Rear Armour Values are 13.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Void-Transponder Array" hidden="false" id="b9f4-0c8c-6bbf-1cc8">
+      <profiles>
+        <profile name="Void-Transponder Array" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="8d73-98fe-8b5e-d9f9">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An Orbital Uplink Bunker's void-transponder array gives it the Drop-Beacon Relay special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -21258,6 +21922,9 @@ If the Toughness Test is failed, the target unit's Initiative Characteristic is 
     At the start of the Charge sub-phase, a Charge must be declared for this unit if there is an enemy unit within 2&quot;, and the closest enemy unit must always be selected as the target of this Charge if possible (if multiple eligible units are equally distant then the controlling player must select one of those eligible units to be the target of the Charge).
     
     If that test is failed, the unit suffers one Wound, allocated by the controlling player. No Saving Throws or Damage Mitigation rolls of any kind may be made against this Wound.</description>
+    </rule>
+    <rule name="Imperial Fortification" id="2ad1-af72-c6f8-9a08" hidden="false">
+      <description>An Imperial Fortification is deployed during the Fortifications deployment step within your Deployment Zone. It cannot move, declare Charges, make Reactions (unless granted by a specific special rule), control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on it fires at BS 3, or uses the Ballistic Skill of an embarked model firing it manually.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
