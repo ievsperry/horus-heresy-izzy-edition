@@ -88,6 +88,8 @@ loading. The script prints anything in the doc it could not place.
 - Asuryani have three Asuryani Fortifications beside the Holo-Field Defence Line and Webway Gate (the doc's
   "## Fortifications": Wraithbone Bastion, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar), each with the
   Asuryani Fortification rule. Holo-Field Emitters and the Spirit-Stone Relay are Fortification Wargear.
+  The shared Aeldari Warhost Detachment takes 0-2 Fortifications and the Aeldari Auxiliary Detachment 0-1 (in all
+  four Aeldari lists).
 - Orks take their own Ork Fortifications (the doc's "## Fortifications": Mekboy Workshop, Ork Scrap-Bastion,
   Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement) as Fortification choices, each with the
   Ork Fortification army rule. The game system's own Fortifications are hidden from an Ork Detachment. A Waaagh!
