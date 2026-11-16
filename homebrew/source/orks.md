@@ -607,6 +607,7 @@ All normal Liber Orks rules, Waaagh! rules and Klan rules apply unless specifica
 | Fast Attack | — | 4 |
 | Heavy Support | — | 4 |
 | Primarch | — | 1 |
+| Fortifications | — | 2 |
 
 **Support Detachment (Optional)**
 
@@ -650,6 +651,7 @@ Lords of War Detachments may only be selected in games of 2,500 points or greate
 | Fast Attack | Warbikers, Stormboyz, Buggies, Trukks |
 | Heavy Support | Lootas, Mek Gunz, Deff Dreads, Killa Kans |
 | Primarch | Ghazghkull Thraka |
+| Fortifications | Ork Fortifications |
 | Lords of War | Stompas, Gargants, Titans |
 
 **Waaagh! Warband Restrictions**
@@ -687,6 +689,7 @@ All normal Liber Orks rules, Klan rules and Waaagh! rules apply unless specifica
 | Elites | — | 4 |
 | Fast Attack | — | 2 |
 | Heavy Support | — | 2 |
+| Fortifications | — | 1 |
 
 **Battlefield Role Assignment**
 
@@ -697,6 +700,7 @@ All normal Liber Orks rules, Klan rules and Waaagh! rules apply unless specifica
 | Elites | Nobz, Meganobz, Burna Boyz, Kommandos |
 | Fast Attack | Stormboyz, Warbikers |
 | Heavy Support | Lootas, Killa Kans, Deff Dreads |
+| Fortifications | Ork Fortifications |
 
 **Scappin' Waaagh! Restrictions**
 

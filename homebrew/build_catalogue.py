@@ -5527,7 +5527,7 @@ class Builder:
                     cols = cells[1:]
                     continue
                 if cells:
-                    role = re.match(r"(HQ|Elites|Troops|Fast Attack|Heavy Support|Lords of War|Primarch)"
+                    role = re.match(r"(HQ|Elites|Troops|Fast Attack|Heavy Support|Lords of War|Primarch|Fortifications)"
                                     r"(?: \((Compulsory|Optional)\))?$", cells[0])
                     if role and cols and cols[0] == "Minimum" and label and re.match(r"(Primary|Support) Detachment", label):
                         parts.setdefault(label, []).append((role.group(1), cells[1], cells[2]))

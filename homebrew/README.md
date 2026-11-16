@@ -87,8 +87,9 @@ loading. The script prints anything in the doc it could not place.
   system's own Fortifications are hidden from a Tyranid Detachment (`faction_fortifications.py`, below).
 - Orks take their own Ork Fortifications (the doc's "## Fortifications": Mekboy Workshop, Ork Scrap-Bastion,
   Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement) as Fortification choices, each with the
-  Ork Fortification army rule. The game system's own Fortifications are hidden from an Ork Detachment. The
-  Waaagh! Warband and Scappin' Waaagh! charts have no Fortification slot, so these are taken in the Crusade chart.
+  Ork Fortification army rule. The game system's own Fortifications are hidden from an Ork Detachment. A Waaagh!
+  Warband Primary Detachment takes up to two and a Scappin' Waaagh! Primary Detachment up to one (a "Fortifications"
+  row in a Detachment chart is read like the others).
 
 - Vehicles, Dreadnoughts, Knights and Titans get the game system's Vehicle or Knights
   and Titans profile, and their sub-types (Fast, Flyer, Transport...) as categories.
