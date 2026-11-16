@@ -109,8 +109,9 @@ loading. The script prints anything in the doc it could not place.
   0-1 Fortifications, and only the Dread-Pod Drop-Turret (the others are hidden there). The game system's own
   Fortifications are hidden from a Drukhari Detachment.
 - Orks take their own Ork Fortifications (the doc's "## Fortifications": Mekboy Workshop, Ork Scrap-Bastion,
-  Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement) as Fortification choices, each with the
-  Ork Fortification army rule. The game system's own Fortifications are hidden from an Ork Detachment. A Waaagh!
+  Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement, and the Waaagh! Banner Totem, Gorkamorka
+  Idol, Supa-Slugga Emplacement and Scrap-Listening Post) as Fortification choices, each with the Ork Fortification
+  army rule (the last four also Kustom-Built & Clunky: Ramshackled Vehicle (6+)). The game system's own Fortifications are hidden from an Ork Detachment. A Waaagh!
   Warband Primary Detachment takes up to two and a Scappin' Waaagh! Primary Detachment up to one (a "Fortifications"
   row in a Detachment chart is read like the others).
 

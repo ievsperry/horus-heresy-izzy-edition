@@ -24,6 +24,8 @@ Once per battle, before making a Shooting Attack, a model accompanied by one or 
 
 After the attack has been resolved, remove one Ammo Runt from play.
 
+**Kustom-Built & Clunky.** An Ork Fortification with this Special Rule gains the Ramshackled Vehicle (6+) special rule.
+
 **Ork Fortification.** Ork Fortifications are deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Orbital Slam-Drop). They cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on an Ork Fortification fires at BS 2. If a friendly Ork Infantry unit is embarked inside or occupying the Fortification's battlements, models in that unit may fire the Fortification's manual weapons using their own Ballistic Skill.
 
 **Bigga iz Betta.** Models with the Bulky (X) special rule that join a unit add X to the total number of models in the unit for the purposes of determining Mob Rule bonuses.
@@ -578,7 +580,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Dedicated Transports | Trukk, 'Chinork' Warkopta; Battlewagon for the units that list it |
 | Lord of War | Gorkanaut, Morkanaut, Stompa |
 | Primarch | Ghazghkull Thraka |
-| Fortifications | Mekboy Workshop, Ork Scrap-Bastion, Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement |
+| Fortifications | Mekboy Workshop, Ork Scrap-Bastion, Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement, Waaagh! Banner Totem, Gorkamorka Idol, Supa-Slugga Emplacement, Scrap-Listening Post |
 
 ## Detachments
 
@@ -4021,6 +4023,158 @@ _Jagged barricades of welded battlewagon doors, tank traps, and scrap metal mann
 | – Kustom mega-kannon | +20 points |
 | – Scrap-wall lobba | +20 points |
 
+### Waaagh! Banner Totem — 65 pts
+
+_A towering, smoke-belching scrap-totem festooned with glyphs, trophy skulls, and twin-linked big shootas that whips nearby Boyz into a bloodthirsty frenzy. Also called a Waaagh! Banner Totem-Turret. Inspired by the Dawn of War Waaagh! Banner._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Waaagh! Banner Totem | – | 2 | 11 | 11 | 10 | 3 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Waaagh! Banner Totem
+
+**Wargear**
+
+- Twin-linked big shoota
+
+_The weapon is an Automated Fire weapon (BS 2) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Ork Fortification
+- Kustom-Built & Clunky
+- Green Tide Rally Point: friendly Ork units within 12" of a Waaagh! Banner Totem use the highest Leadership characteristic among friendly Ork units within 12" of any Waaagh! Banner Totem on the battlefield, and may re-roll failed Morale and Pinning tests
+- 'Ere We Go! Aura: friendly Ork Infantry units within 12" of a Waaagh! Banner Totem gain the Fleet (1) special rule
+- Dakka-Totem: during your Shooting phase, this Fortification automatically fires its weapon at BS 2 at the nearest visible enemy unit within range
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Waaagh! Banner Totem may exchange its twin-linked big shoota for one of the following:** |  |
+| – Twin-linked rokkit launcha | +15 points |
+| – Kustom mega-kannon | +20 points |
+| **The Waaagh! Banner Totem may take:** |  |
+| – Totem Grot Riggers | +10 points |
+
+### Gorkamorka Idol — 105 pts
+
+_A massive, crude iron-and-stone effigy crackling with unstable kustom-energy fields that supercharge nearby sluggas and give Orks a stubborn refusal to stay down. Also called a Big Mek Altar. Inspired by the Dawn of War Mork / Gork Totems._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Gorkamorka Idol | – | 2 | 12 | 12 | 11 | 4 | 10 (1 Access Point, 4 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Gorkamorka Idol
+
+**Wargear**
+
+- Two big shootas
+
+_The big shootas are hull-mounted Automated Fire weapons (BS 2) on opposite facings._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Ork Fortification
+- Kustom-Built & Clunky
+- Zoggin' Tough: friendly Ork Infantry units within 12" of a Gorkamorka Idol gain Feel No Pain (6+) against Wounds caused by shooting attacks
+- Gork's Roar / Mork's Sneakiness: at the start of your turn, choose one: Gork's Roar grants friendly Ork units within 12" +1 Strength in the following Assault phase; Mork's Sneakiness grants friendly Ork units within 12" Shrouded (6+) against shooting attacks made from more than 12" away
+- Krumper's Collapsed Pile: if this Fortification is reduced to 0 Hull Points, it automatically Explodes out to D6" (inflicting D6 Strength 6 AP 4 hits on every unit within D6" before the model is removed)
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Gorkamorka Idol may exchange both big shootas for:** |  |
+| – Two twin-linked rokkit launchas | +10 points |
+| **The Gorkamorka Idol may take:** |  |
+| – Idol Kustom Force Field | +25 points |
+
+### Supa-Slugga Emplacement — 80 pts
+
+_An armoured plate-shackled firing pit housing an oversized, belt-fed kinetic slugga cannon built to turn charging infantry into red mist. Also called a Supa-Slugga Gun Emplacement. Inspired by Dawn of War heavy gun nests._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Supa-Slugga Emplacement | – | 2 | 11 | 11 | 11 | 3 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Supa-Slugga Emplacement
+
+**Wargear**
+
+- Supa-slugga battery
+
+_The weapon is an Automated Fire weapon (BS 2) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Ork Fortification
+- Kustom-Built & Clunky
+- More Dakka!: if an enemy unit declares a Charge against this Emplacement or a friendly Ork unit within 3" of it, this Emplacement fires Overwatch rolling 2D6 shots instead of its normal number of shots, hitting on a natural 5+ regardless of Ballistic Skill modifiers
+- Automated Overwatch: once per enemy Assault phase, this Fortification may make an Overwatch Reaction without spending a point from your Reaction Allotment
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Supa-Slugga Emplacement may exchange its supa-slugga battery for one of the following:** |  |
+| – Zzap gun | +15 points |
+| – Skorcha | +10 points |
+
+### Scrap-Listening Post — 50 pts
+
+_A ramshackle telemetry hut bolted over a strategic nexus, manned by a terrified crew of Gretchin with binoculars and a tin can tied to a string. Also called a Gretchin Scrap-Listening Post. Inspired by the Dawn of War Listening Post capture point._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Scrap-Listening Post | – | 2 | 10 | 10 | 10 | 3 | 5 Gretchin models (1 Access Point, 2 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Scrap-Listening Post
+
+**Wargear**
+
+- Big shoota
+
+_The weapon is an Automated Fire weapon (BS 2) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Ork Fortification
+- Kustom-Built & Clunky
+- Strategic Nexus Clamp: during deployment, if there is an Objective Marker wholly within your Deployment Zone, this Fortification may be deployed within 1" of that Objective Marker. Friendly Ork units within 3" of this Fortification count as being within range of an Objective Marker controlled by their player for triggering rules and Warlord Traits, though this Fortification does not award Victory Points at the end of the battle
+- "OI! LOOKOUT!": while at least 1 Gretchin model is embarked inside or within 1" of this Listening Post, friendly Ork units within 6" add +1 to their Initiative when making Reactions to Charges, and may re-roll failed Pinning tests
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Scrap-Listening Post may take:** |  |
+| – Scrap-Wall Barricades | +10 points |
+
 ## Grot Attendants
 
 ### Ammo Runt
@@ -4201,6 +4355,10 @@ _A crew of grots clinging to the hull, hammering dents back out mid-battle._
 
 A vehicle equipped with grot riggers gains It Will Not Die (6+).
 
+### Idol Kustom Force Field
+
+The Gorkamorka Idol and all friendly Ork units within 3" of it have a 5+ Invulnerable Save against shooting attacks.
+
 ### Kustom Force Field
 
 _A crackling energy bubble projected by a backpack generator, or by the Mek's sheer belief that it works._
@@ -4251,6 +4409,10 @@ _A grot clinging to the back of a squighog, shooting and stabbing at whatever it
 |---|---|---|---|---|
 | Saddlegit's slugga | 12" | 3 | – | Pistol, Assault 1 |
 | Saddlegit's shiv | – | 3 | – | Melee, Deck Crew (1) |
+
+### Scrap-Wall Barricades
+
+Friendly Ork Infantry units within 3" of a Fortification with Scrap-Wall Barricades have a 5+ Cover Save.
 
 ### Smoke Bombz
 
@@ -4312,6 +4474,10 @@ If the unit is not Pinned after resolving these hits, it may immediately be remo
 
 Friendly Ork units arriving via Deep Strike within 12" of a Fortification with a Tellyporta Homing Beacon do not scatter.
 
+### Totem Grot Riggers
+
+A Fortification with Totem Grot Riggers regains 1 lost Hull Point at the start of each friendly Movement phase on a D6 roll of 5+.
+
 ### Waaagh! Banner
 
 _A towering glyph-banner that fills nearby Orks with even more bloodlust than usual._
@@ -4372,6 +4538,7 @@ All weapons listed here are counted as 'Dakka' weapons for those rules that affe
 | Supa-gatler | 48" | 7 | 4 | Heavy 12, Twin-linked, Pinning |
 | Supa-shoota | 36" | 6 | 4 | Assault 3 |
 | Twin-linked big shoota | 36" | 5 | 5 | Assault 6, Twin-linked |
+| Supa-slugga battery | 24" | 6 | 4 | Heavy 6, Pinning |
 | Quad big shoota | 36" | 5 | 5 | Heavy 6, Twin-linked |
 | Flak quad big shoota | 36" | 5 | 5 | Heavy 6, Twin-linked, Skyfire, Interceptor |
 | Flak-turret big shoota | 36" | 5 | 5 | Assault 6, Twin-linked, Skyfire, Interceptor |
@@ -4465,6 +4632,7 @@ Rokkit launchas, kopta rokkit launchas, grotzookas and every weapon whose name i
 | Kopta rokkit launcha | 24" | 8 | 3 | Assault D3 |
 | Rokkit kannon | 24" | 8 | 3 | Heavy 2, Blast (3") |
 | Rokkit launcha | 24" | 8 | 3 | Assault 1 |
+| Twin-linked rokkit launcha | 24" | 8 | 3 | Assault 1, Twin-linked |
 | Scrap-wall lobba | 48" | 5 | 5 | Heavy 1, Blast (3"), Barrage, Pinning |
 | Squig launchas | 48" | 5 | 5 | Heavy D6, Barrage, Blast (3") |
 | Stikkbomb flinga | 12" | 3 | – | Assault 1, Blast (3"), Pinning |
