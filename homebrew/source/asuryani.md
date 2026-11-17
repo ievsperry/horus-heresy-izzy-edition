@@ -160,7 +160,7 @@ No other units may be selected as part of this Detachment.
 | Heavy Support | Dark Reapers, Falcon Squadron, Fire Prism Squadron, Firestorm Squadron, Night Spinner Squadron, Vaul's Wrath Support Battery, Wraithlord Conclave, Wraithseer |
 | Lords of War | Cobra, Lynx, Phantom Titan, Revenant Titan, Scorpion, Skathach Wraithknight, Vampire Hunter, Vampire Raider, Wraithknight |
 | Dramatis Personae | Asurmen, Avatar of Khaine, Baharroth, Drastanta, Fuegan, Irillyth, Jain Zar, Karandras, Maugan Ra |
-| Fortifications | Holo-Field Defence Line, Webway Gate, Wraithbone Bastion, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar |
+| Fortifications | Holo-Field Defence Line, Wraithbone Force-Wall, Webway Gate, Wraithbone Bastion, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar |
 
 ## Advanced Reaction: Aspects of War
 
