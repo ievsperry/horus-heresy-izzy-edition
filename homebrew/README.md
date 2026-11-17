@@ -780,6 +780,11 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     the three generic traits or its Detachment's Dominion trait (shown, and allowed, only with that Dominion). These
     replace the official Ruinstorm and generic Warlord Traits; the Unbound characters keep their own.
   It refuses to run twice.
+- `python3 homebrew/add_centura_sanguinary_guard.py` adds Liber Centura's 0-1 Sanguinary Guard to
+  `2022 - LA - Blood Angels.cat` beside the official Sanguinary Guard Squad. As the doc's Sanguinary Retinue says,
+  it is a Retinue Squad only: a choice in the Blood Angels leaders' Retinue pick ("Sanguinary Guard (Liber
+  Centura)"), shown when the leader is Sanguinius or has a Warhawk Jump Pack, at most one per army. Master of the
+  Legion and its deployment rules are rule text. It refuses to run twice.
 - `python3 homebrew/add_ruinstorm_fortifications.py` adds the doc's Daemonic Fortifications (Warp-Breach Monolith,
   Altar of Brass & Skulls, Feculent Gnarlmaw, Warp-Lightning Spire) to `2022 - Daemons - Daemons of the Ruinstorm.cat`
   as Fortification choices with the Daemon Unit Type and Traitor. `add_ruinstorm.py` leaves them out. Each may
@@ -1090,7 +1095,8 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
     Organisation slot, so it infers one: characters are HQ, Omegon a Primarch, the Wind Riders, Ar'Kan Attack
     Speeder, Darkwing Gunship and Raptors Fast Attack, the Firestorm Bombard and Infernus Predator Heavy Support,
     the rest Elites. The Rhino Castellan is a Dedicated Transport pick on the Iron Warriors units that can take a
-    Rhino. The official Sanguinary Guard Squad stays as it is (official rules take priority, as the doc says);
+    Rhino. The official Sanguinary Guard Squad stays as it is; the doc's own 0-1 Sanguinary Guard is added by
+    `add_centura_sanguinary_guard.py` (below);
   - the doc's 9 Rites of War in the game system's Rites of War pick (each Legion's shown only to that Legion, as the
     official ones are), its additions to Angel's Wrath, Fury of the Ancients, Pride of the Legion and Sky-Hunter
     Phalanx appended to their text, and its 10 Legiones Consularis upgrades in the official pick (Lodge Master for
