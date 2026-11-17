@@ -7,13 +7,13 @@ Tyranid Detachments take Bio-Fortifications (homebrew/source/tyranids.md), Ork D
 Fortifications (homebrew/source/orks.md), Asuryani Detachments take Asuryani Fortifications
 (homebrew/source/asuryani.md), Drukhari Detachments take Drukhari Fortifications
 (homebrew/source/drukhari.md), Anhrathe Detachments take Anhrathe Fortifications
-(homebrew/source/anhrathe.md), T'au Detachments take T'au Fortifications (homebrew/source/tau.md)
-and Daemons of the Ruinstorm
+(homebrew/source/anhrathe.md), T'au Detachments take T'au Fortifications (homebrew/source/tau.md),
+Necron Detachments take Necron Fortifications (homebrew/source/necrons.md) and Daemons of the Ruinstorm
 Detachments take Daemonic Fortifications (homebrew/add_ruinstorm.py), so each of the game system's own
 Fortification entries is hidden in a Detachment holding either faction's army-wide entry.
 
 The Imperial and Traitor Fortifications (homebrew/add_imperial_fortifications.py) are hidden in those Detachments
-too, and also from Necrons, Leagues of Votann and Rillietann (IMPERIAL_ONLY). Running it again changes nothing; a new
+too, and also from Leagues of Votann and Rillietann (IMPERIAL_ONLY). Running it again changes nothing; a new
 faction is added to FACTIONS and the script run again (its old modifier is replaced)."""
 import re
 import sys
@@ -32,9 +32,10 @@ IMPERIAL = {"4d9d-4f91-cc49-0114": "Strategic Listening Post", "9c70-33da-c421-d
 FACTIONS = {"b0ce-f3f1-c16f-86d1": "Tyranids", "afca-3047-fb26-d097": "Daemons of the Ruinstorm",
             "adbe-53b5-788c-2bbb": "Orks", "d799-5beb-3b5c-80a0": "Asuryani",
             "897b-5b98-3dff-b74a": "Drukhari", "bfb0-3cf3-b297-83ed": "Anhrathe",
-            "9fe0-c647-0c8b-a0ec": "T'au Empire"}
+            "9fe0-c647-0c8b-a0ec": "T'au Empire",
+            "a4f8-8f7b-bae8-719e": "Necrons"}
 # armies that may take the standard Fortifications but not the Imperial ones
-IMPERIAL_ONLY = {"a4f8-8f7b-bae8-719e": "Necrons", "af4f-b87c-fd33-0f49": "Leagues of Votann",
+IMPERIAL_ONLY = {"af4f-b87c-fd33-0f49": "Leagues of Votann",
                  "da07-9606-c8f2-cbc0": "Rillietann"}
 COMMENT = "Hidden for armies with their own Fortifications"
 

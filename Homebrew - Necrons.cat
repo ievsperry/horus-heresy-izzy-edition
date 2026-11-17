@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="6dbb-42c9-758d-cd66" name="Necrons for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Necrons" />
   </publications>
@@ -730,6 +730,30 @@
         <categoryLink targetId="c658-dc6b-727b-c488" id="1269-7cf4-e105-49f7" primary="true" name="Lords of War:" />
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="5a6c-26a0-083a-cc88" primary="false" name="LoW &amp; Primarchs (25% Limit)" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="361c-09de-7e92-bc79" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Necron Obelisk" hidden="false" id="54d3-014e-acc4-6392" type="selectionEntry" targetId="e84a-f951-7ebc-58d4">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="71e0-5d18-2428-2279" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="9005-a8d5-ee60-c8c3" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Summoning Core" hidden="false" id="3478-60d3-5464-49a7" type="selectionEntry" targetId="fff6-c0a0-140c-508b">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="0e88-d60b-d685-f10d" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="448e-bd1b-72b2-f010" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Greater Summoning Core" hidden="false" id="82ef-a03b-2db5-d77c" type="selectionEntry" targetId="d3e2-c4d7-3aa8-e3ea">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="b0f8-fbf2-68c3-f081" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="7700-0584-0ee5-57f5" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Necron Energy Core" hidden="false" id="811a-4b75-09ef-2b31" type="selectionEntry" targetId="a037-4f56-98a2-a2de">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="660f-97a4-d99b-45b4" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="966d-eb1e-5a2b-f707" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Canoptek Wraiths" hidden="true" id="d78e-bbfd-7499-dc28" type="selectionEntry" targetId="52bd-c684-720c-a834">
@@ -1639,6 +1663,22 @@
         <infoLink name="Gauss" id="b8ac-3763-69c5-4f94" hidden="false" targetId="045c-3598-ac94-3ef3" type="rule" />
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked gauss flux arc" hidden="false" id="47d3-ac48-c2af-9c56" publicationId="6dbb-42c9-758d-cd66">
+      <profiles>
+        <profile name="Twin-linked gauss flux arc" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9f83-a80e-920f-fd20" publicationId="6dbb-42c9-758d-cd66">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Gauss, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Gauss" id="441d-ab0d-80e2-361a" hidden="false" targetId="045c-3598-ac94-3ef3" type="rule" />
+        <infoLink name="Twin-linked" id="09f7-ee5a-a69c-fe97" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gauss reaper" hidden="false" id="b5fa-2f2d-9cff-cbe4" publicationId="6dbb-42c9-758d-cd66">
       <profiles>
         <profile name="Gauss reaper" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="8630-f682-562e-d5d7" publicationId="6dbb-42c9-758d-cd66">
@@ -2029,6 +2069,15 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chronometron Array" hidden="false" id="4155-10af-11c9-749b" publicationId="6dbb-42c9-758d-cd66">
+      <profiles>
+        <profile name="Chronometron Array" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="e74e-8ce3-524e-4f02">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Friendly Necron units within 12" of a Greater Summoning Core with a Chronometron Array may re-roll failed Charge distance rolls, and enemy units charging them subtract 2" from their Charge distance rolls.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Dispersion Shield" hidden="false" id="7838-5188-2f3e-bc65" publicationId="6dbb-42c9-758d-cd66">
       <profiles>
         <profile name="Dispersion Shield" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="2cd6-9128-7afa-b4b4">
@@ -2115,11 +2164,38 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Phase-Shroud Emitters" hidden="false" id="a4ad-8f89-eec7-e9e4" publicationId="6dbb-42c9-758d-cd66">
+      <profiles>
+        <profile name="Phase-Shroud Emitters" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="525a-02ee-5d20-c593">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Necron Obelisk with Phase-Shroud Emitters has Shrouded (5+) against shooting attacks made from more than 12" away.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Phylactery" hidden="false" id="a6b9-a7ac-f0c2-4bfc" publicationId="6dbb-42c9-758d-cd66">
       <profiles>
         <profile name="Phylactery" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="e68e-fa5c-eb1f-58d3">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The bearer improves its Reanimation Protocols by 1 for itself only.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Quantum Shielding Projector" hidden="false" id="bd5d-6d4b-d701-8e3c" publicationId="6dbb-42c9-758d-cd66">
+      <profiles>
+        <profile name="Quantum Shielding Projector" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="309d-7713-770e-5297">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Necron Energy Core with a Quantum Shielding Projector has Quantum Shielding: until it loses its first Hull Point, any Armour Penetration roll against it whose total is greater than its Armour Value causes a glancing hit instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reinforced Necrodermis Plating" hidden="false" id="1c74-0dbe-8b46-b58d" publicationId="6dbb-42c9-758d-cd66">
+      <profiles>
+        <profile name="Reinforced Necrodermis Plating" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ee7c-a244-3195-149d">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Fortification's Front, Side and Rear Armour Values are 13.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7608,6 +7684,381 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="550" />
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Necron Obelisk" hidden="false" id="e84a-f951-7ebc-58d4" publicationId="6dbb-42c9-758d-cd66">
+      <rules>
+        <rule name="Strategic Nexus Clamp" id="679d-c0ec-5271-b626" hidden="false">
+          <description>During deployment, if there is an Objective Marker wholly within your Deployment Zone, this Fortification may be deployed within 1" of that Objective Marker. Friendly Necron units within 3" of this Fortification count as being within range of an Objective Marker controlled by their player for triggering rules and Warlord Traits, though this Fortification does not award Victory Points at the end of the battle</description>
+        </rule>
+        <rule name="Automated Overwatch" id="3701-016b-2279-0c3c" hidden="false">
+          <description>Once per enemy Assault phase, if an enemy unit declares a Charge against this Fortification or a friendly unit within 3" of it, this Fortification may make an Overwatch Reaction at BS 4 without spending a point from your Reaction Allotment</description>
+        </rule>
+        <rule name="Phase-Disruption Field" id="644c-85c6-545c-b5bf" hidden="false">
+          <description>Enemy units within 6" of a Necron Obelisk treat all ground as Difficult Terrain when declaring a Charge</description>
+        </rule>
+        <rule name="Note" id="f030-6988-1877-89b8" hidden="false">
+          <description>A floating, pyramid-crowned obelisk of black noctilith anchored over a strategic nexus that projects a localized phase-field and auto-engages approaching foes. Also called a Phase-Listening Post. Inspired by the Dawn of War Necron Listening Post.</description>
+        </rule>
+        <rule name="Note" id="2486-a8ed-cd47-65f0" hidden="false">
+          <description>A Fortified Obelisk has Front, Side and Rear Armour 12.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="054f-18fc-0f4a-dc6d" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Necron Fortification" id="44d7-7fe2-cd99-55da" hidden="false" targetId="2664-d274-7472-e42d" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="e387-1c10-657c-abeb" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Necron Obelisk" hidden="false" id="b921-f03b-f162-e6b6" publicationId="6dbb-42c9-758d-cd66">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2da0-6a00-7a51-8164" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a520-8b97-c3f5-2f64" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Necron Obelisk" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="f227-4135-94a2-44b1" publicationId="6dbb-42c9-758d-cd66">
+              <modifiers>
+                <modifier type="set" field="0ef8-a648-01d0-08ee" value="12">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="e84a-f951-7ebc-58d4" childId="447c-355c-1223-b998" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f150-c0dc-c192-9cb3" value="12">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="e84a-f951-7ebc-58d4" childId="447c-355c-1223-b998" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8d4e-2aea-fffc-d556" value="12">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="e84a-f951-7ebc-58d4" childId="447c-355c-1223-b998" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="0ef8-a648-01d0-08ee" value="12">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="e84a-f951-7ebc-58d4" childId="5f3a-f53c-2647-3408" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f150-c0dc-c192-9cb3" value="12">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="e84a-f951-7ebc-58d4" childId="5f3a-f53c-2647-3408" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8d4e-2aea-fffc-d556" value="12">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="e84a-f951-7ebc-58d4" childId="5f3a-f53c-2647-3408" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked gauss flux arc" hidden="false" id="bcc0-fb00-f97a-a8cb" defaultSelectionEntryId="599f-8988-47bc-a338">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="224f-5096-ea4c-31e0" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29f2-3c40-1ecc-ef1a" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked gauss flux arc" hidden="false" id="599f-8988-47bc-a338" type="selectionEntry" targetId="47d3-ac48-c2af-9c56">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5257-a871-dbb4-3d97" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked tesla destructor" hidden="false" id="dd3a-b9b4-d327-5bfc" type="selectionEntry" targetId="447c-355c-1223-b998">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c1d-fd55-52e6-8e09" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy gauss cannon" hidden="false" id="3e25-caf1-8707-baf0" type="selectionEntry" targetId="5f3a-f53c-2647-3408">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0ee-b692-b357-0580" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="b7c1-2e4e-4ac1-5361">
+              <entryLinks>
+                <entryLink import="true" name="Phase-Shroud Emitters" hidden="false" id="0eb3-0945-ea38-b238" type="selectionEntry" targetId="a4ad-8f89-eec7-e9e4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5c0-d1a9-8166-43f4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Summoning Core" hidden="false" id="fff6-c0a0-140c-508b" publicationId="6dbb-42c9-758d-cd66">
+      <rules>
+        <rule name="Reanimation Matrix" id="2e7b-2b70-3932-5dda" hidden="false">
+          <description>Friendly Necron Infantry units within 12" of a Summoning Core add +1 to their Reanimation Protocols rolls (to a maximum of 4+)</description>
+        </rule>
+        <rule name="Dimensional Translocation Beacon" id="fdd4-9f69-35ba-005d" hidden="false">
+          <description>Friendly Necron units arriving from Reserves via Deep Strike within 12" of a Summoning Core do not scatter. In addition, once per friendly Movement phase, one friendly Necron Infantry unit wholly within 6" of the Summoning Core may be removed from the battlefield and immediately placed wholly within 6" of any friendly Necron Obelisk or Monolith on the battlefield (at least 1" away from enemy models)</description>
+        </rule>
+        <rule name="Note" id="8a92-1a3b-4166-9226" hidden="false">
+          <description>A crackling, emerald-lit dimensional conduit that stabilizes translocation beams and accelerates the self-repair protocols of nearby phalanxes. Inspired by the Dawn of War Summoning Core.</description>
+        </rule>
+        <rule name="Note" id="2a4e-a546-cab3-34b6" hidden="false">
+          <description>The gauss cannon is a turret-mounted Automated Fire weapon (BS 4) with a 360° line of sight.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="5718-eb5c-a8e9-779c" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Necron Fortification" id="59fc-eae7-2901-c08d" hidden="false" targetId="2664-d274-7472-e42d" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="f824-ec85-2e30-1706" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Summoning Core" hidden="false" id="d90e-89ae-70c7-0fbe" publicationId="6dbb-42c9-758d-cd66">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0421-20e7-a372-65d4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bfc-bb6f-8c09-aaf4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Summoning Core" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="fce3-e7b3-1688-449a" publicationId="6dbb-42c9-758d-cd66">
+              <modifiers>
+                <modifier type="set" field="0ef8-a648-01d0-08ee" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="fff6-c0a0-140c-508b" childId="1c74-0dbe-8b46-b58d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f150-c0dc-c192-9cb3" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="fff6-c0a0-140c-508b" childId="1c74-0dbe-8b46-b58d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8d4e-2aea-fffc-d556" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="fff6-c0a0-140c-508b" childId="1c74-0dbe-8b46-b58d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="78ef-4c03-383d-d295">
+              <entryLinks>
+                <entryLink import="true" name="Reinforced Necrodermis Plating" hidden="false" id="35c1-a744-fe9d-8e0f" type="selectionEntry" targetId="1c74-0dbe-8b46-b58d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a046-dd90-146e-6011" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Gauss cannon" hidden="false" id="e85a-e9a4-1791-33f5" type="selectionEntry" targetId="bdd6-2d16-b50c-687e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e9a-d718-208a-3ea4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Greater Summoning Core" hidden="false" id="d3e2-c4d7-3aa8-e3ea" publicationId="6dbb-42c9-758d-cd66">
+      <rules>
+        <rule name="Disruption Field Protocols" id="5c0d-599a-5b5b-26df" hidden="false">
+          <description>Friendly Necron units within 12" of a Greater Summoning Core gain Rending (6+) on all melee attacks, and their Gauss and Tesla ranged weapons add +6" to their maximum range</description>
+        </rule>
+        <rule name="Phylactery Surge" id="ca71-7eb9-e23f-fd66" hidden="false">
+          <description>Once per game, at the start of your Movement phase, every friendly Necron Infantry unit within 12" of the Greater Summoning Core immediately restores D3 destroyed models (up to its starting unit size, placed in coherency)</description>
+        </rule>
+        <rule name="Note" id="838b-b8de-5bf0-28d8" hidden="false">
+          <description>An apex tomb-world archive housing ancient engrams that unlock devastating weapon protocols for Destroyers, Immortals, and Lychguard. Inspired by the Dawn of War Greater Summoning Core.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="ff42-35a0-a328-df72" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Necron Fortification" id="dfcb-d97a-c077-88e0" hidden="false" targetId="2664-d274-7472-e42d" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="8b2f-5ff3-d445-6b34" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Greater Summoning Core" hidden="false" id="28a4-2b4c-08cc-c0e7" publicationId="6dbb-42c9-758d-cd66">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0de-2074-cce6-4732" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0e9-f9f1-cbd5-e27e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Greater Summoning Core" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="018e-008e-bc83-ce82" publicationId="6dbb-42c9-758d-cd66">
+              <modifiers>
+                <modifier type="set" field="0ef8-a648-01d0-08ee" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="d3e2-c4d7-3aa8-e3ea" childId="1c74-0dbe-8b46-b58d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f150-c0dc-c192-9cb3" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="d3e2-c4d7-3aa8-e3ea" childId="1c74-0dbe-8b46-b58d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8d4e-2aea-fffc-d556" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="d3e2-c4d7-3aa8-e3ea" childId="1c74-0dbe-8b46-b58d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">–</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="89e7-988c-329b-461d">
+              <entryLinks>
+                <entryLink import="true" name="Reinforced Necrodermis Plating" hidden="false" id="0e0d-2adb-5827-5057" type="selectionEntry" targetId="1c74-0dbe-8b46-b58d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70ce-ee7a-7ca8-433a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Chronometron Array" hidden="false" id="ffa8-69dd-8219-b468" type="selectionEntry" targetId="4155-10af-11c9-749b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e854-0751-d791-44b1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Necron Energy Core" hidden="false" id="a037-4f56-98a2-a2de" publicationId="6dbb-42c9-758d-cd66">
+      <rules>
+        <rule name="Gauss Capacitor Overload" id="76a7-5578-7e30-ff4f" hidden="false">
+          <description>Friendly Necron units within 12" of a Necron Energy Core gain Preferred Enemy (Vehicles) when firing Gauss weapons, and may re-roll Gets Hot rolls of 1 for any weapon</description>
+        </rule>
+        <rule name="Phase-Shield Harmonic" id="9e42-6e26-18fe-a17f" hidden="false">
+          <description>Friendly Necron Vehicles and Fortifications within 12" of a Necron Energy Core that possess an Invulnerable Save improve that Invulnerable Save by +1 (to a maximum of 4+) against shooting attacks</description>
+        </rule>
+        <rule name="Molecular Rupture" id="4254-7282-1839-5d87" hidden="false">
+          <description>If this Fortification is reduced to 0 Hull Points, it automatically Explodes out to 2D6" (inflicting D6 Strength 7 AP 2 hits with Haywire and Pinning on every unit within 2D6" before the model is removed)</description>
+        </rule>
+        <rule name="Note" id="c171-8b15-b355-012a" hidden="false">
+          <description>A towering, green-arcing monolith reactor that feeds hyper-condensed energy into nearby gauss arrays and phase-shields, detonating in a blinding molecular blast if breached. Also called a Plasma Generator. Inspired by the Dawn of War Necron Plasma Generator.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="0433-6525-da10-8d25" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Necron Fortification" id="fd74-b2f0-42bd-0d1e" hidden="false" targetId="2664-d274-7472-e42d" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="5bb2-189a-eef6-4151" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Necron Energy Core" hidden="false" id="90a8-b83f-eace-8638" publicationId="6dbb-42c9-758d-cd66">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c62e-7729-3494-e506" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d19-11f7-50d9-39cf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Necron Energy Core" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="a77e-93d2-f440-1f0e" publicationId="6dbb-42c9-758d-cd66">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">–</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="fa21-5dd6-12e6-f6c7">
+              <entryLinks>
+                <entryLink import="true" name="Quantum Shielding Projector" hidden="false" id="909d-99d9-d1a4-afa5" type="selectionEntry" targetId="bd5d-6d4b-d701-8e3c">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4c3-68be-f516-822c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="95" />
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Warlord Traits" hidden="false" id="0beb-64c2-9792-abf1">
@@ -7831,6 +8282,9 @@
     </rule>
     <rule name="Living Metal" id="be44-ba3a-df9c-4284" hidden="false" publicationId="6dbb-42c9-758d-cd66">
       <description>A vehicle with this rule ignores Crew Shaken results on the Vehicle Damage table, and at the end of each of your turns, rolls a D6; on a 6, it restores one lost Hull Point†.</description>
+    </rule>
+    <rule name="Necron Fortification" id="2664-d274-7472-e42d" hidden="false" publicationId="6dbb-42c9-758d-cd66">
+      <description>A Necron Fortification is deployed during the Fortifications deployment step within your Deployment Zone. It cannot move, declare Charges, make Reactions (unless granted by a specific special rule), control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on it fires at BS 4. At the start of each friendly Movement phase, roll a D6 for each damaged Necron Fortification on the battlefield; on a 5+, it restores 1 lost Hull Point (up to its starting maximum). This is its Living Metal, in place of the vehicle rule above.</description>
     </rule>
     <rule name="Reanimation Protocols (X)" id="02d0-b2f6-035f-b837" hidden="false" publicationId="6dbb-42c9-758d-cd66">
       <description>Each time a model with this rule would lose its last Wound, roll a D6; on a roll of X or more, it is not removed and stays in play with 1 Wound. Reanimation Protocols is not Feel No Pain: rules that ignore or negate Feel No Pain do not affect it. It is a Damage Mitigation roll: a model may make only a single Damage Mitigation roll of any type (including Feel No Pain) for any given Wound. It cannot be used against Instant Death or Destroyer attacks.</description>
