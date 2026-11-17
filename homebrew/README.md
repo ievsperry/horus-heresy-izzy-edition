@@ -774,6 +774,11 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   with their options; Orbital Strike Coordinates is limited by `imperial_fortification_limits.py`. It refuses to
   run twice. `faction_fortifications.py` then hides them from the Xenos armies, the Daemons of the Ruinstorm,
   Necrons, Leagues of Votann and Rillietann.
+- `python3 homebrew/add_chaos_fortifications.py` adds the Chaos and Ruinstorm Fortifications (`source/chaos-fortifications.md`:
+  Sacrificial Circle, Daemon Pit, Desecrated Stronghold, Warp-Flayer Turret Battery) to `2022 - Horus Heresy.gst` the
+  same way (it runs `add_imperial_fortifications.py`'s main with the Chaos doc), each with the Chaos Fortification rule.
+  Each is hidden in a Detachment holding neither the Traitor allegiance nor the Daemons of the Ruinstorm army entry.
+  The Cursed Vox-Amplifier rule comes with its option. It refuses to run twice.
 - `python3 homebrew/imperial_fortification_limits.py` enforces the Orbital Uplink Bunker's Orbital Strike Coordinates
   (Legiones Astartes and Solar Auxilia only): hidden, and an error if taken, in a Detachment that holds none of the
   eighteen Legions', the Blackshields', the Shattered Legions' or the Solar Auxilia's army entries. Running it again
