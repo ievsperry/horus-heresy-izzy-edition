@@ -806,7 +806,9 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
 - `python3 homebrew/fortification_unit_types.py` gives the twelve Fortifications the scripts above and
   `add_ruinstorm_fortifications.py` added before they did so themselves (the Imperial and Chaos ones in the game
   system, the Daemonic ones in the Ruinstorm catalogue) the Fortification Unit Type and their Building or Emplacement
-  Sub-type on their root link, as the game system's own Fortifications have. Running it again changes nothing.
+  Sub-type on their root link, as the game system's own Fortifications have. It also gives the official Hammerfall
+  Bunker the Fortification Unit Type, which it lacked. Running it again changes nothing. (The official Defence Line's
+  Unit Type typo, "Fortication (Barricade)", is corrected by hand in the game system.)
 - `python3 homebrew/faction_fortifications.py` hides the game system's eleven standard Fortifications in a Detachment
   holding the Tyranids, Orks, Asuryani, Drukhari, Anhrathe, T'au Empire or Daemons of the Ruinstorm faction entry, since these armies take their own. Running it
   again changes nothing. The Imperial Fortifications are hidden from those armies

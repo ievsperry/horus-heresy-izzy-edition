@@ -6,7 +6,8 @@ usage: python3 homebrew/fortification_unit_types.py
 The game system's own Fortifications carry the Fortification Unit Type category, and their Building, Emplacement or
 Barricade Sub-type, on their root link. add_imperial_fortifications.py, add_chaos_fortifications.py and
 add_ruinstorm_fortifications.py now give their Fortifications the same (expansion_tools.fortification_categories);
-this adds them to the twelve those scripts added before, in 2022 - Horus Heresy.gst and
+this adds them to the twelve those scripts added before (and to the official Hammerfall Bunker, which lacked
+the Fortification Unit Type), in 2022 - Horus Heresy.gst and
 2022 - Daemons - Daemons of the Ruinstorm.cat. The catalogues build_catalogue.py writes get them from the builder.
 Running it again changes nothing."""
 import re
@@ -21,7 +22,7 @@ FILES = {
     "2022 - Horus Heresy.gst": ("gameSystem", [
         "Strategic Listening Post", "Automated Sentry Turret Battery", "Thermo-Plasma Conduit Tower",
         "Orbital Uplink Bunker", "Sacrificial Circle", "Daemon Pit", "Desecrated Stronghold",
-        "Warp-Flayer Turret Battery"]),
+        "Warp-Flayer Turret Battery", "Hammerfall Bunker"]),
     "2022 - Daemons - Daemons of the Ruinstorm.cat": ("catalogue", [
         "Warp-Breach Monolith", "Altar of Brass & Skulls", "Feculent Gnarlmaw", "Warp-Lightning Spire"]),
 }

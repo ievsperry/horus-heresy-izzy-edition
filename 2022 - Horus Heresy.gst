@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="254" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="255" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -3323,6 +3323,7 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       </modifiers>
       <categoryLinks>
         <categoryLink id="eec3-bfaa-9984-36f1" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="db05-9129-47ad-9dc4" name="Fortification Unit Type" hidden="false" targetId="679d-ec21-2940-fb9" primary="false"/>
         <categoryLink targetId="9f1e-fbf0-3032-32fe" id="fd14-fe07-a8d1-6de3" primary="false" name="Building Sub-type"/>
         <categoryLink targetId="3eeb-b4b8-3d85-245a" id="3e79-3259-21e-6162" primary="false" name="Emplacement Sub-type"/>
       </categoryLinks>
@@ -7570,7 +7571,7 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
           <profiles>
             <profile id="933f-9216-5827-4931" name="Defence Line" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
               <characteristics>
-                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortication (Barricade)
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortification (Barricade)
 Four double Blast Shields
 Four single Blast Shields</characteristic>
                 <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
