@@ -29,6 +29,7 @@ This conversion adapts the Traders Militant section of Liber Imperatus v1.2 for 
 | Fast Attack: +2 Optional | Grav-Speeder Squadron |
 | Heavy Support: +2 Optional | Carnodon Severax Squadron |
 | Dedicated Transport | Arvus Transport, Aurox Transport, Land Raider Armoured Carrier |
+| Fortifications: +1 Optional | Imperial Fortifications only (Strategic Listening Post, Automated Sentry Turret Battery, Thermo-Plasma Conduit Tower, Orbital Uplink Bunker) |
 
 | Other Detachments | Slots |
 | --- | --- |
