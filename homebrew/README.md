@@ -97,11 +97,12 @@ loading. The script prints anything in the doc it could not place.
   rule. Each may take one Sept Enhancement (`tau_fortifications.py`, run from `tau_rites.py`): shown only in a
   Detachment of that Sept, and an error in another. The game system's own Fortifications are hidden from a T'au
   Detachment.
-- Anhrathe take their own Anhrathe Fortifications (the doc's "## Fortifications": Void-Beacon, Anhrathe
-  Raider-Bastion, Void-Skiff Tender Platform, Orbital Lance-Pod), each with the Anhrathe Fortification and Void-Cloak
-  Matrix rules. Holo-Field Projectors and the Void-Recall Transponder are Wargear. `anhrathe_fortifications.py`
-  (run by the builder) lets the Orbital Lance-Pod swap at most two shuriken cannons for splinter cannons. The game
-  system's own Fortifications are hidden from an Anhrathe Detachment.
+- Anhrathe take their own Anhrathe Fortifications (the doc's "## Fortifications": Plunder-Beacon, Void-Bulkhead
+  Redoubt, Void-Skiff Extraction Tender, Corsair Lance-Pod), each with the Anhrathe Fortification and Lightweight
+  Void-Alloy rules (Armour never above 11, Shrouded (6+) beyond 12"). The Holo-Field Generator, Kinetic Shroud-Fields and
+  Aether-Sail Capacitor are Wargear. `anhrathe_fortifications.py` (run by the builder) lets the Corsair Lance-Pod swap
+  at most two shuriken cannons for splinter cannons. The game system's own Fortifications are hidden from an
+  Anhrathe Detachment.
 - Drukhari take their own Drukhari Fortifications (the doc's "## Fortifications": Torture-Spire, Kabalite
   Blade-Bastion, Void-Raptor Sky-Dock, Dread-Pod Drop-Turret), each with the Drukhari Fortification and
   Night-Shield Matrix rules. Each may take one Sub-Faction Enhancement (`drukhari_fortifications.py`, run by the
