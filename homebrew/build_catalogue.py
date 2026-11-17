@@ -5482,7 +5482,7 @@ class Builder:
             add_constraint(a, "min", 2, fid + "allegiance min", children=True)  # the Allegiance and the army entry
             add_constraint(a, "max", 2, fid + "allegiance max", children=True)
             for r in rows:
-                m = re.match(r"(HQ|Elites|Troops|Fast Attack|Heavy Support|Lords of War): (.+)", r[0])
+                m = re.match(r"(HQ|Elites|Troops|Fast Attack|Heavy Support|Lords of War|Fortifications): (.+)", r[0])
                 if not m:
                     continue
                 need = re.search(r"(\d+) Compulsory", m.group(2))

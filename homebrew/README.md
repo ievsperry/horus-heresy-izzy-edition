@@ -565,7 +565,7 @@ loading. The script prints anything in the doc it could not place.
   Sisters of Silence, Solar Auxilia or Imperialis Militia entry of the game system, the Asuryani or Rillietann
   army entry, or a unit with the Legiones Astartes category).
 - A "Force Organisation" table headed "X Detachment (Primary only)" with rows such as "HQ: 1 Compulsory" and
-  "Elites: 2 Compulsory, +3 Optional" is a Force Organisation Chart of the catalogue's own (the Aegis Militant
+  "Elites: 2 Compulsory, +3 Optional" (or "Fortifications: +1 Optional") is a Force Organisation Chart of the catalogue's own (the Aegis Militant
   Detachment), taken once per army. Allied and Lords of War Detachments stay the game system's.
 - "## Detachments" with "### X Organization Chart" (or "### X Detachment") sub-sections whose "**Primary
   Detachment**" and "**Support Detachment (Optional)**" tables give each Battlefield Role's Minimum and Maximum
@@ -806,7 +806,9 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
 - `python3 homebrew/faction_fortifications.py` hides the game system's eleven standard Fortifications in a Detachment
   holding the Tyranids, Orks, Asuryani, Drukhari, Anhrathe, T'au Empire or Daemons of the Ruinstorm faction entry, since these armies take their own. Running it
   again changes nothing. The Imperial Fortifications are hidden from those armies
-  and also from Necrons, Leagues of Votann and Rillietann.
+  and also from Necrons, Leagues of Votann and Rillietann. Traders Militant take only the Imperial Fortifications:
+  the standard and the Chaos Fortifications are hidden in a Detachment holding the Traders Militant army entry, and
+  the Aegis Militant Detachment takes 0-1 Fortifications.
 - `python3 homebrew/add_titan_legions.py` adds the Titan Legions expansion (kept as `source/titan-legions.md`) to
   `2022 - Titan Legions.cat`, with its Warlord Traits in `2022 - Mech Library.cat`. It writes:
   - the Moderati Recon Foot-Patrols (Fast Attack), Enginseer Field-Repair Team (Elites) and Secutarii Ballistarii

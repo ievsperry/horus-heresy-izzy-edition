@@ -13,7 +13,8 @@ Detachments take Daemonic Fortifications (homebrew/add_ruinstorm.py), so each of
 Fortification entries is hidden in a Detachment holding either faction's army-wide entry.
 
 The Imperial and Traitor Fortifications (homebrew/add_imperial_fortifications.py) are hidden in those Detachments
-too, and also from Leagues of Votann and Rillietann (IMPERIAL_ONLY). Running it again changes nothing; a new
+too, and also from Leagues of Votann and Rillietann (IMPERIAL_ONLY). Traders Militant take only the Imperial
+Fortifications (IMPERIAL_FORTIFICATIONS_ONLY): the standard and the Chaos Fortifications are hidden from them. Running it again changes nothing; a new
 faction is added to FACTIONS and the script run again (its old modifier is replaced)."""
 import re
 import sys
@@ -34,6 +35,10 @@ FACTIONS = {"b0ce-f3f1-c16f-86d1": "Tyranids", "afca-3047-fb26-d097": "Daemons o
             "897b-5b98-3dff-b74a": "Drukhari", "bfb0-3cf3-b297-83ed": "Anhrathe",
             "9fe0-c647-0c8b-a0ec": "T'au Empire",
             "a4f8-8f7b-bae8-719e": "Necrons"}
+CHAOS = {"f87d-4c40-5679-5d09": "Sacrificial Circle", "1ea1-3b27-df0e-3b2b": "Daemon Pit",
+         "fb29-291a-9211-f8df": "Desecrated Stronghold", "0f80-8bd7-02c7-d168": "Warp-Flayer Turret Battery"}
+# armies that may take only the Imperial Fortifications: the standard and Chaos ones are hidden from them
+IMPERIAL_FORTIFICATIONS_ONLY = {"5c19-0006-d20c-94fe": "Traders Militant"}
 # armies that may take the standard Fortifications but not the Imperial ones
 IMPERIAL_ONLY = {"af4f-b87c-fd33-0f49": "Leagues of Votann",
                  "da07-9606-c8f2-cbc0": "Rillietann"}
@@ -58,8 +63,10 @@ def main():
     nl = "\r\n" if "\r\n" in s else "\n"
     old = s
     imperial = dict(FACTIONS, **IMPERIAL_ONLY)
-    for eid, name, factions in ([(e, n, FACTIONS) for e, n in FORTIFICATIONS.items()] +
-                                [(e, n, imperial) for e, n in IMPERIAL.items()]):
+    standard = dict(FACTIONS, **IMPERIAL_FORTIFICATIONS_ONLY)
+    for eid, name, factions in ([(e, n, standard) for e, n in FORTIFICATIONS.items()] +
+                                [(e, n, imperial) for e, n in IMPERIAL.items()] +
+                                [(e, n, IMPERIAL_FORTIFICATIONS_ONLY) for e, n in CHAOS.items()]):
         m = re.search(rf'<entryLink [^>]*id="{eid}"[^>]*>', s)
         if not m or f'name="{name}"' not in m.group(0):
             sys.exit(f"no Fortification link {name} ({eid})")
@@ -81,8 +88,9 @@ def main():
         r = re.search(r'<gameSystem [^>]*?revision="(\d+)"', s)
         s = s[:r.start(1)] + str(int(r.group(1)) + 1) + s[r.end(1):]
         open(GST, "w", encoding="utf-8", newline="").write(s)
-        print(f"{GST}: standard Fortifications hidden for {', '.join(FACTIONS.values())}; Imperial Fortifications "
-              f"also for {', '.join(IMPERIAL_ONLY.values())}")
+        print(f"{GST}: standard Fortifications hidden for {', '.join(standard.values())}; Imperial Fortifications "
+              f"for {', '.join(imperial.values())}; Chaos Fortifications also for "
+              f"{', '.join(IMPERIAL_FORTIFICATIONS_ONLY.values())}")
     else:
         print(f"{GST}: no change")
 
