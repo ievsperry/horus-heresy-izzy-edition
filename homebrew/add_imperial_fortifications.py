@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Add the Imperial and Traitor Fortifications (homebrew/source/imperial-fortifications.md) to 2022 - Horus Heresy.gst.
 
+add_chaos_fortifications.py runs main() with the Chaos doc (see its docstring).
+
 usage: python3 homebrew/add_imperial_fortifications.py
 
 The doc's four Fortifications (Strategic Listening Post, Automated Sentry Turret Battery, Thermo-Plasma Conduit
@@ -49,8 +51,9 @@ def twin_linked(units, gst_entries):
                     l.set("targetId", by_name[want])
 
 
-def main():
-    et.configure(GST, [], DOC, "Imperial Fortifications", "imperial-fortifications")
+def main(doc=DOC, faction="Imperial Fortifications", prefix="imperial-fortifications", visible=None):
+    """visible: army-wide entry ids; when given, the Fortifications are hidden in a Detachment holding none of them."""
+    et.configure(GST, [], doc, faction, prefix)
     b, root = et.build()
     entries = {e.get("id"): e for e in root.find("sharedSelectionEntries")}
     forts = [entries[b.units[d["name"]]] for d in b.datasheets if d["slot"] == "Fortifications"]
@@ -58,7 +61,7 @@ def main():
         sys.exit(f"expected 4 Fortifications in the doc, found {len(forts)}")
     gst = Text(GST)
     if f'name="{forts[0].get("name")}"' in gst.s:
-        sys.exit(f"{GST} already has the Imperial Fortifications")
+        sys.exit(f"{GST} already has the {faction}")
     idx = et.official_index()
     units, keep_entries, keep_groups, keep_rules = et.transplant(b, root, idx, units=forts)
 
@@ -81,6 +84,15 @@ def main():
            primary=False)
         el(lc, "categoryLink", id=mid(uid, "root", "fortification"), name=FORTIFICATION[1], hidden=False,
            targetId=FORTIFICATION[0], primary=True)
+        if visible:  # modifiers come before categoryLinks in an entryLink
+            mods = et.E("modifiers")
+            m = el(mods, "modifier", type="set", field="hidden", value="true")
+            el(m, "comment").text = f"{faction}: " + ", ".join(visible.values()) + " only"
+            conds = el(el(el(m, "conditionGroups"), "conditionGroup", type="and"), "conditions")
+            for vid in visible:
+                el(conds, "condition", type="lessThan", value=1, field="selections", scope="force", childId=vid,
+                   shared=True, includeChildSelections=True, includeChildForces=False)
+            link.insert(0, mods)
         roots.append(link)
 
     gst.add(GST_ID, "entryLinks", roots)

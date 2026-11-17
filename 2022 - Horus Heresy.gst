@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="250" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="251" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -3411,6 +3411,82 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <categoryLinks>
         <categoryLink id="3c96-51f8-1919-bf10" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="fe13-0210-3883-f57c" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f87d-4c40-5679-5d09" name="Sacrificial Circle" hidden="false" collective="false" import="true" targetId="b1f6-4a4b-2d80-57c3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>Chaos Fortifications: Traitor, Daemons of the Ruinstorm only</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="64c4-627c-6959-1c23" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="2e05-b56d-80a8-01fa" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1ea1-3b27-df0e-3b2b" name="Daemon Pit" hidden="false" collective="false" import="true" targetId="d162-a8af-7ec3-317f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>Chaos Fortifications: Traitor, Daemons of the Ruinstorm only</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="dd74-226d-9978-28b8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="aef3-fd48-15ad-4f05" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fb29-291a-9211-f8df" name="Desecrated Stronghold" hidden="false" collective="false" import="true" targetId="daf8-c1ed-a12e-46b3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>Chaos Fortifications: Traitor, Daemons of the Ruinstorm only</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d016-67fa-e9ec-5bff" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="3df4-456f-dd2a-1b99" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0f80-8bd7-02c7-d168" name="Warp-Flayer Turret Battery" hidden="false" collective="false" import="true" targetId="e6ee-34e6-c734-a42e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>Chaos Fortifications: Traitor, Daemons of the Ruinstorm only</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="88fd-01fe-e520-dbcc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="f580-3400-41f8-5353" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -13455,6 +13531,464 @@ In addition, a model receives no benefit from the Hammer of Wrath (X) Special Ru
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sacrificial Circle" hidden="false" id="b1f6-4a4b-2d80-57c3">
+      <rules>
+        <rule name="Blood Tithe Aura" id="dc98-2f14-2a5e-073f" hidden="false">
+          <description>Whenever an enemy unit is destroyed within 12" of a Sacrificial Circle, friendly Traitor Legiones Astartes or Ruinstorm Daemon units within 12" immediately gain +1 Attack in the following Assault phase</description>
+        </rule>
+        <rule name="Symbol of Chaos" id="58cf-41b3-7338-4a22" hidden="false">
+          <description>Friendly Character or Daemon models within 6" of the Sacrificial Circle re-roll failed To Hit rolls of 1 in melee</description>
+        </rule>
+        <rule name="Unholy Fortitude" id="409f-2e38-0d2d-541a" hidden="false">
+          <description>Models with the Bound or Ruinstorm Daemon special rule within 6" of this Fortification gain Feel No Pain (6+) (or improve an existing Feel No Pain roll by +1, to a maximum of 4+)</description>
+        </rule>
+        <rule name="Note" id="6db4-0530-0e27-fe5c" hidden="false">
+          <description>A jagged, blood-stained rune-circle carved into the earth where dark pacts are sealed and warp-energy feeds nearby heretics. Also called a Warp-Altar. Inspired by the Dawn of War Sacrificial Circle.</description>
+        </rule>
+        <rule name="Note" id="a59a-acdc-e097-ef18" hidden="false">
+          <description>The warpfire pitcher (or heavy warp-flamer) is a warp-spire weapon: an Automated Fire weapon (BS 3).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Chaos Fortification" id="8656-fe41-0aa2-2c48" hidden="false" targetId="8024-756b-87ad-b2c6" type="rule"/>
+      </infoLinks>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Sacrificial Circle" hidden="false" id="9b71-c30e-073b-af8e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f47-ba50-d7a5-6f1f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d045-d005-cd31-cf9c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Sacrificial Circle" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="66c8-decc-e218-d675">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="5aad-fdce-acc9-fc7b">
+              <entryLinks>
+                <entryLink import="true" name="Daemonic Consecration Runes" hidden="false" id="e7a4-c005-e242-6573" type="selectionEntry" targetId="7644-b4b0-22ab-404a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1a6-72f9-aacf-63c4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Warpfire pitcher" hidden="false" id="a98b-f9a2-4f54-0bb9" type="selectionEntry" targetId="08fe-b5e1-48d7-9bce">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e299-0b0c-77cc-3a1e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Daemon Pit" hidden="false" id="d162-a8af-7ec3-317f">
+      <rules>
+        <rule name="Warp-Rift Beacon" id="09a4-0ed0-b56a-32e5" hidden="false">
+          <description>Once per game, at the start of your Movement phase, friendly Ruinstorm Daemon or Bound units arriving from Reserves may choose to be placed wholly within 6" of this Daemon Pit instead of scattering normally from their entry point</description>
+        </rule>
+        <rule name="Empyrean Infusion" id="867d-f6e1-2fd4-2363" hidden="false">
+          <description>Friendly Daemon or Possessed units within 12" of a Daemon Pit add +1 to their Strength characteristic and gain Adamantium Will (5+) against psychic powers</description>
+        </rule>
+        <rule name="Hellfire Ruin" id="cd5f-e4a9-5bf6-46da" hidden="false">
+          <description>If this Fortification is reduced to 0 Hull Points, it automatically Explodes out to D6" (inflicting D6 Strength 7 AP 3 hits with Soulblaze on every unit within D6" before the model is removed)</description>
+        </rule>
+        <rule name="Note" id="8cde-3eac-597c-8684" hidden="false">
+          <description>A boiling chasm of warp-rift energy that bleeds lesser daemons into realspace and mutates nearby constructs. Also called a Ruinstorm Portal. Inspired by the Dawn of War Daemon Pit.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Chaos Fortification" id="af65-bb13-79b2-87a1" hidden="false" targetId="8024-756b-87ad-b2c6" type="rule"/>
+      </infoLinks>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Daemon Pit" hidden="false" id="9a80-df4b-a40a-52bc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11f2-ceda-c20d-1132" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac85-0e5c-043d-9350" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Daemon Pit" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="5f2e-43d9-530e-9d17">
+              <modifiers>
+                <modifier type="set" field="0ef8-a648-01d0-08ee" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="d162-a8af-7ec3-317f" childId="0343-3bed-3aec-adee" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f150-c0dc-c192-9cb3" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="d162-a8af-7ec3-317f" childId="0343-3bed-3aec-adee" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8d4e-2aea-fffc-d556" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="d162-a8af-7ec3-317f" childId="0343-3bed-3aec-adee" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">–</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="8df2-a1fc-1707-3c62">
+              <entryLinks>
+                <entryLink import="true" name="Reinforced Armoured Plating" hidden="false" id="9f73-9d91-d1d3-fd26" type="selectionEntry" targetId="0343-3bed-3aec-adee">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50e5-cfe4-1955-585f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Warp-Screamer Horn" hidden="false" id="72c4-3a16-d17b-963d" type="selectionEntry" targetId="4293-f661-e20f-c4e2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="137e-3b7a-43e7-1cd6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="115"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Desecrated Stronghold" hidden="false" id="daf8-c1ed-a12e-46b3">
+      <rules>
+        <rule name="Strategic Nexus Clamp" id="9312-ca70-3686-49ef" hidden="false">
+          <description>During deployment, if there is an Objective Marker wholly within your Deployment Zone, this Fortification may be deployed within 1" of that Objective Marker. Friendly units within 3" of this Fortification count as being within range of an Objective Marker controlled by their player for triggering rules and Warlord Traits, though this Fortification does not award Victory Points at the end of the battle</description>
+        </rule>
+        <rule name="Automated Overwatch" id="c146-f7f2-ecad-559e" hidden="false">
+          <description>Once per enemy Assault phase, if an enemy unit declares a Charge against this Fortification or a friendly unit within 3" of it, this Fortification may make an Overwatch Reaction at BS 3 without spending a point from your Reaction Allotment</description>
+        </rule>
+        <rule name="Note" id="c995-9f56-7dad-47d8" hidden="false">
+          <description>A fortified bastion spiked with iron ribs and blaring blasphemous litanies over a seized strategic nexus. Also called a Desecrated Stronghold Turret-Post. Inspired by the Dawn of War Chaos Listening Post / Turret.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Chaos Fortification" id="8cc1-b491-38f4-68f3" hidden="false" targetId="8024-756b-87ad-b2c6" type="rule"/>
+      </infoLinks>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Desecrated Stronghold" hidden="false" id="66e1-d0e0-d026-34f9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61a9-4c1a-2f91-3ca3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="263a-bee9-a0dc-e72f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Desecrated Stronghold" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="07d3-ba71-1b23-5952">
+              <modifiers>
+                <modifier type="set" field="0ef8-a648-01d0-08ee" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="daf8-c1ed-a12e-46b3" childId="0343-3bed-3aec-adee" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f150-c0dc-c192-9cb3" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="daf8-c1ed-a12e-46b3" childId="0343-3bed-3aec-adee" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8d4e-2aea-fffc-d556" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="daf8-c1ed-a12e-46b3" childId="0343-3bed-3aec-adee" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">10 (1 Access Point, 4 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked heavy bolter" hidden="false" id="42c1-b59f-718d-edf0" defaultSelectionEntryId="5edf-d5e0-a6a5-8e7c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23fa-e635-c02e-1cae" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d3d-e07d-d09d-b981" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked heavy bolter" hidden="false" id="5edf-d5e0-a6a5-8e7c" type="selectionEntry" targetId="d03c-9f7e-84fa-d6e8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce36-cbfc-274e-3116" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Reaper autocannon" hidden="false" id="940d-98cd-4ce2-da06" type="selectionEntry" targetId="b87f-48de-6ced-043b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e21-4255-dcf7-2f3f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked lascannon" hidden="false" id="a059-2431-97f2-916f" type="selectionEntry" targetId="3adf-7150-9ee6-b2de">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c1b-6b18-a341-f3a9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy conversion beamer" hidden="false" id="e62a-7b50-5aa1-11bd" type="selectionEntry" targetId="28d8-2bfb-6d06-1e37">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf51-964c-d27f-e598" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="860b-6202-fbc8-5fd2">
+              <entryLinks>
+                <entryLink import="true" name="Reinforced Armoured Plating" hidden="false" id="faa8-bad6-1a94-d7ed" type="selectionEntry" targetId="0343-3bed-3aec-adee">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01c2-6057-fc61-aa10" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Cursed Vox-Amplifier" hidden="false" id="28e0-0f84-6432-aa64" type="selectionEntry" targetId="ee95-9d6d-225b-332f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dbf-03c4-a68d-dd98" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Warp-Flayer Turret Battery" hidden="false" id="e6ee-34e6-c734-a42e">
+      <rules>
+        <rule name="Turret Deployment" id="aede-5301-1747-af44" hidden="false">
+          <description>All turrets in the unit must be deployed within 12" of at least one other turret in the unit during the Fortifications deployment step</description>
+        </rule>
+        <rule name="Slaved Targeter-Grid" id="eca4-1c7a-8f0b-a51c" hidden="false">
+          <description>During your Shooting phase, each turret automatically fires at the nearest visible enemy unit within range. If two or more turrets from the same unit target the same enemy unit, those attacks gain Preferred Enemy (that unit) for that Shooting phase</description>
+        </rule>
+        <rule name="Dark Pact Overcharge" id="09ec-dbe3-1fb7-35d6" hidden="false">
+          <description>Once per game, a turret may overcharge its weapon for a single Shooting phase, granting all its ranged attacks +1 Strength and Shred, but it immediately loses 1 Hull Point on each To Hit roll of a natural 1</description>
+        </rule>
+        <rule name="Note" id="b89c-7f98-e590-9d66" hidden="false">
+          <description>Floating or spiked hull-mounts spitting dark-pact bolts and flaying shrapnel across approach vectors. Also called a Sentry Skull / Warp-Flayer Emplacement. Inspired by Dawn of War point-defence Chaos turrets.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Chaos Fortification" id="616e-3f73-7821-0ac1" hidden="false" targetId="8024-756b-87ad-b2c6" type="rule"/>
+      </infoLinks>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Warp-Flayer Turret" hidden="false" id="58af-e25b-fb43-af5f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6381-d50e-f1fa-36aa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="85b5-c719-61fe-2e49" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Warp-Flayer Turret" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="80aa-55ee-cba8-e95c">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked heavy bolter" hidden="false" id="ee0c-171f-1bb6-5aeb" defaultSelectionEntryId="b984-f1f1-4025-640b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67dd-8f08-26c0-df23" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4656-9d47-1ce6-3e28" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked heavy bolter" hidden="false" id="b984-f1f1-4025-640b" type="selectionEntry" targetId="d03c-9f7e-84fa-d6e8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8445-71c9-2585-4949" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Reaper autocannon" hidden="false" id="a48d-b910-f15e-b1ff" type="selectionEntry" targetId="b87f-48de-6ced-043b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f096-354d-e5a0-7887" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma cannon" hidden="false" id="34fb-a45c-3182-5e57" type="selectionEntry" targetId="43f5-3815-6b3a-a363">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="871e-4e04-3222-f9c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked lascannon" hidden="false" id="94f9-0a11-5108-5364" type="selectionEntry" targetId="3adf-7150-9ee6-b2de">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="663e-9cfb-62e3-2a31" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warpfire pitcher" hidden="false" id="08fe-b5e1-48d7-9bce">
+      <profiles>
+        <profile name="Warpfire pitcher" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f107-06f5-4883-8dd6">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Ignores Cover, Soulblaze</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignores Cover" id="a6a0-d996-d0c8-8733" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy conversion beamer" hidden="false" id="28d8-2bfb-6d06-1e37">
+      <profiles>
+        <profile name="Heavy conversion beamer – 0&quot;-18&quot;" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f6c6-6f56-96b9-57c0">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Blind</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Heavy conversion beamer – 18&quot;-42&quot;" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0e6f-1c30-2f90-0f91">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">42"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Blind</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Heavy conversion beamer – 42&quot;-72&quot;" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="05c6-34ef-4f99-1711">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Blind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="ede3-faff-3b48-10d7" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Blast (3&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Blind" id="79c6-da4a-fdde-1cbd" hidden="false" targetId="d836-747d-07d6-2b63" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cursed Vox-Amplifier" hidden="false" id="ee95-9d6d-225b-332f">
+      <profiles>
+        <profile name="Cursed Vox-Amplifier" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="df0e-e8b2-8d2c-d5a4">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Fortification with a Cursed Vox-Amplifier has the Cursed Vox-Amplifier special rule: enemy units within 12" of it suffer a -1 penalty to their Leadership when taking Morale or Pinning tests.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Daemonic Consecration Runes" hidden="false" id="7644-b4b0-22ab-404a">
+      <profiles>
+        <profile name="Daemonic Consecration Runes" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3779-a6b2-8461-7ad9">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Sacrificial Circle with Daemonic Consecration Runes has a 5+ Invulnerable Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (X)" id="5422-37e9-d725-43f8" hidden="false" targetId="74cf-5263-81c5-53d1" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (5+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warp-Screamer Horn" hidden="false" id="4293-f661-e20f-c4e2">
+      <profiles>
+        <profile name="Warp-Screamer Horn" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="cbc5-ce15-ac56-e24a">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While a Daemon Pit with a Warp-Screamer Horn is on the battlefield, friendly Ruinstorm Daemon and Bound units may re-roll their Reserves rolls.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -21990,6 +22524,12 @@ If the Toughness Test is failed, the target unit's Initiative Characteristic is 
     </rule>
     <rule name="Imperial Fortification" id="2ad1-af72-c6f8-9a08" hidden="false">
       <description>An Imperial Fortification is deployed during the Fortifications deployment step within your Deployment Zone. It cannot move, declare Charges, make Reactions (unless granted by a specific special rule), control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on it fires at BS 3, or uses the Ballistic Skill of an embarked model firing it manually.</description>
+    </rule>
+    <rule name="Chaos Fortification" id="8024-756b-87ad-b2c6" hidden="false">
+      <description>A Chaos Fortification is deployed during the Fortifications deployment step within your Deployment Zone. It cannot move, declare Charges, make Reactions (unless granted by a specific special rule), control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on it fires at BS 3, or uses the Ballistic Skill of an embarked model firing it manually.</description>
+    </rule>
+    <rule name="Invulnerable Save (X)" id="74cf-5263-81c5-53d1" hidden="false">
+      <description>The model has an Invulnerable Save of X, which may be taken against any Wound instead of its armour save.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
