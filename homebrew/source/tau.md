@@ -3531,13 +3531,13 @@ _The turret weapon is an Automated Fire weapon (BS 3) with a 360° line of sight
 | – Urban Camouflage Matrix | +15 points |
 | – Close-Quarters Sensor-Grid | +20 points |
 
-#### Manta Strike Drop-Bunker — 135 pts
+#### Manta Strike Drop-Bunker — 115 pts
 
-_A prefabricated, retro-thruster-braked Earth Caste command bunker dropped from the belly of a Manta Missile Destroyer to anchor a newly secured beachhead._
+_A prefabricated, retro-thruster-braked Earth Caste command bunker dropped from the belly of a Manta Missile Destroyer, scaled up to hold a full Hunter Cadre contingent._
 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
 |---|---|---|---|---|---|---|---|---|
-| Manta Strike Drop-Bunker | – | 3 | 12 | 12 | 12 | 4 | 15 (1 Access Point, 6 Fire Points) | Use model |
+| Manta Strike Drop-Bunker | – | 3 | 13 | 13 | 13 | 4 | 20 (1 Access Point, 8 Fire Points) | Use model |
 
 **Unit Composition**
 
@@ -3548,11 +3548,11 @@ _A prefabricated, retro-thruster-braked Earth Caste command bunker dropped from 
 - Four burst cannons
 - Smart missile system
 
-_The burst cannons (or missile pods or flamers) are hull-mounted Automated Fire weapons (BS 3), one on each facing. The smart missile system is roof-mounted, an Automated Fire weapon (BS 3) with a 360° line of sight, Ignores Cover and Barrage._
+_The burst cannons (or missile pods or flamers) are hull-mounted Automated Fire weapons (BS 3), one on each facing. The smart missile system is roof-mounted, an Automated Fire weapon (BS 3) with a 360° line of sight._
 
 **Unit Type**
 
-- Fortification (Building)
+- Fortification (Building, T'au Empire)
 
 **Special Rules**
 
@@ -3569,8 +3569,9 @@ _The burst cannons (or missile pods or flamers) are hull-mounted Automated Fire 
 | **The Manta Strike Drop-Bunker may exchange all four burst cannons for one of the following:** |  |
 | – Four missile pods | +25 points |
 | – Four flamers | +0 points |
-| **The Manta Strike Drop-Bunker may take:** |  |
-| – Guardian Shield Generator | +25 points |
+| **The Manta Strike Drop-Bunker may take any of the following:** |  |
+| – Up to 2 Void Shields | +25 points each |
+| – Drone-Uplink Relay | +20 points |
 | **The Manta Strike Drop-Bunker may take one of the following Sept Enhancements:** |  |
 | – Coordinated Fire-Control | +20 points |
 | – Hot-Blooded Thrust-Relays | +20 points |
@@ -3873,6 +3874,10 @@ Sept Enhancement (Bork'an). All ranged weapons mounted on this Fortification, an
 
 The Fortification and any friendly T'au Infantry models within 3" of it have a 5+ Invulnerable Save against shooting attacks.
 
+#### Drone-Uplink Relay
+
+While a friendly model is embarked inside a Manta Strike Drop-Bunker with a Drone-Uplink Relay, the controlling player may modify their Reserves rolls by +1 or -1.
+
 #### Guardian Shield Emitters
 
 A Portable Pulse-Barricade with Guardian Shield Emitters has its Repulsor Field (5+) special rule active.
@@ -3968,6 +3973,10 @@ The range of the joined Ethereal's Invocations is increased from 12" to 18", and
 #### Sky-Pad Homing Beacon
 
 Friendly T'au units arriving via Deep Strike within 12" of a Fortification with a Sky-Pad Homing Beacon do not scatter.
+
+#### Void Shield
+
+Each Void Shield gives the Fortification one Void Shield (Armour Value 12), as detailed in the Void Shields rules of the Age of Darkness rulebook.
 
 #### Stealth Field Generator
 

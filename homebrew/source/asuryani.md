@@ -2839,13 +2839,13 @@ _The Wraithbone Force-Wall is made up of 4 long sections and 4 short sections. T
 - Mysterious Statuary
 - Webway Strike
 
-### Wraithbone Bastion — 130 pts
+### Wraithbone Bastion — 115 pts
 
-_A sleek, gracefully curved citadel of grown wraithbone, crowned with automated spirit-stone weapon turrets and shimmering holo-fields._
+_A sleek, gracefully curved citadel of grown psycho-reactive wraithbone, trading the brute thickness of Imperial ferrocrete for psycho-lattice reinforcement and holo-fields._
 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Wraithbone Bastion | – | 4 | 12 | 12 | 12 | 4 | 15 (1 Access Point, 6 Fire Points) | No base |
+|---|---|---|---|---|---|---|---|---|
+| Wraithbone Bastion | – | 4 | 13 | 13 | 13 | 4 | 20 (1 Access Point, 8 Fire Points) | Use model |
 
 **Unit Composition**
 
@@ -2859,7 +2859,7 @@ _The hull weapons are Automated Fire weapons (BS 4), one mounted on each facing.
 
 **Unit Type**
 
-- Fortification (Building)
+- Fortification (Building, Asuryani)
 
 **Special Rules**
 
@@ -2871,7 +2871,7 @@ _The hull weapons are Automated Fire weapons (BS 4), one mounted on each facing.
 **Options**
 
 | Option | Cost |
-| --- | --- |
+|---|---|
 | **The Wraithbone Bastion may exchange all four twin-linked shuriken cannons for one of the following:** |  |
 | – Four scatter lasers | +20 points |
 | – Four starcannons | +40 points |
@@ -2879,8 +2879,9 @@ _The hull weapons are Automated Fire weapons (BS 4), one mounted on each facing.
 | – Bright lance | +20 points |
 | – Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles) | +20 points |
 | – Twin-linked starcannon | +25 points |
-| **The Wraithbone Bastion may take:** |  |
+| **The Wraithbone Bastion may take any of the following:** |  |
 | – Holo-Field Emitters | +20 points |
+| – Spirit-Stone Relay | +20 points |
 
 ### Void-Spinner Sky-Platform — 85 pts
 

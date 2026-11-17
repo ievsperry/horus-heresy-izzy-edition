@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="66" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="67" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -4180,6 +4180,15 @@ The effect lasts until the end of the turn.</description>
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grot Ammo-Stash" hidden="false" id="492c-e06e-b877-5c6a" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Grot Ammo-Stash" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="2551-f754-8acf-20de">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models embarked inside the Ork Scrap-Bastion or occupying its battlements may re-roll To Hit rolls of 1 during the Shooting phase. If the Ork Scrap-Bastion explodes, add +1 to the Building Damage table roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Idol Kustom Force Field" hidden="false" id="8056-3c0d-b917-7a19" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Idol Kustom Force Field" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d67f-8541-f984-9020">
@@ -4190,6 +4199,22 @@ The effect lasts until the end of the turn.</description>
       </profiles>
       <infoLinks>
         <infoLink name="Invulnerable Save (X)" id="2474-5b62-ca84-b833" hidden="false" targetId="85f3-c187-c717-378e" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (5+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kustom Force Field Generator" hidden="false" id="f4e8-6c49-55e1-acfd" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Kustom Force Field Generator" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="00da-c697-67ae-5708">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An Ork Scrap-Bastion with a Kustom Force Field Generator has a 5+ Invulnerable Save against shooting attacks.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (X)" id="aaaf-ba4a-d155-1864" hidden="false" targetId="85f3-c187-c717-378e" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Invulnerable Save (5+)" />
           </modifiers>
@@ -4286,6 +4311,15 @@ The effect lasts until the end of the turn.</description>
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Searchlights" hidden="false" id="e1fc-7ab1-99fe-7099" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Searchlights" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b639-ed3c-f4cb-6837">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with searchlights ignores the 24" limit to line of sight imposed by the Night Fighting rules when making Shooting Attacks, however enemy units also ignore that same restriction when making Shooting Attacks that target a model with searchlights. In addition, any unit that has been the target of a Shooting Attack made by a unit with searchlights may be freely targeted by any other unit, ignoring the 24" Night Fighting restriction. Searchlights do not count as weapons.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scrap-Wall Barricades" hidden="false" id="76a8-c0f5-8511-5eac" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -19402,12 +19436,13 @@ The effect lasts until the end of the turn.</description>
           <description>Friendly Ork units within 12" of an occupied Scrap-Bastion may re-roll failed Morale and Pinning tests</description>
         </rule>
         <rule name="Note" id="4549-a098-acf8-5b86" hidden="false">
-          <description>A towering, bolted-together slab of rusted battleship hull plates, spiked girders, and precarious firing slits.</description>
+          <description>A towering, bolted-together slab of rusted battleship hull plates and spiked girders, matching an Imperial Bastion's bulk through sheer layers of welded scrap.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink name="Xenos" id="91cb-ff7f-12dc-c921" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Ork Fortification" id="da98-b853-c0fa-a995" hidden="false" targetId="3ab1-541f-ab72-42ad" type="rule" />
+        <infoLink name="Kustom-Built &amp; Clunky" id="6b81-e07f-d3ed-50aa" hidden="false" targetId="f943-006d-ce9a-a769" type="rule" />
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="7863-7693-2fba-a96a" primary="false" name="Unit:" />
@@ -19421,14 +19456,14 @@ The effect lasts until the end of the turn.</description>
           <profiles>
             <profile name="Ork Scrap-Bastion" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="24eb-c48c-3a28-198e" publicationId="96d0-c462-d158-fbad">
               <characteristics>
-                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building, Ork)</characteristic>
                 <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
                 <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
-                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
-                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
-                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
                 <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
-                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">15 (1 Access Point, 8 Fire Points)</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">20 (1 Access Point, 8 Fire Points)</characteristic>
                 <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
               </characteristics>
             </profile>
@@ -19498,6 +19533,34 @@ The effect lasts until the end of the turn.</description>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="7757-23bc-ea6f-8ec5">
+              <entryLinks>
+                <entryLink import="true" name="Kustom Force Field Generator" hidden="false" id="9d2e-ba3d-278f-ea7e" type="selectionEntry" targetId="f4e8-6c49-55e1-acfd">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44d7-281f-df94-1e48" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Grot Ammo-Stash" hidden="false" id="7c9d-c151-c483-263c" type="selectionEntry" targetId="492c-e06e-b877-5c6a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6788-9e02-27b3-8168" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Searchlights" hidden="false" id="5125-c202-b425-5a40" type="selectionEntry" targetId="e1fc-7ab1-99fe-7099">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81e9-789a-7d85-e527" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -19505,7 +19568,7 @@ The effect lasts until the end of the turn.</description>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85" />
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sky-Blasta Pad" hidden="false" id="85ba-ac2c-9190-e825" publicationId="96d0-c462-d158-fbad">

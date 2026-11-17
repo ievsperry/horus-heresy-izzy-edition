@@ -51,17 +51,25 @@ def twin_linked(units, gst_entries):
                     l.set("targetId", by_name[want])
 
 
-def main(doc=DOC, faction="Imperial Fortifications", prefix="imperial-fortifications", visible=None):
-    """visible: army-wide entry ids; when given, the Fortifications are hidden in a Detachment holding none of them."""
+def main(doc=DOC, faction="Imperial Fortifications", prefix="imperial-fortifications", visible=None, only=None):
+    """visible: army-wide entry ids; when given, the Fortifications are hidden in a Detachment holding none of them.
+    only: the names of the doc's Fortifications to add (a later addition such as the Imperial Bastion); by default
+    the doc's first four."""
     et.configure(GST, [], doc, faction, prefix)
     b, root = et.build()
     entries = {e.get("id"): e for e in root.find("sharedSelectionEntries")}
     forts = [entries[b.units[d["name"]]] for d in b.datasheets if d["slot"] == "Fortifications"]
-    if len(forts) != 4:
-        sys.exit(f"expected 4 Fortifications in the doc, found {len(forts)}")
+    if only:
+        forts = [f for f in forts if f.get("name") in only]
+        if len(forts) != len(only):
+            sys.exit(f"expected {only} in the doc, found {[f.get('name') for f in forts]}")
+    else:
+        forts = forts[:4]
+        if len(forts) != 4:
+            sys.exit(f"expected 4 Fortifications in the doc, found {len(forts)}")
     gst = Text(GST)
-    if f'name="{forts[0].get("name")}"' in gst.s:
-        sys.exit(f"{GST} already has the {faction}")
+    if any(f'<entryLink id="{mid(f.get("id"), "root")}"' in gst.s for f in forts):
+        sys.exit(f"{GST} already has the {faction} {[f.get('name') for f in forts]}")
     idx = et.official_index()
     units, keep_entries, keep_groups, keep_rules = et.transplant(b, root, idx, units=forts)
 

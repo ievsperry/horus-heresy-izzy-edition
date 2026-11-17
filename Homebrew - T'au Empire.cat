@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="49" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="50" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -4374,6 +4374,15 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Drone-Uplink Relay" hidden="false" id="a438-55f1-c23a-8114" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Drone-Uplink Relay" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6607-9a23-7185-21db">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While a friendly model is embarked inside a Manta Strike Drop-Bunker with a Drone-Uplink Relay, the controlling player may modify their Reserves rolls by +1 or -1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Guardian Shield Emitters" hidden="false" id="f642-f222-621b-76fe" publicationId="733a-d454-80f2-c90e">
       <profiles>
         <profile name="Guardian Shield Emitters" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="e54b-8523-8a6c-3bc2">
@@ -4562,6 +4571,15 @@
         <profile name="Sky-Pad Homing Beacon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3ca5-2254-d328-d3e7">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Friendly T'au units arriving via Deep Strike within 12" of a Fortification with a Sky-Pad Homing Beacon do not scatter.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Void Shield" hidden="false" id="25ad-fad9-71fc-b86c" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Void Shield" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="60ef-598c-53c0-f2d5">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Each Void Shield gives the Fortification one Void Shield (Armour Value 12), as detailed in the Void Shields rules of the Age of Darkness rulebook.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -29986,7 +30004,7 @@ Except that instead of extra heavy burst cannon shots, the Y'vahra may choose No
           <description>Friendly T'au units within 12" of an occupied Manta Strike Drop-Bunker may re-roll failed Morale and Pinning tests</description>
         </rule>
         <rule name="Note" id="c3c7-9835-ce0b-d2d3" hidden="false">
-          <description>A prefabricated, retro-thruster-braked Earth Caste command bunker dropped from the belly of a Manta Missile Destroyer to anchor a newly secured beachhead.</description>
+          <description>A prefabricated, retro-thruster-braked Earth Caste command bunker dropped from the belly of a Manta Missile Destroyer, scaled up to hold a full Hunter Cadre contingent.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -30006,14 +30024,14 @@ Except that instead of extra heavy burst cannon shots, the Y'vahra may choose No
           <profiles>
             <profile name="Manta Strike Drop-Bunker" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="29cf-d1dd-b1d9-5664" publicationId="733a-d454-80f2-c90e">
               <characteristics>
-                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building, T'au Empire)</characteristic>
                 <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
                 <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
-                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
-                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">13</characteristic>
                 <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
-                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">15 (1 Access Point, 6 Fire Points)</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">20 (1 Access Point, 8 Fire Points)</characteristic>
                 <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
               </characteristics>
             </profile>
@@ -30054,12 +30072,20 @@ Except that instead of extra heavy burst cannon shots, the Y'vahra may choose No
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="4a75-7a95-7b21-773c">
               <entryLinks>
-                <entryLink import="true" name="Guardian Shield Generator" hidden="false" id="ca22-e661-1d75-3907" type="selectionEntry" targetId="e52f-5390-3b78-3cc1">
+                <entryLink import="true" name="Void Shield" hidden="false" id="aff6-b6b5-7735-de24" type="selectionEntry" targetId="25ad-fad9-71fc-b86c">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0097-c60c-2ec1-cfa0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b042-0365-6869-647f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Drone-Uplink Relay" hidden="false" id="85b1-62f1-80f5-2fec" type="selectionEntry" targetId="a438-55f1-c23a-8114">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfa7-fa94-1bde-1271" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -30126,7 +30152,7 @@ Except that instead of extra heavy burst cannon shots, the Y'vahra may choose No
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135" />
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="115" />
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Four burst cannons" hidden="false" id="7ddf-c5c4-4e8d-eb52" publicationId="733a-d454-80f2-c90e">

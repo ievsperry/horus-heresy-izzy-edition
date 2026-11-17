@@ -1104,7 +1104,7 @@ The unit may take a Sagitaur (5 or fewer models) or a Kapricus Carrier as a Dedi
 
 ## Fortifications
 
-Leagues of Votann armies may take the standard Fortifications and the Brôkhyr Interlocking Bulwark below. The Bulwark is a Barricade: it follows the Barricade Fortification special rule, and does not have Eye of the Ancestors or League (X).
+Leagues of Votann armies may take the standard Fortifications and the Votann Fortifications below, which do not have Eye of the Ancestors or League (X). The Brôkhyr Interlocking Bulwark is a Barricade: it follows the Barricade Fortification special rule.
 
 ### Brôkhyr Interlocking Bulwark — 65 pts
 
@@ -1148,6 +1148,52 @@ _Heavy, modular blast-shields forged from dense void-hardened alloys and anchore
 
 _The Brôkhyr Interlocking Bulwark is made up of 4 long sections and 4 short sections. The Ironkin Sentry-Mount is deployed within 1" of any section of the Bulwark; its weapon is an Automated Fire weapon (BS 3) with a 360° line of sight._
 
+### Kin Claim-Bastion — 105 pts
+
+_A heavy, prefabricated hexagonal redoubt anchored into bedrock by hydraulic pile-drivers, matching the resilience of an Imperial Bastion while housing Kin telemetry arrays._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Kin Claim-Bastion | – | 3 | 14 | 14 | 14 | 4 | 20 (1 Access Point, 8 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Kin Claim-Bastion
+
+**Wargear**
+
+- Four HYLas rotary cannons
+
+_The HYLas rotary cannons (or autocannons or heavy volkite culverins) are hull-mounted Automated Fire weapons (BS 3), one on each facing. A roof-mounted turret is an Automated Fire weapon (BS 3) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Building, Legiones Votann)
+
+**Special Rules**
+
+- Void-Hardened Construction: the Kin Claim-Bastion has Armoured Ceramite: enemy weapons with the Melta special rule do not roll extra armour penetration dice against it
+- Claim-Bastion Battlements: counts as Open-Topped Battlements on the roof capable of holding up to 10 Infantry models, granting a 4+ Cover Save
+- Ancestor's Claim: during deployment, if there is an Objective Marker wholly within your Deployment Zone, the Kin Claim-Bastion may be deployed within 1" of that Objective Marker. Friendly Legiones Votann units within 3" of it count as being within range of an Objective Marker controlled by their player for triggering rules and Warlord Traits, though the Claim-Bastion does not award Victory Points at the end of the battle
+- Grudge-Ledger Array: at the start of your Shooting phase, if a friendly Legiones Votann unit is embarked inside or occupying the battlements, select one visible enemy unit within 24" of the Kin Claim-Bastion; friendly Legiones Votann units within 12" of it treat that enemy unit as having +1 Judgement Token (to a maximum of 2) until the end of that Shooting phase
+- Ironkin Cogitator-Targeting: during your Shooting phase, each hull-mounted weapon automatically fires at BS 3 at the nearest visible enemy unit within its 90° fire arc, and a roof-mounted turret at the nearest visible enemy unit within range (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Kin Claim-Bastion may exchange all four HYLas rotary cannons for one of the following:** |  |
+| – Four autocannons | +0 points |
+| – Four heavy volkite culverins | +20 points |
+| **The Kin Claim-Bastion may take one of the following roof-mounted turret weapons:** |  |
+| – Twin-linked magna-rail cannon | +30 points |
+| – SP heavy conversion beamer | +25 points |
+| – Twin-linked lascannon | +25 points |
+| **The Kin Claim-Bastion may take any of the following:** |  |
+| – Up to 2 Void Shields | +25 points each |
+| – Searchlights | +5 points |
+| – Ammunition Store | +20 points |
+
 ## Wargear
 
 ### Grudge-Ledger / Holo-Lectern
@@ -1155,6 +1201,10 @@ _The Brôkhyr Interlocking Bulwark is made up of 4 long sections and 4 short sec
 **Cost:** 15 points. Independent Characters only.
 
 Once per friendly Shooting phase, before any attacks are made, the bearer may select one enemy unit within 24" and in its Line of Sight. That unit gains 1 temporary Judgement Token.
+
+### Ammunition Store
+
+Models embarked inside the Fortification or occupying its battlements may re-roll To Hit rolls of 1 during the Shooting phase. If the Fortification explodes, add +1 to the Building Damage table roll.
 
 ### Arkanyst Hauberk
 
@@ -1198,6 +1248,10 @@ A unit that includes a model with a pan spectral scanner ignores Stealth and Shr
 
 A unit that includes a model with a rollbar searchlight ignores Night Fighting when shooting†.
 
+### Searchlights
+
+A model with searchlights ignores the 24" limit to line of sight imposed by the Night Fighting rules when making Shooting Attacks, however enemy units also ignore that same restriction when making Shooting Attacks that target a model with searchlights. In addition, any unit that has been the target of a Shooting Attack made by a unit with searchlights may be freely targeted by any other unit, ignoring the 24" Night Fighting restriction. Searchlights do not count as weapons.
+
 ### Teleport Crest
 
 *A personal teleporter that delivers the Einhyr to the heart of battle.*
@@ -1207,6 +1261,10 @@ A unit whose models all have teleport crests gains Deep Strike.
 ### Void-Hardened Reinforced Plating
 
 A Brôkhyr Interlocking Bulwark with Void-Hardened Reinforced Plating improves its Cover Save to 3+ against shooting attacks that do not have the Ignores Cover or Barrage special rules.
+
+### Void Shield
+
+Each Void Shield gives the Fortification one Void Shield (Armour Value 12), as detailed in the Void Shields rules of the Age of Darkness rulebook.
 
 ### Void Armour
 
@@ -1279,14 +1337,19 @@ All weapons listed here are counted as 'Bolt' weapons for those rules that affec
 | L7 missile launcher – krak | 48" | 8 | 3 | Heavy 1 |
 | L7 missile launcher – frag | 48" | 4 | 6 | Heavy 1, Blast (3"), Pinning |
 | Magna-coil autocannon | 36" | 7 | 4 | Heavy 2 |
+| Autocannon | 48" | 7 | 4 | Heavy 2, Rending (6+) |
+| Heavy volkite culverin | 45" | 6 | 5 | Heavy 5, Deflagrate |
 | MATR autocannon | 48" | 7 | 4 | Heavy 2 |
 | Mole grenade launcher | 24" | 4 | 5 | Heavy 1, Barrage, Blast (3") |
 | Pivotal magna-rail cannon | 72" | 10 | 1 | Ordnance 1, Armourbane (Ranged), Sunder |
+| Twin-linked lascannon | 48" | 9 | 2 | Heavy 1, Twin-linked |
 | Sagitaur missile launcher | 36" | 8 | 3 | Heavy 2 |
 | SP conversion beamer | 36" | 8 | 3 | Heavy 1, Blast (3"); Strength 10 against targets more than 18" away |
 | SP heavy conversion beamer | 48" | 8 | 2 | Heavy 1, Large Blast (5"); Strength 10 against targets more than 24" away |
+| HYLas rotary cannon | 36" | 7 | 3 | Heavy 3, Pinning, Rending (6+) |
 | Twin HYLas beam cannon | 36" | 9 | 2 | Heavy 1, Lance, Twin-linked |
 | Twin-linked HYLas rotary cannon | 36" | 7 | 3 | Heavy 3, Pinning, Rending (6+), Twin-linked |
+| Twin-linked magna-rail cannon | 72" | 10 | 1 | Ordnance 1, Armourbane (Ranged), Sunder, Twin-linked |
 
 #### Ion and Plasma Weapons
 
