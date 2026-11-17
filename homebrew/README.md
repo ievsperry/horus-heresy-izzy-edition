@@ -141,7 +141,7 @@ loading. The script prints anything in the doc it could not place.
   Asuryani Wraithbone Bastion, Drukhari Kabalite Blade-Bastion, Anhrathe Void-Bulkhead Redoubt and Ork Scrap-Bastion.
   Void Shields are bought one at a time ("Up to 2 Void Shields", 3 for the Tomb-Bastion). The Drop-Bunker and
   Blade-Bastion keep their Sept and Sub-Faction Enhancements. The Blade-Bastion is AV 13, an exception to the Drukhari
-  Armour limit (the Flesh-Crafted Carapace leaves it at 13).
+  Armour limit, and may not take the Flesh-Crafted Carapace.
 - A Barricade's turret (the Drone Gun-Turret, Crystal Weapon Platform, Splinter Rack Turret and Ironkin Sentry-Mount)
   is an optional second model in the unit, with its own BS, Armour (10, or 11 for the Sentry-Mount) and 2 Hull Points profile and its weapon.
 - Fortifications have the game system's Fortification Unit Type category and their Building, Emplacement or

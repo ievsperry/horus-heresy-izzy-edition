@@ -2149,7 +2149,7 @@ Drukhari armies may not take the standard Fortifications; they take these Drukha
 
 The Razor-Blade Barricade is a Barricade: it follows the Barricade Fortification special rule instead.
 
-**Sub-Faction Enhancements.** Each Drukhari Fortification other than the Razor-Blade Barricade may take one Sub-Faction Enhancement matching its Detachment's Sub-faction (Kabals, Wych Cults or Haemonculus Covens).
+**Sub-Faction Enhancements.** Each Drukhari Fortification other than the Razor-Blade Barricade may take one Sub-Faction Enhancement matching its Detachment's Sub-faction (Kabals, Wych Cults or Haemonculus Covens); the Kabalite Blade-Bastion may not take the Flesh-Crafted Carapace.
 
 ### Torture-Spire — 85 pts
 
@@ -2231,9 +2231,8 @@ _The hull weapons are Automated Fire weapons (BS 4), one mounted on each facing.
 | **The Kabalite Blade-Bastion may take one of the following Sub-Faction Enhancements:** |  |
 | – Splinter-Rack Munitions | +20 points |
 | – Combat-Drug Atomisers | +20 points |
-| – Flesh-Crafted Carapace | +25 points |
 
-_The Kabalite Blade-Bastion's Armour of 13 is an exception to the Drukhari Fortification Armour limit; the Flesh-Crafted Carapace does not raise it further._
+_The Kabalite Blade-Bastion's Armour of 13 is an exception to the Drukhari Fortification Armour limit, and it may not take the Flesh-Crafted Carapace._
 
 ### Void-Raptor Sky-Dock — 80 pts
 
