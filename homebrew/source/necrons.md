@@ -22,6 +22,8 @@ Every unit in this document has **Dynasty (X)** and **Reanimation Protocols (5+)
 
 **Living Metal.** A vehicle with this rule ignores Crew Shaken results on the Vehicle Damage table, and at the end of each of your turns, rolls a D6; on a 6, it restores one lost Hull Point†.
 
+**Necron Fortification.** A Necron Fortification is deployed during the Fortifications deployment step within your Deployment Zone. It cannot move, declare Charges, make Reactions (unless granted by a specific special rule), control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on it fires at BS 4. At the start of each friendly Movement phase, roll a D6 for each damaged Necron Fortification on the battlefield; on a 5+, it restores 1 lost Hull Point (up to its starting maximum). This is its Living Metal, in place of the vehicle rule above.
+
 **Reanimation Protocols (X).** Each time a model with this rule would lose its last Wound, roll a D6; on a roll of X or more, it is not removed and stays in play with 1 Wound. Reanimation Protocols is not Feel No Pain: rules that ignore or negate Feel No Pain do not affect it. It is a Damage Mitigation roll: a model may make only a single Damage Mitigation roll of any type (including Feel No Pain) for any given Wound. It cannot be used against Instant Death or Destroyer attacks.
 
 **Supersonic.** When a model with this rule moves Flat Out, it must move at least 18" and may move up to 36". It may make a single pivot of up to 90 degrees at the start of its move, and must then move in a straight line. It may pivot and move over enemy models during its move, but may not end its move on top of an enemy model.
@@ -144,7 +146,7 @@ You may re-roll one Reserves roll each turn. In addition, your army may make one
 
 ## Force Organisation and Rites of War
 
-Use the 2.0 Crusade Force Organisation chart. Each unit takes the slot of the section it appears under:
+Use the 2.0 Crusade Force Organisation chart (Necron armies take the Fortifications below instead of the standard ones). Each unit takes the slot of the section it appears under:
 
 | 2.0 slot | Necron units |
 |---|---|
@@ -155,6 +157,7 @@ Use the 2.0 Crusade Force Organisation chart. Each unit takes the slot of the se
 | Fast Attack | Canoptek Wraiths, Canoptek Scarabs, Tomb Blades, Destroyers, Ophydian Destroyers |
 | Heavy Support | Heavy Destroyers, Canoptek Spyders, Canoptek Reanimator, Canoptek Doomstalker, Annihilation Barge, Doomsday Ark, Monolith, Doom Scythe |
 | Lord of War | C'tan Shard of the Nightbringer, C'tan Shard of the Deceiver, C'tan Shard of the Void Dragon, Szarekh the Silent King, Obelisk, Tesseract Vault |
+| Fortifications | Necron Obelisk, Summoning Core, Greater Summoning Core, Necron Energy Core |
 
 A Necron army may take one Rite of War:
 
@@ -1763,6 +1766,148 @@ Each C'tan Shard and the Tesseract Vault knows the powers its datasheet lists. O
 - Living Metal
 - Vengeance of the Enchained: each time the Vault loses a Hull Point, roll a D6; on a 6, every unit within D6" suffers a hit at Strength 6, AP 4
 
+## Fortifications
+
+Necron armies may not take the standard Fortifications; they take these Necron Fortifications instead. All of them follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the Necron Fortification special rule:
+
+- **Deployment.** Deployed during the Fortifications deployment step within your Deployment Zone.
+- **Unit Restrictions.** Fortifications cannot move, declare Charges, make Reactions (unless granted by a specific special rule), control or deny Objectives, or take Morale or Pinning tests.
+- **Living Metal.** At the start of each friendly Movement phase, roll a D6 for each damaged Necron Fortification on the battlefield; on a 5+, that Fortification restores 1 lost Hull Point (up to its starting maximum).
+- **Necron Ballistic Skill.** Any automated weapon on a Necron Fortification fires at BS 4 using integrated tomb-matrix targeting.
+
+### Necron Obelisk — 75 pts
+
+_A floating, pyramid-crowned obelisk of black noctilith anchored over a strategic nexus that projects a localized phase-field and auto-engages approaching foes. Also called a Phase-Listening Post. Inspired by the Dawn of War Necron Listening Post._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Necron Obelisk | – | 4 | 11 | 11 | 11 | 3 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Necron Obelisk
+
+**Wargear**
+
+- Twin-linked gauss flux arc
+
+_The crown-mounted weapon is an Automated Fire weapon (BS 4) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Necron Fortification
+- Strategic Nexus Clamp: during deployment, if there is an Objective Marker wholly within your Deployment Zone, this Fortification may be deployed within 1" of that Objective Marker. Friendly Necron units within 3" of this Fortification count as being within range of an Objective Marker controlled by their player for triggering rules and Warlord Traits, though this Fortification does not award Victory Points at the end of the battle
+- Automated Overwatch: once per enemy Assault phase, if an enemy unit declares a Charge against this Fortification or a friendly unit within 3" of it, this Fortification may make an Overwatch Reaction at BS 4 without spending a point from your Reaction Allotment
+- Phase-Disruption Field: enemy units within 6" of a Necron Obelisk treat all ground as Difficult Terrain when declaring a Charge
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Necron Obelisk may exchange its twin-linked gauss flux arc for one of the following, becoming a Fortified Obelisk (Tier 2):** |  |
+| – Twin-linked tesla destructor | +25 points |
+| – Heavy gauss cannon | +25 points |
+| **The Necron Obelisk may take:** |  |
+| – Phase-Shroud Emitters | +15 points |
+
+_A Fortified Obelisk has Front, Side and Rear Armour 12._
+
+### Summoning Core — 105 pts
+
+_A crackling, emerald-lit dimensional conduit that stabilizes translocation beams and accelerates the self-repair protocols of nearby phalanxes. Inspired by the Dawn of War Summoning Core._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Summoning Core | – | 4 | 12 | 12 | 12 | 4 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Summoning Core
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Necron Fortification
+- Reanimation Matrix: friendly Necron Infantry units within 12" of a Summoning Core add +1 to their Reanimation Protocols rolls (to a maximum of 4+)
+- Dimensional Translocation Beacon: friendly Necron units arriving from Reserves via Deep Strike within 12" of a Summoning Core do not scatter. In addition, once per friendly Movement phase, one friendly Necron Infantry unit wholly within 6" of the Summoning Core may be removed from the battlefield and immediately placed wholly within 6" of any friendly Necron Obelisk or Monolith on the battlefield (at least 1" away from enemy models)
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Summoning Core may take any of the following:** |  |
+| – Reinforced Necrodermis Plating | +35 points |
+| – Gauss cannon | +20 points |
+
+_The gauss cannon is a turret-mounted Automated Fire weapon (BS 4) with a 360° line of sight._
+
+### Greater Summoning Core — 125 pts
+
+_An apex tomb-world archive housing ancient engrams that unlock devastating weapon protocols for Destroyers, Immortals, and Lychguard. Inspired by the Dawn of War Greater Summoning Core._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Greater Summoning Core | – | – | 12 | 12 | 12 | 4 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Greater Summoning Core
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Necron Fortification
+- Disruption Field Protocols: friendly Necron units within 12" of a Greater Summoning Core gain Rending (6+) on all melee attacks, and their Gauss and Tesla ranged weapons add +6" to their maximum range
+- Phylactery Surge: once per game, at the start of your Movement phase, every friendly Necron Infantry unit within 12" of the Greater Summoning Core immediately restores D3 destroyed models (up to its starting unit size, placed in coherency)
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Greater Summoning Core may take any of the following:** |  |
+| – Reinforced Necrodermis Plating | +35 points |
+| – Chronometron Array | +25 points |
+
+### Necron Energy Core — 95 pts
+
+_A towering, green-arcing monolith reactor that feeds hyper-condensed energy into nearby gauss arrays and phase-shields, detonating in a blinding molecular blast if breached. Also called a Plasma Generator. Inspired by the Dawn of War Necron Plasma Generator._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Necron Energy Core | – | – | 11 | 11 | 11 | 4 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Necron Energy Core
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Necron Fortification
+- Gauss Capacitor Overload: friendly Necron units within 12" of a Necron Energy Core gain Preferred Enemy (Vehicles) when firing Gauss weapons, and may re-roll Gets Hot rolls of 1 for any weapon
+- Phase-Shield Harmonic: friendly Necron Vehicles and Fortifications within 12" of a Necron Energy Core that possess an Invulnerable Save improve that Invulnerable Save by +1 (to a maximum of 4+) against shooting attacks
+- Molecular Rupture: if this Fortification is reduced to 0 Hull Points, it automatically Explodes out to 2D6" (inflicting D6 Strength 7 AP 2 hits with Haywire and Pinning on every unit within 2D6" before the model is removed)
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Necron Energy Core may take:** |  |
+| – Quantum Shielding Projector | +25 points |
+
 ## Wargear
 
 Every Necron model's armour is part of its living metal body; its Armour Save is shown on its profile.
@@ -1778,6 +1923,10 @@ Once per game, one friendly unit arriving by Deep Strike within 12" of an enemy 
 _A shroud of Canoptek wings and repair arms._
 
 The bearer becomes Infantry (Mechanised) with M10 and, if its datasheet says so, Battlesmith (5+)†.
+
+### Chronometron Array
+
+Friendly Necron units within 12" of a Greater Summoning Core with a Chronometron Array may re-roll failed Charge distance rolls, and enemy units charging them subtract 2" from their Charge distance rolls.
 
 ### Dispersion Shield
 
@@ -1815,11 +1964,23 @@ _A device that shifts its bearer partly out of phase with reality._
 
 The bearer has a 4+ Invulnerable Save.
 
+### Phase-Shroud Emitters
+
+A Necron Obelisk with Phase-Shroud Emitters has Shrouded (5+) against shooting attacks made from more than 12" away.
+
 ### Phylactery
 
 _A small crystal reliquary that holds a spark of the bearer's reanimation._
 
 The bearer improves its Reanimation Protocols by 1 for itself only.
+
+### Quantum Shielding Projector
+
+A Necron Energy Core with a Quantum Shielding Projector has Quantum Shielding: until it loses its first Hull Point, any Armour Penetration roll against it whose total is greater than its Armour Value causes a glancing hit instead.
+
+### Reinforced Necrodermis Plating
+
+The Fortification's Front, Side and Rear Armour Values are 13.
 
 ### Resurrection Orb
 
@@ -1951,6 +2112,7 @@ All weapons listed here have the Gauss trait.
 | Gauss flayer | 24" | 4 | 5 | Rapid Fire, Gauss |
 | Gauss flayer array | 24" | 4 | 5 | Heavy 5, Gauss |
 | Gauss flux arc | 24" | 5 | 4 | Heavy 3, Gauss |
+| Twin-linked gauss flux arc | 24" | 5 | 4 | Heavy 3, Gauss, Twin-linked |
 | Gauss reaper | 12" | 5 | 4 | Assault 2, Gauss |
 | Heavy gauss cannon | 36" | 9 | 2 | Heavy 1, Gauss, Rending (6+) |
 | Relic gauss blaster | 24" | 5 | 3 | Assault 2, Gauss |

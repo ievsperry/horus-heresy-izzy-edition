@@ -102,6 +102,11 @@ loading. The script prints anything in the doc it could not place.
   Matrix rules. Holo-Field Projectors and the Void-Recall Transponder are Wargear. `anhrathe_fortifications.py`
   (run by the builder) lets the Orbital Lance-Pod swap at most two shuriken cannons for splinter cannons. The game
   system's own Fortifications are hidden from an Anhrathe Detachment.
+- Necrons take their own Necron Fortifications (the doc's "## Fortifications": Necron Obelisk, Summoning Core, Greater
+  Summoning Core, Necron Energy Core), each with the Necron Fortification rule (its own Living Metal: a Hull Point back
+  on a 5+ at the start of each Movement phase). `necron_fortifications.py` (run by the builder) sets Armour 12 on a
+  Fortified Obelisk (its tesla destructor or heavy gauss cannon) and 13 with Reinforced Necrodermis Plating. The game
+  system's own Fortifications are hidden from a Necron Detachment.
 - Drukhari take their own Drukhari Fortifications (the doc's "## Fortifications": Torture-Spire, Kabalite
   Blade-Bastion, Void-Raptor Sky-Dock, Dread-Pod Drop-Turret), each with the Drukhari Fortification and
   Night-Shield Matrix rules. Each may take one Sub-Faction Enhancement (`drukhari_fortifications.py`, run by the
