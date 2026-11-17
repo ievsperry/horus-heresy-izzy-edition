@@ -28,6 +28,8 @@ After the attack has been resolved, remove one Ammo Runt from play.
 
 **Ork Fortification.** Ork Fortifications are deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Orbital Slam-Drop). They cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on an Ork Fortification fires at BS 2. If a friendly Ork Infantry unit is embarked inside or occupying the Fortification's battlements, models in that unit may fire the Fortification's manual weapons using their own Ballistic Skill.
 
+**Barricade Fortification.** A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Models within 1" of a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.
+
 **Bigga iz Betta.** Models with the Bulky (X) special rule that join a unit add X to the total number of models in the unit for the purposes of determining Mob Rule bonuses.
 
 In addition, Cavalry models count as four models each for the purposes of determining Mob Rule bonuses.
@@ -3851,6 +3853,8 @@ Ork armies may not take the standard Fortifications; they take these Ork Fortifi
 - **Unit Restrictions.** Fortifications cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests.
 - **Ork Ballistic Skill.** Any automated weapon on an Ork Fortification fires at BS 2. If a friendly Ork Infantry unit is embarked inside or occupying the Fortification's battlements, models in that unit may fire the Fortification's manual weapons using their own Ballistic Skill.
 
+The Aegis Scrap-Wall & Gun Emplacement is a Barricade: it follows the Barricade Fortification special rule instead of the rules above.
+
 ### Mekboy Workshop — 95 pts
 
 _A clanking, spark-belching scrap-foundry piled high with spare plates, half-built gubbins, and greasy grots wielding blowtorches._
@@ -4011,8 +4015,7 @@ _Jagged barricades of welded battlewagon doors, tank traps, and scrap metal mann
 
 **Special Rules**
 
-- Ork Fortification
-- Barricade (4+): models behind the Scrap-Wall gain a 4+ Cover Save against shooting attacks, and enemies charging across it count as charging through Difficult Terrain
+- Barricade Fortification
 
 **Options**
 

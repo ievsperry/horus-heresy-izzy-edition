@@ -2739,7 +2739,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 
 ## Fortifications
 
-Asuryani armies may not take the standard Fortifications; they take the Fortifications below instead. The Wraithbone Bastion, Void-Spinner Sky-Platform and Wraith-Sentinel Drop-Pillar are Asuryani Fortifications; the Wraithbone Force-Wall is a Barricade and follows the Barricade Fortification special rule instead. They follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the Asuryani Fortification special rule:
+Asuryani armies may not take the standard Fortifications; they take the Fortifications below instead. The Wraithbone Bastion, Void-Spinner Sky-Platform and Wraith-Sentinel Drop-Pillar are Asuryani Fortifications; the Holo-Field Defence Line and Wraithbone Force-Wall are Barricades and follow the Barricade Fortification special rule instead. They follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the Asuryani Fortification special rule:
 
 - **Deployment.** Deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Webway Orbital Insertion).
 - **Unit Restrictions.** Fortifications cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests.
@@ -2763,6 +2763,7 @@ Asuryani armies may not take the standard Fortifications; they take the Fortific
 
 **Special Rules**
 
+- Barricade Fortification
 - Holo-Emitter
 - Multi-part Fortifications
 
@@ -3142,7 +3143,7 @@ A unit containing at least one model with this rule always counts as rolling a H
 
 ### Holo-Emitter
 
-The model is a Barricade and gives a 5+ Cover Save to models it obscures. Wounds from Blast attacks against a model claiming cover from it must be re-rolled.
+Models within 1" of a Barricade with this rule gain Shrouded (6+), and Wounds from Blast attacks against a model claiming cover from it must be re-rolled.
 
 ### Inescapable Accuracy
 
