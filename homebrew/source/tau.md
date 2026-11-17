@@ -143,7 +143,7 @@ A T'au Fortification (any Fortification below other than a Tidewall or the Porta
 
 #### Barricade Fortification
 
-A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Unless stated otherwise, models in base contact with a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.
+A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Models within 1" of a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.
 
 #### Tidewall Mobility
 
@@ -3808,9 +3808,9 @@ _An interlocking network of lightweight, anti-gravitic alloy blast shields equip
 **Special Rules**
 
 - Barricade Fortification
-- Repulsor Field (5+): if the Barricade has Guardian Shield Emitters, friendly T'au Empire Infantry models in base contact with it gain a 5+ Invulnerable Save against shooting attacks made across the barricade
-- Stabilized Firing Line: friendly T'au Empire Infantry models in base contact with a Portable Pulse-Barricade may re-roll To Hit rolls of 1 when firing Pulse weapons (such as pulse rifles, pulse carbines, and pulse blasters) during the Shooting phase
-- Coordinated Overwatch: friendly T'au Empire units in base contact with the Barricade add +1 to their Ballistic Skill when making Overwatch Reactions (to a maximum of BS 3)
+- Repulsor Field (5+): if the Barricade has Guardian Shield Emitters, friendly T'au Empire Infantry models within 1" of it gain a 5+ Invulnerable Save against shooting attacks made across the barricade
+- Stabilized Firing Line: friendly T'au Empire Infantry models within 1" of a Portable Pulse-Barricade may re-roll To Hit rolls of 1 when firing Pulse weapons during the Shooting phase
+- Coordinated Overwatch: friendly T'au Empire units within 1" of the Barricade add +1 to their Ballistic Skill when making Overwatch Reactions (to a maximum of BS 3)
 
 **Options**
 
@@ -3822,7 +3822,7 @@ _An interlocking network of lightweight, anti-gravitic alloy blast shields equip
 | **The Drone Gun-Turret may exchange its twin-linked missile pod for:** |  |
 | – Smart missile system | +0 points |
 
-_The Portable Pulse-Barricade is made up of 4 long sections and 4 short sections. The Drone Gun-Turret is deployed in base contact with any section of the Barricade, and its weapon is an Automated Fire weapon._
+_The Portable Pulse-Barricade is made up of 4 long sections and 4 short sections. The Drone Gun-Turret is deployed within 1" of any section of the Barricade, and its weapon is an Automated Fire weapon._
 
 ## Wargear
 

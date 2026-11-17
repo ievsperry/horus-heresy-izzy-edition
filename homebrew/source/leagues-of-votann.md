@@ -14,6 +14,8 @@ Votann vehicles use the 2.0 vehicle profile. The Hekaton Land Fortress is a supe
 
 Every unit in this document has **Eye of the Ancestors** and **League (X)** unless its entry says otherwise. Infantry also have **Stubborn Kin**.
 
+**Barricade Fortification.** A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Models within 1" of a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.
+
 **Slow but Sure.** The Kin are short and heavily equipped. Votann Infantry have a Movement Characteristic of 5 unless their entry says otherwise, but may Advance and still shoot Rapid Fire weapons and declare charges in the same turn†.
 
 **Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
@@ -184,7 +186,7 @@ Grimnyr are the Kin's living conduits to the Votann, drawing upon millennia of a
 
 ## Force Organisation and Rites of War
 
-Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, Heavy Support, Dedicated Transports and Lord of War. Each unit takes the slot of the section it appears under:
+Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, Heavy Support, Dedicated Transports, Lord of War and Fortifications. Each unit takes the slot of the section it appears under:
 
 | 2.0 slot | Votann units |
 | --- | --- |
@@ -194,6 +196,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Dedicated Transports | Sagitaur, Kapricus Carrier |
 | Fast Attack | Hernkyn Pioneers, Kapricus Defenders |
 | Heavy Support | Brôkhyr Thunderkyn, Cthonian Earthshakers, Hekaton Land Fortress, Ironkin Steeljacks with Heavy Volkanite Disintegrators |
+| Fortifications | Brôkhyr Interlocking Bulwark |
 
 ### Rites of War
 
@@ -1099,6 +1102,52 @@ The unit may take a Sagitaur (5 or fewer models) or a Kapricus Carrier as a Dedi
 | **The Steeljack Theyn may exchange his heavy volkanite disintegrator and plasma knife for:** |  |
 | – Autoch-pattern bolter and plasma sword | +0 points |
 
+## Fortifications
+
+Leagues of Votann armies may take the standard Fortifications and the Brôkhyr Interlocking Bulwark below. The Bulwark is a Barricade: it follows the Barricade Fortification special rule, and does not have Eye of the Ancestors or League (X).
+
+### Brôkhyr Interlocking Bulwark — 65 pts
+
+_Heavy, modular blast-shields forged from dense void-hardened alloys and anchored by hydraulic ground-clamps, providing Kin oathbands with an immovable firing line._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brôkhyr Interlocking Bulwark | – | – | – | – | – | – | – | Use model |
+| Ironkin Sentry-Mount | – | 3 | 11 | 11 | 11 | 2 | – | Use model |
+
+**Unit Composition**
+
+- 1 Brôkhyr Interlocking Bulwark
+
+**Wargear**
+
+- Ironkin Sentry-Mount: Twin-linked HYLas rotary cannon
+
+**Unit Type**
+
+- Brôkhyr Interlocking Bulwark: Fortification (Barricade, Legiones Votann)
+- Ironkin Sentry-Mount: Fortification (Emplacement)
+
+**Special Rules**
+
+- Barricade Fortification
+- Stabilized Firing Step: friendly Legiones Votann Infantry models within 1" of a Brôkhyr Interlocking Bulwark count as having remained stationary when firing Heavy or Salvo weapons (provided they did not move during their preceding Movement phase), and may re-roll To Hit rolls of 1 when firing Autocannon, Bolt, or HYLas weapons
+- Grudge-Ledger Telemetry: at the start of your Shooting phase, if at least one friendly Legiones Votann unit is within 1" of this Barricade, select one visible enemy unit within 24" of any section of the Barricade; friendly Legiones Votann units within 1" of the Barricade treat that enemy unit as having +1 Judgement Token (to a maximum of 2) until the end of that Shooting phase
+- Stubborn Bastion: friendly Legiones Votann Infantry units within 1" of a Brôkhyr Interlocking Bulwark gain the Stubborn special rule and may re-roll failed Pinning tests
+
+**Options**
+
+| Option | Cost |
+| --- | --: |
+| **The Brôkhyr Interlocking Bulwark may take:** |  |
+| – Void-Hardened Reinforced Plating | +20 points |
+| – Up to 1 Ironkin Sentry-Mount | +20 points |
+| **The Ironkin Sentry-Mount may exchange its twin-linked HYLas rotary cannon for one of the following:** |  |
+| – Pivotal magna-rail cannon | +10 points |
+| – SP conversion beamer | +10 points |
+
+_The Brôkhyr Interlocking Bulwark is made up of 4 long sections and 4 short sections. The Ironkin Sentry-Mount is deployed within 1" of any section of the Bulwark; its weapon is an Automated Fire weapon (BS 3) with a 360° line of sight._
+
 ## Wargear
 
 ### Grudge-Ledger / Holo-Lectern
@@ -1154,6 +1203,10 @@ A unit that includes a model with a rollbar searchlight ignores Night Fighting w
 *A personal teleporter that delivers the Einhyr to the heart of battle.*
 
 A unit whose models all have teleport crests gains Deep Strike.
+
+### Void-Hardened Reinforced Plating
+
+A Brôkhyr Interlocking Bulwark with Void-Hardened Reinforced Plating improves its Cover Save to 3+ against shooting attacks that do not have the Ignores Cover or Barrage special rules.
 
 ### Void Armour
 
@@ -1233,6 +1286,7 @@ All weapons listed here are counted as 'Bolt' weapons for those rules that affec
 | SP conversion beamer | 36" | 8 | 3 | Heavy 1, Blast (3"); Strength 10 against targets more than 18" away |
 | SP heavy conversion beamer | 48" | 8 | 2 | Heavy 1, Large Blast (5"); Strength 10 against targets more than 24" away |
 | Twin HYLas beam cannon | 36" | 9 | 2 | Heavy 1, Lance, Twin-linked |
+| Twin-linked HYLas rotary cannon | 36" | 7 | 3 | Heavy 3, Pinning, Rending (6+), Twin-linked |
 
 #### Ion and Plasma Weapons
 

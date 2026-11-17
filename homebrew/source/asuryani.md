@@ -2799,8 +2799,8 @@ _Graceful, curved ribbons of psycho-reactive wraithbone grown around shimmering 
 **Special Rules**
 
 - Barricade Fortification
-- Refraction Screen: friendly Asuryani Infantry models in base contact with a Wraithbone Force-Wall gain Shrouded (6+) against shooting attacks made from more than 12" away (improved to Shrouded (5+) if the Force-Wall has Holo-Field Pylons)
-- Psychic Conduit: friendly Asuryani Psykers in base contact with the Force-Wall add +6" to the maximum range of any Psychic Powers or Psychic Weapons they manifest or fire
+- Refraction Screen: friendly Asuryani Infantry models within 1" of a Wraithbone Force-Wall gain Shrouded (6+) against shooting attacks made from more than 12" away (improved to Shrouded (5+) if the Force-Wall has Holo-Field Pylons)
+- Psychic Conduit: friendly Asuryani Psykers within 1" of the Force-Wall add +6" to the maximum range of any Psychic Powers or Psychic Weapons they manifest or fire
 - Graceful Vault: friendly Asuryani units ignore the Difficult Terrain penalty when moving or charging across a Wraithbone Force-Wall
 
 **Options**
@@ -2813,7 +2813,7 @@ _Graceful, curved ribbons of psycho-reactive wraithbone grown around shimmering 
 | **The Crystal Weapon Platform may exchange its scatter laser for:** |  |
 | – Bright lance | +0 points |
 
-_The Wraithbone Force-Wall is made up of 4 long sections and 4 short sections. The Crystal Weapon Platform is deployed in base contact with any section of the Force-Wall, and its weapon is an Automated Fire weapon._
+_The Wraithbone Force-Wall is made up of 4 long sections and 4 short sections. The Crystal Weapon Platform is deployed within 1" of any section of the Force-Wall, and its weapon is an Automated Fire weapon._
 
 ### Webway Gate — 75 pts
 
@@ -3018,7 +3018,7 @@ Asuryani Fortifications are deployed during the Fortifications deployment step w
 
 ### Barricade Fortification
 
-A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Unless stated otherwise, models in base contact with a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.
+A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Models within 1" of a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.
 
 ### Battle Focus
 
