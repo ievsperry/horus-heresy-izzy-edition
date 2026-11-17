@@ -1,6 +1,6 @@
 # Imperial and Traitor Fortifications for The Horus Heresy 2.0
 
-Four Fortifications for the Imperial and Traitor armies, added to the game system (`2022 - Horus Heresy.gst`) beside its standard Fortifications by `homebrew/add_imperial_fortifications.py`.
+Five Fortifications for the Imperial and Traitor armies, added to the game system (`2022 - Horus Heresy.gst`) beside its standard Fortifications by `homebrew/add_imperial_fortifications.py` (the Imperial Bastion by `homebrew/add_imperial_bastion.py`).
 
 ## Introduction
 
@@ -167,7 +167,51 @@ _A reinforced command bunker fitted with high-gain void-transponders to guide or
 | – Armoured Ceramite | +20 points |
 | – Orbital Strike Coordinates | +35 points |
 
+### Imperial Bastion — 75 pts
+
+_A towering ferrocrete strongpoint of the Imperium, its four faces bristling with heavy bolters and its roof ringed with battlements._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Imperial Bastion | – | 2 | 14 | 14 | 14 | 4 | 20 (1 Access Point, 8 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Imperial Bastion
+
+**Wargear**
+
+- Four heavy bolters
+
+_The heavy bolters are hull-mounted, one on each facing. Each is an Automated Fire weapon (BS 2) unless fired manually by a model inside; a roof weapon emplacement is an Automated Fire weapon (BS 2) unless fired manually by a model on the battlements._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Imperial Fortification
+- Bastion Battlements: counts as Open-Topped Battlements on the roof capable of holding up to 10 Infantry models, granting a 4+ Cover Save
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Imperial Bastion may take one of the following roof weapon emplacements:** |  |
+| – Icarus lascannon | +35 points |
+| – Quad-gun | +50 points |
+| **The Imperial Bastion may take any of the following:** |  |
+| – Comms Relay | +20 points |
+| – Up to 2 Void Shields | +25 points each |
+| – Searchlights | +5 points |
+| – Ammunition Store | +20 points |
+
 ## Wargear
+
+### Ammunition Store
+
+Models embarked inside the Fortification or occupying its battlements may re-roll To Hit rolls of 1 during the Shooting phase. If the Fortification explodes, add +1 to the Building Damage table roll.
 
 ### Armoured Ceramite
 
@@ -185,6 +229,10 @@ The Fortification has 1 Void Shield (AV 12), as detailed in the Age of Darkness 
 
 A turret with camo-netting has Shrouded (6+).
 
+### Comms Relay
+
+While a friendly model is embarked inside a Fortification with a Comms Relay, the controlling player may modify their Reserves rolls by +1 or -1.
+
 ### Cognis-Signum / Vox-Relay
 
 A Fortification with a Cognis-Signum / Vox-Relay has the Vox-Relay special rule: friendly Infantry units with the Line sub-type within 6" of it may re-roll failed Morale and Pinning tests. In addition, friendly units within 3" of it (including units embarked inside it) count as being within range of an Objective Marker controlled by their player for the purpose of triggering special rules, Warlord Traits, and Rites of War (such as Heart of the Legion), though the Fortification does not award Victory Points at the end of the battle.
@@ -197,6 +245,14 @@ Legiones Astartes and Solar Auxilia only. Once per game (One Shot), during your 
 
 The Fortification's Front, Side and Rear Armour Values are 13.
 
+### Searchlights
+
+A model with searchlights ignores the 24" limit to line of sight imposed by the Night Fighting rules when making Shooting Attacks, however enemy units also ignore that same restriction when making Shooting Attacks that target a model with searchlights. In addition, any unit that has been the target of a Shooting Attack made by a unit with searchlights may be freely targeted by any other unit, ignoring the 24" Night Fighting restriction. Searchlights do not count as weapons.
+
+### Void Shield
+
+Each Void Shield gives the Fortification one Void Shield (Armour Value 12), as detailed in the Void Shields rules of the Age of Darkness rulebook.
+
 ### Void-Transponder Array
 
 An Orbital Uplink Bunker's void-transponder array gives it the Drop-Beacon Relay special rule.
@@ -205,6 +261,7 @@ An Orbital Uplink Bunker's void-transponder array gives it the Drop-Beacon Relay
 
 | Weapon | Range | Str | AP | Type |
 |---|---|---|---|---|
+| Quad-gun | 48" | 7 | 4 | Heavy 4, Interceptor, Skyfire, Twin-linked |
 | Twin-linked volkite culverin | 45" | 6 | 5 | Heavy 5, Deflagrate, Twin-linked |
 | Twin-linked missile launcher – frag | 48" | 4 | 6 | Heavy 1, Blast (3"), Pinning, Twin-linked |
 | Twin-linked missile launcher – krak | 48" | 8 | 3 | Heavy 1, Twin-linked |

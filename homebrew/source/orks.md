@@ -3884,13 +3884,13 @@ _The big shootas are Manual Fire weapons mounted on opposite facings._
 - Kustom Jobz: at the start of your Shooting phase, one friendly Ork Vehicle or Walker within 6" of the Mekboy Workshop may receive a Kustom Refit until the end of the turn. Choose one: More Dakka (all ranged weapons on that Vehicle gain Rending (6+) until the end of the turn); Red Paint Overdrive (that Vehicle adds +3" to its Movement characteristic until the end of your next Movement phase); or Extra Gubbins (that Vehicle gains a 5+ Invulnerable Save against Shooting attacks until the start of your next turn)
 - Scrap-Yard Refit: friendly models with the Mek's Tools (or Battlesmith) special rule within 6" of this Fortification add +1 to their repair rolls (to a maximum of 3+)
 
-### Ork Scrap-Bastion — 85 pts
+### Ork Scrap-Bastion — 80 pts
 
-_A towering, bolted-together slab of rusted battleship hull plates, spiked girders, and precarious firing slits._
+_A towering, bolted-together slab of rusted battleship hull plates and spiked girders, matching an Imperial Bastion's bulk through sheer layers of welded scrap._
 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
 |---|---|---|---|---|---|---|---|---|
-| Ork Scrap-Bastion | – | 2 | 13 | 13 | 12 | 4 | 15 (1 Access Point, 8 Fire Points) | Use model |
+| Ork Scrap-Bastion | – | 2 | 14 | 14 | 14 | 4 | 20 (1 Access Point, 8 Fire Points) | Use model |
 
 **Unit Composition**
 
@@ -3900,15 +3900,16 @@ _A towering, bolted-together slab of rusted battleship hull plates, spiked girde
 
 - Four big shootas
 
-_The big shootas are Manual Fire weapons, one mounted on each facing._
+_The big shootas (or rokkit launchas or skorchas) are hull-mounted Automated Fire weapons (BS 2), one on each facing. A roof-mounted emplacement weapon is an Automated Fire weapon (BS 2) with a 360° line of sight._
 
 **Unit Type**
 
-- Fortification (Building)
+- Fortification (Building, Ork)
 
 **Special Rules**
 
 - Ork Fortification
+- Kustom-Built & Clunky
 - Scrap Battlements: counts as Open-Topped Battlements on the roof capable of holding up to 10 Infantry models, granting a 4+ Cover Save
 - Bosspole Beacon: friendly Ork units within 12" of an occupied Scrap-Bastion may re-roll failed Morale and Pinning tests
 
@@ -3923,6 +3924,10 @@ _The big shootas are Manual Fire weapons, one mounted on each facing._
 | – Supa-kannon | +40 points |
 | – Kustom mega-kannon | +25 points |
 | – Quad big shoota | +20 points |
+| **The Ork Scrap-Bastion may take any of the following:** |  |
+| – Kustom Force Field Generator | +30 points |
+| – Grot Ammo-Stash | +20 points |
+| – Searchlights | +5 points |
 
 ### Sky-Blasta Pad — 75 pts
 
@@ -4358,9 +4363,17 @@ _A crew of grots clinging to the hull, hammering dents back out mid-battle._
 
 A vehicle equipped with grot riggers gains It Will Not Die (6+).
 
+### Grot Ammo-Stash
+
+Models embarked inside the Ork Scrap-Bastion or occupying its battlements may re-roll To Hit rolls of 1 during the Shooting phase. If the Ork Scrap-Bastion explodes, add +1 to the Building Damage table roll.
+
 ### Idol Kustom Force Field
 
 The Gorkamorka Idol and all friendly Ork units within 3" of it have a 5+ Invulnerable Save against shooting attacks.
+
+### Kustom Force Field Generator
+
+An Ork Scrap-Bastion with a Kustom Force Field Generator has a 5+ Invulnerable Save against shooting attacks.
 
 ### Kustom Force Field
 
@@ -4412,6 +4425,10 @@ _A grot clinging to the back of a squighog, shooting and stabbing at whatever it
 |---|---|---|---|---|
 | Saddlegit's slugga | 12" | 3 | – | Pistol, Assault 1 |
 | Saddlegit's shiv | – | 3 | – | Melee, Deck Crew (1) |
+
+### Searchlights
+
+A model with searchlights ignores the 24" limit to line of sight imposed by the Night Fighting rules when making Shooting Attacks, however enemy units also ignore that same restriction when making Shooting Attacks that target a model with searchlights. In addition, any unit that has been the target of a Shooting Attack made by a unit with searchlights may be freely targeted by any other unit, ignoring the 24" Night Fighting restriction. Searchlights do not count as weapons.
 
 ### Scrap-Wall Barricades
 

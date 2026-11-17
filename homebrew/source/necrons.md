@@ -157,7 +157,7 @@ Use the 2.0 Crusade Force Organisation chart (Necron armies take the Fortificati
 | Fast Attack | Canoptek Wraiths, Canoptek Scarabs, Tomb Blades, Destroyers, Ophydian Destroyers |
 | Heavy Support | Heavy Destroyers, Canoptek Spyders, Canoptek Reanimator, Canoptek Doomstalker, Annihilation Barge, Doomsday Ark, Monolith, Doom Scythe |
 | Lord of War | C'tan Shard of the Nightbringer, C'tan Shard of the Deceiver, C'tan Shard of the Void Dragon, Szarekh the Silent King, Obelisk, Tesseract Vault |
-| Fortifications | Necron Obelisk, Summoning Core, Greater Summoning Core, Necron Energy Core |
+| Fortifications | Necron Obelisk, Summoning Core, Greater Summoning Core, Necron Energy Core, Necron Tomb-Bastion |
 
 A Necron army may take one Rite of War:
 
@@ -1908,6 +1908,47 @@ _A towering, green-arcing monolith reactor that feeds hyper-condensed energy int
 | **The Necron Energy Core may take:** |  |
 | – Quantum Shielding Projector | +25 points |
 
+### Necron Tomb-Bastion — 125 pts
+
+_A bleak, geometric ziggurat of self-repairing necrodermis bristling with emerald gauss flux-arcs, built to match the heaviest Imperial strongpoints._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Necron Tomb-Bastion | – | 4 | 14 | 14 | 14 | 4 | 20 (1 Access Point, 8 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Necron Tomb-Bastion
+
+**Wargear**
+
+- Four gauss flux arcs
+
+_The gauss flux arcs are hull-mounted Automated Fire weapons (BS 4), one on each facing. A crown-mounted turret is an Automated Fire weapon (BS 4) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Building, Necron)
+
+**Special Rules**
+
+- Necron Fortification
+- Tomb Battlements: counts as Open-Topped Battlements on the upper terrace capable of holding up to 10 Infantry models, granting a 4+ Cover Save
+- Tomb-Matrix Automated Fire: during your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc, and a crown-mounted turret at the nearest visible enemy unit within range (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Necron Tomb-Bastion may take one of the following crown-mounted weapon turrets:** |  |
+| – Particle whip | +35 points |
+| – Twin-linked heavy gauss cannon | +30 points |
+| – Twin-linked tesla destructor | +25 points |
+| **The Necron Tomb-Bastion may take any of the following:** |  |
+| – Up to 3 Void Shields | +25 points each |
+| – Eternity Gate Core | +25 points |
+| – Quantum Shielding | +30 points |
+
 ## Wargear
 
 Every Necron model's armour is part of its living metal body; its Armour Save is shown on its profile.
@@ -1946,6 +1987,10 @@ _Obyron's dimensional cloak, bound to his master's location._
 
 As Vargard Obyron's datasheet states.
 
+### Eternity Gate Core
+
+Once per turn, one friendly Necron Infantry unit in Reserves may arrive within 6" of a Necron Tomb-Bastion with an Eternity Gate Core, placed as though by Deep Strike without scattering.
+
 ### Gravity Displacement Pack
 
 _An anti-gravity device carried by the Triarch Praetorians._
@@ -1978,6 +2023,10 @@ The bearer improves its Reanimation Protocols by 1 for itself only.
 
 A Necron Energy Core with a Quantum Shielding Projector has Quantum Shielding: until it loses its first Hull Point, any Armour Penetration roll against it whose total is greater than its Armour Value causes a glancing hit instead.
 
+### Quantum Shielding
+
+A Necron Tomb-Bastion with Quantum Shielding has Quantum Shielding: until it loses its first Hull Point, any Armour Penetration roll against it whose total is greater than its Armour Value causes a glancing hit instead.
+
 ### Reinforced Necrodermis Plating
 
 The Fortification's Front, Side and Rear Armour Values are 13.
@@ -2005,6 +2054,10 @@ Szarekh's command barge works as a Catacomb Command Barge: Szarekh becomes Caval
 _A dimensional cloak that lets its wearer step between places._
 
 The bearer and the unit it joins have Deep Strike. Once per game, at the start of your Movement phase, the unit may be removed and placed anywhere on the battlefield, as though arriving by Deep Strike.
+
+### Void Shield
+
+Each Void Shield gives the Fortification one Void Shield (Armour Value 12), as detailed in the Void Shields rules of the Age of Darkness rulebook.
 
 ## Armoury
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="42" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="43" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -3811,6 +3811,15 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
         <profile name="Pain Amplifier" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5b26-f4ce-e292-ceeb">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">*A psycho-resonant device that aligns battlefield suffering thresholds across several units, converting pain into combat efficiency.* A unit containing one or more models equipped with a pain amplifier may select two effects from the Power From Pain table each time it would normally select one. Both effects apply simultaneously unless explicitly restricted by other rules.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Night-Shield Projector" hidden="false" id="1ca6-be85-f4dd-ae1b" publicationId="9356-fc9b-2fee-7d11">
+      <profiles>
+        <profile name="Night-Shield Projector" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b996-4e32-4736-22f5">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Kabalite Blade-Bastion with a Night-Shield Projector improves its Night-Shield Matrix: ranged attacks made at it from more than 12" away (instead of 18") are resolved as Snap Shots.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -12936,13 +12945,19 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
     <selectionEntry type="unit" import="true" name="Kabalite Blade-Bastion" hidden="false" id="838d-5c08-f49d-d265" publicationId="9356-fc9b-2fee-7d11">
       <rules>
         <rule name="Razor Battlements" id="6a26-22c9-ec28-46c2" hidden="false">
-          <description>Counts as Open-Topped Battlements on the upper terrace capable of holding up to 10 Infantry models, granting a 4+ Cover Save. Any enemy unit charging a Blade-Bastion occupied by friendly models suffers D6 Strength 4 AP – hits with the Rending (6+) special rule before the Assault is resolved</description>
+          <description>Counts as Open-Topped Battlements on the upper terrace capable of holding up to 10 Infantry models, granting a 4+ Cover Save</description>
         </rule>
         <rule name="Slave-Brain Targeting" id="873b-958e-1276-20db" hidden="false">
           <description>During your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)</description>
         </rule>
+        <rule name="Monomolecular Hull Spikes" id="5245-4b79-4b34-5656" hidden="false">
+          <description>Any enemy unit that charges a Kabalite Blade-Bastion, or a unit embarked inside or occupying its battlements, suffers D6 Strength 4 AP – hits with the Rending (6+) special rule before the Assault is resolved</description>
+        </rule>
         <rule name="Note" id="5030-56f4-45c0-3fc5" hidden="false">
-          <description>A razor-edged, spired redoubt dropped from a Kabalite cruiser, bristling with splinter-racks, dark-light turrets, and barbed battlements.</description>
+          <description>A razor-edged, spired redoubt dropped from a Kabalite cruiser, relying on dark-light refraction fields and monomolecular hull spikes rather than heavy ferrocrete.</description>
+        </rule>
+        <rule name="Note" id="15aa-93ff-49c5-c3bb" hidden="false">
+          <description>The Kabalite Blade-Bastion's Armour of 13 is an exception to the Drukhari Fortification Armour limit; the Flesh-Crafted Carapace does not raise it further.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -12961,32 +12976,15 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
           </constraints>
           <profiles>
             <profile name="Kabalite Blade-Bastion" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="afde-5aef-dd1d-1e3e" publicationId="9356-fc9b-2fee-7d11">
-              <modifiers>
-                <modifier type="increment" field="0ef8-a648-01d0-08ee" value="1">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="838d-5c08-f49d-d265" childId="e970-f7e0-489c-9b0f" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="f150-c0dc-c192-9cb3" value="1">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="838d-5c08-f49d-d265" childId="e970-f7e0-489c-9b0f" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="8d4e-2aea-fffc-d556" value="1">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="838d-5c08-f49d-d265" childId="e970-f7e0-489c-9b0f" shared="true" includeChildSelections="true" includeChildForces="false" />
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
-                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building, Drukhari)</characteristic>
                 <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
                 <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
-                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
-                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">13</characteristic>
                 <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
-                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">15 (1 Access Point, 6 Fire Points)</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">20 (1 Access Point, 8 Fire Points)</characteristic>
                 <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
               </characteristics>
             </profile>
@@ -13050,6 +13048,14 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" hidden="false" id="51ba-99b1-f84e-5fe7">
               <entryLinks>
+                <entryLink import="true" name="Night-Shield Projector" hidden="false" id="10d9-ec41-f979-9f8c" type="selectionEntry" targetId="1ca6-be85-f4dd-ae1b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc89-1e57-bb4e-e8f0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
                 <entryLink import="true" name="Phantasm Grenade Launcher Array" hidden="false" id="9011-de00-ebe1-f69c" type="selectionEntry" targetId="ed84-0dde-9ed8-9d83">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da7f-2e6e-591c-25a4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -13098,7 +13104,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120" />
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105" />
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Four splinter cannons" hidden="false" id="ca52-c8a3-3064-c836" publicationId="9356-fc9b-2fee-7d11">

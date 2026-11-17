@@ -136,6 +136,12 @@ loading. The script prints anything in the doc it could not place.
   Bulwark (the doc's "## Fortifications"), a Barricade with the Barricade Fortification rule, Void-Hardened Reinforced
   Plating and an optional Ironkin Sentry-Mount (twin-linked HYLas rotary cannon, Pivotal magna-rail cannon or SP
   conversion beamer). The Bulwark has neither Eye of the Ancestors nor League (X).
+- Bastions (20-model, 8-Fire-Point Buildings with Open-Topped Battlements): the Imperial Bastion (game system, below),
+  the Votann Kin Claim-Bastion and Necron Tomb-Bastion (new), and the reworked T'au Manta Strike Drop-Bunker,
+  Asuryani Wraithbone Bastion, Drukhari Kabalite Blade-Bastion, Anhrathe Void-Bulkhead Redoubt and Ork Scrap-Bastion.
+  Void Shields are bought one at a time ("Up to 2 Void Shields", 3 for the Tomb-Bastion). The Drop-Bunker and
+  Blade-Bastion keep their Sept and Sub-Faction Enhancements. The Blade-Bastion is AV 13, an exception to the Drukhari
+  Armour limit (the Flesh-Crafted Carapace leaves it at 13).
 - A Barricade's turret (the Drone Gun-Turret, Crystal Weapon Platform, Splinter Rack Turret and Ironkin Sentry-Mount)
   is an optional second model in the unit, with its own BS, Armour (10, or 11 for the Sentry-Mount) and 2 Hull Points profile and its weapon.
 - Fortifications have the game system's Fortification Unit Type category and their Building, Emplacement or
@@ -806,6 +812,9 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   same way (it runs `add_imperial_fortifications.py`'s main with the Chaos doc), each with the Chaos Fortification rule.
   Each is hidden in a Detachment holding neither the Traitor allegiance nor the Daemons of the Ruinstorm army entry.
   The Cursed Vox-Amplifier rule comes with its option. It refuses to run twice.
+- `python3 homebrew/add_imperial_bastion.py` adds the Imperial Bastion from `source/imperial-fortifications.md` to
+  `2022 - Horus Heresy.gst` the same way (`add_imperial_fortifications.py`'s main with `only`), as an Imperial
+  Fortification; `faction_fortifications.py` hides it with the others. It refuses to run twice.
 - `python3 homebrew/imperial_fortification_limits.py` enforces the Orbital Uplink Bunker's Orbital Strike Coordinates
   (Legiones Astartes and Solar Auxilia only): hidden, and an error if taken, in a Detachment that holds none of the
   eighteen Legions', the Blackshields', the Shattered Legions' or the Solar Auxilia's army entries. Running it again

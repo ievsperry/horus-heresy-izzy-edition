@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="31" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="32" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="d5ae-9e15-7ef2-10f7" name="Asuryani for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Asuryani" />
   </publications>
@@ -281,6 +281,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="75e2-0366-e364-8f8c" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="12d1-d939-c43e-55fb" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="c53e-5210-1186-fed4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="53a7-ccec-cdce-603f" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="6c2f-a545-af11-51d9" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </conditionGroup>
@@ -343,6 +344,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="75e2-0366-e364-8f8c" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="12d1-d939-c43e-55fb" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="c53e-5210-1186-fed4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="53a7-ccec-cdce-603f" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="6c2f-a545-af11-51d9" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </conditionGroup>
@@ -18236,7 +18238,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
           <description>Friendly Asuryani units within 12" of an occupied Wraithbone Bastion may re-roll failed Morale and Pinning tests</description>
         </rule>
         <rule name="Note" id="ab7e-c4b1-ea5b-2f4a" hidden="false">
-          <description>A sleek, gracefully curved citadel of grown wraithbone, crowned with automated spirit-stone weapon turrets and shimmering holo-fields.</description>
+          <description>A sleek, gracefully curved citadel of grown psycho-reactive wraithbone, trading the brute thickness of Imperial ferrocrete for psycho-lattice reinforcement and holo-fields.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -18255,14 +18257,14 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
           <profiles>
             <profile name="Wraithbone Bastion" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="bf85-69a3-e0e7-16e8" publicationId="d5ae-9e15-7ef2-10f7">
               <characteristics>
-                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building, Asuryani)</characteristic>
                 <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
                 <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
-                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
-                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">13</characteristic>
                 <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
-                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">15 (1 Access Point, 6 Fire Points)</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">20 (1 Access Point, 8 Fire Points)</characteristic>
                 <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
               </characteristics>
             </profile>
@@ -18342,6 +18344,14 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Spirit-Stone Relay" hidden="false" id="3186-5f65-2d94-f73d" type="selectionEntry" targetId="5e09-deda-22b0-361a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ec2-b180-ab4d-a177" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -18351,7 +18361,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="130" />
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="115" />
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Four twin-linked shuriken cannons" hidden="false" id="add5-6ed3-8438-d582" publicationId="d5ae-9e15-7ef2-10f7">

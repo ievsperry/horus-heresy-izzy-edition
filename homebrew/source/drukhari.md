@@ -2185,13 +2185,13 @@ _A jagged tower of blackened iron and barbed hooks hung with shrieking captives 
 | – Combat-Drug Atomisers | +20 points |
 | – Flesh-Crafted Carapace | +25 points |
 
-### Kabalite Blade-Bastion — 120 pts
+### Kabalite Blade-Bastion — 105 pts
 
-_A razor-edged, spired redoubt dropped from a Kabalite cruiser, bristling with splinter-racks, dark-light turrets, and barbed battlements._
+_A razor-edged, spired redoubt dropped from a Kabalite cruiser, relying on dark-light refraction fields and monomolecular hull spikes rather than heavy ferrocrete._
 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Kabalite Blade-Bastion | – | 4 | 11 | 11 | 11 | 4 | 15 (1 Access Point, 6 Fire Points) | No base |
+|---|---|---|---|---|---|---|---|---|
+| Kabalite Blade-Bastion | – | 4 | 13 | 13 | 13 | 4 | 20 (1 Access Point, 8 Fire Points) | Use model |
 
 **Unit Composition**
 
@@ -2205,31 +2205,35 @@ _The hull weapons are Automated Fire weapons (BS 4), one mounted on each facing.
 
 **Unit Type**
 
-- Fortification (Building)
+- Fortification (Building, Drukhari)
 
 **Special Rules**
 
 - Drukhari Fortification
 - Night-Shield Matrix
-- Razor Battlements: counts as Open-Topped Battlements on the upper terrace capable of holding up to 10 Infantry models, granting a 4+ Cover Save. Any enemy unit charging a Blade-Bastion occupied by friendly models suffers D6 Strength 4 AP – hits with the Rending (6+) special rule before the Assault is resolved
+- Razor Battlements: counts as Open-Topped Battlements on the upper terrace capable of holding up to 10 Infantry models, granting a 4+ Cover Save
 - Slave-Brain Targeting: during your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)
+- Monomolecular Hull Spikes: any enemy unit that charges a Kabalite Blade-Bastion, or a unit embarked inside or occupying its battlements, suffers D6 Strength 4 AP – hits with the Rending (6+) special rule before the Assault is resolved
 
 **Options**
 
 | Option | Cost |
-| --- | --- |
+|---|---|
 | **The Kabalite Blade-Bastion may exchange all four splinter cannons for:** |  |
 | – Four shredders | +10 points |
 | **The Kabalite Blade-Bastion may take one of the following crown-mounted weapon turrets:** |  |
 | – Dark lance | +20 points |
 | – Disintegrator cannon | +20 points |
 | – Twin-linked splinter cannon | +15 points |
-| **The Kabalite Blade-Bastion may take:** |  |
+| **The Kabalite Blade-Bastion may take any of the following:** |  |
+| – Night-Shield Projector | +20 points |
 | – Phantasm Grenade Launcher Array | +15 points |
 | **The Kabalite Blade-Bastion may take one of the following Sub-Faction Enhancements:** |  |
 | – Splinter-Rack Munitions | +20 points |
 | – Combat-Drug Atomisers | +20 points |
 | – Flesh-Crafted Carapace | +25 points |
+
+_The Kabalite Blade-Bastion's Armour of 13 is an exception to the Drukhari Fortification Armour limit; the Flesh-Crafted Carapace does not raise it further._
 
 ### Void-Raptor Sky-Dock — 80 pts
 
@@ -2506,6 +2510,10 @@ Enemy units targeting a model equipped with night shields for ranged attacks tre
 *A psycho-resonant device that aligns battlefield suffering thresholds across several units, converting pain into combat efficiency.*
 
 A unit containing one or more models equipped with a pain amplifier may select two effects from the Power From Pain table each time it would normally select one. Both effects apply simultaneously unless explicitly restricted by other rules.
+
+### Night-Shield Projector
+
+A Kabalite Blade-Bastion with a Night-Shield Projector improves its Night-Shield Matrix: ranged attacks made at it from more than 12" away (instead of 18") are resolved as Snap Shots.
 
 ### Phantasm Grenade Launcher
 
