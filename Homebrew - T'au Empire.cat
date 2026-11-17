@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="48" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -30860,8 +30860,8 @@ Except that instead of extra heavy burst cannon shots, the Y'vahra may choose No
         <rule name="Note" id="bdd3-975c-f7e3-0c3e" hidden="false">
           <description>An interlocking network of lightweight, anti-gravitic alloy blast shields equipped with automated guardian-drone emitters and localized energy-deflection fields.</description>
         </rule>
-        <rule name="Note" id="8a6c-fae2-07e5-92b1" hidden="false">
-          <description>The Drone Gun-Turret is deployed in base contact with any section of the Barricade. It has BS 3, Front, Side and Rear Armour 10 and 2 Hull Points, and its weapon is an Automated Fire weapon.</description>
+        <rule name="Note" id="a859-15ce-d799-34a3" hidden="false">
+          <description>The Portable Pulse-Barricade is made up of 4 long sections and 4 short sections. The Drone Gun-Turret is deployed in base contact with any section of the Barricade, and its weapon is an Automated Fire weapon.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -30874,8 +30874,8 @@ Except that instead of extra heavy burst cannon shots, the Y'vahra may choose No
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Portable Pulse-Barricade" hidden="false" id="2dfd-8acc-16e2-9aca" publicationId="733a-d454-80f2-c90e">
           <constraints>
-            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="959f-4d27-4d92-6050" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="d81e-749c-51bb-7991" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="959f-4d27-4d92-6050" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d81e-749c-51bb-7991" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
             <profile name="Portable Pulse-Barricade" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="6267-cb8a-24f4-2025" publicationId="733a-d454-80f2-c90e">
@@ -30900,39 +30900,74 @@ Except that instead of extra heavy burst cannon shots, the Y'vahra may choose No
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Drone Gun-Turret" hidden="false" id="c6fe-d958-6569-66b4" publicationId="733a-d454-80f2-c90e">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="983c-405d-323e-cf83" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d589-9cb4-2eca-9fc3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Drone Gun-Turret" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="29de-f62d-4015-53ea" publicationId="733a-d454-80f2-c90e">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">10</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">–</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="d4aa-d05b-5f5f-4279" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="7e42-18b8-5d81-a2c3" primary="false" name="Emplacement Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked missile pod" hidden="false" id="383c-4be4-ad66-c84a" defaultSelectionEntryId="eef4-c8d0-e46c-95e5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="00af-56ab-6deb-9af4" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c10-703b-0b0c-e908" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked missile pod" hidden="false" id="eef4-c8d0-e46c-95e5" type="selectionEntry" targetId="9823-d843-4a4d-4866">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd0e-9894-edc8-43c4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Smart missile system" hidden="false" id="81a2-9b4e-1d68-c465" type="selectionEntry" targetId="5731-8303-207d-9c0e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8cc-a4e0-94e3-2913" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="cdb3-6854-0aa5-4dd4">
+        <selectionEntryGroup name="Portable Pulse-Barricade: Options" hidden="false" id="47ba-b849-5d9f-6f2f">
           <entryLinks>
-            <entryLink import="true" name="Guardian Shield Emitters" hidden="false" id="220a-e11c-650a-84be" type="selectionEntry" targetId="f642-f222-621b-76fe">
+            <entryLink import="true" name="Guardian Shield Emitters" hidden="false" id="720a-d439-ae23-890e" type="selectionEntry" targetId="f642-f222-621b-76fe">
+              <modifiers>
+                <modifier type="increment" field="2d1a-5058-f27a-0ee5" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="b1bc-014f-b5be-9f3a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2dfd-8acc-16e2-9aca" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a6d-4506-9fff-b075" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2d1a-5058-f27a-0ee5" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="3f96-1e59-53df-a8a4">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36a8-96d1-ea58-d133" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Twin-linked missile pod" hidden="false" id="9b60-4a03-90fe-5565" type="selectionEntry" targetId="9823-d843-4a4d-4866">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d60c-eadb-53fa-8c49" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Smart missile system" hidden="false" id="2631-def8-c83e-5c51" type="selectionEntry" targetId="5731-8303-207d-9c0e">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9896-0324-de25-adbe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
               </costs>
             </entryLink>
           </entryLinks>

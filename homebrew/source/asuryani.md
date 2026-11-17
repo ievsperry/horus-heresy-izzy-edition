@@ -2781,15 +2781,20 @@ _Graceful, curved ribbons of psycho-reactive wraithbone grown around shimmering 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
 |---|---|---|---|---|---|---|---|---|
 | Wraithbone Force-Wall | – | – | – | – | – | – | – | Use model |
+| Crystal Weapon Platform | – | 4 | 10 | 10 | 10 | 2 | – | Use model |
 
 **Unit Composition**
 
-- 4 Long Sections
-- 4 Short Sections
+- 1 Wraithbone Force-Wall
+
+**Wargear**
+
+- Crystal Weapon Platform: Scatter laser
 
 **Unit Type**
 
-- Fortification (Barricade, Asuryani)
+- Wraithbone Force-Wall: Fortification (Barricade, Asuryani)
+- Crystal Weapon Platform: Fortification (Emplacement)
 
 **Special Rules**
 
@@ -2804,11 +2809,11 @@ _Graceful, curved ribbons of psycho-reactive wraithbone grown around shimmering 
 |---|---|
 | **The Wraithbone Force-Wall may take:** |  |
 | – Holo-Field Pylons | +20 points |
-| **The Wraithbone Force-Wall may take one Crystal Weapon Platform armed with one of the following:** |  |
-| – Scatter laser | +20 points |
-| – Bright lance | +20 points |
+| – Up to 1 Crystal Weapon Platform | +20 points |
+| **The Crystal Weapon Platform may exchange its scatter laser for:** |  |
+| – Bright lance | +0 points |
 
-_The Crystal Weapon Platform is deployed in base contact with any section of the Force-Wall. It has BS 4, Front, Side and Rear Armour 10 and 2 Hull Points, and its weapon is an Automated Fire weapon._
+_The Wraithbone Force-Wall is made up of 4 long sections and 4 short sections. The Crystal Weapon Platform is deployed in base contact with any section of the Force-Wall, and its weapon is an Automated Fire weapon._
 
 ### Webway Gate — 75 pts
 

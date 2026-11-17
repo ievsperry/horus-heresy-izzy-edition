@@ -3790,15 +3790,20 @@ _An interlocking network of lightweight, anti-gravitic alloy blast shields equip
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
 |---|---|---|---|---|---|---|---|---|
 | Portable Pulse-Barricade | – | – | – | – | – | – | – | Use model |
+| Drone Gun-Turret | – | 3 | 10 | 10 | 10 | 2 | – | Use model |
 
 **Unit Composition**
 
-- 4 Long Sections
-- 4 Short Sections
+- 1 Portable Pulse-Barricade
+
+**Wargear**
+
+- Drone Gun-Turret: Twin-linked missile pod
 
 **Unit Type**
 
-- Fortification (Barricade, T'au Empire)
+- Portable Pulse-Barricade: Fortification (Barricade, T'au Empire)
+- Drone Gun-Turret: Fortification (Emplacement)
 
 **Special Rules**
 
@@ -3813,11 +3818,11 @@ _An interlocking network of lightweight, anti-gravitic alloy blast shields equip
 |---|---|
 | **The Portable Pulse-Barricade may take:** |  |
 | – Guardian Shield Emitters | +20 points |
-| **The Portable Pulse-Barricade may take one Drone Gun-Turret armed with one of the following:** |  |
-| – Twin-linked missile pod | +15 points |
-| – Smart missile system | +15 points |
+| – Up to 1 Drone Gun-Turret | +15 points |
+| **The Drone Gun-Turret may exchange its twin-linked missile pod for:** |  |
+| – Smart missile system | +0 points |
 
-_The Drone Gun-Turret is deployed in base contact with any section of the Barricade. It has BS 3, Front, Side and Rear Armour 10 and 2 Hull Points, and its weapon is an Automated Fire weapon._
+_The Portable Pulse-Barricade is made up of 4 long sections and 4 short sections. The Drone Gun-Turret is deployed in base contact with any section of the Barricade, and its weapon is an Automated Fire weapon._
 
 ## Wargear
 

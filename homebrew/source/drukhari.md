@@ -2319,15 +2319,20 @@ _A cruel, spiked palisade of monomolecular blades, barbed chains, and shrieking 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
 |---|---|---|---|---|---|---|---|---|
 | Razor-Blade Barricade | – | – | – | – | – | – | – | Use model |
+| Splinter Rack Turret | – | 4 | 10 | 10 | 10 | 2 | – | Use model |
 
 **Unit Composition**
 
-- 4 Long Sections
-- 4 Short Sections
+- 1 Razor-Blade Barricade
+
+**Wargear**
+
+- Splinter Rack Turret: Twin-linked splinter cannon
 
 **Unit Type**
 
-- Fortification (Barricade, Drukhari)
+- Razor-Blade Barricade: Fortification (Barricade, Drukhari)
+- Splinter Rack Turret: Fortification (Emplacement)
 
 **Special Rules**
 
@@ -2343,10 +2348,9 @@ _A cruel, spiked palisade of monomolecular blades, barbed chains, and shrieking 
 | **The Razor-Blade Barricade may take any of the following:** |  |
 | – Infiltrate | +15 points |
 | – Phantasm Grenade Launcher Battery | +15 points |
-| **The Razor-Blade Barricade may take one Splinter Rack Turret armed with one of the following:** |  |
-| – Twin-linked splinter cannon | +15 points |
+| – Up to 1 Splinter Rack Turret | +15 points |
 
-_With Infiltrate, the Barricade is deployed using the standard Infiltrate special rule. The Splinter Rack Turret is deployed in base contact with any section of the Barricade. It has BS 4, Front, Side and Rear Armour 10 and 2 Hull Points, and its weapon is an Automated Fire weapon._
+_With Infiltrate, the Barricade is deployed using the standard Infiltrate special rule. The Razor-Blade Barricade is made up of 4 long sections and 4 short sections. The Splinter Rack Turret is deployed in base contact with any section of the Barricade, and its weapon is an Automated Fire weapon._
 
 ## Wargear
 

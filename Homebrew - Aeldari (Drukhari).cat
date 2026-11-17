@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="40" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="41" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -13426,7 +13426,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
           <description>A cruel, spiked palisade of monomolecular blades, barbed chains, and shrieking agonizer-poles dropped from raiding skiffs to bleed and terrify charging prey.</description>
         </rule>
         <rule name="Note" id="d94b-9e2b-5c4f-cfca" hidden="false">
-          <description>With Infiltrate, the Barricade is deployed using the standard Infiltrate special rule. The Splinter Rack Turret is deployed in base contact with any section of the Barricade. It has BS 4, Front, Side and Rear Armour 10 and 2 Hull Points, and its weapon is an Automated Fire weapon.</description>
+          <description>With Infiltrate, the Barricade is deployed using the standard Infiltrate special rule. The Razor-Blade Barricade is made up of 4 long sections and 4 short sections. The Splinter Rack Turret is deployed in base contact with any section of the Barricade, and its weapon is an Automated Fire weapon.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -13439,8 +13439,8 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Razor-Blade Barricade" hidden="false" id="add9-5cb2-cd30-2f05" publicationId="9356-fc9b-2fee-7d11">
           <constraints>
-            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="4468-57ed-ba92-884b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="a533-d81d-d0f8-e344" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4468-57ed-ba92-884b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a533-d81d-d0f8-e344" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
             <profile name="Razor-Blade Barricade" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="65e7-f126-14f2-ea92" publicationId="9356-fc9b-2fee-7d11">
@@ -13465,36 +13465,71 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="cbc7-5222-3833-7211">
+        <selectionEntry type="model" import="true" name="Splinter Rack Turret" hidden="false" id="8342-ec18-ddfb-e032" publicationId="9356-fc9b-2fee-7d11">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="37f9-43e5-937f-d0af" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0562-0586-d7d2-e51b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Splinter Rack Turret" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="c3c4-0f0e-97ff-38ad" publicationId="9356-fc9b-2fee-7d11">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">10</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">–</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="a8d9-9c2d-dc1d-50e6" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="0d82-e241-738f-5010" primary="false" name="Emplacement Sub-type" />
+          </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Infiltrate" hidden="false" id="7273-79e3-d03d-fc91" type="selectionEntry" targetId="3a48-281a-84bd-a2ff">
+            <entryLink import="true" name="Twin-linked splinter cannon" hidden="false" id="b849-b1c5-3aa9-c2d6" type="selectionEntry" targetId="9319-cc6a-48ed-7e1e">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6744-7da7-38ec-f6da" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a19-62d1-c9af-c347" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4b4-4fc7-6ec5-7e5d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Phantasm Grenade Launcher Battery" hidden="false" id="f7e4-fdec-d8dc-3088" type="selectionEntry" targetId="d93e-832c-5570-7e0b">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3e1-6707-a47c-480d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
-              </costs>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="a856-b419-29d8-a1f9">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97b7-38d4-e20c-48af" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Razor-Blade Barricade: Options" hidden="false" id="06fc-5b35-25ab-e3ee">
           <entryLinks>
-            <entryLink import="true" name="Twin-linked splinter cannon" hidden="false" id="1383-2faa-e30d-bf65" type="selectionEntry" targetId="9319-cc6a-48ed-7e1e">
+            <entryLink import="true" name="Infiltrate" hidden="false" id="5069-4461-c062-ea90" type="selectionEntry" targetId="3a48-281a-84bd-a2ff">
+              <modifiers>
+                <modifier type="increment" field="87ff-1893-6efa-1daa" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="0249-b3dd-d1a4-99ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="add9-5cb2-cd30-2f05" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4f2-f455-5b85-cafc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="87ff-1893-6efa-1daa" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Phantasm Grenade Launcher Battery" hidden="false" id="7ec6-6bc0-10dc-f0e0" type="selectionEntry" targetId="d93e-832c-5570-7e0b">
+              <modifiers>
+                <modifier type="increment" field="b98c-dc3b-f295-ca3a" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="0249-b3dd-d1a4-99ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="add9-5cb2-cd30-2f05" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b98c-dc3b-f295-ca3a" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />

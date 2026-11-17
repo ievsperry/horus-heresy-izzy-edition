@@ -91,7 +91,7 @@ loading. The script prints anything in the doc it could not place.
   "## Fortifications": Wraithbone Bastion, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar), each with the
   Asuryani Fortification rule. Holo-Field Emitters and the Spirit-Stone Relay are Fortification Wargear. The game
   system's own Fortifications are hidden from an Asuryani Detachment. The Wraithbone Force-Wall is a Barricade (the
-  Barricade Fortification rule) with Holo-Field Pylons and a Crystal Weapon Platform (scatter laser or bright lance).
+  Barricade Fortification rule) with Holo-Field Pylons and an optional Crystal Weapon Platform (scatter laser or bright lance).
   The shared Aeldari Warhost Detachment takes 0-2 Fortifications and the Aeldari Auxiliary Detachment 0-1 (in all
   four Aeldari lists).
 - T'au take their own T'au Fortifications beside the Tidewalls (the doc's "### Fortifications": Remote Sensor
@@ -100,7 +100,7 @@ loading. The script prints anything in the doc it could not place.
   rule. Each may take one Sept Enhancement (`tau_fortifications.py`, run from `tau_rites.py`): shown only in a
   Detachment of that Sept, and an error in another. The game system's own Fortifications are hidden from a T'au
   Detachment. The Portable Pulse-Barricade is a Barricade (the Barricade Fortification rule, no Sept Enhancement)
-  with Guardian Shield Emitters and a Drone Gun-Turret (twin-linked missile pod or smart missile system).
+  with Guardian Shield Emitters and an optional Drone Gun-Turret (twin-linked missile pod or smart missile system).
 - Anhrathe take their own Anhrathe Fortifications (the doc's "## Fortifications": Plunder-Beacon, Void-Bulkhead
   Redoubt, Void-Skiff Extraction Tender, Corsair Lance-Pod), each with the Anhrathe Fortification and Lightweight
   Void-Alloy rules (Armour never above 11, Shrouded (6+) beyond 12"). The Holo-Field Generator, Kinetic Shroud-Fields and
@@ -119,8 +119,8 @@ loading. The script prints anything in the doc it could not place.
   adds 1 to the Fortification's Front, Side and Rear Armour on its profile (to a maximum of 12). A Realspace Raiders Detachment takes
   0-1 Fortifications, and only the Dread-Pod Drop-Turret or the Razor-Blade Barricade (the others are hidden there). The game system's own
   Fortifications are hidden from a Drukhari Detachment. The Razor-Blade Barricade is a Barricade (the Barricade
-  Fortification rule, no Sub-Faction Enhancement) with Infiltrate, a Phantasm Grenade Launcher Battery and a Splinter
-  Rack Turret (twin-linked splinter cannon).
+  Fortification rule, no Sub-Faction Enhancement) with Infiltrate, a Phantasm Grenade Launcher Battery and an optional
+  Splinter Rack Turret (twin-linked splinter cannon).
 - Orks take their own Ork Fortifications (the doc's "## Fortifications": Mekboy Workshop, Ork Scrap-Bastion,
   Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement, and the Waaagh! Banner Totem, Gorkamorka
   Idol, Supa-Slugga Emplacement and Scrap-Listening Post) as Fortification choices, each with the Ork Fortification
@@ -130,6 +130,8 @@ loading. The script prints anything in the doc it could not place.
 
 - Vehicles, Dreadnoughts, Knights and Titans get the game system's Vehicle or Knights
   and Titans profile, and their sub-types (Fast, Flyer, Transport...) as categories.
+- A Barricade's turret (the Drone Gun-Turret, Crystal Weapon Platform and Splinter Rack Turret) is an optional
+  second model in the unit, with its own BS, Armour 10 and 2 Hull Points profile and its weapon.
 - Fortifications have the game system's Fortification Unit Type category and their Building, Emplacement or
   Barricade Sub-type, as the official Fortifications do. A Tidewall is "Fortification (Building, Antigrav)".
 - Models bought as options (ammo runts, grot oilers, Spanners) are their own model

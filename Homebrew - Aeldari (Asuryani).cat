@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="d5ae-9e15-7ef2-10f7" name="Asuryani for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Asuryani" />
   </publications>
@@ -18054,8 +18054,8 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
         <rule name="Note" id="88aa-23b5-0dfe-4045" hidden="false">
           <description>Graceful, curved ribbons of psycho-reactive wraithbone grown around shimmering crystal pylons that bend incoming light and project a blinding psychic refraction screen.</description>
         </rule>
-        <rule name="Note" id="39e3-349b-6da3-7eba" hidden="false">
-          <description>The Crystal Weapon Platform is deployed in base contact with any section of the Force-Wall. It has BS 4, Front, Side and Rear Armour 10 and 2 Hull Points, and its weapon is an Automated Fire weapon.</description>
+        <rule name="Note" id="8cb9-f9cb-4a5a-cdd0" hidden="false">
+          <description>The Wraithbone Force-Wall is made up of 4 long sections and 4 short sections. The Crystal Weapon Platform is deployed in base contact with any section of the Force-Wall, and its weapon is an Automated Fire weapon.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -18068,8 +18068,8 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Wraithbone Force-Wall" hidden="false" id="282b-e4df-43a3-a4cd" publicationId="d5ae-9e15-7ef2-10f7">
           <constraints>
-            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="e4cf-7706-862f-5373" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="ac57-a1b0-626a-1c1b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e4cf-7706-862f-5373" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac57-a1b0-626a-1c1b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
           <profiles>
             <profile name="Wraithbone Force-Wall" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="180c-6fbf-bd25-a9d2" publicationId="d5ae-9e15-7ef2-10f7">
@@ -18094,36 +18094,71 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Crystal Weapon Platform" hidden="false" id="da2c-a2f6-cf28-237e" publicationId="d5ae-9e15-7ef2-10f7">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ca9b-1cb0-1c9b-a0aa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc3e-f757-5c28-04b0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Crystal Weapon Platform" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="9fde-37e0-fed7-0ec2" publicationId="d5ae-9e15-7ef2-10f7">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">10</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">–</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="1f9f-14a3-f78e-9f70" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="6bf2-13db-1a4a-46f7" primary="false" name="Emplacement Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange scatter laser" hidden="false" id="e44c-55c9-cc9c-3e82" defaultSelectionEntryId="add2-0b1d-cb41-ecc0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb8a-e79d-015d-df2f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be95-3cbc-3bfc-d06d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Scatter laser" hidden="false" id="add2-0b1d-cb41-ecc0" type="selectionEntry" targetId="f7f2-e730-fef9-c731">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d7f-5958-a10c-c566" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Bright lance" hidden="false" id="6f58-24e9-5845-b790" type="selectionEntry" targetId="160f-8d95-b23d-7480">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b0a-136d-995b-803d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="08f7-62f2-2ba2-6dd5">
+        <selectionEntryGroup name="Wraithbone Force-Wall: Options" hidden="false" id="9cdb-e5f8-bd32-0aef">
           <entryLinks>
-            <entryLink import="true" name="Holo-Field Pylons" hidden="false" id="1bb8-2204-77ec-6aed" type="selectionEntry" targetId="f296-7d89-fee3-65af">
+            <entryLink import="true" name="Holo-Field Pylons" hidden="false" id="ecf6-5280-506b-b5bd" type="selectionEntry" targetId="f296-7d89-fee3-65af">
+              <modifiers>
+                <modifier type="increment" field="efcb-f00d-4d9e-b88f" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="c53e-5210-1186-fed4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="282b-e4df-43a3-a4cd" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="735f-42a5-0fa8-8daf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="72e5-d356-fc82-3417">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="003a-18b0-32c9-e288" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Scatter laser" hidden="false" id="2fa0-9bbb-5b02-6f0a" type="selectionEntry" targetId="f7f2-e730-fef9-c731">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b524-2089-58bc-43d8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Bright lance" hidden="false" id="bd2f-fe27-cd6d-1ead" type="selectionEntry" targetId="160f-8d95-b23d-7480">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9117-6b00-a257-b066" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="efcb-f00d-4d9e-b88f" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
