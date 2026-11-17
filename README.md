@@ -1,8 +1,7 @@
 Horus Heresy — Izzy Edition
 ===========================
 
-Army-building data for **The Horus Heresy: Age of Darkness (2.0)**, for [New Recruit](https://www.newrecruit.eu/) and
-BattleScribe. The game system is called **Horus Heresy - Izzy Juan (2026)**.
+Army-building data for **The Horus Heresy: Age of Darkness (2.0)**, for [New Recruit](https://www.newrecruit.eu/). The game system is called **Horus Heresy - Izzy Juan (2026)**.
 
 This repository is a fork of [BSData/horus-heresy](https://github.com/BSData/horus-heresy). It keeps the official
 army lists, applies the Liber FAQs and errata, and adds:
