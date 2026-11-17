@@ -90,8 +90,9 @@ loading. The script prints anything in the doc it could not place.
 - Asuryani have three Asuryani Fortifications beside the Holo-Field Defence Line and Webway Gate (the doc's
   "## Fortifications": Wraithbone Bastion, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar), each with the
   Asuryani Fortification rule. Holo-Field Emitters and the Spirit-Stone Relay are Fortification Wargear. The game
-  system's own Fortifications are hidden from an Asuryani Detachment. The Wraithbone Force-Wall is a Barricade (the
-  Barricade Fortification rule) with Holo-Field Pylons and an optional Crystal Weapon Platform (scatter laser or bright lance).
+  system's own Fortifications are hidden from an Asuryani Detachment. The Holo-Field Defence Line has the Barricade
+  Fortification rule beside its Holo-Emitter (Shrouded (6+) within 1", Blast wounds re-rolled). The Wraithbone
+  Force-Wall is a Barricade (the Barricade Fortification rule) with Holo-Field Pylons and an optional Crystal Weapon Platform (scatter laser or bright lance).
   The shared Aeldari Warhost Detachment takes 0-2 Fortifications and the Aeldari Auxiliary Detachment 0-1 (in all
   four Aeldari lists).
 - T'au take their own T'au Fortifications beside the Tidewalls (the doc's "### Fortifications": Remote Sensor
@@ -124,7 +125,8 @@ loading. The script prints anything in the doc it could not place.
 - Orks take their own Ork Fortifications (the doc's "## Fortifications": Mekboy Workshop, Ork Scrap-Bastion,
   Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement, and the Waaagh! Banner Totem, Gorkamorka
   Idol, Supa-Slugga Emplacement and Scrap-Listening Post) as Fortification choices, each with the Ork Fortification
-  army rule (the last four also Kustom-Built & Clunky: Ramshackled Vehicle (6+)). The game system's own Fortifications are hidden from an Ork Detachment. A Waaagh!
+  army rule (the last four also Kustom-Built & Clunky: Ramshackled Vehicle (6+)), except the Aegis Scrap-Wall & Gun
+  Emplacement, a Barricade with the Barricade Fortification rule instead. The game system's own Fortifications are hidden from an Ork Detachment. A Waaagh!
   Warband Primary Detachment takes up to two and a Scappin' Waaagh! Primary Detachment up to one (a "Fortifications"
   row in a Detachment chart is read like the others).
 
