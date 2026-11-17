@@ -4,8 +4,8 @@ Called by build_catalogue.py for that faction. Each enhancement (written under "
 Drukhari Fortification) is hidden unless the Detachment has chosen its Sub-faction (Kabals, Wych Cults or
 Haemonculus Covens), and is an error if taken in a Detachment of another Sub-faction.
 
-A Realspace Raiders Detachment (Kabal, Wych Cult or Haemonculus Coven) may take only the Dread-Pod Drop-Turret as
-its Fortification: the other Drukhari Fortifications are hidden there, and an error if taken.
+A Realspace Raiders Detachment (Kabal, Wych Cult or Haemonculus Coven) may take only the Dread-Pod Drop-Turret or the
+Razor-Blade Barricade as its Fortification: the other Drukhari Fortifications are hidden there, and an error if taken.
 
 A Fortification with the Flesh-Crafted Carapace adds 1 to its Front, Side and Rear Armour Values on its profile
 (to a maximum of 12).

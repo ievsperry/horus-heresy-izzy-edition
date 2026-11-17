@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="39" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="41" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -245,7 +245,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </constraints>
       <rules>
         <rule name="Drukhari Realspace Raiders" id="269f-d1d0-3fca-ac6a" hidden="false">
-          <description>The only Fortification a Realspace Raiders Detachment may select is a Dread-Pod Drop-Turret.</description>
+          <description>The only Fortifications a Realspace Raiders Detachment may select are a Dread-Pod Drop-Turret or a Razor-Blade Barricade.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -302,7 +302,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </constraints>
       <rules>
         <rule name="Drukhari Realspace Raiders" id="61e4-1f2f-2dbd-9a27" hidden="false">
-          <description>The only Fortification a Realspace Raiders Detachment may select is a Dread-Pod Drop-Turret.</description>
+          <description>The only Fortifications a Realspace Raiders Detachment may select are a Dread-Pod Drop-Turret or a Razor-Blade Barricade.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -359,7 +359,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       </constraints>
       <rules>
         <rule name="Drukhari Realspace Raiders" id="d3b9-59be-4684-6513" hidden="false">
-          <description>The only Fortification a Realspace Raiders Detachment may select is a Dread-Pod Drop-Turret.</description>
+          <description>The only Fortifications a Realspace Raiders Detachment may select are a Dread-Pod Drop-Turret or a Razor-Blade Barricade.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1421,6 +1421,12 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       <categoryLinks>
         <categoryLink targetId="a24f-12d8-36c1-f477" id="7d6d-ee70-30a4-95bc" primary="true" name="Fortification:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="bb9a-bc9c-c6ee-7b0a" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Razor-Blade Barricade" hidden="false" id="03c1-e23a-eabc-9485" type="selectionEntry" targetId="0249-b3dd-d1a4-99ea">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="0b40-04c1-1bf3-389e" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="1b18-661f-d5b0-b25c" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Reavers" hidden="true" id="e472-adb0-d57e-231f" type="selectionEntry" targetId="1521-01b7-c395-59eb">
@@ -3834,6 +3840,15 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
         <profile name="Phantasm Grenade Launcher Array" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="bd77-c591-a383-13fa">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any enemy unit that ends a move within 12" of a Fortification with a Phantasm Grenade Launcher Array must immediately take a Pinning test.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Phantasm Grenade Launcher Battery" hidden="false" id="d93e-832c-5570-7e0b" publicationId="9356-fc9b-2fee-7d11">
+      <profiles>
+        <profile name="Phantasm Grenade Launcher Battery" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="9d47-6bb1-c094-6b2f">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per enemy Movement phase, if an enemy unit ends a move within 12" of a Razor-Blade Barricade with a Phantasm Grenade Launcher Battery, that enemy unit must immediately take a Pinning test.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -13396,6 +13411,142 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Razor-Blade Barricade" hidden="false" id="0249-b3dd-d1a4-99ea" publicationId="9356-fc9b-2fee-7d11">
+      <rules>
+        <rule name="Monomolecular Spikes" id="b84d-17a4-192a-8333" hidden="false">
+          <description>Any enemy unit that charges across a Razor-Blade Barricade suffers D6 Strength 4 AP – hits with the Rending (5+) special rule before the Assault is resolved, in addition to treating the Barricade as Difficult Terrain</description>
+        </rule>
+        <rule name="Fear (1)" id="a077-0e55-04e0-a082" hidden="false">
+          <description>Enemy units within 6" of a Razor-Blade Barricade suffer a -1 penalty to their Leadership characteristic for all Fear, Morale, and Pinning checks</description>
+        </rule>
+        <rule name="Night-Shield Baffles" id="ee79-6839-3ef0-a43d" hidden="false">
+          <description>Friendly Drukhari models within 1" of a Razor-Blade Barricade count as being 6" further away for ranged attacks made across it</description>
+        </rule>
+        <rule name="Note" id="92c6-79fd-1f53-a877" hidden="false">
+          <description>A cruel, spiked palisade of monomolecular blades, barbed chains, and shrieking agonizer-poles dropped from raiding skiffs to bleed and terrify charging prey.</description>
+        </rule>
+        <rule name="Note" id="d94b-9e2b-5c4f-cfca" hidden="false">
+          <description>With Infiltrate, the Barricade is deployed using the standard Infiltrate special rule. The Razor-Blade Barricade is made up of 4 long sections and 4 short sections. The Splinter Rack Turret is deployed in base contact with any section of the Barricade, and its weapon is an Automated Fire weapon.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="c4d7-65f3-01e5-e049" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Barricade Fortification" id="020a-221b-154a-921e" hidden="false" targetId="0a47-7fe4-081d-c41c" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="278d-78be-f189-cd45" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Razor-Blade Barricade" hidden="false" id="add9-5cb2-cd30-2f05" publicationId="9356-fc9b-2fee-7d11">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4468-57ed-ba92-884b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a533-d81d-d0f8-e344" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Razor-Blade Barricade" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="65e7-f126-14f2-ea92" publicationId="9356-fc9b-2fee-7d11">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Barricade, Drukhari)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">–</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">–</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">–</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">–</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">–</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">–</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="e1e9-9b5b-a5a3-0ee6" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="473d-0126-2dab-25ea" id="2eda-dc0a-6e32-a019" primary="false" name="Barricade Sub-type" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Splinter Rack Turret" hidden="false" id="8342-ec18-ddfb-e032" publicationId="9356-fc9b-2fee-7d11">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="37f9-43e5-937f-d0af" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0562-0586-d7d2-e51b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Splinter Rack Turret" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="c3c4-0f0e-97ff-38ad" publicationId="9356-fc9b-2fee-7d11">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">10</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">–</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="a8d9-9c2d-dc1d-50e6" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="0d82-e241-738f-5010" primary="false" name="Emplacement Sub-type" />
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Twin-linked splinter cannon" hidden="false" id="b849-b1c5-3aa9-c2d6" type="selectionEntry" targetId="9319-cc6a-48ed-7e1e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a19-62d1-c9af-c347" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4b4-4fc7-6ec5-7e5d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Razor-Blade Barricade: Options" hidden="false" id="06fc-5b35-25ab-e3ee">
+          <entryLinks>
+            <entryLink import="true" name="Infiltrate" hidden="false" id="5069-4461-c062-ea90" type="selectionEntry" targetId="3a48-281a-84bd-a2ff">
+              <modifiers>
+                <modifier type="increment" field="87ff-1893-6efa-1daa" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="0249-b3dd-d1a4-99ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="add9-5cb2-cd30-2f05" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="87ff-1893-6efa-1daa" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Phantasm Grenade Launcher Battery" hidden="false" id="7ec6-6bc0-10dc-f0e0" type="selectionEntry" targetId="d93e-832c-5570-7e0b">
+              <modifiers>
+                <modifier type="increment" field="b98c-dc3b-f295-ca3a" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="0249-b3dd-d1a4-99ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="add9-5cb2-cd30-2f05" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b98c-dc3b-f295-ca3a" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Infiltrate" hidden="false" id="3a48-281a-84bd-a2ff" publicationId="9356-fc9b-2fee-7d11">
+      <infoLinks>
+        <infoLink name="Infiltrate" id="3258-b730-99ae-61af" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule" />
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Warlord Traits" hidden="false" id="76b1-0683-1d7a-dca0">
@@ -13697,6 +13848,9 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
     </rule>
     <rule name="Night-Shield Matrix" id="ed54-5f1a-d5de-15d1" hidden="false" publicationId="9356-fc9b-2fee-7d11">
       <description>A Fortification with this Special Rule counts as equipped with night shields: enemy units targeting it for ranged attacks treat it as 6" further away than its actual position, and any ranged attack made at it at over 18" is resolved as Snap Shots.</description>
+    </rule>
+    <rule name="Barricade Fortification" id="0a47-7fe4-081d-c41c" hidden="false" publicationId="9356-fc9b-2fee-7d11">
+      <description>A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Unless stated otherwise, models in base contact with a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.</description>
     </rule>
     <rule name="Night Vision" id="bb43-b436-18ab-1c61" hidden="false" publicationId="9356-fc9b-2fee-7d11">
       <description>A unit that contains at least one model with this Special Rule ignores the effects of Night Fighting (see page 308) and no model may make Shrouded rolls to negate Wounds or Hull Points inflicted by their attacks. In addition, the unit can detect and target units with the Stealth special rule within 18" instead of 12".</description>

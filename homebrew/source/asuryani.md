@@ -160,7 +160,7 @@ No other units may be selected as part of this Detachment.
 | Heavy Support | Dark Reapers, Falcon Squadron, Fire Prism Squadron, Firestorm Squadron, Night Spinner Squadron, Vaul's Wrath Support Battery, Wraithlord Conclave, Wraithseer |
 | Lords of War | Cobra, Lynx, Phantom Titan, Revenant Titan, Scorpion, Skathach Wraithknight, Vampire Hunter, Vampire Raider, Wraithknight |
 | Dramatis Personae | Asurmen, Avatar of Khaine, Baharroth, Drastanta, Fuegan, Irillyth, Jain Zar, Karandras, Maugan Ra |
-| Fortifications | Holo-Field Defence Line, Webway Gate, Wraithbone Bastion, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar |
+| Fortifications | Holo-Field Defence Line, Wraithbone Force-Wall, Webway Gate, Wraithbone Bastion, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar |
 
 ## Advanced Reaction: Aspects of War
 
@@ -2739,7 +2739,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 
 ## Fortifications
 
-Asuryani armies may not take the standard Fortifications; they take the Fortifications below instead. The Wraithbone Bastion, Void-Spinner Sky-Platform and Wraith-Sentinel Drop-Pillar are Asuryani Fortifications. They follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the Asuryani Fortification special rule:
+Asuryani armies may not take the standard Fortifications; they take the Fortifications below instead. The Wraithbone Bastion, Void-Spinner Sky-Platform and Wraith-Sentinel Drop-Pillar are Asuryani Fortifications; the Wraithbone Force-Wall is a Barricade and follows the Barricade Fortification special rule instead. They follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the Asuryani Fortification special rule:
 
 - **Deployment.** Deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Webway Orbital Insertion).
 - **Unit Restrictions.** Fortifications cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests.
@@ -2773,6 +2773,47 @@ Asuryani armies may not take the standard Fortifications; they take the Fortific
 | A Holo-Field Defence Line may take one of the following: |  |
 | – Sky Lance | +25 points |
 | – Vibro Disruptor | +35 points |
+
+### Wraithbone Force-Wall — 65 pts
+
+_Graceful, curved ribbons of psycho-reactive wraithbone grown around shimmering crystal pylons that bend incoming light and project a blinding psychic refraction screen._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Wraithbone Force-Wall | – | – | – | – | – | – | – | Use model |
+| Crystal Weapon Platform | – | 4 | 10 | 10 | 10 | 2 | – | Use model |
+
+**Unit Composition**
+
+- 1 Wraithbone Force-Wall
+
+**Wargear**
+
+- Crystal Weapon Platform: Scatter laser
+
+**Unit Type**
+
+- Wraithbone Force-Wall: Fortification (Barricade, Asuryani)
+- Crystal Weapon Platform: Fortification (Emplacement)
+
+**Special Rules**
+
+- Barricade Fortification
+- Refraction Screen: friendly Asuryani Infantry models in base contact with a Wraithbone Force-Wall gain Shrouded (6+) against shooting attacks made from more than 12" away (improved to Shrouded (5+) if the Force-Wall has Holo-Field Pylons)
+- Psychic Conduit: friendly Asuryani Psykers in base contact with the Force-Wall add +6" to the maximum range of any Psychic Powers or Psychic Weapons they manifest or fire
+- Graceful Vault: friendly Asuryani units ignore the Difficult Terrain penalty when moving or charging across a Wraithbone Force-Wall
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Wraithbone Force-Wall may take:** |  |
+| – Holo-Field Pylons | +20 points |
+| – Up to 1 Crystal Weapon Platform | +20 points |
+| **The Crystal Weapon Platform may exchange its scatter laser for:** |  |
+| – Bright lance | +0 points |
+
+_The Wraithbone Force-Wall is made up of 4 long sections and 4 short sections. The Crystal Weapon Platform is deployed in base contact with any section of the Force-Wall, and its weapon is an Automated Fire weapon._
 
 ### Webway Gate — 75 pts
 
@@ -2974,6 +3015,10 @@ The bracketed value names the model's Aspect Shrine. For each model in a Detachm
 ### Asuryani Fortification
 
 Asuryani Fortifications are deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Webway Orbital Insertion). They cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on an Asuryani Fortification fires at BS 4. Wraithbone Construction: at the start of each friendly Movement phase, roll a D6 for each damaged Asuryani Fortification within 12" of a friendly Asuryani Psyker (such as a Farseer, Warlock, or Spiritseer); on a 5+, that Fortification restores 1 lost Hull Point (up to its starting maximum).
+
+### Barricade Fortification
+
+A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Unless stated otherwise, models in base contact with a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.
 
 ### Battle Focus
 
@@ -3558,6 +3603,10 @@ The first time in a game a unit with a Wireweave Net is charged, the charging pl
 #### Holo-Field Emitters
 
 A Fortification with Holo-Field Emitters has Shrouded (5+) against shooting attacks made from more than 12" away.
+
+#### Holo-Field Pylons
+
+A Wraithbone Force-Wall with Holo-Field Pylons improves its Refraction Screen to Shrouded (5+).
 
 #### Spirit-Stone Relay
 

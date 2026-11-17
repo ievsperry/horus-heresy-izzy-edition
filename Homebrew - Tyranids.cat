@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="39" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="40" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -1305,6 +1305,12 @@
       <categoryLinks>
         <categoryLink targetId="a24f-12d8-36c1-f477" id="5378-9b7f-4fa5-fa48" primary="true" name="Fortification:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="8009-c0a3-65c1-631c" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Chitinous Spore-Wall" hidden="false" id="72a5-f844-670c-f19c" type="selectionEntry" targetId="e9ee-efc8-5fad-68cf">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="3a97-81e1-7689-da33" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="c391-3307-db1a-a557" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Genestealers" hidden="true" id="bd5a-2c2a-8839-7f9e" type="selectionEntry" targetId="efed-500e-b4c5-4e79">
@@ -3154,6 +3160,15 @@
         <profile name="Spore-Seeded Drop" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="0b26-6164-284c-d02a">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Instead of deploying on the battlefield, the Capillary Spire Cluster may be held in Reserves and arrive via Deep Strike (treat the cluster as a single unit for Deep Strike deployment; once the first Spire is placed, all remaining Spires in the unit must be placed within 6" of at least one other Spire in the cluster and at least 1" away from enemy models).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Toxic Miasma Cysts" hidden="false" id="cdb9-cbe9-5c58-c9ea" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Toxic Miasma Cysts" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="efc9-e104-715d-0471">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Enemy non-Tyranid units within 3" of a Chitinous Spore-Wall with Toxic Miasma Cysts suffer a -1 penalty to their Weapon Skill characteristic during the Assault phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -20874,6 +20889,90 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Chitinous Spore-Wall" hidden="false" id="e9ee-efc8-5fad-68cf" publicationId="7478-cf16-4f88-170b">
+      <rules>
+        <rule name="Synaptic Relay (6&quot;)" id="6a27-6d9b-630d-a8c5" hidden="false">
+          <description>Friendly Tyranid units in base contact with any section of a Chitinous Spore-Wall count as being within Synapse range</description>
+        </rule>
+        <rule name="Acidic Blood-Spurs" id="eb15-02b8-126a-14d3" hidden="false">
+          <description>Any enemy non-Tyranid unit that charges across a Chitinous Spore-Wall must take a Dangerous Terrain test. Any wound inflicted by this test is resolved at AP 4 with the Fleshbane special rule</description>
+        </rule>
+        <rule name="Note" id="15a0-46da-b2f9-781d" hidden="false">
+          <description>A jagged, pulsing ridge of calcified bone-plates, ribbed chitin, and toxic spore-cysts grown rapidly from digested biomass to anchor a defensive perimeter.</description>
+        </rule>
+        <rule name="Note" id="fca4-030b-846e-288d" hidden="false">
+          <description>With Infiltrate, the Spore-Wall is deployed using the standard Infiltrate special rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="1e41-a748-4f3f-061e" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Barricade Fortification" id="91ac-629b-f134-f85a" hidden="false" targetId="e3f7-342d-4b07-34c9" type="rule" />
+        <infoLink name="Fearless" id="d4fe-ac23-a4d5-2a2c" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="f7cc-d6e1-3c26-c0cc" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Chitinous Spore-Wall" hidden="false" id="866c-ecb4-a33a-5367" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="0768-d199-4679-c07c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="c2a5-63cc-7e81-ab4d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Chitinous Spore-Wall" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="acc3-af7a-c4ea-90ac" publicationId="7478-cf16-4f88-170b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Barricade, Tyranid)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">–</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">–</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">–</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">–</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">–</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">–</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="8ac5-a52b-eeb1-4c8b" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="473d-0126-2dab-25ea" id="e2e1-7b90-0d7b-72b7" primary="false" name="Barricade Sub-type" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Upgrades" hidden="false" id="1067-8496-d2dd-1ca2">
+          <entryLinks>
+            <entryLink import="true" name="Infiltrate" hidden="false" id="d0b6-5abd-b0ab-9c94" type="selectionEntry" targetId="9fe8-de58-55ef-7ed2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b72d-2f58-913a-de1c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Toxic Miasma Cysts" hidden="false" id="297d-5597-07ea-a33a" type="selectionEntry" targetId="cdb9-cbe9-5c58-c9ea">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="227a-8ddd-87e5-7427" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Infiltrate" hidden="false" id="9fe8-de58-55ef-7ed2" publicationId="7478-cf16-4f88-170b">
+      <infoLinks>
+        <infoLink name="Infiltrate" id="6ff3-a826-7255-47d3" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule" />
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Warlord Traits" hidden="false" id="8c43-f436-3af1-8ac4">
@@ -21110,6 +21209,9 @@
     </rule>
     <rule name="Bio-Construct" id="ff50-9c4c-b6d3-11e9" hidden="false" publicationId="7478-cf16-4f88-170b">
       <description>A Bio-Fortification is a living chitinous organism rather than a mechanical vehicle: enemy weapons with the Haywire special rule have no effect on it, and it cannot be repaired by Battlesmith. Every Bio-Fortification has the Tyranid faction keyword and the Fearless special rule.</description>
+    </rule>
+    <rule name="Barricade Fortification" id="e3f7-342d-4b07-34c9" hidden="false" publicationId="7478-cf16-4f88-170b">
+      <description>A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Unless stated otherwise, models in base contact with a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.</description>
     </rule>
     <rule name="Stealth" id="64a9-cd0f-ff50-56e2" hidden="false" publicationId="7478-cf16-4f88-170b">
       <description>If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.</description>
