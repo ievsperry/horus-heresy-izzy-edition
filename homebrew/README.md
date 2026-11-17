@@ -85,10 +85,13 @@ loading. The script prints anything in the doc it could not place.
   one Hive Fleet Enhancement (`tyranid_fortifications.py`, run by the builder): shown only in a Detachment of that
   Hive Fleet, and an error in another. A Cluster's enhancement is bought once for the whole unit. The game
   system's own Fortifications are hidden from a Tyranid Detachment (`faction_fortifications.py`, below).
+  The Chitinous Spore-Wall is a Barricade (no Armour or Hull Points, the Barricade Fortification rule) and takes no
+  Hive Fleet Enhancement or biomorph; Infiltrate and Toxic Miasma Cysts are its options.
 - Asuryani have three Asuryani Fortifications beside the Holo-Field Defence Line and Webway Gate (the doc's
   "## Fortifications": Wraithbone Bastion, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar), each with the
   Asuryani Fortification rule. Holo-Field Emitters and the Spirit-Stone Relay are Fortification Wargear. The game
-  system's own Fortifications are hidden from an Asuryani Detachment.
+  system's own Fortifications are hidden from an Asuryani Detachment. The Wraithbone Force-Wall is a Barricade (the
+  Barricade Fortification rule) with Holo-Field Pylons and a Crystal Weapon Platform (scatter laser or bright lance).
   The shared Aeldari Warhost Detachment takes 0-2 Fortifications and the Aeldari Auxiliary Detachment 0-1 (in all
   four Aeldari lists).
 - T'au take their own T'au Fortifications beside the Tidewalls (the doc's "### Fortifications": Remote Sensor
@@ -96,7 +99,8 @@ loading. The script prints anything in the doc it could not place.
   Battery, Pulse Shield Generator, Sensor Beacon Post), each with the T'au Fortification
   rule. Each may take one Sept Enhancement (`tau_fortifications.py`, run from `tau_rites.py`): shown only in a
   Detachment of that Sept, and an error in another. The game system's own Fortifications are hidden from a T'au
-  Detachment.
+  Detachment. The Portable Pulse-Barricade is a Barricade (the Barricade Fortification rule, no Sept Enhancement)
+  with Guardian Shield Emitters and a Drone Gun-Turret (twin-linked missile pod or smart missile system).
 - Anhrathe take their own Anhrathe Fortifications (the doc's "## Fortifications": Plunder-Beacon, Void-Bulkhead
   Redoubt, Void-Skiff Extraction Tender, Corsair Lance-Pod), each with the Anhrathe Fortification and Lightweight
   Void-Alloy rules (Armour never above 11, Shrouded (6+) beyond 12"). The Holo-Field Generator, Kinetic Shroud-Fields and
@@ -114,7 +118,9 @@ loading. The script prints anything in the doc it could not place.
   builder): shown only in a Detachment of that Sub-faction, and an error in another. The Flesh-Crafted Carapace
   adds 1 to the Fortification's Front, Side and Rear Armour on its profile (to a maximum of 12). A Realspace Raiders Detachment takes
   0-1 Fortifications, and only the Dread-Pod Drop-Turret (the others are hidden there). The game system's own
-  Fortifications are hidden from a Drukhari Detachment.
+  Fortifications are hidden from a Drukhari Detachment. The Razor-Blade Barricade is a Barricade (the Barricade
+  Fortification rule, no Sub-Faction Enhancement) with Infiltrate, a Phantasm Grenade Launcher Battery and a Splinter
+  Rack Turret (twin-linked splinter cannon).
 - Orks take their own Ork Fortifications (the doc's "## Fortifications": Mekboy Workshop, Ork Scrap-Bastion,
   Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement, and the Waaagh! Banner Totem, Gorkamorka
   Idol, Supa-Slugga Emplacement and Scrap-Listening Post) as Fortification choices, each with the Ork Fortification

@@ -139,7 +139,11 @@ If the model has not moved this turn, it cannot be targeted by ranged attacks fr
 
 #### T'au Fortification
 
-A T'au Fortification (any Fortification below other than a Tidewall) is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Infiltrate or Manta Orbital Insertion). It cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on it fires at BS 3.
+A T'au Fortification (any Fortification below other than a Tidewall or the Portable Pulse-Barricade) is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Infiltrate or Manta Orbital Insertion). It cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests. Any automated weapon on it fires at BS 3.
+
+#### Barricade Fortification
+
+A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Unless stated otherwise, models in base contact with a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.
 
 #### Tidewall Mobility
 
@@ -3362,6 +3366,8 @@ Use the Sniper Drone profile from the Drones section. A Firesight Marksman may b
 
 **Tidewall Mobility.** A Tidewall fortification has the Antigrav sub-type and a Movement of 6” but may only move if a friendly T'au Infantry unit is within 1" of it at the start of your Movement phase; that unit may not move or Advance in the same turn. A Tidewall may not move and shoot in the same turn.
 
+The Portable Pulse-Barricade is a Barricade: it follows the Barricade Fortification special rule.
+
 #### Tidewall Droneport — 100 pts
 
 | Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
@@ -3777,6 +3783,42 @@ _The weapon is an Automated Fire weapon (BS 3) with a 360° line of sight._
 | – Urban Camouflage Matrix | +15 points |
 | – Close-Quarters Sensor-Grid | +20 points |
 
+#### Portable Pulse-Barricade — 60 pts
+
+_An interlocking network of lightweight, anti-gravitic alloy blast shields equipped with automated guardian-drone emitters and localized energy-deflection fields._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Portable Pulse-Barricade | – | – | – | – | – | – | – | Use model |
+
+**Unit Composition**
+
+- 4 Long Sections
+- 4 Short Sections
+
+**Unit Type**
+
+- Fortification (Barricade, T'au Empire)
+
+**Special Rules**
+
+- Barricade Fortification
+- Repulsor Field (5+): if the Barricade has Guardian Shield Emitters, friendly T'au Empire Infantry models in base contact with it gain a 5+ Invulnerable Save against shooting attacks made across the barricade
+- Stabilized Firing Line: friendly T'au Empire Infantry models in base contact with a Portable Pulse-Barricade may re-roll To Hit rolls of 1 when firing Pulse weapons (such as pulse rifles, pulse carbines, and pulse blasters) during the Shooting phase
+- Coordinated Overwatch: friendly T'au Empire units in base contact with the Barricade add +1 to their Ballistic Skill when making Overwatch Reactions (to a maximum of BS 3)
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Portable Pulse-Barricade may take:** |  |
+| – Guardian Shield Emitters | +20 points |
+| **The Portable Pulse-Barricade may take one Drone Gun-Turret armed with one of the following:** |  |
+| – Twin-linked missile pod | +15 points |
+| – Smart missile system | +15 points |
+
+_The Drone Gun-Turret is deployed in base contact with any section of the Barricade. It has BS 3, Front, Side and Rear Armour 10 and 2 Hull Points, and its weapon is an Automated Fire weapon._
+
 ## Wargear
 
 ### Items
@@ -3825,6 +3867,10 @@ Sept Enhancement (Bork'an). All ranged weapons mounted on this Fortification, an
 #### Guardian Shield Generator
 
 The Fortification and any friendly T'au Infantry models within 3" of it have a 5+ Invulnerable Save against shooting attacks.
+
+#### Guardian Shield Emitters
+
+A Portable Pulse-Barricade with Guardian Shield Emitters has its Repulsor Field (5+) special rule active.
 
 #### Homing Beacon
 

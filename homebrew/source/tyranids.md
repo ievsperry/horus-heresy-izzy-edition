@@ -34,6 +34,8 @@ Every unit in this list has **Hive Fleet (X)**, and **Shadow in the Warp** if it
 
 **Bio-Construct.** A Bio-Fortification is a living chitinous organism rather than a mechanical vehicle: enemy weapons with the Haywire special rule have no effect on it, and it cannot be repaired by Battlesmith. Every Bio-Fortification has the Tyranid faction keyword and the Fearless special rule.
 
+**Barricade Fortification.** A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Unless stated otherwise, models in base contact with a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.
+
 **Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
 
 **Synapse Creature.** Friendly Tyranid units within 12" of one or more models with this rule automatically pass Morale checks and Pinning tests, and ignore Instinctive Behaviour. A Synapse creature itself is never affected by Instinctive Behaviour. Every model with this rule is also treated as a Character.
@@ -2348,7 +2350,9 @@ Tyranid armies may not take the standard Fortifications; they take these Bio-For
 - **Unit Restrictions.** Bio-Fortifications cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests.
 - **Bio-Constructs.** Every Bio-Fortification below has the Tyranid faction keyword and the Fearless special rule. Although they use Armour Values and Hull Points, they represent living chitinous organisms rather than mechanical vehicles: enemy weapons with the Haywire special rule have no effect on them, and they cannot be repaired by Battlesmith.
 
-**Hive Fleet Enhancements.** Each Bio-Fortification may take one Hive Fleet Enhancement matching the Hive Fleet of its Detachment. For a Spore-Vent Cluster, Tunnel-Node Cluster or Capillary Spire Cluster, the cost is paid once for the whole unit: all surviving models gain the enhancement's effects, with aura ranges reduced from 12" to 6" (and the Shadow in the Warp Emitter's from 24" to 12").
+The Chitinous Spore-Wall is a Barricade: it follows the Barricade Fortification special rule instead of the rules above.
+
+**Hive Fleet Enhancements.** Each Bio-Fortification other than the Chitinous Spore-Wall may take one Hive Fleet Enhancement matching the Hive Fleet of its Detachment. For a Spore-Vent Cluster, Tunnel-Node Cluster or Capillary Spire Cluster, the cost is paid once for the whole unit: all surviving models gain the enhancement's effects, with aura ranges reduced from 12" to 6" (and the Shadow in the Warp Emitter's from 24" to 12").
 
 ### Capillary Tower — 90 pts
 
@@ -2630,6 +2634,40 @@ _Clustered nodules of ribbed chitin and pulsing vascular vents that erupt across
 | – Chitinous Tunnel-Network | +20 points |
 | – Endless Brood-Vats | +25 points |
 
+### Chitinous Spore-Wall — 55 pts
+
+_A jagged, pulsing ridge of calcified bone-plates, ribbed chitin, and toxic spore-cysts grown rapidly from digested biomass to anchor a defensive perimeter._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Chitinous Spore-Wall | – | – | – | – | – | – | – | Use model |
+
+**Unit Composition**
+
+- 4 Long Sections
+- 4 Short Sections
+
+**Unit Type**
+
+- Fortification (Barricade, Tyranid)
+
+**Special Rules**
+
+- Barricade Fortification
+- Fearless
+- Synaptic Relay (6"): friendly Tyranid units in base contact with any section of a Chitinous Spore-Wall count as being within Synapse range
+- Acidic Blood-Spurs: any enemy non-Tyranid unit that charges across a Chitinous Spore-Wall must take a Dangerous Terrain test. Any wound inflicted by this test is resolved at AP 4 with the Fleshbane special rule
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Chitinous Spore-Wall may take any of the following:** |  |
+| – Infiltrate | +15 points |
+| – Toxic Miasma Cysts | +15 points |
+
+_With Infiltrate, the Spore-Wall is deployed using the standard Infiltrate special rule._
+
 ## Bio-Fortification Wargear
 
 Hive Fleet Enhancements and the Capillary Spire Cluster's forward-deployment options. An enhancement may only be taken by a Bio-Fortification in a Detachment of its Hive Fleet.
@@ -2678,11 +2716,15 @@ All Capillary Spires in the unit gain the Infiltrate special rule, allowing them
 
 Instead of deploying on the battlefield, the Capillary Spire Cluster may be held in Reserves and arrive via Deep Strike (treat the cluster as a single unit for Deep Strike deployment; once the first Spire is placed, all remaining Spires in the unit must be placed within 6" of at least one other Spire in the cluster and at least 1" away from enemy models).
 
+### Toxic Miasma Cysts
+
+Enemy non-Tyranid units within 3" of a Chitinous Spore-Wall with Toxic Miasma Cysts suffer a -1 penalty to their Weapon Skill characteristic during the Assault phase.
+
 ## Biomorphs
 
 Biomorphs are the Tyranid equivalent of wargear: organs, glands and growths bred into a creature for a purpose. A biomorph is taken by every model in the unit and costs its points for each model, unlike weapon options, which are bought model by model.
 
-Every unit may take adrenal glands, toxin sacs, flesh hooks, engrained aggression and wraithful will, and dynamic camouflage, a hardened carapace, improved strength, improved toughness, killer impulse, walking terror, hulking brute and burrower where its models qualify, at the costs below. A datasheet that lists a biomorph in its options uses its own cost instead. Wings, regeneration, spine banks and Unnatural Resilience may only be taken where a datasheet offers them. Spore Mines, Meiotic Spores, Mucolid Spores, Mycetic Spores, Tyrannocytes, Sporocysts, Sporocyst Bio-Fortifications, Capillary Towers, Brood Nests, Bio-Plasma Bastions, Spore-Vent Clusters, Tunnel-Node Clusters and Capillary Spire Clusters may not take biomorphs.
+Every unit may take adrenal glands, toxin sacs, flesh hooks, engrained aggression and wraithful will, and dynamic camouflage, a hardened carapace, improved strength, improved toughness, killer impulse, walking terror, hulking brute and burrower where its models qualify, at the costs below. A datasheet that lists a biomorph in its options uses its own cost instead. Wings, regeneration, spine banks and Unnatural Resilience may only be taken where a datasheet offers them. Spore Mines, Meiotic Spores, Mucolid Spores, Mycetic Spores, Tyrannocytes, Sporocysts, Sporocyst Bio-Fortifications, Capillary Towers, Brood Nests, Bio-Plasma Bastions, Spore-Vent Clusters, Tunnel-Node Clusters, Capillary Spire Clusters and Chitinous Spore-Walls may not take biomorphs.
 
 ### Adrenal Glands
 
