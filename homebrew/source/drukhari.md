@@ -339,7 +339,7 @@ No other units may be selected as part of this Detachment.
 | Heavy Support | 0-1 | 0-1 | 0-3 |
 | Fortifications | 0-1 | 0-1 | 0-1 |
 
-The only Fortification a Realspace Raiders Detachment may select is a Dread-Pod Drop-Turret.
+The only Fortifications a Realspace Raiders Detachment may select are a Dread-Pod Drop-Turret or a Razor-Blade Barricade.
 
 ## Force Organisation and Rites of War
 
@@ -354,7 +354,7 @@ Use the 2.0 Crusade Force Organisation chart, or the Aeldari and Drukhari detach
 | Fast Attack | Hellions, Reavers, Scourge Talonstrike Cadre, Beastmasters, Razorwing Jetfighter |
 | Heavy Support | Cronos Parasite Engine, Ravager, Scourge Reaper Cadre, Talos Pain Engine, Tantalus, Reaper, Voidraven Bomber |
 | Lord of War | Asdrubael Vect on the Dais of Destruction |
-| Fortifications | Torture-Spire, Kabalite Blade-Bastion, Void-Raptor Sky-Dock, Dread-Pod Drop-Turret |
+| Fortifications | Torture-Spire, Kabalite Blade-Bastion, Void-Raptor Sky-Dock, Dread-Pod Drop-Turret, Razor-Blade Barricade |
 
 A Drukhari army may take one Rite of War, chosen when the army is built; these are the Drukhari Rites of Raid that Master of the Raid refers to. Each has a benefit and a limitation.
 

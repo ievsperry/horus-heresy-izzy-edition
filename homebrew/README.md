@@ -117,7 +117,7 @@ loading. The script prints anything in the doc it could not place.
   Night-Shield Matrix rules. Each may take one Sub-Faction Enhancement (`drukhari_fortifications.py`, run by the
   builder): shown only in a Detachment of that Sub-faction, and an error in another. The Flesh-Crafted Carapace
   adds 1 to the Fortification's Front, Side and Rear Armour on its profile (to a maximum of 12). A Realspace Raiders Detachment takes
-  0-1 Fortifications, and only the Dread-Pod Drop-Turret (the others are hidden there). The game system's own
+  0-1 Fortifications, and only the Dread-Pod Drop-Turret or the Razor-Blade Barricade (the others are hidden there). The game system's own
   Fortifications are hidden from a Drukhari Detachment. The Razor-Blade Barricade is a Barricade (the Barricade
   Fortification rule, no Sub-Faction Enhancement) with Infiltrate, a Phantasm Grenade Launcher Battery and a Splinter
   Rack Turret (twin-linked splinter cannon).
