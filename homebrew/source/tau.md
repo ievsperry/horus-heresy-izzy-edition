@@ -3375,7 +3375,7 @@ Use the Sniper Drone profile from the Drones section. A Firesight Marksman may b
 
 **Unit Type**
 
-- Building (Fortification, Antigrav)†
+- Fortification (Building, Antigrav)†
 - Gun Drone: Infantry (Drone)
 
 **Special Rules**
@@ -3409,7 +3409,7 @@ Use the Sniper Drone profile from the Drones section. A Firesight Marksman may b
 
 **Unit Type**
 
-- Building (Fortification, Antigrav)†
+- Fortification (Building, Antigrav)†
 
 **Special Rules**
 
@@ -3430,7 +3430,7 @@ Use the Sniper Drone profile from the Drones section. A Firesight Marksman may b
 
 **Unit Type**
 
-- Building (Fortification, Antigrav)†
+- Fortification (Building, Antigrav)†
 
 **Special Rules**
 

@@ -124,6 +124,8 @@ loading. The script prints anything in the doc it could not place.
 
 - Vehicles, Dreadnoughts, Knights and Titans get the game system's Vehicle or Knights
   and Titans profile, and their sub-types (Fast, Flyer, Transport...) as categories.
+- Fortifications have the game system's Fortification Unit Type category and their Building, Emplacement or
+  Barricade Sub-type, as the official Fortifications do. A Tidewall is "Fortification (Building, Antigrav)".
 - Models bought as options (ammo runts, grot oilers, Spanners) are their own model
   entries, with the kit and unit type their wargear entry gives them. Linked counts
   are kept: each Mek Gun brings 2 Gretchin crew, and Gretchin get a Runtherd per 10.
@@ -789,6 +791,10 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   (Legiones Astartes and Solar Auxilia only): hidden, and an error if taken, in a Detachment that holds none of the
   eighteen Legions', the Blackshields', the Shattered Legions' or the Solar Auxilia's army entries. Running it again
   changes nothing.
+- `python3 homebrew/fortification_unit_types.py` gives the twelve Fortifications the scripts above and
+  `add_ruinstorm_fortifications.py` added before they did so themselves (the Imperial and Chaos ones in the game
+  system, the Daemonic ones in the Ruinstorm catalogue) the Fortification Unit Type and their Building or Emplacement
+  Sub-type on their root link, as the game system's own Fortifications have. Running it again changes nothing.
 - `python3 homebrew/faction_fortifications.py` hides the game system's eleven standard Fortifications in a Detachment
   holding the Tyranids, Orks, Asuryani, Drukhari, Anhrathe, T'au Empire or Daemons of the Ruinstorm faction entry, since these armies take their own. Running it
   again changes nothing. The Imperial Fortifications are hidden from those armies

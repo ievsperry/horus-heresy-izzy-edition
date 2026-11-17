@@ -149,6 +149,22 @@ def unit_types(unit):
     return [c.text or "" for c in unit.iter("characteristic") if c.get("name") == "Unit Type"]
 
 
+# The game system's Fortification Unit Type and the sub-types an official Fortification's root link carries.
+FORTIFICATION_TYPES = ["Fortification", "Building", "Emplacement", "Barricade"]
+
+
+def fortification_categories(link, unit):
+    """A Fortification's root link carries the Fortification Unit Type and its Building, Emplacement or Barricade
+    Sub-type, from the models' Unit Types, as the game system's own Fortifications do (Firestorm Redoubt)."""
+    types = " ".join(unit_types(unit))
+    cats = child(link, "categoryLinks")
+    for word in FORTIFICATION_TYPES:
+        cat, name = bc.TYPE_CATEGORIES[word]
+        if re.search(r"\b" + word + r"\b", types) and not any(c.get("targetId") == cat for c in cats):
+            el(cats, "categoryLink", id=make_id(link.get("id"), "type", cat), name=name, hidden=False, targetId=cat,
+               primary=False)
+
+
 def drop_unit_category(unit):
     """The root entry carries Unit:, as in the official catalogues."""
     cats = child(unit, "categoryLinks")

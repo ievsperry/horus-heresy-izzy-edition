@@ -4007,7 +4007,7 @@ _Jagged barricades of welded battlewagon doors, tank traps, and scrap metal mann
 
 **Unit Type**
 
-- Fortification (Battlefield Debris)
+- Fortification (Barricade)
 
 **Special Rules**
 

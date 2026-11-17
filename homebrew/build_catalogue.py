@@ -119,6 +119,10 @@ TYPE_CATEGORIES = {
     "Mechanised": ("e929-a5c3-451c-6f19", "Mechanised Unit Sub-type"),
     "Artillery": ("6f99-c178-6f9d-fb63", "Artillery Sub-type"),
     "Armiger": ("41ff-7fc9-d4a0-da2", "Armiger Unit Type"),
+    "Fortification": ("679d-ec21-2940-fb9", "Fortification Unit Type"),
+    "Building": ("9f1e-fbf0-3032-32fe", "Building Sub-type"),
+    "Emplacement": ("3eeb-b4b8-3d85-245a", "Emplacement Sub-type"),
+    "Barricade": ("473d-0126-2dab-25ea", "Barricade Sub-type"),
 }
 # Categories that live in a library catalogue rather than the game system: category id -> (catalogue id, name).
 # A catalogue that uses one links that library.
