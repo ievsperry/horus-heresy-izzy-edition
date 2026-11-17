@@ -84,6 +84,7 @@ def main(doc=DOC, faction="Imperial Fortifications", prefix="imperial-fortificat
            primary=False)
         el(lc, "categoryLink", id=mid(uid, "root", "fortification"), name=FORTIFICATION[1], hidden=False,
            targetId=FORTIFICATION[0], primary=True)
+        et.fortification_categories(link, u)
         if visible:  # modifiers come before categoryLinks in an entryLink
             mods = et.E("modifiers")
             m = el(mods, "modifier", type="set", field="hidden", value="true")

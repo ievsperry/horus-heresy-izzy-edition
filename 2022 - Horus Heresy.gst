@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="252" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="253" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -3341,6 +3341,8 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <categoryLinks>
         <categoryLink id="6f0b-f9cc-f86d-68af" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="0579-ba86-7d06-eb3d" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="4055-f77e-02c0-ab0b" name="Fortification Unit Type" hidden="false" targetId="679d-ec21-2940-fb9" primary="false"/>
+        <categoryLink id="497f-8263-3840-8c97" name="Building Sub-type" hidden="false" targetId="9f1e-fbf0-3032-32fe" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9c70-33da-c421-d79f" name="Automated Sentry Turret Battery" hidden="false" collective="false" import="true" targetId="6776-3059-9fd0-71d7" type="selectionEntry">
@@ -3368,6 +3370,8 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <categoryLinks>
         <categoryLink id="7175-3d24-4561-e22e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="b63f-812c-c0f8-7905" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="d36b-ddd5-a360-9aba" name="Fortification Unit Type" hidden="false" targetId="679d-ec21-2940-fb9" primary="false"/>
+        <categoryLink id="398c-e17a-32ee-6464" name="Emplacement Sub-type" hidden="false" targetId="3eeb-b4b8-3d85-245a" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="17f1-6eb0-809a-c658" name="Thermo-Plasma Conduit Tower" hidden="false" collective="false" import="true" targetId="e792-181a-bbd3-b5be" type="selectionEntry">
@@ -3395,6 +3399,8 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <categoryLinks>
         <categoryLink id="8749-11fe-e199-ee26" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="d9bd-207c-0842-47be" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="ac43-c3c0-52f6-318c" name="Fortification Unit Type" hidden="false" targetId="679d-ec21-2940-fb9" primary="false"/>
+        <categoryLink id="9e2f-6253-0d69-cdf0" name="Building Sub-type" hidden="false" targetId="9f1e-fbf0-3032-32fe" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ef9a-43ec-8c1b-5f75" name="Orbital Uplink Bunker" hidden="false" collective="false" import="true" targetId="4984-9c2f-03dc-d9c5" type="selectionEntry">
@@ -3422,6 +3428,8 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <categoryLinks>
         <categoryLink id="3c96-51f8-1919-bf10" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="fe13-0210-3883-f57c" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="93d0-eb4b-7ba2-b4d3" name="Fortification Unit Type" hidden="false" targetId="679d-ec21-2940-fb9" primary="false"/>
+        <categoryLink id="d1ee-3908-aa95-e154" name="Building Sub-type" hidden="false" targetId="9f1e-fbf0-3032-32fe" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f87d-4c40-5679-5d09" name="Sacrificial Circle" hidden="false" collective="false" import="true" targetId="b1f6-4a4b-2d80-57c3" type="selectionEntry">
@@ -3441,6 +3449,8 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <categoryLinks>
         <categoryLink id="64c4-627c-6959-1c23" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="2e05-b56d-80a8-01fa" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="e02c-3d6a-c80b-0f3b" name="Fortification Unit Type" hidden="false" targetId="679d-ec21-2940-fb9" primary="false"/>
+        <categoryLink id="e4ce-13cf-86c7-0366" name="Emplacement Sub-type" hidden="false" targetId="3eeb-b4b8-3d85-245a" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="1ea1-3b27-df0e-3b2b" name="Daemon Pit" hidden="false" collective="false" import="true" targetId="d162-a8af-7ec3-317f" type="selectionEntry">
@@ -3460,6 +3470,8 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <categoryLinks>
         <categoryLink id="dd74-226d-9978-28b8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="aef3-fd48-15ad-4f05" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="419b-7d7f-1147-8fff" name="Fortification Unit Type" hidden="false" targetId="679d-ec21-2940-fb9" primary="false"/>
+        <categoryLink id="74c9-4b66-fd95-0a3f" name="Building Sub-type" hidden="false" targetId="9f1e-fbf0-3032-32fe" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="fb29-291a-9211-f8df" name="Desecrated Stronghold" hidden="false" collective="false" import="true" targetId="daf8-c1ed-a12e-46b3" type="selectionEntry">
@@ -3479,6 +3491,8 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <categoryLinks>
         <categoryLink id="d016-67fa-e9ec-5bff" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="3df4-456f-dd2a-1b99" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="afa1-e85b-9d5b-acfb" name="Fortification Unit Type" hidden="false" targetId="679d-ec21-2940-fb9" primary="false"/>
+        <categoryLink id="7d34-264f-5214-fd58" name="Building Sub-type" hidden="false" targetId="9f1e-fbf0-3032-32fe" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0f80-8bd7-02c7-d168" name="Warp-Flayer Turret Battery" hidden="false" collective="false" import="true" targetId="e6ee-34e6-c734-a42e" type="selectionEntry">
@@ -3498,6 +3512,8 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
       <categoryLinks>
         <categoryLink id="88fd-01fe-e520-dbcc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="f580-3400-41f8-5353" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="9c48-2ba4-dea2-40ac" name="Fortification Unit Type" hidden="false" targetId="679d-ec21-2940-fb9" primary="false"/>
+        <categoryLink id="21f5-46e0-8bc3-1d2f" name="Emplacement Sub-type" hidden="false" targetId="3eeb-b4b8-3d85-245a" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

@@ -55,6 +55,7 @@ def main():
            primary=False)
         el(lc, "categoryLink", id=mid(uid, "root", "fortification"), name=FORTIFICATION[1], hidden=False,
            targetId=FORTIFICATION[0], primary=True)
+        et.fortification_categories(link, u)
         roots.append(link)
 
     found = set()
