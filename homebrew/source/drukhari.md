@@ -22,7 +22,7 @@ Every Drukhari unit has **Night Vision** unless its entry says otherwise.
 
 **Night-Shield Matrix.** A Fortification with this Special Rule counts as equipped with night shields: enemy units targeting it for ranged attacks treat it as 6" further away than its actual position, and any ranged attack made at it at over 18" is resolved as Snap Shots.
 
-**Barricade Fortification.** A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Unless stated otherwise, models in base contact with a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.
+**Barricade Fortification.** A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Models within 1" of a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.
 
 **Night Vision.** A unit that contains at least one model with this Special Rule ignores the effects of Night Fighting (see page 308) and no model may make Shrouded rolls to negate Wounds or Hull Points inflicted by their attacks. In addition, the unit can detect and target units with the Stealth special rule within 18" instead of 12".
 
@@ -2339,7 +2339,6 @@ _A cruel, spiked palisade of monomolecular blades, barbed chains, and shrieking 
 - Barricade Fortification
 - Monomolecular Spikes: any enemy unit that charges across a Razor-Blade Barricade suffers D6 Strength 4 AP – hits with the Rending (5+) special rule before the Assault is resolved, in addition to treating the Barricade as Difficult Terrain
 - Fear (1): enemy units within 6" of a Razor-Blade Barricade suffer a -1 penalty to their Leadership characteristic for all Fear, Morale, and Pinning checks
-- Night-Shield Baffles: friendly Drukhari models within 1" of a Razor-Blade Barricade count as being 6" further away for ranged attacks made across it
 
 **Options**
 
@@ -2350,7 +2349,7 @@ _A cruel, spiked palisade of monomolecular blades, barbed chains, and shrieking 
 | – Phantasm Grenade Launcher Battery | +15 points |
 | – Up to 1 Splinter Rack Turret | +15 points |
 
-_With Infiltrate, the Barricade is deployed using the standard Infiltrate special rule. The Razor-Blade Barricade is made up of 4 long sections and 4 short sections. The Splinter Rack Turret is deployed in base contact with any section of the Barricade, and its weapon is an Automated Fire weapon._
+_With Infiltrate, the Barricade is deployed using the standard Infiltrate special rule. The Razor-Blade Barricade is made up of 4 long sections and 4 short sections. The Splinter Rack Turret is deployed within 1" of any section of the Barricade, and its weapon is an Automated Fire weapon._
 
 ## Wargear
 

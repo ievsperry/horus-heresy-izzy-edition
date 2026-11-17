@@ -34,7 +34,7 @@ Every unit in this list has **Hive Fleet (X)**, and **Shadow in the Warp** if it
 
 **Bio-Construct.** A Bio-Fortification is a living chitinous organism rather than a mechanical vehicle: enemy weapons with the Haywire special rule have no effect on it, and it cannot be repaired by Battlesmith. Every Bio-Fortification has the Tyranid faction keyword and the Fearless special rule.
 
-**Barricade Fortification.** A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Unless stated otherwise, models in base contact with a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.
+**Barricade Fortification.** A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Models within 1" of a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.
 
 **Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
 
@@ -2655,7 +2655,7 @@ _A jagged, pulsing ridge of calcified bone-plates, ribbed chitin, and toxic spor
 
 - Barricade Fortification
 - Fearless
-- Synaptic Relay (6"): friendly Tyranid units in base contact with any section of a Chitinous Spore-Wall count as being within Synapse range
+- Synaptic Relay (6"): friendly Tyranid units within 1" of any section of a Chitinous Spore-Wall count as being within Synapse range
 - Acidic Blood-Spurs: any enemy non-Tyranid unit that charges across a Chitinous Spore-Wall must take a Dangerous Terrain test. Any wound inflicted by this test is resolved at AP 4 with the Fleshbane special rule
 
 **Options**

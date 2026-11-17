@@ -130,8 +130,12 @@ loading. The script prints anything in the doc it could not place.
 
 - Vehicles, Dreadnoughts, Knights and Titans get the game system's Vehicle or Knights
   and Titans profile, and their sub-types (Fast, Flyer, Transport...) as categories.
-- A Barricade's turret (the Drone Gun-Turret, Crystal Weapon Platform and Splinter Rack Turret) is an optional
-  second model in the unit, with its own BS, Armour 10 and 2 Hull Points profile and its weapon.
+- Leagues of Votann take the standard Fortifications (not the Imperial ones) and their own Brôkhyr Interlocking
+  Bulwark (the doc's "## Fortifications"), a Barricade with the Barricade Fortification rule, Void-Hardened Reinforced
+  Plating and an optional Ironkin Sentry-Mount (twin-linked HYLas rotary cannon, Pivotal magna-rail cannon or SP
+  conversion beamer). The Bulwark has neither Eye of the Ancestors nor League (X).
+- A Barricade's turret (the Drone Gun-Turret, Crystal Weapon Platform, Splinter Rack Turret and Ironkin Sentry-Mount)
+  is an optional second model in the unit, with its own BS, Armour (10, or 11 for the Sentry-Mount) and 2 Hull Points profile and its weapon.
 - Fortifications have the game system's Fortification Unit Type category and their Building, Emplacement or
   Barricade Sub-type, as the official Fortifications do. A Tidewall is "Fortification (Building, Antigrav)".
 - Models bought as options (ammo runts, grot oilers, Spanners) are their own model

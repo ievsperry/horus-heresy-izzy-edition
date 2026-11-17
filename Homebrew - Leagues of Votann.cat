@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="e1a3-795b-be05-784b" name="Leagues of Votann for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Leagues of Votann" />
   </publications>
@@ -479,6 +479,12 @@
       <categoryLinks>
         <categoryLink targetId="7031-469a-1aeb-eab0" id="66d8-8585-1aa2-e18b" primary="true" name="Heavy Support:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="285c-2592-bf67-a220" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Brôkhyr Interlocking Bulwark" hidden="false" id="cde8-ef3c-061c-946e" type="selectionEntry" targetId="1772-057b-e364-34e3">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="33e2-a055-cabb-be7f" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="aae9-4e9d-5640-91bd" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Brôkhyr Thunderkyn" hidden="true" id="aef6-5d08-5678-7e7f" type="selectionEntry" targetId="9ed7-8546-6301-ce42">
@@ -1126,6 +1132,27 @@
         <infoLink name="Twin-linked" id="22b7-f83d-fe4a-c865" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked HYLas rotary cannon" hidden="false" id="0afe-e7c9-54df-af97" publicationId="e1a3-795b-be05-784b">
+      <profiles>
+        <profile name="Twin-linked HYLas rotary cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1fff-2efb-9bef-64de" publicationId="e1a3-795b-be05-784b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Pinning, Rending (6+), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pinning" id="5280-4d36-4a2c-c7bc" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+        <infoLink name="Rending (X)" id="ad56-a5de-18bf-8069" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (6+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Twin-linked" id="dcb7-e258-0f2d-7f65" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cyclic ion cannon" hidden="false" id="a969-fedd-2ccd-ca36" publicationId="e1a3-795b-be05-784b">
       <profiles>
         <profile name="Cyclic ion cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="bee0-7caf-6d12-d54a" publicationId="e1a3-795b-be05-784b">
@@ -1463,6 +1490,15 @@
         <profile name="Teleport Crest" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="683d-9d28-54f9-a205">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">*A personal teleporter that delivers the Einhyr to the heart of battle.* A unit whose models all have teleport crests gains Deep Strike.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Void-Hardened Reinforced Plating" hidden="false" id="cefe-3018-35a8-5ed3" publicationId="e1a3-795b-be05-784b">
+      <profiles>
+        <profile name="Void-Hardened Reinforced Plating" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3104-b637-427b-8fa2">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Brôkhyr Interlocking Bulwark with Void-Hardened Reinforced Plating improves its Cover Save to 3+ against shooting attacks that do not have the Ignores Cover or Barrage special rules.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4603,6 +4639,144 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Brôkhyr Interlocking Bulwark" hidden="false" id="1772-057b-e364-34e3" publicationId="e1a3-795b-be05-784b">
+      <rules>
+        <rule name="Stabilized Firing Step" id="f587-9942-b69c-83be" hidden="false">
+          <description>Friendly Legiones Votann Infantry models within 1" of a Brôkhyr Interlocking Bulwark count as having remained stationary when firing Heavy or Salvo weapons (provided they did not move during their preceding Movement phase), and may re-roll To Hit rolls of 1 when firing Autocannon, Bolt, or HYLas weapons</description>
+        </rule>
+        <rule name="Grudge-Ledger Telemetry" id="ff1f-b844-97e1-91e1" hidden="false">
+          <description>At the start of your Shooting phase, if at least one friendly Legiones Votann unit is within 1" of this Barricade, select one visible enemy unit within 24" of any section of the Barricade; friendly Legiones Votann units within 1" of the Barricade treat that enemy unit as having +1 Judgement Token (to a maximum of 2) until the end of that Shooting phase</description>
+        </rule>
+        <rule name="Stubborn Bastion" id="4d19-39dd-dbd0-e6f6" hidden="false">
+          <description>Friendly Legiones Votann Infantry units within 1" of a Brôkhyr Interlocking Bulwark gain the Stubborn special rule and may re-roll failed Pinning tests</description>
+        </rule>
+        <rule name="Note" id="decd-cb7f-d3c6-efaa" hidden="false">
+          <description>Heavy, modular blast-shields forged from dense void-hardened alloys and anchored by hydraulic ground-clamps, providing Kin oathbands with an immovable firing line.</description>
+        </rule>
+        <rule name="Note" id="dc32-423e-5786-542f" hidden="false">
+          <description>The Brôkhyr Interlocking Bulwark is made up of 4 long sections and 4 short sections. The Ironkin Sentry-Mount is deployed within 1" of any section of the Bulwark; its weapon is an Automated Fire weapon (BS 3) with a 360° line of sight.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Barricade Fortification" id="6633-4ba8-32fa-4fd3" hidden="false" targetId="3d9c-eca1-5612-ad2b" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="df57-46d4-99aa-1de1" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Brôkhyr Interlocking Bulwark" hidden="false" id="b28e-75ae-6778-44f3" publicationId="e1a3-795b-be05-784b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="560d-2d9c-8829-6f1c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca65-9836-0d40-d73e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Brôkhyr Interlocking Bulwark" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="cabc-09dd-9e9d-ca3b" publicationId="e1a3-795b-be05-784b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Barricade, Legiones Votann)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">–</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">–</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">–</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">–</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">–</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">–</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="f301-d3fc-85a9-b58b" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="473d-0126-2dab-25ea" id="d040-d493-f94a-f13a" primary="false" name="Barricade Sub-type" />
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ironkin Sentry-Mount" hidden="false" id="4191-8c81-328c-075e" publicationId="e1a3-795b-be05-784b">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a22a-a759-520a-2958" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b18-c205-e61f-bb2b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Ironkin Sentry-Mount" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="1fd0-fd21-2e9e-7e25" publicationId="e1a3-795b-be05-784b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">–</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="66a0-0efe-ff50-2bf8" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="4f7f-0dc5-5340-93b4" primary="false" name="Emplacement Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked HYLas rotary cannon" hidden="false" id="b050-67f6-662b-a6f0" defaultSelectionEntryId="9a9d-7af8-d9ad-0eea">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3abc-d433-833b-88e4" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41f4-3057-cde8-4abb" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked HYLas rotary cannon" hidden="false" id="9a9d-7af8-d9ad-0eea" type="selectionEntry" targetId="0afe-e7c9-54df-af97">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8a5-ee58-43a0-35e8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Pivotal magna-rail cannon" hidden="false" id="2015-bed2-3014-4c8b" type="selectionEntry" targetId="4934-42c9-9d4d-4747">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4931-37a0-23f9-9fed" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="SP conversion beamer" hidden="false" id="7ec9-8fbb-8c21-7c05" type="selectionEntry" targetId="e931-dab0-30f5-8e49">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8161-25bd-574c-3404" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Brôkhyr Interlocking Bulwark: Options" hidden="false" id="dbd6-e02e-fa07-8db4">
+          <entryLinks>
+            <entryLink import="true" name="Void-Hardened Reinforced Plating" hidden="false" id="1cdc-bbc7-c87b-a941" type="selectionEntry" targetId="cefe-3018-35a8-5ed3">
+              <modifiers>
+                <modifier type="increment" field="193c-682f-6ee6-a1d2" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="1772-057b-e364-34e3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28e-75ae-6778-44f3" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="193c-682f-6ee6-a1d2" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65" />
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Warlord Traits" hidden="false" id="b4ab-b37d-3388-e425">
@@ -4793,6 +4967,9 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
+    <rule name="Barricade Fortification" id="3d9c-eca1-5612-ad2b" hidden="false" publicationId="e1a3-795b-be05-784b">
+      <description>A Barricade (a Fortification with the Barricade Sub-type) is treated as Battlefield Debris under the core 2.0 Fortification rules: it has no Armour Values or Hull Points, cannot be targeted by attacks unless noted, and does not block friendly movement unless impassable. It is deployed during the Fortifications deployment step within your Deployment Zone (unless modified by Infiltrate), and every section in a Barricade unit must be deployed in base-to-base contact with at least one other section in the unit. Models within 1" of a Barricade gain a 4+ Cover Save against shooting attacks made across the barricade, and enemy units charging across a Barricade treat it as Difficult Terrain.</description>
+    </rule>
     <rule name="Slow but Sure" id="fd19-24cc-00f6-3ef0" hidden="false" publicationId="e1a3-795b-be05-784b">
       <description>The Kin are short and heavily equipped. Votann Infantry have a Movement Characteristic of 5 unless their entry says otherwise, but may Advance and still shoot Rapid Fire weapons and declare charges in the same turn†.</description>
     </rule>
