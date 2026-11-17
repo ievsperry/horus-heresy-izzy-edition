@@ -1,6 +1,6 @@
 # Imperial and Traitor Fortifications for The Horus Heresy 2.0
 
-Four Fortifications for the Imperial and Traitor armies, added to the game system (`2022 - Horus Heresy.gst`) beside its standard Fortifications by `homebrew/add_imperial_fortifications.py`.
+Five Fortifications for the Imperial and Traitor armies, added to the game system (`2022 - Horus Heresy.gst`) beside its standard Fortifications by `homebrew/add_imperial_fortifications.py` (the Imperial Bastion by `homebrew/add_imperial_bastion.py`).
 
 ## Introduction
 

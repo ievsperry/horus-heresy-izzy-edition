@@ -157,7 +157,7 @@ Use the 2.0 Crusade Force Organisation chart (Necron armies take the Fortificati
 | Fast Attack | Canoptek Wraiths, Canoptek Scarabs, Tomb Blades, Destroyers, Ophydian Destroyers |
 | Heavy Support | Heavy Destroyers, Canoptek Spyders, Canoptek Reanimator, Canoptek Doomstalker, Annihilation Barge, Doomsday Ark, Monolith, Doom Scythe |
 | Lord of War | C'tan Shard of the Nightbringer, C'tan Shard of the Deceiver, C'tan Shard of the Void Dragon, Szarekh the Silent King, Obelisk, Tesseract Vault |
-| Fortifications | Necron Obelisk, Summoning Core, Greater Summoning Core, Necron Energy Core |
+| Fortifications | Necron Obelisk, Summoning Core, Greater Summoning Core, Necron Energy Core, Necron Tomb-Bastion |
 
 A Necron army may take one Rite of War:
 

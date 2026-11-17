@@ -196,7 +196,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Dedicated Transports | Sagitaur, Kapricus Carrier |
 | Fast Attack | Hernkyn Pioneers, Kapricus Defenders |
 | Heavy Support | Brôkhyr Thunderkyn, Cthonian Earthshakers, Hekaton Land Fortress, Ironkin Steeljacks with Heavy Volkanite Disintegrators |
-| Fortifications | Brôkhyr Interlocking Bulwark |
+| Fortifications | Brôkhyr Interlocking Bulwark, Kin Claim-Bastion |
 
 ### Rites of War
 
