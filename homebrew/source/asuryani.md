@@ -160,7 +160,7 @@ No other units may be selected as part of this Detachment.
 | Heavy Support | Dark Reapers, Falcon Squadron, Fire Prism Squadron, Firestorm Squadron, Night Spinner Squadron, Vaul's Wrath Support Battery, Wraithlord Conclave, Wraithseer |
 | Lords of War | Cobra, Lynx, Phantom Titan, Revenant Titan, Scorpion, Skathach Wraithknight, Vampire Hunter, Vampire Raider, Wraithknight |
 | Dramatis Personae | Asurmen, Avatar of Khaine, Baharroth, Drastanta, Fuegan, Irillyth, Jain Zar, Karandras, Maugan Ra |
-| Fortifications | Holo-Field Defence Line, Wraithbone Force-Wall, Webway Gate, Wraithbone Bastion, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar |
+| Fortifications | Holo-Field Defence Line, Wraithbone Force-Wall, Webway Gate, Wraithbone Bastion, Grand Wraithbone Citadel, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar |
 
 ## Advanced Reaction: Aspects of War
 
@@ -2881,6 +2881,50 @@ _The hull weapons are Automated Fire weapons (BS 4), one mounted on each facing.
 | – Twin-linked starcannon | +25 points |
 | **The Wraithbone Bastion may take any of the following:** |  |
 | – Holo-Field Emitters | +20 points |
+| – Spirit-Stone Relay | +20 points |
+
+### Grand Wraithbone Citadel — 225 pts
+
+_A soaring, multi-spired sanctuary of psycho-reactive wraithbone woven with overlapping crystal weapon batteries and shimmering holo-field projectors._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Grand Wraithbone Citadel | – | 4 | 13 | 13 | 13 | 8 | 30 (2 Access Points, 12 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Grand Wraithbone Citadel
+
+**Wargear**
+
+- Eight twin-linked shuriken cannons
+
+_The hull weapons are Automated Fire weapons (BS 4), two mounted on each facing. An upper-terrace turret is an Automated Fire weapon (BS 4) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Building, Asuryani)
+
+**Special Rules**
+
+- Asuryani Fortification
+- Citadel Battlements: counts as Open-Topped Battlements on the upper terrace capable of holding up to 15 Infantry models, granting a 4+ Cover Save
+- Spirit-Matrix Targeting: during your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)
+- Beacon of the Path: friendly Asuryani units within 12" of an occupied Grand Wraithbone Citadel may re-roll failed Morale and Pinning tests
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Grand Wraithbone Citadel may exchange all eight twin-linked shuriken cannons for one of the following:** |  |
+| – Eight scatter lasers | +40 points |
+| – Eight starcannons | +80 points |
+| **The Grand Wraithbone Citadel may take one of the following upper-terrace weapon turrets:** |  |
+| – Twin-linked bright lance | +30 points |
+| – Twin-linked Aeldari missile launcher | +30 points |
+| – D-Cannon | +35 points |
+| **The Grand Wraithbone Citadel may take any of the following:** |  |
+| – Holo-Field Emitters | +25 points |
 | – Spirit-Stone Relay | +20 points |
 
 ### Void-Spinner Sky-Platform — 85 pts

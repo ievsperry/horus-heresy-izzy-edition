@@ -18,7 +18,7 @@ ENHANCEMENTS = {"Splinter-Rack Munitions": "Kabals", "Combat-Drug Atomisers": "W
 
 REALSPACE = ["Drukhari Realspace Raiders: Kabal Detachment", "Drukhari Realspace Raiders: Wych Cult Detachment",
              "Drukhari Realspace Raiders: Haemonculus Coven Detachment"]
-NOT_IN_REALSPACE = ["Torture-Spire", "Kabalite Blade-Bastion", "Void-Raptor Sky-Dock"]
+NOT_IN_REALSPACE = ["Torture-Spire", "Kabalite Blade-Bastion", "Void-Raptor Sky-Dock", "Grand Kabalite Terror-Spire"]
 
 
 def realspace_limits(b):

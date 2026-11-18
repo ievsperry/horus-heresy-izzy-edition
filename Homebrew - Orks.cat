@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="67" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="68" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -1543,6 +1543,12 @@ The effect lasts until the end of the turn.</description>
       <categoryLinks>
         <categoryLink targetId="a24f-12d8-36c1-f477" id="b7a4-c645-6299-3aa4" primary="true" name="Fortification:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="ec7e-9429-7b85-1599" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Grand Ork Gargant-Fort" hidden="false" id="a387-c31c-e657-c0bd" type="selectionEntry" targetId="d443-9958-c27d-9ca4">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="68e2-2233-e552-8d26" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="fa5b-036f-238b-4b73" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Sky-Blasta Pad" hidden="false" id="a8f8-8b67-0f5b-5d6f" type="selectionEntry" targetId="85ba-ac2c-9190-e825">
@@ -4184,7 +4190,7 @@ The effect lasts until the end of the turn.</description>
       <profiles>
         <profile name="Grot Ammo-Stash" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="2551-f754-8acf-20de">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models embarked inside the Ork Scrap-Bastion or occupying its battlements may re-roll To Hit rolls of 1 during the Shooting phase. If the Ork Scrap-Bastion explodes, add +1 to the Building Damage table roll.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models embarked inside the Fortification or occupying its battlements may re-roll To Hit rolls of 1 during the Shooting phase. If the Fortification explodes, add +1 to the Building Damage table roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4209,7 +4215,7 @@ The effect lasts until the end of the turn.</description>
       <profiles>
         <profile name="Kustom Force Field Generator" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="00da-c697-67ae-5708">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An Ork Scrap-Bastion with a Kustom Force Field Generator has a 5+ Invulnerable Save against shooting attacks.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Fortification with a Kustom Force Field Generator has a 5+ Invulnerable Save against shooting attacks.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -19569,6 +19575,150 @@ The effect lasts until the end of the turn.</description>
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Grand Ork Gargant-Fort" hidden="false" id="d443-9958-c27d-9ca4" publicationId="96d0-c462-d158-fbad">
+      <rules>
+        <rule name="Gargant-Fort Battlements" id="9b7f-78ba-c12a-dc06" hidden="false">
+          <description>Counts as Open-Topped Battlements on the roof capable of holding up to 15 Infantry models, granting a 4+ Cover Save</description>
+        </rule>
+        <rule name="Bosspole Beacon" id="0229-6fea-bc68-bb61" hidden="false">
+          <description>Friendly Ork units within 12" of an occupied Grand Ork Gargant-Fort may re-roll failed Morale and Pinning tests</description>
+        </rule>
+        <rule name="Note" id="4896-520c-c2dc-c290" hidden="false">
+          <description>A colossal, multi-story scrap-fortress welded together from decommissioned kroozer prows, housing an entire mob of Boyz and eight twin-linked big shootas.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="9798-f981-c35d-9576" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Ork Fortification" id="0d60-7f7a-0420-3f02" hidden="false" targetId="3ab1-541f-ab72-42ad" type="rule" />
+        <infoLink name="Kustom-Built &amp; Clunky" id="9d02-6341-f679-1779" hidden="false" targetId="f943-006d-ce9a-a769" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="376b-6571-877c-ceba" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Grand Ork Gargant-Fort" hidden="false" id="9811-f960-de04-3951" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fac9-c99d-2ab8-abef" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cb2-4fd8-e85e-2cee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Grand Ork Gargant-Fort" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="10e8-aa06-0d3d-c280" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building, Ork)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">13</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">8</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">30 (2 Access Points, 12 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="3118-d1ed-49f5-d8f4" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="9f1e-fbf0-3032-32fe" id="8ee6-5f3f-4cd5-4e15" primary="false" name="Building Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked big shoota" hidden="false" id="03aa-421f-b487-67ad" defaultSelectionEntryId="edca-4fc6-1a16-0d55">
+              <constraints>
+                <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="9891-08eb-b18d-e0c1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="6544-786c-6851-58c2" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked big shoota" hidden="false" id="edca-4fc6-1a16-0d55" type="selectionEntry" targetId="6658-e52b-0dc5-d975">
+                  <constraints>
+                    <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="7861-9a87-1f5d-df3c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked rokkit launcha" hidden="false" id="e420-db58-b871-1139" type="selectionEntry" targetId="1177-404a-4f65-084a">
+                  <constraints>
+                    <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="b724-59e3-a5d9-70e0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked skorcha" hidden="false" id="74c1-d42a-4e48-b50b" type="selectionEntry" targetId="72e9-f51c-f9fb-edd4">
+                  <constraints>
+                    <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="0f53-3935-8dd3-267b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="e45a-cc52-cab1-16b0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b27c-b91b-519c-48f2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Supa-kannon" hidden="false" id="41fb-5037-a353-fb9d" type="selectionEntry" targetId="c572-6c0b-8b3a-a695">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa3c-a30f-bcee-f6e2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked kustom mega-kannon" hidden="false" id="0d96-edc1-c52a-0682" type="selectionEntry" targetId="19c7-5a63-8adf-e419">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c3d-3013-46f8-6738" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Quad big shoota" hidden="false" id="352b-e6f3-b60a-27f4" type="selectionEntry" targetId="65ff-67de-8889-4d36">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50d3-52a7-826f-7c9a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="aa24-a08f-2713-cf21">
+              <entryLinks>
+                <entryLink import="true" name="Kustom Force Field Generator" hidden="false" id="fbae-9133-f77c-6dd0" type="selectionEntry" targetId="f4e8-6c49-55e1-acfd">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="942b-3db9-159e-c7d2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Grot Ammo-Stash" hidden="false" id="3103-0104-5231-ab71" type="selectionEntry" targetId="492c-e06e-b877-5c6a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="447e-dd69-1cb2-5ba7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Searchlights" hidden="false" id="a1ed-8149-9fa5-7b65" type="selectionEntry" targetId="e1fc-7ab1-99fe-7099">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb61-f97f-211a-48bb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sky-Blasta Pad" hidden="false" id="85ba-ac2c-9190-e825" publicationId="96d0-c462-d158-fbad">

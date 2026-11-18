@@ -1,6 +1,6 @@
 # Imperial and Traitor Fortifications for The Horus Heresy 2.0
 
-Five Fortifications for the Imperial and Traitor armies, added to the game system (`2022 - Horus Heresy.gst`) beside its standard Fortifications by `homebrew/add_imperial_fortifications.py` (the Imperial Bastion by `homebrew/add_imperial_bastion.py`).
+Six Fortifications for the Imperial and Traitor armies, added to the game system (`2022 - Horus Heresy.gst`) beside its standard Fortifications by `homebrew/add_imperial_fortifications.py` (the Imperial Bastion and Grand Bastion by `homebrew/add_imperial_bastion.py`).
 
 ## Introduction
 
@@ -204,6 +204,46 @@ _The heavy bolters are hull-mounted, one on each facing. Each is an Automated Fi
 | **The Imperial Bastion may take any of the following:** |  |
 | – Comms Relay | +20 points |
 | – Up to 2 Void Shields | +25 points each |
+| – Searchlights | +5 points |
+| – Ammunition Store | +20 points |
+
+### Grand Bastion — 185 pts
+
+_A towering, heavily reinforced siege-citadel bristling with twin-linked heavy bolt batteries and multi-layered void generators, built to anchor primary Imperial and Traitor defensive lines._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Grand Bastion | – | 2 | 14 | 14 | 14 | 8 | 30 (2 Access Points, 12 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Grand Bastion
+
+**Wargear**
+
+- Eight gravis bolt cannons
+
+_The gravis bolt cannons are hull-mounted, two on each facing. Each is an Automated Fire weapon (BS 2) unless fired manually by a model inside; a roof weapon emplacement is an Automated Fire weapon (BS 2) unless fired manually by a model on the battlements._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Imperial Fortification
+- Grand Bastion Battlements: counts as Open-Topped Battlements on the roof capable of holding up to 15 Infantry models, granting a 4+ Cover Save
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Grand Bastion may take one of the following roof weapon emplacements:** |  |
+| – Icarus lascannon | +35 points |
+| – Quad-gun | +50 points |
+| **The Grand Bastion may take any of the following:** |  |
+| – Comms Relay | +20 points |
+| – Up to 4 Void Shields | +25 points each |
 | – Searchlights | +5 points |
 | – Ammunition Store | +20 points |
 

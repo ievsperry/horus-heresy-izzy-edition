@@ -5314,8 +5314,16 @@ class Builder:
                          r"ies(?=$| \()", "y", x.split(" ", 1)[1])))
                      if x.split(" ")[0].lower() in NUMBER_WORDS and " " in x and k > 1 else x
                      for x, (_, k) in zip(shown, parts)]
-            for (w, k), shown_name in zip(parts, shown):
-                self.link(links, w, shown_name, eid, count=k)
+            for (w, k), shown_name, x in zip(parts, shown, texts if len(parts) > 1 else [label]):
+                bare = re.sub(r"^(?:" + "|".join(NUMBER_WORDS) + r") ", "", norm(x))
+                if bare.startswith(("twin-linked ", "twin ")) and not norm(shown_name).startswith("twin"):
+                    # "Eight twin-linked burst cannons" of a weapon written once: each is twin-linked (the
+                    # link keeps the id it is built from, so saved rosters still load)
+                    tl = self.link(links, w, shown_name, eid, count=k, label="Twin-linked " + (
+                        shown_name if any(c.isupper() for c in shown_name[1:]) else shown_name[0].lower() + shown_name[1:]))
+                    self.link_rule(tl, "Twin-linked", tl.get("id"))
+                else:
+                    self.link(links, w, shown_name, eid, count=k)
         else:
             self.problems.append(f"{ds['name'] if ds else name}: wrapper '{label}' has no weapon")
         self.upgrades[norm(name)] = eid

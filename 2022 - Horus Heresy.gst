@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="256" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="257" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -3595,6 +3595,35 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
         <categoryLink id="6dcb-a22e-a0cc-0916" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
         <categoryLink id="5ebd-2a16-c298-fb9d" name="Fortification Unit Type" hidden="false" targetId="679d-ec21-2940-fb9" primary="false"/>
         <categoryLink id="0118-966c-b100-585e" name="Building Sub-type" hidden="false" targetId="9f1e-fbf0-3032-32fe" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f5d6-8893-202a-f5f5" name="Grand Bastion" hidden="false" collective="false" import="true" targetId="6a9d-e687-bbd5-c47a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>Hidden for armies with their own Fortifications: Tyranids, Daemons of the Ruinstorm, Orks, Asuryani, Drukhari, Anhrathe, T'au Empire, Necrons, Leagues of Votann, Rillietann</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b0ce-f3f1-c16f-86d1" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="adbe-53b5-788c-2bbb" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d799-5beb-3b5c-80a0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="897b-5b98-3dff-b74a" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bfb0-3cf3-b297-83ed" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9fe0-c647-0c8b-a0ec" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a4f8-8f7b-bae8-719e" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="af4f-b87c-fd33-0f49" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="da07-9606-c8f2-cbc0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8af6-bbfb-7374-c942" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="5b41-310d-d268-ffa5" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="82ef-1c1d-711d-14a4" name="Fortification Unit Type" hidden="false" targetId="679d-ec21-2940-fb9" primary="false"/>
+        <categoryLink id="6b66-3c6c-e40c-ee6e" name="Building Sub-type" hidden="false" targetId="9f1e-fbf0-3032-32fe" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -14255,6 +14284,122 @@ In addition, a model receives no benefit from the Hammer of Wrath (X) Special Ru
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Grand Bastion" hidden="false" id="6a9d-e687-bbd5-c47a">
+      <rules>
+        <rule name="Grand Bastion Battlements" id="26be-6105-130e-a9bd" hidden="false">
+          <description>Counts as Open-Topped Battlements on the roof capable of holding up to 15 Infantry models, granting a 4+ Cover Save</description>
+        </rule>
+        <rule name="Note" id="6278-17e5-b458-8e38" hidden="false">
+          <description>A towering, heavily reinforced siege-citadel bristling with twin-linked heavy bolt batteries and multi-layered void generators, built to anchor primary Imperial and Traitor defensive lines.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Imperial Fortification" id="3dc8-33e4-5e7d-0b9f" hidden="false" targetId="2ad1-af72-c6f8-9a08" type="rule"/>
+      </infoLinks>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Grand Bastion" hidden="false" id="ec0c-0618-ab1a-d251">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fdf-888f-c1d8-6696" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc3b-c84a-6af6-a2e7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Grand Bastion" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="4714-cf55-c1d7-2f48">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">8</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">30 (2 Access Points, 12 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="c645-b4a5-520b-78d9" primary="false" name="Fortification Unit Type"/>
+            <categoryLink targetId="9f1e-fbf0-3032-32fe" id="feba-97e1-843a-d56b" primary="false" name="Building Sub-type"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="0009-4179-1b32-80c1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dad1-dac4-85e5-cec3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Icarus lascannon" hidden="false" id="5d03-0e98-ec9e-0159" type="selectionEntry" targetId="585d-a229-e4ef-81c3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8745-6eae-7aa3-6f07" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Quad-gun" hidden="false" id="d9a0-9364-24a8-5cee" type="selectionEntry" targetId="a726-7782-7f25-4f74">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="103e-9f16-5c6f-0136" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="cb52-6198-8f39-d8f8">
+              <entryLinks>
+                <entryLink import="true" name="Comms Relay" hidden="false" id="16ba-227e-5778-50a0" type="selectionEntry" targetId="aaf7-a0b5-decc-1d7a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d2e-2e70-7188-f9f9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Void Shield" hidden="false" id="bf46-7733-0847-ee02" type="selectionEntry" targetId="f6af-b72a-b86e-2785">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="eef6-c531-61ac-0dd5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Searchlights" hidden="false" id="0147-2b1f-9672-78f9" type="selectionEntry" targetId="4ae3-79b4-6051-505e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bba-e44c-d1ff-fad3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Ammunition Store" hidden="false" id="a6ed-629f-b447-66c6" type="selectionEntry" targetId="ce74-7d46-01bd-6064">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33a7-3be9-8304-c25e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Eight gravis bolt cannons" hidden="false" id="8ae9-8566-ea5d-680c" type="selectionEntry" targetId="3b5f-52ab-6534-94a3">
+              <constraints>
+                <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="3f56-8477-83e1-31c4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="6c2a-1034-f2c0-6899" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

@@ -957,6 +957,53 @@ _The shuriken cannons are hull-mounted on the Front and Rear facings and the spl
 | **The Void-Bulkhead Redoubt may take:** |  |
 | – Holo-Field Projectors | +20 points |
 
+### Grand Void-Bulkhead Citadel — 185 pts
+
+_A massive salvaged starship hull-section jettisoned from an Eclipse cruiser, held to the AV 11 limit and trading brute armour thickness for sheer structural volume and refraction shrouds._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Grand Void-Bulkhead Citadel | – | 4 | 11 | 11 | 11 | 8 | 30 (2 Access Points, 12 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Grand Void-Bulkhead Citadel
+
+**Wargear**
+
+- Four twin-linked shuriken cannons
+- Four twin-linked splinter cannons
+
+_The twin-linked shuriken cannons are hull-mounted two on the Front and two on the Rear facing, and the twin-linked splinter cannons two on the Left and two on the Right facing; all are Automated Fire weapons (BS 4). A crown-mounted turret is an Automated Fire weapon (BS 4) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Building, Anhrathe)
+
+**Special Rules**
+
+- Anhrathe Fortification
+- Lightweight Void-Alloy
+- Void-Cloak Matrix: the Citadel has Shrouded (6+) against shooting attacks made from more than 12" away (Shrouded (5+) with Holo-Field Projectors)
+- Upper-Deck Battlements: counts as Open-Topped Battlements on the upper deck capable of holding up to 15 Infantry models, granting a 4+ Cover Save
+- Ship-Cogitator Targeting: during your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)
+- Automated Overwatch: once per enemy Assault phase, if an enemy unit declares a Charge against this Fortification or a friendly unit within 3" of it, this Fortification may make an Overwatch Reaction at BS 4 without spending a point from your Reaction Allotment
+- Corsair Bravado: friendly Anhrathe units within 12" of an occupied Grand Void-Bulkhead Citadel may re-roll failed Morale and Pinning tests, and add +1 to their Initiative when making Hit & Run checks
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Grand Void-Bulkhead Citadel may exchange its four twin-linked shuriken cannons and four twin-linked splinter cannons for one of the following:** |  |
+| – Eight twin-linked shuriken cannons | +0 points |
+| – Eight twin-linked shredders | +20 points |
+| **The Grand Void-Bulkhead Citadel may take one of the following crown-mounted weapon turrets:** |  |
+| – Twin-linked bright lance | +30 points |
+| – Twin-linked dark lance | +30 points |
+| – Twin-linked dissonance cannon | +35 points |
+| **The Grand Void-Bulkhead Citadel may take:** |  |
+| – Holo-Field Projectors | +25 points |
+
 ### Void-Skiff Extraction Tender — 90 pts
 
 _Anhrathe raiders never linger once the spoils are taken. Void-Skiff Tenders are anti-gravitic starship docking platforms dropped into contested zones to refuel jetpack Reavers, repair damaged Venom skimmers, and beam plunder-laden squads back to orbit._
@@ -1169,7 +1216,7 @@ A Plunder-Beacon with a Holo-Field Generator has Shrouded (5+) instead of Shroud
 
 ### Holo-Field Projectors
 
-A Void-Bulkhead Redoubt with Holo-Field Projectors improves its Void-Cloak Matrix from Shrouded (6+) to Shrouded (5+) against shooting attacks made from more than 12" away.
+A Fortification with Holo-Field Projectors improves its Void-Cloak Matrix from Shrouded (6+) to Shrouded (5+) against shooting attacks made from more than 12" away.
 
 ### Kinetic Shroud-Fields
 

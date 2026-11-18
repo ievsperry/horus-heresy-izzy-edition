@@ -418,7 +418,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Fast Attack | Pathfinders, Tactical Drones, Piranhas, Vespid Stingwings, Kroot Hounds, Krootox Riders, Sun Shark Bomber, Razorshark Strike Fighter, Tetra Scout Speeders, Remora Stealth Drones, Barracuda, Orca Dropship, Piranha TX-42, Krootox Rampagers, Knarloc Riders |
 | Heavy Support | Broadside Battlesuits, Hammerhead Gunship, Sky Ray Gunship, Sniper Drone Team, Heavy Gun Drones, XV109 Y'vahra, XV107 R'varna, Drone Sentry Turret, Shas'vre Ob'lotai 9-0, Great Knarloc |
 | Lord of War | KV128 Stormsurge, KX139 Ta'unar Supremacy Armour, Tiger Shark Fighter-Bomber, Manta Super-heavy Dropship |
-| Fortifications | Tidewall Droneport, Tidewall Gunrig, Tidewall Shieldline, Remote Sensor Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker, Orca Sky-Pad, T'au Command Post, Missile Silo Battery, Pulse Shield Generator, Sensor Beacon Post |
+| Fortifications | Tidewall Droneport, Tidewall Gunrig, Tidewall Shieldline, Remote Sensor Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker, Orca Sky-Pad, T'au Command Post, Missile Silo Battery, Pulse Shield Generator, Sensor Beacon Post, Manta Command Citadel |
 
 ### Drones
 
@@ -3579,6 +3579,54 @@ _The burst cannons (or missile pods or flamers) are hull-mounted Automated Fire 
 | – Urban Camouflage Matrix | +15 points |
 | – Close-Quarters Sensor-Grid | +20 points |
 
+#### Manta Command Citadel — 220 pts
+
+_A massive, modular Earth Caste fortress-bunker lowered from orbit by heavy Manta lifters to anchor an entire Hunter Contingent._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Manta Command Citadel | – | 3 | 13 | 13 | 13 | 8 | 30 (2 Access Points, 12 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Manta Command Citadel
+
+**Wargear**
+
+- Eight twin-linked burst cannons
+- Twin-linked smart missile system
+
+_The twin-linked burst cannons (or missile pods or flamers) are hull-mounted Automated Fire weapons (BS 3), two on each facing. The twin-linked smart missile system is roof-mounted, an Automated Fire weapon (BS 3) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Building, T'au Empire)
+
+**Special Rules**
+
+- T'au Fortification
+- Drone-Assisted Targeting
+- Citadel Battlements: counts as Open-Topped Battlements on the roof capable of holding up to 15 Infantry models, granting a 4+ Cover Save
+- Manta Orbital Insertion: instead of deploying during the Fortifications step, a Manta Command Citadel may be placed in Reserves and enter play via Deep Strike (it may arrive on Turn 1 automatically without rolling for Reserves, and does not scatter if placed within 12" of a friendly Remote Sensor Tower or Pathfinder unit)
+- Cadre Command Relay: friendly T'au units within 12" of an occupied Manta Command Citadel may re-roll failed Morale and Pinning tests
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Manta Command Citadel may exchange all eight twin-linked burst cannons for one of the following:** |  |
+| – Eight twin-linked missile pods | +50 points |
+| – Eight twin-linked flamers | +0 points |
+| **The Manta Command Citadel may take any of the following:** |  |
+| – Up to 4 Void Shields | +25 points each |
+| – Drone-Uplink Relay | +20 points |
+| **The Manta Command Citadel may take one of the following Sept Enhancements:** |  |
+| – Coordinated Fire-Control | +20 points |
+| – Hot-Blooded Thrust-Relays | +20 points |
+| – Experimental Weapon Accelerators | +25 points |
+| – Urban Camouflage Matrix | +15 points |
+| – Close-Quarters Sensor-Grid | +20 points |
+
 #### Orca Sky-Pad — 85 pts
 
 _An elevated, interlocking alloy landing deck equipped with magnetic docking clamps, plasma-capacitor chargers, and automated skyfire missile pods. Also called a Drone-Refit Platform._
@@ -3876,7 +3924,7 @@ The Fortification and any friendly T'au Infantry models within 3" of it have a 5
 
 #### Drone-Uplink Relay
 
-While a friendly model is embarked inside a Manta Strike Drop-Bunker with a Drone-Uplink Relay, the controlling player may modify their Reserves rolls by +1 or -1.
+While a friendly model is embarked inside a Fortification with a Drone-Uplink Relay, the controlling player may modify their Reserves rolls by +1 or -1.
 
 #### Guardian Shield Emitters
 

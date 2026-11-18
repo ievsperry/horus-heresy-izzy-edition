@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="869f-4e24-3fd7-61f9" name="Homebrew - Aeldari (Anhrathe)" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="869f-4e24-3fd7-61f9" name="Homebrew - Aeldari (Anhrathe)" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="a8f3-52ed-030f-1805" name="Anhrathe for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Anhrathe" />
   </publications>
@@ -346,6 +346,12 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       <categoryLinks>
         <categoryLink targetId="a24f-12d8-36c1-f477" id="a21d-1d09-9917-25c9" primary="true" name="Fortification:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="4825-582e-d648-edf2" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Grand Void-Bulkhead Citadel" hidden="false" id="3977-7421-8df2-c39e" type="selectionEntry" targetId="d7c2-673f-24b3-6e1f">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="c26a-dd0b-83b0-80c5" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="2017-a3ad-598a-f956" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Void-Skiff Extraction Tender" hidden="false" id="bc5b-89fa-0cb1-7188" type="selectionEntry" targetId="31db-e9bc-77fc-df51">
@@ -1524,7 +1530,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       <profiles>
         <profile name="Holo-Field Projectors" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7c67-d174-6fc2-13fc">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Void-Bulkhead Redoubt with Holo-Field Projectors improves its Void-Cloak Matrix from Shrouded (6+) to Shrouded (5+) against shooting attacks made from more than 12" away.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Fortification with Holo-Field Projectors improves its Void-Cloak Matrix from Shrouded (6+) to Shrouded (5+) against shooting attacks made from more than 12" away.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5985,6 +5991,191 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="4f35-368d-20ee-6ec5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="1c33-260c-afd7-2071" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Grand Void-Bulkhead Citadel" hidden="false" id="d7c2-673f-24b3-6e1f" publicationId="a8f3-52ed-030f-1805">
+      <rules>
+        <rule name="Void-Cloak Matrix" id="a1a7-a403-db1c-a1d5" hidden="false">
+          <description>The Citadel has Shrouded (6+) against shooting attacks made from more than 12" away (Shrouded (5+) with Holo-Field Projectors)</description>
+        </rule>
+        <rule name="Upper-Deck Battlements" id="90ab-0145-68db-282c" hidden="false">
+          <description>Counts as Open-Topped Battlements on the upper deck capable of holding up to 15 Infantry models, granting a 4+ Cover Save</description>
+        </rule>
+        <rule name="Ship-Cogitator Targeting" id="562b-e125-2eb3-e8d3" hidden="false">
+          <description>During your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)</description>
+        </rule>
+        <rule name="Automated Overwatch" id="43f1-8155-5c19-313c" hidden="false">
+          <description>Once per enemy Assault phase, if an enemy unit declares a Charge against this Fortification or a friendly unit within 3" of it, this Fortification may make an Overwatch Reaction at BS 4 without spending a point from your Reaction Allotment</description>
+        </rule>
+        <rule name="Corsair Bravado" id="718b-62fb-2ae6-1229" hidden="false">
+          <description>Friendly Anhrathe units within 12" of an occupied Grand Void-Bulkhead Citadel may re-roll failed Morale and Pinning tests, and add +1 to their Initiative when making Hit &amp; Run checks</description>
+        </rule>
+        <rule name="Note" id="db90-02cd-4412-225d" hidden="false">
+          <description>A massive salvaged starship hull-section jettisoned from an Eclipse cruiser, held to the AV 11 limit and trading brute armour thickness for sheer structural volume and refraction shrouds.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="b3d0-3673-a949-a1d3" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Anhrathe Fortification" id="2136-8399-3e8d-8673" hidden="false" targetId="5a40-1813-839a-91d0" type="rule" />
+        <infoLink name="Lightweight Void-Alloy" id="fd78-6095-126c-b78a" hidden="false" targetId="461a-3a8f-0fa0-09c0" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="8693-be4a-c062-4cfc" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Grand Void-Bulkhead Citadel" hidden="false" id="74dc-3bfe-c3e3-c34c" publicationId="a8f3-52ed-030f-1805">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cd6-9fe5-a93b-80f6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8c8-9555-02e1-af3c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Grand Void-Bulkhead Citadel" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="aed0-24ac-73b2-c2bf" publicationId="a8f3-52ed-030f-1805">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building, Anhrathe)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">8</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">30 (2 Access Points, 12 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="7612-a2eb-afbd-0fd4" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="9f1e-fbf0-3032-32fe" id="2dc8-561a-feec-efef" primary="false" name="Building Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange four twin-linked shuriken cannons and four twin-linked splinter cannons" hidden="false" id="560e-8930-2849-169f" defaultSelectionEntryId="6139-7c12-8756-2079">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bc9-f0b3-6117-3a16" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a694-5c3a-8d53-fd2d" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Four twin-linked shuriken cannons and Four twin-linked splinter cannons" hidden="false" id="6139-7c12-8756-2079" type="selectionEntry" targetId="a9fc-4f22-d3de-ccce">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e7e-5509-3714-0abb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Eight twin-linked shuriken cannons" hidden="false" id="1bd7-4596-a724-c619" type="selectionEntry" targetId="ce6e-0e1a-d290-4e90">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18f9-e053-64f8-b5f0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Eight twin-linked shredders" hidden="false" id="5956-c0f4-83e6-0d0c" type="selectionEntry" targetId="bc4f-ef4f-a9a7-a562">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b403-9534-9f17-961e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="6b47-21e3-489c-152b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c120-42ad-eeaf-45ff" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked bright lance" hidden="false" id="81ed-34a5-b7b3-5183" type="selectionEntry" targetId="6ed1-b83b-3346-94f6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3511-0511-c0e9-fbd9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked dark lance" hidden="false" id="19b5-4a1c-6372-aa4e" type="selectionEntry" targetId="87a8-742a-16ef-050e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cc5-b791-da58-99f3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked dissonance cannon" hidden="false" id="ec3f-fef4-0a6f-8d05" type="selectionEntry" targetId="8d95-9917-7ae9-0520">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b488-9d5a-75c2-132d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="eecf-1f34-8cb5-accd">
+              <entryLinks>
+                <entryLink import="true" name="Holo-Field Projectors" hidden="false" id="9a99-b11a-f160-1a33" type="selectionEntry" targetId="c482-0735-4ae2-0a7e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04f2-8603-b4fa-9288" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Four twin-linked shuriken cannons and Four twin-linked splinter cannons" hidden="false" id="a9fc-4f22-d3de-ccce" publicationId="a8f3-52ed-030f-1805">
+      <entryLinks>
+        <entryLink import="true" name="Twin-linked shuriken cannon" hidden="false" id="dc04-61eb-76af-28ec" type="selectionEntry" targetId="9c2b-a2bc-c47f-2d62">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="7934-10b6-ab2b-a716" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8683-0efd-9c86-d9f6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="9570-0b57-890d-104a" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+          </infoLinks>
+        </entryLink>
+        <entryLink import="true" name="Twin-linked splinter cannon" hidden="false" id="254a-050d-eebe-baf5" type="selectionEntry" targetId="10ab-6bfd-cbf3-b421">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8f6e-c6dd-d9b0-2b2f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0173-1852-e855-2f04" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="90a3-7034-030a-9593" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+          </infoLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eight twin-linked shuriken cannons" hidden="false" id="ce6e-0e1a-d290-4e90" publicationId="a8f3-52ed-030f-1805">
+      <entryLinks>
+        <entryLink import="true" name="Twin-linked shuriken cannon" hidden="false" id="4329-53ea-fd50-bbec" type="selectionEntry" targetId="9c2b-a2bc-c47f-2d62">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="f6c2-f315-dd03-0bbc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="62c6-cefb-028a-9348" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="9ec9-05e2-92be-b04d" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+          </infoLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eight twin-linked shredders" hidden="false" id="bc4f-ef4f-a9a7-a562" publicationId="a8f3-52ed-030f-1805">
+      <entryLinks>
+        <entryLink import="true" name="Twin-linked shredder" hidden="false" id="b00b-f545-da3a-f1db" type="selectionEntry" targetId="7be7-0e32-716e-16fa">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="aa7a-6941-cdde-3d53" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="7963-d3a6-fbd1-ac2d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="19d5-d0f8-69ab-685e" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+          </infoLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>

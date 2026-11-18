@@ -354,7 +354,7 @@ Use the 2.0 Crusade Force Organisation chart, or the Aeldari and Drukhari detach
 | Fast Attack | Hellions, Reavers, Scourge Talonstrike Cadre, Beastmasters, Razorwing Jetfighter |
 | Heavy Support | Cronos Parasite Engine, Ravager, Scourge Reaper Cadre, Talos Pain Engine, Tantalus, Reaper, Voidraven Bomber |
 | Lord of War | Asdrubael Vect on the Dais of Destruction |
-| Fortifications | Torture-Spire, Kabalite Blade-Bastion, Void-Raptor Sky-Dock, Dread-Pod Drop-Turret, Razor-Blade Barricade |
+| Fortifications | Torture-Spire, Kabalite Blade-Bastion, Void-Raptor Sky-Dock, Dread-Pod Drop-Turret, Razor-Blade Barricade, Grand Kabalite Terror-Spire |
 
 A Drukhari army may take one Rite of War, chosen when the army is built; these are the Drukhari Rites of Raid that Master of the Raid refers to. Each has a benefit and a limitation.
 
@@ -2149,7 +2149,7 @@ Drukhari armies may not take the standard Fortifications; they take these Drukha
 
 The Razor-Blade Barricade is a Barricade: it follows the Barricade Fortification special rule instead.
 
-**Sub-Faction Enhancements.** Each Drukhari Fortification other than the Razor-Blade Barricade may take one Sub-Faction Enhancement matching its Detachment's Sub-faction (Kabals, Wych Cults or Haemonculus Covens); the Kabalite Blade-Bastion may not take the Flesh-Crafted Carapace.
+**Sub-Faction Enhancements.** Each Drukhari Fortification other than the Razor-Blade Barricade may take one Sub-Faction Enhancement matching its Detachment's Sub-faction (Kabals, Wych Cults or Haemonculus Covens); the Kabalite Blade-Bastion and Grand Kabalite Terror-Spire may not take the Flesh-Crafted Carapace.
 
 ### Torture-Spire — 85 pts
 
@@ -2233,6 +2233,54 @@ _The hull weapons are Automated Fire weapons (BS 4), one mounted on each facing.
 | – Combat-Drug Atomisers | +20 points |
 
 _The Kabalite Blade-Bastion's Armour of 13 is an exception to the Drukhari Fortification Armour limit, and it may not take the Flesh-Crafted Carapace._
+
+### Grand Kabalite Terror-Spire — 210 pts
+
+_A towering, razor-flanked dark-iron citadel dropped from a Black Ark cruiser, bristling with twin splinter-racks and howling agony-emitters._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Grand Kabalite Terror-Spire | – | 4 | 13 | 13 | 12 | 8 | 30 (2 Access Points, 12 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Grand Kabalite Terror-Spire
+
+**Wargear**
+
+- Eight twin-linked splinter cannons
+
+_The hull weapons are Automated Fire weapons (BS 4), two mounted on each facing. A crown-mounted turret is an Automated Fire weapon (BS 4) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Building, Drukhari)
+
+**Special Rules**
+
+- Drukhari Fortification
+- Night-Shield Matrix
+- Terror-Spire Battlements: counts as Open-Topped Battlements on the upper terrace capable of holding up to 15 Infantry models, granting a 4+ Cover Save
+- Slave-Brain Targeting: during your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)
+- Monomolecular Hull Spikes: any enemy unit that charges a Grand Kabalite Terror-Spire, or a unit embarked inside or occupying its battlements, suffers D6 Strength 4 AP – hits with the Rending (6+) special rule before the Assault is resolved
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Grand Kabalite Terror-Spire may exchange all eight twin-linked splinter cannons for:** |  |
+| – Eight twin-linked shredders | +20 points |
+| **The Grand Kabalite Terror-Spire may take one of the following crown-mounted weapon turrets:** |  |
+| – Twin-linked dark lance | +30 points |
+| – Twin-linked disintegrator cannon | +30 points |
+| **The Grand Kabalite Terror-Spire may take any of the following:** |  |
+| – Night-Shield Projector | +25 points |
+| – Phantasm Grenade Launcher Array | +15 points |
+| **The Grand Kabalite Terror-Spire may take one of the following Sub-Faction Enhancements:** |  |
+| – Splinter-Rack Munitions | +20 points |
+| – Combat-Drug Atomisers | +20 points |
+
+_The Grand Kabalite Terror-Spire's Armour of 13 (12 Rear) is an exception to the Drukhari Fortification Armour limit, and it may not take the Flesh-Crafted Carapace._
 
 ### Void-Raptor Sky-Dock — 80 pts
 
@@ -2512,7 +2560,7 @@ A unit containing one or more models equipped with a pain amplifier may select t
 
 ### Night-Shield Projector
 
-A Kabalite Blade-Bastion with a Night-Shield Projector improves its Night-Shield Matrix: ranged attacks made at it from more than 12" away (instead of 18") are resolved as Snap Shots.
+A Fortification with a Night-Shield Projector improves its Night-Shield Matrix: ranged attacks made at it from more than 12" away (instead of 18") are resolved as Snap Shots.
 
 ### Phantasm Grenade Launcher
 
