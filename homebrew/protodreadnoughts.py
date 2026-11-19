@@ -112,7 +112,7 @@ def show_if(e, who):
 
 def rule_links(ctx, e, text, key):
     """Info links for the special rules a weapon's Type names ("Brutal (2)" links Brutal (X), shown as Brutal (2))."""
-    seen = set()
+    seen = {l.get("targetId") for l in e.iter("infoLink")}  # a rule another profile already links
     for tok in re.split(r",\s*|;\s*", re.sub(r"\.$", "", text)):
         tok = tok.strip().lstrip("†")
         base = re.sub(r"\s*\([^()]*\)$", "", tok)
