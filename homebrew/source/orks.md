@@ -582,7 +582,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Dedicated Transports | Trukk, 'Chinork' Warkopta; Battlewagon for the units that list it |
 | Lord of War | Gorkanaut, Morkanaut, Stompa |
 | Primarch | Ghazghkull Thraka |
-| Fortifications | Mekboy Workshop, Ork Scrap-Bastion, Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement, Waaagh! Banner Totem, Gorkamorka Idol, Supa-Slugga Emplacement, Scrap-Listening Post |
+| Fortifications | Mekboy Workshop, Ork Scrap-Bastion, Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement, Waaagh! Banner Totem, Gorkamorka Idol, Supa-Slugga Emplacement, Scrap-Listening Post, Grand Ork Gargant-Fort |
 
 ## Detachments
 
@@ -3929,6 +3929,51 @@ _The big shootas (or rokkit launchas or skorchas) are hull-mounted Automated Fir
 | – Grot Ammo-Stash | +20 points |
 | – Searchlights | +5 points |
 
+### Grand Ork Gargant-Fort — 175 pts
+
+_A colossal, multi-story scrap-fortress welded together from decommissioned kroozer prows, housing an entire mob of Boyz and eight twin-linked big shootas._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Grand Ork Gargant-Fort | – | 2 | 14 | 14 | 13 | 8 | 30 (2 Access Points, 12 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Grand Ork Gargant-Fort
+
+**Wargear**
+
+- Eight twin-linked big shootas
+
+_The twin-linked big shootas (or rokkit launchas or skorchas) are hull-mounted Automated Fire weapons (BS 2), two on each facing. A roof-mounted emplacement weapon is an Automated Fire weapon (BS 2) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Building, Ork)
+
+**Special Rules**
+
+- Ork Fortification
+- Kustom-Built & Clunky
+- Gargant-Fort Battlements: counts as Open-Topped Battlements on the roof capable of holding up to 15 Infantry models, granting a 4+ Cover Save
+- Bosspole Beacon: friendly Ork units within 12" of an occupied Grand Ork Gargant-Fort may re-roll failed Morale and Pinning tests
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Grand Ork Gargant-Fort may exchange any twin-linked big shoota for one of the following:** |  |
+| – Twin-linked rokkit launcha | +10 points each |
+| – Twin-linked skorcha | +10 points each |
+| **The Grand Ork Gargant-Fort may take one of the following roof-mounted emplacement weapons:** |  |
+| – Supa-kannon | +40 points |
+| – Twin-linked kustom mega-kannon | +35 points |
+| – Quad big shoota | +20 points |
+| **The Grand Ork Gargant-Fort may take any of the following:** |  |
+| – Kustom Force Field Generator | +35 points |
+| – Grot Ammo-Stash | +20 points |
+| – Searchlights | +5 points |
+
 ### Sky-Blasta Pad — 75 pts
 
 _A wide, oil-stained steel landing platform ringed with flickering guidance flares, fuel drums, and rickety flak-turrets._
@@ -4365,7 +4410,7 @@ A vehicle equipped with grot riggers gains It Will Not Die (6+).
 
 ### Grot Ammo-Stash
 
-Models embarked inside the Ork Scrap-Bastion or occupying its battlements may re-roll To Hit rolls of 1 during the Shooting phase. If the Ork Scrap-Bastion explodes, add +1 to the Building Damage table roll.
+Models embarked inside the Fortification or occupying its battlements may re-roll To Hit rolls of 1 during the Shooting phase. If the Fortification explodes, add +1 to the Building Damage table roll.
 
 ### Idol Kustom Force Field
 
@@ -4373,7 +4418,7 @@ The Gorkamorka Idol and all friendly Ork units within 3" of it have a 5+ Invulne
 
 ### Kustom Force Field Generator
 
-An Ork Scrap-Bastion with a Kustom Force Field Generator has a 5+ Invulnerable Save against shooting attacks.
+A Fortification with a Kustom Force Field Generator has a 5+ Invulnerable Save against shooting attacks.
 
 ### Kustom Force Field
 

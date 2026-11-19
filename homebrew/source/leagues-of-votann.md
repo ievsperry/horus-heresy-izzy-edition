@@ -196,7 +196,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Dedicated Transports | Sagitaur, Kapricus Carrier |
 | Fast Attack | Hernkyn Pioneers, Kapricus Defenders |
 | Heavy Support | Brôkhyr Thunderkyn, Cthonian Earthshakers, Hekaton Land Fortress, Ironkin Steeljacks with Heavy Volkanite Disintegrators |
-| Fortifications | Brôkhyr Interlocking Bulwark, Kin Claim-Bastion |
+| Fortifications | Brôkhyr Interlocking Bulwark, Kin Claim-Bastion, Grand Claim-Citadel |
 
 ### Rites of War
 
@@ -1194,6 +1194,52 @@ _The HYLas rotary cannons (or autocannons or heavy volkite culverins) are hull-m
 | – Searchlights | +5 points |
 | – Ammunition Store | +20 points |
 
+### Grand Claim-Citadel — 215 pts
+
+_A monumental, multi-tiered Kin hold-fortress anchored into planetary crust by seismic pylons, bristling with twin-linked rotary cannons and layered void shields._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Grand Claim-Citadel | – | 3 | 14 | 14 | 14 | 8 | 30 (2 Access Points, 12 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Grand Claim-Citadel
+
+**Wargear**
+
+- Eight twin-linked HYLas rotary cannons
+
+_The twin-linked HYLas rotary cannons (or autocannons or heavy volkite culverins) are hull-mounted Automated Fire weapons (BS 3), two on each facing. A roof-mounted turret is an Automated Fire weapon (BS 3) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Building, Legiones Votann)
+
+**Special Rules**
+
+- Void-Hardened Construction: the Grand Claim-Citadel has Armoured Ceramite: enemy weapons with the Melta special rule do not roll extra armour penetration dice against it
+- Claim-Citadel Battlements: counts as Open-Topped Battlements on the roof capable of holding up to 15 Infantry models, granting a 4+ Cover Save
+- Ancestor's Claim: during deployment, if there is an Objective Marker wholly within your Deployment Zone, the Grand Claim-Citadel may be deployed within 1" of that Objective Marker. Friendly Legiones Votann units within 3" of it count as being within range of an Objective Marker controlled by their player for triggering rules and Warlord Traits, though the Claim-Citadel does not award Victory Points at the end of the battle
+- Grudge-Ledger Array: at the start of your Shooting phase, if a friendly Legiones Votann unit is embarked inside or occupying the battlements, select one visible enemy unit within 24" of the Grand Claim-Citadel; friendly Legiones Votann units within 12" of it treat that enemy unit as having +1 Judgement Token (to a maximum of 2) until the end of that Shooting phase
+- Ironkin Cogitator-Targeting: during your Shooting phase, each hull-mounted weapon automatically fires at BS 3 at the nearest visible enemy unit within its 90° fire arc, and a roof-mounted turret at the nearest visible enemy unit within range (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Grand Claim-Citadel may exchange all eight twin-linked HYLas rotary cannons for one of the following:** |  |
+| – Eight twin-linked autocannons | +0 points |
+| – Eight twin-linked heavy volkite culverins | +40 points |
+| **The Grand Claim-Citadel may take one of the following roof-mounted turret weapons:** |  |
+| – Twin-linked heavy magna-rail cannon | +35 points |
+| – SP heavy conversion beamer | +25 points |
+| – Quad HYLas flak-battery | +30 points |
+| **The Grand Claim-Citadel may take any of the following:** |  |
+| – Up to 4 Void Shields | +25 points each |
+| – Searchlights | +5 points |
+| – Ammunition Store | +20 points |
+
 ## Wargear
 
 ### Grudge-Ledger / Holo-Lectern
@@ -1349,7 +1395,9 @@ All weapons listed here are counted as 'Bolt' weapons for those rules that affec
 | HYLas rotary cannon | 36" | 7 | 3 | Heavy 3, Pinning, Rending (6+) |
 | Twin HYLas beam cannon | 36" | 9 | 2 | Heavy 1, Lance, Twin-linked |
 | Twin-linked HYLas rotary cannon | 36" | 7 | 3 | Heavy 3, Pinning, Rending (6+), Twin-linked |
+| Quad HYLas flak-battery | 36" | 7 | 3 | Heavy 6, Pinning, Rending (6+), Skyfire |
 | Twin-linked magna-rail cannon | 72" | 10 | 1 | Ordnance 1, Armourbane (Ranged), Sunder, Twin-linked |
+| Twin-linked heavy magna-rail cannon | 72" | 10 | 1 | Ordnance 2, Armourbane (Ranged), Sunder, Twin-linked |
 
 #### Ion and Plasma Weapons
 

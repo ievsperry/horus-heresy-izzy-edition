@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="6dbb-42c9-758d-cd66" name="Necrons for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Necrons" />
   </publications>
@@ -760,6 +760,12 @@
       <categoryLinks>
         <categoryLink targetId="a24f-12d8-36c1-f477" id="59f9-880e-9f72-d6a2" primary="true" name="Fortification:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="05a5-38b8-58c1-94d6" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Grand Tomb-Ziggurat" hidden="false" id="4bc6-f06e-663b-afa9" type="selectionEntry" targetId="9905-099d-0f05-c771">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="d3f7-4e9e-e63b-811c" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="2d21-4665-f7b2-3ae0" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Canoptek Wraiths" hidden="true" id="d78e-bbfd-7499-dc28" type="selectionEntry" targetId="52bd-c684-720c-a834">
@@ -2133,7 +2139,7 @@
       <profiles>
         <profile name="Eternity Gate Core" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="f2a1-a193-4a95-62fa">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per turn, one friendly Necron Infantry unit in Reserves may arrive within 6" of a Necron Tomb-Bastion with an Eternity Gate Core, placed as though by Deep Strike without scattering.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per turn, one friendly Necron Infantry unit in Reserves may arrive within 6" of a Fortification with an Eternity Gate Core, placed as though by Deep Strike without scattering.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2210,7 +2216,7 @@
       <profiles>
         <profile name="Quantum Shielding" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="8cf1-df9b-4ade-d9fc">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Necron Tomb-Bastion with Quantum Shielding has Quantum Shielding: until it loses its first Hull Point, any Armour Penetration roll against it whose total is greater than its Armour Value causes a glancing hit instead.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Fortification with Quantum Shielding has Quantum Shielding: until it loses its first Hull Point, any Armour Penetration roll against it whose total is greater than its Armour Value causes a glancing hit instead.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8228,6 +8234,128 @@
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Grand Tomb-Ziggurat" hidden="false" id="9905-099d-0f05-c771" publicationId="6dbb-42c9-758d-cd66">
+      <rules>
+        <rule name="Ziggurat Battlements" id="5136-6a9c-58fc-2dcb" hidden="false">
+          <description>Counts as Open-Topped Battlements on the upper terrace capable of holding up to 15 Infantry models, granting a 4+ Cover Save</description>
+        </rule>
+        <rule name="Tomb-Matrix Automated Fire" id="cef3-935f-6114-c4af" hidden="false">
+          <description>During your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc, and a crown-mounted turret at the nearest visible enemy unit within range (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)</description>
+        </rule>
+        <rule name="Note" id="3e55-f8b4-6b8c-1b0f" hidden="false">
+          <description>A towering, stepped pyramid of self-regenerating necrodermis crowned with emerald annihilation arrays and multi-layered dimensional shielding.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="4872-bd02-9cea-9124" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Necron Fortification" id="48ff-e8e3-0c72-6c78" hidden="false" targetId="2664-d274-7472-e42d" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="c511-ce8e-a08f-e91a" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Grand Tomb-Ziggurat" hidden="false" id="41f2-363c-8702-bf11" publicationId="6dbb-42c9-758d-cd66">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4b1-6382-c74b-f12a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67f0-f9ff-2888-d28d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Grand Tomb-Ziggurat" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="2964-f4ed-54cc-a008" publicationId="6dbb-42c9-758d-cd66">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building, Necron)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">8</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">30 (2 Access Points, 12 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="e6c1-1de2-5bfa-42e1" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="9f1e-fbf0-3032-32fe" id="3d87-6d6d-8a98-65ca" primary="false" name="Building Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="7829-6d99-fb6e-744f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fec-329d-e241-f101" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Particle whip" hidden="false" id="844c-af81-9828-35af" type="selectionEntry" targetId="0700-d77b-9053-b1af">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e0c-9e53-ec36-5a42" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked heavy gauss cannon" hidden="false" id="d9a0-d4fd-5343-d7b0" type="selectionEntry" targetId="ebd1-4b1e-9f5f-2cf5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c944-317e-565c-eb0f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked tesla destructor" hidden="false" id="f4a1-defe-efca-2010" type="selectionEntry" targetId="447c-355c-1223-b998">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="003e-f993-424f-f8be" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="3d3f-23fd-7385-4978">
+              <entryLinks>
+                <entryLink import="true" name="Void Shield" hidden="false" id="0096-a9cb-ca89-ce3e" type="selectionEntry" targetId="3116-3d85-a093-4798">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="c529-4ab8-8bf5-5ce0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Eternity Gate Core" hidden="false" id="e90f-ae32-0b12-d590" type="selectionEntry" targetId="695d-2795-0a0b-1be3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c992-6747-732e-8551" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Quantum Shielding" hidden="false" id="3fb5-b9c9-659c-5a61" type="selectionEntry" targetId="0c8f-da66-6a6e-c29f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae99-a892-7735-d6c0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Twin-linked gauss flux arc" hidden="false" id="5ec7-eca7-4f2b-940c" type="selectionEntry" targetId="47d3-ac48-c2af-9c56">
+              <constraints>
+                <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="19d6-a18a-9393-c3b5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="5cc1-fe06-adbf-c9b6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="235" />
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

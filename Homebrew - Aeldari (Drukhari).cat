@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="44" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="45" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -1382,6 +1382,39 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       <categoryLinks>
         <categoryLink targetId="a24f-12d8-36c1-f477" id="9c09-3172-df64-d90a" primary="true" name="Fortification:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="5f38-3e05-2299-61db" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Grand Kabalite Terror-Spire" hidden="false" id="16fe-6526-c375-027d" type="selectionEntry" targetId="05b1-3020-844c-478c">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="886a-325d-ad26-8955" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e319-27b1-69b4-33ff" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3909-dd50-290e-98a8" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="55d5-74a4-6f1c-b25a" value="0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="886a-325d-ad26-8955" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e319-27b1-69b4-33ff" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3909-dd50-290e-98a8" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="55d5-74a4-6f1c-b25a" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="6de7-3f37-8b4d-1b33" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="48c5-6575-1e53-a259" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Void-Raptor Sky-Dock" hidden="false" id="66ea-e507-1487-f70b" type="selectionEntry" targetId="cb84-7d45-c353-3a89">
@@ -3819,7 +3852,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       <profiles>
         <profile name="Night-Shield Projector" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b996-4e32-4736-22f5">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Kabalite Blade-Bastion with a Night-Shield Projector improves its Night-Shield Matrix: ranged attacks made at it from more than 12" away (instead of 18") are resolved as Snap Shots.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Fortification with a Night-Shield Projector improves its Night-Shield Matrix: ranged attacks made at it from more than 12" away (instead of 18") are resolved as Snap Shots.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -13116,6 +13149,178 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="87b8-503d-9c51-9262" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ac49-2f46-827d-1c37" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Grand Kabalite Terror-Spire" hidden="false" id="05b1-3020-844c-478c" publicationId="9356-fc9b-2fee-7d11">
+      <rules>
+        <rule name="Terror-Spire Battlements" id="576d-7939-8b90-f773" hidden="false">
+          <description>Counts as Open-Topped Battlements on the upper terrace capable of holding up to 15 Infantry models, granting a 4+ Cover Save</description>
+        </rule>
+        <rule name="Slave-Brain Targeting" id="7a8c-c189-ce46-4c2f" hidden="false">
+          <description>During your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)</description>
+        </rule>
+        <rule name="Monomolecular Hull Spikes" id="9acf-2330-e6df-7dda" hidden="false">
+          <description>Any enemy unit that charges a Grand Kabalite Terror-Spire, or a unit embarked inside or occupying its battlements, suffers D6 Strength 4 AP – hits with the Rending (6+) special rule before the Assault is resolved</description>
+        </rule>
+        <rule name="Note" id="b637-938f-f3a4-511a" hidden="false">
+          <description>A towering, razor-flanked dark-iron citadel dropped from a Black Ark cruiser, bristling with twin splinter-racks and howling agony-emitters.</description>
+        </rule>
+        <rule name="Note" id="63eb-c7a0-c6f2-5dc8" hidden="false">
+          <description>The Grand Kabalite Terror-Spire's Armour of 13 (12 Rear) is an exception to the Drukhari Fortification Armour limit, and it may not take the Flesh-Crafted Carapace.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="c314-bc7a-89d1-2106" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Drukhari Fortification" id="675d-0bc1-ed3e-a7b1" hidden="false" targetId="35b3-6cea-fc02-13b6" type="rule" />
+        <infoLink name="Night-Shield Matrix" id="1044-e254-e2ef-f90d" hidden="false" targetId="ed54-5f1a-d5de-15d1" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="066c-6352-2eb4-ca35" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Grand Kabalite Terror-Spire" hidden="false" id="e559-7004-ba97-c60a" publicationId="9356-fc9b-2fee-7d11">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7dd-4e57-50aa-8bf4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6312-20a5-831e-7216" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Grand Kabalite Terror-Spire" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="4b10-3b0e-32c4-ff1c" publicationId="9356-fc9b-2fee-7d11">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building, Drukhari)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">8</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">30 (2 Access Points, 12 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="9991-b2fb-3f90-94d3" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="9f1e-fbf0-3032-32fe" id="1dd8-67ee-5649-5ffc" primary="false" name="Building Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked splinter cannons" hidden="false" id="6964-0cdc-9211-4109" defaultSelectionEntryId="3e39-ceab-3427-1501">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba5b-cf7f-081c-eb9f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="863c-1cec-8cce-627a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Eight twin-linked splinter cannons" hidden="false" id="3e39-ceab-3427-1501" type="selectionEntry" targetId="82a1-eac4-c9d5-6bce">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="163c-8d7d-5e0d-e6ee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Eight twin-linked shredders" hidden="false" id="6e6c-d512-c0a9-664b" type="selectionEntry" targetId="e686-ece4-af66-9f3b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="002f-85b3-e78d-a7d0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="13ef-d465-c246-c82f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e19c-50d2-1d20-240e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked dark lance" hidden="false" id="030a-644a-79c0-919d" type="selectionEntry" targetId="0df2-c49e-ace4-8052">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bd7-5ed3-1e4a-e0bd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked disintegrator cannon" hidden="false" id="3ee0-22b2-8310-8d68" type="selectionEntry" targetId="ff71-5366-4f90-05f3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e9c-39dd-96b5-4494" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="d1e5-d0f6-49c3-59b5">
+              <entryLinks>
+                <entryLink import="true" name="Night-Shield Projector" hidden="false" id="07b6-0aff-b7be-a89b" type="selectionEntry" targetId="1ca6-be85-f4dd-ae1b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="941a-c552-d53e-78b9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Phantasm Grenade Launcher Array" hidden="false" id="f4fd-3df4-1f73-d3f7" type="selectionEntry" targetId="ed84-0dde-9ed8-9d83">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abde-71d4-3481-8121" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="a6a1-2a9e-7951-a0c4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72ed-1188-0db9-c956" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Splinter-Rack Munitions" hidden="false" id="b0d2-fcc1-2bd4-f93d" type="selectionEntry" targetId="dbb6-e234-abbb-f6e4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2435-5ea9-f256-435d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combat-Drug Atomisers" hidden="false" id="fd16-ea4f-2283-cc5c" type="selectionEntry" targetId="483c-2a9b-05f7-3fd0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c9b-024b-93e8-1a75" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="210" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eight twin-linked splinter cannons" hidden="false" id="82a1-eac4-c9d5-6bce" publicationId="9356-fc9b-2fee-7d11">
+      <entryLinks>
+        <entryLink import="true" name="Twin-linked splinter cannon" hidden="false" id="dace-0b87-8ba2-8188" type="selectionEntry" targetId="9319-cc6a-48ed-7e1e">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="16a1-dba2-03d9-3c0d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="41c3-700d-dc1c-179e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eight twin-linked shredders" hidden="false" id="e686-ece4-af66-9f3b" publicationId="9356-fc9b-2fee-7d11">
+      <entryLinks>
+        <entryLink import="true" name="Twin-linked shredder" hidden="false" id="b17f-8b45-96f1-f4a5" type="selectionEntry" targetId="016e-6fc3-2e91-078e">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="2886-6650-b4de-3d12" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="2c7d-8111-2e77-611c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="29cb-a68b-a332-f42c" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+          </infoLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
