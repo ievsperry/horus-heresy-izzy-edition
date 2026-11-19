@@ -29,7 +29,7 @@ FORTIFICATIONS = {
     "91a3-bce0-aa49-e830": "Hammerfall Bunker"}
 IMPERIAL = {"4d9d-4f91-cc49-0114": "Strategic Listening Post", "9c70-33da-c421-d79f": "Automated Sentry Turret Battery",
             "17f1-6eb0-809a-c658": "Thermo-Plasma Conduit Tower", "ef9a-43ec-8c1b-5f75": "Orbital Uplink Bunker",
-            "93d0-2cc1-9eb5-9889": "Imperial Bastion"}
+            "93d0-2cc1-9eb5-9889": "Imperial Bastion", "f5d6-8893-202a-f5f5": "Grand Bastion"}
 # the army-wide entry every Detachment of the faction holds
 FACTIONS = {"b0ce-f3f1-c16f-86d1": "Tyranids", "afca-3047-fb26-d097": "Daemons of the Ruinstorm",
             "adbe-53b5-788c-2bbb": "Orks", "d799-5beb-3b5c-80a0": "Asuryani",

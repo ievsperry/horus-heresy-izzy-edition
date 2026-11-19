@@ -493,6 +493,12 @@
         <categoryLink targetId="36c3-e85e-97cc-c503" id="9431-ac44-28a0-d2c2" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Grand Claim-Citadel" hidden="false" id="867d-2449-07a1-d9b7" type="selectionEntry" targetId="3832-93d2-5ea0-bebd">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="52f4-3f68-3796-8d74" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="2e7f-8138-97ac-4813" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Brôkhyr Thunderkyn" hidden="true" id="aef6-5d08-5678-7e7f" type="selectionEntry" targetId="9ed7-8546-6301-ce42">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -569,24 +575,6 @@
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="8467-0631-0714-899f" primary="true" name="Troops:" />
         <categoryLink targetId="8f42-a824-fb5f-8fea" id="3cd3-8bd0-0068-20d7" primary="false" name="Compulsory Troops:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="c1f4-024f-3149-26a0" primary="false" name="Unit:" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Ironkin Ancestor-Rig" hidden="false" id="755b-c81c-4967-2c61" type="selectionEntry" targetId="b172-a54b-5328-fe3b">
-      <categoryLinks>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="c218-3e4a-55d1-3737" primary="true" name="Elites:" />
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="8cba-ff3c-fcd8-f2cb" primary="false" name="Unit:" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Cthonian Siege-Strider" hidden="false" id="97ca-e6af-584c-857a" type="selectionEntry" targetId="ff39-db65-4b86-f131">
-      <categoryLinks>
-        <categoryLink targetId="7031-469a-1aeb-eab0" id="6bea-f13c-660d-b670" primary="true" name="Heavy Support:" />
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="2de0-346c-3eea-38a4" primary="false" name="Unit:" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Brôkhyr Ballistic Strider" hidden="false" id="5c21-17f6-2d15-8101" type="selectionEntry" targetId="c4a7-cc3b-3b9c-22d5">
-      <categoryLinks>
-        <categoryLink targetId="7031-469a-1aeb-eab0" id="c117-48db-7bc2-86a5" primary="true" name="Heavy Support:" />
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="8eee-39af-1018-a995" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1246,6 +1234,27 @@
         <infoLink name="Twin-linked" id="dcb7-e258-0f2d-7f65" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Quad HYLas flak-battery" hidden="false" id="4dce-9183-2a5d-e4cb" publicationId="e1a3-795b-be05-784b">
+      <profiles>
+        <profile name="Quad HYLas flak-battery" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f6da-97b8-0e7c-400f" publicationId="e1a3-795b-be05-784b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Pinning, Rending (6+), Skyfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pinning" id="a6d3-ab93-8cd9-026f" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+        <infoLink name="Rending (X)" id="53df-a5a1-0132-2363" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (6+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Skyfire" id="a104-63af-4700-5066" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule" />
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin-linked magna-rail cannon" hidden="false" id="14a7-0a52-632c-d105" publicationId="e1a3-795b-be05-784b">
       <profiles>
         <profile name="Twin-linked magna-rail cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4ba1-d55f-1f3f-8344" publicationId="e1a3-795b-be05-784b">
@@ -1265,6 +1274,27 @@
         </infoLink>
         <infoLink name="Sunder" id="e04b-7cfd-467d-de79" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule" />
         <infoLink name="Twin-linked" id="d0c9-792a-60a9-b44f" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked heavy magna-rail cannon" hidden="false" id="0afb-0015-db35-b121" publicationId="e1a3-795b-be05-784b">
+      <profiles>
+        <profile name="Twin-linked heavy magna-rail cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="36f3-0893-733d-bbfc" publicationId="e1a3-795b-be05-784b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Armourbane (Ranged), Sunder, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Armourbane (X)" id="2a1d-e6fc-0df7-0dcc" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Ranged)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Sunder" id="5939-533b-5374-98d2" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule" />
+        <infoLink name="Twin-linked" id="3ad5-ac2b-7c65-095a" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cyclic ion cannon" hidden="false" id="a969-fedd-2ccd-ca36" publicationId="e1a3-795b-be05-784b">
@@ -4612,21 +4642,27 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two twin bolt cannons" hidden="false" id="ed6e-0a41-452d-5534" publicationId="e1a3-795b-be05-784b">
       <entryLinks>
-        <entryLink import="true" name="Bolt cannon" hidden="false" id="a5f8-dea6-2909-da6e" type="selectionEntry" targetId="cb12-ec05-9bda-ecaa">
+        <entryLink import="true" name="Twin-linked bolt cannon" hidden="false" id="a5f8-dea6-2909-da6e" type="selectionEntry" targetId="cb12-ec05-9bda-ecaa">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3520-32f8-a025-05f2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="36eb-941b-65a6-8128" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="9db7-d855-d62b-6161" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+          </infoLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Two twin ion beamers" hidden="false" id="9dfe-18d2-6980-64c8" publicationId="e1a3-795b-be05-784b">
       <entryLinks>
-        <entryLink import="true" name="Ion beamer" hidden="false" id="9a6b-dbcf-f675-8a12" type="selectionEntry" targetId="abf6-db26-162c-da98">
+        <entryLink import="true" name="Twin-linked ion beamer" hidden="false" id="9a6b-dbcf-f675-8a12" type="selectionEntry" targetId="abf6-db26-162c-da98">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fbc5-9181-4912-927d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2bca-dbf8-4090-0508" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="3564-9a77-862f-399f" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+          </infoLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -5093,6 +5129,190 @@
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="bae6-a82e-d567-b054" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="b1eb-b4cf-0b9b-78c8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Grand Claim-Citadel" hidden="false" id="3832-93d2-5ea0-bebd" publicationId="e1a3-795b-be05-784b">
+      <rules>
+        <rule name="Void-Hardened Construction" id="a7a5-9b1f-03f8-d153" hidden="false">
+          <description>The Grand Claim-Citadel has Armoured Ceramite: enemy weapons with the Melta special rule do not roll extra armour penetration dice against it</description>
+        </rule>
+        <rule name="Claim-Citadel Battlements" id="7b5a-cda9-0fcd-b08d" hidden="false">
+          <description>Counts as Open-Topped Battlements on the roof capable of holding up to 15 Infantry models, granting a 4+ Cover Save</description>
+        </rule>
+        <rule name="Ancestor's Claim" id="4049-4114-b720-da23" hidden="false">
+          <description>During deployment, if there is an Objective Marker wholly within your Deployment Zone, the Grand Claim-Citadel may be deployed within 1" of that Objective Marker. Friendly Legiones Votann units within 3" of it count as being within range of an Objective Marker controlled by their player for triggering rules and Warlord Traits, though the Claim-Citadel does not award Victory Points at the end of the battle</description>
+        </rule>
+        <rule name="Grudge-Ledger Array" id="6737-a1e6-1148-5c16" hidden="false">
+          <description>At the start of your Shooting phase, if a friendly Legiones Votann unit is embarked inside or occupying the battlements, select one visible enemy unit within 24" of the Grand Claim-Citadel; friendly Legiones Votann units within 12" of it treat that enemy unit as having +1 Judgement Token (to a maximum of 2) until the end of that Shooting phase</description>
+        </rule>
+        <rule name="Ironkin Cogitator-Targeting" id="7fb2-7843-09c1-38c9" hidden="false">
+          <description>During your Shooting phase, each hull-mounted weapon automatically fires at BS 3 at the nearest visible enemy unit within its 90° fire arc, and a roof-mounted turret at the nearest visible enemy unit within range (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)</description>
+        </rule>
+        <rule name="Note" id="e685-d55d-b671-a9f2" hidden="false">
+          <description>A monumental, multi-tiered Kin hold-fortress anchored into planetary crust by seismic pylons, bristling with twin-linked rotary cannons and layered void shields.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="8b7b-e500-dd2a-da2b" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Grand Claim-Citadel" hidden="false" id="c19d-4114-89f2-0378" publicationId="e1a3-795b-be05-784b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d89a-0253-804a-b215" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a362-a8e4-46ff-9673" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Grand Claim-Citadel" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="f5b2-6c40-b8d8-377d" publicationId="e1a3-795b-be05-784b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building, Legiones Votann)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">8</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">30 (2 Access Points, 12 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="8981-6118-f27b-7039" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="9f1e-fbf0-3032-32fe" id="effd-1d7d-9a05-ff14" primary="false" name="Building Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked HYLas rotary cannons" hidden="false" id="1845-7612-a92a-db7b" defaultSelectionEntryId="6558-961c-5342-c2d8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d44c-8f09-167d-ab18" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49ac-b214-a309-477e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Eight twin-linked HYLas rotary cannons" hidden="false" id="6558-961c-5342-c2d8" type="selectionEntry" targetId="7562-222e-bda5-d33f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3d7-f739-ac21-96a7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Eight twin-linked autocannons" hidden="false" id="b863-3fd5-ada6-d885" type="selectionEntry" targetId="6a28-27f2-a8d3-99ad">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5060-c426-bca5-0e8c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Eight twin-linked heavy volkite culverins" hidden="false" id="0c9c-8096-2ef6-be66" type="selectionEntry" targetId="4716-10e5-d37f-bfab">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e697-75f5-9268-5678" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="5268-bf62-972b-fad4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5921-a3c7-c0e1-6106" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked heavy magna-rail cannon" hidden="false" id="b3c2-1612-be52-8808" type="selectionEntry" targetId="0afb-0015-db35-b121">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cb2-4fab-0c7d-d6a8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="SP heavy conversion beamer" hidden="false" id="ce56-5720-aca0-de5c" type="selectionEntry" targetId="3ab5-e33f-407c-7936">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd84-9f4a-4243-e551" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Quad HYLas flak-battery" hidden="false" id="1717-3d51-086a-32c7" type="selectionEntry" targetId="4dce-9183-2a5d-e4cb">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa38-e72d-8cc4-6207" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="7b0d-ef3b-ac26-7089">
+              <entryLinks>
+                <entryLink import="true" name="Void Shield" hidden="false" id="51b2-7209-629d-c24c" type="selectionEntry" targetId="f058-c72a-c9e8-c5e1">
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e5b7-a593-13e4-baf1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Searchlights" hidden="false" id="6eca-5c50-ace5-efda" type="selectionEntry" targetId="99f1-d288-9ef9-f8ca">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="040f-9790-ec26-3080" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Ammunition Store" hidden="false" id="3914-b2f1-fab3-b3fa" type="selectionEntry" targetId="6e64-a340-0df1-ff74">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de4e-4b2e-e460-713f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="215" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eight twin-linked HYLas rotary cannons" hidden="false" id="7562-222e-bda5-d33f" publicationId="e1a3-795b-be05-784b">
+      <entryLinks>
+        <entryLink import="true" name="Twin-linked HYLas rotary cannon" hidden="false" id="d122-ffea-cab5-a40c" type="selectionEntry" targetId="0afe-e7c9-54df-af97">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="59b5-3978-0c83-9097" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="fa48-2c68-2a1e-c796" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eight twin-linked autocannons" hidden="false" id="6a28-27f2-a8d3-99ad" publicationId="e1a3-795b-be05-784b">
+      <entryLinks>
+        <entryLink import="true" name="Twin-linked autocannon" hidden="false" id="36f0-d4fe-4b32-d24a" type="selectionEntry" targetId="62b7-6e6e-85f0-d028">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="bd9c-5478-e69d-f250" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="458d-fd40-6b9c-ed24" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="ac8e-2c3b-1902-025f" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+          </infoLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eight twin-linked heavy volkite culverins" hidden="false" id="4716-10e5-d37f-bfab" publicationId="e1a3-795b-be05-784b">
+      <entryLinks>
+        <entryLink import="true" name="Twin-linked heavy volkite culverin" hidden="false" id="7add-91cc-1507-12b6" type="selectionEntry" targetId="21e4-af45-680b-6079">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="a7ec-51d6-90ec-5bfc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="4a47-6a51-d5c4-f2f3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="a0e6-4121-8bd8-6f6c" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+          </infoLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -7307,7 +7527,4 @@
       <description>The model has an Invulnerable Save of X, which may be taken against any Wound instead of its armour save.</description>
     </rule>
   </sharedRules>
-  <catalogueLinks>
-    <catalogueLink type="catalogue" name="Mech Library" id="3325-ec4c-cf8a-adfc" targetId="3129-da35-55e0-642d" importRootEntries="false" />
-  </catalogueLinks>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="32" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="33" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="d5ae-9e15-7ef2-10f7" name="Asuryani for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Asuryani" />
   </publications>
@@ -282,6 +282,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="12d1-d939-c43e-55fb" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="c53e-5210-1186-fed4" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="53a7-ccec-cdce-603f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="61f3-e286-afdf-423d" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="6c2f-a545-af11-51d9" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </conditionGroup>
@@ -345,6 +346,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="12d1-d939-c43e-55fb" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="c53e-5210-1186-fed4" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="53a7-ccec-cdce-603f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="61f3-e286-afdf-423d" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="6c2f-a545-af11-51d9" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </conditionGroup>
@@ -686,6 +688,11 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                 <modifier type="decrement" field="bdc2-5a98-4acf-9f85" value="1">
                   <repeats>
                     <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53a7-ccec-cdce-603f" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="bdc2-5a98-4acf-9f85" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61f3-e286-afdf-423d" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
                 <modifier type="decrement" field="bdc2-5a98-4acf-9f85" value="1">
@@ -1081,6 +1088,11 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                 </modifier>
                 <modifier type="decrement" field="c9ab-3d8a-0e0d-512b" value="1">
                   <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61f3-e286-afdf-423d" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="c9ab-3d8a-0e0d-512b" value="1">
+                  <repeats>
                     <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d4a-8003-4b6d-4b20" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
@@ -1378,6 +1390,11 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                 <modifier type="increment" field="8fec-5159-4cad-7f70" value="1">
                   <repeats>
                     <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53a7-ccec-cdce-603f" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="8fec-5159-4cad-7f70" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61f3-e286-afdf-423d" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
                 <modifier type="increment" field="8fec-5159-4cad-7f70" value="1">
@@ -1902,6 +1919,19 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       <categoryLinks>
         <categoryLink targetId="a24f-12d8-36c1-f477" id="7981-be58-1558-50e1" primary="true" name="Fortification:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="8bd4-ea6a-f58a-c64a" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Grand Wraithbone Citadel" hidden="false" id="54f8-65e0-d55a-1f03" type="selectionEntry" targetId="61f3-e286-afdf-423d">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7904-b140-5846-d462" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="a498-ca08-801f-2f87" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="7c95-0a4b-befd-20e2" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Void-Spinner Sky-Platform" hidden="false" id="beee-c090-3a3f-552e" type="selectionEntry" targetId="5d4a-8003-4b6d-4b20">
@@ -17225,11 +17255,14 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7dd-2d4e-e6e8-88f7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Gravis Starcannon" hidden="false" id="70f4-60be-8c7e-7548" type="selectionEntry" targetId="7cc7-0899-5883-a98c">
+        <entryLink import="true" name="Twin-linked Gravis Starcannon" hidden="false" id="70f4-60be-8c7e-7548" type="selectionEntry" targetId="7cc7-0899-5883-a98c">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c99-3a3d-e0e0-b076" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70ce-7ffc-437c-04de" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
+          <infoLinks>
+            <infoLink name="Twin-linked" id="3a66-291e-db40-9475" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+          </infoLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -18390,6 +18423,177 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="34de-1b52-1ab0-29e3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="1d40-3ca5-301e-0c5b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Grand Wraithbone Citadel" hidden="false" id="61f3-e286-afdf-423d" publicationId="d5ae-9e15-7ef2-10f7">
+      <rules>
+        <rule name="Citadel Battlements" id="947c-1fa0-cc34-d91f" hidden="false">
+          <description>Counts as Open-Topped Battlements on the upper terrace capable of holding up to 15 Infantry models, granting a 4+ Cover Save</description>
+        </rule>
+        <rule name="Spirit-Matrix Targeting" id="2aed-3086-08d3-776b" hidden="false">
+          <description>During your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)</description>
+        </rule>
+        <rule name="Beacon of the Path" id="146f-be7c-c93a-b4ed" hidden="false">
+          <description>Friendly Asuryani units within 12" of an occupied Grand Wraithbone Citadel may re-roll failed Morale and Pinning tests</description>
+        </rule>
+        <rule name="Note" id="cc77-447a-b404-b52d" hidden="false">
+          <description>A soaring, multi-spired sanctuary of psycho-reactive wraithbone woven with overlapping crystal weapon batteries and shimmering holo-field projectors.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="1cf0-2b1f-02cf-eb09" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Asuryani Fortification" id="a5aa-68ea-3dfa-57cd" hidden="false" targetId="c81d-5912-53be-3fc6" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="78a0-35d9-11a9-26ea" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Grand Wraithbone Citadel" hidden="false" id="5826-280d-5a4b-fc88" publicationId="d5ae-9e15-7ef2-10f7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b729-b835-2bbb-d017" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28f7-fde5-b990-a87f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Grand Wraithbone Citadel" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="fbef-fdbe-57d5-b038" publicationId="d5ae-9e15-7ef2-10f7">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building, Asuryani)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">13</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">8</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">30 (2 Access Points, 12 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="35e0-4f95-4ef5-58ea" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="9f1e-fbf0-3032-32fe" id="a259-8258-7ce0-df9e" primary="false" name="Building Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange twin-linked shuriken cannons" hidden="false" id="4607-2974-87c2-13eb" defaultSelectionEntryId="370d-e827-3319-125c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3422-b910-70c7-6cde" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c36a-1503-f45b-77aa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Eight twin-linked shuriken cannons" hidden="false" id="370d-e827-3319-125c" type="selectionEntry" targetId="d554-fa1c-2882-85f8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5aa-d98f-e3a8-3169" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Eight scatter lasers" hidden="false" id="019d-5e58-42d4-948d" type="selectionEntry" targetId="e7ce-6e2b-43e3-2ac9">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc65-522b-8f06-f834" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Eight starcannons" hidden="false" id="d778-d5f0-f97a-e763" type="selectionEntry" targetId="6679-0d1f-fcd3-6360">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d165-9478-0721-8cb0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="224c-a520-5a64-2fae">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82a2-4103-16c5-8c8a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked bright lance" hidden="false" id="0b0a-cd95-214f-fd63" type="selectionEntry" targetId="e7af-8fb5-7945-df5c">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f687-2d26-b634-ad88" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked Aeldari missile launcher" hidden="false" id="c56c-5a89-84f4-1362" type="selectionEntry" targetId="11d1-969d-1033-4537">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6556-5bdf-ba06-1222" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Twin-linked" id="b230-6170-bce3-c845" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="D-Cannon" hidden="false" id="821a-0c01-e8a0-b5ba" type="selectionEntry" targetId="1c13-939d-aece-2f43">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cab5-4c86-bcba-7568" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="73af-615d-b019-9505">
+              <entryLinks>
+                <entryLink import="true" name="Holo-Field Emitters" hidden="false" id="7090-aa1b-d304-b391" type="selectionEntry" targetId="fbfa-aebd-17db-ea85">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e75-8a55-d503-7d8a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Spirit-Stone Relay" hidden="false" id="fd18-aae5-aa1d-01b9" type="selectionEntry" targetId="5e09-deda-22b0-361a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ca0-4f7c-b4e5-5788" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="225" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eight twin-linked shuriken cannons" hidden="false" id="d554-fa1c-2882-85f8" publicationId="d5ae-9e15-7ef2-10f7">
+      <entryLinks>
+        <entryLink import="true" name="Twin-linked shuriken cannon" hidden="false" id="972f-f744-d1b8-b324" type="selectionEntry" targetId="c70c-4596-98cf-1164">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="3086-9f4c-a293-d2d8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="db7f-45dd-41ae-fa5a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eight scatter lasers" hidden="false" id="e7ce-6e2b-43e3-2ac9" publicationId="d5ae-9e15-7ef2-10f7">
+      <entryLinks>
+        <entryLink import="true" name="Scatter laser" hidden="false" id="3b8e-4464-c46c-1a4e" type="selectionEntry" targetId="f7f2-e730-fef9-c731">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="a08e-4507-7e68-d608" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="8a83-a1e0-c9ee-bca1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eight starcannons" hidden="false" id="6679-0d1f-fcd3-6360" publicationId="d5ae-9e15-7ef2-10f7">
+      <entryLinks>
+        <entryLink import="true" name="Starcannon" hidden="false" id="334e-8aec-1eb3-f2dc" type="selectionEntry" targetId="b808-679b-f7d6-d34a">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="ca78-f2f1-2815-ad14" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="bac6-0cab-706e-42eb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
           </constraints>
         </entryLink>
       </entryLinks>

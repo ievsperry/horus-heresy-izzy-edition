@@ -157,7 +157,7 @@ Use the 2.0 Crusade Force Organisation chart (Necron armies take the Fortificati
 | Fast Attack | Canoptek Wraiths, Canoptek Scarabs, Tomb Blades, Destroyers, Ophydian Destroyers |
 | Heavy Support | Heavy Destroyers, Canoptek Spyders, Canoptek Reanimator, Canoptek Doomstalker, Annihilation Barge, Doomsday Ark, Monolith, Doom Scythe |
 | Lord of War | C'tan Shard of the Nightbringer, C'tan Shard of the Deceiver, C'tan Shard of the Void Dragon, Szarekh the Silent King, Obelisk, Tesseract Vault |
-| Fortifications | Necron Obelisk, Summoning Core, Greater Summoning Core, Necron Energy Core, Necron Tomb-Bastion |
+| Fortifications | Necron Obelisk, Summoning Core, Greater Summoning Core, Necron Energy Core, Necron Tomb-Bastion, Grand Tomb-Ziggurat |
 
 A Necron army may take one Rite of War:
 
@@ -1949,6 +1949,47 @@ _The gauss flux arcs are hull-mounted Automated Fire weapons (BS 4), one on each
 | – Eternity Gate Core | +25 points |
 | – Quantum Shielding | +30 points |
 
+### Grand Tomb-Ziggurat — 235 pts
+
+_A towering, stepped pyramid of self-regenerating necrodermis crowned with emerald annihilation arrays and multi-layered dimensional shielding._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Grand Tomb-Ziggurat | – | 4 | 14 | 14 | 14 | 8 | 30 (2 Access Points, 12 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Grand Tomb-Ziggurat
+
+**Wargear**
+
+- Eight twin-linked gauss flux arcs
+
+_The twin-linked gauss flux arcs are hull-mounted Automated Fire weapons (BS 4), two on each facing. A crown-mounted turret is an Automated Fire weapon (BS 4) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Building, Necron)
+
+**Special Rules**
+
+- Necron Fortification
+- Ziggurat Battlements: counts as Open-Topped Battlements on the upper terrace capable of holding up to 15 Infantry models, granting a 4+ Cover Save
+- Tomb-Matrix Automated Fire: during your Shooting phase, each hull-mounted weapon automatically fires at BS 4 at the nearest visible enemy unit within its 90° fire arc, and a crown-mounted turret at the nearest visible enemy unit within range (unless a model embarked inside or occupying the battlements fires it manually using its own Ballistic Skill)
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Grand Tomb-Ziggurat may take one of the following crown-mounted weapon turrets:** |  |
+| – Particle whip | +35 points |
+| – Twin-linked heavy gauss cannon | +30 points |
+| – Twin-linked tesla destructor | +25 points |
+| **The Grand Tomb-Ziggurat may take any of the following:** |  |
+| – Up to 4 Void Shields | +25 points each |
+| – Eternity Gate Core | +25 points |
+| – Quantum Shielding | +30 points |
+
 ## Wargear
 
 Every Necron model's armour is part of its living metal body; its Armour Save is shown on its profile.
@@ -1989,7 +2030,7 @@ As Vargard Obyron's datasheet states.
 
 ### Eternity Gate Core
 
-Once per turn, one friendly Necron Infantry unit in Reserves may arrive within 6" of a Necron Tomb-Bastion with an Eternity Gate Core, placed as though by Deep Strike without scattering.
+Once per turn, one friendly Necron Infantry unit in Reserves may arrive within 6" of a Fortification with an Eternity Gate Core, placed as though by Deep Strike without scattering.
 
 ### Gravity Displacement Pack
 
@@ -2025,7 +2066,7 @@ A Necron Energy Core with a Quantum Shielding Projector has Quantum Shielding: u
 
 ### Quantum Shielding
 
-A Necron Tomb-Bastion with Quantum Shielding has Quantum Shielding: until it loses its first Hull Point, any Armour Penetration roll against it whose total is greater than its Armour Value causes a glancing hit instead.
+A Fortification with Quantum Shielding has Quantum Shielding: until it loses its first Hull Point, any Armour Penetration roll against it whose total is greater than its Armour Value causes a glancing hit instead.
 
 ### Reinforced Necrodermis Plating
 

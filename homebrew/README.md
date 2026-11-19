@@ -130,6 +130,8 @@ loading. The script prints anything in the doc it could not place.
   Warband Primary Detachment takes up to two and a Scappin' Waaagh! Primary Detachment up to one (a "Fortifications"
   row in a Detachment chart is read like the others).
 
+- A wargear pair such as "Two twin-linked burst cannons" or "Eight twin-linked shuriken cannons" of a weapon the
+  armoury lists only once links that weapon with the Twin-linked rule, shown as "Twin-linked burst cannon".
 - Vehicles, Dreadnoughts, Knights and Titans get the game system's Vehicle or Knights
   and Titans profile, and their sub-types (Fast, Flyer, Transport...) as categories.
 - Leagues of Votann take the standard Fortifications (not the Imperial ones) and their own Brôkhyr Interlocking
@@ -139,7 +141,11 @@ loading. The script prints anything in the doc it could not place.
 - Bastions (20-model, 8-Fire-Point Buildings with Open-Topped Battlements): the Imperial Bastion (game system, below),
   the Votann Kin Claim-Bastion and Necron Tomb-Bastion (new), and the reworked T'au Manta Strike Drop-Bunker,
   Asuryani Wraithbone Bastion, Drukhari Kabalite Blade-Bastion, Anhrathe Void-Bulkhead Redoubt and Ork Scrap-Bastion.
-  Void Shields are bought one at a time ("Up to 2 Void Shields", 3 for the Tomb-Bastion). The Drop-Bunker and
+  Void Shields are bought one at a time ("Up to 2 Void Shields", 3 for the Tomb-Bastion). Each has a Grand version
+  (30 models, 12 Fire Points, 8 Hull Points, battlements for 15, up to 4 Void Shields): the Grand Bastion (game
+  system), Grand Claim-Citadel, Grand Tomb-Ziggurat, Manta Command Citadel, Grand Wraithbone Citadel, Grand Kabalite
+  Terror-Spire (AV 13/13/12, hidden in Realspace Raiders, no Flesh-Crafted Carapace), Grand Void-Bulkhead Citadel and
+  Grand Ork Gargant-Fort. The Drop-Bunker and
   Blade-Bastion keep their Sept and Sub-Faction Enhancements. The Blade-Bastion is AV 13, an exception to the Drukhari
   Armour limit, and may not take the Flesh-Crafted Carapace.
 - A Barricade's turret (the Drone Gun-Turret, Crystal Weapon Platform, Splinter Rack Turret and Ironkin Sentry-Mount)
@@ -812,7 +818,7 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   same way (it runs `add_imperial_fortifications.py`'s main with the Chaos doc), each with the Chaos Fortification rule.
   Each is hidden in a Detachment holding neither the Traitor allegiance nor the Daemons of the Ruinstorm army entry.
   The Cursed Vox-Amplifier rule comes with its option. It refuses to run twice.
-- `python3 homebrew/add_imperial_bastion.py` adds the Imperial Bastion from `source/imperial-fortifications.md` to
+- `python3 homebrew/add_imperial_bastion.py` adds the Imperial Bastion and Grand Bastion (whichever it lacks) from `source/imperial-fortifications.md` to
   `2022 - Horus Heresy.gst` the same way (`add_imperial_fortifications.py`'s main with `only`), as an Imperial
   Fortification; `faction_fortifications.py` hides it with the others. It refuses to run twice.
 - `python3 homebrew/imperial_fortification_limits.py` enforces the Orbital Uplink Bunker's Orbital Strike Coordinates
