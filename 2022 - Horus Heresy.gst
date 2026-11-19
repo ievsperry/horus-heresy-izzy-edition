@@ -22943,6 +22943,33 @@ If the Toughness Test is failed, the target unit's Initiative Characteristic is 
     <rule name="Invulnerable Save (X)" id="74cf-5263-81c5-53d1" hidden="false">
       <description>The model has an Invulnerable Save of X, which may be taken against any Wound instead of its armour save.</description>
     </rule>
+    <rule id="e014-f358-d870-d53e" name="Clumsy Hydraulic Actuators" hidden="false">
+      <description>Due to its primitive gyro-stabilisers and heavy leg pistons, a model with this special rule subtracts 1" from its Run and Charge distance rolls (to a minimum of 1"), and cannot make Sweeping Advances.</description>
+    </rule>
+    <rule id="3668-00cb-3a42-6b91" name="Heavy Hydraulic Pistons" hidden="false">
+      <description>Due to its dense void-alloy chassis and industrial actuators, a model with this special rule subtracts 1" from its Run and Charge distance rolls (to a minimum of 1"), and cannot make Sweeping Advances.</description>
+    </rule>
+    <rule id="4cb2-ae91-82fd-3c54" name="Recoil-Braced Firing Stance" hidden="false">
+      <description>If a model with this special rule remained stationary during its preceding Movement phase, it may re-roll To Hit rolls of 1 with its Primary Gun Arm and Missile Pod Arm weapons during its Shooting phase.</description>
+    </rule>
+    <rule id="ae5c-6a9e-9490-d187" name="Relic (X)" hidden="false">
+      <description>If a unit with this special rule is destroyed by any means, the opposing player immediately scores a number of additional Victory Points equal to X (Relic (2) scores 2 additional Victory Points). These are scored in addition to any Victory Points normally scored for destroying the unit (such as from Price of Failure, Slay the Warlord or mission objectives). If several units with this special rule are destroyed in a battle, the opposing player scores the additional Victory Points for each of them.</description>
+    </rule>
+    <rule id="5c20-2af1-0255-6c3a" name="Siege-Breaker Chassis" hidden="false">
+      <description>A model with this special rule adds +1 to all Armour Penetration rolls made against Fortifications and Buildings in the Assault phase, and treats Dangerous Terrain tests caused by ruined buildings or barricades as automatically passed.</description>
+    </rule>
+    <rule id="ca0e-f0d1-fde8-93dc" name="Subterranean Siege-Chassis" hidden="false">
+      <description>A model with this special rule adds +1 to all Armour Penetration rolls made against Fortifications and Buildings in the Assault phase, and treats Dangerous Terrain tests caused by ruined buildings or barricades as automatically passed.</description>
+    </rule>
+    <rule id="cca2-ec4d-e970-e045" name="Unstable Arc-Reactor" hidden="false">
+      <description>Lacking the refined atomantic shielding of later marks, a model with this special rule has no innate Invulnerable Save unless upgraded with Dreadnought Extra Armour (or Void-Hardened Extra Armour). In addition, when it is reduced to 0 Wounds it automatically Explodes: do not roll a D6; inflict D6 Strength 8, AP – hits on all units within 6" before the model is removed.</description>
+    </rule>
+    <rule id="eb4d-86de-ae01-b38c" name="Unstable Darkstar-Core" hidden="false">
+      <description>Lacking a stabilised Weavefield generator, a model with this special rule has no innate Invulnerable Save unless upgraded with Void-Hardened Extra Armour. When it is reduced to 0 Wounds it automatically Explodes: do not roll a D6; inflict D6 Strength 8, AP – hits on all units within 6" before the model is removed.</description>
+    </rule>
+    <rule id="14ab-c852-a720-f5f8" name="Unstable Dual-Core Reactor" hidden="false">
+      <description>Lacking the refined atomantic shielding of later marks (or a stabilised Weavefield generator), a model with this special rule has no innate Invulnerable Save unless upgraded with Dreadnought Extra Armour (or Void-Hardened Extra Armour). In addition, when it is reduced to 0 Wounds it automatically Explodes: do not roll a D6; inflict D6 Strength 9, AP 4 hits on all units within 6" before the model is removed.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="f52c-1f37-acd2-703c" name="Tartaros Terminator Armour" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">

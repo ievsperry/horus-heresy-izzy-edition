@@ -289,6 +289,10 @@ _The mortal factions of the Imperialis Militia were often found fighting in the 
 
 A unit with this Special Rule may be chosen as part of a detachment using the Zone Mortalis Engagement Force Organisation Chart despite having more than 15 models. However, this unit cannot be expanded above its starting size.
 
+## Clumsy Hydraulic Actuators
+
+Due to its primitive gyro-stabilisers and heavy leg pistons, a model with this special rule subtracts 1" from its Run and Charge distance rolls (to a minimum of 1"), and cannot make Sweeping Advances.
+
 ## Combat Transporter
 
 _The sheer weight of the cargo this vehicle carries made it hard to properly deploy countermeasures._
@@ -672,6 +676,10 @@ When the weapon with this special rule is used to make a Shooting Attack, draw a
 • Units with any models in the beam area receive a number of Hits equal to the number of their models caught in the path of the beam; casualties are removed from affected units using the normal rules for removing casualties.
 • If a Terrain piece, Building, model with the Vehicle Unit Type or any model with 6 or more Wounds is in the beam area, the attack is blocked and its line of effect will go no further than that model. The blocking model will, however, suffer 1+D3 separate Hits, rather than just 1.
 • If a model with the Vehicle Unit Type and the Transport Sub-type suffers a Penetrating Hit from a weapon with this special rule, each unit Embarked on it suffers D6 Str 4 AP - Hits with the Deflagrate Special Rule, in addition to any other effects. Any Wounds caused are allocated by the controller of the target unit.
+
+## Heavy Hydraulic Pistons
+
+Due to its dense void-alloy chassis and industrial actuators, a model with this special rule subtracts 1" from its Run and Charge distance rolls (to a minimum of 1"), and cannot make Sweeping Advances.
 
 ## Heavy Walker
 
@@ -1072,6 +1080,10 @@ _When a little more power could mean life or death, some are willing to take the
 
 Once per game, in the controlling player's turn, a model with this special rule may overcharge its reactor. It first suffers D3 Wounds with no saves or Damage Mitigation rolls allowed. If it survives, until the start of the controlling player's next turn it adds 2" to its maximum Move and Charge distances, adds +1 Attacks and +1 Initiative, and its atomantic repulsor's Invulnerable Save becomes 5+. If it is removed as a casualty while overcharged, its atomantic repulsor's automatic hits are resolved at 6".
 
+## Recoil-Braced Firing Stance
+
+If a model with this special rule remained stationary during its preceding Movement phase, it may re-roll To Hit rolls of 1 with its Primary Gun Arm and Missile Pod Arm weapons during its Shooting phase.
+
 ## Regenerating Horror
 
 _The most devastating blows and the heaviest firepower could only inflict so much damage against such an unnatural abomination._
@@ -1085,6 +1097,10 @@ _Built to survive even the most horrendous damage, this vehicle endured where le
 When a model with this Special Rule loses its last Hull Point, but before resolving the Super-Heavy Explosion, roll a D6.
 
 On a result of 4+, the model does not explode as normal, but instead its shell is treated from this point onward as a ruined building rather than a vehicle wreck, with its two doorways counting as being open access points to the interior.
+
+## Relic (X)
+
+If a unit with this special rule is destroyed by any means, the opposing player immediately scores a number of additional Victory Points equal to X (Relic (2) scores 2 additional Victory Points). These are scored in addition to any Victory Points normally scored for destroying the unit (such as from Price of Failure, Slay the Warlord or mission objectives). If several units with this special rule are destroyed in a battle, the opposing player scores the additional Victory Points for each of them.
 
 ## Repair
 
@@ -1219,6 +1235,10 @@ _Due in large part to their small stature, Ratling marksmen were adept at avoidi
 
 Shooting Attacks made as part of a Reaction in the Shooting Phase targeting a unit composed entirely of models with this Special Rule are resolved as Snap Shots.
 
+## Siege-Breaker Chassis
+
+A model with this special rule adds +1 to all Armour Penetration rolls made against Fortifications and Buildings in the Assault phase, and treats Dangerous Terrain tests caused by ruined buildings or barricades as automatically passed.
+
 ## Silence Descends
 
 _Certain craft among the Silent Sisterhood were used not as tools of retrieval in the ordained task of recovering Psykers, but as weapons of aerial terror and supremacy to ensure the mission of those Null-Maidens on the battlefield below went uninterrupted._
@@ -1298,6 +1318,10 @@ _These lights blazed beyond that of mere illum-beacons or handheld torches, allo
 A model equipped with a weapon with this Special Rule gains the Split Fire Special Rule, and also ignores all penalties imposed by the Night Fighting rules when making Shooting Attacks. However, enemy units ignore the 24" line of sight limitation when making Shooting Attacks that target a unit including a model equipped with a weapon with this Special Rule.
 
 In addition, any unit that has received any amount of hits from a weapon with this Special Rule may be freely targeted for Shooting Attacks by any other unit in the same Shooting phase, ignoring the Ballistic Skill Penalty and 24" restriction to line of sight imposed by the Night Fighting rules.
+
+## Subterranean Siege-Chassis
+
+A model with this special rule adds +1 to all Armour Penetration rolls made against Fortifications and Buildings in the Assault phase, and treats Dangerous Terrain tests caused by ruined buildings or barricades as automatically passed.
 
 ## Sudden Strike (X)
 
@@ -1457,9 +1481,21 @@ _Awkward to bring to bear, certain weapons were best used as part of a crushing 
 
 A model may only attack with this weapon on a turn in which it makes a Charge (even if that Charge is Disordered), but does not gain a bonus attack for Charging or from any Special Rules that would normally grant additional Attacks.
 
+## Unstable Arc-Reactor
+
+Lacking the refined atomantic shielding of later marks, a model with this special rule has no innate Invulnerable Save unless upgraded with Dreadnought Extra Armour (or Void-Hardened Extra Armour). In addition, when it is reduced to 0 Wounds it automatically Explodes: do not roll a D6; inflict D6 Strength 8, AP – hits on all units within 6" before the model is removed.
+
+## Unstable Darkstar-Core
+
+Lacking a stabilised Weavefield generator, a model with this special rule has no innate Invulnerable Save unless upgraded with Void-Hardened Extra Armour. When it is reduced to 0 Wounds it automatically Explodes: do not roll a D6; inflict D6 Strength 8, AP – hits on all units within 6" before the model is removed.
+
 ## Unstable Disposition
 
 The unit automatically passes the first failed Morale or Pinning test it must take each turn.
+
+## Unstable Dual-Core Reactor
+
+Lacking the refined atomantic shielding of later marks (or a stabilised Weavefield generator), a model with this special rule has no innate Invulnerable Save unless upgraded with Dreadnought Extra Armour (or Void-Hardened Extra Armour). In addition, when it is reduced to 0 Wounds it automatically Explodes: do not roll a D6; inflict D6 Strength 9, AP 4 hits on all units within 6" before the model is removed.
 
 ## Unstable Internment
 
