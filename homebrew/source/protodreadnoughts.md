@@ -251,6 +251,163 @@ Assigned to the Wings of the Hexagrammaton and armed from the First Legion's arm
 | Molecular Acid-Cannon | 24" | 6 | 2 | Heavy 2, Blast (3"), Fleshbane, Armourbane (Ranged), Ignores Cover |
 | Terranic Greatsword-Gauntlet | Melee | +2 | 2 | Melee, Rending (5+), Murderous Strike (6+), Duellist's Edge (1) |
 
+### Emperor's Children: III Legion
+
+In an Emperor's Children detachment (Legion or Legion Hereticus), a squadron may take:
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Sonic Shrieker & Duellist Gyro-Stabilizers | +20 per model | Ignores the -1" Run and Charge penalty from Clumsy Hydraulic Actuators; +1 Initiative on a turn in which it charges; enemy units within 6" in the Assault phase suffer -1 WS (to a minimum of 1). |
+
+**Weapons.** A Gravis Bolt Cannon may be exchanged for a **Kakophoni Heavy Blaster** (+15), or a Furibundus's Twin-linked Gravis Bolt Cannon for a **Twin-linked Kakophoni Heavy Blaster** (+30).
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Kakophoni Heavy Blaster | 24" | 6 | 3 | Heavy 3, Pinning, Shell Shock (1), Rending (6+) |
+| Twin-linked Kakophoni Heavy Blaster | 24" | 6 | 3 | As the Kakophoni Heavy Blaster, and Twin-linked |
+
+### White Scars: V Legion
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Chogorian Wind-Stride Manifolds | +20 per model | +2" Movement; ignores the -1" Run and Charge penalty from Clumsy Hydraulic Actuators; Outflank and Hit & Run. |
+
+**Weapons.** A Lucifer or Furibundus may exchange a Gravis Power Fist or Siege Claw for a **Cyber-Hawk Glaive** (+15 each), with its in-built weapon.
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Cyber-Hawk Glaive | Melee | +2 | 2 | Melee, Rending (5+), Reach (1), Sudden Strike (1) |
+
+### Night Lords: VIII Legion
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Terror-Vox & Flayed Trophy-Racks | +15 per model | Fear (1) and Night Vision; +1 To Wound in close combat against a unit that is Pinned or outnumbered by friendly models. |
+
+**Weapons.** A Lucifer or Furibundus may exchange a Gravis Power Fist or Siege Claw for a **Nostraman Chainglaive-Claw** (+10 each), with its in-built weapon.
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Nostraman Chainglaive-Claw | Melee | +2 | 2 | Melee, Rending (5+), Shred, Murderous Strike (6+) |
+
+### Blood Angels: IX Legion
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Encarmine Thrust-Boosters | +20 per model | Ignores the -1" Charge penalty from Clumsy Hydraulic Actuators; Furious Charge (1); +1 Attack on a turn in which it completes a Charge. |
+
+**Weapons.** The doc's Iliastus-Pattern Assault Cannon is the official **Iliastus Assault Cannon** (profile under the Imperial Fists): for a Gravis Bolt Cannon (+10), or the **Twin-linked Iliastus Assault Cannon** for a Furibundus's Twin-linked Gravis Bolt Cannon (+20), as the Imperial Fists take them.
+
+### Ultramarines: XIII Legion
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Macragge Tactical Interlink | +15 per model | Re-roll To Hit rolls of 1 against a unit another friendly Ultramarines unit has already shot at this Shooting phase; Counter-Attack (1). |
+
+**Weapons.** A Lucifer may exchange a Gravis Power Fist for a **Legatine Power Gladius-Fist** (+10 each), with its in-built weapon.
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Legatine Power Gladius-Fist | Melee | +3 | 2 | Melee, Master-crafted, Duellist's Edge (1), Brutal (2) |
+
+### Thousand Sons: XV Legion
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Aether-Conductive Arcane Plating | +20 per model | Adamantium Will (5+) and a 5+ Invulnerable Save against shooting; friendly Thousand Sons Psykers within 6" may draw line of sight and measure range for Psychic Powers from it. |
+
+**Weapons.** A Gravis Bolt Cannon may be exchanged for the official **Asphyx Bolt Cannon** (+10), or a Furibundus's Twin-linked Gravis Bolt Cannon for a **Twin-linked Asphyx Bolt Cannon** (+20).
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Asphyx Bolt Cannon (the official one) | 24" | 6 | 4 | Heavy 4, Shred |
+| Twin-linked Asphyx Bolt Cannon | 24" | 6 | 4 | Heavy 4, Shred, Twin-linked |
+
+### Sons of Horus: XVI Legion
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Cthonian Reaver-Assault Pistons | +20 per model | Ignores the -1" Charge penalty from Clumsy Hydraulic Actuators; Preferred Enemy (Infantry) on a turn in which it charges; may re-roll failed Morale tests. |
+
+**Weapons.** A Gravis Bolt Cannon may be exchanged for the official **Banestrike Bolt Cannon** (+10), or a Furibundus's Twin-linked Gravis Bolt Cannon for a **Twin-linked Banestrike Bolt Cannon** (+20).
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Banestrike Bolt Cannon (the official one) | 24" | 6 | 4 | Heavy 4, Breaching (6+) |
+| Twin-linked Banestrike Bolt Cannon | 24" | 6 | 4 | Heavy 4, Breaching (6+), Twin-linked |
+
+### Word Bearers: XVII Legion
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Colchisian Warp-Tainted Core (Traitor only) | +20 per model | The Corrupted sub-type, Fear (1), and Feel No Pain (6+) (5+ within 12" of a friendly Chaplain, Diabolist or Esoterist). |
+
+**Weapons.** A Unification's Gravis Plasma Cannon may be exchanged for a **Warpfire Plasma Cannon** (+10).
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Warpfire Plasma Cannon | 36" | 7 | 2 | Heavy 1, Blast (3"), Gets Hot, Breaching (4+), Soulblaze |
+
+### Raven Guard: XIX Legion
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Deliverance Whisper-Baffles | +20 per model | Infiltrate (Lucifer-Pattern) or Scout (Furibundus and Unification), Move Through Cover, and Shrouded (6+) against shooting from more than 18" away. |
+
+**Weapons.** A Lucifer may exchange both its arms for **Ravenspire Heavy Talons** (+15 per model); taken, its arm picks are gone.
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Ravenspire Heavy Talons | Melee | +2 | 2 | Melee, Two-handed, Rending (5+), Shred, Sudden Strike (1) |
+
+### Alpha Legion: XX Legion
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Harrowing Ghost-Matrix | +20 per model | Enemy units firing at it treat the range as 6" further; Scout and Counter-Attack (1). |
+
+**Weapons.** The official **Banestrike Bolt Cannon** and **Twin-linked Banestrike Bolt Cannon**, as the Sons of Horus take them.
+
+### Blackshields (Unaligned and Shattered Legions)
+
+In a Blackshields or Shattered Legions detachment:
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Scavenged Patchwork Plate | +15 per model | It Will Not Die (5+) and Hatred (Everything) in close combat. |
+
+**Weapons.** A Lucifer or Furibundus may exchange a Gravis Power Fist or Siege Claw for a **Salvaged Heavy Chain-Cleaver** (+10 each), with its in-built weapon.
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Salvaged Heavy Chain-Cleaver | Melee | +2 | 2 | Melee, Shred, Unwieldy |
+
+### Imperialis Militia (Provenances of War)
+
+In an Imperialis Militia detachment, a squadron may take one of (each Provenance upgrade only with that Provenance of War):
+
+| Provenance | Upgrade | Cost | Effect |
+| --- | --- | --- | --- |
+| Any | Agri-World / Industrial Over-Clock | +10 per model | Once per game, in one friendly Movement or Assault phase, +2" to its Movement or Charge roll; at the end of that phase it suffers 1 unsaved Wound on a D6 roll of 1. |
+| Legacy of the Great Crusade | Expeditionary Veteran Telemetry | +15 per model | Leadership 9; may re-roll failed Morale and Pinning tests; re-roll To Hit rolls of 1 against a unit within 12" of a friendly Militia Force Commander or Discipline Master. |
+| Industrial Stronghold | Sub-Surface Foundry Plating | +15 per model | It Will Not Die (5+); incoming Blast and Template attacks are -1 Strength (to a minimum of 1); automatically passes Dangerous Terrain tests. |
+| Survivors of the Dark Age | Ancestral Pattern Stabilizers | +20 per model | Ignores the -1" Run and Charge penalty from Clumsy Hydraulic Actuators; a 6+ Invulnerable Save against shooting (5+ with Dreadnought Extra Armour). |
+| Armoury of Old Night | Forbidden Archaeo-Reactor | +20 per model | Plasma, Volkite, Conversion and Graviton weapons gain +1 Strength (to a maximum of 9) and Shred; a natural To Hit roll of 1 inflicts 1 automatic Wound on it (Invulnerable Saves allowed). |
+| Arms of the Omnissiah | Tech-Priest Servo-Interface | +15 per model | BS 5 against Vehicles, Dreadnoughts, Armigers and Automata; friendly Battlesmith (X) models within 3" add +1 to their Battlesmith rolls on it (to a maximum of 2+). |
+
+**Provenance weapon swaps.**
+
+- Armoury of Old Night: any in-built Combi-bolter or Twin-linked Bolter may be exchanged for a **Rad-Furnace Projector** (+10 each).
+- Arms of the Omnissiah: a Lucifer's or Unification's Gravis Bolt Cannon may be exchanged for the official **Mauler Bolt Cannon** (+5), as a Mechanicum one is.
+- Industrial Stronghold: a Gravis Lascannon or Gravis Melta Cannon may be exchanged for the Militia's own **Heavy Mining Laser** (+10), or a Furibundus's Twin-linked Gravis Lascannon for a **Twin-linked Heavy Mining Laser** (+20).
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Rad-Furnace Projector | Template | 3 | 4 | Assault 1, Fleshbane, Rad-Phage, Torrent (6") |
+| Mauler Bolt Cannon (the official one) | 24" | 6 | 4 | Heavy 4, Pinning |
+| Heavy Mining Laser (the official Militia one) | 24" | 9 | 1 | Heavy 1, Exoshock (6+) |
+| Twin-linked Heavy Mining Laser | 24" | 9 | 1 | Heavy 1, Exoshock (6+), Twin-linked |
+
 ## Leagues of Votann Protodreadnought Equivalents
 
 ### Ironkin Ancestor-Rig (Elites) — 125 pts
@@ -325,4 +482,6 @@ The Twin-linked Magna-Rail Cannon, Heavy SP Conversion Beamer (SP heavy conversi
 - Legion swaps are priced from the weapon they replace, as the Mechanicum ones are: a Lucifer's Graviton Shredder-Cannon is +20 from the fist (Gravis Bolt Cannon +5, then +15), its Obsidian Thermal-Lance and Helfrost Cannon +30 (from the Gravis Melta Cannon, +15), its Iliastus Assault Cannon +15, its Molecular Acid-Cannon +35; a Furibundus's Obsidian Thermal-Lance +40 (from the Cyclonic Melta Lance, +25), Twin-linked Iliastus +30, Molecular Acid-Cannon +40 (from the Heavy Conversion Beamer, +20); a Unification's are priced from each arm's own weapon.
 - The Furibundus, whose guns are Twin-linked, takes Twin-linked versions: the Twin-linked Graviton Shredder-Cannon for its Twin-linked Gravis Bolt Cannon or Autocannon, and the Twin-linked Helfrost Cannon for its Cyclonic Melta Lance (it has no Gravis Melta or Plasma Cannon). A twin-linked swap costs twice the single one, as the Twin-linked Iliastus Assault Cannon does: +40 and +55 from the Siege Claw.
 - The Hexagrammaton Sub-type is a pick of its own on the squadron, required in a Dark Angels detachment; the wing-only upgrades and weapons show once the squadron has the matching wing.
+- The doc's Asphyx Bolt-Cannon (36" S5 AP4 Heavy 4, Twin-Linked, Shred), Banestrike Bolt Cannon (24" S5 AP4 Heavy 4, Twin-Linked, Breaching (6+)), Iliastus-Pattern Assault Cannon, Mauler Bolt Cannon (36" S6 AP3) and Heavy Mining Laser (AP2, Armourbane (Ranged), Sunder) are the official weapons, with their official profiles (shown above). The Furibundus takes Twin-linked versions of the official bolt cannons and Heavy Mining Laser at twice the swap cost, as with the earlier Legions. The Warpfire Plasma Cannon is new: its plasma profile does not match the official Warpfire Cannon (36" S6 AP4 Heavy 1, Blast (3"), Breaching (4+), Pinning).
+- A squadron takes at most one upgrade from its Legion's (or the Militia's) list, as with the earlier Legions; the Militia's Over-Clock shares that pick with the Provenance upgrades.
 - Wherever an official weapon exists, the data uses it: the Siege Claw and Siege Drill are the Leviathan Siege Claw and Siege Drill, the Cyclone Missile System is the Cyclone Missile Launcher (with its Flak missile), the Furibundus's Twin-linked Gravis Bolt Cannon and Autocannon are the official Gravis Bolt Cannon and Autocannon (Twin-linked already), the Carapace Phosphex Discharger is the Phosphex Discharger, and the Shrapnel Cannon, Twin-Linked Shrapnel Cannon, Dragon's Breath Heavy Flamer, Iliastus Assault Cannons and Plasma Repeater are the official ones, with their official profiles (shown above). The Mech Library cannot link the Legiones Astartes library, so the weapons only that library has are exact copies (their rules with them; not the Hammer of Olympia reroll, which belongs to that Rite of War). Weapons with no official counterpart keep the profiles given here.

@@ -970,10 +970,12 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Library: the Lucifer-Pattern (Elites, up to three), Furibundus-Pattern and Unification-Pattern (Heavy Support, up
   to two) Protodreadnoughts, with a root entry in every Legion catalogue (with Legiones Astartes (X)), Blackshields,
   Shattered Legions, Mechanicum, Questoris Household and Imperialis Militia. Each arm is one pick; a close combat arm
-  carries its in-built weapon, which has a pick of its own, so an arm exchanged for a gun has none. The World Eaters,
-  Iron Warriors, Iron Hands, Salamanders, Death Guard, Imperial Fists, Space Wolves and Dark Angels upgrades and
-  weapons show only in those Legions' forces (a Dark Angels squadron must pick a Hexagrammaton wing, which unlocks its
-  wing-only options), the Mechanicum weapon swaps and High Techno-Arcana upgrades only in a Mechanicum force (each
+  carries its in-built weapon, which has a pick of its own, so an arm exchanged for a gun has none. Each Legion's
+  upgrades and weapons show only in that Legion's forces (a Dark Angels squadron must pick a Hexagrammaton wing, which
+  unlocks its wing-only options; the Word Bearers' Colchisian Warp-Tainted Core only in a Traitor force; the Raven
+  Guard's Ravenspire Heavy Talons take both of a Lucifer's arms), the Blackshields' in Blackshields and Shattered
+  Legions forces, the Imperialis Militia's in a Militia force (each Provenance upgrade and weapon swap only with its
+  Provenance of War; Arms of the Omnissiah unlocks the Mauler Bolt Cannon), the Mechanicum weapon swaps and High Techno-Arcana upgrades only in a Mechanicum force (each
   upgrade only with its Order of High Techno-arcana; the Infernal Warp-Capacitor for a Traitor force with the Reductor
   Order or a Proscribed Order), and the Questoris Household Bondsman-Rig in a Mechanicum or Questoris Household force,
   where taking it moves the squadron to Troops with the Line Sub-type. Squadron-wide upgrades are one pick for the

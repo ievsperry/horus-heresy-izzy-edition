@@ -54,6 +54,14 @@ IMPERIAL_FISTS, SPACE_WOLVES, DARK_ANGELS = "a0e1-f2c4-8bcd-0723", "4916-965e-83
 WINGS = ["Deathwing", "Dreadwing", "Ironwing", "Ravenwing", "Firewing", "Stormwing"]
 MECHANICUM, QUESTORIS = "ddf5-d792-3146-6e9a", "807e-0cf8-7f28-7b6d"
 TRAITOR = "f9c0-0c5a-3e24-58c7"
+EMPERORS_CHILDREN = ["3edc-a1b9-6dc6-b1ea", "268b-74a8-395f-6f27"]   # the Legion, and as Legion Hereticus
+WHITE_SCARS, NIGHT_LORDS, BLOOD_ANGELS = "e01e-5cdd-e512-8353", "b28b-71f7-e4f4-8f9c", "296e-301e-3ce1-1c15"
+ULTRAMARINES, THOUSAND_SONS, SONS_OF_HORUS = "8e0f-3552-8842-f281", "21c3-2f28-7820-e51a", "01b4-57c7-bf61-2abf"
+WORD_BEARERS, RAVEN_GUARD, ALPHA_LEGION = "9dbf-0760-d7ae-f125", "dc34-fe08-dd44-fb99", "c0df-c1fa-5ddc-9ee5"
+BLACKSHIELDS, SHATTERED_LEGIONS = "ae4a-f95c-968e-eb46", "9950-2cd2-fd88-9bb1"
+MILITIA = "5522-4fd9-12d5-460afds"
+PROVENANCES = {"legacy": "b669-a356-d5d1-53b8", "industrial": "db1f-6157-2c58-5ae5", "survivors": "08f1-5fe7-1d3a-7b35",
+               "armoury": "4bcd-7022-cefc-04da", "omnissiah": "b4f0-1668-4106-7bd1"}   # the Provenances of War
 ORDERS = {"Cybernetica": "9bcd-f556-5740-2f9f", "Lacrymaerta": "bd4b-63fa-928c-887d", "Macrotek": "1247-a94b-070d-2a7b",
           "Malagra": "5e62-8d7e-a487-0490", "Myrmidax": "8305-5ac6-f395-e570", "Reductor": "73dc-f5bb-be45-2547"}
 PROSCRIBED = ["e033-44c5-e827-20ff", "d929-7702-8f4b-3393", "de6f-55bd-6647-586a"]  # Malefikite, Nekrotek, Malamina
@@ -70,6 +78,13 @@ SHOW.update({"ih": [[IRON_HANDS]], "sal": [[SALAMANDERS]], "dg": [[DEATH_GUARD]]
 # a Dark Angels option for one Hexagrammaton wing: the squadron must have taken that wing (("unit", id) is a selection
 # in this unit, not the force)
 SHOW.update({f"da {w.lower()}": [[DARK_ANGELS, ("unit", None, w)]] for w in WINGS})
+SHOW.update({"ec": [[e] for e in EMPERORS_CHILDREN], "ws": [[WHITE_SCARS]], "nl": [[NIGHT_LORDS]],
+             "um": [[ULTRAMARINES]], "ts": [[THOUSAND_SONS]], "wb": [[WORD_BEARERS]],
+             "wb traitor": [[WORD_BEARERS, TRAITOR]], "rg": [[RAVEN_GUARD]], "ba": [[BLOOD_ANGELS]],
+             "if or ba": [[IMPERIAL_FISTS], [BLOOD_ANGELS]], "soh": [[SONS_OF_HORUS]], "al": [[ALPHA_LEGION]],
+             "soh or al": [[SONS_OF_HORUS], [ALPHA_LEGION]], "bs": [[BLACKSHIELDS], [SHATTERED_LEGIONS]],
+             "militia": [[MILITIA]], "mech or omnissiah": [[MECHANICUM], [MILITIA, PROVENANCES["omnissiah"]]]})
+SHOW.update({f"prov {k}": [[MILITIA, v]] for k, v in PROVENANCES.items()})
 SHOW.update({f"order {k}": [[v]] for k, v in ORDERS.items()})
 SHOW.update({f"league {k}": [[v]] for k, v in LEAGUES.items()})
 
@@ -174,7 +189,10 @@ LA_LIBRARY = "2022 - Legiones Astartes.cat"
 OFFICIAL_COPIES = {"Leviathan Siege Claw": "4838-a0ca-93d8-f6b2", "Leviathan Siege Drill": "d266-0d1e-b8e5-1e90",
                    "Shrapnel Cannon": "975e-14eb-caed-4b5b", "Twin-Linked Shrapnel Cannon": "f3c2-ec0b-748b-4b86",
                    "Dragon's Breath Heavy Flamer": "1a5c-0c5f-d798-a067", "Iliastus Assault Cannon": "10aa-3c70-2bbe-9509",
-                   "Twin-linked Iliastus Assault Cannon": "6575-5c45-c419-9b47", "Plasma Repeater": "7aa4-cb4e-0e15-6213"}
+                   "Twin-linked Iliastus Assault Cannon": "6575-5c45-c419-9b47", "Plasma Repeater": "7aa4-cb4e-0e15-6213",
+                   "Asphyx Bolt Cannon": "ebce-ebc9-8ff7-d42d", "Banestrike Bolt Cannon": "3bfb-69ae-691e-645c",
+                   # the Imperialis Militia's own, which the Mech Library does not import either
+                   "Heavy Mining Laser": ("2022 - Imperialis Militia.cat", "8d8f-0ec2-a041-bcac")}
 DROP_RULES = {"7ca5-9127-867f-0a57"}           # the Hammer of Olympia Rite of War's reroll: not the weapon's own rule
 
 
@@ -182,13 +200,14 @@ def official_copy(ctx, name):
     """The Legiones Astartes library's weapon, copied into this library: its profiles, and its special rules (a
     rule the game system does not have goes with it, written into the copy); none of its Legion or Rite of War
     modifiers (the Protodreadnoughts' options say who may take it)."""
-    root = ET.parse(LA_LIBRARY).getroot()
+    source, sid = OFFICIAL_COPIES[name] if isinstance(OFFICIAL_COPIES[name], tuple) else (LA_LIBRARY, OFFICIAL_COPIES[name])
+    root = ET.parse(source).getroot()
     rules = {r.get("id"): r for r in root.iter(f"{NS}rule")}
-    src = next(e for e in root.find(f"{NS}sharedSelectionEntries") if e.get("id") == OFFICIAL_COPIES[name])
+    src = next(e for e in root.iter(f"{NS}selectionEntry") if e.get("id") == sid)
     raw = ET.tostring(src, encoding="unicode").replace(NS, "").replace('xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema"', "")
     raw = re.sub(r"ns0:", "", raw)
     e = ET.fromstring(raw)
-    for tag in ("modifiers", "categoryLinks"):
+    for tag in ("modifiers", "categoryLinks", "constraints"):
         for c in e.findall(tag):
             e.remove(c)
     gst_rules = set(index([GST])[1].values())
@@ -206,13 +225,13 @@ def official_copy(ctx, name):
     if inline:
         rs = child(e, "rules")
         for rname, text in inline:
-            r = el(rs, "rule", id=mid("official copy", OFFICIAL_COPIES[name], rname), name=rname, hidden=False)
+            r = el(rs, "rule", id=mid("official copy", sid, rname), name=rname, hidden=False)
             el(r, "description").text = text
     for x in e.iter():
         for a in ("publicationId", "page"):
             x.attrib.pop(a, None)
         if x.get("id"):
-            x.set("id", mid("official copy", OFFICIAL_COPIES[name], x.get("id")))
+            x.set("id", mid("official copy", sid, x.get("id")))
     ctx.new.append(e)
     ctx.entries[norm(name)] = e.get("id")
     return e
@@ -350,6 +369,16 @@ def unit_entry(ctx, spec):
         link(m, ctx, w, key + ("model",), mn=1, mx=1)
     for gname, opts in spec["arms"]:
         pick(m, ctx, gname, opts, key + (gname,))
+    for name, cost, who in spec.get("model_options", []):
+        # a weapon for both arms (the Raven Guard's Ravenspire Heavy Talons): taken, the arm picks are gone
+        l = link(m, ctx, name, key + ("model option",), cost=cost, mx=1, who=who)
+        for gname, _ in spec["arms"]:
+            g = next(x for x in m.find("selectionEntryGroups") if x.get("id") == mid(*key, gname))
+            for field, value in (("hidden", "true"), (mid(*key, gname, "min"), 0), (mid(*key, gname, "max"), 0)):
+                mod = el(child(g, "modifiers"), "modifier", type="set", field=field, value=value)
+                el(el(mod, "conditions"), "condition", type="atLeast", value=1, field="selections", scope=m.get("id"),
+                   childId=l.get("id"), shared=True, includeChildSelections=True, includeChildForces=False,
+                   percentValue=False)
     for gname, opts, most in spec["carapace"]:
         g = group(m, gname, key + (gname,), 0, most)
         for name, cost, who in opts:
@@ -385,7 +414,7 @@ INBUILT_IMPERIAL = [("Heavy Flamer", 5, "Heavy Flamer"), ("Plasma Blaster", 10, 
 
 
 LEGION_INBUILT = [("Dragon's Breath Heavy Flamer", 10, "sal"), ("Heavy Alchem-Sprayer", 10, "dg"),
-                  ("Plasma Caster", 10, "da")]          # a Twin-linked Bolter's Dark Angels swap: the Plasma Repeater
+                  ("Plasma Caster", 10, "da"), ("Rad-Furnace Projector", 10, "prov armoury")]          # a Twin-linked Bolter's Dark Angels swap: the Plasma Repeater
 
 
 def inbuilt(default, items, mech=False, legions=True):
@@ -436,6 +465,24 @@ def imperial_weapons(ctx):
                                                                   "Ignores Cover")])
     weapon(ctx, "Terranic Greatsword-Gauntlet", [(None, "-", "+2", "2", "Melee, Rending (5+), Murderous Strike (6+), "
                                                                         "Duellist's Edge (1)")])
+    # the remaining Legions', the Blackshields' and the Imperialis Militia's
+    weapon(ctx, "Kakophoni Heavy Blaster", [(None, '24"', "6", "3", "Heavy 3, Pinning, Shell Shock (1), Rending (6+)")])
+    weapon(ctx, "Twin-linked Kakophoni Heavy Blaster", [(None, '24"', "6", "3", "Heavy 3, Pinning, Shell Shock (1), "
+                                                                             "Rending (6+), Twin-linked")])
+    weapon(ctx, "Cyber-Hawk Glaive", [(None, "-", "+2", "2", "Melee, Rending (5+), Reach (1), Sudden Strike (1)")])
+    weapon(ctx, "Nostraman Chainglaive-Claw", [(None, "-", "+2", "2", "Melee, Rending (5+), Shred, Murderous Strike (6+)")])
+    weapon(ctx, "Legatine Power Gladius-Fist", [(None, "-", "+3", "2", "Melee, Master-crafted, Duellist's Edge (1), "
+                                                                       "Brutal (2)")])
+    # the official Asphyx and Banestrike Bolt Cannons, twin-linked for the Furibundus's twin-linked bolt cannon arms
+    weapon(ctx, "Twin-linked Asphyx Bolt Cannon", [(None, '24"', "6", "4", "Heavy 4, Shred, Twin-linked")])
+    weapon(ctx, "Twin-linked Banestrike Bolt Cannon", [(None, '24"', "6", "4", "Heavy 4, Breaching (6+), Twin-linked")])
+    weapon(ctx, "Warpfire Plasma Cannon", [(None, '36"', "7", "2", 'Heavy 1, Blast (3"), Gets Hot, Breaching (4+), '
+                                                                  "Soulblaze")])
+    weapon(ctx, "Ravenspire Heavy Talons", [(None, "-", "+2", "2", "Melee, Two-handed, Rending (5+), Shred, "
+                                                                   "Sudden Strike (1)")])
+    weapon(ctx, "Salvaged Heavy Chain-Cleaver", [(None, "-", "+2", "2", "Melee, Shred, Unwieldy")])
+    weapon(ctx, "Rad-Furnace Projector", [(None, "Template", "3", "4", 'Assault 1, Fleshbane, Rad-Phage, Torrent (6")')])
+    weapon(ctx, "Twin-linked Heavy Mining Laser", [(None, '24"', "9", "1", "Heavy 1, Exoshock (6+), Twin-linked")])
     wargear(ctx, "Dreadnought Extra Armour", EXTRA_ARMOUR)
     wargear(ctx, "Protodreadnought Helical Targeting Array", TARGETING, ["Skyfire", "Interceptor"])
 
@@ -457,7 +504,7 @@ def lucifer_arm():
             ("Siege Drill with in-built Heavy Flamer", 15, ["Leviathan Siege Drill", "Heavy Flamer"], None, None),
             # Mechanicum: a Mauler Bolt Cannon for the bolt cannon or autocannon (+5), a Kheres or Darkfire for the
             # lascannon (+15, +20)
-            ("Mauler Bolt Cannon", 10, ["Mauler Bolt Cannon"], None, "mech"),
+            ("Mauler Bolt Cannon", 10, ["Mauler Bolt Cannon"], None, "mech or omnissiah"),
             ("Kheres Assault Cannon", 30, ["Kheres Assault Cannon"], None, "mech"),
             ("Darkfire Cannon", 35, ["Darkfire Cannon"], None, "mech"),
             ("Excoriator Chain-Cleaver", 15, ["Excoriator Chain-Cleaver"], inbuilt("Combi-bolter", INBUILT_IMPERIAL),
@@ -504,15 +551,27 @@ def unification_arm(base):
                  "Volkite Dual-Culverin", "Gravis Lascannon"]
     out = [(n, costs[n], [n], None, None) for n in order]
     bolt, las = costs["Gravis Bolt Cannon"], costs["Gravis Lascannon"]
-    return out + [("Mauler Bolt Cannon", bolt + 5, ["Mauler Bolt Cannon"], None, "mech"),
+    return out + [("Mauler Bolt Cannon", bolt + 5, ["Mauler Bolt Cannon"], None, "mech or omnissiah"),
                   ("Kheres Assault Cannon", las + 15, ["Kheres Assault Cannon"], None, "mech"),
                   ("Darkfire Cannon", las + 20, ["Darkfire Cannon"], None, "mech"),
                   ("Shrapnel Cannon", bolt, ["Shrapnel Cannon"], None, "iw"),
                   # Iron Hands: a Graviton Shredder-Cannon for the bolt cannon (+15); Imperial Fists: an Iliastus
                   # Assault Cannon for it (+10); Space Wolves: a Helfrost Cannon for the plasma cannon (+15)
                   ("Graviton Shredder-Cannon", bolt + 15, ["Graviton Shredder-Cannon"], None, "ih"),
-                  ("Iliastus Assault Cannon", bolt + 10, ["Iliastus Assault Cannon"], None, "if"),
-                  ("Helfrost Cannon", costs["Gravis Plasma Cannon"] + 15, ["Helfrost Cannon"], None, "sw")]
+                  ("Iliastus Assault Cannon", bolt + 10, ["Iliastus Assault Cannon"], None, "if or ba"),
+                  ("Helfrost Cannon", costs["Gravis Plasma Cannon"] + 15, ["Helfrost Cannon"], None, "sw"),
+                  # Emperor's Children, Thousand Sons, Sons of Horus and Alpha Legion: for the bolt cannon; Word
+                  # Bearers: for the plasma cannon; Industrial Stronghold Militia: for the lascannon
+                  ("Kakophoni Heavy Blaster", bolt + 15, ["Kakophoni Heavy Blaster"], None, "ec"),
+                  ("Asphyx Bolt Cannon", bolt + 10, ["Asphyx Bolt Cannon"], None, "ts"),
+                  ("Banestrike Bolt Cannon", bolt + 10, ["Banestrike Bolt Cannon"], None, "soh or al"),
+                  ("Warpfire Plasma Cannon", costs["Gravis Plasma Cannon"] + 10, ["Warpfire Plasma Cannon"], None, "wb"),
+                  ("Heavy Mining Laser", las + 10, ["Heavy Mining Laser"], None, "prov industrial")]
+
+
+# the fist or claw swaps of the White Scars, Night Lords and Blackshields (the Ultramarines' replaces a fist only)
+SHARED_MELEE = [("Cyber-Hawk Glaive", 15, "ws"), ("Nostraman Chainglaive-Claw", 10, "nl"),
+                ("Salvaged Heavy Chain-Cleaver", 10, "bs")]
 
 
 def legion_arms(pattern):
@@ -521,20 +580,27 @@ def legion_arms(pattern):
     +10, its Cyclonic Melta Lance +25 and its Heavy Conversion Beamer +20."""
     if pattern == "lucifer":
         cb, melee = "Combi-bolter", [("Cyber-Augmetic Siege Wrench", 10, "ih"), ("Solarite Siege-Fist", 15, "if"),
-                                     ("Great Frost-Cleaver", 15, "sw"), ("Terranic Greatsword-Gauntlet", 10, "da deathwing")]
+                                     ("Great Frost-Cleaver", 15, "sw"), ("Terranic Greatsword-Gauntlet", 10, "da deathwing"),
+                                     ("Legatine Power Gladius-Fist", 10, "um")] + SHARED_MELEE
         guns = [("Graviton Shredder-Cannon", 5 + 15, "ih"), ("Obsidian Thermal-Lance", 15 + 15, "sal"),
-                ("Iliastus Assault Cannon", 5 + 10, "if"), ("Helfrost Cannon", 15 + 15, "sw"),
-                ("Molecular Acid-Cannon", 15 + 20, "da dreadwing")]
+                ("Iliastus Assault Cannon", 5 + 10, "if or ba"), ("Helfrost Cannon", 15 + 15, "sw"),
+                ("Molecular Acid-Cannon", 15 + 20, "da dreadwing"),
+                ("Kakophoni Heavy Blaster", 5 + 15, "ec"), ("Asphyx Bolt Cannon", 5 + 10, "ts"),
+                ("Banestrike Bolt Cannon", 5 + 10, "soh or al"),
+                ("Heavy Mining Laser", 15 + 10, "prov industrial")]       # for the lascannon or melta cannon
     else:
         cb, melee = "Twin-linked Bolter", [("Cyber-Augmetic Siege Wrench", 10, "ih"), ("Solarite Siege-Fist", 15, "if"),
                                            ("Great Frost-Cleaver", 15, "sw"),
-                                           ("Terranic Greatsword-Gauntlet", 10, "da deathwing")]
+                                           ("Terranic Greatsword-Gauntlet", 10, "da deathwing")] + SHARED_MELEE
         # twin-linked swaps cost twice the single one (as the Twin-linked Iliastus Assault Cannon does): the
         # Twin-linked Graviton Shredder-Cannon for the Twin-linked Gravis Bolt Cannon (+30), the Twin-linked Helfrost
         # Cannon for the Cyclonic Melta Lance (+30)
-        guns = [("Obsidian Thermal-Lance", 25 + 15, "sal"), ("Twin-linked Iliastus Assault Cannon", 10 + 20, "if"),
+        guns = [("Obsidian Thermal-Lance", 25 + 15, "sal"), ("Twin-linked Iliastus Assault Cannon", 10 + 20, "if or ba"),
                 ("Molecular Acid-Cannon", 20 + 20, "da dreadwing"),
-                ("Twin-linked Graviton Shredder-Cannon", 10 + 30, "ih"), ("Twin-linked Helfrost Cannon", 25 + 30, "sw")]
+                ("Twin-linked Graviton Shredder-Cannon", 10 + 30, "ih"), ("Twin-linked Helfrost Cannon", 25 + 30, "sw"),
+                ("Twin-linked Kakophoni Heavy Blaster", 10 + 30, "ec"), ("Twin-linked Asphyx Bolt Cannon", 10 + 20, "ts"),
+                ("Twin-linked Banestrike Bolt Cannon", 10 + 20, "soh or al"),
+                ("Twin-linked Heavy Mining Laser", 25 + 20, "prov industrial")]   # for the Twin-linked Gravis Lascannon
     return ([(n, c, [n], inbuilt(cb, INBUILT_IMPERIAL), who) for n, c, who in melee] +
             [(n, c, [n], None, who) for n, c, who in guns])
 
@@ -677,6 +743,78 @@ DARK_ANGELS_UPGRADES = [
      "relic plating, this model gains Fearless, Hatred (Everything) in close combat, and adds +1 to its Weapon Skill "
      "when fighting Characters or Dreadnoughts / Armigers.", "da deathwing", ["Fearless", "Hatred (X)"]),
 ]
+EMPERORS_CHILDREN_UPGRADES = [
+    ("Sonic Shrieker & Duellist Gyro-Stabilizers", 20, "Refined harmonic actuators eliminate the walker's "
+     "sluggishness. The model ignores the -1\" penalty to Run and Charge rolls from Clumsy Hydraulic Actuators, gains +1 "
+     "Initiative on a turn in which it charges, and forces enemy units within 6\" in the Assault phase to suffer a -1 "
+     "penalty to their Weapon Skill (to a minimum of 1).", None, [])]
+WHITE_SCARS_UPGRADES = [
+    ("Chogorian Wind-Stride Manifolds", 20, "Stripped of excess dead-weight plating and tuned for rapid flanking "
+     "strikes, the model adds +2\" to its Movement characteristic, ignores the -1\" penalty to Run and Charge rolls from "
+     "Clumsy Hydraulic Actuators, and gains Outflank and Hit & Run.", None, ["Outflank", "Hit & Run"])]
+NIGHT_LORDS_UPGRADES = [
+    ("Terror-Vox & Flayed Trophy-Racks", 15, "Broadcasts deafening psycho-acoustic screams across the battlefield. The "
+     "model gains Fear (1) and Night Vision, and adds +1 to To Wound rolls in close combat against any enemy unit that "
+     "is Pinned or outnumbered by friendly models.", None, ["Fear (X)", "Night Vision"])]
+BLOOD_ANGELS_UPGRADES = [
+    ("Encarmine Thrust-Boosters", 20, "Auxiliary jump-stabilizer vents propel the walker forward during assaults. The "
+     "model ignores the -1\" penalty to Charge distance rolls from Clumsy Hydraulic Actuators, gains Furious Charge (1), "
+     "and adds +1 Attack on any turn in which it completes a Charge.", None, ["Furious Charge (X)"])]
+ULTRAMARINES_UPGRADES = [
+    ("Macragge Tactical Interlink", 15, "Slaved directly to the Legion's unified command grid, this model may re-roll "
+     "To Hit rolls of 1 when targeting an enemy unit that has already been shot at by another friendly Ultramarines "
+     "unit in the same Shooting phase, and gains Counter-Attack (1).", None, ["Counter-Attack (X)"])]
+THOUSAND_SONS_UPGRADES = [
+    ("Aether-Conductive Arcane Plating", 20, "Inscribed with Prosperine wards and psycho-reactive silver, the model "
+     "gains Adamantium Will (5+) and a 5+ Invulnerable Save against shooting attacks. In addition, friendly Thousand "
+     "Sons Psykers within 6\" may draw line of sight and measure range for Psychic Powers from this model.", None, [])]
+SONS_OF_HORUS_UPGRADES = [
+    ("Cthonian Reaver-Assault Pistons", 20, "Tuned for ruthless close-range spearhead decapitation strikes. The model "
+     "ignores the -1\" penalty to Charge distance rolls from Clumsy Hydraulic Actuators, gains Preferred Enemy "
+     "(Infantry) on any turn in which it charges, and may re-roll failed Morale tests.", None, ["Preferred Enemy (X)"])]
+WORD_BEARERS_UPGRADES = [
+    ("Colchisian Warp-Tainted Core", 20, "Traitor only. Empowered by dark pacts carved into the reactor housing, the "
+     "model gains the Corrupted unit sub-type, Fear (1), and Feel No Pain (6+) (improving to 5+ if within 12\" of a "
+     "friendly Chaplain, Diabolist, or Esoterist).", "wb traitor", ["Fear (X)", "Feel No Pain (X)"])]
+RAVEN_GUARD_UPGRADES = [
+    ("Deliverance Whisper-Baffles", 20, "Acoustic dampeners and infra-red baffling shroud the walker's heavy frame. The "
+     "model gains Infiltrate (for Lucifer-Pattern only) or Scout (for Furibundus and Unification patterns), Move "
+     "Through Cover, and Shrouded (6+) against shooting attacks made from more than 18\" away.", None,
+     ["Infiltrate", "Scout", "Move Through Cover", "Shrouded (X)"])]
+ALPHA_LEGION_UPGRADES = [
+    ("Harrowing Ghost-Matrix", 20, "Spoofs enemy auspexes with false telemetry signatures. Enemy units firing at this "
+     "model treat the range as +6\" further away than actual distance, and this model gains Scout and Counter-Attack "
+     "(1).", None, ["Scout", "Counter-Attack (X)"])]
+BLACKSHIELDS_UPGRADES = [
+    ("Scavenged Patchwork Plate", 15, "Bolted together from salvaged armour plates of fallen foes, the model gains It "
+     "Will Not Die (5+) and Hatred (Everything) in close combat.", None, ["It Will Not Die (X)", "Hatred (X)"])]
+MILITIA_UPGRADES = [
+    ("Agri-World / Industrial Over-Clock", 10, "Crude over-pressurized steam and promethium valves allow the walker to "
+     "surge forward once per game; during one friendly Movement or Assault phase, add +2\" to its Movement or Charge "
+     "roll, though it suffers 1 unsaved Wound on a D6 roll of 1 at the end of that phase.", None, []),
+    ("Expeditionary Veteran Telemetry", 15, "Legacy of the Great Crusade only. Maintained by veteran Imperial Army "
+     "enginseers since the earliest expansion fleets, the pilot and machine operate with practiced discipline. This "
+     "model improves its Leadership characteristic to 9, may re-roll failed Morale and Pinning tests, and may re-roll "
+     "To Hit rolls of 1 when firing at an enemy unit within 12\" of a friendly Militia Force Commander or Discipline "
+     "Master.", "prov legacy", []),
+    ("Sub-Surface Foundry Plating", 15, "Industrial Stronghold only. Forged in monumental planetary manufactoria using "
+     "thick, crude slab-steel and heavy mining hydraulics. The model gains It Will Not Die (5+) and reduces the "
+     "Strength of incoming Blast and Template attacks by -1 (to a minimum of 1). In addition, it treats Dangerous "
+     "Terrain tests as automatically passed.", "prov industrial", ["It Will Not Die (X)"]),
+    ("Ancestral Pattern Stabilizers", 20, "Survivors of the Dark Age only. Preserved intact from before Old Night with "
+     "functioning gyro-balancers and refractory shielding. The model ignores the -1\" penalty to Run and Charge "
+     "distance rolls from Clumsy Hydraulic Actuators, and gains a 6+ Invulnerable Save against shooting attacks (if "
+     "upgraded with Dreadnought Extra Armour, its Invulnerable Save against shooting attacks improves to 5+).",
+     "prov survivors", []),
+    ("Forbidden Archaeo-Reactor", 20, "Armoury of Old Night only. Powered by an unshielded pre-Imperial singularity or "
+     "rad-core. All Plasma, Volkite, Conversion, and Graviton weapons equipped by this model gain +1 Strength (to a "
+     "maximum of 9) and Shred, but any To Hit roll of a natural 1 inflicts 1 automatic Wound on this model "
+     "(Invulnerable Saves may be taken as normal).", "prov armoury", ["Shred"]),
+    ("Tech-Priest Servo-Interface", 15, "Arms of the Omnissiah only. Directly linked to Mars-pattern cogitator-shrines "
+     "and maintained by Enginseer Auxilia. The model improves its Ballistic Skill to 5 when firing at Vehicles, "
+     "Dreadnoughts, Armigers, or Automata, and friendly models with the Battlesmith (X) special rule within 3\" add +1 "
+     "to their Battlesmith rolls when repairing this model (to a maximum of 2+).", "prov omnissiah", []),
+]
 HEXAGRAMMATON = [(f"Hexagrammaton: {w}", 0, f"The model has the {w} Hexagrammaton Sub-type.", None, [])
                  for w in WINGS]
 
@@ -692,7 +830,19 @@ def imperial_upgrades(caedere):
            ("VII Legion Chassis Upgrade", IMPERIAL_FISTS_UPGRADES, "if"),
            ("VI Legion Chassis Upgrade", SPACE_WOLVES_UPGRADES, "sw"),
            ("Hexagrammaton Sub-type", HEXAGRAMMATON, "da"),
-           ("I Legion Chassis Upgrade", DARK_ANGELS_UPGRADES, "da")]
+           ("I Legion Chassis Upgrade", DARK_ANGELS_UPGRADES, "da"),
+           ("III Legion Chassis Upgrade", EMPERORS_CHILDREN_UPGRADES, "ec"),
+           ("V Legion Chassis Upgrade", WHITE_SCARS_UPGRADES, "ws"),
+           ("VIII Legion Chassis Upgrade", NIGHT_LORDS_UPGRADES, "nl"),
+           ("IX Legion Chassis Upgrade", BLOOD_ANGELS_UPGRADES, "ba"),
+           ("XIII Legion Chassis Upgrade", ULTRAMARINES_UPGRADES, "um"),
+           ("XV Legion Chassis Upgrade", THOUSAND_SONS_UPGRADES, "ts"),
+           ("XVI Legion Chassis Upgrade", SONS_OF_HORUS_UPGRADES, "soh"),
+           ("XVII Legion Chassis Upgrade", WORD_BEARERS_UPGRADES, "wb traitor"),
+           ("XIX Legion Chassis Upgrade", RAVEN_GUARD_UPGRADES, "rg"),
+           ("XX Legion Chassis Upgrade", ALPHA_LEGION_UPGRADES, "al"),
+           ("Blackshields Chassis Upgrade", BLACKSHIELDS_UPGRADES, "bs"),
+           ("Imperialis Militia Chassis Upgrade", MILITIA_UPGRADES, "militia")]
     return ups, [CAEDERE] if caedere else []
 
 
@@ -710,6 +860,7 @@ def imperial_specs():
          "rules": COMMON + [("Unstable Arc-Reactor", None), ("Clumsy Hydraulic Actuators", None)],
          "arms": [("Arm Weapon (1)", lucifer_arm()), ("Arm Weapon (2)", lucifer_arm())],
          "carapace": [("Carapace & Chassis Upgrades", carapace, None)],
+         "model_options": [("Ravenspire Heavy Talons", 15, "rg")],
          "upgrades": lucifer_ups, "unit_options": lucifer_opts},
         {"name": "Furibundus-Pattern Protodreadnought", "model": "Furibundus-Pattern Protodreadnought",
          "slot": "Heavy Support", "type": "Armiger (Heavy)",
