@@ -1034,6 +1034,9 @@ class Builder:
                 granted = re.search(r"gains the (.+?) special rule", text)
                 if granted:
                     self.link_rule(e, granted.group(1), eid)
+                # "projects 2 Void Shields (Armour Value 12)": the game system's Void Shields rule
+                if re.search(r"Void Shields? \((?:Armour Value|AV) 12\)", text):
+                    self.link_rule(e, "Void Shields", eid)
                 # "A Riptide battlesuit confers a 2+ Armour Save, a 5+ Invulnerable Save, a jet pack,
                 # Hammer of Wrath (D3) and Bulky (6)": the rules it names
                 inv = re.search(r"\b(\d)\+ Invulnerable Save", text)

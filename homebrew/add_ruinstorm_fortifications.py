@@ -7,7 +7,8 @@ usage: python3 homebrew/add_ruinstorm_fortifications.py
 The doc's four Fortifications become Fortification choices with the Daemon Unit Type and Traitor. Each may take one
 Ætheric Dominion Enhancement ("## Daemonic Fortification Wargear"), shown only with its Dominion and an error with
 another. The game system's own Fortifications are hidden from a Ruinstorm Detachment by faction_fortifications.py.
-It refuses to run twice."""
+Run again after a Fortification is added to the doc, it adds only that one; it refuses to run when there is
+nothing new."""
 import re
 import sys
 
@@ -33,7 +34,9 @@ def main():
     if not forts:
         sys.exit("no Fortifications in the doc")
     cat = Text(ar.CAT)
-    if f'id="{forts[0].get("id")}"' in cat.s:
+    present = {f.get("name") for f in forts if f'id="{f.get("id")}"' in cat.s}
+    forts = [f for f in forts if f.get("name") not in present]   # a Fortification added to the doc since
+    if not forts:
         sys.exit(f"{ar.CAT} already has the Daemonic Fortifications")
     idx = et.official_index()
     units, keep_entries, keep_groups, keep_rules = et.transplant(b, root, idx, units=forts)
@@ -70,6 +73,7 @@ def main():
         ar.cond(m, did, kind="lessThan")
         cid = add_constraint(e, "max", 0, mid(e.get("id"), "dominion only"))
         ar.cond(ar.modifier(e, cid, 1), did)
+    found |= {n for n in ENHANCEMENTS if f'name="{n}"' in cat.s}   # already there from an earlier run
     if found != set(ENHANCEMENTS):
         sys.exit(f"Enhancements not in the doc: {sorted(set(ENHANCEMENTS) - found)}")
 

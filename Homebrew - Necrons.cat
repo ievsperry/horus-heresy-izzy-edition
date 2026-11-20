@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="6dbb-42c9-758d-cd66" name="Necrons for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Necrons" />
   </publications>
@@ -766,6 +766,12 @@
       <categoryLinks>
         <categoryLink targetId="a24f-12d8-36c1-f477" id="d3f7-4e9e-e63b-811c" primary="true" name="Fortification:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="2d21-4665-f7b2-3ae0" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tomb-World Phase-Projector" hidden="false" id="5b4a-b41c-c666-0176" type="selectionEntry" targetId="1b26-21d6-d01f-ff46">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="b8a0-a701-f838-0370" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="ca1a-bb4e-2551-f96c" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Canoptek Wraiths" hidden="true" id="d78e-bbfd-7499-dc28" type="selectionEntry" targetId="52bd-c684-720c-a834">
@@ -2135,6 +2141,27 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dimensional Phase-Field Array" hidden="false" id="c771-9cb3-a4ba-5153" publicationId="6dbb-42c9-758d-cd66">
+      <profiles>
+        <profile name="Dimensional Phase-Field Array" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="8062-8e99-c765-ba6a">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Fortification projects 2 Void Shields (Armour Value 12) in a 12" radius around it, using the standard Void Shield rules of the Age of Darkness 2.0 rulebook (see Projected Dimensional Dome).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Void Shields" id="1fe7-e469-74aa-82ec" hidden="false" targetId="c503-f5b8-3da0-16e6" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cryptek Telemetry Node" hidden="false" id="0f96-67ce-e18a-ebd9" publicationId="6dbb-42c9-758d-cd66">
+      <profiles>
+        <profile name="Cryptek Telemetry Node" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="2c19-29e2-c81b-cd7f">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Friendly Necron units arriving via Deep Strike within 12" of the Fortification do not scatter.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Eternity Gate Core" hidden="false" id="695d-2795-0a0b-1be3" publicationId="6dbb-42c9-758d-cd66">
       <profiles>
         <profile name="Eternity Gate Core" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="f2a1-a193-4a95-62fa">
@@ -2274,6 +2301,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Void Shields" id="08e3-560b-d8cb-5e09" hidden="false" targetId="c503-f5b8-3da0-16e6" type="rule" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Antimatter Meteor" hidden="false" id="1b54-cd3e-369a-69fb" publicationId="6dbb-42c9-758d-cd66">
       <profiles>
@@ -8356,6 +8386,114 @@
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="235" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tomb-World Phase-Projector" hidden="false" id="1b26-21d6-d01f-ff46" publicationId="6dbb-42c9-758d-cd66">
+      <rules>
+        <rule name="Projected Dimensional Dome (12&quot;)" id="2fe5-faea-e530-0f47" hidden="false">
+          <description>The Tomb-World Phase-Projector's Void Shields form a 12" protective dome centred on the Fortification. Any shooting attack originating outside this 12" radius that targets the Tomb-World Phase-Projector, or any friendly Necron unit where the target unit is wholly within 12" of the Tomb-World Phase-Projector or where a line drawn from the firing model to the target passes through the 12" radius of the dome, must first resolve its hits against the active Void Shields (AV 12) before allocating any remaining hits to the target unit. If a Barrage weapon fired from outside the dome scatters its Blast marker over a unit inside the dome (or over the Tomb-World Phase-Projector itself), the hits are still resolved against the active Void Shields first. Attacks made by an enemy unit inside the 12" radius at a target also inside it are not intercepted by the Void Shields</description>
+        </rule>
+        <rule name="Harmonic Phase-Reconstitution" id="d260-86e6-54a3-035c" hidden="false">
+          <description>At the end of each friendly Shooting phase, if the Tomb-World Phase-Projector has at least one collapsed Void Shield, roll a D6: on a 5+ (or 4+ if a friendly Necron Cryptek or Overlord is within 6" of the Projector), 1 collapsed Void Shield is immediately restored</description>
+        </rule>
+        <rule name="Note" id="1cb6-d25f-c8c6-218f" hidden="false">
+          <description>A towering, obsidian-and-necrodermis pylon that bends localized space-time into overlapping dimensional barriers, shunting incoming ordnance harmlessly into the void before it can strike nearby Necron phalanxes.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="d9bb-b535-021c-b3e5" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Necron Fortification" id="c1ee-a291-70cc-17e7" hidden="false" targetId="2664-d274-7472-e42d" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="fdbf-edf5-a66b-0cda" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tomb-World Phase-Projector" hidden="false" id="d505-233d-30e9-fb57" publicationId="6dbb-42c9-758d-cd66">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba42-31a4-fe7f-8af0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89b8-3ee1-0525-b4de" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Tomb-World Phase-Projector" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="24e2-03b4-5c8c-1ebb" publicationId="6dbb-42c9-758d-cd66">
+              <modifiers>
+                <modifier type="set" field="0ef8-a648-01d0-08ee" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="1b26-21d6-d01f-ff46" childId="1c74-0dbe-8b46-b58d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f150-c0dc-c192-9cb3" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="1b26-21d6-d01f-ff46" childId="1c74-0dbe-8b46-b58d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8d4e-2aea-fffc-d556" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="1b26-21d6-d01f-ff46" childId="1c74-0dbe-8b46-b58d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement, Necron)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">–</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="028e-6f3f-f60d-79b8" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="9c08-3aab-e8c3-8fa6" primary="false" name="Emplacement Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="7eff-5771-f224-a57f">
+              <entryLinks>
+                <entryLink import="true" name="Void Shield" hidden="false" id="54d0-4295-762e-b375" type="selectionEntry" targetId="3116-3d85-a093-4798">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="27f6-f74e-cb48-3402" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Reinforced Necrodermis Plating" hidden="false" id="34ea-ed07-b5f1-87ac" type="selectionEntry" targetId="1c74-0dbe-8b46-b58d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db02-cf15-8bb9-5d28" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Cryptek Telemetry Node" hidden="false" id="0311-17e7-b575-8d49" type="selectionEntry" targetId="0f96-67ce-e18a-ebd9">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4238-4d87-72e0-581b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Dimensional Phase-Field Array" hidden="false" id="18c1-c8d6-9add-3ca6" type="selectionEntry" targetId="c771-9cb3-a4ba-5153">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bf5-c629-62cc-784f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b98-cdd8-8698-0d8c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="160" />
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

@@ -5,13 +5,19 @@ and offered on every Bio-Fortification) is hidden unless the Detachment has chos
 error if taken in a Detachment of another Hive Fleet.
 """
 from build_catalogue import add_constraint, child, el, make_id
+from necron_fortifications import set_armour
 
 ENHANCEMENTS = {"Seismic Tremor-Roots": "Behemoth", "Pheromone Trail Beacon": "Kraken",
                 "Dominion Synapse Node": "Leviathan", "Shadow in the Warp Emitter": "Kronos",
                 "Chitinous Tunnel-Network": "Jormungandr", "Endless Brood-Vats": "Hydra"}
 
 
+# the Grand Capillary Citadel's Extended Chitinous Plating: Rear Armour 14
+ARMOUR = {"Grand Capillary Citadel": {"Extended Chitinous Plating": {"Rear": 14}}}
+
+
 def apply(b):
+    set_armour(b, ARMOUR, "Tyranid")
     fleets = {e.get("id") for e in b.root.iter("selectionEntry")}
     done = set()
     for e in b.shared_entries.iter("selectionEntry"):

@@ -1113,7 +1113,10 @@ def votann_specs():
 
 
 def apply(b):
-    """build_catalogue.py's hook for the Leagues of Votann: the rigs, their weapons and their root entries."""
+    """build_catalogue.py's hook for the Leagues of Votann: the rigs, their weapons and their root entries; and the
+    Brôkhyr Void-Weave Projector's Reinforced Bulkhead Plating (Armour 13) on its profile."""
+    from necron_fortifications import set_armour
+    set_armour(b, {"Brôkhyr Void-Weave Projector": {"Reinforced Bulkhead Plating": 13}}, "Votann")
     entries = {norm(e.get("name")): e.get("id") for e in b.shared_entries.findall("selectionEntry")}
     rules = {norm(r.get("name")): r.get("id") for r in b.shared_rules.findall("rule")}
     gst_entries, gst_rules = index([GST])

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="45" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8f64-16d5-e3fa-06cc" name="Homebrew - Aeldari (Drukhari)" revision="46" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="9356-fc9b-2fee-7d11" name="Drukhari for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Drukhari" />
   </publications>
@@ -1415,6 +1415,39 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       <categoryLinks>
         <categoryLink targetId="a24f-12d8-36c1-f477" id="6de7-3f37-8b4d-1b33" primary="true" name="Fortification:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="48c5-6575-1e53-a259" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Dark-Light Shadow-Pylon" hidden="false" id="6e2c-66a0-96b2-d5e6" type="selectionEntry" targetId="4db8-86b4-f204-b92d">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="886a-325d-ad26-8955" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e319-27b1-69b4-33ff" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3909-dd50-290e-98a8" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="4642-a5f5-53f2-37ea" value="0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="886a-325d-ad26-8955" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e319-27b1-69b4-33ff" shared="true" includeChildSelections="true" includeChildForces="false" />
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3909-dd50-290e-98a8" shared="true" includeChildSelections="true" includeChildForces="false" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="4642-a5f5-53f2-37ea" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="d278-748d-17bb-8e3e" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="a7cc-ae5d-0edf-a719" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Void-Raptor Sky-Dock" hidden="false" id="66ea-e507-1487-f70b" type="selectionEntry" targetId="cb84-7d45-c353-3a89">
@@ -3856,6 +3889,18 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shadow-Field Projector" hidden="false" id="5d5c-3697-d720-4990" publicationId="9356-fc9b-2fee-7d11">
+      <profiles>
+        <profile name="Shadow-Field Projector" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ce21-657c-1eb2-fa16">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Fortification projects 1 Void Shield (Armour Value 12) in a 12" radius around it, using the standard Void Shield rules of the Age of Darkness 2.0 rulebook (see Projected Shadow-Dome).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Void Shields" id="f7ad-91a2-b831-bc79" hidden="false" targetId="c503-f5b8-3da0-16e6" type="rule" />
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Phantasm Grenade Launcher" hidden="false" id="ad67-de96-ebec-89fd" publicationId="9356-fc9b-2fee-7d11">
       <profiles>
@@ -13323,6 +13368,149 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
           </infoLinks>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dark-Light Shadow-Pylon" hidden="false" id="4db8-86b4-f204-b92d" publicationId="9356-fc9b-2fee-7d11">
+      <rules>
+        <rule name="Projected Shadow-Dome (12&quot;)" id="558d-8096-22b4-0946" hidden="false">
+          <description>The Dark-Light Shadow-Pylon's Void Shields form a 12" protective dome centred on the Fortification. Any shooting attack originating outside this 12" radius that targets the Dark-Light Shadow-Pylon, or any friendly Drukhari unit where the target unit is wholly within 12" of the Dark-Light Shadow-Pylon or where a line drawn from the firing model to the target passes through the 12" radius of the dome, must first resolve its hits against the active Void Shields (AV 12) before allocating any remaining hits to the target unit. If a Barrage weapon fired from outside the dome scatters its Blast marker over a unit inside the dome (or over the Dark-Light Shadow-Pylon itself), the hits are still resolved against the active Void Shields first. Attacks made by an enemy unit inside the 12" radius at a target also inside it are not intercepted by the Void Shields</description>
+        </rule>
+        <rule name="Night-Shroud Distortion (12&quot;)" id="6b86-ac10-bace-0bb7" hidden="false">
+          <description>Any friendly Drukhari unit (including the Pylon itself) that is wholly within 12" of the Pylon, or targeted by a shooting attack originating outside the 12" radius where a line drawn from the firing model to the target passes through the 12" dome, gains Shrouded (5+) against shooting attacks made from more than 12" away. If a unit already has the Shrouded (X) special rule, it instead improves its existing Shrouded roll by +1 (to a maximum of 4+)</description>
+        </rule>
+        <rule name="Flicker-Core Surge" id="8848-0a90-3d63-69c5" hidden="false">
+          <description>At the end of each friendly Shooting phase, if the Dark-Light Shadow-Pylon has at least one collapsed Void Shield and did not fire any weapons during that phase, roll a D6: on a 5+ (or 4+ if an enemy unit within 12" failed a Morale or Pinning check earlier in that turn), 1 collapsed Void Shield is immediately restored</description>
+        </rule>
+        <rule name="Note" id="02fd-b0f0-edf8-cf3f" hidden="false">
+          <description>A jagged, barbed obelisk of blackened alloy and captured void-glass dropped from a Kabalite cruiser, bathing the surrounding raid zone in blinding dark-light distortion fields and razor-thin shadow-barriers.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="d6b8-994b-4640-0f54" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Drukhari Fortification" id="3338-add0-268d-a2d9" hidden="false" targetId="35b3-6cea-fc02-13b6" type="rule" />
+        <infoLink name="Night-Shield Matrix" id="1193-0a24-53fa-8a9a" hidden="false" targetId="ed54-5f1a-d5de-15d1" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="885f-184b-82be-c13c" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Dark-Light Shadow-Pylon" hidden="false" id="ab9f-07ac-c2c9-1bc4" publicationId="9356-fc9b-2fee-7d11">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e9c-c968-7218-e9f2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="740f-102a-13d4-5853" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Dark-Light Shadow-Pylon" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="f2da-42db-b8c1-94d0" publicationId="9356-fc9b-2fee-7d11">
+              <modifiers>
+                <modifier type="increment" field="0ef8-a648-01d0-08ee" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="4db8-86b4-f204-b92d" childId="e970-f7e0-489c-9b0f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="f150-c0dc-c192-9cb3" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="4db8-86b4-f204-b92d" childId="e970-f7e0-489c-9b0f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="8d4e-2aea-fffc-d556" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="4db8-86b4-f204-b92d" childId="e970-f7e0-489c-9b0f" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="b9b7-5ce3-aba3-85af" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="1993-1b1d-f97e-c86c" primary="false" name="Emplacement Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="769e-a2cc-4fb1-6e21">
+              <entryLinks>
+                <entryLink import="true" name="Void Shields" hidden="false" id="db2b-748b-3f67-a343" type="selectionEntry" targetId="f6af-b72a-b86e-2785">
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="73ea-7c7a-bf3e-e19c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked splinter cannon" hidden="false" id="662e-8ab7-e8d9-93a5" type="selectionEntry" targetId="9319-cc6a-48ed-7e1e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bccc-7d9e-cd15-fefe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Phantasm Grenade Launcher Array" hidden="false" id="b3ff-4058-3a3c-9c72" type="selectionEntry" targetId="ed84-0dde-9ed8-9d83">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8714-29a7-d90b-0342" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="1f50-5155-0e6d-e6ff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f106-bf36-6e6f-f2e4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Splinter-Rack Munitions" hidden="false" id="a0aa-9270-abba-b303" type="selectionEntry" targetId="dbb6-e234-abbb-f6e4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93b5-9faa-e240-9b66" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combat-Drug Atomisers" hidden="false" id="d27a-cf52-ba32-2128" type="selectionEntry" targetId="483c-2a9b-05f7-3fd0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1018-7e28-810a-b7c7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Flesh-Crafted Carapace" hidden="false" id="4e9a-fbe6-ba3c-35a9" type="selectionEntry" targetId="e970-f7e0-489c-9b0f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9de-8d6f-4fda-f70c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Shadow-Field Projector" hidden="false" id="eb90-a6d1-dd14-dcf0" type="selectionEntry" targetId="5d5c-3697-d720-4990">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6e6-8231-b34a-c4a4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6018-c096-55bb-b33a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="115" />
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Void-Raptor Sky-Dock" hidden="false" id="cb84-7d45-c353-3a89" publicationId="9356-fc9b-2fee-7d11">
       <rules>

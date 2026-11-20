@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac63-5340-2e9e-1eb6" name="Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="29" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac63-5340-2e9e-1eb6" name="Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="30" battleScribeVersion="2.03" type="catalogue">
   <entryLinks>
     <entryLink import="false" name="Daemons of the Ruinstorm" hidden="false" type="selectionEntry" id="e271-f450-1c28-5b7b" targetId="afca-3047-fb26-d097">
       <constraints>
@@ -907,6 +907,14 @@
         <categoryLink id="c49e-b359-2dd6-ef8c" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
         <categoryLink id="37eb-d9dc-753d-e6a2" name="Fortification Unit Type" hidden="false" targetId="679d-ec21-2940-fb9" primary="false"/>
         <categoryLink id="e4db-aa79-fd13-231e" name="Building Sub-type" hidden="false" targetId="9f1e-fbf0-3032-32fe" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2769-6fc5-7fd7-876e" name="Grand Warp-Citadel" hidden="false" collective="false" import="false" targetId="5beb-62fb-d855-11c1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b0f3-5faf-ab53-98cf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="2577-341c-4c5d-f142" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="d211-f696-4ab8-9f83" name="Fortification Unit Type" hidden="false" targetId="679d-ec21-2940-fb9" primary="false"/>
+        <categoryLink id="bf14-968e-117d-d293" name="Building Sub-type" hidden="false" targetId="9f1e-fbf0-3032-32fe" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -14674,6 +14682,306 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <profile name="Beacon of Undivided Chaos" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5db6-2a5a-03c1-6961">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">*Ravenous Dissolution enhancement (written as Primordial Annihilator, which is not an Ætheric Dominion).* This Fortification radiates a 12" Locus of Chaos: friendly Daemons of the Ruinstorm units of any Ætheric Dominion within 12" may re-roll failed Daemonic Instability tests and gain Hatred (Everything) while locked in Assault within 12" of this Fortification.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Grand Warp-Citadel" hidden="false" id="5beb-62fb-d855-11c1">
+      <rules>
+        <rule name="Warp-Citadel Battlements" id="b698-e45b-dab6-a97b" hidden="false">
+          <description>The upper dais counts as Open-Topped Battlements capable of holding up to 15 Infantry models, granting a 4+ Cover Save</description>
+        </rule>
+        <rule name="Beacon of the Ruinstorm (18&quot;)" id="0249-742f-e82f-6f61" hidden="false">
+          <description>Friendly Daemons of the Ruinstorm units arriving via Deep Strike within 18" of this Fortification do not scatter</description>
+        </rule>
+        <rule name="Unstable Veil Anchor (18&quot;)" id="1346-a614-447e-0bdf" hidden="false">
+          <description>Friendly Daemons of the Ruinstorm units within 18" of this Fortification subtract 1 from the number of wounds suffered when failing a Daemonic Instability check (to a minimum of 0)</description>
+        </rule>
+        <rule name="Citadel of the Dominion" id="ea5a-b37b-de5c-8bb6" hidden="false">
+          <description>Every 12" aura range of the Ætheric Dominion Enhancement the Grand Warp-Citadel takes is 18" instead</description>
+        </rule>
+        <rule name="Catastrophic Warp-Collapse" id="29e2-9b7a-e189-c07f" hidden="false">
+          <description>If this Fortification is reduced to 0 Hull Points, do not roll on the Building Damage table. Instead, roll 2D6 to determine the radius of the rupture in inches. Every unit within that distance (friend or foe) suffers 2D6 Strength 6 AP 3 hits with the Ignores Cover and Pinning special rules before the model is removed</description>
+        </rule>
+        <rule name="Note" id="9d0b-a744-da75-8c4e" hidden="false">
+          <description>A towering, impossible ziggurat of weeping obsidian, fused brass, and screaming bone manifested directly from the Empyrean, acting as a massive realspace anchor for Ruinstorm hosts while hurling searing æther-bolts from its battlement shrines.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Daemonic Fortification" id="b8ff-315e-8b9a-93e8" hidden="false" targetId="4657-1fac-f35c-02c3" type="rule"/>
+        <infoLink name="Fearless" id="f79f-a727-6ae7-7ee5" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+        <infoLink name="Fear (X)" id="3b31-a90a-eb37-4edf" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Fear (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="de04-5664-185b-9471" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b21e-7f3e-995d-2779" name="Daemon Unit Type" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Grand Warp-Citadel" hidden="false" id="1acf-ffd7-023a-8303">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="922d-9c3c-3994-287a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e9f-7d42-4b13-4280" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Grand Warp-Citadel" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="9089-f151-86a6-93eb">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">8</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">30 (2 Access Points, 12 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="1f27-3913-37e5-2dac" primary="false" name="Fortification Unit Type"/>
+            <categoryLink targetId="9f1e-fbf0-3032-32fe" id="86ac-ef21-4dc8-1c1e" primary="false" name="Building Sub-type"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="94a3-4a6c-bb37-fc78">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea19-696f-2e04-b9ae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked Ætheric Arc-Projector" hidden="false" id="a34f-6ff7-6b78-ae11" type="selectionEntry" targetId="de0b-81e3-0f67-a2bf">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6de6-cda6-bc64-85ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Warp-Flame Maw" hidden="false" id="92f0-aab7-329d-c35d" type="selectionEntry" targetId="aec3-53c8-7214-8232">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8f7-1587-03e0-9dbb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Skull-Cannon Battery" hidden="false" id="778d-192e-a598-3648" type="selectionEntry" targetId="7653-ec9d-0c54-5466">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e01f-a028-280a-194a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="5847-0c45-96d3-5c3e">
+              <entryLinks>
+                <entryLink import="true" name="Reinforced Void-Veil" hidden="false" id="4123-86bd-aee3-52c9" type="selectionEntry" targetId="b991-d2a9-0f97-5d99">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6fb2-3453-b2f8-764f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Reality-Siphon Obelisks" hidden="false" id="e330-99d7-4509-deb1" type="selectionEntry" targetId="e350-8dbf-6c07-928d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b35-79f9-c3cb-0c10" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="7ddc-3da9-aed2-da08">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4670-11b9-7073-576c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Blood-Slicked Foundation" hidden="false" id="bc71-00be-62cb-a89e" type="selectionEntry" targetId="0a6f-1dcd-20a7-687d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faf7-f942-9b95-0bf9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Festering Contagion" hidden="false" id="a807-2b98-7800-a7bb" type="selectionEntry" targetId="76a7-76bd-9ae0-2824">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c063-c557-a459-9e3b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Warp-Storm Conduit" hidden="false" id="6331-c6b3-1506-64db" type="selectionEntry" targetId="83b7-9810-20f2-c2dc">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="190e-baa6-3fc3-66db" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Cacophony of Excess" hidden="false" id="c44d-02c2-4932-d893" type="selectionEntry" targetId="ff51-8831-3981-a126">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebc6-c1d7-08d0-9b11" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Reality-Fracture Anchor" hidden="false" id="67bd-9f63-7bf3-06d9" type="selectionEntry" targetId="e7fe-6be7-fd95-7b14">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15e0-2425-5606-b5be" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Soul-Forge Furnace" hidden="false" id="dc38-0e49-224b-0cd4" type="selectionEntry" targetId="9e04-a320-fa63-94c5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f57-7d79-b7b4-7822" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Shifting Nightmare" hidden="false" id="4a6a-1b89-8779-0048" type="selectionEntry" targetId="0a3d-a24a-51ba-e5e4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32af-cd70-ada1-8360" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Beacon of Undivided Chaos" hidden="false" id="d341-ffa7-4dc1-0e82" type="selectionEntry" targetId="43ec-b180-e546-0350">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ebe-c0d1-9297-0272" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Ætheric Bolt-Shrine" hidden="false" id="e522-a0d9-0801-8aa2" type="selectionEntry" targetId="712f-895d-23ef-e5d3">
+              <constraints>
+                <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="54ee-da22-c421-63d2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="1570-b2e7-0358-ff86" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="225"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked Ætheric Arc-Projector" hidden="false" id="de0b-81e3-0f67-a2bf">
+      <profiles>
+        <profile name="Twin-linked Ætheric Arc-Projector" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3984-8f3b-811d-74f8">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Pinning, Shock Pulse, Rending (5+), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pinning" id="a398-716c-e964-442d" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink name="Shock Pulse" id="2d0f-e82c-44b6-ee6e" hidden="false" targetId="9222-f6c5-dc19-905a" type="rule"/>
+        <infoLink name="Rending (X)" id="b447-33ba-8111-c073" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Twin-linked" id="c029-cdc2-ac6f-1600" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ætheric Bolt-Shrine" hidden="false" id="712f-895d-23ef-e5d3">
+      <profiles>
+        <profile name="Ætheric Bolt-Shrine" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a24b-ed4c-ddee-8c36">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Twin-linked, Soul Blaze</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="9da3-d7bf-d286-39d4" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink name="Soul Blaze" id="ae0c-019a-8a6c-a82c" hidden="false" targetId="cbb5-aa7c-8556-d5ee" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warp-Flame Maw" hidden="false" id="aec3-53c8-7214-8232">
+      <profiles>
+        <profile name="Warp-Flame Maw" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f11f-a0fc-2393-41bf">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Torrent (12"), Ignores Cover, Soul Blaze</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Torrent (X)" id="f1df-6044-3fe8-f6a8" hidden="false" targetId="5cfb-fc94-e6db-43b8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Torrent (12&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Ignores Cover" id="a2cc-e9b7-1b20-85eb" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+        <infoLink name="Soul Blaze" id="f9b9-ba4d-0fa1-9dc2" hidden="false" targetId="cbb5-aa7c-8556-d5ee" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Skull-Cannon Battery" hidden="false" id="7653-ec9d-0c54-5466">
+      <profiles>
+        <profile name="Skull-Cannon Battery" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3283-ac10-8f70-aaf3">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5"), Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="512e-e5f4-4094-c3ac" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Large Blast (5&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" id="d0c5-7414-9015-cc9c" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reinforced Void-Veil" hidden="false" id="b991-d2a9-0f97-5d99">
+      <profiles>
+        <profile name="Reinforced Void-Veil" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="81aa-c746-15e4-8932">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Each Reinforced Void-Veil gives the Fortification one Void Shield (Armour Value 12), hardened psychic barriers, as detailed in the Void Shields rules of the Age of Darkness rulebook.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Void Shields" id="b142-54bd-e717-c8b2" hidden="false" targetId="c503-f5b8-3da0-16e6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reality-Siphon Obelisks" hidden="false" id="e350-8dbf-6c07-928d">
+      <profiles>
+        <profile name="Reality-Siphon Obelisks" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="4b9a-45bd-8dc4-b4c7">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of each friendly Movement phase, roll a D6; on a 5+, the Fortification restores 1 lost Hull Point (up to its starting maximum).</characteristic>
           </characteristics>
         </profile>
       </profiles>

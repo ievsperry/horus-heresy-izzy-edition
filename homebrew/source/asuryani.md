@@ -160,7 +160,7 @@ No other units may be selected as part of this Detachment.
 | Heavy Support | Dark Reapers, Falcon Squadron, Fire Prism Squadron, Firestorm Squadron, Night Spinner Squadron, Vaul's Wrath Support Battery, Wraithlord Conclave, Wraithseer |
 | Lords of War | Cobra, Lynx, Phantom Titan, Revenant Titan, Scorpion, Skathach Wraithknight, Vampire Hunter, Vampire Raider, Wraithknight |
 | Dramatis Personae | Asurmen, Avatar of Khaine, Baharroth, Drastanta, Fuegan, Irillyth, Jain Zar, Karandras, Maugan Ra |
-| Fortifications | Holo-Field Defence Line, Wraithbone Force-Wall, Webway Gate, Wraithbone Bastion, Grand Wraithbone Citadel, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar |
+| Fortifications | Holo-Field Defence Line, Wraithbone Force-Wall, Webway Gate, Wraithbone Bastion, Grand Wraithbone Citadel, Wraithbone Holo-Shield Spire, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar |
 
 ## Advanced Reaction: Aspects of War
 
@@ -2739,7 +2739,7 @@ May take a Wave Serpent as a Dedicated Transport. It uses no additional Force Or
 
 ## Fortifications
 
-Asuryani armies may not take the standard Fortifications; they take the Fortifications below instead. The Wraithbone Bastion, Void-Spinner Sky-Platform and Wraith-Sentinel Drop-Pillar are Asuryani Fortifications; the Holo-Field Defence Line and Wraithbone Force-Wall are Barricades and follow the Barricade Fortification special rule instead. They follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the Asuryani Fortification special rule:
+Asuryani armies may not take the standard Fortifications; they take the Fortifications below instead. The Wraithbone Bastion, Grand Wraithbone Citadel, Wraithbone Holo-Shield Spire, Void-Spinner Sky-Platform and Wraith-Sentinel Drop-Pillar are Asuryani Fortifications; the Holo-Field Defence Line and Wraithbone Force-Wall are Barricades and follow the Barricade Fortification special rule instead. They follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the Asuryani Fortification special rule:
 
 - **Deployment.** Deployed during the Fortifications deployment step within your Deployment Zone (unless modified by a special rule such as Webway Orbital Insertion).
 - **Unit Restrictions.** Fortifications cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests.
@@ -2926,6 +2926,46 @@ _The hull weapons are Automated Fire weapons (BS 4), two mounted on each facing.
 | **The Grand Wraithbone Citadel may take any of the following:** |  |
 | – Holo-Field Emitters | +25 points |
 | – Spirit-Stone Relay | +20 points |
+
+### Wraithbone Holo-Shield Spire — 120 pts
+
+_A slender, gracefully fluted spire of psycho-reactive wraithbone woven with crystalline prism-nodes that projects both a shimmering psychic force-dome and a light-bending holo-field across nearby Craftworld hosts._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Wraithbone Holo-Shield Spire | – | 4 | 11 | 11 | 11 | 3 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Wraithbone Holo-Shield Spire
+
+**Wargear**
+
+- Psychic Refraction Dome
+
+_Its Void Shields use the standard Void Shield rules of the Age of Darkness 2.0 rulebook. A Crystal Point-Defence Turret is crown-mounted: an Automated Fire weapon (BS 4) with a 360° line of sight, Skyfire and Interceptor._
+
+**Unit Type**
+
+- Fortification (Emplacement, Asuryani)
+
+**Special Rules**
+
+- Asuryani Fortification
+- Projected Refraction Dome (12"): the Wraithbone Holo-Shield Spire's Void Shields form a 12" protective dome centred on the Fortification. Any shooting attack originating outside this 12" radius that targets the Wraithbone Holo-Shield Spire, or any friendly Asuryani unit where the target unit is wholly within 12" of the Wraithbone Holo-Shield Spire or where a line drawn from the firing model to the target passes through the 12" radius of the dome, must first resolve its hits against the active Void Shields (AV 12) before allocating any remaining hits to the target unit. If a Barrage weapon fired from outside the dome scatters its Blast marker over a unit inside the dome (or over the Wraithbone Holo-Shield Spire itself), the hits are still resolved against the active Void Shields first. Attacks made by an enemy unit inside the 12" radius at a target also inside it are not intercepted by the Void Shields
+- Prism Holo-Shroud (12"): any friendly Asuryani unit (including the Spire itself) that is wholly within 12" of the Spire, or targeted by a shooting attack originating outside the 12" radius where a line drawn from the firing model to the target passes through the 12" dome, gains Shrouded (5+) against shooting attacks made from more than 12" away. If a unit already has the Shrouded (X) special rule, it instead improves its existing Shrouded roll by +1 (to a maximum of 4+)
+- Spirit-Harmonic Reconstitution: at the end of each friendly Shooting phase, if the Wraithbone Holo-Shield Spire has at least one collapsed Void Shield and did not fire any weapons during that phase, roll a D6: on a 5+ (or 4+ if a friendly Asuryani Psyker is within 6" of the Spire), 1 collapsed Void Shield is immediately restored
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Wraithbone Holo-Shield Spire may take one of the following Crystal Point-Defence Turrets:** |  |
+| – Scatter laser | +20 points |
+| – Shuriken cannon | +15 points |
+| **The Wraithbone Holo-Shield Spire may take any of the following:** |  |
+| – Up to 3 Void Shields | +50 points each |
+| – Waystone Resonance Core | +20 points |
 
 ### Void-Spinner Sky-Platform — 85 pts
 
@@ -3653,6 +3693,14 @@ A Fortification with Holo-Field Emitters has Shrouded (5+) against shooting atta
 #### Holo-Field Pylons
 
 A Wraithbone Force-Wall with Holo-Field Pylons improves its Refraction Screen to Shrouded (5+).
+
+#### Psychic Refraction Dome
+
+The Fortification projects 1 Void Shield (Armour Value 12) in a 12" radius around it, using the standard Void Shield rules of the Age of Darkness 2.0 rulebook (see Projected Refraction Dome).
+
+#### Waystone Resonance Core
+
+Friendly Asuryani Psykers within 12" of the Fortification may re-roll failed Psychic Checks of double 6s (preventing Perils of the Warp on that roll).
 
 #### Spirit-Stone Relay
 

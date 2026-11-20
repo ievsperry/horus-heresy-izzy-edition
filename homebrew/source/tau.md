@@ -418,7 +418,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Fast Attack | Pathfinders, Tactical Drones, Piranhas, Vespid Stingwings, Kroot Hounds, Krootox Riders, Sun Shark Bomber, Razorshark Strike Fighter, Tetra Scout Speeders, Remora Stealth Drones, Barracuda, Orca Dropship, Piranha TX-42, Krootox Rampagers, Knarloc Riders |
 | Heavy Support | Broadside Battlesuits, Hammerhead Gunship, Sky Ray Gunship, Sniper Drone Team, Heavy Gun Drones, XV109 Y'vahra, XV107 R'varna, Drone Sentry Turret, Shas'vre Ob'lotai 9-0, Great Knarloc |
 | Lord of War | KV128 Stormsurge, KX139 Ta'unar Supremacy Armour, Tiger Shark Fighter-Bomber, Manta Super-heavy Dropship |
-| Fortifications | Tidewall Droneport, Tidewall Gunrig, Tidewall Shieldline, Remote Sensor Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker, Orca Sky-Pad, T'au Command Post, Missile Silo Battery, Pulse Shield Generator, Sensor Beacon Post, Manta Command Citadel |
+| Fortifications | Tidewall Droneport, Tidewall Gunrig, Tidewall Shieldline, Remote Sensor Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker, Orca Sky-Pad, T'au Command Post, Missile Silo Battery, Pulse Shield Generator, Sensor Beacon Post, Manta Command Citadel, Earth Caste Gravitic Void-Projector |
 
 ### Drones
 
@@ -3444,7 +3444,7 @@ The Portable Pulse-Barricade is a Barricade: it follows the Barricade Fortificat
 - Reflective Field: each unmodified save of 6 made using the Energy Shield inflicts one hit at Strength 5, AP 5 on the attacking unit
 - Tidewall Mobility
 
-**T'au Fortifications.** The Remote Sensor Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker, Orca Sky-Pad, T'au Command Post, Missile Silo Battery, Pulse Shield Generator and Sensor Beacon Post follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the T'au Fortification special rule. Each may take one Sept Enhancement matching its Detachment's Sept (T'au Sept, Vior'la, Bork'an, Sa'cea or Farsight Enclaves).
+**T'au Fortifications.** The Remote Sensor Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker, Orca Sky-Pad, T'au Command Post, Missile Silo Battery, Pulse Shield Generator, Sensor Beacon Post and Earth Caste Gravitic Void-Projector follow the standard Fortification rules from the Age of Darkness 2.0 rulebook and the T'au Fortification special rule. Each may take one Sept Enhancement matching its Detachment's Sept (T'au Sept, Vior'la, Bork'an, Sa'cea or Farsight Enclaves).
 
 #### Remote Sensor Tower — 75 pts
 
@@ -3789,6 +3789,49 @@ _A hovering dome projector that blankets nearby Fire Warriors and battlesuits in
 | – Urban Camouflage Matrix | +15 points |
 | – Close-Quarters Sensor-Grid | +20 points |
 
+#### Earth Caste Gravitic Void-Projector — 150 pts
+
+_A sleek, hovering hexagonal pylon-array engineered by the Earth Caste to project overlapping layers of multi-phasic repulsor-shields over an entire Hunter Cadre firing line._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Earth Caste Gravitic Void-Projector | – | 3 | 12 | 12 | 12 | 3 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Earth Caste Gravitic Void-Projector
+
+**Wargear**
+
+- Gravitic Void-Shield Array
+
+_Its Void Shields use the standard Void Shield rules of the Age of Darkness 2.0 rulebook. A Networked Markerlight is roof-mounted: an Automated Fire weapon (BS 3) with a 360° line of sight and Skyfire._
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- T'au Fortification
+- Projected Repulsor-Dome (12"): the Gravitic Void-Projector's Void Shields form a 12" protective dome centred on the Fortification. Any shooting attack originating outside this 12" radius that targets the Gravitic Void-Projector, or any friendly T'au Empire unit where the target unit is wholly within 12" of the Gravitic Void-Projector or where a line drawn from the firing model to the target passes through the 12" radius of the dome, must first resolve its hits against the active Void Shields (AV 12) before allocating any remaining hits to the target unit. If a Barrage weapon fired from outside the dome scatters its Blast marker over a unit inside the dome (or over the Gravitic Void-Projector itself), the hits are still resolved against the active Void Shields first. Attacks made by an enemy unit inside the 12" radius at a target also inside it are not intercepted by the Void Shields
+- Emergency Capacitor Recharge: at the end of each friendly Shooting phase, if the Gravitic Void-Projector has at least one collapsed Void Shield and did not fire any weapons during that phase, roll a D6: on a 5+ (or 4+ if no enemy units are within 12"), 1 collapsed Void Shield is immediately restored
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Earth Caste Gravitic Void-Projector may take any of the following:** |  |
+| – Up to 2 Void Shields | +50 points each |
+| – Up to 2 Attached Shield Drones | +15 points each |
+| – Networked Markerlight | +15 points |
+| **The Earth Caste Gravitic Void-Projector may take one of the following Sept Enhancements:** |  |
+| – Coordinated Fire-Control | +20 points |
+| – Hot-Blooded Thrust-Relays | +20 points |
+| – Experimental Weapon Accelerators | +25 points |
+| – Urban Camouflage Matrix | +15 points |
+| – Close-Quarters Sensor-Grid | +20 points |
+
 #### Sensor Beacon Post — 60 pts
 
 _An automated telemetry and sensor-tower that sweeps the horizon for infiltrators and feeds data to local Fire Caste hunter cadres. Also called a Sensor Beacon Listening Post. Inspired by the Dawn of War Listening Post capture point._
@@ -4021,6 +4064,18 @@ The range of the joined Ethereal's Invocations is increased from 12" to 18", and
 #### Sky-Pad Homing Beacon
 
 Friendly T'au units arriving via Deep Strike within 12" of a Fortification with a Sky-Pad Homing Beacon do not scatter.
+
+#### Gravitic Void-Shield Array
+
+The Fortification projects 2 Void Shields (Armour Value 12) in a 12" radius around it, using the standard Void Shield rules of the Age of Darkness 2.0 rulebook (see Projected Repulsor-Dome).
+
+#### Attached Shield Drone
+
+A shield drone that remains docked on its Fortification. While at least one Attached Shield Drone remains, the Fortification has a 4+ Invulnerable Save against shooting hits that bypass or overwhelm its Void Shields.
+
+#### Networked Markerlight
+
+A roof-mounted markerlight (see the Armoury) that fires as an Automated Fire weapon (BS 3) with a 360° line of sight and Skyfire.
 
 #### Void Shield
 
