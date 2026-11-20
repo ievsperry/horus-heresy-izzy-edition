@@ -817,6 +817,10 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   "Primordial Annihilator" enhancement (Beacon of Undivided Chaos) belongs to Ravenous Dissolution, the eighth
   Dominion. A Rite that bars Fortification choices bars these too. Run again, it adds only the Fortifications new to
   the doc (the Grand Warp-Citadel was added that way), and refuses when there are none.
+- `python3 homebrew/link_void_shields.py` links the game system's Void Shields rule to the void shield wargear the
+  one-shot scripts wrote (the game system's Void Shield and Auxiliary Void Shield, the Ruinstorm Reinforced
+  Void-Veil); the builder links it itself to any wargear whose text gives "Void Shield(s) (Armour Value 12)" or
+  "(AV 12)", such as the shield projectors' field arrays. Running it again changes nothing.
 - `python3 homebrew/add_imperial_fortifications.py` adds the Imperial and Traitor Fortifications (`source/imperial-fortifications.md`:
   Strategic Listening Post, Automated Sentry Turret Battery, Thermo-Plasma Conduit Tower, Orbital Uplink Bunker) to
   `2022 - Horus Heresy.gst` as Fortification choices beside its standard Fortifications, each with the Imperial

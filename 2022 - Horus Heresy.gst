@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="257" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="258" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -13557,6 +13557,9 @@ In addition, a model receives no benefit from the Hammer of Wrath (X) Special Ru
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Void Shields" id="ea96-4cba-e43b-dff9" hidden="false" targetId="c503-f5b8-3da0-16e6" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Camo-Netting" hidden="false" id="fb97-8e58-fff4-0675">
       <profiles>
@@ -14284,6 +14287,9 @@ In addition, a model receives no benefit from the Hammer of Wrath (X) Special Ru
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Void Shields" id="e5d8-b895-3c06-90b7" hidden="false" targetId="c503-f5b8-3da0-16e6" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Grand Bastion" hidden="false" id="6a9d-e687-bbd5-c47a">
       <rules>
