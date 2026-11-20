@@ -940,8 +940,8 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Running it again changes nothing.
 - To rebuild the Sisters of Silence expansion after a Builder change: take `2022 - LI - Sisters Of Silence.cat` as it
   was before the expansion (commit 9bee36b), run `add_sisters_of_silence.py` and `fix_sisters_of_silence_links.py`,
-  keep only the catalogue (the game system already has the Chamber allowances, so drop its changes), and re-apply
-  the official Eyrine Needle Pistol rename. Done once so that "may take one of" picks allow one item, the Shrikes'
+  keep only the catalogue (the game system already has the Chamber allowances, so drop its changes), re-apply
+  the official Eyrine Needle Pistol rename, and run `add_null_strider.py`. Done once so that "may take one of" picks allow one item, the Shrikes'
   "Two Shrike Talons" swap is one pick of a pair, and the twin-linked Vratine Bolter and Corvae Las-Pulser show
   their profiles.
 - The Liber Imperatus Legio Custodes expansion (the Claude Doc "Legio Custodes Horus Heresy 2.0 - Homebrew
@@ -992,6 +992,13 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   weapons and every other unit's are untouched. Wrathful
   Souls' Overwatch and World Eaters-against-World Eaters effects and Dying Gift are rule text. The copy keeps the
   official entry's schema-order quirks (15 schema warnings, as the library's Heavy Support Squad has).
+- `python3 homebrew/add_null_strider.py` adds the Aegis-Pattern Null-Strider (`source/null-strider.md`) to
+  `2022 - LI - Sisters Of Silence.cat`: a Fast Attack squadron of one to three Armigers (Anathema Sub-type), built with
+  protodreadnoughts.py's unit builder (one pick per arm, per-model Chassis Upgrades), whose required Anathema Psykana
+  Chamber Assignment brings that Chamber's Silent Sisterhood entry and category. It links the official Twin-linked
+  Adrathic Destructor, Searchlights and Smoke Launchers, twin-links the official Snare Cannon, and adds its other
+  weapons; its rules are the official Silent Sisterhood (X), Anathema Sub-type, Hatred (X) and Psy-shock. It refuses to
+  run twice.
 - `python3 homebrew/add_sisters_of_silence.py` adds the Liber Imperatus Sisters of Silence expansion (the Claude Doc
   "Sisters of Silence Horus Heresy 2.0 - Homebrew Conversion", kept as `source/sisters-of-silence.md`) to
   `2022 - LI - Sisters Of Silence.cat`. build_catalogue.py's Builder reads the doc's datasheets; their units then
