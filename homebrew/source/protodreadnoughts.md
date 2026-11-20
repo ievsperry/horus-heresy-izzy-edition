@@ -139,9 +139,10 @@ In an Iron Warriors detachment, a squadron may take one of (every model takes it
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Shrapnel Cannon | 18" | 5 | 5 | Heavy 6, Pinning, Shred |
+| Shrapnel Cannon (the official one) | 24" | 5 | 6 | Heavy 4, Pinning |
+| Twin-Linked Shrapnel Cannon (the official one) | 24" | 5 | 6 | Heavy 4, Twin-Linked, Pinning |
 | Graviton Crusher-Claw | Melee | +2 | 2 | Melee, Concussive (1), Haywire, Unwieldy |
-| Carapace Phosphex Discharger | 18" | 5 | 2 | Heavy 1, Blast (3"), Poisoned (3+), Crawling Fire, Lingering Death, One Shot |
+| Phosphex Discharger (the official one) | 18" | 5 | 2 | Heavy 1, Barrage, Blast (3"), Poisoned (3+), Crawling Fire, Lingering Death |
 
 ### Iron Hands: X Legion
 
@@ -153,11 +154,12 @@ The Iron Hands maintained the largest reserves of early Great Crusade walkers in
 | Mind-Impulse Neural Hardwire | +15 per model | Fearless and Battlesmith (5+) (it may repair 1 lost Wound on itself at the start of its Shooting phase instead of firing a weapon). |
 | Medusan Graviton Capacitor | +20 per model | All Graviton and Conversion weapons +6" range and Haywire. |
 
-**Weapons.** A Lucifer or Unification may exchange a Gravis Bolt Cannon or Gravis Autocannon for a **Graviton Shredder-Cannon** (+15 each). A Lucifer or Furibundus may exchange a Gravis Power Fist or Siege Claw for a **Cyber-Augmetic Siege Wrench** (+10 each), with its in-built weapon.
+**Weapons.** A Lucifer or Unification may exchange a Gravis Bolt Cannon or Gravis Autocannon for a **Graviton Shredder-Cannon** (+15 each); a Furibundus may exchange a Twin-linked Gravis Bolt Cannon or Twin-linked Gravis Autocannon for a **Twin-linked Graviton Shredder-Cannon** (+30 each). A Lucifer or Furibundus may exchange a Gravis Power Fist or Siege Claw for a **Cyber-Augmetic Siege Wrench** (+10 each), with its in-built weapon.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Graviton Shredder-Cannon | 24" | * | 4 | Heavy 3, Blast (3"), Graviton Pulse, Concussive (1), Haywire |
+| Twin-linked Graviton Shredder-Cannon | 24" | * | 4 | Heavy 3, Blast (3"), Graviton Pulse, Concussive (1), Haywire, Twin-linked |
 | Cyber-Augmetic Siege Wrench | Melee | x2 | 2 | Melee, Armourbane (Melee), Sunder, Unwieldy |
 
 ### Salamanders: XVIII Legion
@@ -170,11 +172,11 @@ Forged and master-crafted by the Techmarines of Nocturne, with dragon-scale heat
 | Drake-Scale Promethium Tanks | +15 per model | All Flame and Melta weapons +1 Strength (to a maximum of 9) and Shred. |
 | Forge-Master's Reinforced Pistons | +15 per model | Ignores the -1" Run penalty from Clumsy Hydraulic Actuators (still -1" to Charge, no Sweeping Advances) and gains Move Through Cover. |
 
-**Weapons.** Any in-built Combi-bolter or Twin-linked Bolter may be exchanged for a **Heavy Dragon's Breath Flamer** (+10 each). A Lucifer's Gravis Melta Cannon or a Furibundus's Cyclonic Melta Lance may be exchanged for an **Obsidian Thermal-Lance** (+15 each).
+**Weapons.** Any in-built Combi-bolter or Twin-linked Bolter may be exchanged for the official **Dragon's Breath Heavy Flamer** (+10 each). A Lucifer's Gravis Melta Cannon or a Furibundus's Cyclonic Melta Lance may be exchanged for an **Obsidian Thermal-Lance** (+15 each).
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Heavy Dragon's Breath Flamer | Template | 6 | 3 | Assault 1, Torrent (6"), Soulblaze |
+| Dragon's Breath Heavy Flamer (the official one) | Template | 6 | 4 | Assault 1, Dragon's Breath |
 | Obsidian Thermal-Lance | 18" | 9 | 1 | Heavy 1, Beam, Armourbane (Melta), Master-crafted |
 
 ### Death Guard: XIV Legion
@@ -208,7 +210,8 @@ Veterans of void-boarding actions and bastion defence aboard the Phalanx and the
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Iliastus Assault Cannon | 24" | 6 | 4 | Heavy 4, Rending (6+), Shell Shock (1) |
+| Iliastus Assault Cannon (the official one) | 24" | 6 | 4 | Assault 4, Rending (6+), Malfunction |
+| Twin-linked Iliastus Assault Cannon (the official one) | 24" | 6 | 4 | Assault 4, Rending (6+), Malfunction, Twin-linked |
 | Solarite Siege-Fist | Melee | x2 | 1 | Melee, Armourbane (Melee), Instant Death, Unwieldy |
 
 ### Space Wolves: VI Legion
@@ -221,12 +224,13 @@ Iron-clad hunting beasts, their safety governors stripped and their pilots wired
 | Pack-Hunter Auspex Array | +15 per model | Counter-Attack (1) and Preferred Enemy (Infantry) in close combat; friendly Space Wolves Infantry within 6" may re-roll failed Charge distance rolls. |
 | Wyrd-Rune Totem Plating | +15 per model | Adamantium Will (5+) (a 5+ Invulnerable Save against psychic powers and weapons) and Feel No Pain (6+) in the Assault phase. |
 
-**Weapons.** A Lucifer or Furibundus may exchange a Gravis Power Fist or Siege Claw for a **Great Frost-Cleaver** (+15 each), with its in-built weapon. A Lucifer's Gravis Melta Cannon or a Unification's Gravis Plasma Cannon may be exchanged for a **Helfrost Cannon** (+15 each).
+**Weapons.** A Lucifer or Furibundus may exchange a Gravis Power Fist or Siege Claw for a **Great Frost-Cleaver** (+15 each), with its in-built weapon. A Lucifer's Gravis Melta Cannon or a Unification's Gravis Plasma Cannon may be exchanged for a **Helfrost Cannon** (+15 each), and a Furibundus's Cyclonic Melta Lance for a **Twin-linked Helfrost Cannon** (+30 each).
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Great Frost-Cleaver | Melee | +3 | 2 | Melee, Rending (5+), Shred, Brutal (2); a pair grants +1 Attack |
 | Helfrost Cannon | 24" | 8 | 2 | Heavy 1, Blast (3"), Helfrost (models suffering unsaved wounds must pass a Strength test or be removed from play) |
+| Twin-linked Helfrost Cannon | 24" | 8 | 2 | As the Helfrost Cannon, and Twin-linked |
 
 ### Dark Angels: I Legion
 
@@ -238,11 +242,12 @@ Assigned to the Wings of the Hexagrammaton and armed from the First Legion's arm
 | Dreadwing Stasis-Core Shroud (Dreadwing only) | +20 per model | Enemy units charging it subtract 2" from their Charge distance rolls and -1 Initiative (to a minimum of 1) while locked in combat with it. |
 | Deathwing Companions' Oath-Plate (Deathwing only) | +15 per model | Fearless, Hatred (Everything) in close combat, and +1 WS against Characters, Dreadnoughts and Armigers. |
 
-**Weapons.** Any in-built Combi-bolter or Twin-linked Bolter may be exchanged for a **Plasma Caster** (+10 each). A Dreadwing squadron may exchange a Gravis Melta Cannon or Heavy Conversion Beamer for a **Molecular Acid-Cannon** (+20 each); a Deathwing squadron may exchange a Gravis Power Fist or Siege Claw for a **Terranic Greatsword-Gauntlet** (+10 each), with its in-built weapon.
+**Weapons.** Any in-built Combi-bolter may be exchanged for a **Plasma Caster**, and any in-built Twin-linked Bolter for the official **Plasma Repeater** (+10 each). A Dreadwing squadron may exchange a Gravis Melta Cannon or Heavy Conversion Beamer for a **Molecular Acid-Cannon** (+20 each); a Deathwing squadron may exchange a Gravis Power Fist or Siege Claw for a **Terranic Greatsword-Gauntlet** (+10 each), with its in-built weapon.
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
 | Plasma Caster | 18" | 7 | 2 | Assault 2, Gets Hot, Breaching (4+) |
+| Plasma Repeater (the official one) | 12" | 6 | 4 | Assault 3, Gets Hot, Twin-linked, Breaching (4+) |
 | Molecular Acid-Cannon | 24" | 6 | 2 | Heavy 2, Blast (3"), Fleshbane, Armourbane (Ranged), Ignores Cover |
 | Terranic Greatsword-Gauntlet | Melee | +2 | 2 | Melee, Rending (5+), Murderous Strike (6+), Duellist's Edge (1) |
 
@@ -293,11 +298,8 @@ These take the profile of the official weapon they stand in for:
 
 | Weapon | Range | Str | AP | Type | As |
 | --- | --- | --- | --- | --- | --- |
-| Siege Claw | Melee | 10 | 2 | Melee, Brutal (3) | Leviathan Siege Claw |
-| Siege Drill | Melee | 12 | 2 | Melee, Armourbane (Melee) | Leviathan Siege Drill |
-| Cyclone Missile System – Frag / Krak | 48" | 4 / 8 | 6 / 3 | Heavy 1, Large Blast (5"), Pinning / Heavy 2, Twin-linked | Cyclone Missile Launcher (also the Lucifer's) |
-| Twin-linked Cyclone Missile Pod | as above, Twin-linked |  |  |  |  |
-| Twin-linked Gravis Bolt Cannon, Autocannon, Lascannon | as the Gravis weapon, Twin-linked |  |  |  |  |
+| Twin-linked Cyclone Missile Pod | as the Cyclone Missile Launcher's Frag and Krak, Twin-linked |  |  |  |  |
+| Twin-linked Gravis Lascannon | as the Gravis Lascannon, Twin-linked |  |  |  |  |
 | Twin-linked Mauler Bolt Cannon | 24" | 6 | 4 | Heavy 4, Pinning, Twin-linked | Mauler Bolt Cannon |
 | Gravis Concussion Gauntlet | Melee | 9 | 2 | Melee, Brutal (2), Concussive (1) | Gravis Power Fist |
 | Gravis Plasma Axe | Melee | 10 | 2 | Melee, Armourbane (Melee), Murderous Strike (5+) | Gravis Chainfist |
@@ -321,5 +323,6 @@ The Twin-linked Magna-Rail Cannon, Heavy SP Conversion Beamer (SP heavy conversi
 - The Mechanicum swaps are priced from the weapon they replace: a Lucifer's Mauler Bolt Cannon is +10 from the fist (Gravis Bolt Cannon +5, then +5), its Kheres +30 and Darkfire +35 (from the Gravis Lascannon, +15). An Iron Warriors Shrapnel Cannon is priced as the Gravis Bolt Cannon it replaces.
 - The Questoris Household upgrade is offered in Mechanicum and Questoris Household detachments; taking it moves the squadron to the Troops slot with the Line sub-type.
 - Legion swaps are priced from the weapon they replace, as the Mechanicum ones are: a Lucifer's Graviton Shredder-Cannon is +20 from the fist (Gravis Bolt Cannon +5, then +15), its Obsidian Thermal-Lance and Helfrost Cannon +30 (from the Gravis Melta Cannon, +15), its Iliastus Assault Cannon +15, its Molecular Acid-Cannon +35; a Furibundus's Obsidian Thermal-Lance +40 (from the Cyclonic Melta Lance, +25), Twin-linked Iliastus +30, Molecular Acid-Cannon +40 (from the Heavy Conversion Beamer, +20); a Unification's are priced from each arm's own weapon.
-- The Graviton Shredder-Cannon replaces a single Gravis Bolt Cannon or Gravis Autocannon, so the Furibundus (whose are Twin-linked) has no Shredder; the Helfrost Cannon replaces a Gravis Melta Cannon or Gravis Plasma Cannon, which the Furibundus does not carry.
+- The Furibundus, whose guns are Twin-linked, takes Twin-linked versions: the Twin-linked Graviton Shredder-Cannon for its Twin-linked Gravis Bolt Cannon or Autocannon, and the Twin-linked Helfrost Cannon for its Cyclonic Melta Lance (it has no Gravis Melta or Plasma Cannon). A twin-linked swap costs twice the single one, as the Twin-linked Iliastus Assault Cannon does: +40 and +55 from the Siege Claw.
 - The Hexagrammaton Sub-type is a pick of its own on the squadron, required in a Dark Angels detachment; the wing-only upgrades and weapons show once the squadron has the matching wing.
+- Wherever an official weapon exists, the data uses it: the Siege Claw and Siege Drill are the Leviathan Siege Claw and Siege Drill, the Cyclone Missile System is the Cyclone Missile Launcher (with its Flak missile), the Furibundus's Twin-linked Gravis Bolt Cannon and Autocannon are the official Gravis Bolt Cannon and Autocannon (Twin-linked already), the Carapace Phosphex Discharger is the Phosphex Discharger, and the Shrapnel Cannon, Twin-Linked Shrapnel Cannon, Dragon's Breath Heavy Flamer, Iliastus Assault Cannons and Plasma Repeater are the official ones, with their official profiles (shown above). The Mech Library cannot link the Legiones Astartes library, so the weapons only that library has are exact copies (their rules with them; not the Hammer of Olympia reroll, which belongs to that Rite of War). Weapons with no official counterpart keep the profiles given here.

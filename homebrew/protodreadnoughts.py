@@ -168,6 +168,56 @@ def weapon(ctx, name, profiles):
     return e
 
 
+LA_LIBRARY = "2022 - Legiones Astartes.cat"
+# Official weapons that only the Legiones Astartes library has, which the Mech Library cannot link (it does not import
+# that library): copied exactly (name, profile, rules), with ids of their own.
+OFFICIAL_COPIES = {"Leviathan Siege Claw": "4838-a0ca-93d8-f6b2", "Leviathan Siege Drill": "d266-0d1e-b8e5-1e90",
+                   "Shrapnel Cannon": "975e-14eb-caed-4b5b", "Twin-Linked Shrapnel Cannon": "f3c2-ec0b-748b-4b86",
+                   "Dragon's Breath Heavy Flamer": "1a5c-0c5f-d798-a067", "Iliastus Assault Cannon": "10aa-3c70-2bbe-9509",
+                   "Twin-linked Iliastus Assault Cannon": "6575-5c45-c419-9b47", "Plasma Repeater": "7aa4-cb4e-0e15-6213"}
+DROP_RULES = {"7ca5-9127-867f-0a57"}           # the Hammer of Olympia Rite of War's reroll: not the weapon's own rule
+
+
+def official_copy(ctx, name):
+    """The Legiones Astartes library's weapon, copied into this library: its profiles, and its special rules (a
+    rule the game system does not have goes with it, written into the copy); none of its Legion or Rite of War
+    modifiers (the Protodreadnoughts' options say who may take it)."""
+    root = ET.parse(LA_LIBRARY).getroot()
+    rules = {r.get("id"): r for r in root.iter(f"{NS}rule")}
+    src = next(e for e in root.find(f"{NS}sharedSelectionEntries") if e.get("id") == OFFICIAL_COPIES[name])
+    raw = ET.tostring(src, encoding="unicode").replace(NS, "").replace('xmlns:ns0="http://www.battlescribe.net/schema/catalogueSchema"', "")
+    raw = re.sub(r"ns0:", "", raw)
+    e = ET.fromstring(raw)
+    for tag in ("modifiers", "categoryLinks"):
+        for c in e.findall(tag):
+            e.remove(c)
+    gst_rules = set(index([GST])[1].values())
+    inline = []
+    for il in list(e.iter("infoLinks")):
+        for l in list(il):
+            t = l.get("targetId")
+            if t in DROP_RULES:
+                il.remove(l)
+            elif l.get("type") == "rule" and t not in gst_rules:
+                il.remove(l)
+                r = rules[t]
+                d = r.find(f"{NS}description")
+                inline.append((r.get("name"), d.text if d is not None else ""))
+    if inline:
+        rs = child(e, "rules")
+        for rname, text in inline:
+            r = el(rs, "rule", id=mid("official copy", OFFICIAL_COPIES[name], rname), name=rname, hidden=False)
+            el(r, "description").text = text
+    for x in e.iter():
+        for a in ("publicationId", "page"):
+            x.attrib.pop(a, None)
+        if x.get("id"):
+            x.set("id", mid("official copy", OFFICIAL_COPIES[name], x.get("id")))
+    ctx.new.append(e)
+    ctx.entries[norm(name)] = e.get("id")
+    return e
+
+
 def wargear(ctx, name, text, rules=()):
     key = (ctx.key, "wargear", name)
     e = ET.Element("selectionEntry", {"id": mid(*key), "name": name, "hidden": "false", "collective": "false",
@@ -186,13 +236,22 @@ def wargear(ctx, name, text, rules=()):
     return e
 
 
-def link(parent, ctx, name, key, cost=None, mn=None, mx=None, who=None):
-    l = el(child(parent, "entryLinks"), "entryLink", id=mid(*key, name), name=name, hidden=False, collective=False,
+# Existing weapons the options now link under their own names, and the names the options had when they linked this
+# script's own copies: the ids are made from the old names, so saved rosters keep their picks.
+ID_ALIAS = {"Leviathan Siege Claw": "Siege Claw", "Leviathan Siege Drill": "Siege Drill",
+            "Cyclone Missile Launcher": "Cyclone Missile System", "Twin-Linked Shrapnel Cannon": "Twin-linked Shrapnel Cannon",
+            "Phosphex Discharger": "Carapace Phosphex Discharger",
+            "Dragon's Breath Heavy Flamer": "Heavy Dragon's Breath Flamer", "Plasma Repeater": "Twin-linked Plasma Repeater"}
+
+
+def link(parent, ctx, name, key, cost=None, mn=None, mx=None, who=None, idname=None):
+    n = idname or ID_ALIAS.get(name, name) if ctx.key == "imperial" else name
+    l = el(child(parent, "entryLinks"), "entryLink", id=mid(*key, n), name=name, hidden=False, collective=False,
            import_=True, targetId=ctx.id(name), type="selectionEntry")
     if mn is not None:
-        add_constraint(l, "min", mn, mid(*key, name, "min"))
+        add_constraint(l, "min", mn, mid(*key, n, "min"))
     if mx is not None:
-        add_constraint(l, "max", mx, mid(*key, name, "max"))
+        add_constraint(l, "max", mx, mid(*key, n, "max"))
     if cost is not None:
         add_cost(l, cost)
     return show_if(l, who)
@@ -211,16 +270,17 @@ def group(parent, name, key, mn, mx):
 def option(g, ctx, opt, key):
     """One choice in a pick: (label, cost, weapons, in-built pick or None, who). A label that is one weapon with
     nothing in-built is a plain link to it."""
-    label, cost, weapons, inbuilt, who = opt
+    label, cost, weapons, inbuilt, who = opt[:5]
+    idl = opt[5] if len(opt) > 5 else (ID_ALIAS.get(label, label) if ctx.key == "imperial" else label)
     if weapons == [label] and not inbuilt:
-        return link(g, ctx, label, key, cost=cost, mx=1, who=who)
-    e = el(child(g, "selectionEntries"), "selectionEntry", id=mid(*key, label), name=label, hidden=False,
+        return link(g, ctx, label, key, cost=cost, mx=1, who=who, idname=idl)
+    e = el(child(g, "selectionEntries"), "selectionEntry", id=mid(*key, idl), name=label, hidden=False,
            collective=False, import_=True, type="upgrade")
-    add_constraint(e, "max", 1, mid(*key, label, "max"))
+    add_constraint(e, "max", 1, mid(*key, idl, "max"))
     for w in weapons:
-        link(e, ctx, w, key + (label,), mn=1, mx=1)
+        link(e, ctx, w, key + (idl,), mn=1, mx=1)
     if inbuilt:
-        pick(e, ctx, "In-built weapon", inbuilt, key + (label, "in-built"))
+        pick(e, ctx, "In-built weapon", inbuilt, key + (idl, "in-built"))
     add_cost(e, cost)
     return show_if(e, who)
 
@@ -324,8 +384,8 @@ INBUILT_IMPERIAL = [("Heavy Flamer", 5, "Heavy Flamer"), ("Plasma Blaster", 10, 
                     ("Graviton Gun", 15, "Graviton Gun"), ("Meltagun", 15, "Meltagun")]
 
 
-LEGION_INBUILT = [("Heavy Dragon's Breath Flamer", 10, "sal"), ("Heavy Alchem-Sprayer", 10, "dg"),
-                  ("Plasma Caster", 10, "da")]
+LEGION_INBUILT = [("Dragon's Breath Heavy Flamer", 10, "sal"), ("Heavy Alchem-Sprayer", 10, "dg"),
+                  ("Plasma Caster", 10, "da")]          # a Twin-linked Bolter's Dark Angels swap: the Plasma Repeater
 
 
 def inbuilt(default, items, mech=False, legions=True):
@@ -334,48 +394,44 @@ def inbuilt(default, items, mech=False, legions=True):
         opts += [("Volkite Charger", 5, ["Volkite Charger"], None, "mech"),
                  ("Phased Plasma-Fusil", 10, ["Phased Plasma-Fusil"], None, "mech")]
     if legions and items is INBUILT_IMPERIAL:
-        opts += [(n, c, [n], None, who) for n, c, who in LEGION_INBUILT]
+        for n, c, who in LEGION_INBUILT:
+            if n == "Plasma Caster" and default == "Twin-linked Bolter":
+                n = "Plasma Repeater"                    # the official (Dark Angels) Plasma Repeater
+            opts.append((n, c, [n], None, who))
     return opts
 
 
 def imperial_weapons(ctx):
-    weapon(ctx, "Siege Claw", [(None, "-", "10", "2", "Melee, Brutal (3)")])
-    weapon(ctx, "Siege Drill", [(None, "-", "12", "2", "Melee, Armourbane (Melee)")])
-    weapon(ctx, "Cyclone Missile System", [("Cyclone Missile System - Frag", '48"', "4", "6", 'Heavy 1, Large Blast (5"), Pinning'),
-                                           ("Cyclone Missile System - Krak", '48"', "8", "3", "Heavy 2, Twin-linked")])
+    for name in OFFICIAL_COPIES:                       # the existing weapons the Mech Library cannot link
+        official_copy(ctx, name)
     weapon(ctx, "Twin-linked Cyclone Missile Pod", [
         ("Twin-linked Cyclone Missile Pod - Frag", '48"', "4", "6", 'Heavy 1, Large Blast (5"), Pinning, Twin-linked'),
         ("Twin-linked Cyclone Missile Pod - Krak", '48"', "8", "3", "Heavy 2, Twin-linked")])
-    weapon(ctx, "Twin-linked Gravis Bolt Cannon", [(None, '48"', "5", "4", "Heavy 6, Twin-linked")])
-    weapon(ctx, "Twin-linked Gravis Autocannon", [(None, '48"', "7", "4", "Heavy 3, Rending (6+), Twin-linked")])
     weapon(ctx, "Twin-linked Gravis Lascannon", [(None, '48"', "9", "2", "Heavy 2, Sunder, Twin-linked")])
     if norm("Twin-linked Mauler Bolt Cannon") not in ctx.entries:
         weapon(ctx, "Twin-linked Mauler Bolt Cannon", [(None, '24"', "6", "4", "Heavy 4, Pinning, Twin-linked")])
     weapon(ctx, "Excoriator Chain-Cleaver", [(None, "-", "+2", "2", "Melee, Shred, Brutal (2), Unwieldy; a pair "
                                                                    "grants +1 Attack")])
     weapon(ctx, "Graviton Crusher-Claw", [(None, "-", "+2", "2", "Melee, Concussive (1), Haywire, Unwieldy")])
-    weapon(ctx, "Shrapnel Cannon", [(None, '18"', "5", "5", "Heavy 6, Pinning, Shred")])
-    weapon(ctx, "Twin-linked Shrapnel Cannon", [(None, '18"', "5", "5", "Heavy 6, Pinning, Shred, Twin-linked")])
-    weapon(ctx, "Carapace Phosphex Discharger", [(None, '18"', "5", "2", 'Heavy 1, Blast (3"), Poisoned (3+), '
-                                                                         "Crawling Fire, Lingering Death, One Shot")])
     # the Legions' weapons
     weapon(ctx, "Graviton Shredder-Cannon", [(None, '24"', "*", "4", 'Heavy 3, Blast (3"), Graviton Pulse, '
                                                                     "Concussive (1), Haywire")])
     weapon(ctx, "Cyber-Augmetic Siege Wrench", [(None, "-", "x2", "2", "Melee, Armourbane (Melee), Sunder, Unwieldy")])
-    weapon(ctx, "Heavy Dragon's Breath Flamer", [(None, "Template", "6", "3", 'Assault 1, Torrent (6"), Soulblaze')])
     weapon(ctx, "Obsidian Thermal-Lance", [(None, '18"', "9", "1", "Heavy 1, Beam, Armourbane (Melta), Master-crafted")])
     weapon(ctx, "Heavy Alchem-Sprayer", [(None, "Template", "1", "3", 'Assault 1, Poisoned (2+), Fleshbane, '
                                                                       'Torrent (6")')])
     weapon(ctx, "Bile-Caster Mortar", [(None, '36"', "4", "4", 'Heavy 1, Blast (3"), Barrage, Poisoned (3+), Pinning')])
-    weapon(ctx, "Iliastus Assault Cannon", [(None, '24"', "6", "4", "Heavy 4, Rending (6+), Shell Shock (1)")])
-    weapon(ctx, "Twin-linked Iliastus Assault Cannon", [(None, '24"', "6", "4", "Heavy 4, Rending (6+), Shell Shock (1), "
-                                                                                "Twin-linked")])
     weapon(ctx, "Solarite Siege-Fist", [(None, "-", "x2", "1", "Melee, Armourbane (Melee), Instant Death, Unwieldy")])
     weapon(ctx, "Great Frost-Cleaver", [(None, "-", "+3", "2", "Melee, Rending (5+), Shred, Brutal (2); a pair grants "
                                                                "+1 Attack")])
     weapon(ctx, "Helfrost Cannon", [(None, '24"', "8", "2", 'Heavy 1, Blast (3"), Helfrost (models suffering unsaved '
                                                             "wounds must pass a Strength test or be removed from play)")])
     weapon(ctx, "Plasma Caster", [(None, '18"', "7", "2", "Assault 2, Gets Hot, Breaching (4+)")])
+    weapon(ctx, "Twin-linked Graviton Shredder-Cannon", [(None, '24"', "*", "4", 'Heavy 3, Blast (3"), Graviton Pulse, '
+                                                                                "Concussive (1), Haywire, Twin-linked")])
+    weapon(ctx, "Twin-linked Helfrost Cannon", [(None, '24"', "8", "2", 'Heavy 1, Blast (3"), Helfrost (models suffering '
+                                                                        "unsaved wounds must pass a Strength test or be "
+                                                                        "removed from play), Twin-linked")])
     weapon(ctx, "Molecular Acid-Cannon", [(None, '24"', "6", "2", 'Heavy 2, Blast (3"), Fleshbane, Armourbane (Ranged), '
                                                                   "Ignores Cover")])
     weapon(ctx, "Terranic Greatsword-Gauntlet", [(None, "-", "+2", "2", "Melee, Rending (5+), Murderous Strike (6+), "
@@ -394,11 +450,11 @@ def lucifer_arm():
             fist("Gravis Chainfist", 10, "Combi-bolter"),
             ("Gravis Bolt Cannon", 5, ["Gravis Bolt Cannon"], None, None),
             ("Gravis Autocannon", 10, ["Gravis Autocannon"], None, None),
-            ("Cyclone Missile System", 15, ["Cyclone Missile System"], None, None),
+            ("Cyclone Missile Launcher", 15, ["Cyclone Missile Launcher"], None, None),
             ("Gravis Lascannon", 15, ["Gravis Lascannon"], None, None),
             ("Gravis Melta Cannon", 15, ["Gravis Melta Cannon"], None, None),
             ("Heavy Conversion Beamer", 20, ["Heavy Conversion Beamer"], None, None),
-            ("Siege Drill with in-built Heavy Flamer", 15, ["Siege Drill", "Heavy Flamer"], None, None),
+            ("Siege Drill with in-built Heavy Flamer", 15, ["Leviathan Siege Drill", "Heavy Flamer"], None, None),
             # Mechanicum: a Mauler Bolt Cannon for the bolt cannon or autocannon (+5), a Kheres or Darkfire for the
             # lascannon (+15, +20)
             ("Mauler Bolt Cannon", 10, ["Mauler Bolt Cannon"], None, "mech"),
@@ -411,10 +467,13 @@ def lucifer_arm():
 
 
 def furibundus_arm():
-    return [("Siege Claw", 0, ["Siege Claw"], inbuilt("Twin-linked Bolter", INBUILT_IMPERIAL, mech=True), None),
-            ("Siege Drill", 10, ["Siege Drill"], inbuilt("Twin-linked Bolter", INBUILT_IMPERIAL, mech=True), None),
-            ("Twin-linked Gravis Bolt Cannon", 10, ["Twin-linked Gravis Bolt Cannon"], None, None),
-            ("Twin-linked Gravis Autocannon", 15, ["Twin-linked Gravis Autocannon"], None, None),
+    return [("Leviathan Siege Claw", 0, ["Leviathan Siege Claw"], inbuilt("Twin-linked Bolter", INBUILT_IMPERIAL, mech=True),
+             None),
+            ("Leviathan Siege Drill", 10, ["Leviathan Siege Drill"], inbuilt("Twin-linked Bolter", INBUILT_IMPERIAL, mech=True),
+             None),
+            # the official Gravis Bolt Cannon and Gravis Autocannon are Twin-linked already
+            ("Gravis Bolt Cannon", 10, ["Gravis Bolt Cannon"], None, None, "Twin-linked Gravis Bolt Cannon"),
+            ("Gravis Autocannon", 15, ["Gravis Autocannon"], None, None, "Twin-linked Gravis Autocannon"),
             ("Twin-linked Cyclone Missile Pod", 25, ["Twin-linked Cyclone Missile Pod"], None, None),
             ("Twin-linked Gravis Lascannon", 25, ["Twin-linked Gravis Lascannon"], None, None),
             ("Cyclonic Melta Lance", 25, ["Cyclonic Melta Lance"], None, None),
@@ -427,7 +486,7 @@ def furibundus_arm():
              inbuilt("Twin-linked Bolter", INBUILT_IMPERIAL), "we"),
             ("Graviton Crusher-Claw", 15, ["Graviton Crusher-Claw"], inbuilt("Twin-linked Bolter", INBUILT_IMPERIAL),
              "iw"),
-            ("Twin-linked Shrapnel Cannon", 10, ["Twin-linked Shrapnel Cannon"], None, "iw")] + legion_arms("furibundus")
+            ("Twin-Linked Shrapnel Cannon", 10, ["Twin-Linked Shrapnel Cannon"], None, "iw")] + legion_arms("furibundus")
 
 
 def unification_arm(base):
@@ -435,13 +494,13 @@ def unification_arm(base):
     Cyclone Missile System, 0)."""
     if base == "primary":
         costs = {"Gravis Bolt Cannon": 0, "Gravis Autocannon": 5, "Gravis Plasma Cannon": 10,
-                 "Volkite Dual-Culverin": 10, "Cyclone Missile System": 10, "Gravis Lascannon": 15}
+                 "Volkite Dual-Culverin": 10, "Cyclone Missile Launcher": 10, "Gravis Lascannon": 15}
         order = ["Gravis Bolt Cannon", "Gravis Autocannon", "Gravis Plasma Cannon", "Volkite Dual-Culverin",
-                 "Cyclone Missile System", "Gravis Lascannon"]
+                 "Cyclone Missile Launcher", "Gravis Lascannon"]
     else:
-        costs = {"Cyclone Missile System": 0, "Gravis Bolt Cannon": -10, "Gravis Autocannon": -5,
+        costs = {"Cyclone Missile Launcher": 0, "Gravis Bolt Cannon": -10, "Gravis Autocannon": -5,
                  "Gravis Plasma Cannon": 0, "Volkite Dual-Culverin": 0, "Gravis Lascannon": 5}
-        order = ["Cyclone Missile System", "Gravis Bolt Cannon", "Gravis Autocannon", "Gravis Plasma Cannon",
+        order = ["Cyclone Missile Launcher", "Gravis Bolt Cannon", "Gravis Autocannon", "Gravis Plasma Cannon",
                  "Volkite Dual-Culverin", "Gravis Lascannon"]
     out = [(n, costs[n], [n], None, None) for n in order]
     bolt, las = costs["Gravis Bolt Cannon"], costs["Gravis Lascannon"]
@@ -470,8 +529,12 @@ def legion_arms(pattern):
         cb, melee = "Twin-linked Bolter", [("Cyber-Augmetic Siege Wrench", 10, "ih"), ("Solarite Siege-Fist", 15, "if"),
                                            ("Great Frost-Cleaver", 15, "sw"),
                                            ("Terranic Greatsword-Gauntlet", 10, "da deathwing")]
+        # twin-linked swaps cost twice the single one (as the Twin-linked Iliastus Assault Cannon does): the
+        # Twin-linked Graviton Shredder-Cannon for the Twin-linked Gravis Bolt Cannon (+30), the Twin-linked Helfrost
+        # Cannon for the Cyclonic Melta Lance (+30)
         guns = [("Obsidian Thermal-Lance", 25 + 15, "sal"), ("Twin-linked Iliastus Assault Cannon", 10 + 20, "if"),
-                ("Molecular Acid-Cannon", 20 + 20, "da dreadwing")]
+                ("Molecular Acid-Cannon", 20 + 20, "da dreadwing"),
+                ("Twin-linked Graviton Shredder-Cannon", 10 + 30, "ih"), ("Twin-linked Helfrost Cannon", 25 + 30, "sw")]
     return ([(n, c, [n], inbuilt(cb, INBUILT_IMPERIAL), who) for n, c, who in melee] +
             [(n, c, [n], None, who) for n, c, who in guns])
 
@@ -639,7 +702,7 @@ COMMON = [("Relic (X)", "Relic (2)"), ("Support Squad", None)]
 def imperial_specs():
     lucifer_ups, lucifer_opts = imperial_upgrades(True)
     carapace = [("Havoc Launcher", 10, "not dg"), ("Bile-Caster Mortar", 15, "dg"), ("Dreadnought Extra Armour", 15, None),
-                ("Protodreadnought Helical Targeting Array", 15, None), ("Carapace Phosphex Discharger", 15, "iw")]
+                ("Protodreadnought Helical Targeting Array", 15, None), ("Phosphex Discharger", 15, "iw")]
     return [
         {"name": "Lucifer-Pattern Protodreadnought", "model": "Lucifer-Pattern Protodreadnought", "slot": "Elites",
          "type": "Armiger", "stats": ["7", "4", "4", "7", "7", "5", "3", "3", "8", "3+"], "max": 3,
@@ -655,7 +718,7 @@ def imperial_specs():
          "rules": COMMON + [("Unstable Dual-Core Reactor", None), ("Clumsy Hydraulic Actuators", None),
                             ("Siege-Breaker Chassis", None)],
          "arms": [("Arm Weapon (1)", furibundus_arm()), ("Arm Weapon (2)", furibundus_arm())],
-         "carapace": [("Carapace Weapon", [("Carapace Phosphex Discharger", 15, None), ("Havoc Launcher", 10, "not dg"),
+         "carapace": [("Carapace Weapon", [("Phosphex Discharger", 15, None), ("Havoc Launcher", 10, "not dg"),
                                            ("Bile-Caster Mortar", 15, "dg")], 1),
                       ("Carapace & Chassis Upgrades", [("Dreadnought Extra Armour", 15, None),
                                                        ("Protodreadnought Helical Targeting Array", 15, None)], None)],
@@ -716,6 +779,12 @@ def insert_top(text, container, elements):
     text.s = text.s[:i] + "".join(text.nl + et.xml(e, 2).replace("\n", text.nl) for e in elements) + text.s[i:]
 
 
+RETIRED = ["Siege Claw", "Siege Drill", "Cyclone Missile System", "Twin-linked Gravis Bolt Cannon",
+           "Twin-linked Gravis Autocannon", "Shrapnel Cannon", "Twin-linked Shrapnel Cannon", "Carapace Phosphex Discharger",
+           "Heavy Dragon's Breath Flamer", "Iliastus Assault Cannon", "Twin-linked Iliastus Assault Cannon",
+           "Twin-linked Plasma Repeater"]
+
+
 def update():
     """Rebuild the Imperial units and their weapons and upgrades in the Mech Library from this script's data, in
     place: every entry keeps its id (saved rosters keep loading); entries new to the data are added."""
@@ -733,6 +802,10 @@ def update():
     units = [unit_entry(ctx, s) for s in imperial_specs()]
     added = replaced = 0
     fresh = []
+    for name in RETIRED:                               # this script's own weapons, now the existing ones
+        eid = mid("imperial", "weapon", name)
+        if f'id="{eid}"' in lib.s:
+            lib.remove(eid)
     for e in ctx.new + units:
         if f'id="{e.get("id")}"' in lib.s:
             start, end, indent, _ = lib.block(e.get("id"))
