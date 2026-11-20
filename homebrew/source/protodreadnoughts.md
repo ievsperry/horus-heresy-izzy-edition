@@ -143,6 +143,109 @@ In an Iron Warriors detachment, a squadron may take one of (every model takes it
 | Graviton Crusher-Claw | Melee | +2 | 2 | Melee, Concussive (1), Haywire, Unwieldy |
 | Carapace Phosphex Discharger | 18" | 5 | 2 | Heavy 1, Blast (3"), Poisoned (3+), Crawling Fire, Lingering Death, One Shot |
 
+### Iron Hands: X Legion
+
+The Iron Hands maintained the largest reserves of early Great Crusade walkers in the Legiones Astartes, fusing their living pilots directly into the walker's cold iron nervous system and layering reinforced cyber-alloy plates over unstable reactor housings. In an Iron Hands detachment, a squadron may take one of (every model takes it):
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Gorgon Cyber-Mantle Plating | +20 per model | It Will Not Die (5+) and Armoured Ceramite (enemy Armourbane (Melta) weapons roll no extra D6 at half range). |
+| Mind-Impulse Neural Hardwire | +15 per model | Fearless and Battlesmith (5+) (it may repair 1 lost Wound on itself at the start of its Shooting phase instead of firing a weapon). |
+| Medusan Graviton Capacitor | +20 per model | All Graviton and Conversion weapons +6" range and Haywire. |
+
+**Weapons.** A Lucifer or Unification may exchange a Gravis Bolt Cannon or Gravis Autocannon for a **Graviton Shredder-Cannon** (+15 each). A Lucifer or Furibundus may exchange a Gravis Power Fist or Siege Claw for a **Cyber-Augmetic Siege Wrench** (+10 each), with its in-built weapon.
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Graviton Shredder-Cannon | 24" | * | 4 | Heavy 3, Blast (3"), Graviton Pulse, Concussive (1), Haywire |
+| Cyber-Augmetic Siege Wrench | Melee | x2 | 2 | Melee, Armourbane (Melee), Sunder, Unwieldy |
+
+### Salamanders: XVIII Legion
+
+Forged and master-crafted by the Techmarines of Nocturne, with dragon-scale heat shielding, over-pressurised promethium reservoirs and stabilised thermal reactors. In a Salamanders detachment, a squadron may take one of:
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Nocturnean Mantle-Shielding | +20 per model | It Will Not Die (5+) and Armoured Ceramite; it does not automatically explode at 0 Wounds, but Explodes only on a D6 roll of 5+. |
+| Drake-Scale Promethium Tanks | +15 per model | All Flame and Melta weapons +1 Strength (to a maximum of 9) and Shred. |
+| Forge-Master's Reinforced Pistons | +15 per model | Ignores the -1" Run penalty from Clumsy Hydraulic Actuators (still -1" to Charge, no Sweeping Advances) and gains Move Through Cover. |
+
+**Weapons.** Any in-built Combi-bolter or Twin-linked Bolter may be exchanged for a **Heavy Dragon's Breath Flamer** (+10 each). A Lucifer's Gravis Melta Cannon or a Furibundus's Cyclonic Melta Lance may be exchanged for an **Obsidian Thermal-Lance** (+15 each).
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Heavy Dragon's Breath Flamer | Template | 6 | 3 | Assault 1, Torrent (6"), Soulblaze |
+| Obsidian Thermal-Lance | 18" | 9 | 1 | Heavy 1, Beam, Armourbane (Melta), Master-crafted |
+
+### Death Guard: XIV Legion
+
+Battered, corroded walkers sealed against chemical and radiological fallout, grinding through toxic kill-zones. In a Death Guard detachment, a squadron may take one of:
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Barbaran Chem-Sealed Hull | +20 per model | Feel No Pain (5+) against wounds from Poisoned (X), Fleshbane, Phosphex and Rad weapons, and It Will Not Die (5+). |
+| Alchem-Reservoir Feed | +15 per model | Flamer weapons gain Poisoned (3+) and Fleshbane; Bolt and Autocannon weapons gain Poisoned (4+). |
+| Relentless Attrition Actuators | +15 per model | Ignores negative modifiers to Charge distance rolls from terrain or enemy special rules (still -1" from Clumsy Hydraulic Actuators); incoming Blast and Template attacks are -1 Strength. |
+
+**Weapons.** Any in-built Combi-bolter or Twin-linked Bolter may be exchanged for a **Heavy Alchem-Sprayer** (+10 each). The **Bile-Caster Mortar** (+15 per model) replaces the Havoc Launcher option.
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Heavy Alchem-Sprayer | Template | 1 | 3 | Assault 1, Poisoned (2+), Fleshbane, Torrent (6") |
+| Bile-Caster Mortar | 36" | 4 | 4 | Heavy 1, Blast (3"), Barrage, Poisoned (3+), Pinning |
+
+### Imperial Fists: VII Legion
+
+Veterans of void-boarding actions and bastion defence aboard the Phalanx and the Solar star-forts. In an Imperial Fists detachment, a squadron may take one of:
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Phalanx Boarding-Bulwark | +20 per model | A 5+ Invulnerable Save against shooting attacks from its Front Arc (4+ with Dreadnought Extra Armour); provides Hard Cover (4+) to friendly Legiones Astartes Infantry within 2". |
+| Inwit Ballistic-Sync Cogitator | +15 per model | Re-roll To Hit rolls of 1 with Bolt, Auto and Missile weapons; +1 BS for Overwatch and Interceptor Reactions (to a maximum of BS 4). |
+| Bastion-Anchor Clamps | +15 per model | If it remained stationary in its preceding Movement phase: Counter-Attack (1) and +1 Toughness against shooting until the start of its next Movement phase. |
+
+**Weapons.** A Gravis Bolt Cannon may be exchanged for an **Iliastus Assault Cannon** (+10), or a Furibundus's Twin-linked Gravis Bolt Cannon for a **Twin-linked Iliastus Assault Cannon** (+20). A Lucifer or Furibundus may exchange a Gravis Power Fist or Siege Claw for a **Solarite Siege-Fist** (+15 each), with its in-built weapon.
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Iliastus Assault Cannon | 24" | 6 | 4 | Heavy 4, Rending (6+), Shell Shock (1) |
+| Solarite Siege-Fist | Melee | x2 | 1 | Melee, Armourbane (Melee), Instant Death, Unwieldy |
+
+### Space Wolves: VI Legion
+
+Iron-clad hunting beasts, their safety governors stripped and their pilots wired into pack-auspexes. In a Space Wolves detachment, a squadron may take one of:
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Fenrisian Stalker-Actuators | +20 per model | Ignores the -1" Run and Charge penalty from Clumsy Hydraulic Actuators; gains Move Through Cover and Scout. |
+| Pack-Hunter Auspex Array | +15 per model | Counter-Attack (1) and Preferred Enemy (Infantry) in close combat; friendly Space Wolves Infantry within 6" may re-roll failed Charge distance rolls. |
+| Wyrd-Rune Totem Plating | +15 per model | Adamantium Will (5+) (a 5+ Invulnerable Save against psychic powers and weapons) and Feel No Pain (6+) in the Assault phase. |
+
+**Weapons.** A Lucifer or Furibundus may exchange a Gravis Power Fist or Siege Claw for a **Great Frost-Cleaver** (+15 each), with its in-built weapon. A Lucifer's Gravis Melta Cannon or a Unification's Gravis Plasma Cannon may be exchanged for a **Helfrost Cannon** (+15 each).
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Great Frost-Cleaver | Melee | +3 | 2 | Melee, Rending (5+), Shred, Brutal (2); a pair grants +1 Attack |
+| Helfrost Cannon | 24" | 8 | 2 | Heavy 1, Blast (3"), Helfrost (models suffering unsaved wounds must pass a Strength test or be removed from play) |
+
+### Dark Angels: I Legion
+
+Assigned to the Wings of the Hexagrammaton and armed from the First Legion's armouries of Old Night technology. In a Dark Angels detachment, a squadron must select a **Hexagrammaton Sub-type** (Deathwing, Dreadwing, Ironwing, Ravenwing, Firewing or Stormwing) and may take one of:
+
+| Upgrade | Cost | Effect |
+| --- | --- | --- |
+| Ironwing Targeting Matrix (Ironwing only) | +15 per model | +1 To Hit against Vehicles, Dreadnoughts, Armigers and Automata; It Will Not Die (5+). |
+| Dreadwing Stasis-Core Shroud (Dreadwing only) | +20 per model | Enemy units charging it subtract 2" from their Charge distance rolls and -1 Initiative (to a minimum of 1) while locked in combat with it. |
+| Deathwing Companions' Oath-Plate (Deathwing only) | +15 per model | Fearless, Hatred (Everything) in close combat, and +1 WS against Characters, Dreadnoughts and Armigers. |
+
+**Weapons.** Any in-built Combi-bolter or Twin-linked Bolter may be exchanged for a **Plasma Caster** (+10 each). A Dreadwing squadron may exchange a Gravis Melta Cannon or Heavy Conversion Beamer for a **Molecular Acid-Cannon** (+20 each); a Deathwing squadron may exchange a Gravis Power Fist or Siege Claw for a **Terranic Greatsword-Gauntlet** (+10 each), with its in-built weapon.
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Plasma Caster | 18" | 7 | 2 | Assault 2, Gets Hot, Breaching (4+) |
+| Molecular Acid-Cannon | 24" | 6 | 2 | Heavy 2, Blast (3"), Fleshbane, Armourbane (Ranged), Ignores Cover |
+| Terranic Greatsword-Gauntlet | Melee | +2 | 2 | Melee, Rending (5+), Murderous Strike (6+), Duellist's Edge (1) |
+
 ## Leagues of Votann Protodreadnought Equivalents
 
 ### Ironkin Ancestor-Rig (Elites) — 125 pts
@@ -217,3 +320,6 @@ The Twin-linked Magna-Rail Cannon, Heavy SP Conversion Beamer (SP heavy conversi
 - The doc gives no Force Organisation slot; the Lucifer-Pattern and Ironkin Ancestor-Rig are Elites, the others Heavy Support.
 - The Mechanicum swaps are priced from the weapon they replace: a Lucifer's Mauler Bolt Cannon is +10 from the fist (Gravis Bolt Cannon +5, then +5), its Kheres +30 and Darkfire +35 (from the Gravis Lascannon, +15). An Iron Warriors Shrapnel Cannon is priced as the Gravis Bolt Cannon it replaces.
 - The Questoris Household upgrade is offered in Mechanicum and Questoris Household detachments; taking it moves the squadron to the Troops slot with the Line sub-type.
+- Legion swaps are priced from the weapon they replace, as the Mechanicum ones are: a Lucifer's Graviton Shredder-Cannon is +20 from the fist (Gravis Bolt Cannon +5, then +15), its Obsidian Thermal-Lance and Helfrost Cannon +30 (from the Gravis Melta Cannon, +15), its Iliastus Assault Cannon +15, its Molecular Acid-Cannon +35; a Furibundus's Obsidian Thermal-Lance +40 (from the Cyclonic Melta Lance, +25), Twin-linked Iliastus +30, Molecular Acid-Cannon +40 (from the Heavy Conversion Beamer, +20); a Unification's are priced from each arm's own weapon.
+- The Graviton Shredder-Cannon replaces a single Gravis Bolt Cannon or Gravis Autocannon, so the Furibundus (whose are Twin-linked) has no Shredder; the Helfrost Cannon replaces a Gravis Melta Cannon or Gravis Plasma Cannon, which the Furibundus does not carry.
+- The Hexagrammaton Sub-type is a pick of its own on the squadron, required in a Dark Angels detachment; the wing-only upgrades and weapons show once the squadron has the matching wing.
