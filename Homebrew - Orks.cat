@@ -4195,6 +4195,15 @@ The effect lasts until the end of the turn.</description>
         <infoLink name="Void Shields" id="b6dd-5b22-c19c-ea41" hidden="false" targetId="c503-f5b8-3da0-16e6" type="rule" />
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="House Grotz" hidden="false" id="2c89-8824-03b8-8e61" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="House Grotz" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="73fe-95b9-c9d3-36b9">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of each friendly Movement phase, roll a D6 for a Fortification with House Grotz; on a 5+, it restores 1 lost Hull Point (up to its starting maximum).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Grot Riggers" hidden="false" id="681c-0e52-a80a-61fe" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Grot Riggers" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="69d5-9971-ece4-fa00">
@@ -19821,9 +19830,9 @@ The effect lasts until the end of the turn.</description>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50" />
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Grot Riggers" hidden="false" id="c3cd-82e7-e223-3b7e" type="selectionEntry" targetId="681c-0e52-a80a-61fe">
+                <entryLink import="true" name="House Grotz" hidden="false" id="d0b2-1929-5c19-2cd2" type="selectionEntry" targetId="2c89-8824-03b8-8e61">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1d6-ab5a-5401-a412" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0b0-1499-a330-96cd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />

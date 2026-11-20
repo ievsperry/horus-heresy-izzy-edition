@@ -4013,7 +4013,7 @@ _Its Void Shields use the standard Void Shield rules of the Age of Darkness 2.0 
 | – Twin-linked rokkit launcha | +15 points |
 | **The Big Mek's Supa-Kustom Force Field Tower may take any of the following:** |  |
 | – Up to 2 Void Shields | +50 points each |
-| – Grot Riggers | +15 points |
+| – House Grotz | +15 points |
 
 ### Sky-Blasta Pad — 75 pts
 
@@ -4446,6 +4446,12 @@ Friendly Gretchin units within 6" of one or more models equipped with a grot-pro
 ### Supa-Kustom Force Field Array
 
 The Fortification projects 2 Void Shields (Armour Value 12) in a 12" radius around it, using the standard Void Shield rules of the Age of Darkness 2.0 rulebook (see Projected Supa-KFF Dome and Unstable Kustom Overdrive).
+
+### House Grotz
+
+_A resident crew of grots who live in the tower's scaffolding and bodge it back together under fire._
+
+At the start of each friendly Movement phase, roll a D6 for a Fortification with House Grotz; on a 5+, it restores 1 lost Hull Point (up to its starting maximum).
 
 ### Grot Riggers
 
