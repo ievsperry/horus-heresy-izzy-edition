@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="71" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="72" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -18684,7 +18684,14 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="057c-942c-56a6-f1cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
-                <entryLink id="33fe-0cc4-c5ed-530d" name="Phosphex Discharger" hidden="false" collective="false" import="true" targetId="2dfb-3606-923a-8987" type="selectionEntry">
+                <entryLink id="33fe-0cc4-c5ed-530d" name="Phosphex Discharger" hidden="true" collective="false" import="true" targetId="2dfb-3606-923a-8987" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5f54-457a-fbb9-6730" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e80-14a9-a259-5c04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -20450,7 +20457,7 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68c6-1457-5cf3-ea80" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="-10"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="1d92-773f-3818-586a" name="Gravis Autocannon" hidden="false" collective="false" import="true" targetId="8a23-e57d-b4a8-14a9" type="selectionEntry">
@@ -20458,7 +20465,7 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59f0-d07a-f8d5-126a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="-5"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="c112-be99-4493-afdc" name="Gravis Plasma Cannon" hidden="false" collective="false" import="true" targetId="32ad-6250-29c7-5466" type="selectionEntry">
@@ -20507,7 +20514,7 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7524-fd59-f740-73ad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="-5"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="f624-ecf2-92aa-553f" name="Kheres Assault Cannon" hidden="true" collective="false" import="true" targetId="fe77-2e74-160d-c7af" type="selectionEntry">
@@ -20552,7 +20559,7 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4ea-77ff-9e5a-198a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="-10"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="8348-c72f-2a65-8e01" name="Graviton Shredder-Cannon" hidden="true" collective="false" import="true" targetId="36bc-01cc-4d8f-f71c" type="selectionEntry">

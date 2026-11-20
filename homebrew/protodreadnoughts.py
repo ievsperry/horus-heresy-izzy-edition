@@ -551,7 +551,7 @@ def unification_arm(base):
                  "Volkite Dual-Culverin", "Gravis Lascannon"]
     out = [(n, costs[n], [n], None, None) for n in order]
     bolt, las = costs["Gravis Bolt Cannon"], costs["Gravis Lascannon"]
-    return out + [("Mauler Bolt Cannon", bolt + 5, ["Mauler Bolt Cannon"], None, "mech or omnissiah"),
+    out = out + [("Mauler Bolt Cannon", bolt + 5, ["Mauler Bolt Cannon"], None, "mech or omnissiah"),
                   ("Kheres Assault Cannon", las + 15, ["Kheres Assault Cannon"], None, "mech"),
                   ("Darkfire Cannon", las + 20, ["Darkfire Cannon"], None, "mech"),
                   ("Shrapnel Cannon", bolt, ["Shrapnel Cannon"], None, "iw"),
@@ -567,6 +567,8 @@ def unification_arm(base):
                   ("Banestrike Bolt Cannon", bolt + 10, ["Banestrike Bolt Cannon"], None, "soh or al"),
                   ("Warpfire Plasma Cannon", costs["Gravis Plasma Cannon"] + 10, ["Warpfire Plasma Cannon"], None, "wb"),
                   ("Heavy Mining Laser", las + 10, ["Heavy Mining Laser"], None, "prov industrial")]
+    # no swap costs less than nothing: the missile arm's cheaper guns are free
+    return [(n, max(0, c), *rest) for n, c, *rest in out]
 
 
 # the fist or claw swaps of the White Scars, Night Lords and Blackshields (the Ultramarines' replaces a fist only)
@@ -869,7 +871,7 @@ def imperial_specs():
          "rules": COMMON + [("Unstable Dual-Core Reactor", None), ("Clumsy Hydraulic Actuators", None),
                             ("Siege-Breaker Chassis", None)],
          "arms": [("Arm Weapon (1)", furibundus_arm()), ("Arm Weapon (2)", furibundus_arm())],
-         "carapace": [("Carapace Weapon", [("Phosphex Discharger", 15, None), ("Havoc Launcher", 10, "not dg"),
+         "carapace": [("Carapace Weapon", [("Phosphex Discharger", 15, "iw"), ("Havoc Launcher", 10, "not dg"),
                                            ("Bile-Caster Mortar", 15, "dg")], 1),
                       ("Carapace & Chassis Upgrades", [("Dreadnought Extra Armour", 15, None),
                                                        ("Protodreadnought Helical Targeting Array", 15, None)], None)],
