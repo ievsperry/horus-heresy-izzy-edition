@@ -113,7 +113,8 @@ def index(files):
         ns = GNS if f.endswith(".gst") else NS
         for e in root.findall(f"{ns}sharedSelectionEntries/{ns}selectionEntry"):
             entries.setdefault(norm(e.get("name")), e.get("id"))
-        for r in root.iter(f"{ns}rule"):
+        # shared rules first: a rule link only reaches those, not a rule written inside an entry or category
+        for r in root.findall(f"{ns}sharedRules/{ns}rule") + list(root.iter(f"{ns}rule")):
             rules.setdefault(norm(r.get("name")), r.get("id"))
     return entries, rules
 

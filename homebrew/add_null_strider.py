@@ -33,7 +33,7 @@ CHAMBERS = {  # Chamber -> (its category, its Silent Sisterhood (Chamber of X) e
     "Vigilance": ("b6d7-6924-37fb-dd32", "7b50-6b5d-e6f9-420b"),
 }
 ANATHEMA = ("7e5d-d73e-8ff4-7345", "Anathema Sub-type")
-ANATHEMA_RULE = "e2d9-fe0d-1717-3a37"
+ANATHEMA_RULE = "c1fa-0ed8-94b3-a337"   # the game system's shared rule, as the official units link it
 
 RULES = []   # its rules are the official ones (Silent Sisterhood (X), Anathema Sub-type, Psy-shock, Hatred (X))
 CHASSIS = ("Grants a 6+ Invulnerable Save against all attacks and the Adamantium Will (5+) special rule (a 5+ "
