@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="585a-5ac2-a233-a6a6" name="LI - Sisters of Silence" revision="34" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="585a-5ac2-a233-a6a6" name="LI - Sisters of Silence" revision="35" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b760-8313-847f-1afa" name="Obivion HQ" hidden="false"/>
     <categoryEntry id="a9b6-f66f-e8ee-553e" name="Judgement HQ" hidden="false"/>
@@ -394,6 +394,12 @@
       <categoryLinks>
         <categoryLink id="e532-5fa9-eb07-5596" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="6c41-cbde-9a73-62d1" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="459b-a887-e2a9-6860" name="Aegis-Pattern Null-Strider" hidden="false" collective="false" import="false" targetId="84ff-1087-074c-8d38" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e9b7-0b14-2ace-fce6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="68b6-75ce-12fa-7273" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -13216,6 +13222,490 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f8cd-07e5-66e5-3fa7" name="Dread-Executioner Greatblade" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3b02-d2cc-226d-45d6" name="Dread-Executioner Greatblade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+), Sudden Strike (1), Psi-Shock</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d00e-1abb-42b8-111f" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e784-20e9-4147-efcb" name="Sudden Strike (X)" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Sudden Strike (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5b90-a8f9-7c7f-599b" name="Psi-Shock" hidden="false" targetId="64c0-f59b-f05a-791d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d5fa-c016-42fd-fa61" name="Sanctified Power Claw" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2a1b-05bf-9799-ffb7" name="Sanctified Power Claw" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Shred, Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4eb9-bf93-ad7f-950a" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melee)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="2467-176f-ea54-b79e" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink id="c447-df5a-f6c3-c034" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a08d-06f3-3334-d6e2" name="Twin-linked Psyk-Out Bolt Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="977a-9c0f-b4db-b37c" name="Twin-linked Psyk-Out Bolt Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Twin-linked, Psi-Shock, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="338b-2581-4d63-5f01" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="f467-25ea-664a-de98" name="Psi-Shock" hidden="false" targetId="64c0-f59b-f05a-791d" type="rule"/>
+        <infoLink id="313a-646c-fe2e-57dc" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="af65-f59a-bf23-d7db" name="Twin-linked Heavy Alchem-Flamer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="601c-966d-ec9d-a3d3" name="Twin-linked Heavy Alchem-Flamer" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Twin-linked, Poisoned (2+), Fleshbane</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="af73-b12c-df84-dcdc" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="a29b-8636-8ba3-6e54" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Poisoned (2+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="7a87-dd01-9bd4-0297" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dc35-6dcf-0db1-bc37" name="Twin-linked Snare Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6d22-940e-ef13-476c" name="Twin-linked Snare Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Entangle (2), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a587-cd8e-b60b-4920" name="Entangle (X)" hidden="false" targetId="4a92-bb9b-613a-accb" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Entangle (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="fcbf-b5b1-59ec-b094" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="51f4-df93-e70b-6b24" name="Psyk-Out Grenade Launchers" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4efc-da3e-2402-d299" name="Psyk-Out Grenade Launchers" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Blast (3"), Psi-Shock, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5c1f-ff87-ccd6-f3eb" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Blast (3&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b5e4-817c-d3af-f18f" name="Psi-Shock" hidden="false" targetId="64c0-f59b-f05a-791d" type="rule"/>
+        <infoLink id="5b48-1c2e-2cdb-5cac" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e353-3575-4e77-1f32" name="Reinforced Vratine Chassis" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4bba-ed5c-9fbe-daa5" name="Reinforced Vratine Chassis" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Grants a 6+ Invulnerable Save against all attacks and the Adamantium Will (5+) special rule (a 5+ Invulnerable Save against psychic powers and psychic weapons).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9d1b-3b3a-41cd-852b" name="Null-Matrix Amplifier" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="35d5-f3e0-2929-c3f4" name="Null-Matrix Amplifier" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Increases the radius of its Soulless rule from 12" to 18", and enemy units with the Daemon or Corrupted sub-types within 12" suffer a -1 penalty to their Invulnerable Saves (to a minimum of 6+).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="94b0-4544-c66b-2c51" name="Silent Pursuit Actuators" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1831-c3b9-0b71-415b" name="Silent Pursuit Actuators" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Grants Infiltrate and Scout.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="aa57-7dbd-f8f5-fb76" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
+        <infoLink id="a504-c5c6-b0aa-a3cb" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1449-5440-170a-f1b6" name="Chamber of Judgement – Pursuit-Cadre Telemetry" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="69a8-8583-fe47-aa8a" name="Chamber of Judgement – Pursuit-Cadre Telemetry" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Gains Scout and Move Through Cover, and all Bolt, Flame, and Snare weapons equipped by this model gain Pinning (if they do not already possess it) and Shell Shock (1).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="534a-379e-29de-bcb4" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+        <infoLink id="b191-c87c-61ba-c302" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
+        <infoLink id="5d6b-a0d5-a610-d347" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="cd0f-ab56-3387-7b09" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="1add-e101-cf45-3279" import="true" hidden="false" collective="false" name="Silent Sisterhood (Chamber of Judgement)" targetId="ade4-0f3a-c307-9dc2" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4523-6cc3-f515-d294" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a42d-26d7-bac7-bff5" name="Chamber of Oblivion – Blackstone Execution-Array" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="039f-a191-1bf2-69f1" name="Chamber of Oblivion – Blackstone Execution-Array" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Increases Weapon Skill to 6 and Attacks to 4, and gains Murderous Strike (5+) and Hatred (Psykers &amp; Daemons) in close combat.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b499-3703-fc83-7e35" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule"/>
+        <infoLink id="334e-f30e-f689-a857" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="cb40-d5e9-2bef-dd3d" import="true" hidden="false" collective="false" name="Silent Sisterhood (Chamber of Oblivion)" targetId="7856-71cb-a1fb-bc43" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9878-f1ea-6e8d-520a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0aac-154f-439e-6bb0" name="Chamber of Vigilance – Subjugation Ward-Plating" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9ba6-ba82-d7f1-bae5" name="Chamber of Vigilance – Subjugation Ward-Plating" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Improves Toughness to 7, gains Counter-Attack (1), and improves its Reinforced Vratine Chassis Invulnerable Save to 5+ and its Adamantium Will (5+) to Adamantium Will (4+).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4a87-c30b-0b96-7f39" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="49d6-e58e-fd6e-c1fb" import="true" hidden="false" collective="false" name="Silent Sisterhood (Chamber of Vigilance)" targetId="7b50-6b5d-e6f9-420b" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f964-9db9-8317-fe6d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="84ff-1087-074c-8d38" name="Aegis-Pattern Null-Strider" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b71a-371d-4401-9dc0">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="84ff-1087-074c-8d38" childId="1449-5440-170a-f1b6" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="a7e3-4559-7267-8bf6">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="84ff-1087-074c-8d38" childId="a42d-26d7-bac7-bff5" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="b6d7-6924-37fb-dd32">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="84ff-1087-074c-8d38" childId="0aac-154f-439e-6bb0" shared="true" includeChildSelections="true" includeChildForces="false" percentValue="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="4ec6-b6b8-e182-e073" name="Soulless" hidden="false" targetId="2d54-d7fd-cb3c-b7af" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Soulless (12&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="29f9-70e0-900b-7788" name="By Cold Design" hidden="false" targetId="9667-ba8a-ad8f-fe4c" type="rule"/>
+        <infoLink id="5621-e7c1-a819-9117" name="Witch-Hunter's Relentlessness" hidden="false" targetId="434c-4da3-dd14-76be" type="rule"/>
+        <infoLink id="bfd1-a137-1ab5-71a3" name="Anathema Sub-type" hidden="false" targetId="e2d9-fe0d-1717-3a37" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="628b-8c96-4039-998e" name="Armiger Unit Type" hidden="false" targetId="41ff-7fc9-d4a0-da2" primary="false"/>
+        <categoryLink id="f671-bdbe-1611-98d5" name="Anathema Sub-type" hidden="false" targetId="7e5d-d73e-8ff4-7345" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b4a0-916c-b1cb-e12f" name="Aegis-Pattern Null-Strider" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="068a-ffb7-b8cc-cd0d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="49bd-7f2d-fb9e-1367" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile id="cb74-6851-6015-1b9f" name="Aegis-Pattern Null-Strider" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Armiger (Anathema Psykana)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">9</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="8d4d-6643-2489-a55c" name="Close-Combat Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="d45b-d434-1793-d5b8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b38-0856-6d59-ad30" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2a5-4768-368b-ef9f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="d45b-d434-1793-d5b8" name="Dread-Executioner Greatblade" hidden="false" collective="false" import="true" targetId="f8cd-07e5-66e5-3fa7" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="813d-a3eb-e0cd-27d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="324f-3a0b-ab9b-a751" name="Sanctified Power Claw" hidden="false" collective="false" import="true" targetId="d5fa-c016-42fd-fa61" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01d0-d0a0-d85a-3312" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="e5cf-a8c2-5142-bfd3" name="Ranged Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="5424-20ec-692b-19bc">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a3f-269e-23cb-331a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="318e-e3e6-b4df-3324" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="5424-20ec-692b-19bc" name="Twin-linked Psyk-Out Bolt Cannon" hidden="false" collective="false" import="true" targetId="a08d-06f3-3334-d6e2" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04a5-7c1b-9818-970f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="e1ac-e8dd-2db4-fe3f" name="Twin-linked Heavy Alchem-Flamer" hidden="false" collective="false" import="true" targetId="af65-f59a-bf23-d7db" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2223-a08e-fbe8-f0e1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="2379-f899-a86e-2d22" name="Twin-Linked Adrathic Destructor" hidden="false" collective="false" import="true" targetId="6613-a83e-8274-6e06" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94aa-7c19-ceaf-7d71" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9535-3976-45fe-d925" name="Twin-linked Snare Cannon" hidden="false" collective="false" import="true" targetId="dc35-6dcf-0db1-bc37" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6065-0838-a754-9b02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="50cf-6fe8-9da9-ddf9" name="Chassis Upgrades" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="f936-fb69-20d9-4ccd" name="Null-Matrix Amplifier" hidden="false" collective="false" import="true" targetId="9d1b-3b3a-41cd-852b" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbab-4172-6a67-fbff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3e92-0df7-c6b0-49d8" name="Silent Pursuit Actuators" hidden="false" collective="false" import="true" targetId="94b0-4544-c66b-2c51" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0208-b769-1698-9264" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="23a3-48aa-7cd0-b0a0" name="Reinforced Vratine Chassis" hidden="false" collective="false" import="true" targetId="e353-3575-4e77-1f32" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="491a-104b-69ed-5dbc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1b9-ad97-877d-ff9e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8c31-6232-c34f-b7c1" name="Psyk-Out Grenade Launchers" hidden="false" collective="false" import="true" targetId="51f4-df93-e70b-6b24" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe41-7ce5-9ac2-d724" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfcf-61b8-c0d1-d540" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="09eb-b967-9669-fc63" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7ce-9690-5bb7-c14b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b381-51ef-76cc-88eb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f543-04e6-7754-16b0" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="0873-34dd-e52d-d33c" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e348-39cf-f193-d2b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bcd-5537-6e19-8035" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="96ab-34ff-25ab-3b6c" name="Anathema Psykana Chamber Assignment" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3325-d3d8-abc6-cd49" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4d3-27f3-2299-d816" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0868-a71b-56a8-62c5" name="Chamber of Judgement – Pursuit-Cadre Telemetry" hidden="false" collective="false" import="true" targetId="1449-5440-170a-f1b6" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="84ff-1087-074c-8d38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9335-26a1-b911-5b48" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="0852-f0c4-1ccd-96a9" name="Chamber of Oblivion – Blackstone Execution-Array" hidden="false" collective="false" import="true" targetId="a42d-26d7-bac7-bff5" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20">
+                  <repeats>
+                    <repeat field="selections" scope="84ff-1087-074c-8d38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a76d-5e55-f4b0-eea3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="63aa-6987-3328-9a23" name="Chamber of Vigilance – Subjugation Ward-Plating" hidden="false" collective="false" import="true" targetId="0aac-154f-439e-6bb0" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20">
+                  <repeats>
+                    <repeat field="selections" scope="84ff-1087-074c-8d38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dfe-b5c8-e2fc-3ff8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="bd47-69ec-0c32-abc2" name="Warlord Traits (Sisters of Silience)" hidden="true" collective="false" import="true">
@@ -13339,6 +13829,18 @@ For example, a Sisters of Silence Detachment includes three HQ choices – two K
     </rule>
     <rule id="df7d-388a-cd2d-a8d5" name="Silent Sisterhood (Chamber of Vigilance)" publicationId="15a4-fc68-502d-48a9" page="40" hidden="false">
     <description>A unit composed entirely of models with this variant of the Silent Sisterhood (X) special rule may be given one of the following special rules before the start of the battle’s first turn, before any models are deployed: Scout or Infiltrate. When selecting an army using the Sisters of Silence Army List, a unit made up entirely of models with this variant of the Silent Sisterhood (X) special rule may be selected without restriction regardless of which HQ choices are selected for the army.</description>
+    </rule>
+    <rule id="2d54-d7fd-cb3c-b7af" name="Soulless" hidden="false">
+      <description>No Psychic Powers may be manifested within 12" of this model, and any Psychic Power whose target or template passes within 12" of it is automatically nullified on a 4+. In addition, enemy units within 12" cannot use their Leadership characteristic to manifest Psychic Powers, and models with the Psyker or Daemon sub-types within 12" suffer a -1 penalty to their Leadership and Weapon Skill characteristics.</description>
+    </rule>
+    <rule id="9667-ba8a-ad8f-fe4c" name="By Cold Design" hidden="false">
+      <description>This unit may make Sweeping Advances (even when enemies fall back due to Fear), gains Fleet (1) and Move Through Cover, and may re-roll failed Morale and Pinning tests.</description>
+    </rule>
+    <rule id="434c-4da3-dd14-76be" name="Witch-Hunter's Relentlessness" hidden="false">
+      <description>This unit gains Preferred Enemy (Psykers &amp; Daemons) and adds +1 to its Initiative when making Reactions to enemy Charges.</description>
+    </rule>
+    <rule id="64c0-f59b-f05a-791d" name="Psi-Shock" hidden="false">
+      <description>Hits from a weapon with this special rule inflict Instant Death on models with the Psyker or Daemon sub-types.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>
