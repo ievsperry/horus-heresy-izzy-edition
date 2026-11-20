@@ -196,7 +196,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Dedicated Transports | Sagitaur, Kapricus Carrier |
 | Fast Attack | Hernkyn Pioneers, Kapricus Defenders |
 | Heavy Support | Brôkhyr Thunderkyn, Cthonian Earthshakers, Hekaton Land Fortress, Ironkin Steeljacks with Heavy Volkanite Disintegrators |
-| Fortifications | Brôkhyr Interlocking Bulwark, Kin Claim-Bastion, Grand Claim-Citadel |
+| Fortifications | Brôkhyr Interlocking Bulwark, Kin Claim-Bastion, Grand Claim-Citadel, Brôkhyr Void-Weave Projector |
 
 ### Rites of War
 
@@ -1172,7 +1172,7 @@ _The HYLas rotary cannons (or autocannons or heavy volkite culverins) are hull-m
 
 **Special Rules**
 
-- Void-Hardened Construction: the Kin Claim-Bastion has Armoured Ceramite: enemy weapons with the Melta special rule do not roll extra armour penetration dice against it
+- Void-Hardened Construction: this Fortification has Armoured Ceramite: enemy weapons with the Melta special rule do not roll extra armour penetration dice against it
 - Claim-Bastion Battlements: counts as Open-Topped Battlements on the roof capable of holding up to 10 Infantry models, granting a 4+ Cover Save
 - Ancestor's Claim: during deployment, if there is an Objective Marker wholly within your Deployment Zone, the Kin Claim-Bastion may be deployed within 1" of that Objective Marker. Friendly Legiones Votann units within 3" of it count as being within range of an Objective Marker controlled by their player for triggering rules and Warlord Traits, though the Claim-Bastion does not award Victory Points at the end of the battle
 - Grudge-Ledger Array: at the start of your Shooting phase, if a friendly Legiones Votann unit is embarked inside or occupying the battlements, select one visible enemy unit within 24" of the Kin Claim-Bastion; friendly Legiones Votann units within 12" of it treat that enemy unit as having +1 Judgement Token (to a maximum of 2) until the end of that Shooting phase
@@ -1218,7 +1218,7 @@ _The twin-linked HYLas rotary cannons (or autocannons or heavy volkite culverins
 
 **Special Rules**
 
-- Void-Hardened Construction: the Grand Claim-Citadel has Armoured Ceramite: enemy weapons with the Melta special rule do not roll extra armour penetration dice against it
+- Void-Hardened Construction: this Fortification has Armoured Ceramite: enemy weapons with the Melta special rule do not roll extra armour penetration dice against it
 - Claim-Citadel Battlements: counts as Open-Topped Battlements on the roof capable of holding up to 15 Infantry models, granting a 4+ Cover Save
 - Ancestor's Claim: during deployment, if there is an Objective Marker wholly within your Deployment Zone, the Grand Claim-Citadel may be deployed within 1" of that Objective Marker. Friendly Legiones Votann units within 3" of it count as being within range of an Objective Marker controlled by their player for triggering rules and Warlord Traits, though the Claim-Citadel does not award Victory Points at the end of the battle
 - Grudge-Ledger Array: at the start of your Shooting phase, if a friendly Legiones Votann unit is embarked inside or occupying the battlements, select one visible enemy unit within 24" of the Grand Claim-Citadel; friendly Legiones Votann units within 12" of it treat that enemy unit as having +1 Judgement Token (to a maximum of 2) until the end of that Shooting phase
@@ -1239,6 +1239,45 @@ _The twin-linked HYLas rotary cannons (or autocannons or heavy volkite culverins
 | – Up to 4 Void Shields | +25 points each |
 | – Searchlights | +5 points |
 | – Ammunition Store | +20 points |
+
+### Brôkhyr Void-Weave Projector — 155 pts
+
+_A heavy, subterranean-anchored field generator forged by Brôkhyr Iron-masters to project multi-layered void-weave domes over Kin oathbands, Land Fortresses, and critical claim-zones._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Brôkhyr Void-Weave Projector | – | 3 | 12 | 12 | 12 | 3 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Brôkhyr Void-Weave Projector
+
+**Wargear**
+
+- Void-Weave Field Array
+
+_Its Void Shields use the standard Void Shield rules of the Age of Darkness 2.0 rulebook. An Ironkin Point-Defence Turret is roof-mounted: an Automated Fire weapon (BS 3) with a 360° line of sight. It is deployed during the Fortifications deployment step within your Deployment Zone, and cannot move, declare Charges, make Reactions, control or deny Objectives, or take Morale or Pinning tests._
+
+**Unit Type**
+
+- Fortification (Emplacement, Legiones Votann)
+
+**Special Rules**
+
+- Void-Hardened Construction: this Fortification has Armoured Ceramite: enemy weapons with the Melta special rule do not roll extra armour penetration dice against it
+- Projected Void-Weave Dome (12"): the Brôkhyr Void-Weave Projector's Void Shields form a 12" protective dome centred on the Fortification. Any shooting attack originating outside this 12" radius that targets the Brôkhyr Void-Weave Projector, or any friendly Legiones Votann unit where the target unit is wholly within 12" of the Brôkhyr Void-Weave Projector or where a line drawn from the firing model to the target passes through the 12" radius of the dome, must first resolve its hits against the active Void Shields (AV 12) before allocating any remaining hits to the target unit. If a Barrage weapon fired from outside the dome scatters its Blast marker over a unit inside the dome (or over the Brôkhyr Void-Weave Projector itself), the hits are still resolved against the active Void Shields first. Attacks made by an enemy unit inside the 12" radius at a target also inside it are not intercepted by the Void Shields
+- Brôkhyr Capacitor Cycle: at the end of each friendly Shooting phase, if the Brôkhyr Void-Weave Projector has at least one collapsed Void Shield and did not fire any weapons during that phase, roll a D6: on a 5+ (or 4+ if a friendly model with the Battlesmith (X) special rule is within 3" of the Projector), 1 collapsed Void Shield is immediately restored
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Brôkhyr Void-Weave Projector may take one of the following Ironkin Point-Defence Turrets:** |  |
+| – Twin-linked HYLas rotary cannon | +20 points |
+| – Twin-linked bolt cannon | +15 points |
+| **The Brôkhyr Void-Weave Projector may take any of the following:** |  |
+| – Up to 2 Void Shields | +50 points each |
+| – Reinforced Bulkhead Plating | +25 points |
 
 ## Wargear
 
@@ -1308,6 +1347,14 @@ A unit whose models all have teleport crests gains Deep Strike.
 
 A Brôkhyr Interlocking Bulwark with Void-Hardened Reinforced Plating improves its Cover Save to 3+ against shooting attacks that do not have the Ignores Cover or Barrage special rules.
 
+### Void-Weave Field Array
+
+The Fortification projects 2 Void Shields (Armour Value 12) in a 12" radius around it, using the standard Void Shield rules of the Age of Darkness 2.0 rulebook (see Projected Void-Weave Dome).
+
+### Reinforced Bulkhead Plating
+
+The Fortification's Front, Side and Rear Armour Values are 13.
+
 ### Void Shield
 
 Each Void Shield gives the Fortification one Void Shield (Armour Value 12), as detailed in the Void Shields rules of the Age of Darkness rulebook.
@@ -1365,6 +1412,7 @@ All weapons listed here are counted as 'Bolt' weapons for those rules that affec
 | Autoch-pattern bolter | 24" | 4 | 5 | Rapid Fire, Rupture (6+) |
 | Autoch-pattern combi-bolter | 24" | 4 | 5 | Assault 2, Rupture (6+) |
 | Bolt cannon | 36" | 5 | 4 | Heavy 4, Rupture (6+) |
+| Twin-linked bolt cannon | 36" | 5 | 4 | Heavy 4, Rupture (6+), Twin-linked |
 | Bolt revolver | 9" | 4 | 5 | Pistol 2, Rupture (6+) |
 | Bolt shotgun | 15" | 4 | 5 | Assault 2, Shred, Rupture (6+) |
 | Yaegir riflescope rifle | 36" | 4 | 5 | Heavy 1, Sniper, Breaching (6+), Pinning† |

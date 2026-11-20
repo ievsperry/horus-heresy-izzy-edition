@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="41" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="42" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -1307,6 +1307,12 @@
         <categoryLink targetId="36c3-e85e-97cc-c503" id="8009-c0a3-65c1-631c" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Grand Capillary Citadel" hidden="false" id="7b55-4321-f9db-f309" type="selectionEntry" targetId="421a-f053-a7b1-a0ea">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="db40-6980-938b-eef0" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="4be4-0062-e7bb-50b7" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Chitinous Spore-Wall" hidden="false" id="72a5-f844-670c-f19c" type="selectionEntry" targetId="e9ee-efc8-5fad-68cf">
       <categoryLinks>
         <categoryLink targetId="a24f-12d8-36c1-f477" id="3a97-81e1-7689-da33" primary="true" name="Fortification:" />
@@ -2409,6 +2415,22 @@
         <infoLink name="Pinning" id="f2f0-03ee-fc87-25ad" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked deathspitter bio-cannon" hidden="false" id="f687-fd45-396b-a152" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Twin-linked deathspitter bio-cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3f99-ca6f-5c41-4899" publicationId="7478-cf16-4f88-170b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Pinning, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pinning" id="6687-580e-819c-9064" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+        <infoLink name="Twin-linked" id="a81a-34d0-20ff-f431" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Devourer" hidden="false" id="32a9-34fe-5362-e9c5" publicationId="7478-cf16-4f88-170b">
       <profiles>
         <profile name="Devourer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="56ab-e1df-ee59-e3e9" publicationId="7478-cf16-4f88-170b">
@@ -2748,6 +2770,47 @@
         <infoLink name="Pinning" id="af53-61be-136c-7b62" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked barbed strangler" hidden="false" id="94a1-5872-8b5a-7470" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Twin-linked barbed strangler" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="acf8-847c-4e60-4d1f" publicationId="7478-cf16-4f88-170b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Large Blast (5"), Pinning, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="2bd7-6799-2f63-0baf" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Large Blast (5&quot;)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" id="413c-82b7-be9c-ad8e" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+        <infoLink name="Twin-linked" id="7c7a-24ed-5781-5305" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bio-plasma spore-mortar" hidden="false" id="7fe6-6ba9-1d79-4565" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Bio-plasma spore-mortar" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="84fb-6665-cd13-6535" publicationId="7478-cf16-4f88-170b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5"), Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="66b3-f92f-c1b4-59f0" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Large Blast (5&quot;)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" id="7906-0cc0-27cb-e639" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bio-cannon" hidden="false" id="7d91-2be9-51a7-5fb4" publicationId="7478-cf16-4f88-170b">
       <profiles>
         <profile name="Bio-cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="fc2d-c24c-c7c6-be88" publicationId="7478-cf16-4f88-170b">
@@ -2786,6 +2849,32 @@
             <modifier type="set" field="name" value="Rending (5+)" />
           </modifiers>
         </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked heavy venom cannon" hidden="false" id="69c6-03a6-436a-3f20" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Twin-linked heavy venom cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="faa7-2509-0801-d4ef" publicationId="7478-cf16-4f88-170b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3"), Sunder, Rending (5+), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="d164-dcc5-7a3d-00ee" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Blast (3&quot;)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Sunder" id="377a-b78e-da43-b800" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule" />
+        <infoLink name="Rending (X)" id="9ca4-063b-b8b8-cdc6" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (5+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Twin-linked" id="70c7-c7a3-d71c-4221" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Impaler cannon" hidden="false" id="9f01-fe87-95fd-0201" publicationId="7478-cf16-4f88-170b">
@@ -3001,6 +3090,33 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Extended Chitinous Plating" hidden="false" id="a760-dde5-8860-d2c4" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Extended Chitinous Plating" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="e37a-53c4-e887-0004">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Fortification's Rear Armour Value is 14.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Regenerative Vascular Sacs" hidden="false" id="5c4b-baba-288e-2f53" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Regenerative Vascular Sacs" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="320f-b959-b9c3-118a">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of each friendly Movement phase, roll a D6; on a 5+, the Fortification restores 1 lost Hull Point (up to its starting maximum).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Subterranean Brood-Tunnel" hidden="false" id="24fe-13c5-553c-12c9" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Subterranean Brood-Tunnel" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="f34d-e2a1-6116-b75d">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Friendly Tyranid Infantry units arriving from Reserves may treat the Fortification's Access Points as a friendly Battlefield Edge for the purpose of entering play.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Seismic Tremor-Roots" hidden="false" id="fcaf-ff30-b292-b925" publicationId="7478-cf16-4f88-170b">
       <modifiers>
@@ -13620,13 +13736,10 @@
                     <infoLink name="Twin-linked" id="abbb-0269-a86c-fc2e" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
                   </infoLinks>
                 </entryLink>
-                <entryLink import="true" name="Twin-linked heavy venom cannons" hidden="false" id="5a86-33c4-688a-f32c" type="selectionEntry" targetId="305d-3d6e-883b-fc90">
+                <entryLink import="true" name="Twin-linked heavy venom cannon" hidden="false" id="5a86-33c4-688a-f32c" type="selectionEntry" targetId="69c6-03a6-436a-3f20">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b4a-a7ef-cb91-7b0a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
-                  <infoLinks>
-                    <infoLink name="Twin-linked" id="9153-d552-3f39-08c6" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
-                  </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
                   </costs>
@@ -20887,6 +21000,200 @@
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Grand Capillary Citadel" hidden="false" id="421a-f053-a7b1-a0ea" publicationId="7478-cf16-4f88-170b">
+      <rules>
+        <rule name="Capillary Battlements" id="3a1a-d328-ce1b-4617" hidden="false">
+          <description>The upper carapace terrace counts as Open-Topped Battlements capable of holding up to 15 Infantry models, granting a 4+ Cover Save</description>
+        </rule>
+        <rule name="Reinforced Chitin" id="12ae-7831-ccc0-54c6" hidden="false">
+          <description>Enemy attacks targeting this Fortification do not gain extra armour penetration dice from the Armourbane (Melta) special rule unless fired from within half range (6" or less)</description>
+        </rule>
+        <rule name="Synaptic Relay (24&quot;)" id="ebf2-408a-7d57-023e" hidden="false">
+          <description>This Fortification counts as a Synapse Creature with a 24" range for all friendly Tyranid units</description>
+        </rule>
+        <rule name="Reclamation Spore-Mist" id="2e2a-5a9e-7850-c074" hidden="false">
+          <description>Friendly Tyranid units within 12" of this Fortification gain Feel No Pain (6+) (or improve an existing Feel No Pain (X) special rule by +1, to a maximum of 4+)</description>
+        </rule>
+        <rule name="Greater Acidic Rupture" id="3a56-7b67-7be3-1257" hidden="false">
+          <description>If this Fortification is reduced to 0 Hull Points, do not roll on the Building Damage table. Instead, roll 2D6 to determine the radius of the rupture in inches. Every non-Tyranid unit within that distance suffers 2D6 Strength 5 AP 4 hits with the Ignores Cover and Fleshbane special rules before the model is removed</description>
+        </rule>
+        <rule name="Note" id="900f-6bbd-04b5-b05e" hidden="false">
+          <description>A colossal, multi-tiered fortress-organism of calcified chitin and pulsing vascular spires grown to anchor a planetary invasion, housing entire broods inside its hollowed carapace chambers while bathing the surrounding swarm in synaptic resonance.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="86a5-5a9e-d40f-720e" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Bio-Construct" id="0f23-9fc4-6fd8-57dd" hidden="false" targetId="ff50-9c4c-b6d3-11e9" type="rule" />
+        <infoLink name="Fearless" id="8923-c90d-8fc9-338a" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="9765-088b-ea49-7c82" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Grand Capillary Citadel" hidden="false" id="ad3e-93f7-a2ee-a2ba" publicationId="7478-cf16-4f88-170b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2af-4a74-d372-da73" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b03-cfeb-8702-2124" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Grand Capillary Citadel" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="0a75-50d6-7a72-e4a2" publicationId="7478-cf16-4f88-170b">
+              <modifiers>
+                <modifier type="set" field="8d4e-2aea-fffc-d556" value="14">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="421a-f053-a7b1-a0ea" childId="a760-dde5-8860-d2c4" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Building)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">13</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">8</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">30 (2 Access Points, 12 Fire Points)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="f7f9-6468-45aa-5e7b" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="9f1e-fbf0-3032-32fe" id="e499-775b-336e-7ec5" primary="false" name="Building Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="2b96-6885-2adb-ab4b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c8d-1c85-5513-0a18" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked heavy venom cannon" hidden="false" id="2081-dc95-6268-3082" type="selectionEntry" targetId="69c6-03a6-436a-3f20">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb28-30ff-5f29-9dba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked barbed strangler" hidden="false" id="4ba3-9c4c-31ef-c7e4" type="selectionEntry" targetId="94a1-5872-8b5a-7470">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec9b-8d20-e925-b370" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Bio-plasma spore-mortar" hidden="false" id="ee0e-5b87-a841-e787" type="selectionEntry" targetId="7fe6-6ba9-1d79-4565">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3163-3e06-95f8-00f3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="3d1a-fb9e-a583-9672">
+              <entryLinks>
+                <entryLink import="true" name="Extended Chitinous Plating" hidden="false" id="3c64-3aa2-546a-8c25" type="selectionEntry" targetId="a760-dde5-8860-d2c4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3259-61d3-a006-1f3a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Regenerative Vascular Sacs" hidden="false" id="2671-80f1-22bb-e2f1" type="selectionEntry" targetId="5c4b-baba-288e-2f53">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="094f-a893-c638-3b15" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Subterranean Brood-Tunnel" hidden="false" id="0b13-f5e8-e9af-6549" type="selectionEntry" targetId="24fe-13c5-553c-12c9">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5e3-3cd8-70ee-7a86" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="0f53-7df9-8e92-75f2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5821-697e-a953-7841" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Seismic Tremor-Roots" hidden="false" id="3b0a-fd8a-949e-30e1" type="selectionEntry" targetId="fcaf-ff30-b292-b925">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4232-d0bc-14c6-beef" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Pheromone Trail Beacon" hidden="false" id="57e7-58da-42ee-83ad" type="selectionEntry" targetId="514e-1eb4-a46d-6428">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2581-6117-b819-e9bb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Dominion Synapse Node" hidden="false" id="f2d7-0d89-1789-1140" type="selectionEntry" targetId="42d7-ab3d-53dd-ca60">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad9c-ca8a-fb1d-aa8c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Shadow in the Warp Emitter" hidden="false" id="7926-b469-d4d3-eff3" type="selectionEntry" targetId="84d5-7e1a-e039-ae72">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6dc8-30dd-adda-7f4f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Chitinous Tunnel-Network" hidden="false" id="8d8b-9285-1692-224f" type="selectionEntry" targetId="9de6-6896-4608-99f0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0c5-d3a8-6501-c705" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Endless Brood-Vats" hidden="false" id="6053-8a94-faed-210f" type="selectionEntry" targetId="290c-8d06-58a3-1d04">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fd0-b24e-47bd-b26c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Twin-linked deathspitter bio-cannon" hidden="false" id="5e8b-994c-680e-3a1d" type="selectionEntry" targetId="f687-fd45-396b-a152">
+              <constraints>
+                <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="93dd-44d5-8104-c0bd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="c204-db02-90d0-d368" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="210" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Chitinous Spore-Wall" hidden="false" id="e9ee-efc8-5fad-68cf" publicationId="7478-cf16-4f88-170b">

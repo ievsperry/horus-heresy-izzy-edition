@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6e1c-15c5-ec26-3399" name="Homebrew - Leagues of Votann" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="e1a3-795b-be05-784b" name="Leagues of Votann for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Leagues of Votann" />
   </publications>
@@ -499,6 +499,12 @@
         <categoryLink targetId="36c3-e85e-97cc-c503" id="2e7f-8138-97ac-4813" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Brôkhyr Void-Weave Projector" hidden="false" id="be95-283e-312d-3fd7" type="selectionEntry" targetId="121b-d48b-a212-de46">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="a6d8-71cd-fee9-9f2a" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="585a-b9d8-b0d2-b04a" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Brôkhyr Thunderkyn" hidden="true" id="aef6-5d08-5678-7e7f" type="selectionEntry" targetId="9ed7-8546-6301-ce42">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -860,6 +866,26 @@
             <modifier type="set" field="name" value="Rupture (6+)" />
           </modifiers>
         </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked bolt cannon" hidden="false" id="fb7f-ec45-756c-8d25" publicationId="e1a3-795b-be05-784b">
+      <profiles>
+        <profile name="Twin-linked bolt cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3a79-89ed-ef5c-daa3" publicationId="e1a3-795b-be05-784b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Rupture (6+), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rupture (X)" id="2fa6-5df4-7811-ae88" hidden="false" targetId="d530-0b40-4723-af90" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rupture (6+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Twin-linked" id="c2ad-61e8-f89d-a3a8" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bolt revolver" hidden="false" id="4c50-f113-d0e2-0881" publicationId="e1a3-795b-be05-784b">
@@ -1679,6 +1705,24 @@
         <profile name="Void-Hardened Reinforced Plating" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3104-b637-427b-8fa2">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Brôkhyr Interlocking Bulwark with Void-Hardened Reinforced Plating improves its Cover Save to 3+ against shooting attacks that do not have the Ignores Cover or Barrage special rules.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Void-Weave Field Array" hidden="false" id="8767-afb1-f11a-2f7c" publicationId="e1a3-795b-be05-784b">
+      <profiles>
+        <profile name="Void-Weave Field Array" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="c206-49d4-419e-7144">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Fortification projects 2 Void Shields (Armour Value 12) in a 12" radius around it, using the standard Void Shield rules of the Age of Darkness 2.0 rulebook (see Projected Void-Weave Dome).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reinforced Bulkhead Plating" hidden="false" id="ad7e-3ede-d24d-797a" publicationId="e1a3-795b-be05-784b">
+      <profiles>
+        <profile name="Reinforced Bulkhead Plating" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="4fb5-3fd1-b103-9f19">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Fortification's Front, Side and Rear Armour Values are 13.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4975,7 +5019,7 @@
     <selectionEntry type="unit" import="true" name="Kin Claim-Bastion" hidden="false" id="f1b0-63d2-e1bb-fb77" publicationId="e1a3-795b-be05-784b">
       <rules>
         <rule name="Void-Hardened Construction" id="2eb0-287f-345b-0253" hidden="false">
-          <description>The Kin Claim-Bastion has Armoured Ceramite: enemy weapons with the Melta special rule do not roll extra armour penetration dice against it</description>
+          <description>This Fortification has Armoured Ceramite: enemy weapons with the Melta special rule do not roll extra armour penetration dice against it</description>
         </rule>
         <rule name="Claim-Bastion Battlements" id="9267-bc3e-8ca0-8e28" hidden="false">
           <description>Counts as Open-Topped Battlements on the roof capable of holding up to 10 Infantry models, granting a 4+ Cover Save</description>
@@ -5153,7 +5197,7 @@
     <selectionEntry type="unit" import="true" name="Grand Claim-Citadel" hidden="false" id="3832-93d2-5ea0-bebd" publicationId="e1a3-795b-be05-784b">
       <rules>
         <rule name="Void-Hardened Construction" id="a7a5-9b1f-03f8-d153" hidden="false">
-          <description>The Grand Claim-Citadel has Armoured Ceramite: enemy weapons with the Melta special rule do not roll extra armour penetration dice against it</description>
+          <description>This Fortification has Armoured Ceramite: enemy weapons with the Melta special rule do not roll extra armour penetration dice against it</description>
         </rule>
         <rule name="Claim-Citadel Battlements" id="7b5a-cda9-0fcd-b08d" hidden="false">
           <description>Counts as Open-Topped Battlements on the roof capable of holding up to 15 Infantry models, granting a 4+ Cover Save</description>
@@ -5333,6 +5377,128 @@
           </infoLinks>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Brôkhyr Void-Weave Projector" hidden="false" id="121b-d48b-a212-de46" publicationId="e1a3-795b-be05-784b">
+      <rules>
+        <rule name="Void-Hardened Construction" id="5c85-4918-451f-b40b" hidden="false">
+          <description>This Fortification has Armoured Ceramite: enemy weapons with the Melta special rule do not roll extra armour penetration dice against it</description>
+        </rule>
+        <rule name="Projected Void-Weave Dome (12&quot;)" id="7db1-7902-448f-bcbe" hidden="false">
+          <description>The Brôkhyr Void-Weave Projector's Void Shields form a 12" protective dome centred on the Fortification. Any shooting attack originating outside this 12" radius that targets the Brôkhyr Void-Weave Projector, or any friendly Legiones Votann unit where the target unit is wholly within 12" of the Brôkhyr Void-Weave Projector or where a line drawn from the firing model to the target passes through the 12" radius of the dome, must first resolve its hits against the active Void Shields (AV 12) before allocating any remaining hits to the target unit. If a Barrage weapon fired from outside the dome scatters its Blast marker over a unit inside the dome (or over the Brôkhyr Void-Weave Projector itself), the hits are still resolved against the active Void Shields first. Attacks made by an enemy unit inside the 12" radius at a target also inside it are not intercepted by the Void Shields</description>
+        </rule>
+        <rule name="Brôkhyr Capacitor Cycle" id="6aad-9359-5527-bbe5" hidden="false">
+          <description>At the end of each friendly Shooting phase, if the Brôkhyr Void-Weave Projector has at least one collapsed Void Shield and did not fire any weapons during that phase, roll a D6: on a 5+ (or 4+ if a friendly model with the Battlesmith (X) special rule is within 3" of the Projector), 1 collapsed Void Shield is immediately restored</description>
+        </rule>
+        <rule name="Note" id="31b5-8b30-8bd0-8684" hidden="false">
+          <description>A heavy, subterranean-anchored field generator forged by Brôkhyr Iron-masters to project multi-layered void-weave domes over Kin oathbands, Land Fortresses, and critical claim-zones.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="5000-1609-1c79-fcce" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Brôkhyr Void-Weave Projector" hidden="false" id="c570-f8bb-030f-510a" publicationId="e1a3-795b-be05-784b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6658-35bc-c3a2-fb88" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e51d-e39c-d404-5fda" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Brôkhyr Void-Weave Projector" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="5977-7e6a-eb1f-2d9f" publicationId="e1a3-795b-be05-784b">
+              <modifiers>
+                <modifier type="set" field="0ef8-a648-01d0-08ee" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="121b-d48b-a212-de46" childId="ad7e-3ede-d24d-797a" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f150-c0dc-c192-9cb3" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="121b-d48b-a212-de46" childId="ad7e-3ede-d24d-797a" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8d4e-2aea-fffc-d556" value="13">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="121b-d48b-a212-de46" childId="ad7e-3ede-d24d-797a" shared="true" includeChildSelections="true" includeChildForces="false" />
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement, Legiones Votann)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="9b1d-0659-ea03-b617" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="266b-2c31-1c3d-7787" primary="false" name="Emplacement Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="ebef-7464-73c9-38ac">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47f4-b51d-22fe-cc0d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked HYLas rotary cannon" hidden="false" id="2ab4-1951-9a46-924c" type="selectionEntry" targetId="0afe-e7c9-54df-af97">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7ac-9fba-82bd-a616" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked bolt cannon" hidden="false" id="0b41-8774-6fd2-3b50" type="selectionEntry" targetId="fb7f-ec45-756c-8d25">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2337-0579-4142-a231" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="4721-82f5-0983-63dd">
+              <entryLinks>
+                <entryLink import="true" name="Void Shield" hidden="false" id="5a72-dabd-bc27-c057" type="selectionEntry" targetId="f058-c72a-c9e8-c5e1">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bb47-c743-3571-0e9f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Reinforced Bulkhead Plating" hidden="false" id="cd5e-db0b-8600-ed24" type="selectionEntry" targetId="ad7e-3ede-d24d-797a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f86c-dc13-f400-ec24" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Void-Weave Field Array" hidden="false" id="f995-3753-4f8e-0ccc" type="selectionEntry" targetId="8767-afb1-f11a-2f7c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="457f-e24a-2f27-ef30" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92b5-8b4c-8998-480f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="155" />
+      </costs>
     </selectionEntry>
     <selectionEntry id="1d0f-dc75-3527-7014" name="Gravis concussion gauntlet" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>

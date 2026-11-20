@@ -86,9 +86,11 @@ loading. The script prints anything in the doc it could not place.
   Hive Fleet, and an error in another. A Cluster's enhancement is bought once for the whole unit. The game
   system's own Fortifications are hidden from a Tyranid Detachment (`faction_fortifications.py`, below).
   The Chitinous Spore-Wall is a Barricade (no Armour or Hull Points, the Barricade Fortification rule) and takes no
-  Hive Fleet Enhancement or biomorph; Infiltrate and Toxic Miasma Cysts are its options.
+  Hive Fleet Enhancement or biomorph; Infiltrate and Toxic Miasma Cysts are its options. The Grand Capillary Citadel's
+  Extended Chitinous Plating sets its Rear Armour to 14 on its profile (`tyranid_fortifications.py`).
 - Asuryani have three Asuryani Fortifications beside the Holo-Field Defence Line and Webway Gate (the doc's
-  "## Fortifications": Wraithbone Bastion, Void-Spinner Sky-Platform, Wraith-Sentinel Drop-Pillar), each with the
+  "## Fortifications": Wraithbone Bastion, Grand Wraithbone Citadel, Wraithbone Holo-Shield Spire, Void-Spinner
+  Sky-Platform, Wraith-Sentinel Drop-Pillar), each with the
   Asuryani Fortification rule. Holo-Field Emitters and the Spirit-Stone Relay are Fortification Wargear. The game
   system's own Fortifications are hidden from an Asuryani Detachment. The Holo-Field Defence Line has the Barricade
   Fortification rule beside its Holo-Emitter (Shrouded (6+) within 1", Blast wounds re-rolled). The Wraithbone
@@ -97,7 +99,7 @@ loading. The script prints anything in the doc it could not place.
   four Aeldari lists).
 - T'au take their own T'au Fortifications beside the Tidewalls (the doc's "### Fortifications": Remote Sensor
   Tower, Heavy Rail-Turret Emplacement, Manta Strike Drop-Bunker, Orca Sky-Pad, T'au Command Post, Missile Silo
-  Battery, Pulse Shield Generator, Sensor Beacon Post), each with the T'au Fortification
+  Battery, Pulse Shield Generator, Sensor Beacon Post, Earth Caste Gravitic Void-Projector), each with the T'au Fortification
   rule. Each may take one Sept Enhancement (`tau_fortifications.py`, run from `tau_rites.py`): shown only in a
   Detachment of that Sept, and an error in another. The game system's own Fortifications are hidden from a T'au
   Detachment. The Portable Pulse-Barricade is a Barricade (the Barricade Fortification rule, no Sept Enhancement)
@@ -109,23 +111,26 @@ loading. The script prints anything in the doc it could not place.
   at most two shuriken cannons for splinter cannons. The game system's own Fortifications are hidden from an
   Anhrathe Detachment.
 - Necrons take their own Necron Fortifications (the doc's "## Fortifications": Necron Obelisk, Summoning Core, Greater
-  Summoning Core, Necron Energy Core), each with the Necron Fortification rule (its own Living Metal: a Hull Point back
+  Summoning Core, Necron Energy Core, Necron Tomb-Bastion, Grand Tomb-Ziggurat, Tomb-World Phase-Projector), each with the Necron Fortification rule (its own Living Metal: a Hull Point back
   on a 5+ at the start of each Movement phase). `necron_fortifications.py` (run by the builder) sets Armour 12 on a
-  Fortified Obelisk (its tesla destructor or heavy gauss cannon) and 13 with Reinforced Necrodermis Plating. The game
+  Fortified Obelisk (its tesla destructor or heavy gauss cannon) and 13 with Reinforced Necrodermis Plating (its
+  `set_armour` also serves the Tyranid and Votann Fortifications' armour options). The game
   system's own Fortifications are hidden from a Necron Detachment.
 - Drukhari take their own Drukhari Fortifications (the doc's "## Fortifications": Torture-Spire, Kabalite
-  Blade-Bastion, Void-Raptor Sky-Dock, Dread-Pod Drop-Turret), each with the Drukhari Fortification and
+  Blade-Bastion, Grand Kabalite Terror-Spire, Void-Raptor Sky-Dock, Dread-Pod Drop-Turret, Dark-Light Shadow-Pylon),
+  each with the Drukhari Fortification and
   Night-Shield Matrix rules. Each may take one Sub-Faction Enhancement (`drukhari_fortifications.py`, run by the
   builder): shown only in a Detachment of that Sub-faction, and an error in another. The Flesh-Crafted Carapace
   adds 1 to the Fortification's Front, Side and Rear Armour on its profile (to a maximum of 12). A Realspace Raiders Detachment takes
-  0-1 Fortifications, and only the Dread-Pod Drop-Turret or the Razor-Blade Barricade (the others are hidden there). The game system's own
+  0-1 Fortifications, and only the Dread-Pod Drop-Turret or the Razor-Blade Barricade (the others, the Dark-Light
+  Shadow-Pylon included, are hidden there). The game system's own
   Fortifications are hidden from a Drukhari Detachment. The Razor-Blade Barricade is a Barricade (the Barricade
   Fortification rule, no Sub-Faction Enhancement) with Infiltrate, a Phantasm Grenade Launcher Battery and an optional
   Splinter Rack Turret (twin-linked splinter cannon).
 - Orks take their own Ork Fortifications (the doc's "## Fortifications": Mekboy Workshop, Ork Scrap-Bastion,
   Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement, and the Waaagh! Banner Totem, Gorkamorka
-  Idol, Supa-Slugga Emplacement and Scrap-Listening Post) as Fortification choices, each with the Ork Fortification
-  army rule (the last four also Kustom-Built & Clunky: Ramshackled Vehicle (6+)), except the Aegis Scrap-Wall & Gun
+  Idol, Supa-Slugga Emplacement, Scrap-Listening Post and Big Mek's Supa-Kustom Force Field Tower) as Fortification
+  choices, each with the Ork Fortification army rule (the last five also Kustom-Built & Clunky: Ramshackled Vehicle (6+)), except the Aegis Scrap-Wall & Gun
   Emplacement, a Barricade with the Barricade Fortification rule instead. The game system's own Fortifications are hidden from an Ork Detachment. A Waaagh!
   Warband Primary Detachment takes up to two and a Scappin' Waaagh! Primary Detachment up to one (a "Fortifications"
   row in a Detachment chart is read like the others).
@@ -137,7 +142,13 @@ loading. The script prints anything in the doc it could not place.
 - Leagues of Votann take the standard Fortifications (not the Imperial ones) and their own Brôkhyr Interlocking
   Bulwark (the doc's "## Fortifications"), a Barricade with the Barricade Fortification rule, Void-Hardened Reinforced
   Plating and an optional Ironkin Sentry-Mount (twin-linked HYLas rotary cannon, Pivotal magna-rail cannon or SP
-  conversion beamer). The Bulwark has neither Eye of the Ancestors nor League (X).
+  conversion beamer). The Bulwark has neither Eye of the Ancestors nor League (X). The Kin Claim-Bastion, Grand
+  Claim-Citadel and Brôkhyr Void-Weave Projector are Votann Fortifications too; the Projector's Reinforced Bulkhead
+  Plating sets its Armour to 13 on its profile (the `protodreadnoughts.py` hook).
+- The shield projectors (Earth Caste Gravitic Void-Projector, Brôkhyr Void-Weave Projector, Tomb-World
+  Phase-Projector, Wraithbone Holo-Shield Spire, Dark-Light Shadow-Pylon, Big Mek's Supa-Kustom Force Field Tower)
+  carry their own field array (its Void Shields) as wargear and buy extra Void Shields up to four in all; their
+  projected-dome rule includes the Barrage and inside-the-dome clarifications.
 - Bastions (20-model, 8-Fire-Point Buildings with Open-Topped Battlements): the Imperial Bastion (game system, below),
   the Votann Kin Claim-Bastion and Necron Tomb-Bastion (new), and the reworked T'au Manta Strike Drop-Bunker,
   Asuryani Wraithbone Bastion, Drukhari Kabalite Blade-Bastion, Anhrathe Void-Bulkhead Redoubt and Ork Scrap-Bastion.
@@ -800,11 +811,12 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Centura)"), shown when the leader is Sanguinius or has a Warhawk Jump Pack, at most one per army. Master of the
   Legion and its deployment rules are rule text. It refuses to run twice.
 - `python3 homebrew/add_ruinstorm_fortifications.py` adds the doc's Daemonic Fortifications (Warp-Breach Monolith,
-  Altar of Brass & Skulls, Feculent Gnarlmaw, Warp-Lightning Spire) to `2022 - Daemons - Daemons of the Ruinstorm.cat`
+  Altar of Brass & Skulls, Feculent Gnarlmaw, Warp-Lightning Spire, Grand Warp-Citadel) to `2022 - Daemons - Daemons of the Ruinstorm.cat`
   as Fortification choices with the Daemon Unit Type and Traitor. `add_ruinstorm.py` leaves them out. Each may
   take one Ætheric Dominion Enhancement, shown only with that Dominion and an error with another. The doc's
   "Primordial Annihilator" enhancement (Beacon of Undivided Chaos) belongs to Ravenous Dissolution, the eighth
-  Dominion. A Rite that bars Fortification choices bars these too. It refuses to run twice.
+  Dominion. A Rite that bars Fortification choices bars these too. Run again, it adds only the Fortifications new to
+  the doc (the Grand Warp-Citadel was added that way), and refuses when there are none.
 - `python3 homebrew/add_imperial_fortifications.py` adds the Imperial and Traitor Fortifications (`source/imperial-fortifications.md`:
   Strategic Listening Post, Automated Sentry Turret Battery, Thermo-Plasma Conduit Tower, Orbital Uplink Bunker) to
   `2022 - Horus Heresy.gst` as Fortification choices beside its standard Fortifications, each with the Imperial

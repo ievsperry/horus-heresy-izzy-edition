@@ -17,7 +17,7 @@ Daemons of the Ruinstorm are always part of the Traitor Alliance. Every unit, Da
 | Troops | Ruinstorm Warp-Spawn Pack |
 | Fast Attack | Ruinstorm Sky-Ray Pack, Ruinstorm Flesh-Reaper Cavalry |
 | Heavy Support | Ruinstorm Soul-Forge Engine, Ruinstorm Cataclysm Brute Pack |
-| Fortifications | Warp-Breach Monolith, Altar of Brass & Skulls, Feculent Gnarlmaw, Warp-Lightning Spire |
+| Fortifications | Warp-Breach Monolith, Altar of Brass & Skulls, Feculent Gnarlmaw, Warp-Lightning Spire, Grand Warp-Citadel |
 
 ## Special Rules
 
@@ -834,6 +834,60 @@ Daemons of the Ruinstorm armies may not take the standard Fortifications; they t
 | – Beacon of Undivided Chaos | +30 points |
 
 
+### Grand Warp-Citadel — 225 pts
+
+_A towering, impossible ziggurat of weeping obsidian, fused brass, and screaming bone manifested directly from the Empyrean, acting as a massive realspace anchor for Ruinstorm hosts while hurling searing æther-bolts from its battlement shrines._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Grand Warp-Citadel | – | 3 | 14 | 14 | 14 | 8 | 30 (2 Access Points, 12 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Grand Warp-Citadel
+
+**Wargear**
+
+- Eight Ætheric Bolt-Shrines
+
+_The Ætheric Bolt-Shrines are hull-mounted Automated Fire weapons (BS 3), two on each facing. A crown æther-artillery weapon is an Automated Fire weapon (BS 3) with a 360° line of sight. Its Access Points are 2 Warp-Portals on opposite facings at ground level; its Fire Points are 12 Screaming Embrasures, 3 on each facing._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Daemonic Fortification
+- Fearless
+- Fear (2)
+- Warp-Citadel Battlements: the upper dais counts as Open-Topped Battlements capable of holding up to 15 Infantry models, granting a 4+ Cover Save
+- Beacon of the Ruinstorm (18"): friendly Daemons of the Ruinstorm units arriving via Deep Strike within 18" of this Fortification do not scatter
+- Unstable Veil Anchor (18"): friendly Daemons of the Ruinstorm units within 18" of this Fortification subtract 1 from the number of wounds suffered when failing a Daemonic Instability check (to a minimum of 0)
+- Citadel of the Dominion: every 12" aura range of the Ætheric Dominion Enhancement the Grand Warp-Citadel takes is 18" instead
+- Catastrophic Warp-Collapse: if this Fortification is reduced to 0 Hull Points, do not roll on the Building Damage table. Instead, roll 2D6 to determine the radius of the rupture in inches. Every unit within that distance (friend or foe) suffers 2D6 Strength 6 AP 3 hits with the Ignores Cover and Pinning special rules before the model is removed
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Grand Warp-Citadel may take one of the following crown æther-artillery weapons:** |  |
+| – Twin-linked Ætheric Arc-Projector | +35 points |
+| – Warp-Flame Maw | +30 points |
+| – Skull-Cannon Battery | +35 points |
+| **The Grand Warp-Citadel may take any of the following Empyrean Upgrades:** |  |
+| – Up to 2 Reinforced Void-Veils | +25 points each |
+| – Reality-Siphon Obelisks | +30 points |
+| **The Grand Warp-Citadel may take one of the following Ætheric Dominion Enhancements:** |  |
+| – Blood-Slicked Foundation | +20 points |
+| – Festering Contagion | +20 points |
+| – Warp-Storm Conduit | +25 points |
+| – Cacophony of Excess | +15 points |
+| – Reality-Fracture Anchor | +25 points |
+| – Soul-Forge Furnace | +25 points |
+| – Shifting Nightmare | +20 points |
+| – Beacon of Undivided Chaos | +30 points |
+
 ## Daemonic Fortification Wargear
 
 The Ætheric Dominion Enhancements. A Daemonic Fortification may take one, and only one matching its Detachment's Ætheric Dominion.
@@ -886,6 +940,14 @@ At the start of each friendly Movement phase, you may remove this Fortification 
 
 This Fortification radiates a 12" Locus of Chaos: friendly Daemons of the Ruinstorm units of any Ætheric Dominion within 12" may re-roll failed Daemonic Instability tests and gain Hatred (Everything) while locked in Assault within 12" of this Fortification.
 
+### Reinforced Void-Veil
+
+Each Reinforced Void-Veil gives the Fortification one Void Shield (Armour Value 12), hardened psychic barriers, as detailed in the Void Shields rules of the Age of Darkness rulebook.
+
+### Reality-Siphon Obelisks
+
+At the start of each friendly Movement phase, roll a D6; on a 5+, the Fortification restores 1 lost Hull Point (up to its starting maximum).
+
 ## Armoury
 
 ### Ranged Weapons
@@ -921,6 +983,10 @@ Projected from the shifting forms of Warp-Spawn and Cataclysm Brutes. If a model
 | Conduit of Change | 24" | 6 | 2 | Assault 3, Psychic Weapon, Precision Shots (2+), Soul Blaze |
 | Aether-Injector Lance | 18" | 7 | 2 | Assault 2, Haywire, Precision Shots (4+) |
 | Ætheric Arc-Projector | 36" | 7 | 3 | Heavy 3, Pinning, Shock Pulse, Rending (5+) |
+| Twin-linked Ætheric Arc-Projector | 36" | 7 | 3 | Heavy 3, Pinning, Shock Pulse, Rending (5+), Twin-linked |
+| Ætheric Bolt-Shrine | 36" | 5 | 4 | Heavy 4, Twin-linked, Soul Blaze |
+| Warp-Flame Maw | Template | 6 | 3 | Assault 1, Torrent (12"), Ignores Cover, Soul Blaze |
+| Skull-Cannon Battery | 48" | 8 | 3 | Ordnance 1, Large Blast (5"), Pinning |
 
 ### Melee Weapons
 

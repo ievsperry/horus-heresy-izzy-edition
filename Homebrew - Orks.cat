@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="68" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="69" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -1549,6 +1549,12 @@ The effect lasts until the end of the turn.</description>
       <categoryLinks>
         <categoryLink targetId="a24f-12d8-36c1-f477" id="68e2-2233-e552-8d26" primary="true" name="Fortification:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="fa5b-036f-238b-4b73" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Big Mek's Supa-Kustom Force Field Tower" hidden="false" id="b38c-5dfa-e5c3-fe4e" type="selectionEntry" targetId="d8d8-b686-b6d6-a090">
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="872c-a8a3-f411-2b66" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="7411-1ce1-0a59-a226" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Sky-Blasta Pad" hidden="false" id="a8f8-8b67-0f5b-5d6f" type="selectionEntry" targetId="85ba-ac2c-9190-e825">
@@ -4173,6 +4179,15 @@ The effect lasts until the end of the turn.</description>
         <profile name="Grot-prod" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="880d-0acb-6f08-eb8b">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Friendly Gretchin units within 6" of one or more models equipped with a grot-prod may re-roll failed Mob Up Leadership tests.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Supa-Kustom Force Field Array" hidden="false" id="de24-8cb0-944a-53ad" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Supa-Kustom Force Field Array" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d565-d99f-c02f-1a9d">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Fortification projects 2 Void Shields (Armour Value 12) in a 12" radius around it, using the standard Void Shield rules of the Age of Darkness 2.0 rulebook (see Projected Supa-KFF Dome and Unstable Kustom Overdrive).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -19719,6 +19734,116 @@ The effect lasts until the end of the turn.</description>
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175" />
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Big Mek's Supa-Kustom Force Field Tower" hidden="false" id="d8d8-b686-b6d6-a090" publicationId="96d0-c462-d158-fbad">
+      <rules>
+        <rule name="Projected Supa-KFF Dome (12&quot;)" id="303e-dd3c-77c4-ced2" hidden="false">
+          <description>The Supa-KFF Tower's Void Shields form a 12" protective dome centred on the Fortification. Any shooting attack originating outside this 12" radius that targets the Supa-KFF Tower, or any friendly Ork unit where the target unit is wholly within 12" of the Supa-KFF Tower or where a line drawn from the firing model to the target passes through the 12" radius of the dome, must first resolve its hits against the active Void Shields (AV 12) before allocating any remaining hits to the target unit. If a Barrage weapon fired from outside the dome scatters its Blast marker over a unit inside the dome (or over the Supa-KFF Tower itself), the hits are still resolved against the active Void Shields first. Attacks made by an enemy unit inside the 12" radius at a target also inside it are not intercepted by the Void Shields</description>
+        </rule>
+        <rule name="Unstable Kustom Overdrive" id="6387-b896-4a49-d847" hidden="false">
+          <description>At the start of each friendly Shooting phase, roll a D6 for the state of the Tower's Void Shields until the start of your next turn. 1, Zoggin' Short-Circuit!: 1 active Void Shield immediately collapses (if none are active, the Tower suffers 1 Hull Point loss with no saves allowed). 2, Power Flicker: its Void Shields are AV 10. 3–4, Hummin' Along Nicely: no change; its Void Shields are AV 12. 5, Supa-Charged Coils: its Void Shields are AV 13. 6, MAXIMUM WAAAGH! OVERDRIVE: its Void Shields are AV 13, its dome's radius is 18", and 1 collapsed Void Shield is immediately restored</description>
+        </rule>
+        <rule name="Grot Kick-Start" id="3d4f-49bb-e7be-168b" hidden="false">
+          <description>At the end of each friendly Shooting phase, if the Supa-KFF Tower has at least one collapsed Void Shield and did not fire any weapons during that phase, roll a D6: on a 5+ (or 4+ if a friendly Big Mek is within 6" of the Tower), 1 collapsed Void Shield is immediately restored</description>
+        </rule>
+        <rule name="Note" id="7753-11a0-b920-ebef" hidden="false">
+          <description>A towering, spark-showering scaffolding of copper coils, looted warp-reactors, and shouting Gretchin riggers that projects a crackling, wildly erratic green energy dome over an advancing Ork mob.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="0a38-0d6d-ee11-b51c" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Ork Fortification" id="067e-acea-6eb7-0006" hidden="false" targetId="3ab1-541f-ab72-42ad" type="rule" />
+        <infoLink name="Kustom-Built &amp; Clunky" id="d79b-a0f7-e66b-429b" hidden="false" targetId="f943-006d-ce9a-a769" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="b782-2e1f-8607-1dbf" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Big Mek's Supa-Kustom Force Field Tower" hidden="false" id="0c9f-25ac-8f1a-0d90" publicationId="96d0-c462-d158-fbad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d9e-9aa3-db52-78bd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="004c-6e72-cfb1-02dc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Big Mek's Supa-Kustom Force Field Tower" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="99d5-cf3a-9244-a4a7" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement, Ork)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="1975-1efb-a76e-58ae" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="9d20-f600-bcd3-cf88" primary="false" name="Emplacement Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="dd49-efe9-f54e-620a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f424-aa25-5bab-074e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin-linked big shoota" hidden="false" id="c329-d508-4800-f904" type="selectionEntry" targetId="6658-e52b-0dc5-d975">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d45-c782-7c63-000f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin-linked rokkit launcha" hidden="false" id="e2b3-37e9-2ccc-8f8b" type="selectionEntry" targetId="1177-404a-4f65-084a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d227-0d6b-9e20-71fb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="ebbc-45f8-665d-6b7e">
+              <entryLinks>
+                <entryLink import="true" name="Void Shields" hidden="false" id="30ed-3939-9290-dfed" type="selectionEntry" targetId="f6af-b72a-b86e-2785">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f7f4-704e-08fb-cb0c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Grot Riggers" hidden="false" id="c3cd-82e7-e223-3b7e" type="selectionEntry" targetId="681c-0e52-a80a-61fe">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1d6-ab5a-5401-a412" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Supa-Kustom Force Field Array" hidden="false" id="946e-7336-a178-8ba3" type="selectionEntry" targetId="de24-8cb0-944a-53ad">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7917-6b26-91ca-0e29" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a02-9a51-27d3-120a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="140" />
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sky-Blasta Pad" hidden="false" id="85ba-ac2c-9190-e825" publicationId="96d0-c462-d158-fbad">

@@ -582,7 +582,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Dedicated Transports | Trukk, 'Chinork' Warkopta; Battlewagon for the units that list it |
 | Lord of War | Gorkanaut, Morkanaut, Stompa |
 | Primarch | Ghazghkull Thraka |
-| Fortifications | Mekboy Workshop, Ork Scrap-Bastion, Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement, Waaagh! Banner Totem, Gorkamorka Idol, Supa-Slugga Emplacement, Scrap-Listening Post, Grand Ork Gargant-Fort |
+| Fortifications | Mekboy Workshop, Ork Scrap-Bastion, Sky-Blasta Pad, Slam-Dakka Bunker, Aegis Scrap-Wall & Gun Emplacement, Waaagh! Banner Totem, Gorkamorka Idol, Supa-Slugga Emplacement, Scrap-Listening Post, Grand Ork Gargant-Fort, Big Mek's Supa-Kustom Force Field Tower |
 
 ## Detachments
 
@@ -3974,6 +3974,47 @@ _The twin-linked big shootas (or rokkit launchas or skorchas) are hull-mounted A
 | – Grot Ammo-Stash | +20 points |
 | – Searchlights | +5 points |
 
+### Big Mek's Supa-Kustom Force Field Tower — 140 pts
+
+_A towering, spark-showering scaffolding of copper coils, looted warp-reactors, and shouting Gretchin riggers that projects a crackling, wildly erratic green energy dome over an advancing Ork mob._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Big Mek's Supa-Kustom Force Field Tower | – | 2 | 12 | 12 | 12 | 3 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Big Mek's Supa-Kustom Force Field Tower
+
+**Wargear**
+
+- Supa-Kustom Force Field Array
+
+_Its Void Shields use the standard Void Shield rules of the Age of Darkness 2.0 rulebook. A Dakka-Turret is roof-mounted: an Automated Fire weapon (BS 2) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Emplacement, Ork)
+
+**Special Rules**
+
+- Ork Fortification
+- Kustom-Built & Clunky
+- Projected Supa-KFF Dome (12"): the Supa-KFF Tower's Void Shields form a 12" protective dome centred on the Fortification. Any shooting attack originating outside this 12" radius that targets the Supa-KFF Tower, or any friendly Ork unit where the target unit is wholly within 12" of the Supa-KFF Tower or where a line drawn from the firing model to the target passes through the 12" radius of the dome, must first resolve its hits against the active Void Shields (AV 12) before allocating any remaining hits to the target unit. If a Barrage weapon fired from outside the dome scatters its Blast marker over a unit inside the dome (or over the Supa-KFF Tower itself), the hits are still resolved against the active Void Shields first. Attacks made by an enemy unit inside the 12" radius at a target also inside it are not intercepted by the Void Shields
+- Unstable Kustom Overdrive: at the start of each friendly Shooting phase, roll a D6 for the state of the Tower's Void Shields until the start of your next turn. 1, Zoggin' Short-Circuit!: 1 active Void Shield immediately collapses (if none are active, the Tower suffers 1 Hull Point loss with no saves allowed). 2, Power Flicker: its Void Shields are AV 10. 3–4, Hummin' Along Nicely: no change; its Void Shields are AV 12. 5, Supa-Charged Coils: its Void Shields are AV 13. 6, MAXIMUM WAAAGH! OVERDRIVE: its Void Shields are AV 13, its dome's radius is 18", and 1 collapsed Void Shield is immediately restored
+- Grot Kick-Start: at the end of each friendly Shooting phase, if the Supa-KFF Tower has at least one collapsed Void Shield and did not fire any weapons during that phase, roll a D6: on a 5+ (or 4+ if a friendly Big Mek is within 6" of the Tower), 1 collapsed Void Shield is immediately restored
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Big Mek's Supa-Kustom Force Field Tower may take one of the following Dakka-Turrets:** |  |
+| – Twin-linked big shoota | +10 points |
+| – Twin-linked rokkit launcha | +15 points |
+| **The Big Mek's Supa-Kustom Force Field Tower may take any of the following:** |  |
+| – Up to 2 Void Shields | +50 points each |
+| – Grot Riggers | +15 points |
+
 ### Sky-Blasta Pad — 75 pts
 
 _A wide, oil-stained steel landing platform ringed with flickering guidance flares, fuel drums, and rickety flak-turrets._
@@ -4401,6 +4442,10 @@ Enemy Vehicles attempting to move out of base contact with a vehicle equipped wi
 _A Grot Prod is a crackling electro-prod used to terrorize and discipline nearby Gretchin into battle._
 
 Friendly Gretchin units within 6" of one or more models equipped with a grot-prod may re-roll failed Mob Up Leadership tests.
+
+### Supa-Kustom Force Field Array
+
+The Fortification projects 2 Void Shields (Armour Value 12) in a 12" radius around it, using the standard Void Shield rules of the Age of Darkness 2.0 rulebook (see Projected Supa-KFF Dome and Unstable Kustom Overdrive).
 
 ### Grot Riggers
 

@@ -354,7 +354,7 @@ Use the 2.0 Crusade Force Organisation chart, or the Aeldari and Drukhari detach
 | Fast Attack | Hellions, Reavers, Scourge Talonstrike Cadre, Beastmasters, Razorwing Jetfighter |
 | Heavy Support | Cronos Parasite Engine, Ravager, Scourge Reaper Cadre, Talos Pain Engine, Tantalus, Reaper, Voidraven Bomber |
 | Lord of War | Asdrubael Vect on the Dais of Destruction |
-| Fortifications | Torture-Spire, Kabalite Blade-Bastion, Void-Raptor Sky-Dock, Dread-Pod Drop-Turret, Razor-Blade Barricade, Grand Kabalite Terror-Spire |
+| Fortifications | Torture-Spire, Kabalite Blade-Bastion, Void-Raptor Sky-Dock, Dread-Pod Drop-Turret, Razor-Blade Barricade, Grand Kabalite Terror-Spire, Dark-Light Shadow-Pylon |
 
 A Drukhari army may take one Rite of War, chosen when the army is built; these are the Drukhari Rites of Raid that Master of the Raid refers to. Each has a benefit and a limitation.
 
@@ -2282,6 +2282,49 @@ _The hull weapons are Automated Fire weapons (BS 4), two mounted on each facing.
 
 _The Grand Kabalite Terror-Spire's Armour of 13 (12 Rear) is an exception to the Drukhari Fortification Armour limit, and it may not take the Flesh-Crafted Carapace._
 
+### Dark-Light Shadow-Pylon — 115 pts
+
+_A jagged, barbed obelisk of blackened alloy and captured void-glass dropped from a Kabalite cruiser, bathing the surrounding raid zone in blinding dark-light distortion fields and razor-thin shadow-barriers._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Dark-Light Shadow-Pylon | – | 4 | 11 | 11 | 11 | 3 | – (Impassable) | No base |
+
+**Unit Composition**
+
+- 1 Dark-Light Shadow-Pylon
+
+**Wargear**
+
+- Shadow-Field Projector
+
+_Its Void Shields use the standard Void Shield rules of the Age of Darkness 2.0 rulebook. A Slave-Brain Splinter Turret is crown-mounted: an Automated Fire weapon (BS 4) with a 360° line of sight._
+
+**Unit Type**
+
+- Fortification (Emplacement)
+
+**Special Rules**
+
+- Drukhari Fortification
+- Night-Shield Matrix
+- Projected Shadow-Dome (12"): the Dark-Light Shadow-Pylon's Void Shields form a 12" protective dome centred on the Fortification. Any shooting attack originating outside this 12" radius that targets the Dark-Light Shadow-Pylon, or any friendly Drukhari unit where the target unit is wholly within 12" of the Dark-Light Shadow-Pylon or where a line drawn from the firing model to the target passes through the 12" radius of the dome, must first resolve its hits against the active Void Shields (AV 12) before allocating any remaining hits to the target unit. If a Barrage weapon fired from outside the dome scatters its Blast marker over a unit inside the dome (or over the Dark-Light Shadow-Pylon itself), the hits are still resolved against the active Void Shields first. Attacks made by an enemy unit inside the 12" radius at a target also inside it are not intercepted by the Void Shields
+- Night-Shroud Distortion (12"): any friendly Drukhari unit (including the Pylon itself) that is wholly within 12" of the Pylon, or targeted by a shooting attack originating outside the 12" radius where a line drawn from the firing model to the target passes through the 12" dome, gains Shrouded (5+) against shooting attacks made from more than 12" away. If a unit already has the Shrouded (X) special rule, it instead improves its existing Shrouded roll by +1 (to a maximum of 4+)
+- Flicker-Core Surge: at the end of each friendly Shooting phase, if the Dark-Light Shadow-Pylon has at least one collapsed Void Shield and did not fire any weapons during that phase, roll a D6: on a 5+ (or 4+ if an enemy unit within 12" failed a Morale or Pinning check earlier in that turn), 1 collapsed Void Shield is immediately restored
+
+**Options**
+
+| Option | Cost |
+| --- | --- |
+| **The Dark-Light Shadow-Pylon may take any of the following:** |  |
+| – Up to 3 Void Shields | +50 points each |
+| – Twin-linked splinter cannon | +15 points |
+| – Phantasm Grenade Launcher Array | +15 points |
+| **The Dark-Light Shadow-Pylon may take one of the following Sub-Faction Enhancements:** |  |
+| – Splinter-Rack Munitions | +20 points |
+| – Combat-Drug Atomisers | +20 points |
+| – Flesh-Crafted Carapace | +25 points |
+
 ### Void-Raptor Sky-Dock — 80 pts
 
 _A sleek, crescent-winged anti-gravitic landing platform slung beneath a raid-corvette to refuel screaming Reaver jetbikes and Venom skimmers mid-slaughter._
@@ -2561,6 +2604,10 @@ A unit containing one or more models equipped with a pain amplifier may select t
 ### Night-Shield Projector
 
 A Fortification with a Night-Shield Projector improves its Night-Shield Matrix: ranged attacks made at it from more than 12" away (instead of 18") are resolved as Snap Shots.
+
+### Shadow-Field Projector
+
+The Fortification projects 1 Void Shield (Armour Value 12) in a 12" radius around it, using the standard Void Shield rules of the Age of Darkness 2.0 rulebook (see Projected Shadow-Dome).
 
 ### Phantasm Grenade Launcher
 

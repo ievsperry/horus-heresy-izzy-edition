@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="33" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6b44-0ba6-7d9a-9a5a" name="Homebrew - Aeldari (Asuryani)" revision="34" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="d5ae-9e15-7ef2-10f7" name="Asuryani for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Asuryani" />
   </publications>
@@ -283,6 +283,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="c53e-5210-1186-fed4" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="53a7-ccec-cdce-603f" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="61f3-e286-afdf-423d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="57a8-4373-9e0e-e73f" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="6c2f-a545-af11-51d9" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </conditionGroup>
@@ -347,6 +348,7 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="c53e-5210-1186-fed4" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="53a7-ccec-cdce-603f" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="61f3-e286-afdf-423d" shared="true" includeChildSelections="true" includeChildForces="false" />
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="57a8-4373-9e0e-e73f" shared="true" includeChildSelections="true" includeChildForces="false" />
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="6c2f-a545-af11-51d9" shared="true" includeChildSelections="true" includeChildForces="false" />
                   </conditions>
                 </conditionGroup>
@@ -693,6 +695,11 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                 <modifier type="decrement" field="bdc2-5a98-4acf-9f85" value="1">
                   <repeats>
                     <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61f3-e286-afdf-423d" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="bdc2-5a98-4acf-9f85" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a8-4373-9e0e-e73f" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
                 <modifier type="decrement" field="bdc2-5a98-4acf-9f85" value="1">
@@ -1093,6 +1100,11 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                 </modifier>
                 <modifier type="decrement" field="c9ab-3d8a-0e0d-512b" value="1">
                   <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a8-4373-9e0e-e73f" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="c9ab-3d8a-0e0d-512b" value="1">
+                  <repeats>
                     <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d4a-8003-4b6d-4b20" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
@@ -1395,6 +1407,11 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
                 <modifier type="increment" field="8fec-5159-4cad-7f70" value="1">
                   <repeats>
                     <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61f3-e286-afdf-423d" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="8fec-5159-4cad-7f70" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57a8-4373-9e0e-e73f" repeats="1" roundUp="false" />
                   </repeats>
                 </modifier>
                 <modifier type="increment" field="8fec-5159-4cad-7f70" value="1">
@@ -1932,6 +1949,19 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
       <categoryLinks>
         <categoryLink targetId="a24f-12d8-36c1-f477" id="a498-ca08-801f-2f87" primary="true" name="Fortification:" />
         <categoryLink targetId="36c3-e85e-97cc-c503" id="7c95-0a4b-befd-20e2" primary="false" name="Unit:" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Wraithbone Holo-Shield Spire" hidden="false" id="4ff9-8ef3-067c-8b82" type="selectionEntry" targetId="57a8-4373-9e0e-e73f">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7904-b140-5846-d462" shared="true" includeChildSelections="true" includeChildForces="false" />
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="bf8a-bc0e-82ed-33a5" primary="true" name="Fortification:" />
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="82a9-58cf-3e25-38f9" primary="false" name="Unit:" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Void-Spinner Sky-Platform" hidden="false" id="beee-c090-3a3f-552e" type="selectionEntry" targetId="5d4a-8003-4b6d-4b20">
@@ -5336,6 +5366,24 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
         <profile name="Holo-Field Pylons" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="43b9-a101-afa2-0e95">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Wraithbone Force-Wall with Holo-Field Pylons improves its Refraction Screen to Shrouded (5+).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Psychic Refraction Dome" hidden="false" id="c599-9fbc-9bcc-75f3" publicationId="d5ae-9e15-7ef2-10f7">
+      <profiles>
+        <profile name="Psychic Refraction Dome" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1dea-606f-c0a7-c8da">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Fortification projects 1 Void Shield (Armour Value 12) in a 12" radius around it, using the standard Void Shield rules of the Age of Darkness 2.0 rulebook (see Projected Refraction Dome).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Waystone Resonance Core" hidden="false" id="8f3a-0204-e44e-97e5" publicationId="d5ae-9e15-7ef2-10f7">
+      <profiles>
+        <profile name="Waystone Resonance Core" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="a835-1468-7d34-6d1e">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Friendly Asuryani Psykers within 12" of the Fortification may re-roll failed Psychic Checks of double 6s (preventing Perils of the Warp on that roll).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -18597,6 +18645,115 @@ Lords of War. An Aeldari Lords of War Detachment may contain up to three Lords o
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Wraithbone Holo-Shield Spire" hidden="false" id="57a8-4373-9e0e-e73f" publicationId="d5ae-9e15-7ef2-10f7">
+      <rules>
+        <rule name="Projected Refraction Dome (12&quot;)" id="4b22-9cb7-ef06-4ce3" hidden="false">
+          <description>The Wraithbone Holo-Shield Spire's Void Shields form a 12" protective dome centred on the Fortification. Any shooting attack originating outside this 12" radius that targets the Wraithbone Holo-Shield Spire, or any friendly Asuryani unit where the target unit is wholly within 12" of the Wraithbone Holo-Shield Spire or where a line drawn from the firing model to the target passes through the 12" radius of the dome, must first resolve its hits against the active Void Shields (AV 12) before allocating any remaining hits to the target unit. If a Barrage weapon fired from outside the dome scatters its Blast marker over a unit inside the dome (or over the Wraithbone Holo-Shield Spire itself), the hits are still resolved against the active Void Shields first. Attacks made by an enemy unit inside the 12" radius at a target also inside it are not intercepted by the Void Shields</description>
+        </rule>
+        <rule name="Prism Holo-Shroud (12&quot;)" id="92ea-46a5-4e09-93c3" hidden="false">
+          <description>Any friendly Asuryani unit (including the Spire itself) that is wholly within 12" of the Spire, or targeted by a shooting attack originating outside the 12" radius where a line drawn from the firing model to the target passes through the 12" dome, gains Shrouded (5+) against shooting attacks made from more than 12" away. If a unit already has the Shrouded (X) special rule, it instead improves its existing Shrouded roll by +1 (to a maximum of 4+)</description>
+        </rule>
+        <rule name="Spirit-Harmonic Reconstitution" id="b837-cd97-3a3f-ad30" hidden="false">
+          <description>At the end of each friendly Shooting phase, if the Wraithbone Holo-Shield Spire has at least one collapsed Void Shield and did not fire any weapons during that phase, roll a D6: on a 5+ (or 4+ if a friendly Asuryani Psyker is within 6" of the Spire), 1 collapsed Void Shield is immediately restored</description>
+        </rule>
+        <rule name="Note" id="5c94-a105-0313-9e85" hidden="false">
+          <description>A slender, gracefully fluted spire of psycho-reactive wraithbone woven with crystalline prism-nodes that projects both a shimmering psychic force-dome and a light-bending holo-field across nearby Craftworld hosts.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Xenos" id="e94e-2ac8-6804-b068" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
+        <infoLink name="Asuryani Fortification" id="1ffc-310e-c4dd-a0ce" hidden="false" targetId="c81d-5912-53be-3fc6" type="rule" />
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="6498-f330-49c9-4096" primary="false" name="Unit:" />
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Wraithbone Holo-Shield Spire" hidden="false" id="514b-05e3-c821-f0d0" publicationId="d5ae-9e15-7ef2-10f7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3443-cda7-48f3-0f12" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee35-5e09-0d49-668f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Wraithbone Holo-Shield Spire" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="9fd8-9fdc-d636-454e" publicationId="d5ae-9e15-7ef2-10f7">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Fortification (Emplacement, Asuryani)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">–</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">– (Impassable)</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="c0ab-d0e6-c684-5151" primary="false" name="Fortification Unit Type" />
+            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="fcbb-b101-b8f1-e7ff" primary="false" name="Emplacement Sub-type" />
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" hidden="false" id="4f2a-b25e-b03a-12e7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a204-a90c-0fa2-b198" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Scatter laser" hidden="false" id="03fe-c727-9b2e-5a11" type="selectionEntry" targetId="f7f2-e730-fef9-c731">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4015-6abb-f287-1914" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Shuriken cannon" hidden="false" id="d420-bbdb-b15f-5404" type="selectionEntry" targetId="e6be-8238-efaa-4607">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="603f-45ef-0530-d55c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" hidden="false" id="7d55-4901-272b-e67f">
+              <entryLinks>
+                <entryLink import="true" name="Void Shields" hidden="false" id="83a4-de1c-4949-8087" type="selectionEntry" targetId="f6af-b72a-b86e-2785">
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="39fc-a388-146b-2666" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Waystone Resonance Core" hidden="false" id="a310-3bd3-e1e4-7650" type="selectionEntry" targetId="8f3a-0204-e44e-97e5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fbb-bf9f-5628-3a22" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Psychic Refraction Dome" hidden="false" id="970f-0d36-0acf-aeab" type="selectionEntry" targetId="c599-9fbc-9bcc-75f3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b072-0116-d899-fcf6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5ff-030e-f4d3-52bf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120" />
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Void-Spinner Sky-Platform" hidden="false" id="5d4a-8003-4b6d-4b20" publicationId="d5ae-9e15-7ef2-10f7">
       <rules>

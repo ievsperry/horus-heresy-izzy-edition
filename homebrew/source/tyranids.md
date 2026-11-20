@@ -217,7 +217,7 @@ Use the 2.0 Crusade Force Organisation chart: HQ, Elites, Troops, Fast Attack, H
 | Fast Attack | Gargoyles, Raveners, Meiotic Spores, Sky-Slasher Swarms, Tyranid Shrikes, Harpy, Hive Crone, Spore Mines, Mucolid Spores |
 | Heavy Support | Carnifexes, Screamer-Killer, Biovores, Barbgaunts, Trygon, Mawloc, Tyrannofex, Toxicrene, Exocrine, Norn Assimilator, Sporocyst, Dimachaeron, Stone-crusher Carnifex |
 | Lord of War | Hierophant Bio-titan, Harridan, Scythed Hierodule, Barbed Hierodule |
-| Fortifications | Capillary Tower, Sporocyst Bio-Fortification, Brood Nest, Bio-Plasma Bastion, Spore-Vent Cluster, Tunnel-Node Cluster, Capillary Spire Cluster |
+| Fortifications | Capillary Tower, Sporocyst Bio-Fortification, Brood Nest, Bio-Plasma Bastion, Spore-Vent Cluster, Tunnel-Node Cluster, Capillary Spire Cluster, Grand Capillary Citadel |
 
 When building a Primary Detachment with the Tyranids faction trait, the controlling player may select a single Rite of War, provided the Detachment meets all listed Prerequisites and Limitations. Only one Rite of War may be selected per Detachment, and its Effects and Limitations apply for the duration of the battle.
 
@@ -2634,6 +2634,58 @@ _Clustered nodules of ribbed chitin and pulsing vascular vents that erupt across
 | – Chitinous Tunnel-Network | +20 points |
 | – Endless Brood-Vats | +25 points |
 
+### Grand Capillary Citadel — 210 pts
+
+_A colossal, multi-tiered fortress-organism of calcified chitin and pulsing vascular spires grown to anchor a planetary invasion, housing entire broods inside its hollowed carapace chambers while bathing the surrounding swarm in synaptic resonance._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Grand Capillary Citadel | – | 3 | 14 | 14 | 13 | 8 | 30 (2 Access Points, 12 Fire Points) | Use model |
+
+**Unit Composition**
+
+- 1 Grand Capillary Citadel
+
+**Wargear**
+
+- Eight twin-linked deathspitter bio-cannons
+
+_The twin-linked deathspitter bio-cannons are hull-mounted Automated Fire weapons (BS 3), two on each facing. A carapace bio-artillery weapon is an Automated Fire weapon (BS 3) with a 360° line of sight. Its Access Points are 2 Sphincter-Gates on opposite facings at ground level; its Fire Points are 12 Firing Orifices, 3 on each facing._
+
+**Unit Type**
+
+- Fortification (Building)
+
+**Special Rules**
+
+- Bio-Construct
+- Fearless
+- Capillary Battlements: the upper carapace terrace counts as Open-Topped Battlements capable of holding up to 15 Infantry models, granting a 4+ Cover Save
+- Reinforced Chitin: enemy attacks targeting this Fortification do not gain extra armour penetration dice from the Armourbane (Melta) special rule unless fired from within half range (6" or less)
+- Synaptic Relay (24"): this Fortification counts as a Synapse Creature with a 24" range for all friendly Tyranid units
+- Reclamation Spore-Mist: friendly Tyranid units within 12" of this Fortification gain Feel No Pain (6+) (or improve an existing Feel No Pain (X) special rule by +1, to a maximum of 4+)
+- Greater Acidic Rupture: if this Fortification is reduced to 0 Hull Points, do not roll on the Building Damage table. Instead, roll 2D6 to determine the radius of the rupture in inches. Every non-Tyranid unit within that distance suffers 2D6 Strength 5 AP 4 hits with the Ignores Cover and Fleshbane special rules before the model is removed
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Grand Capillary Citadel may take one of the following carapace bio-artillery weapons:** |  |
+| – Twin-linked heavy venom cannon | +35 points |
+| – Twin-linked barbed strangler | +25 points |
+| – Bio-plasma spore-mortar | +35 points |
+| **The Grand Capillary Citadel may take any of the following Bio-Morph Upgrades:** |  |
+| – Extended Chitinous Plating | +20 points |
+| – Regenerative Vascular Sacs | +30 points |
+| – Subterranean Brood-Tunnel | +20 points |
+| **The Grand Capillary Citadel may take one of the following Hive Fleet Enhancements:** |  |
+| – Seismic Tremor-Roots | +20 points |
+| – Pheromone Trail Beacon | +20 points |
+| – Dominion Synapse Node | +25 points |
+| – Shadow in the Warp Emitter | +25 points |
+| – Chitinous Tunnel-Network | +20 points |
+| – Endless Brood-Vats | +25 points |
+
 ### Chitinous Spore-Wall — 55 pts
 
 _A jagged, pulsing ridge of calcified bone-plates, ribbed chitin, and toxic spore-cysts grown rapidly from digested biomass to anchor a defensive perimeter._
@@ -2671,6 +2723,18 @@ _With Infiltrate, the Spore-Wall is deployed using the standard Infiltrate speci
 ## Bio-Fortification Wargear
 
 Hive Fleet Enhancements and the Capillary Spire Cluster's forward-deployment options. An enhancement may only be taken by a Bio-Fortification in a Detachment of its Hive Fleet.
+
+### Extended Chitinous Plating
+
+The Fortification's Rear Armour Value is 14.
+
+### Regenerative Vascular Sacs
+
+At the start of each friendly Movement phase, roll a D6; on a 5+, the Fortification restores 1 lost Hull Point (up to its starting maximum).
+
+### Subterranean Brood-Tunnel
+
+Friendly Tyranid Infantry units arriving from Reserves may treat the Fortification's Access Points as a friendly Battlefield Edge for the purpose of entering play.
 
 ### Seismic Tremor-Roots
 
@@ -2724,7 +2788,7 @@ Enemy non-Tyranid units within 3" of a Chitinous Spore-Wall with Toxic Miasma Cy
 
 Biomorphs are the Tyranid equivalent of wargear: organs, glands and growths bred into a creature for a purpose. A biomorph is taken by every model in the unit and costs its points for each model, unlike weapon options, which are bought model by model.
 
-Every unit may take adrenal glands, toxin sacs, flesh hooks, engrained aggression and wraithful will, and dynamic camouflage, a hardened carapace, improved strength, improved toughness, killer impulse, walking terror, hulking brute and burrower where its models qualify, at the costs below. A datasheet that lists a biomorph in its options uses its own cost instead. Wings, regeneration, spine banks and Unnatural Resilience may only be taken where a datasheet offers them. Spore Mines, Meiotic Spores, Mucolid Spores, Mycetic Spores, Tyrannocytes, Sporocysts, Sporocyst Bio-Fortifications, Capillary Towers, Brood Nests, Bio-Plasma Bastions, Spore-Vent Clusters, Tunnel-Node Clusters, Capillary Spire Clusters and Chitinous Spore-Walls may not take biomorphs.
+Every unit may take adrenal glands, toxin sacs, flesh hooks, engrained aggression and wraithful will, and dynamic camouflage, a hardened carapace, improved strength, improved toughness, killer impulse, walking terror, hulking brute and burrower where its models qualify, at the costs below. A datasheet that lists a biomorph in its options uses its own cost instead. Wings, regeneration, spine banks and Unnatural Resilience may only be taken where a datasheet offers them. Spore Mines, Meiotic Spores, Mucolid Spores, Mycetic Spores, Tyrannocytes, Sporocysts, Sporocyst Bio-Fortifications, Capillary Towers, Brood Nests, Bio-Plasma Bastions, Spore-Vent Clusters, Tunnel-Node Clusters, Capillary Spire Clusters, Grand Capillary Citadels and Chitinous Spore-Walls may not take biomorphs.
 
 ### Adrenal Glands
 
@@ -2968,6 +3032,7 @@ _Living guns that fire beetles, spines and acid-filled grubs, carried by the swa
 | Barblauncher | 24" | 4 | 5 | Heavy 1, Blast (3"), Pinning |
 | Deathspitter | 18" | 5 | 5 | Assault 3 |
 | Deathspitter bio-cannon | 24" | 5 | 4 | Assault 3, Pinning |
+| Twin-linked deathspitter bio-cannon | 24" | 5 | 4 | Assault 3, Pinning, Twin-linked |
 | Devourer | 18" | 4 | – | Assault 3 |
 | Fleshborer | 12" | 4 | 5 | Assault 1 |
 | Fleshborer hive | 18" | 5 | 5 | Assault 20 |
@@ -3005,8 +3070,11 @@ _Heavy bio-artillery that hurls crystal shards or seed-pods that burst into stra
 | Weapon | Range | Str | AP | Type |
 |---|---|---|---|---|
 | Barbed strangler | 36" | 4 | 5 | Assault 1, Large Blast (5"), Pinning |
+| Twin-linked barbed strangler | 36" | 4 | 5 | Assault 1, Large Blast (5"), Pinning, Twin-linked |
+| Bio-plasma spore-mortar | 48" | 8 | 2 | Heavy 1, Large Blast (5"), Pinning |
 | Bio-cannon | 48" | 10 | 3 | Heavy 6, Sunder |
 | Heavy venom cannon | 36" | 9 | 4 | Assault 1, Blast (3"), Sunder, Rending (5+) |
+| Twin-linked heavy venom cannon | 36" | 9 | 4 | Assault 1, Blast (3"), Sunder, Rending (5+), Twin-linked |
 | Impaler cannon | 36" | 8 | 4 | Heavy 2, Barrage |
 | Rupture cannon | 48" | 10 | 3 | Heavy 2, Sunder |
 | Shockcannon | 24" | 7 | 4 | Assault 3, Concussive (2) |

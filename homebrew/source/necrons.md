@@ -157,7 +157,7 @@ Use the 2.0 Crusade Force Organisation chart (Necron armies take the Fortificati
 | Fast Attack | Canoptek Wraiths, Canoptek Scarabs, Tomb Blades, Destroyers, Ophydian Destroyers |
 | Heavy Support | Heavy Destroyers, Canoptek Spyders, Canoptek Reanimator, Canoptek Doomstalker, Annihilation Barge, Doomsday Ark, Monolith, Doom Scythe |
 | Lord of War | C'tan Shard of the Nightbringer, C'tan Shard of the Deceiver, C'tan Shard of the Void Dragon, Szarekh the Silent King, Obelisk, Tesseract Vault |
-| Fortifications | Necron Obelisk, Summoning Core, Greater Summoning Core, Necron Energy Core, Necron Tomb-Bastion, Grand Tomb-Ziggurat |
+| Fortifications | Necron Obelisk, Summoning Core, Greater Summoning Core, Necron Energy Core, Necron Tomb-Bastion, Grand Tomb-Ziggurat, Tomb-World Phase-Projector |
 
 A Necron army may take one Rite of War:
 
@@ -1990,6 +1990,43 @@ _The twin-linked gauss flux arcs are hull-mounted Automated Fire weapons (BS 4),
 | – Eternity Gate Core | +25 points |
 | – Quantum Shielding | +30 points |
 
+### Tomb-World Phase-Projector — 160 pts
+
+_A towering, obsidian-and-necrodermis pylon that bends localized space-time into overlapping dimensional barriers, shunting incoming ordnance harmlessly into the void before it can strike nearby Necron phalanxes._
+
+| Model | M | BS | Front | Side | Rear | HP | Transport Capacity | Base |
+|---|---|---|---|---|---|---|---|---|
+| Tomb-World Phase-Projector | – | – | 12 | 12 | 12 | 3 | – (Impassable) | Use model |
+
+**Unit Composition**
+
+- 1 Tomb-World Phase-Projector
+
+**Wargear**
+
+- Dimensional Phase-Field Array
+
+_Its Void Shields use the standard Void Shield rules of the Age of Darkness 2.0 rulebook._
+
+**Unit Type**
+
+- Fortification (Emplacement, Necron)
+
+**Special Rules**
+
+- Necron Fortification
+- Projected Dimensional Dome (12"): the Tomb-World Phase-Projector's Void Shields form a 12" protective dome centred on the Fortification. Any shooting attack originating outside this 12" radius that targets the Tomb-World Phase-Projector, or any friendly Necron unit where the target unit is wholly within 12" of the Tomb-World Phase-Projector or where a line drawn from the firing model to the target passes through the 12" radius of the dome, must first resolve its hits against the active Void Shields (AV 12) before allocating any remaining hits to the target unit. If a Barrage weapon fired from outside the dome scatters its Blast marker over a unit inside the dome (or over the Tomb-World Phase-Projector itself), the hits are still resolved against the active Void Shields first. Attacks made by an enemy unit inside the 12" radius at a target also inside it are not intercepted by the Void Shields
+- Harmonic Phase-Reconstitution: at the end of each friendly Shooting phase, if the Tomb-World Phase-Projector has at least one collapsed Void Shield, roll a D6: on a 5+ (or 4+ if a friendly Necron Cryptek or Overlord is within 6" of the Projector), 1 collapsed Void Shield is immediately restored
+
+**Options**
+
+| Option | Cost |
+|---|---|
+| **The Tomb-World Phase-Projector may take any of the following:** |  |
+| – Up to 2 Void Shields | +50 points each |
+| – Reinforced Necrodermis Plating | +25 points |
+| – Cryptek Telemetry Node | +20 points |
+
 ## Wargear
 
 Every Necron model's armour is part of its living metal body; its Armour Save is shown on its profile.
@@ -2027,6 +2064,14 @@ See the Armoury.
 _Obyron's dimensional cloak, bound to his master's location._
 
 As Vargard Obyron's datasheet states.
+
+### Dimensional Phase-Field Array
+
+The Fortification projects 2 Void Shields (Armour Value 12) in a 12" radius around it, using the standard Void Shield rules of the Age of Darkness 2.0 rulebook (see Projected Dimensional Dome).
+
+### Cryptek Telemetry Node
+
+Friendly Necron units arriving via Deep Strike within 12" of the Fortification do not scatter.
 
 ### Eternity Gate Core
 
