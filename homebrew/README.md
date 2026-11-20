@@ -970,15 +970,20 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Library: the Lucifer-Pattern (Elites, up to three), Furibundus-Pattern and Unification-Pattern (Heavy Support, up
   to two) Protodreadnoughts, with a root entry in every Legion catalogue (with Legiones Astartes (X)), Blackshields,
   Shattered Legions, Mechanicum, Questoris Household and Imperialis Militia. Each arm is one pick; a close combat arm
-  carries its in-built weapon, which has a pick of its own, so an arm exchanged for a gun has none. The World Eaters
-  and Iron Warriors upgrades and weapons show only in those Legions' forces, the Mechanicum weapon swaps and
-  High Techno-Arcana upgrades only in a Mechanicum force (each upgrade only with its Order of High Techno-arcana; the
-  Infernal Warp-Capacitor for a Traitor force with the Reductor Order or a Proscribed Order), and the Questoris
-  Household Bondsman-Rig in a Mechanicum or Questoris Household force, where taking it moves the squadron to Troops
-  with the Line Sub-type. Squadron-wide upgrades are one pick for the unit, priced per model. It refuses to run
-  twice. The same module is the Leagues of Votann's `FACTION_LIMITS` hook: each build adds the Ironkin Ancestor-Rig,
-  Cthonian Siege-Strider and Brôkhyr Ballistic Strider, the Votann weapons they name that the doc does not have
-  (profiled as their Imperial counterparts), and the League Upgrades, each shown only with its League.
+  carries its in-built weapon, which has a pick of its own, so an arm exchanged for a gun has none. Each Legion's
+  upgrades and weapons show only in that Legion's forces (a Dark Angels squadron must pick a Hexagrammaton wing, which
+  unlocks its wing-only options; the Word Bearers' Colchisian Warp-Tainted Core only in a Traitor force; the Raven
+  Guard's Ravenspire Heavy Talons take both of a Lucifer's arms), the Blackshields' in Blackshields and Shattered
+  Legions forces, the Imperialis Militia's in a Militia force (each Provenance upgrade and weapon swap only with its
+  Provenance of War; Arms of the Omnissiah unlocks the Mauler Bolt Cannon), the Mechanicum weapon swaps and High Techno-Arcana upgrades only in a Mechanicum force (each
+  upgrade only with its Order of High Techno-arcana; the Infernal Warp-Capacitor for a Traitor force with the Reductor
+  Order or a Proscribed Order), and the Questoris Household Bondsman-Rig in a Mechanicum or Questoris Household force,
+  where taking it moves the squadron to Troops with the Line Sub-type. Squadron-wide upgrades are one pick for the
+  unit, priced per model. It refuses to run twice; `--update` rebuilds the three units in the Mech Library in place
+  from the script's data (every entry keeps its id, new ones are added). The same module is the Leagues of Votann's
+  `FACTION_LIMITS` hook: each build adds the Ironkin Ancestor-Rig, Cthonian Siege-Strider and Brôkhyr Ballistic
+  Strider, the Votann weapons they name that the doc does not have (profiled as their Imperial counterparts), and
+  the League Upgrades, each shown only with its League.
 - `python3 homebrew/add_custom_units.py` adds the custom units of Liber Izonian (the Claude Doc "Liber Izonian for
   The Horus Heresy 2.0 — Custom Units", kept as `source/custom-units.md`) to the official catalogues, each once. The Red Fangs are a copy of the library's Heavy Support Squad (every id renewed, so its
   Legion options and transports stay as they are) in `2022 - LA - World Eaters.cat`, linked like the Heavy Support
