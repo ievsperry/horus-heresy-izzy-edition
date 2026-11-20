@@ -66,7 +66,7 @@ Points for the first model include the squadron; each further model costs the Sq
 - Squadron Expansion: one additional Furibundus-Pattern Protodreadnought (+175 pts).
 - Either or both Siege Claws may be exchanged for: Siege Drill with in-built Twin-linked Bolter (+10 each), Twin-linked Gravis Bolt Cannon (+10), Twin-linked Gravis Autocannon (+15), Twin-linked Cyclone Missile Pod (Frag & Krak) (+25), Twin-linked Gravis Lascannon (+25), Cyclonic Melta Lance (+25), Grav-Flux Bombard (+25), Heavy Conversion Beamer (+20).
 - Any in-built Twin-linked Bolter may be exchanged for: Heavy Flamer (+5), Plasma Blaster (+10), Graviton Gun (+15), Meltagun (+15).
-- Carapace & Chassis: Carapace Phosphex Discharger (One Shot) (+15) or Havoc Launcher (+10); Dreadnought Extra Armour (+15); Helical Targeting Array (+15).
+- Carapace & Chassis: Carapace Phosphex Discharger (One Shot) (+15, Iron Warriors only) or Havoc Launcher (+10); Dreadnought Extra Armour (+15); Helical Targeting Array (+15).
 
 ### Unification-Pattern Protodreadnought (Heavy Support) — 140 pts
 
@@ -82,7 +82,7 @@ Points for the first model include the squadron; each further model costs the Sq
 
 - Squadron Expansion: one additional Unification-Pattern Protodreadnought (+135 pts).
 - Primary Gun Arm: Gravis Autocannon (+5), Gravis Plasma Cannon (+10), Volkite Dual-Culverin (+10), Cyclone Missile System (+10), Gravis Lascannon (+15).
-- Missile Pod Arm: Gravis Bolt Cannon (-10), Gravis Autocannon (-5), Gravis Plasma Cannon (free), Volkite Dual-Culverin (free), Gravis Lascannon (+5).
+- Missile Pod Arm: Gravis Bolt Cannon (free), Gravis Autocannon (free), Gravis Plasma Cannon (free), Volkite Dual-Culverin (free), Gravis Lascannon (+5). (The doc gives -10 and -5; no swap costs less than 0.)
 - Carapace & Chassis: Havoc Launcher (+10), Dreadnought Extra Armour (+15), Helical Targeting Array (+15).
 
 ### Mechanicum: High Techno-Arcana Chassis Upgrades
@@ -135,7 +135,7 @@ In an Iron Warriors detachment, a squadron may take one of (every model takes it
 | Iron-Fire Targeter-Cogitators | +15 per model | Re-roll To Hit rolls of 1 with Heavy or Ordnance weapons; ignores negative BS modifiers from Night Fighting. |
 | Expendable Vanguard Manifolds | +15 per model | Ignores the -1" Run penalty from Clumsy Hydraulic Actuators; its reactor explosion becomes Strength 9, AP 4 out to 8" (Strength 10, AP 3 out to 8" for a Furibundus). |
 
-**Weapons.** Any Gravis Bolt Cannon may be exchanged for a **Shrapnel Cannon** (free), and a Furibundus's Twin-linked Gravis Bolt Cannon for a **Twin-linked Shrapnel Cannon** (free). A Lucifer or Furibundus may exchange a Gravis Power Fist or Siege Claw for a **Graviton Crusher-Claw** (+15 each), with its in-built weapon. A Lucifer or Unification may take a **Carapace Phosphex Discharger** (+15).
+**Weapons.** Any Gravis Bolt Cannon may be exchanged for a **Shrapnel Cannon** (free), and a Furibundus's Twin-linked Gravis Bolt Cannon for a **Twin-linked Shrapnel Cannon** (free). A Lucifer or Furibundus may exchange a Gravis Power Fist or Siege Claw for a **Graviton Crusher-Claw** (+15 each), with its in-built weapon. Any pattern may take a **Carapace Phosphex Discharger** (+15; the Furibundus's in place of its Havoc Launcher).
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
@@ -434,7 +434,7 @@ Profile as the Unification-Pattern; Armiger (Heavy). HYLas Rotary Cannon (Primar
 
 - Squadron Expansion: one more (+135).
 - Primary Gun Arm: Heavy Bolt Cannon (+5), EtaCarn Plasma Beamer (+10), Twin-linked Volkanite Disintegrator (+10), L7 Missile System (+10), Magna-Rail Cannon (+15).
-- Missile Pod Arm: HYLas Rotary Cannon (-10), Heavy Bolt Cannon (-5), EtaCarn Plasma Beamer (free), Twin-linked Volkanite Disintegrator (free), Magna-Rail Cannon (+5).
+- Missile Pod Arm: HYLas Rotary Cannon (free), Heavy Bolt Cannon (free), EtaCarn Plasma Beamer (free), Twin-linked Volkanite Disintegrator (free), Magna-Rail Cannon (+5). (The doc gives -10 and -5; no swap costs less than 0.)
 - Carapace: MATR Autocannon Pod (+10), Void-Hardened Extra Armour (+15), Pan Spectral Targeting Array (+15).
 
 ### League Upgrades
@@ -479,7 +479,8 @@ The Twin-linked Magna-Rail Cannon, Heavy SP Conversion Beamer (SP heavy conversi
 - The doc gives no Force Organisation slot; the Lucifer-Pattern and Ironkin Ancestor-Rig are Elites, the others Heavy Support.
 - The Mechanicum swaps are priced from the weapon they replace: a Lucifer's Mauler Bolt Cannon is +10 from the fist (Gravis Bolt Cannon +5, then +5), its Kheres +30 and Darkfire +35 (from the Gravis Lascannon, +15). An Iron Warriors Shrapnel Cannon is priced as the Gravis Bolt Cannon it replaces.
 - The Questoris Household upgrade is offered in Mechanicum and Questoris Household detachments; taking it moves the squadron to the Troops slot with the Line sub-type.
-- Legion swaps are priced from the weapon they replace, as the Mechanicum ones are: a Lucifer's Graviton Shredder-Cannon is +20 from the fist (Gravis Bolt Cannon +5, then +15), its Obsidian Thermal-Lance and Helfrost Cannon +30 (from the Gravis Melta Cannon, +15), its Iliastus Assault Cannon +15, its Molecular Acid-Cannon +35; a Furibundus's Obsidian Thermal-Lance +40 (from the Cyclonic Melta Lance, +25), Twin-linked Iliastus +30, Molecular Acid-Cannon +40 (from the Heavy Conversion Beamer, +20); a Unification's are priced from each arm's own weapon.
+- Legion swaps are priced from the weapon they replace, as the Mechanicum ones are: a Lucifer's Graviton Shredder-Cannon is +20 from the fist (Gravis Bolt Cannon +5, then +15), its Obsidian Thermal-Lance and Helfrost Cannon +30 (from the Gravis Melta Cannon, +15), its Iliastus Assault Cannon +15, its Molecular Acid-Cannon +35; a Furibundus's Obsidian Thermal-Lance +40 (from the Cyclonic Melta Lance, +25), Twin-linked Iliastus +30, Molecular Acid-Cannon +40 (from the Heavy Conversion Beamer, +20); a Unification's are priced from each arm's own weapon. No swap costs less than 0: on the Missile Pod Arm, whose Cyclone Missile Launcher is the dearer weapon, the Gravis Bolt Cannon, Gravis Autocannon, Mauler Bolt Cannon and Shrapnel Cannon are free.
+- The Carapace Phosphex Discharger is Iron Warriors only on every pattern; elsewhere the Furibundus's Carapace Weapon is the Havoc Launcher (or the Death Guard's Bile-Caster Mortar).
 - The Furibundus, whose guns are Twin-linked, takes Twin-linked versions: the Twin-linked Graviton Shredder-Cannon for its Twin-linked Gravis Bolt Cannon or Autocannon, and the Twin-linked Helfrost Cannon for its Cyclonic Melta Lance (it has no Gravis Melta or Plasma Cannon). A twin-linked swap costs twice the single one, as the Twin-linked Iliastus Assault Cannon does: +40 and +55 from the Siege Claw.
 - The Hexagrammaton Sub-type is a pick of its own on the squadron, required in a Dark Angels detachment; the wing-only upgrades and weapons show once the squadron has the matching wing.
 - The doc's Asphyx Bolt-Cannon (36" S5 AP4 Heavy 4, Twin-Linked, Shred), Banestrike Bolt Cannon (24" S5 AP4 Heavy 4, Twin-Linked, Breaching (6+)), Iliastus-Pattern Assault Cannon, Mauler Bolt Cannon (36" S6 AP3) and Heavy Mining Laser (AP2, Armourbane (Ranged), Sunder) are the official weapons, with their official profiles (shown above). The Furibundus takes Twin-linked versions of the official bolt cannons and Heavy Mining Laser at twice the swap cost, as with the earlier Legions. The Warpfire Plasma Cannon is new: its plasma profile does not match the official Warpfire Cannon (36" S6 AP4 Heavy 1, Blast (3"), Breaching (4+), Pinning).
