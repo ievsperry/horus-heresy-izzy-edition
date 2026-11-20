@@ -1081,7 +1081,7 @@ def votann_specs():
         else:
             costs = [("L7 missile launcher", 0), ("HYLas rotary cannon", -10), ("Heavy bolt cannon", -5),
                      ("EtaCarn plasma beamer", 0), ("Twin-linked volkanite disintegrator", 0), ("Magna-rail cannon", 5)]
-        return [gun(n, c) for n, c in costs]
+        return [gun(n, max(0, c)) for n, c in costs]        # no swap costs less than nothing
 
     carapace = [("MATR autocannon", 10, None), ("Void-Hardened Extra Armour", 15, None),
                 ("Pan Spectral Targeting Array", 15, None)]

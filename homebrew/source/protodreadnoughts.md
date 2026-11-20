@@ -434,7 +434,7 @@ Profile as the Unification-Pattern; Armiger (Heavy). HYLas Rotary Cannon (Primar
 
 - Squadron Expansion: one more (+135).
 - Primary Gun Arm: Heavy Bolt Cannon (+5), EtaCarn Plasma Beamer (+10), Twin-linked Volkanite Disintegrator (+10), L7 Missile System (+10), Magna-Rail Cannon (+15).
-- Missile Pod Arm: HYLas Rotary Cannon (-10), Heavy Bolt Cannon (-5), EtaCarn Plasma Beamer (free), Twin-linked Volkanite Disintegrator (free), Magna-Rail Cannon (+5).
+- Missile Pod Arm: HYLas Rotary Cannon (free), Heavy Bolt Cannon (free), EtaCarn Plasma Beamer (free), Twin-linked Volkanite Disintegrator (free), Magna-Rail Cannon (+5). (The doc gives -10 and -5; no swap costs less than 0.)
 - Carapace: MATR Autocannon Pod (+10), Void-Hardened Extra Armour (+15), Pan Spectral Targeting Array (+15).
 
 ### League Upgrades
