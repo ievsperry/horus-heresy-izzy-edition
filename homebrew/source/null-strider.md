@@ -14,7 +14,7 @@ Constructed in secret by the Divisio Investigates and the Silent Sisterhood's co
 - **Unit Composition.** 1 Aegis-Pattern Null-Strider.
 - **Unit Type.** Armiger (Anathema Psykana).
 - **Wargear.** One Dread-Executioner Greatblade (right arm); one Twin-Linked Psyk-Out Bolt Cannon (left arm); Reinforced Vratine Chassis (a 6+ Invulnerable Save against all attacks and Adamantium Will (5+)); Psyk-Out Grenade Launchers; Searchlights; Smoke Launchers.
-- **Special Rules.** Soulless (12"), By Cold Design, Witch-Hunter's Relentlessness.
+- **Special Rules.** Silent Sisterhood (X) (its Chamber from the Chamber Assignment), Hatred (Psykers, Daemons, Corrupted); Anathema Sub-type.
 
 ### Options
 
@@ -25,29 +25,31 @@ Constructed in secret by the Divisio Investigates and the Silent Sisterhood's co
   - Chamber of Vigilance – Subjugation Ward-Plating (+20 pts per model): T 7; Counter-Attack (1); the Reinforced Vratine Chassis Invulnerable Save improves to 5+ and its Adamantium Will to 4+.
 - **Ranged Arm.** Exchange the Twin-Linked Psyk-Out Bolt Cannon for a Twin-Linked Heavy Alchem-Flamer (+5), Twin-Linked Adrathic Destructor (+20) or Twin-Linked Snare Cannon (+10).
 - **Close-Combat Arm.** Exchange the Dread-Executioner Greatblade for a Sanctified Power Claw (+10).
-- **Chassis Upgrades.** Any model may take a Null-Matrix Amplifier (+20: Soulless radius 18"; enemy Daemon or Corrupted units within 12" suffer -1 to their Invulnerable Saves, to a minimum of 6+) and Silent Pursuit Actuators (+15: Infiltrate and Scout).
+- **Chassis Upgrades.** Any model may take a Null-Matrix Amplifier (+20: its Anathema Sub-type Leadership penalty reaches 12" instead of 6"; enemy Daemon or Corrupted units within 12" suffer -1 to their Invulnerable Saves, to a minimum of 6+) and Silent Pursuit Actuators (+15: Infiltrate and Scout).
 
 ### Special Rules
 
-- **Soulless (12").** No Psychic Powers may be manifested within 12" of this model, and any Psychic Power whose target or template passes within 12" is automatically nullified on a 4+. Enemy units within 12" cannot use their Leadership to manifest Psychic Powers, and Psyker or Daemon models within 12" suffer -1 Leadership and Weapon Skill.
-- **By Cold Design.** May make Sweeping Advances (even when enemies fall back due to Fear), gains Fleet (1) and Move Through Cover, and may re-roll failed Morale and Pinning tests.
-- **Witch-Hunter's Relentlessness.** Preferred Enemy (Psykers & Daemons); +1 Initiative when making Reactions to enemy Charges.
-- **Psi-Shock.** Inflicts Instant Death on Psykers and Daemons.
+The official Sisters of Silence rules, as the game system and catalogue have them:
+
+- **Silent Sisterhood (X).** The Chamber Militant the squadron belongs to (set by its Chamber Assignment), which counts against that Chamber's limits.
+- **Anathema Sub-type.** Cannot be targeted by or use Psychic Powers, ignores Psychic Weapons, and imposes the Anathema Leadership penalties.
+- **Hatred (Psykers, Daemons, Corrupted).**
+- **Psy-shock** (on its weapons). A Psyker or Daemon unit that suffers unsaved Wounds from the weapon also suffers Perils of the Warp, once per Phase.
 
 ### Weapons
 
 | Weapon | Range | Str | AP | Type |
 | --- | --- | --- | --- | --- |
-| Dread-Executioner Greatblade | Melee | +3 | 2 | Melee, Rending (5+), Sudden Strike (1), Psi-Shock |
+| Dread-Executioner Greatblade | Melee | +3 | 2 | Melee, Rending (5+), Sudden Strike (1), Psy-shock |
 | Sanctified Power Claw | Melee | x2 | 2 | Melee, Armourbane (Melee), Shred, Unwieldy |
-| Twin-Linked Psyk-Out Bolt Cannon | 36" | 5 | 4 | Heavy 4, Twin-Linked, Psi-Shock, Pinning |
+| Twin-Linked Psyk-Out Bolt Cannon | 36" | 5 | 4 | Heavy 4, Twin-Linked, Psy-shock, Pinning |
 | Twin-Linked Heavy Alchem-Flamer | Template | 1 | 3 | Assault 1, Twin-Linked, Poisoned (2+), Fleshbane |
 | Twin-Linked Adrathic Destructor (the official one) | 12" | 5 | 3 | Assault 1, Instant Death, Armourbane (Ranged), Gets Hot, Twin-linked |
 | Twin-Linked Snare Cannon (the official Snare Cannon, twin-linked) | 18" | 7 | - | Heavy 3, Entangle (2), Twin-linked |
-| Psyk-Out Grenade Launchers | 12" | 3 | 5 | Assault 2, Blast (3"), Psi-Shock, Pinning |
+| Psyk-Out Grenade Launchers | 12" | 3 | 5 | Assault 2, Blast (3"), Psy-shock, Pinning |
 
 ## Data notes
 
 - Wherever an official weapon exists, the data uses it: the Twin-Linked Adrathic Destructor is the game system's (the doc gave 18" S6 AP2 Assault 2), and the Twin-Linked Snare Cannon is the catalogue's Snare Cannon with Twin-linked (the doc gave 24" S4 AP5 Heavy 4, Pinning, Shock Pulse). Searchlights, Smoke Launchers and the Silent Sisterhood (Chamber of X) entries are the official ones.
 - The squadron is 5 pts plus 150 per model. The Chamber Assignment is one required pick for the whole squadron, priced per model; the Chamber it brings adds that Chamber's category to the squadron, so it counts against that Chamber's limits as the official Cadres do.
-- Soulless, By Cold Design, Witch-Hunter's Relentlessness and Psi-Shock are not in the data yet, so they are added as the catalogue's own rules with the text above.
+- The doc's Soulless (12"), By Cold Design, Witch-Hunter's Relentlessness and Psi-Shock are the official rules they most resemble: the Anathema Sub-type, Silent Sisterhood (X), Hatred (Psykers, Daemons, Corrupted) and Psy-shock. The Null-Matrix Amplifier's +6" to Soulless is +6" to the Anathema Sub-type's 6" Leadership penalty.

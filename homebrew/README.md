@@ -992,7 +992,8 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   protodreadnoughts.py's unit builder (one pick per arm, per-model Chassis Upgrades), whose required Anathema Psykana
   Chamber Assignment brings that Chamber's Silent Sisterhood entry and category. It links the official Twin-linked
   Adrathic Destructor, Searchlights and Smoke Launchers, twin-links the official Snare Cannon, and adds its other
-  weapons and its four rules. It refuses to run twice.
+  weapons; its rules are the official Silent Sisterhood (X), Anathema Sub-type, Hatred (X) and Psy-shock. It refuses to
+  run twice.
 - `python3 homebrew/add_sisters_of_silence.py` adds the Liber Imperatus Sisters of Silence expansion (the Claude Doc
   "Sisters of Silence Horus Heresy 2.0 - Homebrew Conversion", kept as `source/sisters-of-silence.md`) to
   `2022 - LI - Sisters Of Silence.cat`. build_catalogue.py's Builder reads the doc's datasheets; their units then

@@ -9,7 +9,8 @@ count, as the official units do.
 
 The official Twin-linked Adrathic Destructor, Searchlights, Smoke Launchers and the Chamber entries are linked; the
 Snare Cannon arm is the official Snare Cannon, twin-linked. The rest is new: its weapons and wargear as shared
-entries, and Soulless, By Cold Design, Witch-Hunter's Relentlessness and Psi-Shock as shared rules.
+entries. Its rules are the official ones: Silent Sisterhood (X), the Anathema Sub-type, Hatred (X) (Psykers, Daemons,
+Corrupted) and, on its weapons, Psy-shock.
 
 usage: python3 homebrew/add_null_strider.py   (refuses to run twice)"""
 import os
@@ -34,18 +35,7 @@ CHAMBERS = {  # Chamber -> (its category, its Silent Sisterhood (Chamber of X) e
 ANATHEMA = ("7e5d-d73e-8ff4-7345", "Anathema Sub-type")
 ANATHEMA_RULE = "e2d9-fe0d-1717-3a37"
 
-RULES = [
-    ("Soulless", "No Psychic Powers may be manifested within 12\" of this model, and any Psychic Power whose target or "
-     "template passes within 12\" of it is automatically nullified on a 4+. In addition, enemy units within 12\" cannot "
-     "use their Leadership characteristic to manifest Psychic Powers, and models with the Psyker or Daemon sub-types "
-     "within 12\" suffer a -1 penalty to their Leadership and Weapon Skill characteristics."),
-    ("By Cold Design", "This unit may make Sweeping Advances (even when enemies fall back due to Fear), gains Fleet (1) "
-     "and Move Through Cover, and may re-roll failed Morale and Pinning tests."),
-    ("Witch-Hunter's Relentlessness", "This unit gains Preferred Enemy (Psykers & Daemons) and adds +1 to its "
-     "Initiative when making Reactions to enemy Charges."),
-    ("Psi-Shock", "Hits from a weapon with this special rule inflict Instant Death on models with the Psyker or Daemon "
-     "sub-types."),
-]
+RULES = []   # its rules are the official ones (Silent Sisterhood (X), Anathema Sub-type, Psy-shock, Hatred (X))
 CHASSIS = ("Grants a 6+ Invulnerable Save against all attacks and the Adamantium Will (5+) special rule (a 5+ "
            "Invulnerable Save against psychic powers and psychic weapons).")
 CHAMBER_UPGRADES = [
@@ -60,7 +50,8 @@ CHAMBER_UPGRADES = [
      "Adamantium Will (4+).", ["Counter-Attack (X)"]),
 ]
 CHASSIS_UPGRADES = [
-    ("Null-Matrix Amplifier", 20, "Increases the radius of its Soulless rule from 12\" to 18\", and enemy units with the "
+    ("Null-Matrix Amplifier", 20, "Increases the range of its Anathema Sub-type Leadership penalty from 6\" to 12\", "
+     "and enemy units with the "
      "Daemon or Corrupted sub-types within 12\" suffer a -1 penalty to their Invulnerable Saves (to a minimum of 6+).",
      []),
     ("Silent Pursuit Actuators", 15, "Grants Infiltrate and Scout.", ["Infiltrate", "Scout"]),
@@ -69,15 +60,15 @@ CHASSIS_UPGRADES = [
 
 def weapons(ctx):
     pd.weapon(ctx, "Dread-Executioner Greatblade", [(None, "-", "+3", "2", "Melee, Rending (5+), Sudden Strike (1), "
-                                                                            "Psi-Shock")])
+                                                                            "Psy-shock")])
     pd.weapon(ctx, "Sanctified Power Claw", [(None, "-", "x2", "2", "Melee, Armourbane (Melee), Shred, Unwieldy")])
-    pd.weapon(ctx, "Twin-linked Psyk-Out Bolt Cannon", [(None, '36"', "5", "4", "Heavy 4, Twin-linked, Psi-Shock, "
+    pd.weapon(ctx, "Twin-linked Psyk-Out Bolt Cannon", [(None, '36"', "5", "4", "Heavy 4, Twin-linked, Psy-shock, "
                                                                                 "Pinning")])
     pd.weapon(ctx, "Twin-linked Heavy Alchem-Flamer", [(None, "Template", "1", "3", "Assault 1, Twin-linked, "
                                                                                     "Poisoned (2+), Fleshbane")])
     # the official Snare Cannon, twin-linked
     pd.weapon(ctx, "Twin-linked Snare Cannon", [(None, '18"', "7", "-", "Heavy 3, Entangle (2), Twin-linked")])
-    pd.weapon(ctx, "Psyk-Out Grenade Launchers", [(None, '12"', "3", "5", 'Assault 2, Blast (3"), Psi-Shock, Pinning')])
+    pd.weapon(ctx, "Psyk-Out Grenade Launchers", [(None, '12"', "3", "5", 'Assault 2, Blast (3"), Psy-shock, Pinning')])
     pd.wargear(ctx, "Reinforced Vratine Chassis", CHASSIS)
     for name, _, text, rules in CHASSIS_UPGRADES:
         pd.wargear(ctx, name, text, rules)
@@ -87,7 +78,7 @@ def spec():
     return {"name": NAME, "model": NAME, "slot": "Fast Attack", "type": "Armiger (Anathema Psykana)",
             "stats": ["9", "5", "4", "6", "6", "5", "5", "3", "9", "2+"], "max": 3, "unit_pts": 5, "model_pts": 150,
             "wargear": ["Reinforced Vratine Chassis", "Psyk-Out Grenade Launchers", "Searchlights", "Smoke Launchers"],
-            "rules": [("Soulless", 'Soulless (12")'), ("By Cold Design", None), ("Witch-Hunter's Relentlessness", None)],
+            "rules": [("Silent Sisterhood (X)", None), ("Hatred (X)", "Hatred (Psykers, Daemons, Corrupted)")],
             "arms": [("Close-Combat Arm", [("Dread-Executioner Greatblade", 0, ["Dread-Executioner Greatblade"], None,
                                             None),
                                            ("Sanctified Power Claw", 10, ["Sanctified Power Claw"], None, None)]),
