@@ -691,6 +691,63 @@ Special Rules
 | – Salvo Launcher | +20 points |
 | – Twin-Linked Adrathic Destructor | +10 points |
 
+### Vigil-Seeker Marksman Squad — 220 pts
+
+*Hand-picked from among the Shadowkeepers and the silent sentinels of the Sanctum Imperialis, Vigil-Seekers operate in small, autonomous hunter-killer teams ahead of the main golden host. Clad in Auric Demi-plate and refraction cloaks, they eliminate enemy warlords, heavy armour, and rogue psykers with single, inescapable shots.*
+
+| Model | M | WS | BS | S | T | W | I | A | Ld | Sv |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Vigil-Seeker | 8 | 5 | 5 | 5 | 5 | 2 | 5 | 3 | 10 | 3+ |
+
+Unit Composition
+
+- 3 Vigil-Seekers
+
+Wargear
+
+- Exterminus Sniper Rifle
+- Misericordia
+- Auric Demi-Plate
+- Refraction Cloak
+- Frag Grenades
+- Krak Grenades
+
+Unit Type
+
+- Infantry (Skirmish)
+
+Special Rules
+
+- Bulky (3)
+- Chosen Warriors
+- Infiltrate
+- Legio Custodes
+- Loyalist
+- Marked for Death
+- Move Through Cover
+- Relentless
+- Scout
+- Silent Reposition
+- Sniper
+- Stubborn
+
+**Silent Reposition.** Once per game, at the end of your opponent's Shooting phase, if this unit was targeted by a shooting attack and is not locked in combat, it may immediately make a normal Move (up to its full Movement characteristic of 8") as if it were the Movement phase (it cannot move within 1" of enemy models).
+
+| Option | Cost |
+| --- | --- |
+| The Vigil-Seeker Marksman Squad may include: |  |
+| – Up to 2 additional Vigil-Seekers | +70 points each |
+| Any model may exchange its Exterminus Sniper Rifle for one of: |  |
+| – Arae-Shrike Las-Fusil | +10 points |
+| – Pyrithite Lance-Rifle | +15 points |
+| – Adrathic Sniper Rifle | +15 points |
+| – Heavy Adrastus Bolt Caliver | +15 points |
+| One Vigil-Seeker may take: |  |
+| – Pan-Spectral Tracker | +20 points |
+| – Melta Bombs | +10 points |
+
+_Added to `2022 - LI - Custodes.cat` by `homebrew/add_vigil_seekers.py` (the squad is 10 points and each Vigil-Seeker 70); its Fast Attack entry follows the Custodian Venatari Squad's (the Tharanatoi one-Fast-Attack limit and the Moritoi Fast Attack or Heavy Support category)._
+
 ## Heavy Support
 
 ### Custodian Grav-Raider Carrier — 325 pts
@@ -946,9 +1003,17 @@ The Controlling Player may activate it at the start of any of their turns, or be
 - Its Interceptor Reactions cost no Reaction point; this may exceed three Reactions in a phase but not one per phase for the unit.
 - A Vehicle with it may fire all its weapons, not only Defensive Weapons, when making Interceptor.
 
+### Pan-Spectral Tracker
+
+Counts as both a Nuncio-vox and an Augury Scanner.
+
 ### Praesidium Shield
 
 A Praesidium Shield adds +1 to the model's Invulnerable Save (to a maximum of 3+), or gives a 6+ Invulnerable Save if it has none. The model cannot gain bonus attacks for two melee weapons or attack with Two-Handed weapons in the Assault phase.
+
+### Refraction Cloak
+
+Grants Shrouded (5+), and enemy units targeting this unit with shooting attacks treat the range as 6" further away than the actual distance.
 
 ### Tarsus Buckler
 
@@ -1050,6 +1115,21 @@ The Adrastus Bolt Caliver counts as an Adrathic and a Disintegrator weapon. In e
 | --- | --- | --- | --- | --- |
 | Adrastus Bolt Caliver – Bolt Volley | 36" | 5 | 4 | Assault 4, Pinning, Shred |
 | Adrastus Bolt Caliver – Disintegrator | 24" | 5 | 2 | Assault 1, Gets Hot, Instant Death, One Shot |
+
+#### Vigil-Seeker Weapons
+
+The Vigil-Seeker Marksman Squad's rifles. The Exterminus Sniper Rifle fires one of three shells each time it shoots; the Heavy Adrastus Bolt Caliver one of two modes.
+
+| Weapon | Range | Str | AP | Type |
+| --- | --- | --- | --- | --- |
+| Exterminus Sniper Rifle (Standard Bolt) | 48" | 5 | 4 | Heavy 1, Sniper, Rending (5+), Pinning, Shell Shock (1) |
+| Exterminus Sniper Rifle (Banestrike) | 36" | 5 | 3 | Heavy 1, Sniper, Breaching (5+), Murderous Strike (5+), Pinning |
+| Exterminus Sniper Rifle (Hellfire) | 36" | 5 | 4 | Heavy 1, Blast (3"), Ignores Cover, Pinning |
+| Arae-Shrike Las-Fusil | 60" | 8 | 2 | Heavy 1, Sunder |
+| Pyrithite Lance-Rifle | 24" | 8 | 1 | Heavy 1, Armourbane (Melta), Lance |
+| Adrathic Sniper Rifle | 48" | 6 | 2 | Heavy 1, Sniper, Armourbane (Ranged), Gets Hot, Instant Death, Pinning |
+| Heavy Adrastus Bolt Caliver (Bolt Volley) | 48" | 5 | 4 | Heavy 5, Pinning, Rupture (6+) |
+| Heavy Adrastus Bolt Caliver (Disintegrator) | 36" | 5 | 2 | Heavy 2, Instant Death, Gets Hot, One Shot, Rupture (6+) |
 
 ### Melee Weapons
 
