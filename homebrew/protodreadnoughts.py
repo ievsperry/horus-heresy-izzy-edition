@@ -246,10 +246,15 @@ def wargear(ctx, name, text, rules=()):
            typeName=WARGEAR[1])
     el(el(p, "characteristics"), "characteristic", name=WARGEAR[2], typeId=WARGEAR[3]).text = text
     for r in rules:
-        rid = ctx.rules.get(norm(r))
+        rid, shown, target = ctx.rules.get(norm(r)), None, r
+        if not rid and "(" in r:                    # "Shrouded (5+)": link Shrouded (X), shown with its value
+            target = r[:r.index("(")].strip() + " (X)"
+            rid, shown = ctx.rules.get(norm(target)), r
         if rid:
-            el(child(e, "infoLinks"), "infoLink", id=mid(*key, "rule", r), name=r, hidden=False, targetId=rid,
-               type="rule")
+            il = el(child(e, "infoLinks"), "infoLink", id=mid(*key, "rule", r), name=target, hidden=False,
+                    targetId=rid, type="rule")
+            if shown:
+                el(el(il, "modifiers"), "modifier", type="set", field="name", value=shown)
     add_cost(e, 0)
     ctx.new.append(e)
     ctx.entries[norm(name)] = e.get("id")

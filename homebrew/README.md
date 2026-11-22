@@ -966,6 +966,13 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   Land Raider carriers, the Chambers of the Golden Host, the Shield-Hosts and the extra options on the official
   Hetaeron, Custodian Guard and Sagittarum squads. It was written into the official file directly, with no
   add script in this repository; the doc is the reference to check it against.
+- `python3 homebrew/add_vigil_seekers.py` adds the Vigil-Seeker Marksman Squad (`source/legio-custodes.md`, Fast
+  Attack) to `2022 - LI - Custodes.cat`: three to five Vigil-Seekers (Infantry, Skirmish; 10 points for the squad
+  and 70 per model) with the official Misericord, Auric Demi-plate, Frag and Krak Grenades and rules, a new
+  Refraction Cloak and Silent Reposition rule, the Exterminus Sniper Rifle (three shells) or one of four new rifles,
+  and for one model a Pan-Spectral Tracker (carrying the official Nuncio-Vox and Augury Scanner) and Meltabombs. Its
+  Fast Attack entry copies the Custodian Venatari Squad's (the Tharanatoi limit and the Moritoi category). It
+  refuses to run twice.
 - The Saturnine conversion (the Claude Doc "Saturnine Terminators and Dreadnought for The Horus Heresy 2.0 —
   Conversion", kept as `source/saturnine.md`) is in `2022 - Legiones Astartes.cat`: the Praetor in Saturnine
   Terminator Armour, the Saturnine Terminator Squad and the Saturnine Dreadnought, as Legends units every Legion

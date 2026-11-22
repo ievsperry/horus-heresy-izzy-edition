@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1701" name="LI - Custodes" revision="41" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1701" name="LI - Custodes" revision="42" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="ccca-a9de-0cd9-f8be" name="Legio Custodes" hidden="false">
       <infoLinks>
@@ -1565,6 +1565,51 @@ Limitations
         <categoryLink id="22a6-7081-1300-689b" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="2d52-b390-69de-f805" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
         <categoryLink id="2869-a888-80b2-3aaa" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d132-37f6-8698-7772" name="Vigil-Seeker Marksman Squad" hidden="false" collective="false" import="false" targetId="fb48-7940-50af-91cf" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="7114-62de-443c-0a12" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc1b-21ae-7bcf-16e8" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="7114-62de-443c-0a12" value="0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20ef-cd01-a8da-376e" type="atLeast"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb48-7940-50af-91cf" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc1b-21ae-7bcf-16e8" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1000" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7114-62de-443c-0a12" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="0c50-3d95-15ae-d7e6" name="Hykanatoi: Guardians of the Objective" hidden="true" targetId="572b-f752-df36-7f64" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3293-b6a4-bfc2-2818" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5c4d-c220-b425-8fe6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="8ae0-335e-bac2-9f16" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="fcb5-36fb-f6ea-9233" name="Fast Attack or Heavy Support (Moritoi)" hidden="false" targetId="27f5-b71f-91b3-6615" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -10008,6 +10053,369 @@ Additionally, the model must change its Movement Characteristic to 14", and gain
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry id="4a56-2ee1-bbdf-7aa6" name="Exterminus Sniper Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3338-df1e-b1c5-0802" name="Exterminus Sniper Rifle - (Standard Bolt)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sniper, Rending (5+), Pinning, Shell Shock (1)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9835-647a-baff-aa18" name="Exterminus Sniper Rifle - (Banestrike)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sniper, Breaching (5+), Murderous Strike (5+), Pinning</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6380-9af6-f859-d78d" name="Exterminus Sniper Rifle - (Hellfire)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Ignores Cover, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2fc2-1f34-c188-2bdc" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+        <infoLink id="5aff-22f5-1aef-f2eb" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4ab4-de93-6d96-2b9c" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="78db-be5b-e055-c730" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5910-b5da-7444-df1f" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5ad0-c3a4-3c1d-43c2" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Murderous Strike (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="f0f6-1cbc-a9ed-51e9" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Blast (3&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="bb84-1e67-c14c-f076" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e41-6f5a-a361-4095" name="Arae-Shrike Las-Fusil" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4086-6880-bd58-cedc" name="Arae-Shrike Las-Fusil" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5b37-d378-9f5e-1e88" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="413b-b1ad-2339-a4a8" name="Pyrithite Lance-Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1d59-34a7-54d2-96aa" name="Pyrithite Lance-Rifle" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Armourbane (Melta), Lance</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e49a-698c-6ae1-b221" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melta)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="957f-65b0-c2e2-fc84" name="Lance" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="82de-ab66-bcd7-1f43" name="Adrathic Sniper Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="eb40-0fbc-7b03-538f" name="Adrathic Sniper Rifle" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sniper, Armourbane (Ranged), Gets Hot, Instant Death, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8cf8-b279-4778-6e98" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+        <infoLink id="a278-1462-4a07-1969" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Ranged)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="767f-a4d8-f1dc-4a49" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+        <infoLink id="20b4-cb56-5047-9b2a" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink id="c6fa-2466-1351-1708" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2c5c-6b81-a119-834e" name="Heavy Adrastus Bolt Caliver" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="bcfa-e34e-7aa1-9ce6" name="Heavy Adrastus Bolt Caliver - (Bolt Volley)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Pinning, Rupture (6+)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7b1e-4f65-719b-1246" name="Heavy Adrastus Bolt Caliver - (Disintegrator)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Instant Death, Gets Hot, One Shot, Rupture (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="74d2-0f0e-a325-3a4d" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="0d29-7fec-37da-3800" name="Rupture (X)" hidden="false" targetId="d530-0b40-4723-af90" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rupture (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="698a-5798-7841-63c5" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink id="0bf0-7715-e0e3-5b68" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+        <infoLink id="f526-508f-ae11-1a99" name="One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1b66-c9e7-68fd-95bb" name="Refraction Cloak" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="110e-a475-6e3e-a40f" name="Refraction Cloak" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Grants Shrouded (5+), and enemy units targeting this unit with shooting attacks treat the range as 6" further away than the actual distance.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3084-b9e8-69f2-1959" name="Shrouded (X)" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shrouded (5+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7313-e415-077f-102d" name="Pan-Spectral Tracker" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5c5f-9a4a-d704-6df3" name="Pan-Spectral Tracker" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Counts as both a Nuncio-vox and an Augury Scanner.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink id="b045-6319-8176-1402" name="Nuncio-Vox" hidden="false" collective="false" import="true" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a7cb-3548-206c-7ff6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22f2-a3f1-f121-a73f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="aa8d-a803-5f39-b971" name="Augury Scanner" hidden="false" collective="false" import="true" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a23-93b1-9c45-444d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5131-8435-daa0-8ec7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fb48-7940-50af-91cf" name="Vigil-Seeker Marksman Squad" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="6440-7237-843d-f53e" name="Legio Custodes" hidden="false" targetId="ccca-a9de-0cd9-f8be" primary="false"/>
+        <categoryLink id="1a58-be03-4e1f-a0c6" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="eeaa-61cf-b168-9b27" name="Skirmish Sub-type" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d849-de8a-fa33-c2f9" name="Vigil-Seeker" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="a792-2635-6931-9379" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="3701-d932-11a2-17ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile id="6bca-de0f-7273-22ac" name="Vigil-Seeker" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="1e51-eb72-63e7-406b" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
+            <infoLink id="1925-7658-9c6d-04a7" name="Legio Custodes" hidden="false" targetId="6998-b328-c080-5341" type="rule"/>
+            <infoLink id="f8ad-eaec-b1c0-1930" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
+            <infoLink id="5641-1aab-bd3c-0160" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+            <infoLink id="21af-11c2-1c56-902a" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+            <infoLink id="f5d6-d23c-b852-4637" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Bulky (3)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="e923-f781-f386-e742" name="Marked For Death" hidden="false" targetId="4f41-4c04-9cd8-c5a1" type="rule"/>
+            <infoLink id="0217-3f78-82ec-c57e" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+            <infoLink id="3680-7c48-c52a-b567" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
+            <infoLink id="d4bc-412f-bbd4-b443" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+            <infoLink id="99b5-15fb-ff97-7421" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
+            <infoLink id="6eb6-22d0-1de5-5022" name="Silent Reposition" hidden="false" targetId="6305-2923-1913-bb86" type="rule"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b0dc-bd0f-6ef5-9e3c" name="Sniper Rifle" hidden="false" collective="false" import="true" defaultSelectionEntryId="7717-0415-9497-ee8c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7f8-2e8a-50d0-3d64" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2434-30ff-d3be-a6ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="7717-0415-9497-ee8c" name="Exterminus Sniper Rifle" hidden="false" collective="false" import="true" targetId="4a56-2ee1-bbdf-7aa6" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3009-34c6-b09b-ff7c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6b9c-111f-5287-1080" name="Arae-Shrike Las-Fusil" hidden="false" collective="false" import="true" targetId="4e41-6f5a-a361-4095" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac01-b376-ee05-811c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6538-ad1e-2cd5-fc6a" name="Pyrithite Lance-Rifle" hidden="false" collective="false" import="true" targetId="413b-b1ad-2339-a4a8" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0164-fae7-2242-0640" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="fe40-eaf3-79af-8f6d" name="Adrathic Sniper Rifle" hidden="false" collective="false" import="true" targetId="82de-ab66-bcd7-1f43" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25c3-266f-4a1c-50dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="311c-d4fc-bdcf-e864" name="Heavy Adrastus Bolt Caliver" hidden="false" collective="false" import="true" targetId="2c5c-6b81-a119-834e" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1db-3504-1700-59e0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="9b1e-ee9a-4bb4-ca0e" name="Misericord" hidden="false" collective="false" import="true" targetId="73cb-1501-d39e-4f24" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44fc-36f2-eec6-c444" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b09d-ee29-1322-fa9c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b063-651c-795d-f3e9" name="Auric Demi-plate" hidden="false" collective="false" import="true" targetId="e22b-48fd-2586-75d4" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb23-1558-1ebd-9249" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b37-643e-a5ff-ee3c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8c07-870b-f3cd-ffb1" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7691-a778-dfb8-4de0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99fc-9dfd-ac12-f901" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="583f-8a4e-f0ec-2cc8" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4f0-c498-2871-a577" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5e3-81e2-e1f0-e338" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="09ba-8181-1074-6564" name="Refraction Cloak" hidden="false" collective="false" import="true" targetId="1b66-c9e7-68fd-95bb" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da23-0348-99d6-7a7a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13ee-a7ed-df58-bd36" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6d5e-ba66-3884-ec55" name="Pan-Spectral Tracker" hidden="false" collective="false" import="true" targetId="7313-e415-077f-102d" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6da-54f7-bcad-c17c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="fb48-7940-50af-91cf" shared="true" id="1ed0-785f-962d-7d80" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ae4e-0463-6725-8151" name="Meltabombs" hidden="false" collective="false" import="true" targetId="b9dd-3b21-f3f8-78e3" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e14-7236-6426-71c0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="fb48-7940-50af-91cf" shared="true" id="4007-904b-9d12-640e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fe3c-f221-2044-bc2b" name="Dedicated Transport (Custodes)" hidden="false" collective="false" import="true">
@@ -10134,6 +10542,9 @@ Note that if a unit makes use of this Special Rule, they may not claim the benef
     </rule>
     <rule id="572b-f752-df36-7f64" name="Hykanatoi: Guardians of the Objective" hidden="false">
       <description>If you control fewer Objective Markers than your opponent at the start of your turn, Legio Custodes models in a Detachment using the Hykanatoi Chamber of the Golden Host may only use Nemesis against enemy units controlling or contesting an Objective Marker until the start of your next turn. No effect in missions without Objective Markers.</description>
+    </rule>
+    <rule id="6305-2923-1913-bb86" name="Silent Reposition" hidden="false">
+      <description>Once per game, at the end of your opponent's Shooting phase, if this unit was targeted by a shooting attack and is not locked in combat, it may immediately make a normal Move (up to its full Movement characteristic of 8") as if it were the Movement phase (it cannot move within 1" of enemy models).</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
