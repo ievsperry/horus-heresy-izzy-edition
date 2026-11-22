@@ -106,7 +106,7 @@ def main():
     rule = ET.Element("rule", {"id": mid("rule", "Silent Reposition"), "name": "Silent Reposition", "hidden": "false"})
     el(rule, "description").text = SILENT_REPOSITION
     weapons = {name: pd.weapon(ctx, name, profiles) for name, _, profiles in WEAPONS}
-    cloak = pd.wargear(ctx, "Refraction Cloak", REFRACTION, ["Shrouded (X)"])
+    cloak = pd.wargear(ctx, "Refraction Cloak", REFRACTION, ["Shrouded (5+)"])
     tracker = pd.wargear(ctx, "Pan-Spectral Tracker", TRACKER)
     link(tracker, NUNCIO, "Nuncio-Vox", ("tracker", "nuncio"))
     link(tracker, AUGURY, "Augury Scanner", ("tracker", "augury"))
