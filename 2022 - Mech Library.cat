@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="72" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="73" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -9159,7 +9159,11 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
       </profiles>
       <infoLinks>
         <infoLink id="694a-47ab-27c5-ca4a" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
-        <infoLink id="7e64-9aa1-eac3-52e9" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule"/>
+        <infoLink id="7e64-9aa1-eac3-52e9" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (2)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9174,8 +9178,16 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="20da-2955-ffa4-dfb6" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule"/>
-        <infoLink id="e67e-c824-4caa-ebbf" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule"/>
+        <infoLink id="20da-2955-ffa4-dfb6" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Feel No Pain (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e67e-c824-4caa-ebbf" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="It Will Not Die (5+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9190,8 +9202,16 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="748f-641e-93d0-f12a" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule"/>
-        <infoLink id="d6fa-0a4b-2aa0-befa" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule"/>
+        <infoLink id="748f-641e-93d0-f12a" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Preferred Enemy (Target Unit)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d6fa-0a4b-2aa0-befa" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hatred (Target Unit)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9230,7 +9250,11 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="2ee0-4d0f-ff40-e8d1" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule"/>
+        <infoLink id="2ee0-4d0f-ff40-e8d1" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Fear (1)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9245,7 +9269,11 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="93af-5892-8ef8-38e3" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule"/>
+        <infoLink id="93af-5892-8ef8-38e3" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Counter-Attack (1)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9260,7 +9288,11 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="ff81-3fbb-ec5e-820d" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule"/>
+        <infoLink id="ff81-3fbb-ec5e-820d" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rage (2)"/>
+          </modifiers>
+        </infoLink>
         <infoLink id="5254-3041-c150-99f1" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
       </infoLinks>
       <costs>
@@ -9276,7 +9308,11 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="ab3f-a23a-e627-ccef" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule"/>
+        <infoLink id="ab3f-a23a-e627-ccef" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (2)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -22428,7 +22464,11 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="76e0-f980-4804-0164" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule"/>
+        <infoLink id="76e0-f980-4804-0164" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="It Will Not Die (5+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -22444,7 +22484,11 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
       </profiles>
       <infoLinks>
         <infoLink id="a4c3-0ee1-4233-fbd6" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
-        <infoLink id="d5a5-5c11-bb02-35f3" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule"/>
+        <infoLink id="d5a5-5c11-bb02-35f3" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Battlesmith (5+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -22474,7 +22518,11 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="8824-e2f9-5c23-ef43" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule"/>
+        <infoLink id="8824-e2f9-5c23-ef43" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="It Will Not Die (5+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -22519,8 +22567,16 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="cee1-9f93-7a76-2fb3" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule"/>
-        <infoLink id="dd50-2328-83e1-0f24" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule"/>
+        <infoLink id="cee1-9f93-7a76-2fb3" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Feel No Pain (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="dd50-2328-83e1-0f24" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="It Will Not Die (5+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -22535,7 +22591,11 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="a3be-0411-7ebd-2b3f" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule"/>
+        <infoLink id="a3be-0411-7ebd-2b3f" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Poisoned (3+)"/>
+          </modifiers>
+        </infoLink>
         <infoLink id="9e31-95cf-ffd1-3d46" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
       </infoLinks>
       <costs>
@@ -22587,7 +22647,11 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="8d33-45b4-e4a2-c690" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule"/>
+        <infoLink id="8d33-45b4-e4a2-c690" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Counter-Attack (1)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -22618,8 +22682,16 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="d4b7-15af-ba07-6e7d" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule"/>
-        <infoLink id="84a0-361f-6447-1730" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule"/>
+        <infoLink id="d4b7-15af-ba07-6e7d" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Counter-Attack (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="84a0-361f-6447-1730" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Preferred Enemy (Infantry)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -22634,7 +22706,11 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="5b89-5eea-fcf2-2cd7" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule"/>
+        <infoLink id="5b89-5eea-fcf2-2cd7" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Feel No Pain (6+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -22721,7 +22797,11 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="ffde-1ba1-a315-d107" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule"/>
+        <infoLink id="ffde-1ba1-a315-d107" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="It Will Not Die (5+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -22749,7 +22829,11 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
       </profiles>
       <infoLinks>
         <infoLink id="4c1c-1663-1bd2-7d4b" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
-        <infoLink id="b335-a734-ce79-5ddd" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule"/>
+        <infoLink id="b335-a734-ce79-5ddd" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hatred (Everything)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -23427,7 +23511,11 @@ All weapons with this Special Rule gain the Breaching (6+) Special Rule.</descri
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="87b2-8f56-07ca-922f" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule"/>
+        <infoLink id="87b2-8f56-07ca-922f" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Fear (1)"/>
+          </modifiers>
+        </infoLink>
         <infoLink id="83e7-afa6-f8a5-d579" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule"/>
       </infoLinks>
       <costs>
@@ -23443,7 +23531,11 @@ All weapons with this Special Rule gain the Breaching (6+) Special Rule.</descri
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="0cab-bbdb-9e4a-c679" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule"/>
+        <infoLink id="0cab-bbdb-9e4a-c679" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Furious Charge (1)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -23458,7 +23550,11 @@ All weapons with this Special Rule gain the Breaching (6+) Special Rule.</descri
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="a182-2b2e-9afa-e73d" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule"/>
+        <infoLink id="a182-2b2e-9afa-e73d" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Counter-Attack (1)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -23485,7 +23581,11 @@ All weapons with this Special Rule gain the Breaching (6+) Special Rule.</descri
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="8246-4814-41c9-59ed" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule"/>
+        <infoLink id="8246-4814-41c9-59ed" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Preferred Enemy (Infantry)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -23500,8 +23600,16 @@ All weapons with this Special Rule gain the Breaching (6+) Special Rule.</descri
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="2ecb-b2ff-6baf-4314" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule"/>
-        <infoLink id="9e16-27c0-9dde-6b6a" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule"/>
+        <infoLink id="2ecb-b2ff-6baf-4314" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Fear (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9e16-27c0-9dde-6b6a" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Feel No Pain (6+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -23519,7 +23627,11 @@ All weapons with this Special Rule gain the Breaching (6+) Special Rule.</descri
         <infoLink id="ff72-ff14-81c9-b58f" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
         <infoLink id="a76c-df35-0ff5-e6d1" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
         <infoLink id="8040-a076-ee78-9224" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
-        <infoLink id="0cda-d383-013a-acf5" name="Shrouded (X)" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule"/>
+        <infoLink id="0cda-d383-013a-acf5" name="Shrouded (X)" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shrouded (6+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -23535,7 +23647,11 @@ All weapons with this Special Rule gain the Breaching (6+) Special Rule.</descri
       </profiles>
       <infoLinks>
         <infoLink id="fb42-05e9-1875-1ff1" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
-        <infoLink id="a0b8-03be-d45c-0c3a" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule"/>
+        <infoLink id="a0b8-03be-d45c-0c3a" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Counter-Attack (1)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -23550,8 +23666,16 @@ All weapons with this Special Rule gain the Breaching (6+) Special Rule.</descri
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="1352-2b35-5671-0b7d" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule"/>
-        <infoLink id="8613-1925-fe08-7146" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule"/>
+        <infoLink id="1352-2b35-5671-0b7d" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="It Will Not Die (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="8613-1925-fe08-7146" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hatred (Everything)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -23590,7 +23714,11 @@ All weapons with this Special Rule gain the Breaching (6+) Special Rule.</descri
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="3ed6-aa2a-9bff-0209" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule"/>
+        <infoLink id="3ed6-aa2a-9bff-0209" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="It Will Not Die (5+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>

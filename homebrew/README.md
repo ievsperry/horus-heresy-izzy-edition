@@ -973,6 +973,12 @@ These scripts change `2022 - Horus Heresy.gst` and the official catalogues; run 
   and for one model a Pan-Spectral Tracker (carrying the official Nuncio-Vox and Augury Scanner) and Meltabombs. Its
   Fast Attack entry copies the Custodian Venatari Squad's (the Tharanatoi limit and the Moritoi category). It
   refuses to run twice.
+- `python3 homebrew/name_wargear_rule_values.py` makes a wargear item's (X) rule links show their value, as the
+  official links do ("Fear (1)", not "Fear (X)"): for each bare link it takes the value from the item's own wargear
+  text and adds the name modifier. It changed the Protodreadnought upgrades and Mech Library walker wargear, the
+  Null-Strider's Chamber upgrades, two Votann items and the Ruinstorm's Immaterial Wings; a link whose text gives
+  no value (Gorechild's, whose values are on its weapon profile) is left and listed. Running it again changes
+  nothing.
 - The Saturnine conversion (the Claude Doc "Saturnine Terminators and Dreadnought for The Horus Heresy 2.0 —
   Conversion", kept as `source/saturnine.md`) is in `2022 - Legiones Astartes.cat`: the Praetor in Saturnine
   Terminator Armour, the Saturnine Terminator Squad and the Saturnine Dreadnought, as Legends units every Legion
